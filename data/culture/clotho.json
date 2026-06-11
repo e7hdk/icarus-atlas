@@ -1,4 +1,17 @@
 {
   "id": "clotho",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Clotho",
+      "artist": "Camille Claudel",
+      "year": "1893",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Torse_de_Clotho%2C_vers_1893%2C_torse%2C_mod%C3%A8le_en_pl%C3%A2tre_tir%C3%A9_d%27un_moule_%C3%A0_bon_creux%2C_Camille_Claudel_%281%29.jpg/960px-Torse_de_Clotho%2C_vers_1893%2C_torse%2C_mod%C3%A8le_en_pl%C3%A2tre_tir%C3%A9_d%27un_moule_%C3%A0_bon_creux%2C_Camille_Claudel_%281%29.jpg"
+    },
+    {
+      "title": "The Three Fates",
+      "artist": "Attributed to Il Sodoma",
+      "year": "c. 1525",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sodoma_001.jpg/960px-Sodoma_001.jpg"
+    }
+  ]
 }

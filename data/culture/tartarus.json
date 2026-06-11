@@ -1,4 +1,17 @@
 {
   "id": "tartarus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "The Fall of the Titans",
+      "artist": "Cornelis van Haarlem",
+      "year": "1588–1590",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg/960px-Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg"
+    },
+    {
+      "title": "Sisyphus",
+      "artist": "Titian",
+      "year": "1548–1549",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Titian_-_Sisyphus_-_Madrid_-_Prado.jpg/960px-Titian_-_Sisyphus_-_Madrid_-_Prado.jpg"
+    }
+  ]
 }
