@@ -1,0 +1,34 @@
+{
+  "id": "zeus",
+  "name": "Zeus",
+  "greekName": "Zeus (Ζεύς)",
+  "romanName": "Jupiter",
+  "type": "olympian",
+  "domains": ["sky", "thunder", "kingship", "justice"],
+  "epithets": ["Olympios", "Kronides", "Nephelegereta"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "King of the gods and lord of the sky, youngest child of Cronus and Rhea, who overthrew his father and divided the world with his brothers Poseidon and Hades.",
+      "sources": ["hesiod", "homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Theogony 453–506; Iliad 15.187–193"
+    }
+  ],
+  "story": [
+    {
+      "text": "Cronus, warned that a child of his would unseat him as he had unseated his own father, swallowed each of his children at birth. When Zeus was born, Rhea hid him in a cave on Crete and gave Cronus a stone wrapped in swaddling clothes instead. Grown to strength, Zeus forced his father to disgorge his brothers and sisters, and the stone with them.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 453–506; Bibliotheca 1.1.5–1.2.1"
+    },
+    {
+      "text": "For ten years the younger gods warred against the Titans. Zeus freed the Cyclopes from Tartarus, and they gave him thunder and the lightning bolt; with the Hundred-Handers beside them the Olympians cast the Titans down into the pit.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 617–735; Bibliotheca 1.2.1"
+    },
+    {
+      "text": "The three brothers cast lots for the world: Zeus won the broad sky, Poseidon the grey sea, Hades the murky dark below — and the earth and Olympus they hold in common.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1"
+    }
+  ]
+}

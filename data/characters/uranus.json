@@ -1,0 +1,30 @@
+{
+  "id": "uranus",
+  "name": "Uranus",
+  "greekName": "Ouranos (Οὐρανός)",
+  "romanName": "Caelus",
+  "type": "primordial",
+  "domains": ["sky"],
+  "epithets": ["Asteroeis"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "The starry sky itself and first lord of the cosmos, born of Gaia to cover her on every side, and unmanned by his own son Cronus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 126–138"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gaia first bore starry Uranus, equal to herself, to cover her on every side and to be a sure seat for the blessed gods forever. By her he fathered the Titans, the Cyclopes and the Hundred-Handers — and hating his own children, he hid them away in the depths of the earth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 126–158"
+    },
+    {
+      "text": "Gaia, groaning under the weight, forged a great sickle of adamant and asked her sons for vengeance. Only Cronus dared. From ambush he reaped his father's manhood and flung it into the sea; from the blood that fell on the earth came the Furies and the Giants, and from the foam upon the waves, Aphrodite.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 159–206; Bibliotheca 1.1.4",
+      "topic": "aphrodite-parentage"
+    }
+  ]
+}

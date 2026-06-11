@@ -1,0 +1,43 @@
+{
+  "id": "aphrodite",
+  "name": "Aphrodite",
+  "greekName": "Aphroditē (Ἀφροδίτη)",
+  "romanName": "Venus",
+  "type": "olympian",
+  "domains": ["love", "beauty", "desire"],
+  "epithets": ["Kypris", "Cytherea", "Philommeides"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Goddess of love, beauty and desire, risen from the sea-foam that gathered about the sundered flesh of Uranus and come ashore at Cythera and Cyprus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 188–206",
+      "topic": "aphrodite-parentage"
+    },
+    {
+      "text": "Goddess of love, beauty and desire, daughter of Zeus and the goddess Dione.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 5.370; Bibliotheca 1.3.1",
+      "topic": "aphrodite-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Cronus cut down his father Uranus with the adamantine sickle, the immortal flesh fell into the restless sea, and a white foam gathered around it. Within it a goddess grew. She drifted past holy Cythera and rose from the waves at Cyprus, and grass sprang up beneath her slender feet. Eros and Desire attended her from the first.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 188–206",
+      "topic": "aphrodite-parentage"
+    },
+    {
+      "text": "In the epic of Troy she is no elder than Zeus but his daughter, born of the goddess Dione. When Diomedes wounded her wrist as she shielded her son Aeneas on the battlefield, she fled to Olympus and was comforted in her mother Dione's arms, while Zeus smiled and told her that the works of war were not for her.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.330–430",
+      "topic": "aphrodite-parentage"
+    },
+    {
+      "text": "Though married to Hephaestus, she loved Ares. Helios, who sees all things, told the smith-god of the affair; Hephaestus forged a net of bronze too fine to see and too strong to break, and snared the lovers in their bed for all the gods to look upon.",
+      "sources": ["homer", "ovid"],
+      "citation": "Odyssey 8.266–366; Metamorphoses 4.169–189"
+    }
+  ]
+}

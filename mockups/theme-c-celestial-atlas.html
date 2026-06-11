@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Theme C: Celestial Atlas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  :root {
+    --ivory: #e8e0cd;
+    --sepia: #b29a6b;
+    --gold: #c9a227;
+    --c-primordial: #cfc4e8;
+    --c-titan: #c79a7e;
+    --c-olympian: #e3cf9a;
+    --c-god: #aebdc9;
+    --c-hero: #9cc2c4;
+    --c-nymph: #a8c4a2;
+    --c-mortal: #d8d2c2;
+    --c-creature: #c4a0ae;
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body { height: 100vh; overflow: hidden; background: #0a0e15; font-family: 'EB Garamond', serif; color: var(--ivory); }
+  header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    height: 58px; padding: 16px 24px 0; position: relative; z-index: 30;
+    border-bottom: 1px solid rgba(232,224,205,.18);
+  }
+  .brand { font: 500 15px 'EB Garamond', serif; letter-spacing: .42em; }
+  .brand em { font-style: italic; letter-spacing: .02em; color: rgba(178,154,107,.85); font-size: 13px; }
+  .lens { display: flex; gap: 14px; font-size: 14px; }
+  .lens button {
+    background: none; border: none; cursor: pointer; padding: 0 0 3px;
+    font: 400 14px 'EB Garamond', serif; color: rgba(232,224,205,.45);
+    border-bottom: 1px solid transparent;
+  }
+  .lens button.active { color: var(--sepia); border-bottom-color: rgba(178,154,107,.6); }
+  .search { color: rgba(232,224,205,.45); font-style: italic; font-size: 13.5px; }
+  #stage { position: absolute; inset: 58px 0 0 0; overflow: hidden; }
+  #world { position: absolute; inset: 0; transition: transform .95s cubic-bezier(.22,.9,.3,1); }
+  #rings, #lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .star {
+    position: absolute; transform: translate(-50%,-50%); cursor: pointer;
+    background: var(--c); transition: transform .25s;
+    clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+    animation: tw 4s ease-in-out infinite;
+  }
+  .star:nth-child(2n) { animation-delay: -1.6s; }
+  .star:nth-child(3n) { animation-delay: -2.7s; }
+  .star:hover { transform: translate(-50%,-50%) scale(1.5); }
+  .star.selected { box-shadow: 0 0 0 9px rgba(201,162,39,.0); outline: 1px solid rgba(201,162,39,.55); outline-offset: 8px; border-radius: 50%; }
+  .star span {
+    position: absolute; top: calc(100% + 5px); left: 50%; transform: translateX(-50%);
+    font: 500 11px 'EB Garamond', serif; letter-spacing: .22em; text-transform: uppercase;
+    color: rgba(232,224,205,.6); white-space: nowrap; pointer-events: none;
+  }
+  @keyframes tw { 0%,100% { opacity: .6; } 50% { opacity: 1; } }
+  #card {
+    position: absolute; top: 22px; right: 26px; width: 268px; z-index: 20;
+    background: #0d121b; border: 1px solid rgba(232,224,205,.35);
+    outline: 1px solid rgba(232,224,205,.12); outline-offset: 3px;
+    padding: 16px 18px 12px; display: none;
+  }
+  #card.visible { display: block; }
+  #card h2 { font: 500 18px 'EB Garamond', serif; letter-spacing: .12em; text-transform: uppercase; }
+  #card .greek { font-style: italic; font-size: 13.5px; color: rgba(178,154,107,.9); display: block; margin: 1px 0 8px; letter-spacing: 0; text-transform: none; }
+  #card .chip { display: inline-block; border: 1px solid rgba(178,154,107,.5); padding: 1px 9px; font-size: 11px; letter-spacing: .2em; color: var(--sepia); margin-bottom: 9px; text-transform: uppercase; }
+  #card .summary { font-size: 14.5px; line-height: 1.55; color: rgba(232,224,205,.85); }
+  #card .variant { display: none; margin-top: 9px; font-size: 13px; font-style: italic; color: rgba(178,154,107,.95); }
+  #card .variant.visible { display: block; }
+  #card .bonds-title { letter-spacing: .18em; font-size: 11px; color: var(--sepia); margin: 10px 0 3px; }
+  #card .bonds { font-size: 13.5px; line-height: 1.6; color: rgba(232,224,205,.78); }
+  #card .bonds i { color: rgba(232,224,205,.45); }
+  #card footer {
+    margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(232,224,205,.18);
+    font-size: 12px; font-style: italic; color: rgba(232,224,205,.5);
+  }
+  #back {
+    position: absolute; top: 22px; left: 26px; z-index: 20; display: none; cursor: pointer;
+    background: #0d121b; border: 1px solid rgba(232,224,205,.35); padding: 7px 16px;
+    font: 400 13px 'EB Garamond', serif; letter-spacing: .1em; color: var(--sepia);
+  }
+  #back.visible { display: block; }
+  #legend {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 10;
+    display: flex; justify-content: center; gap: 17px; padding: 10px 8px 10px;
+    background: linear-gradient(transparent, rgba(10,14,21,.95));
+    font-size: 11px; letter-spacing: .18em; color: rgba(232,224,205,.6);
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">ICARUS ATLAS <em>· a chart of the heavens</em></div>
+  <div class="lens" id="lens">
+    <button data-lens="hesiod" class="active">after Hesiodos</button>
+    <button data-lens="homer">after Homeros</button>
+    <button data-lens="consensus">all traditions</button>
+  </div>
+  <div class="search">seek a name · ⌘K</div>
+</header>
+<div id="stage">
+  <div id="world">
+    <svg id="rings" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+    <svg id="lines" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+    <div id="stars"></div>
+  </div>
+  <aside id="card"></aside>
+  <button id="back">← return to the chart</button>
+  <div id="legend"></div>
+</div>
+<script src="shared/atlas-data.js"></script>
+<script>
+  /* Engraved astrolabe ring backdrop, sized to the viewport */
+  (function drawRings() {
+    const svg = document.getElementById('rings');
+    const w = innerWidth, h = innerHeight - 58;
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    const cx = w / 2, cy = h / 2;
+    let parts = `<rect x="12" y="12" width="${w - 24}" height="${h - 24}" fill="none" stroke="rgba(232,224,205,.22)"/>`;
+    parts += `<rect x="19" y="19" width="${w - 38}" height="${h - 38}" fill="none" stroke="rgba(232,224,205,.1)" stroke-width=".6"/>`;
+    [0.12, 0.24, 0.38, 0.54, 0.72].forEach((f, i) => {
+      parts += `<circle cx="${cx}" cy="${cy}" r="${f * Math.max(w, h)}" fill="none" stroke="rgba(232,224,205,${0.09 - i * 0.012})" ${i === 3 ? 'stroke-dasharray="1 4"' : ''}/>`;
+    });
+    for (let a = 0; a < 360; a += 30) {
+      const r = a * Math.PI / 180, R = Math.max(w, h);
+      parts += `<line x1="${cx}" y1="${cy}" x2="${cx + R * Math.cos(r)}" y2="${cy + R * Math.sin(r)}" stroke="rgba(232,224,205,.045)"/>`;
+    }
+    ['26 34', `${w - 36} 34`, `26 ${h - 22}`, `${w - 36} ${h - 22}`].forEach(p => {
+      const [x, y] = p.split(' ');
+      parts += `<text x="${x}" y="${y}" fill="rgba(232,224,205,.3)" font-family="EB Garamond,serif" font-size="13">✦</text>`;
+    });
+    svg.innerHTML = parts;
+  })();
+
+  AtlasMockup.init({
+    typeColorVar: t => `var(--c-${t})`,
+    lineAccent: 'rgba(201,162,39,.65)',
+    travelScale: 2.3,
+    travelHint: 'click to journey to this star',
+    hereHint: 'you stand among these stars',
+    legendItem: (t, c) => `<span><i style="color:${c};font-style:normal">✦</i> ${t.toUpperCase()}</span>`,
+    cardTemplate: c => `
+      <h2>${c.name}</h2>
+      <span class="greek">${c.greek} · ${c.domains.toLowerCase()}</span>
+      <span class="chip">${c.type}</span>
+      <div class="summary">${c.summary}</div>
+      <div class="variant ${c.variantNote ? 'visible' : ''}">${c.variantNote || ''}</div>
+      <div class="bonds-title">BONDS</div>
+      <div class="bonds">${c.bonds.map(b => `${b.name} <i>· ${b.label}</i>`).join('<br>')}</div>
+      <footer>${c.travelHint}</footer>`
+  });
+</script>
+</body>
+</html>

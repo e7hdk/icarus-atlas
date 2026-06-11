@@ -1,0 +1,41 @@
+/* Icarus Atlas — "Aether Nebula" theme tokens.
+   Single source of truth for the UI: colors, fonts, surfaces.
+   WebGL star materials mirror the star colors in src/types/character.ts (TYPE_GLOW) —
+   keep both files in sync when tuning the palette. */
+
+@theme {
+  /* Typography — classical serif pairing, wired to next/font variables in src/app/layout.tsx */
+  --font-display: var(--font-cinzel), serif;
+  --font-body: var(--font-cormorant), serif;
+
+  /* Cosmos backgrounds */
+  --color-cosmos: #08041d;
+  --color-cosmos-deep: #05020f;
+  --color-cosmos-raised: #140c30;
+
+  /* Nebula accents (background clouds, highlights, active states) */
+  --color-nebula-violet: #7c4dff;
+  --color-nebula-cyan: #00e5ff;
+  --color-nebula-pink: #ff4081;
+  --color-nebula-soft: #c084fc;
+
+  /* Text */
+  --color-aether: #f1f5f9;
+  --color-aether-muted: #aab4c8;
+  --color-aether-faint: #6b7488;
+
+  /* Glass surfaces */
+  --color-glass: rgb(255 255 255 / 0.06);
+  --color-glass-border: rgb(255 255 255 / 0.14);
+  --color-glass-heavy: rgb(20 12 48 / 0.55);
+
+  /* Star glow per character type — mirror of TYPE_GLOW in src/types/character.ts */
+  --color-star-primordial: #c084fc;
+  --color-star-titan: #fb7185;
+  --color-star-olympian: #fcd34d;
+  --color-star-god: #60a5fa;
+  --color-star-hero: #2dd4bf;
+  --color-star-mortal: #e5e7eb;
+  --color-star-nymph: #4ade80;
+  --color-star-creature: #f472b6;
+}

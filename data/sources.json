@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hesiod",
+    "name": "Hesiod",
+    "works": ["Theogony", "Works and Days"],
+    "period": "c. 700 BC",
+    "language": "Ancient Greek",
+    "description": "The poet of origins: the Theogony is the canonical account of cosmogony and divine genealogy, from Chaos to the reign of Zeus. The default lens for the core sky."
+  },
+  {
+    "id": "homer",
+    "name": "Homer",
+    "works": ["Iliad", "Odyssey"],
+    "period": "c. 8th century BC",
+    "language": "Ancient Greek",
+    "description": "The oldest voice: the Olympians in action around the Trojan War and its aftermath. Frequently disagrees with Hesiod on parentage (Aphrodite, Hephaestus)."
+  },
+  {
+    "id": "apollodorus",
+    "name": "Pseudo-Apollodorus",
+    "works": ["Bibliotheca"],
+    "period": "1st–2nd century AD",
+    "language": "Ancient Greek",
+    "description": "The systematic mythographer: a compact encyclopedia of nearly the whole mythological tradition, often recording multiple variants side by side."
+  },
+  {
+    "id": "apollonius",
+    "name": "Apollonius of Rhodes",
+    "works": ["Argonautica"],
+    "period": "3rd century BC",
+    "language": "Ancient Greek",
+    "description": "The epic of Jason and the Argonauts: the richest source for the Argonaut cycle and Hellenistic shadings of the gods."
+  },
+  {
+    "id": "ovid",
+    "name": "Ovid",
+    "works": ["Metamorphoses"],
+    "period": "8 AD",
+    "language": "Latin",
+    "description": "The Roman reteller: transformation stories with strong literary license; the source of many now-famous versions (Medusa, Arachne) absent from older Greek accounts."
+  },
+  {
+    "id": "hyginus",
+    "name": "Hyginus",
+    "works": ["Fabulae", "Astronomica"],
+    "period": "1st–2nd century AD",
+    "language": "Latin",
+    "description": "The cataloguer: terse summaries and lists preserving many otherwise-lost variants, plus the star myths behind the constellations."
+  },
+  {
+    "id": "pausanias",
+    "name": "Pausanias",
+    "works": ["Description of Greece"],
+    "period": "2nd century AD",
+    "language": "Ancient Greek",
+    "description": "The traveller: local cult traditions and regional variants seen on the ground, often contradicting the Panhellenic poets."
+  }
+]

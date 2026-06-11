@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+body {
+  background-color: var(--color-cosmos);
+  background-image:
+    radial-gradient(42% 36% at 72% 16%, rgb(124 77 255 / 0.3), transparent 70%),
+    radial-gradient(48% 42% at 16% 78%, rgb(0 229 255 / 0.13), transparent 70%),
+    radial-gradient(36% 32% at 88% 82%, rgb(255 64 129 / 0.16), transparent 70%),
+    radial-gradient(30% 26% at 40% 40%, rgb(124 77 255 / 0.12), transparent 70%);
+  background-attachment: fixed;
+  color: var(--color-aether);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgb(192 132 252 / 0.35);
+}
