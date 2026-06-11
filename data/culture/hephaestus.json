@@ -1,4 +1,23 @@
 {
   "id": "hephaestus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Apollo in the Forge of Vulcan",
+      "artist": "Diego Velázquez",
+      "year": "1630",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_%28Museo_del_Prado%2C_1630%29.jpg/960px-Vel%C3%A1zquez_-_La_Fragua_de_Vulcano_%28Museo_del_Prado%2C_1630%29.jpg"
+    },
+    {
+      "title": "The Temple of Hephaestus, Athens",
+      "artist": "Unknown architect",
+      "year": "449–415 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Temple_of_Hephaestus_viewed_from_the_Stoa_of_Attalos_in_Athens%2C_Greece.jpg/960px-Temple_of_Hephaestus_viewed_from_the_Stoa_of_Attalos_in_Athens%2C_Greece.jpg"
+    },
+    {
+      "title": "Thetis Receiving the Weapons of Achilles",
+      "artist": "Anthony van Dyck",
+      "year": "c. 1630–1632",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Anthonis_van_Dyck_066.jpg/960px-Anthonis_van_Dyck_066.jpg"
+    }
+  ]
 }

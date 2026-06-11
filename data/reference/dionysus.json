@@ -1,11 +1,29 @@
 {
   "id": "dionysus",
-  "summary": "Dionysus is a prominent figure in Greek mythology.",
+  "summary": "In ancient Greek religion and myth, Dionysus is the god of wine-making, orchards, fruit, vegetation, fertility, festivity, insanity, ritual madness, religious ecstasy, and theatre. He was also known as Bacchus by the Greeks for a frenzy he is said to induce called baccheia. His wine, music, and ecstatic dance were considered to free his followers from self-conscious fear and care, and subvert the oppressive restraints of the powerful. His thyrsus, a fennel-stem sceptre, sometimes wound with ivy and dripping with honey, is both a beneficent wand and a weapon used to destroy those who oppose his cult and the freedoms he represents. Those who partook of his mysteries were believed to become possessed and empowered by the god himself.",
   "attribution": "after Wikipedia · CC BY-SA",
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Dionysus"
     }
-  ]
+  ],
+  "symbols": [
+    "thyrsus",
+    "grapevine",
+    "ivy wreath",
+    "kantharos"
+  ],
+  "sacredAnimals": [
+    "panther",
+    "bull",
+    "goat",
+    "serpent"
+  ],
+  "cultCenters": [
+    "Thebes",
+    "Naxos",
+    "Athens (the Dionysia)"
+  ],
+  "etymology": "Read in antiquity as \"the Zeus of Nysa\"; attested already in Mycenaean Linear B as di-wo-nu-so."
 }

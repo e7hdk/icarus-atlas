@@ -1,4 +1,23 @@
 {
   "id": "apollo",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Apollo Belvedere",
+      "artist": "Roman copy after Leochares",
+      "year": "c. 120–140 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Apollo_del_Belvedere.jpg/960px-Apollo_del_Belvedere.jpg"
+    },
+    {
+      "title": "Apollo and Daphne",
+      "artist": "Gian Lorenzo Bernini",
+      "year": "1622–1625",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apollo_and_Daphne_%28Bernini%29_%28cropped%29.jpg/960px-Apollo_and_Daphne_%28Bernini%29_%28cropped%29.jpg"
+    },
+    {
+      "title": "The Charioteer of Delphi",
+      "artist": "Unknown",
+      "year": "c. 470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Vognstyreren-fra_Delfi2.jpg/960px-Vognstyreren-fra_Delfi2.jpg"
+    }
+  ]
 }

@@ -1,4 +1,23 @@
 {
   "id": "ares",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "The Ludovisi Ares",
+      "artist": "Roman copy, restored by Bernini",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ares_Ludovisi_Altemps_Inv8602_n2.jpg/960px-Ares_Ludovisi_Altemps_Inv8602_n2.jpg"
+    },
+    {
+      "title": "Venus and Mars",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1485",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/960px-Venus_and_Mars_National_Gallery.jpg"
+    },
+    {
+      "title": "The Consequences of War",
+      "artist": "Peter Paul Rubens",
+      "year": "1637–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Los_horrores_de_la_guerra.jpg/960px-Los_horrores_de_la_guerra.jpg"
+    }
+  ]
 }

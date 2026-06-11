@@ -1,4 +1,29 @@
 {
   "id": "dionysus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Bacchus",
+      "artist": "Caravaggio",
+      "year": "c. 1596",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bacchus_by_Caravaggio_1.jpg/960px-Bacchus_by_Caravaggio_1.jpg"
+    },
+    {
+      "title": "Bacchus and Ariadne",
+      "artist": "Titian",
+      "year": "1522–1523",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Titian_Bacchus_and_Ariadne.jpg/960px-Titian_Bacchus_and_Ariadne.jpg"
+    },
+    {
+      "title": "Bacchus",
+      "artist": "Michelangelo",
+      "year": "1496–1497",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Michelangelo_Bacchus.jpg"
+    },
+    {
+      "title": "The Dionysus Cup",
+      "artist": "Exekias",
+      "year": "c. 540–530 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg/960px-Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg"
+    }
+  ]
 }

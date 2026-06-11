@@ -1,11 +1,26 @@
 {
   "id": "hephaestus",
-  "summary": "Hephaestus is a prominent figure in Greek mythology.",
+  "summary": "Hephaestus is the Greek god of artisans, blacksmiths, carpenters, craftsmen, fire, metallurgy, metalworking, sculpture, and volcanoes. In Greek mythology, Hephaestus was the son of Hera, either on her own or by her husband Zeus. He was cast off Mount Olympus by his mother Hera because of his lameness, the result of a congenital impairment; or in another account, by Zeus for protecting Hera from his advances.",
   "attribution": "after Wikipedia · CC BY-SA",
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Hephaestus"
     }
-  ]
+  ],
+  "symbols": [
+    "hammer",
+    "anvil",
+    "tongs"
+  ],
+  "sacredAnimals": [
+    "donkey",
+    "crane"
+  ],
+  "cultCenters": [
+    "Lemnos",
+    "Athens (Hephaisteion)",
+    "Mount Etna (his forge in later myth)"
+  ],
+  "etymology": "Pre-Greek; in Homer his very name can stand for fire itself."
 }

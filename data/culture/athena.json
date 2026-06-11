@@ -1,4 +1,23 @@
 {
   "id": "athena",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Athena Parthenos (reconstruction)",
+      "artist": "After Phidias",
+      "year": "438 BC (original)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/NAMA_Ath%C3%A9na_Varvakeion.jpg/960px-NAMA_Ath%C3%A9na_Varvakeion.jpg"
+    },
+    {
+      "title": "The Mourning Athena",
+      "artist": "Unknown",
+      "year": "c. 470–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pensive_Athena_in_Acropolis_Museum_2024.jpg/960px-Pensive_Athena_in_Acropolis_Museum_2024.jpg"
+    },
+    {
+      "title": "Pallas Athene",
+      "artist": "Gustav Klimt",
+      "year": "1898",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Klimt_-_Pallas_Athene.jpeg/960px-Klimt_-_Pallas_Athene.jpeg"
+    }
+  ]
 }

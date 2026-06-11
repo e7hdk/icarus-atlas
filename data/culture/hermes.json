@@ -1,4 +1,17 @@
 {
   "id": "hermes",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Hermes and the Infant Dionysus",
+      "artist": "Attributed to Praxiteles",
+      "year": "c. 340 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hermes_and_the_infant_Dionysus_by_Praxiteles.jpg/960px-Hermes_and_the_infant_Dionysus_by_Praxiteles.jpg"
+    },
+    {
+      "title": "Flying Mercury",
+      "artist": "Giambologna",
+      "year": "c. 1580",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg/960px-Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg"
+    }
+  ]
 }

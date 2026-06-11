@@ -1,11 +1,27 @@
 {
   "id": "poseidon",
-  "summary": "Poseidon is a prominent figure in Greek mythology.",
+  "summary": "Poseidon is one of the twelve Olympians in ancient Greek religion and mythology, presiding over the sea, storms, earthquakes and horses. He was the protector of seafarers and the guardian of many Hellenic cities and colonies. In pre-Olympian Bronze Age Greece, Poseidon was venerated as a chief deity at Pylos and Thebes, with the cult title \"earth shaker\"; in the myths of isolated Arcadia, he is related to Demeter and Despoina and was venerated as a horse, and as a god of the waters. Poseidon maintained both associations among most Greeks: he was regarded as the tamer or father of horses, who, with a strike of his trident, created springs. His Roman equivalent is Neptune.",
   "attribution": "after Wikipedia · CC BY-SA",
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Poseidon"
     }
-  ]
+  ],
+  "symbols": [
+    "trident",
+    "dolphin",
+    "horse"
+  ],
+  "sacredAnimals": [
+    "horse",
+    "dolphin",
+    "bull"
+  ],
+  "cultCenters": [
+    "Isthmia (Corinth)",
+    "Cape Sounion",
+    "Helike"
+  ],
+  "etymology": "Often read as posis + da, \"lord of the earth\" — discussed since antiquity, never settled."
 }
