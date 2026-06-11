@@ -3,9 +3,10 @@
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { characterSchema, relationSchema, sourceSchema } from '../src/lib/schemas';
+import { characterSchema, cultureSchema, referenceSchema, relationSchema, sourceSchema } from '../src/lib/schemas';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
+const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
 const errors: string[] = [];
 const info: string[] = [];
 
@@ -82,12 +83,44 @@ if (Array.isArray(relationsRaw)) {
   errors.push('relations.json: expected a JSON array');
 }
 
-// 4. Contradiction report (informational)
-for (const [topic, entries] of topics) {
-  if (entries.length > 1) info.push(`disputed topic "${topic}": ${entries.join(' vs ')}`);
+// 4. Reference (Information tab) and culture (Legacy page) files: optional per
+//    character, but when present they must validate and point at a real character.
+let referenceCount = 0;
+let cultureCount = 0;
+for (const [dirName, schema] of [['reference', referenceSchema], ['culture', cultureSchema]] as const) {
+  const dir = join(DATA_DIR, dirName);
+  if (!existsSync(dir)) continue;
+  for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
+    const raw = loadJson(join(dir, file));
+    if (raw === null) continue;
+    const parsed = schema.safeParse(raw);
+    if (!parsed.success) {
+      errors.push(`${dirName}/${file}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      continue;
+    }
+    if (file !== `${parsed.data.id}.json`) errors.push(`${dirName}/${file}: filename must match id "${parsed.data.id}"`);
+    if (!charIds.has(parsed.data.id)) errors.push(`${dirName}/${file}: unknown character "${parsed.data.id}"`);
+    if (dirName === 'reference') referenceCount++;
+    else cultureCount++;
+  }
 }
 
-console.log(`Sources: ${sourceIds.size} · Characters: ${charIds.size} · Disputed topics: ${info.length}`);
+// 5. Every disputed topic must be documented before it can surface in the UI.
+const contradictions = readFileSync(CONTRADICTIONS_PATH, 'utf-8');
+const documentedTopics = new Set(
+  [...contradictions.matchAll(/\*\*topic\*\*: `([^`]+)`/g)].map((match) => match[1]),
+);
+
+for (const [topic, entries] of topics) {
+  if (entries.length > 1) {
+    info.push(`disputed topic "${topic}": ${entries.join(' vs ')}`);
+    if (!documentedTopics.has(topic)) {
+      errors.push(`disputed topic "${topic}" is missing from docs/CONTRADICTIONS.md`);
+    }
+  }
+}
+
+console.log(`Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Disputed topics: ${info.length}`);
 for (const line of info) console.log(`  ⚖ ${line}`);
 
 if (errors.length > 0) {

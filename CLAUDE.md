@@ -30,24 +30,32 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 ```
 src/
   app/                  # Next.js routes
+    character/[id]/     # character codex: Poets (page.tsx), info/, legacy/
   components/
     galaxy/             # R3F scene: GalaxyCanvas, StarField, Star, CameraRig, effects
+    character/          # CharacterShell, PoetsView, RelationOrrery (codex routes)
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
   features/
     lens/               # source-lens state + fact-filtering logic
-    characters/         # character loading/selection
+    characters/         # character loading, relation/ring grouping
     search/             # name search
   lib/                  # utils, zod schemas, three helpers
   types/                # shared TS types (character.ts is the contract)
 data/
   sources.json          # the 7 ancient source authors
-  characters/*.json     # one file per character
+  characters/*.json     # one file per character (sourced mythology)
   relations.json        # relation edges, each tagged with sources
+  reference/*.json      # neutral encyclopedic facts (Information tab; CC BY-SA attributed)
+  culture/*.json        # cultural legacy items, artworks for now (Legacy page)
 docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md
 mockups/                # static theme mockups (design artifacts, not app code)
 scripts/                # validate-data.ts and other maintenance scripts
 ```
+
+## Character page rule
+
+The source lens appears in exactly ONE place: the "told after" selector on the Poets tab. Information and Legacy are lens-independent by design. Never scatter per-author labels through running prose — citations live in hover footnotes, disputes as a quiet ⚖ marker.
 
 ## Data model in one paragraph
 

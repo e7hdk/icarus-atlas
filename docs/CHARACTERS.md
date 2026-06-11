@@ -1,6 +1,6 @@
-# Milestone-1 character roster
+# Character roster
 
-The 26 characters gating Milestone 1: 13 Olympians, 2 gods, 6 primordials, 5 Titans. Relation bullets below reflect the research draft; see [Data-entry conventions](#data-entry-conventions) for how they map onto the schema in `src/types/character.ts` (notably: `child` bullets are stored as `parent` records from the child's side).
+The original research draft below covers the 26 characters that gated Milestone 1; four load-bearing additions brought the completed core to 30. Verified expansion batch 1 adds a 15-character Night Court, bringing the live data set to 45. Relation bullets reflect the research draft; see [Data-entry conventions](#data-entry-conventions) for how they map onto the schema in `src/types/character.ts`.
 
 ## Summary table
 
@@ -34,6 +34,28 @@ The 26 characters gating Milestone 1: 13 Olympians, 2 gods, 6 primordials, 5 Tit
 | `atlas` | Atlas | Atlas (Ἄτλας) | titan | bearing the heavens, endurance, astronomy |
 
 \* "the sea-foam" is flagged for replacement — it is an origin story, not a domain (see fix-notes below).
+
+## Expansion batch 1 — Night Court
+
+| id | Name | Greek name | Type | Domains |
+|---|---|---|---|---|
+| `aether` | Aether | Aithēr (Αἰθήρ) | primordial | upper air, brightness |
+| `hemera` | Hemera | Hēmera (Ἡμέρα) | primordial | day, daylight |
+| `moros` | Moros | Moros (Μόρος) | god | doom, destined death |
+| `thanatos` | Thanatos | Thanatos (Θάνατος) | god | death, the passage of the dead |
+| `hypnos` | Hypnos | Hypnos (Ὕπνος) | god | sleep, rest, divine slumber |
+| `momus` | Momus | Mōmos (Μῶμος) | god | blame, reproach |
+| `oizys` | Oizys | Oizys (Ὀϊζύς) | god | misery, distress, suffering |
+| `nemesis` | Nemesis | Nemesis (Νέμεσις) | god | retribution, indignation |
+| `apate` | Apate | Apatē (Ἀπάτη) | god | deceit, fraud, delusion |
+| `geras` | Geras | Gēras (Γῆρας) | god | old age, the decline of mortal life |
+| `eris` | Eris | Eris (Ἔρις) | god | strife, discord, conflict |
+| `themis` | Themis | Themis (Θέμις) | titan | divine law, custom, order |
+| `clotho` | Clotho | Klōthō (Κλωθώ) | god | fate, the allotment of mortal life |
+| `lachesis` | Lachesis | Lachesis (Λάχεσις) | god | fate, the allotment of mortal life |
+| `atropos` | Atropos | Atropos (Ἄτροπος) | god | fate, the limit of mortal life |
+
+Batch boundary: collective figures such as the Oneiroi, Keres and Hesperides remain deferred. This batch uses one star per individual figure and adds Themis because the Zeus–Themis parentage of the Moirai cannot be modeled with a dangling endpoint.
 
 ## Zeus
 

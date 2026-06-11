@@ -1,0 +1,55 @@
+{
+  "id": "persephone",
+  "name": "Persephone",
+  "greekName": "Persephone (Περσεφόνη)",
+  "romanName": "Proserpina",
+  "type": "god",
+  "domains": ["spring growth", "the underworld", "the dead"],
+  "epithets": ["Kore", "Despoina", "Praxidike"],
+  "cluster": "chthonic",
+  "summary": [
+    {
+      "text": "Daughter of Zeus and Demeter, carried off by Pluto to reign beside him as queen of the dead; because he gave her a pomegranate seed to eat, she is compelled to remain a third of every year with him and the rest of the time with the gods.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.3",
+      "topic": "persephone-split-year"
+    },
+    {
+      "text": "Daughter of Zeus and Demeter, seized by the lord of the dead as she gathered flowers; Jupiter divided the revolving year into two equal parts, so that she spends as many months with her mother as with her husband — maiden of spring above, queen of the dead below.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 5.564–567; Fabulae 146",
+      "topic": "persephone-split-year"
+    }
+  ],
+  "story": [
+    {
+      "text": "Zeus came to the bed of all-nourishing Demeter, and she bore him white-armed Persephone — whom Aidoneus carried off from her mother, wise Zeus himself giving her to his brother. In Homer she is already a power to dread. Odysseus must sail to the house of Hades and of dread Persephone to question the seer Teiresias, to whom she alone among the dead has left his wits; it is she who sends forth the shades of the heroines to drink the blood and speak; and what at last drives Odysseus back to his ship is the pale fear that august Persephone might send up against him the Gorgon's head from out of the house of Hades.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 912–914; Odyssey 10.490–495, 11.225–227, 11.634–635"
+    },
+    {
+      "text": "In Ovid the earth that opens is Sicilian. By the deep pool of Pergus, near the walls of Henna, where spring is everlasting, Proserpina was gathering violets and white lilies when Dis saw her, loved her, and carried her off — so sudden was the theft that she was still calling for her mother and her companions as the flowers spilled from her torn tunic. And it was the nymph Arethusa, whose waters glide beneath the sea from Elis, who at last lifted her head from her pool and revealed to searching Ceres where her daughter had gone — not dead, but enthroned: the great queen of the world of darkness, consort of the infernal king.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.385–424, 5.487–508",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "text": "Apollodorus keeps the theft in shadow: Pluto carried Persephone off secretly, with the connivance of Zeus himself, and Demeter, roaming the whole earth with torches by night and day, learned only from the people of Hermione that Pluto had taken her. Pausanias, for his part, found Greek cities anchoring the story to their own soil with rival descent-points rather than any Sicilian meadow: the Eleusinians showed him Erineus beside their river Cephisus, where Pluto went down to the underworld after carrying off the Maid, while the Argives pointed to a circuit of stones by the river Cheimarrus near Lerna as the place where he descended with Kore.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.1; Description of Greece 1.38.5, 2.36.7",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "text": "In the mainstream of the tradition Persephone has no part in the birth of Dionysus. Hesiod says plainly that it was Semele, daughter of Cadmus, who lay with Zeus and bore him that splendid son — a mortal woman delivered of an immortal child; and Apollodorus tells how, when Hera's trick had brought Zeus to Semele in thunder and lightning and she perished in the blaze, Zeus snatched the six-month child from the fire and sewed him into his own thigh to carry to term.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 940–942; Bibliotheca 3.4.3",
+      "topic": "dionysus-first-birth"
+    },
+    {
+      "text": "But Orphic tradition, as reported by Hyginus, holds that the wine-god was first her own son. Liber was born of Jove and Proserpina, and the Titans tore that child apart; Jove ground up the rescued heart and gave it to Semele in a drink, and from it the god was conceived a second time — which is why he is called the one with two mothers, and why his oldest birth belongs to the queen of the dead.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 167",
+      "topic": "dionysus-first-birth"
+    }
+  ]
+}

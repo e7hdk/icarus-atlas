@@ -1,0 +1,54 @@
+{
+  "id": "clotho",
+  "name": "Clotho",
+  "greekName": "Klōthō (Κλωθώ)",
+  "type": "god",
+  "domains": ["fate", "the allotment of mortal life"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "One of the three Moirai; Hesiod first makes her a fatherless daughter of Nyx, then later a daughter of Zeus and Themis.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222, 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Fates born to Zeus and Themis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Parcae, daughter of Night and Erebus, who foretold that the newborn Meleager would be noble.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's first genealogy, Clotho and her sisters Lachesis and Atropos are fatherless daughters of Night. They give mortals good and evil at birth and pursue the transgressions of gods and men until the offender is punished.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Later in the same poem, Hesiod makes the three Fates daughters of Zeus and Themis, sisters of the Horae, and says that Zeus gave them the greatest honor.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Apollodorus follows the Zeus-and-Themis genealogy, listing Clotho with Lachesis and Atropos among their children.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Hyginus instead makes the Parcae children of Night and Erebus. At the birth of Meleager, Clotho declared that the child would be noble before her sisters added their own portions to his fate.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ]
+}

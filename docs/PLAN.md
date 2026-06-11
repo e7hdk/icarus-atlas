@@ -15,6 +15,8 @@ An explorable 3D galaxy where all of Greek mythology lives: primordials at the b
 | Hover UX | Summary card on hover; click = camera fly-to + full story panel | 2026-06-11 |
 | Source system | Global lens selector + Consensus mode with dispute badges | 2026-06-11 |
 | Theme | Aether Nebula (mockup B) visuals + classical serif typography (Cinzel display, Cormorant Garamond body). Tokens centralized in `src/styles/theme.css`; UI built from reusable primitives in `src/components/ui/` | 2026-06-11 |
+| Expansion batch 1 | Night court: 14 figures from the house of Nyx and Erebus, plus Themis to complete the Moirai parentage dispute (45 total characters) | 2026-06-11 |
+| Character page IA | Three modes per character: **The Poets** (`/character/[id]` — the ONLY place the source lens appears; relation orrery with category rings: parents / siblings / children / loves / wars; names revealed on demand), **Information** (`/info` — neutral encyclopedic reference), **Legacy** (`/legacy` — own route, room to grow). Data split accordingly: `data/reference/` (encyclopedic) and `data/culture/` (artworks only) | 2026-06-11 |
 
 ## 3. The source-lens system
 
@@ -38,7 +40,7 @@ An explorable 3D galaxy where all of Greek mythology lives: primordials at the b
 - Active lens `L` shows a fact iff `L ∈ sources`.
 - `consensus` lens shows the union; facts whose topic has conflicting versions get a **dispute badge** ("2 traditions"). Conflicts are detected via a shared `topic` key on competing facts (e.g. `aphrodite-parentage`).
 - Lens switching animates: relation lines fade out/in and re-route; story panel cross-fades.
-- Default lens: `hesiod` (richest genealogy for the core set). The lens is in the URL (`?lens=homer`) for shareability.
+- Default lens: `consensus` while legacy multi-source paragraphs are being split into source-atomic facts. The lens will be stored in the URL (`?lens=homer`) for shareability when the selector lands.
 
 ## 4. Data model
 
@@ -103,6 +105,7 @@ Spatial story = genealogical time:
 
 - **Core**: Chaos at the very center; primordials (Gaia, Nyx, Uranus, Tartarus, Eros) in tight orbit.
 - **Inner ring**: Titans (Cronus, Rhea, Oceanus, Prometheus, Atlas…).
+- **Night court**: a steep, thick orbit around the core for Nyx, Erebus and their personified children.
 - **Golden band**: the Olympians.
 - **Outer arms** (later milestones): heroes, mortals, nymphs, creatures — clustered by saga (Trojan arm, Argonaut arm, Theban arm…) and domain (sea cluster near Poseidon/Oceanus, underworld cluster near Hades/Nyx).
 
@@ -122,11 +125,15 @@ Positions are precomputed (deterministic from id + cluster, stored at build time
 
 - **M0 — Foundation (now)**: scaffold ✅, deps ✅, directory ✅, mockups ✅, theme decision, design tokens, data schema + validator, seed `sources.json`.
 - **M1 — The core sky**: 26 core characters fully written (summary + story + relations, all sourced), R3F galaxy with type glows, hover cards, click fly-to, legend. No lens UI yet — data already sourced. _Roster review recommends 4 load-bearing additions (Leto, Iapetus, Erebus, Tethys → 30 total) so no genealogy edge dangles; see docs/CHARACTERS.md._
+- **M1.5 — The night court**: +15 verified characters (Aether, Hemera, Moros, Thanatos, Hypnos, Momus, Oizys, Nemesis, Apate, Geras, Eris, Themis, Clotho, Lachesis, Atropos), source-rewired parentage, and a dedicated 3D cluster. ✅
+- **M1.6 — The character codex**: `/character/[id]` in three modes (Poets with lens + relation orrery, Information, Legacy), SSG for all 45 characters, reference/culture data split. ✅
 - **M2 — The lens**: lens selector + consensus mode, animated edge re-routing, dispute badges, URL state. Contradiction catalog from docs/CONTRADICTIONS.md drives at least 8 visible disputes.
 - **M3 — Find your way**: ⌘K search, type filters, performance pass (instancing, LOD), mobile fallback (2D touch mode or guarded experience).
 - **M4 — Expansion: Titanomachy & heroes**: +~30 characters (remaining titans, major heroes), saga clusters, relation-hop navigation polish.
 - **M5 — Depth**: comparison view ("this fact across all 7 authors"), character page routes for SEO/sharing, family-tree overlay mode.
 - **M6+ — The long sky**: nymphs, creatures, mortals in verified batches; community-proof data pipeline (validator gates in CI).
+- **M7 — The Wikipedia Lens**: Add a modern encyclopedic lens for pure, synthesized facts alongside ancient sources.
+- **M8 — Cultural Expansion**: Expand entity data to include their cultural legacy: related artworks, films, music, pop culture, and historical artifacts.
 
 Each milestone ends with: `pnpm lint && pnpm build && pnpm validate-data` green + a manual UX review together.
 

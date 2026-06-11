@@ -1,0 +1,36 @@
+{
+  "id": "eris",
+  "name": "Eris",
+  "greekName": "Eris (Ἔρις)",
+  "romanName": "Discordia",
+  "type": "god",
+  "domains": ["strife", "discord", "conflict"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Hard-hearted Strife, daughter of Nyx and mother in turn of toil, famine, battles, lies, lawlessness and ruin.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 225–232"
+    },
+    {
+      "text": "Hyginus places Discord among the children of Night and Erebus together.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Night bore hard-hearted Eris without a father. Strife then continued the dark genealogy herself, bearing Toil, Forgetfulness, Famine, Griefs, Battles, Murders, Quarrels, Lies, Lawlessness, Ruin and Oath — the pains that turn discord into the texture of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 225–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Hyginus makes Discordia a daughter of both Nox and Erebus, one member of their crowded brood of death, sleep, misery and fate.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

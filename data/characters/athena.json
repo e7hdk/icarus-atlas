@@ -1,0 +1,54 @@
+{
+  "id": "athena",
+  "name": "Athena",
+  "greekName": "Athēna (Ἀθηνᾶ)",
+  "romanName": "Minerva",
+  "type": "olympian",
+  "domains": ["wisdom", "strategic warfare", "crafts", "the city"],
+  "epithets": ["Pallas", "Glaukopis", "Parthenos"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Goddess of wisdom, strategic warfare and crafts, born fully armed from the head of Zeus after he swallowed her pregnant mother, his first wife Metis.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 886–900, 924–926; Bibliotheca 1.3.6",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "Goddess of wisdom and war whom the Libyans call the daughter of Poseidon and Lake Tritonis, her sea-grey eyes inherited from her father.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.14.6",
+      "topic": "athena-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Zeus made Metis, wisest among gods and mortal men, his first wife; but when she was about to bear the bright-eyed goddess, Gaia and starry Ouranos warned him that after the girl Metis would bear a son fated to be king of gods and men. So Zeus coaxed her with cunning words and swallowed her down into his belly, and in time he himself gave birth: from his own head sprang Athena Tritogeneia, dread rouser of the battle-din, unwearied leader of armies, equal to her father in strength and in wise counsel.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 886–900, 924–926",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "The mythographers add a midwife to the marvel. When the time of the birth came, Apollodorus says, it was Prometheus — or, as others tell it, Hephaestus — who smote the head of Zeus with an axe, and from his crown Athena sprang up fully armed beside the river Triton.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.6",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "Pausanias records a stranger claim from Libya: there they say Athena is the daughter of Poseidon and Lake Tritonis, and that this is why her eyes are sea-grey, like Poseidon's own.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.14.6",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "In the days of king Cecrops she contended with Poseidon for Attica. The sea-god struck the height of the acropolis with his trident and brought up a well of sea-water, the Erechtheis; Athena planted the first olive tree, and with Cecrops as her witness the twelve gods judged the land hers, while Poseidon in anger drowned the Thriasian plain. Minerva wove that victory into her tapestry against Arachne — the twelve gods enthroned, the sea leaping from the smitten rock, the olive springing where her spear struck, and Victory to end the work — and Pausanias saw the contest carved on the Parthenon's rear pediment, the sea-well and the trident mark still shown in the Erechtheum as Poseidon's evidence.",
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Bibliotheca 3.14.1; Metamorphoses 6.70–82; Description of Greece 1.24.5, 1.26.5"
+    },
+    {
+      "text": "No Olympian walks nearer to heroes. On the shore of Ithaca she smiled at Odysseus' ready lies, took the shape of a woman tall and skilled in fine handiwork, and claimed him as her own kind: he the best of mortals in counsel and stories, she famed among all the gods for wisdom and craft. And when the Argo hung trembling between the Clashing Rocks, Athena braced one rock back with her left hand and with her right thrust the ship through, so that it shot clear like a winged arrow while the Rocks sheared away only the tip of its stern-ornament.",
+      "sources": ["homer", "apollonius"],
+      "citation": "Odyssey 13.287–310; Argonautica 2.598–602"
+    }
+  ]
+}

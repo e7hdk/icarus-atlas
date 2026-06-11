@@ -1,0 +1,72 @@
+{
+  "id": "hera",
+  "name": "Hera",
+  "greekName": "Hera (Ἥρα)",
+  "romanName": "Juno",
+  "type": "olympian",
+  "domains": ["marriage", "women", "queenship", "childbirth"],
+  "epithets": ["Boopis", "Teleia", "Argeia"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Queen of Olympus and goddess of lawful marriage, daughter of Cronus and Rhea and both sister and wife of Zeus — whose endless infidelities she avenges with grudges that drive whole epics.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 453–457, 921–923; Iliad 4.58–61; Bibliotheca 1.3.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gold-shod Hera was swallowed at birth by her father Cronus, like each of Rhea's children, and freed only when Zeus forced the old god to disgorge them. Homer adds that while Zeus was thrusting Cronus down beneath the earth, Hera was reared far away in the halls of Oceanus and mother Tethys, who had taken her from Rhea and cherished her. In time Zeus made his sister his last and lasting wife, and she bore him Hebe, Ares and Eileithyia — though Ovid has Flora tell a stranger tale: that Juno, stung that Jupiter had borne Minerva without a mother, conceived Mars with no father at all, by the touch of a wondrous flower from the fields of Olenus.",
+      "sources": ["hesiod", "homer", "apollodorus", "ovid"],
+      "citation": "Theogony 453–500, 921–923; Iliad 14.200–204; Bibliotheca 1.1.5, 1.3.1; Fasti 5.229–258"
+    },
+    {
+      "text": "Her rivalry with Zeus went further still. Angry and quarrelling with her mate after he produced Athena from his own head, Hera bore a son entirely on her own, without union with any father: Hephaestus, skilled in crafts beyond all the sons of Heaven. Apollodorus repeats that she gave birth to him without intercourse — while noting himself that Homer instead makes the smith a child of Zeus and Hera.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 927–929; Bibliotheca 1.3.5",
+      "topic": "hephaestus-conception"
+    },
+    {
+      "text": "In Homer there is no fatherless birth: Hephaestus is the son of both Zeus and Hera. He speaks of Zeus as his father and counsels his mother to soothe the king of gods, and Hera herself calls the bedchamber Hephaestus built for them the work of Zeus' own dear son.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.577–579, 14.338–339; Odyssey 8.312",
+      "topic": "hephaestus-conception"
+    },
+    {
+      "text": "Hephaestus himself remembers a hard mother: wishing to hide her son because he was lame, Hera flung him from heaven, and he would have suffered sorely had not Thetis and Eurynome received him in the sea.",
+      "sources": ["homer"],
+      "citation": "Iliad 18.394–399",
+      "topic": "hephaestus-fall-from-olympus"
+    },
+    {
+      "text": "Yet in the first book of the same Iliad the thrower is Zeus: when Hephaestus took Hera's side against him, Zeus seized him by the foot and hurled him from the divine threshold, and he fell the whole day before landing on Lemnos. Apollodorus likewise has Zeus cast him out of heaven for coming to the rescue of Hera in her bonds — and adds that it was the crash-landing on Lemnos that lamed his legs.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 1.590–594; Bibliotheca 1.3.5",
+      "topic": "hephaestus-fall-from-olympus"
+    },
+    {
+      "text": "Of all her grudges against Zeus' loves, none burned hotter than her hatred of Semele, daughter of Cadmus, who in Hesiod bore Zeus a splendid son, Dionysus — a mortal mother bearing an immortal child. Apollodorus tells how Hera repaid her: deceived by Hera's trick, Semele asked Zeus to come to her as he came to his own queen, and was incinerated by his lightning; Zeus sewed the six-month child into his thigh and bore him at term.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 940–942; Bibliotheca 3.4.3",
+      "topic": "dionysus-first-birth"
+    },
+    {
+      "text": "Hyginus preserves the Orphic tale in which Semele was Dionysus' second mother, not his first: Liber was born to Jove and Proserpina and dismembered by the Titans, and Jove gave his pounded heart to Semele in a drink, from which the god was conceived again — while Juno, disguised as Semele's nurse Beroe, still goaded her toward the fatal request. Hence his epithet, 'the one with two mothers.'",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 167",
+      "topic": "dionysus-first-birth"
+    },
+    {
+      "text": "Mortal rivals fared no better. When the birth of Arcas betrayed Zeus' affair with the Arcadian Callisto, the enraged Juno seized her by the hair and turned her into a bear with her own hands; Jupiter at last set mother and son among the stars. Hyginus too makes Juno the transformer, angry that Callisto had lain with Jove, though his star-myth handbook collects still more variants, including Diana killing the bear while hunting.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.466–507; Fabulae 177; Astronomica 2.1",
+      "topic": "callisto-transformation"
+    },
+    {
+      "text": "Apollodorus reshuffles the blame: Zeus himself turned Callisto into a bear to hide the affair from Hera, and it was Hera who then persuaded Artemis to shoot the beast down — though others, he notes, say Artemis shot her for failing to keep her maidenhood.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.8.2",
+      "topic": "callisto-transformation"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "atlas",
+  "name": "Atlas",
+  "greekName": "Atlas (Ἄτλας)",
+  "romanName": "Atlas",
+  "type": "titan",
+  "domains": ["bearing the heavens", "endurance", "astronomy"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan son of Iapetus and brother of Prometheus, condemned after the war of the Titans to bear the heavens at the western edge of the world for eternity; through his daughter Maia he is grandfather of Hermes.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 517–520; Bibliotheca 1.2.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "To the Titan Iapetus the neat-ankled Oceanid Clymene bore a fateful brood: stout-hearted Atlas, rash Menoetius, subtle Prometheus and blundering Epimetheus — though Apollodorus names their mother Asia, another daughter of Ocean. Atlas in turn fathered the seven Pleiades on Arcadian Cyllene by Pleione, and the eldest of them, Maia, went up into the holy bed of Zeus and bore glorious Hermes, herald of the deathless gods.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 507–514, 938–939; Bibliotheca 1.2.3, 3.10.1–2"
+    },
+    {
+      "text": "In Hesiod the burden is bodily and unending: under hard constraint imposed by wise Zeus, Atlas stands at the western borders of the earth, before the clear-voiced Hesperides, and upholds the broad sky upon his head and his tireless arms. This is the lot the counsellor Zeus assigned him.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 517–520",
+      "topic": "atlas-punishment"
+    },
+    {
+      "text": "Homer remembers him differently. In the Odyssey he is \"baleful\" Atlas, who knows the depths of every sea and himself holds the tall pillars that keep earth and heaven apart — not a body bent beneath the sky but the keeper of the props that sunder the two. It is his daughter, the nymph Calypso, who detains Odysseus on her island.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.52–54",
+      "topic": "atlas-punishment"
+    },
+    {
+      "text": "For Apollodorus the Titan is still alive and straining under the sky when Heracles — Perseus' great-grandson — arrives in the far west seeking the apples of the Hesperides. On Prometheus' advice the hero shoulders the heavens himself and sends Atlas to fetch the fruit; but Atlas, returning with three apples and tasting freedom, offers to carry them onward himself. Heracles feigns agreement, asking only that Atlas hold the sky a moment while he makes a pad for his head — then takes up the apples and walks away.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11",
+      "topic": "atlas-punishment"
+    },
+    {
+      "text": "Ovid tells a tale that cannot share a timeline with the bargain Heracles struck: Atlas is a giant king of the farthest west, rich in flocks and golden orchards, who turns Perseus from his door for fear of an old prophecy that a son of Jupiter would strip his trees of gold. Perseus lifts the Gorgon's head, and the king becomes Mount Atlas — beard and hair turned to forests, shoulders to ridges, bones to stone — and on that mountain the whole sky, with all its stars, now rests.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.627–662",
+      "topic": "atlas-punishment"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "erebus",
+  "name": "Erebus",
+  "greekName": "Erebos (Ἔρεβος)",
+  "romanName": "Erebus",
+  "type": "primordial",
+  "domains": ["darkness", "shadow", "the nether gloom of the underworld"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "Primordial god of darkness, born from Chaos alongside black Night at the very beginning of things; by Nyx he fathered their shining opposites, Aether and Day.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 123–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Primordial darkness, child of Chaos and Caligo (Mist), born in a single brood with Night, Day, and Aether.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all Chaos came to be, and after it broad-breasted Gaia, dim Tartarus, and Eros. Then out of Chaos came forth Erebus and black Night — the first darkness, twin-born with her. Night lay in love with Erebus and conceived, and from that union she bore Aether and Day: out of the deepest dark, the bright upper air and the daylight itself.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Hyginus opens his handbook of fables with a different ancestry. Before everything was Caligo, the Mist; from Mist was born Chaos, and from Chaos and Mist together came Night, Day, Erebus, and Aether. Here the darkness has a mother as well as a father, and Day and Aether are not Erebus' children but his birth-companions.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Though Erebus is Night's consort in Hesiod, he has no part in her most dreadful children. Having lain with no one, Nyx bore hateful Doom and black Fate and Death, Sleep and the tribe of Dreams, blame and painful Woe — and the Moirai, Clotho, Lachesis, and Atropos, who give men at their birth both evil and good to have. The darkness watched, but the Fates are Night's alone.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–225",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "In Hyginus the marriage of Night and Erebus is instead fruitful and terrible. From Nox and Erebus came Fate, Old Age, Death, Sleep and Dreams, Discord, Wretchedness, Nemesis, Friendship, Pity, Styx — and the Parcae themselves, Clotho, Lachesis, and Atropos. In this telling the Fates have a father, and that father is the dark itself.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "In epic, Erebus is less a person than a region — the nether gloom through which the dead must pass. Athena remembers how Heracles was sent down to the house of Hades the gate-warden to drag the hound of loathed Hades up out of Erebus, and when Odysseus pours blood into the trench at the world's edge, the souls of the dead come swarming up out of Erebus to meet him. Centuries later the name still carries that charge: Ovid's Circe, brewing her darkest magic, calls on Night and the gods of Night, on Erebus and Chaos, and howls her prayers to Hecate.",
+      "sources": ["homer", "ovid"],
+      "citation": "Iliad 8.367–368; Odyssey 11.36–37; Metamorphoses 14.403–405"
+    }
+  ]
+}

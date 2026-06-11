@@ -1,0 +1,54 @@
+{
+  "id": "atropos",
+  "name": "Atropos",
+  "greekName": "Atropos (Ἄτροπος)",
+  "type": "god",
+  "domains": ["fate", "the limit of mortal life"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "One of the three Moirai; Hesiod first makes her a fatherless daughter of Nyx, then later a daughter of Zeus and Themis.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222, 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Fates born to Zeus and Themis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Parcae, daughter of Night and Erebus, who bound Meleager's life to a burning brand on the hearth.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod first places Atropos among the fatherless daughters of Nyx. With Clotho and Lachesis she grants the portions of good and evil given at birth and relentlessly pursues wrongdoing.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Later in the Theogony, Atropos becomes a daughter of Zeus and Themis, one of the three Fates honored within Zeus's divine order.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Apollodorus repeats the genealogy from Zeus and Themis, naming Atropos beside Clotho and Lachesis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Hyginus gives the Parcae Night and Erebus as parents. At Meleager's birth, Atropos looked to a burning brand on the hearth and fixed the child's life to it: he would live only while the wood remained unconsumed.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ]
+}

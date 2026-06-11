@@ -1,0 +1,41 @@
+{
+  "id": "nemesis",
+  "name": "Nemesis",
+  "greekName": "Nemesis (Νέμεσις)",
+  "romanName": "Nemesis",
+  "type": "god",
+  "domains": ["retribution", "indignation"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Divine indignation and retribution, born from Nyx to afflict mortals and answer human excess.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 223–224"
+    },
+    {
+      "text": "Hyginus instead numbers Nemesis among the children of Night and Erebus together.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Deadly Night bore Nemesis as an affliction for mortal men. Hesiod places her near Deceit, Friendship, Old Age and Strife, a divine answer to conduct that disturbs the proper measure of life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 223–225",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "At the end of Hesiod's vision of the Iron Age, Aidos and Nemesis will veil their bright forms and leave the wide earth for Olympus, abandoning humanity to grievous suffering with no defence against evil.",
+      "sources": ["hesiod"],
+      "citation": "Works and Days 197–201"
+    },
+    {
+      "text": "Hyginus gives Nemesis two parents, listing her among the many powers born from Nox and Erebus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

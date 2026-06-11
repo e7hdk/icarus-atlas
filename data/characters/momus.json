@@ -1,0 +1,23 @@
+{
+  "id": "momus",
+  "name": "Momus",
+  "greekName": "Mōmos (Μῶμος)",
+  "romanName": "Momus",
+  "type": "god",
+  "domains": ["blame", "reproach"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Blame personified, a fatherless child of Nyx in Hesiod's catalogue of the powers born from Night.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 213–214"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Doom, Death, Sleep and the Dreams, murky Night bore Momus though she had lain with no one. Hesiod gives Blame no separate deed; the name itself makes accusation and reproach into one of the ancient forces accompanying mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–214"
+    }
+  ]
+}

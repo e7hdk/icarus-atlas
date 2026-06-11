@@ -244,3 +244,46 @@ Verification: ✓ verified — the rare Homeric detail "Dionysou martyriesin" (b
 Significance: every retelling reshuffles the divine blame — Zeus, Hera, or Artemis as transformer or killer — making this a perfect case study in how the same constellation myth absorbed rival versions.
 
 Verification: ✓ verified — Astronomica 2.1 confirmed in the Latin to stack the additional variants (Diana as transformer per Hesiod's version; Juno transforming with Diana killing) exactly as claimed.
+
+## Who fathered the children of Night?
+
+- **topic**: `night-brood-parentage`
+- **Characters**: `nyx`, `erebus`, `thanatos`, `hypnos`, `oizys`, `nemesis`, `geras`, `eris`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Nyx bore Death, Sleep, Misery, Nemesis, Old Age and Strife without lying with any god. | Theogony 211–225 |
+| Hyginus | Nox and Erebus together produced Death, Sleep, Wretchedness, Nemesis, Old Age and Discord. | Fabulae, preface (Theogony) 1 |
+
+Significance: Hesiod makes Night independently generative, while Hyginus turns the same powers into children of a paired male and female darkness.
+
+Verification: ✓ verified against the complete catalogues in Theogony 211–225 and the genealogical preface to Fabulae.
+
+## Is Oceanus a Titan child or the origin of the gods?
+
+- **topic**: `oceanus-cosmic-rank`
+- **Characters**: `oceanus`, `tethys`, `uranus`, `gaia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Oceanus and Tethys are children of Gaia and Uranus among the Titan generation. | Theogony 132–138, 337–370 |
+| Homer | Hera calls Oceanus the origin of the gods and Tethys their mother, placing the pair before the Olympian family order. | Iliad 14.200–204, 14.301–306 |
+| Pseudo-Apollodorus | Oceanus and Tethys are Titans born from Earth and Sky. | Bibliotheca 1.1.3 |
+
+Significance: the Homeric formula elevates the world-river and Tethys from members of one divine generation to the generative source of the gods.
+
+Verification: ✓ verified against the cited genealogical lists and both Homeric speeches of Hera.
+
+## Who are the parents of Uranus?
+
+- **topic**: `uranus-parentage`
+- **Characters**: `uranus`, `gaia`, `aether`, `hemera`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Gaia bore starry Uranus by herself, equal to herself, to cover her on every side. | Theogony 126–128 |
+| Hyginus | Caelus was born from Aether and Dies, alongside Terra and Mare. | Fabulae, preface (Theogony) 2–3 |
+
+Significance: Heaven changes from Earth's self-generated son and partner into a sibling of Earth produced by the bright upper air and Day.
+
+Verification: ✓ verified against Hesiod's opening cosmogony and Hyginus' genealogical preface.

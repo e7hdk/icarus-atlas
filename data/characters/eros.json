@@ -1,0 +1,54 @@
+{
+  "id": "eros",
+  "name": "Eros",
+  "greekName": "Eros (Ἔρως)",
+  "romanName": "Cupid",
+  "type": "primordial",
+  "domains": ["love", "desire", "generative force"],
+  "epithets": ["Lysimeles"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "Primordial power of love and desire, one of the very first beings of the cosmos — arising with Chaos, Gaia and Tartarus before any of the gods — fairest among the deathless gods, who unstrings the limbs and overcomes the mind of gods and mortals alike.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "God of love and desire, the winged and unruly young son of Aphrodite, whose arrows kindle helpless passion in gods and mortals at his mother's bidding.",
+      "sources": ["apollonius", "ovid"],
+      "citation": "Argonautica 3.83–159; Metamorphoses 1.452–473, 5.363–384",
+      "topic": "eros-origin"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all Chaos came to be, and after it broad-breasted Gaia, dim Tartarus in the depths of the earth — and Eros, fairest among the deathless gods, the limb-loosener, who overcomes the mind and wise counsel in the breasts of all gods and all men. In this oldest telling he is nobody's child: desire is simply there at the beginning of things, so that generation itself can begin.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "When Aphrodite rose from the sea-foam and came ashore at Cyprus, Eros went with her and fair Desire followed, from the moment of her birth and as she entered the assembly of the gods. The power older than the Olympians took his place in the train of the love-goddess — her companion from the first, though never, in Hesiod, her son.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 201–202"
+    },
+    {
+      "text": "To Apollonius he is Aphrodite's unruly little boy. Needing Medea struck with love for Jason, the goddess finds him in Zeus' orchard cheating Ganymede at golden dice, his left hand already full of winnings, and bribes him with a wondrous toy: the ball his nurse Adrasteia made for the infant Zeus in the Idaean cave, its golden zones circled by hidden seams and a dark-blue spiral, which streaks like a star when it is thrown.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.83–159",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "Unseen, Eros slipped into Aeetes' hall like a gadfly rising against grazing heifers. Beneath the lintel in the porch he strung his bow and drew out an arrow unshot before, a messenger of pain; crouching low at Jason's feet, he shot Medea and left her soul in speechless amazement. The god flashed back out of the high-roofed hall laughing loud, but the bolt burned deep in the girl's heart like a flame, and her soul melted with the sweet pain.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.275–298"
+    },
+    {
+      "text": "For Ovid, Cupid is Venus' winged son and the instrument of all her power. When Apollo, flushed with the killing of Python, sneers at the boy's archery, Cupid draws two arrows — sharp gold that kindles love and blunt lead that drives it away — striking Apollo with the first and Daphne with the second. And at his mother's command, so that even the third realm of the world should own her empire, he bends his bow and drives the barbed shaft into the heart of Dis himself.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.452–473, 5.363–384",
+      "topic": "eros-origin"
+    }
+  ]
+}

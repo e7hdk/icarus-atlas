@@ -1,0 +1,34 @@
+{
+  "id": "themis",
+  "name": "Themis",
+  "greekName": "Themis (Θέμις)",
+  "type": "titan",
+  "domains": ["divine law", "custom", "order"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan goddess of divine order and custom, daughter of Gaia and Uranus and mother by Zeus of the Seasons and the three Fates.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138, 901–906; Bibliotheca 1.1.3, 1.3.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gaia bore Themis to starry Uranus among the elder Titan gods, sister to Oceanus, Cronus, Rhea and their great brood.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 132–138"
+    },
+    {
+      "text": "After Metis, Zeus married bright Themis. She bore the Horae — Eunomia, Dike and blooming Eirene — who watch over the works of mortals, and the Moirai, Clotho, Lachesis and Atropos, to whom Zeus gave the greatest honor.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Apollodorus likewise numbers Themis among the Titan daughters of Earth and Sky and makes her the mother by Zeus of the Seasons and the Fates.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.3, 1.3.1",
+      "topic": "moirai-parentage"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "hestia",
+  "name": "Hestia",
+  "greekName": "Hestia (Ἑστία)",
+  "romanName": "Vesta",
+  "type": "olympian",
+  "domains": ["the hearth", "home", "family", "the civic fire"],
+  "epithets": ["Boulaia", "Prytanitis"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Virgin goddess of the hearth, home and the civic fire, firstborn of Cronus and Rhea — the first child swallowed by her father and the last set free, at once eldest and youngest of the Olympians.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 453–467, 493–500; Bibliotheca 1.1.5–1.2.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Rhea, subject in love to Cronus, bore splendid children, and Hestia was the first of them — before Demeter and gold-sandalled Hera, before strong Hades, the deep-roaring Earth-Shaker and Zeus the counsellor. But Cronus had learned from Gaia and starry Uranus that one of his own children was fated to unseat him, and so he kept watch, and as each came forth from the womb to its mother's knees he swallowed it down. Hestia, born first, was swallowed first: the eldest of the gods began her long life in the dark of her father's belly.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 453–467; Bibliotheca 1.1.5"
+    },
+    {
+      "text": "When Zeus had grown to strength, Cronus was overcome by craft and force — in Apollodorus, by a drug the Oceanid Metis gave him to drink — and gave back everything he had devoured: first the stone he had swallowed last, and then the children. What went down last came up first, and so she who had been swallowed before all the others was the last to step back into the light — firstborn of Cronus' children and youngest again by that strange second birth, first and last of the gods alike.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 493–500; Bibliotheca 1.2.1"
+    },
+    {
+      "text": "While her brothers and sisters divided sky, sea and the dark below and went out into the world's quarrels, Hestia stayed home — and that is precisely her power. An archaic hymn to Aphrodite handed down under Homer's name, though it stands in neither of his epics, tells why she alone is proof against the love-goddess: Poseidon and Apollo both wooed her, and she would have neither, but touched the head of Zeus and swore a great oath to remain a virgin all her days; in place of marriage Zeus gave her the seat at the center of the house and the richest portion of every offering. Pausanias found that precedence still honored on the ground centuries later: at Olympia the Eleans sacrificed to Hestia first and to Olympic Zeus only second; in the Prytaneion of Athens her figure stood beside that of Peace where the laws of Solon were kept; and at Hermione her sanctuary held no image at all — only an altar, and the sacrifices made upon it.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.14.4, 1.18.3, 2.35.1"
+    },
+    {
+      "text": "To the Romans she was Vesta. Hyginus' genealogy names her first among the children of Saturn and Ops, before Ceres, Juno, Jupiter, Pluto and Neptune, so that even the terse Latin list preserves her ancient precedence; and when Ovid closes the Metamorphoses with a prayer for the city, Vesta is there at the end of the poem's long history, hallowed among Caesar's household gods with Phoebus of the household at her side — the hearth-goddess seated now at the center of an empire as she had always sat at the center of the house.",
+      "sources": ["hyginus", "ovid"],
+      "citation": "Fabulae preface; Metamorphoses 15.864–865"
+    }
+  ]
+}

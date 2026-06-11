@@ -5,30 +5,54 @@
   "romanName": "Jupiter",
   "type": "olympian",
   "domains": ["sky", "thunder", "kingship", "justice"],
-  "epithets": ["Olympios", "Kronides", "Nephelegereta"],
+  "epithets": ["Olympios", "Kronides", "Nephelegereta", "Keraunios", "Xenios"],
   "cluster": "olympian-band",
   "summary": [
     {
-      "text": "King of the gods and lord of the sky, youngest child of Cronus and Rhea, who overthrew his father and divided the world with his brothers Poseidon and Hades.",
+      "text": "King of the gods and lord of the broad sky, youngest child of Cronus and Rhea, who escaped his father's devouring belly by the trick of a swaddled stone, cast the Titans into Tartarus, and rules gods and men from Olympus as wielder of the thunderbolt and keeper of justice, oaths and the stranger's right.",
       "sources": ["hesiod", "homer", "apollodorus", "ovid", "hyginus"],
-      "citation": "Theogony 453–506; Iliad 15.187–193"
+      "citation": "Theogony 453–506, 881–885; Iliad 15.187–193; Bibliotheca 1.1.5–1.2.1"
     }
   ],
   "story": [
     {
-      "text": "Cronus, warned that a child of his would unseat him as he had unseated his own father, swallowed each of his children at birth. When Zeus was born, Rhea hid him in a cave on Crete and gave Cronus a stone wrapped in swaddling clothes instead. Grown to strength, Zeus forced his father to disgorge his brothers and sisters, and the stone with them.",
-      "sources": ["hesiod", "apollodorus"],
-      "citation": "Theogony 453–506; Bibliotheca 1.1.5–1.2.1"
+      "text": "Cronus, warned that a child of his would unseat him as he had unseated his own father, swallowed each of his children at birth. When Zeus was born, Rhea hid him in a cave on Crete and gave Cronus a stone wrapped in swaddling clothes instead. Hyginus tells how the nurse Amalthea hung the infant's cradle in a tree, so that he could be found neither in heaven nor on earth nor in the sea, while armed youths — the Curetes — clashed little shields and spears around it to drown his crying. Grown to strength, Zeus forced his father to disgorge his brothers and sisters, and the stone with them. Even the nursery was contested ground: Pausanias records that the Arcadians claimed the rearing for a place called Cretea on their own Mount Lycaeus — the true Crete, they said, and not the island.",
+      "sources": ["hesiod", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Theogony 453–506; Bibliotheca 1.1.5–1.2.1; Fabulae 139; Description of Greece 8.38.2"
     },
     {
       "text": "For ten years the younger gods warred against the Titans. Zeus freed the Cyclopes from Tartarus, and they gave him thunder and the lightning bolt; with the Hundred-Handers beside them the Olympians cast the Titans down into the pit.",
       "sources": ["hesiod", "apollodorus"],
-      "citation": "Theogony 617–735; Bibliotheca 1.2.1"
+      "citation": "Theogony 501–506, 617–735; Bibliotheca 1.2.1",
+      "topic": "cyclopes-nature"
     },
     {
-      "text": "The three brothers cast lots for the world: Zeus won the broad sky, Poseidon the grey sea, Hades the murky dark below — and the earth and Olympus they hold in common.",
+      "text": "The three brothers cast lots for the world: Zeus won the broad sky, Poseidon the grey sea, Hades the murky dark below — and the earth and Olympus they hold in common. On the strength of that lot Poseidon insists he is Zeus's equal, allotted an honor no less than his brother's.",
       "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1"
+      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "Hesiod knows nothing of a lottery. In his telling, when the blessed gods had finished their toil and settled by force their contest of honors with the Titans, they urged far-seeing Zeus, at Gaia's prompting, to be king and rule the immortals — and it was Zeus himself who then distributed the portions among them. Kingship by acclamation, not by chance: no lot made him lord of the sky.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 881–885",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "His first wife was Metis, wisest among gods and mortal men. When she was about to bear bright-eyed Athena, Zeus — counselled by Gaia and starry Ouranos, who warned that after the girl Metis was fated to bear a son who would be king of gods and men in his turn — beguiled her with cunning words and swallowed her whole. In time he himself gave birth to Athena from his own head; Apollodorus adds that it was Prometheus, or as others say Hephaestus, who smote the king's skull with an axe beside the river Triton, and the goddess sprang up from his crown fully armed.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 886–900, 924–926; Bibliotheca 1.3.6",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "When the wickedness of the Bronze Age reached its height, Zeus descended to earth in mortal guise to test the hearts of men. In Arcadia, the tyrant Lycaon scoffed at his divinity and served him human flesh at a banquet. In terrible wrath, Zeus overturned the table, struck the house with a thunderbolt, and transformed Lycaon into a howling wolf.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 1.209-243; Bibliotheca 3.8.1"
+    },
+    {
+      "text": "Still unsatisfied that mankind could be saved, Zeus unleashed a great deluge to drown the earth, commanding Poseidon to shatter the shores and the rivers to overflow. Only Deucalion and Pyrrha, forewarned by Prometheus, survived in a wooden chest. When the waters receded, Zeus pitied them and sent Hermes to grant them a single wish, through which they repopulated the earth by throwing stones over their shoulders.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 1.260-415; Bibliotheca 1.7.2"
     }
   ]
 }

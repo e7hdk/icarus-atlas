@@ -1,0 +1,36 @@
+{
+  "id": "oizys",
+  "name": "Oizys",
+  "greekName": "Oizys (Ὀϊζύς)",
+  "romanName": "Miseria",
+  "type": "god",
+  "domains": ["misery", "distress", "suffering"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Misery and painful distress personified, born fatherless from Nyx beside Momus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 213–214"
+    },
+    {
+      "text": "Hyginus lists Miseria among the children of Night and Erebus together.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Murky Night bore painful Oizys without union with any father. Hesiod places Misery immediately after Momus, making suffering itself a member of the ancient household of Night.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 213–214",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "In Hyginus' Latin genealogy, Miseria is not fatherless: she belongs to the long brood produced by Nox and Erebus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

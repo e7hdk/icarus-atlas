@@ -1,0 +1,74 @@
+import Link from 'next/link';
+import type { Character } from '@/types/character';
+import { TypeBadge } from '@/components/ui/TypeBadge';
+
+const TABS = [
+  { key: 'poets', label: 'The poets', path: '' },
+  { key: 'info', label: 'Information', path: '/info' },
+  { key: 'legacy', label: 'Legacy', path: '/legacy' },
+] as const;
+
+export type CharacterTab = (typeof TABS)[number]['key'];
+
+/** Shared chrome of all character routes: top bar, hero identity, tab navigation. */
+export function CharacterShell({
+  character,
+  active,
+  children,
+}: {
+  character: Character;
+  active: CharacterTab;
+  children: React.ReactNode;
+}) {
+  return (
+    <main className="mx-auto min-h-screen max-w-6xl px-6 pb-24 pt-6">
+      <div className="flex items-center justify-between">
+        <Link
+          href="/"
+          className="rounded-full border border-glass-border bg-glass px-4 py-2 font-display text-[12px] tracking-[0.1em] text-aether-muted backdrop-blur-md transition-colors hover:text-aether"
+        >
+          ← GALAXY
+        </Link>
+        <span className="font-display text-xs tracking-[0.34em] text-aether/45">
+          ICARUS <span className="text-star-olympian">ATLAS</span>
+        </span>
+      </div>
+
+      <header className="mt-8 text-center">
+        <h1 className="font-display text-5xl tracking-[0.22em] text-aether [text-shadow:0_0_46px_rgba(252,211,77,.45)] sm:text-6xl">
+          {character.name.toUpperCase()}
+        </h1>
+        <p className="mt-2 font-body text-xl italic text-aether-muted">
+          {character.greekName}
+          {character.romanName ? ` · Roman ${character.romanName}` : ''}
+        </p>
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
+          <TypeBadge type={character.type} />
+          <span className="font-body text-base italic text-aether-muted">
+            {character.domains.join(' · ')}
+          </span>
+        </div>
+      </header>
+
+      <nav className="mt-7 flex justify-center">
+        <div className="flex gap-1 rounded-full border border-glass-border bg-glass p-1 backdrop-blur-xl">
+          {TABS.map((tab) => (
+            <Link
+              key={tab.key}
+              href={`/character/${character.id}${tab.path}`}
+              className={`rounded-full px-5 py-2 font-display text-[12px] tracking-[0.1em] transition-colors ${
+                active === tab.key
+                  ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
+                  : 'border border-transparent text-aether-muted hover:text-aether'
+              }`}
+            >
+              {tab.label.toUpperCase()}
+            </Link>
+          ))}
+        </div>
+      </nav>
+
+      {children}
+    </main>
+  );
+}

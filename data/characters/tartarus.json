@@ -1,0 +1,45 @@
+{
+  "id": "tartarus",
+  "name": "Tartarus",
+  "greekName": "Tartaros (Τάρταρος)",
+  "romanName": "Tartarus",
+  "type": "primordial",
+  "domains": ["the abyss", "imprisonment", "the deep underworld"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "The dim pit beneath the roots of earth and sea — at once a place of imprisonment and a primordial being, arisen among the very first powers of the cosmos, who fathered the monster Typhon upon Gaia.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122, 720–728, 820–822"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all Chaos came to be, and nothing was before it. Next arose broad-breasted Gaia, the ever-sure seat of all, and dim Tartarus in a recess of the wide-wayed earth, and Eros. Tartarus belongs to that first generation: born of no parent, he simply came to be — a depth answering the Earth's breadth, as much a person of the cosmos as a region of it.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "In that same first moment Hesiod sets Eros beside the pit — fairest among the deathless gods, who unstrings the limbs and overcomes the counsel of gods and men alike. In this reckoning the power of desire is no child of Aphrodite but a force as old as the abyss itself, coeval with Chaos, Gaia, and Tartarus, older than any Olympian.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "The poets measure the pit by falling bronze. A brazen anvil dropped from heaven would fall nine nights and days and strike the earth upon the tenth; dropped from earth, it would fall nine nights and days more before reaching Tartarus. Round it runs a fence of bronze, and night is poured in three rows about its neck, while above grow the roots of the earth and the unharvested sea. Homer's Zeus warns any god who would defy him of that murky gulf — the deepest beneath the earth, with iron gates and a threshold of bronze, as far below Hades as heaven is above the earth.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 720–728; Iliad 8.13–16"
+    },
+    {
+      "text": "From the beginning Tartarus has been the prison of the cosmos. Uranus bound the Cyclopes and cast them into its gloom, a place as far distant from earth as earth is from the sky; freed in the Titans' revolt, they were bound there again by Cronus. And when Zeus' ten-year war against the Titans ended, the victors hurled the defeated beneath the wide-pathed earth into the dank dark at the ends of the huge earth. Poseidon set gates of bronze upon it, and Gyes, Cottus, and Obriareus, the Hundred-Handers, took up their post as trusty warders of Zeus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 717–735; Bibliotheca 1.1.2–1.2.1"
+    },
+    {
+      "text": "The pit is also a father. When the Titans had been driven from heaven, huge Gaia in love with Tartarus, through golden Aphrodite, bore her youngest child Typhoeus, from whose shoulders sprang a hundred snake heads with dark flickering tongues — Apollodorus places the birth after the giants' defeat, in Cilicia, and Hyginus likewise counts Typhon, a creature of immense size and fearful shape, a son of Tartarus. The monster came near to ruling gods and mortals alike before Zeus lashed him down with the thunderbolt, and in the bitterness of his anger cast him into wide Tartarus — the father's depth closing over the son.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 820–868; Bibliotheca 1.6.3; Fabulae 152"
+    }
+  ]
+}

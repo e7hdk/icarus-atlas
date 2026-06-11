@@ -1,0 +1,53 @@
+{
+  "id": "prometheus",
+  "name": "Prometheus",
+  "greekName": "Prometheus (Προμηθεύς)",
+  "type": "titan",
+  "domains": ["forethought", "fire", "craft", "champion of mankind"],
+  "epithets": ["Pyrphoros", "Desmotes"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan son of Iapetus, the cunning 'Forethought' who tricked Zeus over the sacrificial portions at Mecone and stole fire for mankind — in the earliest account their wily champion, though never their creator.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 535–616; Works and Days 42–105",
+      "topic": "prometheus-creation-of-man"
+    },
+    {
+      "text": "Titan son of Iapetus who moulded the first men from water and earth, then stole fire from heaven for the race his own hands had shaped.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.7.1; Metamorphoses 1.76–88; Fabulae 142",
+      "topic": "prometheus-creation-of-man"
+    }
+  ],
+  "story": [
+    {
+      "text": "When gods and mortal men settled their dues at Mecone, Prometheus carved up a great ox and laid out two shares: the flesh and rich inner parts hidden in the ox's paunch, and the white bones dressed with cunning art beneath shining fat. Zeus saw through the trick, Hesiod insists, yet took the gleaming bones — and ever since, mortals burn white bones for the gods on smoking altars and keep the meat for themselves. In this oldest account mankind already exists: Prometheus is its champion and Zeus's deceiver, but never its maker.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 535–616; Works and Days 42–105",
+      "topic": "prometheus-creation-of-man"
+    },
+    {
+      "text": "Later authors hand him a greater work still. In Apollodorus he moulded men out of water and earth; in Ovid the son of Iapetus mixed new-made earth with fresh rainwater and shaped it into the likeness of the all-governing gods, so that man alone stands upright and turns his face to the stars; and Hyginus states it plainly: Prometheus, son of Iapetus, first fashioned men from clay.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.7.1; Metamorphoses 1.76–88; Fabulae 142",
+      "topic": "prometheus-creation-of-man"
+    },
+    {
+      "text": "Angered by the trick at Mecone, Zeus hid fire from mortals — so Prometheus stole the far-seen gleam of unwearying fire in a hollow fennel stalk and carried it down to men without the knowledge of Zeus; Hyginus adds that he taught them to bank it in ash and keep it alive. Hesiod makes them pay for the flame: Zeus had Hephaestus mould from earth the likeness of a shy maiden — Pandora, in the Works and Days — and Hermes led her as a gift to heedless Epimetheus, from whose jar sorrows scattered among mankind, Hope alone staying under the rim.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 565–589; Works and Days 47–105; Bibliotheca 1.7.1; Fabulae 144"
+    },
+    {
+      "text": "For the theft Zeus bound Prometheus in shackles he could not escape, drove a shaft through his middle, and sent a long-winged eagle to feed on his immortal liver, which grew back by night as fast as the bird devoured it by day. Apollodorus nails him to the Caucasus and names the eagle a child of Echidna and Typhon; Hyginus reckons the sentence at thirty thousand years. At last Heracles shot the eagle down and freed the son of Iapetus — not against the will of Zeus, says Hesiod, who wished the glory of his son to be greater still — and in Apollodorus the centaur Chiron, immortal yet longing to die, surrendered his deathlessness in Prometheus' stead.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 521–534; Bibliotheca 1.7.1, 2.5.11; Fabulae 144"
+    },
+    {
+      "text": "Apollodorus gives him a hand in another god's birth as well: when the hour came for Zeus to be delivered of Athena, it was Prometheus — or, as others say, Hephaestus — who smote the head of Zeus with an axe, and Athena sprang up from his crown, fully armed.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.6",
+      "topic": "athena-parentage"
+    }
+  ]
+}

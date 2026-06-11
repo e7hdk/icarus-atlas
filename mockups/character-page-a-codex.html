@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page A: Codex</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; color: #f1f5f9; font-family: 'Cormorant Garamond', serif;
+    background: #08041d;
+    background-image:
+      radial-gradient(50% 26% at 50% 0%, rgba(252,211,77,.12), transparent 70%),
+      radial-gradient(42% 36% at 82% 24%, rgba(124,77,255,.22), transparent 70%),
+      radial-gradient(40% 30% at 10% 85%, rgba(0,229,255,.1), transparent 70%);
+    background-attachment: fixed;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 26px 24px 60px; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .pill { border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: #aab4c8; cursor: pointer; text-decoration: none; }
+  .pill:hover { color: #f1f5f9; border-color: rgba(255,255,255,.3); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: #fcd34d; }
+  .hero { text-align: center; padding: 44px 0 0; }
+  .hero h1 { font: 600 56px Cinzel, serif; letter-spacing: .22em; text-shadow: 0 0 50px rgba(252,211,77,.5); }
+  .hero .sub { font-style: italic; font-size: 20px; color: #aab4c8; margin-top: 4px; }
+  .meta { display: flex; justify-content: center; align-items: center; gap: 11px; margin-top: 13px; }
+  .chip { background: rgba(252,211,77,.16); border: 1px solid rgba(252,211,77,.45); border-radius: 999px; padding: 3px 13px; font: 500 12px Cinzel, serif; letter-spacing: .12em; color: #fde68a; }
+  .domains { font-style: italic; font-size: 16px; color: #aab4c8; }
+  .eps { display: flex; justify-content: center; gap: 9px; margin-top: 14px; flex-wrap: wrap; }
+  .ep { position: relative; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); border-radius: 999px; padding: 4px 14px; font-style: italic; font-size: 15px; color: #aab4c8; cursor: default; }
+  .ep:hover { color: #f1f5f9; border-color: rgba(192,132,252,.5); }
+  .ep:hover::after { content: attr(data-tip); position: absolute; left: 50%; transform: translateX(-50%); top: calc(100% + 8px); white-space: nowrap; background: #140c30; border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: #f1f5f9; z-index: 5; }
+  .lens { display: flex; justify-content: center; margin: 30px 0 0; }
+  .lens .box { display: flex; gap: 4px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 4px; }
+  .lens button { padding: 8px 18px; border-radius: 999px; border: 1px solid transparent; background: none; color: rgba(226,232,240,.55); font: 500 13px Cinzel, serif; letter-spacing: .08em; cursor: pointer; }
+  .lens button.on { background: rgba(192,132,252,.22); border-color: rgba(192,132,252,.5); color: #e9d5ff; }
+  #story { padding: 26px 0 8px; min-height: 300px; }
+  #story .p { margin-bottom: 22px; }
+  #story .badge { display: inline-block; border: 1px solid rgba(192,132,252,.45); background: rgba(124,77,255,.16); border-radius: 999px; padding: 2px 11px; font: 500 11px Cinzel, serif; letter-spacing: .14em; color: #c084fc; margin-bottom: 7px; }
+  #story .txt { font-size: 19px; line-height: 1.6; color: rgba(241,245,249,.9); }
+  #story .txt.disputed { border-left: 2px solid rgba(192,132,252,.5); padding-left: 16px; }
+  #story .cite { font-style: italic; font-size: 14.5px; color: #6b7488; margin-top: 5px; }
+  .sect { font: 500 12px Cinzel, serif; letter-spacing: .24em; color: #6b7488; margin: 26px 0 11px; }
+  .bonds { display: flex; gap: 9px; flex-wrap: wrap; }
+  .bond { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05); border-radius: 999px; padding: 6px 15px; font-size: 16px; cursor: pointer; transition: all .25s; }
+  .bond:hover { border-color: rgba(252,211,77,.6); box-shadow: 0 0 16px rgba(252,211,77,.25); transform: translateY(-1px); }
+  .bond i { width: 8px; height: 8px; border-radius: 50%; font-style: normal; }
+  .bond small { font-style: italic; color: #6b7488; font-size: 14px; }
+  .arts { display: flex; gap: 12px; }
+  .art { flex: 1; height: 170px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); position: relative; overflow: hidden; cursor: pointer; }
+  .art img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
+  .art:hover img { transform: scale(1.06); }
+  .art span { position: absolute; inset: auto 0 0 0; background: linear-gradient(transparent, rgba(5,2,15,.92)); padding: 26px 12px 8px; font-style: italic; font-size: 13.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+  <div class="hero">
+    <h1>APHRODITE</h1>
+    <div class="sub">Aphroditē (Ἀφροδίτη) · Roman Venus</div>
+    <div class="meta"><span class="chip">OLYMPIAN</span><span class="domains">love · beauty · desire · procreation</span></div>
+    <div class="eps">
+      <span class="ep" data-tip="The Cyprian — from her landfall on Cyprus">Kypris</span>
+      <span class="ep" data-tip="Of Cythera, the holy island she first passed">Kythereia</span>
+      <span class="ep" data-tip="Laughter-loving — Hesiod's own pun on her birth">Philommeides</span>
+      <span class="ep" data-tip="The Heavenly One — daughter of Uranus">Ourania</span>
+    </div>
+  </div>
+  <div class="lens">
+    <div class="box" id="lensBox">
+      <button class="on" data-l="consensus">All traditions</button>
+      <button data-l="hesiod">Hesiod</button>
+      <button data-l="homer">Homer</button>
+      <button data-l="apollodorus">Apollodorus</button>
+    </div>
+  </div>
+  <div id="story"></div>
+  <div class="sect">BONDS — CLICK TO TRAVEL</div>
+  <div class="bonds">
+    <span class="bond"><i style="background:#c084fc;box-shadow:0 0 7px #c084fc;"></i>Uranus <small>parent · Hesiod</small><span style="color:#c084fc;">⚖</span></span>
+    <span class="bond"><i style="background:#fcd34d;box-shadow:0 0 7px #fcd34d;"></i>Zeus <small>father · Homer</small><span style="color:#c084fc;">⚖</span></span>
+    <span class="bond"><i style="background:#fcd34d;box-shadow:0 0 7px #fcd34d;"></i>Ares <small>lover</small></span>
+    <span class="bond"><i style="background:#fcd34d;box-shadow:0 0 7px #fcd34d;"></i>Hephaestus <small>consort</small></span>
+    <span class="bond"><i style="background:#c084fc;box-shadow:0 0 7px #c084fc;"></i>Eros <small>child · later poets</small><span style="color:#c084fc;">⚖</span></span>
+  </div>
+  <div class="sect">CULTURAL LEGACY</div>
+  <div class="arts">
+    <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" alt="The Birth of Venus"><span>Botticelli — The Birth of Venus, c. 1485</span></div>
+    <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg" alt="Venus de Milo"><span>Venus de Milo — Alexandros of Antioch</span></div>
+    <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg/960px-Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg" alt="Venus of Urbino"><span>Titian — Venus of Urbino, 1534</span></div>
+  </div>
+</div>
+<script>
+  const STORY = {
+    consensus: [
+      { d: true, t: 'When Cronus cut down his father Uranus, the immortal flesh fell into the restless sea and a white foam gathered around it. Within it a goddess grew; she came ashore at Cyprus, and grass sprang up beneath her feet.', c: 'Hesiod — Theogony 188–206' },
+      { d: true, t: 'In the epic of Troy she is no elder than Zeus but his daughter, born of the goddess Dione; wounded by Diomedes, she fled to her mother’s arms.', c: 'Homer — Iliad 5.330–430' },
+      { d: false, t: 'Though married to Hephaestus, she loved Ares. Helios told the smith-god; he forged a net of bronze too fine to see, and snared the lovers for all the gods to look upon.', c: 'Homer · Ovid — Odyssey 8.266–366; Metamorphoses 4.169–189' },
+    ],
+    hesiod: [
+      { d: false, t: 'When Cronus cut down his father Uranus, the immortal flesh fell into the restless sea, and a white foam gathered around it. Within it a goddess grew. She drifted past holy Cythera and rose from the waves at Cyprus, and grass sprang up beneath her slender feet. Eros and Desire attended her from the first.', c: 'Theogony 188–206' },
+      { d: false, t: 'Under this lens Eros is no child of hers — he is among the first beings of the cosmos, already ancient when she rose from the foam, falling in beside her as she walked into the assembly of the gods.', c: 'Theogony 116–122, 201–202' },
+    ],
+    homer: [
+      { d: false, t: 'She is the daughter of Zeus and the goddess Dione. When Diomedes wounded her wrist as she shielded her son Aeneas on the battlefield, she fled to Olympus and was comforted in her mother Dione’s arms, while Zeus smiled and told her the works of war were not for her.', c: 'Iliad 5.330–430' },
+      { d: false, t: 'Though married to Hephaestus, she loved Ares. Helios, who sees all things, told the smith-god of the affair; Hephaestus snared the lovers in a net of bronze for all the gods to look upon.', c: 'Odyssey 8.266–366' },
+    ],
+    apollodorus: [
+      { d: false, t: 'The Library lists her among the children Dione bore to Zeus, setting the systematic record beside Homer and against Hesiod’s sea-foam.', c: 'Bibliotheca 1.3.1' },
+    ],
+  };
+  const box = document.getElementById('story');
+  function render(lens) {
+    box.innerHTML = STORY[lens].map((p) => `
+      <div class="p">
+        ${p.d ? '<span class="badge">DISPUTED TRADITION</span>' : ''}
+        <div class="txt ${p.d ? 'disputed' : ''}">${p.t}</div>
+        <div class="cite">— ${p.c}</div>
+      </div>`).join('');
+  }
+  document.querySelectorAll('#lensBox button').forEach((b) => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('#lensBox button').forEach((x) => x.classList.remove('on'));
+      b.classList.add('on');
+      render(b.dataset.l);
+    });
+  });
+  render('consensus');
+</script>
+</body>
+</html>

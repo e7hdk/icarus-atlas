@@ -1,0 +1,55 @@
+{
+  "id": "poseidon",
+  "name": "Poseidon",
+  "greekName": "Poseidon (Ποσειδῶν)",
+  "romanName": "Neptune",
+  "type": "olympian",
+  "domains": ["sea", "earthquakes", "horses", "storms"],
+  "epithets": ["Ennosigaios", "Hippios", "Asphaleios"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Trident-bearing god of the sea, earthquakes and horses, son of Cronus and Rhea, who shook lots with his brothers for the universe and drew the grey sea as his portion forever — equal in honor, he insists, to Zeus himself.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "Trident-bearing god of the sea, earthquakes and horses, son of Cronus and Rhea, whose portion was settled when the gods, at Gaia's prompting, urged Zeus to be their king and Zeus himself distributed the honors among the immortals.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 881–885",
+      "topic": "division-of-the-cosmos"
+    }
+  ],
+  "story": [
+    {
+      "text": "Like his brothers and sisters, Poseidon was swallowed at birth by his father Cronus, who feared that one of his own children would take the kingship from him. He came back into the light when Zeus forced the old god to disgorge his offspring, and in the war that followed the freed Cyclopes — so Apollodorus tells it — gave him the trident that has never since left his hand. But Pausanias heard another tale in Arcadia: that Rhea saved this son as she would later save Zeus, laying the newborn among a flock of lambs by the spring called Arne and giving Cronus a foal to swallow, telling him she had given birth to a horse.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 453–467, 495–500; Bibliotheca 1.1.5–1.2.1; Description of Greece 8.8.2"
+    },
+    {
+      "text": "When the Titans had been shut away in Tartarus, the three sons of Cronus shook lots for the universe: Poseidon drew the grey sea to be his home forever, Hades the gloomy dark, and Zeus the broad sky, while the earth and high Olympus remained common to all three. That is why, when Zeus sends him commands, the Earth-shaker bristles — let Zeus keep to his own third, he says, for they are equal in portion, and he will not be ordered about like some lesser god.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "Hesiod tells the settlement otherwise. In his account no lots are cast: after the Titans' defeat the gods, at Gaia's prompting, urged Zeus to be king and lord over them, and it was Zeus himself who then distributed the honors among the immortals — sovereignty by acclamation, with every portion handed down from the throne rather than drawn by chance.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 881–885",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "In the Odyssey the Cyclopes are no divine smiths but a whole race of lawless, cave-dwelling shepherds, who hold no assemblies and build no ships, and the mightiest of them all, Polyphemus, is Poseidon's own son by the nymph Thoosa, daughter of Phorcys. When Odysseus put out the Cyclops' single eye, the Earth-shaker conceived an unceasing wrath against him, and the salt miles between Odysseus and his homecoming became the instrument of the sea-god's revenge.",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.105–115, 9.125–129, 1.68–73",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Athena was his great rival — Pausanias saw their contest for the land of Attica carved on the rear pediment of the Parthenon itself — yet the same traveler records a Libyan tradition that makes the rivals father and daughter: Athena, the Libyans say, is the child of Poseidon and Lake Tritonis, and that is why her eyes are sea-grey like Poseidon's own.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.24.5, 1.14.6",
+      "topic": "athena-parentage"
+    }
+  ]
+}

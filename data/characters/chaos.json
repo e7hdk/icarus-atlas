@@ -1,0 +1,59 @@
+{
+  "id": "chaos",
+  "name": "Chaos",
+  "greekName": "Chaos (Χάος)",
+  "type": "primordial",
+  "domains": ["the primal void", "the gap between earth and sky", "mist and air"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "The first of all things to come to be, with nothing before it — not a swirl of disorder but a yawning gap, followed into being by broad-breasted Gaia, dim Tartarus and Eros.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Not a being at all but a single shapeless, disordered mass — raw matter before sea, land and sky, until a god and kinder nature separated it into the ordered world.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.5–32",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Neither first nor parentless: Chaos was born from Caligo, Mist, and with her became parent of Night, Day, Erebus and Aether.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all, Chaos came to be. Hesiod sets nothing before it and gives it no maker: a yawning gap at the beginning of everything, out of which the cosmos opens. After it — but not from it — arose broad-breasted Gaia, the ever-sure seat of the immortals, and dim Tartarus in the depths of the earth. From Chaos itself were born Erebus and black Night, and Night, mingling in love with Erebus, bore their bright opposites, Aether and Day.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Among the first beings that arose alongside the gap, Hesiod counts one more: Eros, fairest among the deathless gods, who unnerves the limbs and overcomes the mind and wise counsels of all gods and all men. In this oldest telling, the power of love is no child of any goddess but a primordial force as ancient as Chaos, Gaia and Tartarus, present before any generation so that generation itself could begin.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "The gap did not close when the world filled. When Zeus at last loosed his full strength against the Titans, hurling lightning until the life-giving earth crashed and burned, an astounding heat seized Chaos, and it seemed as if Earth and wide Heaven above were coming together again. And in the poem's map of the deep places, the defeated Titans dwell away from all the gods, beyond gloomy Chaos — the primal gap become the far boundary of the prison-world.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 700, 813–814"
+    },
+    {
+      "text": "Ovid keeps the name but dissolves the being. Before the sea and the lands and the sky that covers all, nature wore a single face, which men called Chaos: a rough, unordered mass, nothing but inert weight and the discordant seeds of things heaped together, where cold fought hot and wet fought dry. It took a god — and kinder nature — to settle the strife, cutting sky from earth and earth from water, and so unpack the world from the heap.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.5–32",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Hyginus, in the genealogical preface to his Fabulae, does what no Greek poet had dared: he gives Chaos a mother. From Caligo — Mist — Chaos was born, and from Chaos and Caligo together came Night, Day, Erebus and Aether. The unparented first thing of Hesiod's cosmos becomes one link in a tidy Roman chain of descent, with something dimmer still standing behind it.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ]
+}

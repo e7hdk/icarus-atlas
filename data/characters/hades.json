@@ -1,0 +1,56 @@
+{
+  "id": "hades",
+  "name": "Hades",
+  "greekName": "Haides (ᾍδης)",
+  "romanName": "Pluto",
+  "type": "god",
+  "domains": ["the underworld", "the dead", "hidden wealth"],
+  "epithets": ["Plouton", "Polydegmon", "Klymenos"],
+  "cluster": "chthonic",
+  "summary": [
+    {
+      "text": "God of the underworld and king of the dead, brother of Zeus and Poseidon. When the Titans had been shut away, the three sons of Cronus shook lots for the universe, and Hades drew the gloomy dark as his portion forever, with earth and high Olympus left common to all.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 15.187–193; Bibliotheca 1.2.1",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "text": "God of the underworld and king of the dead, son of Cronus and Rhea, swallowed at birth like his brothers and sisters — \"pitiless in heart, who dwells under the earth.\" In Hesiod no lots are cast for the realms: after the Titans' defeat the gods, at Gaia's prompting, urged Zeus to be their king, and Zeus himself distributed the honors among the immortals.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 453–467, 881–885",
+      "topic": "division-of-the-cosmos"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Ovid the lord of the dead takes his queen by storm in Sicily. By Lake Pergus, near the walls of Henna, where spring is everlasting, Proserpina was gathering violets and white lilies when Dis saw her, loved her, and carried her off — almost in a single moment, so headlong was his love. When the nymph Cyane rose from her pool to bar his way, he hurled his royal scepter into the depths; the smitten earth opened a road to Tartarus and received the plunging chariot. It was the spring Arethusa, who had glided beneath the earth, that later told grieving Ceres what she had seen there: her daughter alive, sad-faced still, but a queen — greatest of the world of darkness, consort of the king of the dead.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.385–424, 5.487–508",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "text": "Apollodorus tells the seizure with no meadow named and no witness: Pluto fell in love with Persephone and, with Zeus secretly conniving, carried her off in stealth. Demeter roamed the whole earth with torches by night and day in search of her, and only from the people of Hermione did she learn that it was Pluto who had taken her; then, angry at the gods, she quit heaven and came in the likeness of a woman to Eleusis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.1",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "text": "The Greek cities, for their part, anchored the descent to their own soil rather than to any Sicilian field. Pausanias records the rival claims: the Eleusinians showed him Erineus beside their river Cephisus, where they said Pluto went down to the underworld after carrying off the Maid, while the Argives pointed to a circuit of stones by the river Cheimarrus near Lerna as the very place where he descended with Kore to his kingdom below.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.5, 2.36.7",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "text": "Hades did not mean to give his bride back whole. When Zeus ordered Pluto to send the Maid up again, Pluto gave her a pomegranate seed to eat, so that she should not stay too long with her mother; not foreseeing the consequence, Persephone swallowed it, and so she is compelled to remain a third of every year with Pluto and the rest of the time with the gods.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.3",
+      "topic": "persephone-split-year"
+    },
+    {
+      "text": "The Roman poets grant the king of the dead a larger share. In Ovid, Jupiter — standing midway between his brother and his grieving sister — divides the revolving year into two equal parts, so that Proserpina, a divinity shared by two realms, spends as many months with her husband as with her mother; and Hyginus likewise records that Ceres obtained from Jove only half the year for herself, the other half belonging to Pluto.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 5.564–567; Fabulae 146",
+      "topic": "persephone-split-year"
+    }
+  ]
+}

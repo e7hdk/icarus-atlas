@@ -89,6 +89,36 @@ export interface Source {
   description: string;
 }
 
+export interface Artwork {
+  title: string;
+  artist: string;
+  year: string;
+  imageUrl: string;
+}
+
+/** Cultural legacy items (artworks now; films/music later). Lens-independent. */
+export interface CultureData {
+  id: string;
+  artworks: Artwork[];
+}
+
+export interface ExternalLink {
+  label: string;
+  url: string;
+}
+
+/** Neutral encyclopedic reference (Information tab). Lens-independent. */
+export interface ReferenceData {
+  id: string;
+  summary: string;
+  attribution: string;
+  symbols?: string[];
+  sacredAnimals?: string[];
+  cultCenters?: string[];
+  etymology?: string;
+  externalLinks?: ExternalLink[];
+}
+
 /** Star glow palette per character type — the "Aether Nebula" theme.
  *  Used by WebGL star materials; mirror of the star tokens in src/styles/theme.css.
  *  Keep both files in sync when tuning the palette. */

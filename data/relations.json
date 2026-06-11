@@ -1,5 +1,555 @@
 [
   {
+    "id": "nyx-parent-chaos",
+    "type": "parent",
+    "from": "nyx",
+    "to": "chaos",
+    "sources": ["hesiod", "hyginus"],
+    "note": "Born of Chaos with her brother Erebus (Theogony 123); in Hyginus from Chaos and Caligo, Mist (Fabulae preface)"
+  },
+  {
+    "id": "erebus-parent-chaos",
+    "type": "parent",
+    "from": "erebus",
+    "to": "chaos",
+    "sources": ["hesiod", "hyginus"],
+    "note": "Out of Chaos came Erebus and black Night (Theogony 123); in Hyginus from Chaos and Caligo, Mist (Fabulae preface)"
+  },
+  {
+    "id": "nyx-sibling-erebus",
+    "type": "sibling",
+    "from": "nyx",
+    "to": "erebus",
+    "sources": ["hesiod", "hyginus"],
+    "note": "The first darkness, twin-born of Chaos in Hesiod; born in one brood from Chaos and Caligo in Hyginus"
+  },
+  {
+    "id": "nyx-consort-erebus",
+    "type": "consort",
+    "from": "nyx",
+    "to": "erebus",
+    "sources": ["hesiod", "hyginus"],
+    "note": "Night lay in love with Erebus and bore Aether and Day (Theogony 124–125); Hyginus makes the union mother of the Parcae as well (moirai-parentage dispute)"
+  },
+  {
+    "id": "uranus-parent-gaia",
+    "type": "parent",
+    "from": "uranus",
+    "to": "gaia",
+    "sources": ["hesiod"],
+    "topic": "uranus-parentage",
+    "note": "Borne by Gaia alone, equal to herself, to cover her on every side (Theogony 126–128); Hyginus instead makes the Sky a child of Aether and Dies, who are outside the roster"
+  },
+  {
+    "id": "gaia-consort-uranus",
+    "type": "consort",
+    "from": "gaia",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "By the sky she herself had borne, mother of the Titans, the Cyclopes and the Hundred-Handers"
+  },
+  {
+    "id": "gaia-lover-tartarus",
+    "type": "lover",
+    "from": "gaia",
+    "to": "tartarus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "In love with Tartarus through golden Aphrodite she bore Typhoeus, her youngest child (Theogony 820–822)"
+  },
+  {
+    "id": "eros-parent-aphrodite",
+    "type": "parent",
+    "from": "eros",
+    "to": "aphrodite",
+    "sources": ["apollonius", "ovid"],
+    "topic": "eros-origin",
+    "note": "Aphrodite's winged and unruly son only in later poets; in Hesiod, Eros is primordial and unbegotten, arising beside Chaos, Gaia and Tartarus"
+  },
+  {
+    "id": "cronus-parent-uranus",
+    "type": "parent",
+    "from": "cronus",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Youngest and most terrible of the brood of Uranus and Gaia"
+  },
+  {
+    "id": "cronus-parent-gaia",
+    "type": "parent",
+    "from": "cronus",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "rhea-parent-uranus",
+    "type": "parent",
+    "from": "rhea",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "rhea-parent-gaia",
+    "type": "parent",
+    "from": "rhea",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "oceanus-parent-uranus",
+    "type": "parent",
+    "from": "oceanus",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "oceanus-cosmic-rank",
+    "note": "Eldest of the Titan children of Uranus and Gaia; in Homer (Iliad 14) Oceanus is instead the primeval origin from whom the gods are sprung"
+  },
+  {
+    "id": "oceanus-parent-gaia",
+    "type": "parent",
+    "from": "oceanus",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "oceanus-cosmic-rank",
+    "note": "First of the children Gaia bore to starry Uranus; Homer knows him not as a Titan son but as the genesis of the gods"
+  },
+  {
+    "id": "tethys-parent-uranus",
+    "type": "parent",
+    "from": "tethys",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "oceanus-cosmic-rank",
+    "note": "Lovely Tethys, youngest of the Titanides in Hesiod; in Homer she is 'mother Tethys', a primeval mother at the origin of the gods"
+  },
+  {
+    "id": "tethys-parent-gaia",
+    "type": "parent",
+    "from": "tethys",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "oceanus-cosmic-rank",
+    "note": "Daughter of Uranus and Gaia in Hesiod and Apollodorus; no Titan daughter at all in Homer's Iliad 14"
+  },
+  {
+    "id": "iapetus-parent-uranus",
+    "type": "parent",
+    "from": "iapetus",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Borne to starry Uranus among the elder Titans (Theogony 132–138)"
+  },
+  {
+    "id": "iapetus-parent-gaia",
+    "type": "parent",
+    "from": "iapetus",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "oceanus-sibling-tethys",
+    "type": "sibling",
+    "from": "oceanus",
+    "to": "tethys",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Sister-wife pair among the Titans — paired with the consort edge"
+  },
+  {
+    "id": "oceanus-sibling-iapetus",
+    "type": "sibling",
+    "from": "oceanus",
+    "to": "iapetus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "oceanus-sibling-rhea",
+    "type": "sibling",
+    "from": "oceanus",
+    "to": "rhea",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "oceanus-sibling-cronus",
+    "type": "sibling",
+    "from": "oceanus",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Eldest and youngest of the Titan brood; Oceanus alone held back when the brothers fell on Uranus (Apollodorus)"
+  },
+  {
+    "id": "tethys-sibling-iapetus",
+    "type": "sibling",
+    "from": "tethys",
+    "to": "iapetus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "tethys-sibling-rhea",
+    "type": "sibling",
+    "from": "tethys",
+    "to": "rhea",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "tethys-sibling-cronus",
+    "type": "sibling",
+    "from": "tethys",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "iapetus-sibling-rhea",
+    "type": "sibling",
+    "from": "iapetus",
+    "to": "rhea",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "iapetus-sibling-cronus",
+    "type": "sibling",
+    "from": "iapetus",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Homer remembers the two together, sitting in the sunless depths with Tartarus all around them (Iliad 8.478–481)"
+  },
+  {
+    "id": "rhea-sibling-cronus",
+    "type": "sibling",
+    "from": "rhea",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Sister-wife pair — paired with the consort edge per the incest convention"
+  },
+  {
+    "id": "cronus-consort-rhea",
+    "type": "consort",
+    "from": "cronus",
+    "to": "rhea",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "King in his father's place, Cronus wed his sister Rhea, who bore the six eldest Olympians; Homer: Il. 15.187 ('three brothers... begotten of Cronus, and born of Rhea')"
+  },
+  {
+    "id": "oceanus-consort-tethys",
+    "type": "consort",
+    "from": "oceanus",
+    "to": "tethys",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Parents of the three thousand Rivers and three thousand Oceanid nymphs; in Homer the primeval couple from whom the gods are sprung, who nursed Hera in their halls"
+  },
+  {
+    "id": "prometheus-parent-iapetus",
+    "type": "parent",
+    "from": "prometheus",
+    "to": "iapetus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Mother: the Oceanid Clymene (Hesiod, Hyginus) or her sister Asia (Apollodorus) — outside the roster"
+  },
+  {
+    "id": "atlas-parent-iapetus",
+    "type": "parent",
+    "from": "atlas",
+    "to": "iapetus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Mother: the Oceanid Clymene (Hesiod, Hyginus) or Asia (Apollodorus) — outside the roster"
+  },
+  {
+    "id": "prometheus-sibling-atlas",
+    "type": "sibling",
+    "from": "prometheus",
+    "to": "atlas",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Full brothers among the four sons of Iapetus, with Menoetius and Epimetheus"
+  },
+  {
+    "id": "zeus-parent-cronus",
+    "type": "parent",
+    "from": "zeus",
+    "to": "cronus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Youngest child, saved from his father's belly by the trick of a swaddled stone"
+  },
+  {
+    "id": "zeus-parent-rhea",
+    "type": "parent",
+    "from": "zeus",
+    "to": "rhea",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Rhea bore him in secret and hid him in a cave on Crete"
+  },
+  {
+    "id": "hera-parent-cronus",
+    "type": "parent",
+    "from": "hera",
+    "to": "cronus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Swallowed at birth like each of Rhea's children"
+  },
+  {
+    "id": "hera-parent-rhea",
+    "type": "parent",
+    "from": "hera",
+    "to": "rhea",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "In Homer, Rhea handed her to Oceanus and Tethys to be reared while Zeus warred on Cronus (Iliad 14.302–303)"
+  },
+  {
+    "id": "poseidon-parent-cronus",
+    "type": "parent",
+    "from": "poseidon",
+    "to": "cronus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "One of the three brothers begotten of Cronus and born of Rhea (Iliad 15.187–188)"
+  },
+  {
+    "id": "poseidon-parent-rhea",
+    "type": "parent",
+    "from": "poseidon",
+    "to": "rhea",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "demeter-parent-cronus",
+    "type": "parent",
+    "from": "demeter",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Second-born of the six, swallowed straight from the womb"
+  },
+  {
+    "id": "demeter-parent-rhea",
+    "type": "parent",
+    "from": "demeter",
+    "to": "rhea",
+    "sources": ["hesiod", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "hestia-parent-cronus",
+    "type": "parent",
+    "from": "hestia",
+    "to": "cronus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Firstborn of Cronus and Rhea — first swallowed and last set free; Hyginus' list of Saturn's children keeps her precedence"
+  },
+  {
+    "id": "hestia-parent-rhea",
+    "type": "parent",
+    "from": "hestia",
+    "to": "rhea",
+    "sources": ["hesiod", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "hades-parent-cronus",
+    "type": "parent",
+    "from": "hades",
+    "to": "cronus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "One of the three brothers begotten of Cronus and born of Rhea (Iliad 15.187–188)"
+  },
+  {
+    "id": "hades-parent-rhea",
+    "type": "parent",
+    "from": "hades",
+    "to": "rhea",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "hestia-sibling-demeter",
+    "type": "sibling",
+    "from": "hestia",
+    "to": "demeter",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hestia-sibling-hera",
+    "type": "sibling",
+    "from": "hestia",
+    "to": "hera",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hestia-sibling-hades",
+    "type": "sibling",
+    "from": "hestia",
+    "to": "hades",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hestia-sibling-poseidon",
+    "type": "sibling",
+    "from": "hestia",
+    "to": "poseidon",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hestia-sibling-zeus",
+    "type": "sibling",
+    "from": "hestia",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Eldest and youngest of the six Cronids — 'first and last' once Cronus disgorged his children in reverse order"
+  },
+  {
+    "id": "demeter-sibling-hera",
+    "type": "sibling",
+    "from": "demeter",
+    "to": "hera",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "demeter-sibling-hades",
+    "type": "sibling",
+    "from": "demeter",
+    "to": "hades",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "demeter-sibling-poseidon",
+    "type": "sibling",
+    "from": "demeter",
+    "to": "poseidon",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "demeter-sibling-zeus",
+    "type": "sibling",
+    "from": "demeter",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hera-sibling-hades",
+    "type": "sibling",
+    "from": "hera",
+    "to": "hades",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hera-sibling-poseidon",
+    "type": "sibling",
+    "from": "hera",
+    "to": "poseidon",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "hera-sibling-zeus",
+    "type": "sibling",
+    "from": "hera",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "Both sister and wife of Zeus — paired with the consort edge per the incest convention"
+  },
+  {
+    "id": "hades-sibling-poseidon",
+    "type": "sibling",
+    "from": "hades",
+    "to": "poseidon",
+    "sources": ["hesiod", "homer", "apollodorus"]
+  },
+  {
+    "id": "hades-sibling-zeus",
+    "type": "sibling",
+    "from": "hades",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"]
+  },
+  {
+    "id": "poseidon-sibling-zeus",
+    "type": "sibling",
+    "from": "poseidon",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "On the strength of the lots, Poseidon insists he is Zeus's equal in honor (Iliad 15.187–193)"
+  },
+  {
+    "id": "zeus-consort-hera",
+    "type": "consort",
+    "from": "zeus",
+    "to": "hera",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "His last and lasting wife (Theogony 921), mother of Hebe, Eileithyia and Ares"
+  },
+  {
+    "id": "athena-parent-zeus",
+    "type": "parent",
+    "from": "athena",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "topic": "athena-parentage",
+    "note": "Born fully armed from Zeus' head after he swallowed her pregnant mother, his first wife the Oceanid Metis (Theogony 886–900, 924–926); in Homer she is Zeus' own child, no mother ever named — Homer: Il. 5.875–880"
+  },
+  {
+    "id": "athena-parent-poseidon",
+    "type": "parent",
+    "from": "athena",
+    "to": "poseidon",
+    "sources": ["pausanias"],
+    "topic": "athena-parentage",
+    "note": "Libyan tradition: daughter of Poseidon and Lake Tritonis, her sea-grey eyes inherited from her father (Description of Greece 1.14.6)"
+  },
+  {
+    "id": "apollo-parent-zeus",
+    "type": "parent",
+    "from": "apollo",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "Son of Zeus and the Titaness Leto, born on Delos"
+  },
+  {
+    "id": "apollo-parent-leto",
+    "type": "parent",
+    "from": "apollo",
+    "to": "leto",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Born second of the twins, his newborn sister turning midwife (Apollodorus); four days out of the cradle he avenged his mother on Python"
+  },
+  {
+    "id": "artemis-parent-zeus",
+    "type": "parent",
+    "from": "artemis",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "Daughter of Zeus and the Titaness Leto, twin of Apollo"
+  },
+  {
+    "id": "artemis-parent-leto",
+    "type": "parent",
+    "from": "artemis",
+    "to": "leto",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Brought forth first on Delos, then midwife at her twin brother's birth (Apollodorus)"
+  },
+  {
+    "id": "apollo-sibling-artemis",
+    "type": "sibling",
+    "from": "apollo",
+    "to": "artemis",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "The archer twins of Zeus and Leto, born together on Delos"
+  },
+  {
+    "id": "ares-parent-zeus",
+    "type": "parent",
+    "from": "ares",
+    "to": "zeus",
+    "sources": ["hesiod", "homer"],
+    "note": "Least welcome of Olympus' children at his father's knee — 'most hateful to me of all gods' (Iliad 5.890)"
+  },
+  {
+    "id": "ares-parent-hera",
+    "type": "parent",
+    "from": "ares",
+    "to": "hera",
+    "sources": ["hesiod", "homer"],
+    "note": "Borne by Hera to Zeus with Hebe and Eileithyia (Theogony 921–923)"
+  },
+  {
+    "id": "ares-sibling-hephaestus",
+    "type": "sibling",
+    "from": "ares",
+    "to": "hephaestus",
+    "sources": ["homer"],
+    "note": "Full brothers only in Homer, where Hephaestus is son of Zeus and Hera; in Hesiod Hera bore Hephaestus alone, making them half-brothers"
+  },
+  {
     "id": "aphrodite-parent-uranus",
     "type": "parent",
     "from": "aphrodite",
@@ -16,5 +566,500 @@
     "sources": ["homer", "apollodorus"],
     "topic": "aphrodite-parentage",
     "note": "Daughter of Zeus and Dione (Iliad 5.370; Bibliotheca 1.3.1)"
+  },
+  {
+    "id": "hephaestus-parent-hera",
+    "type": "parent",
+    "from": "hephaestus",
+    "to": "hera",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "topic": "hephaestus-conception",
+    "note": "In Hesiod and Apollodorus Hera bore him entirely alone, without a father, in rivalry over Athena's birth; in Homer he is the son of both Zeus and Hera"
+  },
+  {
+    "id": "hephaestus-parent-zeus",
+    "type": "parent",
+    "from": "hephaestus",
+    "to": "zeus",
+    "sources": ["homer"],
+    "topic": "hephaestus-conception",
+    "note": "Father only in Homer (Iliad 1.577–579; Odyssey 8.312); Hesiod and Apollodorus give him no father at all"
+  },
+  {
+    "id": "hermes-parent-zeus",
+    "type": "parent",
+    "from": "hermes",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Mother: the Pleiad Maia, daughter of Atlas, who bore him in a cave of Mount Cyllene — outside the roster; Homer: Od. 8.335 ('Hermes, son of Zeus'), Od. 14.435 (son of Maia)"
+  },
+  {
+    "id": "dionysus-parent-zeus",
+    "type": "parent",
+    "from": "dionysus",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Mother: the mortal Semele, daughter of Cadmus (no roster node), incinerated by Zeus' unveiled glory; the unborn child was sewn into Zeus' thigh"
+  },
+  {
+    "id": "dionysus-parent-persephone",
+    "type": "parent",
+    "from": "dionysus",
+    "to": "persephone",
+    "sources": ["hyginus"],
+    "topic": "dionysus-first-birth",
+    "note": "Orphic tradition reported by Hyginus (Fabulae 167): Liber first born of Jove and Proserpina, dismembered by the Titans, conceived again from Semele — the god with two mothers"
+  },
+  {
+    "id": "persephone-parent-zeus",
+    "type": "parent",
+    "from": "persephone",
+    "to": "zeus",
+    "sources": ["hesiod", "homer", "apollodorus", "ovid", "hyginus"],
+    "note": "Zeus came to the bed of all-nourishing Demeter, and she bore him white-armed Persephone (Theogony 912)"
+  },
+  {
+    "id": "persephone-parent-demeter",
+    "type": "parent",
+    "from": "persephone",
+    "to": "demeter",
+    "sources": ["hesiod", "homer", "apollodorus", "ovid", "hyginus"],
+    "note": "Her mother's grief at the abduction withered the world's crops — the mythic root of the seasons"
+  },
+  {
+    "id": "hades-consort-persephone",
+    "type": "consort",
+    "from": "hades",
+    "to": "persephone",
+    "sources": ["hesiod", "homer", "apollodorus", "ovid", "hyginus"],
+    "note": "Carried her off with Zeus' connivance to reign as queen of the dead; the abduction site and her yearly term below are disputed (persephone-abduction-details, persephone-split-year)"
+  },
+  {
+    "id": "aphrodite-consort-hephaestus",
+    "type": "consort",
+    "from": "aphrodite",
+    "to": "hephaestus",
+    "sources": ["homer", "ovid"],
+    "note": "His wife in the song of Demodocus (Odyssey 8) and in Ovid's tale of the net; in the Iliad his wife is Charis, in Hesiod Aglaia, youngest of the Graces"
+  },
+  {
+    "id": "ares-lover-aphrodite",
+    "type": "lover",
+    "from": "ares",
+    "to": "aphrodite",
+    "sources": ["hesiod", "homer", "ovid"],
+    "note": "The affair Helios exposed and Hephaestus snared in an unbreakable net; in Hesiod she bore Ares Phobos, Deimos and Harmonia (Theogony 933–937)"
+  },
+  {
+    "id": "zeus-lover-demeter",
+    "type": "lover",
+    "from": "zeus",
+    "to": "demeter",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "The union that begot Persephone (Theogony 912)"
+  },
+  {
+    "id": "zeus-lover-leto",
+    "type": "lover",
+    "from": "zeus",
+    "to": "leto",
+    "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+    "note": "Joined in love with the lord of the aegis, Leto bore the archer twins Apollo and Artemis; Homer: Il. 14.327 (named in Zeus' catalogue of loves), Il. 1.9 (Apollo 'son of Leto and Zeus')"
+  },
+  {
+    "id": "poseidon-lover-demeter",
+    "type": "lover",
+    "from": "poseidon",
+    "to": "demeter",
+    "sources": ["pausanias"],
+    "note": "Arcadian tale from Thelpusa: he covered her as a stallion while she grazed as a mare among the herds of Oncius, an unwilling union; she bore the horse Arion and Despoina"
+  },
+  {
+    "id": "zeus-adversary-cronus",
+    "type": "adversary",
+    "from": "zeus",
+    "to": "cronus",
+    "sources": ["hesiod", "homer", "apollodorus"],
+    "note": "Forced his father to disgorge the swallowed children and, after the ten-year Titanomachy, thrust Cronus down beneath the earth and the unresting sea"
+  },
+  {
+    "id": "cronus-adversary-uranus",
+    "type": "adversary",
+    "from": "cronus",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Alone dared answer Gaia's call: from ambush he reaped his father's manhood with the adamantine sickle"
+  },
+  {
+    "id": "prometheus-adversary-zeus",
+    "type": "adversary",
+    "from": "prometheus",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "Tricked Zeus over the portions at Mecone, stole fire in a fennel stalk, and was bound in the Caucasus with an eagle at his ever-regrowing liver"
+  },
+  {
+    "id": "oceanus-ally-zeus",
+    "type": "ally",
+    "from": "oceanus",
+    "to": "zeus",
+    "sources": ["hesiod"],
+    "note": "Sat out the Titanomachy; through his counsels his daughter Styx came first of all to Zeus' side and was honored for it (Theogony 389–403)"
+  },
+  {
+    "id": "gaia-ally-zeus",
+    "type": "ally",
+    "from": "gaia",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Took the newborn to nurse in a Cretan cave, counselled the freeing of the Cyclopes, and prompted the gods to urge Zeus to kingship (Theogony 881–885)"
+  },
+  {
+    "id": "gaia-adversary-zeus",
+    "type": "adversary",
+    "from": "gaia",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "note": "When the Titans had been driven from heaven she bore Typhoeus by Tartarus to challenge the new order; the motive of anger is explicit in Apollodorus"
+  },
+  {
+    "id": "hera-adversary-leto",
+    "type": "adversary",
+    "from": "hera",
+    "to": "leto",
+    "sources": ["apollodorus", "hyginus"],
+    "note": "Hunted the pregnant Titaness over the whole earth before the twins' birth on Delos; in Hyginus she decreed Latona give birth only where the sun never shone"
+  },
+  {
+    "id": "athena-adversary-poseidon",
+    "type": "adversary",
+    "from": "athena",
+    "to": "poseidon",
+    "sources": ["apollodorus", "ovid", "pausanias"],
+    "note": "The contest for Attica in the days of Cecrops: his well of sea-water against her first olive tree, judged for Athena"
+  },
+  {
+    "id": "aether-parent-nyx",
+    "type": "parent",
+    "from": "aether",
+    "to": "nyx",
+    "sources": ["hesiod"],
+    "topic": "first-beings-cosmogony",
+    "note": "Night conceived Aether by Erebus (Theogony 123–125); Hyginus instead makes Aether a sibling of Night"
+  },
+  {
+    "id": "aether-parent-erebus",
+    "type": "parent",
+    "from": "aether",
+    "to": "erebus",
+    "sources": ["hesiod"],
+    "topic": "first-beings-cosmogony"
+  },
+  {
+    "id": "aether-parent-chaos",
+    "type": "parent",
+    "from": "aether",
+    "to": "chaos",
+    "sources": ["hyginus"],
+    "topic": "first-beings-cosmogony",
+    "note": "Born from Chaos and Caligo alongside Night, Day and Erebus (Fabulae preface)"
+  },
+  {
+    "id": "hemera-parent-nyx",
+    "type": "parent",
+    "from": "hemera",
+    "to": "nyx",
+    "sources": ["hesiod"],
+    "topic": "first-beings-cosmogony",
+    "note": "Night conceived Day by Erebus (Theogony 123–125); Hyginus instead makes Day a sibling of Night"
+  },
+  {
+    "id": "hemera-parent-erebus",
+    "type": "parent",
+    "from": "hemera",
+    "to": "erebus",
+    "sources": ["hesiod"],
+    "topic": "first-beings-cosmogony"
+  },
+  {
+    "id": "hemera-parent-chaos",
+    "type": "parent",
+    "from": "hemera",
+    "to": "chaos",
+    "sources": ["hyginus"],
+    "topic": "first-beings-cosmogony",
+    "note": "Born from Chaos and Caligo alongside Night, Erebus and Aether (Fabulae preface)"
+  },
+  {
+    "id": "aether-sibling-hemera",
+    "type": "sibling",
+    "from": "aether",
+    "to": "hemera",
+    "sources": ["hesiod", "hyginus"],
+    "note": "The paired brightnesses of upper air and day"
+  },
+  {
+    "id": "moros-parent-nyx",
+    "type": "parent",
+    "from": "moros",
+    "to": "nyx",
+    "sources": ["hesiod"]
+  },
+  {
+    "id": "momus-parent-nyx",
+    "type": "parent",
+    "from": "momus",
+    "to": "nyx",
+    "sources": ["hesiod"]
+  },
+  {
+    "id": "apate-parent-nyx",
+    "type": "parent",
+    "from": "apate",
+    "to": "nyx",
+    "sources": ["hesiod"]
+  },
+  {
+    "id": "thanatos-parent-nyx",
+    "type": "parent",
+    "from": "thanatos",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "thanatos-parent-erebus",
+    "type": "parent",
+    "from": "thanatos",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "hypnos-parent-nyx",
+    "type": "parent",
+    "from": "hypnos",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "hypnos-parent-erebus",
+    "type": "parent",
+    "from": "hypnos",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "thanatos-sibling-hypnos",
+    "type": "sibling",
+    "from": "thanatos",
+    "to": "hypnos",
+    "sources": ["hesiod", "homer", "hyginus"],
+    "note": "The twin bearers who carry Sarpedon home to Lycia in Iliad 16"
+  },
+  {
+    "id": "oizys-parent-nyx",
+    "type": "parent",
+    "from": "oizys",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "oizys-parent-erebus",
+    "type": "parent",
+    "from": "oizys",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "nemesis-parent-nyx",
+    "type": "parent",
+    "from": "nemesis",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "nemesis-parent-erebus",
+    "type": "parent",
+    "from": "nemesis",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "geras-parent-nyx",
+    "type": "parent",
+    "from": "geras",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "geras-parent-erebus",
+    "type": "parent",
+    "from": "geras",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "eris-parent-nyx",
+    "type": "parent",
+    "from": "eris",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "eris-parent-erebus",
+    "type": "parent",
+    "from": "eris",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "night-brood-parentage"
+  },
+  {
+    "id": "themis-parent-uranus",
+    "type": "parent",
+    "from": "themis",
+    "to": "uranus",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "themis-parent-gaia",
+    "type": "parent",
+    "from": "themis",
+    "to": "gaia",
+    "sources": ["hesiod", "apollodorus"]
+  },
+  {
+    "id": "zeus-consort-themis",
+    "type": "consort",
+    "from": "zeus",
+    "to": "themis",
+    "sources": ["hesiod", "apollodorus"],
+    "note": "Their children include the Horae and, in this genealogy, the three Moirai"
+  },
+  {
+    "id": "clotho-parent-nyx",
+    "type": "parent",
+    "from": "clotho",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "clotho-parent-erebus",
+    "type": "parent",
+    "from": "clotho",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "clotho-parent-zeus",
+    "type": "parent",
+    "from": "clotho",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "clotho-parent-themis",
+    "type": "parent",
+    "from": "clotho",
+    "to": "themis",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "lachesis-parent-nyx",
+    "type": "parent",
+    "from": "lachesis",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "lachesis-parent-erebus",
+    "type": "parent",
+    "from": "lachesis",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "lachesis-parent-zeus",
+    "type": "parent",
+    "from": "lachesis",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "lachesis-parent-themis",
+    "type": "parent",
+    "from": "lachesis",
+    "to": "themis",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "atropos-parent-nyx",
+    "type": "parent",
+    "from": "atropos",
+    "to": "nyx",
+    "sources": ["hesiod", "hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "atropos-parent-erebus",
+    "type": "parent",
+    "from": "atropos",
+    "to": "erebus",
+    "sources": ["hyginus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "atropos-parent-zeus",
+    "type": "parent",
+    "from": "atropos",
+    "to": "zeus",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "atropos-parent-themis",
+    "type": "parent",
+    "from": "atropos",
+    "to": "themis",
+    "sources": ["hesiod", "apollodorus"],
+    "topic": "moirai-parentage"
+  },
+  {
+    "id": "clotho-sibling-lachesis",
+    "type": "sibling",
+    "from": "clotho",
+    "to": "lachesis",
+    "sources": ["hesiod", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "clotho-sibling-atropos",
+    "type": "sibling",
+    "from": "clotho",
+    "to": "atropos",
+    "sources": ["hesiod", "apollodorus", "hyginus"]
+  },
+  {
+    "id": "lachesis-sibling-atropos",
+    "type": "sibling",
+    "from": "lachesis",
+    "to": "atropos",
+    "sources": ["hesiod", "apollodorus", "hyginus"]
   }
 ]

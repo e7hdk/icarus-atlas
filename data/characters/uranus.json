@@ -4,26 +4,50 @@
   "greekName": "Ouranos (Οὐρανός)",
   "romanName": "Caelus",
   "type": "primordial",
-  "domains": ["sky"],
-  "epithets": ["Asteroeis"],
+  "domains": ["sky", "heavens"],
+  "epithets": ["Asteroeis", "Akmonides"],
   "cluster": "core",
   "summary": [
     {
       "text": "The starry sky itself and first lord of the cosmos, born of Gaia to cover her on every side, and unmanned by his own son Cronus.",
-      "sources": ["hesiod", "apollodorus"],
-      "citation": "Theogony 126–138"
+      "sources": ["hesiod"],
+      "citation": "Theogony 126–138, 159–182",
+      "topic": "uranus-parentage"
+    },
+    {
+      "text": "In Hyginus' genealogies the Sky is no son of Earth but her brother — a child of Aether and Dies (Day), born alongside Terra and the Sea, and father of the Titan brood upon his sister Earth.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface",
+      "topic": "uranus-parentage"
     }
   ],
   "story": [
     {
-      "text": "Gaia first bore starry Uranus, equal to herself, to cover her on every side and to be a sure seat for the blessed gods forever. By her he fathered the Titans, the Cyclopes and the Hundred-Handers — and hating his own children, he hid them away in the depths of the earth.",
-      "sources": ["hesiod"],
-      "citation": "Theogony 126–158"
+      "text": "Gaia first bore starry Uranus, equal to herself, to cover her on every side and to be a sure seat for the blessed gods forever. By her he fathered the Titans, the Cyclopes and the Hundred-Handers — and hating his own children, he hid them away in the depths of the earth. Apollodorus, who names Sky the first ruler of the whole world, has him bind these first-born and cast them into Tartarus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 126–158; Bibliotheca 1.1.1–1.1.3"
     },
     {
-      "text": "Gaia, groaning under the weight, forged a great sickle of adamant and asked her sons for vengeance. Only Cronus dared. From ambush he reaped his father's manhood and flung it into the sea; from the blood that fell on the earth came the Furies and the Giants, and from the foam upon the waves, Aphrodite.",
+      "text": "Among his sons by Gaia were the Cyclopes — Brontes, Steropes and bold-hearted Arges — gods with a single round eye set in the forehead, like the immortals in all else and masters of their craft. Long after their father's fall, freed from their bonds by Zeus, they repaid him with thunder, the thunderbolt and lightning, the weapons by which he rules gods and men.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 139–146, 501–506",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Gaia, groaning under the weight, forged a great sickle of adamant and asked her sons for vengeance. Only Cronus dared to wield it. From ambush he reaped his father's manhood and flung it away; the drops of blood that fell upon the earth Gaia received, and from them came the Furies — and, in Hesiod's telling, the great Giants and the ash-tree nymphs besides.",
       "sources": ["hesiod", "apollodorus"],
-      "citation": "Theogony 159–206; Bibliotheca 1.1.4",
+      "citation": "Theogony 159–187; Bibliotheca 1.1.4"
+    },
+    {
+      "text": "The severed flesh fell into the restless sea and was borne long upon the waves, and a white foam gathered around it; within it a goddess grew. Past holy Cythera she drifted, and rose from the waves at Cyprus — Aphrodite, the sky's last child, born of his sundering and the sea.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 188–206",
+      "topic": "aphrodite-parentage"
+    },
+    {
+      "text": "Homer knows nothing of this birth: in the Iliad Aphrodite is a daughter of Zeus and the goddess Dione, into whose lap she falls for comfort when Diomedes wounds her at Troy, and Apollodorus likewise lists her among the children Dione bore to Zeus. In that telling no goddess rose from Uranus' wound.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 5.370–417; Bibliotheca 1.3.1",
       "topic": "aphrodite-parentage"
     }
   ]

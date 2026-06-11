@@ -1,0 +1,47 @@
+{
+  "id": "artemis",
+  "name": "Artemis",
+  "greekName": "Artemis (Ἄρτεμις)",
+  "romanName": "Diana",
+  "type": "olympian",
+  "domains": ["the hunt", "wilderness", "childbirth", "the moon"],
+  "epithets": ["Agrotera", "Potnia Theron", "Cynthia"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Virgin goddess of the hunt and the wilderness, twin of Apollo, daughter of Zeus and the Titaness Leto. Mistress of wild animals and guardian of girls and of women in childbirth, she is swift to punish any trespass against herself or her mother.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 918–920; Iliad 21.470–471; Bibliotheca 1.4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Leto, joined in love with aegis-bearing Zeus, bore the archer twins, children lovely above all the heavenly line. Hunted over the whole earth by Hera's jealousy, Apollodorus tells, she found refuge at last on Delos and brought forth Artemis first — and the newborn goddess turned midwife on the spot, helping her mother deliver Apollo. From her first hour, then, the virgin huntress has watched over women in labor.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 918–920; Bibliotheca 1.4.1"
+    },
+    {
+      "text": "Her wrath became a byword. When the hunter Actaeon strayed upon her bathing, she turned him into a stag, and his own hounds, maddened, devoured their master without knowing him. When Niobe boasted herself more blessed in children than Leto, Artemis shot down the daughters in the house while Apollo killed the sons, and the weeping mother hardened into stone that drips tears to this day.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 3.138–252, 6.146–312; Bibliotheca 3.4.4, 3.5.6"
+    },
+    {
+      "text": "In Odysseus' tale of the dead, fair Ariadne never reached Athens: Theseus carried her from Crete only as far as the island of Dia, and there Artemis killed her on the testimony of Dionysus, before Theseus could bring her home.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.321–325",
+      "topic": "ariadne-fate"
+    },
+    {
+      "text": "Callisto, one of her own companions, was loved by Zeus, and the tellings of what followed pull in every direction. In Ovid it is Juno who, enraged after the birth of Arcas, seizes Callisto by the hair and turns her into a bear with her own hands, and Jupiter at last sets mother and son among the stars. Hyginus likewise has Juno work the change in anger that the girl had lain with Jove, though his handbook of star-myths collects still more variants — among them Diana herself killing the bear while hunting.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.466–507; Fabulae 177; Astronomica 2.1",
+      "topic": "callisto-transformation"
+    },
+    {
+      "text": "Apollodorus shifts the blame: Zeus himself turned Callisto into a bear to hide the affair from Hera, and Hera then persuaded Artemis to shoot the creature down as a wild beast — though others, he adds, say Artemis shot her for failing to keep her maidenhood.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.8.2",
+      "topic": "callisto-transformation"
+    }
+  ]
+}

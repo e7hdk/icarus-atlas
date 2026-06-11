@@ -1,0 +1,43 @@
+{
+  "id": "iapetus",
+  "name": "Iapetus",
+  "greekName": "Iapetos (Ἰαπετός)",
+  "type": "titan",
+  "domains": ["mortality"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan son of Uranus and Gaia, husband of an Oceanid and father of Atlas, Menoetius, Prometheus and Epimetheus; after the war of the gods he sits beside Cronus in the sunless depths of Tartarus.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Theogony 134, 507–514; Bibliotheca 1.1.3, 1.2.3; Iliad 8.478–481"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gaia bore him to starry Uranus among the elder Titans — deep-swirling Oceanus, Coeus and Crius, Hyperion and Iapetus, and after them Cronus the crooked-counselled, youngest and most terrible. When Uranus hid his children away in the depths of the earth, Gaia forged the adamantine sickle and called her sons to vengeance. In Hesiod only Cronus dared answer; in Apollodorus the brothers, all but Oceanus, fell upon their father together while Cronus did the cutting.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–182; Bibliotheca 1.1.3–1.1.4"
+    },
+    {
+      "text": "He led an Oceanid up into one bed with him — the neat-ankled maid Clymene, daughter of Ocean, says Hesiod, and Hyginus' catalogue keeps her name; Apollodorus gives him her sister Asia instead. She bore him four sons in whom the fortunes of gods and men were knotted together: stout-hearted Atlas, glorious Menoetius, Prometheus subtle and shifting in counsel, and scatter-brained Epimetheus.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 507–514; Bibliotheca 1.2.3; Fabulae Preface"
+    },
+    {
+      "text": "No house of the Titans gathered more of Zeus's anger. Outrageous Menoetius was struck with a lurid thunderbolt and sent down to Erebus for his mad presumption and exceeding pride — in Apollodorus the blow falls in the battle with the Titans itself, hurling him into Tartarus. Atlas was made to stand at the western edge of the earth, upholding the broad sky on his head and unwearying arms; Prometheus was bound in inescapable bonds with a shaft driven through his middle, an eagle coming each day for his immortal liver; and heedless Epimetheus was the first to take from Zeus the moulded maiden, a mischief to men who eat bread.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 511–525; Bibliotheca 1.2.3"
+    },
+    {
+      "text": "Of Iapetus himself in the great war the poets say little — only how it ended. After ten years of battle the Hundred-Handers overwhelmed the Titans with a darkness of flung stones and bound them in bitter chains as far beneath the earth as heaven stands above it. Homer remembers him there: Zeus warns Hera that he cares nothing for her anger though she stray to the nethermost bounds of earth and sea, where Iapetus and Cronus sit and take joy neither in the rays of Helios Hyperion nor in any breeze, with deep Tartarus all around them.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 617–735; Iliad 8.478–481"
+    },
+    {
+      "text": "To later poets his name endured above all as a patronymic for his most famous son. Ovid, weighing how man first came to be, offers as one account that the son of Iapetus shaped him from new-made earth mixed with rainwater, moulding him in the likeness of the all-governing gods; Hyginus states it without hedging — Prometheus, son of Iapetus, first fashioned men from clay. In this tradition the line of Iapetus is nothing less than the wellspring of mankind.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 1.76–88; Fabulae 142",
+      "topic": "prometheus-creation-of-man"
+    }
+  ]
+}

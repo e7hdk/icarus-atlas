@@ -1,0 +1,54 @@
+{
+  "id": "lachesis",
+  "name": "Lachesis",
+  "greekName": "Lachesis (Λάχεσις)",
+  "type": "god",
+  "domains": ["fate", "the allotment of mortal life"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "One of the three Moirai; Hesiod makes her first a fatherless daughter of Nyx and later a daughter of Zeus and Themis.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222, 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Fates born to Zeus and Themis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "One of the three Parcae, daughter of Night and Erebus, who foretold that the newborn Meleager would be brave.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod first names Lachesis among the ruthless Fates born by Nyx without a father. With Clotho and Atropos she assigns good and evil at birth and punishes transgression among mortals and gods.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 217–222",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "The Theogony later gives Lachesis a different family, making her a daughter of Zeus and bright Themis and a sister of the Horae.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Apollodorus also lists Lachesis among the Fates born to Zeus and Themis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Hyginus calls the three Parcae children of Night and Erebus. When they appeared at Meleager's birth, Lachesis announced that the infant would be brave.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1; Fabulae 171",
+      "topic": "moirai-parentage"
+    }
+  ]
+}

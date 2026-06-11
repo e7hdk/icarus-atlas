@@ -1,0 +1,51 @@
+{
+  "id": "tethys",
+  "name": "Tethys",
+  "greekName": "Tēthys (Τηθύς)",
+  "type": "titan",
+  "domains": ["fresh water", "springs", "nursing"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan goddess of the fresh waters that nourish the earth, daughter of Uranus and Gaia, wife of her brother Oceanus and mother by him of the three thousand Rivers and the three thousand Oceanid nymphs.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138, 337–370; Bibliotheca 1.1.3, 1.2.2",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "'Mother Tethys', who with Oceanus stands at the very origin of the gods — no Titan daughter of the sky but a primeval mother, the nurse who reared Hera in her own halls.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.200–210",
+      "topic": "oceanus-cosmic-rank"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Gaia lay with starry Uranus she bore the deep-swirling Oceanus and after him the elder gods — Coeus and Crius, Hyperion and Iapetus, Theia and Rhea, Themis and Mnemosyne, gold-crowned Phoebe and lovely Tethys — before Cronus, youngest and most terrible, came last of all. Apollodorus sets her first when he calls the roll of the Titanides.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138; Bibliotheca 1.1.3",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "She married her brother Oceanus, the river that rings the world, and through her children every water that feeds the earth descends from her. She bore the eddying Rivers — Nilus and Alpheus, deep-swirling Eridanus and the rest — and a holy company of daughters, the Oceanids, of whom Styx is chiefest of all: three thousand neat-ankled daughters scattered over earth and sea, and as many babbling sons. Hyginus' handbook keeps the same family register, naming the Oceanides and, of the same descent, the rivers from the Strymon to the Nile.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 337–370; Bibliotheca 1.2.2; Fabulae preface"
+    },
+    {
+      "text": "Homer remembers her differently — not as one Titan among twelve but as something older still. When Hera schemes to beguile Zeus, her pretext is a journey to the ends of the bountiful earth, to \"Oceanus, from whom the gods are sprung, and mother Tethys,\" who took the infant Hera from Rhea's arms and reared her kindly in their halls while Zeus was thrusting Cronus down beneath the earth and the unresting sea. Hera claims she goes to mend the couple's endless strife, for they have long held aloof from love and the marriage bed in anger with one another.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.200–210",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "Her nursling never forgot her. After Callisto and Arcas were set blazing among the stars, the humiliated Juno went down to the deep and begged her foster-parents, if the slight to their fosterling moved them, to debar the Bear from their crystalline waters and never bathe Jove's concubine in the pure sea. Hyginus tells the result: Tethys, wife of Ocean and nurse of Juno, refuses to receive the Bear when the other stars come down to their setting — and so the Wain wheels forever about the pole and never sinks beneath the waves.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.508–530; Astronomica 2.1"
+    },
+    {
+      "text": "In Ovid she moves through the sea as a quiet, merciful power. When Aesacus, mad with grief for the nymph Hesperia, hurled himself from a cliff, Tethys pitied him as he fell, received him softly on the water and covered him with feathers, and he lives on as the diving bird that plunges into the sea again and again. And when the fisherman Glaucus tasted the strange grass and the gods of the deep welcomed him as one of their own, it was Oceanus and Tethys they called upon to purge away what was mortal in him, washing him clean with a ninefold charm and the streams of a hundred rivers.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.784–795, 13.949–959"
+    }
+  ]
+}

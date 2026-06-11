@@ -1,0 +1,36 @@
+{
+  "id": "geras",
+  "name": "Geras",
+  "greekName": "Gēras (Γῆρας)",
+  "romanName": "Senectus",
+  "type": "god",
+  "domains": ["old age", "the decline of mortal life"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Old Age personified, a fatherless child of Nyx in Hesiod's genealogy of mortal afflictions.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 223–225"
+    },
+    {
+      "text": "Hyginus makes Old Age a child of Night and Erebus together.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Night bore hateful Geras without a father, placing the wasting of age beside Deceit, Friendship and Strife among the powers that accompany mortal existence.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 223–225",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Hyginus' genealogy calls him Senectus and gives him Erebus as father as well as Nox as mother.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

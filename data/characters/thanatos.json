@@ -1,0 +1,45 @@
+{
+  "id": "thanatos",
+  "name": "Thanatos",
+  "greekName": "Thanatos (Θάνατος)",
+  "romanName": "Mors",
+  "type": "god",
+  "domains": ["death", "the passage of the dead"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Death personified, a fatherless son of Nyx who dwells beside Hypnos in the sunless depths below the earth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213, 758–766"
+    },
+    {
+      "text": "The swift twin brother of Hypnos, summoned with Sleep to carry the fallen Sarpedon home from Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.671–683"
+    },
+    {
+      "text": "Death personified, born from Night and Erebus in Hyginus' genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nyx bore Thanatos without lying with any god. Far below the earth he shares a shadowed dwelling with Hypnos; the Sun never looks upon them, and Hesiod contrasts gentle Sleep with Death's iron heart and inescapable grasp.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213, 758–766"
+    },
+    {
+      "text": "When Sarpedon fell at Troy, Zeus ordered Apollo to wash the body, anoint it with ambrosia and clothe it in immortal garments. Apollo then entrusted it to the swift twin brothers Sleep and Death, who carried the fallen prince home to Lycia for burial.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.671–683"
+    },
+    {
+      "text": "Hyginus makes Mors a child of both Nox and Erebus rather than a fatherless son of Night.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

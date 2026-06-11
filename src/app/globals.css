@@ -16,3 +16,20 @@ body {
 ::selection {
   background: rgb(192 132 252 / 0.35);
 }
+
+/* Relation orrery (character page): ring rotation, hover pause, center pulse */
+@keyframes orrery-spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+@keyframes orrery-spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0); }
+}
+@keyframes orrery-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+.orrery:hover [data-orrery-ring] {
+  animation-play-state: paused;
+}

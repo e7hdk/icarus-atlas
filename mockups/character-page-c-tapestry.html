@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page C: Tapestry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; color: #f1f5f9; font-family: 'Cormorant Garamond', serif;
+    background: #08041d;
+    background-image:
+      radial-gradient(40% 30% at 88% 55%, rgba(0,229,255,.08), transparent 70%),
+      radial-gradient(45% 35% at 8% 92%, rgba(124,77,255,.16), transparent 70%);
+    background-attachment: fixed;
+  }
+  .hero { position: relative; height: 360px; overflow: hidden; }
+  .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; }
+  .hero .veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,4,29,.4), rgba(8,4,29,.55) 55%, #08041d 100%); }
+  .pill { position: absolute; top: 18px; left: 20px; border: 1px solid rgba(255,255,255,.25); background: rgba(8,4,29,.45); backdrop-filter: blur(6px); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: #f1f5f9; cursor: pointer; text-decoration: none; z-index: 2; }
+  .credit { position: absolute; top: 20px; right: 20px; font-style: italic; font-size: 14px; color: rgba(241,245,249,.75); z-index: 2; }
+  .title { position: absolute; left: 40px; bottom: 22px; z-index: 2; }
+  .title h1 { font: 600 58px Cinzel, serif; letter-spacing: .2em; text-shadow: 0 0 44px rgba(252,211,77,.55); }
+  .title .sub { font-style: italic; font-size: 19px; color: #dbe2ee; }
+  .title .sub em { font-style: normal; color: #fde68a; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 30px 28px 60px; }
+  .sect { display: flex; align-items: center; gap: 12px; font: 500 12px Cinzel, serif; letter-spacing: .24em; color: #6b7488; margin: 26px 0 13px; }
+  .sect .line { flex: 1; height: 1px; background: rgba(255,255,255,.1); }
+  .sect .tag { border: 1px solid rgba(192,132,252,.45); background: rgba(124,77,255,.16); border-radius: 999px; padding: 2px 12px; font-size: 11px; letter-spacing: .12em; color: #c084fc; }
+  .chapters { display: flex; gap: 12px; }
+  .ch { flex: 0 0 150px; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; background: rgba(255,255,255,.04); padding: 18px 18px 16px; cursor: pointer; overflow: hidden; transition: all .5s cubic-bezier(.22,.9,.3,1); position: relative; min-height: 250px; }
+  .ch .body { opacity: 0; transition: opacity .3s; }
+  .ch.open { flex: 1 1 auto; background: rgba(20,12,48,.6); border-color: rgba(192,132,252,.4); }
+  .ch.open .body { opacity: 1; transition-delay: .22s; }
+  .ch:not(.open):hover { border-color: rgba(252,211,77,.45); }
+  .seal { position: absolute; top: 15px; right: 15px; width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(252,211,77,.5); display: flex; align-items: center; justify-content: center; font: 600 10px Cinzel, serif; color: #fcd34d; }
+  .num { font: 600 15px Cinzel, serif; letter-spacing: .1em; color: #fcd34d; }
+  .ch h3 { font: 600 17px Cinzel, serif; letter-spacing: .08em; margin: 3px 0 10px; }
+  .ch .txt { font-size: 17px; line-height: 1.55; color: rgba(241,245,249,.88); }
+  .ch .cite { font-style: italic; font-size: 13.5px; color: #6b7488; margin-top: 7px; }
+  .ch .cite b { font-weight: 400; color: #c084fc; }
+  .duel { display: grid; grid-template-columns: 1fr 56px 1fr; align-items: stretch; }
+  .du { border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 18px 21px; background: rgba(255,255,255,.04); transition: all .3s; cursor: pointer; }
+  .duel:hover .du { opacity: .35; }
+  .duel .du:hover { opacity: 1; border-color: rgba(192,132,252,.55); background: rgba(124,77,255,.12); transform: translateY(-3px); }
+  .du .who { font: 600 15px Cinzel, serif; letter-spacing: .12em; }
+  .du .when { font-style: italic; font-size: 14px; color: #6b7488; letter-spacing: 0; }
+  .du .claim { font-size: 17.5px; line-height: 1.55; color: rgba(241,245,249,.9); margin: 8px 0 6px; }
+  .du .cite { font-style: italic; font-size: 13.5px; color: #6b7488; }
+  .scales { display: flex; align-items: center; justify-content: center; }
+  .scales span { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(252,211,77,.5); display: flex; align-items: center; justify-content: center; color: #fcd34d; font-size: 17px; }
+  .strip { display: flex; gap: 12px; }
+  .art { flex: 1; height: 200px; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); position: relative; overflow: hidden; cursor: pointer; }
+  .art img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
+  .art:hover img { transform: scale(1.07); }
+  .art span { position: absolute; inset: auto 0 0 0; background: linear-gradient(transparent, rgba(5,2,15,.92)); padding: 30px 13px 9px; font-style: italic; font-size: 14px; opacity: 0; transition: opacity .4s; }
+  .art:hover span { opacity: 1; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" alt="The Birth of Venus by Botticelli">
+    <div class="veil"></div>
+    <a class="pill" href="#">← GALAXY</a>
+    <span class="credit">after Botticelli, The Birth of Venus, c. 1485</span>
+    <div class="title">
+      <h1>APHRODITE</h1>
+      <div class="sub">Aphroditē (Ἀφροδίτη) · Roman Venus · <em>Olympian</em> · love · beauty · desire · procreation</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sect">HER STORY — IN CHAPTERS · CLICK TO UNFOLD<span class="line"></span></div>
+    <div class="chapters">
+      <div class="ch open">
+        <div class="seal">HES</div>
+        <div class="num">I</div>
+        <h3>BORN OF THE FOAM</h3>
+        <div class="body">
+          <div class="txt">The immortal flesh of Uranus fell into the restless sea, and a white foam gathered around it; within it a goddess grew. She drifted past holy Cythera and rose from the waves at Cyprus, and grass sprang up beneath her slender feet. Eros and Desire attended her from the first.</div>
+          <div class="cite">— Theogony 188–206 · <b>⚖ Homer tells it otherwise</b></div>
+        </div>
+      </div>
+      <div class="ch">
+        <div class="seal">HOM</div>
+        <div class="num">II</div>
+        <h3>THE WOUND AT TROY</h3>
+        <div class="body">
+          <div class="txt">Shielding her son Aeneas on the battlefield, she was pierced at the wrist by Diomedes and fled to Olympus, to be comforted in her mother Dione’s arms — while Zeus smiled, and told her that the works of war were not for her.</div>
+          <div class="cite">— Iliad 5.330–430</div>
+        </div>
+      </div>
+      <div class="ch">
+        <div class="seal">H·O</div>
+        <div class="num">III</div>
+        <h3>THE NET OF BRONZE</h3>
+        <div class="body">
+          <div class="txt">Married to Hephaestus, she loved Ares. Helios, who sees all things, told the smith-god of the affair; Hephaestus forged a net of bronze too fine to see and too strong to break, and snared the lovers in their bed for all the gods to look upon.</div>
+          <div class="cite">— Odyssey 8.266–366; Metamorphoses 4.169–189</div>
+        </div>
+      </div>
+      <div class="ch">
+        <div class="seal">A·O</div>
+        <div class="num">IV</div>
+        <h3>THE UNRULY SON</h3>
+        <div class="body">
+          <div class="txt">Later poets shrink primordial Eros into her winged and unruly boy, the instrument of her will: bribed with a marvellous golden ball to shoot Medea with desire, loosed upon Apollo with the golden arrow, and upon Dis himself — so that even the lord of the dead is drawn into her dominion.</div>
+          <div class="cite">— Argonautica 3.83–159; Metamorphoses 1.452–473, 5.363–384 · <b>⚖ in Hesiod, Eros is older than her</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="sect">THE POETS DISAGREE<span class="line"></span><span class="tag">HER PARENTAGE · 2 TRADITIONS</span></div>
+    <div class="duel">
+      <div class="du">
+        <div class="who" style="color:#c084fc;">HESIOD <span class="when">c. 700 BC</span></div>
+        <div class="claim">Elder than Zeus — born of the sea-foam that gathered about the sundered flesh of Uranus, off the shores of Cythera.</div>
+        <div class="cite">Theogony 188–206 · read under this lens →</div>
+      </div>
+      <div class="scales"><span>⚖</span></div>
+      <div class="du">
+        <div class="who" style="color:#60a5fa;">HOMER <span class="when">c. 8th c. BC</span></div>
+        <div class="claim">No elder power at all — a daughter of Zeus and the goddess Dione, young among the Olympians.</div>
+        <div class="cite">Iliad 5.370 · Apollodorus concurs, Bibliotheca 1.3.1 · read under this lens →</div>
+      </div>
+    </div>
+    <div class="sect">CULTURAL LEGACY — TWENTY-EIGHT CENTURIES OF HER<span class="line"></span></div>
+    <div class="strip">
+      <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" alt="The Birth of Venus"><span>Botticelli — The Birth of Venus, c. 1485</span></div>
+      <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg" alt="Venus de Milo"><span>Alexandros of Antioch — Venus de Milo</span></div>
+      <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg/960px-Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg" alt="Venus of Urbino"><span>Titian — Venus of Urbino, 1534</span></div>
+      <div class="art"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg/960px-Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg" alt="The Birth of Venus by Cabanel"><span>Cabanel — The Birth of Venus, 1863</span></div>
+    </div>
+  </div>
+<script>
+  document.querySelectorAll('.ch').forEach((card) => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.ch').forEach((c) => c.classList.remove('open'));
+      card.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "id": "aether",
+  "name": "Aether",
+  "greekName": "Aithēr (Αἰθήρ)",
+  "romanName": "Aether",
+  "type": "primordial",
+  "domains": ["upper air", "brightness"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "The bright upper air, born when Nyx joined with Erebus — light emerging from the union of Night and Darkness.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 123–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "In Hyginus, Aether is not the child of Night and Erebus but their sibling, born with them from Chaos and Mist.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "From Chaos came Erebus and black Night; Night then conceived by Erebus and bore Aether and Day. Hesiod makes brightness and daylight the first children of the two primeval darknesses.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 123–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Hyginus rearranges the first family. Night, Day, Erebus and Aether all arise together from Chaos and Caligo, or Mist; Aether and Day then become parents of Earth, Heaven and Sea.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–3",
+      "topic": "first-beings-cosmogony"
+    }
+  ]
+}

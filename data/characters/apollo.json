@@ -1,0 +1,45 @@
+{
+  "id": "apollo",
+  "name": "Apollo",
+  "greekName": "Apollōn (Ἀπόλλων)",
+  "romanName": "Phoebus",
+  "type": "olympian",
+  "domains": ["prophecy", "music", "healing", "archery"],
+  "epithets": ["Phoibos", "Pythios", "Loxias"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "God of prophecy, music, healing and the far-shooting bow; son of Zeus and the Titaness Leto, born on Delos beside his twin sister Artemis, and lord of the Delphic oracle after slaying the serpent Python.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hera, raging at Zeus's intrigue, hunted the pregnant Leto over the whole earth until she came to Delos, where she brought forth first Artemis and then, with her newborn daughter as midwife, Apollo. Hyginus knows a second pursuer: the serpent Python, warned by oracle that Leto's child would be its death, chased her until the North Wind bore her away to Poseidon, who hid the isle of Ortygia beneath the waves. There, clinging to an olive tree, she bore the twins — on the island afterward called Delos.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.4.1; Fabulae 53, 140"
+    },
+    {
+      "text": "Only four days out of the cradle, Apollo exacted his mother's revenge: he came to Parnassus and shot Python dead with his arrows. Where the serpent had guarded the chasm at Delphi he took the oracle for his own, becoming the voice of prophecy for the Greek world. In Ovid the monster is a serpent bred from the mud the great flood left behind, brought down under a thousand shafts from a quiver almost emptied; and in its memory the god founded the sacred games called Pythian.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.4.1; Metamorphoses 1.438–451; Fabulae 140"
+    },
+    {
+      "text": "His first love was the work of an arrow. Cupid, mocked by the new-made serpent-slayer for playing at archery, struck Apollo with the gold-tipped shaft that kindles love and the nymph Daphne, daughter of the river Peneus, with the blunt lead that drives it away. She fled and the god pursued, pleading through the wild woods, until her strength failed by her father's waters and she prayed for deliverance; bark closed over her breast, and she became the laurel. Apollo made the tree his own, wreathing his hair, his lyre and his quiver in its evergreen leaves — or, as Hyginus tells it in a breath, Earth received the girl, and Apollo broke off a branch and set it on his head.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 1.452–567; Fabulae 203"
+    },
+    {
+      "text": "At Troy, when Agamemnon dishonored his priest Chryses, Apollo heard the old man's prayer and came down from the peaks of Olympus like the falling of night, the arrows clanging on his shoulders with every angry stride. He loosed first upon the mules and the swift dogs, then turned his piercing shafts on the men themselves, and for nine days the missiles of the god ranged through the Greek host while the pyres of the dead burned thick and fast.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.43–53"
+    },
+    {
+      "text": "When his son Asclepius grew so great in the healing art that he raised the dead, Zeus struck the physician down with a thunderbolt. In revenge Apollo slew the Cyclopes who had fashioned the thunderbolt for Zeus. For this Zeus would have hurled him into Tartarus, but at Leto's intercession he sentenced the god instead to serve a mortal man for a year, and Apollo went as a herdsman to Admetus son of Pheres at Pherae.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4",
+      "topic": "cyclopes-nature"
+    }
+  ]
+}

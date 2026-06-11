@@ -4,8 +4,8 @@
   "greekName": "Aphroditē (Ἀφροδίτη)",
   "romanName": "Venus",
   "type": "olympian",
-  "domains": ["love", "beauty", "desire"],
-  "epithets": ["Kypris", "Cytherea", "Philommeides"],
+  "domains": ["love", "beauty", "desire", "procreation"],
+  "epithets": ["Kypris", "Kythereia", "Philommeides", "Ourania"],
   "cluster": "olympian-band",
   "summary": [
     {
@@ -17,7 +17,7 @@
     {
       "text": "Goddess of love, beauty and desire, daughter of Zeus and the goddess Dione.",
       "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 5.370; Bibliotheca 1.3.1",
+      "citation": "Iliad 5.370–417; Bibliotheca 1.3.1",
       "topic": "aphrodite-parentage"
     }
   ],
@@ -38,6 +38,33 @@
       "text": "Though married to Hephaestus, she loved Ares. Helios, who sees all things, told the smith-god of the affair; Hephaestus forged a net of bronze too fine to see and too strong to break, and snared the lovers in their bed for all the gods to look upon.",
       "sources": ["homer", "ovid"],
       "citation": "Odyssey 8.266–366; Metamorphoses 4.169–189"
+    },
+    {
+      "text": "In the oldest account, Eros is no child of hers. Hesiod numbers him among the very first beings of the cosmos, arisen alongside Chaos, Gaia and Tartarus, fairest of the deathless gods — already ancient when Aphrodite rose from the foam, when he and comely Desire simply fell in beside her as she walked into the assembly of the gods.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122, 201–202",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "Later poets shrink that elder power into her unruly little son and the instrument of her will. In Apollonius she bribes the boy with a marvellous golden ball to shoot Medea with desire for Jason; in Ovid, Cupid pierces Apollo with the golden arrow, and at his mother's urging strikes Dis himself, so that even the lord of the dead is drawn into her dominion.",
+      "sources": ["apollonius", "ovid"],
+      "citation": "Argonautica 3.83–159; Metamorphoses 1.452–473, 5.363–384",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "When Eris, goddess of discord, threw the golden apple inscribed 'To the Fairest' among the guests at the wedding of Peleus and Thetis, Hera, Athena, and Aphrodite all laid claim to it. Zeus appointed the Trojan prince Paris to judge them. Aphrodite won the prize by promising him the love of Helen of Sparta, the most beautiful woman in the world, setting in motion the devastating Trojan War.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca Epitome 3.2; Fabulae 92"
+    },
+    {
+      "text": "She fell deeply in love with the mortal hunter Adonis, a youth of unparalleled beauty. When Adonis was killed by a wild boar—sent, by some accounts, by a jealous Ares or Artemis—Aphrodite rushed to his side. Where her tears and his blood fell upon the earth, anemones and red roses sprang up, and she decreed a festival of mourning to be held each year in his memory.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 10.519–739; Bibliotheca 3.14.4"
+    },
+    {
+      "text": "Zeus, tired of Aphrodite's boasting that she had made all the gods fall in love with mortals, cast a spell upon her to make her desire the Trojan shepherd Anchises. She came to him on Mount Ida disguised as a Phrygian princess. From their union was born the hero Aeneas, who would survive the fall of Troy and journey to Italy.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Bibliotheca 3.12.2; Theogony 1008-1010"
     }
   ]
 }

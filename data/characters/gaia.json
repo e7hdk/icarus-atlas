@@ -1,0 +1,55 @@
+{
+  "id": "gaia",
+  "name": "Gaia",
+  "greekName": "Gaia (Γαῖα)",
+  "romanName": "Terra",
+  "type": "primordial",
+  "domains": ["the earth", "motherhood", "prophecy", "oaths"],
+  "epithets": ["Ge", "Pammeter", "Kourotrophos"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "Primordial goddess of the earth and mother of all, who came to be just after Chaos — before any of the gods — and alone, without union of love, bore the starry sky, the long hills and the barren sea from her own body.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–132",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Primordial goddess of the earth and mother of all — though in Ovid's telling the earth was never born: in the beginning all nature was a single shapeless, disordered mass, until a god and kinder nature separated it into sky, sea and land.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.5–32",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all Chaos came to be; and next wide-bosomed Gaia, the ever-sure foundation of all the deathless ones who hold the peaks of snowy Olympus; and dim Tartarus in the depths; and Eros, fairest among the deathless gods, who unnerves the limbs and overcomes the mind. So Hesiod opens the world: Earth stands among the first four beings, unbegotten, with Love arising beside her in the same first moment — older than every god who would ever walk upon her.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–122",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "Later poets remember no Eros as old as the Earth. In Apollonius he is Aphrodite's unruly little boy, bribed with a golden ball to shoot Medea with desire for Jason; in Ovid he is Venus' winged son Cupid, pricking Apollo with the golden arrow and striking Dis at his mother's command. The power that once arose beside Gaia at the beginning of all things has dwindled into a child running his mother's errands.",
+      "sources": ["apollonius", "ovid"],
+      "citation": "Argonautica 3.83–159; Metamorphoses 1.452–473, 5.363–384",
+      "topic": "eros-origin"
+    },
+    {
+      "text": "She lay with Uranus, the sky she herself had borne, and became mother of the Titans — Oceanus, Cronus and their kin. But their father loathed his children and thrust them out of the light, into the depths beneath her, and Gaia, groaning under the weight, forged a great sickle of grey adamant and asked her sons which of them dared to use it. Only crooked-counselled Cronus answered. From ambush he unmanned his father with the jagged blade, and the blood that fell upon Gaia quickened within her: she bore the avenging Erinyes — and, in Hesiod's telling, the spear-bearing Giants and the ash-tree nymphs besides. Nor was her last and most terrible child yet born: when the new gods had cast her older brood down in their turn, Gaia lay with Tartarus and brought forth Typhon, the hundred-headed storm with fire flashing from his eyes, whom Zeus could master only with the thunderbolt.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 133–187, 820–868; Bibliotheca 1.1.1–1.1.4, 1.6.3"
+    },
+    {
+      "text": "Among the children she bore to Uranus, Hesiod counts the three Cyclopes — Brontes, Steropes and bright-hearted Arges — like the gods in all else but for the single orb-eye set in the middle of their foreheads. When Zeus loosed them from their bonds, they repaid him with thunder, lightning and the thunderbolt itself: the very weapons of his reign, forged by sons of Earth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 139–146, 501–506",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Homer's Cyclopes are another breed altogether — no craftsmen sons of Earth, but a whole race of lawless, cave-dwelling shepherds who plant nothing, hold no assemblies, build no ships, and each lay down the law for his own wives and children. The greatest among them, Polyphemus, is no child of Gaia at all but a son of Poseidon.",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.105–115, 9.125–129, 1.68–73",
+      "topic": "cyclopes-nature"
+    }
+  ]
+}

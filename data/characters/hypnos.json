@@ -1,0 +1,45 @@
+{
+  "id": "hypnos",
+  "name": "Hypnos",
+  "greekName": "Hypnos (Ὕπνος)",
+  "romanName": "Somnus",
+  "type": "god",
+  "domains": ["sleep", "rest", "divine slumber"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Sleep personified, a kindly fatherless son of Nyx who dwells beside his iron-hearted brother Thanatos.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213, 758–766"
+    },
+    {
+      "text": "The god who can close even Zeus' eyes, protected from the king's anger by the ancient authority of Night.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.230–291"
+    },
+    {
+      "text": "Sleep personified, born from Night and Erebus in Hyginus' genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nyx bore Hypnos without a father, and he dwells beside Thanatos in the deep places where the Sun never looks. Unlike Death, whose heart is iron, Sleep is described by Hesiod as quiet and kindly to mortals.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213, 758–766"
+    },
+    {
+      "text": "Hera found Hypnos on Lemnos and asked him to close the eyes of Zeus. He feared the king's anger, remembering how Zeus had once hunted him through heaven, but Night sheltered him and Zeus held back out of awe for her. Won over by Hera's promise of Pasithea as his wife, Hypnos hid in a fir tree and poured sleep over Zeus.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.230–291"
+    },
+    {
+      "text": "Hyginus makes Somnus a child of Night and Erebus together, replacing Hesiod's fatherless birth with a union of the two darknesses.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ]
+}

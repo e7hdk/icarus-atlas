@@ -42,6 +42,29 @@ export const sourceSchema = z.object({
   description: z.string().min(1),
 });
 
+export const artworkSchema = z.object({
+  title: z.string().min(1),
+  artist: z.string().min(1),
+  year: z.string().min(1),
+  imageUrl: z.string().url(),
+});
+
+export const cultureSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  artworks: z.array(artworkSchema),
+});
+
+export const referenceSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  summary: z.string().min(1),
+  attribution: z.string().min(1),
+  symbols: z.array(z.string().min(1)).optional(),
+  sacredAnimals: z.array(z.string().min(1)).optional(),
+  cultCenters: z.array(z.string().min(1)).optional(),
+  etymology: z.string().optional(),
+  externalLinks: z.array(z.object({ label: z.string().min(1), url: z.string().url() })).optional(),
+});
+
 export type CharacterInput = z.infer<typeof characterSchema>;
 export type RelationInput = z.infer<typeof relationSchema>;
 export type SourceInput = z.infer<typeof sourceSchema>;

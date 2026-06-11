@@ -1,0 +1,54 @@
+{
+  "id": "hephaestus",
+  "name": "Hephaestus",
+  "greekName": "Hephaistos (Ἥφαιστος)",
+  "romanName": "Vulcan",
+  "type": "olympian",
+  "domains": ["fire", "metalworking", "craftsmanship", "volcanoes"],
+  "epithets": ["Amphigyeeis", "Kyllopodion", "Klytotechnes"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Lame god of fire, the forge and every fine craft, whom Hera bore entirely on her own, without union with any father, in angry rivalry with Zeus after he produced Athena from his head.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 927–929; Bibliotheca 1.3.5",
+      "topic": "hephaestus-conception"
+    },
+    {
+      "text": "Lame god of fire, the forge and every fine craft, son of both Zeus and Hera — he speaks of Zeus as his father, and Hera names the bedchamber he built the work of Zeus' own son.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.577–579, 14.338–339; Odyssey 8.312",
+      "topic": "hephaestus-conception"
+    }
+  ],
+  "story": [
+    {
+      "text": "By his own telling, it was his mother who cast him out: Hera, wishing to hide her child for his lameness, flung Hephaestus from heaven. Thetis and Eurynome received him into their bosom in the encircling sea, and in their hollow cave he worked for nine years, forging brooches and spiral arm-bands, rosettes and necklaces, while the streams of Ocean murmured past and no other god or mortal knew where he was.",
+      "sources": ["homer"],
+      "citation": "Iliad 18.394–405",
+      "topic": "hephaestus-fall-from-olympus"
+    },
+    {
+      "text": "Yet the Iliad also remembers another fall. When Hephaestus took Hera's side, Zeus seized him by the foot and hurled him from the divine threshold; he fell the whole day long and dropped at sunset on Lemnos with little life left in him, and the Sintian men tended him there. Apollodorus follows this version — Zeus cast him out of heaven for coming to the rescue of Hera in her bonds — and adds that it was the crash-landing on Lemnos that lamed his legs.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 1.590–594; Bibliotheca 1.3.5",
+      "topic": "hephaestus-fall-from-olympus"
+    },
+    {
+      "text": "Apollodorus also gives him the midwife's part at the strangest of births: when the time came for Zeus to be delivered of Athena, it was Hephaestus — or, as others say, Prometheus — who smote the head of Zeus with an axe, and the goddess sprang up from his crown, fully armed.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.6",
+      "topic": "athena-parentage"
+    },
+    {
+      "text": "His forge furnished both Olympus and the world of men. As the price of stolen fire, the famous Lame One moulded earth into the likeness of a modest maiden — the first woman, Pandora, whom Zeus had bidden him mix from earth and water; Hyginus tells the same of Vulcan, shaping her form from clay at Jove's command. And when Thetis came begging arms for her doomed son, he set his bellows to the fire and wrought the shield of Achilles, working into it the earth, the sky and the sea, the untiring sun and the waxing moon, and two cities of mortal men, one at peace and one at war.",
+      "sources": ["hesiod", "hyginus", "homer"],
+      "citation": "Theogony 570–584; Works and Days 60–71; Fabulae 142; Iliad 18.468–617"
+    },
+    {
+      "text": "His marriages shift with the teller: in the Iliad his wife is Charis of the gleaming veil, in Hesiod she is Aglaia, youngest of the Graces, but in the song of Demodocus he is husband to Aphrodite herself. When Helios brought word that she loved Ares, Hephaestus forged bonds too fine to see and too strong to break, spread them over his own bed, and snared the lovers fast — then called the gods to the doorway to look, turning his shame into unquenchable laughter at the pair.",
+      "sources": ["homer", "hesiod", "ovid"],
+      "citation": "Iliad 18.382–383; Theogony 945–946; Odyssey 8.266–366; Metamorphoses 4.169–189"
+    }
+  ]
+}

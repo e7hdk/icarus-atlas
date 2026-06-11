@@ -1,0 +1,55 @@
+{
+  "id": "nyx",
+  "name": "Nyx",
+  "greekName": "Nyx (Νύξ)",
+  "romanName": "Nox",
+  "type": "primordial",
+  "domains": ["night", "darkness"],
+  "epithets": ["Melaina"],
+  "cluster": "core",
+  "summary": [
+    {
+      "text": "Primordial goddess of night, born of Chaos at the very beginning of things alongside her brother Erebus, and mother of a dark brood that includes Sleep, Death and the Fates.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Primordial goddess of night (Nox), born of Chaos and Caligo (Mist) together with Day, Erebus and Aether — for in this account even Chaos itself has a parent.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "First of all Chaos came to be, and nothing was before it. From Chaos came forth Erebus and black Night; and of Night in turn were born Aether and Day, whom she conceived and bore from union in love with Erebus. Night is thus among the eldest things in existence — child of the first yawning gap itself, older than the Olympian gods, and mother of the bright upper air and the daylight that answers her own darkness.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 116–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Hyginus' Latin handbook rewires the genealogy at its root: there even Chaos has a parent, being born from Caligo — Mist — and from Chaos and Caligo together come Night, Day, Erebus and Aether. Night is no longer the daughter of the first being alone but the grandchild of a dimness older still, and Aether and Day, her children in Hesiod, stand here as her brother and sister.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Then Night bore hateful Doom and black Fate and Death, and Sleep and the tribe of Dreams; and again, though she lay with none, the murky goddess bore Blame and painful Woe, the Hesperides who guard the golden apples beyond glorious Ocean, and the Moirai — Clotho, Lachesis and Atropos, who give men at their birth both evil and good to have. She bore Nemesis too, an affliction to mortal men, and after her Deceit and Friendship, hateful Old Age and hard-hearted Strife. In this account the Fates are fatherless daughters of Night, dark powers standing wholly outside the order of Zeus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–225",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Yet the tradition could not agree on the Fates' parents — Hesiod least of all, for later in the same poem he makes the Moirai daughters of Zeus and Themis and sisters of the Horae, \"to whom wise Zeus gave the greatest honor.\" Apollodorus follows this second genealogy, listing Clotho, Lachesis and Atropus among the children Themis bore to Zeus, while Hyginus restores the Parcae to Night but gives her Erebus as their father. The stakes are real: Night-born Fates stand apart from Zeus's regime, while Zeus-fathered Fates are instruments of it.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 901–906; Bibliotheca 1.3.1; Fabulae, preface (Theogony) 1",
+      "topic": "moirai-parentage"
+    },
+    {
+      "text": "Homer shows Night's dread seniority in a single telling moment. Hypnos recalls how he once lulled Zeus to sleep at Hera's bidding so that she could harry Heracles over the sea, and how the king of gods woke in fury, flinging the immortals about his palace and hunting for Sleep above all. Zeus would have hurled him from heaven into the deep, never to be seen again, had Hypnos not fled to Night, the subduer of gods and men. There Zeus checked himself, angry as he was — for he stood in awe of doing anything displeasing to swift Night.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.249–261"
+    }
+  ]
+}

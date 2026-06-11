@@ -1,0 +1,22 @@
+{
+  "id": "moros",
+  "name": "Moros",
+  "greekName": "Moros (Μόρος)",
+  "type": "god",
+  "domains": ["doom", "destined death"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "The personification of doom, born fatherless from Nyx among the first dark powers that shape mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213"
+    }
+  ],
+  "story": [
+    {
+      "text": "Night bore hateful Moros before black Ker, Thanatos and Hypnos. Hesiod gives him no father and no adventure: his place at the head of Night's catalogue is his identity, the doom allotted before death arrives.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213"
+    }
+  ]
+}

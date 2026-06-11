@@ -1,0 +1,37 @@
+{
+  "id": "hemera",
+  "name": "Hemera",
+  "greekName": "Hēmera (Ἡμέρα)",
+  "romanName": "Dies",
+  "type": "primordial",
+  "domains": ["day", "daylight"],
+  "cluster": "night-court",
+  "summary": [
+    {
+      "text": "Day personified, daughter of Nyx and Erebus and the shining counterpart to her mother Night.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 123–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Hyginus instead places Day in the same first brood as Night, Erebus and Aether, all children of Chaos and Mist.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–2",
+      "topic": "first-beings-cosmogony"
+    }
+  ],
+  "story": [
+    {
+      "text": "Night conceived by Erebus and bore Aether and Hemera. In Hesiod's first genealogy, daylight is born directly from darkness, paired with the bright upper air.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 123–125",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "In the Latin genealogy of Hyginus, Dies is sister rather than daughter to Nox and Erebus. Born from Chaos and Caligo beside Aether, she later joins with Aether to produce Earth, Heaven and Sea.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1–3",
+      "topic": "first-beings-cosmogony"
+    }
+  ]
+}

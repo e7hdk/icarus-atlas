@@ -1,0 +1,52 @@
+{
+  "id": "oceanus",
+  "name": "Oceanus",
+  "greekName": "Okeanos (Ὠκεανός)",
+  "romanName": "Oceanus",
+  "type": "titan",
+  "domains": ["the earth-encircling river", "fresh water", "the sources of all streams"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Eldest of the Titans, the deep-eddying river that rings the flat earth, who by his sister-wife Tethys fathered the three thousand rivers and three thousand Oceanid nymphs that feed every spring and well.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 133–138, 337–370",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "The world-encircling river and 'genesis of the gods', who with mother Tethys stands at the very origin of things — no mere Titan son, but the primeval source from whom all are sprung.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.200–207, 244–246",
+      "topic": "oceanus-cosmic-rank"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Gaia lay with starry Uranus, the first of their children was deep-swirling Oceanus, eldest of the Titans, born before Coeus and Crius, Hyperion and Iapetus, and long before wily Cronus, youngest and most terrible of the brood. He is no god in man's shape lounging on a mountaintop but a river — the great fresh-water stream that runs in a circle at the rim of the flat earth, where the sun bathes and the stars go down.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 133–138",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "Homer tells it otherwise. In the Iliad, Hera journeys to the limits of the all-nourishing earth to visit 'Oceanus, from whom the gods are sprung, and mother Tethys', the pair who nursed and cherished her in their halls while Zeus warred on Cronus. Sleep himself swears he could lull any other of the everlasting gods, 'even the streams of the river Oceanus, from whom they all are sprung' — making the old river not a son of the sky at all, but the wellspring of the gods themselves.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.200–207, 244–246",
+      "topic": "oceanus-cosmic-rank"
+    },
+    {
+      "text": "With Tethys he peopled the world with water. She bore him the eddying rivers — Nile and Alpheus, Eridanus and Scamander and all their brothers — and a holy company of daughters, the Oceanids, among them Styx, Doris, Electra and Metis. Three thousand neat-ankled daughters of Ocean are scattered over earth and sea, and as many babbling rivers are his sons; for from him, as Achilles knew, flow all rivers and every sea, all springs and deep wells — yet even mighty Oceanus dreads the lightning of great Zeus.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 337–370; Iliad 21.193–199; Bibliotheca 1.2.2"
+    },
+    {
+      "text": "He was a pacifist among Titans. When Gaia, groaning under Uranus' cruelty, called on her sons for vengeance, the Titans set upon their father — all but Ocean, who alone held back while Cronus reaped Uranus with the sickle and flung the severed flesh into the sea.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.4"
+    },
+    {
+      "text": "He sat out the great war as well, and tipped the scales without lifting a hand: when Zeus summoned the gods to Olympus against the Titans, it was through the counsels of her dear father that Styx came first of all with her children Zelus, Nike, Cratos and Bia, and Zeus honored her exceedingly, making her water the great oath of the gods. That water is Oceanus' own: with nine silver-swirling streams he winds about the earth and the sea's wide back, and the tenth portion flows out from a high rock as Styx — so that whenever an immortal swears, it is by a branch of the old encircling river.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 383–403, 775–792"
+    }
+  ]
+}

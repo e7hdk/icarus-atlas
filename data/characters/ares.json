@@ -1,0 +1,44 @@
+{
+  "id": "ares",
+  "name": "Ares",
+  "greekName": "Arēs (Ἄρης)",
+  "romanName": "Mars",
+  "type": "olympian",
+  "domains": ["war", "bloodlust", "carnage"],
+  "epithets": ["Enyalios", "Brotoloigos", "Chalkeos"],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "God of war in its rawest aspect — slaughter and the roar of battle — son of Zeus and Hera, feared by mortals and unloved even on Olympus, yet beloved of Aphrodite.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 921–923; Iliad 5.889–898"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hera, joined in love with Zeus as his last and lasting wife, bore him Hebe, Eileithyia and Ares. Yet no child of Olympus was less welcome at his father's knee: when Ares came whining to Zeus, the king of the gods called him the most hateful of all gods who hold Olympus, a creature of strife, wars and fighting, with all his mother Hera's unbearable, unyielding spirit. Ovid, in his Fasti, preserves a Roman variant of the god's conception: Juno, stung that Jupiter had brought forth Minerva without her, was touched by a magic flower from Flora's garden and conceived Mars with no father at all.",
+      "sources": ["hesiod", "homer", "ovid"],
+      "citation": "Theogony 921–923; Iliad 5.889–898; Fasti 5.229–258"
+    },
+    {
+      "text": "For all his strength, the war god could be overpowered. Otus and mighty Ephialtes, the giant sons of Aloeus, bound him in cruel bonds and shut him in a bronze jar, where he lay for thirteen months. Ares, insatiate of war, would have perished there had not the giants' stepmother Eëriboea brought word to Hermes, who stole the failing god away by stealth.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 5.385–391; Bibliotheca 1.7.4"
+    },
+    {
+      "text": "At Troy he fought on the Trojan side, and the battlefield humbled him twice. Diomedes, with Pallas Athena guiding his spear, drove the bronze into the god's belly; Ares bellowed as loud as nine or ten thousand warriors crying in battle, and fled wrapped in storm-cloud to Olympus to show Zeus his immortal blood. Later, in the battle of the gods, Athena felled him with a great jagged boundary stone to the neck, and he stretched over seven roods in his fall, fouling his hair with dust.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.846–909, 21.391–414"
+    },
+    {
+      "text": "What Olympus would not give him in honor, Aphrodite gave in love. The lovers met in secret in Hephaestus' own house until Helios, who sees all things, told the smith-god; Hephaestus forged a net too fine to see and too strong to break, snared the pair in bed and called the gods to look upon them. Hesiod names the fruit of their union: Phobos and Deimos, Panic and Fear, terrible gods who drive men's ranks into disorder, and Harmonia, whom high-spirited Cadmus took to wife.",
+      "sources": ["homer", "ovid", "hesiod"],
+      "citation": "Odyssey 8.266–366; Metamorphoses 4.169–189; Theogony 933–937"
+    },
+    {
+      "text": "He could be a father's avenger too. When Halirrhothius, son of Poseidon and the nymph Euryte, violated Alcippe, Ares' daughter by Aglaurus, Ares caught him in the act and killed him. Poseidon impeached him for the blood, and Ares was tried before the twelve gods on a bare hill at Athens and acquitted — the first trial ever held there, says Pausanias, which is why the Athenians call it the Areopagus, the Hill of Ares, to this day.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.14.2; Description of Greece 1.21.4, 1.28.5"
+    }
+  ]
+}
