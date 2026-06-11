@@ -1,4 +1,17 @@
 {
   "id": "nemesis",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Nemesis",
+      "artist": "Alfred Rethel",
+      "year": "1837",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alfred_Rethel_-_Nemesis_%281837%29.jpg"
+    },
+    {
+      "title": "Nemesis (The Great Fortune)",
+      "artist": "Albrecht Dürer",
+      "year": "c. 1502",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Albrecht_D%C3%BCrer%2C_Nemesis_%28The_Great_Fortune%29%2C_c._1501-1502%2C_NGA_6603.jpg/960px-Albrecht_D%C3%BCrer%2C_Nemesis_%28The_Great_Fortune%29%2C_c._1501-1502%2C_NGA_6603.jpg"
+    }
+  ]
 }

@@ -1,86 +1,103 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+/** Maintenance utility for the reference/culture data layer.
+ *
+ *  Usage:
+ *    pnpm tsx scripts/fetch-cultural-legacy.ts summaries   # refresh data/reference summaries from Wikipedia
+ *    pnpm tsx scripts/fetch-cultural-legacy.ts check       # verify every culture imageUrl still resolves
+ *
+ *  Method notes (learned the hard way):
+ *  - NEVER hand-build Wikimedia thumb URLs — only certain widths exist and the rest return 400.
+ *    Always resolve through the APIs (REST summary, prop=pageimages, prop=imageinfo&iiurlwidth).
+ *  - Always send a User-Agent and pace requests (~500ms); bursts get rate-limited with 429.
+ *  - Artwork curation itself stays manual: a search hit on an artist's page returns their portrait,
+ *    not the painting. Every new gallery entry must be audited by filename before it ships.
+ */
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CHARACTERS_DIR = path.join(__dirname, '../data/characters');
-const CULTURE_DIR = path.join(__dirname, '../data/culture');
+import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 
-async function fetchWikipediaSummary(title: string) {
-  try {
-    const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`);
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data.extract;
-  } catch (e) {
-    return null;
-  }
-}
+const DATA_DIR = join(import.meta.dirname, '..', 'data');
+const UA = { 'User-Agent': 'IcarusAtlas/0.1 (data maintenance; low volume)' };
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// A simple map to handle Wikipedia page titles that differ from the character name
-const WIKI_TITLE_MAP: Record<string, string> = {
-  'aphrodite': 'Aphrodite',
-  'apollo': 'Apollo',
-  'ares': 'Ares',
-  'artemis': 'Artemis',
-  'athena': 'Athena',
-  'zeus': 'Zeus',
-  'hades': 'Hades',
-  'poseidon': 'Poseidon',
-  'hera': 'Hera',
-  'demeter': 'Demeter',
-  'hestia': 'Hestia',
-  'hermes': 'Hermes',
-  'hephaestus': 'Hephaestus',
-  'dionysus': 'Dionysus',
-  // Add more as needed, others will use the capitalized ID
+/** Wikipedia page per character id, disambiguated where the plain title is a planet, moon or dwarf planet. */
+const WIKI_TITLES: Record<string, string> = {
+  chaos: 'Chaos (cosmogony)', uranus: 'Uranus (mythology)', rhea: 'Rhea (mythology)',
+  tethys: 'Tethys (mythology)', iapetus: 'Iapetus (mythology)', atlas: 'Atlas (mythology)',
+  aether: 'Aether (mythology)', nemesis: 'Nemesis (mythology)', eris: 'Eris (mythology)',
 };
 
-async function main() {
-  await fs.mkdir(CULTURE_DIR, { recursive: true });
-  const files = await fs.readdir(CHARACTERS_DIR);
-  
-  for (const file of files) {
-    if (!file.endsWith('.json')) continue;
-    const id = file.replace('.json', '');
-    const title = WIKI_TITLE_MAP[id] || id.charAt(0).toUpperCase() + id.slice(1);
-    
-    console.log(`Fetching data for ${id} (Wiki: ${title})...`);
-    
-    const summary = await fetchWikipediaSummary(title);
-    
-    // Mocking artwork for now to establish the UI structure
-    // A real implementation would use Wikidata SPARQL: ?artwork wdt:P921 wd:[CharacterEntityID]
-    const artworks = [
-      {
-        title: `Birth of ${title}`,
-        artist: 'Renaissance Master',
-        year: '1500s',
-        imageUrl: `https://picsum.photos/seed/${id}1/800/600`
-      },
-      {
-        title: `${title} Triumphant`,
-        artist: 'Classical Sculptor',
-        year: '2nd Century BC',
-        imageUrl: `https://picsum.photos/seed/${id}2/600/800`
+async function fetchRetry(url: string): Promise<Response | null> {
+  for (let attempt = 0; attempt < 5; attempt++) {
+    try {
+      const res = await fetch(url, { headers: UA });
+      if (res.ok) return res;
+      if (res.status === 429 || res.status >= 500) {
+        await sleep(2500 * (attempt + 1));
+        continue;
       }
-    ];
-
-    const cultureData = {
-      id,
-      wikipediaSummary: summary || `${title} is a prominent figure in Greek mythology.`,
-      artworks
-    };
-
-    await fs.writeFile(
-      path.join(CULTURE_DIR, file),
-      JSON.stringify(cultureData, null, 2)
-    );
-    // Add small delay to respect rate limits
-    await new Promise((r) => setTimeout(r, 100));
+      return res;
+    } catch {
+      await sleep(2000 * (attempt + 1));
+    }
   }
-  
-  console.log('Finished fetching cultural legacy data.');
+  return null;
 }
 
-main().catch(console.error);
+function characterIds(): string[] {
+  return readdirSync(join(DATA_DIR, 'reference'))
+    .filter((file) => file.endsWith('.json'))
+    .map((file) => file.replace(/\.json$/, ''));
+}
+
+async function refreshSummaries() {
+  let updated = 0;
+  const misses: string[] = [];
+  for (const id of characterIds()) {
+    const title = WIKI_TITLES[id] ?? id.charAt(0).toUpperCase() + id.slice(1);
+    const res = await fetchRetry(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`);
+    await sleep(500);
+    if (!res || !res.ok) {
+      misses.push(`${id} (${title})`);
+      continue;
+    }
+    const json = await res.json();
+    if (json.type === 'disambiguation' || !json.extract || json.extract.length < 60) {
+      misses.push(`${id} (${title}): unusable extract`);
+      continue;
+    }
+    const file = join(DATA_DIR, 'reference', `${id}.json`);
+    const ref = JSON.parse(readFileSync(file, 'utf-8'));
+    if (ref.summary !== json.extract) {
+      ref.summary = json.extract;
+      writeFileSync(file, JSON.stringify(ref, null, 2) + '\n');
+      updated++;
+    }
+  }
+  console.log(`Summaries refreshed: ${updated} updated, ${misses.length} misses`);
+  for (const miss of misses) console.log(`  ✗ ${miss}`);
+}
+
+async function checkGalleries() {
+  const broken: string[] = [];
+  let checked = 0;
+  for (const id of characterIds()) {
+    const culture = JSON.parse(readFileSync(join(DATA_DIR, 'culture', `${id}.json`), 'utf-8'));
+    for (const artwork of culture.artworks ?? []) {
+      const res = await fetchRetry(artwork.imageUrl);
+      await sleep(500);
+      checked++;
+      if (!res || !res.ok) broken.push(`${id}: "${artwork.title}" → ${artwork.imageUrl}`);
+    }
+  }
+  console.log(`Gallery URLs checked: ${checked}, broken: ${broken.length}`);
+  for (const url of broken) console.log(`  ✗ ${url}`);
+  if (broken.length > 0) process.exit(1);
+}
+
+const mode = process.argv[2];
+if (mode === 'summaries') await refreshSummaries();
+else if (mode === 'check') await checkGalleries();
+else {
+  console.log('Usage: tsx scripts/fetch-cultural-legacy.ts <summaries|check>');
+  process.exit(1);
+}

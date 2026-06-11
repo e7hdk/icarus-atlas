@@ -1,4 +1,17 @@
 {
   "id": "gaia",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Gaea",
+      "artist": "Anselm Feuerbach",
+      "year": "1875",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Feuerbach_Gaea.jpg"
+    },
+    {
+      "title": "Tellus in the Aion Mosaic",
+      "artist": "Unknown (Roman)",
+      "year": "c. 250 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aion_mosaic_Glyptothek_Munich_W504.jpg/960px-Aion_mosaic_Glyptothek_Munich_W504.jpg"
+    }
+  ]
 }

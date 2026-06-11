@@ -1,4 +1,17 @@
 {
   "id": "atlas",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "The Farnese Atlas",
+      "artist": "Roman copy after a Hellenistic original",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Atlas_%28Farnese_Globe%29.jpg/960px-Atlas_%28Farnese_Globe%29.jpg"
+    },
+    {
+      "title": "Atlas",
+      "artist": "Lee Lawrie",
+      "year": "1937",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/New_York_City%2C_May_2014_-_033.JPG/960px-New_York_City%2C_May_2014_-_033.JPG"
+    }
+  ]
 }

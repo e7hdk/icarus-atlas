@@ -1,4 +1,17 @@
 {
   "id": "nyx",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "La Nuit (Night)",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1883",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/William-Adolphe_Bouguereau_%281825-1905%29_-_La_Nuit_%281883%29.jpg/960px-William-Adolphe_Bouguereau_%281825-1905%29_-_La_Nuit_%281883%29.jpg"
+    },
+    {
+      "title": "Night and Sleep",
+      "artist": "Evelyn De Morgan",
+      "year": "1878",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Night_and_Sleep_-_Evelyn_de_Morgan_%281878%29.jpg/960px-Night_and_Sleep_-_Evelyn_de_Morgan_%281878%29.jpg"
+    }
+  ]
 }

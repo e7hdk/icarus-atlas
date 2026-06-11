@@ -1,4 +1,17 @@
 {
   "id": "oceanus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Oceanus of the Trevi Fountain",
+      "artist": "Pietro Bracci",
+      "year": "1762",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/960px-Trevi_Fountain_-_Roma.jpg"
+    },
+    {
+      "title": "Oceanus and Tethys (Zeugma mosaic)",
+      "artist": "Unknown",
+      "year": "2nd–3rd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_Oceanus_and_Tethys_Mosaic.jpg/960px-The_Oceanus_and_Tethys_Mosaic.jpg"
+    }
+  ]
 }

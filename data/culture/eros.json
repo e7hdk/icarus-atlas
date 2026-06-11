@@ -1,4 +1,23 @@
 {
   "id": "eros",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Psyche Revived by Cupid's Kiss",
+      "artist": "Antonio Canova",
+      "year": "1787–1793",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/0_Psych%C3%A9_ranim%C3%A9e_par_le_baiser_de_l%27Amour_-_Canova_-_Louvre_1.JPG/960px-0_Psych%C3%A9_ranim%C3%A9e_par_le_baiser_de_l%27Amour_-_Canova_-_Louvre_1.JPG"
+    },
+    {
+      "title": "The Farnese Eros",
+      "artist": "Roman copy after a Greek original",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ancient_sculpture_known_as_the_Eros_Farnese.jpg/960px-Ancient_sculpture_known_as_the_Eros_Farnese.jpg"
+    },
+    {
+      "title": "Amor Vincit Omnia",
+      "artist": "Caravaggio",
+      "year": "1601–1602",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Caravaggio_-_Amor_Vincit_Omnia%2C_1602-03.jpg/960px-Caravaggio_-_Amor_Vincit_Omnia%2C_1602-03.jpg"
+    }
+  ]
 }

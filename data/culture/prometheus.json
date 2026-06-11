@@ -1,4 +1,23 @@
 {
   "id": "prometheus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Prometheus Bound",
+      "artist": "Peter Paul Rubens",
+      "year": "1611–1618",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Peter_Paul_Rubens%2C_Flemish_%28active_Italy%2C_Antwerp%2C_and_England%29_-_Prometheus_Bound_-_Google_Art_Project.jpg/960px-Peter_Paul_Rubens%2C_Flemish_%28active_Italy%2C_Antwerp%2C_and_England%29_-_Prometheus_Bound_-_Google_Art_Project.jpg"
+    },
+    {
+      "title": "Prometheus",
+      "artist": "Paul Manship",
+      "year": "1934",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rockefeller_Center_Prometheus.jpg/960px-Rockefeller_Center_Prometheus.jpg"
+    },
+    {
+      "title": "Prometheus Brings Fire to Mankind",
+      "artist": "Heinrich Füger",
+      "year": "1817",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg/960px-Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg"
+    }
+  ]
 }

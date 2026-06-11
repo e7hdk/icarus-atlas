@@ -1,4 +1,23 @@
 {
   "id": "cronus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Saturn Devouring His Son",
+      "artist": "Francisco Goya",
+      "year": "1819–1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg"
+    },
+    {
+      "title": "Saturn Devouring His Son",
+      "artist": "Peter Paul Rubens",
+      "year": "1636",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Rubens_saturn.jpg/960px-Rubens_saturn.jpg"
+    },
+    {
+      "title": "The Mutilation of Uranus by Saturn",
+      "artist": "Giorgio Vasari & Cristofano Gherardi",
+      "year": "c. 1560",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/The_Mutilation_of_Uranus_by_Saturn.jpg/960px-The_Mutilation_of_Uranus_by_Saturn.jpg"
+    }
+  ]
 }

@@ -13,6 +13,7 @@ const CLUSTERS: Record<
   'olympian-band': { rMin: 33, rMax: 46, yBase: 1, thickness: 9, tilt: 9 },
   chthonic: { rMin: 15, rMax: 23, yBase: -15, thickness: 4, tilt: -4 },
   'night-court': { rMin: 22, rMax: 39, yBase: -5, thickness: 11, tilt: -13 },
+  'mortal-arm': { rMin: 50, rMax: 63, yBase: 3, thickness: 7, tilt: 15 },
 };
 
 const FALLBACK_CLUSTER = { rMin: 52, rMax: 66, yBase: 0, thickness: 12, tilt: 11 };
