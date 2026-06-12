@@ -1,0 +1,22 @@
+{
+  "id": "everes",
+  "name": "Everes",
+  "greekName": "Euērēs (Εὐήρης)",
+  "type": "mortal",
+  "domains": ["shepherd"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A shepherd descended from Udaeus, one of the original Spartoi. He was the father of the great prophet Tiresias by the nymph Chariclo.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68, 75"
+    }
+  ],
+  "story": [
+    {
+      "text": "A shepherd of Thebes who traced his lineage back to the dragon's teeth sown by Cadmus. He married the nymph Chariclo and became the father of Tiresias.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68"
+    }
+  ]
+}

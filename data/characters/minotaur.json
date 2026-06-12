@@ -1,0 +1,32 @@
+{
+  "id": "minotaur",
+  "name": "Minotaur",
+  "greekName": "Minōtauros (Μινώταυρος)",
+  "type": "creature",
+  "domains": ["the terror of the Labyrinth"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A terrifying monster with the body of a man and the head of a bull. Born to Queen Pasiphae, he was imprisoned in the Labyrinth and fed on human tributes until slain by Theseus.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.1.4; Metamorphoses 8.152; Fabulae 42"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born from the unnatural union of Queen Pasiphae and the white Cretan Bull, the creature was originally named Asterion. As he grew, he became a ferocious, flesh-eating monster—half-man, half-bull.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.4; Metamorphoses 8.152"
+    },
+    {
+      "text": "To hide this shameful curse from the world, King Minos commissioned the architect Daedalus to build an inescapable maze, the Labyrinth. The Minotaur was locked deep within its winding corridors.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.4; Metamorphoses 8.158"
+    },
+    {
+      "text": "Every year (or every nine years), Athens was forced to send a tribute of seven youths and seven maidens to be devoured by the beast. The slaughter ended only when the Athenian hero Theseus, aided by Ariadne's thread, navigated the maze and beat the Minotaur to death with his fists.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.4, Epitome 1.9; Fabulae 42"
+    }
+  ]
+}

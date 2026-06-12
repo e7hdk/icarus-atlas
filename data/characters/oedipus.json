@@ -1,0 +1,72 @@
+{
+  "id": "oedipus",
+  "name": "Oedipus",
+  "greekName": "Oidipous (Οἰδίπους)",
+  "type": "mortal",
+  "domains": [
+    "the Sphinx's riddle",
+    "patricide",
+    "incest",
+    "tragic fate"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The doomed king of Thebes. Fated to kill his father Laius and marry his mother Jocasta, he tried to flee his destiny but ran directly into it, later blinding himself when the horrifying truth was revealed.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Odyssey 11.275; Bibliotheca 3.5.7–9; Fabulae 67"
+    }
+  ],
+  "story": [
+    {
+      "text": "Exposed as an infant on Mount Cithaeron with pierced ankles, the child was found by herdsmen and brought to King Polybus and Queen Periboea of Corinth, who raised him as their own, naming him Oedipus ('Swell-foot').",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    },
+    {
+      "text": "When taunted about his parentage, Oedipus consulted the Delphic oracle, which told him he would kill his father and wed his mother. Believing Polybus to be his true father, he fled Corinth. On the road to Thebes, he met Laius in a chariot; an argument over the right of way led Oedipus to strike down the stranger, unaware he had slain his real father.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Fabulae 67"
+    },
+    {
+      "text": "Arriving at Thebes, he found the city besieged by the Sphinx. Oedipus successfully answered her riddle—that the creature going on four feet, two feet, and three feet is Man—causing the monster to destroy herself. In gratitude, the Thebans gave him the kingdom and the hand of their widowed queen, Jocasta.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Metamorphoses 7.1251; Fabulae 67"
+    },
+    {
+      "text": "He lived for years in ignorance of his crimes. When plague and barrenness struck Thebes, the seer Tiresias revealed that the pollution was Oedipus himself. Jocasta hanged herself; Oedipus put out his own eyes and was driven into exile, escorted only by his loyal daughter Antigone, until he found a final resting place at Colonus.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7; Fabulae 67"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "danae",
+  "name": "Danae",
+  "greekName": "Danaē (Δανάη)",
+  "type": "mortal",
+  "domains": ["the golden shower", "mother of Perseus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The beautiful daughter of Acrisius. Imprisoned in a bronze chamber by her father, she was visited by Zeus in the form of golden rain and gave birth to Perseus.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.1; Metamorphoses 4.903; Fabulae 63"
+    }
+  ],
+  "story": [
+    {
+      "text": "Because an oracle foretold that her son would kill her father Acrisius, Danae was locked in an underground bronze chamber. But no mortal prison could keep out the gods: Zeus fell in love with her and poured through the roof as a shower of gold, uniting with her to conceive Perseus.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.1; Metamorphoses 4.903, 11.130; Fabulae 63"
+    },
+    {
+      "text": "Apollodorus notes a scandalous alternative tradition: that Danae was actually seduced by her uncle Proetus, and that this violation was the true cause of the bitter war between the brothers. Regardless of the father, Acrisius cast Danae and her infant son into the sea in a wooden chest. They were saved by the fisherman Dictys on the island of Seriphus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.1"
+    }
+  ]
+}

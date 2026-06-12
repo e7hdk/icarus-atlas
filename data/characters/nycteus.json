@@ -1,0 +1,48 @@
+{
+  "id": "nycteus",
+  "name": "Nycteus",
+  "greekName": "Nykteus (Νυκτεύς)",
+  "type": "mortal",
+  "domains": [
+    "Theban regency",
+    "the rescue of Antiope"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A regent of Thebes and father-in-law to Polydorus. When his daughter Antiope was abducted by Epopeus of Sicyon, Nycteus marched to war but was mortally wounded, leaving the regency and the vengeance to his brother Lycus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nycteus and his brother Lycus fled Euboea after killing Phlegyas, settling in Thebes where they became citizens. When Polydorus became king, he married Nycteus' daughter Nycteis. After Polydorus died, Nycteus served as guardian for his infant grandson Labdacus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.4"
+    },
+    {
+      "text": "His other daughter, Antiope, was loved by Zeus. Fearing her father's anger, she fled to Sicyon and married Epopeus. Nycteus despaired and killed himself (according to Apollodorus) or fell in battle against Epopeus (according to Pausanias), but not before commanding his brother Lycus to punish Antiope and her husband.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

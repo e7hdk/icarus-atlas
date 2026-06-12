@@ -1,0 +1,27 @@
+{
+  "id": "hypermnestra",
+  "name": "Hypermnestra",
+  "greekName": "Hypermnēstra (Ὑπερμνήστρα)",
+  "type": "mortal",
+  "domains": ["mercy", "Queen of Argos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The eldest and only merciful daughter of Danaus. She defied her father's orders and spared her husband Lynceus from the mass slaughter of their wedding night.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.1.5; Fabulae 168; Description of Greece 2.19.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Danaus ordered his fifty daughters to murder their new husbands, forty-nine of them obeyed, cutting the throats of the sons of Aegyptus. Only Hypermnestra spared her husband, Lynceus, because he respected her virginity.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.5; Fabulae 168, 170"
+    },
+    {
+      "text": "Furious at her disobedience, Danaus threw Hypermnestra into prison and brought her to trial. She was eventually acquitted, reunited with Lynceus, and together they became the ancestors of the great heroes of Argos, including Perseus and Heracles.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.1.5; Description of Greece 2.19.6, 2.20.7"
+    }
+  ]
+}

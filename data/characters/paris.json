@@ -1,0 +1,49 @@
+{
+  "id": "paris",
+  "name": "Paris",
+  "greekName": "Paris (Πάρις)",
+  "type": "mortal",
+  "domains": ["the judgment of the goddesses", "the abduction of Helen", "archery", "the ruin of Troy"],
+  "epithets": ["Alexandros"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Hector's 'evil Paris, most fair to look upon' — the son of Priam who carried Helen from Lacedaemon, for whose sake the strife was set afoot, and whom Aphrodite snatched out of his duel with Menelaus in a mist.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.39–75, 3.340–382"
+    },
+    {
+      "text": "Exposed on Ida after Hecuba dreamed she bore a firebrand, the herdsman's foster son lived to judge the three goddesses and take Aphrodite's bribe: Helen, and with her the ruin of Troy.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 3.2; Fabulae 91–92"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pregnant with her second child, Hecuba dreamed she brought forth a blazing firebrand whose fire spread over the whole city, and the seers ordered the newborn destroyed. Apollodorus has Priam's servant Agelaus expose the baby on Ida, where a bear nursed it for five days; finding it safe, Agelaus reared the boy as his own and named him Paris, and the youth was surnamed Alexander for repelling robbers and defending the flocks. In Hyginus the servants expose him out of pity and shepherds raise him; he follows his favorite bull to Troy as the prize of funeral games held for the dead child himself, defeats every rival including his own brothers, escapes Deiphobus' drawn sword at the altar of Zeus Herceus, and is declared a son of the house by Cassandra and received into the palace by Priam.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Fabulae 91"
+    },
+    {
+      "text": "When Eris, shut out of the wedding of Peleus and Thetis, threw down an apple for the fairest, Zeus commanded Hermes to lead Hera, Athena, and Aphrodite to Alexander on Ida to be judged. Hera offered him kingship over all men, Athena victory in war, and Aphrodite the marriage of Helen — and he judged Aphrodite fairest. Homer never narrates the contest; the Iliad alludes to it once and darkly, as the sin of Alexander, who put reproach upon the goddesses when they came to his steading and gave precedence to her who furthered his fatal lustfulness.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 24.27–30; Epitome 3.2; Fabulae 92"
+    },
+    {
+      "text": "Entertained for nine days at Sparta, Alexander persuaded Helen on the tenth, while Menelaus was away in Crete burying his grandfather Catreus, and she sailed off with him by night with most of the treasure aboard. In the Iliad he struts out as Trojan champion, shrinks back at the sight of Menelaus, and is shamed by Hector into single combat for Helen and all her wealth: his spear-cast fails, Menelaus' sword shatters, and as he is dragged choking by his helmet strap Aphrodite breaks the strap, shrouds him in thick mist, and sets him down in his own fragrant chamber.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.15–382; Epitome 3.3"
+    },
+    {
+      "text": "His first wife was Oenone, daughter of the river Cebren, who warned him not to sail to fetch Helen and, failing to persuade him, promised to heal him if ever he were wounded. Ovid makes Paris' bow, guided by Apollo's own hand, the death of Achilles. His own end came from a greater archer's weapon: shot by Philoctetes with the bow of Heracles, he went back to Oenone on Ida, was refused, and was carried to Troy to die — she repented and came with her healing drugs, found him dead, and hanged herself.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.12.6; Epitome 5.8; Metamorphoses 12.831–901"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

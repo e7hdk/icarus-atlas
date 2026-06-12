@@ -1,0 +1,58 @@
+{
+  "id": "antigone",
+  "name": "Antigone",
+  "greekName": "Antigonē (Ἀντιγόνη)",
+  "type": "mortal",
+  "domains": [
+    "filial duty",
+    "the unburied dead",
+    "defiance of the state"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Oedipus who faithfully guided her blind, exiled father. After her brothers slew each other, she defied King Creon's edict and buried Polynices, for which she was condemned to be buried alive.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.9, 3.7.1; Description of Greece 9.25.2; Fabulae 72"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the horrific truth of Oedipus' parentage was revealed and he was cast out of Thebes blind and ruined, Antigone was the only one to accompany him. She guided him to his final refuge at Colonus in Attica.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.9"
+    },
+    {
+      "text": "Returning to Thebes, she witnessed the war of the Seven and the mutual slaughter of her brothers. The new ruler, her uncle Creon, ordered that while Eteocles would be honored, Polynices' body must be left to the dogs and birds. Defying the king's law out of duty to her brother, Antigone secretly sprinkled dust on his corpse.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.1; Fabulae 72"
+    },
+    {
+      "text": "Pausanias adds a local Theban legend that when she could not lift his body, she dragged Polynices right onto the burning funeral pyre of Eteocles. When Creon discovered her defiance, he ordered her entombed alive, bringing yet another tragedy to the house of Labdacus.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.1; Description of Greece 9.25.2; Fabulae 72"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "city": "troy",
+  "reigns": [
+    {
+      "ruler": "Dardanus",
+      "characterId": "dardanus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 20.215-220; Apollod. 3.12.1",
+      "note": "Son of Zeus, dearest to him of all his mortal-born children. He founded Dardania on the slopes of many-fountained Ida, before sacred Ilios was built in the plain; in Apollodorus he crosses from Samothrace to the mainland of King Teucer."
+    },
+    {
+      "ruler": "Erichthonius",
+      "characterId": "erichthonius-troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 20.219-230; Apollod. 3.12.2",
+      "note": "Richest of mortal men: three thousand mares pastured in his marshland, and the North Wind sired wondrous foals on them. In Apollodorus he succeeds ahead of an elder brother Ilus who died childless."
+    },
+    {
+      "ruler": "Tros",
+      "characterId": "tros",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 20.230-235; Apollod. 3.12.2",
+      "note": "King among the Trojans, who gave the land his name. Father of Ilus, Assaracus and Ganymede — when Zeus took Ganymede as cupbearer, he paid Tros in immortal horses."
+    },
+    {
+      "ruler": "Ilus",
+      "characterId": "ilus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 20.230-236; Apollod. 3.12.3",
+      "note": "Founder of Ilion: he followed the dappled cow won as a prize in Phrygia, and the Palladium fell from heaven before his tent as the sign of Zeus. Homer's plain keeps his barrow, though there he is hailed as son of Dardanus; in Apollodorus that elder Ilus is a separate, childless uncle."
+    },
+    {
+      "ruler": "Laomedon",
+      "characterId": "laomedon",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Hom. Il. 5.638-642, 7.452-453, 21.441-457; Apollod. 2.5.9, 2.6.4, 3.12.3; Ov. Met. 11.194-220; Hyg. Fab. 89",
+      "note": "Cheated Poseidon and Apollo of their wage for walling Troy, then cheated Heracles of the promised mares for saving Hesione — so Heracles came with six ships, sacked Ilion, and shot him down."
+    },
+    {
+      "ruler": "Priam",
+      "characterId": "priam",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 20.237, 24.160-195; Apollod. 2.6.4, 3.12.5; Hyg. Fab. 89",
+      "note": "The one son Heracles spared, born Podarces and ransomed by his sister Hesione — hence Priam, 'the redeemed'. The last king of Troy."
+    }
+  ]
+}

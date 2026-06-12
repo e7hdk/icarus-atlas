@@ -1,0 +1,27 @@
+{
+  "id": "eurydice-thebes",
+  "name": "Eurydice",
+  "greekName": "Eurydikē (Εὐρυδίκη)",
+  "type": "mortal",
+  "domains": ["the grieving mother"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The wife of Creon and queen of Thebes. She took her own life upon learning of the tragic death of her son Haemon.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Implied in the Antigone mythos; generally Sophoclean tradition"
+    }
+  ],
+  "story": [
+    {
+      "text": "Wife of the regent Creon, Eurydice watched her family be slowly destroyed by the curse of Thebes. When her youngest son Menoeceus sacrificed himself to Ares during the war, her grief was immense.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68"
+    },
+    {
+      "text": "The final blow came when her husband Creon condemned Antigone to death. Antigone's betrothed, Eurydice's son Haemon, committed suicide in despair. Upon hearing the news of Haemon's death, Eurydice drove a blade into her own heart, cursing her husband with her dying breath.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 72 (extrapolated from the broader Antigone tradition)"
+    }
+  ]
+}

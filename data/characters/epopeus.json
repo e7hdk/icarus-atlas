@@ -1,0 +1,27 @@
+{
+  "id": "epopeus",
+  "name": "Epopeus",
+  "greekName": "Epōpeus (Ἐπωπεύς)",
+  "type": "mortal",
+  "domains": ["King of Sicyon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Sicyon who married the beautiful Antiope when she fled from Thebes. His refusal to surrender her sparked a war in which he was killed by Lycus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.2-3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Antiope conceived by Zeus and feared the wrath of her father Nycteus, she fled to Sicyon where King Epopeus took her as his wife. In a fit of despondency, Nycteus killed himself, but on his deathbed commanded his brother Lycus to bring an army to Sicyon and punish Antiope.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.1-2"
+    },
+    {
+      "text": "In the ensuing war, Epopeus fought bravely but was ultimately slain, and his city was taken. His death allowed Lycus to drag Antiope away in chains to Thebes.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.5.5"
+    }
+  ]
+}

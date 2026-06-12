@@ -1,0 +1,39 @@
+{
+  "id": "aegisthus",
+  "name": "Aegisthus",
+  "greekName": "Aigisthos (Αἴγισθος)",
+  "type": "mortal",
+  "domains": ["vengeance on Atreus", "Mycenaean usurpation", "the murder of Agamemnon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The incest-born son and avenger of Thyestes, who killed Atreus, ruled beside Clytemnestra, murdered Agamemnon, and was killed in turn by Orestes.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 3.193–200, 3.303–310; Epitome 2.14, 6.23–25; Fabulae 87–88, 117, 119"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus compresses his origin into an oracle: Thyestes fathered a son by his own daughter, and the grown Aegisthus learned who he was, killed Atreus, and restored the kingdom to his father.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.14"
+    },
+    {
+      "text": "Hyginus names the daughter Pelopia and explains Aegisthus' name through the she-goat that nursed the exposed infant. Raised by Atreus as his own, he recognized Thyestes by the sword of the assault and turned the weapon against Atreus instead.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 87–88"
+    },
+    {
+      "text": "Homer makes Aegisthus the architect and principal killer of Agamemnon, after first seducing Clytemnestra and removing the singer charged with guarding her. He ruled Mycenae for seven years before Orestes returned and killed him.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.193–200, 3.250–310; 11.404–434",
+      "topic": "agamemnon-murder-agency"
+    },
+    {
+      "text": "Apollodorus and Hyginus make Aegisthus and Clytemnestra joint conspirators in Agamemnon's death. Their reign ends when Orestes returns with Pylades and kills them both.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.23–25; Fabulae 117, 119",
+      "topic": "agamemnon-murder-agency"
+    }
+  ]
+}

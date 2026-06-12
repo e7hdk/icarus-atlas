@@ -1,0 +1,27 @@
+{
+  "id": "asteria",
+  "name": "Asteria",
+  "greekName": "Asteria (Ἀστερία)",
+  "type": "titan",
+  "domains": ["the island of Delos", "motherhood of Hecate", "escape from Zeus"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Second-generation Titan daughter of Coeus and Phoebe, sister of Leto, wife of Perses and mother of Hecate; Pseudo-Apollodorus says she escaped Zeus as a quail and became the island later called Delos.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 404–415; Bibliotheca 1.2.2, 1.2.4, 1.4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Phoebe bore Asteria of happy name to Coeus, together with dark-gowned Leto. Perses led Asteria to his great house as his wife, and she conceived Hecate, whom Zeus honored above all and granted a share of earth, sea and starry heaven.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 404–452; Bibliotheca 1.2.2, 1.2.4"
+    },
+    {
+      "text": "Pseudo-Apollodorus tells how Asteria fled the advances of Zeus. Taking the likeness of a quail, she threw herself into the sea and became an island first called Asteria. The island was later named Delos, and it received her sister Leto for the birth of Apollo and Artemis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.1"
+    }
+  ]
+}

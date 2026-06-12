@@ -1,0 +1,48 @@
+{
+  "id": "menoeceus-young",
+  "name": "Menoeceus",
+  "greekName": "Menoikeus (Μενοικεύς)",
+  "type": "mortal",
+  "domains": [
+    "self-sacrifice"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The heroic young son of Creon who willingly sacrificed himself to Ares to ensure Thebes' victory against the Argive army.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68; Description of Greece 9.25.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "During the war of the Seven Against Thebes, the city was on the brink of ruin. The blind prophet Tiresias revealed that the Thebans would only be victorious if a descendant of the original dragon's teeth (the Spartoi) offered himself freely to Ares.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68"
+    },
+    {
+      "text": "Realizing he alone fit the oracle's demand, the young Menoeceus threw himself from the high walls of the city. His selfless sacrifice appeased the war god, and Thebes was saved from destruction. A pomegranate tree was said to grow from his tomb.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.7; Fabulae 68; Description of Greece 9.25.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

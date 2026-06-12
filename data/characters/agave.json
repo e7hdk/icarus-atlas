@@ -1,0 +1,58 @@
+{
+  "id": "agave",
+  "name": "Agave",
+  "greekName": "Agauē (Ἀγαύη)",
+  "type": "mortal",
+  "domains": [
+    "the Bacchanals",
+    "the tearing of Pentheus",
+    "maternal madness"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Cadmus and Harmonia, and mother of king Pentheus. Driven mad by Dionysus, she became a Maenad on Mount Cithaeron and tore her own son limb from limb, mistaking him for a wild beast.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.701–733"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Dionysus returned to Thebes, Agave and her sisters refused to recognize his divinity, claiming that Semele had been killed for falsely naming Zeus as her lover. In retaliation, Dionysus stung the women of Thebes with madness, driving them from their homes to roam Mount Cithaeron as frenzied Bacchanals.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.511–733"
+    },
+    {
+      "text": "Her son Pentheus, who had succeeded Cadmus as king, attempted to stop the Bacchic rites. He went to Cithaeron to spy on the women, but they discovered him. In her madness, Agave believed he was a mountain lion or a wild boar. She led the charge, and together with her sisters and the other women, they tore the king apart.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.701–733"
+    },
+    {
+      "text": "Agave carried her son's severed head back to Thebes, boasting of her hunting prize, until her father Cadmus finally brought her to her senses and she realized what she had done.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.701–733"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ]
+    }
+  ]
+}

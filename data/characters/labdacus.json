@@ -1,0 +1,55 @@
+{
+  "id": "labdacus",
+  "name": "Labdacus",
+  "greekName": "Labdakos (Λάβδακος)",
+  "type": "mortal",
+  "domains": [
+    "Theban kingship",
+    "the Labdacid dynasty"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Thebes, son of Polydorus and grandson of Cadmus. Like his predecessor Pentheus, he opposed the rites of Dionysus and perished, leaving his infant son Laius to the regency of Lycus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Polydorus died, Labdacus was still a child, so the government was entrusted to his maternal grandfather Nycteus, and then to his great-uncle Lycus. When Labdacus came of age, Lycus handed the reins of government over to him.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.4–5"
+    },
+    {
+      "text": "Labdacus ruled only briefly. Being 'like-minded' with Pentheus, he too opposed the introduction of the Bacchic mysteries to Thebes, and perished as a consequence of his resistance.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.5"
+    },
+    {
+      "text": "He left behind a one-year-old son, Laius. The throne was once again claimed by the regent Lycus, while the house of Labdacus awaited its tragic restoration.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

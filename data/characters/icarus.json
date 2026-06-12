@@ -1,0 +1,32 @@
+{
+  "id": "icarus",
+  "name": "Icarus",
+  "greekName": "Ikaros (Ἴκαρος)",
+  "type": "mortal",
+  "domains": ["the fallen flier", "hubris"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Daedalus. Imprisoned in the Labyrinth with his father, he escaped on wings of wax and feathers but flew too close to the sun, falling to his death in the sea that now bears his name.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Epitome 1.12; Metamorphoses 8.195; Fabulae 40"
+    }
+  ],
+  "story": [
+    {
+      "text": "Icarus was the son of the brilliant inventor Daedalus and a slave woman named Naucrate. When King Minos discovered that Daedalus had helped Theseus escape the Labyrinth, he locked both father and son inside the maze.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.12"
+    },
+    {
+      "text": "Daedalus crafted wings of feathers, twine, and wax for them both to escape by air. Before taking off, he warned his son to fly a middle course: not too low, lest the sea spray weigh down the feathers, and not too high, lest the sun melt the wax.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 8.195; Fabulae 40"
+    },
+    {
+      "text": "Exhilarated by the miracle of flight, Icarus forgot his father's warning and soared higher into the heavens. The blazing sun melted the wax holding the wings together, and the boy plunged into the waters below, which were thereafter known as the Icarian Sea.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 1.13; Metamorphoses 8.225"
+    }
+  ]
+}

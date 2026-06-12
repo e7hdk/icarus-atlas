@@ -1,0 +1,49 @@
+{
+  "id": "cassandra",
+  "name": "Cassandra",
+  "greekName": "Kassandra (Κασσάνδρα)",
+  "type": "mortal",
+  "domains": ["prophecy disbelieved", "the fall of Troy", "the homecoming murder"],
+  "epithets": ["Alexandra"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The comeliest of Priam's daughters, the first to see Hector's body brought home to Troy; her dying cry beside the murdered Agamemnon was the most piteous his shade remembered.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.365–366, 24.699–706; Odyssey 11.421–423"
+    },
+    {
+      "text": "Troy's prophetess, condemned by Apollo to be disbelieved: she warned in vain of the wooden horse and died at Mycenae beside Agamemnon.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 5.17, 6.23; Fabulae 93, 108, 117"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Cassandra is not yet a seer. The Iliad calls her the comeliest of the daughters of Priam, sought in marriage by Othryoneus for the promise of driving the Achaeans from Troy, and it is she, like golden Aphrodite, who goes up on Pergamus, first sees her father bringing Hector's body home, and rouses the city to mourning. In the Odyssey her death closes the war: Agamemnon's shade calls hers the most piteous cry he ever heard, as guileful Clytemnestra slew her over him.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.365–376, 24.699–706; Odyssey 11.421–423"
+    },
+    {
+      "text": "Apollodorus says Apollo, wishing to win Cassandra's favors, promised to teach her the art of prophecy; she learned the art, then refused the god, and he deprived her prophecy of the power to persuade. So when she declared that an armed force hid inside the wooden horse, the Trojans turned to sacrifice and feasting instead. In the sack the Locrian Ajax violated her as she clung to the wooden image of Athena, Agamemnon received her as his special award, and at Mycenae Aegisthus and Clytemnestra killed her beside the king.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 5.17, 5.22–23, 6.23"
+    },
+    {
+      "text": "In Hyginus the curse has a different shape: Cassandra, tired of playing, fell asleep in the temple of Apollo, and when the god tried to embrace her she refused him, so he brought it about that her true prophecies should not be believed. She kept insisting that enemies were within the horse and was ignored; Ajax dragged her from the statue of Pallas, for which Minerva struck him with a thunderbolt on the voyage home, and Clytemnestra, told that Cassandra was being brought to her house as a concubine, planned with Aegisthus to kill both her and Agamemnon.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 93, 108, 116–117"
+    },
+    {
+      "text": "For Pausanias she belongs to art and cult. The outrage of Ajax was wrought on the chest of Cypselus and painted by Polygnotus at Delphi, where Cassandra sits holding the image of Athena she overturned. The Lacedaemonians around Amyclae claimed her tomb against the graves shown at Mycenae — where Teledamus and Pelops, said to be twin sons of Cassandra, lie — and at Amyclae and Leuctra she received a sanctuary and image under the local name Alexandra.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.16.6, 3.19.6, 3.26.5, 5.19.5, 10.26.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "hyginus"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "helenus",
+  "name": "Helenus",
+  "greekName": "Helenos (Ἕλενος)",
+  "type": "mortal",
+  "domains": ["Trojan augury", "the captured oracles", "the new Troy in Epirus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Priam and far the best of augurs among the Trojans, who read the counsel of the gods for Hector and fought in the front ranks until a spear of Menelaus drove clean through his bow-hand.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.76, 7.44–53, 13.576–600"
+    },
+    {
+      "text": "Captured by Odysseus and forced to tell how Ilium could be taken, he survived the war to follow Neoptolemus to the country of the Molossians, where he founded a city of his own.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.9–10, 6.12–13"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Iliad Helenus is 'far the best of augurs.' At his word Hector and Aeneas rally the routed Trojans and Hecuba carries her loveliest robe to the knees of Athena; later, understanding in his spirit the plan that pleased the gods in council, he bids Hector challenge the best of the Achaeans to single combat. He fights as well as he prophesies — captain of a storming company beside his brother Deiphobus, slayer of Deipyrus with a great Thracian sword — until Menelaus casts and drives the bronze spear clean through the hand that held his polished bow. Hyginus still counts him in his roll of augurs: Helenus, son of Priam, beside Cassandra, daughter of Priam.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 6.76–102, 7.44–53, 12.94–95, 13.576–600; Fabulae 128"
+    },
+    {
+      "text": "After Alexander's death, Apollodorus says, Helenus and Deiphobus quarrelled over which of them should marry Helen; Deiphobus was preferred, and Helenus left Troy to live on Ida. But Calchas told the Achaeans that Helenus knew the oracles that protected the city, so Odysseus waylaid and captured him, and the seer was forced to tell how Ilium could be taken: the bones of Pelops must be brought to the camp, Neoptolemus must fight for the Achaeans, and the Palladium, which had fallen from heaven, must be stolen from within the walls. Ovid remembers the catch among the night-works claimed for Ulysses — sleeping Rhesus, unwarlike Dolon, Helenus taken.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 5.9–10; Metamorphoses 13.142–295"
+    },
+    {
+      "text": "The seer outlived the city he helped to bring down. Apollodorus has him travel overland with Neoptolemus to the country of the Molossians, burying Phoenix on the way; there he founded a city in Molossia, and Neoptolemus gave him his own mother Deidamia to wife. Pausanias gives him a different marriage: Neoptolemus had settled in Epirus because of the oracles of Helenus, and after Pyrrhus was murdered at Delphi the seer wedded Andromache, Hector's widow, stood guardian to the dead king's children, and fathered Cestrinus, from whom the district of Cestrine took its name. Ovid's Aeneas finds him reigning at Buthrotos, a mimic Troy, and sails on for Sicily certain of what was to come, trusting the warnings of the Phrygian seer who had foretold that Troy would not wholly fall while Aeneas lived.",
+      "sources": ["apollodorus", "pausanias", "ovid"],
+      "citation": "Epitome 6.12–13; Description of Greece 1.11.1–2, 2.23.6; Metamorphoses 13.1015–1078, 15.498–711"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid"]
+    }
+  ]
+}

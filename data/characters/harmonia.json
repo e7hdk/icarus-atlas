@@ -1,0 +1,55 @@
+{
+  "id": "harmonia",
+  "name": "Harmonia",
+  "greekName": "Harmonia (Ἁρμονία)",
+  "type": "god",
+  "domains": [
+    "harmony",
+    "concord",
+    "the cursed necklace"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Ares and Aphrodite, given as a bride to Cadmus by Zeus himself. Her divine wedding was celebrated by all the Olympians, but the magnificent gifts she received carried a curse for her descendants.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 937; Bibliotheca 3.4.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "As the daughter of the god of war and the goddess of love, Harmonia united two opposing cosmic forces. When Cadmus had expiated his slaying of the dragon, Zeus gave him Harmonia for a wife, and all the gods came down from Olympus to Thebes to attend their wedding.",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 3.4.2; Theogony 937"
+    },
+    {
+      "text": "Cadmus presented her with a robe and a necklace made by Hephaestus. Some say Hephaestus gave the necklace to Cadmus; others that Cadmus received it from Europa, who had gotten it from Zeus. This necklace brought tragedy to nearly every generation of the Theban house that inherited it.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.4.2"
+    },
+    {
+      "text": "She bore Cadmus four daughters—Autonoe, Ino, Semele, and Agave—and one son, Polydorus. Despite the tragic ends of her daughters and grandsons, Harmonia remained by her husband's side. When Cadmus was transformed into a serpent in Illyria, Harmonia begged to share his fate, and the two immortal snakes were sent to the Elysian Fields.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.2, 3.5.4; Metamorphoses 4.563–614"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

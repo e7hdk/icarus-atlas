@@ -1,0 +1,56 @@
+{
+  "id": "eteocles",
+  "name": "Eteocles",
+  "greekName": "Eteoklēs (Ἐτεοκλῆς)",
+  "type": "mortal",
+  "domains": [
+    "the defense of Thebes",
+    "the cursed brothers"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Oedipus and king of Thebes. He refused to yield the throne to his brother Polynices, leading to the war of the Seven against Thebes, in which the two brothers slew each other in single combat.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Description of Greece 9.5.12; Fabulae 68"
+    }
+  ],
+  "story": [
+    {
+      "text": "After the tragic exile of their father Oedipus, Eteocles and his brother Polynices made a compact to share the kingdom of Thebes, ruling alternately for a year at a time. However, when Eteocles' year was up, he refused to hand over the power.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Fabulae 68"
+    },
+    {
+      "text": "Driven from the city, Polynices gathered an army from Argos under King Adrastus—the Seven against Thebes. Eteocles armed the Thebans and appointed champions to defend each of the city's seven gates.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.6"
+    },
+    {
+      "text": "When the battle turned fierce and many had fallen, it was agreed that the two brothers should fight in single combat for the kingdom. Fulfilling the curse of their father, Eteocles and Polynices struck each other down, dying by the same sword.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.8; Description of Greece 9.5.12"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

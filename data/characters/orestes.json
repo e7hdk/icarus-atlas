@@ -1,0 +1,38 @@
+{
+  "id": "orestes",
+  "name": "Orestes",
+  "greekName": "Orestēs (Ὀρέστης)",
+  "type": "hero",
+  "domains": ["vengeance", "the Furies", "the Areopagus", "the reunited Pelopid kingdoms"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Agamemnon and Clytemnestra, saved by Electra and raised with Pylades, who avenged his father and was pursued by the Furies for killing his mother.",
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Odyssey 3.193–310; Epitome 6.24–28; Fabulae 117, 119–120; Description of Greece 2.18.5–6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer celebrates Orestes as the son who returned in the eighth year and killed Aegisthus, his father's murderer. The Odyssey uses his revenge as the model Telemachus is urged to follow.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.193–200, 3.303–310"
+    },
+    {
+      "text": "Electra smuggled the child Orestes to Strophius, who raised him beside Pylades. As an adult he returned with his companion and killed Clytemnestra and Aegisthus, after which the Furies drove him to trial at Athens.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.24–25; Fabulae 117, 119"
+    },
+    {
+      "text": "To end his madness, Orestes sailed with Pylades to Tauris for the image of Artemis. There he found his sister Iphigenia serving as priestess, and the three escaped with the sacred image.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.26–27; Fabulae 120"
+    },
+    {
+      "text": "Apollodorus says Orestes married Hermione, or according to some Erigone, and fathered Tisamenus. Pausanias instead preserves both lines: Tisamenus by Hermione and the illegitimate Penthilus by Erigone.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.18.6",
+      "topic": "orestes-marriages"
+    }
+  ]
+}

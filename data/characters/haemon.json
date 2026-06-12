@@ -1,0 +1,44 @@
+{
+  "id": "haemon",
+  "name": "Haemon",
+  "greekName": "Haimōn (Αἵμων)",
+  "type": "mortal",
+  "domains": [
+    "tragic love"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Creon. His fate is heavily disputed: Apollodorus claims he was killed by the Sphinx, while Hyginus states he committed suicide over his betrothed, Antigone.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 72"
+    }
+  ],
+  "story": [
+    {
+      "text": "As the son of Creon, Haemon's destiny was tied to the shifting fortunes of Thebes. According to Apollodorus, Haemon was among the victims snatched up and devoured by the monstrous Sphinx before Oedipus arrived to save the city.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.8"
+    },
+    {
+      "text": "However, in the tradition recorded by Hyginus and made famous by Sophocles, Haemon lived to adulthood and was betrothed to his cousin Antigone. When his father Creon sentenced Antigone to be entombed alive for burying her brother, Haemon found her dead and fell upon his own sword in despair.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 72"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

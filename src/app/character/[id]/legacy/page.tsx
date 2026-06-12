@@ -25,26 +25,37 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
         </p>
 
         {artworks.length > 0 ? (
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
-            {artworks.map((artwork) => (
+          <div className="mt-12 flex flex-col gap-16">
+            {artworks.map((artwork, index) => (
               <figure
                 key={artwork.imageUrl}
-                className="group relative h-80 overflow-hidden rounded-2xl border border-glass-border"
+                className={`flex flex-col gap-6 md:items-center md:gap-12 ${
+                  index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
+                }`}
               >
-                <Image
-                  src={artwork.imageUrl}
-                  alt={artwork.title}
-                  fill
-                  unoptimized
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
-                />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cosmos-deep/95 via-cosmos-deep/40 to-transparent px-5 pb-4 pt-10">
-                  <div className="font-display text-base tracking-[0.06em] text-aether">
+                <div className="group relative h-80 w-full shrink-0 overflow-hidden rounded-2xl border border-glass-border md:h-96 md:w-[46%]">
+                  <Image
+                    src={artwork.imageUrl}
+                    alt={artwork.title}
+                    fill
+                    unoptimized
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                  />
+                </div>
+                <figcaption className="min-w-0 flex-1">
+                  <h3 className="font-display text-xl tracking-[0.06em] text-aether">
                     {artwork.title}
-                  </div>
-                  <div className="font-body text-[15px] italic text-aether-muted">
+                  </h3>
+                  <p className="mt-1.5 font-body text-[15px] italic text-aether-muted">
                     {artwork.artist}, {artwork.year}
-                  </div>
+                  </p>
+                  <span
+                    className="mt-4 block h-px w-14 bg-gradient-to-r from-nebula-soft/70 to-transparent"
+                    aria-hidden
+                  />
+                  <p className="mt-4 font-body text-lg leading-relaxed text-aether/90">
+                    {artwork.description}
+                  </p>
                 </figcaption>
               </figure>
             ))}

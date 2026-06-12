@@ -1,0 +1,57 @@
+{
+  "id": "semele",
+  "name": "Semele",
+  "greekName": "Semelē (Σεμέλη)",
+  "type": "mortal",
+  "domains": [
+    "the mother of Dionysus",
+    "divine incineration",
+    "the Theban royal house"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Theban princess, daughter of Cadmus and Harmonia. She was loved by Zeus, but tricked by a jealous Hera into asking the king of gods to appear to her in his full majesty, and was incinerated by his lightning.",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 3.4.3; Theogony 940"
+    }
+  ],
+  "story": [
+    {
+      "text": "Zeus fell in love with Semele, daughter of Cadmus, and bedded with her secretly. When Hera discovered the affair, she disguised herself as Semele's old nurse and tricked the girl into asking Zeus to come to her exactly as he came to Hera.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.3; Metamorphoses 3.253–315"
+    },
+    {
+      "text": "Zeus had sworn an unbreakable oath by the river Styx to grant her whatever she asked. Unable to refuse, he entered her chamber in a chariot with lightning and thunder. Mortal eyes could not endure his glory, and Semele died of fright and was consumed by the fire.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.3; Metamorphoses 3.253–315"
+    },
+    {
+      "text": "As the fire consumed her, Zeus snatched the six-month aborted child from her womb and sewed it into his own thigh, from which Dionysus was later born. After Semele's death, her sisters spread the rumor that she had merely slept with a mortal and falsely blamed Zeus, a slander that her son would later return to Thebes to avenge.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.4.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ]
+    }
+  ]
+}

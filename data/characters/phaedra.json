@@ -1,0 +1,32 @@
+{
+  "id": "phaedra",
+  "name": "Phaedra",
+  "greekName": "Phaidra (Φαίδρα)",
+  "type": "mortal",
+  "domains": ["the tragic queen of Athens"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The daughter of Minos and Pasiphae. She later became the wife of Theseus, but was cursed by Aphrodite to fall tragically in love with her stepson Hippolytus.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Epitome 1.17; Fabulae 43; Metamorphoses 15.497"
+    }
+  ],
+  "story": [
+    {
+      "text": "Phaedra was a younger daughter of King Minos and Queen Pasiphae, raised in the shadow of her sister Ariadne's dramatic escape with Theseus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "Years later, after Ariadne was lost and Minos was dead, Theseus sought a new alliance with Crete and married Phaedra. She traveled to Athens to reign as his queen, but she was doomed to repeat her mother Pasiphae's terrible fate of cursed, unnatural love.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 1.17-18; Fabulae 43"
+    },
+    {
+      "text": "Because Theseus' son Hippolytus scorned Aphrodite and worshipped only Artemis, the goddess of love cursed Phaedra to fall madly in love with the young man. When Hippolytus rejected her advances, a desperate and shamed Phaedra hanged herself, leaving behind a letter falsely accusing him of assault, which led to his death at his father's hands.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 1.18-19; Metamorphoses 15.497"
+    }
+  ]
+}

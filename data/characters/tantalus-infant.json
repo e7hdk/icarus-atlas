@@ -1,0 +1,22 @@
+{
+  "id": "tantalus-infant",
+  "name": "Tantalus",
+  "greekName": "Tantalos (Τάνταλος)",
+  "type": "mortal",
+  "domains": ["the banquet victim"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "An infant son of Thyestes named after his infamous great-grandfather. According to Hyginus, he was murdered and served to his father at the horrific banquet of Atreus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 88"
+    }
+  ],
+  "story": [
+    {
+      "text": "Atreus took vengeance on Thyestes by butchering his infant sons, Tantalus and Plisthenes. He roasted their flesh and fed it to Thyestes at a feast of supposed reconciliation.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 88"
+    }
+  ]
+}

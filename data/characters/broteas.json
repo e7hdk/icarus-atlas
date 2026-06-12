@@ -1,0 +1,32 @@
+{
+  "id": "broteas",
+  "name": "Broteas",
+  "greekName": "Broteas (Βροτέας)",
+  "type": "mortal",
+  "domains": ["hunting", "Mount Sipylus", "the Mother of the Gods"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A hunter who dishonored Artemis, boasted that fire could not hurt him, and was driven mad into throwing himself into the flames.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.2"
+    },
+    {
+      "text": "A son of Tantalus credited by the Magnesians with making their ancient rock image of the Mother of the Gods on Mount Sipylus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.22.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Broteas refused honor to Artemis and boasted that fire could not harm him. The goddess drove him mad, and he threw himself into the flames.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.2"
+    },
+    {
+      "text": "The Magnesians told Pausanias that Broteas, son of Tantalus, carved their primeval rock image of the Mother of the Gods on Mount Sipylus, tying him to the same Anatolian landscape as his father and sister Niobe.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.22.4"
+    }
+  ]
+}

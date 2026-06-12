@@ -1,0 +1,44 @@
+{
+  "id": "menoeceus",
+  "name": "Menoeceus (Elder)",
+  "greekName": "Menoikeus (Μενοικεύς)",
+  "type": "mortal",
+  "domains": [
+    "the dragon's blood"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A nobleman of Thebes descended from the Spartoi. He was the father of Creon and Jocasta, the tragic queen.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7-8; Fabulae 67"
+    }
+  ],
+  "story": [
+    {
+      "text": "Menoeceus carried the ancient blood of the Spartoi, the armed men who sprang from the dragon's teeth sown by Cadmus. He was the father of Creon, who would rule Thebes as regent, and Jocasta, who would unwittingly marry her own son.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.7"
+    },
+    {
+      "text": "According to Hyginus, when the Sphinx was ravaging the Theban countryside, the prophet Tiresias declared that the plague would end if a survivor from the dragon's blood died for his country. Upon hearing this, Menoeceus threw himself from the walls, sacrificing his life for Thebes.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 67"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

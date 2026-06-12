@@ -1,0 +1,48 @@
+{
+  "id": "priam",
+  "name": "Priam",
+  "greekName": "Priamos (Πρίαμος)",
+  "type": "mortal",
+  "domains": ["Trojan kingship", "the ransom of Hector", "the fall of Troy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Aged king of Troy, son of Laomedon in the line of Dardanus, who crossed the Achaean camp by night and kissed the man-slaying hands of Achilles to ransom the body of his son Hector.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.200–240, 24.470–505"
+    },
+    {
+      "text": "Born Podarces, son of Laomedon; when Heracles sacked Troy and slew the king, the boy was renamed Priam from the ransom that freed him and came to the throne of Ilium.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.6.4, 3.12.5; Fabulae 89"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles took Troy and shot down Laomedon, the king's son Podarces survived. Apollodorus says Heracles spared him alone of the brothers but required that he first be sold as a slave; his sister Hesione gave the veil from her head as his ransom, and from that purchase Podarces was called Priam. Hyginus has Hercules hand the kingdom directly to the infant Podarces, deriving the new name the same way, from being redeemed.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.6.4, 3.12.5; Fabulae 89"
+    },
+    {
+      "text": "Apollodorus gives Priam a first wife, Arisbe daughter of Merops, mother of the dream-reader Aesacus, before he married Hecuba — daughter of Dymas, or of Cisseus, or of the river Sangarius, depending on the teller. Her first son was Hector; pregnant again, she dreamed she bore a firebrand whose flames spread over the whole city, and the seers ordered the newborn destroyed — the child who would return as Alexander Paris.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Fabulae 91"
+    },
+    {
+      "text": "In the Iliad, after Hector's death the old king drives through the Achaean lines under Hermes' escort, enters Achilles' hut unseen, clasps his knees, and kisses the terrible, man-slaying hands that had slain so many of his sons. Fifty sons he had when the Achaeans came, he tells Achilles, nineteen from a single womb, and the war has stripped him of the best of them. Achilles, moved to weep for his own father, accepts the ransom and releases Hector's body.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.331–505"
+    },
+    {
+      "text": "At the sack of Troy, Neoptolemus slew Priam at the altar of Zeus of the Courtyard, where the king had taken refuge. Ovid remembers the same end: while the fire still raged, Jove's altar drank old Priam's scanty blood.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 5.21; Metamorphoses 13.582–714"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

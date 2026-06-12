@@ -1,0 +1,68 @@
+{
+  "id": "trojan-war",
+  "title": "The Trojan War",
+  "greekTitle": "Τρωικὸς πόλεμος",
+  "kind": "war",
+  "parent": null,
+  "era": 8,
+  "summary": {
+    "text": "For Helen, taken from Sparta to Troy, the Achaean kings besieged Priam's city for ten years — the war of wars, where Achilles' wrath burned, Hector fell, and every homecoming was poisoned.",
+    "sources": ["homer", "ovid", "hyginus"],
+    "citation": "Hom. Il.; Ov. Met. 12-13; Hyg. Fab. 78, 98-111"
+  },
+  "chapters": [
+    {
+      "title": "The stolen queen",
+      "text": "Paris of Troy carried Helen away from Menelaus' Sparta. Bound by the oath they had sworn as her suitors, the kings of Greece mustered under Agamemnon of Mycenae, and a thousand ships crossed the Aegean.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Hom. Il. 3.46-57, 3.351-354; Hyg. Fab. 78"
+    },
+    {
+      "title": "The wrath of Achilles",
+      "text": "In the tenth year Agamemnon slighted Achilles over the captive Briseis, and the best of the Achaeans withdrew from the fight. Plague and rout followed, until the Trojans pressed to the very ships.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 1-15"
+    },
+    {
+      "title": "Hector's fall",
+      "text": "Patroclus fell to Hector wearing Achilles' armour, and grief drove Achilles back to war. He slew Hector before the walls, dragged him behind his chariot, and at last gave the body back to old Priam, who kissed the hands that had killed his son.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16-24"
+    },
+    {
+      "title": "The poisoned homecomings",
+      "text": "Troy fell, but the victors' returns were bitter. Agamemnon came home to Clytemnestra and the axe; his shade told Odysseus there is nothing more terrible than a treacherous house. Orestes' vengeance closed the curse of the Atreids.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Hom. Od. 11.405-434; Hyg. Fab. 117-119"
+    }
+  ],
+  "cast": [
+    { "id": "helen", "name": "Helen", "role": "The cause and the prize" },
+    { "id": "menelaus", "name": "Menelaus", "role": "The wronged husband" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "The waiting queen" },
+    { "id": "iphigenia", "name": "Iphigenia", "role": "Sacrificed at Aulis" },
+    { "id": "orestes", "name": "Orestes", "role": "The avenger" },
+    { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally of Troy" },
+    { "name": "Achilles", "role": "Best of the Achaeans" },
+    { "id": "hector", "name": "Hector", "role": "Shield of Troy" },
+    { "id": "paris", "name": "Paris", "role": "The thief of Helen" },
+    { "id": "priam", "name": "Priam", "role": "Old king of Troy" },
+    { "id": "hecuba", "name": "Hecuba", "role": "Queen of the doomed city" },
+    { "id": "cassandra", "name": "Cassandra", "role": "The unheeded prophetess" },
+    { "id": "aeneas", "name": "Aeneas", "role": "Seed of the Trojans to come" },
+    { "name": "Odysseus", "role": "The cunning one" },
+    { "name": "Patroclus", "role": "Beloved of Achilles" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "The besieged city" },
+    { "id": "sparta", "name": "Sparta", "role": "Helen's home" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Agamemnon's seat" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "entire" },
+    { "source": "homer", "work": "Odyssey", "citation": "the returns, esp. 11" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "12-13" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "78, 98-111" }
+  ]
+}

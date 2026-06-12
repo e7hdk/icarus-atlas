@@ -1,0 +1,27 @@
+{
+  "id": "phoenix",
+  "name": "Phoenix",
+  "greekName": "Phoinix (Φοῖνιξ)",
+  "type": "mortal",
+  "domains": ["eponymous king of Phoenicia"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Agenor who was sent to search for the abducted Europa. Giving up the search, he settled in the land that was named Phoenicia after him.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Europa was carried off by the bull, King Agenor ordered his sons—Cadmus, Phoenix, and Cilix—to search for her and strictly forbade them to return without her.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1"
+    },
+    {
+      "text": "Realizing that finding the girl was impossible, none of the brothers returned home. Phoenix settled in a nearby region bordering the sea, and the land was subsequently called Phoenicia in his honor.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1"
+    }
+  ]
+}

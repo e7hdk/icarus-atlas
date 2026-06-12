@@ -1,0 +1,29 @@
+{
+  "id": "tantalus-clytemnestra-husband",
+  "name": "Tantalus the Younger",
+  "greekName": "Tantalos (Τάνταλος)",
+  "type": "mortal",
+  "domains": ["Clytemnestra's first marriage", "the inherited feud of the Pelopids"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Clytemnestra's first husband, killed with his newborn child by Agamemnon; his father was reported as Thyestes or Broteas.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.15–16; Description of Greece 2.18.2, 2.22.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus calls him a son of Thyestes. Agamemnon killed Tantalus and his newborn child, then married the widowed Clytemnestra and took the Mycenaean throne.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.15–16",
+      "topic": "younger-tantalus-parentage"
+    },
+    {
+      "text": "Pausanias knew a grave at Argos for the Tantalus who married Clytemnestra before Agamemnon, but records two competing fathers for him: Thyestes or Broteas.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.18.2, 2.22.3",
+      "topic": "younger-tantalus-parentage"
+    }
+  ]
+}

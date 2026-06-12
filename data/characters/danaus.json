@@ -1,0 +1,27 @@
+{
+  "id": "danaus",
+  "name": "Danaus",
+  "greekName": "Danaos (Δαναός)",
+  "type": "mortal",
+  "domains": ["King of Argos", "father of the Danaides"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The father of the fifty Danaides. To escape the fifty sons of his twin brother Aegyptus, he fled from Egypt to Argos, where he later ordered the mass murder of his sons-in-law.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.1.4-5; Fabulae 168; Description of Greece 2.16.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Danaus ruled over Libya while his twin brother Aegyptus ruled Arabia and Egypt. Aegyptus proposed to marry his fifty sons to Danaus' fifty daughters to consolidate their power, but Danaus feared a plot and fled with his daughters across the sea to Argos, the land of his ancestor Io.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.4; Fabulae 168"
+    },
+    {
+      "text": "In Argos, Danaus seized the throne from King Gelanor. But the sons of Aegyptus pursued them and laid siege to the city until Danaus finally consented to the marriages. Secretly, he gave each of his daughters a dagger and ordered them to murder their new husbands on their wedding night.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.1.5; Description of Greece 2.16.1"
+    }
+  ]
+}

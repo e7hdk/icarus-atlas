@@ -1,0 +1,41 @@
+{
+  "id": "helios",
+  "name": "Helios",
+  "greekName": "Hēlios (Ἥλιος)",
+  "romanName": "Sol",
+  "type": "titan",
+  "domains": ["the sun", "sight", "oaths", "the passage of day"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Second-generation Titan god of the Sun, son of Hyperion and Theia, whose all-seeing course crosses heaven each day; the slaughter of his sacred cattle destroys Odysseus' crew.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 371–374; Odyssey 1.6–9, 12.127–141, 12.374–388; Bibliotheca 1.2.2",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Sol is instead a son of Hyperion and Aethra in Hyginus' genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Theia bore great Helios to Hyperion beside Selene and Eos. Homer gives his sight unmatched reach: not even Zeus and Hera hidden in a golden cloud would escape Helios, whose vision is keenest of all. Pseudo-Apollodorus keeps him in the same family as the Sun born to Hyperion and Thia; Hyginus names Aethra as mother instead.",
+      "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+      "citation": "Theogony 371–374; Iliad 14.342–345; Bibliotheca 1.2.2; Fabulae Preface",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "On Thrinacia he kept seven herds of cattle and seven flocks of sheep, fifty in each, deathless and without offspring, guarded by his daughters Phaethusa and Lampetie. Though Odysseus warned his crew, hunger drove them to kill the cattle while he slept. Lampetie carried the news to her father, and Helios demanded vengeance from Zeus, threatening to shine among the dead if the outrage went unpaid.",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.127–141, 12.260–276, 12.374–388"
+    },
+    {
+      "text": "Zeus answered the demand. After the crew had feasted for six days, their ship returned to sea and Zeus shattered it with a flaming thunderbolt. Every companion of Odysseus perished, fulfilling the poem's opening charge that they destroyed their own homecoming by devouring the cattle of Helios Hyperion.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.6–9, 12.397–420"
+    }
+  ]
+}

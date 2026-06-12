@@ -1,0 +1,51 @@
+{
+  "id": "echion",
+  "name": "Echion",
+  "greekName": "Echiōn (Ἐχίων)",
+  "type": "hero",
+  "domains": [
+    "the Sown Men",
+    "the foundation of Thebes"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the Spartoi, the armed men who sprang from the dragon's teeth sown by Cadmus. He survived their mutual slaughter and became one of the five founding nobles of Thebes, marrying Cadmus' daughter Agave.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.4.1–2; Metamorphoses 3.126; Fabulae 178"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Cadmus sowed the teeth of the dragon of Ares, a harvest of armed men sprang from the earth. Cadmus threw a stone among them, and they turned their weapons on each other. Echion was one of the five survivors who cast down their arms and agreed to peace.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.4.1; Metamorphoses 3.126; Fabulae 178"
+    },
+    {
+      "text": "These five Spartoi became the trusted comrades of Cadmus in the founding of Thebes. To honor him, Cadmus gave Echion his own daughter Agave in marriage, and from them was born Pentheus, who would inherit the kingdom.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.2; Metamorphoses 3.511"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ]
+    }
+  ]
+}

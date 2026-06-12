@@ -1,0 +1,61 @@
+{
+  "id": "laius",
+  "name": "Laius",
+  "greekName": "Laios (Λάιος)",
+  "type": "mortal",
+  "domains": [
+    "Theban kingship",
+    "the oracle of Apollo",
+    "the crossroads"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Thebes and father of Oedipus. Warned by Apollo that his son would kill him, he exposed the infant, but years later was slain by that same son at a narrow crossroad.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Description of Greece 9.5.10; Fabulae 66"
+    }
+  ],
+  "story": [
+    {
+      "text": "When his father Labdacus died, the infant Laius was robbed of his throne by his great-uncle Lycus. He was driven into exile and lived in the Peloponnese until Amphion and Zethus, who had slain Lycus, themselves passed away. Then the Thebans restored Laius to his rightful kingdom.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5, 3.5.7; Description of Greece 9.5.5–9"
+    },
+    {
+      "text": "He married Jocasta, daughter of Menoeceus. The oracle of Apollo at Delphi warned him never to beget a son, for the child would kill him. Nevertheless, flushed with wine, Laius had intercourse with his wife and she bore a son.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Description of Greece 9.5.10; Fabulae 66"
+    },
+    {
+      "text": "To thwart the prophecy, Laius pierced the infant's ankles and gave him to a herdsman to expose on Mount Cithaeron. The child, however, was saved and raised in Corinth. Years later, as Laius journeyed in a chariot, he met his grown son at a narrow crossroad. An altercation arose, and Oedipus killed his unrecognized father, fulfilling the oracle.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Fabulae 67"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

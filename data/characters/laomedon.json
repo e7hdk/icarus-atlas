@@ -1,0 +1,48 @@
+{
+  "id": "laomedon",
+  "name": "Laomedon",
+  "greekName": "Laomedōn (Λαομέδων)",
+  "type": "mortal",
+  "domains": ["Trojan kingship", "the walls of Troy", "cheated wages"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Trojan king before Priam, who defrauded Poseidon and Apollo of their wage for walling his city, and whose refusal of Heracles' promised mares brought the first sack of Ilios.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.441–457; 5.640–651"
+    },
+    {
+      "text": "A king twice forsworn — to the gods who fortified Troy and to Heracles who saved his daughter Hesione — slain when Heracles took the city and left the kingdom to the ransomed Podarces, renamed Priam.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.5.9, 2.6.4; Fabulae 89"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the lineage Aeneas recites to Achilles, Ilus begat peerless Laomedon, and Laomedon begat Tithonus, Priam, Lampus, Clytius, and Hicetaon, scion of Ares. Apollodorus gives him a wife — Strymo, daughter of Scamander, though some said Placia and others Leucippe — five sons ending with Podarces, and three daughters, Hesione, Cilla, and Astyoche, besides a son Bucolion by the nymph Calybe. Homer too knows Bucolion as Laomedon's eldest, born of an unwed mother.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.236–238; 6.23–24; Bibliotheca 3.12.3"
+    },
+    {
+      "text": "Poseidon reminds Apollo how the two of them alone among the gods served lordly Laomedon for a year at a fixed wage, at Zeus' bidding: Poseidon built the Trojans a wall wide and exceedingly fair, that the city might never be broken, while Apollo herded the shambling cattle on the spurs of wooded Ida. When the seasons brought the term of hire to its end, dread Laomedon defrauded them of all their wage and dismissed them with threats — to bind them hand and foot, sell them into far-off islands, and lop off their ears with bronze. Elsewhere in the poem Poseidon calls the wall the joint toil of himself and Phoebus Apollo for the warrior Laomedon.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.441–457; 7.452–453"
+    },
+    {
+      "text": "Apollodorus binds the two frauds into one account: to test the wantonness of Laomedon, Apollo and Poseidon took the likeness of men and fortified Pergamum for wages, and when he refused to pay, Apollo sent a pestilence and Poseidon a sea monster. Oracles promised deliverance if Laomedon exposed his daughter Hesione to the beast, and Heracles undertook to save her for the price of the mares Zeus had given in compensation for the rape of Ganymede. Cheated of the stipulated reward in his turn, Heracles returned with ships and champions, took the city, and shot down Laomedon and his sons, sparing only Podarces, whom Hesione ransomed and who became Priam. In Homer the sack is already an old story: Tlepolemus boasts that his father Heracles came for the mares of Laomedon with only six ships and laid waste the streets of Ilios, and Sarpedon grants that the city was destroyed through the folly of lordly Laomedon, who chid his benefactor with harsh words and kept the mares he had come so far to earn.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 5.640–651; Bibliotheca 2.5.9, 2.6.4"
+    },
+    {
+      "text": "The Latin poets retell the bargain with different terms. In Ovid, Apollo and Neptune put on mortal form and built the walls of rising Troy for the Phrygian king at an agreed price of gold; when the work stood finished Laomedon denied the debt, Neptune sent the sea flooding over the shore, and Hesione was chained to the rocks for a monster of the deep until Hercules freed her — then, refused the promised horses, he seized the walls of twice-perjured Troy, and Telamon received Hesione. In Hyginus the wage is a vow: Laomedon promised the builder gods whatever was born in his flocks that year and defaulted through avarice, so Neptune sent the sea monster and Apollo's angry oracle demanded Trojan maidens, until the lot fell on Hesione. Hercules and Telamon, passing with the Argonauts on the way to Colchis, killed the beast on condition of receiving her and the wonder-horses on their return; Laomedon defaulted in this too, and Hercules slew him, gave the kingdom to his infant son Podarces — afterward called Priam, from his redeeming — and gave Hesione in marriage to Telamon, to whom she bore Teucer.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 11.194–217; Fabulae 89"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

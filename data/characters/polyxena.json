@@ -1,0 +1,43 @@
+{
+  "id": "polyxena",
+  "name": "Polyxena",
+  "greekName": "Polyxene (Πολυξένη)",
+  "type": "mortal",
+  "domains": ["maiden sacrifice", "the tomb of Achilles", "the fall of Troy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Priam and Hecuba, named among Hecuba's daughters beside Creusa, Laodice, and Cassandra; when Troy fell, the Greeks slaughtered her on the grave of Achilles.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 5.23"
+    },
+    {
+      "text": "The maiden demanded by the dead Achilles himself: his ghost claimed her as his share of the spoils, and she went to the tomb resolved to die free.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 13.439–480; Fabulae 110"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names her among the daughters Hecuba bore to Priam after Paris had been recognized — Creusa, Laodice, Polyxena, and Cassandra. Her part in the war is its bitter coda: when the Greeks had fired the city and divided the spoil, they sacrificed to all the gods, threw Astyanax from the battlements, and slaughtered Polyxena on the grave of Achilles.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 5.23"
+    },
+    {
+      "text": "Ovid stages the sacrifice on the Thracian shore, where the fleet lay moored waiting for kinder winds. The earth gaped wide and Achilles rose from it, as large as when he lived, demanding that his sepulchre not go without honor: let Polyxena be immolated to appease his shade. Torn from the bosom of her mother, who cherished her as almost the last child left, the virgin — brave, and more than a woman — was led to the tumulus. Before Neoptolemus and his drawn sword she bared her own throat and breast: Polyxena would never live a slave, she said; let no man's hand touch her virgin body, and let her mother ransom her corpse not with gold but with tears. Even the priest wept as he drove in the steel, and in falling she still took care to cover what should be concealed, keeping her chaste modesty to the last.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.439–480"
+    },
+    {
+      "text": "Hyginus gives the demand a motive: as the victorious Danaans were embarking for home, the voice of Achilles from his tomb claimed a part of the spoils, and so they sacrificed at the tomb Polyxena, daughter of Priam, a most beautiful girl — for Achilles had sought her in marriage, and coming to the interview was killed by Alexander and Deiphobus. Pausanias knew her from the painters: in the picture gallery at Athens Polygnotus showed her about to be sacrificed near the grave of Achilles — Homer, Pausanias judges, did well to pass over so barbarous an act — while at Delphi her hair is braided after the custom of maidens, and at Athens and at Pergamus on the Caicus he had seen the tragedy of Polyxena depicted in paintings.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 110; Description of Greece 1.22.6, 10.25.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ismene",
+  "name": "Ismene",
+  "greekName": "Ismēnē (Ἰσμήνη)",
+  "type": "mortal",
+  "domains": [
+    "the daughters of Oedipus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Oedipus and sister to Antigone, Eteocles, and Polynices.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67"
+    }
+  ],
+  "story": [
+    {
+      "text": "She is listed among the four children born to Oedipus in his unwittingly incestuous marriage to his mother, Jocasta. Though her sister Antigone took the leading role in guiding their exiled father and defying Creon, Ismene shared in the curse that devastated their house.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

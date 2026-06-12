@@ -1,0 +1,27 @@
+{
+  "id": "epaphus",
+  "name": "Epaphus",
+  "greekName": "Epaphos (Ἔπαφος)",
+  "type": "mortal",
+  "domains": ["King of Egypt"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Zeus and Io, born in Egypt after his mother's long wanderings. He became King of Egypt and founded the city of Memphis.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.3-4; Fabulae 149, 155"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Io finally reached the banks of the Nile, Zeus restored her to human form with a touch of his hand. From this touch, she conceived and bore Epaphus (whose name means 'Touch').",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 2.1.3; Metamorphoses 1.748"
+    },
+    {
+      "text": "As a child, Epaphus was briefly kidnapped by the Curetes at the behest of a still-jealous Hera, but Io recovered him in Syria. He returned to Egypt, where he grew to inherit the kingdom, marrying Memphis and founding the city that bore her name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.3-4"
+    }
+  ]
+}

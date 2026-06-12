@@ -1,0 +1,38 @@
+{
+  "id": "helen",
+  "name": "Helen",
+  "greekName": "Helenē (Ἑλένη)",
+  "type": "mortal",
+  "domains": ["Spartan queenship", "beauty", "the Trojan War", "return from Egypt"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Queen of Sparta and wife of Menelaus, whose departure with Paris became the cause of the Trojan expedition; mother of Hermione and, in one Argive tradition, Iphigenia.",
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Odyssey 4.1–14; Epitome 3.1–5, 6.29; Fabulae 118; Description of Greece 2.22.6–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer calls Hermione the only child the gods granted Helen after her birth. Back in Sparta with Menelaus, Helen presides over a household still defined by the memory of Troy.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.1–14"
+    },
+    {
+      "text": "Apollodorus says Paris carried Helen away from Sparta while Menelaus was absent, leaving nine-year-old Hermione behind. He also records the rival story that Hermes took the real Helen to Egypt and sent only a cloud phantom to Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.1–5"
+    },
+    {
+      "text": "After eight years of wandering, Menelaus returned with Helen. Apollodorus ends their story with Hera making Menelaus immortal so that the pair could dwell together in the Elysian Fields.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.29; Fabulae 118"
+    },
+    {
+      "text": "Pausanias reports an Argive claim that Helen bore Iphigenia after Theseus abducted her, then gave the child to Clytemnestra. This makes Helen, not Clytemnestra, Iphigenia's mother in that local genealogy.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.22.6–7",
+      "topic": "iphigenia-parentage"
+    }
+  ]
+}

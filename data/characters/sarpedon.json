@@ -1,0 +1,32 @@
+{
+  "id": "sarpedon",
+  "name": "Sarpedon",
+  "greekName": "Sarpēdōn (Σαρπηδών)",
+  "type": "hero",
+  "domains": ["King of Lycia"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Zeus and Europa. Defeated by his brother Minos in a dispute over the boy Miletus, he fled to Lycia where he became king.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.2; Fabulae 106, 178"
+    }
+  ],
+  "story": [
+    {
+      "text": "Sarpedon and his brothers Minos and Rhadamanthus were adopted by King Asterius of Crete. When they grew up, they fell in love with the same beautiful boy, Miletus. Miletus preferred Sarpedon, which enraged Minos.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "Minos went to war against his brothers and emerged victorious. Sarpedon was forced to flee Crete. He traveled to Asia Minor, allied with Cilix, and eventually carved out his own kingdom in Lycia.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "According to some traditions, Zeus granted Sarpedon the privilege of living for three generations. However, later writers like Hyginus claim this same Sarpedon lived long enough to fight at Troy, where he was slain by Patroclus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.2; Fabulae 106"
+    }
+  ]
+}

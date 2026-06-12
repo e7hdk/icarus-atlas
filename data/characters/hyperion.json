@@ -1,0 +1,35 @@
+{
+  "id": "hyperion",
+  "name": "Hyperion",
+  "greekName": "Hyperiōn (Ὑπερίων)",
+  "type": "titan",
+  "domains": ["heavenly light", "the solar lineage"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan son of Uranus and Gaia, consort of Theia and father by her of Helios, Selene and Eos — the sun, moon and dawn.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138, 371–374; Bibliotheca 1.1.3, 1.2.2",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Father of Sol, Luna and Aurora by Aethra rather than Theia in Hyginus' transmitted genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gaia bore Hyperion to starry Uranus among the elder Titans, after Coeus and Crius and before Iapetus. Pseudo-Apollodorus also places him among the male Titans born from Earth and Sky.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138; Bibliotheca 1.1.3"
+    },
+    {
+      "text": "Theia was subject in love to Hyperion and bore great Helios, clear Selene and Eos, who shines upon mortals and the deathless gods. Pseudo-Apollodorus preserves the same triad as Dawn, Sun and Moon. Hyginus' compressed and textually troubled preface changes their mother to Aethra, so the two maternal lines remain separate rather than being silently combined.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 371–374; Bibliotheca 1.2.2; Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ]
+}

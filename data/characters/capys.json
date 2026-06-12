@@ -1,0 +1,60 @@
+{
+  "id": "capys",
+  "name": "Capys",
+  "greekName": "Kapys (Κάπυς)",
+  "type": "mortal",
+  "domains": [
+    "Dardania",
+    "the Dardanid line",
+    "ancestry of Aeneas"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A link in the royal pedigree Aeneas proclaims to Achilles: son of Assaracus and father of Anchises in the line that descends from Zeus and Dardanus.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.239–240"
+    },
+    {
+      "text": "Son of Assaracus and Hieromneme who married Themiste, daughter of Ilus, and fathered Anchises — rejoining the two branches of the house of Tros.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Aeneas faces Achilles on the Trojan plain, he answers the taunt about his birth with the full lineage of his house: Zeus begat Dardanus, who founded Dardania on the slopes of Ida before sacred Ilios was built in the plain; through Erichthonius and Tros the line reached three sons — Ilus, Assaracus, and godlike Ganymedes. While Ilus' branch ran on to Laomedon and Priam, Assaracus begat Capys, and Capys Anchises, the father of Aeneas himself.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.215–240"
+    },
+    {
+      "text": "Apollodorus supplies the wives Homer's pedigree omits: Capys was the son Hieromneme, daughter of the river Simoeis, bore to Assaracus, and by his own wife Themiste, daughter of Ilus, he fathered Anchises. The marriage knits the rival branches of Tros' house back together one generation before Aphrodite comes to Anchises and bears Aeneas.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2"
+    },
+    {
+      "text": "Capys' single generation drops out of some catalogues. In Homer and Apollodorus he stands between Assaracus and Anchises, but Hyginus' lists call Anchises a son of Assaracus and even make Ganymede Assaracus' son rather than his brother, compressing the Dardanian line so that Capys vanishes from it.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 224, 270"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

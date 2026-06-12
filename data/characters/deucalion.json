@@ -1,0 +1,67 @@
+{
+  "id": "deucalion",
+  "name": "Deucalion",
+  "greekName": "Deukaliōn (Δευκαλίων)",
+  "type": "mortal",
+  "domains": ["the great flood", "survival", "the stone-born people"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Prometheus and king in the regions about Phthia; forewarned by his father, he rode out Zeus's flood in a chest with his wife Pyrrha and refathered mankind from thrown stones.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2"
+    },
+    {
+      "text": "The most upright of mortals, spared with Pyrrha when Jupiter drowned a wicked world; from the bones of their great mother — the stones of the earth — the two remade the human race.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.313–415"
+    },
+    {
+      "text": "Son of Prometheus who in Thessaly first founded cities, first reared temples to the immortals, and first ruled over men.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1085–1095"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus would destroy the men of the Bronze Age, Deucalion — son of Prometheus, reigning in the regions about Phthia, husband of Pyrrha — built a chest by the advice of his father, stored it with provisions, and embarked. Zeus poured heavy rain from heaven and flooded the greater part of Greece; the mountains of Thessaly parted and everything beyond the Isthmus and Peloponnese went under. Nine days and nine nights Deucalion drifted in the chest, and on Parnassus he came to land, and when the rain ceased he sacrificed there to Zeus Phyxios, the god of Escape.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2",
+      "topic": "flood-landing"
+    },
+    {
+      "text": "Ovid sends the same waters over a guiltier world: after Lycaon's outrage proved mankind wicked, Jupiter resolved in the council of the gods to destroy the race, and sea and sky together unmade the earth. One mountain alone still broke the waves with its twin peaks — Parnassus — and there a little boat carried Deucalion, 'Promethides', and his Pyrrha. Jupiter, seeing that of so many thousands only one man and one woman remained, both innocent, both worshippers of the gods, scattered the clouds and showed the drowned world to the sky again.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.163–347, 1.390",
+      "topic": "flood-landing"
+    },
+    {
+      "text": "Hyginus moves the refuge to another mountain entirely — and gives Jove a stranger motive. When Phaethon's fall had set the world ablaze, Jove, wanting a pretext to destroy the whole mortal race, pretended he wished to put out the fire and let loose every river: the cataclysm the Greeks call Deucalion's flood. The whole human race perished except Deucalion and Pyrrha, who fled — no chest, no boat — to Mount Etna, said to be the highest mountain in Sicily.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 152A, 153",
+      "topic": "flood-landing"
+    },
+    {
+      "text": "In Ovid the new mankind is an oracle's riddle. The two survivors made their way to the shrine of Themis by the waters of the Cephisus and begged the goddess for help; she answered: depart, veil your heads, and throw the bones of your great mother behind you. It was Deucalion who understood — the great mother is the Earth, her bones the stones — and the stones they threw began to soften, grow, and take human form: those from his hands men, those from Pyrrha's women. Hence, Ovid says, we are a hard race, schooled in toil, and give proof of the origin from which we sprang.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.367–415",
+      "topic": "flood-repopulation"
+    },
+    {
+      "text": "The mythographers tell the stone-birth without Themis. In Apollodorus, Zeus himself sent Hermes to Deucalion and allowed him to choose what he would; he chose to get people, and at the bidding of Zeus threw stones over his head — the stones Deucalion threw became men, those Pyrrha threw became women. That, Apollodorus adds, is why people are called laoi, from laas, a stone. In Hyginus there is no messenger at all: unable to bear living alone in the emptied world, the pair begged Jove either to give them people or to destroy them too, and Jove ordered them to cast stones behind their backs.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.7.2; Fabulae 153",
+      "topic": "flood-repopulation"
+    },
+    {
+      "text": "Apollonius remembers him not for the flood but for what came after. When Argus traces Jason's lineage in Colchis, he begins with him: Prometheus son of Iapetus begat goodly Deucalion, who first founded cities and reared temples to the immortal gods, and first ruled over men — the first king, in the Argonautica's telling, of the land men call Haemonia, which is Thessaly.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1085–1095"
+    },
+    {
+      "text": "Athens kept its own relics of him. Pausanias saw, within the precinct of Olympian Zeus, the cleft in the earth a cubit wide where they say the water ran away after Deucalion's flood — every year wheat meal kneaded with honey is thrown into it — and near the old sanctuary, which Deucalion himself is said to have built, the Athenians showed his grave: proof, they held, that the flood hero had lived and died among them.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.18.7–8"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "eos",
+  "name": "Eos",
+  "greekName": "Ēōs (Ἠώς)",
+  "romanName": "Aurora",
+  "type": "titan",
+  "domains": ["dawn", "morning light", "the opening of heaven"],
+  "epithets": ["Rhododaktylos", "Erigeneia"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Second-generation Titan goddess of Dawn, daughter of Hyperion and Theia, consort of Astraeus and mother of the winds and stars; she rises from beside Tithonus to bring light to gods and mortals.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 371–382; Iliad 11.1–2; Odyssey 5.1–2; Bibliotheca 1.2.2, 1.2.4",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Aurora is instead a daughter of Hyperion and Aethra in Hyginus' genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Theia bore Eos to Hyperion beside great Helios and clear Selene. She shines upon all who live on earth and upon the deathless gods in wide heaven. Pseudo-Apollodorus agrees that Dawn is their daughter, while Hyginus substitutes Aethra for Theia.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 371–374; Bibliotheca 1.2.2; Fabulae Preface",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Joined with Astraeus, Eos bore Zephyrus, Boreas and Notus, then the Dawn-bringer and the gleaming stars. Each morning in Homer she rises from her couch beside lordly Tithonus to bring light to immortals and mortal men.",
+      "sources": ["hesiod", "homer", "apollodorus", "hyginus"],
+      "citation": "Theogony 378–382; Iliad 11.1–2; Odyssey 5.1–2; Bibliotheca 1.2.4; Fabulae Preface"
+    },
+    {
+      "text": "Her loves repeatedly draw mortals away from their homes. She carried Tithonus to Ethiopia and bore Emathion and Memnon; she also carried off Orion and Cephalus. In Pseudo-Apollodorus Aphrodite condemns Dawn to perpetual desire because she had slept with Ares.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 984–991; Bibliotheca 1.4.4, 1.9.4, 3.12.4; Fabulae 189"
+    }
+  ]
+}

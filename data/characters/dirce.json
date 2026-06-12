@@ -1,0 +1,56 @@
+{
+  "id": "dirce",
+  "name": "Dirce",
+  "greekName": "Dirkē (Δίρκη)",
+  "type": "mortal",
+  "domains": [
+    "cruelty",
+    "the spring of Dirce"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The cruel wife of Lycus who tormented the captive Antiope. She suffered a horrific death when Antiope's twin sons tied her to the horns of a wild bull.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7, 8; Description of Greece 9.25.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Wife of Lycus, the regent of Thebes. Suspecting her husband had lain with his beautiful captive Antiope, she ordered her servants to keep Antiope bound in chains and darkness, treating her despitefully for years.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7"
+    },
+    {
+      "text": "While celebrating the revels of Dionysus on Mount Cithaeron, Dirce encountered Antiope, who had miraculously escaped her bonds. Before Dirce could drag her back into captivity, Antiope's twin sons, Amphion and Zethus, recognized their mother.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 8"
+    },
+    {
+      "text": "In retribution for her cruelty, the brothers seized Dirce and tied her by her hair to a wild, untamed bull. Her body was broken and thrown into a spring, which ever after bore the name Dirce.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7; Description of Greece 9.25.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

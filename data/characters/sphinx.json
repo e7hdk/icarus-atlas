@@ -1,0 +1,27 @@
+{
+  "id": "sphinx",
+  "name": "Sphinx",
+  "greekName": "Sphigx (Σφίγξ)",
+  "type": "creature",
+  "domains": ["the riddle", "the plague of Thebes"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A monstrous child of Echidna and Typhon with the face of a woman, the body of a lion, and the wings of a bird. Sent by Hera to ravage Thebes, she threw herself to her death when Oedipus solved her riddle.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the reign of Creon, Hera sent a heavy calamity upon Thebes. The Sphinx, who had learned a riddle from the Muses, sat on Mount Phicium and propounded it to the Thebans: 'What is that which has one voice and yet becomes four-footed and two-footed and three-footed?'",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.5.8"
+    },
+    {
+      "text": "Whenever the Thebans failed to find the answer, she would seize one of them and devour him. After many had perished, including Creon's own son, Oedipus came and answered the riddle: the creature is man, who crawls as a babe, walks upright in his prime, and uses a staff in his old age. Hearing the correct answer, the Sphinx threw herself from the citadel to her doom.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.5.8; Metamorphoses 7.1251; Fabulae 67"
+    }
+  ]
+}

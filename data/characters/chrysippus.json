@@ -1,0 +1,27 @@
+{
+  "id": "chrysippus",
+  "name": "Chrysippus",
+  "greekName": "Chrysippos (Χρύσιππος)",
+  "type": "hero",
+  "domains": ["the Nemean games", "contested succession", "the first Pelopid fratricide"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The beautiful, illegitimate son of Pelops abducted by Laius and later killed by Atreus and Thyestes at Hippodamia's urging.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 85"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus says Laius carried Chrysippus away from the Nemean games because of his beauty. Pelops made war and recovered his son, bringing him back into a household already divided by succession.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 85"
+    },
+    {
+      "text": "At Hippodamia's instigation, Atreus and Thyestes killed their half-brother. Pelops held Hippodamia responsible, and she killed herself; the murder places fratricide in the dynasty before the brothers' own struggle for Mycenae.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 85"
+    }
+  ]
+}

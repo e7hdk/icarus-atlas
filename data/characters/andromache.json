@@ -1,0 +1,49 @@
+{
+  "id": "andromache",
+  "name": "Andromache",
+  "greekName": "Andromachē (Ἀνδρομάχη)",
+  "type": "mortal",
+  "domains": ["wifely devotion", "lament for Hector", "the fall of Troy", "captivity"],
+  "epithets": ["Leukolenos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wife of Hector and mother of the infant Astyanax, who met her husband at the Scaean gate for their famous farewell and led the wailing over his body in the halls of Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.390–496, 24.723–746"
+    },
+    {
+      "text": "Daughter of Eetion, awarded to Neoptolemus as his captive when Troy fell, and mother of his son in Epirus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.23, 6.12; Fabulae 123"
+    }
+  ],
+  "story": [
+    {
+      "text": "Daughter of Eetion, lord of Thebe under wooded Placus, Andromache married Hector and ran to meet him at the Scaean gate, a nurse beside her carrying their baby son — Hector called him Scamandrius, but the rest of Troy called him Astyanax, 'lord of the city.' Achilles had slain her father and her seven brothers in a single raid, she reminds her husband: Hector is now father and queenly mother and brother to her, as well as her stalwart husband. He smiles at the boy in silence, prays that the child may one day be called far better than his father, and turns back to the fighting, foreseeing the day when some Achaean will lead his wife away weeping into slavery.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.390–496"
+    },
+    {
+      "text": "When Achilles cut Hector down, Andromache knew nothing of it. She was weaving a purple web of double fold in the innermost part of the house, embroidering flowers, with bath water heating for her husband's return. At the wailing from the wall she rushed out like a madwoman, saw the body dragged behind the horses toward the ships, and fell back fainting, casting from her head the veil that golden Aphrodite had given her on the day Hector led her as his bride from the house of Eetion with bride-gifts past counting.",
+      "sources": ["homer"],
+      "citation": "Iliad 22.437–515"
+    },
+    {
+      "text": "When Priam brought the body home, white-armed Andromache led the dirge, holding the head of man-slaying Hector in her arms. He has died young and left her a widow with a babe, she sings, and she foresees what is coming: the city will fall now that its guardian is gone, the women will be carried off in the hollow ships, and the boy will either toil for a harsh master or be hurled from the wall by some Achaean whose kinsman Hector slew.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.723–746"
+    },
+    {
+      "text": "It happened as she sang. At the sack of Troy the victors threw Astyanax from the battlements — though Pausanias records the poet Lescheos' version, in which Neoptolemus killed the boy of his own accord, not by Achaean decree — and Andromache fell to Neoptolemus as his special prize. In Apollodorus he took her to the land of the Molossians and begat Molossus on her; Hyginus instead names the son Amphialus. Pausanias gives Neoptolemus three sons by her — Molossus, Pielus, and Pergamus — and says that after Neoptolemus was murdered at Delphi she married the seer Helenus, and that a shrine of Andromache still stood in his own day in the city of Pergamus in Teuthrania.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 5.23, 6.12; Fabulae 123; Description of Greece 1.11.1–2, 10.25.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  ]
+}

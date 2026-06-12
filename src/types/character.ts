@@ -66,6 +66,8 @@ export interface Character {
   story: SourcedText[];
   /** Galaxy region, drives spatial placement (e.g. "core", "titan-ring", "olympian-band"). */
   cluster: string;
+  /** Cities this figure lived in — sourced facts; drives the per-city skies. */
+  residences?: { city: string; sources: SourceId[] }[];
 }
 
 export interface Relation {
@@ -94,6 +96,8 @@ export interface Artwork {
   artist: string;
   year: string;
   imageUrl: string;
+  /** Museum-caption style paragraph: what the work shows and why it matters. */
+  description: string;
 }
 
 /** Cultural legacy items (artworks now; films/music later). Lens-independent. */

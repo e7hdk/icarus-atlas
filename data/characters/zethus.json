@@ -1,0 +1,60 @@
+{
+  "id": "zethus",
+  "name": "Zethus",
+  "greekName": "Zēthos (Ζῆθος)",
+  "type": "hero",
+  "domains": [
+    "brute strength",
+    "builder of Thebes"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Twin son of Zeus and Antiope, renowned for his immense physical power. He carried massive boulders to help build the walls of Thebes alongside his brother Amphion.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Odyssey 11.260; Bibliotheca 3.5.5; Argonautica 1.735"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born by the roadside and raised by a herdsman on Mount Cithaeron, Zethus grew into a man of tremendous physical strength who devoted himself to cattle-breeding and hard labor, in contrast to his brother Amphion's musical pursuits.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7"
+    },
+    {
+      "text": "When his mother Antiope escaped her tormentors and sought refuge, Zethus at first mistook her for a runaway slave and refused to shelter her. But upon recognizing her, he joined Amphion in a brutal revenge, killing King Lycus and binding the cruel Dirce to the horns of a wild bull.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 8"
+    },
+    {
+      "text": "The brothers seized the kingdom from the line of Cadmus and laid the foundations of the lower city of Thebes. To build its massive walls, Zethus hoisted mountain peaks onto his shoulders with raw strength, while Amphion moved rocks with his song. Zethus married Thebe, after whom the city was named.",
+      "sources": [
+        "homer",
+        "apollonius",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.260; Argonautica 1.735; Bibliotheca 3.5.5–6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

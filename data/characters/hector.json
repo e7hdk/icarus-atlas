@@ -1,0 +1,49 @@
+{
+  "id": "hector",
+  "name": "Hector",
+  "greekName": "Hektōr (Ἕκτωρ)",
+  "type": "hero",
+  "domains": ["the defense of Troy", "Trojan command", "single combat"],
+  "epithets": ["Korythaiolos", "Hippodamos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The bulwark of the Trojans in the Iliad, the one man who guarded Ilios: he slew Patroclus, fell to Achilles before the Scaean gates, and his ransomed funeral closes the poem.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.402–403, 16.818–867, 22.326–366, 24.776–804"
+    },
+    {
+      "text": "First son of Priam and Hecuba and husband of Andromache, who killed Protesilaus, the first Achaean ashore, and was slain by Achilles in single combat.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5–6; Epitome 3.30, 4.7; Fabulae 90, 103"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Hector carries the whole defense of Troy: his infant son, whom he calls Scamandrius, the people call Astyanax, 'for Hector alone guarded Ilios.' Meeting Andromache at the Scaean gate, he tells her he knows in heart and soul that the day will come when sacred Ilios will be laid low with Priam and the people of Priam, yet shame keeps him from shrinking out of the fighting. When the baby cries at his flashing helmet, Hector laughs, sets the helm on the ground, kisses his son, and prays to Zeus that the boy may prove pre-eminent among the Trojans even as he, and one day be called better than his father.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.390–496"
+    },
+    {
+      "text": "Zeus himself lays out the design: glorious Hector will slay Patroclus with the spear before the face of Ilios, and in wrath for Patroclus Achilles will slay Hector. When Patroclus drives the Trojans back from the ships, Apollo and Euphorbus strike him first and Hector deals the finishing blow — 'thou art the third in my slaying,' the dying man tells him, foretelling Hector's own death at Achilles' hands. Hector dons the captured armour of the son of Peleus, and Zeus grants him great might in recompense, for he will never come home from that battle for Andromache to receive the armour from him.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.59–68, 16.818–867, 17.198–208"
+    },
+    {
+      "text": "Deadly fate ensnares Hector to stand alone before the Scaean gates. As Achilles runs him down, Zeus lifts the golden scales, Hector's day of doom sinks toward Hades, and Phoebus Apollo leaves him; dying, Hector foretells that Paris and Phoebus Apollo will slay Achilles at that same gate. Achilles pierces the tendons of his feet, binds them with oxhide thongs to his chariot, and drags him in the dust, afterward hauling him three times round the barrow of Patroclus — though Apollo keeps all defacement from the flesh. At last the gods intervene: Zeus has Achilles accept ransom, Priam comes by night to the hut, and Hector is given back. Andromache leads the lament holding his head, and the Iliad ends with his burial: thus held they funeral for horse-taming Hector.",
+      "sources": ["homer"],
+      "citation": "Iliad 22.1–6, 22.208–404, 24.14–18, 24.468–804"
+    },
+    {
+      "text": "For the mythographers Hector is the first son Hecuba bore to Priam, and the husband of Andromache, daughter of Eetion. The first Achaean to leap ashore at Troy — a man Homer leaves nameless, slain by 'a Dardanian warrior' — is Protesilaus, and Apollodorus, Hyginus and Ovid all name Hector as his killer; Ovid adds that fate kept Hector from meeting Achilles until the war's tenth year. In Apollodorus, as in Homer, Achilles slays Hector in single combat and drags him behind the chariot to the ships, but Hyginus has the body dragged around the walls of the Trojans, and Ovid's Neptune likewise remembers the shade of Hector dragged around his own Pergama. Priam ransoms the body — for its weight in gold, says Hyginus — and buries it; centuries later Pausanias saw a grave of Hector at Thebes, where an oracle had bidden the Thebans bring the bones of 'Hector, Priam's son' from Asia and reverence him as a hero.",
+      "sources": ["homer", "apollodorus", "hyginus", "ovid", "pausanias"],
+      "citation": "Iliad 2.698–702; Bibliotheca 3.12.5–6; Epitome 3.30, 4.7; Fabulae 90, 103, 106; Metamorphoses 12.95–222, 12.831–901; Description of Greece 9.18.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

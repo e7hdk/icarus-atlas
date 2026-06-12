@@ -1,0 +1,61 @@
+{
+  "id": "pentheus",
+  "name": "Pentheus",
+  "greekName": "Pentheus (Πενθεύς)",
+  "type": "mortal",
+  "domains": [
+    "Theban kingship",
+    "resistance to Dionysus",
+    "the dismembered king"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Thebes who succeeded his grandfather Cadmus. For his hubristic refusal to recognize the divinity of Dionysus, he was driven mad and torn apart by his own mother, Agave.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.511; Fabulae 184"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born of Echion the Sown Man and the princess Agave, Pentheus succeeded his aging grandfather Cadmus on the throne of Thebes. When his cousin Dionysus arrived with his new rites, Pentheus scorned him, denying his divinity and mocking his effeminate followers.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.511–581; Fabulae 184"
+    },
+    {
+      "text": "Despite the warnings of the blind seer Tiresias and his own grandfather, Pentheus attempted to imprison Dionysus and put a stop to the Bacchic revels. The god easily slipped his chains and lured the king to Mount Cithaeron to spy on the women's secret rites.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.701–733"
+    },
+    {
+      "text": "Discovered hiding in a pine tree, Pentheus was dragged down by the frenzied Bacchanals. Led by his own mother Agave, who in her madness mistook him for a wild beast, the women tore the young king limb from limb.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.2; Metamorphoses 3.701–733; Fabulae 184"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ]
+    }
+  ]
+}

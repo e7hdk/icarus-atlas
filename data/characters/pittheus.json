@@ -1,0 +1,27 @@
+{
+  "id": "pittheus",
+  "name": "Pittheus",
+  "greekName": "Pittheus (Πιτθεύς)",
+  "type": "mortal",
+  "domains": ["King of Troezen", "wisdom"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Pelops and King of Troezen. Renowned for his wisdom, he was the father of Aethra and the grandfather and early tutor of the great hero Theseus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.10; Description of Greece 2.30.8-9"
+    }
+  ],
+  "story": [
+    {
+      "text": "A son of Pelops and Hippodamia, Pittheus migrated to the Argolid peninsula and founded the city of Troezen, naming it after his deceased brother.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.30.8-9"
+    },
+    {
+      "text": "He was famous throughout Greece for his wisdom and eloquence. When King Aegeus of Athens received a cryptic oracle about his childlessness, he visited Pittheus. The wise king understood the oracle instantly, made Aegeus drunk, and sent him to bed with his daughter Aethra, leading to the conception of Theseus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.15.6-7; Description of Greece 1.27.7"
+    }
+  ]
+}

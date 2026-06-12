@@ -1,0 +1,27 @@
+{
+  "id": "aegyptus",
+  "name": "Aegyptus",
+  "greekName": "Aigyptos (Αἴγυπτος)",
+  "type": "mortal",
+  "domains": ["King of Egypt"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The eponymous King of Egypt and twin brother of Danaus. He commanded his fifty sons to pursue the daughters of Danaus, leading to their mass slaughter.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.1.4-5; Fabulae 168; Description of Greece 7.21.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "Aegyptus, son of Belus, conquered the land of the Melampodes and named it Egypt after himself. He had fifty sons by many different wives and concubines.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    },
+    {
+      "text": "He demanded that his twin brother Danaus marry his fifty daughters to his fifty sons. When Danaus refused and fled to Argos, Aegyptus sent his sons to pursue them and force the marriages. All but one of his sons were murdered on their wedding night. Grief-stricken by the loss of his children, he fled to Patrae where he died in sorrow.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.1.5; Fabulae 168; Description of Greece 7.21.13"
+    }
+  ]
+}

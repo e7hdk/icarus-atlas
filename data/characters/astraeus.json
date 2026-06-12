@@ -1,0 +1,27 @@
+{
+  "id": "astraeus",
+  "name": "Astraeus",
+  "greekName": "Astraios (Ἀστραῖος)",
+  "type": "titan",
+  "domains": ["stars", "winds"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Second-generation Titan son of Crius and Eurybia, consort of Eos and father by her of the strong winds and the stars that crown heaven.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 375–382; Bibliotheca 1.2.2, 1.2.4; Fabulae Preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Bright Eurybia, daughter of Pontus, was joined in love with Crius and bore great Astraeus beside Pallas and Perses. Pseudo-Apollodorus preserves the same three sons in his genealogy of the younger Titan house.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 375–377; Bibliotheca 1.2.2"
+    },
+    {
+      "text": "Eos bore to Astraeus the strong-hearted winds: brightening Zephyrus, headlong Boreas and Notus. After them she bore Eosphorus, the Dawn-bringer, and the gleaming stars with which heaven is crowned. Pseudo-Apollodorus compresses the brood to winds and stars, while Hyginus adds Favonius to the named winds.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface"
+    }
+  ]
+}

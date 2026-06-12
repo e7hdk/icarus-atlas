@@ -1,0 +1,682 @@
+[
+  {
+    "id": "peloponnese",
+    "name": "Peloponnese",
+    "greekName": "Πελοπόννησος",
+    "parent": null,
+    "blurb": {
+      "text": "The island of Pelops, where Mycenae rich in gold, Argos and Sparta hold their thrones.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "attica",
+    "name": "Attica",
+    "greekName": "Ἀττική",
+    "parent": null,
+    "blurb": {
+      "text": "Athena's olive-crowned peninsula — Athens of Cecrops and Theseus, and Eleusis of the Mysteries.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "central-greece",
+    "name": "Central Greece",
+    "greekName": "Στερεὰ Ἑλλάς",
+    "parent": null,
+    "blurb": {
+      "text": "Boeotia and Phocis — seven-gated Thebes of Cadmus, and the Delphic seat of Apollo's oracle.",
+      "sources": ["homer", "hesiod", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "euboea",
+    "name": "Euboea",
+    "greekName": "Εὔβοια",
+    "parent": null,
+    "blurb": {
+      "text": "Euboea of the Abantes, the long island leaning across the narrow Euripus strait.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "thessaly",
+    "name": "Thessaly",
+    "greekName": "Θεσσαλία",
+    "parent": null,
+    "blurb": {
+      "text": "Iolcus of Jason and Mount Pelion of the Centaurs, where the Argo was timbered.",
+      "sources": ["homer", "hesiod", "apollonius"]
+    }
+  },
+  {
+    "id": "epirus",
+    "name": "Epirus",
+    "greekName": "Ἤπειρος",
+    "parent": null,
+    "blurb": {
+      "text": "Dodona's oak-grove oracle, the oldest voice of Zeus among the mountains of the west.",
+      "sources": ["homer", "apollodorus"]
+    }
+  },
+  {
+    "id": "macedonia",
+    "name": "Macedonia",
+    "greekName": "Μακεδονία",
+    "parent": null,
+    "blurb": {
+      "text": "The northern marches beneath Mount Olympus, throne of the deathless gods.",
+      "sources": ["homer", "hesiod"]
+    }
+  },
+  {
+    "id": "chalcidice",
+    "name": "Chalcidice",
+    "greekName": "Χαλκιδική",
+    "parent": null,
+    "blurb": {
+      "text": "The three-fingered peninsula — Pallene of the Giants' battle, Sithonia, and Athos.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "ionian-islands",
+    "name": "Ionian Islands",
+    "greekName": "Ἰόνιοι Νῆσοι",
+    "parent": null,
+    "blurb": {
+      "text": "Odysseus' rocky Ithaca and the western sea-roads home from Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "north-aegean",
+    "name": "North Aegean",
+    "greekName": "Βόρειον Αἰγαῖον",
+    "parent": null,
+    "blurb": {
+      "text": "Lemnos, where Hephaestus fell from heaven, and Samothrace of the Mysteries.",
+      "sources": ["homer", "apollodorus"]
+    }
+  },
+  {
+    "id": "south-aegean",
+    "name": "South Aegean",
+    "greekName": "Νότιον Αἰγαῖον",
+    "parent": null,
+    "blurb": {
+      "text": "The Cyclades wheeling around holy Delos, where Leto bore Apollo and Artemis.",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  },
+  {
+    "id": "crete",
+    "name": "Crete",
+    "greekName": "Κρήτη",
+    "parent": null,
+    "blurb": {
+      "text": "Minos' labyrinth-island, where infant Zeus was hidden and the bull-born Minotaur prowled.",
+      "sources": ["hesiod", "apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "troad",
+    "name": "Troad",
+    "greekName": "Τρῳάς",
+    "parent": null,
+    "blurb": {
+      "text": "Priam's country between Mount Ida and the Hellespont, where sacred Ilion stood and fell.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "argolis",
+    "name": "Argolis",
+    "greekName": "Ἀργολίς",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Argos, Mycenae and Tiryns — the heartland of Perseus' line and the Atreid kings.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "laconia",
+    "name": "Laconia",
+    "greekName": "Λακωνία",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Sparta of Menelaus and Helen, in the Eurotas valley between Taygetus and Parnon.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "messenia",
+    "name": "Messenia",
+    "greekName": "Μεσσηνία",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Sandy Pylos, where old Nestor counselled the Achaeans from his hall.",
+      "sources": ["homer", "pausanias"]
+    }
+  },
+  {
+    "id": "arcadia",
+    "name": "Arcadia",
+    "greekName": "Ἀρκαδία",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Pan's upland haunt — Lycaon's impious table and Callisto turned she-bear.",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  },
+  {
+    "id": "elis",
+    "name": "Elis",
+    "greekName": "Ἦλις",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Olympia's plain, won by Pelops in the fatal chariot-race with Oenomaus.",
+      "sources": ["apollodorus", "hyginus", "pausanias"]
+    }
+  },
+  {
+    "id": "achaea",
+    "name": "Achaea",
+    "greekName": "Ἀχαΐα",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "The northern shore-strip that kept the Achaeans' name after they fled the Dorians.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "corinthia",
+    "name": "Corinthia",
+    "greekName": "Κορινθία",
+    "parent": "peloponnese",
+    "blurb": {
+      "text": "Wealthy Corinth on the Isthmus — Sisyphus' Ephyra and Medea's bitter refuge.",
+      "sources": ["homer", "apollodorus", "ovid", "pausanias"]
+    }
+  },
+  {
+    "id": "attica-proper",
+    "name": "Attica",
+    "greekName": "Ἀττική",
+    "parent": "attica",
+    "blurb": {
+      "text": "The olive plain of Athens, prize of Athena's contest with Poseidon.",
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"]
+    }
+  },
+  {
+    "id": "megaris",
+    "name": "Megaris",
+    "greekName": "Μεγαρίς",
+    "parent": "attica",
+    "blurb": {
+      "text": "Megara between the gulfs, where Nisus' purple lock was betrayed by his own daughter.",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  },
+  {
+    "id": "salamis",
+    "name": "Salamis",
+    "greekName": "Σαλαμίς",
+    "parent": "attica",
+    "blurb": {
+      "text": "Telamon's island kingdom, home of the greater Ajax.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "aegina",
+    "name": "Aegina",
+    "greekName": "Αἴγινα",
+    "parent": "attica",
+    "blurb": {
+      "text": "Aeacus' isle, where Zeus turned ants into the Myrmidon people.",
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"]
+    }
+  },
+  {
+    "id": "boeotia",
+    "name": "Boeotia",
+    "greekName": "Βοιωτία",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Cadmus' seven-gated Thebes and Mount Helicon, where the Muses taught Hesiod song.",
+      "sources": ["homer", "hesiod", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "phocis",
+    "name": "Phocis",
+    "greekName": "Φωκίς",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Delphi under Parnassus, where Apollo slew the Python and took the oracle.",
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"]
+    }
+  },
+  {
+    "id": "opuntian-locris",
+    "name": "Opuntian Locris",
+    "greekName": "Λοκρὶς Ὀπουντία",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Opus of Patroclus' boyhood, before the killing that sent him to Phthia.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "ozolian-locris",
+    "name": "Ozolian Locris",
+    "greekName": "Λοκρὶς Ὀζολία",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "The western Locrians above Naupactus, where the Heraclids built their ships.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "doris",
+    "name": "Doris",
+    "greekName": "Δωρίς",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Aegimius' little Doris, whose king Heracles defended against the Lapiths.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "malis",
+    "name": "Malis",
+    "greekName": "Μαλίς",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Trachis and Mount Oeta, where Heracles mounted his own pyre.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "aetolia",
+    "name": "Aetolia",
+    "greekName": "Αἰτωλία",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "Calydon of Oeneus, where Meleager led the hunt for the great boar.",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "acarnania",
+    "name": "Acarnania",
+    "greekName": "Ἀκαρνανία",
+    "parent": "central-greece",
+    "blurb": {
+      "text": "West of the Achelous, named for Acarnan, Alcmaeon's son.",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  },
+  {
+    "id": "hestiaeotis",
+    "name": "Hestiaeotis",
+    "greekName": "Ἑστιαιῶτις",
+    "parent": "thessaly",
+    "blurb": {
+      "text": "Old country of the Lapiths, who fought the Centaurs at Pirithous' wedding.",
+      "sources": ["homer", "ovid", "apollodorus"]
+    }
+  },
+  {
+    "id": "pelasgiotis",
+    "name": "Pelasgiotis",
+    "greekName": "Πελασγιῶτις",
+    "parent": "thessaly",
+    "blurb": {
+      "text": "Pelasgian Argos and Larissa of the horse-plains.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "magnesia",
+    "name": "Magnesia",
+    "greekName": "Μαγνησία",
+    "parent": "thessaly",
+    "blurb": {
+      "text": "Pelion of Chiron the centaur, above Iolcus where the Argo was timbered.",
+      "sources": ["apollonius", "apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "thessaliotis",
+    "name": "Thessaliotis",
+    "greekName": "Θεσσαλιῶτις",
+    "parent": "thessaly",
+    "blurb": {
+      "text": "The southwest plain of the Enipeus, the river-god Tyro loved.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "phthia",
+    "name": "Phthia",
+    "greekName": "Φθία",
+    "parent": "thessaly",
+    "blurb": {
+      "text": "Achilles' Phthia, mustering-ground of the Myrmidons.",
+      "sources": ["homer", "apollodorus", "hyginus"]
+    }
+  },
+  {
+    "id": "chaonia",
+    "name": "Chaonia",
+    "greekName": "Χαονία",
+    "parent": "epirus",
+    "blurb": {
+      "text": "The wild northern coast of Epirus, facing Corcyra across the strait.",
+      "sources": []
+    }
+  },
+  {
+    "id": "molossis",
+    "name": "Molossis",
+    "greekName": "Μολοσσίς",
+    "parent": "epirus",
+    "blurb": {
+      "text": "Dodona's oak oracle and the kingdom Neoptolemus founded after Troy.",
+      "sources": ["homer", "apollodorus"]
+    }
+  },
+  {
+    "id": "thesprotia",
+    "name": "Thesprotia",
+    "greekName": "Θεσπρωτία",
+    "parent": "epirus",
+    "blurb": {
+      "text": "Thesprotia of the Acheron, where Odysseus' false tales rang almost true.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "upper-macedonia",
+    "name": "Upper Macedonia",
+    "greekName": "Ἄνω Μακεδονία",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "The high cantons under the Pindus, springs of the Haliacmon.",
+      "sources": []
+    }
+  },
+  {
+    "id": "pieria",
+    "name": "Pieria",
+    "greekName": "Πιερία",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "Pieria beneath Olympus' north face, birthplace of the Muses.",
+      "sources": ["hesiod", "apollodorus"]
+    }
+  },
+  {
+    "id": "emathia",
+    "name": "Emathia",
+    "greekName": "Ἠμαθία",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "Emathia of Pierus, whose nine daughters dared the Muses to song.",
+      "sources": ["ovid"]
+    }
+  },
+  {
+    "id": "paeonia",
+    "name": "Paeonia",
+    "greekName": "Παιονία",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "The Paeonians of the broad Axios, Troy's far-northern allies.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "mygdonia",
+    "name": "Mygdonia",
+    "greekName": "Μυγδονία",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "The lake country toward the Strymon, whose river-god fathered Rhesus.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "thrace",
+    "name": "Thrace",
+    "greekName": "Θρᾴκη",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "Thrace of Boreas and bloody Ares, where Orpheus sang to the trees.",
+      "sources": ["homer", "apollodorus", "ovid"]
+    }
+  },
+  {
+    "id": "thasos",
+    "name": "Thasos",
+    "greekName": "Θάσος",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "Golden Thasos, settled by the Phoenician kin of Cadmus.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "samothrace",
+    "name": "Samothrace",
+    "greekName": "Σαμοθρᾴκη",
+    "parent": "macedonia",
+    "blurb": {
+      "text": "Samothrace of the great Mysteries, Poseidon's watchtower over the war at Troy.",
+      "sources": ["homer", "apollonius"]
+    }
+  },
+  {
+    "id": "bottike",
+    "name": "Bottike",
+    "greekName": "Βοττική",
+    "parent": "chalcidice",
+    "blurb": {
+      "text": "The mainland base of the trident peninsula.",
+      "sources": []
+    }
+  },
+  {
+    "id": "pallene",
+    "name": "Pallene",
+    "greekName": "Παλλήνη",
+    "parent": "chalcidice",
+    "blurb": {
+      "text": "Pallene, where the gods and Giants joined battle.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "sithonia",
+    "name": "Sithonia",
+    "greekName": "Σιθωνία",
+    "parent": "chalcidice",
+    "blurb": {
+      "text": "The middle finger of the trident, between holy capes.",
+      "sources": []
+    }
+  },
+  {
+    "id": "acte",
+    "name": "Acte",
+    "greekName": "Ἀκτή",
+    "parent": "chalcidice",
+    "blurb": {
+      "text": "The easternmost finger, crowned by Mount Athos.",
+      "sources": []
+    }
+  },
+  {
+    "id": "corcyra",
+    "name": "Corcyra",
+    "greekName": "Κέρκυρα",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "Drepane of the Phaeacians, where Jason wed Medea and Odysseus washed ashore.",
+      "sources": ["homer", "apollonius"]
+    }
+  },
+  {
+    "id": "leucas",
+    "name": "Leucas",
+    "greekName": "Λευκάς",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "The white Leucadian rock the dead pass on their way below.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "cephallenia",
+    "name": "Cephallenia",
+    "greekName": "Κεφαλληνία",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "Same of the Cephallenians, who sailed under Odysseus' command.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "ithaca",
+    "name": "Ithaca",
+    "greekName": "Ἰθάκη",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "Rocky Ithaca, Odysseus' hard-won home.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "zacynthus",
+    "name": "Zacynthus",
+    "greekName": "Ζάκυνθος",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "Wooded Zacynthus of the suitors' roll-call.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "lesbos",
+    "name": "Lesbos",
+    "greekName": "Λέσβος",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "Lesbos, prize of Achilles' raids, where Orpheus' singing head came ashore.",
+      "sources": ["homer", "ovid"]
+    }
+  },
+  {
+    "id": "lemnos",
+    "name": "Lemnos",
+    "greekName": "Λῆμνος",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "Lemnos, where Hephaestus fell from heaven and the Argonauts met Hypsipyle.",
+      "sources": ["homer", "apollonius", "apollodorus", "hyginus"]
+    }
+  },
+  {
+    "id": "chios",
+    "name": "Chios",
+    "greekName": "Χίος",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "Chios of king Oenopion, who blinded the hunter Orion.",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  },
+  {
+    "id": "samos",
+    "name": "Samos",
+    "greekName": "Σάμος",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "Samos, island of Hera's great sanctuary.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "icaria",
+    "name": "Icaria",
+    "greekName": "Ἰκαρία",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "Icaria, where the sea took falling Icarus and kept his name.",
+      "sources": ["apollodorus", "ovid", "hyginus", "pausanias"]
+    }
+  },
+  {
+    "id": "delos",
+    "name": "Delos",
+    "greekName": "Δῆλος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Holy Delos, the floating island that anchored for Leto's twins.",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  },
+  {
+    "id": "naxos",
+    "name": "Naxos",
+    "greekName": "Νάξος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Naxos, where Theseus left Ariadne and Dionysus found her.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "paros",
+    "name": "Paros",
+    "greekName": "Πάρος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Paros of Minos' sons, raided by Heracles on his Amazon voyage.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "thera",
+    "name": "Thera",
+    "greekName": "Θήρα",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Calliste-Thera, sprung from the clod Euphemus let fall into the sea.",
+      "sources": ["apollonius"]
+    }
+  },
+  {
+    "id": "rhodes",
+    "name": "Rhodes",
+    "greekName": "Ῥόδος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Rhodes of the nymph Rhodos, beloved island of Helios.",
+      "sources": ["ovid"]
+    }
+  },
+  {
+    "id": "cos",
+    "name": "Cos",
+    "greekName": "Κῶς",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Cos, where storm-driven Heracles came ashore and fought the Meropes.",
+      "sources": ["homer", "apollodorus"]
+    }
+  }
+]

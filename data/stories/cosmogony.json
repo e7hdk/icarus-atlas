@@ -1,0 +1,50 @@
+{
+  "id": "cosmogony",
+  "title": "The Birth of the Cosmos",
+  "greekTitle": "Κοσμογονία",
+  "kind": "cosmogony",
+  "parent": null,
+  "era": 0,
+  "summary": {
+    "text": "Before the gods there was Chaos. Then came wide-bosomed Gaia, dim Tartarus in the depths, and Eros, fairest of the deathless ones — and from these first powers the whole genealogy of the world unfolds.",
+    "sources": ["hesiod", "apollodorus", "ovid"],
+    "citation": "Hes. Th. 116-122; Apollod. 1.1; Ov. Met. 1.5-88"
+  },
+  "chapters": [
+    {
+      "title": "Out of Chaos",
+      "text": "First of all Chaos came to be; then wide-bosomed Earth, the ever-sure foundation of the deathless ones, dim Tartarus in her depths, and Eros. From Chaos were born Erebus and black Night, and from Night in turn Aether and Day. Ovid tells it otherwise — not a yawning gap but a rude, unordered mass that a god sorted into sea, earth and sky.",
+      "sources": ["hesiod", "ovid"],
+      "citation": "Hes. Th. 116-125; Ov. Met. 1.5-88"
+    },
+    {
+      "title": "Earth and Sky",
+      "text": "Gaia first bore starry Uranus, equal to herself, to cover her on every side; then the tall mountains and the barren sea. Lying with Uranus she bore the twelve Titans, the Cyclopes, and the hundred-handed ones — and their father hated them from the first.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 126-155"
+    },
+    {
+      "title": "The sickle of Cronus",
+      "text": "Uranus hid his children in the depths of Earth, and groaning Gaia forged a great sickle of adamant. Only crooked-counselled Cronus dared the deed: he unmanned his father, and from the blood sprang the Erinyes and the Giants, while from the foam where the severed flesh fell into the sea Aphrodite rose.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 154-206; Apollod. 1.1.4"
+    }
+  ],
+  "cast": [
+    { "id": "chaos", "name": "Chaos", "role": "The first of all" },
+    { "id": "gaia", "name": "Gaia", "role": "Earth, mother of the Titans" },
+    { "id": "uranus", "name": "Uranus", "role": "Sky, the first ruler" },
+    { "id": "tartarus", "name": "Tartarus", "role": "The pit beneath the earth" },
+    { "id": "eros", "name": "Eros", "role": "Love, the moving power" },
+    { "id": "nyx", "name": "Nyx", "role": "Night, child of Chaos" },
+    { "id": "erebus", "name": "Erebus", "role": "Darkness, child of Chaos" },
+    { "id": "cronus", "name": "Cronus", "role": "Wielder of the sickle" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Foam-born of the severed sky" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "116-210" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.1" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.5-88" }
+  ]
+}

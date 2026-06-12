@@ -1,0 +1,41 @@
+{
+  "id": "selene",
+  "name": "Selene",
+  "greekName": "Selēnē (Σελήνη)",
+  "romanName": "Luna",
+  "type": "titan",
+  "domains": ["the moon", "night light", "the lunar cycle"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Second-generation Titan goddess of the Moon, daughter of Hyperion and Theia, who loved the beautiful Endymion and watched over his deathless sleep.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 371–374; Bibliotheca 1.2.2, 1.7.5; Description of Greece 5.1.4",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Luna is instead a daughter of Hyperion and Aethra in Hyginus' genealogy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Theia bore clear Selene to Hyperion beside Helios and Eos. Pseudo-Apollodorus likewise names Moon among the three children of Hyperion and Thia, while Hyginus changes their mother to Aethra.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 371–374; Bibliotheca 1.2.2; Fabulae Preface",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Selene fell in love with Endymion for his surpassing beauty. Pseudo-Apollodorus says Zeus allowed him to choose his fate, and he chose to sleep forever while remaining deathless and ageless. Apollonius remembers the goddess repeatedly straying to his Latmian cave under the spell of love.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.7.5; Argonautica 4.55–65"
+    },
+    {
+      "text": "At Elis, Pausanias records the local claim that the Moon bore Endymion fifty daughters. He also reports competing mortal wives for Endymion and rival tomb traditions at Elis and Mount Latmus, preserving the story as local cult history rather than a single settled genealogy.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.4–5"
+    }
+  ]
+}

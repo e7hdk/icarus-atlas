@@ -1,0 +1,34 @@
+{
+  "id": "hippodamia",
+  "name": "Hippodamia",
+  "greekName": "Hippodameia (Ἱπποδάμεια)",
+  "type": "mortal",
+  "domains": ["the chariot contest of Pisa", "Pelopid queenship", "dynastic succession"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Oenomaus and bride of Pelops, won through the fatal chariot race whose sabotage begins the curse of Myrtilus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 2.4–9; Fabulae 84"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus, Hippodamia falls in love with Pelops and persuades Myrtilus to help him. The charioteer leaves the wheel pins unsecured, Oenomaus is dragged to death, and Pelops wins both Hippodamia and Pisa.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.4–9",
+      "topic": "myrtilus-betrayal"
+    },
+    {
+      "text": "Hyginus shifts the bargain from Hippodamia to Pelops: Pelops promises Myrtilus half the kingdom, then kills him rather than honor the agreement. Hippodamia travels home as the prize of the broken compact.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 84",
+      "topic": "myrtilus-betrayal"
+    },
+    {
+      "text": "Hyginus later makes Hippodamia instigate Atreus and Thyestes to kill their half-brother Chrysippus. When Pelops blamed her for the murder, she took her own life.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 85"
+    }
+  ]
+}

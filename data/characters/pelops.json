@@ -1,0 +1,52 @@
+{
+  "id": "pelops",
+  "name": "Pelops",
+  "greekName": "Pelops (Πέλοψ)",
+  "type": "hero",
+  "domains": ["Pisa", "chariot racing", "the Peloponnese", "dynastic kingship"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Restored after being cut apart at the gods' feast, Pelops won Hippodamia through a sabotaged chariot race and gave his name to the Peloponnese.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 2.3–9; Fabulae 83–84"
+    },
+    {
+      "text": "The brother who mourned Niobe, visibly marked by the ivory shoulder the gods fitted when they restored his dismembered body.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.404–411"
+    },
+    {
+      "text": "A hero of Olympia whose bones, chariot race, and tomb received continuing ritual attention in Elis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.13.1–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Pelops was slaughtered and boiled at a banquet of the gods, then returned to life more beautiful than before. Poseidon loved him and gave him a winged chariot whose axles remained dry even across the sea.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.3"
+    },
+    {
+      "text": "Hyginus makes Tantalus the killer and says Ceres consumed part of the boy before the gods restored him, replacing the missing shoulder with ivory.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 83"
+    },
+    {
+      "text": "Ovid preserves the ivory shoulder as the visible mark Pelops bears while mourning the death of his sister Niobe.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.404–411"
+    },
+    {
+      "text": "To win Hippodamia, Pelops entered Oenomaus' lethal chariot contest. Myrtilus sabotaged the king's wheels, Oenomaus died, and Pelops later cast the charioteer into the sea.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 2.4–9; Fabulae 84"
+    },
+    {
+      "text": "Pausanias saw Pelops as the preeminent local hero of Olympia: his precinct stood beside Zeus' sanctuary, annual sacrifices were made at his tomb, and one of his shoulder bones was remembered as a relic with power over the fortunes of Troy and Elis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.13.1–7"
+    }
+  ]
+}

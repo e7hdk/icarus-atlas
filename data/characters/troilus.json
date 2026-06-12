@@ -1,0 +1,43 @@
+{
+  "id": "troilus",
+  "name": "Troilus",
+  "greekName": "Troilos (Τρωίλος)",
+  "type": "mortal",
+  "domains": ["doomed youth", "the ambush of Achilles", "Priam's fallen sons"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A name in old Priam's lament: gathering the ransom for Hector, the king counts Troilus the warrior charioteer among the best of the sons that Ares has slain.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.255–260"
+    },
+    {
+      "text": "One of the children born to Priam's house in Troy, cut down by Achilles before the city fell.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 3.32; Fabulae 90, 113"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer gives Troilus a single line, and it is his father's. Preparing the wagon that will ransom Hector's body, old Priam chides the sons left to him — liars and dancers, peerless at beating the floor — and mourns the best, whom Ares has slain: godlike Mestor, Hector who walked among men like a god, and Troilus the warrior charioteer. Nothing more is told; by the last year of the war the boy is already a memory, a measure of what the king has lost.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.253–262"
+    },
+    {
+      "text": "Apollodorus sets him last in the list of sons Hecuba bore after Hector and Paris — Deiphobus, Helenus, Pammon, Polites, Antiphus, Hipponous, Polydorus, and Troilus — and adds, against the run of the list, that this last she is said to have had by Apollo. The god's own precinct received him: in the first fighting of the war, when the Trojans showed no courage in the field, Achilles waylaid Troilus and slaughtered him in the sanctuary of Thymbraean Apollo, in the same season of ambushes that took Lycaon by night and lifted the cattle of Aeneas from Ida.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5; Epitome 3.32"
+    },
+    {
+      "text": "Hyginus keeps him only in the catalogues: one name among the five-and-fifty sons and daughters of Priam, and one entry in the roll of who killed whom at Troy, the barest in the list — Achilles, Troilus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 90, 113"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "hyginus"]
+    }
+  ]
+}

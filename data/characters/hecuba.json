@@ -1,0 +1,49 @@
+{
+  "id": "hecuba",
+  "name": "Hecuba",
+  "greekName": "Hekabē (Ἑκάβη)",
+  "romanName": "Hecuba",
+  "type": "mortal",
+  "domains": ["Trojan queenship", "the firebrand dream", "maternal mourning"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Priam's queen in besieged Troy, who bears the fairest robe to Athena's temple and leads the women of Troy in lamentation over Hector, 'far dearest to my heart of all my children.'",
+      "sources": ["homer"],
+      "citation": "Iliad 6.265–295; 22.405–435; 24.750–775"
+    },
+    {
+      "text": "Wife of Priam and mother of Hector who, pregnant with Paris, dreamed she brought forth a firebrand — the omen that her child would be the ruin of Troy.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Fabulae 91"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Iliad Hecuba is Priam's queen within besieged Troy. At Hector's bidding she leads the aged women to Athena's temple, bearing the robe that 'shone like a star' as an offering for the city; her brother Asius, son of Dymas, who dwelt in Phrygia by the streams of the Sangarius, fixes her Homeric parentage. When Achilles kills Hector she leads the vehement lamentation of the women of Troy, and when Priam sets out to ransom the body she brings him honey-hearted wine in a cup of gold for the libation to Zeus. At the funeral she mourns Hector as 'far dearest to my heart of all my children.'",
+      "sources": ["homer"],
+      "citation": "Iliad 6.265–295; 16.700–725; 22.405–435; 24.265–295; 24.750–775"
+    },
+    {
+      "text": "Apollodorus makes Hecuba the second wife of Priam — daughter of Dymas, or, as some say, of Cisseus, or of the river Sangarius and Metope. Her first son was Hector; when a second babe was about to be born she dreamed she had brought forth a firebrand and that the fire spread over the whole city and burned it. The dream-interpreter Aesacus declared the child begotten to be the ruin of his country and advised that it be exposed — the babe was Paris. Apollodorus then counts her other children: Creusa, Laodice, Polyxena and Cassandra, then Deiphobus, Helenus, Pammon, Polites, Antiphus, Hipponous, Polydorus and Troilus, this last said to be her son by Apollo. Pausanias adds that the Sibyl Herophile uttered, on the occasion of Hecuba's dream, the prophecy that was actually fulfilled.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.12.5; Description of Greece 10.12.5"
+    },
+    {
+      "text": "Hyginus gives the dream a darker shape: the pregnant queen — daughter of Cisseus or of Dymas — saw herself giving birth to a glowing firebrand from which many serpents issued, and the seers bade her slay whatever child she bore. He ranks her dream-brand first among the fatal firebrands and Hecuba herself among the most chaste of women; at the war's end, as Ulysses was taking her into servitude, she threw herself into the Hellespont and was changed into a dog, and the place is called Cyneus after her.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 91, 111, 249, 256"
+    },
+    {
+      "text": "Ovid tells her fall at fullest length. Last to board the Greek fleet, torn by Ulysses from the tombs of her sons with Hector's ashes in her bosom, she watches Polyxena sacrificed to the shade of Achilles, then finds the corpse of her youngest son Polydorus, murdered for gold by his Thracian guardian Polymnestor, washed up on the shore. She claws out the king's eyes, and when the angered Thracians attack her with stones and darts she springs at the stones with snapping jaws — trying to speak, she barks, a dog at the narrows of the Hellespont. Apollodorus instead awards her to Ulysses — or, some say, to Helenus, who crossed with her to the Chersonese, where she turned into a bitch and was buried at the place called the Bitch's Tomb — while Pausanias reports that in Stesichorus' Sack of Troy she was carried away by Apollo to Lycia.",
+      "sources": ["ovid", "apollodorus", "pausanias"],
+      "citation": "Metamorphoses 13.399–575; Epitome 5.23; Description of Greece 10.27.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus", "pausanias"]
+    }
+  ]
+}

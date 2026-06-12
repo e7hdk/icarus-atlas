@@ -7,10 +7,14 @@ interface GalaxyState {
   hoveredId: string | null;
   selectedId: string | null;
   isDiving: boolean;
+  searchOpen: boolean;
   setLens: (lens: LensId) => void;
   setHovered: (id: string | null) => void;
   select: (id: string | null) => void;
   setDiving: (isDiving: boolean) => void;
+  setSearchOpen: (open: boolean) => void;
+  spacingScale: number;
+  setSpacingScale: (scale: number) => void;
 }
 
 export const useGalaxyStore = create<GalaxyState>((set) => ({
@@ -18,8 +22,12 @@ export const useGalaxyStore = create<GalaxyState>((set) => ({
   hoveredId: null,
   selectedId: null,
   isDiving: false,
+  searchOpen: false,
+  spacingScale: 3.0,
   setLens: (lens) => set({ lens }),
   setHovered: (hoveredId) => set({ hoveredId }),
   select: (selectedId) => set({ selectedId, hoveredId: null, isDiving: false }),
   setDiving: (isDiving) => set({ isDiving }),
+  setSearchOpen: (searchOpen) => set({ searchOpen }),
+  setSpacingScale: (spacingScale) => set({ spacingScale }),
 }));

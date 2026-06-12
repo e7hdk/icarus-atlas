@@ -287,3 +287,449 @@ Verification: ✓ verified against the cited genealogical lists and both Homeric
 Significance: Heaven changes from Earth's self-generated son and partner into a sibling of Earth produced by the bright upper air and Day.
 
 Verification: ✓ verified against Hesiod's opening cosmogony and Hyginus' genealogical preface.
+
+## Who is the mother of the Iapetionids?
+
+- **topic**: `iapetionid-mother`
+- **Characters**: `prometheus`, `atlas`, `epimetheus`, `menoetius`, `clymene`, `asia`, `iapetus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Iapetus took to wife the neat-ankled Oceanid Clymene, who bore him Atlas, Menoetius, Prometheus and Epimetheus. | Theogony 507–514 |
+| Hyginus | Atlas, Epimetheus and Prometheus are children of Iapetus and Clymene — Menoetius is absent from the list. | Fabulae, preface (Theogony) |
+| Pseudo-Apollodorus | To Iapetus and Asia were born Atlas, Prometheus, Epimetheus and Menoetius; his Oceanid catalogue opens with Asia and contains no Clymene. | Bibliotheca 1.2.2–1.2.3 |
+
+Significance: the mother of Prometheus and Atlas is one Oceanid sister in Hesiod and another in Apollodorus — the disagreement is over which daughter of Oceanus and Tethys married into the house through which fire, the flood and the first woman reached mankind.
+
+Verification: ✓ verified — Theogony 507–514 and Bibliotheca 1.2.2–1.2.3 confirmed against Perseus, Hyginus' preface list ("From Iapetus and Clymene: Atlas, Epimetheus, Prometheus") against ToposText; the equation Clymene = Asia is a modern harmonization found in no ancient source.
+
+## Where the thunderbolt sent Menoetius
+
+- **topic**: `menoetius-punishment`
+- **Characters**: `menoetius`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Wide-seeing Zeus struck outrageous Menoetius with a lurid, smoking thunderbolt and sent him down to Erebus because of his mad presumption and exceeding pride — no battle is mentioned. | Theogony 514–516 |
+| Pseudo-Apollodorus | In the battle with the Titans Zeus smote Menoetius with a thunderbolt and hurled him down to Tartarus. | Bibliotheca 1.2.3 |
+
+Significance: the two authors disagree both on where the blasted Titan fell (Erebus versus Tartarus) and on why — character in Hesiod (pure hubris), allegiance in Apollodorus (the Titanomachy).
+
+Verification: ✓ verified — both passages checked line by line; Hyginus' genealogical preface omits Menoetius from Iapetus' children altogether.
+
+## Who was the first woman?
+
+- **topic**: `first-woman`
+- **Characters**: `pandora`, `pyrrha`, `epimetheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | From the maiden moulded of earth — named Pandora in the Works and Days — is descended the race and tribe of women. | Theogony 570–593; Works and Days 60–82 |
+| Pseudo-Apollodorus | Pandora is "the first woman fashioned by the gods", mother of Pyrrha by Epimetheus. | Bibliotheca 1.7.2 |
+| Pausanias | On the pedestal of the Athena Parthenos is wrought the birth of Pandora, of whom Hesiod and others have sung that she was the first woman. | Description of Greece 1.24.7 |
+| Hyginus | Pyrrha, daughter of Pandora and Epimetheus, "is said to be the first mortal created" (mortalis dicitur prima esse creata). | Fabulae 142 |
+
+Significance: Hyginus shifts the primacy a generation down — as though the clay-born Pandora did not count as mortal, and humanity proper began with her daughter.
+
+Verification: ✓ verified — the Latin of Fabulae 142 confirmed ("Inde nata est Pyrrha, quae mortalis dicitur prima esse creata"); Pandora is unnamed in the Theogony, named only in the Works and Days.
+
+## Where the flood-craft landed
+
+- **topic**: `flood-landing`
+- **Characters**: `deucalion`, `pyrrha`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Deucalion drifts nine days and nights in a stocked chest, built on Prometheus' advice, and lands on Parnassus. | Bibliotheca 1.7.2 |
+| Ovid | A little boat carries Deucalion and Pyrrha to the twin peaks of Parnassus, the only summit above the waves. | Metamorphoses 1.316–319 |
+| Hyginus | Deucalion and Pyrrha flee the cataclysm — no vessel at all — to Mount Etna, said to be the highest mountain in Sicily. | Fabulae 153 |
+| Pausanias | Parnassian local tradition agrees on the mountain: survivors of Deucalion's flood, led by wolf-howls, founded Lycoreia on its peak. | Description of Greece 10.6.2 |
+
+Significance: the Greek Ararat moves from Delphi's mountain to Sicily's volcano depending on the teller — and the means of survival changes with it (chest, boat, or bare flight).
+
+Verification: ✓ verified — Fabulae 153's "in montem Aetnam, qui altissimus in Sicilia esse dicitur" confirmed against the Latin; Hyginus 152A ties the same flood to Phaethon's conflagration as Jove's pretext.
+
+## Who ordered the stones thrown
+
+- **topic**: `flood-repopulation`
+- **Characters**: `deucalion`, `pyrrha`, `zeus`, `hermes`, `themis`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | The survivors consult the oracle of Themis by the Cephisus, and the goddess delivers the riddle of the great mother's bones. | Metamorphoses 1.367–394 |
+| Pseudo-Apollodorus | Zeus sends Hermes to grant Deucalion whatever he chooses; he chooses people and throws the stones at the bidding of Zeus — whence laoi (people) from laas (stone). | Bibliotheca 1.7.2 |
+| Hyginus | The pair petition Jove directly to give them people or destroy them too, and Jove himself orders the stone-throwing. | Fabulae 153 |
+
+Significance: the same act of stone-sowing is commanded by three different divine authorities — an oracle of the old order, a diplomatic Olympian messenger, or the direct voice of the sky god.
+
+Verification: ✓ verified — all three repopulation mechanics confirmed against Perseus and ToposText, including Apollodorus' laoi/laas etymology.
+
+## Were Deucalion and Pyrrha alone?
+
+- **topic**: `flood-survivors`
+- **Characters**: `deucalion`, `pyrrha`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Sole survivors: "we two are the multitude; the sea holds all the rest" (nos duo turba sumus). | Metamorphoses 1.325–327, 1.355 |
+| Hyginus | "The whole human race perished except Deucalion and Pyrrha" (omne genus humanum interiit praeter Deucalionem et Pyrrham). | Fabulae 153; likewise 152A |
+| Pseudo-Apollodorus | All men were destroyed "except a few who fled to the high mountains in the neighborhood". | Bibliotheca 1.7.2 |
+| Pausanias | Local traditions name other survivors: Megarus swam to Gerania following crane-cries, and people woke to wolf-howls and escaped to the top of Parnassus, founding Lycoreia. | Description of Greece 1.40.1, 10.6.2 |
+
+Significance: the poets need a world emptied down to one pious couple; the mythographer and the traveler keep the back doors open — every Greek town that claimed flood-surviving ancestors needed someone besides Deucalion to descend from.
+
+Verification: ✓ verified — "nos duo turba sumus" confirmed at Metamorphoses 1.355; Apollodorus' "except a few" and both Pausanias local traditions checked against the primary texts.
+
+## The father of Hellen
+
+- **topic**: `hellen-paternity`
+- **Characters**: `hellen`, `deucalion`, `zeus`, `pyrrha`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Hellen is the first child Deucalion had by Pyrrha — though "some say" his father was Zeus, a variant Apollodorus records in the same sentence. | Bibliotheca 1.7.2 |
+| Hyginus | Hellen stands in the catalogue of the sons of Jove: "Hellen by Pyrrha, daughter of Epimetheus"; the Astronomica likewise calls his son Aeolus a grandson of Jove. | Fabulae 155; Astronomica 2.18 |
+
+Significance: whether the eponymous ancestor of all Hellenes is the son of a mortal flood-survivor or of Zeus himself decides whether the Greek peoples descend from human piety or divine blood.
+
+Verification: ✓ verified — the children sentence sits at the end of Bibliotheca 1.7.2 (1.7.3 opens with Hellen's own sons), and Fabulae 155's Latin confirmed; Thucydides 1.3 and the Hesiodic Catalogue of Women, the other famous witnesses, are outside the seven-source set.
+
+## Who gave fire to mankind?
+
+- **topic**: `fire-bringer`
+- **Characters**: `prometheus`, `phoroneus`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Zeus hid fire, and Prometheus stole the far-seen gleam of unwearying fire in a hollow fennel stalk for mankind. | Theogony 565–567; Works and Days 47–52 |
+| Pseudo-Apollodorus | Prometheus gave men the fire he had hidden in a fennel stalk, without the knowledge of Zeus. | Bibliotheca 1.7.1 |
+| Hyginus | Prometheus brought fire down to men in a fennel stalk and showed them how to keep it banked in ash. | Fabulae 144 |
+| Pausanias | Beside the sanctuary of Apollo Lycius at Argos burns a perpetual fire called the fire of Phoroneus: the Argives do not admit that Prometheus gave fire to mankind, but assign its discovery to Phoroneus. | Description of Greece 2.19.5 |
+
+Significance: against the panhellenic fennel-stalk theft, Argos kept a rival civic claim — complete with an eternal flame as evidence — that the first fire was found, not stolen, and found by their own first man.
+
+Verification: ✓ verified — Pausanias 2.19.5 confirmed nearly verbatim ("they do not admit that fire was given to mankind by Prometheus, but insist in assigning the discovery of fire to Phoroneus").
+
+## The mother of Phoroneus
+
+- **topic**: `phoroneus-mother`
+- **Characters**: `phoroneus`, `melia`, `inachus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Of Inachus and Melia, daughter of Ocean, were born sons, Phoroneus and Aegialeus. | Bibliotheca 2.1.1 |
+| Hyginus | Inachus, son of Oceanus, begat Phoroneus by his own sister Argia. | Fabulae 143 |
+| Pausanias | The Argive traditions he reports name no mother for Phoroneus at all. | Description of Greece 2.15.5 |
+
+Significance: the first man of Argos has an Oceanid mother named Melia in one handbook and Argia in the other — and Argia, like Melia, never appears outside her single genealogical sentence.
+
+Verification: ✓ verified — Bibliotheca 2.1.1 and Fabulae 143 confirmed; Argia is listed among the Oceanids in Hyginus' preface, so both rival mothers are daughters of Oceanus.
+
+## Whose daughter is Io?
+
+- **topic**: `io-paternity`
+- **Characters**: `inachus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Io is unambiguously the river Inachus' own daughter: he mourns her as lost, recognizes her as the heifer at his banks, and laments her fate. | Metamorphoses 1.583–587, 1.639–667 |
+| Pseudo-Apollodorus | Io's father was Iasus, son of Argus — though the annalist Castor and many of the tragedians make her a daughter of Inachus, and Hesiod (he reports) made her a daughter of Piren. | Bibliotheca 2.1.3 |
+| Hyginus | Io is born "from Inachus and Argia". | Fabulae 145 |
+| Pausanias | In the Argive king-list, Io who went to Egypt is the daughter of Iasus — yet before Deinomenes' statue on the Acropolis he writes "Io, the daughter of Inachus". | Description of Greece 2.16.1, 1.25.1 |
+
+Significance: the most famous of Inachus' children may not be his at all — the paternity splits three ways across the sources, and Pausanias contradicts himself between books.
+
+Verification: ✓ verified — Apollodorus' triple report (Iasus / Inachus per the tragedians / Piren per Hesiod) confirmed at Bibliotheca 2.1.3; the "Hesiod says Piren" claim is Apollodorus' report of a lost work and must never be tagged to the hesiod lens directly.
+
+## Who recruited Myrtilus, and why did Pelops kill him?
+
+- **topic**: `myrtilus-betrayal`
+- **Characters**: `pelops`, `hippodamia`, `myrtilus`, `oenomaus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Hippodamia, already in love with Pelops, persuaded Myrtilus to sabotage Oenomaus' wheels. Pelops later killed Myrtilus after the charioteer attempted to assault Hippodamia. | Epitome 2.6–2.8 |
+| Hyginus | Pelops himself promised Myrtilus half the kingdom for sabotaging the chariot, then threw him into the sea because honoring the bargain would disgrace him. | Fabulae 84 |
+
+Significance: the same treachery can make Hippodamia the architect and Pelops her avenger, or make Pelops both the corruptor and the faithless beneficiary. The curse of Myrtilus therefore begins from two different moral failures.
+
+Verification: ✓ verified — both recruitment scenes, the omitted wheel pin, and the incompatible motives for Myrtilus' death were checked against Epitome 2.6–2.8 and Fabulae 84.
+
+## How many Niobids were there?
+
+- **topic**: `niobids-number-and-names`
+- **Characters**: `niobe`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Niobe had six sons and six daughters. | Iliad 24.602–617 |
+| Pseudo-Apollodorus | His own list has seven sons and seven daughters, but he also reports ten of each in Hesiod, two sons and three daughters in Herodorus, and six of each in Homer. | Bibliotheca 3.5.6 |
+| Ovid | Niobe boasts of seven sons and seven daughters. | Metamorphoses 6.182–183 |
+| Hyginus | Amphion and Niobe had seven sons and seven daughters, followed by a named catalogue. | Fabulae 9, 11 |
+
+Significance: the scale and identities of the massacre change with the teller. A consensus sibling list would manufacture a family that exists in no ancient account.
+
+Verification: ✓ verified — Homer's total and Apollodorus' explicit source catalogue were checked against the primary texts; Ovid and Hyginus independently preserve the 7+7 version.
+
+## Who survived the Niobid massacre?
+
+- **topic**: `niobids-survivors`
+- **Characters**: `niobe`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | His main account saves a son called Amphion and the daughter Chloris; the alternative attributed to Telesilla saves Amyclas and Meliboea. | Bibliotheca 3.5.6 |
+| Ovid | All seven sons and all seven daughters die, followed by Amphion; Niobe is left childless. | Metamorphoses 6.218–312 |
+| Hyginus | Chloris is the only daughter to survive; Amphion later dies attacking Apollo's temple. | Fabulae 9–10 |
+
+Significance: the massacre either annihilates the household or leaves descendants who connect Tantalus to Neleus and Nestor. The difference rewires an entire epic genealogy.
+
+Verification: ✓ verified — the survivor names and Ovid's explicit childless ending were checked line by line. Chloris and Meliboea are not automatically merged because the source data does not yet support sourced aliases.
+
+## Which sons did Atreus serve to Thyestes?
+
+- **topic**: `thyestes-sons-banquet`
+- **Characters**: `atreus`, `thyestes`, `aerope`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Atreus killed Aglaus, Callileon, and Orchomenus, sons of Thyestes by a Naiad, and served them to their father. | Epitome 2.13 |
+| Hyginus | The victims were the infants Tantalus and Plisthenes; a later catalogue associates Thyestes' children with Aerope. | Fabulae 88, 246 |
+
+Significance: the catalogues disagree on the number, names, age, and maternal line of the murdered children. Combining them would turn two incompatible banquets into one oversized sibling set.
+
+Verification: ✓ verified — Apollodorus' three named sons and both Hyginus passages were checked against the primary texts; the contradictory mother in Hyginus remains prose-only until those children become entities.
+
+## Who was the younger Tantalus' father?
+
+- **topic**: `younger-tantalus-parentage`
+- **Characters**: `tantalus-clytemnestra-husband`, `thyestes`, `broteas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The younger Tantalus, Clytemnestra's first husband, was a son of Thyestes. | Epitome 2.16 |
+| Pausanias | He reports both Thyestes and Broteas as competing fathers. | Description of Greece 2.18.2; 2.22.3 |
+
+Significance: the two placements attach Clytemnestra's first husband to different branches of the Pelopid house.
+
+## What were Agamemnon's daughters called?
+
+- **topic**: `agamemnon-daughters-identities`
+- **Characters**: `agamemnon`, `chrysothemis`, `electra`, `iphigenia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Agamemnon names Chrysothemis, Laodice and Iphianassa. | Iliad 9.141–145 |
+| Pseudo-Apollodorus | His catalogue names Chrysothemis, Electra and Iphigenia. | Epitome 3.12 |
+
+Significance: later tradition cannot safely turn Laodice into Electra or Iphianassa into Iphigenia without an explicitly sourced alias claim.
+
+## Who were Iphigenia's parents?
+
+- **topic**: `iphigenia-parentage`
+- **Characters**: `iphigenia`, `agamemnon`, `clytemnestra`, `helen`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Iphigenia belongs to the household of Agamemnon and Clytemnestra. | Epitome 3.12, 3.21 |
+| Hyginus | She is Agamemnon's daughter and Orestes' sister. | Fabulae 98, 120 |
+| Pausanias | He preserves the local claim that Helen bore Iphigenia to Theseus and entrusted her to Clytemnestra. | Description of Greece 2.22.6–7 |
+
+Significance: Pausanias' local tradition changes both Iphigenia's biological parentage and her place in the Atreid household.
+
+## Who killed Agamemnon?
+
+- **topic**: `agamemnon-murder-agency`
+- **Characters**: `agamemnon`, `aegisthus`, `clytemnestra`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Aegisthus is the principal killer, aided by Clytemnestra; Agamemnon also says Clytemnestra directly killed Cassandra. | Odyssey 3.193–198; 11.405–434 |
+| Pseudo-Apollodorus | Aegisthus and Clytemnestra jointly murder Agamemnon. | Epitome 6.23 |
+| Hyginus | Clytemnestra and Aegisthus kill Agamemnon together. | Fabula 117 |
+
+Significance: the sources distribute agency differently, so a single unqualified killer edge would erase an important narrative distinction.
+
+## Whom did Orestes marry?
+
+- **topic**: `orestes-marriages`
+- **Characters**: `orestes`, `hermione`, `erigone`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | He transmits alternatives in which Orestes fathers an heir by Hermione or by Erigone. | Epitome 6.28 |
+| Pausanias | Orestes has Tisamenus by Hermione and Penthilus by Erigone. | Description of Greece 2.18.5–6 |
+
+Significance: Apollodorus frames rival successions while Pausanias incorporates both women into a divided line of descendants.
+
+## Is Dione a Titaness or an Oceanid?
+
+- **topic**: `dione-generation`
+- **Characters**: `dione`, `uranus`, `gaia`, `oceanus`, `tethys`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Dione is one of the Oceanid daughters born to Oceanus and Tethys. | Theogony 346–370 |
+| Pseudo-Apollodorus | Dione is one of the Titanides born directly from Earth and Sky. | Bibliotheca 1.1.3 |
+
+Significance: Dione moves between two divine generations. The atlas keeps her visible as a Titan under the Apollodorus lens while rewiring her beneath Oceanus and Tethys under Hesiod.
+
+## Who were Mnemosyne's parents?
+
+- **topic**: `mnemosyne-parentage`
+- **Characters**: `mnemosyne`, `uranus`, `gaia`, `zeus`, `clymene`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Mnemosyne is a Titan daughter of Gaia and Uranus. | Theogony 132–138 |
+| Pseudo-Apollodorus | Mnemosyne is a Titanis born from Earth and Sky. | Bibliotheca 1.1.3 |
+| Hyginus | The transmitted genealogy makes Mnemosyne a daughter of Jove and Clymene. | Fabulae Preface, Grant p. 30 |
+
+Significance: Hyginus shifts Memory out of the first Titan generation and makes her a descendant of Zeus, an inversion that cannot be reconciled with the older genealogy.
+
+## Who mothered the Sun, Moon and Dawn?
+
+- **topic**: `hyperionid-mother`
+- **Characters**: `hyperion`, `theia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Theia bore Helios, Selene and Eos to Hyperion. | Theogony 371–374 |
+| Pseudo-Apollodorus | Thia and Hyperion are parents of Dawn, Sun and Moon. | Bibliotheca 1.2.2 |
+| Hyginus | Hyperion fathers Sol, Luna and Aurora by Aethra instead. | Fabulae Preface |
+
+Significance: The same three celestial children receive a different mother in Hyginus. Aethra remains prose-only until her identity can be disambiguated and added in a later verified batch.
+
+## Who is the mother of Oedipus' children?
+
+- **topic**: `oedipus-children-mother`
+- **Characters**: `oedipus`, `jocasta`, `euryganeia`, `eteocles`, `polynices`, `antigone`, `ismene`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Oedipus unwittingly married his mother Jocasta and begat Eteocles, Polynices, Ismene and Antigone. | Bibliotheca 3.5.8 |
+| Hyginus | Oedipus begat on Jocasta Eteocles, Polynices, Antigona, and Ismene. | Fabulae 67 |
+| Pausanias | Relying on Homer and the lost Oedipodia, Pausanias claims Euryganeia, daughter of Hyperphas, was the mother of the children, arguing the incest was discovered too quickly for four children to be born. | Description of Greece 9.5.11 |
+
+Significance: Whether the great Theban children—Eteocles, Polynices, and Antigone—are the products of incest or a later, legitimate marriage fundamentally changes their tragic taint.
+
+Verification: ✓ verified — Apollodorus' and Hyginus' lists confirmed; Pausanias' explicit rejection of Jocasta in favor of Euryganeia confirmed at 9.5.11.
+
+## Who was the father of Antiope?
+
+- **topic**: `antiope-parentage`
+- **Characters**: `antiope`, `nycteus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Antiope was the daughter of Nycteus and Polyxo. | Bibliotheca 3.5.5, 3.10.1 |
+| Pausanias | Reports a tradition that her father was the river god Asopus, citing the poet Asius. | Description of Greece 2.6.1, 2.6.4 |
+
+Significance: Whether the mother of the great Theban twin-kings was a mortal princess or the daughter of a river god reflects the competing local traditions of Thebes and Sicyon.
+
+Verification: ✓ verified — Apollodorus' claim confirmed; Pausanias' citation of Asius and local report of Asopus as father confirmed.
+
+## Who is the mother of Nicostratus?
+
+- **topic**: `nicostratus-mother`
+- **Characters**: `nicostratus`, `helen`, `menelaus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Claims that "according to some," Helen gave birth to a son named Nicostratus by Menelaus, in addition to Hermione. | Bibliotheca 3.11.1 |
+| Pausanias | Rejects Helen as his mother, explicitly stating that both Nicostratus and Megapenthes were bastards born to slave women. | Description of Greece 2.18.6 |
+
+Significance: Whether Nicostratus was the legitimate heir of Helen or a bastard like his brother Megapenthes affected his claim to the throne of Sparta after Menelaus' death.
+
+Verification: ✓ verified — Apollodorus' note of the alternate tradition confirmed; Pausanias' explicit rejection confirmed.
+
+## How did Haemon die?
+
+- **topic**: `haemon-death`
+- **Characters**: `haemon`, `sphinx`, `antigone`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Haemon was the last victim devoured by the Sphinx before Oedipus arrived. | Bibliotheca 3.5.8 |
+| Hyginus | Haemon survived to become betrothed to Antigone, but committed suicide over her dead body when Creon condemned her. | Fabulae 72 |
+
+Significance: Did Creon's son die as an innocent victim of a monster sent by Hera, or did he die by his own hand because of his father's tyrannical decree? This contradiction fundamentally changes the moral weight of Creon's tragedy.
+
+Verification: ✓ verified — Apollodorus' claim confirmed; Hyginus' (and Sophocles') claim confirmed.
+
+## Who seduced Danae?
+
+- **topic**: `danae-seduction`
+- **Characters**: `danae`, `zeus`, `proetus`, `acrisius`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Notes an alternative tradition that Danae was seduced by her own uncle, Proetus, sparking the war between the brothers. | Bibliotheca 2.4.1 |
+| Universal (Apollodorus, Hyginus, Ovid) | Zeus visited Danae in the form of a golden shower that poured through the roof into her lap. | Bibliotheca 2.4.1; Fabulae 63; Metamorphoses 4.903 |
+
+Significance: This contradiction strips away the divine glamour of the Perseus myth, reframing the origin of the hero as a sordid dynastic scandal and the true cause of the war between Acrisius and Proetus.
+
+Verification: ✓ verified — Apollodorus' note of Proetus' seduction confirmed.
+
+## How did Perseus die?
+
+- **topic**: `perseus-death`
+- **Characters**: `perseus`, `megapenthes-proetid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus, Pausanias | Perseus peacefully exchanged kingdoms with Megapenthes, taking Tiryns and founding Mycenae while giving Argos to Megapenthes. | Bibliotheca 2.4.4; Description of Greece 2.16.3 |
+| Hyginus | Megapenthes eventually murdered Perseus to avenge the death of his father Proetus. | Fabulae 244 |
+
+Significance: Did the great Gorgon-slayer rule out his days in peace, or did the cycle of fratricidal blood vengeance finally catch up to him?
+
+Verification: ✓ verified — Apollodorus/Pausanias peaceful exchange confirmed; Hyginus' murder claim confirmed.
+
+## Who is the father of Europa?
+
+- **topic**: `europa-paternity`
+- **Characters**: `europa`, `agenor`, `phoenix`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus, Hyginus | Europa is the daughter of King Agenor and Telephassa, making her the sister of Cadmus, Phoenix, and Cilix. | Bibliotheca 3.1.1; Fabulae 178 |
+| Homer | Europa is the daughter of Phoenix, making her the granddaughter of Agenor and niece of Cadmus. | Iliad 14.321 |
+
+Significance: This is a classic clash between the Homeric tradition and later mythographers. If Europa is Phoenix's daughter, the timeline of the Phoenician royal house shifts entirely.
+
+Verification: ✓ verified — Homer's 'daughter of far-famed Phoenix' claim confirmed.
+
+## What happened to Ariadne?
+
+- **topic**: `ariadne-fate`
+- **Characters**: `ariadne`, `dionysus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Artemis killed Ariadne on the island of Dia at the testimony/complaint of Dionysus. | Odyssey 11.321 |
+| Hesiod, Pseudo-Apollodorus, Ovid, Hyginus | Theseus abandoned her on Dia, and Dionysus fell in love with her, rescued her, and made her his immortal wife. | Theogony 947; Epitome 1.9; Metamorphoses 8.176; Fabulae 43 |
+
+Significance: A staggering contradiction that completely flips the role of Dionysus. In the older Homeric epic, he is the cause of her death by the hands of Artemis. In the later, far more famous romantic tradition, he is her savior and divine husband.
+
+Verification: ✓ verified — Homer's 'because of the witness of Dionysus' claim confirmed in Odyssey 11.321.
+
+## Deiphobus' killer at the sack
+
+- **topic**: `deiphobus-slayer`
+- **Characters**: `deiphobus`, `menelaus`, `helen`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollodorus | At the sack of Troy, Menelaus slew Deiphobus — Helen's third husband — and led Helen away to the ships. | Epitome 5.22 |
+| Hyginus | Helen herself is counted among the women who killed their husbands, with Deiphobus son of Priam as her victim. | Fabulae 240 |
+
+## Troilus' paternity
+
+- **topic**: `troilus-paternity`
+- **Characters**: `troilus`, `priam`, `apollo`, `hecuba`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Troilus the warrior charioteer stands among the sons Priam mourns having begotten. | Iliad 24.257 |
+| Apollodorus | Troilus closes the list of Hecuba's sons by Priam, yet "this last she is said to have had by Apollo" — the hedge preserved against his own catalogue. | Bibliotheca 3.12.5 |
+| Hyginus | Troilus appears without comment in the roll of Priam's children. | Fabulae 90 |

@@ -1,5 +1,7 @@
 # Source authors
 
+Local research copies of the primary texts are managed through [`research/corpus/`](../research/corpus/README.md). Use the corpus for passage discovery and citation lookup; it does not replace human verification or the per-fact attribution rules below.
+
 The seven ancient authors that power the source-lens system. Each author is a lens: the galaxy re-shapes genealogies and stories according to what that author actually wrote. Author `id` values below are the canonical `SourceId` codes used in `data/sources.json` and in every `sources` array.
 
 ## Homer

@@ -1,0 +1,27 @@
+{
+  "id": "belus",
+  "name": "Belus",
+  "greekName": "Bēlos (Βῆλος)",
+  "type": "mortal",
+  "domains": ["King of Egypt"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A King of Egypt and son of Poseidon and Libya. He was the father of the twin brothers Danaus and Aegyptus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Belus was the son of Poseidon and Libya, and the twin brother of Agenor. While Agenor departed for Phoenicia, Belus remained in Egypt and ruled over the land.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    },
+    {
+      "text": "He married Anchinoe, a daughter of the river god Nilus, and fathered twin sons of his own: Danaus and Aegyptus. Upon his death, the kingdom was divided, leading to a bitter and murderous rivalry between his sons.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    }
+  ]
+}

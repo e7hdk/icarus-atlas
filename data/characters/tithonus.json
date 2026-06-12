@@ -1,0 +1,69 @@
+{
+  "id": "tithonus",
+  "name": "Tithonus",
+  "greekName": "Tithonos (Τιθωνός)",
+  "type": "mortal",
+  "domains": [
+    "the couch of the dawn",
+    "the Trojan royal line",
+    "the Ethiopian kings"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Laomedon in the royal line of Troy, from whose couch the Dawn rises each morning to bring light to immortals and to mortal men.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 11.1–2, 20.237; Odyssey 5.1–2"
+    },
+    {
+      "text": "Snatched away for love by the Dawn, who carried him to Ethiopia and there bore him two sons, Emathion and Memnon.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Aeneas' recital of the Trojan genealogy, Laomedon begat Tithonus, Priam, Clytius, and Hicetaon — making Tithonus an elder brother of Troy's last king. Both epics open a day on his divine marriage with the same verse: Dawn rose from her couch from beside lordly Tithonus, to bear light to immortals and to mortal men.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.237, 11.1–2; Odyssey 5.1–2"
+    },
+    {
+      "text": "Eos bore to Tithonus brazen-crested Memnon, king of the Ethiopians, and the lord Emathion. Apollodorus tells how the Dawn snatched Tithonus away for love and brought him to Ethiopia, and consorting with him there bore the two sons.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 984–985; Bibliotheca 3.12.4"
+    },
+    {
+      "text": "Both sons fell to greater heroes: Heracles slew Emathion as he passed through Arabia on the quest for the apples of the Hesperides, and Memnon, who led a great force of Ethiopians to Troy and killed Antilochus, was himself slain by Achilles. The Bibliotheca also knows a second Tithonus, borne by the Dawn to Cephalus in Syria and father of Phaethon — a rival genealogy that doubles the name.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.11, 3.14.3; Epitome 5.3"
+    },
+    {
+      "text": "Hyginus counts Tithonus, husband of Aurora, in his catalogue of the most handsome youths, and it was while she was Tithonus' wife that Aurora fell passionately in love with the hunter Cephalus. Ovid, without naming him, glances at the marriage's famous sorrow: when Iolaus was made young again, Aurora was first among the complaining gods, grieving that her own husband's years were old.",
+      "sources": [
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Fabulae 189, 270; Metamorphoses 9.421–422"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

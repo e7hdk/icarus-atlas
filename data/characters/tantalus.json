@@ -1,0 +1,52 @@
+{
+  "id": "tantalus",
+  "name": "Tantalus",
+  "greekName": "Tantalos (Τάνταλος)",
+  "type": "mortal",
+  "domains": ["divine favor betrayed", "the unreachable feast", "the Pelopid dynasty"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Jupiter and Pluto who was welcomed to the gods' table, betrayed what he learned there, and became the eternally thirsty founder of the Pelopid house.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 82"
+    },
+    {
+      "text": "The son of Zeus and Plouto whose grave Pausanias saw on Mount Sipylus, carefully distinguished from a younger namesake buried at Argos.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.22.3"
+    },
+    {
+      "text": "Punished in Hades beneath fruit, with water at his jaws that vanishes whenever he bends to drink.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.582–592"
+    },
+    {
+      "text": "Punished in Hades beneath fruit and a hanging stone, with water at his jaws that vanishes whenever he bends to drink.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer finds Tantalus in the underworld standing in a lake whose water drains away whenever he tries to drink, while laden branches rise beyond his reach. The Odyssey gives the torment without explaining the crime that caused it.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.582–592"
+    },
+    {
+      "text": "Apollodorus adds the stone suspended above him and reports that Tantalus was punished for disclosing divine mysteries to mortals and trying to share ambrosia with his companions.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.1"
+    },
+    {
+      "text": "Hyginus makes him the privileged son of Jupiter and Pluto: Jupiter admitted him to the banquets and confided his plans to him, but Tantalus repeated those plans to mankind. His punishment combines receding water, retreating apples, and a threatening stone.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 82"
+    },
+    {
+      "text": "Pausanias located the founder's grave on Mount Sipylus and distinguished him from a younger Tantalus buried at Argos. The local monument anchors the dynasty in Lydia rather than treating its founder only as a shade in Hades.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.22.3"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "atreus",
+  "name": "Atreus",
+  "greekName": "Atreus (Ἀτρεύς)",
+  "type": "mortal",
+  "domains": ["Mycenaean kingship", "the golden lamb", "the banquet of Thyestes"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Pelops and Hippodamia, king of Mycenae and rival of Thyestes, whose revenge banquet made the house of Atreus a byword for inherited violence.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 2.10–14; Fabulae 86–88; Description of Greece 2.18.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Aerope secretly gave Thyestes the golden lamb Atreus had hidden after failing to sacrifice it to Artemis. Thyestes used the token to seize Mycenae, but Zeus reversed the sun as a sign for Atreus, who recovered the throne and expelled his brother.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.10–12"
+    },
+    {
+      "text": "Apollodorus names the murdered sons of Thyestes as Aglaus, Callileon, and Orchomenus. Atreus killed them at Zeus' altar, served their flesh to their father, and revealed their extremities after the meal.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.13",
+      "topic": "thyestes-sons-banquet"
+    },
+    {
+      "text": "Hyginus gives the banquet different victims, the infant Tantalus and Plisthenes, and says the Sun turned aside his chariot at the crime.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 88",
+      "topic": "thyestes-sons-banquet"
+    },
+    {
+      "text": "Pausanias saw the stone ram on Thyestes' grave and recalled both the stolen golden lamb and the notorious banquet devised by Atreus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.18.1"
+    }
+  ]
+}

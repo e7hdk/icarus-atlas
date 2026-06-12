@@ -1,0 +1,74 @@
+{
+  "id": "seven-against-thebes",
+  "title": "Seven Against Thebes",
+  "greekTitle": "Ἑπτὰ ἐπὶ Θήβας",
+  "kind": "war",
+  "parent": null,
+  "era": 6,
+  "summary": {
+    "text": "Cursed by their father Oedipus, the sons of the Theban house turned on each other: Polynices brought seven Argive captains against the seven gates of Thebes, and the brothers died on each other's spears.",
+    "sources": ["apollodorus", "pausanias", "hyginus"],
+    "citation": "Apollod. 3.6-3.7; Paus. 9.5, 9.8-9.9; Hyg. Fab. 67-72"
+  },
+  "chapters": [
+    {
+      "title": "The broken pact",
+      "text": "Eteocles and Polynices agreed to alternate the throne of Thebes year by year. Eteocles refused to yield it, and Polynices went as an exile to Argos, where king Adrastus gave him a daughter and an army.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.6.1; Hyg. Fab. 67-69"
+    },
+    {
+      "title": "Seven captains at seven gates",
+      "text": "Seven champions led the host against the seven gates. The boast of Capaneus ended in lightning — Zeus struck him from the wall as he swore not even the gods would keep him out of the city.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.6.3-7; Paus. 9.8.7"
+    },
+    {
+      "title": "Menoeceus at the gates",
+      "text": "Tiresias told the besieged Thebans they would prevail if Menoeceus, son of Creon, offered himself freely to Ares. Hearing it, the young man went out and slew himself before the gates.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.6.7"
+    },
+    {
+      "title": "The brothers' duel",
+      "text": "Eteocles and Polynices met in single combat and killed each other. The kingdom passed into Creon's hands — as king outright by one telling, as regent for Eteocles' son Laodamas by another.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 3.6.8; Paus. 9.5.12-13; Hyg. Fab. 71"
+    },
+    {
+      "title": "Antigone's defiance",
+      "text": "Creon cast out the Argive dead unburied and set watchmen over them. Antigone stole the body of her brother Polynices and buried it in secret — and was detected by Creon himself.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.7.1; Hyg. Fab. 72"
+    },
+    {
+      "title": "The Epigoni",
+      "text": "A generation later the sons of the Seven returned. Thebes was beaten at Glisas and abandoned; Laodamas fell to Alcmaeon — or led the survivors away to Illyria — and the Argives set Thersander, son of Polynices, upon the throne.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.7.2-4; Paus. 9.5.13-14, 9.8.6, 9.9.4-5"
+    }
+  ],
+  "cast": [
+    { "id": "oedipus", "name": "Oedipus", "role": "Father of the curse" },
+    { "id": "eteocles", "name": "Eteocles", "role": "Holder of the throne" },
+    { "id": "polynices", "name": "Polynices", "role": "The exiled brother" },
+    { "id": "creon", "name": "Creon", "role": "Ruler after the fall" },
+    { "id": "antigone", "name": "Antigone", "role": "The defiant sister" },
+    { "id": "tiresias", "name": "Tiresias", "role": "The blind seer" },
+    { "id": "menoeceus-young", "name": "Menoeceus", "role": "The willing sacrifice" },
+    { "name": "Adrastus", "role": "King of Argos, leader of the host" },
+    { "name": "Capaneus", "role": "The lightning-struck boaster" },
+    { "name": "Amphiaraus", "role": "The seer who foresaw his death" },
+    { "name": "Laodamas", "role": "Eteocles' heir" },
+    { "name": "Thersander", "role": "King set up by the Epigoni" }
+  ],
+  "places": [
+    { "id": "thebes", "name": "Thebes", "role": "The besieged city" },
+    { "id": "argos", "name": "Argos", "role": "Mustering ground of the Seven" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.6-3.7" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "9.5, 9.8-9.9" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "67-72" }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "antiope",
+  "name": "Antiope",
+  "greekName": "Antiopē (Ἀντιόπη)",
+  "type": "mortal",
+  "domains": [
+    "the oppressed mother"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A princess famous for her beauty who was loved by Zeus. To escape her father's wrath she fled to Epopeus, but was captured and cruelly tormented by Dirce and Lycus until her twin sons grew up to avenge her.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.1-4; Fabulae 7, 8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Renowned across Greece for her beauty, Antiope conceived children by Zeus. Fearful of her father's anger, she fled from Thebes to Sicyon and married King Epopeus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.1-2"
+    },
+    {
+      "text": "Before his death in battle, her father urged Lycus to punish her. Lycus took Sicyon, slew Epopeus, and led Antiope away as a captive. On the journey back, at a crossroads near Mount Cithaeron, she gave birth to twin boys, Amphion and Zethus, who were left for a shepherd to raise.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.3; Fabulae 7"
+    },
+    {
+      "text": "For years she was treated as a slave by Lycus and his cruel wife Dirce, bound in chains and hidden in darkness. At last, her bonds miraculously fell away, and she escaped to the mountain where her sons had grown to manhood. Once they recognized their mother, they exacted a terrible vengeance on her tormentors.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7, 8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "theia",
+  "name": "Theia",
+  "greekName": "Theia (Θεία)",
+  "type": "titan",
+  "domains": ["heavenly light", "motherhood of the sun, moon and dawn"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan daughter of Uranus and Gaia, consort of Hyperion and mother by him of Helios, Selene and Eos — the sun, moon and dawn.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138, 371–374; Bibliotheca 1.1.3, 1.2.2",
+      "topic": "hyperionid-mother"
+    },
+    {
+      "text": "Hyginus assigns the three lights to Hyperion and Aethra instead, displacing Theia from their maternal line.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Theia belongs to the first Titan generation, one of the daughters Gaia bore to starry Uranus alongside Rhea, Themis, Mnemosyne, Phoebe and Tethys. Pseudo-Apollodorus calls her Thia and likewise numbers her among the Titanides born from Earth and Sky.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 132–138; Bibliotheca 1.1.3"
+    },
+    {
+      "text": "Joined in love with Hyperion, she bore the three great lights of the world: Helios the sun, Selene the moon and Eos the dawn. Pseudo-Apollodorus agrees, while Hyginus' genealogy names Aethra as their mother instead; the disagreement is preserved as a source-lens variant.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 371–374; Bibliotheca 1.2.2; Fabulae Preface",
+      "topic": "hyperionid-mother"
+    }
+  ]
+}

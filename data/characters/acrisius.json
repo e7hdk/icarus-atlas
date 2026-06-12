@@ -1,0 +1,27 @@
+{
+  "id": "acrisius",
+  "name": "Acrisius",
+  "greekName": "Akrisios (Ἀκρίσιος)",
+  "type": "mortal",
+  "domains": ["King of Argos", "fear of prophecy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The paranoid King of Argos who locked his daughter Danae in a bronze chamber to prevent a prophecy that his grandson would kill him. He was killed by Perseus' stray discus.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.4.1-4; Fabulae 63, 273; Description of Greece 2.16.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Acrisius fought a bitter war against his twin brother Proetus for the throne of Argos. When an oracle warned him that a son born to his daughter Danae would kill him, he locked her away in a subterranean bronze chamber.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.2.1, 2.4.1; Fabulae 63; Description of Greece 2.23.7"
+    },
+    {
+      "text": "Despite his precautions, Danae gave birth to Perseus. Acrisius threw both mother and child into the sea in a wooden chest. Years later, his fears came true: while attending athletic games in Larissa, Perseus accidentally struck Acrisius with a discus, fulfilling the prophecy.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.4.1, 2.4.4; Fabulae 273"
+    }
+  ]
+}

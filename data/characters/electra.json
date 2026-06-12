@@ -1,0 +1,32 @@
+{
+  "id": "electra",
+  "name": "Electra",
+  "greekName": "Ēlektra (Ἠλέκτρα)",
+  "type": "hero",
+  "domains": ["the rescue of Orestes", "vengeance on Aegisthus", "the Atreid succession"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Agamemnon and Clytemnestra who saved the infant Orestes, sent him to safety, and later married his steadfast companion Pylades.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 2.16, 6.24–28; Fabulae 117, 122; Description of Greece 2.16.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon was murdered, Electra carried her brother Orestes out of danger and gave him to Strophius in Phocis, where he grew up beside Pylades.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.24; Fabulae 117"
+    },
+    {
+      "text": "A false report later told Electra that Orestes and Pylades had died in Tauris. When Iphigenia arrived, another lie nearly drove Electra to attack the sister she did not recognize before Orestes intervened.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 122"
+    },
+    {
+      "text": "Orestes gave Electra in marriage to Pylades. Pausanias saw her tomb at Mycenae and reports through Hellanicus that their sons were Medon and Strophius.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.16.7"
+    }
+  ]
+}

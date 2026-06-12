@@ -1,0 +1,49 @@
+{
+  "id": "aeneas",
+  "name": "Aeneas",
+  "greekName": "Aineias (Αἰνείας)",
+  "romanName": "Aeneas",
+  "type": "hero",
+  "domains": ["filial piety", "the Dardanian command", "the survival of the Trojan line"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A goddess's son among mortal men: Aphrodite conceived him to the hero Anchises on the slopes of Ida.",
+      "sources": ["homer", "hesiod", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.819–821; Theogony 1008–1010; Bibliotheca 3.12.2; Fabulae 94"
+    },
+    {
+      "text": "Leader of the Dardanians whom the gods repeatedly snatched from death, fated to escape Troy's fall so that the race of Dardanus should not perish.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.819–821, 5.311–318, 20.302–339"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes Aeneas captain of the Dardanians, \"whom fair Aphrodite conceived to Anchises amid the spurs of Ida, a goddess couched with a mortal man,\" and has the Trojan folk honor him even as a god. Hesiod tells the same union from the goddess's side: Cytherea with the beautiful crown lay in sweet love with the hero Anchises and bore Aeneas on the peaks of many-folded Ida.",
+      "sources": ["homer", "hesiod"],
+      "citation": "Iliad 2.819–821, 11.58; Theogony 1008–1010"
+    },
+    {
+      "text": "In battle the gods themselves keep him alive. When Diomedes strikes him down, his mother flings her white arms about her dear son and spreads her bright garment against the spears, and Apollo carries him into his sanctuary in Pergamus to be healed. When Achilles bears down on him, Poseidon sheds a mist over the killer's eyes and swings Aeneas clear over the ranks, declaring it ordained that he escape so that the race of Dardanus not perish without seed: the mighty Aeneas shall be king among the Trojans, and his sons' sons born in days to come.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.311–318, 5.432–453, 20.302–339"
+    },
+    {
+      "text": "Apollodorus sets his birth in the Trojan royal line: Aphrodite met Anchises, son of Capys, in love's dalliance and bore him Aeneas and Lyrus, who died childless. Achilles' raid on his cattle on Ida drove Aeneas into flight before he joined the war in its ninth year as a leader of the Dardanians; when the city fell he took up his father Anchises and fled, and the Greeks let him alone on account of his piety.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.2; Epitome 3.32–34, 5.21"
+    },
+    {
+      "text": "The Latin authors carry that piety west. Hyginus counts Aeneas among the most pious of men, bearing Anchises out of the fire on his shoulders and rescuing his son Ascanius — though his fable of Anchises has Jupiter's thunderbolt strike the father for boasting of Venus' love. In Ovid the Cytherean hero carries the sacred relics and his father, a venerable burden, from burning Troy, sails from Antandros, descends with the Sibyl of Cumae to meet Anchises' shade, and is at last washed clean of his mortal part in the river Numicius and worshipped as the god Indiges. Pausanias heard of Laconian cities Aeneas founded when storms drove him into the gulf as he fled toward Italy — a westward destiny that sits athwart Homer's prophecy of kingship among the Trojans.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 13.623–639, 14.101–119, 14.581–608; Fabulae 94, 254; Description of Greece 3.22.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

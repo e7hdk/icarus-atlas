@@ -1,0 +1,48 @@
+{
+  "id": "ilus",
+  "name": "Ilus",
+  "greekName": "Ilos (Ἶλος)",
+  "type": "mortal",
+  "domains": ["the founding of Ilion", "the Palladium", "Trojan kingship"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Tros who followed a dappled cow at an oracle's bidding, founded Ilium where she lay down, and received the heaven-fallen Palladium as Zeus' sign.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.3"
+    },
+    {
+      "text": "A link in the Trojan royal line between Tros and Laomedon, long dead by the time of the war, when his great barrow on the plain serves as a landmark in the fighting.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.230–236; 11.371–372"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Aeneas recites the Trojan lineage to Achilles, he names Ilus among the three peerless sons born to Tros — Ilus, Assaracus, and godlike Ganymede, whom the gods caught up to pour wine for Zeus. Ilus in turn begat peerless Laomedon, father of Priam's generation of Trojan princes.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.230–238"
+    },
+    {
+      "text": "Apollodorus makes Ilus a son of Tros and Callirrhoe, daughter of Scamander. He went to Phrygia, won the wrestling at games held by the king, and took as his prize fifty youths and as many maidens; the king, obeying an oracle, gave him also a dappled cow and bade him found a city wherever she should lie down. The cow lay down on the hill of the Phrygian Ate, and there Ilus built a city and called it Ilium. When he prayed to Zeus for a sign, he found the Palladium fallen from heaven before his tent — three cubits high, its feet joined, a spear aloft in one hand and a distaff and spindle in the other — and he built a temple for it and honored it. He married Eurydice, daughter of Adrastus, and begat Laomedon.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.2–3.12.3"
+    },
+    {
+      "text": "In the Iliad Ilus is already an honored ancestor in the earth: Hector holds his night council by the tomb of godlike Ilus, Paris leans on the pillar of his barrow to shoot Diomedes, and Priam's mule cart passes the great mound on the way to Achilles. In those passages the poem calls the dead elder a son of Dardanus, though the genealogy of Book 20 makes Ilus the son of Tros, Dardanus' great-grandson.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.415; 11.166, 371–372; 24.349"
+    },
+    {
+      "text": "Ovid keeps the founder at the head of the dynasty's memory: when Ceyx tells the story of Aesacus, the royal pedigree of Troy is traced from Ilus, Assaracus, and Ganymede down through old Laomedon and Priam, who was allotted Troy's final days.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.755–757"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

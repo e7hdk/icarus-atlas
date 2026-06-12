@@ -1,0 +1,33 @@
+{
+  "id": "hermione",
+  "name": "Hermione",
+  "greekName": "Hermionē (Ἑρμιόνη)",
+  "type": "mortal",
+  "domains": ["Spartan succession", "the marriages of Neoptolemus and Orestes"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The only child of Helen and Menelaus, promised to Neoptolemus after Troy but later wife of Orestes and mother of Tisamenus.",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 4.1–14; Epitome 3.3, 6.14, 6.28; Description of Greece 2.18.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer calls Hermione the lovely, Aphrodite-like child after whose birth the gods granted Helen no more offspring. Menelaus sends her from Sparta to the son of Achilles in fulfillment of a pledge made at Troy.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.1–14"
+    },
+    {
+      "text": "Apollodorus says Helen left nine-year-old Hermione behind when she departed with Paris. After Troy, Neoptolemus carried her off during Orestes' madness and was killed by Orestes at Delphi.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.3, 6.14"
+    },
+    {
+      "text": "Orestes married Hermione and fathered Tisamenus. Pausanias makes that son the legitimate successor to Orestes' combined Spartan and Argive power.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.18.6",
+      "topic": "orestes-marriages"
+    }
+  ]
+}

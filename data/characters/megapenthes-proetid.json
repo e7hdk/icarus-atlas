@@ -1,0 +1,27 @@
+{
+  "id": "megapenthes-proetid",
+  "name": "Megapenthes",
+  "greekName": "Megapenthēs (Μεγαπένθης)",
+  "type": "mortal",
+  "domains": ["King of Argos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Proetus. He exchanged his kingdom of Argos for Tiryns with Perseus. In some accounts, he later murdered Perseus to avenge his father.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.4.4; Fabulae 244; Description of Greece 2.16.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Perseus accidentally killed his grandfather Acrisius, he felt too much shame to claim the throne of Argos. Instead, he approached his cousin Megapenthes, the son of Proetus, and offered to exchange kingdoms. Megapenthes agreed, taking Argos while Perseus ruled Tiryns and founded Mycenae.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
+    },
+    {
+      "text": "While this exchange seemed peaceful, Hyginus records a darker end to the tale: he claims Megapenthes eventually murdered the great hero Perseus to avenge the death of his own father, Proetus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 244"
+    }
+  ]
+}

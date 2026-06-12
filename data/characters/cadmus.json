@@ -1,0 +1,66 @@
+{
+  "id": "cadmus",
+  "name": "Cadmus",
+  "greekName": "Kadmos (Κάδμος)",
+  "type": "hero",
+  "domains": [
+    "the founding of Thebes",
+    "the dragon's teeth",
+    "the Phoenician alphabet"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Phoenician prince who sought his sister Europa but found a kingdom instead: following a divinely appointed cow, he slew the dragon of Ares, sowed its teeth to reap an army, and built the citadel of Thebes.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 3.4.1; Argonautica 3.1163"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus carried off Europa, her father Agenor sent Cadmus to search for her, forbidding him to return without her. Cadmus wandered the earth in vain, for who can fathom the deceits of Jove? He went to Delphi to ask the god where he should settle; Apollo told him to follow a cow that bore a white mark on each flank, and to found a city where she fell down for weariness.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.1; Metamorphoses 3.1–140"
+    },
+    {
+      "text": "The cow led him through Boeotia and sank down where Thebes now stands. When Cadmus sent his men to draw water from the spring of Ares for a sacrifice, the spring's guardian—a great dragon—killed them. Cadmus slew the serpent, and by Athena's counsel sowed its teeth in the earth. From the furrows sprang armed men, the Spartoi (Sown Men); Cadmus threw a stone among them, and in their confusion they fought each other until only five survived to become the ancestors of the Theban nobility.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.1–2; Metamorphoses 3.141–200"
+    },
+    {
+      "text": "To atone for the dragon's slaughter, Cadmus served Ares for an eternal year (which was then eight years). When his servitude ended, Athena secured the kingdom for him, and Zeus gave him Harmonia, the daughter of Ares and Aphrodite, as his wife. All the gods left Olympus to attend the wedding in the Cadmea, bringing glorious gifts.",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 3.4.2; Theogony 929o–940"
+    },
+    {
+      "text": "In his old age, Cadmus yielded the kingship to his grandson Pentheus. After Pentheus was torn apart by his own mother, Cadmus and Harmonia left Thebes for the land of the Encheleans in Illyria. There, fulfilling an oracle, they led the Encheleans to victory; ultimately, the two founders were transformed into serpents and sent by Zeus to the Elysian Fields.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.5.2–4; Metamorphoses 4.563–614"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ariadne",
+  "name": "Ariadne",
+  "greekName": "Ariadnē (Ἀριάδνη)",
+  "type": "mortal",
+  "domains": ["the thread of escape", "bride of Dionysus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The daughter of Minos who gave Theseus a ball of thread to escape the Labyrinth. After fleeing Crete, she met a disputed fate involving betrayal by Theseus and salvation by Dionysus.",
+      "sources": ["apollodorus", "ovid", "homer", "hesiod"],
+      "citation": "Epitome 1.8-9; Metamorphoses 8.172; Odyssey 11.321; Theogony 947"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Athenian hero Theseus arrived in Crete as part of the human tribute for the Minotaur, the princess Ariadne fell deeply in love with him. She promised to help him kill the beast if he would take her away to Athens and marry her.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 1.8; Fabulae 42"
+    },
+    {
+      "text": "On the advice of Daedalus, she gave Theseus a ball of thread. By tying one end to the door and unwinding it as he went, Theseus was able to find his way back out of the dark, twisting Labyrinth after slaying the Minotaur. Under the cover of night, they fled the island together.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 1.9; Metamorphoses 8.172"
+    },
+    {
+      "text": "Her ultimate fate is famously disputed. According to Homer, she never reached Athens because Artemis killed her on the island of Dia at the testimony of Dionysus. In the more romantic tradition of Ovid and Hesiod, Theseus cruelly abandoned her while she slept on Dia, but she was soon discovered by Dionysus, who fell in love with her, married her, and made her immortal, placing her bridal crown among the stars.",
+      "sources": ["homer", "hesiod", "apollodorus", "hyginus", "ovid"],
+      "citation": "Odyssey 11.321; Theogony 947; Epitome 1.9; Fabulae 43; Metamorphoses 8.176"
+    }
+  ]
+}

@@ -21,6 +21,14 @@ export const characterSchema = z.object({
   summary: z.array(sourcedTextSchema).min(1),
   story: z.array(sourcedTextSchema).min(1),
   cluster: z.string().min(1),
+  residences: z
+    .array(
+      z.object({
+        city: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'city must be kebab-case'),
+        sources: z.array(sourceIdSchema).min(1),
+      }),
+    )
+    .optional(),
 });
 
 export const relationSchema = z.object({
@@ -47,11 +55,105 @@ export const artworkSchema = z.object({
   artist: z.string().min(1),
   year: z.string().min(1),
   imageUrl: z.string().url(),
+  description: z.string().min(1),
 });
 
 export const cultureSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
   artworks: z.array(artworkSchema),
+});
+
+export const STORY_KINDS = ['cosmogony', 'war', 'catastrophe', 'saga', 'episode'] as const;
+
+export const storySchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  title: z.string().min(1),
+  greekTitle: z.string().optional(),
+  kind: z.enum(STORY_KINDS),
+  /** Sub-stories nest under a parent story (e.g. Rhesus under the Trojan War). */
+  parent: z.string().nullable(),
+  /** Rough mythic-chronology sort key (cosmogony 0 … returns 9). */
+  era: z.number(),
+  summary: sourcedTextSchema,
+  /** The narrative as sourced beats; competing variants share a `topic`. */
+  chapters: z
+    .array(
+      z.object({
+        title: z.string().min(1),
+        text: z.string().min(1),
+        sources: z.array(sourceIdSchema).min(1),
+        citation: z.string().optional(),
+        topic: z.string().optional(),
+      }),
+    )
+    .min(1),
+  /** Cast; `id` links to a character once promoted, plain names until then. */
+  cast: z.array(
+    z.object({
+      id: z.string().optional(),
+      name: z.string().min(1),
+      role: z.string().min(1),
+    }),
+  ),
+  /** Places; `id` links to a curated city. */
+  places: z.array(
+    z.object({
+      id: z.string().optional(),
+      name: z.string().min(1),
+      role: z.string().optional(),
+    }),
+  ),
+  /** The ancient works that tell this story ("told in"). */
+  attestations: z
+    .array(
+      z.object({
+        source: sourceIdSchema,
+        work: z.string().min(1),
+        citation: z.string().optional(),
+      }),
+    )
+    .min(1),
+});
+
+export const geoRegionSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  name: z.string().min(1),
+  greekName: z.string().min(1),
+  parent: z.string().nullable(),
+  blurb: z.object({
+    text: z.string().min(1),
+    sources: z.array(z.enum(SOURCE_IDS)),
+  }),
+});
+
+export const geoCitySchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  name: z.string().min(1),
+  greekName: z.string().min(1),
+  /** Region (or sub-region) id; null for far-myth places outside every region. */
+  region: z.string().nullable(),
+  /** [longitude, latitude] from the Pleiades gazetteer (CC BY). */
+  coordinates: z.tuple([z.number(), z.number()]),
+  pleiadesId: z.string().min(1),
+});
+
+export const lineageSchema = z.object({
+  city: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'city must be kebab-case'),
+  reigns: z
+    .array(
+      z.object({
+        /** Display name; may stay a plain attested name until promoted to a character. */
+        ruler: z.string().min(1),
+        /** Optional link to data/characters once the ruler is a verified character. */
+        characterId: z.string().optional(),
+        sources: z.array(z.enum(SOURCE_IDS)).min(1),
+        citation: z.string().optional(),
+        note: z.string().optional(),
+        /** Competing variants of the same fact share a topic (⚖ in the UI). */
+        topic: z.string().optional(),
+      }),
+    )
+    .min(1),
 });
 
 export const referenceSchema = z.object({

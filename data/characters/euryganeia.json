@@ -1,0 +1,46 @@
+{
+  "id": "euryganeia",
+  "name": "Euryganeia",
+  "greekName": "Euryganeia (Εὐρυγάνεια)",
+  "type": "mortal",
+  "domains": [
+    "the mother of the Oedipodae"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Hyperphas. An alternative tradition claims she, rather than Jocasta, was the mother of Oedipus' four children, absolving them of the direct taint of incest.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 9.5.11; Bibliotheca 3.5.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "The mythographers usually state that Oedipus begat his four famous children—Eteocles, Polynices, Antigone, and Ismene—by his own mother Jocasta (or Epicaste). But Pausanias vigorously rejects this, quoting Homer's statement that the gods made the incest known 'forthwith'—too soon for four children to be born.",
+      "sources": [
+        "pausanias",
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Description of Greece 9.5.11; Bibliotheca 3.5.8; Odyssey 11.271"
+    },
+    {
+      "text": "Relying on the lost epic Oedipodia, Pausanias insists the children were borne to Oedipus by Euryganeia, daughter of Hyperphas. He notes that a famous painting at Plataea showed Euryganeia bowed with grief as her sons fought their fatal duel.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

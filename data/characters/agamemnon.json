@@ -1,0 +1,40 @@
+{
+  "id": "agamemnon",
+  "name": "Agamemnon",
+  "greekName": "Agamemnōn (Ἀγαμέμνων)",
+  "type": "hero",
+  "domains": ["Mycenae", "command of the Achaeans", "the Trojan War", "the fatal homecoming"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Mycenae and commander of the Achaean expedition to Troy, whose victorious return ended in murder at the hands of Aegisthus and Clytemnestra.",
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Iliad 9.141–161; Odyssey 3.193–310; Epitome 3.12–21, 6.23; Fabulae 117; Description of Greece 2.16.6–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer presents Agamemnon as the son of Atreus and king of men. At Troy he names Orestes and three daughters at home: Chrysothemis, Laodice, and Iphianassa.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.141–161",
+      "topic": "agamemnon-daughters-identities"
+    },
+    {
+      "text": "Apollodorus calls him the son of Atreus and Aerope and lists Orestes, Chrysothemis, Electra, and Iphigenia as his children. He commanded one hundred Mycenaean ships and the whole army at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.16, 3.12–16",
+      "topic": "agamemnon-daughters-identities"
+    },
+    {
+      "text": "Before marrying Clytemnestra, Agamemnon killed her first husband Tantalus and their newborn child. Pausanias treats this as the earlier crime that may have begun the next turn of vengeance between the houses.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.15–16; Description of Greece 2.18.2"
+    },
+    {
+      "text": "On returning with Cassandra, Agamemnon was trapped and killed. Homer emphasizes the guile of Aegisthus with Clytemnestra's aid; Apollodorus and Hyginus make the pair joint murderers.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 3.193–310, 11.404–434; Epitome 6.23; Fabulae 117",
+      "topic": "agamemnon-murder-agency"
+    }
+  ]
+}

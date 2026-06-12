@@ -1,0 +1,32 @@
+{
+  "id": "pylades",
+  "name": "Pylades",
+  "greekName": "Pyladēs (Πυλάδης)",
+  "type": "hero",
+  "domains": ["loyal companionship", "the revenge at Mycenae", "the Taurian escape"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The lifelong companion of Orestes, raised beside him by Strophius, who joined his revenge and Taurian voyage before marrying Electra.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 6.24–28; Fabulae 119–120; Description of Greece 2.16.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Strophius raised Orestes with his own son Pylades. The pair returned secretly to Mycenae, where Pylades accompanied Orestes in the killing of Clytemnestra and Aegisthus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.24–25; Fabulae 119"
+    },
+    {
+      "text": "Pylades then sailed with Orestes to Tauris, faced sacrifice beside him, and escaped with Iphigenia and the image of Artemis.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.26–27; Fabulae 120"
+    },
+    {
+      "text": "Orestes joined Pylades and Electra in marriage. Pausanias records their sons as Medon and Strophius and located Electra's tomb at Mycenae.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.16.7"
+    }
+  ]
+}

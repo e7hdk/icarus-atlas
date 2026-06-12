@@ -1,0 +1,77 @@
+{
+  "id": "niobe",
+  "name": "Niobe",
+  "greekName": "Niobē (Νιόβη)",
+  "type": "mortal",
+  "domains": [
+    "Theban queenship",
+    "maternal pride",
+    "mourning",
+    "the weeping stone"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Tantalus and queen beside Amphion at Thebes, whose boast that her many children surpassed Leto's two ended in their slaughter by Apollo and Artemis.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Iliad 24.602–617; Bibliotheca 3.5.6; Metamorphoses 6.146–312; Fabulae 9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer remembers six sons and six daughters. Apollo killed the sons and Artemis the daughters, and the bodies lay unburied for nine days until the gods buried them; Niobe, turned to stone among the rocks of Sipylus, still broods over divine sorrow.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 24.602–617",
+      "topic": "niobids-number-and-names"
+    },
+    {
+      "text": "Apollodorus lists seven sons and seven daughters, then records rival totals: ten of each in Hesiod, two sons and three daughters in Herodorus, and six of each in Homer.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.6",
+      "topic": "niobids-number-and-names"
+    },
+    {
+      "text": "Ovid also gives Niobe seven sons and seven daughters. Her challenge to Leto ends with every child and Amphion dead, after which grief freezes Niobe into marble and carries the weeping stone back to her native mountain.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 6.146–312",
+      "topic": "niobids-survivors"
+    },
+    {
+      "text": "Apollodorus' main account preserves a son called Amphion and the daughter Chloris, while the version he attributes to Telesilla preserves Amyclas and Meliboea.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.6",
+      "topic": "niobids-survivors"
+    },
+    {
+      "text": "Hyginus says Chloris alone escaped the arrows and later married Neleus; Amphion died after attacking Apollo's temple.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 9–10",
+      "topic": "niobids-survivors"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "pausanias"
+      ]
+    }
+  ]
+}

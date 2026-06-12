@@ -1,0 +1,43 @@
+{
+  "id": "creusa-troy",
+  "name": "Creusa",
+  "greekName": "Kreousa (Κρέουσα)",
+  "type": "mortal",
+  "domains": ["the house of Priam", "the fall of Troy", "divine rescue"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Priam and Hecuba, first named among the daughters Hecuba bore after Paris, and counted in the catalogue of Priam's five-and-fifty children.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Fabulae 90"
+    },
+    {
+      "text": "Wife of Aeneas, painted by Polygnotus among the captive women of Troy; the story ran that the Mother of the Gods and Aphrodite rescued her from slavery among the Greeks.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.26.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus places her at the head of the daughters Hecuba bore to Priam after Paris had been recognized: Creusa, Laodice, Polyxena, and Cassandra. Hyginus counts her too in his catalogue of the sons and daughters of Priam, five-and-fifty in number, where her name closes the long roll of the royal house. Beyond the genealogies our sources give her few deeds of her own: she is a princess of Ilium, defined by the family that towers around her.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.5; Fabulae 90"
+    },
+    {
+      "text": "It is Pausanias who preserves the end of her story. Describing Polygnotus' painting of the sack of Troy at Delphi, he finds Creusa among the captive women above Aethra, with Clymene, Aristomache, and Xenodice, and reports the story told about her: that the Mother of the Gods and Aphrodite rescued her from slavery among the Greeks, since she was, of course, the wife of Aeneas — the marriage the Roman tradition would make famous in its own telling of the flight from Troy. But the tellers did not agree: Lescheos and the epic poem Cypria, Pausanias notes, make Eurydice, not Creusa, the wife of Aeneas.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.26.1"
+    },
+    {
+      "text": "She must be told apart from the other women of the name. Creusa daughter of Erechtheus belongs to Athens: in Apollodorus she is married to Xuthus and bears him Achaeus and Ion, and Pausanias knows the cave below the Acropolis gateway where Apollo is believed to have met her. In Hyginus the bride of Jason at Corinth, burned to death by the poisoned golden crown Medea sent through her sons, is likewise called Creusa. The Trojan Creusa is neither of these: she is Priam's daughter, born and lost within the royal house of Ilium.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 1.7.3, 3.15.1; Fabulae 25; Description of Greece 1.28.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus", "pausanias"]
+    }
+  ]
+}

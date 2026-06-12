@@ -1,0 +1,58 @@
+{
+  "id": "tiresias",
+  "name": "Tiresias",
+  "greekName": "Teiresias (Τειρεσίας)",
+  "type": "mortal",
+  "domains": [
+    "prophecy",
+    "the blind seer"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The great blind prophet of Apollo in Thebes. He lived through seven generations and witnessed all the tragedies of the house of Cadmus.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.6.7; Fabulae 75; Metamorphoses 3.316"
+    }
+  ],
+  "story": [
+    {
+      "text": "Son of Everes and the nymph Chariclo, Tiresias was blinded by the gods. Some say he saw Athena naked, while others claim he was blinded by Hera after arguing that women enjoy love more than men. In compensation, Zeus gave him the gift of prophecy and a long life spanning seven generations.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.7; Metamorphoses 3.316; Fabulae 75"
+    },
+    {
+      "text": "He served as the spiritual guide to Thebes through its most turbulent times. He predicted the greatness of Heracles, revealed the truth of Oedipus' incest, and advised the sacrifice of Menoeceus during the war of the Seven.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.8, 3.6.7; Fabulae 67, 68"
+    },
+    {
+      "text": "Even in death, he retained his prophetic powers in the Underworld, where he counseled Odysseus on how to safely return to Ithaca.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.17, 7.34"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

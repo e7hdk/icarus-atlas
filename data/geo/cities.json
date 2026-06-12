@@ -1,0 +1,50 @@
+[
+  {
+    "id": "thebes",
+    "name": "Thebes",
+    "greekName": "Θῆβαι",
+    "region": "boeotia",
+    "coordinates": [23.3177, 38.3199],
+    "pleiadesId": "541138"
+  },
+  {
+    "id": "mycenae",
+    "name": "Mycenae",
+    "greekName": "Μυκῆναι",
+    "region": "argolis",
+    "coordinates": [22.7538, 37.7275],
+    "pleiadesId": "570491"
+  },
+  {
+    "id": "argos",
+    "name": "Argos",
+    "greekName": "Ἄργος",
+    "region": "argolis",
+    "coordinates": [22.7204, 37.631],
+    "pleiadesId": "570106"
+  },
+  {
+    "id": "athens",
+    "name": "Athens",
+    "greekName": "Ἀθῆναι",
+    "region": "attica-proper",
+    "coordinates": [23.7239, 37.9716],
+    "pleiadesId": "579885"
+  },
+  {
+    "id": "sparta",
+    "name": "Sparta",
+    "greekName": "Σπάρτη",
+    "region": "laconia",
+    "coordinates": [22.4247, 37.0818],
+    "pleiadesId": "570685"
+  },
+  {
+    "id": "troy",
+    "name": "Troy",
+    "greekName": "Τροία",
+    "region": "troad",
+    "coordinates": [26.2385, 39.9574],
+    "pleiadesId": "550595"
+  }
+]

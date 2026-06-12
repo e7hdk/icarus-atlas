@@ -48,7 +48,7 @@ export function CharacterPanel({
           onClick={() => select(null)}
           className="absolute right-5 top-5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-display text-[11px] tracking-[0.1em] text-aether-muted transition-colors hover:text-aether"
         >
-          ESC ✕
+          ✕
         </button>
 
         <h2 className="pr-16 font-display text-2xl tracking-[0.14em] text-aether">

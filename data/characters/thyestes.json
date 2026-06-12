@@ -1,0 +1,39 @@
+{
+  "id": "thyestes",
+  "name": "Thyestes",
+  "greekName": "Thyestēs (Θυέστης)",
+  "type": "mortal",
+  "domains": ["rival kingship", "the golden lamb", "the accursed banquet"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Brother and rival of Atreus, who gained Mycenae through Aerope and the golden lamb, then unknowingly ate the children Atreus murdered for revenge.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 2.10–14; Fabulae 86–88; Description of Greece 2.18.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Thyestes became Aerope's lover and received from her the hidden golden lamb. By displaying it he won Mycenae, only to lose the throne when Zeus made the sun travel backward as a sign for Atreus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.10–12"
+    },
+    {
+      "text": "Apollodorus says Thyestes ate Aglaus, Callileon, and Orchomenus, his sons by a Naiad, before Atreus showed him their extremities and drove him into exile.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.13",
+      "topic": "thyestes-sons-banquet"
+    },
+    {
+      "text": "Hyginus calls the banquet victims Tantalus and Plisthenes. The disagreement is not a larger combined sibling list: each lens preserves a different catalogue of murdered children.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 88, 246",
+      "topic": "thyestes-sons-banquet"
+    },
+    {
+      "text": "Seeking an avenger, Thyestes obeyed an oracle that told him to father a child by his own daughter. Their son Aegisthus eventually killed Atreus and restored Thyestes to the throne.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 2.14; Fabulae 87–88"
+    }
+  ]
+}

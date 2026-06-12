@@ -1,0 +1,41 @@
+{
+  "id": "menoetius",
+  "name": "Menoetius",
+  "greekName": "Menoitios (Μενοίτιος)",
+  "type": "titan",
+  "domains": ["presumption", "overweening pride"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Outrageous Titan son of Iapetus and the Oceanid Clymene, whom wide-seeing Zeus struck with a smoking thunderbolt and sent down to Erebus for his mad presumption and exceeding pride.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 507–511, 514–516",
+      "topic": "menoetius-punishment"
+    },
+    {
+      "text": "Son of Iapetus and Asia, brother of Atlas, Prometheus and Epimetheus; in the battle with the Titans Zeus smote him with a thunderbolt and hurled him down to Tartarus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.2.3",
+      "topic": "menoetius-punishment"
+    }
+  ],
+  "story": [
+    {
+      "text": "Clymene, neat-ankled daughter of Ocean, bore him to Iapetus between Atlas and Prometheus — and of the four brothers his story is the shortest and the harshest. Hesiod gives him a single epithet, 'outrageous', and a single fate: wide-seeing Zeus struck him with a lurid, smoking thunderbolt and sent him down to Erebus because of his mad presumption and exceeding pride. No battle is mentioned; in Hesiod, his character alone is the charge.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 507–511, 514–516",
+      "topic": "menoetius-punishment"
+    },
+    {
+      "text": "Apollodorus moves the blow onto the battlefield and deepens the pit: Menoetius, son of Iapetus and Asia, was smitten with a thunderbolt in the battle with the Titans, and Zeus hurled him down to Tartarus. Where Hesiod's Menoetius falls for what he is, Apollodorus' falls for the side he fought on — and lands a level lower, behind the bronze doors with the defeated Titans.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.2.3",
+      "topic": "menoetius-punishment"
+    },
+    {
+      "text": "Hyginus, who keeps Clymene as Iapetus' consort, counts only three children in his genealogical preface — Atlas, Epimetheus, Prometheus. The blasted brother has fallen out of his catalogue altogether, as if the thunderbolt had burned him from the family record as well.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

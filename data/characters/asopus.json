@@ -1,0 +1,22 @@
+{
+  "id": "asopus",
+  "name": "Asopus",
+  "greekName": "Asōpos (Ἀσωπός)",
+  "type": "god",
+  "domains": ["the river Asopus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A river god of Boeotia and the Peloponnese. Pausanias reports a tradition that he, rather than Nycteus, was the true father of Antiope.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.6.1, 2.6.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "The river Asopus separates the territories of Thebes and Plataea. According to the poet Asius and the local traditions of Sicyon, the river god was the father of Antiope, making him the grandfather of the twins Amphion and Zethus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.6.1-4"
+    }
+  ]
+}

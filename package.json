@@ -7,13 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate-data": "tsx scripts/validate-data.ts"
+    "corpus:sync": "tsx scripts/corpus-sync.ts sync",
+    "corpus:verify": "tsx scripts/corpus-sync.ts verify",
+    "corpus:search": "tsx scripts/corpus-search.ts",
+    "validate-data": "tsx scripts/validate-data.ts",
+    "validate-layout": "tsx scripts/validate-layout.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
     "@react-three/postprocessing": "^3.0.4",
     "next": "16.2.9",
+    "postprocessing": "6.39.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "three": "^0.184.0",
@@ -26,6 +31,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.184.1",
+    "cheerio": "^1.2.0",
+    "domhandler": "^6.0.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",

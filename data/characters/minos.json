@@ -1,0 +1,32 @@
+{
+  "id": "minos",
+  "name": "Minos",
+  "greekName": "Minōs (Μίνως)",
+  "type": "hero",
+  "domains": ["King of Crete", "Judge of the Dead", "thalassocracy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The legendary King of Crete, son of Zeus and Europa. He ruled the seas, commanded the labyrinth, and upon his death became one of the three judges of the Underworld.",
+      "sources": ["apollodorus", "homer", "ovid"],
+      "citation": "Bibliotheca 3.1.2; Odyssey 11.568; Metamorphoses 8.152"
+    }
+  ],
+  "story": [
+    {
+      "text": "Raised in Crete by King Asterius, Minos and his brothers eventually fought over the affections of a beautiful boy named Miletus. Minos won the war, driving out Sarpedon and Rhadamanthus, and claimed the throne of Crete for himself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "To prove his divine right to rule, he prayed to Poseidon to send a bull from the sea, promising to sacrifice it. The god sent a magnificent white bull, but Minos, struck by its beauty, sent it to his herds and sacrificed another in its place. Enraged, Poseidon caused his wife Pasiphae to fall in lust with the beast, leading to the birth of the monstrous Minotaur.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.3-4; Metamorphoses 8.132"
+    },
+    {
+      "text": "Minos established the first great naval empire (thalassocracy) and instituted a code of laws so profound that, upon his death, he was appointed as one of the supreme judges of the dead in Hades, wielding a golden scepter.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.568; Bibliotheca 3.1.2"
+    }
+  ]
+}

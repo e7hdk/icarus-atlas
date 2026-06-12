@@ -1,0 +1,27 @@
+{
+  "id": "rhadamanthus",
+  "name": "Rhadamanthus",
+  "greekName": "Rhadamanthys (Ῥαδάμανθυς)",
+  "type": "hero",
+  "domains": ["Judge of the Dead", "lawgiver"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Zeus and Europa, renowned for his unwavering justice. Exiled from Crete by his brother Minos, he ruled in the islands and later became a judge in the Underworld.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.1.2; Odyssey 4.564"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born to Europa and raised by King Asterius, Rhadamanthus was driven out of Crete by his jealous brother Minos. He settled in the islands of the Aegean, where he established a reputation as a flawlessly just lawmaker.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "Because of his absolute integrity in life, the gods made him one of the three judges of the dead in the Underworld, alongside his brother Minos and his half-brother Aeacus. He was also destined to dwell forever in the blissful Elysian Fields.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.1.2; Odyssey 4.564"
+    }
+  ]
+}

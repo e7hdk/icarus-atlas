@@ -1,0 +1,51 @@
+{
+  "id": "hellen",
+  "name": "Hellen",
+  "greekName": "Hellēn (Ἕλλην)",
+  "type": "mortal",
+  "domains": ["the naming of the Hellenes", "kingship"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "First child of Deucalion and Pyrrha — though some say Zeus begat him; father of Dorus, Xuthus and Aeolus, he gave his own name to the peoples who had been called Greeks: the Hellenes.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2–1.7.3",
+      "topic": "hellen-paternity"
+    },
+    {
+      "text": "A son of Jove by Pyrrha, daughter of Epimetheus, in Hyginus' catalogue of Jove's sons.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 155",
+      "topic": "hellen-paternity"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes him the firstfruit of the renewed world: Deucalion had children by Pyrrha, first Hellen — 'whose father some say was Zeus', the mythographer admits in the same breath — then Amphictyon, who reigned over Attica after Cranaus, and a daughter Protogeneia. The eponym of all the Greeks thus enters the record with his paternity already under dispute.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2",
+      "topic": "hellen-paternity"
+    },
+    {
+      "text": "Hyginus has no doubts and no Deucalion: in his catalogue of the sons of Jove stands 'Hellen by Pyrrha, daughter of Epimetheus'. His Astronomica keeps the arithmetic consistent, calling Aeolus, Hellen's son, a grandson of Jove.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 155; Astronomica 2.18",
+      "topic": "hellen-paternity"
+    },
+    {
+      "text": "By the nymph Orseis, Hellen had Dorus, Xuthus and Aeolus. Those who were called Greeks he named Hellenes after himself, and he divided the country among his sons: Aeolus reigned over the regions about Thessaly and named the inhabitants Aeolians; Dorus' people became the Dorians; and from Xuthus' sons Achaeus and Ion the Achaeans and Ionians took their names. The whole map of the Greek peoples, in Apollodorus' telling, is one man's family tree.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "Pausanias preserves the quarrel after his death: the other sons of Hellen drove Xuthus out of Thessaly, charging that he had appropriated some of the ancestral property for himself; Xuthus fled to Athens, married the king's daughter, and his sons Achaeus and Ion carried the family names abroad.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.1.2"
+    },
+    {
+      "text": "Homer knows the Hellenes but not the man: in the catalogue of ships, Hellas is a district of Achilles' realm in Phthia, and its people — Myrmidons, Hellenes, Achaeans — bear the name with no eponym in sight. It is Hyginus who later splices the family into the Odyssey, calling the Aeolus who hosts Ulysses and bags the winds a 'son of Hellen' — where Homer himself had named the wind-keeper a son of Hippotas.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.683–684; Odyssey 10.1–2; Fabulae 125"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "rhesus",
+  "title": "Rhesus and the Night Raid",
+  "greekTitle": "Ῥῆσος",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.1,
+  "summary": {
+    "text": "On the night the Thracian king Rhesus reached Troy with his snow-white horses, Odysseus and Diomedes crept into the sleeping camp — and the newest ally of Troy never saw the dawn.",
+    "sources": ["homer", "apollodorus"],
+    "citation": "Hom. Il. 10.415-525; Apollod. 1.3.4"
+  },
+  "chapters": [
+    {
+      "title": "Dolon the spy",
+      "text": "Hector sent Dolon by night to spy on the Achaean ships, promising him Achilles' horses. Odysseus and Diomedes caught him on the plain, and before he died he told them where the newcome Thracians lay — outermost of all, their king Rhesus among them with the fairest horses ever seen, whiter than snow.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 10.299-464"
+    },
+    {
+      "title": "Twelve Thracians and a king",
+      "text": "Diomedes slew twelve Thracians in their sleep and Rhesus the thirteenth, gasping in an evil dream, while Odysseus loosed the horses and drove them off. Son of the river Strymon and a Muse, Rhesus had come to Troy only that evening.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 10.465-525; Apollod. 1.3.4"
+    }
+  ],
+  "cast": [
+    { "name": "Rhesus", "role": "Thracian king, one night at Troy" },
+    { "name": "Dolon", "role": "The doomed spy" },
+    { "name": "Odysseus", "role": "The cunning one" },
+    { "name": "Diomedes", "role": "The blade in the dark" },
+    { "id": "hector", "name": "Hector", "role": "Sender of the spy" }
+  ],
+  "places": [{ "id": "troy", "name": "Troy", "role": "The sleeping camp before the city" }],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "10.299-525" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.3.4" }
+  ]
+}

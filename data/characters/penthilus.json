@@ -1,0 +1,27 @@
+{
+  "id": "penthilus",
+  "name": "Penthilus",
+  "greekName": "Penthilos (Πένθιλος)",
+  "type": "mortal",
+  "domains": ["the bastard son", "colonizer of Lesbos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The bastard son of Orestes and Erigone. His descendants led a colony of Achaeans to the island of Lesbos.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.18.6, 3.2.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Penthilus was the illegitimate son of Orestes by Erigone, the daughter of Aegisthus. Unlike his half-brother Tisamenus who inherited the throne, Penthilus did not rule the Peloponnese.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.18.6"
+    },
+    {
+      "text": "When the Heracleidae invaded and drove the Pelopids out of their ancestral kingdoms, Penthilus gathered a band of Achaeans, seized the island of Lesbos, and laid the foundations for the Aeolian migration to Asia Minor.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1"
+    }
+  ]
+}

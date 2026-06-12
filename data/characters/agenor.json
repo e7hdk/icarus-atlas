@@ -1,0 +1,27 @@
+{
+  "id": "agenor",
+  "name": "Agenor",
+  "greekName": "Agēnōr (Ἀγήνωρ)",
+  "type": "mortal",
+  "domains": ["the Phoenician royal line", "the search for Europa"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Phoenicia who, when Zeus abducted his daughter Europa, sent his sons—including Cadmus—to search for her, commanding them not to return without her.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.1; Metamorphoses 2.858, 3.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "He went to Phoenicia, married Telephassa, and fathered Europa and three sons, Cadmus, Phoenix, and Cilix. When Zeus turned himself into a tame bull and carried Europa off over the sea to Crete, Agenor dispatched his sons to find her.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1"
+    },
+    {
+      "text": "He laid upon them a harsh command: they must either bring their sister back or face exile from their homeland. None of them could find her, for who can fathom the deceits of Jove? Bound by their father's decree, the brothers never returned, but settled in new lands instead.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.1; Metamorphoses 3.1–5"
+    }
+  ]
+}

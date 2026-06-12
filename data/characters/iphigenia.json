@@ -1,0 +1,38 @@
+{
+  "id": "iphigenia",
+  "name": "Iphigenia",
+  "greekName": "Iphigeneia (Ἰφιγένεια)",
+  "type": "hero",
+  "domains": ["Aulis", "Artemis", "Taurian priesthood", "the substituted sacrifice"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The maiden brought to Aulis as a sacrifice for the Greek fleet, rescued by Artemis and made her priestess among the Taurians before escaping with Orestes.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.21–22, 6.27; Fabulae 120–122"
+    },
+    {
+      "text": "In an Argive genealogy reported by Pausanias, Iphigenia was the daughter of Helen and Theseus and was entrusted to Clytemnestra after birth.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.22.6–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Calchas declared that the windbound fleet could not sail unless Agamemnon offered his fairest daughter. Lured to Aulis by a false promise of marriage to Achilles, Iphigenia was placed at the altar, but Artemis substituted a deer, carried her to Tauris, and made her priestess; some said the goddess made her immortal.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.21–22"
+    },
+    {
+      "text": "Hyginus begins after the rescue: Iphigenia serves as priestess in Tauris, recognizes Orestes and Pylades when they are brought for sacrifice, deceives King Thoas, and escapes with them and the image of Diana.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 120"
+    },
+    {
+      "text": "Apollodorus places Iphigenia among Agamemnon's daughters. Pausanias reports a different Argive tradition: Helen bore her to Theseus and gave the child to Clytemnestra, while later poets agreed that Theseus was her father.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.16; Description of Greece 2.22.6–7",
+      "topic": "iphigenia-parentage"
+    }
+  ]
+}

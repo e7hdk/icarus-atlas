@@ -1,0 +1,58 @@
+{
+  "id": "jocasta",
+  "name": "Jocasta",
+  "greekName": "Iokastē (Ἰοκάστη) / Epicaste (Ἐπικάστη)",
+  "type": "mortal",
+  "domains": [
+    "the Theban queen",
+    "tragic ignorance"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Queen of Thebes, wife of Laius. She unwittingly married the man who defeated the Sphinx, only to discover years later that he was both the murderer of her first husband and the son she had exposed at birth.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Odyssey 11.275; Bibliotheca 3.5.7–9; Description of Greece 9.5.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Daughter of Menoeceus, called Epicaste by Homer and Jocasta by the mythographers. She was given in marriage to King Laius, who, despite an oracle's warning, fathered a son upon her. The child was exposed on Cithaeron with pierced ankles to die.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.275; Bibliotheca 3.5.7"
+    },
+    {
+      "text": "After Laius was slain on the road, Thebes was ravaged by the Sphinx. Her brother Creon, then acting as regent, proclaimed that whoever solved the monster's riddle would receive the kingdom and the widowed queen's hand. A stranger named Oedipus answered the riddle and took Jocasta to wife.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67"
+    },
+    {
+      "text": "Thus she wedded her own son, and he his mother. When the monstrous truth finally came to light—that the king was his father's murderer and his mother's husband—Jocasta hanged herself in a noose from the roof-beams.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Odyssey 11.275–320; Bibliotheca 3.5.9; Fabulae 243"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "polynices",
+  "name": "Polynices",
+  "greekName": "Polyneikēs (Πολυνείκης)",
+  "type": "mortal",
+  "domains": [
+    "the Seven against Thebes",
+    "the cursed brothers",
+    "exile"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Oedipus who was exiled from Thebes by his brother Eteocles. He raised the army of the Seven against Thebes to reclaim his throne, but the two brothers ended up slaughtering each other.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Description of Greece 9.5.12; Fabulae 68"
+    }
+  ],
+  "story": [
+    {
+      "text": "Deprived of his promised turn to rule Thebes by his brother Eteocles, Polynices fled to Argos. There he married the daughter of King Adrastus, who pledged to restore his son-in-law to the Theban throne.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Fabulae 68"
+    },
+    {
+      "text": "With a great Argive host led by seven champions, Polynices marched on his native city. The siege was brutal, and to settle the war without further slaughter of the armies, Polynices challenged his brother to single combat.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.8; Description of Greece 9.5.12"
+    },
+    {
+      "text": "In the duel, the brothers inflicted mortal wounds upon one another, fulfilling their father's bitter curse. While Eteocles was given an honorable burial by the regent Creon, Polynices was decreed a traitor to be left unburied, an edict that his sister Antigone would fatally defy.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.8, 3.7.1; Fabulae 72"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

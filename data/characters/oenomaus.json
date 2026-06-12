@@ -1,0 +1,27 @@
+{
+  "id": "oenomaus",
+  "name": "Oenomaus",
+  "greekName": "Oinomaos (Οἰνόμαος)",
+  "type": "mortal",
+  "domains": ["Pisa", "chariot racing", "the death of suitors"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Pisa and father of Hippodamia, who raced her suitors with divine horses and killed those he overtook until Pelops and Myrtilus broke his chariot.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 2.4–7; Fabulae 84"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus gives two motives for withholding Hippodamia: desire for his own daughter, or an oracle that her husband would kill him. Armed and driving horses given by Ares, Oenomaus pursued each suitor and displayed their severed heads on his house.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.4–6"
+    },
+    {
+      "text": "Hyginus calls Oenomaus a son of Mars and Asterope and makes the oracle his sole motive. Myrtilus removes the wheel pin; the racing chariot breaks apart, and Oenomaus dies in the contest meant to prevent his fate.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 84"
+    }
+  ]
+}

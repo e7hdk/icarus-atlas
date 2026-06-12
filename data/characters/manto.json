@@ -1,0 +1,44 @@
+{
+  "id": "manto",
+  "name": "Manto",
+  "greekName": "Mantō (Μαντώ)",
+  "type": "mortal",
+  "domains": [
+    "prophecy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The daughter of the blind seer Tiresias. She inherited her father's prophetic gifts and was dedicated to Apollo at Delphi after Thebes fell.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.7.4; Metamorphoses 6.245"
+    }
+  ],
+  "story": [
+    {
+      "text": "Manto possessed the fire of prophecy like her father Tiresias. She led him when he was blind and served the gods of Thebes.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 6.245"
+    },
+    {
+      "text": "When the Argives finally captured and sacked Thebes, Manto was taken as a captive. Fulfilling a vow they had made, the Argives sent her to Delphi as the fairest of the spoils, dedicating her to the service of Apollo.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.7.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

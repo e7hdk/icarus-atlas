@@ -1,0 +1,27 @@
+{
+  "id": "libya",
+  "name": "Libya",
+  "greekName": "Libyē (Λιβύη)",
+  "type": "mortal",
+  "domains": ["eponymous queen of Libya"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The daughter of Epaphus and Memphis. She gave her name to the continent of Libya (Africa) and bore the kings Belus and Agenor to Poseidon.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Libya was born in Egypt to King Epaphus and his wife Memphis. The vast lands west of Egypt were named in her honor.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    },
+    {
+      "text": "She was beloved by the sea god Poseidon and bore him twin sons: Belus, who remained in Egypt, and Agenor, who traveled to Phoenicia and became the ancestor of Cadmus and Europa.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.4"
+    }
+  ]
+}

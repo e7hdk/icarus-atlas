@@ -1,0 +1,47 @@
+{
+  "id": "great-flood",
+  "title": "The Great Flood",
+  "greekTitle": "Κατακλυσμός",
+  "kind": "catastrophe",
+  "parent": null,
+  "era": 2,
+  "summary": {
+    "text": "Zeus resolved to destroy the men of the Bronze Age beneath the waters. One chest rode the flood, carrying Deucalion and Pyrrha — and from the stones they cast over their shoulders a new human race was born.",
+    "sources": ["apollodorus", "ovid", "hyginus"],
+    "citation": "Apollod. 1.7.2; Ov. Met. 1.163-415; Hyg. Fab. 153"
+  },
+  "chapters": [
+    {
+      "title": "The wrath of Zeus",
+      "text": "When Zeus would destroy the men of the Bronze Age, he loosed the rains of heaven. In Ovid's telling the last offence was Lycaon's impious table — a king who served human flesh to a god and was turned into a wolf.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.163-312"
+    },
+    {
+      "title": "The chest on the waters",
+      "text": "By the advice of his father Prometheus, Deucalion built a chest, stored it with provisions, and embarked with Pyrrha. Nine days and nine nights he drifted over the drowned world before grounding on the heights of Parnassus.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.313-347"
+    },
+    {
+      "title": "The bones of the mother",
+      "text": "Bidden by the oracle to cast the bones of their mother behind them, they understood: the stones of the earth. Those Deucalion threw became men, those Pyrrha threw became women — and their son Hellen gave his name to the Hellenes.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.348-415; Hyg. Fab. 153"
+    }
+  ],
+  "cast": [
+    { "id": "zeus", "name": "Zeus", "role": "Sender of the deluge" },
+    { "id": "deucalion", "name": "Deucalion", "role": "The just survivor" },
+    { "id": "pyrrha", "name": "Pyrrha", "role": "First woman of the new race" },
+    { "id": "prometheus", "name": "Prometheus", "role": "The forewarner" },
+    { "id": "themis", "name": "Themis", "role": "Voice of the oracle" },
+    { "id": "hellen", "name": "Hellen", "role": "Father of the Hellenes" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.7.2" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.163-415" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "153" }
+  ]
+}

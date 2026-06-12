@@ -1,0 +1,27 @@
+{
+  "id": "pelopia",
+  "name": "Pelopia",
+  "greekName": "Pelopeia (Πελόπεια)",
+  "type": "mortal",
+  "domains": ["Sicyon", "the sword of Thyestes", "the birth of Aegisthus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Thyestes and mother of Aegisthus, whose hidden sword revealed the incestuous origin of the avenger born to destroy Atreus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 87–88"
+    }
+  ],
+  "story": [
+    {
+      "text": "An oracle promised Thyestes revenge through a child born from his own daughter. Hyginus says he assaulted Pelopia at night during rites of Minerva; she seized his sword without knowing his identity and later concealed it beneath the goddess' image.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 87–88"
+    },
+    {
+      "text": "Believed to be the daughter of King Thesprotus, Pelopia married Atreus while already carrying Aegisthus. When the sword exposed Thyestes as the child's father, she drove the blade into her own breast; Aegisthus carried it on to kill Atreus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 88"
+    }
+  ]
+}

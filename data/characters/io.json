@@ -1,0 +1,32 @@
+{
+  "id": "io",
+  "name": "Io",
+  "greekName": "Iō (Ἰώ)",
+  "type": "mortal",
+  "domains": ["the wandering cow", "ancestress of kings"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A princess of Argos loved by Zeus. To hide her from Hera, she was transformed into a white heifer and wandered the earth until she reached Egypt.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.1.3; Metamorphoses 1.583; Fabulae 145"
+    }
+  ],
+  "story": [
+    {
+      "text": "Io was a priestess of Hera in Argos, and the daughter of the river god Inachus (though some sources claim her father was Iasus). Zeus fell in love with her and seduced her under a thick cloud.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 2.1.3; Metamorphoses 1.583"
+    },
+    {
+      "text": "When Hera nearly caught them, Zeus transformed Io into a beautiful white heifer. Hera, suspicious, demanded the cow as a gift and set the hundred-eyed giant Argus Panoptes to guard her. After Hermes slew Argus, Hera sent a gadfly to torment Io.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 2.1.3; Metamorphoses 1.622"
+    },
+    {
+      "text": "Driven mad by the fly, Io wandered across Europe and Asia, giving her name to the Ionian Sea and the Bosphorus (Cow's Ford). She finally arrived in Egypt, where Zeus restored her human form by touching her, and she gave birth to Epaphus.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.1.3; Metamorphoses 1.748; Fabulae 145"
+    }
+  ]
+}

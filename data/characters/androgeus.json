@@ -1,0 +1,27 @@
+{
+  "id": "androgeus",
+  "name": "Androgeus",
+  "greekName": "Androgeōs (Ἀνδρόγεως)",
+  "type": "mortal",
+  "domains": ["the murdered prince", "cause of the tribute"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Minos and Pasiphae. His murder in Athens led to Minos' terrible vengeance and the recurring tribute of Athenian youths to the Minotaur.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.2, 3.15.7; Fabulae 41"
+    }
+  ],
+  "story": [
+    {
+      "text": "Androgeus traveled to Athens to compete in the Panathenaic Games, where he effortlessly defeated all his rivals. Jealous of his success, King Aegeus of Athens ordered him to fight the Marathonian Bull (which ironically was the same Cretan Bull that sired the Minotaur).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.7"
+    },
+    {
+      "text": "Androgeus was killed by the bull (though some say he was ambushed by his jealous competitors on the road to Thebes). When news of his son's death reached Minos, the Cretan king launched a massive fleet, devastated the region, and forced Athens to pay the gruesome blood-tribute to the Minotaur.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.15.7-8; Fabulae 41"
+    }
+  ]
+}

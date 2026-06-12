@@ -1,0 +1,43 @@
+{
+  "id": "hesione",
+  "name": "Hesione",
+  "greekName": "Hēsionē (Ἡσιόνη)",
+  "type": "mortal",
+  "domains": ["the sea monster's rock", "the veil ransom", "the prize of Telamon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Laomedon, fastened to the rocks of Troy for the sea monster and saved by Heracles; at the city's first sack she bought back her brother Podarces with the veil from her head, and from that ransom he was called Priam.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.9, 2.6.4"
+    },
+    {
+      "text": "The royal maid given as a prize of war to Telamon, to whom she bore Teucer, brother of Ajax.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.7; Fabulae 89, 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Hesione among the three daughters of Laomedon, with Cilla and Astyoche. When Apollo and Poseidon, cheated of their wage for fortifying Troy, sent a pestilence and a sea monster against the city, oracles foretold deliverance only if Laomedon would expose his daughter Hesione to be devoured, and the king fastened her to the rocks near the sea. Seeing her exposed, Heracles promised to save her on condition of receiving the mares Zeus had given in compensation for the rape of Ganymede; Laomedon agreed, Heracles killed the monster and saved Hesione — and the king withheld the stipulated reward. Ovid remembers the same shore: the king's daughter chained to the rugged rocks, delivered from all harm by Hercules, who, refused the promised steeds, took the walls of twice-perjured Troy.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 2.5.9, 3.12.3; Metamorphoses 11.194–217"
+    },
+    {
+      "text": "When Heracles returned, took the city, and shot down Laomedon and his sons, he assigned Hesione as a prize to Telamon and allowed her to take with her whichever of the captives she would. She chose her brother Podarces, and Heracles required that he first be a slave and then be ransomed by her: as the boy was being sold she took the veil from her head and gave it as his ransom, and hence Podarces was called Priam. Hyginus tells the rescue another way — Hercules and Telamon, passing with the Argonauts on their voyage to Colchis, killed the beast to which the lot had bound her, and when Laomedon defaulted on this bargain too, Hercules slew him, gave the kingdom directly to his infant son Podarces, afterward called Priam from his being redeemed, and recovered Hesione; the veil is nowhere in his telling.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.6.4; Fabulae 89"
+    },
+    {
+      "text": "Telamon, Ovid says, did not retire from that campaign without honor, for he was given Hesione. Apollodorus tells how Telamon, having gone with Heracles on the expedition against Troy after the omen of the eagle, received Hesione, daughter of Laomedon, as his prize, and by her had a son, Teucer. Hyginus agrees: Hercules gave her in marriage to Telamon and their child was Teucer — counted in his catalogue of ships as Ajax's brother by Hesione, sailing from Salamis with twelve ships against the city of her fathers.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.12.7; Metamorphoses 11.194–217; Fabulae 89, 97"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  ]
+}

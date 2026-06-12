@@ -17,6 +17,7 @@ export function CameraRig({ positions }: { positions: Map<string, Vec3> }) {
   const controls = useRef<ComponentRef<typeof CameraControls>>(null);
   const selectedId = useGalaxyStore((s) => s.selectedId);
   const isDiving = useGalaxyStore((s) => s.isDiving);
+  const spacingScale = useGalaxyStore((s) => s.spacingScale);
 
   useEffect(() => {
     const rig = controls.current;
@@ -47,9 +48,15 @@ export function CameraRig({ positions }: { positions: Map<string, Vec3> }) {
       const target = new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
       rig.setLookAt(camera.x, camera.y, camera.z, target.x, target.y, target.z, true);
     } else {
-      rig.setLookAt(...HOME_POSITION, ...HOME_TARGET, true);
+      rig.setLookAt(
+        HOME_POSITION[0] * spacingScale * 2.5,
+        HOME_POSITION[1] * spacingScale * 2.5,
+        HOME_POSITION[2] * spacingScale * 2.5,
+        ...HOME_TARGET,
+        true
+      );
     }
-  }, [selectedId, positions, isDiving]);
+  }, [selectedId, positions, isDiving, spacingScale]);
 
   return (
     <CameraControls
@@ -57,7 +64,7 @@ export function CameraRig({ positions }: { positions: Map<string, Vec3> }) {
       makeDefault
       smoothTime={0.5}
       minDistance={4}
-      maxDistance={190}
+      maxDistance={6000}
       dollySpeed={0.6}
     />
   );

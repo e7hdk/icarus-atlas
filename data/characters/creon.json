@@ -1,0 +1,58 @@
+{
+  "id": "creon",
+  "name": "Creon",
+  "greekName": "Kreōn (Κρέων)",
+  "type": "mortal",
+  "domains": [
+    "regent of Thebes",
+    "state law"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The brother of Jocasta and regent of Thebes. He took control of the city during its darkest hours, from the plague of the Sphinx to the War of the Seven.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67; Description of Greece 9.5.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "When King Laius was murdered on the road, Creon assumed the regency of Thebes. Under his rule, the city was terrorized by the Sphinx, until Oedipus arrived to solve its riddle. Creon gratefully surrendered the throne and the hand of his sister Jocasta to the young hero.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.8; Fabulae 67"
+    },
+    {
+      "text": "After the terrible truth of Oedipus' marriage was revealed, and the ensuing civil war between Eteocles and Polynices left both brothers dead, Creon once again took the reins of power. He issued a harsh edict that the traitors' bodies must be left unburied.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.1; Fabulae 72"
+    },
+    {
+      "text": "His inflexible decree led to the tragic death of his niece Antigone, which in turn caused the suicides of his son Haemon and his wife Eurydice, leaving Creon an old, broken king surrounded by the ruins of his house.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.1; Fabulae 72"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

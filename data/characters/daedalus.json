@@ -1,0 +1,32 @@
+{
+  "id": "daedalus",
+  "name": "Daedalus",
+  "greekName": "Daidalos (Δαίδαλος)",
+  "type": "hero",
+  "domains": ["the master craftsman", "inventor"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The greatest inventor of antiquity. He built the wooden cow for Pasiphae, the Labyrinth for the Minotaur, and wings of wax and feathers to escape the island of Crete.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.15.8; Metamorphoses 8.183; Fabulae 40"
+    }
+  ],
+  "story": [
+    {
+      "text": "Daedalus was originally an Athenian, a descendant of King Erechtheus and a master architect and sculptor. After killing his own nephew Talos out of professional jealousy, he was tried by the Areopagus and fled to Crete to serve King Minos.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.15.8; Metamorphoses 8.236"
+    },
+    {
+      "text": "In Crete, his genius became an instrument of both marvel and horror. He constructed the hollow wooden cow that allowed Queen Pasiphae to mate with the Cretan Bull, and later designed the inescapable Labyrinth to imprison the resulting monster, the Minotaur. He also gave Ariadne the thread that allowed Theseus to escape the maze.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.4, Epitome 1.8-9; Fabulae 40"
+    },
+    {
+      "text": "Furious at this betrayal, Minos imprisoned Daedalus and his son Icarus within the very Labyrinth he had built. Knowing that Minos controlled the land and sea, Daedalus crafted pairs of wings from feathers bound with wax, successfully flying to Sicily, though he lost his son along the way.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 1.12; Metamorphoses 8.183"
+    }
+  ]
+}

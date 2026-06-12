@@ -1,0 +1,80 @@
+{
+  "id": "house-of-troy",
+  "title": "The House of Troy",
+  "greekTitle": "Δαρδανίδαι",
+  "kind": "saga",
+  "parent": null,
+  "era": 7.5,
+  "summary": {
+    "text": "From Dardanus, the son of Zeus who crossed from Samothrace, the royal line of Troy ran through Erichthonius, Tros, and Ilus the founder of Ilion, to Laomedon who cheated gods and hero alike, and to Priam, under whom the city stood at its height — until the Achaeans came.",
+    "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+    "citation": "Hom. Il. 20.215-240; Apollod. 3.12, 2.5.9, 2.6.4; Ov. Met. 11.194-220, 11.755-763; Hyg. Fab. 89, 91"
+  },
+  "chapters": [
+    {
+      "title": "Dardanus crosses the sea",
+      "text": "Dardanus, son of Zeus — by Electra, daughter of Atlas — left Samothrace in grief for his brother Iasion and crossed to the opposite mainland, where king Teucer, son of the river Scamander, welcomed him with a share of the land and his daughter Batia. He founded Dardania on the slopes of many-fountained Ida, for sacred Ilios was not yet built in the plain to be a city of mortal men.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 20.215-218; Apollod. 3.12.1; Hyg. Fab. 155, 275"
+    },
+    {
+      "title": "The three thousand mares",
+      "text": "Dardanus' son Erichthonius became the richest of mortal men: three thousand mares pastured in his marsh-meadows, rejoicing in their tender foals, and the North Wind himself loved them as they grazed, taking the likeness of a dark-maned stallion. Erichthonius begat Tros, king among the Trojans, who gave his name to the country and the people, and Tros had three peerless sons — Ilus, Assaracus, and Ganymede.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 20.219-232; Apollod. 3.12.2"
+    },
+    {
+      "title": "Ganymede pours for Zeus",
+      "text": "Ganymede was born the fairest of mortal men, and for his beauty he was carried up to Olympus to be cupbearer to Zeus and dwell among the immortals — caught up by the gods in Homer, snatched on an eagle in Apollodorus, stolen by Jove himself on eagle's wings in Ovid. In recompense for his son, Zeus gave Tros horses, the best of all that run beneath the dawn and the sun.",
+      "sources": ["homer", "apollodorus", "ovid"],
+      "citation": "Hom. Il. 20.232-235, 5.265-267; Apollod. 3.12.2; Ov. Met. 10.155-161"
+    },
+    {
+      "title": "Ilus founds Ilion",
+      "text": "Ilus went to Phrygia and won the wrestling at the king's games; his prize was fifty youths and fifty maidens, and the king, obeying an oracle, added a dappled cow and bade him found a city wherever she lay down. She lay down at the hill of Phrygian Ate, and there Ilus built Ilion. When he prayed to Zeus for a sign, he found the Palladium fallen from heaven lying before his tent — three cubits high, a spear in its right hand, a distaff and spindle in the other — and he built a temple to house it; while it stayed within the walls, the city could not be taken. His barrow still stood in the Trojan plain in Homer's telling, and his son was Laomedon.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 3.12.3, Epit. 5.10; Hom. Il. 11.166, 11.371-372"
+    },
+    {
+      "title": "The cheated gods",
+      "text": "Apollo and Poseidon served king Laomedon for a year at a fixed wage — at the bidding of Zeus in Homer, of their own accord to test the king's insolence in Apollodorus. Poseidon raised the wide, fair wall around the city while Apollo herded the king's cattle; when the work was done, Laomedon withheld their hire. Apollo sent a pestilence and Poseidon a sea monster, and oracles demanded the king's daughter Hesione, chained to the rocks by the sea. Heracles killed the monster for a promised price — the divine mares given for Ganymede — and Laomedon refused that wage too, so the hero sailed away threatening war.",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Hom. Il. 21.441-457, 7.452-453; Apollod. 2.5.9; Ov. Met. 11.194-210; Hyg. Fab. 89"
+    },
+    {
+      "title": "The first sack and the spared son",
+      "text": "Heracles returned against the twice-perjured city — with six ships in Homer, with eighteen fifty-oared ships in Apollodorus. Telamon was first through the wall; Heracles shot down Laomedon and his sons, sparing only Podarces. Hesione, given to Telamon as a prize and allowed to redeem one captive, chose her brother — and bought him back with the veil from her head. From that purchase Podarces took the name Priam, and the kingdom with it.",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Hom. Il. 5.640-651; Apollod. 2.6.4; Ov. Met. 11.211-217; Hyg. Fab. 89"
+    },
+    {
+      "title": "Priam's Troy",
+      "text": "Under Priam the city rose to its height. He married Hecuba — daughter of Dymas, or of Cisseus, or of the river Sangarius, for the authors disagree — and she bore Hector first of all his children; fifty sons were his when the sons of the Achaeans came, nineteen from one womb. But before her second child was born, Hecuba dreamed she had brought forth a firebrand — the omen of Paris, and of the burning to come.",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Hom. Il. 24.493-497; Apollod. 3.12.5; Ov. Met. 11.755-763; Hyg. Fab. 91"
+    }
+  ],
+  "cast": [
+    { "id": "dardanus", "name": "Dardanus", "role": "Founder of the line" },
+    { "id": "erichthonius-troy", "name": "Erichthonius", "role": "Richest of mortal men" },
+    { "id": "tros", "name": "Tros", "role": "Eponym of Troy" },
+    { "id": "ilus", "name": "Ilus", "role": "Founder of Ilion" },
+    { "id": "ganymede", "name": "Ganymede", "role": "Cupbearer of Zeus" },
+    { "id": "laomedon", "name": "Laomedon", "role": "The oath-breaking king" },
+    { "id": "priam", "name": "Priam", "role": "Last king of Troy" },
+    { "id": "hecuba", "name": "Hecuba", "role": "Queen of Troy at its height" },
+    { "name": "Teucer", "role": "First king of the land, Dardanus' host" },
+    { "name": "Heracles", "role": "Sacker of the first Troy" },
+    { "name": "Hesione", "role": "The princess chained for the monster" },
+    { "name": "Telamon", "role": "First through the wall" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "The city of the house — founded, walled, and twice taken" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "20.215-240, 21.441-457, 5.640-651" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.12, 2.5.9, 2.6.4" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "11.194-220" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "89, 91, 155, 275" }
+  ]
+}

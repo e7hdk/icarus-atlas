@@ -1,0 +1,58 @@
+{
+  "id": "lycus",
+  "name": "Lycus",
+  "greekName": "Lykos (Λύκος)",
+  "type": "mortal",
+  "domains": [
+    "Theban regency",
+    "usurpation",
+    "the persecution of Antiope"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Brother of Nycteus who ruled Thebes as regent for both Labdacus and Laius. He and his wife Dirce cruelly tormented his niece Antiope until her sons, Amphion and Zethus, returned to exact vengeance and claim the city.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Fulfilling his dying brother's command, Lycus marched on Sicyon, killed Epopeus, and took Antiope captive. On the way back to Thebes, she gave birth to twin sons by Zeus, Amphion and Zethus, who were left exposed on Mount Cithaeron but rescued by a herdsman.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 2.6.2"
+    },
+    {
+      "text": "For many years, Lycus and his wife Dirce imprisoned and tormented Antiope. Meanwhile, Lycus acted as guardian to the young king Labdacus, handed him the throne, and then resumed the regency when Labdacus died leaving the infant Laius.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.5; Description of Greece 9.5.5"
+    },
+    {
+      "text": "Eventually Antiope escaped and found her grown sons. Recognizing their mother, Amphion and Zethus marched on Thebes, slew Lycus, tied Dirce to a wild bull, and usurped the kingdom, driving the rightful heir Laius into exile.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

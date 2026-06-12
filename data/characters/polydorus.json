@@ -1,0 +1,47 @@
+{
+  "id": "polydorus",
+  "name": "Polydorus",
+  "greekName": "Polydōros (Πολύδωρος)",
+  "type": "mortal",
+  "domains": [
+    "the Theban succession"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The only son of Cadmus and Harmonia. Though the kingship first passed to his nephew Pentheus, Polydorus' line eventually reclaimed the throne of Thebes, leading to Labdacus and Oedipus.",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 3.4.2; Theogony 975"
+    }
+  ],
+  "story": [
+    {
+      "text": "The only male heir of Cadmus and Harmonia, born in rich-crowned Thebes. When Cadmus grew old, he did not pass the throne to Polydorus, but yielded it to his grandson Pentheus, the son of his daughter Agave.",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 3.4.2, 3.5.2; Theogony 975"
+    },
+    {
+      "text": "After Pentheus was destroyed by the Bacchanals, Polydorus finally succeeded to the throne. His descendants, known as the Labdacids, would rule Thebes through generations of tragedy and curse.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "chrysothemis",
+  "name": "Chrysothemis",
+  "greekName": "Chrysothemis (Χρυσόθεμις)",
+  "type": "mortal",
+  "domains": ["the Mycenaean royal house", "the daughters of Agamemnon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A daughter of Agamemnon named in both Homer and Apollodorus, the one stable name amid their incompatible catalogues of his daughters.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 9.141–148; Epitome 2.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Agamemnon names Chrysothemis first among the three daughters waiting in his halls, followed in Homer by Laodice and Iphianassa. He offers Achilles marriage to whichever daughter he chooses.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.141–148",
+      "topic": "agamemnon-daughters-identities"
+    },
+    {
+      "text": "Apollodorus preserves Chrysothemis but replaces Homer's other two names with Electra and Iphigenia. The shared name does not justify silently identifying Laodice with Electra or Iphianassa with Iphigenia.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.16",
+      "topic": "agamemnon-daughters-identities"
+    }
+  ]
+}

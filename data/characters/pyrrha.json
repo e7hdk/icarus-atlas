@@ -1,0 +1,61 @@
+{
+  "id": "pyrrha",
+  "name": "Pyrrha",
+  "greekName": "Pyrrha (Πύρρα)",
+  "type": "mortal",
+  "domains": ["the great flood", "piety", "the renewal of mankind"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Epimetheus and Pandora and wife of Deucalion; when Zeus drowned the bronze race she rode out the flood beside her husband, and from the stones she threw over her shoulder rose the new race of women.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2"
+    },
+    {
+      "text": "The most god-fearing of women, spared with Deucalion — her cousin and husband — on the drowned world's last dry summit, the twin peaks of Parnassus.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.322–329, 1.350–390"
+    },
+    {
+      "text": "Daughter of Epimetheus and Pandora, said to be the first mortal created; with Deucalion she fled the cataclysm to Mount Etna.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 142, 153",
+      "topic": "first-woman"
+    }
+  ],
+  "story": [
+    {
+      "text": "She is the daughter of Afterthought and of the first woman: Apollodorus and Hyginus both make her the child of Epimetheus and Pandora, and Ovid needs only the patronymic — Epimethis. In the Metamorphoses Deucalion calls her 'o sister, o wife, o sole surviving woman', joined to him by blood as his cousin, by marriage, and now by danger itself.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.7.2; Metamorphoses 1.351–353, 1.390; Fabulae 142"
+    },
+    {
+      "text": "Ovid makes the pair's piety the reason the world gets a second chance: no man was more upright than Deucalion, no woman more reverent of the gods than Pyrrha. At the oracle of Themis it is Pyrrha who first breaks the silence — and refuses the goddess's command, terrified to outrage her mother's shade by scattering her bones, until Deucalion reads the riddle: their great mother is the Earth, her bones the stones. Behind their backs the thrown stones soften, and those from Pyrrha's hands take the shape of women.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.322–329, 1.367–413"
+    },
+    {
+      "text": "Were the two of them truly alone? Ovid insists on it — 'we two are the multitude; the sea holds all the rest' — and Hyginus states it flatly: the whole human race perished except Deucalion and Pyrrha.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 1.325–327, 1.355; Fabulae 153",
+      "topic": "flood-survivors"
+    },
+    {
+      "text": "Apollodorus quietly disagrees: all men were destroyed, he writes, except a few who fled to the high mountains in the neighborhood. And Pausanias found those others remembered in local stone — at Megara, Megarus son of Zeus swam to the heights of Gerania following the cries of cranes, and on Parnassus the people woke to the howling of wolves and followed them to the peak, founding Lycoreia there. In none of these escapes does Pyrrha's name appear.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.7.2; Description of Greece 1.40.1, 10.6.2",
+      "topic": "flood-survivors"
+    },
+    {
+      "text": "Hyginus alone crowns her with a primacy elsewhere reserved for her mother: Pyrrha, he writes, 'is said to be the first mortal created' — as though the clay-born Pandora did not count as mortal at all, and humanity proper began with her daughter.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 142",
+      "topic": "first-woman"
+    },
+    {
+      "text": "By Deucalion she bore the line that named the Greeks: first Hellen — whose father some say was Zeus, and whom Hyginus lists outright among the sons of Jove — then Amphictyon, who reigned over Attica, and a daughter Protogeneia, mother of Aethlius by Zeus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.7.2; Fabulae 155"
+    }
+  ]
+}

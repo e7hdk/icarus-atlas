@@ -1,0 +1,43 @@
+{
+  "id": "deiphobus",
+  "name": "Deiphobus",
+  "greekName": "Dēiphobos (Δηΐφοβος)",
+  "type": "mortal",
+  "domains": ["the borrowed likeness", "Helen's last marriage", "the sack of Troy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Dearest to Hector of all the brothers born of Hecuba and Priam — the shape Athena stole to lure Hector into standing against Achilles, and the man whose house Odysseus and Menelaus stormed on the night Troy fell.",
+      "sources": ["homer"],
+      "citation": "Iliad 22.226–247; Odyssey 8.517–520"
+    },
+    {
+      "text": "Husband of Helen after the death of Alexander, preferred over his brother Helenus; the marriage ended at the sack of the city, when Helen was led back to the Achaean ships.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.9, 5.22; Fabulae 240"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Iliad, Athena ends Hector's flight by borrowing a brother's face. Leaving Achilles, she comes to Hector in the likeness of Deiphobus in form and untiring voice, urging that the two of them stand and face the son of Peleus together. Hector, deceived, answers that Deiphobus was ever far the dearest of his brothers, of all that were born of Hecuba and Priam, and honors him the more for daring to come outside the wall for his sake. But when his spear flies vain and he shouts to Deiphobus of the white shield for a second lance, no one is near, and Hector knows in his heart that the gods have called him to his death: the real Deiphobus is inside the wall, and Athena has beguiled him. After Hector's death the old king, ordering his wagon for the ransom, chides nine surviving sons by name — Deiphobus among them.",
+      "sources": ["homer"],
+      "citation": "Iliad 22.226–247, 22.294–305; 24.248–251"
+    },
+    {
+      "text": "Hyginus pairs him with Alexander in the war's most treacherous killing: when Achilles sought Polyxena in marriage and came for an interview, he was slain by Alexander and Deiphobus. After Alexander's own death, Apollodorus says, Helenus and Deiphobus quarrelled over which of them should marry Helen, and Deiphobus was preferred; Helenus left Troy for Ida, where Odysseus waylaid him for the oracles that protected the city. Homer may remember the marriage too: in the Odyssey Menelaus recalls how Helen circled the hollow horse three times, calling the hidden chieftains by name in the voices of their wives, and godlike Deiphobus followed at her side.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 4.274–276; Epitome 5.9; Fabulae 110"
+    },
+    {
+      "text": "His house was the war's last battlefield. Demodocus sang before Odysseus how, when the city was sacked, Odysseus went like Ares to the house of Deiphobus together with godlike Menelaus, and there braved the most terrible fight of all, conquering by the aid of great-hearted Athena. In Apollodorus, Menelaus slew Deiphobus and led Helen away to the ships; but Hyginus sets him in a darker catalogue, among the husbands killed by their own wives — Helen herself slew Deiphobus, son of Priam.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 8.517–520; Epitome 5.22; Fabulae 240"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "hyginus"]
+    }
+  ]
+}

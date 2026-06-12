@@ -7,6 +7,7 @@ import { useGalaxyStore } from '@/features/galaxy/store';
 import { GalaxyCanvas } from './GalaxyCanvas';
 import { TopBar } from '@/components/hud/TopBar';
 import { Legend } from '@/components/hud/Legend';
+import { SearchOverlay } from '@/components/hud/SearchOverlay';
 import { HoverCard } from '@/components/panels/HoverCard';
 import { CharacterPanel } from '@/components/panels/CharacterPanel';
 
@@ -14,21 +15,50 @@ export function GalaxyView({
   characters,
   relations,
   sources,
+  layout = 'galaxy',
 }: {
   characters: Character[];
   relations: Relation[];
   sources: Source[];
+  /** 'compact' remaps generations to start at zero — for the small city skies. */
+  layout?: 'galaxy' | 'compact';
 }) {
-  const positions = useMemo(() => computePositions(characters), [characters]);
-  const select = useGalaxyStore((s) => s.select);
+  const positions = useMemo(
+    () => computePositions(characters, relations, { compact: layout === 'compact' }),
+    [characters, relations, layout],
+  );
+  const spacingScale = useGalaxyStore((s) => s.spacingScale);
+  const setDiving = useGalaxyStore((s) => s.setDiving);
+
+  const scaledPositions = useMemo(() => {
+    if (spacingScale === 1.0) return positions;
+    const scaled = new Map<string, typeof positions extends Map<string, infer V> ? V : never>();
+    for (const [id, [x, y, z]] of positions) {
+      scaled.set(id, [x * spacingScale, y * spacingScale, z * spacingScale]);
+    }
+    return scaled;
+  }, [positions, spacingScale]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') select(null);
+      const store = useGalaxyStore.getState();
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        store.setSearchOpen(!store.searchOpen);
+        return;
+      }
+      if (event.key === 'Escape') {
+        if (store.searchOpen) store.setSearchOpen(false);
+        else store.select(null);
+      }
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [select]);
+  }, []);
+
+  useEffect(() => {
+    setDiving(false);
+  }, [setDiving]);
 
   useEffect(() => {
     // Debug/testing handle (used by automated UI checks).
@@ -37,11 +67,12 @@ export function GalaxyView({
 
   return (
     <div className="fixed inset-0">
-      <GalaxyCanvas characters={characters} relations={relations} positions={positions} />
+      <GalaxyCanvas characters={characters} relations={relations} positions={scaledPositions} />
       <TopBar />
       <Legend />
       <HoverCard characters={characters} relations={relations} />
       <CharacterPanel characters={characters} relations={relations} sources={sources} />
+      <SearchOverlay characters={characters} />
     </div>
   );
 }

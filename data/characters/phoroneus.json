@@ -1,0 +1,59 @@
+{
+  "id": "phoroneus",
+  "name": "Phoroneus",
+  "greekName": "Phorōneus (Φορωνεύς)",
+  "type": "mortal",
+  "domains": ["first kingship", "the gathering of mankind", "the fire of Argos"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "First inhabitant of the Argolid, son of the river Inachus: he gathered the scattered families into a first community — the City of Phoroneus — and by Argive reckoning it was he, not Prometheus, who discovered fire.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.15.5, 2.19.5"
+    },
+    {
+      "text": "Son of Inachus and the Oceanid Melia, who reigned over the whole land afterwards called the Peloponnese.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.1"
+    },
+    {
+      "text": "Son of Inachus by his sister Argia, said to have been the first of mortals to rule: Jove gave him the kingship because he was the first to make offerings to Juno.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 143"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus draws his line straight from the world-river: Inachus, son of Ocean and Tethys, had by Melia, daughter of Ocean, two sons — Phoroneus, and Aegialeus. Aegialeus died childless and left only a name on the land, Aegialia; Phoroneus reigned over the whole country afterwards called the Peloponnese. By the nymph Teledice he had Apis and Niobe: Apis turned his power into a tyranny, named the land Apia after himself, and died leaving no child, while Niobe became the first mortal woman with whom Zeus lay — her son Argus gave the land the name it keeps.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.1"
+    },
+    {
+      "text": "The Argives whom Pausanias questioned began their human history with him: Phoroneus was the first inhabitant of this land, they said — and his father Inachus was not a man at all, but the river. It was Phoroneus who first gathered the people into a community, for until then they had lived scattered, each family by itself; and the place where they first assembled was named the City of Phoroneus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.15.5"
+    },
+    {
+      "text": "Beside the sanctuary of Apollo Lycius at Argos, Pausanias saw a fire kept burning that they call the fire of Phoroneus — for the Argives do not admit that fire was given to mankind by Prometheus, but insist on assigning the discovery of fire to Phoroneus. Against the fennel-stalk theft of Hesiod and every mainstream teller, Argos kept its own first fire, and kept it lit.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.19.5",
+      "topic": "fire-bringer"
+    },
+    {
+      "text": "Hyginus gives him a different mother and a sharper title: Inachus, son of Oceanus, begat Phoroneus by his own sister Argia — no Melia in sight — and Phoroneus 'is said to have been the first of mortals to rule'.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 143",
+      "topic": "phoroneus-mother"
+    },
+    {
+      "text": "In Hyginus' catalogues that first kingship is Juno's reward. Phoroneus was the first to make offerings to Juno, and for that Jove gave him the rule of men; he was first, too, to build a temple to Juno at Argos, and first to make arms for her. His name accordingly heads Hyginus' king-list of the Achaeans, before Argus son of Jove and all the line that follows down to the house of Pelops.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 124, 225, 274"
+    },
+    {
+      "text": "Argos never let go of him. In Pausanias' own day the grave of Phoroneus still stood in the city, and offerings were still being brought to it as to a hero; in the agora they showed the tomb of Cerdo, his wife. Two and a half millennia after his supposed kingship, the first man of the Argolid was still receiving his due.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.20.3, 2.21.1"
+    }
+  ]
+}

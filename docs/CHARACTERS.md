@@ -1,6 +1,6 @@
 # Character roster
 
-The original research draft below covers the 26 characters that gated Milestone 1; four load-bearing additions brought the completed core to 30. Verified expansion batch 1 adds a 15-character Night Court, bringing the live data set to 45. Relation bullets reflect the research draft; see [Data-entry conventions](#data-entry-conventions) for how they map onto the schema in `src/types/character.ts`.
+The original research draft below covers the 26 characters that gated Milestone 1; four load-bearing additions brought the completed core to 30. Six verified expansion batches bring the live data set to 96. Relation bullets reflect the research draft; see [Data-entry conventions](#data-entry-conventions) for how they map onto the schema in `src/types/character.ts`.
 
 ## Summary table
 
@@ -56,6 +56,126 @@ The original research draft below covers the 26 characters that gated Milestone 
 | `atropos` | Atropos | Atropos (Ἄτροπος) | god | fate, the limit of mortal life |
 
 Batch boundary: collective figures such as the Oneiroi, Keres and Hesperides remain deferred. This batch uses one star per individual figure and adds Themis because the Zeus–Themis parentage of the Moirai cannot be modeled with a dangling endpoint.
+
+## Expansion batch 2 — The first humans
+
+The anthropogony batch: the missing Iapetionids, the making of Pandora, the Deucalion flood, and the rival Argive line of first men. Brings the live data set to 56 and lights up the first `mortal` and `nymph` stars. Every fact was verified against the primary texts (Perseus, ToposText) before entry; per-figure research dossiers cover the candidate claims, citations and inter-author contradictions.
+
+| id | Name | Greek name | Type | Domains |
+|---|---|---|---|---|
+| `epimetheus` | Epimetheus | Epimētheus (Ἐπιμηθεύς) | titan | afterthought, hindsight |
+| `menoetius` | Menoetius | Menoitios (Μενοίτιος) | titan | presumption, overweening pride |
+| `clymene` | Clymene | Klymenē (Κλυμένη) | nymph | fresh waters, the nurture of youths |
+| `asia` | Asia | Asia (Ἀσία) | nymph | fresh waters, the nurture of youths |
+| `pandora` | Pandora | Pandōra (Πανδώρα) | mortal | the first woman, all gifts, the jar of ills |
+| `pyrrha` | Pyrrha | Pyrrha (Πύρρα) | mortal | the great flood, piety, the renewal of mankind |
+| `deucalion` | Deucalion | Deukaliōn (Δευκαλίων) | mortal | the great flood, survival, the stone-born people |
+| `hellen` | Hellen | Hellēn (Ἕλλην) | mortal | the naming of the Hellenes, kingship |
+| `phoroneus` | Phoroneus | Phorōneus (Φορωνεύς) | mortal | first kingship, the gathering of mankind, the fire of Argos |
+| `inachus` | Inachus | Inachos (Ἴναχος) | god | the Argive river, fresh waters, judgment between gods |
+| `melia` | Melia | Melia (Μελία) | nymph | motherhood of the Argive line |
+
+Batch rationale and boundaries:
+
+- **Epimetheus and Menoetius** complete the four Iapetionids; Prometheus and Atlas had sibling notes pointing at them since M1.
+- **Clymene and Asia** are both included because the mother of the Iapetionids is a genuine lens dispute (`iapetionid-mother`): Clymene in Hesiod and Hyginus, Asia in Apollodorus. Modeling only one would leave the other lens dangling.
+- **Inachus and Melia** anchor Phoroneus: without them the Argive first man would float edge-less. Inachus is typed `god` (river god); kingship claims about him are Pausanias-reported local tradition only.
+- Cluster placement: the two titans and the three Oceanid nymphs and Inachus sit in `titan-ring` (genealogical generation), the five mortals open the new outer `mortal-arm` cluster.
+- Deferred: Hellen's sons (Dorus, Xuthus, Aeolus) and the line of Io descend from this batch but belong with the hero sagas (M4); Argia (Hyginus' rival mother of Phoroneus) and Orseis stay note-only, single-sentence figures.
+
+Same-name cautions recorded during research (do NOT merge):
+
+- Menoetius the Titan ≠ Menoetius of Opus, father of Patroclus (Homer, Apollonius) ≠ Menoetes, herdsman of Hades (Apollodorus 2.5.10–12).
+- Clymene wife of Iapetus ≠ Ovid's Clymene, mother of Phaethon by Sol (Metamorphoses 1.750ff; though Hyginus 156 gives Phaethon's mother the same "daughter of Ocean" parentage) ≠ Homer's Nereid/handmaid Clymenes ≠ Apollonius' Clymene daughter of Minyas.
+- Asia the Oceanid ≠ Athena's epithet "Asia" (Pausanias 3.24.7); the continent-eponym claim is Herodotus, out of scope.
+- Melia of Argos ≠ the Meliae ash-nymphs (Theogony 187) ≠ Melia of Thebes (Pausanias 9.10.5–6) ≠ Melie the Bithynian, mother of Amycus (Argonautica 2.1–4).
+- Hellen ≠ Helen of Troy (Hyginus' Latin "Hellen" is sometimes mistranslated "Helen") ≠ Helle of the Hellespont (accusative "Hellen" in Hyginus' Latin).
+- Pyrrha the flood-heroine ≠ "Pyrrha", Achilles' girl-name on Scyros (Fabulae 96).
+- Famous out-of-scope material kept OUT of the data: Plato's Protagoras myth of Epimetheus, Thucydides 1.3 on Hellen, the Hesiodic Catalogue of Women genealogies, Aeschylus' Io, Plutarch's flood dove, Lucian's Hierapolis chasm, "Pandora's box" (Erasmus' mistranslation — the Greek is pithos, a jar).
+
+## Expansion batch 3 — The Pelopid curse
+
+The first implementation slice from `docs/TANTALUS_DYNASTY.md`: the founder's immediate house, the race for Hippodamia, and the Atreus–Thyestes feud. This adds 12 characters and brings the live data set to 68.
+
+| id | Name | Greek name | Type | Domains |
+|---|---|---|---|---|
+| `tantalus` | Tantalus | Tantalos (Τάνταλος) | mortal | divine favor betrayed, the unreachable feast, the Pelopid dynasty |
+| `plouto` | Plouto | Ploutō (Πλουτώ) | nymph | the ancestry of Tantalus, the Sipylian royal line |
+| `pelops` | Pelops | Pelops (Πέλοψ) | hero | Pisa, chariot racing, the Peloponnese, dynastic kingship |
+| `niobe` | Niobe | Niobē (Νιόβη) | mortal | Theban queenship, maternal pride, mourning, the weeping stone |
+| `broteas` | Broteas | Broteas (Βροτέας) | mortal | hunting, Mount Sipylus, the Mother of the Gods |
+| `hippodamia` | Hippodamia | Hippodameia (Ἱπποδάμεια) | mortal | the chariot contest of Pisa, Pelopid queenship, dynastic succession |
+| `oenomaus` | Oenomaus | Oinomaos (Οἰνόμαος) | mortal | Pisa, chariot racing, the death of suitors |
+| `myrtilus` | Myrtilus | Myrtilos (Μυρτίλος) | hero | charioteering, betrayal, the Myrtoan Sea, the Pelopid curse |
+| `atreus` | Atreus | Atreus (Ἀτρεύς) | mortal | Mycenaean kingship, the golden lamb, the banquet of Thyestes |
+| `thyestes` | Thyestes | Thyestēs (Θυέστης) | mortal | rival kingship, the golden lamb, the accursed banquet |
+| `aerope` | Aerope | Aeropē (Ἀερόπη) | mortal | Mycenaean queenship, the golden lamb, the Atreid succession |
+| `chrysippus` | Chrysippus | Chrysippos (Χρύσιππος) | hero | the Nemean games, contested succession, the first Pelopid fratricide |
+
+Batch boundary: Amphion, the individual Niobids, Pittheus, Pelopia, Aegisthus, Agamemnon and Menelaus remain deferred. Pindar's rejection of the cannibal Pelops story remains research-only because Pindar is not yet an atlas source id.
+
+## Expansion batch 4 — The two royal houses
+
+The Trojan-generation continuation of the Pelopid dossier adds 14 figures and brings the live data set to 82. It connects the Thyestes–Pelopia branch to Aegisthus and carries the Atreus branch through Agamemnon, Menelaus, their children, and Orestes' marriages.
+
+| id | Name | Type | Domains |
+|---|---|---|---|
+| `pelopia` | Pelopia | mortal | Sicyon, the sword of Thyestes, concealed parentage |
+| `aegisthus` | Aegisthus | mortal | vengeance on Atreus, Mycenaean usurpation, Agamemnon's murder |
+| `tantalus-clytemnestra-husband` | Tantalus (Clytemnestra's husband) | mortal | the Thyestid or Brotead succession, Clytemnestra's first marriage |
+| `agamemnon` | Agamemnon | hero | Mycenaean kingship, the Achaean command, the homecoming murder |
+| `menelaus` | Menelaus | hero | Spartan kingship, Helen's recovery, the Trojan War |
+| `clytemnestra` | Clytemnestra | mortal | Argive queenship, vengeance for Iphigenia, Agamemnon's murder |
+| `helen` | Helen | hero | Sparta, the Trojan War, contested divine beauty |
+| `orestes` | Orestes | hero | vengeance, purification, the Taurian escape, dynastic restoration |
+| `electra` | Electra | mortal | mourning, recognition, vengeance, the house of Atreus |
+| `iphigenia` | Iphigenia | mortal | Aulis, substitution, Tauris, contested parentage |
+| `chrysothemis` | Chrysothemis | mortal | the daughters of Agamemnon, the divided royal household |
+| `hermione` | Hermione | mortal | Spartan succession, Orestes' marriage |
+| `erigone` | Erigone | mortal | the Thyestid line, Orestes' alternate succession |
+| `pylades` | Pylades | hero | friendship, exile, vengeance, the Taurian escape |
+
+Batch boundary: Pleisthenes remains deferred because the surviving traditions use the name for incompatible generations. Homer's Laodice and Iphianassa are not silently merged with Electra and Iphigenia. Tisamenus, Penthilus, Medon and Strophius belong to the next verified succession batch.
+
+## Expansion batch 5 — The elder Titans
+
+This batch completes the named first-generation Titan roster across Hesiod and Pseudo-Apollodorus. Six figures complete Hesiod's canonical twelve; Dione is included because Pseudo-Apollodorus explicitly calls her a Titanis even though Hesiod makes her an Oceanid. The seven additions bring the live data set to 89.
+
+| id | Name | Greek name | Type | Domains |
+|---|---|---|---|---|
+| `coeus` | Coeus | Koios (Κοῖος) | titan | the Titan generation, ancestry of Leto and Asteria |
+| `crius` | Crius | Kreios (Κρεῖος) | titan | the Titan generation, ancestry of stars and winds |
+| `hyperion` | Hyperion | Hyperiōn (Ὑπερίων) | titan | heavenly light, the solar lineage, watchfulness |
+| `theia` | Theia | Theia (Θεία) | titan | heavenly light, motherhood of the sun, moon and dawn |
+| `mnemosyne` | Mnemosyne | Mnēmosynē (Μνημοσύνη) | titan | memory, song, the Muses |
+| `phoebe` | Phoebe | Phoibē (Φοίβη) | titan | brightness, the lineage of Leto, ancestry of prophecy |
+| `dione` | Dione | Diōnē (Διώνη) | titan | divine motherhood, the lineage of Aphrodite |
+
+Batch boundary: this completes the first generation. The standard younger Titan lineage is completed in the following batch; Eurybia and the individual Muses are not Titans in the source genealogies and remain outside this scope.
+
+Source-sensitive classifications:
+
+- Dione is a Titan daughter of Gaia and Uranus in Pseudo-Apollodorus, but an Oceanid daughter of Oceanus and Tethys in Hesiod.
+- Mnemosyne is a Titan daughter of Gaia and Uranus in Hesiod and Pseudo-Apollodorus, but Hyginus' transmitted genealogy makes her a daughter of Jove and Clymene.
+- Theia bears Helios, Selene and Eos to Hyperion in Hesiod and Pseudo-Apollodorus; Hyginus names Aethra as their mother.
+
+## Expansion batch 6 — The younger Titans
+
+The seven remaining figures in the standard second-generation Titan genealogy complete the two-generation Titan roster. They connect the newly restored elder houses to Delos and Hecate, the winds and stars, victory and force, dawn, sun and moon. The additions bring the live data set to 96 and the `titan` type to 25 characters, including Pseudo-Apollodorus' source-disputed Dione.
+
+| id | Name | Greek name | Type | Domains |
+|---|---|---|---|---|
+| `asteria` | Asteria | Asteria (Ἀστερία) | titan | the island of Delos, motherhood of Hecate, escape from Zeus |
+| `astraeus` | Astraeus | Astraios (Ἀστραῖος) | titan | stars, winds |
+| `pallas` | Pallas | Pallas (Πάλλας) | titan | the lineage of victory, strength, force |
+| `perses` | Perses | Persēs (Πέρσης) | titan | wisdom, the lineage of Hecate |
+| `eos` | Eos | Ēōs (Ἠώς) | titan | dawn, morning light, the opening of heaven |
+| `helios` | Helios | Hēlios (Ἥλιος) | titan | the sun, sight, oaths, the passage of day |
+| `selene` | Selene | Selēnē (Σελήνη) | titan | the moon, night light, the lunar cycle |
+
+Scope note: "all Titans" here means the standard first and second generations recoverable from Hesiod and Pseudo-Apollodorus, plus Dione where Pseudo-Apollodorus explicitly classifies her as a Titanis. It does not reclassify every divine descendant or every later figure occasionally called a Titan.
+
+Batch boundary: Eurybia, Styx, Hecate, the winds, the individual stars and the children of Pallas are named in these stories but are not silently added as Titans. They belong to later source-verified divine-family batches.
 
 ## Zeus
 

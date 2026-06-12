@@ -1,0 +1,46 @@
+{
+  "id": "dione",
+  "name": "Dione",
+  "greekName": "Diōnē (Διώνη)",
+  "type": "titan",
+  "domains": ["divine motherhood", "the lineage of Aphrodite"],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "Titan daughter of Uranus and Gaia in Pseudo-Apollodorus, joined with Zeus and mother of Aphrodite.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.3, 1.3.1",
+      "topic": "dione-generation"
+    },
+    {
+      "text": "An Oceanid daughter of Oceanus and Tethys in Hesiod, not a first-generation Titaness.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 346–370",
+      "topic": "dione-generation"
+    },
+    {
+      "text": "Mother of Aphrodite in Homer, who receives and comforts the wounded goddess on Olympus; Homer does not identify Dione's own parents there.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.370–417"
+    }
+  ],
+  "story": [
+    {
+      "text": "Dione's place in the divine generations changes with the source. Hesiod names lovely Dione among the three thousand Oceanid daughters of Oceanus and Tethys. Pseudo-Apollodorus instead puts Dione directly among the Titanides born from Earth and Sky, beside Phoebe and Theia. The atlas keeps her Titan classification for that lens while preserving Hesiod's younger genealogy as a disputed parentage.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 346–370; Bibliotheca 1.1.3",
+      "topic": "dione-generation"
+    },
+    {
+      "text": "In Homer she appears above all as Aphrodite's mother. When Diomedes wounded the goddess through the wrist, Aphrodite fled to Olympus and fell upon Dione's knees. Dione clasped her daughter, stroked her with her hand and comforted her by recalling how other immortals had endured wounds from mortals before Zeus sent Aphrodite back to her rest.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.365–417"
+    },
+    {
+      "text": "Pseudo-Apollodorus makes the relationship genealogically explicit: Zeus had Aphrodite by Dione. This is the same divine parentage assumed in Homer's scene, but it directly contradicts Hesiod's account in which Aphrodite grows from the white foam around the severed flesh of Uranus and has no mother.",
+      "sources": ["homer", "apollodorus", "hesiod"],
+      "citation": "Iliad 5.370; Bibliotheca 1.3.1; Theogony 188–206",
+      "topic": "aphrodite-parentage"
+    }
+  ]
+}

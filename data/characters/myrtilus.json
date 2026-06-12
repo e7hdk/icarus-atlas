@@ -1,0 +1,34 @@
+{
+  "id": "myrtilus",
+  "name": "Myrtilus",
+  "greekName": "Myrtilos (Μυρτίλος)",
+  "type": "hero",
+  "domains": ["charioteering", "betrayal", "the Myrtoan Sea", "the Pelopid curse"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The son of Hermes and charioteer of Oenomaus whose sabotage won Hippodamia for Pelops; Pelops repaid him by casting him into the sea.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.6–9"
+    },
+    {
+      "text": "The charioteer Pelops bribed to sabotage Oenomaus, then cast into the sea rather than pay the promised half of the kingdom.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 84"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Hippodamia persuaded Myrtilus, who loved her, to omit the linchpins. After the race he attempted to assault her; Pelops threw him from Cape Geraestus, and the dying son of Hermes cursed the house of Pelops.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.6–9",
+      "topic": "myrtilus-betrayal"
+    },
+    {
+      "text": "Hyginus instead says Pelops recruited Myrtilus by promising half the kingdom. Pelops killed him because keeping the bargain would be disgraceful, and the sea into which he fell took the name Myrtoan.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 84",
+      "topic": "myrtilus-betrayal"
+    }
+  ]
+}

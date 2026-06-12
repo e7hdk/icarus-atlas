@@ -1,0 +1,68 @@
+{
+  "id": "erichthonius-troy",
+  "name": "Erichthonius",
+  "greekName": "Erichthonios (Ἐριχθόνιος)",
+  "type": "mortal",
+  "domains": [
+    "Dardania",
+    "horses",
+    "mortal wealth",
+    "the Trojan line"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A Trojan king, son of Dardanus, who became the richest of mortal men, with three thousand mares pasturing in the marshland.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.219–230"
+    },
+    {
+      "text": "The son of Dardanus who succeeded to the kingdom when his brother Ilus died childless, married Astyoche, daughter of Simoeis, and fathered Tros.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Facing Achilles on the battlefield, Aeneas recites his lineage: Zeus begot Dardanus, who founded Dardania while his people still dwelt on the slopes of many-fountained Ida, before sacred Ilios was built in the plain. Dardanus in turn begot king Erichthonius, who became the richest of mortal men: three thousand mares were his, pasturing in the marshland and rejoicing in their tender foals.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.215–230"
+    },
+    {
+      "text": "Boreas, the North Wind, became enamoured of the grazing mares and covered them in the likeness of a dark-maned stallion. They bore twelve fillies that could run over the topmost ears of ripened corn without breaking them, and over the topmost breakers of the sea. And Erichthonius begot Tros, to be king among the Trojans.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.223–230"
+    },
+    {
+      "text": "Apollodorus brings Dardanus from Samothrace to the mainland of king Teucer, who welcomed him with a share of the land and his daughter Batia; there Dardanus built the city of Dardanus and named the whole country Dardania. Of his sons Ilus and Erichthonius, Ilus died childless, and Erichthonius succeeded to the kingdom, married Astyoche, daughter of Simoeis, and begat Tros, who on his own succession called the country Troy after himself.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.1–3.12.2"
+    },
+    {
+      "text": "The name belongs to a wholly different figure as well: the Athenian Erichthonius, whom Hyginus lists among the kings of the Athenians as a son of Vulcan — not to be confused with this Trojan king. The Trojan line surfaces separately in Hyginus' catalogue of the most handsome youths, where Ganymede, a son of Tros in Homer and Apollodorus, is instead called a son of Erichthonius, beloved of Jove.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 48, 271"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

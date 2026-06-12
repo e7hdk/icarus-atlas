@@ -1,0 +1,32 @@
+{
+  "id": "europa",
+  "name": "Europa",
+  "greekName": "Eurōpē (Εὐρώπη)",
+  "type": "mortal",
+  "domains": ["the abducted princess", "mother of the Cretan kings"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The beautiful Phoenician princess abducted by Zeus, who took the form of a tame white bull to carry her across the sea to Crete. She became the mother of Minos, Rhadamanthus, and Sarpedon.",
+      "sources": ["apollodorus", "homer", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.1.1; Iliad 14.321; Metamorphoses 2.833; Fabulae 178"
+    }
+  ],
+  "story": [
+    {
+      "text": "The parentage of Europa is famously disputed: while most later authors name her as the daughter of King Agenor and Telephassa, Homer famously claims she was the daughter of Agenor's son, Phoenix. Regardless of her father, her beauty caught the eye of Zeus.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.1.1; Iliad 14.321"
+    },
+    {
+      "text": "While she was gathering flowers with her maidens by the sea, Zeus approached her in the form of a magnificent, gentle white bull. Charmed by its tameness, Europa climbed onto its back. Suddenly, the bull plunged into the waves and swam rapidly away from the shore, carrying the terrified princess all the way to the island of Crete.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.1.1; Metamorphoses 2.833"
+    },
+    {
+      "text": "In Crete, Zeus revealed his true form and united with her. She bore him three mighty sons: Minos, Sarpedon, and Rhadamanthus. She later married Asterius, the prince of the Cretans, who raised her divine children as his own.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.2; Fabulae 178"
+    }
+  ]
+}

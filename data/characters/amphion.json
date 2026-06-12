@@ -1,0 +1,60 @@
+{
+  "id": "amphion",
+  "name": "Amphion",
+  "greekName": "Amphiōn (Ἀμφίων)",
+  "type": "hero",
+  "domains": [
+    "the magical lyre",
+    "builder of Thebes"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Twin son of Zeus and Antiope. With a lyre given to him by Hermes, he played such enchanting music that stones moved by themselves to build the walls of Thebes.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Odyssey 11.260; Bibliotheca 3.5.5; Argonautica 1.735"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born secretly on Mount Cithaeron to the fugitive Antiope, Amphion and his twin brother Zethus were raised by shepherds. While Zethus dedicated himself to cattle-breeding and physical labor, Amphion practiced minstrelsy with a lyre bestowed upon him by Hermes.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7"
+    },
+    {
+      "text": "When their mother escaped her cruel captivity under Dirce and Lycus and sought their help, the twins marched on Thebes. They slew Lycus, tied Dirce to a wild bull, and cast her body into the spring that now bears her name.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.5; Fabulae 7, 8"
+    },
+    {
+      "text": "Taking the kingship of Thebes, the brothers built the lower city's great walls. As Zethus carried massive boulders on his shoulders through brute strength, Amphion played his golden lyre, and the heavy stones followed his footsteps and fitted themselves into place. He later married Niobe, daughter of Tantalus.",
+      "sources": [
+        "homer",
+        "apollonius",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.260; Argonautica 1.735; Bibliotheca 3.5.5–6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

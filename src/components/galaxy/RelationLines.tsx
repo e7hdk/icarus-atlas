@@ -47,6 +47,7 @@ export function RelationLines({
             gapSize={0.45}
             transparent
             opacity={0.6}
+            renderOrder={3}
           />
         );
       })}

@@ -1,0 +1,32 @@
+{
+  "id": "perseus",
+  "name": "Perseus",
+  "greekName": "Perseus (Περσεύς)",
+  "type": "hero",
+  "domains": ["the Gorgon-slayer", "founder of Mycenae"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The legendary son of Zeus and Danae. With the help of the gods, he beheaded the Gorgon Medusa, rescued Andromeda from a sea monster, and founded the great city of Mycenae.",
+      "sources": ["apollodorus", "ovid", "hyginus", "hesiod"],
+      "citation": "Bibliotheca 2.4.1-4; Metamorphoses 4.604; Fabulae 63, 64; Theogony 280"
+    }
+  ],
+  "story": [
+    {
+      "text": "Born in a subterranean bronze chamber after Zeus visited his mother Danae in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.4.1; Fabulae 63"
+    },
+    {
+      "text": "To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon Medusa. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades. He successfully beheaded Medusa and used her petrifying gaze to turn his enemies—including the titan Atlas and the sea monster Cetus—to stone.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 2.4.2-3; Metamorphoses 4.740"
+    },
+    {
+      "text": "After rescuing and marrying the Aethiopian princess Andromeda, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.4.4; Fabulae 273; Description of Greece 2.16.3"
+    }
+  ]
+}
