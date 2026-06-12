@@ -70,30 +70,44 @@ export function AmbientAudio() {
       return;
     }
 
-    let removeGesture = () => {};
-    const beginPlay = () => {
+    // Capture phase fires before the target's handlers, so a star/region/button
+    // that calls stopPropagation can't swallow the first-gesture activation.
+    // Android grants media activation on the "up/end" of a touch (and a pan has
+    // no click at all), so listen for those too — not just the "down" events.
+    const events = [
+      'pointerdown',
+      'pointerup',
+      'touchstart',
+      'touchend',
+      'keydown',
+      'click',
+    ] as const;
+    const opts: AddEventListenerOptions = { capture: true };
+    let removed = false;
+    const removeGesture = () => {
+      if (removed) return;
+      removed = true;
+      for (const type of events) window.removeEventListener(type, onGesture, opts);
+    };
+    const start = () => {
       audio.volume = 0;
       audio
         .play()
-        .then(() => rampTo(volumeRef.current, FADE_IN_MS))
+        ?.then(() => {
+          rampTo(volumeRef.current, FADE_IN_MS);
+          removeGesture();
+        })
         .catch(() => {
-          // Autoplay blocked — start on the first user gesture anywhere. Capture
-          // phase fires before the target's handlers, so a star/region/button
-          // that calls stopPropagation can't swallow our activation.
-          const events = ['pointerdown', 'touchstart', 'keydown', 'click'] as const;
-          const opts: AddEventListenerOptions = { capture: true };
-          const onGesture = () => {
-            removeGesture();
-            audio.volume = 0;
-            audio.play().then(() => rampTo(volumeRef.current, FADE_IN_MS)).catch(() => {});
-          };
-          for (const type of events) window.addEventListener(type, onGesture, opts);
-          removeGesture = () => {
-            for (const type of events) window.removeEventListener(type, onGesture, opts);
-          };
+          // Blocked (or pending on mobile) — the armed gesture below will retry.
         });
     };
-    beginPlay();
+    const onGesture = () => start();
+
+    // Try immediately (succeeds on desktop / once the site is trusted), AND
+    // always arm the first gesture — mobile browsers may leave the initial
+    // play() pending rather than rejecting, so we can't rely on the catch.
+    start();
+    for (const type of events) window.addEventListener(type, onGesture, opts);
 
     return () => {
       removeGesture();
