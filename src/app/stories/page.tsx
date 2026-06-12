@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { loadStories } from '@/features/stories/load';
+import { loadAtlasData } from '@/features/characters/load';
 import { MainNav } from '@/components/hud/MainNav';
+import { HudActions } from '@/components/hud/HudActions';
+import { AtlasOverlays } from '@/components/hud/AtlasOverlays';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import type { Story, StoryKind } from '@/types/story';
@@ -32,18 +35,20 @@ function KindBadge({ kind }: { kind: StoryKind }) {
 }
 
 export default async function StoriesPage() {
-  const stories = await loadStories();
+  const [stories, atlas] = await Promise.all([loadStories(), loadAtlasData()]);
   const topLevel = stories.filter((story) => story.parent === null);
   const childrenOf = (id: string): Story[] => stories.filter((story) => story.parent === id);
 
   return (
     <main className="min-h-screen w-full pb-24">
-      <div className="pointer-events-none relative flex min-h-[68px] items-center px-6 py-4">
+      <div className="pointer-events-none relative flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
         <IcarusBrand />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <MainNav active="stories" />
         </div>
+        <HudActions />
       </div>
+      <AtlasOverlays characters={atlas.characters} sources={atlas.sources} />
 
       <div className="mx-auto max-w-4xl px-6">
         <header className="mt-10 text-center">

@@ -1,23 +1,33 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import type { Character } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { searchCharacters, type SearchHit } from '@/features/search/match';
 import { useGalaxyStore } from '@/features/galaxy/store';
 
-/** Command-palette search (⌘K). Matched substrings glow in the star's type color. */
-export function SearchOverlay({ characters }: { characters: Character[] }) {
+/** Command-palette search (⌘K). Matched substrings glow in the star's type color.
+ *  `navigate` opens the character codex (used off the galaxy, where selecting a
+ *  star would have nothing to fly to). */
+export function SearchOverlay({
+  characters,
+  navigate = false,
+}: {
+  characters: Character[];
+  navigate?: boolean;
+}) {
   const searchOpen = useGalaxyStore((s) => s.searchOpen);
   if (!searchOpen) return null;
   // Remount on every open so query/selection state starts fresh.
-  return <SearchDialog characters={characters} />;
+  return <SearchDialog characters={characters} navigate={navigate} />;
 }
 
-function SearchDialog({ characters }: { characters: Character[] }) {
+function SearchDialog({ characters, navigate }: { characters: Character[]; navigate: boolean }) {
   const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);
   const select = useGalaxyStore((s) => s.select);
+  const router = useRouter();
   const [query, setQuery] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
@@ -32,8 +42,9 @@ function SearchDialog({ characters }: { characters: Character[] }) {
   }, [active]);
 
   const travel = (hit: SearchHit) => {
-    select(hit.character.id);
     setSearchOpen(false);
+    if (navigate) router.push(`/character/${hit.character.id}`);
+    else select(hit.character.id);
   };
 
   const onKeyDown = (event: React.KeyboardEvent) => {
