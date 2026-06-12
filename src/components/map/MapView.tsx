@@ -143,8 +143,10 @@ export function MapView({
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+  const worldRef = useRef<SVGGElement>(null);
   const camera = useRef<Camera>({ ...HOME });
   const flight = useRef<number | null>(null);
+  const isFlying = useRef(false);
   const flightFailsafe = useRef<ReturnType<typeof setTimeout> | null>(null);
   const drag = useRef<{
     sx: number;
@@ -164,6 +166,7 @@ export function MapView({
   const [size, setSize] = useState({ w: 0, h: 0 });
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [focusedId, setFocusedId] = useState<string | null>(null);
+  const [detailParentId, setDetailParentId] = useState<string | null>(null);
   const [zoomedIn, setZoomedIn] = useState(false);
   const [deepZoom, setDeepZoom] = useState(false);
   const [selectedCityId, setSelectedCityId] = useState<string | null>(null);
@@ -194,18 +197,27 @@ export function MapView({
     ? cityPoints.find((p) => p.city.id === selectedCityId)?.city ?? null
     : null;
   const visibleSubs = useMemo(
-    () => subRegions.filter((r) => r.parent === openParent && basemap.subregions?.[r.id]),
-    [subRegions, openParent, basemap.subregions],
+    () => subRegions.filter((r) => r.parent === detailParentId && basemap.subregions?.[r.id]),
+    [subRegions, detailParentId, basemap.subregions],
   );
   const subsShown = visibleSubs.length > 0;
 
   const applyCamera = useCallback(() => {
     const c = camera.current;
-    const el = svgRef.current;
-    if (el) {
-      el.style.transform = `translate(${c.x}px, ${c.y}px) scale(${c.k})`;
+    const svg = svgRef.current;
+    const world = worldRef.current;
+    if (svg && world) {
+      const width = svg.clientWidth;
+      const height = svg.clientHeight;
+      const s0 = Math.max(Math.min(width / vbW, height / vbH), 1e-6);
+      const offX = (width - vbW * s0) / 2;
+      const offY = (height - vbH * s0) / 2;
+      const tx = c.x / s0 + (c.k - 1) * (offX / s0 - vbX);
+      const ty = c.y / s0 + (c.k - 1) * (offY / s0 - vbY);
+
+      world.setAttribute('transform', `translate(${tx} ${ty}) scale(${c.k})`);
       // City markers counter-scale through this var so their radii are true pixels.
-      el.style.setProperty('--marker-scale', String(1 / (s0Ref.current * c.k)));
+      svg.style.setProperty('--marker-scale', String(1 / (s0Ref.current * c.k)));
     }
     const zoomed = c.k > LABEL_ZOOM_LIMIT;
     if (zoomed !== zoomedRef.current) {
@@ -217,9 +229,10 @@ export function MapView({
       deepZoomRef.current = deep;
       setDeepZoom(deep);
     }
-  }, []);
+  }, [vbX, vbY, vbW, vbH]);
 
   const cancelFlight = useCallback(() => {
+    isFlying.current = false;
     if (flight.current !== null) {
       cancelAnimationFrame(flight.current);
       flight.current = null;
@@ -231,12 +244,22 @@ export function MapView({
   }, []);
 
   const flyTo = useCallback(
-    (target: Camera, duration = 800) => {
+    (target: Camera, duration = 800, onLand?: () => void) => {
       cancelFlight();
+      isFlying.current = true;
+      setHoveredId(null);
+      let landed = false;
+      const finish = () => {
+        if (landed) return;
+        landed = true;
+        isFlying.current = false;
+        onLand?.();
+      };
       // Hidden tabs never fire animation frames — snap instead of stalling.
       if (document.visibilityState === 'hidden') {
         camera.current = { ...target };
         applyCamera();
+        finish();
         return;
       }
       const from = { ...camera.current };
@@ -251,6 +274,7 @@ export function MapView({
         };
         applyCamera();
         flight.current = t < 1 ? requestAnimationFrame(step) : null;
+        if (t >= 1) finish();
         if (t >= 1 && flightFailsafe.current !== null) {
           clearTimeout(flightFailsafe.current);
           flightFailsafe.current = null;
@@ -265,6 +289,7 @@ export function MapView({
           flight.current = null;
           camera.current = { ...target };
           applyCamera();
+          finish();
         }
       }, duration + 100);
     },
@@ -300,29 +325,34 @@ export function MapView({
     (id: string | null) => {
       setFocusedId(id);
       if (id === null) {
+        setDetailParentId(null);
         flyTo({ ...HOME });
         return;
       }
       const bbox = boundsFor(id);
-      if (bbox) flyTo(cameraForBBox(bbox));
+      const parentId = byId.get(id)?.parent ?? id;
+      // Keep sibling sub-region geometry mounted while flying inside one region.
+      // Only swap detail layers when the top-level parent actually changes.
+      if (parentId !== detailParentId) setDetailParentId(null);
+      if (bbox) flyTo(cameraForBBox(bbox), 800, () => setDetailParentId(parentId));
     },
-    [boundsFor, cameraForBBox, flyTo],
+    [boundsFor, byId, cameraForBBox, detailParentId, flyTo],
   );
 
   /** ESC and background clicks step one level up: sub-region → parent → overview. */
   const stepUp = useCallback(() => {
-    setFocusedId((current) => {
-      const parent = current ? (byId.get(current)?.parent ?? null) : null;
-      if (current === null) return null;
-      if (parent) {
-        const bbox = boundsFor(parent);
-        if (bbox) flyTo(cameraForBBox(bbox));
-        return parent;
-      }
-      flyTo({ ...HOME });
-      return null;
-    });
-  }, [byId, boundsFor, cameraForBBox, flyTo]);
+    if (focusedId === null) return;
+    const parent = byId.get(focusedId)?.parent ?? null;
+    if (parent) {
+      setFocusedId(parent);
+      const bbox = boundsFor(parent);
+      if (bbox) flyTo(cameraForBBox(bbox), 800, () => setDetailParentId(parent));
+      return;
+    }
+    setDetailParentId(null);
+    setFocusedId(null);
+    flyTo({ ...HOME });
+  }, [focusedId, byId, boundsFor, cameraForBBox, flyTo]);
 
   useEffect(() => {
     const node = containerRef.current;
@@ -440,7 +470,6 @@ export function MapView({
         viewBox={basemap.viewBox}
         preserveAspectRatio="xMidYMid meet"
         className="absolute inset-0 h-full w-full"
-        style={{ transformOrigin: '0 0' }}
       >
         <defs>
           {/* Greek land plus the foreign (Anatolian) coast — synthetic regions
@@ -453,14 +482,14 @@ export function MapView({
               <path key={`f${i}`} d={p.d} transform={p.transform} />
             ))}
           </clipPath>
-          {openParent && basemap.regions[openParent] && (
+          {detailParentId && basemap.regions[detailParentId] && (
             <clipPath id="open-parent-clip">
-              {basemap.regions[openParent].map((p, i) => (
+              {basemap.regions[detailParentId].map((p, i) => (
                 <path key={i} d={p.d} transform={p.transform} />
               ))}
-              {basemap.regionExtensions?.[openParent] && (
+              {basemap.regionExtensions?.[detailParentId] && (
                 <polygon
-                  points={basemap.regionExtensions[openParent].points
+                  points={basemap.regionExtensions[detailParentId].points
                     .map((pt) => pt.join(','))
                     .join(' ')}
                 />
@@ -469,12 +498,13 @@ export function MapView({
           )}
         </defs>
 
+        <g ref={worldRef}>
         <g className="opacity-45">
           {basemap.foreign.map((p, i) => (
             <path key={`f${i}`} d={p.d} transform={p.transform} className="fill-[#0d0726]" />
           ))}
         </g>
-        <g style={{ filter: 'drop-shadow(0 0 26px rgb(124 77 255 / 0.35))' }}>
+        <g>
           {basemap.land.map((p, i) => (
             // Self-colored stroke seals seams between the source's interior
             // land pieces without drawing their (modern) borders.
@@ -504,6 +534,18 @@ export function MapView({
           </g>
         )}
         <g>
+          {basemap.coast.map((p, i) => (
+            <path
+              key={`halo-${i}`}
+              d={p.d}
+              transform={p.transform}
+              fill="none"
+              stroke="#7c4dff"
+              strokeOpacity={0.18}
+              strokeWidth={4}
+              vectorEffect="non-scaling-stroke"
+            />
+          ))}
           {basemap.coast.map((p, i) => (
             <path
               key={`c${i}`}
@@ -551,8 +593,12 @@ export function MapView({
                 pointerEvents: isOpenParent ? 'none' : undefined,
                 transition: 'opacity 0.3s',
               }}
-              onMouseEnter={() => setHoveredId(region.id)}
-              onMouseLeave={() => setHoveredId((id) => (id === region.id ? null : id))}
+              onMouseEnter={() => {
+                if (!isFlying.current) setHoveredId(region.id);
+              }}
+              onMouseLeave={() => {
+                if (!isFlying.current) setHoveredId((id) => (id === region.id ? null : id));
+              }}
               onClick={(event) => {
                 event.stopPropagation();
                 if (movedInDrag.current) {
@@ -590,7 +636,7 @@ export function MapView({
           // (e.g. the 40-piece Peloponnese), which silently clips to nothing.
           <g
             clipPath={
-              openParent && basemap.regionExtensions?.[openParent]
+              detailParentId && basemap.regionExtensions?.[detailParentId]
                 ? 'url(#terrain-clip)'
                 : undefined
             }
@@ -607,8 +653,12 @@ export function MapView({
                   key={sub.id}
                   data-region={sub.id}
                   className="cursor-pointer"
-                  onMouseEnter={() => setHoveredId(sub.id)}
-                  onMouseLeave={() => setHoveredId((id) => (id === sub.id ? null : id))}
+                  onMouseEnter={() => {
+                    if (!isFlying.current) setHoveredId(sub.id);
+                  }}
+                  onMouseLeave={() => {
+                    if (!isFlying.current) setHoveredId((id) => (id === sub.id ? null : id));
+                  }}
                   onClick={(event) => {
                     event.stopPropagation();
                     if (movedInDrag.current) {
@@ -688,11 +738,11 @@ export function MapView({
                   setSelectedCityId(city.id);
                 }}
               >
-                <circle r={18} fill="transparent" />
+                <circle r={15} fill="transparent" />
                 <circle
-                  r={11}
-                  fill="#fcd34d"
-                  opacity={isSelected ? 0.4 : 0.26}
+                  r={7}
+                  fill="#7c4dff"
+                  opacity={isSelected ? 0.24 : 0.14}
                   style={{
                     animation: 'city-twinkle 3.2s ease-in-out infinite',
                     animationDelay: `${cityIndex * 0.55}s`,
@@ -700,11 +750,27 @@ export function MapView({
                     transformBox: 'view-box',
                   }}
                 />
-                <circle r={5} fill="#fcd34d" opacity={isSelected ? 0.9 : 0.72} />
                 <circle
-                  r={2.4}
-                  fill="#fff8e1"
-                  style={{ filter: 'drop-shadow(0 0 5px #fcd34d) drop-shadow(0 0 10px #fcd34d)' }}
+                  r={4.2}
+                  fill="#08041d"
+                  stroke={isSelected ? '#fcd34d' : '#00e5ff'}
+                  strokeWidth={isSelected ? 1.2 : 0.8}
+                  opacity={isSelected ? 0.95 : 0.72}
+                  vectorEffect="non-scaling-stroke"
+                />
+                <path
+                  d="M0 -3.4 1 -1 3.4 0 1 1 0 3.4 -1 1 -3.4 0 -1 -1Z"
+                  fill={isSelected ? '#fcd34d' : '#c084fc'}
+                  style={{
+                    filter: isSelected
+                      ? 'drop-shadow(0 0 3px rgb(252 211 77 / 0.8))'
+                      : 'drop-shadow(0 0 3px rgb(0 229 255 / 0.7))',
+                  }}
+                />
+                <circle
+                  r={1.15}
+                  fill="#f1f5f9"
+                  style={{ filter: 'drop-shadow(0 0 2px rgb(241 245 249 / 0.9))' }}
                 />
                 {showName && (
                   <text
@@ -756,6 +822,7 @@ export function MapView({
               </text>
             );
           })}
+        </g>
       </svg>
 
       {selectedCity && (

@@ -37,7 +37,11 @@ function SearchDialog({ characters }: { characters: Character[] }) {
   };
 
   const onKeyDown = (event: React.KeyboardEvent) => {
-    if (event.key === 'ArrowDown') {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      event.stopPropagation();
+      setSearchOpen(false);
+    } else if (event.key === 'ArrowDown') {
       event.preventDefault();
       setActiveIndex(hits.length ? (active + 1) % hits.length : 0);
     } else if (event.key === 'ArrowUp') {

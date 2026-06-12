@@ -1,10 +1,11 @@
 import { loadBasemap, loadCities, loadLineage, loadRegions } from '@/features/geo/load';
 import { MapView } from '@/components/map/MapView';
 import { MainNav } from '@/components/hud/MainNav';
+import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import type { Lineage } from '@/types/geo';
 
 export const metadata = {
-  title: 'Areas — Icarus Atlas',
+  title: 'Lands — Icarus Atlas',
   description: 'The regions and ancient cities of the Greek world, as an interactive map.',
 };
 
@@ -20,17 +21,11 @@ export default async function AreasPage() {
 
   return (
     <div className="fixed inset-0 flex flex-col">
-      <header className="pointer-events-none z-20 flex items-center justify-between px-6 py-4">
-        <MainNav active="areas" />
-        <div className="text-center">
-          <h1 className="font-display text-lg tracking-[0.38em] text-aether">AREAS</h1>
-          <p className="font-body text-sm italic text-aether-muted">
-            The mortal geography beneath the myths
-          </p>
+      <header className="pointer-events-none relative z-20 flex min-h-[68px] items-center px-6 py-4">
+        <IcarusBrand />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <MainNav active="areas" />
         </div>
-        <span className="font-display text-sm tracking-[0.38em] text-aether-faint">
-          ICARUS <span className="text-star-olympian">ATLAS</span>
-        </span>
       </header>
       <div className="min-h-0 flex-1">
         <MapView basemap={basemap} regions={regions} cities={cities} lineages={lineages} />

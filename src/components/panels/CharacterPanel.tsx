@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
@@ -23,6 +23,7 @@ export function CharacterPanel({
   const lens = useGalaxyStore((s) => s.lens);
   const setDiving = useGalaxyStore((s) => s.setDiving);
   const router = useRouter();
+  const panelRef = useRef<HTMLElement>(null);
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
   const sourceName = useMemo(
@@ -31,6 +32,11 @@ export function CharacterPanel({
   );
 
   const character = selectedId ? byId.get(selectedId) : undefined;
+
+  useEffect(() => {
+    if (selectedId) panelRef.current?.scrollTo({ top: 0, behavior: 'instant' });
+  }, [selectedId]);
+
   if (!character) return null;
 
   const story = filterSourced(character.story, lens);
@@ -41,7 +47,10 @@ export function CharacterPanel({
   };
 
   return (
-    <aside className="fixed bottom-0 right-0 top-0 z-30 w-[400px] max-w-full overflow-y-auto border-l border-glass-border bg-glass-heavy backdrop-blur-2xl">
+    <aside
+      ref={panelRef}
+      className="fixed bottom-0 right-0 top-0 z-30 w-[400px] max-w-full overflow-y-auto border-l border-glass-border bg-glass-heavy backdrop-blur-2xl"
+    >
       <div className="px-7 py-6">
         <button
           type="button"

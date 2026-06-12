@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const TABS = [
   { key: 'galaxy', label: 'Galaxy', href: '/' },
-  { key: 'areas', label: 'Areas', href: '/areas' },
-  { key: 'stories', label: 'Stories', href: '/stories' },
+  { key: 'areas', label: 'Lands', href: '/areas' },
+  { key: 'stories', label: 'Myths', href: '/stories' },
 ] as const;
 
 export type MainTab = (typeof TABS)[number]['key'];

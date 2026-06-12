@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { loadStories } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
+import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 
 export async function generateStaticParams() {
@@ -34,17 +35,15 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
   const cityById = new Map(cities.map((city) => [city.id, city]));
 
   return (
-    <main className="mx-auto min-h-screen max-w-3xl px-6 pb-24 pt-6">
+    <main className="mx-auto min-h-screen w-full max-w-3xl px-6 pb-24 pt-6">
       <div className="flex items-center justify-between">
         <Link
           href="/stories"
           className="rounded-full border border-glass-border bg-glass px-4 py-2 font-display text-[12px] tracking-[0.1em] text-aether-muted backdrop-blur-md transition-colors hover:text-aether"
         >
-          ← STORIES
+          ← MYTHS
         </Link>
-        <span className="font-display text-xs tracking-[0.34em] text-aether/45">
-          ICARUS <span className="text-star-olympian">ATLAS</span>
-        </span>
+        <IcarusBrand compact />
       </div>
 
       <header className="mt-8 text-center">

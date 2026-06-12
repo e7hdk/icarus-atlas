@@ -54,7 +54,7 @@ const BASE_RADIUS = 6;
  *  chain depth stops hurling the rim into the void. Must stay above
  *  2.5 + 2·RADIUS_TOLERANCE so parent/child rings remain visibly apart. */
 const COMPRESS_AFTER_GENERATION = 5;
-const OUTER_GENERATION_GAP = 6.2;
+const OUTER_GENERATION_GAP = 5.6;
 
 export function ringRadiusOf(generation: number): number {
   const inner = Math.min(generation, COMPRESS_AFTER_GENERATION);
@@ -71,7 +71,7 @@ export const MIN_CONSORT_DISTANCE = 2.1;
 export const SPIRAL_TWIST = 0.38;
 
 /** Stars may drift this far from their generation ring during relaxation. */
-export const RADIUS_TOLERANCE = 1.8;
+export const RADIUS_TOLERANCE = 1.5;
 /** Angular gap between top-level dynasty wedges. */
 const WEDGE_GUTTER = 0.07;
 const RELAX_ITERATIONS = 140;
@@ -172,41 +172,76 @@ export function isChronologicalParentRelation(
   return baselineGeneration(child) + 0.25 >= baselineGeneration(parent);
 }
 
-/** Stable generation numbers derived from the union of sourced parent edges.
- * The layout stays fixed while lenses rewire the visible relation lines. */
+/** Types that live inside mortal time. Everyone else — gods, titans,
+ *  primordials, nymphs — is timeless: a divine parent anchors no era, because
+ *  the god couples with every age of the world alike. */
+const TEMPORAL_TYPES = new Set<Character['type']>(['hero', 'mortal', 'creature']);
+
+/** Stable generation numbers — the "mortal clock" model:
+ *  - Divine figures keep Hesiod's cosmic ages (longest path over divine→divine
+ *    parent steps from their cluster baselines).
+ *  - Mortal-time figures start together at one mortal base ring, just outside
+ *    the youngest gods, and only mortal→mortal steps advance the clock.
+ *  - A figure with no mortal parent (Helen, daughter of timeless Zeus) joins
+ *    the ring of their earliest mortal consort.
+ *  The layout stays fixed while lenses rewire the visible relation lines. */
 export function computeGenerations(
   characters: Character[],
   relations: Relation[],
 ): Map<string, number> {
   const charactersById = new Map(characters.map((character) => [character.id, character]));
-  const generations = new Map(
-    characters.map((character) => [
-      character.id,
-      character.id === 'chaos' ? 0 : baselineGeneration(character),
-    ]),
-  );
+  const isTemporal = (id: string) => {
+    const character = charactersById.get(id);
+    return character !== undefined && TEMPORAL_TYPES.has(character.type);
+  };
   const parentRelations = relations.filter((relation) =>
     isChronologicalParentRelation(relation, charactersById),
   );
-
-  for (let pass = 0; pass < characters.length; pass++) {
-    let changed = false;
-    for (const relation of parentRelations) {
-      const parentGeneration = generations.get(relation.to);
-      const childGeneration = generations.get(relation.from);
-      if (parentGeneration === undefined || childGeneration === undefined) continue;
-      const nextGeneration = parentGeneration + 1;
-      if (nextGeneration > childGeneration + 0.001) {
-        generations.set(relation.from, nextGeneration);
-        changed = true;
+  const propagate = (edges: Relation[], generations: Map<string, number>) => {
+    for (let pass = 0; pass < characters.length; pass++) {
+      let changed = false;
+      for (const relation of edges) {
+        const parentGeneration = generations.get(relation.to);
+        const childGeneration = generations.get(relation.from);
+        if (parentGeneration === undefined || childGeneration === undefined) continue;
+        if (parentGeneration + 1 > childGeneration + 0.001) {
+          generations.set(relation.from, parentGeneration + 1);
+          changed = true;
+        }
       }
+      if (!changed) break;
     }
-    if (!changed) break;
-  }
+  };
 
-  const childrenWithParents = new Set(parentRelations.map((relation) => relation.from));
+  // Phase A — the divine ages.
+  const generations = new Map<string, number>();
   for (const character of characters) {
-    if (childrenWithParents.has(character.id)) continue;
+    if (TEMPORAL_TYPES.has(character.type)) continue;
+    generations.set(character.id, character.id === 'chaos' ? 0 : baselineGeneration(character));
+  }
+  propagate(
+    parentRelations.filter((r) => !isTemporal(r.from) && !isTemporal(r.to)),
+    generations,
+  );
+
+  // Phase B — the mortal clock, starting just outside the youngest god.
+  const divineGenerations = [...generations.values()];
+  const mortalBase = (divineGenerations.length > 0 ? Math.max(...divineGenerations) : -1) + 1;
+  for (const character of characters) {
+    if (TEMPORAL_TYPES.has(character.type)) generations.set(character.id, mortalBase);
+  }
+  const mortalEdges = parentRelations.filter((r) => isTemporal(r.from) && isTemporal(r.to));
+  propagate(mortalEdges, generations);
+
+  // Era through marriage: a figure with no era-bearing parent of their own
+  // kind takes the ring of their earliest partner.
+  const anchored = new Set(
+    parentRelations
+      .filter((r) => isTemporal(r.from) === isTemporal(r.to))
+      .map((relation) => relation.from),
+  );
+  for (const character of characters) {
+    if (anchored.has(character.id)) continue;
     const partnerGenerations = relations
       .filter(
         (relation) =>
@@ -224,9 +259,6 @@ export function computeGenerations(
       .map((partnerId) => generations.get(partnerId))
       .filter((generation): generation is number => generation !== undefined);
     if (partnerGenerations.length > 0) {
-      // A parentless spouse joins the ring of their EARLIEST partner — taking
-      // the max would hurl Helen past her own children when a late-line
-      // husband (Deiphobus, eleven generations deep) enters the data.
       generations.set(
         character.id,
         Math.max(generations.get(character.id) ?? 0, Math.min(...partnerGenerations)),
@@ -234,20 +266,9 @@ export function computeGenerations(
     }
   }
 
-  // Consort adjustments may have raised a parent; push descendants outward again.
-  for (let pass = 0; pass < characters.length; pass++) {
-    let changed = false;
-    for (const relation of parentRelations) {
-      const parentGeneration = generations.get(relation.to);
-      const childGeneration = generations.get(relation.from);
-      if (parentGeneration === undefined || childGeneration === undefined) continue;
-      if (parentGeneration + 1 > childGeneration + 0.001) {
-        generations.set(relation.from, parentGeneration + 1);
-        changed = true;
-      }
-    }
-    if (!changed) break;
-  }
+  // Final fixpoint over every chronological edge (covers consort bumps and the
+  // rare god born of a mortal), so no child ever ends up inside a parent.
+  propagate(parentRelations, generations);
 
   return generations;
 }

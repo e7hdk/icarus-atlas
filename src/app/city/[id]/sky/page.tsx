@@ -40,6 +40,7 @@ export default async function CitySkyPage(props: { params: Promise<{ id: string 
         relations={relations}
         sources={atlas.sources}
         layout="compact"
+        activeMainTab="areas"
       />
       <CitySkyChrome cityId={city.id} cityName={city.name} />
     </>

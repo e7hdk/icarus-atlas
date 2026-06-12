@@ -8,20 +8,25 @@ import { GalaxyCanvas } from './GalaxyCanvas';
 import { TopBar } from '@/components/hud/TopBar';
 import { Legend } from '@/components/hud/Legend';
 import { SearchOverlay } from '@/components/hud/SearchOverlay';
+import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import { HoverCard } from '@/components/panels/HoverCard';
 import { CharacterPanel } from '@/components/panels/CharacterPanel';
+import type { MainTab } from '@/components/hud/MainNav';
 
 export function GalaxyView({
   characters,
   relations,
   sources,
   layout = 'galaxy',
+  activeMainTab = 'galaxy',
 }: {
   characters: Character[];
   relations: Relation[];
   sources: Source[];
   /** 'compact' remaps generations to start at zero — for the small city skies. */
   layout?: 'galaxy' | 'compact';
+  /** City skies belong to Lands even though they reuse the galaxy renderer. */
+  activeMainTab?: MainTab;
 }) {
   const positions = useMemo(
     () => computePositions(characters, relations, { compact: layout === 'compact' }),
@@ -49,6 +54,7 @@ export function GalaxyView({
       }
       if (event.key === 'Escape') {
         if (store.searchOpen) store.setSearchOpen(false);
+        else if (store.settingsOpen) store.setSettingsOpen(false);
         else store.select(null);
       }
     };
@@ -68,10 +74,11 @@ export function GalaxyView({
   return (
     <div className="fixed inset-0">
       <GalaxyCanvas characters={characters} relations={relations} positions={scaledPositions} />
-      <TopBar />
+      <TopBar active={activeMainTab} />
       <Legend />
       <HoverCard characters={characters} relations={relations} />
       <CharacterPanel characters={characters} relations={relations} sources={sources} />
+      <SettingsPanel sources={sources} />
       <SearchOverlay characters={characters} />
     </div>
   );

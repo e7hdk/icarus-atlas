@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Character, Relation } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';
@@ -27,6 +27,21 @@ export function RelationOrrery({
   const lens = useGalaxyStore((s) => s.lens);
   const [tip, setTip] = useState<string | null>(null);
   const [openRing, setOpenRing] = useState<RingKey | null>(null);
+  const frameRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  // The stage keeps its fixed pixel geometry and scales uniformly to the
+  // available width — and, being absolutely positioned, it can never stretch
+  // the page's min-content width on narrow viewports.
+  useEffect(() => {
+    const node = frameRef.current;
+    if (!node) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setScale(Math.min(1, entry.contentRect.width / STAGE));
+    });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
   const rings = useMemo(() => ringsFor(character.id, relations, lens), [character.id, relations, lens]);
@@ -42,8 +57,18 @@ export function RelationOrrery({
   return (
     <div>
       <div
-        className="orrery relative mx-auto"
-        style={{ width: STAGE, height: STAGE, maxWidth: '100%' }}
+        ref={frameRef}
+        className="relative mx-auto w-full"
+        style={{ maxWidth: STAGE, height: STAGE * scale }}
+      >
+      <div
+        className="orrery absolute left-1/2 top-0"
+        style={{
+          width: STAGE,
+          height: STAGE,
+          transform: `translateX(-50%) scale(${scale})`,
+          transformOrigin: 'top center',
+        }}
       >
         <div
           className="pointer-events-none absolute left-1/2 top-3 z-10 -translate-x-1/2 whitespace-nowrap font-body text-base italic text-nebula-soft transition-opacity duration-200"
@@ -127,6 +152,7 @@ export function RelationOrrery({
             No bonds recorded under this telling.
           </p>
         )}
+      </div>
       </div>
 
       <p className="mt-1 text-center font-body text-sm italic text-aether-faint">

@@ -1,6 +1,44 @@
 @import "tailwindcss";
 @import "../styles/theme.css";
 
+html {
+  /* Reserve the scrollbar's lane on both edges so centered layouts never
+     shift sideways when a tab with shorter content drops the scrollbar. */
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Aether Nebula scrollbars across pages, panels, search and settings. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(192 132 252 / 0.58) rgb(5 2 15 / 0.42);
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(5 2 15 / 0.42);
+}
+
+*::-webkit-scrollbar-thumb {
+  min-height: 32px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgb(124 77 255 / 0.72), rgb(192 132 252 / 0.58));
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(0 229 255 / 0.7), rgb(192 132 252 / 0.82));
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 body {
   background-color: var(--color-cosmos);
   background-image:
@@ -34,10 +72,10 @@ body {
   animation-play-state: paused;
 }
 
-/* City stars on the areas map: slow twinkle of the outer glow */
+/* City stars on the areas map: restrained pulse around the cartographic spark. */
 @keyframes city-twinkle {
-  0%, 100% { opacity: 0.55; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.25); }
+  0%, 100% { transform: scale(0.94); }
+  50% { transform: scale(1.1); }
 }
 
 /* Search overlay (⌘K): veil fade + panel rise */

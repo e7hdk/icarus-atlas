@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Character } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { IcarusBrand } from '@/components/ui/IcarusBrand';
 
 const TABS = [
   { key: 'poets', label: 'The poets', path: '' },
@@ -21,7 +22,7 @@ export function CharacterShell({
   children: React.ReactNode;
 }) {
   return (
-    <main className="mx-auto min-h-screen max-w-6xl px-6 pb-24 pt-6">
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-6">
       <div className="flex items-center justify-between">
         <Link
           href="/"
@@ -29,13 +30,11 @@ export function CharacterShell({
         >
           ← GALAXY
         </Link>
-        <span className="font-display text-xs tracking-[0.34em] text-aether/45">
-          ICARUS <span className="text-star-olympian">ATLAS</span>
-        </span>
+        <IcarusBrand compact />
       </div>
 
       <header className="mt-8 text-center">
-        <h1 className="font-display text-5xl tracking-[0.22em] text-aether [text-shadow:0_0_46px_rgba(252,211,77,.45)] sm:text-6xl">
+        <h1 className="font-display text-[clamp(26px,7vw,60px)] tracking-[0.22em] text-aether [text-shadow:0_0_46px_rgba(252,211,77,.45)]">
           {character.name.toUpperCase()}
         </h1>
         <p className="mt-2 font-body text-xl italic text-aether-muted">
