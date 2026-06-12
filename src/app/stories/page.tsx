@@ -96,6 +96,28 @@ export default async function StoriesPage() {
             );
           })}
         </div>
+
+        <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center">
+          <span
+            aria-hidden
+            className="block h-px w-28 bg-gradient-to-r from-transparent via-nebula-soft/50 to-transparent"
+          />
+          <p className="mt-7 font-display text-[11px] uppercase tracking-[0.34em] text-aether-faint">
+            The song is not yet done
+          </p>
+          <p className="mt-5 font-body text-xl italic leading-relaxed text-aether-muted">
+            Sing on, Muse — the scroll is far from full.
+            <br />
+            Beyond these kindled tales the dark still teems:
+            <br />
+            wars unwaged in ink, wanderings yet at sea,
+            <br />
+            and houses whose last verse no singer has shaped.
+          </p>
+          <p className="mt-5 font-body text-[15px] italic text-aether-faint">
+            More myths will rise here, as the sky fills star by star.
+          </p>
+        </div>
       </div>
     </main>
   );

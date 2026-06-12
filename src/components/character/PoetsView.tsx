@@ -2,9 +2,9 @@
 
 import { useMemo } from 'react';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
-import { SOURCE_IDS } from '@/types/character';
 import { filterSourced } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { LensDropdown } from './LensDropdown';
 import { RelationOrrery } from './RelationOrrery';
 
 /** The Poets tab: the ONE place where the source lens lives.
@@ -21,7 +21,6 @@ export function PoetsView({
   sources: Source[];
 }) {
   const lens = useGalaxyStore((s) => s.lens);
-  const setLens = useGalaxyStore((s) => s.setLens);
 
   const sourceName = useMemo(
     () => new Map<SourceId, string>(sources.map((s) => [s.id, s.name])),
@@ -29,43 +28,11 @@ export function PoetsView({
   );
   const story = filterSourced(character.story, lens);
 
-  // Compact labels for the lens bar; full names stay in citations.
-  const SHORT_NAMES: Partial<Record<SourceId, string>> = {
-    apollodorus: 'Apollodorus',
-    apollonius: 'Apollonius',
-  };
-
   return (
     <div>
       <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
         <span className="font-body text-base italic text-aether-faint">told after</span>
-        <div className="flex flex-wrap justify-center gap-1 rounded-full border border-glass-border bg-glass p-1 backdrop-blur-xl">
-          <button
-            type="button"
-            onClick={() => setLens('consensus')}
-            className={`rounded-full border px-4 py-1.5 font-display text-[11.5px] tracking-[0.08em] transition-colors ${
-              lens === 'consensus'
-                ? 'border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
-                : 'border-transparent text-aether-muted hover:text-aether'
-            }`}
-          >
-            ALL TELLERS
-          </button>
-          {SOURCE_IDS.map((id) => (
-            <button
-              key={id}
-              type="button"
-              onClick={() => setLens(id)}
-              className={`rounded-full border px-4 py-1.5 font-display text-[11.5px] tracking-[0.08em] transition-colors ${
-                lens === id
-                  ? 'border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
-                  : 'border-transparent text-aether-muted hover:text-aether'
-              }`}
-            >
-              {(SHORT_NAMES[id] ?? sourceName.get(id) ?? id).toUpperCase()}
-            </button>
-          ))}
-        </div>
+        <LensDropdown sources={sources} />
       </div>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[auto_1fr]">

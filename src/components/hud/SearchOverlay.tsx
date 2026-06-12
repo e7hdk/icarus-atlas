@@ -55,7 +55,7 @@ function SearchDialog({ characters }: { characters: Character[] }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center bg-cosmos-deep/55 px-4 pt-[18vh] backdrop-blur-[6px] animate-[search-veil-in_160ms_ease-out]"
+      className="fixed inset-0 z-50 flex items-start justify-center bg-cosmos-deep/55 px-4 pt-16 backdrop-blur-[6px] animate-[search-veil-in_160ms_ease-out] sm:pt-[18vh]"
       onMouseDown={() => setSearchOpen(false)}
     >
       <GlassPanel
@@ -86,7 +86,7 @@ function SearchDialog({ characters }: { characters: Character[] }) {
             spellCheck={false}
             className="flex-1 bg-transparent font-body text-xl text-aether placeholder:text-aether-faint focus:outline-none"
           />
-          <kbd className="rounded-md border border-glass-border bg-glass px-1.5 py-0.5 font-display text-[9px] tracking-[0.18em] text-aether-faint">
+          <kbd className="hidden rounded-md border border-glass-border bg-glass px-1.5 py-0.5 font-display text-[9px] tracking-[0.18em] text-aether-faint sm:block">
             ESC
           </kbd>
         </div>
@@ -112,7 +112,7 @@ function SearchDialog({ characters }: { characters: Character[] }) {
           </div>
         )}
 
-        <div className="flex items-center gap-4 border-t border-glass-border px-5 py-2.5 font-display text-[9px] uppercase tracking-[0.2em] text-aether-faint">
+        <div className="hidden items-center gap-4 border-t border-glass-border px-5 py-2.5 font-display text-[9px] uppercase tracking-[0.2em] text-aether-faint sm:flex">
           <span>↑↓ Navigate</span>
           <span>↵ Travel</span>
           {query.trim() && hits.length > 0 && (

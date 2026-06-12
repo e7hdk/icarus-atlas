@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MainNav } from '@/components/hud/MainNav';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
+import { BackArrow } from '@/components/ui/BackArrow';
 import type { GeoCity, GeoRegion } from '@/types/geo';
 
 const TABS = [
@@ -26,17 +27,17 @@ export function CityShell({
 }) {
   return (
     <main className="min-h-screen w-full pb-24">
+      <div className="flex justify-center px-6 pt-4 sm:hidden">
+        <MainNav active="areas" />
+      </div>
       <div className="pointer-events-none relative flex min-h-[68px] items-center px-6 py-4">
         <IcarusBrand />
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 sm:block">
           <MainNav active="areas" />
         </div>
-        <Link
-          href="/areas"
-          className="pointer-events-auto ml-auto rounded-full border border-glass-border bg-glass px-4 py-2 font-display text-[12px] tracking-[0.1em] text-aether-muted backdrop-blur-md transition-colors hover:border-nebula-soft/50 hover:text-aether"
-        >
-          ← LANDS
-        </Link>
+      </div>
+      <div className="px-6">
+        <BackArrow href="/areas" label="Back to the lands" />
       </div>
 
       <div className="mx-auto w-full max-w-4xl px-6">

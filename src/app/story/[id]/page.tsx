@@ -4,6 +4,8 @@ import { loadStories } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
+import { BackArrow } from '@/components/ui/BackArrow';
+import { MainNav } from '@/components/hud/MainNav';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 
 export async function generateStaticParams() {
@@ -36,14 +38,12 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-3xl px-6 pb-24 pt-6">
-      <div className="flex items-center justify-between">
-        <Link
-          href="/stories"
-          className="rounded-full border border-glass-border bg-glass px-4 py-2 font-display text-[12px] tracking-[0.1em] text-aether-muted backdrop-blur-md transition-colors hover:text-aether"
-        >
-          ← MYTHS
-        </Link>
+      <div className="mb-4 flex justify-center sm:hidden">
+        <MainNav active="stories" />
+      </div>
+      <div className="flex flex-col items-start gap-2.5">
         <IcarusBrand compact />
+        <BackArrow href="/stories" label="Back to the myths" />
       </div>
 
       <header className="mt-8 text-center">

@@ -84,6 +84,8 @@ export function CharacterStar({ character, position }: { character: Character; p
   return (
     <group position={position}>
       <group ref={pulseGroup}>
+        {/* Invisible oversized hit volume — fingers are not cursors. The
+            separation floor (3.6 world units) keeps neighbours unambiguous. */}
         <mesh
           onPointerOver={(e) => {
             e.stopPropagation();
@@ -99,6 +101,10 @@ export function CharacterStar({ character, position }: { character: Character; p
             select(character.id);
           }}
         >
+          <sphereGeometry args={[Math.max(size * 3, 1.5), 12, 12]} />
+          <meshBasicMaterial transparent opacity={0} depthWrite={false} />
+        </mesh>
+        <mesh>
           <sphereGeometry args={[size, 24, 24]} />
           <meshBasicMaterial ref={coreMaterial} toneMapped={false} transparent opacity={attested ? 1 : 0.45} />
         </mesh>

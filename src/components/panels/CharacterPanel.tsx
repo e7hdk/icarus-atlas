@@ -1,12 +1,16 @@
 'use client';
 
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { GlassPanel } from '@/components/ui/GlassPanel';
 import { bondsFor } from '@/features/characters/relations';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
+
+/** How many bonds to show inline before the overflow opens the full list. */
+const INLINE_BONDS = 8;
 
 /** Full story panel, opened by clicking a star. Every paragraph carries its sources. */
 export function CharacterPanel({
@@ -24,6 +28,14 @@ export function CharacterPanel({
   const setDiving = useGalaxyStore((s) => s.setDiving);
   const router = useRouter();
   const panelRef = useRef<HTMLElement>(null);
+  const [bondsOpen, setBondsOpen] = useState(false);
+  // Reset the expanded bonds list whenever the panel shows a new figure
+  // (React's official "adjust state on prop change during render" pattern).
+  const [shownFor, setShownFor] = useState(selectedId);
+  if (selectedId !== shownFor) {
+    setShownFor(selectedId);
+    setBondsOpen(false);
+  }
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
   const sourceName = useMemo(
@@ -37,6 +49,20 @@ export function CharacterPanel({
     if (selectedId) panelRef.current?.scrollTo({ top: 0, behavior: 'instant' });
   }, [selectedId]);
 
+  // While the bonds modal is open, Escape closes it first (capture phase so it
+  // pre-empts the galaxy's deselect handler).
+  useEffect(() => {
+    if (!bondsOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.stopPropagation();
+        setBondsOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown, true);
+    return () => window.removeEventListener('keydown', onKeyDown, true);
+  }, [bondsOpen]);
+
   if (!character) return null;
 
   const story = filterSourced(character.story, lens);
@@ -46,7 +72,28 @@ export function CharacterPanel({
     return citation ? `${names} — ${citation}` : names;
   };
 
+  const renderBond = (bond: (typeof bonds)[number]) => {
+    const other = byId.get(bond.otherId);
+    if (!other) return null;
+    return (
+      <button
+        key={bond.relationId}
+        type="button"
+        onClick={() => {
+          select(other.id);
+          setBondsOpen(false);
+        }}
+        className="rounded-full border border-glass-border bg-glass px-3 py-1 text-left font-body text-[14px] text-aether/90 transition-colors hover:border-nebula-soft/50 hover:text-aether"
+      >
+        {other.name}
+        <span className="text-aether-faint"> · {bond.label}</span>
+        {lens === 'consensus' && bond.topic && <span className="text-nebula-soft"> ⚖</span>}
+      </button>
+    );
+  };
+
   return (
+    <>
     <aside
       ref={panelRef}
       className="fixed bottom-0 right-0 top-0 z-30 w-[400px] max-w-full overflow-y-auto border-l border-glass-border bg-glass-heavy backdrop-blur-2xl"
@@ -102,22 +149,16 @@ export function CharacterPanel({
           <div className="mt-7 border-t border-glass-border pt-5">
             <div className="font-display text-[11px] uppercase tracking-[0.22em] text-aether-faint">Bonds</div>
             <div className="mt-3 flex flex-wrap gap-2">
-              {bonds.map((bond) => {
-                const other = byId.get(bond.otherId);
-                if (!other) return null;
-                return (
-                  <button
-                    key={bond.relationId}
-                    type="button"
-                    onClick={() => select(other.id)}
-                    className="rounded-full border border-glass-border bg-glass px-3 py-1 text-left font-body text-[14px] text-aether/90 transition-colors hover:border-nebula-soft/50 hover:text-aether"
-                  >
-                    {other.name}
-                    <span className="text-aether-faint"> · {bond.label}</span>
-                    {lens === 'consensus' && bond.topic && <span className="text-nebula-soft"> ⚖</span>}
-                  </button>
-                );
-              })}
+              {bonds.slice(0, INLINE_BONDS).map(renderBond)}
+              {bonds.length > INLINE_BONDS && (
+                <button
+                  type="button"
+                  onClick={() => setBondsOpen(true)}
+                  className="rounded-full border border-nebula-soft/40 bg-nebula-violet/15 px-3 py-1 font-body text-[14px] text-nebula-soft transition-colors hover:border-nebula-soft/70 hover:bg-nebula-violet/25"
+                >
+                  ··· {bonds.length - INLINE_BONDS} more
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -138,5 +179,40 @@ export function CharacterPanel({
         </div>
       </div>
     </aside>
+
+    {bondsOpen && (
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-cosmos-deep/60 px-4 backdrop-blur-[6px] animate-[search-veil-in_160ms_ease-out]"
+        onMouseDown={() => setBondsOpen(false)}
+      >
+        <GlassPanel
+          role="dialog"
+          aria-modal="true"
+          className="flex max-h-[80vh] w-full max-w-md flex-col overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_48px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
+          onMouseDown={(event) => event.stopPropagation()}
+        >
+          <div className="flex items-center justify-between border-b border-glass-border px-5 py-4">
+            <h3 className="font-display text-sm tracking-[0.16em] text-aether">
+              {character.name.toUpperCase()}
+              <span className="ml-2 font-body text-sm italic tracking-normal text-aether-faint">
+                {bonds.length} bonds
+              </span>
+            </h3>
+            <button
+              type="button"
+              onClick={() => setBondsOpen(false)}
+              aria-label="Close bonds list"
+              className="rounded-full px-2 py-0.5 font-display text-sm text-aether-faint transition-colors hover:text-aether"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="min-h-0 flex-1 overflow-y-auto p-4">
+            <div className="flex flex-wrap gap-2">{bonds.map(renderBond)}</div>
+          </div>
+        </GlassPanel>
+      </div>
+    )}
+    </>
   );
 }

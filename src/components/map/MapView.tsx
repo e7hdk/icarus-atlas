@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { BackArrow } from '@/components/ui/BackArrow';
 import { CityPanel } from '@/components/map/CityPanel';
 import type { BasemapData, GeoCity, GeoRegion, Lineage } from '@/types/geo';
 
@@ -156,6 +157,11 @@ export function MapView({
     pointerId: number;
     captured: boolean;
   } | null>(null);
+  /** Live touch points by id, for one-finger pan vs two-finger pinch. */
+  const pointers = useRef(new Map<number, { x: number; y: number }>());
+  /** Pinch baseline: finger distance, camera scale, and the world point anchored
+   *  under the gesture's midpoint at the moment the second finger landed. */
+  const pinch = useRef<{ dist: number; k: number; worldX: number; worldY: number } | null>(null);
   const movedInDrag = useRef(false);
   const zoomedRef = useRef(false);
 
@@ -241,6 +247,22 @@ export function MapView({
       clearTimeout(flightFailsafe.current);
       flightFailsafe.current = null;
     }
+  }, []);
+
+  /** Capture a pinch baseline from the two live touch points: finger distance,
+   *  current zoom, and the world point anchored under the gesture midpoint. */
+  const seedPinch = useCallback((node: HTMLElement) => {
+    const rect = node.getBoundingClientRect();
+    const pts = [...pointers.current.values()];
+    const mx = (pts[0].x + pts[1].x) / 2 - rect.left;
+    const my = (pts[0].y + pts[1].y) / 2 - rect.top;
+    const c = camera.current;
+    return {
+      dist: Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1,
+      k: c.k,
+      worldX: (mx - c.x) / c.k,
+      worldY: (my - c.y) / c.k,
+    };
   }, []);
 
   const flyTo = useCallback(
@@ -423,17 +445,43 @@ export function MapView({
       onPointerDown={(event) => {
         if (event.button !== 0) return;
         cancelFlight();
-        drag.current = {
-          sx: event.clientX,
-          sy: event.clientY,
-          ox: camera.current.x,
-          oy: camera.current.y,
-          pointerId: event.pointerId,
-          captured: false,
-        };
-        movedInDrag.current = false;
+        pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+        if (pointers.current.size >= 2) {
+          // Second finger down — switch from pan to a two-finger pinch.
+          drag.current = null;
+          movedInDrag.current = true; // a pinch is never a tap
+          pinch.current = seedPinch(event.currentTarget);
+        } else {
+          drag.current = {
+            sx: event.clientX,
+            sy: event.clientY,
+            ox: camera.current.x,
+            oy: camera.current.y,
+            pointerId: event.pointerId,
+            captured: false,
+          };
+          movedInDrag.current = false;
+        }
       }}
       onPointerMove={(event) => {
+        if (pointers.current.has(event.pointerId)) {
+          pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        }
+        // Two fingers: pinch-zoom toward the moving midpoint.
+        if (pinch.current && pointers.current.size >= 2) {
+          const rect = event.currentTarget.getBoundingClientRect();
+          const pts = [...pointers.current.values()];
+          const mx = (pts[0].x + pts[1].x) / 2 - rect.left;
+          const my = (pts[0].y + pts[1].y) / 2 - rect.top;
+          const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+          const p = pinch.current;
+          const k = Math.min(Math.max((p.k * dist) / p.dist, MIN_ZOOM), MAX_ZOOM);
+          camera.current = { k, x: mx - p.worldX * k, y: my - p.worldY * k };
+          applyCamera();
+          return;
+        }
+        // One finger: drag-pan.
         const d = drag.current;
         if (!d) return;
         const dx = event.clientX - d.sx;
@@ -451,11 +499,32 @@ export function MapView({
         camera.current = { ...camera.current, x: d.ox + dx, y: d.oy + dy };
         applyCamera();
       }}
-      onPointerUp={() => {
-        drag.current = null;
+      onPointerUp={(event) => {
+        pointers.current.delete(event.pointerId);
+        if (pointers.current.size >= 2) {
+          // Re-seed the pinch from the fingers that remain (e.g. 3→2).
+          pinch.current = seedPinch(event.currentTarget);
+        } else if (pointers.current.size === 1) {
+          // One finger left mid-pinch — resume panning with it, no jump.
+          pinch.current = null;
+          const [id, pt] = [...pointers.current.entries()][0];
+          drag.current = {
+            sx: pt.x,
+            sy: pt.y,
+            ox: camera.current.x,
+            oy: camera.current.y,
+            pointerId: id,
+            captured: false,
+          };
+        } else {
+          pinch.current = null;
+          drag.current = null;
+        }
       }}
-      onPointerCancel={() => {
-        drag.current = null;
+      onPointerCancel={(event) => {
+        pointers.current.delete(event.pointerId);
+        if (pointers.current.size < 2) pinch.current = null;
+        if (pointers.current.size === 0) drag.current = null;
       }}
       onClick={() => {
         if (movedInDrag.current) {
@@ -738,7 +807,7 @@ export function MapView({
                   setSelectedCityId(city.id);
                 }}
               >
-                <circle r={15} fill="transparent" />
+                <circle r={24} fill="transparent" />
                 <circle
                   r={7}
                   fill="#7c4dff"
@@ -835,7 +904,7 @@ export function MapView({
       )}
 
       {!selectedCity && active && (
-        <GlassPanel className="pointer-events-none absolute right-5 top-5 z-10 w-80 bg-glass-heavy px-5 py-4">
+        <GlassPanel className="pointer-events-none absolute inset-x-4 bottom-12 top-auto z-10 w-auto bg-glass-heavy px-5 py-4 sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-5 sm:w-80">
           <h2 className="font-display text-base tracking-[0.1em] text-aether">
             {active.name.toUpperCase()}
             <span className="ml-2 font-body text-sm italic tracking-normal text-aether-muted">
@@ -852,18 +921,20 @@ export function MapView({
       )}
 
       {focusedId && (
-        <button
-          type="button"
-          onClick={(event) => {
-            event.stopPropagation();
-            stepUp();
-          }}
-          className="absolute left-5 top-5 z-10 rounded-full border border-glass-border bg-glass px-4 py-1.5 font-display text-[11px] tracking-[0.18em] text-aether-muted backdrop-blur-xl transition-colors hover:border-nebula-soft/50 hover:text-aether"
+        <div
+          className="absolute left-5 top-5 z-10"
+          onClick={(event) => event.stopPropagation()}
+          onPointerDown={(event) => event.stopPropagation()}
         >
-          {byId.get(focusedId)?.parent
-            ? `← ${byId.get(byId.get(focusedId)!.parent!)?.name.toUpperCase()}`
-            : '← ALL REGIONS'}
-        </button>
+          <BackArrow
+            onClick={stepUp}
+            label={
+              byId.get(focusedId)?.parent
+                ? `Back to ${byId.get(byId.get(focusedId)!.parent!)?.name}`
+                : 'Back to all regions'
+            }
+          />
+        </div>
       )}
 
       <p className="pointer-events-none absolute bottom-3 left-1/2 z-10 -translate-x-1/2 font-body text-[11px] italic text-aether-faint">

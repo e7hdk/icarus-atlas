@@ -36,6 +36,10 @@ export function RelationOrrery({
   useEffect(() => {
     const node = frameRef.current;
     if (!node) return;
+    // Seed synchronously: the ResizeObserver callback can be starved in
+    // hidden/headless contexts, which would leave scale at 1 and overflow the
+    // page on narrow screens. getBoundingClientRect always answers.
+    setScale(Math.min(1, node.getBoundingClientRect().width / STAGE));
     const observer = new ResizeObserver(([entry]) => {
       setScale(Math.min(1, entry.contentRect.width / STAGE));
     });

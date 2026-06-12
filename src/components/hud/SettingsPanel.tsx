@@ -13,10 +13,15 @@ const CONSENSUS: { id: LensId; name: string; note: string } = {
 export function SettingsPanel({ sources }: { sources: Source[] }) {
   const open = useGalaxyStore((state) => state.settingsOpen);
   const setOpen = useGalaxyStore((state) => state.setSettingsOpen);
+  const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
   const lens = useGalaxyStore((state) => state.lens);
   const setLens = useGalaxyStore((state) => state.setLens);
   const spacingScale = useGalaxyStore((state) => state.spacingScale);
   const setSpacingScale = useGalaxyStore((state) => state.setSpacingScale);
+  const musicEnabled = useGalaxyStore((state) => state.musicEnabled);
+  const setMusicEnabled = useGalaxyStore((state) => state.setMusicEnabled);
+  const musicVolume = useGalaxyStore((state) => state.musicVolume);
+  const setMusicVolume = useGalaxyStore((state) => state.setMusicVolume);
 
   if (!open) return null;
 
@@ -53,6 +58,75 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
             ×
           </button>
         </div>
+
+        <section className="border-b border-glass-border px-5 py-3 sm:hidden">
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false);
+              setSearchOpen(true);
+            }}
+            className="flex w-full items-center gap-3 rounded-xl border border-glass-border bg-white/[0.03] px-3.5 py-3 text-left transition-colors hover:border-nebula-soft/50"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="h-4 w-4 shrink-0 text-nebula-soft"
+              aria-hidden
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" strokeLinecap="round" />
+            </svg>
+            <span className="font-display text-[11px] tracking-[0.16em] text-aether">
+              SEARCH THE ATLAS
+            </span>
+          </button>
+        </section>
+
+        <section className="border-b border-glass-border px-5 py-4">
+          <div className="flex items-center justify-between">
+            <h3 className="font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint">
+              Ambient music
+            </h3>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={musicEnabled}
+              aria-label="Toggle ambient music"
+              onClick={() => setMusicEnabled(!musicEnabled)}
+              className={`relative h-5 w-9 rounded-full border transition-colors ${
+                musicEnabled
+                  ? 'border-nebula-soft/60 bg-nebula-violet/40'
+                  : 'border-glass-border bg-white/[0.04]'
+              }`}
+            >
+              <span
+                className={`absolute top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full transition-all ${
+                  musicEnabled
+                    ? 'left-[1.15rem] bg-nebula-soft shadow-[0_0_10px_#c084fc]'
+                    : 'left-0.5 bg-aether-faint'
+                }`}
+              />
+            </button>
+          </div>
+          <input
+            aria-label="Music volume"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value={musicVolume}
+            disabled={!musicEnabled}
+            onChange={(event) => setMusicVolume(Number(event.target.value))}
+            className="mt-3 w-full accent-[#c084fc] disabled:opacity-40"
+          />
+          <div className="mt-1 flex justify-between font-body text-xs italic text-aether-faint">
+            <span>{musicEnabled ? 'Now playing' : 'Silenced'}</span>
+            <span>{Math.round(musicVolume * 100)}%</span>
+          </div>
+        </section>
 
         <section className="border-b border-glass-border px-5 py-4">
           <div className="flex items-center justify-between">

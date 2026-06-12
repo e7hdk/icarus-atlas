@@ -2,6 +2,8 @@ import Link from 'next/link';
 import type { Character } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
+import { BackArrow } from '@/components/ui/BackArrow';
+import { MainNav } from '@/components/hud/MainNav';
 
 const TABS = [
   { key: 'poets', label: 'The poets', path: '' },
@@ -23,14 +25,12 @@ export function CharacterShell({
 }) {
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-6">
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          className="rounded-full border border-glass-border bg-glass px-4 py-2 font-display text-[12px] tracking-[0.1em] text-aether-muted backdrop-blur-md transition-colors hover:text-aether"
-        >
-          ← GALAXY
-        </Link>
+      <div className="mb-4 flex justify-center sm:hidden">
+        <MainNav active="galaxy" />
+      </div>
+      <div className="flex flex-col items-start gap-2.5">
         <IcarusBrand compact />
+        <BackArrow href="/" label="Back to the galaxy" />
       </div>
 
       <header className="mt-8 text-center">
@@ -55,7 +55,7 @@ export function CharacterShell({
             <Link
               key={tab.key}
               href={`/character/${character.id}${tab.path}`}
-              className={`rounded-full px-5 py-2 font-display text-[12px] tracking-[0.1em] transition-colors ${
+              className={`rounded-full px-3.5 py-2 font-display text-[11px] tracking-[0.1em] transition-colors sm:px-5 sm:text-[12px] ${
                 active === tab.key
                   ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
                   : 'border border-transparent text-aether-muted hover:text-aether'

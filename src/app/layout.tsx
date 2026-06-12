@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import { AmbientAudio } from "@/components/audio/AmbientAudio";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <AmbientAudio />
+      </body>
     </html>
   );
 }

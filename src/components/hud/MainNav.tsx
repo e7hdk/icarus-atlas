@@ -16,7 +16,7 @@ export function MainNav({ active }: { active: MainTab }) {
         <Link
           key={tab.key}
           href={tab.href}
-          className={`rounded-full px-4 py-1.5 font-display text-[11px] tracking-[0.16em] transition-colors ${
+          className={`rounded-full px-3 py-2.5 font-display text-[11px] tracking-[0.16em] transition-colors sm:px-4 sm:py-1.5 ${
             active === tab.key
               ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
               : 'border border-transparent text-aether-muted hover:text-aether'

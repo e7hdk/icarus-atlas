@@ -11,7 +11,7 @@ export function TopBar({ active = 'galaxy' }: { active?: MainTab }) {
   const setSettingsOpen = useGalaxyStore((state) => state.setSettingsOpen);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-20 flex items-center px-6 py-4">
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-20 flex items-center px-4 py-3 sm:px-6 sm:py-4">
       <IcarusBrand />
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <MainNav active={active} />
@@ -21,7 +21,7 @@ export function TopBar({ active = 'galaxy' }: { active?: MainTab }) {
           type="button"
           onClick={() => setSearchOpen(true)}
           aria-label="Search the atlas"
-          className="pointer-events-auto flex h-9 items-center gap-2 rounded-full border border-glass-border bg-glass px-3 text-aether-muted backdrop-blur-xl transition-colors hover:border-nebula-soft/50 hover:text-aether"
+          className="pointer-events-auto hidden h-9 items-center gap-2 rounded-full border border-glass-border bg-glass px-3 text-aether-muted backdrop-blur-xl transition-colors hover:border-nebula-soft/50 hover:text-aether sm:flex"
         >
           <svg
             viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export function TopBar({ active = 'galaxy' }: { active?: MainTab }) {
           onClick={() => setSettingsOpen(!settingsOpen)}
           aria-label="Open atlas settings"
           aria-expanded={settingsOpen}
-          className={`pointer-events-auto flex h-9 w-9 items-center justify-center rounded-full border bg-glass backdrop-blur-xl transition-colors ${
+          className={`pointer-events-auto flex h-10 w-10 items-center justify-center rounded-full border bg-glass backdrop-blur-xl transition-colors sm:h-9 sm:w-9 ${
             settingsOpen
               ? 'border-nebula-soft/60 text-nebula-soft'
               : 'border-glass-border text-aether-muted hover:border-nebula-soft/50 hover:text-aether'
