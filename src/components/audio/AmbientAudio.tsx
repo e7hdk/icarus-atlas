@@ -77,18 +77,19 @@ export function AmbientAudio() {
         .play()
         .then(() => rampTo(volumeRef.current, FADE_IN_MS))
         .catch(() => {
-          // Autoplay blocked — arm the first user gesture to start the score.
+          // Autoplay blocked — start on the first user gesture anywhere. Capture
+          // phase fires before the target's handlers, so a star/region/button
+          // that calls stopPropagation can't swallow our activation.
+          const events = ['pointerdown', 'touchstart', 'keydown', 'click'] as const;
+          const opts: AddEventListenerOptions = { capture: true };
           const onGesture = () => {
+            removeGesture();
             audio.volume = 0;
             audio.play().then(() => rampTo(volumeRef.current, FADE_IN_MS)).catch(() => {});
           };
-          window.addEventListener('pointerdown', onGesture, { once: true });
-          window.addEventListener('keydown', onGesture, { once: true });
-          window.addEventListener('touchstart', onGesture, { once: true });
+          for (const type of events) window.addEventListener(type, onGesture, opts);
           removeGesture = () => {
-            window.removeEventListener('pointerdown', onGesture);
-            window.removeEventListener('keydown', onGesture);
-            window.removeEventListener('touchstart', onGesture);
+            for (const type of events) window.removeEventListener(type, onGesture, opts);
           };
         });
     };
