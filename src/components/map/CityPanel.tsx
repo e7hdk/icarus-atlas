@@ -86,7 +86,7 @@ export function CityPanel({
         href={`/city/${city.id}`}
         className="block border-t border-glass-border px-5 py-2.5 text-center font-display text-[11px] uppercase tracking-[0.2em] text-nebula-soft transition-colors hover:text-aether"
       >
-        Open the city codex →
+        Step through the gates →
       </Link>
       <p className="border-t border-glass-border px-5 py-2 font-body text-[11px] italic text-aether-faint">
         Coordinates: Pleiades gazetteer, CC BY · place {city.pleiadesId}

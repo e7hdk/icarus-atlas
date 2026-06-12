@@ -25,12 +25,19 @@ export function CharacterShell({
 }) {
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-6">
-      <div className="mb-4 flex justify-center sm:hidden">
-        <MainNav active="galaxy" />
+      {/* Mobile: back arrow to the left of the centered nav, all on the top row. */}
+      <div className="relative mb-4 flex items-center sm:hidden">
+        <BackArrow href="/" label="Back to the galaxy" />
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <MainNav active="galaxy" />
+        </div>
       </div>
       <div className="flex flex-col items-start gap-2.5">
         <IcarusBrand compact />
-        <BackArrow href="/" label="Back to the galaxy" />
+        {/* Desktop keeps the back arrow tucked under the brand. */}
+        <div className="hidden sm:block">
+          <BackArrow href="/" label="Back to the galaxy" />
+        </div>
       </div>
 
       <header className="mt-8 text-center">

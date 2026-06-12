@@ -8,6 +8,7 @@ import { BlendFunction } from 'postprocessing';
 import type { Character, Relation } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useIsMobile } from '@/lib/useIsMobile';
 import { CharacterStar } from './CharacterStar';
 import { Nebula } from './Nebula';
 import { BackgroundDome } from './BackgroundDome';
@@ -26,7 +27,11 @@ export function GalaxyCanvas({
 }) {
   const select = useGalaxyStore((s) => s.select);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
-  const [dpr, setDpr] = useState(1.75);
+  const isMobile = useIsMobile();
+  // Phones choke on full DPR + MSAA + a fat bloom chain. Render at ~1× and let
+  // the monitor ease lower under load; desktop keeps the crisp 1.75× look.
+  const [highPerf, setHighPerf] = useState(true);
+  const dpr = isMobile ? (highPerf ? 1 : 0.75) : highPerf ? 1.75 : 1.5;
 
   return (
     <Canvas
@@ -36,7 +41,7 @@ export function GalaxyCanvas({
       onPointerMissed={() => select(null)}
     >
       <color attach="background" args={['#08041d']} />
-      <PerformanceMonitor onDecline={() => setDpr(1.5)} onIncline={() => setDpr(1.75)} />
+      <PerformanceMonitor onDecline={() => setHighPerf(false)} onIncline={() => setHighPerf(true)} />
       <group scale={spacingScale * 4.0}>
         <BackgroundDome />
         <StarField />
@@ -49,12 +54,20 @@ export function GalaxyCanvas({
       })}
       <RelationLines relations={relations} positions={positions} />
       <CameraRig positions={positions} />
-      <EffectComposer multisampling={4}>
-        <Bloom mipmapBlur intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
-        <Vignette eskil={false} offset={0.15} darkness={0.55} />
-        {/* faint SCREEN grain kills additive-gradient banding on the dark backdrop */}
-        <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />
-      </EffectComposer>
+      {/* Mobile: no MSAA, and skip the grain pass (one fewer fullscreen draw). */}
+      {isMobile ? (
+        <EffectComposer key="m" multisampling={0}>
+          <Bloom mipmapBlur intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
+          <Vignette eskil={false} offset={0.15} darkness={0.55} />
+        </EffectComposer>
+      ) : (
+        <EffectComposer key="d" multisampling={4}>
+          <Bloom mipmapBlur intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
+          <Vignette eskil={false} offset={0.15} darkness={0.55} />
+          {/* faint SCREEN grain kills additive-gradient banding on the dark backdrop */}
+          <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />
+        </EffectComposer>
+      )}
     </Canvas>
   );
 }

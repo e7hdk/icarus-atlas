@@ -41,6 +41,7 @@ export default async function CitySkyPage(props: { params: Promise<{ id: string 
         sources={atlas.sources}
         layout="compact"
         activeMainTab="areas"
+        back={{ href: `/city/${city.id}`, label: `Back to the ${city.name} codex` }}
       />
       <CitySkyChrome cityId={city.id} cityName={city.name} />
     </>

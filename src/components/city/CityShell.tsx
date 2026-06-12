@@ -27,8 +27,12 @@ export function CityShell({
 }) {
   return (
     <main className="min-h-screen w-full pb-24">
-      <div className="flex justify-center px-6 pt-4 sm:hidden">
-        <MainNav active="areas" />
+      {/* Mobile: back arrow to the left of the centered nav, all on the top row. */}
+      <div className="relative flex items-center px-4 pt-4 sm:hidden">
+        <BackArrow href="/areas" label="Back to the lands" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <MainNav active="areas" />
+        </div>
       </div>
       <div className="pointer-events-none relative flex min-h-[68px] items-center px-6 py-4">
         <IcarusBrand />
@@ -36,7 +40,8 @@ export function CityShell({
           <MainNav active="areas" />
         </div>
       </div>
-      <div className="px-6">
+      {/* Desktop keeps the back arrow under the nav bar. */}
+      <div className="hidden px-6 sm:block">
         <BackArrow href="/areas" label="Back to the lands" />
       </div>
 

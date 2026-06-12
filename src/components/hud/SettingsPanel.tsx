@@ -37,7 +37,7 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="atlas-settings-title"
-        className="absolute right-6 top-[4.25rem] w-[min(24rem,calc(100vw-3rem))] overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.82),0_0_42px_rgba(124,77,255,0.14)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)]"
+        className="absolute right-3 top-[4.25rem] max-h-[calc(100dvh-5.5rem)] w-[min(24rem,calc(100vw-1.5rem))] overflow-y-auto overscroll-contain bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.82),0_0_42px_rgba(124,77,255,0.14)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)] sm:right-6 sm:w-[min(24rem,calc(100vw-3rem))]"
         onMouseDown={(event) => event.stopPropagation()}
       >
         <div className="flex items-start justify-between border-b border-glass-border px-5 py-4">
@@ -157,7 +157,7 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
           <h3 className="font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint">
             Source lens
           </h3>
-          <div className="mt-3 grid max-h-[46vh] gap-1.5 overflow-y-auto pr-1">
+          <div className="mt-3 grid gap-1.5">
             {lenses.map((option) => {
               const active = lens === option.id;
               return (

@@ -3,12 +3,31 @@
 import { MainNav } from '@/components/hud/MainNav';
 import type { MainTab } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
+import { BackArrow } from '@/components/ui/BackArrow';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 
-export function TopBar({ active = 'galaxy' }: { active?: MainTab }) {
+export function TopBar({
+  active = 'galaxy',
+  back,
+}: {
+  active?: MainTab;
+  back?: { href: string; label: string };
+}) {
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-20 flex items-center px-4 py-3 sm:px-6 sm:py-4">
-      <IcarusBrand />
+      {back ? (
+        <>
+          {/* Mobile: the back arrow takes the brand's spot. */}
+          <div className="sm:hidden">
+            <BackArrow href={back.href} label={back.label} />
+          </div>
+          <div className="hidden sm:block">
+            <IcarusBrand />
+          </div>
+        </>
+      ) : (
+        <IcarusBrand />
+      )}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <MainNav active={active} />
       </div>

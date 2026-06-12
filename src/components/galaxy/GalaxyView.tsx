@@ -19,6 +19,7 @@ export function GalaxyView({
   sources,
   layout = 'galaxy',
   activeMainTab = 'galaxy',
+  back,
 }: {
   characters: Character[];
   relations: Relation[];
@@ -27,6 +28,8 @@ export function GalaxyView({
   layout?: 'galaxy' | 'compact';
   /** City skies belong to Lands even though they reuse the galaxy renderer. */
   activeMainTab?: MainTab;
+  /** When set, the top bar shows this back affordance in place of the brand on mobile. */
+  back?: { href: string; label: string };
 }) {
   const positions = useMemo(
     () => computePositions(characters, relations, { compact: layout === 'compact' }),
@@ -74,7 +77,7 @@ export function GalaxyView({
   return (
     <div className="fixed inset-0">
       <GalaxyCanvas characters={characters} relations={relations} positions={scaledPositions} />
-      <TopBar active={activeMainTab} />
+      <TopBar active={activeMainTab} back={back} />
       <Legend />
       <HoverCard characters={characters} relations={relations} />
       <CharacterPanel characters={characters} relations={relations} sources={sources} />

@@ -8,6 +8,7 @@ import { GlassPanel } from '@/components/ui/GlassPanel';
 import { bondsFor } from '@/features/characters/relations';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
+import { useIsMobile } from '@/lib/useIsMobile';
 
 /** How many bonds to show inline before the overflow opens the full list. */
 const INLINE_BONDS = 8;
@@ -27,6 +28,7 @@ export function CharacterPanel({
   const lens = useGalaxyStore((s) => s.lens);
   const setDiving = useGalaxyStore((s) => s.setDiving);
   const router = useRouter();
+  const isMobile = useIsMobile();
   const panelRef = useRef<HTMLElement>(null);
   const [bondsOpen, setBondsOpen] = useState(false);
   // Reset the expanded bonds list whenever the panel shows a new figure
@@ -64,6 +66,61 @@ export function CharacterPanel({
   }, [bondsOpen]);
 
   if (!character) return null;
+
+  const openCharacterPage = () => {
+    setDiving(true);
+    setTimeout(() => {
+      router.push(`/character/${character.id}`);
+    }, 600); // Wait for the dive animation (smoothTime 0.5s + small buffer)
+  };
+
+  // Mobile: a slim card up top instead of a full-screen panel, so the star
+  // stays visible below. Name, a couple of facts, and a jump to the codex.
+  if (isMobile) {
+    const summary = filterSourced(character.summary, lens)[0] ?? filterSourced(character.story, lens)[0];
+    return (
+      <div className="fixed inset-x-3 top-3 z-30">
+        <GlassPanel className="bg-glass-heavy px-4 py-3.5 shadow-[0_18px_60px_rgba(5,2,15,0.8),0_0_40px_rgba(124,77,255,0.14)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)]">
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0">
+              <h2 className="truncate font-display text-lg tracking-[0.08em] text-aether">
+                {character.name.toUpperCase()}
+              </h2>
+              <p className="truncate font-body text-[13px] italic text-aether-muted">
+                {character.greekName}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => select(null)}
+              aria-label="Close"
+              className="-mr-1 -mt-1 shrink-0 rounded-full px-2 py-1 font-display text-sm text-aether-faint transition-colors hover:text-aether"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+            <TypeBadge type={character.type} />
+            <span className="min-w-0 truncate font-body text-[12.5px] italic text-aether-muted">
+              {character.domains.join(' · ')}
+            </span>
+          </div>
+          {summary && (
+            <p className="mt-2 line-clamp-2 font-body text-[14px] leading-snug text-aether/85">
+              {summary.text}
+            </p>
+          )}
+          <button
+            type="button"
+            onClick={openCharacterPage}
+            className="mt-3 w-full rounded-xl border border-nebula-soft/40 bg-nebula-violet/15 px-4 py-2.5 font-display text-[12px] uppercase tracking-[0.14em] text-nebula-soft transition-colors hover:bg-nebula-violet/25"
+          >
+            Step into the star →
+          </button>
+        </GlassPanel>
+      </div>
+    );
+  }
 
   const story = filterSourced(character.story, lens);
   const bonds = bondsFor(character.id, filterRelations(relations, lens));
@@ -166,15 +223,10 @@ export function CharacterPanel({
         <div className="mt-8 pb-4">
           <button
             type="button"
-            onClick={() => {
-              setDiving(true);
-              setTimeout(() => {
-                router.push(`/character/${character.id}`);
-              }, 600); // Wait for the dive animation (smoothTime 0.5s + small buffer)
-            }}
+            onClick={openCharacterPage}
             className="w-full rounded-xl border border-nebula-soft/40 bg-nebula-violet/10 px-5 py-3 font-display text-[13px] uppercase tracking-[0.15em] text-nebula-soft shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all hover:bg-nebula-violet/25 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
           >
-            Open the character page
+            Step into the star
           </button>
         </div>
       </div>

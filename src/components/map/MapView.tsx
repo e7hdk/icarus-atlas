@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { BackArrow } from '@/components/ui/BackArrow';
 import { CityPanel } from '@/components/map/CityPanel';
+import { useIsMobile } from '@/lib/useIsMobile';
 import type { BasemapData, GeoCity, GeoRegion, Lineage } from '@/types/geo';
 
 /** Padding around a focused region, as a fraction of its bounding box. */
@@ -142,6 +143,7 @@ export function MapView({
   cities: GeoCity[];
   lineages: Record<string, Lineage | null>;
 }) {
+  const isMobile = useIsMobile();
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const worldRef = useRef<SVGGElement>(null);
@@ -539,6 +541,9 @@ export function MapView({
         viewBox={basemap.viewBox}
         preserveAspectRatio="xMidYMid meet"
         className="absolute inset-0 h-full w-full"
+        // Skip anti-aliasing on phones: rasterising ~900 paths every pan/zoom
+        // frame is the map's heaviest cost; jaggier edges buy a smooth gesture.
+        shapeRendering={isMobile ? 'optimizeSpeed' : undefined}
       >
         <defs>
           {/* Greek land plus the foreign (Anatolian) coast — synthetic regions
@@ -603,18 +608,21 @@ export function MapView({
           </g>
         )}
         <g>
-          {basemap.coast.map((p, i) => (
-            <path
-              key={`halo-${i}`}
-              d={p.d}
-              transform={p.transform}
-              fill="none"
-              stroke="#7c4dff"
-              strokeOpacity={0.18}
-              strokeWidth={4}
-              vectorEffect="non-scaling-stroke"
-            />
-          ))}
+          {/* The soft purple coast halo doubles the stroked-path count — skip it
+              on phones and keep only the thin coastline below. */}
+          {!isMobile &&
+            basemap.coast.map((p, i) => (
+              <path
+                key={`halo-${i}`}
+                d={p.d}
+                transform={p.transform}
+                fill="none"
+                stroke="#7c4dff"
+                strokeOpacity={0.18}
+                strokeWidth={4}
+                vectorEffect="non-scaling-stroke"
+              />
+            ))}
           {basemap.coast.map((p, i) => (
             <path
               key={`c${i}`}
@@ -812,12 +820,16 @@ export function MapView({
                   r={7}
                   fill="#7c4dff"
                   opacity={isSelected ? 0.24 : 0.14}
-                  style={{
-                    animation: 'city-twinkle 3.2s ease-in-out infinite',
-                    animationDelay: `${cityIndex * 0.55}s`,
-                    transformOrigin: '0 0',
-                    transformBox: 'view-box',
-                  }}
+                  style={
+                    isMobile
+                      ? undefined
+                      : {
+                          animation: 'city-twinkle 3.2s ease-in-out infinite',
+                          animationDelay: `${cityIndex * 0.55}s`,
+                          transformOrigin: '0 0',
+                          transformBox: 'view-box',
+                        }
+                  }
                 />
                 <circle
                   r={4.2}

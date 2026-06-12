@@ -3,15 +3,21 @@
 import { useEffect } from 'react';
 import { BackArrow } from '@/components/ui/BackArrow';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useIsMobile } from '@/lib/useIsMobile';
 
 /** Floating city context over the full galaxy experience of a city sky. */
 export function CitySkyChrome({ cityId, cityName }: { cityId: string; cityName: string }) {
   const select = useGalaxyStore((s) => s.select);
+  const isMobile = useIsMobile();
 
   // Arrive with a clean slate — selection may linger from the main galaxy.
   useEffect(() => {
     select(null);
   }, [select]);
+
+  // On mobile the back arrow lives in the top bar (in the brand's spot), so the
+  // floating chrome is desktop-only.
+  if (isMobile) return null;
 
   return (
     <div className="pointer-events-none fixed left-4 top-28 z-20 sm:left-6 sm:top-16">
