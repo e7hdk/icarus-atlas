@@ -415,6 +415,8 @@ export function MapView({
     const node = containerRef.current;
     if (!node) return;
     const onWheel = (event: WheelEvent) => {
+      // Let panels (e.g. the city lineage) scroll instead of zooming the map.
+      if ((event.target as Element | null)?.closest('[data-map-overlay]')) return;
       event.preventDefault();
       cancelFlight();
       const rect = node.getBoundingClientRect();
@@ -446,6 +448,8 @@ export function MapView({
       className="relative h-full w-full cursor-grab touch-none overflow-hidden active:cursor-grabbing"
       onPointerDown={(event) => {
         if (event.button !== 0) return;
+        // Touches that begin on a panel scroll it — never pan/pinch the map.
+        if ((event.target as Element).closest('[data-map-overlay]')) return;
         cancelFlight();
         pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
 
@@ -528,9 +532,16 @@ export function MapView({
         if (pointers.current.size < 2) pinch.current = null;
         if (pointers.current.size === 0) drag.current = null;
       }}
-      onClick={() => {
+      onClick={(event) => {
         if (movedInDrag.current) {
           movedInDrag.current = false;
+          return;
+        }
+        // Clicks inside an open panel are its own business.
+        if ((event.target as Element).closest('[data-map-overlay]')) return;
+        // An open city panel closes on the next click anywhere else.
+        if (selectedCityId) {
+          setSelectedCityId(null);
           return;
         }
         stepUp();

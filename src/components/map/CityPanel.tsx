@@ -18,7 +18,10 @@ export function CityPanel({
   onClose: () => void;
 }) {
   return (
-    <GlassPanel className="absolute inset-x-4 bottom-4 top-auto z-10 flex max-h-[60%] w-auto flex-col bg-glass-heavy sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-5 sm:max-h-[calc(100%-7rem)] sm:w-[21rem]">
+    <GlassPanel
+      data-map-overlay
+      className="absolute inset-x-4 bottom-4 top-auto z-10 flex max-h-[60%] w-auto touch-auto flex-col overscroll-contain bg-glass-heavy sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-5 sm:max-h-[calc(100%-7rem)] sm:w-[21rem]"
+    >
       <div className="flex items-start justify-between px-5 pt-4">
         <div>
           <h2 className="font-display text-base tracking-[0.1em] text-aether">
@@ -41,7 +44,7 @@ export function CityPanel({
         </button>
       </div>
 
-      <div className="mt-3 min-h-0 flex-1 overflow-y-auto px-5 pb-4">
+      <div className="mt-3 min-h-0 flex-1 touch-pan-y overflow-y-auto overscroll-contain px-5 pb-4">
         <div className="font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint">
           Royal succession
         </div>
