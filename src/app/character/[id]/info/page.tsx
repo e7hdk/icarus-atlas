@@ -74,6 +74,28 @@ export default async function CharacterInfoPage(props: { params: Promise<{ id: s
           </p>
         )}
 
+        {reference?.sections?.length ? (
+          <div className="mt-9 space-y-8">
+            {reference.sections.map((section) => (
+              <section key={section.heading}>
+                <h2 className="font-display text-[19px] tracking-[0.02em] text-aether border-b border-glass-border pb-2">
+                  {section.heading}
+                </h2>
+                <div className="mt-3 space-y-3">
+                  {section.paragraphs.map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className="font-body text-[17px] leading-relaxed text-aether/85"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        ) : null}
+
         <h2 className="mt-10 font-display text-[12px] tracking-[0.26em] text-aether-faint">
           AT A GLANCE
         </h2>

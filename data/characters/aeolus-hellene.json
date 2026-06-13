@@ -1,0 +1,70 @@
+{
+  "id": "aeolus-hellene",
+  "name": "Aeolus",
+  "greekName": "Aiolos (Αἴολος)",
+  "romanName": "Aeolus",
+  "type": "mortal",
+  "domains": [
+    "the kingship of Thessaly",
+    "the Aeolian race",
+    "the Aeolid house"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Hellen by the nymph Orseis and king over the lands about Thessaly, after whom the Aeolians were named. By his wife Enarete, daughter of Deimachus, he begat seven sons and five daughters — the trunk from which the broadest mortal house in Greek myth descends.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "The patriarch of the Aeolids, kept by Homer wholly distinct from his namesake the keeper of the winds, Aeolus son of Hippotas.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 10.1–2",
+      "topic": "aeolus-name-conflation"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hellen had Dorus, Xuthus, and Aeolus by a nymph, Orseis — the only passage in the sources to name her. Where the brothers took the Peloponnese and the lands beyond, Aeolus reigned over the regions about Thessaly and called the inhabitants Aeolians after himself, so that the house and the race bear one founder's name. He is no wind-god but a mortal king, the anchor of the dynasty onto the Deucalionid stock.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "He married Enarete, daughter of Deimachus, and begat seven sons — Cretheus, Sisyphus, Athamas, Salmoneus, Deion, Magnes, Perieres — and five daughters — Canace, Alcyone, Pisidice, Calyce, Perimede. From this single roll of children spread Iolcus and Corinth, Orchomenus and Pylos and Messene, the Argonaut voyage, the Bellerophon cycle and the golden ram; the catalogue of one marriage seeds half the heroic age.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "Apollonius, telling of the Argonauts' lineage, independently names Cretheus and Athamas as sons of Aeolus — an attestation of the founding generation from outside the genealogist's catalogue, confirming the stem from which the Iolcus and Orchomenus branches grow.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 3.355–360"
+    },
+    {
+      "text": "Homer holds the line clean. In Glaucus' Corinthian pedigree the Aeolid patriarch stands at the head of the mortal house — Sisyphus and the rest are reckoned his issue — while the Aeolus who keeps the winds in his floating isle is a separate man, son of Hippotas, dear to the immortal gods. Two figures, one name, never merged.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 10.1–2; Iliad 6.152–211",
+      "topic": "aeolus-name-conflation"
+    },
+    {
+      "text": "Later hands collapse the two. Hyginus, retelling the Odyssey, makes the wind-keeper himself 'Aeolus, son of Hellen, to whom control of the winds had been given by Jove,' lending the Aeolid patronymic to the lord of the storms; Ovid too sets the wind-king's island in the wandering hero's path, drawing the warden of the winds into the founder's orbit. By such retellings the mortal founder and the keeper of the winds slide together — a conflation the earlier sources do not permit.",
+      "sources": [
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Fabulae 125; Metamorphoses 14.223–224",
+      "topic": "aeolus-name-conflation"
+    }
+  ]
+}

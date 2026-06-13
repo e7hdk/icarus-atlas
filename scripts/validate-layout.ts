@@ -47,6 +47,20 @@ function normalizeSignedAngle(angle: number): number {
   return a;
 }
 
+/* 0. Coverage: every character must get a star. A character without a computed
+ *    position is silently dropped from the galaxy (GalaxyCanvas skips it), so
+ *    assert one position per character — no character file may be starless. */
+for (const character of characters) {
+  if (!positions.has(character.id)) {
+    errors.push(`${character.id}: no star — computePositions returned no position for this character`);
+  }
+}
+if (positions.size !== characters.length) {
+  errors.push(
+    `star count mismatch: ${positions.size} stars for ${characters.length} characters`,
+  );
+}
+
 /* 1. Chronology: every sourced parent edge keeps the child visibly outside. */
 for (const relation of relations) {
   if (!isChronologicalParentRelation(relation, charactersById)) continue;
@@ -141,7 +155,7 @@ for (let leftIndex = 0; leftIndex < positionEntries.length; leftIndex++) {
 }
 
 console.log(
-  `Characters: ${characters.length} · Parent edges checked: ${relations.filter((relation) => isChronologicalParentRelation(relation, charactersById)).length}`,
+  `Characters: ${characters.length} · Stars: ${positions.size} · Parent edges checked: ${relations.filter((relation) => isChronologicalParentRelation(relation, charactersById)).length}`,
 );
 console.log(`Pelopid radii: ${pelopidChain.map((id) => `${id}=${radius(id).toFixed(1)}`).join(' → ')}`);
 if (closestPair) {

@@ -1,0 +1,82 @@
+{
+  "id": "philomela",
+  "name": "Philomela",
+  "greekName": "Philomela (Φιλομήλα)",
+  "romanName": "Philomela",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the woven testimony",
+    "outraged kinship",
+    "bird metamorphosis"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Pandion of Athens and sister of Procne, fetched to Thrace for Procne's husband Tereus, who raped her and cut out her tongue; voiceless, she wove the crime into a robe to reach her sister, and the women avenged it by killing Tereus' son Itys and serving him to his father.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.14.8; Metamorphoses 6.424–674"
+    },
+    {
+      "text": "At the close of the horror all were turned to birds; the sources disagree which sister became which — a swallow and a nightingale, with Tereus changed to a hoopoe (a hawk in Hyginus).",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.14.8; Metamorphoses 6.668–674; Fabulae 45; Description of Greece 10.4.8–10.4.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "She was a daughter of Pandion, king of Athens, and sister to Procne. When Procne was given in marriage to Tereus, son of Ares, who had come from Thrace to help Pandion in his war with Labdacus, and bore him a son, Itys, Tereus fell in love with Philomela. Pretending Procne was dead — he had hidden her away in the country — he took Philomela, married her and bedded with her, and cut out her tongue so she could not speak the wrong. But by weaving characters into a robe she revealed her own sorrows to Procne.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.8"
+    },
+    {
+      "text": "Ovid lingers over the outrage at length: Tereus, inflamed at the sight of her, violated Philomela in a remote stronghold and severed her tongue when she threatened to cry the deed aloud, then returned to Procne with the lie that her sister was dead. A year shut away, Philomela wove the tale into a web of purple and white marks and had it carried to the queen; freed under cover of the rites of Bacchus, the sisters killed Itys, Tereus' child, and served him to his father at the feast. When Tereus snatched up a sword to pursue them, all were changed to birds — Philomela flitting to the woods, Procne flying to the gables of a roof.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 6.424–674"
+    },
+    {
+      "text": "Hyginus tells a divergent version: Tereus, claiming Procne had died, came to Pandion and was given Philomela with guards, whom he drowned at sea before violating her on a mountain. He hid her with king Lynceus, whose wife Lathusa — a friend of Procne — sent the girl on to her sister, so that the two recognized each other and plotted revenge. Warned by prodigies that a kinsman would kill his son, Tereus slew his own brother Dryas by mistake; then Procne killed Itys, served him to Tereus, and fled with Philomela. In Hyginus there is no severed tongue and no woven robe.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 45"
+    },
+    {
+      "text": "Pausanias reports the crime as a breach of sacred custom — Tereus, though wedded to Procne, dishonored Philomela, transgressing Greek usage, and after mangling the girl drove the women to avenge her. He places the deed at Daulis in Phocis, where the women served Tereus his own son at the table, the first such pollution among men.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.5.4; 1.41.8; 10.4.8"
+    },
+    {
+      "text": "On the final transformation the sources part ways even as they agree on the substance. Apollodorus and Pausanias make Procne the nightingale and Philomela the swallow — Pausanias adds that in Phocis no swallow nests, for even as a bird Philomela kept her terror of Tereus and shunned his country; Hyginus reverses it, giving Philomela the nightingale and Procne the swallow, while Ovid sends Philomela to the woods and marks the swallow's breast for Procne. Tereus becomes the crested hoopoe in every account but Hyginus, who makes him a hawk.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.14.8; Metamorphoses 6.668–674; Fabulae 45; Description of Greece 10.4.8–10.4.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ]
+    }
+  ]
+}

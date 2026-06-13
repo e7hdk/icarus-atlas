@@ -1,0 +1,54 @@
+{
+  "id": "cecrops-ii",
+  "name": "Cecrops",
+  "greekName": "Kekrops (Κέκροψ)",
+  "romanName": "Cecrops",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the kingship of Athens",
+    "the Erechtheid succession",
+    "the Attic dynasty"
+  ],
+  "summary": [
+    {
+      "text": "The second of his name at Athens — eldest of the sons of Erechtheus by Praxithea, who came to the throne when Poseidon had destroyed his father's house. By Metiadusa, daughter of Eupalamus, he begat Pandion, and so carried the Erechtheid line forward.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1, 3.15.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Erechtheus, married to Praxithea, daughter of Phrasimus, had three sons — Cecrops, Pandorus, and Metion — and four daughters. When Poseidon had destroyed Erechtheus and all his house, Cecrops, as the eldest of the sons, succeeded to the throne. He married Metiadusa, daughter of Eupalamus, and begat Pandion, who reigned after him until the sons of Metion drove him out in a sedition.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1, 3.15.5"
+    },
+    {
+      "text": "Pausanias tells the succession differently: on the death of Erechtheus, Xuthus was appointed judge to decide which of the sons should rule, and he decided that Cecrops, the eldest of them, should be king — a verdict that earned Xuthus banishment from the land at the hands of the rest of Erechtheus's sons.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 7.1.2"
+    },
+    {
+      "text": "Pausanias is careful to keep the two men named Cecrops apart among the eponymous statues at Athens. The earlier ruler took to wife the daughter of Actaeus; the later — this son of Erechtheus, son of Pandion, son of Erichthonius — was the one who migrated to Euboea, and from his son sprang the Pandion whom the Metionidae would later depose.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.5.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "chthonia-athens",
+  "name": "Chthonia",
+  "greekName": "Chthonia (Χθονία)",
+  "romanName": "Chthonia",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the house of Erechtheus",
+    "the Erechtheid daughters",
+    "sacrifice for the city"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Erechtheus, king of Athens, and one of the four Erechtheid daughters; she was given in marriage to Butes.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "text": "In another strand she is the daughter whom Erechtheus killed in accordance with oracles on behalf of the Athenians, after which her sisters took their own lives.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 46, 238"
+    }
+  ],
+  "story": [
+    {
+      "text": "Chthonia belongs to the autochthonous house of Athens. Apollodorus numbers her among the children of Erechtheus by Praxithea, the daughters being Procris, Creusa, Chthonia, and Orithyia, the last of whom Boreas carried off. In the marriages that close the genealogy, Chthonia was married to Butes, the brother of Erechtheus, who at the division of Pandion's inheritance had received the priesthood of Athena and Poseidon.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "text": "A darker tradition makes her the city's victim rather than a bride. Hyginus alone fixes her name to the sacrifice: in his catalogue of fathers who slew their own children he records that Erechtheus, son of Pandion, killed his daughter Chthonia in accordance with oracles on behalf of the Athenians, and that her other sisters then committed suicide. Elsewhere he frames the same death as a sworn compact and a god's revenge — after Eumolpus, son of Neptune, was defeated and slain, Neptune demanded that a daughter of Erechtheus be sacrificed so the king should not rejoice in the god's son's death; when Chthonia had been offered, the rest, bound by their oaths, killed themselves alongside her.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 46, 238"
+    },
+    {
+      "text": "The two strands do not name the same fate for the same woman. Apollodorus, who marries Chthonia to Butes, elsewhere leaves the sacrificed Erechtheid unnamed, telling only that Erechtheus slaughtered his youngest daughter for victory and that the others slew themselves after her; Hyginus alone fixes the name Chthonia upon the victim of the oracle.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.15.1, 3.15.4; Fabulae 46, 238"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

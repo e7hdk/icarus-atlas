@@ -14,18 +14,25 @@
     {
       "text": "The most god-fearing of women, spared with Deucalion — her cousin and husband — on the drowned world's last dry summit, the twin peaks of Parnassus.",
       "sources": ["ovid"],
-      "citation": "Metamorphoses 1.322–329, 1.350–390"
+      "citation": "Metamorphoses 1.316–319, 1.322–329, 1.350–390",
+      "topic": "flood-landing"
     },
     {
-      "text": "Daughter of Epimetheus and Pandora, said to be the first mortal created; with Deucalion she fled the cataclysm to Mount Etna.",
+      "text": "Daughter of Epimetheus and Pandora, said to be the first mortal created.",
       "sources": ["hyginus"],
-      "citation": "Fabulae 142, 153",
+      "citation": "Fabulae 142",
       "topic": "first-woman"
+    },
+    {
+      "text": "With Deucalion she fled the cataclysm to Mount Etna, said to be the highest mountain in Sicily.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 153",
+      "topic": "flood-landing"
     }
   ],
   "story": [
     {
-      "text": "She is the daughter of Afterthought and of the first woman: Apollodorus and Hyginus both make her the child of Epimetheus and Pandora, and Ovid needs only the patronymic — Epimethis. In the Metamorphoses Deucalion calls her 'o sister, o wife, o sole surviving woman', joined to him by blood as his cousin, by marriage, and now by danger itself.",
+      "text": "She is the daughter of Afterthought and of the first woman: Apollodorus and Hyginus both make her the child of Epimetheus and Pandora, and Ovid needs only the patronymic — Epimethis. In the Metamorphoses Deucalion calls her 'o sister, o wife, o sole surviving woman', joined to him by blood as his cousin and by their marriage bed.",
       "sources": ["apollodorus", "ovid", "hyginus"],
       "citation": "Bibliotheca 1.7.2; Metamorphoses 1.351–353, 1.390; Fabulae 142"
     },
@@ -53,9 +60,16 @@
       "topic": "first-woman"
     },
     {
-      "text": "By Deucalion she bore the line that named the Greeks: first Hellen — whose father some say was Zeus, and whom Hyginus lists outright among the sons of Jove — then Amphictyon, who reigned over Attica, and a daughter Protogeneia, mother of Aethlius by Zeus.",
-      "sources": ["apollodorus", "hyginus"],
-      "citation": "Bibliotheca 1.7.2; Fabulae 155"
+      "text": "By Deucalion she bore the line that named the Greeks. Apollodorus counts the children: first Hellen — whose father some say was Zeus — then Amphictyon, and a daughter Protogeneia, mother of Aethlius by Zeus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2",
+      "topic": "hellen-paternity"
+    },
+    {
+      "text": "Hyginus drops Deucalion from the descent entirely, listing Hellen among the sons of Jove — 'Hellen by Pyrrha, daughter of Epimetheus'.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 155",
+      "topic": "hellen-paternity"
     }
   ]
 }

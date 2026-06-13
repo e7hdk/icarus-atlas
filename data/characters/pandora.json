@@ -3,7 +3,7 @@
   "name": "Pandora",
   "greekName": "Pandōra (Πανδώρα)",
   "type": "mortal",
-  "domains": ["the first woman", "all gifts", "the jar of ills"],
+  "domains": ["the moulded maiden", "all gifts", "the jar of ills"],
   "cluster": "mortal-arm",
   "summary": [
     {
@@ -12,9 +12,15 @@
       "citation": "Theogony 570–593; Works and Days 60–105"
     },
     {
-      "text": "The first woman, fashioned by the gods; her daughter by Epimetheus is Pyrrha. Her birth was carved in relief on the pedestal of the Athena Parthenos in the Parthenon.",
-      "sources": ["apollodorus", "pausanias"],
-      "citation": "Bibliotheca 1.7.2; Description of Greece 1.24.7",
+      "text": "The first woman fashioned by the gods; her daughter by Epimetheus is Pyrrha.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.2",
+      "topic": "first-woman"
+    },
+    {
+      "text": "Her birth was carved in relief on the pedestal of the Athena Parthenos in the Parthenon — Hesiod and others, Pausanias notes, having sung that she was the first woman.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.24.7",
       "topic": "first-woman"
     },
     {
@@ -25,24 +31,26 @@
   ],
   "story": [
     {
-      "text": "She is Zeus's answer to the stolen fire — the price of the flame, an evil in which all men will delight while they embrace their own destruction. At his command the famous Lame God moulded from earth the likeness of a modest maiden, and the goddess bright-eyed Athena girded and clothed her in silvery raiment and crowned her with a golden diadem worked with the creatures of land and sea. In the Theogony she has no name at all: she is simply the maiden, sheer guile not to be withstood by men — and from her is descended the race and tribe of women.",
+      "text": "She is Zeus's answer to the stolen fire — the price of the flame, a beautiful evil made as its price. At his command the famous Lame God moulded from earth the likeness of a modest maiden, and the goddess bright-eyed Athena girded and clothed her in silvery raiment and crowned her with a golden crown that the Lame God wrought himself. In the Theogony she has no name at all: she is simply the maiden, sheer guile not to be withstood by men — and from her is descended the race and tribe of women.",
       "sources": ["hesiod"],
       "citation": "Theogony 570–593, 600–612"
     },
     {
       "text": "In the Works and Days the gods each add their portion. Hephaestus mixes earth with water and puts in it the voice and strength of human kind; Athena teaches her needlework and the weaving of the varied web; golden Aphrodite sheds grace and cruel longing about her head; the Charites and queenly Persuasion hang golden necklaces on her, the rich-haired Hours crown her with spring flowers; and Hermes the Argus-Slayer contrives in her breast lies and crafty words and a deceitful nature. He names her Pandora — All-gift — because all they who dwelt on Olympus gave each a gift, a plague to men who eat bread; and then he leads her to Epimetheus, who forgets his brother's warning and takes her in.",
       "sources": ["hesiod"],
-      "citation": "Works and Days 60–89"
+      "citation": "Works and Days 60–89",
+      "topic": "pandora-animation"
     },
     {
-      "text": "Then the woman took the great lid off the jar with her hands and scattered all that was within, and her thought caused sorrow and mischief to men — for before that day the tribes of men had lived on earth remote and free from ills and hard toil and the heavy sicknesses. Only Hope remained inside in her unbreakable home under the rim of the great jar, for by the will of Zeus the lid caught her before she could fly out. It is a jar, a pithos, in Hesiod — and only Hesiod tells of it; the famous box belongs to her later afterlife, not to any ancient teller.",
+      "text": "Then the woman took the great lid off the jar with her hands and scattered all that was within, and her thought caused sorrow and mischief to men — for before that day the tribes of men had lived on earth remote and free from ills and hard toil and the heavy sicknesses. Only Hope remained inside in her unbreakable home under the rim of the great jar, for by the will of Zeus the lid caught her before she could fly out. It is a jar, a pithos, in Hesiod — and of these seven sources only Hesiod tells of it; the famous box belongs to her later afterlife, not to any ancient teller.",
       "sources": ["hesiod"],
       "citation": "Works and Days 90–105"
     },
     {
       "text": "Hyginus reshapes the workshop. In his telling Prometheus, son of Iapetus, first fashioned men from clay; then Vulcan, at Jove's command, made from clay the form of a woman, and it was Minerva who gave it a soul — in Hesiod the breath of life is Hephaestus' commission and Athena merely dresses the finished maiden. The other gods each gave her some gift, and for that they named her Pandora. She was given in marriage to Epimetheus, and her daughter was Pyrrha — and of the jar Hyginus says not a word.",
       "sources": ["hyginus"],
-      "citation": "Fabulae 142"
+      "citation": "Fabulae 142",
+      "topic": "pandora-animation"
     },
     {
       "text": "To the later tradition she is simply the beginning of humankind's female half. Apollodorus, pausing on the flood, calls Pyrrha the daughter of Epimetheus and of Pandora, 'the first woman fashioned by the gods'; and Pausanias, standing before the gold-and-ivory Athena in the Parthenon, records that on the pedestal of the statue is wrought in relief the birth of Pandora — of whom Hesiod and others have sung that she was the first woman, and before her womankind did not yet exist.",

@@ -733,3 +733,250 @@ Verification: ✓ verified — Homer's 'because of the witness of Dionysus' clai
 | Homer | Troilus the warrior charioteer stands among the sons Priam mourns having begotten. | Iliad 24.257 |
 | Apollodorus | Troilus closes the list of Hecuba's sons by Priam, yet "this last she is said to have had by Apollo" — the hedge preserved against his own catalogue. | Bibliotheca 3.12.5 |
 | Hyginus | Troilus appears without comment in the roll of Priam's children. | Fabulae 90 |
+
+## Who gave Pandora life?
+
+- **topic**: `pandora-animation`
+- **Characters**: `pandora`, `hephaestus`, `athena`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Zeus orders Hephaestus to mix earth with water and to put in the moulded maiden "the voice and strength of human kind"; Athena's part is only to gird, clothe and teach her. | Works and Days 60–64; Theogony 571–584 |
+| Hyginus | Vulcan, at Jove's command, made the woman's form from clay, and it was Minerva who gave it a soul (cui Minerva animam dedit); the other gods added their gifts. | Fabulae 142 |
+
+Significance: the animating power passes from the smith-god to the war-goddess — in Hesiod Hephaestus breathes voice and strength into the clay and Athena merely adorns it, while in Hyginus the body is Vulcan's and the soul is Minerva's.
+
+Verification: ✓ verified — Works and Days 60–64 and the "cui Minerva animam dedit" of Fabulae 142 confirmed against Perseus and ToposText; the land-and-sea-creatures detail on the diadem (Theogony 581–584) is not used as data pending verification.
+
+## Why Phrixus fled — the stepmother's plot or the false accusation
+
+- **topic**: `phrixus-cretheus-parentage`
+- **Characters**: `phrixus`, `athamas`, `nephele`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Phrixus is the son of Athamas of Boeotia by Nephele; his stepmother Ino contrives a famine by parching the seed-corn and suborns the Delphic messengers so that the oracle demands Phrixus be sacrificed to Zeus, forcing him to the altar and then to flight. | Bibliotheca 1.9.1 |
+| Hyginus | The flight has no stepmother's grain-plot: Cretheus' wife Demodice (others name her Biadice) desired Phrixus, son of Athamas, and when refused accused him falsely of assault, so that Cretheus persuaded Athamas to put the youth to death. | Astronomica 2.20.2 |
+
+Significance: the same flight is driven by two different households' malice — Apollodorus' jealous stepmother Ino faking an oracle against Nephele's children, versus Hyginus' spurned Demodice, wife of Cretheus, framing the boy in a Potiphar's-wife pattern. The atlas keeps a single Phrixus node with both motives tagged to this topic.
+
+Verification: ✓ verified — Bibliotheca 1.9.1 and Astronomica 2.20.2 confirmed against the pinned corpus; Hyginus' Demodice/Biadice variant and its Cretheus framing are explicit in the Astronomica passage.
+
+## The golden ram's making
+
+- **topic**: `ram-golden-ram-parentage`
+- **Characters**: `phrixus`, `nephele`, `hermes`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The ram with the golden fleece was a marvel Nephele had received from Hermes. | Bibliotheca 1.9.1 |
+| Apollonius | Argus tells how Phrixus the Aeolid reached Aea bestriding a ram which Hermes had made all of gold. | Argonautica 2.1140–1145 |
+| Hyginus | The gilded ram was no god-wrought wonder but the offspring of Neptune and Theophane. | Fabulae 3 |
+
+Significance: whether the ram is a divine artifact from Hermes (Apollodorus, Apollonius) or a living animal sired by Poseidon on the transformed Theophane (Hyginus) changes the fleece from a god's gift into a beast of Poseidon's stock.
+
+Verification: ✓ verified — Bibliotheca 1.9.1, Argonautica 2.1140–1145 and Fabulae 3 confirmed against the pinned corpus.
+
+## Is Aeolus the patriarch the same as the keeper of the winds?
+
+- **topic**: `aeolus-name-conflation`
+- **Characters**: `aeolus-hellene`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Two distinct men share the name: the Aeolid patriarch stands at the head of the mortal house (Sisyphus and the rest his issue), while the keeper of the winds in his floating isle is Aeolus son of Hippotas — never merged. | Odyssey 10.1–2; Iliad 6.152–155 |
+| Hyginus | Retelling the Odyssey, Hyginus makes the wind-keeper himself "Aeolus, son of Hellen, to whom control of the winds had been given by Jove," lending the Aeolid patronymic to the lord of the storms. | Fabulae 125 |
+| Ovid | Ovid draws the warden of the winds into the founder's orbit in the wandering-hero narrative, so that mortal founder and wind-king slide together. | Metamorphoses 14.223–224 |
+
+Significance: the trunk of the broadest mortal house in Greek myth is, by a later confusion, fused with a minor wind-god — exactly the kind of same-name collision the source lens exists to keep apart.
+
+Verification: ✓ verified — Odyssey 10.1–2 names the wind-keeper "son of Hippotas"; Fabulae 125's "Aeolus son of Hellen" conflation confirmed on ToposText. Ovid Met. 14.223 calls the wind-king "Hippotades," so his role here is association, not an explicit renaming — the prose attributes the explicit equation to Hyginus alone.
+
+## Why does Sisyphus roll the stone?
+
+- **topic**: `reason-for-sisyphus-punishment`
+- **Characters**: `sisyphus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Odysseus sees Sisyphus in violent torment, heaving the ever-rebounding stone — but no cause for the punishment is given. | Odyssey 11.593–600 |
+| Pseudo-Apollodorus | Sisyphus is punished because he betrayed Zeus: when Zeus carried off Aegina, daughter of the river Asopus, Sisyphus told her searching father where she had gone. | Bibliotheca 1.9.3 |
+
+Significance: the most famous punishment in Hades comes with no stated crime in our oldest source; the betrayal-of-Zeus motive (and the cheating-of-Death tale, which is in none of the seven) accretes later.
+
+Verification: ✓ verified — Odyssey 11.593–600 gives the torment without cause; Bibliotheca 1.9.3 supplies the Aegina/Asopus betrayal.
+
+## The mother of Jason
+
+- **topic**: `jason-mother`
+- **Characters**: `jason`, `aeson`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Aeson, son of Cretheus, had a son Jason by Polymede, daughter of Autolycus. | Bibliotheca 1.9.16 |
+| Apollonius | Aeson had wedded Alcimede, daughter of Phylacus (herself born of Clymene daughter of Minyas); she is Jason's mother. | Argonautica 1.45–47, 1.230–233 |
+| Hyginus | Jason is the son of Aeson and Alcimede, Clymene's daughter — agreeing with Apollonius against Apollodorus. | Fabulae 13, 14 |
+
+Significance: the leader of the Argonauts has two different mothers across the sources — a clean parentage fork that re-wires the maternal line of the saga's hero.
+
+Verification: ✓ verified — Bibliotheca 1.9.16 (Polymede) and Argonautica 1.45–47 / Fabulae 14 (Alcimede) confirmed.
+
+## Where did the golden ram come from?
+
+- **topic**: `ram-golden-ram-parentage`
+- **Characters**: `athamas`, `phrixus`, `nephele`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Nephele gave her children a ram with a golden fleece, a marvel she had received — no parentage is given to the ram itself. | Bibliotheca 1.9.1 |
+| Apollonius | The ram is a wonder Hermes had made all of gold — a divine artefact, not a creature with parents. | Argonautica 2.1140–1145 |
+| Hyginus | The gilded ram was no god-made thing but living offspring, the child of Neptune (Poseidon) and Theophane. | Fabulae 3; Astronomica 2.20 |
+
+Significance: the ram that carries Phrixus to Colchis and whose fleece becomes the Argonauts' prize is a crafted marvel in the Greek sources but a born animal with divine parents in Hyginus.
+
+Verification: ✓ verified — Argonautica 2.1140–1145 ("a ram which Hermes had made all gold") and Fabulae 3 (Neptune + Theophane) confirmed.
+
+## Why is Athamas driven mad?
+
+- **topic**: `cause-of-athamas-madness`
+- **Characters**: `athamas`, `ino`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Athamas loses the children of Ino through the wrath of Hera — a wrath rooted, elsewhere in Apollodorus, in his and Ino's rearing of the infant Dionysus, the son of Zeus by Semele. | Bibliotheca 1.9.2, 3.4.3 |
+| Ovid | Juno, jealous of Ino's pride in her divine foster-child and her good fortune, descends to the underworld and sends the Fury Tisiphone to madden Athamas and Ino. | Metamorphoses 4.416–542 |
+
+Significance: the madness that destroys Athamas' house is bare "wrath of Hera" in one account, divine jealousy over the nursing of Dionysus in another — the same catastrophe with different theological causes.
+
+Verification: ✓ verified — Bibliotheca 1.9.2 (simple Hera-wrath) and 3.4.3 (Dionysus-nursing), Ovid Met. 4.416–542 (Juno and Tisiphone) confirmed.
+
+## How did Melicertes die?
+
+- **topic**: `melicertes-death-cauldron-vs-leap`
+- **Characters**: `athamas`, `ino`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | In one account Ino threw the boy Melicertes into a boiling cauldron, then leapt into the sea carrying the dead child. | Bibliotheca 3.4.3 |
+| Ovid | The maddened Ino snatches the living Melicertes and leaps with him from a sea-cliff into the waves — no cauldron. | Metamorphoses 4.519–542 |
+| Pausanias | Ino flung herself with Melicertes from the Molurian Rock; a dolphin bore the boy ashore, and as Palaemon he received the Isthmian honours. | Description of Greece 1.44.7–8 |
+
+Significance: the child whose death founds the Isthmian games dies by boiling cauldron in one telling and is carried alive into the sea in others — the difference between a horror and a sea-change into the god Palaemon.
+
+Verification: ✓ verified — Bibliotheca 3.4.3 (cauldron) against Ovid Met. 4.519–542 and Pausanias 1.44.7–8 (the leap and the dolphin).
+
+## Whose love drives the golden-ram flight — Athamas' or Cretheus'?
+
+- **topic**: `phrixus-cretheus-parentage`
+- **Characters**: `phrixus`, `athamas`, `cretheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Phrixus and Helle are the children of Athamas by Nephele; Ino, Athamas' second wife, plots against them, prompting the golden-ram flight. | Bibliotheca 1.9.1 |
+| Hyginus | In the Astronomica the household is Cretheus': his wife Demodice (others name her Biadice), moved by the beauty of Phrixus son of Athamas, accuses him when he refuses her — the slander that drives the flight. | Astronomica 2.20 |
+
+Significance: the standard Athamas–Nephele–Ino tragedy is displaced in Hyginus' star-myth onto the house of Cretheus, with a Potiphar's-wife slander in place of the stepmother's grain-plot.
+
+Verification: ✓ verified — Bibliotheca 1.9.1 (Athamas/Nephele/Ino) against Astronomica 2.20 (Cretheus/Demodice).
+
+## The father of Pelias
+
+- **topic**: `pelias-paternity`
+- **Characters**: `pelias`, `poseidon`, `cretheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Tyro bore Pelias and Neleus to Poseidon, who had come to her in the likeness of the river Enipeus. | Odyssey 11.253–254 |
+| Pseudo-Apollodorus | Pelias and Neleus are the twin sons of Poseidon by Tyro. | Bibliotheca 1.9.8 |
+| Hyginus | Pelias is the son of Cretheus and Tyro — a mortal father in place of the god. | Fabulae 12 |
+
+Significance: the usurper of Iolcus who launches the Argonaut voyage is a son of Poseidon in the mainstream and a son of the mortal Cretheus in Hyginus — the divine paternity that dignifies the antagonist is not universal.
+
+Verification: ✓ verified — Odyssey 11.253–254 and Bibliotheca 1.9.8 (Poseidon) against Fabulae 12 (Cretheus).
+
+## The father of Aethlius
+
+- **topic**: `aethlius-paternity`
+- **Characters**: `aethlius`, `zeus`, `aeolus-hellene`, `protogeneia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Aethlius is the son of Zeus by Protogeneia, daughter of Deucalion. | Bibliotheca 1.7.2 |
+| Pausanias | Pausanias records both: that Aethlius was a son of Zeus and Protogeneia, but adds that "they say Aethlius too was a son of Aeolus." | Description of Greece 5.1.3, 5.8.2 |
+
+Significance: the founder of the Elean line hangs off Zeus in the mainstream account but is folded back into the Aeolid stock by a local Elean tradition — which, since he married the Aeolid Calyce, would make his marriage one between siblings.
+
+Verification: ✓ verified — Bibliotheca 1.7.2 (Zeus + Protogeneia) and Pausanias 5.8.2 ("Aethlius too was a son of Aeolus") confirmed.
+
+## The descent of Endymion
+
+- **topic**: `endymion-parentage`
+- **Characters**: `endymion`, `aethlius`, `zeus`, `calyce`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Calyce and Aethlius had a son Endymion — "but some say that he was a son of Zeus." | Bibliotheca 1.7.5 |
+| Pausanias | Endymion is the son of Aethlius, who was himself a son of Zeus and Protogeneia. | Description of Greece 5.1.3 |
+
+Significance: the eternal sleeper loved by the Moon is an Aeolid great-grandson through Calyce and Aethlius in the systematic genealogy, yet Apollodorus himself preserves the rival claim that Zeus fathered him directly.
+
+Verification: ✓ verified — Bibliotheca 1.7.5 ("but some say a son of Zeus") and Pausanias 5.1.3 confirmed.
+
+## The parentage of Amphictyon
+
+- **topic**: `amphictyon-parentage`
+- **Characters**: `amphictyon`, `deucalion`, `pyrrha`, `gaia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Amphictyon, third king of Attica, was a son of Deucalion (and Pyrrha) — the second child after Hellen. | Bibliotheca 1.7.2 |
+| Pseudo-Apollodorus | "Some say that Amphictyon was a son of Deucalion, others that he was a son of the soil" — an autochthon like the kings he ruled among. | Bibliotheca 3.14.6 |
+
+Significance: the king who received Attica after Cranaus is either the flood-survivor's son — knitting the Athenian throne into the Deucalionid stock — or one more earth-born Attic autochthon, owing nothing to the line of Hellen. Apollodorus preserves both within his own pages.
+
+Verification: ✓ verified — Bibliotheca 1.7.2 (son of Deucalion) and 3.14.6 ("some say… a son of the soil") confirmed; Pausanias 1.2.6 names him king and Cranaus' son-in-law without pressing the descent.
+
+## The father of Theseus
+
+- **topic**: `theseus-paternity`
+- **Characters**: `theseus`, `aegeus`, `poseidon`, `aethra`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Theseus is simply "son of Aegeus, a man like the immortals" — purely mortal paternity. | Iliad 1.265 |
+| Pseudo-Apollodorus | Aegeus lay with Aethra, "but in the same night Poseidon also had connexion with her" — the paternity left open. | Bibliotheca 3.15.7 |
+| Pausanias | Poseidon, not Aegeus, lay with Aethra on the island Sphaeria after a dream from Athena — the divine father. | Description of Greece 2.33.1 |
+| Hyginus | Neptune and Aegeus both lay with Aethra the same night, but "Neptune conceded the child to Aegeus." | Fabulae 37 |
+
+Significance: the founder-hero of Athens is the son of a mortal king, of the sea-god, or of both at once — a paternity the city itself never settled, half-claiming Theseus for the Aegean.
+
+Verification: ✓ verified — Iliad 1.265 (son of Aegeus); Bibliotheca 3.15.7 and Hyginus 37 (the same-night reconciliation); Pausanias 2.33.1 (Poseidon at Sphaeria).
+
+## Whom did Erechtheus slay at Eleusis?
+
+- **topic**: `who-erechtheus-slew`
+- **Characters**: `erechtheus`, `eumolpus`, `immaradus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Erechtheus slew Eumolpus himself, the Thracian son of Poseidon who led the Eleusinians. | Bibliotheca 3.15.4 |
+| Pausanias | The man Erechtheus killed was Immaradus, son of Eumolpus; Eumolpus himself remained at Eleusis. | Description of Greece 1.27.4, 2.14.2 |
+
+Significance: whether the Athenian king cut down the invading priest-king or only his son decides whether the founder of the Eleusinian Mysteries died in the war that the Mysteries' truce later commemorated.
+
+Verification: ✓ verified — Bibliotheca 3.15.4 (Eumolpus slain) against Description of Greece 1.27.4 (Immaradus the victim, Eumolpus surviving).
+
+## How Erechtheus died
+
+- **topic**: `death-of-erechtheus`
+- **Characters**: `erechtheus`, `poseidon`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Poseidon, whose son Eumolpus Erechtheus had slain, destroyed Erechtheus and his whole house. | Bibliotheca 3.15.5 |
+| Hyginus | At Neptune's request, Erechtheus was smitten with a thunderbolt by Jove (Zeus). | Fabulae 46 |
+| Pausanias | Erechtheus was simply killed in the battle with the Eleusinians, alongside Immaradus — no divine smiting. | Description of Greece 1.38.3 |
+
+Significance: the victor's death is the god's revenge in one telling, the king of heaven's thunderbolt in another, and an ordinary battlefield fall in the third — the same war won and lost three ways.
+
+Verification: ✓ verified — Bibliotheca 3.15.5 (Poseidon destroys him), Fabulae 46 (Zeus' thunderbolt at Poseidon's request), Description of Greece 1.38.3 (killed in battle).

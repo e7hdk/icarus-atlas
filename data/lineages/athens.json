@@ -1,0 +1,122 @@
+{
+  "city": "athens",
+  "reigns": [
+    {
+      "ruler": "Actaeus",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 1.2.5",
+      "note": "Pausanias' first king of the land then called Actaea; Apollodorus and Hyginus instead begin the line with the earth-born Cecrops."
+    },
+    {
+      "ruler": "Cecrops I",
+      "characterId": "cecrops",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.14.1; Paus. 1.2.6; Hyg. Fab. 48",
+      "note": "The autochthonous man-serpent, or (Pausanias) son-in-law of Actaeus; in his reign Athena and Poseidon contested the land."
+    },
+    {
+      "ruler": "Cranaus",
+      "characterId": "cranaus",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.14.5; Paus. 1.2.6",
+      "note": "Another son of the soil; in his reign the flood of Deucalion fell. Expelled by Amphictyon."
+    },
+    {
+      "ruler": "Amphictyon",
+      "characterId": "amphictyon",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.14.6; Paus. 1.2.6",
+      "note": "Son of Deucalion or another autochthon; reigned twelve years, then expelled by Erichthonius."
+    },
+    {
+      "ruler": "Erichthonius",
+      "characterId": "erichthonius-athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.14.6; Paus. 1.2.6",
+      "note": "Earth-born of Hephaestus, reared by Athena; founded the Panathenaea and set up the wooden image of the goddess."
+    },
+    {
+      "ruler": "Pandion I",
+      "characterId": "pandion",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. 3.14.7",
+      "note": "In his reign Demeter and Dionysus came to Attica; father of Erechtheus, Butes, Procne and Philomela."
+    },
+    {
+      "ruler": "Erechtheus",
+      "characterId": "erechtheus",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.15.1, 3.15.4-5; Paus. 1.5.2-3",
+      "note": "Won the war with Eleusis but was destroyed by Poseidon (or Zeus' thunderbolt) for slaying Eumolpus."
+    },
+    {
+      "ruler": "Cecrops II",
+      "characterId": "cecrops-ii",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.15.5; Paus. 1.5.3",
+      "note": "Eldest son of Erechtheus; succeeded after Poseidon destroyed his father's house."
+    },
+    {
+      "ruler": "Pandion II",
+      "characterId": "pandion-ii",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.15.5; Paus. 1.5.3",
+      "note": "Driven out by the sons of Metion; fled to Megara, married Pylia, and became king there."
+    },
+    {
+      "ruler": "The Metionids",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. 3.15.5-6",
+      "note": "The sons of Metion usurped the throne during Pandion II's exile; Pandion's sons returned from Megara and expelled them."
+    },
+    {
+      "ruler": "Aegeus",
+      "characterId": "aegeus",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. 3.15.6, 3.16.1; Paus. 1.5.4",
+      "note": "Eldest of the four restored Pandionids, he took the whole power; childless until Theseus."
+    },
+    {
+      "ruler": "Theseus",
+      "characterId": "theseus",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Hom. Il. 1.265; Apollod. Epit. 1.1-1.24; Paus. 1.17, 1.22",
+      "note": "Son of Aegeus (or Poseidon); slayer of the Minotaur, unifier of Attica, the great Athenian hero-king."
+    }
+  ]
+}

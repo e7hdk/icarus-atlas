@@ -7,7 +7,7 @@
   "cluster": "titan-ring",
   "summary": [
     {
-      "text": "River-god son of Oceanus and Tethys after whom the river of Argos is named; father of Phoroneus, and the witness whose verdict for Hera cost his own stream its water.",
+      "text": "River-god son of Oceanus and Tethys after whom the river of Argos is named; father of Phoroneus, and the witness whose testimony for Hera moved Poseidon to dry up the springs of Argos.",
       "sources": ["apollodorus"],
       "citation": "Bibliotheca 2.1.1, 2.1.4"
     },
@@ -19,7 +19,8 @@
     {
       "text": "The river of Argos who hid in his deepest cave weeping for lost Io, his daughter, swelling his stream with tears.",
       "sources": ["ovid"],
-      "citation": "Metamorphoses 1.583–587"
+      "citation": "Metamorphoses 1.583–587",
+      "topic": "io-paternity"
     }
   ],
   "story": [
@@ -29,12 +30,12 @@
       "citation": "Bibliotheca 2.1.1; Fabulae, preface (Theogony)"
     },
     {
-      "text": "When Poseidon and Hera disputed possession of the land, Inachus spoke for Hera — and paid for it. In Apollodorus, Poseidon dried up even the springs out of anger at him for testifying that the land belonged to Hera, which is why the Inachus runs with water only after rain. Pausanias makes him foreman of a tribunal of rivers — Inachus, Cephisus and Asterion judged between the gods and awarded the land to Hera, and Poseidon made their waters vanish — and elsewhere records the opposite revenge: Poseidon flooded the greater part of the country, until Hera induced him to send the sea back.",
+      "text": "When Poseidon and Hera disputed possession of the land, Inachus spoke for Hera — and paid for it. In Apollodorus, Poseidon dried up even the springs out of anger at him for testifying that the land belonged to Hera, leaving the country waterless. Pausanias makes him foreman of a tribunal of rivers — Inachus, Cephisus and Asterion judged between the gods and awarded the land to Hera, and Poseidon made their waters vanish, so that the Inachus flows only after rain — and elsewhere records the opposite revenge: Poseidon flooded the greater part of the country, until Hera induced him to send the sea back.",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Bibliotheca 2.1.4; Description of Greece 2.15.5, 2.22.4"
     },
     {
-      "text": "In Ovid, when every river of Thessaly comes to console the bereaved Peneus, one river of Argos is missing: Inachus, hidden away in his deepest cave, swelling his waters with tears, mourning his daughter Io as lost — he does not know whether she lives or is among the shades. Later the heifer that was Io stands at her father's banks; he plucks grass and holds it to her strange mouth, and when she traces letters in the dust with her hoof, the river learns his daughter's fate and cries out his grief.",
+      "text": "In Ovid, when his fellow rivers gather, one alone is missing: Inachus, hidden away in his deepest cave, swelling his waters with tears, mourning his daughter Io as lost — he does not know whether she lives or is among the shades. Later the heifer that was Io stands at her father's banks; he plucks grass and holds it to her strange mouth, and when she traces letters in the dust with her hoof, the river learns his daughter's fate and cries out his grief.",
       "sources": ["ovid"],
       "citation": "Metamorphoses 1.583–587, 1.639–667",
       "topic": "io-paternity"

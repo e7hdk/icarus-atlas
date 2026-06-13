@@ -1,8 +1,11 @@
 'use client';
 
+import { useState } from 'react';
 import type { LensId, Source } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { APP_VERSION } from '@/lib/changelog';
+import { ChangelogPanel } from './ChangelogPanel';
 
 const CONSENSUS: { id: LensId; name: string; note: string } = {
   id: 'consensus',
@@ -10,7 +13,7 @@ const CONSENSUS: { id: LensId; name: string; note: string } = {
   note: 'All tellers, with disputed traditions marked.',
 };
 
-export function SettingsPanel({ sources }: { sources: Source[] }) {
+export function SettingsPanel({ sources, starCount }: { sources: Source[]; starCount: number }) {
   const open = useGalaxyStore((state) => state.settingsOpen);
   const setOpen = useGalaxyStore((state) => state.setSettingsOpen);
   const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
@@ -22,6 +25,7 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
   const setMusicEnabled = useGalaxyStore((state) => state.setMusicEnabled);
   const musicVolume = useGalaxyStore((state) => state.musicVolume);
   const setMusicVolume = useGalaxyStore((state) => state.setMusicVolume);
+  const [changelogOpen, setChangelogOpen] = useState(false);
 
   if (!open) return null;
 
@@ -32,6 +36,7 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
   }))];
 
   return (
+    <>
     <div className="fixed inset-0 z-40" onMouseDown={() => setOpen(false)}>
       <GlassPanel
         role="dialog"
@@ -58,6 +63,15 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
             ×
           </button>
         </div>
+
+        <section className="flex items-center justify-between border-b border-glass-border px-5 py-3.5">
+          <span className="font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint">
+            Stars in the sky
+          </span>
+          <span className="font-display text-sm tracking-[0.14em] text-nebula-soft drop-shadow-[0_0_10px_rgba(192,132,252,0.5)]">
+            {starCount.toLocaleString()}
+          </span>
+        </section>
 
         <section className="border-b border-glass-border px-5 py-3 sm:hidden">
           <button
@@ -196,7 +210,14 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
         <footer className="border-t border-glass-border px-5 py-4 text-center">
           <div className="flex items-center justify-between font-display text-[9px] uppercase tracking-[0.18em] text-aether-faint">
             <span>Icarus Atlas</span>
-            <span>v0.1.0</span>
+            <button
+              type="button"
+              onClick={() => setChangelogOpen(true)}
+              className="rounded-full px-1.5 py-0.5 tracking-[0.18em] text-nebula-soft/90 transition-colors hover:text-nebula-soft hover:underline"
+              title="Read the chronicle"
+            >
+              v{APP_VERSION}
+            </button>
           </div>
           <p className="mt-3 font-body text-[13px] italic leading-relaxed text-aether-muted">
             Created by <span className="text-aether">Mehmet Fatih Aksoy</span>,
@@ -206,5 +227,7 @@ export function SettingsPanel({ sources }: { sources: Source[] }) {
         </footer>
       </GlassPanel>
     </div>
+    <ChangelogPanel open={changelogOpen} onClose={() => setChangelogOpen(false)} />
+    </>
   );
 }

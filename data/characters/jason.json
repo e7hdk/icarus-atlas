@@ -1,0 +1,62 @@
+{
+  "cluster": "mortal-arm",
+  "domains": [
+    "the kingship of Iolcus",
+    "the Argonaut voyage",
+    "the quest for the Golden Fleece"
+  ],
+  "greekName": "Iason (Ἰάσων)",
+  "id": "jason",
+  "name": "Jason",
+  "romanName": "Iason",
+  "type": "hero",
+  "summary": [
+    {
+      "text": "Son of Aeson of Iolcus, the man of the single sandal whom Pelias feared and sent across the sea for the Golden Fleece; captain of the Argo and the Argonauts, who won the fleece in Colchis through the witchcraft of Medea, daughter of Aeetes, and took her home as his wife.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.16, 1.9.23, 1.9.25"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus the line is clean and the name certain: Aeson, son of Cretheus, had a son Jason by Polymede, daughter of Autolycus. Jason dwelt in Iolcus, of which Pelias was king after Cretheus — and so the heir of the founder grew up under the rule of the uncle who had taken his father's seat.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.16",
+      "topic": "jason-mother"
+    },
+    {
+      "text": "Apollonius and Hyginus give the hero a different mother. In the Argonautica, Aeson had wedded Alcimede, daughter of Phylacus, and Jason himself was the son of Alcimede, who was born of Clymene the daughter of Minyas — which numbers him among the Minyae. Hyginus repeats the descent in his roll of the Argonauts: Jason, son of Aeson and Alcimede, Clymene's daughter, leader of the Thessalians.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.45–47, 1.228; Fabulae 14",
+      "topic": "jason-mother"
+    },
+    {
+      "text": "The oracle made Jason a marked man before he knew it. When Pelias enquired about the kingdom, the god warned him to beware of the man with a single sandal. The meaning came clear when Pelias was sacrificing to Poseidon at the sea and Jason, who loved husbandry and abode in the country, hastened down to share in it; crossing the river Anaurus he lost a sandal in the stream and landed shod with only one. Recognizing the sign, Pelias asked what he would do, had he the power, if he had received an oracle that he should be murdered by one of the citizens; and on the answer — that he would command that man to bring the Golden Fleece — bade Jason go and fetch it from Colchis.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.16"
+    },
+    {
+      "text": "At Colchis the fleece was guarded by the bulls and the unsleeping dragon, and Jason could not have won it by his own hand. Medea, witch-daughter of Aeetes and Idyia the Oceanid, conceived a passion for him and, keeping it from her father, promised to help him yoke the brazen-footed bulls and take the fleece if he would swear to wed her and carry her home as his wife. So he won it by her arts, and when the chiefs reached the Phaeacians, Arete the queen married Medea to Jason. He punished Pelias through her — she persuaded his daughters to dismember and boil their father on the promise of his renewed youth — and at last came to Corinth.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.23, 1.9.25, 1.9.27, 1.9.28"
+    },
+    {
+      "text": "Homer keeps only the edges of the saga but a divine favour at its heart: when the Argo alone of seagoing ships passed the Wandering Rocks on her voyage home from Aeetes, the wave would have dashed her against the great crags had not Hera sent her safely through, for that Jason was dear to her. And the hero left a son behind: Euneus, whom Hypsipyle bore to Jason, shepherd of the host, who later sent wine from Lemnos to the Achaeans at Troy.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.69–72; Iliad 7.467–469"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "glaucus-corinth",
+  "name": "Glaucus of Corinth",
+  "greekName": "Glaukos (Γλαῦκος)",
+  "romanName": "Glaucus",
+  "type": "mortal",
+  "domains": [
+    "the kingship of Ephyra",
+    "horsemanship"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Sisyphus and king of Ephyra (Corinth); father of Bellerophon, and the link by which the craft of Sisyphus passes to the slayer of the Chimera.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 6.154–155; Bibliotheca 1.9.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "He stands at the centre of the Corinthian pedigree that Glaucus of Lycia recites to Diomedes on the battlefield of Troy: there was a city Ephyre in the heart of Argos, and there dwelt Sisyphus, craftiest of men; Sisyphus begat Glaucus, and Glaucus begat peerless Bellerophon.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 6.152–155"
+    },
+    {
+      "text": "Apollodorus fills out the line Homer leaves bare: Glaucus, son of Sisyphus, had by Eurymede a son Bellerophon, who slew the fire-breathing Chimera — so the throne of Ephyra and the heroic blood pass through Glaucus from the trickster of Corinth to its greatest hero.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.3, 2.3.1"
+    },
+    {
+      "text": "His own end is grim and told only by Hyginus: at the funeral games of Pelias his mares, maddened, tore Glaucus apart — the origin of the ghost-horse Taraxippos that frightened teams at the Isthmus.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 250, 273"
+    }
+  ]
+}

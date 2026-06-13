@@ -1,0 +1,54 @@
+{
+  "id": "butes-athenian",
+  "name": "Butes",
+  "greekName": "Boutes (Βούτης)",
+  "romanName": "Butes",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the hereditary priesthood",
+    "the Butadae clan",
+    "the Erechtheid house"
+  ],
+  "summary": [
+    {
+      "text": "Twin son of Pandion, king of Athens, by Zeuxippe, and brother of Erechtheus. When their father died and the brothers divided the inheritance, Erechtheus took the kingship and Butes took the priesthood of Athena and Poseidon Erechtheus; he married Chthonia, a daughter of Erechtheus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.8–3.15.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pandion married Zeuxippe, his mother's sister, and begat two daughters, Procne and Philomela, and twin sons, Erechtheus and Butes. Butes thus belonged to the old Athenian house as the brother of Erechtheus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.8"
+    },
+    {
+      "text": "When Pandion died, his sons divided their father's inheritance between them: Erechtheus got the kingdom, and Butes got the priesthood of Athena and Poseidon Erechtheus. So the one house split into a royal and a sacerdotal line. Butes married Chthonia, daughter of his brother Erechtheus by Praxithea, binding priest to king within the single Erechtheid stock.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "text": "Within the double building on the Acropolis stand altars: one to Poseidon, on which by an oracle the Athenians sacrifice also to Erechtheus; a second to the hero Butes; and a third to Hephaestus. On the walls are paintings of the members of the clan Butadae, so that the brother who took no crown is honored in the same shrine as the king.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.26.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

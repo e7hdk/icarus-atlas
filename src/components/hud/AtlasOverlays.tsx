@@ -17,7 +17,7 @@ export function AtlasOverlays({
   return (
     <>
       <SearchOverlay characters={characters} navigate />
-      <SettingsPanel sources={sources} />
+      <SettingsPanel sources={sources} starCount={characters.length} />
     </>
   );
 }

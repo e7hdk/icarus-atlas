@@ -1,0 +1,78 @@
+{
+  "id": "theseus",
+  "name": "Theseus",
+  "greekName": "Theseus (Θησεύς)",
+  "romanName": "Theseus",
+  "type": "hero",
+  "domains": [
+    "the Minotaur-slayer",
+    "the Athenian king",
+    "the road of brigands"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Aegeus and Aethra, daughter of Pittheus, reared at Troezen until he could roll away the rock that hid his father's sword and sandals; taking up the tokens he came on foot to Athens, clearing the road of its evildoers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.7–3.16.2"
+    },
+    {
+      "text": "His chief glory was Crete: there he killed the Minotaur in the labyrinth and won free by the clew of Ariadne, daughter of Minos, whom he carried from the island and left at Naxos to Dionysus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 1.7–1.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Journeying to Troezen, Aegeus lay with Pittheus' daughter Aethra; in the same night Poseidon also had connexion with her. Aegeus charged her, if she bore a son, to rear him without naming his father, and left a sword and sandals beneath a rock, that when the boy could roll it away and take them up she should send him to Athens. So Theseus came in time to manhood, lifted the stone, and would not go by sea but cleared the road long beset by malefactors: at Epidaurus he slew Periphetes, son of Hephaestus, the Clubman; then Sinis the Pine-bender at the Isthmus; and beyond, Cercyon and Procrustes, who fitted his guests to a fatal bed, lopping the tall and racking the short.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.7–3.16.2"
+    },
+    {
+      "text": "Troezen kept a further story of his birth: Pausanias relates that at a dream from Athena Aethra crossed to the islet of Sphaeria, where Poseidon lay with her, so that she founded a temple of Athena Apaturia and the hero was reckoned a son of the god. Pausanias also marks the very spot by the Cephisus at Eleusis where Theseus killed the brigand Polypemon, surnamed Procrustes.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.33.1; 1.38.5"
+    },
+    {
+      "text": "Come to Athens, he found Medea wedded to Aegeus; knowing the stranger for the king's true son before the father did, she persuaded Aegeus to beware of him as a traitor and send him against the Marathonian bull, which he overcame. When Athens owed Minos a tribute for the Minotaur, Theseus was counted among the third sending — or, some say, offered himself. The ship sailed under a black sail, and Aegeus charged him to spread white sails if he returned alive. In Crete, Ariadne loved him and gave help, having of Daedalus the secret of the maze; he entered the labyrinth, killed the Minotaur with his fists, drew the clew after him to escape, and came by night with Ariadne to Naxos, where Dionysus carried her off. Grieving, he forgot the white sail, and Aegeus, watching from the height, supposed his son dead and cast himself down to his death.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 1.5–1.10"
+    },
+    {
+      "text": "The poets tell Ariadne's fate apart. Homer remembers that Theseus was fain to bear her from Crete to the hill of sacred Athens, yet had no joy of her, for Artemis slew her in sea-girt Dia on the witness of Dionysus. Hesiod sings instead that golden-haired Dionysus made brown-haired Ariadne, daughter of Minos, his wife, and the son of Cronos made her deathless and unageing. Apollonius keeps a kinder memory still — that in days past the maiden Ariadne, daughter of Minos, with kindly intent rescued Theseus from grim contests.",
+      "sources": [
+        "homer",
+        "hesiod",
+        "apollonius"
+      ],
+      "citation": "Odyssey 11.321–325; Theogony 947–949; Argonautica 3.997–1000"
+    },
+    {
+      "text": "King of Athens after his father, Theseus received Oedipus as a suppliant at Colonus, where the blind exile died; and when the Argive dead of the Seven lay unburied before Thebes, he took the city and gave them back to their kin. But his boldness ran to ruin: with Pirithous he carried off Helen and set her at Aphidnae, and went down into the house of Hades to win Persephone, where Hades seated the pair on the Chair of Forgetfulness and serpents held them fast. While he lay below, the Dioscuri stormed Aphidnae, freed Helen, and led his mother Aethra away captive; and Heracles, come for Cerberus, raised Theseus from the dead, though Pirithous remained bound for ever.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.9; 3.7.1; 3.10.7; Epitome 1.23–1.24"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

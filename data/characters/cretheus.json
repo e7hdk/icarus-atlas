@@ -1,0 +1,52 @@
+{
+  "id": "cretheus",
+  "name": "Cretheus",
+  "greekName": "Krētheus (Κρηθεύς)",
+  "romanName": "Cretheus",
+  "type": "mortal",
+  "domains": [
+    "the founding of Iolcus",
+    "the Argonaut stem",
+    "the Aeolid kingship"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Aeolid king who founded Iolcus and married Tyro, daughter of his brother Salmoneus; by her he fathered Aeson, Amythaon and Pheres, and through Aeson became grandfather of Jason, so the Argonaut voyage springs from his line.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.11, 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Cretheus among the seven sons whom Aeolus, son of Hellen, begot on Enarete daughter of Deimachus, beside Sisyphus, Athamas, Salmoneus, Deion, Magnes and Perieres. He founded Iolcus and married Tyro, daughter of his brother Salmoneus, by whom he had Aeson, Amythaon and Pheres. From this house the northern line unfolds: Pheres founds Pherae in Thessaly, and Amythaon, settled in Pylus, fathers the seers Bias and Melampus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3, 1.9.11, 1.9.14"
+    },
+    {
+      "text": "Homer sets the marriage in the underworld catalogue of noble women. Tyro, daughter of Salmoneus, declares herself the wife of Cretheus son of Aeolus, having first borne Pelias and Neleus to Poseidon in the likeness of the river Enipeus, and then bears to Cretheus the sons Aeson, Pheres and Amythaon. This is the oldest attestation of the union and its offspring.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.235–259"
+    },
+    {
+      "text": "Apollonius makes Cretheus the genealogical anchor of Jason's claim. Naming the leader of the gathered heroes, he calls him Jason, son of Aeson, whom Cretheus begat, and adds that Cretheus and Athamas were both sons of Aeolus, so that Jason and the house of Phrixus are kinsmen on the father's side when they meet in Colchis.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 3.357–361"
+    },
+    {
+      "text": "Pausanias preserves the divided paternity of Tyro's sons: he names Neleus the son of Cretheus, son of Aeolus, while noting that he was also called a son of Poseidon. The lawful Aeolid husband and the god of the river thus stand together over the same children.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 4.2.5"
+    }
+  ]
+}

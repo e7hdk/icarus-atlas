@@ -160,6 +160,14 @@ export const referenceSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
   summary: z.string().min(1),
   attribution: z.string().min(1),
+  sections: z
+    .array(
+      z.object({
+        heading: z.string().min(1),
+        paragraphs: z.array(z.string().min(1)).min(1),
+      }),
+    )
+    .optional(),
   symbols: z.array(z.string().min(1)).optional(),
   sacredAnimals: z.array(z.string().min(1)).optional(),
   cultCenters: z.array(z.string().min(1)).optional(),

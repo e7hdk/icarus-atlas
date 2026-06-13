@@ -1,0 +1,75 @@
+{
+  "id": "creusa-athens",
+  "name": "Creusa",
+  "greekName": "Kreousa (Κρέουσα)",
+  "type": "mortal",
+  "domains": [
+    "the house of Erechtheus",
+    "the Ionian and Achaean line",
+    "Apollo's cave below the Acropolis"
+  ],
+  "cluster": "mortal-arm",
+  "romanName": "Creusa",
+  "summary": [
+    {
+      "text": "Daughter of Erechtheus, king of Athens; given in marriage to Xuthus, son of Hellen, she bore him Achaeus and Ion, the eponyms of the Achaeans and the Ionians.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3, 3.15.1"
+    },
+    {
+      "text": "An Athenian princess whose name clung to the rock of the Acropolis: at the cave-sanctuary of Apollo just beneath the Gateway, the god was believed to have met her.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.28.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Creusa belongs to the autochthonous house of Athens. Apollodorus places her among the children Erechtheus had by Praxithea: the sons Cecrops, Pandorus, and Metion, and the daughters Procris, Creusa, Chthonia, and Orithyia, the last of whom Boreas carried off. In the marriages that close the genealogy, Chthonia was given to Butes, Procris to Cephalus son of Deion, and Creusa to Xuthus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "text": "Through that marriage the Athenian house was joined to the stock of Hellen. Xuthus, who received the Peloponnese for his portion, begat Achaeus and Ion by Creusa, daughter of Erechtheus, and from Achaeus and Ion the Achaeans and the Ionians derive their names.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "Pausanias tells the same descent from the Athenian side: Xuthus, after the death of Hellen, fled to Athens, where he was deemed worthy to wed the daughter of Erechtheus, and by her he had his sons, Achaeus and Ion.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 7.1.2"
+    },
+    {
+      "text": "Pausanias also preserves a quieter memory of her. Descending from the Acropolis, just beneath the Gateway, he points out a spring and beside it a sanctuary of Apollo set in a cave; it was there, he says, that Apollo was believed to have met Creusa, daughter of Erechtheus. He records only the meeting at the cult-place, and does not say the god fathered her children.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.28.4"
+    },
+    {
+      "text": "A separate strand makes her a mother by a god rather than a king. Hyginus, listing the sons of Mercury, names Cephalus, born of Creusa, daughter of Erechtheus — a competing parentage set against the Athenian Cephalus whom Apollodorus calls the son of Deion.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 160"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

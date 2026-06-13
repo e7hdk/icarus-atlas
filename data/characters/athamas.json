@@ -1,0 +1,96 @@
+{
+  "id": "athamas",
+  "name": "Athamas",
+  "greekName": "Athamas (Ἀθάμας)",
+  "type": "mortal",
+  "domains": [
+    "the golden ram",
+    "stepmother's malice",
+    "Hera-sent madness",
+    "exile and atonement"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Aeolus and king over Boeotia. By the cloud-bride Nephele he begat Phrixus and Helle; then, taking Ino daughter of Cadmus to a second wife, he fathered Learchus and Melicertes. Ino's plot against Nephele's children set in motion the flight of the golden ram, while the wrath of Hera at last broke upon his own house in madness.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.1–2"
+    },
+    {
+      "text": "Driven mad through the anger of Hera, Athamas shot his son Learchus dead with an arrow, and Ino flung herself and Melicertes into the sea; banished from his kingdom, he wandered until wolves yielded him their prey, and there settled and married Themisto.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Of the sons of Aeolus, Athamas ruled over Boeotia. By Nephele he begat a son Phrixus and a daughter Helle, and he married a second wife, Ino daughter of Cadmus, by whom he had Learchus and Melicertes. But Ino plotted against the children of Nephele and persuaded the women of the land to parch the seed grain in secret; the parched earth withheld its crops, and when Athamas sent to Delphi for relief, Ino suborned the messengers to report that the dearth would cease only if Phrixus were sacrificed to Zeus. So the people forced his hand against his own son.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "From that altar the children of Nephele were carried off: she caught them up and gave them a ram with a golden fleece, which she had received from Hermes, and on its back they crossed land and sea. Helle slipped into the strait that took her name, but Phrixus the Aeolid reached Colchian Aea and sacrificed the ram to Zeus the aider of fugitives — the fleece that would one day draw the Argo east. Apollodorus and Apollonius make the ram no creature of begetting but the handiwork of Hermes, who had wrought it all of gold.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1140–1145",
+      "topic": "ram-golden-ram-parentage"
+    },
+    {
+      "text": "Hyginus tells the ram's origin otherwise: it was no god-made thing but living offspring, born of Neptune and Theophane, and Nephele herself brought the gilded creature to her children and bade them ride it to Colchis. In his version the madness that scattered the house was sent by Liber, and Phrixus and Helle strayed in the forest before the ram bore them away — Helle falling into the strait that took her name.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 3",
+      "topic": "ram-golden-ram-parentage"
+    },
+    {
+      "text": "Afterwards Athamas was bereft of the children of Ino as well, through the wrath of Hera. He went mad and shot Learchus through with an arrow, and Ino cast herself and Melicertes into the sea. Banished from Boeotia, Athamas asked the god where he might dwell, and was told to settle wherever wild beasts should host him; he wandered until he came upon wolves devouring sheep, which fled at the sight of him, and there he founded Athamantia and married Themisto, daughter of Hypseus, who bore him Leucon, Erythrius, Schoeneus and Ptous.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.2",
+      "topic": "cause-of-athamas-madness"
+    },
+    {
+      "text": "Apollodorus elsewhere roots the madness deeper than Ino's grain-plot: because Athamas and Ino took in the infant Dionysus and reared him, Hera in her anger at the harbouring of her rival's child drove them both out of their minds, and in that frenzy Athamas hunted Learchus down as a deer and slew him. Ovid keeps the wrath but renames the goddess Juno, who summons the Fury Tisiphone from the underworld to fill the palace with madness; Athamas, raving, dashes Learchus upon the rocks, while Ino leaps from the cliff with her remaining son — the leap by which she became the sea-goddess Leucothea.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.4.3; Metamorphoses 4.416–542",
+      "topic": "cause-of-athamas-madness"
+    },
+    {
+      "text": "How Melicertes met his end is told two ways. In one account Ino threw the boy into a boiling cauldron and then sprang with the dead child into the deep.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.4.3",
+      "topic": "melicertes-death-cauldron-vs-leap"
+    },
+    {
+      "text": "In the other the child was carried alive from the sea: a dolphin, they say, bore Melicertes ashore on the Corinthian Isthmus, where he was honoured under the new name Palaemon and the Isthmian games were founded for him, while the Molurian rock from which his mother leapt the Megarians held sacred to Leucothea and Palaemon.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.44.8",
+      "topic": "melicertes-death-cauldron-vs-leap"
+    },
+    {
+      "text": "The seat of Athamas' kingship is not fixed across the sources. Apollodorus plants him in Boeotia, from which his madness drives him into exile; Hyginus, telling the tragedy after Euripides' Ino, names him instead king in Thessaly, where he weds Themisto in the belief that Ino has died and is undone when she returns in secret from the Bacchic revels on Parnassus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.1; Fabulae 4"
+    }
+  ]
+}

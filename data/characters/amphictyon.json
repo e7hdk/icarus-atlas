@@ -1,0 +1,75 @@
+{
+  "id": "amphictyon",
+  "name": "Amphictyon",
+  "greekName": "Amphiktyon (Ἀμφικτύων)",
+  "romanName": "Amphictyon",
+  "type": "mortal",
+  "domains": [
+    "kingship of Attica",
+    "the Athenian succession",
+    "hospitality to Dionysus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Second son of Deucalion and Pyrrha and brother of Hellen and Protogenia, who came to reign over Attica after Cranaus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.2"
+    },
+    {
+      "text": "An early king of Athens, remembered as the host who feasted Dionysus and the other gods.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets him among the children of the flood survivors: Deucalion had by Pyrrha first Hellen, whose father some say was Zeus, and second Amphictyon, who reigned over Attica after Cranaus, and third a daughter Protogenia, who became by Zeus the mother of Aethlius. So by this account he is a true son of Deucalion, brother of Hellen, the named ancestor of the Hellenes.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.2"
+    },
+    {
+      "text": "Telling the kings of Attica, Apollodorus records that Cranaus was expelled by Amphictyon, who reigned in his stead; and he notes the doubt over his birth, that some say Amphictyon was a son of Deucalion while others call him a son of the soil. When he had reigned twelve years he was himself expelled by Erichthonius.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.6"
+    },
+    {
+      "text": "Pausanias tells how Amphictyon won the kingdom in the long succession that began with Actaeus: he rose against Cranaus, his kinsman by marriage and king of Athens, and banished him; the fallen Cranaus fled with his supporters to the parish of Lamptrae, where he died and was buried beneath a monument the Athenians still kept.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.6, 1.31.3"
+    },
+    {
+      "text": "In the precinct of Apollo at Athens, Pausanias saw earthenware images of Amphictyon, king of Athens, feasting Dionysus and the other gods, and beside them Pegasus of Eleutherae who first brought the god to the Athenians, as the Delphic oracle recalled that Dionysus had once dwelt in Athens in the days of Icarius.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.5"
+    },
+    {
+      "text": "His house reached on into Boeotia: Pausanias makes Itonus, namesake of the sanctuary of Itonian Athena, a son of Amphictyon, and from Itonus by the nymph Melanippe came Boeotus, who gave the Boeotians their name; another of Amphictyon's daughters he counts the mother of Triptolemus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.1.1, 9.34.1, 1.14.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

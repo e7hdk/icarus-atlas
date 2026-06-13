@@ -1,0 +1,76 @@
+{
+  "id": "erichthonius-athens",
+  "name": "Erichthonius",
+  "greekName": "Erichthonios (Ἐριχθόνιος)",
+  "romanName": "Erichthonius",
+  "type": "hero",
+  "domains": [
+    "Athenian kingship",
+    "autochthon",
+    "the Panathenaea",
+    "the chariot"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "An earth-born king of Athens, sprung from the seed of Hephaestus and reared in secret by Athena, who set up her wooden image on the acropolis, founded the Panathenaea, and married the Naiad Praxithea to father Pandion.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.6"
+    },
+    {
+      "text": "Listed among the kings of the Athenians as a son of Vulcan, snake-formed below the waist, the first man to yoke a four-horse chariot, set among the stars as the Charioteer.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 48; Fabulae 166; Astronomica 2.13.1–2.13.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells how Erichthonius came to be born. Athena went to Hephaestus, desiring him to fashion arms; but the god, forsaken by Aphrodite, fell in love with her and gave chase. When at last he caught the lame smith's quarry, he tried to embrace her, and she, a chaste virgin, would not yield; his seed fell upon her leg. In disgust she wiped it away with wool and threw it to the ground, and from the ground, where the seed had fallen, Erichthonius was produced. The same account preserves a rival parentage: some say he was a son of Hephaestus and Athena, but others that his mother was Atthis, daughter of Cranaus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.6"
+    },
+    {
+      "text": "Athena reared the child unknown to the other gods, wishing to make him immortal. She hid him in a chest and gave it to Pandrosus, daughter of Cecrops, forbidding her to open it; but Pandrosus' sisters opened it out of curiosity and beheld a serpent coiled about the babe. Some say the serpent destroyed them; others that the anger of Athena drove them mad and they flung themselves from the acropolis. Reared by the goddess herself in her precinct, Erichthonius then expelled Amphictyon and became king of Athens; he set up the wooden image of Athena on the acropolis, instituted the festival of the Panathenaea, and married Praxithea, a Naiad nymph, by whom he had a son, Pandion.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.6"
+    },
+    {
+      "text": "Pausanias, walking the king-list of Attica, sets Erichthonius among the rebels who banished Amphictyon, and states plainly that he had no human father, but that his parents were Hephaestus and Earth. Above the sanctuary of the Dioscuri he points out the enclosure of Aglaurus, and tells how Athena gave the hidden Erichthonius in his chest to Aglaurus, Herse, and Pandrosus: Pandrosus obeyed and did not pry, but the other two opened the chest, went mad at the sight of him, and threw themselves down the steepest face of the acropolis.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.6; 1.18.2"
+    },
+    {
+      "text": "Ovid folds the same secret into the punishment of a tattling crow. Minerva had shut up the motherless Erichthonius, born without a mother, in a basket woven of slender twigs, and consigned it to the wardship of the three daughters of double-natured Cecrops with the charge that they look not within. Herse and Pandrosus kept the trust; but Aglauros untied the knotted cords with her nimble hands and disclosed a serpent stretched beside an infant. The crow, watching from a great tree, carried the news to Minerva and was stripped of her protection for her chattering tongue.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 2.552–565"
+    },
+    {
+      "text": "Hyginus gathers the Athenian's other honours and a cruder birth. In the Fabulae he ranks him among the kings of the Athenians as a son of Vulcan, and tells how Vulcan, urged by Neptune, won Minerva in marriage only to be repulsed when he entered her chamber; as they struggled his seed fell to earth, and from it a boy was born, snake-formed below the waist, named Erichthonius from eris, 'strife', and khthon, 'earth.' Minerva hid him in a chest entrusted to Aglaurus, Pandrosus, and Herse; a crow betrayed the secret, and the girls, driven mad, cast themselves into the sea. In the Astronomica he is the Charioteer set among the stars: the first man to yoke a four-horse chariot and the founder of the Panathenaic games, who also, Hyginus adds elsewhere, was the first to bring silver to Athens.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 48; Fabulae 166; Astronomica 2.13.1–2.13.2; Fabulae 274"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

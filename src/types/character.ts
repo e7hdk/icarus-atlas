@@ -111,11 +111,19 @@ export interface ExternalLink {
   url: string;
 }
 
+/** A heading + its paragraphs, adapted from the figure's encyclopedia article (CC BY-SA). */
+export interface ReferenceSection {
+  heading: string;
+  paragraphs: string[];
+}
+
 /** Neutral encyclopedic reference (Information tab). Lens-independent. */
 export interface ReferenceData {
   id: string;
   summary: string;
   attribution: string;
+  /** Encyclopedic article body: section headings and their paragraphs (CC BY-SA, attributed). */
+  sections?: ReferenceSection[];
   symbols?: string[];
   sacredAnimals?: string[];
   cultCenters?: string[];

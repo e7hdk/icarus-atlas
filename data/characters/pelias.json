@@ -1,0 +1,60 @@
+{
+  "id": "pelias",
+  "name": "Pelias",
+  "greekName": "Pelias (Πελίας)",
+  "romanName": "Pelias",
+  "type": "mortal",
+  "domains": [
+    "the kingship of Iolcus",
+    "Jason's antagonist",
+    "the quest for the fleece"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son whom Tyro bore to Poseidon when the earth-shaker took the likeness of the river Enipeus; with his twin Neleus he grew into a strong servant of great Zeus, and it was Pelias who dwelt in spacious Iolcus, rich in flocks.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.235–259"
+    },
+    {
+      "text": "King of Iolcus and the antagonist of the Argonaut tale: warned by the oracle to beware the man with a single sandal, he sent his kinsman Jason after the Golden Fleece in the hope the voyage would destroy him.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.5–17"
+    }
+  ],
+  "story": [
+    {
+      "text": "Tyro, daughter of Salmoneus, conceived a passion for the river Enipeus, fairest of the streams that run upon the earth, and would haunt his fair waters; but the Enfolder and Shaker of the earth took the river's form and lay with her at the eddying mouths. So she conceived and bore Pelias and Neleus, who both became strong servants of great Zeus — Pelias to dwell in spacious Iolcus and his brother in sandy Pylos. Afterward she bore to Cretheus the sons Aeson, Pheres and Amythaon, so that the two houses cross in her.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.235–259"
+    },
+    {
+      "text": "Apollodorus tells the harsher sequel: Tyro, brought up by her uncle Cretheus, was deceived by Poseidon in the likeness of Enipeus, bore twin sons in secret and exposed them. A mare of passing horsekeepers struck one of the babes and left a livid mark on its face; the herdsman reared both, calling the bruised one Pelias after the dark stain and the other Neleus. Grown men, they found their mother and avenged her ill-usage upon their stepmother Sidero.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.8"
+    },
+    {
+      "text": "Pelias was king in Iolcus after Cretheus when Jason came of age. Consulting the oracle about his kingdom, he was warned to beware the man with a single sandal; so when Jason appeared shod on one foot alone, Pelias laid upon him the charge of fetching the Golden Fleece, reckoning the voyage his destruction. Apollodorus here makes Jason the son of Aeson by Polymede, daughter of Autolycus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.16"
+    },
+    {
+      "text": "Even Hesiod, who tells the Argonaut tale only in passing, fixes Pelias as its tyrant: the labour laid on Aeson's son was the burden that 'the great king, overbearing Pelias, that outrageous and presumptuous doer of violence,' put upon him — and only when Jason had finished it did he come home to Iolcus with the coy-eyed girl as his wife.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 992–1002"
+    }
+  ]
+}

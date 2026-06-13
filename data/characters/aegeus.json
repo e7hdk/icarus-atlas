@@ -1,0 +1,77 @@
+{
+  "cluster": "mortal-arm",
+  "id": "aegeus",
+  "name": "Aegeus",
+  "greekName": "Αἰγεύς",
+  "romanName": "Aegeus",
+  "type": "mortal",
+  "domains": [
+    "kingship of athens",
+    "the childless king's oracle",
+    "father of theseus",
+    "the token sword and sandals"
+  ],
+  "summary": [
+    {
+      "text": "Father of Theseus, the man like the immortals whom Nestor counts among the mightiest heroes, who destroyed the mountain-dwelling centaurs.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.262–268"
+    },
+    {
+      "text": "Foremost of the four sons born to Pandion in his Megarian exile, he took the whole power at Athens; childless by two wives, he consulted the oracle, lay with Aethra at Troezen on Pittheus' contrivance, and hid a sword and sandals under a rock as the tokens by which his son Theseus would one day be known.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.5–3.16.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer fixes him only as the father of a hero. When Nestor recounts the mightiest men he ever knew — Peirithous, Dryas, Caeneus, Exadius, Polyphemus — he sets among them Theseus, son of Aegeus, a man like the immortals, who with that company fought and destroyed the mountain-dwelling centaurs. The king himself stands behind the name: in the oldest layer of the myth Aegeus is simply the sire whose son joins the great fellowship of heroes.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.262–268"
+    },
+    {
+      "text": "Apollodorus sets him at the head of the restored Pandionid house, and notes the doubt over his birth. While Pandion lived in exile at Megara he had sons born to him — Aegeus, Pallas, Nisus, and Lycus — though some said Aegeus was really a son of Scyrius, passed off by Pandion as his own. After Pandion's death the brothers marched on Athens, expelled the Metionids, and divided the government in four, but Aegeus held the whole power. He married first Meta, daughter of Hoples, and then Chalciope, daughter of Rhexenor, yet no child was born to him; fearing his brothers, he went to Pytho and asked the oracle about offspring. The god told him not to loosen the bulging mouth of the wineskin until he reached the height of Athens — words he could not understand. Sailing home by way of Troezen, he lodged with Pittheus, son of Pelops, who grasped the oracle, made his guest drunk, and brought him to lie with his daughter Aethra; but in the same night Poseidon too had union with her. Aegeus charged Aethra that, if she bore a male child, she should rear it without telling whose it was, and he set a sword and a pair of sandals beneath a certain rock, saying that when the boy could roll the rock away and take them up, she was to send him to Athens with the tokens. In time Aethra bore Theseus, who grown to strength pushed back the stone, took up the sword and sandals, and came to find his father.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.5–3.16.1"
+    },
+    {
+      "text": "Hyginus tells the begetting as a shared night that Poseidon yielded to the king. In the shrine of Minerva, Neptune and Aegeus, son of Pandion, both lay with Aethra, daughter of Pittheus, in one night — and Neptune conceded the child to Aegeus, so that the divine and the mortal claims to the boy are reconciled by the sea-god's gift. On the point of returning to Athens from Troezen, Aegeus laid his sword beneath a stone, the token of recognition to come. Hyginus also makes his death the origin of a name: he cast himself into the sea, which was called the Aegean from him.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 37, 43"
+    },
+    {
+      "text": "His near-undoing came through Medea, and his rescue through the buried sword. Exiled from Corinth, Medea was taken in by Aegeus and wedded to him; when Theseus arrived unknown, she persuaded the king to fear him as a plotter, and he sent the youth against the Marathonian bull, then offered him a cup of poison received that same day from her. But just as the draught was about to be administered, Theseus gave his father the sword — or, in Ovid's telling, Aegeus recognized the sword the youth wore — and the father knew the token he had hidden, dashed the cup from the boy's hands, and drove Medea into exile.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca Epitome 1.5–1.6; Metamorphoses 7.402–424"
+    },
+    {
+      "text": "His death was the price of a forgotten signal. When Theseus sailed for Crete among those sent as tribute to the Minotaur, Aegeus charged his son to spread white sails on the homeward ship if he returned alive, in place of the black. But grieving over Ariadne, Theseus forgot, and as the ship stood in with its black sail still set, Aegeus, watching from the acropolis, supposed his son had perished and cast himself down to his death.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca Epitome 1.7, 1.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

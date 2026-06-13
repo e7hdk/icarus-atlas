@@ -81,7 +81,7 @@ export function GalaxyView({
       <Legend />
       <HoverCard characters={characters} relations={relations} />
       <CharacterPanel characters={characters} relations={relations} sources={sources} />
-      <SettingsPanel sources={sources} />
+      <SettingsPanel sources={sources} starCount={characters.length} />
       <SearchOverlay characters={characters} />
     </div>
   );
