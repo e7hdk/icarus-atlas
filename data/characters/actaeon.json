@@ -1,0 +1,77 @@
+{
+  "id": "actaeon",
+  "name": "Actaeon",
+  "greekName": "Aktaiōn (Ἀκταίων)",
+  "romanName": "Actaeon",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "hunting",
+    "the wild",
+    "doomed transgression"
+  ],
+  "summary": [
+    {
+      "text": "Actaeon, a Theban hunter, son of Aristaeus and Autonoe the daughter of Cadmus, was devoured on Cithaeron by his own hounds — counted among the ruins that overtook the grandchildren of Cadmus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.4.4 (cf. 3.4.2)"
+    }
+  ],
+  "story": [
+    {
+      "text": "The Theogony sets the marriage of his parents among Harmonia's children: alongside Ino, Semele, and Agave, Cadmus' daughter Autonoe is wedded by long-haired Aristaeus. The poem names the union but not the son who would spring from it.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 977"
+    },
+    {
+      "text": "Apollodorus and Hyginus name him plainly the son of Aristaeus and Autonoe, daughter of Cadmus, and so a grandson of Cadmus, kin to the doomed line of Thebes. He was bred to the chase and to the mountain, and the mountain undid him.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 3.4.4 (cf. 3.4.2); Hyginus, Fabulae 180–181"
+    },
+    {
+      "text": "Apollodorus adds that Chiron reared him to be a hunter, and sets out the offense that doomed him three ways without settling which: according to Acusilaus, Zeus was angry at Actaeon for wooing Semele; according to the more general opinion it was because he saw Artemis bathing; and others say it was because he boasted himself a better hunter than the goddess.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.4.4"
+    },
+    {
+      "text": "Ovid tells the bathing version in full: in the vale of Gargaphie the grandson of Cadmus, wandering from the hunt, stumbled on Diana at her spring; the angry goddess flung water upon him, antlers sprang from his brow, and he fled as a stag until his own fifty hounds, blind to their master, ran him down and tore him apart.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 3.138–252"
+    },
+    {
+      "text": "Hyginus gives the harsher charge — that Actaeon saw Diana bathing and desired to ravish her, whereupon she set horns upon his head and his own dogs devoured him.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 180"
+    },
+    {
+      "text": "Pausanias preserves a regional turn from Stesichorus of Himera: that Artemis cast a deer-skin about Actaeon to make certain his hounds would tear him. At Orchomenus the dead hunter became a power: a rock-bearing ghost ravaged the land until Delphi bade the people find his remains and bury them, and fasten a bronze likeness of the ghost to a rock with iron — an image Pausanias says he saw — and thereafter they sacrificed to Actaeon every year as to a hero.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.2.3; 9.38.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ]
+    }
+  ]
+}

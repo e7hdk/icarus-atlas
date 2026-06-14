@@ -1,0 +1,76 @@
+{
+  "id": "lycurgus-arcadia",
+  "name": "Lycurgus",
+  "greekName": "Lykourgos (Λυκοῦργος)",
+  "romanName": "Lycurgus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Tegea",
+    "the Tegean line",
+    "treacherous slaying"
+  ],
+  "summary": [
+    {
+      "text": "Lycurgus was a son of Aleus, king of Tegea, and brother of Cepheus and of Auge; Apollodorus gives their mother as Neaera, daughter of Pereus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.1"
+    },
+    {
+      "text": "After Aleus died Lycurgus, as the eldest son, took the kingdom of Tegea; Pausanias makes him notorious for killing the warrior Areithous by treachery rather than in fair fight.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.4.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus the Tegean line runs from Aphidas to his son Aleus, and Aleus has by Neaera, daughter of Pereus, a daughter Auge and two sons, Cepheus and Lycurgus. It is Lycurgus who carries the kingship of the house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.1"
+    },
+    {
+      "text": "Pausanias makes Lycurgus the eldest of Aleus's sons, so that on his father's death he gained the throne of Tegea. The same author counts among Aleus's children the sons Lycurgus, Amphidamas, and Cepheus and the daughter Auge — setting Amphidamas in Lycurgus's own generation as a brother.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.4.8, 8.4.10"
+    },
+    {
+      "text": "His one dark deed is the killing of Areithous, the warrior surnamed the Clubman: already in Homer, Lycurgus brings down the mace-bearing Areithous \"by guile and nowise by might, in a narrow way,\" caught where his great iron club could not swing.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 7.135–170"
+    },
+    {
+      "text": "Pausanias fixes this Lycurgus as the Tegean king and the slaying as treachery, not fair fight; he points out the narrow place near Tegea where Areithous, surnamed Corynetes for his weapon, was laid in a stone tomb.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.4.10, 8.11.4"
+    },
+    {
+      "text": "On his offspring the sources divide. Apollodorus gives Lycurgus four sons — Ancaeus, Epochus, Amphidamas, and Iasus — by Cleophyle or, as others say, by Eurynome; he adds that Amphidamas fathered Antimache, whom Eurystheus married, and that Iasus by Clymene fathered the huntress Atalanta. Pausanias instead names only two sons, Ancaeus and Epochus, of whom Epochus fell ill and died young.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.9.2; Description of Greece 8.4.10"
+    },
+    {
+      "text": "His son Ancaeus made the family famous beyond Tegea. Pausanias says he sailed with Jason to Colchis and afterward, hunting the Calydonian boar with Meleager, was killed by the beast; he names Agapenor, who led the Arcadians to Troy, as Ancaeus's son. Apollonius makes the filiation plain in the Argonaut roll — Ancaeus is the third Arcadian, \"whom his father Lycurgus sent,\" Lycurgus himself staying behind in the city to care for the aged Aleus — while Hyginus, listing the same Tegean Ancaeus, notes the variant that makes him Lycurgus's grandson rather than his son.",
+      "sources": [
+        "pausanias",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Description of Greece 8.4.10; Argonautica 1.161–171; Fabulae 14.3"
+    }
+  ]
+}

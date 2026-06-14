@@ -14,6 +14,18 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.1.3',
+    codename: 'The Beasts Take the Sky',
+    date: '2026-06-14',
+    lines: [
+      'The house of Cadmus was made whole: Actaeon, torn on Cithaeron by his own hounds, joins his cousins in ruin, and the five Sown Men stand complete where the dragon’s teeth were cast.',
+      'Arcadia woke along the highland — Pelasgus the acorn-king, and Lycaon, who set a child’s flesh before Zeus and fled the table on four wolf’s legs, the flood at his heels.',
+      'Callisto, Artemis’ huntress, bore a son to Zeus and was driven into a bear’s hide and up among the stars as the Great Bear; her boy Arcas gave the land its name and rose behind her as the Bear-warden.',
+      'The goat-god Pan took his place, and the shy Pleiad Maia, who nursed the infant Arcas and gave swift Hermes his mother.',
+      'And Atalanta came into her own at last — the babe a she-bear suckled, first spear at the Calydonian boar, outrun only by the suitor who scattered Aphrodite’s golden apples, until the two were made lions.',
+    ],
+  },
+  {
     version: '0.1.2',
     codename: 'The Heroes Muster',
     date: '2026-06-14',

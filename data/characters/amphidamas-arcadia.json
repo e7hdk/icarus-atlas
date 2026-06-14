@@ -1,0 +1,67 @@
+{
+  "id": "amphidamas-arcadia",
+  "name": "Amphidamas",
+  "greekName": "Amphidamas (Ἀμφιδάμας)",
+  "romanName": "Amphidamas",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Tegean royal house",
+    "the Argonaut voyage",
+    "Arcadian genealogy"
+  ],
+  "summary": [
+    {
+      "text": "An Arcadian of the royal house of Tegea who sailed with the Argonauts as a son of Aleus and brother of Cepheus.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.161–171, 2.1030; Fabulae 14.3"
+    },
+    {
+      "text": "His generation is disputed: Apollodorus instead makes him a son of Lycurgus — hence a grandson of Aleus — and the father of Melanion and of Antimache, whom Eurystheus married.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Where Amphidamas stands in the Tegean line is the crux of his story, for the sources set him a generation apart. Pausanias, listing the Tegean kings, names the sons of Aleus as Lycurgus, Amphidamas and Cepheus, with a daughter Auge beside them — making Amphidamas a brother of the house's reigning line.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.4.8"
+    },
+    {
+      "text": "Apollodorus tells it otherwise. He makes Amphidamas one rung lower — a son of Lycurgus by Cleophyle or Eurynome, and so a grandson of Aleus rather than his son. In this telling Amphidamas is himself a father: of Melanion, and of Antimache, the bride of Eurystheus. The two accounts cannot both stand, and the dispute over his birth is part of what he is.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    },
+    {
+      "text": "His one certain deed is the great voyage. In Apollonius' catalogue of the Argo's crew, from Arcadia came Amphidamas and Cepheus, who held Tegea and the allotment of Apheidas, two sons of Aleus; and Ancaeus followed as a third.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.161–171"
+    },
+    {
+      "text": "Hyginus likewise enrolls Amphidamas and Cepheus, sons of Aleus, among the heroes who sailed for the fleece.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14.3"
+    },
+    {
+      "text": "He is heard from again at the Isle of Ares, where birds whose feathers fall like arrows beset the crew. There it is Amphidamas, son of Aleus, who counsels the Argonauts how to drive the birds off — to take up their crested helmets and bright shields and raise a clashing din, so that the creatures are scared from the height before they can wound. The patronymic 'son of Aleus' is restated word for word, fixing both his presence on the ship and his father within the same poem.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 2.1030"
+    }
+  ]
+}

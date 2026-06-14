@@ -1181,3 +1181,63 @@ Verification: ✓ verified — Bibliotheca 1.7.7 (Thestius by Ares) and Pausania
 Significance: whether the father of Diomedes — the second-greatest Greek at Troy — was born of Oeneus' second wife or, in the darker strand, of Oeneus' own daughter Gorge, hides an incest at the root of the Aetolian hero-line. Apollodorus alone preserves both, crediting the Gorge version to the epic poet Peisander.
 
 Verification: ✓ verified — Bibliotheca 1.8.4–5 carries the Periboea parentage and the Peisander/Gorge variant in the same passage; Hyginus 69–70 corroborate Periboea.
+
+## Was Amphidamas a son of Aleus or of Lycurgus?
+
+- **topic**: `amphidamas-generation`
+- **Characters**: `amphidamas-arcadia`, `aleus`, `lycurgus-arcadia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pausanias | Amphidamas is a son of Aleus, brother of Cepheus and Lycurgus — a generation above the boar-hunters. | Description of Greece 8.4.8 |
+| Apollonius | The Argonaut catalogue brings "Amphidamas and Cepheus, who held Tegea and the allotment of Apheidas, two sons of Aleus." | Argonautica 1.161–164 |
+| Pseudo-Apollodorus | Amphidamas is instead a son of Lycurgus (son of Aleus), brother of Ancaeus, Epochus, and Iasus — a generation below. | Bibliotheca 3.9.2 |
+
+Significance: the slip of one generation tangles the Tegean Argonaut roster — whether Amphidamas sailed beside his brother Cepheus or beside his cousin Ancaeus — and it follows from the same uncertainty over whether Aleus' sons or Lycurgus' sons were the Tegean crew of the Argo.
+
+Verification: ✓ verified — Pausanias 8.4.8 and Apollonius 1.161–164 make Amphidamas a son of Aleus; Apollodorus 3.9.2 makes him a son of Lycurgus, confirmed against Perseus.
+
+## Whose daughter is Atalanta?
+
+- **topic**: `atalanta-parentage`
+- **Characters**: `atalanta`, `iasus-arcadia`, `schoeneus`, `clymene-minyas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (Arcadian) | Atalanta is the daughter of Iasus the Arcadian by Clymene daughter of Minyas — exposed at birth because her father wanted sons, and suckled by a she-bear. | Bibliotheca 3.9.2 |
+| Pseudo-Apollodorus (Boeotian) | Elsewhere the same author calls the boar-hunt Atalanta "daughter of Schoeneus," the Boeotian. | Bibliotheca 1.8.2 |
+| Hyginus | Gives both: "Atalanta, daughter of Iasus and Clymene" (Arcadian) against the Boeotian Atalanta "daughter of Schoeneus" of the foot-race. | Fabulae 70 vs 185 |
+
+Significance: the huntress comes in two homelands — the wild Arcadian exposed to the bear, and the Boeotian runner of the golden-apple race — and the ancient mythographers, Apollodorus among them, never settle which Atalanta is which, sometimes splitting her in two and sometimes merging her.
+
+Verification: ✓ verified — Bibliotheca 3.9.2 (Iasus/Clymene) and 1.8.2 (Schoeneus) carry both filiations; Hyginus 70 and 185 confirm the Arcadian and Boeotian parentages respectively, checked against Perseus/ToposText.
+
+## Who won the foot-race and married Atalanta?
+
+- **topic**: `atalanta-husband`
+- **Characters**: `atalanta`, `melanion`, `hippomenes`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Melanion, the persistent Arcadian suitor, dropped Aphrodite's golden apples in the course, won the race, and so married Atalanta. | Bibliotheca 3.9.2 |
+| Ovid | Hippomenes, great-grandson of Poseidon, wins Atalanta with the three golden apples of Venus; the pair, lying together in Cybele's shrine, are turned into lions. | Metamorphoses 10.560–707 |
+| Hyginus | Names Hippomenes son of Megareus as the victor of the apple-race and Atalanta's husband. | Fabulae 185 |
+
+Significance: the one race won by cunning rather than speed has two winners — the Arcadian Melanion of the local tradition and the Boeotian Hippomenes of Ovid — the same doubling that splits Atalanta's own parentage between Arcadia and Boeotia.
+
+Verification: ✓ verified — Apollodorus 3.9.2 (Melanion) and Ovid Met. 10.560–707 / Hyginus 185 (Hippomenes) confirmed against Perseus.
+
+## Who fathered Parthenopaeus?
+
+- **topic**: `parthenopaeus-father`
+- **Characters**: `parthenopaeus`, `atalanta`, `melanion`, `ares`, `meleager`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Parthenopaeus is the son of Atalanta by Melanion — or, the same author adds, by Ares. | Bibliotheca 3.9.2 |
+| Pseudo-Apollodorus | In the muster of the Seven he is "Parthenopaeus, son of Melanion." | Bibliotheca 3.6.3 |
+| Hyginus | Makes him the son of Meleager by Atalanta — folding the boar-hunt lovers into his begetting. | Fabulae 70, 99, 270 |
+
+Significance: the youngest and fairest of the Seven against Thebes hangs his paternity on Atalanta's tangled love-life — the husband Melanion, the war-god Ares, or her boar-hunt companion Meleager — so that the hero's blood is claimed at once for the mortal, the divine, and the Calydonian lines.
+
+Verification: ✓ verified — Bibliotheca 3.9.2 (Melanion/Ares) and 3.6.3 (Melanion) and Hyginus 70/99/270 (Meleager) confirmed against Perseus/ToposText.

@@ -1,0 +1,68 @@
+{
+  "id": "pan",
+  "name": "Pan",
+  "greekName": "Pan (Πάν)",
+  "romanName": "Faunus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the wild",
+    "shepherds and flocks",
+    "the shepherd's pipe",
+    "Arcadian pasture"
+  ],
+  "summary": [
+    {
+      "text": "Pan is the Arcadian god of the wild, of shepherds and their flocks, worshipped above all in the highland pastures of Arcadia, where Mount Maenalus is held especially sacred to him — so that those who dwell about it say they can actually hear him playing on his pipes.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Pausanias 8.36.8"
+    },
+    {
+      "text": "He is named the inventor of the music of the pipes, the syrinx whose reeds carry his pastoral song across the Arcadian mountains.",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Pausanias 8.38.11; Hyginus, Fabulae 274"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pan's parentage is thinly and contradictorily attested, even within a single author. By one reported tradition Penelope, after being sent away by Odysseus to her father Icarius, came to Mantinea in Arcadia and there bore Pan to Hermes; Apollodorus records this only as a variant — 'some say' — so that the god's seed-parentage rests on a strand Homer's Odyssey never tells.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus, Epitome 7.38"
+    },
+    {
+      "text": "Hyginus likewise gives Hermes for father: listing mortals made immortal, he names 'Pan, son of Mercury and Penelope.'",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Hyginus, Fabulae 224"
+    },
+    {
+      "text": "The same Apollodorus elsewhere contradicts that account, making Pan the son of Zeus and Hybris rather than of Hermes — so that no single parentage for the god stands undisputed.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus, Library 1.4.1"
+    },
+    {
+      "text": "Arcadia claims him as its own god of pasture. On the Nomian Mountains, at the place called Melpeia, the Arcadians say Pan discovered the music of the pipes; the very name of the Nomian range they tie to the pasturings — the nomai — of Pan, and Mount Maenalus they hold especially sacred to him, its dwellers saying they hear his piping on the heights.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Pausanias 8.38.11, 8.36.8"
+    },
+    {
+      "text": "Ovid gives the aetion of the pipe. Pan pursued the Arcadian Naiad Syrinx from Mount Lycaeus to the river Ladon; halted by the water, she was changed into marsh reeds, and the god, grasping at the maiden, clutched the reeds instead. Sighing into them, he found that his breath made a thin, plaintive sound; so he joined unequal reeds together with wax and, calling the instrument the syrinx, kept the lost nymph's name forever in his music.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ovid, Metamorphoses 1.689–712"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "laodamas-theban",
+  "name": "Laodamas",
+  "greekName": "Laodamās (Λαοδάμας)",
+  "romanName": "Laodamas",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "theban kingship",
+    "the second siege",
+    "the cadmean line's fall"
+  ],
+  "summary": [
+    {
+      "text": "Laodamas, son of Eteocles, was the king who held Thebes when the Epigoni — the sons of the Seven — came to avenge their fathers, the last Cadmean ruler to lead the city in war.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollodorus, Bibliotheca 3.7.3; Pausanias, Description of Greece 9.5.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Eteocles and his brother Polynices fell by each other's hands at the first siege, the kingdom of Thebes passed to Laodamas, the son of Eteocles. He was still a boy, and so Creon, son of Menoeceus, ruled in his place as regent and guardian until he came of age.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.13"
+    },
+    {
+      "text": "Grown to manhood and holding the throne in his own right, Laodamas faced the second Argive war. The sons of the Seven — the Epigoni, among them Thersander son of Polynices and Diomedes son of Tydeus — marched against Thebes to finish what their fathers had begun.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.7.2"
+    },
+    {
+      "text": "Pausanias names the host that came against him: Thebes was attacked by Thersander and those the Greeks call the Epigoni, the Born-Later, joined by Argives, Messenians, Arcadians, and allies invited from Corinth and Megara. Thebes was defended by its neighbours, and the armies met at Glisas, where the battle was fiercely contested on both sides.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.9.4"
+    },
+    {
+      "text": "Here the sources part on how Laodamas met his end. Apollodorus tells that the Thebans, advancing under Laodamas, fought bravely, and though Laodamas slew Aegialeus, the son of Adrastus, he was himself killed by Alcmaeon; after his death the Thebans fled in a body within the walls, and at the counsel of Tiresias they sent a herald to treat with the Argives and then abandoned the city by night.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.7.3"
+    },
+    {
+      "text": "Pausanias gives Laodamas a different end. At Glisas Aegialeus, the son of Adrastus, was killed by Laodamas — yet the Argives won the day; and when night came Laodamas withdrew, leading any Theban willing to follow him, away to Illyria. Most of the defeated departed with him, while a portion shrank from the long road and turned aside into Thessaly, seizing Mount Homole; from this flight, the Thebans said, the Homoloid gate took its name. In this telling Laodamas does not die at Thebes but leads his people into exile.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.13, 9.8.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

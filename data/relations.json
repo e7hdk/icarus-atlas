@@ -10548,5 +10548,1019 @@
       "pausanias"
     ],
     "note": "Diomedes returned and destroyed the usurpers, restoring the house of Oeneus (Bibliotheca 1.8.6; Fabulae 175, 242; Description of Greece 2.25.2)"
+  },
+  {
+    "id": "actaeon-parent-aristaeus",
+    "type": "parent",
+    "from": "actaeon",
+    "to": "aristaeus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.4.4; Fabulae 180)"
+  },
+  {
+    "id": "actaeon-parent-autonoe",
+    "type": "parent",
+    "from": "actaeon",
+    "to": "autonoe",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.4.4; Fabulae 180; Metamorphoses 3.198–230)"
+  },
+  {
+    "id": "aristaeus-parent-apollo",
+    "type": "parent",
+    "from": "aristaeus",
+    "to": "apollo",
+    "sources": [
+      "apollonius",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "(Argonautica 2.500–527; Fabulae 161; Description of Greece 10.17.3)"
+  },
+  {
+    "id": "nycteis-parent-nycteus",
+    "type": "parent",
+    "from": "nycteis",
+    "to": "nycteus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "labdacus-parent-nycteis",
+    "type": "parent",
+    "from": "labdacus",
+    "to": "nycteis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "thersander-parent-polynices",
+    "type": "parent",
+    "from": "thersander",
+    "to": "polynices",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.7.2; Description of Greece 9.5.14; Fabulae 71)"
+  },
+  {
+    "id": "laodamas-theban-parent-eteocles",
+    "type": "parent",
+    "from": "laodamas-theban",
+    "to": "eteocles",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.7.3; Description of Greece 9.5.13)"
+  },
+  {
+    "id": "nycteus-parent-chthonius-spartos",
+    "type": "parent",
+    "from": "nycteus",
+    "to": "chthonius-spartos",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sons of the Spartos Chthonius in one tradition; Apollodorus 3.10.1 instead makes them sons of Hyrieus (Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "lycus-parent-chthonius-spartos",
+    "type": "parent",
+    "from": "lycus",
+    "to": "chthonius-spartos",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sons of the Spartos Chthonius in one tradition; Apollodorus 3.10.1 instead makes them sons of Hyrieus (Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "aristaeus-consort-autonoe",
+    "type": "consort",
+    "from": "aristaeus",
+    "to": "autonoe",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 975–977; Bibliotheca 3.4.2)"
+  },
+  {
+    "id": "polydorus-consort-nycteis",
+    "type": "consort",
+    "from": "polydorus",
+    "to": "nycteis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "nycteus-sibling-lycus",
+    "type": "sibling",
+    "from": "nycteus",
+    "to": "lycus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Brothers, regents of Thebes (Bibliotheca 3.5.5)"
+  },
+  {
+    "id": "chthonius-spartos-creator-cadmus",
+    "type": "creator",
+    "from": "chthonius-spartos",
+    "to": "cadmus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "One of the five Spartoi sprung from the dragon's teeth Cadmus sowed (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "hyperenor-spartos-creator-cadmus",
+    "type": "creator",
+    "from": "hyperenor-spartos",
+    "to": "cadmus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "One of the five Spartoi sprung from the dragon's teeth Cadmus sowed (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "pelorus-spartos-creator-cadmus",
+    "type": "creator",
+    "from": "pelorus-spartos",
+    "to": "cadmus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "One of the five Spartoi sprung from the dragon's teeth Cadmus sowed (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "artemis-adversary-actaeon",
+    "type": "adversary",
+    "from": "artemis",
+    "to": "actaeon",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Her wrath turned him to a stag; his own hounds tore him (Bibliotheca 3.4.4; Metamorphoses 3.138–252; Fabulae 180)"
+  },
+  {
+    "id": "thersander-adversary-laodamas-theban",
+    "type": "adversary",
+    "from": "thersander",
+    "to": "laodamas-theban",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Epigoni against Thebes (Bibliotheca 3.7.2–4; Description of Greece 9.5.13)"
+  },
+  {
+    "id": "thersander-ally-diomedes",
+    "type": "ally",
+    "from": "thersander",
+    "to": "diomedes",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Fellow Epigoni against Thebes (Bibliotheca 3.7.2; Description of Greece 10.10.4)"
+  },
+  {
+    "id": "laodamas-theban-adversary-diomedes",
+    "type": "adversary",
+    "from": "laodamas-theban",
+    "to": "diomedes",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Defended Thebes against the Epigoni (Diomedes among them) (Bibliotheca 3.7.2–3)"
+  },
+  {
+    "id": "lycaon-parent-pelasgus-arcadia",
+    "type": "parent",
+    "from": "lycaon",
+    "to": "pelasgus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.8.1; Description of Greece 8.2.1; Fabulae 176)"
+  },
+  {
+    "id": "callisto-parent-lycaon",
+    "type": "parent",
+    "from": "callisto",
+    "to": "lycaon",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "The dominant line (Eumelus); Apollodorus also reports her a nymph, or daughter of Nycteus or Ceteus (Bibliotheca 3.8.2; Description of Greece 8.3.6; Fabulae 176–177)"
+  },
+  {
+    "id": "nyctimus-parent-lycaon",
+    "type": "parent",
+    "from": "nyctimus",
+    "to": "lycaon",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.8.1; Description of Greece 8.3.1)"
+  },
+  {
+    "id": "callisto-sibling-nyctimus",
+    "type": "sibling",
+    "from": "callisto",
+    "to": "nyctimus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Children of Lycaon (Bibliotheca 3.8.1–2; Description of Greece 8.3.1–6)"
+  },
+  {
+    "id": "arcas-parent-zeus",
+    "type": "parent",
+    "from": "arcas",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.8.2; Metamorphoses 2.496–507; Fabulae 176; Description of Greece 8.4.1)"
+  },
+  {
+    "id": "arcas-parent-callisto",
+    "type": "parent",
+    "from": "arcas",
+    "to": "callisto",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.8.2; Metamorphoses 2.496–507; Fabulae 177; Description of Greece 8.4.1)"
+  },
+  {
+    "id": "zeus-lover-callisto",
+    "type": "lover",
+    "from": "zeus",
+    "to": "callisto",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.8.2; Metamorphoses 2.401–440; Fabulae 176)"
+  },
+  {
+    "id": "lycaon-adversary-zeus",
+    "type": "adversary",
+    "from": "lycaon",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "The impious feast: Zeus blasts his sons / turns Lycaon into a wolf, and the flood follows (Bibliotheca 3.8.1–2; Description of Greece 8.2.3; Metamorphoses 1.209–243; Fabulae 176)"
+  },
+  {
+    "id": "maia-parent-atlas",
+    "type": "parent",
+    "from": "maia",
+    "to": "atlas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 938; Bibliotheca 3.10.1)"
+  },
+  {
+    "id": "zeus-lover-maia",
+    "type": "lover",
+    "from": "zeus",
+    "to": "maia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Maia bore Hermes to Zeus in the Cyllenian cave (Theogony 938–939; Bibliotheca 3.10.2)"
+  },
+  {
+    "id": "hermes-parent-maia",
+    "type": "parent",
+    "from": "hermes",
+    "to": "maia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "The existing Hermes gains his mother, the Pleiad Maia (Theogony 938; Bibliotheca 3.10.2)"
+  },
+  {
+    "id": "pan-parent-hermes",
+    "type": "parent",
+    "from": "pan",
+    "to": "hermes",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Son of Hermes by Penelope in this tradition; rival parentages exist (Epitome 7.38; Fabulae 224)"
+  },
+  {
+    "id": "azan-parent-arcas",
+    "type": "parent",
+    "from": "azan",
+    "to": "arcas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.2)"
+  },
+  {
+    "id": "apheidas-parent-arcas",
+    "type": "parent",
+    "from": "apheidas",
+    "to": "arcas",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.2; Argonautica 1.161–171)"
+  },
+  {
+    "id": "elatus-arcadia-parent-arcas",
+    "type": "parent",
+    "from": "elatus-arcadia",
+    "to": "arcas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.2)"
+  },
+  {
+    "id": "azan-sibling-apheidas",
+    "type": "sibling",
+    "from": "azan",
+    "to": "apheidas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Arcas by the Dryad Erato (Bibliotheca 3.9.1; Description of Greece 8.4.2)"
+  },
+  {
+    "id": "azan-sibling-elatus-arcadia",
+    "type": "sibling",
+    "from": "azan",
+    "to": "elatus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Arcas by the Dryad Erato (Bibliotheca 3.9.1; Description of Greece 8.4.2)"
+  },
+  {
+    "id": "apheidas-sibling-elatus-arcadia",
+    "type": "sibling",
+    "from": "apheidas",
+    "to": "elatus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Arcas by the Dryad Erato (Bibliotheca 3.9.1; Description of Greece 8.4.2)"
+  },
+  {
+    "id": "artemis-adversary-callisto",
+    "type": "adversary",
+    "from": "artemis",
+    "to": "callisto",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Shot the bear; the transformer (Hera/Artemis/Zeus) is disputed in the sources (Bibliotheca 3.8.2; Description of Greece 8.3.6)"
+  },
+  {
+    "id": "arcas-consort-erato-dryad",
+    "type": "consort",
+    "from": "arcas",
+    "to": "erato-dryad",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "The Dryad wife of Arcas; Apollodorus instead names Leanira, Meganira, or the nymph Chrysopelia (Description of Greece 8.4.2)"
+  },
+  {
+    "id": "azan-parent-erato-dryad",
+    "type": "parent",
+    "from": "azan",
+    "to": "erato-dryad",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Mother per Pausanias; rival mothers in Apollodorus (Description of Greece 8.4.2)"
+  },
+  {
+    "id": "apheidas-parent-erato-dryad",
+    "type": "parent",
+    "from": "apheidas",
+    "to": "erato-dryad",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Mother per Pausanias; rival mothers in Apollodorus (Description of Greece 8.4.2)"
+  },
+  {
+    "id": "elatus-arcadia-parent-erato-dryad",
+    "type": "parent",
+    "from": "elatus-arcadia",
+    "to": "erato-dryad",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Mother per Pausanias; rival mothers in Apollodorus (Description of Greece 8.4.2)"
+  },
+  {
+    "id": "cleitor-parent-azan",
+    "type": "parent",
+    "from": "cleitor",
+    "to": "azan",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 8.4.4)"
+  },
+  {
+    "id": "stymphalus-arcadian-parent-elatus-arcadia",
+    "type": "parent",
+    "from": "stymphalus-arcadian",
+    "to": "elatus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.4)"
+  },
+  {
+    "id": "pereus-parent-elatus-arcadia",
+    "type": "parent",
+    "from": "pereus",
+    "to": "elatus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.4)"
+  },
+  {
+    "id": "aepytus-elatid-parent-elatus-arcadia",
+    "type": "parent",
+    "from": "aepytus-elatid",
+    "to": "elatus-arcadia",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 8.4.4, 8.4.7)"
+  },
+  {
+    "id": "cyllen-parent-elatus-arcadia",
+    "type": "parent",
+    "from": "cyllen",
+    "to": "elatus-arcadia",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 8.4.4, 8.4.6)"
+  },
+  {
+    "id": "ischys-elatid-parent-elatus-arcadia",
+    "type": "parent",
+    "from": "ischys-elatid",
+    "to": "elatus-arcadia",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Among the Arcadian Elatus' five sons; Apollodorus 3.10.3 instead makes the Coronis-lover Ischys a brother of the Lapith Caeneus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "stymphalus-arcadian-sibling-aepytus-elatid",
+    "type": "sibling",
+    "from": "stymphalus-arcadian",
+    "to": "aepytus-elatid",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "stymphalus-arcadian-sibling-cyllen",
+    "type": "sibling",
+    "from": "stymphalus-arcadian",
+    "to": "cyllen",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "stymphalus-arcadian-sibling-pereus",
+    "type": "sibling",
+    "from": "stymphalus-arcadian",
+    "to": "pereus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "stymphalus-arcadian-sibling-ischys-elatid",
+    "type": "sibling",
+    "from": "stymphalus-arcadian",
+    "to": "ischys-elatid",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "aepytus-elatid-sibling-cyllen",
+    "type": "sibling",
+    "from": "aepytus-elatid",
+    "to": "cyllen",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "aepytus-elatid-sibling-pereus",
+    "type": "sibling",
+    "from": "aepytus-elatid",
+    "to": "pereus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "aepytus-elatid-sibling-ischys-elatid",
+    "type": "sibling",
+    "from": "aepytus-elatid",
+    "to": "ischys-elatid",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "cyllen-sibling-pereus",
+    "type": "sibling",
+    "from": "cyllen",
+    "to": "pereus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "cyllen-sibling-ischys-elatid",
+    "type": "sibling",
+    "from": "cyllen",
+    "to": "ischys-elatid",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "pereus-sibling-ischys-elatid",
+    "type": "sibling",
+    "from": "pereus",
+    "to": "ischys-elatid",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Sons of Elatus (Description of Greece 8.4.4)"
+  },
+  {
+    "id": "aleus-parent-apheidas",
+    "type": "parent",
+    "from": "aleus",
+    "to": "apheidas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.4)"
+  },
+  {
+    "id": "cepheus-tegea-parent-aleus",
+    "type": "parent",
+    "from": "cepheus-tegea",
+    "to": "aleus",
+    "sources": [
+      "pausanias",
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "(Description of Greece 8.4.8; Argonautica 1.161; Fabulae 14.3)"
+  },
+  {
+    "id": "lycurgus-arcadia-parent-aleus",
+    "type": "parent",
+    "from": "lycurgus-arcadia",
+    "to": "aleus",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.8; Argonautica 1.161)"
+  },
+  {
+    "id": "cepheus-tegea-sibling-lycurgus-arcadia",
+    "type": "sibling",
+    "from": "cepheus-tegea",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Aleus (Bibliotheca 3.9.1; Description of Greece 8.4.8)"
+  },
+  {
+    "id": "amphidamas-arcadia-parent-aleus",
+    "type": "parent",
+    "from": "amphidamas-arcadia",
+    "to": "aleus",
+    "sources": [
+      "pausanias",
+      "apollonius"
+    ],
+    "topic": "amphidamas-generation",
+    "note": "Son of Aleus, brother of Cepheus and Lycurgus (Description of Greece 8.4.8; Argonautica 1.161–164)"
+  },
+  {
+    "id": "amphidamas-arcadia-parent-lycurgus-arcadia",
+    "type": "parent",
+    "from": "amphidamas-arcadia",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "amphidamas-generation",
+    "note": "Son of Lycurgus, brother of Ancaeus (Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "ancaeus-arcadian-parent-lycurgus-arcadia",
+    "type": "parent",
+    "from": "ancaeus-arcadian",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 3.9.2; Description of Greece 8.4.10; Argonautica 1.164)"
+  },
+  {
+    "id": "epochus-parent-lycurgus-arcadia",
+    "type": "parent",
+    "from": "epochus",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.9.2; Description of Greece 8.4.10)"
+  },
+  {
+    "id": "ancaeus-arcadian-sibling-epochus",
+    "type": "sibling",
+    "from": "ancaeus-arcadian",
+    "to": "epochus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Lycurgus (Bibliotheca 3.9.2; Description of Greece 8.4.10)"
+  },
+  {
+    "id": "cepheus-tegea-ally-jason",
+    "type": "ally",
+    "from": "cepheus-tegea",
+    "to": "jason",
+    "sources": [
+      "apollonius",
+      "apollodorus"
+    ],
+    "note": "The Tegean contingent on the Argo (Argonautica 1.161–171; Bibliotheca 1.9.16)"
+  },
+  {
+    "id": "amphidamas-arcadia-ally-jason",
+    "type": "ally",
+    "from": "amphidamas-arcadia",
+    "to": "jason",
+    "sources": [
+      "apollonius",
+      "apollodorus"
+    ],
+    "note": "The Tegean contingent on the Argo (Argonautica 1.161–171; Bibliotheca 1.9.16)"
+  },
+  {
+    "id": "ancaeus-arcadian-ally-jason",
+    "type": "ally",
+    "from": "ancaeus-arcadian",
+    "to": "jason",
+    "sources": [
+      "apollonius",
+      "apollodorus"
+    ],
+    "note": "The Tegean contingent on the Argo (Argonautica 1.161–171; Bibliotheca 1.9.16)"
+  },
+  {
+    "id": "pelops-slayer-stymphalus-arcadian",
+    "type": "slayer",
+    "from": "pelops",
+    "to": "stymphalus-arcadian",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Killed and dismembered Stymphalus by guile (Bibliotheca 3.12.6; Description of Greece 8.4.6)"
+  },
+  {
+    "id": "atalanta-parent-iasus-arcadia",
+    "type": "parent",
+    "from": "atalanta",
+    "to": "iasus-arcadia",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "atalanta-parentage",
+    "note": "The Arcadian Atalanta, exposed and suckled by a she-bear (Bibliotheca 3.9.2; Fabulae 70)"
+  },
+  {
+    "id": "atalanta-parent-schoeneus",
+    "type": "parent",
+    "from": "atalanta",
+    "to": "schoeneus",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "ovid"
+    ],
+    "topic": "atalanta-parentage",
+    "note": "The Boeotian Atalanta of the foot-race (Bibliotheca 1.8.2; Fabulae 185; Metamorphoses 10.560–707)"
+  },
+  {
+    "id": "atalanta-parent-clymene-minyas",
+    "type": "parent",
+    "from": "atalanta",
+    "to": "clymene-minyas",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Mother in the Arcadian tradition (Bibliotheca 3.9.2; Fabulae 70)"
+  },
+  {
+    "id": "atalanta-consort-melanion",
+    "type": "consort",
+    "from": "atalanta",
+    "to": "melanion",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "atalanta-husband",
+    "note": "The Arcadian who won the apple-race (Bibliotheca 3.9.2; Description of Greece 5.19.2)"
+  },
+  {
+    "id": "atalanta-consort-hippomenes",
+    "type": "consort",
+    "from": "atalanta",
+    "to": "hippomenes",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "topic": "atalanta-husband",
+    "note": "The Boeotian who won the apple-race; the pair turned to lions (Bibliotheca 3.9.2; Metamorphoses 10.560–707; Fabulae 185)"
+  },
+  {
+    "id": "iasus-arcadia-parent-lycurgus-arcadia",
+    "type": "parent",
+    "from": "iasus-arcadia",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "schoeneus-parent-athamas",
+    "type": "parent",
+    "from": "schoeneus",
+    "to": "athamas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Son of the Aeolid Athamas by Themisto (Bibliotheca 1.9.2)"
+  },
+  {
+    "id": "melanion-parent-amphidamas-arcadia",
+    "type": "parent",
+    "from": "melanion",
+    "to": "amphidamas-arcadia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "auge-parent-aleus",
+    "type": "parent",
+    "from": "auge",
+    "to": "aleus",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.9.1; Description of Greece 8.4.9; Fabulae 99)"
+  },
+  {
+    "id": "telephus-parent-auge",
+    "type": "parent",
+    "from": "telephus",
+    "to": "auge",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Father Heracles narrated in prose (not yet an atlas node) (Bibliotheca 3.9.1; Fabulae 99–100; Description of Greece 8.4.9)"
+  },
+  {
+    "id": "agapenor-parent-ancaeus-arcadian",
+    "type": "parent",
+    "from": "agapenor",
+    "to": "ancaeus-arcadian",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Epitome 3.12; Description of Greece 8.5.2)"
+  },
+  {
+    "id": "parthenopaeus-parent-atalanta",
+    "type": "parent",
+    "from": "parthenopaeus",
+    "to": "atalanta",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "parthenopaeus-parent-melanion",
+    "type": "parent",
+    "from": "parthenopaeus",
+    "to": "melanion",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "parthenopaeus-father",
+    "note": "(Bibliotheca 3.9.2, 3.6.3; Description of Greece 3.12.9)"
+  },
+  {
+    "id": "parthenopaeus-parent-ares",
+    "type": "parent",
+    "from": "parthenopaeus",
+    "to": "ares",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "parthenopaeus-father",
+    "note": "(Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "parthenopaeus-parent-meleager",
+    "type": "parent",
+    "from": "parthenopaeus",
+    "to": "meleager",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "parthenopaeus-father",
+    "note": "(Fabulae 70, 99, 270)"
+  },
+  {
+    "id": "auge-sibling-cepheus-tegea",
+    "type": "sibling",
+    "from": "auge",
+    "to": "cepheus-tegea",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Children of Aleus (Bibliotheca 3.9.1; Description of Greece 8.4.9)"
+  },
+  {
+    "id": "auge-sibling-lycurgus-arcadia",
+    "type": "sibling",
+    "from": "auge",
+    "to": "lycurgus-arcadia",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Children of Aleus (Bibliotheca 3.9.1; Description of Greece 8.4.9)"
+  },
+  {
+    "id": "iasus-arcadia-sibling-ancaeus-arcadian",
+    "type": "sibling",
+    "from": "iasus-arcadia",
+    "to": "ancaeus-arcadian",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sons of Lycurgus (Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "iasus-arcadia-sibling-epochus",
+    "type": "sibling",
+    "from": "iasus-arcadia",
+    "to": "epochus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sons of Lycurgus (Bibliotheca 3.9.2)"
+  },
+  {
+    "id": "echemus-consort-timandra",
+    "type": "consort",
+    "from": "echemus",
+    "to": "timandra",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Tyndareus; the Tegea–Sparta tie (Bibliotheca 3.10.6)"
+  },
+  {
+    "id": "agapenor-ally-agamemnon",
+    "type": "ally",
+    "from": "agapenor",
+    "to": "agamemnon",
+    "sources": [
+      "homer"
+    ],
+    "note": "Led the Arcadians to Troy in ships lent by Agamemnon (Iliad 2.603–614)"
+  },
+  {
+    "id": "telephus-adversary-achilles",
+    "type": "adversary",
+    "from": "telephus",
+    "to": "achilles",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Wounded by Achilles' spear and later healed by its rust (Epitome 3.17; Fabulae 101)"
   }
 ]

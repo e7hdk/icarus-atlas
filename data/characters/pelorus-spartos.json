@@ -1,0 +1,57 @@
+{
+  "id": "pelorus-spartos",
+  "name": "Pelorus",
+  "greekName": "Pelōros (Πέλωρος)",
+  "romanName": "Pelorus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "sown men",
+    "earth-born warriors",
+    "founding of thebes"
+  ],
+  "summary": [
+    {
+      "text": "Pelorus is one of the five Spartoi, the Sown Men who rose fully armed from the earth where Cadmus had planted the slain dragon's teeth, and who survived the mutual slaughter to stand among the first lords of Thebes.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 3.4.1; Pausanias 9.5.3; Hyginus, Fabulae 178"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Cadmus killed the dragon and, on Athena's counsel, sowed its teeth, armed men sprang up out of the ground; Hyginus likewise tells that Cadmus sowed the teeth and ploughed them under at Minerva's instruction. No sooner had the Sown Men risen than they fell upon one another, and most perished in the slaughter — so that the warriors born of the soil were unmade almost as soon as they were born.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 3.4.1; Hyginus, Fabulae 178"
+    },
+    {
+      "text": "Five of the Sown Men outlived the killing, and Pelorus is counted among them, named together with Echion, Udaeus, Chthonius, and Hyperenor — in Apollodorus and again in Hyginus's roll of survivors.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 3.4.1; Hyginus, Fabulae 178"
+    },
+    {
+      "text": "Pausanias records that in Cadmus's day the greatest power after the king's own belonged to the Sparti — Chthonius, Hyperenor, Pelorus, and Udaeus — while Echion was chosen for his valour as Cadmus's son-in-law; and, finding nothing else to tell of these men, Pausanias accepts the story that reads their very name as a record of how they came into being, sprung from the earth.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Pausanias 9.5.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}
