@@ -11562,5 +11562,1775 @@
       "hyginus"
     ],
     "note": "Wounded by Achilles' spear and later healed by its rust (Epitome 3.17; Fabulae 101)"
+  },
+  {
+    "id": "pontus-parent-gaia",
+    "type": "parent",
+    "from": "pontus",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Born of Gaia alone, without union (Theogony 131–132; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "nereus-parent-pontus",
+    "type": "parent",
+    "from": "nereus",
+    "to": "pontus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "nereus-parent-gaia",
+    "type": "parent",
+    "from": "nereus",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "phorcys-parent-pontus",
+    "type": "parent",
+    "from": "phorcys",
+    "to": "pontus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "phorcys-parent-gaia",
+    "type": "parent",
+    "from": "phorcys",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "ceto-parent-pontus",
+    "type": "parent",
+    "from": "ceto",
+    "to": "pontus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "ceto-parent-gaia",
+    "type": "parent",
+    "from": "ceto",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "thaumas-parent-pontus",
+    "type": "parent",
+    "from": "thaumas",
+    "to": "pontus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "thaumas-parent-gaia",
+    "type": "parent",
+    "from": "thaumas",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "nereus-sibling-phorcys",
+    "type": "sibling",
+    "from": "nereus",
+    "to": "phorcys",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "nereus-sibling-ceto",
+    "type": "sibling",
+    "from": "nereus",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "nereus-sibling-thaumas",
+    "type": "sibling",
+    "from": "nereus",
+    "to": "thaumas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "phorcys-sibling-ceto",
+    "type": "sibling",
+    "from": "phorcys",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "phorcys-sibling-thaumas",
+    "type": "sibling",
+    "from": "phorcys",
+    "to": "thaumas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "ceto-sibling-thaumas",
+    "type": "sibling",
+    "from": "ceto",
+    "to": "thaumas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Pontus and Gaia (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "phorcys-consort-ceto",
+    "type": "consort",
+    "from": "phorcys",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "medusa-parent-phorcys",
+    "type": "parent",
+    "from": "medusa",
+    "to": "phorcys",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "medusa-parent-ceto",
+    "type": "parent",
+    "from": "medusa",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "stheno-parent-phorcys",
+    "type": "parent",
+    "from": "stheno",
+    "to": "phorcys",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "stheno-parent-ceto",
+    "type": "parent",
+    "from": "stheno",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "euryale-parent-phorcys",
+    "type": "parent",
+    "from": "euryale",
+    "to": "phorcys",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "euryale-parent-ceto",
+    "type": "parent",
+    "from": "euryale",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "graeae-parent-phorcys",
+    "type": "parent",
+    "from": "graeae",
+    "to": "phorcys",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "graeae-parent-ceto",
+    "type": "parent",
+    "from": "graeae",
+    "to": "ceto",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "medusa-sibling-stheno",
+    "type": "sibling",
+    "from": "medusa",
+    "to": "stheno",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "medusa-sibling-euryale",
+    "type": "sibling",
+    "from": "medusa",
+    "to": "euryale",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "medusa-sibling-graeae",
+    "type": "sibling",
+    "from": "medusa",
+    "to": "graeae",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "stheno-sibling-euryale",
+    "type": "sibling",
+    "from": "stheno",
+    "to": "euryale",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "stheno-sibling-graeae",
+    "type": "sibling",
+    "from": "stheno",
+    "to": "graeae",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "euryale-sibling-graeae",
+    "type": "sibling",
+    "from": "euryale",
+    "to": "graeae",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Phorcys and Ceto (Theogony 270–276; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "poseidon-lover-medusa",
+    "type": "lover",
+    "from": "poseidon",
+    "to": "medusa",
+    "sources": [
+      "hesiod",
+      "ovid"
+    ],
+    "note": "(Theogony 278–279; Metamorphoses 4.798–803)"
+  },
+  {
+    "id": "pegasus-parent-poseidon",
+    "type": "parent",
+    "from": "pegasus",
+    "to": "poseidon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 280–283; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "pegasus-parent-medusa",
+    "type": "parent",
+    "from": "pegasus",
+    "to": "medusa",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 280–283; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "chrysaor-parent-poseidon",
+    "type": "parent",
+    "from": "chrysaor",
+    "to": "poseidon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 280–283; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "chrysaor-parent-medusa",
+    "type": "parent",
+    "from": "chrysaor",
+    "to": "medusa",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 280–283; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "pegasus-sibling-chrysaor",
+    "type": "sibling",
+    "from": "pegasus",
+    "to": "chrysaor",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Sprung together from slain Medusa (Theogony 280–283; Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "perseus-slayer-medusa",
+    "type": "slayer",
+    "from": "perseus",
+    "to": "medusa",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Beheaded the sleeping Gorgon (Theogony 280; Bibliotheca 2.4.2; Metamorphoses 4.770–803)"
+  },
+  {
+    "id": "perseus-adversary-graeae",
+    "type": "adversary",
+    "from": "perseus",
+    "to": "graeae",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Stole their one eye to force the way to the Gorgons (Bibliotheca 2.4.2)"
+  },
+  {
+    "id": "pegasus-ally-bellerophon",
+    "type": "ally",
+    "from": "pegasus",
+    "to": "bellerophon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Tamed with Athena's bridle; bore him against the Chimera (Theogony 325; Bibliotheca 2.3.2)"
+  },
+  {
+    "id": "thetis-parent-nereus",
+    "type": "parent",
+    "from": "thetis",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "The existing Nereid Thetis gains her father — the sea-roots bridge to the Aeacids (Theogony 240–244; Bibliotheca 1.2.7)"
+  },
+  {
+    "id": "echidna-parent-phorcys",
+    "type": "parent",
+    "from": "echidna",
+    "to": "phorcys",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "echidna-parentage",
+    "note": "The Hesiodic Phorcys/Ceto reading (Theogony 270–305)"
+  },
+  {
+    "id": "echidna-parent-ceto",
+    "type": "parent",
+    "from": "echidna",
+    "to": "ceto",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "echidna-parentage",
+    "note": "The Hesiodic Phorcys/Ceto reading (Theogony 270–305)"
+  },
+  {
+    "id": "echidna-parent-tartarus",
+    "type": "parent",
+    "from": "echidna",
+    "to": "tartarus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "echidna-parentage",
+    "note": "Apollodorus: daughter of Tartarus and Earth (Bibliotheca 2.1.2)"
+  },
+  {
+    "id": "echidna-parent-gaia",
+    "type": "parent",
+    "from": "echidna",
+    "to": "gaia",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "echidna-parentage",
+    "note": "Apollodorus: daughter of Tartarus and Earth (Bibliotheca 2.1.2)"
+  },
+  {
+    "id": "typhon-parent-gaia",
+    "type": "parent",
+    "from": "typhon",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 820–822; Bibliotheca 1.6.3)"
+  },
+  {
+    "id": "typhon-parent-tartarus",
+    "type": "parent",
+    "from": "typhon",
+    "to": "tartarus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 820–822; Bibliotheca 1.6.3)"
+  },
+  {
+    "id": "typhon-consort-echidna",
+    "type": "consort",
+    "from": "typhon",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–308; Bibliotheca 2.1.2)"
+  },
+  {
+    "id": "typhon-adversary-zeus",
+    "type": "adversary",
+    "from": "typhon",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Battled Zeus for the throne of heaven; blasted and buried under Etna (Theogony 836–868; Bibliotheca 1.6.3)"
+  },
+  {
+    "id": "orthrus-parent-typhon",
+    "type": "parent",
+    "from": "orthrus",
+    "to": "typhon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "orthrus-parent-echidna",
+    "type": "parent",
+    "from": "orthrus",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "cerberus-parent-typhon",
+    "type": "parent",
+    "from": "cerberus",
+    "to": "typhon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "cerberus-parent-echidna",
+    "type": "parent",
+    "from": "cerberus",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "hydra-parent-typhon",
+    "type": "parent",
+    "from": "hydra",
+    "to": "typhon",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "hydra-parent-echidna",
+    "type": "parent",
+    "from": "hydra",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 306–318; Bibliotheca 2.5)"
+  },
+  {
+    "id": "orthrus-sibling-cerberus",
+    "type": "sibling",
+    "from": "orthrus",
+    "to": "cerberus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "orthrus-sibling-hydra",
+    "type": "sibling",
+    "from": "orthrus",
+    "to": "hydra",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "orthrus-sibling-chimera",
+    "type": "sibling",
+    "from": "orthrus",
+    "to": "chimera",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "cerberus-sibling-hydra",
+    "type": "sibling",
+    "from": "cerberus",
+    "to": "hydra",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "cerberus-sibling-chimera",
+    "type": "sibling",
+    "from": "cerberus",
+    "to": "chimera",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "hydra-sibling-chimera",
+    "type": "sibling",
+    "from": "hydra",
+    "to": "chimera",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Children of Typhon and Echidna (Theogony 306–325; Bibliotheca 2.5)"
+  },
+  {
+    "id": "chimera-parent-typhon",
+    "type": "parent",
+    "from": "chimera",
+    "to": "typhon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Begotten by Typhon (Bibliotheca 2.3.1)"
+  },
+  {
+    "id": "chimera-parent-echidna",
+    "type": "parent",
+    "from": "chimera",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "topic": "chimera-parentage",
+    "note": "Echidna the mother (the common reading) (Theogony 319; Bibliotheca 2.3.1)"
+  },
+  {
+    "id": "chimera-parent-hydra",
+    "type": "parent",
+    "from": "chimera",
+    "to": "hydra",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "chimera-parentage",
+    "note": "The Hydra as mother, from the ambiguous antecedent at Theogony 319 (Theogony 319)"
+  },
+  {
+    "id": "bellerophon-slayer-chimera",
+    "type": "slayer",
+    "from": "bellerophon",
+    "to": "chimera",
+    "sources": [
+      "homer",
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Slew her from the back of Pegasus (Iliad 6.179–183; Theogony 325; Bibliotheca 2.3.2)"
+  },
+  {
+    "id": "nemean-lion-parent-orthrus",
+    "type": "parent",
+    "from": "nemean-lion",
+    "to": "orthrus",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "nemean-lion-parentage",
+    "note": "Hesiod: borne by Echidna to Orthrus (Theogony 326–329)"
+  },
+  {
+    "id": "nemean-lion-parent-echidna",
+    "type": "parent",
+    "from": "nemean-lion",
+    "to": "echidna",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "nemean-lion-parentage",
+    "note": "Hesiod: borne by Echidna to Orthrus (Theogony 326–329)"
+  },
+  {
+    "id": "nemean-lion-parent-typhon",
+    "type": "parent",
+    "from": "nemean-lion",
+    "to": "typhon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "nemean-lion-parentage",
+    "note": "Apollodorus: offspring of Typhon (or fallen from the Moon) (Bibliotheca 2.5.1)"
+  },
+  {
+    "id": "ladon-parent-phorcys",
+    "type": "parent",
+    "from": "ladon",
+    "to": "phorcys",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "ladon-parentage",
+    "note": "Hesiod: youngest child of Ceto and Phorcys (Theogony 333–336)"
+  },
+  {
+    "id": "ladon-parent-ceto",
+    "type": "parent",
+    "from": "ladon",
+    "to": "ceto",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "ladon-parentage",
+    "note": "Hesiod: youngest child of Ceto and Phorcys (Theogony 333–336)"
+  },
+  {
+    "id": "ladon-parent-typhon",
+    "type": "parent",
+    "from": "ladon",
+    "to": "typhon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "ladon-parentage",
+    "note": "Apollodorus: offspring of Typhon and Echidna (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "ladon-parent-echidna",
+    "type": "parent",
+    "from": "ladon",
+    "to": "echidna",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "ladon-parentage",
+    "note": "Apollodorus: offspring of Typhon and Echidna (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "geryon-parent-chrysaor",
+    "type": "parent",
+    "from": "geryon",
+    "to": "chrysaor",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Mother the Oceanid Callirhoe (boundary) (Theogony 287–288; Bibliotheca 2.5.10)"
+  },
+  {
+    "id": "python-parent-gaia",
+    "type": "parent",
+    "from": "python",
+    "to": "gaia",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 1.4.1; Fabulae 140)"
+  },
+  {
+    "id": "apollo-slayer-python",
+    "type": "slayer",
+    "from": "apollo",
+    "to": "python",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Slew the serpent and took the Delphic oracle (Bibliotheca 1.4.1; Fabulae 140; Description of Greece 10.6.5–7)"
+  },
+  {
+    "id": "sphinx-parent-echidna",
+    "type": "parent",
+    "from": "sphinx",
+    "to": "echidna",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Echidna the mother in both traditions (Theogony 326–327; Bibliotheca 3.5.8)"
+  },
+  {
+    "id": "sphinx-parent-orthrus",
+    "type": "parent",
+    "from": "sphinx",
+    "to": "orthrus",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "sphinx-parentage",
+    "note": "Hesiod: father Orthrus (Theogony 326–327)"
+  },
+  {
+    "id": "sphinx-parent-typhon",
+    "type": "parent",
+    "from": "sphinx",
+    "to": "typhon",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "sphinx-parentage",
+    "note": "Apollodorus/Hyginus: father Typhon (Bibliotheca 3.5.8; Fabulae 151)"
+  },
+  {
+    "id": "scylla-monster-parent-phorcys",
+    "type": "parent",
+    "from": "scylla-monster",
+    "to": "phorcys",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "topic": "scylla-parentage",
+    "note": "Daughter of Phorcys by Crataeis/Hecate (the mother Crataeis is a boundary name) (Epitome 7.20; Argonautica 4.828–831)"
+  },
+  {
+    "id": "scylla-monster-parent-typhon",
+    "type": "parent",
+    "from": "scylla-monster",
+    "to": "typhon",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "scylla-parentage",
+    "note": "Listed among the brood of Typhon and Echidna (Fabulae, Theogony preface 39)"
+  },
+  {
+    "id": "harpies-parent-thaumas",
+    "type": "parent",
+    "from": "harpies",
+    "to": "thaumas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Daughters of Thaumas and the Oceanid Electra (Theogony 265–269; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "harpies-adversary-zetes",
+    "type": "adversary",
+    "from": "harpies",
+    "to": "zetes",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "The Boread Zetes drove them off blind Phineus (Bibliotheca 1.9.21; Argonautica 2.178–300)"
+  },
+  {
+    "id": "harpies-adversary-calais",
+    "type": "adversary",
+    "from": "harpies",
+    "to": "calais",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "The Boread Calais drove them off blind Phineus (Bibliotheca 1.9.21; Argonautica 2.178–300)"
+  },
+  {
+    "id": "sirens-parent-achelous",
+    "type": "parent",
+    "from": "sirens",
+    "to": "achelous",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Daughters of Achelous; the mother (Melpomene/Terpsichore/Sterope) varies — boundary (Bibliotheca 1.3.4, Epitome 7.18; Argonautica 4.892–896)"
+  },
+  {
+    "id": "perseus-slayer-cetus",
+    "type": "slayer",
+    "from": "perseus",
+    "to": "cetus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Slew the sea-monster to free Andromeda (Bibliotheca 2.4.3; Metamorphoses 4.665–739)"
+  },
+  {
+    "id": "electryon-parent-perseus",
+    "type": "parent",
+    "from": "electryon",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-parent-andromeda",
+    "type": "parent",
+    "from": "electryon",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-parent-perseus",
+    "type": "parent",
+    "from": "alcaeus-perseid",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-parent-andromeda",
+    "type": "parent",
+    "from": "alcaeus-perseid",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-parent-perseus",
+    "type": "parent",
+    "from": "sthenelus-perseid",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-parent-andromeda",
+    "type": "parent",
+    "from": "sthenelus-perseid",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mestor-perseid-parent-perseus",
+    "type": "parent",
+    "from": "mestor-perseid",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mestor-perseid-parent-andromeda",
+    "type": "parent",
+    "from": "mestor-perseid",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "perses-perseid-parent-perseus",
+    "type": "parent",
+    "from": "perses-perseid",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "perses-perseid-parent-andromeda",
+    "type": "parent",
+    "from": "perses-perseid",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-alcaeus-perseid",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "alcaeus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-sthenelus-perseid",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "sthenelus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-mestor-perseid",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "mestor-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-perses-perseid",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "perses-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-gorgophone",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-sibling-sthenelus-perseid",
+    "type": "sibling",
+    "from": "alcaeus-perseid",
+    "to": "sthenelus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-sibling-mestor-perseid",
+    "type": "sibling",
+    "from": "alcaeus-perseid",
+    "to": "mestor-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-sibling-perses-perseid",
+    "type": "sibling",
+    "from": "alcaeus-perseid",
+    "to": "perses-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-sibling-gorgophone",
+    "type": "sibling",
+    "from": "alcaeus-perseid",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-sibling-mestor-perseid",
+    "type": "sibling",
+    "from": "sthenelus-perseid",
+    "to": "mestor-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-sibling-perses-perseid",
+    "type": "sibling",
+    "from": "sthenelus-perseid",
+    "to": "perses-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-sibling-gorgophone",
+    "type": "sibling",
+    "from": "sthenelus-perseid",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mestor-perseid-sibling-perses-perseid",
+    "type": "sibling",
+    "from": "mestor-perseid",
+    "to": "perses-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mestor-perseid-sibling-gorgophone",
+    "type": "sibling",
+    "from": "mestor-perseid",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "perses-perseid-sibling-gorgophone",
+    "type": "sibling",
+    "from": "perses-perseid",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcmene-parent-electryon",
+    "type": "parent",
+    "from": "alcmene",
+    "to": "electryon",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "(Bibliotheca 2.4.5; Theogony 526)"
+  },
+  {
+    "id": "licymnius-parent-electryon",
+    "type": "parent",
+    "from": "licymnius",
+    "to": "electryon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "By the Phrygian Midea (boundary) (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "amphitryon-parent-alcaeus-perseid",
+    "type": "parent",
+    "from": "amphitryon",
+    "to": "alcaeus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "eurystheus-parent-sthenelus-perseid",
+    "type": "parent",
+    "from": "eurystheus",
+    "to": "sthenelus-perseid",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "By Nicippe daughter of Pelops (boundary) (Bibliotheca 2.4.5; Iliad 19.116)"
+  },
+  {
+    "id": "heracles-parent-zeus",
+    "type": "parent",
+    "from": "heracles",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "homer"
+    ],
+    "topic": "heracles-father",
+    "note": "(Theogony 526–532; Bibliotheca 2.4.8; Iliad 19.98–99)"
+  },
+  {
+    "id": "heracles-parent-amphitryon",
+    "type": "parent",
+    "from": "heracles",
+    "to": "amphitryon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "heracles-father",
+    "note": "The mortal husband, in whose shape Zeus came; Iphicles is truly his (Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "heracles-parent-alcmene",
+    "type": "parent",
+    "from": "heracles",
+    "to": "alcmene",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 526–532; Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "iphicles-parent-amphitryon",
+    "type": "parent",
+    "from": "iphicles",
+    "to": "amphitryon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "iphicles-parent-alcmene",
+    "type": "parent",
+    "from": "iphicles",
+    "to": "alcmene",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "heracles-sibling-iphicles",
+    "type": "sibling",
+    "from": "heracles",
+    "to": "iphicles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Twins by Alcmene, by different fathers (Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "iolaus-parent-iphicles",
+    "type": "parent",
+    "from": "iolaus",
+    "to": "iphicles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.11)"
+  },
+  {
+    "id": "amphitryon-consort-alcmene",
+    "type": "consort",
+    "from": "amphitryon",
+    "to": "alcmene",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "(Bibliotheca 2.4.6–8; Theogony 526)"
+  },
+  {
+    "id": "zeus-lover-alcmene",
+    "type": "lover",
+    "from": "zeus",
+    "to": "alcmene",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 526–532; Bibliotheca 2.4.8)"
+  },
+  {
+    "id": "iolaus-ally-heracles",
+    "type": "ally",
+    "from": "iolaus",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Charioteer and helper; seared the Hydra's necks (Bibliotheca 2.5.2)"
+  },
+  {
+    "id": "heracles-slayer-nemean-lion",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "nemean-lion",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "1st Labour: strangled the invulnerable lion, its pelt his cloak (Bibliotheca 2.5.1; Theogony 327–332)"
+  },
+  {
+    "id": "heracles-slayer-hydra",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "hydra",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "2nd Labour: burned the regrowing heads with Iolaus (Bibliotheca 2.5.2; Theogony 313–318)"
+  },
+  {
+    "id": "heracles-slayer-stymphalian-birds",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "stymphalian-birds",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "6th Labour: routed and shot them with Athena's bronze rattle (Bibliotheca 2.5.6)"
+  },
+  {
+    "id": "heracles-slayer-diomedes-thrace",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "diomedes-thrace",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "8th Labour: fed the Thracian to his own man-eating mares (Bibliotheca 2.5.8)"
+  },
+  {
+    "id": "heracles-slayer-hippolyta",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "hippolyta",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "9th Labour: slew the Amazon queen and took the belt of Ares (Bibliotheca 2.5.9)"
+  },
+  {
+    "id": "heracles-slayer-geryon",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "geryon",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "10th Labour: shot the three-bodied giant for his cattle (Bibliotheca 2.5.10; Theogony 289–294)"
+  },
+  {
+    "id": "heracles-slayer-orthrus",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "orthrus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "10th Labour: clubbed Geryon's two-headed hound (Bibliotheca 2.5.10)"
+  },
+  {
+    "id": "heracles-slayer-ladon",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "ladon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "11th Labour: the apple-guarding dragon overcome (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "heracles-slayer-augeas",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "augeas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "After the stables, warred on Elis and killed the king who denied his wage (Bibliotheca 2.7.2)"
+  },
+  {
+    "id": "heracles-adversary-ceryneian-hind",
+    "type": "adversary",
+    "from": "heracles",
+    "to": "ceryneian-hind",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "3rd Labour: caught Artemis' golden-horned hind alive after a year's chase (Bibliotheca 2.5.3)"
+  },
+  {
+    "id": "heracles-adversary-erymanthian-boar",
+    "type": "adversary",
+    "from": "heracles",
+    "to": "erymanthian-boar",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "4th Labour: carried the boar alive to the jar-hiding Eurystheus (Bibliotheca 2.5.4)"
+  },
+  {
+    "id": "heracles-adversary-cretan-bull",
+    "type": "adversary",
+    "from": "heracles",
+    "to": "cretan-bull",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "7th Labour: subdued and brought the bull alive from Crete (Bibliotheca 2.5.7)"
+  },
+  {
+    "id": "heracles-adversary-cerberus",
+    "type": "adversary",
+    "from": "heracles",
+    "to": "cerberus",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "12th Labour: dragged the hound of Hades up to the light and back (Bibliotheca 2.5.12; Iliad 8.366–369)"
+  },
+  {
+    "id": "heracles-adversary-eurystheus",
+    "type": "adversary",
+    "from": "heracles",
+    "to": "eurystheus",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "The Mycenaean king who imposed the Twelve Labours and later hunted the Heraclids (Bibliotheca 2.5; Iliad 19.95–133)"
+  },
+  {
+    "id": "augeas-parent-helios",
+    "type": "parent",
+    "from": "augeas",
+    "to": "helios",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "apollonius",
+      "hyginus"
+    ],
+    "topic": "augeas-father",
+    "note": "Son of the Sun (the popular version) (Bibliotheca 2.5.5; Description of Greece 5.1.9; Argonautica 1.172; Fabulae 14.3)"
+  },
+  {
+    "id": "augeas-parent-poseidon",
+    "type": "parent",
+    "from": "augeas",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "augeas-father",
+    "note": "Or of Poseidon (the variant) (Bibliotheca 2.5.5)"
+  },
+  {
+    "id": "diomedes-thrace-parent-ares",
+    "type": "parent",
+    "from": "diomedes-thrace",
+    "to": "ares",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The Thracian son of Ares (Bibliotheca 2.5.8)"
+  },
+  {
+    "id": "hippolyta-parent-ares",
+    "type": "parent",
+    "from": "hippolyta",
+    "to": "ares",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The Amazon queen, daughter of Ares (Bibliotheca 2.5.9)"
+  },
+  {
+    "id": "megara-consort-heracles",
+    "type": "consort",
+    "from": "megara",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "First wife, daughter of Creon; her children slain in his madness (Bibliotheca 2.4.11–12)"
+  },
+  {
+    "id": "megara-parent-creon",
+    "type": "parent",
+    "from": "megara",
+    "to": "creon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.4.11)"
+  },
+  {
+    "id": "omphale-lover-heracles",
+    "type": "lover",
+    "from": "omphale",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The Lydian queen he served in bondage (Bibliotheca 2.6.3)"
+  },
+  {
+    "id": "heracles-lover-iole",
+    "type": "lover",
+    "from": "heracles",
+    "to": "iole",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Won at Oechalia; the cause, through Deianira's fear, of his death (Bibliotheca 2.7.7)"
+  },
+  {
+    "id": "iole-parent-eurytus-oechalia",
+    "type": "parent",
+    "from": "iole",
+    "to": "eurytus-oechalia",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 2.6.1; Odyssey 8.224)"
+  },
+  {
+    "id": "deianira-consort-heracles",
+    "type": "consort",
+    "from": "deianira",
+    "to": "heracles",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "His later wife; unwitting bearer of the poisoned shirt (Bibliotheca 2.7.5–7; Metamorphoses 9.1–158)"
+  },
+  {
+    "id": "auge-lover-heracles",
+    "type": "lover",
+    "from": "auge",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Mother of Telephus by Heracles (Bibliotheca 2.7.4; 3.9.1)"
+  },
+  {
+    "id": "telephus-parent-heracles",
+    "type": "parent",
+    "from": "telephus",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The Arcadia hook closed: Heracles is Telephus' father (Bibliotheca 2.7.4; 3.9.1)"
+  },
+  {
+    "id": "heracles-slayer-eurytus-oechalia",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "eurytus-oechalia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sacked Oechalia and slew the archer-king who withheld Iole (Bibliotheca 2.7.7)"
+  },
+  {
+    "id": "heracles-slayer-nessus",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "nessus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Shot the centaur with a Hydra-poisoned arrow (Bibliotheca 2.7.6; Metamorphoses 9.101–133)"
+  },
+  {
+    "id": "nessus-slayer-heracles",
+    "type": "slayer",
+    "from": "nessus",
+    "to": "heracles",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "The centaur's posthumous revenge: his poisoned blood on the shirt killed Heracles (Bibliotheca 2.7.7; Metamorphoses 9.158–272)"
+  },
+  {
+    "id": "heracles-ally-pholus",
+    "type": "ally",
+    "from": "heracles",
+    "to": "pholus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The hospitable centaur who hosted him on the boar-quest (Bibliotheca 2.5.4)"
+  },
+  {
+    "id": "heracles-ally-philoctetes",
+    "type": "ally",
+    "from": "heracles",
+    "to": "philoctetes",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Lit the pyre on Oeta and received Heracles' bow (Bibliotheca 2.7.7)"
+  },
+  {
+    "id": "hebe-parent-zeus",
+    "type": "parent",
+    "from": "hebe",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 921–922; Bibliotheca 1.3.1)"
+  },
+  {
+    "id": "hebe-parent-hera",
+    "type": "parent",
+    "from": "hebe",
+    "to": "hera",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "(Theogony 921–922; Bibliotheca 1.3.1)"
+  },
+  {
+    "id": "hebe-consort-heracles",
+    "type": "consort",
+    "from": "hebe",
+    "to": "heracles",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "homer"
+    ],
+    "note": "His immortal bride after the apotheosis (Theogony 950–955; Bibliotheca 2.7.7; Odyssey 11.602–604)"
+  },
+  {
+    "id": "hyllus-parent-heracles",
+    "type": "parent",
+    "from": "hyllus",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.7.8)"
+  },
+  {
+    "id": "hyllus-parent-deianira",
+    "type": "parent",
+    "from": "hyllus",
+    "to": "deianira",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 2.7.8)"
+  },
+  {
+    "id": "macaria-parent-heracles",
+    "type": "parent",
+    "from": "macaria",
+    "to": "heracles",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 1.32.6)"
+  },
+  {
+    "id": "macaria-parent-deianira",
+    "type": "parent",
+    "from": "macaria",
+    "to": "deianira",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 1.32.6)"
+  },
+  {
+    "id": "hyllus-sibling-macaria",
+    "type": "sibling",
+    "from": "hyllus",
+    "to": "macaria",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Children of Heracles and Deianira (Bibliotheca 2.7.8; Description of Greece 1.32.6)"
+  },
+  {
+    "id": "echemus-slayer-hyllus",
+    "type": "slayer",
+    "from": "echemus",
+    "to": "hyllus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Tegean killed Hyllus in single combat, staying the Heraclid Return a generation (Bibliotheca 2.8.2; Description of Greece 8.5.1)"
+  },
+  {
+    "id": "hyllus-slayer-eurystheus",
+    "type": "slayer",
+    "from": "hyllus",
+    "to": "eurystheus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "eurystheus-slayer",
+    "note": "Hyllus cut off his head (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "iolaus-slayer-eurystheus",
+    "type": "slayer",
+    "from": "iolaus",
+    "to": "eurystheus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "eurystheus-slayer",
+    "note": "The rejuvenated Iolaus took him (Bibliotheca 2.8.1; Description of Greece 1.44.10)"
   }
 ]

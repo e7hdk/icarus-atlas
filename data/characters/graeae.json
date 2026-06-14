@@ -1,0 +1,68 @@
+{
+  "id": "graeae",
+  "name": "The Graeae",
+  "greekName": "Graiai (Γραῖαι)",
+  "romanName": "Graeae",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "grey from birth",
+    "the shared eye and tooth",
+    "sisters of the Gorgons"
+  ],
+  "summary": [
+    {
+      "text": "Grey-haired daughters of Phorcys and Ceto and sisters of the Gorgons, old women from their birth, set at the dark frontier of the world among the brood of the sea.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 270–273; Bibliotheca 2.4.2"
+    },
+    {
+      "text": "In the later telling the sisters share a single eye and a single tooth between them, which Perseus snatches to force from them the road toward the Gorgons.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.2; Astronomica 2.12.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets them among the children of the sea. \"Ceto bore to Phorcys the fair-cheeked Graiae, sisters grey from their birth\" — and he names only two of them, \"Pemphredo well-clad, and saffron-robed Enyo,\" placing them in the same Phorcys–Ceto line that runs on to the Gorgons Sthenno, Euryale and Medusa, their sisters. In his account they carry neither the shared eye nor the single tooth.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 270–276"
+    },
+    {
+      "text": "Apollodorus fixes their place in the cosmic genealogy: to Pontus (Sea) and Gaia (Earth) were born Phorcus, Thaumas, Nereus, Eurybia and Ceto, and to Phorcus and Ceto were born the Phorcides and the Gorgons. The grey sisters and the snake-haired sisters are thus full siblings of one sea-born stock.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.2.6"
+    },
+    {
+      "text": "It is Apollodorus who gives the famous device. Sent for the Gorgon's head and guided by Hermes and Athena, Perseus first comes to the daughters of Phorcus — here three: Enyo, Pephredo and Dino — sisters of the Gorgons and old women from their birth. \"The three had but one eye and one tooth, and these they passed to each other in turn.\" Perseus seizes the eye and the tooth as they hand them across, and when the sisters beg them back he answers that he will return them only if they show him the way to the nymphs who keep the winged sandals, the kibisis and the cap of Hades. They yield the road, and he gives the eye and the tooth back.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.2"
+    },
+    {
+      "text": "Hyginus, in his genealogical preface, preserves the dispute over the third name: \"From Phorcus and Ceto: the Phorcides Pemphredo, Enyo and Persis (for this last others say Dino),\" registering the variant rather than choosing between them.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae, Preface (p.9)"
+    },
+    {
+      "text": "Hyginus separately reports — by way of Aeschylus's lost Phorcides — that the Graeae were guardians of the Gorgons, that they had but one eye among them and kept their watch by passing it in turn, and that this eye Perseus snatched.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Astronomica 2.12.1"
+    }
+  ]
+}

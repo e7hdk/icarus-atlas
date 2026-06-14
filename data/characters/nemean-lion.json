@@ -1,0 +1,69 @@
+{
+  "id": "nemean-lion",
+  "name": "The Nemean Lion",
+  "greekName": "Leōn Nemeios (Λέων Νέμειος)",
+  "romanName": "Leo Nemeaeus",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "invulnerable hide",
+    "the hills of Nemea",
+    "Heracles' first labour"
+  ],
+  "summary": [
+    {
+      "text": "The Nemean Lion haunted the hills of Nemea as a plague to men, preying upon the tribes there until the strength of Heracles overcame him.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 326–332"
+    },
+    {
+      "text": "He was an invulnerable beast whom no weapon could wound; Heracles slew him as his first labour and the pelt became his cloak.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.1; Fabulae 30"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod the lion belongs to the monstrous brood of Echidna, who was 'subject in love to Orthus' and bore both the deadly Sphinx and the Nemean Lion — making Orthrus the father, Echidna the mother, and the Sphinx his full sister.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 326–329"
+    },
+    {
+      "text": "Hesiod gives the beast a rearer and a haunt: the lion 'which Hera, the good wife of Zeus, brought up and made to haunt the hills of Nemea, a plague to men. There he preyed upon the tribes of her own people and had power over Tretus of Nemea and Apesas: yet the strength of stout Heracles overcame him.'",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 326–332"
+    },
+    {
+      "text": "Apollodorus names no Orthrus and no Echidna, calling the lion simply 'an invulnerable beast begotten by Typhon'; a wider scholiastic tradition instead makes the Chimera his mother. Set beside Hesiod's Orthrus-and-Echidna line, the origins stand unreconciled, none to be set down as undisputed.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.1"
+    },
+    {
+      "text": "Against the Typhonic descent runs a lunar origin: Hyginus reports the lion as 'an invulnerable monster, which Luna had nourished in a two-mouthed cave' — a nursling of the Moon-goddess rather than a child of the serpent-line.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 30"
+    },
+    {
+      "text": "The slaying was Heracles' first labour for Eurystheus. Apollodorus tells how he came to Cleonae and lodged with the day-labourer Molorchus; finding his arrows powerless against the hide, he drove the lion into its lair, choked it to death with his hands, and stripped off the skin. Hyginus adds that he 'took the pelt for defensive covering,' the invulnerable hide becoming his cloak; and Pausanias, recalling the lion among the formidable beasts of old, wonders whether such creatures 'were sent up by the earth' or 'were sacred to the gods.'",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.5.1; Fabulae 30; Description of Greece 1.27.9"
+    }
+  ]
+}

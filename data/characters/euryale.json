@@ -1,0 +1,47 @@
+{
+  "id": "euryale",
+  "name": "Euryale",
+  "greekName": "Euryalē (Εὐρυάλη)",
+  "romanName": "Euryale",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "the immortal gorgons",
+    "the petrifying stare",
+    "children of the deep"
+  ],
+  "summary": [
+    {
+      "text": "One of the three Gorgons born to the sea-elder Phorcys and his sister-wife Ceto. With Stheno she is undying and ageless, set apart from their sister Medusa, who alone was mortal and doomed.",
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Theogony 274–279; Bibliotheca 1.2.6, 2.4.2; Fabulae pref. 9"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's genealogy of the sea, Ceto bore to Phorcys the fair-cheeked Graiae and, in the same line, the Gorgons, three sisters named Stheno, Euryale, and Medusa. Of the three, Hesiod marks the difference that defines them: Euryale and Stheno are deathless and grow not old, while Medusa alone is mortal and suffers a woeful fate. The Gorgons dwell beyond glorious Ocean at the world's edge, toward Night and the clear-voiced Hesperides.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 270–279"
+    },
+    {
+      "text": "Apollodorus repeats the line of the deep, deriving the Gorgons from Phorcys and Ceto, themselves children of Pontus and Gaia, the Sea and the Earth, and groups Euryale with the Graeae as offspring of the same parents. He too names the sisters Stheno, Euryale, and Medusa, and gives the reason Perseus could complete his quest at all: Medusa alone among the three was mortal, and so it was her head, and not her immortal sisters', that the hero was sent to fetch.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.2.6, 2.4.2"
+    },
+    {
+      "text": "Hyginus likewise counts Euryale among the three Gorgon sisters, Stheno, Euryale, and Medusa, in the genealogical roster of his preface, though there the father's name has been corrupted from Phorcys. Whatever the source, Euryale remains a fixed figure of the catalogue rather than of narrative deed: she is named, immortal, and beheld, but never beheaded.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae pref. 9"
+    }
+  ]
+}

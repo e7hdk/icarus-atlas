@@ -1,0 +1,87 @@
+{
+  "id": "nessus",
+  "name": "Nessus",
+  "greekName": "Nessos (Νέσσος)",
+  "romanName": "Nessus",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "centaur ferryman",
+    "river evenus",
+    "false love-charm",
+    "poisoned blood"
+  ],
+  "summary": [
+    {
+      "text": "The centaur of the river Evenus who undertook to carry Deianira across, attempted to violate her in the crossing, and was shot down by Heracles.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.7.6; Metamorphoses 9.101–133; Fabulae 34"
+    },
+    {
+      "text": "Dying, he gave Deianira his blood as a love-charm; long after, she smeared it on a tunic, and the Hydra-venom steeped in it consumed Heracles — so the slain ferryman had his revenge.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.7.6–7; Metamorphoses 9.131–272; Fabulae 34, 36"
+    }
+  ],
+  "story": [
+    {
+      "text": "He kept the crossing of the Evenus. Apollodorus tells how Heracles, going into exile to Trachis, took Deianira with him and came to the river, where the centaur Nessus sat and ferried passengers across for hire, alleging that he had received the ferry from the gods for his righteousness.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.7.6"
+    },
+    {
+      "text": "Hyginus alone gives his stock — Nessus, son of Ixion and Nubes, the cloud-shape that mothered the centaur kind — while the other tellers leave him no parentage.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 34"
+    },
+    {
+      "text": "He betrayed the trust at the river. In Apollodorus, Heracles crossed the stream by himself and entrusted Deianira to the centaur to carry over; but Nessus attempted to violate her, and at her cry the hero shot him to the heart. Ovid stages the scene at an Evenus swollen with winter rains: Heracles swims while the centaur, strong of limb and knowing the fords, bears the bride across, and at her cry the hero looses an arrow steeped in the Lernaean Hydra's venom through Nessus' back. Hyginus says he pierced him with arrows when Deianira implored aid; and on the throne of Amyclae Pausanias saw Heracles wrought avenging himself upon Nessus at the river Evenus.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.7.6; Metamorphoses 9.101–133; Fabulae 34; Description of Greece 3.18.12"
+    },
+    {
+      "text": "His dying word was a snare. Apollodorus has the centaur, at the point of death, call Deianira to him and tell her that if she wanted a love-charm to work on Heracles she should mix the seed he had dropped on the ground with the blood that ran from his wound; she did so and kept it. Ovid gives the counsel a darker voice: catching his warm blood, Nessus mutters 'I shall not die unavenged,' and hands her the soaked tunic as a gift to rekindle waning love. Hyginus makes the malice plainer still — knowing the arrows were dipped in the gall of the Hydra, he drew off his own blood and bade her smear it on her husband's garments.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.7.6; Metamorphoses 9.123–133; Fabulae 34"
+    },
+    {
+      "text": "The revenge came years later through the same poison. When Heracles led Iole captive from the sack of Oechalia, Deianira, fearing he loved the girl more, believed the centaur's blood a true charm and smeared it on a tunic she sent him by the herald Lichas. No sooner was the cloth warmed than the Hydra-venom began to corrode his flesh; carried to Trachis, on Mount Oeta he raised a pyre. Apollodorus says Poeas lit it and was given the bow; Hyginus says it was Philoctetes, son of Poeas ⚖. Ovid likewise tells the burning on Oeta and the hero's end.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.7.7; Metamorphoses 9.134–272; Fabulae 36"
+    },
+    {
+      "text": "From the fire Heracles was wafted to heaven and obtained immortality, as Apollodorus and Ovid relate — though Homer's Odyssey leaves his shade groaning in Hades while only his image feasts among the gods ⚖. So the slain ferryman of the Evenus, long dead, undid the greatest of mortals.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.7.7; Metamorphoses 9.241–272; Odyssey 11.601–604"
+    }
+  ]
+}

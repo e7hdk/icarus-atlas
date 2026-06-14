@@ -1,0 +1,75 @@
+{
+  "id": "philoctetes",
+  "name": "Philoctetes",
+  "greekName": "Philoktētēs (Φιλοκτήτης)",
+  "romanName": "Philoctetes",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the bow of Heracles",
+    "the pyre on Oeta",
+    "archery",
+    "the wound and exile"
+  ],
+  "summary": [
+    {
+      "text": "Philoctetes, son of Poeas, was the archer to whom passed the bow and arrows of Heracles, the reward for kindling the hero's pyre on Mount Oeta.",
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Ovid, Metamorphoses 9.229–238; Hyginus, Fabulae 36, 102"
+    },
+    {
+      "text": "Bitten by a water-snake on the way to Troy, he was left suffering on Lemnos, and was fetched at last because an oracle declared the city could not fall without the arrows of Heracles.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus, Epitome 3.27, 5.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles, poisoned by the shirt of Nessus, had a pyre heaped for him on lofty Oeta and bade it kindled, no one would set a torch to it. Here the tellings divide. In Apollodorus it is Poeas, Philoctetes' father, who chances by in search of his flocks and lights the fire, and on him Heracles bestows his bow; a cloud then wafts the hero up to heaven and he wins immortality.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Library 2.7.7"
+    },
+    {
+      "text": "Ovid gives the favour and the gift to the son instead: Heracles felled the trees of Oeta and bade obedient Philoctetes light a torch beneath the pyre, and take in recompense the bow with its capacious quiver — arms destined to see the realm of Troy again.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 9.229–238"
+    },
+    {
+      "text": "Hyginus, who twice names Philoctetes himself as the pyre-builder rewarded with the marvellous arrows, adds that the act earned him an enemy: Juno, angry that he alone had dared to raise the fire when Heracles' mortal body was consumed and he was lifted to the gods, later sent against him on Lemnos a snake that struck his foot. Philoctetes he calls the son of Poeas and Demonassa.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 36, 102"
+    },
+    {
+      "text": "In Apollodorus' account the wound came from a sacrifice: as the army bound for Troy was offering to Apollo, a water-snake came out from the altar and bit Philoctetes, and because the sore would not heal and grew so noisome that the host could not endure the stench, Odysseus, on Agamemnon's orders, put him ashore on Lemnos with the bow of Heracles, and there he kept himself alive by shooting birds.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 3.27"
+    },
+    {
+      "text": "Homer names him in the Catalogue of Ships — leader, well-skilled in archery, of seven ships of fifty bowmen each — but lying in grievous pain on sacred Lemnos, where the Achaeans had left him after the evil wound of a deadly water-snake; Odysseus later allows that none among the Achaeans surpassed him with the bow on Trojan soil.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.716–728; Odyssey 8.219–220"
+    },
+    {
+      "text": "At the last the oracle named him indispensable: told that Troy could not be taken without the bow and arrows of Heracles, Odysseus went with Diomedes to Philoctetes on Lemnos, got the weapons by craft, and persuaded him to sail; cured at Troy by Podalirius, he drew the great bow and shot Alexander — Paris.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 5.8; Library 3.12.6"
+    }
+  ]
+}

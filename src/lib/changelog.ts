@@ -14,6 +14,18 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.1.4',
+    codename: 'The Monsters and Their Hunter',
+    date: '2026-06-14',
+    lines: [
+      'A dark new quarter opened beneath the disc: from the Sea came Phorcys and Ceto, the stone-gazing Gorgons, and from slain Medusa the winged horse Pegasus and the golden-sword Chrysaor.',
+      'Echidna the mother of monsters and storm-born Typhon, who once fought Zeus for heaven, bred the beasts the heroes must unmake — Cerberus and the Hydra, the Chimera and the Nemean Lion — while in the strait lurked Scylla and Charybdis, and on the wind the snatching Harpies and the singing Sirens.',
+      'Then came their hunter. Heracles, born of Zeus and Alcmene in a threefold night, strangled Hera’s serpents in his cradle; of Perseid blood through both his parents, he was at once a prince of Mycenae and a son of the god.',
+      'Set to twelve labours by Eurystheus, he became the bane of the chthonic brood — the lion, the hydra, the apple-dragon Ladon, the hound of Hades — so the monsters that had hung waiting in the dark at last found their slayer.',
+      'And when the poisoned shirt of Nessus burned him upon Oeta, the centaur’s dying revenge, he was taken up to Olympus and wedded to Hebe — the one mortal made a god.',
+    ],
+  },
+  {
     version: '0.1.3',
     codename: 'The Beasts Take the Sky',
     date: '2026-06-14',

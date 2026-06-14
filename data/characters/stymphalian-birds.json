@@ -1,0 +1,68 @@
+{
+  "id": "stymphalian-birds",
+  "name": "The Stymphalian Birds",
+  "greekName": "Ornithes Stymphalides (Ὄρνιθες Στυμφαλίδες)",
+  "romanName": "Aves Stymphalides",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Stymphalian marsh",
+    "man-eating birds",
+    "Heracles' sixth Labour"
+  ],
+  "summary": [
+    {
+      "text": "The flock of man-eating birds that bred upon the wooded marsh-lake of Stymphalus in Arcadia, the clearing of which was the sixth Labour Eurystheus laid on Heracles.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.6; Description of Greece 8.22.4; Fabulae 30"
+    },
+    {
+      "text": "In Apollodorus' telling Heracles, at a loss how to flush the birds from the deep wood, startled them aloft with a bronze rattle Athena had given him and shot them down as they rose.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets the sixth Labour Eurystheus laid on Heracles as the chasing-off of the Stymphalian birds. At the city of Stymphalus in Arcadia lay a lake embosomed in a deep wood, to which countless birds had flocked for refuge, fearing to be preyed upon by the wolves. Heracles was at a loss how to drive them from the cover, until Athena gave him brazen castanets, the krotala, which she had received from Hephaestus; clashing these from a mountain that overhung the lake, he so terrified the birds — which could not abide the sound — that they fluttered up in fright, and as they rose he shot them down.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.6"
+    },
+    {
+      "text": "Pausanias, who knew the Arcadian water, repeats that man-eating birds once bred upon it and that Heracles is said to have shot them, but he is careful to record a dissenting voice: Peisander of Camira held that Heracles did not kill the birds at all, but only drove them away with the noise of rattles. The same Pausanias notes that the Arabian desert breeds wild birds also called Stymphalian, as savage against men as lions or leopards — leaving open whether the Arcadian flock and the Arabian breed were ever one.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.22.4"
+    },
+    {
+      "text": "Pausanias preserves the fullest lore of what the birds were. They attack men with their beaks, and all armour of bronze or iron that men wear is pierced through; but if men weave a garment of thick cork, the beaks catch fast in it, just as the wings of small birds stick in bird-lime. In size they are as large as a crane and resemble the ibis, save that their beaks are more powerful and not crooked. At Stymphalus he saw the proof of the cult: in the sanctuary of Stymphalian Artemis, whose image is of gilded wood, the birds are carved near the roof of the temple, and there stand maidens of white marble with the legs of birds.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.22.5; 8.22.7"
+    },
+    {
+      "text": "In the Latin reckoning of the Labours, Hyginus shifts the scene out to sea: Heracles killed with his arrows, on the island of Mars, the Stymphalian birds, which shoot their feathers out as arrows.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 30"
+    },
+    {
+      "text": "A remoter shore is named by Apollonius, who tells how the Argonauts, rowing toward the desert island of Ares, were assailed from the air by the birds of Ares that haunted the isle — birds that loosed keen feathers like arrows, one of which struck Oileus in the shoulder so that he dropped his oar. By the counsel of Amphidamas son of Aleus they raised a din of shields, spears and nodding helmet-crests, and the birds, unable to bear the clamour, were driven off, just as the marsh had once been cleared. Apollonius calls them the birds of Ares, not the Stymphalides; it is the wider tradition that joins the two flocks into one.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 2.1030–1089"
+    }
+  ]
+}

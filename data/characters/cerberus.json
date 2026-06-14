@@ -1,0 +1,75 @@
+{
+  "id": "cerberus",
+  "name": "Cerberus",
+  "greekName": "Kerberos (Κέρβερος)",
+  "romanName": "Cerberus",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "hound of Hades",
+    "gate of the dead",
+    "the boundary of death"
+  ],
+  "summary": [
+    {
+      "text": "Cerberus is the brazen-voiced hound of Hades who eats raw flesh, born of Echidna among the monstrous chthonic brood and set to guard the gate of the dead.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 310–312"
+    },
+    {
+      "text": "He is the hound Heracles was sent down to fetch from the underworld; Homer names him only the hound of loathed Hades, and Pausanias records that later poets supplied the name Cerberus and the three-headed form.",
+      "sources": [
+        "homer",
+        "pausanias"
+      ],
+      "citation": "Iliad 8.367–368; Pausanias 3.25.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of the chthonic monsters, Echidna bears her hound-children in order: first Orthus, the hound of Geryon, and then a second — a monster not to be overcome and not to be described, Cerberus who eats raw flesh, the brazen-voiced hound of Hades, fifty-headed (pentēkontakephalos), relentless and strong. After him she brings forth the evil-minded Hydra of Lerna, so that Orthus and the Hydra stand as Cerberus's full siblings in the earliest naming we possess.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 309–315"
+    },
+    {
+      "text": "The later canon gives the brood a father and recomposes the beast. Apollodorus and Hyginus make Cerberus, with the rest of the monstrous offspring, the child of Typhon the giant and Echidna; Apollodorus describes him with three dogs' heads, the tail of a dragon, and on his back the heads of every kind of snake, while Hyginus names him simply the three-headed dog.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollodorus 2.5.10–12; Hyginus Fabulae 151"
+    },
+    {
+      "text": "In Hesiod the father of Echidna's hound-children is not named where they are begotten, though Typhaon is given as her mate just before the catalogue.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 306–312"
+    },
+    {
+      "text": "Pausanias registers the head-count itself as a later poetic invention. Homer, he notes, was the first to call the creature Heracles brought up the hound of Hades, yet gave it no name and no manifold form as he had the Chimaera; it was later poets who supplied the name Cerberus and, while otherwise making him dog-like, said he had three heads. Homer, Pausanias adds, need not even have meant a dog at all, no more than if he had called a serpent the hound of Hades. The three-headed Cerberus is thus a tradition built atop Homer's bare, unnamed beast.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Pausanias 3.25.6"
+    },
+    {
+      "text": "The signature episode is the descent. Apollodorus sets it as the twelfth labour: Heracles is to bring Cerberus up from Hades, the mightiest task Eurystheus could devise, accomplished only after initiation at Eleusis and a guided journey below.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus 2.5.12"
+    },
+    {
+      "text": "Ovid gives the moment its picture: Heracles drags the watchdog with chains of adamant from the dreary edge of Tartarus, and the monster, vain in opposing, turns his eyes aslant from the light he cannot bear, shaking the air with triple howls and, frothing, sprinkling the green fields with the white foam of his poison.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ovid Metamorphoses 7.412–413"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "erymanthian-boar",
+  "name": "The Erymanthian Boar",
+  "greekName": "Kapros Erymanthios (Κάπρος Ἐρυμάνθιος)",
+  "romanName": "Aper Erymanthius",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the wild boar",
+    "Arcadian terror",
+    "the fourth labour"
+  ],
+  "summary": [
+    {
+      "text": "The great boar of Mount Erymanthus in Arcadia, fetched by Heracles as his fourth labour at the command of Eurystheus; in the dominant tradition it was taken alive, while Hyginus has it slain.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.4; Description of Greece 8.24.5; Fabulae 30"
+    }
+  ],
+  "story": [
+    {
+      "text": "For his fourth labour Eurystheus ordered Heracles to bring the Erymanthian boar alive. The beast ravaged Psophis, sallying from the mountain men call Erymanthus, until Heracles came after it. He chased the boar with shouts from a thicket and drove the exhausted animal into deep snow, where he trapped it, and so brought it living to Mycenae.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    },
+    {
+      "text": "Eurystheus, who had marvelled and taken fright at Heracles' might from the first labour, is said to have had a bronze jar made for himself to hide in under the earth, sending his commands for the labours through the herald Copreus rather than facing the hero who fetched such beasts.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.1"
+    },
+    {
+      "text": "Pausanias too knows the legend that Heracles, at the command of Eurystheus, hunted beside the river Erymanthus a boar surpassing all others in size and strength. He records, but rejects as wholly improbable, the claim of the Cumaeans among the Opici that the boar's tusks dedicated in their sanctuary of Apollo are those of the Erymanthian beast.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.24.5"
+    },
+    {
+      "text": "The boar's end is itself disputed. Hyginus, enumerating the canonical deeds, writes flatly that Heracles killed the Erymanthian Boar, against the dominant account in which Eurystheus demanded the creature alive and Heracles delivered it living and bound, as he had the Ceryneian hind.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 30"
+    }
+  ]
+}

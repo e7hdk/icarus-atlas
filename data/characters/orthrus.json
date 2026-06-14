@@ -1,0 +1,52 @@
+{
+  "id": "orthrus",
+  "name": "Orthrus",
+  "greekName": "Orthros (Ὄρθρος)",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "watchdog of Geryon",
+    "two-headed hound",
+    "guardian of the cattle"
+  ],
+  "summary": [
+    {
+      "text": "The two-headed hound born of Typhon and Echidna, set to guard the red cattle of Geryon at the edge of Ocean until Heracles, fetching the herd, killed him.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 309–310; Bibliotheca 2.5.10"
+    },
+    {
+      "text": "By his own mother Echidna he sired the Sphinx that destroyed the Cadmeans and the Nemean Lion that Hera reared to haunt the hills of Nemea.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 326–332"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod places him first among the brood that Echidna conceived to lawless Typhaon: before all the rest she bore Orthus, the hound of Geryones. Next she brought forth Cerberus, who eats raw flesh, the brazen-voiced hound of Hades, fifty-headed and relentless — so that the two watchdogs, one for the cattle of the far west and one for the gates of death, stand as brothers at the head of the line.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 309–312"
+    },
+    {
+      "text": "Apollodorus fixes his shape and his charge: Geryon, the triple-bodied man of Erytheia, owned red kine, of which Eurytion was the herdsman and Orthus, the two-headed hound begotten by Typhon on Echidna, was the watchdog — the guard set over the cattle that Heracles was sent to fetch in his tenth labour.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.10"
+    },
+    {
+      "text": "His death comes at the boundary of the world. When Heracles drove the wide-browed oxen to holy Tiryns and had crossed the ford of Ocean, he killed Orthus and Eurytion the herdsman in the dim stead out beyond glorious Ocean — the cattle-raid that ends the hound in the same passage that first names him.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 287–294"
+    }
+  ]
+}

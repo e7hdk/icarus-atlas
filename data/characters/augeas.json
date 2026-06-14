@@ -1,0 +1,76 @@
+{
+  "id": "augeas",
+  "name": "Augeas",
+  "greekName": "Augeias (Αὐγείας)",
+  "romanName": "Augeas",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of elis",
+    "cattle and wealth",
+    "the fifth labour",
+    "the broken bargain"
+  ],
+  "summary": [
+    {
+      "text": "King of Elis, owner of herds so vast that the dung of his cattle was set to Heracles as the fifth labour: to clear them out in a single day. Heracles did it by turning rivers through the stalls, then was cheated of the reward he had been promised.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollodorus, Bibliotheca 2.5.5; Pausanias 5.1.9–5.1.10"
+    },
+    {
+      "text": "In the popular telling he is a son of Helios the Sun; so Apollonius names him among the Argonauts, reigning over the Eleans and glorying in his wealth.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.172"
+    }
+  ],
+  "story": [
+    {
+      "text": "Augeas was king of Elis and master of more cattle than any man, and the fifth labour laid on Heracles was to carry out their dung in a single day. Heracles accosted him and, without revealing the command of Eurystheus, bargained for a tenth of the herds; then he cleansed the byres by turning the rivers Alpheus and Peneus through them. But when Augeas learned the work had been done at Eurystheus' bidding, he refused to pay.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.5"
+    },
+    {
+      "text": "Pausanias tells the cleansing differently and more soberly: Augeas had so many cattle and goats that most of his land lay untilled under the dung, and he persuaded Heracles to clear it in return for a part of Elis or some other reward. Heracles accomplished even this feat, turning aside the stream of the Menius into the filth; but because he had done it by cunning and without toil, Augeas refused the reward and banished his elder son Phyleus for protesting that his father wronged a benefactor.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 5.1.9–5.1.10"
+    },
+    {
+      "text": "His parentage was never settled. Apollodorus reports that some called him a son of the Sun, others a son of Poseidon, and others a son of Phorbas.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.5"
+    },
+    {
+      "text": "Pausanias treats the divine claim as a glorifying play on a human name: Eleius, the eponym of Elis, had a son Augeas, and those who exaggerate his glory give the name a turn and make Helius the Sun his father. Hyginus, for his part, names him son of Sol and Nausidame.",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Pausanias 5.1.9; Hyginus, Fabulae 14.3"
+    },
+    {
+      "text": "The labour bred a war. Eurystheus would not count the cleansing of Augeas' cattle, because Heracles had done it for hire, so the labours had to be lengthened. Long after, Heracles raised an Arcadian army and marched on Elis to punish the broken bargain; Augeas set the Molionides, Eurytus and Cteatus, sons of Actor, over his Eleans. In Apollodorus' telling Augeas was slain and Phyleus restored to the throne.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.11, 2.7.2"
+    },
+    {
+      "text": "Pausanias ends the quarrel without bloodshed: Heracles won no brilliant feat against the sons of Actor, and in the settlement he gave up Elis and, out of respect for Phyleus, let Augeas escape punishment.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 5.2.1, 5.3.1"
+    }
+  ]
+}

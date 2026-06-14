@@ -1,0 +1,77 @@
+{
+  "id": "harpies",
+  "name": "The Harpies",
+  "greekName": "Harpyiai (Ἅρπυιαι)",
+  "romanName": "Harpyiae",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "storm winds",
+    "snatching",
+    "filth and famine",
+    "winged torment"
+  ],
+  "summary": [
+    {
+      "text": "The Harpies are winged daughters of Thaumas and the Oceanid Electra, and sisters of Iris the rainbow; Hesiod and Apollodorus name two of them, Aello and Ocypete.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    },
+    {
+      "text": "Sent by the gods against the blind seer Phineus, they swooped from the sky to snatch the food from his table and foul what they left with a loathsome stench, until the winged Boreads, Zetes and Calais, drove them off.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.178–300"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets the Harpies in the sea-god line: Thaumas wedded Electra, daughter of deep-flowing Ocean, and she bore him swift Iris and the long-haired Harpies, Aello (Storm-swift) and Ocypete (Swift-flier), who on their swift wings keep pace with the blasts of the winds and the birds, for quick as time they dart along. He names only these two.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 265–269"
+    },
+    {
+      "text": "Apollodorus repeats the parentage and the pair exactly: to Thaumas and Electra were born Iris and the Harpies, Aello and Ocypete.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.2.6"
+    },
+    {
+      "text": "Their cruelest office falls upon Phineus, the blind Thracian seer. Apollodorus tells how the gods set the winged females over him: whenever a table was laid, they flew down from the sky and snatched up most of the victuals, and what little they left stank so that nobody could touch it, keeping him barely alive to be tormented. When the Argonauts came, Zetes and Calais, the winged sons of Boreas, drew their swords and pursued them through the air; one fell into a river of the Peloponnese, called Harpys after her (some name her Nicothoe, others Aellopus), while the other, Ocypete (or Ocythoe), fled to the islands thereafter called the Strophades.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.21"
+    },
+    {
+      "text": "Apollonius gives the chase in full: swooping through the clouds with crooked beaks, the Harpies incessantly snatched the food from Phineus' mouth and hands and poured a loathsome stench over all. The Boreads pursued them on the wind like bitter blasts, but Iris met them and forbade the killing, and the Harpies swore by the dread waters of Styx never again to approach the home of Phineus, son of Agenor.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 2.178–300"
+    },
+    {
+      "text": "Hyginus raises the count to three, naming the Harpies Aellopous, Celaeno, and Ocypete, daughters of Thaumas, driven from Phineus son of Agenor by the Boreads as Jason's comrades sailed for Colchis.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14"
+    },
+    {
+      "text": "A separate tradition makes the snatching a different grief. In the Odyssey the storm-winds bore away the orphaned daughters of Pandareus and gave them to be handmaids of the loathed Erinyes; Pausanias, retelling Polygnotus' painting at Delphi, names the snatchers as Harpies and ascribes that reading to Homer, a wholly distinct episode from the torment of Phineus.",
+      "sources": [
+        "homer",
+        "pausanias"
+      ],
+      "citation": "Odyssey 20.66–78; Description of Greece 10.30.2"
+    }
+  ]
+}

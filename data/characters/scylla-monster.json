@@ -1,0 +1,68 @@
+{
+  "id": "scylla-monster",
+  "name": "Scylla",
+  "greekName": "Skylla (Σκύλλα)",
+  "romanName": "Scylla",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "the strait",
+    "shipwreck",
+    "devouring",
+    "sea-peril"
+  ],
+  "summary": [
+    {
+      "text": "Scylla is the cliff-monster of the narrow strait — woman above the waist, but below it six heads and twelve dog's feet — who lurks in a vaulted cave and snatches sailors from passing ships, opposite the whirlpool Charybdis across the channel.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 12.85–100; Epitome 7.20–21"
+    }
+  ],
+  "story": [
+    {
+      "text": "Circe describes the horror that waits for Odysseus in the strait. Hidden up to her waist in a vaulted cave too high for any arrow to reach, Scylla yelps with a voice no louder than a new-born whelp, yet she is an evil monster no god would gladly meet: twelve feet all misshapen, six exceedingly long necks, and on each a fearful head holding three thick rows of teeth full of black death. From her cave she fishes for dolphins, dogfish, and whatever larger prey she can seize, and from every ship that passes she carries off a man for each of her ravening heads.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.85–100"
+    },
+    {
+      "text": "Circe counsels Odysseus that no force can master Scylla; he must row past with all his might and call upon Crataeis, the mother of Scylla, who bore her for a bane to mortals, so that she will hold her daughter from darting forth a second time. Crataeis is the one parent Homer names for the monster.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.124–125"
+    },
+    {
+      "text": "Apollodorus names her a daughter of Crataeis and \"Trienus or Phorcys,\" with the face and breast of a woman but six dog-heads and twelve dog-feet from the flanks down. Odysseus sails past her cliff fully armed on the poop; Scylla appears, snatches six of his comrades, and gobbles them up.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.20–21"
+    },
+    {
+      "text": "Apollonius, in the warning Hera carries through Thetis, makes the father Phorcys outright and the mother the night-wandering goddess Hecate, who is here called Crataeis — the deadly Ausonian Scylla of the strait.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.828–831"
+    },
+    {
+      "text": "Hyginus instead lists Scylla — woman above but dog-formed below — among the brood of Typhon and Echidna, alongside the Gorgon, Cerberus, the Colchian dragon, the Chimaera, the Sphinx, and the Hydra.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae, Preface (Theogony) 39"
+    },
+    {
+      "text": "Ovid alone tells of a Scylla made rather than born. Once a maiden with a girl's own face, she was loved by the sea-god Glaucus; when she spurned him, the jealous sorceress Circe — who desired Glaucus herself — poisoned the bay where Scylla bathed, so that girdling hounds sprang howling from her loins and the maiden became the dog-girt terror of the strait.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 13.730–737, 14.1–74"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "hydra",
+  "name": "The Lernaean Hydra",
+  "greekName": "Hydra (Ὕδρα)",
+  "romanName": "Hydra Lernaea",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "serpents",
+    "marsh and water",
+    "venom",
+    "regeneration"
+  ],
+  "summary": [
+    {
+      "text": "The many-headed water-serpent of the Lernaean marsh, third of the monstrous brood that Echidna bore to Typhon, reared by white-armed Hera in her boundless wrath against Heracles, and at last destroyed by that same hero together with Iolaus.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 306–318"
+    },
+    {
+      "text": "Set as Heracles' second labour: a venomous beast whose heads, when struck off, grew back two for one, so that no wound left it weaker.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollodorus Bibliotheca 2.5.2; Ovid Metamorphoses 9.69–74"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets the Hydra third in the litter of Echidna and Typhaon, after Orthrus the hound and Cerberus of the fifty heads: 'the evil-minded Hydra of Lerna, whom the goddess, white-armed Hera nourished, being angry beyond measure with the mighty Heracles.' The goddess raised the monster as a weapon against the hero she hated, yet it was Heracles, son of Zeus of the house of Amphitryon, who together with warlike Iolaus destroyed her with the unpitying bronze.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 306–318"
+    },
+    {
+      "text": "For the second of his labours Eurystheus sent Heracles to kill the Hydra bred in the swamp of Lerna, which went out into the plain and ravaged the cattle and the country. Apollodorus gives her a huge body and nine heads, eight mortal and the middle one immortal. When Heracles smashed the heads with his club it availed nothing, for two grew up for each one struck off; so he called on Iolaus, who set fire to part of the neighbouring wood and with the burning brands seared the necks as they were severed, halting the regrowth. The immortal head Heracles cut away and buried, rolling a heavy stone over it; then he slit the body open and dipped his arrows in the venomous gall.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.2"
+    },
+    {
+      "text": "Hyginus too counts nine heads and names her offspring of Typhon. He makes her poison so deadly that she killed with her breath alone, and any who passed her while she slept breathed the very air above her tracks and died in agony; Heracles overcame her, Hyginus adds, under the instructions of Minerva.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 30"
+    },
+    {
+      "text": "Pausanias locates the creature at Lerna by the spring of Amymone, where a plane tree grew and the Hydra with it, and gives the rationalising view: he is willing to believe she was simply a water-snake larger and more venomous than the rest, and holds that it was Peisander of Camirus who first gave her many heads, the better to make the beast appalling. He confirms only that Heracles smeared his arrow-points with her gall.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.37.4"
+    },
+    {
+      "text": "The Hydra's afterlife is poison. Ovid lets Heracles himself recall how the serpent grew double its strength from each lost head, so that no wound dealt to it was ever cut unavenged; and that same Lernaean venom, carried on Heracles' arrows, slew the centaur Nessus, whose tainted blood became the shirt that at last killed the hero.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 9.69–74, 9.153–159"
+    },
+    {
+      "text": "Apollonius marks the poison's reach even at the world's edge, where the dragon Ladon, shot with arrows steeped in the Hydra's gall, lay dying as flies withered over the festering wound.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.1393–1405"
+    },
+    {
+      "text": "By one reading of the Theogony, Hesiod makes the Hydra herself the mother of the fire-breathing Chimera, the next-named monster, since the grammatical subject most naturally falls on the just-named serpent; the dominant reading instead takes Echidna as the antecedent and the Chimera as the Hydra's sister.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 319–325"
+    }
+  ]
+}

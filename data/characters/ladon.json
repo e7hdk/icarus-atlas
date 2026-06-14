@@ -1,0 +1,75 @@
+{
+  "id": "ladon",
+  "name": "Ladon",
+  "greekName": "Ladōn (Λάδων)",
+  "romanName": "Ladon",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "guardian of the golden apples",
+    "immortal serpent",
+    "the Hesperides' garden"
+  ],
+  "summary": [
+    {
+      "text": "Ladon is the serpent coiled about the tree of golden apples in the garden of the Hesperides at the world's western bound. The creature is already known to Hesiod, who leaves it nameless; the name Ladon is fixed by Apollonius and the later Hellenistic tradition, which also reports the watchman slain by Heracles for his eleventh labour.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.1393–1409"
+    },
+    {
+      "text": "In the Hesiodic line the apple-guarding snake is the youngest child of the sea-deities Ceto and Phorcys; this parentage is disputed, for Apollodorus and Hyginus instead reckon the dragon among the brood of Typhon and Echidna.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 333–336"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Theogony the serpent appears without a name, the last and most dreadful of a sea-born line: \"Ceto was joined in love to Phorcys and bore her youngest, the awful snake who guards the apples all of gold in the secret places of the dark earth at its great bounds.\" Hesiod gives no count of heads and no tale of its death, only its watch over the hidden gold at the edge of the world, sealed by the closing line: \"This is the offspring of Ceto and Phorcys.\"",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 333–336"
+    },
+    {
+      "text": "A rival genealogy makes the dragon a child not of the deep but of the storm-monster Typhon and the half-serpent Echidna. Apollodorus, recounting Heracles' eleventh labour, says the golden apples were Earth's gift to Zeus after his marriage with Hera and were guarded by this offspring of Typhon and Echidna; Hyginus agrees, listing \"the dragon which guarded the apples of the Hesperides across the ocean\" among the children of Typhon and Echidna, and elsewhere calling it simply \"Typhon's son.\"",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.11; Fabulae 151; Fabulae 30"
+    },
+    {
+      "text": "Apollodorus alone makes the watchman a monstrous many-headed thing: the apples, he says, were \"guarded by an immortal dragon with a hundred heads, offspring of Typhon and Echidna, which spoke with many and divers sorts of voices.\" The hundred heads, the immortality, and the gift of many tongues are his detail; neither Hesiod nor Apollonius gives the dragon more than a single serpent's form.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.11"
+    },
+    {
+      "text": "Apollonius first names the serpent and shows the watchman already dead. The thirsting Argonauts \"came to the sacred plain where Ladon, the serpent of the land, till yesterday kept watch over the golden apples in the garden of Atlas\" — but Heracles had passed before them: \"stricken by Heracles, he lay fallen by the trunk of the apple-tree; only the tip of his tail was still writhing,\" the wounds festering where the arrows had left the gall of the Lernaean hydra, while the Hesperides keened nearby.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.1393–1409"
+    },
+    {
+      "text": "Hyginus too has Hercules slay the dragon to win the apples: \"The huge dragon, Typhon's son, which used to guard the golden apples of the Hesperides, he killed near Mount Atlas.\" Apollodorus, however, preserves a softer version of the same labour in which Atlas himself fetches the apples while Heracles holds up the sky — and in that telling the serpent need not die at all.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 30; Bibliotheca 2.5.11"
+    },
+    {
+      "text": "After the dragon's death Hera set the guardian among the stars. Hyginus' constellation lore points him out as \"this huge serpent lying between the two Bears,\" who \"guarded the golden apples of the Hesperides, and after Hercules killed him\" was placed in the sky by Juno, \"because at her instigation Hercules set out for him\" — \"the usual watchman of the Gardens of Juno,\" now coiled forever as the constellation Draco.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Astronomica 2.3"
+    }
+  ]
+}

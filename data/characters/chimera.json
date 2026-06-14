@@ -1,0 +1,59 @@
+{
+  "id": "chimera",
+  "name": "The Chimera",
+  "greekName": "Khimaira (Χίμαιρα)",
+  "romanName": "Chimaera",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "fire-breathing hybrid",
+    "monstrous beast",
+    "the terror of Lycia"
+  ],
+  "summary": [
+    {
+      "text": "A fire-breathing hybrid of divine stock and no human kind — a lion in the fore part, a serpent behind, and a goat in the middle, breathing forth the might of blazing fire — whom Bellerophon slew, trusting in the signs of the gods.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 6.179–183"
+    },
+    {
+      "text": "Hesiod fixes her three-headed shape — a fearful, swift-footed creature with three heads, one of a grim-eyed lion, one of a goat, one of a snake, a fierce dragon — and names Pegasus and noble Bellerophon as her slayers.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 319–325"
+    }
+  ],
+  "story": [
+    {
+      "text": "From the earliest telling the Chimera is a thing 'of divine stock, not of men.' In the lying letter borne to Lycia, Iobates first bids Bellerophon slay the raging beast: in the fore part a lion, in the hinder a serpent, and in the midst a goat, breathing forth in terrible wise the might of blazing fire. And Bellerophon slew her, trusting in the signs of the gods. Homer names a human keeper as well — the man Amisodarus, 'that reared the raging Chimaera, a bane to many men' — a breeder, not a sire.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 6.179–183; 16.328–329"
+    },
+    {
+      "text": "Hesiod gives the form that would become canonical — a creature fearful, great, swift-footed and strong, with three heads: one of a grim-eyed lion, another of a goat, another of a snake, a fierce dragon, breathing a blast of blazing fire — and ends the line as Homer did, with Pegasus and noble Bellerophon destroying her. Her parentage in the Theogony is famously knotted: the relative pronoun that names her mother can be read as Echidna or, on the nearest-antecedent reading, as the Lernaean Hydra named just before.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 313–325"
+    },
+    {
+      "text": "Apollodorus draws the threads together. Iobates orders the kill, 'for it was more than a match for many'; the monster has the fore part of a lion, the tail of a dragon, and a middle head of a goat, through which it belched fire — a single creature with the power of three beasts. He records both lineages at once: the Chimera 'was bred by Amisodarus, as Homer also affirms,' yet 'was begotten by Typhon on Echidna, as Hesiod relates,' resolving Hesiod's ambiguous antecedent to Echidna and setting her among the chthonic brood. Then the slaying proper: Bellerophon mounted his winged steed Pegasus, the offspring of Medusa and Poseidon, and, soaring on high, shot the Chimera down from the height.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.3.1–2"
+    },
+    {
+      "text": "Hyginus keeps the same shape and the same death — Iobates 'sent him to kill the Chimaera, a three-formed creature said to breathe forth fire,' forepart lion, rearpart snake, middle she-goat, and 'this he slew, riding on Pegasus.' In his catalogue of monsters he lists her among the children of Typhon and Echidna and pins her firmly to her haunt, 'the Chimaera in Lycia,' the fire-breathing terror of that coast.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 57; 151"
+    }
+  ]
+}

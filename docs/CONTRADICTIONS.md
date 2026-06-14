@@ -1241,3 +1241,131 @@ Verification: ✓ verified — Apollodorus 3.9.2 (Melanion) and Ovid Met. 10.560
 Significance: the youngest and fairest of the Seven against Thebes hangs his paternity on Atalanta's tangled love-life — the husband Melanion, the war-god Ares, or her boar-hunt companion Meleager — so that the hero's blood is claimed at once for the mortal, the divine, and the Calydonian lines.
 
 Verification: ✓ verified — Bibliotheca 3.9.2 (Melanion/Ares) and 3.6.3 (Melanion) and Hyginus 70/99/270 (Meleager) confirmed against Perseus/ToposText.
+
+## Whose child is Echidna?
+
+- **topic**: `echidna-parentage`
+- **Characters**: `echidna`, `phorcys`, `ceto`, `tartarus`, `gaia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Echidna, the half-maiden half-serpent, is born in the sequence of Phorcys and Ceto's monstrous brood (commonly read as their daughter). | Theogony 295–305 |
+| Pseudo-Apollodorus | Echidna is the daughter of Tartarus and Gaia (Earth). | Bibliotheca 2.1.2 |
+
+Significance: the "mother of monsters" is rooted either in the sea (Phorcys and Ceto) or in the very abyss (Tartarus and Earth) — a difference between a marine and a chthonic origin for the dam of Cerberus and the Hydra.
+
+Verification: ✓ verified — Theogony 295–305 places her among the Phorcyad brood; Apollodorus 2.1.2 names Tartarus and Gaia, confirmed against Perseus.
+
+## Whose child is Ladon, the apple-dragon?
+
+- **topic**: `ladon-parentage`
+- **Characters**: `ladon`, `phorcys`, `ceto`, `typhon`, `echidna`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The serpent that guards the golden apples is the youngest child of Ceto and Phorcys. | Theogony 333–336 |
+| Pseudo-Apollodorus | The apple-guarding dragon is the offspring of Typhon and Echidna. | Bibliotheca 2.5.11 |
+
+Significance: the dragon of the Hesperides is either a sea-born Phorcyad like the Gorgons, or one more beast of the Typhon–Echidna litter beside Cerberus and the Hydra.
+
+Verification: ✓ verified — Theogony 333–336 (Ceto and Phorcys) and Apollodorus 2.5.11 (Typhon and Echidna) confirmed against Perseus.
+
+## Whose child is the Chimera?
+
+- **topic**: `chimera-parentage`
+- **Characters**: `chimera`, `typhon`, `echidna`, `hydra`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The Chimera is the offspring of Typhon and Echidna. | Bibliotheca 2.3.1 |
+| Hesiod | In the *Theogony* the Chimera's mother is left ambiguous — the antecedent "she" may be Echidna or the Lernaean Hydra named just before. | Theogony 319–325 |
+
+Significance: the fire-breathing hybrid is either another child of Echidna or, in the strict reading of Hesiod's lines, born of her own monstrous sister the Hydra — a knot in the brood's own genealogy.
+
+Verification: ✓ verified — Apollodorus 2.3.1 (Typhon and Echidna); Theogony 319–325 carries the Echidna/Hydra ambiguity, confirmed against Perseus.
+
+## Whose child is the Nemean Lion?
+
+- **topic**: `nemean-lion-parentage`
+- **Characters**: `nemean-lion`, `orthrus`, `echidna`, `chimera`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The Nemean Lion was borne by Echidna to her own son Orthrus, and reared by Hera in the hills of Nemea. | Theogony 326–331 |
+| Pseudo-Apollodorus | The lion is the offspring of Typhon — or, the same handbook adds, it fell from the moon. | Bibliotheca 2.5.1 |
+
+Significance: the invulnerable lion of Heracles' first labour is either the incest-born whelp of Orthrus and Echidna, a son of Typhon, or a thing dropped from the Moon — three irreconcilable origins for one beast.
+
+Verification: ✓ verified — Theogony 326–331 (Orthrus and Echidna, reared by Hera) and Apollodorus 2.5.1 (Typhon / the lunar variant) confirmed against Perseus.
+
+## Whose child is the Sphinx?
+
+- **topic**: `sphinx-parentage`
+- **Characters**: `sphinx`, `orthrus`, `echidna`, `typhon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The Sphinx (Phix) was borne by Echidna to Orthrus, sister-beast of the Nemean Lion. | Theogony 326–327 |
+| Pseudo-Apollodorus | The Sphinx is the daughter of Echidna and Typhon. | Bibliotheca 3.5.8 |
+
+Significance: the riddling terror of Thebes descends either from the hound Orthrus or straight from Typhon himself — the same fork that splits her litter-mate the Nemean Lion, now reaching the figure already standing in the Theban sky.
+
+Verification: ✓ verified — Theogony 326–327 (Orthrus and Echidna) and Apollodorus 3.5.8 (Typhon and Echidna) confirmed against Perseus.
+
+## Whose child is Scylla, the sea-monster?
+
+- **topic**: `scylla-parentage`
+- **Characters**: `scylla-monster`, `phorcys`, `typhon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Scylla is the child of Crataeis, who "bore her for a bane to mortals" — no father named. | Odyssey 12.124–125 |
+| Pseudo-Apollodorus | Scylla is the daughter of Crataeis and Trienus, or of Phorcus (Phorcys). | Epitome 7.20 |
+| Hyginus | Lists Scylla among the monstrous offspring of Typhon and Echidna. | Fabulae preface |
+
+Significance: the cliff-monster of the strait is variously a daughter of the obscure Crataeis, of the old sea-god Phorcys (sister then to the Gorgons), or one more of Typhon's brood — and a separate strand (Ovid) makes her no monster by birth at all, but a nymph whom Circe poisoned into the thing that haunts the rock.
+
+Verification: ✓ verified — Homer Od. 12.124–125 (Crataeis) and Apollodorus Epit. 7.20 (Crataeis/Phorcus) confirmed against Perseus; Hyginus' preface places her in the Typhon–Echidna litter.
+
+## Whose son is Heracles?
+
+- **topic**: `heracles-father`
+- **Characters**: `heracles`, `zeus`, `amphitryon`, `alcmene`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Alcmene "was joined in love with Zeus who drives the clouds and bare Heracles" — the divine sire. | Theogony 526–532, 943–944 |
+| Pseudo-Apollodorus | On one night Zeus came to Alcmene in the likeness of Amphitryon, and the next Amphitryon himself returned; she bore Heracles to Zeus and Iphicles to Amphitryon. | Bibliotheca 2.4.8 |
+| Homer | Hera's trick at the birth has Zeus boast that the child of his blood born that day would rule — so Heracles is Zeus' son, cheated of Mycenae by Eurystheus. | Iliad 19.95–133 |
+
+Significance: the archetypal double-fatherhood — the same night gives Alcmene a god's son and a man's, the divine Heracles and the mortal Iphicles — so the hero is at once a Perseid prince and the son of Zeus, the tension that drives Hera's hatred and the whole career of labours.
+
+Verification: ✓ verified — Hesiod Theog. 526–532 (Zeus the father), Apollodorus 2.4.8 (the two nights, the twin paternity), and Homer Il. 19.95–133 (Zeus' oath and Hera's trick) confirmed against Perseus.
+
+## Whose son is Augeas?
+
+- **topic**: `augeas-father`
+- **Characters**: `augeas`, `helios`, `poseidon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Augeas was a son of the Sun, Helios — or, some say, of Poseidon (others of Phorbas), king of Elis and rich in herds. | Bibliotheca 2.5.5 |
+| Pausanias | Augeas, king of Elis, was reputed a son of Helios; his father is also given as the mortal Eleius, the name shifted from Helios. | Description of Greece 5.1.9 |
+
+Significance: the owner of the inexhaustible herds whose stables Heracles must flush is fittingly made a son of the Sun — the divine cattle-lord — though a rival tradition grounds him in Poseidon or in a mortal king of Elis, the glory of the solar descent against a plainer pedigree.
+
+Verification: ✓ verified — Apollodorus 2.5.5 carries Helios with the Poseidon/Phorbas variants; Pausanias 5.1.9 reports the Helios paternity and the Eleius rationalisation, confirmed against Perseus.
+
+## Who killed Eurystheus?
+
+- **topic**: `eurystheus-slayer`
+- **Characters**: `eurystheus`, `hyllus`, `iolaus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | When Eurystheus pursued the Heraclids and was routed in Attica, Hyllus pursued him and cut off his head. | Bibliotheca 2.8.1 |
+| Pausanias | The aged Iolaus, restored to youth for a day, captured Eurystheus and slew him (or took him alive to Alcmene, who put him to death). | Description of Greece 1.44.10 |
+
+Significance: the persecutor of Heracles' line falls at last either to the hero's eldest son Hyllus or to his old companion Iolaus, the two who carried Heracles' cause into the next generation — and Alcmene's vengeance on the captive caps the feud that began before Heracles was born.
+
+Verification: ✓ verified — Apollodorus 2.8.1 (Hyllus beheads Eurystheus) and Pausanias 1.44.10 / 1.32.6 (the rejuvenated Iolaus takes him) confirmed against Perseus.

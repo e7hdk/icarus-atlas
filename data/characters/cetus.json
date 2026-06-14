@@ -1,0 +1,56 @@
+{
+  "id": "cetus",
+  "name": "Cetus",
+  "greekName": "Kētos (Κῆτος)",
+  "romanName": "Cetus",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "the devouring sea",
+    "Poseidon's vengeance",
+    "sea-monster"
+  ],
+  "summary": [
+    {
+      "text": "The sea-monster that Poseidon loosed upon the coast of Aethiopia, to which the princess Andromeda was chained as prey; it was slain by Perseus, who freed and wedded her.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.663–739; Fabulae 64"
+    }
+  ],
+  "story": [
+    {
+      "text": "The beast was a god's reprisal for mortal vanity. Apollodorus tells how Cassiepea, wife of Cepheus who ruled Aethiopia, vied with the Nereids in beauty and boasted herself the lovelier; in their anger the Nereids, and Poseidon sharing their wrath, sent a flood and a sea-monster against the land. When the oracle of Ammon was consulted, it answered that there would be deliverance only if Cassiepea's daughter Andromeda were set out as the monster's prey, and so, compelled by the Aethiopians, Cepheus bound her to a rock by the sea.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.3"
+    },
+    {
+      "text": "Hyginus gives the same chain of cause: Cassiope claimed that her daughter Andromeda's beauty surpassed that of the Nereids, and for this Neptune demanded that Andromeda, daughter of Cepheus, be offered up to the sea-monster. When she had been exposed upon the shore, Perseus came flying on the winged sandals of Mercury, killed the monster, and set Andromeda free.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 64"
+    },
+    {
+      "text": "Ovid renders the killing in full. Perseus, on his homeward flight, sights Andromeda chained to a crag and condemned for her mother's boast, and at once the monster comes surging through the open sea, breasting the waves toward her like a ship driven on. The hero rises into the air and plunges down upon its back, and as the beast writhes and snaps at the empty shadow he strikes again and again with his curved blade, driving the iron deep into its shoulders, ribs, and tapering tail until the sea runs red and the creature sinks. Then he looses Andromeda from the rock and, by the bargain struck with Cepheus, takes her as his bride.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 4.663–739"
+    },
+    {
+      "text": "In none of the three tellings is the monster a character so much as an instrument: Apollodorus names it only the ketos, Ovid the belua, the swollen beast of the deep, and Hyginus simply the cetus. It is given no parentage and no speech, and no deed but the one for which Poseidon made it — and that deed is undone the moment Perseus, hovering above the surf, brings it down and turns a sentence of death into a marriage.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.663–739; Fabulae 64"
+    }
+  ]
+}

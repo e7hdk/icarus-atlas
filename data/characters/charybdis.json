@@ -1,0 +1,68 @@
+{
+  "id": "charybdis",
+  "name": "Charybdis",
+  "greekName": "Kharybdis (Χάρυβδις)",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "the whirlpool",
+    "the strait",
+    "the devouring sea",
+    "thrice-daily ruin"
+  ],
+  "summary": [
+    {
+      "text": "Charybdis is the monstrous whirlpool of the narrow strait, set beneath a great fig tree on the lower of two facing cliffs: thrice a day she sucks down the black water and thrice she belches it forth, so that not even Poseidon the Earth-shaker could save a sailor caught when she draws it down.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.101–110"
+    },
+    {
+      "text": "Paired forever with Scylla on the cliff opposite, she is the twin terror of the strait, feared alike by the Argonauts, by Odysseus, and by the later poets who named her the gulf fatal to great ships.",
+      "sources": [
+        "homer",
+        "apollonius",
+        "ovid"
+      ],
+      "citation": "Odyssey 12.234–244; Argonautica 4.922–926; Metamorphoses 7.63–65"
+    }
+  ],
+  "story": [
+    {
+      "text": "Circe warns Odysseus of the two cliffs that guard the strait. The lower one, near enough that a man might shoot an arrow across to its fellow, bears a great fig tree of rich foliage, and beneath it divine Charybdis sucks down the black water. Thrice a day she belches it forth and thrice she draws it down in terror; let no one be near when she swallows, Circe says, for not even Poseidon the Earth-shaker could pluck him from ruin. Better to lose six men to Scylla than the whole ship to Charybdis.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.101–110"
+    },
+    {
+      "text": "Sailing the narrow water with wailing, Odysseus' men find Scylla on one hand and divine Charybdis on the other, terribly sucking down the salt sea; when she belched it up she seethed and bubbled like a cauldron on a great fire, and the spray flew high over the tops of both cliffs. Later, after Zeus's thunderbolt has wrecked the ship and drowned his comrades, the South Wind bears Odysseus back to dread Charybdis. As she sucks the salt water down he springs up to the tall fig tree and clings to it like a bat, footless and without handhold, until at last she belches the keel and mast up again; then he drops astride the timbers, rows clear with his hands, and is carried off.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.234–244, 12.426–446"
+    },
+    {
+      "text": "Apollodorus preserves the same passage in prose. In the cliff opposite Scylla lies Charybdis, who thrice a day draws up the water and spouts it out again. When Odysseus' ship later breaks apart he clings to the mast and drifts to her; as she sucks the mast down he clutches an overhanging wild fig tree and waits, and when the mast shoots up once more he casts himself onto it and is carried across to the island of Ogygia.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.21–23"
+    },
+    {
+      "text": "Charybdis menaces the Argo as well. Because the ship must pass the mighty rock of Scylla and Charybdis horribly belching, Hera enlists Thetis and the Nereids to steer it through: on one side appears the smooth rock of Scylla, on the other Charybdis ceaselessly spouts and roars, while the Wandering Rocks boom nearby beneath a glow of fire and smoke. Only the sea-nymphs' hands carry the heroes safely past.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.789, 4.922–926"
+    },
+    {
+      "text": "Hyginus keeps her thrice-daily rhythm and her place on the homeward route: Ulysses is borne on to Charybdis, who three times a day sucked the water down and three times belched it up, and by the warning of Tiresias he passed her by.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 125"
+    }
+  ]
+}

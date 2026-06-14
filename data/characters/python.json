@@ -1,0 +1,62 @@
+{
+  "id": "python",
+  "name": "Python",
+  "greekName": "Pythōn (Πύθων)",
+  "romanName": "Python",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "earth-serpent",
+    "delphic oracle",
+    "prophecy"
+  ],
+  "summary": [
+    {
+      "text": "Python, the great serpent of Delphi, guarded the oracle until Apollo, coming to claim the prophetic seat, killed it and took the shrine for his own.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollodorus, Bibliotheca 1.4.1; Pausanias 10.6.6"
+    },
+    {
+      "text": "The serpent was a child of Earth, brought forth by Gaia herself.",
+      "sources": [
+        "hyginus",
+        "pausanias",
+        "ovid"
+      ],
+      "citation": "Hyginus, Fabulae 140 & Praefatio (p.30); Pausanias 10.6.6; Ovid, Metamorphoses 1.434–451"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Apollo, newly versed in prophecy, came to Delphi where Themis then delivered the oracles, the snake Python that guarded the chasm tried to bar him from it. He killed the creature and took over the oracle himself. Apollodorus names the guardian serpent and Apollo's deed but assigns Python no parent.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 1.4.1"
+    },
+    {
+      "text": "Hyginus calls Python the offspring of Terra (Earth), a huge dragon who before Apollo's time gave oracular responses on Mount Parnassus, and in his catalogue of births lists him simply as Earth's prophetic snake. Death was fated to reach Python from the offspring of Latona, and when she was pregnant by Jove the dragon pursued her before turning back to Parnassus. Four days after his birth Apollo went up the mountain and slew Python with his arrows — for which deed he is called Pythian — and founded the funeral games called Pythian.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Hyginus, Fabulae 140 & Praefatio (p.30)"
+    },
+    {
+      "text": "In Ovid's account Earth, quickened by the sun after the great flood, unwillingly brought forth among her new creatures the enormous Python, a serpent so vast it terrified the new-made race of men. The god who bears the bow destroyed the monster with a myriad darts, and so that time should not bury the fame of the feat he instituted sacred contests called, from the Python, the Pythian Games.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ovid, Metamorphoses 1.434–451"
+    },
+    {
+      "text": "Pausanias reports the poets' tradition that Apollo's victim was a dragon posted by Earth to guard the oracle, and from the rotting of the slain serpent on the spot he derives the place-name Pytho, since the men of old used pythesthai for 'to rot.' He preserves beside it a rationalizing variant, that the victim was no serpent but a violent brigand, a son of Crius who plundered the sanctuary.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Pausanias, Description of Greece 10.6.5–6"
+    }
+  ]
+}

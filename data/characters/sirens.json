@@ -1,0 +1,75 @@
+{
+  "id": "sirens",
+  "name": "The Sirens",
+  "greekName": "Seirēnes (Σειρῆνες)",
+  "romanName": "Sirenes",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "beguiling song",
+    "luring sailors to death",
+    "the deadly meadow"
+  ],
+  "summary": [
+    {
+      "text": "The Sirens beguile every man who sails near. Whoever in ignorance draws close and hears their clear voice never returns home, for they enchant him as they sit in their flowery meadow, and about them lies a great heap of the mouldering bones of men.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.39–54"
+    },
+    {
+      "text": "They are the clear-voiced daughters of the river Achelous, who used to destroy with their songs whoever cast anchor at their island.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.892–896"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus sailed from Circe, she warned him first of the Sirens and bade him stop his comrades' ears with wax and, if he wished to hear the song himself, to have his crew bind him upright to the mast. He did so; and as the ship drew near, the Sirens called him by name and promised that he would sail on knowing all that comes to pass upon the earth. Charmed, he begged by signs to be loosed, but Perimedes and Eurylochus only bound him with more bonds, until the ship had rowed past and their voice could be heard no longer.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 12.39–54, 158–200"
+    },
+    {
+      "text": "The Argonauts came too, to the island Anthemoessa, where the clear-voiced daughters of Achelous — borne by lovely Terpsichore, one of the Muses, and once the attendants of Demeter's daughter Persephone before she was carried off — used to destroy with their songs whoever cast anchor there.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.892–896"
+    },
+    {
+      "text": "As the Argo passed, Orpheus restrained the crew by chanting a counter-melody, so that they sailed by safely; Butes alone, overcome by the sweetness of the song, swam off toward the Sirens, but Aphrodite snatched him up and settled him at Lilybaeum.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.25; Fabulae 14.4"
+    },
+    {
+      "text": "They were three, daughters of Achelous and the Muse Melpomene — Apollodorus names them Pisinoe, Aglaope, and Thelxiepia, one playing the lyre, one singing, and one the flute to lure passing mariners to linger; Hyginus calls them Thelxiepe, Molpe, and Pisinoe. It was fated that the Sirens should die when once a ship passed them by, and so, when Odysseus sailed through unharmed, they died.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 7.18–19; Fabulae 125, 141, Praefatio"
+    },
+    {
+      "text": "In form they were women in their upper parts but birds below, and Hyginus tells how they came by their wings: when Proserpina was carried off and they failed to bring her aid, Ceres turned them into flying creatures. Pausanias preserves another account, that the daughters of Achelous were persuaded by Hera to match their song against the Muses, and that the Muses, winning, plucked out the Sirens' feathers and wove them into crowns.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 125, 141"
+    },
+    {
+      "text": "Pausanias preserves a rival account of their bird form: the daughters of Achelous were persuaded by Hera to match their song against the Muses, and the Muses, winning, plucked out the Sirens' feathers and wove them into crowns for themselves.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.34.3"
+    }
+  ]
+}
