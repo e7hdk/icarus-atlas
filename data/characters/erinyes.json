@@ -1,0 +1,75 @@
+{
+  "id": "erinyes",
+  "name": "The Erinyes",
+  "greekName": "Erinyes (Ἐρινύες)",
+  "romanName": "Furiae",
+  "type": "creature",
+  "domains": [
+    "blood-guilt",
+    "vengeance for kin-murder",
+    "broken oaths",
+    "the curse of parents",
+    "chthonic punishment"
+  ],
+  "epithets": [
+    "the Semnai (August Ones)",
+    "avengers under the earth"
+  ],
+  "summary": [
+    {
+      "text": "The Erinyes are the chthonic avengers of blood-guilt and broken oaths, three sisters commonly named Alecto, Tisiphone and Megaera, who hound the kin-slayer and the perjurer without rest.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface"
+    },
+    {
+      "text": "Hesiod brings them forth from the bloody drops of the castrated Uranus that fell upon Gaia; in Athenian cult they are the August Ones whom Hesiod was the first to call Erinyes.",
+      "sources": [
+        "hesiod",
+        "pausanias"
+      ],
+      "citation": "Theogony 183-187; Description of Greece 1.28.6",
+      "topic": "erinyes-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets their origin at the violent dawn of the cosmos. When Cronus lopped off his father's genitals with the great sickle and cast them away, the drops of blood gushed forth and Gaia received them all; as the seasons came round she bore the strong Erinyes, together with the Giants and the ash-tree Nymphs called Meliae. So the avengers of bloodshed are themselves born of a primal act of bloodshed against a parent — the very crime they exist to punish.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 183-187",
+      "topic": "erinyes-parentage"
+    },
+    {
+      "text": "Hyginus gives a different lineage. In his genealogical preface he lists, among the offspring of Aether and Terra (Earth), the three Furies — namely Alecto, Megaera and Tisiphone — making them children of upper air and earth rather than spirits sprung from Uranus's wound, while Apollodorus, who keeps to Hesiod's grim cosmogony, likewise names the three: from the drops of the flowing blood of the castrated sky were born the Furies, Alecto, Tisiphone and Megaera.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae preface; Bibliotheca 1.1.4",
+      "topic": "erinyes-parentage"
+    },
+    {
+      "text": "Their office in the older poetry is the upholding of oaths and the curses of the wronged. Homer makes them the powers that hear a father's curse and avenge it — Phoenix tells how his father invoked the dire Erinyes against him, and the gods fulfilled it — and he names them the dread witnesses who, under the earth, take vengeance on whosoever swears a false oath; Hesiod too sets them at the very birth of Horcus (Oath), whom Eris bore to trouble the forsworn. Apollonius keeps the same charge: Medea calls down her avenging Furies on the oath-breaker who has transgressed a mighty oath.",
+      "sources": [
+        "homer",
+        "hesiod",
+        "apollonius"
+      ],
+      "citation": "Iliad 9.454, 19.259-260; Works and Days 803-804; Argonautica 4.385-387"
+    },
+    {
+      "text": "Above all they pursue the shedder of kindred blood, and the matricide Orestes is their chief prey. Apollodorus tells how, after Orestes killed his mother Clytaemnestra and Aegisthus, he was afflicted with madness and pursued by the Furies until he came to Athens and was tried in the Areopagus, the votes at his trial standing equal so that he was acquitted. The traveller Pausanias, standing before their Athenian sanctuary, records that Hesiod in the Theogony was the first to call these August goddesses Erinyes, and that it was Aeschylus who first gave them the snakes in their hair — an image the Roman Ovid makes lurid, showing the implacable sisters in the underworld combing black vipers from their horrid hair.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "ovid"
+      ],
+      "citation": "Epitome 6.25; Description of Greece 1.28.6; Metamorphoses 4.451-454"
+    }
+  ],
+  "cluster": "chthonic"
+}

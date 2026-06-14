@@ -1,0 +1,44 @@
+{
+  "id": "briareus",
+  "name": "Briareus",
+  "greekName": "Briareōs / Obriareos (Βριάρεως)",
+  "type": "primordial",
+  "domains": ["raw strength", "elemental violence", "the sea"],
+  "epithets": ["the Hundred-Handed", "Aegaeon", "warder of Zeus"],
+  "summary": [
+    {
+      "text": "Mightiest of the three Hundred-Handers, born of Sky and Earth — a giant of a hundred arms and fifty heads, called Briareus by the gods and Aegaeon by mortals, and stronger than his own father.",
+      "sources": ["homer", "hesiod", "apollodorus"],
+      "citation": "Iliad 1.403–404; Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "When Hera, Poseidon and Athena plotted to bind Zeus, Thetis fetched Briareus to Olympus; he sat by the king of the gods, and the blessed ones drew back in fear and let Zeus be.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.396–406"
+    }
+  ],
+  "story": [
+    {
+      "text": "Sky was the first to rule the whole world, and wedding Earth he begat first the Hundred-Handers, as they are called — Briareus, Cottus and Gyes — unsurpassed in size and might, each with a hundred hands and fifty heads. Hesiod names the eldest Obriareos and makes him, with his brothers, a son of Uranus and Gaia, set apart by sheer overmastering strength. Homer fixes the double name in a single line: him of the hundred hands whom the gods call Briareus, but all men Aegaeon — for he is mightier than his father.",
+      "sources": ["homer", "hesiod", "apollodorus"],
+      "citation": "Iliad 1.403–404; Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "Uranus, jealous of their exceeding manhood and comeliness, bound the three in cruel bonds and hid them away beneath the earth; later Cronos kept them imprisoned in turn. When the war between the Olympians and the Titans hung evenly balanced, Zeus brought them up again, revived their proud spirit with nectar and ambrosia, and loosed them for the fight. In the Titanomachy their hundred hands hurled three hundred rocks at once and overwhelmed the Titans, whom they were then set to guard at the gates of Tartarus that Poseidon walled in bronze.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 617–620, 715–745; Bibliotheca 1.1.1–1.2.1"
+    },
+    {
+      "text": "Homer alone preserves Briareus' single intervention in the affairs of Olympus. When Hera, Poseidon and Athena once wished to bind Zeus, the goddess Thetis quickly called to high Olympus the Hundred-Hander whom men name Aegaeon; he sat down beside the son of Cronos exulting in his glory, and the blessed gods, seized with fear of him, did not bind Zeus. Achilles' mother recalls the debt to win her son's cause.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.396–406"
+    },
+    {
+      "text": "His later honours diverge by source. Hesiod, calling him goodly, says Poseidon the Earth-Shaker made Briareos his son-in-law and gave him Cymopoleia his daughter to wed, binding the strongest of the Hundred-Handers to the sea. Pausanias, gathering Corinthian tradition, instead remembers Briareus as a judge: when Poseidon and Helios disputed the Isthmus, Briareus arbitrated between them, assigning the isthmus to Poseidon and the height of Acrocorinth to the Sun.",
+      "sources": ["hesiod", "pausanias"],
+      "citation": "Theogony 817–819; Description of Greece 2.1.6, 2.4.6",
+      "topic": "briareus-honours"
+    }
+  ],
+  "cluster": "titan-ring"
+}

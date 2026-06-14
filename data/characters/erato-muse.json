@@ -1,0 +1,44 @@
+{
+  "id": "erato-muse",
+  "name": "Erato",
+  "greekName": "Eratō (Ἐρατώ)",
+  "romanName": "Erato",
+  "type": "god",
+  "domains": ["the Muses", "song", "love poetry"],
+  "epithets": ["the lovely", "the beloved"],
+  "summary": [
+    {
+      "text": "One of the nine Muses, daughters of Zeus and Mnemosyne; her name means 'lovely' or 'beloved', and Apollonius makes her the Muse who inspires songs of desire.",
+      "sources": ["hesiod", "apollodorus", "apollonius"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1; Argonautica 3.1–5"
+    },
+    {
+      "text": "Her specific association with love poetry is a late, Roman systematization, though Apollonius already binds her to erotic song.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1–5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Erato is one of the nine Muses, the daughters of Zeus and Mnemosyne who keep the deeds of gods and mortals alive in song. Hesiod names her among the nine who dwell on Olympus, set in his catalogue between Terpsichore and Polyhymnia, while Calliope is reckoned chiefest of them all.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 75–79"
+    },
+    {
+      "text": "Pseudo-Apollodorus likewise lists her among the Muses borne by Memory to Zeus, naming her fifth in his order after Calliope, Clio, Melpomene and Euterpe. In these early sources the sisters are not yet divided into separate provinces of art; they sing of all things together, and no fixed sphere is set apart for Erato alone.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Her name, from the Greek for 'lovely' or 'beloved', already hints at love, and Apollonius draws on it directly: invoking her by name to inspire the tale of Medea, he calls her the Muse who shares the power of Cypris and 'has won as her portion the spell of desire', so that her very name tells of love. This is the earliest surviving link of Erato to erotic song.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1–5"
+    },
+    {
+      "text": "The neat assignment of Erato specifically to love poetry, with the other Muses parcelled out one art apiece, belongs to a later Roman systematization rather than to the archaic catalogues. The earlier sources treat the nine as undivided singers, so her patronage of the erotic genre is recorded here as a late development built upon, not contradicting, the Apollonian hint.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1–5"
+    }
+  ],
+  "cluster": "olympian-band"
+}

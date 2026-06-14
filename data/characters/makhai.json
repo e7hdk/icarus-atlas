@@ -1,0 +1,41 @@
+{
+  "id": "makhai",
+  "name": "The Makhai",
+  "greekName": "Makhai (Μάχαι)",
+  "type": "god",
+  "domains": ["battle", "war", "fighting"],
+  "epithets": ["the Fights", "the Battles"],
+  "summary": [
+    {
+      "text": "The Makhai are the personified spirits of battle and war, a plural brood whom Strife bore without a father — the dark powers that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "They stand among the grim children of Eris, named beside the Hysminai (Combats), the Phonoi (Murders) and the Androktasiai (Manslaughters).",
+      "sources": ["hesiod"],
+      "citation": "Theogony 228"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of Strife's offspring, hateful Eris brings forth the Makhai — the Fights or Battles — among a brood begotten with no father. They are listed with Ponos (Toil), Lethe (Forgetfulness), Limos (Famine), the tearful Algea (Sorrows), the Hysminai (Combats), the Phonoi (Murders) and Androktasiai (Manslaughters), Neikea (Quarrels), Pseudea (Lies), Logoi (Disputes), Amphillogiai (Ambiguities), Dysnomia (Lawlessness), Ate (Ruin) and Horkos (Oath). The Makhai are thus not Olympian deities but the abstract fact of war given personified, plural shape.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Their name names war in the broad sense: makhe is the fight, the engagement, the conduct of battle as a whole — distinct from their near kin the Hysminai, whose name marks the close press of hand-to-hand melee. As children of Strife rather than independent gods, the Makhai personify the moment discord hardens into armed conflict, one face of the violence that Hesiod weaves into the very fabric of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 228"
+    },
+    {
+      "text": "Hesiod's moral cosmology gives these powers no cult and no myth of their own: they exist as a genealogy, a register of the evils that flow from Strife. The Makhai belong wholly to that lineage of the children of Night — abstractions that turn the descent from Chaos into an account of why mortal existence is shadowed by quarrel, slaughter and war.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "cluster": "night-court"
+}

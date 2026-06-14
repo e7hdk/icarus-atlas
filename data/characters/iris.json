@@ -1,0 +1,43 @@
+{
+  "id": "iris",
+  "name": "Iris",
+  "greekName": "Iris (Ἶρις)",
+  "type": "god",
+  "domains": ["the rainbow", "divine messages", "the link of sky and earth"],
+  "epithets": ["wind-footed", "swift-footed", "storm-footed", "golden-winged"],
+  "summary": [
+    {
+      "text": "The swift-footed rainbow goddess, daughter of Thaumas and the Oceanid Electra and sister of the storm-winged Harpies, who runs as the gods' messenger between Olympus, earth and sea.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–267"
+    },
+    {
+      "text": "In Homer she is above all the running messenger of Zeus and the personal attendant of Hera, darting between Olympus and the plain of Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.397–425, 15.143–219"
+    }
+  ],
+  "story": [
+    {
+      "text": "Iris is the swift-footed rainbow goddess, daughter of Thaumas and the Oceanid Electra, daughter of deep-flowing Ocean. Her sisters are the long-haired Harpies, Aello and Ocypete, storm-winged spirits who keep pace with the blasts of the winds; from this same sea-born stock Iris draws her own arrow-quick flight across sky and water.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    },
+    {
+      "text": "She is the wind-footed messenger of the gods. In the Iliad she is sent again and again from Ida and Olympus to carry Zeus's commands and to serve white-armed Hera: she turns back the chariot of Hera and Athena, warns Hector and Achilles, summons the winds to kindle Patroclus's pyre, and guides old Priam unseen through the Achaean camp to ransom Hector's body.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.397–425, 15.143–219, 18.165–202, 23.198–211, 24.143–188"
+    },
+    {
+      "text": "In the gravest crises among the deathless gods her errand turns solemn: when one of them swears falsely, Zeus sends Iris far over the sea's wide back to fetch the cold water of Styx in a golden ewer for the great and dreadful oath the immortals swear. Hesiod marks how rarely the daughter of Thaumas makes that journey to the loathed goddess's silver-pillared house.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 780–787"
+    },
+    {
+      "text": "Later poets keep her in this office. In Apollonius she descends to the sons of Boreas as they chase the Harpies from blind Phineus and swears by the waters of Styx that the creatures will trouble him no more, and in Ovid she serves as Juno's messenger, purifying her mistress's limbs with sprinkled water and crossing the sky on her many-coloured bow.",
+      "sources": ["apollonius", "ovid"],
+      "citation": "Argonautica 2.284–300; Metamorphoses 4.626–632, 11.585–632"
+    }
+  ],
+  "cluster": "olympian-band"
+}

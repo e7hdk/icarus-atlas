@@ -1,0 +1,46 @@
+{
+  "id": "oneiroi",
+  "name": "The Oneiroi",
+  "greekName": "Oneiroi (Ὄνειροι)",
+  "romanName": "Somnia",
+  "type": "god",
+  "domains": ["dreams", "sleep visions", "omens"],
+  "epithets": ["the tribe of Dreams", "dwellers by the land of dreams"],
+  "summary": [
+    {
+      "text": "The Oneiroi, spirits of dreams whom Nyx bore without union, a whole dark tribe rather than a single god.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213"
+    },
+    {
+      "text": "Dream-shapes that pass to sleeping mortals through twin gates — true ones through horn, deceiving ones through ivory.",
+      "sources": ["homer"],
+      "citation": "Odyssey 19.560–567"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of Night's brood the Oneiroi are not one figure but a multitude: among Doom, Death, and Sleep, Nyx bore the tribe of Dreams, and she bore them though she lay with no one. They take their place beside their brother Hypnos as the dark powers that visit mortals when the Sun has withdrawn.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211–213",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Hyginus, gathering the children of Nox in his preface, makes the Somnia offspring of Night and Erebus together rather than fatherless — pairing Night with the lower darkness where Hesiod leaves her bearing the Dreams alone.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Homer treats single Dreams as messengers and shapeshifters. At Zeus' command a baneful Dream goes to the ships of the Achaeans, stands above Agamemnon's head in the likeness of Nestor, and lies to him to lure the army into battle. Penelope, doubting her own vision, explains that dreams reach the sleeper through two gates: those of polished horn bring true issues to pass, while those of sawn ivory deceive with words that find no fulfillment.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.1–34; Odyssey 19.560–567"
+    },
+    {
+      "text": "Their dwelling lies at the edge of the world. When Hermes leads the slain suitors down to the underworld, they pass beyond the streams of Oceanus and the gates of the Sun to the land of dreams before reaching the meadow of asphodel — the Oneiroi keeping their home, like their kindred Night, at the borders of the living world.",
+      "sources": ["homer"],
+      "citation": "Odyssey 24.11–14"
+    }
+  ],
+  "cluster": "night-court"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "urania",
+  "name": "Urania",
+  "greekName": "Ourania (Οὐρανία)",
+  "romanName": "Urania",
+  "type": "god",
+  "domains": [
+    "Muse",
+    "song",
+    "the heavens (celestial)",
+    "astronomy (late systematization)"
+  ],
+  "epithets": [
+    "the Heavenly",
+    "the Celestial"
+  ],
+  "summary": [
+    {
+      "text": "One of the nine Muses, daughters of Zeus and Mnemosyne; Hesiod names 'Urania' among the nine sisters who dwell on Olympus, and Pseudo-Apollodorus lists her seventh among the Muses borne by Memory to Zeus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Her name means 'heavenly' or 'celestial'; her later assignment specifically to astronomy is a late Roman systematization, though it suits her name. In Ovid she is the Muse who narrates the sisters' contest with the daughters of Pierus.",
+      "sources": ["hesiod", "ovid"],
+      "citation": "Theogony 75–79; Metamorphoses 5.250–268"
+    }
+  ],
+  "story": [
+    {
+      "text": "Urania is one of the nine Muses, the daughters of one mind whom Mnemosyne bore to Zeus in Pieria to be a singing memory of all that gods and mortals do. Hesiod's catalogue sets her name near the close of the roll of sisters who dwell on Olympus — Erato and Polyhymnia and Urania and Calliope, chiefest of them all; Pseudo-Apollodorus, reckoning the same sisterhood Memory bore to Zeus, places her seventh of the nine.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Her name is built from the Greek for 'heaven' and is read as 'the Heavenly' or 'the Celestial'. In the earliest sources she has no separate office of her own: Hesiod and Pseudo-Apollodorus treat the Muses as a single chorus of song rather than dividing the arts among them. The familiar later assignment of Urania specifically to astronomy — the Muse who holds globe and pointer to chart the stars — is a Roman-era systematization of the canon laid over the older undivided sisterhood; it is not an attribution found in the early Greek mythographers, though it fits her celestial name aptly enough.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Ovid gives Urania a speaking part. When the goddess Pallas comes to Helicon to see the spring struck open by Pegasus' hoof, it is Urania who receives her and answers her, then recounts the Muses' contest with the nine daughters of Pierus, who had challenged the sisters to a singing match. The Pierides sang of the gods' flight before Typhoeus; Calliope sang for the Muses and won. When the daughters of Pierus would not yield even in defeat and heaped abuse upon the victors, they were changed into chattering magpies, retaining their old loquacity and harsh garrulous cry in the trees.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.250–268, 662–678"
+    },
+    {
+      "text": "A scattered later genealogy makes Urania a mother of singers. Hyginus counts Linus, killed by Apollo, among the sons of the god born of the Muse Urania, while Pausanias records the Boeotian tradition that this Linus was the son of Urania and Amphimarus, a son of Poseidon, a musician who outdid all before him until Apollo slew him for the rivalry in song. The motherhood is reported, like the very parentage of the Muses, as a disputed and locally varying tradition rather than a fixed descent.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 161; Description of Greece 9.29.6",
+      "topic": "muse-parentage"
+    }
+  ],
+  "cluster": "olympian-band"
+}

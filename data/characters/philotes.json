@@ -1,0 +1,37 @@
+{
+  "id": "philotes",
+  "name": "Philotes",
+  "greekName": "Philotēs (Φιλότης)",
+  "type": "god",
+  "domains": ["affection", "tender friendship", "sexual intimacy"],
+  "summary": [
+    {
+      "text": "The personification of affection, fond friendship and the intimacy of lovers, born fatherless from Nyx among the dark powers of the night.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 224"
+    },
+    {
+      "text": "A distinct daemon of intimacy in her own right, not an aspect of Aphrodite — the Romans rendered her as Amicitia, Friendship.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Philotes is the abstraction of philotēs — a Greek word that spans tender affection, the bond of friendship and the act of lovemaking. Hesiod sets her among the brood that Night brought forth alone, without union, listing her between deceptive Apate and hateful Geras: deceit, then fondness, then old age, then strife. Cast among such grim siblings, the warmth she names takes on an ambivalent cast, the kind of intimacy that can entangle as easily as it can comfort.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 224"
+    },
+    {
+      "text": "Hesiod is explicit that Nyx bore this company by herself, lying with no one, so that affection enters the cosmos as a fatherless child of darkness rather than as a gift of the daylight gods. She receives no myth, no cult and no adventure: like her siblings she is a force named once and left to act upon mortals from the shadows, a principle woven into existence rather than a character with a story.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 213–225"
+    },
+    {
+      "text": "The Roman mythographer Hyginus preserves an alternate genealogy: in the preface to his Fabulae he lists Amicitia — Friendship, the Latin for Philotes — among the children begotten of Nox (Night) and Erebus (Darkness) together. Where Hesiod makes her the parthenogenic offspring of Night alone, Hyginus gives her a father in Erebus, one of several places where the Greek and Roman catalogues of Night's brood quietly disagree.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae preface"
+    }
+  ],
+  "cluster": "night-court"
+}

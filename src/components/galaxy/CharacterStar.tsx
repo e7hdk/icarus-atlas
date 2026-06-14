@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber';
 import { Billboard, Html } from '@react-three/drei';
 import * as THREE from 'three';
 import type { Character, CharacterType } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { TYPE_GLOW, IRIDESCENT_BASE_HUE } from '@/types/character';
 import { hashString, type Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 
@@ -26,6 +26,12 @@ const PULSE: Record<'slow' | 'steady' | 'quick' | 'irregular', { speed: number; 
   quick: { speed: 3.2, amp: 0.1 },
   irregular: { speed: 2.1, amp: 0.12 },
 };
+
+/** Iridescent (Muse) shimmer: a slow, seamless hue cycle. Hue wraps 360°→0° with
+ *  no seam, so the loop is flawless; the rate is gentle (full spectrum ~17s). */
+const SHIMMER_SPEED = 0.06; // hue revolutions per second
+const SHIMMER_SAT = 0.82;
+const SHIMMER_LIGHT = 0.62;
 
 let sharedGlowTexture: THREE.CanvasTexture | null = null;
 
@@ -49,6 +55,7 @@ function glowTexture(): THREE.CanvasTexture {
 export function CharacterStar({ character, position }: { character: Character; position: Vec3 }) {
   const pulseGroup = useRef<THREE.Group>(null);
   const coreMaterial = useRef<THREE.MeshBasicMaterial>(null);
+  const glowMaterial = useRef<THREE.SpriteMaterial>(null);
   const glow = TYPE_GLOW[character.type];
   const size = SIZE[character.type];
   const pulse = PULSE[glow.pulse];
@@ -62,7 +69,22 @@ export function CharacterStar({ character, position }: { character: Character; p
     lens === 'consensus' ||
     [...character.summary, ...character.story].some((entry) => entry.sources.includes(lens));
 
+  // The nine Muses carry the "iridescent" tag: a seamless rainbow hue-cycle.
+  // (undefined for every other star — the `!== undefined` checks below also
+  // narrow baseHue to a number for TypeScript.)
+  const baseHue = IRIDESCENT_BASE_HUE[character.id];
   const baseColor = useMemo(() => new THREE.Color(glow.color), [glow.color]);
+  // Scratch colour mutated each frame for Muses (avoids per-frame allocation).
+  const shimmerColor = useMemo(() => new THREE.Color(), []);
+  // A representative static tint for the lens-independent bits (label, ring,
+  // initial halo) so they read as "a Muse" without per-frame React churn.
+  const displayColor = useMemo(
+    () =>
+      baseHue !== undefined
+        ? `#${new THREE.Color().setHSL(baseHue, SHIMMER_SAT, SHIMMER_LIGHT).getHexString()}`
+        : glow.color,
+    [baseHue, glow.color],
+  );
   const phase = useMemo(() => (hashString(character.id) % 6283) / 1000, [character.id]);
   const texture = useMemo(() => glowTexture(), []);
 
@@ -78,7 +100,15 @@ export function CharacterStar({ character, position }: { character: Character; p
     const current = pulseGroup.current.scale.x;
     pulseGroup.current.scale.setScalar(THREE.MathUtils.lerp(current, target, 0.12));
     const brightness = ((hovered || selected ? 2.7 : 1.85) + osc * 0.35) * (attested ? 1 : 0.28);
-    coreMaterial.current.color.copy(baseColor).multiplyScalar(brightness);
+    if (baseHue !== undefined) {
+      // Seamless hue cycle (wraps at 1.0 → 0.0 with no discontinuity).
+      const hue = (baseHue + t * SHIMMER_SPEED) % 1;
+      shimmerColor.setHSL(hue, SHIMMER_SAT, SHIMMER_LIGHT);
+      coreMaterial.current.color.copy(shimmerColor).multiplyScalar(brightness);
+      if (glowMaterial.current) glowMaterial.current.color.copy(shimmerColor);
+    } else {
+      coreMaterial.current.color.copy(baseColor).multiplyScalar(brightness);
+    }
   });
 
   return (
@@ -110,8 +140,9 @@ export function CharacterStar({ character, position }: { character: Character; p
         </mesh>
         <sprite scale={[size * 7, size * 7, 1]}>
           <spriteMaterial
+            ref={glowMaterial}
             map={texture}
-            color={glow.color}
+            color={displayColor}
             blending={THREE.AdditiveBlending}
             opacity={attested ? (selected ? 0.7 : hovered ? 0.85 : 0.55) : hovered ? 0.3 : 0.14}
             depthWrite={false}
@@ -123,7 +154,7 @@ export function CharacterStar({ character, position }: { character: Character; p
             <mesh>
               <ringGeometry args={[size * 1.55, size * 1.68, 64]} />
               <meshBasicMaterial
-                color={glow.color}
+                color={displayColor}
                 toneMapped={false}
                 transparent
                 opacity={0.85}
@@ -144,7 +175,7 @@ export function CharacterStar({ character, position }: { character: Character; p
           <div
             className="whitespace-nowrap font-display text-[11px] uppercase tracking-[0.22em]"
             style={{
-              color: hovered ? glow.color : attested ? 'rgb(241 245 249 / 0.62)' : 'rgb(241 245 249 / 0.25)',
+              color: hovered ? displayColor : attested ? 'rgb(241 245 249 / 0.62)' : 'rgb(241 245 249 / 0.25)',
             }}
           >
             {character.name}

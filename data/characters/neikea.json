@@ -1,0 +1,40 @@
+{
+  "id": "neikea",
+  "name": "The Neikea",
+  "greekName": "Neikea (Νείκεα)",
+  "type": "god",
+  "domains": ["quarrels", "grievances", "strife"],
+  "epithets": ["Quarrels", "Disputes"],
+  "summary": [
+    {
+      "text": "The Neikea are the personified spirits of quarrels and grievances, one of the grim plural broods that Strife brought forth without a father.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    },
+    {
+      "text": "They belong to the dark children of Eris, the powers that beset mortal life — toil, famine, sorrows, battles and slaughters.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of Strife's offspring, abhorred Eris bears the Neikea — the Quarrels — among a brood begotten with no father. They stand beside Ponos (Toil), Lethe (Forgetfulness), Limos (Famine), the tearful Algea (Sorrows), the Hysminai (Combats) and Machai (Fights), the Phonoi (Murders) and Androktasiai (Manslaughters), the Pseudea (Lies) and Logoi (Disputes), Amphillogiai (Ambiguities), Dysnomia (Lawlessness), Ate (Ruin) and Horkos (Oath). The Neikea are thus not gods of the Olympian order but discord itself given personified, plural shape.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Their name marks a particular face of strife: neikos is the verbal quarrel, the bitter dispute and reproach that sets people against one another, distinct from the bloodier Machai and Hysminai of open battle. As children of Eris rather than independent deities, the Neikea personify the moment a grievance hardens into open contention — the seed from which Hesiod's grimmer brood of fights and slaughters grows.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    },
+    {
+      "text": "Hesiod gives the Neikea no separate deed or myth. Like their siblings they are a noun made into a force, listed and never narrated: the abstract powers of conflict that, in his moral cosmology, descend from Night through Strife to weave quarrelling into the very fabric of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    }
+  ],
+  "cluster": "night-court"
+}

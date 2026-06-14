@@ -1,0 +1,69 @@
+{
+  "id": "gigantes",
+  "name": "The Gigantes",
+  "greekName": "Gigantes (Γίγαντες)",
+  "romanName": "Gigantes",
+  "type": "creature",
+  "domains": [
+    "earthborn giants",
+    "revolt against the gods",
+    "the Gigantomachy"
+  ],
+  "epithets": [
+    "earthborn",
+    "serpent-footed",
+    "armoured spear-bearers"
+  ],
+  "summary": [
+    {
+      "text": "The Gigantes were a brood of mighty earthborn warriors — gleaming in armour and grasping long spears, with the scales of dragons for feet — who rose against the Olympians and were destroyed in the Gigantomachy.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 183–186; Bibliotheca 1.6.1–2"
+    },
+    {
+      "text": "Born to avenge the fallen Titans, they were undone only because an oracle gave the gods no victory over them save with a mortal at their side — and so Heracles fought beside the Olympians on the plain of Phlegra.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.6.1–2"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod the Giants spring from the wound of heaven itself: when Cronus castrated Uranus and the bloody drops gushed upon the Earth, Gaia received them, and as the seasons turned she bore the Erinyes, the ash-tree Nymphs called Meliae, and the great Giants gleaming in armour, holding long spears in their hands. Apollodorus likewise makes them children of Gaia — but says she conceived them by Sky (Uranus) and brought them forth in her wrath over the Titans, to avenge that older defeated race.",
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
+      "citation": "Theogony 183–186; Bibliotheca 1.6.1",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "Apollodorus paints them in full: matchless in the bulk of their bodies and invincible in might, terrible to look upon, with long locks drooping from head and chin and the scales of dragons for feet. They hurled rocks and burning oaks against the sky. Some placed their birth at Phlegrae, others at Pallene; surpassing all the rest were Porphyrion and Alcyoneus, the latter immortal so long as he fought in the land of his birth.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.6.1"
+    },
+    {
+      "text": "The gods held an oracle that no Giant could perish at the hand of gods, but that with a mortal's help they might be made an end of. So Zeus called Heracles to the war, and on the field the Olympians struck down the brood one by one: Porphyrion, inflamed with lust for Hera, fell to Zeus's thunderbolt and Heracles' arrow; Apollo and Heracles together blinded Ephialtes; Dionysus slew Eurytus, Hephaestus felled Mimas, and Athena, in the version Pausanias preserves at Tegea, drove her chariot against Enceladus and crushed him beneath the island of Sicily.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.6.1–2; Description of Greece 8.47.1"
+    },
+    {
+      "text": "The other poets keep the memory of the war without retelling it whole. Homer remembers the Giants only as a wild, insolent tribe near akin to the gods, like the Cyclopes, once ruled by Eurymedon who brought destruction on his froward people. Ovid sings in the higher strain of the giants and the victorious bolts hurled on the Phlegraean plain, and tells how Perseus avenged the Bactrian Halcyoneus — so that the Gigantomachy became the very type of cosmic order defended against the earth's rebellious children.",
+      "sources": [
+        "homer",
+        "ovid"
+      ],
+      "citation": "Odyssey 7.56–60; Metamorphoses 10.150–151, 5.144–148"
+    }
+  ],
+  "cluster": "chthonic"
+}

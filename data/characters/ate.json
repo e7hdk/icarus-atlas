@@ -1,0 +1,45 @@
+{
+  "id": "ate",
+  "name": "Ate",
+  "greekName": "Atē (Ἄτη)",
+  "type": "god",
+  "domains": ["ruin", "blind folly", "delusion", "mischief"],
+  "epithets": ["she that blindeth all"],
+  "summary": [
+    {
+      "text": "The goddess of ruin and blind folly — the delusion that robs both mortals and gods of their wits and drives them headlong into disaster.",
+      "sources": ["homer", "hesiod"],
+      "citation": "Iliad 19.91"
+    },
+    {
+      "text": "Homer makes her the eldest daughter of Zeus, who hurled her from Olympus so that she now walks over the heads of men; Hesiod instead counts her among the grim brood that Strife bore.",
+      "sources": ["homer", "hesiod"],
+      "citation": "Iliad 19.91; Theogony 230",
+      "topic": "ate-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ate is delusion made divine: the ruinous infatuation that clouds judgement and turns prosperity to catastrophe. Homer names her the eldest daughter of Zeus, \"she that blindeth all,\" a power fraught with bane whose feet are too delicate to touch the ground — instead she walks over the heads of men, ensnaring this one and that and bringing them to harm.",
+      "sources": ["homer"],
+      "citation": "Iliad 19.91-94"
+    },
+    {
+      "text": "Her parentage is disputed. For Hesiod she is no child of Zeus at all but one of the joyless brood that abhorred Strife (Eris) brought forth — sister to Toil, Forgetfulness, Famine, the Battles and Murders, Lying Words and Lawlessness, all of one ruinous nature. Homer, by contrast, sets her at the very summit of Olympus as Zeus's firstborn daughter before her fall.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 226-232",
+      "topic": "ate-parentage"
+    },
+    {
+      "text": "Even Zeus was not proof against her. On the day Heracles was to be born, Ate so blinded him that he swore a rash oath, letting Hera trick him into making Eurystheus — not Heracles — lord over the Argives. In his wrath Zeus seized Ate by her bright-tressed head, swore she should never return to Olympus and the starry heaven, and whirling her in his hand flung her down to the tilled fields of men, where she has worked her ruin among mortals ever since.",
+      "sources": ["homer"],
+      "citation": "Iliad 19.95-131"
+    },
+    {
+      "text": "Behind her, to mend the harm she does, come the Litai — the Prayers, also daughters of great Zeus. They are halting and wrinkled and of eyes askance, and they follow ever in the steps of Ate; but Ate is strong and swift of foot and far outruns them all, racing ahead over the whole earth to do hurt before the limping Prayers can heal it.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.502-507"
+    }
+  ],
+  "cluster": "night-court"
+}

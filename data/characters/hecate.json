@@ -1,0 +1,42 @@
+{
+  "id": "hecate",
+  "name": "Hecate",
+  "greekName": "Hekatē (Ἑκάτη)",
+  "romanName": "Trivia",
+  "type": "god",
+  "domains": ["witchcraft and sorcery", "the night", "the dead", "boundaries and the threshold", "a triple share of earth, sky and sea"],
+  "epithets": ["Brimo", "Crataeis"],
+  "summary": [
+    {
+      "text": "Only child of the Titan-descended Perses and the star-goddess Asteria, born into a single household and honoured by Zeus above all the gods; Hesiod grants her a share of power in earth, sky and sea that the new king left untouched, while later poets remember her as the dread, night-wandering goddess of sorcery and the dead.",
+      "sources": ["hesiod", "apollodorus", "apollonius"],
+      "citation": "Theogony 404–452; Bibliotheca 1.2.4; Argonautica 3.1025–1041",
+      "topic": "hecate-sphere"
+    }
+  ],
+  "story": [
+    {
+      "text": "Asteria, daughter of Coeus and Phoebe, was led by Perses to his great house to be his wife, and she bore a single daughter, Hecate, whom Zeus the son of Cronos honoured above all. Pseudo-Apollodorus preserves the same household exactly — to Perses and Asteria was born Hecate — making her the one child of a marriage between two second-generation Titan lines.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 404–411; Bibliotheca 1.2.4"
+    },
+    {
+      "text": "Hesiod sings her as a beneficent power whose privilege predates and survives the Olympian order. Zeus gave her splendid gifts: a share of the earth and the unfruitful sea, and honour also in the starry heaven, and when he became king he took nothing of what she had received from the older gods. To this day she favours whomever she will — she sits beside reverend kings in judgement, gives victory and glory to warriors and good speed to horsemen, grants or withholds the catch of fishermen who pray to her with Poseidon, and increases the herds in the byre together with Hermes; she is a kindly nurse of the young.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 411–452",
+      "topic": "hecate-sphere"
+    },
+    {
+      "text": "In Apollonius she has darkened into the dread mistress of magic. Medea is her priestess, busied all day in Hecate's temple, and the goddess is propitiated by night at a round pit where a black ewe is slain and offered whole, a libation of honey poured, and the worshipper must retreat without looking back at the baying of the hounds of the underworld. When Jason calls on Hecate Brimo she comes from the uttermost depths wreathed in oak-leaves and writhing serpents, and the dark earth shakes; she is the night-wandering queen among the dead who taught Medea to handle the magic herbs of land and water. Ovid keeps her in the same role, the three-faced goddess whose herbs and altars belong to enchantment and the powers of Night, invoked by Medea and by Circe alike.",
+      "sources": ["apollonius", "ovid"],
+      "citation": "Argonautica 3.210, 3.515, 3.828, 3.1025–1041, 3.1211; Metamorphoses 7.74, 7.241–242",
+      "topic": "hecate-sphere"
+    },
+    {
+      "text": "Her terror surfaces in scattered deeds. In the war of the Giants, Pseudo-Apollodorus reports, Hecate killed Clytius with her torches. Apollonius, in the warning Hera carries through Thetis, names her the mother of the deadly Ausonian Scylla, born to Phorcys — here the goddess is called Crataeis, a boundary-name for the night-wanderer. So the same figure spans the tradition's whole range: the universally honoured daughter of Perses in Hesiod, and the torch-bearing, serpent-crowned power of the crossroads and the dead in the later poets.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.6.2; Argonautica 4.829"
+    }
+  ],
+  "cluster": "chthonic"
+}

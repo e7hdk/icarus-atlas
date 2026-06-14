@@ -1,0 +1,70 @@
+{
+  "id": "tityos",
+  "name": "Tityos",
+  "greekName": "Tityos (Τιτυός)",
+  "romanName": "Tityus",
+  "type": "creature",
+  "domains": [
+    "earth-giant",
+    "underworld punishment",
+    "sacrilege"
+  ],
+  "epithets": [
+    "the giant of Panopeus",
+    "stretched over nine acres"
+  ],
+  "summary": [
+    {
+      "text": "Tityos, a colossal earth-born giant, lusted after Leto and was shot dead by her children Apollo and Artemis for the outrage.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Homer, Odyssey 11.576–581; Apollodorus, Bibliotheca 1.4.1; Apollonius, Argonautica 1.759–762"
+    },
+    {
+      "text": "For his crime he lies in the underworld stretched over nine acres while two vultures forever tear at his liver.",
+      "sources": [
+        "homer",
+        "ovid"
+      ],
+      "citation": "Homer, Odyssey 11.576–581; Ovid, Metamorphoses 4.456–458"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes Tityos a son of glorious Gaia, the Earth herself. Odysseus sees him among the punished dead, lying on the ground and stretched over nine roods, with two vultures sitting one on either side and tearing at his liver, plunging their beaks into his bowels; he cannot beat them off with his hands. This is his penalty for having offered violence to Leto, the honoured consort of Zeus, as she went toward Pytho across the lovely land of Panopeus.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Homer, Odyssey 11.576–581",
+      "topic": "tityos-parentage"
+    },
+    {
+      "text": "Apollodorus gives a different birth: Tityos was a son of Zeus and Elare, daughter of Orchomenus. After Zeus had debauched her he hid her under the earth for fear of Hera, and there she brought forth a son of monstrous size, whom Earth then carried to birth — so that the giant is reckoned a child of the ground after all. When Leto came to Pytho, Tityos, incited by Hera, attempted to violate her, but she called her children and they shot him dead with their arrows.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollodorus, Bibliotheca 1.4.1",
+      "topic": "tityos-parentage"
+    },
+    {
+      "text": "Apollonius preserves the same assault on the chest of Jason's cloak: the youthful Phoebus Apollo is wrought shooting at mighty Tityos, who was boldly dragging Leto by her veil — Tityos whom Elare bore, but whom Earth nursed and gave a second birth. Pausanias, visiting Panopeus in Phocis, identifies the giant's tomb there and argues against his legendary bulk, holding that the Homeric 'nine roods' names not the size of Tityos but the place where he lay, called Nine Roods.",
+      "sources": [
+        "apollonius",
+        "pausanias"
+      ],
+      "citation": "Apollonius, Argonautica 1.759–762; Pausanias, Description of Greece 10.4.5"
+    },
+    {
+      "text": "Ovid sets Tityos among the great sinners of the underworld beside Tantalus, Sisyphus and Ixion: in the accursed seat his entrails are given over to be mangled, his body distended across nine acres. Pausanias adds that in Polygnotus' painting of the dead at Delphi Tityos is shown no longer suffering active torment but worn away by it, reduced to an indistinct and mutilated phantom.",
+      "sources": [
+        "ovid",
+        "pausanias"
+      ],
+      "citation": "Ovid, Metamorphoses 4.456–458; Pausanias, Description of Greece 10.29.3"
+    }
+  ],
+  "cluster": "chthonic"
+}

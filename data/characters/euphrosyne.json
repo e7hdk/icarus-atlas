@@ -1,0 +1,39 @@
+{
+  "id": "euphrosyne",
+  "name": "Euphrosyne",
+  "greekName": "Euphrosynē (Εὐφροσύνη)",
+  "type": "god",
+  "domains": ["mirth", "good cheer", "grace", "festive joy"],
+  "epithets": ["Mirth", "Good Cheer"],
+  "summary": [
+    {
+      "text": "One of the three Charites (Graces), daughter of Zeus and the Oceanid Eurynome; her name means 'Mirth, Good Cheer', and she is sister to Aglaea and Thalia.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 907–911"
+    },
+    {
+      "text": "With her sisters she haunts Olympus near the Muses, and from the Charites' glancing eyes flows limb-loosening love.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 910–911"
+    }
+  ],
+  "story": [
+    {
+      "text": "Euphrosyne is one of the three Charites, the Graces, whom Hesiod names in the Theogony: Eurynome, the fair-formed daughter of Ocean, bore to Zeus three fair-cheeked Graces — Aglaea, Euphrosyne, and lovely Thaleia. Her name is built from the Greek for gladness and good cheer, so that 'Euphrosyne' is Mirth itself given a face. Pseudo-Apollodorus repeats the same descent in his catalogue of Zeus's children, listing the Graces Aglaia, Euphrosyne, and Thalia as the daughters of Zeus by Eurynome, and Pausanias confirms that the Theogony makes the Graces daughters of Zeus and Eurynome under exactly these three names.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 907–911; Bibliotheca 1.3.1; Description of Greece 9.35.5"
+    },
+    {
+      "text": "Of the Charites Hesiod sings that from their glancing eyes flowed love that unnerves the limbs, and beautiful is their glance beneath their brows; Euphrosyne shares in this melting, limb-loosening beauty that is the gift of all three sisters. They dwell on Olympus a little way from the topmost peak, where beside the Muses' bright dancing places the Graces and Himeros (Desire) live in delight — so that mirth, song, and longing keep company among the immortals.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 64–65, 910–911"
+    },
+    {
+      "text": "The Graces' parentage was not, however, agreed among the ancients. Pausanias, while accepting the Theogony as good evidence, notes that its authorship was already doubted in his day, and records rival accounts: Antimachus held the Graces to be daughters of Aegle and the Sun, and other poets gave them other mothers and even other names. Homer for his part names a Grace called Pasithea, promised by Hera to Sleep, leading some to suspect he knew of Graces older than Hesiod's three — so that Euphrosyne's place as one of a canonical trio is itself one tradition among several.",
+      "sources": ["pausanias", "homer"],
+      "citation": "Description of Greece 9.35.4–5; Iliad 14.267–276",
+      "topic": "charites-parentage"
+    }
+  ],
+  "cluster": "olympian-band"
+}

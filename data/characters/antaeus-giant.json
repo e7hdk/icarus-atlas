@@ -1,0 +1,70 @@
+{
+  "id": "antaeus-giant",
+  "name": "Antaeus",
+  "greekName": "Antaios (Ἀνταῖος)",
+  "romanName": "Antaeus",
+  "type": "creature",
+  "domains": [
+    "Libyan earth-giant",
+    "invincible wrestler",
+    "slayer of strangers"
+  ],
+  "epithets": [
+    "son of Earth",
+    "the Libyan giant"
+  ],
+  "summary": [
+    {
+      "text": "The Libyan giant who forced every passing stranger to wrestle him and killed all comers, invincible so long as he touched his mother Earth — until Heracles lifted him clear of the ground and crushed the life from him in the air.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.11; Fabulae 31"
+    },
+    {
+      "text": "His parentage is disputed: Hyginus calls him a son of Terra (Earth), while Apollodorus makes him a son of Poseidon.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Fabulae 31; Bibliotheca 2.5.11",
+      "topic": "antaeus-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Antaeus was the giant who ruled Libya, a brute who would not let a traveller pass without first compelling him to wrestle, and when the stranger was worn down he killed him. Hyginus names him among the incidental labours of Hercules: 'He slew Antaeus, son of Earth, in Libya. This man would compel visitors to wrestle with him, and when they were exhausted would kill them.' From the heaped dead he was said to build a temple to his father Poseidon out of the skulls of those he had murdered.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 31"
+    },
+    {
+      "text": "His parentage divided the mythographers. Hyginus makes him a son of Terra — Earth herself — which suits the secret of his strength. Apollodorus instead calls him a son of Poseidon, ruler of that country, which suits the temple of skulls he raised to the sea-god. The two filiations are not easily reconciled, and the sources let the contradiction stand.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.11; Fabulae 31",
+      "topic": "antaeus-parentage"
+    },
+    {
+      "text": "The secret of his invincibility lay in the touch of the ground. As Apollodorus tells it, Heracles, traversing Libya on his way to fetch the apples of the Hesperides, was forced to wrestle Antaeus, 'who used to kill strangers by forcing them to wrestle'; but when Antaeus touched earth he waxed stronger, so that no fall could finish him. Ovid puts the same secret in Hercules' own mouth among his boasts of labour — that he 'took his mother's strength from fierce Antaeus' — for the giant drew his power from his mother Earth, and lost it the moment he left her.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 2.5.11; Metamorphoses 9.183–184"
+    },
+    {
+      "text": "Heracles solved the giant by lifting rather than throwing him. Perceiving that Antaeus grew stronger at every contact with the ground, he hugged him fast, raised him aloft, and broke and killed him while he hung in the air, severed from the source of his strength. The wrestling-match became a favourite subject of art: Pausanias records that at the sanctuary of Heracles among the Thebans the wrestling with Antaeus was carved in place of other labours.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.5.11; Description of Greece 9.11.6"
+    }
+  ],
+  "cluster": "chthonic"
+}

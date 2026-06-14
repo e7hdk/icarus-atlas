@@ -1,0 +1,65 @@
+{
+  "id": "dike",
+  "name": "Dike",
+  "greekName": "Dike (Δίκη)",
+  "romanName": "Justitia",
+  "type": "god",
+  "domains": [
+    "justice",
+    "right judgement",
+    "moral order"
+  ],
+  "epithets": [
+    "virgin Justice",
+    "daughter of Zeus"
+  ],
+  "summary": [
+    {
+      "text": "Goddess of justice and right judgement, one of the three Horae — daughter of Zeus and Themis, sister to Eunomia (Order) and Eirene (Peace).",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "As the personified guardian of just verdicts she sits beside her father Zeus and denounces the wicked hearts of men; later poets identify her with Astraea, the virgin who fled the earth to become the constellation Virgo.",
+      "sources": [
+        "hesiod",
+        "ovid"
+      ],
+      "citation": "Works and Days 256–262; Metamorphoses 1.149–150"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus married bright Themis, she bore him the Horae — and Eunomia (Order), Dike (Justice), and blooming Eirene (Peace), who mind the works of mortal men. Dike thus belongs to that trinity of seasonal goddesses who hold human society to its proper measure, her sisters governing lawful order and peace while she presides over right judgement itself.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "Hesiod makes Dike a watchful power over mortal courts. There is virgin Justice, the daughter of Zeus, honored and reverenced among the gods of Olympus; whenever anyone harms her with lying slander, she sits beside her father, Zeus the son of Cronos, and tells him of men's wicked heart, until the people pay for the reckless deeds and crooked judgements of their rulers. She is the divine witness against the bribe-devouring judge who gives sentence with crooked verdicts.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Works and Days 256–262"
+    },
+    {
+      "text": "Later authors expanded and reshaped the roster of the Horae: where Hesiod names three — Eunomia, Dike and Eirene — Hyginus lists a fuller set of Hours born of Jove and Themis, among them Eunomia (Order), Dike (Justice) and Eirene (Peace) alongside Auco, Pherusa, Carpo, Euporia, Orthosie and Thallo.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 183",
+      "topic": "horae-roster"
+    },
+    {
+      "text": "Dike is widely identified with Astraea, the maiden goddess of justice who, in Ovid's account of the world's decline through the ages, was the last of the immortals to abandon humankind: in the blood-stained Iron Age the virgin deity Astraea forsook the earth, and tradition set her among the stars as the constellation Virgo. Strictly, however, Astraea is reckoned a distinct figure — daughter of Astraeus and Eos — so the equation belongs to interpretive tradition rather than to a single fixed genealogy.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 1.149–150"
+    }
+  ],
+  "cluster": "olympian-band"
+}

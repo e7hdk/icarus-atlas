@@ -1,0 +1,44 @@
+{
+  "id": "cottus",
+  "name": "Cottus",
+  "greekName": "Kottos (Κόττος)",
+  "type": "primordial",
+  "domains": ["primordial strength", "Titanomachy"],
+  "epithets": ["the Hundred-Hander", "blameless Cottus"],
+  "summary": [
+    {
+      "text": "One of the three Hundred-Handers (Hecatoncheires), sons of Uranus and Gaia, each monstrous with a hundred arms and fifty heads.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "Bound within the earth by his father Uranus, he was freed by Zeus and fought as his ally in the Titanomachy, hurling rocks at the Titans.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 617–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "Cottus is one of the three Hundred-Handers, or Hecatoncheires, born to Uranus (Sky) and Gaia (Earth) alongside his brothers Briareos and Gyes. Hesiod describes them as great and doughty beyond telling, each terrible son grown from his shoulders a hundred arms and from his shoulders fifty heads, with strength and might immeasurable in all their works.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "Where the children of Sky and Earth fall in birth order is itself disputed. Hesiod names the Hundred-Handers last, after the Titans and the Cyclopes; Apollodorus, by contrast, makes them the very first-born of Uranus and Gaia, unsurpassed in size and might.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.1",
+      "topic": "hundred-handers-birth-order"
+    },
+    {
+      "text": "Uranus, jealous and afraid of their exceeding manhood, bound Cottus and his brothers in cruel bonds and hid them within the depths of the earth. On Gaia's counsel Zeus released them from their bondage under misty gloom; blameless Cottus answered the god with thanks, and the three brothers joined the Olympians against the Titans, raising fierce fighting in the forefront and launching three hundred rocks, one upon another, until they overshadowed and overwhelmed the Titans.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 617–720"
+    },
+    {
+      "text": "After the Titans were cast down beneath the wide-pathed earth and walled behind Poseidon's gates of bronze, Cottus and Gyes were appointed trusty warders of Zeus, dwelling upon Ocean's foundations and keeping eternal guard over the defeated Titans in Tartarus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 815–819"
+    }
+  ],
+  "cluster": "titan-ring"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "thalia-muse",
+  "name": "Thalia",
+  "greekName": "Thaleia (Θάλεια)",
+  "romanName": "Thalia",
+  "type": "god",
+  "domains": ["song", "the Muses", "comedy", "festive abundance"],
+  "epithets": ["the Blooming", "the Festive"],
+  "summary": [
+    {
+      "text": "One of the nine Muses, daughters of Zeus and Mnemosyne; Hesiod names 'Thaleia' among the sisters who dwell on Olympus, and her name means 'blooming, festive abundance'.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 75–79"
+    },
+    {
+      "text": "In Apollodorus she bears the Corybantes to Apollo; her familiar role as Muse of comedy and pastoral verse is a late Roman systematization, not an early-source attribution.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Thalia is one of the nine Muses, the daughters whom great Zeus begot on Memory in Pieria. Hesiod's catalogue sets her name in the line of sisters — Clio and Euterpe, Thaleia, Melpomene and Terpsichore — and Pseudo-Apollodorus lists her eighth among the nine Muses borne by Mnemosyne to Zeus, between Urania and Polymnia. Her name is built from the Greek word for blooming, flourishing growth, so that 'Thaleia' carries the sense of festive abundance and rich good cheer; in the earliest sources she is simply one of the choir of song, not yet bound to any single art.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Pseudo-Apollodorus alone among our sources gives Thalia a motherhood: he records that Thalia had by Apollo the Corybantes, the armed, ecstatic dancers whose clashing of bronze later guarded the infant gods. The notice stands in the same passage that assigns the Sirens to Melpomene and Rhesus to Euterpe, parceling out a divine child to several of the Muses; the Corybantes' parentage is elsewhere told otherwise, and this descent from Thalia and Apollo is the mythographer's particular account rather than a universal one.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.4"
+    },
+    {
+      "text": "Thalia's familiar role as the Muse of comedy and of pastoral, light poetry — laughing mask and shepherd's crook in hand — belongs to a later Roman systematization that parceled out one art to each of the nine sisters. The early sources know no such division of labour: in Hesiod and the mythographers the Muses share the gift of song as one chorus, and Thalia's comic mask is a learned assignment laid over the older, undivided 'blooming one'.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 1–115"
+    }
+  ],
+  "cluster": "olympian-band"
+}

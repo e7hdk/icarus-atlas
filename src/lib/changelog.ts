@@ -14,6 +14,18 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.1.5',
+    codename: 'The First Broods and the Muses’ Fire',
+    date: '2026-06-14',
+    lines: [
+      'From the deep beginning the missing broods took fire at last: the one-eyed Cyclopes who forge the thunderbolt and the hundred-handed brothers who pin the Titans down, the Erinyes and the Giants sprung from Heaven’s spilled blood, the ash-tree Meliae, sea-bright Eurybia and the Mountains themselves — the first cosmos made whole.',
+      'Night unfolded the last of her children — the death-fates Keres, the tribe of Dreams, the Hesperides who keep the golden apples, tender Philotes and oath-binding Styx — while Strife loosed her grim brood of Toil and Famine, Lies and Ruin, and the Oath that hunts the false-swearer.',
+      'Then the gods’ own household gathered: the three Graces and the three Seasons, childbirth’s Eileithyia, rainbow Iris the messenger, Hecate honoured across heaven and earth and sea, and the four who stand at Zeus’s throne — Victory, Zeal, Strength and Force.',
+      'And the nine Muses rose, the daughters of Memory, and would not burn in any single colour: each of the Nine wheels slowly through the whole spectrum, the sisters spread across the rainbow so their cluster shimmers in every hue at once — for it is by their fire that all the other stars are lit.',
+      'The sky itself was tuned: wedded stars are now drawn into one ring, that consorts may orbit close as a binary, and the whole cosmos breathes a little wider, that every house might be read at a glance.',
+    ],
+  },
+  {
     version: '0.1.4',
     codename: 'The Monsters and Their Hunter',
     date: '2026-06-14',

@@ -1,0 +1,44 @@
+{
+  "id": "eunomia",
+  "name": "Eunomia",
+  "greekName": "Eunomia (Εὐνομία)",
+  "type": "god",
+  "domains": ["good order", "lawful conduct", "good governance"],
+  "epithets": ["Good Order", "Lawful Conduct"],
+  "summary": [
+    {
+      "text": "Eunomia is the personification of good order and obedience to just law — one of the three Horae whom Themis bore to Zeus, alongside her sisters Dike (Justice) and Eirene (Peace).",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "She embodies the well-governed city and stands as the exact moral counterpart of Dysnomia (Lawlessness), the fatherless child of Eris.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232, 902"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Zeus swallowed Metis and made Athena his own, he took bright Themis as his wife, and she bore the Horae — Eunomia (Order), Dike (Justice) and blooming Eirene (Peace) — 'who mind the works of mortal men,' together with the Moirai whom Zeus honored above all. Eunomia is thus a goddess of the second divine generation, born of a Titan mother and the king of the gods, her domain set squarely within the affairs of humankind.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "Her name carries her nature: eunomia is the Greek ideal of good government, the condition of a city whose citizens keep just law and right custom. She personifies the well-ordered polis itself — lawful conduct, civic harmony and the obedience that lets a community flourish. As one of the Horae she works in concert with her sisters, so that justice (Dike) and peace (Eirene) attend wherever good order is kept.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "Hesiod sets Eunomia in deliberate opposition to Dysnomia, Lawlessness, whom Eris (Strife) bore without a father among her brood of grim children. The two are moral poles of the same cosmos: where Eunomia upholds the well-governed city, Dysnomia unmakes it, so that the breakdown of law is figured as the dark mirror of the order Eunomia maintains.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hyginus likewise makes Eunomia a daughter of Jove (Zeus) and Themis and numbers her among the Horae beside Dike and Eirene; but he gives an expanded catalogue of the Hours — Auco, Eunomia, Pherusa, Carpo, Dike, Euporia, Eirene, Orthosie and Thallo — rather than Hesiod's canonical three, reflecting the later mythographers' larger and divergent lists.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 183",
+      "topic": "horae-roster"
+    }
+  ],
+  "cluster": "olympian-band"
+}

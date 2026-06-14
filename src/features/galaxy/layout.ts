@@ -270,6 +270,128 @@ export function computeGenerations(
   // rare god born of a mortal), so no child ever ends up inside a parent.
   propagate(parentRelations, generations);
 
+  // ---- Marriage-aware leveling -------------------------------------------
+  // Spouses are contemporaries, so a couple should share one generation ring;
+  // otherwise the deeper-charted partner (a Spartan eponym-king descendant, say)
+  // sits many rings out from the shallow-charted one, and the consort binary can
+  // never form. The radius should read as mythic contemporaneity, not raw
+  // lineage depth ("the mortal clock"). We union the consort graph into
+  // contemporary cohorts — refusing any merge that would trap an ancestor and a
+  // descendant in one cohort (mother-son unions keep their parent ordering and
+  // never form a cycle) — then level each cohort to its MAX member generation
+  // (raising only, so no parent floor is ever crossed) and re-run the parent
+  // fixpoint so descendants stay outside. Both steps only raise generations over
+  // a cohort-contracted DAG, so the iteration converges.
+  //
+  // We level a couple ONLY when the two spouses share a common ancestor — i.e.
+  // a same-dynasty (cousin) marriage, where pulling them to one ring genuinely
+  // co-locates them (they already sit in the same wedge). A cross-dynasty union
+  // (Pelopid Agamemnon × Tyndarid Clytemnestra) is left alone: leveling there
+  // cannot close the gap — the spouses live in different wedges, an ANGULAR tear
+  // the radius cannot fix — and would only fling the shallow-charted spouse out
+  // past its own parent (Atreus → Agamemnon), tearing a lineage to no benefit.
+  const parentsOf = new Map<string, string[]>();
+  for (const relation of parentRelations) {
+    const list = parentsOf.get(relation.from) ?? [];
+    list.push(relation.to);
+    parentsOf.set(relation.from, list);
+  }
+  const isAncestor = (ancestor: string, descendant: string): boolean => {
+    const stack = [...(parentsOf.get(descendant) ?? [])];
+    const seen = new Set<string>();
+    while (stack.length > 0) {
+      const current = stack.pop()!;
+      if (current === ancestor) return true;
+      if (seen.has(current)) continue;
+      seen.add(current);
+      for (const grandparent of parentsOf.get(current) ?? []) stack.push(grandparent);
+    }
+    return false;
+  };
+  // How many generation rings a single consort cohort may span. A couple is
+  // leveled only while the merged cohort stays within this many rings of itself,
+  // which directly bounds the worst lineage tear the leveling can open: the
+  // shallowest member is raised by at most the cohort spread, so it can never be
+  // flung more than MAX_COHORT_SPREAD rings past its own parent. Cousin and
+  // near-contemporary marriages (small gaps) bind freely; a deep cross-dynasty
+  // union (Pelopid Agamemnon, gen 11, × Tyndarid Clytemnestra, gen 18) exceeds
+  // the bound and is left alone — leveling could not close its angular gap
+  // anyway (the spouses live in different wedges), it would only tear a lineage.
+  const MAX_COHORT_SPREAD = 3;
+  const cohortGenSpan = (members: string[]): [number, number] => {
+    let min = Infinity;
+    let max = -Infinity;
+    for (const member of members) {
+      const g = generations.get(member) ?? 0;
+      if (g < min) min = g;
+      if (g > max) max = g;
+    }
+    return [min, max];
+  };
+  const ufParent = new Map<string, string>();
+  const ufFind = (id: string): string => {
+    let root = id;
+    while ((ufParent.get(root) ?? root) !== root) root = ufParent.get(root)!;
+    let cursor = id;
+    while ((ufParent.get(cursor) ?? cursor) !== cursor) {
+      const next = ufParent.get(cursor)!;
+      ufParent.set(cursor, root);
+      cursor = next;
+    }
+    return root;
+  };
+  const cohortMembers = new Map<string, string[]>();
+  const membersOf = (root: string): string[] => cohortMembers.get(root) ?? [root];
+  const consortEdges = relations
+    .filter((relation) => relation.type === 'consort')
+    .sort((a, b) =>
+      a.from === b.from ? a.to.localeCompare(b.to) : a.from.localeCompare(b.from),
+    );
+  for (const relation of consortEdges) {
+    if (!generations.has(relation.from) || !generations.has(relation.to)) continue;
+    const rootA = ufFind(relation.from);
+    const rootB = ufFind(relation.to);
+    if (rootA === rootB) continue;
+    const membersA = membersOf(rootA);
+    const membersB = membersOf(rootB);
+    // Bound the merged cohort's generation span: a deep cross-dynasty union would
+    // fling its shallow spouse far past its own parent for no angular gain.
+    const [min, max] = cohortGenSpan([...membersA, ...membersB]);
+    if (max - min > MAX_COHORT_SPREAD) continue;
+    // Refuse a merge that would put an ancestor and a descendant in one cohort.
+    let wouldTrapLineage = false;
+    for (const x of membersA) {
+      for (const y of membersB) {
+        if (isAncestor(x, y) || isAncestor(y, x)) {
+          wouldTrapLineage = true;
+          break;
+        }
+      }
+      if (wouldTrapLineage) break;
+    }
+    if (wouldTrapLineage) continue;
+    ufParent.set(rootA, rootB);
+    cohortMembers.set(rootB, [...membersB, ...membersA]);
+    cohortMembers.delete(rootA);
+  }
+  for (let round = 0; round < characters.length; round++) {
+    const cohortMax = new Map<string, number>();
+    for (const id of generations.keys()) {
+      const root = ufFind(id);
+      cohortMax.set(root, Math.max(cohortMax.get(root) ?? 0, generations.get(id) ?? 0));
+    }
+    let changed = false;
+    for (const id of generations.keys()) {
+      const leveled = cohortMax.get(ufFind(id));
+      if (leveled !== undefined && leveled > (generations.get(id) ?? 0) + 0.001) {
+        generations.set(id, leveled);
+        changed = true;
+      }
+    }
+    propagate(parentRelations, generations);
+    if (!changed) break;
+  }
+
   return generations;
 }
 

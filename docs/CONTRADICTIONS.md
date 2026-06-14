@@ -47,6 +47,20 @@ Significance: Homer contradicts himself within the Iliad — two different throw
 
 Verification: ✓ verified — both Iliad passages exact; caveat that "at birth" in the Iliad 18 version is standard scholarly inference (Homer says only that Hera wished to hide him for his lameness).
 
+## Hephaestus' wife
+
+- **topic**: `hephaestus-consort`
+- **Characters**: `hephaestus`, `aphrodite`, `aglaea`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Aphrodite is the wife of Hephaestus — caught in his net in the affair with Ares. | Odyssey 8.266–366 |
+| Hesiod | Hephaestus took as his wife Aglaea, youngest of the three Graces (Charites). | Theogony 945–946 |
+
+Significance: the smith-god is married to the goddess of love in Homer but to the youngest Grace in Hesiod — two different divine marriages that later authors never fully reconciled.
+
+Verification: ✓ verified — Odyssey 8 (the song of Demodocus) and Theogony 945 confirmed against the corpus.
+
 ## Eros: primordial force or Aphrodite's son?
 
 - **topic**: `eros-origin`
@@ -150,6 +164,22 @@ Verification: ✓ verified — all four positions exact; the Heracles-as-Perseus
 | Pseudo-Apollodorus | Prometheus moulded men out of water and earth, and also gave them fire hidden in a fennel stalk without Zeus's knowledge. | Bibliotheca 1.7.1 |
 | Ovid | The son of Iapetus shaped man from new-made earth mixed with rainwater, moulding him in the likeness of the all-governing gods. | Metamorphoses 1.76–88 |
 | Hyginus | Prometheus, son of Iapetus, first fashioned men from clay ("Prometheus Iapeti filius primus homines ex luto finxit"). | Fabulae 142 |
+
+## Where did the human race come from?
+
+- **topic**: `origin-of-mankind`
+- **Characters**: `meliae`, `prometheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The Bronze Race of men sprang from the ash trees — the Meliae, the ash-tree nymphs born of Uranus's blood. | Works and Days 143–147; Theogony 187 |
+| Pseudo-Apollodorus | Prometheus moulded men out of water and earth. | Bibliotheca 1.7.1 |
+| Ovid | The son of Iapetus shaped man from new-made earth mixed with rainwater. | Metamorphoses 1.76–88 |
+| Hyginus | Prometheus, son of Iapetus, first fashioned men from clay. | Fabulae 142 |
+
+Significance: Hesiod's anthropogony roots a race of men in the ash-tree nymphs, while the later mythographers credit Prometheus with moulding the first men from clay — two incompatible origins for mankind, with the Meliae appearing only in the Hesiodic version.
+
+Verification: ✓ verified — Hesiod Works and Days 143–147 (Bronze Race from the ash trees) and Theogony 187 (the Meliae born of Uranus's blood) confirmed in the local corpus; the Prometheus clay-moulding positions are exact per the entry above.
 
 Significance: Prometheus-as-sculptor of humanity, now the standard image, is entirely absent from Hesiod, our earliest source — a striking case of a "core" myth that accreted centuries later.
 
@@ -259,6 +289,20 @@ Significance: Hesiod makes Night independently generative, while Hyginus turns t
 
 Verification: ✓ verified against the complete catalogues in Theogony 211–225 and the genealogical preface to Fabulae.
 
+## Whose daughter is Ate (Ruin)?
+
+- **topic**: `ate-parentage`
+- **Characters**: `ate`, `zeus`, `eris`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Ate (Ruin) is one of the joyless brood that abhorred Strife (Eris) bore, alongside Toil, Forgetfulness, Famine and the rest. | Theogony 226–232 |
+| Homer | Ate is the eldest daughter of Zeus, "she that blindeth all," whom he flung from Olympus by the hair after she deluded him at Heracles' birth. | Iliad 19.91–131 |
+
+Significance: Hesiod files Ruin among the abstract evils descended from Strife, while Homer makes her Zeus's own firstborn and tells the aetiology of her exile from Olympus to the heads of men.
+
+Verification: ✓ verified against Theogony 226–232 and Agamemnon's speech in Iliad 19.91–131.
+
 ## Is Oceanus a Titan child or the origin of the gods?
 
 - **topic**: `oceanus-cosmic-rank`
@@ -287,6 +331,21 @@ Verification: ✓ verified against the cited genealogical lists and both Homeric
 Significance: Heaven changes from Earth's self-generated son and partner into a sibling of Earth produced by the bright upper air and Day.
 
 Verification: ✓ verified against Hesiod's opening cosmogony and Hyginus' genealogical preface.
+
+## Who are the parents of Pontus?
+
+- **topic**: `pontus-parentage`
+- **Characters**: `pontus`, `gaia`, `aether`, `hemera`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Gaia bore the barren Sea (Pontus) by herself, without sweet union of love. | Theogony 131–132 |
+| Pseudo-Apollodorus | Pontus is reckoned a child of Gaia/Earth, who then with Pontus produces the sea-deities. | Bibliotheca 1.2.6 |
+| Hyginus | The Sea (Mare) was born from Aether and Dies, alongside Terra (Earth) and Caelum (Heaven). | Fabulae, preface (Theogony) 2–3 |
+
+Significance: the Sea mirrors the same cosmogonic split as Heaven — Earth's self-generated child in Hesiod, but a sibling of Earth produced by Aether and Day in Hyginus' Latin genealogy.
+
+Verification: ✓ verified against Hesiod's cosmogony and Hyginus' preface; the load-bearing Hyginus attestation is the "Earth, Heaven, Sea" triad of Aether and Dies (a separate doublet entry under Aether and Terra is the preface's known catalogue artifact).
 
 ## Who is the mother of the Iapetionids?
 
@@ -1369,3 +1428,194 @@ Verification: ✓ verified — Apollodorus 2.5.5 carries Helios with the Poseido
 Significance: the persecutor of Heracles' line falls at last either to the hero's eldest son Hyllus or to his old companion Iolaus, the two who carried Heracles' cause into the next generation — and Alcmene's vengeance on the captive caps the feud that began before Heracles was born.
 
 Verification: ✓ verified — Apollodorus 2.8.1 (Hyllus beheads Eurystheus) and Pausanias 1.44.10 / 1.32.6 (the rejuvenated Iolaus takes him) confirmed against Perseus.
+
+## Birth order of the Hundred-Handers
+
+- **topic**: `hundred-handers-birth-order`
+- **Characters**: `cottus`, `gyges-hecatoncheir`, `briareus`, `uranus`, `gaia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The Hundred-Handers Cottus, Briareos, and Gyes are named last among the children of Earth and Heaven, after the Titans and the Cyclopes. | Theogony 139–153 |
+| Pseudo-Apollodorus | Sky, having wedded Earth, "begat first the Hundred-handed, as they are named: Briareus, Gyes, Cottus" — the very first-born, before the Cyclopes and the Titans. | Bibliotheca 1.1.1 |
+
+Significance: the same three monstrous brothers are placed at opposite ends of the first generation — Hesiod's afterthought to the Titans against Apollodorus' first issue of Sky and Earth — reshuffling the whole opening of the cosmos and which children Uranus first feared and bound.
+
+Verification: ✓ verified — Hesiod Theog. 139–153 (Hundred-Handers named after Titans and Cyclopes) and Apollodorus Bibliotheca 1.1.1 (the Hundred-handed begotten first) confirmed against the pinned corpus (Perseus).
+
+## Whose children are the Erinyes (Furies)?
+
+- **topic**: `erinyes-parentage`
+- **Characters**: `erinyes`, `uranus`, `gaia`, `aether`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Gaia (Earth) brought forth the strong Erinyes from the bloody drops of the castrated Uranus that fell upon her. | Theogony 183–187 |
+| Pseudo-Apollodorus | The Furies — Alecto, Tisiphone and Megaera — were born from the drops of blood of the castrated Uranus, keeping to Hesiod's cosmogony. | Bibliotheca 1.1.4 |
+| Hyginus | The three Furies (Alecto, Megaera, Tisiphone) are children of Aether and Terra (Earth), not spirits sprung from Uranus' wound. | Fabulae preface |
+
+Significance: the avengers of kin-bloodshed have two incompatible origins — born of the primal violence against a father (Hesiod, Apollodorus) versus an ordinary pairing of upper air and earth (Hyginus) — so the very crime they punish either is or is not written into their birth.
+
+Verification: ✓ verified — Hesiod Theog. 183–187 and Apollodorus Bibliotheca 1.1.4 (Furies from the blood-drops of Uranus) and Hyginus Fabulae preface (Furies as children of Aether and Terra) confirmed against the pinned corpus (Perseus).
+
+## Antaeus' father: Earth or Poseidon?
+
+- **topic**: `antaeus-parentage`
+- **Characters**: `antaeus-giant`, `poseidon`, `gaia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hyginus | Antaeus is a son of Terra (Earth) — the Libyan giant Hercules slew, who forced visitors to wrestle and killed them when exhausted. | Fabulae 31 |
+| Pseudo-Apollodorus | Antaeus, the giant who ruled Libya and killed strangers by forcing them to wrestle, is a son of Poseidon. | Bibliotheca 2.5.11 |
+
+Significance: the giant's two filiations each anchor a different half of his legend — descent from Earth explains the secret of his strength (he is invincible while he touches his mother), while descent from Poseidon explains the temple of skulls he raises to the sea-god. The sources let the clash stand rather than reconcile it.
+
+Verification: ✓ verified — Hyginus Fabulae 31 (Antaeus son of Earth) and Apollodorus Bibliotheca 2.5.11 (Antaeus son of Poseidon) confirmed against the pinned corpus (Perseus). Distinct from the Arcadian Argonaut Antaeus, son of Lycurgus (Apollonius, Argonautica 1.161).
+
+## Whose son is the giant Tityos?
+
+- **topic**: `tityos-parentage`
+- **Characters**: `tityos`, `gaia`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Tityos is the son of glorious Gaia (Earth), seen by Odysseus among the punished dead. | Odyssey 11.576 |
+| Pseudo-Apollodorus | Tityos was a son of Zeus and Elare, daughter of Orchomenus; Zeus hid her under the earth for fear of Hera, and there Earth brought the monstrous child to birth. | Bibliotheca 1.4.1 |
+
+Significance: the giant whose crime against Leto defines him is either a pure son of Earth (Homer's stark cosmic monster) or a concealed bastard of Zeus reborn from the ground (Apollodorus' harmonizing version, which still routes the birth through Earth) — so his outrage is either an earth-born sacrilege or, awkwardly, a son's assault on his own father's consort. Apollonius preserves the same compromise: Elare bore him, but Earth nursed him and gave him a second birth (Argonautica 1.761–762).
+
+Verification: ✓ verified — Homer Odyssey 11.576 ("Tityos, son of glorious Gaia") and Apollodorus Bibliotheca 1.4.1 (son of Zeus and Elare, brought to birth by Earth) confirmed against the pinned corpus (Perseus); Apollonius Argonautica 1.759–762 corroborates the double-birth harmonization.
+
+## Whose daughters are the Hesperides?
+
+- **topic**: `hesperides-parentage`
+- **Characters**: `hesperides`, `nyx`, `atlas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Nyx (Night) bore the Hesperides alone, among her dark brood, to guard the golden apples beyond glorious Ocean — no father named. | Theogony 215–216 |
+| Hyginus | The Hesperides are listed among the children of Nox (Night). | Fabulae, preface (Theogony) |
+| Pseudo-Apollodorus | The golden apples are kept by the Hesperides, daughters of Atlas, in the garden among the Hyperboreans. | Bibliotheca 2.5.11 |
+
+Significance: the keepers of the golden apples are either fatherless powers of evening sprung from primeval Night (Hesiod, Hyginus) or daughters of the Titan Atlas, anchoring them to the same western edge of the world where he upholds the sky (Apollodorus) — a shift from cosmic abstraction to Titan lineage that mirrors the Moirai's double parentage.
+
+Verification: ✓ verified — Hesiod Theogony 215–216 (Nyx bears the Hesperides) and Apollodorus Bibliotheca 2.5.11 (daughters of Atlas) confirmed against the pinned corpus (Perseus); Hyginus Fabulae preface lists them under Nox.
+
+## Whose daughter is Styx?
+
+- **topic**: `styx-parentage`
+- **Characters**: `styx`, `oceanus`, `tethys`, `nyx`, `erebus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Styx is the eldest and chiefest of the Oceanid daughters of Oceanus and Tethys. | Theogony 361, 383–385 |
+| Pseudo-Apollodorus | Styx is named among the Oceanids born to Ocean and Tethys. | Bibliotheca 1.2.2 |
+| Hyginus | Styx is listed among the children of Nox (Night) and Erebus. | Fabulae, preface (Theogony) |
+
+Significance: the goddess of the binding oath is either the foremost of the world-encircling river's daughters (Hesiod, Apollodorus), which roots the divine oath in the same Ocean stream a tenth of whose water she is, or a child of primeval Night and Erebus (Hyginus) — recasting the oath-power as a creature of darkness rather than of the cosmic waters, in step with Hyginus' wider habit of routing primordial figures back through Nox.
+
+Verification: ✓ verified — Hesiod Theogony 361 and 383–385 (eldest Oceanid of Ocean and Tethys) and Apollodorus Bibliotheca 1.2.2 (Oceanid line) confirmed against the pinned corpus (Perseus); Hyginus Fabulae preface lists Styx under Nox and Erebus per the project's pre-verified canonical facts.
+
+## Who was the mother of Rhesus?
+
+- **topic**: `rhesus-mother`
+- **Characters**: `euterpe`, `calliope`, `strymon`, `rhesus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Euterpe bore Rhesus, the Thracian king slain by Diomedes at Troy, to the river-god Strymon — "but some say his mother was Calliope." | Bibliotheca 1.3.4 |
+| Homer | Knows Rhesus only as the son of Eïoneus, with no Muse as his parent, when Odysseus and Diomedes kill him in his camp by night. | Iliad 10.435, 10.474–502 |
+
+Significance: the Thracian ally cut down with his white horses on the night raid is, in the mythographic genealogies, the child of a Muse by the river Strymon — and Apollodorus himself cannot settle which Muse, naming Euterpe but admitting the rival claim of her sister Calliope, while Homer's epic gives the king a wholly mortal father in Eïoneus and no divine mother at all.
+
+Verification: ✓ verified — Bibliotheca 1.3.4 carries both the Euterpe parentage and the "some say Calliope" variant in the same sentence; Homer Iliad 10 names Rhesus son of Eïoneus, confirmed against the pinned corpus (Perseus).
+
+## Which Muse mothered the Sirens?
+
+- **topic**: `sirens-mother`
+- **Characters**: `sirens`, `achelous`, `melpomene`, `terpsichore`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The Sirens are the daughters of the river-god Achelous and the Muse Melpomene. | Bibliotheca 1.3.4, Epitome 7.18 |
+| Hyginus | The Sirens are the daughters of the River Achelous and the Muse Melpomene. | Fabulae 125, 141 |
+| Apollonius | The Sirens are the daughters of Achelous and the Muse Terpsichore, born on the isle Anthemoessa. | Argonautica 4.892–896 |
+
+Significance: the parentage of the death-singing Sirens names two different Muses as their mother by the same river-god — Melpomene in the mythographers (Apollodorus, Hyginus) but Terpsichore in Apollonius — so that the choice of Muse, both of them sisters of song, reassigns the Sirens' lethal music to one or the other branch of the Muses' family while leaving Achelous fixed as the father.
+
+Verification: ✓ verified — Apollodorus Bibliotheca 1.3.4 and Epitome 7.18 (Achelous and Melpomene), Hyginus Fabulae 125 and 141 (Achelous and Melpomene), and Apollonius Argonautica 4.892–896 (Achelous and Terpsichore) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## Was Orpheus the son of the Muse Calliope?
+
+- **topic**: `orpheus-parentage`
+- **Characters**: `calliope`, `orpheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Calliope bore Orpheus (and Linus) to Oeagrus, or nominally to Apollo. | Bibliotheca 1.3.2 |
+| Apollonius | Orpheus, whom Calliope bore wedded to Thracian Oeagrus near the Pimpleian height. | Argonautica 1.23 |
+| Hyginus | Orpheus is the son of Oeagrus and the Muse Calliope. | Fabulae 14 |
+| Pausanias | It is one of the untruths believed by the Greeks that Orpheus was a son of the Muse Calliope; he was in truth a son of the daughter of Pierus. | Description of Greece 9.30.4 |
+
+Significance: the mythographic and Argonautic tradition makes the archetypal singer the child of the foremost Muse — a fitting divine pedigree for his irresistible song — but Pausanias singles this very descent out as a popular falsehood, demoting Orpheus' mother from the goddess Calliope to a mortal daughter of Pierus and stripping away the marvels (charmed beasts, the descent to Hades) that the Muse-parentage was held to explain.
+
+Verification: ✓ verified — Apollodorus Bibliotheca 1.3.2, Apollonius Argonautica 1.23, and Hyginus Fabulae 14 (Calliope as mother) and Pausanias Description of Greece 9.30.4 (the rejection) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## Whose children are the Muses?
+
+- **topic**: `muse-parentage`
+- **Characters**: `clio`, `polyhymnia`, `urania`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The nine Muses are the daughters of Zeus and Mnemosyne (Memory), begotten in Pieria over nine nights. | Theogony 53–62, 75–79, 915–917 |
+| Pseudo-Apollodorus | By Memory (Mnemosyne) Zeus had the Muses — Calliope, Clio, Melpomene, Euterpe, Erato, Terpsichore, Urania, Thalia, and Polymnia. | Bibliotheca 1.3.1 |
+| Pausanias | A Boeotian tradition holds that Pierus, a Macedonian, came to Thespiae and established nine Muses, changing their names to the present ones; others made the figures called children of the Muses really the sons of the daughters of Pierus. | Description of Greece 9.29.3–9.29.4 |
+
+Significance: the canonical descent of the Muses from Zeus and Mnemosyne — a single divine sisterhood of memory and song shared by Hesiod and the mythographers — is set against a local Boeotian tradition recorded by Pausanias in which the names, and even the parentage, of the nine are the work of the mortal Pierus, so that genealogies elsewhere traced to "a Muse" (the parentage of Linus, of Orpheus) become disputed and locally varying rather than fixed divine descent.
+
+Verification: ✓ verified — Hesiod Theogony 53–62, 75–79, 915–917 (Zeus and Mnemosyne), Pseudo-Apollodorus Bibliotheca 1.3.1 (the nine borne by Memory to Zeus), and Pausanias Description of Greece 9.29.3–9.29.4 (the Pierus tradition) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## Whose children are the Charites (Graces)?
+
+- **topic**: `charites-parentage`
+- **Characters**: `thalia-charis`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Eurynome, the daughter of Ocean, bore Zeus three Charites — Aglaia, Euphrosyne, and lovely Thaleia. | Theogony 907–911 |
+| Pseudo-Apollodorus | By Eurynome, daughter of Ocean, Zeus had the Graces — Aglaia, Euphrosyne, and Thalia. | Bibliotheca 1.3.1 |
+| Pausanias | Hesiod makes the Graces daughters of Zeus and Eurynome under the names Euphrosyne, Aglaia and Thalia; but Antimachus calls them daughters of Aegle and the Sun, and Homer, who knows the Charites, names only Pasithea and a Grace wedded to Hephaestus. | Description of Greece 9.35.4–9.35.5 |
+
+Significance: the canonical Hesiodic descent of the three named Graces from Zeus and the Oceanid Eurynome — shared by the mythographer Apollodorus — is set against rival ancient accounts that Pausanias collects, in which the Graces are children of Aegle and the Sun (Antimachus) and in which Homer names a wholly different pair (Pasithea, the bride promised to Sleep, and an unnamed Grace married to Hephaestus), so that even the parentage and the very names of the Charites vary by author.
+
+Verification: ✓ verified — Hesiod Theogony 907–911 (Zeus and Eurynome; "lovely Thaleia"), Pseudo-Apollodorus Bibliotheca 1.3.1 (the three Graces by Eurynome), and Pausanias Description of Greece 9.35.4–9.35.5 (the Hesiodic line plus the Antimachus and Homeric variants) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## What kind of goddess is Hecate?
+
+- **topic**: `hecate-sphere`
+- **Characters**: `hecate`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Hecate is a benevolent universal honorand: Zeus left her the share of earth, sky and sea she held under the older gods, and she favours kings in judgement, warriors, horsemen, fishermen and herdsmen, and nurtures the young. | Theogony 411–452 |
+| Apollonius | Hecate is the dread, night-wandering patron of sorcery whom Medea serves as priestess — queen among the dead, propitiated by night at a pit with torches, honey and a black ewe, coming serpent-crowned from the depths when called as Brimo. | Argonautica 3.210, 3.515, 3.1025–1041, 3.1211 |
+| Ovid | Hecate is the three-faced goddess of enchantment and the powers of Night, whose herbs and altars belong to magic and whom Medea and Circe invoke. | Metamorphoses 7.74, 7.241–242 |
+
+Significance: the same daughter of Perses and Asteria is presented in radically different keys — Hesiod's hymnic, kindly cosmic power whose privilege predates and survives the Olympian order, against the later poets' chthonic, torch-bearing mistress of witchcraft, the dead and the crossroads. The parentage itself is undisputed (Hesiod and Apollodorus agree on Perses and Asteria); what the authors contest is her very nature and sphere.
+
+Verification: ✓ verified — Hesiod Theogony 404–452 (parentage and the benevolent triple share), Pseudo-Apollodorus Bibliotheca 1.2.4 (Perses and Asteria), Apollonius Argonautica 3.1025–1041, 3.1211 (the night rite, black ewe and Brimo) and 4.829 (mother of Scylla as Crataeis), and Ovid Metamorphoses 7 (the magic patron) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## How many Horae, and who are they?
+
+- **topic**: `horae-roster`
+- **Characters**: `eunomia`, `dike`, `eirene`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Themis bore Zeus three Horae — Eunomia (Order), Dike (Justice) and blooming Eirene (Peace), "who mind the works of mortal men." | Theogony 901–906 |
+| Hyginus | The Horae, daughters of Jove and Themis, are an expanded set: Auco, Eunomia (Order), Pherusa, Carpo (Fruit), Dike (Justice), Euporia, Eirene (Peace), Orthosie and Thallo. | Fabulae 183 |
+
+Significance: Hesiod's canonical triad of moral-civic Horae — Order, Justice and Peace — is set against the larger, partly seasonal-agricultural catalogue preserved by Hyginus, so that the number and even the membership of the Seasons varies by author; the three Hesiodic sisters (Eunomia, Dike, Eirene) recur in Hyginus's list but are folded into a wider company of Hours.
+
+Verification: ✓ verified — Hesiod Theogony 901–906 (the three Horae Eunomia, Dike, Eirene) and Hyginus Fabulae 183 (the nine-name catalogue including the same three) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.

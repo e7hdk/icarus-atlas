@@ -1,0 +1,44 @@
+{
+  "id": "gyges-hecatoncheir",
+  "name": "Gyges",
+  "greekName": "Gyes (Γύης)",
+  "type": "primordial",
+  "domains": ["primordial strength", "Titanomachy", "warders of Tartarus"],
+  "epithets": ["the Hundred-Hander", "Gyes"],
+  "summary": [
+    {
+      "text": "One of the three Hundred-Handers (Hecatoncheires), sons of Uranus and Gaia, each monstrous with a hundred arms and fifty heads.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "Imprisoned by his father Uranus and freed by Zeus, he fought as Zeus's ally in the Titanomachy and afterward keeps eternal guard over the defeated Titans in Tartarus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 617–720, 815–819"
+    }
+  ],
+  "story": [
+    {
+      "text": "Gyges, called Gyes in Hesiod, is one of the three Hundred-Handers, or Hecatoncheires, born to Uranus (Sky) and Gaia (Earth) alongside his brothers Cottus and Briareos. Hesiod calls them great and doughty beyond telling, presumptuous children, each grown from his shoulders a hundred arms and fifty heads, with strength and might immeasurable in all their works.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 147–153; Bibliotheca 1.1.1"
+    },
+    {
+      "text": "Where the Hundred-Handers fall in birth order is itself disputed. Hesiod names them after the Titans and the Cyclopes, the last children of Sky and Earth; Apollodorus, by contrast, makes them the very first-born of Uranus and Gaia — Briareus, Gyes, Cottus — unsurpassed in size and might.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.1",
+      "topic": "hundred-handers-birth-order"
+    },
+    {
+      "text": "Uranus, jealous of his sons' exceeding manhood and comeliness, bound Gyes and his brothers in cruel bonds and hid them within the depths of the earth. On Gaia's counsel Zeus released them from their bondage under misty gloom, and the three brothers joined the Olympians against the Titans, insatiate for war: from their strong hands they launched three hundred rocks, one upon another, until they overshadowed the Titans and hurled them beneath the wide-pathed earth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 617–720"
+    },
+    {
+      "text": "After the Titans were cast down and walled behind Poseidon's gates of bronze, Gyes was made one of the trusty warders of Zeus, dwelling upon Ocean's foundations and keeping eternal guard over the defeated Titans in Tartarus. Hesiod's accounts differ on the warders' number: in one passage all three brothers are named as guards, but in another only Cottus and Gyes dwell on Ocean's foundations, since goodly Briareos was made son-in-law of Poseidon and wedded his daughter Cymopolea.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 720–740, 815–819"
+    }
+  ],
+  "cluster": "titan-ring"
+}

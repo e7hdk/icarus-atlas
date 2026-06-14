@@ -1,0 +1,35 @@
+{
+  "id": "hysminai",
+  "name": "The Hysminai",
+  "greekName": "Hysminai (Ὑσμῖναι)",
+  "type": "god",
+  "domains": ["fighting", "combat", "battles"],
+  "epithets": ["close combats", "hand-to-hand fights"],
+  "summary": [
+    {
+      "text": "The Hysminai are the personified spirits of fighting and hand-to-hand combat, one of the grim plural broods that Strife brought forth without a father.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 228"
+    },
+    {
+      "text": "They belong to the dark children of Eris, the powers that beset mortal life — toil, famine, sorrows, battles and slaughters.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of Strife's offspring, hateful Eris bears the Hysminai — the Battles or Combats — among a brood begotten with no father. They stand beside Ponos (Toil), Lethe (Forgetfulness), Limos (Famine), the tearful Algea (Sorrows), the Hysminai's near kin the Machai (Fights), the Phonoi (Murders) and Androktasiai (Manslaughters), Neikea (Quarrels), Pseudea (Lies), Logoi (Disputes), Amphillogiai (Ambiguities), Dysnomia (Lawlessness), Ate (Ruin) and Horkos (Oath). The Hysminai are thus not gods of the Olympian order but the abstract violence of clashing armies given personified, plural shape.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Their name marks a specific face of war: hysmine is the close press of battle, the grappling melee where lines collide, distinct from the wider conduct of the Machai. As children of Strife rather than independent deities, the Hysminai personify the moment discord erupts into bloodshed — the dark powers that, in Hesiod's moral cosmology, weave conflict into the very fabric of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 228"
+    }
+  ],
+  "cluster": "night-court"
+}

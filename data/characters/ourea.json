@@ -1,0 +1,35 @@
+{
+  "id": "ourea",
+  "name": "Ourea",
+  "greekName": "Ourea (Οὔρεα)",
+  "type": "primordial",
+  "domains": ["the mountains", "highlands"],
+  "epithets": ["the Mountains"],
+  "summary": [
+    {
+      "text": "Primordial personification of the Mountains — the long hills brought forth by Gaia alone, without union of love, the graceful haunts of the goddess Nymphs.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 129–130",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Collective elder gods, the Ourea are almost never individualized in myth: they are remembered chiefly as the place where the mountain Nymphs dwell among the glens.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 129–130"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Gaia had first borne starry Heaven, equal to herself, to cover her on every side, she brought forth the long hills, the graceful haunts of the goddess Nymphs who dwell amongst the glens of the mountains. She bore them alone, without the sweet union of love — the same self-generated birth that produced Uranus the Heaven and barren Pontus the Sea. So the Mountains stand among the very oldest things, raised up out of the Earth's own body at the dawn of the world, before any of the dynasties of gods began.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 126–132",
+      "topic": "first-beings-cosmogony"
+    },
+    {
+      "text": "Unlike Uranus and Pontus, who go on to father vast lineages, the Ourea remain a collective and faceless power. Hesiod gives them no offspring, no rebellion, no consort — they are the world's high ground itself, named once and then left to stand. Their importance is locational: the mountains are where the Oreads, the Nymphs of the heights, make their home, and so the Ourea quietly underwrite countless later myths set among the peaks and glens without ever stepping forward as actors.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 129–130"
+    }
+  ],
+  "cluster": "core"
+}

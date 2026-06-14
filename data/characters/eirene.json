@@ -1,0 +1,45 @@
+{
+  "id": "eirene",
+  "name": "Eirene",
+  "greekName": "Eirene (Εἰρήνη)",
+  "romanName": "Pax",
+  "type": "god",
+  "domains": ["peace", "prosperity", "the seasons"],
+  "epithets": ["Peace", "blooming Eirene"],
+  "summary": [
+    {
+      "text": "Eirene is the personification of peace — one of the three Horae whom Themis bore to Zeus, alongside her sisters Eunomia (Order) and Dike (Justice).",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "The Athenians honored her with a famous cult statue by Cephisodotus showing Eirene (Peace) carrying the boy Plutus (Wealth) — the prosperity that peace brings forth; her Roman equivalent is Pax.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.8.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Eirene, whose name means \"Peace\", is one of the three Horae born to bright Themis by Zeus. Hesiod sings that the king of the gods married Themis, who bore the Horae — Eunomia (Order), Dike (Justice) and blooming Eirene (Peace), 'who mind the works of mortal men' — together with the Moirai whom wise Zeus honored above all. She is thus a goddess of the second divine generation, daughter of a Titan mother and the lord of Olympus, her domain set squarely within the affairs of humankind.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "Her name carries her nature, and her work is inseparable from that of her sisters: where Eunomia keeps good order and Dike upholds justice, Eirene brings the peace in which a city may flourish. As one of the Horae she belongs to the ordering powers that govern the rhythms of the human world and the turning seasons, so that lawful conduct, justice and peace attend together upon a well-governed people.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 901–906"
+    },
+    {
+      "text": "The Athenians gave Eirene a celebrated cult. Pausanias, walking among the statues of the gods at Athens, records that there stood an image of Eirene (Peace) carrying the boy Plutus (Wealth) — the renowned work of the sculptor Cephisodotus. The group expresses a single idea made visible: peace is the nurse of prosperity, and Wealth grows up as a child in the arms of Peace. The Roman world inherited the same conception in the goddess Pax, whom Augustus celebrated on the Ara Pacis, the Altar of Peace.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.8.2"
+    },
+    {
+      "text": "Hyginus likewise makes Eirene a daughter of Jove (Zeus) and Themis the Titaness and numbers her among the Horae beside Eunomia and Dike; but he gives an expanded catalogue of the Hours — Auco, Eunomia, Pherusa, Carpo, Dike, Euporia, Eirene, Orthosie and Thallo — rather than Hesiod's canonical three, reflecting the later mythographers' larger and divergent lists.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 183",
+      "topic": "horae-roster"
+    }
+  ],
+  "cluster": "olympian-band"
+}

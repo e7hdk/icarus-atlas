@@ -144,3 +144,26 @@ export const TYPE_GLOW: Record<CharacterType, { color: string; pulse: 'slow' | '
   nymph: { color: '#4ade80', pulse: 'steady' },
   creature: { color: '#f472b6', pulse: 'irregular' },
 };
+
+/** The nine Muses are special: their fire is the inspiration that lets every other
+ *  star shine, so they do not take the flat `god` glow. Instead each Muse's star
+ *  slowly cycles its hue through the entire spectrum — a seamless loop, because hue
+ *  wraps 360°→0° with no seam — and the nine are spread evenly across the rainbow,
+ *  so at any instant the Muse cluster shimmers in every colour at once. This is the
+ *  "iridescent" tag; the renderer (CharacterStar) drives the animation.
+ *  IRIDESCENT_BASE_HUE maps each Muse id to its starting hue in [0,1). */
+export const MUSE_IDS = [
+  'calliope',
+  'clio',
+  'euterpe',
+  'erato-muse',
+  'melpomene',
+  'polyhymnia',
+  'terpsichore',
+  'thalia-muse',
+  'urania',
+] as const;
+
+export const IRIDESCENT_BASE_HUE: Record<string, number> = Object.fromEntries(
+  MUSE_IDS.map((id, index) => [id, index / MUSE_IDS.length]),
+);

@@ -1,0 +1,40 @@
+{
+  "id": "logoi",
+  "name": "The Logoi",
+  "greekName": "Logoi (Λόγοι)",
+  "type": "god",
+  "domains": ["stories", "tales", "deceptive speech"],
+  "epithets": ["Tales", "Stories"],
+  "summary": [
+    {
+      "text": "The Logoi are the personified spirits of (deceptive) stories and tales, one of the grim children whom Eris (Strife) bore without a father among the dark powers that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "They are plural daemons of the spoken tale rather than the philosophical concept of logos — listed by Hesiod beside the Pseudea (Lies), born to weave misleading words through human discourse.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of woes, abhorred Strife bore painful Toil and Forgetfulness, Famine and tearful Sorrows, Fightings and Battles, Murders and Manslaughters, Quarrels, Lying Words and Disputes, Lawlessness and Ruin, and Oath who most troubles men upon earth. The Logoi stand within that brood, the personified Tales paired with the Pseudea (Lies), powers begotten with no father to thread the spoken word through the afflictions that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Their name marks a particular face of strife: the logos here is the tale or story, the crafted account that can persuade and mislead. Set directly beside the Pseudea (Lies), the Logoi personify the deceptive narrative — the misleading word and false report — distinct from the bloodier Hysminai (Combats) and Phonoi (Murders) of open battle. As children of Eris rather than independent deities, they are the verbal seed of discord, the tale that turns one person against another.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    },
+    {
+      "text": "Hesiod gives the Logoi no separate deed or myth. Like their siblings — Ponos (Toil), Limos (Famine), the Neikea (Quarrels), Dysnomia (Lawlessness) and Ate (Ruin) — they are a noun made into a force, listed and never narrated: the abstract powers of conflict that, in his moral cosmology, descend from Night through Strife to weave deceit and contention into the very fabric of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    }
+  ],
+  "cluster": "night-court"
+}

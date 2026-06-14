@@ -1,0 +1,48 @@
+{
+  "id": "brontes-cyclops",
+  "name": "Brontes",
+  "greekName": "Brontēs (Βρόντης)",
+  "type": "primordial",
+  "domains": ["thunder", "smithcraft"],
+  "epithets": ["the Thunderer"],
+  "summary": [
+    {
+      "text": "Brontes, 'Thunder', is one of the three Cyclopes, sons of Uranus and Gaia, each bearing a single round eye in the midst of the forehead.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "With his brothers Steropes and Arges he forged Zeus's thunderbolt and lightning, the weapon by which the king of the gods overcame the Titans.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146, 501–506; Bibliotheca 1.2.1",
+      "topic": "cyclopes-nature"
+    }
+  ],
+  "story": [
+    {
+      "text": "Brontes is one of the three Cyclopes whom Gaia bore to Uranus, brother to Steropes and Arges. In Hesiod they are overbearing in spirit and in all else like the gods, save that a single orbed eye is set in the middle of each forehead — it is from this that they take their name, Cyclopes, 'Orb-eyed'. Apollodorus likewise counts Brontes among the three one-eyed sons of Sky and Earth.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "These Uranian Cyclopes are divine smiths, not the savage shepherds of the Odyssey: Brontes ('Thunder'), Steropes ('Lightning') and Arges ('Bright') are the very powers of the storm made into craftsmen. Their gift to Zeus is the thunder, the thunderbolt and the flash of lightning, the armament that the Olympian wields against all comers.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 139–146",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Their fortunes turn on the wars of the cosmos. Uranus bound the Cyclopes and cast them into Tartarus, and Cronus imprisoned them again; but Zeus, on Gaia's counsel, freed them, and in gratitude they forged the thunderbolt and lightning by which he overthrew the Titans. So Brontes' craft arms the new order of the gods.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146, 501–506; Bibliotheca 1.2.1",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Brontes' end comes through that same craft. After Zeus killed Asclepius with a Cyclops-forged thunderbolt for raising the dead, Apollo — unable to strike at Zeus — took vengeance on the smiths and slew the Cyclopes, Apollodorus reports.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4"
+    }
+  ],
+  "cluster": "titan-ring"
+}

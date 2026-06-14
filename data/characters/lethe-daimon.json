@@ -1,0 +1,43 @@
+{
+  "id": "lethe-daimon",
+  "name": "Lethe",
+  "greekName": "Lēthē (Λήθη)",
+  "type": "god",
+  "domains": ["forgetfulness", "oblivion"],
+  "epithets": ["the Forgetting"],
+  "summary": [
+    {
+      "text": "Forgetfulness personified, one of the grim children whom Eris (Strife) bore without a father among the dark powers that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Hyginus instead lists Oblivion among the offspring of Aether and Earth.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's catalogue of woes, abhorred Strife bore painful Toil and Forgetfulness, Famine and tearful Sorrows, and the Fightings, Murders, Quarrels, Lying Words, Disputes, Lawlessness and Ruin that come after them. Lethe is the third name in that list — oblivion itself made into one of Eris's brood, a power born without a father to thread loss of memory through the texture of human existence.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Lethe is a daemon of abstraction rather than a figure of adventure: Hesiod gives her no consort, no exploits and no cult, only her place beside Toil and Famine. As the personified erasure of memory she belongs to the same family of afflictions as Apate (Deceit), Geras (Old Age) and Oizys (Misery), the company of dark abstractions that gather under Night and her daughter Strife.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "The Latin mythographers reorder her lineage. In the genealogical preface to Hyginus' Fabulae, Oblivion (Oblivio) is counted not among the children of Strife but among the offspring of Aether and Earth, set alongside Grief, Deceit, Wrath, Lamentation, Falsehood and the Oath — a different parentage for the same personified forgetting.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "cluster": "night-court"
+}

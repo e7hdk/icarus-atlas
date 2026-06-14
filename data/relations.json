@@ -52,7 +52,7 @@
       "hesiod"
     ],
     "topic": "uranus-parentage",
-    "note": "Borne by Gaia alone, equal to herself, to cover her on every side (Theogony 126–128); Hyginus instead makes the Sky a child of Aether and Dies, who are outside the roster"
+    "note": "Borne by Gaia alone, equal to herself, to cover her on every side (Theogony 126–128); Hyginus instead makes the Sky a child of Aether and Dies"
   },
   {
     "id": "gaia-consort-uranus",
@@ -96,9 +96,10 @@
     "to": "uranus",
     "sources": [
       "hesiod",
-      "apollodorus"
+      "apollodorus",
+      "apollonius"
     ],
-    "note": "Youngest and most terrible of the brood of Uranus and Gaia"
+    "note": "Youngest and most terrible of the brood of Uranus and Gaia; Apollonius (Argonautica 2.1231–1233) names Cronus son of Uranus"
   },
   {
     "id": "cronus-parent-gaia",
@@ -107,7 +108,8 @@
     "to": "gaia",
     "sources": [
       "hesiod",
-      "apollodorus"
+      "apollodorus",
+      "apollonius"
     ]
   },
   {
@@ -936,7 +938,8 @@
       "homer",
       "ovid"
     ],
-    "note": "His wife in the song of Demodocus (Odyssey 8) and in Ovid's tale of the net; in the Iliad his wife is Charis, in Hesiod Aglaia, youngest of the Graces"
+    "note": "His wife in the song of Demodocus (Odyssey 8) and in Ovid's tale of the net; in the Iliad his wife is Charis, in Hesiod Aglaia, youngest of the Graces",
+    "topic": "hephaestus-consort"
   },
   {
     "id": "ares-lover-aphrodite",
@@ -3945,7 +3948,8 @@
     "to": "gaia",
     "sources": [
       "apollodorus"
-    ]
+    ],
+    "note": "Sprang up armed from the earth where Cadmus sowed the dragon’s teeth (Bibliotheca 3.4.1)"
   },
   {
     "id": "abas-parent-lynceus",
@@ -6755,9 +6759,10 @@
     "from": "cecrops",
     "to": "gaia",
     "sources": [
-      "hyginus"
+      "hyginus",
+      "apollodorus"
     ],
-    "note": "Autochthon, \"son of Terra (Earth)\"; Pausanias instead makes him son-in-law of an earlier king Actaeus (Fabulae 48)"
+    "note": "Autochthon, a son of the soil (Fabulae 48; also Bibliotheca 3.14.1); Pausanias instead makes him son-in-law of an earlier king Actaeus"
   },
   {
     "id": "cranaus-parent-gaia",
@@ -11572,7 +11577,8 @@
       "hesiod",
       "apollodorus"
     ],
-    "note": "Born of Gaia alone, without union (Theogony 131–132; Bibliotheca 1.2.6)"
+    "note": "Born of Gaia alone, without union (Theogony 131–132; Bibliotheca 1.2.6); Hyginus instead makes the Sea (Mare) a child of Aether and Dies",
+    "topic": "pontus-parentage"
   },
   {
     "id": "nereus-parent-pontus",
@@ -12065,9 +12071,10 @@
     "to": "tartarus",
     "sources": [
       "hesiod",
-      "apollodorus"
+      "apollodorus",
+      "hyginus"
     ],
-    "note": "(Theogony 820–822; Bibliotheca 1.6.3)"
+    "note": "(Theogony 820–822; Bibliotheca 1.6.3; Fabulae 152 & preface)"
   },
   {
     "id": "typhon-consort-echidna",
@@ -12362,10 +12369,10 @@
     "from": "python",
     "to": "gaia",
     "sources": [
-      "apollodorus",
-      "hyginus"
+      "hyginus",
+      "ovid"
     ],
-    "note": "(Bibliotheca 1.4.1; Fabulae 140)"
+    "note": "Earth (Tellus) brought forth the serpent Python from the post-flood mud (Metamorphoses 1.434–440); listed among Terra’s children in the Fabulae preface"
   },
   {
     "id": "apollo-slayer-python",
@@ -13332,5 +13339,1626 @@
     ],
     "topic": "eurystheus-slayer",
     "note": "The rejuvenated Iolaus took him (Bibliotheca 2.8.1; Description of Greece 1.44.10)"
+  },
+  {
+    "id": "tlepolemus-parent-heracles",
+    "type": "parent",
+    "from": "tlepolemus",
+    "to": "heracles",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "By Astyoche (boundary) (Iliad 2.653–658; Bibliotheca 2.7.6, 2.8.2)"
+  },
+  {
+    "id": "cleodaeus-parent-hyllus",
+    "type": "parent",
+    "from": "cleodaeus",
+    "to": "hyllus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 3.15.10)"
+  },
+  {
+    "id": "aristomachus-heraclid-parent-cleodaeus",
+    "type": "parent",
+    "from": "aristomachus-heraclid",
+    "to": "cleodaeus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 2.7.6)"
+  },
+  {
+    "id": "temenus-parent-aristomachus-heraclid",
+    "type": "parent",
+    "from": "temenus",
+    "to": "aristomachus-heraclid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 2.7.6)"
+  },
+  {
+    "id": "cresphontes-parent-aristomachus-heraclid",
+    "type": "parent",
+    "from": "cresphontes",
+    "to": "aristomachus-heraclid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 2.7.6)"
+  },
+  {
+    "id": "aristodemus-parent-aristomachus-heraclid",
+    "type": "parent",
+    "from": "aristodemus",
+    "to": "aristomachus-heraclid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 2.7.6)"
+  },
+  {
+    "id": "temenus-sibling-cresphontes",
+    "type": "sibling",
+    "from": "temenus",
+    "to": "cresphontes",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Aristomachus, leaders of the Return (Bibliotheca 2.8.2; Description of Greece 2.18.7)"
+  },
+  {
+    "id": "temenus-sibling-aristodemus",
+    "type": "sibling",
+    "from": "temenus",
+    "to": "aristodemus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Aristomachus, leaders of the Return (Bibliotheca 2.8.2; Description of Greece 2.18.7)"
+  },
+  {
+    "id": "cresphontes-sibling-aristodemus",
+    "type": "sibling",
+    "from": "cresphontes",
+    "to": "aristodemus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Sons of Aristomachus, leaders of the Return (Bibliotheca 2.8.2; Description of Greece 2.18.7)"
+  },
+  {
+    "id": "eurysthenes-parent-aristodemus",
+    "type": "parent",
+    "from": "eurysthenes",
+    "to": "aristodemus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 3.1.5)"
+  },
+  {
+    "id": "procles-parent-aristodemus",
+    "type": "parent",
+    "from": "procles",
+    "to": "aristodemus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.2; Description of Greece 3.1.7)"
+  },
+  {
+    "id": "eurysthenes-sibling-procles",
+    "type": "sibling",
+    "from": "eurysthenes",
+    "to": "procles",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Spartan royal twins (Agiad & Eurypontid) (Bibliotheca 2.8.2; Description of Greece 3.1.7)"
+  },
+  {
+    "id": "cresphontes-consort-merope-messenia",
+    "type": "consort",
+    "from": "cresphontes",
+    "to": "merope-messenia",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 2.8.5; Description of Greece 4.3.6; Fabulae 137)"
+  },
+  {
+    "id": "aepytus-heraclid-parent-cresphontes",
+    "type": "parent",
+    "from": "aepytus-heraclid",
+    "to": "cresphontes",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 2.8.5; Description of Greece 4.3.6–9)"
+  },
+  {
+    "id": "aepytus-heraclid-parent-merope-messenia",
+    "type": "parent",
+    "from": "aepytus-heraclid",
+    "to": "merope-messenia",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 2.8.5; Description of Greece 4.3.7; Fabulae 137)"
+  },
+  {
+    "id": "polyphontes-slayer-cresphontes",
+    "type": "slayer",
+    "from": "polyphontes",
+    "to": "cresphontes",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Usurped Messenia and forced Merope to wife (Bibliotheca 2.8.5; Description of Greece 4.3.7; Fabulae 137)"
+  },
+  {
+    "id": "aepytus-heraclid-slayer-polyphontes",
+    "type": "slayer",
+    "from": "aepytus-heraclid",
+    "to": "polyphontes",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Avenged his father and recovered Messenia (Bibliotheca 2.8.5; Description of Greece 4.3.8; Fabulae 137, 184)"
+  },
+  {
+    "id": "hyrnetho-parent-temenus",
+    "type": "parent",
+    "from": "hyrnetho",
+    "to": "temenus",
+    "sources": [
+      "pausanias",
+      "apollodorus"
+    ],
+    "note": "(Description of Greece 2.28.3; Bibliotheca 2.8.5)"
+  },
+  {
+    "id": "deiphontes-consort-hyrnetho",
+    "type": "consort",
+    "from": "deiphontes",
+    "to": "hyrnetho",
+    "sources": [
+      "pausanias",
+      "apollodorus"
+    ],
+    "note": "(Description of Greece 2.28.3–7; Bibliotheca 2.8.5)"
+  },
+  {
+    "id": "oxylus-ally-temenus",
+    "type": "ally",
+    "from": "oxylus",
+    "to": "temenus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Aetolian guide the oracle bade the Heraclids follow; rewarded with Elis (Bibliotheca 2.8.3; Description of Greece 5.3.5–7)"
+  },
+  {
+    "id": "temenus-adversary-tisamenus",
+    "type": "adversary",
+    "from": "temenus",
+    "to": "tisamenus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Return drove out the last Pelopid king of Argos/Sparta (Bibliotheca 2.8.2–4; Description of Greece 2.18.7, 7.1.7)"
+  },
+  {
+    "id": "tlepolemus-slayer-licymnius",
+    "type": "slayer",
+    "from": "tlepolemus",
+    "to": "licymnius",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "Killed his great-uncle, then fled to found Rhodes (Iliad 2.661–663; Bibliotheca 2.8.2)"
+  },
+  {
+    "id": "echion-parent-gaia",
+    "type": "parent",
+    "from": "echion",
+    "to": "gaia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sprang up armed from the earth where Cadmus sowed the dragon’s teeth (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "chthonius-spartos-parent-gaia",
+    "type": "parent",
+    "from": "chthonius-spartos",
+    "to": "gaia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sprang up armed from the earth where Cadmus sowed the dragon’s teeth (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "hyperenor-spartos-parent-gaia",
+    "type": "parent",
+    "from": "hyperenor-spartos",
+    "to": "gaia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sprang up armed from the earth where Cadmus sowed the dragon’s teeth (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "pelorus-spartos-parent-gaia",
+    "type": "parent",
+    "from": "pelorus-spartos",
+    "to": "gaia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sprang up armed from the earth where Cadmus sowed the dragon’s teeth (Bibliotheca 3.4.1)"
+  },
+  {
+    "id": "uranus-parent-aether",
+    "type": "parent",
+    "from": "uranus",
+    "to": "aether",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "uranus-parentage",
+    "note": "Caelus/Mare born of Aether and Dies (Day), alongside Terra (Fabulae preface)"
+  },
+  {
+    "id": "uranus-parent-hemera",
+    "type": "parent",
+    "from": "uranus",
+    "to": "hemera",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "uranus-parentage",
+    "note": "Caelus/Mare born of Aether and Dies (Day), alongside Terra (Fabulae preface)"
+  },
+  {
+    "id": "pontus-parent-aether",
+    "type": "parent",
+    "from": "pontus",
+    "to": "aether",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "pontus-parentage",
+    "note": "Caelus/Mare born of Aether and Dies (Day), alongside Terra (Fabulae preface)"
+  },
+  {
+    "id": "pontus-parent-hemera",
+    "type": "parent",
+    "from": "pontus",
+    "to": "hemera",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "pontus-parentage",
+    "note": "Caelus/Mare born of Aether and Dies (Day), alongside Terra (Fabulae preface)"
+  },
+  {
+    "id": "eurybia-parent-pontus",
+    "type": "parent",
+    "from": "eurybia",
+    "to": "pontus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "One of the five sea-children Gaia bore to Pontus (Theogony 233–239; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "eurybia-parent-gaia",
+    "type": "parent",
+    "from": "eurybia",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Daughter of Gaia by Pontus (Theogony 233–239; Bibliotheca 1.2.2, 1.2.6)"
+  },
+  {
+    "id": "eurybia-consort-crius",
+    "type": "consort",
+    "from": "eurybia",
+    "to": "crius",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Bright Eurybia joined with Crius and bore Astraeus, Pallas and Perses (Theogony 375–377; Bibliotheca 1.2.2)"
+  },
+  {
+    "id": "astraeus-parent-eurybia",
+    "type": "parent",
+    "from": "astraeus",
+    "to": "eurybia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Son of Eurybia and Crius (Theogony 375–377; Bibliotheca 1.2.2)"
+  },
+  {
+    "id": "pallas-parent-eurybia",
+    "type": "parent",
+    "from": "pallas",
+    "to": "eurybia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Son of Eurybia and Crius (Theogony 375–377; Bibliotheca 1.2.2)"
+  },
+  {
+    "id": "perses-parent-eurybia",
+    "type": "parent",
+    "from": "perses",
+    "to": "eurybia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Son of Eurybia and Crius (Theogony 375–377; Bibliotheca 1.2.2)"
+  },
+  {
+    "id": "brontes-cyclops-parent-uranus",
+    "type": "parent",
+    "from": "brontes-cyclops",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "brontes-cyclops-parent-gaia",
+    "type": "parent",
+    "from": "brontes-cyclops",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "steropes-cyclops-parent-uranus",
+    "type": "parent",
+    "from": "steropes-cyclops",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "steropes-cyclops-parent-gaia",
+    "type": "parent",
+    "from": "steropes-cyclops",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "arges-cyclops-parent-uranus",
+    "type": "parent",
+    "from": "arges-cyclops",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "arges-cyclops-parent-gaia",
+    "type": "parent",
+    "from": "arges-cyclops",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "cottus-parent-uranus",
+    "type": "parent",
+    "from": "cottus",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "cottus-parent-gaia",
+    "type": "parent",
+    "from": "cottus",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "briareus-parent-uranus",
+    "type": "parent",
+    "from": "briareus",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "briareus-parent-gaia",
+    "type": "parent",
+    "from": "briareus",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "gyges-hecatoncheir-parent-uranus",
+    "type": "parent",
+    "from": "gyges-hecatoncheir",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "gyges-hecatoncheir-parent-gaia",
+    "type": "parent",
+    "from": "gyges-hecatoncheir",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Child of Uranus and Gaia (Theogony 139–153; Bibliotheca 1.1.1–1.1.2)"
+  },
+  {
+    "id": "cottus-ally-zeus",
+    "type": "ally",
+    "from": "cottus",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Freed by Zeus on Gaia’s counsel, the Hundred-Handers fought for him against the Titans, hurling three hundred rocks, and afterward guarded them in Tartarus (Theogony 617–720, 815–819)"
+  },
+  {
+    "id": "briareus-ally-zeus",
+    "type": "ally",
+    "from": "briareus",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Freed by Zeus on Gaia’s counsel, the Hundred-Handers fought for him against the Titans, hurling three hundred rocks, and afterward guarded them in Tartarus (Theogony 617–720, 815–819)"
+  },
+  {
+    "id": "gyges-hecatoncheir-ally-zeus",
+    "type": "ally",
+    "from": "gyges-hecatoncheir",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Freed by Zeus on Gaia’s counsel, the Hundred-Handers fought for him against the Titans, hurling three hundred rocks, and afterward guarded them in Tartarus (Theogony 617–720, 815–819)"
+  },
+  {
+    "id": "erinyes-parent-gaia",
+    "type": "parent",
+    "from": "erinyes",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Gaia/Terra bore them — from Uranus’ blood (Theogony 183–187; Bibliotheca 1.1.4), or of Aether and Terra (Fabulae preface)"
+  },
+  {
+    "id": "erinyes-parent-uranus",
+    "type": "parent",
+    "from": "erinyes",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "topic": "erinyes-parentage",
+    "note": "Sprung from the bloody drops of the castrated Uranus that fell on Gaia (Theogony 183–187; Bibliotheca 1.1.4)"
+  },
+  {
+    "id": "erinyes-parent-aether",
+    "type": "parent",
+    "from": "erinyes",
+    "to": "aether",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "erinyes-parentage",
+    "note": "Hyginus makes the Furies children of Aether and Terra (Fabulae preface)"
+  },
+  {
+    "id": "erinyes-adversary-orestes",
+    "type": "adversary",
+    "from": "erinyes",
+    "to": "orestes",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "The Furies pursued Orestes for the murder of his mother Clytemnestra (Epitome 6.25)"
+  },
+  {
+    "id": "gigantes-parent-gaia",
+    "type": "parent",
+    "from": "gigantes",
+    "to": "gaia",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Borne by Gaia from Uranus’ blood, to avenge the Titans (Theogony 183–186; Bibliotheca 1.6.1)"
+  },
+  {
+    "id": "gigantes-parent-uranus",
+    "type": "parent",
+    "from": "gigantes",
+    "to": "uranus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Sprung from the blood of the castrated Uranus (Theogony 183–186; Bibliotheca 1.6.1)"
+  },
+  {
+    "id": "gigantes-adversary-zeus",
+    "type": "adversary",
+    "from": "gigantes",
+    "to": "zeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "In the Gigantomachy the Giants stormed heaven and were destroyed by the Olympians with the mortal Heracles (Bibliotheca 1.6.1–2)"
+  },
+  {
+    "id": "meliae-parent-gaia",
+    "type": "parent",
+    "from": "meliae",
+    "to": "gaia",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Borne by Gaia from Uranus’ blood, with the Erinyes and Giants (Theogony 187)"
+  },
+  {
+    "id": "meliae-parent-uranus",
+    "type": "parent",
+    "from": "meliae",
+    "to": "uranus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Sprung from the blood of the castrated Uranus (Theogony 187)"
+  },
+  {
+    "id": "ourea-parent-gaia",
+    "type": "parent",
+    "from": "ourea",
+    "to": "gaia",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Borne by Gaia alone, without union, with Uranus and Pontus (Theogony 129–130)"
+  },
+  {
+    "id": "tityos-parent-gaia",
+    "type": "parent",
+    "from": "tityos",
+    "to": "gaia",
+    "sources": [
+      "homer"
+    ],
+    "topic": "tityos-parentage",
+    "note": "Homer makes Tityos a son of Gaia/Earth (Odyssey 7.324)"
+  },
+  {
+    "id": "tityos-parent-zeus",
+    "type": "parent",
+    "from": "tityos",
+    "to": "zeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "tityos-parentage",
+    "note": "Apollodorus: son of Zeus and Elare, hidden in the earth from Hera so Earth bore him (Bibliotheca 1.4.1)"
+  },
+  {
+    "id": "tityos-adversary-leto",
+    "type": "adversary",
+    "from": "tityos",
+    "to": "leto",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Incited by Hera, he tried to violate Leto (Bibliotheca 1.4.1)"
+  },
+  {
+    "id": "apollo-slayer-tityos",
+    "type": "slayer",
+    "from": "apollo",
+    "to": "tityos",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Apollo and Artemis shot Tityos for the assault on their mother Leto (Bibliotheca 1.4.1)"
+  },
+  {
+    "id": "artemis-slayer-tityos",
+    "type": "slayer",
+    "from": "artemis",
+    "to": "tityos",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Apollo and Artemis shot Tityos for the assault on their mother Leto (Bibliotheca 1.4.1)"
+  },
+  {
+    "id": "antaeus-giant-parent-gaia",
+    "type": "parent",
+    "from": "antaeus-giant",
+    "to": "gaia",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "antaeus-parentage",
+    "note": "Hyginus calls Antaeus a son of Terra/Earth, source of his invincibility (Fabulae 31)"
+  },
+  {
+    "id": "antaeus-giant-parent-poseidon",
+    "type": "parent",
+    "from": "antaeus-giant",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "antaeus-parentage",
+    "note": "Apollodorus makes Antaeus a son of Poseidon (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "heracles-slayer-antaeus-giant",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "antaeus-giant",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Heracles, bound for the Hesperides, lifted Antaeus off the earth and crushed him in the air (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "keres-parent-nyx",
+    "type": "parent",
+    "from": "keres",
+    "to": "nyx",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Borne by Nyx (Night) without union (Theogony 211, 217)"
+  },
+  {
+    "id": "oneiroi-parent-nyx",
+    "type": "parent",
+    "from": "oneiroi",
+    "to": "nyx",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Nyx bore the tribe of Dreams (Theogony 211-213; Fabulae preface)"
+  },
+  {
+    "id": "oneiroi-parent-erebus",
+    "type": "parent",
+    "from": "oneiroi",
+    "to": "erebus",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Hyginus lists the Somnia among the children of Nox and Erebus (Fabulae preface)"
+  },
+  {
+    "id": "philotes-parent-nyx",
+    "type": "parent",
+    "from": "philotes",
+    "to": "nyx",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Borne by Nyx among her brood (Theogony 224; Fabulae preface)"
+  },
+  {
+    "id": "philotes-parent-erebus",
+    "type": "parent",
+    "from": "philotes",
+    "to": "erebus",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Hyginus lists Amicitia/Philotes among the children of Nox and Erebus (Fabulae preface)"
+  },
+  {
+    "id": "hesperides-parent-nyx",
+    "type": "parent",
+    "from": "hesperides",
+    "to": "nyx",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "topic": "hesperides-parentage",
+    "note": "Nyx bore the Hesperides alone (Theogony 215-216; Fabulae preface)"
+  },
+  {
+    "id": "hesperides-parent-atlas",
+    "type": "parent",
+    "from": "hesperides",
+    "to": "atlas",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "hesperides-parentage",
+    "note": "Apollodorus and others make them daughters of Atlas (Bibliotheca 2.5.11)"
+  },
+  {
+    "id": "ladon-ally-hesperides",
+    "type": "ally",
+    "from": "ladon",
+    "to": "hesperides",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "The dragon Ladon coiled round the tree of golden apples that the Hesperides tend (Bibliotheca 2.5.11; Argonautica 4.1396)"
+  },
+  {
+    "id": "styx-parent-oceanus",
+    "type": "parent",
+    "from": "styx",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "styx-parentage",
+    "note": "Eldest daughter of Oceanus and Tethys, chief of the Oceanids (Theogony 361, 383-385)"
+  },
+  {
+    "id": "styx-parent-tethys",
+    "type": "parent",
+    "from": "styx",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "styx-parentage",
+    "note": "Eldest daughter of Oceanus and Tethys (Theogony 361, 383-385)"
+  },
+  {
+    "id": "styx-parent-nyx",
+    "type": "parent",
+    "from": "styx",
+    "to": "nyx",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "styx-parentage",
+    "note": "Hyginus instead lists Styx among the children of Nox and Erebus (Fabulae preface)"
+  },
+  {
+    "id": "styx-parent-erebus",
+    "type": "parent",
+    "from": "styx",
+    "to": "erebus",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "styx-parentage",
+    "note": "Hyginus instead lists Styx among the children of Nox and Erebus (Fabulae preface)"
+  },
+  {
+    "id": "styx-consort-pallas",
+    "type": "consort",
+    "from": "styx",
+    "to": "pallas",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Styx wed the Titan Pallas and bore Zelus, Nike, Cratos and Bia (Theogony 383-385)"
+  },
+  {
+    "id": "ponos-parent-eris",
+    "type": "parent",
+    "from": "ponos",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "lethe-daimon-parent-eris",
+    "type": "parent",
+    "from": "lethe-daimon",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "limos-parent-eris",
+    "type": "parent",
+    "from": "limos",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "algea-parent-eris",
+    "type": "parent",
+    "from": "algea",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "hysminai-parent-eris",
+    "type": "parent",
+    "from": "hysminai",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "makhai-parent-eris",
+    "type": "parent",
+    "from": "makhai",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "phonoi-parent-eris",
+    "type": "parent",
+    "from": "phonoi",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "androktasiai-parent-eris",
+    "type": "parent",
+    "from": "androktasiai",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "neikea-parent-eris",
+    "type": "parent",
+    "from": "neikea",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "pseudea-parent-eris",
+    "type": "parent",
+    "from": "pseudea",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "logoi-parent-eris",
+    "type": "parent",
+    "from": "logoi",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "amphillogiai-parent-eris",
+    "type": "parent",
+    "from": "amphillogiai",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "dysnomia-parent-eris",
+    "type": "parent",
+    "from": "dysnomia",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "horkos-parent-eris",
+    "type": "parent",
+    "from": "horkos",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "One of the children Eris (Strife) bore without a father (Theogony 226-232)"
+  },
+  {
+    "id": "ate-parent-eris",
+    "type": "parent",
+    "from": "ate",
+    "to": "eris",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "ate-parentage",
+    "note": "Hesiod lists Ate (Ruin) among the children of Eris (Theogony 230)"
+  },
+  {
+    "id": "ate-parent-zeus",
+    "type": "parent",
+    "from": "ate",
+    "to": "zeus",
+    "sources": [
+      "homer"
+    ],
+    "topic": "ate-parentage",
+    "note": "Homer makes Ate the eldest daughter of Zeus, flung from Olympus for deluding him (Iliad 19.91-131)"
+  },
+  {
+    "id": "horkos-ally-erinyes",
+    "type": "ally",
+    "from": "horkos",
+    "to": "erinyes",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "The Erinyes attended the birth of Horkos (Oath), so that false swearers are punished (Works and Days 803-804)"
+  },
+  {
+    "id": "calliope-parent-zeus",
+    "type": "parent",
+    "from": "calliope",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "calliope-parent-mnemosyne",
+    "type": "parent",
+    "from": "calliope",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "clio-parent-zeus",
+    "type": "parent",
+    "from": "clio",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "clio-parent-mnemosyne",
+    "type": "parent",
+    "from": "clio",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "euterpe-parent-zeus",
+    "type": "parent",
+    "from": "euterpe",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "euterpe-parent-mnemosyne",
+    "type": "parent",
+    "from": "euterpe",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "erato-muse-parent-zeus",
+    "type": "parent",
+    "from": "erato-muse",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "erato-muse-parent-mnemosyne",
+    "type": "parent",
+    "from": "erato-muse",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "melpomene-parent-zeus",
+    "type": "parent",
+    "from": "melpomene",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "melpomene-parent-mnemosyne",
+    "type": "parent",
+    "from": "melpomene",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "polyhymnia-parent-zeus",
+    "type": "parent",
+    "from": "polyhymnia",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "polyhymnia-parent-mnemosyne",
+    "type": "parent",
+    "from": "polyhymnia",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "terpsichore-parent-zeus",
+    "type": "parent",
+    "from": "terpsichore",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "terpsichore-parent-mnemosyne",
+    "type": "parent",
+    "from": "terpsichore",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "thalia-muse-parent-zeus",
+    "type": "parent",
+    "from": "thalia-muse",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "thalia-muse-parent-mnemosyne",
+    "type": "parent",
+    "from": "thalia-muse",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "urania-parent-zeus",
+    "type": "parent",
+    "from": "urania",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 75-79, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "urania-parent-mnemosyne",
+    "type": "parent",
+    "from": "urania",
+    "to": "mnemosyne",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 53-62, 915-917; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "aglaea-parent-zeus",
+    "type": "parent",
+    "from": "aglaea",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Theogony 907-911; Bibliotheca 1.3.1; Description of Greece 9.35.5"
+  },
+  {
+    "id": "euphrosyne-parent-zeus",
+    "type": "parent",
+    "from": "euphrosyne",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Theogony 907-911; Bibliotheca 1.3.1; Description of Greece 9.35.5"
+  },
+  {
+    "id": "thalia-charis-parent-zeus",
+    "type": "parent",
+    "from": "thalia-charis",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Theogony 907-911; Bibliotheca 1.3.1; Description of Greece 9.35.5"
+  },
+  {
+    "id": "eunomia-parent-zeus",
+    "type": "parent",
+    "from": "eunomia",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "eunomia-parent-themis",
+    "type": "parent",
+    "from": "eunomia",
+    "to": "themis",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "dike-parent-zeus",
+    "type": "parent",
+    "from": "dike",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "dike-parent-themis",
+    "type": "parent",
+    "from": "dike",
+    "to": "themis",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "eirene-parent-zeus",
+    "type": "parent",
+    "from": "eirene",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "eirene-parent-themis",
+    "type": "parent",
+    "from": "eirene",
+    "to": "themis",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Theogony 901-906"
+  },
+  {
+    "id": "hecate-parent-perses",
+    "type": "parent",
+    "from": "hecate",
+    "to": "perses",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 409-411; Bibliotheca 1.2.4"
+  },
+  {
+    "id": "hecate-parent-asteria",
+    "type": "parent",
+    "from": "hecate",
+    "to": "asteria",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 409-411; Bibliotheca 1.2.4"
+  },
+  {
+    "id": "iris-parent-thaumas",
+    "type": "parent",
+    "from": "iris",
+    "to": "thaumas",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 265-267; Bibliotheca 1.2.6"
+  },
+  {
+    "id": "eileithyia-parent-zeus",
+    "type": "parent",
+    "from": "eileithyia",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 921-923; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "eileithyia-parent-hera",
+    "type": "parent",
+    "from": "eileithyia",
+    "to": "hera",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 921-923; Bibliotheca 1.3.1"
+  },
+  {
+    "id": "nike-parent-pallas",
+    "type": "parent",
+    "from": "nike",
+    "to": "pallas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "nike-parent-styx",
+    "type": "parent",
+    "from": "nike",
+    "to": "styx",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "zelus-parent-pallas",
+    "type": "parent",
+    "from": "zelus",
+    "to": "pallas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "zelus-parent-styx",
+    "type": "parent",
+    "from": "zelus",
+    "to": "styx",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "cratos-parent-pallas",
+    "type": "parent",
+    "from": "cratos",
+    "to": "pallas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "cratos-parent-styx",
+    "type": "parent",
+    "from": "cratos",
+    "to": "styx",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "bia-parent-pallas",
+    "type": "parent",
+    "from": "bia",
+    "to": "pallas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "bia-parent-styx",
+    "type": "parent",
+    "from": "bia",
+    "to": "styx",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 383-385; Bibliotheca 1.2.4; Fabulae preface"
+  },
+  {
+    "id": "hyacinthus-parent-clio",
+    "type": "parent",
+    "from": "hyacinthus",
+    "to": "clio",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "hyacinthus-parentage",
+    "note": "Apollodorus alone makes Hyacinth a son of Clio and Pierus (Bibliotheca 1.3.3); the dominant tradition gives him a Laconian royal father"
+  },
+  {
+    "id": "sirens-parent-melpomene",
+    "type": "parent",
+    "from": "sirens",
+    "to": "melpomene",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "sirens-mother",
+    "note": "Apollodorus makes the Sirens daughters of the Muse Melpomene by Achelous (Bibliotheca 1.3.4)"
+  },
+  {
+    "id": "sirens-parent-terpsichore",
+    "type": "parent",
+    "from": "sirens",
+    "to": "terpsichore",
+    "sources": [
+      "apollonius"
+    ],
+    "topic": "sirens-mother",
+    "note": "Apollonius makes the Sirens daughters of the Muse Terpsichore by Achelous (Argonautica 4.892-896)"
+  },
+  {
+    "id": "aglaea-consort-hephaestus",
+    "type": "consort",
+    "from": "aglaea",
+    "to": "hephaestus",
+    "sources": [
+      "hesiod"
+    ],
+    "topic": "hephaestus-consort",
+    "note": "Hesiod weds the youngest Grace Aglaea to Hephaestus (Theogony 945)"
+  },
+  {
+    "id": "eunomia-adversary-dysnomia",
+    "type": "adversary",
+    "from": "eunomia",
+    "to": "dysnomia",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Good Order against Lawlessness — Eunomia the Hora vs Dysnomia the child of Strife (Theogony 226-232, 901-902)"
+  },
+  {
+    "id": "iris-sibling-harpies",
+    "type": "sibling",
+    "from": "iris",
+    "to": "harpies",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Iris and the storm-winged Harpies, daughters of Thaumas and the Oceanid Electra (Theogony 265-269; Bibliotheca 1.2.6)"
+  },
+  {
+    "id": "iris-ally-hera",
+    "type": "ally",
+    "from": "iris",
+    "to": "hera",
+    "sources": [
+      "homer"
+    ],
+    "note": "Iris is the swift messenger of Hera and the gods (Iliad 8.397-425; 18.166-186)"
+  },
+  {
+    "id": "nike-ally-zeus",
+    "type": "ally",
+    "from": "nike",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Stationed beside Zeus’s throne; Styx brought her children first to his side in the Titanomachy (Theogony 386-403)"
+  },
+  {
+    "id": "zelus-ally-zeus",
+    "type": "ally",
+    "from": "zelus",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Stationed beside Zeus’s throne; Styx brought her children first to his side in the Titanomachy (Theogony 386-403)"
+  },
+  {
+    "id": "cratos-ally-zeus",
+    "type": "ally",
+    "from": "cratos",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Stationed beside Zeus’s throne; Styx brought her children first to his side in the Titanomachy (Theogony 386-403)"
+  },
+  {
+    "id": "bia-ally-zeus",
+    "type": "ally",
+    "from": "bia",
+    "to": "zeus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Stationed beside Zeus’s throne; Styx brought her children first to his side in the Titanomachy (Theogony 386-403)"
   }
 ]

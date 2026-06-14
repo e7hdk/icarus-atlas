@@ -1,0 +1,39 @@
+{
+  "id": "nike",
+  "name": "Nike",
+  "greekName": "Nike (Νίκη)",
+  "romanName": "Victoria",
+  "type": "god",
+  "domains": ["victory", "triumph in war and contest"],
+  "epithets": ["trim-ankled Nike", "Victory"],
+  "summary": [
+    {
+      "text": "The winged goddess of Victory — daughter of the Titan Pallas and the Oceanid Styx, and one of the four wonderful children who dwell forever at Zeus's side.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 383–385; Bibliotheca 1.2.4"
+    },
+    {
+      "text": "Hesiod calls her \"trim-ankled Nike\"; reward for Styx's loyalty against the Titans, she has no house, dwelling or path apart from Zeus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 384, 386–403"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nike is the personification of Victory, the spirit of triumph in war and in every contest. Hesiod names her among the children whom the Oceanid Styx bore to the Titan Pallas, calling her \"trim-ankled Nike\" and setting her beside her brother Zelus (Emulation) and her younger siblings Cratos (Strength) and Bia (Force). Apollodorus repeats the same parentage, ranking her among the four wonderful children that Styx bore to Pallas, and Hyginus likewise derives her from Pallas and Styx — so on her descent the sources agree.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 383–385; Bibliotheca 1.2.4; Fabulae, preface"
+    },
+    {
+      "text": "These four children, Hesiod says, have no house apart from Zeus, nor any dwelling nor path except that wherein the god leads them, but dwell always beside him. The reason is given in the Theogony's account of the Titanomachy: when Zeus summoned the immortals to Olympus and promised honour and office to whoever would fight at his side against the Titans, deathless Styx came first of all the gods — on the counsel of her father Oceanus — bringing her children with her. For this Zeus honoured her with very great gifts and made her the great oath of the gods, while her children were appointed to live with him forever.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 386–403"
+    },
+    {
+      "text": "Because of that primeval allegiance, Victory stands always within reach of the king of the gods: where Strength and Force enforce the divine will and Emulation drives the gods to surpass one another, Nike is the triumph that crowns the effort. Her constant attendance upon Zeus made her, in cult and art, the winged bearer of the victor's wreath — granted to gods, heroes and mortals alike as the outward sign of a contest won, and identified by the Romans with their own goddess Victoria.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 384–403; Bibliotheca 1.2.4"
+    }
+  ],
+  "cluster": "olympian-band"
+}

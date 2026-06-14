@@ -1,0 +1,47 @@
+{
+  "id": "steropes-cyclops",
+  "name": "Steropes",
+  "greekName": "Steropēs (Στερόπης)",
+  "type": "primordial",
+  "domains": ["lightning", "smithcraft", "thunderbolts"],
+  "epithets": ["the Lightning-maker"],
+  "summary": [
+    {
+      "text": "Steropes, whose name means 'Lightning', is one of the three single-eyed Cyclopes born to Uranus and Gaia, master-smiths who forged Zeus's thunderbolt.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "These Uranian smith-Cyclopes are not the savage shepherd race of the Odyssey, but divine craftsmen — distinct from Polyphemus and the sons of Poseidon.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Bibliotheca 1.1.2",
+      "topic": "cyclopes-nature"
+    }
+  ],
+  "story": [
+    {
+      "text": "After bearing the Titans and the hundred-handed giants, Gaia bore to Uranus the three Cyclopes — Brontes ('Thunder'), Steropes ('Lightning'), and Arges ('Bright') — overbearing in spirit and like the gods in all things save that a single orbed eye was set in the midst of each forehead, from which they took their name 'Orb-eyed'.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2",
+      "topic": "cyclopes-nature"
+    },
+    {
+      "text": "Steropes and his brothers were bound and cast into the gloom of Tartarus, first by their father Uranus and again by Cronus. When Zeus rose against the Titans he freed the Cyclopes, and in gratitude they gave him the thunder and forged the thunderbolt — the same craftsmen who, in Apollodorus, fashioned Poseidon's trident and the cap of invisibility for Hades.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146, 501–506; Bibliotheca 1.2.1"
+    },
+    {
+      "text": "In Apollodorus their service to Zeus brought their end: when Zeus struck down Asclepius with one of their bolts for raising the dead, Apollo — unable to take vengeance on Zeus — slew the Cyclopes who had wrought the weapon.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4"
+    },
+    {
+      "text": "The sources do not agree on what a Cyclops is. Hesiod and Apollodorus describe these three timeless smiths of Uranus and Gaia, but Homer's Cyclopes are a whole tribe of lawless, cave-dwelling shepherds led by Polyphemus, a son of Poseidon — a different breed of one-eyed being entirely, generations removed from Steropes the lightning-forger.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2",
+      "topic": "cyclopes-nature"
+    }
+  ],
+  "cluster": "titan-ring"
+}

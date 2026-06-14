@@ -1,0 +1,43 @@
+{
+  "id": "horkos",
+  "name": "Horkos",
+  "greekName": "Horkos (Ὅρκος)",
+  "type": "god",
+  "domains": ["the oath", "perjury", "the curse on the forsworn"],
+  "epithets": ["bane of the forsworn"],
+  "summary": [
+    {
+      "text": "The personified daimon of the oath, born fatherless from Eris (Strife) — a bane to mortals who willfully swear falsely.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod names him the greatest woe to men on earth who swear a false oath, with the Erinyes attending his very birth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 231–232; Works and Days 803–804"
+    }
+  ],
+  "story": [
+    {
+      "text": "Horkos belongs to the grim brood whom Eris (Strife) bore without a father — the dark powers that beset mortal life, ranged alongside Toil, Famine, Sorrows, Murders, Quarrels, Lying Words, Disputes, Lawlessness and Ruin. He is not a story but a force: the oath itself made into a god, the punishing weight that falls on a broken vow.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod singles Horkos out as the last and worst of Eris's children, the greatest woe to men on earth who willfully swear a false oath. In a god whose only deed is to harm the perjurer, the catalogue of Strife reaches its sharpest point: to swear by Horkos is to invite his vengeance upon oneself should the word prove false.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 231–232"
+    },
+    {
+      "text": "In the Works and Days Hesiod marks the fifth day of the month as unkindly and terrible, for on a fifth the Erinyes assisted at the birth of Horkos, whom Eris bore to trouble the forsworn. The vengeful Furies stand at his cradle so that perjury never goes unpunished, binding the daimon of the oath to the powers that hunt down the oath-breaker.",
+      "sources": ["hesiod"],
+      "citation": "Works and Days 803–804"
+    },
+    {
+      "text": "The Homeric poems show the oath-cult Horkos personifies without naming him: oaths are sworn before Zeus, Earth, Sun and the rivers, and called to witness the Erinyes who beneath the earth take vengeance on whoever has sworn a false oath. The dread that Hesiod gathers into a single dark god runs through these solemn battlefield oaths as the lurking penalty behind every sworn word.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.276–280; 19.258–260"
+    }
+  ],
+  "cluster": "night-court"
+}

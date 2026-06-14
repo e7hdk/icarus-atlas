@@ -1,0 +1,33 @@
+{
+  "id": "algea",
+  "name": "The Algea",
+  "greekName": "Algea (Ἄλγεα)",
+  "type": "god",
+  "domains": ["pain", "grief", "sorrow", "suffering"],
+  "epithets": ["the Sorrows", "the Griefs"],
+  "summary": [
+    {
+      "text": "The Algea are the personified spirits of pain, grief and sorrow — a plural brood borne fatherless by Eris (Strife) among the dark powers that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod calls them tearful Sorrows, set in Strife's catalogue beside Toil, Famine and Battles.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–227"
+    }
+  ],
+  "story": [
+    {
+      "text": "When hard-hearted Eris had herself been born of Night without a father, she continued the dark genealogy in turn, bringing forth a brood of grim children with no father of their own. Among them Hesiod names the Algea — tearful Sorrows, the spirits of bodily pain and the grief of the heart — set immediately after Toil and Forgetfulness and Famine in Strife's catalogue of the powers that afflict humankind.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod gives the Algea no adventure and no further parentage: their place in the litany is their identity. They stand among Battles, Murders, Quarrels, Lying Words, Lawlessness and Ruin — all, the poet says, of one nature — so that pain and sorrow are made siblings of conflict itself, the inward suffering that strife sows wherever it touches mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    }
+  ],
+  "cluster": "night-court"
+}

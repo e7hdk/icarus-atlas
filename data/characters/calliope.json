@@ -1,0 +1,51 @@
+{
+  "id": "calliope",
+  "name": "Calliope",
+  "greekName": "Kalliopē (Καλλιόπη)",
+  "romanName": "Calliope",
+  "type": "god",
+  "domains": ["poetry", "eloquence", "song", "the Muses"],
+  "epithets": ["chiefest of the Muses"],
+  "summary": [
+    {
+      "text": "Eldest and foremost of the nine Muses, daughters of Zeus and the Titaness Mnemosyne; Hesiod calls her 'the chiefest of them all,' for she attends on worshipful princes and pours sweet dew upon the tongues of kings.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Later tradition makes her the mother of the singer Orpheus, and the patroness of epic poetry — though her assignment to a single genre is a Roman-era systematization, not found in the early sources.",
+      "sources": ["apollonius", "apollodorus", "hyginus"],
+      "citation": "Argonautica 1.23; Bibliotheca 1.3.2; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Calliope is one of the nine Muses, born in Pieria to Mnemosyne (Memory), who reigns over the hills of Eleuther, after Zeus lay nine nights with her in his holy bed remote from the immortals. When a year had turned, the Titaness bore nine daughters all of one mind, whose delight is in song and whose hearts are free from care, a little way from the topmost peak of snowy Olympus.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 53–67, 915–917"
+    },
+    {
+      "text": "Hesiod names her last in his catalogue of the nine — Clio, Euterpe, Thalia, Melpomene, Terpsichore, Erato, Polyhymnia, Urania, and Calliope — and crowns her 'the chiefest of them all.' For she attends on worshipful princes: whomever of heaven-nourished kings the daughters of Zeus honor and behold at his birth, they pour sweet dew upon his tongue, and from his lips flow gracious words. Pseudo-Apollodorus likewise lists her first among the nine Muses borne by Mnemosyne to Zeus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Later poets make her a mother of singers. By Oeagrus the Thracian — or, nominally, by Apollo — she bore Orpheus, whose minstrelsy moved stones and trees, and Linus, whom Heracles slew; Apollonius and Hyginus likewise name her as Orpheus' mother near the Pierian height.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 1.3.2; Argonautica 1.23; Fabulae 14",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "text": "Pausanias rejects this descent: he counts it among the untruths believed by the Greeks that Orpheus was a son of the Muse Calliope, holding that he was in truth a son of the daughter of Pierus, and that neither did beasts follow him for his song nor did he go down alive to Hades.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.30.4",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "text": "In Ovid's account the Muses, challenged to a singing contest by the nine daughters of Pierus, choose Calliope to sing on their behalf. Her glorious hair bound with ivy, she takes up the lyre and chants the rape of Proserpina and the gifts of Ceres, and wins. Her later, narrower role as patron specifically of epic poetry is a Hellenistic and Roman systematization of the Muses' offices; the early Greek sources mark her only as foremost of the nine.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.337–340, 399–401"
+    }
+  ],
+  "cluster": "olympian-band"
+}

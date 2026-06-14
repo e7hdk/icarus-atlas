@@ -1,0 +1,38 @@
+{
+  "id": "keres",
+  "name": "The Keres",
+  "greekName": "Keres (Κῆρες)",
+  "type": "god",
+  "domains": ["violent death", "doom of the slain", "fate of death"],
+  "epithets": ["dark Ker"],
+  "summary": [
+    {
+      "text": "Female death-spirits, the violent fates that seize the slain — fatherless daughters borne by Nyx among her dark brood.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211, 217"
+    },
+    {
+      "text": "In Homer the kēr is each mortal's allotted death, the doom of death that besets every man and that none may escape or avoid.",
+      "sources": ["homer"],
+      "citation": "Iliad 23.78–79, 12.326–327"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets the Keres in the catalogue of Night's children, born without union: deadly Night bore hateful Moros and black Ker and Death, and again, lying with none, brought forth the Moirai and other dark powers. Among that fatherless brood the Keres stand outside the order of Zeus — primordial agents of death rather than gods who answer to the Olympians.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 211, 217"
+    },
+    {
+      "text": "They are the violent fates of death who close upon the slain. In Homeric battle the kēr is not a goddess to be worshipped but the doom that falls on a man at his appointed hour: when Patroclus is to be buried, his spirit warns that his own hateful kēr now gapes for him, the death allotted at his birth.",
+      "sources": ["homer"],
+      "citation": "Iliad 23.78–79"
+    },
+    {
+      "text": "For Homer the fates of death come past counting and beset every mortal alike, fates which no man may escape or avoid; even Hector could not have fled them but for Apollo. The kēr is thus each warrior's portioned death — sometimes the doom Zeus weighs in his golden scales, sometimes the spirit that bears the fallen away to the house of Hades.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.326–327"
+    }
+  ],
+  "cluster": "night-court"
+}

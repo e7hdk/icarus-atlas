@@ -1,0 +1,41 @@
+{
+  "id": "ponos",
+  "name": "Ponos",
+  "greekName": "Ponos (Πόνος)",
+  "type": "god",
+  "domains": ["toil", "hardship", "labour"],
+  "epithets": ["Painful Toil"],
+  "summary": [
+    {
+      "text": "Toil and hardship personified, the first of the grim children Eris bore without a father.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hyginus' Latin genealogy instead lists Labor among the brood of Night and Erebus together.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hard-hearted Eris bore painful Ponos without union with any father, naming him first in the dark catalogue of powers that beset mortal life. In Hesiod he heads the line that runs through Forgetfulness, Famine and tearful Sorrows down to Oath — the afflictions strife breeds in the human world.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Hesiod gives Toil no separate deed or myth. Like his siblings he is a name made into a force: the grinding labour and hardship of existence, set beside Lies, Battles and Ruin as one of the burdens that attend mortal life through the lineage of Night.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "In Hyginus' Latin reckoning the descent is rearranged: Labor is not a grandchild of Night through Strife but one member of the crowded brood produced directly by Nox and Erebus, alongside Death, Sleep, Misery and Fate.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony) 1",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "cluster": "night-court"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "phonoi",
+  "name": "The Phonoi",
+  "greekName": "Phonoi (Φόνοι)",
+  "type": "god",
+  "domains": ["murder", "killing", "slaughter"],
+  "epithets": ["the Murders", "the Killings"],
+  "summary": [
+    {
+      "text": "The Phonoi are the personified spirits of murder and killing — a plural brood borne fatherless by Eris (Strife) among the dark powers that beset mortal life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod names them among Strife's grim children, set immediately beside the Battles (Machai) in the catalogue of conflict.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 228"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hard-hearted Eris, herself born of Night without a father, continued the dark genealogy in turn, bringing forth a brood of grim children with no father of their own. Among them Hesiod names the Phonoi — Murders, the spirits of killing and slaughter — counted in Strife's litany of the powers that afflict humankind.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Hesiod sets the Phonoi directly beside the Machai (Battles), so that murder and open warfare stand as siblings of one nature, twin faces of the violence that Strife sows wherever it touches mortal life. They share their litany with Toil, Famine, Sorrows, Quarrels, Lying Words, Lawlessness and Ruin — all, the poet says, born of the same hateful mother.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    },
+    {
+      "text": "Like their fellow spirits in this catalogue, the Phonoi are given no adventure, no cult and no parentage beyond Eris: their place in the litany is their identity. As a plural personification of killing itself, they embody the bloodshed that follows in Strife's train rather than any single deed or myth.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232"
+    }
+  ],
+  "cluster": "night-court"
+}

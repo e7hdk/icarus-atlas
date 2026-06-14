@@ -1,0 +1,43 @@
+{
+  "id": "arges-cyclops",
+  "name": "Arges",
+  "greekName": "Arges (Ἄργης)",
+  "type": "primordial",
+  "domains": ["smithcraft", "thunderbolt", "lightning"],
+  "epithets": ["Bright", "Cyclops"],
+  "summary": [
+    {
+      "text": "Arges, 'Bright' — the vivid flash — is one of the three single-eyed Cyclopes, sons of Uranus and Gaia, who forged the thunderbolt by which Zeus won the cosmos.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2"
+    },
+    {
+      "text": "A primordial smith-Cyclops of the heavens — distinct from the savage Odyssean Cyclopes, the sons of Poseidon.",
+      "sources": ["hesiod", "homer"],
+      "citation": "Theogony 139–146; Odyssey 9.105–115"
+    }
+  ],
+  "story": [
+    {
+      "text": "Among the children Gaia bore to Uranus were the Cyclopes, overbearing in spirit — Brontes ('Thunderer'), Steropes ('Lightning') and stubborn-hearted Arges ('Bright'), the vivid flash. In all else they were like the gods, but a single orbed eye was set in the midst of each forehead, and from that round eye they took their name. Apollodorus likewise names the three and gives each one eye upon his brow.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 139–146; Bibliotheca 1.1.2"
+    },
+    {
+      "text": "Their father feared his own brood: Apollodorus tells how Sky bound the Cyclopes and hurled them down into Tartarus, the gloomy pit as far below earth as earth lies below heaven, where they languished through the reign of Uranus and on under Cronus. When Zeus rose against the Titans, an oracle of victory turned on freeing those cast into Tartarus; he slew their jailoress Campe and loosed their bonds.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.2, 1.2.1"
+    },
+    {
+      "text": "In gratitude the Cyclopes armed the gods: to Zeus they gave thunder, lightning and the thunderbolt, to Hades a cap of darkness, to Poseidon a trident, and with these weapons the gods overthrew the Titans. Hesiod too makes the brothers the makers of the bolt by which Zeus rules over mortals and immortals alike — Apollonius recalls that until the earthborn Cyclopes had armed him, the young Zeus still lacked the renown of thunder and lightning.",
+      "sources": ["hesiod", "apollodorus", "apollonius"],
+      "citation": "Theogony 139–146, 501–506; Bibliotheca 1.2.1; Argonautica 1.496–511"
+    },
+    {
+      "text": "Their craft brought their doom. When Zeus blasted Asclepius with a thunderbolt for raising the dead, Apollo — unable to strike at Zeus himself — took revenge upon the smiths and killed the Cyclopes who had fashioned the bolt; for this he was bound to serve Admetus as a thrall for a year. So Apollodorus records, and Hyginus tells the same, naming the Cyclopes as the makers of the thunderbolt whom the grieving Apollo slew.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.4; Fabulae 49"
+    }
+  ],
+  "cluster": "titan-ring"
+}

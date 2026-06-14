@@ -1,0 +1,47 @@
+{
+  "id": "terpsichore",
+  "name": "Terpsichore",
+  "greekName": "Terpsichorē (Τερψιχόρη)",
+  "romanName": "Terpsichore",
+  "type": "god",
+  "domains": ["song", "the Muses", "dance"],
+  "epithets": ["delighting in the dance"],
+  "summary": [
+    {
+      "text": "One of the nine Muses, daughters of Zeus and Mnemosyne; Hesiod names Terpsichore among the sisters who dwell on Olympus, and her name itself means 'delighting in the dance'.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Mother of the Sirens by the river-god Achelous — though Apollodorus gives that motherhood to her sister Melpomene.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 4.892–896; Bibliotheca 1.3.4",
+      "topic": "sirens-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Terpsichore is one of the nine Muses, the daughters of great Zeus whom Mnemosyne (Memory) bore in Pieria, a little way from the topmost peak of snowy Olympus. Hesiod sets her name within the catalogue of sisters — Clio and Euterpe, Thalia, Melpomene and Terpsichore, Erato and Polyhymnia, Urania and Calliope — and Pseudo-Apollodorus, listing the same sisterhood borne by Mnemosyne to Zeus, places her sixth among the nine. Her name is built from the Greek for delight and the dance, so that 'Terpsichore' means she who delights in the dance.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Apollonius of Rhodes makes Terpsichore the mother of the Sirens. United with the river-god Achelous she bore the clear-voiced bird-women who once tended Demeter's daughter unwed and sang to her in chorus, fashioned in part like birds and in part like maidens, and who afterward beguiled and destroyed whoever cast anchor near their shore. He sets them on the flowering isle Anthemoessa, where the Argonauts pass by guarded only by the song of Orpheus.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.892–896",
+      "topic": "sirens-mother"
+    },
+    {
+      "text": "The Sirens' mother is disputed. Against Apollonius, Pseudo-Apollodorus gives them not to Terpsichore but to her sister Melpomene, also by Achelous, and Hyginus follows that descent. The two Muses thus stand as rival mothers of the same daughters, and the contradiction is preserved rather than resolved — Terpsichore's claim belonging to the Argonautic tradition, Melpomene's to the mythographers.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 4.892–896; Bibliotheca 1.3.4",
+      "topic": "sirens-mother"
+    },
+    {
+      "text": "Terpsichore's familiar role as the Muse specifically of dance and choral song, lyre in hand, belongs to a later Roman systematization that parceled out one art to each of the nine sisters. The early sources know no such division of labour: in Hesiod and Pseudo-Apollodorus the Muses share the gift of song as one chorus. The narrowing suits her name, which already binds her to the dance, but it is a learned assignment laid over the older, undivided choir of song.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    }
+  ],
+  "cluster": "olympian-band"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "euterpe",
+  "name": "Euterpe",
+  "greekName": "Euterpē (Εὐτέρπη)",
+  "romanName": "Euterpe",
+  "type": "god",
+  "domains": ["song", "the Muses", "music"],
+  "epithets": ["the well-delighting"],
+  "summary": [
+    {
+      "text": "One of the nine Muses, daughters of Zeus and Mnemosyne; her name means 'well-delighting'. Hesiod names her second in his list of the nine and Pseudo-Apollodorus fourth.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "In Pseudo-Apollodorus she bears, by the river-god Strymon, the Thracian king Rhesus, slain by Diomedes at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.4",
+      "topic": "rhesus-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Euterpe is one of the nine Muses, the daughters of one mind whom Mnemosyne bore to Zeus to be a singing memory of all that gods and mortals do. Hesiod names her second among the nine who dwell on Olympus — Clio and Euterpe, Thalia, Melpomene and Terpsichore, Erato, Polyhymnia, Urania and Calliope; Pseudo-Apollodorus, listing the same sisterhood, places her fourth.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Her name is read as 'well-delighting', and in the earliest sources she has no separate office of her own: Hesiod and Pseudo-Apollodorus treat the Muses as a chorus of song rather than dividing the arts among them. The familiar later assignment of Euterpe specifically to music and the flute is a Roman-era systematization of the canon, not an attribution found in the early Greek mythographers.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 75–79; Bibliotheca 1.3.1"
+    },
+    {
+      "text": "Pseudo-Apollodorus gives Euterpe a single child: by the river-god Strymon she bore a son Rhesus, the Thracian king whom Diomedes killed in his tent at Troy. Apollodorus himself qualifies the descent — 'but some say his mother was Calliope' — so the motherhood of Rhesus is reported as a disputed fact even within the same hand.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.4",
+      "topic": "rhesus-mother"
+    },
+    {
+      "text": "The Muse-mother tradition is itself a divergence from Homer, who knows Rhesus only as the son of Eïoneus when Odysseus and Diomedes raid his camp by night, with no Muse named as his parent. Euterpe's claim to Rhesus thus belongs to the mythographic genealogies rather than to the epic, where his Thracian fame rests on his white horses and his swift death.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 10.435–502; Bibliotheca 1.3.4",
+      "topic": "rhesus-mother"
+    }
+  ],
+  "cluster": "olympian-band"
+}

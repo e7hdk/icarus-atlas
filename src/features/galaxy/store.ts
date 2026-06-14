@@ -34,7 +34,7 @@ export const useGalaxyStore = create<GalaxyState>()(
       isDiving: false,
       searchOpen: false,
       settingsOpen: false,
-      spacingScale: 3.0,
+      spacingScale: 4.0,
       musicEnabled: true,
       musicVolume: 0.45,
       setLens: (lens) => set({ lens }),

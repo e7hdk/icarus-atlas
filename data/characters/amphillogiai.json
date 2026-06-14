@@ -1,0 +1,41 @@
+{
+  "id": "amphillogiai",
+  "name": "The Amphillogiai",
+  "greekName": "Amphillogiai (Ἀμφιλλογίαι)",
+  "type": "god",
+  "domains": ["disputes", "ambiguities", "double-speeches"],
+  "epithets": ["the Disputes", "the Ambiguities", "the Double-Speeches"],
+  "summary": [
+    {
+      "text": "The Amphillogiai are the personified spirits of disputes and ambiguities — the double-speeches and contested words that breed quarrels, a plural brood borne fatherless by Eris (Strife).",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    },
+    {
+      "text": "Hesiod numbers them among the dark children of Strife, the grim powers that beset mortal life — set in the catalogue beside Lies (Pseudea) and Tales or Disputes (Logoi).",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hateful Eris, herself born of Night without a father, carried the dark genealogy forward in her turn, bringing forth a brood of grim children with no father of their own. Among them Hesiod names the Amphillogiai — Ambiguities, the spirits of disputes and double-speech — counted in Strife's litany of the powers that afflict humankind.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "In the catalogue of Strife's offspring the Amphillogiai stand in a cluster of word-born evils: the poet sets them beside the Pseudea (Lies) and the Logoi (Tales or Disputes), so that lying, contention, and equivocation appear as siblings of one nature. They share their litany with Toil and Famine, the tearful Sorrows, the Battles and Slaughters, the Quarrels (Neikea), Lawlessness (Dysnomia), Ruin (Ate) and Oath (Horkos) — all, the poet says, born of the same hateful mother.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 226–232",
+      "topic": "night-brood-parentage"
+    },
+    {
+      "text": "Their name marks a specific face of strife: amphillogia is the speech that points two ways, the contested or double argument out of which quarrels grow. Like their fellow spirits in this catalogue the Amphillogiai are given no adventure, no cult and no parentage beyond Eris — their place in the litany is their whole identity. As a plural personification of disputed words, they embody the ambiguity and contention that follow wherever Strife sows discord into the fabric of human life.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 229"
+    }
+  ],
+  "cluster": "night-court"
+}

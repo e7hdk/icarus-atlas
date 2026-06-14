@@ -1,0 +1,40 @@
+{
+  "id": "styx",
+  "name": "Styx",
+  "greekName": "Styx (Στύξ)",
+  "type": "god",
+  "domains": ["river of the underworld", "the oath of the gods"],
+  "epithets": ["the Hateful", "eldest of the Oceanids"],
+  "summary": [
+    {
+      "text": "Goddess of the great underworld river by which the gods swear their unbreakable oaths — for Hesiod the eldest and foremost of the Oceanid daughters of Oceanus and Tethys.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 361, 383–385",
+      "topic": "styx-parentage"
+    },
+    {
+      "text": "Wife of the Titan Pallas and mother of Zelus, Nike, Cratos and Bia; first to bring her children to Zeus's side against the Titans, she was rewarded with the honour of being the oath of the gods.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 383–403; Bibliotheca 1.2.4–1.2.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's reckoning Styx is the chiefest of all the Oceanids, eldest of the three thousand neat-ankled daughters born to Oceanus and Tethys. Apollodorus likewise sets her among the daughters of Ocean and Tethys, beside Asia, Electra, Doris, Eurynome, Amphitrite and Metis. Hyginus, by contrast, places her not in the river-line at all but among the children of Nox (Night) and Erebus — a minority genealogy that makes the oath-goddess a creature of primeval darkness rather than of the world-encircling stream.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 361, 367; Bibliotheca 1.2.2; Fabulae, preface",
+      "topic": "styx-parentage"
+    },
+    {
+      "text": "Styx was joined in love to the Titan Pallas and bore in his house Zelus (Emulation) and trim-ankled Nike (Victory), and after them Cratos (Strength) and Bia (Force), wonderful children who have no house apart from Zeus, no dwelling and no path except where the god leads them, but sit forever beside him. When Zeus summoned the gods to Olympus to make war upon the Titans, promising office and honour to whoever would fight at his side, deathless Styx came first of all — through the counsel of her dear father Oceanus — bringing her children with her. For this Zeus honoured her with very great gifts and appointed her to be the great oath of the gods, while her children were made to live with him always.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 383–403; Bibliotheca 1.2.4–1.2.5"
+    },
+    {
+      "text": "Far under the wide-pathed earth Styx dwells apart in a glorious house roofed with great rocks and propped to heaven on silver pillars; a tenth part of Oceanus is allotted to her as the cold water that trickles down from a high, beetling crag. When strife arises among the immortals and one of them lies, Zeus sends Iris to fetch the great oath in a golden jug from far away. Whoever pours that water and then forswears himself lies breathless for a full year, tasting neither ambrosia nor nectar, and for nine more years is cut off from the councils and feasts of the gods, rejoining them only in the tenth. So Homer's gods invoke her again and again — Hera swears by the down-flowing water of Styx that she did not set Poseidon against the Achaeans, Hypnos binds Sleep's bargain by the same inviolable stream, and Calypso pledges Odysseus no further harm upon it; Apollonius' Iris vows by Styx that the Harpies will trouble Phineus no more, and even Ovid's Jupiter calls bitter Styx to witness his oath to Juno over Io.",
+      "sources": ["hesiod", "homer", "apollonius", "ovid"],
+      "citation": "Theogony 775–806; Iliad 14.271, 15.36–38; Odyssey 5.184–186; Argonautica 2.291; Metamorphoses 1.737"
+    }
+  ],
+  "cluster": "chthonic"
+}

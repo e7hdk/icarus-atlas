@@ -1,0 +1,45 @@
+{
+  "id": "thalia-charis",
+  "name": "Thalia",
+  "greekName": "Thaleia (Θάλεια)",
+  "type": "god",
+  "domains": ["the Graces", "good cheer", "blooming abundance", "festive joy"],
+  "epithets": ["the Blooming", "the Abundant", "lovely Thaleia"],
+  "summary": [
+    {
+      "text": "One of the three Charites (Graces); her name means 'Good Cheer, Blooming Abundance', and Hesiod calls her 'lovely Thaleia'.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 909–911"
+    },
+    {
+      "text": "Daughter of Zeus and the Oceanid Eurynome, sister of Aglaia and Euphrosyne; the same line is given by Apollodorus and by Pausanias.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 907–911; Bibliotheca 1.3.1; Description of Greece 9.35.5",
+      "topic": "charites-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Thalia is one of the three Charites — the Graces — whom Eurynome, the fair-formed daughter of Ocean, bore to Zeus. Hesiod names the trio in his Theogony as Aglaia, Euphrosyne, and 'lovely Thaleia', and her name is built from the Greek for blooming, flourishing growth, so that 'Thaleia' carries the sense of good cheer and rich, festive abundance. Of the three she is the embodiment of the green, swelling plenty of the natural world and of the glad feast.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 907–911"
+    },
+    {
+      "text": "Hesiod lingers on the seductive power of the Graces as a group: from the eyes of the three, as they glanced, flowed love that unnerves the limbs, and beautiful is their glance beneath their brows. Thaleia shares wholly in this beauty — the desire and softening sweetness that the Charites pour out on gods and mortals alike — for the early sources praise the sisters together as one radiant choir of grace rather than parceling distinct offices among them.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 909–911"
+    },
+    {
+      "text": "The parentage of the Charites from Zeus and Eurynome is the canonical Hesiodic line, repeated by the mythographer Pseudo-Apollodorus, who lists the three Graces — Aglaia, Euphrosyne, and Thalia — among Zeus's children by Eurynome, daughter of Ocean. Pausanias likewise reports that Hesiod makes the Graces daughters of Zeus and Eurynome under these three names; yet he is careful to record that the ancient authors disagree, for Antimachus makes the Graces daughters of Aegle and the Sun, and Homer, who knows the Charites, names only Pasithea and a Grace wedded to Hephaestus. Thalia's descent from Zeus and Eurynome is thus the dominant tradition, but not an undisputed one.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.3.1; Description of Greece 9.35.5",
+      "topic": "charites-parentage"
+    },
+    {
+      "text": "Thalia the Charis must not be confused with her namesake Thalia the Muse, the daughter of Zeus and Mnemosyne, who appears in the very same Apollodoran catalogue as a separate child of Zeus and is later remembered as the Muse of comedy. The two share the 'blooming, festive' meaning of the name and a divine father, but they are distinct figures: one of the Graces who attend on beauty and joy, the other one of the nine sisters of song.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.1"
+    }
+  ],
+  "cluster": "olympian-band"
+}
