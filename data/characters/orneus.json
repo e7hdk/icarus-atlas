@@ -1,0 +1,46 @@
+{
+  "id": "orneus",
+  "name": "Orneus",
+  "greekName": "Orneus (Ὀρνεύς)",
+  "romanName": "Orneus",
+  "type": "mortal",
+  "domains": [
+    "erechtheid prince",
+    "eponym of orneae",
+    "ancestor of menestheus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A son of Erechtheus and the eponymous founder of Orneae in the Argolid. From him the line ran to Peteos and then to Menestheus, the Athenian who sailed with Agamemnon to overthrow the kingdom of Priam.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.25.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias derives the name of the Argive town of Orneae from Orneus, son of Erechtheus. This Orneus begat Peteos, and Peteos begat Menestheus, who led a body of Athenians and helped Agamemnon destroy the kingdom of Priam; from the founder the city took its name, until in later days the Argives uprooted its people, who came to dwell as fellow-citizens at Argos. So an Erechtheid prince of Athens is set, by Pausanias' reckoning, at the head of a small Argolid house whose fame is carried by his grandson before the walls of Troy.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.25.6"
+    },
+    {
+      "text": "The line carries a second tradition of exile. The people of Phocian Stiris claimed to be Athenians by descent, saying they came from Attica together with Peteos, son of Orneus, when he was driven from Athens by Aegeus; and because most of those who followed Peteos came from the Attic deme of Stiria, the city they founded was called Stiris. Through his son's flight the house of Orneus seeds a colony far from both Athens and Orneae.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 10.35.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

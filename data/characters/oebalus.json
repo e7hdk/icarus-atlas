@@ -1,0 +1,75 @@
+{
+  "id": "oebalus",
+  "name": "Oebalus",
+  "greekName": "Oebalus (Οἴβαλος)",
+  "romanName": "Oebalus",
+  "type": "mortal",
+  "domains": [
+    "Spartan kingship",
+    "the Lacedaemonian line",
+    "father of Tyndareus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A king of Sparta in the old Lacedaemonian line that ran down from Amyclas through Cynortas. He stands near the head of the house of the Dioscuri, reckoned ancestor of Tyndareus and Icarius, though the sources differ over his parentage and the mother of his sons.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.10.4; Description of Greece 3.1.3–3.1.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias sets Oebalus in the succession of Lacedaemon: when Amyclas, son of Lacedaemon, died, the kingship passed to his eldest son Aigalus, and after him to Cynortas; and Cynortas had a son, Oebalus. So the Spartan line runs down to him through Amyclas and Cynortas.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.1.3"
+    },
+    {
+      "text": "In Pausanias' reckoning Oebalus married Gorgophone, daughter of Perseus, who had first been wife to Perieres, son of Aeolus. On the death of Perieres she wedded Oebalus, and was the first woman, they say, to take a second husband; for before her, wives were wont to live out their widowhood unmarried.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.21.7"
+    },
+    {
+      "text": "From this marriage Pausanias traces the Spartan kings: Oebalus and Gorgophone are reckoned parents of Tyndareus, and of Icarius and Arene, the latter both wife and half-sister to Aphareus, who founded in Messenia a city named after her.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.1.4, 4.2.4"
+    },
+    {
+      "text": "Apollodorus tells the line otherwise. On the testimony of Stesichorus it was Perieres, not Oebalus, who married Gorgophone, daughter of Perseus, and she bore Tyndareus, Icarius, Aphareus, and Leucippus; Arene, in this account too, is named a daughter of Oebalus and wedded to Aphareus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.3"
+    },
+    {
+      "text": "Apollodorus also preserves a rival genealogy in which Aphareus and Leucippus were sons of Perieres, son of Aeolus, while Cynortes begat Perieres, Perieres begat Oebalus, and Oebalus begat Tyndareus, Hippocoon, and Icarius by a Naiad nymph, Batia. So in this telling Oebalus' father is Perieres rather than Cynortas, and his sons come from the nymph rather than Gorgophone.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.4"
+    },
+    {
+      "text": "At Sparta Oebalus kept a cult: Pausanias records a hero-shrine of him near the theater, beside the sanctuary of Poseidon God of Kin and the shrine of Cleodaeus son of Hyllus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.15.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "timandra",
+  "name": "Timandra",
+  "greekName": "Tīmandrā (Τίμανδρα)",
+  "romanName": "Timandra",
+  "type": "mortal",
+  "domains": [
+    "Spartan royalty",
+    "marriage to Echemus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A daughter of Tyndareus given in marriage to Echemus of Tegea; Apollodorus also makes her a daughter of Leda and sister of Clytemnestra and Phylonoe.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.10.6; Description of Greece 8.5.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Timandra among the daughters of Tyndareus and Leda: Timandra, whom Echemus married, and Clytaemnestra, whom Agamemnon married, and another daughter Phylonoe, whom Artemis made immortal. So she stands a Spartan princess beside her sisters, her portion of the house a single marriage rather than a war.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.6"
+    },
+    {
+      "text": "Pausanias reaches Timandra through a question of chronology. Weighing the rival datings for when the Heraclidae attempted their return to the Peloponnesus, he reasons that on the later reckoning Timandra, the daughter of Tyndareus, was the wife of Echemus — the Echemus who killed Hyllus, son of Heracles.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.5.1"
+    },
+    {
+      "text": "Of that husband Pausanias records the deed her marriage is remembered by: when the Heraclidae came down into the Peloponnesus, Echemus, son of Aeropus, a Tegean, fought a duel with Hyllus and overcame him in the fight. At Tegea Pausanias saw the tomb of Echemus and the combat with Hyllus carved in relief upon a slab.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.45.3, 8.53.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

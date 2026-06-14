@@ -1,0 +1,79 @@
+{
+  "id": "tyndareus",
+  "name": "Tyndareus",
+  "greekName": "Tyndareōs (Τυνδάρεως)",
+  "romanName": "Tyndareus",
+  "type": "mortal",
+  "domains": [
+    "Spartan kingship",
+    "husband of Leda",
+    "the oath of the suitors"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Lacedaemon and husband of Leda, daughter of Thestius. Driven from Sparta by Hippocoon and restored by Heracles, he is best remembered for binding Helen's suitors by oath before giving her to Menelaus, and at last ceding the kingdom to him.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.5–3.11.2"
+    },
+    {
+      "text": "Father of the Tyndarids. Homer makes Castor the horse-tamer and Polydeuces the boxer alike his sons by Leda, while Apollodorus splits the brood: Castor and Clytemnestra his, but Pollux and Helen Zeus's.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.298–300; Bibliotheca 3.10.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "His ancestry was disputed. Apollodorus, following Stesichorus, makes Tyndareus a son of Perieres and Gorgophone, daughter of Perseus, born brother to Icarius, Aphareus, and Leucippus. But others held that Perieres begot Oebalus, and that it was Oebalus who fathered Tyndareus, Hippocoon, and Icarius by the Naiad nymph Batia.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.3–3.10.4"
+    },
+    {
+      "text": "Pausanias keeps the Spartan kingship for the line of Oebalus, naming Tyndareus his son; Hyginus likewise calls Tyndareus a son of Oebalus and Leda the wife he took.",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Description of Greece 3.1.3–3.1.4; Fabulae 78"
+    },
+    {
+      "text": "Hippocoon and his many sons drove Tyndareus and Icarius out of Lacedaemon. The exiles fled to Thestius and fought at his side in his war with his neighbours, and there Tyndareus married Leda, daughter of Thestius. When at last Heracles slew Hippocoon and his sons, he restored Tyndareus and gave the kingdom back into his hands.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.5, 2.7.3"
+    },
+    {
+      "text": "On the night Zeus came to Leda in the form of a swan, Tyndareus too lay with her; so she bore Pollux and Helen to the god, but Castor and Clytemnestra to Tyndareus. Of his daughters he gave Clytemnestra to Agamemnon and Timandra to Echemus, while Phylonoe was made immortal by Artemis. Homer, by contrast, names Leda the wife of Tyndareus and reckons both Castor the horse-tamer and Polydeuces the boxer her sons by him.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.298–300; Bibliotheca 3.10.6–3.10.7"
+    },
+    {
+      "text": "When Helen's suitors thronged the house, Tyndareus feared that favouring one would set the rest quarrelling. Odysseus, in return for help winning Penelope, advised him to bind every suitor by an oath to defend the chosen bridegroom against any wrong done over the marriage. Tyndareus restored Agamemnon and Menelaus to their inheritance and made them his sons-in-law; and once the Dioscuri were taken up among the gods, he summoned Menelaus to Sparta and handed over the kingdom to him.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.9, 3.11.2; Epitome 2.15–2.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

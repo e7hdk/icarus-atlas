@@ -1,0 +1,47 @@
+{
+  "id": "endeis",
+  "name": "Endeis",
+  "greekName": "Endeïs (Ἐνδηΐς)",
+  "romanName": "Endeis",
+  "type": "mortal",
+  "domains": [
+    "the Aeacid line",
+    "queen of Aegina",
+    "disputed parentage"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "First wife of Aeacus, king of Aegina, and mother of Peleus and Telamon, the two sons who carried the Aeacid line forward.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.12.6; Fabulae 14.2; Description of Greece 2.29.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Endeis the wife of Aeacus and the daughter of Sciron. By Aeacus she bore Peleus and Telamon, before he later fathered Phocus on the Nereid Psamathe.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.6"
+    },
+    {
+      "text": "Hyginus instead names her father as Chiron: in his catalogue he calls Peleus and Telamon the sons of Aeacus and Endeis, daughter of Chiron, from the island of Aegina. The two traditions agree on her marriage and her sons but disagree over whose daughter she was — Sciron for Apollodorus, Chiron for Hyginus.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14.2"
+    },
+    {
+      "text": "Pausanias confirms her motherhood obliquely in the tale of Phocus's death: when the quoit killed their half-brother, 'the sons of Endeis' boarded a ship and fled, and Aeacus barred Telamon from landing on Aegina.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.29.10"
+    }
+  ]
+}

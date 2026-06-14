@@ -5733,7 +5733,8 @@
     "sources": [
       "apollodorus"
     ],
-    "note": "Apollodorus lists him among Aeolus' sons but notes 'many say' he was son of Cynortas (Bibliotheca 3.10.3) (Bibliotheca 1.7.3); many say instead son of Cynortas (Bibliotheca 3.10.3)"
+    "note": "Apollodorus lists him among Aeolus' sons but notes 'many say' he was son of Cynortas (Bibliotheca 3.10.3) (Bibliotheca 1.7.3); many say instead son of Cynortas (Bibliotheca 3.10.3)",
+    "topic": "perieres-parentage"
   },
   {
     "id": "perieres-aeolid-parent-enarete",
@@ -7732,5 +7733,2820 @@
       "ovid"
     ],
     "note": "Minos besieged Megara; Nisus died when his daughter Scylla cut the purple lock (Bibliotheca 3.15.8; Metamorphoses 8.1–151)"
+  },
+  {
+    "id": "zetes-parent-boreas",
+    "type": "parent",
+    "from": "zetes",
+    "to": "boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "zetes-parent-orithyia-athens",
+    "type": "parent",
+    "from": "zetes",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.15.2; Metamorphoses 6.683–721)"
+  },
+  {
+    "id": "calais-parent-boreas",
+    "type": "parent",
+    "from": "calais",
+    "to": "boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "calais-parent-orithyia-athens",
+    "type": "parent",
+    "from": "calais",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.15.2; Metamorphoses 6.683–721)"
+  },
+  {
+    "id": "cleopatra-boreas-parent-boreas",
+    "type": "parent",
+    "from": "cleopatra-boreas",
+    "to": "boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "cleopatra-boreas-parent-orithyia-athens",
+    "type": "parent",
+    "from": "cleopatra-boreas",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.15.2; Metamorphoses 6.683–721)"
+  },
+  {
+    "id": "chione-athens-parent-boreas",
+    "type": "parent",
+    "from": "chione-athens",
+    "to": "boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "chione-athens-parent-orithyia-athens",
+    "type": "parent",
+    "from": "chione-athens",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.15.2; Metamorphoses 6.683–721)"
+  },
+  {
+    "id": "xuthus-parent-hellen",
+    "type": "parent",
+    "from": "xuthus",
+    "to": "hellen",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "ion-parent-xuthus",
+    "type": "parent",
+    "from": "ion",
+    "to": "xuthus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "ion-paternity",
+    "note": "(Bibliotheca 1.7.3; Description of Greece 7.1.2)"
+  },
+  {
+    "id": "ion-parent-apollo",
+    "type": "parent",
+    "from": "ion",
+    "to": "apollo",
+    "sources": [
+      "pausanias"
+    ],
+    "topic": "ion-paternity",
+    "note": "The Acropolis-cave tradition: Apollo, not Xuthus, fathered Ion on Creusa (dramatized by Euripides) (Description of Greece 1.28.4)"
+  },
+  {
+    "id": "ion-parent-creusa-athens",
+    "type": "parent",
+    "from": "ion",
+    "to": "creusa-athens",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 1.7.3; Description of Greece 7.1.2)"
+  },
+  {
+    "id": "achaeus-parent-xuthus",
+    "type": "parent",
+    "from": "achaeus",
+    "to": "xuthus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "achaeus-parent-creusa-athens",
+    "type": "parent",
+    "from": "achaeus",
+    "to": "creusa-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "orneus-parent-erechtheus",
+    "type": "parent",
+    "from": "orneus",
+    "to": "erechtheus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 2.25.6)"
+  },
+  {
+    "id": "pandion-parent-praxithea-naiad",
+    "type": "parent",
+    "from": "pandion",
+    "to": "praxithea-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.6)"
+  },
+  {
+    "id": "erechtheus-parent-zeuxippe-naiad",
+    "type": "parent",
+    "from": "erechtheus",
+    "to": "zeuxippe-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.8)"
+  },
+  {
+    "id": "procne-parent-zeuxippe-naiad",
+    "type": "parent",
+    "from": "procne",
+    "to": "zeuxippe-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.8)"
+  },
+  {
+    "id": "philomela-parent-zeuxippe-naiad",
+    "type": "parent",
+    "from": "philomela",
+    "to": "zeuxippe-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.8)"
+  },
+  {
+    "id": "butes-athenian-parent-zeuxippe-naiad",
+    "type": "parent",
+    "from": "butes-athenian",
+    "to": "zeuxippe-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.8)"
+  },
+  {
+    "id": "eumolpus-parent-chione-athens",
+    "type": "parent",
+    "from": "eumolpus",
+    "to": "chione-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.4)"
+  },
+  {
+    "id": "scylla-nisus-parent-nisus",
+    "type": "parent",
+    "from": "scylla-nisus",
+    "to": "nisus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 3.15.8; Metamorphoses 8.6–10)"
+  },
+  {
+    "id": "boreas-consort-orithyia-athens",
+    "type": "consort",
+    "from": "boreas",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Boreas carried Orithyia off from the Ilissus to Thrace (Bibliotheca 3.15.2; Metamorphoses 6.682–710)"
+  },
+  {
+    "id": "creusa-athens-consort-xuthus",
+    "type": "consort",
+    "from": "creusa-athens",
+    "to": "xuthus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "praxithea-naiad-consort-erichthonius-athens",
+    "type": "consort",
+    "from": "praxithea-naiad",
+    "to": "erichthonius-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.6)"
+  },
+  {
+    "id": "zeuxippe-naiad-consort-pandion",
+    "type": "consort",
+    "from": "zeuxippe-naiad",
+    "to": "pandion",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.14.8)"
+  },
+  {
+    "id": "chione-athens-lover-poseidon",
+    "type": "lover",
+    "from": "chione-athens",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.4)"
+  },
+  {
+    "id": "scylla-nisus-lover-minos",
+    "type": "lover",
+    "from": "scylla-nisus",
+    "to": "minos",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Unrequited; Minos spurned her after she betrayed Megara (Bibliotheca 3.15.8; Metamorphoses 8.6–151)"
+  },
+  {
+    "id": "zetes-sibling-calais",
+    "type": "sibling",
+    "from": "zetes",
+    "to": "calais",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "zetes-sibling-cleopatra-boreas",
+    "type": "sibling",
+    "from": "zetes",
+    "to": "cleopatra-boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "zetes-sibling-chione-athens",
+    "type": "sibling",
+    "from": "zetes",
+    "to": "chione-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "calais-sibling-cleopatra-boreas",
+    "type": "sibling",
+    "from": "calais",
+    "to": "cleopatra-boreas",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "calais-sibling-chione-athens",
+    "type": "sibling",
+    "from": "calais",
+    "to": "chione-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "cleopatra-boreas-sibling-chione-athens",
+    "type": "sibling",
+    "from": "cleopatra-boreas",
+    "to": "chione-athens",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.15.2)"
+  },
+  {
+    "id": "ion-sibling-achaeus",
+    "type": "sibling",
+    "from": "ion",
+    "to": "achaeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "orneus-sibling-cecrops-ii",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "cecrops-ii",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-metion",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "metion",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-pandorus",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "pandorus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-creusa-athens",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "creusa-athens",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-procris",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "procris",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-chthonia-athens",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "chthonia-athens",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "orneus-sibling-orithyia-athens",
+    "type": "sibling",
+    "from": "orneus",
+    "to": "orithyia-athens",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.15.1; Description of Greece 2.25.6)"
+  },
+  {
+    "id": "zetes-ally-jason",
+    "type": "ally",
+    "from": "zetes",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Sailed with the Argonauts; drove the Harpies from Phineus (Bibliotheca 1.9.16; Argonautica 1.211–223)"
+  },
+  {
+    "id": "calais-ally-jason",
+    "type": "ally",
+    "from": "calais",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 1.9.16; Argonautica 1.211–223)"
+  },
+  {
+    "id": "scylla-nisus-slayer-nisus",
+    "type": "slayer",
+    "from": "scylla-nisus",
+    "to": "nisus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Cut the purple lock of invincibility, causing her father's death (Bibliotheca 3.15.8; Metamorphoses 8.84–100)"
+  },
+  {
+    "id": "myles-parent-lelex-laconia",
+    "type": "parent",
+    "from": "myles",
+    "to": "lelex-laconia",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "(Description of Greece 3.1.1)"
+  },
+  {
+    "id": "eurotas-parent-myles",
+    "type": "parent",
+    "from": "eurotas",
+    "to": "myles",
+    "sources": [
+      "pausanias"
+    ],
+    "topic": "eponym-generation-count",
+    "note": "(Description of Greece 3.1.1)"
+  },
+  {
+    "id": "eurotas-parent-lelex-laconia",
+    "type": "parent",
+    "from": "eurotas",
+    "to": "lelex-laconia",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "eponym-generation-count",
+    "note": "Apollodorus makes Eurotas son of Lelex directly, omitting Myles (Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "sparte-parent-eurotas",
+    "type": "parent",
+    "from": "sparte",
+    "to": "eurotas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.2)"
+  },
+  {
+    "id": "lacedaemon-parent-zeus",
+    "type": "parent",
+    "from": "lacedaemon",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.2; Fabulae 155)"
+  },
+  {
+    "id": "lacedaemon-parent-taygete",
+    "type": "parent",
+    "from": "lacedaemon",
+    "to": "taygete",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.2; Astronomica 2.21.5)"
+  },
+  {
+    "id": "taygete-parent-atlas",
+    "type": "parent",
+    "from": "taygete",
+    "to": "atlas",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.1; Fabulae 192)"
+  },
+  {
+    "id": "amyclas-parent-lacedaemon",
+    "type": "parent",
+    "from": "amyclas",
+    "to": "lacedaemon",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.3)"
+  },
+  {
+    "id": "amyclas-parent-sparte",
+    "type": "parent",
+    "from": "amyclas",
+    "to": "sparte",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "cynortas-parent-amyclas",
+    "type": "parent",
+    "from": "cynortas",
+    "to": "amyclas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.3)"
+  },
+  {
+    "id": "hyacinthus-parent-amyclas",
+    "type": "parent",
+    "from": "hyacinthus",
+    "to": "amyclas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "hyacinthus-parentage",
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.3)"
+  },
+  {
+    "id": "hyacinthus-parent-oebalus",
+    "type": "parent",
+    "from": "hyacinthus",
+    "to": "oebalus",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "hyacinthus-parentage",
+    "note": "Hyginus makes Hyacinthus a son of the later king Oebalus (Fabulae 271)"
+  },
+  {
+    "id": "oebalus-parent-cynortas",
+    "type": "parent",
+    "from": "oebalus",
+    "to": "cynortas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.4; Description of Greece 3.1.3)"
+  },
+  {
+    "id": "perieres-aeolid-parent-cynortas",
+    "type": "parent",
+    "from": "perieres-aeolid",
+    "to": "cynortas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "perieres-parentage",
+    "note": "The Laconian line: Cynortas begat Perieres (Bibliotheca 3.10.3; Description of Greece 3.1.3)"
+  },
+  {
+    "id": "tyndareus-parent-perieres-aeolid",
+    "type": "parent",
+    "from": "tyndareus",
+    "to": "perieres-aeolid",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "tyndareus-parentage",
+    "note": "(Bibliotheca 1.9.5, 3.10.3)"
+  },
+  {
+    "id": "tyndareus-parent-oebalus",
+    "type": "parent",
+    "from": "tyndareus",
+    "to": "oebalus",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "topic": "tyndareus-parentage",
+    "note": "The Spartan line makes Tyndareus son of Oebalus (Description of Greece 3.1.4; Fabulae 78)"
+  },
+  {
+    "id": "tyndareus-parent-gorgophone",
+    "type": "parent",
+    "from": "tyndareus",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "His mother across both lines; in Apollodorus 3.10.4 the Oebalus-line mother is instead the Naiad Batia (Bibliotheca 3.10.3; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "castor-parent-tyndareus",
+    "type": "parent",
+    "from": "castor",
+    "to": "tyndareus",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "castor-parent-leda",
+    "type": "parent",
+    "from": "castor",
+    "to": "leda",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "polydeuces-parent-zeus",
+    "type": "parent",
+    "from": "polydeuces",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "dioscuri-paternity",
+    "note": "The split tradition: Polydeuces the immortal son of Zeus (Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "polydeuces-parent-tyndareus",
+    "type": "parent",
+    "from": "polydeuces",
+    "to": "tyndareus",
+    "sources": [
+      "homer"
+    ],
+    "topic": "dioscuri-paternity",
+    "note": "Homer makes both twins sons of Tyndareus (Odyssey 11.298–300)"
+  },
+  {
+    "id": "polydeuces-parent-leda",
+    "type": "parent",
+    "from": "polydeuces",
+    "to": "leda",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "helen-parent-zeus",
+    "type": "parent",
+    "from": "helen",
+    "to": "zeus",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Iliad 3.199; Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "helen-parent-leda",
+    "type": "parent",
+    "from": "helen",
+    "to": "leda",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "helen-parentage",
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "helen-parent-nemesis",
+    "type": "parent",
+    "from": "helen",
+    "to": "nemesis",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
+    "topic": "helen-parentage",
+    "note": "The egg tradition: Nemesis bore the egg, merely brought to Leda (Bibliotheca 3.10.7; Description of Greece 1.33.7; Astronomica 2.8)"
+  },
+  {
+    "id": "clytemnestra-parent-tyndareus",
+    "type": "parent",
+    "from": "clytemnestra",
+    "to": "tyndareus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "clytemnestra-parent-leda",
+    "type": "parent",
+    "from": "clytemnestra",
+    "to": "leda",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "lacedaemon-consort-sparte",
+    "type": "consort",
+    "from": "lacedaemon",
+    "to": "sparte",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.1.2)"
+  },
+  {
+    "id": "taygete-lover-zeus",
+    "type": "lover",
+    "from": "taygete",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.3; Astronomica 2.21.5)"
+  },
+  {
+    "id": "tyndareus-consort-leda",
+    "type": "consort",
+    "from": "tyndareus",
+    "to": "leda",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.6)"
+  },
+  {
+    "id": "leda-lover-zeus",
+    "type": "lover",
+    "from": "leda",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Zeus came to Leda in the form of a swan (Bibliotheca 3.10.7; Fabulae 77)"
+  },
+  {
+    "id": "gorgophone-consort-oebalus",
+    "type": "consort",
+    "from": "gorgophone",
+    "to": "oebalus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Gorgophone, widow of Perieres, the first woman said to wed a second husband (Description of Greece 2.21.7, 4.2.4)"
+  },
+  {
+    "id": "hyacinthus-lover-apollo",
+    "type": "lover",
+    "from": "hyacinthus",
+    "to": "apollo",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "(Bibliotheca 1.3.3, 3.10.3; Metamorphoses 10.162–185)"
+  },
+  {
+    "id": "castor-sibling-polydeuces",
+    "type": "sibling",
+    "from": "castor",
+    "to": "polydeuces",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "castor-sibling-helen",
+    "type": "sibling",
+    "from": "castor",
+    "to": "helen",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "castor-sibling-clytemnestra",
+    "type": "sibling",
+    "from": "castor",
+    "to": "clytemnestra",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "polydeuces-sibling-helen",
+    "type": "sibling",
+    "from": "polydeuces",
+    "to": "helen",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "polydeuces-sibling-clytemnestra",
+    "type": "sibling",
+    "from": "polydeuces",
+    "to": "clytemnestra",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "helen-sibling-clytemnestra",
+    "type": "sibling",
+    "from": "helen",
+    "to": "clytemnestra",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.298–300; Bibliotheca 3.10.7)"
+  },
+  {
+    "id": "cynortas-sibling-hyacinthus",
+    "type": "sibling",
+    "from": "cynortas",
+    "to": "hyacinthus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "castor-ally-jason",
+    "type": "ally",
+    "from": "castor",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "The Dioscuri sailed with the Argonauts (Bibliotheca 1.9.16; Argonautica 1.146–150)"
+  },
+  {
+    "id": "polydeuces-ally-jason",
+    "type": "ally",
+    "from": "polydeuces",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Polydeuces boxed and killed Amycus on the voyage (Bibliotheca 1.9.16; Argonautica 1.146–150)"
+  },
+  {
+    "id": "apollo-slayer-hyacinthus",
+    "type": "slayer",
+    "from": "apollo",
+    "to": "hyacinthus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Killed him by accident with the discus; from his blood sprang the hyacinth flower (Bibliotheca 1.3.3; Metamorphoses 10.162–219)"
+  },
+  {
+    "id": "aegina-nymph-parent-asopus",
+    "type": "parent",
+    "from": "aegina-nymph",
+    "to": "asopus",
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2; Metamorphoses 6.113; Fabulae 52)"
+  },
+  {
+    "id": "aeacus-parent-zeus",
+    "type": "parent",
+    "from": "aeacus",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.12.6; Metamorphoses 7.472–474; Description of Greece 2.29.2; Fabulae 52)"
+  },
+  {
+    "id": "aeacus-parent-aegina-nymph",
+    "type": "parent",
+    "from": "aeacus",
+    "to": "aegina-nymph",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Metamorphoses 7.473; Description of Greece 2.29.2)"
+  },
+  {
+    "id": "telamon-parent-aeacus",
+    "type": "parent",
+    "from": "telamon",
+    "to": "aeacus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.29.7)"
+  },
+  {
+    "id": "telamon-parent-endeis",
+    "type": "parent",
+    "from": "telamon",
+    "to": "endeis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "peleus-parent-aeacus",
+    "type": "parent",
+    "from": "peleus",
+    "to": "aeacus",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 3.12.6; Iliad 21.188–189)"
+  },
+  {
+    "id": "peleus-parent-endeis",
+    "type": "parent",
+    "from": "peleus",
+    "to": "endeis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "phocus-aeacid-parent-aeacus",
+    "type": "parent",
+    "from": "phocus-aeacid",
+    "to": "aeacus",
+    "sources": [
+      "apollodorus",
+      "hesiod",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Theogony 1004; Description of Greece 2.29.2)"
+  },
+  {
+    "id": "phocus-aeacid-parent-psamathe",
+    "type": "parent",
+    "from": "phocus-aeacid",
+    "to": "psamathe",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "(Bibliotheca 3.12.6; Theogony 1004)"
+  },
+  {
+    "id": "achilles-parent-peleus",
+    "type": "parent",
+    "from": "achilles",
+    "to": "peleus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 1.1; Bibliotheca 3.13.6)"
+  },
+  {
+    "id": "achilles-parent-thetis",
+    "type": "parent",
+    "from": "achilles",
+    "to": "thetis",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 1.357–358; Bibliotheca 3.13.6)"
+  },
+  {
+    "id": "ajax-telamonian-parent-telamon",
+    "type": "parent",
+    "from": "ajax-telamonian",
+    "to": "telamon",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 2.557–558; Bibliotheca 3.12.7)"
+  },
+  {
+    "id": "teucer-parent-telamon",
+    "type": "parent",
+    "from": "teucer",
+    "to": "telamon",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 8.283–284; Bibliotheca 3.12.7)"
+  },
+  {
+    "id": "teucer-parent-hesione",
+    "type": "parent",
+    "from": "teucer",
+    "to": "hesione",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.12.7; Fabulae 97)"
+  },
+  {
+    "id": "neoptolemus-parent-achilles",
+    "type": "parent",
+    "from": "neoptolemus",
+    "to": "achilles",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Odyssey 11.505–507; Bibliotheca 3.13.8)"
+  },
+  {
+    "id": "aegina-nymph-lover-zeus",
+    "type": "lover",
+    "from": "aegina-nymph",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Carried off to Oenone/Aegina (or, in Hyginus, to Delos) (Bibliotheca 3.12.6; Metamorphoses 6.113; Fabulae 52)"
+  },
+  {
+    "id": "aeacus-consort-endeis",
+    "type": "consort",
+    "from": "aeacus",
+    "to": "endeis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "aeacus-lover-psamathe",
+    "type": "lover",
+    "from": "aeacus",
+    "to": "psamathe",
+    "sources": [
+      "apollodorus",
+      "hesiod"
+    ],
+    "note": "The Nereid Psamathe, who took seal-form to flee him, bore Phocus (Bibliotheca 3.12.6; Theogony 1004)"
+  },
+  {
+    "id": "peleus-consort-thetis",
+    "type": "consort",
+    "from": "peleus",
+    "to": "thetis",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Won by holding her fast through every shape; their wedding lit the Trojan War (Iliad 18.84–87; Bibliotheca 3.13.5; Metamorphoses 11.221–265)"
+  },
+  {
+    "id": "telamon-consort-hesione",
+    "type": "consort",
+    "from": "telamon",
+    "to": "hesione",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Hesione, daughter of Laomedon, Telamon's prize from Heracles' first sack of Troy (Bibliotheca 3.12.7; Fabulae 97)"
+  },
+  {
+    "id": "telamon-sibling-peleus",
+    "type": "sibling",
+    "from": "telamon",
+    "to": "peleus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "telamon-slayer-phocus-aeacid",
+    "type": "slayer",
+    "from": "telamon",
+    "to": "phocus-aeacid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "phocus-murder",
+    "note": "In one account Telamon struck the fatal blow with the quoit/discus (Bibliotheca 3.12.6; Description of Greece 2.29.9–10)"
+  },
+  {
+    "id": "peleus-slayer-phocus-aeacid",
+    "type": "slayer",
+    "from": "peleus",
+    "to": "phocus-aeacid",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "phocus-murder",
+    "note": "In another Peleus killed Phocus; both brothers were exiled for it (Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "asopus-adversary-zeus",
+    "type": "adversary",
+    "from": "asopus",
+    "to": "zeus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Pursued Zeus for ravishing Aegina; driven back to his bed by the thunderbolt (Bibliotheca 3.12.6; Description of Greece 2.5.1)"
+  },
+  {
+    "id": "eris-adversary-peleus",
+    "type": "adversary",
+    "from": "eris",
+    "to": "peleus",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Uninvited to the wedding of Peleus and Thetis, she threw the golden apple \"to the fairest\" (Fabulae 92)"
+  },
+  {
+    "id": "peleus-adversary-acastus",
+    "type": "adversary",
+    "from": "peleus",
+    "to": "acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Acastus, believing his wife's slander, abandoned Peleus weaponless among the Centaurs (Bibliotheca 3.13.1–3)"
+  },
+  {
+    "id": "achilles-adversary-agamemnon",
+    "type": "adversary",
+    "from": "achilles",
+    "to": "agamemnon",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "The wrath of Achilles over Briseis (Iliad 1.148–171; Epitome 4.6)"
+  },
+  {
+    "id": "achilles-slayer-hector",
+    "type": "slayer",
+    "from": "achilles",
+    "to": "hector",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Slew Hector to avenge Patroclus and dragged the body round the walls (Iliad 22.326–364; Epitome 4.7; Metamorphoses 13.)"
+  },
+  {
+    "id": "paris-slayer-achilles",
+    "type": "slayer",
+    "from": "paris",
+    "to": "achilles",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Paris' arrow, guided by Apollo, at the Scaean gate (Epitome 5.3; Metamorphoses 12.597–606; Fabulae 107)"
+  },
+  {
+    "id": "neoptolemus-slayer-priam",
+    "type": "slayer",
+    "from": "neoptolemus",
+    "to": "priam",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Slew the old king at the altar of Zeus Herceius (Epitome 5.21; Description of Greece 10.27.2)"
+  },
+  {
+    "id": "ajax-telamonian-adversary-hector",
+    "type": "adversary",
+    "from": "ajax-telamonian",
+    "to": "hector",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "The drawn single combat before the ships (Iliad 7.181–312; Epitome 4.2)"
+  },
+  {
+    "id": "telamon-ally-jason",
+    "type": "ally",
+    "from": "telamon",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Sailed with the Argonauts (Bibliotheca 1.9.16; Argonautica 1.93)"
+  },
+  {
+    "id": "peleus-ally-jason",
+    "type": "ally",
+    "from": "peleus",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 1.9.16; Argonautica 1.94)"
+  },
+  {
+    "id": "aegina-nymph-parent-metope",
+    "type": "parent",
+    "from": "aegina-nymph",
+    "to": "metope",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "metope-consort-asopus",
+    "type": "consort",
+    "from": "metope",
+    "to": "asopus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of the river Ladon; mother of the Asopides (Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "thebe-parent-asopus",
+    "type": "parent",
+    "from": "thebe",
+    "to": "asopus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6–7; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "thebe-parent-metope",
+    "type": "parent",
+    "from": "thebe",
+    "to": "metope",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "salamis-nymph-parent-asopus",
+    "type": "parent",
+    "from": "salamis-nymph",
+    "to": "asopus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6–7; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "salamis-nymph-parent-metope",
+    "type": "parent",
+    "from": "salamis-nymph",
+    "to": "metope",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "corcyra-parent-asopus",
+    "type": "parent",
+    "from": "corcyra",
+    "to": "asopus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6–7; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "corcyra-parent-metope",
+    "type": "parent",
+    "from": "corcyra",
+    "to": "metope",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "salamis-nymph-lover-poseidon",
+    "type": "lover",
+    "from": "salamis-nymph",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Bore Cychreus, the snake-king of Salamis, to Poseidon (Bibliotheca 3.12.7)"
+  },
+  {
+    "id": "corcyra-lover-poseidon",
+    "type": "lover",
+    "from": "corcyra",
+    "to": "poseidon",
+    "sources": [
+      "apollonius"
+    ],
+    "note": "Carried off by Poseidon to the island later called Corcyra (Argonautica 4.567)"
+  },
+  {
+    "id": "crisus-parent-phocus-aeacid",
+    "type": "parent",
+    "from": "crisus",
+    "to": "phocus-aeacid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.29.4)"
+  },
+  {
+    "id": "panopeus-parent-phocus-aeacid",
+    "type": "parent",
+    "from": "panopeus",
+    "to": "phocus-aeacid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.29.4)"
+  },
+  {
+    "id": "epeius-parent-panopeus",
+    "type": "parent",
+    "from": "epeius",
+    "to": "panopeus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 23.665; Epitome 5.14)"
+  },
+  {
+    "id": "antigone-peleus-parent-eurytion",
+    "type": "parent",
+    "from": "antigone-peleus",
+    "to": "eurytion",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.13.1)"
+  },
+  {
+    "id": "peleus-consort-antigone-peleus",
+    "type": "consort",
+    "from": "peleus",
+    "to": "antigone-peleus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Peleus' first wife, given by Eurytion who purified him (Bibliotheca 3.13.1)"
+  },
+  {
+    "id": "polydora-parent-peleus",
+    "type": "parent",
+    "from": "polydora",
+    "to": "peleus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 16.175; Bibliotheca 3.13.4)"
+  },
+  {
+    "id": "achilles-lover-deidamia",
+    "type": "lover",
+    "from": "achilles",
+    "to": "deidamia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "On Scyros, in hiding among Lycomedes' daughters (Bibliotheca 3.13.8)"
+  },
+  {
+    "id": "neoptolemus-parent-deidamia",
+    "type": "parent",
+    "from": "neoptolemus",
+    "to": "deidamia",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.13.8)"
+  },
+  {
+    "id": "chiron-parent-cronus",
+    "type": "parent",
+    "from": "chiron",
+    "to": "cronus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Son of Cronus and the Oceanid Philyra (Bibliotheca 1.2.4)"
+  },
+  {
+    "id": "aegina-nymph-sibling-thebe",
+    "type": "sibling",
+    "from": "aegina-nymph",
+    "to": "thebe",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "aegina-nymph-sibling-salamis-nymph",
+    "type": "sibling",
+    "from": "aegina-nymph",
+    "to": "salamis-nymph",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "aegina-nymph-sibling-corcyra",
+    "type": "sibling",
+    "from": "aegina-nymph",
+    "to": "corcyra",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "thebe-sibling-salamis-nymph",
+    "type": "sibling",
+    "from": "thebe",
+    "to": "salamis-nymph",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "thebe-sibling-corcyra",
+    "type": "sibling",
+    "from": "thebe",
+    "to": "corcyra",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "salamis-nymph-sibling-corcyra",
+    "type": "sibling",
+    "from": "salamis-nymph",
+    "to": "corcyra",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.5.2)"
+  },
+  {
+    "id": "crisus-sibling-panopeus",
+    "type": "sibling",
+    "from": "crisus",
+    "to": "panopeus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.12.6; Description of Greece 2.29.4)"
+  },
+  {
+    "id": "patroclus-ally-achilles",
+    "type": "ally",
+    "from": "patroclus",
+    "to": "achilles",
+    "sources": [
+      "homer"
+    ],
+    "note": "Achilles' dearest companion, who fell in his armour (Iliad 16, 18.80–82)"
+  },
+  {
+    "id": "hector-slayer-patroclus",
+    "type": "slayer",
+    "from": "hector",
+    "to": "patroclus",
+    "sources": [
+      "homer"
+    ],
+    "note": "Hector, with Apollo's aid, slew Patroclus — the death that ended Achilles' wrath (Iliad 16.818–857)"
+  },
+  {
+    "id": "chiron-ally-achilles",
+    "type": "ally",
+    "from": "chiron",
+    "to": "achilles",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "Reared and tutored the young Achilles on Pelion (Iliad 11.831–832; Bibliotheca 3.13.6)"
+  },
+  {
+    "id": "chiron-ally-peleus",
+    "type": "ally",
+    "from": "chiron",
+    "to": "peleus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Rescued Peleus on Pelion and helped him win Thetis (Bibliotheca 3.13.3)"
+  },
+  {
+    "id": "chiron-ally-jason",
+    "type": "ally",
+    "from": "chiron",
+    "to": "jason",
+    "sources": [
+      "apollonius",
+      "apollodorus"
+    ],
+    "note": "Tutor of Jason (Argonautica 1.554; Bibliotheca 1.9.16)"
+  },
+  {
+    "id": "peleus-slayer-eurytion",
+    "type": "slayer",
+    "from": "peleus",
+    "to": "eurytion",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Killed his father-in-law by accident with a javelin at the Calydonian hunt (Bibliotheca 3.13.2)"
+  },
+  {
+    "id": "thebe-consort-zethus",
+    "type": "consort",
+    "from": "thebe",
+    "to": "zethus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Zethus, the wall-builder, married Thebe and named the city after her (Bibliotheca 3.5.6; Description of Greece 9.5.6)"
+  },
+  {
+    "id": "aphareus-parent-perieres-aeolid",
+    "type": "parent",
+    "from": "aphareus",
+    "to": "perieres-aeolid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.9.5)"
+  },
+  {
+    "id": "aphareus-parent-gorgophone",
+    "type": "parent",
+    "from": "aphareus",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.9.5)"
+  },
+  {
+    "id": "leucippus-parent-perieres-aeolid",
+    "type": "parent",
+    "from": "leucippus",
+    "to": "perieres-aeolid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.9.5)"
+  },
+  {
+    "id": "leucippus-parent-gorgophone",
+    "type": "parent",
+    "from": "leucippus",
+    "to": "gorgophone",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.9.5)"
+  },
+  {
+    "id": "arene-parent-oebalus",
+    "type": "parent",
+    "from": "arene",
+    "to": "oebalus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 4.2.4)"
+  },
+  {
+    "id": "idas-parent-aphareus",
+    "type": "parent",
+    "from": "idas",
+    "to": "aphareus",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "topic": "idas-parentage",
+    "note": "(Bibliotheca 3.10.3; Argonautica 1.151)"
+  },
+  {
+    "id": "idas-parent-poseidon",
+    "type": "parent",
+    "from": "idas",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "idas-parentage",
+    "note": "\"But according to many, Idas was begotten by Poseidon\" (Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "idas-parent-arene",
+    "type": "parent",
+    "from": "idas",
+    "to": "arene",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "lynceus-apharetid-parent-aphareus",
+    "type": "parent",
+    "from": "lynceus-apharetid",
+    "to": "aphareus",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 3.10.3; Argonautica 1.151)"
+  },
+  {
+    "id": "lynceus-apharetid-parent-arene",
+    "type": "parent",
+    "from": "lynceus-apharetid",
+    "to": "arene",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "phoebe-leucippid-parent-leucippus",
+    "type": "parent",
+    "from": "phoebe-leucippid",
+    "to": "leucippus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.16.1)"
+  },
+  {
+    "id": "hilaira-parent-leucippus",
+    "type": "parent",
+    "from": "hilaira",
+    "to": "leucippus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.16.1)"
+  },
+  {
+    "id": "arsinoe-leucippid-parent-leucippus",
+    "type": "parent",
+    "from": "arsinoe-leucippid",
+    "to": "leucippus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 3.16.1)"
+  },
+  {
+    "id": "icarius-parent-oebalus",
+    "type": "parent",
+    "from": "icarius",
+    "to": "oebalus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "In the Aeolid line (Apollodorus 1.9.5) instead a son of Perieres by Gorgophone (Bibliotheca 3.10.4; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "hippocoon-parent-oebalus",
+    "type": "parent",
+    "from": "hippocoon",
+    "to": "oebalus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Apollodorus 1.9.5 lists him among the sons of Perieres (Bibliotheca 3.10.4; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "penelope-parent-icarius",
+    "type": "parent",
+    "from": "penelope",
+    "to": "icarius",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.6; Description of Greece 3.12.1)"
+  },
+  {
+    "id": "penelope-parent-periboea-naiad",
+    "type": "parent",
+    "from": "penelope",
+    "to": "periboea-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.6)"
+  },
+  {
+    "id": "timandra-parent-tyndareus",
+    "type": "parent",
+    "from": "timandra",
+    "to": "tyndareus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "timandra-parent-leda",
+    "type": "parent",
+    "from": "timandra",
+    "to": "leda",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-parent-tyndareus",
+    "type": "parent",
+    "from": "phylonoe",
+    "to": "tyndareus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-parent-leda",
+    "type": "parent",
+    "from": "phylonoe",
+    "to": "leda",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "aphareus-consort-arene",
+    "type": "consort",
+    "from": "aphareus",
+    "to": "arene",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.3; Description of Greece 4.2.4)"
+  },
+  {
+    "id": "icarius-consort-periboea-naiad",
+    "type": "consort",
+    "from": "icarius",
+    "to": "periboea-naiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.6)"
+  },
+  {
+    "id": "idas-consort-marpessa",
+    "type": "consort",
+    "from": "idas",
+    "to": "marpessa",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "topic": "marpessa-suitor",
+    "note": "Idas won Marpessa; she chose the mortal over the god (Bibliotheca 1.7.8–9; Iliad 9.557)"
+  },
+  {
+    "id": "apollo-lover-marpessa",
+    "type": "lover",
+    "from": "apollo",
+    "to": "marpessa",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "topic": "marpessa-suitor",
+    "note": "Apollo and Idas contended for Marpessa until Zeus let her choose (Bibliotheca 1.7.8–9; Iliad 9.559)"
+  },
+  {
+    "id": "idas-adversary-apollo",
+    "type": "adversary",
+    "from": "idas",
+    "to": "apollo",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "Idas drew his bow against Apollo for the sake of Marpessa (Bibliotheca 1.7.9; Iliad 9.559)"
+  },
+  {
+    "id": "castor-consort-hilaira",
+    "type": "consort",
+    "from": "castor",
+    "to": "hilaira",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Dioscuri carried off the Leucippides (Bibliotheca 3.11.2; Description of Greece 1.18.1)"
+  },
+  {
+    "id": "polydeuces-consort-phoebe-leucippid",
+    "type": "consort",
+    "from": "polydeuces",
+    "to": "phoebe-leucippid",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.11.2; Description of Greece 1.18.1)"
+  },
+  {
+    "id": "arsinoe-leucippid-lover-apollo",
+    "type": "lover",
+    "from": "arsinoe-leucippid",
+    "to": "apollo",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "In the Messenian tradition mother of Asclepius by Apollo (Bibliotheca 3.10.3; Description of Greece 2.26.7)"
+  },
+  {
+    "id": "aphareus-sibling-leucippus",
+    "type": "sibling",
+    "from": "aphareus",
+    "to": "leucippus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.9.5)"
+  },
+  {
+    "id": "idas-sibling-lynceus-apharetid",
+    "type": "sibling",
+    "from": "idas",
+    "to": "lynceus-apharetid",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 3.10.3; Argonautica 1.151)"
+  },
+  {
+    "id": "phoebe-leucippid-sibling-hilaira",
+    "type": "sibling",
+    "from": "phoebe-leucippid",
+    "to": "hilaira",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "phoebe-leucippid-sibling-arsinoe-leucippid",
+    "type": "sibling",
+    "from": "phoebe-leucippid",
+    "to": "arsinoe-leucippid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "hilaira-sibling-arsinoe-leucippid",
+    "type": "sibling",
+    "from": "hilaira",
+    "to": "arsinoe-leucippid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.3)"
+  },
+  {
+    "id": "tyndareus-sibling-icarius",
+    "type": "sibling",
+    "from": "tyndareus",
+    "to": "icarius",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.4; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "tyndareus-sibling-hippocoon",
+    "type": "sibling",
+    "from": "tyndareus",
+    "to": "hippocoon",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Bibliotheca 3.10.4; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "icarius-sibling-hippocoon",
+    "type": "sibling",
+    "from": "icarius",
+    "to": "hippocoon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.4)"
+  },
+  {
+    "id": "timandra-sibling-castor",
+    "type": "sibling",
+    "from": "timandra",
+    "to": "castor",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "timandra-sibling-polydeuces",
+    "type": "sibling",
+    "from": "timandra",
+    "to": "polydeuces",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "timandra-sibling-helen",
+    "type": "sibling",
+    "from": "timandra",
+    "to": "helen",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "timandra-sibling-clytemnestra",
+    "type": "sibling",
+    "from": "timandra",
+    "to": "clytemnestra",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-sibling-castor",
+    "type": "sibling",
+    "from": "phylonoe",
+    "to": "castor",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-sibling-polydeuces",
+    "type": "sibling",
+    "from": "phylonoe",
+    "to": "polydeuces",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-sibling-helen",
+    "type": "sibling",
+    "from": "phylonoe",
+    "to": "helen",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "phylonoe-sibling-clytemnestra",
+    "type": "sibling",
+    "from": "phylonoe",
+    "to": "clytemnestra",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "(Bibliotheca 3.10.6; Fabulae 77)"
+  },
+  {
+    "id": "timandra-sibling-phylonoe",
+    "type": "sibling",
+    "from": "timandra",
+    "to": "phylonoe",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 3.10.6)"
+  },
+  {
+    "id": "idas-slayer-castor",
+    "type": "slayer",
+    "from": "idas",
+    "to": "castor",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Killed Castor in the feud over the cattle/the Leucippides (Bibliotheca 3.11.2)"
+  },
+  {
+    "id": "polydeuces-slayer-lynceus-apharetid",
+    "type": "slayer",
+    "from": "polydeuces",
+    "to": "lynceus-apharetid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Polydeuces ran Lynceus through with his spear (Bibliotheca 3.11.2)"
+  },
+  {
+    "id": "hippocoon-adversary-tyndareus",
+    "type": "adversary",
+    "from": "hippocoon",
+    "to": "tyndareus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Drove Tyndareus and Icarius from Sparta; Heracles later slew him and restored Tyndareus (Bibliotheca 3.10.5; Description of Greece 3.1.4)"
+  },
+  {
+    "id": "idas-ally-jason",
+    "type": "ally",
+    "from": "idas",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "The Apharetid brothers sailed with the Argonauts (Bibliotheca 1.9.16; Argonautica 1.151)"
+  },
+  {
+    "id": "lynceus-apharetid-ally-jason",
+    "type": "ally",
+    "from": "lynceus-apharetid",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "(Bibliotheca 1.9.16; Argonautica 1.153)"
+  },
+  {
+    "id": "pleuron-parent-aetolus",
+    "type": "parent",
+    "from": "pleuron",
+    "to": "aetolus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "calydon-parent-aetolus",
+    "type": "parent",
+    "from": "calydon",
+    "to": "aetolus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "agenor-aetolian-parent-pleuron",
+    "type": "parent",
+    "from": "agenor-aetolian",
+    "to": "pleuron",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "porthaon-parent-agenor-aetolian",
+    "type": "parent",
+    "from": "porthaon",
+    "to": "agenor-aetolian",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "oeneus-parent-porthaon",
+    "type": "parent",
+    "from": "oeneus",
+    "to": "porthaon",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 1.7.10; Iliad 14.115–118)"
+  },
+  {
+    "id": "thestius-parent-ares",
+    "type": "parent",
+    "from": "thestius",
+    "to": "ares",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "thestius-parentage",
+    "note": "Son of Ares by Demonice (Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "thestius-parent-agenor-aetolian",
+    "type": "parent",
+    "from": "thestius",
+    "to": "agenor-aetolian",
+    "sources": [
+      "pausanias"
+    ],
+    "topic": "thestius-parentage",
+    "note": "Asius makes Thestius son of Agenor son of Pleuron (Description of Greece 3.13.8)"
+  },
+  {
+    "id": "althaea-parent-thestius",
+    "type": "parent",
+    "from": "althaea",
+    "to": "thestius",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 1.7.10; Iliad 9.555)"
+  },
+  {
+    "id": "leda-parent-thestius",
+    "type": "parent",
+    "from": "leda",
+    "to": "thestius",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "The Calydon→Sparta bridge: Thestius is father of both Althaea and Leda (Bibliotheca 3.10.5; Description of Greece 3.13.8)"
+  },
+  {
+    "id": "meleager-parent-oeneus",
+    "type": "parent",
+    "from": "meleager",
+    "to": "oeneus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "topic": "meleager-father",
+    "note": "(Iliad 9.543; Bibliotheca 1.8.2)"
+  },
+  {
+    "id": "meleager-parent-ares",
+    "type": "parent",
+    "from": "meleager",
+    "to": "ares",
+    "sources": [
+      "hyginus",
+      "ovid"
+    ],
+    "topic": "meleager-father",
+    "note": "Ares as Meleager's true father in the later tradition (Fabulae 171; Metamorphoses 8.437)"
+  },
+  {
+    "id": "meleager-parent-althaea",
+    "type": "parent",
+    "from": "meleager",
+    "to": "althaea",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 9.555; Bibliotheca 1.8.2)"
+  },
+  {
+    "id": "tydeus-parent-oeneus",
+    "type": "parent",
+    "from": "tydeus",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.4–5)"
+  },
+  {
+    "id": "deianira-parent-oeneus",
+    "type": "parent",
+    "from": "deianira",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "deianira-parentage",
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "deianira-parent-dionysus",
+    "type": "parent",
+    "from": "deianira",
+    "to": "dionysus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "deianira-parentage",
+    "note": "Dionysus as Deianira's father by Althaea (Bibliotheca 1.8.1; Fabulae 129)"
+  },
+  {
+    "id": "deianira-parent-althaea",
+    "type": "parent",
+    "from": "deianira",
+    "to": "althaea",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "gorge-parent-oeneus",
+    "type": "parent",
+    "from": "gorge",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "gorge-parent-althaea",
+    "type": "parent",
+    "from": "gorge",
+    "to": "althaea",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "diomedes-parent-tydeus",
+    "type": "parent",
+    "from": "diomedes",
+    "to": "tydeus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "(Iliad 5.125–126; Bibliotheca 1.8.5)"
+  },
+  {
+    "id": "diomedes-parent-deipyle",
+    "type": "parent",
+    "from": "diomedes",
+    "to": "deipyle",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.5)"
+  },
+  {
+    "id": "oeneus-consort-althaea",
+    "type": "consort",
+    "from": "oeneus",
+    "to": "althaea",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 1.8.1; Iliad 9.555)"
+  },
+  {
+    "id": "tydeus-consort-deipyle",
+    "type": "consort",
+    "from": "tydeus",
+    "to": "deipyle",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.5)"
+  },
+  {
+    "id": "meleager-lover-atalanta",
+    "type": "lover",
+    "from": "meleager",
+    "to": "atalanta",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Awarded her the boar's hide, sparking the fatal quarrel (Bibliotheca 1.8.2; Metamorphoses 8.324–328)"
+  },
+  {
+    "id": "pleuron-sibling-calydon",
+    "type": "sibling",
+    "from": "pleuron",
+    "to": "calydon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.7)"
+  },
+  {
+    "id": "althaea-sibling-leda",
+    "type": "sibling",
+    "from": "althaea",
+    "to": "leda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughters of Thestius — the Calydon/Sparta sisters (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "meleager-sibling-deianira",
+    "type": "sibling",
+    "from": "meleager",
+    "to": "deianira",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "meleager-sibling-gorge",
+    "type": "sibling",
+    "from": "meleager",
+    "to": "gorge",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "deianira-sibling-gorge",
+    "type": "sibling",
+    "from": "deianira",
+    "to": "gorge",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.8.1)"
+  },
+  {
+    "id": "diomedes-adversary-aphrodite",
+    "type": "adversary",
+    "from": "diomedes",
+    "to": "aphrodite",
+    "sources": [
+      "homer"
+    ],
+    "note": "Wounded Aphrodite in the hand as she shielded Aeneas (Iliad 5.330–351)"
+  },
+  {
+    "id": "diomedes-adversary-ares",
+    "type": "adversary",
+    "from": "diomedes",
+    "to": "ares",
+    "sources": [
+      "homer"
+    ],
+    "note": "Drove his spear, with Athena's hand, into Ares himself (Iliad 5.855–863)"
+  },
+  {
+    "id": "tydeus-ally-polynices",
+    "type": "ally",
+    "from": "tydeus",
+    "to": "polynices",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Comrades among the Seven against Thebes; Adrastus wed his daughters to them (Bibliotheca 3.6.1)"
+  },
+  {
+    "id": "artemis-adversary-oeneus",
+    "type": "adversary",
+    "from": "artemis",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Slighted in the harvest sacrifice, she sent the Calydonian boar (Bibliotheca 1.8.2; Metamorphoses 8.270–283; Fabulae 172)"
+  },
+  {
+    "id": "dionysus-ally-oeneus",
+    "type": "ally",
+    "from": "dionysus",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Gave Oeneus the vine, whence wine (oinos) is named (Bibliotheca 1.8.1; Fabulae 129)"
+  },
+  {
+    "id": "meleager-ally-jason",
+    "type": "ally",
+    "from": "meleager",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Sailed with the Argonauts (Bibliotheca 1.9.16; Argonautica 1.190–191)"
+  },
+  {
+    "id": "althaea-slayer-meleager",
+    "type": "slayer",
+    "from": "althaea",
+    "to": "meleager",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Burned the brand to which his life was bound, in revenge for her brothers (Bibliotheca 1.8.3; Metamorphoses 8.445–525)"
+  },
+  {
+    "id": "iphiclus-thestiad-parent-thestius",
+    "type": "parent",
+    "from": "iphiclus-thestiad",
+    "to": "thestius",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "plexippus-thestiad-parent-thestius",
+    "type": "parent",
+    "from": "plexippus-thestiad",
+    "to": "thestius",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "cleopatra-meleager-parent-idas",
+    "type": "parent",
+    "from": "cleopatra-meleager",
+    "to": "idas",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Iliad 9.556–564; Bibliotheca 1.8.2; Description of Greece 4.2.7)"
+  },
+  {
+    "id": "cleopatra-meleager-parent-marpessa",
+    "type": "parent",
+    "from": "cleopatra-meleager",
+    "to": "marpessa",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "(Iliad 9.556–564; Bibliotheca 1.8.2; Description of Greece 4.2.7)"
+  },
+  {
+    "id": "agrius-aetolian-parent-porthaon",
+    "type": "parent",
+    "from": "agrius-aetolian",
+    "to": "porthaon",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "(Bibliotheca 1.7.10; Iliad 14.115–118)"
+  },
+  {
+    "id": "achelous-parent-oceanus",
+    "type": "parent",
+    "from": "achelous",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "(Theogony 337–345)"
+  },
+  {
+    "id": "achelous-parent-tethys",
+    "type": "parent",
+    "from": "achelous",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "(Theogony 337–345)"
+  },
+  {
+    "id": "tydeus-parent-periboea-oeneus",
+    "type": "parent",
+    "from": "tydeus",
+    "to": "periboea-oeneus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "tydeus-mother",
+    "note": "Periboea, daughter of Hipponous — the dominant tradition (Bibliotheca 1.8.5; Fabulae 69, 70)"
+  },
+  {
+    "id": "tydeus-parent-gorge",
+    "type": "parent",
+    "from": "tydeus",
+    "to": "gorge",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "tydeus-mother",
+    "note": "The variant Apollodorus credits to Peisander: Tydeus by Oeneus on his own daughter Gorge (Bibliotheca 1.8.5)"
+  },
+  {
+    "id": "meleager-consort-cleopatra-meleager",
+    "type": "consort",
+    "from": "meleager",
+    "to": "cleopatra-meleager",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Cleopatra, surnamed Alcyone; her plea rouses Meleager in the Iliad, and she hangs herself at his death (Iliad 9.556–564; Bibliotheca 1.8.2–3; Description of Greece 4.2.7)"
+  },
+  {
+    "id": "oeneus-consort-periboea-oeneus",
+    "type": "consort",
+    "from": "oeneus",
+    "to": "periboea-oeneus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Second wife, after Althaea's death (Bibliotheca 1.8.4)"
+  },
+  {
+    "id": "althaea-sibling-iphiclus-thestiad",
+    "type": "sibling",
+    "from": "althaea",
+    "to": "iphiclus-thestiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Thestius by Eurythemis (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "althaea-sibling-plexippus-thestiad",
+    "type": "sibling",
+    "from": "althaea",
+    "to": "plexippus-thestiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Thestius by Eurythemis (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "leda-sibling-iphiclus-thestiad",
+    "type": "sibling",
+    "from": "leda",
+    "to": "iphiclus-thestiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Thestius by Eurythemis (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "leda-sibling-plexippus-thestiad",
+    "type": "sibling",
+    "from": "leda",
+    "to": "plexippus-thestiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Thestius by Eurythemis (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "iphiclus-thestiad-sibling-plexippus-thestiad",
+    "type": "sibling",
+    "from": "iphiclus-thestiad",
+    "to": "plexippus-thestiad",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Thestius by Eurythemis (Bibliotheca 1.7.10)"
+  },
+  {
+    "id": "agrius-aetolian-sibling-oeneus",
+    "type": "sibling",
+    "from": "agrius-aetolian",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hyginus"
+    ],
+    "note": "Sons of Porthaon (Bibliotheca 1.7.10; Iliad 14.115–118; Fabulae 175)"
+  },
+  {
+    "id": "iphiclus-thestiad-ally-jason",
+    "type": "ally",
+    "from": "iphiclus-thestiad",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "apollonius"
+    ],
+    "note": "Thestiad among the Argonauts, his nephew Meleager's companion on the Argo (Bibliotheca 1.9.16; Argonautica 1.190–201)"
+  },
+  {
+    "id": "meleager-slayer-plexippus-thestiad",
+    "type": "slayer",
+    "from": "meleager",
+    "to": "plexippus-thestiad",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Killed his uncle in the quarrel over the boar's hide (Bibliotheca 1.8.3; Metamorphoses 8.440–444; Fabulae 174)"
+  },
+  {
+    "id": "agrius-aetolian-adversary-oeneus",
+    "type": "adversary",
+    "from": "agrius-aetolian",
+    "to": "oeneus",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Agrius and his sons wrested the throne of Calydon from Oeneus (Bibliotheca 1.8.6; Fabulae 175; Description of Greece 2.25.2)"
+  },
+  {
+    "id": "diomedes-adversary-agrius-aetolian",
+    "type": "adversary",
+    "from": "diomedes",
+    "to": "agrius-aetolian",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Diomedes returned and destroyed the usurpers, restoring the house of Oeneus (Bibliotheca 1.8.6; Fabulae 175, 242; Description of Greece 2.25.2)"
   }
 ]

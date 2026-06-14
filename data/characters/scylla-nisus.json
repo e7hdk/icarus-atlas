@@ -1,0 +1,47 @@
+{
+  "id": "scylla-nisus",
+  "name": "Scylla",
+  "greekName": "Skylla (Σκύλλα)",
+  "romanName": "Scylla",
+  "type": "mortal",
+  "domains": [
+    "the betrayal of Megara",
+    "love for the enemy",
+    "the severed purple lock"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Nisus, king of Megara, who fell in love with the besieging Minos and pulled the purple lock on which her father's life and kingdom depended, handing the city to its enemy and earning her own ruin.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.15.8; Metamorphoses 8.1–151; Fabulae 198"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Minos besieged Megara under its king Nisus, son of Pandion, the city's safety hung on a single purple hair that grew on the middle of the king's head; an oracle held that he would die when it was pulled out. His daughter Scylla, fallen in love with Minos, plucked the hair away. Once Minos had made himself master of Megara, he bound the girl by the feet to the stern of his ship and drowned her.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.15.8"
+    },
+    {
+      "text": "Ovid sets her on the tower of Alcathous, where Apollo had once laid down his lyre, watching the siege day after day until she burned for Minos. She sheared the fatal lock from her sleeping father and carried it to the Cretan camp as a love-gift; spurned for so monstrous a deed, she flung herself at the departing fleet and clung to its stern. As Nisus, now a sea-eagle, stooped at her with hooked beak, she lost her grip in terror and was herself changed into the bird Ciris, named for the lock she had cut.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 8.1–151"
+    },
+    {
+      "text": "Hyginus makes Venus the prompter of her passion: at the goddess's instigation Scylla cut the lock from her sleeping father, and so Nisus was conquered by Minos, who then refused to carry off so foul a criminal to holy Crete. Cast aside, she pursued the ship, and as her father pursued her transformed into a sea-eagle, she became the fish called ciris, which the bird still dives upon whenever he sees it swimming.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 198"
+    }
+  ]
+}

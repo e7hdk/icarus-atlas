@@ -1,0 +1,72 @@
+{
+  "id": "polydeuces",
+  "name": "Polydeuces",
+  "greekName": "Polydeukēs (Πολυδεύκης)",
+  "romanName": "Pollux",
+  "type": "hero",
+  "domains": [
+    "boxing",
+    "the Dioscuri",
+    "shared immortality"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Leda and twin of Castor, the peerless boxer among the Dioscuri; he sailed with the Argonauts, raided cattle with his brother, and at Castor's death was granted by Zeus to share his own immortality so that the two live on alternate days.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Odyssey 11.298–304; Bibliotheca 3.11.2; Argonautica 1.146–155, 2.1–97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer pairs the twins inseparably: Helen looks from the wall of Troy for her own brothers and names Castor the tamer of horses and Polydeuces the goodly boxer, whom the same mother bore. In the underworld Odysseus sees Leda, who bore to Tyndareus two stout-hearted sons, Castor and Polydeuces; the life-giving earth covers them though they are alive, for one day they live in turn and the next they are dead, holding honour from Zeus like the gods.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 3.236–244; Odyssey 11.298–304"
+    },
+    {
+      "text": "Apollodorus and Hyginus split the paternity: when Zeus came to Leda as a swan on the same night that Tyndareus lay with her, she bore Polydeuces and Helen to Zeus, but Castor and Clytemnestra to Tyndareus. So one twin is the god's son and immortal, the other the king's and mortal.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.10.7; Fabulae 77"
+    },
+    {
+      "text": "Apollonius sends the twins among the Argonauts, where Aetolian Leda's dearly-loved sons, born at one birth in the house of Tyndareus, went with her blessing. When the Bebrycian king Amycus made any comer box with him, the challenge stung Polydeuces most of all; he stepped forth as his comrades' champion and slew the brute, and later the Mariandyni, who had long warred against the Bebrycians, welcomed Polydeuces as a god for the deed.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.146–155, 2.1–97, 2.752–758"
+    },
+    {
+      "text": "Apollodorus tells how the twins fell out with their Messenian cousins. Of the sons of Leda, Castor practised war and Pollux boxing, and for their manliness both were called the Dioscuri; they carried off the daughters of Leucippus from Messene and married them. After driving cattle from Arcadia with Idas and Lynceus, the spoil was disputed; Castor was slain, and Pollux, unwilling to live without his brother, was given Zeus's leave to share his immortality, so that the two pass every other day among the gods and among mortals.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.11.2"
+    },
+    {
+      "text": "Pausanias gathers the Laconian cult of the surviving twin: a trophy Polydeuces raised over his victory over Lynceus, the fountain Polydeucea and a sanctuary of Polydeuces on the right of the road to Therapne, and the Olympic contest where one son of Tyndareus won the foot-race and Polydeuces the boxing-match.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.14.7, 3.20.1, 5.8.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

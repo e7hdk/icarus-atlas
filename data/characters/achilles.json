@@ -1,0 +1,70 @@
+{
+  "id": "achilles",
+  "name": "Achilles",
+  "greekName": "Achilleus (Ἀχιλλεύς)",
+  "romanName": "Achilles",
+  "type": "hero",
+  "domains": [
+    "martial fury",
+    "the wrath that wounds the Achaeans",
+    "doomed glory",
+    "goddess-born champion"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Swift-footed son of Peleus and the Nereid Thetis, mightiest of the Achaeans at Troy, whose wrath against Agamemnon brought countless woes upon his own army and is the theme of the Iliad.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.1–10, 1.348–351"
+    },
+    {
+      "text": "The goddess-born hero fated to a short and shining life: he slew Hector to avenge Patroclus and was himself killed by Paris and Apollo at the Scaean gate, leaving a son, Neoptolemus, by Deidamia of Scyros.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 22.355–360; Bibliotheca 3.13.8, Epitome 5.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sings him as Peleus' son, Achilles, whose destructive wrath sent many valiant souls of heroes down to Hades. His mother is the sea-goddess Thetis, who rises from the grey brine to plead his cause, reminding Zeus that her son is short-lived above all men and so deserves honour above all. Achilles himself knows the choice she set before him: to stay and fight at Troy and win imperishable fame but never come home, or to sail back to his own land and live long without glory.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.1–10, 1.351–356, 1.413–418, 9.410–416"
+    },
+    {
+      "text": "Apollodorus supplies the cause of the marriage that bore him: Zeus and Poseidon both desired Thetis until Themis foretold that her son would prove mightier than his father, whereupon they yielded her to a mortal, Peleus, so the danger should fall on no god. The infant Thetis then sought to make immortal, hiding him in the fire by night to burn away the mortal part he had from his father and anointing him by day with ambrosia, until Peleus surprised her and she fled back to the Nereids, leaving the child to be reared by the Centaur Chiron.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.13.5–3.13.6"
+    },
+    {
+      "text": "The Iliad turns on his rage. When Agamemnon seizes the captive Briseis to repay his own loss, Achilles withdraws from the war, and his mother wins from Zeus a promise that the Achaeans shall be pressed back to their ships until they honour her son. So they are, until his beloved companion Patroclus, fighting in Achilles' armour, is killed by Hector. Grief unmakes his anger: he returns to the field, routs the Trojans, and runs Hector down before the walls, killing him and dragging the body behind his chariot to the ships — then yields it at last to old Priam, who comes by night to ransom his son.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.318–356, 16.783–857, 22.247–404, 24.468–676"
+    },
+    {
+      "text": "His own death lies beyond the Iliad, though Hector foretells it as he dies: Achilles will fall at the Scaean gate to Paris and Apollo. Apollodorus reports the deed so — Alexander and Apollo shot him with an arrow in the ankle at the gate — and Ovid stages it as the bowman Paris, his hand guided by the god, loosing the shaft, so that the conqueror of Hector was subdued by a coward's hand.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Iliad 22.355–360; Epitome 5.3; Metamorphoses 12.580–628"
+    },
+    {
+      "text": "His line ran on through the war he could not finish. Apollodorus records that on Scyros Achilles had begotten Neoptolemus, first called Pyrrhus, on Deidamia, daughter of Lycomedes, and it was this son, summoned after his father's death, who at the last cut down King Priam at the altar of Zeus of the Courtyard when Troy was sacked.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.13.8; Epitome 5.11, 5.21"
+    }
+  ]
+}

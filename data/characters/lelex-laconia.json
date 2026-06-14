@@ -1,0 +1,55 @@
+{
+  "id": "lelex-laconia",
+  "name": "Lelex",
+  "greekName": "Λέλεξ",
+  "romanName": "Lelex",
+  "type": "mortal",
+  "domains": [
+    "autochthony",
+    "the first kingship of Laconia",
+    "the Leleges"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "An aboriginal sprung from the Laconian soil and the first king of the land, after whom its people were called the Leleges. From him the whole Spartan house descends — through his son Eurotas in one tradition, through his elder son Myles in another — down to the eponyms Sparta and Lacedaemon.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.10.3; Description of Greece 3.1.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus reckons Lelex a son of the soil, an earth-born man with no human father, and traces the Spartan stemma straight from him: by the Naiad nymph Cleocharia he begat Eurotas, whose daughter Sparta wed Lacedaemon. In this telling the autochthon stands but one generation above the river-eponym, the direct root of the Laconian line.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.3"
+    },
+    {
+      "text": "Pausanias gives the Lacedaemonians' own tradition: Lelex, an aboriginal, was the first king in the land, and his subjects were named Leleges after him. But here a generation is added — Lelex had a son Myles and a younger son Polycaon, and only on the death of Myles did his son Eurotas come to the throne and give the river its name. So the same Eurotas who is Lelex's son in Apollodorus becomes his grandson in Pausanias, and the count of kings between the autochthon and the eponyms shifts with the teller.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.1.1"
+    },
+    {
+      "text": "Pausanias keeps the old king close in cult and kin across his Laconian and Messenian books. A hero-shrine of Lelex himself stood at Sparta along the Aphetaid Road, and the town of Therapne took its name from a daughter of his. His elder son Myles, who received the kingdom, was remembered as the first man to invent a mill, grinding corn at Alesiae beneath Taygetus; and on Lelex's own death the country he had ruled was for a time called Lelegia after him — the founder lingering as place-name and worshipped dead in the land he first held.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.12.5; 3.19.9; 3.20.2; 4.1.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ]
+    }
+  ]
+}

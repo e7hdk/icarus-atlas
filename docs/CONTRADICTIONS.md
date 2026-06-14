@@ -980,3 +980,204 @@ Verification: ✓ verified — Bibliotheca 3.15.4 (Eumolpus slain) against Descr
 Significance: the victor's death is the god's revenge in one telling, the king of heaven's thunderbolt in another, and an ordinary battlefield fall in the third — the same war won and lost three ways.
 
 Verification: ✓ verified — Bibliotheca 3.15.5 (Poseidon destroys him), Fabulae 46 (Zeus' thunderbolt at Poseidon's request), Description of Greece 1.38.3 (killed in battle).
+
+## The father of Ion
+
+- **topic**: `ion-paternity`
+- **Characters**: `ion`, `xuthus`, `apollo`, `creusa-athens`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Xuthus, son of Hellen, married Creusa daughter of Erechtheus and by her had Achaeus and Ion. | Bibliotheca 1.7.3 |
+| Pausanias | In the genealogy Ion is plainly the son of Xuthus — yet Pausanias also records the Acropolis-cave tradition that Apollo met Creusa there, the version Euripides dramatizes in which the god, not Xuthus, is Ion's true father. | Description of Greece 7.1.2, 1.28.4 |
+
+Significance: the eponym of the Ionians is the lawful son of the Hellene Xuthus in the systematic genealogy, but an Attic cult-tradition makes him secretly Apollo's — turning Athens itself, not Thessaly, into the cradle of the Ionian race.
+
+Verification: ✓ verified — Bibliotheca 1.7.3 (Xuthus the father) and Pausanias 1.28.4 (Apollo met Creusa in the cave below the Acropolis); the explicit Apollo-paternity is Euripides' Ion, out of the seven-source set, so it is carried only as the Pausanias-reported cult tradition.
+
+## How many generations from Lelex to the eponyms?
+
+- **topic**: `eponym-generation-count`
+- **Characters**: `eurotas`, `myles`, `lelex-laconia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Eurotas is the son of Lelex directly, by the Naiad Cleocharia — Myles is omitted. | Bibliotheca 3.10.3 |
+| Pausanias | Lelex's son Myles reigned next (the mill-inventor), and only on his death did his son Eurotas succeed — making Eurotas the grandson. | Description of Greece 3.1.1 |
+
+Significance: a whole reign of the Laconian king-list appears or vanishes with the teller — the foundation of Sparta is one generation deeper in Pausanias than in Apollodorus.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 (Eurotas son of Lelex) against Description of Greece 3.1.1 (Myles between them).
+
+## Whose son is Perieres?
+
+- **topic**: `perieres-parentage`
+- **Characters**: `perieres-aeolid`, `aeolus-hellene`, `cynortas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus / the Aeolid tradition | Perieres is a son of Aeolus, listed among the Aeolids who married Gorgophone. | Bibliotheca 1.9.5 |
+| Pseudo-Apollodorus / Pausanias (the Laconian line) | "Many say that Perieres was not the son of Aeolus but of Cynortas, son of Amyclas" — the Spartan stemma. | Bibliotheca 3.10.3; Description of Greece 3.1.3 |
+
+Significance: the seam where the Aeolid stemma meets the Laconian one — Perieres belongs to Thessaly's house of Aeolus or to the Spartan line of Amyclas, and the marriage to Gorgophone (a Perseid) sits on whichever side the teller chooses.
+
+Verification: ✓ verified — Apollodorus himself reports both at 1.9.5 and 3.10.3 ("many say… of Cynortas").
+
+## Whose son is Tyndareus?
+
+- **topic**: `tyndareus-parentage`
+- **Characters**: `tyndareus`, `perieres-aeolid`, `oebalus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Perieres by Gorgophone begat Tyndareus, Icarius, Aphareus and Leucippus. | Bibliotheca 1.9.5, 3.10.3 |
+| Pausanias | Cynortas' son was Oebalus, and it is Oebalus (by Gorgophone) who fathers Tyndareus — the Spartan kings descend through Oebalus. | Description of Greece 3.1.3–4 |
+| Hyginus | "Tyndareus, son of Oebalus." | Fabulae 78 |
+
+Significance: an entire generation (Oebalus) is inserted or skipped between Perieres/Cynortas and Tyndareus, depending on whether the Aeolid or the Spartan king-list is followed.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 (Perieres) against Description of Greece 3.1.4 and Fabulae 78 (Oebalus).
+
+## Whose son is Hyacinthus?
+
+- **topic**: `hyacinthus-parentage`
+- **Characters**: `hyacinthus`, `amyclas`, `oebalus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus / Pausanias | Hyacinthus is a son of Amyclas (by Diomede), brother of Cynortas, who died before his father. | Bibliotheca 3.10.3; Description of Greece 3.1.3, 3.19.4 |
+| Hyginus | Hyacinthus is a son of the later king Oebalus. | Fabulae 271 |
+
+Significance: the youth Apollo loved is set a generation apart depending on the source — son of the founder of Amyclae, or of the king who later fathered Tyndareus.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 (Amyclas) against Fabulae 271 (Oebalus); Ovid (Met. 10) leaves the father unstressed.
+
+## Who was Helen's mother?
+
+- **topic**: `helen-parentage`
+- **Characters**: `helen`, `leda`, `nemesis`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer / Pseudo-Apollodorus (mainline) | Leda, wife of Tyndareus, bore Helen to Zeus (who came as a swan). | Odyssey 11.298–300; Bibliotheca 3.10.7 |
+| Hyginus / Pausanias (the egg of Nemesis) | Zeus pursued Nemesis, who laid an egg merely brought to Leda; Helen's true mother is Nemesis, Leda only her nurse. | Astronomica 2.8; Description of Greece 1.33.7 |
+
+Significance: the most beautiful woman in the world is the daughter of a Spartan queen or of the goddess of retribution herself — and at Rhamnous Nemesis was worshipped as Helen's mother.
+
+Verification: ✓ verified — Bibliotheca 3.10.7 (Leda) and Apollodorus' own "some say Nemesis" against Description of Greece 1.33.7 and Astronomica 2.8 (the egg).
+
+## Are the Dioscuri mortal or divine?
+
+- **topic**: `dioscuri-paternity`
+- **Characters**: `castor`, `polydeuces`, `tyndareus`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Castor and Polydeuces are both sons of Tyndareus by Leda — yet the earth holds them living on alternate days, honoured like gods. | Odyssey 11.298–304 |
+| Pseudo-Apollodorus / Hyginus | Zeus and Tyndareus lay with Leda the same night: she bore Polydeuces (and Helen) to Zeus, Castor (and Clytemnestra) to Tyndareus — so one twin is immortal, the other mortal. | Bibliotheca 3.10.7; Fabulae 77 |
+
+Significance: whether the Dioscuri are wholly Tyndareus' mortal sons or a split mortal/immortal pair is the very point of their myth — for it is Polydeuces' divine half that he shares with dead Castor so the two alternate between Olympus and the grave.
+
+Verification: ✓ verified — Odyssey 11.298–304 (both Tyndareus', alternating life) against Bibliotheca 3.10.7 and Fabulae 77 (the split paternity).
+
+## Who killed Phocus?
+
+- **topic**: `phocus-murder`
+- **Characters**: `phocus-aeacid`, `telamon`, `peleus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Peleus and Telamon together plotted against their half-brother Phocus, and one of them — in the lot that fell, Telamon — struck him dead with the quoit at the games; for the murder both were banished by Aeacus. | Bibliotheca 3.12.6 |
+| Pausanias | The Aeginetan and Phocian traditions weigh the guilt differently — Telamon protested before Aeacus that he had no hand in it, and the blame is variously fixed; both brothers go into exile. | Description of Greece 2.29.9–10 |
+
+Significance: the founding crime of the Aeacid diaspora — which sent Telamon to Salamis and Peleus to Phthia, and so seeded the two greatest Greek houses of the Trojan War — cannot agree on which brother's hand threw the fatal discus.
+
+Verification: ✓ verified — Bibliotheca 3.12.6 (Telamon by the cast of the quoit, both exiled) against Pausanias 2.29.9–10 (Telamon's plea of innocence and the divided Aeginetan tradition).
+
+## Idas, Apollo and the choice of Marpessa
+
+- **topic**: `marpessa-suitor`
+- **Characters**: `idas`, `apollo`, `marpessa`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Idas, mightiest of men, took up his bow against Phoebus Apollo himself for the sake of fair-ankled Marpessa. | Iliad 9.557–564 |
+| Pseudo-Apollodorus | Idas carried Marpessa off; when Apollo would have taken her, Zeus parted the rivals and let Marpessa choose — and she chose the mortal Idas, fearing the god would desert her when she aged. | Bibliotheca 1.7.8–9 |
+| Pausanias | The chest of Cypselus showed "Idas bringing back Marpessa, not unwilling, from Apollo." | Description of Greece 5.18.2 |
+
+Significance: a mortal who out-faces a god with the bow, and a woman granted the rarest thing in myth — the choice of her own husband, made against immortality.
+
+Verification: ✓ verified — Iliad 9.557–564 (Idas vs Apollo) and Bibliotheca 1.7.8–9 (Marpessa's choice) confirmed; Pausanias 5.18.2 (the Cypselus chest) corroborates the willing return.
+
+## Whose son is Idas?
+
+- **topic**: `idas-parentage`
+- **Characters**: `idas`, `aphareus`, `poseidon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus / Apollonius | Idas is a son of Aphareus and Arene, the brother of Lynceus. | Bibliotheca 3.10.3; Argonautica 1.151 |
+| Pseudo-Apollodorus (the variant) | "But according to many, Idas was begotten by Poseidon." | Bibliotheca 3.10.3 |
+
+Significance: the strongest mortal of his age is, in the rival tradition, no mortal at all but a son of the sea-god — which alone could explain a man bold enough to draw his bow against Apollo.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 carries both the Aphareus parentage and the "many say Poseidon" variant; Apollonius 1.151 names him an Apharetid.
+
+## Whose son is Meleager?
+
+- **topic**: `meleager-father`
+- **Characters**: `meleager`, `oeneus`, `ares`, `althaea`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Meleager is the son of Oeneus, king of Calydon — "Meleager, son of Oeneus." | Iliad 9.543 |
+| Pseudo-Apollodorus | Lists Meleager among the children Althaea bore to Oeneus, but adds "they say that he was begotten by Ares." | Bibliotheca 1.8.2 |
+| Hyginus | Oeneus and Mars (Ares) lay with Althaea in one and the same night, and from them Meleager was born. | Fabulae 171 |
+| Ovid | Names him "Mavortius" — the hero sprung of Mars (Ares). | Metamorphoses 8.437 |
+
+Significance: the boar-slayer of Calydon is, in the older epic, simply the son of mortal Oeneus; the later mythographers slip the war-god into his begetting, so that the hero whose temper destroys his own house carries Ares' blood. Apollodorus preserves both readings side by side.
+
+Verification: ✓ verified — Iliad 9.543 (Οἰνῆος… Μελέαγρος) and Bibliotheca 1.8.2 ("they say… by Ares") confirmed against Perseus; Hyginus 171 and Ovid Met. 8.437 ("Mavortius") corroborate the divine paternity.
+
+## Whose daughter is Deianira?
+
+- **topic**: `deianira-parentage`
+- **Characters**: `deianira`, `oeneus`, `dionysus`, `althaea`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Counts Deianira among the children of Oeneus and Althaea, yet notes she "is said to have been begotten by Dionysus." | Bibliotheca 1.8.1 |
+| Hyginus | Liber (Dionysus), received as a guest, lay with Althaea and begot Deianira, giving Oeneus the vine in recompense. | Fabulae 129 |
+
+Significance: Heracles' fatal wife is, in the household reckoning, a princess of Calydon — but the same sources whisper that the wine-god, not Oeneus, fathered her, the night Dionysus paid for his host's hospitality with the gift of the vine.
+
+Verification: ✓ verified — Bibliotheca 1.8.1 carries both the Oeneus parentage and the "begotten by Dionysus" variant; Hyginus 129 (Oeneus) tells the guest-friendship and Liber's begetting of Deianira, confirmed against ToposText.
+
+## Whose son is Thestius?
+
+- **topic**: `thestius-parentage`
+- **Characters**: `thestius`, `ares`, `agenor-aetolian`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Thestius is born to Demonice by Ares — "Demonice had Evenus, Molus, Pylus, and Thestius by Ares." | Bibliotheca 1.7.7 |
+| Pausanias | Citing the early poet Asius, makes Thestius the son of Agenor son of Pleuron, so that his fatherhood of Leda descends from the Aetolian house, not the war-god. | Description of Greece 3.13.8 |
+
+Significance: the father of Leda and Althaea — the hinge that joins Calydon to Sparta — is in one line the son of Ares, in the other a purely human Aetolian; the choice decides whether the Tyndarids and the boar-hunters trace divine or mortal blood through Pleuron's house.
+
+Verification: ✓ verified — Bibliotheca 1.7.7 (Thestius by Ares) and Pausanias 3.13.8 (Asius: Thestius son of Agenor son of Pleuron) confirmed against Perseus.
+
+## Who was Tydeus' mother?
+
+- **topic**: `tydeus-mother`
+- **Characters**: `tydeus`, `periboea-oeneus`, `gorge`, `oeneus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Oeneus, having married Periboea daughter of Hipponous after Althaea's death, begot Tydeus by her — the dominant account. | Bibliotheca 1.8.4–5 |
+| Pseudo-Apollodorus (Peisander's variant) | "But Peisander says that the mother of Tydeus was Gorge, for Oeneus by the will of Zeus lay with his own daughter." | Bibliotheca 1.8.5 |
+| Hyginus | Names Periboea as the mother of Tydeus. | Fabulae 69, 70 |
+
+Significance: whether the father of Diomedes — the second-greatest Greek at Troy — was born of Oeneus' second wife or, in the darker strand, of Oeneus' own daughter Gorge, hides an incest at the root of the Aetolian hero-line. Apollodorus alone preserves both, crediting the Gorge version to the epic poet Peisander.
+
+Verification: ✓ verified — Bibliotheca 1.8.4–5 carries the Periboea parentage and the Peisander/Gorge variant in the same passage; Hyginus 69–70 corroborate Periboea.

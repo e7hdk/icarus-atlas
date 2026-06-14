@@ -1,0 +1,56 @@
+{
+  "id": "sparte",
+  "name": "Sparte",
+  "greekName": "Spartē (Σπάρτη)",
+  "romanName": "Sparta",
+  "type": "nymph",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Sparta",
+    "the Laconian royal house",
+    "mortal marriage"
+  ],
+  "summary": [
+    {
+      "text": "Eponymous nymph of the city of Sparta and daughter of Eurotas, the Laconian river. She married Lacedaemon, the son of Zeus, and bore him Amyclas and a daughter Eurydice, who married Acrisius.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.10.3; Description of Greece 3.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Her place in the stemma is fixed alike by Apollodorus and Pausanias: Sparte was the daughter of Eurotas, and she was wedded to Lacedaemon, the son of Zeus by Taygete, after whom the land of Lacedaemon was named.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.10.3; Description of Greece 3.1.2"
+    },
+    {
+      "text": "Apollodorus traces her father's line to the soil itself: Eurotas was a son of Lelex, an earth-born man, by the Naiad nymph Cleocharia. From the union of Lacedaemon and Sparte came a son Amyclas and a daughter Eurydice, whom Acrisius married.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.3"
+    },
+    {
+      "text": "Pausanias preserves how her name was set upon the city. When Lacedaemon came to the throne he first changed the names of the land and its people, calling them after himself; then he founded a city and named it after his wife, and it was still called Sparta in Pausanias' own day.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.1.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

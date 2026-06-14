@@ -1,0 +1,75 @@
+{
+  "id": "penelope",
+  "name": "Penelope",
+  "greekName": "Pēnelopē (Πηνελόπη)",
+  "romanName": "Penelope",
+  "type": "mortal",
+  "domains": [
+    "faithful wife",
+    "weaving and guile",
+    "patient waiting"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Icarius and wife of Odysseus, who through the twenty years of his absence at Troy and on the homeward wandering kept faith and household together, holding off a crowd of suitors with the craft of her weaving until her husband returned.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 1.325–344; 2.85–110"
+    },
+    {
+      "text": "Apollodorus makes her the daughter of Icarius and the Naiad nymph Periboea, the wife whom Odysseus married.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names her always \"daughter of Icarius, wise Penelope.\" To Telemachus, Athena affirms his line: no nameless lineage have the gods appointed him, seeing that Penelope bore him such as he is. Left a bride newly wed when the Achaeans sailed for Troy, with an infant son at her breast, she became in his absence the mistress of the house of Odysseus on Ithaca.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 1.215–223; 11.447–450"
+    },
+    {
+      "text": "Believing Odysseus dead, a throng of suitors pressed her toward remarriage and devoured his substance. Penelope answered them with guile: she set up a great web in her halls and bade them wait until she had finished a shroud for Laertes, her husband's aged father, lest she be shamed before the Achaean women. By day she wove at the wide web, but by night, with torches set beside her, she unravelled what she had woven. For three years her craft beguiled them, until in the fourth year a faithless handmaid betrayed her and she was caught undoing the cloth and compelled at last to finish it.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 2.93–110; 19.137–156; 24.128–146"
+    },
+    {
+      "text": "Her constancy became her glory. The ghost of Agamemnon, murdered by his own wife on his homecoming, sets that doom against Odysseus' fortune: no death shall come to him from his wife, for the daughter of Icarius is prudent and of an understanding heart. So virtuous a queen wins for herself a fame that never dies, while the immortals make a song of hatred for the daughter of Tyndareus, who slew her wedded lord.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.444–446; 24.192–202"
+    },
+    {
+      "text": "Pausanias preserves a Spartan tale of how Odysseus won her: Icarius proposed a foot-race for the wooers of Penelope, and Odysseus, plainly the victor, took her as his bride; the place where the suitors were started was still shown along the Aphetaid Road.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.12.2"
+    },
+    {
+      "text": "Apollodorus records her parentage, that she was the daughter of Icarius and the Naiad nymph Periboea, married to Odysseus. The same writer also reports a darker variant flatly opposed to the faithful homecoming Homer tells: some say that Penelope was seduced by Antinous and sent away by Odysseus to her father Icarius.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.10.6; Epitome 7.38"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

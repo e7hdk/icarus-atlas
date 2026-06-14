@@ -3,38 +3,67 @@
   "name": "Clytemnestra",
   "greekName": "Klytaimnēstra (Κλυταιμνήστρα)",
   "type": "mortal",
-  "domains": ["Mycenaean queenship", "the murder of Agamemnon", "the vengeance of Orestes"],
+  "domains": [
+    "Mycenaean queenship",
+    "the murder of Agamemnon",
+    "the vengeance of Orestes"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Queen of Mycenae, first wife of the younger Tantalus and later wife of Agamemnon, whom she killed with Aegisthus before dying by Orestes' hand.",
-      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Odyssey 3.250–310, 11.404–434; Epitome 2.15–16, 6.23–25; Fabulae 117, 119; Description of Greece 2.18.2, 2.22.3"
     }
   ],
   "story": [
     {
       "text": "Her first marriage ended violently: Agamemnon killed Tantalus and their newborn child and took Clytemnestra as his wife. Pausanias' local account remembers the earlier husband but disputes whether his father was Thyestes or Broteas.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Epitome 2.15–16; Description of Greece 2.18.2, 2.22.3"
     },
     {
       "text": "In Homer, Clytemnestra initially resisted Aegisthus while a minstrel guarded her, then joined him after the singer was removed. Agamemnon's ghost calls her an accomplice in his murder and the direct killer of Cassandra.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Odyssey 3.250–310, 11.404–434",
       "topic": "agamemnon-murder-agency"
     },
     {
       "text": "Apollodorus and Hyginus place Clytemnestra beside Aegisthus as a direct conspirator and killer of Agamemnon. Electra saved Orestes from them, and the grown son returned with Pylades to kill his mother and Aegisthus.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Epitome 6.23–25; Fabulae 117, 119",
       "topic": "agamemnon-murder-agency"
     },
     {
       "text": "Apollodorus places Iphigenia among the daughters born in Agamemnon's household. Pausanias reports an Argive tradition in which Helen bore Iphigenia to Theseus and entrusted the child to Clytemnestra to raise.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Epitome 2.16; Description of Greece 2.22.6–7",
       "topic": "iphigenia-parentage"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
     }
   ]
 }
