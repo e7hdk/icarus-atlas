@@ -1,0 +1,43 @@
+{
+  "id": "dolius-ithaca",
+  "name": "Dolius",
+  "greekName": "Dolios (Δόλιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "gardener of Odysseus' orchard",
+    "father of Melanthius and Melantho",
+    "servant of Penelope's house",
+    "father of six sons who fought beside Odysseus"
+  ],
+  "summary": [
+    {
+      "text": "The aged servant whom Laertes gave Penelope before she came to Ithaca, keeper of the garden of many trees — father of the goatherd Melanthius and of Melantho, and of six sons who still worked his vineyard and stood armed beside Odysseus when the kin of the slain suitors came.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.715–755; 17.205–245; 24.365–545"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer says Laertes gave Dolius to Penelope before she ever came to Ithaca — a servant bound to the queen's household, keeper of the garden of many trees. When the suitors plotted Telemachus' death, Penelope sent Eurycleia to summon him that he might sit by Laertes in the country and rouse the old king to plead before the people.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.715–755"
+    },
+    {
+      "text": "His children divided the house between loyalty and ruin. Melanthius the goatherd drove the best she-goats to feast the wooers and reviled the disguised king; Melantho, whom Penelope had reared as her own, loved Eurymachus and shamed the beggar in the halls. When armour vanished from the store-room, Odysseus suspected Melanthius son of Dolius before the truth was known.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.205–245; 18.290–335; 22.130–165"
+    },
+    {
+      "text": "On the day Odysseus found Laertes in the vineyard, Dolius and his six sons were gathering stones for the vineyard wall, led by their old Sicilian mother — the same handmaid who saw to their food and tended Laertes with kindly care at the farm far from the city. They returned for the meal, learned who the stranger was, and when the suitors' kin rallied, Dolius and Laertes donned armour though grey-headed, and the six sons fought beside the king.",
+      "sources": ["homer"],
+      "citation": "Odyssey 24.195–230; 24.365–545"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

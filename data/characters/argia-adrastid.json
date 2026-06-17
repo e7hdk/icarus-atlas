@@ -1,0 +1,57 @@
+{
+  "id": "argia-adrastid",
+  "name": "Argia",
+  "greekName": "Ἀργεία",
+  "romanName": "Argia",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argive royalty",
+    "the Seven against Thebes",
+    "the Epigoni"
+  ],
+  "summary": [
+    {
+      "text": "Eldest daughter of Adrastus, given in marriage to the exiled Theban Polynices when the king matched his daughters to the boar and the lion; by him she became the mother of Thersander, who would reign at Thebes after the Epigoni.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.1; Fabulae 69"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus numbers Argia first among the three daughters Adrastus had by Amphithea, daughter of Pronax — before Deipyle and Aegialia — and names with them the sons Aegialeus and Cyanippus. She belongs to the Biantid royal house at Argos, sister to the woman Tydeus would marry and to the line that would produce Diomedes.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "text": "Her marriage bound Argos to Thebes. When Polynices came banished from his city and fought Tydeus by night in Adrastus' palace, the king recalled Apollo's oracle and wed Argia to the lion-shielded Theban and Deipyle to the boar-shielded Aetolian. Adrastus then promised to restore both sons-in-law to their kingdoms and mustered the Seven against Thebes.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Fabulae 69–70"
+    },
+    {
+      "text": "Hyginus makes explicit what the genealogy implies: from Argia and Polynices was born Thersander, who marched with the Epigoni, took Thebes when his father had failed, and later sailed toward Troy only to fall in Mysia. Through that son Argia links the Argive muster of the Seven to the Theban throne the second war would win.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 69; Bibliotheca 3.7.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

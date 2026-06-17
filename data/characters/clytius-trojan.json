@@ -1,0 +1,33 @@
+{
+  "id": "clytius-trojan",
+  "name": "Clytius",
+  "greekName": "Klytios (Κλύτιος)",
+  "type": "hero",
+  "domains": ["son of Laomedon", "Trojan elder", "Scaean Gate counsel"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Laomedon (`laomedon`) and brother of Priam and Hicetaon (`hicetaon-trojan`), who sat with the elders at the Scaean gates — distinct from Clytius the suitors (`clytius-same`, `clytius-zacynthus`) and from the father of Dolops among the Danaan leaders (`dolops-clytiid`).",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190, 20.200–240"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Helen came to the wall, Clytius sat among the elders about Priam — Panthous, Thymoetes, Lampus, Hicetaon, scion of Ares, Ucalegon, and Antenor — men of prudence who had ceased from battle for old age but spoke full sweet at the Scaean gates.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    },
+    {
+      "text": "Aeneas, vaunting his lineage to Achilles, counts Clytius among the sons whom peerless Laomedon begat beside Tithonus, Priam, and Hicetaon, scion of Ares — the blood from which he avows himself sprung through Assaracus and Anchises.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.200–240"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

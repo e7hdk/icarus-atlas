@@ -1,0 +1,39 @@
+{
+  "id": "galatea-nymph",
+  "name": "Galatea",
+  "greekName": "Galateia (Γαλάτεια)",
+  "romanName": "Galatea",
+  "type": "nymph",
+  "kinds": ["nereid"],
+  "cluster": "chthonic",
+  "domains": [
+    "the lovely Nereid",
+    "beloved of Acis",
+    "Sicilian sea",
+    "Polyphemus' jealousy"
+  ],
+  "summary": [
+    {
+      "text": "A Nereid born to Nereus and Doris, named in Hesiod and Homer among the sea-sisters and in Ovid as the beloved of the river-spirit Acis, whose death beneath the Cyclops Polyphemus' rock she mourned until the gods changed her lover into the Sicilian stream that keeps his name.",
+      "sources": ["hesiod", "homer", "ovid", "apollodorus"],
+      "citation": "Theogony 250; Iliad 18.45; Metamorphoses 13.750–900; Bibliotheca 1.2.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod and Apollodorus number Galatea among the daughters of Nereus and Doris — comely Galatea in the Theogony's catalogue, Galatea again in the Bibliotheca's long roll of Nereids. Homer shows her in the bright cave when Thetis grieves: among the throng of sea-sisters who surround the silver-footed goddess are Doris, Galatea, Nemertes and many more.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Theogony 250; Bibliotheca 1.2.7; Iliad 18.45–49"
+    },
+    {
+      "text": "Ovid gives her voice in Sicily. Galatea, whose sire is Nereus and whose mother the azure Doris bore, loved the youthful Acis; the monstrous Polyphemus, who had courted her in vain, crushed the boy with a thrown crag. Galatea turned Acis' blood into the river that flows beneath Etna still — a metamorphosis the nymph narrates herself to her sister nymphs, warning that no gentle race of suitors waits for every maiden of the sea.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.750–900"
+    },
+    {
+      "text": "She must not be merged with Galatea the ivory bride of Pygmalion — that later name for a statue is a Roman accretion outside the seven lenses of this atlas. This Galatea is the sea-nymph of Acis, attested from Homer through Ovid.",
+      "sources": ["ovid", "hesiod"],
+      "citation": "Metamorphoses 13.750–900; Theogony 250"
+    }
+  ]
+}

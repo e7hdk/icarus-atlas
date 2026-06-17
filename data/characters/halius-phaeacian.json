@@ -1,0 +1,37 @@
+{
+  "id": "halius-phaeacian",
+  "name": "Halius",
+  "greekName": "Halius (Ἅλιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Alcinous",
+    "Phaeacian games",
+    "ball-dance"
+  ],
+  "summary": [
+    {
+      "text": "One of the three sons of noble Alcinous who rose first for the foot-race at the games held for Odysseus, and whom the king later paired with Laodamas in the ball-dance no other Phaeacian could match — not to be confused with Halius the suitor from Zacynthus in Apollodorus' catalogue.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 8.85–120, 8.345–380; Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Phaeacian princes made trial of contests before the stranger, Halius rose with his brothers Laodamas and Clytoneus for the foot-race — though noble Clytoneus far outran them all, shooting to the front by as far as a team of mules in fallow land outpaces a single plough.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.85–120, 8.125–160"
+    },
+    {
+      "text": "After Demodocus sang of Troy and the long-oared Phaeacians rejoiced, Alcinous commanded Halius and Laodamas to dance alone, for no one could vie with them. They took the beautiful ball of purple that wise Polybus had made and tossed it high toward the shadowy clouds while Odysseus watched among the guests.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.345–380"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer"]
+    }
+  ]
+}

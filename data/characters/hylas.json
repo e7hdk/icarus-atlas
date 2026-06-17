@@ -1,0 +1,34 @@
+{
+  "id": "hylas",
+  "name": "Hylas",
+  "greekName": "Hylas (Ὕλας)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Mysia",
+    "beauty",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Theodamas and the nymph Menodice, beloved of Heracles, ravished by Mysian nymphs at the spring and lost to the expedition.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Argonautica 1.120–135; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hylas went to fetch water at Cios, nymphs seized the beautiful youth and hid him; Heracles and Polyphemus searched while the Argo sailed on without them. Some say the nymphs turned Hylas into an echo answering Heracles' cry.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Argonautica 1.120–135; Fabulae 14"
+    }
+  ]
+}

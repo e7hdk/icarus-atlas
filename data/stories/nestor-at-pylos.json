@@ -1,0 +1,70 @@
+{
+  "id": "nestor-at-pylos",
+  "title": "Nestor at Pylos",
+  "greekTitle": "Νέστωρ ἐν Πύλῳ",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.901,
+  "summary": {
+    "text": "Nestor son of Neleus came without mishap to sandy Pylos and all his company with him — the one great homecoming the poets tell without poison, though the old king's counsel would later catalogue for Telemachus how every other captain's return ended in storm, murder, or exile.",
+    "sources": ["homer", "apollodorus"],
+    "citation": "Hom. Od. 3.1–487; Apollod. Epit. 6.1"
+  },
+  "chapters": [
+    {
+      "title": "From Troy with Diomedes",
+      "text": "When the host put out from Ilion, not every fleet sailed alone. Apollodorus says Diomedes, Nestor, and Menelaus went to sea together at first — three kings who had counselled at Troy now sharing the same wind homeward. The storm that would drive Menelaus to Egypt and wreck others on the Cepharean rocks had not yet split the convoy; Nestor's ninety black ships, the largest contingent after Agamemnon's hundred, bore the old horseman of sandy Pylos toward Messene. The nested episode on Menelaus in Egypt tells how the son of Atreus was torn away from that company; here the Neleid king kept his course.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 6.1; Hom. Il. 2.591–594"
+    },
+    {
+      "title": "The safe harbour",
+      "text": "Of all the Returns Homer remembers without poison, Nestor's is the first and cleanest. The son of Neleus came without mishap to sandy Pylos, and all his company with him — no false wife at the gate, no thunderbolt on the reef, no axe waiting in the bath. While Agamemnon sailed first to Mycenae and Clytemnestra sharpened her plot, while Nauplius kindled beacons and corrupted the Greek households, the counsellor who had urged the host on from the war-council reached his father's kingdom intact. Pylos stood on the Messenian coast as it had when he mustered ninety ships for Troy.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.1–3.487"
+    },
+    {
+      "title": "What the others suffered",
+      "text": "Nestor would later tell Telemachus the bitter catalogue. Agamemnon reached home first and died in the bath with Cassandra — the nested episodes at Mycenae carry that murder and the Oresteia. The Locrian Ajax perished on the Gyraean rocks; Menelaus wandered eight years before Sparta; Diomedes found Argos closed against him; Neoptolemus went overland to Epirus; Odysseus alone was still lost when the old king feasted the Ithacan prince on the shore. The nested episodes on the Nostoi tell each ruin; Nestor's nostos is the measure against which every other captain's homecoming fails.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.303–312, 3.130–200"
+    },
+    {
+      "title": "Sacrifice on the shore",
+      "text": "When Telemachus came years later, he found Nestor on the beach with the Pylians, cutting the throats of black bulls to the dark-haired Earth-Shaker — nine companies of five hundred men each, nine bulls apiece, the feast of a king who still ruled in piety. Fair Polycaste bathed the guest; the queen stood with the women at the hecatomb — Homer names her Eurydice daughter of Clymenus, where Apollodorus calls the same household's wife Anaxibia daughter of Cratieus. The dispute lives quietly in the marriage that survived Troy when so many did not.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 3.450–495; Bibliotheca 1.9.9",
+      "topic": "nestor-wife-identity"
+    },
+    {
+      "title": "Counsel for the son",
+      "text": "Nestor could tell Telemachus nothing certain of Odysseus since the war — only that Menelaus had wandered longest and that the son of Atreus might know more in Sparta. He urged the prince to be bold like Orestes, who avenged Agamemnon, and sent Peisistratus with him in a chariot while Athena in Mentor's shape guarded the Ithacan ship. The nested episode on Telemachus and the suitors tells that voyage; here the story ends with the one king whose return from Troy needed no vengeance to complete it — only the old counsellor's voice, still guiding the sons as it had guided the fathers.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.1–487"
+    }
+  ],
+  "cast": [
+    { "id": "nestor", "name": "Nestor", "role": "King who reached Pylos without mishap" },
+    { "id": "diomedes", "name": "Diomedes", "role": "He who sailed homeward with him at first" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Companion separated by the storm" },
+    { "id": "telemachus", "name": "Telemachus", "role": "Guest who heard the Returns recalled" },
+    { "id": "peisistratus-nestor", "name": "Peisistratus", "role": "Son who guided Telemachus to Sparta" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Named in the catalogue of the murdered" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Still lost when Nestor feasted Telemachus" },
+    { "id": "orestes", "name": "Orestes", "role": "Model the old king urged on the prince" },
+    { "id": "poseidon", "name": "Poseidon", "role": "God to whom the Pylians sacrificed on the shore" },
+    { "id": "athena", "name": "Athena", "role": "Patron in Mentor's guise on the voyage" },
+    { "id": "eurydice-nestor", "name": "Eurydice", "role": "Queen in Homer's account of the hecatomb" },
+    { "id": "anaxibia-nestor", "name": "Anaxibia", "role": "Queen in Apollodorus' account of the same sons" }
+  ],
+  "places": [
+    { "id": "pylos", "name": "Pylos", "role": "Sandy kingdom where the safe nostos ended" },
+    { "id": "sparta", "name": "Sparta", "role": "Whither Nestor sent Telemachus for news" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Where Agamemnon died in Nestor's tale" },
+    { "id": "troy", "name": "Troy", "role": "City the ninety ships left at last" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "3.1–487" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "6.1" }
+  ]
+}

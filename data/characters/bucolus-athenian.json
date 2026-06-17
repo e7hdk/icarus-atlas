@@ -1,0 +1,22 @@
+{
+  "id": "bucolus-athenian",
+  "name": "Bucolus",
+  "greekName": "Bukolos (Βουκόλος)",
+  "type": "hero",
+  "domains": ["father of Sphelus", "Athenian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Sphelus (`sphelus-athenian`) and grandfather of the Athenian captain Iasus (`iasus-athenian`) — attested by Homer when Aeneas slew Iasus in the battle at the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Iasus captain of the Athenians, called the son of Sphelus, son of Bucolus, when Apollo roused the Trojans and Aeneas smote him among the foremost fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ]
+}

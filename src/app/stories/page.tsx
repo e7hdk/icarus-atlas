@@ -1,43 +1,42 @@
-import Link from 'next/link';
 import { loadStories } from '@/features/stories/load';
+import { childrenOf, partitionStoryShelves } from '@/features/stories/shelves';
 import { loadAtlasData } from '@/features/characters/load';
 import { MainNav } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
 import { AtlasOverlays } from '@/components/hud/AtlasOverlays';
-import { GlassPanel } from '@/components/ui/GlassPanel';
+import { StoryShelfCard } from '@/components/stories/StoryShelfCard';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
-import type { Story, StoryKind } from '@/types/story';
 
 export const metadata = {
   title: 'Myths — Icarus Atlas',
-  description: 'The great myths: cosmogony, floods, wars and their episodes.',
+  description: 'The great myths: the cosmic cycle, wars, wanderings and their episodes.',
 };
 
-const KIND_COLOR: Record<StoryKind, string> = {
-  cosmogony: '#c084fc',
-  catastrophe: '#00e5ff',
-  war: '#fb7185',
-  saga: '#fcd34d',
-  episode: '#aab4c8',
-};
-
-function KindBadge({ kind }: { kind: StoryKind }) {
-  const color = KIND_COLOR[kind];
-  return (
-    <span
-      className="inline-flex items-center gap-2 rounded-full border px-3 py-0.5 font-display text-[10px] uppercase tracking-[0.18em]"
-      style={{ color, borderColor: `${color}66`, backgroundColor: `${color}1a` }}
-    >
-      <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: color, boxShadow: `0 0 8px ${color}` }} />
-      {kind}
-    </span>
-  );
-}
+const COSMIC_ACCENT = '#c084fc';
+const ARGONAUT_ACCENT = '#38bdf8';
+const THEBAN_ACCENT = '#fb7185';
+const PERSEUS_ACCENT = '#eab308';
+const HERACLES_ACCENT = '#f97316';
+const THESEUS_ACCENT = '#2dd4bf';
+const TROJAN_ACCENT = '#fbbf24';
+const RETURNS_ACCENT = '#34d399';
+const METAMORPHOSES_ACCENT = '#e879f9';
 
 export default async function StoriesPage() {
   const [stories, atlas] = await Promise.all([loadStories(), loadAtlasData()]);
-  const topLevel = stories.filter((story) => story.parent === null);
-  const childrenOf = (id: string): Story[] => stories.filter((story) => story.parent === id);
+  const {
+    cosmicRoots,
+    argonautRoots,
+    thebanRoots,
+    perseusRoots,
+    heraclesRoots,
+    theseusRoots,
+    trojanRoots,
+    returnsRoots,
+    metamorphRoots,
+    heroicRoots,
+  } = partitionStoryShelves(stories);
+  const getChildren = (id: string) => childrenOf(stories, id);
 
   return (
     <main className="min-h-screen w-full pb-24">
@@ -60,47 +59,231 @@ export default async function StoriesPage() {
           </p>
         </header>
 
-        <div className="mt-10 flex flex-col gap-5">
-          {topLevel.map((story) => {
-            const subStories = childrenOf(story.id);
-            return (
-              <GlassPanel key={story.id} className="bg-glass-heavy px-6 py-5 transition-colors hover:border-nebula-soft/40">
-                <Link href={`/story/${story.id}`} className="block">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <KindBadge kind={story.kind} />
-                    <h2 className="font-display text-2xl tracking-[0.1em] text-aether">
-                      {story.title}
-                    </h2>
-                    {story.greekTitle && (
-                      <span className="font-body text-base italic text-aether-muted">
-                        {story.greekTitle}
-                      </span>
-                    )}
-                  </div>
-                  <p className="mt-2.5 font-body text-[16px] leading-relaxed text-aether/90">
-                    {story.summary.text}
-                  </p>
-                </Link>
-                {subStories.length > 0 && (
-                  <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-glass-border pt-3">
-                    <span className="font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint">
-                      Episodes
-                    </span>
-                    {subStories.map((sub) => (
-                      <Link
-                        key={sub.id}
-                        href={`/story/${sub.id}`}
-                        className="rounded-full border border-glass-border bg-glass px-3 py-1 font-body text-[14px] text-aether/85 transition-colors hover:border-nebula-soft/50 hover:text-aether"
-                      >
-                        {sub.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </GlassPanel>
-            );
-          })}
-        </div>
+        <section className="mt-12">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-nebula-soft">
+              The cosmic cycle
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Succession of the gods, the wars for heaven, stolen fire, and the floods that remade mankind — era
+              zero to the age of Hellen.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {cosmicRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={COSMIC_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Argonautica
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              The first voyage of a named ship — from Pelias&apos; oracle at Iolcus to the witchcraft of Colchis
+              and the cauldron that boiled a king.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {argonautRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={ARGONAUT_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Theban cycle
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Cadmus and the dragon&apos;s teeth, Oedipus and the Sphinx, the Seven at the gates, Antigone&apos;s
+              defiance, and the Epigoni who returned.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {thebanRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={THEBAN_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Perseus cycle
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Danae in the bronze chamber, the chest on Seriphos, the Gorgon&apos;s head, Andromeda on the rock,
+              and the discus that founded Mycenae.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {perseusRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={PERSEUS_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The labours of Heracles
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Serpents in the cradle at Thebes, service at Tiryns, and the twelve tasks that drove Alcides to Nemea,
+              Lerna, the edge of the world, and the hound of Hades.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {heraclesRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={HERACLES_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Attic cycle of Theseus
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Sword and sandals at Troezen, brigands on the Isthmus road, the Minotaur in the labyrinth, the
+              synoecism of Attica, and Phaedra&apos;s fatal lie.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {theseusRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={THESEUS_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Trojan cycle
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              The house of Priam, the judgment on Ida, the muster at Aulis, ten years at Ilion, the wooden horse,
+              and the bitter Nostoi.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {trojanRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={TROJAN_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Returns
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+            Ten years after Troy, Odysseus is still at sea — Cyclops and Circe, Scylla and the cattle of
+            the Sun, until the beggar in his own hall bends the bow. Nested episodes carry Telemachus&apos; voyage,
+            every wandering, and the suitors&apos; slaughter.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {returnsRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={RETURNS_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="text-center">
+            <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-muted">
+              The Metamorphoses
+            </h2>
+            <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-muted">
+              Ovid&apos;s song of changed forms — laurel and spider, stone and star — where desire and pride fix
+              mortals and gods alike in shapes that cannot be undone.
+            </p>
+          </div>
+          <div className="mt-6 flex flex-col gap-5">
+            {metamorphRoots.map((story) => (
+              <StoryShelfCard
+                key={story.id}
+                story={story}
+                getChildren={getChildren}
+                nestedEpisodes
+                accent={METAMORPHOSES_ACCENT}
+              />
+            ))}
+          </div>
+        </section>
+
+        {heroicRoots.length > 0 && (
+          <section className="mt-14">
+            <div className="text-center">
+              <h2 className="font-display text-[12px] uppercase tracking-[0.34em] text-aether-faint">
+                Heroic ages
+              </h2>
+              <p className="mx-auto mt-2 max-w-lg font-body text-[15px] italic text-aether-faint">
+                Other tales of the age when mortals walked with kings and gods still quarrelled in the open.
+              </p>
+            </div>
+            <div className="mt-6 flex flex-col gap-5">
+              {heroicRoots.map((story) => (
+                <StoryShelfCard key={story.id} story={story} getChildren={getChildren} />
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center">
           <span
@@ -108,19 +291,13 @@ export default async function StoriesPage() {
             className="block h-px w-28 bg-gradient-to-r from-transparent via-nebula-soft/50 to-transparent"
           />
           <p className="mt-7 font-display text-[11px] uppercase tracking-[0.34em] text-aether-faint">
-            The song is not yet done
+            The song continues
           </p>
           <p className="mt-5 font-body text-xl italic leading-relaxed text-aether-muted">
-            Sing on, Muse — the scroll is far from full.
+            Nine shelves stand on the wall — cosmos, voyage, Thebes, Perseus, Heracles, Theseus, Troy, the long
+            homecoming, and Ovid&apos;s catalogue of change.
             <br />
-            Beyond these kindled tales the dark still teems:
-            <br />
-            wars unwaged in ink, wanderings yet at sea,
-            <br />
-            and houses whose last verse no singer has shaped.
-          </p>
-          <p className="mt-5 font-body text-[15px] italic text-aether-faint">
-            More myths will rise here, as the sky fills star by star.
+            More episodes will nest beneath them as the sky fills star by star.
           </p>
         </div>
       </div>

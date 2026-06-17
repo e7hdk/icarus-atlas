@@ -1,0 +1,35 @@
+{
+  "id": "periclymenus-zacynthus",
+  "name": "Periclymenus",
+  "greekName": "Periklumenos (Περικλύμενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — wholly distinct from Periclymenus son of Neleus, the shape-shifting prince of Pylos slain when Heracles sacked the city.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Bibliotheca 1.9.9; Odyssey 11.281–287"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Periclymenus among the wooers who came from Zacynthus, listed after Alcarops and before Antenor in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

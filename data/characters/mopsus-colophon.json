@@ -1,0 +1,32 @@
+{
+  "id": "mopsus-colophon",
+  "name": "Mopsus",
+  "greekName": "Mopsos (Μόψος)",
+  "type": "hero",
+  "domains": [
+    "augury",
+    "Colophon",
+    "the defeat of Calchas"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Colophonian seer who outprophesied Calchas at the wild fig and the pregnant sow — son of Apollo and Manto in Apollodorus, or of Rhacius and Manto in Pausanias' colonization tale; not to be confused with Mopsus son of Ampycus, the Argonaut who died in Libya.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Epitome 6.3–6.4, 6.19; Description of Greece 7.3.12; Fabulae 128"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Calchas and his companions came overland from Troy, Apollodorus says they were lodged by Mopsus, a son of Apollo and Manto daughter of Tiresias. He wrangled with Calchas about divination: at a wild fig-tree he counted ten thousand figs, a bushel, and one over; at a pregnant sow he named nine male piglets farrowing tomorrow at the sixth hour when Calchas said eight — and when Mopsus was proved right, Calchas died of grief.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.3–6.4"
+    },
+    {
+      "text": "Pausanias tells the foundation of his country differently: Manto, sent to Delphi after Thebes fell, crossed to Asia and married Rhacius; their son Mopsus drove the Carians from the land. Apollodorus separately records that an Amphilochus son of Alcmaeon, arriving late at Troy, was driven to Mopsus' country and, according to some, fought him in single combat for the kingdom until both fell.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.19; Description of Greece 7.3.12",
+      "topic": "amphilochus-parentage"
+    }
+  ]
+}

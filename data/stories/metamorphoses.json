@@ -1,0 +1,46 @@
+{
+  "id": "metamorphoses",
+  "title": "The Metamorphoses",
+  "greekTitle": "Μεταμορφώσεις",
+  "kind": "saga",
+  "parent": null,
+  "era": 4,
+  "summary": {
+    "text": "Ovid's fifteen-book song of changed forms — from Chaos and the ages of man through divine loves, mortal pride, and the punishments of heaven, until Caesar rises among the stars: a Roman tapestry woven from Greek myth, where nothing keeps its shape for long.",
+    "sources": ["ovid"],
+    "citation": "Ov. Met. 1–15"
+  },
+  "chapters": [
+    {
+      "title": "The song of change",
+      "text": "The poet opens with a promise to tell of bodies changed to new forms from the beginning of the world to his own day — and asks the gods to breathe upon his undertaking, for they themselves wrought the changes he must sing.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 1.1–4"
+    },
+    {
+      "title": "Gods and mortals alike",
+      "text": "Through flood and famine, through rape and revenge, through contest and hubris, Ovid returns again and again to the same device: the body altered — laurel, spider, stone, bird, star — so that desire, pride, or pity may be fixed forever in a new shape.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 1–6 (representative)"
+    },
+    {
+      "title": "The Roman frame",
+      "text": "The catalogue is not merely Greek antiquity retold: the poem closes with Julius Caesar's apotheosis and Augustus' reign, so that metamorphosis becomes the lens through which Rome too reads its own succession of power.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 15.745–871"
+    }
+  ],
+  "cast": [
+    { "id": "apollo", "name": "Apollo", "role": "God whose loves often end in changed forms" },
+    { "id": "athena", "name": "Athena", "role": "Patron of craft who punishes mortal pride" },
+    { "id": "eros", "name": "Eros", "role": "The archer who sets divine desire in motion" }
+  ],
+  "places": [
+    { "name": "Thessaly", "role": "Land of Tempe and the river Peneus" },
+    { "id": "sardis", "name": "Sardis", "role": "Capital of Lydia, near Arachne's fame" },
+    { "name": "Colophon", "role": "Ionian city where Arachne's father dyed wool" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1–15" }
+  ]
+}

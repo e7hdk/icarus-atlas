@@ -1,0 +1,28 @@
+{
+  "id": "onetor-trojan",
+  "name": "Onetor",
+  "greekName": "Onētōr (Ὀνήτωρ)",
+  "type": "hero",
+  "domains": ["father of Laogonus", "priest of Idaean Zeus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Laogonus, priest of Idaean Zeus at Troy, whose bold son Meriones smote beneath the jaw in the press before the wall — distinct from Onetor father of Phrontis, Menelaus' helmsman in the *Odyssey*.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.570–615"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then Meriones slew a warrior of the Trojans, in full armour, Laogonus, the bold son of Onetor, one that was priest of Idaean Zeus, and was honoured of the folk even as a god: him he smote beneath the jaw under the ear, and forthwith his spirit departed from his limbs.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.570–615"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

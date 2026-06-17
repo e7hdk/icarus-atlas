@@ -1,0 +1,83 @@
+{
+  "id": "omphale-and-troy",
+  "title": "Omphale and Troy",
+  "greekTitle": "Ὀμφάλη καὶ Τροία",
+  "kind": "episode",
+  "parent": "heracles-cycle",
+  "era": 6.55,
+  "summary": {
+    "text": "When Laomedon cheated him of the divine mares promised for saving Hesione, Heracles took Ilion with six ships and left Podarces to become Priam; later, mad with disease after killing Iphitus, he was sold to Omphale in Lydia and fought the Giants at Phlegra while the Argo sailed — or so the poets disagree on the season.",
+    "sources": ["homer", "apollodorus", "hyginus", "ovid"],
+    "citation": "Hom. Il. 5.640–651, 2.653–670; Apollod. 2.5.9, 2.6.2–4, 2.7.1; Hyg. Fab. 32, 89; Ov. Met. 11.194–217"
+  },
+  "chapters": [
+    {
+      "title": "The mares of Ganymede",
+      "text": "Laomedon had already defrauded Apollo and Poseidon of their wage for walling Troy when a sea monster came against the city and his daughter Hesione was chained to the rocks. Heracles killed the beast on promise of the mares Zeus had given Tros for Ganymede — and the king withheld those too. The hero sailed away vowing war, though Homer already knew the story as an old grievance when Tlepolemus, Heracles' son, led Rhodes against Troy in the second age of the city.",
+      "sources": ["homer", "apollodorus", "ovid"],
+      "citation": "Hom. Il. 5.640–651; Apollod. 2.5.9; Ov. Met. 11.194–210"
+    },
+    {
+      "title": "Six ships at Ilion",
+      "text": "Heracles returned with Telamon and a handful of ships — six in Homer, eighteen of fifty oars in Apollodorus — and took the city. Telamon was first through the breach; the hero shot down Laomedon and his sons. Hesione, given as a prize to Telamon, ransomed her brother Podarces with the veil from her head, and from that purchase he was called Priam. Hyginus sets the rescue on the Argonaut voyage to Colchis, but every telling agrees: twice-perjured Troy fell once before Agamemnon's host.",
+      "sources": ["homer", "apollodorus", "hyginus", "ovid"],
+      "citation": "Hom. Il. 5.640–651; Apollod. 2.6.4; Hyg. Fab. 89; Ov. Met. 11.211–217"
+    },
+    {
+      "title": "The death of Iphitus",
+      "text": "After the labours, Heracles went to Oechalia, where Eurytus had taught him to shoot. When Eurytus' son Iphitus came to Tiryns seeking stolen mares, the hero — gone mad again — hurled him from the walls. A wasting disease followed the murder; at Delphi the oracle declared that he must be sold into servitude for three years and pay Eurytus blood-money for the slaying. Eurytus refused the compensation, but the sentence stood.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.6.2; Hyg. Fab. 32"
+    },
+    {
+      "title": "Sold to Omphale",
+      "text": "Hermes conducted the sale, and Omphale, daughter of Iardanes and queen of Lydia after her husband Tmolus, bought Heracles. He served her as a slave — in some tales exchanging his lion-skin for her distaff and doing women's work while she wore his club and skin. Apollodorus gives the oracle's term as three years; the common telling trims it to one, but the penance was the same: the mightiest hero humbled for a mortal queen's household.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.6.2–3; Hyg. Fab. 32"
+    },
+    {
+      "title": "Ephesus and the Cercopes",
+      "text": "The bondage did not idle him. At Ephesus he seized and bound the mischievous Cercopes, who steal from travellers; in Aulis he killed Syleus, who forced strangers to dig his vineyard, and burned the vines up by the roots together with the man's daughter Xenodoce. Omphale bore him a son, Agelaus, from whom the Lydian house of Croesus traced its line — and Pausanias remembers a Lydian Hyllus, named for the river, distinct from the Heraclid leader born later to Deianira.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.6.3, 2.7.8; Paus. 1.35.8"
+    },
+    {
+      "title": "While the Argo sailed",
+      "text": "Apollodorus records that Heracles sailed with the Argonauts — yet on Herodorus' authority he did not: at the very hour Jason's crew put out from Iolcus, the hero was already a slave at Omphale's court in Sardis. Others say the Argo herself declared she could not bear his weight, or that he was left behind at Aphetae searching for Hylas. The chronology of the great voyage and the Lydian servitude cannot be reconciled without choosing a lens.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Apollod. 1.9.19; Arg. 1.120–135; Hyg. Fab. 14"
+    },
+    {
+      "title": "At Phlegra with the gods",
+      "text": "When the earth-born Giants rose against heaven, Heracles fought beside the gods at Phlegra — the ally without whom, Apollodorus says, the immortals could not have won: only a mortal hand could slay those whom the divine could merely wound. Zeus called him from his labours and his bondage alike; the wide wars between the twelve tasks and the marriage at Calydon belong to the hero who was never only Eurystheus' servant.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.6.1–2; Il. 5.640–651"
+    }
+  ],
+  "cast": [
+    { "id": "heracles", "name": "Heracles", "role": "Sacker of Troy and Omphale's slave" },
+    { "id": "laomedon", "name": "Laomedon", "role": "The king who cheated him twice" },
+    { "id": "hesione", "name": "Hesione", "role": "The princess on the rocks" },
+    { "id": "telamon", "name": "Telamon", "role": "First through the wall" },
+    { "id": "priam", "name": "Priam", "role": "Podarces, ransomed and renamed" },
+    { "id": "omphale", "name": "Omphale", "role": "Queen of Lydia who bought him" },
+    { "id": "iphitus-eurytus", "name": "Iphitus", "role": "The son he hurled from Tiryns" },
+    { "id": "eurytus-oechalia", "name": "Eurytus", "role": "The archer-king who refused blood-money" },
+    { "id": "hermes", "name": "Hermes", "role": "He who sold the hero" },
+    { "id": "tlepolemus", "name": "Tlepolemus", "role": "His son who would lead Rhodes to the second Troy" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Twice-perjured Ilion, first sacked" },
+    { "id": "sardis", "name": "Sardis", "role": "Capital of Lydia and Omphale's court" },
+    { "id": "ephesus", "name": "Ephesus", "role": "Where the Cercopes were bound" },
+    { "id": "tiryns", "name": "Tiryns", "role": "Where Iphitus was killed" },
+    { "name": "Phlegra", "role": "Plain where he fought beside the gods" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "2.653–670, 5.640–651" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.6.1–2, 1.9.19, 2.5.9, 2.6.2–4" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "14, 32, 89" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "11.194–217" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.35.8" }
+  ]
+}

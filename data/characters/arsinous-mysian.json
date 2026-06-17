@@ -1,0 +1,27 @@
+{
+  "id": "arsinous-mysian",
+  "name": "Arsinous",
+  "greekName": "Arsinous (Ἀρσίνοος)",
+  "type": "hero",
+  "domains": ["father of Chromis and Ennomus", "Mysian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of the Mysian captains Chromis (`chromis-mysian`) and Ennomus (`ennomus-mysian`) — attested by Apollodorus in the catalogue of Trojan allies, while Homer names the sons but not their sire.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Chromis and Ennomus, the augur who could not ward off black fate, at the head of the Mysian ships — but the poet does not name their father in the muster.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "text": "Apollodorus makes Chromius and Ennomus sons of Arsinous among the allies from Mysia. He must be kept distinct from the Arsinous whom Homer names as father of fair-tressed Hecamede, Nestor's cupbearer from Tenedos (*Il.* 11.620–650).",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.35; Iliad 11.620–650"
+    }
+  ]
+}

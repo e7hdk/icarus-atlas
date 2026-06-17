@@ -1,0 +1,45 @@
+{
+  "id": "pheres-corinth",
+  "name": "Pheres",
+  "greekName": "Phērēs (Φέρης)",
+  "romanName": "Pheres",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Jason and Medea",
+    "the Corinthian tomb",
+    "victim of the poisoned gifts"
+  ],
+  "summary": [
+    {
+      "text": "Son of Jason and Medea at Corinth, buried beside his brother Mermerus above the Well of Glauce in Pausanias' account — stoned by the Corinthians for Medea's gifts to Glauce, while Apollodorus also records that some say Medea herself slew the children when she fled.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.28; Description of Greece 2.3.6–7"
+    },
+    {
+      "text": "Not to be confused with Pheres son of Cretheus, the Aeolid founder of Pherae in Thessaly and father of Admetus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.258–259; Bibliotheca 1.9.11"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names no individual sons at Corinth but preserves the double tradition of their end: Medea may have killed the children herself when she fled after sending the poisoned robe to Glauce, or she may have left them as infant suppliants on Hera's altar for the Corinthians to remove and slay.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28",
+      "topic": "medea-children-corinth"
+    },
+    {
+      "text": "Pausanias records Pheres together with Mermerus at the tomb near the Well of Glauce, stoned by the Corinthians because of Medea's bridal gifts; of Pheres alone he adds that nothing further is recorded.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.6, 2.3.9",
+      "topic": "medea-children-corinth"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

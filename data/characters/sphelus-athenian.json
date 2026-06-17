@@ -1,0 +1,22 @@
+{
+  "id": "sphelus-athenian",
+  "name": "Sphelus",
+  "greekName": "Sphelos (Σφῆλος)",
+  "type": "hero",
+  "domains": ["father of Iasus", "Athenian house", "son of Bucolus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Iasus (`iasus-athenian`), captain of the Athenians slain by Aeneas — attested by Homer as son of Bucolus when the battle turned grim about the hollow ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Apollo roused the Trojans and Hector pressed the Argives back, Aeneas slew Iasus, a captain of the Athenians who was called the son of Sphelus, son of Bucolus.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ]
+}

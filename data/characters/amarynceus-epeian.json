@@ -1,0 +1,27 @@
+{
+  "id": "amarynceus-epeian",
+  "name": "Amarynceus",
+  "greekName": "Amarynkeus (Ἀμαρυγκεύς)",
+  "type": "hero",
+  "domains": ["father of Diores", "lord of Elis", "Buprasium"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Lord Amarynceus of Elis, father of mighty Diores (`diores-epeian`) — captain of ten Epeian ships in the Catalogue — whose funeral games at Buprasium Nestor remembers when he boasts of his youth.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650, 23.625–660; Description of Greece 5.1.10–11, 5.3.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Amarynceus only through his son: Diores led a third company of the Epeian host when the forty ships of Elis sailed to Troy. Later, when the games for Patroclus were done, Nestor recalled the day the Epeians buried lord Amarynceus at Buprasium and no man in Elis, Pylos, or Aetolia could match him in boxing.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.615–650, 23.625–660"
+    },
+    {
+      "text": "Pausanias says Amarynceus came of Thessalian stock through his father Pyttius, that Augeas gave him a share in the government of Elis, and that neither Amarynceus nor his son Diores remained obscure men — Homer, he notes, puts ten ships under Diores and ten under Polyxenus while Amphimachus and Thalpius share the rest.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.10–11, 5.3.4"
+    }
+  ]
+}

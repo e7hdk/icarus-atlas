@@ -1,0 +1,50 @@
+{
+  "id": "theras",
+  "name": "Theras",
+  "greekName": "Thēras (Θήρας)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Spartan colonist",
+    "eponym of Thera"
+  ],
+  "summary": [
+    {
+      "text": "Son of Autesion (`autesion-theban`), guardian of the Spartan twins Eurysthenes and Procles, who led the Minyan settlers to Calliste and renamed the island Thera after himself.",
+      "sources": ["pausanias", "apollonius"],
+      "citation": "Paus. 3.1.7–8, 3.15.6; Arg. 4.1755"
+    },
+    {
+      "text": "Not to be confused with other bearers of the name in Greek myth; his father Autesion is the Theban king driven out by the Labdacid Furies in Pausanias' Boeotian king-list.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.5.15"
+    }
+  ],
+  "story": [
+    {
+      "text": "Though Eurysthenes and Procles were bitter enemies, the twins together helped Theras, their mother's brother and guardian, dispatch a colony to the island then called Calliste, where descendants of Membliarus already dwelt.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.1.7–8"
+    },
+    {
+      "text": "Pausanias records that Theras son of Autesion son of Tisamenus dedicated a sanctuary of Athena on the Spartan Course when he led the colony; in ancient times the island was Calliste, but men afterward called it Thera after him.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.15.6"
+    },
+    {
+      "text": "Apollonius, telling how Calliste had first sprung from the clod Euphemus cast into the sea, adds that this later colonization by Theras befell after the days of the Argonaut.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.1755"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thera",
+      "sources": ["pausanias", "apollonius"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["pausanias"]
+    }
+  ]
+}

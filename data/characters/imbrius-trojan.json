@@ -1,0 +1,28 @@
+{
+  "id": "imbrius-trojan",
+  "name": "Imbrius",
+  "greekName": "Imbrios (Ἴμβριος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son-in-law of Priam"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Mentor, rich in horses, who dwelt in Pedaeum and wedded Medesicaste, a daughter of Priam born out of wedlock — whom peerless Teucer smote first when the battle cried unquenchable arose.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "Before the sons of the Achaeans came, Imbrius dwelt in Pedaeum and had to wife Medesicaste daughter of Priam; but when the curved ships came he returned to Troy and fought among the Trojans. Teucer son of Telamon was first to slay his man, even the spearman Imbrius, and the twain Aiantes bare his body away with furious valour.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

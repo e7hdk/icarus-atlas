@@ -1,0 +1,54 @@
+{
+  "city": "mycenae",
+  "reigns": [
+    {
+      "ruler": "Perseus",
+      "characterId": "perseus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3",
+      "note": "Having accidentally killed his grandfather Acrisius, he exchanged kingdoms with Megapenthes — taking Tiryns and founding walled Mycenae with the Cyclopes."
+    },
+    {
+      "ruler": "Sthenelus",
+      "characterId": "sthenelus-perseid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.5, 2.5.1; Paus. 2.16.3",
+      "note": "Son of Perseus; succeeded at Mycenae and Tiryns after his father went down to Megara."
+    },
+    {
+      "ruler": "Eurystheus",
+      "characterId": "eurystheus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Hom. Il. 19.98-133; Apollod. 2.5.1, 2.8.1; Paus. 1.44.10",
+      "note": "Son of Sthenelus and Nicippe; Hera's chosen lord of Mycenae, who set Heracles his labours and later perished when the Heraclids invaded the Peloponnese."
+    },
+    {
+      "ruler": "Atreus",
+      "characterId": "atreus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 2.11-2.13; Hyg. Fab. 86",
+      "note": "Son of Pelops; after Eurystheus' line failed he recovered the kingdom from his brother Thyestes and began the curse on the house."
+    },
+    {
+      "ruler": "Agamemnon",
+      "characterId": "agamemnon",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 2.104-108; Apollod. Epit. 2.15; Hyg. Fab. 97",
+      "note": "Son of Atreus, lord of many-islanded Mycenae — the sceptre Hephaestus made for Pelops passed to him, and from his citadel the Achaeans sailed against Troy."
+    },
+    {
+      "ruler": "Aegisthus",
+      "characterId": "aegisthus",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 3.303-305, 4.524-537; Apollod. Epit. 6.23-6.25; Hyg. Fab. 117",
+      "note": "Son of Thyestes; while Agamemnon was at Troy he seduced Clytemnestra and, on the king's return, murdered him — ruling Mycenae for seven years until Orestes came home."
+    },
+    {
+      "ruler": "Orestes",
+      "characterId": "orestes",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 1.298-302, 3.306-310; Apollod. Epit. 6.25-6.28; Hyg. Fab. 122",
+      "note": "Son of Agamemnon; avenged his father by killing Aegisthus and Clytemnestra, then was purified and restored to his father's throne."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "theobula-boeotian",
+  "name": "Theobula",
+  "greekName": "Theoboulē (Θεοβούλη)",
+  "type": "hero",
+  "domains": ["mother of Arcesilaus and Prothoënor", "Boeotian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wife of Areilycus (`areilycus-achaean`) and mother of Arcesilaus and Prothoënor in Hyginus' catalogue of the Boeotian captains — Homer names only Areilycus as father of Prothoënor at his death.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus counts Arcesilaus son of Areilycus and Theobula among the Boeotian captains with ten ships, and Prothoënor his brother from Thespia with eight.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["hyginus"]
+    }
+  ]
+}

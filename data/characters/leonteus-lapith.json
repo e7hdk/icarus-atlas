@@ -1,0 +1,27 @@
+{
+  "id": "leonteus-lapith",
+  "name": "Leonteus",
+  "greekName": "Leonteus (Λεοντεύς)",
+  "type": "hero",
+  "domains": ["Lapith command", "scion of Ares", "the forty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Coronus, scion of Ares, high of heart — co-captain with Polypoetes of the Lapiths from Argissa and Gyrtone who followed forty black ships to Troy and smote Hippomachus and Antiphates in the assault on the wall.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.735–775, 12.155–190; Fabulae 81"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Leonteus beside Polypoetes son of Peirithous: on the day Peirithous got vengeance on the shaggy centaurs and thrust them from Pelium, Leonteus the son of Caenus' son Coronus stood with him, and forty black ships followed the twain from Argissa, Gyrtone, Orthe, Elone, and white Oloösson.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "text": "When the Trojans stormed the Achaean wall, Leonteus smote Hippomachus son of Antimachus with his spear upon the girdle, then drew his sharp sword and smote Antiphates first in close fight, and thereafter Pylon and Ormenus.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.155–190"
+    }
+  ]
+}

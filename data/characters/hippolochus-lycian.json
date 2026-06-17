@@ -1,0 +1,27 @@
+{
+  "id": "hippolochus-lycian",
+  "name": "Hippolochus",
+  "greekName": "Hippolochos (Ἱππόλοχος)",
+  "type": "hero",
+  "domains": ["father of Glaucus", "Bellerophon's son", "Lycian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Bellerophon and father of Glaucus (`glaucus-lycian`), captain of the Lycians beside Sarpedon — distinct from Hippolochus son of Antimachus (`hippolochus-antimachid`), whom Agamemnon slew in *Iliad* 11.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.119–236, 7.13–16, 12.387–397"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hippolochus sent his son to Troy, he charged him always to be bravest and leave a good report of the race of his fathers, that he might not shame his lineage — men of Ephyra and Lycia who traced their line through Bellerophon.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.195–236"
+    },
+    {
+      "text": "Homer sets Glaucus, son of Hippolochus, among the Lycian leaders who smote Iphinous in the fierce conflict and followed Sarpedon when the allies stormed the wall.",
+      "sources": ["homer"],
+      "citation": "Iliad 7.13–16, 12.387–397"
+    }
+  ]
+}

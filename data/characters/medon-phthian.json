@@ -1,0 +1,27 @@
+{
+  "id": "medon-phthian",
+  "name": "Medon",
+  "greekName": "Medon (Μέδων)",
+  "type": "hero",
+  "domains": ["bastard son of Oileus", "Phthian captain", "marshal of the host"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Bastard son of godlike Oileus and brother of Ajax, who marshalled the host when Philoctetes was away and fought in the forefront of the Phthians until Aeneas slew him — a namesake of Medon the Ithacan herald and of the Dulichian suitor.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 13.675–720, 15.315–340"
+    }
+  ],
+  "story": [
+    {
+      "text": "Though the Argives beside their ships longed for king Philoctetes, they were not leaderless: Medon marshalled them, the bastard son of Oileus whom Rhene bare to the sacker of cities. He had dwelt in Phylace far from his native land, for he slew a kinsman of his stepmother Eriopis.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "In the battle at the ships Medon and Podarces led the Phthians in the forefront; Aeneas slew Medon and Iasus the Athenian captain as the fight raged about the fallen.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720, 15.315–340"
+    }
+  ]
+}

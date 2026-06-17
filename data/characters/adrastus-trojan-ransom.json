@@ -1,0 +1,28 @@
+{
+  "id": "adrastus-trojan-ransom",
+  "name": "Adrastus",
+  "greekName": "Adrastos (Ἄδραστος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Menelaus' captive"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Menelaus took alive when he rolled from his chariot and begged for ransom, until Agamemnon overruled the king and slew him with the spear — distinct from the Argive king (`adrastus`), from Adrastus son of Merops (`adrastus-meropsid`), and from Patroclus' victim (`adrastus-trojan`).",
+      "sources": ["homer"],
+      "citation": "Iliad 6.45–65"
+    }
+  ],
+  "story": [
+    {
+      "text": "Adrastus seized the knees of Atreus' son Menelaus and besought him: save me, and accept worthy ransom; much treasure lies in my wealthy father's halls. Menelaus was minded to spare him, but Agamemnon came running and cried: dear Menelaus, why care thus for men? Let none escape our hands, nor any mother bear a son to flee — let all perish from Ilios unwept and forgotten. So he spoke, and persuaded his brother's heart. Adrastus sprang up to flee, but Agamemnon smote him in the back with his spear, and he fell face foremost.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.45–65"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

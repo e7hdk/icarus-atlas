@@ -1,0 +1,19 @@
+{
+  "city": "lesbos",
+  "reigns": [
+    {
+      "ruler": "Macar",
+      "characterId": "macar-lesbos",
+      "sources": ["homer"],
+      "citation": "Il. 24.543–546",
+      "note": "The lord after whom Homer calls Lesbos 'the seat of Macar' when Priam speaks of the old wealth of the Troad."
+    },
+    {
+      "ruler": "Penthilus",
+      "characterId": "penthilus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.6, 3.2.1",
+      "note": "Bastard son of Orestes who, when the Heracleidae invaded the Peloponnese, gathered Achaeans and seized Lesbos, laying the foundation of the Aeolian migration to Asia Minor."
+    }
+  ]
+}

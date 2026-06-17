@@ -57,5 +57,20 @@
       ],
       "citation": "Bibliotheca 2.2.2; Description of Greece 2.18.4"
     }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    },
+    {
+      "city": "pylos",
+      "sources": [
+        "apollodorus"
+      ]
+    }
   ]
 }

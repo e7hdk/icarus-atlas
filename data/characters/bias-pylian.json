@@ -1,0 +1,28 @@
+{
+  "id": "bias-pylian",
+  "name": "Bias",
+  "greekName": "Bias (Βίας)",
+  "type": "hero",
+  "domains": ["Pylian warrior", "shepherd of the host"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Bias shepherd of the host, whom Nestor arrayed with mighty Pelagon, Alastor, Chromius, and lord Haemon when Poseidon roused the Achaeans — distinct from Bias son of Amythaon and from the Dulichian suitor.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor the clear-voiced orator drew up his Pylians around mighty Pelagon and Alastor and Chromius and lord Haemon and Bias, shepherd of the host — the charioteers first with horses and cars, then footmen many and valiant to be a bulwark of battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

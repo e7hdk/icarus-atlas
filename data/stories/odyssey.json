@@ -1,0 +1,1045 @@
+{
+  "id": "odyssey",
+  "title": "The Odyssey",
+  "greekTitle": "Ὀδύσσεια",
+  "kind": "saga",
+  "parent": null,
+  "era": 9,
+  "summary": {
+    "text": "Ten years after Troy, Odysseus is still far from rocky Ithaca — detained by Calypso, wrecked by Poseidon, beguiled by Circe, and tested in the house of Hades — while on his island a crowd of suitors devours his substance and plots against his son. The poem that bears his name is the return of the man of many wiles: disguise, endurance, the bow, and at last reunion with Penelope.",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Hom. Od.; Apollod. Epit. 7; Hyg. Fab. 125"
+  },
+  "chapters": [
+    {
+      "title": "Two journeys, one house",
+      "text": "Homer's poem runs on two threads: Telemachus grows from boy to man while suitors devour Ithaca, and Odysseus — detained on Calypso, then carried to Scheria — tells the Phaeacians the tale of ten years' wandering before he reaches home in beggar's rags. The nested episodes follow the son's voyage to Pylos and Sparta, the father's road from Troy to Ogygia, and the final reckoning in the hall.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Hom. Od. 1–4, 5–8, 13–24"
+    },
+    {
+      "title": "The wanderings",
+      "text": "After Troy came Lotus and Polyphemus, Aeolus' winds and Circe's swine, the descent to Hades, the Sirens and Scylla, the cattle of the Sun and shipwreck — each arc lives in its nested episode from the Cyclops to the strait. Calypso and the Phaeacians close the sea-road; the beggar king, the bow, and Penelope's test close the house.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Hom. Od. 9–12, 5–8; Apollod. Epit. 7.4–7.24"
+    },
+    {
+      "title": "Endings opposed",
+      "text": "Homer reunites Odysseus and Penelope and stays the feud of the suitors' kin. The Epic Cycle knew other closures — exile in Aetolia, Thesprotian kingship, slanders against the queen, and Telegonus' sting-ray spear in the nested Telegony — wired as dispute topics where the sources flatly contradict the poem.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 23–24; Apollod. Epit. 7.34–7.40; Hyg. Fab. 127"
+    }
+  ],
+  "cast": [
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "The man of many wiles, king of Ithaca"
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "The waiting queen"
+    },
+    {
+      "id": "telemachus",
+      "name": "Telemachus",
+      "role": "The son who comes of age"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Patron of the homecoming"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "The sea-god's stubborn wrath"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "Enchantress of Aeaea"
+    },
+    {
+      "id": "calypso",
+      "name": "Calypso",
+      "role": "Detainer on Ogygia"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Zeus' messenger to Ogygia"
+    },
+    {
+      "id": "nausicaa",
+      "name": "Nausicaa",
+      "role": "Princess who found him on the shore"
+    },
+    {
+      "id": "alcinous-phaeacian",
+      "name": "Alcinous",
+      "role": "King who sent him home"
+    },
+    {
+      "id": "arete-phaeacian",
+      "name": "Arete",
+      "role": "Queen whose knees he clasped"
+    },
+    {
+      "id": "laodamas-phaeacian",
+      "name": "Laodamas",
+      "role": "Alcinous' best beloved son, champion at the games for the guest"
+    },
+    {
+      "id": "halius-phaeacian",
+      "name": "Halius",
+      "role": "Alcinous' son who danced with Laodamas, not halius-zacynthus the suitor"
+    },
+    {
+      "id": "clytoneus-phaeacian",
+      "name": "Clytoneus",
+      "role": "Godlike runner who far outstripped the Phaeacians at the foot-race"
+    },
+    {
+      "id": "demodocus",
+      "name": "Demodocus",
+      "role": "Blind bard of Troy"
+    },
+    {
+      "id": "nausithous-phaeacian",
+      "name": "Nausithous",
+      "role": "Godlike founder of Scheria, son of Poseidon and father of Alcinous"
+    },
+    {
+      "id": "rhexenor-phaeacian",
+      "name": "Rhexenor",
+      "role": "Arete's father, smitten by Apollo before he begot a son"
+    },
+    {
+      "id": "periboea-phaeacian",
+      "name": "Periboea",
+      "role": "Daughter of Eurymedon, mother of Nausithous by Poseidon"
+    },
+    {
+      "id": "polyphemus-cyclops",
+      "name": "Polyphemus",
+      "role": "The blinded Cyclops"
+    },
+    {
+      "id": "eurylochus",
+      "name": "Eurylochus",
+      "role": "Companion who urged flight from the cave"
+    },
+    {
+      "id": "elpenor",
+      "name": "Elpenor",
+      "role": "The unburied comrade"
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "The seer who foretold the homecoming"
+    },
+    {
+      "id": "anticleia",
+      "name": "Anticleia",
+      "role": "Odysseus' mother, dead of longing"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Shade who warned against treacherous wives"
+    },
+    {
+      "id": "clytemnestra",
+      "name": "Clytemnestra",
+      "role": "Named in Agamemnon's tale of the bath"
+    },
+    {
+      "id": "aegisthus",
+      "name": "Aegisthus",
+      "role": "Named as the murderer's partner"
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "role": "Died with Agamemnon"
+    },
+    {
+      "id": "electra",
+      "name": "Electra",
+      "role": "Saved Orestes"
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "role": "King of the dead who chose life on earth"
+    },
+    {
+      "id": "patroclus",
+      "name": "Patroclus",
+      "role": "Beside Achilles among the heroes"
+    },
+    {
+      "id": "antilochus-nestor",
+      "name": "Antilochus",
+      "role": "Slain hero who came with Achilles"
+    },
+    {
+      "id": "ajax-telamonian",
+      "name": "Ajax",
+      "role": "Wrathful shade who would not speak"
+    },
+    {
+      "id": "minos",
+      "name": "Minos",
+      "role": "Judge of the dead"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "Phantom in the underworld"
+    },
+    {
+      "id": "laertes",
+      "name": "Laertes",
+      "role": "Aged father in the orchard"
+    },
+    {
+      "id": "callidice-thesprotian",
+      "name": "Callidice",
+      "role": "Thesprotian queen in one continuation"
+    },
+    {
+      "id": "polypoetes-thesprotian",
+      "name": "Polypoetes",
+      "role": "Son on Callidice who inherited the Thesprotian kingdom (Apollodorus Epit. 7.35)"
+    },
+    {
+      "id": "poliporthes",
+      "name": "Poliporthes",
+      "role": "Son Penelope bore in absence"
+    },
+    {
+      "id": "neoptolemus",
+      "name": "Neoptolemus",
+      "role": "Judge in the exile variant"
+    },
+    {
+      "id": "leontophonus",
+      "name": "Leontophonus",
+      "role": "Son left in Aetolia when Odysseus died in exile (Apollodorus Epit. 7.40)"
+    },
+    {
+      "id": "antinous",
+      "name": "Antinous",
+      "role": "Chief of the suitors, first in Apollodorus' twelve from Ithaca"
+    },
+    {
+      "id": "amphinomus-dulichium",
+      "name": "Amphinomus",
+      "role": "Leader from Dulichium who warned the beggar in vain"
+    },
+    {
+      "id": "pan",
+      "name": "Pan",
+      "role": "God born at Mantinea in one variant"
+    },
+    {
+      "id": "sirens",
+      "name": "The Sirens",
+      "role": "Bird-women of the deadly song"
+    },
+    {
+      "id": "scylla-monster",
+      "name": "Scylla",
+      "role": "Cliff-monster who took six men"
+    },
+    {
+      "id": "charybdis",
+      "name": "Charybdis",
+      "role": "The whirlpool between the rocks"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "role": "Lord of the violated cattle"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "He who shattered the ship"
+    },
+    {
+      "id": "eurymachus-ithaca",
+      "name": "Eurymachus",
+      "role": "Slain in the hall"
+    },
+    {
+      "id": "amphimedon-ithaca",
+      "name": "Amphimedon",
+      "role": "He who later told the tale in Hades"
+    },
+    {
+      "id": "pronous-ithaca",
+      "name": "Pronous",
+      "role": "One of Apollodorus' twelve suitors from Ithaca itself"
+    },
+    {
+      "id": "leiodes-ithaca",
+      "name": "Leiodes",
+      "role": "Suitor soothsayer who tried the bow first; Liodes in Epitome 7.30"
+    },
+    {
+      "id": "eurynomus-ithaca",
+      "name": "Eurynomus",
+      "role": "Brother of Antiphus, among the twelve Ithacan wooers in Epitome 7.30"
+    },
+    {
+      "id": "amphimachus-ithaca",
+      "name": "Amphimachus",
+      "role": "Named both among Dulichium's fifty-seven and Ithaca's twelve"
+    },
+    {
+      "id": "amphialus-ithaca",
+      "name": "Amphialus",
+      "role": "Ithacan suitor, not the Phaeacian leaper of Scheria"
+    },
+    {
+      "id": "promachus-ithaca",
+      "name": "Promachus",
+      "role": "One of the twelve Ithacan wooers in Apollodorus' list"
+    },
+    {
+      "id": "aristratus-ithaca",
+      "name": "Aristratus",
+      "role": "One of the twelve Ithacan wooers in Apollodorus' list"
+    },
+    {
+      "id": "helenus-ithaca",
+      "name": "Helenus",
+      "role": "Ithacan suitor, namesake of Priam's seer son"
+    },
+    {
+      "id": "dulicheus-ithaca",
+      "name": "Dulicheus",
+      "role": "Ithacan wooer whose name echoes Dulichium"
+    },
+    {
+      "id": "euryalus-ithaca",
+      "name": "Euryalus",
+      "role": "Dulichian suitor in Epitome 7.27, distinct from euryalus-zacynthus and the Phaeacian boxer"
+    },
+    {
+      "id": "evenorides-ithaca",
+      "name": "Evenorides",
+      "role": "Dulichian wooer in Epitome 7.27, separate from evenorides-zacynthus"
+    },
+    {
+      "id": "agenor-ithaca",
+      "name": "Agenor",
+      "role": "Dulichian suitor in Epitome 7.27, distinct from agenor-zacynthus"
+    },
+    {
+      "id": "polybus-ithaca",
+      "name": "Polybus",
+      "role": "Wise Polybus, father of Eurymachus, in the last spear-fight"
+    },
+    {
+      "id": "eurydamas-ithaca",
+      "name": "Eurydamas",
+      "role": "Ithacan wooer who received jewelled earrings and fell in the slaughter"
+    },
+    {
+      "id": "eumaeus",
+      "name": "Eumaeus",
+      "role": "Swineherd in the fight"
+    },
+    {
+      "id": "philoetius",
+      "name": "Philoetius",
+      "role": "Cowherd in the fight"
+    },
+    {
+      "id": "melanthius-ithaca",
+      "name": "Melanthius",
+      "role": "Traitor goatherd"
+    },
+    {
+      "id": "dolius-ithaca",
+      "name": "Dolius",
+      "role": "Aged gardener, father of Melanthius and Melantho, stood with Laertes at the last"
+    },
+    {
+      "id": "melantho-ithaca",
+      "name": "Melantho",
+      "role": "Disloyal handmaid, lover of Eurymachus, hanged with the faithless maids"
+    },
+    {
+      "id": "phemius-ithaca",
+      "name": "Phemius",
+      "role": "Minstrel spared"
+    },
+    {
+      "id": "telegonus-circe",
+      "name": "Telegonus",
+      "role": "Son of Circe who unknowingly killed his father"
+    },
+    {
+      "id": "nestor",
+      "name": "Nestor",
+      "role": "Old counsellor at Pylos"
+    },
+    {
+      "id": "peisistratus-nestor",
+      "name": "Peisistratus",
+      "role": "Nestor's son, guide to Sparta"
+    },
+    {
+      "id": "menelaus",
+      "name": "Menelaus",
+      "role": "Host who bound Proteus"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "She who recognized Telemachus"
+    },
+    {
+      "id": "proteus",
+      "name": "Proteus",
+      "role": "Seer who said Odysseus lived"
+    },
+    {
+      "id": "theoclymenus",
+      "name": "Theoclymenus",
+      "role": "Fugitive seer on the voyage"
+    },
+    {
+      "id": "medon-ithaca",
+      "name": "Medon",
+      "role": "Herald who warned Penelope"
+    },
+    {
+      "id": "eurycleia",
+      "name": "Eurycleia",
+      "role": "Nurse who knew the scar"
+    },
+    {
+      "id": "irus-beggar",
+      "name": "Irus",
+      "role": "Beggar beaten in the hall"
+    },
+    {
+      "id": "aeolus-hippotas",
+      "name": "Aeolus",
+      "role": "Keeper of the winds"
+    },
+    {
+      "id": "thoas-dulichium",
+      "name": "Thoas",
+      "role": "Dulichian wooer in Epitome 7.27, distinct from the Aetolian and Lemnian kings"
+    },
+    {
+      "id": "demoptolemus-dulichium",
+      "name": "Demoptolemus",
+      "role": "Among the last suitors standing when the bow was drawn"
+    },
+    {
+      "id": "paralus-dulichium",
+      "name": "Paralus",
+      "role": "Dulichian suitor listed after Euryalus in Apollodorus' catalogue"
+    },
+    {
+      "id": "eurypylus-dulichium",
+      "name": "Eurypylus",
+      "role": "Dulichian wooer, distinct from Eurypylus king of Cos"
+    },
+    {
+      "id": "pylaemenes-dulichium",
+      "name": "Pylaemenes",
+      "role": "Dulichian suitor, namesake of the Paphlagonian ally at Troy"
+    },
+    {
+      "id": "acamas-dulichium",
+      "name": "Acamas",
+      "role": "Dulichian wooer, distinct from Theseus' son Acamas"
+    },
+    {
+      "id": "thersilochus-dulichium",
+      "name": "Thersilochus",
+      "role": "Dulichian suitor, distinct from the Astynous' son slain by Achilles"
+    },
+    {
+      "id": "hagius-dulichium",
+      "name": "Hagius",
+      "role": "Dulichian wooer listed after Thersilochus in Epitome 7.27"
+    },
+    {
+      "id": "clymenus-dulichium",
+      "name": "Clymenus",
+      "role": "Dulichian suitor also named among Same's twenty-three, distinct from Nestor's father-in-law"
+    },
+    {
+      "id": "philodemus-dulichium",
+      "name": "Philodemus",
+      "role": "Dulichian wooer listed after Clymenus in Apollodorus' catalogue"
+    },
+    {
+      "id": "meneptolemus-dulichium",
+      "name": "Meneptolemus",
+      "role": "Dulichian suitor listed before Damastor in Epitome 7.27"
+    },
+    {
+      "id": "damastor-dulichium",
+      "name": "Damastor",
+      "role": "Father of Agelaus, named among the Dulichian suitors"
+    },
+    {
+      "id": "bias-dulichium",
+      "name": "Bias",
+      "role": "Dulichian wooer listed after Damastor, distinct from the Aeolid seer's brother at Pylos"
+    },
+    {
+      "id": "telmius-dulichium",
+      "name": "Telmius",
+      "role": "Dulichian suitor listed after Bias in Apollodorus' catalogue"
+    },
+    {
+      "id": "polyidus-dulichium",
+      "name": "Polyidus",
+      "role": "Dulichian wooer, distinct from the Ephyraean seer who taught Glaucus"
+    },
+    {
+      "id": "astylochus-dulichium",
+      "name": "Astylochus",
+      "role": "Dulichian suitor listed after Polyidus in Epitome 7.27"
+    },
+    {
+      "id": "schedius-dulichium",
+      "name": "Schedius",
+      "role": "Dulichian wooer, distinct from the Phocian allies at Troy"
+    },
+    {
+      "id": "antigonus-dulichium",
+      "name": "Antigonus",
+      "role": "Dulichian suitor listed after Schedius in Epitome 7.27"
+    },
+    {
+      "id": "marpsius-dulichium",
+      "name": "Marpsius",
+      "role": "Dulichian wooer listed after Antigonus in Apollodorus' catalogue"
+    },
+    {
+      "id": "iphidamas-dulichium",
+      "name": "Iphidamas",
+      "role": "Dulichian suitor, distinct from Antenor's son slain by Agamemnon"
+    },
+    {
+      "id": "argius-dulichium",
+      "name": "Argius",
+      "role": "Dulichian wooer listed after Iphidamas in Epitome 7.27"
+    },
+    {
+      "id": "glaucus-dulichium",
+      "name": "Glaucus",
+      "role": "Dulichian suitor, distinct from Glaucus of Corinth and the Lycian ally at Troy"
+    },
+    {
+      "id": "calydoneus-dulichium",
+      "name": "Calydoneus",
+      "role": "Dulichian wooer listed after Glaucus in Epitome 7.27"
+    },
+    {
+      "id": "echion-dulichium",
+      "name": "Echion",
+      "role": "Dulichian suitor, distinct from the Sparti Echion at Thebes"
+    },
+    {
+      "id": "lamas-dulichium",
+      "name": "Lamas",
+      "role": "Dulichian wooer listed after Echion in Apollodorus' catalogue"
+    },
+    {
+      "id": "andraemon-dulichium",
+      "name": "Andraemon",
+      "role": "Dulichian suitor, distinct from Dryope's husband Andraemon"
+    },
+    {
+      "id": "agerochus-dulichium",
+      "name": "Agerochus",
+      "role": "Dulichian wooer listed after Andraemon, before Medon in Epitome 7.27"
+    },
+    {
+      "id": "medon-dulichium",
+      "name": "Medon",
+      "role": "Dulichian suitor, distinct from the herald of Odysseus' house on Ithaca"
+    },
+    {
+      "id": "agrius-dulichium",
+      "name": "Agrius",
+      "role": "Dulichian wooer listed after Medon, distinct from the Calydonian usurper"
+    },
+    {
+      "id": "promus-dulichium",
+      "name": "Promus",
+      "role": "Dulichian suitor listed after Agrius in Apollodorus' catalogue"
+    },
+    {
+      "id": "ctesius-dulichium",
+      "name": "Ctesius",
+      "role": "Dulichian wooer, distinct from Ctesippus of Same"
+    },
+    {
+      "id": "acarnan-dulichium",
+      "name": "Acarnan",
+      "role": "Dulichian suitor, distinct from Alcmaeon's son eponym of Acarnania"
+    },
+    {
+      "id": "cycnus-dulichium",
+      "name": "Cycnus",
+      "role": "Dulichian wooer listed after Acarnan, distinct from the swan-linked warrior slain by Heracles"
+    },
+    {
+      "id": "pseras-dulichium",
+      "name": "Pseras",
+      "role": "Dulichian suitor listed after Cycnus in Epitome 7.27"
+    },
+    {
+      "id": "hellanicus-dulichium",
+      "name": "Hellanicus",
+      "role": "Dulichian wooer listed after Pseras, not the later historian"
+    },
+    {
+      "id": "periphron-dulichium",
+      "name": "Periphron",
+      "role": "Dulichian suitor listed after Hellanicus in Apollodorus' catalogue"
+    },
+    {
+      "id": "megasthenes-dulichium",
+      "name": "Megasthenes",
+      "role": "Dulichian wooer listed after Periphron, before Thrasymedes in Epitome 7.27"
+    },
+    {
+      "id": "thrasymedes-dulichium",
+      "name": "Thrasymedes",
+      "role": "Dulichian suitor, distinct from Nestor's son Thrasymedes at Pylos"
+    },
+    {
+      "id": "ormenius-dulichium",
+      "name": "Ormenius",
+      "role": "Dulichian wooer listed after Thrasymedes in Epitome 7.27"
+    },
+    {
+      "id": "diopithes-dulichium",
+      "name": "Diopithes",
+      "role": "Dulichian suitor listed after Ormenius in Apollodorus' catalogue"
+    },
+    {
+      "id": "mecisteus-dulichium",
+      "name": "Mecisteus",
+      "role": "Dulichian wooer, distinct from Mecisteus son of Talaus"
+    },
+    {
+      "id": "antimachus-dulichium",
+      "name": "Antimachus",
+      "role": "Dulichian suitor, distinct from the Trojan Antimachus of the Iliad"
+    },
+    {
+      "id": "ptolemaeus-dulichium",
+      "name": "Ptolemaeus",
+      "role": "Dulichian wooer listed after Antimachus in Epitome 7.27"
+    },
+    {
+      "id": "lestorides-dulichium",
+      "name": "Lestorides",
+      "role": "Dulichian suitor listed after Ptolemaeus in Apollodorus' catalogue"
+    },
+    {
+      "id": "nicomachus-dulichium",
+      "name": "Nicomachus",
+      "role": "Dulichian wooer listed after Lestorides in Epitome 7.27"
+    },
+    {
+      "id": "polypoetes-dulichium",
+      "name": "Polypoetes",
+      "role": "Dulichian suitor, distinct from Peirithous' son at Troy"
+    },
+    {
+      "id": "ceraus-dulichium",
+      "name": "Ceraus",
+      "role": "Last-named Dulichian wooer in Apollodorus' island catalogue"
+    },
+    {
+      "id": "agelaus-same",
+      "name": "Agelaus",
+      "role": "Son of Damastor, first in Apollodorus' Same roll and voice in the last spear-fight"
+    },
+    {
+      "id": "peisander-same",
+      "name": "Peisander",
+      "role": "Son of Polyctor, slain by Philoetius in the final cast of spears"
+    },
+    {
+      "id": "elatus-same",
+      "name": "Elatus",
+      "role": "Same wooer slain by Eumaeus in the mnesterophonia"
+    },
+    {
+      "id": "ctesippus-same",
+      "name": "Ctesippus",
+      "role": "Lawless wooer from Same who hurled the ox's hoof at the beggar"
+    },
+    {
+      "id": "hippodochus-same",
+      "name": "Hippodochus",
+      "role": "Same suitor listed after Ctesippus in Epitome 7.28"
+    },
+    {
+      "id": "eurystratus-same",
+      "name": "Eurystratus",
+      "role": "Same wooer listed after Hippodochus in Apollodorus' catalogue"
+    },
+    {
+      "id": "archemolus-same",
+      "name": "Archemolus",
+      "role": "Same suitor listed after Eurystratus in Epitome 7.28"
+    },
+    {
+      "id": "ithacus-same",
+      "name": "Ithacus",
+      "role": "Same wooer, distinct from the Ithacus who built the town fountain with Neritus"
+    },
+    {
+      "id": "pisenor-same",
+      "name": "Pisenor",
+      "role": "Same suitor listed after Ithacus in Epitome 7.28"
+    },
+    {
+      "id": "hyperenor-same",
+      "name": "Hyperenor",
+      "role": "Same wooer listed after Pisenor, distinct from Panthous' son at Troy"
+    },
+    {
+      "id": "pheroetes-same",
+      "name": "Pheroetes",
+      "role": "Same suitor listed after Hyperenor in Epitome 7.28"
+    },
+    {
+      "id": "antisthenes-same",
+      "name": "Antisthenes",
+      "role": "Same wooer listed after Pheroetes in Apollodorus' catalogue"
+    },
+    {
+      "id": "cerberus-same",
+      "name": "Cerberus",
+      "role": "Same suitor who shares the hound's name, not the beast of Hades"
+    },
+    {
+      "id": "perimedes-same",
+      "name": "Perimedes",
+      "role": "Same wooer, distinct from Odysseus' comrade at the Sirens"
+    },
+    {
+      "id": "cynnus-same",
+      "name": "Cynnus",
+      "role": "Same suitor listed after Perimedes in Epitome 7.28"
+    },
+    {
+      "id": "thriasus-same",
+      "name": "Thriasus",
+      "role": "Same wooer listed after Cynnus in Apollodorus' catalogue"
+    },
+    {
+      "id": "eteoneus-same",
+      "name": "Eteoneus",
+      "role": "Same suitor, distinct from Menelaus' squire at Sparta"
+    },
+    {
+      "id": "clytius-same",
+      "name": "Clytius",
+      "role": "Same wooer also named among Dulichium's fifty-seven, distinct from clytius-zacynthus"
+    },
+    {
+      "id": "prothous-same",
+      "name": "Prothous",
+      "role": "Same suitor listed after Clytius, distinct from the Magnetes' leader at Troy"
+    },
+    {
+      "id": "lycaethus-same",
+      "name": "Lycaethus",
+      "role": "Same wooer listed after Prothous in Epitome 7.28"
+    },
+    {
+      "id": "eumelus-same",
+      "name": "Eumelus",
+      "role": "Same suitor, distinct from Admetus' son the charioteer of Pherae"
+    },
+    {
+      "id": "itanus-same",
+      "name": "Itanus",
+      "role": "Same wooer listed after Eumelus in Epitome 7.28"
+    },
+    {
+      "id": "lyammus-same",
+      "name": "Lyammus",
+      "role": "Last-named Same wooer in Apollodorus' island catalogue"
+    },
+    {
+      "id": "eurylochus-zacynthus",
+      "name": "Eurylochus",
+      "role": "First of Apollodorus' forty-four Zacynthian suitors — not Odysseus' companion"
+    },
+    {
+      "id": "laomedes-zacynthus",
+      "name": "Laomedes",
+      "role": "Second in the Zacynthian catalogue after Eurylochus"
+    },
+    {
+      "id": "molebus-zacynthus",
+      "name": "Molebus",
+      "role": "Zacynthian wooer listed after Laomedes in Epitome 7.29"
+    },
+    {
+      "id": "phrenius-zacynthus",
+      "name": "Phrenius",
+      "role": "Zacynthian suitor, likely duplicated once in the Epitome roll"
+    },
+    {
+      "id": "indius-zacynthus",
+      "name": "Indius",
+      "role": "Zacynthian wooer, likely duplicated once in the Epitome roll"
+    },
+    {
+      "id": "minis-zacynthus",
+      "name": "Minis",
+      "role": "Zacynthian suitor listed after Indius in Epitome 7.29"
+    },
+    {
+      "id": "liocritus-zacynthus",
+      "name": "Liocritus",
+      "role": "Zacynthian wooer listed after Minis in Apollodorus' catalogue"
+    },
+    {
+      "id": "pronomus-zacynthus",
+      "name": "Pronomus",
+      "role": "Zacynthian suitor, distinct from pronous-ithaca among the twelve Ithacan wooers"
+    },
+    {
+      "id": "nisas-zacynthus",
+      "name": "Nisas",
+      "role": "Zacynthian wooer listed after Pronomus in Epitome 7.29"
+    },
+    {
+      "id": "daemon-zacynthus",
+      "name": "Daemon",
+      "role": "Zacynthian suitor who bears the daimon's name, not a divine spirit"
+    },
+    {
+      "id": "archestratus-zacynthus",
+      "name": "Archestratus",
+      "role": "Zacynthian wooer listed after Daemon in Epitome 7.29"
+    },
+    {
+      "id": "hippomachus-zacynthus",
+      "name": "Hippomachus",
+      "role": "Zacynthian suitor listed after Archestratus in Apollodorus' catalogue"
+    },
+    {
+      "id": "euryalus-zacynthus",
+      "name": "Euryalus",
+      "role": "Zacynthian wooer, not the Phaeacian boxer at Alcinous' games"
+    },
+    {
+      "id": "periallus-zacynthus",
+      "name": "Periallus",
+      "role": "Zacynthian suitor listed after Euryalus in Epitome 7.29"
+    },
+    {
+      "id": "evenorides-zacynthus",
+      "name": "Evenorides",
+      "role": "Zacynthian wooer, distinct from evenorides-ithaca in Epitome 7.27"
+    },
+    {
+      "id": "clytius-zacynthus",
+      "name": "Clytius",
+      "role": "Zacynthian suitor, distinct from clytius-same of Cephallenia"
+    },
+    {
+      "id": "agenor-zacynthus",
+      "name": "Agenor",
+      "role": "Zacynthian wooer, distinct from agenor-ithaca in Epitome 7.27"
+    },
+    {
+      "id": "polybus-zacynthus",
+      "name": "Polybus",
+      "role": "Zacynthian suitor, distinct from wise polybus-ithaca in Homer's hall"
+    },
+    {
+      "id": "polydorus-zacynthus",
+      "name": "Polydorus",
+      "role": "Zacynthian wooer listed after Polybus in Epitome 7.29"
+    },
+    {
+      "id": "thadytius-zacynthus",
+      "name": "Thadytius",
+      "role": "Zacynthian suitor listed after Polydorus in Apollodorus' catalogue"
+    },
+    {
+      "id": "stratius-zacynthus",
+      "name": "Stratius",
+      "role": "Zacynthian wooer, distinct from Nestor's son Stratius at Pylos"
+    },
+    {
+      "id": "daesenor-zacynthus",
+      "name": "Daesenor",
+      "role": "Zacynthian suitor listed after Stratius in Epitome 7.29"
+    },
+    {
+      "id": "laomedon-zacynthus",
+      "name": "Laomedon",
+      "role": "Zacynthian wooer, distinct from laomedes-zacynthus and Troy's king"
+    },
+    {
+      "id": "laodicus-zacynthus",
+      "name": "Laodicus",
+      "role": "Zacynthian suitor listed after Laomedon in Apollodorus' catalogue"
+    },
+    {
+      "id": "halius-zacynthus",
+      "name": "Halius",
+      "role": "Zacynthian wooer, not Alcinous' son who danced at Scheria"
+    },
+    {
+      "id": "magnes-zacynthus",
+      "name": "Magnes",
+      "role": "Zacynthian suitor, distinct from Aeolus' son eponym of the Magnesians"
+    },
+    {
+      "id": "oloetrochus-zacynthus",
+      "name": "Oloetrochus",
+      "role": "Zacynthian wooer listed after Magnes in Epitome 7.29"
+    },
+    {
+      "id": "barthas-zacynthus",
+      "name": "Barthas",
+      "role": "Zacynthian suitor listed after Oloetrochus in Apollodorus' catalogue"
+    },
+    {
+      "id": "theophron-zacynthus",
+      "name": "Theophron",
+      "role": "Zacynthian wooer listed after Barthas in Epitome 7.29"
+    },
+    {
+      "id": "nissaeus-zacynthus",
+      "name": "Nissaeus",
+      "role": "Zacynthian suitor listed after Theophron in Apollodorus' catalogue"
+    },
+    {
+      "id": "alcarops-zacynthus",
+      "name": "Alcarops",
+      "role": "Zacynthian wooer listed after Nissaeus in Epitome 7.29"
+    },
+    {
+      "id": "periclymenus-zacynthus",
+      "name": "Periclymenus",
+      "role": "Zacynthian suitor, distinct from Neleus' shape-shifting son at Pylos"
+    },
+    {
+      "id": "antenor-zacynthus",
+      "name": "Antenor",
+      "role": "Zacynthian wooer, not the Trojan elder who counselled peace"
+    },
+    {
+      "id": "pellas-zacynthus",
+      "name": "Pellas",
+      "role": "Zacynthian suitor listed after Antenor in Apollodorus' catalogue"
+    },
+    {
+      "id": "celtus-zacynthus",
+      "name": "Celtus",
+      "role": "Zacynthian wooer listed after Pellas in Epitome 7.29"
+    },
+    {
+      "id": "periphus-zacynthus",
+      "name": "Periphus",
+      "role": "Zacynthian suitor listed after Celtus in Apollodorus' catalogue"
+    },
+    {
+      "id": "ormenus-zacynthus",
+      "name": "Ormenus",
+      "role": "Zacynthian wooer, distinct from Amyntor's father in Phoenix's tale"
+    },
+    {
+      "id": "andromedes-zacynthus",
+      "name": "Andromedes",
+      "role": "Last-named Zacynthian wooer in Apollodorus' island catalogue"
+    }
+  ],
+  "places": [
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "role": "Rocky kingdom and goal of the voyage"
+    },
+    {
+      "id": "pylos",
+      "name": "Pylos",
+      "role": "Nestor's sacrifice by the sea"
+    },
+    {
+      "id": "sparta",
+      "name": "Sparta",
+      "role": "Menelaus' hall"
+    },
+    {
+      "id": "corcyra",
+      "name": "Scheria",
+      "role": "Land of the Phaeacians"
+    },
+    {
+      "name": "Ogygia",
+      "role": "Calypso's isle"
+    },
+    {
+      "name": "Aeaea",
+      "role": "Circe's isle"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "entire"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.1–7.40"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "125, 127"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "13–14 (Circe, Glaucus, Scylla)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "city": "ithaca",
+  "reigns": [
+    {
+      "ruler": "Laertes",
+      "characterId": "laertes",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.201–204; Odyssey 1.180–225, 4.715–755, 24.195–545; Epitome 3.10, 7.31",
+      "note": "Once lord of the Cephallenians; in old age withdrew to his country farm while suitors devoured his son's house — the funeral shroud Penelope wove in his name held the wooers at bay."
+    },
+    {
+      "ruler": "Odysseus",
+      "characterId": "odysseus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 1.1–21; Epitome 3.10",
+      "note": "King of rocky Ithaca and captain of the Cephallenian contingent at Troy."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "silenus",
+  "name": "Silenus",
+  "greekName": "Seilēnos (Σειληνός)",
+  "romanName": "Silenus",
+  "type": "creature",
+  "domains": [
+    "Dionysus' companion",
+    "wine and prophecy",
+    "father of Pholus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The aged companion of Dionysus, drunken and prophetic, whom Apollodorus names as father of the hospitable centaur Pholus by a Melian nymph.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 2.5.4; Metamorphoses 4.1–75, 11.130–227"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles passed through Pholoe on his way to take the Erymanthian boar, Apollodorus says he was entertained by Pholus, son of Silenus by a Melian nymph — a parentage that sets Pholus apart from the Ixion-born centaurs, nearer in civility to Chiron though not immortal.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    },
+    {
+      "text": "Ovid shows Silenus in Dionysus' train — unsteady on his ass, surrounded by satyrs and Bacchanals when Lycurgus drove the god's rites from Thrace, and later captured by Phrygian folk who led the drunken old man to Midas. The same Silenus whose son kept the centaurs' common wine-jar on Arcadian Pholoe.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 4.1–75, 11.130–227"
+    }
+  ]
+}

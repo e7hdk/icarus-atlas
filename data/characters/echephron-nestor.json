@@ -1,0 +1,31 @@
+{
+  "id": "echephron-nestor",
+  "name": "Echephron",
+  "greekName": "Echephron (Ἐχέφρων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "the Pylians at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — one of the Pylians who came forth from the palace chambers when their father led Telemachus in the rite to propitiate Athena at dawn after the feast on the shore.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.405–445; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nestor gathered his sons to fulfil his desire and first of all the gods propitiate Athena, who had come to sandy Pylos in the guise of Mentor, Echephron was among the brothers who came forth from their chambers — with Stratius, Perseus, godlike Thrasymedes, and Aretus, and Peisistratus after them as the sixth — and they led godlike Telemachus and made him sit beside them while the old king spoke.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.405–445"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

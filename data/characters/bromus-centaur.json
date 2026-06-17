@@ -1,0 +1,33 @@
+{
+  "id": "bromus-centaur",
+  "name": "Bromus",
+  "greekName": "Bromos (Βρόμος)",
+  "romanName": "Bromus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur slain by Caeneus in the brawl at Peirithous' wedding.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "Among the five centaurs Caeneus killed before the rest drove him under with pine trunks, Bromus is numbered by Nestor in Ovid's account of the fight — one of the named dead of the wedding hall.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

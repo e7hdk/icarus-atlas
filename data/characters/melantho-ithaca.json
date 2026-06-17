@@ -1,0 +1,47 @@
+{
+  "id": "melantho-ithaca",
+  "name": "Melantho",
+  "greekName": "Melanthō (Μελανθώ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "disloyal handmaid",
+    "daughter of Dolius",
+    "lover of Eurymachus"
+  ],
+  "summary": [
+    {
+      "text": "Fair-cheeked daughter of Dolius whom Penelope reared and cherished as her own child — yet she loved Eurymachus, lay with him, and twice rated the disguised Odysseus with shameful words when he moved through the halls by night.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.290–335; 19.50–85"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names her lineage at once: Melantho whom Dolius begot, but Penelope had reared her and given her playthings to her heart's desire. Even so she had no sorrow for her mistress — she loved Eurymachus and was wont to lie with him. When the beggar said he could endure much, the maids laughed; Melantho rated him shamefully before them all.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.290–335"
+    },
+    {
+      "text": "By night, when Penelope questioned the stranger and fresh logs burned on the braziers, Melantho began again: would he still plague them through the house and spy upon the women? She bade him get forth and sleep where the beggars gathered — not knowing the man she reviled was her master returned.",
+      "sources": ["homer"],
+      "citation": "Odyssey 19.50–85"
+    },
+    {
+      "text": "Pausanias cites her very speech as proof that in Homer's day many cities had common meeting-places and smithies where men might sleep — the line in which she tells the stranger he will not go to the smith's house nor to the place of talk.",
+      "sources": ["pausanias", "homer"],
+      "citation": "Description of Greece 10.25.1; Odyssey 18.328"
+    },
+    {
+      "text": "When the suitors lay dead, Eurycleia named the faithless women among the fifty housemaids — twelve who had dishonored Penelope and consorted with the wooers. Melantho was among them: they were led out to the courtyard, nooses laid round their necks, and they died most piteously — swept away with Melanthius in the hour of vengeance.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 22.380–500; Epitome 7.33"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

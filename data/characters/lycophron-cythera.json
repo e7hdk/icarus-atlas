@@ -1,0 +1,31 @@
+{
+  "id": "lycophron-cythera",
+  "name": "Lycophron",
+  "greekName": "Lykophrōn (Λυκόφρων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "squire of Ajax",
+    "exile from Cythera"
+  ],
+  "summary": [
+    {
+      "text": "Son of Mastor, a squire of Ajax from Cythera who had fled the sacred island after killing a man, and was slain by Hector at the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.430–437"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Lycophron among the companions of Telamonian Ajax: Mastor's son, from Cythera, who dwelt with the hero because he had slain a man in sacred Cythera. When Hector cast at Ajax and missed, the spear struck Lycophron above the ear, and he fell backward in the dust from the stern of the ship.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.430–437"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cythera",
+      "sources": ["homer"]
+    }
+  ]
+}

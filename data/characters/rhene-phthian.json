@@ -1,0 +1,27 @@
+{
+  "id": "rhene-phthian",
+  "name": "Rhene",
+  "greekName": "Rhene (Ῥήνη)",
+  "type": "nymph",
+  "domains": ["mother of Medon", "concubine of Oileus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Mother of Medon, bastard son of godlike Oileus, who marshalled the Phthians when Philoctetes was away — Hyginus also names a nymph Rhene mother of Ajax the Locrian, though Homer leaves the Locrian captain's mother unnamed.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.695–730; Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Though the Argives beside their ships longed for king Philoctetes, they were not leaderless: Medon marshalled them, the bastard son of Oileus whom Rhene bare to the sacker of cities.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "Hyginus counts Ajax son of Oileus and the nymph Rhene among the captains at Troy with twenty Locrian ships — a separate attestation of the name beside Medon's mother in Homer.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ]
+}

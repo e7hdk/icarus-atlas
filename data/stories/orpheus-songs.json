@@ -1,0 +1,50 @@
+{
+  "id": "orpheus-songs",
+  "title": "The Songs of Orpheus",
+  "greekTitle": "Ὀρφέως ᾠδαί",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.09,
+  "summary": {
+    "text": "After Eurydice was lost a second time, Orpheus sat in an enchanted grove where trees and beasts gathered to hear him — and from his lyre sang the loves of the gods: Ganymede borne away by Jove in eagle form, and Hyacinth slain by Apollo's discus, from whose blood the flower sprang marked with AI, AI.",
+    "sources": ["ovid"],
+    "citation": "Ov. Met. 10.148–219, 10.219–331"
+  },
+  "chapters": [
+    {
+      "title": "The enchanted grove",
+      "text": "Orpheus drew together a grove where no sun beat too harshly — oak and linden, beech and laurel, and all the trees that once had been men and women. Tigers lay with sheep, and the lynx with the hare; birds and serpents came to listen. There he sat among the animals and tuned his lyre, vowing gentler songs than when he sang of giants on Phlegra: now he would sing of boys beloved of gods, and maids who paid the penalty of wrong.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.148–219"
+    },
+    {
+      "title": "Ganymede",
+      "text": "First he sang how Jove, burning for the Phrygian boy Ganymede, took no shape but the eagle's — strong enough to bear his thunderbolts — and stole the Trojan from Ida to pour nectar in the cups of the gods on Olympus, to Juno's lasting anger.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.219–239"
+    },
+    {
+      "title": "Hyacinth",
+      "text": "Then Apollo and Hyacinth, stripped and oiled for sport, cast the discus — and the boy, rushing for glory, was struck as the disc rebounded from the earth. The god could not heal him; from his blood arose a flower like a lily but purple, and on its petals Apollo inscribed the letters of his grief: AI, AI. Sparta still honours Hyacinthus with solemn festival.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.239–331"
+    }
+  ],
+  "cast": [
+    { "id": "orpheus", "name": "Orpheus", "role": "Bard whose song gathered the grove" },
+    { "id": "zeus", "name": "Zeus", "role": "Jove, who bore Ganymede away as an eagle" },
+    { "id": "ganymede", "name": "Ganymede", "role": "Trojan boy taken to Olympus" },
+    { "id": "apollo", "name": "Apollo", "role": "Slayer-accident of Hyacinth" },
+    { "id": "hyacinthus", "name": "Hyacinthus", "role": "Spartan youth who became the flower" },
+    { "id": "hera", "name": "Hera", "role": "Juno, still angry at Ganymede's place on Olympus" }
+  ],
+  "places": [
+    { "name": "Rhodope", "role": "Thracian highlands where Orpheus' grove stood" },
+    { "name": "Mount Ida", "role": "Phrygian mountain of Ganymede's rape" },
+    { "name": "Sparta", "role": "City that honours Hyacinthus" },
+    { "name": "Eurotas", "role": "River where Apollo lingered with the boy" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "10.148–331" }
+  ]
+}

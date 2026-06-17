@@ -1,0 +1,52 @@
+{
+  "id": "deianira-and-achelous",
+  "title": "Deianira and Achelous",
+  "greekTitle": "Δηϊάνειρα καὶ Ἀχελῷος",
+  "kind": "episode",
+  "parent": "heracles-cycle",
+  "era": 6.58,
+  "summary": {
+    "text": "At Calydon Heracles wrestled the river-god Achelous for Deianira, daughter of Oeneus — though some say Dionysus begot her on Althaea — and took her home as wife; by her he begot Hyllus and Macaria, the son who would lead the first Return and the daughter who would give her life for the Heraclids.",
+    "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+    "citation": "Apollod. 1.8.1, 2.7.5; Ov. Met. 9.1–97; Hyg. Fab. 129; Paus. 2.23.5, 6.19.12"
+  },
+  "chapters": [
+    {
+      "title": "The princess of Calydon",
+      "text": "Deianira was reckoned among the children of Oeneus, king of rocky Calydon, and Althaea, sister of Meleager who had hunted the goddess's boar. Apollodorus notes, however, that she is said to have been begotten by Dionysus — and Hyginus tells how Liber, received as a guest, lay with Althaea and gave Oeneus the vine in recompense. In the household genealogy she is the Calydonian princess; in the whispered variant she carries the wine-god's blood.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 1.8.1; Hyg. Fab. 129",
+      "topic": "deianira-parentage"
+    },
+    {
+      "title": "The river suitor",
+      "text": "When Deianira came of age, the river-god Achelous courted her, shifting his shape from man to serpent to bull with the crescent horns of a young bull. Her father Oeneus feared to refuse the god; Heracles, passing through Aetolia on his wide wars, offered to wrestle Achelous for the bride. Ovid paints the contest in the god's own voice: how the hero broke off his horn and how the Naiads filled it with fruits and flowers — the Cornucopia.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.7.5; Ov. Met. 9.1–97"
+    },
+    {
+      "title": "The marriage at Calydon",
+      "text": "Heracles pinned Achelous and won Deianira. He took her home and lived with her as his wife; by her he begot Hyllus, who would one day confront Eurystheus, and Macaria, who would offer herself on the altar when the Heraclids were besieged at Athens. Pausanias walked the ground at Calydon and Megara and remembered both children in the local cult — the marriage that bound the hero to the house of Oeneus before Oechalia and the centaur's blood.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.7.5, 2.8.1; Paus. 1.41.1, 2.23.5"
+    }
+  ],
+  "cast": [
+    { "id": "heracles", "name": "Heracles", "role": "The suitor who wrestled the river" },
+    { "id": "deianira", "name": "Deianira", "role": "The Calydonian bride" },
+    { "id": "achelous", "name": "Achelous", "role": "River-god suitor" },
+    { "id": "oeneus", "name": "Oeneus", "role": "King of Calydon, her father" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Wine-god in the disputed parentage" },
+    { "id": "hyllus", "name": "Hyllus", "role": "Eldest son of the marriage" },
+    { "id": "macaria", "name": "Macaria", "role": "Daughter who would sacrifice herself" }
+  ],
+  "places": [
+    { "id": "calydon", "name": "Calydon", "role": "City of Oeneus and the wedding" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.8.1, 2.7.5, 2.8.1" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "9.1–97" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "129" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.41.1, 2.23.5, 6.19.12" }
+  ]
+}

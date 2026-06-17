@@ -1,0 +1,19 @@
+{
+  "city": "dardanus-city",
+  "reigns": [
+    {
+      "ruler": "Teucer",
+      "characterId": "teucer-troas",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1",
+      "note": "Son of Scamander and Idaea; first king of Teucria before Dardanus came from Samothrace."
+    },
+    {
+      "ruler": "Dardanus",
+      "characterId": "dardanus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1",
+      "note": "Built the city Dardanus and, after Teucer's death, named the country Dardania."
+    }
+  ]
+}

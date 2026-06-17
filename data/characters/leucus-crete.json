@@ -1,0 +1,30 @@
+{
+  "id": "leucus-crete",
+  "name": "Leucus",
+  "greekName": "Leukos (Λεύκος)",
+  "type": "mortal",
+  "domains": [
+    "usurpation of Crete",
+    "the betrayal of Meda"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Cretan lover of Meda who, before Idomeneus returned from Troy, killed the queen and her daughter Clisithyra in the temple, detached ten cities from Crete, and drove the victor into exile — not to be confused with Leucus, Odysseus' comrade slain by Hector in the Iliad.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 6.9–6.10; Iliad 4.490–515"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nauplius coasted along Greece corrupting the heroes' wives, Meda wife of Idomeneus took Leucus as lover — the Cretan parallel to Clytemnestra and Aegisthus at Mycenae and Aegialia and Cometes at Argos.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.9; Fabulae 116–117"
+    },
+    {
+      "text": "Before Idomeneus landed after Troy, Leucus killed Meda and her daughter Clisithyra, who had fled to a temple for refuge; he detached ten cities from Crete and made himself tyrant over them. When the king came home, Leucus drove him out — the nested episode on Idomeneus and Leucus tells the full Returns reckoning.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.10"
+    }
+  ]
+}

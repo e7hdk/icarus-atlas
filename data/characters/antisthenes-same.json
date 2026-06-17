@@ -1,0 +1,35 @@
+{
+  "id": "antisthenes-same",
+  "name": "Antisthenes",
+  "greekName": "Antisthenēs (Ἀντισθένης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' island catalogue — attested only in the Epitome, and not to be confused with later historical or philosophical bearers of the name.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Antisthenes among the wooers who came from Same, listed after Pheroetes and before Cerberus in the catalogue of those who devoured Odysseus' house.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

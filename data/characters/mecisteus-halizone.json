@@ -1,0 +1,27 @@
+{
+  "id": "mecisteus-halizone",
+  "name": "Mecisteus",
+  "greekName": "Mecisteus (Μηκιστεύς)",
+  "type": "hero",
+  "domains": ["father of Odius and Epistrophus", "Halizone house", "Alybe"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of the Halizone captains Odius (`odius-halizone`) and Epistrophus (`epistrophus-halizone`) — attested by Apollodorus among the Trojan allies, while Homer names the sons but not their sire.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Odius and Epistrophus at the head of the Halizones from far-off Alybe, where silver is born — but the poet does not name their father in the muster.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "Apollodorus makes Odius and Epistrophus sons of Mecisteus among the Alizones who joined the Trojans. He must be kept distinct from Mecisteus son of Talaus (`mecisteus-aeolid`), from Mecisteus son of Echius (`mecisteus-echius`), and from the Dulichian suitor (`mecisteus-dulichium`).",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.35; Bibliotheca 1.9.13"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "agasthenes-epeian",
+  "name": "Agasthenes",
+  "greekName": "Agasthenēs (Ἀγασθένης)",
+  "type": "hero",
+  "domains": ["father of Polyxenus", "king of Elis", "son of Augeias"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King Agasthenes, Augeias' son, and father of godlike Polyxenus (`polyxenus-epeian`) — captain of the fourth Epeian company with ten swift ships — whom Pausanias names among the heirs of Elis after Phyleus departed for Dulichium.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650; Description of Greece 5.3.3–4"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships, Homer calls Polyxenus captain of the remaining ten Epeian vessels and names his father Agasthenes, son of Augeias, when the spearmen of Elis mustered beside Buprasium and the holy coast.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.615–650; Epitome 3.10.8"
+    },
+    {
+      "text": "Pausanias, reading the kingdom of Elis after Heracles' war, says that when Phyleus returned to Dulichium Augeas died at an advanced age and the realm devolved on Agasthenes together with Amphimachus and Thalpius — the sons of Actor's line who had married the twin daughters of Dexamenus at Olenus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.3.3"
+    }
+  ]
+}

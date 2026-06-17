@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { loadStories } from '@/features/stories/load';
+import { loadStories, loadStoryCulture } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { BackArrow } from '@/components/ui/BackArrow';
 import { MainNav } from '@/components/hud/MainNav';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { StoryLegacy } from '@/components/stories/StoryLegacy';
 
 export async function generateStaticParams() {
   const stories = await loadStories();
@@ -22,10 +23,11 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
 
 export default async function StoryPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [stories, atlas, cities] = await Promise.all([
+  const [stories, atlas, cities, culture] = await Promise.all([
     loadStories(),
     loadAtlasData(),
     loadCities(),
+    loadStoryCulture(id),
   ]);
   const story = stories.find((s) => s.id === id);
   if (!story) notFound();
@@ -218,6 +220,8 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
           </ul>
         </GlassPanel>
       </section>
+
+      {culture?.artworks.length ? <StoryLegacy artworks={culture.artworks} /> : null}
     </main>
   );
 }

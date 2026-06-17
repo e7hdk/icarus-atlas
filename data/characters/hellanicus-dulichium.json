@@ -1,0 +1,43 @@
+{
+  "id": "hellanicus-dulichium",
+  "name": "Hellanicus",
+  "greekName": "Hellanikos (Ἑλλάνικος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — attested only among the wooers who came against Odysseus' house, and not to be confused with the later historian of that name.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Hellanicus among the suitors who devoured Odysseus' substance, listed after Pseras and before Periphron in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "hippodochus-same",
+  "name": "Hippodochus",
+  "greekName": "Hippodochos (Ἱππόδοχος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue of those who devoured Odysseus' substance.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Hippodochus among the wooers who came from Same, named after Ctesippus and before Eurystratus in the island list of Penelope's suitors.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

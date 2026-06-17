@@ -1,0 +1,93 @@
+{
+  "id": "adrastus",
+  "name": "Adrastus",
+  "greekName": "Ἄδραστος",
+  "romanName": "Adrastus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argive kingship",
+    "the Seven against Thebes",
+    "the boar and the lion",
+    "the Epigoni"
+  ],
+  "summary": [
+    {
+      "text": "Son of Talaus and king of Argos in the Biantid line, Adrastus received the exiled Tydeus and Polynices, married them to his daughters Deipyle and Argia, and led the Seven against Thebes — the only captain to survive, escaping on the immortal horse Arion.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.1–3.6.8; Iliad 14.119–125, 23.346–348; Fabulae 69–71"
+    },
+    {
+      "text": "When Creon left the Argive dead unburied, Adrastus fled to Athens and won Theseus' aid to recover the bodies; he died of grief on learning that his son Aegialeus had fallen in the Epigoni's second war, leaving his grandson Diomedes to inherit Argos.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.1–3.7.2; Description of Greece 2.18.4, 2.20.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Adrastus belonged to the Biantid house that held a third of Argos after Melampus and Bias cured the maddened women. Apollodorus makes him son of Talaus, who married Lysimache and begot him in the line that ran from Bias through Talaus to the kings who would march on Thebes. Pausanias counts five kings from Bias for four generations down to Cyanippus, placing Adrastus in that Argive succession.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13; Description of Greece 2.18.4"
+    },
+    {
+      "text": "By Amphithea, daughter of Pronax, Adrastus had three daughters — Argia, Deipyle, and Aegialia — and two sons, Aegialeus and Cyanippus. Homer knows the royal daughters through their marriages: Tydeus, exiled from Calydon, came wandering to Argos and wed one of them, and Diomedes afterward married Aegialeia, whom some call daughter of Adrastus and others daughter of his son Aegialeus.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.9.13, 1.8.6; Iliad 14.119–125, 5.408–415"
+    },
+    {
+      "text": "The war of the Seven began at his door. Polynices, banished from Thebes, arrived by night at the Argive palace and fell to fighting Tydeus; Adrastus parted them and remembered a seer's command to yoke his daughters to a boar and a lion. Tydeus bore a boar on his shield, Polynices a lion — or, in Hyginus, Tydeus came wrapped in a boar's skin — and Adrastus gave Deipyle to Tydeus and Argia to Polynices, promising to restore both exiles to their kingdoms.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.1; Fabulae 69"
+    },
+    {
+      "text": "Having mustered seven leaders, Adrastus hastened against Thebes. Apollodorus names him first among the captains — with Amphiaraus, Capaneus, Hippomedon, Polynices, Parthenopaeus, and Tydeus — and assigns him to the Homoloidian gate when the assault was joined. On the march the host founded the Nemean games in honour of Archemorus, the child whose death by a serpent Amphiaraus read as a sign of what awaited them.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.3–3.6.6"
+    },
+    {
+      "text": "The expedition ended in ruin for all but its leader. Zeus blasted Capaneus from the wall with a thunderbolt; Amphiaraus vanished into the earth with his chariot; the rest fell in the fighting, and the brothers Eteocles and Polynices killed each other. Adrastus alone was saved, carried off on his horse Arion — whom Poseidon, Apollodorus says, begot on Demeter when she consorted with him in the likeness of a Fury.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 3.6.8; Iliad 23.346–348"
+    },
+    {
+      "text": "Creon forbade burial to the Argive slain. Adrastus took refuge at the altar of Mercy in Athens and prayed that the Athenians would recover the dead; Theseus marched on Thebes, captured the city, and gave the bodies back to their kinsmen. Pausanias saw at Argos the tomb of Aegialeus, the son who fell when the Epigoni returned, and records that Adrastus died of grief on the journey home — after which Diomedes, son of Tydeus and Deipyle, came into the kingship.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.1–3.7.2; Description of Greece 2.18.4, 2.20.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "pausanias",
+        "hyginus"
+      ]
+    }
+  ]
+}

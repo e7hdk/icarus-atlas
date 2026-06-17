@@ -1,0 +1,71 @@
+{
+  "id": "aeneas-to-italy",
+  "title": "Aeneas to Italy",
+  "greekTitle": "Αἰνείας εἰς Ἰταλίαν",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.909,
+  "summary": {
+    "text": "Aeneas carried Anchises from the burning city and, in the Latin tradition Apollodorus summarises, came to Italy after long wandering — seed of the Romans — while Odysseus' ten-year odyssey still lay ahead among Cyclopes, witches, and the dead.",
+    "sources": ["apollodorus", "homer", "hyginus", "ovid", "pausanias"],
+    "citation": "Hom. Il. 20.302–339; Apollod. Epit. 5.21, 6.20; Hyg. Fab. 94, 120; Ov. Met. 13.623–639, 14.101–119; Paus. 3.22.11"
+  },
+  "chapters": [
+    {
+      "title": "The gods kept him",
+      "text": "Homer had marked Aeneas for survival. When Diomedes struck him down, Aphrodite spread her bright garment against the spears and Apollo bore him to sanctuary in Pergamus; when Achilles hunted him through the battle, Poseidon shed mist over the killer's eyes and declared it ordained that Aeneas escape — that the race of Dardanus not perish without seed, and that his sons' sons should be born in days to come. The Dardanian captain whom the Trojans honoured even as a god was fated to outlive Ilion.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 5.311–318, 5.432–453, 20.302–339"
+    },
+    {
+      "title": "From the flames",
+      "text": "When the wooden horse opened and the city burned, Aeneas took up his lame father Anchises on his shoulders and led his son Ascanius from the ruins — piety the Greeks respected enough to let him go. The nested episode on the Sack of Troy tells the horse and the slaughter; Hyginus counts him among the most pious of men, rescuing father and child while Neoptolemus killed Priam at the altar. Apollodorus says the Achaeans spared him on account of his reverence.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 5.21; Hyg. Fab. 94, 108; Ov. Met. 13.623–639"
+    },
+    {
+      "title": "The fleet of Antandros",
+      "text": "Ovid carries the exile west from the Troad: Aeneas sails from Antandros with the Penates and the burden of Anchises, gathering the remnant of Troy — wives and elders, the broken nobility of Priam's house. Storms drive him through the Greek seas; Pausanias heard that he founded Laconian cities when gales forced him into the gulf on the voyage toward Italy. The Greek Epic Cycle's Returns know him as survivor; the Latin poets know him as founder.",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Ov. Met. 13.623–639, 14.101–119; Paus. 3.22.11"
+    },
+    {
+      "title": "Apollodorus' Italy",
+      "text": "Apollodorus summarises the Latin tradition in the Nostoi: Aeneas, having escaped with Anchises and Ascanius after Troy was taken, came to Italy to the Aborigines and merged his line with the native kings — the seed from which Rome would claim descent. Hyginus' catalogue of the Returns sets him among those who wandered rather than perished on the sea or died in the bath at home. The nested episode on Diomedes' exile remembers a later meeting in the west, when the Argive exile and the Trojan survivor crossed paths in the Italian strand of myth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.20; Hyg. Fab. 120"
+    },
+    {
+      "title": "The long wanderer beside him",
+      "text": "Of all the kings who took Troy, only Odysseus' homecoming would fill a poem unto itself — ten years more among Cyclopes, Circe, the Sirens, and the house of Hades before Ithaca. Aeneas' westward destiny and Odysseus' Mediterranean detour are the two great Returns that exceed the Epic Cycle's catalogue: one toward Italy and empire, one toward the oar-shaped sign and an old dog rising on the threshold. The nested episodes on the Odyssey shelf carry the Ithacan king; here the Dardanian line goes toward the Tiber.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od.; Apollod. Epit. 6.20, 7.1–7.40"
+    }
+  ],
+  "cast": [
+    { "id": "aeneas", "name": "Aeneas", "role": "Dardanian captain fated for Italy" },
+    { "id": "anchises", "name": "Anchises", "role": "Lame father carried from the flames" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Mother who saved him on the battlefield" },
+    { "id": "apollo", "name": "Apollo", "role": "God who bore him to sanctuary" },
+    { "id": "poseidon", "name": "Poseidon", "role": "He who ordained his survival" },
+    { "id": "diomedes", "name": "Diomedes", "role": "He who nearly killed him at Troy" },
+    { "id": "achilles", "name": "Achilles", "role": "He who hunted him through the battle" },
+    { "id": "odysseus", "name": "Odysseus", "role": "The other great wanderer of the Returns" },
+    { "name": "Ascanius", "role": "Son led from the burning city" },
+    { "name": "Aborigines", "role": "Italian people among whom Apollodorus sets his kingdom" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Burning city he fled with his father" },
+    { "name": "Antandros", "role": "Harbour whence Ovid's Aeneas sails west" },
+    { "name": "Italy", "role": "Land of the Latin destiny" },
+    { "name": "Laconia", "role": "Where Pausanias heard he founded cities in storm" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "5.311–318, 20.302–339" },
+    { "source": "homer", "work": "Odyssey", "citation": "passim" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.21, 6.20" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "94, 120" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "13.623–639, 14.101–119" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "3.22.11" }
+  ]
+}

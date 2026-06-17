@@ -1,0 +1,63 @@
+{
+  "id": "return-and-mycenae",
+  "title": "Return and Mycenae",
+  "greekTitle": "Μυκῆναι",
+  "kind": "episode",
+  "parent": "perseus-cycle",
+  "era": 5.85,
+  "summary": {
+    "text": "Perseus petrified Polydectes on Seriphos, fulfilled Acrisius' oracle with a stray discus at Larisa, exchanged Argos for Tiryns with Megapenthes, and founded Mycenae — whether he ruled in peace to the end or died by his cousin's vengeance, the poets disagree.",
+    "sources": ["apollodorus", "hyginus", "pausanias", "ovid"],
+    "citation": "Apollod. 2.4.3–4; Hyg. Fab. 244, 273; Paus. 2.16.3, 2.23.7; Ov. Met. 5.230–249"
+  },
+  "chapters": [
+    {
+      "title": "Seriphos avenged",
+      "text": "Returning to Seriphos with Andromeda, Perseus found Danae and Dictys driven to the altar by Polydectes' violence. He entered the palace where the king and his friends were feasting, drew the Gorgon's head from the wallet, and turned them all to stone. He made Dictys king of Seriphos and gave the island's gods his sandals, wallet, and cap — the borrowed gear returned to heaven.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.4.3; Ov. Met. 5.230–249"
+    },
+    {
+      "title": "The discus at Larisa",
+      "text": "Perseus went to Argos with his mother and wife, but learning Acrisius had fled to Larisa in Thessaly he followed to compete in the funeral games of Teutamides. His discus, thrown in the athletic contest, swerved into the crowd and struck Acrisius on the head — the oracle fulfilled without intent. Ashamed to take the kingdom of the man he had killed, he went down to Megara and from there sought another throne.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Hyg. Fab. 273; Paus. 2.23.7"
+    },
+    {
+      "title": "The exchange of kingdoms",
+      "text": "Megapenthes son of Proetus, who held Argos after the war between the brothers, received Tiryns in exchange while Perseus took what became his own domain. Pausanias and Apollodorus tell a peaceful exchange — the Gorgon-slayer founding Mycenae and Midea and ruling from the new fortress with Cyclopean walls. He buried the Gorgon's head beneath the market-place in Argos, where it continued to petrify those who looked on it.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3, 2.23.7"
+    },
+    {
+      "title": "Mycenae and the later fate",
+      "text": "Perseus built Mycenae because its spring Hypereia and its fortress pleased him, or because a mushroom cap fell there as an omen — the poets vary. His sons Alcaeus, Sthenelus, Electryon, Mestor, and Perses carried the line toward Heracles and Eurystheus. Hyginus says Megapenthes eventually murdered him to avenge Proetus; Apollodorus and Pausanias know no such end — the founder of the golden citadel may have ruled in honour, or paid at last for the blood of his grandfather.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Hyg. Fab. 244; Paus. 2.16.3",
+      "topic": "perseus-death"
+    }
+  ],
+  "cast": [
+    { "id": "perseus", "name": "Perseus", "role": "Founder of Mycenae" },
+    { "id": "danae", "name": "Danae", "role": "Mother who returned to Argos" },
+    { "id": "andromeda", "name": "Andromeda", "role": "Queen beside him" },
+    { "id": "acrisius", "name": "Acrisius", "role": "Grandfather killed by the discus" },
+    { "id": "dictys", "name": "Dictys", "role": "King of Seriphos after Polydectes' fall" },
+    { "id": "polydectes", "name": "Polydectes", "role": "The tyrant turned to stone" },
+    { "id": "megapenthes-proetid", "name": "Megapenthes", "role": "Cousin who took Argos in exchange" },
+    { "id": "proetus", "name": "Proetus", "role": "Father whose vengeance Hyginus remembers" }
+  ],
+  "places": [
+    { "id": "seriphos", "name": "Seriphos", "role": "Where Polydectes was petrified" },
+    { "id": "larisa", "name": "Larisa", "role": "Where the discus fulfilled the oracle" },
+    { "id": "megara", "name": "Megara", "role": "Where he went after Acrisius' death" },
+    { "id": "mycenae", "name": "Mycenae", "role": "The fortress he founded" },
+    { "id": "argos", "name": "Argos", "role": "Kingdom exchanged with Megapenthes" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.4.3–4" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "244, 273" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "2.16.3, 2.23.7" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "5.230–249" }
+  ]
+}

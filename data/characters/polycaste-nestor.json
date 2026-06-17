@@ -1,0 +1,36 @@
+{
+  "id": "polycaste-nestor",
+  "name": "Polycaste",
+  "greekName": "Polycaste (Πολυκάστη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Nestor",
+    "hostess of Telemachus at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Youngest daughter of Nestor at sandy Pylos — who bathed and anointed Telemachus when the Pylians roasted the sacrifice to Athena, so that the prince came forth from the bath in form like unto the immortals.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.450–495; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "While Nestor's sons held the spits at the hecatomb and the inner parts were tasted, fair Polycaste, youngest daughter of Nestor son of Neleus, bathed Telemachus. She anointed him richly with oil and cast about him a fair cloak and tunic, and forth from the bath he came in form like unto the immortals — the maiden's service at the Pylians' feast for Athena.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.450–495"
+    },
+    {
+      "text": "Apollodorus counts her among Nestor's daughters by Anaxibia, sister to Pisidice in the Neleid genealogy at Pylos.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

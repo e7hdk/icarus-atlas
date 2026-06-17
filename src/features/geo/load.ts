@@ -1,7 +1,20 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { geoCitySchema, geoRegionSchema, lineageSchema } from '@/lib/schemas';
-import type { BasemapData, GeoCity, GeoRegion, Lineage } from '@/types/geo';
+import {
+  geoFeatureSchema,
+  geoPlaceSchema,
+  geoRegionSchema,
+  lineageSchema,
+} from '@/lib/schemas';
+import type {
+  BasemapData,
+  GeoCity,
+  GeoFeature,
+  GeoPlace,
+  GeoRegion,
+  Lineage,
+} from '@/types/geo';
+import { placeToCity } from '@/types/geo';
 
 const GEO_DIR = path.join(process.cwd(), 'data', 'geo');
 const LINEAGE_DIR = path.join(process.cwd(), 'data', 'lineages');
@@ -17,10 +30,22 @@ export async function loadRegions(): Promise<GeoRegion[]> {
   return geoRegionSchema.array().parse(raw) as GeoRegion[];
 }
 
-/** Loads and validates the curated city list. */
+/** Loads and validates all point POIs on the Lands map. */
+export async function loadPlaces(): Promise<GeoPlace[]> {
+  const raw = JSON.parse(await readFile(path.join(GEO_DIR, 'places.json'), 'utf-8'));
+  return geoPlaceSchema.array().parse(raw) as GeoPlace[];
+}
+
+/** Loads curated cities — flagship city places from places.json. */
 export async function loadCities(): Promise<GeoCity[]> {
-  const raw = JSON.parse(await readFile(path.join(GEO_DIR, 'cities.json'), 'utf-8'));
-  return geoCitySchema.array().parse(raw) as GeoCity[];
+  const places = await loadPlaces();
+  return places.filter((p) => p.kind === 'city').map(placeToCity);
+}
+
+/** Loads linear and areal geography features (rivers, mountains, …). */
+export async function loadFeatures(): Promise<GeoFeature[]> {
+  const raw = JSON.parse(await readFile(path.join(GEO_DIR, 'features.json'), 'utf-8'));
+  return geoFeatureSchema.array().parse(raw) as GeoFeature[];
 }
 
 /** Royal succession for a city; null while the lineage is still being researched. */

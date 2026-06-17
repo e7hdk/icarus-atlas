@@ -1,0 +1,39 @@
+{
+  "id": "argus-arestor",
+  "name": "Argus",
+  "greekName": "Argos (Ἄργος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "builder of the Argo",
+    "Athena's pupil",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Arestor, whom Athena guided in building the fifty-oared Argo and fitting a speaking timber from Dodona in her prow — not to be confused with Argus son of Phrixus at Colchis.",
+      "sources": [
+        "apollonius",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.111–114, 1.321–326; Bibliotheca 1.9.17; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius makes Athena teach Argus son of Arestor to build the ship at Pagasae; when she set the oak of Dodona in the prow, the timber spoke and prophesied. Acastus came down from Iolcus with this Argus to join the muster.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.111–114, 1.224, 1.321–326"
+    },
+    {
+      "text": "Hyginus also names an Argive Argus son of Polybus and Argia — or of Danaus — clad in a bull's hide, builder of the Argo; the name is shared among several craftsmen in the tradition.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14"
+    }
+  ]
+}

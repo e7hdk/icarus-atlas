@@ -1,0 +1,38 @@
+{
+  "id": "polydorus-priamid",
+  "name": "Polydorus",
+  "greekName": "Polydōros (Πολύδωρος)",
+  "type": "hero",
+  "domains": ["son of Priam", "youngest and dearest", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Youngest-born son of Priam, dearest in his father's eyes and surpassing all in swiftness of foot, whom Achilles pierced with his spear when the boy in his folly made show of his fleetness in the rout — distinct from Polydorus son of Cadmus (`polydorus`), the Epigoni captain (`polydorus-epigoni`), and the Zacynthian suitor (`polydorus-zacynthus`).",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.375–415, 21.65–95; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Him would his father nowise suffer to fight, for that among his children he was the youngest born and was dearest in his eyes; and in swiftness of foot he surpassed all. And lo, now in his folly, making show of his fleetness of foot, he ran among the foremost fighters until he met Achilles, who smote him with a cast of his sharp spear in the midst of the back as he was fleeing, and the point went through his breast.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    },
+    {
+      "text": "When Lycaon clasped Achilles' knees at the river, he reminded the son of Peleus that they twain were born of one mother, and that Achilles had already laid low amid the foremost foot-men even godlike Polydorus when he had smitten him with a cast of the sharp spear.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.65–95"
+    },
+    {
+      "text": "Apollodorus counts Polydorus among the sons whom Hecuba bore to Priam, in the roll that runs Deiphobus, Helenus, Pammon, Polites, Antiphus, Hipponous, Polydorus, and Troilus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

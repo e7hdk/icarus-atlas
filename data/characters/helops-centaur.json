@@ -1,0 +1,33 @@
+{
+  "id": "helops-centaur",
+  "name": "Helops",
+  "greekName": "Helops (Ἕλοψ)",
+  "romanName": "Helops",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the javelin death"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur at the wedding battle pierced through the temples by a javelin from right ear to left.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid says Lycus and Chromis fell before Pirithous with less glory to the conqueror than Helops or Dictys: Helops was killed by a javelin that pierced his temples from the right side clear through to his left ear.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

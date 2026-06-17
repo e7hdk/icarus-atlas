@@ -38,6 +38,10 @@
     {
       "city": "troy",
       "sources": ["homer", "apollodorus", "ovid"]
+    },
+    {
+      "city": "buthrotum",
+      "sources": ["apollodorus", "ovid", "pausanias"]
     }
   ]
 }

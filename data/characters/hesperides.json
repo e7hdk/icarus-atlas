@@ -3,17 +3,33 @@
   "name": "The Hesperides",
   "greekName": "Hesperides (Ἑσπερίδες)",
   "type": "nymph",
-  "domains": ["evening", "sunset", "golden apples", "the far west"],
-  "epithets": ["Nymphs of the West", "Daughters of Evening", "Keepers of the Golden Apples"],
+  "domains": [
+    "evening",
+    "sunset",
+    "golden apples",
+    "the far west"
+  ],
+  "epithets": [
+    "Nymphs of the West",
+    "Daughters of Evening",
+    "Keepers of the Golden Apples"
+  ],
   "summary": [
     {
       "text": "The nymphs of evening and the golden light of sunset, who tend a tree of golden apples in a garden at the world's western edge, beyond the stream of Ocean.",
-      "sources": ["hesiod", "apollonius"],
+      "sources": [
+        "hesiod",
+        "apollonius"
+      ],
       "citation": "Theogony 215–216"
     },
     {
       "text": "Hesiod calls them children of Nyx, born of Night alone, while Apollodorus and others make them daughters of Atlas.",
-      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Theogony 215; Bibliotheca 2.5.11",
       "topic": "hesperides-parentage"
     }
@@ -21,25 +37,41 @@
   "story": [
     {
       "text": "The Hesperides are the spirits of evening, named for Hesperos, the western star of dusk. They dwell at the far edge of the world beyond glorious Ocean, where the sun goes down, and there they guard the rich, golden apples and the trees that bear them. Hesiod sets their garden among the children of Night, in the deep west where day surrenders to darkness.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 215–216"
     },
     {
       "text": "Their parentage is disputed among the poets. Hesiod says Nyx, dark Night, bore them alone, with no father named. Hyginus likewise lists them among the offspring of Nox. Apollodorus and others instead make them daughters of Atlas, the Titan who upholds the sky at the same western limit where their garden lies.",
-      "sources": ["hesiod", "hyginus", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "hyginus",
+        "apollodorus"
+      ],
       "citation": "Theogony 215; Fabulae, preface; Bibliotheca 2.5.11",
       "topic": "hesperides-parentage"
     },
     {
       "text": "In their garden grows the tree of golden apples that Gaia, the Earth, gave to Hera as a wedding gift when she married Zeus. So that the fruit should never be stolen, it was set under the coils of Ladon, the never-sleeping serpent. Apollonius shows the Hesperides busied about the tree and chanting their lovely song until the day Heracles came and laid the dragon low.",
-      "sources": ["apollodorus", "apollonius"],
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
       "citation": "Bibliotheca 2.5.11; Argonautica 4.1393–1405"
     },
     {
       "text": "It was for these apples that Heracles undertook one of his labours, sent by Eurystheus to fetch the golden fruit from the world's end. Pausanias records the hero returning safe with the apples of the Hesperides, and Greek sculptors loved to show Atlas bearing the sky while Heracles came for the fruit. Their name became a byword for radiant treasure: Ovid likens apples so bright you would think the Hesperides themselves had given them.",
-      "sources": ["apollodorus", "pausanias", "ovid"],
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "ovid"
+      ],
       "citation": "Bibliotheca 2.5.11; Description of Greece 2.13.8; Metamorphoses 11.114"
     }
   ],
-  "cluster": "night-court"
+  "cluster": "night-court",
+  "kinds": [
+    "hesperid"
+  ]
 }

@@ -1,0 +1,41 @@
+{
+  "id": "eumaeus",
+  "name": "Eumaeus",
+  "greekName": "Eumaios (Εὔμαιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "swineherd of Odysseus",
+    "faithful servant of Ithaca"
+  ],
+  "summary": [
+    {
+      "text": "Odysseus' swineherd on Ithaca, a Phaeacian-born slave loyal through twenty years of his master's absence, who first received the disguised king in his hut and fought beside him when the wooers fell.",
+      "sources": ["homer"],
+      "citation": "Odyssey 14–16; 21–22; 24.330–360"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes Eumaeus the moral centre of the homecoming. Kidnapped from Syrie by Phoenician traders and sold on Ithaca, he was reared in Odysseus' house and given charge of the swine. When the stranger came to his steading — though the swineherd did not yet know him for his lord — he welcomed the guest with a hog's feast and honest speech, refusing to believe the wooers' claim that Odysseus would never return.",
+      "sources": ["homer"],
+      "citation": "Odyssey 14.50–70, 14.150–190, 15.403–484"
+    },
+    {
+      "text": "In the final battle he stood with Telemachus, Philoetius, and Odysseus against the suitors; and when the kin of the dead rallied against the house, Eumaeus and Philoetius armed at Laertes' side.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 22.211–277; 24.330–360; Epitome 7.33"
+    },
+    {
+      "text": "His own story explains his loyalty: born on Syrie, he was kidnapped by Phoenician traders, bought on Ithaca by Laertes, and reared in Odysseus' house. When Athena brought the disguised king to the steading, Eumaeus offered the best hog, spoke honestly of his master's absence, and refused the suitors' gold — and later led Telemachus back from Pylos without knowing the beggar was his lord.",
+      "sources": ["homer"],
+      "citation": "Odyssey 14.50–70, 14.150–190, 15.403–484; 16.1–154"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

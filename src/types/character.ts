@@ -30,6 +30,44 @@ export const CHARACTER_TYPES = [
 
 export type CharacterType = (typeof CHARACTER_TYPES)[number];
 
+/** Controlled mythological sub-taxonomy — display and search only.
+ *  Primary `type` alone drives TYPE_GLOW, star size/pulse, and the mortal clock.
+ *  Never add these as CharacterType values (Dryad ≠ a glow palette slot). */
+export const NYMPH_KINDS = [
+  'oceanid',
+  'nereid',
+  'naiad',
+  'dryad',
+  'hamadryad',
+  'oread',
+  'pleiad',
+  'melia',
+  'nephele',
+  'hesperid',
+] as const;
+
+export const CREATURE_KINDS = [
+  'centaur',
+  'cyclops',
+  'hecatoncheir',
+  'gorgon',
+  'harpy',
+  'siren',
+  'giant',
+  'dragon',
+  'sphinx',
+  'chimera',
+] as const;
+
+export const FIGURE_KINDS = [...NYMPH_KINDS, ...CREATURE_KINDS] as const;
+
+export type NymphKind = (typeof NYMPH_KINDS)[number];
+export type CreatureKind = (typeof CREATURE_KINDS)[number];
+export type FigureKind = (typeof FIGURE_KINDS)[number];
+
+/** At most three kinds per figure (primary + secondary + tertiary taxonomy). */
+export const MAX_FIGURE_KINDS = 3;
+
 export const RELATION_TYPES = [
   'parent',
   'consort',
@@ -58,6 +96,10 @@ export interface Character {
   greekName: string;
   romanName?: string;
   type: CharacterType;
+  /** Mythological sub-class (Oceanid, Dryad, Centaur, …). Optional on legacy
+   *  figures; required on new nymph and creature entries. Does not affect glow
+   *  or layout — see docs/NYMPHS.md §2 and docs/PLAN.md §4. */
+  kinds?: FigureKind[];
   domains: string[];
   epithets?: string[];
   /** Hover card text; the renderer picks the best match for the active lens. */

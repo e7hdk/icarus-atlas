@@ -1,0 +1,44 @@
+{
+  "id": "orpheus",
+  "name": "Orpheus",
+  "greekName": "Orpheus (Ὀρφεύς)",
+  "romanName": "Orpheus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the lyre",
+    "prophetic song",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Oeagrus and the Muse Calliope, Thracian minstrel of the Argo whose counter-melody saved the crew from the Sirens when Butes alone was lost to their song.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.23, 4.905–909; Fabulae 14",
+      "topic": "orpheus-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius places him first in the muster after Jason: from the Pierian height came Orpheus, whom Calliope bore to Oeagrus near Pimpleia, and his song held even the Clashing Rocks when the Argo passed. At the Sirens' isle he chanted a counter-melody so sweet that the crew rowed on unharmed.",
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
+      "citation": "Argonautica 1.23–34, 4.891–919; Bibliotheca 1.9.16, 1.9.25"
+    },
+    {
+      "text": "Hyginus names him prophet and cithara-player from Pieria on Olympus, and sets him at the prow to give the bosun's calls; Pausanias rejects the descent from Calliope as a Greek untruth.",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Fabulae 14; Description of Greece 9.30.4",
+      "topic": "orpheus-parentage"
+    }
+  ]
+}

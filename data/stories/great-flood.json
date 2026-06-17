@@ -6,28 +6,63 @@
   "parent": null,
   "era": 2,
   "summary": {
-    "text": "Zeus resolved to destroy the men of the Bronze Age beneath the waters. One chest rode the flood, carrying Deucalion and Pyrrha — and from the stones they cast over their shoulders a new human race was born.",
-    "sources": ["apollodorus", "ovid", "hyginus"],
-    "citation": "Apollod. 1.7.2; Ov. Met. 1.163-415; Hyg. Fab. 153"
+    "text": "Greece knew more than one deluge: Pausanias remembers an Ogygian flood that drowned Boeotia and Attica in primeval kingship, while Hesiod's Bronze Age and Apollodorus' Thessalian cataclysm centre on Deucalion and Pyrrha — the just pair who rode out the waters and refathered mankind from thrown stones.",
+    "sources": ["hesiod", "apollodorus", "ovid", "hyginus", "pausanias"],
+    "citation": "Hes. WD 143-201; Apollod. 1.7.2; Ov. Met. 1.163-415; Hyg. Fab. 153; Paus. 1.38.7, 9.5.1"
   },
   "chapters": [
     {
+      "title": "The Ogygian deluge",
+      "text": "Before Deucalion, local tradition placed a primeval flood in the reign of Ogyges — in Boeotia the waters of lake Copais rose and drowned the valley, and Attica too remembered an Ogygian inundation in which the land went kingless until Cecrops. Pausanias preserves both memories; Apollodorus' systematic handbook passes straight to the Thessalian deluge of Deucalion and names no flood of Ogyges — so the Greek world kept one catastrophe or two, depending on the teller.",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 1.38.7, 9.5.1; Apollod. 1.7.2",
+      "topic": "ogyges-deluge-tradition"
+    },
+    {
+      "title": "The ages before the waters",
+      "text": "Hesiod's Works and Days counts five races of men — gold, silver, bronze, heroes and iron — each declining until the violent Bronze Age provoked Zeus to destroy mankind. That chronology is told at length in the episode The Five Ages of Man; here it suffices that the flood-saga and the age-saga meet when the Bronze race is swept away and only the pious survive.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 109-201"
+    },
+    {
+      "title": "The council of the gods",
+      "text": "In Ovid's telling Jupiter summoned the gods and declared mankind must perish — the last proof had been Lycaon's impious table, when a king of Arcadia served human flesh to a god in disguise and was turned into a howling wolf. The council approved the sentence, and sea and sky together unmade the earth.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 1.163-312; Apollod. 3.8.1"
+    },
+    {
       "title": "The wrath of Zeus",
-      "text": "When Zeus would destroy the men of the Bronze Age, he loosed the rains of heaven. In Ovid's telling the last offence was Lycaon's impious table — a king who served human flesh to a god and was turned into a wolf.",
-      "sources": ["apollodorus", "ovid"],
-      "citation": "Apollod. 1.7.2; Ov. Met. 1.163-312"
+      "text": "Apollodorus tells it more briefly: when Zeus would destroy the men of the Bronze Age, he loosed the rains of heaven and flooded the greater part of Greece. Prometheus warned his son Deucalion, king in the regions about Phthia, to prepare a chest stocked with provisions.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.7.2"
     },
     {
       "title": "The chest on the waters",
-      "text": "By the advice of his father Prometheus, Deucalion built a chest, stored it with provisions, and embarked with Pyrrha. Nine days and nine nights he drifted over the drowned world before grounding on the heights of Parnassus.",
-      "sources": ["apollodorus", "ovid"],
-      "citation": "Apollod. 1.7.2; Ov. Met. 1.313-347"
+      "text": "Deucalion embarked with Pyrrha — daughter of Epimetheus and Pandora in the later tradition. Nine days and nine nights they drifted over the drowned world. Apollodorus and Ovid ground them on the heights of Parnassus when the rain ceased; Hyginus instead sends them fleeing to Mount Etna in Sicily when Phaethon's fall had set the world ablaze and Jove let loose every river.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.313-347; Hyg. Fab. 152A, 153",
+      "topic": "flood-landing"
+    },
+    {
+      "title": "Who survived?",
+      "text": "Ovid leaves only the two of them — 'we two are the multitude; the sea holds all the rest.' Hyginus agrees that the whole human race perished except Deucalion and Pyrrha. But Apollodorus keeps a back door open: all men were destroyed except a few who fled to the high mountains in the neighbourhood; and Pausanias names some of them, from Megarus who swam to Gerania to the Parnassians who followed howling wolves to the heights.",
+      "sources": ["ovid", "hyginus", "apollodorus", "pausanias"],
+      "citation": "Ov. Met. 1.325-327, 1.355; Hyg. Fab. 153; Apollod. 1.7.2; Paus. 1.40.1, 10.6.2",
+      "topic": "flood-survivors"
     },
     {
       "title": "The bones of the mother",
-      "text": "Bidden by the oracle to cast the bones of their mother behind them, they understood: the stones of the earth. Those Deucalion threw became men, those Pyrrha threw became women — and their son Hellen gave his name to the Hellenes.",
+      "text": "Ovid sends the pair to the oracle of Themis by the Cephisus, who riddles them to cast the bones of their great mother — the stones of Earth. Apollodorus has Zeus send Hermes to grant Deucalion whatever he chooses; he chooses people and throws stones over his head at the god's bidding, whence laoi, 'people', from laas, 'stone'. Hyginus makes the survivors petition Jove directly. Those Deucalion threw became men, those Pyrrha threw became women.",
       "sources": ["apollodorus", "ovid", "hyginus"],
-      "citation": "Apollod. 1.7.2; Ov. Met. 1.348-415; Hyg. Fab. 153"
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.367-415; Hyg. Fab. 153",
+      "topic": "flood-repopulation"
+    },
+    {
+      "title": "The father of Hellen",
+      "text": "From the stone-born pair came Hellen, eponym of the Hellenes. Apollodorus makes him the first child Deucalion had by Pyrrha — though in the same breath he records the variant that Zeus was his father. Hyginus lists Hellen among the sons of Jove by Pyrrha, daughter of Epimetheus, and from Hellen the great dynasties of Greece would trace their descent.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 1.7.2; Hyg. Fab. 155",
+      "topic": "hellen-paternity"
     }
   ],
   "cast": [
@@ -35,13 +70,20 @@
     { "id": "deucalion", "name": "Deucalion", "role": "The just survivor" },
     { "id": "pyrrha", "name": "Pyrrha", "role": "First woman of the new race" },
     { "id": "prometheus", "name": "Prometheus", "role": "The forewarner" },
-    { "id": "themis", "name": "Themis", "role": "Voice of the oracle" },
-    { "id": "hellen", "name": "Hellen", "role": "Father of the Hellenes" }
+    { "id": "themis", "name": "Themis", "role": "Voice of the oracle in Ovid" },
+    { "id": "hermes", "name": "Hermes", "role": "Messenger who grants Deucalion's wish" },
+    { "id": "hellen", "name": "Hellen", "role": "Father of the Hellenes" },
+    { "id": "lycaon", "name": "Lycaon", "role": "The impious king who triggered the flood in Ovid" },
+    { "id": "pandora", "name": "Pandora", "role": "Mother of Pyrrha in Apollodorus" },
+    { "id": "epimetheus", "name": "Epimetheus", "role": "Father of Pyrrha" },
+    { "name": "Ogyges", "role": "Primeval king in whose reign Boeotia and Attica remembered a flood" }
   ],
   "places": [],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "1.7.2" },
+    { "source": "hesiod", "work": "Works and Days", "citation": "109-201" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.7.2, 3.8.1" },
     { "source": "ovid", "work": "Metamorphoses", "citation": "1.163-415" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "153" }
+    { "source": "hyginus", "work": "Fabulae", "citation": "152A, 153, 155" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.38.7, 1.40.1, 9.5.1, 10.6.2" }
   ]
 }

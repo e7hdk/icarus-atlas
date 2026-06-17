@@ -1,0 +1,43 @@
+{
+  "id": "meneptolemus-dulichium",
+  "name": "Meneptolemus",
+  "greekName": "Menēptolemos (Μηνέπτολεμος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — attested only in the Epitome list of wooers who came against Odysseus' house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Meneptolemus among the suitors who devoured Odysseus' substance, listed after Philodemus and before Damastor in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

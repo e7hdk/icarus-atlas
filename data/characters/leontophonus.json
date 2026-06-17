@@ -1,0 +1,31 @@
+{
+  "id": "leontophonus",
+  "name": "Leontophonus",
+  "greekName": "Leontophonos (Λεοντοφόνος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Odysseus",
+    "Aetolian line"
+  ],
+  "summary": [
+    {
+      "text": "In one post-Homeric tradition recorded by Apollodorus, the son whom Odysseus left in Aetolia when he married the daughter of Thoas son of Andraemon and died there in old age — an ending wholly distinct from Homer's peaceful restoration on Ithaca and from the Telegonus tradition.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.40"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus reports, as a variant ending to the Odyssey, that after the kinsfolk of the slain suitors accused Odysseus, Neoptolemus — king of the islands off Epirus and hoping to gain Cephallenia if Odysseus were removed — condemned him to exile. Odysseus went to Aetolia to Thoas son of Andraemon, married his daughter, and left a son Leontophonus by her before he died in old age.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.40"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pleuron",
+      "sources": ["apollodorus", "homer"]
+    }
+  ]
+}

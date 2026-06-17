@@ -1,0 +1,26 @@
+{
+  "city": "aea-colchis",
+  "reigns": [
+    {
+      "ruler": "Aeetes",
+      "characterId": "aeetes",
+      "sources": ["apollodorus", "hesiod", "homer"],
+      "citation": "Bibliotheca 1.9.1; Theogony 956–959; Odyssey 10.137",
+      "note": "King of Colchis at Aea, guardian of the Golden Fleece, until his brother Perses deposed him after the Argonaut affair."
+    },
+    {
+      "ruler": "Perses",
+      "characterId": "perses-colchis",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Fabulae 27, p.35",
+      "note": "Brother of Aeetes who seized the Colchian throne; slain when Medea returned unknown from her exile."
+    },
+    {
+      "ruler": "Aeetes",
+      "characterId": "aeetes",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28",
+      "note": "Restored to the kingship of Colchis after Medea killed his usurping brother Perses."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "phoenix-myrmidon",
+  "name": "Phoenix",
+  "greekName": "Phoinix (Φοῖνιξ)",
+  "type": "hero",
+  "domains": ["tutor of Achilles", "the embassy of Book 9", "the Dolopians"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Amyntor, dear to Zeus, who fled his father's house after a concubine's false accusation, was healed of blindness by Chiron, and was made by Peleus king over the Dolopians — tutor and father-figure to Achilles at Troy.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 9.420–480; Bibliotheca 3.13.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the embassy of Book 9 he tells his own tale. He left Hellas, home of fair women, fleeing strife with his father Amyntor son of Ormenus: the old king cherished a fair-haired concubine and scorned his wife, Phoenix's mother, who begged her son to lie with the other woman so that Amyntor might hate her — and he yielded, until his father cursed him never to beget children on a woman and drove him out. Peleus received him, made him king of the Dolopians among the Myrmidons, and reared him to be a father to Achilles.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.420–480"
+    },
+    {
+      "text": "Apollodorus adds the detail of blindness: Amyntor blinded him on the concubine Phthia's false charge of seduction, but Peleus brought him to Chiron, who restored his sight, and thereafter Peleus set him over the Dolopians. He accompanied Achilles to Troy as his counsellor.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8"
+    },
+    {
+      "text": "Agamemnon chose him to lead the embassy with Ajax and Odysseus, begging Achilles to accept Briseis back and rich gifts. Phoenix wept, reminded the hero of Peleus' charge to be a speaker of words and a doer of deeds, and pleaded in vain — Achilles would not relent until Patroclus was dead.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 9.165–617; Epitome 4.3"
+    },
+    {
+      "text": "He is not the Phoenician Phoenix son of Agenor who gave his name to Phoenicia — only the old Myrmidon lord who sits beside Achilles' bed in the hero's hut.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1; 3.13.8"
+    }
+  ]
+}

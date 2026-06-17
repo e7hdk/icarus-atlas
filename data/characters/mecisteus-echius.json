@@ -1,0 +1,27 @@
+{
+  "id": "mecisteus-echius",
+  "name": "Mecisteus",
+  "greekName": "Mecisteus (Μηκιστεύς)",
+  "type": "hero",
+  "domains": ["son of Echius", "Achaean fighter"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Echius, who twice bore wounded comrades from the field with goodly Alastor and was himself slain by Polydamas in the forefront of the fight — distinct from Mecisteus son of Talaus at Argos and from the Dulichian suitor.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 8.295–330, 13.405–420, 15.315–340; Bibliotheca 1.9.13; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Teucer was worsted and his brother stooped to cover him, two trusty comrades bore him groaning to the ships — Mecisteus son of Echius and goodly Alastor. So too when Hypsenor fell, the same pair lifted him from the throng.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330, 13.405–420"
+    },
+    {
+      "text": "In the scattered battle when Apollo gave glory to Hector, Polydamas slew Mecisteus among the foremost fighters striving at the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ]
+}

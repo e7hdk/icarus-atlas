@@ -1,0 +1,65 @@
+{
+  "id": "trials-at-colchis",
+  "title": "The Trials at Colchis",
+  "greekTitle": "ἡ μαγεία τῆς Μηδείας",
+  "kind": "episode",
+  "parent": "argonautica",
+  "era": 7.05,
+  "summary": {
+    "text": "At Aea, Aeetes set Jason to yoke fire-breathing bulls and sow a field with dragon's teeth; only Medea, priestess of Hecate, could give him the charms to survive — and when Eros struck her with desire, she stole the Golden Fleece from the sleepless dragon and fled with the Argonauts.",
+    "sources": ["apollonius", "apollodorus", "hesiod"],
+    "citation": "Apoll. Arg. 3.1–4.4; Apollod. 1.9.23; Hes. Th. 956–961"
+  },
+  "chapters": [
+    {
+      "title": "Aeetes' kingdom",
+      "text": "Aeetes son of Helios ruled Aea on the Phasis, where Phrixus had hung the golden fleece in the grove of Ares. Hesiod names his wife fair-cheeked Idyia, daughter of Ocean, and their neat-ankled daughter Medea — a witch who would cross the sea for a stranger's oath.",
+      "sources": ["hesiod", "apollonius", "apollodorus"],
+      "citation": "Hes. Th. 956–961; Apoll. Arg. 3.241; Apollod. 1.9.23"
+    },
+    {
+      "title": "The tasks set",
+      "text": "Jason came before the king and asked for the fleece. Aeetes, remembering how Phrixus had come on the ram, set him a trial like his own: yoke two bronze-footed, fire-breathing bulls, plough a field with them, and sow it with dragon's teeth — then fight the armed men who would spring from the furrows.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. 1.9.23; Apoll. Arg. 3.397–421"
+    },
+    {
+      "title": "Eros and the priestess",
+      "text": "Medea was priestess of Hecate and knew every drug. In Apollonius, Hera and Athena beguiled Aphrodite to send Eros — not Hesiod's primordial Eros born with Chaos, but the goddess's unruly child — to shoot Medea with desire for Jason. She promised to help him yoke the bulls and win the fleece if he would swear to wed her and carry her home.",
+      "sources": ["apollonius", "hesiod"],
+      "citation": "Apoll. Arg. 3.83–159, 3.475–491; Hes. Th. 116–122",
+      "topic": "eros-origin"
+    },
+    {
+      "title": "The brazen bulls",
+      "text": "By night at Hecate's pit Medea anointed Jason with charms that made him proof against fire and invincible in battle. He yoked the bulls, ploughed the field, sowed the teeth, and when the earth-born warriors rose he cast a stone among them so they turned on one another and fell.",
+      "sources": ["apollodorus", "apollonius", "ovid"],
+      "citation": "Apollod. 1.9.23; Apoll. Arg. 3.705–824; Ov. Met. 7.121–158"
+    },
+    {
+      "title": "The dragon and the fleece",
+      "text": "Aeetes still refused the prize. Medea led Jason to the oak where the sleepless dragon coiled around the golden hide; she drugged the beast with herbs or sang it to sleep, and Jason took the fleece. That night the Argonauts rowed away with Medea aboard and the king's wrath rising behind them.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. 1.9.23; Apoll. Arg. 4.121–173"
+    }
+  ],
+  "cast": [
+    { "id": "jason", "name": "Jason", "role": "Hero who faced the trials" },
+    { "id": "aeetes", "name": "Aeetes", "role": "King who set the tasks" },
+    { "id": "medea-colchis", "name": "Medea", "role": "Witch who won the fleece for him" },
+    { "id": "idyia-oceanid", "name": "Idyia", "role": "Medea's Oceanid mother" },
+    { "id": "hecate", "name": "Hecate", "role": "Goddess of Medea's rites" },
+    { "id": "eros", "name": "Eros", "role": "He who kindled Medea's desire" },
+    { "id": "hera", "name": "Hera", "role": "Patron who set the love in motion" },
+    { "id": "athena", "name": "Athena", "role": "Ally of Hera at Colchis" }
+  ],
+  "places": [
+    { "id": "aea-colchis", "name": "Aea", "role": "City of Aeetes and the guarded fleece" }
+  ],
+  "attestations": [
+    { "source": "apollonius", "work": "Argonautica", "citation": "3.1–4.173" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.9.23" },
+    { "source": "hesiod", "work": "Theogony", "citation": "956–961, 116–122" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "7.121–158" }
+  ]
+}

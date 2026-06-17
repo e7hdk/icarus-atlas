@@ -1,0 +1,19 @@
+{
+  "city": "argos-amphilochicum",
+  "reigns": [
+    {
+      "ruler": "Alcmaeon",
+      "characterId": "alcmaeon",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "note": "Colonizer who gathered settlers from Epirus and founded the Acarnanian settlement."
+    },
+    {
+      "ruler": "Acarnan",
+      "characterId": "acarnan",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.7",
+      "note": "Eponymous son of Alcmaeon after whom the region was named."
+    }
+  ]
+}

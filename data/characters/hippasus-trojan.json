@@ -1,0 +1,28 @@
+{
+  "id": "hippasus-trojan",
+  "name": "Hippasus",
+  "greekName": "Hippasos (Ἱππασός)",
+  "type": "hero",
+  "domains": ["father of Charops and Socus", "Trojan house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Charops (`charops-trojan`), wealthy Socus (`socus-trojan`), and Hypsenor (`hypsenor-trojan`), the godlike brothers and shepherd of the people whom Agamemnon, Odysseus, and Deïphobus met in the press when the battle surged about the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–485, 13.405–420"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon smote Charops son of Hippasus with a thrust of his spear, Socus came close to Odysseus to bear his brother aid and boasted that this day Odysseus should either vaunt over both sons of Hippasus or lose his life. Later, when the battle surged about the ships, Deïphobus smote Hypsenor son of Hippasus, shepherd of the people, in the liver beneath the midriff.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–485, 13.405–420"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

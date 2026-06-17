@@ -1,0 +1,26 @@
+{
+  "city": "tiryns",
+  "reigns": [
+    {
+      "ruler": "Proetus",
+      "characterId": "proetus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.2.1; Paus. 2.25.7",
+      "note": "Driven from Argos, he returned with a Lycian army and fortified Tiryns with the Cyclopes' help."
+    },
+    {
+      "ruler": "Perseus",
+      "characterId": "perseus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3",
+      "note": "After killing Acrisius he exchanged Argos for Tiryns with Megapenthes and founded walled Mycenae."
+    },
+    {
+      "ruler": "Sthenelus",
+      "characterId": "sthenelus-perseid",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.4.5–6",
+      "note": "Seized the thrones of Mycenae and Tiryns after banishing Amphitryon from Argos."
+    }
+  ]
+}

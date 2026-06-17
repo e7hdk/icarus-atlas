@@ -1,0 +1,28 @@
+{
+  "id": "laogonus-trojan",
+  "name": "Laogonus",
+  "greekName": "Laogonos (Λαογόνος)",
+  "type": "hero",
+  "domains": ["son of Bias", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Bias (`bias-trojan`) whom Achilles thrust from his chariot to the ground with a cast of his spear when the son of Peleus raged in the rout — distinct from Laogonus son of Onetor (`laogonus-onetorid`), priest of Idaean Zeus, whom Meriones slew in *Iliad* 16.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then setting upon Laogonus and Dardanus, sons twain of Bias, Achilles thrust them both from their chariot to the ground, smiting the one with a cast of his spear and the other with his sword in close fight.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

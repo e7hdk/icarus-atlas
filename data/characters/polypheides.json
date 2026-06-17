@@ -1,0 +1,37 @@
+{
+  "id": "polypheides",
+  "name": "Polypheides",
+  "greekName": "Polypheides (Πολυφείδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Melampodid seer",
+    "father of Theoclymenus",
+    "Hyperesia"
+  ],
+  "summary": [
+    {
+      "text": "Son of Mantius in the Melampodid line — Apollo made him a seer, far the best of mortals after Amphiaraus was dead; wroth with his father, he removed to Hyperesia and there begot Theoclymenus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–260"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer traces the house from Melampus of Pylos through Antiphates and Mantius. Mantius begot Polypheides and Cleitus; golden-throned Dawn snatched Cleitus away for his beauty, but Apollo made Polypheides high of heart a prophet surpassing all mortals once Amphiaraus lay dead in Thebes.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–242"
+    },
+    {
+      "text": "Polypheides waxed wroth with his father and removed to Hyperesia, where he dwelt and prophesied to all men. His son Theoclymenus, of the same far-off seer-line, would later find Telemachus pouring libations by his ship at Pylos and sail with him to rocky Ithaca.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.242–260"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "peisistratus-nestor",
+  "name": "Peisistratus",
+  "greekName": "Peisistratos (Πεισίστρατος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "companion of Telemachus",
+    "the voyage to Sparta"
+  ],
+  "summary": [
+    {
+      "text": "Nestor's son at sandy Pylos — leader among his brothers, still unwed in the palace — who welcomed Telemachus to the feast on the shore, lodged him under the echoing portico, and drove him onward to Menelaus in Sparta.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.36–50, 3.375–400, 4.150–180, 15.1–45"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Telemachus and Athena's companion Mentor came ashore at Pylos, Peisistratus was first to greet them: he took both by the hand, set them beside his brother Thrasymedes and his father at the feast on fleeces upon the sand, and gave them portions of the inner meat with wine in a golden cup.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.36–50"
+    },
+    {
+      "text": "Nestor could tell the prince nothing of Odysseus, but lodged Telemachus under the portico and sent him on to Sparta with Peisistratus, who yoked the fiery-hoofed horses and shared the chariot road. At Menelaus' hall, when the youth wept at mention of his father, Peisistratus answered for him with prudent shame — asking the host to let the boy grieve in silence on his first coming.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.375–415; 4.1–180"
+    },
+    {
+      "text": "On the homeward journey he slept beside Telemachus until the prince roused him with a touch of the heel at dawn, bidding him bring up the horses for the road — the companion who had carried Odysseus' son from Pylos to Sparta and back toward Ithaca.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.1–45"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

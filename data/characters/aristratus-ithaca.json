@@ -1,0 +1,31 @@
+{
+  "id": "aristratus-ithaca",
+  "name": "Aristratus",
+  "greekName": "Aristratos (Ἀρίστρατος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "One of the twelve suitors from Ithaca itself in Apollodorus' catalogue — attested only in the Epitome list of Penelope's wooers from the island.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Aristratus among the twelve wooers of Penelope who came from Ithaca itself, listed with Antinous, Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Helenus, Dulicheus, and Ctesippus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

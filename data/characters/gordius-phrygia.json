@@ -1,0 +1,31 @@
+{
+  "id": "gordius-phrygia",
+  "name": "Gordius",
+  "greekName": "Gordios (Γόρδιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "father of Midas",
+    "Phrygian kingship"
+  ],
+  "summary": [
+    {
+      "text": "Father of Midas, to whom tradition ascribed the founding of Phrygian cities beyond the Sangarius, including Ancyra.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.4.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias, telling how the Gauls crossed the Sangarius and captured Ancyra, records that Midas son of Gordius had founded that Phrygian city in former times — the only explicit genealogical anchor for Gordius in our sources.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.4.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "gordion",
+      "sources": ["pausanias"]
+    }
+  ]
+}

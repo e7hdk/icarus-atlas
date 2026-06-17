@@ -1,0 +1,50 @@
+{
+  "id": "mermerus-corinth",
+  "name": "Mermerus",
+  "greekName": "Mermeros (Μέρμερος)",
+  "romanName": "Mermerus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Jason and Medea",
+    "the Corinthian tomb",
+    "victim of the poisoned gifts"
+  ],
+  "summary": [
+    {
+      "text": "Son of Jason and Medea at Corinth, named in Pausanias' account of the tomb above the Well of Glauce — one of the two boys the Corinthians stoned to death because of Medea's gifts to Glauce, while Apollodorus also knows a tradition that Medea herself killed the children when she fled.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.28; Description of Greece 2.3.6–7"
+    },
+    {
+      "text": "Not to be confused with Mermerus son of Gyrtius, slain at Troy, nor with Mermerus father of Ilus at Ephyre in the Odyssey.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.510–520; Odyssey 1.230–275"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus leaves the Corinthian sons unnamed but records the fork in their fate: some say Medea killed the children she had borne Jason when she escaped on the dragon chariot, while another tradition has her leave them still infants as suppliants on the altar of Hera of the Height, where the Corinthians removed and wounded them to death.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28",
+      "topic": "medea-children-corinth"
+    },
+    {
+      "text": "Pausanias saw their memorial at Corinth: above the Well of Glauce, where the bride threw herself hoping to cure Medea's poison, stands what is called the tomb of Medea's children. Their names were Mermerus and Pheres, and they were stoned to death by the Corinthians because of the gifts Medea sent to Glauce; until Roman times the city still offered them sacrifices, and Corinthian children cut their hair and wore black for them.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.6–7",
+      "topic": "medea-children-corinth"
+    },
+    {
+      "text": "Pausanias also cites Eumelus' older Corinthian tale: Jason was king at Corinth through Medea, and she carried each newborn to Hera's sanctuary and concealed the child there, believing they would become immortal — until Jason detected her and refused pardon, sailing away to Iolcus while she too departed.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

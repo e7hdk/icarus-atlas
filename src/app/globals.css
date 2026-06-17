@@ -55,6 +55,47 @@ body {
   background: rgb(192 132 252 / 0.35);
 }
 
+/* Map point labels (cities, places, regions) drawn as DOM markers in real
+   Cinzel — pixel-identical to the rest of the atlas, unlike MapLibre's WebGL
+   SDF text. Managed by MapLabels via maplibregl.Marker. Colour + visibility are
+   set imperatively per marker; this block owns the static look. */
+.map-label {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  opacity: 0;
+  text-shadow:
+    0 0 3px rgb(5 2 15 / 0.92),
+    0 0 7px rgb(5 2 15 / 0.7),
+    0 1px 2px rgb(5 2 15 / 0.85);
+  transition: opacity 220ms ease, color 200ms ease;
+  will-change: opacity;
+}
+.map-label--city {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+.map-label--place {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+.map-label--feature {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+.map-label--region {
+  font-size: 13px;
+  letter-spacing: 0.22em;
+}
+.map-label--sub {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
 /* Relation orrery (character page): ring rotation, hover pause, center pulse */
 @keyframes orrery-spin {
   from { transform: rotate(0); }
@@ -86,4 +127,24 @@ body {
 @keyframes search-panel-in {
   from { opacity: 0; transform: translateY(10px) scale(0.985); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* MapLibre Lands map — canvas fills the container; controls stay hidden (M9.4). */
+.maplibregl-map {
+  font-family: var(--font-body);
+  height: 100%;
+  width: 100%;
+}
+.maplibregl-canvas-container {
+  height: 100%;
+  width: 100%;
+}
+.maplibregl-canvas {
+  outline: none;
+}
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-bottom-right,
+.maplibregl-ctrl-top-left,
+.maplibregl-ctrl-top-right {
+  display: none;
 }

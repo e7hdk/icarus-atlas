@@ -1,0 +1,68 @@
+{
+  "id": "wrath-and-plague",
+  "title": "Wrath and Plague",
+  "greekTitle": "Μῆνις καὶ λοιμός",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.01,
+  "summary": {
+    "text": "In the tenth summer Agamemnon dishonoured Achilles over Briseis, Apollo's arrows wasted the host until Chryseis was restored, Thetis bound Zeus to favour her son — and on the morrow the false dream, Thersites' rail, and the Catalog of Ships mustered all Hellas against Ilion.",
+    "sources": ["homer", "hyginus"],
+    "citation": "Hom. Il. 1–2; Hyg. Fab. 106"
+  },
+  "chapters": [
+    {
+      "title": "The quarrel over Briseis",
+      "text": "Homer's poem opens with the anger of Peleus' son. Agamemnon refused to return Chryseis to her father the priest of Apollo and took Briseis from Achilles when the lord of men was forced to give up his prize — dishonouring the best of the Achaeans before the whole assembly. Achilles drew his sword; only Athena stayed his hand and bade him yield to insult for now, promising glory later. He withdrew from the war and sat by his ships, and his Myrmidons with him — the wrath that would nearly lose Troy before it was spent.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 1.1–305"
+    },
+    {
+      "title": "Apollo's arrows",
+      "text": "Chryses walked the shore of the resounding sea and prayed to Apollo Smintheus; the god heard, and his arrows ranged through the camp for nine days. On the tenth Calchas declared the cause: Agamemnon must send the girl back without ransom. The king yielded at last — but seized Briseis from Achilles' tent as compensation, and the son of Peleus called him dog-faced and wine-bibber, swearing he would fight no more for a man who robbed his honour.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 1.430–492"
+    },
+    {
+      "title": "Thetis at Olympus",
+      "text": "Achilles wept on the shore of the grey sea, and Thetis rose from the deep to hear his grief. She went to Zeus on Olympus and asked that honour be given her short-lived son — that the Trojans might press the Achaeans until Agamemnon felt his folly. Hera quarrelled with Zeus over the favour shown to Troy, but the king of gods held to his promise; Hephaestus limped among the immortals with wine to reconcile them, and laughter unquenchable rose in the golden house.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 1.493–611"
+    },
+    {
+      "title": "The false dream",
+      "text": "Zeus sent a Dream to Agamemnon in the likeness of Nestor, bidding him arm the host for battle — a lie meant to fulfil Thetis' request. The son of Atreus called the kings and tested the army: first he proposed sailing home, and the men ran for the ships until Odysseus and Nestor turned them back with counsel and the sceptre of Agamemnon. Thersites the base-born railer mocked the kings and was beaten by Odysseus with the sceptre until he wept — the only man Homer makes ugly and foolish in the host.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 2.1–277"
+    },
+    {
+      "title": "The Catalog of Ships",
+      "text": "When the host stood firm, Homer musters all Hellas in the Catalog: ninety ships from Nestor's Pylos, eighty from Diomedes' Argos, fifty from Odysseus' Ithaca, forty from Ajax son of Telamon's Salamis — more than a thousand ships in all, with every captain named who led his people to Troy. The nested character roster under `ILIAD_ROSTER.md` fills the long tail of those names; here the story is the scale of the siege in the tenth year, the whole Achaean world ringed against Priam's city while Achilles still sat idle by his tents.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 2.494–877"
+    }
+  ],
+  "cast": [
+    { "id": "achilles", "name": "Achilles", "role": "Best of the Achaeans, dishonoured and withdrawn" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host who seized Briseis" },
+    { "id": "briseis", "name": "Briseis", "role": "Prize taken from Achilles' tent" },
+    { "id": "chryseis", "name": "Chryseis", "role": "Prize whose return stayed the plague" },
+    { "id": "chryses-apollo", "name": "Chryses", "role": "Priest whose prayer brought Apollo's arrows" },
+    { "id": "apollo", "name": "Apollo", "role": "God whose plague wasted the camp" },
+    { "id": "thetis", "name": "Thetis", "role": "Mother who bound Zeus to favour her son" },
+    { "id": "zeus", "name": "Zeus", "role": "He who promised Thetis honour for Achilles" },
+    { "id": "athena", "name": "Athena", "role": "She who stayed Achilles' sword in assembly" },
+    { "id": "odysseus", "name": "Odysseus", "role": "He who turned the host from flight" },
+    { "id": "nestor", "name": "Nestor", "role": "Counsellor; the Dream wore his likeness" },
+    { "id": "thersites", "name": "Thersites", "role": "Railer beaten at assembly" },
+    { "id": "hephaestus", "name": "Hephaestus", "role": "He who poured wine among the quarrelling gods" },
+    { "name": "Calchas", "role": "Seer who named Apollo's anger" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "City ringed by the mustered host" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "1–2" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "106" }
+  ]
+}

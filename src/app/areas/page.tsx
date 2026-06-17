@@ -1,9 +1,9 @@
-import { loadBasemap, loadCities, loadLineage, loadRegions } from '@/features/geo/load';
+import { loadCities, loadFeatures, loadLineage, loadPlaces, loadRegions } from '@/features/geo/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { MapView } from '@/components/map/MapView';
 import { MainNav } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
-import { AtlasOverlays } from '@/components/hud/AtlasOverlays';
+import { LandsOverlays } from '@/components/hud/LandsOverlays';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import type { Lineage } from '@/types/geo';
 
@@ -13,10 +13,11 @@ export const metadata = {
 };
 
 export default async function AreasPage() {
-  const [basemap, regions, cities, atlas] = await Promise.all([
-    loadBasemap(),
+  const [regions, cities, places, features, atlas] = await Promise.all([
     loadRegions(),
     loadCities(),
+    loadPlaces(),
+    loadFeatures(),
     loadAtlasData(),
   ]);
   const lineages: Record<string, Lineage | null> = Object.fromEntries(
@@ -24,18 +25,22 @@ export default async function AreasPage() {
   );
 
   return (
-    <div className="fixed inset-0 flex flex-col">
-      <header className="pointer-events-none relative z-20 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
+    <div className="fixed inset-0">
+      <MapView regions={regions} cities={cities} places={places} features={features} lineages={lineages} />
+      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
         <IcarusBrand />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <MainNav active="areas" />
         </div>
-        <HudActions />
+        <HudActions mapLayers />
       </header>
-      <div className="min-h-0 flex-1">
-        <MapView basemap={basemap} regions={regions} cities={cities} lineages={lineages} />
-      </div>
-      <AtlasOverlays characters={atlas.characters} sources={atlas.sources} />
+      <LandsOverlays
+        cities={cities}
+        places={places}
+        features={features}
+        sources={atlas.sources}
+        starCount={atlas.characters.length}
+      />
     </div>
   );
 }

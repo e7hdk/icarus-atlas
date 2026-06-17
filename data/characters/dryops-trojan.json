@@ -1,0 +1,28 @@
+{
+  "id": "dryops-trojan",
+  "name": "Dryops",
+  "greekName": "Dryops (Δρύοψ)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Achilles smote full upon the neck with a thrust of his spear when the son of Peleus raged through the ranks — Apollodorus counts Dryops among the many sons whom Priam begot by other women.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.455–485; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "So saying Achilles smote Dryops full upon the neck with a thrust of his spear, and he fell down before his feet. But he left him there, and stayed from fight Demuchus, Philetor's son, a valiant man and tall.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

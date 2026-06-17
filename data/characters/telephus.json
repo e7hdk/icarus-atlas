@@ -65,12 +65,19 @@
       "citation": "Fabulae 101"
     },
     {
-      "text": "Ovid lets Ulysses claim the double feat for Achilles' weapon — that twice Telephus felt the virtue of the spear, the wounding and, vanquished and a suppliant, the healing; the same spear thus both pierced and saved him. Of Telephus' own line Homer knows only by patronymic: at Troy fought Eurypylus, son of Telephus, leader of the Ceteians, the comeliest man the dead Achilles named, slain in the end by Neoptolemus.",
+      "text": "Ovid lets Ulysses claim the double feat for Achilles' weapon — that twice Telephus felt the virtue of the spear, the wounding and, vanquished and a suppliant, the healing; the same spear thus both pierced and saved him. His son Eurypylus (`eurypylus-telephus`) fought at Troy with the Ceteians; Odysseus names him the comeliest warrior Neoptolemus slew, while Pausanias says he cut down Peneleos when the Boeotian captain led Thebes in young Tisamenus' stead.",
       "sources": [
         "ovid",
-        "homer"
+        "homer",
+        "pausanias"
       ],
-      "citation": "Metamorphoses 12.112, 13.171–172; Odyssey 11.519–521"
+      "citation": "Metamorphoses 12.112, 13.171–172; Odyssey 11.519–521; Description of Greece 9.5.15"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus", "pausanias"]
     }
   ]
 }

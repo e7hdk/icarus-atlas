@@ -1,0 +1,28 @@
+{
+  "id": "cleobule-boeotian",
+  "name": "Cleobule",
+  "greekName": "Kleoboúlē (Κλεοβούλη)",
+  "type": "hero",
+  "domains": ["mother of Leïtus and Clonius", "Boeotian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wife of Lacritus (`lacritus-boeotian`) and mother of Leïtus and Clonius in Hyginus' catalogue — distinct from Cleobule mother of Eurythemis in Apollodorus' Calydonian stemma.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus names Leïtus and Clonius as sons of Lacritus and Cleobule, captains of twelve and nine Boeotian ships at Troy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["hyginus"]
+    }
+  ]
+}

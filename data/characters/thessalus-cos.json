@@ -1,0 +1,31 @@
+{
+  "id": "thessalus-cos",
+  "name": "Thessalus",
+  "greekName": "Thessalos (Θέσσαλος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Cos",
+    "the Heraclid line"
+  ],
+  "summary": [
+    {
+      "text": "King of Cos and son of Heracles, whose sons Pheidippus and Antiphus led the island host to Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.676–680"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships Homer calls Pheidippus and Antiphus the two sons of king Thessalus, son of Heracles, who commanded the Coan contingent from the city of Eurypylus and the Calydnian isles.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.676–680"
+    }
+  ],
+  "residences": [
+    {
+      "city": "kos",
+      "sources": ["homer"]
+    }
+  ]
+}

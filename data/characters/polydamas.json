@@ -1,0 +1,33 @@
+{
+  "id": "polydamas",
+  "name": "Polydamas",
+  "greekName": "Polydamas (Πουλυδάμας)",
+  "type": "hero",
+  "domains": ["prudent counsel", "portents", "the night-born comrade of Hector"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Panthous (`panthous-trojan`), comrade of Hector born in the same night — far the best in speech where Hector bore the spear — who read Zeus' portents and again and again urged the Trojan captain to heed counsel before the wall and the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.195–225, 17.45–80, 18.243–255"
+    }
+  ],
+  "story": [
+    {
+      "text": "When an eagle of Zeus dropped a writhing snake in the midst of the Trojans, Polydamas alone told Hector the omen forbade crossing the trench in force; his prudent counsel pleased Hector, and the host leapt down from their chariots to fight on foot. Yet Hector often rebuked him in assembly for giving good advice that a captain ought to weigh — as when he warned that Achilles' return would turn the tide.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.195–225, 18.243–255"
+    },
+    {
+      "text": "In battle he was no mere counsellor: the son of Panthous cast and smote Prothoënor through the shoulder, fought beside Hector round Cebriones, and Apollo would not suffer him to be vanquished among the foremost fighters. Wise Polydamas looked at once before and after; in the gatherings after Patroclus fell, he was first to speak, while the Trojans hasted to his voice when Hector ranged the field seeking Deïphobus and Helenus.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.755–785, 14.440–470, 15.515–555, 16.780–815, 17.45–80"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

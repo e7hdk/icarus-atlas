@@ -1,0 +1,31 @@
+{
+  "id": "caeneus-gortyn",
+  "name": "Caeneus",
+  "greekName": "Kaineus (Καινεύς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Gortyn",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Coronus, Argonaut from Gortyn — distinct from the invulnerable Lapith Caeneus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus lists a Caeneus son of Coronus from Gortyn among the crew; Apollodorus counts him separately from Coronus son of Caeneus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ]
+}

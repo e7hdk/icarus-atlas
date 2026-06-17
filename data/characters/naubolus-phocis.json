@@ -1,0 +1,27 @@
+{
+  "id": "naubolus-phocis",
+  "name": "Naubolus",
+  "greekName": "Naubolos (Ναύβολος)",
+  "type": "hero",
+  "domains": ["father of Iphitus", "Phocian house", "Panopeus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Iphitus (`iphitus-phocis`) and grandfather of the Phocian captains Schedius and Epistrophus — attested by Homer in the Catalogue of Ships and by Apollodorus among the Argonauts' fathers.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.515–545; Bibliotheca 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's muster names Schedius and Epistrophus sons of great-souled Iphitus, son of Naubolus, at the head of the forty Phocian ships from Cyparissus, rocky Pytho, and the towns along the Cephisus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    },
+    {
+      "text": "Apollodorus counts Iphitus son of Naubolus among the fathers of the Argonaut company. He must be kept distinct from the Naubolus whom Homer names as father of Euryalus, best of the Phaeacians after Laodamas (*Od.* 8.85–120).",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.9.16; Odyssey 8.85–120"
+    }
+  ]
+}

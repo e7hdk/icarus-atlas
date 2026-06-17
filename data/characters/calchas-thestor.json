@@ -1,0 +1,36 @@
+{
+  "id": "calchas-thestor",
+  "name": "Calchas",
+  "greekName": "Kalchas (Κάλχας)",
+  "type": "mortal",
+  "domains": [
+    "bird-divination",
+    "the muster at Aulis",
+    "the omens of Troy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Thestor, the best of bird-diviners among the Achaeans at Troy — he who read Artemis at Aulis, the serpent omen of the tenth year, and Helenus' capture, and who died of grief at Colophon when Mopsus outprophesied him on the march home.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 1.68–92, 2.322–332; Epitome 6.2–6.4; Fabulae 128"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes Calchas son of Thestor, far the best of bird-diviners, who knew what was, what will be, and what had been, and who had guided the ships of the Achaeans to Ilios by the prophetic power Phoebus Apollo bestowed. Agamemnon called him a prophet of evil who never spoke a pleasant thing — yet the host obeyed him when he named Apollo's plague and demanded Chryseis be returned.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.68–120"
+    },
+    {
+      "text": "At Aulis Calchas declared that Artemis demanded Agamemnon's daughter before the fleet could sail — the nested episode on Iphigenia at Aulis tells the altar and the parentage dispute. When a serpent devoured nine sparrows at the hecatomb, Calchas prophesied nine years of war and victory in the tenth.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.322–332; Epitome 3.21"
+    },
+    {
+      "text": "After Troy fell, Apollodorus says, it was foretold Calchas that he would die if he met a wiser diviner. He left his ships at Ilium and marched overland to Colophon with Amphilochus, Leonteus, Podalirius, and Polypoetes. There Mopsus son of Apollo and Manto bested him at a wild fig-tree and a pregnant sow; Calchas died of a broken heart and was buried at Notium — the nested episode on Calchas at Colophon tells the contest in full.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2–6.4"
+    }
+  ]
+}

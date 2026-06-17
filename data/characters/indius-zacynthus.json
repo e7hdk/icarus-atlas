@@ -1,0 +1,35 @@
+{
+  "id": "indius-zacynthus",
+  "name": "Indius",
+  "greekName": "Indios (Ἴνδιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — the name appears twice in the Epitome list, likely a scribal duplication rather than two distinct wooers.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Indius among the Zacynthian wooers after Phrenius and again later in the same catalogue after the second Phrenius entry — a single figure entered twice in the manuscript tradition of Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

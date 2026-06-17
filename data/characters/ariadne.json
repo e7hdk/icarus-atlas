@@ -28,5 +28,23 @@
       "sources": ["homer", "hesiod", "apollodorus", "hyginus", "ovid"],
       "citation": "Odyssey 11.321; Theogony 947; Epitome 1.9; Fabulae 43; Metamorphoses 8.176"
     }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "gortyn",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "naxos",
+      "sources": ["homer", "apollodorus", "ovid", "hesiod"]
+    },
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus"]
+    }
   ]
 }

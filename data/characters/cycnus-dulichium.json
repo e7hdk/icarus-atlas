@@ -1,0 +1,43 @@
+{
+  "id": "cycnus-dulichium",
+  "name": "Cycnus",
+  "greekName": "Kyknos (Κύκνος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of Cycnus the son of Poseidon or Ares, whom Heracles slew, and of other swan-linked figures in Greek myth.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Cycnus among the suitors who devoured Odysseus' substance, listed after Acarnan and before Pseras in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

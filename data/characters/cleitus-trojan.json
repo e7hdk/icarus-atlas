@@ -1,0 +1,28 @@
+{
+  "id": "cleitus-trojan",
+  "name": "Cleitus",
+  "greekName": "Cleitos (Κλείτος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "comrade of Polydamas"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Glorious son of Peisenor (`peisenor-trojan`), comrade of Polydamas son of Panthous, whom peerless Teucer smote as he held the reins and drove his horses where the battalions were driven in rout — distinct from Cleitus the Melampodid snatched by Dawn.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.445–475"
+    }
+  ],
+  "story": [
+    {
+      "text": "Teucer son of Telamon, bearing his bent-back bow, smote Cleitus the glorious son of Peisenor — comrade of lordly Polydamas — even as he was busied with his horses, driving them where the most battalions were being driven in rout.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.445–475"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

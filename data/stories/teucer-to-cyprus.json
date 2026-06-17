@@ -1,0 +1,74 @@
+{
+  "id": "teucer-to-cyprus",
+  "title": "Teucer to Cyprus",
+  "greekTitle": "Τεῦκρος εἰς Κύπρον",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.9085,
+  "summary": {
+    "text": "Teucer son of Telamon, the finest archer of the host who fought from behind Ajax's shield, sailed home from Troy only to plead his innocence before his father in the death of the greater Ajax — and Telamon drove him from Salamis, so the bowman founded a second Salamis on Cyprus and wed the daughter of Cinyras.",
+    "sources": ["homer", "apollodorus", "pausanias"],
+    "citation": "Hom. Il. 8.266–291, 13.313–314, 23.859–883; Apollod. Epit. 5.5–5.7; Paus. 1.3.2, 1.28.11, 1.35.3, 8.15.7"
+  },
+  "chapters": [
+    {
+      "title": "Behind Ajax's shield",
+      "text": "Best of the Achaeans with the bow and no mean spearman besides, Teucer son of Telamon by the captive Hesione would dart out from under the broad shield of Aias son of Telamon — his half-brother begotten of one father — loose his arrow into the press, then duck back like a child to its mother while Ajax screened him again. Agamemnon found him so and urged him on; by that craft he laid low man after man, though twice his aim at Hector came to nothing when a god turned the shaft, and once Zeus snapped the bowstring on his hand. At the funeral games for Patroclus he cut the cord that tethered the dove; at the games for Achilles, Apollodorus says, he carried off the contest in archery.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 8.266–329, 13.313–314, 15.458–470, 23.859–883; Apollod. Epit. 5.5"
+    },
+    {
+      "title": "The greater Ajax falls",
+      "text": "The Returns of the archer cannot be told apart from the ruin of his brother. When the army judged Achilles' arms to Odysseus instead of Ajax, the Telamonian fell into madness and took his own life — and in the house of the dead his shade still kept its wrath and would not speak to the Ithacan king. Teucer had fought behind that shield through ten years of war; now the bulwark of the Achaeans lay ash on the Trojan shore, and the half-brother who had made the bowman's craft possible was gone before the fleet sailed for Hellas.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 11.543–564; Apollod. Epit. 5.6–5.7"
+    },
+    {
+      "title": "Before Telamon",
+      "text": "When Teucer came home to Salamis, Telamon met the victor not with a throne but with accusation. Pausanias preserves the legend of the law-courts on the Attic coast: Teucer first defended himself in that way before Telamon, urging that he was guiltless in the matter of the death of Ajax — the plea of a son who had not saved his brother from madness and the sword, yet denied that he had killed him. On the island they still showed a stone near the harbour where Telamon had sat watching the ship that bore his children to Aulis — grief long stored before the Return that would divide the house.",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.28.11, 1.35.3"
+    },
+    {
+      "title": "Expelled from Salamis",
+      "text": "The plea failed. Pausanias reasons that Teucer could not have founded Salamis in Cyprus unless someone had expelled him from his native city after his return from Troy — and who else would have driven him out except Telamon? The old king of the Saronic isle closed the harbour to the archer who had fought from behind Ajax's shield. Unlike Diomedes barred at Argos or Idomeneus driven from Crete, the wound here was father against son — not Nauplius' adultery but the greater Ajax dead and the survivor blamed. Teucer put to sea again, denied the kingdom of the sons of Telamon.",
+      "sources": ["pausanias"],
+      "citation": "Paus. 8.15.7"
+    },
+    {
+      "title": "Second Salamis",
+      "text": "The archer sailed east to Cyprus, where the Returns had already scattered other victors — Apollodorus names Agapenor and the Arcadians storm-driven to the island after Troy. There Teucer founded a city and called it Salamis, the name of the home he had lost on the Attic shore. Apollodorus makes Cinyras a king of Paphos on Cyprus, founder of the Cypriot royal line; Pausanias says Teucer married the daughter of Cinyras and begat the descent from which the kings of the island traced their claim. The bowman who had shot from behind his brother's shield became a founder-king in exile.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Bibliotheca 3.14.3, Epit. 6.15; Paus. 1.3.2, 8.15.7"
+    },
+    {
+      "title": "The line of the archer",
+      "text": "The nested episode on Philoctetes to Italy sets the archer among the few who reached home safely with honour intact — Apollodorus sends him to the Campanians; Teucer belongs among the exiled founders, dispossessed at Salamis and crowned at Cyprus. Pausanias traced Athenian pedigrees back through Teucer and the daughter of Cinyras, and the lineage of Salamis on Cyprus begins with his reign. Nestor had reached Pylos without poison; Odysseus was still lost on the open sea; and the Salaminian archer had traded one island kingdom for another, named after the father who would not forgive him.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 6.15; Paus. 1.3.2, 8.15.7"
+    }
+  ],
+  "cast": [
+    { "id": "teucer", "name": "Teucer", "role": "Archer expelled from Salamis, founder of Cypriot Salamis" },
+    { "id": "telamon", "name": "Telamon", "role": "Father who drove him from the harbour" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Dead brother whose death divided the house" },
+    { "id": "hesione", "name": "Hesione", "role": "Trojan mother, Priam's sister" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Winner of the arms that broke Ajax" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord who praised his archery at Troy" },
+    { "name": "Cinyras", "role": "King of Paphos whose daughter he married on Cyprus" },
+    { "name": "Eurysaces", "role": "Ajax's young son, left behind in the accusation" }
+  ],
+  "places": [
+    { "id": "salamis", "name": "Salamis", "role": "Telamon's Attic isle, which closed against him" },
+    { "id": "salamis-cyprus", "name": "Salamis of Cyprus", "role": "Second founding named for the lost home" },
+    { "id": "troy", "name": "Troy", "role": "Where he fought behind Ajax's shield" },
+    { "name": "Paphos", "role": "Cinyras' kingdom on Cyprus" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "8.266–329, 13.313–314, 15.458–470, 23.859–883" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.543–564" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.5–5.7, 6.15" },
+    { "source": "apollodorus", "work": "Bibliotheca", "citation": "3.12.7, 3.14.3" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.3.2, 1.28.11, 1.35.3, 8.15.7" }
+  ]
+}

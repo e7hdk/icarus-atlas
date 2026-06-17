@@ -1,0 +1,27 @@
+{
+  "id": "polyxenus-epeian",
+  "name": "Polyxenus",
+  "greekName": "Polyxenos (Πολύξενος)",
+  "type": "hero",
+  "domains": ["Epeian command", "son of Agasthenes", "the ten ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Godlike son of king Agasthenes, Augeias' son, and captain of the fourth Epeian company — ten swift ships from Elis — whom Pausanias says came home safe from Troy and named his son Amphimachus after the comrade who fell there.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650; Description of Greece 5.3.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Polyxenus leads the remaining ten ships of the Epeians: godlike captain, son of Agasthenes whom Homer calls Augeias' son, when the host of Elis mustered forty vessels under four leaders beside Buprasium and the holy ground of Olympia's coast.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.615–650; Epitome 3.10.8"
+    },
+    {
+      "text": "Pausanias, reading Homer against the memory of Elis, says Polyxenus returned alive from Troy and begat a son Amphimachus — a name, he thinks, given in honour of the Amphimachus who did not come back.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.3.4"
+    }
+  ]
+}

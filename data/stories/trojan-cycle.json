@@ -1,0 +1,66 @@
+{
+  "id": "trojan-cycle",
+  "title": "The Trojan Cycle",
+  "greekTitle": "Τρωικὸς κύκλος",
+  "kind": "saga",
+  "parent": null,
+  "era": 8,
+  "summary": {
+    "text": "From the house of Dardanus to the fall of Priam's Ilion — the judgment on Ida, the thousand ships, ten years of war, the wooden horse, and the poisoned homecomings that left Agamemnon dead and Odysseus still wandering.",
+    "sources": ["homer", "apollodorus", "hyginus", "ovid"],
+    "citation": "Hom. Il., Od.; Apollod. Epit. 3–7; Hyg. Fab. 78–120; Ov. Met. 12–13"
+  },
+  "chapters": [
+    {
+      "title": "The house on Ida",
+      "text": "Dardanus founded the line; Laomedon cheated the gods and Heracles sacked the first Troy; Priam rebuilt Ilion and reared fifty sons. When Paris judged Aphrodite fairest on Mount Ida and stole Helen from Sparta, the oath of her suitors bound all Greece to war.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 20.215–240, 24.25–30; Apollod. 3.12; Hyg. Fab. 89–92"
+    },
+    {
+      "title": "The muster and the detour",
+      "text": "The nested episode on the Cypria tells the pre-siege arc: the suitors' oath at Sparta, Iphigenia at Aulis where Calchas demanded Agamemnon's daughter for Artemis, the Mysian detour where Telephus wounded Achilles and slew Thersander, and Protesilaus first ashore when the true voyage reached Troy — ten years of siege before Homer opens in the wrath of Achilles.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Apollod. Epit. 3.12–3.22, 3.29–3.30; Hom. Il. 2.559–580, 4.404–410; Hyg. Fab. 78, 98–101"
+    },
+    {
+      "title": "The wrath and Hector's fall",
+      "text": "Homer's Iliad knows the tenth year: Achilles' quarrel with Agamemnon, Patroclus dead in borrowed armour, Hector slain before the walls and dragged behind the chariot — until old Priam kissed the hands that had killed his son.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 1–24"
+    },
+    {
+      "title": "The late war and the last stratagems",
+      "text": "After Achilles and Ajax were gone, Troy still stood until Philoctetes shot Paris with the bow of Heracles, Helenus revealed the Palladium and the other conditions of the city's fall, Neoptolemus came from Scyros, and Odysseus stole the heaven-fallen image — the arc preserved in the Epic Cycle's Little Iliad before the wooden horse was built.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Apollod. Epit. 5.8–5.14; Hom. Od. 8.492–520, 11.505–537; Hyg. Fab. 108–112"
+    },
+    {
+      "title": "The horse and the returns",
+      "text": "Odysseus' stratagem took the city: the wooden horse, Sinon at the gate, Priam butchered at the altar, Aeneas fleeing with his father. The victors sailed home to treachery — Agamemnon to Clytemnestra's axe, Menelaus and Helen to Sparta, and Odysseus alone still lost among monsters and goddesses for ten years more.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Apollod. Epit. 5.14–5.23, 7; Hom. Od.; Hyg. Fab. 108–120"
+    }
+  ],
+  "cast": [
+    { "id": "priam", "name": "Priam", "role": "Last king of Troy" },
+    { "id": "helen", "name": "Helen", "role": "The face that launched the ships" },
+    { "id": "achilles", "name": "Achilles", "role": "Best of the Achaeans" },
+    { "id": "hector", "name": "Hector", "role": "Shield of Troy" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Author of the horse, last to reach home" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host" },
+    { "id": "aeneas", "name": "Aeneas", "role": "He who escaped the burning city" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Ilion, besieged and taken" },
+    { "id": "sparta", "name": "Sparta", "role": "Helen's home" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Agamemnon's seat" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "entire" },
+    { "source": "homer", "work": "Odyssey", "citation": "entire" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "3–7" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "78–120" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "12–13" }
+  ]
+}

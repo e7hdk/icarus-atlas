@@ -1,0 +1,43 @@
+{
+  "id": "briseis",
+  "name": "Briseis",
+  "greekName": "Briseïs (Βρισηΐς)",
+  "type": "mortal",
+  "domains": ["captive of honour", "the wrath of Achilles", "the quarrel at Troy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Fair-cheeked captive whom Achilles took when he sacked Lyrnessus and Thebe under wooded Placus — his prize of valour, whose seizure by Agamemnon opened the wrath that nearly lost the war.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.392–396, 19.282–300"
+    },
+    {
+      "text": "Hyginus calls her a Moesian captive, daughter of the priest Brisa.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 106"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Achilles stormed Lyrnessus and Thebe, he killed the warrior Mynes and Briseis' brothers, and took her himself as his prize — a woman of beauty, and one he loved. So Homer sets her at the heart of the quarrel: not an abstraction of honour, but a named captive the hero grieved to lose.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.392–396, 19.282–300"
+    },
+    {
+      "text": "Agamemnon, forced to return Chryseis to her father, swore he would come to Achilles' hut and take Briseis instead, to prove his mastery over the best of the Achaeans. Talthybius and Eurybates led her away unwilling; Patroclus, pitying, gave her up with gentle hands. Achilles wept on the shore and called upon his mother Thetis — and from that hour he would not fight.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.175–205, 1.315–348, 1.345–364"
+    },
+    {
+      "text": "Through the long withdrawal she remained in Agamemnon's quarters until the embassy of Book 9, when Phoenix, Ajax and Odysseus offered her back with other gifts. Achilles refused. Only after Patroclus fell did he lay aside his anger; Agamemnon swore he had never lain with her, and she was returned. At the funeral games she moved among the serving-women, fair and tall in stature.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 9.165–429, 19.258–300, 19.282–300; Epitome 4.3, 4.7"
+    },
+    {
+      "text": "Hyginus names her the daughter of the priest Brisa and a Moesian captive. Apollodorus' Epitome once calls her the daughter of Chryses — a conflation with Chryseis that the *Iliad* itself never makes.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 106; Epitome 4.1",
+      "topic": "briseis-parentage"
+    }
+  ]
+}

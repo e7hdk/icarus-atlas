@@ -1,0 +1,33 @@
+{
+  "id": "leitus",
+  "name": "Leïtus",
+  "greekName": "Leïtos (Λήϊτος)",
+  "type": "hero",
+  "domains": ["Boeotian command", "the fifty ships", "son of Alectryon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of great-souled Alectryon (`alectryon-boeotian`) in Homer and, in Hyginus, of Lacritus (`lacritus-boeotian`) and Cleobule (`cleobule-boeotian`) — captain of the Boeotians beside Peneleos, one of the five leaders of the fifty ships — whom Poseidon spurred at the hollow ships and whom Hector wounded on the wrist in close fight until he shrank back from the spear.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.494–510, 13.85–120, 17.600–625"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Leïtus among the captains of the Boeotian contingent in the Catalogue of Ships, when the allies mustered at Troy. When the Trojans stormed the wall, Poseidon passed among the Argive defenders and came to Teucer and Leïtus first, bidding them hold the ships with winged words of reproach.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510, 13.85–120"
+    },
+    {
+      "text": "In the rout that began with Peneleos, Leïtus again, the son of great-souled Alectryon, met Hector in close quarters; the Trojan captain smote him on the hand at the wrist and made him cease from fighting. Casting an anxious glance about him, Leïtus shrank back, seeing he no longer had hope of bearing spear in hand against the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.600–625"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}

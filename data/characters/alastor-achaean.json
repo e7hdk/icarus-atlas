@@ -1,0 +1,27 @@
+{
+  "id": "alastor-achaean",
+  "name": "Alastor",
+  "greekName": "Alastor (Ἄλαστορ)",
+  "type": "hero",
+  "domains": ["trusty comrade", "bearer of the wounded"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Goodly Alastor who twice stooped with Mecisteus son of Echius to bear wounded comrades groaning to the hollow ships — distinct from the Alastor among Nestor's Pylians and from the Lycian whom Diomedes slew.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305, 5.670–710, 8.295–330, 13.405–420"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Teucer was worsted in the fight and Ajax covered his brother with his shining shield, two trusty comrades bore him to the ships — Mecisteus son of Echius and goodly Alastor.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330"
+    },
+    {
+      "text": "So again when Hypsenor fell before the wall, the same pair lifted their groaning comrade from the throng and carried him to the hollow ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.405–420"
+    }
+  ]
+}

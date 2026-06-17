@@ -1,0 +1,29 @@
+{
+  "id": "leodocus",
+  "name": "Leodocus",
+  "greekName": "Leodokos (Λεωδόκος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argos",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Bias and Pero, Argonaut from the Argive branch of the Aeolid house.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.118"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Leodocus with his brothers Areius, son of Bias and Pero, among the Argonauts.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.118"
+    }
+  ]
+}

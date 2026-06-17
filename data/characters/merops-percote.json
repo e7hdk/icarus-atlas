@@ -1,0 +1,27 @@
+{
+  "id": "merops-percote",
+  "name": "Merops",
+  "greekName": "Merops (Μέροψ)",
+  "type": "hero",
+  "domains": ["seer of Percote", "father of Adrastus and Araphius"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Seer of Percote, above all men skilled in prophesying, who would not suffer his sons Adrastus and Araphius (`adrastus-meropsid`, `araphius-meropsid`) to go into war — but black fate led them on and Diomedes slew them — Apollodorus also makes him father of Arisbe, Priam's first wife; distinct from Merops king of Ethiopia and from Ovid's Merops father of Clymene.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 11.295–335; Apollod. 3.12.5; Epit. 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Adrastus and Araphius, sons twain of Merops of Percote, that was above all men skilled in prophesying, and would not suffer his sons to go into war, the bane of men; but the twain would in no wise hearken, for the fates of black death were leading them on.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "When Hector pressed the Achaeans back, the Trojans took a chariot and two men, the best of their people — the sons of Merops — and Diomedes son of Tydeus slew them both.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

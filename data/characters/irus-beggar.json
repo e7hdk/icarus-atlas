@@ -1,0 +1,34 @@
+{
+  "id": "irus-beggar",
+  "name": "Irus",
+  "greekName": "Iros (Ἶρος)",
+  "romanName": "Irus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["the Ithacan beggar", "Arnaeus"],
+  "summary": [
+    {
+      "text": "A real beggar of Ithaca, born Arnaeus, whom the young men called Irus for his errands; he challenged the disguised Odysseus and was struck down with a single blow, losing his place at the suitors' feast.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.1–45, 18.90–150"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him Arnaeus at birth, but the youths called him Irus because he ran when anyone bade him. He came to drive the new beggar from the hall, urged on by the suitors who promised him a permanent place at their feasts if he won.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.1–45"
+    },
+    {
+      "text": "Odysseus, holding himself in check, shattered Irus' jaw with a fist under the ear; the goatherd Melanthius carried him out, dragging him by the heels and propping him against the courtyard wall. The suitors laughed, and the beaten beggar lost the scraps he had hoped to win.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.90–150"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

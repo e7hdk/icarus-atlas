@@ -1,0 +1,68 @@
+{
+  "id": "sack-of-troy",
+  "title": "The Sack of Troy",
+  "greekTitle": "Ἅλωσις τῆς Τροίας",
+  "kind": "episode",
+  "parent": "trojan-cycle",
+  "era": 8.5,
+  "summary": {
+    "text": "When the war would not end by siege, Odysseus built the wooden horse; the Trojans dragged it within the walls, and in the night the Achaeans poured out — Priam slain at the altar, the city burning, and Aeneas carrying his father Anchises toward the mountains.",
+    "sources": ["apollodorus", "hyginus", "ovid", "homer"],
+    "citation": "Apollod. Epit. 5.14–5.23; Hyg. Fab. 108–111; Ov. Met. 13.1–13.404; Hom. Od. 8.492–520"
+  },
+  "chapters": [
+    {
+      "title": "The wooden horse",
+      "text": "Odysseus conceived a great hollow horse after Epeius had built it with Athena's help — the stratagem whose long preparation belongs to the Little Iliad. The best of the Achaeans hid inside while the fleet sailed away to Tenedos. Sinon, left behind with a lying tale, persuaded the Trojans to drag the offering within the walls — though Cassandra prophesied doom and Helen herself mimicked the voices of the heroes' wives.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 5.14–5.16; Hyg. Fab. 108; Ov. Met. 13.1–13.404"
+    },
+    {
+      "title": "The city taken",
+      "text": "At night the horse opened and the warriors descended. Neoptolemus slew Priam at the altar of Zeus Herkeios; Menelaus searched the palace for Helen. The Trojans fell in their houses; fire consumed the city Apollo and Poseidon had once built for Laomedon.",
+      "sources": ["apollodorus", "ovid", "homer"],
+      "citation": "Apollod. Epit. 5.17–5.21; Ov. Met. 13.404–13.415; Hom. Od. 8.517–520"
+    },
+    {
+      "title": "Deiphobus slain",
+      "text": "During the siege Helen had been given to Deiphobus, brother of Paris. Apollodorus says Menelaus slew Deiphobus at the sack and led Helen to the ships. Hyginus counts Helen among the women who killed their own husbands, naming Deiphobus son of Priam as her victim — the same death, two agents.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 5.22; Hyg. Fab. 240",
+      "topic": "deiphobus-slayer"
+    },
+    {
+      "title": "Aeneas escapes",
+      "text": "Aeneas son of Anchises and Aphrodite carried his lame father on his shoulders and led his son Ascanius from the burning city — the nested episode on Aeneas to Italy tells the westward wandering and the Latin destiny Apollodorus summarises in the Nostoi.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 5.21; Hyg. Fab. 108; Ov. Met. 13.623–13.715"
+    },
+    {
+      "title": "The coda on the shore",
+      "text": "Before the fleet could sail, the victors sacrificed to all the gods — threw Astyanax from the tower and slaughtered Polyxena on Achilles' grave when his ghost demanded the maiden as his share of the spoils. The full rite and the division of captives live in the nested episode on the Thracian shore.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 5.23; Ov. Met. 13.439–480"
+    }
+  ],
+  "cast": [
+    { "id": "odysseus", "name": "Odysseus", "role": "Author of the stratagem" },
+    { "id": "epeius", "name": "Epeius", "role": "Builder of the horse" },
+    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Slayer of Priam" },
+    { "id": "priam", "name": "Priam", "role": "Old king slain at the altar" },
+    { "id": "helen", "name": "Helen", "role": "Prize of the victors" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Husband who reclaimed her" },
+    { "id": "deiphobus", "name": "Deiphobus", "role": "Helen's Trojan husband" },
+    { "id": "aeneas", "name": "Aeneas", "role": "He who fled with Anchises" },
+    { "id": "cassandra", "name": "Cassandra", "role": "Prophetess none believed" },
+    { "name": "Sinon", "role": "The lying Greek left at the gate" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "The city taken and burned" },
+    { "name": "Tenedos", "role": "Isle where the fleet feigned departure" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.14–5.23" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "108–111, 240" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "13.1–13.715" },
+    { "source": "homer", "work": "Odyssey", "citation": "8.492–520" }
+  ]
+}

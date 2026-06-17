@@ -1,0 +1,27 @@
+{
+  "id": "laodameia-lycian",
+  "name": "Laodameia",
+  "greekName": "Laodameia (Λαοδάμεια)",
+  "type": "mortal",
+  "domains": ["daughter of Bellerophon", "mother of Sarpedon", "Lycian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Bellerophon (`bellerophon`) who lay with Zeus the counsellor and bore godlike Sarpedon (`sarpedon`) — sister of Isander (`isander-lycian`) and Hippolochus (`hippolochus-lycian`) — slain in wrath by golden-reined Artemis in Homer's roll of the hero's children.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.196–205; Bibliotheca 2.3.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Bellerophon won the half of all the Lycian king's honour, his wife bore three children: Isander, Hippolochus, and Laodameia. With Laodameia lay Zeus the counsellor, and she bore godlike Sarpedon, the bronze-harnessed warrior whom Patroclus would slay at Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.196–205"
+    },
+    {
+      "text": "Apollodorus names the Lycian king's daughter Philonoe as Bellerophon's wife and repeats the three children; he adds that Artemis in wrath smote Laodameia, even as Ares had slain Isander among the Solymi.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.3.2"
+    }
+  ]
+}

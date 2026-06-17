@@ -1,0 +1,43 @@
+{
+  "id": "schedius-dulichium",
+  "name": "Schedius",
+  "greekName": "Schedios (Σχεδίος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of the Schediuses whom the Iliad names among the Phocians and other allies at Troy.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Schedius among the suitors who devoured Odysseus' substance, listed after Astylochus and before Antigonus in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "electra-pleiad",
+  "name": "Electra",
+  "greekName": "Ēlektra (Ἠλέκτρα)",
+  "romanName": "Electra",
+  "type": "nymph",
+  "kinds": ["pleiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pleiades",
+    "mother of Dardanus and Iasion",
+    "Samothracian mysteries"
+  ],
+  "summary": [
+    {
+      "text": "One of the seven Pleiades, daughter of Atlas and Pleione, who on Samothrace bore to Zeus the sons Iasion and Dardanus — the genealogical nymph behind the hero node `electra-atlas`, kept distinct from Electra daughter of Agamemnon and from the Oceanid Electra (`electra-oceanid`).",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.1, 3.12.1; Fabulae 192"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts her among the Pleiades born at Cyllene — Alcyone, Merope, Celaeno, Electra, Sterope, Taygete, and Maia — and again, in the Trojan stemma, as Electra daughter of Atlas who had by Zeus two sons, Iasion and Dardanus, on Samothrace. Iasion loved Demeter and was killed by a thunderbolt when he tried to defile the goddess; grieving, Dardanus crossed to the Troad and founded the line that would flower in Priam's city.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1, 3.12.1"
+    },
+    {
+      "text": "Apollonius sends the Argonauts to touch at the island of Electra, daughter of Atlas, that they might receive the Samothracian mysteries in gentle initiation before sailing the chilling sea — a cult moment that binds the Pleiad's name to the voyage for the Fleece.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.916–921"
+    },
+    {
+      "text": "Hyginus preserves the catasterism: of the seven Pleiades, Electra is said no longer to appear among her sisters out of grief at the death of Dardanus and the fall of Troy. That star-myth lives on the hero node `electra-atlas`; this node holds the nymph's parentage and maternity — the daughter of Atlas who lay with Zeus and bore the founders of the Trojan and mystic lines.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 192; Astronomica 2.21.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "samothrace",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "alastor-trojan",
+  "name": "Alastor",
+  "greekName": "Alastōr (Ἀλάστωρ)",
+  "type": "hero",
+  "domains": ["father of Tros", "Trojan warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan father of Tros, who came to clasp Achilles' knees for mercy when the son of Peleus raged in the rout — distinct from Nestor's comrade (`alastor-pylian`), the Lycian slain by Odysseus (`alastor-lycian`), and the Achaean whom Teucer laid low (`alastor-achaean`).",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then Tros, Alastor's son, came to clasp Achilles' knees, if so be he would spare him by taking him captive and let him go alive, and slay him not, having pity on one of like age; but Achilles smote him in the liver with his sword, and forth the liver slipped, and darkness enfolded his eyes.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "araphius-meropsid",
+  "name": "Araphius",
+  "greekName": "Araphios (Ἀράφιος)",
+  "type": "hero",
+  "domains": ["son of Merops", "linen corslet", "Percote"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Merops of Percote and co-captain beside Adrastus in the Catalogue of Ships — Apollodorus names an Amphius among Merops' sons, but Homer gives this man as Araphius.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 11.295–335; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Araphius beside Adrastus at the head of the allies from Adrasteia, Apaesus, Pityeia, and Tereia. Their father Merops, greatest of prophets, forbade them the war, yet black fate drew the brothers on.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "In the eleventh book Diomedes slew the chariot-team and the two sons of Merops together when the Trojans had seized the best men of their host from the field.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "lucifer-morning",
+  "name": "Lucifer",
+  "greekName": "Eōsphoros (Ἐωσφόρος)",
+  "romanName": "Lucifer",
+  "type": "god",
+  "domains": [
+    "the Morning Star",
+    "the last star at dawn",
+    "father of Ceyx and Daedalion"
+  ],
+  "cluster": "titan-ring",
+  "summary": [
+    {
+      "text": "The Morning Star, whom Hesiod calls Eosphorus the Dawn-bringer, born to Eos and Astraeus among the winds and the stars that crown heaven — in later poetry Lucifer opens the gates of dawn for Aurora and fathers the mortal kings Ceyx and Daedalion.",
+      "sources": ["hesiod", "ovid", "apollodorus"],
+      "citation": "Theogony 378–382; Metamorphoses 11.295–301; Bibliotheca 1.7.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets Eosphorus in the sky-born brood of Dawn. Eos, joined in love with Astraeus, bore the strong-hearted winds — Zephyrus, Boreas and Notus — and after them the star Eosphorus and the gleaming stars with which heaven is crowned.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4"
+    },
+    {
+      "text": "Ovid personifies the same light as Lucifer, son of the Morning Star's radiance in mortal kings. Lucifer brings forth Aurora and is last to quit his watch when the stars flee at dawn; his son Daedalion loved war while his brother Ceyx loved peace, and Ceyx bore his father's brightness in his face when he ruled Trachis.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.114–118; 11.295–301; 11.266–271"
+    },
+    {
+      "text": "Apollodorus names Lucifer as father of Ceyx, who married Alcyone daughter of Aeolus; the pair perished for their pride when he called his wife Hera and she her husband Zeus, until Zeus changed them into seabirds.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.4"
+    }
+  ]
+}

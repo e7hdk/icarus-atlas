@@ -1,0 +1,41 @@
+{
+  "id": "thoas-aetolia",
+  "name": "Thoas",
+  "greekName": "Thoas (Θόας)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Pleuron and Calydon",
+    "captain of the Aetolians at Troy"
+  ],
+  "summary": [
+    {
+      "text": "Son of Andraemon, lord over Pleuron and steep Calydon after the house of Oeneus fell — leader of the Aetolians at Troy when Meleager was dead and Oeneus no longer lived.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.638–644; 13.206–214"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes him captain of the Aetolians who dwelt in Pleuron, Olenus, Pylene, Chalcis by the sea, and rocky Calydon — forty ships under a king honoured of his folk even as a god. Poseidon once took his likeness to rally Idomeneus when the Cretan wavered.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.638–644; 7.135–170; 13.206–214"
+    },
+    {
+      "text": "Apollodorus records that when Odysseus was condemned to exile after the slaughter of the suitors, he came to Aetolia as a guest of Thoas son of Andraemon, married Thoas' daughter, and left a son Leontophonus before dying in old age — a tradition in which the king of Pleuron and Calydon shelters the exiled lord of Ithaca.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.40",
+      "topic": "odysseus-death"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pleuron",
+      "sources": ["homer"]
+    },
+    {
+      "city": "calydon",
+      "sources": ["homer"]
+    }
+  ]
+}

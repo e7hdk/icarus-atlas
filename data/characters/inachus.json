@@ -3,22 +3,32 @@
   "name": "Inachus",
   "greekName": "Inachos (Ἴναχος)",
   "type": "god",
-  "domains": ["the Argive river", "fresh waters", "judgment between gods"],
+  "domains": [
+    "the Argive river",
+    "fresh waters",
+    "judgment between gods"
+  ],
   "cluster": "titan-ring",
   "summary": [
     {
       "text": "River-god son of Oceanus and Tethys after whom the river of Argos is named; father of Phoroneus, and the witness whose testimony for Hera moved Poseidon to dry up the springs of Argos.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.1.1, 2.1.4"
     },
     {
       "text": "King or river — Pausanias heard both: the oldest Argive tradition makes Inachus a king who named the river after himself and sacrificed to Hera; another holds that the father of Phoroneus was no man at all, but the river.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Description of Greece 2.15.4–5"
     },
     {
       "text": "The river of Argos who hid in his deepest cave weeping for lost Io, his daughter, swelling his stream with tears.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Metamorphoses 1.583–587",
       "topic": "io-paternity"
     }
@@ -26,36 +36,61 @@
   "story": [
     {
       "text": "Ocean and Tethys had a son Inachus, after whom a river in Argos is called Inachus — so Apollodorus opens the whole Argive book of his Library, hanging the oldest royal line of Greece on a river. Hyginus' genealogical preface likewise counts him among the Rivers born of Oceanus and Tethys.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Bibliotheca 2.1.1; Fabulae, preface (Theogony)"
     },
     {
       "text": "When Poseidon and Hera disputed possession of the land, Inachus spoke for Hera — and paid for it. In Apollodorus, Poseidon dried up even the springs out of anger at him for testifying that the land belonged to Hera, leaving the country waterless. Pausanias makes him foreman of a tribunal of rivers — Inachus, Cephisus and Asterion judged between the gods and awarded the land to Hera, and Poseidon made their waters vanish, so that the Inachus flows only after rain — and elsewhere records the opposite revenge: Poseidon flooded the greater part of the country, until Hera induced him to send the sea back.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 2.1.4; Description of Greece 2.15.5, 2.22.4"
     },
     {
       "text": "In Ovid, when his fellow rivers gather, one alone is missing: Inachus, hidden away in his deepest cave, swelling his waters with tears, mourning his daughter Io as lost — he does not know whether she lives or is among the shades. Later the heifer that was Io stands at her father's banks; he plucks grass and holds it to her strange mouth, and when she traces letters in the dust with her hoof, the river learns his daughter's fate and cries out his grief.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Metamorphoses 1.583–587, 1.639–667",
       "topic": "io-paternity"
     },
     {
       "text": "Apollodorus is less sure whose daughter Io was. His own line gives her to Iasus, son of Argus — though he notes that the annalist Castor and many of the tragedians make Io a daughter of Inachus, and that Hesiod (he reports) made her a daughter of Piren. Pausanias contradicts himself between books: in the Argive king-list Io who went to Egypt is the daughter of Iasus, yet before Deinomenes' statue on the Athenian acropolis he writes simply 'Io, the daughter of Inachus'.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 2.1.3; Description of Greece 2.16.1, 1.25.1",
       "topic": "io-paternity"
     },
     {
       "text": "Hyginus tangles the family further: his Inachus begets Phoroneus on his own sister Argia, and a later entry derives Io 'from Inachus and Argia' — immediately after naming a second Inachus, son of Triops, in the same garbled genealogy. In his pages the river fathers both the first king of mortals and the wandering heifer-girl.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Fabulae 143, 145",
       "topic": "io-paternity"
     },
     {
       "text": "Pausanias walked the river itself: its springs are on Mount Artemisius — 'for it really has springs, though the water does not run far' — and the stream marks the old boundary of the Argolid. He also passes on, from the poem the Greeks call the Great Eoiae, that Mycene, after whom Mycenae was named, was a daughter of Inachus and wife of Arestor.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Description of Greece 2.25.3, 8.6.6, 2.16.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "pausanias"
+      ]
     }
   ]
 }

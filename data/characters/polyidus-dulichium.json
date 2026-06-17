@@ -1,0 +1,43 @@
+{
+  "id": "polyidus-dulichium",
+  "name": "Polyidus",
+  "greekName": "Polyidos (Πολύιδος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of Polyidus the seer of Ephyra who taught Glaucus the art of divination.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Polyidus among the suitors who devoured Odysseus' substance, listed after Telmius and before Astylochus in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

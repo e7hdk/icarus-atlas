@@ -1,0 +1,33 @@
+{
+  "id": "amycus-bebrycian",
+  "name": "Amycus",
+  "greekName": "Amykos (Ἄμυκος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "boxing",
+    "Bebrycia",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon and the Bithynian nymph Melie, king of the Bebrycians who forced strangers to box and was slain by Polydeuces when the Argonauts landed.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.20; Argonautica 2.1–97; Fabulae 17"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius tells how Amycus challenged all comers to box; Polydeuces, stung by the insult, stripped and killed the king. The Mariandyni, long at war with the Bebrycians, welcomed Polydeuces as a god for the deed.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 2.1–97; Fabulae 17"
+    }
+  ]
+}

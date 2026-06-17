@@ -1,0 +1,27 @@
+{
+  "id": "adrastus-meropsid",
+  "name": "Adrastus",
+  "greekName": "Adrastos (Ἄδραστος)",
+  "type": "hero",
+  "domains": ["son of Merops", "linen corslet", "Percote"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Merops (`merops-percote`) of Percote, co-captain with Araphius of the men of Adrasteia and Apaesus — a namesake of the Argive king of the Seven against Thebes, but Homer fixes this man among the Trojan allies whom black fate led to war despite their father's prophetic counsel.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 11.295–335; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Adrastus and Araphius, sons twain of Merops, skilled in prophecy above all men, who would not suffer his sons to go into war; but the twain would in no wise hearken, for the fates of black death were leading them on.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "When Hector pressed the Achaeans back, the Trojans took a chariot and two men, the best of their people — the sons of Merops — and these the son of Tydeus, Diomedes, slew.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

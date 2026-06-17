@@ -1,0 +1,65 @@
+{
+  "id": "prometheus-fire",
+  "title": "Prometheus and the Fire",
+  "greekTitle": "Προμηθέως πῦρ",
+  "kind": "saga",
+  "parent": "cosmogony",
+  "era": 1,
+  "summary": {
+    "text": "The Titan Prometheus — Forethought — tricked Zeus over the sacrificial portions at Mecone and stole the far-seen gleam of unwearying fire for mankind in a hollow fennel stalk; for the theft the king of gods bound him on the Caucasus while an eagle fed on his liver, until Heracles shot the bird and freed the champion of mortals.",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "citation": "Hes. Th. 535-616; Apollod. 1.7.1; Hyg. Fab. 144"
+  },
+  "chapters": [
+    {
+      "title": "Champion, not creator",
+      "text": "When gods and mortal men settled their dues at Mecone, Prometheus carved up a great ox and laid out two shares: the flesh and rich inner parts hidden in the ox's paunch, and the white bones dressed with cunning art beneath shining fat. Zeus saw through the trick, yet took the gleaming bones — and ever since mortals burn white bones for the gods on smoking altars and keep the meat for themselves. In this oldest account mankind already exists: Prometheus is its champion and Zeus's deceiver, but never its maker.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 535-616; WD 42-105",
+      "topic": "prometheus-creation-of-man"
+    },
+    {
+      "title": "Moulded from clay",
+      "text": "Later authors hand him a greater work. Apollodorus says he moulded men out of water and earth; Ovid has the son of Iapetus mix new-made earth with fresh rainwater and shape it into the likeness of the all-governing gods; Hyginus states plainly that Prometheus, son of Iapetus, first fashioned men from clay — the image that would eclipse Hesiod's ash-tree race.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 1.7.1; Ov. Met. 1.76-88; Hyg. Fab. 142",
+      "topic": "prometheus-creation-of-man"
+    },
+    {
+      "title": "Zeus hides the fire",
+      "text": "Angered by the trick at Mecone, Zeus hid fire from mortals — so that the race Prometheus loved must eat their meat raw and shiver in the dark. The Titan resolved to steal it back.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 565-567; WD 47-52; Apollod. 1.7.1"
+    },
+    {
+      "title": "The fennel stalk",
+      "text": "Prometheus stole the far-seen gleam of unwearying fire in a hollow fennel stalk and carried it down to men without the knowledge of Zeus. Hyginus adds that he taught them to bank it in ash and keep it alive. Pausanias records that the Argives refuse this tale entirely and assign the discovery of fire to Phoroneus at Argos.",
+      "sources": ["hesiod", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Hes. Th. 565-567; WD 47-52; Apollod. 1.7.1; Hyg. Fab. 144; Paus. 2.19.5",
+      "topic": "fire-bringer"
+    },
+    {
+      "title": "Bound on the Caucasus",
+      "text": "For the theft Zeus bound Prometheus in shackles he could not escape, drove a shaft through his middle, and sent a long-winged eagle to feed on his immortal liver, which grew back by night as fast as the bird devoured it by day. Apollodorus nails him to the Caucasus and names the eagle a child of Echidna and Typhon. At last Heracles shot the eagle down and freed the son of Iapetus — not against the will of Zeus, who wished the glory of his son to be greater still.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Hes. Th. 521-534; Apollod. 1.7.1, 2.5.11; Hyg. Fab. 144"
+    }
+  ],
+  "cast": [
+    { "id": "prometheus", "name": "Prometheus", "role": "Titan who stole fire for mankind" },
+    { "id": "zeus", "name": "Zeus", "role": "King who hid fire and imposed the bondage" },
+    { "id": "heracles", "name": "Heracles", "role": "The hero who freed him" },
+    { "id": "epimetheus", "name": "Epimetheus", "role": "His heedless brother" },
+    { "id": "echidna", "name": "Echidna", "role": "Mother of the tormenting eagle" },
+    { "id": "typhon", "name": "Typhon", "role": "Father of the tormenting eagle" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "521-616" },
+    { "source": "hesiod", "work": "Works and Days", "citation": "42-105" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.7.1" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "142, 144" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.76-88" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "2.19.5" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "molione-epeian",
+  "name": "Molione",
+  "greekName": "Moliōnē (Μολιόνη)",
+  "type": "hero",
+  "domains": ["mother of Cteatus and Eurytus", "the Moliones", "Epeian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Mother of the twin Moliones Cteatus (`cteatus-epeian`) and Eurytus (`eurytus-epeian`) by Actor (`actor-epeian`) — the Epeian house whom Nestor almost slew before Poseidon shrouded them in mist, though Homer calls them only 'of the blood of Actor' in the Catalogue.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.615–650, 11.700–775; Bibliotheca 2.7.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer remembers the Moliones twice over: as striplings who donned battle-gear when the Epeians marched against sandy Pylos, and as the twin captains' sires' line whom Nestor almost cut down in the plain until the wide-ruling Shaker of Earth saved them in thick mist.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.700–775"
+    },
+    {
+      "text": "Apollodorus makes Cteatus and Eurytus twin sons of Actor by Molione — two men joined in one, unmatched in strength — whom Augeas appointed generals when Heracles marched against Elis. In the same account their sire is sometimes named Poseidon rather than Actor.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.2"
+    }
+  ]
+}

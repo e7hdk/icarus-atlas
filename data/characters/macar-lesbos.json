@@ -1,0 +1,30 @@
+{
+  "id": "macar-lesbos",
+  "name": "Macar",
+  "greekName": "Makar (Μάκαρ)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Lesbos"
+  ],
+  "summary": [
+    {
+      "text": "The lord after whom Homer names Lesbos — the island Priam remembers as 'the seat of Macar' when he speaks of the old wealth of the Troad.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.543–546"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Priam came as a suppliant to Achilles for Hector's body, he recalled how of all the folk enclosed by Lesbos, the seat of Macar, and Phrygia and the Hellespont, Priam of old had been preeminent in wealth and sons before the gods brought ruin on Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.543–546"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lesbos",
+      "sources": ["homer"]
+    }
+  ]
+}

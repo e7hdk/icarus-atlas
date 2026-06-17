@@ -1,0 +1,34 @@
+{
+  "id": "iphitus-oechalia",
+  "name": "Iphitus",
+  "greekName": "Iphitos (Ἴφιτος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Oechalia",
+    "the bow of Odysseus",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Eurytus of Oechalia, Argonaut who later gave his bow to Odysseus and was thrown from the walls of Tiryns by Heracles.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.9.16, 2.6.2; Fabulae 14; Odyssey 21.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus counts Iphitus son of Eurytus among the Argonauts. After the voyage he trusted Heracles when cattle were stolen and was murdered in madness — but not before giving Odysseus the great bow.",
+      "sources": [
+        "hyginus",
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Odyssey 21.30; Bibliotheca 2.6.2"
+    }
+  ]
+}

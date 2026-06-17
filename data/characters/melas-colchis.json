@@ -1,0 +1,43 @@
+{
+  "id": "melas-colchis",
+  "name": "Melas",
+  "greekName": "Melas (Μέλας)",
+  "romanName": "Melas",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phrixus",
+    "grandson of Aeetes",
+    "the return to Orchomenus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phrixus and Chalciope at Aea, named among the four brothers who sailed from Colchis toward Orchomenus, met the Argonauts, returned with them to their grandfather's court, and fled when Medea stole the Golden Fleece.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1140–1145, 4.11"
+    },
+    {
+      "text": "Not to be confused with Melas son of Portheus, the Aetolian of Pleuron and Calydon — nor with the sons of Melas whom Tydeus slew in the feud at Oeneus' court.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.590–620; Bibliotheca 1.8.5–1.8.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Melas among the children Phrixus begot on Chalciope in Colchis — with Argus, Phrontis, and Cytisorus — before the ram's fleece passed to Aeetes.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "In Apollonius the brothers introduce themselves to Jason at Circe's isle: Cytissorus, Phrontis, Melas, and Argus, journeying from Aea to Orchomenus at their dead father's command. When Medea fled with the fleece, Melas was among the sons of Phrixus who escaped Colchis with her on the Argo.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.1140–1145, 4.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

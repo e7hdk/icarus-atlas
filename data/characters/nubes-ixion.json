@@ -1,0 +1,43 @@
+{
+  "id": "nubes-ixion",
+  "name": "Nubes",
+  "greekName": "Nebelē / Nubes (Νεφέλη / Nubes)",
+  "romanName": "Nubes",
+  "type": "nymph",
+  "domains": [
+    "the cloud-mate of Ixion",
+    "centaur parentage"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The cloud-shape Hyginus names as mate of Ixion and mother, with him, of the centaur kind — distinct from Nephele the cloud who bore Phrixus and Helle to Athamas.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus makes Nessus a centaur, son of Ixion and Nubes, and uses the same cloud-mother for Eurytion and the centaur brood in his catalogue of the wild Thessalian race. She is the Hyginus counterpart to the unnamed cloud of Apollodorus — though there the cloud was fashioned in Hera's likeness by Zeus, and bore Centaurus alone.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 34; Epitome 1.20",
+      "topic": "ixion-cloud-mother"
+    },
+    {
+      "text": "The atlas already holds `nephele`, the cloud of Boeotia who saved Phrixus and Helle. That Nephele and this Nubes share the language of cloud-nymphs but not the same myth: never merge the Athamantid cloud with Ixion's mate.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.1; Fabulae 34"
+    }
+  ],
+  "kinds": [
+    "nephele"
+  ]
+}

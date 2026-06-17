@@ -1,0 +1,60 @@
+{
+  "id": "slaughter-of-the-suitors",
+  "title": "Slaughter of the Suitors",
+  "greekTitle": "μνηστηροφονία",
+  "kind": "episode",
+  "parent": "odyssey",
+  "era": 9.1,
+  "summary": {
+    "text": "When none of the wooers could bend the bow of Odysseus, the beggar strung it, shot through the twelve axes, and with Telemachus, Eumaeus, and Philoetius cut down the suitors in the hall — Antinous first, Amphinomus among the dead, until the floor ran with blood.",
+    "sources": ["homer", "apollodorus"],
+    "citation": "Hom. Od. 21–22; Apollod. Epit. 7.33"
+  },
+  "chapters": [
+    {
+      "title": "The bow of Iphitus",
+      "text": "Penelope brought down the great bow Odysseus had received from Iphitus son of Eurytus when the two met in Messene — a weapon only its owner could bend with ease. The suitors tried one by one and failed; the beggar asked for a turn and was mocked until Telemachus sent Penelope to her chamber and ordered the hall cleared for the trial.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 21.1–21.358"
+    },
+    {
+      "title": "The arrow through the axes",
+      "text": "Odysseus examined the bow, strung it as easily as a bard strings a lyre, and shot an arrow through all twelve axe-rings without touching the ground. He revealed himself to the suitors, took a second arrow, and struck Antinous in the throat as the chief wooer lifted a cup — the slaughter had begun.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 21.359–22.88"
+    },
+    {
+      "title": "The mnesterophonia",
+      "text": "Telemachus, Eumaeus, and Philoetius barred the doors; Athena in Mentor's shape stood by the rafters. Odysseus and his three allies cut down the suitors with bow and spears — Eurymachus, Amphimedon, Agelaus, and the rest — while the minstrel Phemius begged for mercy and Medon the herald was spared for warning Penelope. Leiodes the soothsayer clasped Odysseus' knees in vain.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 22.89–22.329"
+    },
+    {
+      "title": "Melanthius and the maids",
+      "text": "Melanthius the goatherd, son of Dolius, brought armour from the storeroom to arm the suitors until Odysseus and his men strung him up alive in the rafters. The faithless handmaids who had bedded with the wooers were made to carry out the corpses, then hanged in the courtyard. Eurycleia roused the loyal women with the cry that Odysseus had returned.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 22.330–22.494; Apollod. Epit. 7.33"
+    }
+  ],
+  "cast": [
+    { "id": "odysseus", "name": "Odysseus", "role": "Archer who bent the bow" },
+    { "id": "telemachus", "name": "Telemachus", "role": "Son who barred the doors" },
+    { "id": "penelope", "name": "Penelope", "role": "She who set the test" },
+    { "id": "antinous", "name": "Antinous", "role": "First slain at the cup" },
+    { "id": "eurymachus-ithaca", "name": "Eurymachus", "role": "Slain in the hall" },
+    { "id": "amphinomus-dulichium", "name": "Amphinomus", "role": "Courteous suitor who died at the feast" },
+    { "id": "amphimedon-ithaca", "name": "Amphimedon", "role": "He who later told the tale in Hades" },
+    { "id": "eumaeus", "name": "Eumaeus", "role": "Swineherd in the fight" },
+    { "id": "philoetius", "name": "Philoetius", "role": "Cowherd in the fight" },
+    { "id": "melanthius-ithaca", "name": "Melanthius", "role": "Traitor goatherd" },
+    { "id": "phemius-ithaca", "name": "Phemius", "role": "Minstrel spared" },
+    { "id": "athena", "name": "Athena", "role": "She who stood by in Mentor's form" }
+  ],
+  "places": [
+    { "id": "ithaca", "name": "Ithaca", "role": "The hall where the wooers fell" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "21–22" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "7.33" }
+  ]
+}

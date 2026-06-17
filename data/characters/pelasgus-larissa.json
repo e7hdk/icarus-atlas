@@ -1,0 +1,27 @@
+{
+  "id": "pelasgus-larissa",
+  "name": "Pelasgus",
+  "greekName": "Pelasgos (Πελασγός)",
+  "type": "hero",
+  "domains": ["father of Hippothous", "Pelasgian house", "Larissa"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Hippothous (`hippothous-pelasgian`) from Larissa — attested by Apollodorus among the Trojan allies, while Homer names the captain son of Pelasgian Lethus instead.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus, listing the allies who joined the Trojans after nine years of siege, makes Hippothous son of Pelasgus from Larissa — a parentage that stands beside Homer's Lethus son of Teutamus (`hippothous-pelasgian-parentage`).",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.35"
+    },
+    {
+      "text": "He must be kept distinct from Pelasgus king of Arcadia (`pelasgus-arcadia`), the eponym of the Pelasgian race, and from other Pelasgus figures in the genealogies.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import { hashString, mulberry32, sampleBandPoint } from '@/features/galaxy/layou
 import { clusterTint, BACKDROP_TINTS } from './palette';
 import { getNebulaAtlas } from './nebulaAtlas';
 import { BILLBOARD_VERT, WISP_FRAG } from './shaders/nebula';
+import { useElapsedRef } from './useElapsedRef';
 
 /** Additive nebula wisps — one InstancedMesh, one draw call.
  *  In-volume wisps live inside the same cluster bands as the character stars
@@ -99,10 +100,11 @@ export function NebulaWisps() {
     instanced.instanceMatrix.needsUpdate = true;
   }, [gl, offsets]);
 
-  useFrame(({ clock }) => {
+  const elapsed = useElapsedRef();
+  useFrame(() => {
     const material = materialRef.current;
     if (!material) return;
-    material.uniforms.uTime.value = clock.elapsedTime;
+    material.uniforms.uTime.value = elapsed.current;
   });
 
   return (

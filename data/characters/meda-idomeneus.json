@@ -1,0 +1,30 @@
+{
+  "id": "meda-idomeneus",
+  "name": "Meda",
+  "greekName": "Mēda (Μήδα)",
+  "type": "mortal",
+  "domains": [
+    "queen of Crete",
+    "the Nauplius betrayals"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wife of Idomeneus king of Crete, who took Leucus as lover when Nauplius corrupted the Greek wives — and was killed with her daughter Clisithyra before the victor of Troy could land.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.9–6.10; Fabulae 116–117"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Meda among the wives Nauplius turned false while coasting along Hellas: Clytemnestra with Aegisthus, Aegialia with Cometes, and Meda with Leucus. The nested episode on Nauplius' vengeance tells the contrivance; the nested episode on Idomeneus and Leucus tells the Cretan end.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    },
+    {
+      "text": "Leucus killed Meda and her daughter Clisithyra, who had taken refuge in the temple, before Idomeneus returned from Troy — murder in sanctuary that completed the coup over ten Cretan cities.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.10"
+    }
+  ]
+}

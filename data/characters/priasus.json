@@ -1,0 +1,29 @@
+{
+  "id": "priasus",
+  "name": "Priasus",
+  "greekName": "Priasos (Πρίασος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Magnesia",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Caeneus from Magnesia, Argonaut in Hyginus' roll.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus lists Priasus son of Caeneus among Jason's comrades from Magnesia.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 14"
+    }
+  ]
+}

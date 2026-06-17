@@ -1,0 +1,28 @@
+{
+  "id": "echeclus-trojan",
+  "name": "Echeclus",
+  "greekName": "Echeklos (Ἐχέκλος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Patroclus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Patroclus laid low after Adrastus and Autonous when the gods called him deathward — distinct from `echeclus-agenorid` son of Agenor, whom Achilles smote in *Iliad* 20.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then whom first, whom last didst thou slay, Patroclus, when the gods called thee deathward? Adrastus first, and Autonous, and Echeclus, and Perimus son of Megas, and Epistor, and Melanippus, and thereafter Elasus, and Mulius, and Pylartes: these he slew, and the others bethought them each man of flight.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "eumelus-pherae",
+  "name": "Eumelus",
+  "greekName": "Eumēlos (Εὔμηλος)",
+  "romanName": "Eumelus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pheraean muster",
+    "chariot racing",
+    "Apollo's swiftest mares"
+  ],
+  "summary": [
+    {
+      "text": "Dear son of Admetus and Alcestis, queenly among women, who led eleven ships from Pherae beside lake Boebeis to Troy — and whose mares, reared by Apollo in Pereia, were the swiftest in the whole Achaean host.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.711–715, 2.763–767"
+    },
+    {
+      "text": "A master of the chariot, he was first to the mark at Patroclus' funeral games until his car crashed, and Achilles himself made good the loss with a bronze corselet from Asteropaeus.",
+      "sources": ["homer"],
+      "citation": "Iliad 23.288–292, 23.388–392, 23.555–565"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him in the muster of ships. The towns beside lake Boebeis and well-built Iolcus were led by the dear son of Admetus, Eumelus, whom Alcestis, queenly among women and comeliest of the daughters of Pelias, bore to Admetus — eleven ships from the Pheraean quarter of the host. When the captains later compared their horses, the swiftest mares in the whole army were his, the very pair that Apollo of the silver bow had reared in Pereia.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.711–715, 2.763–767"
+    },
+    {
+      "text": "Hyginus counts him among the captains who sailed against Troy: Eumelus, son of Admetus and Alcestis, daughter of Pelias, from Perrhaebia with eight ships — a slightly different muster-roll, but the same royal house.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    },
+    {
+      "text": "At the funeral games for Patroclus he stood among the foremost. Eumelus, king of men and Admetus' dear son, a man well skilled in horsemanship, was first to spring up for the chariot-race; after him rose Diomedes, Menelaus, Meriones, and last of all the son of Tydeus, though far the best. When the lots were shaken, Antilochus drew the lead, Eumelus the place beside him, and the field took its stations in a row. But the goddess broke the yoke of his steeds, the mares swerved, the pole swung to the earth, and Eumelus himself was hurled beside the wheel — skin stripped from elbows, mouth, and nose, his eyes filled with tears. Achilles pitied him and would have given him the second prize outright; when Menelaus and Antilochus quarrelled over the placings, the son of Peleus offered Eumelus another gift from his house instead — the bronze corselet he had stripped from Asteropaeus, circled with bright tin.",
+      "sources": ["homer"],
+      "citation": "Iliad 23.288–292, 23.355–392, 23.475–510, 23.555–565"
+    },
+    {
+      "text": "Apollodorus' epitome remembers a different victory. When the Achaeans held games in honor of Achilles after his death and buried him with Patroclus on the White Isle, Eumelus won the chariot-race, Diomedes the footrace, Ajax the quoit match, and Teucer the archery — so the son of Admetus is crowned a victor in one telling, though at Patroclus' games Homer had him fall.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pherae",
+      "sources": ["homer", "hyginus"]
+    }
+  ]
+}

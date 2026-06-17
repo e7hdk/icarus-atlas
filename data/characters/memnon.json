@@ -1,0 +1,36 @@
+{
+  "id": "memnon",
+  "name": "Memnon",
+  "greekName": "Memnōn (Μέμνων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Ethiopian king",
+    "son of Eos and Tithonus",
+    "the ally after Penthesilea"
+  ],
+  "summary": [
+    {
+      "text": "King of the Ethiopians, son of Dawn and Tithonus, who led a great force to Troy after Penthesilea fell — killed Antilochus and was himself slain by Achilles.",
+      "sources": ["apollodorus", "hyginus", "homer"],
+      "citation": "Epitome 5.3; Fabulae 112; Odyssey 11.522–537"
+    }
+  ],
+  "story": [
+    {
+      "text": "Eos bore brazen-crested Memnon to Tithonus when the Dawn snatched the mortal away for love and carried him to Ethiopia. Apollodorus and Hyginus both know him as the Ethiopian king who came to Troy with a vast host after the Amazon queen was killed.",
+      "sources": ["apollodorus", "hyginus", "hesiod"],
+      "citation": "Epitome 5.3; Fabulae 112; Theogony 984–991"
+    },
+    {
+      "text": "Memnon killed Antilochus son of Nestor in the fighting before the city; Achilles avenged the Pylian and slew Memnon in turn. Paris, guided by Apollo, then brought down Achilles at the Scaean gate — the chain of allies and revenges that closes the Aethiopis arc.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.3; Fabulae 112"
+    },
+    {
+      "text": "In the underworld Odysseus tells Achilles' shade that Neoptolemus was ever first in counsel and ran far to the front in battle — and that Eurypylus was the comeliest man he saw after Memnon.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.522–537"
+    }
+  ]
+}

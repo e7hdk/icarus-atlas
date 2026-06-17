@@ -1,0 +1,40 @@
+{
+  "id": "deucalion-crete",
+  "name": "Deucalion",
+  "greekName": "Deukaliōn (Δευκαλίων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Crete",
+    "the Argonaut voyage",
+    "father of Idomeneus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Minos, Cretan Argonaut in Hyginus' list, father of Idomeneus — slain by Theseus in another tale.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Bibliotheca 3.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus counts Deucalion son of Minos among the Argonauts; Apollodorus makes him brother in the Cretan royal line to whom Idomeneus succeeded at Troy.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Bibliotheca 3.1.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": [
+        "hyginus"
+      ]
+    }
+  ]
+}

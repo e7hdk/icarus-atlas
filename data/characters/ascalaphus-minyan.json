@@ -1,0 +1,33 @@
+{
+  "id": "ascalaphus-minyan",
+  "name": "Ascalaphus",
+  "greekName": "Askalaphos (Ἀσκάλαφος)",
+  "type": "hero",
+  "domains": ["Orchomenus of the Minyae", "sons of Ares", "the thirty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Ares and captain of the Minyans from Aspledon and Orchomenus — one of the thirty ships — whom Deïphobus smote through the shoulder while loud-voiced Ares knew not yet that his son had fallen.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.515–545, 9.50–85, 13.515–555; Fabulae 114"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Ascalaphus and Ialmenus lead the Minyans of Orchomenus and Aspledon — sons whom Astyoche conceived of mighty Ares in the palace of Actor son of Azeus when the god lay with her in secret. Thirty hollow ships followed the twain. When the host kept watch in fear of Trojan spies, Ascalaphus and Ialmenus went forth among the seven captains of the sentinels with Thrasymedes and Meriones.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 9.50–85"
+    },
+    {
+      "text": "At the wall Idomeneus, famed for his spear, called to Ascalaphus, Aphareus, Deïpyrus, Meriones, and Antilochus when Aeneas pressed him hard. Deïphobus cast at Meriones and missed, but smote Ascalaphus son of Enyalius through the shoulder; he fell clutching the dust, and over his body Deïphobus and Meriones clashed until the Cretan spearman smote Deïphobus' arm and the crested helm rang on the ground. Loud-voiced dread Ares as yet knew not that his son had fallen in the mighty conflict.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 13.455–555; Fabulae 114"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["homer"]
+    }
+  ]
+}

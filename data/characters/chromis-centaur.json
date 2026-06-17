@@ -1,0 +1,33 @@
+{
+  "id": "chromis-centaur",
+  "name": "Chromis",
+  "greekName": "Chromis (Χρόμις)",
+  "romanName": "Chromis",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "fallen before the bridegroom"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who fell before Peirithous at the wedding war, paired with Lycus in Ovid's narration.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's tale in Ovid has Lycus and Chromis fall before Pirithous when the centaurs were driven back — their deaths counted as less glorious than the javelin that pierced Helops or the cliff-death of Dictys on the ash tree.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

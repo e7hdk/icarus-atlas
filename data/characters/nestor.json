@@ -1,0 +1,66 @@
+{
+  "id": "nestor",
+  "name": "Nestor",
+  "greekName": "Nestōr (Νέστωρ)",
+  "romanName": "Nestor",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "sandy Pylos",
+    "the Neleid kingship",
+    "Achaean counsel",
+    "the horseman's art",
+    "the Trojan War"
+  ],
+  "summary": [
+    {
+      "text": "Son of Neleus, king of sandy Pylos — the old horseman whose counsel steered the Achaean host at Troy and whose ninety ships were among the largest contingents in the fleet.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.80–105, 2.591–594; Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Alone of Neleus' sons he survived when Heracles sacked Pylos and killed his father and brothers; in later Messenian reckoning the kingdom of Aphareus passed to him after the Dioscuri wiped out that house.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.9, 2.7.3; Description of Greece 4.2.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer opens the war-council with him. When Agamemnon rose from Zeus-sent sleep and told the dream that urged instant battle, Nestor — king of sandy Pylos — was the first to answer with good intent, urging the kings to muster the host and probe the Trojans' strength. In the catalogue of ships his realm is the coastland of Pylos: Pylos itself, Arene, Thryum, and the towns on the border of sandy Pylos — ninety black ships under the old man who had seen three generations of men.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.245–280, 2.80–105, 2.591–594"
+    },
+    {
+      "text": "Through the Iliad he is the voice of seasoned counsel. When the army nearly sailed home he recalled how in his youth he fought beside the Lapiths against the Centaurs; in the embassy to Achilles he pleaded that the Myrmidons return to the fight; and when Patroclus fell he urged the captains to send Antilochus with the bitter news to the son of Peleus. His tales of former wars — of Ereuthalion and Areithous, of the cattle-raid on Iolcus — measure the present quarrel against a lifetime of Greek feuds already settled.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.336–368, 7.132–156, 11.670–761, 18.252–270"
+    },
+    {
+      "text": "Apollodorus makes his survival the hinge of the Neleid line. Neleus came to Messene, founded Pylos, and by Chloris daughter of Amphion had Nestor and many other sons; when Heracles marched against the city he slew Neleus and all the sons save Nestor alone. The survivor inherited the kingship that Homer knows as sandy Pylos and carried the house into the Trojan generation.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Pausanias ties him to the Messenian succession after the feud of the Dioscuri. When Lynceus fell to Polydeuces and Idas was blasted by the lightning, the kingdom of Aphareus was left without a male heir and passed to Nestor son of Neleus — so the counsellor of Troy also absorbed the royal line of Messene in local tradition.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.2.7"
+    },
+    {
+      "text": "In the Odyssey Telemachus found him on the shore at Pylos, sacrificing with his sons to Poseidon after the Pylians had feasted. Nestor could tell the prince nothing of Odysseus since the war, but recalled how Orestes avenged Agamemnon and urged Telemachus to be bold like that son of Atreus; then he sent the boy on to Sparta in the chariot of Peisistratus. At dawn he gathered Echephron, Stratius, Perseus, Aretus, Thrasymedes, and Peisistratus to propitiate Athena before the journey; and fair Polycaste, his youngest daughter, bathed the guest when the sacrifice was done, while the revered wife Eurydice stood with the Pylians' women at the hecatomb.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.1–415, 3.405–495"
+    },
+    {
+      "text": "Apollodorus names his queen Anaxibia, daughter of Cratieus, and makes her mother of the same sons and of Pisidice and Polycaste — where Homer calls the queen Eurydice, daughter of Clymenus. The two wife-names for one Pylian household are tagged as a source dispute (nestor-wife-identity).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9",
+      "topic": "nestor-wife-identity"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  ]
+}

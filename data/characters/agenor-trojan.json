@@ -1,0 +1,33 @@
+{
+  "id": "agenor-trojan",
+  "name": "Agenor",
+  "greekName": "Agēnōr (Ἀγήνωρ)",
+  "type": "hero",
+  "domains": ["Antenor's line", "the stand at the Scaean Gate", "front-rank Trojan fighting"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Antenor, a peerless warrior and stalwart who fought beside Hector in the foremost ranks and, when Achilles stormed toward the gates, refused to flee until he had made trial of the son of Peleus — saved by Apollo's mist when Troy would otherwise have fallen.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.59–71, 21.540–610"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him among the three sons of Antenor who followed Hector and peerless Polydamas — Polybus, goodly Agenor, and young Acamas, like to the immortals — when the Trojans pressed the Achaean wall. He led companies with Paris and Alcathous in the assault on the ships, and stood in the battle-din where Trojans and Danaans clashed around Cebriones.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.59–71, 12.80–105, 13.790–820"
+    },
+    {
+      "text": "When Achilles raged at the Scaean Gate and the sons of the Achaeans would have taken high-gated Troy, Phoebus Apollo roused goodly Agenor, Antenor's son: he put courage in his heart, stood by his side enfolded in deep mist, and when Agenor aimed his spear and shouted his challenge, the god afterward ran in Agenor's likeness to lure Achilles away from the wall — as a wasp pierced through with the spear ceaseth not from fury until she grapple or be slain, so Antenor's son refused to flee till he had faced Achilles.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.540–610"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

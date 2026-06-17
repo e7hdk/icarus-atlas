@@ -1,0 +1,35 @@
+{
+  "id": "halius-zacynthus",
+  "name": "Halius",
+  "greekName": "Halius (Ἅλιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — wholly distinct from Halius son of Alcinous, who danced with Laodamas before Odysseus at the Phaeacian games.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Odyssey 8.85–120, 8.345–380"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Halius among the wooers assigned to Zacynthus, listed after Laodicus and before Magnes in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -3,37 +3,54 @@
   "name": "Asia",
   "greekName": "Asia (Ἀσία)",
   "type": "nymph",
-  "domains": ["fresh waters", "the nurture of youths"],
+  "domains": [
+    "fresh waters",
+    "the nurture of youths"
+  ],
   "cluster": "titan-ring",
   "summary": [
     {
       "text": "Oceanid daughter of Oceanus and Tethys who, in the Bibliotheca, is the wife of the Titan Iapetus and mother of Atlas, Prometheus, Epimetheus and Menoetius.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 1.2.2–1.2.3"
     },
     {
       "text": "A name among the holy daughters of Tethys and Oceanus in Hesiod's catalogue — no more; in his telling the mother of Iapetus' sons is her sister Clymene.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 359, 507–514"
     }
   ],
   "story": [
     {
       "text": "Hesiod knows her only as a single name at line 359 of his catalogue of Oceanids — one of the holy company of daughters of Tethys and Ocean who, with lord Apollo and the Rivers, have youths in their keeping all over the earth.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 346–348, 359"
     },
     {
       "text": "In Apollodorus she steps to the front of the family. His list of Oceanids opens with her — Asia, Styx, Electra, Doris, Eurynome, Amphitrite, Metis — and it is to Iapetus and Asia that Atlas, who has the sky on his shoulders, and Prometheus, and Epimetheus, and Menoetius are born. The whole house of the Iapetionids, in his telling, descends from her.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 1.2.2–1.2.3",
       "topic": "iapetionid-mother"
     },
     {
       "text": "Hesiod and Hyginus give these sons to her sister Clymene instead: in the Theogony it is the neat-ankled Clymene whom Iapetus leads up into one bed, and Hyginus' genealogical preface likewise pairs Iapetus with Clymene — though his list of their children (Atlas, Epimetheus, Prometheus) drops Menoetius. Asia plays no part in either author's family of the Titans.",
-      "sources": ["hesiod", "hyginus"],
+      "sources": [
+        "hesiod",
+        "hyginus"
+      ],
       "citation": "Theogony 507–514; Fabulae, preface (Theogony)",
       "topic": "iapetionid-mother"
     }
+  ],
+  "kinds": [
+    "oceanid"
   ]
 }

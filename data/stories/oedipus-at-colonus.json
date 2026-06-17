@@ -1,0 +1,58 @@
+{
+  "id": "oedipus-at-colonus",
+  "title": "Oedipus at Colonus",
+  "greekTitle": "Οἰδίπους ἐπὶ Κολωνῷ",
+  "kind": "episode",
+  "parent": "theban-cycle",
+  "era": 5.85,
+  "summary": {
+    "text": "Blinded and cast out of Thebes, Oedipus wandered Attica with Antigone until he reached Colonus — the precinct of the Eumenides — where Theseus received the suppliant and the Labdacid king died; Homer remembers funeral games at Thebes, Pausanias a monument at Colonus whose bones were brought from Boeotia.",
+    "sources": ["apollodorus", "homer", "pausanias"],
+    "citation": "Apollod. 3.5.9; Hom. Il. 23.677–679, Od. 11.275–280; Paus. 1.28.7, 1.30.4"
+  },
+  "chapters": [
+    {
+      "title": "Cast out with the curse",
+      "text": "When the secret came to light, Jocasta hanged herself and Oedipus put out his own eyes. He cursed his sons Eteocles and Polynices, who saw him driven from Thebes without lifting a hand to help him — and only Antigone went with the blind king into exile.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 3.5.9; Hom. Od. 11.275–280"
+    },
+    {
+      "title": "Colonus and the Eumenides",
+      "text": "Father and daughter came to Colonus in Attica, where stands the precinct of the Eumenides. Pausanias knew the Hill of Horses as the first point in Attica that Oedipus reached — an Attic tradition that differs from Homer's account, but was current in his day — and altars there to Poseidon Horse God and Athena Horse Goddess, with a chapel shared by Peirithous, Theseus, Oedipus, and Adrastus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.5.9; Paus. 1.30.4"
+    },
+    {
+      "title": "Theseus receives the suppliant",
+      "text": "At Colonus Oedipus sat down as a suppliant in the holy precinct, and Theseus king of Athens kindly received him. The same Theseus would later march against Thebes when Creon forbade burial to the Argive dead — but first he sheltered the ruined king of the Cadmeans in his own land.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.5.9, 3.7.1"
+    },
+    {
+      "title": "Where the king died",
+      "text": "Apollodorus says Oedipus died at Colonus not long after Theseus took him in. Homer tells another tale: in the underworld Odysseus saw Epicaste in Hades while Oedipus still bore the woes the Avengers of a mother bring to pass; and in the Iliad Euryalus son of Mecisteus is remembered as one who came to Thebes for the burial of Oedipus when he had fallen, and there worsted all the sons of Cadmus in the funeral games. Pausanias saw Oedipus' monument within the Colonus precinct and learned that his bones were brought from Thebes — and refused to believe the death-scene of later drama, citing Homer's games at Thebes as proof the old poet knew a different ending.",
+      "sources": ["apollodorus", "homer", "pausanias"],
+      "citation": "Apollod. 3.5.9; Hom. Il. 23.677–679, Od. 11.275–280; Paus. 1.28.7",
+      "topic": "oedipus-death-place"
+    }
+  ],
+  "cast": [
+    { "id": "oedipus", "name": "Oedipus", "role": "Blind exile seeking a final resting place" },
+    { "id": "antigone", "name": "Antigone", "role": "Daughter who guided her father into Attica" },
+    { "id": "theseus", "name": "Theseus", "role": "King of Athens who received the suppliant" },
+    { "id": "eteocles", "name": "Eteocles", "role": "Son who did not help his cast-out father" },
+    { "id": "polynices", "name": "Polynices", "role": "Son cursed with his brother" }
+  ],
+  "places": [
+    { "id": "athens", "name": "Athens", "role": "Theseus' kingdom that sheltered the suppliant" },
+    { "name": "Colonus", "role": "Attic deme and precinct of the Eumenides" },
+    { "id": "thebes", "name": "Thebes", "role": "City that cast Oedipus out and, in Homer's telling, buried him" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.5.9" },
+    { "source": "homer", "work": "Iliad", "citation": "23.677–679" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.275–280" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.28.7, 1.30.4" }
+  ]
+}

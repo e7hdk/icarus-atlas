@@ -1,0 +1,56 @@
+{
+  "id": "narcissus-echo",
+  "title": "Narcissus and Echo",
+  "greekTitle": "Νάρκισσος καὶ Ἠχώ",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5.005,
+  "summary": {
+    "text": "Tiresias prophesied that Narcissus son of the river Cephisus would live to old age only if he never knew himself — Echo, the nymph Juno stripped of speech, loved him and was scorned, and Nemesis answered a rejected suitor's prayer: the boy who mocked all lovers fell in love with his own reflection in the pool and wasted away into the flower that bears his name.",
+    "sources": ["ovid", "hyginus", "pausanias"],
+    "citation": "Ov. Met. 3.339–510; Hyg. Fab. 271; Paus. 9.31.7–8"
+  },
+  "chapters": [
+    {
+      "title": "Tiresias' riddle",
+      "text": "Liriope the nymph brought her son Narcissus, fifteen years old and already surpassingly beautiful, to Tiresias and asked whether he would reach old age. The seer answered that he would — if he never recognized himself. The prophecy seemed idle until pride and a strange love proved it true.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 3.339–346"
+    },
+    {
+      "title": "Echo",
+      "text": "Echo had once been a nymph who talked as much as she listened, until Juno, tired of being delayed while Echo chatted with Jove's mistresses on the mountains, condemned her to repeat only the last words others spoke. She saw Narcissus hunting and loved him; when he called Who is here? she answered Here! and ran to embrace him — but he fled, crying that he would rather die than be caressed by her.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 3.347–401"
+    },
+    {
+      "title": "The pool",
+      "text": "Echo wasted to voice and bone among the hills; a rejected youth prayed that Narcissus might love and not obtain — and Nemesis heard. Narcissus came to a fountain no goat or beast had troubled, stooped to drink, and saw a face as beautiful as his own. He fell in love with the image in the water, not knowing it was himself: he spoke, was answered, reached for kisses that the pool returned, and pined at the edge that could not hold what he desired.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 3.402–436"
+    },
+    {
+      "title": "The flower",
+      "text": "When he knew at last that he loved himself and could not leave the treacherous reflection, he cried that he had destroyed himself and would not outlive his love — and as he spoke, Echo answered in grief. He lay down and died; the nymphs mourned him, and when they sought his body they found only a flower with a yellow centre and white petals. Hyginus names him son of the river Cephisus who loved himself; Pausanias knew the spring at Thespiae where he looked into the water, and also a lesser tale of a twin sister he grieved like a lost reflection.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Ov. Met. 3.437–510; Hyg. Fab. 271; Paus. 9.31.7–8"
+    }
+  ],
+  "cast": [
+    { "name": "Narcissus", "role": "The beautiful youth who loved his own reflection" },
+    { "id": "echo-nymph", "name": "Echo", "role": "The nymph reduced to repeating voice" },
+    { "id": "tiresias", "name": "Tiresias", "role": "Seer who foretold the boy's fate" },
+    { "name": "Liriope", "role": "Nymph mother who asked the oracle" },
+    { "id": "hera", "name": "Hera", "role": "Juno, who punished Echo's chatter" }
+  ],
+  "places": [
+    { "name": "Thespiae", "role": "Boeotian city near Narcissus' spring" },
+    { "name": "Mount Cithaeron", "role": "Highlands where Echo wandered" },
+    { "name": "River Cephisus", "role": "Father of Narcissus in the tradition" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "3.339–510" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "271" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "9.31.7–8" }
+  ]
+}

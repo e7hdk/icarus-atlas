@@ -56,5 +56,21 @@
       ],
       "citation": "Bibliotheca 2.4.6"
     }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    },
+    {
+      "city": "mycenae",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
   ]
 }

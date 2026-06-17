@@ -1,0 +1,39 @@
+{
+  "id": "meriones",
+  "name": "Meriones",
+  "greekName": "Merionēs (Μηριόνης)",
+  "type": "hero",
+  "domains": ["the squire of Idomeneus", "spear and bow", "Crete"],
+  "epithets": ["peer of Enyalius"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Molus and dearest comrade of Idomeneus, the peer of Enyalius who captained the hindmost Cretan battalions at Troy and fought beside his king like Rout following Ares.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.645–650, 13.295–325; Bibliotheca 3.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets him second only to Idomeneus among the Cretans: while the king stood amid the foremost fighters like a wild boar, Meriones sped on the hindmost battalions. Agamemnon saw them arm and rejoiced. In the great counter-thrust by the ships, Meriones followed Idomeneus with high thought of battle, and the poet likens the pair to Ares going forth with Rout his son — valiant and fearless.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.225–260, 13.295–360"
+    },
+    {
+      "text": "He is the king's squire in deed as in name. When Idomeneus needed a fresh spear, Meriones fetched one from the hut; when the king asked where the Achaeans faltered, Meriones answered and led the way into the throng. Coeranus of Lyctus, charioteer brought from that city when Idomeneus had first come on foot from the ships, fell by Hector's cast; the king mourned him, yet Meriones remained the comrade at his side.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.206–214, 13.330–360, 17.250–270"
+    },
+    {
+      "text": "On the night raid Odysseus wore a cap that had passed from Autolycus through Amphidamas to Molus and then to Molus' son Meriones — a guest-gift chain that bound the Cretan warrior to the Ithacan's exploit. Apollodorus counts him among the sons of Deucalion's household: to Deucalion son of Minos were born Idomeneus, Crete, and the bastard Molus, and to Molus was born Meriones.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 10.255–290; Bibliotheca 3.1.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

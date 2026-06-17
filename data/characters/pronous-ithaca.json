@@ -1,0 +1,31 @@
+{
+  "id": "pronous-ithaca",
+  "name": "Pronous",
+  "greekName": "Pronous (Πρόνοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "One of the twelve suitors from Ithaca itself in Apollodorus' catalogue — a distinct figure from the Trojan Pronous whom Sarpedon slew in the Iliad.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Pronous among the twelve wooers of Penelope who came from Ithaca itself, listed with Antinous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Aristratus, Helenus, Dulicheus, and Ctesippus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

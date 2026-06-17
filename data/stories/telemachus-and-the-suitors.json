@@ -1,0 +1,70 @@
+{
+  "id": "telemachus-and-the-suitors",
+  "title": "Telemachus and the Suitors",
+  "greekTitle": "Τηλέμαχος καὶ οἱ μνηστῆρες",
+  "kind": "episode",
+  "parent": "odyssey",
+  "era": 9,
+  "summary": {
+    "text": "On rocky Ithaca the suitors devoured Odysseus' herds while Penelope unwove her shroud by night — until Athena roused Telemachus to sail for news of his father at Nestor's Pylos and Menelaus' Sparta, where Proteus revealed that the king still lived on Calypso's isle.",
+    "sources": ["homer", "apollodorus"],
+    "citation": "Hom. Od. 1–4; Apollod. Epit. 7.31"
+  },
+  "chapters": [
+    {
+      "title": "The wooers in the hall",
+      "text": "When the gods in council remembered Odysseus detained on Ogygia, Athena descended to Ithaca disguised as Mentes. In the palace of the absent king, the suitors of Penelope — chiefly Antinous and Eurymachus — feasted on his oxen and sheep, threw the knucklebones, and listened to the minstrel Phemius sing of the Achaeans' return from Troy. Telemachus, sitting apart, welcomed the stranger; Athena urged him to call an assembly and voyage abroad for news of his father.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 1.1–444"
+    },
+    {
+      "title": "Penelope's web",
+      "text": "Penelope had promised the suitors she would choose a husband when she finished weaving a shroud for Laertes — and for three years she undid by night what she wove by day, until a handmaid betrayed the trick. The wooers redoubled their pressure; Medon the herald warned her that they plotted Telemachus' murder at sea. Apollodorus catalogues the princes from Dulichium, Same, Zacynthus, and Ithaca itself who consumed the royal substance in the king's absence.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 2.93–110; Apollod. Epit. 7.27–7.31"
+    },
+    {
+      "title": "The assembly and the voyage",
+      "text": "Telemachus called the first assembly in years and demanded ships to seek Odysseus. The suitors mocked him; only the seer Halitherses and Mentor — Athena again — spoke for the prince. By night Telemachus loaded a ship with twenty comrades, including the fugitive Theoclymenus, and put out secretly while the wooers slept, plotting ambush at the straits between Ithaca and Samos.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 2.1–434"
+    },
+    {
+      "title": "Nestor at Pylos",
+      "text": "At sandy Pylos Telemachus found Nestor sacrificing on the shore to Poseidon with his sons. The old king could tell him nothing certain of Odysseus after Troy — only that Menelaus had wandered longest — but he recalled the bitter Returns as only the one safe captain could; the nested episode on Nestor at Pylos tells that nostos. He sent Peisistratus with the boy in a chariot to Sparta, while Athena in Mentor's shape sailed the Ithacan ship home to guard the prince's property.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.1–487"
+    },
+    {
+      "title": "Menelaus and Proteus",
+      "text": "In Sparta Menelaus and Helen received Telemachus at a double wedding feast. Helen recognized the youth by his likeness to Odysseus, drugged the wine with a heart-easing drug, and traded Troy tales until the boy wept. Menelaus told how in Egypt he had bound Proteus the Old Man of the Sea, who revealed that Odysseus lived but was held by Calypso — the nested episode on Menelaus in Egypt tells the eight-year detour, Sunium, Pharos, the phantom Helen, and the binding in full.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 4.1–356"
+    }
+  ],
+  "cast": [
+    { "id": "telemachus", "name": "Telemachus", "role": "The son who sailed for news" },
+    { "id": "penelope", "name": "Penelope", "role": "The queen who unwove the shroud" },
+    { "id": "athena", "name": "Athena", "role": "Patron in the guise of Mentor and Mentes" },
+    { "id": "antinous", "name": "Antinous", "role": "Chief of the suitors" },
+    { "id": "eurymachus-ithaca", "name": "Eurymachus", "role": "The boldest wooer after Antinous" },
+    { "id": "phemius-ithaca", "name": "Phemius", "role": "Minstrel of the suitors" },
+    { "id": "nestor", "name": "Nestor", "role": "Old counsellor at Pylos" },
+    { "id": "peisistratus-nestor", "name": "Peisistratus", "role": "Nestor's son, guide to Sparta" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Host who bound Proteus" },
+    { "id": "helen", "name": "Helen", "role": "She who recognized Telemachus" },
+    { "id": "proteus", "name": "Proteus", "role": "Seer who said Odysseus lived" },
+    { "id": "theoclymenus", "name": "Theoclymenus", "role": "Fugitive seer on the voyage" },
+    { "id": "medon-ithaca", "name": "Medon", "role": "Herald who warned Penelope" }
+  ],
+  "places": [
+    { "id": "ithaca", "name": "Ithaca", "role": "Palace of the suitors" },
+    { "id": "pylos", "name": "Pylos", "role": "Nestor's sacrifice by the sea" },
+    { "id": "sparta", "name": "Sparta", "role": "Menelaus' hall" },
+    { "name": "Egypt", "role": "Where Menelaus learned Odysseus lived" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "1–4" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "7.31" }
+  ]
+}

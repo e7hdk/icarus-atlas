@@ -1,0 +1,32 @@
+{
+  "id": "mopsus",
+  "name": "Mopsus",
+  "greekName": "Mopsos (Μόψος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "augury",
+    "the Argonaut voyage",
+    "Oechalia"
+  ],
+  "summary": [
+    {
+      "text": "Son of Ampycus, trained in augury by Apollo, who sailed with Jason, kept watch with Acastus in storm, and died of a serpent's bite in Libya after joining the crew mid-voyage — not to be confused with Mopsus of Colophon, the son of Apollo and Manto who defeated Calchas on the Returns.",
+      "sources": [
+        "apollonius",
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Argonautica 1.80, 1.1079, 4.1502–1536; Fabulae 14; Metamorphoses 12.456"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Mopsus son of Ampycus among the seers of the voyage; when storm pinned the heroes ashore he and Acastus kept watch while a halcyon hovered prophesying calm. In Libya he was bitten by a serpent and died — Idmon's avenger Idas slew the beast that gored the other seer.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.80, 1.1079, 2.815–850, 4.1502–1536"
+    }
+  ]
+}

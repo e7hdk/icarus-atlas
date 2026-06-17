@@ -3,25 +3,41 @@
   "name": "Lynceus",
   "greekName": "Lynkeus (Λυγκεύς)",
   "type": "mortal",
-  "domains": ["King of Argos"],
+  "domains": [
+    "King of Argos"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "The only son of Aegyptus to survive the murderous wedding night of the Danaides. He became King of Argos and father of Abas.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.1.5"
     }
   ],
   "story": [
     {
       "text": "When the fifty sons of Aegyptus forced the fifty daughters of Danaus (the Danaides) into marriage, Danaus ordered his daughters to murder their husbands on their wedding night. Only Hypermnestra spared her husband, Lynceus.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.1.5"
     },
     {
       "text": "Lynceus eventually inherited the kingdom of Argos and became the father of Abas, continuing the royal line that would lead to Perseus and Heracles.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.2.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus"
+      ]
     }
   ]
 }

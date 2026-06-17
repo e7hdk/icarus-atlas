@@ -1,0 +1,28 @@
+{
+  "id": "hypsenor-trojan",
+  "name": "Hypsenor",
+  "greekName": "Hypsēnōr (Ὑψήνωρ)",
+  "type": "hero",
+  "domains": ["son of Hippasus", "shepherd of the people", "Trojan warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Hippasus (`hippasus-trojan`) and shepherd of the people, whom great Deïphobus smote in the liver beneath the midriff when the battle surged about the ships — brother of Charops and Socus in the house of Hippasus.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.405–420"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the battle cried unquenchable arose about the ships, Deïphobus smote Hypsenor son of Hippasus, shepherd of the people, in the liver beneath the midriff with his mighty spear; and down he fell and darkness enfolded his eyes. His comrades bore him away from the battle, making great lamentation, and placed him in the chariot; but the horses that drew him were all in tears as they went, for they missed their goodly charioteer.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.405–420"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

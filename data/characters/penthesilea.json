@@ -1,0 +1,38 @@
+{
+  "id": "penthesilea",
+  "name": "Penthesilea",
+  "greekName": "Penthesileia (Πενθεσίλεια)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Amazon queen",
+    "daughter of Ares and Otrera",
+    "the last ally before Troy fell"
+  ],
+  "summary": [
+    {
+      "text": "An Amazon queen who came to Troy after Hector's death — daughter of Ares and Otrera in Hyginus' roll — and was slain by Achilles before the walls.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 112, 163; Epitome 5.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus names Penthesilea among the Amazons and, in his catalogue of Trojan combats, makes her daughter of Mars and Otrera — the same Otrera who founded Artemis' temple at Ephesus and bore Hippolyte, whose belt Heracles took.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 30, 112, 163"
+    },
+    {
+      "text": "After Hector fell, Penthesilea led her Amazons to Priam's aid. Achilles met her in battle and killed her — an episode outside the Iliad itself, preserved in the Epic Cycle and Apollodorus' Epitome. A later tradition in the same Epitome has Achilles slay Thersites when the reviler mocked his grief for the Amazon.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.1; Fabulae 112",
+      "topic": "thersites-death"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["hyginus", "apollodorus"]
+    }
+  ]
+}

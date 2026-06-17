@@ -1,0 +1,41 @@
+{
+  "id": "elatus-centaur",
+  "name": "Elatus",
+  "greekName": "Elatos (Ἔλατος)",
+  "romanName": "Elatus",
+  "type": "creature",
+  "domains": [
+    "the Pholus riot",
+    "Malea",
+    "centaur flight"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur wounded in the arm when Heracles' Hydra-poisoned arrow, loosed at the wild brood after the riot at Pholus' cave, passed through him and lodged in Chiron's knee.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the scent of opened wine drew the centaurs to Pholus' cave, Heracles drove them back with brands and pursued them with arrows as far as Malea, where they cowered about Chiron. An arrow passed through the arm of Elatus and stuck in the knee of Chiron — the wound that would not heal and led the immortal centaur to wish for death.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    },
+    {
+      "text": "He must be kept distinct from Elatus son of Arcas, eponym of the Arcadian branch (`elatus-arcadia`), and from the many other Elati of Greek genealogy — this Elatus is known only as the centaur whose arm the fatal shaft pierced on its way to Chiron.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

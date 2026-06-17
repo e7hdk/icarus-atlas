@@ -1,0 +1,28 @@
+{
+  "id": "chersidamas-trojan",
+  "name": "Chersidamas",
+  "greekName": "Chersidamas (Χερσιδάμας)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Agamemnon's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Agamemnon stabbed upon the navel beneath his bossed shield as he leapt down from his car — Apollodorus names a Chersidamas among Priam's sons by other women, and a separate Chersidamas in the Electryon stemma.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 11.415–455; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "After slaying Thoön and Eunomus, Agamemnon stabbed Chersidamas as he leapt down from his car, driving the spear upon the navel beneath the bossed shield; he fell in the dust and clutched the ground with his palm.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

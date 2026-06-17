@@ -1,0 +1,40 @@
+Odyssey / Ithaca / Phaeacia data slice — continue the next incremental batch.
+
+## Hard rules (Icarus Atlas)
+- Chat with the user in Turkish; ALL data/code/comments in English.
+- Corpus-first: run `pnpm corpus:search` before adding any fact; never invent sources.
+- Incremental batches only (this slice: max 5 new characters OR expand 3 existing ones — not both at max).
+- Check homonyms in `data/characters/` before new ids; use disambiguated ids (`eurymachus-ithaca`, `chione-daedalion`, etc.).
+- Every fact needs `sources: SourceId[]`; disputed facts need `topic` + relations + `docs/CONTRADICTIONS.md` when new.
+- Run `pnpm validate-data` after ANY data edit; fix until green.
+- Do NOT git commit unless the user explicitly asked in this turn.
+
+## Context — already done (do not redo)
+Odysseus core story + culture; circle slice 1–2 (Anticleia, Autolycus, Chione, Daedalion, Lucifer, Philammon, Polymede, suitors, Demodocus, Penelope–Antinous ⚖, references for key figures). ~600 characters validated.
+
+## This turn — pick ONE slice and finish it
+1. Read git status + recent character files under Odysseus line.
+2. Search transcript or grep for "next slice" / pending items if unclear.
+3. Choose the highest-value NEXT slice from backlog (first available with corpus support):
+
+   **A. Laertes paternal line:** Arceisius, Acrisius links if attested; expand Laertes.
+   **B. Remaining suitors:** Amphinomus, Leodes, Peisander, etc. (homonym ids).
+   **C. Ithaca household:** Melantho, Medon, Dolius, other servants.
+   **D. Phaeacia completion:** reference entries, place characterIds gaps.
+   **E. Thamyris + Argiope** (Philammon branch; Pausanias / Apollodorus).
+   **F. Telemachus voyage** (Nestor/Pylos/Menelaus links if missing relations).
+
+4. Execute: characters, relations, reference/*.json if warranted, CONTRADICTIONS if new topic, update `data/geo/places.json` characterIds when residences/places clear.
+5. `pnpm validate-data` — must pass.
+
+## Loop behaviour
+- When the user says **devam** or re-invokes this prompt, run the **next slice immediately** in the same session.
+- Do **not** arm long background sleeps (no 1h heartbeat). If using `/loop` with a timer, prefer **5m** max or dynamic mode with short fallback only.
+- One slice per turn; stop and list next 3 candidates.
+
+## End of turn (required)
+Reply in Turkish with:
+- What was done (bullet list, ids).
+- Validate result (character count).
+- **Next 3 slice candidates** for the following loop tick.
+- Stop; do not start another slice in the same turn.

@@ -1,0 +1,57 @@
+{
+  "id": "five-ages",
+  "title": "The Five Ages of Man",
+  "greekTitle": "Πέντε γενεαὶ ἀνθρώπων",
+  "kind": "episode",
+  "parent": "great-flood",
+  "era": 1.95,
+  "summary": {
+    "text": "Hesiod counts five races of men — Golden, Silver, Bronze, Heroes and Iron — each worse than the last, until Zeus resolved to destroy the violent Bronze Age beneath the waters and only Deucalion and Pyrrha survived to begin the world again.",
+    "sources": ["hesiod"],
+    "citation": "Hes. WD 109-201"
+  },
+  "chapters": [
+    {
+      "title": "The Golden Race",
+      "text": "First the immortals who dwell on Olympus made a golden race of mortal men, who lived like gods, free from toil and grief; the grain-giving earth bore them fruit in abundance, and they dwelt in ease until they were swallowed by the earth. Yet they remain, called blessed spirits of the earth, guardians who watch over mortal men.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 109-126"
+    },
+    {
+      "title": "Silver and Bronze",
+      "text": "The Silver Race came next — childish for a hundred years, then brief and foolish, refusing to honour the gods; Zeus hid them away and made them spirits beneath the earth. After them the Bronze Race, terrible and strong, loved the groan of battle and ate no bread; their armour was bronze, their houses bronze, and they destroyed one another and went down into the house of chill Hades without a name.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 127-155"
+    },
+    {
+      "title": "The Age of Heroes",
+      "text": "Then Zeus made a fourth race, the godlike Heroes who fought at Thebes and Troy — the demigods, fairer and more just than the Bronze men before them. To some of them death brought a life without toil on the Isles of the Blessed, at the ends of the earth beside deep-swirling Oceanus; the rest the black doom of death carried away.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 156-169"
+    },
+    {
+      "title": "The Iron Race",
+      "text": "Now Zeus has made yet another race — the Iron — and never by day will they cease from toil and misery, nor by night from wasting away; the father will disagree with his children and the guest with his host, and brotherhood will be no more. Right will lie in the fist, and the worse will drive out the better, until at last Shame and Righteous Indignation, veiled in white, will flee mankind and leave the world to sorrow.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 170-201"
+    },
+    {
+      "title": "The end of the Bronze",
+      "text": "It is the men of the Bronze Age whom Zeus would destroy in the great flood — though the poets who follow Hesiod sometimes fold every wicked generation into one cataclysm. In Works and Days the god's anger falls on the race that loved violence; in Apollodorus the same destruction clears the way for Deucalion's pious line and the stone-born people who will father Hellen.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. WD 180-201; Apollod. 1.7.2"
+    }
+  ],
+  "cast": [
+    { "id": "zeus", "name": "Zeus", "role": "Maker and destroyer of the races" },
+    { "id": "cronus", "name": "Cronus", "role": "King in the age of gold" },
+    { "id": "deucalion", "name": "Deucalion", "role": "Survivor after the Bronze Age ends" },
+    { "id": "pyrrha", "name": "Pyrrha", "role": "Survivor beside him" },
+    { "id": "hellen", "name": "Hellen", "role": "Son of the renewed world" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Works and Days", "citation": "109-201" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.7.2" }
+  ]
+}

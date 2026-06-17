@@ -25,10 +25,10 @@
     }
   ],
   "cast": [
-    { "name": "Rhesus", "role": "Thracian king, one night at Troy" },
-    { "name": "Dolon", "role": "The doomed spy" },
-    { "name": "Odysseus", "role": "The cunning one" },
-    { "name": "Diomedes", "role": "The blade in the dark" },
+    { "id": "rhesus", "name": "Rhesus", "role": "Thracian king, one night at Troy" },
+    { "id": "dolon", "name": "Dolon", "role": "The doomed spy" },
+    { "id": "odysseus", "name": "Odysseus", "role": "The cunning one" },
+    { "id": "diomedes", "name": "Diomedes", "role": "The blade in the dark" },
     { "id": "hector", "name": "Hector", "role": "Sender of the spy" }
   ],
   "places": [{ "id": "troy", "name": "Troy", "role": "The sleeping camp before the city" }],

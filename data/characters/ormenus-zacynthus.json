@@ -1,0 +1,35 @@
+{
+  "id": "ormenus-zacynthus",
+  "name": "Ormenus",
+  "greekName": "Ormenos (Ὀρμένος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — distinct from Ormenus father of Amyntor in Phoenix's genealogy at the court of Peleus.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Iliad 9.434–447"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Ormenus among the wooers assigned to Zacynthus, listed after Periphus and before the repeated Polybus entry that closes with Andromedes in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

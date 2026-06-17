@@ -1,0 +1,27 @@
+{
+  "id": "creon-achaean",
+  "name": "Creon",
+  "greekName": "Kreōn (Κρέων)",
+  "type": "hero",
+  "domains": ["father of Lycomedes", "Achaean house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Lycomedes (`lycomedes-creonid`), whom Achilles sent with Nestor's sons and other captains to fetch the seven tripods from Agamemnon's hut — attested only in the Iliad.",
+      "sources": ["homer"],
+      "citation": "Iliad 19.240–275"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Achilles declared he would arm though Hector still held Patroclus' body, he took to him the sons of Nestor, Meges, Thoas, Meriones, Lycomedes son of Creon, and Melanippus to bring the promised gifts from Agamemnon.",
+      "sources": ["homer"],
+      "citation": "Iliad 19.240–275"
+    },
+    {
+      "text": "He must be kept distinct from Creon king of Thebes (`creon`), from Creon of Corinth (`creon-corinth`), and from Lycomedes king of Scyros (`lycomedes-skyros`).",
+      "sources": ["homer"],
+      "citation": "Iliad 19.240–275"
+    }
+  ]
+}

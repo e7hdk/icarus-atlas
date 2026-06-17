@@ -1,0 +1,28 @@
+{
+  "id": "pelagon-pylian",
+  "name": "Pelagon",
+  "greekName": "Pelagōn (Πελάγων)",
+  "type": "hero",
+  "domains": ["Pylian warrior", "Nestor's comrade"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Mighty Pelagon whom Nestor arrayed beside Alastor, Chromius, lord Haemon, and Bias shepherd of the host when Poseidon roused the Achaeans — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "story": [
+    {
+      "text": "Agamemnon found Nestor drawing up his comrades around mighty Pelagon and Alastor and Chromius and lord Haemon and Bias — charioteers first with horses and cars, then footmen to be a bulwark of battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

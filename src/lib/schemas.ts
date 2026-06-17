@@ -1,5 +1,11 @@
 import { z } from 'zod';
-import { CHARACTER_TYPES, RELATION_TYPES, SOURCE_IDS } from '@/types/character';
+import {
+  CHARACTER_TYPES,
+  FIGURE_KINDS,
+  MAX_FIGURE_KINDS,
+  RELATION_TYPES,
+  SOURCE_IDS,
+} from '@/types/character';
 
 export const sourceIdSchema = z.enum(SOURCE_IDS);
 
@@ -16,6 +22,7 @@ export const characterSchema = z.object({
   greekName: z.string().min(1),
   romanName: z.string().optional(),
   type: z.enum(CHARACTER_TYPES),
+  kinds: z.array(z.enum(FIGURE_KINDS)).max(MAX_FIGURE_KINDS).optional(),
   domains: z.array(z.string().min(1)).min(1),
   epithets: z.array(z.string().min(1)).optional(),
   summary: z.array(sourcedTextSchema).min(1),
@@ -126,6 +133,24 @@ export const geoRegionSchema = z.object({
   }),
 });
 
+export const PLACE_KINDS = [
+  'city',
+  'sanctuary',
+  'landmark',
+  'mountain',
+  'pass',
+  'myth-site',
+  'region-capital',
+] as const;
+
+export const PLACE_CERTAINTIES = ['fixed', 'approximate', 'traditional', 'disputed'] as const;
+
+export const PLACE_IMPORTANCE = ['flagship', 'major', 'minor', 'obscure'] as const;
+
+export const FEATURE_KINDS = ['river', 'lake', 'plain', 'strait', 'gulf', 'mountain-range'] as const;
+
+export const FEATURE_IMPORTANCE = ['major', 'minor'] as const;
+
 export const geoCitySchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
   name: z.string().min(1),
@@ -135,6 +160,78 @@ export const geoCitySchema = z.object({
   /** [longitude, latitude] from the Pleiades gazetteer (CC BY). */
   coordinates: z.tuple([z.number(), z.number()]),
   pleiadesId: z.string().min(1),
+});
+
+export const geoPlaceSchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+    name: z.string().min(1),
+    greekName: z.string().min(1),
+    kind: z.enum(PLACE_KINDS),
+    region: z.string().nullable(),
+    coordinates: z.tuple([z.number(), z.number()]),
+    certainty: z.enum(PLACE_CERTAINTIES),
+    pleiadesId: z.string().min(1).optional(),
+    importance: z.enum(PLACE_IMPORTANCE),
+    summary: z.array(sourcedTextSchema).min(1),
+    story: z.array(sourcedTextSchema).optional(),
+    characterIds: z.array(z.string().min(1)).optional(),
+    storyIds: z.array(z.string().min(1)).optional(),
+    deityIds: z.array(z.string().min(1)).optional(),
+    cityId: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'cityId must be kebab-case').optional(),
+    topics: z.array(z.string().min(1)).optional(),
+  })
+  .superRefine((place, ctx) => {
+    if (place.kind === 'city') {
+      if (place.cityId !== place.id) {
+        ctx.addIssue({
+          code: 'custom',
+          message: 'city places must set cityId equal to id',
+          path: ['cityId'],
+        });
+      }
+      if (!place.pleiadesId) {
+        ctx.addIssue({
+          code: 'custom',
+          message: 'city places require pleiadesId',
+          path: ['pleiadesId'],
+        });
+      }
+    }
+    if (place.certainty === 'fixed' && !place.pleiadesId) {
+      const hasCitation = place.summary.some((s) => s.citation && s.sources.length > 0);
+      if (!hasCitation) {
+        ctx.addIssue({
+          code: 'custom',
+          message: 'certainty "fixed" requires pleiadesId or an explicit citation in summary',
+          path: ['certainty'],
+        });
+      }
+    }
+  });
+
+export const geoFeatureSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  name: z.string().min(1),
+  greekName: z.string().min(1),
+  kind: z.enum(FEATURE_KINDS),
+  geometry: z.discriminatedUnion('type', [
+    z.object({
+      type: z.literal('LineString'),
+      coordinates: z.array(z.tuple([z.number(), z.number()])).min(2),
+    }),
+    z.object({
+      type: z.literal('Polygon'),
+      coordinates: z.array(z.array(z.tuple([z.number(), z.number()])).min(4)).min(1),
+    }),
+  ]),
+  region: z.string().nullable(),
+  summary: z.array(sourcedTextSchema).min(1),
+  characterId: z.string().optional(),
+  placeIds: z.array(z.string().min(1)).optional(),
+  storyIds: z.array(z.string().min(1)).optional(),
+  importance: z.enum(FEATURE_IMPORTANCE),
+  sources: z.array(sourceIdSchema).min(1),
 });
 
 export const lineageSchema = z.object({

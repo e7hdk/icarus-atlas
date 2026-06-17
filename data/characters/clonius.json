@@ -1,0 +1,28 @@
+{
+  "id": "clonius",
+  "name": "Clonius",
+  "greekName": "Klonios (Κλονίος)",
+  "type": "hero",
+  "domains": ["Boeotian command", "the fifty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Boeotians in the Catalogue of Ships — one of the five leaders of the fifty ships from Hyria, Aulis, and the Boeotian towns — son of Lacritus (`lacritus-boeotian`) and Cleobule (`cleobule-boeotian`) per Hyginus — slain in the forefront of the fight by goodly Agenor, Antenor's son.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.494–510, 15.315–340; Fabulae 114"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Clonius among the captains of the Boeotians when Nestor recites the muster at Troy: Peneleos and Leïtus, Arcesilaus, Prothoënor, and Clonius led the fifty ships from the strongholds of Boeotia. In the scattered fight when Apollo gave glory to Hector and the Trojans, Clonius was slain in the forefront by goodly Agenor among the ranks that strove at the ships.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.494–510, 15.315–340; Fabulae 114"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}

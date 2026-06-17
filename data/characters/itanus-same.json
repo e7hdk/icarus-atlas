@@ -1,0 +1,35 @@
+{
+  "id": "itanus-same",
+  "name": "Itanus",
+  "greekName": "Itanos (Ἴτανος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' island catalogue — attested only in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Itanus among the wooers assigned to Same, listed after Eumelus and before Lyammus in the closing roll of Penelope's suitors from Cephallenia.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

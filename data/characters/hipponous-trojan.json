@@ -1,0 +1,28 @@
+{
+  "id": "hipponous-trojan",
+  "name": "Hipponous",
+  "greekName": "Hipponoos (Ἱππόνοος)",
+  "type": "hero",
+  "domains": ["son of Priam", "son of Hecuba"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Priam and Hecuba whom Apollodorus counts among the king's children by the queen — Homer names only the Danaan leader Hipponous whom Hector slew (`hipponous-achaean`), not this Trojan prince.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Hipponous among the sons whom Hecuba bore to Priam, in the roll that runs Deiphobus, Helenus, Pammon, Polites, Antiphus, Hipponous, Polydorus, and Troilus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

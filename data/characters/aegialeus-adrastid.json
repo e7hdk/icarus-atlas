@@ -1,0 +1,73 @@
+{
+  "id": "aegialeus-adrastid",
+  "name": "Aegialeus",
+  "greekName": "Αἰγιαλεύς",
+  "romanName": "Aegialeus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Epigoni",
+    "Argive royalty",
+    "the second Theban war"
+  ],
+  "summary": [
+    {
+      "text": "Son of Adrastus and one of the Epigoni who marched a second time on Thebes; at Glisas he was slain by Laodamas, and his death on the homeward road killed Adrastus with grief.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.7.2–3.7.3; Description of Greece 2.18.4, 1.43.1; Fabulae 71"
+    },
+    {
+      "text": "Not to be confused with Aegialeus son of Inachus, the childless eponym of Aegialia in Apollodorus' catalogue of the first Argive kings.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.1, 1.9.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Aegialeus among the two sons Adrastus begot on Amphithea, daughter of Pronax, together with Cyanippus and the daughters Argia, Deipyle, and Aegialia. He is the prince of Argos who survives his father's generation only to lead the sons' revenge.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "text": "When the Epigoni gathered — Alcmaeon and Amphilochus, Diomedes, Thersander, Promachus, Sthenelus, and Euryalus among them — Aegialeus marched as the son of Adrastus. The Thebans met them under Laodamas at Glisas; Aegialeus killed his man, but Laodamas struck him down before Alcmaeon slew the Theban king in turn.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.2–3.7.3; Description of Greece 9.9.4"
+    },
+    {
+      "text": "Pausanias saw his tomb at Argos and records that Adrastus died of grief when he learned of the prince's fall on the journey home — some Megarians, he adds, say the old king himself died there of age and fate together with Aegialeus while leading the army back from Thebes.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 2.18.4, 1.43.1; Bibliotheca 3.7.3"
+    },
+    {
+      "text": "His death opened the Argive succession to Diomedes, son of Tydeus and Deipyle. Apollodorus adds a further knot: Diomedes married Aegialia, whom some call daughter of Adrastus and others daughter of Aegialeus — so the fallen prince's line may have passed the throne back through his own daughter.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.8.6; Iliad 5.408–415"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

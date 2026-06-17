@@ -1,0 +1,33 @@
+{
+  "id": "melanippus-hicetaonid",
+  "name": "Melanippus",
+  "greekName": "Melanippos (Μελάνιππος)",
+  "type": "hero",
+  "domains": ["son of Hicetaon", "Trojan champion", "Percote"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Strong son of Hicetaon who fed his kine at Percote until the Danaans came, then dwelt in the house of Priam pre-eminent among the Trojans until Nestor smote him and Antilochus stripped his armour — a namesake of the Melanippus whom Teucer and Patroclus slew elsewhere in the poem.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.245–290, 15.515–590, 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the battle raged at the ships, Hector called first to his kinsmen and chid Hicetaon's son, strong Melanippus, who had been wont to feed his shambling kine in Percote while the foemen were afar but returned to Ilios when the curved ships came and dwelt in the house of Priam.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    },
+    {
+      "text": "Nestor cast with his bright spear and smote Melanippus high of heart upon the breast beside the nipple; he fell with a thud, and Antilochus sprang upon him as a hound upon a wounded fawn to strip the armour from his shoulders.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.560–590"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "city": "andania",
+  "reigns": [
+    {
+      "ruler": "Polycaon",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.1.2",
+      "note": "With Messene his wife he led colonists from Argos and Lacedaemon, gave the country her name, and founded Andania where their palace stood."
+    },
+    {
+      "ruler": "Perieres",
+      "characterId": "perieres-aeolid",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 4.2.2, 4.3.7; Apollod. 1.9.5",
+      "note": "Summoned when no descendant of Polycaon survived; he and the earlier kings dwelt at Andania until Aphareus founded Arene."
+    }
+  ]
+}

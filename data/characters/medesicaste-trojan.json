@@ -1,0 +1,28 @@
+{
+  "id": "medesicaste-trojan",
+  "name": "Medesicaste",
+  "greekName": "Medēsikastē (Μηδησικάστη)",
+  "type": "mortal",
+  "domains": ["daughter of Priam", "wife of Imbrius", "Pedaeum"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Illegitimate daughter of Priam (`priam`) who dwelt with Imbrius son of Mentor at Pedaeum, rich in horses, before the war drew her husband back to fight at Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Medesicaste only in the pedigree of Imbrius: before the Achaeans came, the spearman dwelt in Pedaeum and had to wife Medesicaste, a daughter of Priam born out of wedlock; when the curved ships arrived he returned to Ilios and fell to Teucer's bow in the press about the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

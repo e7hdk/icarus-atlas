@@ -1,0 +1,37 @@
+{
+  "id": "aeolus-hippotas",
+  "name": "Aeolus",
+  "greekName": "Aiolos (Αἴολος)",
+  "romanName": "Aeolus",
+  "type": "god",
+  "cluster": "olympian-band",
+  "domains": [
+    "keeper of the winds",
+    "the Aeolian isle",
+    "Hippotas' son"
+  ],
+  "summary": [
+    {
+      "text": "Aeolus son of Hippotas, dear to the immortal gods, who dwells on a floating island encircled by a wall of bronze and keeps the storm-winds bottled in a leather bag — the wind-king whom Homer keeps wholly distinct from Aeolus son of Hellen, patriarch of the Aeolids.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Odyssey 10.1–85; Iliad 6.152–155; Fabulae 125"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him plainly at the head of the Odyssey's catalogue of wanderings: Aeolus son of Hippotas, not the genealogical Aeolus from whom Sisyphus and the Aeolid houses descend. His isle floats on the sea, cliff running sheer, and in his halls twelve children — six daughters and six sturdy sons — marry one another and feast beside their father and mother.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.1–45; Iliad 6.152–155"
+    },
+    {
+      "text": "When Odysseus came with his battered company, Aeolus received him for a month, questioned how he had reached that end of the world, and heard the tale of Troy and the Cyclops. He gave a bag of winds bound in a grey ox-hide — all the winds except the West Wind, which was to carry the ship home — and sent them on their way. But the comrades opened the bag while Odysseus slept; the winds burst out and drove them back to Aeolus, who refused them a second help and bade them leave, for the gods had marked their return as hateful.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.50–85; Epitome 7.10–11"
+    },
+    {
+      "text": "Penelope's long account of Odysseus' wanderings remembers the same episode: he came to Aeolus, who received him with a ready heart and sent him on — but it was not yet his fate to reach Ithaca, for the storm-wind caught him up again and bore him over the teeming deep.",
+      "sources": ["homer"],
+      "citation": "Odyssey 23.310–340"
+    }
+  ]
+}

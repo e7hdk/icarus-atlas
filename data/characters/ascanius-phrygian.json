@@ -1,0 +1,27 @@
+{
+  "id": "ascanius-phrygian",
+  "name": "Ascanius",
+  "greekName": "Ascanius (Ἀσκάνιος)",
+  "type": "hero",
+  "domains": ["Phrygian command", "Ascania"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Godlike co-captain of the Phrygians from Ascania beside Phorcys in the Catalogue of Ships — not to be merged with later eponyms of the same name in the Roman Aeneas tradition.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Ascanius beside Phorcys at the head of the Phrygians who came from far-off Ascania. Apollodorus names the pair sons of Aretaon in the catalogue of Trojan allies.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    },
+    {
+      "text": "When Hector rallied the tribes about Patroclus, he heartened Ascanius' comrade Phorcys among the captains who stood in the press of battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245"
+    }
+  ]
+}

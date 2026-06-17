@@ -1,0 +1,52 @@
+---
+description: Primary type vs kinds sub-taxonomy for character data entry
+alwaysApply: true
+---
+
+# Figure taxonomy — type vs kinds
+
+## Two layers (locked)
+
+1. **`type`** — exactly one of eight cosmic roles: `primordial | titan | olympian | god | hero | mortal | nymph | creature`.
+   - Drives star glow (`TYPE_GLOW`), pulse, size, and mortal-clock layout.
+   - Never add Dryad, Naiad, Nereid, Centaur, etc. as `CharacterType`.
+
+2. **`kinds`** — optional array (max 3) of controlled `FigureKind` values from `FIGURE_KINDS` in `src/types/character.ts`.
+   - Display and search only — does **not** change glow or layout.
+   - **Required** on all **new** `nymph` and `creature` entries.
+   - Legacy figures backfill in verified batches (docs/NYMPHS.md §5 Batch 0).
+
+## Where things go
+
+| Information | Field | Example |
+|---|---|---|
+| Cosmic role / star colour | `type` | `nymph` |
+| Mythological sub-class | `kinds` | `['dryad']` |
+| Thematic prose | `domains` | `"prophetess of Pan"` |
+| Homonym disambiguation | `id` suffix | `erato-dryad` |
+
+Do **not** put mythological class in `domains` when a `FigureKind` exists.
+
+## Nymph kinds
+
+`oceanid`, `nereid`, `naiad`, `dryad`, `hamadryad`, `oread`, `pleiad`, `melia`, `nephele`, `hesperid`
+
+## Creature kinds
+
+`centaur`, `cyclops`, `hecatoncheir`, `gorgon`, `harpy`, `siren`, `giant`, `dragon`, `sphinx`, `chimera`
+
+## Dual identity
+
+Primary `type` = functional cosmic role; `kinds` = genealogical class when they differ.
+
+- Styx: `type: 'god'`, `kinds: ['oceanid']`
+- Chiron: `type: 'creature'`, `kinds: ['centaur']`
+- Thetis: `type: 'nymph'`, `kinds: ['nereid']`
+
+## Dossiers
+
+- Nymphs: `docs/NYMPHS.md`
+- Centaurs: `docs/CENTAURS.md`
+- Schema: `docs/PLAN.md` §4–§5.1, `src/types/character.ts`, `src/lib/schemas.ts`
+
+Run `pnpm validate-data` after any character edit.

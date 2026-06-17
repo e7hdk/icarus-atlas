@@ -1,0 +1,38 @@
+{
+  "id": "autolycus",
+  "name": "Autolycus",
+  "greekName": "Autolykos (Αὐτόλυκος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["master-thief", "father of Anticleia", "grandfather of Odysseus"],
+  "summary": [
+    {
+      "text": "Son of Hermes and Chione daughter of Daedalion, father of Anticleia and Polymede and grandfather of Odysseus and Jason — a master of theft and false oaths whom the god had granted skill in stealth, and on whose hunt on Parnassus the young Odysseus received the boar-tusk scar Eurycleia knew.",
+      "sources": ["homer", "hyginus", "apollodorus"],
+      "citation": "Odyssey 11.85–96; 19.386–507; Fabulae 200–201; Bibliotheca 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer calls Autolycus Anticleia's noble father, who excelled all men in thievery and in oaths; Hermes himself had granted him that craft because he burned acceptable thigh-pieces to the god. When Odysseus visited him on Parnassus with Autolycus' sons, a boar gored the boy above the knee — the scar that would betray the disguised king twenty years later.",
+      "sources": ["homer"],
+      "citation": "Odyssey 19.386–507"
+    },
+    {
+      "text": "In the Iliad his fame for theft is older still: Diomedes wears a cap Autolycus once stole from Eleon and passed through guest-friendship down to the Argive hero. The same cunning line that produced Odysseus' many devices runs through the grandfather who could steal without leaving a trace.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.255–290"
+    },
+    {
+      "text": "Hyginus makes the divine gift explicit: Mercury begat Autolycus on Chione and granted him such skill in thieving that he could not be caught, changing whatever he stole from white to black or hornless to horned. By the same thief's line Apollodorus gives Autolycus a daughter Polymede, who bore Jason to Aeson — so Odysseus and the Argonaut share one grandfather's cunning.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 201; Bibliotheca 1.9.16"
+    },
+    {
+      "text": "Hyginus links Odysseus' wit to another scandal: Sisyphus, while Autolycus was delayed, seduced Anticleia before her marriage to Laertes — a tradition that makes the Ithacan king Sisyphean as well as Autolycid.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 201",
+      "topic": "odysseus-paternity"
+    }
+  ]
+}

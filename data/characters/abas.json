@@ -3,25 +3,44 @@
   "name": "Abas",
   "greekName": "Abas (Ἄβας)",
   "type": "mortal",
-  "domains": ["King of Argos"],
+  "domains": [
+    "King of Argos"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "An early King of Argos, the son of Lynceus. He left his kingdom to his twin sons, Acrisius and Proetus, who fought each other even in the womb.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 2.2.1; Description of Greece 2.16.2"
     }
   ],
   "story": [
     {
       "text": "Abas inherited the throne of Argos from his father Lynceus (who was the only son of Aegyptus spared by the Danaides). He married Aglaia and fathered twin sons, Acrisius and Proetus.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.2.1"
     },
     {
       "text": "His sons famously hated each other from birth, fighting even while still in their mother's womb. Upon Abas' death, the kingdom of Argos was split between them.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 2.2.1; Description of Greece 2.16.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
     }
   ]
 }

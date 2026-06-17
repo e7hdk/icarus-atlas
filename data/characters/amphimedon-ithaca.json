@@ -1,0 +1,47 @@
+{
+  "id": "amphimedon-ithaca",
+  "name": "Amphimedon",
+  "greekName": "Amphimēdōn (Ἀμφιμήδων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "host of Agamemnon on Ithaca",
+    "son of Melaneus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Melaneus and one of the last suitors standing when the bow had slain the rest — he grazed Telemachus' hand with a spear in the final fight, and in Hades told Agamemnon's shade how the mnesterophonia was wrought, recalling how he once hosted the son of Atreus on Ithaca.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 22.255–290; 24.85–135; Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him among the boldest wooers still fighting when Agelaus son of Damastor urged them on — with Eurynomus, Demoptolemus, Peisander and wise Polybus, while the bow and swiftly-falling arrows had already laid the rest low.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.210–250"
+    },
+    {
+      "text": "In the spear-cast that followed, Amphimedon smote Telemachus on the hand by the wrist, a grazing blow that tore the skin, before the king's party drove the suitors back to the innermost part of the hall.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.255–290"
+    },
+    {
+      "text": "In the house of Hades the spirit of Agamemnon recognized glorious Amphimedon, son of Melaneus, who had been his host dwelling in Ithaca, and asked what had brought him and his companions down — all picked men of like age. Amphimedon's shade then told the whole tale: Penelope's web, the bow, the slaughter, and the punishment of the disloyal maids.",
+      "sources": ["homer"],
+      "citation": "Odyssey 24.85–135"
+    },
+    {
+      "text": "Apollodorus counts Amphimedon among the twelve suitors from Ithaca itself in the catalogue of those who devoured Odysseus' house.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

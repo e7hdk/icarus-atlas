@@ -1,0 +1,31 @@
+{
+  "id": "helenus-ithaca",
+  "name": "Helenus",
+  "greekName": "Helenos (Ἕλενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "One of the twelve suitors from Ithaca itself in Apollodorus' catalogue — a namesake of Priam's augur son, attested only among Penelope's Ithacan wooers.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Helenus among the twelve wooers of Penelope who came from Ithaca itself, listed with Antinous, Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Aristratus, Dulicheus, and Ctesippus — distinct from Helenus son of Priam, the Trojan seer.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

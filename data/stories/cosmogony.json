@@ -6,9 +6,9 @@
   "parent": null,
   "era": 0,
   "summary": {
-    "text": "Before the gods there was Chaos. Then came wide-bosomed Gaia, dim Tartarus in the depths, and Eros, fairest of the deathless ones — and from these first powers the whole genealogy of the world unfolds.",
+    "text": "Before the gods there was Chaos. Then came wide-bosomed Gaia, dim Tartarus in the depths, and Eros — and from the union of Earth and Sky the Titans were born, until Cronus unmanned his father with an adamantine sickle and swallowed his own children, setting the stage for the war that would shake heaven.",
     "sources": ["hesiod", "apollodorus", "ovid"],
-    "citation": "Hes. Th. 116-122; Apollod. 1.1; Ov. Met. 1.5-88"
+    "citation": "Hes. Th. 116-210, 453-467; Apollod. 1.1; Ov. Met. 1.5-88"
   },
   "chapters": [
     {
@@ -27,7 +27,20 @@
       "title": "The sickle of Cronus",
       "text": "Uranus hid his children in the depths of Earth, and groaning Gaia forged a great sickle of adamant. Only crooked-counselled Cronus dared the deed: he unmanned his father, and from the blood sprang the Erinyes and the Giants, while from the foam where the severed flesh fell into the sea Aphrodite rose.",
       "sources": ["hesiod", "apollodorus"],
-      "citation": "Hes. Th. 154-206; Apollod. 1.1.4"
+      "citation": "Hes. Th. 154-206; Apollod. 1.1.4",
+      "topic": "aphrodite-parentage"
+    },
+    {
+      "title": "The age of Cronus",
+      "text": "King in his father's place, Cronus wed his sister Rhea. But he had learned from Gaia and starry Uranus that he was fated to be overthrown by his own son — and so he swallowed each child as it came from the womb to its mother's knees: Hestia, Demeter, gold-sandalled Hera, strong Hades, the deep-roaring Earth-Shaker. Unceasing grief took hold of Rhea. Ovid remembers his reign as the Golden Age, when the unploughed earth gave all things freely — before Saturn was thrust into gloomy Tartarus.",
+      "sources": ["hesiod", "apollodorus", "ovid"],
+      "citation": "Hes. Th. 453-467; Apollod. 1.1.5; Ov. Met. 1.89-115"
+    },
+    {
+      "title": "The stone in swaddling clothes",
+      "text": "When Rhea was about to bear Zeus, she begged her parents to devise a plan, and they sent her to Crete. Earth took the newborn to nurse in a remote cave while the armed Curetes clashed spear on shield to drown his crying. To Cronus, Rhea handed a great stone wrapped in swaddling clothes, and he swallowed it without a doubt — the trick that saved the youngest child for the war to come.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Hes. Th. 468-491; Apollod. 1.1.6-1.1.7; Hyg. Fab. 139"
     }
   ],
   "cast": [
@@ -38,13 +51,20 @@
     { "id": "eros", "name": "Eros", "role": "Love, the moving power" },
     { "id": "nyx", "name": "Nyx", "role": "Night, child of Chaos" },
     { "id": "erebus", "name": "Erebus", "role": "Darkness, child of Chaos" },
-    { "id": "cronus", "name": "Cronus", "role": "Wielder of the sickle" },
-    { "id": "aphrodite", "name": "Aphrodite", "role": "Foam-born of the severed sky" }
+    { "id": "cronus", "name": "Cronus", "role": "Wielder of the sickle, swallower of his children" },
+    { "id": "rhea", "name": "Rhea", "role": "Mother who saved Zeus with a stone" },
+    { "id": "zeus", "name": "Zeus", "role": "The hidden youngest child" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Foam-born of the severed sky" },
+    { "id": "erinyes", "name": "The Erinyes", "role": "Born of Uranus' blood" },
+    { "id": "gigantes", "name": "The Gigantes", "role": "Born of Uranus' blood" }
   ],
-  "places": [],
+  "places": [
+    { "id": "knossos", "name": "Knossos", "role": "Crete, where Rhea hid the infant Zeus" }
+  ],
   "attestations": [
-    { "source": "hesiod", "work": "Theogony", "citation": "116-210" },
+    { "source": "hesiod", "work": "Theogony", "citation": "116-210, 453-491" },
     { "source": "apollodorus", "work": "The Library", "citation": "1.1" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "1.5-88" }
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.5-115" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "139" }
   ]
 }

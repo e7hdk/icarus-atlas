@@ -1,0 +1,63 @@
+{
+  "id": "the-gorgon-medusa",
+  "title": "The Gorgon Medusa",
+  "greekTitle": "Μέδουσα",
+  "kind": "episode",
+  "parent": "perseus-cycle",
+  "era": 5.78,
+  "summary": {
+    "text": "With Hermes' sickle, Athena's mirror-shield, the cap of Hades and winged sandals, Perseus crossed to the Gorgons' lair, beheaded the mortal sister Medusa while her immortal sisters slept, and from her neck sprang Pegasus and Chrysaor — then turned Atlas to stone on the road home.",
+    "sources": ["apollodorus", "ovid", "hyginus", "hesiod"],
+    "citation": "Apollod. 2.4.2–3; Ov. Met. 4.774–5.249; Hyg. Fab. 64; Hes. Theog. 280–286"
+  },
+  "chapters": [
+    {
+      "title": "The Graeae and the nymphs",
+      "text": "Perseus seized the Graeae's single eye and tooth and would not return them until they named the land of the Gorgons and the road thither. Hermes guided him further to the nymphs who kept the cap of Hades, the kibisis in which to store the head, and the winged sandals of gold. Thus equipped he flew over Ocean to the cave where Medusa, Stheno, and Euryale slept — only Medusa mortal among the three daughters of Phorcys and Ceto.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.4.2; Hyg. Fab. 64"
+    },
+    {
+      "title": "The beheading",
+      "text": "He looked only at Medusa's reflection in Athena's polished shield and struck off her head with the sickle while the Gorgons slept. From her severed neck sprang the winged horse Pegasus and the golden-sworded Chrysaor — children of her union with Poseidon, born at the moment of death. He thrust the head into the kibisis and fled on the winged sandals before the immortal sisters woke.",
+      "sources": ["apollodorus", "ovid", "hesiod"],
+      "citation": "Apollod. 2.4.3; Ov. Met. 4.774–803; Hes. Theog. 280–286"
+    },
+    {
+      "title": "Atlas turned to stone",
+      "text": "On the return flight he came to Atlas the Titan, who held up the sky at the western edge of the earth. When the king refused him hospitality, Perseus showed him the Gorgon's face and turned him to stone — Ovid's Mount Atlas, on whose shoulders the heavens now rest as a mountain range. Yet Apollodorus knows Atlas still living when Heracles, Perseus' great-grandson, would come seeking the apples of the Hesperides and briefly take the burden on his own shoulders.",
+      "sources": ["apollodorus", "ovid", "hesiod", "homer"],
+      "citation": "Apollod. 2.4.3, 2.5.11; Ov. Met. 4.627–662; Hes. Theog. 517–520; Hom. Od. 1.52–54",
+      "topic": "atlas-punishment"
+    },
+    {
+      "title": "The head kept safe",
+      "text": "Athena set the Gorgon's image on her aegis; the head itself remained a weapon Perseus would use twice more before he laid it under the earth in Argos. Hermes returned the loaned gear; the hero flew on toward Ethiopia and the princess chained to the rock, the petrifying trophy still alive in the wallet.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.4.3; Ov. Met. 5.1–30"
+    }
+  ],
+  "cast": [
+    { "id": "perseus", "name": "Perseus", "role": "The slayer who looked only in the mirror" },
+    { "id": "medusa", "name": "Medusa", "role": "The mortal Gorgon beheaded" },
+    { "id": "stheno", "name": "Stheno", "role": "Immortal Gorgon sister" },
+    { "id": "euryale", "name": "Euryale", "role": "Immortal Gorgon sister" },
+    { "id": "athena", "name": "Athena", "role": "She who lent the shield" },
+    { "id": "hermes", "name": "Hermes", "role": "Guide and giver of the sickle" },
+    { "id": "graeae", "name": "The Graeae", "role": "They who showed the way" },
+    { "id": "atlas", "name": "Atlas", "role": "Titan turned to stone on the return" },
+    { "id": "pegasus", "name": "Pegasus", "role": "Winged horse born from Medusa's neck" },
+    { "id": "chrysaor", "name": "Chrysaor", "role": "Golden-sworded brother of Pegasus" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Father of Medusa's foals" }
+  ],
+  "places": [
+    { "name": "The Gorgons' lair", "role": "Beyond Ocean where the sisters slept" },
+    { "name": "Mount Atlas", "role": "Where the Titan was petrified" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.4.2–3" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "4.774–5.30" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "64" },
+    { "source": "hesiod", "work": "Theogony", "citation": "280–286, 517–520" }
+  ]
+}

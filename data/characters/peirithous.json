@@ -1,0 +1,51 @@
+{
+  "id": "peirithous",
+  "name": "Peirithous",
+  "greekName": "Peirithoös (Πειρίθοος)",
+  "romanName": "Pirithous",
+  "type": "hero",
+  "domains": [
+    "king of the Lapiths",
+    "Larissa",
+    "comrade of Theseus",
+    "the centaur war"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of the Lapiths at Larissa, son of Ixion in the genealogies, who married Hippodameia and drove the shaggy centaurs from Mount Pelium — and later bound himself with Theseus to marry daughters of Zeus, a vow that took both heroes to the house of Hades.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Iliad 2.735–775, 14.317–328; Bibliotheca 1.8.2; Fabulae 14.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer remembers him twice over: Zeus loved the wife of Ixion and she bore Peirithous, peer of the gods in counsel; and in the Catalogue the Lapith Polypoetes is son of Peirithous, whom immortal Zeus begat — born on the day Peirithous got vengeance on the shaggy centaurs and thrust them from Pelium to the Aethices.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.735–775, 14.317–328",
+      "topic": "peirithous-paternity"
+    },
+    {
+      "text": "Apollodorus counts him among the Calydonian hunters, son of Ixion from Larissa, and tells how he and Theseus swore each to marry a daughter of Zeus — Theseus taking the child Helen, Peirithous demanding Persephone herself. In Hades he was seated on the Chair of Forgetfulness and never returned.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.8.2, 3.10.7; Epitome 1.23",
+      "topic": "peirithous-paternity"
+    },
+    {
+      "text": "Hyginus makes him son of Ixion and brother of Centaurus, a Thessalian, and lists him among the Argonauts. Pausanias saw his battle with the centaurs on the pediment at Athens — Peirithous in the centre, Eurytion seizing his bride, Caeneus and Theseus fighting at his side.",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Fabulae 14.2; Description of Greece 1.28.2"
+    }
+  ]
+}

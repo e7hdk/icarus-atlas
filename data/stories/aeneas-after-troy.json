@@ -1,0 +1,51 @@
+{
+  "id": "aeneas-after-troy",
+  "title": "Aeneas after Troy",
+  "greekTitle": "Αἰνείας μετὰ τὴν Τροίαν",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.17,
+  "summary": {
+    "text": "When Troy fell, Ovid's poem followed Aeneas west — Anchises on his shoulders, the Penates in the ship, storms on the Sicilian coast, and the prophecy that his line would rule Italy; the Latin wanderer enters Metamorphoses as bridge between Greek myth and Rome's own origin.",
+    "sources": ["ovid", "apollodorus", "homer"],
+    "citation": "Ov. Met. 13.623–639, 14.75–119, 14.101–153; Apollod. Epit. 5.21, 6.20; Hom. Il. 20.302–339"
+  },
+  "chapters": [
+    {
+      "title": "From Antandros",
+      "text": "After the sack, Aeneas took up lame Anchises and led Ascanius from the flames; Ovid has him sail from Antandros with the household gods and the remnant of Priam's nobility. Homer had already marked him for survival when Poseidon hid Achilles' eyes and declared the race of Dardanus must not perish — the Trojan captain whom the Greeks spared for piety.",
+      "sources": ["ovid", "homer", "apollodorus"],
+      "citation": "Ov. Met. 13.623–639; Hom. Il. 20.302–339; Apollod. Epit. 5.21"
+    },
+    {
+      "title": "Storms and Sicily",
+      "text": "The Metamorphoses catalogue carries his fleet through Greek seas toward Italy. Juno still opposed the Trojan remnant; gales drove them to Sicilian shores where Galatea would later tell of Polyphemus and Acis. Ovid's Aeneas is not yet the full Aeneid — but the westward motion is fixed: exile, storm, and the land that will receive the Julian line.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 13.623–639, 14.75–119"
+    },
+    {
+      "title": "Italy",
+      "text": "Apollodorus summarises what Ovid assumes: Aeneas came to Italy and merged his house with the Aborigines — seed of Rome. The nested episode on the Nostoi shelf tells the fuller Returns; here Metamorphoses keeps only the metamorphic bridge from burning Ilion to the Palatine stories that follow — Pomona, Vertumnus, and at last Caesar among the stars.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 14.101–153; Apollod. Epit. 6.20"
+    }
+  ],
+  "cast": [
+    { "id": "aeneas", "name": "Aeneas", "role": "Dardanian captain fated for Italy" },
+    { "id": "anchises", "name": "Anchises", "role": "Father carried from Troy" },
+    { "name": "Ascanius", "role": "Son who sailed west with the exiles" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Mother who saved him at Troy" },
+    { "id": "hera", "name": "Hera", "role": "Juno, still opposing the Trojan remnant" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Burning city the fleet fled" },
+    { "name": "Antandros", "role": "Harbour whence Ovid's Aeneas sails" },
+    { "name": "Sicily", "role": "Island of storms and Polyphemus' shore" },
+    { "name": "Italy", "role": "Land of the Latin destiny" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "13.623–639, 14.75–119, 14.101–153" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.21, 6.20" },
+    { "source": "homer", "work": "Iliad", "citation": "20.302–339" }
+  ]
+}

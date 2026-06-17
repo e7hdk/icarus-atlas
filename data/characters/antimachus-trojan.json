@@ -1,0 +1,28 @@
+{
+  "id": "antimachus-trojan",
+  "name": "Antimachus",
+  "greekName": "Antimachos (Ἀντίμαχος)",
+  "type": "hero",
+  "domains": ["father of Peisander and Hippolochus", "opposed Helen's return", "Trojan counsel"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wise-hearted Trojan who above all others hoped for gold from Alexander and would not suffer that Helen be given back to Menelaus — father of Peisander (`peisander-trojan`), Hippolochus (`hippolochus-antimachid`), and Hippomachus (`hippomachus-antimachid`) — distinct from Antimachus the Dulichian suitor (`antimachus-dulichium`).",
+      "sources": ["homer"],
+      "citation": "Iliad 11.125–160"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Antimachus among the counsellors whose greed for Paris' gifts hardened Troy against restoring Helen. When Agamemnon stormed through the Trojan ranks, he seized the staunch sons Antimachus had sent to war — Peisander and Hippolochus together in one car — and hurled them from the chariot before he stripped their shining armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.125–160"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

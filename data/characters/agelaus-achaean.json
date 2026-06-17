@@ -1,0 +1,22 @@
+{
+  "id": "agelaus-achaean",
+  "name": "Agelaus",
+  "greekName": "Agelaos (Ἀγέλαος)",
+  "type": "hero",
+  "domains": ["Achaean leader", "Hector's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Leader of the Danaans whom Hector slew when Zeus vouchsafed the prince glory — distinct from Agelaus the suitor (`agelaus-same`), Temenus' son, and other mythic namesakes.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ],
+  "story": [
+    {
+      "text": "Who then was first to be slain, and who last by Hector, Priam's son, when Zeus vouchsafed him glory? Among the leaders of the Danaans he smote Agelaus together with Asaeus, Autonous, Opites, Dolops son of Clytius, Opheltius, Aesymnus, Orus, and Hipponous, staunch in fight, and thereafter fell upon the multitude.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

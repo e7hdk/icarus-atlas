@@ -1,0 +1,49 @@
+{
+  "id": "circe",
+  "name": "Circe",
+  "greekName": "Kirkē (Κίρκη)",
+  "romanName": "Circe",
+  "type": "god",
+  "cluster": "titan-ring",
+  "domains": [
+    "enchantment",
+    "Aeaea",
+    "the moly herb",
+    "guide of the homeward road"
+  ],
+  "summary": [
+    {
+      "text": "Fair-tressed Circe, a dread goddess of human speech on the isle of Aeaea — own sister to Aeetes of baneful mind — who turned Odysseus' comrades to swine until Hermes gave the hero the herb moly and she bound herself by oath to restore them and send him on his way.",
+      "sources": ["homer", "hesiod", "apollodorus"],
+      "citation": "Odyssey 10.135–575; Theogony 956–961; Bibliotheca 1.9.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes her the daughter of Helius who gives light to mortals and of Perse their mother, whom Oceanus begot — the same Sun-born house as Aeetes and Pasiphae. On Aeaea she dwells in a polished stone house ringed by mountain wolves and lions she has bewitched with evil drugs, yet the beasts fawn on her guests like dogs.",
+      "sources": ["homer", "hesiod"],
+      "citation": "Odyssey 10.135–139; Theogony 956–961"
+    },
+    {
+      "text": "When Odysseus' scouting party entered her halls, she mixed cheese, barley, honey, and Pramnian wine with baneful drugs and struck them with her wand until they had the heads, voices, bristles, and bodies of swine. Eurylochus alone escaped to warn the ship. Odysseus went up alone; Hermes met him on the path, pressed the herb moly into his hand, and taught him how to resist her spell. Circe swore a mighty oath to do him no harm, restored his men, and kept the company a full year on her isle.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.210–575"
+    },
+    {
+      "text": "Before he sailed for the underworld she warned him of every peril still ahead — the Sirens, Scylla and Charybdis, and the cattle of the Sun — and sent a fair wind when at last he went. When Odysseus poured offerings on the shore of Oceanus, it was Circe's counsel he followed; and when he returned from the dead, she told him how to pass the clashing rocks and reach home.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.475–575, 11.1–50, 12.1–160; Epitome 7.17"
+    },
+    {
+      "text": "Like Calypso after her, Circe yearned that Odysseus should be her husband; but he could never be persuaded — nothing is sweeter to a man than his own land and his parents, even if he dwells far off in a rich house in a foreign country.",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.1–45"
+    },
+    {
+      "text": "Apollodorus adds that after Odysseus bound her by a mighty oath that he should suffer no harm, he shared her bed and she bore him a son Telegonus. In the Epitome's alternate ending, Circe told Telegonus who his father was; when he unknowingly killed Odysseus on Ithaca with a sting-ray barb, he brought the corpse and Penelope back to Aeaea, married Penelope there, and sent her with him to the Islands of the Blest.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.16, 7.36–7.37",
+      "topic": "odysseus-death"
+    }
+  ]
+}

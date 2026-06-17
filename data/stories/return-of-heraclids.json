@@ -1,0 +1,73 @@
+{
+  "id": "return-of-heraclids",
+  "title": "The Return of the Heraclids",
+  "greekTitle": "ἡ κάθοδος τῶν Ἡρακλειδῶν",
+  "kind": "episode",
+  "parent": "heracles-cycle",
+  "era": 6.7,
+  "summary": {
+    "text": "Persecuted by Eurystheus after Heracles' death, the hero's sons at last reclaimed the Peloponnese: Hyllus failed when Echemus slew him, but Temenus, Cresphontes, and Aristodemus cast lots for Argos, Messenia, and Sparta — driving out the Achaean Tisamenus and founding the Dorian royal lines.",
+    "sources": ["apollodorus", "pausanias", "homer"],
+    "citation": "Apollod. 2.8.1–2.8.2; Paus. 1.44.10, 8.5.1; Il. 2.653–670"
+  },
+  "chapters": [
+    {
+      "title": "Eurystheus' end",
+      "text": "When Eurystheus harried the orphaned Heraclids, his own sons fell in battle and he fled toward the Scironian cliffs. Hyllus overtook him, cut off his head, and gave it to Alcmena — though Pausanias sets his tomb near Megara and says Iolaus, rejuvenated by Hebe, was the slayer there.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.8.1; Paus. 1.44.10",
+      "topic": "eurystheus-slayer"
+    },
+    {
+      "title": "Hyllus and Echemus",
+      "text": "Hyllus married Iole as his father had commanded and asked Delphi how the Return should succeed. Misreading the oracle's 'third crop' as three years, he marched into the Peloponnese too soon. Echemus, king of Tegea, accepted his challenge to single combat and killed him — so the true Return waited for his descendants.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.8.2; Paus. 8.5.1, 1.41.2"
+    },
+    {
+      "title": "The three brothers",
+      "text": "From Hyllus through Cleodaeus came Aristomachus, whose three sons — Temenus, Cresphontes, and Aristodemus — at last understood the oracle: the third crop meant the third generation. With the Aetolian Oxylus as guide they invaded the Peloponnese, defeated Tisamenus son of Orestes, and cast lots for the three lands.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.8.2; Paus. 2.18.7, 5.3.5–5.4.1"
+    },
+    {
+      "title": "Argos, Messenia, Sparta",
+      "text": "Temenus took Argos and gave his daughter Hyrnetho to Deiphontes. Cresphontes won Messenia and wed Merope, but the usurper Polyphontes slew him until their son Aepytus avenged the murder. Aristodemus died at Delphi — struck by Apollo's bolt in one account — leaving twin sons Eurysthenes and Procles to found the two Spartan kingships.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.8.2–2.8.5; Paus. 3.1.6, 4.3.3–4.3.7"
+    }
+  ],
+  "cast": [
+    { "id": "hyllus", "name": "Hyllus", "role": "First Return leader, slain by Echemus" },
+    { "id": "cleodaeus", "name": "Cleodaeus", "role": "Son of Hyllus" },
+    { "id": "aristomachus-heraclid", "name": "Aristomachus", "role": "Father of the three brothers" },
+    { "id": "temenus", "name": "Temenus", "role": "Founder of Argive kingship" },
+    { "id": "cresphontes", "name": "Cresphontes", "role": "Founder of Messenia" },
+    { "id": "aristodemus", "name": "Aristodemus", "role": "Father of the Spartan twins" },
+    { "id": "eurysthenes", "name": "Eurysthenes", "role": "Agiad founder of Sparta" },
+    { "id": "procles", "name": "Procles", "role": "Eurypontid founder of Sparta" },
+    { "id": "oxylus", "name": "Oxylus", "role": "Aetolian guide who won Elis" },
+    { "id": "tisamenus", "name": "Tisamenus", "role": "Last Pelopid driven out" },
+    { "id": "echemus", "name": "Echemus", "role": "Tegean who slew Hyllus" },
+    { "id": "eurystheus", "name": "Eurystheus", "role": "Persecutor overthrown" },
+    { "id": "iolaus", "name": "Iolaus", "role": "Rival slayer of Eurystheus in Pausanias" },
+    { "id": "alcmene", "name": "Alcmene", "role": "Mother who mutilated Eurystheus' head" },
+    { "id": "merope-messenia", "name": "Merope", "role": "Wife of Cresphontes" },
+    { "id": "aepytus-heraclid", "name": "Aepytus", "role": "Avenger of Cresphontes" },
+    { "id": "polyphontes", "name": "Polyphontes", "role": "Usurper of Messenia" },
+    { "id": "hyrnetho", "name": "Hyrnetho", "role": "Daughter of Temenus" },
+    { "id": "deiphontes", "name": "Deiphontes", "role": "Argive king by marriage" },
+    { "id": "heracles", "name": "Heracles", "role": "Ancestor of the line" }
+  ],
+  "places": [
+    { "id": "argos", "name": "Argos", "role": "Land of Temenus" },
+    { "id": "sparta", "name": "Sparta", "role": "Twin thrones of Eurysthenes and Procles" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Old seat of Eurystheus" },
+    { "id": "megara", "name": "Megara", "role": "Site of Hyllus' tomb and Eurystheus' fall" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.8.1–2.8.5" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.41.2, 1.44.10, 2.18.7, 3.1.6, 4.3.3–4.3.7, 5.3.5–5.4.1, 8.5.1" },
+    { "source": "homer", "work": "Iliad", "citation": "2.653–670" }
+  ]
+}

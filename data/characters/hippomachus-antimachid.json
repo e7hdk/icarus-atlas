@@ -1,0 +1,28 @@
+{
+  "id": "hippomachus-antimachid",
+  "name": "Hippomachus",
+  "greekName": "Hippomachos (Ἱππόμαχος)",
+  "type": "hero",
+  "domains": ["son of Antimachus", "Trojan warrior", "Leonteus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Antimachus (`antimachus-trojan`) whom Leïtus' comrade Leonteus smote with a cast of his spear upon the girdle when the Lapiths held the wall — distinct from Hippomachus the Zacynthian suitor (`hippomachus-zacynthus`).",
+      "sources": ["homer"],
+      "citation": "Iliad 12.155–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans stormed the wall and Leonteus, scion of Ares, raged among them, he smote Hippomachus son of Antimachus with a cast of his spear, striking him upon the girdle, and thereafter drew his sharp sword and darted through the throng to smite Antiphates and Menon and Iamenus and Orestes in close fight.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.155–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

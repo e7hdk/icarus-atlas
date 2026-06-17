@@ -1,0 +1,28 @@
+{
+  "id": "croesmus-trojan",
+  "name": "Croesmus",
+  "greekName": "Kroesmos (Κροίσμος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "ally in the rally"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Polydamas son of Panthous smote full upon the breast with his spear when Meges son of Phyleus leapt upon him and missed — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    }
+  ],
+  "story": [
+    {
+      "text": "Meges saw Polydamas and leapt upon him, but Polydamas swerved from beneath him and Meges missed; for Apollo would not suffer the son of Panthous to be vanquished. With a spear-thrust Polydamas smote Croesmus full upon the breast, and he fell with a thud.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

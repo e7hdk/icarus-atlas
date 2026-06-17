@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadReference } from '@/features/characters/load';
+import { loadCities } from '@/features/geo/load';
+import { loadStories } from '@/features/stories/load';
+import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterShell } from '@/components/character/CharacterShell';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 
@@ -11,12 +14,18 @@ export async function generateStaticParams() {
 
 export default async function CharacterInfoPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const { characters, relations } = await loadAtlasData();
+  const [{ characters, relations }, cities, stories] = await Promise.all([
+    loadAtlasData(),
+    loadCities(),
+    loadStories(),
+  ]);
   const character = characters.find((c) => c.id === id);
   if (!character) notFound();
 
   const reference = await loadReference(id);
   const byId = new Map(characters.map((c) => [c.id, c]));
+  const storyIndex = storiesById(stories);
+  const storyAppearances = storiesFeaturingCharacter(stories, character.id);
 
   const parentEdges = relations.filter((r) => r.type === 'parent' && r.from === id);
   const parentNames = [...new Set(parentEdges.map((r) => byId.get(r.to)?.name ?? r.to))];
@@ -61,7 +70,13 @@ export default async function CharacterInfoPage(props: { params: Promise<{ id: s
   ];
 
   return (
-    <CharacterShell character={character} active="info">
+    <CharacterShell
+      character={character}
+      active="info"
+      cities={cities}
+      storyAppearances={storyAppearances}
+      storiesById={storyIndex}
+    >
       <div className="mx-auto mt-9 max-w-3xl">
         {reference ? (
           <GlassPanel className="bg-glass-heavy px-7 py-6">

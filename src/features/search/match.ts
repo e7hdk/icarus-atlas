@@ -27,7 +27,7 @@ const FIELD_WEIGHT: Record<SearchHit['field'], number> = {
 
 /** Fold to lowercase ASCII-ish form one UTF-16 unit at a time so indexes into the
  *  folded string map 1:1 back onto the original (needed for highlight ranges). */
-function fold(text: string): string {
+export function fold(text: string): string {
   let out = '';
   for (let i = 0; i < text.length; i++) {
     const folded = text[i]
@@ -39,7 +39,10 @@ function fold(text: string): string {
   return out;
 }
 
-function matchIn(value: string, query: string): { start: number; end: number; score: number } | null {
+export function matchIn(
+  value: string,
+  query: string,
+): { start: number; end: number; score: number } | null {
   const folded = fold(value);
   const index = folded.indexOf(query);
   if (index < 0) return null;

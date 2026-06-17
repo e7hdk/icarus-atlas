@@ -1,0 +1,54 @@
+{
+  "id": "chalciope-colchis",
+  "name": "Chalciope",
+  "greekName": "Chalkiopē (Χαλκιόπη)",
+  "romanName": "Chalciope",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Aeetes",
+    "wife of Phrixus",
+    "sister of Medea",
+    "mother of the Argonaut nephews"
+  ],
+  "summary": [
+    {
+      "text": "Elder daughter of Aeetes and Idyia at Aea, given in marriage without gifts of wooing to Phrixus the Aeolid when he came on the golden ram; by him she bore Argus, Melas, Phrontis, and Cytisorus — and when Jason's company reached Colchis she pleaded with her sister Medea to save her sons from Aeetes' wrath.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1140–1145, 3.609–724"
+    },
+    {
+      "text": "Not to be confused with Chalciope daughter of Rhexenor, the second wife of Aegeus at Athens who bore him no children before he wed Aethra.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes her the Colchian bride of Phrixus: Aeetes received the fugitive and gave him one of his daughters, Chalciope, and by her Phrixus had sons — Argus, Melas, Phrontis, and Cytisorus — before he sacrificed the golden-fleeced ram to Zeus the god of Escape and gave the fleece to the king.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "Apollonius sets her in the palace beside Medea: the handmaidens had their chambers, and the two daughters of Aeetes, Chalciope and Medea, had theirs — until Hera detained the younger sister within the halls on the day Jason came, and Medea went from chamber to chamber searching for Chalciope.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.210"
+    },
+    {
+      "text": "When the Argonauts proved to be sons of her Phrixus, Chalciope feared Aeetes' anger against her children. Argus her son begged her to win Medea's aid; she herself had the same thought, yet dread of her father's deadly wrath held her back until Medea, testing her with a feigned dream, drew her out — and Chalciope swore by Earth and Heaven that her sister should not be betrayed if she devised help for Jason and for the sons of Phrixus.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.439, 3.576, 3.609–724"
+    },
+    {
+      "text": "Medea kept her oath: she won the contest for Jason, and when she fled Colchis she left a long tress in her chamber as farewell to her mother Idyia and cried a last goodbye to Chalciope and all her home.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.724, 4.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

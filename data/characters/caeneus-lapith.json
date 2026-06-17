@@ -1,0 +1,49 @@
+{
+  "id": "caeneus-lapith",
+  "name": "Caeneus",
+  "greekName": "Kaineus (Καινεύς)",
+  "romanName": "Caeneus",
+  "type": "hero",
+  "domains": [
+    "the invulnerable Lapith",
+    "Peirithous' ally",
+    "buried under the pines"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Lapith who fought the centaurs at Peirithous' wedding and could not be wounded with steel — until the centaurs buried him under massy pines — one of the mightiest men Nestor ever saw.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Iliad 1.262–282; Epitome 1.22; Metamorphoses 12.459–532"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells his transformation and end: Caeneus was formerly a woman, but after Poseidon had intercourse with her she asked to become an invulnerable man; in the battle with the centaurs she thought scorn of wounds and killed many of them, but the rest surrounded her and by striking with fir trees buried her in the earth.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 1.22"
+    },
+    {
+      "text": "Homer ranks him among the mightiest of men born on earth — Peirithous, Dryas, Caeneus, Exadius, Polyphemus, and Theseus — who fought the mountain-dwelling centaurs. Nestor says he never saw such warriors again.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 1.262–282"
+    },
+    {
+      "text": "Ovid names five centaurs Caeneus slew at the wedding — Styphelus, Bromus, Antimachus, Elymus, and Pyracmos — before Latreus mocked him and the whole brood drove him down with pine trunks. Pausanias saw him on Peirithous' pediment bringing help to the bridegroom. He is not the Argonaut Caeneus of Gortyn (`caeneus-gortyn`), nor the Magnesian Caeneus son of Elatus in every genealogical list — the Lapith invulnerable is his own figure.",
+      "sources": [
+        "ovid",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Metamorphoses 12.459–532; Description of Greece 1.28.2; Fabulae 14"
+    }
+  ]
+}

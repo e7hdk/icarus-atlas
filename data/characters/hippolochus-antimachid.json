@@ -1,0 +1,28 @@
+{
+  "id": "hippolochus-antimachid",
+  "name": "Hippolochus",
+  "greekName": "Hippolochos (Ἱππόλοχος)",
+  "type": "hero",
+  "domains": ["son of Antimachus", "Trojan warrior", "Agamemnon's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of wise-hearted Antimachus (`antimachus-trojan`) and brother of Peisander (`peisander-trojan`) and Hippomachus (`hippomachus-antimachid`), staunch in fight — one of the twain whom lord Agamemnon took from a single car when they sought to drive their horses from the fray — distinct from Hippolochus father of Glaucus (`hippolochus-lycian`).",
+      "sources": ["homer"],
+      "citation": "Iliad 11.125–160"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon raged among the Trojans like a lion among kine, he took Peisander and Hippolochus, sons of Antimachus — who above all others had hoped for gold from Alexander and would not suffer that Helen be given back to fair-haired Menelaus. The two brothers stood in one car, together seeking to drive their horses from the battle, until the son of Atreus hurled them from the chariot and stripped their armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.125–160"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

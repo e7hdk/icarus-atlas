@@ -1,0 +1,48 @@
+{
+  "id": "glauce-corinth",
+  "name": "Glauce",
+  "greekName": "Glauke (Γλαυκή)",
+  "romanName": "Glauce",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Creon of Corinth",
+    "Jason's second bride",
+    "the poisoned robe"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Creon king of Corinth, betrothed to Jason after ten years of his marriage to Medea; she put on the poisoned robe Medea sent as a bridal gift and was consumed in fierce fire — and Pausanias saw the Well of Glauce where the bride threw herself hoping the water would cure Medea's drugs.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.28; Description of Greece 2.3.6"
+    },
+    {
+      "text": "Not to be confused with the Nereid or Oceanid Glauce, with Glauce daughter of Cychreus of Salamis, nor with Glauce as an alternate name for Hippolyta the Amazon — Hyginus also calls this bride Creusa.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 245–255; Bibliotheca 3.12.6; Fabulae 25, Epitome 5.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets the catastrophe in order: Creon king of Corinth betrothed Glauce to Jason, who married her and divorced Medea. The Colchian witch invoked the gods by whom Jason had sworn, upbraided his ingratitude, and sent the bride a robe steeped in poison; when Glauce put it on, she was consumed with fierce fire along with her father, who had come to her side.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28"
+    },
+    {
+      "text": "Pausanias walked the ground at Corinth: on the road toward Sicyon, a little beyond Apollo's temple, lies the Well of Glauce — into which, they say, she threw herself believing the water would cure Medea's drugs. Above it stand the Odeum and, beside it, the tomb of Medea's children Mermerus and Pheres, stoned because of the gifts Medea sent to this bride.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.6–7"
+    },
+    {
+      "text": "Hyginus names the bride Creusa and makes the gift a golden crown wrought with Medea's drugs, sent to the stepmother by Mermerus and Pheres; when Creusa took it she was burned to death along with Jason and Creon, and the palace caught fire.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 25"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "pausanias", "hyginus"]
+    }
+  ]
+}

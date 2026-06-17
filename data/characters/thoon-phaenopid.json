@@ -1,0 +1,28 @@
+{
+  "id": "thoon-phaenopid",
+  "name": "Thoön",
+  "greekName": "Thoōn (Θόων)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Phaenops"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Phaenops (`phaenops-trojan`), well beloved with his brother Xanthus, whom mighty Diomedes slew when their father was fordone with grievous old age and begat no other son — distinct from Thoön whom Agamemnon slew in *Iliad* 11.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "story": [
+    {
+      "text": "After slaying Polyidus and his brother, sons of the dream-reader Eurydamas, Diomedes went on after Xanthus and Thoön, sons twain of Phaenops, and both well beloved. There Diomedes slew them and bereft them of dear life, both the twain; but for the father he left lamentation and grievous sorrow.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

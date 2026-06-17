@@ -1,0 +1,59 @@
+{
+  "id": "heracles-cycle",
+  "title": "The Labours of Heracles",
+  "greekTitle": "Ἡρακλέους ἆθλοι",
+  "kind": "saga",
+  "parent": null,
+  "era": 6.5,
+  "summary": {
+    "text": "Born at Thebes to Alcmene, driven mad to slay his children, and bound to serve Eurystheus at Tiryns — Heracles performed twelve labours that took him from Nemea to the edge of the world and down into Hades, and became the hunter who wired the atlas of monsters to mortal valour.",
+    "sources": ["apollodorus", "homer", "hesiod", "hyginus"],
+    "citation": "Apollod. 2.4.8–2.5.12; Hom. Il. 19.95–133, Od. 11.601–627; Hes. Th. 943–955; Hyg. Fab. 30–36"
+  },
+  "chapters": [
+    {
+      "title": "Son of Zeus and Alcmene",
+      "text": "Through Perseus the hero's blood ran back to Danae and Andromeda; at Thebes, Alcmene bore twin sons — Heracles, whom Zeus begot in a night made threefold, and Iphicles by Amphitryon. Hera sent serpents to the cradle; the infant strangled them with his hands, and the poets ever after disputed whether his true father was the god or the man.",
+      "sources": ["apollodorus", "hesiod", "homer"],
+      "citation": "Apollod. 2.4.5–8; Hes. Th. 943–944; Hom. Od. 11.266–268"
+    },
+    {
+      "title": "Eurystheus' trick",
+      "text": "When Zeus boasted that a child of his blood would rule the neighbours, Hera bound him by oath and hastened the birth of Eurystheus son of Sthenelus while she held back Alcmene's labour — so the crown fell to the Perseid cousin, and the mightiest hero became his subject at Tiryns and Mycenae.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 19.95–133; Apollod. 2.4.9"
+    },
+    {
+      "title": "The twelve tasks",
+      "text": "After madness and exile, the Pythia sent him to serve Eurystheus. Apollodorus numbers twelve labours — though two were later disqualified — from the Nemean Lion to Cerberus dragged up from Hades; Hesiod knows Geryon and the cattle at the edge of the world, and Hyginus rolls the same ordeal-list in his Fabulae.",
+      "sources": ["apollodorus", "hesiod", "hyginus"],
+      "citation": "Apollod. 2.4.12, 2.5.1–12; Hes. Th. 287–294; Hyg. Fab. 30–31"
+    },
+    {
+      "title": "Beyond the labours",
+      "text": "When the tasks were done, he sacked Troy for Laomedon's broken oath, was sold to Omphale in Lydia and fought beside the gods at Phlegra, wrestled Achelous for Deianira at Calydon, and at last died on Oeta by the centaur's poison — yet Hesiod places him on Olympus wedded to Hebe, and Homer saw his shade among the dead: mortal agony and godhead both.",
+      "sources": ["homer", "apollodorus", "hesiod", "ovid"],
+      "citation": "Hom. Il. 5.640–651, Od. 11.601–627; Apollod. 2.6.2–2.7.7; Hes. Th. 950–955; Ov. Met. 9.1–272"
+    }
+  ],
+  "cast": [
+    { "id": "heracles", "name": "Heracles", "role": "The hero of the labours" },
+    { "id": "eurystheus", "name": "Eurystheus", "role": "The taskmaster king" },
+    { "id": "alcmene", "name": "Alcmene", "role": "Mother of the twins" },
+    { "id": "iolaus", "name": "Iolaus", "role": "Nephew and companion" },
+    { "id": "hera", "name": "Hera", "role": "Everlasting enemy" },
+    { "id": "zeus", "name": "Zeus", "role": "Divine father in one tradition" }
+  ],
+  "places": [
+    { "id": "thebes", "name": "Thebes", "role": "Where he was born" },
+    { "id": "tiryns", "name": "Tiryns", "role": "Seat of Eurystheus' commands" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Kingdom of the taskmaster" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.4.5–2.5.12" },
+    { "source": "homer", "work": "Iliad", "citation": "19.95–133" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.266–270, 11.601–627" },
+    { "source": "hesiod", "work": "Theogony", "citation": "287–294, 943–955" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "30–36" }
+  ]
+}

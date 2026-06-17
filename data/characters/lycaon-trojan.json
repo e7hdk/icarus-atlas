@@ -1,0 +1,28 @@
+{
+  "id": "lycaon-trojan",
+  "name": "Lycaon",
+  "greekName": "Lykaon (Λυκάων)",
+  "type": "hero",
+  "domains": ["son of Priam", "Achilles' captive"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Dardanian Priam whom Achilles once took captive cutting wild fig-shoots in his father's orchard by night, and whom the son of Peleus slew at the river when he fled the battle — distinct from the Arcadian king (`lycaon`) and from Lycaon father of Pandarus.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.35–135"
+    }
+  ],
+  "story": [
+    {
+      "text": "There met Achilles a son of Dardanian Priam fleeing forth from the river, even Lycaon, whom on a time he had himself taken sore against his will from his father's orchard, cutting with the sharp bronze the young shoots of a wild fig-tree to be the rims of a chariot. Now Lycaon stooped and ran under the spear, and clasped his knees, beseeching that he be sold into captivity; but Achilles thrust him with his sword through the liver, and lifted him by foot and cast him into the river, vowing that not even the fair-flowing Scamander should avail the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.35–135"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

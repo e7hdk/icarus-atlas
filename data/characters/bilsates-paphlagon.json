@@ -1,0 +1,27 @@
+{
+  "id": "bilsates-paphlagon",
+  "name": "Bilsates",
+  "greekName": "Bilsatēs (Βιλσάτης)",
+  "type": "hero",
+  "domains": ["father of Pylaemenes", "Paphlagonian house", "Eneti"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Pylaemenes (`pylaemenes-paphlagon`) — attested by Apollodorus when the Paphlagonian captain joined the Trojans after nine years of siege, while Homer names the son but not his sire in the Catalogue.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 5.580–625; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Pylaemenes of the shaggy heart at the head of the Paphlagonians from the land of the Eneti — men who held Cytorus and dwelt about Sesamon and the river Parthenius — but does not name his father in the muster.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "Apollodorus, listing the allies who came to Troy in the ninth year, makes Pylaemenes son of Bilsates among the Paphlagonian captains.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.34"
+    }
+  ]
+}

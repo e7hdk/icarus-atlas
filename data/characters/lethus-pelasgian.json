@@ -1,0 +1,32 @@
+{
+  "id": "lethus-pelasgian",
+  "name": "Lethus",
+  "greekName": "Lēthos (Λῆθος)",
+  "type": "hero",
+  "domains": ["father of Hippothous and Pylaeus", "Pelasgian house", "Larisa", "son of Teutamus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Pelasgian Lethus, son of Teutamus, and father of Hippothous (`hippothous-pelasgian`) and Pylaeus (`pylaeus-pelasgian`) — attested by Homer when the Pelasgi from deep-soiled Larisa muster at Troy.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 17.275–315; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Hippothous and Pylaeus, scions of Ares, at the head of the spear-raging Pelasgi from Larisa — sons twain of Pelasgian Lethus, son of Teutamus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "When the Trojans strove to hale Patroclus to sacred Ilios, Homer names Hippothous the glorious son of Pelasgian Lethus as the man who bound the corpse by the foot until Ajax smote him.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.275–315"
+    },
+    {
+      "text": "Apollodorus makes Hippothous son of Pelasgus from Larissa among the Trojan allies — a parentage that stands beside Homer's Lethus (`hippothous-pelasgian-parentage`).",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.35"
+    }
+  ]
+}

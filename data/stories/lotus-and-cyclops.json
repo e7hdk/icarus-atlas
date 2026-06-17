@@ -1,0 +1,54 @@
+{
+  "id": "lotus-and-cyclops",
+  "title": "Lotus and the Cyclops",
+  "greekTitle": "Λωτοφάγοι καὶ Κύκλωψ",
+  "kind": "episode",
+  "parent": "odyssey",
+  "era": 9.01,
+  "summary": {
+    "text": "After Troy Odysseus told Alcinous how his company met the Lotus-eaters whose fruit erased homecoming, then entered the cave of Polyphemus — until strong wine, the name Nobody, and a heated stake earned Poseidon's relentless wrath.",
+    "sources": ["homer", "apollodorus", "hyginus"],
+    "citation": "Hom. Od. 9; Apollod. Epit. 7.4–7; Hyg. Fab. 125"
+  },
+  "chapters": [
+    {
+      "title": "The Lotus-eaters",
+      "text": "From Troy Odysseus sailed with twelve ships to the land of the Lotus-eaters, who lived on the flower's fruit. Three scouts ate and forgot all desire to return; Odysseus dragged them weeping back to the ships and drove the rest away from the shore lest others taste forgetfulness.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 9.82–104"
+    },
+    {
+      "title": "The lawless shepherds",
+      "text": "On the next island — some say the land of the Cyclopes — Odysseus entered a vast cave stocked with cheese and lambs, the lair of Polyphemus son of Poseidon. Homer describes the Cyclopes as lawless shepherds who trust in the gods but plant nothing, build no ships, and live each in his own hill-cave apart from neighbours.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 9.105–115; Apollod. Epit. 7.4"
+    },
+    {
+      "title": "Nobody's wine",
+      "text": "Polyphemus sealed the entrance with a mountain stone and devoured two companions at each meal. Odysseus gave him strong wine — the same Maronean vintage he had received at Ismarus — and told the giant his name was Nobody. When Polyphemus slept drunk, the Greeks heated a stake in the fire and drove it into the one eye; the blinded Cyclops cried to his kin that Nobody was killing him, and they did not come.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Hom. Od. 9.345–435; Hyg. Fab. 125"
+    },
+    {
+      "title": "Beneath the ram",
+      "text": "At dawn Polyphemus felt the backs of his sheep as they went out but did not think to touch their bellies, where Odysseus and his men clung beneath the rams. Once aboard ship, Odysseus could not resist shouting his true name — and the Cyclops prayed to Poseidon that the man of many wiles might never reach home, or come alone, late, and in a stranger's ship, with all his comrades lost.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 9.474–542; Apollod. Epit. 7.7"
+    }
+  ],
+  "cast": [
+    { "id": "odysseus", "name": "Odysseus", "role": "He who called himself Nobody" },
+    { "id": "polyphemus-cyclops", "name": "Polyphemus", "role": "The blinded Cyclops" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Father of the giant, enemy thereafter" },
+    { "id": "eurylochus", "name": "Eurylochus", "role": "Companion who urged flight from the cave" }
+  ],
+  "places": [
+    { "name": "Land of the Lotus-eaters", "role": "Where the fruit erased homecoming" },
+    { "name": "Cyclopes' isle", "role": "Polyphemus' cave and pasture" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "9" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "7.4–7" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "125" }
+  ]
+}

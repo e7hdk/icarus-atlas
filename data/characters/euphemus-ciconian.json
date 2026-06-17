@@ -1,0 +1,22 @@
+{
+  "id": "euphemus-ciconian",
+  "name": "Euphemus",
+  "greekName": "Euphēmos (Εὔφημος)",
+  "type": "hero",
+  "domains": ["Ciconian command", "spearmen of the north"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Ciconian spearmen, son of Ceas' son Troezenus, nurtured of Zeus — a namesake of the Argonaut Euphemus son of Poseidon, but Homer fixes this man among the Trojan allies in the Catalogue of Ships.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Euphemus captain of the Ciconian spearmen beside the Thracian and Paeonian lords. Apollodorus makes him son of Troezenus among the allies who joined the Trojans after nine years of siege.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.34"
+    }
+  ]
+}

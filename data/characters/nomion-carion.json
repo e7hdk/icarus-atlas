@@ -1,0 +1,28 @@
+{
+  "id": "nomion-carion",
+  "name": "Nomion",
+  "greekName": "Nomiōn (Νομίων)",
+  "type": "hero",
+  "domains": ["father of Nastes and Amphimachus", "Carian house", "Miletus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Nastes and Amphimachus (`nastes-nomionid`, `amphimachus-nomionid`), the glorious captains twain of the Carians who held Miletus, Phthires, the Maeander, and Mycale's steep crests.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Nomion only as the father of the Carian captains Nastes and Amphimachus when the Catalogue musters the allies from Miletus and the Maeander country — Nastes came to the war all decked with gold like a girl, fool that he was, but his gold availed not to ward off woeful destruction beneath Achilles' hands.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["homer"]
+    }
+  ]
+}

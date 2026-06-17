@@ -1,0 +1,40 @@
+{
+  "id": "phalerus-athens",
+  "name": "Phalerus",
+  "greekName": "Phaleros (Φαληρός)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Attica",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Alcon, Athenian Argonaut from the harbour that bears his name.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.97; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius numbers Phalerus son of Alcon among the Athenians who sailed with Jason — Alcon once shot the snake that threatened his son's life.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.97; Fabulae 14"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ]
+    }
+  ]
+}

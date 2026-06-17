@@ -1,0 +1,28 @@
+{
+  "id": "ialmenus-minyan",
+  "name": "Ialmenus",
+  "greekName": "Ialmēnos (Ἰάλμενος)",
+  "type": "hero",
+  "domains": ["Orchomenus of the Minyae", "sons of Ares", "the thirty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Ares and brother of Ascalaphus, co-captain of the Minyans from Orchomenus and Aspledon — one of the thirty ships at Troy — who stood among the seven captains of the night sentinels when the host feared Trojan spies.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 9.50–85"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Ialmenus with Ascalaphus as leader of the Minyans who dwelt in Aspledon and Orchomenus of the Minyae, sons of Ares whom Astyoche bore in Actor's palace. Thirty hollow ships ranged with them in the muster at Ilios. When the Achaeans kept watch in the camp, Ialmenus went forth in harness with Ascalaphus, Thrasymedes, Meriones, Aphareus, Deïpyrus, and Lycomedes — seven captains, each with a hundred spearmen.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 9.50–85"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["homer"]
+    }
+  ]
+}

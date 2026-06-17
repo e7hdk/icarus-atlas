@@ -55,7 +55,17 @@
         "pausanias",
         "hyginus"
       ],
-      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7; Fabulae 67"
+      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7; Fabulae 67",
+      "topic": "oedipus-death-place"
+    },
+    {
+      "text": "Homer remembers otherwise: in the underworld Odysseus saw Oedipus still bearing the woes the Avengers of a mother bring to pass, and in the Iliad the Argive Mecisteus came to Thebes for the burial of Oedipus when he had fallen — funeral games at the seven-gated city, not a quiet death in Attica.",
+      "sources": [
+        "homer",
+        "pausanias"
+      ],
+      "citation": "Odyssey 11.275–280; Iliad 23.677–679; Description of Greece 1.28.7",
+      "topic": "oedipus-death-place"
     }
   ],
   "residences": [
@@ -65,6 +75,13 @@
         "homer",
         "apollodorus",
         "hyginus",
+        "pausanias"
+      ]
+    },
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
         "pausanias"
       ]
     }

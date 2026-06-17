@@ -1,0 +1,28 @@
+{
+  "id": "philetor-trojan",
+  "name": "Philetor",
+  "greekName": "Philētōr (Φιλήτωρ)",
+  "type": "hero",
+  "domains": ["father of Demuchus", "Trojan warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan father of Demuchus, a valiant man and tall, whom Achilles struck upon the knee and thereafter smote with his great sword when the son of Peleus swept through the ranks in *Iliad* 20.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Achilles left Dryops where he fell, and stayed from fight Demuchus, Philetor's son, a valiant man and tall, striking him upon the knee with a cast of his spear; and thereafter he smote him with his great sword, and took away his life.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

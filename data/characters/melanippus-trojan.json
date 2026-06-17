@@ -1,0 +1,22 @@
+{
+  "id": "melanippus-trojan",
+  "name": "Melanippus",
+  "greekName": "Melanippos (Μελάνιππος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Teucer's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Teucer laid low among the eight warriors he slew with his mighty bow — Apollodorus counts Melanippus among Priam's sons by other women, distinct from Melanippus son of Hicetaon (`melanippus-hicetaonid`), from `melanippus-patroclus-roll`, and from `melanippus-achaean` of Nestor's embassy.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 8.245–290; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Ajax covered Teucer with his shining shield, the archer brought Melanippus down with Orsilochus, Ormenus, Ophelestes, Daetor, Chromius, godlike Lycophontes, and Amopaon, one after another, to the bounteous earth.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.245–290"
+    }
+  ]
+}

@@ -73,6 +73,14 @@
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "naxos",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "skyros",
+      "sources": ["apollodorus"]
     }
   ]
 }

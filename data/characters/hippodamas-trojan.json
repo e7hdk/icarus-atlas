@@ -1,0 +1,28 @@
+{
+  "id": "hippodamas-trojan",
+  "name": "Hippodamas",
+  "greekName": "Hippodamas (Ἱππόδαμος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Achilles smote upon the back with a thrust of his spear as he leapt down from his car and fled before him, bellowing like a bull dragged to the altar — Apollodorus counts Hippodamas among Priam's sons by other women, distinct from the Calydonian eponym father of Euryte.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.375–415; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hippodamas thereafter, as he leapt down from his car and fled before him, Achilles smote upon the back with a thrust of his spear. And as he breathed forth his spirit he gave a bellowing cry, even as a bull that is dragged belloweth, when young men drag him about the altar of the lord of Helice; for in such doth the Shaker of Earth delight; even so bellowed Hippodamas, as his lordly spirit left his bones.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

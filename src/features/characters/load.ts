@@ -41,6 +41,23 @@ export async function loadAtlasData(): Promise<AtlasData> {
   return { characters, relations, sources };
 }
 
+/** Build-time-baked galaxy positions (scripts/bake-layout.ts). Null when absent;
+ *  GalaxyView falls back to a runtime solve and validates the baked set by signature. */
+export interface BakedLayout {
+  signature: string;
+  count: number;
+  positions: Record<string, [number, number, number]>;
+}
+
+export async function loadBakedLayout(): Promise<BakedLayout | null> {
+  try {
+    const raw = await readFile(path.join(DATA_DIR, 'generated', 'galaxy-positions.json'), 'utf-8');
+    return JSON.parse(raw) as BakedLayout;
+  } catch {
+    return null;
+  }
+}
+
 /** Encyclopedic reference for the Information tab; null when not yet written. */
 export async function loadReference(id: string): Promise<ReferenceData | null> {
   try {

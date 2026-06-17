@@ -1,0 +1,70 @@
+{
+  "id": "protesilaus-at-troy",
+  "title": "Protesilaus at Troy",
+  "greekTitle": "Πρωτεσίλαος ἐν Τροίᾳ",
+  "kind": "episode",
+  "parent": "cypria",
+  "era": 7.96,
+  "summary": {
+    "text": "When the corrected fleet reached the Troad, Thetis warned Achilles not to be first ashore — for the first to land would be the first to die. Protesilaus leapt first from his ship, slew many Trojans, and fell to Hector ere the black earth held him; his wife Laodamia loved him even after death.",
+    "sources": ["apollodorus", "homer", "hyginus"],
+    "citation": "Apollod. Epit. 3.29–3.30; Hom. Il. 2.695–730, 15.700–745; Hyg. Fab. 103"
+  },
+  "chapters": [
+    {
+      "title": "The host at the Troad",
+      "text": "After Aulis and the Mysian detour — the nested episode on Iphigenia at Aulis tells the becalmed muster; the nested episode on Telephus at Mysia tells the mistaken landing and the healing that set the course true — the Achaean fleet reached the coast of Troy. Apollodorus says the barbarians marched in arms to the sea and tried to prevent the landing, hurling stones from the shore. The war that would fill the Iliad's ten years began here, in the first clash between the host of Agamemnon and the sons of Priam — not yet the tenth summer of the siege, but the opening blood that would never be washed from the plain.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.29; Hom. Il. 2.559–580"
+    },
+    {
+      "title": "Thetis' warning",
+      "text": "Thetis charged Achilles not to be the first to land from the ships, because the first to land would be the first to die. The prophecy fixed the honour and the doom of the opening hour: whoever leapt first would win glory and lose life before the wall was built or the Catalog of Ships was sung. Achilles held back — the son of Thetis who would dominate the war's last seasons obeyed his mother at the beginning. Another captain would take the first ashore and pay the price Thetis named.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.29; Hyg. Fab. 103"
+    },
+    {
+      "title": "First from the ship",
+      "text": "Of the Greeks the first to land from his ship was Protesilaus, captain of the Phthians from Phylace, Antron, Pteleos, and the towns about. He slew not a few of the barbarians before he fell. Homer knows him in the Catalog of Ships as warlike Protesilaus, while yet he lived — howbeit ere now the black earth held him fast when the Iliad opens. His wife, her two cheeks torn in wailing, was left in Phylace and his house but half established, while a Dardanian warrior slew him as he leapt forth from his ship. Apollodorus names Hector as the slayer; Homer leaves the killer among the Dardanians without fixing the name.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.30; Hom. Il. 2.695–730"
+    },
+    {
+      "title": "Laodamia's grief",
+      "text": "Protesilaus' wife Laodamia loved him even after his death, and she made an image of him and consorted with it. The gods had pity on her — Apollodorus' Epitome breaks off into the pity of Olympus for a widow who could not release her husband's shade. Hyginus preserves the tale in his Trojan roll. The first casualty of the war became a byword for faithful grief: the captain who never saw home, the bride who kept his likeness when the black earth held him fast on the Trojan shore.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.30; Hyg. Fab. 103"
+    },
+    {
+      "title": "His ship at the wall",
+      "text": "The fair ship that had borne Protesilaus to Troy but brought him not back again to Phylace became a landmark of the war. Homer sets close combat about its stern when the wall was breached — Achaeans and Trojans slaying one another where the rampart was lowest, beside the ships of Ajax and Protesilaus drawn up along the beach of the grey sea. His brother Podarces led the Phthians in the forefront when the host longed for the fallen captain. In the fifteenth book Hector laid hold of that ship's stern and the battle for the fleet burned hottest where the first ashore had died.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 13.675–720, 15.700–745"
+    },
+    {
+      "title": "Ten years begin",
+      "text": "When Protesilaus fell, the siege of Ilion had its first Achaean dead — and the long war began. The nested saga on the Trojan War opens in the tenth year, when Agamemnon's slight to Achilles opened the wrath that nearly burned the ships; the nested episode on Wrath and Plague tells Books 1–2. Nine years stood between Protesilaus' leap and the Iliad's opening quarrel, nine years Calchas had read in the sparrows at Aulis. The Cypria's opening movements end here; Homer's poem picks up where the first captain's blood had already dried on the sand.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 1–2; Apollod. Epit. 3.21; Hyg. Fab. 106"
+    }
+  ],
+  "cast": [
+    { "id": "protesilaus", "name": "Protesilaus", "role": "First ashore, first to die at Troy" },
+    { "id": "hector", "name": "Hector", "role": "He who slew him in Apollodorus' account" },
+    { "id": "achilles", "name": "Achilles", "role": "Held back on Thetis' warning" },
+    { "id": "thetis", "name": "Thetis", "role": "Goddess who named the first-lander's doom" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host that landed at Troy" },
+    { "name": "Laodamia", "role": "Wife who mourned and made his image" },
+    { "name": "Podarces", "role": "Brother who led the Phthians after his fall" },
+    { "id": "priam", "name": "Priam", "role": "King whose sons barred the landing" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Where Protesilaus leapt first and fell" },
+    { "name": "Phylace", "role": "Phthian home he never reached again" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.29–3.30" },
+    { "source": "homer", "work": "Iliad", "citation": "2.695–730, 13.675–720, 15.700–745" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "103, 106" }
+  ]
+}

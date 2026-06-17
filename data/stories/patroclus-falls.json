@@ -1,0 +1,57 @@
+{
+  "id": "patroclus-falls",
+  "title": "The Fall of Patroclus",
+  "greekTitle": "Πάτροκλος πίπτει",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.16,
+  "summary": {
+    "text": "Patroclus wore Achilles' armour and drove the Trojans from the ships until he killed Sarpedon and Hector killed him — Apollo struck him from behind, and the armour of Peleus was stripped from the body on the plain.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 16"
+  },
+  "chapters": [
+    {
+      "title": "Borrowed armour",
+      "text": "When the fire reached the ships Patroclus could bear it no longer. He wept at Achilles' door and begged to lead the Myrmidons — not as Achilles, but to save the fleet. The son of Peleus lent his armour and his horses, warning Patroclus to drive the Trojans from the ships and return: he must not pursue to the wall, for if he wore Achilles' glory too long, some god or man would cut him down. Patroclus armed, and Automedon yoked the immortal horses Xanthus and Balius.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16.1–168"
+    },
+    {
+      "title": "The Myrmidons charge",
+      "text": "Patroclus led the Myrmidons like a wasp swarm; the Trojans broke from the ships and ran. He cut the throat of the Lycian captain Sarpedon, son of Zeus — and Sleep and Death carried the body home to Lycia while the battle raged over the corpse. Hector withdrew before the storm of Patroclus until Apollo, standing at the wall, turned the tide: the god struck the son of Menoetius from behind, stunned him, and knocked the helmet from his head.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16.169–684"
+    },
+    {
+      "title": "Hector's spear",
+      "text": "Dazed and wounded, Patroclus tried to retreat; Euphorbus speared him in the back, and Hector finished him with a thrust through the belly. Dying, Patroclus prophesied that Hector would not live long — death stood hard by, and the stronger man, Achilles son of Aeacus, would end him by the Scaean Gate. Hector stripped the armour of Peleus from the body and exchanged it for his own — the fatal exchange that would bring Achilles back to war.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16.684–867"
+    },
+    {
+      "title": "Fight for the body",
+      "text": "Menelaus and Ajax stood over Patroclus while Trojans and Achaeans fought in waves; Hector wore the divine armour and exulted. The nested episode on Achilles and Hector tells Books 17–22, when the son of Peleus would rise for vengeance; here the Iliad's turning point is complete — the companion Achilles loved as his own soul lay dead, and the wrath would now become the wrath for Patroclus.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16.701–867"
+    }
+  ],
+  "cast": [
+    { "id": "patroclus", "name": "Patroclus", "role": "He who fell in borrowed armour" },
+    { "id": "achilles", "name": "Achilles", "role": "He who lent the armour and warned him back" },
+    { "id": "hector", "name": "Hector", "role": "Slayer who took the armour of Peleus" },
+    { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally slain on the plain" },
+    { "id": "apollo", "name": "Apollo", "role": "God who stunned Patroclus from behind" },
+    { "id": "zeus", "name": "Zeus", "role": "Father of Sarpedon, weigher of fates" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Defender of the body" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Defender of the body" },
+    { "name": "Automedon", "role": "Charioteer of Achilles' horses" },
+    { "name": "Euphorbus", "role": "He who speared Patroclus first" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Plain before the ships where Patroclus fell" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "16" }
+  ]
+}

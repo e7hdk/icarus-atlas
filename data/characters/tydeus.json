@@ -68,5 +68,22 @@
       ],
       "citation": "Bibliotheca 1.8.5, 3.6.8; Fabulae 70"
     }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ]
+    },
+    {
+      "city": "calydon",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
   ]
 }

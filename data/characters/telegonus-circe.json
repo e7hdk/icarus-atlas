@@ -1,0 +1,44 @@
+{
+  "id": "telegonus-circe",
+  "name": "Telegonus",
+  "greekName": "Telegonos (Τηλέγονος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Odysseus and Circe",
+    "the sting-ray spear",
+    "the death of Odysseus"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' Epitome, the son whom Odysseus begot on Circe after the hero bound her by oath on Aeaea — not to be confused with Telegonus king of the Egyptians in Bibliotheca 2.1.3, Telegonus son of Proteus in Bibliotheca 2.5.9, or the Hesiodic Telegonus who rules the Tyrsenians in the holy islands.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Epitome 7.16, 7.36–7.37; Theogony 995–1015"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says that when Odysseus had taken an oath from Circe that he should suffer no harm, he shared her bed on Aeaea and she bore him Telegonus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.16"
+    },
+    {
+      "text": "Learning from Circe that he was Ulysses' son, Telegonus sailed in search of his father. He came to Ithaca, drove away some of the cattle, and when Odysseus defended them Telegonus wounded him with the spear in his hands — barbed with the spine of a sting-ray — and Odysseus died of the wound.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.36",
+      "topic": "odysseus-death"
+    },
+    {
+      "text": "When Telegonus recognized whom he had killed, he bitterly lamented, conveyed the corpse and Penelope to Circe, and there married Penelope. Circe sent them both away to the Islands of the Blest.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.37",
+      "topic": "odysseus-death"
+    },
+    {
+      "text": "Hyginus tells that Circe sent Telegonus to find his father, that a storm carried him to Ithaca where hunger drove him to lay waste the fields, and that Odysseus and Telemachus — not knowing who he was — took up arms against him until the king fell by his son's hand, as an oracle had warned.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 127",
+      "topic": "odysseus-death"
+    }
+  ]
+}

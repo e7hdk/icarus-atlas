@@ -1,0 +1,33 @@
+{
+  "id": "gryneus-centaur",
+  "name": "Gryneus",
+  "greekName": "Gryneus (Γρύνευς)",
+  "romanName": "Gryneus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the blazing altar"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who lifted a smoking altar from the wedding sanctuary and hurled it into the Lapiths, killing Broteas and Orius.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "Seeing a smoking altar in the inner sanctuary, Gryneus cried 'Good use for this!' and raised the heavy blazing hearth. He hurled it into the midst of the Lapithae and struck down Broteas and Orius — Mycale, mother of Orius, famous in the mountains for her beauty.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "eurybates",
+  "name": "Eurybates",
+  "greekName": "Eurybatēs (Εὐρυβάτης)",
+  "type": "mortal",
+  "domains": ["herald of Agamemnon", "squire of Odysseus", "Ithaca"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Herald of Agamemnon, sent with Talthybius to fetch Briseis from Achilles — and the Ithacan attendant who gathered up Odysseus' cloak when Athena set him running to still the assembly.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.320–340, 2.184–185"
+    }
+  ],
+  "story": [
+    {
+      "text": "He and Talthybius were Agamemnon's heralds and ready squires. At the king's command they went unwilling to Achilles' hut to lead away fair-cheeked Briseis — the errand that sealed the hero's withdrawal from the war.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.320–348"
+    },
+    {
+      "text": "When Athena roused Odysseus to face the mutinous host, he cast off his cloak and ran; Eurybates of Ithaca, who waited on him, gathered it up. So the same man serves both the commander of the army and the prince of Ithaca — herald's office binding king to counsellor.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.184–185"
+    },
+    {
+      "text": "In the embassy of Book 9 he attends Odysseus among the heralds sent to Achilles' tent, bearing the king's offer of gifts and the return of Briseis.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.170–172"
+    }
+  ]
+}

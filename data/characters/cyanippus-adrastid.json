@@ -1,0 +1,47 @@
+{
+  "id": "cyanippus-adrastid",
+  "name": "Cyanippus",
+  "greekName": "Κυάνιππος",
+  "romanName": "Cyanippus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Biantid kingship",
+    "Argive royalty"
+  ],
+  "summary": [
+    {
+      "text": "The last king named in the Biantid succession at Argos — though Apollodorus makes him a son of Adrastus and brother of Aegialeus, while Pausanias calls him son of Aegialeus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13; Description of Greece 2.18.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Cyanippus among the two sons Adrastus begot on Amphithea, daughter of Pronax, with Aegialeus as his brother and Argia, Deipyle, and Aegialia as his sisters. He belongs to the royal brood whose marriages and deaths set off the two Theban wars, though no deed of his own survives in that author's narrative.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "text": "Pausanias closes the Biantid roll differently. After Melampus and Bias divided Argos, he says, five kings descended from Bias — Neleids on the mother's side — held the throne for four generations down to Cyanippus, son of Aegialeus; a separate Melampid line ran six generations to Amphilochus son of Amphiaraus. In this reckoning Cyanippus is the terminal name of the house that began with Bias, not a living contemporary of the Seven.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

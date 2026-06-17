@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { KindBadge } from '@/components/ui/KindBadge';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { bondsFor } from '@/features/characters/relations';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -12,6 +13,9 @@ import { useIsMobile } from '@/lib/useIsMobile';
 
 /** How many bonds to show inline before the overflow opens the full list. */
 const INLINE_BONDS = 8;
+/** Story paragraphs shown before "Read more" expands the rest — keeps the panel
+ *  compact and scroll-free by default even for long, multi-chapter figures. */
+const STORY_PREVIEW = 2;
 
 /** Full story panel, opened by clicking a star. Every paragraph carries its sources. */
 export function CharacterPanel({
@@ -31,12 +35,14 @@ export function CharacterPanel({
   const isMobile = useIsMobile();
   const panelRef = useRef<HTMLElement>(null);
   const [bondsOpen, setBondsOpen] = useState(false);
-  // Reset the expanded bonds list whenever the panel shows a new figure
-  // (React's official "adjust state on prop change during render" pattern).
+  const [storyOpen, setStoryOpen] = useState(false);
+  // Reset the expanded bonds list and collapsed story whenever the panel shows a
+  // new figure (React's official "adjust state on prop change during render").
   const [shownFor, setShownFor] = useState(selectedId);
   if (selectedId !== shownFor) {
     setShownFor(selectedId);
     setBondsOpen(false);
+    setStoryOpen(false);
   }
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
@@ -101,6 +107,9 @@ export function CharacterPanel({
           </div>
           <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">
             <TypeBadge type={character.type} />
+            {character.kinds?.map((kind) => (
+              <KindBadge key={kind} kind={kind} primaryType={character.type} />
+            ))}
             <span className="min-w-0 truncate font-body text-[12.5px] italic text-aether-muted">
               {character.domains.join(' · ')}
             </span>
@@ -173,6 +182,9 @@ export function CharacterPanel({
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <TypeBadge type={character.type} />
+          {character.kinds?.map((kind) => (
+            <KindBadge key={kind} kind={kind} primaryType={character.type} />
+          ))}
           <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
         </div>
         {character.epithets && character.epithets.length > 0 && (
@@ -182,7 +194,7 @@ export function CharacterPanel({
         )}
 
         <div className="mt-6 space-y-5">
-          {story.map((paragraph, index) => (
+          {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => (
             <div key={index}>
               {lens === 'consensus' && paragraph.topic && (
                 <div className="mb-1 inline-block rounded-full border border-nebula-soft/40 bg-nebula-violet/15 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
@@ -199,6 +211,15 @@ export function CharacterPanel({
             <p className="rounded-xl border border-glass-border bg-glass px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
               No surviving account for this figure is included under the active source lens.
             </p>
+          )}
+          {story.length > STORY_PREVIEW && (
+            <button
+              type="button"
+              onClick={() => setStoryOpen((value) => !value)}
+              className="font-display text-[11px] uppercase tracking-[0.16em] text-nebula-soft transition-colors hover:text-aether"
+            >
+              {storyOpen ? '— Read less' : `Read more · ${story.length - STORY_PREVIEW} →`}
+            </button>
           )}
         </div>
 

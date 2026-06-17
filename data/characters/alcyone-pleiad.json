@@ -1,0 +1,43 @@
+{
+  "id": "alcyone-pleiad",
+  "name": "Alcyone",
+  "greekName": "Alkyonē (Ἀλκυόνη)",
+  "romanName": "Alcyone",
+  "type": "nymph",
+  "kinds": ["pleiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pleiades",
+    "Mount Cyllene",
+    "mother of Boeotian heroes"
+  ],
+  "summary": [
+    {
+      "text": "One of the seven Pleiades born to Atlas and Pleione at Cyllene in Arcadia, whom Poseidon lay with and by whom he had Hyrieus, Hyperenor, and Aethusa — not to be confused with Alcyone daughter of Aeolus, wife of Ceyx (`alcyone-aeolid`).",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.10.1; Description of Greece 3.18.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus numbers her among the seven daughters whom Atlas had by Pleione, daughter of Ocean, called the Pleiades and born at Cyllene: Alcyone, Merope, Celaeno, Electra, Sterope, Taygete, and Maia. Of the sisters Sterope was given to Oenomaus and Merope to Sisyphus; Poseidon had intercourse with two of them, first with Celaeno and second with Alcyone.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1"
+    },
+    {
+      "text": "By Poseidon, Alcyone bore a daughter Aethusa, mother of Eleuther by Apollo, and two sons Hyrieus and Hyperenor — a Boeotian branch rooted in the Pleiad rather than in the Aeolid house. Apollodorus traces Hyrieus onward through Nycteus to Antiope and the Theban twins Amphion and Zethus, so that the walls of Thebes stand, at one remove, on a Pleiad's line.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1"
+    },
+    {
+      "text": "Pausanias saw the myth carved at Amyclae: on the throne of Pelops, Poseidon and Zeus carry off Taygete and her sister Alcyone, daughter of Atlas — the same abduction-pattern that elsewhere binds the Spartan mountain and the Pleiad name to the gods of sea and sky.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.18.10"
+    },
+    {
+      "text": "The halcyon bird and the drowned Ceyx belong to a different Alcyone — the daughter of Aeolus in the Bibliotheca's Aeolid catalogue and in Ovid's storm at sea. Hyginus lists both: the Pleiad among the daughters of Atlas and Pleione, and the Aeolid wife who leaped into the waves for Ceyx. The atlas keeps them apart: `alcyone-pleiad` for the Cyllenian sister of Maia, `alcyone-aeolid` for the kingfisher of Trachis.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.7.3–1.7.4, 3.10.1; Metamorphoses 11.410–748; Fabulae 65"
+    }
+  ]
+}

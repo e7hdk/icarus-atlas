@@ -1,0 +1,46 @@
+{
+  "id": "opheltes-peneleid",
+  "name": "Opheltes",
+  "greekName": "Opheltēs (Ὀφέλτης)",
+  "romanName": "Opheltes",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Peneleos",
+    "the Theban succession"
+  ],
+  "summary": [
+    {
+      "text": "In Pausanias' Theban king-list, Opheltes is the son of Peneleos and the father of Damasichthon — the link through which the Boeotian captain's line returned to the Cadmeia after Autesion migrated to the Dorians.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    },
+    {
+      "text": "Not to be confused with Opheltes son of Lycurgus of Nemea, the infant also called Archemorus, whose death at the serpent's bite founded the Nemean Games.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.14, 3.6.4; Description of Greece 2.15.2–2.15.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias names him only in passing, as the middle generation between the Trojan captain Peneleos and the king Damasichthon who succeeded Autesion. When the Erinyes drove Autesion from Thebes, the Thebans chose Damasichthon son of Opheltes son of Peneleos — a return to Boeotian stock after the Epigon and Labdacid branches had each in turn held and lost the throne.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.15–9.5.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

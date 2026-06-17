@@ -9,16 +9,15 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import {
-  computeDynastyWedges,
   computeGenerations,
   computePositions,
+  effectiveWedges,
   isChronologicalParentRelation,
   realmOf,
   MIN_CONSORT_DISTANCE,
   MIN_STAR_DISTANCE,
   REALM_BANDS,
   REALM_OVERFLOW,
-  SPIRAL_TWIST,
 } from '../src/features/galaxy/layout';
 import type { Character, Relation } from '../src/types/character';
 
@@ -29,7 +28,7 @@ const characters = readdirSync(join(DATA_DIR, 'characters'))
 const relations = JSON.parse(readFileSync(join(DATA_DIR, 'relations.json'), 'utf-8')) as Relation[];
 const charactersById = new Map(characters.map((character) => [character.id, character]));
 const generations = computeGenerations(characters, relations);
-const wedges = computeDynastyWedges(characters, relations);
+const wedges = effectiveWedges(characters, relations);
 const positions = computePositions(characters, relations);
 const repeatedPositions = computePositions(characters, relations);
 const errors: string[] = [];
@@ -75,16 +74,16 @@ for (const relation of relations) {
   }
 }
 
-/* 2. Dynasty wedges: a star's untwisted bearing stays inside its wedge. */
+/* 2. Dynasty wedges: a star's bearing stays inside its (twisted) angular bound —
+ *    cohort members sit on their anchor's widened patch arc, the rest on their
+ *    own wedge. effectiveWedges() is the same source computePositions enforces. */
 for (const character of characters) {
   if (character.id === 'chaos') continue;
   const position = positions.get(character.id);
   const wedge = wedges.get(character.id);
   if (!position || !wedge) continue;
-  const generation = generations.get(character.id) ?? 0;
-  const bearing = Math.atan2(position[2], position[0]) - SPIRAL_TWIST * generation;
-  const offset = Math.abs(normalizeSignedAngle(bearing - wedge.mid));
-  if (offset > Math.max(wedge.half, 0.015) + 0.02) {
+  const offset = Math.abs(normalizeSignedAngle(Math.atan2(position[2], position[0]) - wedge.mid));
+  if (offset > wedge.half + 0.02) {
     errors.push(
       `${character.id}: bearing leaves its dynasty wedge by ${(offset - wedge.half).toFixed(3)} rad`,
     );

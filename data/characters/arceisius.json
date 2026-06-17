@@ -1,0 +1,41 @@
+{
+  "id": "arceisius",
+  "name": "Arceisius",
+  "greekName": "Arkeisios (Ἀρκείσιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "ancestor of the Ithacan kings",
+    "the single line of Odysseus' house"
+  ],
+  "summary": [
+    {
+      "text": "Forefather of the Ithacan royal line in Homer's reckoning — father of Laertes and grandfather of Odysseus — whose house Zeus made to run in but a single son from generation to generation.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.90–130, 24.235–275, 24.500–545"
+    }
+  ],
+  "story": [
+    {
+      "text": "Telemachus told Odysseus in the swineherd's hut how Cronos' son had shaped their house: as his only son Arceisius begot Laertes, as his only son again Laertes begot Odysseus, and Odysseus begot Telemachus alone — so the dynasty ran in a single line until the suitors filled the halls.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.90–130"
+    },
+    {
+      "text": "The wooers plotted Telemachus' death on his homeward voyage so that the race of godlike Arceisius might perish out of Ithaca and leave no name — the extinction Menelaus feared Athena might yet avert when he urged the prince not to trouble old Laertes, for the son of Arceisius was not utterly hated by the gods.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.715–755, 14.150–190"
+    },
+    {
+      "text": "When Odysseus stood with Laertes and Telemachus against the kin of the slain suitors, Athena called the old king by his father's name — Son of Arceisius — and breathed great might into him to hurl his spear beside his son and grandson. Dolius and his six sons donned armour with Laertes when the avengers came to the orchard.",
+      "sources": ["homer"],
+      "citation": "Odyssey 24.365–545"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

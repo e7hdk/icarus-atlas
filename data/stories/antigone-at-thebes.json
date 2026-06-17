@@ -1,0 +1,50 @@
+{
+  "id": "antigone-at-thebes",
+  "title": "Antigone at Thebes",
+  "greekTitle": "Ἀντιγόνη",
+  "kind": "episode",
+  "parent": "theban-cycle",
+  "era": 6.02,
+  "summary": {
+    "text": "After the brothers' duel, Creon forbade burial to Polynices and set watchmen over the Argive dead; Antigone buried her brother in secret, was condemned, and Haemon son of Creon died — devoured by the Sphinx in one tradition, by his own hand over her corpse in another.",
+    "sources": ["apollodorus", "hyginus"],
+    "citation": "Apollod. 3.7.1; Hyg. Fab. 72"
+  },
+  "chapters": [
+    {
+      "title": "The unburied dead",
+      "text": "When Eteocles and Polynices had killed each other, Creon ruled Thebes and commanded that Eteocles be buried with honours but Polynices cast out unburied, with watchmen set over the corpse. Antigone asked Ismene to help her bury their brother; Ismene refused, but Antigone went alone and covered the body with dust.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.7.1; Hyg. Fab. 72"
+    },
+    {
+      "title": "Caught by the king",
+      "text": "The guards cleared the dust away, but Antigone returned and buried Polynices again. Creon himself detected her at the grave and condemned her to be immured alive in a tomb — the king's law against kin-love, and the sister's defiance that would undo his house.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.7.1; Hyg. Fab. 72"
+    },
+    {
+      "title": "Haemon's two deaths",
+      "text": "Apollodorus knows Haemon as the last victim devoured by the Sphinx before Oedipus came — an innocent killed by Hera's monster. Hyginus tells a later fate: betrothed to Antigone, he survived the Sphinx and loved the condemned girl; when Creon sealed her in the tomb, Haemon thrust himself on his sword over her dead body. The same name, two catastrophes, and the weight of Creon's tragedy shifts with the telling.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.5.8, 3.7.1; Hyg. Fab. 72",
+      "topic": "haemon-death"
+    }
+  ],
+  "cast": [
+    { "id": "antigone", "name": "Antigone", "role": "Sister who buried Polynices" },
+    { "id": "polynices", "name": "Polynices", "role": "The unburied brother" },
+    { "id": "creon", "name": "Creon", "role": "King who forbade the burial" },
+    { "id": "haemon", "name": "Haemon", "role": "Creon's son, lover of Antigone" },
+    { "id": "ismene", "name": "Ismene", "role": "Sister who would not help" },
+    { "id": "eteocles", "name": "Eteocles", "role": "Brother buried with honour" },
+    { "id": "sphinx", "name": "The Sphinx", "role": "Monster that devoured Haemon in one tradition" }
+  ],
+  "places": [
+    { "id": "thebes", "name": "Thebes", "role": "City of Creon's decree" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.5.8, 3.7.1" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "72" }
+  ]
+}

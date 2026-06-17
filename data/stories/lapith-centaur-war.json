@@ -1,0 +1,69 @@
+{
+  "id": "lapith-centaur-war",
+  "title": "The Lapiths and the Centaurs",
+  "greekTitle": "Λαπίθαι καὶ Κένταυροι",
+  "kind": "episode",
+  "parent": "theseus-cycle",
+  "era": 6.73,
+  "summary": {
+    "text": "At the wedding of Peirithous and Hippodameia, wine maddened the centaur Eurytion and the brawl became a war — Caeneus the invulnerable Lapith buried under pines, Theseus fighting with an axe, and the shaggy centaurs driven at last from Mount Pelium.",
+    "sources": ["homer", "apollodorus", "ovid", "pausanias"],
+    "citation": "Hom. Od. 21.295–304, Il. 1.262–282, 2.735–775; Apollod. Epit. 1.22; Ov. Met. 12.315–532; Paus. 1.28.2"
+  },
+  "chapters": [
+    {
+      "title": "The feast and the wine",
+      "text": "Peirithous, king of the Lapiths, took Hippodameia to wife and invited the centaurs of Thessaly to the banquet — among them the wise Chiron's wild kindred, born of Ixion's cloud. Homer says it was wine that made foolish even the centaur glorious Eurytion: when his heart was maddened with drink he wrought evil in the house of Peirithous, and grief seized the heroes. Ovid spreads the hall with mixing-bowls and the scent of roasts; the centaurs, unused to feasts of men, reach for the cup until shame turns to violence.",
+      "sources": ["homer", "ovid"],
+      "citation": "Od. 21.295–304; Ov. Met. 12.315–360"
+    },
+    {
+      "title": "The bride seized",
+      "text": "Eurytion tried to carry off the bride. Pausanias saw the scene on Athens' pediment: Peirithous in the centre, Eurytion seizing the wife of Peirithous, Caeneus bringing help, and on the other side Theseus defending himself against the centaurs with an axe — one centaur clutching a maid, another a youth in his prime. The Athenian hero was among the mightiest Nestor ever named beside Peirithous, Dryas, Caeneus, Exadius, and Polyphemus.",
+      "sources": ["pausanias", "homer", "ovid"],
+      "citation": "Paus. 1.28.2; Il. 1.262–282; Ov. Met. 12.361–420"
+    },
+    {
+      "title": "Caeneus and the pines",
+      "text": "Apollodorus tells how Caeneus, once a woman granted invulnerability by Poseidon, killed many centaurs in the fight and scorned their wounds — until the survivors rallied with fir trees and buried him in the earth. Ovid names five centaurs he slew — Styphelus, Bromus, Antimachus, Elymus, and Pyracmos — before Latreus mocked the Lapith and the whole brood drove their living pillar down under the weight of pine.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 1.22; Ov. Met. 12.459–532"
+    },
+    {
+      "title": "Driven from Pelium",
+      "text": "The Lapiths won the day. Homer remembers the aftermath in the Catalogue: on the day Peirithous got vengeance on the shaggy centaurs and thrust them from Pelium, glorious Hippodameia conceived Polypoetes to him — son whom Zeus begat, staunch in fight when Troy was besieged. The mountain that had housed Chiron and the wild brood would never again be wholly theirs; the centaur war entered art, epic, and the genealogies of Thessaly.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Il. 2.735–775; Apollod. 2.5.4"
+    }
+  ],
+  "cast": [
+    { "id": "peirithous", "name": "Peirithous", "role": "The Lapith bridegroom and king" },
+    { "id": "hippodameia-lapith", "name": "Hippodameia", "role": "The bride Eurytion tried to seize" },
+    { "id": "eurytion-centaur", "name": "Eurytion", "role": "The centaur whom wine maddened at the feast" },
+    { "id": "caeneus-lapith", "name": "Caeneus", "role": "The invulnerable Lapith buried under pines" },
+    { "id": "latreus-centaur", "name": "Latreus", "role": "The centaur who mocked Caeneus" },
+    { "id": "styphelus-centaur", "name": "Styphelus", "role": "One of five centaurs Caeneus slew" },
+    { "id": "pyracmos-centaur", "name": "Pyracmos", "role": "Centaur with the axe, slain by Caeneus" },
+    { "id": "dictys-centaur", "name": "Dictys", "role": "Centaur impaled on the ash tree" },
+    { "id": "petraeus-centaur", "name": "Petraeus", "role": "Centaur pinned by Peirithous' spear" },
+    { "id": "amycus-centaur", "name": "Amycus", "role": "First to spoil the wedding sanctuary" },
+    { "id": "gryneus-centaur", "name": "Gryneus", "role": "Centaur who hurled the blazing altar" },
+    { "id": "theseus", "name": "Theseus", "role": "The Athenian ally fighting with an axe" },
+    { "id": "chiron", "name": "Chiron", "role": "The just centaur of another lineage, not of the riot" },
+    { "id": "ixion", "name": "Ixion", "role": "Forefather of the wild centaur stock" },
+    { "id": "centauros", "name": "Centaurus", "role": "Progenitor of the cloud-born centaurs" },
+    { "id": "polypoetes-lapith", "name": "Polypoetes", "role": "Son born when centaurs were driven from Pelium" }
+  ],
+  "places": [
+    { "name": "Mount Pelion", "role": "The centaurs' mountain, lost in the war's wake" },
+    { "id": "athens", "name": "Athens", "role": "Where Pausanias saw the battle on a pediment" },
+    { "name": "Larissa", "role": "Peirithous' Thessalian kingdom" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "21.295–304" },
+    { "source": "homer", "work": "Iliad", "citation": "1.262–282, 2.735–775" },
+    { "source": "apollodorus", "work": "The Library", "citation": "Epitome 1.22" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "12.315–532" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.28.2" }
+  ]
+}

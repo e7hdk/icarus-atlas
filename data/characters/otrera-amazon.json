@@ -1,0 +1,36 @@
+{
+  "id": "otrera-amazon",
+  "name": "Otrera",
+  "greekName": "Otrēra (Ὀτρήρη)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Amazon queen",
+    "founder of Artemis' temple at Ephesus"
+  ],
+  "summary": [
+    {
+      "text": "An Amazon, wife of Ares, who first founded the temple of Diana at Ephesus — mother of Hippolyte and Penthesilea in Hyginus' catalogue.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 30, 112, 223, 225"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus records that Otrera, an Amazon and wife of Mars, first founded the temple of Diana at Ephesus — the sanctuary later counted among the wonders of the world.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 223, 225"
+    },
+    {
+      "text": "In the same author's Trojan roll Otrera appears as queen of the Amazons and mother by Mars of Hippolyte, whose belt Heracles took, and of Penthesilea, whom Achilles slew before the walls of Troy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 30, 112"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ephesus",
+      "sources": ["hyginus"]
+    }
+  ]
+}

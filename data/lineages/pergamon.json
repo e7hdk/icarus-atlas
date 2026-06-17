@@ -1,0 +1,19 @@
+{
+  "city": "pergamon",
+  "reigns": [
+    {
+      "ruler": "Teuthras",
+      "characterId": "teuthras-mysia",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.7.4, 3.9.1; Paus. 1.4.5",
+      "note": "Prince of Teuthrania, the old name of the country where Pergamon later stood."
+    },
+    {
+      "ruler": "Telephus",
+      "characterId": "telephus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.9.1",
+      "note": "Succeeded Teuthras as king of the Mysians after Delphi revealed his parentage."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "philoctetes-to-italy",
+  "title": "Philoctetes to Italy",
+  "greekTitle": "Φιλοκτήτης εἰς Ἰταλίαν",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.9088,
+  "summary": {
+    "text": "Philoctetes son of Poeas, leader of the Olizonians and keeper of Heracles' bow, sailed home from Troy with his company intact — one of the few unambiguous safe Returns — and Apollodorus sends him west to the Campanians in Italy, while Nestor at Pylos shares the honour of a nostos without poison.",
+    "sources": ["homer", "apollodorus", "hyginus"],
+    "citation": "Hom. Il. 2.716–728, Od. 3.185–225, 8.219–220; Apollod. Epit. 5.8, 6.15; Hyg. Fab. 116–120"
+  },
+  "chapters": [
+    {
+      "title": "Seven ships from Meliboea",
+      "text": "Homer names Philoctetes in the Catalogue of Ships — captain of seven companies from Methone, Thaumacia, Meliboea, and rugged Olizon, fifty bowmen on each deck, well skilled to fight amain with the bow. Yet when the Iliad opens he lies on sacred Lemnos in grievous pain, left behind after the water-snake's bite; Odysseus later admits that on Trojan soil none among the Achaeans surpassed him with the bow save the man the host had once cast away. The nested episode on the Little Iliad tells the fetch from Lemnos, the healing at the camp, and the death of Paris by the poisoned arrows of Heracles.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 2.716–728, Od. 8.219–220; Apollod. Epit. 3.27, 5.8"
+    },
+    {
+      "title": "The bow that ended the war",
+      "text": "When the oracle declared that Ilium could not fall without the bow and arrows of Heracles, Odysseus sailed with Diomedes to Lemnos — the same pair who would later steal the Palladium by night — and by craft and persuasion brought back the embittered archer and his indispensable weapons. Cured at Troy by Podalirius son of Asclepius, Philoctetes drew the great bow and shot Alexander, the thief of Helen whose guided arrow had brought down Achilles. Hyginus counts the kill in his Trojan roll; Apollodorus sets the Ida epilogue where Oenone refused to heal the dying prince. The man who had kindled Heracles' pyre on Oeta — or whose father Poeas had, in another telling — closed the prince's story with the gift the hero had earned at the flame.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 5.8; Bibliotheca 3.12.6; Hyg. Fab. 112"
+    },
+    {
+      "title": "Safely home",
+      "text": "When Telemachus came to sandy Pylos, Nestor told him what the Returns had brought. Safely, he said, came the Myrmidons whom Neoptolemus led; safely Philoctetes, the glorious son of Poias; and all Idomeneus' company reached Crete, the sea robbing him of none — though the nested episode on Idomeneus and Leucus tells how betrayal waited on the island. Of Agamemnon the young prince had heard from afar how the son of Atreus came home and how Aegisthus plotted his ruin. In that catalogue Philoctetes stands beside the one captain Nestor praises without reservation: both victors of Troy who crossed the sea without shipwreck, before the poisoned homecomings began.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.185–225"
+    },
+    {
+      "title": "Among the wrecked Returns",
+      "text": "Apollodorus' Nostoi count the ruin beside the safe. Agamemnon was murdered in the bath; the Locrian Ajax was wrecked on the Gyraean rocks for Cassandra's outrage; Diomedes found treachery at Argos; Menelaus was storm-driven toward Egypt; Calchas died at Colophon when Mopsus outprophesied him; Teucer was banished from Salamis to Cyprus; and Nauplius' false beacons had shattered fleets at Caphareus. Against that roll Philoctetes belongs among the victors who came through — Hyginus' catalogue sets him with those who reached home safely, not with the murdered or the exiled founders. The nested episodes on Agamemnon, the Locrian Ajax, Diomedes, Menelaus, Calchas, Idomeneus, and Teucer carry the poisoned Returns; here the archer keeps the bow that slew Paris and sails on when others founder.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.6–6.15; Hyg. Fab. 116–120"
+    },
+    {
+      "title": "The Campanians in Italy",
+      "text": "Apollodorus closes his catalogue of settlements after Troy with a single westward line: Philoctetes went to the Campanians in Italy. The phrase is thin beside Aeneas' Latin destiny or Diomedes' Adriatic exile, yet it fixes the archer's nostos not at Meliboea in Thessaly — the rugged coast Homer named when he mustered the Olizonians — but among the peoples of the Italian plain. Whether the Campanians received him as colonist, ally, or king the Epitome does not say; only that the man who had been abandoned on Lemnos and fetched back to slay Paris ended his Return in the west, honour intact and company unbroken. Nestor kept Pylos; Philoctetes kept the bow — and Italy received the one safe king the Epic Cycle sends beyond Hellas.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. Epit. 6.15"
+    }
+  ],
+  "cast": [
+    { "id": "philoctetes", "name": "Philoctetes", "role": "Archer of the bow of Heracles, safe Return to Italy" },
+    { "id": "odysseus", "name": "Odysseus", "role": "He who fetched him from Lemnos" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Partner in the Lemnos voyage" },
+    { "id": "paris", "name": "Paris", "role": "Slain by the poisoned arrows" },
+    { "id": "nestor", "name": "Nestor", "role": "He who counted him among the safe Returns" },
+    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Fellow victor named beside him at Pylos" },
+    { "id": "idomeneus", "name": "Idomeneus", "role": "Captain whose sea crossing was also unrobbed" },
+    { "id": "heracles", "name": "Heracles", "role": "Donor of the bow on Oeta" },
+    { "name": "Poeas", "role": "Father who lit the pyre in Apollodorus' telling" },
+    { "name": "Podalirius", "role": "Healer at Troy who cured the Lemnian wound" }
+  ],
+  "places": [
+    { "id": "lemnos", "name": "Lemnos", "role": "Where he was abandoned and fetched back" },
+    { "id": "troy", "name": "Troy", "role": "Where he slew Paris with Heracles' bow" },
+    { "name": "Campania", "role": "Italian land of the Campanians who received him" },
+    { "name": "Meliboea", "role": "Thessalian coast Homer named as his muster-place" },
+    { "id": "pylos", "name": "Pylos", "role": "Where Nestor counted him among the safe" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "2.716–728" },
+    { "source": "homer", "work": "Odyssey", "citation": "3.185–225, 8.219–220" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.27, 5.8, 6.15" },
+    { "source": "apollodorus", "work": "Bibliotheca", "citation": "3.12.6" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "112, 116–120" }
+  ]
+}

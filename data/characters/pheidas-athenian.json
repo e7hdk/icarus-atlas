@@ -1,0 +1,28 @@
+{
+  "id": "pheidas-athenian",
+  "name": "Pheidas",
+  "greekName": "Pheidas (Φείδας)",
+  "type": "hero",
+  "domains": ["Athenian captain", "leader of the picked men"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Athenians who followed Menestheus son of Peteos among the picked men of the host when the battle raged at the ships — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the wall was breached, Menestheus led the picked Athenians like a flame of fire, and there followed Pheidas and Stichius and valiant Bias in the press of fighters at the ships of Ajax and Protesilaus.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "adrastus-trojan",
+  "name": "Adrastus",
+  "greekName": "Adrastos (Ἄδραστος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Patroclus' first target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Patroclus laid low first when the gods called him deathward in the counter-rout before the wall — distinct from the Argive king of the Seven (`adrastus`), from Adrastus son of Merops (`adrastus-meropsid`), and from the Trojan whom Menelaus took captive in *Iliad* 6.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then whom first, whom last didst thou slay, Patroclus, when the gods called thee deathward? Adrastus first, and Autonous, and Echeclus, and Perimus son of Megas, and Epistor, and Melanippus, and thereafter Elasus, and Mulius, and Pylartes: these he slew, and the others bethought them each man of flight.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

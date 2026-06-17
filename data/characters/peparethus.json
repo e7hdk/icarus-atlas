@@ -1,0 +1,36 @@
+{
+  "id": "peparethus",
+  "name": "Peparethus",
+  "greekName": "Peparethos (Πεπάρηθος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Dionysus and Ariadne",
+    "eponym of Peparethos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Dionysus and Ariadne, born on Lemnos after the god carried the Cretan princess from Naxos — his name lives in Peparethos, the olive-rich isle of the Northern Sporades.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 1.9; Metamorphoses 7.731–882"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Dionysus fell in love with Ariadne and carried her off, he brought her to Lemnos and begat Thoas, Staphylus, Oenopion, and Peparethus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.9"
+    },
+    {
+      "text": "Ovid names Peparethos among the Cycladic and Sporades isles that gave no aid to Minos when he sailed against Oenopia — the olive-bearing island that bears Peparethus' name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 7.731–882"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

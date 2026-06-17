@@ -1,0 +1,43 @@
+{
+  "id": "ceraus-dulichium",
+  "name": "Ceraus",
+  "greekName": "Keraos (Κέραος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "The last-named suitor in Apollodorus' catalogue of the fifty-seven wooers from Dulichium of Penelope's wooers — attested only in Epitome 7.27 among those who came against Odysseus' house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus closes his long list of suitors with Ceraus, after Polypoetes and the many wooers who devoured Odysseus' substance in Ithaca.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

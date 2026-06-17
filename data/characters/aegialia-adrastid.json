@@ -1,0 +1,62 @@
+{
+  "id": "aegialia-adrastid",
+  "name": "Aegialia",
+  "greekName": "Αἰγιάλεια",
+  "romanName": "Aegialeia",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argive queenship",
+    "Diomedes' return from Troy",
+    "adultery and exile"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of the house of Adrastus who became wife of Diomedes after he inherited Argos; Homer names her Aegialeia, daughter of Adrastus, while Apollodorus records a rival claim that she was the daughter of Aegialeus instead.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 5.408–415; Bibliotheca 1.8.6, 1.9.13"
+    },
+    {
+      "text": "When Diomedes returned from Troy, she took Cometes son of Sthenelus as lover — in Nauplius' scheme to punish the Greeks for Palamedes — and with the Argives barred her husband from the city.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Aegialia among the three daughters Adrastus had by Amphithea, together with Argia and Deipyle. When Diomedes came home from the Epigoni's war, buried his grandfather Oeneus, and took the Argive throne after Adrastus died of grief for Aegialeus, he married Aegialia to secure his kingship — though the same author adds that some made her not Adrastus' daughter but Aegialeus'.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.8.6, 1.9.13"
+    },
+    {
+      "text": "Homer knows her in the heat of battle at Troy. When Diomedes rages against the Trojans, Hera sends Iris to warn Ares that his son may be slain — and names the wife who would wake all Argos with lament: Aegialeia, stately daughter of Adrastus, wife of horse-taming Diomedes.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 5.408–415"
+    },
+    {
+      "text": "The homecoming turned to exile. In Apollodorus' Epitome, Nauplius — avenging Palamedes — spread false news among the Greek wives while he coasted along Hellas; Aegialia took Cometes, son of Sthenelus, as lover, as Clytemnestra took Aegisthus and Meda betrayed Idomeneus. With the Argives' help she kept Diomedes from entering the city, and he fled by night.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    }
+  ]
+}

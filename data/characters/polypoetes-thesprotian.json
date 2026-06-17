@@ -1,0 +1,32 @@
+{
+  "id": "polypoetes-thesprotian",
+  "name": "Polypoetes",
+  "greekName": "Polypoietes (Πολυποίτης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Odysseus",
+    "Thesprotian kingship"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' post-Homeric continuation, the son whom Odysseus begot on Callidice queen of the Thesprotians and left to inherit the kingdom when Callidice died — not to be confused with Polypoetes the Dulichian suitor (Epitome 7.27) or Polypoetes son of Peirithous at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus reports that Callidice bore Odysseus a son Polypoetes while the king of Ithaca reigned among the Thesprotians. When Callidice died, Odysseus handed the kingdom to this son and repaired to Ithaca.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35",
+      "topic": "odysseus-thesprotian-kingship"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cichyrus",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

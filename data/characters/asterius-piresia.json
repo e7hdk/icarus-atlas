@@ -1,0 +1,33 @@
+{
+  "id": "asterius-piresia",
+  "name": "Asterius",
+  "greekName": "Asterios (Ἀστέριος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Piresia in Thessaly",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Argonaut from Piresia at the foot of Mount Phylleus, son of Hyperasius — paired with Asterion in the catalogues.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.35; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus and Apollonius number Asterius among the Thessalian Minyae who sailed from Pagasae; Hyginus sets him at Piresia where the Apidanus and Enipeus meet.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.35; Fabulae 14"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "dolon",
+  "name": "Dolon",
+  "greekName": "Dolōn (Δόλων)",
+  "type": "mortal",
+  "domains": ["espionage", "swift foot", "the night raid"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Eumedes the godlike herald, the only brother among five sisters — ill-favoured but swift of foot, who volunteered to spy on the Achaean ships for Hector's promise of Achilles' horses, and was caught and slain by Odysseus and Diomedes on the plain.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.299–464"
+    }
+  ],
+  "story": [
+    {
+      "text": "Among the Trojans was Dolon, rich in gold and bronze, ill-favoured to look upon but swift of foot — the only brother among five sisters. When Hector asked who would go forth as spy to the Achaean ships, promising as reward the horses of Achilles, Dolon alone stood forth. He cast about his shoulders his curved bow, clad himself in the skin of a grey wolf, set a cap of ferret skin on his head, and took a sharp javelin, going toward the ships while the rest of the host slept.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.299–370"
+    },
+    {
+      "text": "Odysseus saw him pass and told Diomedes; they lay in ambush among the dead until Dolon came abreast of them, then gave chase. Dolon stood terror-stricken, stammering, pale, his teeth chattering. He begged to be taken alive for a great ransom — his father Eumedes in Troy had store of gold and bronze and iron, and would pay whatever was asked if he learned his son lived among the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.375–410"
+    },
+    {
+      "text": "Before he died he told them all: Hector and the counsellors held council by the tomb of Ilus; the Thracians, new comers and outermost of all, lay apart under their king Rhesus son of Eïoneus, with horses whiter than snow and chariot wrought with gold and silver. Diomedes struck off his head with the sword; they hung his spoils on an oak for Athene, then went on toward the Thracian camp.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.415–464"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

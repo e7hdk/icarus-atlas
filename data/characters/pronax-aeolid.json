@@ -1,0 +1,47 @@
+{
+  "id": "pronax-aeolid",
+  "name": "Pronax",
+  "greekName": "Πρόναξ",
+  "romanName": "Pronax",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Biantid royalty",
+    "Aeolid descent"
+  ],
+  "summary": [
+    {
+      "text": "A son of Talaus in the Biantid house, Pronax was father of Amphithea — whom Adrastus married — and of Lycurgus, who quarrelled with Amphiaraus before the march on Thebes.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13; Description of Greece 3.18.12"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Pronax among the children Talaus begot on Lysimache, in the same breath as Adrastus, Mecisteus, Aristomachus, and Eriphyle. Of Pronax he records only that he had a son Lycurgus; of Adrastus, that he married Amphithea, daughter of Pronax — so the Argive king wed his brother's daughter and the Theban war was bound into a single kindred.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.1"
+    },
+    {
+      "text": "Pausanias saw the feud remembered in paint. At Delphi, Polygnotus showed Amphiaraus and Lycurgus son of Pronax coming to blows while Adrastus and Tydeus held them apart — the quarrel of the seer who foresaw disaster and the prince whose sister's marriage had tied him to the expedition.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.18.12"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

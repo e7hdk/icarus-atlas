@@ -1,0 +1,28 @@
+{
+  "id": "phaenops-trojan",
+  "name": "Phaenops",
+  "greekName": "Phainops (Φαίνοψ)",
+  "type": "hero",
+  "domains": ["father of Xanthus and Thoön", "Trojan ally", "done with old age"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan ally fordone with grievous old age, father of Xanthus and Thoön (`xanthus-phaenopid`, `thoon-phaenopid`) — the only sons he begat to leave in charge of his possessions before Diomedes bereft him of both — distinct from Phaenops father of the Phorcys whom Ajax smote in *Iliad* 17 and from Asius' guest-friend at Abydus.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Diomedes raged among the allies, he went on after Xanthus and Thoön, sons twain of Phaenops, and both well beloved; and their father was fordone with grievous old age, and begat no other son to leave in charge of his possessions. There Diomedes slew them, and bereft them of dear life, both the twain; but for the father he left lamentation and grievous sorrow.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

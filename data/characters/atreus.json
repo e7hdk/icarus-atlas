@@ -35,5 +35,11 @@
       "sources": ["pausanias"],
       "citation": "Description of Greece 2.18.1"
     }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": ["apollodorus", "pausanias", "hyginus"]
+    }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "euryalus-ithaca",
+  "name": "Euryalus",
+  "greekName": "Euryalos (Εὐρύαλος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — distinct from `euryalus-zacynthus` in Epitome 7.29 and from the Phaeacian boxer Euryalus at Alcinous' games.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Euryalus among the suitors who devoured Odysseus' substance, listed after Amphimachus and before Paralus in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "Apollodorus lists another Euryalus among the wooers from Zacynthus in Epitome 7.29 — see `euryalus-zacynthus`. Neither is the Phaeacian prince who boxed with Odysseus at Alcinous' games.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 7.29; Odyssey 8.165–235"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

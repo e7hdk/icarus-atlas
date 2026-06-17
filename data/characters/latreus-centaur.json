@@ -1,0 +1,41 @@
+{
+  "id": "latreus-centaur",
+  "name": "Latreus",
+  "greekName": "Latreus (Λάτρευς)",
+  "romanName": "Latreus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war",
+    "Emathian spoil"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A huge centaur who stripped and killed the Emathian Halesus, then mocked Caeneus until the Lapith drove him back in the wedding battle.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Caeneus had slain five centaurs, Latreus — huge of limb, grey-templed but still in the vigor of youth — came rushing out in the armor stripped from Halesus of Emathia. He mocked Caeneus, once a woman, and the fight between them raged until the centaur brood at last buried the invulnerable Lapith under massy pines.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    },
+    {
+      "text": "Homer names a different Latreus among the Phaeacian youths in the Odyssey — not this Thessalian centaur of Ovid's wedding war.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 8.85–120"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

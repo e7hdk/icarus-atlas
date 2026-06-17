@@ -1,0 +1,31 @@
+{
+  "id": "promachus-ithaca",
+  "name": "Promachus",
+  "greekName": "Promachos (Πρόμαχος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "One of the twelve suitors from Ithaca in Apollodorus' catalogue — a homonym distinct from Promachus son of Parthenopaeus among the Epigoni, Jason's infant brother slain by Pelias, and the Boeotian namesake at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Promachus among the twelve wooers specifically from Ithaca itself, named alongside Antinous, Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Amphimedon, Aristratus, Helenus, Dulicheus, and Ctesippus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

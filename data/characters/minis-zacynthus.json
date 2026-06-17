@@ -1,0 +1,35 @@
+{
+  "id": "minis-zacynthus",
+  "name": "Minis",
+  "greekName": "Minis (Μίνις)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Minis among the wooers who came from Zacynthus, listed after Indius and before Liocritus in the Epitome catalogue of Penelope's suitors.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

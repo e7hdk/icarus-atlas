@@ -1,0 +1,116 @@
+{
+  "id": "nostoi",
+  "title": "The Nostoi",
+  "greekTitle": "Νόστοι",
+  "kind": "episode",
+  "parent": "trojan-cycle",
+  "era": 8.9,
+  "summary": {
+    "text": "The Returns — when Troy was ash, the victors sailed home to treachery and storm: Agamemnon murdered in his bath, Nestor safe at Pylos, Menelaus storm-driven to Egypt, Diomedes barred from Argos, the Locrian Ajax wrecked for Cassandra's outrage, Neoptolemus overland to Epirus, and Odysseus still lost when the others landed.",
+    "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+    "citation": "Hom. Od. 3–4, 11.385–434; Apollod. Epit. 6; Hyg. Fab. 116–123; Paus. 1.3.2, 4.17.4"
+  },
+  "chapters": [
+    {
+      "title": "Nauplius and the false beacons",
+      "text": "Not all the ruin came from within the houses. Nauplius, avenging his son Palamedes whom the Greeks had stoned on Odysseus' accusation, coasted along Hellas spreading false news of the victors' deaths — and where the fleets approached his shores he kindled misleading beacon-fires on the cliffs, so that many ships were driven onto the rocks in the dark. The nested episode on Nauplius' vengeance tells the stoning, the corruption of the heroes' wives, and the wreck on Caphareus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.7–6.11; Hyg. Fab. 116"
+    },
+    {
+      "title": "Agamemnon's murder",
+      "text": "Agamemnon sailed first to Mycenae, bringing the Trojan spoils and the prophetess Cassandra. Clytemnestra welcomed him with a feast and cut him down in the bath — the nested episodes at Mycenae tell the king's murder, Cassandra's death beside him, and the Oresteia that followed.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 11.385–434; Apollod. Epit. 6.23; Hyg. Fab. 117–119",
+      "topic": "agamemnon-murder-agency"
+    },
+    {
+      "title": "Nestor's safe harbour",
+      "text": "Nestor son of Neleus came without mishap to sandy Pylos, and all his company with him — the one great homecoming the poets tell without poison. The nested episode on Nestor at Pylos tells the voyage from Troy with Diomedes, the catalogue of the other captains' ruin, and the counsel he would later give Telemachus on the shore.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 3.1–3.487"
+    },
+    {
+      "title": "Menelaus and the detour",
+      "text": "Menelaus was storm-driven to Egypt and the coasts of Libya before he reached Sparta with Helen — eight years wandering, as he told Telemachus in his hall, while Proteus the Old Man of the Sea revealed that Odysseus still lived detained on Calypso's isle. The nested episode on Menelaus in Egypt tells Sunium, Pharos, the binding of Proteus, the phantom Helen at Proteus' court, and the hall at Sparta while Agamemnon's blood dried at Mycenae.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 4.81–4.356; Apollod. Epit. 6.18, 6.29"
+    },
+    {
+      "title": "Diomedes and Aegialia",
+      "text": "Diomedes reached Argos to find his wife Aegialia had taken Cometes son of Sthenelus as lover — Nauplius' false tidings and the general corruption of the returns at work. The nested episode on the Exile of Diomedes tells the barred gates, the flight by night, and the westward kingdoms.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. Epit. 6.9"
+    },
+    {
+      "title": "The Locrian Ajax",
+      "text": "Swift Ajax son of Oileus had dragged Cassandra from Athena's image at the sack — an outrage the goddess never forgave. The nested episode on the Locrian Ajax tells the sacrilege, Athena's thunderbolt, the Gyraean rocks, and Thetis' burial on Myconos; the captain who had been first to run for Patroclus' body never saw home.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 5.22, 6.6; Hyg. Fab. 116; Paus. 10.31.1"
+    },
+    {
+      "title": "Neoptolemus to Epirus",
+      "text": "Neoptolemus alone of the chiefs in the horse came home unscathed from Troy, Odysseus tells Achilles' shade. The nested episode on Neoptolemus to Epirus tells Thetis' warning at Tenedos, the overland march with Helenus, Andromache and the Molossian kingdom, and the altar-death at Delphi over Hermione.",
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Hom. Od. 11.505–537; Apollod. Epit. 6.5, 6.12–6.14; Hyg. Fab. 123; Paus. 1.11.1"
+    },
+    {
+      "title": "Philoctetes and the lesser kings",
+      "text": "Philoctetes returned safely with the bow that had slain Paris and went to the Campanians in Italy; Idomeneus found Crete usurped by Leucus, Teucer was banished to Cyprus, and Calchas died at Colophon when Mopsus outprophesied him. The nested episode on Philoctetes to Italy tells the safe Return and the westward settlement; the nested episode on Idomeneus and Leucus tells Meda and the ten cities; the nested episode on Teucer to Cyprus tells Telamon's expulsion and the second Salamis; the nested episode on Calchas at Colophon tells the fig-tree and the pregnant sow; the nested episode on the Lesser Returns carries Apollodorus' catalogue of the other colonists.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 6.8, 6.10, 6.15, 6.19; Hyg. Fab. 116–120; Paus. 1.3.2"
+    },
+    {
+      "title": "Aeneas and the long wanderer",
+      "text": "Aeneas carried his father from the burning city and, in the Latin tradition Apollodorus summarises, came to Italy after long wandering — seed of the Romans. The nested episode on Aeneas to Italy tells the westward destiny; of all the kings who took Troy, only Odysseus' homecoming would fill a poem unto itself.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Apollod. Epit. 6.20; Hom. Od.; Hyg. Fab. 120"
+    }
+  ],
+  "cast": [
+    { "id": "agamemnon", "name": "Agamemnon", "role": "King murdered at home" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "The axe in the bath" },
+    { "id": "aegisthus", "name": "Aegisthus", "role": "The lover who shared the murder" },
+    { "id": "orestes", "name": "Orestes", "role": "The avenger to come" },
+    { "id": "electra", "name": "Electra", "role": "She who saved the infant prince" },
+    { "id": "cassandra", "name": "Cassandra", "role": "Prize who died with Agamemnon" },
+    { "id": "iphigenia", "name": "Iphigenia", "role": "The sacrifice remembered in the murder" },
+    { "id": "nestor", "name": "Nestor", "role": "He who reached Pylos safely" },
+    { "id": "menelaus", "name": "Menelaus", "role": "The long-delayed homecoming" },
+    { "id": "helen", "name": "Helen", "role": "Returned to Sparta at last" },
+    { "id": "proteus", "name": "Proteus", "role": "Seer who told of Odysseus in Egypt" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Warrior who found treachery at Argos" },
+    { "id": "aegialia-adrastid", "name": "Aegialia", "role": "Wife who took another lover" },
+    { "id": "ajax-oileus", "name": "Ajax the Locrian", "role": "Wrecked for Cassandra's outrage" },
+    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Unscathed from Troy, king in Epirus" },
+    { "id": "andromache", "name": "Andromache", "role": "Hector's widow, his prize" },
+    { "id": "helenus", "name": "Helenus", "role": "Seer who guided him overland" },
+    { "id": "philoctetes", "name": "Philoctetes", "role": "Archer who came home with the bow" },
+    { "id": "idomeneus", "name": "Idomeneus", "role": "Cretan king driven into exile" },
+    { "id": "teucer", "name": "Teucer", "role": "Banished to Cyprus" },
+    { "id": "aeneas", "name": "Aeneas", "role": "He who fled toward Italy" },
+    { "id": "anchises", "name": "Anchises", "role": "Father carried from the flames" },
+    { "id": "nauplius-amymone", "name": "Nauplius", "role": "Avenger of Palamedes with false beacons" },
+    { "id": "palamedes", "name": "Palamedes", "role": "Stoned at Troy; his death poisoned the Returns" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Still lost when the others landed" },
+    { "id": "pylades", "name": "Pylades", "role": "Companion of the vengeance to come" }
+  ],
+  "places": [
+    { "id": "mycenae", "name": "Mycenae", "role": "Where Agamemnon was slain" },
+    { "id": "pylos", "name": "Pylos", "role": "Nestor's safe harbour" },
+    { "id": "sparta", "name": "Sparta", "role": "Menelaus' delayed destination" },
+    { "id": "argos", "name": "Argos", "role": "Diomedes' troubled return" },
+    { "id": "knossos", "name": "Crete", "role": "Idomeneus' kingdom and exile" },
+    { "id": "salamis", "name": "Salamis", "role": "Teucer denied his father's seat" },
+    { "id": "salamis-cyprus", "name": "Salamis of Cyprus", "role": "Teucer's second founding" },
+    { "id": "buthrotum", "name": "Buthrotum", "role": "Neoptolemus' path through Epirus" },
+    { "name": "Egypt", "role": "Where Menelaus wandered eight years" },
+    { "name": "Gyraean rocks", "role": "Where the Locrian Ajax was wrecked" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "3–4, 11.385–537" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "6" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "116–123" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.3.2, 1.11.1, 4.17.4" }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "medea-colchis",
+  "name": "Medea",
+  "greekName": "Mēdeia (Μήδεια)",
+  "romanName": "Medea",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "witchcraft and sorcery",
+    "priestess of Hecate",
+    "daughter of Aeetes",
+    "the Golden Fleece"
+  ],
+  "summary": [
+    {
+      "text": "Neat-ankled daughter of Aeetes and Idyia the Oceanid, witch-princess of Colchis and priestess of Hecate, who loved Jason, won him the Golden Fleece by her drugs and counsel, fled her father's pursuit by slaying her brother Apsyrtus, and later wrought vengeance on Pelias and on Jason himself at Corinth.",
+      "sources": ["hesiod", "apollodorus", "apollonius"],
+      "citation": "Theogony 956–961; Bibliotheca 1.9.23–28; Argonautica 3.210, 3.241"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names her only as the child of the Colchian marriage: Aeetes son of Helios wedded fair-cheeked Idyia, daughter of Ocean, and by her begot neat-ankled Medea — the witch who would leave the eastern house for the Argonaut captain.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 956–961"
+    },
+    {
+      "text": "Apollonius makes her Hecate's priestess in Aea, busied all day in the goddess's temple until Hera detained her within the palace on the day Jason came. Eros struck her with desire; she promised Jason the bulls and the fleece if he would swear to wed her and carry her home, and by night rites at Hecate's pit she brewed the charms that let him yoke the brazen-footed bulls and lull the unsleeping dragon.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.1, 3.210, 3.241, 3.705–724, 3.1025–1041, 3.1211"
+    },
+    {
+      "text": "Apollodorus tells the flight in bare horror: when Aeetes learned what his daughter had done for the stranger, he pursued the Argo; Medea murdered her brother and, cutting him limb from limb, cast the pieces into the deep so that the king, gathering the child's limbs, fell behind in the chase. At Corcyra, Arete the queen married her to Jason before the Colchians could demand her back.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.24–25",
+      "topic": "apsyrtus-death"
+    },
+    {
+      "text": "In Iolcus she became the instrument of Jason's vengeance on Pelias: she persuaded the king's daughters to mince and boil their father, promising to renew his youth with her drugs — and to win their trust she cut up an old ram, cast the pieces into a cauldron with her charms, and drew forth a lamb.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.27; Metamorphoses 7.487–568"
+    },
+    {
+      "text": "At Corinth Jason lived with her happily for ten years until he betrothed himself to Glauce, daughter of Creon, and divorced Medea. She invoked the gods by whom he had sworn and sent the bride a poisoned robe that consumed Glauce and her father in fierce fire, then fled on a chariot drawn by winged dragons.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28"
+    },
+    {
+      "text": "Apollodorus records two fates for the sons she had borne Jason at Corinth: some say Medea herself killed the children when she fled, while another tradition has her leave them still infants as suppliants on the altar of Hera of the Height, where the Corinthians removed them and wounded them to death.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28",
+      "topic": "medea-children-corinth"
+    },
+    {
+      "text": "Pausanias saw their tomb above the Well of Glauce at Corinth and named them Mermerus and Pheres, stoned by the Corinthians because of the gifts Medea sent to Glauce; he also records Eumelus' tale that she hid each newborn in Hera's sanctuary hoping for immortality until Jason detected her — and Cinaethon's verse that named a son Medeus and a daughter Eriopis instead.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.6–11, 2.3.9",
+      "topic": "medea-children-corinth"
+    },
+    {
+      "text": "Ovid adds the renewal of Aeson: at Jason's plea she laid the aged father in a deathlike sleep, drained his worn blood, and filled his veins with a brewed elixir so that youth returned to the old man. Later, wedded to Aegeus at Athens, she plotted against the unrecognized Theseus and would have poisoned him had the king not dashed the cup away when he saw his own sword.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 7.271–399, 7.658–730; Epitome 1.5–1.6"
+    },
+    {
+      "text": "Apollodorus closes the eastern arc at Colchis: Medea came unknown to her father's land and found Aeetes deposed by his brother Perses; she killed Perses and restored the kingdom to Aeetes — while Hyginus' oracle had warned that same usurper to beware death from Aeetes' descendants.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Fabulae 27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["hesiod", "apollodorus", "apollonius"]
+    },
+    {
+      "city": "corcyra",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "corinth",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

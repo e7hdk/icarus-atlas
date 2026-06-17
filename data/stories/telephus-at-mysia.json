@@ -1,0 +1,75 @@
+{
+  "id": "telephus-at-mysia",
+  "title": "Telephus at Mysia",
+  "greekTitle": "Τήλεφος ἐν Μυσίᾳ",
+  "kind": "episode",
+  "parent": "cypria",
+  "era": 7.958,
+  "summary": {
+    "text": "Blown off course, the Achaeans landed in Mysia thinking it was Troy and ravaged Teuthrania. Telephus son of Heracles, king of the Mysians, wounded Achilles with his spear, cut down Thersander the Theban king, and drove the host back to their ships — until the same spear's rust healed him and he guided the fleet to the true Troad.",
+    "sources": ["apollodorus", "homer", "hyginus", "pausanias"],
+    "citation": "Apollod. Epit. 3.17, Bibliotheca 2.7.4; Hom. Il. 4.404–410; Hyg. Fab. 101; Paus. 1.4.5, 9.5.14"
+  },
+  "chapters": [
+    {
+      "title": "Son of Heracles in Teuthrania",
+      "text": "Telephus was born of Heracles and Auge, priestess of Athena at Tegea — exposed on Mount Parthenion and suckled by a doe, or cast abroad with his mother until she came to Teuthras, prince of Teuthrania in Mysia. Apollodorus makes Teuthras adopt the youth and give him the Mysian throne; Pausanias knows the country above the Caicus as Teuthrania of old, the land that would become Pergamon. When the Greek fleet first sailed for Troy, it was Telephus' kingdom they would mistake for Ilion — and the son of Heracles who would turn them back from the shore.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.7.4; Paus. 1.4.5"
+    },
+    {
+      "title": "The mistaken landing",
+      "text": "The Achaeans, sailing from Aulis after the winds rose, landed in Mysia and pillaged the country, believing they had reached the Troad. Apollodorus sets the error in the Cypria's opening campaigns: the host that had sworn at Sparta and paid at Aulis now ravaged a friendly coast. Telephus, seeing his land plundered, armed the Mysians and chased the Greeks in a crowd to the ships, killing many before the princes understood their mistake. Homer remembers the Mysian detour when the wounded Menelaus tells how he stood against Eurypylus son of Telephus — proof that the first war was fought against the wrong king.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.17; Hom. Od. 11.519–520, Il. 4.404–410"
+    },
+    {
+      "title": "Thersander falls",
+      "text": "Among the slain was Thersander, son of Polynices and king of Thebes after the Epigonoi took the seven-gated city. He had made a stand against the Mysians — the Theban house that had sent its own expeditionary kings to Troy now lost its ruler before the true siege began. Pausanias ties Thersander to the Boeotian tradition; Apollodorus names him explicitly in the Mysian slaughter. Thebes would send another captain to Troy, but the man who ruled after the Epigonoi never saw the Scaean Gate.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 3.17, Bibliotheca 3.7.2; Paus. 9.5.14"
+    },
+    {
+      "title": "Achilles wounded",
+      "text": "When Achilles rushed at Telephus, the Mysian king did not abide the onset and was pursued. In the pursuit he was entangled in a vine-branch and wounded in the thigh with Achilles' spear — the same Pelian ash that would slay Hector and Paris in seasons to come. The wound would not heal: Apollo told Telephus that he who wounded him must turn physician. The Cypria's first duel between the best of Achaea and the son of Heracles ended not in death but in a curse that would bring the Mysian king to Argos as a beggar before the fleet could sail true for Troy.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.17; Hyg. Fab. 101"
+    },
+    {
+      "title": "Rust from the Pelian spear",
+      "text": "Telephus came from Mysia to Argos clad in rags and begged Achilles' help, promising to show the course to Troy if he were healed. Achilles scraped rust from the spear that had wounded him and cured the thigh — the oracle fulfilled, ho trōsas iasetai, he who wounded shall heal. In return Telephus guided the Greek fleet to the true Troad. The episode filled lost tragedies by Aeschylus, Sophocles, and Euripides; the Pergamon altar would carve the Mysian battles and the healing across its frieze when Telephus became the mythical founder of the city that bore his name.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.17; Hyg. Fab. 101"
+    },
+    {
+      "title": "Toward the true voyage",
+      "text": "With Telephus' guidance the host corrected its course — the detour that had cost Thersander and bloodied Mysia now became the path to Ilion. Eurypylus son of Telephus would fight for Troy in the war's later years and fall to Neoptolemus, as Menelaus recalls in the Odyssey's catalogue of champions. The nested episode on Protesilaus at Troy tells who first leapt ashore when the corrected fleet reached the Troad — and Thetis' warning that the first to land would be the first to die.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.29–3.30; Hom. Od. 11.519–520"
+    }
+  ],
+  "cast": [
+    { "id": "telephus", "name": "Telephus", "role": "King of Mysia, wounded and healed by Achilles' spear" },
+    { "id": "achilles", "name": "Achilles", "role": "He who wounded and cured him" },
+    { "id": "thersander", "name": "Thersander", "role": "Theban king slain in the Mysian battle" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host that landed by mistake" },
+    { "id": "eurypylus-telephus", "name": "Eurypylus", "role": "Son of Telephus who would fight for Troy" },
+    { "id": "heracles", "name": "Heracles", "role": "Father of the Mysian king" },
+    { "name": "Teuthras", "role": "Prince of Teuthrania who reared Telephus" },
+    { "name": "Auge", "role": "Mother of Telephus, priestess of Athena" }
+  ],
+  "places": [
+    { "id": "pergamon", "name": "Pergamon", "role": "Teuthrania of old, Telephus' Mysian kingdom" },
+    { "name": "Mysia", "role": "Coast mistaken for the Troad" },
+    { "id": "thebes", "name": "Thebes", "role": "Kingdom of Thersander, lost its ruler at Mysia" },
+    { "id": "troy", "name": "Troy", "role": "The true destination Telephus guided them toward" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.17" },
+    { "source": "apollodorus", "work": "Bibliotheca", "citation": "2.7.4" },
+    { "source": "homer", "work": "Iliad", "citation": "4.404–410" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.519–520" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "101" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.4.5, 9.5.14" }
+  ]
+}

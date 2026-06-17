@@ -1,0 +1,48 @@
+{
+  "id": "leiodes-ithaca",
+  "name": "Leiodes",
+  "greekName": "Leiōdēs (Λειώδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor soothsayer",
+    "son of Oenops",
+    "first to try the bow",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "Son of Oenops and soothsayer to the suitors on Ithaca — the one wooer who hated their wanton folly, sat by the mixing-bowl in the innermost hall, and was first to try Penelope's bow before Antinous mocked him and Odysseus cut him down in the slaughter.",
+      "sources": ["homer"],
+      "citation": "Odyssey 21.120–200; 22.310–329"
+    },
+    {
+      "text": "Named as Liodes among the twelve suitors from Ithaca itself in Apollodorus' catalogue — the same figure Homer calls Leiodes.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Antinous proposed that each suitor try the bow in order from the wine-pourer's place, Leiodes rose first. Deeds of wanton folly were hateful to him alone among the wooers; he was their diviner and ever sat in the innermost part of the hall by the fair mixing-bowl. He took the bow, failed to string it, and sat down again — and Antinous rebuked him with cruel words about his mother who had reared a coward.",
+      "sources": ["homer"],
+      "citation": "Odyssey 21.120–200"
+    },
+    {
+      "text": "When Odysseus revealed himself and the hall ran with blood, Leiodes clasped his knees and begged for mercy, swearing he had never wronged any woman in the house and had tried to restrain the rest. Odysseus answered that a soothsayer who prayed among such company could not escape his fate, and struck off his head with the sword.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.310–329"
+    },
+    {
+      "text": "Apollodorus names Liodes among the twelve wooers of Penelope who came from Ithaca itself, listed after Pronous and before Eurynomus — the Leiodes whom Homer makes the suitors' diviner and the first to try the bow.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.30; Odyssey 21.120–200"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

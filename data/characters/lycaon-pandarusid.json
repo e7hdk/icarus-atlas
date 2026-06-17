@@ -1,0 +1,33 @@
+{
+  "id": "lycaon-pandarusid",
+  "name": "Lycaon",
+  "greekName": "Lykaon (Λυκάων)",
+  "type": "hero",
+  "domains": ["father of Pandarus", "lord of Zeleia", "the Troes of Ida"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Pandarus, lord of the Troes who dwelt in Zeleia beneath the nethermost foot of Ida and drank the dark water of Aesepus — distinct from the Arcadian king (`lycaon`) and from Priam's son slain at the river (`lycaon-trojan`).",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 4.85–125; Epitome 4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue the Troes from Zeleia, men of wealth by the streams of Aesepus, were led by the glorious son of Lycaon, Pandarus, to whom Apollo himself gave the bow.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 4.1"
+    },
+    {
+      "text": "When the truce was set and Alexander fought Menelaus, Athene came to the Trojan ranks in the likeness of Laodocus son of Antenor, found Lycaon's son peerless and stalwart, and bade Pandarus shoot at Menelaus that the oath might be broken.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.85–125"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

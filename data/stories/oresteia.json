@@ -1,0 +1,92 @@
+{
+  "id": "oresteia",
+  "title": "The Oresteia",
+  "greekTitle": "Ὀρέστεια",
+  "kind": "episode",
+  "parent": "agamemnon-murder",
+  "era": 8.91,
+  "summary": {
+    "text": "Electra saved the infant Orestes and sent him to Strophius in Phocis, where he grew beside Pylades. In the eighth year — so Homer tells — the son returned and killed Aegisthus; Apollodorus adds the slaying of Clytemnestra, the madness and pursuit of the Erinyes, acquittal at the Areopagus through Apollo and Athena, the rescue of Iphigenia from Tauris, and the disputed marriages that restored the Pelopid thrones.",
+    "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+    "citation": "Hom. Od. 1.35–43, 3.193–310; Apollod. Epit. 6.24–28; Hyg. Fab. 117–122; Paus. 1.28.6, 2.18.5–6"
+  },
+  "chapters": [
+    {
+      "title": "Phocis and the return",
+      "text": "When Agamemnon fell, Electra carried her brother Orestes out of Mycenae and gave him to Strophius king of Phocis, who raised the boy beside his own son Pylades. Years later, warned by an oracle, Orestes came home in secret with his steadfast companion — the model of vengeance Nestor held up to Telemachus when he urged the son to be valiant like the avenger of his father.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 1.280–305, 3.193–200; Apollod. Epit. 6.24; Hyg. Fab. 117"
+    },
+    {
+      "title": "Aegisthus fallen",
+      "text": "On Olympus Zeus himself remembered noble Aegisthus, whom far-famed Orestes, Agamemnon's son, had slain — and among mortals Nestor told how the son returned in the eighth year and cut down his father's murderer, the guileful Aegisthus. Homer celebrates that deed as the pattern of a loyal child; the Odyssey never names Clytemnestra among the slain.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 1.35–43, 3.193–200, 3.303–310"
+    },
+    {
+      "title": "The matricide",
+      "text": "Apollodorus and Hyginus carry the vengeance further: Orestes killed Clytemnestra as well as Aegisthus, avenging both the bath-murder and the long memory of Iphigenia at Aulis. Electra stood with him; Pylades shared the deed — and kin-murder, even for justice, opened the house to the chthonic avengers.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.24–25; Hyg. Fab. 119"
+    },
+    {
+      "title": "The Erinyes",
+      "text": "After the matricide Orestes was seized with madness and driven over the land by the Erinyes — the August Ones born from the blood of Uranus, whose office is to hound the shedder of kindred blood. They would not leave him until the guilt was judged, and Apollo, who had commanded the vengeance, became his advocate before mortals and gods.",
+      "sources": ["apollodorus", "hesiod", "pausanias"],
+      "citation": "Apollod. Epit. 6.25; Theogony 183–187; Paus. 1.28.6"
+    },
+    {
+      "title": "The trial at the Areopagus",
+      "text": "Orestes fled to Athens and was tried on the Areopagus for the murder of his mother. Apollo spoke in his defence; Athena cast the deciding vote when the ballots stood equal, and the court acquitted him — the origin, in Athenian tradition, of that hill as a place of homicide trial. Pausanias saw the sanctuary of the Erinyes there and recorded that Hesiod first named them, while later poets gave them snakes in their hair.",
+      "sources": ["apollodorus", "pausanias", "ovid"],
+      "citation": "Apollod. Epit. 6.25; Paus. 1.28.6; Metamorphoses 4.451–454"
+    },
+    {
+      "title": "Iphigenia at Tauris",
+      "text": "To end his affliction Orestes sailed with Pylades to the Taurians for the image of Artemis. There the goddess's priestess was his sister Iphigenia — alive since Artemis snatched her from the altar at Aulis and set her among the barbarians. The three deceived King Thoas, seized the sacred image, and escaped together; Hyginus adds the false report that nearly made Electra attack the sister she did not yet know.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.26–27; Hyg. Fab. 120–122"
+    },
+    {
+      "title": "Hermione and the restored thrones",
+      "text": "Orestes recovered his father's kingdoms. Apollodorus transmits rival traditions for his marriage — Hermione daughter of Menelaus, or Erigone daughter of Aegisthus — and for his heir Tisamenus; Pausanias preserves both lines, making Tisamenus son of Hermione and the illegitimate Penthilus son of Erigone. Orestes gave Electra to Pylades, and the Pelopid curse paused, for a generation, on an acquitted matricide.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 6.28; Hyg. Fab. 122; Paus. 2.16.7, 2.18.5–6",
+      "topic": "orestes-marriages"
+    }
+  ],
+  "cast": [
+    { "id": "orestes", "name": "Orestes", "role": "The avenger pursued by the Furies" },
+    { "id": "electra", "name": "Electra", "role": "She who saved him and shared the vengeance" },
+    { "id": "pylades", "name": "Pylades", "role": "Companion in murder, trial, and Tauris" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "The father avenged" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "Slain in Apollodorus' fuller vengeance" },
+    { "id": "aegisthus", "name": "Aegisthus", "role": "First to fall to the returning son" },
+    { "id": "iphigenia", "name": "Iphigenia", "role": "Priestess rescued from Tauris" },
+    { "id": "erinyes", "name": "The Erinyes", "role": "Chthonic pursuers of the matricide" },
+    { "id": "apollo", "name": "Apollo", "role": "Advocate at the Areopagus" },
+    { "id": "athena", "name": "Athena", "role": "She who broke the tied vote" },
+    { "id": "artemis", "name": "Artemis", "role": "Whose image Orestes was sent to fetch" },
+    { "id": "hermione", "name": "Hermione", "role": "Wife in the main succession tradition" },
+    { "id": "erigone", "name": "Erigone", "role": "Rival wife in the disputed tradition" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Father of Hermione" },
+    { "id": "tisamenus", "name": "Tisamenus", "role": "Heir who followed Orestes" },
+    { "name": "Strophius", "role": "King of Phocis who fostered Orestes" },
+    { "name": "Thoas", "role": "King of the Taurians deceived at the escape" }
+  ],
+  "places": [
+    { "id": "mycenae", "name": "Mycenae", "role": "Where the vengeance was wrought" },
+    { "id": "argos", "name": "Argos", "role": "Kingdom Orestes recovered" },
+    { "id": "athens", "name": "Athens", "role": "The Areopagus and the Erinyes' sanctuary" },
+    { "id": "sparta", "name": "Sparta", "role": "Whence Hermione came to wed the avenger" },
+    { "name": "Phocis", "role": "Where Strophius raised the exile" },
+    { "name": "Tauris", "role": "Where Iphigenia served Artemis" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "1.35–43, 1.280–305, 3.193–310" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "6.24–28" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "117–122" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.28.6, 2.16.7, 2.18.5–6" },
+    { "source": "hesiod", "work": "Theogony", "citation": "183–187" }
+  ]
+}

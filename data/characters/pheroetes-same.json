@@ -1,0 +1,35 @@
+{
+  "id": "pheroetes-same",
+  "name": "Pheroetes",
+  "greekName": "Pheroetēs (Φηροίτης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue of Penelope's wooers.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Pheroetes among the wooers assigned to Same, listed after Hyperenor and before Antisthenes in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

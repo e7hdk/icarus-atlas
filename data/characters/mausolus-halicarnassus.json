@@ -1,0 +1,36 @@
+{
+  "id": "mausolus-halicarnassus",
+  "name": "Mausolus",
+  "greekName": "Mausōlos (Μαύσωλος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Halicarnassus",
+    "the Mausoleum"
+  ],
+  "summary": [
+    {
+      "text": "King of Halicarnassus for whom was built the vast tomb at his city — so notable for its ornament that the Romans call every great tomb a Mausoleum.",
+      "sources": ["pausanias", "hyginus"],
+      "citation": "Description of Greece 8.16.4; Fabulae 223"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias, naming the most wonderful graves he knew, singles out the monument at Halicarnassus made for Mausolus, king of the city — of such vast size and ornament that Roman admiration gave his name to every remarkable tomb in their country.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.16.4"
+    },
+    {
+      "text": "Hyginus counts the monument of King Mausolus among the Seven Wonders of the World — a marble structure eighty feet high and thirteen hundred and forty feet around.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 223"
+    }
+  ],
+  "residences": [
+    {
+      "city": "halicarnassus",
+      "sources": ["pausanias", "hyginus"]
+    }
+  ]
+}

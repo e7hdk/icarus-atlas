@@ -1,0 +1,49 @@
+{
+  "id": "chariclo-centaur",
+  "name": "Chariclo",
+  "greekName": "Chariklō (Χαρικλώ)",
+  "romanName": "Chariclo",
+  "type": "nymph",
+  "domains": [
+    "Pelion",
+    "the centaur's household",
+    "prophetic daughters"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The nymph wife of Chiron on Mount Pelion, who stood beside him when the Argonauts sailed and bore the prophetess Ocyrhoe on the banks of a swift river.",
+      "sources": [
+        "apollonius",
+        "ovid"
+      ],
+      "citation": "Argonautica 1.553–558; Metamorphoses 2.636–674"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names no nymph at the farewell on Pelion, but shows Chiron's wife coming down with him to the surf, carrying the infant Achilles on her arm so Peleus might see his son before the Argo departed. The household on the mountain is thus a pair — the just centaur and the woman who shared his cave.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.553–558"
+    },
+    {
+      "text": "Ovid gives the wife a name and a daughter: Chariclo the nymph bore Ocyrhoe on the bank of a rushing stream — the girl who learned her father's arts and sang the secrets of fate until Apollo turned her into a horse for revealing what was to come.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 2.636–674"
+    },
+    {
+      "text": "She must be kept distinct from the Theban Chariclo, nymph of the Cadmean house and mother of Tiresias, who belongs to another country and another story altogether.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.7"
+    }
+  ],
+  "kinds": [
+    "oceanid"
+  ]
+}

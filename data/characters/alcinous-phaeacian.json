@@ -1,0 +1,47 @@
+{
+  "id": "alcinous-phaeacian",
+  "name": "Alcinous",
+  "greekName": "Alkinoos (Ἀλκίνοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of the Phaeacians",
+    "host of Odysseus",
+    "Schery / Corcyra"
+  ],
+  "summary": [
+    {
+      "text": "King of the Phaeacians on Corcyra, son of Nausithous, wise in counsel by the gods' gift; he received Odysseus and sent him home with treasure, and in Apollodorus his queen Arete married Jason and Medea when the Argonauts came to the island.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 6.12–13, 7.187–197; Bibliotheca 1.9.25"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus came ashore on Scheria, Athena sent him to the house of Alcinous, upon whom depend the might and power of the Phaeacians; his daughter Nausicaa led the stranger to the city, and the king heard his tale and promised him a safe passage home.",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–13, 7.187–197, 8.457–521"
+    },
+    {
+      "text": "Apollodorus names Corcyra the island of the Phaeacians, of which Alcinous was king — the haven the Argonauts reached after Thrinacia, where Arete the queen married Medea to Jason.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.25"
+    },
+    {
+      "text": "Homer makes him the pivot of Odysseus' last leg home: when the stranger had wept at Demodocus' songs of Troy and revealed his name at last, Alcinous promised gifts and a ship to carry him to Ithaca while he slept — the Phaeacians' final service before Poseidon punished them for aiding the man the earth-shaker hated.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.457–521; 11.335–341; 13.1–23"
+    },
+    {
+      "text": "When the returning ship had set Odysseus ashore on Ithaca, Poseidon asked Zeus to let him petrify the vessel and ring the Phaeacian city with a mountain — so the people who had borne the wanderer home lost their swift ships forever, and Alcinous' prayer to the god could not undo the earth-shaker's wrath.",
+      "sources": ["homer"],
+      "citation": "Odyssey 13.1–23, 13.170–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

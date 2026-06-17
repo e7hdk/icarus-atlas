@@ -1,0 +1,28 @@
+{
+  "id": "alectryon-boeotian",
+  "name": "Alectryon",
+  "greekName": "Alektryōn (Ἀλεκτρύων)",
+  "type": "hero",
+  "domains": ["father of Leïtus", "Boeotian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Great-souled father of Leïtus, captain of the Boeotians at Troy — named only when Hector smote the son on the wrist in close fight and made him cease from battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.600–625"
+    }
+  ],
+  "story": [
+    {
+      "text": "Leïtus again, the son of great-souled Alectryon, did Hector wound in close fight, on the hand at the wrist, and made him cease from fighting; and casting an anxious glance about him he shrank back, seeing he no more had hope that bearing spear in hand he might do battle with the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.600–625"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "capaneus",
+  "name": "Capaneus",
+  "greekName": "Καπανεύς",
+  "romanName": "Capaneus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Seven against Thebes",
+    "hubris",
+    "the Ogygian gate"
+  ],
+  "summary": [
+    {
+      "text": "Son of Hipponous and one of the Seven against Thebes, Capaneus boasted that not even Zeus could keep him from scaling the wall — and was blasted from the battlements by the god's thunderbolt at the Ogygian gate.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.3–3.6.8; Fabulae 68–70; Description of Greece 9.8.7"
+    },
+    {
+      "text": "At Troy his name lived on in his son Sthenelus, who fought beside Diomedes and claimed the Epigoni had surpassed their fathers by taking Thebes.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.564–565, 4.404–410"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Capaneus, son of Hipponous, among the seven leaders Adrastus mustered against Thebes, and assigns him to the Ogygian gate when the assault was joined. His end is the most spectacular of the Seven: while he was scaling the wall and swearing that not even the lightning of Zeus would hold him back, the god struck him with a thunderbolt and he fell burning to the ground.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.6–3.6.8; Fabulae 68"
+    },
+    {
+      "text": "Pausanias saw his tomb at Thebes and the tradition that thunder still sounded about the barrow — a lasting sign of the boast that provoked Zeus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.8.7"
+    },
+    {
+      "text": "Homer does not tell the Theban story but keeps the son in the foreground. Sthenelus, dear son of glorious Capaneus, rides with Diomedes and Euryalus; and when Agamemnon chides Diomedes for hanging back, Sthenelus answers that the Epigoni took seven-gated Thebes with a lesser host — we are better men by far than our fathers.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.564–565, 4.404–410"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    }
+  ]
+}

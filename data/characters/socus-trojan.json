@@ -1,0 +1,28 @@
+{
+  "id": "socus-trojan",
+  "name": "Socus",
+  "greekName": "Sokos (Σῶκος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Hippasus", "spear-caster"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wealthy son of Hippasus (`hippasus-trojan`) and own brother of Charops, a godlike man who thrust his spear through Odysseus' shield and flesh when he came to bear his brother aid — distinct from other mythic bearers of the name.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon smote Charops son of Hippasus, Socus came close to Odysseus and challenged him, saying that this day Odysseus should either boast over both sons of Hippasus or lose his life smitten by his spear. So saying he smote upon Odysseus' well-balanced shield; through the bright shield went the spear, and through the fair-wrought corselet it pressed on, tearing the flesh of Odysseus' flank. Odysseus drew the mighty spear of wise-hearted Socus forth from his flesh and from his bossed shield, and the twain Aiantes bore him away from the throng.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

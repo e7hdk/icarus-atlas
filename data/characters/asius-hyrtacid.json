@@ -1,0 +1,27 @@
+{
+  "id": "asius-hyrtacid",
+  "name": "Asius",
+  "greekName": "Asios (Ἄσιος)",
+  "type": "hero",
+  "domains": ["Hyrtacus' son", "Arisbe and the Selleïs", "the chariot assault"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Hyrtacus (`hyrtacus-trojan`), whom his horses tawny and tall had borne from Arisbe by the river Selleïs — leader of men who would not leave his chariot at the ships, and was enfolded by evil fate at the spear of Idomeneus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 12.80–190; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Asius leads the men who dwelt about Percote and Practius, who held Sestus and Abydus and goodly Arisbe. When the allies fenced the assault on the wall, he stood in the third company with Paris, Alcathous, and Agenor.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 12.80–105"
+    },
+    {
+      "text": "Unlike the rest who obeyed Polydamas, Asius would not leave his horses and charioteer, but drew chariot and all toward the swift ships — fool that he was, for he was not to return glorying to windy Ilios; ere that, fate enfolded him by the spear of Idomeneus, lordly son of Deucalion, as he made for the left wing of the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.110–150"
+    }
+  ]
+}

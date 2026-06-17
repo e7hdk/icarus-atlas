@@ -1,0 +1,31 @@
+{
+  "id": "meges-dulichium",
+  "name": "Meges",
+  "greekName": "Meges (Μέγης)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "captain of the Echinae",
+    "spear-famed son of Phyleus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phyleus, peer of Ares, who led the folk of Dulichium and the holy Echinae isles in forty black ships to Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.628–637"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer reckons Meges among the foremost spearmen of the Achaean host — Phyleus' son, famed for his spear, who in battle drove his bronze through an enemy's jaw. Agamemnon would have him roused with Diomedes and Odysseus for the night ambush against the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.628–637; 5.45–80; 10.90–125"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": ["homer"]
+    }
+  ]
+}

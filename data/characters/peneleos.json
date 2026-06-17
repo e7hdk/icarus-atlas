@@ -1,0 +1,48 @@
+{
+  "id": "peneleos",
+  "name": "Peneleos",
+  "greekName": "Pēneleōs (Πηνέλεως)",
+  "type": "hero",
+  "domains": ["Boeotian command", "the fifty ships", "the warder off of ruin"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Boeotians at Troy — one of five leaders of the fifty ships from Hyria, rocky Aulis, Thebes, and the towns about Boeotia — whom Poseidon roused at the ships and whose spear first began the rout when Polydamas smote him to the bone.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510, 13.85–120, 14.475–505, 17.600–625"
+    },
+    {
+      "text": "Pausanias' Theban king-list gives him a different end: sent to command the Boeotian host because Thersander's son Tisamenus was still too young, he was cut down at Troy by Eurypylus son of Telephus — after which Tisamenus took the throne.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.5.15"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue Nestor names Peneleos among the captains of the Boeotians who brought fifty ships, with a hundred and twenty young men aboard each vessel from Hyria, Aulis, Schoenus, Scolus, Thebes, and the scattered strongholds of Boeotia. When the wall was breached, Poseidon in the likeness of Calchas came to Teucer, Leïtus, and the warrior Peneleos among the masters of the war-cry, shaming the Argives for yielding ground.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510, 13.85–120"
+    },
+    {
+      "text": "After Polydamas slew Prothoënor and boasted that yet again a trusty comrade had fled from the spear of Panthous' son, wise-hearted Peneleos was stirred beyond all the Argives. He rushed upon Acamas, then thrust and smote Ilioneus son of Phorbas through the beard below the chin, driving the bronze clean through the teeth; later he fought Lyco with the sword in the press of Patroclus' aristeia. First among the Boeotians to break in the rout of Book 17, he took a grazing spear on the shoulder — but Polydamas' cast cut even to the bone.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.475–505, 16.310–350, 17.600–625"
+    },
+    {
+      "text": "Pausanias explains why this Boeotian captain, not the young son of Thersander, led Thebes to Troy: when Telephus cut down Thersander in Mysia before the host reached Ilion, the kingdom passed to a child too small to command, and Thebes sent Peneleos in his stead to the later muster. There Eurypylus son of Telephus killed him, and only then was Tisamenus raised to the throne.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.5.15"
+    },
+    {
+      "text": "Pausanias' king-list carries his line forward after the Epigon dynasty: Opheltes his son, then Damasichthon chosen when Autesion migrated to the Dorians — the Peneleid branch that briefly returned sole kingship to Thebes before Xanthus' death ended it.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.5.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}

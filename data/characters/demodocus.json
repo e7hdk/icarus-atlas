@@ -1,0 +1,33 @@
+{
+  "id": "demodocus",
+  "name": "Demodocus",
+  "greekName": "Demodokos (Δημόδοκος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["blind bard of the Phaeacians", "singer of Troy"],
+  "summary": [
+    {
+      "text": "The divine minstrel of Alcinous' court on Scheria, blind but honoured by the Muse, whose songs of Troy moved Odysseus to weep though the Phaeacians knew not why.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.1–45, 8.62–95, 8.487–521"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer says the Muse had taken Demodocus' sight but given him the gift of song in return. When Odysseus came to the hall, Alcinous summoned the bard to delight the guest, and Demodocus sang of the quarrel of Odysseus and Achilles at Troy — the very strife that the goddess had inspired at a feast of the gods.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.62–95"
+    },
+    {
+      "text": "He sang next of the love of Ares and Aphrodite and of the Wooden Horse, and at the tale of Troy the stranger hid his face and wept. Nausicaa marked his grief, and Alcinous, seeing, asked Odysseus to name himself at last.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.266–521"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer"]
+    }
+  ]
+}

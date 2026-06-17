@@ -1,0 +1,33 @@
+{
+  "id": "styphelus-centaur",
+  "name": "Styphelus",
+  "greekName": "Styphelos (Στύφελος)",
+  "romanName": "Styphelus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of five centaurs Caeneus slew at Peirithous' wedding before the Lapith was buried under the pines.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid's Nestor, telling of the centauromachy, names five centaurs put to death by Caeneus: Styphelus, Bromus, Antimachus, Elymus, and Pyracmos with his axe — their wounds forgotten, but their names and number recorded.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

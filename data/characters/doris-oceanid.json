@@ -1,0 +1,38 @@
+{
+  "id": "doris-oceanid",
+  "name": "Doris",
+  "greekName": "Doris (Δωρίς)",
+  "romanName": "Doris",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "rich-haired Oceanid",
+    "mother of the Nereids",
+    "consort of the Old Man of the Sea"
+  ],
+  "summary": [
+    {
+      "text": "Rich-haired Doris, daughter of Oceanus and Tethys, whom Apollodorus names among the chief Oceanids and who by Nereus bore the lovely company of the Nereids — among them Thetis, Psamathe, Galatea, and Amphitrite.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Theogony 240–264, 350; Bibliotheca 1.2.2, 1.2.7; Iliad 18.45–49"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets Doris at the hinge of the sea's two genealogies. In his catalogue of Oceanids she is one of the holy daughters of Tethys and Ocean who, with lord Apollo and the Rivers, have youths in their keeping all over the earth — a single name in the long list, yet destined to matter more than most. By Nereus, the Old Man who is true and lies not, she bore children passing lovely among goddesses: the Nereids, fifty in convention though no two catalogues agree on every name.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 346–351, 240–264"
+    },
+    {
+      "text": "Apollodorus opens his roll of Oceanids with Asia and Styx, and among them he names Doris — then, in a separate chapter, makes explicit what Hesiod had already joined: to Nereus and Doris were born the Nereids, whose names he lists at length, Thetis and Galatea and Amphitrite among them.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.2.2, 1.2.7"
+    },
+    {
+      "text": "Homer shows her daughters, not Doris herself, on the stage of grief. When Thetis mourns for Achilles in the depths, the bright cave fills with Nereids — and among those named in the throng is Doris herself, listed as one of the sea-sisters alongside Galatea, Nemertes, and Clymene — so that in the Iliad's roll the mother appears among the daughters, a compression of the genealogy the later mythographers would sort more neatly.",
+      "sources": ["homer"],
+      "citation": "Iliad 18.39–49"
+    }
+  ]
+}

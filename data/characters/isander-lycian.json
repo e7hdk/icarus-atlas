@@ -1,0 +1,22 @@
+{
+  "id": "isander-lycian",
+  "name": "Isander",
+  "greekName": "Isandros (Ἴσανδρος)",
+  "type": "hero",
+  "domains": ["son of Bellerophon", "slain by Ares", "Lycian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Bellerophon (`bellerophon`) and brother of Hippolochus (`hippolochus-lycian`) and Laodameia (`laodameia-lycian`) — whom Ares slew among the Solymi while Hippolochus fought at Troy and Laodameia bore Sarpedon to Zeus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.196–205; Bibliotheca 2.3.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer counts Isander among the three children Bellerophon begat in Lycia after he overcame the Chimera and every trial set against him; Ares slew Isander among the Solymi, while golden-reined Artemis struck down his sister Laodameia in wrath.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.196–205"
+    }
+  ]
+}

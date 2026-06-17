@@ -1,0 +1,39 @@
+{
+  "id": "iphitus-phocis",
+  "name": "Iphitus",
+  "greekName": "Iphitos (Ἴφιτος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Phocis",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Naubolus from Phocis and father of Schedius (`schedius-phocis`) and Epistrophus (`epistrophus-phocis`) in Homer's Catalogue of Ships — also numbered among the Argonauts, distinct from Iphitus son of Eurytus.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Iliad 2.515–545; Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Schedius and Epistrophus, sons of Iphitus son of Naubolus, at the head of the forty Phocian ships from Cyparissus, rocky Pytho, and the towns along the Cephisus.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.515–545"
+    },
+    {
+      "text": "Hyginus names an Iphitus son of Naubolus from Phocis among the Argonauts, warning that another Iphitus, son of Eurytus, sailed in the same company.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Bibliotheca 1.9.16"
+    }
+  ]
+}

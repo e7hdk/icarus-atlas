@@ -1,0 +1,41 @@
+{
+  "id": "phemius-ithaca",
+  "name": "Phemius",
+  "greekName": "Phemios (Φήμιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "minstrel of Ithaca",
+    "the bard among the suitors"
+  ],
+  "summary": [
+    {
+      "text": "Son of Terpes, the divine minstrel of Odysseus' house who sang perforce for the suitors until the slaughter — spared at Telemachus' plea when the returned king would have slain him with the rest.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.125–175, 1.325–360, 22.330–375"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the wooers feasted in Odysseus' halls, a herald put the beautiful lyre in Phemius' hands and he struck up his sweet lay perforce among them. Telemachus, speaking aside to Athena disguised as Mentes, grieved that the bard must flatter men who devoured his house — yet the minstrel's art was the crown of the feast.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.125–175"
+    },
+    {
+      "text": "Penelope descended from her upper chamber and, weeping, begged Phemius to cease the woeful song of the Achaeans' return from Troy — the very tale that ever harrows her heart — and sing some other lay of gods and men. The suitors overruled her, and the bard sang on.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.325–360"
+    },
+    {
+      "text": "On the night of the mnesterophonia he stood near the postern with his clear-toned lyre, divided in mind whether to flee to the altar of Zeus. Odysseus raised his sword to kill him, but Telemachus stayed his hand: Phemius had sung unwillingly, and a minstrel is sacred to the Muses and to Apollo — so the son of Terpes was spared.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.330–375"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

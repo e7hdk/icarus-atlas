@@ -1,0 +1,42 @@
+{
+  "id": "lycomedes-skyros",
+  "name": "Lycomedes",
+  "greekName": "Lykomēdēs (Λυκομήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Scyros",
+    "host of the hidden Achilles",
+    "slayer of Theseus"
+  ],
+  "summary": [
+    {
+      "text": "King of Scyros who received Achilles disguised as a maiden among his daughters, father of Deidamia, and host of Neoptolemus until Odysseus fetched the boy for Troy.",
+      "sources": ["apollodorus", "hyginus", "homer"],
+      "citation": "Bibliotheca 3.13.8; Epitome 1.24, 5.11; Fabulae 96–97; Odyssey 11.505"
+    }
+  ],
+  "story": [
+    {
+      "text": "Foreseeing that Achilles was fated to perish if he went to the war, Thetis disguised him in female garb and entrusted him as a maiden to Lycomedes. Bred at his court, Achilles had an intrigue with Deidamia, daughter of Lycomedes, and begot Pyrrhus, afterwards called Neoptolemus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.13.8; Fabulae 96"
+    },
+    {
+      "text": "When the secret was betrayed, Odysseus sought Achilles at the court of Lycomedes and uncovered him by the blast of a trumpet; later Odysseus and Phoenix persuaded Lycomedes to let Neoptolemus sail for Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8; Epitome 5.11"
+    },
+    {
+      "text": "Theseus, driven from Athens by Menestheus, came to Lycomedes on Scyros; the king threw him down an abyss and killed him.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.24"
+    }
+  ],
+  "residences": [
+    {
+      "city": "skyros",
+      "sources": ["apollodorus", "hyginus", "homer"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "eurycleia",
+  "name": "Eurycleia",
+  "greekName": "Eurykleia (Εὐρύκλεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["nurse of Odysseus", "faithful servant of the house"],
+  "summary": [
+    {
+      "text": "The trusted nurse of Odysseus' house, bought long ago by Laertes and honored like his wife, who reared Telemachus, recognized Odysseus by his scar when she washed the beggar's feet, and kept the secret of his return.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.425–440; 19.386–507"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer says Laertes bought Eurycleia, daughter of Ops son of Peisenor, for twenty oxen when she was in her first youth, and honored her in his halls as he honored his faithful wife, though he never lay with her for fear of his queen's anger. She nursed Telemachus from infancy and still carried blazing torches when the boy went to his bed in the high chamber.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.425–440"
+    },
+    {
+      "text": "When Penelope ordered the disguised stranger's feet washed, Eurycleia knew Odysseus at once by the old boar-tusk scar he received hunting with Autolycus' sons on Parnassus — a wound the god had foretold when the boy was named. She cried out that her master had returned, but Odysseus silenced her with a whisper and Athena turned Penelope's wits away from the discovery until the hour of vengeance.",
+      "sources": ["homer"],
+      "citation": "Odyssey 19.386–507"
+    },
+    {
+      "text": "After the suitors fell, she woke the slave women and counted the dead; she rejoiced at the justice done and at the marriage of her nursling's parents restored.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.407–432; 23.1–41"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

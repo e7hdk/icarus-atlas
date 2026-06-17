@@ -1,0 +1,32 @@
+{
+  "id": "phlias",
+  "name": "Phlias",
+  "greekName": "Phlias (Φλίας)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Phlius",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Dionysus and Ariadne — or of other fathers in rival genealogies — eponym of Phlius near Sicyon, numbered among the Argonauts.",
+      "sources": [
+        "apollonius",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Argonautica 1.115; Fabulae 14; Description of Greece 2.6.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Phlias among the crew from the Peloponnese; Hyginus makes him son of Liber and Ariadne from Phlius, though others call him Theban.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.115; Fabulae 14"
+    }
+  ]
+}

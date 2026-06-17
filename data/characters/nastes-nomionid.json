@@ -1,0 +1,33 @@
+{
+  "id": "nastes-nomionid",
+  "name": "Nastes",
+  "greekName": "Nastes (Νάστης)",
+  "type": "hero",
+  "domains": ["Carian command", "lord of Miletus", "golden folly"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Glorious son of Nomion (`nomion-carion`) and co-captain of the Carians beside Amphimachus — he came to the war all decked with gold like a girl, fool that he was, but was slain in the river beneath Achilles' hands, who bare off the gold.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Nastes and Amphimachus, the glorious children of Nomion, captains twain of the Carians uncouth of speech who held Miletus, Phthires dense with leafage, the Maeander's streams, and Mycale's steep crests.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "text": "Nastes came to Troy decked with gold like a girl, yet his gold availed not to ward off woeful destruction: he was slain in the river beneath the hands of the son of Aeacus, and Achilles, wise of heart, bare off the spoil.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["homer"]
+    }
+  ]
+}

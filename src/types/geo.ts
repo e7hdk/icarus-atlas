@@ -1,4 +1,40 @@
-import type { SourceId } from './character';
+import type { SourceId, SourcedText } from './character';
+
+/** Camera limits for the Lands map (WGS84) — docs/LANDS_PLAN.md §3.1. */
+export const MAP_BOUNDS = {
+  west: -6,
+  south: 22,
+  east: 44,
+  north: 47,
+} as const;
+
+export const PLACE_KINDS = [
+  'city',
+  'sanctuary',
+  'landmark',
+  'mountain',
+  'pass',
+  'myth-site',
+  'region-capital',
+] as const;
+
+export type PlaceKind = (typeof PLACE_KINDS)[number];
+
+export const PLACE_CERTAINTIES = ['fixed', 'approximate', 'traditional', 'disputed'] as const;
+
+export type PlaceCertainty = (typeof PLACE_CERTAINTIES)[number];
+
+export const PLACE_IMPORTANCE = ['flagship', 'major', 'minor', 'obscure'] as const;
+
+export type PlaceImportance = (typeof PLACE_IMPORTANCE)[number];
+
+export const FEATURE_KINDS = ['river', 'lake', 'plain', 'strait', 'gulf', 'mountain-range'] as const;
+
+export type FeatureKind = (typeof FEATURE_KINDS)[number];
+
+export const FEATURE_IMPORTANCE = ['major', 'minor'] as const;
+
+export type FeatureImportance = (typeof FEATURE_IMPORTANCE)[number];
 
 /** One verbatim SVG path from the basemap source, with its cumulative transform. */
 export interface GeoPath {
@@ -33,7 +69,49 @@ export interface GeoRegion {
   blurb: { text: string; sources: SourceId[] };
 }
 
-/** An ancient city (data/geo/cities.json); coordinates from Pleiades (CC BY). */
+/** A point POI on the Lands map (data/geo/places.json). */
+export interface GeoPlace {
+  id: string;
+  name: string;
+  greekName: string;
+  kind: PlaceKind;
+  region: string | null;
+  /** [longitude, latitude] WGS84. */
+  coordinates: [number, number];
+  certainty: PlaceCertainty;
+  pleiadesId?: string;
+  importance: PlaceImportance;
+  /** Hover card; lens-filtered like character summaries. */
+  summary: SourcedText[];
+  story?: SourcedText[];
+  characterIds?: string[];
+  storyIds?: string[];
+  deityIds?: string[];
+  /** When kind is `city`, matches id and drives lineage + city sky routes. */
+  cityId?: string;
+  topics?: string[];
+}
+
+/** Linear or areal geography (data/geo/features.json). */
+export interface GeoFeature {
+  id: string;
+  name: string;
+  greekName: string;
+  kind: FeatureKind;
+  geometry: {
+    type: 'LineString' | 'Polygon';
+    coordinates: number[][] | number[][][];
+  };
+  region: string | null;
+  summary: SourcedText[];
+  characterId?: string;
+  placeIds?: string[];
+  storyIds?: string[];
+  importance: FeatureImportance;
+  sources: SourceId[];
+}
+
+/** Slim city projection for legacy callers — derived from GeoPlace where kind is city. */
 export interface GeoCity {
   id: string;
   name: string;
@@ -41,6 +119,24 @@ export interface GeoCity {
   region: string | null;
   coordinates: [number, number];
   pleiadesId: string;
+}
+
+/** Maps a city place to the legacy GeoCity shape used by CityPanel and city routes. */
+export function placeToCity(place: GeoPlace): GeoCity {
+  if (place.kind !== 'city' || place.cityId !== place.id) {
+    throw new Error(`place "${place.id}" is not a city place`);
+  }
+  if (!place.pleiadesId) {
+    throw new Error(`city place "${place.id}" missing pleiadesId`);
+  }
+  return {
+    id: place.cityId,
+    name: place.name,
+    greekName: place.greekName,
+    region: place.region,
+    coordinates: place.coordinates,
+    pleiadesId: place.pleiadesId,
+  };
 }
 
 /** One reign in a city's royal succession — a sourced, disputable fact. */

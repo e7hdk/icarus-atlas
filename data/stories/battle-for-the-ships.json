@@ -1,0 +1,61 @@
+{
+  "id": "battle-for-the-ships",
+  "title": "Battle for the Ships",
+  "greekTitle": "Μάχη περὶ νῆας",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.13,
+  "summary": {
+    "text": "Poseidon roused the Achaeans in Calchas' likeness while Zeus slept; Hector broke the wall and reached the ships — Ajax and Hector fought over a single vessel until the first fire touched the fleet and Patroclus could bear his friend's inaction no longer.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 13–15"
+  },
+  "chapters": [
+    {
+      "title": "Poseidon among the ranks",
+      "text": "Zeus turned his eyes from Troy to the distant Ethiopians, and Poseidon seized the hour. Disguised as Calchas, he walked the Achaean ranks giving courage; as himself he met the wounded Idomeneus and Meriones and drove them back to the fight. The two Ajaxes rallied the line; the battle rolled along the wall until the stones the Trojans had piled were thrown down and the ditch bridged — the work of the Achaean wall undone in an afternoon.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 13.1–672"
+    },
+    {
+      "title": "Hector at the ships",
+      "text": "Hector seized a boulder that two men of today could barely lift and smashed the gates; the Trojans poured through and the Achaeans ran for the ships. Ajax and Hector fought over one vessel, trading blows across the prow — the closest the war came to deciding Troy's fall before Achilles rose. Teucer shot Hector, but Apollo stayed the arrow; Sarpedon urged the Lycians on, and the ships stood in a ring with the sea behind and the enemy before.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 15.1–746"
+    },
+    {
+      "title": "The first fire",
+      "text": "Hector seized the stern of Protesilaus' ship with firebrand in hand — the moment Achilles had told the embassy he would wait for. Flames touched the timbers; Ajax leapt from deck to deck beating them out with a long pike, shouting that this was no time for the bow. Patroclus left Eurypylus' hut where he had been tending the wounded and wept at Achilles' door: let him at least lead the Myrmidons if Achilles would not fight — the plea that would end in borrowed armour and Book 16.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 15.674–746; Il. 16.1–35"
+    },
+    {
+      "title": "Zeus wakes",
+      "text": "On Ida Zeus woke from sleep and saw the Trojans at the ships and Hector in the front rank. He sent Iris and Apollo to rouse Hector again; Poseidon withdrew before the father's anger. The nested episode on Patroclus' fall tells Book 16; the nested Night Raid on Rhesus tells Book 10 between the wounding of the chiefs and this crisis. Here the Iliad's middle movement ends with the fleet burning and the son of Peleus still in his tent — one step from the wrath's release.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 15.1–746"
+    }
+  ],
+  "cast": [
+    { "id": "hector", "name": "Hector", "role": "He who broke the wall and fired the ships" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Defender who fought Hector on the prow" },
+    { "id": "poseidon", "name": "Poseidon", "role": "God who roused the Achaeans in Calchas' shape" },
+    { "id": "zeus", "name": "Zeus", "role": "He who slept until the ships burned" },
+    { "id": "apollo", "name": "Apollo", "role": "Defender who turned Teucer's arrow from Hector" },
+    { "id": "idomeneus", "name": "Idomeneus", "role": "Cretan king rallied by Poseidon" },
+    { "id": "meriones", "name": "Meriones", "role": "Companion of Idomeneus in the counter-attack" },
+    { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally pressing the ships" },
+    { "id": "teucer", "name": "Teucer", "role": "Archer whose shot Apollo turned" },
+    { "id": "patroclus", "name": "Patroclus", "role": "He who wept at Achilles' door" },
+    { "id": "achilles", "name": "Achilles", "role": "Still refusing battle as the fire spread" },
+    { "id": "ajax-oileus", "name": "Ajax the Locrian", "role": "Second Ajax who held the line" },
+    { "name": "Calchas", "role": "Seer whose likeness Poseidon wore" },
+    { "id": "protesilaus", "name": "Protesilaus", "role": "Whose ship Hector fired first" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Wall, ditch, and ring of ships on the shore" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "13–15" }
+  ]
+}

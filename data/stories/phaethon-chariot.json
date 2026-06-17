@@ -1,0 +1,56 @@
+{
+  "id": "phaethon-chariot",
+  "title": "Phaethon and the Sun's Chariot",
+  "greekTitle": "Φαέθων καὶ ἅρμα Ἡλίου",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 4.025,
+  "summary": {
+    "text": "Phaethon son of Clymene and the Sun, mocked by Epaphus for boasting of divine parentage, won from Phoebus the proof he demanded — to drive the chariot of day for one dawn — and lost control; Zeus struck him from the sky, the world burned, and his grieving sisters became poplars weeping amber on the banks of Eridanus.",
+    "sources": ["ovid", "apollodorus", "hyginus"],
+    "citation": "Ov. Met. 1.747–2.400; Apollod. 2.1.3; Hyg. Fab. 152"
+  },
+  "chapters": [
+    {
+      "title": "The boast",
+      "text": "Phaethon, son of Clymene and the Sun, was equal in years and pride to Epaphus son of Io and Jove — and could not endure the Egyptian youth's mockery of his claim to Phoebus as father. Clymene swore by the Sun himself that the boy spoke truth; Phaethon resolved to seek his parent at the palace of the dawn.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 1.747–779"
+    },
+    {
+      "title": "The father's warning",
+      "text": "The Sun received his son with joy and offered any gift to prove the bond — but when Phaethon asked to drive the golden chariot for one day, Phoebus warned of the steep ascent, the turning post, the Serpent and the Archer in the zodiac, and the steeds that only he could hold. The boy would not yield; the reluctant father bound the shining reins in his hands.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 1.780–2.123; Hyg. Fab. 152"
+    },
+    {
+      "title": "The fall",
+      "text": "The horses felt a lighter hand and left the road; the chariot plunged too low and scorched the earth — Ethiopians darkened, rivers steamed, mountains burned. Earth cried to Jove; he hurled the bolt that struck Phaethon from the car. Apollodorus tells the same hubris: Helios allowed the boy one day, the team bolted, and Zeus destroyed him lest the world be consumed.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 2.124–329; Apollod. 2.1.3"
+    },
+    {
+      "title": "Eridanus",
+      "text": "The Sun, veiled in grief, refused to drive for a day until the gods entreated him. Phaethon's sisters, the Heliades, sought his body on the Eridanus and were changed to poplar trees that weep amber tears into the stream — a river the poets placed where Phaethon fell, though geographers disputed its earthly course.",
+      "sources": ["ovid", "apollonius"],
+      "citation": "Ov. Met. 2.330–400; Ap. Rhod. 4.592–598"
+    }
+  ],
+  "cast": [
+    { "name": "Phaethon", "role": "Youth who drove the Sun's chariot to his ruin" },
+    { "name": "Clymene", "role": "Mother who sent him to Phoebus for proof" },
+    { "id": "helios", "name": "Helios", "role": "The Sun, Phaethon's father" },
+    { "id": "zeus", "name": "Zeus", "role": "Jove, who struck the chariot from the sky" },
+    { "name": "Epaphus", "role": "Io's son, whose taunts provoked the quest" }
+  ],
+  "places": [
+    { "name": "The palace of the Sun", "role": "Where Clymene sent Phaethon for proof of parentage" },
+    { "name": "Ethiopia", "role": "Land whose people were scorched dark by the chariot's heat" },
+    { "name": "Eridanus", "role": "River where the sisters mourned and poplars weep amber" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.747–2.400" },
+    { "source": "apollodorus", "work": "The Library", "citation": "2.1.3" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "152" }
+  ]
+}

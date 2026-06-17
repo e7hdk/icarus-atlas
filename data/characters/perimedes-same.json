@@ -1,0 +1,40 @@
+{
+  "id": "perimedes-same",
+  "name": "Perimedes",
+  "greekName": "Perimedēs (Περιμήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Perimedes the comrade of Odysseus who bound him to the mast past the Sirens.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Perimedes among the wooers assigned to Same, listed after Cerberus and before Cynnus in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    },
+    {
+      "text": "Homer's Odyssey knows another Perimedes — one of Odysseus' trusty comrades who held the victims at the pit of Ocean and tightened the bonds when the Sirens sang — not this Cephallenian wooer.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.1–50, 12.195–230; Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

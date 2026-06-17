@@ -1,0 +1,44 @@
+{
+  "id": "amphimachus-ithaca",
+  "name": "Amphimachus",
+  "greekName": "Amphimachos (Ἀμφίμαχος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "Named both among the fifty-seven wooers from Dulichium and among the twelve suitors from Ithaca itself in Apollodorus' island catalogues — to be distinguished from the Amphimachus son of Nomion and the Epeian leader at Troy.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27; Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Amphimachus among the many suitors who consumed Odysseus' substance while the king was away, and again among the twelve wooers specifically from Ithaca itself — alongside Antinous, Pronous, Eurynomus, Amphialus, Promachus, and the rest.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27; Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

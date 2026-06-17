@@ -1,0 +1,22 @@
+{
+  "id": "ceas-ciconian",
+  "name": "Ceas",
+  "greekName": "Keas (Κέας)",
+  "type": "hero",
+  "domains": ["father of Troezenus", "Ciconian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Troezenus (`troezenus-ciconian`) and grandfather of the Ciconian captain Euphemus (`euphemus-ciconian`) — attested by Homer in the Catalogue of Ships when the allied tribes muster beside Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's muster-roll names Euphemus captain of the Ciconian spearmen, the son of Ceas' son Troezenus, nurtured of Zeus — but the poet names Ceas only through his grandson's line.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "eurynome",
+  "name": "Eurynome",
+  "greekName": "Eurynomē (Εὐρυνόμη)",
+  "romanName": "Eurynome",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "olympian-band",
+  "domains": [
+    "wide-ruling Oceanid",
+    "mother of the Charites",
+    "shelter of the smith-god"
+  ],
+  "summary": [
+    {
+      "text": "The fair-formed Oceanid daughter of Ocean, whom Zeus loved and by whom he begot the three Charites — Aglaea, Euphrosyne, and Thalia — and who with Thetis received the cast-out Hephaestus in a cave beneath the streams of Ocean.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Theogony 907–911, 945; Bibliotheca 1.2.2, 1.3.1; Iliad 18.394–405"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sings Eurynome among the daughters of Ocean in his long catalogue, then raises her again to a starring role: Zeus, leaving Olympus, lay with the beautiful daughter of Ocean in many-folded valleys, and she bore the fair-cheeked Charites — Aglaea, Euphrosyne, and lovely Thaleia — from whose glancing eyes flowed love that unnerves the limbs. Apollodorus repeats the parentage without variation: by Eurynome, daughter of Ocean, Zeus had the Graces.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 350, 907–911; Bibliotheca 1.2.2, 1.3.1"
+    },
+    {
+      "text": "Homer gives her a gentler office. When Hera cast Hephaestus from heaven for his lameness, Thetis and Eurynome received him in their bosom and kept him nine years in their hollow cave beside the streams of Ocean, where no other god or mortal knew where he was, and there the smith first forged brooches and spiral arm-bands — a debt Thetis would later call in when she came to him for Achilles' shield.",
+      "sources": ["homer"],
+      "citation": "Iliad 18.394–405"
+    },
+    {
+      "text": "Pausanias confirms the Hesiodic line for the Graces' birth from Zeus and Eurynome, though he notes that other poets disagree — Antimachus made the Charites daughters of the Sun, and Homer names only Pasithea among them. Under the dominant telling, Eurynome is the wide-ruling Oceanid whose daughters adorn both Olympus and the forge.",
+      "sources": ["pausanias", "hesiod", "homer"],
+      "citation": "Description of Greece 9.35.5; Theogony 907–911; Iliad 14.267–268"
+    }
+  ]
+}

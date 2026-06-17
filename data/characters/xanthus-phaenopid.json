@@ -1,0 +1,28 @@
+{
+  "id": "xanthus-phaenopid",
+  "name": "Xanthus",
+  "greekName": "Xanthos (Ξάνθος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Phaenops"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Phaenops (`phaenops-trojan`), well beloved with his brother Thoön, whom mighty Diomedes slew when their father was fordone with old age — distinct from the Lycian river, Achilles' horse, the Theban king, and other golden-named figures.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "story": [
+    {
+      "text": "Diomedes went on after Xanthus and Thoön, sons twain of Phaenops, and both well beloved; and their father was fordone with grievous old age, and begat no other son to leave in charge of his possessions. There Diomedes slew them, and bereft them of dear life, both the twain.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.125–155"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

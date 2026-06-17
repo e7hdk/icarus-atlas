@@ -1,0 +1,38 @@
+{
+  "id": "polyphemus-cyclops",
+  "name": "Polyphemus",
+  "greekName": "Polyphemos (Πολύφημος)",
+  "romanName": "Polyphemus",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "the Cyclops",
+    "cave-dwelling shepherd",
+    "Poseidon's son",
+    "cannibal host"
+  ],
+  "summary": [
+    {
+      "text": "The mightiest of Homer's lawless Cyclopes — a one-eyed, cave-dwelling shepherd on a wooded island, son of Poseidon and the nymph Thoosa — whom Odysseus blinded after the giant devoured several of his comrades.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 1.68–73, 9.105–542; Epitome 7.4–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets him apart from the divine smith-Cyclopes of Hesiod: Polyphemus and his kind plant nothing, hold no assemblies, build no ships, and each lays down the law for his own wives and children in a distant island cave. He is godlike among them all, and Poseidon the Earth-shaker bears him stubborn wrath against Odysseus because of what the hero did to his son's single eye.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.45–79, 9.105–115"
+    },
+    {
+      "text": "When Odysseus and twelve companions entered the giant's cave, Polyphemus blocked the entrance with a great stone and devoured two men at supper, then two more at breakfast. The hero gave him strong wine until sleep took him; then Odysseus and four comrades drove a sharpened stake into the single eye. Polyphemus cried to the neighbouring Cyclopes that Nobody was killing him by guile, and when they heard \"Nobody\" they went away — so the ruse held until the blinded shepherd let the flock out and Odysseus clung beneath the ram's belly to escape.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 9.360–460; Epitome 7.4–7"
+    },
+    {
+      "text": "Apollodorus adds the genealogy plainly: Polyphemus is a son of Poseidon and the nymph Thoosa, a huge wild cannibal with one eye on his forehead. Odysseus sharpened the club with four comrades, heated it in the fire, and put out the eye — and when the Cyclops called for help, his neighbours thought he meant that nobody was hurting him.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.4–7"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bucolion-trojan",
+  "name": "Bucolion",
+  "greekName": "Bukolion (Βουκολίων)",
+  "type": "hero",
+  "domains": ["illegitimate son of Laomedon", "father of Aesepus and Pedasus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Peerless illegitimate eldest son of lordly Laomedon, who lay with the fountain-nymph Abarbarea while shepherding his flocks and begat the twin warriors Aesepus and Pedasus — distinct from Bucolus father of the Athenian captain Iasus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.1–35; Bibliotheca 3.12.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Euryalus went on after Aesepus and Pedasus, whom on a time the fountain-nymph Abarbarea bare to peerless Bucolion. Bucolion was son of lordly Laomedon, his eldest born, though the mother that bare him was unwed; he while shepherding his flocks had lain with the nymph in love, and she conceived and bare twin sons.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    },
+    {
+      "text": "Apollodorus names Bucolion a son of Laomedon by the nymph Calybe — a prose genealogy beside Homer's shepherd-nymph union with Abarbarea.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

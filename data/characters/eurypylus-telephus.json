@@ -1,0 +1,64 @@
+{
+  "id": "eurypylus-telephus",
+  "name": "Eurypylus",
+  "greekName": "Eurypylos (Εὐρύπυλος)",
+  "romanName": "Eurypylus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Telephus",
+    "the Ceteians at Troy",
+    "Mysian kingship"
+  ],
+  "summary": [
+    {
+      "text": "Son of Telephus, king of Mysia; Pausanias says he cut down Peneleos when the Boeotian captain led Thebes to Troy in place of the young Tisamenus, and Homer names him among the comeliest warriors Neoptolemus slew beside the Ceteians.",
+      "sources": [
+        "pausanias",
+        "homer"
+      ],
+      "citation": "Description of Greece 9.5.15; Odyssey 11.519–521"
+    },
+    {
+      "text": "Not to be confused with Eurypylus son of Euaemon, lord of Ormenion in the Iliad (`eurypylus-dulichium`), or with Eurypylus king of Cos, son of Poseidon (`eurypylus-cos`).",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 2.735–775; Bibliotheca 2.7.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon's second expedition against Troy was mustered, Pausanias records, Thebes sent Peneleos to command the Boeotian contingent because Thersander's son Tisamenus was still too young. At Troy Eurypylus, son of Telephus, killed Peneleos — opening the throne to Tisamenus and closing the line of substitute captains.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.15"
+    },
+    {
+      "text": "In the underworld Odysseus tells Achilles' shade how Neoptolemus bore himself at Troy: among the many he killed was the prince Eurypylus, son of Telephus, and many of his Ceteian comrades — slain, Odysseus adds, because of gifts a woman craved. Achilles had asked whether his son followed to the war; Odysseus answers that Neoptolemus was ever first in counsel and ran far to the front in battle, and that Eurypylus was the comeliest man he saw after Memnon.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.505–521"
+    },
+    {
+      "text": "Telephus' own story already bound father and son across the Aegean: the Mysian king who routed the Greeks at their first landfall and healed his wound from Achilles' spear was father to the warrior Neoptolemus would cut down before the horse — a royal line of the Caicus plain carried into the Trojan War.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 3.17–20; Odyssey 11.519–521"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pergamon",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

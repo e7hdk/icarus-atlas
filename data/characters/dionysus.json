@@ -4,19 +4,34 @@
   "greekName": "Dionysos (Διόνυσος)",
   "romanName": "Bacchus",
   "type": "olympian",
-  "domains": ["wine", "ecstasy", "theater", "vegetation", "rebirth"],
-  "epithets": ["Bromios", "Eleutherios", "Dimetor"],
+  "domains": [
+    "wine",
+    "ecstasy",
+    "theater",
+    "vegetation",
+    "rebirth"
+  ],
+  "epithets": [
+    "Bromios",
+    "Eleutherios",
+    "Dimetor"
+  ],
   "cluster": "olympian-band",
   "summary": [
     {
       "text": "Twice-born god of wine, ecstasy and liberating madness, splendid son of Zeus and the mortal Semele, daughter of Cadmus — a mortal woman who bore an immortal child.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Theogony 940–942; Bibliotheca 3.4.3",
       "topic": "dionysus-first-birth"
     },
     {
       "text": "God of wine and ecstasy who, in the Orphic tradition reported by Hyginus, was first the son of Jove and Proserpina, torn apart by the Titans, and conceived a second time when his pounded heart was given to Semele in a drink — hence the god with two mothers.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Fabulae 167",
       "topic": "dionysus-first-birth"
     }
@@ -24,32 +39,76 @@
   "story": [
     {
       "text": "Hesiod sings that Semele, daughter of Cadmus, lay with Zeus and bore him a splendid son, joyous Dionysus — a mortal woman, an immortal child. The mythographers tell how nearly the birth failed: Hera, in disguise, coaxed Semele into demanding that Zeus come to her as he came to his own queen, and when he arrived in thunder and lightning she perished in the blaze. Zeus snatched the six-month child from the fire, sewed him into his own thigh, and when the time was full he undid the stitches and brought forth a god.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Theogony 940–942; Bibliotheca 3.4.3",
       "topic": "dionysus-first-birth"
     },
     {
       "text": "Orphic tradition, as reported by Hyginus, holds that even this birth was a rebirth. Liber was first the son of Jove and Proserpina, and the Titans dismembered that child; Jove ground the rescued heart to pieces and gave it to Semele in a drink, and from it the god was conceived anew — which is why he is called the one with two mothers.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Fabulae 167",
       "topic": "dionysus-first-birth"
     },
     {
       "text": "Those who denied the god were broken by him. In Homer's telling, Lycurgus drove the nurses of raging Dionysus down the sacred mount of Nysa with an ox-goad, and the young god dove terrified beneath the waves, where Thetis received him in her bosom — but the gods blinded the persecutor, and he did not live long after. At Thebes, king Pentheus scorned the new rites; the god lured him to Cithaeron to spy upon the bacchants, and his own mother Agave, raving in god-sent madness and taking him for a wild beast, tore him limb from limb.",
-      "sources": ["homer", "apollodorus", "ovid"],
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Iliad 6.130–140; Bibliotheca 3.5.1–3.5.2; Metamorphoses 3.511–733"
     },
     {
       "text": "In Homer the god's part in Ariadne's story is dark. Among the shades Odysseus sees fair Ariadne, daughter of baleful Minos, whom Theseus once tried to carry from Crete to the hill of sacred Athens but had no joy of her: Artemis slew her on sea-girt Dia upon the testimony of Dionysus, before ever she came home.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Odyssey 11.321–325",
       "topic": "ariadne-fate"
     },
     {
       "text": "In the other ending he is her rescuer and bridegroom. Golden-haired Dionysus made Ariadne, Minos' daughter, his wife, and Zeus made her deathless and unageing for his sake. In Ovid it is on Dia itself, where Theseus abandoned her, that Bacchus brings the weeping girl his love and help — and takes the crown from her brow and sets it in the sky, its gems turned to fires that burn between the Kneeler and the Serpent-Holder.",
-      "sources": ["hesiod", "ovid"],
+      "sources": [
+        "hesiod",
+        "ovid"
+      ],
       "citation": "Theogony 947–949; Metamorphoses 8.174–182",
       "topic": "ariadne-fate"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ]
+    },
+    {
+      "city": "naxos",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid",
+        "hesiod"
+      ]
+    },
+    {
+      "city": "icaria",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "lemnos",
+      "sources": [
+        "apollodorus"
+      ]
     }
   ]
 }

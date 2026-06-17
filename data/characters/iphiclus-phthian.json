@@ -1,0 +1,27 @@
+{
+  "id": "iphiclus-phthian",
+  "name": "Iphiclus",
+  "greekName": "Iphiklos (Ἴφικλος)",
+  "type": "hero",
+  "domains": ["father of Protesilaus and Podarces", "Phthian house", "son of Phylacus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Phylacus, rich in flocks, and father of the Phthian captains Protesilaus and Podarces (`protesilaus`, `podarces-phthian`) — distinct from Iphiclus son of Thestius (`iphiclus-thestiad`) among the Calydonian hunters and Argonauts.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Iphiclus in the stemma of the Phthians who held Phylace and Hellas: Podarces marshalled the host when the men longed for Protesilaus, he that was son of Phylacus' son Iphiclus and own brother to the warrior who leapt first ashore at Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "When the battle raged at the ships, Homer again names Podarces son of Iphiclus, son of Phylacus, fighting in the forefront beside Medon and the Boeotians until Aeneas smote Medon among the press of fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ]
+}

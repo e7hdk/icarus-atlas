@@ -1,0 +1,1228 @@
+{
+  "regions": {
+    "peloponnese": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        22.331525,
+        37.231044999999995
+      ],
+      "bbox": [
+        21.12003,
+        36.12969,
+        23.54302,
+        38.3324
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "attica": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        23.563670000000002,
+        37.974729999999994
+      ],
+      "bbox": [
+        23.08627,
+        37.63471,
+        24.04107,
+        38.31475
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "central-greece": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        22.208190000000002,
+        38.675215
+      ],
+      "bbox": [
+        20.76006,
+        38.11594,
+        23.65632,
+        39.23449
+      ],
+      "labelNudge": [
+        -0.19,
+        0.11
+      ]
+    },
+    "euboea": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        23.729495,
+        38.456895
+      ],
+      "bbox": [
+        22.82781,
+        37.91713,
+        24.63118,
+        38.99666
+      ],
+      "labelNudge": [
+        0.31,
+        0.18
+      ]
+    },
+    "thessaly": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        22.738104999999997,
+        39.529915
+      ],
+      "bbox": [
+        21.20854,
+        38.92884,
+        24.26767,
+        40.13099
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "epirus": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        20.506905,
+        39.641864999999996
+      ],
+      "bbox": [
+        19.52437,
+        38.94742,
+        21.48944,
+        40.33631
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "macedonia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        23.660449999999997,
+        40.72464
+      ],
+      "bbox": [
+        20.90523,
+        39.79562,
+        26.41567,
+        41.65366
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "chalcidice": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        23.58728,
+        40.202065000000005
+      ],
+      "bbox": [
+        22.83725,
+        39.83928,
+        24.33731,
+        40.56485
+      ],
+      "labelNudge": [
+        0.09,
+        -0.19
+      ]
+    },
+    "ionian-islands": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        20.734685,
+        38.06949
+      ],
+      "bbox": [
+        20.38357,
+        37.27982,
+        21.0858,
+        38.85916
+      ],
+      "labelNudge": [
+        0,
+        -0.22
+      ]
+    },
+    "north-aegean": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        25.891655,
+        38.742104999999995
+      ],
+      "bbox": [
+        24.85896,
+        37.51115,
+        26.92435,
+        39.97306
+      ],
+      "labelNudge": [
+        0.28,
+        -0.11
+      ]
+    },
+    "south-aegean": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        25.98902,
+        36.690355
+      ],
+      "bbox": [
+        23.83807,
+        35.39855,
+        28.13997,
+        37.98216
+      ],
+      "labelNudge": [
+        0.45,
+        0.06
+      ]
+    },
+    "crete": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        24.752155000000002,
+        35.439425
+      ],
+      "bbox": [
+        23.18423,
+        34.86343,
+        26.32008,
+        36.01542
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "troad": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        26.799835,
+        39.849965
+      ],
+      "bbox": [
+        25.60014,
+        39.04961,
+        27.99953,
+        40.65032
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "elis": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        21.585034999999998,
+        37.826085
+      ],
+      "bbox": [
+        21.12003,
+        37.31977,
+        22.05004,
+        38.3324
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "achaea": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        21.875365000000002,
+        38.141025
+      ],
+      "bbox": [
+        21.20028,
+        37.94965,
+        22.55045,
+        38.3324
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "corinthia": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        22.85023,
+        37.999815
+      ],
+      "bbox": [
+        22.45014,
+        37.74991,
+        23.25032,
+        38.24972
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "argolis": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        23.096305,
+        37.525085000000004
+      ],
+      "bbox": [
+        22.64959,
+        37.19993,
+        23.54302,
+        37.85024
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "arcadia": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        22.37519,
+        37.599869999999996
+      ],
+      "bbox": [
+        21.90015,
+        37.14976,
+        22.85023,
+        38.04998
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "laconia": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        22.84964,
+        36.76468
+      ],
+      "bbox": [
+        22.2495,
+        36.12969,
+        23.44978,
+        37.39967
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "messenia": {
+      "level": "subregion",
+      "parent": "peloponnese",
+      "centroid": [
+        21.900154999999998,
+        36.925399999999996
+      ],
+      "bbox": [
+        21.45049,
+        36.50037,
+        22.34982,
+        37.35043
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "megaris": {
+      "level": "subregion",
+      "parent": "attica",
+      "centroid": [
+        23.27806,
+        38.082494999999994
+      ],
+      "bbox": [
+        23.08627,
+        37.85024,
+        23.46985,
+        38.31475
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "attica-proper": {
+      "level": "subregion",
+      "parent": "attica",
+      "centroid": [
+        23.745425,
+        37.974729999999994
+      ],
+      "bbox": [
+        23.44978,
+        37.63471,
+        24.04107,
+        38.31475
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "salamis": {
+      "level": "subregion",
+      "parent": "attica",
+      "centroid": [
+        23.477515,
+        37.909695
+      ],
+      "bbox": [
+        23.36008,
+        37.81958,
+        23.59495,
+        37.99981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "aegina": {
+      "level": "subregion",
+      "parent": "attica",
+      "centroid": [
+        23.44978,
+        37.734575
+      ],
+      "bbox": [
+        23.29989,
+        37.64957,
+        23.59967,
+        37.81958
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "acarnania": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        21.045085,
+        38.699835
+      ],
+      "bbox": [
+        20.76006,
+        38.29989,
+        21.33011,
+        39.09978
+      ],
+      "labelNudge": [
+        -0.22,
+        0.07
+      ]
+    },
+    "aetolia": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        21.570285,
+        38.699830000000006
+      ],
+      "bbox": [
+        21.12003,
+        38.24972,
+        22.02054,
+        39.14994
+      ],
+      "labelNudge": [
+        0.18,
+        -0.05
+      ]
+    },
+    "ozolian-locris": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        22.02526,
+        38.465255
+      ],
+      "bbox": [
+        21.75027,
+        38.28038,
+        22.30025,
+        38.65013
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "doris": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        22.16039,
+        38.61994
+      ],
+      "bbox": [
+        22.00047,
+        38.52007,
+        22.32031,
+        38.71981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "malis": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        22.36457,
+        38.92512
+      ],
+      "bbox": [
+        21.94972,
+        38.7003,
+        22.77942,
+        39.14994
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "phocis": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        22.5298,
+        38.50985
+      ],
+      "bbox": [
+        22.28018,
+        38.29989,
+        22.77942,
+        38.71981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "boeotia": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        23.185415,
+        38.417875
+      ],
+      "bbox": [
+        22.72041,
+        38.11594,
+        23.65042,
+        38.71981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "opuntian-locris": {
+      "level": "subregion",
+      "parent": "central-greece",
+      "centroid": [
+        23.034935,
+        38.66964
+      ],
+      "bbox": [
+        22.62009,
+        38.41973,
+        23.44978,
+        38.91955
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "hestiaeotis": {
+      "level": "subregion",
+      "parent": "thessaly",
+      "centroid": [
+        21.724890000000002,
+        39.775175000000004
+      ],
+      "bbox": [
+        21.29942,
+        39.45002,
+        22.15036,
+        40.10033
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "pelasgiotis": {
+      "level": "subregion",
+      "parent": "thessaly",
+      "centroid": [
+        22.474919999999997,
+        39.775175000000004
+      ],
+      "bbox": [
+        22.05004,
+        39.45002,
+        22.8998,
+        40.10033
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "magnesia": {
+      "level": "subregion",
+      "parent": "thessaly",
+      "centroid": [
+        23.199575,
+        39.464420000000004
+      ],
+      "bbox": [
+        22.79948,
+        38.92884,
+        23.59967,
+        40
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "thessaliotis": {
+      "level": "subregion",
+      "parent": "thessaly",
+      "centroid": [
+        21.72489,
+        39.260035
+      ],
+      "bbox": [
+        21.24985,
+        39.01988,
+        22.19993,
+        39.50019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "phthia": {
+      "level": "subregion",
+      "parent": "thessaly",
+      "centroid": [
+        22.224715,
+        39.214515000000006
+      ],
+      "bbox": [
+        21.54963,
+        38.92884,
+        22.8998,
+        39.50019
+      ],
+      "labelNudge": [
+        0.13,
+        0.06
+      ]
+    },
+    "chaonia": {
+      "level": "subregion",
+      "parent": "epirus",
+      "centroid": [
+        20.340490000000003,
+        40.068285
+      ],
+      "bbox": [
+        19.80054,
+        39.80026,
+        20.88044,
+        40.33631
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "molossis": {
+      "level": "subregion",
+      "parent": "epirus",
+      "centroid": [
+        21.05453,
+        39.641864999999996
+      ],
+      "bbox": [
+        20.61962,
+        38.94742,
+        21.48944,
+        40.33631
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "thesprotia": {
+      "level": "subregion",
+      "parent": "epirus",
+      "centroid": [
+        20.42488,
+        39.40357
+      ],
+      "bbox": [
+        19.85011,
+        38.94742,
+        20.99965,
+        39.85972
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "upper-macedonia": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        21.50242,
+        40.54998
+      ],
+      "bbox": [
+        20.90523,
+        39.94983,
+        22.09961,
+        41.15013
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "pieria": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        22.42535,
+        40.224824999999996
+      ],
+      "bbox": [
+        22.00047,
+        39.89967,
+        22.85023,
+        40.54998
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "emathia": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        22.450135,
+        40.790130000000005
+      ],
+      "bbox": [
+        21.94972,
+        40.4803,
+        22.95055,
+        41.09996
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "paeonia": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        22.450135,
+        41.299705
+      ],
+      "bbox": [
+        21.94972,
+        40.99963,
+        22.95055,
+        41.59978
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "mygdonia": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        23.40021,
+        40.925304999999994
+      ],
+      "bbox": [
+        22.85023,
+        40.35024,
+        23.95019,
+        41.50037
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "thrace": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        25.15756,
+        41.00195
+      ],
+      "bbox": [
+        23.89945,
+        40.35024,
+        26.41567,
+        41.65366
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "thasos": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        24.650064999999998,
+        40.70001499999999
+      ],
+      "bbox": [
+        24.39986,
+        40.49981,
+        24.90027,
+        40.90022
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "samothrace": {
+      "level": "subregion",
+      "parent": "macedonia",
+      "centroid": [
+        25.525199999999998,
+        40.450109999999995
+      ],
+      "bbox": [
+        25.30037,
+        40.30007,
+        25.75003,
+        40.60015
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "bottike": {
+      "level": "subregion",
+      "parent": "chalcidice",
+      "centroid": [
+        23.493450000000003,
+        40.342345
+      ],
+      "bbox": [
+        22.83725,
+        40.11984,
+        24.14965,
+        40.56485
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "pallene": {
+      "level": "subregion",
+      "parent": "chalcidice",
+      "centroid": [
+        23.435025,
+        40.04506000000001
+      ],
+      "bbox": [
+        23.25032,
+        39.85043,
+        23.61973,
+        40.23969
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "sithonia": {
+      "level": "subregion",
+      "parent": "chalcidice",
+      "centroid": [
+        23.859904999999998,
+        40.090115
+      ],
+      "bbox": [
+        23.61973,
+        39.88016,
+        24.10008,
+        40.30007
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "acte": {
+      "level": "subregion",
+      "parent": "chalcidice",
+      "centroid": [
+        24.12841,
+        40.19974
+      ],
+      "bbox": [
+        23.91951,
+        39.97956,
+        24.33731,
+        40.41992
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "corcyra": {
+      "level": "subregion",
+      "parent": "ionian-islands",
+      "centroid": [
+        20.291514999999997,
+        39.079805
+      ],
+      "bbox": [
+        20.19946,
+        38.85916,
+        20.38357,
+        39.30045
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "leucas": {
+      "level": "subregion",
+      "parent": "ionian-islands",
+      "centroid": [
+        20.64971,
+        38.679395
+      ],
+      "bbox": [
+        20.44966,
+        38.49963,
+        20.84976,
+        38.85916
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "ithaca": {
+      "level": "subregion",
+      "parent": "ionian-islands",
+      "centroid": [
+        20.75121,
+        38.39976
+      ],
+      "bbox": [
+        20.60191,
+        38.24972,
+        20.90051,
+        38.5498
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "cephallenia": {
+      "level": "subregion",
+      "parent": "ionian-islands",
+      "centroid": [
+        20.64204,
+        38.225105
+      ],
+      "bbox": [
+        20.38357,
+        37.90041,
+        20.90051,
+        38.5498
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "zacynthus": {
+      "level": "subregion",
+      "parent": "ionian-islands",
+      "centroid": [
+        20.75003,
+        37.77499
+      ],
+      "bbox": [
+        20.50041,
+        37.55017,
+        20.99965,
+        37.99981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "lesbos": {
+      "level": "subregion",
+      "parent": "north-aegean",
+      "centroid": [
+        26.200285,
+        39.200115
+      ],
+      "bbox": [
+        25.70046,
+        38.90004,
+        26.70011,
+        39.50019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "lemnos": {
+      "level": "subregion",
+      "parent": "north-aegean",
+      "centroid": [
+        25.22542,
+        39.861575
+      ],
+      "bbox": [
+        24.90027,
+        39.75009,
+        25.55057,
+        39.97306
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "chios": {
+      "level": "subregion",
+      "parent": "north-aegean",
+      "centroid": [
+        26.02502,
+        38.37514
+      ],
+      "bbox": [
+        25.7996,
+        38.04998,
+        26.25044,
+        38.7003
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "samos": {
+      "level": "subregion",
+      "parent": "north-aegean",
+      "centroid": [
+        26.687125,
+        37.72529
+      ],
+      "bbox": [
+        26.4499,
+        37.55017,
+        26.92435,
+        37.90041
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "icaria": {
+      "level": "subregion",
+      "parent": "north-aegean",
+      "centroid": [
+        26.160155000000003,
+        37.63053
+      ],
+      "bbox": [
+        25.89992,
+        37.51115,
+        26.42039,
+        37.74991
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "delos": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        25.274995,
+        37.400130000000004
+      ],
+      "bbox": [
+        25.2449,
+        37.32999,
+        25.30509,
+        37.47027
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "naxos": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        25.500415,
+        37.07497
+      ],
+      "bbox": [
+        25.30037,
+        36.89985,
+        25.70046,
+        37.25009
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "paros": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        25.11979,
+        37.100055
+      ],
+      "bbox": [
+        24.94984,
+        36.95002,
+        25.28974,
+        37.25009
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "thera": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        25.400095,
+        36.4149
+      ],
+      "bbox": [
+        25.24962,
+        36.28019,
+        25.55057,
+        36.54961
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "rhodes": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        27.8697,
+        36.17475
+      ],
+      "bbox": [
+        27.59943,
+        35.79989,
+        28.13997,
+        36.54961
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "cos": {
+      "level": "subregion",
+      "parent": "south-aegean",
+      "centroid": [
+        27.099615,
+        36.79998500000001
+      ],
+      "bbox": [
+        26.74968,
+        36.59978,
+        27.44955,
+        37.00019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    }
+  }
+}

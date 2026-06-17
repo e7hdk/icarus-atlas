@@ -3,27 +3,39 @@
   "name": "Melia",
   "greekName": "Melia (Μελία)",
   "type": "nymph",
-  "domains": ["motherhood of the Argive line"],
+  "domains": [
+    "motherhood of the Argive line"
+  ],
   "cluster": "titan-ring",
   "summary": [
     {
       "text": "Daughter of Oceanus who bore to Inachus — son of Ocean and Tethys, after whom the river of Argos is named — the first Argive line: Phoroneus and Aegialeus.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.1.1"
     }
   ],
   "story": [
     {
       "text": "Apollodorus gives her one sentence and a dynasty: of Inachus and Melia, daughter of Ocean, were born sons, Phoroneus and Aegialeus — a bare parentage formula, with no word of marriage. Through Phoroneus, who reigned over all the land later called the Peloponnese, she is grandmother of Apis and of Niobe, the first mortal woman with whom Zeus lay.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 2.1.1",
       "topic": "phoroneus-mother"
     },
     {
       "text": "Hyginus strikes her from the record: in his telling Inachus begets Phoroneus by his own sister Argia, an Oceanid of his genealogical preface, and Melia appears nowhere in the Argive line at all. In the local traditions Pausanias gathered at Argos, meanwhile, no mother is named for Phoroneus whatsoever — so the mother of the first man of Argos is one nymph in Apollodorus, another in Hyginus, and none at all in Pausanias.",
-      "sources": ["hyginus", "pausanias"],
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Fabulae 143; Fabulae, preface (Theogony); Description of Greece 2.15.5",
       "topic": "phoroneus-mother"
     }
+  ],
+  "kinds": [
+    "oceanid"
   ]
 }

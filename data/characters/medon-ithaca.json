@@ -1,0 +1,52 @@
+{
+  "id": "medon-ithaca",
+  "name": "Medon",
+  "greekName": "Medōn (Μέδων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "herald of Odysseus' house",
+    "warned Penelope of the suitors' plots",
+    "spared in the mnesterophonia"
+  ],
+  "summary": [
+    {
+      "text": "The herald of Odysseus' halls on Ithaca who overheard the suitors' secret counsels and bore word to Penelope — first of their plot against Telemachus, and again when they planned to show themselves to the queen in their insolence. Telemachus saved him when the hall ran with blood, and he later bore witness before the people — a homonym of Medon the Dulichian suitor in Apollodorus and of the bastard Medon in the Iliad.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.675–710; 16.395–430; 22.330–375; 24.415–445; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Penelope was not long without knowledge of what the wooers plotted in the deep of their hearts: the herald Medon told her, for he had heard their counsel as he stood without the court while they within wove their design. He came through the hall to bear the tidings, and Penelope spoke to him at the threshold.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.675–710"
+    },
+    {
+      "text": "When the suitors resolved that Penelope should show herself to them, she had already learned of the threatened death of her son in her halls — for Medon the herald had heard and told her again. She went toward the hall with her handmaids and stood by the doorpost with her shining veil before her face.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.395–430"
+    },
+    {
+      "text": "He moved in two worlds at once: at the wooers' feasts Medon was the herald they liked best, ever present at their banquets, calling them to dinner when the flocks came in from the fields — yet he still carried Penelope word of what they plotted in secret.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.170–200"
+    },
+    {
+      "text": "When Odysseus and Telemachus cut down the suitors, Medon lay hidden beneath an oxhide in the hall, listening in terror. Telemachus stayed his father's sword: the herald had cared for him as a child and was guiltless. Medon clung to the prince's knees and lived.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.330–375"
+    },
+    {
+      "text": "After the slaughter, when the people of Ithaca gathered against Odysseus, Medon and the minstrel Phemius came forth from the halls — sleep had released them — and Medon, wise of heart, spoke among the Achaeans to bear witness to what had been done.",
+      "sources": ["homer"],
+      "citation": "Odyssey 24.415–445"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

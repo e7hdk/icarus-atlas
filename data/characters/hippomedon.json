@@ -1,0 +1,55 @@
+{
+  "id": "hippomedon",
+  "name": "Hippomedon",
+  "greekName": "Ἱππομέδων",
+  "romanName": "Hippomedon",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Seven against Thebes",
+    "the Oncaidian gate"
+  ],
+  "summary": [
+    {
+      "text": "One of the Seven against Thebes, posted at the Oncaidian gate; Apollodorus makes him son of Aristomachus, though some said son of Talaus, and he was slain by Ismarus son of Astacus in the fighting at the wall.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.3–3.6.8; Fabulae 70"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Adrastus gathered the seven captains, Hippomedon marched among the Argives. Apollodorus names him son of Aristomachus, but adds that some made him son of Talaus instead — a dispute that would fold him into the same Biantid stem as Adrastus and Mecisteus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.3"
+    },
+    {
+      "text": "In the assault on Thebes he was stationed at the Oncaidian gate, opposite the Theban champion chosen to match him. In the fierce fighting after Eteocles and Polynices had fallen, Ismarus son of Astacus slew Hippomedon among the deeds of the sons of Astacus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.8"
+    },
+    {
+      "text": "Hyginus counts him in the roll of the seven kings who set out against Thebes and perished with all but Adrastus. His son Polydorus marched a generation later with the Epigoni.",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Fabulae 70–71; Description of Greece 10.10.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

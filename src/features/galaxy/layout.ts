@@ -1,4 +1,4 @@
-import type { Character, Relation } from '@/types/character';
+import type { Character, Relation, RelationType } from '@/types/character';
 
 export type Vec3 = [number, number, number];
 
@@ -15,6 +15,9 @@ export type Vec3 = [number, number, number];
  * inside their generation ring and dynasty wedge; the realm band may stretch
  * vertically as a last resort, never the radius.
  * ========================================================================= */
+
+/** Bumped when layout semantics change — invalidates baked galaxy-positions.json. */
+export const LAYOUT_VERSION = '7-radial-arm';
 
 /** Galaxy regions for BACKGROUND sampling (nebula wisps, dust, filler stars).
  *  Bands mirror the realm heights so the haze follows the named stars. */
@@ -62,6 +65,48 @@ export function ringRadiusOf(generation: number): number {
   return BASE_RADIUS + inner * GENERATION_GAP + outer * OUTER_GENERATION_GAP;
 }
 
+/** Each extra radial lane buys ~one ring's circumference of capacity. */
+const RADIAL_BAND_PER_LANE = 1.5;
+/** A single generation never billows wider than this, however crowded. */
+const MAX_RADIAL_BAND = 30;
+
+/** Population-aware radial schedule. A thin ring per generation cannot hold a
+ *  populous age (the Trojan-War generation alone is 400+ contemporaries, ~5×
+ *  one ring's circumference), so an over-capacity generation is allowed to
+ *  billow OUTWARD into a thick band — and every later generation is pushed out
+ *  by that band so a child's band always clears its parent's (chronology, hard
+ *  rule 6, is preserved because generations are integers: parent and child
+ *  never share a ring, and inward drift stays clamped to RADIUS_TOLERANCE).
+ *  Comfortable generations get band 0 and keep their exact ringRadiusOf. */
+export function radialScheduleOf(generations: ReadonlyMap<string, number>): {
+  ringRadius: (generation: number) => number;
+  bandWidth: (generation: number) => number;
+} {
+  const counts = new Map<number, number>();
+  for (const generation of generations.values()) {
+    const ring = Math.round(generation);
+    counts.set(ring, (counts.get(ring) ?? 0) + 1);
+  }
+  const maxRing = counts.size > 0 ? Math.max(...counts.keys()) : 0;
+  const band = new Map<number, number>();
+  const pushBelow = new Map<number, number>();
+  let accumulated = 0;
+  for (let ring = 0; ring <= maxRing; ring++) {
+    pushBelow.set(ring, accumulated);
+    const innerRadius = ringRadiusOf(ring) + accumulated;
+    const capacity = (2 * Math.PI * Math.max(innerRadius, BASE_RADIUS)) / MIN_STAR_DISTANCE;
+    const population = counts.get(ring) ?? 0;
+    const lanes = population > capacity ? Math.ceil(population / capacity) - 1 : 0;
+    const width = Math.min(lanes * MIN_STAR_DISTANCE * RADIAL_BAND_PER_LANE, MAX_RADIAL_BAND);
+    band.set(ring, width);
+    accumulated += width;
+  }
+  return {
+    ringRadius: (generation) => ringRadiusOf(generation) + (pushBelow.get(Math.round(generation)) ?? accumulated),
+    bandWidth: (generation) => band.get(Math.round(generation)) ?? 0,
+  };
+}
+
 /** Hard spacing floor between unrelated stars; consort binaries may sit closer. */
 export const MIN_STAR_DISTANCE = 3.6;
 export const MIN_CONSORT_DISTANCE = 2.1;
@@ -74,24 +119,31 @@ export const SPIRAL_TWIST = 0.38;
 export const RADIUS_TOLERANCE = 1.5;
 /** Angular gap between top-level dynasty wedges. */
 const WEDGE_GUTTER = 0.07;
-const RELAX_ITERATIONS = 140;
+/** Leaf-peer masses (suitors, sibling broods, co-resident catalogues) form cohort patches. */
+const COHORT_MIN = 8;
+/** Vertical stretch applied to a cohort member's realm band at seed time. */
+const COHORT_BAND_SCALE = 0.42;
+const RELAX_ITERATIONS = 190;
 const MAX_STEP = 0.8;
 const CONSORT_TARGET = 2.6;
-const RESOLUTION_SWEEPS = 120;
+const RESOLUTION_SWEEPS = 220;
 
 /* ------------------------------ realms ------------------------------ */
 
 export type Realm = 'ouranic' | 'upper' | 'terrestrial' | 'chthonic';
 
 export const REALM_BANDS: Record<Realm, { center: number; half: number }> = {
-  ouranic: { center: 16, half: 6 },
-  upper: { center: 7.5, half: 3.5 },
-  terrestrial: { center: 0, half: 5 },
-  chthonic: { center: -15, half: 6 },
+  ouranic: { center: 24, half: 7 },
+  upper: { center: 13, half: 4 },
+  terrestrial: { center: 0, half: 9 },
+  chthonic: { center: -20, half: 8 },
 };
 
-/** Extra vertical stretch the resolution pass may add when a band is packed. */
-export const REALM_OVERFLOW = 8;
+/** Extra vertical stretch the resolution pass may add when a band is packed.
+ *  The mortal plane holds most figures, so it leans on height to spread a packed
+ *  heroic age into a 3-D shoal instead of a flat jam — this is the un-pancaking
+ *  lever, the disc's underused vertical dimension. */
+export const REALM_OVERFLOW = 14;
 
 const OURANIC_KEYWORDS =
   /\b(sky|heaven|heavens|sun|moon|dawn|day(?:light)?|stars?|light|aether|upper air|thunder|lightning)\b/;
@@ -472,10 +524,12 @@ export interface Wedge {
 /** Sunburst over the family forest: every dynasty root receives an angular
  *  wedge proportional to its subtree size; children recursively subdivide
  *  their parent's wedge. Lone spouses adopt their partner's wedge instead of
- *  consuming root arc. This is the "angle = dynasty" half of the contract. */
+ *  consuming root arc. This is the "angle = dynasty" half of the contract.
+ *  Optional weightBonus inflates anchor subtrees so cohort patches receive arc. */
 export function computeDynastyWedges(
   characters: Character[],
   relations: Relation[],
+  weightBonus: Map<string, number> = new Map(),
 ): Map<string, Wedge> {
   const { primaryParent, childrenOf, consortsOf } = buildKinship(characters, relations);
 
@@ -484,7 +538,7 @@ export function computeDynastyWedges(
     const cached = weight.get(id);
     if (cached !== undefined) return cached;
     weight.set(id, 1); // cycle guard; chronological parent edges cannot cycle
-    let total = 1;
+    let total = 1 + (weightBonus.get(id) ?? 0);
     for (const childId of childrenOf.get(id) ?? []) total += subtreeWeight(childId);
     weight.set(id, total);
     return total;
@@ -537,6 +591,192 @@ export function computeDynastyWedges(
   return wedges;
 }
 
+/* ------------------------------ cohorts ------------------------------ */
+
+export interface Cohort {
+  id: string;
+  anchor: string;
+  members: string[];
+}
+
+function isLeaf(id: string, childrenOf: Map<string, string[]>): boolean {
+  return (childrenOf.get(id)?.length ?? 0) === 0;
+}
+
+function cohortPatchHalf(
+  memberCount: number,
+  anchorHalf: number,
+  ringRadius: number,
+): number {
+  const spread = Math.sqrt(memberCount) * GOLDEN_ANGLE * 0.55;
+  const spacingHalf =
+    (memberCount * MIN_STAR_DISTANCE) / (2 * Math.max(ringRadius, BASE_RADIUS));
+  return Math.max(anchorHalf, Math.min(Math.max(spread, spacingHalf), Math.PI * 0.85));
+}
+
+/** Cohort patches may span several radial lanes so 3D separation can converge. */
+function cohortRadialTolerance(memberCount: number): number {
+  const lanes = Math.ceil(Math.sqrt(memberCount / COHORT_MIN));
+  return Math.min(RADIUS_TOLERANCE + lanes * 0.45, 5);
+}
+
+function cohortBandHalf(realmHalf: number, memberCount: number): number {
+  const scale = 1 + Math.log2(Math.max(memberCount, COHORT_MIN)) * COHORT_BAND_SCALE;
+  return Math.min(realmHalf * scale, realmHalf + REALM_OVERFLOW);
+}
+
+function residenceGroupKeys(character: Character): string[] {
+  const island = character.id.match(/-(ithaca|dulichium|zacynthus|same)$/)?.[1];
+  if (island) return [`island:${island}`];
+  const cities = [...new Set((character.residences ?? []).map((residence) => residence.city))].sort();
+  return cities.map((city) => `residence:${city}`);
+}
+
+function cohortAngularOffset(cohortId: string): number {
+  return ((hashString(cohortId) % 2000) / 2000 - 0.5) * Math.PI * 0.55;
+}
+
+function residenceCohortAnchor(
+  members: string[],
+  groupKey: string,
+  characters: Character[],
+  kinship: Kinship,
+): string {
+  const memberSet = new Set(members);
+  const city = groupKey.startsWith('island:')
+    ? undefined
+    : groupKey.replace(/^residence:/, '');
+  const island = groupKey.startsWith('island:') ? groupKey.replace(/^island:/, '') : undefined;
+  const residents = characters
+    .filter((character) => {
+      if (island) return character.id.endsWith(`-${island}`);
+      return character.residences?.some((residence) => residence.city === city);
+    })
+    .sort((a, b) => {
+      const generationDifference =
+        (kinship.generations.get(a.id) ?? FALLBACK_GENERATION) -
+        (kinship.generations.get(b.id) ?? FALLBACK_GENERATION);
+      return generationDifference || a.id.localeCompare(b.id);
+    });
+  const outside = residents.find((character) => !memberSet.has(character.id));
+  if (outside) return outside.id;
+  const linkedParent = members
+    .map((id) => kinship.primaryParent.get(id))
+    .find((parentId) => parentId !== undefined && !memberSet.has(parentId));
+  if (linkedParent) return linkedParent;
+  return members[0];
+}
+
+/** Detect leaf-peer masses: sibling broods and co-resident catalogues (8+ leaves). */
+export function detectCohorts(
+  characters: Character[],
+  relations: Relation[],
+  kinship: Kinship = buildKinship(characters, relations),
+): Cohort[] {
+  const { childrenOf } = kinship;
+  const assigned = new Set<string>();
+  const cohorts: Cohort[] = [];
+
+  for (const [parentId, children] of childrenOf) {
+    const leaves = children.filter((id) => isLeaf(id, childrenOf)).sort();
+    if (leaves.length < COHORT_MIN) continue;
+    cohorts.push({ id: `siblings:${parentId}`, anchor: parentId, members: leaves });
+    for (const id of leaves) assigned.add(id);
+  }
+
+  // Hub-masses: leaf followers fanning into one leader — the war hosts (Hector's
+  // 119 Trojan allies, Agamemnon's Achaeans), the Argonauts (allies of Jason), a
+  // hero's enemies (the suitors as adversaries of Odysseus). These heroic-age
+  // combatants share neither a parent nor (often) a residence, so without this
+  // pass they scatter onto the war generation and jam it. Allies bind before
+  // adversaries, so a warrior is filed under his own host, not his killer.
+  const collectHubs = (types: ReadonlySet<RelationType>, prefix: string) => {
+    const fan = new Map<string, Set<string>>();
+    for (const relation of relations) {
+      if (!types.has(relation.type) || relation.from === relation.to) continue;
+      if (assigned.has(relation.from) || !isLeaf(relation.from, childrenOf)) continue;
+      if (!fan.has(relation.to)) fan.set(relation.to, new Set());
+      fan.get(relation.to)!.add(relation.from);
+    }
+    for (const hub of [...fan.keys()].sort()) {
+      const members = [...fan.get(hub)!].filter((id) => !assigned.has(id)).sort();
+      if (members.length < COHORT_MIN) continue;
+      cohorts.push({ id: `${prefix}:${hub}`, anchor: hub, members });
+      for (const id of members) assigned.add(id);
+    }
+  };
+  collectHubs(new Set<RelationType>(['ally']), 'host');
+  collectHubs(new Set<RelationType>(['adversary', 'slayer']), 'foes');
+
+  const byGroup = new Map<string, string[]>();
+  for (const character of characters) {
+    if (assigned.has(character.id) || !isLeaf(character.id, childrenOf)) continue;
+    for (const groupKey of residenceGroupKeys(character)) {
+      const list = byGroup.get(groupKey) ?? [];
+      if (!list.includes(character.id)) list.push(character.id);
+      byGroup.set(groupKey, list);
+    }
+  }
+  for (const [groupKey, members] of byGroup) {
+    if (members.length < COHORT_MIN) continue;
+    members.sort();
+    cohorts.push({
+      id: groupKey,
+      anchor: residenceCohortAnchor(members, groupKey, characters, kinship),
+      members,
+    });
+    for (const id of members) assigned.add(id);
+  }
+
+  cohorts.sort((a, b) => a.id.localeCompare(b.id));
+  return cohorts;
+}
+
+function buildCohortOf(cohorts: Cohort[]): Map<string, Cohort> {
+  const cohortOf = new Map<string, Cohort>();
+  for (const cohort of cohorts) {
+    for (const member of cohort.members) cohortOf.set(member, cohort);
+  }
+  return cohortOf;
+}
+
+/** Dynasty wedges with cohort patch widening and per-generation spiral twist —
+ *  the same angular bounds computePositions enforces. */
+export function effectiveWedges(
+  characters: Character[],
+  relations: Relation[],
+): Map<string, Wedge> {
+  const kinship = buildKinship(characters, relations);
+  const cohorts = detectCohorts(characters, relations, kinship);
+  const cohortOf = buildCohortOf(cohorts);
+  const weightBonus = new Map<string, number>();
+  for (const cohort of cohorts) {
+    weightBonus.set(cohort.anchor, (weightBonus.get(cohort.anchor) ?? 0) + cohort.members.length);
+  }
+  const dynastyWedges = computeDynastyWedges(characters, relations, weightBonus);
+  const wedges = new Map<string, Wedge>();
+  for (const character of characters) {
+    if (character.id === 'chaos') continue;
+    const generation = kinship.generations.get(character.id) ?? FALLBACK_GENERATION;
+    const cohort = cohortOf.get(character.id);
+    if (cohort) {
+      const anchorWedge = dynastyWedges.get(cohort.anchor) ?? { mid: 0, half: Math.PI };
+      const ringRadius = ringRadiusOf(generation);
+      wedges.set(character.id, {
+        mid: anchorWedge.mid + SPIRAL_TWIST * generation + cohortAngularOffset(cohort.id),
+        half: cohortPatchHalf(cohort.members.length, anchorWedge.half, ringRadius),
+      });
+    } else {
+      const wedge = dynastyWedges.get(character.id) ?? { mid: 0, half: Math.PI };
+      wedges.set(character.id, {
+        mid: wedge.mid + SPIRAL_TWIST * generation,
+        half: Math.max(wedge.half, 0.015),
+      });
+    }
+  }
+  return wedges;
+}
+
 /* ---------------------------- computePositions ---------------------------- */
 
 export interface LayoutOptions {
@@ -559,10 +799,45 @@ interface StarState {
 }
 
 interface StarBounds {
-  mid: number;
-  half: number;
+  starAngular: number;
+  radialHalf: number;
+  radialTolerance: number;
   band: { center: number; half: number };
+  realmBand: { center: number; half: number };
   ringRadius: number;
+}
+
+function phyllotaxisSeed(
+  index: number,
+  count: number,
+  patchMid: number,
+  patchHalf: number,
+  ringRadius: number,
+  bandCenter: number,
+  bandHalf: number,
+  radialTolerance: number,
+  seed: string,
+): StarState {
+  const rng = mulberry32(hashString(seed));
+  const t = index + 0.5;
+  const rawOffset = (t - count / 2) * GOLDEN_ANGLE;
+  const maxRaw = (count / 2) * GOLDEN_ANGLE;
+  const scale = maxRaw > patchHalf * 0.98 ? (patchHalf * 0.98) / maxRaw : 1;
+  const angleOffset = rawOffset * scale;
+  const theta = patchMid + angleOffset + (rng() - 0.5) * Math.min(patchHalf * 0.02, 0.012);
+  const rSpread = radialTolerance * 0.85;
+  const rNorm = count > 1 ? (index / (count - 1)) * 2 - 1 : 0;
+  const radius =
+    ringRadius +
+    Math.max(0, rNorm * rSpread) +
+    (rng() - 0.5) * Math.min(radialTolerance, RADIUS_TOLERANCE) * 0.4;
+  const yNorm = count > 1 ? index / (count - 1) : 0.5;
+  const y =
+    bandCenter +
+    (yNorm - 0.5) * 2 * bandHalf * 0.92 +
+    Math.sin(t * GOLDEN_ANGLE) * bandHalf * 0.08 +
+    (rng() - 0.5) * bandHalf * 0.05;
+  return { theta, radius, y };
 }
 
 /** Deterministic cosmos layout. See the header comment for the model. */
@@ -578,7 +853,10 @@ export function computePositions(
     const minGeneration = values.length > 0 ? Math.min(...values) : 0;
     for (const [id, generation] of generations) generations.set(id, generation - minGeneration);
   }
-  const wedges = computeDynastyWedges(characters, relations);
+  const cohorts = detectCohorts(characters, relations, kinship);
+  const cohortOf = buildCohortOf(cohorts);
+  const wedges = effectiveWedges(characters, relations);
+  const schedule = radialScheduleOf(generations);
 
   /* ---- seed: generation ring, twisted wedge mid, realm band ---- */
 
@@ -590,18 +868,59 @@ export function computePositions(
     if (character.id === 'chaos') continue;
     const generation = generations.get(character.id) ?? FALLBACK_GENERATION;
     const wedge = wedges.get(character.id) ?? { mid: 0, half: Math.PI };
-    const band = REALM_BANDS[realmOf(character)];
-    const rng = mulberry32(hashString(character.id));
-    const mid = wedge.mid + SPIRAL_TWIST * generation;
-    const half = Math.max(wedge.half, 0.015);
-    const theta = mid + (rng() - 0.5) * Math.min(half, 0.4);
-    const ringRadius = ringRadiusOf(generation);
-    const y =
-      band.center +
-      Math.sin(theta * 1.7 + rng() * Math.PI * 2) * band.half * 0.3 +
-      (rng() - 0.5) * band.half;
-    state.set(character.id, { theta, radius: ringRadius, y });
-    bounds.set(character.id, { mid, half, band, ringRadius });
+    const realmBand = REALM_BANDS[realmOf(character)];
+    const cohort = cohortOf.get(character.id);
+    const bandHalf = cohort
+      ? cohortBandHalf(realmBand.half, cohort.members.length)
+      : realmBand.half;
+    const band = { center: realmBand.center, half: bandHalf };
+    const ringRadius = schedule.ringRadius(generation);
+    const generationBand = schedule.bandWidth(generation);
+    const starAngular = wedge.mid;
+    const radialHalf = wedge.half;
+    // On a crowded ring the population band IS the radial room, and outward
+    // billow must stay within the push the band gave the next ring (+1 of slack)
+    // so a parent never reaches its child (chronology, hard rule 6). Comfortable
+    // rings keep the original cohort-lane / RADIUS_TOLERANCE behaviour.
+    const radialTolerance =
+      generationBand > 0
+        ? generationBand + 1
+        : cohort
+          ? cohortRadialTolerance(cohort.members.length)
+          : RADIUS_TOLERANCE;
+    let seeded: StarState;
+    if (cohort) {
+      const index = cohort.members.indexOf(character.id);
+      seeded = phyllotaxisSeed(
+        index,
+        cohort.members.length,
+        starAngular,
+        radialHalf,
+        ringRadius,
+        band.center,
+        band.half,
+        radialTolerance,
+        `${cohort.id}|${character.id}`,
+      );
+    } else {
+      const rng = mulberry32(hashString(character.id));
+      const theta = starAngular + (rng() - 0.5) * Math.min(radialHalf, 0.4);
+      const radius = ringRadius + rng() * generationBand;
+      const y =
+        band.center +
+        Math.sin(theta * 1.7 + rng() * Math.PI * 2) * band.half * 0.3 +
+        (rng() - 0.5) * band.half;
+      seeded = { theta, radius, y };
+    }
+    state.set(character.id, seeded);
+    bounds.set(character.id, {
+      starAngular,
+      radialHalf,
+      radialTolerance,
+      band,
+      realmBand,
+      ringRadius,
+    });
   }
 
   const ids = order.map((c) => c.id).filter((id) => id !== 'chaos' && state.has(id));
@@ -637,13 +956,18 @@ export function computePositions(
 
   const clampToBounds = (id: string, next: Vec3, yOverflow: number): StarState => {
     const constraint = bounds.get(id)!;
+    const inwardSlack = Math.min(constraint.radialTolerance, RADIUS_TOLERANCE);
     const radius = Math.min(
-      Math.max(Math.hypot(next[0], next[2]), constraint.ringRadius - RADIUS_TOLERANCE),
-      constraint.ringRadius + RADIUS_TOLERANCE,
+      Math.max(Math.hypot(next[0], next[2]), constraint.ringRadius - inwardSlack),
+      constraint.ringRadius + constraint.radialTolerance,
     );
-    const delta = normalizeSignedAngle(Math.atan2(next[2], next[0]) - constraint.mid);
-    const theta = constraint.mid + Math.max(-constraint.half, Math.min(constraint.half, delta));
-    const yHalf = constraint.band.half + yOverflow;
+    const delta = normalizeSignedAngle(Math.atan2(next[2], next[0]) - constraint.starAngular);
+    const theta =
+      constraint.starAngular +
+      Math.max(-constraint.radialHalf, Math.min(constraint.radialHalf, delta));
+    const effectiveOverflow =
+      constraint.band.half > constraint.realmBand.half ? 0 : yOverflow;
+    const yHalf = constraint.band.half + effectiveOverflow;
     const y = Math.min(
       Math.max(next[1], constraint.band.center - yHalf),
       constraint.band.center + yHalf,
@@ -688,6 +1012,14 @@ export function computePositions(
     for (const [a, b] of loverPairs) apply(a, b, 7, 0.04, false);
     for (const [a, b] of siblingPairs) apply(a, b, 6, 0.05, false);
     for (const [a, b] of hostilePairs) apply(a, b, 13, 0.05, true);
+    for (const cohort of cohorts) {
+      const present = cohort.members.filter((id) => state.has(id));
+      for (let i = 0; i < present.length; i++) {
+        for (let j = i + 1; j < present.length; j++) {
+          apply(present[i], present[j], MIN_STAR_DISTANCE * 1.55, 0.75, true);
+        }
+      }
+    }
 
     const damping = 1 - iteration / RELAX_ITERATIONS;
     for (const id of ids) {
@@ -753,12 +1085,26 @@ export function computePositions(
           uy /= m;
           uz /= m;
         }
-        const shove = (floor - d) / 2 + 0.05;
+        const shove = (floor - d) / 2 + 0.09;
         state.set(a, clampToBounds(a, [pa[0] - ux * shove, pa[1] - uy * shove, pa[2] - uz * shove], yOverflow));
         state.set(b, clampToBounds(b, [pb[0] + ux * shove, pb[1] + uy * shove, pb[2] + uz * shove], yOverflow));
       }
     }
     if (violations === 0) break;
+  }
+
+  /* ---- final invariant clamp ----
+   * The vertically-biased shove (and cohort seeding) can overshoot the cohort
+   * band by a hair on a star's last touch. Snap every star back inside the
+   * realm's hard height bound (base half + REALM_OVERFLOW) — exactly the bound
+   * validate-layout enforces — so the realm invariant always holds. A no-op for
+   * anything already in band; only nudges the rare boundary straggler. */
+  for (const id of ids) {
+    const s = state.get(id);
+    if (!s) continue;
+    const { realmBand } = bounds.get(id)!;
+    const limit = realmBand.half + REALM_OVERFLOW;
+    s.y = Math.min(Math.max(s.y, realmBand.center - limit), realmBand.center + limit);
   }
 
   const positions = new Map<string, Vec3>();

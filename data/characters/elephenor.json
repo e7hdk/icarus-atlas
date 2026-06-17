@@ -1,0 +1,36 @@
+{
+  "id": "elephenor",
+  "name": "Elephenor",
+  "greekName": "Elephēnōr (Ἐλεφήνωρ)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Abantes of Euboea",
+    "Trojan War captain"
+  ],
+  "summary": [
+    {
+      "text": "Son of Chalcodon and captain of the great-souled Abantes from Euboea and Chalcis, who led their long-haired spearmen to Troy and fell beside the corpse of Patroclus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545; 4.457–475"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships Homer sets Elephenor among the island chiefs: scion of Ares, son of Chalcodon, he commanded the Abantes — men with hair long at the back, eager with outstretched ashen spears — who held Carystus and dwelt in Styra, and the steep citadel of Cerinthus, and Chalcis on the Euripus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    },
+    {
+      "text": "When the battle raged over Patroclus' body, Elephenor caught the fallen Echion son of Agenor by the feet and sought to drag him from beneath the missiles and strip his armour; but his striving endured only a scant space, for great-souled Agenor caught sight of him and pierced him where his side was uncovered, and darkness enfolded his eyes far from deep-soiled Larissa.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 4.457–475; Fabulae 114"
+    }
+  ],
+  "residences": [
+    {
+      "city": "chalcis",
+      "sources": ["homer"]
+    }
+  ]
+}

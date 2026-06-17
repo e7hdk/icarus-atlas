@@ -3,6 +3,7 @@
   "reigns": [
     {
       "ruler": "Cadmus",
+      "characterId": "cadmus",
       "sources": ["apollodorus", "hyginus", "pausanias"],
       "citation": "Apollod. 3.4.1-2; Hyg. Fab. 76; Paus. 9.5.1-3",
       "note": "Founder of the Cadmeia. Homer instead credits Amphion and Zethus with first establishing and walling seven-gated Thebes.",
@@ -10,6 +11,7 @@
     },
     {
       "ruler": "Pentheus",
+      "characterId": "pentheus",
       "sources": ["apollodorus", "hyginus", "ovid"],
       "citation": "Apollod. 3.5.2; Hyg. Fab. 76; Ov. Met. 3.511-733",
       "note": "Son of Echion and Agave, torn apart on Cithaeron. Apollodorus has him succeed Cadmus directly; Hyginus lists him after Polydorus.",
@@ -17,6 +19,7 @@
     },
     {
       "ruler": "Polydorus",
+      "characterId": "polydorus",
       "sources": ["apollodorus", "hyginus", "pausanias"],
       "citation": "Apollod. 3.5.5; Hyg. Fab. 76; Paus. 2.6.2",
       "note": "Son of Cadmus and Harmonia. In Hyginus' king list he follows Cadmus directly, before Pentheus.",
@@ -24,12 +27,14 @@
     },
     {
       "ruler": "Labdacus",
+      "characterId": "labdacus",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 3.5.5; Hyg. Fab. 76",
       "note": "Son of Polydorus; perished like-minded with Pentheus, leaving the year-old Laius."
     },
     {
       "ruler": "Lycus",
+      "characterId": "lycus",
       "sources": ["apollodorus", "hyginus", "pausanias"],
       "citation": "Apollod. 3.5.5; Hyg. Fab. 76; Paus. 2.6.2, 9.5.5",
       "note": "Brother of Nycteus — appointed guardian of the child Laius, or usurper of the throne, by the teller."
@@ -43,12 +48,14 @@
     },
     {
       "ruler": "Laius",
+      "characterId": "laius",
       "sources": ["apollodorus", "hyginus", "pausanias"],
       "citation": "Apollod. 3.5.7; Hyg. Fab. 76; Paus. 9.5.9",
       "note": "Restored by the Thebans after the houses of Amphion and Zethus perished."
     },
     {
       "ruler": "Oedipus",
+      "characterId": "oedipus",
       "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
       "citation": "Hom. Od. 11.271-280; Apollod. 3.5.8-9; Hyg. Fab. 76; Paus. 9.5.10",
       "note": "Solved the Sphinx's riddle and took the kingdom — and, unknowing, his father's widow."
@@ -61,6 +68,7 @@
     },
     {
       "ruler": "Creon",
+      "characterId": "creon",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 3.7.1; Hyg. Fab. 76",
       "note": "Succeeded to the kingdom after the brothers fell — in this telling, as king in his own right.",
@@ -68,6 +76,7 @@
     },
     {
       "ruler": "Creon (regent for Laodamas)",
+      "characterId": "creon",
       "sources": ["pausanias"],
       "citation": "Paus. 1.39.2, 9.5.13, 9.10.3",
       "note": "For Pausanias the kingdom devolved on Laodamas, with Creon merely guardian and regent.",
@@ -75,15 +84,59 @@
     },
     {
       "ruler": "Laodamas",
+      "characterId": "laodamas-theban",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 3.7.3; Paus. 9.5.13, 9.8.6, 9.9.5",
       "note": "Son of Eteocles, faced the Epigoni — killed by Alcmaeon in Apollodorus, escaped to Illyria in Pausanias."
     },
     {
       "ruler": "Thersander",
+      "characterId": "thersander",
       "sources": ["pausanias"],
       "citation": "Paus. 9.5.14-15",
       "note": "Son of Polynices, set over Thebes by the victorious Argives; fell to Telephus in Mysia on the way to Troy."
+    },
+    {
+      "ruler": "Peneleos (Boeotian command at Troy)",
+      "characterId": "peneleos",
+      "sources": ["pausanias", "homer"],
+      "citation": "Paus. 9.5.15; Il. 2.494-510",
+      "note": "Not king in his own right: Pausanias says Thebes sent Peneleos to lead the Boeotian contingent because Thersander's son Tisamenus was still too young; he fell to Eurypylus son of Telephus at Troy."
+    },
+    {
+      "ruler": "Tisamenus",
+      "characterId": "tisamenus-theban",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.5.15; Paus. 3.15.6",
+      "note": "Son of Thersander and Demonassa daughter of Amphiaraus; chosen king after Peneleos' death. The Furies spared him as they had spared his father."
+    },
+    {
+      "ruler": "Autesion",
+      "characterId": "autesion-theban",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.5.15–9.5.16; Paus. 3.15.6",
+      "note": "Son of Tisamenus; the Erinyes of Laius and Oedipus drove him out at the oracle's bidding, and he migrated to the Dorians. Father of Theras and, in the Spartan genealogies, of Argeia."
+    },
+    {
+      "ruler": "Damasichthon",
+      "characterId": "damasichthon-theban",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.5.16",
+      "note": "Son of Opheltes son of Peneleos; chosen when Autesion departed. One of the last sole kings at Thebes."
+    },
+    {
+      "ruler": "Ptolemy",
+      "characterId": "ptolemy-theban",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.5.16",
+      "note": "Son of Damasichthon; father of Xanthus in the closing Peneleid roll."
+    },
+    {
+      "ruler": "Xanthus",
+      "characterId": "xanthus-theban",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.5.16",
+      "note": "Son of Ptolemy; last sole king. Killed in a duel with Andropompus by craft, not fair fight — after which Thebes divided the government among several magistrates."
     }
   ]
 }

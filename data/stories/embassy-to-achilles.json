@@ -1,0 +1,57 @@
+{
+  "id": "embassy-to-achilles",
+  "title": "The Embassy to Achilles",
+  "greekTitle": "Πρέσβεια πρὸς Ἀχιλλέα",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.09,
+  "summary": {
+    "text": "When the host was driven to the ships, Agamemnon sent Odysseus, Phoenix, and Ajax to Achilles' tent with gifts and a full restoration of honour — and the son of Peleus refused, choosing short life and glory over long years without Troy.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 9"
+  },
+  "chapters": [
+    {
+      "title": "Agamemnon's offer",
+      "text": "Nestor urged the kings to send envoys before the Trojans burned the fleet. Agamemnon listed the gifts he would give if Achilles returned: seven tripods, seven women, twenty cauldrons, twelve horses, Briseis restored untouched, marriage to any of his daughters, seven cities — and swore he had never lain with Briseis, the promise that would matter when the quarrel was old. Odysseus, Phoenix tutor of Achilles, and Ajax son of Telamon crossed the plain to the Myrmidon camp.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 9.1–185"
+    },
+    {
+      "title": "Odysseus speaks",
+      "text": "They found Achilles playing the lyre with Patroclus, singing of men's fame. Odysseus delivered the offer in order — gifts first, the marriage last — and appealed to pity for the wounded captains and the ships in flame. Achilles answered that honour from Zeus was worth more than Agamemnon's gifts; he would sail home at dawn rather than be called less, and Troy would fall without him, for Zeus had promised Thetis his glory.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 9.186–430"
+    },
+    {
+      "title": "Phoenix and the plea",
+      "text": "Old Phoenix wept and told how he had raised Achilles from infancy — how Meleager stayed in his chamber until the war came to his doors, and how the son of Peleus must not be that kind of hero. He offered to go home with Achilles if the prince would not fight. Achilles refused still: he honoured Phoenix as a father but would not stay for Troy; let Phoenix sleep in the tent and decide at dawn whether to sail or remain without him.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 9.431–605"
+    },
+    {
+      "title": "Ajax and the refusal",
+      "text": "Ajax spoke last, blunt as his nature: even a man whose son is slain accepts blood-money; Achilles has put a savage heart in his breast. The son of Peleus answered that he loved Ajax and Odysseus, but hated Agamemnon like the gates of death — he would fight when Hector reached the Myrmidon ships and the huts, when the fire threatened his own people. The envoys returned; Achilles kept his wrath, and the wall would not hold without him.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 9.606–713"
+    }
+  ],
+  "cast": [
+    { "id": "achilles", "name": "Achilles", "role": "He who refused the embassy" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "King who offered gifts and cities" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Envoy who delivered the offer" },
+    { "id": "phoenix-myrmidon", "name": "Phoenix", "role": "Tutor who pleaded with old tales" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Envoy who spoke last" },
+    { "id": "patroclus", "name": "Patroclus", "role": "Companion beside the lyre" },
+    { "id": "nestor", "name": "Nestor", "role": "Counsellor who urged the embassy" },
+    { "id": "briseis", "name": "Briseis", "role": "Prize promised restored untouched" },
+    { "id": "hector", "name": "Hector", "role": "Named as the threat Achilles would wait for" },
+    { "id": "thetis", "name": "Thetis", "role": "Mother whose promise Achilles invoked" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Plain between wall and Myrmidon camp" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "9" }
+  ]
+}

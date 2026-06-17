@@ -1,0 +1,80 @@
+{
+  "id": "telemachus",
+  "name": "Telemachus",
+  "greekName": "Telemachos (Τηλέμαχος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "heir of Ithaca",
+    "the search for Odysseus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Odysseus and Penelope, a boy left in infancy when his father sailed for Troy, who grew up amid suitors devouring the house until Athena roused him to seek news of the king and stand beside him at the slaughter of the wooers.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 1.214–223, 1.284–286; Epitome 3.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer opens the Odyssey with him: godlike Telemachus, sitting among the wooers, sad at heart, seeing in thought his noble father. He complains that princes from Dulichium, Same, wooded Zacynthus, and rocky Ithaca all woo his mother and lay waste his substance — until Athena, in the guise of Mentes, bids him call an assembly and voyage to Pylos and Sparta for tidings of Odysseus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.214–286; 2.40–259; 3–4"
+    },
+    {
+      "text": "When Odysseus returned in disguise, father and son proved each other in the swineherd's hut and together laid the plan that ended in the bow-contest and the death of the suitors; thereafter Telemachus stood with Laertes and Eumaeus when the avengers of the slain came against the house.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 16.155–320; 21–22; 24.330–360; Epitome 7.33"
+    },
+    {
+      "text": "At Pylos he sat with Nestor, who could tell him nothing of Odysseus but sent him on to Sparta with Nestor's son Peisistratus. Menelaus received him kindly in Lacedaemon and told how Proteus in Egypt had revealed that Odysseus was alive but detained on Calypso's isle — the first sure news that his father still lived — and warned that the suitors were plotting murder on the homeward road.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.1–415; 4.355–590"
+    },
+    {
+      "text": "Athena guided the voyage from first to last: as Mentes she roused him from the suitors' hall, as Mentor she sailed beside him to Pylos, and at Sparta she kept watch while Menelaus spoke. The goddess never abandoned Odysseus' son on the road between sandy Pylos and golden Mycenae.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.284–286; 2.40–259; 3.1–50; 4.1–45"
+    },
+    {
+      "text": "At Menelaus' feast Helen recognized him at once by his likeness to Odysseus; when the king spoke of the wanderer's toil, Telemachus wept and hid his face in his purple cloak until Helen named him and Peisistratus confirmed his identity. Helen eased the hall with a drug in the wine and told stories of Odysseus at Troy — the beggar's disguise she alone saw through, and the night she circled the wooden horse while the chiefs of the Argives sat inside.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.100–180, 4.220–310"
+    },
+    {
+      "text": "On his return voyage from Pylos he welcomed aboard Theoclymenus, a fugitive seer of the Melampodid line fleeing Argos after a kin-slaying. The stranger read the hawk-and-dove omen at sea as proof that Odysseus was already near and that none of the suitors would escape death — and in Ithaca he prophesied the king's return to Penelope while the wooers' hall darkened before their eyes.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–300, 15.525–555, 17.120–165, 20.345–390"
+    },
+    {
+      "text": "Homer makes his coming of age the frame of the epic: Athena rouses the boy who had sat silent among suitors, teaches him to call the assembly, fit out a ship, and voyage for news; on his return he strings no bow himself but stands beside Odysseus when the hall runs with blood, and helps lock the doors with Philoetius and Eumaeus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.284–286; 2.40–259; 22.126–277"
+    },
+    {
+      "text": "Apollodorus tells how Palamedes unmasked Odysseus' feigned madness by snatching Telemachus from Penelope's bosom as if to kill the child — and how Odysseus, fearing for his son, confessed and sailed to the war.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.10"
+    },
+    {
+      "text": "Hyginus preserves a variant of the Telegonus ending in which Telemachus stood beside Odysseus against the stranger who was laying waste the fields of Ithaca, not knowing that the youth was his half-brother until the king fell by Telegonus' sting-ray spear.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 127",
+      "topic": "odysseus-death"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["homer"]
+    }
+  ]
+}

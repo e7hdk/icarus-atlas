@@ -1,0 +1,51 @@
+{
+  "id": "clymenus-dulichium",
+  "name": "Clymenus",
+  "greekName": "Klymenos (Κλύμενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — also named among the wooers from Same in Epitome 7.29, distinct from Clymenus father of Eurydice at Pylos (Odyssey 3.450–495) and from Clymenus son of Oeneus (Bibliotheca 1.8.1).",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Clymenus among the suitors who devoured Odysseus' substance in the long catalogue of Epitome 7.27, listed after Hagius and before Philodemus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "The same name appears again among the wooers Apollodorus assigns to Same in Epitome 7.29 — one figure, or a namesake from another island, the Epitome does not say.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

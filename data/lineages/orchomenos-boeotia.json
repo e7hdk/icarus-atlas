@@ -1,0 +1,23 @@
+{
+  "city": "orchomenos-boeotia",
+  "reigns": [
+    {
+      "ruler": "Minyas",
+      "sources": ["apollonius"],
+      "citation": "Arg. 3.1077",
+      "note": "Son of Aeolus, who in Jason's telling built long ago the city of Orchomenus bordering on the Cadmeians."
+    },
+    {
+      "ruler": "Clymenus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.4.11",
+      "note": "King of the Minyans, wounded in a precinct of Poseidon by a Theban charioteer — the grievance that set Erginus' tribute on Thebes."
+    },
+    {
+      "ruler": "Erginus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.4.11",
+      "note": "Son of Clymenus, who sent heralds to Thebes for the tribute until Heracles routed the Minyans and ended their exaction."
+    }
+  ]
+}

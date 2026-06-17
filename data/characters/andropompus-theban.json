@@ -1,0 +1,53 @@
+{
+  "id": "andropompus-theban",
+  "name": "Andropompus",
+  "greekName": "Andropompos (Ἀνδρόπομπος)",
+  "romanName": "Andropompus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the duel at Thebes",
+    "slayer of Xanthus",
+    "the end of sole kingship"
+  ],
+  "summary": [
+    {
+      "text": "The man who killed Xanthus, last sole king in Pausanias' Theban roll — not in fair fight but by craft, in a duel whose outcome persuaded the Thebans to divide their government among several magistrates.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    },
+    {
+      "text": "Not to be confused with Andropompus son of Borus, father of Melanthus the Athenian king who received the Ionian refugees.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.8, 7.1.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records only the duel and its constitutional consequence: Xanthus fought Andropompus, and Andropompus killed him by craft and not in fair fight. After Xanthus' death the Thebans thought it better to entrust the government to several people, rather than to let everything depend on one man.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    },
+    {
+      "text": "Nothing else is told of this Andropompus — neither his lineage nor his later fate — only that his treacherous victory closed the long roll of Theban kings that had begun with Cadmus and ended with the Peneleid grandson of the Trojan captain Peneleos.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

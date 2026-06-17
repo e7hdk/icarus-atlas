@@ -1,0 +1,28 @@
+{
+  "id": "hippodameia-trojan",
+  "name": "Hippodameia",
+  "greekName": "Hippodameia (Ἱπποδάμεια)",
+  "type": "mortal",
+  "domains": ["daughter of Anchises", "wife of Alcathous", "Trojan princess"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Eldest daughter of Anchises, whom her father and queenly mother heartily loved for comeliness, handiwork, and wisdom — given in marriage to Alcathous, dear son of Aesyetes and fosterling of Aeneas.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.425–450"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Hippodameia eldest of Anchises' daughters when Alcathous, son by marriage to Anchises, falls before Idomeneus. She excelled all maidens of her years in comeliness, handiwork, and wisdom; wherefore the best man in wide Troy had taken her to wife.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.425–450"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

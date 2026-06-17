@@ -1,0 +1,28 @@
+{
+  "id": "actor-azeus",
+  "name": "Actor",
+  "greekName": "Aktōr (Ἄκτωρ)",
+  "type": "hero",
+  "domains": ["son of Azeus", "palace of the Minyan twins' begetting"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Azeus in whose palace Astyoche (`astyoche-minyan`) conceived Ascalaphus and Ialmenus of mighty Ares — distinct from Actor father of Menoetius, from Actor the Argonaut son of Hippasus (`actor-argonaut`), and from Actor father of the Moliones (`actor-epeian`).",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Actor son of Azeus only as the householder whose palace sheltered the secret union of Ares and Astyoche, whence the Minyan captains Ascalaphus and Ialmenus were born to lead thirty ships from Aspledon and Orchomenus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "polybus-ithaca",
+  "name": "Polybus",
+  "greekName": "Polybos (Πόλυβος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "last stand in the hall"
+  ],
+  "summary": [
+    {
+      "text": "Called 'wise Polybus' by Homer — father of Eurymachus and himself among the last suitors still fighting when the bow had slain the rest, with Agelaus, Eurynomus, Amphimedon and Demoptolemus in the spear-fight before the hall ran with blood.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.495–520; 22.210–290"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Athena watched from the roof-beam in the guise of a swallow, Agelaus son of Damastor urged on Eurynomus, Amphimedon, Demoptolemus, Peisander son of Polyctor, and wise Polybus — in valiance the best of all the wooers who still lived and fought for their lives, while the bow and swiftly-falling arrows had laid the rest low.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.210–250"
+    },
+    {
+      "text": "He fought in the last exchange of spears that followed, until the king, Telemachus, and the loyal herdsmen drove the survivors back and finished the mnesterophonia.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.255–290"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

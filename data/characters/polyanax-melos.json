@@ -1,0 +1,30 @@
+{
+  "id": "polyanax-melos",
+  "name": "Polyanax",
+  "greekName": "Polyanax (Πολυάναξ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Melos"
+  ],
+  "summary": [
+    {
+      "text": "King of Melos whose death left the island without a ruler, whereupon Menestheus son of Peteos came from the Trojan voyage and reigned in his stead.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus records only that when the returning heroes sailed as far as Mimas, Polyanax king of Melos had died, and Menestheus went to the island and took the kingship.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    }
+  ],
+  "residences": [
+    {
+      "city": "melos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

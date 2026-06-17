@@ -1,0 +1,37 @@
+{
+  "id": "thrasymedes-nestor",
+  "name": "Thrasymedes",
+  "greekName": "Thrasymedes (Θρασυμήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "sentinel captain at Troy",
+    "the Pylians at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — horse-taming captain of the Achaean sentinels at Troy and one of the Pylians who welcomed Telemachus beside his father and brother Peisistratus on the shore at sandy Pylos.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.50–85, 10.255–290; Odyssey 3.36–50"
+    }
+  ],
+  "story": [
+    {
+      "text": "At Troy Nestor lent his own shield to Diomedes when the son of Tydeus went on the night sortie, while Thrasymedes kept his father's gear — and Nestor himself took up the son's shield to stand watch when the Achaeans' discipline failed. Homer names him captain of the sentinels whom Agamemnon's embassy posted around the camp.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.50–85, 10.255–290, 14.1–25"
+    },
+    {
+      "text": "When Telemachus came to Pylos seeking news of Odysseus, Peisistratus was first to greet the strangers, but Thrasymedes sat with his father at the feast on fleeces upon the sand — one of Nestor's sons among the Pylians sacrificing to Poseidon on the shore.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.36–50"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

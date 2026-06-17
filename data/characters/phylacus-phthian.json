@@ -1,0 +1,27 @@
+{
+  "id": "phylacus-phthian",
+  "name": "Phylacus",
+  "greekName": "Phylakos (Φύλακος)",
+  "type": "hero",
+  "domains": ["father of Iphiclus", "Phthian house", "rich in flocks"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Iphiclus (`iphiclus-phthian`) and grandfather of the Phthian captains Protesilaus and Podarces (`protesilaus`, `podarces-phthian`) — attested by Homer when the Phthians follow Podarces after their leader fell at Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Podarces son of Phylacus' son Iphiclus, rich in flocks, at the head of the Phthians when the host longed for Protesilaus, he that had leapt first ashore and been slain.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "He must be kept distinct from the Phylacus whom Leïtus slew as he fled in the battle of Book 6 — a namesake figure in the Trojan theatre — and from Phylacus king of Phocis in the Melampus cycle.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35; Odyssey 15.225–260"
+    }
+  ]
+}

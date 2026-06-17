@@ -12,6 +12,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 4. **UI quality bar is high**: animations must be smooth (60fps target), interactions deliberate. Prefer fewer, polished features over many rough ones.
 5. **Research local-first**: before web research for any character, relation or contradiction, search the pinned local corpus with `pnpm corpus:search`. Use its citation-bearing passages for discovery, compare relevant source lenses, and verify against the original-language edition when available. Use the web only when the corpus lacks the work or passage, the reading is ambiguous, or independent verification is needed. Corpus hits are research evidence, never automatically generated application data.
 6. **Cosmos layout**: the galaxy is a meaning-bearing coordinate system — radius = mythic time under the "mortal clock" (gods are timeless: divine figures keep Hesiod's cosmic ages in the inner rings, every dynasty leaves eternity at one shared mortal base ring, and only mortal→mortal steps advance the clock; parents always stay inside descendants), angle = dynasty (sunburst wedges sized by subtree, a uniform per-generation twist turns lineages into spiral arms), height = cosmological realm (ouranic above the disc, lesser divine band, mortal plane, chthonic below). A deterministic constrained relaxation polishes spacing — consort pairs orbit as close binaries, adversaries repel — but may never break generation order, wedge bounds, or the separation floor. City skies reuse the engine in compact mode. Run `pnpm validate-layout` after character or relation edits.
+7. **Type vs kinds**: primary `type` (eight cosmic roles: primordial … creature) is the **sole** driver of star glow, pulse, size, and mortal-clock layout. Optional `kinds: FigureKind[]` (max 3) is controlled mythological sub-taxonomy (Oceanid, Dryad, Centaur, …) for display and search only — never add sub-classes as `CharacterType`. New `nymph` and `creature` entries **must** include `kinds`; do not put mythological class in `domains` (thematic prose only). Dual identity: Styx `type: god` + `kinds: ['oceanid']`. See docs/PLAN.md §5.1, docs/NYMPHS.md, docs/CENTAURS.md, `.cursor/rules/figure-taxonomy.mdc`.
 
 ## Stack
 
@@ -49,14 +50,14 @@ data/
   sources.json          # the 7 ancient source authors
   characters/*.json     # one file per character
   relations.json        # relation edges, each tagged with sources
-docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md
+docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md, NYMPHS.md, CENTAURS.md
 mockups/                # static theme mockups (design artifacts, not app code)
 scripts/                # validate-data.ts and other maintenance scripts
 ```
 
 ## Data model in one paragraph
 
-A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge + `sources` + optional `citation` (e.g. "Theogony 188–206"). The active lens filters facts: a fact is visible under lens L if `sources` includes L; the special `consensus` lens shows the union and marks conflicting facts with a dispute badge. Character type (primordial | titan | olympian | god | hero | mortal | nymph | creature) drives the star's glow color — the palette lives in `src/types/character.ts` and docs/PLAN.md and must stay in sync with the chosen theme.
+A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge + `sources` + optional `citation` (e.g. "Theogony 188–206"). The active lens filters facts: a fact is visible under lens L if `sources` includes L; the special `consensus` lens shows the union and marks conflicting facts with a dispute badge. Primary `type` (primordial | titan | olympian | god | hero | mortal | nymph | creature) drives the star's glow color — the palette lives in `src/types/character.ts` and docs/PLAN.md and must stay in sync with the chosen theme. Optional `kinds` (FigureKind[], max 3) is mythological sub-class for display/search only (Dryad, Nereid, Centaur, …); it does not change glow or layout.
 
 ## Theme
 

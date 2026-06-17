@@ -1,0 +1,28 @@
+{
+  "id": "dresus-trojan",
+  "name": "Dresus",
+  "greekName": "Dresos (Δρῆσος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Euryalus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom godlike Euryalus slew when Diomedes had smitten Acamas chiefest among the Thracians, before Euryalus went on after Opheltius in the battle of *Iliad* 6.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Diomedes had smitten Acamas chiefest among the Thracians, Euryalus slew Dresus and Opheltius, and went on after Aesepus and Pedasus, whom the fountain-nymph Abarbarea bare to peerless Bucolion, son of lordly Laomedon.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

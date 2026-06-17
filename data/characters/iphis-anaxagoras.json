@@ -1,0 +1,47 @@
+{
+  "id": "iphis-anaxagoras",
+  "name": "Iphis",
+  "greekName": "Ἶφις",
+  "romanName": "Iphis",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Anaxagoras third of Argos",
+    "Argive royalty"
+  ],
+  "summary": [
+    {
+      "text": "Son of Alector and king in the native third of Argos; Pausanias says he left the throne to Sthenelus son of Capaneus after the Melampid and Biantid lines had run their course toward reunification.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.5"
+    },
+    {
+      "text": "Apollodorus names an Iphis who told Polynices that Amphiaraus could be compelled only through Eriphyle — the same name, but whether the seer-advisor and the later king are one Argive figure is not agreed in the sources.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.2; Description of Greece 2.18.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias carries the Anaxagoras line from Alector to Iphis, and then to Sthenelus son of Capaneus — the Epigon who inherited the native third. After Troy, when Amphilochus migrated to the Amphilochians and Cyanippus died without issue, Sthenelus also absorbed the Biantid share before his son Cylarabes became sole king of reunited Argos.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ]
+    }
+  ]
+}

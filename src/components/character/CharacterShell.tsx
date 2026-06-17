@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import type { Character } from '@/types/character';
+import type { GeoCity } from '@/types/geo';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { KindBadge } from '@/components/ui/KindBadge';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { BackArrow } from '@/components/ui/BackArrow';
 import { MainNav } from '@/components/hud/MainNav';
+import { CharacterResidences } from '@/components/character/CharacterResidences';
+import { CharacterStoryAppearances } from '@/components/character/CharacterStoryAppearances';
+import type { Story } from '@/types/story';
 
 const TABS = [
   { key: 'poets', label: 'The poets', path: '' },
@@ -17,12 +22,21 @@ export type CharacterTab = (typeof TABS)[number]['key'];
 export function CharacterShell({
   character,
   active,
+  cities,
+  storyAppearances,
+  storiesById,
   children,
 }: {
   character: Character;
   active: CharacterTab;
+  /** All atlas cities — used to label residence links on the codex. */
+  cities?: GeoCity[];
+  /** Sagas/episodes whose cast includes this character. */
+  storyAppearances?: Story[];
+  storiesById?: Map<string, Story>;
   children: React.ReactNode;
 }) {
+  const citiesById = cities ? new Map(cities.map((city) => [city.id, city])) : null;
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-6">
       {/* Mobile: back arrow to the left of the centered nav, all on the top row. */}
@@ -50,6 +64,9 @@ export function CharacterShell({
         </p>
         <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
           <TypeBadge type={character.type} />
+          {character.kinds?.map((kind) => (
+            <KindBadge key={kind} kind={kind} primaryType={character.type} />
+          ))}
           <span className="font-body text-base italic text-aether-muted">
             {character.domains.join(' · ')}
           </span>
@@ -73,6 +90,18 @@ export function CharacterShell({
           ))}
         </div>
       </nav>
+
+      {citiesById && character.residences?.length ? (
+        <CharacterResidences residences={character.residences} citiesById={citiesById} />
+      ) : null}
+
+      {storyAppearances?.length && storiesById ? (
+        <CharacterStoryAppearances
+          characterId={character.id}
+          appearances={storyAppearances}
+          storiesById={storiesById}
+        />
+      ) : null}
 
       {children}
     </main>

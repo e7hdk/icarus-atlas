@@ -1,0 +1,33 @@
+{
+  "id": "glaucus-lycian",
+  "name": "Glaucus",
+  "greekName": "Glaukos (Γλαῦκος)",
+  "type": "hero",
+  "domains": ["Lycian command", "guest-friendship", "the armour exchange"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Hippolochus (`hippolochus-lycian`) and captain of the Lycians beside Sarpedon — grandson of Bellerophon through the Corinthian line — who met Diomedes between the hosts, recalled the guest-friendship of their fathers, and gave golden armour for bronze before Zeus took away his wit.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.876–877, 6.119–236, 12.387–397"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes Glaucus, son of Hippolochus, and peerless Sarpedon captains of the Lycians from afar, from the eddying Xanthus. When he and the son of Tydeus came together eager for battle, Diomedes asked who he was among mortals; Glaucus answered with the long genealogy — Sisyphus begat Glaucus of Ephyra, who begat Bellerophon, whose son Hippolochus sent him to Troy with charge never to shame the race of his fathers. Oeneus once gave Bellerophon a belt bright with scarlet, and Bellerophon a double cup of gold; therefore Diomedes and Glaucus declared themselves dear guest-friends in Argos and Lycia, clasped hands, and exchanged armour — golden for bronze, the worth of a hundred oxen for nine.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.119–236"
+    },
+    {
+      "text": "He fought as leader of the Lycian shieldmen: smiting Iphinous in the fierce conflict, following Sarpedon against the wall, and standing among the bravest when Hector was stricken. Teucer smote his uncovered arm from the high wall and he leapt back secretly; when Sarpedon fell beneath Patroclus, dread grief came upon Glaucus — he could not succour his comrade, for the wound tormented him — yet he roused the Lycian captains and chid Hector with hard words, saying the Lycians would not battle for Troy's sake while Hector held back his own folk.",
+      "sources": ["homer"],
+      "citation": "Iliad 7.13–16, 12.387–397, 16.492–683, 17.140–180"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

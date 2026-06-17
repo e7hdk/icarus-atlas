@@ -1,0 +1,28 @@
+{
+  "id": "polyaemon-trojan",
+  "name": "Polyaemon",
+  "greekName": "Polyaimōn (Πολυαίμων)",
+  "type": "hero",
+  "domains": ["father of Amopaon", "Trojan house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Amopaon (`amopaon-trojan`), whom peerless Teucer laid on the bounteous earth with his mighty bow when the son of Telamon harried the Trojan battalions from behind Ajax's shield.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.245–290"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Polyaemon only as the father of Amopaon when Teucer, after slaying Daetor, Chromius, and godlike Lycophontes, smote Polyaemon's son to the bounteous earth — the seventh named in the eight warriors Ajax screened while the archer let fly his shafts.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.245–290"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

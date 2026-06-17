@@ -1,0 +1,41 @@
+{
+  "id": "eurypylus-cos",
+  "name": "Eurypylus",
+  "greekName": "Eurypylos (Εὐρύπυλος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Cos",
+    "son of Poseidon"
+  ],
+  "summary": [
+    {
+      "text": "King of Cos whom Homer names in the isle's chief city, and whom Apollodorus makes a son of Poseidon by Astypalaea — slain when Heracles stormed the island by night.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.676–680; Bibliotheca 2.7.1"
+    },
+    {
+      "text": "Not to be confused with Eurypylus son of Telephus, the Mysian prince who killed Peneleos at Troy and was slain by Neoptolemus (`eurypylus-telephus`), or with Eurypylus son of Euaemon of Thessaly in the Iliad (`eurypylus-dulichium`).",
+      "sources": ["homer", "pausanias"],
+      "citation": "Odyssey 11.519–521; Description of Greece 9.5.15; Iliad 2.735–775"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships Homer counts Cos with Nisyrus, Crapathus, Casus and the Calydnian isles under the sons of Thessalus, but names the place the city of Eurypylus — the eponymous lord of the Dorian isle.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.676–680"
+    },
+    {
+      "text": "Apollodorus tells a violent end: when Heracles was sailing from Troy, Hera sent storms against him; driven to Cos, he forced his way into the city by night and slew Eurypylus, son of Poseidon by Astypalaea, when the Coans had stoned his ships thinking him a pirate.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "kos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

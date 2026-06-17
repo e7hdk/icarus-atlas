@@ -1,0 +1,56 @@
+{
+  "id": "minotaur-and-ariadne",
+  "title": "The Minotaur and Ariadne",
+  "greekTitle": "Μίνωταυρος καὶ Ἀριάδνη",
+  "kind": "episode",
+  "parent": "theseus-cycle",
+  "era": 6.73,
+  "summary": {
+    "text": "When Athens owed Minos a tribute of youths for the Minotaur, Theseus sailed on the black-sailed ship, won Ariadne's love and Daedalus' secret of the labyrinth, killed the beast with his fists, and fled Crete — but left the princess on Naxos and forgot the white sail, so Aegeus cast himself into the sea.",
+    "sources": ["apollodorus", "homer", "ovid", "hesiod", "apollonius"],
+    "citation": "Apollod. Epit. 1.7–1.10; Hom. Od. 11.321–325; Ov. Met. 8.152–182; Hes. Th. 947–949; Arg. 3.997–1000"
+  },
+  "chapters": [
+    {
+      "title": "The tribute to Minos",
+      "text": "Androgeus, son of Minos, had been killed at Athens — some say by the Marathonian bull, others by jealous competitors — and the Cretan king imposed a tribute: every nine years seven youths and seven maidens sent to the labyrinth for the Minotaur. Theseus offered himself among the third company, or was chosen by lot; Aegeus gave him a black sail and charged him to hoist white canvas if he returned alive.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 1.7; Ov. Met. 8.152–182"
+    },
+    {
+      "title": "The clew of thread",
+      "text": "At Knossos, Ariadne, daughter of Minos, fell in love with the Athenian and promised help if he would take her away. Daedalus — the artificer who built the maze — gave her the plan: let the hero unwind a clew of thread as he went in, so he could find the way back. Theseus entered the labyrinth, met the Minotaur, and killed it with his bare hands; he drew the thread after him and came out with the youths and maidens of Athens.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. Epit. 1.8–1.9; Arg. 3.997–1000"
+    },
+    {
+      "title": "Naxos and the black sail",
+      "text": "They sailed by night and put in at Naxos — Homer's sea-girt Dia — where Dionysus carried Ariadne off. Grieving, Theseus forgot to spread the white sail. Aegeus, watching from the acropolis, saw only black canvas and cast himself into the sea; the hero returned king of a fatherless city. The poets tell Ariadne's end apart: Homer says Artemis slew her on Dionysus' testimony; Hesiod makes her Dionysus' immortal wife; Apollodorus has the god wedded her on Naxos after Theseus abandoned her.",
+      "sources": ["homer", "hesiod", "apollodorus", "ovid"],
+      "citation": "Hom. Od. 11.321–325; Hes. Th. 947–949; Apollod. Epit. 1.9–1.10; Ov. Met. 8.174–182",
+      "topic": "ariadne-fate"
+    }
+  ],
+  "cast": [
+    { "id": "theseus", "name": "Theseus", "role": "The slayer of the Minotaur" },
+    { "id": "aegeus", "name": "Aegeus", "role": "The king who leapt from the height" },
+    { "id": "minos", "name": "Minos", "role": "Lord of Crete who imposed the tribute" },
+    { "id": "ariadne", "name": "Ariadne", "role": "The princess who gave the clew" },
+    { "id": "daedalus", "name": "Daedalus", "role": "Builder of the labyrinth" },
+    { "id": "minotaur", "name": "The Minotaur", "role": "The bull-headed prisoner of the maze" },
+    { "id": "dionysus", "name": "Dionysus", "role": "He who took Ariadne on Naxos" },
+    { "id": "artemis", "name": "Artemis", "role": "She who slew Ariadne in Homer's telling" }
+  ],
+  "places": [
+    { "id": "athens", "name": "Athens", "role": "City that sent the tribute" },
+    { "id": "knossos", "name": "Knossos", "role": "Palace of Minos and the labyrinth" },
+    { "id": "naxos", "name": "Naxos", "role": "Dia, where Ariadne was left" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "1.7–1.10" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.321–325" },
+    { "source": "hesiod", "work": "Theogony", "citation": "947–949" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "8.152–182" },
+    { "source": "apollonius", "work": "Argonautica", "citation": "3.997–1000" }
+  ]
+}

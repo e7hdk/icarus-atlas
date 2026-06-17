@@ -1,0 +1,33 @@
+{
+  "id": "areilycus-achaean",
+  "name": "Areilycus",
+  "greekName": "Areilykos (Ἀρείλυκος)",
+  "type": "hero",
+  "domains": ["father of Prothoënor", "Patroclus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Boeotian warrior and father of Prothoënor whom Patroclus smote through the thigh when he turned to flee in the scattered fight — Hyginus also makes him father of Arcesilaus and Prothoënor by Theobula (`theobula-boeotian`).",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 14.440–470, 16.310–350; Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Polydamas cast and smote upon the right shoulder Prothoënor, son of Areïlycus, and through the shoulder the mighty spear held its way; and he fell in the dust and clutched the ground with his palm.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.440–470"
+    },
+    {
+      "text": "Then man slew man of the chieftains as the fight was scattered. First the valiant son of Menoetius smote the thigh of Areilycus with a cast of his sharp spear at the moment when he turned to flee, and drave the bronze clean through; and the spear brake the bone, and he fell on his face on the ground.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.310–350"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer", "hyginus"]
+    }
+  ]
+}

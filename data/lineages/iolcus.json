@@ -1,0 +1,26 @@
+{
+  "city": "iolcus",
+  "reigns": [
+    {
+      "ruler": "Pelias",
+      "characterId": "pelias",
+      "sources": ["homer", "apollodorus", "apollonius"],
+      "citation": "Od. 11.235–259; Apollod. 1.9.16; Arg. 1.5–17",
+      "note": "Son of Poseidon and Tyro, who seized Iolcus and sent Jason after the Golden Fleece when the oracle warned of the man with one sandal."
+    },
+    {
+      "ruler": "Aeson",
+      "characterId": "aeson",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. 1.9.16; Arg. 1.45–50",
+      "note": "Rightful heir dispossessed by Pelias, father of Jason, whom the usurper kept from the throne."
+    },
+    {
+      "ruler": "Jason",
+      "characterId": "jason",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. 1.9.27; Arg. 3.1–4",
+      "note": "Returned from Colchis with the fleece and Medea; in Apollodorus' account he succeeds after Pelias' death."
+    }
+  ]
+}

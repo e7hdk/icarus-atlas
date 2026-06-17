@@ -1,0 +1,19 @@
+{
+  "city": "sardis",
+  "reigns": [
+    {
+      "ruler": "Omphale",
+      "characterId": "omphale",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.6.3",
+      "note": "Queen of Lydia to whom Tmolus had bequeathed the kingdom; she bought Heracles as a slave when the oracle demanded his servitude."
+    },
+    {
+      "ruler": "Midas",
+      "characterId": "midas",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 11.130–299; Fabulae 191",
+      "note": "Mygdonian or Lydian king who entertained Silenus and judged the contest on Tmolus between Apollo and Pan."
+    }
+  ]
+}

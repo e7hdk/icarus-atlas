@@ -1,0 +1,27 @@
+{
+  "id": "acamas-thracian",
+  "name": "Acamas",
+  "greekName": "Akamas (Ἀκάμας)",
+  "type": "hero",
+  "domains": ["Thracian command", "the Hellespont", "chief of the Thracians"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Valiant son of Eüssorus, chiefest among the Thracians whom the Hellespont encloseth — a namesake of Antenor's son and of other Acamas figures, but Homer fixes this man as co-captain with Peirous and marks him slain by Agamemnon in the opening of the sixth book.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 6.1–35; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Acamas and Peirous the warrior lead the Thracians enclosed by the strong stream of the Hellespont. Apollodorus names Acamas son of Eusorus among the allies who came to join the Trojans.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.34"
+    },
+    {
+      "text": "When battle raged at the beginning of the sixth book, Agamemnon was first to break a battalion of the Trojans and smote Eüssorus' son Acamas, a valiant man and tall, driving his spear through the horn of his horse-hair crest into the forehead until darkness enfolded his eyes.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ]
+}

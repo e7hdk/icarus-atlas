@@ -1,0 +1,57 @@
+{
+  "id": "clytius-same",
+  "name": "Clytius",
+  "greekName": "Klytios (Κλυτίος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "Named among the fifty-seven suitors from Dulichium and again among the Same wooers in Apollodorus' island catalogues — distinct from `clytius-zacynthus` (Epitome 7.29) and from Clytius son of Laomedon at Troy.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Clytius among the suitors who devoured Odysseus' substance, listed after Evenorides and before Agenor in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "The same name appears again among the wooers Apollodorus assigns to Same in Epitome 7.28 — listed after Eteoneus and before Prothous — one figure, or a namesake from another island, the Epitome does not say.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "cephallenia",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

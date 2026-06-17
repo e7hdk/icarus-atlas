@@ -1,0 +1,43 @@
+{
+  "id": "scamander",
+  "name": "Scamander",
+  "greekName": "Skamandros (Σκάμανδρος)",
+  "romanName": "Xanthus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the river of Troy",
+    "father of Teucer",
+    "river wrath"
+  ],
+  "summary": [
+    {
+      "text": "The river-god of the plain before Ilion, whose waters the Trojans and Achaeans crossed in battle; father of Teucer the first king of the Troad and, by Callirrhoe, ancestor of the royal house through Tros and Ilus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.74–78; Bibliotheca 3.12.1–3.12.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Scamander the river father of Teucer, who ruled the land before Dardanus came; by the nymph Idaea he begot the king who gave the country the name of the Teucrians.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
+    },
+    {
+      "text": "Tros married Callirrhoe, daughter of Scamander, and begat Ilus, Assaracus, and Ganymede; Ilus in turn took a wife from the same stream when Apollodorus makes him son of Tros and Callirrhoe, daughter of Scamander.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.2–3.12.3"
+    },
+    {
+      "text": "In the Iliad the river rises against Achilles for the corpses choking his channels. Scamander — whom the gods call Xanthus — calls Simoeis to his aid, and only the fire of Hephaestus and the word of Hera stay the flood that would have drowned the hero.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.74–78, 21.211–382"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dardanus-city",
+      "sources": ["apollodorus", "homer"]
+    }
+  ]
+}

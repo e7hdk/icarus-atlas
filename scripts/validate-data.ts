@@ -3,10 +3,13 @@
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { z } from 'zod';
 import {
   characterSchema,
   cultureSchema,
   geoCitySchema,
+  geoFeatureSchema,
+  geoPlaceSchema,
   geoRegionSchema,
   lineageSchema,
   referenceSchema,
@@ -14,11 +17,31 @@ import {
   sourceSchema,
   storySchema,
 } from '../src/lib/schemas';
+import { CREATURE_KINDS, NYMPH_KINDS } from '../src/types/character';
+import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
+/** Lands map camera limits — docs/LANDS_PLAN.md §3.1. */
+const MAP_BOUNDS = { west: -6, south: 22, east: 44, north: 47 };
 const errors: string[] = [];
 const info: string[] = [];
+
+function haversineKm(a: [number, number], b: [number, number]): number {
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const [lon1, lat1] = a;
+  const [lon2, lat2] = b;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const x =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+}
+
+function coordsInBasin([lon, lat]: [number, number]): boolean {
+  return lon >= MAP_BOUNDS.west && lon <= MAP_BOUNDS.east && lat >= MAP_BOUNDS.south && lat <= MAP_BOUNDS.north;
+}
 
 function loadJson(path: string): unknown {
   try {
@@ -63,6 +86,17 @@ if (existsSync(charDir)) {
     if (file !== `${c.id}.json`) errors.push(`characters/${file}: filename must match id "${c.id}"`);
     if (charIds.has(c.id)) errors.push(`characters/${file}: duplicate id "${c.id}"`);
     charIds.add(c.id);
+    if (c.kinds) {
+      if (new Set(c.kinds).size !== c.kinds.length) {
+        errors.push(`characters/${file}: duplicate entries in kinds`);
+      }
+      if (c.type === 'nymph' && !c.kinds.some((k) => (NYMPH_KINDS as readonly string[]).includes(k))) {
+        errors.push(`characters/${file}: nymph kinds must include at least one nymph sub-class`);
+      }
+      if (c.type === 'creature' && !c.kinds.some((k) => (CREATURE_KINDS as readonly string[]).includes(k))) {
+        errors.push(`characters/${file}: creature kinds must include at least one creature sub-class`);
+      }
+    }
     for (const t of [...c.summary, ...c.story]) {
       if (t.topic) topics.set(t.topic, [...(topics.get(t.topic) ?? []), `${c.id} (${t.sources.join(', ')})`]);
     }
@@ -136,6 +170,103 @@ if (Array.isArray(regionsRaw)) {
 }
 
 const cityIds = new Set<string>();
+const placeIds = new Set<string>();
+const placesRaw = loadJson(join(DATA_DIR, 'geo', 'places.json'));
+const parsedPlaces: z.infer<typeof geoPlaceSchema>[] = [];
+
+if (Array.isArray(placesRaw)) {
+  for (const p of placesRaw) {
+    const parsed = geoPlaceSchema.safeParse(p);
+    if (!parsed.success) {
+      errors.push(`geo/places.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      continue;
+    }
+    if (placeIds.has(parsed.data.id)) errors.push(`geo/places.json: duplicate id "${parsed.data.id}"`);
+    placeIds.add(parsed.data.id);
+    parsedPlaces.push(parsed.data);
+  }
+} else {
+  errors.push('geo/places.json: expected a JSON array');
+}
+
+for (const place of parsedPlaces) {
+  if (place.region !== null && !regionIds.has(place.region)) {
+    errors.push(`geo/places.json [${place.id}]: unknown region "${place.region}"`);
+  }
+  if (!coordsInBasin(place.coordinates)) {
+    info.push(`geo/places.json [${place.id}]: coordinates outside §3.1 basin bounds`);
+  }
+  if (place.kind === 'city') {
+    cityIds.add(place.cityId!);
+  }
+  for (const id of place.characterIds ?? []) {
+    if (!charIds.has(id)) errors.push(`geo/places.json [${place.id}]: unknown characterId "${id}"`);
+  }
+  for (const id of place.deityIds ?? []) {
+    if (!charIds.has(id)) errors.push(`geo/places.json [${place.id}]: unknown deityId "${id}"`);
+  }
+  if (place.cityId && place.cityId !== place.id && !placeIds.has(place.cityId)) {
+    errors.push(`geo/places.json [${place.id}]: cityId "${place.cityId}" is not a place id`);
+  }
+  for (const t of [...place.summary, ...(place.story ?? [])]) {
+    if (t.topic) topics.set(t.topic, [...(topics.get(t.topic) ?? []), `place:${place.id} (${t.sources.join(', ')})`]);
+  }
+}
+
+// Homonym guard: same name + kind within 50 km triggers a review flag.
+for (let i = 0; i < parsedPlaces.length; i++) {
+  for (let j = i + 1; j < parsedPlaces.length; j++) {
+    const a = parsedPlaces[i];
+    const b = parsedPlaces[j];
+    if (a.name === b.name && a.kind === b.kind && haversineKm(a.coordinates, b.coordinates) < 50) {
+      info.push(
+        `homonym review: "${a.name}" (${a.kind}) at ${a.id} and ${b.id} are within 50 km`,
+      );
+    }
+  }
+}
+
+const featureIds = new Set<string>();
+const featuresRaw = loadJson(join(DATA_DIR, 'geo', 'features.json'));
+let featureCount = 0;
+if (Array.isArray(featuresRaw)) {
+  for (const f of featuresRaw) {
+    const parsed = geoFeatureSchema.safeParse(f);
+    if (!parsed.success) {
+      errors.push(`geo/features.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      continue;
+    }
+    if (featureIds.has(parsed.data.id)) errors.push(`geo/features.json: duplicate id "${parsed.data.id}"`);
+    featureIds.add(parsed.data.id);
+    featureCount++;
+    if (parsed.data.region !== null && !regionIds.has(parsed.data.region)) {
+      errors.push(`geo/features.json [${parsed.data.id}]: unknown region "${parsed.data.region}"`);
+    }
+    if (parsed.data.characterId && !charIds.has(parsed.data.characterId)) {
+      errors.push(`geo/features.json [${parsed.data.id}]: unknown characterId "${parsed.data.characterId}"`);
+    }
+    for (const id of parsed.data.placeIds ?? []) {
+      if (!placeIds.has(id)) errors.push(`geo/features.json [${parsed.data.id}]: unknown placeId "${id}"`);
+    }
+    for (const t of parsed.data.summary) {
+      if (t.topic) topics.set(t.topic, [...(topics.get(t.topic) ?? []), `feature:${parsed.data.id} (${t.sources.join(', ')})`]);
+    }
+    if (parsed.data.kind === 'river' || parsed.data.kind === 'strait') {
+      if (!RIVER_SYNC_IDS.has(parsed.data.id)) {
+        info.push(
+          `geo/features.json [${parsed.data.id}]: no geometry sync recipe — extend sync-river-geometry.ts, then pnpm refresh:rivers`,
+        );
+      }
+      if (!RIVER_ANCHORS[parsed.data.id] && !(parsed.data.placeIds?.length)) {
+        info.push(`geo/features.json [${parsed.data.id}]: missing RIVER_ANCHORS (or placeIds anchor)`);
+      }
+    }
+  }
+} else {
+  errors.push('geo/features.json: expected a JSON array');
+}
+
+/** DEPRECATED alias — must stay in sync with city entries in places.json (LANDS_PLAN §5.1). */
 const citiesRaw = loadJson(join(DATA_DIR, 'geo', 'cities.json'));
 if (Array.isArray(citiesRaw)) {
   for (const c of citiesRaw) {
@@ -144,12 +275,30 @@ if (Array.isArray(citiesRaw)) {
       errors.push(`geo/cities.json: ${parsed.error.issues.map((i) => i.message).join('; ')}`);
       continue;
     }
-    if (cityIds.has(parsed.data.id)) errors.push(`geo/cities.json: duplicate id "${parsed.data.id}"`);
-    cityIds.add(parsed.data.id);
-    if (parsed.data.region !== null && !regionIds.has(parsed.data.region)) {
-      errors.push(`geo/cities.json [${parsed.data.id}]: unknown region "${parsed.data.region}"`);
+    const place = parsedPlaces.find((p) => p.kind === 'city' && p.cityId === parsed.data.id);
+    if (!place) {
+      errors.push(`geo/cities.json [${parsed.data.id}]: no matching city in places.json`);
+      continue;
+    }
+    const fields = ['name', 'greekName', 'region', 'pleiadesId'] as const;
+    for (const field of fields) {
+      if (place[field] !== parsed.data[field]) {
+        errors.push(`geo/cities.json [${parsed.data.id}]: ${field} out of sync with places.json`);
+      }
+    }
+    if (
+      place.coordinates[0] !== parsed.data.coordinates[0] ||
+      place.coordinates[1] !== parsed.data.coordinates[1]
+    ) {
+      errors.push(`geo/cities.json [${parsed.data.id}]: coordinates out of sync with places.json`);
     }
   }
+  for (const place of parsedPlaces.filter((p) => p.kind === 'city')) {
+    const legacy = (citiesRaw as { id?: string }[]).find((c) => c.id === place.cityId);
+    if (!legacy) errors.push(`geo/places.json [${place.id}]: missing deprecated cities.json entry`);
+  }
+} else {
+  errors.push('geo/cities.json: expected a JSON array');
 }
 
 const lineageDir = join(DATA_DIR, 'lineages');
@@ -231,6 +380,49 @@ if (existsSync(storyDir)) {
   }
 }
 
+// Resolve place → story links after stories are loaded.
+for (const place of parsedPlaces) {
+  for (const id of place.storyIds ?? []) {
+    if (!storyIds.has(id)) errors.push(`geo/places.json [${place.id}]: unknown storyId "${id}"`);
+  }
+}
+
+if (Array.isArray(featuresRaw)) {
+  for (const f of featuresRaw) {
+    const parsed = geoFeatureSchema.safeParse(f);
+    if (!parsed.success) continue;
+    for (const id of parsed.data.storyIds ?? []) {
+      if (!storyIds.has(id)) {
+        errors.push(`geo/features.json [${parsed.data.id}]: unknown storyId "${id}"`);
+      }
+    }
+  }
+}
+
+// Optional saga artwork galleries (story pages).
+let storyCultureCount = 0;
+const storyCultureDir = join(DATA_DIR, 'story-culture');
+if (existsSync(storyCultureDir)) {
+  for (const file of readdirSync(storyCultureDir).filter((f) => f.endsWith('.json'))) {
+    const raw = loadJson(join(storyCultureDir, file));
+    if (raw === null) continue;
+    const parsed = cultureSchema.safeParse(raw);
+    if (!parsed.success) {
+      errors.push(
+        `story-culture/${file}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+      );
+      continue;
+    }
+    if (file !== `${parsed.data.id}.json`) {
+      errors.push(`story-culture/${file}: filename must match id "${parsed.data.id}"`);
+    }
+    if (!storyIds.has(parsed.data.id)) {
+      errors.push(`story-culture/${file}: unknown story "${parsed.data.id}"`);
+    }
+    storyCultureCount++;
+  }
+}
+
 // 7. Every disputed topic must be documented before it can surface in the UI.
 const contradictions = readFileSync(CONTRADICTIONS_PATH, 'utf-8');
 const documentedTopics = new Set(
@@ -247,7 +439,7 @@ for (const [topic, entries] of topics) {
 }
 
 console.log(
-  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Regions: ${regionIds.size} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Disputed topics: ${info.length}`,
+  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Disputed topics: ${info.length}`,
 );
 for (const line of info) console.log(`  ⚖ ${line}`);
 

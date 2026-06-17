@@ -1,0 +1,63 @@
+{
+  "id": "euryalus-aeolid",
+  "name": "Euryalus",
+  "greekName": "Εὐρύαλος",
+  "romanName": "Euryalus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Diomedes' companion",
+    "the Trojan War",
+    "Aeolid descent"
+  ],
+  "summary": [
+    {
+      "text": "Son of Mecisteus and grandson of Talaus, Euryalus was the godlike warrior who sailed with Diomedes from Argos to Troy and fell fighting before the wall in Patroclus' aristeia.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 2.565–570, 16.650–665; Bibliotheca 1.9.13"
+    },
+    {
+      "text": "Distinct from the Phaeacian boxer, the Dulichian suitor, and the other Homeric warriors of the same name.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 8.200–234; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names him only as the son of Mecisteus who went to Troy, in the Biantid roll that runs from Bias through Talaus to the Theban and Trojan wars.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "text": "Homer gives him stature. With Diomedes and Sthenelus, son of Capaneus, he leads eighty ships from Argos, Corinth, Cleonae, and the towns about; the poet calls him a godlike man, son of king Mecisteus, son of Talaus. At Patroclus' funeral games his father's older fame is recalled: Talaus had once come to Thebes for Oedipus' burial and defeated all the sons of Cadmus.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.565–570, 23.678–680"
+    },
+    {
+      "text": "He died in the counter-attack after Patroclus stormed the wall. Dolon, scouting for Hector, named him among the mightiest Argives; and when the Trojans drove the Greeks back, Euryalus was slain on the plain and Sthenelus, coming up at once, stripped the armour from his body.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 10.218–230, 16.650–665"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

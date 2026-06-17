@@ -1,0 +1,26 @@
+{
+  "city": "halicarnassus",
+  "reigns": [
+    {
+      "ruler": "Aetius",
+      "characterId": "aetius-halicarnassus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.9",
+      "note": "Descendant of Anthas who led Troezenian colonists to found Halicarnassus in Caria."
+    },
+    {
+      "ruler": "Mausolus",
+      "characterId": "mausolus-halicarnassus",
+      "sources": ["pausanias", "hyginus"],
+      "citation": "Paus. 8.16.4; Fab. 223",
+      "note": "King for whom the great tomb was built — the wonder that gave its name to mausolea."
+    },
+    {
+      "ruler": "Artemisia",
+      "characterId": "artemisia-halicarnassus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 3.11.3",
+      "note": "Daughter of Lygdamis and queen who fought at Salamis on Xerxes' side."
+    }
+  ]
+}

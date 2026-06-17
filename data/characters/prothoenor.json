@@ -1,0 +1,28 @@
+{
+  "id": "prothoenor",
+  "name": "Prothoënor",
+  "greekName": "Prothoēnōr (Προθοήνωρ)",
+  "type": "hero",
+  "domains": ["Boeotian command", "the fifty ships", "son of Areilycus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Areilycus (`areilycus-achaean`) — and, in Hyginus, of Theobula (`theobula-boeotian`) — captain of the Boeotians at Troy, one of the five leaders of the fifty ships, whom Polydamas smote through the right shoulder with his spear until he fell clutching the dust.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.494–510, 14.440–470"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Prothoënor stands among the captains of the Boeotians who followed Agamemnon to Ilios with fifty ships from the towns of Boeotia. When the battle surged about the wall and Trojans and Danaans clashed in fierce conflict, Polydamas son of Panthous came to bear Hector aid and cast his spear upon the right shoulder of Prothoënor son of Areïlycus; through the shoulder the bronze held its way, and he fell in the dust clutching the ground with his palm.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510, 14.440–470"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}
