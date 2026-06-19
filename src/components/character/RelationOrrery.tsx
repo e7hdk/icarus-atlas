@@ -20,7 +20,7 @@ export function RelationOrrery({
   relations,
 }: {
   character: Character;
-  characters: Character[];
+  characters: Pick<Character, 'id' | 'name' | 'type'>[];
   relations: Relation[];
 }) {
   const router = useRouter();

@@ -16,7 +16,7 @@ export function PoetsView({
   sources,
 }: {
   character: Character;
-  characters: Character[];
+  characters: Pick<Character, 'id' | 'name' | 'type'>[];
   relations: Relation[];
   sources: Source[];
 }) {

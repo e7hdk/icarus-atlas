@@ -27,6 +27,15 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
   const teaser = culture?.artworks.slice(0, 3) ?? [];
   const storyIndex = storiesById(stories);
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
+  const orreryRelations = relations.filter(
+    (relation) => relation.from === character.id || relation.to === character.id,
+  );
+  const orreryCharacterIds = new Set(
+    orreryRelations.flatMap((relation) => [relation.from, relation.to]),
+  );
+  const orreryCharacters = characters
+    .filter((candidate) => orreryCharacterIds.has(candidate.id))
+    .map(({ id: candidateId, name, type }) => ({ id: candidateId, name, type }));
 
   return (
     <CharacterShell
@@ -38,8 +47,8 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
     >
       <PoetsView
         character={character}
-        characters={characters}
-        relations={relations}
+        characters={orreryCharacters}
+        relations={orreryRelations}
         sources={sources}
       />
 
