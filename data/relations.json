@@ -37890,5 +37890,1506 @@
     ],
     "topic": "idmon-parentage",
     "note": "Fabulae 14 (some say son of Abas, an Argive)"
+  },
+  {
+    "id": "andromache-parent-eetion-cilicia",
+    "type": "parent",
+    "from": "andromache",
+    "to": "eetion-cilicia",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "Daughter of great-hearted Eetion, lord of Thebe under wooded Placus (Hom. Il. 6.395–397, 22.479–480); Hector married Andromache, daughter of Eetion (Apollod. 3.12.6)"
+  },
+  {
+    "id": "byblis-miletus-parent-cyane-maeander",
+    "type": "parent",
+    "from": "byblis-miletus",
+    "to": "cyane-maeander",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Cyane daughter of the Maeander bore Miletus the twins Byblis and Caunus (Ov. Met. 9.676–831)"
+  },
+  {
+    "id": "caunus-miletus-parent-cyane-maeander",
+    "type": "parent",
+    "from": "caunus-miletus",
+    "to": "cyane-maeander",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Twin of Byblis, son of Cyane and Miletus (Ov. Met. 9.676–831)"
+  },
+  {
+    "id": "agelaus-lydian-parent-heracles",
+    "type": "parent",
+    "from": "agelaus-lydian",
+    "to": "heracles",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "By Omphale Heracles had Agelaus (Bibliotheca 2.7.8)"
+  },
+  {
+    "id": "agelaus-lydian-parent-omphale",
+    "type": "parent",
+    "from": "agelaus-lydian",
+    "to": "omphale",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "By Omphale Heracles had Agelaus, from whom the family of Croesus was descended (Bibliotheca 2.7.8)"
+  },
+  {
+    "id": "marsyas-phrygia-slayer-apollo",
+    "type": "slayer",
+    "from": "apollo",
+    "to": "marsyas-phrygia",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Apollo slew Marsyas in the music contest and flayed him (Bibliotheca 1.4.2; Ov. Met. 6.622–667)"
+  },
+  {
+    "id": "pergamus-neoptolemid-parent-neoptolemus",
+    "type": "parent",
+    "from": "pergamus-neoptolemid",
+    "to": "neoptolemus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Youngest son of Neoptolemus by Andromache (Description of Greece 1.11.1)"
+  },
+  {
+    "id": "pergamus-neoptolemid-parent-andromache",
+    "type": "parent",
+    "from": "pergamus-neoptolemid",
+    "to": "andromache",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Youngest son of Neoptolemus by Andromache; she accompanied him to Teuthrania (Description of Greece 1.11.1–2)"
+  },
+  {
+    "id": "pergamus-neoptolemid-slayer-areius-teuthrania",
+    "type": "slayer",
+    "from": "pergamus-neoptolemid",
+    "to": "areius-teuthrania",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Killed Areius despot of Teuthrania in single combat for the kingdom (Description of Greece 1.11.2)"
+  },
+  {
+    "id": "artemisia-halicarnassus-parent-lygdamis-halicarnassus",
+    "type": "parent",
+    "from": "artemisia-halicarnassus",
+    "to": "lygdamis-halicarnassus",
+    "sources": [
+      "pausanias"
+    ],
+    "note": "Daughter of Lygdamis, king of Halicarnassus (Description of Greece 3.11.3)"
+  },
+  {
+    "id": "sinope-nymph-parent-asopus",
+    "type": "parent",
+    "from": "sinope-nymph",
+    "to": "asopus",
+    "sources": [
+      "apollonius"
+    ],
+    "note": "Daughter of Asopus on the Assyrian shore (Argonautica 2.946)"
+  },
+  {
+    "id": "lavinia-parent-latinus-king",
+    "type": "parent",
+    "from": "lavinia",
+    "to": "latinus-king",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Aeneas won the daughter of Latinus, Faunus' son (Ov. Met. 14.639–761)"
+  },
+  {
+    "id": "aeneas-consort-lavinia",
+    "type": "consort",
+    "from": "aeneas",
+    "to": "lavinia",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Married Lavinia after war with Turnus in the Laurentine strand (Ov. Met. 14.639–841)"
+  },
+  {
+    "id": "lavinia-consort-aeneas",
+    "type": "consort",
+    "from": "lavinia",
+    "to": "aeneas",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Bride of Aeneas, daughter of Latinus (Ov. Met. 14.639–841)"
+  },
+  {
+    "id": "ascanius-dardanian-parent-aeneas",
+    "type": "parent",
+    "from": "ascanius-dardanian",
+    "to": "aeneas",
+    "sources": [
+      "ovid",
+      "hyginus",
+      "apollodorus"
+    ],
+    "note": "Aeneas rescued Ascanius his son from the fire (Hyg. Fab. 94, 254); carried child Ascanius west (Ov. Met. 13.899–1014); escaped Troy with Anchises and Ascanius (Apollod. Epit. 5.21, 6.20)"
+  },
+  {
+    "id": "alpheus-parent-oceanus",
+    "type": "parent",
+    "from": "alpheus",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Tethys bore Alpheus among the eddying rivers (Theogony 337–345)"
+  },
+  {
+    "id": "alpheus-parent-tethys",
+    "type": "parent",
+    "from": "alpheus",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Tethys bore Alpheus among the eddying rivers (Theogony 337–345)"
+  },
+  {
+    "id": "alpheus-lover-arethusa-nymph",
+    "type": "lover",
+    "from": "alpheus",
+    "to": "arethusa-nymph",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Alpheus mingled his waters with hers and pursued her in love until she fled beneath the earth to Ortygia (Ov. Met. 5.746–868)"
+  },
+  {
+    "id": "arethusa-nymph-lover-alpheus",
+    "type": "lover",
+    "from": "arethusa-nymph",
+    "to": "alpheus",
+    "sources": [
+      "ovid"
+    ],
+    "note": "The river-god pursued Arethusa until Diana opened the earth and she rose at Syracuse (Ov. Met. 5.746–868)"
+  },
+  {
+    "id": "aeneas-ally-sibyl-cumae",
+    "type": "ally",
+    "from": "aeneas",
+    "to": "sibyl-cumae",
+    "sources": [
+      "ovid"
+    ],
+    "note": "The Sibyl guided Aeneas to Avernus and Anchises' shade (Ov. Met. 14.154–335)"
+  },
+  {
+    "id": "sibyl-cumae-ally-aeneas",
+    "type": "ally",
+    "from": "sibyl-cumae",
+    "to": "aeneas",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Guided Trojan Aeneas through the underworld at Cumae (Ov. Met. 14.154–335)"
+  },
+  {
+    "id": "lycurgus-thrace-parent-dryas-thrace",
+    "type": "parent",
+    "from": "lycurgus-thrace",
+    "to": "dryas-thrace",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Lycurgus son of Dryas, king of the Edonians beside the Strymon (Il. 6.130–140; Apollod. 3.5.1; Hyg. Fab. 132)"
+  },
+  {
+    "id": "lycurgus-thrace-adversary-dionysus",
+    "type": "adversary",
+    "from": "lycurgus-thrace",
+    "to": "dionysus",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus",
+      "ovid"
+    ],
+    "note": "First to insult and expel Dionysus; drove the nurses from Nysa with an ox-goad (Il. 6.130–140; Apollod. 3.5.1; Hyg. Fab. 132; Ov. Met. 4.1–75)"
+  },
+  {
+    "id": "thetis-ally-dionysus",
+    "type": "ally",
+    "from": "thetis",
+    "to": "dionysus",
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
+    "note": "Received fleeing Dionysus in her bosom when Lycurgus drove him beneath the waves (Il. 6.135–137; Apollod. 3.5.1)"
+  },
+  {
+    "id": "acoetes-tyrrhenian-ally-dionysus",
+    "type": "ally",
+    "from": "acoetes-tyrrhenian",
+    "to": "dionysus",
+    "sources": [
+      "ovid",
+      "hyginus",
+      "apollodorus"
+    ],
+    "note": "Pilot who recognized the god and was spared when Tyrrhenian pirates became dolphins (Apollod. 3.5.3; Ov. Met. 3.582–691; Hyg. Fab. 134)"
+  },
+  {
+    "id": "orpheus-parent-oeagrus",
+    "type": "parent",
+    "from": "orpheus",
+    "to": "oeagrus",
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "Son of Oeagrus in the Argonaut muster and genealogical catalogue (Bibliotheca 1.3.2, 1.9.16; Arg. 1.23; Hyg. Fab. 14)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "orpheus-parent-calliope",
+    "type": "parent",
+    "from": "orpheus",
+    "to": "calliope",
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "Calliope bore Orpheus to Oeagrus near Pimpleia (Bibliotheca 1.3.2; Arg. 1.23; Hyg. Fab. 14)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "orpheus-parent-apollo",
+    "type": "parent",
+    "from": "orpheus",
+    "to": "apollo",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Nominally borne to Apollo in Apollodorus' admitted variant (Bibliotheca 1.3.2)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "linus-orpheus-parent-oeagrus",
+    "type": "parent",
+    "from": "linus-orpheus",
+    "to": "oeagrus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Elder brother of Orpheus, son of Oeagrus and Calliope (Bibliotheca 1.3.2, 2.4.9)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "linus-orpheus-parent-calliope",
+    "type": "parent",
+    "from": "linus-orpheus",
+    "to": "calliope",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Calliope bore Linus to Oeagrus before Orpheus (Bibliotheca 1.3.2)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "orpheus-sibling-linus-orpheus",
+    "type": "sibling",
+    "from": "orpheus",
+    "to": "linus-orpheus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Brothers, sons of Calliope and Oeagrus (Bibliotheca 1.3.2)"
+  },
+  {
+    "id": "linus-orpheus-sibling-orpheus",
+    "type": "sibling",
+    "from": "linus-orpheus",
+    "to": "orpheus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Brothers, sons of Calliope and Oeagrus (Bibliotheca 1.3.2)"
+  },
+  {
+    "id": "orpheus-consort-eurydice-orpheus",
+    "type": "consort",
+    "from": "orpheus",
+    "to": "eurydice-orpheus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Wedded Eurydice, lost to the serpent and reclaimed too briefly (Bibliotheca 1.3.2; Ov. Met. 10.1–95; Hyg. Fab. 251)"
+  },
+  {
+    "id": "eurydice-orpheus-consort-orpheus",
+    "type": "consort",
+    "from": "eurydice-orpheus",
+    "to": "orpheus",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Wife of Orpheus (Bibliotheca 1.3.2; Ov. Met. 10.1–95; Hyg. Fab. 251)"
+  },
+  {
+    "id": "ciconian-maenads-slayer-orpheus",
+    "type": "slayer",
+    "from": "ciconian-maenads",
+    "to": "orpheus",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Maenads tore Orpheus in pieces for shunning their love (Bibliotheca 1.3.2; Ov. Met. 11.1–66)"
+  },
+  {
+    "id": "apollo-ally-orpheus",
+    "type": "ally",
+    "from": "apollo",
+    "to": "orpheus",
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
+    "note": "Nominal father in Apollodorus; saved Orpheus' head from a serpent on Lesbos in Ovid (Bibliotheca 1.3.2; Ov. Met. 11.66–99)"
+  },
+  {
+    "id": "orpheus-ally-apollo",
+    "type": "ally",
+    "from": "orpheus",
+    "to": "apollo",
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
+    "note": "Nominal father in Apollodorus; patron who saved his head on Lesbos (Bibliotheca 1.3.2; Ov. Met. 11.66–99)"
+  },
+  {
+    "id": "oeagrus-consort-calliope",
+    "type": "consort",
+    "from": "oeagrus",
+    "to": "calliope",
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "Calliope bore Orpheus wedded to Thracian Oeagrus (Bibliotheca 1.3.2; Arg. 1.23; Hyg. Fab. 14)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "calliope-consort-oeagrus",
+    "type": "consort",
+    "from": "calliope",
+    "to": "oeagrus",
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "Wedded to Oeagrus when she bore Orpheus (Bibliotheca 1.3.2; Arg. 1.23; Hyg. Fab. 14)",
+    "topic": "orpheus-parentage"
+  },
+  {
+    "id": "heracles-slayer-linus-orpheus",
+    "type": "slayer",
+    "from": "heracles",
+    "to": "linus-orpheus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Heracles slew Linus with a blow of the lyre at Thebes (Bibliotheca 2.4.9)"
+  },
+  {
+    "id": "chiron-ally-aristaeus",
+    "type": "ally",
+    "from": "chiron",
+    "to": "aristaeus",
+    "sources": [
+      "apollonius"
+    ],
+    "note": "Apollo brought the infant Aristaeus to Cheiron's cave to be nurtured (Argonautica 2.500–527)"
+  },
+  {
+    "id": "boreas-parent-eos",
+    "type": "parent",
+    "from": "boreas",
+    "to": "eos",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Eos bore Boreas to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "boreas-parent-astraeus",
+    "type": "parent",
+    "from": "boreas",
+    "to": "astraeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Strong-hearted Boreas born to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "notus-parent-eos",
+    "type": "parent",
+    "from": "notus",
+    "to": "eos",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Eos bore Notus to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "notus-parent-astraeus",
+    "type": "parent",
+    "from": "notus",
+    "to": "astraeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Notus born to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "zephyrus-parent-eos",
+    "type": "parent",
+    "from": "zephyrus",
+    "to": "eos",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Eos bore Zephyrus to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "zephyrus-parent-astraeus",
+    "type": "parent",
+    "from": "zephyrus",
+    "to": "astraeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Brightening Zephyrus born to Astraeus (Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface)"
+  },
+  {
+    "id": "eurus-parent-eos",
+    "type": "parent",
+    "from": "eurus",
+    "to": "eos",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Fourth wind added to the Astraeus–Eos brood in the later canon (Theogony 378–382; Bibliotheca 1.2.4; Metamorphoses 1.56–66)"
+  },
+  {
+    "id": "eurus-parent-astraeus",
+    "type": "parent",
+    "from": "eurus",
+    "to": "astraeus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "East wind Eurus counted among the wind-brothers (Theogony 378–382; Bibliotheca 1.2.4; Metamorphoses 1.56–66)"
+  },
+  {
+    "id": "notus-sibling-boreas",
+    "type": "sibling",
+    "from": "notus",
+    "to": "boreas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "The strong-hearted winds born to Eos and Astraeus (Theogony 378–382; Bibliotheca 1.2.4)"
+  },
+  {
+    "id": "notus-sibling-zephyrus",
+    "type": "sibling",
+    "from": "notus",
+    "to": "zephyrus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 378–382; Bibliotheca 1.2.4"
+  },
+  {
+    "id": "notus-sibling-eurus",
+    "type": "sibling",
+    "from": "notus",
+    "to": "eurus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Wind-brothers in the later fourfold compass (Theogony 378–382; Metamorphoses 1.56–66)"
+  },
+  {
+    "id": "zephyrus-sibling-boreas",
+    "type": "sibling",
+    "from": "zephyrus",
+    "to": "boreas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 378–382; Bibliotheca 1.2.4"
+  },
+  {
+    "id": "zephyrus-sibling-notus",
+    "type": "sibling",
+    "from": "zephyrus",
+    "to": "notus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Theogony 378–382; Bibliotheca 1.2.4"
+  },
+  {
+    "id": "zephyrus-sibling-eurus",
+    "type": "sibling",
+    "from": "zephyrus",
+    "to": "eurus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Metamorphoses 1.56–66"
+  },
+  {
+    "id": "eurus-sibling-boreas",
+    "type": "sibling",
+    "from": "eurus",
+    "to": "boreas",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Metamorphoses 1.56–66"
+  },
+  {
+    "id": "eurus-sibling-notus",
+    "type": "sibling",
+    "from": "eurus",
+    "to": "notus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Metamorphoses 1.56–66"
+  },
+  {
+    "id": "eurus-sibling-zephyrus",
+    "type": "sibling",
+    "from": "eurus",
+    "to": "zephyrus",
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "ovid"
+    ],
+    "note": "Metamorphoses 1.56–66"
+  },
+  {
+    "id": "dorus-hellene-parent-hellen",
+    "type": "parent",
+    "from": "dorus-hellene",
+    "to": "hellen",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Hellen had Dorus, Xuthus and Aeolus by the nymph Orseis (Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "dorus-hellene-parent-orseis",
+    "type": "parent",
+    "from": "dorus-hellene",
+    "to": "orseis",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "(Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "achaea-parent-zeus",
+    "type": "parent",
+    "from": "achaea",
+    "to": "zeus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "topic": "achaean-eponym",
+    "note": "Theogony 1000 ethnic eponym roll vs Apollodorus' Achaeus son of Xuthus (Bibliotheca 1.7.3)"
+  },
+  {
+    "id": "pleione-oceanid-parent-oceanus",
+    "type": "parent",
+    "from": "pleione-oceanid",
+    "to": "oceanus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Pleione, daughter of Ocean (Bibliotheca 3.10.1; Fabulae p.9)"
+  },
+  {
+    "id": "pleione-oceanid-parent-tethys",
+    "type": "parent",
+    "from": "pleione-oceanid",
+    "to": "tethys",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Pleione, daughter of Ocean and Tethys (Bibliotheca 3.10.1; Astronomica 2.21.3)"
+  },
+  {
+    "id": "atlas-consort-pleione-oceanid",
+    "type": "consort",
+    "from": "atlas",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Atlas and Pleione, daughter of Ocean (Bibliotheca 3.10.1; Fabulae p.9)"
+  },
+  {
+    "id": "maia-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "maia",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "One of the seven Pleiades, daughter of Atlas and Pleione (Bibliotheca 3.10.1)"
+  },
+  {
+    "id": "alcyone-pleiad-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "alcyone-pleiad",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "merope-pleiad-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "merope-pleiad",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "celaeno-pleiad-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "celaeno-pleiad",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "electra-pleiad-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "electra-pleiad",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "sterope-pleiad-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "sterope-pleiad",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "taygete-parent-pleione-oceanid",
+    "type": "parent",
+    "from": "taygete",
+    "to": "pleione-oceanid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Bibliotheca 3.10.1; Fabulae p.9"
+  },
+  {
+    "id": "peneus-parent-oceanus",
+    "type": "parent",
+    "from": "peneus",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Tethys bore Peneus among the eddying rivers (Theogony 337–345)"
+  },
+  {
+    "id": "peneus-parent-tethys",
+    "type": "parent",
+    "from": "peneus",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Tethys bore Peneus among the eddying rivers (Theogony 337–345)"
+  },
+  {
+    "id": "peneus-parent-cyrene-nymph",
+    "type": "parent",
+    "from": "peneus",
+    "to": "cyrene-nymph",
+    "sources": [
+      "apollonius",
+      "hyginus"
+    ],
+    "note": "Cyrene daughter of Peneus (Argonautica 2.500–527; Fabulae 161)"
+  },
+  {
+    "id": "peneus-parent-daphne-nymph",
+    "type": "parent",
+    "from": "peneus",
+    "to": "daphne-nymph",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Daphne daughter of Peneus (Metamorphoses 1.452–748)"
+  },
+  {
+    "id": "simois-parent-oceanus",
+    "type": "parent",
+    "from": "simois",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Holy Simois among the rivers of Ocean and Tethys (Theogony 337–345)"
+  },
+  {
+    "id": "simois-parent-tethys",
+    "type": "parent",
+    "from": "simois",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Holy Simois among the rivers of Ocean and Tethys (Theogony 337–345)"
+  },
+  {
+    "id": "simois-sibling-scamander",
+    "type": "sibling",
+    "from": "simois",
+    "to": "scamander",
+    "sources": [
+      "homer",
+      "hesiod"
+    ],
+    "note": "Twin rivers of Troy; Scamander calls Simoeis 'beloved brother' (Iliad 21.307–382; Theogony 337–345)"
+  },
+  {
+    "id": "strymon-parent-oceanus",
+    "type": "parent",
+    "from": "strymon",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Strymon among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "strymon-parent-tethys",
+    "type": "parent",
+    "from": "strymon",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Strymon among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "rhesus-parent-strymon",
+    "type": "parent",
+    "from": "rhesus",
+    "to": "strymon",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "rhesus-mother",
+    "note": "Euterpe bore Rhesus to the river Strymon (Bibliotheca 1.3.4)"
+  },
+  {
+    "id": "ladon-river-parent-oceanus",
+    "type": "parent",
+    "from": "ladon-river",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Arcadian Ladon among the rivers of Ocean and Tethys (Theogony 337–345); not the dragon `ladon`"
+  },
+  {
+    "id": "ladon-river-parent-tethys",
+    "type": "parent",
+    "from": "ladon-river",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Arcadian Ladon among the rivers of Ocean and Tethys (Theogony 337–345); not the dragon `ladon`"
+  },
+  {
+    "id": "metope-parent-ladon-river",
+    "type": "parent",
+    "from": "metope",
+    "to": "ladon-river",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Metope daughter of the river Ladon (Bibliotheca 3.12.6)"
+  },
+  {
+    "id": "cephisus-parent-oceanus",
+    "type": "parent",
+    "from": "cephisus",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Cephisus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "cephisus-parent-tethys",
+    "type": "parent",
+    "from": "cephisus",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Cephisus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "ilissus-parent-oceanus",
+    "type": "parent",
+    "from": "ilissus",
+    "to": "oceanus",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Ilissus among the Rivers of Oceanus and Tethys (Fabulae preface)"
+  },
+  {
+    "id": "ilissus-parent-tethys",
+    "type": "parent",
+    "from": "ilissus",
+    "to": "tethys",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Ilissus among the Rivers of Oceanus and Tethys (Fabulae preface)"
+  },
+  {
+    "id": "telesto-oceanid-parent-oceanus",
+    "type": "parent",
+    "from": "telesto-oceanid",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Telesto among the eldest daughters of Ocean and Tethys (Theogony 358–361)"
+  },
+  {
+    "id": "telesto-oceanid-parent-tethys",
+    "type": "parent",
+    "from": "telesto-oceanid",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Telesto among the eldest daughters of Ocean and Tethys (Theogony 358–361)"
+  },
+  {
+    "id": "ianthe-oceanid-parent-oceanus",
+    "type": "parent",
+    "from": "ianthe-oceanid",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Ianthe among the daughters of Ocean and Tethys (Theogony 346–349; Fabulae preface)"
+  },
+  {
+    "id": "ianthe-oceanid-parent-tethys",
+    "type": "parent",
+    "from": "ianthe-oceanid",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Ianthe among the daughters of Ocean and Tethys (Theogony 346–349; Fabulae preface)"
+  },
+  {
+    "id": "eudora-oceanid-parent-oceanus",
+    "type": "parent",
+    "from": "eudora-oceanid",
+    "to": "oceanus",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Eudora among the eldest daughters of Ocean and Tethys (Theogony 358–361)"
+  },
+  {
+    "id": "eudora-oceanid-parent-tethys",
+    "type": "parent",
+    "from": "eudora-oceanid",
+    "to": "tethys",
+    "sources": [
+      "hesiod"
+    ],
+    "note": "Eudora among the eldest daughters of Ocean and Tethys (Theogony 358–361)"
+  },
+  {
+    "id": "tyche-oceanid-parent-oceanus",
+    "type": "parent",
+    "from": "tyche-oceanid",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "pausanias"
+    ],
+    "note": "Tyche among the eldest daughters of Ocean and Tethys (Theogony 358–361; Homeric Hymn to Demeter 5.420 via Pausanias 4.30.4)"
+  },
+  {
+    "id": "tyche-oceanid-parent-tethys",
+    "type": "parent",
+    "from": "tyche-oceanid",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "pausanias"
+    ],
+    "note": "Tyche among the eldest daughters of Ocean and Tethys (Theogony 358–361; Homeric Hymn to Demeter 5.420 via Pausanias 4.30.4)"
+  },
+  {
+    "id": "eridanus-parent-oceanus",
+    "type": "parent",
+    "from": "eridanus",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Eridanus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "eridanus-parent-tethys",
+    "type": "parent",
+    "from": "eridanus",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Eridanus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "sangarius-parent-oceanus",
+    "type": "parent",
+    "from": "sangarius",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Sangarius among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "sangarius-parent-tethys",
+    "type": "parent",
+    "from": "sangarius",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Sangarius among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "hermus-parent-oceanus",
+    "type": "parent",
+    "from": "hermus",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Hermus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "hermus-parent-tethys",
+    "type": "parent",
+    "from": "hermus",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Hermus among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "meander-parent-oceanus",
+    "type": "parent",
+    "from": "meander",
+    "to": "oceanus",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Meander among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "meander-parent-tethys",
+    "type": "parent",
+    "from": "meander",
+    "to": "tethys",
+    "sources": [
+      "hesiod",
+      "hyginus"
+    ],
+    "note": "Meander among the rivers of Ocean and Tethys (Theogony 337–345; Fabulae preface)"
+  },
+  {
+    "id": "cyane-maeander-parent-meander",
+    "type": "parent",
+    "from": "cyane-maeander",
+    "to": "meander",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Cyane daughter of the Maeander (Metamorphoses 9.676–831)"
+  },
+  {
+    "id": "actaea-parent-nereus",
+    "type": "parent",
+    "from": "actaea",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "actaea-parent-doris-oceanid",
+    "type": "parent",
+    "from": "actaea",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "amatheia-parent-nereus",
+    "type": "parent",
+    "from": "amatheia",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "amatheia-parent-doris-oceanid",
+    "type": "parent",
+    "from": "amatheia",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "cymodoce-parent-nereus",
+    "type": "parent",
+    "from": "cymodoce",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "cymodoce-parent-doris-oceanid",
+    "type": "parent",
+    "from": "cymodoce",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "cymothoe-parent-nereus",
+    "type": "parent",
+    "from": "cymothoe",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "cymothoe-parent-doris-oceanid",
+    "type": "parent",
+    "from": "cymothoe",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "dynamene-parent-nereus",
+    "type": "parent",
+    "from": "dynamene",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "dynamene-parent-doris-oceanid",
+    "type": "parent",
+    "from": "dynamene",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "galene-parent-nereus",
+    "type": "parent",
+    "from": "galene",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "galene-parent-doris-oceanid",
+    "type": "parent",
+    "from": "galene",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "halie-nereid-parent-nereus",
+    "type": "parent",
+    "from": "halie-nereid",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "halie-nereid-parent-doris-oceanid",
+    "type": "parent",
+    "from": "halie-nereid",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "ianeira-parent-nereus",
+    "type": "parent",
+    "from": "ianeira",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "ianeira-parent-doris-oceanid",
+    "type": "parent",
+    "from": "ianeira",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "ianassa-parent-nereus",
+    "type": "parent",
+    "from": "ianassa",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "ianassa-parent-doris-oceanid",
+    "type": "parent",
+    "from": "ianassa",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "nemertes-nereid-parent-nereus",
+    "type": "parent",
+    "from": "nemertes-nereid",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "nemertes-nereid-parent-doris-oceanid",
+    "type": "parent",
+    "from": "nemertes-nereid",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "neso-parent-nereus",
+    "type": "parent",
+    "from": "neso",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "neso-parent-doris-oceanid",
+    "type": "parent",
+    "from": "neso",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "panopea-parent-nereus",
+    "type": "parent",
+    "from": "panopea",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "panopea-parent-doris-oceanid",
+    "type": "parent",
+    "from": "panopea",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "pherusa-parent-nereus",
+    "type": "parent",
+    "from": "pherusa",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "pherusa-parent-doris-oceanid",
+    "type": "parent",
+    "from": "pherusa",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "proto-nereid-parent-nereus",
+    "type": "parent",
+    "from": "proto-nereid",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "proto-nereid-parent-doris-oceanid",
+    "type": "parent",
+    "from": "proto-nereid",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "speo-parent-nereus",
+    "type": "parent",
+    "from": "speo",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "speo-parent-doris-oceanid",
+    "type": "parent",
+    "from": "speo",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "thalia-nereid-parent-nereus",
+    "type": "parent",
+    "from": "thalia-nereid",
+    "to": "nereus",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "thalia-nereid-parent-doris-oceanid",
+    "type": "parent",
+    "from": "thalia-nereid",
+    "to": "doris-oceanid",
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
+    "note": "Theogony 240–264; Bibliotheca 1.2.7"
   }
 ]

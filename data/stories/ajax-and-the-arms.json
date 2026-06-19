@@ -1,0 +1,173 @@
+{
+  "id": "ajax-and-the-arms",
+  "title": "The Madness of Ajax",
+  "greekTitle": "Αἴας καὶ τὰ ὅπλα τοῦ Ἀχιλλέως",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.30,
+  "summary": {
+    "text": "When Achilles fell at the Scaean gate, Telamonian Ajax carried the body through a shower of darts while Odysseus fought off the assailants — yet at the funeral games the army judged the hero's armour to the Ithacan, not to the bulwark of the Achaeans; Athena drove Ajax mad among the cattle, and he fell on his sword, his shade still wrathful when Odysseus met him in Hades.",
+    "sources": [
+      "apollodorus",
+      "homer",
+      "ovid"
+    ],
+    "citation": "Apollod. Epit. 5.4–5.7; Hom. Od. 11.543–564; Ov. Met. 12.831–901, 13.1–398"
+  },
+  "chapters": [
+    {
+      "title": "The body from the field",
+      "text": "Paris and Apollo had brought down Achilles at the Scaean gate, and the armour of the son of Peleus was stripped from the corpse while the Trojans pressed to take it. Ajax son of Telamon — not the Locrian captain who would later outrage Cassandra, but the greater Ajax, bulwark of the Achaeans with his tower-shield — killed Glaucus in the fight for the body, gave the captured arms to be carried to the ships, and bore the hero through the midst of the enemy in a shower of darts while Odysseus turned back the assailants. The nested episode on the Aethiopis tells Penthesilea, Memnon, and the death at the gate; here the war's mightiest mortal champion is ash, and the man who held the line while Achilles nursed his wrath must live in a host that no longer has its best warrior.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Apollod. Epit. 5.3–5.4; Hom. Od. 24.74–84"
+    },
+    {
+      "title": "Games for the dead",
+      "text": "The army buried Achilles with Patroclus on the White Isle, mingling their bones, and held funeral games in his honour. Eumelus won the chariot-race, Diomedes the footrace, Teucer the competition in archery — and Ajax son of Telamon carried off the quoit match, proving again that in sheer force of arm no man in the host surpassed him save the son of Peleus alone. Yet the arms Hephaestus had wrought for Achilles, the god-forged panoply Thetis had brought when her son returned to war, were set up as a separate prize for the bravest of the Achaeans — and on that award the games would turn from glory to ruin.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Apollod. Epit. 5.5; Hom. Il. 23"
+    },
+    {
+      "title": "Two claimants",
+      "text": "Neither Diomedes nor the lesser captains came forward for so great a prize. Ovid says the chiefs withdrew their claims — even Agamemnon — until only the greater Ajax and Odysseus dared contest the hero's shield. The Telamonian rose first among the seated army, lord of the sevenfold shield, and spoke from the Sigaean shore with the fleet behind him: he had held the line at the ships when Hector fired them, stood over Patroclus' body, and carried Achilles from the field — deeds of the hand, not of the tongue. Odysseus answered with all his eloquence, rehearsing stratagems from the embassy to Achilles to the theft of the Palladium yet to come. Apollodorus adds a disputed detail: the judges were either the captured Trojans or, according to some, the allies — and they preferred Odysseus.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. Epit. 5.6; Ov. Met. 12.831–901, 13.1–295"
+    },
+    {
+      "title": "Madness among the herds",
+      "text": "Disordered by chagrin, Ajax planned a nocturnal attack on the army — and Athena, who had never loved the man who defied her favourite at Troy, drove him mad. She turned him sword in hand among the cattle of the host, and in his frenzy he slaughtered the herds with their herdsmen, taking them for the Achaeans who had cheated him of honour. When the fit passed and he saw what he had done — the blood not of Odysseus and Agamemnon but of innocent beeves — the shame was more than the loss of the arms. The nested episode on Teucer to Cyprus tells how his half-brother the archer would later plead innocence before Telamon on Salamis; here the bulwark falls alone on the Trojan plain, before the wooden horse, before the sack.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. Epit. 5.6–5.7"
+    },
+    {
+      "title": "The sword and the silent shade",
+      "text": "Coming to himself, Ajax slew himself — and Troy still stood. The nested Little Iliad tells what followed: Philoctetes' bow, the Palladium, Epeius' horse. Years later, when Odysseus dug the pit of blood in the house of Hades, Achilles came with Patroclus and Antilochus, and Ajax son of Telamon stood apart from all the shades — still wrathful for the victory of Odysseus in the contest for Achilles' arms by the ships, and would not speak though the Ithacan king pleaded with gentle words. He must never be merged with Ajax son of Oileus, the Locrian who perished on the Gyraean rocks for Cassandra's outrage; the nested episode on the Locrian Ajax tells that wreck. Two heroes, one name: the Telamonian died by his own sword for a prize judged away; the Locrian died in the sea for a goddess' vengeance — and only the greater Ajax left a wrath that followed Odysseus even among the dead.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "ovid"
+      ],
+      "citation": "Apollod. Epit. 5.7; Hom. Od. 11.543–564; Ov. Met. 13.296–398"
+    }
+  ],
+  "cast": [
+    {
+      "id": "ajax-telamonian",
+      "name": "Ajax the Telamonian",
+      "role": "Bulwark cheated of the arms, then suicide"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Winner of the arms and of the contest of words"
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "role": "Dead hero whose panoply was the prize"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Goddess who drove him mad among the cattle"
+    },
+    {
+      "id": "teucer",
+      "name": "Teucer",
+      "role": "Half-brother who fought behind his shield and won the archery"
+    },
+    {
+      "id": "telamon",
+      "name": "Telamon",
+      "role": "King of Salamis, father of the fallen bulwark"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Lord of the host before whom the chiefs pleaded"
+    },
+    {
+      "id": "diomedes",
+      "name": "Diomedes",
+      "role": "Winner of the footrace at the funeral games"
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "role": "The archer at the Scaean gate"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Guide of the arrow that slew Achilles"
+    },
+    {
+      "id": "ajax-oileus",
+      "name": "Ajax the Locrian",
+      "role": "The lesser namesake, not this story's hero"
+    },
+    {
+      "id": "patroclus",
+      "name": "Patroclus",
+      "role": "Buried with Achilles, whose body Ajax had defended"
+    },
+    {
+      "id": "antilochus-nestor",
+      "name": "Antilochus",
+      "role": "Slain runner who came with Achilles among the shades"
+    }
+  ],
+  "places": [
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Plain where the games and the madness occurred"
+    },
+    {
+      "id": "salamis",
+      "name": "Salamis",
+      "role": "Kingdom of Telamon, whither Teucer would sail in grief"
+    },
+    {
+      "name": "The White Isle",
+      "role": "Where Achilles and Patroclus were buried together"
+    },
+    {
+      "name": "The house of Hades",
+      "role": "Where Ajax' shade still kept its wrath"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "5.4–5.7"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.543–564, 24.74–84"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "23"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "12.831–901, 13.1–398"
+    }
+  ]
+}

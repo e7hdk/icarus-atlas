@@ -47,7 +47,14 @@ import {
   PLACE_MYTH_GLOW_RADIUS,
   PLACE_MYTH_HIT_RADIUS,
   MAP,
+  riverCoreOpacityExpr,
+  riverGlowOpacityExpr,
+  riverHitWidthExpr,
 } from '@/features/geo/map-theme';
+import {
+  isLinearFeatureVisible,
+  liveMapParent,
+} from '@/features/geo/feature-visibility';
 
 const STYLE_URL = '/geo/style.json';
 const MANIFEST_URL = '/geo/manifest.json';
@@ -424,6 +431,25 @@ export function MapLibreView({
     setHoveredFeatureId(id);
   }, []);
 
+  const syncLinearFeatureVisibility = useCallback(
+    (map: MaplibreMap) => {
+      if (!map.getSource('features') || !map.getLayer('features-line-major')) return;
+      const zoom = map.getZoom();
+      const center = map.getCenter();
+      const liveParent = liveMapParent(zoom, center, regionsMetaRef.current);
+      const layers = mapLayersRef.current;
+
+      for (const feature of featuresRef.current) {
+        if (feature.kind !== 'river' && feature.kind !== 'strait') continue;
+        const show =
+          layers.rivers &&
+          isLinearFeatureVisible(feature, zoom, liveParent, byId, regionsMetaRef.current);
+        map.setFeatureState({ source: 'features', id: feature.id }, { show });
+      }
+    },
+    [byId],
+  );
+
   const syncDrilldownFromMap = useCallback((map: MaplibreMap) => {
     const meta = regionsMetaRef.current;
     if (!meta) return;
@@ -473,56 +499,45 @@ export function MapLibreView({
 
       const glowPaint = {
         'line-color': MAP.nebulaCyan,
-        'line-opacity': [
-          'case',
-          ['boolean', ['feature-state', 'hover'], false],
-          0.45,
-          MAP.riverGlowOpacity,
-        ] as maplibregl.ExpressionSpecification,
+        'line-opacity': riverGlowOpacityExpr(),
         'line-width': [
           'interpolate',
           ['linear'],
           ['zoom'],
           3,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 4, 2],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 3, 1.4],
           8,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 7, 4],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 5, 2.6],
           12,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 10, 6],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 7, 4],
         ] as maplibregl.ExpressionSpecification,
-        'line-blur': 0.45,
+        'line-blur': 0.35,
       };
 
       const corePaint = {
         'line-color': MAP.nebulaCyan,
-        'line-opacity': [
-          'case',
-          ['boolean', ['feature-state', 'hover'], false],
-          0.85,
-          MAP.riverCoreOpacity,
-        ] as maplibregl.ExpressionSpecification,
+        'line-opacity': riverCoreOpacityExpr(),
         'line-width': [
           'interpolate',
           ['linear'],
           ['zoom'],
           3,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 2.2, 1.2],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 1.6, 0.85],
           8,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 3, 1.8],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 2.2, 1.25],
           12,
-          ['case', ['boolean', ['feature-state', 'hover'], false], 4, 2.4],
+          ['case', ['boolean', ['feature-state', 'hover'], false], 2.8, 1.7],
         ] as maplibregl.ExpressionSpecification,
       };
 
-      for (const [suffix, importance, minzoom] of [
-        ['major', 'major', 3],
-        ['minor', 'minor', 5],
+      for (const [suffix, importance] of [
+        ['major', 'major'],
+        ['minor', 'minor'],
       ] as const) {
         map.addLayer({
           id: `features-glow-${suffix}`,
           type: 'line',
           source: 'features',
-          minzoom,
           filter: ['all', lineFilter, ['==', ['get', 'importance'], importance]] as maplibregl.FilterSpecification,
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: glowPaint,
@@ -531,7 +546,6 @@ export function MapLibreView({
           id: `features-line-${suffix}`,
           type: 'line',
           source: 'features',
-          minzoom,
           filter: ['all', lineFilter, ['==', ['get', 'importance'], importance]] as maplibregl.FilterSpecification,
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: corePaint,
@@ -542,11 +556,10 @@ export function MapLibreView({
         id: 'features-hit',
         type: 'line',
         source: 'features',
-        minzoom: 3,
         filter: lineFilter,
         layout: { 'line-join': 'round', 'line-cap': 'round' },
         paint: {
-          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 14, 12, 28],
+          'line-width': riverHitWidthExpr(),
           'line-opacity': 0,
         },
       });
@@ -952,7 +965,20 @@ export function MapLibreView({
     if (!map || !mapReady) return;
     const source = map.getSource('features') as maplibregl.GeoJSONSource | undefined;
     source?.setData(featureData);
-  }, [featureData, mapReady]);
+    syncLinearFeatureVisibility(map);
+  }, [featureData, mapReady, syncLinearFeatureVisibility]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady || !map.getLayer('features-line-major')) return;
+
+    const run = () => syncLinearFeatureVisibility(map);
+    run();
+    map.on('move', run);
+    return () => {
+      map.off('move', run);
+    };
+  }, [mapReady, syncLinearFeatureVisibility, mapLayers, regionsMeta, features]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -988,11 +1014,53 @@ export function MapLibreView({
   const activeRegion = activeRegionId ? byId.get(activeRegionId) : undefined;
 
   return (
-    <div className="absolute inset-0">
+    <div
+      className="absolute inset-0"
+      style={{
+        // The sea: the Aether Nebula backdrop shows through the (now transparent)
+        // map canvas, so the basin glows like the rest of the atlas instead of a
+        // flat fill. Mirrors the body gradient in globals.css, a touch richer.
+        backgroundColor: '#08041d',
+        backgroundImage: [
+          'radial-gradient(45% 38% at 70% 18%, rgb(124 77 255 / 0.34), transparent 70%)',
+          'radial-gradient(50% 44% at 14% 80%, rgb(0 229 255 / 0.16), transparent 70%)',
+          'radial-gradient(38% 34% at 90% 84%, rgb(255 64 129 / 0.16), transparent 70%)',
+          'radial-gradient(34% 30% at 42% 46%, rgb(124 77 255 / 0.14), transparent 70%)',
+        ].join(','),
+      }}
+    >
       <div
         ref={containerRef}
         className="h-full w-full"
         aria-label="Interactive lands map"
+      />
+
+      {/* Faint star dust over the basin — screen-blended so it only adds light,
+          echoing the galaxy's starfield without competing with the labels. */}
+      <div
+        className="pointer-events-none absolute inset-0 z-[1]"
+        style={{
+          opacity: 0.45,
+          mixBlendMode: 'screen',
+          backgroundImage: [
+            'radial-gradient(1px 1px at 20% 30%, rgb(241 245 249 / 0.7), transparent)',
+            'radial-gradient(1px 1px at 70% 62%, rgb(192 132 252 / 0.6), transparent)',
+            'radial-gradient(1px 1px at 42% 82%, rgb(0 229 255 / 0.5), transparent)',
+            'radial-gradient(1px 1px at 85% 24%, rgb(241 245 249 / 0.6), transparent)',
+            'radial-gradient(1px 1px at 55% 14%, rgb(241 245 249 / 0.5), transparent)',
+          ].join(','),
+          backgroundSize: '320px 320px, 280px 280px, 360px 360px, 300px 300px, 340px 340px',
+        }}
+      />
+
+      {/* Vignette — darkens only the far edges to focus the basin, matching the
+          galaxy's Vignette. Center stays clear so labels there are untouched. */}
+      <div
+        className="pointer-events-none absolute inset-0 z-[2]"
+        style={{
+          background:
+            'radial-gradient(125% 105% at 50% 42%, transparent 52%, rgb(5 2 15 / 0.5) 100%)',
+        }}
       />
 
       <MapLabels
@@ -1002,6 +1070,7 @@ export function MapLibreView({
         features={features}
         regionLabels={regionLabels}
         regionsMeta={regionsMeta}
+        regionById={byId}
         focusedSubId={focusedSubId}
         hoveredRegionId={hoveredRegionId}
         selectedCityId={selectedCityId}

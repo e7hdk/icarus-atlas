@@ -12,20 +12,14 @@
   },
   "chapters": [
     {
-      "title": "The madness exposed",
-      "text": "Odysseus, not wishing to sail to Troy, feigned madness — yoking an ox and an ass to the plough and sowing salt. Palamedes son of Nauplius proved the pretence: he followed the Ithacan into the field, snatched Telemachus from Penelope's bosom, and drew his sword as if he would kill the child. In fear for the boy Odysseus confessed that his madness was feigned, and he went to the war — but he never forgave the man who had unmasked him.",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. Epit. 3.7"
-    },
-    {
-      "title": "The forged treason",
-      "text": "Odysseus took a Phrygian prisoner and compelled him to write a letter of treasonable purport, ostensibly from Priam to Palamedes; he buried gold in the man's quarters and dropped the letter in the camp. Agamemnon read it, found the gold, and delivered Palamedes to the allies to be stoned as a traitor. Ovid makes the charge echo through the quarrel over Achilles' arms: the army that condemned Palamedes on hearsay would later judge Ajax and Odysseus by the same bitter standard.",
-      "sources": ["apollodorus", "ovid"],
-      "citation": "Apollod. Epit. 3.8, 6.8; Ov. Met. 13.1–141, 13.296–454"
+      "title": "The stoning at Troy",
+      "text": "Palamedes son of Nauplius had exposed Odysseus' feigned madness at the muster and sailed with the host — until the Ithacan forged a letter of treason, buried gold in his quarters, and saw him stoned as a traitor in the camp, with Agamemnon as accomplice. The nested episode on the Framing of Palamedes tells the plough at Ithaca, the planted gold, and the dispute whether he died by stones in camp or by drowning in the Cypria's fishing variant.",
+      "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
+      "citation": "Apollod. Epit. 3.7–3.8, 6.8; Hyg. Fab. 95, 105; Ov. Met. 13.1–141; Paus. 10.31.2"
     },
     {
       "title": "Justice denied",
-      "text": "Palamedes, son of Nauplius and Clymene daughter of Catreus, had been stoned through the machinations of Odysseus — and Agamemnon, Apollodorus says, was his accomplice in the murder. When Nauplius learned of it he sailed to the Greeks and claimed satisfaction for his son; but he returned unsuccessful, for the host favoured King Agamemnon and would not punish the lord who had led them at Troy.",
+      "text": "When Nauplius learned that his son had been stoned through the machinations of Odysseus, he sailed to the Greeks and claimed satisfaction — but he returned unsuccessful, for the host favoured King Agamemnon, who had been the accomplice in the murder, and would not punish the lord who had led them at Troy.",
       "sources": ["apollodorus"],
       "citation": "Apollod. Epit. 6.8"
     },

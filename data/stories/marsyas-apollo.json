@@ -31,7 +31,7 @@
     }
   ],
   "cast": [
-    { "name": "Marsyas", "role": "Satyr flayed for rivalling Apollo" },
+    { "id": "marsyas-phrygia", "name": "Marsyas", "role": "Satyr flayed for rivalling Apollo" },
     { "id": "apollo", "name": "Apollo", "role": "Victor of the music contest" },
     { "id": "athena", "name": "Athena", "role": "Original maker of the cursed pipes" },
     { "id": "midas", "name": "Midas", "role": "Judge who favoured Marsyas in Hyginus" }

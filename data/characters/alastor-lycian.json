@@ -7,9 +7,9 @@
   "cluster": "mortal-arm",
   "summary": [
     {
-      "text": "Lycian whom goodly Odysseus slew with the sharp bronze when Athene turned his mind toward Sarpedon's host — distinct from goodly Alastor comrade of Mecisteus and from the Pylian under Nestor.",
+      "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew with the sharp bronze when Athene turned his mind toward the host; distinct from goodly Alastor comrade of Mecisteus and from the Pylian under Nestor.",
       "sources": ["homer"],
-      "citation": "Iliad 5.670–710"
+      "citation": "Iliad 2.876–877, 5.670–710"
     }
   ],
   "story": [
@@ -17,6 +17,12 @@
       "text": "After Coeranus fell, Odysseus smote Alastor and Chromius and Alcandrus and Halius and Noëmon and Prytanis among the Lycians, and yet more would he have laid low had not great Hector strode through the foremost fighters.",
       "sources": ["homer"],
       "citation": "Iliad 5.670–710"
+    }
+  ],
+  "residences": [
+    {
+      "city": "xanthus-lycia",
+      "sources": ["homer"]
     }
   ]
 }

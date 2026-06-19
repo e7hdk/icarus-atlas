@@ -4,66 +4,146 @@
   "greekTitle": "Νόστοι οἱ λοιποί",
   "kind": "episode",
   "parent": "nostoi",
-  "era": 8.908,
+  "era": 8.9,
   "summary": {
     "text": "Apollodorus' closing catalogue of captains who settled abroad after Troy — Guneus in Libya, Antiphus among the Pelasgians, Phidippus on Andros, Agapenor in Cyprus — while Philoctetes, Teucer, Calchas, and Idomeneus have their own nested episodes.",
-    "sources": ["apollodorus", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Apollod. Epit. 6.15; Hyg. Fab. 116–120"
   },
   "chapters": [
     {
       "title": "After Caphareus",
       "text": "When the fleet scattered from Troy, not every ship made for a Greek harbour. Nauplius' false beacons had wrecked many on the Euboean coast at Caphareus — the nested episode on Nauplius' vengeance tells the stoning of Palamedes and the cliff-fires that drove hulls onto the rocks. Of those shipwrecked survivors Apollodorus says some drifted one way and some another; the Epitome's catalogue names where the lesser captains settled when they could not — or would not — return to the kingdoms they had left ten years before.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.7, 6.15"
     },
     {
       "title": "Guneus and Antiphus",
       "text": "Guneus son of Ocytus, who had led the Aenianians with twenty-two ships to Troy, went to Libya — the western land beyond the Greek map where Atlas holds up heaven. Antiphus son of Thessalus went to the Pelasgians and, having taken possession of the country, called it Thessaly — a colonist's renaming that echoes the muster of the host itself. These are plain settlements in Apollodorus' roll, without the murder at home or the exile that poisoned the greater Returns.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 3.14, 6.15"
     },
     {
       "title": "Andros and Cyprus",
       "text": "Phidippus with the Coans settled in Andros — the northern Cycladic isle that would later be remembered as their first landfall on the homeward voyage. Agapenor went to Cyprus, where the nested episode on Teucer to Cyprus also sets the Arcadian captain storm-driven to the island and the Salaminian archer's second founding. Apollodorus names both in the same breath as Philoctetes' westward road; the Lesser Returns here carry the catalogue kings who became founders abroad rather than victims at home.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 6.15; Paus. 8.15.7"
     },
     {
       "title": "The nested captains",
       "text": "The Epitome's roll is richer than these plain names. Philoctetes went to the Campanians in Italy — the nested episode on Philoctetes to Italy tells the safe Return and the bow that slew Paris. Teucer was banished to Cyprus; Idomeneus was driven from Crete by Leucus; Calchas died at Colophon when Mopsus outprophesied him. Each has its own shelf on the Nostoi tree; here the catalogue serves as index to the settlements Apollodorus lists in a single chapter after the great captains' ruin has been told.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.2–6.4, 6.9–6.10, 6.15"
     },
     {
       "title": "Hyginus' roll call",
       "text": "Hyginus rolls the Returns in a catalogue of those who perished on the sea, those murdered at home, those dispossessed, and those who came through safely or founded new kingdoms abroad. The nested episodes on Agamemnon, the Locrian Ajax, Menelaus, Neoptolemus, and Diomedes carry the great captains; the nested episodes on Philoctetes, Teucer, Idomeneus, and Calchas carry the lesser kings whose stories exceed a single line. Odysseus alone among the chief counsellors was still lost on the open sea when these reckonings were counted — and Aeneas was already turning west toward Italy.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 6.8–6.20; Hyg. Fab. 116–120"
     }
   ],
   "cast": [
-    { "name": "Guneus", "role": "Captain of the Aenianians who settled in Libya" },
-    { "name": "Antiphus", "role": "Son of Thessalus who named Thessaly among the Pelasgians" },
-    { "name": "Phidippus", "role": "Leader of the Coans who settled on Andros" },
-    { "name": "Agapenor", "role": "Arcadian captain who went to Cyprus" },
-    { "id": "philoctetes", "name": "Philoctetes", "role": "Archer sent to the Campanians in Italy" },
-    { "id": "teucer", "name": "Teucer", "role": "Banished founder on Cyprus" },
-    { "id": "idomeneus", "name": "Idomeneus", "role": "Cretan king driven into exile" },
-    { "id": "calchas-thestor", "name": "Calchas", "role": "Seer who died at Colophon" },
-    { "id": "odysseus", "name": "Odysseus", "role": "Still lost when the catalogue was counted" },
-    { "id": "aeneas", "name": "Aeneas", "role": "Survivor turning west toward Italy" }
+    {
+      "name": "Guneus",
+      "role": "Captain of the Aenianians who settled in Libya"
+    },
+    {
+      "name": "Antiphus",
+      "role": "Son of Thessalus who named Thessaly among the Pelasgians"
+    },
+    {
+      "name": "Phidippus",
+      "role": "Leader of the Coans who settled on Andros"
+    },
+    {
+      "name": "Agapenor",
+      "role": "Arcadian captain who went to Cyprus"
+    },
+    {
+      "id": "philoctetes",
+      "name": "Philoctetes",
+      "role": "Archer sent to the Campanians in Italy"
+    },
+    {
+      "id": "teucer",
+      "name": "Teucer",
+      "role": "Banished founder on Cyprus"
+    },
+    {
+      "id": "idomeneus",
+      "name": "Idomeneus",
+      "role": "Cretan king driven into exile"
+    },
+    {
+      "id": "calchas-thestor",
+      "name": "Calchas",
+      "role": "Seer who died at Colophon"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Still lost when the catalogue was counted"
+    },
+    {
+      "id": "aeneas",
+      "name": "Aeneas",
+      "role": "Survivor turning west toward Italy"
+    }
   ],
   "places": [
-    { "name": "Libya", "role": "Where Guneus settled" },
-    { "name": "Thessaly", "role": "Country Antiphus renamed among the Pelasgians" },
-    { "id": "andros", "name": "Andros", "role": "Island where Phidippus and the Coans settled" },
-    { "id": "salamis-cyprus", "name": "Salamis of Cyprus", "role": "Where Agapenor and Teucer both belong in the western strand" },
-    { "name": "Campania", "role": "Italian land of Philoctetes' settlement" }
+    {
+      "name": "Libya",
+      "role": "Where Guneus settled"
+    },
+    {
+      "name": "Thessaly",
+      "role": "Country Antiphus renamed among the Pelasgians"
+    },
+    {
+      "id": "andros",
+      "name": "Andros",
+      "role": "Island where Phidippus and the Coans settled"
+    },
+    {
+      "id": "salamis-cyprus",
+      "name": "Salamis of Cyprus",
+      "role": "Where Agapenor and Teucer both belong in the western strand"
+    },
+    {
+      "name": "Campania",
+      "role": "Italian land of Philoctetes' settlement"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "Epitome", "citation": "6.15" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "116–120" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "8.15.7" }
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "6.15"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "116–120"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "8.15.7"
+    }
   ]
 }

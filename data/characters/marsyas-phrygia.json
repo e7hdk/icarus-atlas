@@ -1,0 +1,42 @@
+{
+  "id": "marsyas-phrygia",
+  "name": "Marsyas",
+  "greekName": "Marsyas (Μαρσύας)",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Phrygian satyr",
+    "flute contest with Apollo",
+    "eponym of the Marsyas river"
+  ],
+  "summary": [
+    {
+      "text": "The satyr who found Athena's cast-off pipes, rivalled Apollo in music, and was flayed alive when he lost — his tears became the river Marsyas in Phrygia, and Hyginus makes King Midas judge the contest on Tmolus.",
+      "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 1.4.2; Metamorphoses 6.622–667; Fabulae 165, 191; Description of Greece 10.30.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Marsyas son of Olympus: he found the pipes Athena had thrown away because they disfigured her face, grew so skilled that he challenged Apollo, and lost — the victor hung him on a pine and stripped off his skin.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.2"
+    },
+    {
+      "text": "Ovid tells how Marsyas cried that a flute was not worth his life as Apollo tore living skin from limbs until nerves and viscera lay exposed; fauns, satyrs, nymphs, and his pupil Olympus wept, and their tears sinking into Phrygian earth became the fountain of the river Marsyas.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.622–667"
+    },
+    {
+      "text": "Hyginus records that Midas was taken as judge when Apollo contested with Marsyas on the pipes, and that when Tmolus gave victory to Phoebus, Midas said Marsyas deserved the prize — earning ass's ears from Apollo. Pausanias says the Phrygians of Celaenae held that the river passing through their city was once this great flute-player.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 165, 191; Description of Greece 10.30.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "gordion",
+      "sources": ["hyginus", "pausanias"]
+    }
+  ]
+}

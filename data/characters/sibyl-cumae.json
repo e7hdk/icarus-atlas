@@ -1,0 +1,43 @@
+{
+  "id": "sibyl-cumae",
+  "name": "The Sibyl of Cumae",
+  "greekName": "Sibylla Kymē (Σίβυλλα Κύμης)",
+  "romanName": "Sibylla Cumaea",
+  "type": "mortal",
+  "domains": [
+    "prophecy at Cumae",
+    "guide to Avernus",
+    "long-lived oracle"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The long-lived Sibyl in the cavern on Cumae's marshy shore who guided Trojan Aeneas to Avernus and Anchises' shade — attested by Ovid and Hyginus among the augurs; Pausanias records Hyperochus of Cumae on earlier prophetesses and the Sibyl's bones at Apollo's sanctuary.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 14.154–335; Fabulae 128; Description of Greece 10.12.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Landing on Cumae's marshy shore, Ovid's Aeneas reached the cavern home of the long-lived Sibylla and prayed for access at lake Avernus to his father's shade. Inspired by Apollo's influence, she warned of wars to come in Italy, then softened the weary journey with speech and led him through the horrors of the underworld until Anchises' spirit appeared among the wealth of Orcus.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.154–335"
+    },
+    {
+      "text": "Hyginus lists the Samian Sibyl — others call her Cymaean — among the great augurs of myth, naming her beside Tiresias, Cassandra, and Helenus in the roll of seers.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 128"
+    },
+    {
+      "text": "Pausanias knew the Cumaean tradition through Hyperochus' history: after the Delphic Sibyl Herophile, a woman called Demo from Cumae in Opician territory gave oracles in the same way, though the Cumaeans show no oracle of hers — only a small stone urn in Apollo's sanctuary where they say the Sibyl's bones are placed.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.12.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cumae",
+      "sources": ["ovid", "pausanias"]
+    }
+  ]
+}

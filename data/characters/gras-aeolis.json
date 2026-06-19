@@ -1,0 +1,35 @@
+{
+  "id": "gras-aeolis",
+  "name": "Gras",
+  "greekName": "Gras (Γράς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Aeolian colonist",
+    "descendant of Orestes"
+  ],
+  "summary": [
+    {
+      "text": "Son of Echelas and grandson of Penthilus the bastard son of Orestes; he led Lacedaemonians and Achaeans to colonize the land between Ionia and Mysia called Aeolis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Heracleidae drove the Pelopids from the Peloponnese, Penthilus had already seized Lesbos. His descendant Gras, son of Echelas, led an expedition oversea with Lacedaemonians and Achaeans to occupy the coast called Aeolis — the region where Hesiod later knew Aeolian Cyme.",
+      "sources": ["pausanias", "hesiod"],
+      "citation": "Description of Greece 3.2.1; Works and Days 636–640"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cyme",
+      "sources": ["pausanias", "hesiod"]
+    },
+    {
+      "city": "smyrna",
+      "sources": ["pausanias"]
+    }
+  ]
+}

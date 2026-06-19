@@ -1,0 +1,59 @@
+{
+  "id": "cephisus",
+  "name": "Cephisus",
+  "greekName": "Kēphisos (Κηφισός)",
+  "romanName": "Cephisus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Attic and Phocian river",
+    "father of Narcissus",
+    "grandfather of the Erechtheids",
+    "river tribunal"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Attica and Phocia — born to Oceanus and Tethys in Hesiod's catalogue, father of Narcissus in Ovid and Hyginus, and ancestor through Diogenia of Praxithea and the Athenian royal house; with Inachus and Asterion he judged the dispute between Hera and Poseidon for Argos.",
+      "sources": ["hesiod", "ovid", "apollodorus", "pausanias", "hyginus"],
+      "citation": "Theogony 337–345; Metamorphoses 3.1–510; Bibliotheca 3.15.1; Description of Greece 2.15.5; Fabulae preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names no story for Cephisus, but counts him among the eddying rivers Tethys bore to Ocean — the Attic stream enrolled in the first family of waters.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Ovid opens the tale of Narcissus on his banks. The river Cephisus entwined the nymph Liriope in his winding stream and got her with child; she bore a boy so beautiful the nymphs could love him even then, and named him Narcissus. When Tiresias was asked whether the child would live to old age, he answered: 'If he does not know himself.'",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.1–510"
+    },
+    {
+      "text": "Hyginus likewise makes Narcissus son of the river Cephisus — one among Apollo's doomed beloveds — and counts Cephisus among the Rivers born of Oceanus and Tethys.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 271; Fabulae, preface (Theogony)"
+    },
+    {
+      "text": "Apollodorus hangs the Athenian royal line on the river's granddaughter. Erechtheus married Praxithea, daughter of Phrasimus by Diogenia, daughter of Cephisus — so the Cephisus is grandfather-in-law to the king whose daughters include Orithyia, carried off by Boreas.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "text": "Pausanias makes Cephisus one of the river-judges of Argos. When Poseidon and Hera disputed possession of the land, Inachus, Cephisus, and Asterion decided that it belonged to Hera — and Poseidon in anger dried up their waters, so that the Cephisus flows only after rain.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.15.5"
+    },
+    {
+      "text": "Homer knows the Phocian Cephisus in the catalogue of ships: the Phocians who held Lilaea by the springs of Cephisus followed forty black ships to Troy — the Boeotian stream distinct from, yet sharing the name of, its Attic brother.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  ]
+}

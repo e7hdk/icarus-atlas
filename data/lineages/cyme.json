@@ -1,0 +1,19 @@
+{
+  "city": "cyme",
+  "reigns": [
+    {
+      "ruler": "Penthilus",
+      "characterId": "penthilus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1",
+      "note": "Bastard son of Orestes who seized Lesbos and began the Aeolian migration to Asia Minor — ancestor of the colonists who settled the coast including Cyme."
+    },
+    {
+      "ruler": "Gras",
+      "characterId": "gras-aeolis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1",
+      "note": "Son of Echelas and grandson of Penthilus; led the Lacedaemonian and Achaean colonists who occupied the land between Ionia and Mysia called Aeolis, where Cyme stood as an Aeolian city."
+    }
+  ]
+}

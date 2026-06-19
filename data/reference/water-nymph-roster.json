@@ -1,0 +1,618 @@
+{
+  "version": 1,
+  "description": "Curated roster of important Nereids, Oceanids, and Greek Potamoi (river-gods). Tier A = major mythic role beyond catalogue; Tier B = key genealogical node; Tier C = catalogue-only / defer. Greece scope: core = Greek heartland; peripheral = Asia Minor/Thrace margins; far = Egypt/Nile etc.",
+  "entries": [
+    {
+      "key": "thetis",
+      "name": "Thetis",
+      "category": "nereid",
+      "tier": "A",
+      "citation": "Th. 244; Il. 1–18",
+      "greeceScope": "core",
+      "atlasId": "thetis",
+      "note": "Mother of Achilles; model entry"
+    },
+    {
+      "key": "amphitrite",
+      "name": "Amphitrite",
+      "category": "nereid",
+      "tier": "A",
+      "citation": "Th. 243, 930; Od. 3.91",
+      "greeceScope": "core",
+      "atlasId": "amphitrite",
+      "note": "Sea-queen; dual oceanid/nereid parentage dispute"
+    },
+    {
+      "key": "galatea-nymph",
+      "name": "Galatea",
+      "category": "nereid",
+      "tier": "A",
+      "citation": "Th. 250; Ov. Met. 13.750",
+      "greeceScope": "core",
+      "atlasId": "galatea-nymph",
+      "note": "Nereid of Acis/Polyphemus; not Pygmalion's bride"
+    },
+    {
+      "key": "psamathe",
+      "name": "Psamathe",
+      "category": "nereid",
+      "tier": "A",
+      "citation": "Th. 260, 1003; Ov. Met. 11.346",
+      "greeceScope": "core",
+      "atlasId": "psamathe",
+      "note": "Mother of Phocus; avenging wolf"
+    },
+    {
+      "key": "eidothea-proteus",
+      "name": "Eidothea",
+      "category": "nereid",
+      "tier": "B",
+      "citation": "Od. 4.365–570",
+      "greeceScope": "core",
+      "atlasId": "eidothea-proteus",
+      "note": "Wife of Proteus; helps Menelaus"
+    },
+    {
+      "key": "doris-oceanid",
+      "name": "Doris",
+      "category": "nereid",
+      "tier": "B",
+      "citation": "Th. 241",
+      "greeceScope": "core",
+      "atlasId": "doris-oceanid",
+      "note": "Mother of the Nereids (Oceanid, not Nereid)"
+    },
+    {
+      "key": "actaea",
+      "name": "Actaea",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Th. 248",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "actaea"
+    },
+    {
+      "key": "amatheia",
+      "name": "Amatheia",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only (Iliad mourning list)",
+      "atlasId": "amatheia"
+    },
+    {
+      "key": "cymodoce",
+      "name": "Cymodoce",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Th. 252",
+      "greeceScope": "core",
+      "note": "Catalogue only; calms waves with Amphitrite",
+      "atlasId": "cymodoce"
+    },
+    {
+      "key": "cymothoe",
+      "name": "Cymothoe",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Apollod. 1.2.7",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "cymothoe"
+    },
+    {
+      "key": "dynamene",
+      "name": "Dynamene",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "dynamene"
+    },
+    {
+      "key": "galene",
+      "name": "Galene",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Th. 244",
+      "greeceScope": "core",
+      "note": "Catalogue only (Calm)",
+      "atlasId": "galene"
+    },
+    {
+      "key": "halie",
+      "name": "Halie",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Apollod. 1.2.7",
+      "greeceScope": "core",
+      "note": "Catalogue only; not Haliartus the town",
+      "atlasId": "halie-nereid"
+    },
+    {
+      "key": "ianeira",
+      "name": "Ianeira",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "ianeira"
+    },
+    {
+      "key": "ianassa",
+      "name": "Ianassa",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "ianassa"
+    },
+    {
+      "key": "nemertes",
+      "name": "Nemertes",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only (Truthful — homonym with god)",
+      "atlasId": "nemertes-nereid"
+    },
+    {
+      "key": "neso",
+      "name": "Neso",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Apollod. 1.2.7",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "neso"
+    },
+    {
+      "key": "panopea",
+      "name": "Panopea",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Th. 250",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "panopea"
+    },
+    {
+      "key": "pherusa",
+      "name": "Pherusa",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "pherusa"
+    },
+    {
+      "key": "proto",
+      "name": "Proto",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Il. 18.45",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "proto-nereid"
+    },
+    {
+      "key": "speo",
+      "name": "Speo",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Apollod. 1.2.7",
+      "greeceScope": "core",
+      "note": "Catalogue only",
+      "atlasId": "speo"
+    },
+    {
+      "key": "thalia-nereid",
+      "name": "Thalia",
+      "category": "nereid",
+      "tier": "C",
+      "citation": "Apollod. 1.2.7",
+      "greeceScope": "core",
+      "note": "Nereid Thalia; not Thalia the Muse (`thalia-muse`)",
+      "atlasId": "thalia-nereid"
+    },
+    {
+      "key": "metis",
+      "name": "Metis",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 358, 886–900",
+      "greeceScope": "core",
+      "atlasId": "metis"
+    },
+    {
+      "key": "eurynome",
+      "name": "Eurynome",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 358, 907–909",
+      "greeceScope": "core",
+      "atlasId": "eurynome"
+    },
+    {
+      "key": "styx",
+      "name": "Styx",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 361, 383–403",
+      "greeceScope": "core",
+      "atlasId": "styx",
+      "note": "Oceanid + river-goddess dual identity"
+    },
+    {
+      "key": "clymene",
+      "name": "Clymene",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 346–352",
+      "greeceScope": "core",
+      "atlasId": "clymene",
+      "note": "Mother of Phaethon; homonym hazard"
+    },
+    {
+      "key": "doris-oceanid",
+      "name": "Doris",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 241, 350",
+      "greeceScope": "core",
+      "atlasId": "doris-oceanid"
+    },
+    {
+      "key": "pleione-oceanid",
+      "name": "Pleione",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 350; Apollod. 3.10.1",
+      "greeceScope": "core",
+      "atlasId": "pleione-oceanid"
+    },
+    {
+      "key": "idyia-oceanid",
+      "name": "Idyia",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 352; Arg. 3.241",
+      "greeceScope": "core",
+      "atlasId": "idyia-oceanid",
+      "note": "Mother of Medea"
+    },
+    {
+      "key": "philyra",
+      "name": "Philyra",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 352; Apollod. 1.2.4",
+      "greeceScope": "core",
+      "atlasId": "philyra",
+      "note": "Mother of Chiron"
+    },
+    {
+      "key": "perseis-oceanid",
+      "name": "Perseis",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 356; Od. 10.139",
+      "greeceScope": "core",
+      "atlasId": "perseis-oceanid",
+      "note": "Mother of Circe and Aeetes"
+    },
+    {
+      "key": "electra-oceanid",
+      "name": "Electra",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 356; Apollod. 3.10.1",
+      "greeceScope": "core",
+      "atlasId": "electra-oceanid",
+      "note": "Mother of Dardanus; homonym hazard"
+    },
+    {
+      "key": "melia",
+      "name": "Melia",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 353; Apollod. 2.1.1",
+      "greeceScope": "core",
+      "atlasId": "melia"
+    },
+    {
+      "key": "asia",
+      "name": "Asia",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 359",
+      "greeceScope": "core",
+      "atlasId": "asia"
+    },
+    {
+      "key": "plouto",
+      "name": "Plouto",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 355",
+      "greeceScope": "core",
+      "atlasId": "plouto"
+    },
+    {
+      "key": "orseis",
+      "name": "Orseis",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 356; Apollod. 3.14.2",
+      "greeceScope": "core",
+      "atlasId": "orseis"
+    },
+    {
+      "key": "pasiphae",
+      "name": "Pasiphae",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Apollod. 1.9.1; Hyg. Fabulae preface",
+      "greeceScope": "core",
+      "atlasId": "pasiphae"
+    },
+    {
+      "key": "calypso",
+      "name": "Calypso",
+      "category": "oceanid",
+      "tier": "A",
+      "citation": "Th. 359; Od. 5.1–170",
+      "greeceScope": "core",
+      "atlasId": "calypso",
+      "note": "In atlas; `kinds: oceanid` backfill pending"
+    },
+    {
+      "key": "telesto",
+      "name": "Telesto",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 358",
+      "greeceScope": "core",
+      "atlasId": "telesto-oceanid",
+      "note": "Eldest Oceanid daughter in Hesiod list; thin standalone myth"
+    },
+    {
+      "key": "ianthe",
+      "name": "Ianthe",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 349; Hyg. Fabulae preface",
+      "greeceScope": "core",
+      "atlasId": "ianthe-oceanid",
+      "note": "Named eldest in Hyginus; thin myth"
+    },
+    {
+      "key": "chryseis",
+      "name": "Chryseis",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 359",
+      "greeceScope": "core",
+      "note": "Oceanid; not Chryseis captive of Agamemnon"
+    },
+    {
+      "key": "eudora",
+      "name": "Eudora",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 361",
+      "greeceScope": "core",
+      "atlasId": "eudora-oceanid",
+      "note": "Eldest-daughter list; thin myth"
+    },
+    {
+      "key": "tyche-oceanid",
+      "name": "Tyche",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Th. 361",
+      "greeceScope": "core",
+      "atlasId": "tyche-oceanid",
+      "note": "Oceanid Fortune; distinct from cult Tyche"
+    },
+    {
+      "key": "metope",
+      "name": "Metope",
+      "category": "oceanid",
+      "tier": "B",
+      "citation": "Apollod. 3.12.6",
+      "greeceScope": "core",
+      "atlasId": "metope",
+      "note": "In atlas as naiad daughter of Ladon river; not Oceanid"
+    },
+    {
+      "key": "achelous",
+      "name": "Achelous",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Th. 337; Il. 21.194",
+      "greeceScope": "core",
+      "atlasId": "achelous"
+    },
+    {
+      "key": "scamander",
+      "name": "Scamander",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Il. 20–21; Apollod. 3.12.1",
+      "greeceScope": "core",
+      "atlasId": "scamander",
+      "aliases": [
+        "Xanthus"
+      ]
+    },
+    {
+      "key": "inachus",
+      "name": "Inachus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Apollod. 2.1.1; Ov. Met. 1.583",
+      "greeceScope": "core",
+      "atlasId": "inachus"
+    },
+    {
+      "key": "asopus",
+      "name": "Asopus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Apollod. 3.12.6; Paus. 2.6.1",
+      "greeceScope": "core",
+      "atlasId": "asopus"
+    },
+    {
+      "key": "alpheus",
+      "name": "Alpheus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Th. 338; Ov. Met. 5.746",
+      "greeceScope": "core",
+      "atlasId": "alpheus"
+    },
+    {
+      "key": "axius-river",
+      "name": "Axius",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Il. 2.849",
+      "greeceScope": "peripheral",
+      "atlasId": "axius-river"
+    },
+    {
+      "key": "eurotas",
+      "name": "Eurotas",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Apollod. 3.10.3; Paus. 3.1.1",
+      "greeceScope": "core",
+      "atlasId": "eurotas",
+      "note": "In atlas as mortal king; river eponym"
+    },
+    {
+      "key": "peneus",
+      "name": "Peneus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Th. 343; Ov. Met. 1.577; Arg. 2.500",
+      "greeceScope": "core",
+      "atlasId": "peneus",
+      "note": "Thessaly; father of Daphne and Cyrene"
+    },
+    {
+      "key": "simois",
+      "name": "Simois",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Il. 4.473, 21.307; Apollod. 3.12.2",
+      "greeceScope": "core",
+      "atlasId": "simois",
+      "aliases": [
+        "Simoeis"
+      ],
+      "note": "Trojan river; pairs with Scamander"
+    },
+    {
+      "key": "strymon",
+      "name": "Strymon",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Th. 339; Apollod. 1.3.4, 3.5.1",
+      "greeceScope": "peripheral",
+      "atlasId": "strymon",
+      "note": "Thrace; father of Rhesus; Dionysus/Lycurgus"
+    },
+    {
+      "key": "ladon-river",
+      "name": "Ladon",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Th. 343; Apollod. 3.12.6; Paus. 8.25.2",
+      "greeceScope": "core",
+      "atlasId": "ladon-river",
+      "note": "Arcadian river; homonym `ladon` dragon"
+    },
+    {
+      "key": "cephisus",
+      "name": "Cephisus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Apollod. 3.15.1; Ov. Met. 3.1",
+      "greeceScope": "core",
+      "atlasId": "cephisus",
+      "note": "Attica/Boeotia; grandfather of Athenian royal line"
+    },
+    {
+      "key": "ilissus",
+      "name": "Ilissus",
+      "category": "potamos",
+      "tier": "A",
+      "citation": "Apollod. 3.15.2; Arg. 1.221",
+      "greeceScope": "core",
+      "atlasId": "ilissus",
+      "aliases": [
+        "Ilissos"
+      ],
+      "note": "Athens; Orithyia and Boreas"
+    },
+    {
+      "key": "eridanus",
+      "name": "Eridanus",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Th. 338; Apollod. 1.9.24",
+      "greeceScope": "peripheral",
+      "atlasId": "eridanus",
+      "note": "Western river; Phaethon myth"
+    },
+    {
+      "key": "sangarius",
+      "name": "Sangarius",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Th. 344; Apollod. 3.12.2",
+      "greeceScope": "peripheral",
+      "atlasId": "sangarius",
+      "note": "Phrygia"
+    },
+    {
+      "key": "hermus",
+      "name": "Hermus",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Th. 343",
+      "greeceScope": "peripheral",
+      "atlasId": "hermus",
+      "note": "Lydia"
+    },
+    {
+      "key": "meander",
+      "name": "Meander",
+      "category": "potamos",
+      "tier": "B",
+      "citation": "Th. 339",
+      "greeceScope": "peripheral",
+      "atlasId": "meander",
+      "note": "Asia Minor; `cyane-maeander` nymph exists"
+    },
+    {
+      "key": "nilus",
+      "name": "Nilus",
+      "category": "potamos",
+      "tier": "C",
+      "citation": "Th. 337",
+      "greeceScope": "far",
+      "note": "Egypt; outside Greece focus — flag only"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "peneus",
+  "name": "Peneus",
+  "greekName": "Pēneios (Πηνειός)",
+  "romanName": "Peneus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Thessalian river",
+    "father of Daphne",
+    "father of Cyrene",
+    "Tempe gorge"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Thessaly, born to Oceanus and Tethys among the eddying streams of the world — father of the nymph Daphne, whom Apollo pursued until she became the laurel, and of Cyrene, whom the god carried off from his marsh-meadow to Libya.",
+      "sources": ["hesiod", "ovid", "apollonius", "hyginus"],
+      "citation": "Theogony 337–345; Metamorphoses 1.452–748; Argonautica 2.500–527; Fabulae 161"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Peneus in the first family of waters: when Tethys lay with Oceanus she bore the eddying rivers, and among them holy Simois and Peneus, set in one breath with Alpheus, Strymon, and Achelous — the Thessalian stream counted among the great brotherhood of Potamoi.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Ovid sets Apollo's first love on his banks. Daphne, daughter of Peneus, prayed her father that she might live unwed like Diana; when Cupid's leaden shaft made her flee the sun-god's pursuit through Tempe, she looked to her father's waves and prayed that her beauty be destroyed — and before the prayer ended bark closed her breast and the laurel stood where the maiden had been.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.452–748"
+    },
+    {
+      "text": "Apollonius tells a second Thessalian tale on the same river. Cyrene once tended sheep along the marsh-meadow of Peneus in Haemonia, holding maidenhood dear; as she guarded her flock by the stream, Apollo carried her off far from Thessaly to Libya, where she bore him Aristaeus. Hyginus names her explicitly: 'Aristaeus by Cyrene, daughter of Peneus.'",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 2.500–527; Fabulae 161"
+    },
+    {
+      "text": "Heracles too knew the Thessalian water. When he cleansed the stables of Augeas, Apollodorus says, he diverted the courses of the Alpheus and Peneus through the cattle-yard — twin rivers turned to one labour in the Peloponnese and Thessaly alike.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.5"
+    }
+  ]
+}

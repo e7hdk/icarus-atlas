@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useRef } from 'react';
 import maplibregl, { type Map as MaplibreMap } from 'maplibre-gl';
 import type { FeatureCollection, Point } from 'geojson';
-import { MAP, ZOOM_FEATURE_LABELS } from '@/features/geo/map-theme';
+import { MAP, ZOOM_FEATURE_LABELS, regionLabelColors } from '@/features/geo/map-theme';
+import { isLinearFeatureVisible } from '@/features/geo/feature-visibility';
 import {
   pickTopRegionAtPoint,
   ZOOM_CITY_NAMES,
@@ -12,7 +13,7 @@ import {
   type RegionsMetaFile,
 } from '@/features/geo/region-drilldown';
 import type { MapLayerVisibility } from '@/features/geo/map-layers';
-import type { GeoCity, GeoFeature, GeoPlace } from '@/types/geo';
+import type { GeoCity, GeoFeature, GeoPlace, GeoRegion } from '@/types/geo';
 
 const bboxArea = (b: [number, number, number, number]): number =>
   Math.max(0, b[2] - b[0]) * Math.max(0, b[3] - b[1]);
@@ -98,6 +99,7 @@ export function MapLabels({
   features,
   regionLabels,
   regionsMeta,
+  regionById,
   focusedSubId,
   hoveredRegionId,
   selectedCityId,
@@ -110,6 +112,7 @@ export function MapLabels({
   features: GeoFeature[];
   regionLabels: FeatureCollection<Point> | null;
   regionsMeta: RegionsMetaFile | null;
+  regionById: Map<string, GeoRegion>;
   focusedSubId: string | null;
   hoveredRegionId: string | null;
   selectedCityId: string | null;
@@ -140,6 +143,8 @@ export function MapLabels({
     for (const label of markersRef.current) {
       let visible = false;
       let color: string = MAP.aetherMuted;
+      let regionGlow: string | null = null;
+      let glowHovered = false;
 
       if (label.kind === 'city') {
         visible = zoom >= ZOOM_CITY_NAMES || (liveParent !== null && label.family === liveParent);
@@ -148,32 +153,50 @@ export function MapLabels({
         visible = zoom >= ZOOM_FEATURE_LABELS;
         color = MAP.aetherMuted;
       } else if (label.kind === 'feature') {
-        const min =
-          label.featureKind === 'mountain-range'
-            ? ZOOM_FEATURE_LABELS + 0.5
-            : label.importance === 'minor'
-              ? ZOOM_FEATURE_LABELS + 1.5
-              : ZOOM_FEATURE_LABELS;
-        visible = zoom >= min;
+        const feature = features.find((f) => f.id === label.id);
+        if (feature && (feature.kind === 'river' || feature.kind === 'strait')) {
+          visible = isLinearFeatureVisible(feature, zoom, liveParent, regionById, regionsMeta);
+        } else {
+          const min =
+            label.featureKind === 'mountain-range'
+              ? ZOOM_FEATURE_LABELS + 0.5
+              : label.importance === 'minor'
+                ? ZOOM_FEATURE_LABELS + 1.5
+                : ZOOM_FEATURE_LABELS;
+          visible = zoom >= min;
+        }
         color = MAP.aetherMuted;
       } else if (label.kind === 'region') {
         visible = zoom >= (label.regionMinZoom ?? 3) && zoom < ZOOM_TOP_LABELS;
-        // Neutral white like the galaxy labels — no per-region hue; hover brightens.
-        color = label.id === s.hoveredRegionId ? MAP.aether : MAP.aetherMuted;
+        // Each region in its own colour (like the galaxy's coloured zones), with a
+        // soft hue glow; hover lifts it brighter.
+        const hov = label.id === s.hoveredRegionId;
+        const c = regionLabelColors(label.id);
+        color = hov ? c.bright : c.base;
+        regionGlow = c.glow;
+        glowHovered = hov;
       } else {
         visible = zoom >= ZOOM_SUBREGION && label.parent === liveParent;
-        color =
-          label.id === s.hoveredRegionId || label.id === s.focusedSubId
-            ? MAP.aether
-            : MAP.aetherMuted;
+        // Sub-regions inherit their parent region's hue → one colour family.
+        const hov = label.id === s.hoveredRegionId || label.id === s.focusedSubId;
+        const c = regionLabelColors(label.parent ?? label.id);
+        color = hov ? c.bright : c.base;
+        regionGlow = c.glow;
+        glowHovered = hov;
       }
 
       if (label.group && !s.mapLayers[label.group]) visible = false;
 
       label.el.style.opacity = visible ? '1' : '0';
       label.el.style.color = color;
+      // Region/sub labels carry a coloured glow on top of the dark legibility
+      // shadow; other labels keep the static CSS shadow untouched.
+      if (regionGlow) {
+        label.el.style.textShadow =
+          `0 0 3px rgb(5 2 15 / 0.92), 0 0 7px rgb(5 2 15 / 0.7), 0 0 ${glowHovered ? 15 : 10}px ${regionGlow}`;
+      }
     }
-  }, [map, regionsMeta]);
+  }, [map, regionsMeta, regionById, features]);
 
   // Build markers once per map / data set, and track live zoom.
   useEffect(() => {

@@ -4,84 +4,199 @@
   "greekTitle": "Νεοπτόλεμος εἰς Ἤπειρον",
   "kind": "episode",
   "parent": "nostoi",
-  "era": 8.907,
+  "era": 8.9,
   "summary": {
     "text": "Neoptolemus alone of the chiefs in the horse came home unscathed from Troy — warned by Thetis to wait at Tenedos, he escaped the storm that wrecked the fleet, went overland with Helenus to the Molossians, took Andromache as prize, and founded the Aeacid line in Epirus, though at Delphi he would later fall to Orestes over Hermione.",
-    "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Hom. Od. 11.505–537; Apollod. Epit. 5.21, 6.5, 6.12–6.14; Hyg. Fab. 113, 123; Paus. 1.11.1, 4.17.4"
   },
   "chapters": [
     {
       "title": "Unscathed from Troy",
       "text": "In the house of Hades Odysseus told Achilles' shade how his son had borne himself at Troy. Neoptolemus was ever first to speak in counsel — godlike Nestor and Odysseus alone surpassing him — and in battle he ran far to the front, killing many, among them Eurypylus son of Telephus. When the best of the Argives went down into the horse of Epeus, the other leaders wiped away tears and their limbs shook; Neoptolemus never paled nor wept, only kept handling his sword-hilt and his bronze-heavy spear, eager to work harm on the Trojans. After the sack he went aboard with his share of the spoil, all unscathed, neither smitten nor wounded.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.505–537"
     },
     {
       "title": "Priam at the altar",
       "text": "His name is bound to the death of the old king. When the Greeks marched into the sleeping city, Apollodorus records, Neoptolemus killed Priam, who had taken refuge at the altar of Zeus of the Courtyard; Hyginus sets him in his roll of those who slew princes. Pausanias makes the killing the type of just requital: it was the fate of Neoptolemus, after killing Priam on the altar of Zeus Herkeios, himself to be slain at the altar of Apollo in Delphi — so that to suffer what a man has done to another is called the Punishment of Neoptolemus.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 5.21; Hyg. Fab. 113; Paus. 4.17.4"
     },
     {
       "title": "Thetis at Tenedos",
       "text": "When the victors put out from Troy, Thetis warned her grandson to wait two days at Tenedos before he sailed — and by obeying he escaped the storm that wrecked so many of the homebound fleet. Apollodorus sets this counsel among the causes why Neoptolemus alone of the great captains reached home without shipwreck; the goddess who had mourned Achilles now guarded the son who had entered the wooden horse without fear.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.5"
     },
     {
       "title": "Overland with Helenus",
       "text": "Neoptolemus did not sail straight for Thessaly. Apollodorus says he set out overland for the country of the Molossians with Helenus the seer — the Trojan prophet who had been given to him as prize and who would guide the founding in Epirus. On the way he buried Phoenix, the old tutor who had sailed with Achilles and with him to Troy; the Returns were littered with graves, but this burial marked the turn from seafaring to a new kingdom in the north.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.12"
     },
     {
       "title": "Andromache and the Molossians",
       "text": "When the spoil was divided Neoptolemus had taken Andromache, Hector's widow, as his special prize — while Polyxena was slaughtered on Achilles' grave in the nested episode at the tomb. In Epirus he vanquished the Molossians and reigned as king; Apollodorus says he begat Molossus on Andromache, Hyginus names that son Amphialus instead. Pausanias adds that he was the first after Troy who scorned to go back to Thessaly and dwelt in Epirus because of Helenus' oracles, and that by Andromache he had three sons: Molossus, Pielus, and Pergamus — though by Hermione he had no child.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 6.12–6.13; Hyg. Fab. 123; Paus. 1.11.1"
     },
     {
       "title": "Hermione betrothed",
       "text": "At Troy Menelaus had betrothed Hermione, his daughter by Helen, to Neoptolemus — a match that would tie the Aeacid line to the house of Tyndareus. Apollodorus says that when Orestes went mad Neoptolemus carried off Hermione, and for that reason was slain by Orestes at Delphi — though some, he adds, say he went to Delphi to demand satisfaction from Apollo for his father's death, rifled the offerings and fired the temple, and was killed by Machaereus the Phocian. Hyginus tells it the other way: hearing his betrothed had been given to Orestes, Neoptolemus demanded her back, and Menelaus, unwilling to break his word, took Hermione from Orestes and gave her over — so that the insulted avenger of Agamemnon would strike at the altar.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 6.14; Hyg. Fab. 123"
     },
     {
       "title": "Death at Delphi",
       "text": "Neoptolemus fell at Delphi — slain by Orestes as he sacrificed, in the tradition Apollodorus and Hyginus both know, though they disagree on who provoked whom. His bones were scattered through Ambracia in Epirus; Pausanias knew his tomb at Delphi, once held in dishonor as an enemy's, later honored when his phantom was seen helping to drive off the Gauls, so that the Delphians came to sacrifice to Pyrrhus as to a hero. The nested episode on the Oresteia carries Hermione and the restored thrones; here the son of Achilles ends where Priam ended — at an altar, the Returns closing their long reckoning.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 6.14; Hyg. Fab. 123; Paus. 1.4.4, 1.11.1"
     }
   ],
   "cast": [
-    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Unscathed victor, king in Epirus" },
-    { "id": "thetis", "name": "Thetis", "role": "Goddess who warned him at Tenedos" },
-    { "id": "helenus", "name": "Helenus", "role": "Seer who guided him overland" },
-    { "id": "andromache", "name": "Andromache", "role": "Hector's widow, his prize and queen" },
-    { "id": "achilles", "name": "Achilles", "role": "Father whose shade heard the tale" },
-    { "id": "priam", "name": "Priam", "role": "Old king slain at Zeus' altar" },
-    { "id": "hermione", "name": "Hermione", "role": "Betrothed bride over whom he died" },
-    { "id": "orestes", "name": "Orestes", "role": "Slayer at the Delphic altar" },
-    { "id": "menelaus", "name": "Menelaus", "role": "Father of Hermione, arbiter in Hyginus' tale" },
-    { "id": "helen", "name": "Helen", "role": "Mother of Hermione" },
-    { "id": "odysseus", "name": "Odysseus", "role": "He who praised the son to Achilles' shade" },
-    { "name": "Phoenix", "role": "Old tutor buried on the overland march" },
-    { "name": "Molossus", "role": "Son begotten on Andromache in Epirus" },
-    { "name": "Machaereus", "role": "Phocian who kills him in Apollodorus' variant" }
+    {
+      "id": "neoptolemus",
+      "name": "Neoptolemus",
+      "role": "Unscathed victor, king in Epirus"
+    },
+    {
+      "id": "thetis",
+      "name": "Thetis",
+      "role": "Goddess who warned him at Tenedos"
+    },
+    {
+      "id": "helenus",
+      "name": "Helenus",
+      "role": "Seer who guided him overland"
+    },
+    {
+      "id": "andromache",
+      "name": "Andromache",
+      "role": "Hector's widow, his prize and queen"
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "role": "Father whose shade heard the tale"
+    },
+    {
+      "id": "priam",
+      "name": "Priam",
+      "role": "Old king slain at Zeus' altar"
+    },
+    {
+      "id": "hermione",
+      "name": "Hermione",
+      "role": "Betrothed bride over whom he died"
+    },
+    {
+      "id": "orestes",
+      "name": "Orestes",
+      "role": "Slayer at the Delphic altar"
+    },
+    {
+      "id": "menelaus",
+      "name": "Menelaus",
+      "role": "Father of Hermione, arbiter in Hyginus' tale"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "Mother of Hermione"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "He who praised the son to Achilles' shade"
+    },
+    {
+      "name": "Phoenix",
+      "role": "Old tutor buried on the overland march"
+    },
+    {
+      "name": "Molossus",
+      "role": "Son begotten on Andromache in Epirus"
+    },
+    {
+      "name": "Machaereus",
+      "role": "Phocian who kills him in Apollodorus' variant"
+    }
   ],
   "places": [
-    { "id": "troy", "name": "Troy", "role": "City he left unscathed with the spoil" },
-    { "id": "buthrotum", "name": "Buthrotum", "role": "Epirote city in Helenus' kingdom" },
-    { "name": "Tenedos", "role": "Isle where Thetis bade him wait two days" },
-    { "name": "Delphi", "role": "Sanctuary where Orestes slew him at the altar" },
-    { "name": "Epirus", "role": "Kingdom of the Molossians he founded" },
-    { "name": "Ambracia", "role": "Where his scattered bones were honoured" }
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "City he left unscathed with the spoil"
+    },
+    {
+      "id": "buthrotum",
+      "name": "Buthrotum",
+      "role": "Epirote city in Helenus' kingdom"
+    },
+    {
+      "name": "Tenedos",
+      "role": "Isle where Thetis bade him wait two days"
+    },
+    {
+      "name": "Delphi",
+      "role": "Sanctuary where Orestes slew him at the altar"
+    },
+    {
+      "name": "Epirus",
+      "role": "Kingdom of the Molossians he founded"
+    },
+    {
+      "name": "Ambracia",
+      "role": "Where his scattered bones were honoured"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Odyssey", "citation": "11.505–537" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "5.21, 6.5, 6.12–6.14" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "113, 123" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "1.4.4, 1.11.1, 4.17.4" }
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.505–537"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "5.21, 6.5, 6.12–6.14"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "113, 123"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.4.4, 1.11.1, 4.17.4"
+    }
   ]
 }

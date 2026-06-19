@@ -15,7 +15,8 @@
       "title": "The sacred pool",
       "text": "When the day was spent, Actaeon of Hyantis called off the hunt and sent his comrades home; but he wandered alone into woods he did not know and came to Gargaphie, where Diana bathed with her nymphs in a grotto of cool stone and a pool edged with grass. Apollodorus says Chiron bred him to the chase, and records three charges against him without choosing one: that Zeus was angry because he wooed Semele; that he saw Artemis bathing; or that he boasted himself the better hunter.",
       "sources": ["apollodorus", "ovid"],
-      "citation": "Apollod. 3.4.4; Ov. Met. 3.138–172"
+      "citation": "Apollod. 3.4.4; Ov. Met. 3.138–172",
+      "topic": "actaeon-offense"
     },
     {
       "title": "The stag",
@@ -34,7 +35,7 @@
     { "id": "actaeon", "name": "Actaeon", "role": "Theban hunter transformed into a stag" },
     { "id": "artemis", "name": "Artemis", "role": "Diana, goddess of the chase and the bath" },
     { "id": "autonoe", "name": "Autonoe", "role": "Cadmus' daughter, Actaeon's mother" },
-    { "name": "Aristaeus", "role": "Actaeon's father in the usual genealogy" }
+    { "id": "aristaeus", "name": "Aristaeus", "role": "Actaeon's father in the usual genealogy" }
   ],
   "places": [
     { "id": "thebes", "name": "Thebes", "role": "City of the Cadmean house Actaeon belonged to" },

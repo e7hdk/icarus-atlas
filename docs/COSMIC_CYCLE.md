@@ -14,13 +14,24 @@
 
 ```
 era 0   cosmogony              (expand — Cronus' reign, Rhea's stone)
-          ├─ titanomachy       (NEW — ten-year war, Tartarus)
-          ├─ typhonomachy      (NEW — Gaia's last revolt)
-          ├─ gigantomachy      (NEW — Phlegra, Heracles)
-          ├─ prometheus-fire   (NEW — Mecone, theft, binding)
-          │    └─ pandora      (NEW — moulded maiden, jar)
-era 2   great-flood            (expand — Ogyges prologue, repopulation, Hellen)
-          └─ five-ages           (episode — Hesiod WD 109-201 in full)
+          ├─ birth-of-aphrodite (episode — foam-born; aphrodite-parentage)
+          ├─ birth-of-zeus      (episode — Dicte cave, stone trick; Cretan nursery)
+          ├─ titanomachy       (ten-year war, Tartarus)
+          │    ├─ the-swallowed-siblings (episode — five devoured, Metis' drug, omphalos)
+          │    ├─ birth-of-athena      (episode — Metis swallowed; athena-parentage)
+          │    ├─ apollo-artemis-delos (episode — Leto on Delos)
+          │    ├─ birth-of-hermes      (episode — Maia at Cyllene; cattle and lyre)
+          │    ├─ birth-of-hephaestus  (episode — Hera alone vs Zeus+Hera; fall; Thetis cave)
+          │    └─ birth-of-ares        (episode — Zeus+Hera; ares-conception Ovid variant)
+          ├─ typhonomachy      (Gaia's last revolt)
+          ├─ gigantomachy      (Phlegra, Heracles)
+          ├─ prometheus-fire   (Mecone, theft, binding)
+          │    └─ pandora      (moulded maiden, jar)
+era 2   great-flood            (Ogyges prologue, repopulation, Hellen)
+          └─ five-ages         (episode — Hesiod WD 109-201 in full)
+
+era 5   theban-cycle
+          └─ semele-and-the-birth (episode — Dionysus thigh-birth; dionysus-first-birth)
 ```
 
 `great-flood` stays a top-level saga (era 2): it closes the succession myth arc into mortal time, not nested under cosmogony, so the `/stories` index keeps a clear cosmology → catastrophe shelf break.
@@ -43,8 +54,16 @@ Out of scope until a later Epic-Cycle milestone: Orphic cosmogonies, Nonnus' *Di
 
 | Passage | Story file | Chapter beat |
 |---|---|---|
-| Th. 116–210 | cosmogony | Chaos → castration → Aphrodite |
-| Th. 453–506 | cosmogony | Cronus swallows; Rhea hides Zeus |
+| Th. 116–210 | cosmogony | Chaos → castration (Aphrodite beat — see `birth-of-aphrodite`) |
+| Th. 176–206 | birth-of-aphrodite | Foam-born; Cythera/Cyprus; Homer vs Hesiod |
+| Th. 886–926 | birth-of-athena | Metis swallowed; head-birth; axe dispute |
+| Th. 918–923; Bibl. 1.4.1 | apollo-artemis-delos | Leto persecuted; twins on Delos |
+| Th. 938–939; Bibl. 3.10.2 | birth-of-hermes | Maia at Cyllene; cattle theft; lyre |
+| Th. 927–929; Il. 1.590–594, 18.394–405; Bibl. 1.3.5 | birth-of-hephaestus | Hera alone vs Zeus+Hera; fall; Ocean cave |
+| Th. 921–923; Il. 5.889–898; Fasti 5.229–258 | birth-of-ares | Zeus+Hera; Ovid fatherless Mars |
+| Th. 453–467 | cosmogony | Cronus swallows his first five children |
+| Th. 468–491 | birth-of-zeus | Rhea's counsel; Dicte cave; stone in swaddling clothes |
+| Th. 497–506 | the-swallowed-siblings | Metis' drug; stone at Pytho; five disgorged |
 | Th. 617–735 | titanomachy | Ten-year war; Cyclopes; Hundred-Handers |
 | Th. 820–880 | typhonomachy | Typhoeus born; blasted down |
 | Th. 881–885 | titanomachy | Zeus king (vs Homer's lot — `division-of-the-cosmos`) |
@@ -69,6 +88,9 @@ Out of scope until a later Epic-Cycle milestone: Orphic cosmogonies, Nonnus' *Di
 | Gift-givers | `hephaestus`, `athena`, `aphrodite`, `hermes` | Pandora workshop |
 | Flood line | `deucalion`, `pyrrha`, `prometheus`, `themis`, `hellen`, `lycaon` | |
 | Primordials (cosmogony) | `chaos`, `gaia`, `uranus`, `tartarus`, `eros`, `nyx`, `erebus`, `aphrodite` | |
+| Olympian births (Batch 1) | `athena`, `metis`, `apollo`, `artemis`, `leto`, `dione`, `semele`, `dionysus` | `birth-of-aphrodite`, `birth-of-athena`, `apollo-artemis-delos`, `semele-and-the-birth` |
+| Olympian births (Batch 2) | `hermes`, `maia`, `hephaestus`, `ares`, `thetis`, `eurynome`, `atlas` | `birth-of-hermes`, `birth-of-hephaestus`, `birth-of-ares` |
+| Olympian births (Batch 3) | `zeus`, `hestia`, `demeter`, `hera`, `hades`, `poseidon`, `metis` | `birth-of-zeus`, `the-swallowed-siblings` |
 
 ## 6. Places
 
@@ -85,7 +107,12 @@ Delphi, Parnassus, Olympus, Phlegra, Caucasus — plain `name` + `role` until pr
 
 | topic | Where it surfaces |
 |---|---|
-| `aphrodite-parentage` | cosmogony ch. sickle (already in castration beat) |
+| `aphrodite-parentage` | cosmogony ch. sickle; `birth-of-aphrodite` ch. Dione |
+| `athena-parentage` | `birth-of-athena` ch. axe / Libyan tradition |
+| `hephaestus-conception` | `birth-of-hephaestus` ch. Hera alone vs Homer |
+| `hephaestus-fall-from-olympus` | `birth-of-hephaestus` ch. Hera vs Zeus throw; Lemnos vs Ocean |
+| `ares-conception` | `birth-of-ares` ch. Ovid Fasti flower / fatherless Mars |
+| `dionysus-first-birth` | `semele-and-the-birth` ch. two mothers (Hyginus Zagreus) |
 | `division-of-the-cosmos` | titanomachy closing chapter |
 | `cyclopes-nature` | titanomachy (Cyclopes freed vs Homer's savage race — prose only unless split) |
 | `prometheus-creation-of-man` | prometheus-fire ch. 1 |
@@ -104,6 +131,9 @@ Delphi, Parnassus, Olympus, Phlegra, Caucasus — plain `name` + `role` until pr
 - **Batch 1 (done)** — dossier + 6 new story files + cosmogony/great-flood expansion.
 - **Batch 2 (done)** — character codex "Appears in the myths" cross-links; `storyIds` on Delphi, Parnassus, Knossos; multi-saga map panel links; `data/story-culture/` galleries on story pages (cosmogony, titanomachy, typhonomachy, great-flood, prometheus-fire).
 - **Batch 3 (done)** — `five-ages` episode under `great-flood`; Ogygian deluge prologue + `ogyges-deluge-tradition`; repopulation and Hellen chapters with dispute topics; `story-culture` for gigantomachy and pandora.
+- **Olympian Births Batch 1 (done)** — `birth-of-aphrodite`, `birth-of-athena`, `apollo-artemis-delos`, `semele-and-the-birth`; dispute topics `aphrodite-parentage`, `athena-parentage`, `dionysus-first-birth`.
+- **Olympian Births Batch 2 (done)** — `birth-of-hermes`, `birth-of-hephaestus`, `birth-of-ares`; dispute topics `hephaestus-conception`, `hephaestus-fall-from-olympus`, `ares-conception`.
+- **Olympian Births Batch 3 (done)** — `birth-of-zeus`, `the-swallowed-siblings`; **Olympian births shelf complete**. Design: **hybrid (C)** — Zeus gets a standalone Crete/stone episode parented under `cosmogony` (era 0.06, after `birth-of-aphrodite`); the five siblings share one group episode `the-swallowed-siblings` parented under `titanomachy` (era 0.15) because swallow/disgorge is a single narrative beat. Avoids six thin duplicates and verbatim overlap with `cosmogony` ch. 4–5 / `titanomachy` ch. 1; expands with dedicated cast, `knossos`/`Pytho` places, Metis emetic (Apollodorus), Amalthea/Curetes nursing. No new dispute topics — division-of-cosmos stays in `titanomachy` closing chapters only.
 
 ## 9. Same-name hazards
 

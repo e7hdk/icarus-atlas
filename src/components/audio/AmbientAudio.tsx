@@ -84,6 +84,12 @@ export function AmbientAudio() {
     ] as const;
     const opts: AddEventListenerOptions = { capture: true };
     let removed = false;
+    // Torn down when `enabled` flips back to false (e.g. persisted state
+    // rehydrates "off" after the default "on" first render). A play() promise
+    // armed while enabled was true can resolve *after* that — without this guard
+    // its .then() would ramp the volume back up and cancel the fade-out's pause,
+    // leaving the score playing while the UI correctly reads "off".
+    let cancelled = false;
     const removeGesture = () => {
       if (removed) return;
       removed = true;
@@ -94,6 +100,10 @@ export function AmbientAudio() {
       audio
         .play()
         ?.then(() => {
+          if (cancelled) {
+            audio.pause();
+            return;
+          }
           rampTo(volumeRef.current, FADE_IN_MS);
           removeGesture();
         })
@@ -110,6 +120,7 @@ export function AmbientAudio() {
     for (const type of events) window.addEventListener(type, onGesture, opts);
 
     return () => {
+      cancelled = true;
       removeGesture();
       stopRamp();
     };

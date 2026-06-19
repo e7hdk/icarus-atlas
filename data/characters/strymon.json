@@ -1,0 +1,49 @@
+{
+  "id": "strymon",
+  "name": "Strymon",
+  "greekName": "Strymōn (Στρυμών)",
+  "romanName": "Strymon",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Thracian river",
+    "father of Rhesus",
+    "Edonian border",
+    "Heracles and the cattle"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Thrace, born to Oceanus and Tethys — father of Rhesus in Apollodorus' Muse-catalogue, border of the Edonian land where Lycurgus first drove Dionysus to the sea, and the stream Heracles choked with rocks when the Thracian cattle proved hard to drive.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Theogony 337–345; Bibliotheca 1.3.4, 2.5.10, 3.5.1; Iliad 10.435–502"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Strymon among the eddying rivers Tethys bore to Ocean — in one breath with Alpheus, Eridanus, and Meander in the first genealogy of waters.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Apollodorus makes the river father of the Thracian king Rhesus: Euterpe bore him to Strymon, though the same passage admits some say Calliope was his mother — while Homer knows Rhesus only as son of Eïoneus and never names the Muse or the stream.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.3.4; Iliad 10.435–502",
+      "topic": "rhesus-mother"
+    },
+    {
+      "text": "The Edonians dwelt beside Strymon when Lycurgus, son of Dryas, first insulted and expelled Dionysus; the god took refuge in the sea with Thetis, daughter of Nereus, while the Bacchanals were taken prisoner — the river marking the northern edge of the wine-god's troubled progress through Thrace.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.5.1"
+    },
+    {
+      "text": "Heracles' eighth labour brought him to the Thracian cattle of Diomedes. When he had with difficulty collected the kine, Apollodorus says, he blamed the river Strymon and, whereas it had been navigable before, made it unnavigable by filling it with rocks — a god punished for the difficulty of a hero's return.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.10"
+    },
+    {
+      "text": "Hyginus counts Strymon among the Rivers born of Oceanus and Tethys in his genealogical preface — the Thracian stream set in the same divine brood as Scamander, Inachus, and Alpheus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

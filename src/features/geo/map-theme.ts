@@ -2,6 +2,7 @@
  * MapLibre paint tokens — keep in sync with src/styles/theme.css (@theme).
  * WebGL cannot read CSS variables; duplicate hex values here deliberately.
  */
+import type { ExpressionSpecification } from 'maplibre-gl';
 export const MAP = {
   cosmos: '#08041d',
   cosmosDeep: '#05020f',
@@ -13,9 +14,29 @@ export const MAP = {
   nebulaSoft: '#c084fc',
   starOlympian: '#fcd34d',
   labelHalo: 'rgba(5, 2, 15, 0.72)',
-  riverGlowOpacity: 0.22,
-  riverCoreOpacity: 0.5,
+  riverGlowOpacity: 0.18,
+  riverCoreOpacity: 0.45,
 } as const;
+
+/** Per-region accent for the labels — gives each region its own colour (like the
+ *  galaxy's coloured zones) without region polygons. A deterministic golden-angle
+ *  hue keeps neighbours distinct yet pastel/on-theme; sub-regions inherit their
+ *  parent's hue (pass the parent id) so a region and its parts read as one family.
+ *  Returns the resting colour, a bright hover colour, and a soft glow for the
+ *  text-shadow — the missing "colour + glow" that makes the galaxy labels pop. */
+export function regionLabelColors(seedId: string): { base: string; bright: string; glow: string } {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < seedId.length; i += 1) {
+    h ^= seedId.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  const hue = Math.round(((h >>> 0) * 137.508) % 360);
+  return {
+    base: `hsl(${hue}, 56%, 74%)`,
+    bright: `hsl(${hue}, 72%, 90%)`,
+    glow: `hsla(${hue}, 82%, 62%, 0.5)`,
+  };
+}
 
 type ZoomStop = [zoom: number, value: number];
 
@@ -67,6 +88,67 @@ export const CITY_GLOW_OPACITY = zoomExponential([
 
 /** Zoom at which river and strait names appear along their geometry. */
 export const ZOOM_FEATURE_LABELS = 5.5;
+
+/** Sub-region hand-off — rivers fade in for the focused basin below global label zoom. */
+export const ZOOM_RIVERS_REGIONAL = 5.2;
+
+/** River/strait line opacity — faint at regional hand-off, full when zoomed in.
+ *  MapLibre requires `zoom` only at the top level of `interpolate`/`step`. */
+export function riverGlowOpacityExpr(hoverOpacity = 0.34): ExpressionSpecification {
+  const stop = (value: number): ExpressionSpecification =>
+    [
+      'case',
+      ['boolean', ['feature-state', 'show'], false],
+      ['case', ['boolean', ['feature-state', 'hover'], false], hoverOpacity, value],
+      0,
+    ];
+
+  return [
+    'interpolate',
+    ['linear'],
+    ['zoom'],
+    ZOOM_RIVERS_REGIONAL,
+    stop(0.03),
+    ZOOM_FEATURE_LABELS,
+    stop(0.06),
+    7,
+    stop(0.1),
+    9,
+    stop(0.14),
+  ];
+}
+
+export function riverCoreOpacityExpr(hoverOpacity = 0.6): ExpressionSpecification {
+  const stop = (value: number): ExpressionSpecification =>
+    [
+      'case',
+      ['boolean', ['feature-state', 'show'], false],
+      ['case', ['boolean', ['feature-state', 'hover'], false], hoverOpacity, value],
+      0,
+    ];
+
+  return [
+    'interpolate',
+    ['linear'],
+    ['zoom'],
+    ZOOM_RIVERS_REGIONAL,
+    stop(0.08),
+    ZOOM_FEATURE_LABELS,
+    stop(0.2),
+    7,
+    stop(0.34),
+    9,
+    stop(0.46),
+  ];
+}
+
+/** Invisible rivers get zero hit width; visible rivers keep a wide pick target. */
+export function riverHitWidthExpr(): ExpressionSpecification {
+  const stop = (width: number): ExpressionSpecification =>
+    ['case', ['boolean', ['feature-state', 'show'], false], width, 0];
+
+  return ['interpolate', ['linear'], ['zoom'], 3, stop(14), 12, stop(28)];
+}
 
 /** Myth-site / far-horizon markers — smaller than flagship cities. */
 export const PLACE_MYTH_CORE_RADIUS = zoomExponential([

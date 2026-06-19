@@ -928,5 +928,165 @@
       "text": "Phrygia by the Sangarius — Gordius and Midas, Marsyas' contest, and the golden touch washed away on Tmolus.",
       "sources": ["homer", "ovid", "hyginus", "pausanias"]
     }
+  },
+  {
+    "id": "lycia",
+    "name": "Lycia",
+    "greekName": "Λυκία",
+    "parent": null,
+    "blurb": {
+      "text": "Lycia of the eddying Xanthus — Sarpedon and Glaucus led its men to Troy, and Bellerophon fought the Solymi in the hills above.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "pamphylia",
+    "name": "Pamphylia",
+    "greekName": "Παμφυλία",
+    "parent": null,
+    "blurb": {
+      "text": "Pamphylia on the southern coast — where Cretan settlers dwelt beside Lycians and Carians, kin to Sarpedon's line.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "cilicia",
+    "name": "Cilicia",
+    "greekName": "Κιλικία",
+    "parent": null,
+    "blurb": {
+      "text": "Cilicia of Thebe under Placus — Eëtion's kingdom, father of Andromache whom bronze-harnessed Hector wed.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "bithynia",
+    "name": "Bithynia",
+    "greekName": "Βιθυνία",
+    "parent": null,
+    "blurb": {
+      "text": "Bithynia on the Propontis shore — where King Amycus, son of a Bithynian nymph, forced strangers to box and die.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "paphlagonia",
+    "name": "Paphlagonia",
+    "greekName": "Παπφλαγονία",
+    "parent": null,
+    "blurb": {
+      "text": "Paphlagonia of the Eneti — Pylaemenes led them from Cytorus and Sesamus to fight beside the Trojans.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "cappadocia",
+    "name": "Cappadocia",
+    "greekName": "Καππαδοκία",
+    "parent": null,
+    "blurb": {
+      "text": "Cappadocia on the Euxine rim — where the Tauric goddess' fame still reached, and Artemis Anaeitis was claimed.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "dardania",
+    "name": "Dardania",
+    "greekName": "Δαρδανία",
+    "parent": "troad",
+    "blurb": {
+      "text": "Dardania about Mount Ida — Aeneas son of Anchises led the Dardanians, whom Aphrodite bore to a mortal amid the spurs of Ida.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "teuthrania",
+    "name": "Teuthrania",
+    "greekName": "Τευθρανία",
+    "parent": "mysia",
+    "blurb": {
+      "text": "Teuthrania on the Mysian coast — where Telephus ruled after Teuthras wed Auge, and old Pergamus took its name.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "aeolis",
+    "name": "Aeolis",
+    "greekName": "Αἰωλίς",
+    "parent": "mysia",
+    "blurb": {
+      "text": "Aeolis of the twelve cities — Hesiod's Aeolian Cyme and the coast the Ionians later disputed at Panionium.",
+      "sources": ["hesiod", "pausanias"]
+    }
+  },
+  {
+    "id": "maeonia",
+    "name": "Maeonia",
+    "greekName": "Μαιονία",
+    "parent": "lydia",
+    "blurb": {
+      "text": "Maeonia beneath Tmolus — the older name of Lydia's heartland, whence Mesthles and Antiphus led the Maeonians to Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "ascania",
+    "name": "Ascania",
+    "greekName": "Ἀσκανία",
+    "parent": "phrygia",
+    "blurb": {
+      "text": "Ascania in Phrygia — Phorcys and Ascanius led the Phrygian host from afar to the plain of Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "hellespontine-phrygia",
+    "name": "Hellespontine Phrygia",
+    "greekName": "Ἑλλησπόντια Φρυγία",
+    "parent": "phrygia",
+    "blurb": {
+      "text": "Hellespontine Phrygia — the Dardanian shore where Telephus' kingdom touched the straits and the Sangarius ran inland.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "sicily",
+    "name": "Sicily",
+    "greekName": "Σικελία",
+    "parent": null,
+    "blurb": {
+      "text": "Trinacria of the three capes — where Polyphemus kept his Cyclopes cave, Scylla lurked in the strait, Arethusa sought refuge, and Etna still breathes fire from the buried battle of the gods.",
+      "sources": ["homer", "ovid", "apollodorus"]
+    }
+  },
+  {
+    "id": "magna-graecia",
+    "name": "Magna Graecia",
+    "greekName": "Μεγάλη Ἑλλάς",
+    "parent": null,
+    "blurb": {
+      "text": "Great Greece on Italian soil — Achaean Tarentum and Ionian Croton, Sybaris and Locri, where colonists built temples to the gods they brought from Hellas.",
+      "sources": ["pausanias", "apollodorus"]
+    }
+  },
+  {
+    "id": "latium",
+    "name": "Latium",
+    "greekName": "Λατίον",
+    "parent": null,
+    "blurb": {
+      "text": "Latium of the Laurentine shore — where Aeneas came ashore after Troy and won his place among the Latin peoples.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "campania",
+    "name": "Campania",
+    "greekName": "Καμπανία",
+    "parent": null,
+    "blurb": {
+      "text": "Campania's western plain — where Philoctetes settled among the Campanians after Troy, and where Diomedes wandered in the same nostoi strand toward Cumae.",
+      "sources": ["apollodorus"]
+    }
   }
 ]

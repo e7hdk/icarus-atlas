@@ -37,9 +37,9 @@
     }
   ],
   "cast": [
-    { "name": "Byblis", "role": "Sister who loved her twin beyond lawful bounds" },
-    { "name": "Caunus", "role": "Brother who fled her passion" },
-    { "name": "Miletus", "role": "Their father, eponym of the Ionian city" }
+    { "id": "byblis-miletus", "name": "Byblis", "role": "Sister who loved her twin beyond lawful bounds" },
+    { "id": "caunus-miletus", "name": "Caunus", "role": "Brother who fled her passion" },
+    { "id": "cyane-maeander", "name": "Cyane", "role": "Their mother, nymph of the Maeander" }
   ],
   "places": [
     { "id": "miletus", "name": "Miletus", "role": "Ionian city near the Maeander's mouth" },

@@ -1,0 +1,32 @@
+{
+  "id": "cyane-maeander",
+  "name": "Cyane",
+  "greekName": "Kyane (Κυανή)",
+  "type": "nymph",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of the Maeander",
+    "mother of Byblis and Caunus"
+  ],
+  "kinds": ["naiad"],
+  "summary": [
+    {
+      "text": "Nymph of the wandering Maeander who bore Miletus the twin children Byblis and Caunus — the Milesian family at the heart of Ovid's warning tale of unlawful sister-love.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.676–831"
+    }
+  ],
+  "story": [
+    {
+      "text": "Near the Maeander's course, Cyane daughter of the river was united with Miletus and bore two children of surpassing beauty — the twins Byblis and Caunus, from whom the spring and the tragedy of Milesian legend would flow.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.676–831"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["ovid"]
+    }
+  ]
+}

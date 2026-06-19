@@ -1,0 +1,47 @@
+{
+  "id": "eridanus",
+  "name": "Eridanus",
+  "greekName": "Eridanos (Ἠριδανός)",
+  "romanName": "Eridanus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "deep-swirling western river",
+    "grave of Phaethon",
+    "Argonaut landmark"
+  ],
+  "summary": [
+    {
+      "text": "River-god born to Oceanus and Tethys, the deep-swirling stream far from Greece where Phaethon fell from Helios' chariot — received by the river in Ovid and Apollonius, and named among the Potamoi in Hesiod's first genealogy of waters.",
+      "sources": ["hesiod", "apollonius", "ovid", "hyginus"],
+      "citation": "Theogony 337–345; Argonautica 4.592–627; Metamorphoses 2.416–558; Fabulae 152A, 154"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Eridanus among the eddying rivers Tethys bore to Ocean — in one breath with Nilus and Alpheus, Strymon and Meander, set in the first family of waters that ring the mortal world.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Apollonius sends the Argonauts past the sacred isle of Electra near the river Eridanus, then deep into its stream where Phaethon, smitten on the breast by the blazing bolt, half-consumed fell from the chariot of Helios into the opening of that deep lake — and even then it belcheth up heavy steam clouds from the smouldering wound, and no bird spreads its light wings over the water.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.503, 592–627"
+    },
+    {
+      "text": "Ovid tells the fall at fullest length: far distant from his home the deep Eridanus received the lad and bathed his foaming face. Hesperian Naiads bore his body, still smoking, to a tomb, and on the stone they engraved that here lie Phaethon's remains — he who drove his father's car and fell, though he did not hold the reins.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.416–558"
+    },
+    {
+      "text": "Hyginus gives the genealogy of the catastrophe: Phaethon, son of Sol and Clymene, secretly mounted his father's car, was borne too high, and from fear fell into the river Eridanus; when Jupiter struck him with a thunderbolt everything started to burn. Some call the river Padus, Pherecydes being the first to name it — the Greek Eridanus and the Italian Po sharing one mythic grave.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 152A, 154"
+    },
+    {
+      "text": "Hyginus counts Eridanus among the Rivers born of Oceanus and Tethys in his genealogical preface — the western stream set in the same divine brood as Strymon, Scamander, and Inachus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

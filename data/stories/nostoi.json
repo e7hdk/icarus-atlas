@@ -5,6 +5,7 @@
   "kind": "episode",
   "parent": "trojan-cycle",
   "era": 8.9,
+  "forkChildren": true,
   "summary": {
     "text": "The Returns — when Troy was ash, the victors sailed home to treachery and storm: Agamemnon murdered in his bath, Nestor safe at Pylos, Menelaus storm-driven to Egypt, Diomedes barred from Argos, the Locrian Ajax wrecked for Cassandra's outrage, Neoptolemus overland to Epirus, and Odysseus still lost when the others landed.",
     "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
@@ -13,7 +14,7 @@
   "chapters": [
     {
       "title": "Nauplius and the false beacons",
-      "text": "Not all the ruin came from within the houses. Nauplius, avenging his son Palamedes whom the Greeks had stoned on Odysseus' accusation, coasted along Hellas spreading false news of the victors' deaths — and where the fleets approached his shores he kindled misleading beacon-fires on the cliffs, so that many ships were driven onto the rocks in the dark. The nested episode on Nauplius' vengeance tells the stoning, the corruption of the heroes' wives, and the wreck on Caphareus.",
+      "text": "Not all the ruin came from within the houses. Nauplius, avenging his son Palamedes whom the Greeks had stoned on Odysseus' accusation, coasted along Hellas spreading false news of the victors' deaths — and where the fleets approached his shores he kindled misleading beacon-fires on the cliffs, so that many ships were driven onto the rocks in the dark. The nested episode on the Framing of Palamedes tells the forged letter and the stoning at Troy; the nested episode on Nauplius' vengeance tells the corruption of the heroes' wives and the wreck on Caphareus.",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. Epit. 6.7–6.11; Hyg. Fab. 116"
     },

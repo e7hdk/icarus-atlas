@@ -19,7 +19,8 @@ era 8   trojan-war                    (root — the Iliad decade)
           ├─ patroclus-falls          (era 8.16 — Book 16)
           ├─ achilles-and-hector      (era 8.17 — Books 17–22)
           ├─ priam-and-ransom         (era 8.24 — Books 23–24)
-          ├─ aethiopis                (era 8.2 — post-Iliad)
+          ├─ aethiopis                (era 8.26 — post-Iliad)
+          ├─ ajax-and-the-arms        (era 8.30 — post-Iliad)
           └─ little-iliad             (era 8.35 — post-Iliad)
 ```
 
@@ -28,7 +29,7 @@ Era numbers follow **Iliad book order**; `rhesus` keeps era `8.1` (Book 10) from
 ## 2. Overlap policy
 
 - **Character roster** (`ILIAD_ROSTER.md`) — galaxy nodes; story episodes link via `cast.id`, never invent facts without `sources`.
-- **Cypria / Aulis / Mysia** — pre-siege material nested under `cypria` (`suitor-oath-at-sparta`, `iphigenia-at-aulis`, `telephus-at-mysia`, `protesilaus-at-troy`); Iliad episodes begin in the tenth year.
+- **Cypria / Aulis / Mysia** — pre-siege material nested under `cypria` (`suitor-oath-at-sparta`, `iphigenia-at-aulis`, `telephus-at-mysia`, `protesilaus-at-troy`, `palamedes`); Iliad episodes begin in the tenth year.
 - **Aethiopis / Little Iliad** — post-*Iliad*; `trojan-war` root points outward, does not absorb them.
 - **Odyssey / Nostoi** — Agamemnon's murder, Returns, Odysseus' wanderings stay on their shelves; cross-link in prose only.
 - **Book 10** — `rhesus` episode; cross-linked from `wounding-of-the-chiefs` and `battle-for-the-ships`.

@@ -1,0 +1,38 @@
+{
+  "id": "dorus-hellene",
+  "name": "Dorus",
+  "greekName": "Dōros (Δῶρος)",
+  "romanName": "Dorus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Dorian race",
+    "the division of Hellas",
+    "kingship over Doris"
+  ],
+  "summary": [
+    {
+      "text": "Son of Hellen by the nymph Orseis and brother of Xuthus and Aeolus; he received the country over against the Peloponnese and called the settlers Dorians after himself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus maps the Greek peoples from a single house. Hellen had Dorus, Xuthus, and Aeolus by the nymph Orseis; he named the former Greeks Hellenes after himself and divided the country among his sons. Dorus took the region facing the Peloponnese and gave his own name to the Dorians — one third of the tripartite division that sets Aeolus in Thessaly and Xuthus in the Peloponnese.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "text": "Homer knows the Dorians as a people — Tydeus' shield shows the device of a lion and a boar, the work of a craftsman from the Carians whom the Dorians drove out of the island — but names no eponymous Dorus in the epics. The man enters the record only with the genealogists who parcel Hellas after the flood.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 7.215–223; Bibliotheca 1.7.3"
+    },
+    {
+      "text": "Hyginus later splices the Dorian founder into other lines: among the sons of Neptune he counts Boeotus and Hellen by Antiopa, daughter of Aeolus — a competing stemma that must not be merged with the Deucalionid Hellen who fathered Dorus through Orseis.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 157; Bibliotheca 1.7.2–1.7.3",
+      "topic": "hellen-paternity"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "taras-hero",
+  "name": "Taras",
+  "greekName": "Taras (Τάρας)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Tarentum",
+    "son of Poseidon"
+  ],
+  "summary": [
+    {
+      "text": "The hero for whom Tarentum and its river were named — said to be a son of Poseidon by a nymph of the Italian country, in the colonial legend that Phalanthus' Spartan settlement later adopted.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Phalanthus seized Tarentum from the barbarians, Pausanias records the local story that Taras the hero was born to Poseidon and a nymph of the country, and that both the city and the river flowing beside it were called after this hero.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.8"
+    },
+    {
+      "text": "At Delphi, among the Tarentine offerings from spoils taken from the Peucetii, Pausanias saw a statue group where the hero Taras stands near Phalanthus of Lacedaemon and a dolphin — recalling how, before Phalanthus reached Italy, a dolphin is said to have brought him ashore after shipwreck in the Crisaean sea.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.13.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "tarentum",
+      "sources": ["pausanias"]
+    }
+  ]
+}

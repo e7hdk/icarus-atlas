@@ -1,0 +1,41 @@
+{
+  "id": "byblis-miletus",
+  "name": "Byblis",
+  "greekName": "Byblis (Βυβλίς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "forbidden sister-love",
+    "Milesian spring"
+  ],
+  "summary": [
+    {
+      "text": "Twin daughter of Miletus who loved her brother Caunus with a passion no sister should feel — Ovid's warning exemplum, who pursued him across Caria and Lycia until she wasted to tears and became the spring the poets still name at Miletus.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 9.676–1057; Fabulae 243; Description of Greece 7.5.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Near the wandering Maeander, Cyane daughter of the river bore Miletus two children of surpassing beauty — Byblis and Caunus, twins. Byblis loved her brother not as a sister should, with a fire she at first did not recognize as sin, until longing outgrew shame and she wrote him letters confessing all.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.676–831"
+    },
+    {
+      "text": "When Caunus fled in horror, Byblis followed unkempt through Caria and Lycia — past Cragus, Lymira, and the Xanthus, beyond Bubassus and the ridge of Chimaera — until he vanished into lands she could not enter. At last she lay down where she had chased him; nymphs saw her limbs grow stiff, her veins turn to water, and Byblis become a spring that still weeps beneath the ilex.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.950–1057"
+    },
+    {
+      "text": "Hyginus counts her among maidens who destroyed themselves for unlawful love — Biblis, daughter of Miletus, out of love for Caunus. Pausanias records the spring Biblis in the land of Miletus, of whose love the poets have sung, and an altar of Heliconian Poseidon on the way to it.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 243; Description of Greece 7.5.10, 7.24.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["ovid", "pausanias"]
+    }
+  ]
+}

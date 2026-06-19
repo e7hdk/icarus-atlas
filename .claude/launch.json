@@ -5,7 +5,14 @@
       "name": "dev",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["dev"],
-      "port": 3000,
+      "port": 3500,
+      "autoPort": true
+    },
+    {
+      "name": "dev-fast",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["exec", "next", "dev", "-p", "3501"],
+      "port": 3501,
       "autoPort": true
     },
     {

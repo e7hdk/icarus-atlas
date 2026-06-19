@@ -1,0 +1,141 @@
+{
+  "id": "palamedes",
+  "title": "The Framing of Palamedes",
+  "greekTitle": "Παλαμήδους κατηγορία",
+  "kind": "episode",
+  "parent": "cypria",
+  "era": 7.968,
+  "summary": {
+    "text": "Palamedes son of Nauplius exposed Odysseus' feigned madness at the muster and sailed to Troy with the host — until the Ithacan forged a letter of treason, buried gold in his quarters, and saw him stoned as a traitor in the camp, the injustice that set Nauplius on the vengeance that poisoned the Returns.",
+    "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
+    "citation": "Apollod. Epit. 3.7–3.8, 6.8; Hyg. Fab. 95, 105; Ov. Met. 13.1–141; Paus. 10.31.2"
+  },
+  "chapters": [
+    {
+      "title": "Son of Nauplius",
+      "text": "Palamedes was son of Nauplius the Argonaut and Clymene daughter of Catreus — though the Returns name other mothers for the same hero. Apollodorus sets him in the Cretan royal line through Clymene, beside Oeax his brother; the nested episode on Nauplius' vengeance will carry the father's answer when justice failed at the ships. Later antiquity credited him with dice and letters: Pausanias saw offerings at Nemean Fortune for the dice he invented, and Hyginus counts eleven letters among his discoveries. An Argive counsellor who could read a king's pretence, he stood among the princes the suitors' oath summoned to Troy.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.1.5, 3.2.2; Hyg. Fab. 277; Paus. 2.20.3"
+    },
+    {
+      "title": "Salt on the furrows",
+      "text": "When spokesmen came to fetch Odysseus for the war, the king of Ithaca feigned madness rather than sail — yoking horse and ox to the plough and sowing salt in the furrows, as Hyginus tells it, or simply raging in the field as Apollodorus has it. Palamedes followed him into the field, snatched the infant Telemachus from Penelope's bosom, and drew his sword as if he would kill the child. In fear for the boy Odysseus confessed that his madness was pretended, and he went to the war — but he never forgave the man who had unmasked him. The nested episode on the Suitor Oath at Sparta tells the compact that bound Greece; here the Ithacan's ruse failed before the fleet was gathered.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.7; Hyg. Fab. 95"
+    },
+    {
+      "title": "The grudge at Troy",
+      "text": "Ovid remembers the hatred when Ajax and Odysseus quarrelled over Achilles' arms: hapless Palamedes might have wished he too had been left behind, to live or die without dishonour — for the son of Laertes, who well remembered the exposure of his feigned madness, made a fraudulent attack on the son of Nauplius. Hyginus says Odysseus, because he had been tricked by Palamedes, kept plotting day by day how to kill him. Pausanias saw the two enemies grouped together in Polygnotus' painting at Delphi — Palamedes beardless beside Ajax and Thersites, Odysseus looking on with the grudge that would outlast the war.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Ov. Met. 13.1–141; Hyg. Fab. 105; Paus. 10.31.1–10.31.2"
+    },
+    {
+      "title": "The forged letter",
+      "text": "At length Odysseus formed his plan. Apollodorus says he took a Phrygian prisoner and compelled him to write a letter of treasonable purport ostensibly sent by Priam to Palamedes; he buried gold in the man's quarters and dropped the letter in the camp. Hyginus adds another strand: Odysseus sent a soldier to Agamemnon with word that in a dream he had been warned the camp must be searched — and the planted gold was found where the Ithacan had hidden it. Agamemnon read the letter, found the treasure, and delivered Palamedes to the allies to be stoned as a traitor. Ovid makes the charge echo through the quarrel over Achilles' arms: the army that condemned Palamedes on hearsay would later judge Ajax and Odysseus by the same bitter standard.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 3.8; Hyg. Fab. 105; Ov. Met. 13.296–454"
+    },
+    {
+      "title": "Stoned in the camp",
+      "text": "The allies stoned Palamedes in the Greek camp at Troy — the death Apollodorus and Hyginus agree on, and Agamemnon himself, the Epitome says later, was Odysseus' accomplice in the murder. Yet Pausanias, reading the epic poem Cypria, knew a different end: Palamedes was drowned when he put out to catch fish, and his murderers were Diomedes and Odysseus. The dispute is not whether the Ithacan hated him, but how the counsellor died — by the stones of the host in camp, or by water and the hands of two captains on a fishing expedition. Homer never names Palamedes in the Iliad; the injustice lives in the Epic Cycle and the Returns, where his shade waits for the reckoning Nauplius would bring.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 3.8, 6.8; Hyg. Fab. 105; Paus. 10.31.2",
+      "topic": "palamedes-death-manner"
+    },
+    {
+      "title": "Justice denied",
+      "text": "When Nauplius learned that his son had been stoned through the machinations of Odysseus, he sailed to the Greeks and claimed satisfaction — but he returned unsuccessful, for the host favoured King Agamemnon, who had been the accomplice in the murder, and would not punish the lord who had led them at Troy. The nested episode on Nauplius' vengeance tells what followed: the corruption of Clytemnestra, Aegialia, and Meda before their husbands landed, and the false beacon on Mount Caphareus that wrecked the fleet on the Capherian rocks. The Returns were never a single homecoming but a chain of reckonings, and the stoning of Palamedes was the link Odysseus forged in the camp at Ilion.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.8–6.11; Hyg. Fab. 116–117"
+    }
+  ],
+  "cast": [
+    {
+      "id": "palamedes",
+      "name": "Palamedes",
+      "role": "Argive counsellor stoned on a forged charge"
+    },
+    {
+      "id": "nauplius-amymone",
+      "name": "Nauplius",
+      "role": "Father who would avenge him on the Returns"
+    },
+    {
+      "id": "clymene-catreus",
+      "name": "Clymene",
+      "role": "Mother, daughter of Catreus in Apollodorus"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Author of the false treason who never forgave the exposure"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Lord who read the letter and delivered him to be stoned"
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "From whose arms Telemachus was snatched at Ithaca"
+    },
+    {
+      "id": "telemachus",
+      "name": "Telemachus",
+      "role": "The infant used to expose feigned madness"
+    },
+    {
+      "name": "Oiax",
+      "role": "Brother who would later warn Clytemnestra falsely of Cassandra"
+    },
+    {
+      "id": "diomedes",
+      "name": "Diomedes",
+      "role": "Named in the Cypria's drowning variant as murderer"
+    }
+  ],
+  "places": [
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "role": "Where Odysseus feigned madness in the furrows"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Where the forged letter condemned him in camp"
+    },
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Kingdom of the Naupliads and Palamedes' house"
+    },
+    {
+      "name": "Nemea",
+      "role": "Where Pausanias saw offerings for Palamedes' dice"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "3.7–3.8, 6.8"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "95, 105, 277"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "13.1–141, 13.296–454"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "2.20.3, 10.31.1–10.31.2"
+    }
+  ]
+}

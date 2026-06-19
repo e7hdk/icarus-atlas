@@ -8,7 +8,7 @@
   "summary": {
     "text": "Before the Iliad's tenth year — the suitors' oath at Sparta, the muster at Aulis where Iphigenia was sacrificed for a fair wind, the fleet's fatal detour to Mysia where Telephus barred the way, and Protesilaus first ashore at Troy when the true voyage began.",
     "sources": ["apollodorus", "hyginus", "homer", "pausanias"],
-    "citation": "Apollod. Epit. 3.12–3.22, 3.29–3.30; Hyg. Fab. 78, 98–101, 103; Hom. Il. 2.559–580, 4.404–410; Paus. 3.20.9, 9.5.14"
+    "citation": "Apollod. Epit. 3.7–3.8, 3.12–3.22, 3.29–3.30; Hyg. Fab. 78, 95, 98–101, 103, 105; Hom. Il. 2.559–580, 4.404–410; Paus. 3.20.9, 9.5.14"
   },
   "chapters": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "title": "Iphigenia at Aulis",
-      "text": "Agamemnon gathered the host at Aulis on the Euboean coast, but the fleet could not sail until Artemis received her price. Calchas declared that the goddess demanded Agamemnon's daughter Iphigenia; the king lured her with a promise of marriage to Achilles and set her beside the altar — sacrificed, or snatched away and replaced by a deer, as the sources disagree. The nested episode on Iphigenia at Aulis tells the becalmed muster, the false marriage, and the parentage dispute Pausanias preserves at Hermione.",
+      "text": "Agamemnon gathered the host at Aulis on the Euboean coast, but the fleet could not sail until Artemis received her price. Calchas declared that the goddess demanded Agamemnon's daughter Iphigenia; the king lured her with a promise of marriage to Achilles and set her beside the altar — sacrificed, or snatched away and replaced by a deer, as the sources disagree. The nested episode on the Framing of Palamedes tells how Odysseus' feigned madness failed before the muster and how the grudge born at Ithaca would end in the counsellor's stoning at Troy; the nested episode on Iphigenia at Aulis tells the becalmed muster, the false marriage, and the parentage dispute Pausanias preserves at Hermione.",
       "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
       "citation": "Apollod. Epit. 3.21–3.22; Hyg. Fab. 98–101; Ov. Met. 12; Paus. 2.22.6–7",
       "topic": "iphigenia-parentage"
@@ -48,6 +48,7 @@
     { "id": "telephus", "name": "Telephus", "role": "King who barred the mistaken landing" },
     { "id": "thersander", "name": "Thersander", "role": "Theban king slain at Mysia" },
     { "id": "odysseus", "name": "Odysseus", "role": "Author of the suitors' oath" },
+    { "id": "palamedes", "name": "Palamedes", "role": "Counsellor stoned on Odysseus' forged charge" },
     { "id": "protesilaus", "name": "Protesilaus", "role": "First ashore at Troy, first to die" },
     { "id": "calchas-thestor", "name": "Calchas", "role": "Seer of Aulis and the nine-year omen" }
   ],

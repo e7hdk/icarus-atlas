@@ -8,37 +8,82 @@
   "domains": [
     "the lyre",
     "prophetic song",
-    "the Argonaut voyage"
+    "the Argonaut voyage",
+    "descent to Hades",
+    "Orphic mysteries"
   ],
   "summary": [
     {
-      "text": "Son of Oeagrus and the Muse Calliope, Thracian minstrel of the Argo whose counter-melody saved the crew from the Sirens when Butes alone was lost to their song.",
+      "text": "Son of Oeagrus and the Muse Calliope — or nominally of Apollo — Thracian minstrel whose song moved stones and trees, steered the Argo past the Sirens, descended to Hades for Eurydice, and was torn apart by Ciconian Maenads when he shunned all women after her loss.",
       "sources": [
         "apollodorus",
         "apollonius",
+        "ovid",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Argonautica 1.23, 4.905–909; Fabulae 14",
+      "citation": "Bibliotheca 1.3.2, 1.9.16, 1.9.25; Argonautica 1.23, 4.885–919; Metamorphoses 10.1–137, 11.1–129; Fabulae 14, 251",
       "topic": "orpheus-parentage"
     }
   ],
   "story": [
     {
-      "text": "Apollonius places him first in the muster after Jason: from the Pierian height came Orpheus, whom Calliope bore to Oeagrus near Pimpleia, and his song held even the Clashing Rocks when the Argo passed. At the Sirens' isle he chanted a counter-melody so sweet that the crew rowed on unharmed.",
+      "text": "Apollodorus and Apollonius make him the child of Calliope and the Thracian Oeagrus near Pimpleia on Olympus' Pierian slope; Apollodorus adds that he was borne nominally to Apollo as well, and that Calliope's elder son Linus, whom Heracles slew at Thebes, was his brother. Hyginus names him prophet and cithara-player of Pieria. Pausanias rejects the Muse as mother and counts it among Greek untruths that beasts followed him or that he went down alive to Hades.",
       "sources": [
+        "apollodorus",
         "apollonius",
-        "apollodorus"
-      ],
-      "citation": "Argonautica 1.23–34, 4.891–919; Bibliotheca 1.9.16, 1.9.25"
-    },
-    {
-      "text": "Hyginus names him prophet and cithara-player from Pieria on Olympus, and sets him at the prow to give the bosun's calls; Pausanias rejects the descent from Calliope as a Greek untruth.",
-      "sources": [
         "hyginus",
         "pausanias"
       ],
-      "citation": "Fabulae 14; Description of Greece 9.30.4",
+      "citation": "Bibliotheca 1.3.2, 2.4.9; Argonautica 1.23; Fabulae 14; Description of Greece 9.30.4",
       "topic": "orpheus-parentage"
+    },
+    {
+      "text": "Apollonius places him first in the muster after Jason: from the Pierian height came Orpheus, and his song held even the Clashing Rocks when the Argo passed. At the Sirens' isle he chanted a counter-melody so sweet that the crew rowed on unharmed; Apollodorus and Hyginus agree that only Butes swam off toward the death-singers and was saved by Aphrodite at Lilybaeum.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.23–34, 4.885–919; Bibliotheca 1.9.16, 1.9.25; Fabulae 14"
+    },
+    {
+      "text": "He wedded Eurydice, but when a serpent's bite killed her he went down through Taenarus to Hades. To his lyre he moved Persephone and Pluto — Tantalus forgot the returning water, Ixion's wheel stood still, the vultures left Tityus, and the Eumenides wept — and won her back on condition he not look behind. Apollodorus sets the test at his own house; Ovid at the threshold of earth. One backward glance sent her down forever.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.3.2; Metamorphoses 10.11–95; Fabulae 251",
+      "topic": "eurydice-return-condition"
+    },
+    {
+      "text": "Mourning in Rhodope and Haemus, he shunned all women for three years and sat in an enchanted grove where trees and beasts gathered — singing gentler tales of Ganymede borne away by Zeus and Hyacinth slain by Apollo's discus, from whose blood the flower sprang marked with AI, AI.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 10.95–137, 10.148–331"
+    },
+    {
+      "text": "The Ciconian women, maddened because he rejected their love, drowned his lyre with tambourines and tore him apart. Apollodorus says the Maenads dismembered him; Ovid names the matrons who loved Dionysus and hated the poet's scorn. His head and harp floated down the Hebrus still murmuring Eurydice; Apollo saved the head from a serpent on Lesbos at Methymna.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 1.3.2; Metamorphoses 11.1–99"
+    },
+    {
+      "text": "Apollodorus adds that he discovered the mysteries of Dionysus and was buried in Pieria. Ovid reunites his shade with Eurydice among the blessed fields where no backward glance can harm them, while Bacchus roots the Edonian murderers into oak.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 1.3.2; Metamorphoses 11.99–129"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lesbos",
+      "sources": ["ovid"]
     }
   ]
 }

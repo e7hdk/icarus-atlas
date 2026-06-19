@@ -4,10 +4,11 @@ import { join } from 'node:path';
 import { load, type Cheerio, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
 import { z } from 'zod';
+import { SOURCE_IDS } from '../../src/types/character';
 
 const entrySchema = z.object({
   id: z.string().min(1),
-  sourceId: z.enum(['homer', 'hesiod', 'apollodorus', 'apollonius', 'ovid', 'hyginus', 'pausanias']),
+  sourceId: z.enum(SOURCE_IDS),
   author: z.string().min(1),
   work: z.string().min(1),
   citationLabel: z.string().min(1),

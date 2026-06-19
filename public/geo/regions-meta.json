@@ -234,6 +234,294 @@
         0
       ]
     },
+    "mysia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        27.649594999999998,
+        39.600055
+      ],
+      "bbox": [
+        26.49947,
+        39.00037,
+        28.79972,
+        40.19974
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "lydia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        28.249735,
+        38.75
+      ],
+      "bbox": [
+        26.99988,
+        37.99981,
+        29.49959,
+        39.50019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "ionia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        27.25009,
+        38.14985
+      ],
+      "bbox": [
+        26.00024,
+        37.5,
+        28.49994,
+        38.7997
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "caria": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        28.249735,
+        37.15022
+      ],
+      "bbox": [
+        26.99988,
+        36.50037,
+        29.49959,
+        37.80007
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "lycia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        29.650065,
+        36.49991
+      ],
+      "bbox": [
+        27.80007,
+        35.79989,
+        31.50006,
+        37.19993
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "pamphylia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        31.24985,
+        36.85015
+      ],
+      "bbox": [
+        30,
+        36.2003,
+        32.4997,
+        37.5
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "cilicia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        34.499584999999996,
+        36.89985
+      ],
+      "bbox": [
+        32.4997,
+        35.99963,
+        36.49947,
+        37.80007
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "phrygia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        30,
+        39.499719999999996
+      ],
+      "bbox": [
+        27.5003,
+        38.49963,
+        32.4997,
+        40.49981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "bithynia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        30,
+        40.750185
+      ],
+      "bbox": [
+        28.49994,
+        40,
+        31.50006,
+        41.50037
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "paphlagonia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        34.000355,
+        41.25
+      ],
+      "bbox": [
+        32.00047,
+        40.49981,
+        36.00024,
+        42.00019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "pontus": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        38.75015,
+        41.25
+      ],
+      "bbox": [
+        36.00024,
+        40,
+        41.50006,
+        42.5
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "cappadocia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        36.000235,
+        39.24981
+      ],
+      "bbox": [
+        33.50053,
+        37.99981,
+        38.49994,
+        40.49981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "sicily": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        14.050515,
+        37.349965
+      ],
+      "bbox": [
+        12.40057,
+        36.40004,
+        15.70046,
+        38.29989
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "magna-graecia": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        16.999879999999997,
+        39.549885
+      ],
+      "bbox": [
+        15.49982,
+        37.80007,
+        18.49994,
+        41.2997
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "latium": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        12.699755,
+        41.749815
+      ],
+      "bbox": [
+        12.19993,
+        41.40004,
+        13.19958,
+        42.09959
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "campania": {
+      "level": "region",
+      "parent": null,
+      "centroid": [
+        14.650065,
+        40.899755
+      ],
+      "bbox": [
+        13.80031,
+        40.49981,
+        15.49982,
+        41.2997
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
     "elis": {
       "level": "subregion",
       "parent": "peloponnese",
@@ -1218,6 +1506,114 @@
         36.59978,
         27.44955,
         37.00019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "dardania": {
+      "level": "subregion",
+      "parent": "troad",
+      "centroid": [
+        27.249499999999998,
+        39.624674999999996
+      ],
+      "bbox": [
+        26.49947,
+        39.04961,
+        27.99953,
+        40.19974
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "aeolis": {
+      "level": "subregion",
+      "parent": "mysia",
+      "centroid": [
+        27.14977,
+        39.10024
+      ],
+      "bbox": [
+        26.49947,
+        39.00037,
+        27.80007,
+        39.20011
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "teuthrania": {
+      "level": "subregion",
+      "parent": "mysia",
+      "centroid": [
+        27.649594999999998,
+        39.600055
+      ],
+      "bbox": [
+        26.49947,
+        39.00037,
+        28.79972,
+        40.19974
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "maeonia": {
+      "level": "subregion",
+      "parent": "lydia",
+      "centroid": [
+        28.249735,
+        38.75
+      ],
+      "bbox": [
+        26.99988,
+        37.99981,
+        29.49959,
+        39.50019
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "hellespontine-phrygia": {
+      "level": "subregion",
+      "parent": "phrygia",
+      "centroid": [
+        28.750149999999998,
+        39.499719999999996
+      ],
+      "bbox": [
+        27.5003,
+        38.49963,
+        30,
+        40.49981
+      ],
+      "labelNudge": [
+        0,
+        0
+      ]
+    },
+    "ascania": {
+      "level": "subregion",
+      "parent": "phrygia",
+      "centroid": [
+        31.24985,
+        39.499719999999996
+      ],
+      "bbox": [
+        30,
+        38.49963,
+        32.4997,
+        40.49981
       ],
       "labelNudge": [
         0,

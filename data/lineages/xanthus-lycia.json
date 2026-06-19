@@ -1,0 +1,19 @@
+{
+  "city": "xanthus-lycia",
+  "reigns": [
+    {
+      "ruler": "Bellerophon",
+      "characterId": "bellerophon",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.171–205; Bibliotheca 2.3.1–2.3.2",
+      "note": "Sent to Lycia bearing baneful tokens, he slew the Chimera, fought the glorious Solymi and the Amazons, and received half the kingly honour; he came to the stream of Xanthus and was bequeathed the Lycian realm."
+    },
+    {
+      "ruler": "Sarpedon",
+      "characterId": "sarpedon",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.876–877; Bibliotheca 3.1.2",
+      "note": "Son of Zeus and Europa who fled Crete after Minos' victory, allied with Cilix, and became king of Lycia; Homer makes him and peerless Glaucus captains of the Lycians from the eddying Xanthus."
+    }
+  ]
+}

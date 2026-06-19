@@ -3,7 +3,7 @@
   "title": "The Death of Orpheus",
   "greekTitle": "Ὀρφέως θάνατος",
   "kind": "episode",
-  "parent": "metamorphoses",
+  "parent": "orpheus-cycle",
   "era": 7.12,
   "summary": {
     "text": "The Ciconian women, maddened because Orpheus shunned their love after Eurydice, drowned his lyre with tambourines and tore him apart; his head and harp floated down the Hebrus still singing, and his shade at last walked safely with Eurydice in the fields of the blessed — while Dionysus rooted the murderers into oak.",
@@ -38,7 +38,8 @@
   ],
   "cast": [
     { "id": "orpheus", "name": "Orpheus", "role": "Bard torn apart by the maenads" },
-    { "name": "Eurydice", "role": "Wife reunited with his shade in the underworld" },
+    { "id": "eurydice-orpheus", "name": "Eurydice", "role": "Wife reunited with his shade in the underworld" },
+    { "id": "ciconian-maenads", "name": "The Ciconian Maenads", "role": "Women who tore him apart" },
     { "id": "dionysus", "name": "Dionysus", "role": "Bacchus, who punished the murderers" },
     { "id": "apollo", "name": "Apollo", "role": "God who saved the head on Lesbos" }
   ],

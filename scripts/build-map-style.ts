@@ -16,7 +16,7 @@
  *
  * Usage: pnpm build:map
  */
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import bboxClip from '@turf/bbox-clip';
 import { featureCollection } from '@turf/helpers';
@@ -70,10 +70,13 @@ const STALE_OUTPUTS = [
 
 /** Aether Nebula palette — sync with src/styles/theme.css */
 const COLORS = {
-  background: '#08041d',
+  /** Transparent: the sea is the CSS nebula backdrop behind the canvas (see
+   *  MapLibreView), so the basin glows like the rest of the atlas instead of a
+   *  flat fill. The canvas is alpha by default; no opaque background layer. */
+  background: 'rgba(8, 4, 29, 0)',
   land: '#1a1240',
   landStroke: '#7c4dff',
-  lake: '#05020f',
+  lake: '#0a0726',
   coast: '#00e5ff',
   coastHalo: '#7c4dff',
 } as const;
@@ -228,14 +231,29 @@ function buildStyle(
       },
     },
     {
+      // Wide, blurred cyan bloom — fakes the galaxy's glow where shore meets the
+      // nebula sea. Drawn first so the halo and crisp core sit on top.
+      id: 'coast-bloom',
+      type: 'line',
+      source: 'coastline',
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: {
+        'line-color': COLORS.coast,
+        'line-blur': ['interpolate', ['linear'], ['zoom'], 3, 2.5, 12, 7],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.03, 8, 0.05, 12, 0.08],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 3, 8, 7, 12, 12],
+      },
+    },
+    {
       id: 'coast-halo',
       type: 'line',
       source: 'coastline',
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: {
         'line-color': COLORS.coastHalo,
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.1, 8, 0.18, 12, 0.26],
-        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1, 8, 2, 12, 3],
+        'line-blur': 0.6,
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.06, 8, 0.1, 12, 0.14],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.2, 8, 2.2, 12, 3],
       },
     },
     {
@@ -245,8 +263,8 @@ function buildStyle(
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: {
         'line-color': COLORS.coast,
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.38, 8, 0.52, 12, 0.62],
-        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.45, 8, 0.85, 12, 1.3],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.18, 8, 0.26, 12, 0.34],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 0.45, 8, 0.85, 12, 1.25],
       },
     },
     {
@@ -275,8 +293,48 @@ function buildStyle(
   };
 }
 
+/** All files this build reads from — if every output is newer than each of
+ *  these (and exists), the basemap is current and we can skip the whole clip. */
+const INPUT_FILES = [
+  join(RAW_DIR, 'ne_10m_land.geojson'),
+  join(RAW_DIR, 'ne_10m_lakes.geojson'),
+  join(RAW_DIR, 'ne_10m_coastline.geojson'),
+  join('scripts', 'build-map-style.ts'),
+  join('scripts', 'build-regions-geojson.ts'),
+  join('scripts', 'lib', 'svg-path-geo.ts'),
+  join('data', 'geo', 'basemap.json'),
+  join('data', 'geo', 'regions.json'),
+];
+
+const OUTPUT_FILES = [
+  join(OUT_DIR, 'land.json'),
+  join(OUT_DIR, 'lakes.json'),
+  join(OUT_DIR, 'coastline.json'),
+  join(OUT_DIR, 'style.json'),
+  join(OUT_DIR, 'manifest.json'),
+  join(OUT_DIR, 'regions-meta.json'),
+];
+
+/** Skip the (multi-second) clip when the basemap is already up to date.
+ *  Requires the raw Natural Earth tiles to be present — a fresh checkout with
+ *  no raw cache always rebuilds (and downloads). */
+function isCurrent(): boolean {
+  if (!OUTPUT_FILES.every(existsSync)) return false;
+  const inputs = INPUT_FILES.filter(existsSync);
+  // Raw tiles are mandatory inputs; if they aren't cached we must rebuild.
+  if (!existsSync(join(RAW_DIR, 'ne_10m_land.geojson'))) return false;
+  const newestInput = Math.max(...inputs.map((p) => statSync(p).mtimeMs));
+  const oldestOutput = Math.min(...OUTPUT_FILES.map((p) => statSync(p).mtimeMs));
+  return oldestOutput >= newestInput;
+}
+
 async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
+
+  if (isCurrent()) {
+    console.log('Basemap already built & current — skipping (touch a data/geo input to rebuild).');
+    return;
+  }
 
   const [landRaw, lakesRaw, coastRaw] = await Promise.all([
     download(LAYERS.land, 'ne_10m_land.geojson'),

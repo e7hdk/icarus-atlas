@@ -1,0 +1,33 @@
+{
+  "city": "smyrna",
+  "reigns": [
+    {
+      "ruler": "Penthilus",
+      "characterId": "penthilus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1",
+      "note": "Bastard son of Orestes who seized Lesbos and began the Aeolian migration to Asia Minor — ancestor of the colonists who settled the coast where Smyrna stood as one of the twelve Aeolian cities."
+    },
+    {
+      "ruler": "Gras",
+      "characterId": "gras-aeolis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1; 7.5.1",
+      "note": "Son of Echelas and grandson of Penthilus; led the Lacedaemonian and Achaean colonists who occupied Aeolis, of which Smyrna was one of the twelve cities on the site still called the old town."
+    },
+    {
+      "ruler": "Colonists from Colophon",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.5.1",
+      "note": "Ionians who set out from Colophon and displaced the Aeolians at the old town; the Ionians later allowed the Smyrnaeans a seat at the Panionium assembly.",
+      "topic": "smyrna-regional-affiliation"
+    },
+    {
+      "ruler": "Achilles",
+      "characterId": "achilles",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.33",
+      "note": "During the raids that preceded the Trojan War, Achilles took Smyrna among the coastal cities of Asia Minor."
+    }
+  ]
+}

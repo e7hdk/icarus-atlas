@@ -1,0 +1,34 @@
+{
+  "id": "linus-orpheus",
+  "name": "Linus",
+  "greekName": "Linos (Λῖνος)",
+  "romanName": "Linus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "brother of Orpheus",
+    "the Theban musician",
+    "slain by Heracles"
+  ],
+  "summary": [
+    {
+      "text": "Elder brother of Orpheus, son of Calliope and Oeagrus — or nominally of Apollo — whom Heracles slew at Thebes with a blow of the lyre when Linus tried to teach him music.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.2, 2.4.9",
+      "topic": "orpheus-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus pairs Linus with Orpheus in Calliope's Pierian brood: she bore to Oeagrus, or nominally to Apollo, a son Linus, whom Heracles slew, and another son Orpheus, who practised minstrelsy and by his songs moved stones and trees.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.2",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "text": "This Linus was a brother of Orpheus who came to Thebes and became a Theban. Heracles learned to play the lyre from him; when struck by his teacher, the hero flew into a rage and slew Linus with the instrument. Tried for murder, Heracles quoted Rhadamanthys' law that whoever defends himself against an aggressor is blameless, and was acquitted.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.9"
+    }
+  ]
+}

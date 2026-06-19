@@ -1,0 +1,49 @@
+{
+  "id": "simois",
+  "name": "Simois",
+  "greekName": "Simoeis (Σιμόεις)",
+  "romanName": "Simois",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Trojan river",
+    "twin of Scamander",
+    "father of Astyoche",
+    "river wrath"
+  ],
+  "summary": [
+    {
+      "text": "The second river of the Trojan plain — born to Oceanus and Tethys, paired with Scamander in battle and in genealogy; father of Astyoche, whom Erichthonius married to continue the royal line of Troy.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Theogony 337–345; Iliad 4.473–475, 21.307–382; Bibliotheca 3.12.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod counts Simois among the holy rivers Tethys bore to Ocean — set beside Scamander's name in the Theogony's catalogue of the world's eddying streams.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Homer gives the river a human face on the battlefield. Ajax slew Simoeisius, a youth born beside the banks of Simois as his mother journeyed down from Ida — 'for this cause they called him Simoeisius' — and the poet remembers how many shields and helms fell by the streams of Simois when Apollo turned the mouths of Ida's rivers against the Achaean wall.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.473–475, 12.17–22"
+    },
+    {
+      "text": "When Scamander rose against Achilles for the corpses choking his channels, the river-god called Simoeis to his aid: 'Simoeis, beloved brother, let us both together stay the might of this man.' Only Hephaestus' fire and Hera's word stayed the flood that would have drowned the hero.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.307–382"
+    },
+    {
+      "text": "Apollodorus weaves Simois into the Trojan stemma. When Ilus died childless, Erichthonius succeeded and married Astyoche, daughter of Simoeis; their son Tros called the country Troy after himself. So the second river of Ilion fathers the queen who links the Dardanid house to the stream beside Scamander.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

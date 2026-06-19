@@ -4,63 +4,135 @@
   "greekTitle": "Διομήδους φυγή",
   "kind": "episode",
   "parent": "nostoi",
-  "era": 8.902,
+  "era": 8.9,
   "summary": {
     "text": "Diomedes reached Argos from Troy only to find Aegialia had taken Cometes son of Sthenelus as lover — Nauplius' poison at work — and with the Argives' help she barred the lord of Athena's favour from his city; he fled by night into exile and the western kingdoms.",
-    "sources": ["homer", "apollodorus"],
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
     "citation": "Hom. Il. 5.1–863, 6.119–236; Apollod. Epit. 5.10, 6.9"
   },
   "chapters": [
     {
       "title": "Athena's favourite",
       "text": "Of all the kings at Troy none bore himself more fiercely in open battle than Diomedes son of Tydeus. Pallas Athena kindled flame from his helm and shield and granted him sight to know god from man; in a single day's aristeia he wounded Aphrodite and drove his spear into the belly of Ares. Meeting Glaucus between the lines he remembered guest-right and refused to fight a friend's house — the bronze-for-gold swap the poets still name after him. By night he was Odysseus' partner in the Doloneia and in the theft of the Palladium without which Ilium could not fall.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 5.1–863, 6.119–236, 10.220–579; Apollod. Epit. 5.10"
     },
     {
       "title": "Nauplius' poison",
       "text": "The Returns did not begin at the harbour. Nauplius, denied justice for Palamedes stoned at Troy, coasted along Hellas spreading false news of the victors' deaths — and contrived that the heroes' wives should play their husbands false. The nested episode on Nauplius' vengeance tells the beacons on Caphareus and the corruption of the houses; here the wound is Argive. Aegialia, stately daughter of Adrastus and wife of horse-taming Diomedes, took Cometes son of Sthenelus as lover before the king could secure his throne.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.9"
     },
     {
       "title": "Barred from Argos",
       "text": "Diomedes put in at Argos with the spoils of Troy and found the city closed against him. Cometes held Aegialia's favour and the Argives protected him in such numbers that Diomedes could not punish the adulterer without civil war. His wife, with the people's help, forbade him entry — the homecoming of the man who had wounded two gods at Troy ended at the gate of his own kingdom. The nested episode on Idomeneus and Leucus tells the Cretan parallel; Nestor had reached Pylos safely; Agamemnon would die in the bath; Menelaus was still storm-driven toward Egypt.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.9"
     },
     {
       "title": "Flight by night",
       "text": "Unable to kill Cometes or reclaim his house, Diomedes withdrew by night with his companions — exile where a king's return should have been. Apollodorus sets this betrayal beside Clytemnestra's plot at Mycenae and Meda's at Crete: the same Nauplius who kindled false beacons had already poisoned the marriages the victors expected to find intact. The lord of the war-god's fury, who had never hung back in the press at Troy, left Argos as he once left Calydon to avenge Oeneus — but this time with no throne to win at the journey's end.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.9"
     },
     {
       "title": "Westward",
       "text": "The Epic Cycle's Returns carry Diomedes beyond Hellas. Apollodorus says he fled to Italy — the same strand of myth that later made him founder of Adriatic cities and host to Aeneas when the Trojan line went west. His safe voyage from Troy had kept Athena's favour on the sea; the betrayal at Argos drove that favour into exile with him. Of the great captains only Nestor's homecoming at Pylos would remain unpoisoned among the kings who ruled kingdoms on the Greek mainland.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.9"
     }
   ],
   "cast": [
-    { "id": "diomedes", "name": "Diomedes", "role": "Argive king barred from his city" },
-    { "id": "aegialia-adrastid", "name": "Aegialia", "role": "Wife who took Cometes and closed the gates" },
-    { "id": "nauplius-amymone", "name": "Nauplius", "role": "Avenger who corrupted the Greek wives" },
-    { "id": "odysseus", "name": "Odysseus", "role": "Partner at Troy and in the Palladium theft" },
-    { "id": "athena", "name": "Athena", "role": "Patron who had empowered him in battle" },
-    { "id": "sthenelus-epigoni", "name": "Sthenelus", "role": "Cometes' father, his charioteer at Troy" },
-    { "name": "Cometes", "role": "Son of Sthenelus, Aegialia's lover" },
-    { "id": "adrastus", "name": "Adrastus", "role": "Aegialia's father, old king of Argos" },
-    { "id": "nestor", "name": "Nestor", "role": "He who reached home without treachery" }
+    {
+      "id": "diomedes",
+      "name": "Diomedes",
+      "role": "Argive king barred from his city"
+    },
+    {
+      "id": "aegialia-adrastid",
+      "name": "Aegialia",
+      "role": "Wife who took Cometes and closed the gates"
+    },
+    {
+      "id": "nauplius-amymone",
+      "name": "Nauplius",
+      "role": "Avenger who corrupted the Greek wives"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Partner at Troy and in the Palladium theft"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Patron who had empowered him in battle"
+    },
+    {
+      "id": "sthenelus-epigoni",
+      "name": "Sthenelus",
+      "role": "Cometes' father, his charioteer at Troy"
+    },
+    {
+      "name": "Cometes",
+      "role": "Son of Sthenelus, Aegialia's lover"
+    },
+    {
+      "id": "adrastus",
+      "name": "Adrastus",
+      "role": "Aegialia's father, old king of Argos"
+    },
+    {
+      "id": "nestor",
+      "name": "Nestor",
+      "role": "He who reached home without treachery"
+    }
   ],
   "places": [
-    { "id": "argos", "name": "Argos", "role": "Kingdom that barred its returning lord" },
-    { "id": "troy", "name": "Troy", "role": "Whence he sailed with the victors' spoils" },
-    { "id": "pylos", "name": "Pylos", "role": "Nestor's safe harbour by contrast" },
-    { "name": "Italy", "role": "Land of exile in Apollodorus' Returns" }
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Kingdom that barred its returning lord"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Whence he sailed with the victors' spoils"
+    },
+    {
+      "id": "pylos",
+      "name": "Pylos",
+      "role": "Nestor's safe harbour by contrast"
+    },
+    {
+      "name": "Italy",
+      "role": "Land of exile in Apollodorus' Returns"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Iliad", "citation": "5.1–863, 6.119–236, 10.220–579" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "5.10, 6.9" }
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "5.1–863, 6.119–236, 10.220–579"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "5.10, 6.9"
+    }
   ]
 }

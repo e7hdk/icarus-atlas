@@ -4,70 +4,152 @@
   "greekTitle": "Ἰδομενεὺς καὶ Λεύκος",
   "kind": "episode",
   "parent": "nostoi",
-  "era": 8.9082,
+  "era": 8.9,
   "summary": {
     "text": "Idomeneus of Crete's hundred cities led eighty ships at Troy and fought with Poseidon walking the field in his likeness — but Nauplius turned Meda to Leucus before the king landed, and the usurper killed wife and daughter in the temple, seized ten cities, and drove the victor into exile.",
-    "sources": ["homer", "apollodorus", "hyginus"],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Hom. Il. 2.645–650, 4.257–271, 13.206–270; Apollod. Epit. 6.9–6.10; Hyg. Fab. 116–120"
   },
   "chapters": [
     {
       "title": "Eighty black ships",
       "text": "Of all who dwelt in Crete of the hundred cities — Cnosus and Gortys, Lyctus and Miletus, Lycastus, Phaestus, Rhytium and the rest — Idomeneus, famed for his spear, was captain, and with him Meriones, the peer of Enyalius. Eighty black ships they brought to Troy. Agamemnon, seeing him arm amid the Cretans, called him the Danaan he honoured most in war and at the feast. When the Trojans pressed the ships, Poseidon took the likeness of Idomeneus and roused the Achaeans; meeting the true king afterward, the god in that borrowed form traced his lineage from Zeus through Minos and Deucalion — praise in the ears of a lord who would not keep his throne.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Il. 2.645–650, 3.230–240, 4.257–271, 13.206–270, 17.250–270"
     },
     {
       "title": "Nauplius' poison",
       "text": "The Returns did not begin at the harbour. Denied justice for Palamedes stoned at Troy, Nauplius coasted along the Greek lands and contrived that the victors' wives should play their husbands false — the nested episode on Nauplius' vengeance tells the beacons on Caphareus and the corruption of the houses. Clytemnestra turned to Aegisthus; Aegialia to Cometes son of Sthenelus, and the nested episode on Diomedes' exile tells the barred gates at Argos; Meda, wife of Idomeneus, to Leucus. The Cretan king sailed home from Troy in glory while his marriage was already poisoned on the island.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 6.9; Hyg. Fab. 116–117"
     },
     {
       "title": "Murder in the temple",
       "text": "Before Idomeneus landed, Leucus acted. Apollodorus says he killed Meda — and her daughter Clisithyra, who had taken refuge in the temple. The sacrilege matched the adultery: the usurper struck not only the queen but the child who fled to divine protection. The pattern of the Returns repeated from Mycenae to Argos to Crete — murder in the house, murder at the altar, and a throne seized while the lawful lord was still on the sea.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.10"
     },
     {
       "title": "Tyrant of ten cities",
       "text": "Having detached ten cities from Crete, Leucus made himself tyrant over them — a fragment of the hundred-city kingdom Idomeneus had ruled from Knossos. The coup was complete before the victor of Troy touched shore: wife dead, daughter dead in sanctuary, and a rival enthroned on the island Homer had named when Helen on the wall pointed out the Cretan captain even as a god. Meriones, the spearman who had fought beside his king through every season of the war, could not restore what Leucus had taken by treachery and blood.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 6.10"
     },
     {
       "title": "Landing at Crete",
       "text": "When after the Trojan war Idomeneus landed in Crete, Leucus drove him out. Apollodorus sets the homecoming beside the other betrayals of the Nostoi — Agamemnon murdered in the bath, Diomedes barred from Argos, Menelaus storm-driven toward Egypt, the Locrian Ajax wrecked on the Gyraean rocks. The man Poseidon had walked the field in likeness of, whom Nestor's generation had counted among the first of captains, returned from Troy to find closed gates and a usurper on his cities. Not to be confused with Leucus son of Antiphus, Odysseus' comrade slain by Hector in the Iliad — this Leucus is the Cretan lover who stole Meda.",
-      "sources": ["apollodorus", "homer"],
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Apollod. Epit. 6.10; Hom. Il. 4.490–515"
     },
     {
       "title": "Exile from the hundred cities",
       "text": "Idomeneus went into exile — another lord of Troy who could not keep his kingdom. Hyginus rolls the Returns in a catalogue of those who perished on the sea, those murdered at home, and those dispossessed; the Cretan king belongs among the last. Nestor alone among the great mainland captains would reach Pylos without poison; Odysseus was still lost when Crete closed against its rightful king. The nested episode on Philoctetes to Italy tells the archer's safe Return westward; the nested episode on Teucer to Cyprus tells the Salaminian archer's exile — Nauplius' vengeance fulfilled on an island the beacon-fires never touched.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 6.9–6.10; Hyg. Fab. 116–120"
     }
   ],
   "cast": [
-    { "id": "idomeneus", "name": "Idomeneus", "role": "Cretan king driven into exile" },
-    { "id": "meriones", "name": "Meriones", "role": "Spearman who fought beside him at Troy" },
-    { "id": "leucus-crete", "name": "Leucus", "role": "Usurper who killed Meda and seized ten cities" },
-    { "id": "meda-idomeneus", "name": "Meda", "role": "Queen turned false, slain in the coup" },
-    { "id": "nauplius-amymone", "name": "Nauplius", "role": "Contriver of the wives' betrayal" },
-    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord who honoured him most at Troy" },
-    { "id": "helen", "name": "Helen", "role": "Named him on the wall amid the Cretans" },
-    { "id": "poseidon", "name": "Poseidon", "role": "God who fought in his likeness at the ships" },
-    { "name": "Clisithyra", "role": "Daughter slain in the temple with her mother" },
-    { "id": "deucalion-crete", "name": "Deucalion", "role": "Cretan father named in the royal lineage" }
+    {
+      "id": "idomeneus",
+      "name": "Idomeneus",
+      "role": "Cretan king driven into exile"
+    },
+    {
+      "id": "meriones",
+      "name": "Meriones",
+      "role": "Spearman who fought beside him at Troy"
+    },
+    {
+      "id": "leucus-crete",
+      "name": "Leucus",
+      "role": "Usurper who killed Meda and seized ten cities"
+    },
+    {
+      "id": "meda-idomeneus",
+      "name": "Meda",
+      "role": "Queen turned false, slain in the coup"
+    },
+    {
+      "id": "nauplius-amymone",
+      "name": "Nauplius",
+      "role": "Contriver of the wives' betrayal"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Lord who honoured him most at Troy"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "Named him on the wall amid the Cretans"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "God who fought in his likeness at the ships"
+    },
+    {
+      "name": "Clisithyra",
+      "role": "Daughter slain in the temple with her mother"
+    },
+    {
+      "id": "deucalion-crete",
+      "name": "Deucalion",
+      "role": "Cretan father named in the royal lineage"
+    }
   ],
   "places": [
-    { "id": "knossos", "name": "Knossos", "role": "Capital of the hundred cities Idomeneus ruled" },
-    { "id": "gortyn", "name": "Gortys", "role": "One of the Cretan cities in his kingdom" },
-    { "id": "troy", "name": "Troy", "role": "Whence he sailed home to betrayal" }
+    {
+      "id": "knossos",
+      "name": "Knossos",
+      "role": "Capital of the hundred cities Idomeneus ruled"
+    },
+    {
+      "id": "gortyn",
+      "name": "Gortys",
+      "role": "One of the Cretan cities in his kingdom"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Whence he sailed home to betrayal"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Iliad", "citation": "2.645–650, 3.230–240, 4.257–271, 13.206–270" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "6.9–6.10" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "116–120" }
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "2.645–650, 3.230–240, 4.257–271, 13.206–270"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "6.9–6.10"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "116–120"
+    }
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "id": "birth-of-hermes",
+  "title": "The Birth of Hermes",
+  "greekTitle": "Ἑρμῆς ἐν Κυλλήνῃ",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 0.4,
+  "summary": {
+    "text": "Maia, eldest of the Pleiades and daughter of Atlas, bore Zeus a son in a cave of Mount Cyllene in Arcadia — and on the day of his birth the infant Hermes slipped from his swaddling-bands, stole Apollo's cattle, strung the first lyre from a tortoise shell, and traded song for the herd before Zeus made him herald of the gods.",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "citation": "Hes. Th. 938-939; Apollod. 3.10.1-3.10.2; Hyg. Astr. 2.7"
+  },
+  "chapters": [
+    {
+      "title": "Maia of the Pleiades",
+      "text": "Atlas and Pleione had seven daughters called the Pleiades, born at Cyllene in Arcadia — Alcyone, Merope, Celaeno, Electra, Sterope, Taygete, and Maia the eldest. Hesiod names Maia among the goddesses who went up into Zeus's holy bed, and from that union she would bear the herald of the deathless gods. The nested episode on Apollo and Artemis at Delos tells how Leto suffered Hera's jealousy; here another of Zeus's loves bears her son in the Arcadian highlands, far from the wandering isle.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 938-939; Apollod. 3.10.1"
+    },
+    {
+      "title": "The Cyllenian cave",
+      "text": "Maia brought forth Hermes in a cave of Mount Cyllene — the Arcadian summit where the Pleiades themselves were born and where Pausanias later saw the ruined temple of Cyllenian Hermes. Apollodorus says Zeus consorted with the daughters of Atlas and that Maia, as eldest, bore Hermes in that cave. Homer knows the son by his mother's name across the epics: when Eumaeus divides the feast, he sets a portion aside with a prayer for the nymphs and for Hermes, son of Maia.",
+      "sources": ["apollodorus", "hesiod", "homer"],
+      "citation": "Apollod. 3.10.2; Hes. Th. 938-939; Hom. Od. 14.435"
+    },
+    {
+      "title": "The infant who would not stay swaddled",
+      "text": "On the day he was born Hermes did not behave like a newborn. Apollodorus says he was laid in swaddling-bands on a winnowing fan, but slipped out, walked to Pieria, and there found the cattle Apollo was herding — fifty head, the god's own herd on the slopes beneath Olympus. The thief who would become patron of merchants and boundaries began his career before sunset on the day of his birth.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.10.2"
+    },
+    {
+      "title": "The tortoise and the lyre",
+      "text": "On the way back from Pieria Hermes found a tortoise at the mouth of his cave. From its shell he cut the first lyre, stretching gut strings across the hollow — and Hyginus adds that he fitted it with seven strings to match the number of the Atlantides, since Maia his mother was of their company. When Apollo tracked the missing cattle by divination, Hermes sat in the cave playing; the Far-Shooter was so enchanted by the music that he forgot his anger.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.10.2; Hyg. Astr. 2.7.2"
+    },
+    {
+      "title": "Cattle for song",
+      "text": "Hermes gave Apollo the lyre in exchange for the cattle — and later traded his shepherd's pipe for the golden wand Apollo had carried as a herdsman, learning divination by pebbles besides. Apollodorus says Apollo received the lyre and Hermes kept the pipe and the wand; Zeus, delighted with his clever son, appointed him herald to himself and to the gods below. The nested birth of Athena tells how Hephaestus split Zeus's crown; here the smith's brother-by-marriage wins his office through theft and barter rather than war.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.10.2"
+    },
+    {
+      "title": "Battus and the touchstone",
+      "text": "Ovid preserves the tale of the one witness. An old man named Battus saw Hermes drive the cattle off and was bribed with a cow to keep silence. The god returned in another shape, offering a bull and a cow for word of the herd, and the old man promptly betrayed the secret he had been paid to keep. Mercury turned his perjured heart to stone — the touchstone, which betrays gold as Battus betrayed his oath. From Cyllene the herald who crossed every boundary took his seat among the Olympians, Argeiphontes still to come.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 2.676-707; Apollod. 3.10.2"
+    }
+  ],
+  "cast": [
+    { "id": "hermes", "name": "Hermes", "role": "Infant thief and lyre-maker born in the Cyllenian cave" },
+    { "id": "maia", "name": "Maia", "role": "Eldest Pleiad, mother in the Arcadian cave" },
+    { "id": "zeus", "name": "Zeus", "role": "Father who made him herald of the gods" },
+    { "id": "apollo", "name": "Apollo", "role": "Herdsman who traded cattle for the lyre" },
+    { "id": "atlas", "name": "Atlas", "role": "Titan father of the Pleiades" },
+    {
+      "name": "Battus",
+      "role": "Old man turned to touchstone for betraying his oath"
+    }
+  ],
+  "places": [
+    { "name": "Mount Cyllene", "role": "Arcadian summit and cave of Hermes' birth" },
+    { "name": "Pieria", "role": "Where the infant walked to steal Apollo's cattle" },
+    { "name": "Olympus", "role": "Seat of Zeus who appointed the herald" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "938-939" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.10.1-3.10.2" },
+    { "source": "homer", "work": "Odyssey", "citation": "14.435" },
+    { "source": "hyginus", "work": "Astronomica", "citation": "2.7.2" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "2.676-707" }
+  ]
+}

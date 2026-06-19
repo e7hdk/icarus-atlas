@@ -1,0 +1,42 @@
+{
+  "id": "meander",
+  "name": "Meander",
+  "greekName": "Maiandros (Μαίανδρος)",
+  "romanName": "Meander",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "wandering Maeander",
+    "Asia Minor river",
+    "father of Cyane"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Asia Minor, born to Oceanus and Tethys — the turning, twisting Maeander of Hesiod's catalogue, whose daughter Cyane bore Byblis and Caunus to Miletus in Ovid's Milesian tale.",
+      "sources": ["hesiod", "ovid", "hyginus"],
+      "citation": "Theogony 337–345; Metamorphoses 9.676–831; Fabulae, preface (Theogony)"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Meander among the eddying rivers Tethys bore to Ocean — in one breath with deep-swirling Eridanus, Strymon, and Alpheus in the first genealogy of waters.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "When Phaethon's fall set the world ablaze, Ovid counts Meander among the rivers that burned — turning and twisting with Peneus, Caicus, Inachus, and Alpheus in the universal conflagration that followed the youth's doomed chariot-ride.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.276–415"
+    },
+    {
+      "text": "Near the Maeander's course, Ovid sets the Milesian tragedy: Cyane, daughter of the river, was united with Miletus and bore the twins Byblis and Caunus — the nymph whose unlawful love for her brother became a warning tale of Asia Minor.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.676–831"
+    },
+    {
+      "text": "Hyginus names Maeandrus among the Rivers born of Oceanus and Tethys in his genealogical preface — the wandering stream of Asia Minor in the same divine brood as Sangarius, Scamander, and Alpheus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

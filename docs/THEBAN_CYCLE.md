@@ -15,13 +15,14 @@
 ```
 era 6   theban-cycle              (root — framing chapters)
           ├─ cadmus-and-thebes    (era 5 — cow, dragon, Spartoi, Harmonia)
+          ├─ semele-and-the-birth (era 5 — Dionysus born of thunder and thigh)
           ├─ pentheus-and-dionysus (era 5.4 — the maenads' king)
           ├─ oedipus-at-thebes    (era 5.8 — Laius, Sphinx, revelation, curse)
-          ├─ oedipus-at-colonus   (era 5.85 — exile, Theseus, death and tomb)
           ├─ seven-against-thebes (era 6 — re-parented; war only)
           ├─ antigone-at-thebes   (era 6.02 — unburied Polynices)
-          └─ epigoni              (era 6.1 — sons of the Seven return)
-          └─ alcmaeon-wanderings  (era 6.15 — matricide, purification, Acarnania)
+          ├─ epigoni              (era 6.1 — sons of the Seven return)
+          ├─ alcmaeon-wanderings  (era 6.15 — matricide, purification, Acarnania)
+          └─ oedipus-at-colonus   (era 6.18 — exile, Theseus, death and tomb)
 ```
 
 The later Alcmaeon material beyond Apollodorus 3.7.7 (full Euripides `Alcmaeon` plot, Tegean settlement detail) stays **out of scope** unless a future character batch promotes plain-name cast.

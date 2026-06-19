@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm build:map && pnpm bake-layout && next dev",
+    "dev": "pnpm build:map && pnpm bake-layout && next dev -p 3500",
     "build:fonts": "tsx scripts/build-map-fonts.ts",
     "build:map": "tsx scripts/build-map-fonts.ts && tsx scripts/build-map-style.ts",
     "bake-layout": "tsx scripts/bake-layout.ts",
@@ -17,7 +17,9 @@
     "corpus:verify": "tsx scripts/corpus-sync.ts verify",
     "corpus:search": "tsx scripts/corpus-search.ts",
     "validate-data": "tsx scripts/validate-data.ts",
-    "validate-layout": "tsx scripts/validate-layout.ts"
+    "validate-layout": "tsx scripts/validate-layout.ts",
+    "theogony:gap": "tsx scripts/theogony-gap.ts",
+    "water-nymph:gap": "tsx scripts/water-nymph-gap.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

@@ -123,6 +123,39 @@ function stitchWays(ways: OvertureWay[]): LonLat[][] {
   return chains;
 }
 
+/** Join OSM chains whose endpoints sit within a few km (common at dam/admin gaps). */
+function tryAppendKm(chain: LonLat[], seg: LonLat[], maxJoinKm: number): LonLat[] | null {
+  const head = chain[0];
+  const tail = chain[chain.length - 1];
+  const s0 = seg[0];
+  const s1 = seg[seg.length - 1];
+  if (distKm(tail, s0) <= maxJoinKm) return [...chain, ...seg.slice(1)];
+  if (distKm(tail, s1) <= maxJoinKm) return [...chain, ...seg.slice(0, -1).reverse()];
+  if (distKm(head, s1) <= maxJoinKm) return [...seg.slice(0, -1), ...chain];
+  if (distKm(head, s0) <= maxJoinKm) return [...seg.slice(1).reverse(), ...chain];
+  return null;
+}
+
+function mergeProximityChains(chains: LonLat[][], maxJoinKm: number): LonLat[][] {
+  const pool = chains.map((c) => [...c]);
+  let extended = true;
+  while (extended) {
+    extended = false;
+    outer: for (let i = 0; i < pool.length; i++) {
+      for (let j = i + 1; j < pool.length; j++) {
+        const next = tryAppendKm(pool[i], pool[j], maxJoinKm) ?? tryAppendKm(pool[j], pool[i], maxJoinKm);
+        if (next) {
+          pool[i] = next;
+          pool.splice(j, 1);
+          extended = true;
+          break outer;
+        }
+      }
+    }
+  }
+  return pool;
+}
+
 function pickBestChain(chains: LonLat[][], anchor?: RiverAnchor): LonLat[] | null {
   if (chains.length === 0) return null;
 
@@ -137,13 +170,15 @@ function pickBestChain(chains: LonLat[][], anchor?: RiverAnchor): LonLat[] | nul
 
   if (anchor) {
     const within = scored.filter((s) => s.anchorDist <= anchor.maxDistKm);
-    const pool = within.length > 0 ? within : scored;
-    // Rivers with a sea mouth: prefer the main stem (longest chain), not a gorge fragment.
+    let pool: typeof scored;
     if (anchor.mouth) {
+      const reachesMouth = scored.filter((s) => s.mouthDist <= (anchor.mouthMaxDistKm ?? 5));
+      pool = reachesMouth.length > 0 ? reachesMouth : within.length > 0 ? within : scored;
       pool.sort(
         (a, b) => b.len - a.len || a.mouthDist - b.mouthDist || a.anchorDist - b.anchorDist,
       );
     } else {
+      pool = within.length > 0 ? within : scored;
       pool.sort((a, b) => a.anchorDist - b.anchorDist || b.len - a.len);
     }
     return pool[0]?.chain ?? null;
@@ -212,32 +247,22 @@ function extendWithPath(line: LonLat[], path: LonLat[], maxJoinKm = 8): LonLat[]
   return spliceAtTail();
 }
 
-const PENEUS_DELTA: LonLat[] = [
-  [22.428, 39.647],
-  [22.442, 39.636],
-  [22.455, 39.625],
-  [22.470, 39.612],
-  [22.485, 39.6],
-  [22.502, 39.588],
-  [22.52, 39.575],
-  [22.540, 39.560],
-  [22.56, 39.545],
-  [22.585, 39.528],
-  [22.61, 39.51],
-  [22.640, 39.490],
-  [22.67, 39.47],
-  [22.690, 39.455],
-  [22.710, 39.442],
-  [22.725, 39.433],
-  [22.735, 39.425],
-  [22.755, 39.410],
-  [22.775, 39.398],
-  [22.805, 39.385],
-  [22.838, 39.372],
-  [22.870, 39.360],
-  [22.902, 39.350],
-  [22.934, 39.339],
-];
+/** Splice a delta when OSM ends mid-reach — coastal gap is not at the stem tail (Acheron). */
+function buildStemWithMidDelta(stem: LonLat[], delta: LonLat[], maxJoinKm = 1.5): LonLat[] | null {
+  if (stem.length < 2 || delta.length < 2) return null;
+  const deltaStart = delta[0];
+  let joinIdx = 0;
+  let best = Infinity;
+  for (let i = 0; i < stem.length; i++) {
+    const d = distKm(stem[i], deltaStart);
+    if (d < best) {
+      best = d;
+      joinIdx = i;
+    }
+  }
+  if (best > maxJoinKm) return null;
+  return [...stem.slice(0, joinIdx + 1), ...delta.slice(1)];
+}
 
 function osmRiverInBbox(
   file: string,
@@ -254,15 +279,6 @@ function osmRiverInBbox(
   const best = pickBestChain(chains, anchor);
   return applyMouthExtension(best, anchor, deltaPath);
 }
-
-const ACHELOUS_DELTA: LonLat[] = [
-  [21.105, 38.338],
-  [21.18, 38.38],
-  [21.26, 38.43],
-  [21.34, 38.48],
-  [21.4, 38.52],
-  [21.43, 38.55],
-];
 
 /** Decimate stem and delta separately so uniform sampling does not collapse the mouth path. */
 function buildStemWithDelta(
@@ -321,12 +337,112 @@ function lineInBbox(line: LonLat[], bbox: [number, number, number, number]): boo
 /** Keep file size sane while preserving curves. */
 function decimate(coords: LonLat[], maxPoints: number): LonLat[] {
   if (coords.length <= maxPoints) return coords;
+  const totalLen = lineLengthKm(coords);
+  if (totalLen <= 0) return coords;
+  const stepKm = totalLen / (maxPoints - 1);
   const out: LonLat[] = [coords[0]];
-  const step = (coords.length - 1) / (maxPoints - 1);
-  for (let i = 1; i < maxPoints - 1; i++) out.push(coords[Math.round(i * step)]);
-  out.push(coords[coords.length - 1]);
+  let sinceLast = 0;
+  for (let i = 1; i < coords.length; i++) {
+    sinceLast += distKm(coords[i - 1], coords[i]);
+    if (sinceLast >= stepKm && out.length < maxPoints - 1) {
+      out.push(coords[i]);
+      sinceLast = 0;
+    }
+  }
+  const tail = coords[coords.length - 1];
+  const last = out[out.length - 1];
+  if (distKm(last, tail) > stepKm * 1.5) {
+    const gap = distKm(last, tail);
+    const steps = Math.min(12, Math.max(2, Math.ceil(gap / stepKm)));
+    for (let s = 1; s < steps; s++) {
+      const t = s / steps;
+      out.push([
+        last[0] + (tail[0] - last[0]) * t,
+        last[1] + (tail[1] - last[1]) * t,
+      ]);
+    }
+  }
+  if (distKm(out[out.length - 1], tail) > 0.001) out.push(tail);
+  if (out.length > maxPoints) return decimate(out, maxPoints);
   return out;
 }
+
+/** Stitch OSM ways in bbox, honour mouth anchor, decimate for features.json. */
+function loadOsmMany(files: string | string[]): OvertureWay[] {
+  const list = Array.isArray(files) ? files : [files];
+  return list.flatMap((file) => loadOsm(file));
+}
+
+function buildOsmChainFromFiles(
+  files: string | string[],
+  bbox: [number, number, number, number],
+  mergeKm = 2.5,
+  tagFilter?: (w: OvertureWay) => boolean,
+): LonLat[] | null {
+  const ways = loadOsmMany(files).filter((way) => {
+    if (tagFilter && !tagFilter(way)) return false;
+    return lineInBbox(wayToLine(way), bbox);
+  });
+  if (ways.length === 0) return null;
+  const chains = mergeProximityChains(stitchWays(ways), mergeKm);
+  if (chains.length === 0) return null;
+  chains.sort((a, b) => lineLengthKm(b) - lineLengthKm(a));
+  return chains[0];
+}
+
+function buildOsmRiverFromFiles(
+  files: string | string[],
+  bbox: [number, number, number, number],
+  anchor: RiverAnchor,
+  mergeKm = 2.5,
+  maxPts = 500,
+  tagFilter?: (w: OvertureWay) => boolean,
+): LonLat[] | null {
+  const ways = loadOsmMany(files).filter((way) => {
+    if (tagFilter && !tagFilter(way)) return false;
+    return lineInBbox(wayToLine(way), bbox);
+  });
+  if (ways.length === 0) return null;
+  const chains = mergeProximityChains(stitchWays(ways), mergeKm);
+  const best = pickBestChain(chains, anchor);
+  if (!best) return null;
+  let line = best;
+  if (anchor.mouth) {
+    const mouthDist = minDistToPoint(best, anchor.mouth);
+    if (mouthDist <= (anchor.mouthMaxDistKm ?? 4)) {
+      line = best;
+    } else if (mouthDist <= 25) {
+      line = extendToMouth(best, anchor.mouth, anchor.mouthMaxDistKm ?? 4);
+    }
+  }
+  return decimate(line, maxPts);
+}
+
+function buildOsmRiverLine(
+  file: string,
+  bbox: [number, number, number, number],
+  anchor: RiverAnchor,
+  mergeKm = 2.5,
+  maxPts = 500,
+  tagFilter?: (w: OvertureWay) => boolean,
+): LonLat[] | null {
+  return buildOsmRiverFromFiles(file, bbox, anchor, mergeKm, maxPts, tagFilter);
+}
+
+const NILUS_TAG = (w: OvertureWay) =>
+  /النيل|نهر النيل|Nile/i.test(JSON.stringify(w.tags ?? {}));
+const EUPHRATES_TAG = (w: OvertureWay) =>
+  /euphrates|firat|fırat|فرات/i.test(JSON.stringify(w.tags ?? {}));
+const TIGRIS_TAG = (w: OvertureWay) => {
+  const tags = JSON.stringify(w.tags ?? {});
+  if (/euphrates|firat|fırat|فرات/i.test(tags)) return false;
+  return /dicle|tigris|دجلة/i.test(tags);
+};
+const JORDAN_TAG = (w: OvertureWay) => {
+  const tags = JSON.stringify(w.tags ?? {});
+  if (/yarmouk|ירמוכ|يارموك/i.test(tags)) return false;
+  return /jordan|ירדן|أردن|ירדן/i.test(tags);
+};
 
 function osmRiver(
   file: string,
@@ -347,8 +463,13 @@ function clipLineToBasin(coords: LonLat[]): LonLat[] {
 
 function clipLineToBbox(coords: LonLat[], bbox: [number, number, number, number]): LonLat[] {
   const [w, s, e, n] = bbox;
-  const inside = coords.filter(([lon, lat]) => lon >= w && lon <= e && lat >= s && lat <= n);
-  return inside.length >= 2 ? inside : coords;
+  const clipped = bboxClip(feature({ type: 'LineString', coordinates: coords }), [w, s, e, n]);
+  const geom = clipped.geometry;
+  if (geom.type !== 'LineString' || geom.coordinates.length < 2) {
+    const inside = coords.filter(([lon, lat]) => lon >= w && lon <= e && lat >= s && lat <= n);
+    return inside.length >= 2 ? inside : coords;
+  }
+  return geom.coordinates as LonLat[];
 }
 
 function neRiverNamed(name: string, clipBbox?: [number, number, number, number]): LonLat[] | null {
@@ -524,14 +645,34 @@ const SPERCHEIUS_STATIONS: LonLat[] = [
   [22.62, 38.85],
 ];
 
+/** Lower marsh reach — OSM stops ~11 km short of the Ionian mouth. */
+const ACHERON_DELTA: LonLat[] = [
+  [20.7056, 39.3023],
+  [20.712, 39.2995],
+  [20.72, 39.296],
+  [20.729, 39.2925],
+  [20.739, 39.2895],
+  [20.75, 39.2865],
+  [20.762, 39.284],
+  [20.775, 39.282],
+  [20.79, 39.28],
+  [20.805, 39.279],
+  [20.82, 39.2795],
+  [20.83, 39.28],
+];
+
 const ACHERON_STATIONS: LonLat[] = [
+  [20.78, 39.48],
   [20.72, 39.38],
   [20.66, 39.33],
   [20.58, 39.29],
   [20.531, 39.243],
-  [20.72, 39.27],
-  [20.83, 39.28],
+  [20.62, 39.265],
+  ...ACHERON_DELTA,
 ];
+
+/** Acheronas — Epirus gorge through the Necromanteion plain to the Ionian delta. */
+const ACHERON_OSM_BBOX: [number, number, number, number] = [19.8, 38.5, 21.0, 39.6];
 
 const COCYTUS_STATIONS: LonLat[] = [
   [20.5, 39.27],
@@ -540,13 +681,28 @@ const COCYTUS_STATIONS: LonLat[] = [
 ];
 
 const HERMUS_STATIONS: LonLat[] = [
-  [28.52, 38.98],
-  [28.2, 38.92],
-  [27.85, 38.85],
-  [27.5, 38.82],
-  [27.15, 38.84],
-  [26.98, 38.85],
+  [29.05, 38.66],
+  [28.82, 39.18],
+  [28.58, 38.98],
+  [28.18, 38.88],
+  [27.62, 38.82],
+  [27.32, 38.75],
+  [27.05, 38.7],
+  [26.82, 38.595],
 ];
+
+/** Gediz / Hermus — eastern Lydia through the Hermus plain to the Aegean delta. */
+const HERMUS_OSM_BBOX: [number, number, number, number] = [26.5, 38.5, 29.0, 39.5];
+
+/** Büyük Menderes — Anatolian plateau to the Aegean. */
+const MAEANDER_OSM_BBOX: [number, number, number, number] = [26.0, 36.8, 29.5, 38.3];
+const SANGARIUS_OSM_BBOX: [number, number, number, number] = [30.0, 39.2, 32.8, 41.6];
+const ACHELOUS_OSM_BBOX: [number, number, number, number] = [20.9, 38.0, 22.3, 39.7];
+const TIGRIS_OSM_BBOX: [number, number, number, number] = [37.0, 31.0, 45.5, 38.5];
+const NILUS_OSM_BBOX: [number, number, number, number] = [24.0, 22.0, 33.0, 32.0];
+const JORDAN_OSM_BBOX: [number, number, number, number] = [35.0, 31.3, 36.0, 33.5];
+const EUPHRATES_OSM_BBOX: [number, number, number, number] = [36.0, 30.5, 47.0, 38.5];
+const ERIDANUS_OSM_BBOX: [number, number, number, number] = [8.0, 44.5, 12.8, 46.8];
 
 const CAYSTER_STATIONS: LonLat[] = [
   [27.55, 38.05],
@@ -572,6 +728,10 @@ const PLEISTOS_STATIONS: LonLat[] = [
   [22.40, 38.35],
   [22.38, 38.32],
 ];
+
+/** Strymon/Struma — Bulgarian source through Lake Kerkini to the Strymonic Gulf.
+ *  Wide enough for the whole Greek+lower-Bulgarian stem; excludes stray ways. */
+const STRYMON_OSM_BBOX: [number, number, number, number] = [22.9, 40.6, 24.05, 42.25];
 
 const STRYMON_STATIONS: LonLat[] = [
   [23.2, 41.65],
@@ -633,13 +793,22 @@ const ASOPUS_PHLIAS_STATIONS: LonLat[] = [
 ];
 
 const ORONTES_STATIONS: LonLat[] = [
-  [36.05, 34.05],
-  [36.08, 34.6],
-  [36.12, 35.3],
-  [36.18, 35.9],
-  [36.2, 36.15],
+  [36.61, 34.12],
+  [36.66, 34.28],
+  [36.72, 34.48],
+  [36.76, 34.68],
+  [36.74, 34.88],
+  [36.72, 35.05],
+  [36.65, 35.22],
+  [36.52, 35.38],
+  [36.38, 35.52],
+  [36.22, 35.68],
+  [36.08, 35.8],
   [35.95, 35.87],
 ];
+
+/** Full Orontes basin — Lebanon source through Syrian reach to the Mediterranean mouth. */
+const ORONTES_OSM_BBOX: [number, number, number, number] = [35.4, 33.7, 37.3, 36.6];
 
 const ISTER_STATIONS: LonLat[] = [
   [29.05, 45.15],
@@ -740,37 +909,49 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
     return line ? decimate(line, 500) : null;
   },
   peneus: () => {
+    // OSM "Πηνειός" already traces the river through the Vale of Tempe to the sea
+    // at Stomio (the corrected mouth anchor), so we just stitch + bridge small gaps
+    // and follow it — no hand delta dragging the tail to a wrong southern point.
     const ways = loadOsm('peneus-thessaly.json');
     const fallbackWays = ways.length ? ways : loadOsm('peneus2.json').filter((w) => w.tags?.name === 'Πηνειός');
     const filtered = (fallbackWays.length ? fallbackWays : []).filter((w) => {
       const l = wayToLine(w);
       return lineInBbox(l, [22.0, 39.2, 23.5, 40.2]);
     });
-    const chains = stitchWays(filtered);
+    const chains = mergeProximityChains(stitchWays(filtered), 3);
     const best = pickBestChain(chains, ANCHORS.peneus);
     if (!best) return null;
-    const merged = buildStemWithDelta(best, PENEUS_DELTA);
-    return minDistToPoint(merged, ANCHORS.peneus.mouth!) <= ANCHORS.peneus.mouthMaxDistKm!
-      ? merged
-      : extendToMouth(merged, ANCHORS.peneus.mouth!, ANCHORS.peneus.mouthMaxDistKm!);
+    const line =
+      minDistToPoint(best, ANCHORS.peneus.mouth!) <= ANCHORS.peneus.mouthMaxDistKm!
+        ? best
+        : extendToMouth(best, ANCHORS.peneus.mouth!, ANCHORS.peneus.mouthMaxDistKm!);
+    return decimate(line, 500);
   },
-  achelous: () => {
-    const ways = loadOsm('achelous3.json').filter((w) => {
-      if (w.tags?.name !== 'Αχελώος') return false;
-      const l = wayToLine(w);
-      return lineInBbox(l, [20.9, 38.0, 22.3, 39.05]);
-    });
-    const best = pickBestChain(stitchWays(ways), ANCHORS.achelous);
-    if (!best) return null;
-    const merged = buildStemWithDelta(best, ACHELOUS_DELTA, 440, 40);
-    return minDistToPoint(merged, ANCHORS.achelous.mouth!) <= ANCHORS.achelous.mouthMaxDistKm!
-      ? merged
-      : extendToMouth(merged, ANCHORS.achelous.mouth!, ANCHORS.achelous.mouthMaxDistKm!);
-  },
+  achelous: () =>
+    buildOsmRiverLine(
+      'achelous3.json',
+      ACHELOUS_OSM_BBOX,
+      ANCHORS.achelous,
+      2.5,
+      500,
+      (w) => w.tags?.name === 'Αχελώος',
+    ),
   maeander: () =>
-    neRiverNamed('Byk Menderes', [26.0, 36.8, 29.5, 38.3]) ??
-    neRiverNamed('Byk Menderes'),
-  nilus: () => neRiverNamed('Nile', [24.0, 22.0, 33.5, 32.5]),
+    buildOsmRiverLine('maeander.json', MAEANDER_OSM_BBOX, ANCHORS.maeander) ??
+    neRiverNamed('Byk Menderes', MAEANDER_OSM_BBOX),
+  nilus: () => {
+    const files = ['nilus-upstream.json', 'nilus-delta.json'];
+    const osm = buildOsmRiverFromFiles(files, NILUS_OSM_BBOX, ANCHORS.nilus, 22, 700, NILUS_TAG);
+    const ne = neRiverNamed('Nile', NILUS_OSM_BBOX);
+    if (osm && ne && lineLengthKm(osm) < lineLengthKm(ne) * 0.55) {
+      const merged = buildStemWithDelta(ne, osm, 520, 180, 18);
+      if (merged && minDistToPoint(merged, ANCHORS.nilus.mouth!) <= (ANCHORS.nilus.mouthMaxDistKm ?? 6)) {
+        return decimate(merged, 700);
+      }
+      return decimate(ne, 700);
+    }
+    return osm ?? (ne ? decimate(ne, 700) : null);
+  },
   scamander: () => {
     const line = osmTroyScamander();
     return line ? decimate(line, 500) : null;
@@ -813,12 +994,34 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
         ANCHORS.spercheius.mouthMaxDistKm!,
       ),
     ),
-  hermus: () =>
-    osmFromAutoCache('hermus', ANCHORS.hermus, () => {
-      const ne = neRiverNamed('Gediz', [26.5, 38.0, 29.5, 39.5]);
-      const line = ne ?? chaikinSmooth(HERMUS_STATIONS, 2);
-      return extendToMouth(line, ANCHORS.hermus.mouth!, ANCHORS.hermus.mouthMaxDistKm!);
-    }),
+  hermus: () => {
+    const file = 'hermus.json';
+    const names = OSM_NAME_ALIASES.hermus ?? [];
+    for (const name of names) {
+      const line = osmRiver(file, name, ANCHORS.hermus);
+      if (line) return decimate(line, 500);
+    }
+    const ways = loadOsm(file).filter((way) => {
+      const line = wayToLine(way);
+      return lineInBbox(line, HERMUS_OSM_BBOX);
+    });
+    const chains = mergeProximityChains(stitchWays(ways), 2.5);
+    const best = pickBestChain(chains, ANCHORS.hermus);
+    if (best) {
+      const mouthDist = minDistToPoint(best, ANCHORS.hermus.mouth!);
+      const line =
+        mouthDist <= (ANCHORS.hermus.mouthMaxDistKm ?? 4)
+          ? best
+          : extendToMouth(best, ANCHORS.hermus.mouth!, ANCHORS.hermus.mouthMaxDistKm!);
+      return decimate(line, 500);
+    }
+    const ne = neRiverNamed('Gediz', HERMUS_OSM_BBOX);
+    const fallback = ne ?? chaikinSmooth(HERMUS_STATIONS, 2);
+    return decimate(
+      extendToMouth(fallback, ANCHORS.hermus.mouth!, ANCHORS.hermus.mouthMaxDistKm!),
+      500,
+    );
+  },
   cayster: () =>
     osmFromAutoCache('cayster', ANCHORS.cayster, () =>
       extendToMouth(
@@ -844,11 +1047,21 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       ),
     ),
   strymon: () =>
-    osmFromAutoCache('strymon', ANCHORS.strymon, () => {
-      const ne = neRiverNamed('Struma', [22.5, 40.0, 24.5, 42.0]);
-      const line = ne ?? chaikinSmooth(STRYMON_STATIONS, 2);
-      return extendToMouth(line, ANCHORS.strymon.mouth!, ANCHORS.strymon.mouthMaxDistKm!);
-    }),
+    // Combine both names (Greek Στρυμόνας + Bulgarian Струма) and bridge the gaps
+    // at Lake Kerkini / admin breaks (mergeKm) so the main stem stitches whole.
+    buildOsmRiverFromFiles(
+      'strymon.json',
+      STRYMON_OSM_BBOX,
+      ANCHORS.strymon,
+      9,
+      500,
+      (w) => w.tags?.name === 'Στρυμόνας' || w.tags?.name === 'Струма',
+    ) ??
+    extendToMouth(
+      neRiverNamed('Struma', [22.5, 40.0, 24.5, 42.0]) ?? chaikinSmooth(STRYMON_STATIONS, 2),
+      ANCHORS.strymon.mouth!,
+      ANCHORS.strymon.mouthMaxDistKm!,
+    ),
   halys: () =>
     osmFromAutoCache('halys', ANCHORS.halys, () => {
       const ne =
@@ -876,12 +1089,11 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       );
     }),
   sangarius: () =>
-    osmFromAutoCache('sangarius', ANCHORS.sangarius, () =>
-      extendToMouth(
-        chaikinSmooth(SANGARIUS_STATIONS, 2),
-        ANCHORS.sangarius.mouth!,
-        ANCHORS.sangarius.mouthMaxDistKm!,
-      ),
+    buildOsmRiverLine('sangarius.json', SANGARIUS_OSM_BBOX, ANCHORS.sangarius) ??
+    extendToMouth(
+      chaikinSmooth(SANGARIUS_STATIONS, 2),
+      ANCHORS.sangarius.mouth!,
+      ANCHORS.sangarius.mouthMaxDistKm!,
     ),
   'ladon-arcadia': () =>
     osmFromAutoCache('ladon-arcadia', ANCHORS['ladon-arcadia'], () =>
@@ -899,14 +1111,27 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
         ANCHORS['asopus-phlias'].mouthMaxDistKm!,
       ),
     ),
-  orontes: () =>
-    osmFromAutoCache('orontes', ANCHORS.orontes, () =>
-      extendToMouth(
-        chaikinSmooth(ORONTES_STATIONS, 2),
-        ANCHORS.orontes.mouth!,
-        ANCHORS.orontes.mouthMaxDistKm!,
-      ),
-    ),
+  orontes: () => {
+    const file = 'orontes.json';
+    const ways = loadOsm(file).filter((way) => {
+      const line = wayToLine(way);
+      return lineInBbox(line, ORONTES_OSM_BBOX);
+    });
+    const chains = mergeProximityChains(stitchWays(ways), 2.5);
+    const best = pickBestChain(chains, ANCHORS.orontes);
+    if (best) {
+      const line =
+        minDistToPoint(best, ANCHORS.orontes.mouth!) <= (ANCHORS.orontes.mouthMaxDistKm ?? 4)
+          ? best
+          : extendToMouth(best, ANCHORS.orontes.mouth!, ANCHORS.orontes.mouthMaxDistKm!);
+      return decimate(line, 500);
+    }
+    return extendToMouth(
+      chaikinSmooth(ORONTES_STATIONS, 2),
+      ANCHORS.orontes.mouth!,
+      ANCHORS.orontes.mouthMaxDistKm!,
+    );
+  },
   ister: () =>
     osmFromAutoCache('ister', ANCHORS.ister, () => {
       const ne = neRiverNamed('Danube', [18.0, 43.0, 30.0, 46.0]);
@@ -917,25 +1142,82 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
     osmFromAutoCache('styx-arcadia', ANCHORS['styx-arcadia'], () =>
       chaikinSmooth(STYX_ARCADIA_STATIONS, 1),
     ),
-  euphrates: () =>
-    osmFromAutoCache('euphrates', ANCHORS.euphrates, () => {
-      const ne = neRiverNamed('Euphrates', [36.0, 30.0, 44.5, 40.0]);
-      const line = ne ?? chaikinSmooth(EUPHRATES_STATIONS, 2);
-      return extendToMouth(line, ANCHORS.euphrates.mouth!, ANCHORS.euphrates.mouthMaxDistKm!);
-    }),
-  tigris: () =>
-    osmFromAutoCache('tigris', ANCHORS.tigris, () => {
-      const ne = neRiverNamed('Tigris', [36.0, 30.0, 44.5, 42.0]);
-      const line = ne ?? chaikinSmooth(TIGRIS_STATIONS, 2);
-      return extendToMouth(line, ANCHORS.tigris.mouth!, ANCHORS.tigris.mouthMaxDistKm!);
-    }),
+  euphrates: () => {
+    const iraq = buildOsmRiverFromFiles(
+      'euphrates-iraq.json',
+      EUPHRATES_OSM_BBOX,
+      ANCHORS.euphrates,
+      12,
+      800,
+      EUPHRATES_TAG,
+    );
+    const turkey = buildOsmChainFromFiles(
+      'euphrates-turkey.json',
+      EUPHRATES_OSM_BBOX,
+      12,
+      EUPHRATES_TAG,
+    );
+    let line = iraq;
+    if (turkey && line) {
+      const bridged = mergeProximityChains([line, turkey], 25);
+      const best = pickBestChain(bridged, ANCHORS.euphrates);
+      if (best && minDistToPoint(best, ANCHORS.euphrates.mouth!) <= (ANCHORS.euphrates.mouthMaxDistKm ?? 4) + 2) {
+        line = decimate(best, 800);
+      }
+    }
+    if (!line) {
+      const ne = neRiverNamed('Euphrates', EUPHRATES_OSM_BBOX);
+      line = ne
+        ? decimate(ne, 800)
+        : extendToMouth(
+            chaikinSmooth(EUPHRATES_STATIONS, 2),
+            ANCHORS.euphrates.mouth!,
+            ANCHORS.euphrates.mouthMaxDistKm!,
+          );
+    }
+    return line;
+  },
+  tigris: () => {
+    const lower = buildOsmRiverFromFiles(
+      'tigris-lower.json',
+      TIGRIS_OSM_BBOX,
+      ANCHORS.tigris,
+      12,
+      600,
+      TIGRIS_TAG,
+    );
+    const turkey = buildOsmChainFromFiles(
+      'tigris-turkey.json',
+      TIGRIS_OSM_BBOX,
+      12,
+      TIGRIS_TAG,
+    );
+    let line = lower;
+    if (turkey && line) {
+      const bridged = mergeProximityChains([line, turkey], 25);
+      const best = pickBestChain(bridged, ANCHORS.tigris);
+      if (best && minDistToPoint(best, ANCHORS.tigris.mouth!) <= (ANCHORS.tigris.mouthMaxDistKm ?? 4) + 2) {
+        line = decimate(best, 600);
+      }
+    }
+    if (!line) {
+      const ne = neRiverNamed('Tigris', TIGRIS_OSM_BBOX);
+      line = ne
+        ? decimate(ne, 600)
+        : extendToMouth(
+            chaikinSmooth(TIGRIS_STATIONS, 2),
+            ANCHORS.tigris.mouth!,
+            ANCHORS.tigris.mouthMaxDistKm!,
+          );
+    }
+    return line;
+  },
   jordan: () =>
-    osmFromAutoCache('jordan', ANCHORS.jordan, () =>
-      extendToMouth(
-        chaikinSmooth(JORDAN_STATIONS, 2),
-        ANCHORS.jordan.mouth!,
-        ANCHORS.jordan.mouthMaxDistKm!,
-      ),
+    buildOsmRiverFromFiles('jordan.json', JORDAN_OSM_BBOX, ANCHORS.jordan, 24, 500, JORDAN_TAG) ??
+    extendToMouth(
+      chaikinSmooth(JORDAN_STATIONS, 2),
+      ANCHORS.jordan.mouth!,
+      ANCHORS.jordan.mouthMaxDistKm!,
     ),
   araxes: () =>
     osmFromAutoCache('araxes', ANCHORS.araxes, () => {
@@ -944,19 +1226,27 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       return extendToMouth(line, ANCHORS.araxes.mouth!, ANCHORS.araxes.mouthMaxDistKm!);
     }),
   eridanus: () =>
-    osmFromAutoCache('eridanus', ANCHORS.eridanus, () => {
-      const ne = neRiverNamed('Po', [10.5, 44.5, 13.0, 46.5]);
-      const line = ne ?? chaikinSmooth(ERIDANUS_STATIONS, 2);
-      return extendToMouth(line, ANCHORS.eridanus.mouth!, ANCHORS.eridanus.mouthMaxDistKm!);
-    }),
-  acheron: () =>
-    osmFromAutoCache('acheron', ANCHORS.acheron, () =>
-      extendToMouth(
-        chaikinSmooth(ACHERON_STATIONS, 2),
-        ANCHORS.acheron.mouth!,
-        ANCHORS.acheron.mouthMaxDistKm!,
-      ),
+    buildOsmRiverLine('eridanus.json', ERIDANUS_OSM_BBOX, ANCHORS.eridanus) ??
+    extendToMouth(
+      neRiverNamed('Po', ERIDANUS_OSM_BBOX) ?? chaikinSmooth(ERIDANUS_STATIONS, 2),
+      ANCHORS.eridanus.mouth!,
+      ANCHORS.eridanus.mouthMaxDistKm!,
     ),
+  acheron: () => {
+    const file = 'acheron.json';
+    const ways = loadOsm(file).filter((way) => {
+      if (way.tags?.name !== 'Αχέρων') return false;
+      const line = wayToLine(way);
+      return lineInBbox(line, ACHERON_OSM_BBOX);
+    });
+    const chains = stitchWays(ways);
+    const best = pickBestChain(chains, ANCHORS.acheron);
+    if (best) {
+      const merged = buildStemWithMidDelta(best, ACHERON_DELTA);
+      if (merged) return decimate(merged, 500);
+    }
+    return decimate(chaikinSmooth(ACHERON_STATIONS, 2), 500);
+  },
   cocytus: () =>
     osmFromAutoCache('cocytus', ANCHORS.cocytus, () =>
       extendToMouth(

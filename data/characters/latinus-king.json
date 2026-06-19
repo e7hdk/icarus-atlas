@@ -1,0 +1,43 @@
+{
+  "id": "latinus-king",
+  "name": "Latinus",
+  "greekName": "Latinos (Λατῖνος)",
+  "romanName": "Latinus",
+  "type": "mortal",
+  "domains": [
+    "king of the Latins",
+    "Faunus' son in the Italian strand",
+    "father of Lavinia"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of the Latins whom Ovid names son of Faunus, whose daughter Lavinia Aeneas won after war with Turnus — not to be confused with Latinus son of Odysseus and Circe in Hesiod and Hyginus, nor with Odysseus' son Latinus by Calypso in Apollodorus.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 14.639–761; Fabulae 127"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Aeneas came to the Tiber's groves, Ovid says he fell heir to a home and won the daughter of Latinus, Faunus' son, not without war: Turnus, a young chief of a fierce people, fought to hold a promised bride, and with Latium all Etruria was embroiled until Venus saw her son victorious and Turnus fell.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.639–761, 14.762–841"
+    },
+    {
+      "text": "Hyginus preserves a wholly different Latinus in the Returns catalogue: from Circe and Telemachus was born Latinus, who gave his name to the Latin language — the Odysseus strand that must not be merged with the Laurentine king who receives Aeneas in Ovid's Italian books.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 127"
+    },
+    {
+      "text": "Hesiod and Apollodorus likewise know a Latinus born to Odysseus — by Circe in the Theogony's appendix, by Calypso in the Nostoi epitome — figures of the Greek Returns, not the king at Lavinium.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 995–1015; Epitome 7.24"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lavinium",
+      "sources": ["ovid", "hyginus"]
+    }
+  ]
+}

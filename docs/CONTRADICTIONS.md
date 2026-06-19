@@ -32,6 +32,21 @@ Significance: whether Hephaestus has a father at all changes the whole Olympian 
 
 Verification: ✓ verified — Apollodorus' wording confirmed nearly verbatim; minor nuance that Hesiod implies rather than states the Athena-birth motive (standard inference from the juxtaposition at Theogony 924–929).
 
+## Ares' conception
+
+- **topic**: `ares-conception`
+- **Characters**: `ares`, `hera`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Hera bore Ares to Zeus among the children of their lawful marriage — with Hebe and Eileithyia. | Theogony 921–923 |
+| Homer | Ares is son of Zeus and Hera; Zeus reviles him as most hateful of the Olympians, with all his mother's unbearable spirit. | Iliad 5.889–898 |
+| Ovid | Juno conceived Mars with no father at all, touched by a magic flower from Flora's garden after Jupiter bore Minerva without her. | Fasti 5.229–258 |
+
+Significance: the Greek genealogical spine makes Ares an ordinary child of the royal marriage-bed, while Ovid's Roman calendar preserves a fatherless variant parallel to Juno's rivalry with Athena's head-birth — a secondary tradition, not Hesiod's or Homer's, but attested in our Ovid lens.
+
+Verification: ✓ verified — Hesiod and Iliad positions exact; Ovid Fasti passage confirms Flora's flower and fatherless Mars.
+
 ## Hephaestus' fall from Olympus
 
 - **topic**: `hephaestus-fall-from-olympus`
@@ -1296,6 +1311,21 @@ Significance: the eponym of the Ionians is the lawful son of the Hellene Xuthus 
 
 Verification: ✓ verified — Bibliotheca 1.7.3 (Xuthus the father) and Pausanias 1.28.4 (Apollo met Creusa in the cave below the Acropolis); the explicit Apollo-paternity is Euripides' Ion, out of the seven-source set, so it is carried only as the Pausanias-reported cult tradition.
 
+## The eponym of the Achaeans
+
+- **topic**: `achaean-eponym`
+- **Characters**: `achaea`, `achaeus`, `xuthus`, `creusa-athens`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The genealogical roll at the close of the Theogony (Tier-B roster, Th. 1000) names **Achaea** among Zeus' offspring in the ethnic eponym series — a feminine figure paired with Hellen and Dorus at Th. 1002. | Theogony 1000 (roster line; English corpus ends at Medea/Medeus in Evelyn-White) |
+| Pseudo-Apollodorus | The Achaeans take their name from **Achaeus**, son of Xuthus and Creusa daughter of Erechtheus — not from a daughter of Zeus. | Bibliotheca 1.7.3 |
+| Pausanias | Gives Achaeus a historical career: return to Phthiotis, sons in Argos, and the naming of Peloponnesian peoples before the Dorian return. | Description of Greece 7.1.2–7.1.7 |
+
+Significance: the Hesiodic roll preserves a feminine ethnic eponym in Zeus' catalogue, while the genealogists who map the post-flood division of Hellas make the name flow through the male hero Achaeus and the Athenian marriage of Xuthus — two incompatible founders for the same ethnonym.
+
+Verification: ✓ verified — Bibliotheca 1.7.3 and Pausanias 7.1.2–7.1.7 (Achaeus line); Theogony 1000 Achaea entry follows project roster indexing (Hesiodic ethnic roll); no Pleiad mother for Achaea is named in the seven-source set.
+
 ## How many generations from Lelex to the eponyms?
 
 - **topic**: `eponym-generation-count`
@@ -1889,6 +1919,20 @@ Significance: the mythographic and Argonautic tradition makes the archetypal sin
 
 Verification: ✓ verified — Apollodorus Bibliotheca 1.3.2, Apollonius Argonautica 1.23, and Hyginus Fabulae 14 (Calliope as mother) and Pausanias Description of Greece 9.30.4 (the rejection) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
 
+## When may Orpheus look back at Eurydice?
+
+- **topic**: `eurydice-return-condition`
+- **Characters**: `orpheus`, `eurydice-orpheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Pluto promised Eurydice would follow if Orpheus did not turn until he reached his own house; he disobeyed, beheld his wife, and she turned back. | Bibliotheca 1.3.2 |
+| Ovid | Eurydice followed up the steep dark path; fearing to lose her at the threshold of earth, Orpheus looked back — and instantly she slipped away. | Metamorphoses 10.77–95 |
+
+Significance: both sources agree that a single backward glance destroys the bargain — but Apollodorus sets the safe limit at Orpheus' own house, while Ovid places the fatal test at the threshold of the upper world, so the distance Eurydice must travel in silence and the exact moment of failure differ between the mythographer's spare account and Ovid's psychologically charged scene.
+
+Verification: ✓ verified — Apollodorus Bibliotheca 1.3.2 and Ovid Metamorphoses 10.77–95 confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
 ## Whose children are the Muses?
 
 - **topic**: `muse-parentage`
@@ -1947,6 +1991,21 @@ Verification: ✓ verified — Hesiod Theogony 404–452 (parentage and the bene
 Significance: Hesiod's canonical triad of moral-civic Horae — Order, Justice and Peace — is set against the larger, partly seasonal-agricultural catalogue preserved by Hyginus, so that the number and even the membership of the Seasons varies by author; the three Hesiodic sisters (Eunomia, Dike, Eirene) recur in Hyginus's list but are folded into a wider company of Hours.
 
 Verification: ✓ verified — Hesiod Theogony 901–906 (the three Horae Eunomia, Dike, Eirene) and Hyginus Fabulae 183 (the nine-name catalogue including the same three) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## How did Palamedes die?
+
+- **topic**: `palamedes-death-manner`
+- **Characters**: `palamedes`, `odysseus`, `diomedes`, `agamemnon`, `nauplius-amymone`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The allies stoned Palamedes in the Greek camp at Troy on a forged charge of treason; Agamemnon was Odysseus' accomplice in the murder. | Epitome 3.8, 6.8 |
+| Hyginus | Odysseus forged a letter and buried gold in Palamedes' tent; the allies stoned him as a traitor. | Fabulae 105 |
+| Pausanias (Cypria) | Palamedes was drowned when he put out to catch fish; Diomedes and Odysseus were his murderers. | Description of Greece 10.31.2 |
+
+Significance: the Epic Cycle and Returns agree that Odysseus hated the counsellor who exposed his feigned madness, but Apollodorus and Hyginus send him to death by stoning in camp while Pausanias, citing the lost *Cypria*, knows drowning on a fishing expedition — the injustice Nauplius avenges on the fleet is the same, the manner of death is not.
+
+Verification: ✓ verified — Apollodorus Epitome 3.8, 6.8; Hyginus Fab. 105; Pausanias 10.31.2 confirmed against the pinned corpus (Perseus).
 
 ## Nestor's queen: Eurydice or Anaxibia?
 
@@ -2120,3 +2179,34 @@ Verification: ✓ verified — Bibliotheca 3.10.3–3.10.4 confirmed against the
 Significance: at the very root of the Arcadian royal house, Lycaon's maternity forks between an Oceanid princess and a mountain nymph of Cyllene — the same peak later famed as Hermes' birthplace and as the Pleiads' birth-mountain.
 
 Verification: ✓ verified — Bibliotheca 3.8.1 confirmed against the pinned corpus.
+
+## Actaeon's offense
+
+- **topic**: `actaeon-offense`
+- **Characters**: `actaeon`, `aristaeus`, `autonoe`, `artemis`, `zeus`, `semele`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (Acusilaus) | Zeus was angry at Actaeon because he wooed Semele. | Bibliotheca 3.4.4 |
+| Pseudo-Apollodorus (others) | Actaeon saw Artemis bathing and was punished for it. | Bibliotheca 3.4.4 |
+| Pseudo-Apollodorus (others) | Actaeon boasted himself the better hunter. | Bibliotheca 3.4.4 |
+| Hyginus | Actaeon saw Diana bathing, desired her, and Diana set horns on his head so his own dogs tore him apart. | Fabulae 180–181 |
+| Ovid | Actaeon wandered into Gargaphie, saw Diana bathing, and was transformed into a stag until his hounds ran him down. | Metamorphoses 3.138–252 |
+
+Significance: Apollodorus preserves three incompatible charges against the hunter grandson of Cadmus without choosing among them — the Semele-wooing strand ties Actaeon's ruin to the Theban house's divine affairs, while Hyginus and Ovid fix the offense on the sacred bath of Artemis alone.
+
+Verification: ✓ verified — Bibliotheca 3.4.4 confirmed against the pinned corpus; Hyginus and Ovid bath-narratives align with `actaeon-artemis`.
+
+## Regional affiliation of Smyrna
+
+- **topic**: `smyrna-regional-affiliation`
+- **Places**: `smyrna`
+
+| Strand | Claim | Citation |
+|---|---|---|
+| Aeolian | Smyrna was one of the twelve Aeolian cities on the coast, on the site later called the old town. | Description of Greece 7.5.1 |
+| Ionian | Ionians from Colophon displaced the Aeolians and later admitted Smyrna to the Ionian assembly at Panionium; elsewhere Pausanias calls the Smyrnaeans an Ionian people. | Description of Greece 7.5.1, 4.21.5 |
+
+Significance: the city's ethnic label forks within the atlas lenses — geographic metadata prefers the Aeolian sub-region (`aeolis`), while Pausanias also records its Ionian membership and Ionian resettlement.
+
+Verification: ✓ verified — Description of Greece 7.5.1 and 4.21.5 confirmed against the pinned corpus.

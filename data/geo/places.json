@@ -159,6 +159,7 @@
       "cypria",
       "suitor-oath-at-sparta",
       "iphigenia-at-aulis",
+      "palamedes",
       "nostoi",
       "agamemnon-murder",
       "cassandra-at-mycenae",
@@ -234,8 +235,10 @@
       "trojan-war",
       "nostoi",
       "nauplius-vengeance",
+      "palamedes",
       "diomedes-exile",
       "oresteia",
+      "bellerophon-chimera",
       "heracles-cycle",
       "return-of-heraclids",
       "metamorphoses",
@@ -557,6 +560,7 @@
       "iphigenia-at-aulis",
       "telephus-at-mysia",
       "protesilaus-at-troy",
+      "palamedes",
       "trojan-war",
       "wrath-and-plague",
       "duel-and-truce",
@@ -570,7 +574,10 @@
       "priam-and-ransom",
       "rhesus",
       "aethiopis",
+      "philoctetes-on-lemnos",
+      "ajax-and-the-arms",
       "little-iliad",
+      "the-wooden-horse",
       "sack-of-troy",
       "polyxena-at-the-tomb",
       "nostoi",
@@ -620,7 +627,8 @@
     ],
     "storyIds": [
       "argonautica",
-      "medea-at-corinth"
+      "medea-at-corinth",
+      "bellerophon-chimera"
     ]
   },
   {
@@ -651,7 +659,8 @@
       "heracles-cycle",
       "birth-and-banishment",
       "omphale-and-troy",
-      "twelve-labours"
+      "twelve-labours",
+      "bellerophon-chimera"
     ],
     "characterIds": [
       "heracles",
@@ -965,24 +974,256 @@
     "id": "syracuse",
     "name": "Syracuse",
     "greekName": "Συράκουσαι",
-    "kind": "myth-site",
-    "region": null,
+    "kind": "city",
+    "region": "sicily",
     "coordinates": [
-      15.29,
-      37.08
+      15.283,
+      37.07
     ],
     "certainty": "fixed",
-    "pleiadesId": "462311",
+    "pleiadesId": "462503",
     "importance": "major",
+    "cityId": "syracuse",
     "summary": [
       {
-        "text": "The great Corinthian colony of Sicily — western horizon of the Greek world, where Alpheus was said to mingle his stream with Arethusa's spring and where the wanderings of Odysseus touched the edges of the Italian West.",
+        "text": "Syracuse on Ortygia — the Corinthian colony Delphi sent Archias to found, where the oracle said the mouth of Alpheus would mingle with broad Arethusa's springs on the misty island facing Trinacria.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 5.7.2–5.7.3"
+      },
+      {
+        "text": "The great Sicilian city stood at the western horizon of the Greek world — refuge of Daedalus after Icarus fell, and the shore toward which Odysseus' long wandering touched the Italian West.",
         "sources": [
           "homer",
           "ovid",
-          "pausanias"
+          "apollodorus"
         ]
       }
+    ],
+    "characterIds": [
+      "arethusa-nymph",
+      "daedalus"
+    ],
+    "storyIds": [
+      "daedalus-icarus",
+      "odyssey"
+    ]
+  },
+  {
+    "id": "lavinium",
+    "name": "Lavinium",
+    "greekName": "Λαουίνιον",
+    "kind": "city",
+    "region": "latium",
+    "coordinates": [
+      12.481,
+      41.665
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "422960",
+    "importance": "major",
+    "cityId": "lavinium",
+    "summary": [
+      {
+        "text": "Lavinium on the Laurentine coast — where Apollodorus and Hyginus send Aeneas after Troy among the Italian peoples, the Latin landing of the Dardanian line that the Returns count among the wanderers who reached the West.",
+        "sources": [
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Epitome 6.20; Fabulae 120"
+      },
+      {
+        "text": "Ovid names Lavinium's sacred homes on the Tiber approach and sets Aeneas' washing in the Numicius at the Laurentine shore before the hero passes into the god Indiges.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.842–881, 15.1012–1099"
+      }
+    ],
+    "characterIds": [
+      "aeneas",
+      "anchises"
+    ],
+    "storyIds": [
+      "aeneas-to-italy",
+      "nostoi"
+    ]
+  },
+  {
+    "id": "cumae",
+    "name": "Cumae",
+    "greekName": "Κύμη",
+    "kind": "city",
+    "region": "campania",
+    "coordinates": [
+      14.056,
+      40.848
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "432808",
+    "importance": "major",
+    "cityId": "cumae",
+    "summary": [
+      {
+        "text": "Cumae on the Campanian marsh — first Greek colony on the Italian mainland, where Trojan Aeneas landed, sacrificed, and begged the long-lived Sibyl for passage to Avernus and his father's shade.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.154–335"
+      },
+      {
+        "text": "Pausanias knew Cumae among the Opici as the home of Sibyls — Demo of Cumae and the stone urn in Apollo's sanctuary said to hold the Sibyl's bones.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.12.8"
+      }
+    ],
+    "characterIds": [
+      "aeneas"
+    ],
+    "storyIds": [
+      "aeneas-to-italy",
+      "philoctetes-to-italy",
+      "nostoi"
+    ]
+  },
+  {
+    "id": "tarentum",
+    "name": "Tarentum",
+    "greekName": "Τάρας",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      17.233,
+      40.474
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "442810",
+    "importance": "major",
+    "cityId": "tarentum",
+    "summary": [
+      {
+        "text": "Tarentum on the heel of Italy — Spartan colony of Phalanthus, whom Delphi's oracle sent to seize the coast when rain fell from a cloudless sky upon his wife Aethra's tears, and named for Taras son of Poseidon.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.10.6–10.10.8"
+      },
+      {
+        "text": "The Tarentines dedicated spoils and horse-offerings at Olympia and Delphi — a flagship city of Achaean Magna Graecia where hero cult and colonial myth met the wider Greek world.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.10.6, 5.25.7"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "croton",
+    "name": "Croton",
+    "greekName": "Κρότων",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      17.128,
+      39.081
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452317",
+    "importance": "major",
+    "cityId": "croton",
+    "summary": [
+      {
+        "text": "Croton on the Ionian coast — Spartan colony sent with Locri under Polydorus, and in Crotonian legend the starting-point of Leonymus' voyage to the White Island where Achilles received hero cult.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 3.3.1, 3.19.11–3.19.12"
+      },
+      {
+        "text": "Ovid tells how Hercules rested at far-famed Croton and promised the place to Myscelus' race; the city that bears Croton's buried bones still keeps his name on the Italian shore.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 15.1–91"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "locri",
+    "name": "Locri",
+    "greekName": "Λοκροὶ Ἐπιζεφύριοι",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      16.244,
+      38.226
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452369",
+    "importance": "major",
+    "cityId": "locri",
+    "summary": [
+      {
+        "text": "Locri by the Western headland — Spartan colony paired with Croton when Polydorus sent settlers across the sea, the Epizephyrian city on the toe of Italy.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 3.3.1"
+      },
+      {
+        "text": "The Locrians who dwell near the Western Cape dedicated a gilded boxwood Apollo at Olympia — Patrocles of Croton made the image that Pausanias saw among the hero offerings.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 6.19.6"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "rhegium",
+    "name": "Rhegium",
+    "greekName": "Ῥήγιον",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      15.644,
+      38.109
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452416",
+    "importance": "major",
+    "cityId": "rhegium",
+    "summary": [
+      {
+        "text": "Rhegium on the Calabrian shore — opposite Zancle across the strait where Homer set Scylla and Charybdis, and the crossing Heracles used when a bull swam from Rhegium to Sicily and gave Italy its name.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Odyssey 12.235–275; Bibliotheca 2.5.10"
+      },
+      {
+        "text": "Ovid sets Galatea's tale beside the opposite walls of Rhegium and the sea abundant in shipwreck — the Ausonian shore facing Sicily across the Tyrrhenian passage.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.1–108"
+      }
+    ],
+    "storyIds": [
+      "odyssey"
     ]
   },
   {
@@ -1747,8 +1988,8 @@
     "kind": "city",
     "region": "cos",
     "coordinates": [
-      36.893,
-      27.288
+      27.288,
+      36.893
     ],
     "certainty": "fixed",
     "pleiadesId": "599122",
@@ -1774,8 +2015,8 @@
     "kind": "city",
     "region": "thera",
     "coordinates": [
-      36.363,
-      25.478
+      25.478,
+      36.363
     ],
     "certainty": "fixed",
     "pleiadesId": "599329",
@@ -1798,8 +2039,8 @@
     "kind": "city",
     "region": "cythera",
     "coordinates": [
-      36.254,
-      23.01
+      23.01,
+      36.254
     ],
     "certainty": "fixed",
     "pleiadesId": "599112",
@@ -1825,8 +2066,8 @@
     "kind": "city",
     "region": "lesbos",
     "coordinates": [
-      39.104,
-      26.558
+      26.558,
+      39.104
     ],
     "certainty": "fixed",
     "pleiadesId": "599266",
@@ -1849,8 +2090,8 @@
     "kind": "city",
     "region": "cyprus",
     "coordinates": [
-      35.185,
-      33.901
+      33.901,
+      35.185
     ],
     "certainty": "fixed",
     "pleiadesId": "598825",
@@ -2188,7 +2429,7 @@
     "name": "Pergamon",
     "greekName": "Πέργαμον",
     "kind": "city",
-    "region": "mysia",
+    "region": "teuthrania",
     "coordinates": [
       27.129,
       39.132
@@ -2245,6 +2486,192 @@
       "midas-golden-touch",
       "marsyas-apollo",
       "baucis-philemon"
+    ]
+  },
+  {
+    "id": "smyrna",
+    "name": "Smyrna",
+    "greekName": "Σμύρνα",
+    "kind": "city",
+    "region": "aeolis",
+    "coordinates": [
+      27.141,
+      38.417
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550893",
+    "importance": "major",
+    "cityId": "smyrna",
+    "summary": [
+      {
+        "text": "Smyrna on the Aeolian coast — one of the twelve Aeolian cities on the site the Smyrnaeans still call the old town, before Ionian colonists from Colophon displaced the earlier settlers.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 7.5.1",
+        "topic": "smyrna-regional-affiliation"
+      },
+      {
+        "text": "The same passage records that Ionians from Colophon seized Smyrna and later granted its people a seat at the Ionian assembly at Panionium — and elsewhere Pausanias calls the Smyrnaeans an Ionian people who drove the Lydians from their town.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 7.5.1, 4.21.5",
+        "topic": "smyrna-regional-affiliation"
+      }
+    ],
+    "storyIds": [
+      "myrrha-adonis",
+      "metamorphoses",
+      "cypria"
+    ]
+  },
+  {
+    "id": "tarsus",
+    "name": "Tarsus",
+    "greekName": "Ταρσός",
+    "kind": "city",
+    "region": "cilicia",
+    "coordinates": [
+      34.896,
+      36.912
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "648789",
+    "importance": "major",
+    "cityId": "tarsus",
+    "summary": [
+      {
+        "text": "Tarsus in Cilicia — whose river Cydnus Pausanias ranked among the coldest streams of the Greek world, refreshing to drink and to bathe in without winter's bite.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.28.3"
+      }
+    ]
+  },
+  {
+    "id": "side",
+    "name": "Side",
+    "greekName": "Σίδη",
+    "kind": "city",
+    "region": "pamphylia",
+    "coordinates": [
+      31.392,
+      36.768
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639105",
+    "importance": "major",
+    "cityId": "side",
+    "summary": [
+      {
+        "text": "Side on the Pamphylian coast — whose river Melas Pausanias counted among the coldest waters of Asia Minor, and which Apollodorus lists among the cities Achilles ravaged before Troy.",
+        "sources": [
+          "pausanias",
+          "apollodorus"
+        ],
+        "citation": "Description of Greece 8.28.3; Epitome 3.33"
+      }
+    ],
+    "storyIds": [
+      "cypria"
+    ]
+  },
+  {
+    "id": "cyme",
+    "name": "Cyme",
+    "greekName": "Κύμη",
+    "kind": "city",
+    "region": "aeolis",
+    "coordinates": [
+      26.938,
+      38.760
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550506",
+    "importance": "major",
+    "cityId": "cyme",
+    "summary": [
+      {
+        "text": "Aeolian Cyme on the Asian coast — the city Hesiod left in poverty when he crossed the sea to settle near Helicon, and one of the western settlements the Cypria counts among Achilles' early conquests.",
+        "sources": [
+          "hesiod",
+          "apollodorus"
+        ],
+        "citation": "Works and Days 636–640; Epitome 3.33"
+      }
+    ],
+    "storyIds": [
+      "cypria"
+    ]
+  },
+  {
+    "id": "xanthus-lycia",
+    "name": "Xanthus",
+    "greekName": "Ξάνθος",
+    "kind": "city",
+    "region": "lycia",
+    "coordinates": [
+      29.320,
+      36.357
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639166",
+    "importance": "major",
+    "cityId": "xanthus-lycia",
+    "summary": [
+      {
+        "text": "Xanthus by the eddying river — capital of Lycia whence Sarpedon and peerless Glaucus led their men to Troy, and where Bellerophon won his kingdom after slaying the Chimera in the hills above.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Iliad 2.876–877; Bibliotheca 2.3.1"
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "bellerophon-chimera"
+    ],
+    "characterIds": [
+      "sarpedon",
+      "glaucus-lycian",
+      "bellerophon"
+    ]
+  },
+  {
+    "id": "patara",
+    "name": "Patara",
+    "greekName": "Πάταρα",
+    "kind": "city",
+    "region": "lycia",
+    "coordinates": [
+      29.315,
+      36.262
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639042",
+    "importance": "major",
+    "cityId": "patara",
+    "summary": [
+      {
+        "text": "Patara of the Lycians — Apollo's coastal oracle that Ovid names with Claros and Delphi when the god walked among mortals, and where Pausanias saw a bronze bowl the Lycians said Telephus dedicated and Hephaestus made.",
+        "sources": [
+          "ovid",
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 1.580–581; Description of Greece 9.41.1"
+      }
+    ],
+    "storyIds": [
+      "telephus-at-mysia",
+      "metamorphoses",
+      "marsyas-apollo"
+    ],
+    "characterIds": [
+      "telephus",
+      "apollo"
     ]
   },
   {
@@ -2759,6 +3186,7 @@
       "argonautica",
       "voyage-to-colchis",
       "little-iliad",
+      "philoctetes-on-lemnos",
       "philoctetes-to-italy",
       "lesser-returns"
     ],
@@ -2864,7 +3292,8 @@
         "text": "Icaria — once called Doliche, renamed when Heracles buried the body of Icarus washed ashore; Dionysus later hired passage from here toward Naxos.",
         "sources": [
           "apollodorus"
-        ]
+        ],
+        "citation": "Bibliotheca 2.6.3, 3.5.3"
       }
     ]
   },
@@ -2996,7 +3425,8 @@
       "heracles-cycle",
       "deianira-and-achelous",
       "metamorphoses",
-      "deianira-at-the-feast"
+      "deianira-at-the-feast",
+      "calydonian-boar"
     ]
   },
   {
@@ -3311,8 +3741,8 @@
     "id": "campania",
     "name": "Campania",
     "greekName": "Καμπανία",
-    "kind": "myth-site",
-    "region": null,
+    "kind": "city",
+    "region": "campania",
     "coordinates": [
       14.25,
       40.83
@@ -3320,6 +3750,7 @@
     "certainty": "traditional",
     "pleiadesId": "433087",
     "importance": "major",
+    "cityId": "campania",
     "summary": [
       {
         "text": "Campania of the Italian plain — where Apollodorus sends Philoctetes after Troy among the Campanians, in the same westward strand of myth that receives Aeneas and the exiled Diomedes.",

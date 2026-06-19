@@ -3,7 +3,7 @@
   "title": "Orpheus and Eurydice",
   "greekTitle": "Ὀρφεὺς καὶ Εὐρυδίκη",
   "kind": "episode",
-  "parent": "metamorphoses",
+  "parent": "orpheus-cycle",
   "era": 7.08,
   "summary": {
     "text": "Orpheus the Thracian bard, whom Calliope bore to Oeagrus and whose song moved stones and trees, lost Eurydice to a serpent on their wedding day — descended through Taenarus to Hades, charmed Pluto and Persephone with his lyre, and won her back on condition he not look behind; one backward glance sent her down again forever.",
@@ -34,7 +34,8 @@
       "title": "The look back",
       "text": "Eurydice followed, halting from her wound, up the steep dark path toward the light. Apollodorus says Pluto promised she would follow if Orpheus did not turn until he reached his own house; Ovid sets the test at the threshold of earth. Fearful of losing her again, he looked back — and instantly she slipped away. He grasped only yielding air; her last word was farewell, and she fell a second time to Hades. Apollodorus bluntly: he disobeyed, beheld his wife, and she turned back.",
       "sources": ["ovid", "apollodorus"],
-      "citation": "Ov. Met. 10.77–95; Apollod. 1.3.2"
+      "citation": "Ov. Met. 10.77–95; Apollod. 1.3.2",
+      "topic": "eurydice-return-condition"
     },
     {
       "title": "On the bank of Styx",
@@ -45,7 +46,8 @@
   ],
   "cast": [
     { "id": "orpheus", "name": "Orpheus", "role": "Thraco-Pierian bard who descended for his wife" },
-    { "name": "Eurydice", "role": "Bride lost to the serpent and reclaimed too briefly" },
+    { "id": "eurydice-orpheus", "name": "Eurydice", "role": "Bride lost to the serpent and reclaimed too briefly" },
+    { "id": "oeagrus", "name": "Oeagrus", "role": "Thracian father in the mythographic tradition" },
     { "id": "calliope", "name": "Calliope", "role": "Muse, Orpheus' mother in the mythographic tradition" },
     { "id": "hades", "name": "Hades", "role": "Pluto, lord of the dead who heard his song" },
     { "id": "persephone", "name": "Persephone", "role": "Queen of the underworld who wept at his plea" }

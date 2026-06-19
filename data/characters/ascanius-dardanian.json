@@ -1,0 +1,56 @@
+{
+  "id": "ascanius-dardanian",
+  "name": "Ascanius",
+  "greekName": "Askanios (Ἀσκάνιος)",
+  "romanName": "Ascanius",
+  "type": "hero",
+  "domains": [
+    "son of Aeneas",
+    "the Trojan remnant",
+    "heir of the Latin line"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Aeneas' son, rescued from burning Troy and carried west with Anchises — not to be confused with Ascanius son of Aretaon, captain of the Phrygian allies from Ascania in Homer and Apollodorus.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 13.899–1014, 14.882–1022; Fabulae 254, 273"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid's pious exile chooses his burdens with care: from all Troy's wealth Aeneas kept the sacred Penates, his father Anchises, and his child Ascanius. The boy sailed from Antandros with the fleet of exiles, passed Delos and Sicily, and at Cumae stood beside his father while the Sibyl guided the way to Anchises' shade.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.899–1014, 14.154–335"
+    },
+    {
+      "text": "Hyginus counts Aeneas among the most pious of men for bearing Anchises from the fire and rescuing Ascanius his son, and records funeral games in Sicily at which the boy Ascanius led the Trojan contests — the Dardanian heir in the Returns tradition Apollodorus summarises when Aeneas comes to Italy with Anchises and Ascanius after Troy fell.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 94, 254, 273; Epitome 5.21, 6.20"
+    },
+    {
+      "text": "After Aeneas won Lavinia and Latinus' realm, Ovid's catalogue of Alban kings places the Latin state under Ascanius' scepter before Silvius and the later line — the Trojan seed continuing in Italy.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.882–1022"
+    },
+    {
+      "text": "Homer and Apollodorus name a wholly different Ascanius — son of Aretaon, brother of Phorcys, captain of Phrygians from far Ascania at Troy. That ally (`ascanius-phrygian`) must never be merged with Aeneas' Dardanian son.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["ovid", "hyginus", "apollodorus"]
+    },
+    {
+      "city": "cumae",
+      "sources": ["ovid"]
+    },
+    {
+      "city": "lavinium",
+      "sources": ["ovid", "hyginus"]
+    }
+  ]
+}

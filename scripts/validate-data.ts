@@ -16,6 +16,8 @@ import {
   relationSchema,
   sourceSchema,
   storySchema,
+  storyCrossingsSchema,
+  chronologySchema,
 } from '../src/lib/schemas';
 import { CREATURE_KINDS, NYMPH_KINDS } from '../src/types/character';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
@@ -135,6 +137,7 @@ for (const [dirName, schema] of [['reference', referenceSchema], ['culture', cul
   const dir = join(DATA_DIR, dirName);
   if (!existsSync(dir)) continue;
   for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
+    if (dirName === 'reference' && (file === 'theogony-roster.json' || file === 'water-nymph-roster.json')) continue;
     const raw = loadJson(join(dir, file));
     if (raw === null) continue;
     const parsed = schema.safeParse(raw);
@@ -423,6 +426,63 @@ if (existsSync(storyCultureDir)) {
   }
 }
 
+// 6b. Story crossings: schema + referential integrity (both endpoints exist,
+//     are distinct, and no pair is declared twice in either order).
+let crossingCount = 0;
+const crossingsPath = join(DATA_DIR, 'story-crossings.json');
+if (existsSync(crossingsPath)) {
+  const raw = loadJson(crossingsPath);
+  const parsed = storyCrossingsSchema.safeParse(raw);
+  if (!parsed.success) {
+    errors.push(
+      `story-crossings.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+    );
+  } else {
+    const seen = new Set<string>();
+    for (const x of parsed.data) {
+      if (!storyIds.has(x.a)) errors.push(`story-crossings.json: unknown story "${x.a}"`);
+      if (!storyIds.has(x.b)) errors.push(`story-crossings.json: unknown story "${x.b}"`);
+      if (x.a === x.b) errors.push(`story-crossings.json: crossing links "${x.a}" to itself`);
+      const key = [x.a, x.b].sort().join('::');
+      if (seen.has(key)) errors.push(`story-crossings.json: duplicate crossing ${x.a} ✕ ${x.b}`);
+      seen.add(key);
+    }
+    crossingCount = parsed.data.length;
+  }
+}
+
+// 6c. Chronology: schema, anchor → story references, declared chronographers.
+//     (Chronographer date-disputes like the fall of Troy are deliberately kept
+//     out of the literary-author dispute gate below — that gate is for the 7
+//     source lenses, not the chronographers.)
+let chronologyAnchorCount = 0;
+const chronologyPath = join(DATA_DIR, 'chronology.json');
+if (existsSync(chronologyPath)) {
+  const raw = loadJson(chronologyPath);
+  const parsed = chronologySchema.safeParse(raw);
+  if (!parsed.success) {
+    errors.push(
+      `chronology.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+    );
+  } else {
+    const declared = new Set(parsed.data.chronographers.map((c) => c.id));
+    const seenAnchors = new Set<string>();
+    for (const anchor of parsed.data.anchors) {
+      if (seenAnchors.has(anchor.id)) errors.push(`chronology.json: duplicate anchor id "${anchor.id}"`);
+      seenAnchors.add(anchor.id);
+      for (const sid of anchor.stories) {
+        if (!storyIds.has(sid)) errors.push(`chronology.json [${anchor.id}]: unknown story "${sid}"`);
+      }
+      for (const d of anchor.dates) {
+        if (!declared.has(d.source)) {
+          errors.push(`chronology.json [${anchor.id}]: date source "${d.source}" not in chronographers list`);
+        }
+      }
+    }
+    chronologyAnchorCount = parsed.data.anchors.length;
+  }
+}
+
 // 7. Every disputed topic must be documented before it can surface in the UI.
 const contradictions = readFileSync(CONTRADICTIONS_PATH, 'utf-8');
 const documentedTopics = new Set(
@@ -439,7 +499,7 @@ for (const [topic, entries] of topics) {
 }
 
 console.log(
-  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Disputed topics: ${info.length}`,
+  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Chronology anchors: ${chronologyAnchorCount} · Disputed topics: ${info.length}`,
 );
 for (const line of info) console.log(`  ⚖ ${line}`);
 
