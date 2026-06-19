@@ -47,19 +47,19 @@ export function zoomExponential(stops: ZoomStop[]): unknown[] {
   return ['interpolate', ['exponential', 1.75], ['zoom'], ...flat];
 }
 
-/** City marker radii — match MapViewSvg counter-scaled star (~4px core at overview). */
+/** City marker radii — small pins at overview, growing only when zoomed in. */
 export const CITY_CORE_RADIUS = zoomExponential([
-  [3, 1.75],
-  [5, 2.4],
-  [7, 3.4],
-  [10, 4.2],
+  [3, 1.3],
+  [5, 1.8],
+  [7, 2.6],
+  [10, 3.4],
 ]);
 
 export const CITY_GLOW_RADIUS = zoomExponential([
-  [3, 3],
-  [5, 4.5],
-  [7, 6],
-  [10, 8],
+  [3, 2.2],
+  [5, 3.4],
+  [7, 4.6],
+  [10, 6.2],
 ]);
 
 export const CITY_HIT_RADIUS = zoomExponential([
@@ -68,23 +68,77 @@ export const CITY_HIT_RADIUS = zoomExponential([
   [10, 18],
 ]);
 
-export const CITY_CORE_STROKE = zoomExponential([
-  [3, 0.65],
-  [7, 1],
-  [10, 1.25],
+/** Feature-state flag the selection effect sets on the clicked city, and the
+ *  per-feature importance flag baked into the cities GeoJSON. Both live only in the
+ *  stop OUTPUTS of the zoom curves below — never wrapped around ['zoom'], which
+ *  MapLibre forbids outside a top-level step/interpolate. */
+const CITY_SELECTED: unknown[] = ['boolean', ['feature-state', 'selected'], false];
+// Must be an explicit boolean: a bare ['get','important'] is type `value`, which
+// MapLibre rejects as a `case` condition — the whole opacity expression then falls
+// back to the default (fully opaque), so minor dots never thinned out on zoom-out.
+const CITY_IMPORTANT: unknown[] = ['==', ['get', 'important'], true];
+
+/** Stroke widens a touch on the selected city. */
+export const CITY_CORE_STROKE: unknown[] = [
+  'interpolate',
+  ['exponential', 1.75],
+  ['zoom'],
+  3,
+  ['case', CITY_SELECTED, 1.4, 0.65],
+  7,
+  ['case', CITY_SELECTED, 1.4, 1],
+  10,
+  ['case', CITY_SELECTED, 1.4, 1.25],
+];
+
+/** Flagship + iconic cities — lit at basin overview; the rest of the cities only
+ *  fade in as you zoom into a region (gated by the `important` feature property). */
+export const IMPORTANT_CITY_IDS = new Set([
+  'thebes',
+  'mycenae',
+  'argos',
+  'athens',
+  'sparta',
+  'troy',
+  'corinth',
+  'pylos',
+  'tiryns',
+  'knossos',
+  'delos',
+  'iolcus',
+  'calydon',
 ]);
 
-export const CITY_CORE_OPACITY = zoomExponential([
-  [3, 0.45],
-  [6, 0.68],
-  [9, 0.88],
-]);
+/** Core opacity: the selected city is fully lit at any zoom; otherwise minor cities
+ *  stay hidden until ~zoom 6 and fade in by ~7.5, while important cities show from
+ *  the basin overview. */
+export const CITY_CORE_OPACITY: unknown[] = [
+  'interpolate',
+  ['linear'],
+  ['zoom'],
+  3,
+  ['case', CITY_SELECTED, 1, ['case', CITY_IMPORTANT, 0.5, 0]],
+  5.5,
+  ['case', CITY_SELECTED, 1, ['case', CITY_IMPORTANT, 0.66, 0]],
+  7.5,
+  ['case', CITY_SELECTED, 1, ['case', CITY_IMPORTANT, 0.82, 0.62]],
+  9,
+  ['case', CITY_SELECTED, 1, ['case', CITY_IMPORTANT, 0.9, 0.85]],
+];
 
-export const CITY_GLOW_OPACITY = zoomExponential([
-  [3, 0.05],
-  [6, 0.11],
-  [9, 0.18],
-]);
+export const CITY_GLOW_OPACITY: unknown[] = [
+  'interpolate',
+  ['linear'],
+  ['zoom'],
+  3,
+  ['case', CITY_SELECTED, 0.28, ['case', CITY_IMPORTANT, 0.06, 0]],
+  5.5,
+  ['case', CITY_SELECTED, 0.3, ['case', CITY_IMPORTANT, 0.11, 0]],
+  7.5,
+  ['case', CITY_SELECTED, 0.34, ['case', CITY_IMPORTANT, 0.15, 0.09]],
+  9,
+  ['case', CITY_SELECTED, 0.36, ['case', CITY_IMPORTANT, 0.18, 0.16]],
+];
 
 /** Zoom at which river and strait names appear along their geometry. */
 export const ZOOM_FEATURE_LABELS = 5.5;
@@ -152,15 +206,15 @@ export function riverHitWidthExpr(): ExpressionSpecification {
 
 /** Myth-site / far-horizon markers — smaller than flagship cities. */
 export const PLACE_MYTH_CORE_RADIUS = zoomExponential([
-  [3, 1.4],
-  [6, 2],
-  [9, 2.6],
+  [3, 1.05],
+  [6, 1.5],
+  [9, 2],
 ]);
 
 export const PLACE_MYTH_GLOW_RADIUS = zoomExponential([
-  [3, 2.5],
-  [6, 3.5],
-  [9, 4.5],
+  [3, 1.9],
+  [6, 2.7],
+  [9, 3.5],
 ]);
 
 export const PLACE_MYTH_HIT_RADIUS = zoomExponential([

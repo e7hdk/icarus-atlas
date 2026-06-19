@@ -1,0 +1,27 @@
+{
+  "id": "merops-ethiopia",
+  "name": "Merops",
+  "greekName": "Merops (Μέροψ)",
+  "type": "mortal",
+  "domains": ["King of the Ethiopians", "Husband of Clymene", "Phaethon's reputed father"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of the Ethiopians and husband of the Oceanid Clymene. He was the mortal reputed to be Phaethon's father and reared the boy as his own, though Phaethon's true sire was the Sun — the doubt that drove the youth to seek proof of his divine birth.",
+      "sources": ["hyginus", "ovid"],
+      "citation": "Fabulae 154; Metamorphoses 1.760-764"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus makes Merops king of the Ethiopians the husband of Clymene, daughter of Ocean, and counts Phaethon and the Heliades among the children of that house — though the Sun, not Merops, had fathered them. In Ovid the question of whose son he was is the spark of the whole tragedy: when Epaphus jeered that he was puffed up with a false father, Phaethon could not bear to be thought merely the child of a mortal king, and demanded that Clymene prove Phoebus his sire.",
+      "sources": ["hyginus", "ovid"],
+      "citation": "Fabulae 154; Metamorphoses 1.748-779"
+    },
+    {
+      "text": "He is to be distinguished from the other bearers of the name — Merops king of Cos, father of Eumelus, and Merops the seer of Percote whose sons Homer sends to Troy. Only the Ethiopian Merops belongs to the house of Clymene and the tale of Phaethon.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.831; Fabulae 154"
+    }
+  ]
+}

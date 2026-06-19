@@ -30,7 +30,11 @@ export const MAP_LAYER_GROUPS: Record<MapLayerId, readonly string[]> = {
 const MYTH_SITE_LAYER_IDS = ['places-myth-glow', 'places-myth-hit', 'places-myth-core'] as const;
 
 export function parseMapLayersParam(raw: string | null): MapLayerVisibility {
-  if (!raw) return { ...DEFAULT_MAP_LAYERS };
+  // Only an ABSENT param means "default (all on)". An empty/`none` param is the
+  // explicit all-off state — otherwise turning every layer off round-trips back to
+  // all-on (an empty string was being read as "no param").
+  if (raw === null) return { ...DEFAULT_MAP_LAYERS };
+  if (raw === 'none') return { cities: false, sanctuaries: false, rivers: false };
   const enabled = new Set(
     raw
       .split(',')
@@ -46,7 +50,8 @@ export function parseMapLayersParam(raw: string | null): MapLayerVisibility {
 
 export function serializeMapLayersParam(layers: MapLayerVisibility): string | null {
   const active = MAP_LAYER_IDS.filter((id) => layers[id]);
-  if (active.length === MAP_LAYER_IDS.length) return null;
+  if (active.length === MAP_LAYER_IDS.length) return null; // all on → omit (default)
+  if (active.length === 0) return 'none'; // all off → explicit sentinel, never ''
   return active.join(',');
 }
 

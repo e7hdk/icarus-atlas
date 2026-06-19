@@ -79,6 +79,9 @@ const COLORS = {
   lake: '#0a0726',
   coast: '#00e5ff',
   coastHalo: '#7c4dff',
+  /** Base hydrography (the dense OSM river network) — a quiet cyan, fainter than
+   *  the bright coastline and the curated mythic rivers drawn on top. */
+  river: '#3fb8d6',
 } as const;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -204,6 +207,9 @@ function buildStyle(
     land: { type: 'geojson', data: land },
     lakes: { type: 'geojson', data: lakes },
     coastline: { type: 'geojson', data: coastline },
+    // Loaded by URL (not inlined) so style.json stays small — built by
+    // scripts/build-rivers-base.ts from bulk OSM extracts. Data © OSM (ODbL).
+    'rivers-base': { type: 'geojson', data: '/geo/rivers-base.json' },
   };
 
   const layers: object[] = [
@@ -228,6 +234,33 @@ function buildStyle(
       paint: {
         'fill-color': COLORS.lake,
         'fill-opacity': 0.95,
+      },
+    },
+    {
+      // Base hydrography — the dense OSM river network, thin and quiet, beneath the
+      // coastline glow and the curated mythic rivers. Longer rivers read a touch
+      // stronger; the whole network brightens as you zoom in.
+      id: 'rivers-base',
+      type: 'line',
+      source: 'rivers-base',
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: {
+        'line-color': COLORS.river,
+        // MapLibre requires ["zoom"] at the top level of a step/interpolate, so the
+        // length factor (longer rivers a touch stronger) is baked into each zoom
+        // stop's output as a nested len-interpolate rather than multiplied outside.
+        'line-opacity': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          5,
+          ['interpolate', ['linear'], ['get', 'len'], 2, 0.09, 12, 0.16],
+          8,
+          ['interpolate', ['linear'], ['get', 'len'], 2, 0.18, 12, 0.32],
+          12,
+          ['interpolate', ['linear'], ['get', 'len'], 2, 0.25, 12, 0.46],
+        ],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.4, 8, 0.85, 12, 1.5],
       },
     },
     {

@@ -1,0 +1,52 @@
+{
+  "id": "phaethon",
+  "name": "Phaethon",
+  "greekName": "Phaethōn (Φαέθων)",
+  "type": "mortal",
+  "domains": ["The Sun's mortal son", "The doomed charioteer", "Youthful hubris"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The mortal son of the Sun and the Oceanid Clymene, reared in the house of Merops king of the Ethiopians. To prove his divine birth he begged to drive his father's chariot of day for a single dawn, lost the reins and set the world ablaze, until Zeus struck him from the sky with a thunderbolt and he fell into the river Eridanus.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 1.750-2.400; Fabulae 152-154"
+    },
+    {
+      "text": "Apollonius lays his grave in the far west: smitten on the breast by the blazing bolt, Phaethon half-consumed fell from Helios's car into the depths of the Eridanus, whose waters still smoulder and breathe heavy steam where he went down.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.595-600"
+    }
+  ],
+  "story": [
+    {
+      "text": "Phaethon was equal in years and pride to Epaphus, the son of Io and Jove, and could not endure the youth's mockery when he boasted that Phoebus the Sun was his father — Epaphus taunting that he believed a mere story his mother had told. Stung, he went to Clymene and demanded proof; she swore by the radiant Sun himself that the boy was truly his, and bade him go and ask the god in person.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.748-779"
+    },
+    {
+      "text": "He crossed to the palace of the dawn, climbed its steep paths, and stood before Phoebus enthroned amid the Days and Hours. The Sun owned him gladly as his son and, to dispel all doubt, swore by the waters of Styx — the oath no god may break — to grant whatever gift his son should name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.1-102"
+    },
+    {
+      "text": "Phaethon asked to drive the chariot of day for one dawn. Bound by his oath, Phoebus pleaded against it: the ascent is steep, the summit dizzying, the fall sheer; the road runs past the horns of the Bull, the Archer and the Lion's jaws, the Scorpion and the Crab, and the wild horses obey no hand but his own. The boy would not be moved, and the grieving father set the shining reins in his hands.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.49-149; Fabulae 152"
+    },
+    {
+      "text": "The horses felt a lighter weight and left the road. The car ran too high and chilled the heavens, then plunged too low and scorched the earth: rivers shrank, mountains caught fire, the Ethiopians' skin was burnt dark and Libya was parched to desert. Earth herself cried out to Jove, and to save the world from burning the Father hurled his thunderbolt and struck Phaethon flaming from the chariot.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.150-324; Fabulae 152"
+    },
+    {
+      "text": "He fell into the Eridanus, the river of the far west, where the naiads laid his still-smoking body in the ground. His sisters the Heliades mourned him on the bank until they stiffened into poplars weeping amber into the stream, and his kinsman Cycnus of Liguria, undone by grief, was changed into a swan. The Sun, veiled in mourning, refused to drive the day until the gods entreated him back to his task.",
+      "sources": ["ovid", "apollonius"],
+      "citation": "Metamorphoses 2.319-400; Argonautica 4.595-611"
+    },
+    {
+      "text": "He is not to be confused with the other Phaethons of myth: the son of Eos and Cephalus whom laughter-loving Aphrodite carried off to keep her shrine by night, the colt Phaethon that draws the Dawn's car beside Lampus, or Phaethon the by-name the Colchians gave Apsyrtus son of Aeetes because he outshone all the youths.",
+      "sources": ["hesiod", "homer", "apollonius"],
+      "citation": "Theogony 986-991; Odyssey 23.246; Argonautica 3.245"
+    }
+  ]
+}

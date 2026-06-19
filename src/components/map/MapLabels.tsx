@@ -3,7 +3,12 @@
 import { useCallback, useEffect, useRef } from 'react';
 import maplibregl, { type Map as MaplibreMap } from 'maplibre-gl';
 import type { FeatureCollection, Point } from 'geojson';
-import { MAP, ZOOM_FEATURE_LABELS, regionLabelColors } from '@/features/geo/map-theme';
+import {
+  IMPORTANT_CITY_IDS,
+  MAP,
+  ZOOM_FEATURE_LABELS,
+  regionLabelColors,
+} from '@/features/geo/map-theme';
 import { isLinearFeatureVisible } from '@/features/geo/feature-visibility';
 import {
   pickTopRegionAtPoint,
@@ -45,11 +50,22 @@ const LABELLED_FEATURE_KINDS = new Set<GeoFeature['kind']>(['river', 'strait', '
 
 type LabelKind = 'city' | 'place' | 'region' | 'sub' | 'feature';
 
+/** Flagship cities surface this early so their names anchor the periphery even when
+ *  zoomed out; minor cities wait for ZOOM_CITY_NAMES or for their region to be focused. */
+const ZOOM_IMPORTANT_CITY = 4.3;
+
 interface LabelMarker {
   marker: maplibregl.Marker;
   el: HTMLDivElement;
   kind: LabelKind;
   id: string;
+  /** Marker placement, kept so the collision pass can rebuild the screen-space box. */
+  anchor: maplibregl.PositionAnchor;
+  offset: [number, number];
+  /** Cached rendered size (fixed-size fonts → measure once, re-measure after fonts load). */
+  w?: number;
+  h?: number;
+  important?: boolean;
   family?: string | null;
   parent?: string | null;
   featureKind?: GeoFeature['kind'];
@@ -127,9 +143,12 @@ export function MapLabels({
     mapLayers,
   });
 
-  /** Set every marker's visibility + colour from live zoom + centre + latest state.
-   *  Drill-down is recomputed live (not from React state, which lags a gesture),
-   *  so labels never flash all-on mid-zoom. */
+  /** Decide each label's eligibility + priority from live zoom/centre/state, then run
+   *  a greedy priority-ranked collision pass (like MapLibre's symbol placement, but
+   *  over our DOM labels) so nothing overlaps: high-priority labels claim their box
+   *  first, lower ones hide when they'd collide. Importance also drives a level of
+   *  detail — flagship cities/regions anchor the periphery, while minor places only
+   *  surface when their region is focused or you've zoomed in close. */
   const apply = useCallback(() => {
     if (!map) return;
     const zoom = map.getZoom();
@@ -139,23 +158,40 @@ export function MapLabels({
         ? pickTopRegionAtPoint(center.lng, center.lat, regionsMeta)
         : null;
     const s = stateRef.current;
+    const canvas = map.getCanvas();
+    const W = canvas.clientWidth;
+    const H = canvas.clientHeight;
+
+    interface Candidate {
+      label: LabelMarker;
+      priority: number;
+      color: string;
+      glow: string | null;
+      glowHovered: boolean;
+    }
+    const candidates: Candidate[] = [];
 
     for (const label of markersRef.current) {
-      let visible = false;
+      let eligible = false;
+      let priority = 0;
       let color: string = MAP.aetherMuted;
-      let regionGlow: string | null = null;
+      let glow: string | null = null;
       let glowHovered = false;
 
       if (label.kind === 'city') {
-        visible = zoom >= ZOOM_CITY_NAMES || (liveParent !== null && label.family === liveParent);
-        color = label.id === s.selectedCityId ? MAP.starOlympian : MAP.aether;
+        const inFocus = liveParent !== null && label.family === liveParent;
+        eligible = label.important ? zoom >= ZOOM_IMPORTANT_CITY : zoom >= ZOOM_CITY_NAMES || inFocus;
+        const selected = label.id === s.selectedCityId;
+        color = selected ? MAP.starOlympian : MAP.aether;
+        priority = selected ? 100 : label.important ? 72 : inFocus ? 56 : 50;
       } else if (label.kind === 'place') {
-        visible = zoom >= ZOOM_FEATURE_LABELS;
+        eligible = zoom >= ZOOM_FEATURE_LABELS;
         color = MAP.aetherMuted;
+        priority = 40;
       } else if (label.kind === 'feature') {
         const feature = features.find((f) => f.id === label.id);
         if (feature && (feature.kind === 'river' || feature.kind === 'strait')) {
-          visible = isLinearFeatureVisible(feature, zoom, liveParent, regionById, regionsMeta);
+          eligible = isLinearFeatureVisible(feature, zoom, liveParent, regionById, regionsMeta);
         } else {
           const min =
             label.featureKind === 'mountain-range'
@@ -163,37 +199,86 @@ export function MapLabels({
               : label.importance === 'minor'
                 ? ZOOM_FEATURE_LABELS + 1.5
                 : ZOOM_FEATURE_LABELS;
-          visible = zoom >= min;
+          eligible = zoom >= min;
         }
         color = MAP.aetherMuted;
+        priority =
+          label.featureKind === 'mountain-range' ? 36 : label.importance === 'minor' ? 30 : 38;
       } else if (label.kind === 'region') {
-        visible = zoom >= (label.regionMinZoom ?? 3) && zoom < ZOOM_TOP_LABELS;
-        // Each region in its own colour (like the galaxy's coloured zones), with a
-        // soft hue glow; hover lifts it brighter.
+        eligible = zoom >= (label.regionMinZoom ?? 3) && zoom < ZOOM_TOP_LABELS;
         const hov = label.id === s.hoveredRegionId;
         const c = regionLabelColors(label.id);
         color = hov ? c.bright : c.base;
-        regionGlow = c.glow;
+        glow = c.glow;
         glowHovered = hov;
+        priority = hov ? 96 : 82;
       } else {
-        visible = zoom >= ZOOM_SUBREGION && label.parent === liveParent;
-        // Sub-regions inherit their parent region's hue → one colour family.
+        eligible = zoom >= ZOOM_SUBREGION && label.parent === liveParent;
         const hov = label.id === s.hoveredRegionId || label.id === s.focusedSubId;
         const c = regionLabelColors(label.parent ?? label.id);
         color = hov ? c.bright : c.base;
-        regionGlow = c.glow;
+        glow = c.glow;
         glowHovered = hov;
+        priority = hov ? 90 : 64;
       }
 
-      if (label.group && !s.mapLayers[label.group]) visible = false;
+      if (label.group && !s.mapLayers[label.group]) eligible = false;
 
-      label.el.style.opacity = visible ? '1' : '0';
-      label.el.style.color = color;
-      // Region/sub labels carry a coloured glow on top of the dark legibility
-      // shadow; other labels keep the static CSS shadow untouched.
-      if (regionGlow) {
+      if (eligible) {
+        candidates.push({ label, priority, color, glow, glowHovered });
+      } else {
+        label.el.style.opacity = '0';
+      }
+    }
+
+    // Greedy collision: place high-priority labels first; hide any that would overlap
+    // an already-placed box (or fall off-screen).
+    candidates.sort((a, b) => b.priority - a.priority);
+    const placed: [number, number, number, number][] = [];
+    const PAD_X = 3;
+    const PAD_Y = 2;
+    const MARGIN = 28;
+
+    for (const cand of candidates) {
+      const label = cand.label;
+      if (label.w === undefined || label.h === undefined) {
+        const rect = label.el.getBoundingClientRect();
+        label.w = rect.width;
+        label.h = rect.height;
+      }
+      const p = map.project(label.marker.getLngLat());
+      const ax = p.x + label.offset[0];
+      const ay = p.y + label.offset[1];
+      const halfW = label.w / 2;
+      const x0 = ax - halfW;
+      const x1 = ax + halfW;
+      const y0 = label.anchor === 'top' ? ay : ay - label.h / 2;
+      const y1 = label.anchor === 'top' ? ay + label.h : ay + label.h / 2;
+
+      if (x1 < -MARGIN || x0 > W + MARGIN || y1 < -MARGIN || y0 > H + MARGIN) {
+        label.el.style.opacity = '0';
+        continue;
+      }
+
+      const box: [number, number, number, number] = [x0 - PAD_X, y0 - PAD_Y, x1 + PAD_X, y1 + PAD_Y];
+      let collides = false;
+      for (const b of placed) {
+        if (box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1]) {
+          collides = true;
+          break;
+        }
+      }
+      if (collides) {
+        label.el.style.opacity = '0';
+        continue;
+      }
+
+      placed.push(box);
+      label.el.style.opacity = '1';
+      label.el.style.color = cand.color;
+      if (cand.glow) {
         label.el.style.textShadow =
-          `0 0 3px rgb(5 2 15 / 0.92), 0 0 7px rgb(5 2 15 / 0.7), 0 0 ${glowHovered ? 15 : 10}px ${regionGlow}`;
+          `0 0 3px rgb(5 2 15 / 0.92), 0 0 7px rgb(5 2 15 / 0.7), 0 0 ${cand.glowHovered ? 15 : 10}px ${cand.glow}`;
       }
     }
   }, [map, regionsMeta, regionById, features]);
@@ -217,6 +302,7 @@ export function MapLabels({
         importance?: GeoFeature['importance'];
         group?: LabelGroup;
         regionMinZoom?: number;
+        important?: boolean;
       },
     ) => {
       // MapLibre's Marker owns the root element's style.opacity (it resets it on
@@ -232,13 +318,14 @@ export function MapLabels({
       const marker = new maplibregl.Marker({ element: wrap, anchor, offset })
         .setLngLat(coords)
         .addTo(map);
-      markers.push({ marker, el, kind, id, ...extra });
+      markers.push({ marker, el, kind, id, anchor, offset, ...extra });
     };
 
     for (const city of cities) {
       add('city', city.id, city.name, [city.coordinates[0], city.coordinates[1]], 'top', [0, 9], {
         family: cityFamily(city),
         group: 'cities',
+        important: IMPORTANT_CITY_IDS.has(city.id),
       });
     }
 
@@ -282,7 +369,20 @@ export function MapLabels({
     apply();
     map.on('move', apply); // pan + zoom + flyTo all change live zoom/centre gating
 
+    // Sizes measured before Cinzel loads are off (fallback metrics) — re-measure once
+    // the web font is ready so the collision boxes match what's actually drawn.
+    let cancelled = false;
+    document.fonts?.ready.then(() => {
+      if (cancelled) return;
+      for (const m of markersRef.current) {
+        m.w = undefined;
+        m.h = undefined;
+      }
+      apply();
+    });
+
     return () => {
+      cancelled = true;
       map.off('move', apply);
       for (const label of markers) label.marker.remove();
       markersRef.current = [];

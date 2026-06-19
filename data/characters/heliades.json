@@ -1,0 +1,27 @@
+{
+  "id": "heliades",
+  "name": "The Heliades",
+  "greekName": "Hēliades (Ἡλιάδες)",
+  "type": "mortal",
+  "domains": ["Daughters of the Sun", "Sisters of Phaethon", "The amber-weeping poplars"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The daughters of the Sun and Clymene, sisters of Phaethon. They yoked the chariot's horses for their brother's fatal ride, and when he fell they mourned him on the Eridanus until they were rooted into poplar trees whose tears, dropping into the river, harden in the sun to amber.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 2.340-366; Fabulae 154"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid names them Phaethusa, eldest of the sisters, and Lampetie among them, with their mother Clymene; they had yoked the horses to the car that carried Phaethon to his death. For four months they lay grieving on the banks of the Eridanus, calling on their dead brother, until bark crept up over their thighs and breasts, leaves closed over their faces, and they stood as poplars by the water.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.340-366"
+    },
+    {
+      "text": "Even rooted as trees the Heliades wept on, and Ovid makes their tears the origin of amber: the river takes the drops that fall from the new boughs and hardens them in the sun, to be worn one day by Roman brides. Apollonius too set the lament on the Eridanus, where the Argonauts heard the poplars sigh and saw the amber tears drift on the dark water.",
+      "sources": ["ovid", "apollonius"],
+      "citation": "Metamorphoses 2.364-366; Argonautica 4.603-611"
+    }
+  ]
+}

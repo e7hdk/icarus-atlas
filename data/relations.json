@@ -39391,5 +39391,103 @@
       "apollodorus"
     ],
     "note": "Theogony 240–264; Bibliotheca 1.2.7"
+  },
+  {
+    "id": "phaethon-parent-helios",
+    "type": "parent",
+    "from": "phaethon",
+    "to": "helios",
+    "sources": [
+      "ovid",
+      "hyginus",
+      "apollonius"
+    ],
+    "note": "The Sun owned Phaethon as his son and, bound by an oath on Styx, let him drive the chariot of day (Met. 2.31-149; Arg. 4.595-600)"
+  },
+  {
+    "id": "phaethon-parent-clymene",
+    "type": "parent",
+    "from": "phaethon",
+    "to": "clymene",
+    "sources": [
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Borne to Helios by the Oceanid Clymene, wife of Merops; she swore by the Sun that the boy was truly his (Met. 1.756-779; Fab. 154)"
+  },
+  {
+    "id": "heliades-parent-helios",
+    "type": "parent",
+    "from": "heliades",
+    "to": "helios",
+    "sources": [
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Daughters of the Sun, sisters of Phaethon (Met. 2.340-366; Fab. 154)"
+  },
+  {
+    "id": "heliades-parent-clymene",
+    "type": "parent",
+    "from": "heliades",
+    "to": "clymene",
+    "sources": [
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Borne to Helios by Clymene; named with their mother in Ovid (Met. 2.340-366; Fab. 154)"
+  },
+  {
+    "id": "phaethon-sibling-heliades",
+    "type": "sibling",
+    "from": "phaethon",
+    "to": "heliades",
+    "sources": [
+      "ovid",
+      "hyginus"
+    ],
+    "note": "His sisters, who yoked his chariot and mourned him into amber-weeping poplars on the Eridanus (Met. 2.340-366)"
+  },
+  {
+    "id": "merops-ethiopia-consort-clymene",
+    "type": "consort",
+    "from": "merops-ethiopia",
+    "to": "clymene",
+    "sources": [
+      "hyginus",
+      "ovid"
+    ],
+    "note": "The Ethiopian king wed the Oceanid Clymene and was reputed father of her son Phaethon (Fab. 154; Met. 1.760-764)"
+  },
+  {
+    "id": "zeus-slayer-phaethon",
+    "type": "slayer",
+    "from": "zeus",
+    "to": "phaethon",
+    "sources": [
+      "ovid",
+      "apollonius"
+    ],
+    "note": "Hurled the thunderbolt that struck Phaethon flaming from the chariot, lest the scorched world be consumed (Met. 2.311-324; Arg. 4.595-600)"
+  },
+  {
+    "id": "cycnus-liguria-ally-phaethon",
+    "type": "ally",
+    "from": "cycnus-liguria",
+    "to": "phaethon",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Ligurian king and kinsman, joined to Phaethon by love, who mourned him on the Eridanus and became a swan (Met. 2.367-380)"
+  },
+  {
+    "id": "phaethon-adversary-epaphus",
+    "type": "adversary",
+    "from": "phaethon",
+    "to": "epaphus",
+    "sources": [
+      "ovid"
+    ],
+    "note": "Epaphus, son of Io and Jove, mocked Phaethon’s claim to the Sun as father and provoked the fatal quest (Met. 1.748-764)"
   }
 ]

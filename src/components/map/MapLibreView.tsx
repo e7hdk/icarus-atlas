@@ -43,6 +43,7 @@ import {
   CITY_GLOW_OPACITY,
   CITY_GLOW_RADIUS,
   CITY_HIT_RADIUS,
+  IMPORTANT_CITY_IDS,
   PLACE_MYTH_CORE_RADIUS,
   PLACE_MYTH_GLOW_RADIUS,
   PLACE_MYTH_HIT_RADIUS,
@@ -212,7 +213,7 @@ function citiesGeoJson(cities: GeoCity[]) {
         type: 'Point' as const,
         coordinates: [city.coordinates[0], city.coordinates[1]],
       },
-      properties: { id: city.id, name: city.name },
+      properties: { id: city.id, name: city.name, important: IMPORTANT_CITY_IDS.has(city.id) },
     })),
   };
 }
@@ -235,6 +236,8 @@ export function MapLibreView({
   const citiesRef = useRef(cities);
   const placesRef = useRef(places);
   const featuresRef = useRef(features);
+  /** The city currently carrying the `selected` feature-state, so it can be cleared. */
+  const selectedCityStateRef = useRef<string | null>(null);
   const hoveredFeatureIdRef = useRef<string | null>(null);
   const hoveredRegionIdRef = useRef<string | null>(null);
   const focusedSubIdRef = useRef<string | null>(null);
@@ -717,7 +720,8 @@ export function MapLibreView({
           paint: {
             'circle-radius': PLACE_MYTH_GLOW_RADIUS as maplibregl.ExpressionSpecification,
             'circle-color': MAP.nebulaSoft,
-            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.04, 6, 0.09, 9, 0.14],
+            // Hidden at basin overview, fading in only as you zoom into a region.
+            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 5.5, 0, 7.5, 0.1, 9, 0.14],
             'circle-blur': 0.4,
           },
         });
@@ -747,7 +751,22 @@ export function MapLibreView({
             'circle-stroke-color':
               kind === 'sanctuary' ? MAP.starOlympian : MAP.nebulaSoft,
             'circle-stroke-width': kind === 'sanctuary' ? 1 : 0.75,
-            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.5, 7, 0.82],
+            // The visible dot is the stroke ring — gate ITS opacity too, and hide the
+            // whole marker at overview so it fades in only when you zoom into a region.
+            'circle-stroke-opacity': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              3,
+              0,
+              5.5,
+              0,
+              7.5,
+              0.78,
+              9,
+              0.9,
+            ],
+            'circle-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0, 5.5, 0, 7.5, 0.72, 9, 0.85],
           },
         });
 
@@ -763,7 +782,8 @@ export function MapLibreView({
     (map: MaplibreMap) => {
       if (map.getSource('cities')) return;
 
-      map.addSource('cities', { type: 'geojson', data: cityData });
+      // promoteId so the string city id becomes the feature id for setFeatureState.
+      map.addSource('cities', { type: 'geojson', data: cityData, promoteId: 'id' });
 
       map.addLayer({
         id: 'cities-glow',
@@ -771,7 +791,12 @@ export function MapLibreView({
         source: 'cities',
         paint: {
           'circle-radius': CITY_GLOW_RADIUS as maplibregl.ExpressionSpecification,
-          'circle-color': MAP.nebulaViolet,
+          'circle-color': [
+            'case',
+            ['boolean', ['feature-state', 'selected'], false],
+            MAP.starOlympian,
+            MAP.nebulaViolet,
+          ],
           'circle-opacity': CITY_GLOW_OPACITY as maplibregl.ExpressionSpecification,
           'circle-blur': 0.35,
         },
@@ -795,8 +820,16 @@ export function MapLibreView({
         paint: {
           'circle-radius': CITY_CORE_RADIUS as maplibregl.ExpressionSpecification,
           'circle-color': MAP.cosmos,
-          'circle-stroke-color': MAP.nebulaCyan,
+          'circle-stroke-color': [
+            'case',
+            ['boolean', ['feature-state', 'selected'], false],
+            MAP.starOlympian,
+            MAP.nebulaCyan,
+          ],
           'circle-stroke-width': CITY_CORE_STROKE as maplibregl.ExpressionSpecification,
+          // The visible "blue dot" is the cyan stroke ring — gate ITS opacity too
+          // (circle-opacity only fades the dark fill), or minor dots never disappear.
+          'circle-stroke-opacity': CITY_CORE_OPACITY as maplibregl.ExpressionSpecification,
           'circle-opacity': CITY_CORE_OPACITY as maplibregl.ExpressionSpecification,
         },
       });
@@ -989,13 +1022,18 @@ export function MapLibreView({
 
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !mapReady || !map.getLayer('cities-core')) return;
-    const stroke = selectedCityId ? MAP.starOlympian : MAP.nebulaCyan;
-    const glow = selectedCityId ? MAP.starOlympian : MAP.nebulaViolet;
-    map.setPaintProperty('cities-core', 'circle-stroke-color', stroke);
-    map.setPaintProperty('cities-core', 'circle-stroke-width', selectedCityId ? 1.4 : CITY_CORE_STROKE);
-    map.setPaintProperty('cities-core', 'circle-opacity', selectedCityId ? 1 : CITY_CORE_OPACITY);
-    map.setPaintProperty('cities-glow', 'circle-color', glow);
+    if (!map || !mapReady || !map.getSource('cities')) return;
+    // Only the clicked city carries the `selected` feature-state; the city layers
+    // read it (gold stroke/glow, full opacity) per-feature, so no whole-layer repaint
+    // turns every city gold. The zoom curves keep ['zoom'] at their top level.
+    const prev = selectedCityStateRef.current;
+    if (prev && prev !== selectedCityId) {
+      map.setFeatureState({ source: 'cities', id: prev }, { selected: false });
+    }
+    if (selectedCityId) {
+      map.setFeatureState({ source: 'cities', id: selectedCityId }, { selected: true });
+    }
+    selectedCityStateRef.current = selectedCityId;
   }, [selectedCityId, mapReady]);
 
   useEffect(() => {
@@ -1157,6 +1195,15 @@ export function MapLibreView({
           rel="noopener noreferrer"
         >
           Natural Earth
+        </a>
+        {' · Rivers: '}
+        <a
+          href="https://www.openstreetmap.org/copyright"
+          className="pointer-events-auto underline decoration-aether-faint/40 hover:text-aether-muted"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          © OpenStreetMap contributors
         </a>
       </p>
     </div>

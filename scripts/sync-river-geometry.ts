@@ -429,19 +429,10 @@ function buildOsmRiverLine(
   return buildOsmRiverFromFiles(file, bbox, anchor, mergeKm, maxPts, tagFilter);
 }
 
-const NILUS_TAG = (w: OvertureWay) =>
-  /النيل|نهر النيل|Nile/i.test(JSON.stringify(w.tags ?? {}));
-const EUPHRATES_TAG = (w: OvertureWay) =>
-  /euphrates|firat|fırat|فرات/i.test(JSON.stringify(w.tags ?? {}));
 const TIGRIS_TAG = (w: OvertureWay) => {
   const tags = JSON.stringify(w.tags ?? {});
   if (/euphrates|firat|fırat|فرات/i.test(tags)) return false;
   return /dicle|tigris|دجلة/i.test(tags);
-};
-const JORDAN_TAG = (w: OvertureWay) => {
-  const tags = JSON.stringify(w.tags ?? {});
-  if (/yarmouk|ירמוכ|يارموك/i.test(tags)) return false;
-  return /jordan|ירדן|أردن|ירדן/i.test(tags);
 };
 
 function osmRiver(
@@ -940,17 +931,19 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
     buildOsmRiverLine('maeander.json', MAEANDER_OSM_BBOX, ANCHORS.maeander) ??
     neRiverNamed('Byk Menderes', MAEANDER_OSM_BBOX),
   nilus: () => {
-    const files = ['nilus-upstream.json', 'nilus-delta.json'];
-    const osm = buildOsmRiverFromFiles(files, NILUS_OSM_BBOX, ANCHORS.nilus, 22, 700, NILUS_TAG);
+    // Main stem (نهر النيل) plus the Rosetta branch (فرع رشيد) carrying it through the
+    // delta to the Mediterranean. The distributaries have their own names, so no
+    // NILUS_TAG filter; mergeKm 8 bridges the apex split so the river reaches the sea.
+    const osm = buildOsmRiverFromFiles(
+      ['nilus-upstream.json', 'nilus-delta.json'],
+      NILUS_OSM_BBOX,
+      ANCHORS.nilus,
+      18,
+      700,
+    );
+    if (osm) return osm;
     const ne = neRiverNamed('Nile', NILUS_OSM_BBOX);
-    if (osm && ne && lineLengthKm(osm) < lineLengthKm(ne) * 0.55) {
-      const merged = buildStemWithDelta(ne, osm, 520, 180, 18);
-      if (merged && minDistToPoint(merged, ANCHORS.nilus.mouth!) <= (ANCHORS.nilus.mouthMaxDistKm ?? 6)) {
-        return decimate(merged, 700);
-      }
-      return decimate(ne, 700);
-    }
-    return osm ?? (ne ? decimate(ne, 700) : null);
+    return ne ? decimate(ne, 700) : null;
   },
   scamander: () => {
     const line = osmTroyScamander();
@@ -978,14 +971,31 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
         ANCHORS['asopus-boeotia'].mouthMaxDistKm!,
       ),
     ),
-  'cephissus-attica': () =>
-    osmFromAutoCache('cephissus-attica', ANCHORS['cephissus-attica'], () =>
-      extendToMouth(
-        chaikinSmooth(CEPHISSUS_ATTICA_STATIONS, 2),
-        ANCHORS['cephissus-attica'].mouth!,
-        ANCHORS['cephissus-attica'].mouthMaxDistKm!,
-      ),
-    ),
+  'cephissus-attica': () => {
+    // Both Kephisos rivers carry the same OSM name and the wide fetch cached both;
+    // this bbox isolates the Attic one (the Athens basin down to Phaleron).
+    const ways = loadOsm('cephissus-attica.json').filter((w) => {
+      if (w.tags?.name !== 'Κηφισός') return false;
+      return lineInBbox(wayToLine(w), [23.55, 37.85, 23.95, 38.25]);
+    });
+    // No proximity-merge here: the culverted Athens reach has stub tributaries that
+    // a merge would bridge with a straight jog — the single best chain is cleaner.
+    const chains = stitchWays(ways);
+    const best = pickBestChain(chains, ANCHORS['cephissus-attica']);
+    if (best) {
+      const m = ANCHORS['cephissus-attica'].mouth!;
+      const line =
+        minDistToPoint(best, m) <= ANCHORS['cephissus-attica'].mouthMaxDistKm!
+          ? best
+          : extendToMouth(best, m, ANCHORS['cephissus-attica'].mouthMaxDistKm!);
+      return decimate(line, 500);
+    }
+    return extendToMouth(
+      chaikinSmooth(CEPHISSUS_ATTICA_STATIONS, 2),
+      ANCHORS['cephissus-attica'].mouth!,
+      ANCHORS['cephissus-attica'].mouthMaxDistKm!,
+    );
+  },
   spercheius: () =>
     osmFromAutoCache('spercheius', ANCHORS.spercheius, () =>
       extendToMouth(
@@ -1030,14 +1040,33 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
         ANCHORS.cayster.mouthMaxDistKm!,
       ),
     ),
-  'cephissus-boeotia': () =>
-    osmFromAutoCache('cephissus-boeotia', ANCHORS['cephissus-boeotia'], () =>
-      extendToMouth(
-        chaikinSmooth(CEPHISSUS_BOEOTIA_STATIONS, 2),
-        ANCHORS['cephissus-boeotia'].mouth!,
-        ANCHORS['cephissus-boeotia'].mouthMaxDistKm!,
-      ),
-    ),
+  'cephissus-boeotia': () => {
+    // Isolate the Boeotian Kephisos (the cache holds both) and stop at the Copais
+    // basin edge: the mythic river fed Lake Copais, and the dead-straight channels
+    // east of ~23.07 are modern drainage across the drained lakebed, not the river.
+    const ways = loadOsm('cephissus-boeotia.json').filter((w) => {
+      if (w.tags?.name !== 'Κηφισός') return false;
+      return lineInBbox(wayToLine(w), [22.4, 38.3, 23.07, 38.75]);
+    });
+    const chains = mergeProximityChains(stitchWays(ways), 6);
+    const best = pickBestChain(chains, ANCHORS['cephissus-boeotia']);
+    if (best) {
+      // Clip the geometry (not just whole ways) at the basin edge, so the straight
+      // drainage canals that straddle the bbox boundary are cut at the longitude.
+      const clipped = clipLineToBbox(best, [22.4, 38.3, 23.05, 38.75]);
+      const m = ANCHORS['cephissus-boeotia'].mouth!;
+      const line =
+        minDistToPoint(clipped, m) <= ANCHORS['cephissus-boeotia'].mouthMaxDistKm!
+          ? clipped
+          : extendToMouth(clipped, m, ANCHORS['cephissus-boeotia'].mouthMaxDistKm!);
+      return decimate(line, 500);
+    }
+    return extendToMouth(
+      chaikinSmooth(CEPHISSUS_BOEOTIA_STATIONS, 2),
+      ANCHORS['cephissus-boeotia'].mouth!,
+      ANCHORS['cephissus-boeotia'].mouthMaxDistKm!,
+    );
+  },
   pleistos: () =>
     osmFromAutoCache('pleistos', ANCHORS.pleistos, () =>
       extendToMouth(
@@ -1095,14 +1124,31 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       ANCHORS.sangarius.mouth!,
       ANCHORS.sangarius.mouthMaxDistKm!,
     ),
-  'ladon-arcadia': () =>
-    osmFromAutoCache('ladon-arcadia', ANCHORS['ladon-arcadia'], () =>
-      extendToMouth(
-        chaikinSmooth(LADON_ARCADIA_STATIONS, 2),
-        ANCHORS['ladon-arcadia'].mouth!,
-        ANCHORS['ladon-arcadia'].mouthMaxDistKm!,
-      ),
-    ),
+  'ladon-arcadia': () => {
+    // OSM splits Λάδωνας into an upstream stem and a downstream stem with a ~7 km
+    // gap across the Ladon reservoir; bridge it (mergeKm 8) so the whole river is
+    // traced from source to the Alpheus confluence — no auto-cache single-chain
+    // pick that strands the lower half and draws a straight tail to a stray mouth.
+    const ways = loadOsm('ladon-arcadia.json').filter((w) => {
+      if (w.tags?.name !== 'Λάδωνας') return false;
+      return lineInBbox(wayToLine(w), [21.78, 37.55, 22.25, 37.88]);
+    });
+    const chains = mergeProximityChains(stitchWays(ways), 8);
+    const best = pickBestChain(chains, ANCHORS['ladon-arcadia']);
+    if (best) {
+      const m = ANCHORS['ladon-arcadia'].mouth!;
+      const line =
+        minDistToPoint(best, m) <= ANCHORS['ladon-arcadia'].mouthMaxDistKm!
+          ? best
+          : extendToMouth(best, m, ANCHORS['ladon-arcadia'].mouthMaxDistKm!);
+      return decimate(line, 500);
+    }
+    return extendToMouth(
+      chaikinSmooth(LADON_ARCADIA_STATIONS, 2),
+      ANCHORS['ladon-arcadia'].mouth!,
+      ANCHORS['ladon-arcadia'].mouthMaxDistKm!,
+    );
+  },
   'asopus-phlias': () =>
     osmFromAutoCache('asopus-phlias', ANCHORS['asopus-phlias'], () =>
       extendToMouth(
@@ -1143,39 +1189,19 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       chaikinSmooth(STYX_ARCADIA_STATIONS, 1),
     ),
   euphrates: () => {
-    const iraq = buildOsmRiverFromFiles(
-      'euphrates-iraq.json',
-      EUPHRATES_OSM_BBOX,
-      ANCHORS.euphrates,
-      12,
-      800,
-      EUPHRATES_TAG,
-    );
-    const turkey = buildOsmChainFromFiles(
-      'euphrates-turkey.json',
-      EUPHRATES_OSM_BBOX,
-      12,
-      EUPHRATES_TAG,
-    );
-    let line = iraq;
-    if (turkey && line) {
-      const bridged = mergeProximityChains([line, turkey], 25);
-      const best = pickBestChain(bridged, ANCHORS.euphrates);
-      if (best && minDistToPoint(best, ANCHORS.euphrates.mouth!) <= (ANCHORS.euphrates.mouthMaxDistKm ?? 4) + 2) {
-        line = decimate(best, 800);
-      }
-    }
-    if (!line) {
-      const ne = neRiverNamed('Euphrates', EUPHRATES_OSM_BBOX);
-      line = ne
-        ? decimate(ne, 800)
-        : extendToMouth(
-            chaikinSmooth(EUPHRATES_STATIONS, 2),
-            ANCHORS.euphrates.mouth!,
-            ANCHORS.euphrates.mouthMaxDistKm!,
-          );
-    }
-    return line;
+    // One comprehensive name:en="Euphrates" extract (Turkey → Persian Gulf) stitches
+    // into a single ~1440 km chain, so a small mergeKm bridges only tiny gaps — no
+    // giant straight jump across the previously-missing Syrian middle.
+    const osm = buildOsmRiverFromFiles('euphrates.json', EUPHRATES_OSM_BBOX, ANCHORS.euphrates, 4, 800);
+    if (osm) return osm;
+    const ne = neRiverNamed('Euphrates', EUPHRATES_OSM_BBOX);
+    return ne
+      ? decimate(ne, 800)
+      : extendToMouth(
+          chaikinSmooth(EUPHRATES_STATIONS, 2),
+          ANCHORS.euphrates.mouth!,
+          ANCHORS.euphrates.mouthMaxDistKm!,
+        );
   },
   tigris: () => {
     const lower = buildOsmRiverFromFiles(
@@ -1213,7 +1239,9 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
     return line;
   },
   jordan: () =>
-    buildOsmRiverFromFiles('jordan.json', JORDAN_OSM_BBOX, ANCHORS.jordan, 24, 500, JORDAN_TAG) ??
+    // Comprehensive name:en~"Jordan" extract stitches into one ~257 km chain
+    // (Galilee → Dead Sea); small mergeKm keeps tributaries out of the main stem.
+    buildOsmRiverFromFiles('jordan.json', JORDAN_OSM_BBOX, ANCHORS.jordan, 5, 500) ??
     extendToMouth(
       chaikinSmooth(JORDAN_STATIONS, 2),
       ANCHORS.jordan.mouth!,

@@ -67,14 +67,18 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
   nilus: {
     point: [31.2, 30.0],
     maxDistKm: 80,
-    mouth: [31.237, 30.124],
+    // Rosetta (Rashid) mouth on the Mediterranean — the old [31.237,30.124] sat at
+    // Cairo (the delta apex), so the river stopped inland and never reached the sea.
+    mouth: [30.371, 31.459],
     mouthMaxDistKm: 6,
   },
   inachus: {
     point: [22.7204, 37.631],
     maxDistKm: 10,
-    mouth: [22.785, 37.525],
-    mouthMaxDistKm: 6,
+    // Argive plain end near Argos where the OSM trace stops; the old [22.785,37.525]
+    // sat out in the Argolic Gulf, so the line was dragged into a straight sea-tail.
+    mouth: [22.745, 37.572],
+    mouthMaxDistKm: 4,
   },
   'asopus-boeotia': {
     point: [23.3177, 38.3199],
@@ -85,7 +89,9 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
   'cephissus-attica': {
     point: [23.7239, 37.9716],
     maxDistKm: 8,
-    mouth: [23.61, 37.935],
+    // Phaleron end of the Athens reach — the OSM trace stops here, so no tail is
+    // dragged west to the stray [23.61,37.935] the old anchor used.
+    mouth: [23.665, 37.942],
     mouthMaxDistKm: 5,
   },
   spercheius: {
@@ -109,17 +115,24 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
   'cephissus-boeotia': {
     point: [22.95, 38.45],
     maxDistKm: 12,
-    mouth: [23.08, 38.42],
-    mouthMaxDistKm: 8,
+    // Edge of the Copais basin where the river fed the (now-drained) lake; the
+    // builder's bbox stops before the straight modern drainage canals, so the
+    // trace ends here naturally rather than backtracking from the eastern sinks.
+    mouth: [23.05, 38.382],
+    mouthMaxDistKm: 7,
   },
   pleistos: {
-    point: [22.493, 38.482],
+    // Below Delphi, on the Crisaean-plain reach OSM traces; the old mouth
+    // [22.38,38.32] sat out in the Gulf of Corinth — the real mouth is the shore
+    // at Kirra/Itea, where the OSM course ends.
+    point: [22.435, 38.474],
     maxDistKm: 8,
-    mouth: [22.38, 38.32],
-    mouthMaxDistKm: 6,
+    mouth: [22.437, 38.443],
+    mouthMaxDistKm: 4,
   },
   strymon: {
-    point: [23.85, 41.08],
+    // On the mid-river (the old [23.85,41.08] sat ~18 km east of the course).
+    point: [23.2, 41.2],
     maxDistKm: 20,
     mouth: [23.88, 40.78],
     mouthMaxDistKm: 12,
@@ -149,15 +162,21 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
     mouthMaxDistKm: 4,
   },
   'ladon-arcadia': {
-    point: [22.48, 37.88],
-    maxDistKm: 12,
-    mouth: [22.05, 37.85],
-    mouthMaxDistKm: 8,
+    // Mid-course marker on the traced river (the old [22.48,37.88] sat ~26 km east
+    // of the OSM course); mouth = the real Ladon→Alpheus confluence, which the OSM
+    // trace reaches, so no straight tail is drawn.
+    point: [22.0, 37.74],
+    maxDistKm: 14,
+    mouth: [21.8205, 37.5926],
+    mouthMaxDistKm: 4,
   },
   'asopus-phlias': {
     point: [22.55, 37.95],
     maxDistKm: 12,
-    mouth: [22.779, 37.937],
+    // The Sicyonian/Phliasian Asopus runs NORTH to the Gulf of Corinth; the old
+    // mouth [22.779,37.937] sat south of the OSM end, so the trace was dragged
+    // backward into a straight tail. The real mouth is the gulf shore by Sicyon.
+    mouth: [22.769, 37.996],
     mouthMaxDistKm: 4,
   },
   orontes: {
@@ -179,8 +198,10 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
   euphrates: {
     point: [44.0, 32.5],
     maxDistKm: 40,
-    mouth: [44.026, 31.036],
-    mouthMaxDistKm: 4,
+    // Where the OSM "Euphrates" course ends above the Shatt al-Arab marshes; keeps
+    // the trace from being dragged on to a stray point with a straight tail.
+    mouth: [44.484, 31.711],
+    mouthMaxDistKm: 5,
   },
   tigris: {
     point: [44.36, 33.31],
@@ -191,8 +212,9 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
   jordan: {
     point: [35.55, 32.88],
     maxDistKm: 8,
-    mouth: [35.551, 31.593],
-    mouthMaxDistKm: 4,
+    // Dead Sea end of the OSM Jordan course (the old [35.551,31.593] sat south of it).
+    mouth: [35.561, 31.759],
+    mouthMaxDistKm: 5,
   },
   araxes: {
     point: [43.5, 40.8],
@@ -201,7 +223,8 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
     mouthMaxDistKm: 4,
   },
   eridanus: {
-    point: [11.9, 45.2],
+    // Mid-Po, on the traced course (the old [11.9,45.2] floated ~24 km north).
+    point: [11.88, 45.03],
     maxDistKm: 15,
     mouth: [12.281, 45.086],
     mouthMaxDistKm: 4,
@@ -277,7 +300,7 @@ export const OSM_NAME_ALIASES: Record<string, string[]> = {
   maeander: ['Μαίανδρος', 'Maeander', 'Büyük Menderes', 'Buyuk Menderes', 'Büyük Menderes Nehri'],
   cayster: ['Κάυστρος', 'Cayster', 'Küçük Menderes'],
   'cephissus-boeotia': ['Κηφισός', 'Kifissos', 'Cephissus'],
-  pleistos: ['Πλειστός', 'Pleistos', 'Pleistus'],
+  pleistos: ['Πλείστος', 'Πλειστός', 'Pleistos', 'Pleistus'],
   strymon: ['Στρυμόνας', 'Στρυμών', 'Strymon', 'Struma', 'Струма'],
   halys: ['Άλυς', 'Halys', 'Kızılırmak', 'Kizilirmak'],
   enipeus: ['Ενιπέας', 'Ενιπεύς', 'Enipeus', 'Enipefs'],

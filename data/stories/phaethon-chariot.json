@@ -34,14 +34,23 @@
       "text": "The Sun, veiled in grief, refused to drive for a day until the gods entreated him. Phaethon's sisters, the Heliades, sought his body on the Eridanus and were changed to poplar trees that weep amber tears into the stream — a river the poets placed where Phaethon fell, though geographers disputed its earthly course.",
       "sources": ["ovid", "apollonius"],
       "citation": "Ov. Met. 2.330–400; Ap. Rhod. 4.592–598"
+    },
+    {
+      "title": "The swan of Liguria",
+      "text": "By the same banks Cycnus, king of the Ligurians and Phaethon's kinsman, bound to the lost youth by love, left his cities to mourn among the new-made poplars. As he wept his voice thinned into song, white feathers hid his hair, a long neck stretched from his breast, and he rose a swan — and ever after, distrusting the heavens and Jove's unjust fire, he kept to the still pools and rivers, loving the water that is the enemy of flame.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 2.367–380"
     }
   ],
   "cast": [
-    { "name": "Phaethon", "role": "Youth who drove the Sun's chariot to his ruin" },
-    { "name": "Clymene", "role": "Mother who sent him to Phoebus for proof" },
+    { "id": "phaethon", "name": "Phaethon", "role": "Youth who drove the Sun's chariot to his ruin" },
+    { "id": "clymene", "name": "Clymene", "role": "Mother who sent him to Phoebus for proof" },
+    { "id": "merops-ethiopia", "name": "Merops", "role": "Ethiopian king, Clymene's husband and Phaethon's reputed father" },
     { "id": "helios", "name": "Helios", "role": "The Sun, Phaethon's father" },
     { "id": "zeus", "name": "Zeus", "role": "Jove, who struck the chariot from the sky" },
-    { "name": "Epaphus", "role": "Io's son, whose taunts provoked the quest" }
+    { "id": "epaphus", "name": "Epaphus", "role": "Io's son, whose taunts provoked the quest" },
+    { "id": "heliades", "name": "The Heliades", "role": "Phaethon's sisters, who mourned him into amber-weeping poplars" },
+    { "id": "cycnus-liguria", "name": "Cycnus", "role": "Ligurian kinsman who grieved him and became a swan" }
   ],
   "places": [
     { "name": "The palace of the Sun", "role": "Where Clymene sent Phaethon for proof of parentage" },

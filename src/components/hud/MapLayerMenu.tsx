@@ -42,9 +42,9 @@ export function MapLayerMenu() {
   }, [open]);
 
   const toggle = (id: MapLayerId) => {
-    const next = { ...mapLayers, [id]: !mapLayers[id] };
-    const anyOn = MAP_LAYER_IDS.some((key) => next[key]);
-    setMapLayers(anyOn ? next : { ...DEFAULT_MAP_LAYERS, [id]: true });
+    // Plain toggle — turning the last layer off leaves the map bare (it used to snap
+    // everything back on, which read as a bug).
+    setMapLayers({ ...mapLayers, [id]: !mapLayers[id] });
   };
 
   return (
