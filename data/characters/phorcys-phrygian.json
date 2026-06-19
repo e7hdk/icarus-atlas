@@ -1,0 +1,27 @@
+{
+  "id": "phorcys-phrygian",
+  "name": "Phorcys",
+  "greekName": "Phorcys (Φόρκυς)",
+  "type": "hero",
+  "domains": ["Phrygian command", "Ascania"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Phrygians from far-off Ascania beside godlike Ascanius — a mortal namesake of the sea-god Phorcys, whom Telamonian Ajax smote upon the belly as he bestrode Hippothous in the fight over Patroclus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875, 17.275–315; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Phorcys and Ascanius lead the Phrygians from Ascania, eager to fight in the press of battle. Apollodorus makes them sons of Aretaon among the allies who joined the Trojans.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    },
+    {
+      "text": "When the battle raged about Patroclus' body, Hector heartened Phorcys among the allied captains; later Ajax smote wise-hearted Phorcys, son of Phaenops, full upon the belly as he bestrode Hippothous, and the bronze let forth the bowels through his corselet.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245, 17.275–315"
+    }
+  ]
+}

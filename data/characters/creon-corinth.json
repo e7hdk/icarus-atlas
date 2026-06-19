@@ -1,0 +1,48 @@
+{
+  "id": "creon-corinth",
+  "name": "Creon",
+  "greekName": "Kreōn (Κρέων)",
+  "romanName": "Creon",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Corinth",
+    "father of Glauce",
+    "Jason's father-in-law"
+  ],
+  "summary": [
+    {
+      "text": "King of Corinth who, after Jason and Medea had lived happily in the city for ten years, betrothed his daughter Glauce to the Argonaut captain; when Medea sent the bride a poisoned robe, Glauce and Creon were consumed together in fierce fire.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Fabulae 25"
+    },
+    {
+      "text": "Not to be confused with Creon son of Menoeceus, regent and king of Thebes in the Oedipus saga — a different ruler sharing only the name; Hyginus conflates the Corinthian king with the Theban line, calling him son of Menoeceus, but Apollodorus knows him only as king of Corinth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.28, 3.7.1; Fabulae 25, 72"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes him the Corinthian king at the turning of Jason's fortune: after Pelias and Iolcus, Jason came to Corinth and lived there happily with Medea for ten years until Creon betrothed his daughter Glauce to him. Jason married the bride and divorced Medea — and when Medea sent Glauce the poisoned robe, the king perished in the same consuming fire as his daughter.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28"
+    },
+    {
+      "text": "Hyginus tells the same marriage from the king's side: Creon, whom he calls son of Menoeceus and king of Corinth, gave his younger daughter to Jason when the hero scorned the foreign sorceress who had been his benefactress. Medea answered with a drugged golden crown sent by her sons; when Creusa — Hyginus' name for the bride — took it, she and Jason and Creon were burned, and Medea slew Mermerus and Pheres before fleeing.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 25"
+    },
+    {
+      "text": "Apollodorus elsewhere knows the Corinthian king as a foster-father in another tale: Alcmaeon brought the infants Amphilochus and Tisiphone to Creon of Corinth to be reared — the same royal house, distinct from the Theban Creon's tragedy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

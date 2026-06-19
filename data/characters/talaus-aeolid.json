@@ -1,0 +1,71 @@
+{
+  "id": "talaus-aeolid",
+  "name": "Talaus",
+  "greekName": "Ταλαός",
+  "romanName": "Talaus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Biantid kingship",
+    "Argive royalty",
+    "Aeolid descent"
+  ],
+  "summary": [
+    {
+      "text": "Son of Bias and Pero and king in the Biantid succession at Argos, Talaus married Lysimache and fathered Adrastus — the line from which the Seven against Thebes and the Epigoni would come.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13; Description of Greece 2.18.4"
+    },
+    {
+      "text": "Apollonius counts him among the Argonauts, sailing with his brothers Areius and Leodocus — sons whom Pero bore to Bias after Melampus won her from Neleus.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 1.118, 2.60"
+    }
+  ],
+  "story": [
+    {
+      "text": "Talaus was the child for whose sake Melampus endured bondage among the cattle of Phylacus. When Bias could not drive off the herds Neleus demanded as Pero's bride-price, his brother Melampus stole them, and the seer gave Pero to Bias; of that marriage Apollodorus names Talaus as the son.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.12–13; Description of Greece 4.36.3"
+    },
+    {
+      "text": "He married Lysimache, daughter of Abas, son of Melampus, and begot Adrastus. In the same genealogical passage Apollodorus also attaches to Talaus' house the names Pronax, Mecisteus, Aristomachus, and Eriphyle — the kindred who would marry, prophesy, and fall at Thebes — though the Arcadian Parthenopaeus who marched among the Seven belongs to a separate parentage in the same author's later books.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.3"
+    },
+    {
+      "text": "Homer knows the house through a later generation: among Diomedes' Argives sails Euryalus, son of Mecisteus, son of Talaus — a warrior whose grandfather had once come to Thebes for the burial of Oedipus and worsted all the sons of Cadmus in the funeral games.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.565–570, 23.678–680"
+    },
+    {
+      "text": "Pausanias places Talaus in the Biantid roll that ruled Argos after Melampus and Bias divided the kingdom: five kings descended from Bias for four generations down to Cyanippus, with Adrastus the best remembered name in the chain.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "homer"
+      ]
+    }
+  ]
+}

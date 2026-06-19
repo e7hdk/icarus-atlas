@@ -1,0 +1,41 @@
+{
+  "id": "eurynomus-ithaca",
+  "name": "Eurynomus",
+  "greekName": "Eurynomos (Εὐρύνομος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "brother of Antiphus"
+  ],
+  "summary": [
+    {
+      "text": "One of the brothers of Antiphus — the warrior the Cyclops slew in his cave — who himself consorted with Penelope's suitors while two other brothers kept their father's farm; among the last and bravest wooers when the bow had already slain the rest.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 2.1–35; 22.210–290; Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Telemachus, opening the assembly on Ithaca, mourned Antiphus the warrior, whom the savage Cyclops had slain in his cave. Three brothers remained: Eurynomus consorted with the wooers, and two ever kept their father's farm — yet the prince could not forget the one lost.",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.1–35"
+    },
+    {
+      "text": "In the last battle of the hall he stood with Agelaus, Amphimedon, Demoptolemus, Peisander and wise Polybus when the rest had fallen to the bow — and fought on until Odysseus and his men prevailed.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.210–290"
+    },
+    {
+      "text": "Apollodorus names Eurynomus among the twelve suitors from Ithaca itself.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

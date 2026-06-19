@@ -13,6 +13,8 @@ export function IcarusBrand({ compact = false }: { compact?: boolean }) {
         aria-hidden
         width={32}
         height={32}
+        priority
+        loading="eager"
         className={`${compact ? 'h-7 w-7' : 'h-8 w-8'} object-contain drop-shadow-[0_0_8px_rgba(192,132,252,0.32)]`}
       />
       <span className="hidden sm:inline">

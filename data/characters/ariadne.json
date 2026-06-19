@@ -26,7 +26,32 @@
     {
       "text": "Her ultimate fate is famously disputed. According to Homer, she never reached Athens because Artemis killed her on the island of Dia at the testimony of Dionysus. In the more romantic tradition of Ovid and Hesiod, Theseus cruelly abandoned her while she slept on Dia, but she was soon discovered by Dionysus, who fell in love with her, married her, and made her immortal, placing her bridal crown among the stars.",
       "sources": ["homer", "hesiod", "apollodorus", "hyginus", "ovid"],
-      "citation": "Odyssey 11.321; Theogony 947; Epitome 1.9; Fabulae 43; Metamorphoses 8.176"
+      "citation": "Odyssey 11.321; Theogony 947; Epitome 1.9; Fabulae 43; Metamorphoses 8.176",
+      "topic": "ariadne-fate"
+    },
+    {
+      "text": "Apollodorus carries the marriage into genealogy: on Lemnos Dionysus begat on Ariadne Thoas, Staphylus, Oenopion, and Peparethus. Hyginus in his Astronomica makes the Crown her wedding gift from Venus and the Horae when she wed Liber on Dia — the constellation set between the Kneeler and the Serpent-Holder in Ovid's telling, its gems turned to fires in the sky.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Epitome 1.9; Metamorphoses 8.176–182; Astronomica 2.5.1",
+      "topic": "ariadne-fate"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "gortyn",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "naxos",
+      "sources": ["homer", "apollodorus", "ovid", "hesiod"]
+    },
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus"]
     }
   ]
 }

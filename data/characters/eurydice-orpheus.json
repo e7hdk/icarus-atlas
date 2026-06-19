@@ -1,0 +1,45 @@
+{
+  "id": "eurydice-orpheus",
+  "name": "Eurydice",
+  "greekName": "Eurydikē (Εὐρυδίκη)",
+  "romanName": "Eurydice",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "bride of Orpheus",
+    "the serpent's victim",
+    "the twice-lost wife"
+  ],
+  "summary": [
+    {
+      "text": "Wife of the Thracian bard Orpheus, bitten by a serpent on their wedding day in Ciconian land; he descended to Hades and won her back, but one backward glance sent her down forever — until his shade at last walked with her among the blessed fields.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 1.3.2; Metamorphoses 10.1–95, 11.99–103; Fabulae 251"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells the bare horror: when Orpheus' wife Eurydice died, bitten by a snake, the bard went down to Hades fain to bring her up. Pluto promised she would follow if Orpheus did not turn until he reached his own house; he disobeyed, beheld his wife, and she turned back — lost a second time to the dead.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.2",
+      "topic": "eurydice-return-condition"
+    },
+    {
+      "text": "Ovid sets the wedding in Ciconian land with ill omens: Hymen's torch smoked and sputtered. While the bride wandered with the Naiads through the grass, a serpent struck venom into her soft ankle and she died. Orpheus filled heaven with lament and resolved that the world below should know his grief as well.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.1–11"
+    },
+    {
+      "text": "In the underworld she followed halting from her wound up the steep dark path toward the light. Ovid sets Pluto's test at the threshold of earth; fearing to lose her, Orpheus looked back — and instantly she slipped away. He grasped only yielding air; her last word was farewell, and she fell again to Hades.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.77–95",
+      "topic": "eurydice-return-condition"
+    },
+    {
+      "text": "When the Ciconian women tore Orpheus apart, his head and harp floated down the Hebrus still murmuring her name. Ovid reunites their shades at last among the blessed fields — side by side, or following when she led, or going before with a safe backward glance — where no living test could part them again.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.66–99, 11.99–103"
+    }
+  ]
+}

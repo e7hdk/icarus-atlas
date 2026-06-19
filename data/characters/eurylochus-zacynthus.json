@@ -1,0 +1,40 @@
+{
+  "id": "eurylochus-zacynthus",
+  "name": "Eurylochus",
+  "greekName": "Eurylochos (Εὐρύλοχος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "First named among the forty-four suitors from wooded Zacynthus in Apollodorus' island catalogue — wholly distinct from Eurylochus, Odysseus' companion who bound him to the mast when the Sirens sang.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Odyssey 12.165–200"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus opens the Zacynthian list with Eurylochus among the forty-four wooers who came from the island to devour Odysseus' house while the king was thought dead at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    },
+    {
+      "text": "Homer's Eurylochus is a very different man — second in command among Odysseus' comrades, who urged landing on the Sun-god's cattle and helped bind his captain when the Sirens' song would have drawn him overboard. The Epitome name is a homonym hazard only.",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.165–395"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

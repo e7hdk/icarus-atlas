@@ -1,0 +1,32 @@
+{
+  "id": "hippocoon-thrace",
+  "name": "Hippocoön",
+  "greekName": "Hippokoōn (Ἱπποκόων)",
+  "type": "mortal",
+  "domains": ["Thrace", "kinsman of Rhesus", "the night raid"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A noble kinsman of the Thracian king Rhesus, whom Athene roused in a dream when Odysseus and Diomedes stole the snow-white horses — the first man to discover the slaughter in the sleeping camp.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.505–535"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Diomedes had cut down Rhesus and the twelve Thracians beside him, and Odysseus was driving off the king's team toward the ships, Athene in wrath against the goddess who attended the son of Tydeus sent a baleful dream into the Trojan host. She roused Hippocoön, a counsellor of the Thracians and noble kinsman of Rhesus.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.505–520"
+    },
+    {
+      "text": "He leapt up from sleep and saw the place empty where the swift horses had stood, and the men gasping amid gruesome streams of blood. He uttered a groan and called by name upon his dear comrade; from the Trojans arose a din as they came together, and they marvelled at the deeds of the terrible foes who had gone back to the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.520–535"
+    },
+    {
+      "text": "He is not Hippocoon the Spartan, son of Oebalus, who usurped Tyndareus' throne — only the Thracian kinsman who wakes to the ruin of Rhesus' camp.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 10.505–535; Bibliotheca 3.10.5"
+    }
+  ]
+}

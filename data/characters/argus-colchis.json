@@ -1,0 +1,54 @@
+{
+  "id": "argus-colchis",
+  "name": "Argus",
+  "greekName": "Argos (Ἄργος)",
+  "romanName": "Argus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phrixus",
+    "grandson of Aeetes",
+    "the return to Orchomenus",
+    "mediator at Colchis"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phrixus and Chalciope at Aea, who with his brothers sailed from Colchis toward Orchomenus to claim Athamas' inheritance and met the Argonauts at Circe's isle — then returned to his grandfather Aeetes' court with Jason, begged his mother to win Medea's aid, and fled Colchis when the theft was discovered.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1090–1145, 3.194, 3.609–724, 4.11"
+    },
+    {
+      "text": "Not to be confused with Argus son of Arestor, whom Athena guided in building the Argo — a different man in the Thessalian company, sharing only the name.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.105, 1.224, 2.1140"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names him among the four sons Phrixus begot on Chalciope at Colchis — Argus, Melas, Phrontis, and Cytisorus — in the house where the golden fleece already hung in Aeetes' grove of Ares.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "Apollonius makes him spokesman for the brothers: faring from Cytaean Aeetes on a Colchian ship toward Orchomenus to win their dead father's wealth, they met the heroes at Circe's isle and told Jason their names — Cytissorus, Phrontis, Melas, and Argus — before joining the quest at Aea.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.1090–1145"
+    },
+    {
+      "text": "When Jason went to treat with Aeetes he took the sons of Phrixus with him; and Argus, going to the palace, besought his mother Chalciope to pray Medea's aid lest Aeetes destroy them together with the strangers — the plea that set Medea's oath in motion.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.167, 3.194, 3.609–724"
+    },
+    {
+      "text": "After Medea won the fleece and all was discovered, she fled with the sons of Phrixus; Argus leapt ashore beside Jason and Phrontis and clasped Medea's knees, begging salvation from Aeetes as the Colchian pursuit closed in.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.11, 4.66"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

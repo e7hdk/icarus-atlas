@@ -2,6 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
+import { loadCities } from '@/features/geo/load';
+import { loadStories } from '@/features/stories/load';
+import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterShell } from '@/components/character/CharacterShell';
 import { PoetsView } from '@/components/character/PoetsView';
 
@@ -12,15 +15,27 @@ export async function generateStaticParams() {
 
 export default async function CharacterPoetsPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const { characters, relations, sources } = await loadAtlasData();
+  const [{ characters, relations, sources }, cities, stories] = await Promise.all([
+    loadAtlasData(),
+    loadCities(),
+    loadStories(),
+  ]);
   const character = characters.find((c) => c.id === id);
   if (!character) notFound();
 
   const culture = await loadCulture(id);
   const teaser = culture?.artworks.slice(0, 3) ?? [];
+  const storyIndex = storiesById(stories);
+  const storyAppearances = storiesFeaturingCharacter(stories, character.id);
 
   return (
-    <CharacterShell character={character} active="poets">
+    <CharacterShell
+      character={character}
+      active="poets"
+      cities={cities}
+      storyAppearances={storyAppearances}
+      storiesById={storyIndex}
+    >
       <PoetsView
         character={character}
         characters={characters}

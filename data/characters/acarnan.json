@@ -1,0 +1,31 @@
+{
+  "id": "acarnan",
+  "name": "Acarnan",
+  "greekName": "Akarnan (Ἀκαρνάν)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Acarnania",
+    "son of Alcmaeon"
+  ],
+  "summary": [
+    {
+      "text": "Son of Alcmaeon who with his brother Amphoterus avenged their father's murder, dedicated the cursed necklace at Delphi, and colonized the land west of the Achelous that bears his name.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.6–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Alcmaeon was slain by the sons of Phegeus, Acarnan and Amphoterus killed their father's murderers, went to Psophis and slew Phegeus and his wife, and were saved at Tegea by the city's intervention. Then they carried the necklace and robe to Delphi as Achelous had commanded, journeyed to Epirus, collected settlers, and colonized Acarnania.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6–7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos-amphilochicum",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "antiphus-maeonian",
+  "name": "Antiphus",
+  "greekName": "Antiphus (Ἄντιφος)",
+  "type": "hero",
+  "domains": ["Maeonian command", "Gygaean lake"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Talaemenes and co-captain of the Maeonians beside Mesthles — a namesake of Antiphus son of Thessalus of Cos, but Homer fixes this man among the Maeonians born beneath Tmolas.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Antiphus beside his brother Mesthles at the head of the Maeonians; their mother was the nymph of the Gygaean lake. Apollodorus names both sons of Talaemenes among the allies who joined the Trojans.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    },
+    {
+      "text": "In the rally about Patroclus, Hector heartened Antiphus' brother Mesthles among the captains of the tribes that dwelt round about Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": ["homer"]
+    }
+  ]
+}

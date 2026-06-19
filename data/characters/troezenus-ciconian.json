@@ -1,0 +1,27 @@
+{
+  "id": "troezenus-ciconian",
+  "name": "Troezenus",
+  "greekName": "Troezenos (Τροιζηνός)",
+  "type": "hero",
+  "domains": ["father of Euphemus", "Ciconian house", "son of Ceas"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Euphemus (`euphemus-ciconian`), captain of the Ciconian spearmen — attested by Homer as son of Ceas and by Apollodorus among the allies who joined the Trojans after nine years of siege.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Nestor names Euphemus captain of the Ciconian spearmen, the son of Ceas' son Troezenus, nurtured of Zeus — a parentage Homer fixes in the muster-roll though the poet names Troezenus only through his son.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "Apollodorus counts Euphemus son of Troezenus among the allies who came to join the Trojans. He must be kept distinct from Troezen the city-founder (`pittheus`' brother in later myth) and from the Argonaut Euphemus son of Poseidon.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.34"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "city": "gordion",
+  "reigns": [
+    {
+      "ruler": "Gordius",
+      "characterId": "gordius-phrygia",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.4.5",
+      "note": "Father of Midas; attested only through his son's Phrygian foundations beyond the Sangarius."
+    },
+    {
+      "ruler": "Midas",
+      "characterId": "midas",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 11.130–299; Fabulae 191; Paus. 1.4.5",
+      "note": "Mygdonian or Phrygian king who entertained Silenus and judged the contest on Tmolus."
+    }
+  ]
+}

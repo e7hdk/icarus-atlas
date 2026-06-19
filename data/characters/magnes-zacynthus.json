@@ -1,0 +1,35 @@
+{
+  "id": "magnes-zacynthus",
+  "name": "Magnes",
+  "greekName": "Magnēs (Μάγνης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — distinct from Magnes son of Aeolus, eponym of the Magnesians in Thessaly.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Bibliotheca 1.7.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Magnes among the wooers assigned to Zacynthus, listed after Halius and before Oloetrochus in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

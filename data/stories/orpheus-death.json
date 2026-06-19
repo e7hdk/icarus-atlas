@@ -1,0 +1,56 @@
+{
+  "id": "orpheus-death",
+  "title": "The Death of Orpheus",
+  "greekTitle": "Ὀρφέως θάνατος",
+  "kind": "episode",
+  "parent": "orpheus-cycle",
+  "era": 7.12,
+  "summary": {
+    "text": "The Ciconian women, maddened because Orpheus shunned their love after Eurydice, drowned his lyre with tambourines and tore him apart; his head and harp floated down the Hebrus still singing, and his shade at last walked safely with Eurydice in the fields of the blessed — while Dionysus rooted the murderers into oak.",
+    "sources": ["apollodorus", "ovid"],
+    "citation": "Apollod. 1.3.2; Ov. Met. 11.1–129"
+  },
+  "chapters": [
+    {
+      "title": "Scorn of the maenads",
+      "text": "While Orpheus sang, trees and beasts followed — but Ciconian matrons on a hill saw the bard who had rejected every woman since Eurydice. Stones and spears hurled at him fell harmless before his harmony; only when pipes, horns, tambourines, and Bacchanalian yells drowned his voice did the stones that once obeyed his song run red with Thracian blood. Apollodorus says the Maenads tore him in pieces; Ovid names the women who loved Dionysus and hated the poet's scorn.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 11.1–66; Apollod. 1.3.2"
+    },
+    {
+      "title": "Head and harp",
+      "text": "They slew the harmless bard while his outstretched hands implored mercy — the first and only time his voice persuaded no one. Birds, beasts, and trees mourned; rivers swelled with tears. His torn limbs were scattered; the Hebrus received his head and harp, and the tongue though lifeless murmured Eurydice as the banks replied. Apollo saved the head from a serpent on Lesbos at Methymna and turned the beast to stone.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 11.66–99"
+    },
+    {
+      "title": "Reunion",
+      "text": "The shade of Orpheus descended remembering the regions he had seen before; he found Eurydice among the blessed fields, and they walked side by side — or he followed when she led, or went before and looked back safely at her. At last the lovers whom the upper world had parted were united where no backward glance could harm them.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 11.99–103"
+    },
+    {
+      "title": "Punishment and burial",
+      "text": "Bacchus would not leave the crime unpunished: the Edonian women who had killed his bard sank into the earth, toes rooting to oak as they struggled to flee. Apollodorus adds that Orpheus discovered the mysteries of Dionysus and was buried in Pieria — the land of his song, where the Muse-born minstrel returned when the Maenads' frenzy was done.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.3.2; Ov. Met. 11.103–129"
+    }
+  ],
+  "cast": [
+    { "id": "orpheus", "name": "Orpheus", "role": "Bard torn apart by the maenads" },
+    { "id": "eurydice-orpheus", "name": "Eurydice", "role": "Wife reunited with his shade in the underworld" },
+    { "id": "ciconian-maenads", "name": "The Ciconian Maenads", "role": "Women who tore him apart" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Bacchus, who punished the murderers" },
+    { "id": "apollo", "name": "Apollo", "role": "God who saved the head on Lesbos" }
+  ],
+  "places": [
+    { "name": "Ciconia", "role": "Land of the women who slew him" },
+    { "name": "Hebrus", "role": "River that bore his head and harp to the sea" },
+    { "id": "lesbos", "name": "Lesbos", "role": "Isle where Methymna received his head" },
+    { "name": "Pieria", "role": "Land where Apollodorus says he was buried" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "11.1–129" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.3.2" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "philoetius",
+  "name": "Philoetius",
+  "greekName": "Philoitios (Φιλοίτιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["cowherd of Odysseus", "faithful servant of Ithaca"],
+  "summary": [
+    {
+      "text": "Odysseus' cowherd on Ithaca, who like Eumaeus the swineherd kept faith through twenty years of absence and stood with the returned king when the suitors were slain.",
+      "sources": ["homer"],
+      "citation": "Odyssey 20.185–225; 21–22; 24.330–360"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer brings Philoetius to the halls with cattle for the wooers' feast: a leader of men driving a barren heifer and fat she-goats brought over from the mainland. He cursed the suitors who devoured another man's goods and prayed that Odysseus might yet return — and if he did, Philoetius would give him a cloak and tunic and send him safe to Dulichium.",
+      "sources": ["homer"],
+      "citation": "Odyssey 20.185–225"
+    },
+    {
+      "text": "When the beggar proved himself in the bow-contest and the slaughter began, Philoetius locked the outer gates with Eumaeus so none of the suitors could escape; he then fought in the hall beside Odysseus and Telemachus. When the kin of the slain rallied against the house, he armed at Laertes' side with Eumaeus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 22.126–277; 24.330–360; Epitome 7.33"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "promachus-epigoni",
+  "name": "Promachus",
+  "greekName": "Πρόμαχος",
+  "romanName": "Promachus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Parthenopaeus",
+    "the Epigoni"
+  ],
+  "summary": [
+    {
+      "text": "Son of Parthenopaeus among the Epigoni who marched on Thebes a generation after the Seven, named in Apollodorus' muster-roll and commemorated with the victors at Delphi.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.7.2; Description of Greece 10.10.4"
+    },
+    {
+      "text": "Not to be confused with Promachus the Ithacan suitor, Jason's infant brother slain by Pelias, or the Boeotian namesake at Troy.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 7.30; Bibliotheca 1.9.11; Iliad 2.495–510"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts him among the Epigoni who made war on Thebes under Alcmaeon's leadership — Promachus, son of Parthenopaeus, beside Alcmaeon and Amphilochus, Aegialeus, Diomedes, Sthenelus, Thersander, and Euryalus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.7.2"
+    },
+    {
+      "text": "In the Argive genealogy Apollodorus also records that Parthenopaeus had a son Promachus who marched with the Epigoni, though in that same catalogue Parthenopaeus stands among the sons of Talaus — a Biantid stem distinct from the Arcadian captain of the Seven whom Apollodorus elsewhere makes son of Atalanta.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.3, 3.9.2"
+    },
+    {
+      "text": "Pausanias saw the Argive dedication on the Sacred Way at Delphi: the bronze Epigoni included Thersander, Sthenelus, Diomedes, Promachus, and Polydorus among the sons who avenged their fathers. Later writers sometimes call Parthenopaeus' Epigon son Tlesimenes or Stratolaus instead, and name his mother the nymph Clymene.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 10.10.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

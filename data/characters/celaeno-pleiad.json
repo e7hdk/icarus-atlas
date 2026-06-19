@@ -1,0 +1,38 @@
+{
+  "id": "celaeno-pleiad",
+  "name": "Celaeno",
+  "greekName": "Kelainō (Κελαινώ)",
+  "romanName": "Celaeno",
+  "type": "nymph",
+  "kinds": ["pleiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pleiades",
+    "beloved of Poseidon",
+    "mother of Lycus of the Blessed Isles"
+  ],
+  "summary": [
+    {
+      "text": "One of the seven Pleiades, daughter of Atlas and Pleione, whom Poseidon lay with first among her sisters and by whom he had Lycus, whom the god set to dwell in the Islands of the Blest — not to be confused with Celaeno the Harpy, daughter of Thaumas.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.1; Fabulae p.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus' roll of the Pleiades born at Cyllene in Arcadia, Celaeno stands among Alcyone, Merope, Electra, Sterope, Taygete, and Maia — the seven daughters of Atlas and Pleione, daughter of Ocean. Poseidon had intercourse with two of them, first with Celaeno, by whom he had Lycus, whom Poseidon made to dwell in the Islands of the Blest.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1"
+    },
+    {
+      "text": "Hyginus names her among the daughters of Atlas and Pleione in his genealogical tables, and again among the Harpies born to Thaumas and Electra the Oceanid — a second Celaeno entirely, one of the snatching sisters driven from blind Phineus by the Boreads. The Pleiad who bore Lycus for Poseidon and the Harpy who fouled the seer's table share only a name.",
+      "sources": ["hyginus"],
+      "citation": "Genealogies p.9, p.35; Fabulae 14.3"
+    },
+    {
+      "text": "The Lycus whom Celaeno bore is not the Theban regent who tormented Antiope — that Lycus belongs to the later Boeotian kingship and a separate genealogy. The Pleiad's son was translated to the Islands of the Blest by Poseidon's favour and remains, in our sources, a name without further deeds beyond that translation.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1"
+    }
+  ]
+}

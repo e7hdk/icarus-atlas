@@ -1,0 +1,33 @@
+{
+  "id": "hippothous-trojan",
+  "name": "Hippothous",
+  "greekName": "Hippothoos (Ἱππόθοος)",
+  "type": "hero",
+  "domains": ["son of Priam", "Trojan prince"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Priam whom the old king chid among the nine sons at Hector's ransom and whom Apollodorus counts among the king's children by other women — distinct from Hippothous the Pelasgian captain (`hippothous-pelasgian`) who dragged Patroclus until Ajax smote him.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 17.275–315, 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Priam prepared to ransom Hector, he called to nine sons — among them Hippothous beside Helenus, Paris, goodly Agathon, Pammon, Antiphonus, Polites, Deïphobus, and lordly Dius — and wished they had all fallen when mighty Hector died.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.230–260"
+    },
+    {
+      "text": "Apollodorus names Hippothous among the many sons Priam begot by other women.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

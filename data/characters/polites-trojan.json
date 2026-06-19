@@ -1,0 +1,38 @@
+{
+  "id": "polites-trojan",
+  "name": "Polites",
+  "greekName": "Politēs (Πολίτης)",
+  "type": "hero",
+  "domains": ["son of Priam", "sentinel of Troy", "fleet of foot"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Priam, good at the war-cry, who sat as sentinel on the barrow of aged Aesyetes trusting in his fleetness of foot, bore wounded Deïphobus from the field, and slew Echius in the forefront of the fight — a namesake of Polites the comrade of Odysseus in the land of Circe.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.780–815, 13.530–555, 15.315–340, 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans gathered young and old to hear Zeus' will, swift-footed Iris stood among them with the voice of Polites, who was wont to watch from the topmost part of Aesyetes' barrow until the Achaeans should sally from their ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.780–815"
+    },
+    {
+      "text": "After Menelaus wounded Deïphobus, Polites, his own brother, stretched his arms around his waist and led him forth from the dolorous war to the swift horses waiting at the rear of the battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.530–555"
+    },
+    {
+      "text": "In the battle at the ships he slew Echius in the forefront of the fight. When Priam at last dared the ransom of Hector, he called aloud to nine sons — among them Polites, good at the war-cry — and chid them that they had not all perished in Hector's stead.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 15.315–340, 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

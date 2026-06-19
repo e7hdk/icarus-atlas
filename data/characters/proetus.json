@@ -3,25 +3,54 @@
   "name": "Proetus",
   "greekName": "Proitos (Προῖτος)",
   "type": "mortal",
-  "domains": ["King of Tiryns", "fratricidal war"],
+  "domains": [
+    "King of Tiryns",
+    "fratricidal war"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "The twin brother of Acrisius. Driven from Argos, he returned with a Lycian army and fortified the mighty walls of Tiryns.",
-      "sources": ["apollodorus", "pausanias", "ovid"],
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "ovid"
+      ],
       "citation": "Bibliotheca 2.2.1; Description of Greece 2.16.2; Metamorphoses 5.279"
     }
   ],
   "story": [
     {
       "text": "Proetus and his twin brother Acrisius fought a lifelong war that began in the womb. After being driven out of Argos, Proetus fled to Lycia, married the king's daughter, and returned with an army to seize Tiryns. With the help of the Cyclopes, he built Tiryns' massive walls.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 2.2.1; Description of Greece 2.16.2"
     },
     {
       "text": "According to one tradition, it was Proetus who secretly seduced his niece Danae, sparking the final and most bitter phase of his feud with Acrisius. Ovid claims that Perseus eventually punished Proetus for usurping Acrisius' throne by showing him the Gorgon's head.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Bibliotheca 2.4.1; Metamorphoses 5.279"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    },
+    {
+      "city": "tiryns",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
     }
   ]
 }

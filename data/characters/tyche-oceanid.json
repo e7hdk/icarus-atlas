@@ -1,0 +1,38 @@
+{
+  "id": "tyche-oceanid",
+  "name": "Tyche",
+  "greekName": "Tykhē (Τύχη)",
+  "romanName": "Tyche",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "eldest daughters of Ocean",
+    "Fortune in the Homeric Hymn to Demeter",
+    "catalogue node — distinct from civic cult Tyche"
+  ],
+  "summary": [
+    {
+      "text": "Oceanid daughter of Oceanus and Tethys, named among the eldest daughters in Hesiod's catalogue — the Fortune whom Pausanias says Homer first mentioned as a daughter of Ocean playing with Persephone, not the civic goddess of luck worshipped in later cities.",
+      "sources": ["hesiod", "pausanias"],
+      "citation": "Theogony 358–361; Description of Greece 4.30.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod closes his Oceanid register with Tyche among the eldest daughters: Telesto saffron-clad, Chryseis, Asia, Calypso, Eudora, and Tyche stand in one breath before Amphirho, Ocyrrhoe, and Styx who is chiefest of all. No myth attaches to her in the Theogony beyond this genealogical honour.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 358–361"
+    },
+    {
+      "text": "Pausanias argues that Homer was the first poet to name Fortune in verse, citing the Homeric Hymn to Demeter: the daughters of Ocean who played with Kore in a lovely meadow included Leucippe, Phaeno, Electra, Ianthe, Melobosis, Tyche, and Ocyrhoe — Fortune here is an Oceanid playmate of Persephone, not yet the city-protectress of later cult.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.30.4; Homeric Hymn to Demeter 5.420"
+    },
+    {
+      "text": "The atlas distinguishes this genealogical Tyche from every civic Fortune of the Hellenistic and Roman world. She belongs to Ocean's eldest daughters in Hesiod and to Demeter's hymn in Pausanias' citation — a water-born nymph whose name later lent itself to a goddess, not the cult figure herself.",
+      "sources": ["hesiod", "pausanias"],
+      "citation": "Theogony 358–361; Description of Greece 4.30.4"
+    }
+  ]
+}

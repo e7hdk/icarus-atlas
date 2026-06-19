@@ -1,0 +1,35 @@
+{
+  "id": "antenor-zacynthus",
+  "name": "Antenor",
+  "greekName": "Antenor (Ἀντήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — a namesake of, but not to be identified with, Antenor the Trojan elder who counselled peace and was spared when the city fell.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Iliad 3.148–205, 7.347–353"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Antenor among the wooers assigned to Zacynthus, listed after Periclymenus and before Pellas in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

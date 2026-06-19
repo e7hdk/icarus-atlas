@@ -1,0 +1,47 @@
+{
+  "id": "scylla-minos",
+  "title": "Scylla and Minos",
+  "greekTitle": "Σκύλλα καὶ Μίνως",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.067,
+  "summary": {
+    "text": "When Minos besieged Megara, his victory hung on a single purple lock in King Nisus' hair — and Nisus' daughter Scylla, burning for the Cretan king, sheared it from her sleeping father and carried it to the enemy camp; spurned for the betrayal, she clung to his departing ship and was changed into the bird Ciris as her father stooped upon her as a sea-eagle.",
+    "sources": ["ovid", "apollodorus", "hyginus"],
+    "citation": "Ov. Met. 8.1–151; Apollod. 3.15.8; Hyg. Fab. 198"
+  },
+  "chapters": [
+    {
+      "title": "The siege",
+      "text": "Book eight of the Metamorphoses opens with war: Minos son of Zeus and Europa had laid Megara under siege, and from the tower of Alcathous — where Apollo once laid down his lyre — the king's daughter Scylla watched the Cretan camp day after day until desire replaced fear. Apollodorus says an oracle held that Nisus would die when the purple hair on his head was plucked.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 8.1–80; Apollod. 3.15.8"
+    },
+    {
+      "title": "The purple lock",
+      "text": "Scylla chose love of the enemy over love of her father. While Nisus slept she cut the fatal lock and bore it to Minos as a gift — the key to the city and to her heart. Minos took Megara, but he would not reward treason: he bound her by the feet to his stern and drowned her in Apollodorus' telling; Ovid has him refuse the criminal and sail away.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 8.80–120; Apollod. 3.15.8"
+    },
+    {
+      "title": "Ciris",
+      "text": "Cast off and cursing Minos, Scylla leaped into the sea and clung to the moving stern. Nisus, transformed into a sea-eagle, stooped at her with hooked beak; in terror she lost her hold and became the bird Ciris — named for the lock she had cut. Hyginus makes Venus the instigator of her passion and turns the girl at last into the fish the eagle still hunts.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 8.120–151; Hyg. Fab. 198"
+    }
+  ],
+  "cast": [
+    { "id": "scylla-nisus", "name": "Scylla", "role": "Daughter of Nisus who betrayed Megara for Minos" },
+    { "id": "minos", "name": "Minos", "role": "Cretan king who besieged the city" },
+    { "name": "Nisus", "role": "King of Megara, whose purple lock guarded the realm" }
+  ],
+  "places": [
+    { "id": "megara", "name": "Megara", "role": "City betrayed for love of the besieger" },
+    { "id": "knossos", "name": "Knossos", "role": "Minos' Cretan kingdom" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "8.1–151" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.15.8" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "198" }
+  ]
+}

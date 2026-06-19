@@ -1,0 +1,27 @@
+{
+  "id": "polypoetes-lapith",
+  "name": "Polypoetes",
+  "greekName": "Polypoetēs (Πολυποίτης)",
+  "type": "hero",
+  "domains": ["Lapith command", "son of Peirithous", "the forty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Peirithous, staunch in fight, whom glorious Hippodameia conceived on the day his father drove the shaggy centaurs from Pelium — co-captain with Leonteus of forty black ships from Argissa and Gyrtone.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.735–775; Epitome 3.11; Fabulae 81"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Polypoetes leads the Lapiths who held Argissa, Gyrtone, Orthe, Elone, and Oloösson — son of Peirithous whom immortal Zeus begat, born when Peirithous took vengeance on the centaurs at Pelium. Not alone was he: Leonteus son of Coronus followed, and forty black ships ranged with them.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "text": "Apollodorus and Hyginus count him among the captains who sailed to Troy; he must be kept distinct from Polypoetes the Ithacan suitor and from the Thesprotian son Odysseus begat on Callidice.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.11, 7.27–7.35; Fabulae 81"
+    }
+  ]
+}

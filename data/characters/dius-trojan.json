@@ -1,0 +1,28 @@
+{
+  "id": "dius-trojan",
+  "name": "Dius",
+  "greekName": "Dios (Δῖος)",
+  "type": "hero",
+  "domains": ["son of Priam", "Trojan prince"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Lordly son of Priam, the last named among the nine sons whom the old king called when he set out to ransom Hector from Achilles.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.230–260"
+    }
+  ],
+  "story": [
+    {
+      "text": "Priam called aloud to nine sons and chid them as base children that were his shame — Helenus, Paris, goodly Agathon, Pammon, Antiphonus, Polites, Deïphobus, Hippothous, and lordly Dius — wishing they had all perished when mighty Hector died.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.230–260"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

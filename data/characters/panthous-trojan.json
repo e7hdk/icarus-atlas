@@ -1,0 +1,33 @@
+{
+  "id": "panthous-trojan",
+  "name": "Panthous",
+  "greekName": "Panthoos (Πάνθοος)",
+  "type": "hero",
+  "domains": ["father of Polydamas and Euphorbus", "Trojan elder", "Dardanian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan elder who sat with Priam at the Scaean gates and father of Polydamas and Euphorbus — the prudent counsellor born in the same night as Hector and the spearman whom Menelaus slew as he stripped Patroclus' armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190, 12.195–225, 16.780–815, 17.45–80"
+    }
+  ],
+  "story": [
+    {
+      "text": "About Priam and Panthous and Thymoetes and Lampus and Clytius and Hicetaon, scion of Ares, and Ucalegon and Antenor — men of prudence both — sat as elders of the people at the Scaean gates; because of old age had they now ceased from battle, but speakers they were full sweet.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    },
+    {
+      "text": "Polydamas, son of Panthous, was far the best in speech where Hector bore the spear; his brother Euphorbus first wounded Patroclus from behind before Menelaus laid him low. When the Trojans hasted to Polydamas' voice, Apollo would not suffer the son of Panthous to be vanquished amid the foremost fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.195–225, 14.440–470, 16.780–815, 17.45–80"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

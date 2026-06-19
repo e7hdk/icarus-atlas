@@ -1,0 +1,31 @@
+{
+  "id": "aetius-halicarnassus",
+  "name": "Aetius",
+  "greekName": "Aitios (Αἴτιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Troezenian colonist",
+    "founder of Halicarnassus"
+  ],
+  "summary": [
+    {
+      "text": "Descendant of Anthas who led colonists from Troezen and founded Halicarnassus and Myndus in Caria.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.30.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records that many years after Troezen was named for Troezen brother of Pityus, the descendants of Aetius son of Anthas were dispatched as colonists from Troezen and founded Halicarnassus and Myndus in Caria.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.30.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "halicarnassus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

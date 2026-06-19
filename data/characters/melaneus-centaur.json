@@ -1,0 +1,33 @@
+{
+  "id": "melaneus-centaur",
+  "name": "Melaneus",
+  "greekName": "Melaneus (Μελανεύς)",
+  "romanName": "Melaneus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "flight from the Lapiths"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who fled the wedding battle beside Pholus, Abas, and Asbolus when the fight turned to rout.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the brawl at Peirithous' feast broke into open war, Ovid shows Pholus and Melaneus running for their lives with Abas the boar-hunter and Asbolus the augur — the centaur party scattering as brands and weapons flew through the hall.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "myrrha-adonis",
+  "title": "Myrrha and Adonis",
+  "greekTitle": "Μύρρα καὶ Ἄδωνις",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.115,
+  "summary": {
+    "text": "Myrrha daughter of Cinyras burned with unlawful love for her father; discovered after nights of darkness, she fled and became the myrrh-tree, and from its bark Lucina delivered Adonis — whom Venus loved, warned against the boar, and mourned when the tusk struck home, changing his blood to the short-lived anemone.",
+    "sources": ["ovid", "apollodorus", "hyginus"],
+    "citation": "Ov. Met. 10.464–818, 10.819–879, 10.1031–1163; Apollod. 3.14.3; Hyg. Fab. 271"
+  },
+  "chapters": [
+    {
+      "title": "Forbidden love",
+      "text": "Cinyras king of Cyprus might have been happy but for his daughter Myrrha, whom Cupid denies having inflamed — one of the Furies, Ovid says, poisoned her with Styx-fire. She argued with herself that beasts mate without shame, yet knew the crime; princes of the Orient sought her hand, but she wanted only her father.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.464–520"
+    },
+    {
+      "title": "The nurse and the dark",
+      "text": "Myrrha tried to hang herself; her nurse discovered the cause and, after swearing secrecy, arranged for the king to take an unknown girl during the rites of Ceres when wives abstain from men. For many nights Cinyras did not know his mistress — until he brought a lamp and saw his daughter. Sword in hand he pursued her; she fled into exile.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.520–680"
+    },
+    {
+      "title": "The myrrh-tree",
+      "text": "Wandering nine months, Myrrha prayed to be neither among the living nor the dead; the gods answered by rooting her feet, hardening her skin to bark, and closing her face in wood while warm tears became fragrant myrrh. Lucina split the trunk and Adonis was born — a boy so beautiful Envy herself must praise him, anointed with his mother's weeping sap.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.680–818"
+    },
+    {
+      "title": "Venus and the youth",
+      "text": "Years passed like a dream; the child of sister and grandfather grew into a man who avenged his mother's passion by winning Venus herself — grazed by her son Cupid's arrow, the goddess forgot Paphos and Cnidos and followed Adonis through thorny hills like Diana, hunting only harmless game and warning him against lions and boars.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.819–879"
+    },
+    {
+      "title": "The boar",
+      "text": "Adonis would not heed. His hounds roused a savage boar; he struck a glancing blow, and the beast's tusk found his groin. Venus, flying on swans, heard his dying groan too late — she tore her hair, blamed Fate, and declared his memory would flower each year. She sprinkled nectar on his blood, and from it rose the anemone, wind-shaken on its frail stem.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.1031–1163"
+    },
+    {
+      "title": "Cinyras' house",
+      "text": "Apollodorus traces another Cyprus line: Cinyras son of Sandocus founded Paphos, married Metharme daughter of king Pygmalion, and begot Adonis among other children — while Ovid makes Adonis spring from incest and myrrh. Hyginus lists Adonis among the youths whom Venus loved. The same name carries both genealogies.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.14.3; Hyg. Fab. 271"
+    }
+  ],
+  "cast": [
+    { "name": "Myrrha", "role": "Daughter of Cinyras, transformed into the myrrh-tree" },
+    { "name": "Adonis", "role": "Youth born from the tree, beloved of Venus" },
+    { "name": "Cinyras", "role": "King of Cyprus, Myrrha's father" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Venus, who loved and mourned Adonis" },
+    { "id": "eros", "name": "Eros", "role": "Cupid, whose arrow wounded Venus" }
+  ],
+  "places": [
+    { "name": "Cyprus", "role": "Island of Cinyras, Paphos, and the tragedy" },
+    { "name": "Paphos", "role": "Sacred city of Venus" },
+    { "name": "Panchaea", "role": "Far land of balsam where the myrrh-tree grew" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "10.464–1163" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.14.3" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "271" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cratieus-pylos",
+  "name": "Cratieus",
+  "greekName": "Kratieus (Κρατίευς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "father of Anaxibia",
+    "the Neleid court at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Named in Apollodorus only as the father of Anaxibia, whom Nestor married after inheriting sandy Pylos — a bare patronymic with no further attestation in the pinned corpus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nestor alone survived Heracles' sack of Pylos, Apollodorus makes him marry Anaxibia, daughter of Cratieus, and beget the princes and princesses of the Trojan generation — Pisidice, Polycaste, Perseus, Stratichus, Aretus, Echephron, Pisistratus, Antilochus, and Thrasymedes. The mythographer names Cratieus once as Anaxibia's father and records nothing else of him.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

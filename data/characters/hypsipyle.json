@@ -1,0 +1,37 @@
+{
+  "id": "hypsipyle",
+  "name": "Hypsipyle",
+  "greekName": "Hypsipylē (Ὑψιπύλη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Lemnos",
+    "mother of Euneus",
+    "the Lemnian women"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Thoas, king of Lemnos, who alone spared her father when the Lemnian women slew their husbands; she ruled the island when the Argonauts came and bore Jason Euneus and Nebrophonus.",
+      "sources": ["apollodorus", "apollonius", "homer"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640; Iliad 7.467–468"
+    }
+  ],
+  "story": [
+    {
+      "text": "The Lemnian women did not honour Aphrodite, and the goddess visited them with a noisome smell; their husbands took Thracian captives instead, and the women in jealousy killed every male on the island — all save Hypsipyle, who hid Thoas in a chest and set him adrift on the sea.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640"
+    },
+    {
+      "text": "When the Argonauts touched at Lemnos, Hypsipyle, ruling alone, welcomed them; she lay with Jason and bore sons Euneus and Nebrophonus — and in after days Euneus sent wine from Lemnos to the Achaeans before Troy.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.9.17; Iliad 7.467–468"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus", "apollonius", "homer"]
+    }
+  ]
+}

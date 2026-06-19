@@ -20,7 +20,7 @@ export function CityPanel({
   return (
     <GlassPanel
       data-map-overlay
-      className="absolute inset-x-4 bottom-4 top-auto z-10 flex max-h-[60%] w-auto touch-auto flex-col overscroll-contain bg-glass-heavy sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-5 sm:max-h-[calc(100%-7rem)] sm:w-[21rem]"
+      className="absolute inset-x-4 bottom-4 top-auto z-10 flex max-h-[60%] w-auto touch-auto flex-col overscroll-contain bg-glass-heavy sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-20 sm:max-h-[calc(100%-7rem)] sm:w-[21rem]"
     >
       <div className="flex items-start justify-between px-5 pt-4">
         <div>
@@ -86,10 +86,16 @@ export function CityPanel({
       </div>
 
       <Link
-        href={`/city/${city.id}`}
+        href={`/city/${city.id}/sky`}
         className="block border-t border-glass-border px-5 py-2.5 text-center font-display text-[11px] uppercase tracking-[0.2em] text-nebula-soft transition-colors hover:text-aether"
       >
-        Step through the gates →
+        Open the gates →
+      </Link>
+      <Link
+        href={`/city/${city.id}`}
+        className="block border-t border-glass-border px-5 py-2 text-center font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint transition-colors hover:text-aether-muted"
+      >
+        Royal codex →
       </Link>
       <p className="border-t border-glass-border px-5 py-2 font-body text-[11px] italic text-aether-faint">
         Coordinates: Pleiades gazetteer, CC BY · place {city.pleiadesId}

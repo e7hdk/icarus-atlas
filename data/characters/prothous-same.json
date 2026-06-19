@@ -1,0 +1,40 @@
+{
+  "id": "prothous-same",
+  "name": "Prothous",
+  "greekName": "Prothoos (Πρόθοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Prothous son of Tenthredon in the Iliad catalogue and of other Prothous figures in Greek myth.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Prothous among the wooers assigned to Same, listed after Clytius and before Lycaethus in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    },
+    {
+      "text": "Homer's catalogue of ships knows Prothous son of Tenthredon as leader of the Magnetes; Apollodorus elsewhere names Prothous among sons of Agrius and among sons of Thestius — none of whom is this Cephallenian wooer.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.735–775; Bibliotheca 1.8.6, 3.8.1; Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "pisidice-nestor",
+  "name": "Pisidice",
+  "greekName": "Pisidice (Πισιδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Nestor",
+    "the Neleid house at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Nestor in Apollodorus' stemma of the Neleids — a namesake of Pisidice daughter of Aeolus and of Pisidice daughter of Pelias.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Pisidice among the daughters whom Nestor begot on Anaxibia, daughter of Cratieus, alongside Polycaste and the sons Perseus, Stratichus, Aretus, Echephron, Peisistratus, Antilochus, and Thrasymedes.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

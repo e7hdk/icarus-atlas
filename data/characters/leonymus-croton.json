@@ -1,0 +1,36 @@
+{
+  "id": "leonymus-croton",
+  "name": "Leonymus",
+  "greekName": "Leonymos (Λεώνυμος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "general of Croton",
+    "voyager to Achilles' White Island"
+  ],
+  "summary": [
+    {
+      "text": "The first man legend says sailed to Achilles' White Island in the Euxine — general of the Crotoniates when war arose between Croton and the Locri of Italy.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.11–3.19.12"
+    }
+  ],
+  "story": [
+    {
+      "text": "When war broke out between the people of Croton and the Locri in Italy, the Locri called upon Ajax son of Oileus to help them, citing kinship with the Opuntian Locrians. Leonymus the general of the Crotoniates, wounded by the Locrian Ajax in battle, was told by the Pythian priestess to sail to the White Island and propitiate Achilles' spirit — the hero cult strand the people of Croton and Himera both tell about Helen.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.11–3.19.12"
+    },
+    {
+      "text": "Not to be confused with the many Spartans named Cleonymus or Leonymus in Pausanias' later history — this Leonymus belongs solely to Crotonian legend and the Achilles cult voyage.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.12; 1.13.4–1.13.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "croton",
+      "sources": ["pausanias"]
+    }
+  ]
+}

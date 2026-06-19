@@ -1,0 +1,33 @@
+{
+  "id": "cebriones",
+  "name": "Cebriones",
+  "greekName": "Kebriones (Κεβριόνης)",
+  "type": "mortal",
+  "domains": ["Hector's charioteer", "the third company at the wall", "Priam's son"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wise-hearted son of Priam and own brother of Hector, who took the reins when charioteers fell, counselled his brother amid rout, and was slain by Patroclus when the son of Menoetius leapt furiously upon him beside the battle-din of the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330, 11.490–530, 16.730–815"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hector's charioteer was struck down, his soul clouded with dread sorrow; yet he left the man to lie and bade Cebriones, his own brother nigh at hand, take the reins — and Cebriones heard and failed not to hearken. Standing by Hector's side in the chariot, he beheld the Trojans driven in rout and warned that they two dallied with the Danaans on the skirts of war while the rest were scattered.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330, 11.490–530"
+    },
+    {
+      "text": "In the assault on the Achaean wall he followed as the third beside the bravest Trojans, for Hector had left a weaker man at the reins and trusted Cebriones instead. When Apollo sent panic upon the Argives and Hector lashed his horses into battle, wise-hearted Cebriones drove at Patroclus' command; but Patroclus made for the warrior Cebriones with the rush of a lion smitten on the breast, leapt furiously upon him, and Hector over against leapt from his car to defend his brother's body while the Achaeans drew Cebriones from the din and stripped his armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.80–105, 16.730–815"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

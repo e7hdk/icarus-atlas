@@ -1,0 +1,45 @@
+{
+  "id": "cylarabes-sthenelid",
+  "name": "Cylarabes",
+  "greekName": "Κυλάραβης",
+  "romanName": "Cylarabes",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "sole king of reunited Argos",
+    "the Cylarabis"
+  ],
+  "summary": [
+    {
+      "text": "Son of Sthenelus son of Capaneus; last sole king of Argos before Orestes seized the city — Pausanias says he died without offspring, ending the line that had reunited the three kingdoms.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.5, 2.22.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Amphilochus migrated after Troy and Cyanippus died childless, Sthenelus son of Capaneus had already inherited Iphis' third of the kingdom. His son Cylarabes then held Argos united — but he too left no heirs, and the neighbouring Orestes son of Agamemnon took the city.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.5"
+    },
+    {
+      "text": "Pausanias still knew his name on the ground at Argos: the Cylarabis, the race-course in the city, and a gymnasium of Cylarabes where an Athena called Pania was worshipped, with graves shown of Sthenelus and of Cylarabes himself.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.22.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

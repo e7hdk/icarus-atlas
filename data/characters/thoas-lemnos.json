@@ -1,0 +1,41 @@
+{
+  "id": "thoas-lemnos",
+  "name": "Thoas",
+  "greekName": "Thoas (Θόας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Lemnos",
+    "father of Hypsipyle"
+  ],
+  "summary": [
+    {
+      "text": "King of Lemnos, father of Hypsipyle, whom she alone spared when the Lemnian women murdered their husbands; fishermen dragged him alive to Oinoe, which thereafter was called Sicinus.",
+      "sources": ["apollodorus", "apollonius", "homer"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640; Iliad 14.249–251"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Thoas king of Lemnos when the Lemnian women, angered by Aphrodite's curse and their husbands' Thracian concubines, slew every man on the island; Hypsipyle alone saved her father.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.17"
+    },
+    {
+      "text": "Apollonius tells how Hypsipyle sent Thoas in a hollow chest to drift over the sea, if haply he should escape; and fishermen dragged him to shore at the island of Oinoe, formerly Oinoe, but thereafter called Sicinus from the man saved.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.609–640"
+    },
+    {
+      "text": "Homer knows Lemnos as the city of godlike Thoas when Hera sped to the island seeking Sleep — a kingly name on the sacred isle where Philoctetes later lay in anguish.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.249–251"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus", "apollonius", "homer"]
+    }
+  ]
+}

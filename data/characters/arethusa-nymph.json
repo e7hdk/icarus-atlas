@@ -1,0 +1,44 @@
+{
+  "id": "arethusa-nymph",
+  "name": "Arethusa",
+  "greekName": "Arethousa (Ἀρέθουσα)",
+  "romanName": "Arethusa",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "spring nymph of Sicily",
+    "fugitive from Alpheus",
+    "witness of Proserpina's rape"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad who fled the river-god Alpheus beneath Elis until Artemis opened the earth and she rose as a spring on Ortygia in Sicily — where she later revealed to Ceres where Proserpina had been carried off — not to be confused with Arethusa the Hesperid named in Apollodorus' roll of the apple-guardians.",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 5.746–868; Description of Greece 5.7.2–3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid gives her voice in Sicily. Arethusa tells Ceres that though she sojourns a stranger on the isle, it delights her more than all the world: once she was a huntress among the Peloponnesian streams until Alpheus, mingling his waters with hers, pursued her in love. She fled naked, he pressed harder, and when she could run no more she prayed to Diana; the earth gaped, she sank through the chasm, and rose again beneath Ortygia.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.746–868"
+    },
+    {
+      "text": "At the pool between the streams of Cyane and Arethusa, Proserpina was gathering flowers when Dis seized her; Cyane tried to bar the chariot and was dissolved into her own waters, but Arethusa saw the rape and later, when Ceres wandered the earth seeking her daughter, revealed what she had witnessed — the Sicilian spring linking the Maid's abduction to the mother's grief.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.385–424, 5.487–508, 5.634–745"
+    },
+    {
+      "text": "Pausanias knew the spring at Olympia where the Alpheius was said to mingle underground with Arethusa's Sicilian water — a marvel of geography that bound Elis to Syracuse in cult and story. Homer too names the spring Arethusa on Ithaca where Odysseus' swineherd kept his herd. These local Arethusas are the same nymph-tradition Ovid elaborates, not the Hesperid of Apollodorus' Ladon roll.",
+      "sources": ["pausanias", "homer", "apollodorus"],
+      "citation": "Description of Greece 5.7.2–3; Odyssey 13.404–410; Bibliotheca 2.5.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "syracuse",
+      "sources": ["ovid", "pausanias"]
+    }
+  ]
+}

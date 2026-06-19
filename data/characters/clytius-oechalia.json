@@ -1,0 +1,32 @@
+{
+  "id": "clytius-oechalia",
+  "name": "Clytius",
+  "greekName": "Klytios (Κλυτίος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Oechalia",
+    "archery",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Eurytus of Oechalia and Antiope, Argonaut slain at Colchis by Aeetes or, in another tale, by Heracles.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Bibliotheca 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus names Clytius son of Eurytus among the Argonauts; his father had received archery from Apollo. At Colchis he fell — some say to Aeetes' hand.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14; Bibliotheca 1.9.16"
+    }
+  ]
+}

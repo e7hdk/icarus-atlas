@@ -1,0 +1,66 @@
+{
+  "id": "gigantomachy",
+  "title": "The War of the Giants",
+  "greekTitle": "Γιγαντομαχία",
+  "kind": "war",
+  "parent": "cosmogony",
+  "era": 0.3,
+  "summary": {
+    "text": "Born from the blood of the castrated sky — or in Gaia's wrath over the fallen Titans — the earthborn Gigantes rose against Olympus with dragon-scaled feet and burning oaks, until an oracle declared that no god alone could kill them and Heracles was called to the plain of Phlegra to fight at the immortals' side.",
+    "sources": ["hesiod", "apollodorus"],
+    "citation": "Hes. Th. 183-186; Apollod. 1.6.1-2"
+  },
+  "chapters": [
+    {
+      "title": "Born from the wound of heaven",
+      "text": "In Hesiod the Giants spring from the wound of heaven itself: when Cronus castrated Uranus and the bloody drops gushed upon the Earth, Gaia received them, and as the seasons turned she bore the Erinyes, the ash-tree Nymphs called Meliae, and the great Giants gleaming in armour, holding long spears in their hands.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 183-186",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "title": "Gaia's vengeance",
+      "text": "Apollodorus tells it otherwise: Gaia conceived the Giants by Sky and brought them forth in her wrath over the Titans, to avenge that older defeated race. Matchless in the bulk of their bodies, terrible to look upon, with long locks drooping from head and chin and the scales of dragons for feet, they hurled rocks and burning oaks against the sky.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.6.1",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "title": "The oracle's condition",
+      "text": "The gods held an oracle that none of the Giants could perish at the hand of gods alone, but that with a mortal's help they might be made an end of. Some placed their birth at Phlegrae, others at Pallene; surpassing all the rest were Porphyrion and Alcyoneus, the latter immortal so long as he fought in the land of his birth.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.6.1"
+    },
+    {
+      "title": "Heracles called to the war",
+      "text": "So Zeus called Heracles to the field — the mortal ally without whom the Gigantes could not fall. On the plain the Olympians struck down the brood one by one: Porphyrion, inflamed with lust for Hera, fell to Zeus's thunderbolt and Heracles' arrow; Apollo and Heracles together blinded Ephialtes; Dionysus slew Eurytus and Hephaestus felled Mimas.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.6.1-2"
+    },
+    {
+      "title": "Enceladus beneath Sicily",
+      "text": "Pausanias preserves the Arcadian memory of Athena at war: she drove her chariot against Enceladus and crushed him beneath the island of Sicily — so that the land still trembles when the buried giant stirs. Ovid sings in the higher strain of the giants and the victorious bolts hurled on the Phlegraean plain.",
+      "sources": ["apollodorus", "pausanias", "ovid"],
+      "citation": "Apollod. 1.6.2; Paus. 8.47.1; Ov. Met. 1.151-162, 5.144-148"
+    }
+  ],
+  "cast": [
+    { "id": "gigantes", "name": "The Gigantes", "role": "Earthborn army against Olympus" },
+    { "id": "zeus", "name": "Zeus", "role": "King of the gods at war" },
+    { "id": "heracles", "name": "Heracles", "role": "The mortal ally the oracle required" },
+    { "id": "gaia", "name": "Gaia", "role": "Earth, mother of the revolt" },
+    { "id": "hera", "name": "Hera", "role": "Target of Porphyrion's assault" },
+    { "id": "athena", "name": "Athena", "role": "Slayer of Enceladus" },
+    { "id": "apollo", "name": "Apollo", "role": "Fighter at Phlegra" },
+    { "id": "hephaestus", "name": "Hephaestus", "role": "Slayer of Mimas" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Slayer of Eurytus" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "183-186" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.6.1-2" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "8.47.1" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "1.151-162" },
+    { "source": "homer", "work": "Odyssey", "citation": "7.56-60" }
+  ]
+}

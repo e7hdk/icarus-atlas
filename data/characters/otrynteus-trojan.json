@@ -1,0 +1,28 @@
+{
+  "id": "otrynteus-trojan",
+  "name": "Otrynteus",
+  "greekName": "Otrynteus (Ὀτρυντεύς)",
+  "type": "hero",
+  "domains": ["father of Iphition", "sacker of cities"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Sacker of cities and father of Iphition, leader of a great host whom a Naiad nymph bore beneath snowy Timolus in the rich land of Hyde — named when Achilles first slew the son in the terrible rout of *Iliad* 20.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    }
+  ],
+  "story": [
+    {
+      "text": "Achilles leapt among the Trojans and first he slew Iphition, the valiant son of Otrynteus, the leader of a great host, whom a Naiad nymph bare to Otrynteus, sacker of cities, beneath snowy Timolus in the rich land of Hyde.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "teucer-troas",
+  "name": "Teucer",
+  "greekName": "Teukros (Τεῦκρος)",
+  "romanName": "Teucer",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "first king of the Troad",
+    "the Teucrians",
+    "father-in-law of Dardanus"
+  ],
+  "summary": [
+    {
+      "text": "Son of the river Scamander and the nymph Idaea, first king of the land later called the Troad; he welcomed Dardanus, gave him Batia his daughter, and left the country to be called Dardania after his son-in-law.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Before Dardanus came from Samothrace, the country on the opposite mainland was called Teucria after Teucer, son of Scamander and Idaea. He welcomed the exiled son of Zeus with a share of the land and his daughter Batia.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
+    },
+    {
+      "text": "When Teucer died without a son of his own to succeed, Dardanus, whom he had made son-in-law and ally, called the whole country Dardania after himself — though the people long remained Teucrians in name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1–3.12.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dardanus-city",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

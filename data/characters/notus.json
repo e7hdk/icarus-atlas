@@ -1,0 +1,42 @@
+{
+  "id": "notus",
+  "name": "Notus",
+  "greekName": "Notos (Νότος)",
+  "romanName": "Auster",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the south wind",
+    "autumn rain",
+    "the stormy sea"
+  ],
+  "summary": [
+    {
+      "text": "The South Wind, son of Astraeus and Eos the Dawn — one of the strong-hearted winds Hesiod names beside Zephyrus and headlong Boreas, a god-sent kind when he blows with his brothers, unlike the fitful gusts that work havoc on the sea.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface"
+    },
+    {
+      "text": "In the farmer's calendar he rides with the heavy autumn rain of Zeus and stirs up the sea when sailors should make haste for home.",
+      "sources": ["hesiod"],
+      "citation": "Works and Days 670–690"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets his birth among the strong-hearted winds: Eos the Dawn, mating in love with Astraeus, bore brightening Zephyrus and Boreas, headlong in his course, and Notus — a goddess mating with a god. After them she bore Eosphorus, the Dawn-bringer, and the gleaming stars with which heaven is crowned.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4"
+    },
+    {
+      "text": "When the farmer should hurry his ship home, Notus accompanies the heavy autumn rain of Zeus and stirs up the sea, making the deep dangerous — while only Notus, Boreas, and clear Zephyr among the winds are a god-sent kind and a great blessing to men.",
+      "sources": ["hesiod"],
+      "citation": "Works and Days 670–690; Theogony 869–871"
+    },
+    {
+      "text": "Hyginus preserves the same household under Latin names: to Astraeus and Aurora were born Zephyrus, Boreas, Notus, and Favonius — the west wind counted beside the three Hesiod names.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae Preface"
+    }
+  ]
+}

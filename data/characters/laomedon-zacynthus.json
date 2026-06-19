@@ -1,0 +1,40 @@
+{
+  "id": "laomedon-zacynthus",
+  "name": "Laomedon",
+  "greekName": "Laomedōn (Λαομέδων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — wholly distinct from Laomedon king of Troy, father of Priam, whom Heracles slew when the king defrauded the gods and the hero alike.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Iliad 5.640–645; Bibliotheca 2.6.4"
+    },
+    {
+      "text": "Not to be confused with `laomedes-zacynthus`, the earlier name in the same Epitome list, nor with the Trojan royal `laomedon`.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Laomedon among the wooers assigned to Zacynthus, listed after Daesenor and before Laodicus in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

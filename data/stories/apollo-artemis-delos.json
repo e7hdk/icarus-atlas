@@ -1,0 +1,69 @@
+{
+  "id": "apollo-artemis-delos",
+  "title": "Apollo and Artemis at Delos",
+  "greekTitle": "Λητὼ ἐν Δήλῳ",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 0.38,
+  "summary": {
+    "text": "Leto, hunted by jealous Hera over the whole earth for her union with Zeus, found refuge on the wandering isle of Delos — there she bore Artemis first, and by her daughter's midwifery brought forth Apollo, the far-shooting lord of archers and song.",
+    "sources": ["hesiod", "apollodorus", "homer"],
+    "citation": "Hes. Th. 918-923; Apollod. 1.4.1; Hom. Il. 1.1-21"
+  },
+  "chapters": [
+    {
+      "title": "Daughter of Coeus and Phoebe",
+      "text": "To Coeus and Phoebe the Titans bore Asteria and Leto — sisters of the generation before Zeus's reign. Hesiod names Leto among the goddesses who went up into Zeus's holy bed, and from that union she would bear the twin archers who stand at the beginning of the Iliad as patrons of plague and healing.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 404-410, 918-923; Apollod. 1.2.2"
+    },
+    {
+      "title": "Hera's pursuit",
+      "text": "But Latona for her intrigue with Zeus was hunted by Hera over the whole earth. Apollodorus says no land would receive her to give birth — Hera's jealousy barred every shore — until the outcast goddess reached the one place that could welcome her. Homer calls Apollo son of Leto and Zeus, the god who roused the pestilence against the Greeks when Agamemnon dishonoured his priest.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.4.1; Hom. Il. 1.1-21, 1.35-42"
+    },
+    {
+      "title": "Asteria becomes Delos",
+      "text": "Leto's sister Asteria had leapt into the sea to escape the amorous advances of Zeus; the island that rose from the waves was first called after her, but afterwards men named it Delos. There alone, because it was not fixed to the deep, could Leto find a refuge from Hera's curse — the wandering rock that would become the holiest ground in the Aegean.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.4.1"
+    },
+    {
+      "title": "Artemis born first",
+      "text": "On Delos Leto brought forth first Artemis, goddess of the wild and the chase. Apollodorus says it was by the help of Artemis's midwifery that Leto afterwards gave birth to Apollo — the elder twin who would devote herself to the mountains and the deer while her brother took up the lyre and the bow.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Apollod. 1.4.1; Hes. Th. 918-923"
+    },
+    {
+      "title": "The lord of Delphi",
+      "text": "Then Leto bore Apollo — Phoebus, the far-darter, whom men call the Smintheus at Tenedos and the lord of Pytho beneath Parnassus. Hesiod lists both children among those who sprang from Leto's union with Zeus; Homer has the god himself declare his rule over Chryse, Cilla, and Tenedos. From Delos he would go on to slay the dragon at Delphi and establish his oracle, but here the story ends with the twins safe on the sacred isle.",
+      "sources": ["hesiod", "homer", "apollodorus"],
+      "citation": "Hes. Th. 918-923; Hom. Il. 1.35-42; Apollod. 1.4.1"
+    },
+    {
+      "title": "Twin archers of Olympus",
+      "text": "Artemis who delights in arrows and Apollo who strikes from afar took their seats among the Olympians — she the guardian of childbirth and the young, he the god of prophecy, music, and plague. The nested Titanomachy tells the war that made Zeus king; this episode tells how two of his greatest children entered the world under Hera's persecution, on the one island that dared receive their mother.",
+      "sources": ["hesiod", "apollodorus", "homer"],
+      "citation": "Hes. Th. 918-923; Apollod. 1.4.1; Hom. Il. 1.1-21"
+    }
+  ],
+  "cast": [
+    { "id": "apollo", "name": "Apollo", "role": "Far-shooting god born second on Delos" },
+    { "id": "artemis", "name": "Artemis", "role": "Huntress born first, midwife to her brother" },
+    { "id": "leto", "name": "Leto", "role": "Mother hunted by Hera over the earth" },
+    { "id": "zeus", "name": "Zeus", "role": "Father of the twin archers" },
+    { "id": "hera", "name": "Hera", "role": "Queen who barred every land but Delos" },
+    { "id": "asteria", "name": "Asteria", "role": "Sister whose island became Delos" },
+    { "id": "coeus", "name": "Coeus", "role": "Titan father of Leto" },
+    { "id": "phoebe", "name": "Phoebe", "role": "Titaness mother of Leto" }
+  ],
+  "places": [
+    { "id": "delos", "name": "Delos", "role": "Wandering isle where the twins were born" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "918-923" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.4.1" },
+    { "source": "homer", "work": "Iliad", "citation": "1.1-42" }
+  ]
+}

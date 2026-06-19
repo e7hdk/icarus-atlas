@@ -1,0 +1,32 @@
+{
+  "id": "chryses-apollo",
+  "name": "Chryses",
+  "greekName": "Chrysēs (Χρύσης)",
+  "type": "mortal",
+  "domains": ["priest of Apollo Smintheus", "Chryse", "supplication"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Priest of Apollo at Chryse, whose dishonour by Agamemnon — the refusal to ransom his daughter Chryseis — moved the god to send a plague upon the Achaeans until she was restored.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.9–52, 1.430–452"
+    }
+  ],
+  "story": [
+    {
+      "text": "He came to the swift ships of the Achaeans to free his daughter, bearing ransom past counting and the wreaths of Apollo who strikes from afar on a staff of gold. All the host urged Agamemnon to accept — but the king sent him away with harsh threats, and the old man walked in fear along the shore of the resounding sea. There he prayed to Apollo, and the god heard him.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.9–52"
+    },
+    {
+      "text": "For nine days the god's arrows ranged through the camp. When Calchas named the cause, Agamemnon at last ordered Chryseis sent back. Odysseus took the girl aboard a black ship with a hecatomb; at Chryse they moored, and Chryses received his daughter with joy. He made prayer in the god's honour, and the Achaeans raised the paean until the sun went down and the plague was stayed.",
+      "sources": ["homer"],
+      "citation": "Iliad 1.130–170, 1.430–452"
+    },
+    {
+      "text": "He must not be confused with Chryses son of Minos on Paros, slain by Heracles in an unrelated adventure — a different man who shares only the name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.9"
+    }
+  ]
+}

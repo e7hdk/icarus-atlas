@@ -1,0 +1,38 @@
+{
+  "id": "echo-nymph",
+  "name": "Echo",
+  "greekName": "Ēchō (Ἠχώ)",
+  "romanName": "Echo",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "mountain nymph",
+    "the repeating voice",
+    "unrequited love of Narcissus"
+  ],
+  "summary": [
+    {
+      "text": "A talkative mountain nymph whom Juno stripped of independent speech so that she could repeat only the last words of others — who loved Narcissus, was scorned, and wasted away until nothing remained but her voice among the hills.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.347–401"
+    }
+  ],
+  "story": [
+    {
+      "text": "Echo once possessed a form and spoke as freely as she listened — until Juno, tired of being delayed on the mountains while Echo chatted with Jove's mistresses and let many a nymph escape the goddess' wrath, condemned her to babble and repeat the words once spoken, over and over. From that hour she could answer but not begin speech.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.347–370"
+    },
+    {
+      "text": "She saw Narcissus hunting and loved him. When he called Who is here? she answered Here! and ran to embrace him — but he fled, crying that he would rather die than be caressed by her. Echo wasted to voice and bone among the hills, hiding in caves; yet when Narcissus at last pined for his own reflection and cried that he had destroyed himself, she still answered in grief.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.371–401, 3.437–510"
+    },
+    {
+      "text": "The story lives on the Metamorphoses shelf as `narcissus-echo`, where Tiresias' prophecy and Nemesis' answer frame the boy's fate; Echo's own metamorphosis is the reduction to repeating sound rather than a change of species. Pausanias knew the spring at Thespiae where Narcissus looked into the water, but the nymph's punishment belongs to Ovid's Juno on the highlands.",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 3.339–510; Description of Greece 9.31.7–8"
+    }
+  ]
+}

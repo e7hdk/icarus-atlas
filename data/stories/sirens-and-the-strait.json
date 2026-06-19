@@ -1,0 +1,66 @@
+{
+  "id": "sirens-and-the-strait",
+  "title": "Sirens and the Strait",
+  "greekTitle": "Σειρῆνες καὶ Σκύλλα",
+  "kind": "episode",
+  "parent": "odyssey",
+  "era": 9.025,
+  "summary": {
+    "text": "After the Nekuia, Circe warned of the Sirens, Scylla, Charybdis, and Helios' sacred cattle — Odysseus heard the deadly song lashed to the mast, lost six men to Scylla's jaws, and survived alone when his crew slaughtered the Sun's herds and Zeus shattered the ship.",
+    "sources": ["homer", "apollodorus", "hyginus"],
+    "citation": "Hom. Od. 12; Apollod. Epit. 7.18–23; Hyg. Fab. 125"
+  },
+  "chapters": [
+    {
+      "title": "Circe's counsel",
+      "text": "Returning from Hades, Odysseus buried Elpenor on Aeaea with his armour and oar-mound. Circe warned him of the perils ahead: the Sirens who enchant all who hear them; the twin cliffs where Scylla seizes men from the ship and Charybdis sucks the sea; and Thrinacia, where Helios pastured his immortal cattle and sheep — touch them, she said, and the company would perish.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 12.1–141"
+    },
+    {
+      "title": "The Sirens' song",
+      "text": "Odysseus stopped his comrades' ears with wax and had them lash him naked to the mast so he alone could hear the Sirens promise knowledge of all things — yet live to tell of it. They sang; he begged to be loosed; the crew bound him tighter until the ship was past the enchanted isle and the voices faded.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 12.158–200"
+    },
+    {
+      "title": "Scylla and Charybdis",
+      "text": "Between the whirlpool and the cliff Odysseus rowed nearer Scylla than to Charybdis, though Circe had forbidden fighting the monster — for she could not be slain. Scylla's six heads snatched six companions from the benches; Odysseus saw their arms reach upward as they were lifted to her cave, and could not save them.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 12.201–259; Apollod. Epit. 7.19"
+    },
+    {
+      "title": "The cattle of the Sun",
+      "text": "Contrary winds detained the ship on Thrinacia. Odysseus made his men swear not to touch Helios' herds; but while he slept, hunger and Eurylochus' counsel drove them to slaughter the sacred cattle. The Sun demanded vengeance of Zeus; when the ship put out, a thunderbolt shattered the timbers and every companion drowned.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 12.260–425; Apollod. Epit. 7.20–22; Hyg. Fab. 125"
+    },
+    {
+      "title": "Alone to Ogygia",
+      "text": "Odysseus clung to the keel and mast until Calypso's isle received him — the last survivor of twelve ships, fulfilling in part Polyphemus' curse. For seven years the bright goddess kept him in her caves, offering immortality if he would stay and forget rocky Ithaca.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 12.426–450; Apollod. Epit. 7.23"
+    }
+  ],
+  "cast": [
+    { "id": "odysseus", "name": "Odysseus", "role": "The lone survivor of the shipwreck" },
+    { "id": "circe", "name": "Circe", "role": "She who warned of the perils" },
+    { "id": "sirens", "name": "The Sirens", "role": "Bird-women of the deadly song" },
+    { "id": "scylla-monster", "name": "Scylla", "role": "Cliff-monster who took six men" },
+    { "id": "charybdis", "name": "Charybdis", "role": "The whirlpool between the rocks" },
+    { "id": "helios", "name": "Helios", "role": "Lord of the violated cattle" },
+    { "id": "eurylochus", "name": "Eurylochus", "role": "He who counselled the slaughter" },
+    { "id": "calypso", "name": "Calypso", "role": "Detainer on Ogygia after the wreck" },
+    { "id": "zeus", "name": "Zeus", "role": "He who shattered the ship" }
+  ],
+  "places": [
+    { "name": "Aeaea", "role": "Where Elpenor was buried" },
+    { "name": "Thrinacia", "role": "Isle of Helios' cattle" },
+    { "name": "Ogygia", "role": "Calypso's isle" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "12" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "7.18–23" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "125" }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "aeetes",
+  "name": "Aeetes",
+  "greekName": "Aiētēs (Αἰήτης)",
+  "romanName": "Aeëtes",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+    "domains": [
+    "kingship of Colchis",
+    "guardian of the Golden Fleece",
+    "father of Medea",
+    "husband of Idyia"
+  ],
+  "summary": [
+    {
+      "text": "King of Colchis at Aea, son of Helios and Perse daughter of Ocean, brother of Circe and Pasiphae; he received Phrixus and the golden fleece, and set Jason the trial of the brazen-footed bulls when the Argonauts came for the treasure.",
+      "sources": ["apollodorus", "hesiod", "homer"],
+      "citation": "Bibliotheca 1.9.1, 1.9.23; Theogony 956–959; Odyssey 10.137"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod makes Aeetes son of Helios who gives light to mortals and of Perse whom Ocean begot; by fair-cheeked Idyia, daughter of Ocean, he took wife and begot neat-ankled Medea — Circe and Pasiphae stand as his sisters in the same Sun-born house.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 956–961"
+    },
+    {
+      "text": "Homer knows him only through kinship: Circe the dread goddess of human speech on Aeaea is own sister to Aeetes of baneful mind, and both are sprung from Helius and from Perse their mother.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.137–139"
+    },
+    {
+      "text": "When Phrixus came to the Colchians, Aeetes received him and gave him one of his daughters, Chalciope; Phrixus sacrificed the ram with the golden fleece to Zeus the god of Escape and gave the fleece to Aeetes, who nailed it to an oak in a grove of Ares, where a dragon kept guard that never slept.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "At the river Phasis Jason repaired to Aeetes and invited him to give up the fleece; the king promised it if single-handed Jason would yoke the brazen-footed bulls. When he learned what Medea had done for the stranger, Aeetes pursued the ship — only to gather his son Absyrtus limb from limb when Medea cast the pieces into the deep.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.23–24"
+    },
+    {
+      "text": "Apollonius names Aea of Aeetes as the eastern goal of the voyage, where the fleece hung in the sacred grove and the king's trial awaited the Argonaut captain.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.172, 2.1268"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "hesiod", "homer", "apollonius"]
+    }
+  ]
+}

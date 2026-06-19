@@ -1,0 +1,27 @@
+{
+  "id": "theanus-dardanian",
+  "name": "Theanus",
+  "greekName": "Theanos (Θέανος)",
+  "type": "hero",
+  "domains": ["Dardanian command", "Trojan allies"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Leader of the Dardanians in Apollodorus' catalogue of allies who joined the Trojans after nine years of siege — named beside Aeneas and the sons of Antenor, though Homer fixes the Dardanian muster on Aeneas alone.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.34; Iliad 2.819–821"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Aeneas son of Anchises at the head of the Dardanians whom fair Aphrodite conceived amid the spurs of Ida, but does not name Theanus in the muster-roll.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.819–821"
+    },
+    {
+      "text": "Apollodorus, listing the allies who came to Troy in the tenth year, names Aeneas with Archelochus and Acamas sons of Antenor, and Theanus, as leaders of the Dardanians.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.34"
+    }
+  ]
+}

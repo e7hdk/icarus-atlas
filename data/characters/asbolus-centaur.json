@@ -1,0 +1,33 @@
+{
+  "id": "asbolus-centaur",
+  "name": "Asbolus",
+  "greekName": "Asbolos (Ἄσβολος)",
+  "romanName": "Asbolus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "augury"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The centaur augur who urged his friends to shun the hapless fight at Peirithous' wedding, then fled with Pholus and the rest.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid makes Asbolus the augur among the centaurs — he warned in vain that the wedding feast would end in disaster, then ran with Pholus, Melaneus, and Abas when violence broke out. Nessus, joining the rout, told him he need not flee, for he was reserved for Heracles' bow — a prophecy of the ferryman's later death at the Evenus.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

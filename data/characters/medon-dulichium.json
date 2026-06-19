@@ -1,0 +1,44 @@
+{
+  "id": "medon-dulichium",
+  "name": "Medon",
+  "greekName": "Medōn (Μέδων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "Named among the fifty-seven suitors from Dulichium in Apollodorus' catalogue — a homonym of Medon the herald of Odysseus' house on Ithaca in Homer.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Medon among the wooers assigned to Dulichium in the long island roll of Epitome 7.27, listed after Agerochus and before Agrius. Homer knows a different Medon — the house herald who warned Penelope of the suitors' plots (Odyssey 4.675–710; 16.395–430) — and does not name this Dulichian wooer.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 7.26–7.27; Odyssey 4.675–710"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "clytius-zacynthus",
+  "name": "Clytius",
+  "greekName": "Klytios (Κλυτίος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — distinct from `clytius-same` in Epitome 7.27 and from Clytius among the Same wooers in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Epitome 7.27; Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Clytius among the wooers assigned to Zacynthus, listed after Evenorides and before Agenor in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

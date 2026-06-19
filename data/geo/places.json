@@ -1,0 +1,3773 @@
+[
+  {
+    "id": "thebes",
+    "name": "Thebes",
+    "greekName": "Θῆβαι",
+    "kind": "city",
+    "region": "boeotia",
+    "coordinates": [
+      23.3177,
+      38.3199
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "541138",
+    "importance": "flagship",
+    "cityId": "thebes",
+    "summary": [
+      {
+        "text": "Seven-gated Thebes of Cadmus and Oedipus — the Boeotian city whose royal house was torn apart by curse, fratricide, and the war of the Seven; its Epigon king Thersander sailed for Troy but fell to Telephus in Mysia before the host reached Ilion.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 3.7.2; Epitome 3.17; Description of Greece 9.5.14"
+      }
+    ],
+    "storyIds": [
+      "theban-cycle",
+      "cadmus-and-thebes",
+      "pentheus-and-dionysus",
+      "oedipus-at-thebes",
+      "oedipus-at-colonus",
+      "seven-against-thebes",
+      "antigone-at-thebes",
+      "epigoni",
+      "alcmaeon-wanderings",
+      "cypria",
+      "telephus-at-mysia",
+      "trojan-war",
+      "heracles-cycle",
+      "birth-and-banishment",
+      "omphale-and-troy",
+      "twelve-labours",
+      "theseus-cycle",
+      "king-of-athens",
+      "metamorphoses",
+      "actaeon-artemis",
+      "niobe-niobids",
+      "narcissus-echo"
+    ],
+    "characterIds": [
+      "cadmus",
+      "harmonia",
+      "autonoe",
+      "actaeon",
+      "ino",
+      "semele",
+      "dionysus",
+      "learchus",
+      "melicertes",
+      "agave",
+      "echion",
+      "pentheus",
+      "polydorus",
+      "nycteis",
+      "labdacus",
+      "udaeus",
+      "chthonius-spartos",
+      "hyperenor-spartos",
+      "pelorus-spartos",
+      "nycteus",
+      "antiope",
+      "lycus",
+      "dirce",
+      "amphion",
+      "zethus",
+      "niobe",
+      "laius",
+      "oedipus",
+      "jocasta",
+      "euryganeia",
+      "sphinx",
+      "tiresias",
+      "manto",
+      "eteocles",
+      "polynices",
+      "antigone",
+      "ismene",
+      "creon",
+      "eurydice-thebes",
+      "haemon",
+      "menoeceus",
+      "menoeceus-young",
+      "laodamas-theban",
+      "thersander",
+      "peneleos",
+      "tisamenus-theban",
+      "demonassa-amphiarid",
+      "autesion-theban",
+      "opheltes-peneleid",
+      "damasichthon-theban",
+      "ptolemy-theban",
+      "xanthus-theban",
+      "andropompus-theban"
+    ]
+  },
+  {
+    "id": "orchomenos-boeotia",
+    "name": "Orchomenos",
+    "greekName": "Ὀρχομενός",
+    "kind": "city",
+    "region": "boeotia",
+    "coordinates": [
+      22.619,
+      38.492
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540962",
+    "importance": "major",
+    "cityId": "orchomenos-boeotia",
+    "summary": [
+      {
+        "text": "Rich Orchomenos of the Minyae — the Boeotian kingdom whose kings Clymenus and Erginus once laid tribute on Thebes until Heracles broke their host and Megara was given as the victor's prize.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "ovid",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mycenae",
+    "name": "Mycenae",
+    "greekName": "Μυκῆναι",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.7538,
+      37.7275
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570491",
+    "importance": "flagship",
+    "cityId": "mycenae",
+    "summary": [
+      {
+        "text": "Rich in gold, Mycenae of the Lion Gate — Agamemnon's citadel and the mustering seat of the Achaean host against Troy.",
+        "sources": [
+          "homer",
+          "pausanias",
+          "apollodorus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-cycle",
+      "cypria",
+      "suitor-oath-at-sparta",
+      "iphigenia-at-aulis",
+      "palamedes",
+      "nostoi",
+      "agamemnon-murder",
+      "cassandra-at-mycenae",
+      "nauplius-vengeance",
+      "oresteia",
+      "trojan-war",
+      "heracles-cycle",
+      "birth-and-banishment",
+      "omphale-and-troy",
+      "twelve-labours",
+      "deianira-and-achelous",
+      "death-of-heracles",
+      "return-of-heraclids",
+      "perseus-cycle",
+      "return-and-mycenae"
+    ],
+    "characterIds": [
+      "perseus",
+      "andromeda",
+      "alcaeus-perseid",
+      "sthenelus-perseid",
+      "mestor-perseid",
+      "electryon",
+      "licymnius",
+      "amphitryon",
+      "alcmene",
+      "eurystheus",
+      "heracles",
+      "atreus",
+      "thyestes",
+      "aerope",
+      "agamemnon",
+      "clytemnestra",
+      "tantalus-clytemnestra-husband",
+      "iphigenia",
+      "electra",
+      "chrysothemis",
+      "cassandra",
+      "aegisthus",
+      "orestes"
+    ]
+  },
+  {
+    "id": "argos",
+    "name": "Argos",
+    "greekName": "Ἄργος",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.7204,
+      37.631
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570106",
+    "importance": "flagship",
+    "cityId": "argos",
+    "summary": [
+      {
+        "text": "Argos of Danaus and Perseus — the Peloponnesian kingdom whose kings mustered the Seven against Thebes, sent Diomedes with the largest Argive contingent to Troy, and held the oldest claim to Hera's favour.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Iliad 2.559–580; Bibliotheca 3.7.2; Description of Greece 2.18.4–2.18.5"
+      }
+    ],
+    "storyIds": [
+      "theban-cycle",
+      "seven-against-thebes",
+      "epigoni",
+      "alcmaeon-wanderings",
+      "trojan-war",
+      "nostoi",
+      "nauplius-vengeance",
+      "palamedes",
+      "diomedes-exile",
+      "oresteia",
+      "bellerophon-chimera",
+      "heracles-cycle",
+      "return-of-heraclids",
+      "metamorphoses",
+      "io-wandering",
+      "perseus-cycle",
+      "birth-at-seriphos",
+      "return-and-mycenae"
+    ],
+    "characterIds": [
+      "phoroneus",
+      "inachus",
+      "io",
+      "danaus",
+      "hypermnestra",
+      "lynceus",
+      "abas",
+      "acrisius",
+      "proetus",
+      "perseus",
+      "megapenthes-proetid",
+      "gorgophone",
+      "alcaeus-perseid",
+      "sthenelus-perseid",
+      "mestor-perseid",
+      "melampus",
+      "bias-aeolid",
+      "talaus-aeolid",
+      "adrastus",
+      "argia-adrastid",
+      "aegialeus-adrastid",
+      "amphithea-adrastid",
+      "aegialia-adrastid",
+      "cyanippus-adrastid",
+      "mecisteus-aeolid",
+      "euryalus-aeolid",
+      "pronax-aeolid",
+      "capaneus",
+      "sthenelus-epigoni",
+      "promachus-epigoni",
+      "polydorus-epigoni",
+      "parthenopaeus",
+      "amphiaraus",
+      "oicles",
+      "antiphates-melampid",
+      "mantius-melampid",
+      "cleitus-melampid",
+      "eriphyle",
+      "alcmaeon",
+      "amphilochus",
+      "lycurgus-pronax",
+      "aristomachus-aeolid",
+      "hippomedon",
+      "deipyle",
+      "tydeus",
+      "diomedes",
+      "argeus-argos",
+      "anaxagoras-argos",
+      "alector-anaxagoras",
+      "iphis-anaxagoras",
+      "cylarabes-sthenelid",
+      "orestes",
+      "tisamenus",
+      "temenus",
+      "hyrnetho",
+      "deiphontes",
+      "polypheides",
+      "theoclymenus"
+    ]
+  },
+  {
+    "id": "athens",
+    "name": "Athens",
+    "greekName": "Ἀθῆναι",
+    "kind": "city",
+    "region": "attica-proper",
+    "coordinates": [
+      23.7239,
+      37.9716
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "579885",
+    "importance": "flagship",
+    "cityId": "athens",
+    "summary": [
+      {
+        "text": "Athena's olive-crowned city — Cecrops' ancient acropolis, Theseus' united Attica, and the Attic hearth of the Ionian migration.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "characterIds": [
+      "aegeus",
+      "medea-colchis",
+      "medus",
+      "theseus",
+      "oedipus"
+    ],
+    "storyIds": [
+      "argonautica",
+      "theseus-cycle",
+      "road-to-athens",
+      "minotaur-and-ariadne",
+      "king-of-athens",
+      "amazon-campaign",
+      "hippolytus",
+      "pirithous-and-the-underworld",
+      "death-on-skyros",
+      "oedipus-at-colonus",
+      "oresteia",
+      "little-iliad",
+      "polyxena-at-the-tomb",
+      "metamorphoses",
+      "cephalus-procris",
+      "hippolytus-inset"
+    ]
+  },
+  {
+    "id": "sparta",
+    "name": "Sparta",
+    "greekName": "Σπάρτη",
+    "kind": "city",
+    "region": "laconia",
+    "coordinates": [
+      22.4247,
+      37.0818
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570685",
+    "importance": "flagship",
+    "cityId": "sparta",
+    "summary": [
+      {
+        "text": "Sparta of Tyndareus' house — Menelaus' kingdom and Helen's home, from whose wronged hearth the Achaeans sailed to Troy.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-cycle",
+      "cypria",
+      "suitor-oath-at-sparta",
+      "iphigenia-at-aulis",
+      "judgment-of-paris",
+      "nostoi",
+      "menelaus-in-egypt",
+      "oresteia",
+      "trojan-war",
+      "odyssey",
+      "telemachus-and-the-suitors",
+      "heracles-cycle",
+      "return-of-heraclids",
+      "theseus-cycle",
+      "pirithous-and-the-underworld"
+    ],
+    "characterIds": [
+      "menelaus",
+      "helen",
+      "telemachus",
+      "peisistratus-nestor"
+    ]
+  },
+  {
+    "id": "pylos",
+    "name": "Pylos",
+    "greekName": "Πύλος",
+    "kind": "city",
+    "region": "messenia",
+    "coordinates": [
+      21.66,
+      36.952
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570640",
+    "importance": "flagship",
+    "cityId": "pylos",
+    "summary": [
+      {
+        "text": "Sandy Pylos of the Neleids — Neleus' kingdom on the Messenian coast, where old Nestor counselled the Achaeans and mustered ninety ships to Troy.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-cycle",
+      "trojan-war",
+      "nostoi",
+      "nestor-at-pylos",
+      "philoctetes-to-italy",
+      "odyssey",
+      "telemachus-and-the-suitors"
+    ],
+    "characterIds": [
+      "nestor",
+      "eurydice-nestor",
+      "anaxibia-nestor",
+      "clymenus-pylos",
+      "cratieus-pylos",
+      "telemachus",
+      "theoclymenus",
+      "peisistratus-nestor",
+      "thrasymedes-nestor",
+      "echephron-nestor",
+      "stratius-nestor",
+      "perseus-nestor",
+      "aretus-nestor",
+      "antilochus-nestor",
+      "pisidice-nestor",
+      "polycaste-nestor"
+    ]
+  },
+  {
+    "id": "andania",
+    "name": "Andania",
+    "greekName": "Ἀνδανία",
+    "kind": "city",
+    "region": "messenia",
+    "coordinates": [
+      21.938,
+      37.262
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "570079",
+    "importance": "major",
+    "cityId": "andania",
+    "summary": [
+      {
+        "text": "Andania of the Great Goddesses — Polycaon and Messene founded it and built their palace here; Caucon first taught the mysteries on this spot, and Lycus son of Pandion later brought the full Attic rite when exiled from Athens.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 4.1.2, 4.1.8–9, 4.2.6"
+      },
+      {
+        "text": "Before Aphareus founded Arene, Perieres and the earlier Messenian kings dwelt at Andania — the inland seat from which the Aeolid line held the country until the coastward courts moved seaward.",
+        "sources": [
+          "pausanias",
+          "apollodorus"
+        ],
+        "citation": "Description of Greece 4.2.2, 4.3.7; Bibliotheca 1.9.5"
+      }
+    ]
+  },
+  {
+    "id": "arene",
+    "name": "Arene",
+    "greekName": "Ἀρήνη",
+    "kind": "city",
+    "region": "messenia",
+    "coordinates": [
+      21.596,
+      37.526
+    ],
+    "certainty": "disputed",
+    "pleiadesId": "570653",
+    "importance": "major",
+    "cityId": "arene",
+    "summary": [
+      {
+        "text": "Lovely Arene of the Apharetids — Aphareus' Messenian city, named for his wife, whence Idas and keen-eyed Lynceus sailed to the Argo; Homer counts it in Nestor's kingdom beside sandy Pylos, where the Minyeius flows into the sea.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "apollonius",
+          "pausanias"
+        ],
+        "citation": "Iliad 2.591, 11.722–723; Bibliotheca 3.10.3; Arg. 1.151; Paus. 4.2.4"
+      },
+      {
+        "text": "Pausanias could not fix the ruins in his own day and reports that many held heroic Arene identical with Samicum on the Triphylian coast — the map point follows Pleiades' Samikon entry under that disputed identification.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 5.6.2–3"
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "troy",
+    "name": "Troy",
+    "greekName": "Τροία",
+    "kind": "city",
+    "region": "troad",
+    "coordinates": [
+      26.2385,
+      39.9574
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550595",
+    "importance": "flagship",
+    "cityId": "troy",
+    "summary": [
+      {
+        "text": "Ilion of Priam on the Trojan plain — the besieged city whose fall Homer sang, and whose ashes seeded the wanderings of the survivors.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-cycle",
+      "house-of-troy",
+      "heracles-cycle",
+      "judgment-of-paris",
+      "cypria",
+      "suitor-oath-at-sparta",
+      "iphigenia-at-aulis",
+      "telephus-at-mysia",
+      "protesilaus-at-troy",
+      "palamedes",
+      "trojan-war",
+      "wrath-and-plague",
+      "duel-and-truce",
+      "diomedes-aristeia",
+      "hector-and-the-wall",
+      "embassy-to-achilles",
+      "wounding-of-the-chiefs",
+      "battle-for-the-ships",
+      "patroclus-falls",
+      "achilles-and-hector",
+      "priam-and-ransom",
+      "rhesus",
+      "aethiopis",
+      "philoctetes-on-lemnos",
+      "ajax-and-the-arms",
+      "little-iliad",
+      "the-wooden-horse",
+      "sack-of-troy",
+      "polyxena-at-the-tomb",
+      "nostoi",
+      "locrian-ajax",
+      "cassandra-at-mycenae",
+      "neoptolemus-to-epirus",
+      "calchas-at-colophon",
+      "philoctetes-to-italy",
+      "aeneas-to-italy",
+      "odyssey",
+      "metamorphoses",
+      "aeneas-after-troy",
+      "acis-galatea"
+    ]
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth",
+    "greekName": "Κόρινθος",
+    "kind": "city",
+    "region": "corinthia",
+    "coordinates": [
+      22.876,
+      37.906
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570067",
+    "importance": "major",
+    "cityId": "corinth",
+    "summary": [
+      {
+        "text": "Corinth of the Isthmus — the wealthy crossroads polis whose kings Sisyphus and Glaucus belong to the oldest tales of cunning, and from whose harbour the Argonauts once put to sea.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "characterIds": [
+      "medea-colchis",
+      "mermerus-corinth",
+      "pheres-corinth",
+      "creon-corinth",
+      "glauce-corinth",
+      "jason"
+    ],
+    "storyIds": [
+      "argonautica",
+      "medea-at-corinth",
+      "bellerophon-chimera"
+    ]
+  },
+  {
+    "id": "tiryns",
+    "name": "Tiryns",
+    "greekName": "Τίρυνς",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.8,
+      37.602
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570591",
+    "importance": "major",
+    "cityId": "tiryns",
+    "summary": [
+      {
+        "text": "Tiryns of the Cyclopean walls — the fortress Proetus built, Perseus took in exchange for Argos, and where Heracles served Eurystheus at the start of his labours.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "heracles-cycle",
+      "birth-and-banishment",
+      "omphale-and-troy",
+      "twelve-labours",
+      "bellerophon-chimera"
+    ],
+    "characterIds": [
+      "heracles",
+      "eurystheus",
+      "alcmene",
+      "amphitryon"
+    ]
+  },
+  {
+    "id": "megara",
+    "name": "Megara",
+    "greekName": "Μέγαρα",
+    "kind": "city",
+    "region": "megaris",
+    "coordinates": [
+      23.343,
+      37.994
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570168",
+    "importance": "major",
+    "cityId": "megara",
+    "summary": [
+      {
+        "text": "Megara on the Saronic coast — the city of Nisus and Scylla, where Alcathous rebuilt the walls and where Perseus went down to reign after the death of Acrisius.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "perseus-cycle",
+      "return-and-mycenae",
+      "metamorphoses",
+      "scylla-minos"
+    ]
+  },
+  {
+    "id": "salamis",
+    "name": "Salamis",
+    "greekName": "Σαλαμίς",
+    "kind": "city",
+    "region": "salamis",
+    "coordinates": [
+      23.484,
+      37.943
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "580101",
+    "importance": "major",
+    "cityId": "salamis",
+    "summary": [
+      {
+        "text": "Telamon's island kingdom in the Saronic Gulf — home of the greater Ajax and Teucer, who led the Salaminians beside the Athenian host at Troy.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "nostoi",
+      "lesser-returns",
+      "teucer-to-cyprus"
+    ]
+  },
+  {
+    "id": "knossos",
+    "name": "Knossos",
+    "greekName": "Κνωσσός",
+    "kind": "city",
+    "region": "crete",
+    "coordinates": [
+      25.163,
+      35.298
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "589873",
+    "importance": "major",
+    "cityId": "knossos",
+    "summary": [
+      {
+        "text": "Knossos of Minos — the Cretan palace-city whose labyrinth held the Minotaur and whose king's thalassocracy Homer knew when Odysseus saw him judging the dead.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "cosmogony",
+      "titanomachy",
+      "trojan-war",
+      "nostoi",
+      "lesser-returns",
+      "idomeneus-and-leucus",
+      "theseus-cycle",
+      "minotaur-and-ariadne",
+      "metamorphoses",
+      "daedalus-icarus",
+      "scylla-minos"
+    ]
+  },
+  {
+    "id": "iolcus",
+    "name": "Iolcus",
+    "greekName": "Ἰωλκός",
+    "kind": "city",
+    "region": "magnesia",
+    "coordinates": [
+      22.95,
+      39.386
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540880",
+    "importance": "major",
+    "cityId": "iolcus",
+    "storyIds": [
+      "argonautica",
+      "muster-of-the-argo",
+      "return-of-the-argo",
+      "metamorphoses",
+      "erysichthon-hunger"
+    ],
+    "summary": [
+      {
+        "text": "Iolcus on the Pagasetic gulf — Pelias' kingdom in Thessaly, where Jason was sent forth after the Golden Fleece and the Argo was launched.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "apollonius"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "larisa",
+    "name": "Larisa",
+    "greekName": "Λάρισα",
+    "kind": "city",
+    "region": "pelasgiotis",
+    "coordinates": [
+      22.421,
+      39.64
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540876",
+    "importance": "major",
+    "cityId": "larisa",
+    "summary": [
+      {
+        "text": "Larissa of the Thessalian plain — Pirithous' city of the Lapiths, and the Pelasgian kingdom where Teutamides held funeral games when Perseus' quoit fulfilled the oracle.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "perseus-cycle",
+      "return-and-mycenae"
+    ]
+  },
+  {
+    "id": "pherae",
+    "name": "Pherae",
+    "greekName": "Φεραί",
+    "kind": "city",
+    "region": "pelasgiotis",
+    "coordinates": [
+      22.738,
+      39.384
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "541044",
+    "importance": "major",
+    "cityId": "pherae",
+    "summary": [
+      {
+        "text": "Pherae beside lake Boebeis — the city Pheres founded in Thessaly, where Apollo served Admetus as herdsman and Alcestis died in her husband's stead.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "hyginus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "chalcis",
+    "name": "Chalcis",
+    "greekName": "Χαλκίς",
+    "kind": "city",
+    "region": "euboea",
+    "coordinates": [
+      23.6,
+      38.463
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540799",
+    "importance": "major",
+    "cityId": "chalcis",
+    "summary": [
+      {
+        "text": "Chalcis on the Euripus — chief city of the Abantes, whose prince Elephenor son of Chalcodon led the island's host to Troy.",
+        "sources": [
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "cypria",
+      "iphigenia-at-aulis"
+    ]
+  },
+  {
+    "id": "gortyn",
+    "name": "Gortyn",
+    "greekName": "Γόρτυν",
+    "kind": "city",
+    "region": "crete",
+    "coordinates": [
+      24.947,
+      35.062
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "589884",
+    "importance": "major",
+    "cityId": "gortyn",
+    "summary": [
+      {
+        "text": "Gortyn on Crete's southern plain — the cliff-girt city beside the misty deep where Menelaus' storm-tossed ships scraped the headland on the road home from Troy.",
+        "sources": [
+          "homer",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "colchis",
+    "name": "Colchis",
+    "greekName": "Κολχίς",
+    "kind": "myth-site",
+    "region": "colchis",
+    "coordinates": [
+      41.98,
+      42.25
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "678034",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The kingdom at the eastern edge of the Greek world — Aea of Aeëtes, where the fleece hung in the sacred grove and Jason's Argonauts won Medea by the king's own trial.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "apollonius"
+        ]
+      }
+    ],
+    "characterIds": [
+      "jason"
+    ]
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "greekName": "Μέμφις",
+    "kind": "myth-site",
+    "region": null,
+    "coordinates": [
+      31.25,
+      29.87
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "776781",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The white-walled capital of Egypt — where Io wandered as a cow under Hera's gadfly, where Proteus kept his shifting shapes, and where Helen was said to have sat out the Trojan War in phantom form.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "characterIds": [
+      "proteus",
+      "eidothea-proteus",
+      "menelaus",
+      "helen"
+    ],
+    "storyIds": [
+      "trojan-war",
+      "odyssey"
+    ]
+  },
+  {
+    "id": "syracuse",
+    "name": "Syracuse",
+    "greekName": "Συράκουσαι",
+    "kind": "city",
+    "region": "sicily",
+    "coordinates": [
+      15.283,
+      37.07
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "462503",
+    "importance": "major",
+    "cityId": "syracuse",
+    "summary": [
+      {
+        "text": "Syracuse on Ortygia — the Corinthian colony Delphi sent Archias to found, where the oracle said the mouth of Alpheus would mingle with broad Arethusa's springs on the misty island facing Trinacria.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 5.7.2–5.7.3"
+      },
+      {
+        "text": "The great Sicilian city stood at the western horizon of the Greek world — refuge of Daedalus after Icarus fell, and the shore toward which Odysseus' long wandering touched the Italian West.",
+        "sources": [
+          "homer",
+          "ovid",
+          "apollodorus"
+        ]
+      }
+    ],
+    "characterIds": [
+      "arethusa-nymph",
+      "daedalus"
+    ],
+    "storyIds": [
+      "daedalus-icarus",
+      "odyssey"
+    ]
+  },
+  {
+    "id": "lavinium",
+    "name": "Lavinium",
+    "greekName": "Λαουίνιον",
+    "kind": "city",
+    "region": "latium",
+    "coordinates": [
+      12.481,
+      41.665
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "422960",
+    "importance": "major",
+    "cityId": "lavinium",
+    "summary": [
+      {
+        "text": "Lavinium on the Laurentine coast — where Apollodorus and Hyginus send Aeneas after Troy among the Italian peoples, the Latin landing of the Dardanian line that the Returns count among the wanderers who reached the West.",
+        "sources": [
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Epitome 6.20; Fabulae 120"
+      },
+      {
+        "text": "Ovid names Lavinium's sacred homes on the Tiber approach and sets Aeneas' washing in the Numicius at the Laurentine shore before the hero passes into the god Indiges.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.842–881, 15.1012–1099"
+      }
+    ],
+    "characterIds": [
+      "aeneas",
+      "anchises"
+    ],
+    "storyIds": [
+      "aeneas-to-italy",
+      "nostoi"
+    ]
+  },
+  {
+    "id": "cumae",
+    "name": "Cumae",
+    "greekName": "Κύμη",
+    "kind": "city",
+    "region": "campania",
+    "coordinates": [
+      14.056,
+      40.848
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "432808",
+    "importance": "major",
+    "cityId": "cumae",
+    "summary": [
+      {
+        "text": "Cumae on the Campanian marsh — first Greek colony on the Italian mainland, where Trojan Aeneas landed, sacrificed, and begged the long-lived Sibyl for passage to Avernus and his father's shade.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.154–335"
+      },
+      {
+        "text": "Pausanias knew Cumae among the Opici as the home of Sibyls — Demo of Cumae and the stone urn in Apollo's sanctuary said to hold the Sibyl's bones.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.12.8"
+      }
+    ],
+    "characterIds": [
+      "aeneas"
+    ],
+    "storyIds": [
+      "aeneas-to-italy",
+      "philoctetes-to-italy",
+      "nostoi"
+    ]
+  },
+  {
+    "id": "tarentum",
+    "name": "Tarentum",
+    "greekName": "Τάρας",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      17.233,
+      40.474
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "442810",
+    "importance": "major",
+    "cityId": "tarentum",
+    "summary": [
+      {
+        "text": "Tarentum on the heel of Italy — Spartan colony of Phalanthus, whom Delphi's oracle sent to seize the coast when rain fell from a cloudless sky upon his wife Aethra's tears, and named for Taras son of Poseidon.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.10.6–10.10.8"
+      },
+      {
+        "text": "The Tarentines dedicated spoils and horse-offerings at Olympia and Delphi — a flagship city of Achaean Magna Graecia where hero cult and colonial myth met the wider Greek world.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 10.10.6, 5.25.7"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "croton",
+    "name": "Croton",
+    "greekName": "Κρότων",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      17.128,
+      39.081
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452317",
+    "importance": "major",
+    "cityId": "croton",
+    "summary": [
+      {
+        "text": "Croton on the Ionian coast — Spartan colony sent with Locri under Polydorus, and in Crotonian legend the starting-point of Leonymus' voyage to the White Island where Achilles received hero cult.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 3.3.1, 3.19.11–3.19.12"
+      },
+      {
+        "text": "Ovid tells how Hercules rested at far-famed Croton and promised the place to Myscelus' race; the city that bears Croton's buried bones still keeps his name on the Italian shore.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 15.1–91"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "locri",
+    "name": "Locri",
+    "greekName": "Λοκροὶ Ἐπιζεφύριοι",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      16.244,
+      38.226
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452369",
+    "importance": "major",
+    "cityId": "locri",
+    "summary": [
+      {
+        "text": "Locri by the Western headland — Spartan colony paired with Croton when Polydorus sent settlers across the sea, the Epizephyrian city on the toe of Italy.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 3.3.1"
+      },
+      {
+        "text": "The Locrians who dwell near the Western Cape dedicated a gilded boxwood Apollo at Olympia — Patrocles of Croton made the image that Pausanias saw among the hero offerings.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 6.19.6"
+      }
+    ],
+    "storyIds": [
+      "diomedes-exile"
+    ]
+  },
+  {
+    "id": "rhegium",
+    "name": "Rhegium",
+    "greekName": "Ῥήγιον",
+    "kind": "city",
+    "region": "magna-graecia",
+    "coordinates": [
+      15.644,
+      38.109
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "452416",
+    "importance": "major",
+    "cityId": "rhegium",
+    "summary": [
+      {
+        "text": "Rhegium on the Calabrian shore — opposite Zancle across the strait where Homer set Scylla and Charybdis, and the crossing Heracles used when a bull swam from Rhegium to Sicily and gave Italy its name.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Odyssey 12.235–275; Bibliotheca 2.5.10"
+      },
+      {
+        "text": "Ovid sets Galatea's tale beside the opposite walls of Rhegium and the sea abundant in shipwreck — the Ausonian shore facing Sicily across the Tyrrhenian passage.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 14.1–108"
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ]
+  },
+  {
+    "id": "delphi",
+    "name": "Delphi",
+    "greekName": "Δελφοί",
+    "kind": "sanctuary",
+    "region": "phocis",
+    "coordinates": [
+      22.493,
+      38.482
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570621",
+    "importance": "major",
+    "deityIds": [
+      "apollo"
+    ],
+    "summary": [
+      {
+        "text": "The navel of the earth — Apollo's oracle on the slopes of Parnassus, where the Pythia spoke for gods and kings and the temple treasury held the tribute of Greece.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "cosmogony",
+      "titanomachy",
+      "great-flood",
+      "theban-cycle",
+      "cadmus-and-thebes",
+      "oedipus-at-thebes",
+      "seven-against-thebes",
+      "antigone-at-thebes",
+      "epigoni",
+      "alcmaeon-wanderings",
+      "polyxena-at-the-tomb",
+      "locrian-ajax",
+      "cassandra-at-mycenae",
+      "neoptolemus-to-epirus",
+      "metamorphoses",
+      "cephalus-procris"
+    ]
+  },
+  {
+    "id": "olympia",
+    "name": "Olympia",
+    "greekName": "Ὀλυμπία",
+    "kind": "sanctuary",
+    "region": "elis",
+    "coordinates": [
+      21.628,
+      37.638
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570268",
+    "importance": "major",
+    "deityIds": [
+      "zeus"
+    ],
+    "summary": [
+      {
+        "text": "The Altis of Zeus — sanctuary of the Olympic games, where Pelops won Hippodamia and the victors' olive crowns were cut from the god's sacred grove.",
+        "sources": [
+          "homer",
+          "pausanias",
+          "apollodorus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "eleusis",
+    "name": "Eleusis",
+    "greekName": "Ἐλευσίς",
+    "kind": "sanctuary",
+    "region": "attica-proper",
+    "coordinates": [
+      23.539,
+      38.033
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "573876",
+    "importance": "major",
+    "deityIds": [
+      "demeter"
+    ],
+    "summary": [
+      {
+        "text": "The Telesterion of Demeter — where the Mysteries were celebrated, Persephone returned from the underworld, and initiates walked the Sacred Way from Athens.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dodona",
+    "name": "Dodona",
+    "greekName": "Δωδώνη",
+    "kind": "sanctuary",
+    "region": "molossis",
+    "coordinates": [
+      20.788,
+      39.546
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570072",
+    "importance": "major",
+    "deityIds": [
+      "zeus"
+    ],
+    "summary": [
+      {
+        "text": "The oak of Zeus at Dodona — oldest oracle in Greece, where the god spoke in the rustle of sacred leaves and the bronze cauldrons chimed when the wind struck them.",
+        "sources": [
+          "homer",
+          "hesiod",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nemea",
+    "name": "Nemea",
+    "greekName": "Νεμέα",
+    "kind": "sanctuary",
+    "region": "argolis",
+    "coordinates": [
+      22.719,
+      37.812
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570483",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Nemea of the lion — where Heracles strangled the beast at the start of his labours, and where the Nemean games were founded in honour of the dead child Opheltes.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "seven-against-thebes",
+      "heracles-cycle",
+      "omphale-and-troy",
+      "twelve-labours"
+    ]
+  },
+  {
+    "id": "epidaurus-polis",
+    "name": "Epidaurus",
+    "greekName": "Ἐπίδαυρος",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      23.157,
+      37.64
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570182",
+    "importance": "major",
+    "cityId": "epidaurus-polis",
+    "summary": [
+      {
+        "text": "Vine-clad Epidaurus of the Argolid — a Homeric city in Diomedes' muster, and later the kingdom Deiphontes and Hyrnetho held when the Heraclids took the land from Argos.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "epidaurus",
+    "name": "Epidaurus",
+    "greekName": "Ἐπίδαυρος",
+    "kind": "sanctuary",
+    "region": "argolis",
+    "coordinates": [
+      23.079,
+      37.596
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570179",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The sanctuary of Asclepius at Epidaurus — the healing god's greatest shrine, where the sick slept in the abaton and woke cured by the serpent-god's dream.",
+        "sources": [
+          "homer",
+          "pausanias",
+          "apollodorus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "brauron",
+    "name": "Brauron",
+    "greekName": "Βραυρών",
+    "kind": "sanctuary",
+    "region": "attica-proper",
+    "coordinates": [
+      24.085,
+      38.015
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "579884",
+    "importance": "major",
+    "deityIds": [
+      "artemis"
+    ],
+    "summary": [
+      {
+        "text": "The Brauronian Artemis — where young Athenian girls served the goddess as arktoi, the little bears, in rites of passage beside the marshy stream.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "isthmia",
+    "name": "Isthmia",
+    "greekName": "Ἰσθμία",
+    "kind": "sanctuary",
+    "region": "corinthia",
+    "coordinates": [
+      22.995,
+      37.906
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570182",
+    "importance": "major",
+    "deityIds": [
+      "poseidon"
+    ],
+    "summary": [
+      {
+        "text": "The Isthmian sanctuary of Poseidon — beside the Corinthian crossing, where the games in honour of the sea-god drew Greeks from every quarter of the Peloponnese.",
+        "sources": [
+          "homer",
+          "pausanias",
+          "apollodorus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "delos",
+    "name": "Delos",
+    "greekName": "Δῆλος",
+    "kind": "city",
+    "region": "delos",
+    "coordinates": [
+      25.267,
+      37.391
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "577086",
+    "importance": "major",
+    "cityId": "delos",
+    "deityIds": [
+      "apollo",
+      "artemis"
+    ],
+    "summary": [
+      {
+        "text": "Holy Delos — the Cycladic isle where Leto bore Apollo and Artemis, Asteria's quail-form become stone, and Anius son of Apollo ruled the Delian city when Aeneas came to Apollo's shore.",
+        "sources": [
+          "apollodorus",
+          "ovid",
+          "hesiod"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "delos-sanctuary",
+    "name": "Delos",
+    "greekName": "Δῆλος",
+    "kind": "sanctuary",
+    "region": "delos",
+    "coordinates": [
+      25.267,
+      37.391
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "577086",
+    "importance": "major",
+    "deityIds": [
+      "apollo",
+      "artemis"
+    ],
+    "summary": [
+      {
+        "text": "The sacred isle of Delos — birthplace of Apollo and Artemis, where Leto found refuge and the Delian league later centred its treasury.",
+        "sources": [
+          "homer",
+          "hesiod",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "claros",
+    "name": "Claros",
+    "greekName": "Κλάρος",
+    "kind": "sanctuary",
+    "region": null,
+    "coordinates": [
+      26.881,
+      38.073
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "638860",
+    "importance": "major",
+    "deityIds": [
+      "apollo"
+    ],
+    "storyIds": [
+      "argonautica",
+      "muster-of-the-argo",
+      "calchas-at-colophon"
+    ],
+    "summary": [
+      {
+        "text": "Claros of Colophon — Apollo's oracular shrine beside the sea, named with Delphi and Patara when the god walked among mortals and when Jason passed through the Ionian coast; near Notium where Calchas died after Mopsus outprophesied him.",
+        "sources": [
+          "apollonius",
+          "ovid",
+          "apollodorus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samothrace",
+    "name": "Samothrace",
+    "greekName": "Σαμοθρᾴκη",
+    "kind": "city",
+    "region": "samothrace",
+    "coordinates": [
+      25.539,
+      40.41
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599330",
+    "importance": "major",
+    "cityId": "samothrace",
+    "summary": [
+      {
+        "text": "Samothrace — the North Aegean island whose wooded peak Homer gave Poseidon as a seat overlooking Ida and Troy, and from which Dardanus sailed after Iasion's death.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "house-of-troy"
+    ]
+  },
+  {
+    "id": "naxos",
+    "name": "Naxos",
+    "greekName": "Νάξος",
+    "kind": "city",
+    "region": "naxos",
+    "coordinates": [
+      25.376,
+      37.104
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599117",
+    "importance": "major",
+    "cityId": "naxos",
+    "deityIds": [
+      "dionysus"
+    ],
+    "summary": [
+      {
+        "text": "Sea-girt Naxos — the Cycladic isle Homer calls Dia, where Theseus left Ariadne and Dionysus found her, and where Artemis slew the Cretan princess on the god's testimony.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ],
+    "storyIds": [
+      "theseus-cycle",
+      "minotaur-and-ariadne"
+    ]
+  },
+  {
+    "id": "melos",
+    "name": "Melos",
+    "greekName": "Μῆλος",
+    "kind": "city",
+    "region": "melos",
+    "coordinates": [
+      24.433,
+      36.688
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570475",
+    "importance": "major",
+    "cityId": "melos",
+    "summary": [
+      {
+        "text": "Melos of the southwestern Cyclades — whose king Polyanax died as the heroes sailed home from Troy, and where Menestheus son of Peteos went to reign after leading the Athenians at Ilium.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "myconos",
+    "name": "Myconos",
+    "greekName": "Μύκονος",
+    "kind": "city",
+    "region": "myconos",
+    "coordinates": [
+      25.372,
+      37.453
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599808",
+    "importance": "major",
+    "cityId": "myconos",
+    "summary": [
+      {
+        "text": "Level Myconos of the Cyclades — where Thetis buried the Locrian Ajax son of Oileus after Athena wrecked his ship and Poseidon split the rock he clung to on the homeward voyage from Troy, and one of the isles that joined Minos when he mustered the Cyclades against Athens.",
+        "sources": [
+          "apollodorus",
+          "ovid",
+          "hyginus"
+        ],
+        "citation": "Epitome 6.6; Metamorphoses 7.731; Fabulae 276"
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "nostoi",
+      "locrian-ajax"
+    ],
+    "characterIds": [
+      "thetis"
+    ]
+  },
+  {
+    "id": "andros",
+    "name": "Andros",
+    "greekName": "Ἄνδρος",
+    "kind": "city",
+    "region": "andros",
+    "coordinates": [
+      24.853,
+      37.855
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "589693",
+    "importance": "major",
+    "cityId": "andros",
+    "summary": [
+      {
+        "text": "Andros of the northern Cyclades — the first landfall of Phidippus son of Thessalus and the Coans on their homeward voyage from Troy, before the wind drove them on to Cyprus.",
+        "sources": [
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "tenos",
+    "name": "Tenos",
+    "greekName": "Τῆνος",
+    "kind": "city",
+    "region": "tenos",
+    "coordinates": [
+      25.113,
+      37.615
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "590074",
+    "importance": "major",
+    "cityId": "tenos",
+    "summary": [
+      {
+        "text": "Sea-girt Tenos — where Heracles slew the winged Argonauts Zetes and Calais and heaped earth over their tombs, and where Athena later wrecked much of the Greek fleet sailing home from Troy.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "ceos",
+    "name": "Ceos",
+    "greekName": "Κέως",
+    "kind": "city",
+    "region": "ceos",
+    "coordinates": [
+      24.327,
+      37.614
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570348",
+    "importance": "major",
+    "cityId": "ceos",
+    "summary": [
+      {
+        "text": "Ceos of the western Cyclades — where Aristaeus son of Apollo settled after Sirius scorched the Minoan isles, gathered the Parrhasian people of Lycaon's line, and built the great altar of Zeus Icmaeus on the mountains.",
+        "sources": [
+          "apollonius"
+        ]
+      }
+    ],
+    "characterIds": [
+      "aristaeus"
+    ]
+  },
+  {
+    "id": "zeus-icmaeus-ceos",
+    "name": "Altar of Zeus Icmaeus",
+    "greekName": "Διὸς Ἰκμαίου",
+    "kind": "sanctuary",
+    "region": "ceos",
+    "coordinates": [
+      24.34,
+      37.62
+    ],
+    "certainty": "traditional",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The mountain altar of Zeus Icmaeus on Ceos — where Aristaeus, at Apollo's command, offered sacrifice to Sirius and Zeus son of Cronus and so ended the plague that Sirius had brought upon the Minoan isles.",
+        "sources": [
+          "apollonius"
+        ],
+        "citation": "Argonautica 2.500–527"
+      }
+    ],
+    "characterIds": [
+      "aristaeus"
+    ],
+    "deityIds": [
+      "zeus"
+    ]
+  },
+  {
+    "id": "kimolos",
+    "name": "Kimolos",
+    "greekName": "Κίμωλος",
+    "kind": "city",
+    "region": "kimolos",
+    "coordinates": [
+      24.56,
+      36.813
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "589868",
+    "importance": "minor",
+    "cityId": "kimolos",
+    "summary": [
+      {
+        "text": "Kimolos of the chalky fields — the western Cycladic isle that agreed to aid Minos when he mustered the islands against Athens.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 7.731"
+      }
+    ]
+  },
+  {
+    "id": "seriphos",
+    "name": "Seriphos",
+    "greekName": "Σέριφος",
+    "kind": "city",
+    "region": "seriphos",
+    "coordinates": [
+      24.482,
+      37.156
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "590044",
+    "importance": "major",
+    "cityId": "seriphos",
+    "summary": [
+      {
+        "text": "Level Seriphos — where Acrisius' chest bearing Danae and Perseus came ashore, Dictys the fisherman reared the hero, Polydectes sent him after the Gorgon's head, and Perseus returned to turn the king to stone and set Dictys on the throne.",
+        "sources": [
+          "apollodorus",
+          "hyginus",
+          "ovid"
+        ],
+        "citation": "Bibliotheca 2.4.1–3; Fabulae 63, 273; Metamorphoses 7.731"
+      }
+    ],
+    "storyIds": [
+      "perseus-cycle",
+      "birth-at-seriphos",
+      "the-gorgon-medusa",
+      "andromeda-rescue",
+      "return-and-mycenae"
+    ],
+    "characterIds": [
+      "perseus",
+      "danae",
+      "polydectes",
+      "dictys"
+    ]
+  },
+  {
+    "id": "siphnos",
+    "name": "Siphnos",
+    "greekName": "Σίφνος",
+    "kind": "city",
+    "region": "siphnos",
+    "coordinates": [
+      24.694,
+      36.976
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "590049",
+    "importance": "major",
+    "cityId": "siphnos",
+    "summary": [
+      {
+        "text": "Siphnos of the gold mines — whose island wealth built the treasury at Delphi until greed stopped the tithe and the sea flooded the workings; and home of Arne the impious Siphnian, who betrayed her city for gold and was changed to a black-foot daw.",
+        "sources": [
+          "pausanias",
+          "ovid"
+        ],
+        "citation": "Description of Greece 10.11.2; Metamorphoses 7.731"
+      }
+    ],
+    "characterIds": [
+      "arne-siphnos"
+    ]
+  },
+  {
+    "id": "syros",
+    "name": "Syros",
+    "greekName": "Σύρος",
+    "kind": "city",
+    "region": "syros",
+    "coordinates": [
+      24.9,
+      37.45
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "590067",
+    "importance": "minor",
+    "cityId": "syros",
+    "summary": [
+      {
+        "text": "Syros covered with wild thyme — a Cycladic isle that joined Minos' allies when he gathered the islands against Athens.",
+        "sources": [
+          "ovid"
+        ],
+        "citation": "Metamorphoses 7.731"
+      }
+    ]
+  },
+  {
+    "id": "samos",
+    "name": "Samos",
+    "greekName": "Σάμος",
+    "kind": "city",
+    "region": "samos",
+    "coordinates": [
+      26.887,
+      37.754
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599253",
+    "importance": "major",
+    "cityId": "samos",
+    "deityIds": [
+      "hera"
+    ],
+    "summary": [
+      {
+        "text": "Parthenia of the Imbrasian Hera — the Ionian isle whose great sanctuary Apollonius names the seat of Hera, whence Poseidon's son Ancaeus sailed with Jason to Colchis.",
+        "sources": [
+          "apollonius",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rhodes",
+    "name": "Rhodes",
+    "greekName": "Ῥόδος",
+    "kind": "city",
+    "region": "rhodes",
+    "coordinates": [
+      28.227,
+      36.434
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599948",
+    "importance": "major",
+    "cityId": "rhodes",
+    "deityIds": [
+      "helios"
+    ],
+    "summary": [
+      {
+        "text": "Rhodes of the nymph Rhodos — Helios' beloved isle, where Tlepolemus son of Heracles settled in Lindos, Ialysus and Cameirus and led nine ships to Troy.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "kos",
+    "name": "Cos",
+    "greekName": "Κῶς",
+    "kind": "city",
+    "region": "cos",
+    "coordinates": [
+      27.288,
+      36.893
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599122",
+    "importance": "major",
+    "cityId": "kos",
+    "summary": [
+      {
+        "text": "Cos of Eurypylus — the Dorian isle whose king Heracles stormed by night when the Coans took his ships for pirates, and whence the sons of Thessalus led island ships to Troy.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "thera",
+    "name": "Thera",
+    "greekName": "Θήρα",
+    "kind": "city",
+    "region": "thera",
+    "coordinates": [
+      25.478,
+      36.363
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599329",
+    "importance": "major",
+    "cityId": "thera",
+    "summary": [
+      {
+        "text": "Calliste-Thera — the Cycladic isle Euphemus' clod raised from the sea, later renamed for Theras son of Autesion when he led the Minyan settlers from Sparta.",
+        "sources": [
+          "apollonius",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cythera",
+    "name": "Cythera",
+    "greekName": "Κύθηρα",
+    "kind": "city",
+    "region": "cythera",
+    "coordinates": [
+      23.01,
+      36.254
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599112",
+    "importance": "major",
+    "cityId": "cythera",
+    "deityIds": [
+      "aphrodite"
+    ],
+    "summary": [
+      {
+        "text": "Sacred Cythera — the island Hesiod names where Aphrodite drifted ashore from the sea-foam before Cyprus, and past which Odysseus was driven when Malea beat him back.",
+        "sources": [
+          "hesiod",
+          "homer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lesbos",
+    "name": "Lesbos",
+    "greekName": "Λέσβος",
+    "kind": "city",
+    "region": "lesbos",
+    "coordinates": [
+      26.558,
+      39.104
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599266",
+    "importance": "major",
+    "cityId": "lesbos",
+    "summary": [
+      {
+        "text": "Lesbos of the Aeolian migration — the North Aegean isle Penthilus son of Orestes seized when the Heracleidae drove the Pelopids from the mainland.",
+        "sources": [
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": ["metamorphoses", "orpheus-death"]
+  },
+  {
+    "id": "salamis-cyprus",
+    "name": "Salamis",
+    "greekName": "Σαλαμίς",
+    "kind": "city",
+    "region": "cyprus",
+    "coordinates": [
+      33.901,
+      35.185
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "598825",
+    "importance": "major",
+    "cityId": "salamis-cyprus",
+    "summary": [
+      {
+        "text": "Salamis on Cyprus — the second city Teucer founded after Telamon drove him from his father's Attic isle, where the kings traced their descent through the daughter of Cinyras.",
+        "sources": [
+          "pausanias",
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "nostoi",
+      "lesser-returns",
+      "teucer-to-cyprus",
+      "metamorphoses",
+      "pygmalion",
+      "myrrha-adonis"
+    ]
+  },
+  {
+    "id": "heraion-samos",
+    "name": "Heraion",
+    "greekName": "Ἥραιον",
+    "kind": "sanctuary",
+    "region": "samos",
+    "coordinates": [
+      26.888,
+      37.672
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599254",
+    "importance": "major",
+    "deityIds": [
+      "hera"
+    ],
+    "summary": [
+      {
+        "text": "The Heraion of Samos — the great Ionian temple of Hera whose bronze statues of victors Pausanias saw standing in the goddess's precinct beside the Maeander's coast.",
+        "sources": [
+          "homer",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "didyma",
+    "name": "Didyma",
+    "greekName": "Δίδυμα",
+    "kind": "sanctuary",
+    "region": null,
+    "coordinates": [
+      27.256,
+      37.385
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550481",
+    "importance": "major",
+    "deityIds": [
+      "apollo"
+    ],
+    "summary": [
+      {
+        "text": "Didyma beside Miletus — Apollo's Ionian oracle where Pausanias marvelled at the colossal temple and Hyginus preserved the site among the god's prophetic seats.",
+        "sources": [
+          "pausanias",
+          "hyginus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rhamnus",
+    "name": "Rhamnus",
+    "greekName": "Ῥαμνοῦς",
+    "kind": "sanctuary",
+    "region": "attica-proper",
+    "coordinates": [
+      24.033,
+      38.183
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "579893",
+    "importance": "major",
+    "deityIds": [
+      "nemesis"
+    ],
+    "summary": [
+      {
+        "text": "Rhamnus of Attica — the coastal deme where Nemesis had her oldest cult, which Pausanias saw on the shore and Ovid named when the goddess of Rhamnus avenged mortal pride.",
+        "sources": [
+          "pausanias",
+          "ovid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sounion",
+    "name": "Sounion",
+    "greekName": "Σούνιον",
+    "kind": "sanctuary",
+    "region": "attica-proper",
+    "coordinates": [
+      24.024,
+      37.65
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "580041",
+    "importance": "major",
+    "deityIds": [
+      "poseidon"
+    ],
+    "summary": [
+      {
+        "text": "Sounion at the Cape — Poseidon's cliff-top sanctuary where Homer set the tomb of Phrontis and Pausanias saw the temple commanding the Saronic gulf.",
+        "sources": [
+          "homer",
+          "pausanias",
+          "apollodorus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "miletus",
+    "name": "Miletus",
+    "greekName": "Μίλητος",
+    "kind": "city",
+    "region": "ionia",
+    "coordinates": [
+      27.286,
+      37.531
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599269",
+    "importance": "major",
+    "cityId": "miletus",
+    "summary": [
+      {
+        "text": "Miletus on the Maeander's mouth — the Ionian citadel whence Erginus son of Poseidon sailed with the Argonauts, boasting his skill in seacraft and war.",
+        "sources": [
+          "apollonius",
+          "hyginus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "metamorphoses",
+      "byblis-caunus"
+    ]
+  },
+  {
+    "id": "ephesus",
+    "name": "Ephesus",
+    "greekName": "Ἔφεσος",
+    "kind": "city",
+    "region": "ionia",
+    "coordinates": [
+      27.343,
+      37.939
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550893",
+    "importance": "major",
+    "cityId": "ephesus",
+    "summary": [
+      {
+        "text": "Ephesus of Artemis — where Heracles bound the Cercopes in Omphale's service and where all cities, Pausanias says, worship Artemis of Ephesus above every other god.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "heracles-cycle",
+      "omphale-and-troy"
+    ]
+  },
+  {
+    "id": "aea-colchis",
+    "name": "Aea",
+    "greekName": "Αἶα",
+    "kind": "city",
+    "region": "colchis",
+    "coordinates": [
+      41.98,
+      42.25
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "678034",
+    "importance": "major",
+    "cityId": "aea-colchis",
+    "summary": [
+      {
+        "text": "Aea of Aeetes on the Phasis — the Colchian capital where Phrixus sacrificed the golden ram and Jason faced the brazen-footed bulls for the fleece.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hesiod"
+        ]
+      }
+    ],
+    "characterIds": [
+      "aeetes",
+      "idyia-oceanid",
+      "medea-colchis",
+      "chalciope-colchis",
+      "apsyrtus-colchis",
+      "argus-colchis",
+      "melas-colchis",
+      "phrontis-colchis",
+      "cytisorus-colchis",
+      "perses-colchis"
+    ],
+    "storyIds": [
+      "argonautica",
+      "golden-fleece",
+      "trials-at-colchis"
+    ]
+  },
+  {
+    "id": "sardis",
+    "name": "Sardis",
+    "greekName": "Σάρδεις",
+    "kind": "city",
+    "region": "lydia",
+    "coordinates": [
+      28.044,
+      38.488
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "609106",
+    "importance": "major",
+    "cityId": "sardis",
+    "summary": [
+      {
+        "text": "Sardis beneath Tmolus — capital of Lydia, where Omphale held Heracles in servitude and Midas bathed away the golden touch in the river's snowy foam.",
+        "sources": [
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ],
+    "storyIds": [
+      "heracles-cycle",
+      "omphale-and-troy",
+      "metamorphoses",
+      "arachne-athena",
+      "midas-golden-touch"
+    ]
+  },
+  {
+    "id": "halicarnassus",
+    "name": "Halicarnassus",
+    "greekName": "Ἁλικαρνασσός",
+    "kind": "city",
+    "region": "caria",
+    "coordinates": [
+      27.429,
+      37.037
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "549135",
+    "importance": "major",
+    "cityId": "halicarnassus",
+    "summary": [
+      {
+        "text": "Halicarnassus on the Carian coast — city of Mausolus and Queen Artemisia, whose tomb Pausanias counted among the wonders of the world.",
+        "sources": [
+          "pausanias",
+          "hyginus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dardanus-city",
+    "name": "Dardanus",
+    "greekName": "Δάρδανος",
+    "kind": "city",
+    "region": "troad",
+    "coordinates": [
+      26.223,
+      40.198
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "550586",
+    "importance": "major",
+    "cityId": "dardanus-city",
+    "summary": [
+      {
+        "text": "Dardanus on the Hellespont shore — the city Teucer son of Scamander shared with Dardanus before sacred Ilios rose in the plain and the kingdom took the younger founder's name.",
+        "sources": [
+          "apollodorus",
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "house-of-troy"
+    ]
+  },
+  {
+    "id": "sinope",
+    "name": "Sinope",
+    "greekName": "Σινώπη",
+    "kind": "city",
+    "region": "pontus",
+    "coordinates": [
+      35.151,
+      42.027
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599282",
+    "importance": "major",
+    "cityId": "sinope",
+    "summary": [
+      {
+        "text": "Sinope on the Euxine — the Assyrian-shore colony where Zeus gave the nymph Sinope, daughter of Asopus, a home and the virginity she chose when he promised her heart's desire.",
+        "sources": [
+          "apollonius"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pergamon",
+    "name": "Pergamon",
+    "greekName": "Πέργαμον",
+    "kind": "city",
+    "region": "teuthrania",
+    "coordinates": [
+      27.129,
+      39.132
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550667",
+    "importance": "major",
+    "cityId": "pergamon",
+    "summary": [
+      {
+        "text": "Pergamon above the Caicus — called of old Teuthrania, where Teuthras received Auge and Telephus succeeded to the Mysian throne after the Greeks mistook its coast for Troy.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "cypria",
+      "telephus-at-mysia"
+    ],
+    "characterIds": [
+      "telephus",
+      "eurypylus-telephus"
+    ]
+  },
+  {
+    "id": "gordion",
+    "name": "Gordion",
+    "greekName": "Γόρδιον",
+    "kind": "city",
+    "region": "phrygia",
+    "coordinates": [
+      31.985,
+      39.656
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "628903",
+    "importance": "major",
+    "cityId": "gordion",
+    "summary": [
+      {
+        "text": "Gordion on the Phrygian plateau — seat of Gordius and Midas, where Phrygian peasants brought strayed Silenus to the king who would judge Apollo's music on Tmolus.",
+        "sources": [
+          "ovid",
+          "hyginus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "metamorphoses",
+      "midas-golden-touch",
+      "marsyas-apollo",
+      "baucis-philemon"
+    ]
+  },
+  {
+    "id": "smyrna",
+    "name": "Smyrna",
+    "greekName": "Σμύρνα",
+    "kind": "city",
+    "region": "aeolis",
+    "coordinates": [
+      27.141,
+      38.417
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550893",
+    "importance": "major",
+    "cityId": "smyrna",
+    "summary": [
+      {
+        "text": "Smyrna on the Aeolian coast — one of the twelve Aeolian cities on the site the Smyrnaeans still call the old town, before Ionian colonists from Colophon displaced the earlier settlers.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 7.5.1",
+        "topic": "smyrna-regional-affiliation"
+      },
+      {
+        "text": "The same passage records that Ionians from Colophon seized Smyrna and later granted its people a seat at the Ionian assembly at Panionium — and elsewhere Pausanias calls the Smyrnaeans an Ionian people who drove the Lydians from their town.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 7.5.1, 4.21.5",
+        "topic": "smyrna-regional-affiliation"
+      }
+    ],
+    "storyIds": [
+      "myrrha-adonis",
+      "metamorphoses",
+      "cypria"
+    ]
+  },
+  {
+    "id": "tarsus",
+    "name": "Tarsus",
+    "greekName": "Ταρσός",
+    "kind": "city",
+    "region": "cilicia",
+    "coordinates": [
+      34.896,
+      36.912
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "648789",
+    "importance": "major",
+    "cityId": "tarsus",
+    "summary": [
+      {
+        "text": "Tarsus in Cilicia — whose river Cydnus Pausanias ranked among the coldest streams of the Greek world, refreshing to drink and to bathe in without winter's bite.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.28.3"
+      }
+    ]
+  },
+  {
+    "id": "side",
+    "name": "Side",
+    "greekName": "Σίδη",
+    "kind": "city",
+    "region": "pamphylia",
+    "coordinates": [
+      31.392,
+      36.768
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639105",
+    "importance": "major",
+    "cityId": "side",
+    "summary": [
+      {
+        "text": "Side on the Pamphylian coast — whose river Melas Pausanias counted among the coldest waters of Asia Minor, and which Apollodorus lists among the cities Achilles ravaged before Troy.",
+        "sources": [
+          "pausanias",
+          "apollodorus"
+        ],
+        "citation": "Description of Greece 8.28.3; Epitome 3.33"
+      }
+    ],
+    "storyIds": [
+      "cypria"
+    ]
+  },
+  {
+    "id": "cyme",
+    "name": "Cyme",
+    "greekName": "Κύμη",
+    "kind": "city",
+    "region": "aeolis",
+    "coordinates": [
+      26.938,
+      38.760
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "550506",
+    "importance": "major",
+    "cityId": "cyme",
+    "summary": [
+      {
+        "text": "Aeolian Cyme on the Asian coast — the city Hesiod left in poverty when he crossed the sea to settle near Helicon, and one of the western settlements the Cypria counts among Achilles' early conquests.",
+        "sources": [
+          "hesiod",
+          "apollodorus"
+        ],
+        "citation": "Works and Days 636–640; Epitome 3.33"
+      }
+    ],
+    "storyIds": [
+      "cypria"
+    ]
+  },
+  {
+    "id": "xanthus-lycia",
+    "name": "Xanthus",
+    "greekName": "Ξάνθος",
+    "kind": "city",
+    "region": "lycia",
+    "coordinates": [
+      29.320,
+      36.357
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639166",
+    "importance": "major",
+    "cityId": "xanthus-lycia",
+    "summary": [
+      {
+        "text": "Xanthus by the eddying river — capital of Lycia whence Sarpedon and peerless Glaucus led their men to Troy, and where Bellerophon won his kingdom after slaying the Chimera in the hills above.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Iliad 2.876–877; Bibliotheca 2.3.1"
+      }
+    ],
+    "storyIds": [
+      "trojan-war",
+      "bellerophon-chimera"
+    ],
+    "characterIds": [
+      "sarpedon",
+      "glaucus-lycian",
+      "bellerophon"
+    ]
+  },
+  {
+    "id": "patara",
+    "name": "Patara",
+    "greekName": "Πάταρα",
+    "kind": "city",
+    "region": "lycia",
+    "coordinates": [
+      29.315,
+      36.262
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "639042",
+    "importance": "major",
+    "cityId": "patara",
+    "summary": [
+      {
+        "text": "Patara of the Lycians — Apollo's coastal oracle that Ovid names with Claros and Delphi when the god walked among mortals, and where Pausanias saw a bronze bowl the Lycians said Telephus dedicated and Hephaestus made.",
+        "sources": [
+          "ovid",
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 1.580–581; Description of Greece 9.41.1"
+      }
+    ],
+    "storyIds": [
+      "telephus-at-mysia",
+      "metamorphoses",
+      "marsyas-apollo"
+    ],
+    "characterIds": [
+      "telephus",
+      "apollo"
+    ]
+  },
+  {
+    "id": "corcyra",
+    "name": "Corcyra",
+    "greekName": "Κέρκυρα",
+    "kind": "city",
+    "region": "corcyra",
+    "coordinates": [
+      19.922,
+      39.624
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599044",
+    "importance": "major",
+    "cityId": "corcyra",
+    "summary": [
+      {
+        "text": "Corcyra the Black — Scheria of the Phaeacians, where Poseidon settled the nymph Corcyra, Alcinous ruled, Odysseus found harbour, and Arete married Jason to Medea.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "apollonius"
+        ]
+      }
+    ],
+    "characterIds": [
+      "alcinous-phaeacian",
+      "arete-phaeacian",
+      "nausicaa",
+      "laodamas-phaeacian",
+      "halius-phaeacian",
+      "clytoneus-phaeacian",
+      "demodocus",
+      "nausithous-phaeacian",
+      "rhexenor-phaeacian",
+      "periboea-phaeacian",
+      "odysseus",
+      "jason"
+    ],
+    "storyIds": [
+      "odyssey",
+      "calypso-and-scheria",
+      "argonautica",
+      "return-of-the-argo"
+    ]
+  },
+  {
+    "id": "ogygia",
+    "name": "Ogygia",
+    "greekName": "Ὠγυγίη",
+    "kind": "myth-site",
+    "region": null,
+    "coordinates": [
+      14.35,
+      36.02
+    ],
+    "certainty": "traditional",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Ogygia — the isle far off in the sea where the nymph Calypso kept Odysseus seven years in her hollow caves, yearning that he should be her husband, until Hermes bore Zeus' command that the hero must go free.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Odyssey 1.1–40, 5.1–170, 7.240–285"
+      },
+      {
+        "text": "Apollodorus sends Odysseus there after the shipwreck: clinging to the mast of his wrecked vessel he was carried across the whirlpool to Calypso's island.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Epitome 7.21–23"
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ],
+    "characterIds": [
+      "calypso",
+      "odysseus"
+    ]
+  },
+  {
+    "id": "aeaea",
+    "name": "Aeaea",
+    "greekName": "Αἰαίη",
+    "kind": "myth-site",
+    "region": null,
+    "coordinates": [
+      13.08,
+      41.22
+    ],
+    "certainty": "traditional",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The isle of Aeaea, where fair-tressed Circe the dread goddess of human speech turned Odysseus' comrades to swine until Hermes gave the hero the herb moly and she bound herself by oath to restore them and send him on.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Odyssey 10.135–575"
+      },
+      {
+        "text": "Homer makes Circe own sister to Aeetes of baneful mind — both sprung from Helius and Perse daughter of Ocean. Elpenor fell drunk from her roof; his shade begged burial before the company sailed for Hades. Apollodorus adds that Odysseus begot Telegonus on her, and that in one ending Telegonus returned here with Odysseus' corpse and Penelope after unknowingly killing his father on Ithaca.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Odyssey 10.550–570, 11.55–95, 12.1–35; Epitome 7.16, 7.36–7.37"
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ],
+    "characterIds": [
+      "circe",
+      "elpenor",
+      "eurylochus",
+      "odysseus",
+      "telegonus-circe"
+    ]
+  },
+  {
+    "id": "thrinacia",
+    "name": "Thrinacia",
+    "greekName": "Θρινακίη",
+    "kind": "myth-site",
+    "region": null,
+    "coordinates": [
+      15,
+      37.5
+    ],
+    "certainty": "traditional",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Thrinacia, the isle where Helios kept seven herds of cattle and seven flocks of sheep — fifty in each, deathless and without offspring — guarded by his daughters Lampetie and Phaethusa.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Odyssey 12.127–141"
+      },
+      {
+        "text": "Though Odysseus forbade it, hunger drove his crew to slaughter the sacred kine; Helios demanded vengeance from Zeus, the ship was shattered by a thunderbolt, and every companion perished — fulfilling the poem's charge that they destroyed their homecoming by devouring the cattle of Helios Hyperion.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Odyssey 1.6–9, 12.260–420; Epitome 7.18–23"
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ],
+    "characterIds": [
+      "helios",
+      "eurylochus",
+      "odysseus"
+    ]
+  },
+  {
+    "id": "ithaca",
+    "name": "Ithaca",
+    "greekName": "Ἰθάκη",
+    "kind": "city",
+    "region": "ithaca",
+    "coordinates": [
+      20.667,
+      38.417
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530906",
+    "importance": "flagship",
+    "cityId": "ithaca",
+    "summary": [
+      {
+        "text": "Rocky Ithaca — furthest toward the gloom of the western isles, a rugged nurse of young men and the kingdom of Odysseus, Laertes, and Telemachus, besieged by suitors until the king's return.",
+        "sources": [
+          "homer"
+        ]
+      },
+      {
+        "text": "Apollodorus assigns twelve wooers specifically from Ithaca itself — Antinous, Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Aristratus, Helenus, Dulicheus, and Ctesippus — beside the larger island contingents from Dulichium, Same, and Zacynthus.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Epitome 7.30"
+      },
+      {
+        "text": "The island catalogues over, Apollodorus tells how the wooers journeyed to Odysseus' palace and consumed his herds at their feasts, while Penelope held them off with the shroud of Laertes — weaving by day and undoing the web by night for three years until she was caught.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Epitome 7.31"
+      },
+      {
+        "text": "When the stratagem failed, she set before them Odysseus' bow — received long ago from Iphitus — and promised marriage to whoever could bend it; Odysseus strung the weapon, slew the suitors with Eumaeus, Philoetius, and Telemachus, hanged the faithless handmaids including Melantho, and made himself known to Penelope and Laertes — while Dolius and his sons, and the herald Medon spared by Telemachus, stood with the king at the last.",
+        "sources": [
+          "apollodorus",
+          "homer"
+        ],
+        "citation": "Epitome 7.33; Odyssey 21–24"
+      }
+    ],
+    "characterIds": [
+      "odysseus",
+      "penelope",
+      "telemachus",
+      "theoclymenus",
+      "laertes",
+      "arceisius",
+      "anticleia",
+      "eumaeus",
+      "philoetius",
+      "eurycleia",
+      "phemius-ithaca",
+      "antinous",
+      "eurymachus-ithaca",
+      "melanthius-ithaca",
+      "melantho-ithaca",
+      "dolius-ithaca",
+      "medon-ithaca",
+      "irus-beggar",
+      "amphinomus-dulichium",
+      "leiodes-ithaca",
+      "peisander-same",
+      "agelaus-same",
+      "amphimedon-ithaca",
+      "demoptolemus-dulichium",
+      "eurynomus-ithaca",
+      "polybus-ithaca",
+      "ctesippus-same",
+      "elatus-same",
+      "hippodochus-same",
+      "eurystratus-same",
+      "archemolus-same",
+      "ithacus-same",
+      "pisenor-same",
+      "hyperenor-same",
+      "pheroetes-same",
+      "antisthenes-same",
+      "cerberus-same",
+      "perimedes-same",
+      "cynnus-same",
+      "thriasus-same",
+      "eteoneus-same",
+      "prothous-same",
+      "lycaethus-same",
+      "eumelus-same",
+      "itanus-same",
+      "lyammus-same",
+      "eurylochus-zacynthus",
+      "laomedes-zacynthus",
+      "molebus-zacynthus",
+      "phrenius-zacynthus",
+      "indius-zacynthus",
+      "minis-zacynthus",
+      "liocritus-zacynthus",
+      "pronomus-zacynthus",
+      "nisas-zacynthus",
+      "daemon-zacynthus",
+      "archestratus-zacynthus",
+      "hippomachus-zacynthus",
+      "euryalus-zacynthus",
+      "periallus-zacynthus",
+      "evenorides-zacynthus",
+      "clytius-zacynthus",
+      "agenor-zacynthus",
+      "polybus-zacynthus",
+      "polydorus-zacynthus",
+      "thadytius-zacynthus",
+      "stratius-zacynthus",
+      "daesenor-zacynthus",
+      "laomedon-zacynthus",
+      "laodicus-zacynthus",
+      "halius-zacynthus",
+      "magnes-zacynthus",
+      "oloetrochus-zacynthus",
+      "barthas-zacynthus",
+      "theophron-zacynthus",
+      "nissaeus-zacynthus",
+      "alcarops-zacynthus",
+      "periclymenus-zacynthus",
+      "antenor-zacynthus",
+      "pellas-zacynthus",
+      "celtus-zacynthus",
+      "periphus-zacynthus",
+      "ormenus-zacynthus",
+      "andromedes-zacynthus",
+      "amphimachus-ithaca",
+      "pronous-ithaca",
+      "amphialus-ithaca",
+      "promachus-ithaca",
+      "aristratus-ithaca",
+      "helenus-ithaca",
+      "dulicheus-ithaca",
+      "eurydamas-ithaca",
+      "thoas-dulichium",
+      "paralus-dulichium",
+      "evenorides-ithaca",
+      "euryalus-ithaca",
+      "clytius-same",
+      "philodemus-dulichium",
+      "marpsius-dulichium",
+      "iphidamas-dulichium",
+      "pylaemenes-dulichium",
+      "thersilochus-dulichium",
+      "hagius-dulichium",
+      "clymenus-dulichium",
+      "meneptolemus-dulichium",
+      "astylochus-dulichium",
+      "schedius-dulichium",
+      "antigonus-dulichium",
+      "argius-dulichium",
+      "calydoneus-dulichium",
+      "glaucus-dulichium",
+      "echion-dulichium",
+      "lamas-dulichium",
+      "andraemon-dulichium",
+      "agerochus-dulichium",
+      "agrius-dulichium",
+      "promus-dulichium",
+      "ctesius-dulichium",
+      "acarnan-dulichium",
+      "cycnus-dulichium",
+      "pseras-dulichium",
+      "hellanicus-dulichium",
+      "periphron-dulichium",
+      "megasthenes-dulichium",
+      "ormenius-dulichium",
+      "diopithes-dulichium",
+      "mecisteus-dulichium",
+      "antimachus-dulichium",
+      "ptolemaeus-dulichium",
+      "lestorides-dulichium",
+      "nicomachus-dulichium",
+      "polypoetes-dulichium",
+      "ceraus-dulichium",
+      "agenor-ithaca",
+      "eurypylus-dulichium",
+      "damastor-dulichium",
+      "acamas-dulichium",
+      "telmius-dulichium",
+      "polyidus-dulichium"
+    ],
+    "storyIds": [
+      "odyssey",
+      "telemachus-and-the-suitors",
+      "calypso-and-scheria",
+      "the-beggar-king",
+      "slaughter-of-the-suitors",
+      "penelope-tested",
+      "telegony"
+    ]
+  },
+  {
+    "id": "cephallenia",
+    "name": "Cephallenia",
+    "greekName": "Κεφαλληνία",
+    "kind": "city",
+    "region": "cephallenia",
+    "coordinates": [
+      20.553,
+      38.265
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530826",
+    "importance": "major",
+    "cityId": "cephallenia",
+    "characterIds": [
+      "ctesippus-same",
+      "elatus-same",
+      "hippodochus-same",
+      "eurystratus-same",
+      "archemolus-same",
+      "ithacus-same",
+      "pisenor-same",
+      "hyperenor-same",
+      "pheroetes-same",
+      "antisthenes-same",
+      "cerberus-same",
+      "perimedes-same",
+      "cynnus-same",
+      "thriasus-same",
+      "eteoneus-same",
+      "prothous-same",
+      "lycaethus-same",
+      "eumelus-same",
+      "itanus-same",
+      "lyammus-same",
+      "agelaus-same",
+      "peisander-same",
+      "clytius-same"
+    ],
+    "summary": [
+      {
+        "text": "Same and the Cephallenian isles — the people who held forested Neriton and sailed under Odysseus in twelve ships to Troy, whom Laertes once ruled as lord of the Cephallenians.",
+        "sources": [
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ]
+  },
+  {
+    "id": "zacynthus",
+    "name": "Zacynthus",
+    "greekName": "Ζάκυνθος",
+    "kind": "city",
+    "region": "zacynthus",
+    "coordinates": [
+      20.75,
+      37.8
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "531155",
+    "importance": "major",
+    "cityId": "zacynthus",
+    "characterIds": [
+      "eurylochus-zacynthus",
+      "laomedes-zacynthus",
+      "molebus-zacynthus",
+      "phrenius-zacynthus",
+      "indius-zacynthus",
+      "minis-zacynthus",
+      "liocritus-zacynthus",
+      "pronomus-zacynthus",
+      "nisas-zacynthus",
+      "daemon-zacynthus",
+      "archestratus-zacynthus",
+      "hippomachus-zacynthus",
+      "euryalus-zacynthus",
+      "periallus-zacynthus",
+      "evenorides-zacynthus",
+      "clytius-zacynthus",
+      "agenor-zacynthus",
+      "polybus-zacynthus",
+      "polydorus-zacynthus",
+      "thadytius-zacynthus",
+      "stratius-zacynthus",
+      "daesenor-zacynthus",
+      "laomedon-zacynthus",
+      "laodicus-zacynthus",
+      "halius-zacynthus",
+      "magnes-zacynthus",
+      "oloetrochus-zacynthus",
+      "barthas-zacynthus",
+      "theophron-zacynthus",
+      "nissaeus-zacynthus",
+      "alcarops-zacynthus",
+      "periclymenus-zacynthus",
+      "antenor-zacynthus",
+      "pellas-zacynthus",
+      "celtus-zacynthus",
+      "periphus-zacynthus",
+      "ormenus-zacynthus",
+      "andromedes-zacynthus"
+    ],
+    "summary": [
+      {
+        "text": "Wooded Zacynthus — one of the western isles whose princes joined the suitors in Odysseus' halls and whose twenty youths Telemachus counted among the wooers' allies.",
+        "sources": [
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ]
+  },
+  {
+    "id": "leucas",
+    "name": "Leucas",
+    "greekName": "Λευκάς",
+    "kind": "landmark",
+    "region": "leucas",
+    "coordinates": [
+      20.644,
+      38.718
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530974",
+    "importance": "minor",
+    "summary": [
+      {
+        "text": "The white rock Leucas — passed by Hermes leading the suitors' ghosts down the dank ways toward Oceanus, the gates of the sun, and the land of dreams on the road to Hades.",
+        "sources": [
+          "homer",
+          "ovid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lemnos",
+    "name": "Lemnos",
+    "greekName": "Λῆμνος",
+    "kind": "city",
+    "region": "lemnos",
+    "coordinates": [
+      25.23,
+      39.92
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599245",
+    "importance": "major",
+    "cityId": "lemnos",
+    "storyIds": [
+      "argonautica",
+      "voyage-to-colchis",
+      "little-iliad",
+      "philoctetes-on-lemnos",
+      "philoctetes-to-italy",
+      "lesser-returns"
+    ],
+    "summary": [
+      {
+        "text": "Sacred Lemnos — isle of Thoas and Hypsipyle, where the Argonauts lay with the Lemnian women, Hephaestus fell from heaven, and Philoctetes was left with the bow of Heracles.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "apollonius"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chios",
+    "name": "Chios",
+    "greekName": "Χίος",
+    "kind": "city",
+    "region": "chios",
+    "coordinates": [
+      26.128,
+      38.368
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599108",
+    "importance": "major",
+    "cityId": "chios",
+    "summary": [
+      {
+        "text": "Chios of Oenopion — the Ionian isle where Orion wooed Merope and was blinded, and whence the hunter went to the sunrise to regain his sight.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "paros",
+    "name": "Paros",
+    "greekName": "Πάρος",
+    "kind": "city",
+    "region": "paros",
+    "coordinates": [
+      25.15,
+      37.085
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599937",
+    "importance": "major",
+    "cityId": "paros",
+    "summary": [
+      {
+        "text": "Paros of the marble cliffs — held by the sons of Minos until Heracles slew them, and the place where Minos learned of Androgeus' death while sacrificing to the Graces.",
+        "sources": [
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thasos",
+    "name": "Thasos",
+    "greekName": "Θάσος",
+    "kind": "city",
+    "region": "thasos",
+    "coordinates": [
+      24.723,
+      40.776
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599326",
+    "importance": "major",
+    "cityId": "thasos",
+    "summary": [
+      {
+        "text": "Thasos of the north Aegean — where Heracles subjugated the Thracians and gave the isle to the sons of Androgeus, and where Cleoboea first brought Demeter's orgies from Paros.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "icaria",
+    "name": "Icaria",
+    "greekName": "Ἰκαρία",
+    "kind": "city",
+    "region": "icaria",
+    "coordinates": [
+      26.152,
+      37.618
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599223",
+    "importance": "major",
+    "cityId": "icaria",
+    "summary": [
+      {
+        "text": "Icaria — once called Doliche, renamed when Heracles buried the body of Icarus washed ashore; Dionysus later hired passage from here toward Naxos.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Bibliotheca 2.6.3, 3.5.3"
+      }
+    ]
+  },
+  {
+    "id": "skyros",
+    "name": "Skyros",
+    "greekName": "Σκῦρος",
+    "kind": "city",
+    "region": "skyros",
+    "coordinates": [
+      24.563,
+      38.762
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599324",
+    "importance": "major",
+    "cityId": "skyros",
+    "summary": [
+      {
+        "text": "Scyros of King Lycomedes — the Sporades isle where Thetis hid Achilles as Pyrrha among the king's daughters, where Neoptolemus was born, and where Theseus was cast into the abyss.",
+        "sources": [
+          "apollodorus",
+          "homer",
+          "hyginus"
+        ]
+      }
+    ],
+    "storyIds": [
+      "little-iliad",
+      "theseus-cycle",
+      "death-on-skyros"
+    ]
+  },
+  {
+    "id": "skiathos",
+    "name": "Skiathos",
+    "greekName": "Σκιάθος",
+    "kind": "city",
+    "region": "skiathos",
+    "coordinates": [
+      23.489,
+      39.164
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "541104",
+    "importance": "minor",
+    "cityId": "skiathos",
+    "summary": [
+      {
+        "text": "Sciathus — the western gate of the Northern Sporades, where the Argo came in sight of the island as the heroes sped past Pelion toward the tomb of Dolops on the Magnesian shore.",
+        "sources": [
+          "apollonius"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skopelos",
+    "name": "Skopelos",
+    "greekName": "Πεπάρηθος",
+    "kind": "city",
+    "region": "skopelos",
+    "coordinates": [
+      23.7,
+      39.117
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599310",
+    "importance": "major",
+    "cityId": "skopelos",
+    "summary": [
+      {
+        "text": "Peparethos, rich in glossy olives — the Sporades isle whose name survives in Peparethus, son of Dionysus and Ariadne, and which the Cretan fleet of Minos passed without aid on the way to Oenopia.",
+        "sources": [
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ikos",
+    "name": "Ikos",
+    "greekName": "Ἴκος",
+    "kind": "city",
+    "region": "ikos",
+    "coordinates": [
+      23.905,
+      39.164
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540835",
+    "importance": "minor",
+    "cityId": "ikos",
+    "summary": [
+      {
+        "text": "Ikos, the easternmost of the Northern Sporades — ancient island in the Magnesian island chain where Sciathus and Peparethos lie on the Argonaut route.",
+        "sources": [
+          "apollonius"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "calydon",
+    "name": "Calydon",
+    "greekName": "Καλυδών",
+    "kind": "city",
+    "region": "aetolia",
+    "coordinates": [
+      21.533,
+      38.373
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540699",
+    "importance": "flagship",
+    "cityId": "calydon",
+    "summary": [
+      {
+        "text": "Rocky Calydon of Oeneus — where Artemis loosed the white-tusked boar on the slighted harvest, and Meleager gathered heroes from many cities for the great hunt.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "ovid"
+        ]
+      }
+    ],
+    "storyIds": [
+      "heracles-cycle",
+      "deianira-and-achelous",
+      "metamorphoses",
+      "deianira-at-the-feast",
+      "calydonian-boar"
+    ]
+  },
+  {
+    "id": "pleuron",
+    "name": "Pleuron",
+    "greekName": "Πλευρών",
+    "kind": "city",
+    "region": "aetolia",
+    "coordinates": [
+      21.42,
+      38.448
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540702",
+    "importance": "major",
+    "cityId": "pleuron",
+    "summary": [
+      {
+        "text": "Steep Pleuron — sister city of Calydon in Aetolia, where Portheus' sons Agrius, Melas, and Oeneus dwelt, and where Thoas son of Andraemon ruled when the Aetolians sailed to Troy.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dulichium",
+    "name": "Dulichium",
+    "greekName": "Δουλίχιον",
+    "kind": "city",
+    "region": "dulichium",
+    "coordinates": [
+      20.82,
+      38.52
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530845",
+    "importance": "major",
+    "cityId": "dulichium",
+    "characterIds": [
+      "amphinomus-dulichium",
+      "thoas-dulichium",
+      "demoptolemus-dulichium",
+      "amphimachus-ithaca",
+      "euryalus-ithaca",
+      "paralus-dulichium",
+      "evenorides-ithaca",
+      "clytius-same",
+      "agenor-ithaca",
+      "eurypylus-dulichium",
+      "pylaemenes-dulichium",
+      "acamas-dulichium",
+      "thersilochus-dulichium",
+      "hagius-dulichium",
+      "clymenus-dulichium",
+      "philodemus-dulichium",
+      "meneptolemus-dulichium",
+      "damastor-dulichium",
+      "bias-dulichium",
+      "telmius-dulichium",
+      "polyidus-dulichium",
+      "astylochus-dulichium",
+      "schedius-dulichium",
+      "antigonus-dulichium",
+      "marpsius-dulichium",
+      "iphidamas-dulichium",
+      "argius-dulichium",
+      "glaucus-dulichium",
+      "calydoneus-dulichium",
+      "echion-dulichium",
+      "lamas-dulichium",
+      "andraemon-dulichium",
+      "agerochus-dulichium",
+      "medon-dulichium",
+      "agrius-dulichium",
+      "promus-dulichium",
+      "ctesius-dulichium",
+      "acarnan-dulichium",
+      "cycnus-dulichium",
+      "pseras-dulichium",
+      "hellanicus-dulichium",
+      "periphron-dulichium",
+      "megasthenes-dulichium",
+      "thrasymedes-dulichium",
+      "ormenius-dulichium",
+      "diopithes-dulichium",
+      "mecisteus-dulichium",
+      "antimachus-dulichium",
+      "ptolemaeus-dulichium",
+      "lestorides-dulichium",
+      "nicomachus-dulichium",
+      "polypoetes-dulichium",
+      "ceraus-dulichium",
+      "nisus-dulichium",
+      "aretias-dulichium",
+      "phyleus-dulichium",
+      "meges-dulichium"
+    ],
+    "summary": [
+      {
+        "text": "Dulichium — one of the western isles toward the dawn, where Phyleus made his dwelling in wrath against his father and whence his son Meges led forty ships; its princes also fed among the suitors of Penelope.",
+        "sources": [
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ]
+  },
+  {
+    "id": "argos-amphilochicum",
+    "name": "Argos Amphilochicum",
+    "greekName": "Ἄργος Ἀμφιλοχικόν",
+    "kind": "city",
+    "region": "acarnania",
+    "coordinates": [
+      21.345,
+      38.894
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530809",
+    "importance": "flagship",
+    "cityId": "argos-amphilochicum",
+    "summary": [
+      {
+        "text": "Amphilochian Argos — chief settlement of Acarnania west of the Achelous, where Alcmaeon and his sons Acarnan and Amphoterus led colonists from Epirus and gave the land its name.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "alcmaeon-wanderings"
+    ],
+    "characterIds": [
+      "alcmaeon",
+      "acarnan",
+      "amphoterus-alcmaeon"
+    ]
+  },
+  {
+    "id": "buthrotum",
+    "name": "Buthrotum",
+    "greekName": "Βουθρωτόν",
+    "kind": "city",
+    "region": "chaonia",
+    "coordinates": [
+      20.017,
+      39.757
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530824",
+    "importance": "flagship",
+    "cityId": "buthrotum",
+    "summary": [
+      {
+        "text": "Buthrotum in Chaonia — the Epirote city Helenus founded after Troy, a mimic Troy where the Trojan seer reigned and Aeneas found prophecy for the voyage west.",
+        "sources": [
+          "apollodorus",
+          "ovid",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "nostoi",
+      "neoptolemus-to-epirus",
+      "trojan-cycle"
+    ]
+  },
+  {
+    "id": "cichyrus",
+    "name": "Cichyrus",
+    "greekName": "Κίχυρος",
+    "kind": "city",
+    "region": "thesprotia",
+    "coordinates": [
+      20.531,
+      39.243
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530870",
+    "importance": "flagship",
+    "cityId": "cichyrus",
+    "summary": [
+      {
+        "text": "Cichyrus in Thesprotia — the inland Epirote city also called Ephyra, near the lake Acherusia and the rivers Acheron and Cocytus; Phylas was its king when Heracles took it, and Apollodorus makes it the kingdom Callidice offered Odysseus when he came through Epirus after sacrificing to Hades, Persephone, and Tiresias.",
+        "sources": [
+          "apollodorus",
+          "pausanias",
+          "homer"
+        ]
+      }
+    ],
+    "storyIds": [
+      "odyssey"
+    ],
+    "characterIds": [
+      "odysseus",
+      "callidice-thesprotian",
+      "polypoetes-thesprotian",
+      "phylas-thesprotia"
+    ]
+  },
+  {
+    "id": "nekuomanteion",
+    "name": "Oracle of the Dead",
+    "greekName": "Νεκυομαντεῖον",
+    "kind": "sanctuary",
+    "region": "thesprotia",
+    "coordinates": [
+      20.546,
+      39.252
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530870",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The oracle of the dead above the Acheron — where Pausanias believed Homer had walked before he sent Odysseus to dig the pit of blood and summon the shades from the house of Hades.",
+        "sources": [
+          "homer",
+          "pausanias"
+        ]
+      }
+    ],
+    "storyIds": [
+      "odyssey",
+      "nekuia"
+    ],
+    "characterIds": [
+      "odysseus"
+    ]
+  },
+  {
+    "id": "ambracia",
+    "name": "Ambracia",
+    "greekName": "Ἀμβρακία",
+    "kind": "city",
+    "region": "ambracia",
+    "coordinates": [
+      20.99,
+      39.155
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "530794",
+    "importance": "major",
+    "cityId": "ambracia",
+    "summary": [
+      {
+        "text": "Ambracia on the Ambracian gulf — the Epirote city Aeneas passed after Ithaca and Samos, contended in Ovid's telling between disputing gods and famed thereafter for Actian Apollo; Hyginus says the bones of Neoptolemus were scattered through its land after Orestes slew him at Delphi.",
+        "sources": [
+          "ovid",
+          "hyginus",
+          "apollonius"
+        ]
+      }
+    ],
+    "characterIds": [
+      "aeneas",
+      "neoptolemus"
+    ]
+  },
+  {
+    "id": "mantinea",
+    "name": "Mantinea",
+    "greekName": "Μαντίνεια",
+    "kind": "city",
+    "region": "arcadia",
+    "coordinates": [
+      22.4047,
+      37.6119
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570411",
+    "importance": "major",
+    "cityId": "mantinea",
+    "summary": [
+      {
+        "text": "Mantinea in Arcadia — founded when Antinoe daughter of Cepheus moved the city at a snake's guidance, with the river Ophis at its walls and the grave of Arcas beside Hera's altar, where the Mantineans set his bones brought from Maenalus at Delphi's command.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.8.4, 8.9.3"
+      },
+      {
+        "text": "Apollodorus records a variant Odyssey ending in which Penelope, sent away by Odysseus after Antinous, came to Mantinea and bore Pan to Hermes; the Mantineans themselves told Pausanias that Odysseus cast Penelope out for paramours, that she went first to Lacedaemon and then died at Mantinea.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Epitome 7.38; Description of Greece 8.12.6",
+        "topic": "penelope-antinous-affair"
+      }
+    ],
+    "storyIds": [
+      "odyssey",
+      "metamorphoses",
+      "callisto-arcas"
+    ],
+    "characterIds": [
+      "penelope",
+      "pan",
+      "hermes",
+      "arcas"
+    ]
+  },
+  {
+    "id": "campania",
+    "name": "Campania",
+    "greekName": "Καμπανία",
+    "kind": "city",
+    "region": "campania",
+    "coordinates": [
+      14.25,
+      40.83
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "433087",
+    "importance": "major",
+    "cityId": "campania",
+    "summary": [
+      {
+        "text": "Campania of the Italian plain — where Apollodorus sends Philoctetes after Troy among the Campanians, in the same westward strand of myth that receives Aeneas and the exiled Diomedes.",
+        "sources": [
+          "apollodorus"
+        ]
+      }
+    ],
+    "characterIds": [
+      "philoctetes"
+    ],
+    "storyIds": [
+      "nostoi",
+      "philoctetes-to-italy",
+      "lesser-returns",
+      "aeneas-to-italy",
+      "diomedes-exile"
+    ]
+  }
+]

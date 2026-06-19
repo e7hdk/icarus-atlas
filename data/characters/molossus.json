@@ -1,0 +1,31 @@
+{
+  "id": "molossus",
+  "name": "Molossus",
+  "greekName": "Molossos (Μολοσσός)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of the Molossians",
+    "son of Neoptolemus and Andromache"
+  ],
+  "summary": [
+    {
+      "text": "Son of Neoptolemus and Andromache, born after Troy when his father reigned among the Molossians in Epirus — eponym of the Molossian people.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.12; Description of Greece 1.11.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells how Neoptolemus, travelling overland with Helenus to the country of the Molossians, vanquished them in battle, reigned as king, and begat Molossus on Andromache. Pausanias names him first among three sons Neoptolemus had by the widow of Hector — Molossus, Pielus, and Pergamus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.12; Description of Greece 1.11.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "buthrotum",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

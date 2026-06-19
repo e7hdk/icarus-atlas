@@ -1,0 +1,37 @@
+{
+  "id": "eurus",
+  "name": "Eurus",
+  "greekName": "Euros (Εὖρος)",
+  "romanName": "Vulturnus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the east wind",
+    "the dawn quarter",
+    "the eastern realms"
+  ],
+  "summary": [
+    {
+      "text": "The East Wind — Hesiod names only Zephyrus, Boreas, and Notus among the sons of Astraeus and Eos, but the later canon adds Eurus as the fourth brother when the quarters of the sky are divided.",
+      "sources": ["hesiod", "ovid", "apollodorus"],
+      "citation": "Theogony 378–382; Metamorphoses 1.56–66; Bibliotheca 1.2.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hesiod's Theogony the strong-hearted winds born to Eos and Astraeus are three: brightening Zephyrus, headlong Boreas, and Notus. Apollodorus likewise gives Eos and Astraeus the winds and the stars, without naming a fourth.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4"
+    },
+    {
+      "text": "Ovid completes the compass. When Jupiter gave the winds their realms — vix nunc obsistitur illis, so great is their discord — Eurus withdrew to the lands of Dawn, toward Nabataea and Persia and the ridges touched by the morning sun; Zephyrus took the western shores, Boreas invaded Scythia, and the rainy south fell to Austor.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.56–66"
+    },
+    {
+      "text": "The east wind also enters mortal sailing lore in the same poet: favourable Eurus carries heroes homeward until the season turns, and later blows are named again when fleets put out from harbour.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 7.805–807; 8.1–4"
+    }
+  ]
+}

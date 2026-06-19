@@ -1,0 +1,19 @@
+{
+  "city": "buthrotum",
+  "reigns": [
+    {
+      "ruler": "Helenus",
+      "characterId": "helenus",
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Epitome 6.13; Metamorphoses 13.1015–1078; Description of Greece 1.11.1–2",
+      "note": "Founder of the Epirote city — a mimic Troy where the Trojan seer ruled after the war."
+    },
+    {
+      "ruler": "Neoptolemus",
+      "characterId": "neoptolemus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.12–13; Description of Greece 1.11.1",
+      "note": "King of the Molossians after vanquishing them in battle; dwelt in Epirus by Helenus' oracles."
+    }
+  ]
+}

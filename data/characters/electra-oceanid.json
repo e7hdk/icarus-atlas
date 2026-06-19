@@ -1,0 +1,38 @@
+{
+  "id": "electra-oceanid",
+  "name": "Electra",
+  "greekName": "Elektra (Ἠλέκτρα)",
+  "romanName": "Electra",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "daughter of Ocean",
+    "mother of the rainbow and the Harpies",
+    "consort of Thaumas"
+  ],
+  "summary": [
+    {
+      "text": "An Oceanid daughter of Oceanus and Tethys, wife of the sea-god Thaumas and mother of swift Iris and the storm-winged Harpies — not to be confused with Electra the Pleiad or Electra daughter of Agamemnon.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269, 350; Bibliotheca 1.2.2, 1.2.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names her among the daughters of Ocean and Tethys in the same breath as Asia, Styx, Doris, Eurynome, Amphitrite and Metis — the short canonical list of Oceanids who matter most to the Olympian order. To Thaumas, son of Pontus and Earth, she bore the swift-footed messenger Iris and the long-haired Harpies, Aello and Ocypete, who on their wings keep pace with the blasts of the winds.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Bibliotheca 1.2.2, 1.2.6; Theogony 265–269"
+    },
+    {
+      "text": "Hesiod tells the marriage without lingering: Thaumas wedded Electra, daughter of deep-flowing Ocean, and she bore him Iris and the Harpies. From this single Oceanid line come both the bright rainbow that runs between heaven and sea and the snatching whirlwinds that drove the food from blind Phineus' table until the Boreads pursued them off.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 265–269"
+    },
+    {
+      "text": "The atlas keeps her apart from every other Electra. The Pleiad who grieved for Troy (`electra-atlas`) and the daughter of Agamemnon who helped slay Clytemnestra (`electra`) share only the name; this Electra belongs wholly to the deep, the wife of Wonder and the mother of messengers.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    }
+  ]
+}

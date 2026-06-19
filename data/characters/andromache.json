@@ -44,6 +44,14 @@
     {
       "city": "troy",
       "sources": ["homer", "apollodorus", "pausanias"]
+    },
+    {
+      "city": "buthrotum",
+      "sources": ["apollodorus", "pausanias"]
+    },
+    {
+      "city": "pergamon",
+      "sources": ["pausanias"]
     }
   ]
 }

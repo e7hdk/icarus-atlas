@@ -26,6 +26,14 @@
         "apollodorus"
       ],
       "citation": "Apollodorus, Epitome 3.27, 5.8"
+    },
+    {
+      "text": "After Troy fell, Nestor counted him among the safe Returns, and Apollodorus sends him to the Campanians in Italy — one of the few unambiguous homecomings in the Nostoi.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 3.185–225; Epitome 6.15"
     }
   ],
   "story": [
@@ -70,6 +78,24 @@
         "apollodorus"
       ],
       "citation": "Epitome 5.8; Library 3.12.6"
+    },
+    {
+      "text": "When Troy fell, Nestor counted him among the safe Returns — the glorious son of Poias who crossed the sea with his company unrobbed, beside Neoptolemus and Idomeneus. Apollodorus sends him west after the war: Philoctetes went to the Campanians in Italy, one of the few unambiguous homecomings in the Nostoi catalogue.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 3.185–225; Epitome 6.15"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus", "homer", "hyginus"]
+    },
+    {
+      "city": "campania",
+      "sources": ["apollodorus"]
     }
   ]
 }

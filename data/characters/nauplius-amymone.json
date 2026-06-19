@@ -1,0 +1,43 @@
+{
+  "id": "nauplius-amymone",
+  "name": "Nauplius",
+  "greekName": "Nauplios (Ναύπλιος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "seafaring",
+    "Argos",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon and Amymone, Argive Argonaut who lived to great age and later avenged his son Palamedes by wrecking the Achaean returns from Troy.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Argonautica 1.134–136; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Nauplius among the Argonauts; Hyginus makes him son of Neptune and Amymone daughter of Danaus. By Clymene daughter of Catreus he fathered Palamedes and Oeax — the son whose stoning at Troy would define his old age.",
+      "sources": [
+        "apollonius",
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Argonautica 1.134–136; Fabulae 14; Bibliotheca 3.2.2"
+    },
+    {
+      "text": "When Palamedes was stoned through Odysseus' forged treason and Agamemnon denied satisfaction, Nauplius coasted Greece corrupting the heroes' wives and kindled false beacons on Mount Caphareus that wrecked the returning fleet — the full arc lives in the nested episode on his vengeance in the Returns.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Epitome 6.7–6.11; Fabulae 116–117; Metamorphoses 14.639–761"
+    }
+  ]
+}

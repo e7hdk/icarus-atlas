@@ -1,0 +1,82 @@
+{
+  "id": "amphilochus",
+  "name": "Amphilochus",
+  "greekName": "Ἀμφίλοχος",
+  "romanName": "Amphilochus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Epigoni",
+    "colonizer of Amphilochia",
+    "divination"
+  ],
+  "summary": [
+    {
+      "text": "Son of Amphiaraus and Eriphyle in Homer and Apollodorus, Amphilochus marched with the Epigoni against Thebes and afterward migrated to the people called Amphilochians; some later accounts make him instead a son of Alcmaeon.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2, 3.7.5; Description of Greece 2.18.5"
+    },
+    {
+      "text": "After Troy he left the fleet by land with Calchas and was buried at Colophon; in another tale he came late to the war as Alcmaeon's son and fought a single combat with Mopsus for the kingdom, and both fell.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.2, 6.19"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer counts him among the sons of Amphiaraus, born with Alcmaeon before the seer died at Thebes because of a woman's gifts. Apollodorus lists both brothers among the Epigoni who made war on Thebes under Alcmaeon's leadership, and Pausanias saw their statues at Argos and Delphi among the capturers of the city.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2; Description of Greece 2.20.5, 10.10.4"
+    },
+    {
+      "text": "When Alcmaeon killed Eriphyle, some said Amphilochus shared the matricide, others that Alcmaeon acted alone. Pausanias records the cult consequence at Oropos: Alcmaeon, for his treatment of Eriphyle, is honored neither in Amphiaraus' temple nor yet with Amphilochus, while Amphilochus has his own portion of the altar beside Amphiaraus' children.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.5; Description of Greece 1.34.3, 5.17.7"
+    },
+    {
+      "text": "After the capture of Troy, Pausanias says, Amphilochus migrated to the people now called Amphilochians. Apollodorus' Epitome adds other wanderings: he left his ships at Ilium and went by land to Colophon, where Calchas the diviner was buried; and separately that an Amphilochus son of Alcmaeon, arriving late at Troy, was driven to Mopsus' country and, according to some, fought him in single combat for the kingdom until both were slain.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 6.2, 6.19; Description of Greece 2.18.5"
+    },
+    {
+      "text": "Euripides told the house differently: in Alcmaeon's madness he begot Amphilochus and Tisiphone by Manto, daughter of Tiresias, and gave the infants to Creon of Corinth to rear. Apollodorus reports that variant without endorsing it over the brother of Alcmaeon born to Eriphyle.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.7.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ]
+    },
+    {
+      "city": "argos-amphilochicum",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ]
+    }
+  ]
+}

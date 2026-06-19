@@ -1,0 +1,52 @@
+{
+  "id": "baucis-philemon",
+  "title": "Baucis and Philemon",
+  "greekTitle": "Βαυκίς καὶ Φιλήμων",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.07,
+  "summary": {
+    "text": "When Jupiter and Mercury wandered Phrygia in mortal guise and a thousand doors closed against them, one humble cottage opened — Baucis and Philemon, poor, old, and content, shared their last goose and their hearth with the gods; the valley flooded, only their roof was spared, and at life's end they became an intertwining oak and linden guarding the temple that rose on the spot.",
+    "sources": ["ovid"],
+    "citation": "Ov. Met. 8.618–724"
+  },
+  "chapters": [
+    {
+      "title": "The wanderers",
+      "text": "After the Calydonian boar and the tales of Daedalus, Ovid turns to Phrygia, where the gods often tested mortals. Jupiter and Mercury came down without their insignia and knocked at a thousand houses; every door stayed shut until they reached a small thatched cottage on the slope, where an old couple greeted them as equals.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 8.618–660"
+    },
+    {
+      "title": "Humble hospitality",
+      "text": "Baucis and Philemon had grown old together in the same cottage where they married as youths; they owned little but shared it freely — a couch, a table, olives, garden greens, and a goose they chased round the room until the gods forbade the sacrifice. The wine bowl refilled itself; the couple wept to see divine power in their poor house and prayed forgiveness for having no better fare.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 8.660–698"
+    },
+    {
+      "title": "The flood",
+      "text": "Jupiter revealed himself and led them up the hill; the valley below became a marsh, and every proud house sank — only Baucis and Philemon's cottage stood, and as they watched it turned into a temple with marble columns and a golden roof. The gods asked what reward they wished; the pair asked only to die together, serving the temple as priest and priestess.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 8.698–712"
+    },
+    {
+      "title": "Oak and linden",
+      "text": "Years later, tending the shrine, they saw each other sprouting leaves — bark covered their limbs, and they merged into an oak and a linden with intertwining branches. A latticed screen still guarded the spot in Ovid's day, and garlands hung on the boughs that had been faithful Philemon and pious Baucis.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 8.712–724"
+    }
+  ],
+  "cast": [
+    { "name": "Baucis", "role": "The old wife who welcomed the gods" },
+    { "name": "Philemon", "role": "Her husband, who shared hearth and fate" },
+    { "id": "zeus", "name": "Zeus", "role": "Jupiter, wandering in mortal guise" },
+    { "id": "hermes", "name": "Hermes", "role": "Mercury, his companion on the road" }
+  ],
+  "places": [
+    { "name": "Phrygia", "role": "Land where the gods tested hospitality" },
+    { "id": "gordion", "name": "Gordion", "role": "Phrygian plateau near the humble cottage" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "8.618–724" }
+  ]
+}

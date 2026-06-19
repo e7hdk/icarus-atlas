@@ -1,0 +1,28 @@
+{
+  "id": "stichius-athenian",
+  "name": "Stichius",
+  "greekName": "Stichius (Στίχιος)",
+  "type": "hero",
+  "domains": ["Athenian captain", "leader of the picked men"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Athenians who followed Menestheus son of Peteos among the picked men of the host — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.195–230, 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Amphimachus fell, Stichius and goodly Menestheus, leaders of the Athenians, carried him to the host of the Achaeans. Later, when the battle raged at the ships, Menestheus led the picked Athenians and there followed Pheidas and Stichius and valiant Bias in the press of fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.195–230, 13.675–720"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["homer"]
+    }
+  ]
+}

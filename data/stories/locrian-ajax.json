@@ -1,0 +1,190 @@
+{
+  "id": "locrian-ajax",
+  "title": "The Wreck of the Locrian Ajax",
+  "greekTitle": "Αἴας ὁ Λοκρός",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.9,
+  "summary": {
+    "text": "Swift Ajax son of Oileus — first to run when Patroclus' body lay at risk — dragged Cassandra from Athena's image at the sack; on the voyage home Athena wrecked his ship, Poseidon split the rock he clung to, and Thetis buried him on Myconos while the Locrian captain who never reached home became a castaway even in the painters' underworld.",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "citation": "Hom. Il. 17.250–270; Od. 4.499–511; Apollod. Epit. 5.22, 6.6; Hyg. Fab. 116; Paus. 10.26.3, 10.31.1"
+  },
+  "chapters": [
+    {
+      "title": "The second Ajax",
+      "text": "Homer knows two Aiantes in the host: Telamonian Ajax, bulwark of the Achaeans with his tower-shield, and this Ajax son of Oileus, lord of the Locrians over against sacred Euboea with forty black ships — Hyginus counts twenty under the nymph Rhene. He is the lighter, swifter fighter: in the slaughter by the ships he leapt on Cleobulus and smote him with his hilted sword until the blade grew warm with blood; when Patroclus fell, Odysseus shouted that every man must go forth unbidden, and swift Aias son of Oileus was first to come running through the battle.",
+      "sources": [
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Hom. Il. 2.527–535, 16.330–350, 17.250–270; Hyg. Fab. 97"
+    },
+    {
+      "title": "The outrage at the Palladium",
+      "text": "When Troy was taken, the Locrian Ajax violated Cassandra as she clung to the wooden image of Athena — therefore, Apollodorus says, the image looks to heaven. Hyginus counts the sacrilege among the causes of the storm the gods sent on the homeward voyage: the Greeks had despoiled the shrines, and Ajax had dragged the prophetess from the statue of Pallas. Pausanias saw the scene at Delphi, where Cassandra sits holding the image she overturned, and on the Cypselus chest the same outrage was wrought in gold and ivory.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Apollod. Epit. 5.22; Hyg. Fab. 116; Paus. 10.26.3, 5.19.5"
+    },
+    {
+      "title": "The storm Athena sent",
+      "text": "The Returns are never innocent. Hyginus says Athena and Poseidon sent contrary winds and wrecked ships on the Cepharean Rocks because the victors had robbed temples and because of what the Locrian had done at Pallas' shrine. In that storm Minerva struck Ajax with a thunderbolt; the waves dashed him against the rocks, and from that they are called the Rocks of Ajax. Apollodorus agrees that Athena threw the thunderbolt at his ship — the goddess' wrath made flesh on the open sea.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. Epit. 6.6; Hyg. Fab. 116"
+    },
+    {
+      "title": "The rock and the boast",
+      "text": "When the ship went to pieces Ajax reached a rock and declared that he was saved in spite of Athena's intention — a boast that sealed his doom. Poseidon smote the reef with his trident and split it, and Ajax fell into the sea and perished. Menelaus, telling Telemachus in Egypt how Proteus named the dead from Troy, remembered the same end: upon the great rocks of Gyrae Poseidon had first driven him, and he would have escaped, hated of Athena though he was, had he not uttered a boastful word declaring he was saved despite the gods.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Apollod. Epit. 6.6; Hom. Od. 4.499–511"
+    },
+    {
+      "title": "Burial on Myconos",
+      "text": "His body was washed up and buried by Thetis on Myconos — the level Cycladic isle east of Delos where some said he had been cast ashore before burial, since it was unlawful to die on Delos itself. The captain who had been swiftest to Patroclus' side never saw Opuntian Locris again; his end belongs to the Epic Cycle's bitter Returns, not to the honour the greater Ajax won by suicide on Troy's shore.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. Epit. 6.6; Hyg. Fab. 116, 276"
+    },
+    {
+      "title": "Castaway among the dead",
+      "text": "Polygnotus painted the underworld at Delphi: among the heroes of Troy the Locrian Ajax appears as a shipwrecked man, brine forming a scurf on his skin — punishment visible even in the house of the dead. At Troy he had been first to the rescue; on the sea he was first among those the gods singled out for ruin. The nested episode on Cassandra at Mycenae carries her from the same outrage to the bath at Mycenae; here the story ends on the rocks and the island grave.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 10.31.1, 10.26.3"
+    },
+    {
+      "title": "Not the Telamonian",
+      "text": "He must never be merged with Ajax son of Telamon, who took his own life when Odysseus won Achilles' arms — the nested episode on Ajax and the Arms tells the contest, the madness, and the sword on Troy's shore, and his shade in Hades would not speak to the Ithacan king. That greater Ajax died before the wooden horse; the Locrian perished on the Gyraean rocks for Cassandra. Two heroes, one name, two ruins on the long road home from Ilion — and only one of them left a tomb the Locrians would mourn with black sails and burning offerings on the sea.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Hom. Od. 11.543–567; Apollod. Epit. 5.5, 6.6"
+    }
+  ],
+  "cast": [
+    {
+      "id": "ajax-oileus",
+      "name": "Ajax the Locrian",
+      "role": "Captain wrecked on the Gyraean rocks"
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "role": "Prophetess dragged from Athena's image"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Goddess whose thunderbolt wrecked his ship"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "He who split the rock beneath him"
+    },
+    {
+      "id": "thetis",
+      "name": "Thetis",
+      "role": "She who buried his body on Myconos"
+    },
+    {
+      "id": "ajax-telamonian",
+      "name": "Ajax the Telamonian",
+      "role": "The greater Ajax, dead by another hand"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "He who called him first to Patroclus' body"
+    },
+    {
+      "id": "patroclus",
+      "name": "Patroclus",
+      "role": "Whose body he was first to defend"
+    },
+    {
+      "id": "menelaus",
+      "name": "Menelaus",
+      "role": "He who told Proteus' tale of the wreck"
+    },
+    {
+      "id": "proteus",
+      "name": "Proteus",
+      "role": "Seer who named the dead from Troy in Egypt"
+    }
+  ],
+  "places": [
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Where the outrage at the Palladium occurred"
+    },
+    {
+      "id": "myconos",
+      "name": "Myconos",
+      "role": "Isle where Thetis buried him"
+    },
+    {
+      "name": "Delphi",
+      "role": "Polygnotus' paintings of the outrage and the castaway"
+    },
+    {
+      "name": "Gyraean rocks",
+      "role": "Reef where Athena and Poseidon destroyed him"
+    },
+    {
+      "name": "Cepharean Rocks",
+      "role": "Where Hyginus sets the divine storm"
+    },
+    {
+      "name": "Locrian coast",
+      "role": "The homeland he never reached"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "2.527–535, 16.330–350, 17.250–270"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "4.499–511, 11.543–567"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "5.22, 6.6"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "116, 276"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "5.19.5, 10.26.3, 10.31.1"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "hermus",
+  "name": "Hermus",
+  "greekName": "Hermos (Ἕρμος)",
+  "romanName": "Hermus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Lydian river",
+    "Gygaean lake",
+    "eddying Potamos"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Lydia, born to Oceanus and Tethys — the eddying stream beside the Gygaean lake where Homer sets the birth of a Trojan ally, and one of the great brotherhood of Potamoi in Hesiod's first genealogy of waters.",
+      "sources": ["hesiod", "homer", "hyginus"],
+      "citation": "Theogony 337–345; Iliad 20.390; Fabulae, preface (Theogony)"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Hermus among the eddying rivers Tethys bore to Ocean — in one breath with holy Simois, Peneus, and great Sangarius in the catalogue of the world's streams.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Homer places a Trojan warrior's origin on the Lydian water: Asius son of Hyrtacus vaunts that his birth was by the Gygaean lake, where is the demesne of his fathers, even by Hyllus that teems with fish, and eddying Hermus — before Achilles' spear ends him in the forefront of battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.390"
+    },
+    {
+      "text": "Hyginus counts Hermus among the Rivers born of Oceanus and Tethys in his genealogical preface — the Lydian stream set in the same divine brood as Strymon, Inachus, and Alpheus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

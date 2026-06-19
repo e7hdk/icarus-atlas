@@ -1,0 +1,40 @@
+{
+  "id": "polybus-zacynthus",
+  "name": "Polybus",
+  "greekName": "Polybos (Πόλυβος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — distinct from `polybus-ithaca`, the wise suitor Homer names among the last fighters in the hall.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Odyssey 22.210–290"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Polybus among the wooers assigned to Zacynthus, listed after Agenor and before Polydorus in Epitome 7.29 — and again at the end of the same list before Andromedes.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    },
+    {
+      "text": "Homer's 'wise Polybus' who fought on with Agelaus and Eurynomus when the bow had slain the rest is the Ithaca-roll figure (`polybus-ithaca`), not necessarily this Zacynthian name in the Epitome.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.210–250"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

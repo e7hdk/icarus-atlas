@@ -1,0 +1,31 @@
+{
+  "id": "coresus-ephesus",
+  "name": "Coresus",
+  "greekName": "Korēsos (Κόρησος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "aboriginal founder",
+    "Artemis' sanctuary at Ephesus"
+  ],
+  "summary": [
+    {
+      "text": "An aboriginal who, with Ephesus son of the river Cayster, founded the sanctuary of Artemis at Ephesus — distinct from the Calydonian priest Coresus who loved Callirhoe.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias rejects Pindar's claim that Amazons founded the Ephesian temple during their campaign against Athens; the sanctuary was founded, he says, by Coresus an aboriginal and Ephesus, from whom the city took its name. Amazon women from the Thermodon knew the shrine from of old and sacrificed there, but they did not establish it.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ephesus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "pleione-oceanid",
+  "name": "Pleione",
+  "greekName": "Pleionē (Πλειόνη)",
+  "romanName": "Pleione",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "daughter of Ocean",
+    "mother of the Pleiads",
+    "consort of Atlas"
+  ],
+  "summary": [
+    {
+      "text": "An Oceanid daughter of Oceanus and Tethys, wife of Atlas and mother of the seven Pleiads — Alcyone, Merope, Celaeno, Electra, Sterope, Taygete, and Maia — born at Cyllene in Arcadia.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.1; Fabulae p.9; Astronomica 2.21.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names her in the same breath as the seven sisters: Atlas and Pleione, daughter of Ocean, had seven daughters called the Pleiades, brought forth at Cyllene in Arcadia. Zeus consorted with the daughters; Poseidon with others; Sterope married Oenomaus and Merope Sisyphus — but the mother of the whole constellation-line is Pleione, Ocean's daughter.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1"
+    },
+    {
+      "text": "Hyginus preserves the genealogy twice: from Atlas and Pleione came Maia, Calypso, Alcyone, Merope, Electra, and Celaeno in the preface roll; in the Astronomica he adds the catasterism tale — Pleione travelling through Boeotia with her daughters, Orion pursuing her for seven years until they were set among the stars.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae p.9; Astronomica 2.21.3–6"
+    },
+    {
+      "text": "The atlas keeps her distinct from the collective name alone. The seven sister-nodes (`maia`, `alcyone-pleiad`, `merope-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad`, `taygete`) carry the `pleiad` kind; this node holds the Oceanid parentage and the marriage to Atlas that the Batch E sisters lacked until now.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.1; Astronomica 2.21.3"
+    }
+  ]
+}

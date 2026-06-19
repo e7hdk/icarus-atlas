@@ -1,0 +1,31 @@
+{
+  "id": "areius-teuthrania",
+  "name": "Areius",
+  "greekName": "Areios (Ἄρειος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "despot of Teuthrania",
+    "the Caicus kingdom"
+  ],
+  "summary": [
+    {
+      "text": "Despot who ruled Teuthrania on the Caicus when Pergamus son of Neoptolemus crossed into Asia; he fought the newcomer in single combat for the kingdom and was slain, yielding the seat that Pergamus renamed after himself.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.11.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records only the end of his reign: when Pergamus, youngest son of Neoptolemus and Andromache, came oversea into the old Mysian land still called Teuthrania, Areius met him in single combat for the kingship and fell — the last lord of the plain before the city took its eponym from the victor.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.11.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pergamon",
+      "sources": ["pausanias"]
+    }
+  ]
+}

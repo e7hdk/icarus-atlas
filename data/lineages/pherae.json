@@ -1,0 +1,26 @@
+{
+  "city": "pherae",
+  "reigns": [
+    {
+      "ruler": "Pheres",
+      "characterId": "pheres-aeolid",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.9.14",
+      "note": "Son of Cretheus, who founded Pherae in Thessaly and begat Admetus and Lycurgus."
+    },
+    {
+      "ruler": "Admetus",
+      "characterId": "admetus",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Il. 2.711–715; Apollod. 1.9.15; Fabulae 50–51",
+      "note": "King when Apollo served him as thrall, when he won Alcestis, and when Heracles wrestled Death for her return."
+    },
+    {
+      "ruler": "Eumelus",
+      "characterId": "eumelus-pherae",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Il. 2.714–715; Epitome 5.5; Fabulae 97",
+      "note": "Son of Admetus and Alcestis, who led the Pheraean ships to Troy and raced at the funeral games on the plain."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "hylaeus-centaur",
+  "name": "Hylaeus",
+  "greekName": "Hylaios (Ὑλαῖος)",
+  "romanName": "Hylaeus",
+  "type": "creature",
+  "domains": [
+    "Arcadian wilderness",
+    "centaur violence"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who, with Rhoecus, assaulted Atalanta in the Arcadian wilds and was killed by her arrows.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus' Arcadian life of Atalanta, the virgin huntress who lived always under arms was set upon by the centaurs Rhoecus and Hylaeus; both tried to force her, and both were shot down and killed by her.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    },
+    {
+      "text": "The name appears elsewhere in Ovid's hunting catalogues — a hound or follower in other lists — but the centaur who fell to Atalanta belongs only to the Apollodoran Arcadian saga and must not be merged with those homonyms.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.9.2; Metamorphoses 3.206–231"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

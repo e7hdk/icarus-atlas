@@ -1,0 +1,57 @@
+{
+  "id": "idomeneus",
+  "name": "Idomeneus",
+  "greekName": "Idomenēus (Ἰδομενεύς)",
+  "type": "hero",
+  "domains": ["kingship of Crete", "the hundred cities", "spear-fame"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Deucalion and lord of Crete's hundred cities, captain of eighty black ships at Troy — famed for his spear, honoured by Agamemnon, and in the fight beside Poseidon himself when the god walked the field in his likeness.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650, 4.257–260, 13.206–270"
+    },
+    {
+      "text": "Apollodorus makes him a son of Deucalion the Cretan, who was born to Minos — not the Deucalion of the great flood.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Of all who dwelt in Crete of the hundred cities — Cnosus and Gortys, Lyctus and Miletus, Lycastus, Phaestus, Rhytium and the rest — Idomeneus, famed for his spear, was captain, and with him Meriones, the peer of Enyalius. Eighty black ships they brought. Agamemnon, seeing him arm amid the Cretans, called him the Danaan he honoured most in war and at the feast, and a trusty comrade since the day he pledged himself at the first.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650, 4.257–271"
+    },
+    {
+      "text": "When the Trojans pressed the ships, Poseidon took the likeness of Idomeneus and roused the Achaeans; later, meeting the true Idomeneus, the god in that borrowed form declared the Cretan lineage: Zeus begat Minos to rule Crete, Minos begat Deucalion, and Deucalion begat Idomeneus — a lord over many men in wide Crete. So the king fought with a god's praise in his ears.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.206–270"
+    },
+    {
+      "text": "He stood among the champions Nestor summoned to the counsel of kings, and Helen on the wall named him amid the Cretans even as a god — a guest Menelaus had often entertained in Sparta when he came from Crete. In the counter-assault after Patroclus fell, swift Aias son of Oileus ran first to the body, and after him Idomeneus and Meriones.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.370–415, 3.230–240, 17.250–270"
+    },
+    {
+      "text": "After Troy, Nauplius' corruption turned Meda to Leucus; the usurper killed queen and daughter Clisithyra in the temple, seized ten cities, and drove Idomeneus into exile when he landed in Crete — the nested episode on Idomeneus and Leucus tells the Cretan reckoning of the Returns.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.9–6.10; Fabulae 116–120"
+    },
+    {
+      "text": "He must not be merged with Deucalion son of Prometheus, the flood-survivor of Thessaly — only Deucalion son of Minos, the Cretan king's son named in the epic and in Apollodorus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 13.450–455; Bibliotheca 3.1.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "gortyn",
+      "sources": ["homer"]
+    }
+  ]
+}

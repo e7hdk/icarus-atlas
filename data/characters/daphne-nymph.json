@@ -1,0 +1,45 @@
+{
+  "id": "daphne-nymph",
+  "name": "Daphne",
+  "greekName": "Daphnē (Δάφνη)",
+  "romanName": "Daphne",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Peneus",
+    "laurel metamorphosis",
+    "beloved of Apollo"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad daughter of the river Peneus in Thessaly, whom Apollo pursued after Cupid's revenge and who fled until her body became the laurel tree — not to be confused with the Arcadian huntress Daphne of the river Ladon in Pausanias' separate tale.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 1.577–748; Fabulae 203"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid makes her Phoebus' first love — not by chance but by Cupid's angry spite. When the sun-god mocked the boy's bow after slaying Python, Cupid pierced Apollo with a golden shaft of desire and struck Daphne daughter of Peneus with lead that repelled it. She had prayed her father to let her live unwed like Diana; now Apollo burned for the maiden who would have none of men.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.452–567, 577–687"
+    },
+    {
+      "text": "He pursued as a hound runs a hare until her breath stirred in his reach. Spent and pale, Daphne looked to her father's waves and prayed: destroy the beauty that harms me, or change the body that destroys my life. Before the prayer ended bark closed her breast, her hair became leaves, her arms branches, her feet roots — and Phoebus, though she could not be his bride, made the laurel his tree forever.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.688–748",
+      "topic": "daphne-transformation-agent"
+    },
+    {
+      "text": "Hyginus shifts the agent of change. When Apollo pursued the virgin Daphne, she begged Earth for protection; Earth received her and changed her into a laurel tree, and Apollo broke a branch and placed it on his head. The tree is common to both tellings; who transforms whom is not.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 203",
+      "topic": "daphne-transformation-agent"
+    },
+    {
+      "text": "Pausanias knew poets who sang Apollo's love for Daphne, but also an Arcadian tale of a different maiden of that name on the river Ladon — loved in secret by Leucippus disguised as a girl, until the huntresses stripped him and killed him with javelins when Apollo grew jealous. The laurel-nymph of Thessaly and the huntress of Arcadia must not be merged under one node.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.20.1–4"
+    }
+  ]
+}

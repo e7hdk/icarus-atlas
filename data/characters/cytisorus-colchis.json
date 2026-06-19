@@ -1,0 +1,38 @@
+{
+  "id": "cytisorus-colchis",
+  "name": "Cytisorus",
+  "greekName": "Kytisōros (Κυτισωρός)",
+  "romanName": "Cytisorus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phrixus",
+    "grandson of Aeetes",
+    "the return to Orchomenus"
+  ],
+  "summary": [
+    {
+      "text": "Youngest-named of the four sons Phrixus begot on Chalciope at Aea — in Apollonius Cytissorus, with Phrontis, Melas, and Argus — who sailed from Colchis toward Orchomenus and fled with Medea when the Golden Fleece was stolen.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1140–1145, 4.11"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus gives the name as Cytisorus among the children of Phrixus and Chalciope in Colchis, alongside Argus, Melas, and Phrontis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "Apollonius introduces him first when the brothers name themselves to Jason at Circe's isle — 'this is Cytissorus, this Phrontis, and this Melas, and me ye may call Argus' — before they turn back to Aea with the Argonauts and share the flight when Medea leaves her father's house.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.1140–1145, 4.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

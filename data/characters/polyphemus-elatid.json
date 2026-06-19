@@ -1,0 +1,32 @@
+{
+  "id": "polyphemus-elatid",
+  "name": "Polyphemus",
+  "greekName": "Polyphemos (Πολύφημος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Larissa",
+    "Mysia",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Elatus, Thessalian Argonaut left in Mysia searching for Hylas; he founded Cius and died old without finding the boy.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hylas was lost to the nymphs, Heracles and Polyphemus searched while the Argo sailed on. Polyphemus remained in Mysia, founded Cius, and ruled there until he died still seeking Hylas.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Fabulae 14"
+    }
+  ]
+}

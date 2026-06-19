@@ -1,0 +1,33 @@
+{
+  "id": "abas-centaur",
+  "name": "Abas",
+  "greekName": "Abas (Ἄβας)",
+  "romanName": "Abas",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "boar-hunting"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur hunter of wild boars who fled the wedding battle with Pholus, Melaneus, and Asbolus.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid names Abas among the centaurs who ran for their lives when Peirithous' feast became a war — a hunter of wild boars fleeing beside Pholus and Melaneus. He is not Abas the early king of Argos (`abas`), father of Acrisius and Proetus.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

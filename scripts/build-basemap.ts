@@ -274,12 +274,31 @@ const REGION_EXTENSIONS: Record<string, [number, number][]> = {
     [21.75, 39.0], [22.0, 38.85], [21.95, 38.3], [21.3, 38.15],
     [20.95, 38.4], [20.76, 38.55],
   ],
-  // The Troad: a standalone synthetic region over the Anatolian (foreign-layer)
-  // coast — Priam's country between Mount Ida and the Hellespont.
+  // ---- Anatolia (Model B ethnic regions — docs/ANATOLIA_REGIONS.md §7) ----
+  // Rings overshoot the coast; rendering clips them to the foreign layer.
+  // The Troad: Priam's country between Mount Ida and the Hellespont.
   troad: [
     [25.6, 40.45], [26.8, 40.65], [27.9, 40.45], [28.0, 39.6],
     [26.8, 39.05], [25.9, 39.3],
   ],
+  mysia: [[26.5, 40.2], [28.8, 40.2], [28.8, 39.0], [26.5, 39.0]],
+  lydia: [[27.0, 39.5], [29.5, 39.5], [29.5, 38.0], [27.0, 38.0]],
+  ionia: [[26.0, 38.8], [28.5, 38.8], [28.5, 37.5], [26.0, 37.5]],
+  caria: [[27.0, 37.8], [29.5, 37.8], [29.5, 36.5], [27.0, 36.5]],
+  lycia: [[27.8, 37.2], [31.5, 37.2], [31.5, 35.8], [27.8, 35.8]],
+  pamphylia: [[30.0, 37.5], [32.5, 37.5], [32.5, 36.2], [30.0, 36.2]],
+  cilicia: [[32.5, 37.8], [36.5, 37.8], [36.5, 36.0], [32.5, 36.0]],
+  phrygia: [[27.5, 40.5], [32.5, 40.5], [32.5, 38.5], [27.5, 38.5]],
+  bithynia: [[28.5, 41.5], [31.5, 41.5], [31.5, 40.0], [28.5, 40.0]],
+  paphlagonia: [[32.0, 42.0], [36.0, 42.0], [36.0, 40.5], [32.0, 40.5]],
+  pontus: [[36.0, 42.5], [41.5, 42.5], [41.5, 40.0], [36.0, 40.0]],
+  cappadocia: [[33.5, 40.5], [38.5, 40.5], [38.5, 38.0], [33.5, 38.0]],
+  // ---- West Mediterranean (docs/WEST_MEDITERRANEAN_PLAN.md §10) ----
+  // Rings overshoot the coast; rendering clips them to the foreign layer.
+  sicily: [[12.4, 38.3], [15.7, 38.3], [15.7, 36.4], [12.4, 36.4]],
+  'magna-graecia': [[15.5, 41.3], [18.5, 41.3], [18.5, 37.8], [15.5, 37.8]],
+  latium: [[12.2, 42.1], [13.2, 42.1], [13.2, 41.4], [12.2, 41.4]],
+  campania: [[13.8, 41.3], [15.5, 41.3], [15.5, 40.5], [13.8, 40.5]],
 };
 
 const SUBREGIONS: Record<string, { parent: string; ring: [number, number][] }> = {
@@ -600,6 +619,38 @@ const SUBREGIONS: Record<string, { parent: string; ring: [number, number][] }> =
   cos: {
     parent: 'south-aegean',
     ring: [[26.75, 37.0], [27.45, 37.0], [27.45, 36.6], [26.75, 36.6]],
+  },
+
+  // ---- Anatolia (Batch B sub-regions — docs/ANATOLIA_REGIONS.md §4) ----
+  dardania: {
+    parent: 'troad',
+    ring: [
+      [26.5, 40.2], [28.0, 40.2], [28.0, 39.6], [27.9, 39.05],
+      [26.8, 39.05], [26.5, 39.8],
+    ],
+  },
+  aeolis: {
+    parent: 'mysia',
+    ring: [[26.0, 39.2], [27.8, 39.2], [27.8, 38.5], [26.0, 38.5]],
+  },
+  teuthrania: {
+    parent: 'mysia',
+    ring: [
+      [26.5, 40.2], [28.8, 40.2], [28.8, 39.0], [27.8, 39.0],
+      [27.8, 39.2], [26.5, 39.2],
+    ],
+  },
+  maeonia: {
+    parent: 'lydia',
+    ring: [[27.0, 39.5], [29.5, 39.5], [29.5, 38.0], [27.0, 38.0]],
+  },
+  'hellespontine-phrygia': {
+    parent: 'phrygia',
+    ring: [[27.5, 40.5], [30.0, 40.5], [30.0, 38.5], [27.5, 38.5]],
+  },
+  ascania: {
+    parent: 'phrygia',
+    ring: [[30.0, 40.5], [32.5, 40.5], [32.5, 38.5], [30.0, 38.5]],
   },
 };
 

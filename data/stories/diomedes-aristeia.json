@@ -1,0 +1,66 @@
+{
+  "id": "diomedes-aristeia",
+  "title": "The Aristeia of Diomedes",
+  "greekTitle": "Διομήδους ἀριστεία",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.03,
+  "summary": {
+    "text": "Pallas Athena kindled Diomedes son of Tydeus for a single day's glory — he wounded Aphrodite and drove his spear into Ares, met Glaucus as a guest-friend between the lines, and on the same day Hector returned to Troy to hear Andromache's plea before the Scaean Gate.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 5–6"
+  },
+  "chapters": [
+    {
+      "title": "Athena's fire",
+      "text": "When the truce was broken, Diomedes stood out among the Argives. Athena descended, breathed strength into his chest, set unwearying flame on his helm and shield, and lifted the mist from his eyes so he could tell god from man — with orders to strike all save Aphrodite, and if he met Ares, not to shrink from wounding the war-god himself. Tydeus' son raged through the Trojan ranks, killing Pandarus who had broken the oaths and driving the Lycian captain Sarpedon from the field.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 5.1–151"
+    },
+    {
+      "title": "Aeneas and the goddesses",
+      "text": "Diomedes hurled a stone at Aeneas and would have killed him, but Aphrodite caught up her son in her white arms; discerning her for a weakling goddess, Diomedes drove his spear into the delicate hand and immortal ichor flowed — the first wounding of a god in the day's aristeia. Apollo snatched Aeneas away to sanctuary in Pergamus; Apollo warned the son of Tydeus three times not to match himself against immortals, but the day was not finished.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 5.297–351"
+    },
+    {
+      "title": "Wounding Ares",
+      "text": "When Ares entered the battle on Troy's side, Athena mounted Diomedes' chariot, guided his bronze spear, and drove it into the nethermost belly of the war-god. Ares bellowed as loud as nine or ten thousand men and fled to Zeus on Olympus, showing the immortal blood streaming from his wound — while on earth Diomedes stood alone among mortals as the man who had struck two Olympians in a single day.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 5.830–863"
+    },
+    {
+      "title": "Golden armour for bronze",
+      "text": "Between the lines Diomedes met Glaucus the Lycian and asked who he was among men. Glaucus answered with the genealogy of Bellerophon; Diomedes planted his spear in the ground — Oeneus once hosted Bellerophon for twenty days, and guest-friendship bound their houses. The two refused to fight and exchanged armour: Glaucus gave gold worth a hundred oxen for bronze worth nine, the wits stolen from him by Zeus — the swap the poets still call the Diomedean exchange.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 6.119–236"
+    },
+    {
+      "title": "Hector and Andromache",
+      "text": "The same day Hector left the field for Troy, and at the Scaean Gate Andromache met him with their infant Astyanax, begging him not to die and leave her a widow at the ditch. Hector reached for the child; the boy shrank from the horse-hair plume and wailed, and the father smiled and prayed that his son might one day be called better than his father among the Trojans. He told his wife he must fight in the front rank — his shame before the Trojan men and women would be greater than any death — and she went home weeping. The nested episodes on Patroclus and Hector will carry the war to its climax; here the Iliad's human counterweight to Diomedes' divine fury is the prince who knows he will not save his city.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 6.237–502"
+    }
+  ],
+  "cast": [
+    { "id": "diomedes", "name": "Diomedes", "role": "Warrior who wounded two gods in one day" },
+    { "id": "athena", "name": "Athena", "role": "Patron who drove his chariot against Ares" },
+    { "id": "aeneas", "name": "Aeneas", "role": "Dardanian captain Apollo snatched away" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Goddess wounded on the hand" },
+    { "id": "apollo", "name": "Apollo", "role": "He who bore Aeneas to sanctuary" },
+    { "id": "ares", "name": "Ares", "role": "War-god driven bellowing to Olympus" },
+    { "id": "glaucus-lycian", "name": "Glaucus", "role": "Lycian guest-friend, gold for bronze" },
+    { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally driven from the field" },
+    { "id": "pandarus", "name": "Pandarus", "role": "Archer slain in the aristeia" },
+    { "id": "hector", "name": "Hector", "role": "Shield of Troy at the Scaean Gate" },
+    { "id": "andromache", "name": "Andromache", "role": "Wife who begged him not to die" },
+    { "name": "Astyanax", "role": "Infant who shrank from the plume" },
+    { "id": "zeus", "name": "Zeus", "role": "Father who healed Ares on Olympus" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Plain, wall, and Scaean Gate" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "5–6" }
+  ]
+}

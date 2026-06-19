@@ -1,0 +1,28 @@
+{
+  "id": "bias-athenian",
+  "name": "Bias",
+  "greekName": "Bias (Βίας)",
+  "type": "hero",
+  "domains": ["Athenian captain", "valiant warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Valiant Bias who followed Menestheus among the picked Athenians at the ships — distinct from Bias shepherd of the host among Nestor's Pylians, from Bias son of Amythaon, and from the Dulichian suitor.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "Among the picked men of the Athenians, Menestheus son of Peteos was leader, and there followed Pheidas and Stichius and valiant Bias when the battle cried unquenchable at the foremost ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["homer"]
+    }
+  ]
+}

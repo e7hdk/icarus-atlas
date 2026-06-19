@@ -1,0 +1,69 @@
+{
+  "id": "return-of-the-argo",
+  "title": "The Return of the Argo",
+  "greekTitle": "ἡ νόστος καὶ ἡ τιμωρία",
+  "kind": "episode",
+  "parent": "argonautica",
+  "era": 7.1,
+  "summary": {
+    "text": "Aeetes pursued the fleeing Argo; Medea delayed him with her brother's blood, the ship was purified, Hera saved her alone through the Wandering Rocks, and at Corcyra Arete wed her to Jason — but the homecoming in Iolcus ended in Medea's cauldron and Pelias boiled by his own daughters.",
+    "sources": ["apollodorus", "apollonius", "homer", "ovid"],
+    "citation": "Apollod. 1.9.24–27; Apoll. Arg. 4.303–4.1770; Hom. Od. 12.69–72; Ov. Met. 7.487–568"
+  },
+  "chapters": [
+    {
+      "title": "Apsyrtus cut apart",
+      "text": "Apollodorus tells the horror plainly: when Aeetes pursued, Medea murdered her brother Apsyrtus aboard the Argo, cut him limb from limb, and cast the pieces into the deep so the king, gathering his child's limbs, fell behind in the chase. Zeus sent storm and demanded purification for the kin-slaying.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.9.23–24",
+      "topic": "apsyrtus-death"
+    },
+    {
+      "title": "The ambush on the isle",
+      "text": "Apollonius softens the tale: Apsyrtus came as a grown commander, and Medea promised to beguile him to a lonely meeting on Artemis' sacred isle. Jason lay in ambush and slew him there — Zeus was wrathful at the ruthless murder, and the Argo had to be purified by Circe before the voyage could continue.",
+      "sources": ["apollonius"],
+      "citation": "Apoll. Arg. 4.303, 4.391–481, 4.557",
+      "topic": "apsyrtus-death"
+    },
+    {
+      "title": "The Wandering Rocks",
+      "text": "Of all ships that ever sailed the sea, Homer says, the Argo alone passed the Wandering Rocks — the clashing crags that would have dashed her to pieces had not Hera sent her safely through, for Jason was dear to the goddess. Apollonius tells how Thetis and the Nereids guided the keel between them.",
+      "sources": ["homer", "apollonius"],
+      "citation": "Hom. Od. 12.69–72; Apoll. Arg. 4.772–960"
+    },
+    {
+      "title": "Arete's judgement",
+      "text": "The Colchians demanded Medea back. At Corcyra, King Alcinous and Queen Arete heard both sides: if Medea was still a maiden she must return to her father, if a wife she belonged to Jason. Arete married them that very night before dawn, and the Colchians could not take her.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Apollod. 1.9.25; Apoll. Arg. 4.1111–1169"
+    },
+    {
+      "title": "Pelias in the cauldron",
+      "text": "In Iolcus Jason could not seize the throne while Aeson lived and Pelias still ruled. Medea showed the king's daughters her art: she cut up an old ram, cast the pieces into a cauldron with her charms, and drew forth a lamb. Trusting the promise of renewed youth, the daughters minced and boiled their father Pelias — and Jason had his vengeance at the price of a witch's fraud.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.9.27; Ov. Met. 7.487–568"
+    }
+  ],
+  "cast": [
+    { "id": "jason", "name": "Jason", "role": "Captain returning to Iolcus" },
+    { "id": "medea-colchis", "name": "Medea", "role": "Witch who delayed pursuit and punished Pelias" },
+    { "id": "aeetes", "name": "Aeetes", "role": "Father in pursuit" },
+    { "id": "apsyrtus-colchis", "name": "Apsyrtus", "role": "Brother slain to slow the chase" },
+    { "id": "arete-phaeacian", "name": "Arete", "role": "Queen who married Medea to Jason" },
+    { "id": "alcinous-phaeacian", "name": "Alcinous", "role": "King who judged the dispute" },
+    { "id": "pelias", "name": "Pelias", "role": "Usurper boiled by his daughters" },
+    { "id": "aeson", "name": "Aeson", "role": "Jason's father, kept from the throne" },
+    { "id": "hera", "name": "Hera", "role": "She who saved the Argo at the Rocks" }
+  ],
+  "places": [
+    { "id": "corcyra", "name": "Corcyra", "role": "Where Arete wed Medea to Jason" },
+    { "id": "iolcus", "name": "Iolcus", "role": "Where Pelias met his end" },
+    { "name": "Wandering Rocks", "role": "Crags only the Argo passed" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.9.24–27" },
+    { "source": "apollonius", "work": "Argonautica", "citation": "4.303–4.1770" },
+    { "source": "homer", "work": "Odyssey", "citation": "12.69–72" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "7.487–568" }
+  ]
+}

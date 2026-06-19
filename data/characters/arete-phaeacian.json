@@ -1,0 +1,41 @@
+{
+  "id": "arete-phaeacian",
+  "name": "Arete",
+  "greekName": "Arete (Ἀρετή)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of the Phaeacians",
+    "marriage of Jason and Medea"
+  ],
+  "summary": [
+    {
+      "text": "Queen of the Phaeacians, wife of Alcinous and daughter of Rhexenor, honoured above all women on Corcyra; when the Argonauts came to the island she married Medea to Jason.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 7.66–77; Bibliotheca 1.9.25"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Arete beside Alcinous in the Phaeacian hall: the people look to her as to a god when she walks through the city, and her husband honours her above all wives — for she excels in counsel and in works of her hands.",
+      "sources": ["homer"],
+      "citation": "Odyssey 7.66–77"
+    },
+    {
+      "text": "When Odysseus came as a stranger to the Phaeacian city, Athena counselled him to approach the queen first: Arete, daughter of Rhexenor, wife of Alcinous, honoured in the land as a god when she walks the streets. He clasped her knees in supplication, and she and the king promised him passage home.",
+      "sources": ["homer"],
+      "citation": "Odyssey 7.40–77, 7.187–197"
+    },
+    {
+      "text": "When Jason's ship put in to Corcyra after passing the kine of the Sun on Thrinacia, Arete the queen performed the marriage of Medea to Jason before the chiefs sailed on.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.25"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { hashString, mulberry32, sampleBandPoint } from '@/features/galaxy/layout';
 import { clusterTint, WISP_CLUSTERS } from './palette';
 import { POINTS_VERT, POINTS_FRAG } from './shaders/points';
+import { useElapsedRef } from './useElapsedRef';
 
 /** Background starfield — one Points draw call, three seeded populations:
  *  a disc-flattened milky band (agrees with the GalacticDisc about where the
@@ -119,10 +120,11 @@ export function StarField() {
     return { geometry: geo, material: mat };
   }, []);
 
-  useFrame(({ clock, gl }) => {
+  const elapsed = useElapsedRef();
+  useFrame(({ gl }) => {
     const mat = points.current?.material as THREE.ShaderMaterial | undefined;
     if (!mat) return;
-    mat.uniforms.uTime.value = clock.elapsedTime;
+    mat.uniforms.uTime.value = elapsed.current;
     mat.uniforms.uPixelRatio.value = gl.getPixelRatio();
   });
 

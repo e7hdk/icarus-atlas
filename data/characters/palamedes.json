@@ -1,0 +1,42 @@
+{
+  "id": "palamedes",
+  "name": "Palamedes",
+  "greekName": "Palamēdēs (Παλαμήδης)",
+  "type": "hero",
+  "domains": [
+    "invention and counsel",
+    "the exposure of feigned madness",
+    "the stoning at Troy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Nauplius, the Argive who proved Odysseus' madness feigned at the muster and later was stoned as a traitor on a charge Odysseus forged — whose death set Nauplius on the vengeance that wrecked the Greek returns.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Epitome 3.7–3.8, 6.8; Fabulae 105; Metamorphoses 13.1–141"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes him son of Nauplius and Clymene daughter of Catreus — though the Returns name other mothers. When Odysseus feigned madness to avoid Troy, Palamedes followed him into the ploughed field, snatched the infant Telemachus from Penelope's bosom, and drew his sword as if to kill the child; Odysseus confessed the ruse and sailed with the host.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.7; Bibliotheca 3.2.2"
+    },
+    {
+      "text": "Odysseus never forgave the exposure. He took a Phrygian prisoner, forced him to write a letter in Priam's name implicating Palamedes, buried gold in the man's quarters, and dropped the letter in camp. Agamemnon read it, found the treasure, and gave Palamedes to the allies to be stoned as a traitor — the king himself, Apollodorus says, was Odysseus' accomplice in the murder.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 3.8, 6.8; Metamorphoses 13.1–141, 13.296–454"
+    },
+    {
+      "text": "When Nauplius learned of the stoning he sailed to the Greeks and demanded satisfaction; but the army favoured Agamemnon, and the father returned empty-handed. The vengeance that followed — corrupting the wives at home and kindling false beacons on Caphareus — belongs to the nested episode on Nauplius' wrath in the Returns.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.8–6.11; Fabulae 116–117"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

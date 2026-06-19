@@ -1,0 +1,28 @@
+{
+  "id": "mulius-trojan",
+  "name": "Mulius",
+  "greekName": "Moulios (Μούλιος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Patroclus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Patroclus laid low after Elasus when the gods called him deathward — distinct from `mulius-iliad20` whom Achilles smote in *Iliad* 20 and from `mulius-augeiad` whom Nestor slew in the old Pylians–Epeians war.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then whom first, whom last didst thou slay, Patroclus, when the gods called thee deathward? Adrastus first, and Autonous, and Echeclus, and Perimus son of Megas, and Epistor, and Melanippus, and thereafter Elasus, and Mulius, and Pylartes: these he slew, and the others bethought them each man of flight.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "antilochus-nestor",
+  "name": "Antilochus",
+  "greekName": "Antilochus (Ἀντίλοχος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "swift warrior at Troy",
+    "the funeral games of Patroclus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — among the boldest Pylians at Troy, who ran with the bitter news of Patroclus' death to Achilles and won renown in the chariot-race at the hero's funeral games.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 5.535–575, 18.1–60, 23.290–315; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer knows him as a front-rank fighter from the opening battles: Antilochus, son of great-souled Nestor, was first among the Pylians to claim a kill in the Trojan ranks, and later saved Menelaus when Ares roused Aeneas against the shepherd of the host.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.450–485, 5.535–575"
+    },
+    {
+      "text": "When Patroclus fell, Nestor sent Antilochus to Achilles with the bitter tidings. The runner found the son of Peleus by the shore of the grey sea and spoke plainly: Patroclus lies dead, and they are fighting over the naked body — Hector already has the armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 18.1–60"
+    },
+    {
+      "text": "At the funeral games for Patroclus he drove Nestor's horses in the chariot-race, yielding place to Menelaus with prudent courtesy when the king pressed him — yet Nestor's counsel had taught him to cut the turn close, and by that daring he finished second only to Diomedes.",
+      "sources": ["homer"],
+      "citation": "Iliad 23.290–315"
+    },
+    {
+      "text": "After Hector's death, when the Amazon Penthesilea and then Memnon king of the Ethiopians came to Troy, Antilochus fell to Memnon in battle — and Achilles avenged him by slaying the Ethiopian. His shade came later among the heroes Odysseus met in the house of Hades.",
+      "sources": ["apollodorus", "hyginus", "homer"],
+      "citation": "Epitome 5.3; Fabulae 112; Odyssey 11.465–537"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "aretus-nestor",
+  "name": "Aretus",
+  "greekName": "Aretos (Ἄρητος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "the Pylians at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — one of the Pylians who came forth with his brothers when their father led the sacrifice to Athena at dawn during Telemachus' visit to sandy Pylos.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.405–445; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Aretus among the sons who gathered about Nestor of Gerenia holding his sceptre — with Echephron, Stratius, Perseus, and godlike Thrasymedes, and Peisistratus thereafter — when the old horseman first addressed Athena and then sent Telemachus on toward Menelaus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.405–445"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lacritus-boeotian",
+  "name": "Lacritus",
+  "greekName": "Lakritos (Λάκριτος)",
+  "type": "hero",
+  "domains": ["father of Leïtus and Clonius", "Boeotian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Leïtus and Clonius, the Boeotian captains whom Hyginus names as sons of Lacritus and Cleobule (`cleobule-boeotian`) — Homer names only Alectryon as father of Leïtus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hyginus' muster-roll Leïtus leads twelve Boeotian ships and Clonius nine, both sons of Lacritus and Cleobule from Boeotia.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["hyginus"]
+    }
+  ]
+}

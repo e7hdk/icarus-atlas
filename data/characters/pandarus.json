@@ -1,0 +1,33 @@
+{
+  "id": "pandarus",
+  "name": "Pandarus",
+  "greekName": "Pandaros (Πάνδαρος)",
+  "type": "hero",
+  "domains": ["archery", "the broken truce", "the Troes of Zeleia"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Lycaon (`lycaon-pandarusid`), lord of the Troes who dwelt beneath the nethermost foot of Ida and drank the dark water of Aesepus — to whom Apollo himself gave the bow — who at Athene's prompting shot at Menelaus and broke the truce, and was slain by Diomedes in the press of battle.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.824–827, 4.85–125, 5.290–296; Epitome 4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue the glorious son of Lycaon led the Troes from Zeleia, men of wealth by the streams of Aesepus, and Apollo had given him the bow. When the truce was set and Alexander fought Menelaus, Athene came to the Trojan ranks in the likeness of Laodocus son of Antenor, found Lycaon's son peerless and stalwart, and bade him shoot at Menelaus that the oath might be broken and the war go on. Pandarus let fly a bitter arrow; Athene turned it aside so that the bronze grazed the king's belt, yet the blood flowed and the truce was broken.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 4.85–125; Epitome 4.1"
+    },
+    {
+      "text": "On the day of Diomedes' aristeia, Aeneas sought godlike Pandarus and urged him to lift his hands to Zeus and let fly at the raging son of Tydeus. Pandarus shot from his bow, but the shaft would not pierce Diomedes' shield; the Argive cast his spear and tore through the sinews of Pandarus' head, cut the tongue at the root, and drove the point out beneath his chin — he fell from the chariot and his gleaming armour clanged upon him. Hyginus counts the archer among those Diomedes slew that day beside Aeneas, who was saved by Venus.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 5.160–200, 5.290–296; Fabulae 112"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

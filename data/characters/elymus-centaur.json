@@ -1,0 +1,33 @@
+{
+  "id": "elymus-centaur",
+  "name": "Elymus",
+  "greekName": "Elymos (Ἔλυμος)",
+  "romanName": "Elymus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the five centaurs Caeneus slew before the invulnerable Lapith was overwhelmed with pine trunks.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor in Ovid lists Elymus among the centaurs Caeneus killed at Peirithous' wedding — part of the named roll of five whose deaths preceded Caeneus' own burial alive under the centaurs' trees.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "eurypylus-dulichium",
+  "name": "Eurypylus",
+  "greekName": "Eurypylos (Εὐρύπυλος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of Eurypylus king of Cos and of other bearers of the name in Greek epic.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Eurypylus among the suitors who devoured Odysseus' substance, listed after Agenor and before Pylaemenes in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "Distinct from Eurypylus son of Euaemon, king of Cos, who led the Coans at Troy and received Odysseus' wound-gift in the Odyssey (`eurypylus-cos`).",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.676–680; Odyssey 15.230–280"
+    },
+    {
+      "text": "Distinct also from Eurypylus son of Telephus, the Mysian who killed Peneleos at Troy and was slain by Neoptolemus (`eurypylus-telephus`).",
+      "sources": [
+        "homer",
+        "pausanias"
+      ],
+      "citation": "Odyssey 11.519–521; Description of Greece 9.5.15"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

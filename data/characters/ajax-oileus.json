@@ -1,0 +1,44 @@
+{
+  "id": "ajax-oileus",
+  "name": "Ajax",
+  "greekName": "Aias (Αἴας)",
+  "romanName": "Ajax the Lesser",
+  "type": "hero",
+  "domains": ["Locrian captain", "swift assault", "the second Ajax"],
+  "epithets": ["the Locrian", "son of Oileus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Oileus, captain of the Locrians over against Euboea — swift Aias, not the towering Telamonian bulwark, who led forty black ships and was first to run when Patroclus' body lay at risk.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.527–535, 17.250–270"
+    },
+    {
+      "text": "Hyginus names his mother the nymph Rhene and counts twenty Locrian ships under his command.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 97"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer distinguishes two Aiantes in the host: huge Aias son of Telamon, bulwark of the Achaeans, and this Aias son of Oileus, lord of the Locrians that dwell over against sacred Euboea. With him followed forty black ships. He is the quicker, lighter fighter — not the tower-shield champion of the duel with Hector, but a harrying spear among the ranks.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.527–535, 3.226–229, 13.675–720"
+    },
+    {
+      "text": "Nestor called the counsellors — and among them the twain Aiantes and the son of Tydeus. When Patroclus fell and the Trojans strove for his body, Odysseus shouted that every man must go forth unbidden; swift Aias son of Oileus heard him clearly and was first to come running to meet him amid the battle, before Idomeneus and Meriones and the rest.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.370–415, 17.250–270"
+    },
+    {
+      "text": "In the slaughter by the ships he leapt upon Cleobulus and caught him alive in the throng, then smote him upon the neck with his hilted sword until the blade grew warm with blood. Idomeneus, planning the defence of the centre, counted him among the midmost ships beside Telamonian Aias, Teucer, and the bowmen who might weary Hector.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.330–360, 16.310–350"
+    },
+    {
+      "text": "He is never to be merged with Ajax son of Telamon (`ajax-telamonian`). At the sack he violated Cassandra as she clung to the wooden image of Athena — an outrage Apollodorus and Hyginus set among the causes of the storm on the Returns. Athena wrecked his ship with a thunderbolt; when he reached a rock and boasted that he was saved despite the goddess, Poseidon split the reef with his trident and Ajax drowned. Thetis buried his body on Myconos; Polygnotus painted him as a brine-scurfed castaway even in the underworld at Delphi.",
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+      "citation": "Iliad 2.527–535; Epitome 5.22, 6.6; Fabulae 116; Description of Greece 10.31.1"
+    }
+  ]
+}

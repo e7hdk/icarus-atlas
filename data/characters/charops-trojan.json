@@ -1,0 +1,28 @@
+{
+  "id": "charops-trojan",
+  "name": "Charops",
+  "greekName": "Charops (Χάροψ)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Hippasus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Hippasus (`hippasus-trojan`) and own brother of wealthy Socus, whom Agamemnon smote with a thrust of his spear when the king raged among the Trojans — distinct from Charops husband of Oia in Attic genealogies.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "story": [
+    {
+      "text": "Agamemnon let be the warriors he had already laid low and smote Charops son of Hippasus with a thrust of his spear, even the own brother of wealthy Socus. To bear Charops aid came Socus, a godlike man, who took his stand close to Odysseus and wounded the spearman before the twain Aiantes bore him away.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

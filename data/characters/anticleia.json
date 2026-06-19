@@ -1,0 +1,49 @@
+{
+  "id": "anticleia",
+  "name": "Anticleia",
+  "greekName": "Antikleia (Ἀντίκλεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["mother of Odysseus", "daughter of Autolycus"],
+  "summary": [
+    {
+      "text": "Daughter of the master-thief Autolycus and wife of Laertes, mother of Odysseus; she died of longing for her son while he was away at Troy and met him in the house of Hades.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.85–96; Epitome 3.10"
+    },
+    {
+      "text": "Hyginus records a scandalous alternative: Sisyphus seduced her while she delayed at his court and some therefore call Odysseus Sisyphean for his shrewdness.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 201"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus descended to the house of Hades and poured the blood-offering that draws the dead, the spirit of his mother Anticleia came up — daughter of great-hearted Autolycus, whom he had left alive when he sailed for sacred Ilios. He wept to see her, but even in his sorrow would not let her drink until the seer Tiresias had spoken.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.85–96, 11.153–224"
+    },
+    {
+      "text": "She told him she had not died by sickness nor by Artemis' gentle arrows but of grief and longing for him, thinking always of his kindness and of Laertes. After Tiresias prophesied, Odysseus held her to the blood and she declared the state of his house: Penelope still waits, Telemachus keeps the estate, but the wooers devour all.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.187–203"
+    },
+    {
+      "text": "When Odysseus was still a boy, she and Laertes sent him to her father Autolycus on Parnassus to receive the gifts the old thief had promised when he came to Ithaca. There the sons of Autolycus bound the wound a boar dealt him above the knee — the scar Eurycleia would know twenty years later — and Autolycus, who had been angry with many men and women over the fruitful earth, gave the child the name Odysseus, 'man of wrath.'",
+      "sources": ["homer"],
+      "citation": "Odyssey 19.386–507; 24.330–360"
+    },
+    {
+      "text": "Apollodorus names Anticlia as the mother of Ulysses in the catalogue of those who sailed to Troy. Hyginus tells how Sisyphus, while Odysseus' grandfather Autolycus was delayed, seduced Anticleia before she was given in marriage to Laertes — whence some call the hero Sisyphean and ascribe his cunning to that parentage.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.10; Fabulae 201",
+      "topic": "odysseus-paternity"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "schedius-phocis",
+  "name": "Schedius",
+  "greekName": "Schedios (Σχεδίος)",
+  "type": "hero",
+  "domains": ["Phocian command", "the forty ships", "son of Iphitus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of great-souled Iphitus and captain of the Phocians at Troy — one of the forty ships from Cyparissus, Pytho, and Panopeus — whom Hector smote beneath the collar-bone when he was far the best of the Phocians and king over many men.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 15.515–555, 17.275–315"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Schedius and Epistrophus, sons of Iphitus son of Naubolus, lead the Phocians who held Cyparissus and rocky Pytho, sacred Crisa, Daulis, Panopeus, Anemoreia, and Hyampolis — forty dark ships in the muster at Troy. Homer once names him son of Perimedes when Hector slew a leader of the Phocians in the scattered fight at the ships; elsewhere he is the son of Iphitus, far the best of the Phocians, that dwelt in famous Panopeus and was king over many men, whom Hector smote beneath the midst of the collar-bone as he cast at Ajax.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 15.515–555, 17.275–315",
+      "topic": "schedius-parentage"
+    }
+  ]
+}

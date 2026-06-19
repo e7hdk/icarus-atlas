@@ -1,0 +1,19 @@
+{
+  "city": "patara",
+  "reigns": [
+    {
+      "ruler": "Apollo",
+      "characterId": "apollo",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 1.580–581; Description of Greece 9.41.1",
+      "note": "The Delphic land, the Pataraean realm, Claros and Tenedos revere his name — Patara on the Lycian coast held his coastal oracle, where the Lycians kept a bronze bowl in the temple of Apollo."
+    },
+    {
+      "ruler": "Telephus",
+      "characterId": "telephus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.41.1",
+      "note": "The Lycians at Patara displayed a bronze bowl in Apollo's temple, saying Telephus dedicated it and Hephaestus made it — a Mysian king's offering at the Lycian oracle, not a local dynasty."
+    }
+  ]
+}

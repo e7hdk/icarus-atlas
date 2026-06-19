@@ -1,0 +1,33 @@
+{
+  "id": "lavinia",
+  "name": "Lavinia",
+  "greekName": "Lauinia (Λαυινία)",
+  "romanName": "Lavinia",
+  "type": "mortal",
+  "domains": [
+    "daughter of Latinus",
+    "bride of Aeneas",
+    "the Laurentine marriage"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The pure maiden whom Ovid names daughter of King Latinus and bride of Aeneas — the marriage for which Turnus fought and Latium went to war, in the Italian strand attested through Ovid's Metamorphoses rather than Virgil's Aeneid.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.639–761, 14.762–841"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid makes Lavinia the prize of the Laurentine settlement. Aeneas won the daughter of Latinus, Faunus' son, not without war; Turnus, indignant at losing a promised bride, rallied a fierce people until both sides forgot dower and father-in-law's scepter and fought only to conquer. When Turnus fell and Ardea burned, the Trojan captain took Lavinia and the Latin kingdom — the westward kingship Homer had foretold among the sons' sons of Dardanus.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.639–761, 14.762–841"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lavinium",
+      "sources": ["ovid"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "agenor-ithaca",
+  "name": "Agenor",
+  "greekName": "Agenor (Ἀγήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — distinct from `agenor-zacynthus` in Epitome 7.29; a namesake of Agenor king of Phoenicia and of the Trojan Agenor who faced Achilles at the Scaean gate.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Agenor among the suitors who devoured Odysseus' substance, listed after Clytius and before Eurypylus in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "The same name appears again among the wooers from Zacynthus in Epitome 7.29 — a homonym hazard; see `agenor-zacynthus`.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

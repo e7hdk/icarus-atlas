@@ -1,0 +1,27 @@
+{
+  "id": "protesilaus",
+  "name": "Protesilaus",
+  "greekName": "Protesilaus (Πρωτεσίλαος)",
+  "type": "hero",
+  "domains": ["Phthian captain", "first ashore at Troy"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Warlike captain of the Phthians who leapt first from his ship at Troy and was slain by a Dardanian warrior ere the black earth held him — elder brother of Podarces, who marshalled the host when the men longed for their fallen leader.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "From Phylace and Hellas, Antron, Pteleos, and the towns about, the Phthians followed Protesilaus while yet he lived; howbeit ere now the black earth held him fast. His wife, her two cheeks torn in wailing, was left in Phylace and his house but half established, while a Dardanian warrior slew him as he leapt forth from his ship.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "About the ship that had borne Protesilaus to Troy but brought him not back to his native land, Achaeans and Trojans joined in close combat when the wall was breached — and his brother Podarces led the Phthians in the forefront.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ]
+}

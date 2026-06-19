@@ -1,0 +1,37 @@
+{
+  "id": "euphemus",
+  "name": "Euphemus",
+  "greekName": "Euphēmos (Εὔφημος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argonautic voyage",
+    "the clod of Thera",
+    "swift-footed seafaring"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon and the swiftest of men, an Argonaut who cast the god-given clod into the sea and so raised the island Calliste — later renamed Thera.",
+      "sources": ["apollonius", "apollodorus", "pausanias"],
+      "citation": "Arg. 4.1555–1764; Bibliotheca 1.9.16; Paus. 3.1.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Euphemus among the sons of Poseidon on the Argo — from Taenarus he came, whom Europe daughter of mighty Tityos bore to the sea-god, and he was wont to skim the swell without wetting his swift feet.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 1.179; Bibliotheca 1.9.16"
+    },
+    {
+      "text": "On the homeward voyage he dreamed that the clod of earth he carried nursed at white streams of milk; Triton bade him cast it into the sea, and when he did so an island rose — Calliste, sacred nurse of the sons of Euphemus, who in after days dwelt in Lemnos and came to Sparta as suppliants before Theras led them thither and gave the isle his name.",
+      "sources": ["apollonius", "pausanias"],
+      "citation": "Argonautica 4.1555–1764; Paus. 3.1.7–8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thera",
+      "sources": ["apollonius", "pausanias"]
+    }
+  ]
+}

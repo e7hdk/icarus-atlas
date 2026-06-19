@@ -1,0 +1,28 @@
+{
+  "id": "thymoetes-trojan",
+  "name": "Thymoetes",
+  "greekName": "Thymoetēs (Θυμοήτης)",
+  "type": "hero",
+  "domains": ["Trojan elder", "Scaean Gate counsel"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan elder who sat with Priam among the counsellors at the Scaean gates when Helen came to the wall — distinct from Thymoetes the last Athenian king of the Theseid line in Pausanias.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "About Priam and Panthous and Thymoetes and Lampus and Clytius and Hicetaon, scion of Ares, and Ucalegon and Antenor — men of prudence both — sat as elders of the people at the Scaean gates; because of old age had they now ceased from battle, but speakers they were full sweet, like unto cicalas that in a forest sit upon a tree and pour forth their lily voice.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

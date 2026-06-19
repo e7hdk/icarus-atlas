@@ -1,0 +1,36 @@
+{
+  "id": "caunus-miletus",
+  "name": "Caunus",
+  "greekName": "Caunus (Καῦνος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "twin of Byblis",
+    "fugitive from unlawful love"
+  ],
+  "summary": [
+    {
+      "text": "Twin son of Miletus and brother of Byblis — when his sister's letters confessed a love no kinship should bear, he fled their Milesian home and wandered through Caria and Lycia until he escaped her pursuit forever.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 9.676–1057; Fabulae 243"
+    }
+  ],
+  "story": [
+    {
+      "text": "Cyane daughter of the Maeander bore Miletus the twins Byblis and Caunus, children of surpassing beauty. When a servant read Byblis' confession aloud by mistake, Caunus fled in horror, renouncing kinship and homeland; he would not read her further letters.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.676–950"
+    },
+    {
+      "text": "Through Caria and Lycia the youth outran his sister's frenzy — past Cragus, Lymira, the Xanthus, Bubassus, and the ridge of Chimaera — until he vanished into lands she could not enter, leaving Byblis to become the weeping spring of Miletus.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.950–1057"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["ovid"]
+    }
+  ]
+}

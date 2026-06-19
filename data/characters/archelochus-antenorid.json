@@ -1,0 +1,27 @@
+{
+  "id": "archelochus-antenorid",
+  "name": "Archelochus",
+  "greekName": "Archelochos (Ἀρχέλοχος)",
+  "type": "hero",
+  "domains": ["son of Antenor", "Dardanian fighter", "well skilled in war"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Antenor, well skilled in all manner of fighting, who fought beside Aeneas and fell when Telamonian Ajax cast at Polydamas but the gods purposed death for Archelochus instead.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 12.80–105, 14.440–470; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue, Archelochus and his brother Acamas stand with Aeneas among the Dardanian captains whom fair Aphrodite's son led from Ida. When the allies stormed the wall, the valiant son of Anchises kept both Antenor's sons beside him in the fourth company.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 12.80–105; Epitome 3.34"
+    },
+    {
+      "text": "In the fierce press of the fourteenth book, Ajax the son of Telamon cast his bright spear at Polydamas as he drew back; Polydamas sprang aside, but Archelochus received the shaft where head and neck join, and far sooner did his face reach the earth than his knees.",
+      "sources": ["homer"],
+      "citation": "Iliad 14.440–470"
+    }
+  ]
+}

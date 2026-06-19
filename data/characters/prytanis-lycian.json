@@ -1,0 +1,28 @@
+{
+  "id": "prytanis-lycian",
+  "name": "Prytanis",
+  "greekName": "Prytanis (Πρύτανις)",
+  "type": "hero",
+  "domains": ["Lycian warrior", "Odysseus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew last in the named roll when Athene turned his mind toward the host; no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.876–877, 5.670–710"
+    }
+  ],
+  "story": [
+    {
+      "text": "Odysseus laid Prytanis low with Coeranus, Alastor, Chromius, Alcandrus, Halius, and Noëmon among the Lycians, and yet more would he have slain had not Hector of the flashing helm brought terror to the Danaans.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.670–710"
+    }
+  ],
+  "residences": [
+    {
+      "city": "xanthus-lycia",
+      "sources": ["homer"]
+    }
+  ]
+}

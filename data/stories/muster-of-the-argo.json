@@ -1,0 +1,83 @@
+{
+  "id": "muster-of-the-argo",
+  "title": "The Muster of the Argo",
+  "greekTitle": "ἡ Ἀργὼ καὶ ἡ ἐκστρατεία",
+  "kind": "episode",
+  "parent": "argonautica",
+  "era": 6.99,
+  "summary": {
+    "text": "Pelias sent Jason for the fleece; at Pagasae Athena's counsel gave Argus the plan of the Argo, and the flower of Greece — Heracles, Orpheus, the Dioscuri, Peleus, Telamon, and dozens more — took the oar for Colchis.",
+    "sources": ["apollodorus", "apollonius", "hyginus"],
+    "citation": "Apollod. 1.9.16; Apoll. Arg. 1.1–233; Hyg. Fab. 14"
+  },
+  "chapters": [
+    {
+      "title": "Two mothers for Jason",
+      "text": "Apollodorus makes Jason son of Aeson by Polymede, daughter of Autolycus — the Thessalian heir raised in the country while Pelias held Iolcus. Apollonius and Hyginus name Alcimede, daughter of Phylacus and granddaughter of Clymene the Minyan, as his mother — the same hero, two genealogies, and both traditions live in the roll of the Argonauts.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Apollod. 1.9.16; Apoll. Arg. 1.45–47; Hyg. Fab. 14",
+      "topic": "jason-mother"
+    },
+    {
+      "title": "Pelias on the throne",
+      "text": "Pelias ruled Iolcus after Cretheus, though his birth was twofold: Homer and Apollodorus know him as son of Poseidon in the likeness of the river Enipeus upon Tyro, while others make him simply Cretheus' son by Tyro after her marriage. What the oracle agreed on was the threat — the man with one sandal.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.9.8, 1.9.16; Hom. Od. 11.235–259",
+      "topic": "pelias-paternity"
+    },
+    {
+      "title": "The oracle and the sandal",
+      "text": "Pelias was sacrificing to Poseidon when Jason came down from the country to share the feast. Crossing the Anaurus he lost a sandal in the mud and arrived with one foot bare. The king asked what he would do, had an oracle warned that a citizen would destroy him — and on Jason's answer that he would send that man for the Golden Fleece, bade him go to Colchis.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.9.16"
+    },
+    {
+      "title": "Argus builds the Argo",
+      "text": "Jason came to Pagasae and asked Argus, son of Arestor, to build a fifty-oared ship. Athena appeared in a dream and set the keel's plan; Argus fitted the timbers from Mount Pelion, and the goddess herself set a speaking beam from the oak of Dodona into the prow — the Argo, first of ships to bear a name.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Apoll. Arg. 1.111–128; Apollod. 1.9.16"
+    },
+    {
+      "title": "The catalogue of heroes",
+      "text": "Tiphys of Boeotia took the helm; Orpheus sang; Heracles rowed the bench of the strongest. Apollonius names Castor and Polydeuces, Peleus and Telamon, Mopsus the seer, Euphemus, Idmon, and Atalanta — the only woman — among more than fifty. Hyginus lists the same immortal company under Jason son of Aeson and Alcimede, leader of the Thessalians.",
+      "sources": ["apollonius", "hyginus", "apollodorus"],
+      "citation": "Apoll. Arg. 1.23–233; Hyg. Fab. 14; Apollod. 1.9.16"
+    },
+    {
+      "title": "Hera's chosen captain",
+      "text": "Hera loved Jason and hated Pelias, who had never honoured her — and when the Argo launched, the goddess was already plotting the voyage that would bring a witch home to punish the usurper. Homer remembers the favour at the voyage's end: of all ships that ever sailed, the Argo alone passed the Wandering Rocks, because Jason was dear to Hera.",
+      "sources": ["apollonius", "homer"],
+      "citation": "Apoll. Arg. 3.55–75; Hom. Od. 12.69–72"
+    }
+  ],
+  "cast": [
+    { "id": "jason", "name": "Jason", "role": "Leader sent for the fleece" },
+    { "id": "pelias", "name": "Pelias", "role": "King who set the quest" },
+    { "id": "aeson", "name": "Aeson", "role": "Dispossessed father" },
+    { "id": "polymede", "name": "Polymede", "role": "Jason's mother in Apollodorus" },
+    { "name": "Alcimede", "role": "Jason's mother in Apollonius and Hyginus" },
+    { "id": "argus-arestor", "name": "Argus", "role": "Shipwright of the Argo" },
+    { "id": "tiphys", "name": "Tiphys", "role": "Helmsman" },
+    { "id": "heracles", "name": "Heracles", "role": "Strongest rower" },
+    { "id": "orpheus", "name": "Orpheus", "role": "Singer at the oar" },
+    { "id": "atalanta", "name": "Atalanta", "role": "Only woman among the crew" },
+    { "id": "castor", "name": "Castor", "role": "Dioscurus Argonaut" },
+    { "id": "polydeuces", "name": "Polydeuces", "role": "Dioscurus Argonaut" },
+    { "id": "peleus", "name": "Peleus", "role": "Argonaut, father of Achilles to come" },
+    { "id": "telamon", "name": "Telamon", "role": "Argonaut, father of Ajax to come" },
+    { "id": "mopsus", "name": "Mopsus", "role": "Seer of the voyage" },
+    { "id": "athena", "name": "Athena", "role": "Goddess who planned the ship" },
+    { "id": "hera", "name": "Hera", "role": "Patron of Jason" }
+  ],
+  "places": [
+    { "id": "iolcus", "name": "Iolcus", "role": "Pelias' kingdom where the quest was set" },
+    { "name": "Pagasae", "role": "Harbour where the Argo was launched" },
+    { "name": "Mount Pelion", "role": "Where the ship was timbered" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.9.8, 1.9.16" },
+    { "source": "apollonius", "work": "Argonautica", "citation": "1.1–233" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "14" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.235–259, 12.69–72" }
+  ]
+}

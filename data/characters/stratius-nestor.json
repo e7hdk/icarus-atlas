@@ -1,0 +1,31 @@
+{
+  "id": "stratius-nestor",
+  "name": "Stratius",
+  "greekName": "Stratios (Στράτιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "the Pylians at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — one of the Pylians who came forth with his brothers when Nestor led the dawn sacrifice to Athena for Telemachus' sake; Apollodorus names a son Stratichus in the same stemma.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.405–445; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Stratius among Nestor's sons who gathered about the horseman of Gerenia when he took the sceptre in his hands and bade his dear children fulfil his desire — to propitiate Athena before Telemachus journeyed on toward Sparta.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.405–445"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

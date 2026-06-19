@@ -1,0 +1,58 @@
+{
+  "id": "theseus-cycle",
+  "title": "The Attic Cycle of Theseus",
+  "greekTitle": "Θησεὺς ὁ Ἀττικός",
+  "kind": "saga",
+  "parent": null,
+  "era": 6.75,
+  "eraEnd": 6.85,
+  "summary": {
+    "text": "Son of Aegeus and Aethra — or of Poseidon on the same night — the hero who cleared the road to Athens, slew the Minotaur, united Attica, warred with the Amazons, and fell at last through Phaedra's lie, Pirithous' impiety, and Lycomedes' treachery on Skyros.",
+    "sources": ["homer", "apollodorus", "ovid", "pausanias", "hyginus"],
+    "citation": "Hom. Il. 1.265, 3.144, Od. 11.321–325; Apollod. 3.10.7, 3.15.7–3.16.2, Epit. 1.5–1.24; Ov. Met. 7.404–452, 8.152–182; Paus. 1.38.5, 2.33.1; Hyg. Fab. 37, 79"
+  },
+  "chapters": [
+    {
+      "title": "The tokens at Troezen",
+      "text": "Aegeus left sword and sandals beneath a rock at Troezen and charged Aethra, daughter of Pittheus, to send the boy to Athens when he could lift the stone. In the same night Poseidon also lay with her — so the poets dispute whether the road-clearer was the king's son or the sea-god's, though Homer names him son of Aegeus when he marched with the Athenians to war.",
+      "sources": ["homer", "apollodorus", "pausanias", "hyginus"],
+      "citation": "Hom. Il. 1.265; Apollod. 3.15.7; Paus. 2.33.1; Hyg. Fab. 37"
+    },
+    {
+      "title": "The road and the labyrinth",
+      "text": "Theseus would not go by sea but cleared the Isthmus road of Periphetes, Sinis, Cercyon, and Procrustes before he reached Athens. Medea, wedded to Aegeus, sent him against the Marathonian bull; then he sailed with the third tribute to Crete, killed the Minotaur with Ariadne's clew, and forgot the white sail — so Aegeus cast himself from the acropolis into the sea that bears his name.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 3.16.2; Epit. 1.5–1.10; Ov. Met. 8.152–182"
+    },
+    {
+      "title": "King of a united Attica",
+      "text": "King after his father, he synoecized the demes into one city and set the Panathenaea. When Creon forbade burial to the Argive dead of the Seven, Theseus took Thebes and restored the slain to their kin; he sheltered Oedipus at Colonus. The Amazons marched on Athens; Phaedra's lie destroyed Hippolytus; with Pirithous he stole the child Helen and descended for Persephone — and Lycomedes on Skyros cast the returned exile into the abyss.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.5.9, 3.7.1, 3.10.7, Epit. 1.16–1.24; Paus. 1.39.4"
+    }
+  ],
+  "cast": [
+    { "id": "theseus", "name": "Theseus", "role": "The Attic founder-hero" },
+    { "id": "aegeus", "name": "Aegeus", "role": "King who watched for the white sail" },
+    { "id": "aethra", "name": "Aethra", "role": "Mother who hid the tokens" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Divine father in one tradition" },
+    { "id": "ariadne", "name": "Ariadne", "role": "The Cretan princess who gave the clew" },
+    { "id": "minotaur", "name": "The Minotaur", "role": "The beast in the labyrinth" },
+    { "id": "phaedra", "name": "Phaedra", "role": "The stepmother whose lie destroyed Hippolytus" }
+  ],
+  "places": [
+    { "id": "athens", "name": "Athens", "role": "The city he united and ruled" },
+    { "id": "knossos", "name": "Knossos", "role": "Minos' palace and the labyrinth" },
+    { "id": "naxos", "name": "Naxos", "role": "Where Ariadne was left and the black sail forgotten" },
+    { "id": "skyros", "name": "Skyros", "role": "Where Lycomedes killed him" },
+    { "name": "Troezen", "role": "Where the sword and sandals waited under the rock" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "1.265" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.321–325" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.10.7, 3.15.7–3.16.2, Epitome 1.5–1.24" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "7.404–452, 8.152–182" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.38.5, 1.39.4, 2.33.1" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "37, 47" }
+  ]
+}

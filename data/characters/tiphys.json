@@ -1,0 +1,32 @@
+{
+  "id": "tiphys",
+  "name": "Tiphys",
+  "greekName": "Tiphys (Τῖφυς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "helmsmanship",
+    "the Argonaut voyage",
+    "Boeotia"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phorbas and Hyrmine, Boeotian helmsman of the Argo who steered her until he died of illness among the Mariandyni, whereupon Ancaeus son of Poseidon took the helm.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.105, 2.557–570; Fabulae 14, 18"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius makes Tiphys the first pilot, son of Phorbas, whom Athena herself set at the steering-oar when the ship was launched. He died in the house of King Lycus among the Mariandyni; Hera then kindled Ancaeus of Samos to guide the Argo through the Clashing Rocks.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.105, 2.557–570, 2.851–898; Fabulae 18"
+    }
+  ]
+}

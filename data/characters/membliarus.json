@@ -1,0 +1,31 @@
+{
+  "id": "membliarus",
+  "name": "Membliarus",
+  "greekName": "Membliaros (Μεμβλιάρος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Calliste before Thera",
+    "Cretan settlers"
+  ],
+  "summary": [
+    {
+      "text": "Leader of the settlers Cadmus left on Calliste, whose descendants yielded the kingship to Theras when the Spartans colonized the island and renamed it Thera.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.1.7–8"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Theras son of Autesion prepared to colonize the island then called Calliste, Pausanias says he hoped the descendants of Membliarus would of their own accord give up the kingship — and they did, taking into account that Theras' family went back to Cadmus while they were only descendants of Membliarus, a man of the people whom Cadmus had left on the island to lead the settlers.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.1.7–8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thera",
+      "sources": ["pausanias"]
+    }
+  ]
+}

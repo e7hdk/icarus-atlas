@@ -1,0 +1,75 @@
+{
+  "id": "orpheus-cycle",
+  "title": "The Cycle of Orpheus",
+  "greekTitle": "Ὀρφέως κύκλος",
+  "kind": "saga",
+  "parent": null,
+  "era": 7,
+  "eraEnd": 7.15,
+  "summary": {
+    "text": "From the Pierian height where Calliope bore him to Oeagrus, through the Argonaut voyage and the loss of Eurydice, the descent to Hades and the backward glance, the enchanted grove and the songs of divine love, to the Maenads' frenzy and the head still singing on the Hebrus — the Thracian bard whose lyre moved stones, trees, and the rulers of the dead.",
+    "sources": ["apollodorus", "apollonius", "ovid", "hyginus", "pausanias"],
+    "citation": "Apollod. 1.3.2, 1.9.16, 1.9.25; Arg. 1.23, 4.885–919; Ov. Met. 10.1–137, 11.1–129; Hyg. Fab. 14, 251; Paus. 9.30.4"
+  },
+  "chapters": [
+    {
+      "title": "The Muse-born singer",
+      "text": "Apollodorus and Apollonius make Orpheus the son of Oeagrus and Calliope near Pimpleia on Olympus' Pierian slope; Hyginus names him prophet and cithara-player of that height. Pausanias rejects the Muse as mother and counts it among Greek untruths — yet all agree his minstrelsy moved stones and trees and that he practised a song the underworld itself could not withstand.",
+      "sources": ["apollodorus", "apollonius", "hyginus", "pausanias"],
+      "citation": "Apollod. 1.3.2; Arg. 1.23; Hyg. Fab. 14; Paus. 9.30.4",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "title": "On the Argo",
+      "text": "When Jason mustered the nobles of Greece, Orpheus came from Pieria — first named in Apollonius' roll — and his lyre steered the crew through sorrows and rites alike. At the Sirens' isle he sang a counter-melody sweeter than their death-song; only Butes swam off and was lost to Aphrodite at Lilybaeum.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Apollod. 1.9.16, 1.9.25; Arg. 1.23–34, 4.885–919; Hyg. Fab. 14"
+    },
+    {
+      "title": "Eurydice and the descent",
+      "text": "Orpheus wedded Eurydice, but a serpent's bite killed her on their wedding day. He went down through Taenarus to Hades, charmed Persephone and Pluto with his lyre, and won her back on condition he not look behind until the upper world — yet one backward glance sent her down forever.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 1.3.2; Ov. Met. 10.1–95; Hyg. Fab. 251",
+      "topic": "eurydice-return-condition"
+    },
+    {
+      "title": "Grove, scorn, and death",
+      "text": "Mourning in Rhodope, Orpheus shunned all women and sang in a grove where beasts and trees gathered — tales of Ganymede and Hyacinth among his gentler songs. The Ciconian women, maddened by his scorn, drowned his voice with Bacchic clamour and tore him apart; his head and harp floated down the Hebrus still murmuring Eurydice, and Apollo saved the head from a serpent on Lesbos.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 10.148–331, 11.1–99; Apollod. 1.3.2"
+    },
+    {
+      "title": "Burial and reunion",
+      "text": "Apollodorus adds that Orpheus discovered the mysteries of Dionysus and was buried in Pieria; Ovid reunites his shade with Eurydice among the blessed fields where no backward glance can harm them, while Bacchus roots the Edonian murderers into oak.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.3.2; Ov. Met. 11.99–129"
+    }
+  ],
+  "cast": [
+    { "id": "orpheus", "name": "Orpheus", "role": "Thraco-Pierian bard of the full cycle" },
+    { "id": "eurydice-orpheus", "name": "Eurydice", "role": "Wife lost to the serpent and reclaimed too briefly" },
+    { "id": "calliope", "name": "Calliope", "role": "Muse, his mother in the mythographic tradition" },
+    { "id": "oeagrus", "name": "Oeagrus", "role": "Thracian father in Apollodorus and Apollonius" },
+    { "id": "hades", "name": "Hades", "role": "Lord of the dead who heard his song" },
+    { "id": "persephone", "name": "Persephone", "role": "Queen of the underworld who wept at his plea" },
+    { "id": "ciconian-maenads", "name": "The Ciconian Maenads", "role": "Women who tore him apart for shunning them" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Bacchus, whose mysteries he learned and whose followers slew him" },
+    { "id": "apollo", "name": "Apollo", "role": "Nominal father and saviour of the head on Lesbos" },
+    { "id": "jason", "name": "Jason", "role": "Captain of the Argo" }
+  ],
+  "places": [
+    { "name": "Pieria", "role": "Muse-haunted height of Orpheus' birth and burial" },
+    { "name": "Ciconia", "role": "Thracian land of wedding and murder" },
+    { "name": "Taenarus", "role": "Gate to the underworld" },
+    { "name": "Rhodope", "role": "Mountain of mourning and the enchanted grove" },
+    { "id": "lesbos", "name": "Lesbos", "role": "Isle where Methymna received his head" },
+    { "name": "Hebrus", "role": "River that bore head and harp to the sea" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.3.2, 1.9.16, 1.9.25" },
+    { "source": "apollonius", "work": "Argonautica", "citation": "1.23, 4.885–919" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "10.1–331, 11.1–129" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "14, 251" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "9.30.4" }
+  ]
+}

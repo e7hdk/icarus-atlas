@@ -1,0 +1,36 @@
+{
+  "id": "nausicaa",
+  "name": "Nausicaa",
+  "greekName": "Nausikaa (Ναυσικάα)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Alcinous",
+    "discovery of Odysseus"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Alcinous and Arete on Corcyra; she found Odysseus cast ashore by the sea and brought him to her father's house.",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.130–210"
+    }
+  ],
+  "story": [
+    {
+      "text": "Athena sent the maiden to the river mouth where Odysseus lay befouled with brine; alone among her handmaids she kept her place, and when the stranger prayed she gave him clothing and guided him toward the city — bidding him enter alone and seek her mother Arete's favour in the palace, for upon the queen's goodwill depended the Phaeacians' help.",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–210"
+    },
+    {
+      "text": "In the king's hall she sat beside the pillar and watched while Demodocus sang of Troy; when Odysseus wept at the bard's tale, it was Nausicaa who first perceived his grief and urged her father to send the guest on his way with gifts. Her brothers Laodamas, Halius, and Clytoneus had already shown their skill in the foot-race and boxing before the stranger's eyes.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.125–160, 8.521–541"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer"]
+    }
+  ]
+}

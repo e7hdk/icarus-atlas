@@ -1,0 +1,28 @@
+{
+  "id": "agathon-trojan",
+  "name": "Agathon",
+  "greekName": "Agathōn (Ἀγάθων)",
+  "type": "hero",
+  "domains": ["son of Priam", "Trojan prince"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Goodly son of Priam whom Homer names among the nine sons chidden at Hector's ransom and whom Apollodorus counts among the king's children by other women.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When old Priam prepared to cross the plain to Achilles' hut, he called to nine sons — among them goodly Agathon beside Helenus, Paris, Pammon, Antiphonus, Polites, Deïphobus, Hippothous, and lordly Dius — and wished they had all fallen in Hector's place.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "iphigenia-at-aulis",
+  "title": "Iphigenia at Aulis",
+  "greekTitle": "Ἰφιγένεια ἐν Αὐλίδι",
+  "kind": "episode",
+  "parent": "cypria",
+  "era": 7.958,
+  "summary": {
+    "text": "The fleet gathered at Aulis but could not sail: Calchas declared that Artemis demanded Agamemnon's daughter Iphigenia before the winds would rise. The king lured her with a promise of marriage to Achilles and set her beside the altar — sacrificed, or snatched away and replaced by a deer, as the sources disagree.",
+    "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
+    "citation": "Apollod. Epit. 3.21–3.22; Hyg. Fab. 98–101; Ov. Met. 12; Paus. 2.22.6–7"
+  },
+  "chapters": [
+    {
+      "title": "The host becalmed",
+      "text": "When the suitors' oath had summoned the princes and Agamemnon gathered the fleet for Troy, the ships lay idle at Aulis on the Euboean coast — windless, unable to cross the Aegean. The Cypria's muster had become a camp of kings stalled on the shore: Mycenaeans and Spartans, Argives and Cretans, Ithacans and Thessalians, all waiting while the harbour gave no sign of sailing. The nested episode on the Suitor Oath at Sparta tells the compact that brought them; here the war's opening price would be paid in a king's own blood-line before a single prow reached the Troad.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.21; Hom. Il. 2.559–580"
+    },
+    {
+      "title": "Calchas reads the goddess",
+      "text": "Calchas son of Thestor, chief seer of the host, declared why Artemis held the winds: the goddess demanded Agamemnon's daughter Iphigenia before the fleet could sail. Agamemnon had called him a prophet of evil who never spoke a pleasant thing — yet at Aulis the army would obey. When a serpent devoured nine sparrows at the hecatomb, Calchas prophesied nine years of war and victory in the tenth — the omen Homer echoes when the Catalog of Ships musters the host in the Iliad's second book. The man who would die at Colophon after Troy began his long service here, naming the goddess' price at the altar.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.21; Hom. Il. 2.303–330"
+    },
+    {
+      "title": "The false marriage",
+      "text": "On receipt of the oracle, Agamemnon sent Odysseus and Talthybius to Clytaemnestra at Mycenae and asked for Iphigenia, alleging a promise that he would give her to Achilles in reward for his military service. The king's deception bought the girl's journey to the camp: a bride's procession masking a sacrifice. Hyginus and Apollodorus agree on the lure; only the ending divides them. Clytaemnestra sent her daughter; Agamemnon set her beside the altar — and the memory of that sending would live in the bath at Mycenae when the Returns came home.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 3.22; Hyg. Fab. 98–101"
+    },
+    {
+      "title": "Beside the altar",
+      "text": "Ovid tells the scene with Roman pathos: public good prevailed above a father's love, and Iphigenia stood weeping by the altar with her maidens when the king was about to offer her chaste blood. Agamemnon had called the host to Aulis; the host now demanded what Calchas had read. Some say she was slaughtered outright; Apollodorus says Artemis carried her off to the Taurians and made her priestess, substituting a deer for her at the altar; Hyginus and Ovid follow the hind. However she left the pyre, the winds rose and the fleet sailed — and Clytaemnestra's grievance was fixed for ten years of war.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 3.22; Hyg. Fab. 98–101; Ov. Met. 12.1–94"
+    },
+    {
+      "title": "Whose daughter was she?",
+      "text": "Apollodorus and Hyginus make Iphigenia Agamemnon's daughter by Clytaemnestra — the genealogy the Epic Cycle and the Oresteia assume when the queen remembers Aulis in the bath. Pausanias preserves a local tradition at Hermione: Helen bore Iphigenia to Theseus and entrusted the child to Clytaemnestra, who brought her up as her own. The dispute is not whether she died or was snatched, but whose blood-line Artemis claimed — the house of Atreus alone, or a child of Theseus raised in Mycenae's halls.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 2.16, 3.22; Hyg. Fab. 98; Paus. 2.22.6–7",
+      "topic": "iphigenia-parentage"
+    },
+    {
+      "title": "Wind for the voyage",
+      "text": "When Diana's wrath was appeased — by death, by substitution, or by the goddess' pity — the fleet left Aulis for Troy. The nested episode on Telephus at Mysia tells the next detour: a mistaken landing, a Mysian king wounded and healed, and Thersander of Thebes slain before the host knew its error. The nested episode on Protesilaus at Troy tells who first leapt ashore when the true voyage reached the Troad — and who paid with his life for the ten years Homer sings from the war's last summer.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 3.17, 3.29–3.30; Hom. Il. 1–2"
+    }
+  ],
+  "cast": [
+    { "id": "iphigenia", "name": "Iphigenia", "role": "The girl Artemis demanded at Aulis" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host who set her at the altar" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "Mother who sent her and never forgave" },
+    { "id": "calchas-thestor", "name": "Calchas", "role": "Seer who read Artemis' price and the nine-year omen" },
+    { "id": "achilles", "name": "Achilles", "role": "The promised bridegroom in Agamemnon's lie" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Sent to fetch the girl from Mycenae" },
+    { "id": "helen", "name": "Helen", "role": "In one tradition, mother who bore her to Theseus" },
+    { "name": "Talthybius", "role": "Herald who went with Odysseus for Iphigenia" },
+    { "name": "Artemis", "role": "Goddess who held the winds until the rite was done" }
+  ],
+  "places": [
+    { "name": "Aulis", "role": "Euboean harbour where the fleet was becalmed" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Whence Iphigenia was summoned" },
+    { "id": "chalcis", "name": "Chalcis", "role": "Euboean city nearest the Aulis muster" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.21–3.22" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "98–101" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "12" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "2.22.6–7" },
+    { "source": "homer", "work": "Iliad", "citation": "2.303–330" }
+  ]
+}

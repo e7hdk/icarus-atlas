@@ -1,0 +1,77 @@
+{
+  "id": "autesion-theban",
+  "name": "Autesion",
+  "greekName": "Autesiōn (Αὐτεσίων)",
+  "romanName": "Autesion",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Tisamenus",
+    "Theban kingship",
+    "the Dorian migration",
+    "father of Theras"
+  ],
+  "summary": [
+    {
+      "text": "Son of Tisamenus in Pausanias' Theban king-list — the ruler on whom the Furies of Laius and Oedipus at last vented their wrath, so that at the oracle's bidding he left Thebes and migrated to the Dorians.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.15"
+    },
+    {
+      "text": "Father of Theras, who led settlers to Calliste and gave the island the name Thera; Pausanias also makes him father of Argeia, mother of the Spartan kings Eurysthenes and Procles.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 3.1.7, 3.15.6; Bibliotheca 2.8.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias draws a sharp line between father and son: the Erinyes of Laius and Oedipus did not pursue Thersander or Tisamenus, but they did pursue Autesion. At the god's command he migrated to the Dorians, and on his departure Damasichthon son of Opheltes son of Peneleos was chosen king in his place.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.15–9.5.16"
+    },
+    {
+      "text": "His Theban pedigree ran back through the Epigoni: Pausanias names him son of Tisamenus son of Thersander when Theras, his own son, dedicated a sanctuary of Athena on the Spartan Course before leading the colony to Calliste — the island men afterward called Thera after Theras.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.15.6"
+    },
+    {
+      "text": "The same man bridged Boeotia and Laconia in the genealogies. Apollodorus makes Aristodemus' wife Argia a daughter of Autesion; Pausanias calls her Argeia and says Theras was her brother and guardian when the bitter twin kings Eurysthenes and Procles together helped him dispatch the colony — though Theras was of Theban origin, fourth in descent from Polynices son of Oedipus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.8.2; Description of Greece 3.1.7, 4.3.4"
+    },
+    {
+      "text": "Apollonius, telling how Calliste had first risen from the clod Euphemus cast into the sea, adds that the later colonization by Theras son of Autesion befell after the days of the Argonaut — a Cadmean line remembered in the Cyclades long after the Labdacid curse drove its king from seven-gated Thebes.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 4.1755"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    },
+    {
+      "city": "sparta",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ]
+    }
+  ]
+}

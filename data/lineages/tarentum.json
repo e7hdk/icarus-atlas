@@ -1,0 +1,19 @@
+{
+  "city": "tarentum",
+  "reigns": [
+    {
+      "ruler": "Phalanthus",
+      "characterId": "phalanthus-tarentine",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.6–10.10.8",
+      "note": "The Spartan whom Delphi sent to seize the coast when rain fell from a cloudless sky upon his wife Aethra's tears — founder of the Lacedaemonian colony on Italy's heel."
+    },
+    {
+      "ruler": "Taras",
+      "characterId": "taras-hero",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.8",
+      "note": "Eponymous hero, son of Poseidon and a nymph of the country — the city and its river bear his name in colonial legend."
+    }
+  ]
+}

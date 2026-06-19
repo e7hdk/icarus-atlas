@@ -1,0 +1,36 @@
+{
+  "id": "miletus-apollonid",
+  "name": "Miletus",
+  "greekName": "Mīlētos (Μίλητος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Miletus",
+    "son of Apollo"
+  ],
+  "summary": [
+    {
+      "text": "Son of Apollo by Aria daughter of Cleochus, beloved of Minos' sons; when Sarpedon won his favour he fled Minos' war, landed in Caria, and founded the city Miletus after himself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Europa's sons grew up in Crete they quarrelled over Miletus, son of Apollo by Aria daughter of Cleochus; as the boy was more friendly to Sarpedon, Minos went to war and had the better of it, and the others fled.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
+    },
+    {
+      "text": "Miletus landed in Caria and there founded a city which he called Miletus after himself — the Ionian citadel on the Maeander's mouth that later Argonaut Erginus would leave for Jason's voyage.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 3.1.2; Argonautica 1.185"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

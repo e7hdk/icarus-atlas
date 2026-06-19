@@ -1,0 +1,36 @@
+{
+  "id": "elpenor",
+  "name": "Elpenor",
+  "greekName": "Elpenor (Ἐλπήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Odysseus' comrade",
+    "the unburied shade",
+    "the fall from Circe's roof"
+  ],
+  "summary": [
+    {
+      "text": "The youngest of Odysseus' comrades on the wanderings — not over valiant in war nor sound of understanding — who fell drunk from the roof of Circe's house, was left unburied when the company sailed for Hades, and was the first shade Odysseus met in the underworld.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.550–570, 11.55–95, 12.1–35; Epitome 7.17"
+    }
+  ],
+  "story": [
+    {
+      "text": "On Aeaea Elpenor lay down apart from his comrades in the sacred house of Circe, heavy with wine and seeking the cool air on the roof. When the noise of his fellows roused him, he ran down in haste and fell from the high roof; his neck broke on the ground and his spirit went down to the house of Hades.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.550–570"
+    },
+    {
+      "text": "Odysseus left his corpse unwept and unburied in Circe's hall when the Nekyia urged them on. In the underworld Elpenor's spirit came first — not yet laid beneath the broad-wayed earth — and begged the hero not to forget him: burn his body with his armour, heap a mound, and plant upon it the oar he had rowed with in life, that a monument might stand for men yet to come.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.55–95"
+    },
+    {
+      "text": "When early Dawn appeared after the consultation with Tiresias, Odysseus sent men back to Circe's house for the body. They burned it on the headland that runs furthest out to sea, heaped a mound, and set the oar upon the tomb before sailing on toward Scylla and the cattle of the Sun.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.1–35; Epitome 7.17"
+    }
+  ]
+}

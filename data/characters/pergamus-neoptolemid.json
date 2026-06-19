@@ -1,0 +1,37 @@
+{
+  "id": "pergamus-neoptolemid",
+  "name": "Pergamus",
+  "greekName": "Pérgamos (Πέργαμος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Pergamon",
+    "son of Neoptolemus",
+    "conqueror of Teuthrania"
+  ],
+  "summary": [
+    {
+      "text": "Youngest son of Neoptolemus and Andromache; he crossed into Asia, slew Areius despot of Teuthrania in single combat for the kingdom, and gave his name to the city still called Pergamon on the Caicus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.11.1–2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias names Pergamus third among the sons Neoptolemus begat on Andromache after Troy — after Molossus and Pielus — when the Aeacid settled in Epirus rather than return to Thessaly.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.11.1"
+    },
+    {
+      "text": "When Molossus received the kingdom in Epirus, Pergamus crossed the sea into Asia, killed Areius, who ruled Teuthrania as a despot and met him in single combat for the throne, and fixed his own name on the city that still bore it in Pausanias' day. Andromache accompanied him, and a shrine to her still stood at Pergamon in Teuthrania.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.11.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pergamon",
+      "sources": ["pausanias"]
+    }
+  ]
+}

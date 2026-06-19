@@ -1,0 +1,27 @@
+{
+  "id": "ennomus-mysian",
+  "name": "Ennomus",
+  "greekName": "Ennomus (Ἔννομος)",
+  "type": "hero",
+  "domains": ["Mysian command", "augury", "black fate"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Mysian captain and augur beside Chromis — howbeit with his auguries he warded not off black fate, but was slain beneath the hands of the son of Aeacus, swift of foot, in the river where Achilles made havoc of the Trojans and the others as well.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Ennomus beside Chromis at the head of the Mysian ships. The Catalogue foretells his death: though skilled in augury, he could not turn aside the doom that Achilles dealt him in the river-melee.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "text": "Later, when the fight raged over Patroclus, Hector named Ennomus among the allied captains he heartened — the augur still stood in the battle-din though the poet had already sung his end.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245"
+    }
+  ]
+}

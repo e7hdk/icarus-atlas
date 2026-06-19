@@ -1,0 +1,28 @@
+{
+  "id": "chromius-pylian",
+  "name": "Chromius",
+  "greekName": "Chromios (Χρόμιος)",
+  "type": "hero",
+  "domains": ["Pylian warrior", "Nestor's comrade"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Pylian whom Nestor arrayed beside mighty Pelagon, Alastor, lord Haemon, and Bias shepherd of the host — likely the same Chromius whom Chloris bore to Neleus with Nestor and Periclymenus, and distinct from the Trojan Chromius figures.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305; Odyssey 11.280–320"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Poseidon roused the Achaeans, Agamemnon found Nestor the clear-voiced orator arraying his comrades around mighty Pelagon and Alastor and Chromius and lord Haemon and Bias, shepherd of the host — charioteers first, then footmen to be a bulwark of battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

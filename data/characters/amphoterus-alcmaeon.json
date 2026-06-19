@@ -1,0 +1,31 @@
+{
+  "id": "amphoterus-alcmaeon",
+  "name": "Amphoterus",
+  "greekName": "Amphoteros (Ἀμφότερος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Alcmaeon",
+    "colonizer of Acarnania"
+  ],
+  "summary": [
+    {
+      "text": "Son of Alcmaeon who with his brother Acarnan avenged their father's death, fulfilled the oracle at Delphi, and helped colonize Acarnania from Epirus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Amphoterus and Acarnan the avengers of Alcmaeon: arriving at Agapenor's house at the same time as Phegeus' sons, they slew their father's murderers; pursued to Tegea they were spared, then went to Delphi with the necklace and robe and from Epirus led settlers into Acarnania.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6–7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos-amphilochicum",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

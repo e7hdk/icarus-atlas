@@ -1,0 +1,26 @@
+{
+  "city": "samothrace",
+  "reigns": [
+    {
+      "ruler": "Electra",
+      "characterId": "electra-atlas",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1",
+      "note": "Daughter of Atlas; mother on Samothrace of Iasion and Dardanus by Zeus."
+    },
+    {
+      "ruler": "Iasion",
+      "characterId": "iasion",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.12.1; Odyssey 5.125–128",
+      "note": "Slain by Zeus' thunderbolt after loving Demeter; his death drove Dardanus to the mainland."
+    },
+    {
+      "ruler": "Dardanus",
+      "characterId": "dardanus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1",
+      "note": "Left Samothrace grieving for Iasion and crossed to the Troad."
+    }
+  ]
+}

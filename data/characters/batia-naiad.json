@@ -1,0 +1,45 @@
+{
+  "id": "batia-naiad",
+  "name": "Batia",
+  "greekName": "Batia (Βατία)",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "naiad of Laconia",
+    "consort of Oebalus",
+    "mother of Tyndareus"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad nymph of the Laconian line, whom Apollodorus names as the consort of Oebalus and mother of Tyndareus, Hippocoon, and Icarius — not to be confused with Batia, the mortal daughter of King Teucer whom Dardanus married in the Troad.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the fork of the Spartan genealogy that threads Perieres through Cynortes to Oebalus, Apollodorus assigns the king's sons to a daughter of the waters: Oebalus begat Tyndareus, Hippocoon, and Icarius by a Naiad nymph named Batia. So the father of Helen's house is born not from Gorgophone daughter of Perseus but from the union of a mortal king with a spring-born nymph.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4",
+      "topic": "tyndareus-mother"
+    },
+    {
+      "text": "The same name serves two unrelated women in the Bibliotheca. At 3.12.1 Batia is the daughter of Teucer, king of the land later called the Troad, given in marriage to Dardanus son of Zeus — a princess of the Asiatic shore, not a nymph of Laconia. The atlas keeps them apart: `batia-naiad` for the Spartan water-nymph, the Trojan bride remaining plain-named in the Dardanid prose until a separate node is warranted.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.4, 3.12.1"
+    },
+    {
+      "text": "Pausanias and the Stesichorean line followed in Apollodorus 3.10.3 instead make Gorgophone the mother of Tyndareus and Icarius, with Oebalus or Perieres as father depending on the step counted. Batia appears only in the rival reckoning — yet it is real enough to have shaped how Hippocoon and Icarius were remembered as sons of Oebalus alongside Tyndareus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.10.3–3.10.4; Description of Greece 3.1.4",
+      "topic": "tyndareus-mother"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

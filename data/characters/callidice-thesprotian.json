@@ -1,0 +1,38 @@
+{
+  "id": "callidice-thesprotian",
+  "name": "Callidice",
+  "greekName": "Kallidikē (Καλλιδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of the Thesprotians",
+    "Epirus"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' Epitome, the queen of the Thesprotians who received Odysseus after his propitiatory sacrifices in Epirus, offered him her kingdom, and bore him a son Polypoetes — a namesake of the Danaid Callidice in Bibliotheca 2.1.5 and of the Dulichian suitor Polypoetes in Epitome 7.27.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.34–7.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says that when Odysseus, having sacrificed to Hades, Persephone, and Tiresias, journeyed on foot through Epirus and came to the Thesprotians, he offered sacrifice according to the soothsayer's directions and propitiated Poseidon. Callidice, who was then queen of the Thesprotians, urged him to stay and offered him the kingdom.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.34",
+      "topic": "odysseus-thesprotian-kingship"
+    },
+    {
+      "text": "She married Odysseus and bore him a son Polypoetes. While he reigned over the Thesprotians and defeated the neighboring peoples who attacked him, Callidice shared his rule until her death; then he handed the kingdom to their son and returned to Ithaca.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35",
+      "topic": "odysseus-thesprotian-kingship"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cichyrus",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

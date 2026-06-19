@@ -1,0 +1,42 @@
+{
+  "id": "eurydice-nestor",
+  "name": "Eurydice",
+  "greekName": "Eurydice (Εὐρυδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Pylos",
+    "wife of Nestor"
+  ],
+  "summary": [
+    {
+      "text": "Revered wife of Nestor at sandy Pylos in Homer — eldest daughter of Clymenus — who stood with the Pylians' women at the hecatomb to Athena when Polycaste bathed Telemachus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.450–495"
+    },
+    {
+      "text": "Apollodorus instead names Anaxibia, daughter of Cratieus, as Nestor's wife and mother of the same royal brood — a classic same-queen, different-name clash (see topic nestor-wife-identity).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9",
+      "topic": "nestor-wife-identity"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nestor's sons held the spits at the sacrifice and the heifer's strength was loosed, the women raised the sacred cry — the daughters, the sons' wives, and the revered wife of Nestor, Eurydice, eldest of the daughters of Clymenus. In the same passage fair Polycaste, youngest daughter of Nestor, bathed and anointed Telemachus; Homer names the queen and the maiden together but does not spell out Polycaste's mother by name.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.450–495"
+    },
+    {
+      "text": "Hyginus' catalogue of the Trojan fleet makes Thrasymedes explicitly a son of Nestor by Eurydice — the only pinned passage besides the Odyssey sacrifice that ties a named child to this queen.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae (Trojan catalogue)"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "hyginus"]
+    }
+  ]
+}

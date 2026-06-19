@@ -1,0 +1,28 @@
+{
+  "id": "euphorbus-trojan",
+  "name": "Euphorbus",
+  "greekName": "Euphorbos (Εὔφορβος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Panthous", "spear-caster"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Panthous (`panthous-trojan`) who excelled all men of his years in casting the spear and in horsemanship — brother in counsel to Polydamas — who smote Patroclus from behind and was himself slain by Menelaus as he sought to strip the armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.780–815, 17.45–80"
+    }
+  ],
+  "story": [
+    {
+      "text": "From close at hand a Dardanian smote Patroclus upon the back between the shoulders with a cast of his sharp spear, even Panthous' son Euphorbus, that had already cast twenty warriors from their cars at his first coming. He it was that first wounded Patroclus; but when he turned to strip the armour, Menelaus son of Atreus slew him and set him to spoil him of his gear.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.780–815, 17.45–80"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

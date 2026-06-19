@@ -1,0 +1,50 @@
+{
+  "id": "cyrene-nymph",
+  "name": "Cyrene",
+  "greekName": "Kyrēnē (Κυρήνη)",
+  "romanName": "Cyrene",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Peneus",
+    "Libya",
+    "mother of Aristaeus",
+    "beloved of Apollo"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad of the Thessalian river Peneus whom Apollo carried off to Libya, where she bore him Aristaeus — the pastoral nymph behind the culture-god and, in Hyginus' Argonaut roll, the mother of the seer Idmon. Not to be confused with Cyrene, consort of Ares and mother of Diomedes of Thrace (`diomedes-thrace`).",
+      "sources": ["apollonius", "hyginus", "pausanias"],
+      "citation": "Argonautica 2.500–527; Fabulae 14, 161; Description of Greece 10.17.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius tells how Cyrene once tended sheep along the marsh-meadow of Peneus in Haemonia, holding maidenhood dear and a couch unstained. As she guarded her flock by the river, Apollo carried her off far from Thessaly and placed her among the nymphs who dwelt in Libya near the Myrtosian height — founding, in the poet's tale, the land that would bear her name.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.500–527"
+    },
+    {
+      "text": "There she bore Apollo a son, Aristaeus, whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'. The god brought the infant to Cheiron's cave to be nurtured, and when he grew to manhood the Muses taught him healing, prophecy, and the keeping of flocks — the bee-keeper's craft that binds Thebes, Ceos, and the western migrations in his father's line.",
+      "sources": ["apollonius", "hyginus", "pausanias"],
+      "citation": "Argonautica 2.500–527; Fabulae 161; Description of Greece 10.17.3"
+    },
+    {
+      "text": "Hyginus names her explicitly among Apollo's sons: 'Aristaeus by Cyrene, daughter of Peneus' — a parentage the Argonautica's Thessalian meadow already implies, though the poet stresses abduction and Libyan settlement rather than the river-god's genealogy.",
+      "sources": ["hyginus", "apollonius"],
+      "citation": "Fabulae 161; Argonautica 2.500–527"
+    },
+    {
+      "text": "In Hyginus' catalogue of Argonauts, Idmon the seer is 'son of Apollo and the nymph Cyrene; some say of Abas, an Argive' — while Apollonius denies the Abas parentage and makes Apollo beget Idmon directly among the Aeolids. The maternal link to Cyrene rests on Hyginus; the paternal fork is documented under `idmon-parentage`.",
+      "sources": ["hyginus", "apollonius"],
+      "citation": "Fabulae 14; Argonautica 1.139",
+      "topic": "idmon-parentage"
+    },
+    {
+      "text": "The name Cyrene serves two unrelated women in the Bibliotheca. At 2.5.8 Cyrene is consort of Ares and mother of Diomedes the Thracian, king of the man-eating mares — a warlike queen of the north, not Apollo's Libyan lover. The atlas keeps them apart: `cyrene-nymph` for the Peneus-born mother of Aristaeus, the Thracian queen remaining plain-named in `diomedes-thrace` prose.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 2.5.8; Argonautica 2.500–527; Fabulae 161"
+    }
+  ]
+}

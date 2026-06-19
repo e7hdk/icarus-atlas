@@ -1,0 +1,33 @@
+{
+  "id": "talaemenes-maeonian",
+  "name": "Talaemenes",
+  "greekName": "Talaemenēs (Ταλαημένης)",
+  "type": "hero",
+  "domains": ["father of Mesthles and Antiphus", "Maeonian house", "Tmolas"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of the Maeonian captains Mesthles (`mesthles-maeonian`) and Antiphus (`antiphus-maeonian`) — attested by Homer in the Catalogue of Ships and by Apollodorus among the allies who joined the Trojans.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's muster-roll sets Mesthles and Antiphus, sons twain of Talaemenes, at the head of the Maeonians whose birth was beneath Tmolas; their mother was the nymph of the Gygaean lake.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "text": "Apollodorus, listing the allies who came to Troy after nine years of siege, makes Mesthles and Antiphus sons of Talaemenes among the Maeonian captains.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.35"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": ["homer"]
+    }
+  ]
+}

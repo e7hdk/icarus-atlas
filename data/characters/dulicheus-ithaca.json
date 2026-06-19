@@ -1,0 +1,31 @@
+{
+  "id": "dulicheus-ithaca",
+  "name": "Dulicheus",
+  "greekName": "Doulicheus (Δουλίχειος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "Ithacan wooer"
+  ],
+  "summary": [
+    {
+      "text": "One of the twelve suitors from Ithaca itself in Apollodorus' catalogue — a name formed from Dulichium, but listed among the wooers native to Ithaca rather than the island contingent.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Dulicheus among the twelve wooers of Penelope who came from Ithaca itself, listed with Antinous, Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Aristratus, Helenus, and Ctesippus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

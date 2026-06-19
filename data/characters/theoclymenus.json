@@ -1,0 +1,56 @@
+{
+  "id": "theoclymenus",
+  "name": "Theoclymenus",
+  "greekName": "Theoclymenos (Θεοκλύμενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Melampodid seer",
+    "companion of Telemachus",
+    "omens and prophecy"
+  ],
+  "summary": [
+    {
+      "text": "Son of Polypheides in the Melampodid line — a fugitive seer who joined Telemachus at Pylos, read the omen of the hawk at sea, and in Ithaca prophesied Odysseus' return to Penelope and the doom shrouding the suitors.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–260, 15.525–555, 17.120–165, 20.345–390"
+    },
+    {
+      "text": "Hyginus' catalogue of augurs makes Theoclymenus son of Proteus (with a garbled Thestor/Telemus aside) — not the Polypheides of Homer's Odyssey genealogy (topic theoclymenus-parentage).",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 128",
+      "topic": "theoclymenus-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Telemachus poured libations and prayed beside his swift black ship at Pylos, Theoclymenus stood by him — a stranger who had fled horse-pasturing Argos after slaying a kinsman, with many brethren of the slain ruling the Achaeans there. He asked leave to sail, and Telemachus welcomed him aboard.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–300, 15.495–520"
+    },
+    {
+      "text": "At sea a hawk flew on their right with a dove in his talons, plucking her and shedding feathers down between ship and shore. Theoclymenus clasped Telemachus' hand and read the omen: no godless bird had flown forth on their right — Odysseus would return and wreak vengeance on the suitors, and not one of the wooers would escape death and fate.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.525–555"
+    },
+    {
+      "text": "In the hall of Odysseus he told Penelope that her lord was already present or close at hand, devising evil for the suitors — and when the wooers' feast turned to blood in their eyes and the walls ran red, Theoclymenus alone saw the shroud of night upon them and prophesied their immediate destruction.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.120–165, 20.345–390"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    },
+    {
+      "city": "argos",
+      "sources": ["homer"]
+    }
+  ]
+}

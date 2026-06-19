@@ -1,0 +1,45 @@
+{
+  "id": "pheidippus-cos",
+  "name": "Pheidippus",
+  "greekName": "Pheidippos (Φείδιππος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Coan captains",
+    "Trojan War"
+  ],
+  "summary": [
+    {
+      "text": "Son of Thessalus and captain of Cos with his brother Antiphus, leading thirty ships from the city of Eurypylus to Troy.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.676–680; Epitome 3.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships Homer counts Pheidippus and Antiphus, the two sons of king Thessalus, son of Heracles, among the island chiefs who held Nisyrus, Crapathus, Casus and Cos, the city of Eurypylus, and the Calydnian isles, with thirty hollow ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.676–680"
+    },
+    {
+      "text": "Apollodorus' Trojan catalogue likewise sets Phidippus and Antiphus, sons of Thessalus, over the Coans with thirty ships.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.13"
+    },
+    {
+      "text": "After Troy, Apollodorus says Phidippus with the Coans was driven first to Andros and then to Cyprus, where he settled — a later wandering, not his Coan homeland.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    }
+  ],
+  "residences": [
+    {
+      "city": "kos",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "andros",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

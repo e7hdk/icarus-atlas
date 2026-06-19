@@ -1,0 +1,27 @@
+{
+  "id": "podarces-phthian",
+  "name": "Podarces",
+  "greekName": "Podarkēs (Ποδάρκης)",
+  "type": "hero",
+  "domains": ["Phthian captain", "scion of Ares", "marshal of the host"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Scion of Ares who marshalled the Phthians when great-souled Protesilaus was slain at the landing — son of Iphiclus, younger brother of the first Achaean to leap ashore at Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 13.675–720"
+    }
+  ],
+  "story": [
+    {
+      "text": "Though the men longed for Protesilaus, they were not leaderless: Podarces marshalled them, he that was son of Phylacus' son Iphiclus and own brother to the warrior Protesilaus, younger-born yet valiant in the host of the Phthians from Phylace and Hellas.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "When the battle raged at the ships, Podarces and Medon led the Phthians in the forefront until Aeneas smote Medon among the press of fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
+    }
+  ]
+}

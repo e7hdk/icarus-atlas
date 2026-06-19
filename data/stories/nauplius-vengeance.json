@@ -1,0 +1,76 @@
+{
+  "id": "nauplius-vengeance",
+  "title": "The Vengeance of Nauplius",
+  "greekTitle": "Ναυπλίου τιμωρία",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.87,
+  "summary": {
+    "text": "Palamedes son of Nauplius was stoned at Troy on Odysseus' forged charge — and when justice was denied at the ships, the old Argonaut coasted Greece corrupting the heroes' wives and kindled false beacons on Mount Caphareus that wrecked the fleet on the Euboean rocks.",
+    "sources": ["apollodorus", "hyginus", "ovid"],
+    "citation": "Apollod. Epit. 3.7–3.8, 6.7–6.11; Hyg. Fab. 105, 116–117; Ov. Met. 13.1–141"
+  },
+  "chapters": [
+    {
+      "title": "The stoning at Troy",
+      "text": "Palamedes son of Nauplius had exposed Odysseus' feigned madness at the muster and sailed with the host — until the Ithacan forged a letter of treason, buried gold in his quarters, and saw him stoned as a traitor in the camp, with Agamemnon as accomplice. The nested episode on the Framing of Palamedes tells the plough at Ithaca, the planted gold, and the dispute whether he died by stones in camp or by drowning in the Cypria's fishing variant.",
+      "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
+      "citation": "Apollod. Epit. 3.7–3.8, 6.8; Hyg. Fab. 95, 105; Ov. Met. 13.1–141; Paus. 10.31.2"
+    },
+    {
+      "title": "Justice denied",
+      "text": "When Nauplius learned that his son had been stoned through the machinations of Odysseus, he sailed to the Greeks and claimed satisfaction — but he returned unsuccessful, for the host favoured King Agamemnon, who had been the accomplice in the murder, and would not punish the lord who had led them at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. Epit. 6.8"
+    },
+    {
+      "title": "The wives corrupted",
+      "text": "Denied at the ships, Nauplius coasted along the Greek lands and contrived that the wives of the victors should play their husbands false: Clytemnestra with Aegisthus, Aegialia with Cometes son of Sthenelus, and Meda wife of Idomeneus with Leucus. Hyginus adds a trigger for the Mycenaean plot — Oiax, brother of Palamedes, falsely told Clytemnestra that Cassandra was coming as a concubine to her house, vengeance for the wrong done to his brother. The seeds of the bath at Mycenae, the barred gates at Argos, and the coup on Crete were sown before the fleet touched home.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.9; Hyg. Fab. 117"
+    },
+    {
+      "title": "The beacons on Caphareus",
+      "text": "When the Greeks sailed from Troy, others were driven to Euboea by night. Nauplius kindled a beacon on Mount Caphareus — the headland Hyginus calls Xylophagus — and the victors, thinking it marked a safe harbour where comrades had been saved, stood in for the shore. Their vessels were wrecked on the Capherian rocks and many men perished. Hyginus says Nauplius heard the Greeks imploring the gods in the darkness and feigned aid with a burning torch on the cliffs — the same art, Apollodorus remembered, by which an earlier Nauplius had once lured ships to destruction in his old age.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. Epit. 6.7, 6.11; Hyg. Fab. 116; Ov. Met. 14.639–761"
+    },
+    {
+      "title": "The poison in the houses",
+      "text": "The storm on Caphareus and the beacon were only the sea's part of Nauplius' vengeance; the land already waited with adultery and murder. Agamemnon would find Clytemnestra and Aegisthus in league at Mycenae — the nested episodes on Cassandra and the Oresteia carry that end. Diomedes would be barred from Argos by Aegialia and Cometes; Leucus would kill Meda and drive Idomeneus from Crete. The Returns were never a single homecoming but a chain of reckonings, and the stoning of Palamedes was the link Odysseus forged.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.9–6.10, 6.23; Hyg. Fab. 117–119"
+    }
+  ],
+  "cast": [
+    { "id": "nauplius-amymone", "name": "Nauplius", "role": "The avenger of his son" },
+    { "id": "palamedes", "name": "Palamedes", "role": "Stoned on Odysseus' forged charge" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Author of the false treason" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Accomplice who denied justice" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "Turned to Aegisthus before the king landed" },
+    { "id": "aegisthus", "name": "Aegisthus", "role": "Clytemnestra's lover by Nauplius' contrivance" },
+    { "id": "aegialia-adrastid", "name": "Aegialia", "role": "Diomedes' wife turned to Cometes" },
+    { "id": "diomedes", "name": "Diomedes", "role": "He who would be barred from Argos" },
+    { "id": "idomeneus", "name": "Idomeneus", "role": "Cretan king Leucus would drive out" },
+    { "id": "penelope", "name": "Penelope", "role": "From whose arms Telemachus was snatched" },
+    { "id": "telemachus", "name": "Telemachus", "role": "The child used to expose feigned madness" },
+    { "name": "Oiax", "role": "Brother who falsely warned Clytemnestra of Cassandra" },
+    { "name": "Cometes", "role": "Lover of Aegialia" },
+    { "id": "leucus-crete", "name": "Leucus", "role": "Lover of Meda, tyrant of ten Cretan cities" },
+    { "id": "meda-idomeneus", "name": "Meda", "role": "Idomeneus' wife turned false" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Where Palamedes was stoned in camp" },
+    { "id": "ithaca", "name": "Ithaca", "role": "Where Odysseus feigned madness" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Where Clytemnestra's plot ripened" },
+    { "id": "argos", "name": "Argos", "role": "Where Aegialia would bar Diomedes" },
+    { "id": "chalcis", "name": "Chalcis", "role": "Euboea, near the Capherian wreck" },
+    { "name": "Mount Caphareus", "role": "Headland where the false beacon burned" },
+    { "name": "Capherian rocks", "role": "Reef where the fleet was destroyed" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.7–3.8, 6.7–6.11" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "105, 116–117" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "13.1–141, 14.639–761" }
+  ]
+}

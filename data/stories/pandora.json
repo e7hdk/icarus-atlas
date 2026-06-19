@@ -1,0 +1,60 @@
+{
+  "id": "pandora",
+  "title": "Pandora and the Jar",
+  "greekTitle": "Πανδώρα",
+  "kind": "episode",
+  "parent": "prometheus-fire",
+  "era": 1.1,
+  "summary": {
+    "text": "Zeus commanded the gods to mould a beautiful evil as the price of stolen fire — Pandora, All-gift, whom Epimetheus received against his brother's warning; when she lifted the lid of the jar, sorrows scattered among mankind, and Hope alone remained beneath the rim.",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "citation": "Hes. Th. 570-593; WD 60-105; Apollod. 1.7.2; Hyg. Fab. 142"
+  },
+  "chapters": [
+    {
+      "title": "The price of fire",
+      "text": "Zeus, angry that Prometheus had stolen fire, ordered Hephaestus to mix earth with water and mould from it the likeness of a modest maiden. In the Theogony she has no name: she is simply the maiden, sheer guile not to be withstood by men — and from her is descended the race and tribe of women.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 570-593"
+    },
+    {
+      "title": "All the gods give gifts",
+      "text": "In the Works and Days each Olympian adds a portion. Athena teaches her needlework; golden Aphrodite sheds grace and cruel longing; Hermes contrives lies and crafty words in her breast; and he names her Pandora — because all who dwell on Olympus gave each a gift, a plague to men who eat bread. Hyginus instead has Vulcan mould the woman from clay and Minerva give her a soul — a workshop Hesiod never describes.",
+      "sources": ["hesiod", "hyginus"],
+      "citation": "Hes. WD 60-82; Hyg. Fab. 142",
+      "topic": "pandora-animation"
+    },
+    {
+      "title": "Epimetheus forgets",
+      "text": "Hermes led her as a gift to Epimetheus, who forgot his brother Prometheus' warning never to accept a present from Zeus — and took her in. Apollodorus calls her the first woman fashioned by the gods; her daughter by Epimetheus is Pyrrha, through whom the later flood-line descends.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. WD 83-89; Apollod. 1.7.2",
+      "topic": "first-woman"
+    },
+    {
+      "title": "The jar opened",
+      "text": "Then the woman took the great lid off the jar with her hands and scattered all that was within — sorrow and mischief to men. Before that day the tribes of men had lived remote and free from ills and hard toil. Only Hope remained inside in her unbreakable home under the rim of the great jar, for by the will of Zeus the lid caught her before she could fly out. It is a jar, a pithos, in Hesiod — the famous box belongs to her later afterlife, not to any ancient teller.",
+      "sources": ["hesiod"],
+      "citation": "Hes. WD 90-105"
+    }
+  ],
+  "cast": [
+    { "id": "pandora", "name": "Pandora", "role": "The moulded maiden, All-gift" },
+    { "id": "zeus", "name": "Zeus", "role": "Who commanded her making" },
+    { "id": "prometheus", "name": "Prometheus", "role": "Whose theft she was meant to punish" },
+    { "id": "epimetheus", "name": "Epimetheus", "role": "Heedless husband" },
+    { "id": "hephaestus", "name": "Hephaestus", "role": "Who moulded her from earth" },
+    { "id": "athena", "name": "Athena", "role": "Who taught her crafts" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Who shed longing upon her" },
+    { "id": "hermes", "name": "Hermes", "role": "Who led her to Epimetheus" },
+    { "id": "pyrrha", "name": "Pyrrha", "role": "Her daughter, survivor of the flood" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "570-593" },
+    { "source": "hesiod", "work": "Works and Days", "citation": "60-105" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.7.2" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "142" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.24.7" }
+  ]
+}

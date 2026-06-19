@@ -1,0 +1,31 @@
+{
+  "id": "eurydamus",
+  "name": "Eurydamus",
+  "greekName": "Eurydamos (Εὐρύδαμος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Dolopia",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Ctimenus or of Irus and Demonassa, Argonaut from the region of Lake Xynius.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus and Hyginus count Eurydamus among the crew; Hyginus makes him son of Irus and Demonassa, or of Ctimenus near Lake Xynius.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "city": "argos",
+  "reigns": [
+    {
+      "ruler": "Phoroneus",
+      "characterId": "phoroneus",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 2.1.1; Paus. 2.15.5, 2.19.5; Hyg. Fab. 143",
+      "note": "First gatherer of the Argolid into a single community — the City of Phoroneus. Pausanias' Argives begin human kingship with him; Hyginus makes him the first mortal to rule anywhere in Greece."
+    },
+    {
+      "ruler": "Apis",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.1",
+      "note": "Son of Phoroneus and Teledice; turned his power to tyranny, named the land Apia after himself, and died childless."
+    },
+    {
+      "ruler": "Argus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.1.2; Hyg. Fab. 124, 145",
+      "note": "Son of Zeus and Niobe, daughter of Phoroneus — eponym of the city and the whole land called Argos after him."
+    },
+    {
+      "ruler": "Criasus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.2",
+      "note": "Son of Argus and Evadne, daughter of the river Strymon."
+    },
+    {
+      "ruler": "Phorbas",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.2",
+      "note": "Son of Criasus; during his reign the country was afflicted by a plague, and a Carian seer called in from Delphi ended it."
+    },
+    {
+      "ruler": "Triopas",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.2",
+      "note": "Son of Phorbas; father of Iasus and the seer Amphiaraus' ancestor through his daughter."
+    },
+    {
+      "ruler": "Iasus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.3-2.1.4",
+      "note": "Son of Triopas; father of Io, whom Hera's jealousy drove from the land — and of the twin kings who would divide the kingdom."
+    },
+    {
+      "ruler": "Danaus",
+      "characterId": "danaus",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. 2.1.4-2.1.5; Hyg. Fab. 168; Paus. 2.19.3",
+      "note": "Returned from Egypt with his fifty daughters and seized the kingdom from his brother Lynceus — then set the famous marriage contest that left all but Hypermnestra's bridegroom dead."
+    },
+    {
+      "ruler": "Lynceus",
+      "characterId": "lynceus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.1.5; Hyg. Fab. 168",
+      "note": "The one son-in-law spared by Hypermnestra; in Apollodorus he succeeds Danaus and founds the line that leads to Acrisius."
+    },
+    {
+      "ruler": "Abas",
+      "characterId": "abas",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.2.1; Hyg. Fab. 170",
+      "note": "Son of Lynceus and Hypermnestra; so quarrelsome that even after death his ghost was said to haunt the chariot-race at the Isthmian games."
+    },
+    {
+      "ruler": "Acrisius & Proetus",
+      "characterId": "acrisius",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. 2.2.1-2.2.2; Hyg. Fab. 63; Paus. 2.25.6",
+      "note": "Twin sons of Abas who divided the kingdom by lot — Acrisius took Argos, Proetus took Tiryns — and whose feud set the stage for Perseus' birth."
+    },
+    {
+      "ruler": "Perseus",
+      "characterId": "perseus",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3; Hyg. Fab. 244",
+      "note": "Grandson of Acrisius; having killed him by accident, he exchanged kingdoms with Megapenthes son of Proetus — giving Argos away and taking Mycenae for himself."
+    },
+    {
+      "ruler": "Megapenthes",
+      "characterId": "megapenthes-proetid",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3; Hyg. Fab. 244",
+      "note": "Son of Proetus; received Argos from Perseus in the peaceful exchange. Hyginus instead has him murder Perseus to avenge his father.",
+      "topic": "perseus-death"
+    },
+    {
+      "ruler": "Argeus",
+      "characterId": "argeus-argos",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.4",
+      "note": "Son of Megapenthes; father of Anaxagoras in the native third of the divided kingdom."
+    },
+    {
+      "ruler": "Anaxagoras",
+      "characterId": "anaxagoras-argos",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.4–2.18.5",
+      "note": "Son of Argeus, son of Megapenthes; held the native third at Argos when Melampus and Bias received equal shares. His house, Pausanias says, outlasted the other two thirds."
+    },
+    {
+      "ruler": "Melampus",
+      "characterId": "melampus",
+      "sources": ["apollodorus", "pausanias", "homer"],
+      "citation": "Apollod. 2.2.2; Paus. 2.18.4; Od. 15.225–256",
+      "note": "First king of the Melampid third: the seer who cured the maddened Argive women and won an equal share of the kingdom for himself and Bias. Pausanias counts six men in six generations from his house down to Amphilochus."
+    },
+    {
+      "ruler": "Antiphates",
+      "characterId": "antiphates-melampid",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Od. 15.248–251; Apollod. 1.9.13",
+      "note": "Son of Melampus in the seer-line that runs to Amphiaraus — distinct from Mantius, who begot Polypheides in the collateral Melampodid branch."
+    },
+    {
+      "ruler": "Oicles",
+      "characterId": "oicles",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Od. 15.248–251; Apollod. 1.9.13",
+      "note": "Son of Antiphates; father of Amphiaraus the rouser of the host."
+    },
+    {
+      "ruler": "Amphiaraus",
+      "characterId": "amphiaraus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Od. 15.248–251; Apollod. 3.6.2–3.6.3; Paus. 2.18.4",
+      "note": "The prophetic king of the Melampid third; swallowed alive by the earth at Thebes after Eriphyle sold him to death for the golden necklace."
+    },
+    {
+      "ruler": "Alcmaeon",
+      "characterId": "alcmaeon",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Od. 15.248–251; Apollod. 3.7.2–3.7.3; Paus. 2.20.5",
+      "note": "Son of Amphiaraus; leader of the Epigoni who slew Laodamas at Thebes, then wandered and colonized Acarnania before the Melampid roll reaches his brother."
+    },
+    {
+      "ruler": "Amphilochus",
+      "characterId": "amphilochus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Od. 15.248–251; Apollod. 3.7.2; Paus. 2.18.4–2.18.5",
+      "note": "Last king of the Melampid third in Pausanias' count — son of Amphiaraus, Epigon, and after Troy migrant to the people called Amphilochians."
+    },
+    {
+      "ruler": "Bias",
+      "characterId": "bias-aeolid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.2.2; Paus. 2.18.4",
+      "note": "First king of the Biantid third: Melampus won him an equal share of Argos when the seer healed Proetus' daughters (Apollodorus) or the women of Anaxagoras' reign (Pausanias). From Bias, Pausanias counts five kings for four generations down to Cyanippus."
+    },
+    {
+      "ruler": "Talaus",
+      "characterId": "talaus-aeolid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 1.9.13; Paus. 2.18.4",
+      "note": "Son of Bias and Pero; married Lysimache and fathered Adrastus, Eriphyle, Pronax, Mecisteus, and Aristomachus in the Biantid roll."
+    },
+    {
+      "ruler": "Adrastus",
+      "characterId": "adrastus",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 1.9.13, 3.6.1–3.6.3; Paus. 2.18.4; Hyg. Fab. 70",
+      "note": "Son of Talaus; the only survivor among the Seven against Thebes, who mustered the host from Argos and outlived even the Epigoni war that killed his son Aegialeus at Glisas."
+    },
+    {
+      "ruler": "Diomedes",
+      "characterId": "diomedes",
+      "sources": ["homer", "pausanias", "apollodorus"],
+      "citation": "Il. 2.559–580; Paus. 2.18.4; Apollod. 1.8.6",
+      "note": "Son of Tydeus and Deipyle; an Epigon who took Thebes and, in the Biantid king-list Pausanias preserves, reigns after Adrastus before Cyanippus — lord of Argos when he sailed to Troy."
+    },
+    {
+      "ruler": "Cyanippus",
+      "characterId": "cyanippus-adrastid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 1.9.13; Paus. 2.18.4",
+      "note": "Last king named in the Biantid succession at Argos. Apollodorus makes him a son of Adrastus and brother of Aegialeus; Pausanias makes him son of Aegialeus — the terminal name of the house that began with Bias.",
+      "topic": "cyanippus-parentage"
+    },
+    {
+      "ruler": "Alector",
+      "characterId": "alector-anaxagoras",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.5",
+      "note": "Son of Anaxagoras; in the native third that endured after the Melampid and Biantid lines began."
+    },
+    {
+      "ruler": "Iphis",
+      "characterId": "iphis-anaxagoras",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.5",
+      "note": "Son of Alector; bequeathed his third of Argos to Sthenelus son of Capaneus."
+    },
+    {
+      "ruler": "Sthenelus",
+      "characterId": "sthenelus-epigoni",
+      "sources": ["pausanias", "homer"],
+      "citation": "Paus. 2.18.5; Il. 2.564–565",
+      "note": "Son of Capaneus; inherited the Anaxagoras third from Iphis, then the Biantid third when Cyanippus died without issue — reuniting two of the three kingdoms before his son Cylarabes became sole king."
+    },
+    {
+      "ruler": "Cylarabes",
+      "characterId": "cylarabes-sthenelid",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.5, 2.22.9",
+      "note": "Son of Sthenelus; sole king of reunited Argos after Amphilochus migrated and Cyanippus left no heir — but he too died childless."
+    },
+    {
+      "ruler": "Orestes",
+      "characterId": "orestes",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 2.18.5–2.18.6; Apollod. Epit. 6.25–6.28",
+      "note": "Son of Agamemnon; seized Argos from the neighbouring Mycenae when Cylarabes' line failed, and at his height held Argos, much of Arcadia, and the Spartan throne."
+    },
+    {
+      "ruler": "Tisamenus",
+      "characterId": "tisamenus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 2.18.6–2.18.7; Apollod. 2.8.2",
+      "note": "Son of Orestes and Hermione; last Pelopid on the Argive throne before the Heracleidae returned in his reign."
+    },
+    {
+      "ruler": "Temenus",
+      "characterId": "temenus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 2.18.7–2.18.8; Apollod. 2.8.4",
+      "note": "Son of Aristomachus; leader of the returning Heraclidae who expelled Tisamenus and drew Argos by lot — Perseid descent, which Pausanias judged the juster claim to the city."
+    }
+  ]
+}

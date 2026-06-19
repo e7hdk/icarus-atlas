@@ -1,0 +1,28 @@
+{
+  "id": "arcesilaus",
+  "name": "Arcesilaus",
+  "greekName": "Arkesilaos (Ἀρκεσίλαος)",
+  "type": "hero",
+  "domains": ["Boeotian command", "the fifty ships", "comrade of Menestheus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain of the Boeotians in the Catalogue of Ships and trusty comrade of great-souled Menestheus at the wall — son of Areilycus (`areilycus-achaean`) and Theobula (`theobula-boeotian`) per Hyginus — slain by Hector when Apollo sent panic upon the Argives in the battle for the ships.",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.494–510, 15.315–340"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Arcesilaus among the five captains who led the fifty Boeotian ships from the towns of Hyria, Aulis, Thebes, and the ridges of Eteonus. When the fight was scattered and Apollo roused the Trojans, Hector laid low Stichius — a leader of the brazen-coated Boeotians — and Arcesilaus, the trusty comrade of Menestheus son of Peteos, in the press before the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510, 15.315–340"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["homer"]
+    }
+  ]
+}

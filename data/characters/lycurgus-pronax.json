@@ -1,0 +1,55 @@
+{
+  "id": "lycurgus-pronax",
+  "name": "Lycurgus",
+  "greekName": "Λυκοῦργος",
+  "romanName": "Lycurgus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Biantid royalty",
+    "feud with Amphiaraus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Pronax in the Biantid house at Argos, Lycurgus quarrelled with Amphiaraus before the march on Thebes — a feud Adrastus and Tydeus held apart in Polygnotus' painting at Delphi.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.13; Description of Greece 3.18.12"
+    },
+    {
+      "text": "Not to be confused with Lycurgus of Arcadia, Lycurgus of Nemea father of Opheltes, or the Thracian king who fought Dionysus.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.8.2, 1.9.14; Iliad 6.130–140"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Lycurgus as the son of Pronax, brother among the children of Talaus to Adrastus, Eriphyle, and the rest. Through Pronax he stands uncle to Amphithea, whom Adrastus married, and so ties the Biantid royal marriages to the Melampodid seer Amphiaraus, Eriphyle's husband.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13, 3.6.1"
+    },
+    {
+      "text": "Pausanias saw the quarrel preserved in art. In Polygnotus' underworld at Delphi, Amphiaraus and Lycurgus son of Pronax come to blows while Adrastus and Tydeus restrain them — the feud of the Seven before ever they reached Thebes.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 3.18.12"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
+    }
+  ]
+}

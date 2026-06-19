@@ -1,0 +1,22 @@
+{
+  "id": "clytius-achaean",
+  "name": "Clytius",
+  "greekName": "Klytios (Κλύτιος)",
+  "type": "hero",
+  "domains": ["father of Dolops", "Achaean house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Dolops (`dolops-clytiid`), the Danaan leader whom Hector slew when Zeus vouchsafed the prince glory in his rampage — distinct from Clytius son of Laomedon at the Scaean gates (`clytius-trojan`) and from the suitors `clytius-same` and `clytius-zacynthus`.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Clytius only as the father of Dolops among the foremost Danaan leaders whom Hector cut down when the god gave him victory: Asaeus first, and Autonous, and Opites and Dolops son of Clytius, and Opheltius, and Agelaus, and Aesymnus, and Orus, and Hipponous, staunch in fight.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

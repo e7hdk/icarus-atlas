@@ -1,0 +1,33 @@
+{
+  "id": "dictys-centaur",
+  "name": "Dictys",
+  "greekName": "Diktys (Δίκτυς)",
+  "romanName": "Dictys",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the ash-tree death"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur at Peirithous' wedding who fled Ixion's son and fell from a cliff onto the splintered top of an ash tree.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Ovid's telling of the centauromachy, Dictys ran in desperate haste to escape Peirithous, slipped on the steep edge of a precipice, and fell headlong onto a huge ash-tree whose broken spikes impaled his dying body. He must be kept distinct from Dictys the fisherman of Seriphos who reared Perseus (`dictys`).",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

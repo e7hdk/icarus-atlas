@@ -1,0 +1,42 @@
+{
+  "id": "periclymenus-neleus",
+  "name": "Periclymenus",
+  "greekName": "Periklumenos (Περικλύμενος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "shape-shifting",
+    "son of Neleus",
+    "the sack of Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Neleus and Chloris, to whom Poseidon granted the power of changing his form; he fought as lion, snake, and bee when Heracles sacked Pylos, and was slain with his brothers — Nestor alone survived.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.9.9; Odyssey 11.286–287"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer counts him among the glorious sons that Chloris bore to Neleus at Pylos — Nestor, Chromius, and lordly Periclymenus — in the same roll that makes Pero the wonder sought by every suitor in the land.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.281–287"
+    },
+    {
+      "text": "Apollodorus names him in the full Neleid brood and gives him his wonder: Poseidon granted Periclymenus the power of changing his shape. When Heracles ravaged Pylus, Periclymenus turned himself into a lion, a snake, and a bee in the fight, but was slain by Heracles with the other sons of Neleus; Nestor alone was left.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Apollodorus also numbers him among the Argonauts — Periclymenus, son of Neleus — so that the shape-shifter of sandy Pylos sailed with Jason before the hero's return brought ruin on his father's house.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

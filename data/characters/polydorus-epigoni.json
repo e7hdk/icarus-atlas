@@ -1,0 +1,63 @@
+{
+  "id": "polydorus-epigoni",
+  "name": "Polydorus",
+  "greekName": "Πολύδωρος",
+  "romanName": "Polydorus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Hippomedon",
+    "the Epigoni"
+  ],
+  "summary": [
+    {
+      "text": "Son of Hippomedon who marched with the Epigoni against Thebes — named by Hyginus and Pausanias among the second generation that took the city, though Apollodorus' muster-roll at 3.7.2 stops with Euryalus son of Mecisteus.",
+      "sources": [
+        "hyginus",
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 71; Description of Greece 10.10.4; Bibliotheca 3.7.2"
+    },
+    {
+      "text": "Not to be confused with Polydorus son of Cadmus and Harmonia, king in the Theban succession, nor with the Zacynthian suitor in Apollodorus' island catalogue.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.4; Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the sons of the Seven gathered ten years after their fathers' fall, Hyginus lists Polydorus son of Hippomedon beside Thersander son of Polynices, Aegialus son of Adrastus, Alcmaeon, and Diomedes son of Tydeus among those who attacked Thebes a second time.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 71"
+    },
+    {
+      "text": "Pausanias records the Argive exedra at Delphi dedicated to the Epigoni: the lost bronze group portrayed Thersander, Sthenelus, Diomedes, Promachus, and Polydorus — the victors whose fathers had died at the first assault on the seven-gated city.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 10.10.4"
+    },
+    {
+      "text": "Apollodorus names Hippomedon among the Seven slain at the wall but, in the formal list of Epigoni at 3.7.2, does not include Polydorus — only Alcmaeon, Amphilochus, Aegialeus, Diomedes, Promachus, Sthenelus, Thersander, and Euryalus. Some genealogies instead make Elatus father of Euanippe, mother of Polydorus by Hippomedon.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.8, 3.7.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ]
+    }
+  ]
+}

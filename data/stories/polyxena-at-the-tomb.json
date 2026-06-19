@@ -1,0 +1,73 @@
+{
+  "id": "polyxena-at-the-tomb",
+  "title": "Polyxena at the Tomb",
+  "greekTitle": "ἡ Πολυξένη ἐπὶ τῷ τάφῳ",
+  "kind": "episode",
+  "parent": "sack-of-troy",
+  "era": 8.52,
+  "summary": {
+    "text": "When Troy was ash and the victors prepared to sail, they sacrificed to all the gods — threw Astyanax from the battlements and slaughtered Polyxena on the grave of Achilles, for the dead hero's ghost demanded the maiden as his share of the spoils.",
+    "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+    "citation": "Apollod. Epit. 5.23; Ov. Met. 13.439–480; Hyg. Fab. 110; Paus. 1.22.6, 10.25.10"
+  },
+  "chapters": [
+    {
+      "title": "Sacrifices after the fire",
+      "text": "The Greeks had slain the sleepers, fired the city, and divided the spoil. Before the fleet could leave, Apollodorus says, they sacrificed to all the gods — the last rites of a war that had already taken Priam at the altar and Hector on the plain. In that same hour of victory they threw Astyanax from the battlements, the child Hector had called Scamandrius and the people Astyanax, lest any seed of Priam survive to avenge Troy; Ovid paints him hurled from the very tower whence he had watched his father fight.",
+      "sources": ["apollodorus", "ovid", "homer"],
+      "citation": "Apollod. Epit. 5.23; Ov. Met. 13.582–714; Hom. Il. 6.402–403, 22.483–507"
+    },
+    {
+      "title": "The ghost at the tomb",
+      "text": "On the Thracian shore, where the fleet lay waiting for a fair wind, the earth gaped and Achilles rose from it as large as when he lived. His shade would not let the Achaeans embark ungrateful: let Polyxena be immolated, he demanded, that his sepulchre not go without honor. Hyginus gives the demand a motive — Achilles had sought the maiden in marriage, and coming to the interview was killed by Paris and Deiphobus — but in Ovid the dead man needs no further reason than that his worth be buried with his bones.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 13.439–480; Hyg. Fab. 110"
+    },
+    {
+      "title": "The virgin at the tumulus",
+      "text": "Torn from Hecuba's bosom — the queen who cherished her as almost the last child left — Polyxena was led to the tumulus before Neoptolemus son of Achilles and his drawn sword. Ovid makes her brave, more like a man than a woman: she bared her own throat and breast, declaring she would never live a slave, that no man's hand should touch her virgin body, and that her mother might ransom her corpse not with gold but with tears. Even the priest wept as he drove in the steel; in falling she still covered what should be concealed, keeping her chaste modesty to the last.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 13.439–480; Apollod. Epit. 5.23"
+    },
+    {
+      "title": "The painters remembered",
+      "text": "Homer passed over the slaughter in silence — and Pausanias thinks he did well to omit so barbarous an act. Yet the painters did not forget: in the picture gallery at Athens Polygnotus showed Polyxena about to be sacrificed near the grave of Achilles, and at Delphi her hair is braided after the custom of maidens; Pausanias had seen the tragedy depicted at Athens and at Pergamus on the Caicus as well. The Epic Cycle knew what the Iliad would not tell.",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 1.22.6, 10.25.10; Apollod. Epit. 5.23"
+    },
+    {
+      "title": "Division of the captives",
+      "text": "When the rites were done the victors took their special awards: Agamemnon received Cassandra, Neoptolemus Andromache widow of Hector, and Odysseus Hecuba — though some say Helenus won the old queen and crossed with her to the Chersonese, where she turned into a bitch with fiery eyes and the place was called Cynosema, the Dog's Tomb. Boreas then counselled departure; the sails filled, and the Achaeans cried farewell to Troy.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 5.23; Ov. Met. 13.582–714",
+      "topic": "hecuba-prize"
+    }
+  ],
+  "cast": [
+    { "id": "polyxena", "name": "Polyxena", "role": "The maiden sacrificed on Achilles' grave" },
+    { "id": "hecuba", "name": "Hecuba", "role": "Mother who lost almost her last child" },
+    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Son of Achilles before the drawn sword" },
+    { "id": "achilles", "name": "Achilles", "role": "Ghost demanding honor at his tomb" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "He who took Cassandra as prize" },
+    { "id": "andromache", "name": "Andromache", "role": "Hector's widow given to Neoptolemus" },
+    { "id": "cassandra", "name": "Cassandra", "role": "Prophetess given to Agamemnon" },
+    { "id": "odysseus", "name": "Odysseus", "role": "He who took Hecuba in the main tradition" },
+    { "id": "helenus", "name": "Helenus", "role": "He who took Hecuba in the rival tradition" },
+    { "name": "Astyanax", "role": "Hector's child thrown from the tower" },
+    { "id": "paris", "name": "Paris", "role": "In Hyginus, slayer of Achilles at the interview" },
+    { "id": "deiphobus", "name": "Deiphobus", "role": "Named with Paris in Hyginus' motive" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "The burning city and the tower of Astyanax" },
+    { "name": "Thracian shore", "role": "Where the fleet moored and Achilles' tomb stood" },
+    { "id": "athens", "name": "Athens", "role": "Polygnotus' painting of the sacrifice" },
+    { "name": "Delphi", "role": "Where her maiden hair was braided in art" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.23" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "13.439–480, 13.582–714" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "110" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.22.6, 10.25.10" },
+    { "source": "homer", "work": "Iliad", "citation": "6.402–403, 22.483–507" }
+  ]
+}

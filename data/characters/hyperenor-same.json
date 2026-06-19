@@ -1,0 +1,40 @@
+{
+  "id": "hyperenor-same",
+  "name": "Hyperenor",
+  "greekName": "Hyperenor (Ὑπερήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Hyperenor the Spartan, Hyperenor son of Panthous at Troy, and Hyperenor among the Theban Spartoi.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Hyperenor among the wooers who came from Same, named after Pisenor and before Pheroetes in the island list of Penelope's suitors.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    },
+    {
+      "text": "Homer's Iliad knows a Trojan Hyperenor, son of Panthous and tamer of horses, slain by Menelaus; Apollodorus elsewhere names Hyperenor among the five Spartoi and among sons of Pleione — none of whom is this Same suitor.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 17.1–40; Bibliotheca 3.4.1, 3.10.1; Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

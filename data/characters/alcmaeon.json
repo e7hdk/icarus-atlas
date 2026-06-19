@@ -1,0 +1,46 @@
+{
+  "id": "alcmaeon",
+  "name": "Alcmaeon",
+  "greekName": "Alkmaion (Ἀλκμαίων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "matricide and purification",
+    "colonizer of Acarnania",
+    "Epigoni captain"
+  ],
+  "summary": [
+    {
+      "text": "Son of the seer Amphiaraus who led the Epigoni against Thebes, slew his mother Eriphyle for betraying his father, and after long wandering colonized Acarnania from Epirus with his sons.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2–7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer knows him as a son of Amphiaraus who did not reach old age but died in Thebes because of a woman's gifts — the doom that hung over the house of the seer who vanished alive into the earth.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.248–251"
+    },
+    {
+      "text": "Apollodorus tells the full cycle: chosen leader of the Epigoni, Alcmaeon killed his mother Eriphyle who had sold her husband to death for the golden necklace; pursued by the Erinyes he wandered until Achelous purified him and gave him the islands Callirrhoe and the necklace and robe. When he learned his wife Arsinoe had received the cursed gifts, he sent them to Delphi and with his sons journeyed to Epirus, gathered settlers, and colonized Acarnania.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.2–7"
+    },
+    {
+      "text": "His end came at the hands of Phegeus' sons in Arcadia, but his sons Amphoterus and Acarnan avenged him, slew Phegeus, and fulfilled the oracle by dedicating the necklace at Delphi before settling the western land that bears Acarnan's name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6–7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "argos-amphilochicum",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "diores-epeian",
+  "name": "Diores",
+  "greekName": "Diōrēs (Διωρῆς)",
+  "type": "hero",
+  "domains": ["Epeian command", "son of Amarynceus", "the ten ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Amarynceus and captain of a third Epeian company — ten swift ships from Elis — caught in the snare of fate when Peiros (`peiros-thracian`), son of Imbrasus, leader of the Thracians from Aenus, smote him on the ankle with a jagged stone and crushed the sinews and bones.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650, 4.520–540; Description of Greece 5.3.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names mighty Diores captain of one fourth of the Epeian host, son of Amarynceus, when Nestor recites the muster at Troy. Pausanias notes that Homer gives ten ships to Diores and ten to Polyxenus while Amphimachus and Thalpius share the other twenty — and that neither Amarynceus nor his son remained obscure men in Elis.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650; Description of Greece 5.3.4"
+    },
+    {
+      "text": "In the battle by the ships, Peiros son of Imbrasus, leader of the Thracians from Aenus, cast a jagged stone that crushed Diores' ankle and sinews; as the Epeian gasped out his life, a comrade ran upon Peiros and drove him back until the twain lay stretched in the dust each by the other — captains the one of the Thracians and the other of the brazen-coated Epeians.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.520–540"
+    }
+  ]
+}

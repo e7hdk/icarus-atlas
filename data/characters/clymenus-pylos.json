@@ -1,0 +1,36 @@
+{
+  "id": "clymenus-pylos",
+  "name": "Clymenus",
+  "greekName": "Klymenos (Κλύμενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "father of Eurydice",
+    "the Neleid court at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Named in Homer only as the father of Eurydice, eldest daughter of Clymenus and revered wife of Nestor at sandy Pylos — a bare patronymic with no further genealogy in the pinned corpus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.450–495"
+    }
+  ],
+  "story": [
+    {
+      "text": "At the Pylians' hecatomb to Athena, when Nestor's sons roasted the sacrifice and Polycaste bathed Telemachus, the women raised the sacred cry — and among them stood Eurydice, wife of Nestor, called the eldest of the daughters of Clymenus. Homer names the father and the queen together and says no more of either line.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.450–495"
+    },
+    {
+      "text": "Not to be confused with Clymenus the suitor of Penelope at Ithaca (Epitome 7.27), with Clymenus son of Oeneus in Aetolia (Bibliotheca 1.8.1), or with other Clymenuses in Greek myth.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.450–495; Epitome 7.27; Bibliotheca 1.8.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

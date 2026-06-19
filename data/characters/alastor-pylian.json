@@ -1,0 +1,28 @@
+{
+  "id": "alastor-pylian",
+  "name": "Alastor",
+  "greekName": "Alastor (Ἄλαστορ)",
+  "type": "hero",
+  "domains": ["Pylian warrior", "Nestor's comrade"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Pylian whom Nestor arrayed beside mighty Pelagon, Chromius, lord Haemon, and Bias shepherd of the host — distinct from goodly Alastor comrade of Mecisteus and from the Lycian Alastor whom Diomedes and Odysseus slew.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305, 5.670–710"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon came to Nestor arraying his comrades, the clear-voiced orator of the Pylians had drawn up mighty Pelagon and Alastor and Chromius and lord Haemon and Bias, setting charioteers with their cars before the footmen.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

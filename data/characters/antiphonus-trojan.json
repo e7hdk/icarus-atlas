@@ -1,0 +1,28 @@
+{
+  "id": "antiphonus-trojan",
+  "name": "Antiphonus",
+  "greekName": "Antiphōnos (Ἀντίφονος)",
+  "type": "hero",
+  "domains": ["son of Priam", "Trojan prince"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the nine sons of Priam whom the old king summoned when he set out to ransom Hector — a namesake of Antiphus son of Hecuba in Apollodorus' stemma and of allied captains elsewhere in the poem.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Priam chid Antiphonus among the nine sons he called to harness the wagon for sacred Ilios: Helenus and Paris, goodly Agathon, Pammon, Polites good at the war-cry, Deïphobus, Hippothous, and lordly Dius — base children who had not died for Hector.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.230–260"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ An explorable 3D galaxy where all of Greek mythology lives: primordials at the b
 
 | Decision | Choice | Date |
 |---|---|---|
+| Figure sub-taxonomy | Two-layer model: primary `type` (8 cosmic roles → glow + layout) + optional `kinds[]` (FigureKind enum, max 3 → display/search only). Nymph and creature sub-classes never become CharacterType. UI: TypeBadge + KindBadge. Dossier: docs/NYMPHS.md | 2026-06-15 |
 | Rendering | Full 3D WebGL — Next.js + React Three Fiber | 2026-06-11 |
 | Milestone-1 scope | Core set, 30 characters (26 + Leto, Iapetus, Erebus, Tethys added after roster review) | 2026-06-11 |
 | Hover UX | Summary card on hover; click = camera fly-to + full story panel | 2026-06-11 |
@@ -61,6 +62,14 @@ type SourceId = 'homer' | 'hesiod' | 'apollodorus' | 'apollonius' | 'ovid' | 'hy
 type LensId = SourceId | 'consensus';
 type CharacterType = 'primordial' | 'titan' | 'olympian' | 'god' | 'hero' | 'mortal' | 'nymph' | 'creature';
 
+type FigureKind =
+  // nymph sub-classes
+  | 'oceanid' | 'nereid' | 'naiad' | 'dryad' | 'hamadryad' | 'oread'
+  | 'pleiad' | 'melia' | 'nephele' | 'hesperid'
+  // creature sub-classes
+  | 'centaur' | 'cyclops' | 'hecatoncheir' | 'gorgon' | 'harpy' | 'siren'
+  | 'giant' | 'dragon' | 'sphinx' | 'chimera';
+
 interface SourcedText {
   text: string;
   sources: SourceId[];
@@ -73,8 +82,9 @@ interface Character {
   name: string;          // English display name
   greekName: string;     // "Aphroditē (Ἀφροδίτη)"
   romanName?: string;    // "Venus"
-  type: CharacterType;
-  domains: string[];
+  type: CharacterType;   // primary — sole driver of star glow, pulse, and mortal-clock layout
+  kinds?: FigureKind[];  // optional sub-taxonomy (Oceanid, Dryad, Centaur, …); display/search only; max 3
+  domains: string[];     // thematic prose tags — never mythological class (use kinds for that)
   epithets?: string[];
   summary: SourcedText[];  // hover card: pick best match for active lens
   story: SourcedText[];    // full story paragraphs, each tagged
@@ -110,6 +120,10 @@ Type drives the star material (color + emissive intensity + pulse rhythm):
 | `creature` | Magenta-red | Irregular, unsettling |
 
 The palette is the Aether Nebula set; it lives in two synced places: `src/styles/theme.css` (CSS tokens for UI) and `TYPE_GLOW` in `src/types/character.ts` (hex values for WebGL materials).
+
+### 5.1 Figure kinds (sub-taxonomy)
+
+`kinds` is a controlled optional array (max 3) of `FigureKind` values — mythological sub-class for **display and search only**. It does **not** change star colour, pulse, size, or layout; primary `type` alone drives those. Use `kinds` for Dryad vs Naiad vs Nereid, Centaur vs Cyclops, etc.; keep `domains` for thematic prose ("prophetess of Pan", "the chase"). New `nymph` and `creature` entries **must** include `kinds`; legacy figures backfill in verified batches (see docs/NYMPHS.md, docs/CENTAURS.md). Never add sub-classes as `CharacterType` values. UI: primary `TypeBadge` + muted `KindBadge`(s) + italic domains. Enum lives in `FIGURE_KINDS` / `NYMPH_KINDS` / `CREATURE_KINDS` in `src/types/character.ts`.
 
 ## 6. Galaxy layout
 
@@ -172,6 +186,7 @@ Run `pnpm validate-layout` after character or relation edits. It verifies genera
 - **M2.18 — The House of Heracles (Batch C) — house complete**: +10 figures closing the hero's life and line — **Megara** (← `creon`, the first wife), **Omphale** (the bondage), **Iole** & her father **Eurytus** of Oechalia, the centaurs **Nessus** and **Pholus**, **Philoctetes** (who lit the pyre), **Hebe** (the apotheosis bride), and the eldest Heraclids **Hyllus** and self-sacrificing **Macaria**. 24 relations that **close the atlas's long-open hooks**: `deianira` consort, `auge` lover and `telephus` ← `heracles` (the Arcadia tie), `echemus` slayer of `hyllus` (the Tegea tie), the mutual slaying `heracles`↔`nessus` (the poisoned shirt), and the apotheosis marriage `hebe` consort `heracles`. One documented contradiction (`eurystheus-slayer`, Hyllus vs Iolaus). **The House of Heracles is complete (A+B+C = 28); the keystone binds the bestiary, Calydon, Arcadia, the Perseid house, Thebes and Sparta.** 452 characters total; relations cross 1230. ✅
 - **M2.19 — The Return of the Heraclidae — the House of Heracles complete**: +14 figures carrying the line from the Return into the Dorian historical age — **Cleodaeus** → **Aristomachus** → the three brothers **Temenus** (Argos), **Cresphontes** (Messenia) and **Aristodemus** (whose twins **Eurysthenes** & **Procles** found the two Spartan kingships); the Messenian tragedy of **Merope**, her son **Aepytus** and the usurper **Polyphontes**; the Aetolian guide **Oxylus**; **Hyrnetho** and **Deiphontes** at Argos; and **Tlepolemus**, the son of Heracles who slew the existing `licymnius` and fled to Rhodes. 22 relations: the conquest drives out the existing `tisamenus` (last Pelopid), the first-Return failure already wired (`echemus` slew `hyllus`). Aristodemus' disputed death and the lot-casting kept as sourced prose. Dossier in docs/HERACLID_RETURN.md; all ship the three-layer codex. **The House of Heracles is complete (Perseid bridge → Labours → death → the Return).** 466 characters total; relations cross 1260. ✅
 - **M2.20 — The children of the first beings — the primordial broods complete**: +33 verified figures completing the canonical primordial genealogy, in seven steps. **Batch 0** (edges only): re-attributed `python`→[hyginus,ovid], `typhon`+hyginus, `cecrops`+apollodorus, `cronus`+apollonius, made all five Spartoi earth-born of Gaia, and added the Hyginus Aether+Dies parentage of `uranus` & `pontus`. **Batch 1**: **Eurybia**, the fifth Pontid, consort of the existing `crius` and mother of the long-orphaned `astraeus`/`pallas`/`perses`. **Batch 2**: the elder Uranus+Gaia broods — the three **Cyclopes** (`brontes-cyclops`, `steropes-cyclops`, `arges-cyclops`, the thunderbolt-smiths) and the three **Hecatoncheires** (`cottus`, `briareus`, `gyges-hecatoncheir`, Zeus's Titanomachy allies). **Batch 3**: the castration-blood brood — the **Erinyes**, the **Gigantes** (the Gigantomachy) and the **Meliae** (ash-nymphs; note the homonym with the existing Oceanid `melia`). **Batch 4**: **Ourea** (the Mountains, Gaia alone) and the earth-giants **Tityos** (slain by Apollo & Artemis) and **Antaeus** (`antaeus-giant`, crushed by Heracles). **Batch 5**: Nyx's remaining children — the **Keres**, **Oneiroi**, **Hesperides**, **Philotes**, and **Styx** (modeled as the eldest Oceanid, with the Hyginus Nyx+Erebus variant secondary). **Batch 6**: the fifteen strife-children of **Eris** (`ponos`, `lethe-daimon`, `limos`, `algea`, `hysminai`, `makhai`, `phonoi`, `androktasiai`, `neikea`, `pseudea`, `logoi`, `amphillogiai`, `dysnomia`, `ate`, `horkos`). 8 new documented contradictions (`pontus-parentage`, `hundred-handers-birth-order`, `erinyes-parentage`, `tityos-parentage`, `antaeus-parentage`, `hesperides-parentage`, `styx-parentage`, `ate-parentage`). Full dossier in docs/PRIMORDIAL_OFFSPRING.md; all ship the three-layer codex (abstractions with no surviving figural art carry an honest empty Legacy). **The inner cosmos is complete.** 499 characters total; relations cross 1330. ✅
+- **M2.22 — The Centaur cluster — complete**: Batches A–D entered 2026-06-15 — origins, Lapith war, named hunters (Rhoecus/Hylaeus/Elatus), and 16 Ovid Met. 12 wedding centaurs; story `lapith-centaur-war`; four contradictions. 29 new figures. Dossier in docs/CENTAURS.md. ✅
 - **M2.21 — The divine family — the Olympian retinue**: +22 verified figures completing the gods' own household. The **nine Muses** (`calliope`, `clio`, `euterpe`, `erato-muse`, `melpomene`, `polyhymnia`, `terpsichore`, `thalia-muse`, `urania`, Zeus + Mnemosyne); the three **Charites/Graces** (`aglaea`, `euphrosyne`, `thalia-charis`, Zeus + Eurynome); the three **Horae/Seasons** (`eunomia`, `dike`, `eirene`, Zeus + Themis); **Hecate** (Perses + Asteria, `chthonic`), **Iris** (Thaumas + Electra), **Eileithyia** (Zeus + Hera); and the throne-guard children of Pallas & Styx (`nike`, `zelus`, `cratos`, `bia`) — closing the Styx loose end from M2.20. ~51 relations: `aglaea` consort `hephaestus`, `iris` sibling the existing `harpies` & ally `hera`, `eunomia` adversary the existing `dysnomia`, the existing `sirens` gain their disputed Muse-mothers (`melpomene`/`terpsichore`), `hyacinthus` gains the Apollodoran variant parent `clio`, and the four powers ally `zeus`. Eight documented contradictions (`muse-parentage`, `charites-parentage`, `horae-roster`, `hecate-sphere`, `orpheus-parentage`, `rhesus-mother`, `sirens-mother`, `hephaestus-consort`). Homonyms suffixed (`erato-muse` ≠ existing `erato-dryad`; `thalia-muse` vs `thalia-charis`). Full dossier in docs/DIVINE_FAMILY.md; all ship the three-layer codex (63 verified artworks; only `zelus` carries an honest empty Legacy). 521 characters total; relations cross 1380. ✅
 - **M2.3 — The Spartan / Lacedaemonian house (Batch A)**: +14 verified Spartans (Lelex, Myles, Eurotas, Sparte, Lacedaemon, Taygete, Amyclas, Cynortas, Oebalus, Tyndareus, Leda, Castor, Polydeuces, Hyacinthus), 43 relations — the atlas's densest interlock. **Wires the long-parentless `helen` and `clytemnestra` to their parents** (Tyndareus/Leda/Zeus/Nemesis), joins the Aeolid `perieres-aeolid`/`gorgophone` line to the Laconian throne, threads the Pleiad `taygete` to `atlas`, sets the Dioscuri among `jason`'s Argonauts, and binds `hyacinthus` to `apollo`. Six documented contradictions (`eponym-generation-count`, `perieres-parentage`, `tyndareus-parentage`, `hyacinthus-parentage`, `helen-parentage` Leda↔Nemesis, `dioscuri-paternity`). Areas wired: `data/lineages/sparta.json` + `residences:[{city:'sparta'}]`. All ship the three-layer codex. 297 characters total. ✅
 - **M1.8 — The Pelopid curse**: +12 verified characters (Tantalus, Plouto, Pelops, Niobe, Broteas, Hippodamia, Oenomaus, Myrtilus, Atreus, Thyestes, Aerope, Chrysippus), 4 new documented contradictions, and a connected source-lensed dynasty from Zeus to the Atreid feud. ✅
@@ -192,7 +207,8 @@ Run `pnpm validate-layout` after character or relation edits. It verifies genera
 - **M11 — Era synchronisms**: calibrate the mortal clock across dynasties with sourced synchronism anchors ("Tlepolemus son of Heracles fought at Troy", Hom. Il. 2.653-670; "Heracles sacked Troy in Laomedon's reign", Il. 5.640-651; the Perseid→Pelopid succession at Mycenae) — generations become a constraint solve so contemporaries share a ring regardless of king-list length. Unlocks properly once the Heracles batch lands.
 - **M10 — Stories** (in progress):
   - **M10.1 — Foundations**: story schema (nested saga/episode tree, sourced chapters, cast/places with promote-later links, attestations), `/stories` + `/story/[id]` routes, GALAXY · AREAS · STORIES main nav, validator checks. Pilot: cosmogony, great flood, Seven Against Thebes, Trojan War, Rhesus. ✅
-  - **M10.2 — The cycle shelves**: more sagas in verified batches (Titanomachy, Argonautica, the Theban cycle complete, the Returns), stories cross-linked from character and city pages, cultural artworks for stories.
+  - **M10.2 — The cycle shelves**: six shelves on `/stories` — cosmic cycle (cosmogony → flood/five ages), Argonautica (golden fleece through Medea at Corinth), Theban cycle (Cadmus through Epigoni and Alcmaeon's wanderings), house of Troy (Dardanids → war → judgment/Rhesus episodes), Returns (Odyssey), Heracles cycle. Story trees, cast/places, geo `storyIds`, story-culture galleries on saga pages, character codex "Appears in the myths". ✅ Trojan Batch 2 adds `agamemnon-murder`, `nekuia`, `aethiopis`, `telegony`. Theban Batch 2–3 add `oedipus-at-colonus` and `alcmaeon-wanderings`.
+  - **M10.3 — Metamorphoses shelf**: Ovid's catalogue of changed forms — root saga `metamorphoses` with thirty-two episodes through Batch 9 (Greek myth, Roman wanderings, apotheosis); seventh shelf on `/stories`, story-culture galleries, geo `storyIds`, dispute topics wired. ✅ **M10.3 complete.** _Out of scope: Cupid & Psyche (Apuleius); exhaustive Met. inset catalogue._
 
 Each milestone ends with: `pnpm lint && pnpm build && pnpm validate-data && pnpm validate-layout` green + a manual UX review together.
 

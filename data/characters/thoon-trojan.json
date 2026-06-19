@@ -1,0 +1,28 @@
+{
+  "id": "thoon-trojan",
+  "name": "Thoön",
+  "greekName": "Thoōn (Θόων)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Agamemnon's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Atreus' son Agamemnon slew with his sharp spear when the king leapt among the press — distinct from Thoön son of Phaenops whom Diomedes slew and from other Homeric namesakes.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans pressed hard upon the Achaeans, Agamemnon first smote peerless Deïopites from above in the shoulder; and thereafter he slew Thoön and Eunomus, and then Chersidamas as he leapt down from his car.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

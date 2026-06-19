@@ -1,0 +1,35 @@
+{
+  "id": "stratius-zacynthus",
+  "name": "Stratius",
+  "greekName": "Stratios (Στράτιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — distinct from Stratius son of Nestor at Pylos and from Apollodorus' Stratichus spelling for the same Pyliad prince.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Stratius among the wooers assigned to Zacynthus, listed after Thadytius in Epitome 7.29 — before the repeated Phrenius and Indius entries and Daesenor in the same roll.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

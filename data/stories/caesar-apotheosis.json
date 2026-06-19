@@ -1,0 +1,51 @@
+{
+  "id": "caesar-apotheosis",
+  "title": "The Apotheosis of Caesar",
+  "greekTitle": "Ἀποθέωσις Καίσαρος",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 8.01,
+  "summary": {
+    "text": "Ovid closes his song of changed forms with Rome: Venus bore Julius Caesar to the stars on a blazing comet while Augustus his heir guarded the earth — the poet's proof that metamorphosis did not end with myth, but continues wherever power passes from mortal flesh to divine honour.",
+    "sources": ["ovid"],
+    "citation": "Ov. Met. 15.745–871"
+  },
+  "chapters": [
+    {
+      "title": "Pythagoras' lesson",
+      "text": "Book fifteen had already taught that nothing dies — souls migrate, forms alter, the universe renews itself. Pythagoras forbade flesh of beasts and praised the mind that sees beneath appearance. Ovid uses the philosopher's voice to prepare the reader: if Greek heroes and nymphs could change, why not the master of the Roman world?",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 15.75–478"
+    },
+    {
+      "title": "Venus' plea",
+      "text": "Caesar had fallen to the knives of the Senate; his divine mother Venus — Aeneas' ancestress — could not bear to leave him among the shades. She rose to Olympus and begged Jupiter that the Julian star might rise among the gods, citing all she had done for Rome through the Trojan line.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 15.745–810"
+    },
+    {
+      "title": "The comet",
+      "text": "Jupiter agreed: Caesar's soul left his body and climbed heavenward on a fiery comet, the sign Romans saw at his funeral games — not a torch of earth but the bearer of a god. His temples stand on the ground he ruled; his name outlasts the month that bears it.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 15.810–850"
+    },
+    {
+      "title": "Augustus",
+      "text": "The poem ends not on the deified dictator but on his heir: Augustus greater than his father, guarding the conquered earth while Caesar watches from the sky. Ovid's Metamorphoses — begun with Chaos and gods — closes with the Roman frame that makes change the law of empire as well as of myth.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 15.850–871"
+    }
+  ],
+  "cast": [
+    { "name": "Julius Caesar", "role": "Dictator raised to the stars after death" },
+    { "name": "Augustus", "role": "His heir, greater guardian of earth" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Venus, Caesar's divine mother" },
+    { "id": "zeus", "name": "Zeus", "role": "Jupiter, who granted the apotheosis" }
+  ],
+  "places": [
+    { "name": "Rome", "role": "City where Caesar fell and Augustus reigned" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "15.745–871" }
+  ]
+}

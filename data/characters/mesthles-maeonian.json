@@ -1,0 +1,33 @@
+{
+  "id": "mesthles-maeonian",
+  "name": "Mesthles",
+  "greekName": "Mesthles (Μέσθλης)",
+  "type": "hero",
+  "domains": ["Maeonian command", "Tmolus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Talaemenes and captain of the Maeonians whose birth was beneath Tmolas — brother of Antiphus, whose mother was the nymph of the Gygaean lake.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Mesthles and Antiphus, the two sons of Talaemenes, as captains twain of the Maeonians. Apollodorus repeats the parentage in the catalogue of Trojan allies.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    },
+    {
+      "text": "When the fight turned about Patroclus' body, Hector went to and fro heartening the allied tribes and named Mesthles among the captains he roused to stand against the Danaans.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": ["homer"]
+    }
+  ]
+}

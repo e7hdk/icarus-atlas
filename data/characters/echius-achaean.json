@@ -1,0 +1,27 @@
+{
+  "id": "echius-achaean",
+  "name": "Echius",
+  "greekName": "Echios (Ἔχιος)",
+  "type": "hero",
+  "domains": ["father of Mecisteus", "Achaean warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Mecisteus, whom Polites slew in the forefront of the fight when Apollo roused the Trojans about the ships — distinct from the Echius whom Patroclus laid low beside Sarpedon's Lycians.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330, 13.405–420, 15.315–340, 16.395–435"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Echius as the father of Mecisteus, who twice bore wounded comrades from the field with goodly Alastor when Teucer and Hypsenor fell.",
+      "sources": ["homer"],
+      "citation": "Iliad 8.295–330, 13.405–420"
+    },
+    {
+      "text": "In the scattered battle when Hector pressed the Argives back, Polites slew Echius in the forefront of the fight, even as Polydamas slew his son Mecisteus and goodly Agenor laid Clonius in the dust.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    }
+  ]
+}

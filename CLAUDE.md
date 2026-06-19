@@ -13,6 +13,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 5. **Research local-first**: before web research for any character, relation or contradiction, search the pinned local corpus with `pnpm corpus:search`. Use its citation-bearing passages for discovery, compare relevant source lenses, and verify against the original-language edition when available. Use the web only when the corpus lacks the work or passage, the reading is ambiguous, or independent verification is needed. Corpus hits are research evidence, never automatically generated application data.
 6. **Cosmos layout**: the galaxy is a meaning-bearing coordinate system — radius = mythic time under the "mortal clock" (gods are timeless: divine figures keep Hesiod's cosmic ages in the inner rings, every dynasty leaves eternity at one shared mortal base ring, and only mortal→mortal steps advance the clock; parents always stay inside descendants), angle = dynasty (sunburst wedges sized by subtree, a uniform per-generation twist turns lineages into spiral arms), height = cosmological realm (ouranic above the disc, lesser divine band, mortal plane, chthonic below). A deterministic constrained relaxation polishes spacing — consort pairs orbit as close binaries, adversaries repel — but may never break generation order, wedge bounds, or the separation floor. City skies reuse the engine in compact mode. Run `pnpm validate-layout` after character or relation edits.
 7. **Check before adding**: before entering ANY new character (or referencing a relation endpoint), check whether it — or a same-name figure — already exists in `data/characters/`. Greek myth is dense with homonyms (three Aeoluses, four Actors, two Cephaluses, an Aeolid `epopeus` vs the existing Sicyonian one). Never silently duplicate an id, and never merge two distinct figures under one node just because they share a name: give homonyms disambiguated ids (`alcyone-aeolid`, `glaucus-corinth`, `orestes-aeolid`) and link relations to the correct existing node. Each dynasty dossier (e.g. docs/AEOLUS_DYNASTY.md) must carry a same-name hazard map and an existing-node-collision list resolved before its batch is written.
+8. **Type vs kinds**: primary `type` (eight cosmic roles: primordial … creature) is the **sole** driver of star glow, pulse, size, and mortal-clock layout. Optional `kinds: FigureKind[]` (max 3) is controlled mythological sub-taxonomy (Oceanid, Dryad, Centaur, …) for display and search only — never add sub-classes as `CharacterType`. New `nymph` and `creature` entries **must** include `kinds`; do not put mythological class in `domains` (thematic prose only). Dual identity: Styx `type: god` + `kinds: ['oceanid']`. See docs/PLAN.md §5.1, docs/NYMPHS.md, docs/CENTAURS.md, `.cursor/rules/figure-taxonomy.mdc`.
 
 ## Stack
 
@@ -57,7 +58,7 @@ data/
   stories/*.json        # myths as stories: sourced chapters, cast, places, attestations
   geo/                  # regions.json, cities.json (Pleiades CC BY), generated basemap.json
   lineages/*.json       # per-city royal successions, sources-tagged reigns
-docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md
+docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md, NYMPHS.md, CENTAURS.md
 mockups/                # static theme mockups (design artifacts, not app code)
 scripts/                # validate-data.ts and other maintenance scripts
 ```
@@ -68,7 +69,7 @@ The source lens appears in exactly ONE place: the "told after" selector on the P
 
 ## Data model in one paragraph
 
-A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge + `sources` + optional `citation` (e.g. "Theogony 188–206"). The active lens filters facts: a fact is visible under lens L if `sources` includes L; the special `consensus` lens shows the union and marks conflicting facts with a dispute badge. Character type (primordial | titan | olympian | god | hero | mortal | nymph | creature) drives the star's glow color — the palette lives in `src/types/character.ts` and docs/PLAN.md and must stay in sync with the chosen theme.
+A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge + `sources` + optional `citation` (e.g. "Theogony 188–206"). The active lens filters facts: a fact is visible under lens L if `sources` includes L; the special `consensus` lens shows the union and marks conflicting facts with a dispute badge. Primary `type` (primordial | titan | olympian | god | hero | mortal | nymph | creature) drives the star's glow color — the palette lives in `src/types/character.ts` and docs/PLAN.md and must stay in sync with the chosen theme. Optional `kinds` (FigureKind[], max 3) is mythological sub-class for display/search only (Dryad, Nereid, Centaur, …); it does not change glow or layout.
 
 ## Theme
 

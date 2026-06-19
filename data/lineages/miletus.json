@@ -1,0 +1,26 @@
+{
+  "city": "miletus",
+  "reigns": [
+    {
+      "ruler": "Miletus",
+      "characterId": "miletus-apollonid",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2",
+      "note": "Son of Apollo who fled Crete and founded the Carian city that bears his name."
+    },
+    {
+      "ruler": "Amphimachus",
+      "characterId": "amphimachus-nomionid",
+      "sources": ["homer"],
+      "citation": "Il. 2.867–871",
+      "note": "Son of Nomion; Homer's Carian captain who held Miletus when the host sailed to Troy."
+    },
+    {
+      "ruler": "Erginus",
+      "characterId": "erginus-miletus",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Arg. 1.185; Fab. 14",
+      "note": "Son of Poseidon who left Miletus' citadel for the Argonaut voyage."
+    }
+  ]
+}

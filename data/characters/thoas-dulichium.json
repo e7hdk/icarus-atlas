@@ -1,0 +1,52 @@
+{
+  "id": "thoas-dulichium",
+  "name": "Thoas",
+  "greekName": "Thoas (Θόας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of the Aetolian and Lemnian kings Thoas, attested only among the wooers who came against Odysseus' house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Thoas among the suitors who devoured Odysseus' substance, listed with Amphinomus, Demoptolemus, Amphimachus, Euryalus, Paralus, Evenorides, Clytius, Agenor, Eurypylus, and the rest of the long company that Penelope's wooers mustered.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    },
+    {
+      "text": "Not to be confused with Thoas son of Andraemon, captain of the Aetolians at Troy (`thoas-aetolia`), or with Thoas king of Lemnos who received the Argonauts — wholly different figures in the epic genealogies.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Iliad 2.638–644; Bibliotheca 1.7.10; Argonautica 1.620–650"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

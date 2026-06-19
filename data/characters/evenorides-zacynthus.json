@@ -1,0 +1,40 @@
+{
+  "id": "evenorides-zacynthus",
+  "name": "Evenorides",
+  "greekName": "Evenoridēs (Εὐηνορίδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — a namesake of Evenorides in the Epitome 7.27 list, whom Apollodorus assigns to a different island roll.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Evenorides among the wooers assigned to Zacynthus, listed after Periallus and before Clytius in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    },
+    {
+      "text": "The same patronymic appears in Epitome 7.27 among a different island catalogue — not to be merged with `evenorides-ithaca` without resolving Apollodorus' separate lists.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

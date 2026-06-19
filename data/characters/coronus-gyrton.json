@@ -1,0 +1,40 @@
+{
+  "id": "coronus-gyrton",
+  "name": "Coronus",
+  "greekName": "Koronos (Κόρωνος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Gyrton in Thessaly",
+    "father of Leonteus",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of the Lapith Caeneus (`caeneus-lapith`) and father of Leonteus (`leonteus-lapith`) — Homer sets him in the stemma of the Lapith captains at Troy; Hyginus and Apollodorus also number a Coronus son of Caeneus from Gyrton among Jason's crew.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Iliad 2.735–775; Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships, Leonteus the son of Caenus' son Coronus stands beside Polypoetes son of Peirithous when the Lapiths who held Argissa and Gyrtone follow forty black ships to Troy.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "text": "Hyginus names Coronus son of Caeneus from Gyrton among the Argonauts; Apollodorus counts him in the roll of those who sailed to Colchis. He must be kept distinct from Caeneus son of Coronus from Gortyn (`caeneus-gortyn`) in the same lists.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "medus",
+  "name": "Medus",
+  "greekName": "Mēdos (Μῆδος)",
+  "romanName": "Medus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Medea and Aegeus",
+    "eponym of Media",
+    "the eastern kingdom"
+  ],
+  "summary": [
+    {
+      "text": "Son whom Medea bore to Aegeus at Athens after she fled Corinth; exiled with his mother when she plotted against the unrecognized Theseus, he conquered barbarian lands and gave his name to Media before marching against the Indians and meeting his death.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.28; Description of Greece 2.3.8"
+    },
+    {
+      "text": "Not to be confused with Medeus, the son Cinaethon of Lacedaemon names among Jason's children by Medea at Corinth — a different figure in the roster of her Corinthian offspring.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets him after the Corinthian catastrophe: Medea came to Athens and, being there married to Aegeus, bore him a son Medus. When she plotted against Theseus and was driven out, Medus fled with her; he conquered many barbarians, called the whole country Media after himself, and at last marched against the Indians and died.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28"
+    },
+    {
+      "text": "Pausanias tells the same eastern turn: after Medea fled Athens she came to the land then called Aria and caused its inhabitants to be named Medes after her, and the son she brought with her — Medus — gave the name to the country.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

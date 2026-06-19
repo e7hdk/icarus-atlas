@@ -1,0 +1,36 @@
+{
+  "id": "antiphus-thessalus-cos",
+  "name": "Antiphus",
+  "greekName": "Antiphos (Ἄντιφος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Coan captains",
+    "Trojan War"
+  ],
+  "summary": [
+    {
+      "text": "Son of Thessalus and brother of Pheidippus, who with him led the Coans and their island dependencies to Troy with thirty ships.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.676–680; Epitome 3.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Antiphus beside Pheidippus as a son of Thessalus son of Heracles, captain over Cos, the city of Eurypylus, and the neighbouring isles.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.676–680"
+    },
+    {
+      "text": "Apollodorus repeats the same Coan muster in the Epitome, and in the catalogue of wanderers after Troy says Antiphus son of Thessalus went to the Pelasgians, took possession of the country, and called it Thessaly.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.13, 6.15"
+    }
+  ],
+  "residences": [
+    {
+      "city": "kos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

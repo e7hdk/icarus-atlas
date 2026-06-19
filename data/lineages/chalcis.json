@@ -1,0 +1,19 @@
+{
+  "city": "chalcis",
+  "reigns": [
+    {
+      "ruler": "Chalcodon",
+      "characterId": "chalcodon-abantes",
+      "sources": ["homer"],
+      "citation": "Il. 2.541–545",
+      "note": "Father of Elephenor and lord of the Abantes who held Chalcis and the Euboean coast."
+    },
+    {
+      "ruler": "Elephenor",
+      "characterId": "elephenor",
+      "sources": ["homer"],
+      "citation": "Il. 2.541–545",
+      "note": "Scion of Ares, son of Chalcodon, who led the Abantes from Euboea and Chalcis to Troy and fell beside Patroclus' corpse."
+    }
+  ]
+}

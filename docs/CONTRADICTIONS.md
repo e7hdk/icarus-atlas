@@ -32,6 +32,21 @@ Significance: whether Hephaestus has a father at all changes the whole Olympian 
 
 Verification: ✓ verified — Apollodorus' wording confirmed nearly verbatim; minor nuance that Hesiod implies rather than states the Athena-birth motive (standard inference from the juxtaposition at Theogony 924–929).
 
+## Ares' conception
+
+- **topic**: `ares-conception`
+- **Characters**: `ares`, `hera`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Hera bore Ares to Zeus among the children of their lawful marriage — with Hebe and Eileithyia. | Theogony 921–923 |
+| Homer | Ares is son of Zeus and Hera; Zeus reviles him as most hateful of the Olympians, with all his mother's unbearable spirit. | Iliad 5.889–898 |
+| Ovid | Juno conceived Mars with no father at all, touched by a magic flower from Flora's garden after Jupiter bore Minerva without her. | Fasti 5.229–258 |
+
+Significance: the Greek genealogical spine makes Ares an ordinary child of the royal marriage-bed, while Ovid's Roman calendar preserves a fatherless variant parallel to Juno's rivalry with Athena's head-birth — a secondary tradition, not Hesiod's or Homer's, but attested in our Ovid lens.
+
+Verification: ✓ verified — Hesiod and Iliad positions exact; Ovid Fasti passage confirms Flora's flower and fatherless Mars.
+
 ## Hephaestus' fall from Olympus
 
 - **topic**: `hephaestus-fall-from-olympus`
@@ -218,7 +233,7 @@ Verification: ✓ verified, Ovid position tightened — claim re-worded to the L
 ## Where Persephone was taken and who told Demeter
 
 - **topic**: `persephone-abduction-details`
-- **Characters**: `persephone`, `demeter`, `hades`, `zeus`
+- **Characters**: `persephone`, `demeter`, `hades`, `zeus`, `arethusa-nymph`
 
 | Author | Claim | Citation |
 |---|---|---|
@@ -408,6 +423,20 @@ Significance: the Greek Ararat moves from Delphi's mountain to Sicily's volcano 
 
 Verification: ✓ verified — Fabulae 153's "in montem Aetnam, qui altissimus in Sicilia esse dicitur" confirmed against the Latin; Hyginus 152A ties the same flood to Phaethon's conflagration as Jove's pretext.
 
+## One deluge or two? The Ogygian flood and Deucalion
+
+- **topic**: `ogyges-deluge-tradition`
+- **Characters**: `deucalion`, `pyrrha`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pausanias | In Boeotia the waters of lake Copais rose in the reign of Ogyges and inundated the whole valley; Attica too remembers an Ogygian flood after which the land was without kings until Cecrops. | Description of Greece 9.5.1, 1.38.7 |
+| Pseudo-Apollodorus | The systematic flood narrative is Deucalion's alone: Zeus destroys the Bronze Age men, Prometheus' son rides out the waters in a chest, and mankind is refounded from stones — with no Ogygian deluge in the handbook. | Bibliotheca 1.7.2 |
+
+Significance: local Greek memory preserved a primeval Ogygian catastrophe in Attica and Boeotia while the mythographer's spine runs straight to the Thessalian Deucalionid flood — so the atlas must show either one universal cataclysm or two stacked traditions, never silently merge them.
+
+Verification: ✓ verified — Pausanias 9.5.1 (Copais flood in Ogyges' reign) and 1.38.7 (Attic Ogygian flood) confirmed against Perseus; Apollodorus Bibliotheca 1.7.2 carries Deucalion only, with no Ogyges flood entry.
+
 ## Who ordered the stones thrown
 
 - **topic**: `flood-repopulation`
@@ -596,6 +625,68 @@ Significance: later tradition cannot safely turn Laodice into Electra or Iphiana
 
 Significance: Pausanias' local tradition changes both Iphigenia's biological parentage and her place in the Atreid household.
 
+## Who was Aegialia's father?
+
+- **topic**: `aegialia-parentage`
+- **Characters**: `aegialia-adrastid`, `adrastus`, `aegialeus-adrastid`, `diomedes`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Aegialia is a daughter of Adrastus and Amphithea, listed beside Argia and Deipyle; Diomedes married her after taking Argos. | Bibliotheca 1.8.6, 1.9.13 |
+| Homer | Diomedes' wife is Aegialeia, daughter of Adrastus. | Iliad 5.408–415 |
+| Pseudo-Apollodorus (variant) | Some say Diomedes married Aegialia daughter of Aegialeus, not of Adrastus directly. | Bibliotheca 1.8.6 |
+
+Significance: the dispute shifts whether Diomedes' queen belongs to Adrastus' generation or to the fallen Epigon Aegialeus — and so whether the marriage secured the throne through the father-in-law or through the dead prince's line.
+
+## Who was Cyanippus' father?
+
+- **topic**: `cyanippus-parentage`
+- **Characters**: `cyanippus-adrastid`, `adrastus`, `aegialeus-adrastid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Cyanippus is a son of Adrastus and Amphithea, brother of Aegialeus. | Bibliotheca 1.9.13 |
+| Pausanias | The Biantid kings descended from Bias for four generations down to Cyanippus, son of Aegialeus. | Description of Greece 2.18.4 |
+
+Significance: Apollodorus makes Cyanippus Adrastus' son; Pausanias makes him Aegialeus' son and the last name in the Biantid succession — a one-generation gap that changes where the house of Bias ends.
+
+## Who was Hippomedon's father?
+
+- **topic**: `hippomedon-parentage`
+- **Characters**: `hippomedon`, `aristomachus-aeolid`, `talaus-aeolid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Hippomedon is son of Aristomachus among the Seven against Thebes. | Bibliotheca 3.6.3 |
+| Pseudo-Apollodorus (variant) | Some say Hippomedon was son of Talaus instead. | Bibliotheca 3.6.3 |
+
+Significance: the variant collapses a generation and would make Hippomedon a brother's peer to Adrastus rather than a member of the next generation down through Aristomachus.
+
+## Who was Amphilochus' father?
+
+- **topic**: `amphilochus-parentage`
+- **Characters**: `amphilochus`, `amphiaraus`, `alcmaeon`, `eriphyle`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Amphilochus is son of Amphiaraus and Eriphyle, brother of Alcmaeon. | Odyssey 15.248–251 |
+| Pseudo-Apollodorus | Amphilochus among the Epigoni is son of Amphiaraus. | Bibliotheca 3.7.2 |
+| Pseudo-Apollodorus (Epitome) | An Amphilochus son of Alcmaeon came late to Troy. | Epitome 6.19 |
+| Pseudo-Apollodorus (Euripides variant) | Alcmaeon begot Amphilochus by Manto daughter of Tiresias. | Bibliotheca 3.7.7 |
+
+Significance: the Epitome and Euripides variants collapse or restart the generation — making Amphilochus Alcmaeon's son rather than his brother — and so change whether he belongs to the Eriphyle matricide cycle or to Alcmaeon's later wanderings with Manto.
+
+## Did Amphilochus share in the matricide?
+
+- **topic**: `alcmaeon-matricide-agency`
+- **Characters**: `alcmaeon`, `amphilochus`, `eriphyle`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Some say Amphilochus with his brother, others that Alcmaeon alone killed Eriphyle. | Bibliotheca 3.7.5 |
+
+Significance: shared agency would bind both brothers to the Erinyes and to Pausanias' cult distinction at Oropos, where Alcmaeon is excluded from Amphiaraus' temple while Amphilochus retains his own altar-portion.
+
 ## Who killed Agamemnon?
 
 - **topic**: `agamemnon-murder-agency`
@@ -673,6 +764,21 @@ Significance: The same three celestial children receive a different mother in Hy
 Significance: Whether the great Theban children—Eteocles, Polynices, and Antigone—are the products of incest or a later, legitimate marriage fundamentally changes their tragic taint.
 
 Verification: ✓ verified — Apollodorus' and Hyginus' lists confirmed; Pausanias' explicit rejection of Jocasta in favor of Euryganeia confirmed at 9.5.11.
+
+## Where did Oedipus die and where was he buried?
+
+- **topic**: `oedipus-death-place`
+- **Characters**: `oedipus`, `antigone`, `theseus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | After exile Oedipus came with Antigone to Colonus in Attica, sat as a suppliant in the precinct of the Eumenides, was kindly received by Theseus, and died there not long afterwards. | Bibliotheca 3.5.9 |
+| Homer | In the Nekuia Oedipus still bears the woes the Avengers of a mother bring to pass; in the Iliad Euryalus son of Mecisteus came to Thebes for the burial of Oedipus when he had fallen and there worsted all the sons of Cadmus in the funeral games. | Odyssey 11.275–280; Iliad 23.677–679 |
+| Pausanias | Within the Colonus precinct is a monument to Oedipus, whose bones he found were brought from Thebes; he rejects the dramatic death-scene of later poets, citing Homer's funeral games at Thebes as evidence the old poet knew a different ending. | Description of Greece 1.28.7, 1.30.4 |
+
+Significance: Whether the blind king's last hour belongs to Attica or Boeotia — and whether his tomb at Colonus held a translation of bones from Thebes — splits the Epic-Cycle tradition from Homer's funeral games and from the later Athenian cult topography Pausanias records.
+
+Verification: ✓ verified — Apollodorus' Colonus death confirmed; Homer's underworld woes and Iliadic funeral games confirmed; Pausanias' monument, bone-transfer report, and explicit rejection of the dramatic account confirmed.
 
 ## Who was the father of Antiope?
 
@@ -781,6 +887,69 @@ Verification: ✓ verified — Homer's 'because of the witness of Dionysus' clai
 |---|---|---|
 | Apollodorus | At the sack of Troy, Menelaus slew Deiphobus — Helen's third husband — and led Helen away to the ships. | Epitome 5.22 |
 | Hyginus | Helen herself is counted among the women who killed their husbands, with Deiphobus son of Priam as her victim. | Fabulae 240 |
+
+## Hecuba's prize after Troy
+
+- **topic**: `hecuba-prize`
+- **Characters**: `hecuba`, `odysseus`, `helenus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollodorus | When the spoil was divided after Troy, Odysseus received Hecuba as his special award. | Epitome 5.23 |
+| Apollodorus (variant) | Some say Helenus received Hecuba instead, crossed with her to the Chersonese, and that there she turned into a bitch with fiery eyes — the place called Cynosema, the Dog's Tomb. | Epitome 5.23 |
+
+## Cassandra's prophecy curse
+
+- **topic**: `cassandra-apollo-curse`
+- **Characters**: `cassandra`, `apollo`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollodorus | Apollo promised to teach her prophecy if she would grant his favours; she learned the art and refused him, so he deprived her prophecies of the power to persuade. | Bibliotheca 3.12.5 |
+| Hyginus | She fell asleep in Apollo's temple; when the god tried to embrace her she refused, and he made her true prophecies unbelievable. | Fabulae 93 |
+
+## Daphne's transformation
+
+- **topic**: `daphne-transformation-agent`
+- **Characters**: `daphne-nymph`, `apollo`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Daphne prayed to her father Peneus and Earth to destroy or change the beauty that harmed her; before the prayer ended her own body became bark, leaves, branches, and roots — the laurel tree — while Phoebus crowned himself with her foliage. | Metamorphoses 1.688–748 |
+| Hyginus | When Apollo pursued Daphne daughter of the river Peneus, she begged Earth for protection; Earth received her and changed her into a laurel tree, and Apollo broke a branch and placed it on his head. | Fabulae 203 |
+
+Significance: the laurel is common to both tellings, but the agent of change differs — in Ovid the nymph's prayer transforms her own limbs, while Hyginus makes Earth the receiver and shaper of the tree.
+
+Verification: ✓ verified — Metamorphoses 1.688–748 and Hyginus Fabulae 203 confirmed against the pinned corpus (ToposText).
+
+## Idmon's parentage
+
+- **topic**: `idmon-parentage`
+- **Characters**: `idmon`, `apollo`, `cyrene-nymph`, `abas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollonius | He was not in truth the son of Abas, but Leto's son Apollo begat him to be numbered among the illustrious Aeolids; Apollo himself taught him augury. | Argonautica 1.139 |
+| Hyginus | Idmon, son of Apollo and the nymph Cyrene; some say of Abas, an Argive. | Fabulae 14 |
+
+Significance: the Argonaut seer's paternal line forks between a divine begetting by Apollo — with Cyrene as mother in Hyginus' fuller roll — and a wholly mortal Argive father in the variant Hyginus records but Apollonius rejects.
+
+Verification: ✓ verified — Argonautica 1.139 and Fabulae 14 confirmed against the pinned corpus.
+
+## Sterope and Oenomaus — wife or mother?
+
+- **topic**: `oenomaus-sterope-relation`
+- **Characters**: `oenomaus`, `sterope-pleiad`, `ares`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Sterope, a Pleiad, was married to Oenomaus. | Bibliotheca 3.10.1 |
+| Pausanias | On the pediment at Olympia, Oenomaus stands with Sterope his wife, one of the daughters of Atlas. | Description of Greece 6.21.7 |
+| Hyginus | Oenomaus was the son of Mars and Asterope, daughter of Atlas. | Fabulae 84 |
+
+Significance: the same Pleiad name binds Oenomaus either as husband or as son — Asterope and Sterope are the same figure under variant spellings, so the chariot-king's tie to the Atlantid line forks between marriage and parentage.
+
+Verification: ✓ verified — Bibliotheca 3.10.1, Description of Greece 6.21.7, and Fabulae 84 confirmed against the pinned corpus.
 
 ## Troilus' paternity
 
@@ -1011,6 +1180,94 @@ Significance: the founder-hero of Athens is the son of a mortal king, of the sea
 
 Verification: ✓ verified — Iliad 1.265 (son of Aegeus); Bibliotheca 3.15.7 and Hyginus 37 (the same-night reconciliation); Pausanias 2.33.1 (Poseidon at Sphaeria).
 
+## The father of Odysseus
+
+- **topic**: `odysseus-paternity`
+- **Characters**: `odysseus`, `laertes`, `sisyphus`, `anticleia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Odysseus is the son of Laertes; in the underworld Anticleia names Laertes' kindness and her grief for her son. | Iliad 3.201–204; Odyssey 11.85–96, 11.187–196 |
+| Pseudo-Apollodorus | Ulysses sailed to Troy as son of Laertes and Anticlia. | Epitome 3.10 |
+| Hyginus | Sisyphus seduced Anticleia while she delayed at his court; some writers accordingly call Odysseus Sisyphean for his shrewdness. | Fabulae 201 |
+
+Significance: the man of many devices is either the legitimate son of Laertes or the fruit of Sisyphus' cunning — a paternity dispute that explains the epithet some authors applied to his wit.
+
+Verification: ✓ verified — Odyssey 11.85–96 (Anticleia, daughter of Autolycus, wife of Laertes); Epitome 3.10 (Laertes and Anticlia); Fabulae 201 (Sisyphus and Anticleia).
+
+## The mother of Philammon
+
+- **topic**: `philammon-mother`
+- **Characters**: `philammon`, `chione-daedalion`, `apollo`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Chione, daughter of Daedalion, lay with Apollo and Mercury on the same night; to Phoebus she bore Philammon, famous for song and lyre, twin to Autolycus. | Metamorphoses 11.301–317 |
+| Hyginus | Apollo and Mercury slept the same night with Chione (or Philonis), daughter of Daedalion; by Apollo she bore Philammon, by Mercury Autolycus. | Fabulae 200 |
+| Hyginus | Apollo begat Philammon on Leuconoe, daughter of Lucifer (Hesperos). | Fabulae 161 |
+
+Significance: the singer who founded the Lernaean mysteries is either the son of Chione in the famous twin-birth tale that links him to Autolycus and Odysseus' line, or the child of a different woman in Lucifer's house.
+
+Verification: ✓ verified — Metamorphoses 11.301–317 (Chione and twins); Fabulae 200 (Chione/Philonis and twins); Fabulae 161 (Leuconoe daughter of Lucifer).
+
+## Penelope and Antinous
+
+- **topic**: `penelope-antinous-affair`
+- **Characters**: `penelope`, `antinous`, `odysseus`, `icarius`, `hermes`, `pan`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Penelope keeps faith for twenty years, beguiling the suitors with her weaving until Odysseus returns; Agamemnon's shade praises her prudent heart. | Odyssey 2.93–110; 11.444–446; 23.171–204 |
+| Pseudo-Apollodorus | Some say Penelope was seduced by Antinous and sent away by Odysseus to her father Icarius; in Mantinea she is said to have borne Pan to Hermes. | Epitome 7.38 |
+| Pausanias | The Mantineans say Odysseus cast Penelope out for paramours; she went first to Lacedaemon, then to Mantinea, where she died. | Description of Greece 8.12.6 |
+
+Significance: the queen of Ithaca is either the unmatched type of marital fidelity in Greek epic or a figure later slandered with an affair that Homer's poem refuses to tell.
+
+Verification: ✓ verified — Odyssey 2.93–110, 11.444–446 (faithful Penelope); Epitome 7.38 (seduced by Antinous, sent to Icarius, Pan by Hermes at Mantinea); Description of Greece 8.12.6 (Mantinean exile tradition).
+
+## Penelope and Amphinomus
+
+- **topic**: `penelope-amphinomus-affair`
+- **Characters**: `penelope`, `amphinomus-dulichium`, `odysseus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Penelope keeps faith; Amphinomus alone among the suitors wins her favour with his good manners, and Odysseus slays him at the bow-feast — not his wife. | Odyssey 16.395–430; 18.125–165; 22.89–103; 23.171–204 |
+| Pseudo-Apollodorus | Others say Penelope was seduced by Amphinomus and met her end at Odysseus' own hands on that account. | Epitome 7.39 |
+
+Significance: the prudent Dulichian suitor whom Homer marks for death while Penelope survives becomes, in another ending, the alleged lover whose betrayal costs the queen her life at her husband's hand — a slander even harsher than the Antinous exile tradition.
+
+Verification: ✓ verified — Odyssey 16–18, 22–23 (faithful Penelope, Amphinomus slain) against Epitome 7.39 confirmed against the pinned corpus (Perseus).
+
+## How did Odysseus die?
+
+- **topic**: `odysseus-death`
+- **Characters**: `odysseus`, `telegonus-circe`, `circe`, `penelope`, `neoptolemus`, `thoas-aetolia`, `leontophonus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Odysseus is reunited with Penelope, reconciled with Laertes, and survives the feud of the suitors' kin when Athena stays the slaughter. | Odyssey 23.171–204; 24.330–360 |
+| Pseudo-Apollodorus | Telegonus, son of Odysseus and Circe, unknowingly kills his father with a sting-ray barb when he comes to Ithaca; Penelope is taken to Circe and married to Telegonus. | Epitome 7.16, 7.36–7.37 |
+| Pseudo-Apollodorus | Some say the kinsfolk of the slain suitors accuse Odysseus; Neoptolemus, hoping to gain Cephallenia, condemns him to exile; Odysseus marries the daughter of Thoas in Aetolia, leaves Leontophonus, and dies in old age. | Epitome 7.40 |
+
+Significance: the man of many wiles either dies in his bed on Ithaca after Athena's peace, is killed by the son he begot on Circe, or ends his days as an exile in Aetolia — three incompatible closures to the same homecoming.
+
+Verification: ✓ verified — Odyssey 23–24 (survival); Epitome 7.36–7.37 (Telegonus); Epitome 7.40 (Neoptolemus' judgment and Aetolian death) confirmed against the pinned corpus (Perseus).
+
+## Odysseus after Ithaca: Thesprotian kingship
+
+- **topic**: `odysseus-thesprotian-kingship`
+- **Characters**: `odysseus`, `penelope`, `callidice-thesprotian`, `polypoetes-thesprotian`, `poliporthes`, `tiresias`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | After reunion with Penelope and Athena's peace with the suitors' kin, Odysseus remains on Ithaca; Telemachus is his only named son by Penelope. | Odyssey 23.171–204; 24.330–360 |
+| Pseudo-Apollodorus | After sacrificing to Hades, Persephone, and Tiresias, Odysseus journeys through Epirus, marries Callidice queen of the Thesprotians, reigns and begets Polypoetes; when Callidice dies he leaves the kingdom to their son and returns to Ithaca, where Penelope has borne Poliporthes in his absence. | Epitome 7.34–7.35 |
+
+Significance: Homer closes with the king at home beside one son; Apollodorus sends him abroad again as a Thesprotian ruler and adds a second son on Ithaca — a post-homecoming chapter Homer never tells.
+
+Verification: ✓ verified — Odyssey 23–24 against Epitome 7.34–7.35 confirmed against the pinned corpus (Perseus).
+
 ## Whom did Erechtheus slay at Eleusis?
 
 - **topic**: `who-erechtheus-slew`
@@ -1053,6 +1310,21 @@ Verification: ✓ verified — Bibliotheca 3.15.5 (Poseidon destroys him), Fabul
 Significance: the eponym of the Ionians is the lawful son of the Hellene Xuthus in the systematic genealogy, but an Attic cult-tradition makes him secretly Apollo's — turning Athens itself, not Thessaly, into the cradle of the Ionian race.
 
 Verification: ✓ verified — Bibliotheca 1.7.3 (Xuthus the father) and Pausanias 1.28.4 (Apollo met Creusa in the cave below the Acropolis); the explicit Apollo-paternity is Euripides' Ion, out of the seven-source set, so it is carried only as the Pausanias-reported cult tradition.
+
+## The eponym of the Achaeans
+
+- **topic**: `achaean-eponym`
+- **Characters**: `achaea`, `achaeus`, `xuthus`, `creusa-athens`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The genealogical roll at the close of the Theogony (Tier-B roster, Th. 1000) names **Achaea** among Zeus' offspring in the ethnic eponym series — a feminine figure paired with Hellen and Dorus at Th. 1002. | Theogony 1000 (roster line; English corpus ends at Medea/Medeus in Evelyn-White) |
+| Pseudo-Apollodorus | The Achaeans take their name from **Achaeus**, son of Xuthus and Creusa daughter of Erechtheus — not from a daughter of Zeus. | Bibliotheca 1.7.3 |
+| Pausanias | Gives Achaeus a historical career: return to Phthiotis, sons in Argos, and the naming of Peloponnesian peoples before the Dorian return. | Description of Greece 7.1.2–7.1.7 |
+
+Significance: the Hesiodic roll preserves a feminine ethnic eponym in Zeus' catalogue, while the genealogists who map the post-flood division of Hellas make the name flow through the male hero Achaeus and the Athenian marriage of Xuthus — two incompatible founders for the same ethnonym.
+
+Verification: ✓ verified — Bibliotheca 1.7.3 and Pausanias 7.1.2–7.1.7 (Achaeus line); Theogony 1000 Achaea entry follows project roster indexing (Hesiodic ethnic roll); no Pleiad mother for Achaea is named in the seven-source set.
 
 ## How many generations from Lelex to the eponyms?
 
@@ -1124,6 +1396,34 @@ Verification: ✓ verified — Bibliotheca 3.10.3 (Amyclas) against Fabulae 271 
 Significance: the most beautiful woman in the world is the daughter of a Spartan queen or of the goddess of retribution herself — and at Rhamnous Nemesis was worshipped as Helen's mother.
 
 Verification: ✓ verified — Bibliotheca 3.10.7 (Leda) and Apollodorus' own "some say Nemesis" against Description of Greece 1.33.7 and Astronomica 2.8 (the egg).
+
+## Was the Helen of Troy real?
+
+- **topic**: `helen-phantom-egypt`
+- **Characters**: `helen`, `menelaus`, `proteus`, `paris`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Helen sailed from Troy with Menelaus and received Telemachus with him in Sparta — the queen at the feast is the same woman whose abduction began the war. | Odyssey 4.1–356 |
+| Pseudo-Apollodorus | According to some, Menelaus had only a phantom of Helen made of clouds until he discovered the real queen at the court of Proteus in Egypt. | Epitome 6.29 |
+
+Significance: the Returns shelf must hold two incompatible Helens — the wife who feasts in Lacedaemon in Homer's Odyssey and the cloud likeness some mythographers place at Troy while the true queen waits in Egypt.
+
+Verification: ✓ verified — Odyssey 4.1–356 (Helen at the Spartan feast) against Epitome 6.29 ("phantom of her made of clouds" / "discovered Helen at the court of Proteus").
+
+## Who was Mopsus of Colophon?
+
+- **topic**: `mopsus-colophon-parentage`
+- **Characters**: `mopsus-colophon`, `apollo`, `manto`, `rhacius`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Mopsus who defeated Calchas at Colophon is a son of Apollo and Manto. | Epitome 6.3 |
+| Pausanias | Manto crossed to Asia, married Rhacius the Cretan, and bore Mopsus, who drove the Carians from the land. | Description of Greece 7.3.12 |
+
+Significance: the seer who outprophesied Calchas has two parentages — divine paternity through Apollo in the Returns contest, or colonizer lineage through Rhacius and Manto in the foundation tale of the Ionian coast.
+
+Verification: ✓ verified — Epitome 6.3 (Apollo and Manto) against Description of Greece 7.3.12 (Rhacius and Manto).
 
 ## Are the Dioscuri mortal or divine?
 
@@ -1443,6 +1743,20 @@ Significance: the same three monstrous brothers are placed at opposite ends of t
 
 Verification: ✓ verified — Hesiod Theog. 139–153 (Hundred-Handers named after Titans and Cyclopes) and Apollodorus Bibliotheca 1.1.1 (the Hundred-handed begotten first) confirmed against the pinned corpus (Perseus).
 
+## When and why were the Gigantes born?
+
+- **topic**: `gigantes-parentage`
+- **Characters**: `gigantes`, `uranus`, `gaia`, `cronus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | The Giants spring from the bloody drops of the castrated Uranus that fell upon Gaia — in the same gush that bore the Erinyes and the Meliae, at the moment of Cronus' deed against his father. | Theogony 183–186 |
+| Pseudo-Apollodorus | Gaia conceived the Giants by Sky (Uranus) and brought them forth in her wrath over the fallen Titans — a second revolt bred to avenge the older defeated race, not born from the castration wound itself. | Bibliotheca 1.6.1 |
+
+Significance: the earthborn army of the Gigantomachy is either coeval with the very first violence of the succession myth — sprung from Uranus' blood alongside the Furies — or a later brood raised specifically to punish Zeus for overthrowing Cronus, shifting the war's motive from primal cosmic crime to dynastic revenge.
+
+Verification: ✓ verified — Hesiod Theog. 183–186 (Giants from Uranus' blood on Earth) and Apollodorus Bibliotheca 1.6.1 (Giants born of Gaia's wrath over the Titans) confirmed against the pinned corpus (Perseus).
+
 ## Whose children are the Erinyes (Furies)?
 
 - **topic**: `erinyes-parentage`
@@ -1530,6 +1844,50 @@ Significance: the Thracian ally cut down with his white horses on the night raid
 
 Verification: ✓ verified — Bibliotheca 1.3.4 carries both the Euterpe parentage and the "some say Calliope" variant in the same sentence; Homer Iliad 10 names Rhesus son of Eïoneus, confirmed against the pinned corpus (Perseus).
 
+## Schedius' father — Iphitus or Perimedes?
+
+- **topic**: `schedius-parentage`
+- **Characters**: `schedius-phocis`, `hector`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | In the Catalogue of Ships, Schedius is captain of the Phocians alongside Epistrophus, son of great-souled Iphitus son of Naubolus. | Iliad 2.515–545 |
+| Homer | When Hector smites Schedius beneath the collar-bone, he is the son of Iphitus, far the best of the Phocians, king over many men at Panopeus. | Iliad 17.275–315 |
+| Homer | In the scattered fight at the ships, Hector slew Schedius son of Perimedes, a leader of the Phocians. | Iliad 15.515–555 |
+
+Significance: Homer names the same Phocian captain twice with different fathers — Iphitus in the muster-roll and Book 17, Perimedes in Book 15 — so the genealogical line behind one Catalog of Ships entry cannot be stated without a dispute badge.
+
+Verification: ✓ verified — all three Iliad passages confirmed against the pinned corpus (Perseus); the contradiction is internal to Homer, not an inter-author clash.
+
+## Hippothous' father — Lethus or Pelasgus?
+
+- **topic**: `hippothous-pelasgian-parentage`
+- **Characters**: `hippothous-pelasgian`, `lethus-pelasgian`, `pelasgus-larissa`, `teutamus-pelasgian`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Hippothous and Pylaeus lead the Pelasgi from deep-soiled Larisa as sons twain of Pelasgian Lethus, son of Teutamus. | Iliad 2.820–855 |
+| Homer | When Hippothous drags Patroclus by the foot, he is the glorious son of Pelasgian Lethus. | Iliad 17.275–315 |
+| Pseudo-Apollodorus | Among the allies who joined the Trojans, Hippothous is son of Pelasgus from Larissa. | Epitome 3.35 |
+
+Significance: the Pelasgian captain at Troy has a full three-generation stemma in Homer (Teutamus → Lethus → Hippothous) but a single named father in Apollodorus' ally catalogue — the atlas wires both parent edges under one topic rather than choosing one genealogy.
+
+Verification: ✓ verified — Iliad 2.820–855, 17.275–315 and Epitome 3.35 confirmed against the pinned corpus (Perseus).
+
+## The death of Thersites
+
+- **topic**: `thersites-death`
+- **Characters**: `thersites`, `achilles`, `penthesilea`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Thersites survives the Iliad — last seen rebuked and beaten at assembly after railing at Agamemnon; the poem ends with Hector's funeral and no further mention of his death. | Iliad 2.211–277 |
+| Pseudo-Apollodorus | After Achilles killed Penthesilea, Thersites mocked the hero's grief for the Amazon; Achilles slew him for it. | Epitome 5.1 |
+
+Significance: the reviling common soldier whom Homer leaves alive at Troy's end is, in the Epic Cycle aftermath preserved by Apollodorus, killed by Achilles for jeering at his mourning — an Aethiopis episode outside the Iliad itself.
+
+Verification: ✓ verified — Iliad 2.211–277 (Thersites beaten, no death) against Epitome 5.1 (Achilles slays Thersites after Penthesilea) confirmed against the pinned corpus (Perseus).
+
 ## Which Muse mothered the Sirens?
 
 - **topic**: `sirens-mother`
@@ -1560,6 +1918,20 @@ Verification: ✓ verified — Apollodorus Bibliotheca 1.3.4 and Epitome 7.18 (A
 Significance: the mythographic and Argonautic tradition makes the archetypal singer the child of the foremost Muse — a fitting divine pedigree for his irresistible song — but Pausanias singles this very descent out as a popular falsehood, demoting Orpheus' mother from the goddess Calliope to a mortal daughter of Pierus and stripping away the marvels (charmed beasts, the descent to Hades) that the Muse-parentage was held to explain.
 
 Verification: ✓ verified — Apollodorus Bibliotheca 1.3.2, Apollonius Argonautica 1.23, and Hyginus Fabulae 14 (Calliope as mother) and Pausanias Description of Greece 9.30.4 (the rejection) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## When may Orpheus look back at Eurydice?
+
+- **topic**: `eurydice-return-condition`
+- **Characters**: `orpheus`, `eurydice-orpheus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Pluto promised Eurydice would follow if Orpheus did not turn until he reached his own house; he disobeyed, beheld his wife, and she turned back. | Bibliotheca 1.3.2 |
+| Ovid | Eurydice followed up the steep dark path; fearing to lose her at the threshold of earth, Orpheus looked back — and instantly she slipped away. | Metamorphoses 10.77–95 |
+
+Significance: both sources agree that a single backward glance destroys the bargain — but Apollodorus sets the safe limit at Orpheus' own house, while Ovid places the fatal test at the threshold of the upper world, so the distance Eurydice must travel in silence and the exact moment of failure differ between the mythographer's spare account and Ovid's psychologically charged scene.
+
+Verification: ✓ verified — Apollodorus Bibliotheca 1.3.2 and Ovid Metamorphoses 10.77–95 confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
 
 ## Whose children are the Muses?
 
@@ -1619,3 +1991,222 @@ Verification: ✓ verified — Hesiod Theogony 404–452 (parentage and the bene
 Significance: Hesiod's canonical triad of moral-civic Horae — Order, Justice and Peace — is set against the larger, partly seasonal-agricultural catalogue preserved by Hyginus, so that the number and even the membership of the Seasons varies by author; the three Hesiodic sisters (Eunomia, Dike, Eirene) recur in Hyginus's list but are folded into a wider company of Hours.
 
 Verification: ✓ verified — Hesiod Theogony 901–906 (the three Horae Eunomia, Dike, Eirene) and Hyginus Fabulae 183 (the nine-name catalogue including the same three) confirmed against the pinned corpus (Perseus) and the project's pre-verified canonical facts.
+
+## How did Palamedes die?
+
+- **topic**: `palamedes-death-manner`
+- **Characters**: `palamedes`, `odysseus`, `diomedes`, `agamemnon`, `nauplius-amymone`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The allies stoned Palamedes in the Greek camp at Troy on a forged charge of treason; Agamemnon was Odysseus' accomplice in the murder. | Epitome 3.8, 6.8 |
+| Hyginus | Odysseus forged a letter and buried gold in Palamedes' tent; the allies stoned him as a traitor. | Fabulae 105 |
+| Pausanias (Cypria) | Palamedes was drowned when he put out to catch fish; Diomedes and Odysseus were his murderers. | Description of Greece 10.31.2 |
+
+Significance: the Epic Cycle and Returns agree that Odysseus hated the counsellor who exposed his feigned madness, but Apollodorus and Hyginus send him to death by stoning in camp while Pausanias, citing the lost *Cypria*, knows drowning on a fishing expedition — the injustice Nauplius avenges on the fleet is the same, the manner of death is not.
+
+Verification: ✓ verified — Apollodorus Epitome 3.8, 6.8; Hyginus Fab. 105; Pausanias 10.31.2 confirmed against the pinned corpus (Perseus).
+
+## Nestor's queen: Eurydice or Anaxibia?
+
+- **topic**: `nestor-wife-identity`
+- **Characters**: `nestor`, `eurydice-nestor`, `anaxibia-nestor`, `clymenus-pylos`, `cratieus-pylos`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Nestor's revered wife at the Pylians' sacrifice is Eurydice, eldest daughter of Clymenus; in the same passage Polycaste, youngest daughter of Nestor, bathes Telemachus. | Odyssey 3.450–495 |
+| Hyginus | Thrasymedes is a son of Nestor by Eurydice in the catalogue of Trojan contingents. | Fabulae (Trojan catalogue) |
+| Pseudo-Apollodorus | Nestor married Anaxibia, daughter of Cratieus, and begot Pisidice, Polycaste, Perseus, Stratichus, Aretus, Echephron, Pisistratus, Antilochus, and Thrasymedes. | Bibliotheca 1.9.9 |
+
+Significance: the queen of sandy Pylos — mother in Apollodorus' full stemma of the princes Homer shows at the feast — bears one name in epic (Eurydice daughter of Clymenus) and another in the mythographer's genealogy (Anaxibia daughter of Cratieus). The same royal household, the same children in later reckoning, but a classic wife-name clash; not to be confused with the homonymous Anaxibia who married Pelias (Bibliotheca 1.9.10).
+
+Verification: ✓ verified — Odyssey 3.450–495 (Eurydice wife of Nestor, daughter of Clymenus), Hyginus Fabulae Trojan catalogue (Thrasymedes by Eurydice), and Pseudo-Apollodorus Bibliotheca 1.9.9 (Anaxibia, daughter of Cratieus) confirmed against the pinned corpus (Perseus).
+
+## Who begot Nausithous?
+
+- **topic**: `nausithous-parentage`
+- **Characters**: `nausithous-phaeacian`, `poseidon`, `periboea-phaeacian`, `odysseus`, `calypso`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Nausithous, founder of the Phaeacians on Scheria, was born from Poseidon and Periboea daughter of Eurymedon; he begat Rhexenor and Alcinous. | Odyssey 6.1–13, 7.40–75 |
+| Hesiod | Calypso was joined to Odysseus in sweet love and bore him Nausithous and Nausinous. | Theogony 995–1015 |
+| Hyginus | Calypso lay with Odysseus and bore two sons, Nausithous and Telegonus. | Fabulae 125 |
+
+Significance: Homer's Phaeacian founder is a divine son of Poseidon, while Hesiod and Hyginus attach the name Nausithous to sons of Odysseus by Calypso — either a homonym or a competing genealogy for the same legendary name.
+
+Verification: ✓ verified — Odyssey 7.40–75 (Poseidon and Periboea), Theogony 995–1015 (Calypso and Odysseus), and Hyginus Fabulae 125 confirmed against the pinned corpus (Perseus).
+
+## The parentage of Theoclymenus
+
+- **topic**: `theoclymenus-parentage`
+- **Characters**: `theoclymenus`, `polypheides`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Theoclymenus is the son of Polypheides, himself a Melampodid seer made prophet by Apollo after Amphiaraus' death; father and son dwell at Hyperesia in the Argive tradition embedded in Telemachus' voyage. | Odyssey 15.225–260 |
+| Hyginus | In the catalogue of augurs, Theoclymenus is son of Proteus (with a garbled aside naming Thestor and Telemus). | Fabulae 128 |
+
+Significance: Telemachus' companion at Pylos and Ithaca is either a named link in Homer's Melampodid prophecy-chain or a figure Hyginus attaches to the Egyptian sea-god Proteus — the same name, two unrelated parentages.
+
+Verification: ✓ verified — Odyssey 15.225–260 (Polypheides and Theoclymenus) and Hyginus Fabulae 128 (son of Proteus) confirmed against the pinned corpus (Perseus).
+
+## The death of Apsyrtus
+
+- **topic**: `apsyrtus-death`
+- **Characters**: `apsyrtus-colchis`, `medea-colchis`, `jason`, `aeetes`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Medea murdered her brother Apsyrtus aboard the fleeing Argo, cut him limb from limb, and threw the pieces into the sea so Aeetes would gather the child's limbs and fall behind in pursuit; Zeus later sent storm and demanded purification for the murder. | Bibliotheca 1.9.23–24 |
+| Apollonius | Apsyrtus is an adult commander who pursues the Argonauts; Medea promises to beguile him to come alone to hear her, Jason lies in ambush on the sacred island of Artemis, and Apsyrtus is slain there — Zeus is wrathful at the ruthless murder and the Argo must be purified by Circe. | Argonautica 4.303, 4.391–481, 4.557 |
+
+Significance: the same fratricide that delays Aeetes' pursuit is told in two incompatible keys — Pherecydes' child-dismemberment at sea, preserved by Apollodorus, against Apollonius' Hellenistic softening into an adult's ambush on land with Jason as the slayer and Medea as the lure.
+
+Verification: ✓ verified — Bibliotheca 1.9.23–24 (brother aboard ship, limb from limb, Tomi) and Apollonius Argonautica 4.391–481, 4.557 (pursuit, beguilement, Artemis island, Jason's ambush, Zeus' wrath) confirmed against the pinned corpus (Perseus).
+
+## The death of Medea's children at Corinth
+
+- **topic**: `medea-children-corinth`
+- **Characters**: `medea-colchis`, `jason`, `mermerus-corinth`, `pheres-corinth`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Some say Medea herself killed the children she had borne Jason when she fled Corinth after sending the poisoned robe to Glauce. | Bibliotheca 1.9.28 |
+| Pseudo-Apollodorus | Another tradition: she left the children still infants as suppliants on the altar of Hera of the Height, and the Corinthians removed them and wounded them to death. | Bibliotheca 1.9.28 |
+| Pausanias | At Corinth the sons Mermerus and Pheres were stoned to death by the Corinthians because of Medea's gifts to Glauce; their tomb stood above the Well of Glauce and the city long offered them cult. | Description of Greece 2.3.6–7 |
+
+Significance: the most famous later version (Euripides' deliberate infanticide) is not in the pinned corpus, but the surviving Greek sources already fork on agency — Medea as killer in one Apollodoran strand, the Corinthians as killers in another, with Pausanias naming the victims and grounding the stoning in local cult.
+
+Verification: ✓ verified — Bibliotheca 1.9.28 (both Apollodoran traditions) and Pausanias Description of Greece 2.3.6–7 (Mermerus, Pheres, stoning, tomb) confirmed against the pinned corpus (Perseus).
+
+## Ixion's cloud-mate and the birth of Centaurus
+
+- **topic**: `ixion-cloud-mother`
+- **Characters**: `centauros`, `ixion`, `nubes-ixion`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Zeus fashioned a cloud in Hera's likeness; Ixion lay with it and the cloud bore Centaurus. | Epitome 1.20 |
+| Hyginus | Ixion's mate is Nubes (the cloud); centaurs such as Nessus are sons of Ixion and Nubes. | Fabulae 34 |
+
+Significance: the progenitor of the wild centaurs is born from a cloud in both traditions, but Apollodorus makes the cloud Zeus' trap in Hera's shape while Hyginus names a distinct cloud-mate Nubes — do not merge with `nephele` the Athamantid cloud.
+
+Verification: ✓ verified — Epitome 1.20 and Hyginus Fabulae 34 confirmed against the pinned corpus.
+
+## Parentage of Nessus
+
+- **topic**: `nessus-parentage`
+- **Characters**: `nessus`, `ixion`, `nubes-ixion`, `centauros`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hyginus | Nessus is a centaur, son of Ixion and Nubes. | Fabulae 34 |
+| Encyclopedic tradition | Nessus is son of Centaurus (progenitor of the centaur stock). | — |
+
+Significance: Hyginus gives direct parentage to Ixion and the cloud; the Centauros-son genealogy is common in later summaries but is not attested in the seven atlas lenses — model Hyginus in data, narrate the other branch in prose on `centauros`.
+
+Verification: ✓ verified — Hyginus Fabulae 34 confirmed against the pinned corpus.
+
+## Parentage of Endeïs
+
+- **topic**: `endeis-parentage`
+- **Characters**: `endeis`, `chiron`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Endeis is daughter of Sciron. | Bibliotheca 3.12.6 |
+| Hyginus | Endeis is daughter of Chiron; Peleus and Telamon are sons of Aeacus and Endeis. | Fabulae 14.2 |
+
+Significance: the Aeacid queen's parentage forks between a Megarian warlord and the just centaur — only the Hyginus edge is wired (`chiron` parent `endeis`); Sciron stays prose until promoted.
+
+Verification: ✓ verified — Bibliotheca 3.12.6 and Fabulae 14.2 confirmed against the pinned corpus.
+
+## Parentage of Peirithous
+
+- **topic**: `peirithous-paternity`
+- **Characters**: `peirithous`, `ixion`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Pirithous is son of Ixion from Larissa. | Bibliotheca 1.8.2 |
+| Hyginus | Peirithous is son of Ixion, brother of Centaurus. | Fabulae 14.2 |
+| Homer | Zeus loved the wife of Ixion, who bore Peirithous; in the Catalogue Polypoetes is son of Peirithous whom immortal Zeus begat. | Iliad 14.317–328, 2.740–741 |
+
+Significance: the Lapith king is Ixionid in the genealogies but divinely begotten in Homer — the same double-paternity pattern as Theseus.
+
+Verification: ✓ verified — Bibliotheca 1.8.2, Fabulae 14.2, Iliad 14.317–328 and 2.740–741 confirmed against the pinned corpus.
+
+## Parentage of Amphitrite
+
+- **topic**: `amphitrite-parentage`
+- **Characters**: `amphitrite`, `doris-oceanid`, `nereus`, `oceanus`, `tethys`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hesiod | Amphitrite is born to Nereus and Doris among the Nereids. | Theogony 240–264 |
+| Pseudo-Apollodorus | Amphitrite is among the Nereids born to Nereus and Doris. | Bibliotheca 1.2.7 |
+| Pseudo-Apollodorus | Amphitrite is among the Oceanids born to Ocean and Tethys. | Bibliotheca 1.2.2 |
+
+Significance: the sea-queen sits in both genealogies — Nereid daughter of the Old Man of the Sea in Hesiod and the Nereid roll, but an Oceanid in Apollodorus' Titan catalogue. The atlas wires both parent sets under the shared topic rather than flattening her to one line.
+
+Verification: ✓ verified — Theogony 240–264 and Bibliotheca 1.2.2, 1.2.7 confirmed against the pinned corpus.
+
+## Mother of Tyndareus, Hippocoon, and Icarius
+
+- **topic**: `tyndareus-mother`
+- **Characters**: `tyndareus`, `hippocoon`, `icarius`, `batia-naiad`, `gorgophone`, `oebalus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (Stesichorean line) | Gorgophone, daughter of Perseus, bore Tyndareus, Icarius, Aphareus, and Leucippus to Perieres (or, in Pausanias, to Oebalus). | Bibliotheca 1.9.5, 3.10.3; Description of Greece 3.1.4 |
+| Pseudo-Apollodorus (rival line) | Oebalus begat Tyndareus, Hippocoon, and Icarius by the Naiad nymph Batia. | Bibliotheca 3.10.4 |
+
+Significance: the Spartan royal house forks not only on whether Tyndareus is son of Perieres or of Oebalus (`tyndareus-parentage`), but on whether his mother is a Perseid princess or a Laconian Naiad — the same fork that decides Hippocoon and Icarius' maternity.
+
+Verification: ✓ verified — Bibliotheca 3.10.3–3.10.4 confirmed against the pinned corpus.
+
+## Mother of Lycaon
+
+- **topic**: `lycaon-mother`
+- **Characters**: `lycaon`, `pelasgus-arcadia`, `cyllene-oread`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (main line) | Pelasgus begat Lycaon by Meliboea, daughter of Ocean. | Bibliotheca 3.8.1 |
+| Pseudo-Apollodorus (others) | Pelasgus begat Lycaon by a nymph named Cyllene. | Bibliotheca 3.8.1 |
+
+Significance: at the very root of the Arcadian royal house, Lycaon's maternity forks between an Oceanid princess and a mountain nymph of Cyllene — the same peak later famed as Hermes' birthplace and as the Pleiads' birth-mountain.
+
+Verification: ✓ verified — Bibliotheca 3.8.1 confirmed against the pinned corpus.
+
+## Actaeon's offense
+
+- **topic**: `actaeon-offense`
+- **Characters**: `actaeon`, `aristaeus`, `autonoe`, `artemis`, `zeus`, `semele`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (Acusilaus) | Zeus was angry at Actaeon because he wooed Semele. | Bibliotheca 3.4.4 |
+| Pseudo-Apollodorus (others) | Actaeon saw Artemis bathing and was punished for it. | Bibliotheca 3.4.4 |
+| Pseudo-Apollodorus (others) | Actaeon boasted himself the better hunter. | Bibliotheca 3.4.4 |
+| Hyginus | Actaeon saw Diana bathing, desired her, and Diana set horns on his head so his own dogs tore him apart. | Fabulae 180–181 |
+| Ovid | Actaeon wandered into Gargaphie, saw Diana bathing, and was transformed into a stag until his hounds ran him down. | Metamorphoses 3.138–252 |
+
+Significance: Apollodorus preserves three incompatible charges against the hunter grandson of Cadmus without choosing among them — the Semele-wooing strand ties Actaeon's ruin to the Theban house's divine affairs, while Hyginus and Ovid fix the offense on the sacred bath of Artemis alone.
+
+Verification: ✓ verified — Bibliotheca 3.4.4 confirmed against the pinned corpus; Hyginus and Ovid bath-narratives align with `actaeon-artemis`.
+
+## Regional affiliation of Smyrna
+
+- **topic**: `smyrna-regional-affiliation`
+- **Places**: `smyrna`
+
+| Strand | Claim | Citation |
+|---|---|---|
+| Aeolian | Smyrna was one of the twelve Aeolian cities on the coast, on the site later called the old town. | Description of Greece 7.5.1 |
+| Ionian | Ionians from Colophon displaced the Aeolians and later admitted Smyrna to the Ionian assembly at Panionium; elsewhere Pausanias calls the Smyrnaeans an Ionian people. | Description of Greece 7.5.1, 4.21.5 |
+
+Significance: the city's ethnic label forks within the atlas lenses — geographic metadata prefers the Aeolian sub-region (`aeolis`), while Pausanias also records its Ionian membership and Ionian resettlement.
+
+Verification: ✓ verified — Description of Greece 7.5.1 and 4.21.5 confirmed against the pinned corpus.

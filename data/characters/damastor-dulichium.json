@@ -1,0 +1,53 @@
+{
+  "id": "damastor-dulichium",
+  "name": "Damastor",
+  "greekName": "Damastor (Δαμάστωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "father of Agelaus",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "Father of the suitor Agelaus in Homer, and himself named among Penelope's wooers in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — a namesake of Damastor father of Tlepolemus in the Iliad.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer knows him only as the father of Agelaus, who answered Telemachus with seeming fairness when the wooers were rebuked for abusing the stranger — Agelaus son of Damastor urging the hall to cease its shameful conduct, though he still pressed the marriage.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 20.300–340"
+    },
+    {
+      "text": "Apollodorus names Damastor among the suitors who devoured Odysseus' substance, listed after Meneptolemus and before Bias in the long company of Penelope's wooers.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

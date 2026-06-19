@@ -1,0 +1,47 @@
+{
+  "id": "teuthras-mysia",
+  "name": "Teuthras",
+  "greekName": "Teuthras (Τεύθρας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "prince of Teuthrania",
+    "king of Mysia",
+    "foster-father of Telephus"
+  ],
+  "summary": [
+    {
+      "text": "Prince of Teuthrania in Mysia who received Auge from Nauplius, made her his wife, and on his death was succeeded by Telephus, the son she had borne to Heracles.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 2.7.4, 3.9.1; Description of Greece 8.4.9; Fabulae 99"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Aleus exposed Auge's shame, he gave her to Nauplius to sell far away in a foreign land, and Nauplius gave her to Teuthras, prince of Teuthrania, who made her his wife.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.4"
+    },
+    {
+      "text": "The babe Telephus, exposed on Mount Parthenius and suckled by a doe, grew up and came to Delphi; on the god's word he repaired to Mysia, became Teuthras' adopted son, and on Teuthras' death succeeded to the princedom.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.9.1"
+    },
+    {
+      "text": "Pausanias records that the land called Pergamus in his day was named of old Teuthrania, and that the tomb of Auge still stood at Pergamon above the Caicus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.4.5, 8.4.9"
+    },
+    {
+      "text": "Hyginus makes Teuthras a childless king who received the fugitive Auge as an adopted daughter rather than a wife — yet when Telephus came seeking his mother, the king still promised him marriage to the stranger he did not know was his own son.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 99–100"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus", "pausanias", "hyginus"]
+    }
+  ]
+}

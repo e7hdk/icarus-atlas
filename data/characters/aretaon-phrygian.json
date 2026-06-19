@@ -1,0 +1,27 @@
+{
+  "id": "aretaon-phrygian",
+  "name": "Aretaon",
+  "greekName": "Aretaōn (Ἀρηταῶν)",
+  "type": "hero",
+  "domains": ["father of Phorcys and Ascanius", "Phrygian house", "Ascania"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of the Phrygian captains Phorcys (`phorcys-phrygian`) and Ascanius (`ascanius-phrygian`) from far-off Ascania — attested by Apollodorus in the catalogue of Trojan allies, while Homer names the sons but not their sire.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Phorcys and godlike Ascanius at the head of the Phrygians who came from Ascania, eager to fight in the press of battle beside Troy — but the poet does not name their father in the muster.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "text": "Apollodorus, listing the allies who joined the Trojans, makes Phorcys and Ascanius sons of Aretaon among the Phrygian captains — a parentage that stands beside Homer's later naming of Phorcys as son of Phaenops in the fight over Patroclus (`phorcys-phrygian-parentage`).",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.35"
+    }
+  ]
+}

@@ -13,7 +13,7 @@
   ],
   "summary": [
     {
-      "text": "Aristaeus is a rustic culture-god, son of Apollo by the nymph Cyrene, whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'; reared in Cheiron's cave, he was taught healing and prophecy by the Muses and made keeper of their flocks.",
+      "text": "A rustic culture-god, son of Apollo by the nymph Cyrene (`cyrene-nymph`), whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'; reared in Cheiron's cave, he was taught healing and prophecy by the Muses and made keeper of their flocks.",
       "sources": [
         "apollonius"
       ],
@@ -30,7 +30,7 @@
   ],
   "story": [
     {
-      "text": "Apollo carried Cyrene off far from Haemonia and set her among the nymphs of Libya by the Myrtosian height, where she bore him Aristaeus, whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'. The god brought his son while still an infant to be nurtured in the cave of Cheiron, and when he grew to manhood the Muses gave him a bride, taught him the arts of healing and of prophecy, and made him the keeper of their sheep.",
+      "text": "Apollo carried Cyrene (`cyrene-nymph`) off far from Haemonia and set her among the nymphs of Libya by the Myrtosian height, where she bore him Aristaeus, whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'. The god brought his son while still an infant to be nurtured in the cave of Cheiron, and when he grew to manhood the Muses gave him a bride, taught him the arts of healing and of prophecy, and made him the keeper of their sheep.",
       "sources": [
         "apollonius"
       ],
@@ -44,7 +44,7 @@
       "citation": "Argonautica 4.1128–1132"
     },
     {
-      "text": "Hyginus lists him among the Sons of Apollo, the last entry of the catalogue: 'Aristaeus by Cyrene, daughter of Peneus.'",
+      "text": "Hyginus lists him among the Sons of Apollo, the last entry of the catalogue: 'Aristaeus by Cyrene, daughter of Peneus' — the Libyan nymph now entered as `cyrene-nymph`, distinct from Cyrene consort of Ares in the Thracian labour.",
       "sources": [
         "hyginus"
       ],
@@ -71,6 +71,33 @@
         "pausanias"
       ],
       "citation": "Description of Greece 10.17.3"
+    },
+    {
+      "text": "When Sirius scorched the Minoan isles and no respite came to their inhabitants, the Far-Darter's oracle summoned Aristaeus to ward off the pestilence. At his father Apollo's command he left Phthia and made his home in Ceos, gathered the Parrhasian people who are of the lineage of Lycaon, and built a great altar to Zeus Icmaeus; upon the mountains he offered sacrifice to that star and to Zeus son of Cronus — and from that rite, Apollonius says, the Etesian winds cool the land for forty days, and on Ceos even in later times the priests still perform the same observances.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 2.500–527"
+    },
+    {
+      "text": "Hyginus preserves a Ceian variant: when Icarus' murderers hid among the islanders and Canicula brought plague, Aristaeus son of Apollo and Cyrene asked his father how to free the state. Apollo bade them expiate Icarus' death with many victims and pray Jove for wind when the Dog-star rises — and Aristaeus obtained the Etesian breeze that tempers Canicula's heat.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Astronomica 2.4.6"
+    },
+    {
+      "text": "Pausanias counts Aristaeus among those mortals who in ancient days were changed to gods and still receive honours — alongside Britomartis, Heracles, Amphiaraus, and the Dioscuri.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.2.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ceos",
+      "sources": ["apollonius"]
     }
   ]
 }

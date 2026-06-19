@@ -1,0 +1,32 @@
+{
+  "id": "poliporthes",
+  "name": "Poliporthes",
+  "greekName": "Poliporthes (Πολιπόρθης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Odysseus",
+    "Ithaca"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' Epitome, the son whom Penelope bore to Odysseus on Ithaca while he was absent reigning in Thesprotia — a child Homer never names beside Telemachus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says that when Odysseus, after Callidice's death, handed the Thesprotian kingdom to Polypoetes and returned to Ithaca, he found Poliporthes, whom Penelope had borne to him in his absence.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35",
+      "topic": "odysseus-thesprotian-kingship"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

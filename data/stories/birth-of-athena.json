@@ -1,0 +1,72 @@
+{
+  "id": "birth-of-athena",
+  "title": "The Birth of Athena",
+  "greekTitle": "Ἀθήνη",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 0.35,
+  "summary": {
+    "text": "Zeus took Metis, wisest of gods and mortals, to wife first — but when Earth and starry Heaven warned that her child would overthrow him, he swallowed the goddess whole; and when the time came, bright-eyed Athena sprang fully armed from his head, while poets disagree whether Prometheus or Hephaestus split the skull with the axe.",
+    "sources": ["hesiod", "apollodorus", "pausanias"],
+    "citation": "Hes. Th. 886-926; Apollod. 1.3.6; Paus. 1.14.6"
+  },
+  "chapters": [
+    {
+      "title": "Metis, first among wives",
+      "text": "When the blessed gods had finished their toil against the Titans and urged far-seeing Zeus to be king, he made Metis his wife first — she who was wisest among gods and mortal men. Apollodorus adds that Metis helped Zeus by giving Cronus a drug to disgorge his swallowed children, the counsel that began the war the nested Titanomachy tells.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 881-890; Apollod. 1.2.1, 1.3.6"
+    },
+    {
+      "title": "Earth and Heaven's warning",
+      "text": "But when Metis was about to bring forth the goddess bright-eyed Athena, Zeus craftily deceived her with cunning words and put her in his own belly — as Earth and starry Heaven advised. Apollodorus says Earth warned that after the maiden in her womb, Metis would bear a son who should be lord of heaven; from fear of that Zeus swallowed her whole.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 886-900; Apollod. 1.3.6"
+    },
+    {
+      "title": "Swallowed counsel",
+      "text": "Metis turned into many shapes to avoid his embraces, but when she was with child Zeus took time by the forelock. He seized her with his hands and put her in his belly — not only to prevent the son who might overthrow him, but so that Metis herself, the very power of counsel, should advise him from within. There the goddess received the strength whereby she excelled all the deathless ones who dwell in Olympus.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 924-929; Apollod. 1.3.6"
+    },
+    {
+      "title": "The axe at the crown",
+      "text": "When the time came for the birth, Prometheus — or, as others say, Hephaestus — smote the head of Zeus with an axe, and from his crown leapt bright-eyed Athena, arrayed in armour, crying aloud with a mighty shout. The Theogony does not name the craftsman; Apollodorus preserves both traditions, and the dispute lives in who split the king of gods to free his daughter.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Apollod. 1.3.6; Hes. Th. 924-926",
+      "topic": "athena-parentage"
+    },
+    {
+      "title": "The host-scaring goddess",
+      "text": "Hesiod knows no axe-blow — Zeus himself gave birth from his head to Tritogeneia, the bright-eyed maiden who made the host-scaring weapon of war. She took her place among the Olympians as goddess of counsel and battle, patron of craftsmen and cities, and would later stand beside the Achaeans at Troy under the name the poets love best: the daughter of Zeus the aegis-holder.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 924-929"
+    },
+    {
+      "title": "The Libyan tradition",
+      "text": "Pausanias records a startling foreign claim: the Libyans say Athena is daughter of Poseidon and Lake Tritonis, which is why her eyes are grey like the sea-god's — the very divinity she would defeat in the contest for Athens. The mainstream genealogies make her Zeus's head-born child; the Libyan story preserves an alternate birth at the waters of Triton.",
+      "sources": ["pausanias", "hesiod", "apollodorus"],
+      "citation": "Paus. 1.14.6; Hes. Th. 924-926; Apollod. 1.3.6",
+      "topic": "athena-parentage"
+    }
+  ],
+  "cast": [
+    { "id": "athena", "name": "Athena", "role": "Bright-eyed goddess born from Zeus's head" },
+    { "id": "zeus", "name": "Zeus", "role": "King who swallowed Metis and bore his daughter" },
+    { "id": "metis", "name": "Metis", "role": "Wisest goddess swallowed whole" },
+    { "id": "gaia", "name": "Gaia", "role": "Earth who warned Zeus to swallow Metis" },
+    { "id": "uranus", "name": "Uranus", "role": "Starry Heaven who counselled with Earth" },
+    { "id": "prometheus", "name": "Prometheus", "role": "He who smote the head in one account" },
+    { "id": "hephaestus", "name": "Hephaestus", "role": "He who smote the head in another account" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Father in the Libyan tradition Pausanias records" }
+  ],
+  "places": [
+    { "name": "Olympus", "role": "Where Zeus bore Athena among the immortals" },
+    { "name": "Lake Tritonis", "role": "Birthplace in the Libyan tradition" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "886-926" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.2.1, 1.3.6" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.14.6" }
+  ]
+}

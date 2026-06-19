@@ -1,0 +1,34 @@
+{
+  "id": "pyracmos-centaur",
+  "name": "Pyracmos",
+  "greekName": "Pyrakmos (Πύρακμος)",
+  "romanName": "Pyracmos",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war",
+    "the axe"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The centaur who fought with an axe among the five Caeneus killed at Peirithous' wedding.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid's Nestor names Pyracmos with his axe as the fifth of the centaurs Caeneus put to death — the only one of the five singled out by his weapon before Latreus mocked the Lapith and the whole brood buried him under pines.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

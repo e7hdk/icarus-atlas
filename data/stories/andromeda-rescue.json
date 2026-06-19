@@ -1,0 +1,57 @@
+{
+  "id": "andromeda-rescue",
+  "title": "Andromeda and the Sea-Beast",
+  "greekTitle": "Ἀνδρομέδα καὶ κῆτος",
+  "kind": "episode",
+  "parent": "perseus-cycle",
+  "era": 5.82,
+  "summary": {
+    "text": "Flying home with Medusa's head, Perseus saw Andromeda chained to a rock in Ethiopia — exposed because her mother Cassiopeia had boasted against the Nereids — and turned the sea-monster Cetus to stone before he claimed the princess and wed her with her father's blessing.",
+    "sources": ["apollodorus", "ovid", "hyginus"],
+    "citation": "Apollod. 2.4.3; Ov. Met. 4.668–5.249; Hyg. Fab. 64"
+  },
+  "chapters": [
+    {
+      "title": "Cassiopeia's boast",
+      "text": "Cepheus and Cassiopeia ruled Ethiopia — or the coast where the poets placed the tale — when the queen declared herself fairer than the Nereids. Poseidon sent a flood and a sea-monster; Ammon declared that only the exposure of their daughter Andromeda would appease the god. The maiden was chained naked to a rock by the shore, prey for Cetus while her parents watched from the heights.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 2.4.3; Ov. Met. 4.668–5.18; Hyg. Fab. 64"
+    },
+    {
+      "title": "The rescue",
+      "text": "Perseus, flying over the coast on his return from the Gorgons, saw Andromeda and fell in love. He promised Cepheus he would destroy the monster if he might have the princess; the king agreed. When Cetus rose from the sea, Perseus soared above it and showed the Gorgon's face — the beast turned to stone mid-leap, and the rock still bore the shape of the petrified monster in later ages.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.4.3; Ov. Met. 5.1–249"
+    },
+    {
+      "title": "The wedding and Phineus",
+      "text": "At the wedding feast Phineus, who had been betrothed to Andromeda, attacked with armed men. Perseus turned them to stone with the Gorgon's head — the last great use of the trophy before he laid it under the earth. He took Andromeda to Seriphos and then to Argos, and from their union came Perses, who stayed in Ethiopia, and the sons who would carry the Perseid line into the age of Heracles.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 2.4.3–4; Ov. Met. 5.1–249; Hyg. Fab. 64"
+    },
+    {
+      "title": "The stars",
+      "text": "The poets set the rescued princess among the constellations beside her mother and the sea-monster — Cassiopeia in the chair that never dips below the horizon, Cetus in the southern sky, Andromeda chained between them. Perseus himself holds the Gorgon's head in the star-map, the hero who turned death to stone fixed forever above Ethiopia.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.4.3; Hyg. Fab. 64"
+    }
+  ],
+  "cast": [
+    { "id": "perseus", "name": "Perseus", "role": "The rescuer who petrified the monster" },
+    { "id": "andromeda", "name": "Andromeda", "role": "The princess chained to the rock" },
+    { "id": "cetus", "name": "Cetus", "role": "The sea-beast turned to stone" },
+    { "id": "poseidon", "name": "Poseidon", "role": "He who sent the flood and monster" },
+    { "name": "Cepheus", "role": "King of Ethiopia, Andromeda's father" },
+    { "name": "Cassiopeia", "role": "Queen whose boast doomed her daughter" },
+    { "name": "Phineus", "role": "The rejected suitor turned to stone" }
+  ],
+  "places": [
+    { "name": "Ethiopia", "role": "Coast where Andromeda was exposed" },
+    { "id": "seriphos", "name": "Seriphos", "role": "Where Perseus returned before Argos" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.4.3–4" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "4.668–5.249" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "64" }
+  ]
+}

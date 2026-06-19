@@ -1,0 +1,36 @@
+{
+  "id": "eurydamas-ithaca",
+  "name": "Eurydamas",
+  "greekName": "Εὐρύδαμος",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "wooer of Ithaca"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors on Ithaca, who received jewelled earrings from his squires during the wooers' gift-giving and was slain by Odysseus when the hall ran with blood.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.290–335, 22.255–290"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the suitors brought gifts to win Penelope, Eurydamas' squires brought him a pair of earrings with three clustering drops — bright among the gold and amber the wooers laid before the queen.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.290–335"
+    },
+    {
+      "text": "In the slaughter of the suitors Odysseus smote Eurydamas among the throng as spears flew and the faithful servants locked the doors — one of the many wooers who had devoured the king's house.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.255–290"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

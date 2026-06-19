@@ -1,0 +1,31 @@
+{
+  "id": "phylas-thesprotia",
+  "name": "Phylas",
+  "greekName": "Phylas (Φύλας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Ephyra",
+    "Thesprotia"
+  ],
+  "summary": [
+    {
+      "text": "King of Ephyra in Thesprotia when Heracles marched with the Calydonians against the Thesprotians, took the city, and lay with Phylas' daughter Astyoche — begetting Tlepolemus.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 2.7.6; Iliad 2.657–660"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells that when Heracles campaigned with the Calydonians against the Thesprotians and captured Ephyra, Phylas was king there; the hero lay with the king's daughter Astyoche and became the father of Tlepolemus. Homer names the same begetting when he makes Tlepolemus a son of Heracles whom the hero led out of Ephyre by the river Selleis after sacking many cities.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 2.7.6, 2.7.8; Iliad 2.657–660"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cichyrus",
+      "sources": ["apollodorus", "homer"]
+    }
+  ]
+}

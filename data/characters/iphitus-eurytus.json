@@ -1,0 +1,42 @@
+{
+  "id": "iphitus-eurytus",
+  "name": "Iphitus",
+  "greekName": "Iphitos (Ἴφιτος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Eurytus",
+    "archer of Oechalia",
+    "giver of Odysseus' bow"
+  ],
+  "summary": [
+    {
+      "text": "Son of Eurytus the ruthless of Oechalia — a man like unto the immortals who met Odysseus in Messene and gave him the great bow with which the returned king would later slay Penelope's suitors.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 21.15–35; Epitome 7.33"
+    },
+    {
+      "text": "Distinct from Iphitus son of Naubolus, captain of the Phocians at Troy in the catalogue of ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer tells how Odysseus received the bow that would decide the suitors' fate: a friend had given it when they met in Lacedaemon — Iphitus, son of Eurytus. The two had encountered one another in Messene in the house of wise Ortilochus, when Odysseus came to collect a debt the Messenians owed him for three hundred sheep lifted from Ithaca. Iphitus gave Odysseus a sword and the bow; Odysseus gave him a sharp spear and a cauldron. They were never to meet again, for before Odysseus could return to Ithaca, Iphitus was dead — yet the bow remained in the hero's hall until Penelope brought it out for the contest.",
+      "sources": ["homer"],
+      "citation": "Odyssey 21.15–35"
+    },
+    {
+      "text": "Apollodorus names Iphitus among the sons of Eurytus who urged that Iole be given to Heracles when the hero won the archery contest — and later, when cattle were stolen from Euboea, Iphitus alone did not believe Heracles guilty. He went to the hero at Pherae and was entertained as a guest; but Heracles went mad again and hurled him from the walls of Tiryns to his death. The Epitome recalls the same bow when Penelope set it before the suitors: Odysseus had once received it from Iphitus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.6.1–2; Epitome 7.33"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pherae",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

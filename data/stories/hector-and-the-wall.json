@@ -1,0 +1,57 @@
+{
+  "id": "hector-and-the-wall",
+  "title": "Hector and the Wall",
+  "greekTitle": "Ἕκτωρ καὶ τὸ τεῖχος",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.07,
+  "summary": {
+    "text": "Hector and Ajax fought in single combat until nightfall and exchanged gifts, the armies buried their dead under truce — and on the next day Zeus turned the war against the Achaeans until the Trojans camped among the ships and the host built a wall with a trench before their camp.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 7–8"
+  },
+  "chapters": [
+    {
+      "title": "Hector's challenge",
+      "text": "When the battle stalled, Hector stepped forth and challenged the best of the Achaeans to single combat — the victor's side to take the day. Nine captains drew lots; the lot fell to Telamonian Ajax, bulwark of the host. The two heroes fought with spears and stones until heralds stopped them for night — equals in valour, though Hector had the edge in casting. They parted with gifts: Ajax gave a sword with silver studs, Hector a war-belt — guest-friendship between enemies for a single evening.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 7.1–312"
+    },
+    {
+      "title": "Burial under truce",
+      "text": "Hector proposed a truce to burn the dead; the Achaeans agreed, and for one day Trojans and Danaans gathered their slain without battle. The Trojans burned their dead on the plain and raised a cairn; the Achaeans burned theirs and raised a barrow on the shore. It was the last calm before Zeus fulfilled Thetis' request in earnest — the gods would soon forbid open intervention, but the human cost of the war was already heaped on both sides.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 7.313–482"
+    },
+    {
+      "title": "Zeus turns the tide",
+      "text": "On Olympus Zeus weighed the fates of Troy and Achaea in his golden scales; the Achaean side sank. He forbade gods and goddesses to join the field and drove the Trojans forward behind Hector. Agamemnon's aristeia failed before the storm; Diomedes and Odysseus were wounded; the Achaean line broke toward the ships. Nestor rallied the captains, but the day ended with the Trojans camped on the plain and watch-fires burning like stars along the ridges — Troy's best day while Achilles still sat idle.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 8.1–542"
+    },
+    {
+      "title": "The Achaean wall",
+      "text": "That night the beaten host dug a trench and raised a wall with towers and gates — work they should have done at the war's beginning, Poseidon would later say. They drove stakes into the ditch and piled earth; the wall stood through the rest of the Iliad until Troy fell. The nested episode on the Embassy tells Book 9, when Agamemnon would try to buy Achilles back; here the story ends with the siege works that could not save the ships without the son of Peleus.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 7.433–482; Il. 12.1–35"
+    }
+  ],
+  "cast": [
+    { "id": "hector", "name": "Hector", "role": "Challenger who fought Ajax to a draw" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Bulwark who met Hector in single combat" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host on the losing day" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Captain wounded when the line broke" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Captain wounded in the rout" },
+    { "id": "nestor", "name": "Nestor", "role": "Counsellor who rallied the kings" },
+    { "id": "zeus", "name": "Zeus", "role": "He who weighed the fates against the Achaeans" },
+    { "id": "poseidon", "name": "Poseidon", "role": "God who would resent the wall later" },
+    { "id": "achilles", "name": "Achilles", "role": "Still idle while the host was driven to the ships" },
+    { "id": "helen", "name": "Helen", "role": "She who watched from Troy and named the captains" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Plain, wall, and camp-fires of the Trojans" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "7–8" }
+  ]
+}

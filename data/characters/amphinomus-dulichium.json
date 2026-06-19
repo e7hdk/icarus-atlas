@@ -1,0 +1,73 @@
+{
+  "id": "amphinomus-dulichium",
+  "name": "Amphinomus",
+  "greekName": "Amphinomos (Ἀμφίνομος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "leader from Dulichium",
+    "son of Nisus",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "Glorious son of Nisus, son of Aretias, who led the suitors from Dulichium and pleased Penelope above the other wooers — the one prudent suitor whom Odysseus warned in vain, and whom the returned king slew when he reached for his cup.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 16.395–430; 18.125–165; 22.89–103"
+    },
+    {
+      "text": "Head of the Dulichium contingent in Apollodorus' catalogue of the fifty-seven wooers from that island — listed first in the roll after Epitome 7.26.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the suitors learned that Telemachus had returned, Amphinomus was first to see the ship in the harbour and broke into a merry laugh. He then addressed the assembly with good counsel: they should not murder the prince, for the gods frown on such deeds — though he himself continued to devour Odysseus' house with the rest.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 16.355–430"
+    },
+    {
+      "text": "When the disguised beggar entered the hall, Amphinomus alone greeted him kindly, setting bread before him and pledging him in a cup of gold. Odysseus answered with a warning: go home while there was still time, for Odysseus would return and blood would flow in the halls — but Amphinomus knew in his heart the gods had marked him for death, and he sat on, doomed to perish with the company.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 18.90–165"
+    },
+    {
+      "text": "At the mnesterophonia he was slain by Odysseus with an arrow as he reached for his cup — the only suitor the hero had tried to save with honest speech.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 22.89–103"
+    },
+    {
+      "text": "Apollodorus records a variant ending wholly opposed to Homer's tale: others say that Penelope was seduced by Amphinomus and that Odysseus himself killed her on that account — a slander that transforms the prudent suitor who pleased her into the cause of her death at her husband's hands.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.39",
+      "topic": "penelope-amphinomus-affair"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "homer"
+      ]
+    }
+  ]
+}

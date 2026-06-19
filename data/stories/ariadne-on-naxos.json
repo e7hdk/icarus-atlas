@@ -1,0 +1,71 @@
+{
+  "id": "ariadne-on-naxos",
+  "title": "Ariadne on Naxos",
+  "greekTitle": "Ἀριάδνη ἐν Νάξῳ",
+  "kind": "episode",
+  "parent": "theseus-cycle",
+  "era": 6.78,
+  "summary": {
+    "text": "Theseus left Ariadne asleep on sea-girt Dia — but poets tell her fate apart: Homer has Artemis slay her on Dionysus' testimony, while Hesiod, Apollodorus, Ovid, and Hyginus make Bacchus her rescuer, bridegroom, and the setter of her crown among the stars.",
+    "sources": ["homer", "hesiod", "apollodorus", "ovid", "hyginus"],
+    "citation": "Hom. Od. 11.321–325; Hes. Th. 947–949; Apollod. Epit. 1.9–1.10; Ov. Met. 8.174–182; Hyg. Fab. 43, Astr. 2.5.1",
+    "topic": "ariadne-fate"
+  },
+  "chapters": [
+    {
+      "title": "Abandoned on Dia",
+      "text": "After killing the Minotaur and fleeing Crete, Theseus came by night with Ariadne to Naxos — Homer's sea-girt Dia. Ovid tells how Bacchus found the forlorn princess weeping where the Athenian had left her asleep, ashamed to bring Minos' daughter home to Athens. Apollodorus says Dionysus fell in love and carried her off; Hyginus has Liber take her from Dia when Theseus, detained by storm, abandoned her rather than face reproach.",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Hom. Od. 11.321–325; Apollod. Epit. 1.9; Ov. Met. 8.174–176; Hyg. Fab. 43"
+    },
+    {
+      "title": "Homer's darker witness",
+      "text": "In the underworld catalogue, Odysseus sees fair Ariadne, daughter of baneful Minos, whom Theseus tried to carry to sacred Athens but had no joy of her: ere that Artemis slew her on Dia at the testimony of Dionysus, before ever she came home. In this telling the god is witness against the princess, not bridegroom — the dispute gate holds both fates.",
+      "sources": ["homer"],
+      "citation": "Od. 11.321–325",
+      "topic": "ariadne-fate"
+    },
+    {
+      "title": "Bride of Dionysus",
+      "text": "In the other ending golden-haired Dionysus made brown-haired Ariadne, daughter of Minos, his wife, and Zeus made her deathless and unageing for his sake. Apollodorus has the god enjoy her on Lemnos and beget Thoas, Staphylus, Oenopion, and Peparethus; Ovid has Bacchus comfort the weeping girl and pledge himself to her forever.",
+      "sources": ["hesiod", "apollodorus", "ovid"],
+      "citation": "Hes. Th. 947–949; Apollod. Epit. 1.9; Ov. Met. 8.176–182",
+      "topic": "ariadne-fate"
+    },
+    {
+      "title": "The crown in heaven",
+      "text": "Ovid tells how Bacchus took the crown from Ariadne's brow and set it in the sky, its gems turned to fires burning between the Kneeler and the Serpent-Holder. Hyginus in his Astronomica makes the Crown Ariadne's wedding gift from Venus and the Horae when she wed Liber on Dia — the constellation men still call Corona.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 8.176–182; Hyg. Astr. 2.5.1",
+      "topic": "ariadne-fate"
+    },
+    {
+      "title": "The black sail",
+      "text": "Grieving for Ariadne — or in Ovid simply forgetful in his joy — Theseus failed to spread the white sail on his homeward ship. Aegeus watching from the acropolis saw only black canvas, supposed his son dead, and cast himself into the sea that bears his name.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 1.10; Ov. Met. 8.174–182"
+    }
+  ],
+  "cast": [
+    { "id": "ariadne", "name": "Ariadne", "role": "Princess abandoned, then wed or slain" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Bridegroom or witness against her" },
+    { "id": "theseus", "name": "Theseus", "role": "Hero who left her on the island" },
+    { "id": "aegeus", "name": "Aegeus", "role": "King who leapt at the black sail" },
+    { "id": "artemis", "name": "Artemis", "role": "Slayer in Homer's telling" },
+    { "id": "zeus", "name": "Zeus", "role": "He who made Ariadne immortal for Dionysus" },
+    { "id": "minos", "name": "Minos", "role": "Her father, lord of Crete" }
+  ],
+  "places": [
+    { "id": "naxos", "name": "Naxos", "role": "Dia, where Ariadne was left" },
+    { "id": "athens", "name": "Athens", "role": "City Theseus failed to bring her to" },
+    { "id": "lemnos", "name": "Lemnos", "role": "Island where Dionysus begat her sons" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "11.321–325" },
+    { "source": "hesiod", "work": "Theogony", "citation": "947–949" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "1.9–1.10" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "8.174–182" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "43" },
+    { "source": "hyginus", "work": "Astronomica", "citation": "2.5.1" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ianthe-oceanid",
+  "name": "Ianthe",
+  "greekName": "Ianthē (Ἰανθή)",
+  "romanName": "Ianthe",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "daughter of Ocean",
+    "keeper of youths with Apollo and the Rivers",
+    "catalogue node — thin standalone myth"
+  ],
+  "summary": [
+    {
+      "text": "Oceanid daughter of Oceanus and Tethys, named in Hesiod's catalogue among the holy company who, with lord Apollo and the Rivers, have youths in their keeping — also counted among the Oceanids who played with Persephone in the Homeric Hymn to Demeter, as Pausanias reports.",
+      "sources": ["hesiod", "hyginus", "pausanias"],
+      "citation": "Theogony 346–349; Fabulae, preface (Theogony); Description of Greece 4.30.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod lists Ianthe among the daughters of Tethys and Ocean who share with Apollo and the Rivers the charge of youths all over the earth — in the same breath as Peitho, Admete, Electra, Doris, Clymene, Idyia, and Pasithoe. She receives no further episode in the poem beyond this custodial role.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 346–349"
+    },
+    {
+      "text": "Hyginus' genealogical preface names Ianthe among the Oceanides born of Ocean and Tethys — set beside Melite, Admete, Stilbo, Pasiphae, Polyxo, Eurynome, and Metis in his compressed register of the water-born daughters.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    },
+    {
+      "text": "Pausanias, discussing when Fortune first entered poetry, cites the Homeric Hymn to Demeter: the daughters of Ocean who played with Kore in a lovely meadow included Leucippe, Phaeno, Electra, Ianthe, Melobosis, Tyche, and Ocyrhoe — placing this Ianthe among the divine playmates of Persephone, not among mortal Cretans.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.30.4; Homeric Hymn to Demeter 5.420"
+    },
+    {
+      "text": "The atlas keeps her apart from Ovid's mortal Ianthe of Crete, the golden-haired bride promised to Iphis in the Metamorphoses — a human girl of Phaestus, daughter of Telestes, who loved another maiden. That Ianthe belongs to a Milesian-Cretan tale of concealed sex; this Ianthe belongs wholly to Ocean's eldest daughters.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.714–797"
+    }
+  ]
+}

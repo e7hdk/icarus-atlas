@@ -2,8 +2,11 @@
 
 import { useEffect, useMemo } from 'react';
 import type { Character, Relation, Source } from '@/types/character';
-import { computePositions } from '@/features/galaxy/layout';
+import { computePositions, type Vec3 } from '@/features/galaxy/layout';
+import { layoutSignature } from '@/features/galaxy/layoutSignature';
+import type { BakedLayout } from '@/features/characters/load';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
 import { GalaxyCanvas } from './GalaxyCanvas';
 import { TopBar } from '@/components/hud/TopBar';
 import { Legend } from '@/components/hud/Legend';
@@ -20,6 +23,7 @@ export function GalaxyView({
   layout = 'galaxy',
   activeMainTab = 'galaxy',
   back,
+  bakedLayout = null,
 }: {
   characters: Character[];
   relations: Relation[];
@@ -30,11 +34,23 @@ export function GalaxyView({
   activeMainTab?: MainTab;
   /** When set, the top bar shows this back affordance in place of the brand on mobile. */
   back?: { href: string; label: string };
+  /** Build-time-baked galaxy positions; used instead of the ~5s runtime solve when
+   *  the content signature matches. Only the full galaxy is baked — compact city
+   *  skies are tiny, so they always solve at runtime. */
+  bakedLayout?: BakedLayout | null;
 }) {
-  const positions = useMemo(
-    () => computePositions(characters, relations, { compact: layout === 'compact' }),
-    [characters, relations, layout],
-  );
+  const positions = useMemo(() => {
+    if (
+      layout === 'galaxy' &&
+      bakedLayout &&
+      bakedLayout.signature === layoutSignature(characters, relations)
+    ) {
+      const map = new Map<string, Vec3>();
+      for (const id in bakedLayout.positions) map.set(id, bakedLayout.positions[id]);
+      return map;
+    }
+    return computePositions(characters, relations, { compact: layout === 'compact' });
+  }, [characters, relations, layout, bakedLayout]);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
   const setDiving = useGalaxyStore((s) => s.setDiving);
 
@@ -47,19 +63,14 @@ export function GalaxyView({
     return scaled;
   }, [positions, spacingScale]);
 
+  useAtlasSearchHotkey();
+
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
       const store = useGalaxyStore.getState();
-      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
-        event.preventDefault();
-        store.setSearchOpen(!store.searchOpen);
-        return;
-      }
-      if (event.key === 'Escape') {
-        if (store.searchOpen) store.setSearchOpen(false);
-        else if (store.settingsOpen) store.setSettingsOpen(false);
-        else store.select(null);
-      }
+      if (store.searchOpen || store.settingsOpen) return;
+      store.select(null);
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);

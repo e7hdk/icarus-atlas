@@ -1,0 +1,31 @@
+{
+  "id": "artemisia-halicarnassus",
+  "name": "Artemisia",
+  "greekName": "Artemisia (Ἀρτεμισία)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Halicarnassus",
+    "naval commander at Salamis"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Lygdamis and queen of Halicarnassus, who voluntarily joined Xerxes' expedition against Greece and distinguished herself at the naval battle off Salamis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.11.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "At Delphi, among white-marble figures of Persians on the pillars, Pausanias saw a statue of Artemisia, daughter of Lygdamis and queen of Halicarnassus — a lady who of her own will sailed with Xerxes against Greece and won renown at the engagement off Salamis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.11.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "halicarnassus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

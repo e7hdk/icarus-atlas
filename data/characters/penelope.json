@@ -24,6 +24,13 @@
         "apollodorus"
       ],
       "citation": "Bibliotheca 3.10.6"
+    },
+    {
+      "text": "In the Epitome's summary of the wooers' occupation, she was compelled to promise marriage when Laertes' funeral shroud was finished — the vow under which she wove for three years by day and undid the work by night until the suitors detected her.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.31"
     }
   ],
   "story": [
@@ -37,9 +44,10 @@
     {
       "text": "Believing Odysseus dead, a throng of suitors pressed her toward remarriage and devoured his substance. Penelope answered them with guile: she set up a great web in her halls and bade them wait until she had finished a shroud for Laertes, her husband's aged father, lest she be shamed before the Achaean women. By day she wove at the wide web, but by night, with torches set beside her, she unravelled what she had woven. For three years her craft beguiled them, until in the fourth year a faithless handmaid betrayed her and she was caught undoing the cloth and compelled at last to finish it.",
       "sources": [
-        "homer"
+        "homer",
+        "apollodorus"
       ],
-      "citation": "Odyssey 2.93–110; 19.137–156; 24.128–146"
+      "citation": "Odyssey 2.93–110; 19.137–156; 24.128–146; Epitome 7.31"
     },
     {
       "text": "Her constancy became her glory. The ghost of Agamemnon, murdered by his own wife on his homecoming, sets that doom against Odysseus' fortune: no death shall come to him from his wife, for the daughter of Icarius is prudent and of an understanding heart. So virtuous a queen wins for herself a fame that never dies, while the immortals make a song of hatred for the daughter of Tyndareus, who slew her wedded lord.",
@@ -56,11 +64,50 @@
       "citation": "Description of Greece 3.12.2"
     },
     {
-      "text": "Apollodorus records her parentage, that she was the daughter of Icarius and the Naiad nymph Periboea, married to Odysseus. The same writer also reports a darker variant flatly opposed to the faithful homecoming Homer tells: some say that Penelope was seduced by Antinous and sent away by Odysseus to her father Icarius.",
-      "sources": [
-        "apollodorus"
-      ],
-      "citation": "Bibliotheca 3.10.6; Epitome 7.38"
+      "text": "Apollodorus records her parentage: daughter of Icarius and the Naiad nymph Periboea, whom Odysseus married.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.6"
+    },
+    {
+      "text": "In a variant ending Apollodorus reports only as hearsay — 'some say' — Penelope was seduced by Antinous; Odysseus sent her away to her father Icarius, and when she came to Mantinea in Arcadia she bore Pan to Hermes. The strand flatly contradicts the faithful queen Agamemnon's shade praises and the immovable bed Homer tells.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.38",
+      "topic": "penelope-antinous-affair"
+    },
+    {
+      "text": "When the shroud stratagem failed, Apollodorus says she delivered to the suitors the bow of Odysseus — the weapon he had once received from Iphitus — and declared that she would marry whichever man could bend it. None succeeded; Odysseus took the bow, shot down the wooers, and at last made himself known to her.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.33; Odyssey 21.1–434; 23.171–204"
+    },
+    {
+      "text": "In one Apollodorus continuation of the tale, while Odysseus was absent reigning in Thesprotia after his propitiatory journey through Epirus, Penelope bore him a son Poliporthes on Ithaca — a child Homer never names beside godlike Telemachus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.35",
+      "topic": "odysseus-thesprotian-kingship"
+    },
+    {
+      "text": "In another Apollodorus ending to the Odyssey, after Telegonus son of Circe unknowingly killed Odysseus on Ithaca, the youth brought Penelope to Aeaea and married her there before Circe sent them both to the Islands of the Blest — a fate wholly unlike Homer's reunion with her husband.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.37",
+      "topic": "odysseus-death"
+    },
+    {
+      "text": "Apollodorus also preserves the slander that Odysseus, discovering or believing that Penelope had been seduced by Antinous, sent his wife back to her father Icarius rather than keep her — an ending in which the king of Ithaca rejects the queen Homer proves faithful with the secret of their bed.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.38",
+      "topic": "penelope-antinous-affair"
+    },
+    {
+      "text": "Others say that Penelope met her end at Odysseus' own hands because of Amphinomus — alleging that she was seduced by the Dulichian suitor whom Homer makes the one wooer Penelope smiled upon, and whom the returned king slew with an arrow at the wine-cup.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.39",
+      "topic": "penelope-amphinomus-affair"
+    },
+    {
+      "text": "Pausanias records what the Mantineans themselves said: that Odysseus convicted Penelope of bringing paramours into his house, cast her out, and that she went first to Lacedaemon and afterwards to Mantinea in Arcadia, where she died — a local tradition that fixes the queen's exile in their own city.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.12.6",
+      "topic": "penelope-antinous-affair"
     }
   ],
   "residences": [
@@ -70,6 +117,17 @@
         "homer",
         "apollodorus"
       ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "mantinea",
+      "sources": ["apollodorus", "pausanias"]
     }
   ]
 }

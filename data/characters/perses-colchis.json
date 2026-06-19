@@ -1,0 +1,48 @@
+{
+  "id": "perses-colchis",
+  "name": "Perses",
+  "greekName": "Persēs (Πέρσης)",
+  "romanName": "Perses",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "brother of Aeetes",
+    "usurper of Colchis",
+    "son of Helios"
+  ],
+  "summary": [
+    {
+      "text": "Brother of Aeetes in the Sun-born house — in Hyginus a son of Sol and Persa alongside Circe and Pasiphae — who deposed Aeetes from the kingship of Colchis until Medea returned in secret and killed him, restoring her father to the throne at Aea.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Fabulae 27, p.35"
+    },
+    {
+      "text": "Not to be confused with Perses the Titan, son of Crius and father of Hecate — nor with Perses the son of Perseus and Andromeda, eponym of the Persians.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 375–411; Bibliotheca 1.2.4, 2.4.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus numbers him among the children of the Sun: from Sol and Persa came Circe, Pasiphae, Aeetes, and Perses — the same eastern royal house that would guard the Golden Fleece and breed the witch Medea.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae p.35"
+    },
+    {
+      "text": "Apollodorus tells only the usurpation and fall: after Medea's wanderings through Corinth and Athens, she came unknown to Colchis and found that Aeetes had been deposed by his brother Perses; she killed Perses and restored the kingdom to her father.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.28"
+    },
+    {
+      "text": "Hyginus adds an oracle and a near miss with her son: an oracle warned Perses, son of Sol and Aeetes' brother, to beware death from Aeetes' descendants. When Medus, son of Aegeus and Medea, was driven to Colchis by a storm, guards seized the boy and brought him before King Perses — the very line the prophecy named.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

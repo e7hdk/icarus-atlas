@@ -1,0 +1,28 @@
+{
+  "id": "melanippus-patroclus-roll",
+  "name": "Melanippus",
+  "greekName": "Melanippos (Μελάνιππος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Patroclus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Patroclus laid low after Epistor when the gods called him deathward — distinct from Melanippus whom Teucer slew (`melanippus-trojan`), from Melanippus son of Hicetaon (`melanippus-hicetaonid`), and from `melanippus-achaean` of the tripod embassy.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then whom first, whom last didst thou slay, Patroclus, when the gods called thee deathward? Adrastus first, and Autonous, and Echeclus, and Perimus son of Megas, and Epistor, and Melanippus, and thereafter Elasus, and Mulius, and Pylartes: these he slew, and the others bethought them each man of flight.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

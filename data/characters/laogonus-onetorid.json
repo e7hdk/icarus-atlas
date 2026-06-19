@@ -1,0 +1,28 @@
+{
+  "id": "laogonus-onetorid",
+  "name": "Laogonus",
+  "greekName": "Laogonos (Λαογόνος)",
+  "type": "hero",
+  "domains": ["son of Onetor", "priest of Idaean Zeus", "Meriones' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Bold son of Onetor (`onetor-trojan`), priest of Idaean Zeus and honoured of the folk even as a god, whom Meriones smote beneath the jaw under the ear when the Cretan squire fought in the press before the wall — distinct from Laogonus son of Bias, whom Achilles slew in *Iliad* 20 (`laogonus-trojan`).",
+      "sources": ["homer"],
+      "citation": "Iliad 16.570–615"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then Meriones slew a warrior of the Trojans, in full armour, Laogonus, the bold son of Onetor, one that was priest of Idaean Zeus, and was honoured of the folk even as a god: him he smote beneath the jaw under the ear, and forthwith his spirit departed from his limbs, and hateful darkness gat hold of him.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.570–615"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

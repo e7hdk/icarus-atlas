@@ -1,0 +1,49 @@
+{
+  "id": "amazon-campaign",
+  "title": "The Amazon Campaign",
+  "greekTitle": "ἡ Ἀμαζονὶς στρατεία",
+  "kind": "episode",
+  "parent": "theseus-cycle",
+  "era": 6.772,
+  "summary": {
+    "text": "Theseus carried off an Amazon — Antiope, Melanippe, or Hippolyte in the rival lists — and her sisters marched on Athens in vengeance; he defeated them at the city, and by the captive he begot Hippolytus, the hunter who would scorn Aphrodite.",
+    "sources": ["apollodorus", "hyginus", "pausanias"],
+    "citation": "Apollod. Epit. 1.16; Hyg. Fab. 250; Paus. 1.2.1, 1.41.7"
+  },
+  "chapters": [
+    {
+      "title": "The Amazon carried off",
+      "text": "After he was king, Theseus joined Heracles in a campaign against the Amazons — or raided them alone — and carried away a princess. Apollodorus names her Antiope; others say Melanippe, and Simonides calls her Hippolyte. She must not be confused with Antiope the Theban mother of Amphion: this is the warrior bride of the Thermodon, and the sources never agree on her name.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. Epit. 1.16; Hyg. Fab. 250; Paus. 1.2.1"
+    },
+    {
+      "title": "The Amazons at Athens",
+      "text": "The Amazons marched on Attica in anger for their stolen queen and encamped on the height that was afterwards called the Amazonium. Theseus met them in battle, routed their host, and killed Hippolyte — or she fled to Megara and died of despair, as the Megarians showed her tomb shaped like an Amazon's shield near the shrine of Pandion.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 1.16; Paus. 1.41.7"
+    },
+    {
+      "title": "Hippolytus",
+      "text": "By the Amazon Theseus begot Hippolytus, a youth who devoted himself to Artemis and would have nothing to do with women — the son whose stepmother's false charge and his father's curse would one day call up a bull from the sea. Pausanias knew the Amazonium in Athens and the tomb at Megara as landmarks of the campaign that bound the hunter's fate to his father's house.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 1.16; Paus. 1.2.1, 1.41.7"
+    }
+  ],
+  "cast": [
+    { "id": "theseus", "name": "Theseus", "role": "The king who defeated the Amazons" },
+    { "id": "hippolyta", "name": "Hippolyta", "role": "Amazon queen slain or driven to despair" },
+    { "id": "hippolytus", "name": "Hippolytus", "role": "The son born of the campaign" },
+    { "id": "athena", "name": "Athena", "role": "Patron of the city the Amazons besieged" },
+    { "name": "Antiope", "role": "The Amazon bride in Apollodorus' list" }
+  ],
+  "places": [
+    { "id": "athens", "name": "Athens", "role": "City the Amazons marched against" },
+    { "name": "Megara", "role": "Where Hippolyte's tomb was shown" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "1.16" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "250" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.2.1, 1.41.7" }
+  ]
+}

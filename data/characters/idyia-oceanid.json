@@ -1,0 +1,59 @@
+{
+  "id": "idyia-oceanid",
+  "name": "Idyia",
+  "greekName": "Idyia (Ἰδυῖα)",
+  "type": "nymph",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Oceanid of Colchis",
+    "queen of Aea",
+    "mother of Medea"
+  ],
+  "summary": [
+    {
+      "text": "Fair-cheeked daughter of Ocean whom Aeetes, king of Colchis and son of Helios, took to wife by the will of the gods — and by her he begot neat-ankled Medea, the witch who would flee with Jason and the Golden Fleece.",
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Theogony 956–961; Bibliotheca 1.9.1, 1.9.23; Argonautica 3.241"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod closes the Sun-born house with her marriage: Perseis daughter of Ocean bore Circe and Aeetes to Helios, and Aeetes in turn wedded Idyia, daughter of Ocean the perfect stream; through golden Aphrodite she was subject to him in love and bore neat-ankled Medea — the only child the Theogony names in this Colchian line.",
+      "sources": [
+        "hesiod"
+      ],
+      "citation": "Theogony 956–961"
+    },
+    {
+      "text": "Apollodorus knows her only as the mother behind the witch: when Jason came to Aeetes for the fleece and won it through Medea's drugs and counsel, the king learned what his daughter had done and pursued the Argo — while Medea, fleeing with Jason, would cast her brother Apsyrtus limb from limb into the deep for Aeetes to gather.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.23–24"
+    },
+    {
+      "text": "Apollonius makes her the Oceanid ancestress of Medea's power: the maiden who loved Jason is daughter of Aeetes and Idyia, and Hecate's priestess draws her craft from that eastern house at the river Phasis.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Argonautica 3.241, 3.870"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "apollonius"
+      ]
+    }
+  ],
+  "kinds": [
+    "oceanid"
+  ]
+}

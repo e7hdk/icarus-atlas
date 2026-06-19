@@ -1,0 +1,51 @@
+{
+  "id": "eurytion-centaur",
+  "name": "Eurytion",
+  "greekName": "Eurytion (Εὐρυτίων)",
+  "romanName": "Eurytion",
+  "type": "creature",
+  "domains": [
+    "the drunken centaur",
+    "Peirithous' wedding",
+    "Olenus and Dexamenus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The centaur whom wine made foolish at Peirithous' feast, where he tried to carry off the bride — and whom Heracles later slew when he came to fetch Dexamenus' daughter Mnesimache as his bride.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Odyssey 21.295–304; Bibliotheca 2.5.5; Fabulae 34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Odyssey remembers him in the hall of great-hearted Peirithous: wine made foolish even the centaur glorious Eurytion, and when his heart was made foolish he wrought evil in the house of Peirithous; then grief seized the heroes and they leapt up and drove the centaurs out. The passage is the classic anchor for the wedding battle.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 21.295–304"
+    },
+    {
+      "text": "Apollodorus tells a second episode at Olenus: Heracles came to Dexamenus, who was on the point of betrothing perforce his daughter Mnesimache to the centaur Eurytion; called upon for help, Heracles slew Eurytion when the centaur came to fetch his bride. Eurystheus would not count the deed among the ten labours, alleging it was performed for hire.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.5"
+    },
+    {
+      "text": "Hyginus makes him son of Ixion and Nubes among the centaurs. He must be kept strictly distinct from Eurytion son of Actor, king of Phthia (`eurytion`), whom Peleus killed at the Calydonian hunt — and from the Argonaut Eurytion son of Irus in Hyginus' list.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 34; Bibliotheca 1.8.2, 3.13.2"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

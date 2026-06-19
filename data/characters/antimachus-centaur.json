@@ -1,0 +1,33 @@
+{
+  "id": "antimachus-centaur",
+  "name": "Antimachus",
+  "greekName": "Antimachos (Ἀντίμαχος)",
+  "romanName": "Antimachus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the Lapith war"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur killed by Caeneus at the wedding of Peirithous and Hippodameia.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid counts Antimachus among the five centaurs Caeneus put to death in the Lapith–centaur war — named beside Styphelus, Bromus, Elymus, and Pyracmos in Nestor's recollection of the feast turned battle.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.624–773"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

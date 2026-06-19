@@ -1,0 +1,51 @@
+{
+  "id": "apsyrtus-colchis",
+  "name": "Apsyrtus",
+  "greekName": "Apsyrtos (Ἄψυρτος)",
+  "romanName": "Absyrtus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Aeetes",
+    "brother of Medea",
+    "pursuer of the Argo",
+    "the Apsyrtides"
+  ],
+  "summary": [
+    {
+      "text": "Son of Aeetes who sailed with Medea when she fled Colchis with Jason and the Golden Fleece; in Apollodorus she murdered her brother aboard the ship and cast his limbs into the sea, while Apollonius makes him an adult commander lured to an isle of Artemis and slain in Jason's ambush.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.23–24; Argonautica 3.210, 4.303–481"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius gives him a palace of his own beside Aeetes' and a mother before the king's marriage to Idyia: Apsyrtus, son of Aeetes, whom the Caucasian nymph Asterodeia bore before he made Eidyia his wedded wife — and the Colchians called him by the new name of Phaethon because he outshone all the youths.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.210"
+    },
+    {
+      "text": "Apollodorus sends him away with his sister on the night of the theft: Medea possessed herself of the fleece and came to the Argo with Jason, attended by her brother Apsyrtus. When Aeetes discovered the deed and pursued, Medea murdered her brother and, cutting him limb from limb, threw the pieces into the deep; gathering the child's limbs, Aeetes fell behind, buried what he rescued, and called the place Tomi.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.23–24",
+      "topic": "apsyrtus-death"
+    },
+    {
+      "text": "Apollonius makes him a grown pursuer at the head of the Colchians: Apsyrtus led them by a neck of land into the furthest gulf of the Ionian Sea and outstripped the heroes, until Medea — fearing battle for Jason's sake — promised to beguile Apsyrtus to come alone to hear her words. Jason lay in ambush on the sacred island of Artemis; beguiled by dire promises, Apsyrtus crossed by night and was slain there, and Zeus was seized with wrath at the ruthless murder.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.303, 4.391–481, 4.557",
+      "topic": "apsyrtus-death"
+    },
+    {
+      "text": "Hyginus sends Absyrtus after the fugitives with armed guards when Aeetes learned Medea had fled; he caught up with her in the Adriatic at King Alcinous' court in Histria and would have fought for her — another strand of the pursuit that ends in his death and the naming of the Apsyrtides.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 23"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

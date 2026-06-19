@@ -1,0 +1,172 @@
+{
+  "id": "calchas-at-colophon",
+  "title": "Calchas at Colophon",
+  "greekTitle": "Κάλχας ἐν Κολοφῶνι",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.9,
+  "summary": {
+    "text": "Calchas son of Thestor, who had read Artemis at Aulis and every omen of Troy, foresaw that he would die if he met a wiser diviner — and at Colophon Mopsus son of Apollo and Manto bested him at the wild fig and the pregnant sow, so the greatest seer of the host died of grief and was buried at Notium while his companions marched on by land.",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "citation": "Hom. Il. 1.68–92, 2.322–332; Apollod. Epit. 6.2–6.4, 6.19; Hyg. Fab. 128; Paus. 7.3.12"
+  },
+  "chapters": [
+    {
+      "title": "The seer who would not sail",
+      "text": "Homer made Calchas son of Thestor the best of bird-diviners among the Achaeans — he who knew what was, what will be, and what had been, and who had guided the ships to Ilios by the prophetic power Apollo bestowed. At Aulis he had named Artemis' wrath and the price of the wind; at Troy he had read the serpent and the sparrow omen that promised the tenth year. When the city fell, Apollodorus says, it was foretold Calchas that he would die if he met with a wiser diviner than himself — so he refused to sail home with the fleet and left his ships in Ilium, setting out overland for Colophon with Amphilochus, Leonteus, Podalirius, and Polypoetes.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Hom. Il. 1.68–92, 2.322–332; Apollod. Epit. 6.2"
+    },
+    {
+      "title": "Mopsus of Colophon",
+      "text": "At Colophon the wanderers were lodged by Mopsus — not the Argonaut son of Ampycus who died of a serpent in Libya, but the Ionian seer whom Apollodorus makes a son of Apollo and Manto, daughter of Tiresias. Pausanias tells the colony tale differently: Manto, dedicated to Apollo at Delphi after Thebes fell, crossed to Asia and married Rhacius the Cretan; their son Mopsus drove the Carians from the land and gave his name to the country. Either way the host's diviner met a younger oracle on the coast where Claros would later speak for the god — and Mopsus was ready to test him.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. Epit. 6.3; Bibliotheca 3.7.4; Paus. 7.3.12",
+      "topic": "mopsus-colophon-parentage"
+    },
+    {
+      "title": "The wild fig-tree",
+      "text": "The two seers wrangled over the art of divination. A wild fig-tree grew on the spot, and Calchas asked how many figs it bore. Mopsus answered: ten thousand, and a bushel, and one fig over — and when they counted, they were found to be so. The man who had sent Iphigenia to the altar and named the conditions of Troy's fall had met his match in exact sight; the contest had only begun.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. Epit. 6.3"
+    },
+    {
+      "title": "The pregnant sow",
+      "text": "Mopsus turned the trial back on Calchas. Concerning a pregnant sow he asked how many pigs she carried and when she would farrow. Calchas answered eight. Mopsus smiled and said the divination of Calchas was the reverse of exact — he, as a son of Apollo and Manto, divined nine, all male, farrowed without fail tomorrow at the sixth hour. When the sow proved him right, Calchas died of a broken heart and was buried at Notium, the port of Colophon. Amphilochus and the rest buried the diviner they had escorted from Troy — the nostos he had read for every captain ended one march short for himself.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. Epit. 6.2, 6.4"
+    },
+    {
+      "title": "Amphilochus and the kingdom",
+      "text": "Apollodorus records a separate strand of the Returns: an Amphilochus son of Alcmaeon, who according to some arrived late at Troy, was driven in the storm to Mopsus' country and, as some say, fought him in single combat for the kingdom until both were slain. That is not the Amphilochus son of Amphiaraus who had marched overland with Calchas from Ilium — the Returns carry two heroes under one name, as the Epic Cycle often does. Hyginus lists Calchas among the augurs of Greece beside Mopsus son of Ampycus and Manto daughter of Tiresias, keeping the Colophonian seer's victory in the catalogue of those who read the war.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. Epit. 6.19; Hyg. Fab. 128",
+      "topic": "amphilochus-parentage"
+    },
+    {
+      "title": "The seer's reckoning",
+      "text": "Agamemnon had called Calchas a prophet of evil who never spoke a pleasant thing — yet the host had obeyed him at every turn. The nested episode on Iphigenia at Aulis tells the becalmed muster and the nine-year omen; the Little Iliad tells Helenus captured on Calchas' counsel. When the lesser kings came home — Philoctetes safe in his nested episode on Italy, Teucer banished in his, Idomeneus dispossessed in his — the man who had named them all their omens lay at Notium, outprophesied on the Ionian shore. Odysseus was still lost on the open sea; Nestor safe at Pylos; and the Returns counted one more grave among the victors who never saw their own hearths.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Hom. Il. 1.106–120; Apollod. Epit. 6.2–6.4, 6.15, 6.19"
+    }
+  ],
+  "cast": [
+    {
+      "id": "calchas-thestor",
+      "name": "Calchas",
+      "role": "Chief diviner of the host, outmatched at Colophon"
+    },
+    {
+      "id": "mopsus-colophon",
+      "name": "Mopsus",
+      "role": "Colophonian seer who won the divination contest"
+    },
+    {
+      "id": "manto",
+      "name": "Manto",
+      "role": "Mother of Mopsus, daughter of Tiresias"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Father of Mopsus in Apollodorus' account"
+    },
+    {
+      "id": "amphilochus",
+      "name": "Amphilochus",
+      "role": "Companion who marched overland from Troy"
+    },
+    {
+      "id": "iphigenia",
+      "name": "Iphigenia",
+      "role": "Named in the memory of Aulis"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Lord who hated Calchas' gloomy prophecies"
+    },
+    {
+      "name": "Leonteus",
+      "role": "Captain who left the ships at Ilium"
+    },
+    {
+      "name": "Podalirius",
+      "role": "Healer who marched by land with Calchas"
+    },
+    {
+      "name": "Polypoetes",
+      "role": "Captain of the overland party"
+    },
+    {
+      "name": "Rhacius",
+      "role": "Cretan husband of Manto in Pausanias' colonization tale"
+    }
+  ],
+  "places": [
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Where Calchas left the ships rather than sail home"
+    },
+    {
+      "name": "Claros",
+      "role": "Apollo's oracular shrine of the Colophonian coast"
+    },
+    {
+      "name": "Colophon",
+      "role": "Ionian city where Mopsus lodged the wanderers"
+    },
+    {
+      "name": "Notium",
+      "role": "Harbour where Calchas died and was buried"
+    },
+    {
+      "name": "Aulis",
+      "role": "Where Calchas had read Artemis' wrath at the muster"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "1.68–92, 2.322–332"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "6.2–6.4, 6.19"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "128"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "7.3.12"
+    }
+  ]
+}

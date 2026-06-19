@@ -1,0 +1,61 @@
+{
+  "id": "birth-at-seriphos",
+  "title": "Birth at Seriphos",
+  "greekTitle": "Δανάη καὶ Σέριφος",
+  "kind": "episode",
+  "parent": "perseus-cycle",
+  "era": 5.75,
+  "summary": {
+    "text": "Acrisius shut his daughter Danae in bronze, yet she bore a son — Zeus in a shower of gold, or Proetus in a darker tale — and the king cast mother and child into the sea; on Seriphos Dictys reared the boy while Polydectes plotted to send him to his death.",
+    "sources": ["apollodorus", "hyginus", "ovid"],
+    "citation": "Apollod. 2.4.1; Hyg. Fab. 63; Ov. Met. 4.611–665"
+  },
+  "chapters": [
+    {
+      "title": "The bronze chamber",
+      "text": "Acrisius of Argos, learning from the oracle that his daughter's son would kill him, imprisoned Danae in a chamber of bronze — or, in some accounts, underground — so that no man might reach her. Yet Zeus visited her as a stream of gold pouring through the roof into her lap, and she bore Perseus. Apollodorus preserves the alternative that Proetus, Acrisius' brother, seduced her instead, and war broke out between the two kings over the shame.",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. 2.4.1; Hyg. Fab. 63; Ov. Met. 4.611–615",
+      "topic": "danae-seduction"
+    },
+    {
+      "title": "The chest in the sea",
+      "text": "When Acrisius discovered the child, he placed Danae and the infant in a wooden chest and cast them into the sea rather than kill them with his own hand. The waves bore them to Seriphos, where Dictys the fisherman drew them ashore and reared Perseus as his own while his brother Polydectes ruled the island and began to desire Danae for his wife.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.4.1; Hyg. Fab. 63"
+    },
+    {
+      "title": "Polydectes' trap",
+      "text": "Polydectes feigned a wedding to Hippodamia and demanded that each guest bring a horse; Perseus, who had no horse, boasted he would bring the head of the Gorgon Medusa instead. The king meant the boast to destroy him — the Gorgons lived beyond Ocean at the edge of the world, and their gaze turned men to stone. Danae's protector would die on an impossible quest, and the island king would have the mother.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.4.2; Ov. Met. 4.665–688"
+    },
+    {
+      "title": "The gods take notice",
+      "text": "Hermes and Athena came to the young hero on Seriphos. Athena lent her polished shield to use as a mirror; Hermes gave the adamantine sickle with which Cronus had unmanned his father. They sent him first to the Graeae, the grey sisters who shared one eye and one tooth between them, so that he might learn the way to the Gorgons' lair before he sailed the impossible road.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Apollod. 2.4.2; Ov. Met. 4.739–774; Hyg. Fab. 64"
+    }
+  ],
+  "cast": [
+    { "id": "perseus", "name": "Perseus", "role": "The child cast into the sea" },
+    { "id": "danae", "name": "Danae", "role": "Mother imprisoned in bronze" },
+    { "id": "acrisius", "name": "Acrisius", "role": "Grandfather who set them adrift" },
+    { "id": "proetus", "name": "Proetus", "role": "Uncle in the alternative seduction tale" },
+    { "id": "dictys", "name": "Dictys", "role": "The fisherman who reared him" },
+    { "id": "polydectes", "name": "Polydectes", "role": "The king who sent him after Medusa" },
+    { "id": "zeus", "name": "Zeus", "role": "Father in the golden-shower tradition" },
+    { "id": "athena", "name": "Athena", "role": "Patron who lent the shield" },
+    { "id": "hermes", "name": "Hermes", "role": "Guide who lent the sickle" },
+    { "id": "graeae", "name": "The Graeae", "role": "Grey sisters who knew the way" }
+  ],
+  "places": [
+    { "id": "seriphos", "name": "Seriphos", "role": "Island where the chest came ashore" },
+    { "id": "argos", "name": "Argos", "role": "Kingdom from which Danae was cast out" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.4.1–2" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "63" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "4.611–774" }
+  ]
+}

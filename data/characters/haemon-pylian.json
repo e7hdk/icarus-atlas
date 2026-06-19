@@ -1,0 +1,28 @@
+{
+  "id": "haemon-pylian",
+  "name": "Haemon",
+  "greekName": "Haimōn (Αἵμων)",
+  "type": "hero",
+  "domains": ["Pylian warrior", "Nestor's comrade"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Lord Haemon whom Nestor arrayed with mighty Pelagon, Alastor, Chromius, and Bias shepherd of the host — distinct from Haemon son of Creon in the Theban tragedies.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305, 4.350–400"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Poseidon roused the army, Nestor the clear-voiced orator of the Pylians had drawn up his company around mighty Pelagon and Alastor and Chromius and lord Haemon and Bias, setting charioteers before the footmen.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.265–305"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer"]
+    }
+  ]
+}

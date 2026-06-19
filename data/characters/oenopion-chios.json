@@ -1,0 +1,37 @@
+{
+  "id": "oenopion-chios",
+  "name": "Oenopion",
+  "greekName": "Oinopion (Οἰνοπίων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Chios",
+    "father of Merope",
+    "blinding of Orion"
+  ],
+  "summary": [
+    {
+      "text": "King of Chios, father of Merope, who made Orion drunk, put out his eyes as he slept, and cast him on the beach when the hunter wooed his daughter.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.4.3; Description of Greece 7.4.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Orion came to Chios and wooed Merope, daughter of Oenopion, the king made him drunk, put out his eyes while he slept, and cast him on the seashore — whence the blinded hunter went to the forge of Hephaestus to regain the light.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.3"
+    },
+    {
+      "text": "Pausanias records that Oenopion sailed from Crete to Chios with his sons Talus, Euanthes, Melas, Salagus, and Athamas — a colonist-king in the Ionian isle's genealogies.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.4.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "chios",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

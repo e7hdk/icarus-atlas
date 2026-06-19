@@ -1,0 +1,35 @@
+{
+  "id": "daemon-zacynthus",
+  "name": "Daemon",
+  "greekName": "Daemon (Δαήμων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — a mortal namesake only, wholly distinct from the daimones of Greek religion.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Daemon among the wooers assigned to Zacynthus, listed after Nisas and before Archestratus in Epitome 7.29 — a man who bears the common noun for a divine spirit as a personal name and nothing more.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "noemon-lycian",
+  "name": "Noëmon",
+  "greekName": "Noēmōn (Νοήμων)",
+  "type": "hero",
+  "domains": ["Lycian warrior", "Odysseus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew with the sharp bronze among the allies; distinct from Noëmon son of Phronius in the *Odyssey* who lent Telemachus a ship.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.876–877, 5.670–710"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Athene turned Odysseus toward the host of the Lycians, he smote Coeranus and Alastor and Chromius and Alcandrus and Halius and Noëmon and Prytanis, and yet more would he have laid low had not great Hector strode through the foremost fighters.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.670–710"
+    }
+  ],
+  "residences": [
+    {
+      "city": "xanthus-lycia",
+      "sources": ["homer"]
+    }
+  ]
+}

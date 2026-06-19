@@ -1,0 +1,39 @@
+{
+  "id": "rhesus",
+  "name": "Rhesus",
+  "greekName": "Rhēsos (Ῥῆσος)",
+  "type": "hero",
+  "domains": ["Thracian kingship", "the snow-white horses", "the night raid"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of the Thracians, son of Eïoneus in Homer, who reached Troy that very evening with horses whiter than snow and chariot cunningly wrought with gold and silver — and was slain in his sleep by Diomedes before he ever fought, while Odysseus drove off the team.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.435–525"
+    },
+    {
+      "text": "Apollodorus makes him son of the river Strymon and the Muse Euterpe, though the same passage admits some say Calliope was his mother.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.4",
+      "topic": "rhesus-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "The Thracians had come that day, the outermost of all the allies, and their king Rhesus son of Eïoneus brought the fairest horses Dolon had ever seen — whiter than snow, swift as the winds — and armour of gold, huge of size, that blazed like a fire through the night. He slept in the midst of his men, his swift horses tethered by the reins to the topmost rim of his chariot.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.435–502"
+    },
+    {
+      "text": "Odysseus was first to espy him and pointed him out to Diomedes. The son of Tydeus went through the camp like a lion, slaying twelve sleeping Thracians and at the thirteenth, Rhesus, gasping in an evil dream. Odysseus loosed the horses and lashed them toward the hollow ships, while Athene sent a portent — a dream of Nestor's kinsman Hippocoon, who woke to find the horses gone and the men dead in blood.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.502–535"
+    },
+    {
+      "text": "Later legend said Troy would never fall if Rhesus' horses tasted Trojan grass and water before he died — the ally killed on his first night. Apollodorus places him in the Muse-catalogue: Euterpe bore him to Strymon, though some named Calliope instead; Homer knows only Eïoneus and never names a Muse.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Bibliotheca 1.3.4; Iliad 10.435–502; Fabulae 113",
+      "topic": "rhesus-mother"
+    }
+  ]
+}

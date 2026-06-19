@@ -1,0 +1,38 @@
+{
+  "id": "syrinx-nymph",
+  "name": "Syrinx",
+  "greekName": "Syrinx (Σῦριγξ)",
+  "romanName": "Syrinx",
+  "type": "nymph",
+  "kinds": ["hamadryad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "nymph of Nonacris",
+    "virgin huntress of Diana",
+    "the shepherd's pipe"
+  ],
+  "summary": [
+    {
+      "text": "A Hamadryad nymph of the cold Arcadian summit Nonacris who fled Pan and the Satyrs until, at the river's edge, she prayed the water-nymphs to change her form and became the reeds from which Pan cut the pipes that bear her name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.868–954"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid places her among the tree-bound nymphs of Nonacris — though he calls her a Naiad dwelling with Hamadryads, a maiden who vowed virginity and strove in all pursuits to emulate Diana's ways. Often she escaped the gods wandering the groves and fled from Satyrs that pursued, until Pan saw her, desired her, and chased her to the river Ladon.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.868–954"
+    },
+    {
+      "text": "Spent and seeing the slow river hemmed her in, Syrinx prayed the water-nymphs to change her form. They heard, and before Pan could seize her she became tufted reeds. The god sighed that his love was only reeds and air; breathing on them he found the reeds gave back a sound, and cutting them to unequal lengths he bound them with wax and called the instrument Syrinx — the pastoral pipes that still carry her name across Arcadia.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.868–954"
+    },
+    {
+      "text": "Her summit Nonacris is the same Arcadian height Pausanias names after Lycaon's wife (`nonacris-oread`); Ovid's metamorphosis nymph and the eponym queen share the toponym but not the tale. Pan's invention of the syrinx is told again on the existing `pan` node; this figure is the nymph who became the reeds.",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 1.868–954; Description of Greece 8.17.6"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "talos-crete",
+  "name": "Talos",
+  "greekName": "Talōs (Τάλως)",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Crete",
+    "the brazen guardian",
+    "Medea's sorcery"
+  ],
+  "summary": [
+    {
+      "text": "Brazen man who guarded Crete and circled the island thrice daily; Medea destroyed him by magic as the Argonauts sailed homeward.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.26; Argonautica 4.1638–1693"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Medea destroyed the brazen Talos on Crete — some say by driving him mad, others by fixing a nail in his vein so that all the ichor ran out.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.26; Argonautica 4.1638–1693"
+    }
+  ]
+}

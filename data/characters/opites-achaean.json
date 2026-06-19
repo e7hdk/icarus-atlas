@@ -1,0 +1,22 @@
+{
+  "id": "opites-achaean",
+  "name": "Opites",
+  "greekName": "Opitēs (Ὀπίτης)",
+  "type": "hero",
+  "domains": ["Achaean leader", "Hector's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Leader of the Danaans whom Hector slew in the same onrush in which he struck down Asaeus, Autonous, and Dolops son of Clytius — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus vouchsafed Hector glory, the prince smote Asaeus first and Autonous, and Opites and Dolops son of Clytius, and Opheltius, and Agelaus, and Aesymnus, and Orus, and Hipponous — leaders of the Danaans, staunch in fight — and thereafter fell upon the multitude.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.295–335"
+    }
+  ]
+}

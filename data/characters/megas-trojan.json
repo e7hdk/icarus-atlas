@@ -1,0 +1,28 @@
+{
+  "id": "megas-trojan",
+  "name": "Megas",
+  "greekName": "Megas (Μέγας)",
+  "type": "hero",
+  "domains": ["father of Perimus", "Trojan warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan father of Perimus whom Patroclus laid low after Echeclus when the gods called him deathward — named only in the roll of his son's death at the wall.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then whom first, whom last didst thou slay, Patroclus, when the gods called thee deathward? Adrastus first, and Autonous, and Echeclus, and Perimus son of Megas, and Epistor, and Melanippus, and thereafter Elasus, and Mulius, and Pylartes: these he slew, and the others bethought them each man of flight.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.660–695"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

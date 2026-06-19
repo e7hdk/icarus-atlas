@@ -1,0 +1,61 @@
+{
+  "id": "road-to-athens",
+  "title": "The Road to Athens",
+  "greekTitle": "ὁ δρόμος εἰς Ἀθήνας",
+  "kind": "episode",
+  "parent": "theseus-cycle",
+  "era": 6.7,
+  "summary": {
+    "text": "Reared at Troezen until he rolled away the rock that hid Aegeus' sword and sandals, Theseus came on foot to Athens — slaying Periphetes, Sinis, Cercyon, and Procrustes on the way — and survived Medea's poison-cup and the Marathonian bull before the black-sailed ship sailed for Crete.",
+    "sources": ["apollodorus", "homer", "pausanias", "hyginus", "ovid"],
+    "citation": "Apollod. 3.15.7–3.16.2; Epit. 1.5; Hom. Il. 1.265; Paus. 1.38.5, 2.33.1; Hyg. Fab. 37; Ov. Met. 7.404–452"
+  },
+  "chapters": [
+    {
+      "title": "The tokens at Troezen",
+      "text": "Aegeus, visiting Pittheus at Troezen, lay with his daughter Aethra; the same night Poseidon also had connexion with her. The king left a sword and sandals beneath a great rock and charged her, if she bore a son, to send the boy to Athens when he could lift the stone — without naming his father. When Theseus came to manhood he rolled the rock away and set out, refusing the sea route his grandfather offered.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Apollod. 3.15.7; Hyg. Fab. 37; Paus. 2.33.1",
+      "topic": "theseus-paternity"
+    },
+    {
+      "title": "Periphetes and Sinis",
+      "text": "At Epidaurus he killed Periphetes, son of Hephaestus, who waylaid travellers with a bronze club — and took the weapon for his own. At the Isthmus he slew Sinis the Pine-bender, who tied men to bent pines and let the trees spring apart; some say Sinis was his own father by a daughter of Pittheus, and that the hero bedded the girl after.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.16.2; Paus. 2.1.4"
+    },
+    {
+      "title": "Cercyon and Procrustes",
+      "text": "Beyond Eleusis he overcame Cercyon, who forced passers-by to wrestle until he killed them, and Procrustes — Polypemon — who fitted guests to an iron bed, lopping the tall and stretching the short. Pausanias marks by the Cephisus the very spot where Theseus slew Procrustes, and the bed itself was long shown in the Eleusinian sanctuary.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.16.2; Paus. 1.38.5"
+    },
+    {
+      "title": "Medea and the Marathonian bull",
+      "text": "In Athens, Medea — now wedded to Aegeus after her flight from Corinth — recognized the stranger as the king's son before Aegeus did and persuaded the father to treat him as a traitor. She sent a poisoned cup; Aegeus, seeing his own sword at the hero's side, dashed it from his lips. Medea fled, and Aegeus sent Theseus against the bull ravaging Marathon, which had once been the Cretan Bull of Heracles' labour — and the hero brought the beast down.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. Epit. 1.5; Ov. Met. 7.404–452"
+    }
+  ],
+  "cast": [
+    { "id": "theseus", "name": "Theseus", "role": "The young hero on the road" },
+    { "id": "aethra", "name": "Aethra", "role": "Mother who sent him with the tokens" },
+    { "id": "pittheus", "name": "Pittheus", "role": "Grandfather of Troezen" },
+    { "id": "aegeus", "name": "Aegeus", "role": "King who did not yet know his son" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Divine father in one tradition" },
+    { "id": "medea-colchis", "name": "Medea", "role": "The Colchian witch at Aegeus' side" },
+    { "id": "athena", "name": "Athena", "role": "Patron of the city he approached" }
+  ],
+  "places": [
+    { "name": "Troezen", "role": "Where the rock hid sword and sandals" },
+    { "id": "athens", "name": "Athens", "role": "The city at the road's end" },
+    { "name": "Marathon", "role": "Where the bull was slain" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.15.7–3.16.2, Epitome 1.5" },
+    { "source": "homer", "work": "Iliad", "citation": "1.265" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "1.38.5, 2.1.4, 2.33.1" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "37" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "7.404–452" }
+  ]
+}

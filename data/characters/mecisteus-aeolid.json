@@ -1,0 +1,63 @@
+{
+  "id": "mecisteus-aeolid",
+  "name": "Mecisteus",
+  "greekName": "Μηκιστεύς",
+  "romanName": "Mecisteus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argive royalty",
+    "Aeolid descent",
+    "the Trojan War"
+  ],
+  "summary": [
+    {
+      "text": "A son of Talaus in the Biantid house at Argos, Mecisteus was the father of Euryalus — the godlike warrior who fought beneath Diomedes at Troy and whose grandfather had once come to Thebes for the burial of Oedipus.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.9.13; Iliad 2.565–570, 23.678–680"
+    },
+    {
+      "text": "Distinct from the Mecisteus son of Echius who appears briefly in Homer's battle narratives, and from the Dulichian suitor `mecisteus-dulichium` in Apollodorus' catalogue of Penelope's wooers.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 8.312–315; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Mecisteus among the sons begotten by Talaus on Lysimache, in the same roll that introduces Adrastus, Pronax, Aristomachus, and Eriphyle — the Argive kindred of the Theban wars. Of Mecisteus he adds only that he had a son Euryalus, who went to Troy.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "text": "Homer fills out the son rather than the father. Under Diomedes' command sail eighty ships from Argos, Corinth, Cleonae, and the towns about; with the king of the muster goes Euryalus, son of Mecisteus, son of Talaus, a godlike man. At the funeral games for Patroclus the poet remembers the family's older fame: Talaus had once journeyed to Thebes when Oedipus was buried and there defeated all the sons of Cadmus.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.565–570, 23.678–680"
+    },
+    {
+      "text": "Euryalus fell fighting before the wall — Dolon named him among the best of the Achaeans — and Sthenelus, son of Capaneus, stripped his armour. So the house of Talaus paid its share in the Trojan war through the grandson Mecisteus begot.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 6.20–31, 10.218–230, 16.650–665"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    }
+  ]
+}

@@ -44,6 +44,14 @@
     {
       "city": "troy",
       "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    },
+    {
+      "city": "lavinium",
+      "sources": ["ovid", "pausanias", "hyginus"]
+    },
+    {
+      "city": "cumae",
+      "sources": ["ovid"]
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "id": "orpheus-on-the-argo",
+  "title": "Orpheus on the Argo",
+  "greekTitle": "Ὀρφεὺς ἐπὶ τῷ Ἀργοῖ",
+  "kind": "episode",
+  "parent": "orpheus-cycle",
+  "era": 7.02,
+  "summary": {
+    "text": "First among Jason's comrades in Apollonius' muster, the Pierian bard Orpheus steered the Argo with his lyre through rites and sorrows — and at the Sirens' isle sang a counter-melody so sweet that the crew rowed on unharmed while Butes alone was lost to their song.",
+    "sources": ["apollodorus", "apollonius", "hyginus"],
+    "citation": "Apollod. 1.9.16, 1.9.25; Arg. 1.23–34, 4.885–919; Hyg. Fab. 14"
+  },
+  "chapters": [
+    {
+      "title": "First in the roll",
+      "text": "Apollonius opens his catalogue with Orpheus, whom Calliope bore to Thracian Oeagrus near the Pimpleian height — a man whose songs charmed stubborn rocks and rivers, and whose wild oaks on the Thracian mountains still stand where his lyre once moved them. Apollodorus names him son of Oeagrus among the nobles Jason assembled; Hyginus makes him prophet and cithara-player from Pieria on Olympus, set at the prow to give the bosun's calls.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Apollod. 1.9.16; Arg. 1.23–34; Hyg. Fab. 14",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "title": "Lyra of the voyage",
+      "text": "When Idas reviled Jason and strife threatened the crew, Orpheus lifted his lyre and sang. To his music the heroes smote the rushing sea; at Electra's isle he led them in rites they might not utter; when King Cyzicus died they trod a measure in full armour to drown ill-omened wailing; and at the sacred isle of Apollo of the Dawn he dedicated his lyre — whence the place was named Lyra.",
+      "sources": ["apollonius"],
+      "citation": "Arg. 1.492–519, 1.910, 1.1103, 2.154, 2.669, 2.911"
+    },
+    {
+      "title": "Past the Sirens",
+      "text": "As the Argo drew near Anthemoessa, the clear-voiced daughters of Achelous sang from their flowery meadow. Orpheus stringed his Bistonian lyre and rang forth a rippling melody that filled the heroes' ears and overcame the maidens' voice; the west wind and the wave were lulled, and they rowed past in safety. Apollodorus and Hyginus agree: only Butes, overcome by the sweetness, swam off toward the Sirens — and Aphrodite snatched him up and settled him at Lilybaeum.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Apollod. 1.9.25; Arg. 4.885–919; Hyg. Fab. 14"
+    }
+  ],
+  "cast": [
+    { "id": "orpheus", "name": "Orpheus", "role": "Pierian bard and lyre-player of the Argo" },
+    { "id": "jason", "name": "Jason", "role": "Captain who mustered the voyage" },
+    { "id": "calliope", "name": "Calliope", "role": "Muse, his mother in the Argonautic roll" },
+    { "id": "sirens", "name": "The Sirens", "role": "Death-singers overcome by his counter-melody" },
+    { "name": "Butes", "role": "Argonaut lost to the Sirens and saved by Aphrodite" }
+  ],
+  "places": [
+    { "name": "Pieria", "role": "Height from which Orpheus came to the muster" },
+    { "name": "Anthemoessa", "role": "Isle of the Sirens" },
+    { "name": "Lilybaeum", "role": "Western haven where Aphrodite settled Butes" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.9.16, 1.9.25" },
+    { "source": "apollonius", "work": "Argonautica", "citation": "1.23–34, 4.885–919" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "14" }
+  ]
+}

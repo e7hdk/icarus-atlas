@@ -1,0 +1,38 @@
+{
+  "id": "melanthius-ithaca",
+  "name": "Melanthius",
+  "greekName": "Melanthios (Μελάνθιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["goatherd of Odysseus", "ally of the suitors"],
+  "summary": [
+    {
+      "text": "The goatherd of Ithaca who sided with Penelope's suitors, taunted the disguised Odysseus, brought them arms from the store-room, and was hanged alive with his limbs mutilated when the king reclaimed his house.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.231–254; 21.173–204; 22.170–199"
+    }
+  ],
+  "story": [
+    {
+      "text": "Melanthius led the best she-goats of the herds to feast the wooers and mocked the stranger at the door, threatening to ship him far from Ithaca and sell him for a slave. He told the suitors he had seen the man before, brought by the swineherd Eumaeus.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.231–254; 20.185–225"
+    },
+    {
+      "text": "At Antinous' bidding he built a fire and brought fat to soften the bow; when Telemachus still failed, he urged fetching more goats for a trial on the morrow. In the crisis of the contest he ran to the store-room for armour, and Eumaeus and Philoetius ambushed him at the threshold.",
+      "sources": ["homer"],
+      "citation": "Odyssey 21.173–204; 22.170–199"
+    },
+    {
+      "text": "After the suitors fell, Odysseus' men bound Melanthius hand and foot, hoisted him to the rafters, and left him to die — punishment for feeding the enemies of the house and bringing them shields and spears in the hour of battle.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 22.170–199; Epitome 7.33"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

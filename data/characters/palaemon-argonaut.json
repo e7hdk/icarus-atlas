@@ -1,0 +1,31 @@
+{
+  "id": "palaemon-argonaut",
+  "name": "Palaemon",
+  "greekName": "Palaemon (Παλαίμων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Calydon",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Lernus, Calydonian Argonaut in Hyginus' catalogue.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus and Hyginus number Palaemon among those who sailed to Colchis; Hyginus makes him son of Lernus from Calydon.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+    }
+  ]
+}

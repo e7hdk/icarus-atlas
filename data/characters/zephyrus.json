@@ -1,0 +1,37 @@
+{
+  "id": "zephyrus",
+  "name": "Zephyrus",
+  "greekName": "Zephyros (Ζέφυρος)",
+  "romanName": "Favonius",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the west wind",
+    "spring breezes",
+    "gentle weather"
+  ],
+  "summary": [
+    {
+      "text": "The West Wind, son of Astraeus and Eos the Dawn — brightening Zephyrus among the strong-hearted winds Hesiod sets beside Boreas and Notus, one of the three god-sent winds that bless men when they blow together.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names him first among the winds Eos bore to Astraeus: brightening Zephyrus, and Boreas headlong in his course, and Notus — born when a goddess mated in love with a god. Apollodorus compresses the brood to winds and stars; Hyginus adds Favonius as the Latin name of the same west wind.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 378–382; Bibliotheca 1.2.4; Fabulae Preface"
+    },
+    {
+      "text": "Later poets give him cult and story on the ground. Pausanias records an altar of Zephyrus beside a sanctuary of Demeter and her daughter near Athens, where the nymphs and the gods were worshipped together.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.37.2"
+    },
+    {
+      "text": "Ovid, telling how Jupiter allotted the four quarters of the air to the wind-brothers, sends Zephyrus to the western shores warmed by the setting sun — Eurus to the dawn, Boreas to Scythia, and the south to Austor.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 1.56–66"
+    }
+  ]
+}

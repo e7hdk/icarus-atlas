@@ -1,0 +1,63 @@
+{
+  "id": "wounding-of-the-chiefs",
+  "title": "The Wounding of the Chiefs",
+  "greekTitle": "Τρωσμὸς τῶν ἀρχόντων",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.11,
+  "summary": {
+    "text": "Agamemnon's aristeia broke against Hector's charge; Diomedes and Odysseus fell wounded; the healer Machaon was carried off until Menelaus saved him — and Ajax alone held the wall while the Trojans assaulted the gates with fire.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 11–12"
+  },
+  "chapters": [
+    {
+      "title": "Agamemnon's day",
+      "text": "Dawn brought Agamemnon's aristeia: the son of Atreus cut down Trojans from the plain to the wall until his armpits ran with sweat and his hands grew weary on the spear. Zeus sent Iris to Hector with a warning — when Agamemnon was wounded, then Hector might drive the host. The king was speared in the belt when he stood his ground too long; he left the field in his chariot, and the tide turned.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 11.1–296"
+    },
+    {
+      "title": "Diomedes and Odysseus down",
+      "text": "Diomedes fought on until Paris' arrow struck his foot; he climbed into his chariot and withdrew. Odysseus stood alone among the Trojans until he was speared; companions bore him out senseless. The Achaean captains fell one by one — Eurypylus wounded, Teucer driven back — and Hector called on Troy to fire the ships. The nested episode on the Night Raid tells Book 10, when Odysseus and Diomedes would strike back in darkness; here the daylight slaughter leaves the host leaderless on the wall.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 11.297–600"
+    },
+    {
+      "title": "Machaon and the healers",
+      "text": "Eurypylus fell with an arrow in the thigh; Nestor lifted him into his chariot and drove to the ships, passing the wounded captains sitting in the sand. Machaon the healer, wounded by Paris, was carried off in a chariot until Menelaus and Ajax ran to rescue him — for the host could not afford to lose the sons of Asclepius. Achilles, watching from his ship, sent Patroclus to learn who was hurt; the first step toward the armour Patroclus would borrow.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 11.601–844"
+    },
+    {
+      "title": "Ajax on the wall",
+      "text": "Book 12 opens with the Trojans assaulting the wall the Achaeans had built — Hector and Polydamas at the gates, Sarpedon and Glaucus among the Lycians. Ajax and Teucer held the tower; stones and arrows beat back the first wave. Poseidon and Hera chafed on Olympus while Zeus slept, but the law held: no god might fight openly yet. The wall would stand one more day because Telamonian Ajax would not yield a stone's breadth — until Hector found the weak gate in the next book's battle for the ships.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 12.1–471"
+    }
+  ],
+  "cast": [
+    { "id": "agamemnon", "name": "Agamemnon", "role": "King wounded after his aristeia" },
+    { "id": "hector", "name": "Hector", "role": "Captain who turned the tide" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Wounded by Paris' arrow" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Wounded and borne from the field" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "He who held the wall" },
+    { "id": "teucer", "name": "Teucer", "role": "Archer beside Ajax on the tower" },
+    { "id": "nestor", "name": "Nestor", "role": "He who drove Eurypylus to the ships" },
+    { "id": "menelaus", "name": "Menelaus", "role": "He who helped save Machaon" },
+    { "id": "paris", "name": "Paris", "role": "Archer who wounded Diomedes and Machaon" },
+    { "id": "patroclus", "name": "Patroclus", "role": "Sent by Achilles to learn who was hurt" },
+    { "id": "achilles", "name": "Achilles", "role": "Watcher from the ships" },
+    { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally at the wall assault" },
+    { "id": "glaucus-lycian", "name": "Glaucus", "role": "Lycian captain at the gates" },
+    { "id": "polydamas", "name": "Polydamas", "role": "Counsellor beside Hector at the wall" },
+    { "name": "Machaon", "role": "Healer wounded and rescued" },
+    { "id": "eurypylus-telephus", "name": "Eurypylus", "role": "Captain wounded in the thigh" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Wall, gates, and plain of slaughter" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "11–12" }
+  ]
+}

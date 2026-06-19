@@ -1,0 +1,31 @@
+{
+  "id": "phyleus-dulichium",
+  "name": "Phyleus",
+  "greekName": "Phyleus (Φυλεύς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "exile on Dulichium",
+    "father of Meges"
+  ],
+  "summary": [
+    {
+      "text": "Son of Augeias who of old went to dwell in Dulichium in wrath against his father, dear to Zeus, and begat Meges, captain of forty ships at Troy.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.628–637; Bibliotheca 2.5.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names him among the island lords of the western sea: the horseman Phyleus, whom Zeus loved, left his father's house in anger and made his home on Dulichium, where his son Meges, peer of Ares, mustered the Echinae and led them against Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.628–637; 5.45–80; 10.90–125"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "amphitrite",
+  "name": "Amphitrite",
+  "greekName": "Amphitritē (Ἀμφιτρίτη)",
+  "romanName": "Amphitrite",
+  "type": "nymph",
+  "kinds": ["oceanid", "nereid"],
+  "cluster": "chthonic",
+  "domains": [
+    "queen of the sea",
+    "consort of Poseidon",
+    "mother of Triton",
+    "calmer of the waves"
+  ],
+  "summary": [
+    {
+      "text": "Sea-queen and wife of Poseidon — named among the Oceanids in one telling and among the Nereids born to Nereus and Doris in another — by whom the Earth-Shaker begot wide-ruling Triton.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 240–264, 930–933; Bibliotheca 1.2.2, 1.2.7",
+      "topic": "amphitrite-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod counts Amphitrite twice in the genealogy of the deep. She appears first among the lovely daughters of Nereus and rich-haired Doris, alongside Thetis, Galatea and Galene; later, as consort of Poseidon the loud-roarer, she bears great wide-ruling Triton, who owns the depths of the sea and dwells with his dear mother and lordly father in their golden house.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 240–264, 930–933",
+      "topic": "amphitrite-parentage"
+    },
+    {
+      "text": "Apollodorus likewise lists her among the Nereids born to Nereus and Doris — Cymothoe, Thetis, Galatea, Amphitrite among the fifty names — yet in his catalogue of Oceanids he sets her among the daughters of Ocean and Tethys beside Doris, Electra, Eurynome and Metis. The two parentages stand unreconciled in the ancient sources.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.2.2, 1.2.7",
+      "topic": "amphitrite-parentage"
+    },
+    {
+      "text": "Homer rarely names the queen, but the sea itself speaks through her epithet: the deep is \"Amphitrite's\" — the waves Odysseus crosses, the monsters her realm breeds, the waters Proteus and Nereus rule beneath her husband's trident. She is the personified consort of the portion Poseidon drew when the three brothers shook lots for the universe.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.91, 5.422, 12.97"
+    },
+    {
+      "text": "Ovid paints her among the azure company of the sea — Doris and all her daughters, some amid the waves, others drying their sea-green hair upon the bank — each made to resemble her sisters, yet not one assigned the same appearance. Amphitrite belongs to that shimmering crowd of Nereids who people the Mediterranean imagination even when the poet does not stop to name her parentage.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.1–148"
+    }
+  ]
+}

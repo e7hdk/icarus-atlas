@@ -1,0 +1,72 @@
+{
+  "id": "sthenelus-epigoni",
+  "name": "Sthenelus",
+  "greekName": "Σθένελος",
+  "romanName": "Sthenelus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Capaneus",
+    "the Epigoni",
+    "Diomedes' companion at Troy"
+  ],
+  "summary": [
+    {
+      "text": "Son of Capaneus and comrade of Diomedes at Troy, Sthenelus marched with the Epigoni against Thebes and in the Iliad answers Agamemnon's reproof by boasting that his generation took the city their fathers could not.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Iliad 2.564–565, 4.404–410; Bibliotheca 3.7.2; Fabulae 71"
+    },
+    {
+      "text": "Not to be confused with Sthenelus son of Perseus, king of Mycenae and father of Eurystheus.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 2.564–565; Bibliotheca 2.4.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Sthenelus among the Epigoni who made war on Thebes a second time — son of Capaneus, alongside Alcmaeon, Diomedes, Thersander, and the other sons of the fallen Seven.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.2; Fabulae 71"
+    },
+    {
+      "text": "At Troy he rides beside Diomedes as charioteer and companion. When Agamemnon taunts Diomedes for cowardice, Sthenelus son of glorious Capaneus makes the answer: Tydeus was a lesser man, yet we declare ourselves better by far than our fathers — we took seven-gated Thebes when we twain gathered a lesser host against stronger walls.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 4.404–410"
+    },
+    {
+      "text": "When Patroclus' death turned the battle, Sthenelus was among those who rallied; and when Euryalus son of Mecisteus fell, Sthenelus ran up at once and stripped the armour from the body of his comrade in arms.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 16.650–665"
+    },
+    {
+      "text": "Before Troy he belonged also to Argive kingship in Pausanias' reckoning: Iphis son of Alector left him the native third of the divided kingdom, and when Cyanippus died without issue he took the Biantid share as well — reuniting two of the three kingdoms until his son Cylarabes held Argos sole.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chryses-paros",
+  "name": "Chryses",
+  "greekName": "Chrysēs (Χρύσης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Minos on Paros",
+    "slain by Heracles"
+  ],
+  "summary": [
+    {
+      "text": "One of the sons of Minos who dwelt on Paros when Heracles put in to the island and killed him and his brothers after two of the hero's companions were slain.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles sailed with a band of comrades to fetch the belt of Hippolyte, he put in to Paros, inhabited by the sons of Minos — Eurymedon, Chryses, Nephalion, and Philolaus. Two of those in Heracles' ship landed and were killed by the sons of Minos; indignant, Heracles killed the sons of Minos and gave the island to Androgeus' companions.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.9"
+    },
+    {
+      "text": "Apollodorus records separately that when tidings of Androgeus' death were brought to Minos as he was sacrificing to the Graces in Paros, the king threw away the garland from his head and stopped the music of the flute — yet completed the sacrifice; hence in Paros they sacrifice to the Graces without flutes and garlands.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "paros",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

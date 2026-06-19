@@ -1,0 +1,59 @@
+{
+  "id": "callisto-arcas",
+  "title": "Callisto and Arcas",
+  "greekTitle": "Καλλιστὼ καὶ Ἀρκάς",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 4.03,
+  "summary": {
+    "text": "Callisto daughter of Lycaon, sworn companion of Diana in the Arcadian hunt, was loved by Jove in the goddess' likeness and bore Arcas — then, whether by Juno's wrath or Zeus' concealment, became a bear; years later her son nearly speared her in the wood, and Jupiter set both among the stars as the Great and Little Bear.",
+    "sources": ["ovid", "apollodorus", "hyginus", "pausanias"],
+    "citation": "Ov. Met. 2.401–530; Apollod. 3.8.2; Hyg. Fab. 177; Paus. 8.3.6–7"
+  },
+  "chapters": [
+    {
+      "title": "Companion of Diana",
+      "text": "Callisto daughter of Lycaon wore Diana's garb and hunted in her train, swearing to remain a maid. Apollodorus records rival parentages — Hesiod made her a nymph, Asius a daughter of Nycteus, Pherecydes of Ceteus — but all agree she was beloved of Artemis until heaven intervened.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.8.2; Hyg. Astr. 2.1.1"
+    },
+    {
+      "title": "Jove in disguise",
+      "text": "Jove came to her in Diana's likeness — or, Apollodorus adds, in Apollo's — and overcame the unwilling nymph. When her time came she bore Arcas, who would give Arcadia its name. She hid the pregnancy as long as she could from the goddess whose company she had sworn to keep.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 2.401–465; Apollod. 3.8.2"
+    },
+    {
+      "title": "The bear",
+      "text": "Ovid and Hyginus make Juno seize Callisto by the hair and change her into a bear when the birth of Arcas proves the intrigue. Apollodorus instead has Zeus himself transform her to hide the affair from Hera, who then persuades Artemis to shoot the beast — while others say Diana killed her for breaking her vow of maidenhood.",
+      "sources": ["ovid", "apollodorus", "hyginus"],
+      "citation": "Ov. Met. 2.466–495; Apollod. 3.8.2; Hyg. Fab. 177",
+      "topic": "callisto-transformation"
+    },
+    {
+      "title": "Arcas and the stars",
+      "text": "Jove snatched the infant Arcas to be reared in Arcadia while the mother wandered as a bear. Years later, hunting on Erymanthus, Arcas drew his spear against the beast that was Callisto — and Jove stayed the crime by lifting both into heaven as neighboring constellations. Pausanias knew her grave still shown in Arcadia, though Homer had long since named the Bear among the stars.",
+      "sources": ["ovid", "apollodorus", "pausanias"],
+      "citation": "Ov. Met. 2.496–530; Apollod. 3.8.2; Paus. 8.3.6–7"
+    }
+  ],
+  "cast": [
+    { "id": "callisto", "name": "Callisto", "role": "Arcadian huntress turned into the Great Bear" },
+    { "id": "arcas", "name": "Arcas", "role": "Son of Zeus and Callisto, eponym of Arcadia" },
+    { "id": "zeus", "name": "Zeus", "role": "Jove, who loved Callisto and set her among the stars" },
+    { "id": "hera", "name": "Hera", "role": "Juno, who transformed Callisto in Ovid's telling" },
+    { "id": "artemis", "name": "Artemis", "role": "Diana, whose company Callisto swore to keep" },
+    { "name": "Lycaon", "role": "Arcadian king, Callisto's father" }
+  ],
+  "places": [
+    { "name": "Arcadia", "role": "Land of Lycaon, Callisto, and Arcas" },
+    { "name": "Mount Erymanthus", "role": "Wood where Arcas nearly killed his mother" },
+    { "id": "mantinea", "name": "Mantinea", "role": "Arcadian city that kept Arcas' grave" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "2.401–530" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.8.2" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "177" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "8.3.6–7" }
+  ]
+}

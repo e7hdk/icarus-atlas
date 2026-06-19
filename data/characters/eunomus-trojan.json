@@ -1,0 +1,28 @@
+{
+  "id": "eunomus-trojan",
+  "name": "Eunomus",
+  "greekName": "Eunomos (Εὔνομος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Agamemnon's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom lord Agamemnon slew in the same onrush in which he struck down Thoön and Chersidamas — no homonym in the atlas.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "story": [
+    {
+      "text": "Agamemnon leapt among the foremost fighters with sharp spear and laid low Deïopites, then Thoön and Eunomus, before stabbing Chersidamas upon the navel beneath his bossed shield as the warrior leapt down from his car.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

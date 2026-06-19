@@ -1,0 +1,36 @@
+{
+  "id": "chalcodon-abantes",
+  "name": "Chalcodon",
+  "greekName": "Chalkodōn (Χαλκοδών)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Abantes of Euboea",
+    "father of Elephenor"
+  ],
+  "summary": [
+    {
+      "text": "Father of Elephenor and lord of the great-souled Abantes — the long-haired spearmen of Euboea and Chalcis whom Homer calls a scion of Ares.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545; 4.457–475"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships Homer names Elephenor captain of the Abantes, son of Chalcodon and scion of Ares, who held Carystus and dwelt in Styra and led the Euboean host from Chalcis to Troy with forty ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    },
+    {
+      "text": "Apollodorus counts Elephenor son of Chalcodon among the heroes who sailed on the Argonautic voyage, and in the Epitome of the Trojan catalogue names his mother Alcyone while repeating the same captaincy over the Euboeans.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16; Epitome 3.11"
+    }
+  ],
+  "residences": [
+    {
+      "city": "chalcis",
+      "sources": ["homer"]
+    }
+  ]
+}

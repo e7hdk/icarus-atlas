@@ -1,16 +1,18 @@
 'use client';
 
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { MapLayerMenu } from '@/components/hud/MapLayerMenu';
 
 /** The search + settings cluster shared by the galaxy HUD and the 2D pages.
  *  On mobile the search affordance lives inside the settings panel. */
-export function HudActions() {
+export function HudActions({ mapLayers = false }: { mapLayers?: boolean }) {
   const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
   const settingsOpen = useGalaxyStore((state) => state.settingsOpen);
   const setSettingsOpen = useGalaxyStore((state) => state.setSettingsOpen);
 
   return (
     <div className="ml-auto flex items-center gap-2.5">
+      {mapLayers && <MapLayerMenu />}
       <button
         type="button"
         onClick={() => setSearchOpen(true)}

@@ -1,0 +1,31 @@
+{
+  "id": "agelaus-lydian",
+  "name": "Agelaus",
+  "greekName": "Agelaos (Ἀγέλαος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Omphale and Heracles",
+    "Lydian royal stem"
+  ],
+  "summary": [
+    {
+      "text": "Son whom Heracles begot on Omphale queen of Lydia during his servitude at her court — from Agelaus the Lydian house of Croesus was descended, though Croesus himself lies outside the seven atlas lenses.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Delphic oracle sold Heracles into bondage, Omphale daughter of Iardanes bought him and he served her as a slave in Lydia. Apollodorus counts among Heracles' many children by Omphale a son Agelaus, from whom the family of Croesus was descended — the genealogical bridge between the hero's Lydian sojourn and later Lydian kingship.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.6.3, 2.7.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

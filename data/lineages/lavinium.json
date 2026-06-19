@@ -1,0 +1,19 @@
+{
+  "city": "lavinium",
+  "reigns": [
+    {
+      "ruler": "Latinus",
+      "characterId": "latinus-king",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 14.639–761; Fabulae 127",
+      "note": "King of the Latins whom Ovid names son of Faunus — disambiguated as latinus-king from Odysseus' son Latinus in Apollodorus Epit. 7.24 and Hyginus' Telegonus strand."
+    },
+    {
+      "ruler": "Aeneas",
+      "characterId": "aeneas",
+      "sources": ["ovid", "pausanias", "hyginus"],
+      "citation": "Metamorphoses 14.639–762, 14.101–119; Description of Greece 3.22.11; Fabulae 273",
+      "note": "Married Lavinia and succeeded to Latinus' kingdom after war with Turnus — the westward destiny Apollodorus Epit. 5.21 prepares when the Greeks spare him at Troy."
+    }
+  ]
+}

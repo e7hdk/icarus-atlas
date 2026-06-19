@@ -1,0 +1,46 @@
+{
+  "id": "ptolemy-theban",
+  "name": "Ptolemy",
+  "greekName": "Ptolemaios (Πτολεμαῖος)",
+  "romanName": "Ptolemy",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Damasichthon",
+    "the Peneleid succession",
+    "father of Xanthus"
+  ],
+  "summary": [
+    {
+      "text": "In Pausanias' closing Theban king-list, Ptolemy is the son of Damasichthon and the father of Xanthus — the penultimate generation before sole kingship ended at seven-gated Thebes.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    },
+    {
+      "text": "Not to be confused with the many other bearers of the name in Greek myth and history; this Ptolemy belongs only to Pausanias' brief Peneleid roll after Autesion's departure.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias names him in a single genealogical clause: Damasichthon had a son Ptolemy, who was the father of Xanthus. He stands between the king chosen when Autesion migrated to the Dorians and the last sole ruler whose death by treachery in a duel persuaded the Thebans to divide their government.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

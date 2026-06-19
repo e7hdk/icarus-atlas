@@ -3,25 +3,47 @@
   "name": "Andromeda",
   "greekName": "Andromeda (Ἀνδρομέδα)",
   "type": "mortal",
-  "domains": ["the rescued princess"],
+  "domains": [
+    "the rescued princess"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "The beautiful princess of Aethiopia who was chained to a rock as a sacrifice to a sea monster. She was rescued by Perseus and became his devoted wife.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Bibliotheca 2.4.3; Metamorphoses 4.663; Fabulae 64"
     }
   ],
   "story": [
     {
       "text": "When her mother Cassiopeia boasted that she was more beautiful than the Nereids, Poseidon sent a flood and a sea monster (Cetus) to ravage Aethiopia. To appease the god, her father King Cepheus was forced to chain Andromeda naked to a rock by the sea.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Bibliotheca 2.4.3; Metamorphoses 4.663; Fabulae 64"
     },
     {
       "text": "As the monster approached to devour her, the hero Perseus flew by on his winged sandals. Struck by her beauty, he offered to kill the monster if he could have her hand in marriage. True to his word, Perseus slew the beast, fought off her treacherous former fiancé Phineus, and took Andromeda back to Greece to reign as queen of Mycenae.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Bibliotheca 2.4.3; Metamorphoses 4.740, 5.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ]
     }
   ]
 }

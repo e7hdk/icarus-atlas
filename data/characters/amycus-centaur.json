@@ -1,0 +1,34 @@
+{
+  "id": "amycus-centaur",
+  "name": "Amycus",
+  "greekName": "Amykos (Ἄμυκος)",
+  "romanName": "Amycus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "spoiling the sanctuary"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Ophion at Peirithous' wedding — the first centaur to spoil the inner sanctuary, snatching a chandelier to strike Celadon the Lapith.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.315–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "When cups and wine-casks became weapons, Amycus the Ophionid was first to plunder the shrine's gifts: he snatched a chandelier blazing with lamps, lifted it high as a bull-stunner, and smashed it against the Lapith Celadon's forehead. He is not Amycus king of the Bebryces, son of Poseidon, whom Pollux killed on the Argonaut voyage.",
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
+      "citation": "Metamorphoses 12.315–463; Bibliotheca 1.9.20"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

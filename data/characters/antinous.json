@@ -1,0 +1,65 @@
+{
+  "id": "antinous",
+  "name": "Antinous",
+  "greekName": "Antinoos (Ἀντίνοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": ["chief of the suitors", "adversary of Telemachus and Odysseus"],
+  "summary": [
+    {
+      "text": "Son of Eupeithes and the boldest of the suitors on Ithaca, who led the wooers devouring Odysseus' house, plotted Telemachus' death, and was the first slain when the returned king revealed himself with the bow.",
+      "sources": ["homer"],
+      "citation": "Odyssey 1.365–420; 4.658–683; 21–22"
+    },
+    {
+      "text": "Head of the twelve suitors from Ithaca itself in Apollodorus' island catalogue — listed first after the roll opens at Epitome 7.30.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    },
+    {
+      "text": "Among the island contingents Apollodorus has just catalogued, Antinous and his fellows journeyed to Odysseus' palace and consumed the king's herds at their feasts while Penelope held them off with the shroud stratagem.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.31"
+    },
+    {
+      "text": "Apollodorus records a variant in which Penelope was seduced by Antinous and sent away by Odysseus to her father — a tradition opposed to Homer's faithful queen.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.38",
+      "topic": "penelope-antinous-affair"
+    }
+  ],
+  "story": [
+    {
+      "text": "From the first assembly Telemachus called, Antinous answered with scorn: the gods themselves, he said, were teaching the boy vaunting speech, and he prayed that Cronos' son might never make Telemachus king in sea-girt Ithaca. He claimed the wooers were not to blame — Penelope's own wiles, weaving and unravelling Laertes' shroud, had led them on for three years.",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.85–125"
+    },
+    {
+      "text": "While Telemachus voyaged to Pylos and Sparta, the suitors lay in wait to murder him at sea; Antinous manned the ambush. When Odysseus returned disguised as a beggar, Antinous was the first to strike him with a stool and the first to die when the hero shot him through the neck as he lifted a cup of wine — the opening shot of the mnesterophonia.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.658–683; 17.465–487; 22.8–21"
+    },
+    {
+      "text": "Apollodorus preserves the darker epilogue in which Antinous seduced Penelope and Odysseus, on his return, sent his wife away to Icarius rather than keep her — a tale that contradicts the recognition scene Homer tells, and in which the chief suitor whom the king shoots first at the wine-bowl survives only as the villain of a slander Homer never repeats.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.38",
+      "topic": "penelope-antinous-affair"
+    },
+    {
+      "text": "In the Epitome's island roll, Antinous heads the twelve wooers Apollodorus assigns specifically to Ithaca itself — before Pronous, Liodes, Eurynomus, Amphimachus, Amphialus, Promachus, Amphimedon, Aristratus, Helenus, Dulicheus, and Ctesippus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.30"
+    },
+    {
+      "text": "Apollodorus bridges the island catalogues to the occupation of the house: the wooers, journeying to the palace, consumed Odysseus' herds at their feasts while Penelope was compelled to vow that she would wed when Laertes' shroud was finished — the same three-year weaving stratagem in which Antinous later claimed the suitors themselves were blameless.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.31; Odyssey 2.85–125"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"]
+    }
+  ]
+}

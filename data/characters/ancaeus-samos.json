@@ -1,0 +1,37 @@
+{
+  "id": "ancaeus-samos",
+  "name": "Ancaeus",
+  "greekName": "Ankaios (Ἀγκαῖος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Parthenia of Samos",
+    "Argonautic helmsman",
+    "seafaring"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon and the nymph Astypalaea, a proud Samian Argonaut who left Parthenia — the seat of Imbrasian Hera — and took the Argo's helm after Tiphys died among the Mariandyni.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Arg. 1.185–189, 2.851–898; Bibliotheca 1.9.23"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names two sons of Poseidon among Jason's crew — Erginus of Miletus and proud Ancaeus, who left Parthenia, the seat of Imbrasian Hera — and says both boasted their skill in seacraft and in war.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.185–189"
+    },
+    {
+      "text": "When Tiphys the pilot perished among the Mariandynians, Hera kindled courage in Ancaeus, whom Astypalaea bore to Poseidon near the waters of Imbrasus; he urged the company onward and steered the ship through the clashing rocks and on to Colchis.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 2.851–898; Bibliotheca 1.9.23"
+    }
+  ],
+  "residences": [
+    {
+      "city": "samos",
+      "sources": ["apollonius"]
+    }
+  ]
+}

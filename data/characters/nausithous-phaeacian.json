@@ -1,0 +1,48 @@
+{
+  "id": "nausithous-phaeacian",
+  "name": "Nausithous",
+  "greekName": "Nausithoos (Ναυσίθοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "founder of the Phaeacians",
+    "son of Poseidon",
+    "father of Alcinous"
+  ],
+  "summary": [
+    {
+      "text": "Godlike founder of the Phaeacians on Scheria — son of Poseidon and Periboea, who led his people from Hypereia away from the Cyclopes, walled their city, and begat Rhexenor and Alcinous before his death.",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–13, 7.40–75, 8.550–585"
+    },
+    {
+      "text": "Hesiod names a different Nausithous as a son of Odysseus and Calypso, alongside Nausinous — a separate namesake in the genealogical tradition, not the Phaeacian king Homer makes son of the earth-shaker.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 995–1015",
+      "topic": "nausithous-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer says the Phaeacians once dwelt in spacious Hypereia hard by the Cyclopes, men overweening in pride who plundered them continually. Nausithous the godlike removed them, led and settled them in Scheria far from men that live by toil, drew a wall about the city, built houses, made temples for the gods, and divided the ploughlands — the founding work his son Alcinous would inherit.",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–13"
+    },
+    {
+      "text": "Athena told Odysseus that Arete and Alcinous were sprung from the same line: Nausithous was born first from Poseidon and Periboea, comeliest of women, youngest daughter of great-hearted Eurymedon who once was king over the insolent Giants — and Nausithous begat Rhexenor and Alcinous before he himself was destroyed.",
+      "sources": ["homer"],
+      "citation": "Odyssey 7.40–75"
+    },
+    {
+      "text": "Alcinous remembered his father's prophecy: Nausithous had said that Poseidon was wroth with the Phaeacians because they gave safe convoy to all men, and that someday the earth-shaker would smite a returning ship and pile a mountain about their city — the doom that fell when Odysseus was carried home.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.550–585; 13.1–23"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corcyra",
+      "sources": ["homer"]
+    }
+  ]
+}

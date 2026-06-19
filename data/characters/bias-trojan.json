@@ -1,0 +1,33 @@
+{
+  "id": "bias-trojan",
+  "name": "Bias",
+  "greekName": "Bias (Βίας)",
+  "type": "hero",
+  "domains": ["father of Laogonus and Dardanus", "Trojan warrior"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan father of Laogonus and Dardanus, sons twain whom Achilles thrust from their chariot to the ground in the rout — distinct from the Pylian shepherd (`bias-pylian`), the Aeolid (`bias-aeolid`), the Athenian captain (`bias-athenian`), and the Dulichian suitor (`bias-dulichium`).",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 20.455–485; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then setting upon Laogonus and Dardanus, sons twain of Bias, Achilles thrust them both from their chariot to the ground, smiting the one with a cast of his spear and the other with his sword in close fight.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    },
+    {
+      "text": "Apollodorus counts Bias among the many sons whom Priam begot by other women, in the long roll beside Dryops, Lycaon, and Chromius.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

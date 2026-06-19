@@ -1,0 +1,43 @@
+{
+  "id": "chloris-neleus",
+  "name": "Chloris",
+  "greekName": "Chloris (Χλωρίς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Pylos",
+    "mother of the Neleids",
+    "the bride-price of Pero"
+  ],
+  "summary": [
+    {
+      "text": "Queen of Pylos and wife of Neleus, who bore Nestor, Periclymenus, Chromius, and the maiden Pero — whose suitors had to drive the cattle of Phylacus before Neleus would grant her hand.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.281–296; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the underworld catalogue Tyro's son Neleus dwells in sandy Pylos, and Homer names his queen Chloris — youngest daughter of Amphion son of Iasus, who once ruled mightily in Orchomenus of the Minyae. By Neleus she bore glorious children: Nestor, Chromius, lordly Periclymenus, and noble Pero, a wonder to men. All the country round sought Pero in marriage, but Neleus would give her to none save the man who drove from Phylace the kine of mighty Iphicles.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.275–296"
+    },
+    {
+      "text": "Apollodorus tells the same marriage after Neleus was banished from Iolcus and came to Messene: he founded Pylos and married Chloris, daughter of Amphion, and by her had a daughter Pero and many sons — among them Nestor and Periclymenus, whom Poseidon granted the power of changing his shape.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Hyginus makes her the sole daughter to escape the arrows when Apollo and Diana destroyed Niobe's children; she married Neleus, while Amphion died after attacking Apollo's temple — a line that would bind the Theban house of Tantalus to sandy Pylos if the same Chloris is meant.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 9–10",
+      "topic": "niobids-survivors"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

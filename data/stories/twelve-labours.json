@@ -1,0 +1,122 @@
+{
+  "id": "twelve-labours",
+  "title": "The Twelve Labours",
+  "greekTitle": "οἱ ἄθλοι",
+  "kind": "episode",
+  "parent": "heracles-cycle",
+  "era": 6.5,
+  "summary": {
+    "text": "Eurystheus at Mycenae set Heracles twelve tasks — to kill or capture beasts no mortal could tame, to cleanse what could not be cleansed, and to descend alive into Hades — and though two were later disqualified, the hero finished them all and won the immortality the oracle had promised.",
+    "sources": ["apollodorus", "hesiod", "hyginus", "pausanias"],
+    "citation": "Apollod. 2.5.1–2.5.12; Hes. Theog. 287–294; Fab. 30–31; Paus. 2.15.2–2.15.3"
+  },
+  "chapters": [
+    {
+      "title": "The Nemean Lion",
+      "text": "His first labour was the lion of Nemea, offspring of Typhon — or of Orthrus and Echidna, or dropped from the Moon, for the sources disagree on its birth. Its hide turned every weapon; Heracles strangled it with his arms and ever after wore the skin as armour.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.5.1; Fab. 30",
+      "topic": "nemean-lion-parentage"
+    },
+    {
+      "title": "The Lernaean Hydra",
+      "text": "At Lerna he fought the many-headed hydra, child of Typhon and Echidna, whose heads doubled when cut. Iolaus seared the necks with fire as Heracles struck them off; he dipped his arrows in the beast's gall, and Eurystheus refused to count the labour because Iolaus had helped.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.5.2"
+    },
+    {
+      "title": "The Ceryneian Hind",
+      "text": "The third task was to bring alive the golden-horned hind of Artemis, sacred to the goddess. Heracles chased it a full year from Oenoe to the Hyperboreans and back before he could capture it without harm.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.5.3; Paus. 2.15.3"
+    },
+    {
+      "title": "The Erymanthian Boar",
+      "text": "He drove the great boar of Mount Erymanthus into deep snow, bound it, and carried it living to Mycenae — and on the way he visited the centaur Pholus, whose hospitality ended in the accidental opening of the wine that brought the other centaurs against him.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.5.4"
+    },
+    {
+      "title": "The Augean stables",
+      "text": "Eurystheus ordered him to cleanse the stables of Augeas, king of Elis, in a single day — stables that held three thousand cattle and had never been cleaned. Heracles turned the rivers Alpheus and Peneus through them; Augeas refused the promised tenth of the herd, and the hero later made war on him and slew him.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.5.5; Paus. 5.1.9",
+      "topic": "augeas-father"
+    },
+    {
+      "title": "The Stymphalian Birds",
+      "text": "At the lake of Stymphalus in Arcadia he drove off the man-eating birds with brazen castanets Athena gave him, shooting them down as they rose in flight.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.5.6; Fab. 30"
+    },
+    {
+      "title": "The Cretan Bull",
+      "text": "He captured the bull Poseidon had sent up from the sea for Minos — the same beast that carried Europa or ravaged Crete — and brought it alive to Eurystheus, who let it go; it wandered to Marathon and was slain later by Theseus.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.5.7"
+    },
+    {
+      "title": "The mares of Diomedes",
+      "text": "At Thrace he fed King Diomedes, son of Ares, to his own man-eating mares and drove the mares back to Eurystheus.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.5.8; Fab. 31"
+    },
+    {
+      "title": "The girdle of Hippolyta",
+      "text": "For the ninth labour he took the girdle of Hippolyta, queen of the Amazons — daughter of Ares, though some name the queen Antiope or Melanippe. Hera stirred the Amazons to attack; Hippolyta was slain, and Heracles carried off the girdle.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.5.9; Fab. 30"
+    },
+    {
+      "title": "The cattle of Geryon",
+      "text": "He crossed to Erytheia, slew the three-bodied Geryon and his hound Orthrus, and drove the red cattle of the western king back through Europe — pausing to set up pillars at the straits and to kill the Libyan giant Antaeus, who drew strength from his mother Earth each time he touched the ground.",
+      "sources": ["apollodorus", "hesiod", "hyginus"],
+      "citation": "Apollod. 2.5.10; Theog. 287–294; Fab. 31"
+    },
+    {
+      "title": "The apples of the Hesperides",
+      "text": "Eurystheus would not accept the cattle labour because Heracles had been paid for his help, so he sent him for the golden apples of the Hesperides. Atlas fetched them while Heracles held up the sky; or the hero killed the sleepless dragon Ladon and took the fruit himself.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Apollod. 2.5.11; Theog. 215, 333"
+    },
+    {
+      "title": "Cerberus",
+      "text": "The last labour was to bring up Cerberus from Hades. Descending at Taenarum, Heracles wrestled the hound of Pluto with bare hands and carried him to Eurystheus, who fled in terror into his jar.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.5.12; Fab. 31"
+    }
+  ],
+  "cast": [
+    { "id": "heracles", "name": "Heracles", "role": "The labourer" },
+    { "id": "eurystheus", "name": "Eurystheus", "role": "King who set the tasks" },
+    { "id": "iolaus", "name": "Iolaus", "role": "Nephew who burned the hydra's necks" },
+    { "id": "alcmene", "name": "Alcmene", "role": "Mother who bore the hero" },
+    { "id": "nemean-lion", "name": "The Nemean Lion", "role": "First labour" },
+    { "id": "hydra", "name": "The Lernaean Hydra", "role": "Second labour" },
+    { "id": "ceryneian-hind", "name": "The Ceryneian Hind", "role": "Third labour" },
+    { "id": "erymanthian-boar", "name": "The Erymanthian Boar", "role": "Fourth labour" },
+    { "id": "pholus", "name": "Pholus", "role": "Centaur host on the way to the boar" },
+    { "id": "augeas", "name": "Augeas", "role": "King of the uncleaned stables" },
+    { "id": "stymphalian-birds", "name": "The Stymphalian Birds", "role": "Sixth labour" },
+    { "id": "cretan-bull", "name": "The Cretan Bull", "role": "Seventh labour" },
+    { "id": "diomedes-thrace", "name": "Diomedes of Thrace", "role": "Owner of the man-eating mares" },
+    { "id": "hippolyta", "name": "Hippolyta", "role": "Amazon queen of the girdle" },
+    { "id": "geryon", "name": "Geryon", "role": "Three-bodied keeper of the western cattle" },
+    { "id": "orthrus", "name": "Orthrus", "role": "Geryon's hound" },
+    { "id": "antaeus-giant", "name": "Antaeus", "role": "Libyan giant slain on the cattle road" },
+    { "id": "ladon", "name": "Ladon", "role": "Dragon of the golden apples" },
+    { "id": "cerberus", "name": "Cerberus", "role": "Hound of Hades, last labour" },
+    { "id": "atlas", "name": "Atlas", "role": "Bearer of the sky during the apple quest" }
+  ],
+  "places": [
+    { "name": "Nemea", "role": "Lion's ground" },
+    { "id": "tiryns", "name": "Tiryns", "role": "Where the tasks were set" },
+    { "id": "mycenae", "name": "Mycenae", "role": "Eurystheus' citadel" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.5.1–2.5.12" },
+    { "source": "hesiod", "work": "Theogony", "citation": "287–294, 215, 333" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "30–31" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "2.15.2–2.15.3, 5.1.9" }
+  ]
+}

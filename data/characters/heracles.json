@@ -8,7 +8,10 @@
   "domains": [
     "heroic strength",
     "ordeal and endurance",
-    "the Perseid line"
+    "the Perseid line",
+    "the Twelve Labours",
+    "the Argonaut voyage",
+    "apotheosis"
   ],
   "summary": [
     {
@@ -63,6 +66,137 @@
         "apollodorus"
       ],
       "citation": "Apollodorus, Bibliotheca 2.4.12"
+    },
+    {
+      "text": "Apollodorus numbers him among the Argonauts, though the poets disagree whether he sailed the whole way: in Mysia he lost Hylas to the nymphs and searched while the Argo put out to sea, and some say the ship herself declared she could not bear his weight, or that he was absent serving Omphale.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Argonautica 1.120–135; Fabulae 14"
+    },
+    {
+      "text": "After he overthrew the Minyans of Orchomenus and freed Thebes from their tribute, Creon gave him Megara, his eldest daughter, as a prize of valour. Hera drove him mad, and he slew his children by her and two sons of Iphicles; condemned to exile, he went to Delphi and was told to serve Eurystheus at Tiryns and Mycenae, performing whatever labours the king should set.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.4.11–12; Odyssey 11.269–270"
+    },
+    {
+      "text": "Apollodorus numbers twelve labours, though two were later disqualified: he strangled the Nemean Lion; with Iolaus' help he cut off the heads of the Lernaean Hydra and burned the stumps; he chased the Ceryneian Hind a year and brought it back alive; trapped the Erymanthian Boar; cleansed the stables of Augeas in a day; drove off the Stymphalian Birds; captured the Cretan Bull; fed Diomedes of Thrace to his own mares; took the girdle of Hippolyta; fetched the cattle of Geryon, slaying the hound Orthrus on the way; brought back the apples of the Hesperides after holding up the sky for Atlas and killing the dragon Ladon; and last dragged Cerberus up from Hades.",
+      "sources": [
+        "apollodorus",
+        "hesiod",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.5.1–2.5.12; Theogony 287–294; Fabulae 30–31"
+    },
+    {
+      "text": "Between and after the labours he fought beside the gods at Phlegra against the Giants, sacked Troy when Laomedon twice cheated him of the mares promised for saving Hesione from the sea-monster, served Omphale in Lydia dressed in women's robes, and wrestled the river-god Achelous for Deianira, daughter of Oeneus. By Deianira he begot Hyllus and Macaria; by Auge in Arcadia, Telephus; and Tlepolemus, who would lead Rhodes to Troy.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Iliad 2.653–670, 5.640–651; Bibliotheca 2.5.9, 2.6.1–2.7.8; Description of Greece 8.5.1"
+    },
+    {
+      "text": "When Eurytus of Oechalia refused him Iole though he had surpassed the archer's trial, Heracles sacked the city and carried the princess away. Deianira, fearing a rival, sent a shirt steeped in the blood of the centaur Nessus, whom Heracles had shot for trying to ravish her; the poison ate into his flesh on Mount Oeta. He built his pyre, and Philoctetes lit it at last; then a cloud took him up, and on Olympus he was made immortal and wed to Hebe, while in Hades his shade walked among the heroes Odysseus saw.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.7.7; Metamorphoses 9.1–272; Odyssey 11.601–627"
+    },
+    {
+      "text": "Hesiod says that when Heracles had finished his grievous labours he dwelt in joy with Hebe, the fair-ankled child of great Zeus and Hera, in snowy Olympus — the apotheosis that Homer sets against the hero's shade in the house of Hades, yet both traditions agree that the son of Alcmene passed from mortal agony into the company of the gods.",
+      "sources": [
+        "hesiod",
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Theogony 950–955; Odyssey 11.601–627; Bibliotheca 2.7.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    },
+    {
+      "city": "tiryns",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "kos",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ephesus",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "sardis",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "thasos",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "icaria",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "tenos",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ]
+    },
+    {
+      "city": "cichyrus",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "croton",
+      "sources": [
+        "ovid"
+      ]
+    },
+    {
+      "city": "rhegium",
+      "sources": [
+        "apollodorus"
+      ]
     }
   ]
 }

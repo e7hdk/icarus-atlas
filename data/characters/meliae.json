@@ -3,17 +3,26 @@
   "name": "The Meliae",
   "greekName": "Meliai (Μελίαι)",
   "type": "nymph",
-  "domains": ["nymphs of the ash trees", "born of the wounded sky"],
-  "epithets": ["the Ash-Tree Nymphs"],
+  "domains": [
+    "nymphs of the ash trees",
+    "born of the wounded sky"
+  ],
+  "epithets": [
+    "the Ash-Tree Nymphs"
+  ],
   "summary": [
     {
       "text": "Nymphs of the ash trees, born when the blood of the castrated Uranus fell upon Earth — Gaia bore them together with the Erinyes and the Giants.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 187"
     },
     {
       "text": "From these ash-tree nymphs, Hesiod says, sprang the Bronze Race of mortal men.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Works and Days 145",
       "topic": "origin-of-mankind"
     }
@@ -21,26 +30,37 @@
   "story": [
     {
       "text": "The Meliae belong to the most violent moment of Hesiod's cosmogony. When Cronus severed the genitals of his father Uranus with the jagged sickle and the bloody drops gushed forth, Earth received them all, and as the seasons came round she brought forth the strong Erinyes, the great Giants in gleaming armour with long spears in their hands, and the nymphs whom men call the Meliae over the boundless earth. They are thus a brood of the wounded sky: the same spilt blood that fathered the avenging Furies and the war-loving Giants also gave the world its ash-tree nymphs.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 183-187"
     },
     {
       "text": "Their name binds them to the melia, the ash — the tree whose tough wood furnished the shafts of warriors' spears. As tree-nymphs they are spirits of the ash groves, kin in kind to the Dryades and Hamadryads, but singled out by Hesiod as a collective born at the dawn of the present order rather than scattered woodland powers. He names them only as a brood, without individual names or further deeds; they remain a presence rather than a cast of characters, the green and martial inheritance of Uranus's blood standing among the Furies and the Giants.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 187"
     },
     {
       "text": "Hesiod gives them a second, anthropogonic role in the Works and Days. There he tells how Zeus the father made a third, bronze race of men, terrible and strong, sprung from the ash trees — a race that loved the groaning works of war and violence, whose armour, houses, and tools were all of bronze. Ancient readers understood this birth from the ash trees as descent from the Meliae, making the ash-tree nymphs the mothers of the warlike Bronze Race. The reading turns the spear-wood of their name into the lineage of a generation that perished by its own hands.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Works and Days 143-147",
       "topic": "origin-of-mankind"
     },
     {
       "text": "This Hesiodic anthropogony stands apart from the better-known account in which the human race is moulded from clay: Apollodorus, Ovid, and Hyginus all credit Prometheus with shaping the first men from earth and water, with no word of ash trees or of the Meliae. Hesiod alone roots a race of men in the nymphs of the ash, so that the origin of mankind is told two incompatible ways across our sources, and the Meliae bear their part only in his.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Works and Days 143-147",
       "topic": "origin-of-mankind"
     }
   ],
-  "cluster": "titan-ring"
+  "cluster": "titan-ring",
+  "kinds": [
+    "melia"
+  ]
 }

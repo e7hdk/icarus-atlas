@@ -1,0 +1,31 @@
+{
+  "id": "cleoboea-thasos",
+  "name": "Cleoboea",
+  "greekName": "Kleoboia (Κλεόβοια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Mysteries of Demeter on Thasos",
+    "priestess from Paros"
+  ],
+  "summary": [
+    {
+      "text": "The maiden who first brought the orgies of Demeter to Thasos from Paros, shown on a painted chest among the first settlers of the island's cult.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.28.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias, describing a chest at the Amyclaean throne of Apollo, names Cleoboea among those on board the painted boat — still a maiden, holding on her knees a chest such as they make for Demeter — and records that she was the first to bring the orgies of Demeter to Thasos from Paros.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.28.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thasos",
+      "sources": ["pausanias"]
+    }
+  ]
+}

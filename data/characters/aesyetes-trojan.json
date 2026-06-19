@@ -1,0 +1,33 @@
+{
+  "id": "aesyetes-trojan",
+  "name": "Aesyetes",
+  "greekName": "Aisyetēs (Αἰσυήτης)",
+  "type": "hero",
+  "domains": ["father of Alcathous", "Trojan barrow", "aged king"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Alcathous (`alcathous-trojan`), the warrior fostered of Zeus who married Anchises' eldest daughter and led the second Trojan company beside Paris — attested by Homer when Polites keeps watch from the barrow of aged Aesyetes.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.780–815, 13.425–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer remembers Aesyetes through his tomb: Polites, son of Priam, sat as sentinel on the topmost part of the barrow of aged Aesyetes, trusting in his fleetness of foot, until Iris came to Priam in the likeness of the prince.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.780–815"
+    },
+    {
+      "text": "In battle at the wall, the dear son of Aesyetes, fostered of Zeus, led beside Paris until Idomeneus smote him — son by marriage to Anchises, who had wedded Hippodameia, eldest of the Dardanian's daughters.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.80–105, 13.425–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

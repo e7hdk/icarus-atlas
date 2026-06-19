@@ -1,0 +1,33 @@
+{
+  "city": "ephesus",
+  "reigns": [
+    {
+      "ruler": "Otrera",
+      "characterId": "otrera-amazon",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 223, 225; Description of Greece 7.2.7",
+      "note": "Amazon and wife of Mars who first founded the temple of Diana at Ephesus; Pausanias records that women from the Thermodon sacrificed there from of old and fled to the sanctuary from Heracles and Dionysus."
+    },
+    {
+      "ruler": "Coresus",
+      "characterId": "coresus-ephesus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7",
+      "note": "Aboriginal founder of Artemis' sanctuary at Ephesus — distinct from the Calydonian priest Coresus of Pausanias 7.21."
+    },
+    {
+      "ruler": "Ephesus",
+      "characterId": "ephesus-cayster",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7",
+      "note": "Thought to have been a son of the river Cayster; from him the city received its name."
+    },
+    {
+      "ruler": "Androclus",
+      "characterId": "androclus-ionian",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.8–7.2.9",
+      "note": "Son of Codrus, appointed king of the Ionians who sailed against Ephesus; he expelled the Leleges and Lydians from the upper city, took Samos, and was killed fighting the Carians — buried where his tomb was shown at Ephesus."
+    }
+  ]
+}

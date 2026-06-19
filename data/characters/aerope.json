@@ -3,25 +3,45 @@
   "name": "Aerope",
   "greekName": "Aeropē (Ἀερόπη)",
   "type": "mortal",
-  "domains": ["Mycenaean queenship", "the golden lamb", "the Atreid succession"],
+  "domains": [
+    "Mycenaean queenship",
+    "the golden lamb",
+    "the Atreid succession"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Wife of Atreus and lover of Thyestes, whose transfer of the hidden golden lamb changed the succession to Mycenae.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Epitome 2.10–12; Fabulae 86"
     }
   ],
   "story": [
     {
       "text": "Apollodorus calls Aerope a daughter of Catreus and wife of Atreus. Loving Thyestes, she gave him the golden lamb that Atreus had hidden, allowing Thyestes to display the token and claim the Mycenaean throne.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 2.10–12"
     },
     {
       "text": "Hyginus likewise makes her adultery the injury behind the brothers' feud. His later catalogue confusingly associates her with the children served to Thyestes, a claim that must remain separate from Apollodorus' Naiad mother.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Fabulae 86, 246"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
     }
   ]
 }

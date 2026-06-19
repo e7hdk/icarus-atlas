@@ -1,0 +1,71 @@
+{
+  "id": "semele-and-the-birth",
+  "title": "Semele and the Birth of Dionysus",
+  "greekTitle": "Σεμέλη καὶ Διόνυσος",
+  "kind": "episode",
+  "parent": "theban-cycle",
+  "era": 5.0,
+  "summary": {
+    "text": "Semele daughter of Cadmus lay with Zeus in secret until Hera tricked her into asking to see her lover in his true form; the lightning blasted the Theban princess, but Zeus snatched the six-month child from the fire and sewed him in his thigh — and Dionysus the twice-born entered the world, though poets dispute whether Semele or Persephone was his first mother.",
+    "sources": ["hesiod", "apollodorus", "ovid", "hyginus"],
+    "citation": "Hes. Th. 940-942; Apollod. 3.4.3; Ov. Met. 3.253-315; Hyg. Fab. 167, 179"
+  },
+  "chapters": [
+    {
+      "title": "Daughter of Cadmus",
+      "text": "Harmonia daughter of golden Aphrodite bore Cadmus Ino and Semele and fair-cheeked Agave in rich-crowned Thebes — the royal house the nested Cadmean saga tells. Apollodorus lists Semele among Cadmus's daughters wed into the Theban nobility; it was she whom Zeus loved, unknown to Hera, while her sisters would later share in the god's vengeance on the city.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 970-975; Apollod. 3.4.2"
+    },
+    {
+      "title": "The secret union",
+      "text": "Zeus loved Semele and bedded with her without Hera's knowledge. Hesiod names her plainly among Zeus's consorts: Semele, daughter of Cadmus, bore him a splendid son, joyous Dionysus — a mortal woman bearing an immortal child. And now, Hesiod adds, they both are gods — the mother apotheosized in the tradition the later poets would elaborate.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 940-942; Apollod. 3.4.3"
+    },
+    {
+      "title": "Hera's deception",
+      "text": "Zeus had agreed to do for Semele whatever she asked. Deceived by Hera, who came to her in disguise, Semele asked that he would come to her as he came when he was wooing Hera — in the full glory of the king of gods. Ovid tells how Juno, feigning friendship, stoked the mortal woman's doubt until she demanded proof of her lover's divinity.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 3.4.3; Ov. Met. 3.253-280"
+    },
+    {
+      "title": "The lightning",
+      "text": "Unable to refuse, Zeus came to her bridal chamber in a chariot with lightnings and thunderings and launched a thunderbolt. Semele expired of fright — or, in Ovid's telling, was consumed by the fire of his true form. The mortal princess perished; only the unborn god remained to be saved from the blaze.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 3.4.3; Ov. Met. 3.281-315"
+    },
+    {
+      "title": "Sewn in the thigh",
+      "text": "Zeus snatched the six-month abortive child from the fire and sewed it in his thigh. When the appointed time came, he brought forth Dionysus on fragrant Mount Nysa — the god whom Hermes had carried from the womb according to some accounts. Hyginus places the thigh-sewing at Fabulae 179: the king of gods became both father and mother until the child could be born a second time.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.4.3; Hyg. Fab. 179"
+    },
+    {
+      "title": "The one with two mothers",
+      "text": "Hyginus preserves an older Orphic strand: Liber was originally son of Jove and Proserpina, dismembered by the Titans until Jove gave his pounded heart to Semele in a drink — from which the god was conceived again, hence his epithet as the one with two mothers. The mainstream Theban story makes Semele his sole mortal parent; the dispute gate holds both the thigh-birth from Cadmus's daughter and the rebirth from Persephone's line.",
+      "sources": ["hyginus", "hesiod", "apollodorus"],
+      "citation": "Hyg. Fab. 167; Hes. Th. 940-942; Apollod. 3.4.3",
+      "topic": "dionysus-first-birth"
+    }
+  ],
+  "cast": [
+    { "id": "semele", "name": "Semele", "role": "Theban princess destroyed by Zeus's lightning" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Twice-born god saved from the fire" },
+    { "id": "zeus", "name": "Zeus", "role": "Father who sewed the infant in his thigh" },
+    { "id": "hera", "name": "Hera", "role": "Queen who tricked Semele to her death" },
+    { "id": "cadmus", "name": "Cadmus", "role": "Founder-king whose daughter lay with Zeus" },
+    { "id": "harmonia", "name": "Harmonia", "role": "Mother of Semele in the Theban royal house" },
+    { "id": "hermes", "name": "Hermes", "role": "He who snatched the infant from the womb in some accounts" }
+  ],
+  "places": [
+    { "id": "thebes", "name": "Thebes", "role": "City where Semele loved Zeus and perished" },
+    { "name": "Mount Nysa", "role": "Where Zeus brought forth Dionysus at term" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "940-942, 970-975" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.4.2-3.4.3" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "3.253-315" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "167, 179" }
+  ]
+}

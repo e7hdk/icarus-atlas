@@ -14,6 +14,22 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.2.0',
+    codename: 'The Spindle of Time and the Lands of Men',
+    date: '2026-06-19',
+    lines: [
+      'A third door opened beside the Galaxy and the Lands: the Spindle of Time, where every myth is a thread wound on a turning cylinder of years — and you no longer gaze upon the sky but stand within it, rolling down the long corridor from Chaos to the last homecoming.',
+      'Each great cycle winds into its own glowing arm of the spindle — the Cosmos and the house of Cadmus, Perseus and the Labours of Heracles, the Attic cycle of Theseus and the voyage of the Argo, the war at Troy and the long Returns, and Ovid’s ever-changing forms — and the traveller rolls from one to the next, or steps along the arrows of time and across the arms.',
+      'Where two myths meet at one moment — a shared hero, a shared shore, the same death told twice — a thread of fate is tied across the gulf between the arms: Theseus raised from the Chair of Forgetfulness, Medea come to Aegeus’ Athens, the murder at Mycenae shadowing Odysseus’ own homecoming.',
+      'And when the war was won the captains scattered homeward all at once: from a single moment the homeward roads burst forth and fanned into the dark — Nestor to sandy Pylos and Menelaus by way of Egypt, Diomedes and Idomeneus into exile, Aeneas toward Italy and Odysseus toward Ithaca.',
+      'The myths are now told as well as charted: a hundred and forty-eight tales across the cycles, each in sourced chapters with its cast and its places, so a saga may be entered and read, not merely seen from afar.',
+      'The second door, the Lands, was charted in full — a hundred and nine regions and their ancient cities, threescore-and-ten royal successions, and three-and-thirty rivers traced from spring to sea — the whole Mediterranean basin drawn as the ancients knew it.',
+      'And the map was lit in the same fire as the sky: the sea became a glowing nebula, each region named in its own colour, the shores and the rivers hushed to a soft glow beneath a gentle vignette — that the basin might shimmer like the rest of the cosmos.',
+      'The house of Odysseus wheeled into the western sea — Laertes and patient Penelope, the swineherd and the old nurse — and behind them the whole insolent catalogue of suitors who devoured the hall while the king was lost upon the water.',
+      'And the lands were set true: Cos and Thera, Cythera and Lesbos and Salamis returned to their right seas; the Strymon and her sisters drawn from bare straight lines into their winding courses; and each shore’s myth bound at last to its ancient source.',
+    ],
+  },
+  {
     version: '0.1.5',
     codename: 'The First Broods and the Muses’ Fire',
     date: '2026-06-14',

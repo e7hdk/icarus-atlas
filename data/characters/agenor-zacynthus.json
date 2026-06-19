@@ -1,0 +1,35 @@
+{
+  "id": "agenor-zacynthus",
+  "name": "Agenor",
+  "greekName": "Agenor (Ἀγήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — distinct from `agenor-ithaca` in Epitome 7.27 and from the royal and Trojan bearers of the name.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Agenor among the wooers assigned to Zacynthus, listed after Clytius and before Polybus in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

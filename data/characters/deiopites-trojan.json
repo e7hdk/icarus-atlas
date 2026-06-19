@@ -1,0 +1,28 @@
+{
+  "id": "deiopites-trojan",
+  "name": "Deïopites",
+  "greekName": "Deïopitēs (Δηϊοπίτης)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Agamemnon's target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Peerless Trojan whom Atreus' son Agamemnon first smote from above in the shoulder when the king leapt upon him with sharp spear — Apollodorus names a Deïopites among Priam's sons by other women.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 11.415–455; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans pressed around Odysseus dear to Zeus, Agamemnon came on like a lion and first smote peerless Deïopites from above in the shoulder, leaping upon him with sharp spear; and thereafter he slew Thoön and Eunomus, and then Chersidamas.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.415–455"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

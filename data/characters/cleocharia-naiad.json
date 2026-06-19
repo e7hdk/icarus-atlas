@@ -1,0 +1,44 @@
+{
+  "id": "cleocharia-naiad",
+  "name": "Cleocharia",
+  "greekName": "Kleocharia (Κλεοχαρία)",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "naiad of Laconia",
+    "consort of Lelex",
+    "mother of Eurotas"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad nymph whom Apollodorus names as the wife of Lelex the earth-born and mother of Eurotas — the spring-born mother at the root of the Laconian royal line, before Sparta and Lacedaemon gave the land its later names.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus compresses the Laconian stemma: Lelex, a son of the soil with no human father, took to wife a Naiad nymph, Cleocharia, and by her begat Eurotas. Their daughter Sparta married Lacedaemon, son of Zeus and Taygete, and from that marriage came Amyclas and the kings who followed. In this telling Cleocharia stands one generation above the river that bears her son's name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.3"
+    },
+    {
+      "text": "Pausanias counts an extra king between Lelex and Eurotas: the aboriginal Lelex was first to rule, Myles was his elder son, and Eurotas succeeded Myles on the throne — with no nymph named as Eurotas' mother. The quarrel is quiet but structural: Apollodorus makes Eurotas Lelex's own child by Cleocharia; Pausanias inserts Myles and leaves the nymph unmentioned.",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 3.1.1; Bibliotheca 3.10.3",
+      "topic": "eponym-generation-count"
+    },
+    {
+      "text": "Through Eurotas and Sparta, Cleocharia's line weds the river to the Pleiad's son: Lacedaemon renamed the country after himself and founded the city after his wife, and the Spartan house that would produce Tyndareus and Helen descends from that union — with the Naiad's grandson draining the plain and naming the Eurotas after himself in Pausanias' telling.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.10.3; Description of Greece 3.1.1–3.1.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

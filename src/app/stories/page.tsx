@@ -1,129 +1,35 @@
-import Link from 'next/link';
-import { loadStories } from '@/features/stories/load';
+import { loadStories, loadStoryCrossings } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { MainNav } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
-import { AtlasOverlays } from '@/components/hud/AtlasOverlays';
-import { GlassPanel } from '@/components/ui/GlassPanel';
+import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
-import type { Story, StoryKind } from '@/types/story';
+import { MythsSpindleView } from '@/components/stories/MythsSpindleView';
 
 export const metadata = {
   title: 'Myths — Icarus Atlas',
-  description: 'The great myths: cosmogony, floods, wars and their episodes.',
+  description: 'The Spindle of Time: every myth a star, wound on the thread of mythic time.',
 };
-
-const KIND_COLOR: Record<StoryKind, string> = {
-  cosmogony: '#c084fc',
-  catastrophe: '#00e5ff',
-  war: '#fb7185',
-  saga: '#fcd34d',
-  episode: '#aab4c8',
-};
-
-function KindBadge({ kind }: { kind: StoryKind }) {
-  const color = KIND_COLOR[kind];
-  return (
-    <span
-      className="inline-flex items-center gap-2 rounded-full border px-3 py-0.5 font-display text-[10px] uppercase tracking-[0.18em]"
-      style={{ color, borderColor: `${color}66`, backgroundColor: `${color}1a` }}
-    >
-      <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: color, boxShadow: `0 0 8px ${color}` }} />
-      {kind}
-    </span>
-  );
-}
 
 export default async function StoriesPage() {
-  const [stories, atlas] = await Promise.all([loadStories(), loadAtlasData()]);
-  const topLevel = stories.filter((story) => story.parent === null);
-  const childrenOf = (id: string): Story[] => stories.filter((story) => story.parent === id);
+  const [stories, crossings, atlas] = await Promise.all([
+    loadStories(),
+    loadStoryCrossings(),
+    loadAtlasData(),
+  ]);
 
   return (
-    <main className="min-h-screen w-full pb-24">
-      <div className="pointer-events-none relative flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
+    <main className="fixed inset-0 overflow-hidden">
+      <MythsSpindleView stories={stories} crossings={crossings} />
+
+      <div className="pointer-events-none fixed left-0 right-0 top-0 z-30 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
         <IcarusBrand />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <MainNav active="stories" />
         </div>
         <HudActions />
       </div>
-      <AtlasOverlays characters={atlas.characters} sources={atlas.sources} />
-
-      <div className="mx-auto max-w-4xl px-6">
-        <header className="mt-10 text-center">
-          <h1 className="font-display text-4xl tracking-[0.3em] text-aether [text-shadow:0_0_46px_rgba(192,132,252,.4)]">
-            MYTHS
-          </h1>
-          <p className="mt-3 font-body text-lg italic text-aether-muted">
-            The myths as the poets told them — from the first yawning of Chaos to the fall of Troy.
-          </p>
-        </header>
-
-        <div className="mt-10 flex flex-col gap-5">
-          {topLevel.map((story) => {
-            const subStories = childrenOf(story.id);
-            return (
-              <GlassPanel key={story.id} className="bg-glass-heavy px-6 py-5 transition-colors hover:border-nebula-soft/40">
-                <Link href={`/story/${story.id}`} className="block">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <KindBadge kind={story.kind} />
-                    <h2 className="font-display text-2xl tracking-[0.1em] text-aether">
-                      {story.title}
-                    </h2>
-                    {story.greekTitle && (
-                      <span className="font-body text-base italic text-aether-muted">
-                        {story.greekTitle}
-                      </span>
-                    )}
-                  </div>
-                  <p className="mt-2.5 font-body text-[16px] leading-relaxed text-aether/90">
-                    {story.summary.text}
-                  </p>
-                </Link>
-                {subStories.length > 0 && (
-                  <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-glass-border pt-3">
-                    <span className="font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint">
-                      Episodes
-                    </span>
-                    {subStories.map((sub) => (
-                      <Link
-                        key={sub.id}
-                        href={`/story/${sub.id}`}
-                        className="rounded-full border border-glass-border bg-glass px-3 py-1 font-body text-[14px] text-aether/85 transition-colors hover:border-nebula-soft/50 hover:text-aether"
-                      >
-                        {sub.title}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </GlassPanel>
-            );
-          })}
-        </div>
-
-        <div className="mx-auto mt-16 flex max-w-2xl flex-col items-center text-center">
-          <span
-            aria-hidden
-            className="block h-px w-28 bg-gradient-to-r from-transparent via-nebula-soft/50 to-transparent"
-          />
-          <p className="mt-7 font-display text-[11px] uppercase tracking-[0.34em] text-aether-faint">
-            The song is not yet done
-          </p>
-          <p className="mt-5 font-body text-xl italic leading-relaxed text-aether-muted">
-            Sing on, Muse — the scroll is far from full.
-            <br />
-            Beyond these kindled tales the dark still teems:
-            <br />
-            wars unwaged in ink, wanderings yet at sea,
-            <br />
-            and houses whose last verse no singer has shaped.
-          </p>
-          <p className="mt-5 font-body text-[15px] italic text-aether-faint">
-            More myths will rise here, as the sky fills star by star.
-          </p>
-        </div>
-      </div>
+      <SettingsPanel sources={atlas.sources} starCount={atlas.characters.length} />
     </main>
   );
 }

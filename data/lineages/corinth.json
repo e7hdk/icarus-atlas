@@ -1,0 +1,19 @@
+{
+  "city": "corinth",
+  "reigns": [
+    {
+      "ruler": "Sisyphus",
+      "characterId": "sisyphus",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.9.3; Il. 6.152–155",
+      "note": "Founder of Ephyra, the city later called Corinth — craftiest of men, whose son Glaucus begat Bellerophon."
+    },
+    {
+      "ruler": "Glaucus",
+      "characterId": "glaucus-corinth",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Il. 6.154–155; Apollod. 1.9.3",
+      "note": "Son of Sisyphus and king of Ephyra; father of Bellerophon, slayer of the Chimera."
+    }
+  ]
+}

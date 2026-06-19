@@ -1,0 +1,129 @@
+{
+  "id": "agamemnon-murder",
+  "title": "The Murder of Agamemnon",
+  "greekTitle": "Ἀγαμέμνονος φόνος",
+  "kind": "episode",
+  "parent": "nostoi",
+  "era": 8.9,
+  "summary": {
+    "text": "Agamemnon sailed first to Mycenae with Trojan spoils and the prophetess Cassandra — and Clytemnestra, who had never forgiven the sacrifice of Iphigenia at Aulis, welcomed him with a feast and cut him down in the bath, Aegisthus sharing the crime in most accounts. Cassandra died with him; Electra saved the infant Orestes, and the Erinyes would wait for the avenger.",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Hom. Od. 11.385–434; Apollod. Epit. 6.23; Hyg. Fab. 117–119",
+    "topic": "agamemnon-murder-agency"
+  },
+  "chapters": [
+    {
+      "title": "The first homecoming",
+      "text": "Of all the kings who took Troy, Agamemnon reached Mycenae first — bringing the spoils of Ilion and Cassandra daughter of Priam, whom he had claimed as prize. His brother Menelaus was still storm-driven toward Egypt; Nestor had already made safe harbour at Pylos; Odysseus wandered yet among gods and monsters.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Hom. Od. 3.303–312, 4.514–519; Apollod. Epit. 6.23"
+    },
+    {
+      "title": "The bath",
+      "text": "Clytemnestra had never forgiven the sacrifice of Iphigenia at Aulis. She welcomed her husband with a feast and, when he stepped into the bath, cut him down — Aegisthus her lover sharing the murder in Apollodorus and Hyginus, though Homer's shade of Agamemnon sometimes lays the killing on Aegisthus alone while naming Clytemnestra as the plotter who did not even close her husband's eyes as he died.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 11.385–434; Apollod. Epit. 6.23; Hyg. Fab. 117–119",
+      "topic": "agamemnon-murder-agency"
+    },
+    {
+      "title": "Cassandra and the saved prince",
+      "text": "Cassandra died with Agamemnon — the full tale of the prophetess' curse and her piteous end lives in the nested episode at Mycenae. Clytemnestra also killed Tantalus son of Thyestes, whom Agamemnon had brought home as a child. Electra saved the infant Orestes and sent him to Strophius in Phocis; Pylades would later stand beside the avenger when the Erinyes came.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "homer"
+      ],
+      "citation": "Apollod. Epit. 6.23; Hyg. Fab. 117–119; Hom. Od. 11.385–434"
+    },
+    {
+      "title": "The warning in Hades",
+      "text": "When Odysseus descended to the house of Hades, Agamemnon's shade came among the heroes of Troy and told how he had died — not like Achilles, glorious on the plain, but betrayed in his own hall. He warned the Ithacan king that no death is more terrible than when a treacherous wife plots against the husband who trusted her.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Hom. Od. 11.385–434"
+    }
+  ],
+  "cast": [
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "King murdered in the bath"
+    },
+    {
+      "id": "clytemnestra",
+      "name": "Clytemnestra",
+      "role": "The axe and the long memory of Aulis"
+    },
+    {
+      "id": "aegisthus",
+      "name": "Aegisthus",
+      "role": "The lover who shared the murder"
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "role": "Prize who died with the king"
+    },
+    {
+      "id": "iphigenia",
+      "name": "Iphigenia",
+      "role": "The sacrifice remembered in the murder"
+    },
+    {
+      "id": "electra",
+      "name": "Electra",
+      "role": "She who saved the infant Orestes"
+    },
+    {
+      "id": "orestes",
+      "name": "Orestes",
+      "role": "The avenger sent away to Phocis"
+    },
+    {
+      "id": "pylades",
+      "name": "Pylades",
+      "role": "Companion of the vengeance to come"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "He who heard the warning in Hades"
+    }
+  ],
+  "places": [
+    {
+      "id": "mycenae",
+      "name": "Mycenae",
+      "role": "Where the king was slain in his own hall"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.385–434"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "6.23"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "117–119"
+    }
+  ]
+}

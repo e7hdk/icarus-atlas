@@ -1,0 +1,31 @@
+{
+  "id": "perseus-nestor",
+  "name": "Perseus",
+  "greekName": "Perseus (Περσεύς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Nestor",
+    "the Pylians at Pylos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nestor of Gerenia — one of the Pylians who came forth with his brothers at the dawn rite for Athena when Telemachus was guest at sandy Pylos, distinct from Perseus son of Zeus and Danae.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.405–445; Bibliotheca 1.9.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nestor called his sons from their chambers to honour Athena, Perseus stood among them with Echephron, Stratius, Aretus, and godlike Thrasymedes, before Peisistratus came as the sixth; together they received Telemachus and seated him beside the sons of the Neleid king.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.405–445"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

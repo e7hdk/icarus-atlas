@@ -1,0 +1,22 @@
+{
+  "id": "gouneus-cyphus",
+  "name": "Gouneus",
+  "greekName": "Gouneus (Γουνεύς)",
+  "type": "hero",
+  "domains": ["Cyphus command", "Enienes and Peraebi", "the twenty-two ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Captain from Cyphus who led two and twenty ships, with the Enienes and the Peraebi staunch in fight — men who dwelt about wintry Dodona and the ploughland by lovely Titaressus.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll sets Gouneus beside the Lapith captains: from Cyphus he brought the Enienes and Peraebi, peoples of the far north-west who made their homes about Dodona and the fair-flowing Titaressus, which pours his streams into the Peneius yet is not mixed with the silver eddies of that river.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "melia-thebes",
+  "name": "Melia",
+  "greekName": "Melia (Μελία)",
+  "romanName": "Melia",
+  "type": "nymph",
+  "kinds": ["melia"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "ash-tree nymph of Thebes",
+    "beloved of Apollo",
+    "mother of Tenerus and Ismenus"
+  ],
+  "summary": [
+    {
+      "text": "A Boeotian ash-tree nymph of the Ismenian spring whom Pausanias names as daughter of Ocean, sister of Caanthus, and lover of Apollo — by whom she bore Tenerus the seer and Ismenus, eponym of the Theban river — not to be confused with Melia the Argive Oceanid (`melia`) or the Hesiodic ash-nymph brood (`meliae`).",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.10.5–9.10.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "At the Ismenian hill above Thebes, where Ares posted a dragon as sentry over the spring, Pausanias gathered a nymph's tale older than Cadmus' sowing of the teeth. Melia was daughter of Ocean; her brother Caanthus was sent by their father to seek her when she had been carried away. Finding that Apollo held Melia, Caanthus could not recover her and in his rage set fire to the god's precinct — for which Apollo slew him, and his grave stands by the fountain.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.10.5"
+    },
+    {
+      "text": "By Apollo, Pausanias adds, Melia bore two sons: Tenerus, to whom the god gave the art of divination, and Ismenus, from whom the river took its name — though Pausanias notes the stream was not nameless before, having once been called Ladon. So the ash-nymph stands at the head of a Theban water-line and a prophetic house before the Phoenician prince ever founded the Cadmea.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.10.6"
+    },
+    {
+      "text": "Her name must be kept apart from other Melias in the atlas. Apollodorus' Argive Melia, daughter of Ocean, bore Phoroneus to Inachus; Hesiod's Meliae are the collective ash-nymph brood born from Uranus' blood; Apollodorus' unnamed Melian nymph is mother of the centaur Pholus. Only Pausanias' Boeotian Melia belongs at the Ismenian spring — `melia-thebes` for this figure, the Argive Oceanid remaining `melia`.",
+      "sources": ["pausanias", "apollodorus", "hesiod"],
+      "citation": "Description of Greece 9.10.5–9.10.6; Bibliotheca 2.1.1, 2.5.4; Theogony 187"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["pausanias"]
+    }
+  ]
+}

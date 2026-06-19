@@ -1,0 +1,28 @@
+{
+  "id": "dolops-trojan",
+  "name": "Dolops",
+  "greekName": "Dolops (Δόλοψ)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "son of Lampus", "spear-caster"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Lampus (`lampus-trojan`), whom Lampus son of Laomedon begat — his bravest son, well skilled with the spear — who leapt upon Meges when Polydamas smote Croesmus; distinct from Dolops son of Clytius in Hector's rampage and from other mythic namesakes.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Meges son of Phyleus leapt upon Polydamas and missed, Polydamas smote Croesmus full upon the breast and Meges set him to strip the armour from his shoulders. Meanwhile upon Meges leapt Dolops, well skilled with the spear, and thrust full upon the shield of Phyleus' son from nigh at hand; but the cunningly-wrought corslet stayed the point.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

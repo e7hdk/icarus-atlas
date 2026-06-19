@@ -1,0 +1,55 @@
+{
+  "id": "daedalus-icarus",
+  "title": "Daedalus and Icarus",
+  "greekTitle": "Δαίδαλος καὶ Ἴκαρος",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.068,
+  "summary": {
+    "text": "Daedalus the Athenian craftsman, who built the Cretan labyrinth and helped Theseus escape it, was imprisoned by Minos with his son Icarus — and fashioned wings of feather and wax; the boy soared too near the sun, the wax melted, and he fell into the sea that bears his name while the father flew on to Sicily in grief.",
+    "sources": ["ovid", "apollodorus", "hyginus"],
+    "citation": "Ov. Met. 8.152–259; Apollod. Epit. 1.12–13; Hyg. Fab. 40"
+  },
+  "chapters": [
+    {
+      "title": "Flight from Athens",
+      "text": "Daedalus son of Metion, architect of the labyrinth and the wooden cow for Pasiphae, had fled Athens after killing his nephew Talos in jealousy of the boy's invention. In Crete he served Minos until Ariadne's thread betrayed the maze — and the king shut both craftsman and son within the very walls Daedalus had designed.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 3.15.8, Epit. 1.12; Ov. Met. 8.152–208"
+    },
+    {
+      "title": "The wings",
+      "text": "Knowing Minos held land and sea, Daedalus turned to the air. He bound feathers with thread and soft wax into curving wings for himself and Icarus, and warned the boy to fly the middle way — neither so low that the sea spray clog the plumes, nor so high that the sun melt the wax. Hyginus repeats the counsel: keep to the path between sky and water.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 8.183–235; Hyg. Fab. 40"
+    },
+    {
+      "title": "The fall",
+      "text": "Icarus exulted in flight and climbed toward heaven; the heat loosened the wax, the feathers scattered, and the boy plunged into the blue sea. Daedalus, crying his son's name, found only feathers on the waves. Ovid names the waters where Hercules' pillars stand; Apollodorus calls the sea Icarian and the island Icaria where the body washed ashore.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 8.223–259; Apollod. Epit. 1.13"
+    },
+    {
+      "title": "Sicily",
+      "text": "The father flew on to Sicily and the court of Cocalus, while Minos pursued him across the seas with ships and thread — a chase Ovid resumes later when the king dies in the bath Daedalus built. The Minotaur arc belongs on the Theseus shelf; here Metamorphoses keeps only the winged escape and the boy lost to hubris and sun.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 8.259–272; Apollod. Epit. 1.13–15"
+    }
+  ],
+  "cast": [
+    { "id": "daedalus", "name": "Daedalus", "role": "Athenian inventor who built the wings" },
+    { "id": "icarus", "name": "Icarus", "role": "His son, who flew too near the sun" },
+    { "id": "minos", "name": "Minos", "role": "Cretan king who imprisoned them in the labyrinth" },
+    { "id": "ariadne", "name": "Ariadne", "role": "Named as the betrayal that provoked Minos' wrath" }
+  ],
+  "places": [
+    { "id": "knossos", "name": "Knossos", "role": "Cretan palace-city of Minos and the labyrinth" },
+    { "name": "Icarian Sea", "role": "Waters where the boy fell" },
+    { "name": "Sicily", "role": "Land where Daedalus found refuge" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "8.152–259" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "1.12–13" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "40" }
+  ]
+}

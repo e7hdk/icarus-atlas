@@ -1,0 +1,43 @@
+{
+  "id": "ilissus",
+  "name": "Ilissus",
+  "greekName": "Ilissos (Ἰλισσός)",
+  "romanName": "Ilissus",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Athenian river",
+    "Orithyia and Boreas",
+    "sacred stream"
+  ],
+  "summary": [
+    {
+      "text": "The river of Athens beside which Orithyia was playing when Boreas carried her off — named among the Rivers of Oceanus and Tethys in Hyginus, and remembered by Apollodorus and Apollonius as the setting of the abduction that produced the Boread twins Zetes and Calais.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 3.15.2; Argonautica 1.221; Fabulae, preface (Theogony)"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets the abduction at the Ilissus. While Orithyia, daughter of Erechtheus, was playing by the Ilissus river, Boreas carried her off and had intercourse with her; she bore daughters Cleopatra and Chione, and winged sons Zetes and Calais — the Boreads who sailed with Jason and perished chasing the Harpies.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.2"
+    },
+    {
+      "text": "Apollonius places the scene at Cecropia on the verge of wintry Thrace: there Boreas snatched Orithyia as she whirled in the dance, hard by Ilissus' stream, and carried her to the rock of Sarpedon near the river Erginus — the Athenian river named even in the Argonautic telling of the northern wind's violence.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.221"
+    },
+    {
+      "text": "Hyginus counts Ilissus among the Rivers born of Oceanus and Tethys in his genealogical preface — the Attic stream enrolled in the divine brood of fresh waters alongside Inachus, Cephisus, and Scamander.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

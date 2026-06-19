@@ -1,0 +1,76 @@
+{
+  "id": "achilles-and-hector",
+  "title": "Achilles and Hector",
+  "greekTitle": "Ἀχιλλεὺς καὶ Ἕκτωρ",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.17,
+  "summary": {
+    "text": "Thetis brought new armour from Hephaestus; Achilles returned to war, drove the Trojans to the Scamander, and chased Hector three times around Troy before the spear found the gap in the armour — and the body was dragged behind the chariot while Priam and Andromache wailed on the wall.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 17–22"
+  },
+  "chapters": [
+    {
+      "title": "The body of Patroclus",
+      "text": "Book 17 is the fight for Patroclus' corpse: Hector in Achilles' armour, Menelaus and Ajax holding the field, chariots wheeling over the dead. The Achaeans won the body at last and carried it toward the ships while Achilles still did not know — until Antilochus ran with the news. The son of Peleus collapsed in dust, tearing his hair; Thetis heard his cry from the deep and came with the promise of new arms.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 17.1–761"
+    },
+    {
+      "title": "The shield of Achilles",
+      "text": "Thetis rose to Olympus and asked Hephaestus for armour to replace what Hector had taken. The god forged a breastplate, greaves, helm, and the great shield — cities at peace and war, ploughing and harvest, dance and ocean stream, all wrought in bronze and tin and gold. Homer describes the shield as a cosmos in miniature; when Thetis brought it at dawn, Achilles' wrath blazed brighter for the arms that would avenge Patroclus.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 18.1–617"
+    },
+    {
+      "title": "Return to the field",
+      "text": "Achilles reconciled with Agamemnon: the gifts were brought out, Briseis wept over Patroclus' body, and the host feasted. At dawn Achilles armoured — the new greaves clashed, the spear cast a shadow — and he refused food: he would eat when Hector was dead. Xanthus the horse prophesied his doom; Hephaestus silenced the voice. The Myrmidons formed for battle, and the son of Peleus who had been idle since Book 1 returned to the plain.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 19.1–424"
+    },
+    {
+      "title": "The gods descend",
+      "text": "Zeus lifted the ban; gods fought on both sides — Hera, Athena, Poseidon, Hermes, Hephaestus for the Achaeans; Ares, Apollo, Artemis, Leto, Aphrodite, the river Scamander for Troy. Achilles cut through the ranks seeking Hector; Aeneas was saved again by Poseidon; Hector stood his ground at the Scaean Gate until Apollo deceived him into facing the plain. The Trojans fled inside the wall; only Hector remained.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 20.1–503; Il. 21.1–211"
+    },
+    {
+      "title": "The river and the chase",
+      "text": "Achilles filled the Scamander with slain until the river rose against him in a flood; Hephaestus answered with fire and the god of the stream yielded. Priam opened the gates for the fugitives; Hector alone stayed outside. Three times around Troy they ran — Achilles chasing, Hector fleeing, the watchers on the wall unable to help. Athena deceived Hector with the likeness of Deiphobus, promising aid; when he turned to fight, the illusion vanished.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 21.211–366; Il. 22.1–360"
+    },
+    {
+      "title": "Hector's death",
+      "text": "Hector made his last stand with one spear; Achilles knew the armour and found the gap at the throat where the collarbone holds neck to shoulder. Dying, Hector begged for burial; Achilles swore that dogs and birds would rend him, and that Patroclus' shade would be avenged. He pierced the ankles and bound the body to his chariot, dragging it through the dust while Andromache heard the cry from the wall and collapsed — the loom fell, the diadem broke, and Troy's shield was ash on the plain.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 22.360–515"
+    }
+  ],
+  "cast": [
+    { "id": "achilles", "name": "Achilles", "role": "Avenger who returned in divine armour" },
+    { "id": "hector", "name": "Hector", "role": "Shield of Troy, slain at the Scaean Gate" },
+    { "id": "patroclus", "name": "Patroclus", "role": "Whose body and death drove the return" },
+    { "id": "thetis", "name": "Thetis", "role": "Mother who fetched the arms of Hephaestus" },
+    { "id": "hephaestus", "name": "Hephaestus", "role": "Smith of the shield and armour" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "King reconciled before the final battle" },
+    { "id": "briseis", "name": "Briseis", "role": "She who wept over Patroclus' body" },
+    { "id": "priam", "name": "Priam", "role": "Old king who watched from the wall" },
+    { "id": "andromache", "name": "Andromache", "role": "Wife who heard Hector's death from the tower" },
+    { "id": "apollo", "name": "Apollo", "role": "God who deceived Hector to stand and fight" },
+    { "id": "athena", "name": "Athena", "role": "Goddess who tricked Hector with false aid" },
+    { "id": "scamander", "name": "Scamander", "role": "River god who fought Achilles" },
+    { "id": "poseidon", "name": "Poseidon", "role": "He who saved Aeneas again" },
+    { "id": "aeneas", "name": "Aeneas", "role": "Saved from Achilles' spear" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "He who helped win Patroclus' body" },
+    { "id": "antilochus-nestor", "name": "Antilochus", "role": "Messenger who brought Achilles the news" },
+    { "name": "Deiphobus", "role": "False likeness Athena used to trap Hector" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Wall, plain, Scaean Gate, and the chase around the city" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "17–22" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "thersites",
+  "name": "Thersites",
+  "greekName": "Thersitēs (Θερσίτης)",
+  "type": "mortal",
+  "domains": ["reviling speech", "the common soldier", "ugliness"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The ugliest man at Troy — bandy-legged, lame, rounded shoulders, pate bald and thinly thatched — who alone kept chattering when the host sat silent, railing at Agamemnon until Odysseus struck him with the sceptre and the men laughed.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.211–277"
+    },
+    {
+      "text": "Apollodorus makes him a son of Agrius of Calydon, one of the brothers who usurped Oeneus; Diomedes slew his brothers but Thersites escaped.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.8.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Achaeans gathered at assembly, all sat still except Thersites of measureless speech, whose mind teemed with disorderly words wherewith to revile the kings — idly, and in no orderly wise, but whatever he thought would raise a laugh. Evil-favoured was he beyond all men: squint-eyed, lame, his shoulders humped, his head narrowed, and the little hair upon it straggling.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.211–220"
+    },
+    {
+      "text": "He railed at Agamemnon, calling him greedy and a coward who hoarded prizes while the army perished — and said the king should sail home and leave Achilles to fight alone. Goodly Odysseus came to his side, rebuked him with harsh words, and beat his back and shoulders with the sceptre until blood flowed and he sat down, weeping. The Achaeans laughed at him, and even Agamemnon was glad at heart.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.225–277"
+    },
+    {
+      "text": "Apollodorus sets him among the sons of Agrius who wrested Calydon from Oeneus and tormented the old king; when Diomedes returned to restore the house, he slew the sons of Agrius — all save Onchestus and Thersites, who fled. Pausanias saw him on the Cypselus chest at Olympia, playing dice with Palamedes beside Ajax.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.8.6; Description of Greece 10.31.1"
+    },
+    {
+      "text": "Homer leaves him alive when the *Iliad* ends. A later tradition in Apollodorus' Epitome has Achilles slay a Thersites who mocked his grief for the Amazon Penthesilea — an episode outside the *Iliad* itself.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.1",
+      "topic": "thersites-death"
+    }
+  ]
+}

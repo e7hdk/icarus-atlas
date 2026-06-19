@@ -1,0 +1,47 @@
+{
+  "id": "acoetes-tyrrhenian",
+  "name": "Acoetes",
+  "greekName": "Akoitēs (Ἀκοίτης)",
+  "romanName": "Acoetes",
+  "type": "mortal",
+  "domains": [
+    "Tyrrhenian pilot",
+    "witness of Dionysus",
+    "the spared sailor"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Pilot of the Tyrrhenian pirates who seized young Dionysus on the voyage from Icaria to Naxos. When his shipmates meant to sell or abuse the god, Acoetes alone recognized divinity and was spared when Liber turned the rest into dolphins.",
+      "sources": [
+        "ovid",
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Metamorphoses 3.582–691; Fabulae 134; Bibliotheca 3.5.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells the bare outline: wishing to cross from Icaria to Naxos, Dionysus hired a pirate ship of Tyrrhenians, but they sailed past the island toward Asia to sell him. The god turned mast and oars to snakes, filled the vessel with ivy and flutes, and the pirates leaped mad into the sea and became dolphins.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.5.3"
+    },
+    {
+      "text": "Ovid gives the pilot a voice. Acoetes of Maeonia, son of humble fisherfolk, warned his crew that the beautiful youth they had taken aboard at Naxos was no mortal boy but a god — he had seen vines coil the mast, ivy bind the oars, and panthers crouch in the hold. When the captain ordered him hurled overboard, chains fell from his arms by divine will while the rest were changed to dolphins in the waves.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 3.582–691"
+    },
+    {
+      "text": "Hyginus names Acoetes last among the twelve Tyrrhenian sailors and says Liber saved him alone because the pilot had tried to restrain the crew when they wished to debauch the god. From that transformation, dolphins were called Tyrrhenians and the sea Tyrrhenian.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 134"
+    }
+  ]
+}

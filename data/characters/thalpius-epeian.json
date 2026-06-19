@@ -1,0 +1,22 @@
+{
+  "id": "thalpius-epeian",
+  "name": "Thalpius",
+  "greekName": "Thalpios (Θάλπιος)",
+  "type": "hero",
+  "domains": ["Epeian command", "the blood of Actor", "son of Eurytus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Eurytus and co-captain of the Epeians beside Amphimachus — of the blood of Actor, with ten swift ships from Elis — whom Pausanias names among the heirs of Augeas' kingdom after the house of Phyleus departed to Dulichium.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.615–650; Description of Greece 5.3.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Catalogue of Ships, Thalpius and Amphimachus lead half the Epeian fleet: sons of Actor's line through Cteatus and Eurytus, they commanded the spearmen who held Elis about Buprasium and the coast enfolded between Olen and Alesium. Apollodorus and Hyginus count Thalpius among the captains who sailed to Troy.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.615–650; Epitome 3.10.8; Fabulae 81"
+    }
+  ]
+}

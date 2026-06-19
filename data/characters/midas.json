@@ -1,0 +1,51 @@
+{
+  "id": "midas",
+  "name": "Midas",
+  "greekName": "Midās (Μίδας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Lydia",
+    "the golden touch",
+    "Phrygian judgment"
+  ],
+  "summary": [
+    {
+      "text": "King of Lydia who entertained Silenus and won from Bacchus the fatal gift that all he touched should turn to gold, and who judged the music contest between Apollo and Pan on Mount Tmolus.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 11.130–299; Fabulae 191; Description of Greece 1.4.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Silenus, foster-father of Bacchus, strayed from the god's company, Phrygian peasants brought the old satyr bound with garlands to King Midas, who had learned the Bacchic rites from Orpheus and Eumolpus. Midas kept a joyful festival and restored Silenus to the young god.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.130–227"
+    },
+    {
+      "text": "Bacchus offered Midas any reward he chose; the king asked that whatever he touched might become gold. When even his food and drink turned metal and he starved in the midst of riches, the god bade him wash away the curse in the stream that flows by Sardis, tracing its waters to the spring on Mount Tmolus.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.130–227"
+    },
+    {
+      "text": "On lofty Tmolus, which looks far across the sea between great Sardis and Hypaepa, Pan boasted his rustic reeds against Apollo's lyre before mountain nymphs and Midas; when Tmolus gave victory to Phoebus, Midas cried that Pan deserved the prize, and Apollo turned his ears to those of an ass.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 11.228–299; Fabulae 191"
+    },
+    {
+      "text": "Pausanias records that Midas son of Gordius founded Ancyra in Phrygia and that the anchor he found and the Spring of Midas, whose water he mixed with wine to capture Silenus, were still shown in his day.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.4.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": ["ovid", "apollodorus"]
+    },
+    {
+      "city": "gordion",
+      "sources": ["ovid", "hyginus", "pausanias"]
+    }
+  ]
+}

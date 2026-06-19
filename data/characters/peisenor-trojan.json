@@ -1,0 +1,28 @@
+{
+  "id": "peisenor-trojan",
+  "name": "Peisenor",
+  "greekName": "Peisēnōr (Πεισήνωρ)",
+  "type": "hero",
+  "domains": ["father of Cleitus", "Trojan house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Cleitus (`cleitus-trojan`), the glorious comrade of Polydamas whom Teucer smote as he drove his horses where the battalions were driven in rout — distinct from Peisenor in the *Odyssey* genealogy of Eurycleia and from Pisenor the suitor of Same.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.445–475"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Peisenor only as the father of Cleitus when peerless Teucer, bearing his bent-back bow, smote the Trojan warrior busy with his reins amid the rout that Polydamas and his comrades pressed upon the Argive ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.445–475"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

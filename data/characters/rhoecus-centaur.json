@@ -1,0 +1,40 @@
+{
+  "id": "rhoecus-centaur",
+  "name": "Rhoecus",
+  "greekName": "Rhoikos (Ῥοῖκος)",
+  "romanName": "Rhoecus",
+  "type": "creature",
+  "domains": [
+    "Arcadian wilderness",
+    "centaur violence"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur of the Arcadian wilds who, with Hylaeus, tried to force Atalanta and was shot down by her bow.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells how Atalanta, reared by hunters after a she-bear suckled the exposed infant, kept herself a virgin and hunted always under arms. The centaurs Rhoecus and Hylaeus tried to force her, but she shot them both down and killed them.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.2"
+    },
+    {
+      "text": "He must be kept distinct from Rhoecus the Samian bronze-founder whom Pausanias praises — a mortal craftsman of Patara and Ephesus, not a centaur of the Arcadian mountains.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 8.14.8, 10.38.6"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

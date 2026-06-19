@@ -1,0 +1,33 @@
+{
+  "id": "petraeus-centaur",
+  "name": "Petraeus",
+  "greekName": "Petraios (Πετραῖος)",
+  "romanName": "Petraeus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "the uprooted oak"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who tried to wrench up an acorn-bearing oak at the wedding battle and was transfixed by Peirithous' spear.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid's narrator saw Petraeus striving to tear an oak from the earth, struggling back and forth until he nearly had the trunk — when Peirithous hurled a well-aimed spear, pierced his ribs, and pinned his writhing body to the hard oak.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

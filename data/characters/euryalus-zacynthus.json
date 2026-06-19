@@ -1,0 +1,40 @@
+{
+  "id": "euryalus-zacynthus",
+  "name": "Euryalus",
+  "greekName": "Euryalos (Εὐρύαλος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — distinct from Euryalus in the Epitome 7.27 list and from the Phaeacian boxer Euryalus whom Odysseus felled at Alcinous' games.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.29; Epitome 7.27; Odyssey 8.85–120"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Euryalus among the wooers assigned to Zacynthus, listed after Hippomachus and before Periallus in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    },
+    {
+      "text": "Homer's Phaeacian Euryalus, son of Naubolus and peer of man-destroying Ares in the boxing, is a wholly different figure in the games for Odysseus — not this Zacynthian wooer.",
+      "sources": ["homer"],
+      "citation": "Odyssey 8.85–120"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "lygdamis-halicarnassus",
+  "name": "Lygdamis",
+  "greekName": "Lygdamis (Λύγδαμις)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Halicarnassus",
+    "father of Artemisia"
+  ],
+  "summary": [
+    {
+      "text": "King of Halicarnassus and father of Artemisia, the queen who of her own will sailed with Xerxes against Greece and won renown at Salamis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.11.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "At Delphi, among white-marble figures of Persians on the pillars, Pausanias saw a statue of Artemisia daughter of Lygdamis and queen of Halicarnassus — a lady who voluntarily joined Xerxes' expedition and distinguished herself at the naval battle off Salamis. The father is named only as king of her Carian city.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.11.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "halicarnassus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

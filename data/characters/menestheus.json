@@ -1,0 +1,46 @@
+{
+  "id": "menestheus",
+  "name": "Menestheus",
+  "greekName": "Menestheus (Μενεσθεύς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Athens",
+    "marshal of chariots and shields",
+    "later king of Melos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Peteos, king of Athens after Theseus was driven out, who led fifty black ships to Troy unmatched in marshalling chariots and shield-bearing warriors save Nestor alone — and after the war reigned on Melos when Polyanax died.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.550–580; Epitome 1.23, 6.15b"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer makes him captain of the Athenians at Troy: Menestheus son of Peteos, whom the youths of Athens still seek to win with sacrifices of bulls and rams — and like unto him was none other on earth for marshalling chariots and warriors who bear the shield, only Nestor being his elder. At the wall he shuddered when Sarpedon and Glaucus led the Lycians against his section, and called on Ajax and Teucer for aid.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.550–580; 4.310–345; 12.330–395"
+    },
+    {
+      "text": "Apollodorus tells how, when Theseus was imprisoned in Hades and Castor and Polydeuces seized Aphidna, Menestheus son of Peteos seized the kingdom of Athens and expelled Theseus' sons; and when Theseus returned he was driven out and fled to Lycomedes on Scyros, where he perished.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.23–24"
+    },
+    {
+      "text": "On the homeward voyage from Troy, Menestheus sailed as far as Mimas with Philoctetes and others; then he went to Melos and reigned as king, because the king there, Polyanax, had died.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    },
+    {
+      "city": "melos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

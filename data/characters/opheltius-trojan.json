@@ -1,0 +1,28 @@
+{
+  "id": "opheltius-trojan",
+  "name": "Opheltius",
+  "greekName": "Opheltios (Ὀφέλτιος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Euryalus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom godlike Euryalus slew when he went on after Dresus in the battle of *Iliad* 6 — distinct from Opheltius the Danaan leader whom Hector laid low in *Iliad* 11.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Diomedes had smitten Acamas chiefest among the Thracians, Euryalus slew Dresus and Opheltius, and went on after Aesepus and Pedasus, whom the fountain-nymph Abarbarea bare to peerless Bucolion, son of lordly Laomedon.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

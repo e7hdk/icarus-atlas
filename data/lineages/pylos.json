@@ -1,0 +1,19 @@
+{
+  "city": "pylos",
+  "reigns": [
+    {
+      "ruler": "Neleus",
+      "characterId": "neleus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Od. 11.257; Apollod. 1.9.9; Paus. 4.2.5",
+      "note": "Founder of sandy Pylos after his banishment from Iolcus; father of Nestor and the Neleid house."
+    },
+    {
+      "ruler": "Nestor",
+      "characterId": "nestor",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Il. 2.80–105; Apollod. 1.9.9; Paus. 4.2.7",
+      "note": "Survivor of Heracles' sack; old king of Pylos who counselled the Achaeans at Troy with ninety ships."
+    }
+  ]
+}

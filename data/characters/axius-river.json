@@ -1,0 +1,27 @@
+{
+  "id": "axius-river",
+  "name": "Axius",
+  "greekName": "Axios (Ἀξιός)",
+  "type": "god",
+  "domains": ["Paeonian river", "father of Pelegon", "Amydon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Wide-flowing river whose water Homer calls the fairest over the face of the earth — father of Pelegon (`pelegon-paeonian`) upon Periboea daughter of Acessamenus, and stream of the Paeonians who followed Pyraechmes and Asteropaeus to Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 16.285–305, 21.140–230"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster names Pyraechmes captain of the Paeonians from afar, out of Amydon from the wide-flowing Axius — Axius the water whereof floweth the fairest over the face of the earth.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "text": "When Achilles pressed Asteropaeus beside Scamander, the Paeonian vaunted his descent: he was begotten of wide-flowing Axius and Periboea, eldest of the daughters of Acessamenus, for with her lay the deep-eddying River.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.140–230"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "argeus-argos",
+  "name": "Argeus",
+  "greekName": "Ἀργεύς",
+  "romanName": "Argeus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Proetid royalty",
+    "father of Anaxagoras"
+  ],
+  "summary": [
+    {
+      "text": "Son of Megapenthes in the Proetid line at Argos and father of Anaxagoras — the king in whose family's third the maddened women were cured and the kingdom was divided among Melampus, Bias, and Anaxagoras.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.4"
+    },
+    {
+      "text": "Not to be confused with the eponymous Argus son of Zeus and Niobe, nor with other homonymous Argeus figures in the Peloponnesian genealogies.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 2.18.4; Bibliotheca 2.1.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias names him only in the genealogical chain that binds the native third of Argos to the house of Proetus: Anaxagoras, son of Argeus, son of Megapenthes, was reigning when the women went mad and Melampus demanded an equal share of the kingdom for himself and Bias.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

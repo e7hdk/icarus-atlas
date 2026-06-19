@@ -1,0 +1,36 @@
+{
+  "id": "phalanthus-tarentine",
+  "name": "Phalanthus",
+  "greekName": "Phalanthos (Φάλανθος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Spartan colonist",
+    "founder of Tarentum"
+  ],
+  "summary": [
+    {
+      "text": "The Spartan whom Delphi sent to found Tarentum — when his wife Aethra's tears fell like rain from a cloudless sky upon his head, he read the oracle and seized the coast from the barbarians that night.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.6–10.10.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias says Tarentum is a colony of the Lacedaemonians and that its founder was Phalanthus, a Spartan. Setting out to found a colony he received an oracle from Delphi declaring that when he should feel rain under a cloudless sky (aethra), he would win both a territory and a city. His wife Aethra wept over his departure; as her tears showered on Phalanthus' head he grasped the riddle of her name, and on that night he took Tarentum, the largest and most prosperous city on the coast, from the barbarians.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.6–10.10.8"
+    },
+    {
+      "text": "Not to be confused with Phalanthus son of Agelaus, a local hero of Arcadia whose ruined city Pausanias saw on Mount Phalanthus near Methydrium — a wholly separate figure from the Tarentine colonist.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.35.9; 10.10.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "tarentum",
+      "sources": ["pausanias"]
+    }
+  ]
+}

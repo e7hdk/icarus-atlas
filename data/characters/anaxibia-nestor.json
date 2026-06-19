@@ -1,0 +1,38 @@
+{
+  "id": "anaxibia-nestor",
+  "name": "Anaxibia",
+  "greekName": "Anaxibia (Ἀναξίβια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Pylos",
+    "wife of Nestor",
+    "mother of the Neleid princes"
+  ],
+  "summary": [
+    {
+      "text": "Wife of Nestor in Apollodorus' Neleid stemma — daughter of Cratieus — by whom he begot Pisidice, Polycaste, Perseus, Stratichus, Aretus, Echephron, Pisistratus, Antilochus, and Thrasymedes.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Homer names Nestor's queen Eurydice, daughter of Clymenus, at the same Pylians' feast — the same royal household under a different wife-name (topic nestor-wife-identity). Not to be confused with Anaxibia daughter of Bias, wife of Pelias (Bibliotheca 1.9.10).",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.450–495; Bibliotheca 1.9.9–1.9.10",
+      "topic": "nestor-wife-identity"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Heracles slew Neleus and all his sons save Nestor alone, the survivor inherited sandy Pylos and married Anaxibia, daughter of Cratieus. Apollodorus counts her as mother of the princes who feast with their father in the Odyssey and of the daughters Pisidice and Polycaste — the genealogical frame in which the mythographer orders the Neleid house for the Trojan generation.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pylos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

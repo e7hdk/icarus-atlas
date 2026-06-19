@@ -1,0 +1,90 @@
+{
+  "id": "penelope-tested",
+  "title": "Penelope Tested",
+  "greekTitle": "Πηνελόπη πειραθεῖσα",
+  "kind": "episode",
+  "parent": "odyssey",
+  "era": 9.12,
+  "summary": {
+    "text": "Penelope tested Odysseus with the secret of their immovable bed before she knew him at last; husband and wife were reunited, Laertes stood in the orchard, and Athena stayed the feud of the suitors' kin — though Apollodorus preserves endings where exile, Thesprotian kingship, or slander await them both.",
+    "sources": ["homer", "apollodorus", "pausanias"],
+    "citation": "Hom. Od. 23–24; Apollod. Epit. 7.34–7.40; Paus. 8.12.6"
+  },
+  "chapters": [
+    {
+      "title": "The secret of the bed",
+      "text": "Penelope came down from her chamber and sat opposite the stranger, still disbelieving. She ordered the bed moved outside for him to sleep on — but Odysseus protested: no man could move their bed, for he had built it around a living olive trunk, the root still in the ground. At that proof she knew her husband and wept in his arms.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 23.171–204"
+    },
+    {
+      "title": "Reunion at last",
+      "text": "Odysseus told her all his wanderings while Athena held back the dawn. Agamemnon's shade in the underworld had praised Penelope's prudent heart beside Clytemnestra's treachery — and Homer closes the reunion with husband and wife at last in the bed no other man could claim.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 11.444–446; 23.205–348"
+    },
+    {
+      "title": "Laertes in the orchard",
+      "text": "Odysseus went to his aged father Laertes in the orchard, proved himself by the scar and by memories only they shared, and stood with Telemachus and the loyal servants when the kin of the slain suitors marched against the house armed with spears.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 24.192–330"
+    },
+    {
+      "title": "Athena stays the feud",
+      "text": "Battle was joined between the families of the wooers and Odysseus' party until Athena in Mentor's shape commanded peace. Zeus sent a thunderbolt; the combatants dropped their arms and swore oaths — the Homeric ending leaves Odysseus king on Ithaca, feud ended, house restored.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 24.330–548"
+    },
+    {
+      "title": "Thesprotian years",
+      "text": "Apollodorus records a continuation Homer does not tell: after the slaughter Odysseus sacrificed to Hades, Persephone, and Tiresias, journeyed through Epirus to the Thesprotians, married queen Callidice, reigned and begot Polypoetes, and on her death returned to Ithaca to find Poliporthes, whom Penelope had borne in his absence.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. Epit. 7.34–7.35"
+    },
+    {
+      "title": "Exile and old age",
+      "text": "Others say the kinsfolk of the slain suitors accused Odysseus; Neoptolemus, hoping to gain Cephallenia, condemned him to exile. Odysseus went to Aetolia, married a daughter of Thoas, left Leontophonus, and died in old age — an ending that leaves the Homeric reunion intact only if one rejects this branch entirely.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. Epit. 7.40",
+      "topic": "odysseus-death"
+    },
+    {
+      "title": "Antinous and Mantinea",
+      "text": "Apollodorus preserves slanders Homer refuses: some say Penelope was seduced by Antinous and sent away by Odysseus to her father Icarius; at Mantinea she is said to have borne Pan to Hermes. Pausanias says the Mantineans themselves tell that Odysseus cast her out for paramours and that she died in Arcadia — the opposite of Agamemnon's praise for her prudent heart in the underworld.",
+      "sources": ["apollodorus", "pausanias", "homer"],
+      "citation": "Apollod. Epit. 7.38; Paus. 8.12.6; Hom. Od. 11.444–446",
+      "topic": "penelope-antinous-affair"
+    },
+    {
+      "title": "The harsher slander",
+      "text": "A still harsher variant names Amphinomus — the one courteous suitor Homer marks for death at the bow-feast while Penelope keeps faith — as Penelope's alleged lover, and says Odysseus killed his own wife on that account. The poem itself slays Amphinomus and reunites the royal pair; the slander belongs to the Epic Cycle's catalogue of opposed endings, not to the queen of the Odyssey.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 7.39; Hom. Od. 16.395–430; 22.89–103",
+      "topic": "penelope-amphinomus-affair"
+    }
+  ],
+  "cast": [
+    { "id": "odysseus", "name": "Odysseus", "role": "King restored in Homer's ending" },
+    { "id": "penelope", "name": "Penelope", "role": "Queen who tested the bed" },
+    { "id": "telemachus", "name": "Telemachus", "role": "Son in the final stand" },
+    { "id": "laertes", "name": "Laertes", "role": "Aged father in the orchard" },
+    { "id": "athena", "name": "Athena", "role": "She who stopped the feud" },
+    { "id": "callidice-thesprotian", "name": "Callidice", "role": "Thesprotian queen in one continuation" },
+    { "id": "poliporthes", "name": "Poliporthes", "role": "Son Penelope bore in absence" },
+    { "id": "neoptolemus", "name": "Neoptolemus", "role": "Judge in the exile variant" },
+    { "id": "antinous", "name": "Antinous", "role": "Named in the slander tradition" },
+    { "id": "amphinomus-dulichium", "name": "Amphinomus", "role": "Named in the harsher slander" },
+    { "id": "pan", "name": "Pan", "role": "God born at Mantinea in one variant" },
+    { "id": "hermes", "name": "Hermes", "role": "Named as Pan's father in one variant" }
+  ],
+  "places": [
+    { "id": "ithaca", "name": "Ithaca", "role": "Bed-chamber and orchard" },
+    { "id": "cichyrus", "name": "Cichyrus", "role": "Thesprotian kingdom in one continuation" },
+    { "id": "mantinea", "name": "Mantinea", "role": "City of Penelope–Pan variant" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Odyssey", "citation": "23–24" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "7.34–7.40" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "8.12.6" }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "iasion",
+  "name": "Iasion",
+  "greekName": "Iasion (Ἰασίων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Samothrace",
+    "brother of Dardanus",
+    "Plutus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Zeus and Electra daughter of Atlas, brother of Dardanus; on Samothrace he loved Demeter and was slain by Zeus' thunderbolt, whereupon Dardanus crossed to the mainland.",
+      "sources": ["apollodorus", "homer", "hesiod"],
+      "citation": "Bibliotheca 3.12.1; Odyssey 5.125–128; Theogony 970–973"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Electra, daughter of Atlas, bear to Zeus two sons, Iasion and Dardanus. Iasion loved Demeter, and in attempting to defile the goddess he was killed by a thunderbolt; grieving, Dardanus left Samothrace for the opposite mainland.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
+    },
+    {
+      "text": "Homer tells how Calypso recalled that fair-tressed Demeter, yielding to passion, lay with Iasion in the thrice-ploughed fallow land, and Zeus was not long without knowledge thereof but smote him with the bright thunderbolt and slew him.",
+      "sources": ["homer"],
+      "citation": "Odyssey 5.125–128"
+    },
+    {
+      "text": "Hesiod names Iasion among the heroes with whom Demeter lay in love in Crete in the thrice-ploughed field, and bore Plutus, a kindly god who enriches whomsoever he visits — though the place of the union shifts with the teller.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 970–973"
+    }
+  ],
+  "residences": [
+    {
+      "city": "samothrace",
+      "sources": ["apollodorus", "homer"]
+    }
+  ]
+}

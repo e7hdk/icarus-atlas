@@ -1,0 +1,27 @@
+{
+  "id": "hippothous-pelasgian",
+  "name": "Hippothous",
+  "greekName": "Hippothoos (Ἱππόθοος)",
+  "type": "hero",
+  "domains": ["Pelasgian command", "Larisa", "dragging Patroclus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Glorious son of Pelasgian Lethus, scion of Ares, co-captain of the spear-raging Pelasgi from deep-soiled Larisa — slain by Telamonian Ajax as he dragged Patroclus by the foot to please Hector.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 17.275–315; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Hippothous beside Pylaeus, sons twain of Pelasgian Lethus son of Teutamus, at the head of the Pelasgi who dwelt in Larisa. Apollodorus names Hippothous son of Pelasgus among the allies from Larissa — a namesake of Priam's sons and of other Hippothous figures in later myth, but the Iliad fixes this man among the allied captains.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    },
+    {
+      "text": "When the Trojans strove to hale Patroclus to sacred Ilios, Hippothous bound his baldric about the tendons of either ankle and dragged the corpse through the fierce conflict; but the son of Telamon darted through the throng and smote him, and the evil none could ward off fell swiftly upon him.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.275–315"
+    }
+  ]
+}

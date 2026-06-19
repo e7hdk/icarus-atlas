@@ -1,0 +1,33 @@
+{
+  "id": "eumedes-herald",
+  "name": "Eumedes",
+  "greekName": "Eumēdēs (Εὐμήδης)",
+  "type": "mortal",
+  "domains": ["heraldic office", "Troy", "ransom and wealth"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The godlike herald of Troy, father of Dolon the night-spy — a man rich in gold, bronze and iron, whom Dolon named when he begged Odysseus and Diomedes to spare him for ransom.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.299–330, 10.405–410"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer calls Eumedes a godlike herald and makes him the father of Dolon, the swift-footed Trojan who alone among five sisters had a brother. When the spy was caught on the plain, he cried that his father in the strong-built city of Troy had store of gold and bronze and iron, and would pay a great ransom if he learned his son still lived among the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.299–330, 10.405–410"
+    },
+    {
+      "text": "He must not be confused with Eumedes son of Melas, one of the victims in the Calydonian feud between Tydeus and the sons of Melas — a different man in a different house, sharing only the name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.8.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

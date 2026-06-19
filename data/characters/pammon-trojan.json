@@ -1,0 +1,28 @@
+{
+  "id": "pammon-trojan",
+  "name": "Pammon",
+  "greekName": "Pammon (Πάμμων)",
+  "type": "hero",
+  "domains": ["son of Priam", "Trojan prince"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Priam and Hecuba whom the old king chid among the nine sons when he dared the ransom of Hector — named by Homer in the roll beside Helenus, Paris, and Polites, and by Apollodorus among Hecuba's children.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Priam resolved to go to the Achaean ships for Hector's body, he called aloud to nine sons and gave command: haste, base children that were his shame — would that they had all perished in Hector's stead. Among them stood Pammon, named with Helenus, Paris, goodly Agathon, Antiphonus, Polites, Deïphobus, Hippothous, and lordly Dius.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 24.230–260; Bibliotheca 3.12.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "nisus-dulichium",
+  "name": "Nisus",
+  "greekName": "Nisos (Νῖσος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "prince of Dulichium",
+    "father of Amphinomus"
+  ],
+  "summary": [
+    {
+      "text": "Noble prince of Dulichium, son of Aretias and father of Amphinomus — the suitor leader from the wheat-rich isle whom Penelope favoured for his understanding heart.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.395–430; 18.395–425"
+    },
+    {
+      "text": "Not to be confused with Nisus king of Megara, son of Pandion, whose purple lock Scylla betrayed to Minos — a wholly different figure in the Athenian royal house.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 16.395–430; Bibliotheca 3.15.5–8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Amphinomus as the glorious son of the prince Nisus, son of Aretias, who led the suitors from Dulichium and spoke with good intent in the assembly when Telemachus returned — urging that they should not murder the prince, for the gods frown on such deeds.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.395–430"
+    },
+    {
+      "text": "When the disguised beggar warned Amphinomus to go home while there was still time, the suitor knew in his heart the gods had marked him for death — yet he sat on among the company, doomed to perish when Odysseus drew the bow.",
+      "sources": ["homer"],
+      "citation": "Odyssey 18.90–165; 22.89–103"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "city": "epidaurus-polis",
+  "reigns": [
+    {
+      "ruler": "Epidaurus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 2.1.2",
+      "note": "Son of Argus, eponym of the place in Apollodorus' Peloponnesian royal line."
+    },
+    {
+      "ruler": "Deiphontes",
+      "characterId": "deiphontes",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.8.5; Paus. 2.26.1–2",
+      "note": "Heraclid who took Epidauria with his wife Hyrnetho after Temenus' murder and the army's judgment."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "city": "arene",
+  "reigns": [
+    {
+      "ruler": "Perieres",
+      "characterId": "perieres-aeolid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 1.9.5; Paus. 4.2.2",
+      "note": "Aeolid king summoned to Messene; he and his sons originally dwelt at Andania before Aphareus founded Arene."
+    },
+    {
+      "ruler": "Aphareus",
+      "characterId": "aphareus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.10.3; Paus. 4.2.4, 4.3.7",
+      "note": "On inheriting Messene he held the greater authority, founded Arene for his wife, and settled there with his sons."
+    }
+  ]
+}

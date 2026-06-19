@@ -1,0 +1,27 @@
+{
+  "id": "thersilochus-paeonian",
+  "name": "Thersilochus",
+  "greekName": "Thersilochos (Θερσίλοχος)",
+  "type": "hero",
+  "domains": ["Paeonian captain", "the Axius"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Paeonian captain whom Hector heartened in the rally over Patroclus and whom Achilles slew on the banks of Scamander with a host of his countrymen — a namesake of Thersilochus the Dulichian suitor in Apollodorus' catalogue.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 17.210–245, 21.200–230; Epitome 7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the fierce struggle when the Trojans fought to drag Patroclus to Ilios, Hector named Thersilochus among the allied captains he heartened, standing in the flashing armour of the son of Peleus.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.210–245"
+    },
+    {
+      "text": "By the eddying river, when the Paeonians saw their best man Asteropaeus mightily vanquished beneath Achilles' hands, the son of Peleus went on chasing them along the banks and slew Thersilochus, Mydon, Astypylus, Mnesus, Thrasius, Aenius, and Ophelestes.",
+      "sources": ["homer"],
+      "citation": "Iliad 21.200–230"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "title": "Seven Against Thebes",
   "greekTitle": "Ἑπτὰ ἐπὶ Θήβας",
   "kind": "war",
-  "parent": null,
+  "parent": "theban-cycle",
   "era": 6,
   "summary": {
     "text": "Cursed by their father Oedipus, the sons of the Theban house turned on each other: Polynices brought seven Argive captains against the seven gates of Thebes, and the brothers died on each other's spears.",
@@ -34,33 +34,33 @@
       "text": "Eteocles and Polynices met in single combat and killed each other. The kingdom passed into Creon's hands — as king outright by one telling, as regent for Eteocles' son Laodamas by another.",
       "sources": ["apollodorus", "pausanias", "hyginus"],
       "citation": "Apollod. 3.6.8; Paus. 9.5.12-13; Hyg. Fab. 71"
-    },
-    {
-      "title": "Antigone's defiance",
-      "text": "Creon cast out the Argive dead unburied and set watchmen over them. Antigone stole the body of her brother Polynices and buried it in secret — and was detected by Creon himself.",
-      "sources": ["apollodorus", "hyginus"],
-      "citation": "Apollod. 3.7.1; Hyg. Fab. 72"
-    },
-    {
-      "title": "The Epigoni",
-      "text": "A generation later the sons of the Seven returned. Thebes was beaten at Glisas and abandoned; Laodamas fell to Alcmaeon — or led the survivors away to Illyria — and the Argives set Thersander, son of Polynices, upon the throne.",
-      "sources": ["apollodorus", "pausanias"],
-      "citation": "Apollod. 3.7.2-4; Paus. 9.5.13-14, 9.8.6, 9.9.4-5"
     }
   ],
   "cast": [
     { "id": "oedipus", "name": "Oedipus", "role": "Father of the curse" },
     { "id": "eteocles", "name": "Eteocles", "role": "Holder of the throne" },
     { "id": "polynices", "name": "Polynices", "role": "The exiled brother" },
+    { "id": "argia-adrastid", "name": "Argia", "role": "Adrastus' daughter, wife of Polynices" },
+    { "id": "aegialeus-adrastid", "name": "Aegialeus", "role": "Adrastus' son, Epigon slain at Glisas" },
     { "id": "creon", "name": "Creon", "role": "Ruler after the fall" },
     { "id": "antigone", "name": "Antigone", "role": "The defiant sister" },
     { "id": "tiresias", "name": "Tiresias", "role": "The blind seer" },
     { "id": "menoeceus-young", "name": "Menoeceus", "role": "The willing sacrifice" },
-    { "name": "Adrastus", "role": "King of Argos, leader of the host" },
-    { "name": "Capaneus", "role": "The lightning-struck boaster" },
-    { "name": "Amphiaraus", "role": "The seer who foresaw his death" },
-    { "name": "Laodamas", "role": "Eteocles' heir" },
-    { "name": "Thersander", "role": "King set up by the Epigoni" }
+    { "id": "adrastus", "name": "Adrastus", "role": "King of Argos, leader of the host" },
+    { "id": "capaneus", "name": "Capaneus", "role": "The lightning-struck boaster" },
+    { "id": "amphiaraus", "name": "Amphiaraus", "role": "The seer who foresaw his death" },
+    { "id": "eriphyle", "name": "Eriphyle", "role": "The necklace that sold the seer" },
+    { "id": "lycurgus-pronax", "name": "Lycurgus", "role": "Pronax' son, feud with Amphiaraus" },
+    { "id": "hippomedon", "name": "Hippomedon", "role": "Champion at the Oncaidian gate" },
+    { "id": "parthenopaeus", "name": "Parthenopaeus", "role": "Champion at the Electran gate" },
+    { "id": "tydeus", "name": "Tydeus", "role": "Champion at the Crenidian gate" },
+    { "id": "laodamas-theban", "name": "Laodamas", "role": "Eteocles' heir" },
+    { "id": "sthenelus-epigoni", "name": "Sthenelus", "role": "Epigon, son of Capaneus" },
+    { "id": "promachus-epigoni", "name": "Promachus", "role": "Epigon, son of Parthenopaeus" },
+    { "id": "polydorus-epigoni", "name": "Polydorus", "role": "Epigon, son of Hippomedon" },
+    { "id": "alcmaeon", "name": "Alcmaeon", "role": "Leader of the Epigoni" },
+    { "id": "amphilochus", "name": "Amphilochus", "role": "Epigon, brother of Alcmaeon" },
+    { "id": "thersander", "name": "Thersander", "role": "King set up by the Epigoni" }
   ],
   "places": [
     { "id": "thebes", "name": "Thebes", "role": "The besieged city" },

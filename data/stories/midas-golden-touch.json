@@ -1,0 +1,50 @@
+{
+  "id": "midas-golden-touch",
+  "title": "Midas and the Golden Touch",
+  "greekTitle": "Μίδας καὶ χρυσόχειρ",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 7.14,
+  "summary": {
+    "text": "King Midas of Phrygia entertained wandering Silenus and won from Bacchus the wish that all he touched should turn to gold — then starved among riches until he washed the curse away in the river by Sardis; on Mount Tmolus he preferred Pan's pipes to Apollo's lyre, and Phoebus gave him ass's ears for his judgment.",
+    "sources": ["ovid", "hyginus"],
+    "citation": "Ov. Met. 11.130–299; Hyg. Fab. 191"
+  },
+  "chapters": [
+    {
+      "title": "Silenus",
+      "text": "When Bacchus marched toward India, Silenus strayed drunk into Lydia. Peasants bound him with garlands and brought him to Midas, who had learned the Bacchic rites from Orpheus and Eumolpus. The king kept festival with his old companion twice five days and nights, then restored him to the young god.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 11.130–180"
+    },
+    {
+      "title": "The golden touch",
+      "text": "Bacchus offered any reward; Midas asked that whatever he touched become gold. The god granted it — and soon twigs, stone, bread, meat, and wine turned metal in his hands. Starving in the midst of treasure, he begged Lenaeus to lift the curse and was sent to plunge in the source of the river that flows by Sardis; the gold virtue washed from his body and tinged the stream ever after.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 11.180–227; Hyg. Fab. 191"
+    },
+    {
+      "title": "Pan and Apollo",
+      "text": "On lofty Tmolus, Pan boasted his reeds could surpass Apollo's lyre before mountain nymphs and Midas. Tmolus gave victory to Phoebus; Midas cried the prize belonged to Pan — and Apollo turned his ears into those of an ass. Midas hid them under a turban, but his barber whispered the secret into a hole in the earth, and reeds murmured King Midas has ass's ears.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 11.228–299; Hyg. Fab. 191"
+    }
+  ],
+  "cast": [
+    { "id": "midas", "name": "Midas", "role": "Phrygian king of the golden touch and ass's ears" },
+    { "id": "dionysus", "name": "Dionysus", "role": "Bacchus, who granted and revoked the wish" },
+    { "name": "Silenus", "role": "The foster-father of Bacchus whom Midas entertained" },
+    { "id": "apollo", "name": "Apollo", "role": "Victor of the music contest on Tmolus" },
+    { "id": "pan", "name": "Pan", "role": "Satyr who lost the contest to Apollo" },
+    { "id": "orpheus", "name": "Orpheus", "role": "Named as teacher of the Bacchic rites to Midas" }
+  ],
+  "places": [
+    { "id": "sardis", "name": "Sardis", "role": "Lydian capital near the golden river" },
+    { "name": "Mount Tmolus", "role": "Mountain where Apollo and Pan contended" },
+    { "name": "Phrygia", "role": "Land of Midas and Silenus' capture" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "11.130–299" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "191" }
+  ]
+}

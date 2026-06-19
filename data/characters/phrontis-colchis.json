@@ -1,0 +1,43 @@
+{
+  "id": "phrontis-colchis",
+  "name": "Phrontis",
+  "greekName": "Phrontis (Φρόντις)",
+  "romanName": "Phrontis",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phrixus",
+    "grandson of Aeetes",
+    "the flight from Colchis"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phrixus and Chalciope at Aea, one of the four brothers who met the Argonauts returning from Colchis toward Orchomenus and fled with Jason and Medea when Aeetes learned of the stolen fleece — leaping ashore beside Argus to beg Medea for rescue.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 2.1140–1145, 4.66"
+    },
+    {
+      "text": "Not to be confused with Phrontis son of Onetor, Menelaus' helmsman slain by Apollo at Pharos, nor with queenly Phrontis wife of Panthous at Troy.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.280–325; Iliad 17.1–40"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Phrontis among the sons Phrixus begot on Chalciope in the Colchian royal house — Argus, Melas, Phrontis, and Cytisorus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.1"
+    },
+    {
+      "text": "Apollonius names him when the brothers greet Jason at Circe's isle, and again at the crisis of the flight: after Medea and the sons of Phrixus cast off from Colchis, Phrontis and Argus leapt first to land with Jason and clasped Medea's knees, pleading to be saved from Aeetes together with the witch who had betrayed her father.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.1140–1145, 4.66"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aea-colchis",
+      "sources": ["apollodorus", "apollonius"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "electra-atlas",
+  "name": "Electra",
+  "greekName": "Ēlektra (Ἠλέκτρα)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Atlas",
+    "mother of Dardanus and Iasion",
+    "the Pleiad"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Atlas who bore to Zeus the sons Iasion and Dardanus on Samothrace — the Trojan line and its founder's island home.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.12.1; Fabulae 192, 275"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Electra, daughter of Atlas, among the mothers of the Trojan royal house: by Zeus she had Iasion and Dardanus on Samothrace before Iasion's death drove Dardanus across the sea to Teucer's land.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
+    },
+    {
+      "text": "Hyginus preserves the star-myth: of the seven Pleiades, Electra is said no longer to appear among her sisters out of grief at the death of Dardanus and the loss of Troy. Her parentage and her sons' maternity live on the nymph node `electra-pleiad`; this hero node carries the catasterism and the Trojan grief.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 192; Astronomica 2.21.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "samothrace",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

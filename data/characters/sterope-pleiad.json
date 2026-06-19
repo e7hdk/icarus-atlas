@@ -1,0 +1,39 @@
+{
+  "id": "sterope-pleiad",
+  "name": "Sterope",
+  "greekName": "Steropē (Στερόπη)",
+  "romanName": "Sterope",
+  "type": "nymph",
+  "kinds": ["pleiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pleiades",
+    "wife of Oenomaus",
+    "Pisa and the chariot race"
+  ],
+  "summary": [
+    {
+      "text": "One of the seven Pleiades whom Apollodorus names as the wife of Oenomaus king of Pisa — though Hyginus also calls Oenomaus the son of Ares and Asterope daughter of Atlas, folding wife and mother into one disputed name.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 3.10.1; Fabulae 84; Description of Greece 6.21.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Sterope among the Pleiades born at Cyllene to Atlas and Pleione, and adds the marriages: Sterope was married to Oenomaus, and Merope to Sisyphus. So the Pleiad enters the Peloponnesian legend of the chariot race in which suitors died for Hippodamia until Pelops and Myrtilus broke the king's car.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.1; Epitome 2.4–7"
+    },
+    {
+      "text": "Hyginus gives a different tie to the same name. Oenomaus, he writes, was the son of Mars and Asterope daughter of Atlas — making the Pleiad his mother, not his bride. Pausanias, describing the pediment at Olympia, shows Oenomaus with a helmet and beside him Sterope his wife, who was one of the daughters of Atlas, with Myrtilus the charioteer before the horses.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 84; Description of Greece 6.21.7",
+      "topic": "oenomaus-sterope-relation"
+    },
+    {
+      "text": "The name must be kept apart from Steropes the Cyclops, the lightning-bringer among the sons of Uranus and Gaia (`steropes-cyclops`). The Pleiad of Pisa and the one-eyed smith of the forge share a Greek root in \"lightning\" but no genealogy; the atlas suffixes the smith and leaves the nymph as `sterope-pleiad`.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 140; Bibliotheca 3.10.1"
+    }
+  ]
+}

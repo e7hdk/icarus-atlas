@@ -1,0 +1,47 @@
+{
+  "id": "sangarius",
+  "name": "Sangarius",
+  "greekName": "Sangarios (Σαγγάριος)",
+  "romanName": "Sangarius",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Phrygian river",
+    "Trojan genealogy",
+    "Attis and the almond"
+  ],
+  "summary": [
+    {
+      "text": "Great river-god of Phrygia, born to Oceanus and Tethys — the stream beside which Priam's allies camped in the Iliad, and in one telling the father of Hecuba with Metope, and in Phrygian legend the father of the nymph who bore Attis from the almond.",
+      "sources": ["hesiod", "homer", "apollodorus", "pausanias"],
+      "citation": "Theogony 337–345; Iliad 3.187, 16.719; Bibliotheca 3.12.5; Description of Greece 7.17.11"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names great Sangarius among the eddying rivers Tethys bore to Ocean — set beside Peneus, Hermus, and Ladon in the catalogue of the world's streams.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Homer knows the Phrygian water in two passages of war. Priam's son Paris recalls how he fought beside Otreus and godlike Mygdon on the banks of Sangarius when the Amazons came; and Apollo, disguised as Asius uncle to Hector, speaks of Hecuba's brother dwelling in Phrygia by the streams of Sangarius — fixing the river as the landscape of Trojan kin beyond the Hellespont.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.187; 16.719"
+    },
+    {
+      "text": "Apollodorus gives Hecuba's parentage three ways: daughter of Dymas, or of Cisseus, or of the river Sangarius and Metope — the last pairing making the Phrygian stream father of Troy's queen in one variant among several.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.5"
+    },
+    {
+      "text": "Pausanias tells a Phrygian tale on the same river: an almond-tree grew from the river's bank, a daughter of Sangarius took of the fruit and laid it in her bosom, and when it vanished she conceived — the boy who would become Attis, tended by a he-goat. Midas son of Gordius, who founded Ancyra beyond the Sangarius, belongs to the same Phrygian landscape Pausanias maps around the stream.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.17.11; 1.4.5"
+    },
+    {
+      "text": "Hyginus counts Sangarius among the Rivers born of Oceanus and Tethys in his genealogical preface — the Phrygian stream in the same divine brood as Maeander, Scamander, and Alpheus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae, preface (Theogony)"
+    }
+  ]
+}

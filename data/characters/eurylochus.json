@@ -1,0 +1,36 @@
+{
+  "id": "eurylochus",
+  "name": "Eurylochus",
+  "greekName": "Eurylochos (Εὐρύλοχος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Odysseus' lieutenant",
+    "voice of the crew",
+    "the cattle of the Sun"
+  ],
+  "summary": [
+    {
+      "text": "Godlike Eurylochus, Odysseus' second-in-command among the wanderers — the man who drew the lot to lead the scouting party to Circe's house, who alone suspected her snare, and who later persuaded the starving crew to slaughter Helios' cattle on Thrinacia.",
+      "sources": ["homer", "ovid"],
+      "citation": "Odyssey 10.180–470, 12.280–360; Metamorphoses 14.336–473"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer divides the company in two bands on Aeaea and appoints Eurylochus leader of one; the lot leaps for him, and he goes with two-and-twenty comrades into Circe's halls while Odysseus stays with the ship. When the enchantress turned the rest to swine, Eurylochus alone fled back and begged the rest to put out to sea at once — but Odysseus went up alone to face her.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.180–300"
+    },
+    {
+      "text": "After the year on Circe's isle he sailed with Odysseus to the underworld, holding the sacrificial victims beside Perimedes while the hero poured libations to the dead. When they passed the Sirens he helped bind Odysseus upright to the mast; and when Scylla had taken six men, it was Eurylochus who answered Odysseus with hateful words, calling him wrought of iron for mourning comrades the monster had snatched.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.1–50, 12.195–325"
+    },
+    {
+      "text": "On Thrinacia, while Odysseus slept, Eurylochus gave evil counsel: better to die by hunger, the most pitiful death, than waste away on the empty sea — let them drive off the best of Helios' cattle and swear to build a rich temple to the Sun if they ever reached Ithaca. The crew consented; Zeus wrecked the ship, and only Odysseus survived.",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.330–360"
+    }
+  ]
+}

@@ -3,30 +3,63 @@
   "name": "Pasiphae",
   "greekName": "Pasiphaē (Πασιφάη)",
   "type": "nymph",
-  "domains": ["Queen of Crete", "the labyrinth's mother"],
+  "domains": [
+    "Queen of Crete",
+    "the labyrinth's mother"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "The daughter of Helios and Perse, and wife of King Minos. Cursed by Poseidon with an unnatural lust for a white bull, she became the mother of the Minotaur.",
-      "sources": ["apollodorus", "ovid", "apollonius"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "apollonius"
+      ],
       "citation": "Bibliotheca 3.1.2-4; Metamorphoses 8.132; Argonautica 3.973"
     }
   ],
   "story": [
     {
       "text": "Pasiphae was an immortal daughter of the sun god Helios and the Oceanid Perse, making her a sister to the witch Circe and King Aeetes of Colchis. She was given in marriage to King Minos of Crete.",
-      "sources": ["apollodorus", "hesiod"],
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
       "citation": "Bibliotheca 3.1.2; Theogony 956"
     },
     {
       "text": "When Minos refused to sacrifice a magnificent white bull sent by Poseidon, the sea god took his revenge not on Minos directly, but on Pasiphae. He instilled in her a maddening, unnatural lust for the beast.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Bibliotheca 3.1.3; Metamorphoses 8.132"
     },
     {
       "text": "Desperate to consummate her desire, she enlisted the help of the master inventor Daedalus. He constructed a hollow wooden cow covered in real hide, inside of which Pasiphae hid herself. The white bull mated with the wooden cow, and from this union, Pasiphae conceived and gave birth to the monstrous Minotaur.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 3.1.4"
     }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "gortyn",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ]
+    }
+  ],
+  "kinds": [
+    "oceanid"
   ]
 }

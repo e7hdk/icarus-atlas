@@ -3,37 +3,62 @@
   "name": "Clymene",
   "greekName": "Klymenē (Κλυμένη)",
   "type": "nymph",
-  "domains": ["fresh waters", "the nurture of youths"],
+  "domains": [
+    "fresh waters",
+    "the nurture of youths"
+  ],
   "cluster": "titan-ring",
   "summary": [
     {
       "text": "Neat-ankled Oceanid, daughter of Oceanus and Tethys, whom the Titan Iapetus led up into one bed with him; she bore Atlas, Menoetius, Prometheus and Epimetheus — the house through which fire and the first woman reached mankind.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 351, 507–514"
     },
     {
       "text": "Consort of Iapetus and mother of Atlas, Epimetheus and Prometheus in Hyginus' genealogy.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Fabulae, preface (Theogony)"
     }
   ],
   "story": [
     {
       "text": "Hesiod names her at line 351 of his catalogue of Oceanids, among the holy company of daughters of Tethys and Ocean who, with lord Apollo and the Rivers, have youths in their keeping all over the earth. Of the three thousand sisters, it was the neat-ankled Clymene whom Iapetus took to wife and led up into one bed with him — and she bore him sons out of all proportion to her single catalogue line: stout-hearted Atlas, glorious Menoetius, clever Prometheus, and scatter-brained Epimetheus.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Theogony 346–351, 507–514"
     },
     {
       "text": "Hesiod and Hyginus agree that the mother of Iapetus' children is Clymene — though Hyginus' genealogical preface counts only three of them, Atlas, Epimetheus and Prometheus, letting thunderbolted Menoetius drop from the list.",
-      "sources": ["hesiod", "hyginus"],
+      "sources": [
+        "hesiod",
+        "hyginus"
+      ],
       "citation": "Theogony 507–514; Fabulae, preface (Theogony)",
       "topic": "iapetionid-mother"
     },
     {
       "text": "Apollodorus passes her over entirely. His catalogue of Oceanids — Asia, Styx, Electra, Doris, Eurynome, Amphitrite, Metis — has no Clymene in it, and the wife of Iapetus and mother of all four sons is the Oceanid Asia instead. Under his telling, the mother of Prometheus is a name Hesiod gave to someone else.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Bibliotheca 1.2.2–1.2.3",
       "topic": "iapetionid-mother"
+    },
+    {
+      "text": "In a separate strand of myth the Oceanid Clymene is the wife of Merops, king of the Ethiopians, and mother by Helios the Sun of Phaethon and of the Heliades — the sisters who wept their fallen brother into amber-dropping poplars on the Eridanus. The ancients use the one Oceanid name for both unions, the bride of the Titan Iapetus and the bride of the mortal Merops, without ever quite reconciling them.",
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Metamorphoses 1.756–2.366; Fabulae 154"
     }
+  ],
+  "kinds": [
+    "oceanid"
   ]
 }

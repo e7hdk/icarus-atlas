@@ -1,0 +1,43 @@
+{
+  "id": "ormenius-dulichium",
+  "name": "Ormenius",
+  "greekName": "Ormenios (Ὀρμένιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "One of Penelope's suitors in Apollodorus' catalogue of the fifty-seven wooers from Dulichium — attested only in the Epitome list of wooers who came against Odysseus' house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.26–7.27"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Ormenius among the suitors who devoured Odysseus' substance, listed after Thrasymedes and before Diopithes in the long company of Penelope's wooers — a Thrasymedes in the same list whom the Epitome does not identify with Nestor's son.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
+      "city": "ithaca",
+      "sources": [
+        "apollodorus"
+      ]
+    }
+  ]
+}

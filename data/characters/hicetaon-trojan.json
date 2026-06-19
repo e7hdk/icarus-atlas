@@ -1,0 +1,33 @@
+{
+  "id": "hicetaon-trojan",
+  "name": "Hicetaon",
+  "greekName": "Hiketaōn (Ἱκετάων)",
+  "type": "hero",
+  "domains": ["son of Laomedon", "Trojan elder", "father of Melanippus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Laomedon (`laomedon`) and brother of Priam, who sat with the elders at the Scaean gates and fathered strong Melanippus (`melanippus-hicetaonid`) — Aeneas names him among Laomedon's sons when he vaunts his lineage to Achilles.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.150–190, 20.200–240; Apollod. 3.12.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "About Priam and Panthous and Thymoetes and Lampus and Clytius and Hicetaon, scion of Ares, and Ucalegon and Antenor — men of prudence both — sat as elders of the people at the Scaean gates; because of old age had they now ceased from battle, but speakers they were full sweet.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    },
+    {
+      "text": "When Hector called to his kinsmen at the ships, he first chid Hicetaon's son, strong Melanippus, who had fed his kine at Percote until the Danaans came and then dwelt pre-eminent in Priam's house — until Nestor smote him and Antilochus stripped his armour.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–590"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -375,8 +375,8 @@
     "greekName": "Χαονία",
     "parent": "epirus",
     "blurb": {
-      "text": "The wild northern coast of Epirus, facing Corcyra across the strait.",
-      "sources": []
+      "text": "The wild northern coast of Epirus — where Helenus built Buthrotum, the little Troy of the Trojan seer.",
+      "sources": ["apollodorus", "ovid"]
     }
   },
   {
@@ -395,8 +395,18 @@
     "greekName": "Θεσπρωτία",
     "parent": "epirus",
     "blurb": {
-      "text": "Thesprotia of the Acheron, where Odysseus' false tales rang almost true.",
-      "sources": ["homer"]
+      "text": "Thesprotia of the Acheron — where Cichyrus stood near the lake Acherusia and the rivers Cocytus and Acheron, which Pausanias believed Homer had seen before he described the regions of Hades.",
+      "sources": ["homer", "pausanias", "apollodorus"]
+    }
+  },
+  {
+    "id": "ambracia",
+    "name": "Ambracia",
+    "greekName": "Ἀμβρακία",
+    "parent": "epirus",
+    "blurb": {
+      "text": "Ambracia on the Ambracian gulf — the Epirote city Aeneas passed on his westward voyage, disputed in myth between the gods, and where Hyginus says the bones of Neoptolemus were scattered after Orestes slew him at Delphi.",
+      "sources": ["ovid", "hyginus", "apollonius"]
     }
   },
   {
@@ -570,6 +580,16 @@
     }
   },
   {
+    "id": "dulichium",
+    "name": "Dulichium",
+    "greekName": "Δουλίχιον",
+    "parent": "ionian-islands",
+    "blurb": {
+      "text": "Dulichium — where Phyleus made his home in wrath against his father, and whence Meges led forty ships to Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
     "id": "lesbos",
     "name": "Lesbos",
     "greekName": "Λέσβος",
@@ -620,6 +640,56 @@
     }
   },
   {
+    "id": "sporades",
+    "name": "Sporades",
+    "greekName": "Σποράδες",
+    "parent": "north-aegean",
+    "blurb": {
+      "text": "The Sporades — scattered isles off Magnesia and Euboea, where the Argo passed Sciathus and Peparethos on the outward voyage.",
+      "sources": ["apollonius", "ovid"]
+    }
+  },
+  {
+    "id": "skyros",
+    "name": "Skyros",
+    "greekName": "Σκῦρος",
+    "parent": "sporades",
+    "blurb": {
+      "text": "Scyros of Lycomedes — where Thetis hid Achilles in maiden's dress, where Neoptolemus was born, and where Theseus met his end.",
+      "sources": ["apollodorus", "homer", "hyginus"]
+    }
+  },
+  {
+    "id": "skiathos",
+    "name": "Skiathos",
+    "greekName": "Σκιάθος",
+    "parent": "sporades",
+    "blurb": {
+      "text": "Sciathus — the westernmost of the Northern Sporades, sighted from the Argo as Jason's crew sailed past Pelion toward Magnesia.",
+      "sources": ["apollonius"]
+    }
+  },
+  {
+    "id": "skopelos",
+    "name": "Skopelos",
+    "greekName": "Πεπάρηθος",
+    "parent": "sporades",
+    "blurb": {
+      "text": "Peparethos, rich in olives — the Sporades isle that gave its name to Peparethus, son of Dionysus and Ariadne, and that Minos passed seeking Aeacus.",
+      "sources": ["apollodorus", "ovid"]
+    }
+  },
+  {
+    "id": "ikos",
+    "name": "Ikos",
+    "greekName": "Ἴκος",
+    "parent": "sporades",
+    "blurb": {
+      "text": "Ikos, the easternmost of the Northern Sporades off the Magnesian coast — in the same island chain as Sciathus and Peparethos on the Argonaut route.",
+      "sources": ["apollonius"]
+    }
+  },
+  {
     "id": "delos",
     "name": "Delos",
     "greekName": "Δῆλος",
@@ -650,6 +720,96 @@
     }
   },
   {
+    "id": "melos",
+    "name": "Melos",
+    "greekName": "Μῆλος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Melos of the Cyclades — where Menestheus son of Peteos reigned after King Polyanax died on the homeward voyage from Troy.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "myconos",
+    "name": "Myconos",
+    "greekName": "Μύκονος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Level Myconos of the Cyclades — where Thetis buried the Locrian Ajax after Athena wrecked his ship on the voyage home from Troy, and one of the isles that sided with Minos against Athens.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "andros",
+    "name": "Andros",
+    "greekName": "Ἄνδρος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Andros of the northern Cyclades — where Phidippus son of Thessalus settled with the Coans after Troy, before the wind drove them on to Cyprus.",
+      "sources": ["apollodorus", "ovid"]
+    }
+  },
+  {
+    "id": "tenos",
+    "name": "Tenos",
+    "greekName": "Τῆνος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Sea-girt Tenos — where Heracles slew the winged Boreads Zetes and Calais, and where Athena later sent a tempest against the Greek fleet sailing home from Troy.",
+      "sources": ["apollodorus", "apollonius", "ovid"]
+    }
+  },
+  {
+    "id": "ceos",
+    "name": "Ceos",
+    "greekName": "Κέως",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Ceos of the western Cyclades — where Aristaeus son of Apollo made his home after Sirius scorched the Minoan isles, built the altar of Zeus Icmaeus, and ended the plague with sacrifices on the mountains.",
+      "sources": ["apollonius"]
+    }
+  },
+  {
+    "id": "kimolos",
+    "name": "Kimolos",
+    "greekName": "Κίμωλος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Kimolos of the western Cyclades — the chalky island whose fields joined Minos' allies when he mustered the Cyclades against the Athenians.",
+      "sources": ["ovid"]
+    }
+  },
+  {
+    "id": "seriphos",
+    "name": "Seriphos",
+    "greekName": "Σέριφος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Level Seriphos — where Danae and the infant Perseus washed ashore in a chest, Dictys the fisherman reared the hero, and King Polydectes was turned to stone by the Gorgon's head.",
+      "sources": ["apollodorus", "hyginus", "ovid"]
+    }
+  },
+  {
+    "id": "siphnos",
+    "name": "Siphnos",
+    "greekName": "Σίφνος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Siphnos of the gold mines — whose tithe built the treasury at Delphi until greed stopped the offering and the sea swallowed the workings, and home of Arne the impious Siphnian turned to a daw.",
+      "sources": ["pausanias", "ovid"]
+    }
+  },
+  {
+    "id": "syros",
+    "name": "Syros",
+    "greekName": "Σύρος",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Syros covered with wild thyme — one of the Cycladic isles that sided with Minos when he gathered the islands against Athens.",
+      "sources": ["ovid"]
+    }
+  },
+  {
     "id": "thera",
     "name": "Thera",
     "greekName": "Θήρα",
@@ -677,6 +837,256 @@
     "blurb": {
       "text": "Cos, where storm-driven Heracles came ashore and fought the Meropes.",
       "sources": ["homer", "apollodorus"]
+    }
+  },
+  {
+    "id": "cythera",
+    "name": "Cythera",
+    "greekName": "Κύθηρα",
+    "parent": "south-aegean",
+    "blurb": {
+      "text": "Holy Cythera, where Aphrodite first came ashore from the sea-foam.",
+      "sources": ["hesiod", "homer"]
+    }
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "greekName": "Κύπρος",
+    "parent": null,
+    "blurb": {
+      "text": "Cyprus of Aphrodite — Kypris' island, where Teucer founded a second Salamis after Troy.",
+      "sources": ["hesiod", "pausanias", "apollodorus"]
+    }
+  },
+  {
+    "id": "ionia",
+    "name": "Ionia",
+    "greekName": "Ἰωνία",
+    "parent": null,
+    "blurb": {
+      "text": "The Ionian coast of Asia Minor — Miletus, Ephesus and the cities that looked across the Aegean to Greece.",
+      "sources": ["homer", "pausanias", "apollonius"]
+    }
+  },
+  {
+    "id": "colchis",
+    "name": "Colchis",
+    "greekName": "Κολχίς",
+    "parent": null,
+    "blurb": {
+      "text": "The kingdom at the eastern Black Sea — Aea of Aeetes, where the Golden Fleece hung and Jason's Argonauts won Medea.",
+      "sources": ["homer", "apollodorus", "apollonius"]
+    }
+  },
+  {
+    "id": "lydia",
+    "name": "Lydia",
+    "greekName": "Λυδία",
+    "parent": null,
+    "blurb": {
+      "text": "The golden kingdom of Croesus — Sardis on Tmolus, where Midas washed away his touch and Omphale held Heracles in servitude.",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  },
+  {
+    "id": "caria",
+    "name": "Caria",
+    "greekName": "Καρία",
+    "parent": null,
+    "blurb": {
+      "text": "The Carian coast — Halicarnassus of Mausolus and Artemisia, and the isles the Carians held with Miletus.",
+      "sources": ["homer", "pausanias"]
+    }
+  },
+  {
+    "id": "pontus",
+    "name": "Pontus",
+    "greekName": "Πόντος",
+    "parent": null,
+    "blurb": {
+      "text": "The southern Black Sea coast — Sinope where Zeus gave the nymph her name and her virginity.",
+      "sources": ["apollonius", "pausanias"]
+    }
+  },
+  {
+    "id": "mysia",
+    "name": "Mysia",
+    "greekName": "Μυσία",
+    "parent": null,
+    "blurb": {
+      "text": "The Caicus plain — Teuthrania of old, where Telephus ruled and the Greeks first ravaged the shore thinking it Troy.",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "phrygia",
+    "name": "Phrygia",
+    "greekName": "Φρυγία",
+    "parent": null,
+    "blurb": {
+      "text": "Phrygia by the Sangarius — Gordius and Midas, Marsyas' contest, and the golden touch washed away on Tmolus.",
+      "sources": ["homer", "ovid", "hyginus", "pausanias"]
+    }
+  },
+  {
+    "id": "lycia",
+    "name": "Lycia",
+    "greekName": "Λυκία",
+    "parent": null,
+    "blurb": {
+      "text": "Lycia of the eddying Xanthus — Sarpedon and Glaucus led its men to Troy, and Bellerophon fought the Solymi in the hills above.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "pamphylia",
+    "name": "Pamphylia",
+    "greekName": "Παμφυλία",
+    "parent": null,
+    "blurb": {
+      "text": "Pamphylia on the southern coast — where Cretan settlers dwelt beside Lycians and Carians, kin to Sarpedon's line.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "cilicia",
+    "name": "Cilicia",
+    "greekName": "Κιλικία",
+    "parent": null,
+    "blurb": {
+      "text": "Cilicia of Thebe under Placus — Eëtion's kingdom, father of Andromache whom bronze-harnessed Hector wed.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "bithynia",
+    "name": "Bithynia",
+    "greekName": "Βιθυνία",
+    "parent": null,
+    "blurb": {
+      "text": "Bithynia on the Propontis shore — where King Amycus, son of a Bithynian nymph, forced strangers to box and die.",
+      "sources": ["apollodorus"]
+    }
+  },
+  {
+    "id": "paphlagonia",
+    "name": "Paphlagonia",
+    "greekName": "Παπφλαγονία",
+    "parent": null,
+    "blurb": {
+      "text": "Paphlagonia of the Eneti — Pylaemenes led them from Cytorus and Sesamus to fight beside the Trojans.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "cappadocia",
+    "name": "Cappadocia",
+    "greekName": "Καππαδοκία",
+    "parent": null,
+    "blurb": {
+      "text": "Cappadocia on the Euxine rim — where the Tauric goddess' fame still reached, and Artemis Anaeitis was claimed.",
+      "sources": ["pausanias"]
+    }
+  },
+  {
+    "id": "dardania",
+    "name": "Dardania",
+    "greekName": "Δαρδανία",
+    "parent": "troad",
+    "blurb": {
+      "text": "Dardania about Mount Ida — Aeneas son of Anchises led the Dardanians, whom Aphrodite bore to a mortal amid the spurs of Ida.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "teuthrania",
+    "name": "Teuthrania",
+    "greekName": "Τευθρανία",
+    "parent": "mysia",
+    "blurb": {
+      "text": "Teuthrania on the Mysian coast — where Telephus ruled after Teuthras wed Auge, and old Pergamus took its name.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "aeolis",
+    "name": "Aeolis",
+    "greekName": "Αἰωλίς",
+    "parent": "mysia",
+    "blurb": {
+      "text": "Aeolis of the twelve cities — Hesiod's Aeolian Cyme and the coast the Ionians later disputed at Panionium.",
+      "sources": ["hesiod", "pausanias"]
+    }
+  },
+  {
+    "id": "maeonia",
+    "name": "Maeonia",
+    "greekName": "Μαιονία",
+    "parent": "lydia",
+    "blurb": {
+      "text": "Maeonia beneath Tmolus — the older name of Lydia's heartland, whence Mesthles and Antiphus led the Maeonians to Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "ascania",
+    "name": "Ascania",
+    "greekName": "Ἀσκανία",
+    "parent": "phrygia",
+    "blurb": {
+      "text": "Ascania in Phrygia — Phorcys and Ascanius led the Phrygian host from afar to the plain of Troy.",
+      "sources": ["homer"]
+    }
+  },
+  {
+    "id": "hellespontine-phrygia",
+    "name": "Hellespontine Phrygia",
+    "greekName": "Ἑλλησπόντια Φρυγία",
+    "parent": "phrygia",
+    "blurb": {
+      "text": "Hellespontine Phrygia — the Dardanian shore where Telephus' kingdom touched the straits and the Sangarius ran inland.",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  },
+  {
+    "id": "sicily",
+    "name": "Sicily",
+    "greekName": "Σικελία",
+    "parent": null,
+    "blurb": {
+      "text": "Trinacria of the three capes — where Polyphemus kept his Cyclopes cave, Scylla lurked in the strait, Arethusa sought refuge, and Etna still breathes fire from the buried battle of the gods.",
+      "sources": ["homer", "ovid", "apollodorus"]
+    }
+  },
+  {
+    "id": "magna-graecia",
+    "name": "Magna Graecia",
+    "greekName": "Μεγάλη Ἑλλάς",
+    "parent": null,
+    "blurb": {
+      "text": "Great Greece on Italian soil — Achaean Tarentum and Ionian Croton, Sybaris and Locri, where colonists built temples to the gods they brought from Hellas.",
+      "sources": ["pausanias", "apollodorus"]
+    }
+  },
+  {
+    "id": "latium",
+    "name": "Latium",
+    "greekName": "Λατίον",
+    "parent": null,
+    "blurb": {
+      "text": "Latium of the Laurentine shore — where Aeneas came ashore after Troy and won his place among the Latin peoples.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "campania",
+    "name": "Campania",
+    "greekName": "Καμπανία",
+    "parent": null,
+    "blurb": {
+      "text": "Campania's western plain — where Philoctetes settled among the Campanians after Troy, and where Diomedes wandered in the same nostoi strand toward Cumae.",
+      "sources": ["apollodorus"]
     }
   }
 ]

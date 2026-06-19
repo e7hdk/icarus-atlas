@@ -1,0 +1,59 @@
+{
+  "id": "death-of-heracles",
+  "title": "The Death of Heracles",
+  "greekTitle": "ὁ θάνατος Ἡρακλέους",
+  "kind": "episode",
+  "parent": "heracles-cycle",
+  "era": 6.6,
+  "summary": {
+    "text": "When Deianira sent the shirt steeped in Nessus' blood, the poison consumed Heracles on Mount Oeta; Philoctetes lit the pyre, a cloud bore the hero up, and on Olympus he wed Hebe — though in Hades his shade still walked among the heroes.",
+    "sources": ["apollodorus", "ovid", "hesiod", "homer"],
+    "citation": "Apollod. 2.7.5–7; Ov. Met. 9.1–272; Hes. Theog. 950–955; Od. 11.601–627"
+  },
+  "chapters": [
+    {
+      "title": "Oechalia and Iole",
+      "text": "Eurytus of Oechalia had taught the young Heracles to shoot and promised his daughter Iole to whoever could surpass him with the bow. When the hero returned and won, the king refused; later Heracles sacked the city, slew Eurytus, and carried Iole away — the prize that would undo him.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 2.6.1, 2.7.7; Od. 8.224–225"
+    },
+    {
+      "title": "Nessus and the blood",
+      "text": "Crossing the river Evenus with Deianira, Heracles entrusted her to the centaur Nessus to carry over. Nessus tried to ravish her; the hero shot him with an arrow dipped in the Hydra's gall. Dying, Nessus gave Deianira his blood, saying it would bind Heracles' love — a gift that would kill him.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.7.6; Ov. Met. 9.101–158"
+    },
+    {
+      "title": "The shirt on Oeta",
+      "text": "When Deianira learned that Heracles had taken Iole, she smeared the supposed love-charm on a robe and sent it to him. As the poison ate into his flesh he tore at his own body, built a pyre on Mount Oeta, and lay upon it; none would kindle the fire until Poeas, passing in search of his flocks, set it alight and received the hero's bow.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 2.7.7; Ov. Met. 9.159–272"
+    },
+    {
+      "title": "Apotheosis",
+      "text": "Deianira, learning what she had done, hanged herself. A cloud took Heracles from the pyre to Olympus, where he was made immortal and wed to Hebe. Hesiod sings that he dwells in joy with the fair-ankled goddess; Homer still shows his shade in Hades, yet both agree that the son of Alcmene passed from mortal agony into the company of the gods.",
+      "sources": ["hesiod", "homer", "apollodorus", "ovid"],
+      "citation": "Theog. 950–955; Od. 11.601–627; Apollod. 2.7.7; Ov. Met. 9.273–323"
+    }
+  ],
+  "cast": [
+    { "id": "heracles", "name": "Heracles", "role": "The dying hero" },
+    { "id": "deianira", "name": "Deianira", "role": "Wife who sent the shirt" },
+    { "id": "nessus", "name": "Nessus", "role": "Centaur whose blood poisoned the robe" },
+    { "id": "iole", "name": "Iole", "role": "Princess whose coming brought the shirt" },
+    { "id": "eurytus-oechalia", "name": "Eurytus", "role": "Archer-king of Oechalia" },
+    { "id": "hyllus", "name": "Hyllus", "role": "Eldest son who carried out his father's charge" },
+    { "id": "philoctetes", "name": "Philoctetes", "role": "He who lit the pyre and took the bow" },
+    { "id": "hebe", "name": "Hebe", "role": "Olympian bride" }
+  ],
+  "places": [
+    { "name": "Mount Oeta", "role": "Where the pyre was built" },
+    { "name": "Oechalia", "role": "City sacked for Iole" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "2.6.1, 2.7.5–7" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "9.1–323" },
+    { "source": "hesiod", "work": "Theogony", "citation": "950–955" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.601–627" }
+  ]
+}

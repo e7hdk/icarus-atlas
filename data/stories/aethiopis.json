@@ -1,0 +1,64 @@
+{
+  "id": "aethiopis",
+  "title": "The Aethiopis",
+  "greekTitle": "Αἰθιοπίς",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.26,
+  "summary": {
+    "text": "After Hector's death the war did not end — the Amazon Penthesilea came to Priam's aid and fell to Achilles; then Memnon king of the Ethiopians avenged her, slew Antilochus, and was himself killed; Paris and Apollo brought down Achilles at the Scaean gate; and at the funeral games the arms of the hero were judged to Odysseus, driving Ajax to madness and death.",
+    "sources": ["apollodorus", "hyginus", "homer"],
+    "citation": "Apollod. Epit. 5.1–5.7; Hyg. Fab. 112; Hom. Od. 11.543–564"
+  },
+  "chapters": [
+    {
+      "title": "Penthesilea and the Amazons",
+      "text": "When Hector was dead, Penthesilea daughter of Ares and Otrera led her Amazons to Troy. Achilles met her in battle and killed her — an episode outside the Iliad, preserved in the Epic Cycle. Apollodorus adds that Thersites mocked Achilles' grief for the Amazon and was slain for it.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 5.1; Hyg. Fab. 112",
+      "topic": "thersites-death"
+    },
+    {
+      "title": "Memnon and Antilochus",
+      "text": "Memnon son of Eos and Tithonus came next with a great force of Ethiopians. He killed Antilochus son of Nestor in the fighting; Achilles avenged the Pylian runner and slew Memnon in turn — the comeliest champion Odysseus would later remember after the king of the Ethiopians.",
+      "sources": ["apollodorus", "hyginus", "homer"],
+      "citation": "Apollod. Epit. 5.3; Hyg. Fab. 112; Hom. Od. 11.522–537"
+    },
+    {
+      "title": "The death of Achilles",
+      "text": "Paris shot Achilles at the Scaean gate, Apollo guiding the arrow to the hero's vulnerable heel. Ajax and Odysseus fought off the Trojans and carried the body from the field while the son of Peleus' armour was stripped from the corpse.",
+      "sources": ["apollodorus", "hyginus", "homer"],
+      "citation": "Apollod. Epit. 5.3; Hyg. Fab. 107, 112; Hom. Od. 24.74–84"
+    },
+    {
+      "title": "Funeral games and the arms of Achilles",
+      "text": "At the funeral games for Achilles, Ajax won the contest of the quoit — and then the arms of the dead hero were set up as a prize for the bravest. The nested episode on Ajax and the Arms tells the contest with Odysseus, Athena's madness, and the Telamonian's suicide; his shade, met later in Hades, still kept its wrath. Troy still stood; the nested Little Iliad tells what followed.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 5.4–5.7; Hom. Od. 11.543–564"
+    }
+  ],
+  "cast": [
+    { "id": "achilles", "name": "Achilles", "role": "Slayer of Penthesilea and Memnon, then slain at the gate" },
+    { "id": "penthesilea", "name": "Penthesilea", "role": "Amazon queen, last ally before Memnon" },
+    { "id": "memnon", "name": "Memnon", "role": "Ethiopian king who killed Antilochus" },
+    { "id": "antilochus-nestor", "name": "Antilochus", "role": "Nestor's son, killed by Memnon" },
+    { "id": "paris", "name": "Paris", "role": "The archer at the Scaean gate" },
+    { "id": "apollo", "name": "Apollo", "role": "Guide of the fatal arrow" },
+    { "id": "ajax-telamonian", "name": "Ajax", "role": "Cheated of the arms, then suicide" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Winner of the arms, carrier of the body" },
+    { "id": "nestor", "name": "Nestor", "role": "Father of the slain Antilochus" },
+    { "id": "priam", "name": "Priam", "role": "King who received the late allies" },
+    { "id": "thersites", "name": "Thersites", "role": "Reviler slain for mocking Achilles" },
+    { "id": "otrera-amazon", "name": "Otrera", "role": "Mother of Penthesilea" },
+    { "id": "eos", "name": "Eos", "role": "Mother of Memnon" },
+    { "id": "tithonus", "name": "Tithonus", "role": "Father of Memnon" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "The plain where the late allies fell" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "Epitome", "citation": "5.1–5.7" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "107, 112, 163" },
+    { "source": "homer", "work": "Odyssey", "citation": "11.522–564, 24.74–84" }
+  ]
+}

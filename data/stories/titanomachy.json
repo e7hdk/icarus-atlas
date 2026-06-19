@@ -1,0 +1,84 @@
+{
+  "id": "titanomachy",
+  "title": "The War of the Titans",
+  "greekTitle": "Τιτανομαχία",
+  "kind": "war",
+  "parent": "cosmogony",
+  "era": 0.1,
+  "summary": {
+    "text": "Zeus, saved from his father's belly by a stone and a mother's trick, forced Cronus to disgorge his swallowed kin — and for ten years the younger gods warred against the Titans until the Cyclopes forged the thunderbolt and the Hundred-Handers hurled mountains, and the old rulers were cast down into Tartarus.",
+    "sources": ["hesiod", "apollodorus"],
+    "citation": "Hes. Th. 617-735; Apollod. 1.2.1"
+  },
+  "chapters": [
+    {
+      "title": "The stone disgorged",
+      "text": "When Zeus was grown, he forced crooked-counselled Cronus to disgorge the children he had swallowed — first the stone, which Zeus set up at Pytho under the glens of Parnassus to be a sign for men to come, and then his brothers and sisters in reverse order: Hestia, Demeter, gold-sandalled Hera, strong Hades, the deep-roaring Earth-Shaker, and at last the youngest, Zeus himself.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 497-506; Apollod. 1.2.1"
+    },
+    {
+      "title": "Ten years of war",
+      "text": "Then began the war between the Titans and the Olympians — not a single day's battle but a decade of strife. Zeus and his allies fought from Mount Olympus; the Titans held Mount Othrys. Apollodorus says the war lasted ten full years, and the earth groaned under the immortals' clash.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 617-628; Apollod. 1.2.1"
+    },
+    {
+      "title": "The Cyclopes freed",
+      "text": "Gaia counselled Zeus to free the Cyclopes and the Hundred-Handed ones, whom Cronus had bound in the pit because he envied their strength. Zeus hewed their bonds with his thunderbolt, and in gratitude Brontes, Steropes and Arges — the thunder-smiths — gave him thunder and fashioned the lightning bolt, and they gave Poseidon the trident and Hades the helmet of darkness.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 501-506, 629-636; Apollod. 1.2.1"
+    },
+    {
+      "title": "The Hundred-Handers",
+      "text": "Cottus, Briareus and Gyges — the three sons of Earth with a hundred arms apiece — took up the war on the side of Zeus. From their strong hands they hurled three hundred rocks at once upon the Titans, and the din of their onslaught reached starry heaven as they barraged the enemy line.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 617-652; Apollod. 1.2.1"
+    },
+    {
+      "title": "Cast into Tartarus",
+      "text": "When the war was ended, the Titans were bound in bitter chains beneath the wide-pathed earth, as far beneath the ground as heaven is above it — nine days and nights a bronze anvil would fall from heaven before reaching earth, and nine more before reaching Tartarus. There the Titans abide under guard, cut off from the light of Zeus the cloud-gatherer.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 717-735; Apollod. 1.2.1"
+    },
+    {
+      "title": "The lots of the three brothers",
+      "text": "Homer tells how the three sons of Cronus cast lots for their inheritance: the dark-haired Earth-Shaker won the grey sea, Hades the murky darkness, and Zeus the broad sky — with earth and high Olympus held in common, so that Poseidon may claim an honor no less than his brother's.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Il. 15.187-193; Apollod. 1.2.1",
+      "topic": "division-of-the-cosmos"
+    },
+    {
+      "title": "Zeus made king",
+      "text": "Hesiod knows nothing of lots. When the blessed gods had finished their toil and settled by force their contest with the Titans, they urged far-seeing Zeus, at Gaia's prompting, to be king and rule the immortals — and it was Zeus himself who then distributed the honors among them. Kingship by acclamation, not by chance.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 881-885",
+      "topic": "division-of-the-cosmos"
+    }
+  ],
+  "cast": [
+    { "id": "zeus", "name": "Zeus", "role": "Leader of the younger gods" },
+    { "id": "cronus", "name": "Cronus", "role": "Overthrown king of the Titans" },
+    { "id": "rhea", "name": "Rhea", "role": "Mother who saved the youngest" },
+    { "id": "hestia", "name": "Hestia", "role": "First disgorged" },
+    { "id": "demeter", "name": "Demeter", "role": "Sister freed from Cronus" },
+    { "id": "hera", "name": "Hera", "role": "Sister freed from Cronus" },
+    { "id": "hades", "name": "Hades", "role": "Brother who won the underworld" },
+    { "id": "poseidon", "name": "Poseidon", "role": "Brother who won the sea" },
+    { "id": "gaia", "name": "Gaia", "role": "Counsellor who freed the Cyclopes" },
+    { "id": "brontes-cyclops", "name": "Brontes", "role": "Smith of the thunderbolt" },
+    { "id": "steropes-cyclops", "name": "Steropes", "role": "Smith of the thunderbolt" },
+    { "id": "arges-cyclops", "name": "Arges", "role": "Smith of the thunderbolt" },
+    { "id": "cottus", "name": "Cottus", "role": "Hundred-hander on Zeus' side" },
+    { "id": "briareus", "name": "Briareus", "role": "Hundred-hander on Zeus' side" },
+    { "id": "gyges-hecatoncheir", "name": "Gyges", "role": "Hundred-hander on Zeus' side" }
+  ],
+  "places": [
+    { "id": "knossos", "name": "Knossos", "role": "Where Rhea hid the infant Zeus from Cronus" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "497-506, 617-735, 881-885" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.2.1" },
+    { "source": "homer", "work": "Iliad", "citation": "15.187-193" }
+  ]
+}

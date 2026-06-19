@@ -1,0 +1,27 @@
+{
+  "id": "eusorus-thracian",
+  "name": "Eusorus",
+  "greekName": "Eusōros (Εὔσωρος)",
+  "type": "hero",
+  "domains": ["father of Acamas", "Thracian house", "the Hellespont"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Acamas (`acamas-thracian`), chiefest among the Thracians whom the Hellespont encloseth — Homer names him Eüssorus, Apollodorus Eusorus — distinct from Eusorus father of Cyzicus in the Argonautica.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 6.1–35; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Catalogue sets Acamas and Peirous at the head of the Thracian allies and names Acamas valiant son of Eüssorus. When Agamemnon broke the Trojan battalions at the opening of the sixth book, he smote Eüssorus' son through the horn of his horse-hair crest.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 6.1–35"
+    },
+    {
+      "text": "Apollodorus lists Acamas son of Eusorus among the Thracians who came to join the Trojans after nine years of siege. The name must not be merged with Eusorus father of Cyzicus in the Propontis (`apollonius`, Hyginus).",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.34"
+    }
+  ]
+}

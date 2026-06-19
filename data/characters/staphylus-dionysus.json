@@ -1,0 +1,36 @@
+{
+  "id": "staphylus-dionysus",
+  "name": "Staphylus",
+  "greekName": "Staphylos (Στάφυλος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Dionysus",
+    "Argonaut"
+  ],
+  "summary": [
+    {
+      "text": "Son of Dionysus born on Lemnos with Ariadne, and one of the Argonauts who sailed with Jason for the Golden Fleece.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.9; Bibliotheca 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus numbers Staphylus among the sons Dionysus begat on Ariadne after he brought her to Lemnos — Thoas, Staphylus, Oenopion, and Peparethus.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.9"
+    },
+    {
+      "text": "In the roll of the Argonauts, Staphylus sails beside Phanus as a son of Dionysus on the voyage to Colchis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

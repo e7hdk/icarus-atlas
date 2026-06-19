@@ -1,0 +1,36 @@
+{
+  "id": "archias-syracuse",
+  "name": "Archias",
+  "greekName": "Archias (Ἀρχίας)",
+  "type": "hero",
+  "domains": [
+    "Corinthian colonist",
+    "founder of Syracuse"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Corinthian whom Delphi sent to found Syracuse on Ortygia — where the mouth of Alpheius mingles with Arethusa's spring, binding Elis to Sicily in cult and oracle.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.7.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records that when the god at Delphi dispatched Archias the Corinthian to found Syracuse, the oracle named Ortygia off Trinacria, where Alpheius' mouth bubbles mingling with the springs of broad Arethusa — the marvel that tied the Peloponnesian river to the Sicilian nymph's pool and gave the colonists their sign.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.7.3"
+    },
+    {
+      "text": "Not to be confused with Archias son of Aristaechmus, who brought the cult of Asclepius from Epidauria to Pergamus after healing at Pindasus, nor with the Thurian agent who hunted exiles for Antipater — homonyms resolved by disambiguated ids.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.26.8; 1.8.3; 5.7.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "syracuse",
+      "sources": ["pausanias"]
+    }
+  ]
+}

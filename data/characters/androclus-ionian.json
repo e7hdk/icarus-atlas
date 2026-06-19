@@ -1,0 +1,36 @@
+{
+  "id": "androclus-ionian",
+  "name": "Androclus",
+  "greekName": "Androklos (Ἄνδροκλος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Ionian colonist",
+    "king of Ephesus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Codrus, appointed king of the Ionians who sailed against Ephesus; he expelled the Leleges and Lydians from the upper city, took Samos, and fell fighting the Carians — buried at Ephesus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.8–7.2.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Androclus son of Codrus was made king of the Ionians who sailed to Ephesus. He drove the Leleges and Lydians from the upper city, but those dwelling around the sanctuary exchanged oaths of friendship with the Ionians and escaped warfare. He also seized Samos from the Samians, and the Ephesians held Samos and the neighbouring islands for a time.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.8"
+    },
+    {
+      "text": "After the Samians returned home, Androclus helped the people of Priene against the Carians. The Greek army was victorious, but Androclus was killed in the battle; the Ephesians carried off his body and buried it in their land, where his tomb was pointed out.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ephesus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

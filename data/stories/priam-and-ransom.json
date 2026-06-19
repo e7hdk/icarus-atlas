@@ -1,0 +1,63 @@
+{
+  "id": "priam-and-ransom",
+  "title": "Priam and the Ransom",
+  "greekTitle": "Πρίαμος καὶ λύτρα",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.24,
+  "summary": {
+    "text": "Achilles held funeral games for Patroclus and dragged Hector's body daily — until old Priam came alone through the camp at night, kissed the hands that had killed his son, and ransomed the body; Troy buried Hector, and the Iliad ends with the hero's rites.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 23–24"
+  },
+  "chapters": [
+    {
+      "title": "Games for Patroclus",
+      "text": "Book 23 opens with the pyre: Achilles sacrificed horses, dogs, and twelve Trojan captives on Patroclus' funeral mound. After the bones were gathered in a golden urn, the Achaeans held games — chariot race won by Diomedes after Athena broke Eumelus' car, boxing, wrestling, foot-race, armed combat, archery, and throwing the spear. Antilochus of Nestor's house outwitted Menelaus in the chariot turn; Ajax and Odysseus drew in the wrestling. The games honoured the companion whose death had ended Achilles' wrath against Agamemnon and begun the wrath against Hector.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 23.1–897"
+    },
+    {
+      "title": "The body dragged",
+      "text": "Each day Achilles dragged Hector's corpse behind his chariot around Patroclus' tomb — and each night Apollo preserved the body from corruption, for Hera and the Achaeans would have had the dogs devour it. The gods on Olympus pitied the outrage; Zeus sent Thetis to tell Achilles to accept ransom, and Iris to bid Priam go. The nested episode on Achilles and Hector tells the killing; here the poem turns from vengeance to pity.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 24.1–120"
+    },
+    {
+      "title": "Priam in the camp",
+      "text": "Priam loaded a wagon with treasure and crossed the plain with Idaios the herald, guided by Hermes in the likeness of a young man. They passed the sentries and reached Achilles' hut; the old king kissed the hands that had killed his children — the hands that had slain Hector — and asked for the body. Achilles wept with him, remembering his own father Peleus and the son he would never see grow old. He raised the body on a bier, covered it, and bound the kings not to delay the truce.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 24.120–676"
+    },
+    {
+      "title": "Hector's rites",
+      "text": "Priam drove through the camp while Achilles kept the host from pursuit. In Troy, Andromache and Hecuba and Helen lamented over the body on the bier — the wife who had begged him not to fight, the queen, the cause of the war who honoured him most truly. For nine days they gathered wood; on the tenth they burned Hector and buried the bones, then feasted in the palace. The Iliad ends with the rites of Troy's shield — the war would go on, but Homer's poem closes on burial and grief, not on the horse or the fall of the city.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 24.677–804"
+    }
+  ],
+  "cast": [
+    { "id": "priam", "name": "Priam", "role": "Old king who ransomed his son's body" },
+    { "id": "achilles", "name": "Achilles", "role": "He who wept and gave Hector back" },
+    { "id": "hector", "name": "Hector", "role": "Body ransomed and burned" },
+    { "id": "patroclus", "name": "Patroclus", "role": "Honoured in funeral games" },
+    { "id": "andromache", "name": "Andromache", "role": "Wife who led the lament" },
+    { "id": "hecuba", "name": "Hecuba", "role": "Queen who mourned her son" },
+    { "id": "helen", "name": "Helen", "role": "She who praised Hector at the bier" },
+    { "id": "thetis", "name": "Thetis", "role": "Messenger of Zeus' command to accept ransom" },
+    { "id": "hermes", "name": "Hermes", "role": "Guide who led Priam through the camp" },
+    { "id": "apollo", "name": "Apollo", "role": "He who preserved Hector's body from rot" },
+    { "id": "zeus", "name": "Zeus", "role": "He who ordered the ransom" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Winner of the chariot race" },
+    { "id": "antilochus-nestor", "name": "Antilochus", "role": "Runner-up in the chariot race" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Contender in the funeral games" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Contender in the funeral games" },
+    { "name": "Idaios", "role": "Herald who drove with Priam" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Camp, hut, and city of Hector's rites" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "23–24" }
+  ]
+}

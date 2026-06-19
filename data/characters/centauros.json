@@ -1,0 +1,44 @@
+{
+  "id": "centauros",
+  "name": "Centaurus",
+  "greekName": "Kentauros (Κένταυρος)",
+  "romanName": "Centaurus",
+  "type": "creature",
+  "domains": [
+    "progenitor of the centaurs",
+    "Ixion's cloud-born son",
+    "the wild Thessalian brood"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The first of the cloud-born centaur kind, child of Ixion and the cloud that Zeus set in Hera's likeness — or, in Hyginus, brother of Peirithous and forefather of the shaggy centaurs of Pelion.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 1.20; Fabulae 14.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes the genealogy explicit: when Ixion lay with the phantom Hera, the cloud conceived and bore Centaurus. From him — or from Ixion's union with the cloud-mother Nubes in Hyginus — sprang the race of centaurs who haunted Mount Pelion, unlike Chiron the son of Cronus and Philyra, who was just and civilized because he did not share their blood.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 1.20; Fabulae 14.2, 138"
+    },
+    {
+      "text": "Hyginus lists Peirithous as son of Ixion and brother of Centaurus, fixing the Lapith king and the centaur progenitor as twin branches of one impious house. The wild centaurs who fought the Lapiths at the wedding, who stormed Pholus' cave, and who fled Heracles to Malea and the Evenus belong to this stock — not to Chiron's divine line.",
+      "sources": [
+        "hyginus",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 14.2; Bibliotheca 2.5.4"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "tros-alastorid",
+  "name": "Tros",
+  "greekName": "Trōs (Τρώς)",
+  "type": "hero",
+  "domains": ["son of Alastor", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Alastor (`alastor-trojan`) who came to clasp Achilles' knees when the son of Peleus smote Laogonus and Dardanus, hoping to be taken captive and spared — distinct from Tros the eponym king of Troy (`tros`) and from the Achaean Alastor figures.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then Tros, Alastor's son, came to clasp Achilles' knees, if so be he would spare him by taking him captive and let him go alive, and slay him not, having pity on one of like age; but Achilles was nowise soft of heart or gentle of mind, for his might was roused in terrible wrath against the Trojans, and he smote Tros in the liver with his sword, and his breastplate of bronze could not avail him.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

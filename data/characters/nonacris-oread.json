@@ -1,0 +1,37 @@
+{
+  "id": "nonacris-oread",
+  "name": "Nonacris",
+  "greekName": "Nonakris (Νώνακρις)",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "nymph of Arcadia",
+    "wife of Lycaon",
+    "eponym of Nonacris"
+  ],
+  "summary": [
+    {
+      "text": "An Arcadian nymph whom Pausanias names as the wife of Lycaon and the eponym of the mountain town Nonacris, above whose cliffs the dread water of the Styx trickles down — a figure distinct from the cold summit where Ovid later set the Hamadryad Syrinx.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.17.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias, guiding the traveller from Pheneus toward Cleitor, records that of old Nonacris was an Arcadian town named after the wife of Lycaon. When he visited, the place lay in ruins, most of its stones hidden — yet the name still marked the road to the Styx, and a high cliff beside the site from which a water called by the Greeks the water of Styx descends.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.17.6"
+    },
+    {
+      "text": "Lycaon's impiety and his fifty sons belong to Apollodorus' fuller stemma; Pausanias here gives only the queen who lent her name to the highland settlement. She stands among his \"many wives\" in the Bibliotheca without individual deeds, but the Periegete's local memory preserves her as the woman for whom the town by the Styx was called.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.8.1; Description of Greece 8.17.6"
+    },
+    {
+      "text": "The same toponym later attracted a different nymph in Roman poetry: Ovid places the Naiad Syrinx among the Hamadryads on the cold Arcadian summit Nonacris, where Pan will chase her into the reeds. That Syrinx is Batch D's metamorphosis nymph; this Nonacris is Lycaon's consort and the eponym of the real town Pausanias saw — same mountain country, different women.",
+      "sources": ["pausanias", "ovid"],
+      "citation": "Description of Greece 8.17.6; Metamorphoses 1.868–954"
+    }
+  ]
+}

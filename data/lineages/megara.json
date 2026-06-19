@@ -1,0 +1,19 @@
+{
+  "city": "megara",
+  "reigns": [
+    {
+      "ruler": "Nisus",
+      "characterId": "nisus",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.15.5–8",
+      "note": "Son of Pandion and king of Megara, whose life hung on a single purple lock until his daughter Scylla betrayed him to Minos."
+    },
+    {
+      "ruler": "Perseus",
+      "characterId": "perseus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3",
+      "note": "After killing Acrisius he exchanged Argos for Tiryns with Megapenthes and went down to reign at Megara."
+    }
+  ]
+}

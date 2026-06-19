@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
+import { loadCities } from '@/features/geo/load';
+import { loadStories } from '@/features/stories/load';
+import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterShell } from '@/components/character/CharacterShell';
 
 export async function generateStaticParams() {
@@ -10,15 +13,27 @@ export async function generateStaticParams() {
 
 export default async function CharacterLegacyPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const { characters } = await loadAtlasData();
+  const [{ characters }, cities, stories] = await Promise.all([
+    loadAtlasData(),
+    loadCities(),
+    loadStories(),
+  ]);
   const character = characters.find((c) => c.id === id);
   if (!character) notFound();
 
   const culture = await loadCulture(id);
   const artworks = culture?.artworks ?? [];
+  const storyIndex = storiesById(stories);
+  const storyAppearances = storiesFeaturingCharacter(stories, character.id);
 
   return (
-    <CharacterShell character={character} active="legacy">
+    <CharacterShell
+      character={character}
+      active="legacy"
+      cities={cities}
+      storyAppearances={storyAppearances}
+      storiesById={storyIndex}
+    >
       <div className="mx-auto mt-9 max-w-5xl">
         <p className="text-center font-body text-lg italic text-aether-muted">
           Unchanged by any teller — how the centuries since have seen {character.name}.

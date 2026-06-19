@@ -1,0 +1,19 @@
+{
+  "city": "kos",
+  "reigns": [
+    {
+      "ruler": "Eurypylus",
+      "characterId": "eurypylus-cos",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Il. 2.676–680; Apollod. 2.7.1",
+      "note": "Lord of the city of Eurypylus on Cos; Apollodorus tells how Heracles, storm-driven from Troy, took the island by night and slew this king, son of Poseidon by Astypalaea."
+    },
+    {
+      "ruler": "Thessalus",
+      "characterId": "thessalus-cos",
+      "sources": ["homer"],
+      "citation": "Il. 2.676–680",
+      "note": "Son of Heracles and king of Cos in Homer's day, whose sons Pheidippus and Antiphus led the island host to Troy."
+    }
+  ]
+}

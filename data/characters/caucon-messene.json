@@ -1,0 +1,41 @@
+{
+  "id": "caucon-messene",
+  "name": "Caucon",
+  "greekName": "Kaukon (Καύκων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the mysteries of the Great Goddesses",
+    "Eleusinian rites at Andania"
+  ],
+  "summary": [
+    {
+      "text": "Son of Celaenus, son of Phlyus, who brought the rites of the Great Goddesses from Eleusis to Messene at Andania, where Polycaon and his wife first established the feast.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.1.5, 4.1.8–9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records that Caucon, son of Celaenus son of Phlyus, carried the mysteries of the Great Goddesses from Eleusis to Messene the wife of Polycaon; Phlyus himself the Athenians hold to be a son of Earth, and Musaeus' hymn for the Lycomidae agrees.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.1.5"
+    },
+    {
+      "text": "An inscription at Andania names Caucon as the one who taught Messene to establish the feast of the Great Goddesses on the spot where she and Polycaon lived — not elsewhere — and proves that the mysteries were originally celebrated at Andania before Lycus son of Pandion raised them to greater honour.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.1.8–9"
+    },
+    {
+      "text": "When Lycus son of Pandion, exiled from Athens, came to Arene and revealed the rites to Aphareus and his house, he carried the full Attic ceremony back to Andania, for it was there that Caucon had initiated Messene.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 4.2.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "andania",
+      "sources": ["pausanias"]
+    }
+  ]
+}

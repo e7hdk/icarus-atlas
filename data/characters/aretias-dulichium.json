@@ -1,0 +1,36 @@
+{
+  "id": "aretias-dulichium",
+  "name": "Aretias",
+  "greekName": "Aretias (Ἀρετίας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "grandfather of Amphinomus",
+    "princely house of Dulichium"
+  ],
+  "summary": [
+    {
+      "text": "Named in Homer only as the father of the prince Nisus and grandfather of Amphinomus — the one prudent suitor from Dulichium whom Penelope favoured above the other wooers.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.395–430; 18.395–425"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the suitors learned that Telemachus had returned, Amphinomus addressed their assembly with good counsel — he was the glorious son of the prince Nisus, son of Aretias, and led the wooers who came from Dulichium. Homer names the grandfather once as a bare patronymic and records nothing more of the line.",
+      "sources": ["homer"],
+      "citation": "Odyssey 16.395–430"
+    },
+    {
+      "text": "Not to be confused with the island of Aretias in the Euxine where the Stymphalian birds settled after Heracles drove them from Arcadia, nor with other Aretias figures in Greek myth.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 16.395–430; Bibliotheca 2.5.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "dulichium",
+      "sources": ["homer"]
+    }
+  ]
+}

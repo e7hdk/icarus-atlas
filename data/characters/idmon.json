@@ -1,0 +1,35 @@
+{
+  "id": "idmon",
+  "name": "Idmon",
+  "greekName": "Idmōn (Ἰδμών)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "augury",
+    "the Argonaut voyage",
+    "Argos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Apollo and the nymph Cyrene (`cyrene-nymph`) — or, as Hyginus adds, of Abas the Argive king — seer who read his death in the birds yet sailed with Jason and was gored by a boar among the Mariandyni.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.23; Argonautica 1.139, 2.815–850; Fabulae 14, 18",
+      "topic": "idmon-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Though augury foretold he would perish on the voyage, Idmon would not stay behind. Among the Mariandyni he went out for straw and a boar gored him; Idas son of Aphareus slew the beast in vengeance.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.23; Argonautica 2.815–850; Fabulae 18"
+    }
+  ]
+}

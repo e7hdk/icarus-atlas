@@ -1,0 +1,31 @@
+{
+  "id": "ephesus-cayster",
+  "name": "Ephesus",
+  "greekName": "Ephesos (Ἔφεσος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponymous founder",
+    "son of the river Cayster"
+  ],
+  "summary": [
+    {
+      "text": "Thought to have been a son of the river Cayster; with the aboriginal Coresus he founded Artemis' sanctuary, and from him the Ionian city received its name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records that the Ephesian sanctuary was not founded by Amazons — though Amazon women sacrificed there from of old — but by Coresus an aboriginal and Ephesus, whom they believe to have been a son of the river Cayster; from Ephesus the city took its name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.2.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ephesus",
+      "sources": ["pausanias"]
+    }
+  ]
+}

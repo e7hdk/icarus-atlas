@@ -34,21 +34,23 @@
       "sources": [
         "apollodorus"
       ],
-      "citation": "Apollodorus, Epitome 7.38"
+      "citation": "Epitome 7.38",
+      "topic": "penelope-antinous-affair"
     },
     {
       "text": "Hyginus likewise gives Hermes for father: listing mortals made immortal, he names 'Pan, son of Mercury and Penelope.'",
       "sources": [
         "hyginus"
       ],
-      "citation": "Hyginus, Fabulae 224"
+      "citation": "Fabulae 224",
+      "topic": "penelope-antinous-affair"
     },
     {
       "text": "The same Apollodorus elsewhere contradicts that account, making Pan the son of Zeus and Hybris rather than of Hermes — so that no single parentage for the god stands undisputed.",
       "sources": [
         "apollodorus"
       ],
-      "citation": "Apollodorus, Library 1.4.1"
+      "citation": "Bibliotheca 1.4.1"
     },
     {
       "text": "Arcadia claims him as its own god of pasture. On the Nomian Mountains, at the place called Melpeia, the Arcadians say Pan discovered the music of the pipes; the very name of the Nomian range they tie to the pasturings — the nomai — of Pan, and Mount Maenalus they hold especially sacred to him, its dwellers saying they hear his piping on the heights.",
@@ -63,6 +65,12 @@
         "ovid"
       ],
       "citation": "Ovid, Metamorphoses 1.689–712"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mantinea",
+      "sources": ["apollodorus", "pausanias"]
     }
   ]
 }

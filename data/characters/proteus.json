@@ -1,0 +1,37 @@
+{
+  "id": "proteus",
+  "name": "Proteus",
+  "greekName": "Prōteus (Πρωτεύς)",
+  "romanName": "Proteus",
+  "type": "god",
+  "cluster": "chthonic",
+  "domains": [
+    "the Old Man of the Sea",
+    "Egypt",
+    "prophecy and shape-shifting"
+  ],
+  "summary": [
+    {
+      "text": "The unerring Old Man of the Sea in Egypt — immortal servant of Poseidon who knows the depths of every sea, shifts through every form when seized, and speaks true prophecy to whoever holds him fast.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 4.355–570; Epitome 6.29; Fabulae 118"
+    }
+  ],
+  "story": [
+    {
+      "text": "When storms drove Menelaus to Egypt, his daughter Eidothea took pity on the king and taught him how to ambush her father at noon: lie among the seals on the beach, seize Proteus as he slept in the hollow caves, and cling through every transformation until the god spoke without deceit. Bound at last, Proteus told Menelaus that Odysseus lived but was detained on Calypso's isle, warned of the suitors' murder plot against Telemachus, and set the hero on the long road home — the news Telemachus would hear in Sparta.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.355–590"
+    },
+    {
+      "text": "Apollodorus reports that after Troy held only a cloud phantom of Helen, Menelaus recovered the real queen from Proteus in Egypt before his wanderings ended.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.29"
+    },
+    {
+      "text": "Hyginus instead has Proteus teach Menelaus how to appease the gods and return in the eighth year — another strand of the same Egyptian sojourn.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 118"
+    }
+  ]
+}

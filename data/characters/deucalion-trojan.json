@@ -1,0 +1,28 @@
+{
+  "id": "deucalion-trojan",
+  "name": "Deucalion",
+  "greekName": "Deukaliōn (Δευκαλίων)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Achilles pierced through the arm where the sinews of the elbow join, then smote with the sword when he abode his oncoming with arm weighed down — distinct from the flood-survivor of Thessaly (`deucalion`) and from Deucalion son of Minos (`deucalion-crete`).",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Achilles smote Agenor's son Echeclus full upon the head with his hilted sword, he pierced Deucalion through the arm at the point where the sinews of the elbow join with spear-point of bronze; and he abode his oncoming with arm weighed down, beholding death before him; but Achilles, smiting him with the sword upon the neck, swept both head and helmet from his shoulders.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "myscelus-croton",
+  "name": "Myscelus",
+  "greekName": "Myscelos (Μυσκέλος)",
+  "romanName": "Myscelus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Argive colonist",
+    "founder of Croton"
+  ],
+  "summary": [
+    {
+      "text": "Son of Argive Alemon, whom sleeping Hercules commanded to sail to Italy and mark out walls where the hero had rested — the founder of Croton on the shore that still keeps the buried eponym's name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.1–91"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid tells how Myscelus, born to Alemon of Argos and most acceptable of mortals to the gods, was forbidden by oracle to leave his homeland until Hercules appeared in a dream and bade him seek Ausonian shores. Sailing the Ionian sea past Tarentum and the Iapygian fields, he found the fatal mouth of the Aesar and the burial mound covering Croton's sacred bones, and there founded the city Hercules had promised to his race.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.1–91"
+    },
+    {
+      "text": "Before Myscelus' colony was planted, Hercules himself had landed on Lacinian shores, entered the friendly house of far-famed Croton, and rested from his long labour — prophesying that in future days the place would be a city of Myscelus' numerous descendants.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.1–91"
+    }
+  ],
+  "residences": [
+    {
+      "city": "croton",
+      "sources": ["ovid"]
+    }
+  ]
+}

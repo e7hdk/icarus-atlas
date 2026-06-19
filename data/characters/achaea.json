@@ -1,0 +1,47 @@
+{
+  "id": "achaea",
+  "name": "Achaea",
+  "greekName": "Achaiā (Ἀχαία)",
+  "romanName": "Achaea",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Achaean name",
+    "the northern Peloponnese coast",
+    "disputed eponymy"
+  ],
+  "summary": [
+    {
+      "text": "Hesiod's genealogical roll at the close of the Theogony names her among the ethnic eponyms of Zeus' offspring — the feminine counterpart to the peoples descended from Hellen — while Apollodorus instead makes Achaeus, son of Xuthus and Creusa, the figure from whom the Achaeans take their name.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 1000; Bibliotheca 1.7.3; Description of Greece 7.1.2–7.1.7",
+      "topic": "achaean-eponym"
+    },
+    {
+      "text": "Apollodorus' fuller stemma replaces the Theogony entry with the Xuthus–Creusa line and the hero Achaeus (`achaeus`); which Pleiad stood as her mother in the Hesiodic line is not named in the seven lenses that pin this atlas.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 1000; Bibliotheca 1.7.3; Bibliotheca 3.10.1",
+      "topic": "achaean-eponym"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells the story the atlas follows for the living ethnonym. Xuthus, son of Hellen, received the Peloponnese and begat Achaeus and Ion by Creusa, daughter of Erechtheus; and from Achaeus and Ion the Achaeans and Ionians derive their names. That male eponym — the hero node `achaeus` — carries the genealogical weight in every later author who names a founder.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.3",
+      "topic": "achaean-eponym"
+    },
+    {
+      "text": "Pausanias gives Achaeus a history beyond the bare eponym. After Xuthus was driven from Thessaly and wed the daughter of Erechtheus at Athens, Achaeus returned with allies from Aegialus and recovered his fathers' throne in Phthiotis; his sons Archander and Architeles later came to Argos, and when the sons of Achaeus held power in Argos and Lacedaemon the inhabitants came to be called Achaeans — the only Peloponnesians, before the Dorian return, to bear that name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.1.2–7.1.7",
+      "topic": "achaean-eponym"
+    },
+    {
+      "text": "Hyginus, listing the sons of Jove by the Pleiads, names Dardanus by Electra and Lacedaemon by Taygete — the same Atlas-daughter marriages Apollodorus counts at Cyllene — but names no daughter Achaea among them. The feminine eponym in the Theogony Tier-B roster therefore stands apart from the attested Pleiad offspring rolls until a sourced passage names her mother.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 155; Astronomica 2.21.5; Bibliotheca 3.10.1",
+      "topic": "achaean-eponym"
+    }
+  ]
+}

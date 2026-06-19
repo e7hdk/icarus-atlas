@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import type { Character, Relation } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { TypeBadge } from '@/components/ui/TypeBadge';
+import { KindBadge } from '@/components/ui/KindBadge';
 import { filterRelations, pickSourced, isDisputed } from '@/lib/lens';
 import { bondsFor } from '@/features/characters/relations';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -39,6 +40,9 @@ export function HoverCard({
       </h2>
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <TypeBadge type={character.type} />
+        {character.kinds?.map((kind) => (
+          <KindBadge key={kind} kind={kind} primaryType={character.type} />
+        ))}
         <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
       </div>
       <p className="mt-3 font-body text-[15px] leading-relaxed text-aether/90">

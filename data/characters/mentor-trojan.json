@@ -1,0 +1,28 @@
+{
+  "id": "mentor-trojan",
+  "name": "Mentor",
+  "greekName": "Mentōr (Μέντωρ)",
+  "type": "hero",
+  "domains": ["father of Imbrius", "rich in horses", "Pedaeum"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Imbrius (`imbrius-trojan`), rich in horses, who dwelt at Pedaeum before the war — distinct from Mentor the Ithacan companion of Odysseus and from Mentor the suitor of Penelope.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "Before the sons of the Achaeans came, Imbrius son of Mentor, rich in horses, dwelt in Pedaeum and had to wife Medesicaste daughter of Priam; but when the curved ships came he returned to Troy and fought among the Trojans until Teucer son of Telamon was first to slay him.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.155–190"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

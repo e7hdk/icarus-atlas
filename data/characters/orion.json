@@ -1,0 +1,42 @@
+{
+  "id": "orion",
+  "name": "Orion",
+  "greekName": "Orion (Ὠρίων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the hunter",
+    "the constellation",
+    "Chios and the sunrise"
+  ],
+  "summary": [
+    {
+      "text": "A giant hunter who wooed Merope on Chios, was blinded by her father Oenopion, recovered his sight at the sunrise, and was set among the stars after his death.",
+      "sources": ["apollodorus", "hesiod", "homer"],
+      "citation": "Bibliotheca 1.4.3–1.4.5; Astronomy 326–332; Odyssey 5.121–124"
+    }
+  ],
+  "story": [
+    {
+      "text": "Orion went to Chios and wooed Merope, daughter of Oenopion; but the king made him drunk, put out his eyes as he slept, and cast him on the beach. Orion went to the smithy of Hephaestus, set a lad on his shoulders, and bade him lead him to the sunrise; being come thither he was healed by the sun's rays.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.3"
+    },
+    {
+      "text": "Homer knows him as a hunter even in death: on Calypso's isle Odysseus saw Orion driving wild beasts over the meadow of asphodel that he had himself slain on the lonely hills, bearing a bronze club unbreakable forever.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.572–575"
+    },
+    {
+      "text": "Hesiod's Astronomy tells how Orion was stung by the scorpion and died, and how Zeus set him in the sky as a constellation — the hunter who pursues the Pleiades and the Bear through all the nights of the year.",
+      "sources": ["hesiod"],
+      "citation": "Astronomy 326–332"
+    }
+  ],
+  "residences": [
+    {
+      "city": "chios",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

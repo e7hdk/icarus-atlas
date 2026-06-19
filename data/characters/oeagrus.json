@@ -1,0 +1,41 @@
+{
+  "id": "oeagrus",
+  "name": "Oeagrus",
+  "greekName": "Oiagros (Οἴαγρος)",
+  "romanName": "Oeagrus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Thracian king",
+    "father of Orpheus",
+    "husband of Calliope"
+  ],
+  "summary": [
+    {
+      "text": "Thracian king and husband of the Muse Calliope, by whom — or nominally by Apollo — she bore the singers Orpheus and Linus near the Pimpleian height on Olympus.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 1.3.2, 1.9.16; Argonautica 1.23; Fabulae 14",
+      "topic": "orpheus-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Oeagrus as the mortal father of Orpheus in both the genealogical catalogue and the Argonaut muster: Calliope bore to Oeagrus, or nominally to Apollo, the minstrel whose songs moved stones and trees and the elder Linus, whom Heracles later slew.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.3.2, 1.9.16, 2.4.9",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "text": "Apollonius opens the Argonaut roll with Orpheus, whom Calliope bore wedded to Thracian Oeagrus near the Pimpleian height — fixing the bard's Pierian birth in the landscape of Olympus' northern slope.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.23",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "text": "Hyginus lists Orpheus among Jason's comrades as son of Oeagrus and the Muse Calliope, prophet and cithara-player from Pieria on Olympus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14",
+      "topic": "orpheus-parentage"
+    }
+  ]
+}

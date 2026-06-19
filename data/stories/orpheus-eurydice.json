@@ -1,0 +1,67 @@
+{
+  "id": "orpheus-eurydice",
+  "title": "Orpheus and Eurydice",
+  "greekTitle": "Ὀρφεὺς καὶ Εὐρυδίκη",
+  "kind": "episode",
+  "parent": "orpheus-cycle",
+  "era": 7.08,
+  "summary": {
+    "text": "Orpheus the Thracian bard, whom Calliope bore to Oeagrus and whose song moved stones and trees, lost Eurydice to a serpent on their wedding day — descended through Taenarus to Hades, charmed Pluto and Persephone with his lyre, and won her back on condition he not look behind; one backward glance sent her down again forever.",
+    "sources": ["apollodorus", "ovid", "hyginus"],
+    "citation": "Apollod. 1.3.2; Ov. Met. 10.1–137; Hyg. Fab. 14, 251"
+  },
+  "chapters": [
+    {
+      "title": "The singer",
+      "text": "Apollodorus says Calliope bore Orpheus to Oeagrus, or nominally to Apollo, and that by his minstrelsy he moved stones and trees. Apollonius places him first among the Argonauts, from the Pierian height; Hyginus names him prophet and lyre-player of Olympus. Pausanias rejects the Muse as mother and makes him son of a daughter of Pierus — yet all agree his song had power over beasts, rivers, and the underworld itself.",
+      "sources": ["apollodorus", "apollonius", "hyginus", "pausanias"],
+      "citation": "Apollod. 1.3.2; Arg. 1.23; Hyg. Fab. 14; Paus. 9.30.4",
+      "topic": "orpheus-parentage"
+    },
+    {
+      "title": "Wedding and serpent",
+      "text": "Orpheus wedded Eurydice in Ciconian land, but Hymen brought no happy omen — his torch smoked and sputtered. While the bride wandered with the Naiads through the grass, a serpent struck its venom into her soft ankle and she died. Orpheus filled the heights of heaven with lament until he resolved that the world below should know his grief as well.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 10.1–11; Apollod. 1.3.2"
+    },
+    {
+      "title": "Descent",
+      "text": "Through the Taenarian gate he went down to the Styx, passing pale ghosts until he stood before Persephone and Pluto. To his lyre he sang that Love had conquered him on earth, that all mortals must come to their final home in Hades, and begged a few years more for Eurydice. Tantalus forgot the returning water, the wheel of Ixion stood still, the vultures left Tityus' liver, and the Eumenides wept — for the first and only time. The king and queen of the dead granted his prayer.",
+      "sources": ["ovid", "apollodorus", "hyginus"],
+      "citation": "Ov. Met. 10.11–77; Apollod. 1.3.2; Hyg. Fab. 251"
+    },
+    {
+      "title": "The look back",
+      "text": "Eurydice followed, halting from her wound, up the steep dark path toward the light. Apollodorus says Pluto promised she would follow if Orpheus did not turn until he reached his own house; Ovid sets the test at the threshold of earth. Fearful of losing her again, he looked back — and instantly she slipped away. He grasped only yielding air; her last word was farewell, and she fell a second time to Hades. Apollodorus bluntly: he disobeyed, beheld his wife, and she turned back.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 10.77–95; Apollod. 1.3.2",
+      "topic": "eurydice-return-condition"
+    },
+    {
+      "title": "On the bank of Styx",
+      "text": "Struck senseless by a double death, Orpheus implored the ferryman in vain to cross again and was denied even the hope of dying. Seven days he sat on Death's river bank without food, nourished by grief and tears, complaining that the gods of Erebus were pitiless — then wandered back to Rhodope and Haemus, and for three years shunned all women, believing his pledge to Eurydice eternal.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.95–137"
+    }
+  ],
+  "cast": [
+    { "id": "orpheus", "name": "Orpheus", "role": "Thraco-Pierian bard who descended for his wife" },
+    { "id": "eurydice-orpheus", "name": "Eurydice", "role": "Bride lost to the serpent and reclaimed too briefly" },
+    { "id": "oeagrus", "name": "Oeagrus", "role": "Thracian father in the mythographic tradition" },
+    { "id": "calliope", "name": "Calliope", "role": "Muse, Orpheus' mother in the mythographic tradition" },
+    { "id": "hades", "name": "Hades", "role": "Pluto, lord of the dead who heard his song" },
+    { "id": "persephone", "name": "Persephone", "role": "Queen of the underworld who wept at his plea" }
+  ],
+  "places": [
+    { "name": "Ciconia", "role": "Thracian land of the wedding" },
+    { "name": "Taenarus", "role": "Gate through which Orpheus entered the underworld" },
+    { "name": "Mount Olympus", "role": "Pierian height of Orpheus' birth and fame" },
+    { "name": "Rhodope", "role": "Mountain where he wandered in mourning" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "1.3.2" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "10.1–137" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "14, 251" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "9.30.4" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "city": "melos",
+  "reigns": [
+    {
+      "ruler": "Polyanax",
+      "characterId": "polyanax-melos",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b",
+      "note": "King of Melos before his death on the heroes' homeward voyage."
+    },
+    {
+      "ruler": "Menestheus",
+      "characterId": "menestheus",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b",
+      "note": "Athenian captain at Troy who succeeded Polyanax on Melos."
+    }
+  ]
+}

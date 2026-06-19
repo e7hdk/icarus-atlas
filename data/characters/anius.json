@@ -1,0 +1,42 @@
+{
+  "id": "anius",
+  "name": "Anius",
+  "greekName": "Anios (Ἄνιος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Delos",
+    "priest of Apollo",
+    "the Wine-growers' father"
+  ],
+  "summary": [
+    {
+      "text": "Son of Apollo and king of the Delian city, where men and Phoebus were worshipped with proper rite; Aeneas, sailing from Thrace, found Anius priest-king of Apollo's isle and guest in his temple and house.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.899–1014"
+    },
+    {
+      "text": "His daughters Elais, Spermo, and Oeno were called the Wine-growers: Dionysus granted them the power of producing oil, corn, and wine from the earth.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid sets the Trojan exile's first landfall on Apollo's island. With fair wind and tide Aeneas and his comrades reach the Delian shore; Anius, by whose kingship the people and Phoebus as priest were duly honoured, receives them in temple and house and shows the city, the familiar shrines, and the two olive trees Leto once clung to when she bore her twins.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.899–1014"
+    },
+    {
+      "text": "Apollodorus names him plainly the son of Apollo and tells of his three daughters — Elais, Spermo, and Oeno — whom men call the Wine-growers, for Dionysus gave them the gift of drawing oil, grain, and wine from the ground itself.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "delos",
+      "sources": ["apollodorus", "ovid"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "butes-athens",
+  "name": "Butes",
+  "greekName": "Butes (Βούτης)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Attica",
+    "the Sirens",
+    "the Argonaut voyage"
+  ],
+  "summary": [
+    {
+      "text": "Son of Teleon and Zeuxippe, Athenian Argonaut who alone leapt overboard at the Sirens' song and was saved by Aphrodite at Lilybaeum.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.25; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Orpheus' counter-melody held the crew at the Sirens' isle, Butes alone was overcome and swam toward the deadly song; Aphrodite snatched him up and settled him in Lilybaeum, where she bore him Eryx.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.25; Argonautica 4.914–919"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "hyginus"
+      ]
+    }
+  ]
+}

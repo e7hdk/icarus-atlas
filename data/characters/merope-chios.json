@@ -1,0 +1,31 @@
+{
+  "id": "merope-chios",
+  "name": "Merope",
+  "greekName": "Meropē (Μερόπη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Oenopion",
+    "the wooing of Orion"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Oenopion king of Chios, whom Orion came to woo and for whose sake the hunter was blinded by her father.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Orion came to Chios and sought Merope, daughter of Oenopion, the king made the hunter drunk, put out his eyes as he slept, and cast him on the beach — the beginning of Orion's journey to the sunrise and the forge of Hephaestus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "chios",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "lycus-centaur",
+  "name": "Lycus",
+  "greekName": "Lykos (Λύκος)",
+  "romanName": "Lycus",
+  "type": "creature",
+  "domains": [
+    "Peirithous' wedding",
+    "fallen before the bridegroom"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "A centaur who fell before Peirithous in the wedding battle, named beside Chromis in Ovid's account.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid counts Lycus among the centaurs who fell before Pirithous when the fight turned — less glory to the conqueror, the poet says, than the deaths of Helops and Dictys. He must be kept distinct from Lycus son of Pandion (`lycus`) and from Lycus king of the Mariandyni who befriended the Argonauts after Amycus of the Bebryces was slain.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 12.464–623"
+    }
+  ],
+  "kinds": [
+    "centaur"
+  ]
+}

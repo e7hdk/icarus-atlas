@@ -3,37 +3,85 @@
   "title": "The Trojan War",
   "greekTitle": "Τρωικὸς πόλεμος",
   "kind": "war",
-  "parent": null,
+  "parent": "trojan-cycle",
   "era": 8,
   "summary": {
-    "text": "For Helen, taken from Sparta to Troy, the Achaean kings besieged Priam's city for ten years — the war of wars, where Achilles' wrath burned, Hector fell, and every homecoming was poisoned.",
+    "text": "In the tenth year of the siege of Ilion — Achilles' wrath against Agamemnon, Patroclus fallen in borrowed armour, Hector slain before the walls and dragged behind the chariot, until old Priam kissed the hands that had killed his son.",
     "sources": ["homer", "ovid", "hyginus"],
     "citation": "Hom. Il.; Ov. Met. 12-13; Hyg. Fab. 78, 98-111"
   },
   "chapters": [
     {
-      "title": "The stolen queen",
-      "text": "Paris of Troy carried Helen away from Menelaus' Sparta. Bound by the oath they had sworn as her suitors, the kings of Greece mustered under Agamemnon of Mycenae, and a thousand ships crossed the Aegean.",
+      "title": "The tenth summer",
+      "text": "Homer's Iliad opens in the tenth year of the siege: the Achaean host ringed Ilion, their kings quartered on the plain, the Trojans safe behind the walls Priam's son Hector defended — and already the quarrel that would nearly lose the war was burning between Agamemnon and Achilles.",
       "sources": ["homer", "hyginus"],
-      "citation": "Hom. Il. 3.46-57, 3.351-354; Hyg. Fab. 78"
+      "citation": "Hom. Il. 1–2; Hyg. Fab. 106"
     },
     {
-      "title": "The wrath of Achilles",
-      "text": "In the tenth year Agamemnon slighted Achilles over the captive Briseis, and the best of the Achaeans withdrew from the fight. Plague and rout followed, until the Trojans pressed to the very ships.",
+      "title": "Wrath and plague",
+      "text": "Agamemnon dishonoured Achilles over Briseis, Apollo wasted the host until Chryseis was restored, and Thetis bound Zeus to favour her son — then the false dream, Thersites' rail, and the Catalog of Ships. The nested episode on Wrath and Plague tells Books 1–2.",
       "sources": ["homer"],
-      "citation": "Hom. Il. 1-15"
+      "citation": "Hom. Il. 1–2"
     },
     {
-      "title": "Hector's fall",
-      "text": "Patroclus fell to Hector wearing Achilles' armour, and grief drove Achilles back to war. He slew Hector before the walls, dragged him behind his chariot, and at last gave the body back to old Priam, who kissed the hands that had killed his son.",
+      "title": "Duel and broken truce",
+      "text": "Paris and Menelaus fought for Helen; Aphrodite snatched the prince away; Pandarus' arrow broke the oaths and the war reopened. The nested episode on Duel and Broken Truce tells Books 3–4.",
       "sources": ["homer"],
-      "citation": "Hom. Il. 16-24"
+      "citation": "Hom. Il. 3–4"
     },
     {
-      "title": "The poisoned homecomings",
-      "text": "Troy fell, but the victors' returns were bitter. Agamemnon came home to Clytemnestra and the axe; his shade told Odysseus there is nothing more terrible than a treacherous house. Orestes' vengeance closed the curse of the Atreids.",
-      "sources": ["homer", "hyginus"],
-      "citation": "Hom. Od. 11.405-434; Hyg. Fab. 117-119"
+      "title": "Diomedes' day",
+      "text": "Athena kindled Diomedes to wound Aphrodite and Ares in a single aristeia; Glaucus and he exchanged golden armour for bronze; Hector heard Andromache's plea at the Scaean Gate. The nested episode on the Aristeia of Diomedes tells Books 5–6.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 5–6"
+    },
+    {
+      "title": "Hector and the wall",
+      "text": "Hector fought Ajax to a draw and the armies buried their dead; Zeus drove the Trojans to the ships and the Achaeans dug their wall. The nested episode on Hector and the Wall tells Books 7–8.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 7–8"
+    },
+    {
+      "title": "The embassy",
+      "text": "Agamemnon sent Odysseus, Phoenix, and Ajax with gifts to Achilles' tent — and the son of Peleus refused. The nested episode on the Embassy tells Book 9.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 9"
+    },
+    {
+      "title": "Wounding of the chiefs",
+      "text": "Agamemnon's aristeia broke; Diomedes and Odysseus fell wounded; Ajax held the wall while the Trojans assaulted the gates. The nested episode on the Wounding of the Chiefs tells Books 11–12; the Night Raid in Book 10 lives in its own episode.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 11–12"
+    },
+    {
+      "title": "Battle for the ships",
+      "text": "Poseidon roused the Achaeans; Hector broke the wall and fired the fleet; Patroclus wept at Achilles' door. The nested episode on the Battle for the Ships tells Books 13–15.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 13–15"
+    },
+    {
+      "title": "The fall of Patroclus",
+      "text": "Patroclus wore Achilles' armour and drove the Trojans from the ships until Hector killed him and took the arms of Peleus. The nested episode on the Fall of Patroclus tells Book 16.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 16"
+    },
+    {
+      "title": "Achilles and Hector",
+      "text": "Thetis brought new armour; Achilles returned to war, filled the Scamander with slain, and chased Hector three times around Troy before dragging the body behind his chariot. The nested episode on Achilles and Hector tells Books 17–22.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 17–22"
+    },
+    {
+      "title": "Priam and the ransom",
+      "text": "Funeral games honoured Patroclus; old Priam came alone through the camp at night and kissed the hands that had killed his son — and Troy buried Hector. The nested episode on Priam and the Ransom tells Books 23–24, and Homer's poem ends with the hero's rites.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 23–24"
+    },
+    {
+      "title": "Beyond the Iliad",
+      "text": "Homer's poem ends with Hector's rites, but the Epic Cycle continued — the Aethiopis brought Penthesilea, Memnon, and the death of Achilles; the nested episode on Ajax and the Arms tells the contest for the panoply and the Telamonian's suicide; the nested Little Iliad carried Philoctetes' bow, the theft of the Palladium, and Epeius' horse before the Sack.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. Epit. 5.1–5.14; Hom. Od. 8.492–520, 11.505–564"
     }
   ],
   "cast": [
@@ -44,25 +92,43 @@
     { "id": "iphigenia", "name": "Iphigenia", "role": "Sacrificed at Aulis" },
     { "id": "orestes", "name": "Orestes", "role": "The avenger" },
     { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally of Troy" },
-    { "name": "Achilles", "role": "Best of the Achaeans" },
+    { "id": "achilles", "name": "Achilles", "role": "Best of the Achaeans" },
     { "id": "hector", "name": "Hector", "role": "Shield of Troy" },
     { "id": "paris", "name": "Paris", "role": "The thief of Helen" },
     { "id": "priam", "name": "Priam", "role": "Old king of Troy" },
     { "id": "hecuba", "name": "Hecuba", "role": "Queen of the doomed city" },
     { "id": "cassandra", "name": "Cassandra", "role": "The unheeded prophetess" },
     { "id": "aeneas", "name": "Aeneas", "role": "Seed of the Trojans to come" },
-    { "name": "Odysseus", "role": "The cunning one" },
-    { "name": "Patroclus", "role": "Beloved of Achilles" }
+    { "id": "odysseus", "name": "Odysseus", "role": "The cunning one" },
+    { "id": "patroclus", "name": "Patroclus", "role": "Beloved of Achilles" },
+    { "id": "briseis", "name": "Briseis", "role": "The prize whose seizure opened the wrath" },
+    { "id": "chryseis", "name": "Chryseis", "role": "The prize whose return stayed the plague" },
+    { "id": "chryses-apollo", "name": "Chryses", "role": "Priest whose prayer brought Apollo's arrows" },
+    { "id": "phoenix-myrmidon", "name": "Phoenix", "role": "Tutor who pleaded in the embassy" },
+    { "id": "thersites", "name": "Thersites", "role": "The railer beaten at assembly" },
+    { "id": "dolon", "name": "Dolon", "role": "The doomed spy" },
+    { "id": "rhesus", "name": "Rhesus", "role": "Thracian king, one night at Troy" },
+    { "id": "diomedes", "name": "Diomedes", "role": "Lord of the Argive host at Troy" },
+    { "id": "sthenelus-epigoni", "name": "Sthenelus", "role": "Diomedes' charioteer, son of Capaneus" },
+    { "id": "euryalus-aeolid", "name": "Euryalus", "role": "Warrior comrade of Diomedes and Sthenelus" },
+    { "id": "thersander", "name": "Thersander", "role": "Theban king, slain at Mysia before Troy" },
+    { "id": "telephus", "name": "Telephus", "role": "King of Mysia who cut down Thersander on the detour" },
+    { "id": "peneleos", "name": "Peneleos", "role": "Boeotian captain sent in Thersander's stead" },
+    { "id": "eurypylus-telephus", "name": "Eurypylus", "role": "Son of Telephus who cut down Peneleos at Troy" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "The besieged city" },
     { "id": "sparta", "name": "Sparta", "role": "Helen's home" },
-    { "id": "mycenae", "name": "Mycenae", "role": "Agamemnon's seat" }
+    { "id": "mycenae", "name": "Mycenae", "role": "Agamemnon's seat" },
+    { "id": "argos", "name": "Argos", "role": "Diomedes' kingdom and mustering ground" },
+    { "id": "thebes", "name": "Thebes", "role": "Thersander's throne before the Mysian detour" }
   ],
   "attestations": [
     { "source": "homer", "work": "Iliad", "citation": "entire" },
     { "source": "homer", "work": "Odyssey", "citation": "the returns, esp. 11" },
     { "source": "ovid", "work": "Metamorphoses", "citation": "12-13" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "78, 98-111" }
+    { "source": "hyginus", "work": "Fabulae", "citation": "78, 98-111" },
+    { "source": "apollodorus", "work": "Epitome", "citation": "3.17 (Mysian detour)" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "9.5.14-15 (Thersander, Peneleos)" }
   ]
 }

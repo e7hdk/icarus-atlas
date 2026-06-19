@@ -1,0 +1,93 @@
+{
+  "id": "cassandra-at-mycenae",
+  "title": "Cassandra at Mycenae",
+  "greekTitle": "Κασσάνδρα ἐν Μυκήναις",
+  "kind": "episode",
+  "parent": "agamemnon-murder",
+  "era": 8.906,
+  "summary": {
+    "text": "Apollo's cursed prophetess — unheeded at the wooden horse, dragged from Athena's image at the sack, and given to Agamemnon as prize — died at Mycenae beside the king in the bath; her cry was the most piteous Agamemnon's shade remembered when Odysseus walked the house of Hades.",
+    "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
+    "citation": "Hom. Il. 13.365–376, 24.699–706; Od. 11.421–423; Apollod. 3.12.5; Epit. 5.17, 5.22–23, 6.23; Hyg. Fab. 93, 108, 117; Paus. 2.16.6, 10.26.3"
+  },
+  "chapters": [
+    {
+      "title": "Comeliest on the wall",
+      "text": "Homer's Cassandra is not yet a seer. The Iliad calls her the comeliest of Priam's daughters — sought by Othryoneus for the promise of driving the Achaeans from Troy — and it is she, like golden Aphrodite, who first sees her father bringing Hector's body home on the wagon and rouses all Troy to wailing from the height of Pergamus. The war has already broken her city; the prophecy that will define her belongs to the poets after Homer.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 13.365–376, 24.699–706"
+    },
+    {
+      "title": "Apollo's gift and the price",
+      "text": "Apollodorus says Apollo, wishing to win Cassandra's favours, promised to teach her prophecy; she learned the art and then refused the god, and he deprived her prophecy of the power to persuade. Hyginus tells it differently: tired of playing, she fell asleep in Apollo's temple, and when the god tried to embrace her she would not permit him — so he brought it about that her true prophecies should not be believed. Either way, Troy would hear the truth from her lips and turn to feasting instead.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.12.5; Hyg. Fab. 93"
+    },
+    {
+      "title": "The horse no one heard",
+      "text": "When the wooden horse stood within the walls, Cassandra declared that an armed force was hidden inside — and Laocoon the seer confirmed her. Some wanted to burn the offering or hurl it from the cliffs; but most voted to spare it as a sacred votive, and the city turned to sacrifice and wine. Hyginus says she kept insisting that enemies were within while the Trojans, overcome by sport and feasting, slept — and the Achaeans poured out of the opened horse.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 5.17; Hyg. Fab. 108"
+    },
+    {
+      "title": "Dragged from Pallas",
+      "text": "At the division of spoils the Locrian Ajax violated Cassandra as she clung to the wooden image of Athena — the outrage for which the goddess never forgave him, and for which the painters remembered her at Delphi holding the image she overturned. Agamemnon received her as his special award when the victors sailed; the nested episode on the Locrian Ajax tells the sacrilege and the storm that followed on the sea.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 5.22–23; Paus. 10.26.3"
+    },
+    {
+      "title": "The road to Mycenae",
+      "text": "Of all the kings who took Troy, Agamemnon reached Mycenae first — bringing Ilion's spoils and Cassandra daughter of Priam. His brother Menelaus was still storm-driven toward Egypt; Nestor had already made safe harbour at Pylos; Odysseus wandered among gods and monsters. The prophetess entered the lion-gated citadel as captive concubine in the house of the man who had led the host against her father and her brothers.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Hom. Od. 3.303–312, 4.514–519; Apollod. Epit. 6.23"
+    },
+    {
+      "title": "The queen's plot",
+      "text": "Clytemnestra had never forgiven the sacrifice of Iphigenia at Aulis. Hyginus adds a trigger before the ships touched shore: Oiax, brother of Palamedes, falsely told the queen that Cassandra was being brought as a concubine to her house — vengeance for the wrong done to his brother — and Clytemnestra, together with Aegisthus son of Thyestes, planned to kill both Agamemnon and the Trojan girl. The curse Apollo set on Cassandra's voice would not save her from the axe.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Hyg. Fab. 117; Apollod. Epit. 6.23"
+    },
+    {
+      "title": "The most piteous cry",
+      "text": "Agamemnon was welcomed with a feast and cut down in the bath — Aegisthus sharing the murder in most accounts, though Homer's shade sometimes lays the killing on the lover alone while naming Clytemnestra as plotter who would not even close her husband's eyes. Cassandra died with him. In Hades Agamemnon told Odysseus that hers was the most piteous cry he ever heard, guileful Clytemnestra slaying her over the fallen king while the floor swam with blood.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Od. 11.385–434; Apollod. Epit. 6.23; Hyg. Fab. 117–119",
+      "topic": "agamemnon-murder-agency"
+    },
+    {
+      "title": "Alexandra in cult and art",
+      "text": "Pausanias walked a disputed landscape of memory. At Mycenae he saw graves said to hold Teledamus and Pelops, twin sons of Cassandra; at Amyclae and Leuctra the Lacedaemonians honoured her under the name Alexandra with sanctuary and image. At Delphi Polygnotus painted her beside the overturned image of Athena — and in his great underworld picture the Locrian Ajax appeared as a castaway, brine scurfing his skin, the sea's punishment visible even among the dead.",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.16.6, 3.19.6, 3.26.5, 5.19.5, 10.26.3, 10.31.1"
+    }
+  ],
+  "cast": [
+    { "id": "cassandra", "name": "Cassandra", "role": "The unheeded prophetess" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Her captor, slain beside her" },
+    { "id": "clytemnestra", "name": "Clytemnestra", "role": "She who slew her over the king" },
+    { "id": "aegisthus", "name": "Aegisthus", "role": "Partner in the murder" },
+    { "id": "apollo", "name": "Apollo", "role": "God who cursed her prophecy" },
+    { "id": "athena", "name": "Athena", "role": "Whose image she had clung to at the sack" },
+    { "id": "ajax-oileus", "name": "Ajax the Locrian", "role": "He who dragged her from the goddess' statue" },
+    { "id": "iphigenia", "name": "Iphigenia", "role": "The sacrifice remembered in Clytemnestra's wrath" },
+    { "id": "hector", "name": "Hector", "role": "Whose body she first saw from the wall" },
+    { "id": "priam", "name": "Priam", "role": "Her father, king of the fallen city" },
+    { "id": "odysseus", "name": "Odysseus", "role": "He who heard the tale in Hades" },
+    { "name": "Laocoon", "role": "Seer who confirmed her warning of the horse" },
+    { "name": "Oiax", "role": "He who falsely told Clytemnestra of the concubine" }
+  ],
+  "places": [
+    { "id": "mycenae", "name": "Mycenae", "role": "Where she died in the bath-chamber" },
+    { "id": "troy", "name": "Troy", "role": "The city she prophesied in vain" },
+    { "name": "Delphi", "role": "Where Polygnotus painted her and the outrage" },
+    { "name": "Amyclae", "role": "Where she was worshipped as Alexandra" },
+    { "name": "Leuctra", "role": "Second Laconian sanctuary under that name" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "13.365–376, 24.699–706" },
+    { "source": "homer", "work": "Odyssey", "citation": "3.303–312, 11.385–434" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.12.5; Epitome 5.17, 5.22–23, 6.23" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "93, 108, 117–119" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "2.16.6, 3.19.6, 10.26.3, 10.31.1" }
+  ]
+}

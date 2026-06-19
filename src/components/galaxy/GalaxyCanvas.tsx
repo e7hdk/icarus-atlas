@@ -9,7 +9,7 @@ import type { Character, Relation } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
-import { CharacterStar } from './CharacterStar';
+import { StarsDriver } from './StarsDriver';
 import { Nebula } from './Nebula';
 import { BackgroundDome } from './BackgroundDome';
 import { StarField } from './StarField';
@@ -47,22 +47,18 @@ export function GalaxyCanvas({
         <StarField />
         <Nebula />
       </group>
-      {characters.map((character) => {
-        const position = positions.get(character.id);
-        if (!position) return null;
-        return <CharacterStar key={character.id} character={character} position={position} />;
-      })}
+      <StarsDriver characters={characters} positions={positions} />
       <RelationLines relations={relations} positions={positions} />
       <CameraRig positions={positions} />
       {/* Mobile: no MSAA, and skip the grain pass (one fewer fullscreen draw). */}
       {isMobile ? (
         <EffectComposer key="m" multisampling={0}>
-          <Bloom mipmapBlur intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
+          <Bloom mipmapBlur resolutionScale={0.5} intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
           <Vignette eskil={false} offset={0.15} darkness={0.55} />
         </EffectComposer>
       ) : (
         <EffectComposer key="d" multisampling={4}>
-          <Bloom mipmapBlur intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
+          <Bloom mipmapBlur resolutionScale={0.5} intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
           <Vignette eskil={false} offset={0.15} darkness={0.55} />
           {/* faint SCREEN grain kills additive-gradient banding on the dark backdrop */}
           <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />

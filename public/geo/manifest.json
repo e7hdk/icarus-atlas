@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "bounds": {
+    "west": -6,
+    "south": 22,
+    "east": 44,
+    "north": 47
+  },
+  "maxBounds": [
+    [
+      -6,
+      22
+    ],
+    [
+      44,
+      47
+    ]
+  ],
+  "center": [
+    24,
+    36
+  ],
+  "defaultZoom": 4.6,
+  "minZoom": 3,
+  "maxZoom": 14,
+  "attribution": [
+    {
+      "name": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/",
+      "license": "CC0 1.0"
+    }
+  ]
+}

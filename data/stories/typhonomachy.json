@@ -1,0 +1,59 @@
+{
+  "id": "typhonomachy",
+  "title": "The War with Typhon",
+  "greekTitle": "Τυφομαχία",
+  "kind": "war",
+  "parent": "cosmogony",
+  "era": 0.2,
+  "summary": {
+    "text": "When the Titans were overthrown, wide Earth bore one last child to Tartarus — Typhoeus, a storm-dragon with a hundred serpent heads, who rose against Zeus for the throne of heaven until the king of gods blasted him with the thunderbolt and hurled him down a maimed wreck beneath the earth.",
+    "sources": ["hesiod", "apollodorus"],
+    "citation": "Hes. Th. 820-880; Apollod. 1.6.3"
+  },
+  "chapters": [
+    {
+      "title": "Earth's last brood",
+      "text": "After Zeus had driven the Titans from heaven, huge Gaia bore her youngest child to Tartarus, by the aid of golden Aphrodite — Typhoeus, also called Typhon, whom Hesiod names the youngest of her brood and the most terrible revolt against the new order.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 820-822"
+    },
+    {
+      "title": "The hundred-headed dragon",
+      "text": "From his shoulders grew a hundred heads of a snake, a fearful dragon with dark flickering tongues; from beneath the brows of his eyes fire flashed, and in all his dreadful heads were voices uttering every kind of sound — now the speech of gods, now the lowing of bulls, now the roaring of lions, now the yelping of whelps.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 823-835"
+    },
+    {
+      "title": "The Cilician giant",
+      "text": "Apollodorus sets his birth in Cilicia and makes him a hybrid of man and beast who in size and strength surpassed all the children of Earth — with a human body that reached the stars, hands that stretched east and west, and from the thighs downward a mass of coiled serpents. By Echidna he would father the monster brood the heroes later hunted.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 1.6.3; Hyg. Fab. preface"
+    },
+    {
+      "title": "Fire against fire",
+      "text": "Typhoeus rose against Zeus, and a great flame shot forth from his eyes as he hurled rocks and burned with hot blast. The king leapt from Olympus and smote him, burning away the monster's heads with his thunderbolt; the land groaned and a great part of it was scorched by the terrible vapour.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 853-868; Apollod. 1.6.3"
+    },
+    {
+      "title": "Buried beneath the earth",
+      "text": "When Zeus had conquered him and lashed him with strokes, Typhoeus was hurled down a maimed wreck. Hesiod sends him into the dim land of Tartarus; Apollodorus buries him under Mount Etna in Sicily, where he still vents smoke and fire — the last great assault of Earth against heaven, broken forever.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 868-880; Apollod. 1.6.3"
+    }
+  ],
+  "cast": [
+    { "id": "typhon", "name": "Typhon", "role": "Storm-dragon who challenged heaven" },
+    { "id": "zeus", "name": "Zeus", "role": "Wielder of the thunderbolt" },
+    { "id": "gaia", "name": "Gaia", "role": "Earth, who bore the last revolt" },
+    { "id": "tartarus", "name": "Tartarus", "role": "The pit that fathered the monster" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "In whose aid Earth conceived him" },
+    { "id": "echidna", "name": "Echidna", "role": "Mother of the monster brood" }
+  ],
+  "places": [],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "820-880" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.6.3" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "preface" }
+  ]
+}

@@ -43,5 +43,15 @@
       "citation": "Bibliotheca 3.8.2",
       "topic": "callisto-transformation"
     }
+  ],
+  "residences": [
+    {
+      "city": "delos",
+      "sources": ["apollodorus", "hesiod"]
+    },
+    {
+      "city": "ephesus",
+      "sources": ["pausanias", "hyginus"]
+    }
   ]
 }

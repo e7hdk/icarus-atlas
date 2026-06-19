@@ -1,0 +1,27 @@
+{
+  "id": "cteatus-epeian",
+  "name": "Cteatus",
+  "greekName": "Kteatos (Κτέατος)",
+  "type": "hero",
+  "domains": ["father of Amphimachus", "the blood of Actor", "Epeian house"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Father of Amphimachus (`amphimachus-epeian`) among the Epeians of the blood of Actor — twin brother of Eurytus (`eurytus-epeian`) in later Elis tradition, though Homer names him only as the captain's sire in the Catalogue of Ships.",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.615–650, 13.155–190; Bibliotheca 2.7.2; Description of Greece 5.3.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Cteatus beside Eurytus when Nestor musters the Epeians: sons of Actor's line, the one father of Amphimachus and the other of Thalpius, who led twenty swift ships from Elis about Buprasium and the coast.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.615–650"
+    },
+    {
+      "text": "Apollodorus makes Cteatus and Eurytus twin sons of Actor by Molione — two men joined in one, unmatched in strength — whom Augeas appointed generals when Heracles marched against Elis; Pausanias remembers their tomb at Cleonae, where Heracles shot them on the road to the Isthmian games.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.7.2; Description of Greece 2.15.1, 5.3.3"
+    }
+  ]
+}

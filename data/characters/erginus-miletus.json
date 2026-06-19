@@ -1,0 +1,41 @@
+{
+  "id": "erginus-miletus",
+  "name": "Erginus",
+  "greekName": "Erginos (Ἔργινος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Milesian Argonaut",
+    "son of Poseidon"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon who left the citadel of Miletus to join Jason's crew, numbered among the Argonauts who boasted their skill in seacraft and war.",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.185; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Erginus among the sons of Poseidon who sailed on the Argo: he left the citadel of glorious Miletus, while proud Ancaeus came from Parthenia, the seat of Imbrasian Hera — both boasting their skill in seacraft and in war.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.185"
+    },
+    {
+      "text": "When the ship needed a helmsman after Tiphys' death, Erginus rose with Nauplius and Euphemus eager to steer, though the lot fell to Ancaeus at the goddess Athena's impulse.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 2.894"
+    },
+    {
+      "text": "Hyginus lists Erginus son of Neptune from Miletus among the Argonauts, though some make him son of Periclymenus from Orchomenus — a homonym hazard the catalogue leaves unresolved.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["apollonius", "hyginus"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "asteropaeus-paeonian",
+  "name": "Asteropaeus",
+  "greekName": "Asteropaios (Ἀστεροπαῖος)",
+  "type": "hero",
+  "domains": ["Paeonian command", "son of the river", "two-handed spears"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Pelegon, whom wide-flowing Axius begot on Periboea daughter of Acessamenus — warlike captain whom Sarpedon chose as comrade and whom Achilles slew on the banks of Scamander when he stood forth from the river with two spears.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 12.80–105, 21.140–230; Epitome 5.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the allies fenced the assault on the wall, Sarpedon chose Glaucus and warlike Asteropaeus as his comrades, deeming them bravest after himself. In the rally over Patroclus, Hector heartened Asteropaeus among the captains of the tribes round about Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 12.80–105, 17.210–245"
+    },
+    {
+      "text": "By the eddying Scamander he leapt forth to face Achilles, boasting descent from a river-god, and hurled with both spears at once, for he could use either hand alike; yet the son of Peleus fixed him with the Pelian ash, left him in the sands when he had robbed him of his life, and went on chasing the Paeonians along the river-banks.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 21.140–230; Epitome 5.3"
+    }
+  ]
+}

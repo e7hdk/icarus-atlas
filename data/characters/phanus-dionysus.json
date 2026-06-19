@@ -1,0 +1,25 @@
+{
+  "id": "phanus-dionysus",
+  "name": "Phanus",
+  "greekName": "Phanos (Φάνος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Dionysus",
+    "Argonaut"
+  ],
+  "summary": [
+    {
+      "text": "Son of Dionysus who sailed among the Argonauts beside his brother Staphylus on Jason's quest for the Golden Fleece.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Phanus and Staphylus together among the heroes who manned the Argo — both sons of Dionysus on the expedition to Aeetes' kingdom.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16"
+    }
+  ]
+}

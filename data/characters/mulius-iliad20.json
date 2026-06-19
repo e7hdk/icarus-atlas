@@ -1,0 +1,28 @@
+{
+  "id": "mulius-iliad20",
+  "name": "Mulius",
+  "greekName": "Moulios (Μούλιος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan whom Achilles smote upon the ear so that the bronze spear-point passed clean through the other ear when the son of Peleus raged in the rout — distinct from `mulius-trojan` whom Patroclus slew, from `mulius-augeiad` whom Nestor laid low in the old Pylians–Epeians war, and from the spearman son-in-law of Augeias in that same tale.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "story": [
+    {
+      "text": "Achilles drew nigh unto Mulius and smote him upon the ear, and clean through the other ear passed the spear-point of bronze; then smote he Agenor's son Echeclus full upon the head with his hilted sword.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.455–485"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

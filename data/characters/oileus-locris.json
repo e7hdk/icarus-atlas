@@ -1,0 +1,33 @@
+{
+  "id": "oileus-locris",
+  "name": "Oileus",
+  "greekName": "Oileus (Οἰλεύς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Locris",
+    "the Argonaut voyage",
+    "father of Ajax"
+  ],
+  "summary": [
+    {
+      "text": "Son of Hodoedocus, Locrian Argonaut and father of Ajax the Lesser, wounded by a Stymphalian bird on the voyage.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 2.1037; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius tells how a Stymphalian bird struck Oileus in the shoulder; Eribotes drew out the barbed feather and healed the wound. He is numbered among the Argonauts in every major catalogue.",
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 2.1037; Fabulae 14"
+    }
+  ]
+}

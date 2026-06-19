@@ -1,0 +1,33 @@
+{
+  "id": "eudora-oceanid",
+  "name": "Eudora",
+  "greekName": "Eudōra (Εὐδώρα)",
+  "romanName": "Eudora",
+  "type": "nymph",
+  "kinds": ["oceanid"],
+  "cluster": "titan-ring",
+  "domains": [
+    "eldest daughters of Ocean",
+    "good-gift Oceanid",
+    "catalogue node — thin standalone myth"
+  ],
+  "summary": [
+    {
+      "text": "Oceanid daughter of Oceanus and Tethys, named among the eldest daughters in Hesiod's closing catalogue beside Telesto, Tyche, and Styx — not to be confused with Eudora the Nereid daughter of Doris, nor with Eudora among the Hyades.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 358–361"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Eudora in the elder company of Oceanids who conclude his register: after Telesto saffron-clad, Chryseis, Asia, and Calypso come Eudora and Tyche, then Amphirho, Ocyrrhoe, and Styx chiefest of all. These are the eldest daughters that sprang from Ocean and Tethys — Eudora's only attestation in the Theogony is this list-line.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 358–361"
+    },
+    {
+      "text": "The name Eudora — 'good gift' — appears elsewhere under other genealogies. Hesiod's Nereid catalogue gives a different Eudora as daughter of Doris and Nereus among the fifty sea-nymphs; Hyginus later names yet another Eudora among the Hyades nursed to the stars. The atlas keeps this entry as the Oceanid of Tethys alone.",
+      "sources": ["hesiod", "hyginus"],
+      "citation": "Theogony 248–250; Fabulae 192"
+    }
+  ]
+}

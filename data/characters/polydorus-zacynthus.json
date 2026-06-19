@@ -1,0 +1,35 @@
+{
+  "id": "polydorus-zacynthus",
+  "name": "Polydorus",
+  "greekName": "Polydōros (Πολύδωρος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Zacynthus"
+  ],
+  "summary": [
+    {
+      "text": "One of the forty-four suitors from Zacynthus in Apollodorus' island catalogue — wholly distinct from Polydorus son of Cadmus and Harmonia, king in the Theban succession.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29; Bibliotheca 3.4.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Polydorus among the wooers who came from Zacynthus, listed after Polybus and before Thadytius in Epitome 7.29.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
+    }
+  ],
+  "residences": [
+    {
+      "city": "zacynthus",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

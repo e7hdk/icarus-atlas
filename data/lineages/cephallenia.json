@@ -1,0 +1,19 @@
+{
+  "city": "cephallenia",
+  "reigns": [
+    {
+      "ruler": "Laertes",
+      "characterId": "laertes",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.201–204; Odyssey 1.180–225, 24.365–371; Epitome 3.10",
+      "note": "Lord of the Cephallenians who held Same and the neighbouring isles; in old age withdrew to his farm on Ithaca while suitors devoured his son's house."
+    },
+    {
+      "ruler": "Odysseus",
+      "characterId": "odysseus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.629–637; Odyssey 24.365–371; Epitome 3.10",
+      "note": "Succeeded Laertes as lord of the Cephallenians; captain of their contingent at Troy and king of rocky Ithaca."
+    }
+  ]
+}

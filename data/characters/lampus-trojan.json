@@ -1,0 +1,33 @@
+{
+  "id": "lampus-trojan",
+  "name": "Lampus",
+  "greekName": "Lampos (Λάμπος)",
+  "type": "hero",
+  "domains": ["father of Dolops", "Trojan elder", "son of Laomedon"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Laomedon (`laomedon`) who sat with Priam among the elders at the Scaean gates and father of Dolops (`dolops-trojan`), his bravest son, well skilled with the spear — distinct from Lampus, one of Hector's horses in *Iliad* 8.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190, 15.515–555"
+    }
+  ],
+  "story": [
+    {
+      "text": "About Priam and Panthous and Thymoetes and Lampus and Clytius and Hicetaon, scion of Ares, and Ucalegon and Antenor — men of prudence both — sat as elders of the people at the Scaean gates; because of old age had they now ceased from battle, but speakers they were full sweet.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.150–190"
+    },
+    {
+      "text": "When Meges son of Phyleus leapt upon Polydamas, Dolops son of Lampus — whom Lampus son of Laomedon begat, even his bravest son, well skilled in furious might — thrust with his spear full upon the shield of Phyleus' son from nigh at hand.",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

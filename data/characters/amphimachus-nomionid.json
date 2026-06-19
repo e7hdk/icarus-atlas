@@ -1,0 +1,36 @@
+{
+  "id": "amphimachus-nomionid",
+  "name": "Amphimachus",
+  "greekName": "Amphimakhos (Ἀμφίμαχος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Carian captain",
+    "lord of Miletus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Nomion (`nomion-carion`), captain of the Carians who held Miletus and the mountain of Phthires, the streams of Maeander, and the steep crests of Mycale when they sailed to Troy.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.867–871"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Amphimachus and Nastes, the glorious children of Nomion, as captains twain of the Carians — uncouth of speech — who held Miletus and Phthires dense with leafage, the Maeander's streams, and Mycale's steep crests.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.867–871"
+    },
+    {
+      "text": "At Troy Amphimachus fell in the second year of the war when the Earthshaker broke off a jagged rock and hurled it against him as he fled — a prince of the Maeander country brought down beside the ships.",
+      "sources": ["homer"],
+      "citation": "Iliad 13.202–205"
+    }
+  ],
+  "residences": [
+    {
+      "city": "miletus",
+      "sources": ["homer"]
+    }
+  ]
+}

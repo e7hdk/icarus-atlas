@@ -1,0 +1,54 @@
+{
+  "id": "antiphates-melampid",
+  "name": "Antiphates",
+  "greekName": "Ἀντιφάτης",
+  "romanName": "Antiphates",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Melampodid seer-line",
+    "Argive royalty"
+  ],
+  "summary": [
+    {
+      "text": "A son of Melampus at Argos, Antiphates fathered Oicles, who in turn begot the seer Amphiaraus — the link between the Melampodid healers and the prophetic house destroyed at Thebes.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 15.225–256; Bibliotheca 1.9.11–1.9.13"
+    },
+    {
+      "text": "Not to be confused with the Laestrygonian king Antiphates in the Odyssey, nor with the Trojan Antiphates slain by Leonteus at the wall.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 10.90–130; Iliad 12.155–190"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer carries the Argive seer-line through him. After Melampus won his share of Argos, wedded a wife, and built a house, he begot Antiphates and Mantius; Antiphates begot great-hearted Oicles, and Oicles begot Amphiaraus, while Mantius begot Polypheides, whom Apollo made prophet after Amphiaraus was dead.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 15.225–256"
+    },
+    {
+      "text": "Apollodorus places the same generation in the wider Melampodid catalogue: Melampus the seer, brother of Bias, understood the speech of birds after serpents purged his ears, cured the maddened women of Argos, and from his throne at Argos fathered the line that would produce both Amphiaraus and, through Mantius, Theoclymenus' grandfather Polypheides.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.11–1.9.13"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ]
+    }
+  ]
+}

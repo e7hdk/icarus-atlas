@@ -1,0 +1,66 @@
+{
+  "id": "duel-and-truce",
+  "title": "Duel and Broken Truce",
+  "greekTitle": "Μονομαχία καὶ σπονδαί",
+  "kind": "episode",
+  "parent": "trojan-war",
+  "era": 8.02,
+  "summary": {
+    "text": "Paris and Menelaus fought for Helen on the plain before Troy, Aphrodite snatched the prince away when he was losing, the armies swore a truce — and Pandarus' arrow, urged by Athena, broke the oaths and opened the war again.",
+    "sources": ["homer"],
+    "citation": "Hom. Il. 3–4"
+  },
+  "chapters": [
+    {
+      "title": "Paris challenged",
+      "text": "When the hosts stood facing on the plain, Paris stepped forth in leopard skin with bow and sword, challenging the best of the Achaeans to single combat for Helen and the spoils. Menelaus heard him gladly — the wronged husband eager to fight the thief who had stolen his wife. Hector rebuked his brother for beauty without courage and urged him on; Paris offered to settle the war by duel, the victor to keep Helen and the treasure, the Trojans to sail home if he fell.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 3.1–120"
+    },
+    {
+      "title": "Helen on the wall",
+      "text": "On the height of the wall Priam asked Helen to name the Achaean lords — Agamemnon, Odysseus, Ajax the greater. She pointed out her former husband Menelaus arming for the fight, and wept for herself and for the city she had brought to ruin. The old king called her dear child and blamed not her but the gods; below, the champions swore oaths over sacrificial victims, calling the gods to witness that whichever side broke faith should have their brains poured out like the lambs' wine-blood.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 3.121–370"
+    },
+    {
+      "title": "Aphrodite saves Paris",
+      "text": "Menelaus drove Paris back with spear and sword until the strap of his helmet broke and Agamemnon declared the duel won — but Aphrodite hid Paris in mist and bore him to his fragrant chamber, where Helen reviled the god's favour and the coward she must still call husband. On the field the Achaeans demanded Helen and the treasure; the Trojans would have yielded, but Athena and Hera would not let the war end without the fall of Troy.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 3.371–461"
+    },
+    {
+      "title": "Pandarus breaks the truce",
+      "text": "Zeus sent Athena to break the truce. She tempted Pandarus of Zeleia to shoot Menelaus with an arrow — promising glory and the favour of Apollo — and the shaft grazed the king's belt; Agamemnon cried that the oaths were broken. Physicians stanched the wound; the Achaeans armed again, and the battle that should have ended in single combat rolled across the plain. The nested episode on Diomedes' aristeia tells the slaughter that followed when the war reopened.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 4.1–296"
+    },
+    {
+      "title": "The gods on the field",
+      "text": "Homer names the immortals who took sides as the lines clashed: Ares and Apollo with Troy, Hera and Athena with the Achaeans, Zeus forbidding the gods to fight openly — yet sending Terror and Rout among the Trojans. The duel and the broken truce mark the last moment the war might have ended without the city's fall; after Pandarus' shot, the Iliad's great slaughter-days begin.",
+      "sources": ["homer"],
+      "citation": "Hom. Il. 4.297–544"
+    }
+  ],
+  "cast": [
+    { "id": "paris", "name": "Paris", "role": "Challenger saved by Aphrodite" },
+    { "id": "menelaus", "name": "Menelaus", "role": "Wronged husband in the duel" },
+    { "id": "helen", "name": "Helen", "role": "Prize on the wall, weeping for Troy" },
+    { "id": "hector", "name": "Hector", "role": "Brother who rebuked and urged Paris" },
+    { "id": "priam", "name": "Priam", "role": "Old king who asked Helen to name the Greeks" },
+    { "id": "agamemnon", "name": "Agamemnon", "role": "Lord of the host, wounded king's brother" },
+    { "id": "aphrodite", "name": "Aphrodite", "role": "Goddess who snatched Paris from death" },
+    { "id": "athena", "name": "Athena", "role": "She who broke the truce through Pandarus" },
+    { "id": "pandarus", "name": "Pandarus", "role": "Archer who shot Menelaus" },
+    { "id": "zeus", "name": "Zeus", "role": "He who would not let the war end yet" },
+    { "id": "ares", "name": "Ares", "role": "War-god on Troy's side" },
+    { "id": "apollo", "name": "Apollo", "role": "Defender of Troy on the plain" }
+  ],
+  "places": [
+    { "id": "troy", "name": "Troy", "role": "Wall, plain, and chambers of the duel" },
+    { "id": "sparta", "name": "Sparta", "role": "Helen's home, stake of the combat" }
+  ],
+  "attestations": [
+    { "source": "homer", "work": "Iliad", "citation": "3–4" }
+  ]
+}

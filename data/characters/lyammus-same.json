@@ -1,0 +1,35 @@
+{
+  "id": "lyammus-same",
+  "name": "Lyammus",
+  "greekName": "Lyammos (Λύαμμος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "suitor of Penelope",
+    "man of Same"
+  ],
+  "summary": [
+    {
+      "text": "The last-named of the twenty-three suitors from Same on Cephallenia in Apollodorus' island catalogue.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus closes the Same roll with Lyammus, after Itanus — the final name among the wooers Apollodorus assigns to Cephallenia in Epitome 7.28.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
+    }
+  ],
+  "residences": [
+    {
+      "city": "cephallenia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "ithaca",
+      "sources": ["apollodorus"]
+    }
+  ]
+}

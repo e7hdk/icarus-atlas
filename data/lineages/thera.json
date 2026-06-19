@@ -1,0 +1,19 @@
+{
+  "city": "thera",
+  "reigns": [
+    {
+      "ruler": "Membliarus",
+      "characterId": "membliarus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 3.1.7–8",
+      "note": "Leader of the settlers Cadmus left on Calliste, whose house yielded the kingship to Theras."
+    },
+    {
+      "ruler": "Theras",
+      "characterId": "theras",
+      "sources": ["pausanias", "apollonius"],
+      "citation": "Paus. 3.1.7–8, 3.15.6; Arg. 4.1755",
+      "note": "Son of Autesion and guardian of the Spartan twins; he led the Minyan settlers from Sparta to Calliste and renamed the isle Thera — after Euphemus' clod had already risen from the sea in the Argonautic voyage."
+    }
+  ]
+}

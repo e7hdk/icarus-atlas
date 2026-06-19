@@ -1,0 +1,86 @@
+{
+  "id": "birth-of-zeus",
+  "title": "The Birth of Zeus",
+  "greekTitle": "Διὸς γένεσις",
+  "kind": "episode",
+  "parent": "cosmogony",
+  "era": 0.06,
+  "summary": {
+    "text": "When Rhea was about to bear her youngest child, Earth and starry Heaven sent her to Crete with a plan — and while the Curetes clashed spear on shield to hide his crying, nymphs nursed the infant on Amalthea's milk in the cave of Dicte, and Cronus swallowed a stone wrapped in swaddling clothes, never knowing the king of gods was spared for the war to come.",
+    "sources": ["hesiod", "apollodorus", "hyginus"],
+    "citation": "Hes. Th. 468-491; Apollod. 1.1.6-1.1.7; Hyg. Fab. 139"
+  },
+  "chapters": [
+    {
+      "title": "The prophecy that devoured its children",
+      "text": "The nested cosmogony chapter on the age of Cronus tells how the king learned from Earth and starry Heaven that he was fated to be overthrown by his own son — and swallowed Hestia, Demeter, gold-sandalled Hera, strong Hades, and the deep-roaring Earth-Shaker as each came from the womb. Unceasing grief took hold of Rhea. This episode follows the mother who would save the last child: not the five already lost inside their father, but the youngest who must live to break the succession curse.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Hes. Th. 453-467; Apollod. 1.1.5"
+    },
+    {
+      "title": "Earth and Heaven's counsel",
+      "text": "When Rhea was about to bear Zeus, father of gods and men, she begged her parents Earth and starry Uranus to devise some plan so that retribution might overtake great, crafty Cronus for his father and for the children he had swallowed. They readily heard their dear daughter and told her all that was destined to happen touching Cronus and his stout-hearted son — then sent her to the rich land of Crete when she was ready to bear great Zeus.",
+      "sources": ["hesiod"],
+      "citation": "Hes. Th. 468-477"
+    },
+    {
+      "title": "The cave of Dicte",
+      "text": "Enraged at her husband's devouring, Rhea repaired to Crete when she was big with Zeus and brought him forth in a cave of Dicte. Apollodorus says she gave the babe to the Curetes and to the nymphs Adrastia and Ida, daughters of Melisseus, to nurse. Pausanias records that some Cretans place the birth on Mount Ida instead — two holy caves on the island, both claiming the nursery of the cloud-gatherer.",
+      "sources": ["apollodorus", "hesiod", "pausanias"],
+      "citation": "Apollod. 1.1.6; Hes. Th. 477-481; Paus. 8.8.2"
+    },
+    {
+      "title": "Amalthea's milk",
+      "text": "The nymphs fed the child on the milk of Amalthea — the she-goat whose kindness Hyginus remembers in the stars. Musaeus, cited by Hyginus, says Themis helped nurse him beside Amalthea, whom Ops his mother entrusted to the nymph. On honey and goat's milk the king who would shake Olympus grew in hiding, far from the throne where Cronus still believed no son survived to threaten him.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 1.1.7; Hyg. Fab. 139; Hyg. Astr. 2.13.5-6"
+    },
+    {
+      "title": "Spear on shield",
+      "text": "The Curetes in arms guarded the babe in the cave, clashing their spears on their shields so that Cronus might not hear the child's voice. Hyginus adds that Amalthea hung the infant in a cradle from a tree, so that he could be found neither in heaven nor on earth nor in the sea — a hiding that matched the mother's deceit. Earth herself took the newborn to nurse in the remote cave while the armed dancers drowned every cry.",
+      "sources": ["apollodorus", "hyginus", "hesiod"],
+      "citation": "Apollod. 1.1.7; Hyg. Fab. 139; Hes. Th. 481-485"
+    },
+    {
+      "title": "The stone in swaddling clothes",
+      "text": "To the mightily ruling son of Heaven, the earlier king of the gods, Rhea gave a great stone wrapped in swaddling clothes — and he took it in his hands and thrust it down into his belly, wretch that he was, not knowing that in place of the stone his son was left behind, unconquered and untroubled, and that he was soon to overcome him by force and might and drive him from his honours. Pausanias saw the scene carved at Plataea: Rhea carrying the stone to Cronus as though it were the babe she had borne.",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Hes. Th. 485-491; Apollod. 1.1.7; Paus. 9.2.7"
+    }
+  ],
+  "cast": [
+    { "id": "zeus", "name": "Zeus", "role": "Youngest child hidden in the Cretan cave" },
+    { "id": "rhea", "name": "Rhea", "role": "Mother who saved her son with a stone" },
+    { "id": "cronus", "name": "Cronus", "role": "Father who swallowed the stone unknowing" },
+    { "id": "gaia", "name": "Gaia", "role": "Earth who counselled the rescue" },
+    { "id": "uranus", "name": "Uranus", "role": "Starry Heaven who foretold the plan" },
+    {
+      "name": "Adrastia",
+      "role": "Nymph of Crete who nursed the infant with Ida"
+    },
+    {
+      "name": "Ida",
+      "role": "Nymph of Crete, daughter of Melisseus"
+    },
+    {
+      "name": "Amalthea",
+      "role": "She-goat whose milk fed the hidden king"
+    },
+    {
+      "name": "The Curetes",
+      "role": "Armed dancers who drowned the infant's cries"
+    }
+  ],
+  "places": [
+    { "id": "knossos", "name": "Knossos", "role": "Crete, island of the hidden nursery" },
+    { "name": "Mount Dicte", "role": "Cave where Rhea bore Zeus" },
+    { "name": "Mount Ida", "role": "Alternate Cretan birthplace in local tradition" }
+  ],
+  "attestations": [
+    { "source": "hesiod", "work": "Theogony", "citation": "468-491" },
+    { "source": "apollodorus", "work": "The Library", "citation": "1.1.6-1.1.7" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "139" },
+    { "source": "hyginus", "work": "Astronomica", "citation": "2.13.5-6" },
+    { "source": "pausanias", "work": "Description of Greece", "citation": "8.8.2, 9.2.7" }
+  ]
+}

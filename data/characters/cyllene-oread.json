@@ -1,0 +1,38 @@
+{
+  "id": "cyllene-oread",
+  "name": "Cyllene",
+  "greekName": "Kyllēnē (Κυλλήνη)",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "nymph of Mount Cyllene",
+    "consort of Pelasgus",
+    "mother of Lycaon"
+  ],
+  "summary": [
+    {
+      "text": "An Arcadian mountain nymph of Cyllene whom Apollodorus names as the consort of Pelasgus and, in one reckoning, the mother of Lycaon — not to be confused with Cyllen, the male eponym of the same peak, son of Elatus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.8.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "At the root of the Arcadian royal house Apollodorus sets a fork in maternity. Pelasgus — whom some made a son of Zeus and Niobe, and Hesiod a son of the soil — begat Lycaon either by Meliboea, daughter of Ocean, or, as others said, by a nymph named Cyllene. In this telling the wolf-king's blood runs from a mountain spirit rather than from the world-river's daughter.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.8.1",
+      "topic": "lycaon-mother"
+    },
+    {
+      "text": "The name binds her to the highest Arcadian summit. Mount Cyllene is where the Pleiades were born, where Maia bore Hermes in a cave, and where Pausanias later saw the ruined temple of Cyllenian Hermes — yet the male eponym Cyllen, son of Elatus, also claims the naming of the peak. The atlas keeps them apart: `cyllene-oread` for the feminine nymph of Pelasgus' line, `cyllen` for the Elatid hero who gave the mountain and the god his surname.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.8.1, 3.10.1–3.10.2; Description of Greece 8.17.1"
+    },
+    {
+      "text": "Later genealogists sometimes call Cyllene a Naiad rather than a mountain nymph when they list the mothers of Lycaon's fifty sons — Cleitor among them — but Apollodorus' own wording at the stemma's head is simply \"a nymph Cyllene,\" and the mountain's fame makes the Oread reading the natural one for her place in the highland.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.8.1"
+    }
+  ]
+}

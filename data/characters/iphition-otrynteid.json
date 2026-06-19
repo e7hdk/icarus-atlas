@@ -1,0 +1,28 @@
+{
+  "id": "iphition-otrynteid",
+  "name": "Iphition",
+  "greekName": "Iphitiōn (Ἰφιτίων)",
+  "type": "hero",
+  "domains": ["son of Otrynteus", "leader of a great host", "Achilles' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Valiant son of Otrynteus (`otrynteus-trojan`), sacker of cities, leader of a great host whom a Naiad nymph bore beneath snowy Timolus in the rich land of Hyde — the first Trojan Achilles slew when he leapt among the foe crying a terrible cry in *Iliad* 20.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    }
+  ],
+  "story": [
+    {
+      "text": "Achilles leapt among the Trojans, his heart clothed about in might, crying a terrible cry, and first he slew Iphition, the valiant son of Otrynteus, the leader of a great host, whom a Naiad nymph bare to Otrynteus, sacker of cities, beneath snowy Timolus in the rich land of Hyde. Him, as he rushed straight upon him, goodly Achilles smote with a cast of his spear full upon the head, and his head was wholly choven asunder.",
+      "sources": ["homer"],
+      "citation": "Iliad 20.375–415"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

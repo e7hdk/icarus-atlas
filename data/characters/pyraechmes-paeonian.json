@@ -1,0 +1,27 @@
+{
+  "id": "pyraechmes-paeonian",
+  "name": "Pyraechmes",
+  "greekName": "Pyraichmēs (Πυραίχμης)",
+  "type": "hero",
+  "domains": ["Paeonian command", "curved bows", "the Axius"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Leader of the Paeonians with curved bows from Amydon and the wide-flowing Axius — whom Patroclus smote on the right shoulder in the press beside the ship of Protesilaus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 16.285–305; Epitome 3.34"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll names Pyraechmes captain of the Paeonians from afar, out of Amydon by the fairest-flowing Axius. Apollodorus counts him among the allies who joined the Trojans after nine years of siege.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.34"
+    },
+    {
+      "text": "When Patroclus stormed the Trojans back from the ships, he cast his bright spear into the thickest throng beside the stern of great-souled Protesilaus' vessel and smote Pyraechmes on the right shoulder; backward in the dust he fell with a groan, and his Paeonians were driven in rout.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.285–305"
+    }
+  ]
+}

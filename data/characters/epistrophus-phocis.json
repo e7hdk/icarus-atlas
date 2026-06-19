@@ -1,0 +1,22 @@
+{
+  "id": "epistrophus-phocis",
+  "name": "Epistrophus",
+  "greekName": "Epistrophos (Ἐπίστροφος)",
+  "type": "hero",
+  "domains": ["Phocian command", "the forty ships", "son of Iphitus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of great-souled Iphitus and co-captain of the Phocians beside Schedius — one of the forty ships from Cyparissus, rocky Pytho, and the towns along the Cephisus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.515–545; Epitome 3.35"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer sets Epistrophus with his brother Schedius at the head of the Phocians in the Catalogue of Ships: sons of Iphitus son of Naubolus, they led the men who dwelt in Cyparissus and rocky Pytho, sacred Crisa and Daulis and Panopeus, and about Anemoreia and Hyampolis beside the goodly river Cephisus. Forty black ships followed them, ranged hard by the Boeotians on the left when the Phocian ranks were marshalled for battle.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    }
+  ]
+}

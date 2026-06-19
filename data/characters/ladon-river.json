@@ -1,0 +1,43 @@
+{
+  "id": "ladon-river",
+  "name": "Ladon",
+  "greekName": "Ladōn (Λάδων)",
+  "romanName": "Ladon",
+  "type": "god",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Arcadian river",
+    "father of Metope",
+    "Cleitor springs",
+    "homonym of the dragon"
+  ],
+  "summary": [
+    {
+      "text": "River-god of Arcadia, born to Oceanus and Tethys — father of Metope, who married Asopus and bore the Asopid nymphs including Aegina; not to be confused with Ladon the serpent who guarded the golden apples (`ladon`).",
+      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "citation": "Theogony 337–345; Bibliotheca 3.12.6; Description of Greece 8.25.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Ladon among the eddying rivers Tethys bore to Ocean — set beside Peneus, Sangarius, and Parthenius in the catalogue of the world's streams. This is the Arcadian river, distinct from the name Apollonius later gives the apple-guarding serpent.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 337–345"
+    },
+    {
+      "text": "Apollodorus makes Ladon the father of Metope, who married the river Asopus and bore two sons and twenty daughters; of the daughters Aegina was carried off by Zeus, making Ladon grandfather of Aeacus and ancestor of the great Aeacid house.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.6"
+    },
+    {
+      "text": "Pausanias knew the Ladon of the living landscape. The river rises in springs within the territory of Cleitor and flows through Leucasium and Mesoboa to the sanctuary of Eleusinian Demeter; Thelpusa, forty stades away, was named after Thelpusa, a nymph who was a daughter of Ladon.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.25.2"
+    },
+    {
+      "text": "A second Arcadian tale on the same stream: Pausanias reports that poets sang Apollo's love for a maiden Daphne, daughter of Ladon — a huntress on this river, not the Thessalian laurel-nymph of Peneus whom Ovid made Phoebus' first love.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.20.1–4, 10.7.8"
+    }
+  ]
+}

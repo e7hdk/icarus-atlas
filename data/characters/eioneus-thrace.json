@@ -1,0 +1,33 @@
+{
+  "id": "eioneus-thrace",
+  "name": "Eïoneus",
+  "greekName": "Eïoneus (Εἰονεύς)",
+  "type": "mortal",
+  "domains": ["Thrace", "father of Rhesus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "In Homer the father of Rhesus, king of the Thracians who came to Troy with the fairest horses the spy Dolon had ever seen — whiter than snow, and swift as the winds.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.435–450"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Dolon, caught by Odysseus and Diomedes, betrayed the disposition of the allies, he named the Thracians under their king Rhesus son of Eïoneus — new comers, camped outermost of all, with horses fairer and swifter than any others in the host. So Homer gives Rhesus a mortal father and says nothing of a divine mother.",
+      "sources": ["homer"],
+      "citation": "Iliad 10.435–502"
+    },
+    {
+      "text": "Apollodorus instead makes Rhesus the son of the river-god Strymon and the Muse Euterpe — or, as the same hand admits, of Calliope. The Eïoneus of the *Iliad* belongs to the epic's mortal frame; the Muse-and-river genealogy belongs to the mythographer's catalogue.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.3.4; Iliad 10.435",
+      "topic": "rhesus-mother"
+    },
+    {
+      "text": "He is not the Eïoneus whom Hector slew in Book 7 beneath the well-wrought helm of bronze, nor Deioneus father of Cephalus in the older genealogies — only the Thracian father named in the night-raid episode.",
+      "sources": ["homer"],
+      "citation": "Iliad 7.1–40; Iliad 10.435"
+    }
+  ]
+}
