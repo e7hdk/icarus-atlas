@@ -1,0 +1,46 @@
+{
+  "id": "perimedes-eurystheus",
+  "name": "Perimedes",
+  "greekName": "Perimedēs (Περιμήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Eurystheus",
+    "fallen in the Heraclid war"
+  ],
+  "summary": [
+    {
+      "text": "Last-named among the sons of Eurystheus king of Mycenae in Apollodorus' catalogue of those slain when the Athenians fought Eurystheus rather than surrender the Heraclids.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    },
+    {
+      "text": "Homonym guard: not Perimedes comrade of Odysseus at the pit of Ocean and the Sirens' isle (`perimedes-odyssey`); not Perimedes suitor from Same (`perimedes-same`); not Perimede wife of Amphitryon (`perimede-amphitryon`). Apollodorus names this Perimedes only among Eurystheus' sons.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.8.1; Odyssey 11.23–47"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Perimedes last among the sons of Eurystheus whom the Athenians killed — after Alexander, Iphimedon, Eurybius, and Mentor. Eurystheus himself fled in a chariot but was pursued and slain by Hyllus son of Heracles at the Scironian cliffs.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5, 2.8.1"
+    }
+  ]
+}

@@ -3,26 +3,36 @@
   "name": "Echeclus",
   "greekName": "Echeklos (Ἐχέκλος)",
   "type": "hero",
-  "domains": ["son of Agenor", "Achilles' target"],
+  "domains": [
+    "son of Agenor",
+    "Achilles' target"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Son of Antenor's son Agenor whom Achilles smote full upon the head with his hilted sword when the son of Peleus stormed through the Trojan ranks — distinct from Echeclus whom Patroclus slew (`echeclus-trojan`).",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 20.455–485"
     }
   ],
   "story": [
     {
       "text": "When Achilles drew nigh unto Mulius and smote him upon the ear, and clean through the other ear passed the spear-point of bronze, then smote he Agenor's son Echeclus full upon the head with his hilted sword, and all the blade grew warm with his blood, and down over his eyes came dark death and mighty fate.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 20.455–485"
     }
   ],
   "residences": [
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.455–485"
     }
   ]
 }

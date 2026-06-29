@@ -79,6 +79,36 @@
       "role": "Spartos who survived the sowing"
     },
     {
+      "id": "udaeus",
+      "name": "Udaeus",
+      "role": "Spartos who survived the sowing"
+    },
+    {
+      "id": "chthonius-spartos",
+      "name": "Chthonius",
+      "role": "Spartos, ancestor of the Nycteid line"
+    },
+    {
+      "id": "hyperenor-spartos",
+      "name": "Hyperenor",
+      "role": "Spartos who survived the sowing"
+    },
+    {
+      "id": "pelorus-spartos",
+      "name": "Pelorus",
+      "role": "Spartos who survived the sowing"
+    },
+    {
+      "id": "agave",
+      "name": "Agave",
+      "role": "Daughter of Cadmus, wife of Echion"
+    },
+    {
+      "id": "telephassa-phoenicia",
+      "name": "Telephassa",
+      "role": "Mother who died on the search for Europa"
+    },
+    {
       "id": "athena",
       "name": "Athena",
       "role": "Goddess who counselled the teeth"
@@ -90,6 +120,11 @@
     }
   ],
   "places": [
+    {
+      "id": "phoenicia",
+      "name": "Phoenicia",
+      "role": "Homeland Agenor sent Cadmus forth from"
+    },
     {
       "id": "thebes",
       "name": "Thebes",

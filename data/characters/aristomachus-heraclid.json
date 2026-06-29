@@ -26,6 +26,14 @@
         "pausanias"
       ],
       "citation": "Apollod. 2.8.2; Paus. 2.18.7, 4.3.3"
+    },
+    {
+      "text": "Apollodorus sets his death in the field during Tisamenus' reign over the Peloponnesians: in battle the old Achaean coalition was victorious and Aristomachus was slain — a failed invasion that touched Lacedaemon before his sons at last unriddled the oracle.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.8.2; Description of Greece 2.18.7"
     }
   ],
   "story": [
@@ -65,6 +73,13 @@
         "pausanias"
       ],
       "citation": "Apollodorus, Bibliotheca 2.8.2; Pausanias, Description of Greece 3.1.5–3.1.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.8.2; Description of Greece 2.18.7"
     }
   ]
 }

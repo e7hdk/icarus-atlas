@@ -17,6 +17,12 @@ export {
   type BakedLinkedProse,
   type BakedStoryProse,
 } from './load-baked';
-export { linkingSignature } from './linkingSignature';
+export {
+  characterLinkingSignature,
+  linkingFileSignature,
+  linkingNamesSignature,
+  linkingSignature,
+  storyLinkingSignature,
+} from './linkingSignature';
 export { LINKED_PROSE_PARSER_VERSION, parseLinkedProse, type ProseSegment } from './parse-prose';
 export { resolveCharacterId } from './resolve-name';

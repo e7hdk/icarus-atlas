@@ -1,0 +1,65 @@
+{
+  "id": "lycurgus-nemea",
+  "name": "Lycurgus",
+  "greekName": "Lykourgos (Λυκοῦργος)",
+  "romanName": "Lycurgus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Pheres",
+    "king at Nemea",
+    "father of Opheltes"
+  ],
+  "summary": [
+    {
+      "text": "Younger son of Pheres, founder of Pherae, Lycurgus left his brother Admetus the Thessalian city and settled at Nemea in Argolis, where he married Eurydice — or, as some say, Amphithea — and begat Opheltes, the child afterwards called Archemorus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.14; Description of Greece 2.15.3"
+    },
+    {
+      "text": "Not to be confused with Lycurgus son of Pronax at Argos, Lycurgus of Tegea in Arcadia, or the Thracian king who persecuted Dionysus.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.8.2, 1.9.13–14, 3.5.1; Iliad 6.130–140; Description of Greece 3.18.12, 8.4.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets him in the Iolcian Aeolid line beside Admetus. Pheres son of Cretheus founded Pherae in Thessaly and begat Admetus and Lycurgus; the elder kept the city their father raised, while Lycurgus took up his abode at Nemea and, marrying Eurydice — or, as some say, Amphithea — begat Opheltes, afterwards called Archemorus.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.14"
+    },
+    {
+      "text": "When the Seven marched against Thebes, they came to Nemea, of which Lycurgus was king, and sought water. Hypsipyle, sold into slavery after the Lemnian women learned Thoas had survived, was nursing the infant Opheltes, child of Eurydice and Lycurgus. She showed the captains the way to a spring, leaving the boy behind — and a serpent killed him where he lay. The Seven buried the child; Amphiaraus read the omen as a sign of what was to come, and they named him Archemorus and founded the Nemean games in his honour.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.4"
+    },
+    {
+      "text": "Pausanias saw the cult still alive at Nemea. There is the grave of Opheltes, fenced with stones and altars within the enclosure, and beside it a mound of earth that is the tomb of Lycurgus, father of Opheltes — so the Aeolid branch that left Pherae for Argolis left its memorial in the very ground where the games began.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.15.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "nemea",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.14, 3.6.4; Description of Greece 2.15.3"
+    }
+  ]
+}

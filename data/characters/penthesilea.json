@@ -32,11 +32,13 @@
   "residences": [
     {
       "city": "ephesus",
-      "sources": ["hyginus", "apollodorus"]
+      "sources": ["hyginus"],
+      "citation": "Fabulae 30"
     },
     {
       "city": "troy",
-      "sources": ["hyginus", "apollodorus"]
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 112, 163; Epitome 5.1"
     }
   ]
 }

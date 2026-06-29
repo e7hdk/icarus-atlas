@@ -1,0 +1,57 @@
+{
+  "id": "anaxibia-atreid",
+  "name": "Anaxibia",
+  "greekName": "Anaxibia (Ἀναξιβία)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "sister of Agamemnon",
+    "mother of Pylades",
+    "Atreid princess"
+  ],
+  "summary": [
+    {
+      "text": "Sister of Agamemnon and Menelaus, wife of Strophius king of Phocis and mother of Pylades — the Atreid princess whose marriage joined the Pelopid house at Mycenae to the Aeacid line in Phocis.",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Description of Greece 2.29.4; Fabulae 117"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias, following the epic poet Asius, makes Anaxibia the sister of Agamemnon and wife of Strophius son of Crisus; from that marriage came Pylades, the companion of Orestes. So the grandson of Crisus stood one generation from the Atreid throne and one step from the vengeance that would restore it.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.29.4"
+    },
+    {
+      "text": "Hyginus names the same royal sister Astyoche when Electra smuggled the infant Orestes away to Strophius in Phocis — the foster-house where Pylades was reared beside the exiled prince. The name differs; the kinship to Agamemnon and the marriage that bound Phocis to Mycenae do not.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 117",
+      "topic": "anaxibia-vs-astyoche-strophius-wife"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Description of Greece 2.29.4; Fabulae 117"
+    },
+    {
+      "city": "panopeus",
+      "sources": [
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Description of Greece 2.29.4; Fabulae 117"
+    }
+  ]
+}

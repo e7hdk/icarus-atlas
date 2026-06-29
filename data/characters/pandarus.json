@@ -27,11 +27,13 @@
   "residences": [
     {
       "city": "zeleia-troad",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.824–827"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.824–827, 4.85–125, 5.290–296"
     }
   ]
 }

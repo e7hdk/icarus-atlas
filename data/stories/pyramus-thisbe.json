@@ -36,7 +36,7 @@
     { "id": "semiramis-babylon", "name": "Semiramis", "role": "Queen whose brick walls bound the lovers' houses" }
   ],
   "places": [
-    { "name": "Babylon", "role": "City of the adjoining houses and the stained mulberry" },
+    { "id": "babylon", "name": "Babylon", "role": "City of the adjoining houses and the stained mulberry" },
     { "name": "Ninus' tomb", "role": "The trysting-place outside the walls" }
   ],
   "attestations": [

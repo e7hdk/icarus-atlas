@@ -1,8 +1,13 @@
 import { notFound } from 'next/navigation';
-import { loadAtlasData } from '@/features/characters/load';
-import { loadCities } from '@/features/geo/load';
-import { GalaxyView } from '@/components/galaxy/GalaxyView';
 import { CitySkyChrome } from '@/components/city/CitySkyChrome';
+import { CitySkyEmpty } from '@/components/city/CitySkyEmpty';
+import { GalaxyView } from '@/components/galaxy/GalaxyView';
+import { loadAtlasData } from '@/features/characters/load';
+import {
+  filterCityResidents,
+  filterInternalRelations,
+} from '@/features/geo/residents';
+import { loadCities } from '@/features/geo/load';
 
 export async function generateStaticParams() {
   const cities = await loadCities();
@@ -24,14 +29,14 @@ export default async function CitySkyPage(props: { params: Promise<{ id: string 
   const city = cities.find((c) => c.id === id);
   if (!city) notFound();
 
-  // The same galaxy, narrowed to this city's residents and the bonds among them.
-  const residents = atlas.characters.filter((character) =>
-    character.residences?.some((residence) => residence.city === city.id),
-  );
-  const residentIds = new Set(residents.map((character) => character.id));
-  const relations = atlas.relations.filter(
-    (relation) => residentIds.has(relation.from) && residentIds.has(relation.to),
-  );
+  const residents = filterCityResidents(atlas.characters, city.id);
+  const relations = filterInternalRelations(residents, atlas.relations);
+
+  if (residents.length === 0) {
+    return (
+      <CitySkyEmpty cityId={city.id} cityName={city.name} greekName={city.greekName} />
+    );
+  }
 
   return (
     <>
@@ -43,7 +48,12 @@ export default async function CitySkyPage(props: { params: Promise<{ id: string 
         activeMainTab="areas"
         back={{ href: `/city/${city.id}`, label: `Back to the ${city.name} codex` }}
       />
-      <CitySkyChrome cityId={city.id} cityName={city.name} />
+      <CitySkyChrome
+        cityId={city.id}
+        cityName={city.name}
+        greekName={city.greekName}
+        residentCount={residents.length}
+      />
     </>
   );
 }

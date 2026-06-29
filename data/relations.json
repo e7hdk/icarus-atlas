@@ -2524,6 +2524,72 @@
     "note": "The two Atreidae and leaders of the expedition to Troy"
   },
   {
+    "id": "agamemnon-sibling-anaxibia-atreid",
+    "type": "sibling",
+    "from": "agamemnon",
+    "to": "anaxibia-atreid",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Sister of Agamemnon; Hyginus names her Astyoche (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
+    "id": "menelaus-sibling-anaxibia-atreid",
+    "type": "sibling",
+    "from": "menelaus",
+    "to": "anaxibia-atreid",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Sister of Menelaus; wife of Strophius and mother of Pylades (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
+    "id": "anaxibia-atreid-parent-atreus",
+    "type": "parent",
+    "from": "anaxibia-atreid",
+    "to": "atreus",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Daughter of Atreus in the Atreid house at Mycenae (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
+    "id": "anaxibia-atreid-parent-aerope",
+    "type": "parent",
+    "from": "anaxibia-atreid",
+    "to": "aerope",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Daughter of Aerope in the Atreid house at Mycenae (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
+    "id": "anaxibia-atreid-consort-strophius-phocis",
+    "type": "consort",
+    "from": "anaxibia-atreid",
+    "to": "strophius-phocis",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Wife of Strophius king of Phocis (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
+    "id": "pylades-parent-anaxibia-atreid",
+    "type": "parent",
+    "from": "pylades",
+    "to": "anaxibia-atreid",
+    "sources": [
+      "pausanias",
+      "hyginus"
+    ],
+    "note": "Mother of Pylades; Hyginus names her Astyoche (Description of Greece 2.29.4; Fabulae 117)"
+  },
+  {
     "id": "agamemnon-consort-clytemnestra",
     "type": "consort",
     "from": "agamemnon",
@@ -3497,6 +3563,7 @@
       "apollodorus",
       "hyginus"
     ],
+    "citation": "Bibliotheca 3.5.7; Fabulae 66",
     "note": "Foster father at Corinth; neatherds brought the exposed infant from Cithaeron (Bibliotheca 3.5.7; Fabulae 66)"
   },
   {
@@ -3508,7 +3575,20 @@
       "apollodorus",
       "hyginus"
     ],
+    "citation": "Bibliotheca 3.5.7; Fabulae 66",
     "note": "Foster mother at Corinth; adopted the infant and named him Oedipus for his swollen ankles (Bibliotheca 3.5.7; Fabulae 66)"
+  },
+  {
+    "id": "polybus-corinth-consort-periboea-corinth",
+    "type": "consort",
+    "from": "polybus-corinth",
+    "to": "periboea-corinth",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 3.5.7; Fabulae 66",
+    "note": "King and queen of Corinth who together raised the exposed Oedipus as their son"
   },
   {
     "id": "oedipus-consort-jocasta",
@@ -4471,6 +4551,567 @@
       "hyginus",
       "pausanias"
     ]
+  },
+  {
+    "id": "amymone-danaid-parent-danaus",
+    "type": "parent",
+    "from": "amymone-danaid",
+    "to": "danaus",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Daughter of Danaus (Bibliotheca 2.1.4–2.1.5; Fabulae 14; Description of Greece 2.38.2)"
+  },
+  {
+    "id": "automate-danaid-parent-danaus",
+    "type": "parent",
+    "from": "automate-danaid",
+    "to": "danaus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 2.1.5; Fabulae 170"
+  },
+  {
+    "id": "agave-danaid-parent-danaus",
+    "type": "parent",
+    "from": "agave-danaid",
+    "to": "danaus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 2.1.5; Fabulae 170"
+  },
+  {
+    "id": "scaea-danaid-parent-danaus",
+    "type": "parent",
+    "from": "scaea-danaid",
+    "to": "danaus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 2.1.5; Fabulae 170"
+  },
+    {
+      "id": "pirene-danaid-parent-danaus",
+      "type": "parent",
+      "from": "pirene-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "phartis-danaid-parent-danaus",
+      "type": "parent",
+      "from": "phartis-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "mnestra-danaid-parent-danaus",
+      "type": "parent",
+      "from": "mnestra-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "anaxibia-danaid-parent-danaus",
+      "type": "parent",
+      "from": "anaxibia-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "evippe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "evippe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "dorium-danaid-parent-danaus",
+      "type": "parent",
+      "from": "dorium-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "nelo-danaid-parent-danaus",
+      "type": "parent",
+      "from": "nelo-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "clite-danaid-parent-danaus",
+      "type": "parent",
+      "from": "clite-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.5"
+    },
+    {
+      "id": "sthenele-danaid-parent-danaus",
+      "type": "parent",
+      "from": "sthenele-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.5"
+    },
+    {
+      "id": "chrysippe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "chrysippe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.5"
+    },
+    {
+      "id": "autonoe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "autonoe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "theano-danaid-parent-danaus",
+      "type": "parent",
+      "from": "theano-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "electra-danaid-parent-danaus",
+      "type": "parent",
+      "from": "electra-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "cleopatra-danaid-parent-danaus",
+      "type": "parent",
+      "from": "cleopatra-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "eurydice-danaid-parent-danaus",
+      "type": "parent",
+      "from": "eurydice-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "glaucippe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "glaucippe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "anthelia-danaid-parent-danaus",
+      "type": "parent",
+      "from": "anthelia-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "cleodore-danaid-parent-danaus",
+      "type": "parent",
+      "from": "cleodore-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "evippe-polyxo-danaid-parent-danaus",
+      "type": "parent",
+      "from": "evippe-polyxo-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "erato-danaid-parent-danaus",
+      "type": "parent",
+      "from": "erato-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "stygne-danaid-parent-danaus",
+      "type": "parent",
+      "from": "stygne-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "bryce-danaid-parent-danaus",
+      "type": "parent",
+      "from": "bryce-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "actaea-danaid-parent-danaus",
+      "type": "parent",
+      "from": "actaea-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "podarce-danaid-parent-danaus",
+      "type": "parent",
+      "from": "podarce-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "dioxippe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "dioxippe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "adite-danaid-parent-danaus",
+      "type": "parent",
+      "from": "adite-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "ocypete-danaid-parent-danaus",
+      "type": "parent",
+      "from": "ocypete-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "pylarge-danaid-parent-danaus",
+      "type": "parent",
+      "from": "pylarge-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "hippodice-danaid-parent-danaus",
+      "type": "parent",
+      "from": "hippodice-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "adiante-danaid-parent-danaus",
+      "type": "parent",
+      "from": "adiante-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "callidice-danaid-parent-danaus",
+      "type": "parent",
+      "from": "callidice-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "oeme-danaid-parent-danaus",
+      "type": "parent",
+      "from": "oeme-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "celaeno-danaid-parent-danaus",
+      "type": "parent",
+      "from": "celaeno-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "hyperippe-danaid-parent-danaus",
+      "type": "parent",
+      "from": "hyperippe-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "gorgophone-danaid-parent-danaus",
+      "type": "parent",
+      "from": "gorgophone-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 168, 170"
+    },
+    {
+      "id": "hippodamia-istrus-danaid-parent-danaus",
+      "type": "parent",
+      "from": "hippodamia-istrus-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "rhodia-danaid-parent-danaus",
+      "type": "parent",
+      "from": "rhodia-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "cleopatra-agenor-danaid-parent-danaus",
+      "type": "parent",
+      "from": "cleopatra-agenor-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "asteria-danaid-parent-danaus",
+      "type": "parent",
+      "from": "asteria-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "hippodamia-diocorystes-danaid-parent-danaus",
+      "type": "parent",
+      "from": "hippodamia-diocorystes-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "glauce-danaid-parent-danaus",
+      "type": "parent",
+      "from": "glauce-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "hippomedusa-danaid-parent-danaus",
+      "type": "parent",
+      "from": "hippomedusa-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "gorge-danaid-parent-danaus",
+      "type": "parent",
+      "from": "gorge-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "iphimedusa-danaid-parent-danaus",
+      "type": "parent",
+      "from": "iphimedusa-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+    {
+      "id": "rhode-danaid-parent-danaus",
+      "type": "parent",
+      "from": "rhode-danaid",
+      "to": "danaus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    },
+  {
+    "id": "amymone-danaid-consort-poseidon",
+    "type": "consort",
+    "from": "amymone-danaid",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Lay with Poseidon at the springs he revealed (Bibliotheca 2.1.4; Fabulae 14; Description of Greece 2.38.2)"
+  },
+  {
+    "id": "poseidon-consort-amymone-danaid",
+    "type": "consort",
+    "from": "poseidon",
+    "to": "amymone-danaid",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Father of Nauplius by Amymone (Bibliotheca 2.1.4; Fabulae 14; Description of Greece 2.38.2)"
   },
   {
     "id": "lynceus-parent-aegyptus",
@@ -5714,6 +6355,18 @@
     "note": "(Bibliotheca 1.7.3)"
   },
   {
+    "id": "sisyphus-ally-melicertes",
+    "type": "ally",
+    "from": "sisyphus",
+    "to": "melicertes",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "citation": "Bibliotheca 3.4.3; Description of Greece 2.1.3",
+    "note": "Found Melicertes on the Isthmus, buried him, and established the Isthmian games in his honour (Bibliotheca 3.4.3; Description of Greece 2.1.3)"
+  },
+  {
     "id": "sisyphus-sibling-salmoneus",
     "type": "sibling",
     "from": "sisyphus",
@@ -5928,6 +6581,36 @@
     "note": "(Bibliotheca 1.9.14)"
   },
   {
+    "id": "lycurgus-nemea-parent-pheres-aeolid",
+    "type": "parent",
+    "from": "lycurgus-nemea",
+    "to": "pheres-aeolid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Pheres begat Admetus and Lycurgus (Bibliotheca 1.9.14)"
+  },
+  {
+    "id": "lycurgus-nemea-sibling-admetus",
+    "type": "sibling",
+    "from": "lycurgus-nemea",
+    "to": "admetus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sons of Pheres, founder of Pherae (Bibliotheca 1.9.14)"
+  },
+  {
+    "id": "opheltes-nemea-parent-lycurgus-nemea",
+    "type": "parent",
+    "from": "opheltes-nemea",
+    "to": "lycurgus-nemea",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Lycurgus begat Opheltes, afterwards called Archemorus (Bibliotheca 1.9.14, 3.6.4)"
+  },
+  {
     "id": "alcestis-parent-pelias",
     "type": "parent",
     "from": "alcestis",
@@ -5948,6 +6631,352 @@
       "apollodorus"
     ],
     "note": "(Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pelias-consort-anaxibia-pelias",
+    "type": "consort",
+    "from": "pelias",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Married Anaxibia daughter of Bias; some give Phylomache daughter of Amphion (Bibliotheca 1.9.10; Fabulae 14.4, 51)"
+  },
+  {
+    "id": "pelias-consort-phylomache-pelias",
+    "type": "consort",
+    "from": "pelias",
+    "to": "phylomache-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Some give Phylomache daughter of Amphion as wife instead of Anaxibia (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "phylomache-pelias-consort-pelias",
+    "type": "consort",
+    "from": "phylomache-pelias",
+    "to": "pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Alternate wife of Pelias at Iolcus (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "phylomache-pelias-parent-amphion-orchomenus",
+    "type": "parent",
+    "from": "phylomache-pelias",
+    "to": "amphion-orchomenus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Daughter of Amphion (Bibliotheca 1.9.10; cf. Chloris at 1.9.9)"
+  },
+  {
+    "id": "acastus-parent-phylomache-pelias",
+    "type": "parent",
+    "from": "acastus",
+    "to": "phylomache-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Son of Pelias by Phylomache in the alternate reckoning (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "anaxibia-pelias-consort-pelias",
+    "type": "consort",
+    "from": "anaxibia-pelias",
+    "to": "pelias",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "topic": "pelias-wife-identity",
+    "note": "Wife of Pelias at Iolcus (Bibliotheca 1.9.10; Fabulae 14.4, 51)"
+  },
+  {
+    "id": "anaxibia-pelias-parent-bias-aeolid",
+    "type": "parent",
+    "from": "anaxibia-pelias",
+    "to": "bias-aeolid",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Daughter of Bias (Bibliotheca 1.9.10; Fabulae 14.4, 51)"
+  },
+  {
+    "id": "acastus-parent-anaxibia-pelias",
+    "type": "parent",
+    "from": "acastus",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Son of Pelias by Anaxibia (Bibliotheca 1.9.10; Fabulae 14.4)"
+  },
+  {
+    "id": "alcestis-parent-anaxibia-pelias",
+    "type": "parent",
+    "from": "alcestis",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Daughter of Pelias by Anaxibia (Bibliotheca 1.9.10; Fabulae 51)"
+  },
+  {
+    "id": "pisidice-pelias-parent-pelias",
+    "type": "parent",
+    "from": "pisidice-pelias",
+    "to": "pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pisidice-pelias-parent-anaxibia-pelias",
+    "type": "parent",
+    "from": "pisidice-pelias",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias by Anaxibia (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pelopia-pelias-parent-pelias",
+    "type": "parent",
+    "from": "pelopia-pelias",
+    "to": "pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pelopia-pelias-parent-anaxibia-pelias",
+    "type": "parent",
+    "from": "pelopia-pelias",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias by Anaxibia (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "hippothoe-pelias-parent-pelias",
+    "type": "parent",
+    "from": "hippothoe-pelias",
+    "to": "pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "hippothoe-pelias-parent-anaxibia-pelias",
+    "type": "parent",
+    "from": "hippothoe-pelias",
+    "to": "anaxibia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelias by Anaxibia (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "acastus-sibling-pisidice-pelias",
+    "type": "sibling",
+    "from": "acastus",
+    "to": "pisidice-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Acastus (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "acastus-sibling-pelopia-pelias",
+    "type": "sibling",
+    "from": "acastus",
+    "to": "pelopia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Acastus (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "acastus-sibling-hippothoe-pelias",
+    "type": "sibling",
+    "from": "acastus",
+    "to": "hippothoe-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Acastus (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "alcestis-sibling-pisidice-pelias",
+    "type": "sibling",
+    "from": "alcestis",
+    "to": "pisidice-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Alcestis (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "alcestis-sibling-pelopia-pelias",
+    "type": "sibling",
+    "from": "alcestis",
+    "to": "pelopia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Alcestis (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "alcestis-sibling-hippothoe-pelias",
+    "type": "sibling",
+    "from": "alcestis",
+    "to": "hippothoe-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sister of Alcestis (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pisidice-pelias-sibling-pelopia-pelias",
+    "type": "sibling",
+    "from": "pisidice-pelias",
+    "to": "pelopia-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sisters among the Peliades (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pisidice-pelias-sibling-hippothoe-pelias",
+    "type": "sibling",
+    "from": "pisidice-pelias",
+    "to": "hippothoe-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sisters among the Peliades (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "pelopia-pelias-sibling-hippothoe-pelias",
+    "type": "sibling",
+    "from": "pelopia-pelias",
+    "to": "hippothoe-pelias",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Sisters among the Peliades (Bibliotheca 1.9.10)"
+  },
+  {
+    "id": "acastus-consort-astydamia-acastus",
+    "type": "consort",
+    "from": "acastus",
+    "to": "astydamia-acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Wife of Acastus at Iolcus (Bibliotheca 3.13.3)"
+  },
+  {
+    "id": "astydamia-acastus-consort-acastus",
+    "type": "consort",
+    "from": "astydamia-acastus",
+    "to": "acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Wife of Acastus at Iolcus (Bibliotheca 3.13.3)"
+  },
+  {
+    "id": "sterope-acastus-parent-acastus",
+    "type": "parent",
+    "from": "sterope-acastus",
+    "to": "acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Acastus (Bibliotheca 3.13.3)"
+  },
+  {
+    "id": "laodamia-protesilaus-sibling-sterope-acastus",
+    "type": "sibling",
+    "from": "laodamia-protesilaus",
+    "to": "sterope-acastus",
+    "sources": [
+      "hyginus",
+      "apollodorus"
+    ],
+    "note": "Both daughters of Acastus at Iolcus (Fabulae 103–104; Bibliotheca 3.13.3)"
+  },
+  {
+    "id": "sthenele-acastus-parent-acastus",
+    "type": "parent",
+    "from": "sthenele-acastus",
+    "to": "acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Acastus; mother of Patroclus in one reckoning (Bibliotheca 3.13.8)"
+  },
+  {
+    "id": "sthenele-acastus-sibling-sterope-acastus",
+    "type": "sibling",
+    "from": "sthenele-acastus",
+    "to": "sterope-acastus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Both daughters of Acastus at Iolcus (Bibliotheca 3.13.3, 3.13.8; Fabulae 103–104)"
+  },
+  {
+    "id": "sthenele-acastus-sibling-laodamia-protesilaus",
+    "type": "sibling",
+    "from": "sthenele-acastus",
+    "to": "laodamia-protesilaus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Both daughters of Acastus at Iolcus (Bibliotheca 3.13.8; Fabulae 103–104)"
+  },
+  {
+    "id": "laodamia-protesilaus-sibling-sthenele-acastus",
+    "type": "sibling",
+    "from": "laodamia-protesilaus",
+    "to": "sthenele-acastus",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "note": "Both daughters of Acastus at Iolcus (Bibliotheca 3.13.8; Fabulae 103–104)"
+  },
+  {
+    "id": "patroclus-parent-sthenele-acastus",
+    "type": "parent",
+    "from": "patroclus",
+    "to": "sthenele-acastus",
+    "sources": [
+      "apollodorus"
+    ],
+    "topic": "patroclus-mother",
+    "note": "Mother in Apollodorus' primary stemma; Periopis or Polymele in rival accounts (Bibliotheca 3.13.8)"
   },
   {
     "id": "bellerophon-parent-glaucus-corinth",
@@ -8053,6 +9082,31 @@
       "ovid"
     ],
     "note": "Slew the Minotaur in the Cretan labyrinth with Ariadne's thread (Epitome 1.7–1.9; Metamorphoses 8.169–173)"
+  },
+  {
+    "id": "theseus-slayer-sinis-isthmus",
+    "type": "slayer",
+    "from": "theseus",
+    "to": "sinis-isthmus",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "citation": "Bibliotheca 3.16.2; Description of Greece 2.1.4",
+    "note": "Killed the Pine-bender on the Isthmus of Corinth on the road from Troezen to Athens"
+  },
+  {
+    "id": "theseus-slayer-sciron-isthmus",
+    "type": "slayer",
+    "from": "theseus",
+    "to": "sciron-isthmus",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "citation": "Epitome 1.2; Fabulae 38; Description of Greece 1.44.8",
+    "note": "Cast the Corinthian brigand into the sea from the Scironian cliffs"
   },
   {
     "id": "nisus-adversary-minos",
@@ -11382,7 +12436,8 @@
       "apollodorus"
     ],
     "topic": "amphilochus-parentage",
-    "note": "Some say Amphilochus son of Alcmaeon came late to Troy (Epitome 6.19; Bibliotheca 3.7.7)"
+    "citation": "Bibliotheca 3.7.7; Epitome 6.19",
+    "note": "Euripidean variant: Alcmaeon begot Amphilochus on Manto and fostered him at Corinth; some say this Amphilochus came late to Troy (Bibliotheca 3.7.7; Epitome 6.19)"
   },
   {
     "id": "amphilochus-sibling-alcmaeon",
@@ -11405,6 +12460,90 @@
     ],
     "topic": "alcmaeon-matricide-agency",
     "note": "Some say Amphilochus with his brother killed Eriphyle (Bibliotheca 3.7.5)"
+  },
+  {
+    "id": "amphilochus-parent-manto",
+    "type": "parent",
+    "from": "amphilochus",
+    "to": "manto",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Euripidean variant: Alcmaeon begot Amphilochus on Manto daughter of Tiresias (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "amphilochus-sibling-tisiphone-alcmaeon",
+    "type": "sibling",
+    "from": "amphilochus",
+    "to": "tisiphone-alcmaeon",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Sister in the Euripidean variant begotten on Manto (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "tisiphone-alcmaeon-parent-alcmaeon",
+    "type": "parent",
+    "from": "tisiphone-alcmaeon",
+    "to": "alcmaeon",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Begotten on Manto in Alcmaeon's madness (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "tisiphone-alcmaeon-parent-manto",
+    "type": "parent",
+    "from": "tisiphone-alcmaeon",
+    "to": "manto",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Daughter of Manto and Alcmaeon in the Euripidean variant (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "alcmaeon-consort-manto",
+    "type": "consort",
+    "from": "alcmaeon",
+    "to": "manto",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Begot Amphilochus and Tisiphone on Manto in madness (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "creon-corinth-ally-amphilochus",
+    "type": "ally",
+    "from": "creon-corinth",
+    "to": "amphilochus",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Reared the infant Amphilochus in the Euripidean variant (Bibliotheca 3.7.7)"
+  },
+  {
+    "id": "creon-corinth-ally-tisiphone-alcmaeon",
+    "type": "ally",
+    "from": "creon-corinth",
+    "to": "tisiphone-alcmaeon",
+    "sources": [
+      "apollodorus"
+    ],
+    "citation": "Bibliotheca 3.7.7",
+    "topic": "amphilochus-parentage",
+    "note": "Reared the infant Tisiphone until his wife sold her as a slave (Bibliotheca 3.7.7)"
   },
   {
     "id": "antiphates-melampid-parent-melampus",
@@ -14293,6 +15432,168 @@
       "homer"
     ],
     "note": "By Nicippe daughter of Pelops (boundary) (Bibliotheca 2.4.5; Iliad 19.116)"
+  },
+  {
+    "id": "eurystheus-parent-nicippe",
+    "type": "parent",
+    "from": "eurystheus",
+    "to": "nicippe",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "By Nicippe daughter of Pelops (Bibliotheca 2.4.5; Iliad 19.115–123)"
+  },
+  {
+    "id": "nicippe-parent-pelops",
+    "type": "parent",
+    "from": "nicippe",
+    "to": "pelops",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-consort-nicippe",
+    "type": "consort",
+    "from": "sthenelus-perseid",
+    "to": "nicippe",
+    "sources": [
+      "apollodorus",
+      "homer"
+    ],
+    "note": "Queen of Mycenae; mother of Eurystheus (Bibliotheca 2.4.5; Iliad 19.115–123)"
+  },
+  {
+    "id": "heleus-perseid-parent-perseus",
+    "type": "parent",
+    "from": "heleus-perseid",
+    "to": "perseus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Son of Perseus at Mycenae (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "heleus-perseid-parent-andromeda",
+    "type": "parent",
+    "from": "heleus-perseid",
+    "to": "andromeda",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Son of Andromeda at Mycenae (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-sibling-heleus-perseid",
+    "type": "sibling",
+    "from": "electryon",
+    "to": "heleus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcaeus-perseid-sibling-heleus-perseid",
+    "type": "sibling",
+    "from": "alcaeus-perseid",
+    "to": "heleus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "sthenelus-perseid-sibling-heleus-perseid",
+    "type": "sibling",
+    "from": "sthenelus-perseid",
+    "to": "heleus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mestor-perseid-sibling-heleus-perseid",
+    "type": "sibling",
+    "from": "mestor-perseid",
+    "to": "heleus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "gorgophone-sibling-heleus-perseid",
+    "type": "sibling",
+    "from": "gorgophone",
+    "to": "heleus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Perseus and Andromeda (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "anaxo-alcaeus-parent-alcaeus-perseid",
+    "type": "parent",
+    "from": "anaxo-alcaeus",
+    "to": "alcaeus-perseid",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "amphitryon-sibling-anaxo-alcaeus",
+    "type": "sibling",
+    "from": "amphitryon",
+    "to": "anaxo-alcaeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Children of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "electryon-consort-anaxo-alcaeus",
+    "type": "consort",
+    "from": "electryon",
+    "to": "anaxo-alcaeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Married his niece, daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcmene-parent-anaxo-alcaeus",
+    "type": "parent",
+    "from": "alcmene",
+    "to": "anaxo-alcaeus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "By Anaxo daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "licymnius-parent-midea-phrygian",
+    "type": "parent",
+    "from": "licymnius",
+    "to": "midea-phrygian",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "By the Phrygian woman Midea (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "oiax-adversary-clytemnestra",
+    "type": "adversary",
+    "from": "oiax",
+    "to": "clytemnestra",
+    "sources": [
+      "hyginus"
+    ],
+    "note": "Falsely told her Cassandra was coming as Agamemnon's concubine, setting the Mycenaean plot (Fabulae 117)"
   },
   {
     "id": "heracles-parent-zeus",
@@ -27558,9 +28859,10 @@
     "to": "jason",
     "sources": [
       "apollodorus",
-      "pausanias"
+      "pausanias",
+      "hyginus"
     ],
-    "note": "Son of Jason at Corinth (Bibliotheca 1.9.28; Description 2.3.6)"
+    "note": "Son of Jason at Corinth, named Mermerus by Apollodorus (Bibliotheca 1.9.28; Description 2.3.6; Fabulae 25)"
   },
   {
     "id": "mermerus-corinth-parent-medea-colchis",
@@ -27569,9 +28871,10 @@
     "to": "medea-colchis",
     "sources": [
       "apollodorus",
-      "pausanias"
+      "pausanias",
+      "hyginus"
     ],
-    "note": "Son of Medea at Corinth (Bibliotheca 1.9.28; Description 2.3.6)"
+    "note": "Son of Medea at Corinth, named with Mermerus by Apollodorus (Bibliotheca 1.9.28; Description 2.3.6; Fabulae 25)"
   },
   {
     "id": "pheres-corinth-parent-jason",
@@ -27580,9 +28883,10 @@
     "to": "jason",
     "sources": [
       "apollodorus",
-      "pausanias"
+      "pausanias",
+      "hyginus"
     ],
-    "note": "Son of Jason at Corinth (Bibliotheca 1.9.28; Description 2.3.6)"
+    "note": "Son of Jason at Corinth, named Pheres by Apollodorus (Bibliotheca 1.9.28; Description 2.3.6; Fabulae 25)"
   },
   {
     "id": "pheres-corinth-parent-medea-colchis",
@@ -27591,9 +28895,10 @@
     "to": "medea-colchis",
     "sources": [
       "apollodorus",
-      "pausanias"
+      "pausanias",
+      "hyginus"
     ],
-    "note": "Son of Medea at Corinth (Bibliotheca 1.9.28; Description 2.3.6)"
+    "note": "Son of Medea at Corinth, named with Mermerus by Apollodorus (Bibliotheca 1.9.28; Description 2.3.6; Fabulae 25)"
   },
   {
     "id": "mermerus-corinth-sibling-pheres-corinth",
@@ -28179,6 +29484,41 @@
       "apollodorus"
     ],
     "note": "Betrothed Glauce to the Argonaut captain (Bibliotheca 1.9.28)"
+  },
+  {
+    "id": "jason-adversary-medea-colchis",
+    "type": "adversary",
+    "from": "jason",
+    "to": "medea-colchis",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Divorced Medea to wed Glauce at Corinth, breaking his oaths (Bibliotheca 1.9.28; Metamorphoses 7.391–424; Fabulae 25)"
+  },
+  {
+    "id": "medea-colchis-adversary-jason",
+    "type": "adversary",
+    "from": "medea-colchis",
+    "to": "jason",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "note": "Upbraided Jason for ingratitude and wrought vengeance at Corinth (Bibliotheca 1.9.28; Metamorphoses 7.391–424; Fabulae 25)"
+  },
+  {
+    "id": "medea-colchis-slayer-jason",
+    "type": "slayer",
+    "from": "medea-colchis",
+    "to": "jason",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "medea-at-corinth-jason-death",
+    "note": "Hyginus has Jason burned with Creusa and Creon when the drugged crown is taken (Fabulae 25)"
   },
   {
     "id": "perses-colchis-parent-helios",
@@ -29023,6 +30363,31 @@
       "hyginus"
     ],
     "note": "Son of Nauplius (Epitome 3.7–3.8, 6.8; Fabulae 105)"
+  },
+  {
+    "id": "nauplius-amymone-parent-amymone-danaid",
+    "type": "parent",
+    "from": "nauplius-amymone",
+    "to": "amymone-danaid",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "note": "Son of Poseidon and Amymone (Bibliotheca 2.1.5; Fabulae 14; Description of Greece 2.38.2; Argonautica 1.133)"
+  },
+  {
+    "id": "nauplius-amymone-parent-poseidon",
+    "type": "parent",
+    "from": "nauplius-amymone",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias",
+      "apollonius"
+    ],
+    "note": "Reputed father of Nauplius (Bibliotheca 2.1.5; Fabulae 14; Description of Greece 2.38.2; Argonautica 1.133)"
   },
   {
     "id": "palamedes-parent-clymene-catreus",
@@ -42094,6 +43459,46 @@
     "note": "Wounded the healer with an arrow on the day the captains fell (Iliad 11.601–844)"
   },
   {
+    "id": "ajax-telamonian-ally-machaon",
+    "type": "ally",
+    "from": "ajax-telamonian",
+    "to": "machaon",
+    "sources": ["homer"],
+    "note": "Ran with Menelaus to rescue Machaon when Paris' arrow wounded him (Iliad 11.601–844)"
+  },
+  {
+    "id": "asclepius-parent-apollo",
+    "type": "parent",
+    "from": "asclepius",
+    "to": "apollo",
+    "sources": ["apollodorus", "hyginus", "ovid"],
+    "note": "Son of Apollo by Coronis in Thessaly, or by Arsinoe in the Messenian claim (Bibliotheca 3.10.3; Fabulae 14.4, 161; Metamorphoses 2.676)"
+  },
+  {
+    "id": "machaon-parent-asclepius",
+    "type": "parent",
+    "from": "machaon",
+    "to": "asclepius",
+    "sources": ["homer", "apollodorus", "hyginus"],
+    "note": "Son of Asclepius, skilled leech of Tricca (Iliad 2.695–730; Bibliotheca 3.10.8; Fabulae 97)"
+  },
+  {
+    "id": "podalirius-parent-asclepius",
+    "type": "parent",
+    "from": "podalirius",
+    "to": "asclepius",
+    "sources": ["homer", "apollodorus", "hyginus"],
+    "note": "Son of Asclepius, brother of Machaon and captain of the Triccaeans (Iliad 2.695–730; Bibliotheca 3.10.8; Fabulae 97)"
+  },
+  {
+    "id": "chiron-ally-asclepius",
+    "type": "ally",
+    "from": "chiron",
+    "to": "asclepius",
+    "sources": ["apollodorus", "ovid"],
+    "note": "Apollo carried the infant to Cheiron, who reared him and taught healing (Bibliotheca 3.10.3; Metamorphoses 2.629–633)"
+  },
+  {
     "id": "curetes-cretan-ally-zeus",
     "type": "ally",
     "from": "curetes-cretan",
@@ -42717,5 +44122,309 @@
     "to": "polites-odyssey",
     "sources": ["homer"],
     "note": "Named Polites first among his comrades at Circe's door (Odyssey 10.210–274)"
+  },
+  {
+    "id": "perimede-amphitryon-parent-alcaeus-perseid",
+    "type": "parent",
+    "from": "perimede-amphitryon",
+    "to": "alcaeus-perseid",
+    "sources": ["apollodorus"],
+    "note": "Sister of Amphitryon, children of Alcaeus (Bibliotheca 2.4.5–6)"
+  },
+  {
+    "id": "amphitryon-sibling-perimede-amphitryon",
+    "type": "sibling",
+    "from": "amphitryon",
+    "to": "perimede-amphitryon",
+    "sources": ["apollodorus"],
+    "note": "Children of Alcaeus (Bibliotheca 2.4.5–6)"
+  },
+  {
+    "id": "anaxo-alcaeus-sibling-perimede-amphitryon",
+    "type": "sibling",
+    "from": "anaxo-alcaeus",
+    "to": "perimede-amphitryon",
+    "sources": ["apollodorus"],
+    "note": "Children of Alcaeus (Bibliotheca 2.4.5–6)"
+  },
+  {
+    "id": "licymnius-consort-perimede-amphitryon",
+    "type": "consort",
+    "from": "licymnius",
+    "to": "perimede-amphitryon",
+    "sources": ["apollodorus"],
+    "note": "Amphitryon gave his sister to Licymnius at Thebes (Bibliotheca 2.4.6)"
+  },
+  {
+    "id": "stratobates-electryonid-parent-electryon",
+    "type": "parent",
+    "from": "stratobates-electryonid",
+    "to": "electryon",
+    "sources": ["apollodorus"],
+    "note": "First of nine sons by Anaxo (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "stratobates-electryonid-parent-anaxo-alcaeus",
+    "type": "parent",
+    "from": "stratobates-electryonid",
+    "to": "anaxo-alcaeus",
+    "sources": ["apollodorus"],
+    "note": "By Anaxo daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "gorgophonus-electryonid-parent-electryon",
+    "type": "parent",
+    "from": "gorgophonus-electryonid",
+    "to": "electryon",
+    "sources": ["apollodorus"],
+    "note": "Second of nine sons by Anaxo (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "gorgophonus-electryonid-parent-anaxo-alcaeus",
+    "type": "parent",
+    "from": "gorgophonus-electryonid",
+    "to": "anaxo-alcaeus",
+    "sources": ["apollodorus"],
+    "note": "By Anaxo daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "stratobates-electryonid-sibling-gorgophonus-electryonid",
+    "type": "sibling",
+    "from": "stratobates-electryonid",
+    "to": "gorgophonus-electryonid",
+    "sources": ["apollodorus"],
+    "note": "Nine sons of Electryon and Anaxo (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "laodice-atreid-parent-agamemnon",
+    "type": "parent",
+    "from": "laodice-atreid",
+    "to": "agamemnon",
+    "sources": ["homer"],
+    "note": "Three daughters in the well-builded hall (Iliad 9.141–148)"
+  },
+  {
+    "id": "laodice-atreid-parent-clytemnestra",
+    "type": "parent",
+    "from": "laodice-atreid",
+    "to": "clytemnestra",
+    "sources": ["homer"],
+    "note": "Daughters at Mycenae while Agamemnon was at Troy (Iliad 9.141–148)"
+  },
+  {
+    "id": "chrysothemis-sibling-laodice-atreid",
+    "type": "sibling",
+    "from": "chrysothemis",
+    "to": "laodice-atreid",
+    "sources": ["homer"],
+    "note": "Homer's catalogue of Agamemnon's daughters (Iliad 9.141–148)"
+  },
+  {
+    "id": "alcyone-sthenelid-parent-sthenelus-perseid",
+    "type": "parent",
+    "from": "alcyone-sthenelid",
+    "to": "sthenelus-perseid",
+    "sources": ["apollodorus"],
+    "note": "Daughters before Eurystheus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcyone-sthenelid-parent-nicippe",
+    "type": "parent",
+    "from": "alcyone-sthenelid",
+    "to": "nicippe",
+    "sources": ["apollodorus"],
+    "note": "By Nicippe daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "medusa-sthenelid-parent-sthenelus-perseid",
+    "type": "parent",
+    "from": "medusa-sthenelid",
+    "to": "sthenelus-perseid",
+    "sources": ["apollodorus"],
+    "note": "Daughters before Eurystheus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "medusa-sthenelid-parent-nicippe",
+    "type": "parent",
+    "from": "medusa-sthenelid",
+    "to": "nicippe",
+    "sources": ["apollodorus"],
+    "note": "By Nicippe daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alcyone-sthenelid-sibling-medusa-sthenelid",
+    "type": "sibling",
+    "from": "alcyone-sthenelid",
+    "to": "medusa-sthenelid",
+    "sources": ["apollodorus"],
+    "note": "Two daughters of Sthenelus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "eurystheus-sibling-alcyone-sthenelid",
+    "type": "sibling",
+    "from": "eurystheus",
+    "to": "alcyone-sthenelid",
+    "sources": ["apollodorus"],
+    "note": "Son after the two daughters (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "astydamia-pelops-consort-alcaeus-perseid",
+    "type": "consort",
+    "from": "astydamia-pelops",
+    "to": "alcaeus-perseid",
+    "sources": ["apollodorus"],
+    "note": "Primary account; disputed with Laonome and Hipponome (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "astydamia-pelops-parent-pelops",
+    "type": "parent",
+    "from": "astydamia-pelops",
+    "to": "pelops",
+    "sources": ["apollodorus"],
+    "note": "Daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "amphitryon-parent-astydamia-pelops",
+    "type": "parent",
+    "from": "amphitryon",
+    "to": "astydamia-pelops",
+    "sources": ["apollodorus"],
+    "note": "Primary account; disputed maternity (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "anaxo-alcaeus-parent-astydamia-pelops",
+    "type": "parent",
+    "from": "anaxo-alcaeus",
+    "to": "astydamia-pelops",
+    "sources": ["apollodorus"],
+    "note": "Primary account; disputed maternity (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "lysiddice-pelops-consort-mestor-perseid",
+    "type": "consort",
+    "from": "lysiddice-pelops",
+    "to": "mestor-perseid",
+    "sources": ["apollodorus"],
+    "note": "By Lysidice daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "lysiddice-pelops-parent-pelops",
+    "type": "parent",
+    "from": "lysiddice-pelops",
+    "to": "pelops",
+    "sources": ["apollodorus"],
+    "note": "Daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "hippothoe-mestor-parent-mestor-perseid",
+    "type": "parent",
+    "from": "hippothoe-mestor",
+    "to": "mestor-perseid",
+    "sources": ["apollodorus"],
+    "note": "By Lysidice (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "hippothoe-mestor-parent-lysiddice-pelops",
+    "type": "parent",
+    "from": "hippothoe-mestor",
+    "to": "lysiddice-pelops",
+    "sources": ["apollodorus"],
+    "note": "By Lysidice daughter of Pelops (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "alexander-eurystheus-parent-eurystheus",
+    "type": "parent",
+    "from": "alexander-eurystheus",
+    "to": "eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Slain at Athens (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "iphimedon-eurystheus-parent-eurystheus",
+    "type": "parent",
+    "from": "iphimedon-eurystheus",
+    "to": "eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Slain at Athens (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "alexander-eurystheus-sibling-iphimedon-eurystheus",
+    "type": "sibling",
+    "from": "alexander-eurystheus",
+    "to": "iphimedon-eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Sons of Eurystheus (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "eurybius-eurystheus-parent-eurystheus",
+    "type": "parent",
+    "from": "eurybius-eurystheus",
+    "to": "eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Slain at Athens (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "mentor-eurystheus-parent-eurystheus",
+    "type": "parent",
+    "from": "mentor-eurystheus",
+    "to": "eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Slain at Athens (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "perimedes-eurystheus-parent-eurystheus",
+    "type": "parent",
+    "from": "perimedes-eurystheus",
+    "to": "eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Slain at Athens (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "iphimedon-eurystheus-sibling-eurybius-eurystheus",
+    "type": "sibling",
+    "from": "iphimedon-eurystheus",
+    "to": "eurybius-eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Sons of Eurystheus (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "eurybius-eurystheus-sibling-mentor-eurystheus",
+    "type": "sibling",
+    "from": "eurybius-eurystheus",
+    "to": "mentor-eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Sons of Eurystheus (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "mentor-eurystheus-sibling-perimedes-eurystheus",
+    "type": "sibling",
+    "from": "mentor-eurystheus",
+    "to": "perimedes-eurystheus",
+    "sources": ["apollodorus"],
+    "note": "Sons of Eurystheus (Bibliotheca 2.8.1)"
+  },
+  {
+    "id": "archelaus-electryonid-parent-electryon",
+    "type": "parent",
+    "from": "archelaus-electryonid",
+    "to": "electryon",
+    "sources": ["apollodorus"],
+    "note": "Ninth son by Anaxo (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "archelaus-electryonid-parent-anaxo-alcaeus",
+    "type": "parent",
+    "from": "archelaus-electryonid",
+    "to": "anaxo-alcaeus",
+    "sources": ["apollodorus"],
+    "note": "By Anaxo daughter of Alcaeus (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "gorgophonus-electryonid-sibling-archelaus-electryonid",
+    "type": "sibling",
+    "from": "gorgophonus-electryonid",
+    "to": "archelaus-electryonid",
+    "sources": ["apollodorus"],
+    "note": "Sons of Electryon by Anaxo (Bibliotheca 2.4.5)"
   }
 ]

@@ -42,6 +42,13 @@
   ],
   "residences": [
     {
+      "city": "nauplion",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.38.2"
+    },
+    {
       "city": "argos",
       "sources": [
         "apollodorus",
@@ -63,6 +70,15 @@
         "hyginus"
       ],
       "citation": "Epitome 6.7, 6.11; Fabulae 116"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollonius",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.134–136; Bibliotheca 1.9.16; Fabulae 14"
     }
   ]
 }

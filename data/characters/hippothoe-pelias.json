@@ -1,0 +1,43 @@
+{
+  "id": "hippothoe-pelias",
+  "name": "Hippothoe",
+  "greekName": "Hippothoe (Ἱπποθόη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Pelias",
+    "one of the Peliades",
+    "Medea's cauldron"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Pelias and Anaxibia (`anaxibia-pelias`) at Iolcus — one of the Peliades named in Apollodorus beside Pisidice, Pelopia, Alcestis, and Acastus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "Homonym guard: not Hippothoe daughter of Mestor, whom Poseidon carried off to bear Taphius (Bibliotheca 2.4.5). As a Peliad she belongs to the daughters implicated in Medea's cauldron trick against Pelias.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Hippothoe among the daughters whom Pelias begot on Anaxibia, daughter of Bias — sister to Pisidice, Pelopia, Alcestis, and their brother Acastus in the Thessalian royal genealogy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "When Jason returned with Medea, the witch persuaded Pelias's daughters that an old ram boiled in her cauldron could renew life; trusting her, they minced and boiled their father — the homecoming vengeance Apollodorus and Ovid tell through the cauldron fraud.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27"
+    }
+  ]
+}

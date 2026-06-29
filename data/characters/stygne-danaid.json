@@ -1,0 +1,41 @@
+{
+  "id": "stygne-danaid",
+  "name": "Stygne",
+  "greekName": "Stygnē (Στυγνή)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Polyctor"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by the Naiad nymph Polyxo — by lot the bride of Polyctor son of Egyptus when the twelve sons of Aegyptus by Caliadne married the Danaids at Argos.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Stygne eleventh among the daughters of Danaus borne on Polyxo. When the twelve sons of Egyptus by Caliadne cast lots for the Polyxo maidens, Polyctor drew Stygne. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus counts her among the brides who obeyed Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

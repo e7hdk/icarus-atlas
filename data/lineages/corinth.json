@@ -14,6 +14,20 @@
       "sources": ["homer", "apollodorus"],
       "citation": "Il. 6.154–155; Apollod. 1.9.3",
       "note": "Son of Sisyphus and king of Ephyra; father of Bellerophon, slayer of the Chimera."
+    },
+    {
+      "ruler": "Polybus",
+      "characterId": "polybus-corinth",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.5.7; Hyg. Fab. 66",
+      "note": "King of Corinth in the Oedipus saga — not the Ithacan suitor Polybus nor any other homonym; his neatherds found the exposed infant on Cithaeron and Periboea raised him as their son."
+    },
+    {
+      "ruler": "Creon",
+      "characterId": "creon-corinth",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Apollod. 1.9.28; Hyg. Fab. 25; Ov. Met. 7.391–424",
+      "note": "King of Corinth in the Jason–Medea episode — distinct from Creon of Thebes (`creon`); betrothed Glauce to Jason and perished in Medea's poisoned robe."
     }
   ]
 }

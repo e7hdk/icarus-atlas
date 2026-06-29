@@ -29,12 +29,24 @@
       "citation": "Fabulae 18; Bibliotheca 1.9.23"
     },
     {
-      "text": "Hyginus and Apollodorus name Lycus king of the Mariandyni on the Propontis coast — a people, not a polis attested in our sources. No individual town is assigned to his court; residence stays deferred at regional level.",
+      "text": "Hyginus places Tiphys' death among the Mariandyni in Propontis where Lycus was king; Apollodorus and Apollonius likewise name him lord of the Mariandyni when the Argonauts landed — a tribal kingdom on the Propontis shore, not a named polis, mapped as the Mariandyni edge marker.",
       "sources": [
         "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.23; Fabulae 18"
+      "citation": "Bibliotheca 1.9.23; Argonautica 2.752; Fabulae 18"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mariandyni",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.23; Argonautica 2.752; Fabulae 18"
     }
   ]
 }

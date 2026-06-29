@@ -11,30 +11,43 @@
   "summary": [
     {
       "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Eteoneus son of Boethous, the busy squire of Menelaus at Sparta.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     }
   ],
   "story": [
     {
       "text": "Apollodorus counts Eteoneus among the wooers who came from Same, named after Thriasus and before Clytius in the island list of Penelope's suitors.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     },
     {
       "text": "Homer's Odyssey knows another Eteoneus — the herald who met Telemachus and Peisistratus at Menelaus' gate and kindled the fire at his master's bidding — not this Same suitor.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Odyssey 4.1–45, 15.95–125; Epitome 7.28"
     }
   ],
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     }
   ]
 }

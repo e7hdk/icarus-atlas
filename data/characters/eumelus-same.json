@@ -11,30 +11,43 @@
   "summary": [
     {
       "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Eumelus son of Admetus, the charioteer of Pherae in the Iliad.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     }
   ],
   "story": [
     {
       "text": "Apollodorus names Eumelus among the wooers who came from Same, listed after Lycaethus and before Itanus in Epitome 7.28.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     },
     {
       "text": "Homer's Iliad knows another Eumelus — son of Admetus and Alcestis, lord of Pherae and a famed charioteer at Troy — not this Cephallenian wooer.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Iliad 2.695–730, 23.290–425; Epitome 7.28"
     }
   ],
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     }
   ]
 }

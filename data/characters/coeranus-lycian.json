@@ -3,30 +3,43 @@
   "name": "Coeranus",
   "greekName": "Koiranos (Κοίρανος)",
   "type": "hero",
-  "domains": ["Lycian warrior", "Odysseus' target"],
+  "domains": [
+    "Lycian warrior",
+    "Odysseus' target"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew first when Athene turned his mind toward the host; distinct from Coeranus the charioteer of Meriones from Lyctus whom Hector smote at the ships.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 2.876–877, 5.670–710, 17.600–625"
     }
   ],
   "story": [
     {
       "text": "When it was not ordained for Odysseus to slay the valiant son of Zeus, Athene turned his mind toward the Lycians; then he slew Coeranus and Alastor and Chromius and Alcandrus and Halius and Noëmon and Prytanis, and yet more would he have laid low had not Hector strode through the foremost fighters.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 5.670–710"
     }
   ],
   "residences": [
     {
       "city": "xanthus-lycia",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877, 5.670–710, 17.600–625"
     }
   ]
 }

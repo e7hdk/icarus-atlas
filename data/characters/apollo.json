@@ -45,11 +45,18 @@
   "residences": [
     {
       "city": "delos",
-      "sources": ["apollodorus", "hesiod"]
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Bibliotheca 1.4.1; Theogony 918–920"
     },
     {
       "city": "patara",
-      "sources": ["ovid", "pausanias"]
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 1.577–687"
+    },
+    {
+      "city": "pherae",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.15, 3.10.4"
     }
   ]
 }

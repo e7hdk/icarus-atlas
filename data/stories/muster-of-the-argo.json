@@ -150,6 +150,156 @@
       "role": "Seer of the voyage"
     },
     {
+      "id": "euphemus",
+      "name": "Euphemus",
+      "role": "Taenarian swimmer and son of Poseidon"
+    },
+    {
+      "id": "zetes",
+      "name": "Zetes",
+      "role": "Wind-footed Boread"
+    },
+    {
+      "id": "calais",
+      "name": "Calais",
+      "role": "Wind-footed Boread"
+    },
+    {
+      "id": "butes-athens",
+      "name": "Butes",
+      "role": "Athenian Argonaut"
+    },
+    {
+      "id": "admetus",
+      "name": "Admetus",
+      "role": "Lord of Pherae at the oar"
+    },
+    {
+      "id": "idmon",
+      "name": "Idmon",
+      "role": "Seer who read the omens at the launch"
+    },
+    {
+      "id": "nauplius-amymone",
+      "name": "Nauplius",
+      "role": "Argonaut, son of Poseidon and Amymone"
+    },
+    {
+      "id": "phalerus-athens",
+      "name": "Phalerus",
+      "role": "Athenian Argonaut from Phalerum"
+    },
+    {
+      "id": "oileus-locris",
+      "name": "Oileus",
+      "role": "Locrian Argonaut, father of Ajax the Lesser"
+    },
+    {
+      "id": "idas",
+      "name": "Idas",
+      "role": "Messenian strongman, brother of Lynceus"
+    },
+    {
+      "id": "aethalides",
+      "name": "Aethalides",
+      "role": "Hermes' son, herald with unfailing memory"
+    },
+    {
+      "id": "eribotes",
+      "name": "Eribotes",
+      "role": "Eleonian Argonaut who tended wounded Oileus"
+    },
+    {
+      "id": "ancaeus-arcadian",
+      "name": "Ancaeus",
+      "role": "Tegean Argonaut with the double-axe"
+    },
+    {
+      "id": "ancaeus-samos",
+      "name": "Ancaeus",
+      "role": "Samian helmsman after Tiphys"
+    },
+    {
+      "id": "acastus",
+      "name": "Acastus",
+      "role": "Son of Pelias who sailed against his father's will"
+    },
+    {
+      "id": "lynceus-apharetid",
+      "name": "Lynceus",
+      "role": "Keen-eyed lookout of the Argo"
+    },
+    {
+      "id": "iphitus-phocis",
+      "name": "Iphitus of Phocis",
+      "role": "Phocian Argonaut, homonym of the Oechalian"
+    },
+    {
+      "id": "laocoon-calydon",
+      "name": "Laocoon",
+      "role": "Calydonian uncle of Meleager"
+    },
+    {
+      "id": "caeneus-gortyn",
+      "name": "Caeneus of Gortyn",
+      "role": "Distinct from the invulnerable Lapith Caeneus"
+    },
+    {
+      "id": "erginus-miletus",
+      "name": "Erginus",
+      "role": "Milesian son of Poseidon at the oar"
+    },
+    {
+      "id": "coronus-gyrton",
+      "name": "Coronus",
+      "role": "Thessalian from Gyrton, father of Leonteus"
+    },
+    {
+      "id": "asterion-pellene",
+      "name": "Asterion",
+      "role": "From Pellene in Achaea"
+    },
+    {
+      "id": "asterius-piresia",
+      "name": "Asterius",
+      "role": "From Piresia at Phylleus"
+    },
+    {
+      "id": "polyphemus-elatid",
+      "name": "Polyphemus",
+      "role": "Left searching for Hylas in Mysia"
+    },
+    {
+      "id": "deucalion-pella",
+      "name": "Deucalion",
+      "role": "From Pella, son of Hyperasius among the Minyae"
+    },
+    {
+      "id": "amphion-pella",
+      "name": "Amphion",
+      "role": "From Pellene, son of Hyperasius — not the Theban wall-builder"
+    },
+    {
+      "id": "cepheus-tegea",
+      "name": "Cepheus",
+      "role": "Tegean Argonaut, son of Aleus"
+    },
+    {
+      "id": "clytius-oechalia",
+      "name": "Clytius",
+      "role": "Oechalian archer, son of Eurytus"
+    },
+    {
+      "id": "iphiclus-thestiad",
+      "name": "Iphiclus",
+      "role": "Thestiad javelin-thrower, not the Phylacian homonym"
+    },
+    {
+      "id": "palaemon-argonaut",
+      "name": "Palaemon",
+      "role": "Calydonian Argonaut, son of Lernus"
+    },
+    {
       "id": "athena",
       "name": "Athena",
       "role": "Goddess who planned the ship"
@@ -170,6 +320,11 @@
       "name": "Pagasae",
       "role": "Harbour where the Argo was launched",
       "id": "pagasae"
+    },
+    {
+      "id": "pherae",
+      "name": "Pherae",
+      "role": "Home of Admetus, counted among the Argonauts in Apollodorus' roll"
     },
     {
       "name": "Mount Pelion",
@@ -195,6 +350,11 @@
       "id": "dodona",
       "name": "Dodona",
       "role": "Oak of Zeus whence Athena took the Argo's speaking prow-beam"
+    },
+    {
+      "id": "magnesia",
+      "name": "Magnesia",
+      "role": "Pagasaean coast whence Hyginus names Phocus and Priasus among the Argonauts"
     }
   ],
   "attestations": [

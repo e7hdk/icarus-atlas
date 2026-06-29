@@ -39,19 +39,23 @@
   "residences": [
     {
       "city": "knossos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.8–9"
     },
     {
       "city": "gortyn",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
     },
     {
       "city": "naxos",
-      "sources": ["homer", "apollodorus", "ovid", "hesiod"]
+      "sources": ["homer", "apollodorus", "ovid", "hesiod"],
+      "citation": "Odyssey 11.321–325; Theogony 947–949; Epitome 1.9–1.10; Metamorphoses 8.174–182"
     },
     {
       "city": "lemnos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.9"
     }
   ]
 }

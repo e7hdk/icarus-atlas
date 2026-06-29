@@ -62,5 +62,17 @@
       ],
       "citation": "Description of Greece 1.41.8–9, 9.16.4, 10.4.8"
     }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 3.14.8; Metamorphoses 6.424–674; Fabulae 45"
+    },
+    {
+      "city": "daulis",
+      "sources": ["apollodorus", "pausanias", "ovid"],
+      "citation": "Bibliotheca 3.14.8; Description of Greece 10.4.7–9, 1.41.8–9; Metamorphoses 6.424–674"
+    }
   ]
 }

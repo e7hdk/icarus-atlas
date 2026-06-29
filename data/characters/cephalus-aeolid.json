@@ -55,5 +55,17 @@
       ],
       "citation": "Bibliotheca 2.4.7"
     }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.1"
+    },
+    {
+      "city": "panopeus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.4; Description of Greece 1.37.6"
+    }
   ]
 }

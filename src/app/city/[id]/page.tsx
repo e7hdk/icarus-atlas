@@ -3,6 +3,7 @@ import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';
 import { CityShell } from '@/components/city/CityShell';
 import { buildCharacterIndex, loadAtlasData } from '@/features/characters/load';
 import { loadCities, loadLineage, loadRegions } from '@/features/geo/load';
+import { countCityResidents } from '@/features/geo/residents';
 
 export async function generateStaticParams() {
   const cities = await loadCities();
@@ -35,9 +36,16 @@ export default async function CityPage(props: { params: Promise<{ id: string }> 
   const lineage = await loadLineage(city.id);
   const region = city.region ? regions.find((r) => r.id === city.region) : undefined;
   const parentRegion = region?.parent ? regions.find((r) => r.id === region.parent) : undefined;
+  const residentCount = countCityResidents(characters, city.id);
 
   return (
-    <CityShell city={city} region={region} parentRegion={parentRegion} active="lineage">
+    <CityShell
+      city={city}
+      region={region}
+      parentRegion={parentRegion}
+      active="lineage"
+      residentCount={residentCount}
+    >
       <section className="mt-10">
         <h2 className="text-center font-display text-[12px] uppercase tracking-[0.3em] text-aether-faint">
           Royal succession

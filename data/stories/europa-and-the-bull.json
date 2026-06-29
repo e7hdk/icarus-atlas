@@ -38,7 +38,7 @@
     },
     {
       "title": "Crete and the Cretan kings",
-      "text": "In Crete Zeus lay with Europa, and she bore Minos, Sarpedon, and Rhadamanthus — though Homer makes Sarpedon son of Zeus by Laodamia daughter of Bellerophon, not by Europa. Asterius prince of the Cretans married her and brought up her children; when they were grown they quarrelled over a boy called Miletus. Agenor meanwhile sent Cadmus, Phoenix, and Cilix to search for Europa and forbade their return without her — the quest that would end not in Phoenicia but at Apollo's cow in Boeotia.",
+      "text": "In Crete Zeus lay with Europa, and she bore Minos, Sarpedon, and Rhadamanthus — though Homer makes Sarpedon son of Zeus by Laodamia daughter of Bellerophon, not by Europa. Asterius prince of the Cretans married her and brought up her children; when they were grown they quarrelled over a boy called Miletus. Agenor meanwhile sent Cadmus, Phoenix, and Cilix to search for Europa and forbade their return without her — the quest that would end not in Phoenicia but at Apollo's cow in Boeotia, while Cilix gave up the search and settled the southern coast of Asia Minor, giving his name to Cilicia and its people.",
       "sources": [
         "apollodorus",
         "homer",
@@ -102,6 +102,7 @@
   ],
   "places": [
     {
+      "id": "phoenicia",
       "name": "Phoenicia",
       "role": "Homeland of Agenor and the abducted princess"
     },
@@ -109,6 +110,11 @@
       "id": "knossos",
       "name": "Crete",
       "role": "Island where Zeus brought Europa ashore"
+    },
+    {
+      "id": "cilicia",
+      "name": "Cilicia",
+      "role": "Land Cilix settled when he abandoned the search for Europa"
     }
   ],
   "attestations": [

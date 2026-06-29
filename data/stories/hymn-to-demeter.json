@@ -119,9 +119,20 @@
       "id": "eleusis"
     },
     {
+      "id": "hermione-argolis",
+      "name": "Hermione",
+      "role": "Where the Hermionians told Demeter that Pluto had taken Persephone"
+    },
+    {
       "name": "Sicily",
       "role": "Ovid's meadow of Henna and Lake Pergus",
       "id": "syracuse"
+    },
+    {
+      "id": "lerna",
+      "name": "Lerna",
+      "role": "Argive localization — Pausanias' circuit of stones by the river Cheimarrus where Pluto descended with Kore",
+      "featureId": "cheimarrus"
     }
   ],
   "attestations": [

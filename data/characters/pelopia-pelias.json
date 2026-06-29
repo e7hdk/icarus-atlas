@@ -1,0 +1,43 @@
+{
+  "id": "pelopia-pelias",
+  "name": "Pelopia",
+  "greekName": "Pelopeia (Πελόπεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Pelias",
+    "one of the Peliades",
+    "Medea's cauldron"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Pelias and Anaxibia (`anaxibia-pelias`) at Iolcus — one of the Peliades in Apollodorus' catalogue beside Pisidice, Hippothoe, Alcestis, and Acastus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "Homonym guard: not Pelopia daughter of Thyestes and mother of Aegisthus (`pelopia`). As a Peliad she belongs to the daughters whom Medea's cauldron deception led to boil their father Pelias.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Pelopia among the daughters whom Pelias begot on Anaxibia, daughter of Bias — sister to Pisidice, Hippothoe, Alcestis, and their brother Acastus in the Iolcan royal stemma.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "On Jason's homecoming Medea worked the ruin of Pelias through his own daughters: after the lamb sprang from the cauldron, they minced and boiled their father at her promise of restored youth — the vengeance that cleared the throne and set Acastus to bury Pelias and expel Jason and Medea.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27"
+    }
+  ]
+}

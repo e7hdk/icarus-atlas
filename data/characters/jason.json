@@ -52,6 +52,14 @@
       "citation": "Bibliotheca 1.9.23, 1.9.25, 1.9.27, 1.9.28"
     },
     {
+      "text": "At Corinth the eastern triumph turned to domestic ruin. Apollodorus says Jason came to the Isthmus city with Medea after Pelias and lived there happily for ten years until Creon betrothed his daughter Glauce to him; Jason married the bride and divorced Medea, forgetting the oaths by which she had won him the fleece. The Colchian witch invoked every god who had witnessed those vows, upbraided his ingratitude, and sent Glauce a poisoned robe — and when the bride and her father were consumed in fire, Jason lost both his new marriage and the sons Mermerus and Pheres, whom Medea killed or left for Corinth to slay. Ovid dwells on the same betrayal in Corinth: Medea had already renewed Aeson for Jason's sake, yet the hero took a royal bride of his own house and drove his benefactress to vengeance.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 1.9.28; Metamorphoses 7.271–294, 7.391–424"
+    },
+    {
       "text": "Homer keeps only the edges of the saga but a divine favour at its heart: when the Argo alone of seagoing ships passed the Wandering Rocks on her voyage home from Aeetes, the wave would have dashed her against the great crags had not Hera sent her safely through, for that Jason was dear to her. And the hero left a son behind: Euneus, whom Hypsipyle bore to Jason, shepherd of the host, who later sent wine from Lemnos to the Achaeans at Troy.",
       "sources": [
         "homer"
@@ -62,7 +70,13 @@
   "residences": [
     {
       "city": "iolcus",
-      "sources": ["apollodorus", "apollonius"]
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.45–47"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.317–318"
     },
     {
       "city": "aea-colchis",
@@ -81,7 +95,8 @@
     },
     {
       "city": "corinth",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Metamorphoses 7.391–424; Description of Greece 2.3.6–11; Fabulae 25"
     },
     {
       "city": "aeaea",

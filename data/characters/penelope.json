@@ -31,6 +31,14 @@
         "apollodorus"
       ],
       "citation": "Epitome 7.31"
+    },
+    {
+      "text": "Daughter of the Spartan Icarius, whom Odysseus won as bride after a foot-race at Sparta in the tale the Lacedaemonians still told.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 3.12.2; Bibliotheca 3.10.6"
     }
   ],
   "story": [
@@ -114,24 +122,28 @@
     {
       "city": "sparta",
       "sources": [
-        "homer",
+        "pausanias",
         "apollodorus"
-      ]
+      ],
+      "citation": "Description of Greece 3.12.2; Bibliotheca 3.10.6"
     },
     {
       "city": "ithaca",
       "sources": [
         "homer",
         "apollodorus"
-      ]
+      ],
+      "citation": "Odyssey 1.325–344; 2.85–110; Bibliotheca 3.10.6"
     },
     {
       "city": "mantinea",
-      "sources": ["apollodorus", "pausanias"]
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 7.38; Description of Greece 8.12.6"
     },
     {
       "city": "aeaea",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.16"
     }
   ]
 }

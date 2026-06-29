@@ -27,12 +27,23 @@
       "citation": "Fabulae 14"
     },
     {
-      "text": "Hyginus' 'Pella' must not be read as the later Macedonian capital: the same catalogue pairs Hyperasius' sons Asterion and Amphion with Pellene in Achaea, not with any Thessalian or Macedonian polis attested in Apollodorus or Apollonius. No source in our corpus ties this Deucalion to a named city on our map — residence stays deferred.",
+      "text": "Hyginus tags him 'from Pella' in the Argonaut roll — the same catalogue that pairs Hyperasius' other sons with Pellene in Achaea. The atlas maps that attestation to `pella-macedonia`; whether Hyginus meant the later Macedonian capital or another Pella is not resolved in our seven lenses.",
       "sources": [
-        "hyginus",
-        "apollodorus"
+        "hyginus"
       ],
-      "citation": "Fabulae 14.3–14.4; Bibliotheca 1.9.16"
+      "citation": "Fabulae 14"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pella-macedonia",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["hyginus", "apollonius"],
+      "citation": "Fabulae 14; Argonautica 1.367"
     }
   ]
 }

@@ -34,6 +34,15 @@
       ],
       "citation": "Fabulae 167",
       "topic": "dionysus-first-birth"
+    },
+    {
+      "text": "Returning to his mother's city, he punished Pentheus for scorning his rites at Thebes, driving the king's mother Agave to tear her son apart on Mount Cithaeron.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Iliad 6.130–140; Bibliotheca 3.5.1–3.5.2; Metamorphoses 3.511–733"
     }
   ],
   "story": [
@@ -94,9 +103,12 @@
     {
       "city": "thebes",
       "sources": [
+        "homer",
         "apollodorus",
-        "hesiod"
-      ]
+        "hesiod",
+        "ovid"
+      ],
+      "citation": "Iliad 6.130–140; Bibliotheca 3.5.1–3.5.2; Metamorphoses 3.511–733"
     },
     {
       "city": "naxos",
@@ -105,19 +117,22 @@
         "apollodorus",
         "ovid",
         "hesiod"
-      ]
+      ],
+      "citation": "Odyssey 11.321–325; Theogony 947–949; Bibliotheca 3.5.3; Metamorphoses 8.174–182"
     },
     {
       "city": "icaria",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 3.5.3"
     },
     {
       "city": "lemnos",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Epitome 1.9"
     }
   ]
 }

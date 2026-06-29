@@ -30,11 +30,13 @@
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
     }
   ]
 }

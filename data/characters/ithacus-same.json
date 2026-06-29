@@ -11,30 +11,43 @@
   "summary": [
     {
       "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of the Ithacus who with Neritus and Polyctor built the town fountain in Homer's Odyssey.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     }
   ],
   "story": [
     {
       "text": "Apollodorus names Ithacus among the wooers assigned to Same, listed after Archemolus and before Pisenor in Epitome 7.28.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     },
     {
       "text": "Homer knows another Ithacus — not this suitor — as one of three who made the fair-flowing fountain outside the city of Ithaca, with Neritus and Polyctor; the Epitome name is a homonym hazard only.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Odyssey 17.205–245; Epitome 7.28"
     }
   ],
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     }
   ]
 }

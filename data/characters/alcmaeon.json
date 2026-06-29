@@ -14,6 +14,11 @@
       "text": "Son of the seer Amphiaraus who led the Epigoni against Thebes, slew his mother Eriphyle for betraying his father, and after long wandering colonized Acarnania from Epirus with his sons.",
       "sources": ["homer", "apollodorus"],
       "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2–7"
+    },
+    {
+      "text": "Homer traces his birth in the Argive seer-house before Amphiaraus died at Thebes.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.248–251"
     }
   ],
   "story": [
@@ -31,12 +36,19 @@
       "text": "His end came at the hands of Phegeus' sons in Arcadia, but his sons Amphoterus and Acarnan avenged him, slew Phegeus, and fulfilled the oracle by dedicating the necklace at Delphi before settling the western land that bears Acarnan's name.",
       "sources": ["apollodorus"],
       "citation": "Bibliotheca 3.7.6–7"
+    },
+    {
+      "text": "Apollodorus preserves a Euripidean variant at the close of the wanderings: in madness Alcmaeon begot Amphilochus and Tisiphone on Manto daughter of Tiresias, entrusted the infants to Creon king of Corinth, and later returned to the city — unknowingly buying his own daughter as a slave before recovering both children.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "topic": "amphilochus-parentage"
     }
   ],
   "residences": [
     {
       "city": "argos",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2"
     },
     {
       "city": "thebes",
@@ -50,7 +62,8 @@
     },
     {
       "city": "argos-amphilochicum",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7"
     },
     {
       "city": "psophis",
@@ -66,6 +79,12 @@
       "city": "delphi",
       "sources": ["apollodorus"],
       "citation": "Bibliotheca 3.7.5–7"
+    },
+    {
+      "city": "corinth",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "topic": "amphilochus-parentage"
     }
   ]
 }

@@ -13,6 +13,11 @@
       "text": "Son of Odysseus and Penelope, a boy left in infancy when his father sailed for Troy, who grew up amid suitors devouring the house until Athena roused him to seek news of the king and stand beside him at the slaughter of the wooers.",
       "sources": ["homer", "apollodorus"],
       "citation": "Odyssey 1.214–223, 1.284–286; Epitome 3.10"
+    },
+    {
+      "text": "At Athena's urging he sailed from Ithaca to Pylos and on to Sparta, where Menelaus in Lacedaemon first gave him sure news that Odysseus still lived.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.1–415; 4.355–590"
     }
   ],
   "story": [
@@ -66,15 +71,18 @@
   "residences": [
     {
       "city": "ithaca",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 1.214–223, 1.284–286; Epitome 3.10"
     },
     {
       "city": "pylos",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 3.1–415"
     },
     {
       "city": "sparta",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 3.1–415; 4.355–590"
     }
   ]
 }

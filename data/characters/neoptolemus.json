@@ -84,11 +84,13 @@
   "residences": [
     {
       "city": "skyros",
-      "sources": ["apollodorus", "homer", "hyginus"]
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Bibliotheca 3.13.8; Epitome 5.10–11; Fabulae 97; Odyssey 11.505–537"
     },
     {
       "city": "troy",
-      "sources": ["homer", "apollodorus", "hyginus"]
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 11.505–537; Bibliotheca 3.13.8; Epitome 5.10–12, 5.21; Fabulae 113"
     },
     {
       "city": "sigeum",
@@ -97,7 +99,8 @@
     },
     {
       "city": "buthrotum",
-      "sources": ["apollodorus", "pausanias"]
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.12–13; Description of Greece 1.11.1"
     },
     {
       "city": "sparta",

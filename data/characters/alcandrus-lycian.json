@@ -3,30 +3,43 @@
   "name": "Alcandrus",
   "greekName": "Alkandros (Ἄλκανδρος)",
   "type": "hero",
-  "domains": ["Lycian warrior", "Odysseus' target"],
+  "domains": [
+    "Lycian warrior",
+    "Odysseus' target"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew with the sharp bronze among the allies; no homonym in the atlas.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 2.876–877, 5.670–710"
     }
   ],
   "story": [
     {
       "text": "After Coeranus fell, Odysseus laid Alcandrus low with Alastor, Chromius, Halius, Noëmon, and Prytanis in the Lycian host, and yet more would he have slain had not great Hector brought terror to the Danaans.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 5.670–710"
     }
   ],
   "residences": [
     {
       "city": "xanthus-lycia",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877, 5.670–710"
     }
   ]
 }

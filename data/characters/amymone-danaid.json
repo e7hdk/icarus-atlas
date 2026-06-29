@@ -1,0 +1,56 @@
+{
+  "id": "amymone-danaid",
+  "name": "Amymone",
+  "greekName": "Amymonē (Ἀμυμόνη)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "mother of Nauplius"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus — when Argos lacked water she met Poseidon at the springs he revealed, and by him became mother of Nauplius, founder of Nauplia on the Argive coast.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.4–2.1.5; Description of Greece 2.38.2; Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Poseidon had dried up the springs of Argos in anger at Inachus, Danaus sent his daughters to find water. Amymone, searching with a dart, roused a sleeping satyr who would have forced her; Poseidon appeared, the satyr fled, and she lay with the god, who showed her the springs that still bear her name.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 2.1.4; Metamorphoses 2.276–415"
+    },
+    {
+      "text": "Pausanias says Nauplia was founded by Nauplius, reputed son of Poseidon and Amymone — the port with Poseidon's sanctuary, harbours, and the spring Canathus where the Argives say Hera bathes each year.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.38.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.4–2.1.5; Fabulae 14"
+    },
+    {
+      "city": "nauplion",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.38.2"
+    }
+  ]
+}

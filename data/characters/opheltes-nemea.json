@@ -1,0 +1,65 @@
+{
+  "id": "opheltes-nemea",
+  "name": "Opheltes",
+  "greekName": "Opheltēs (Ὀφέλτης)",
+  "romanName": "Opheltes",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Archemorus",
+    "the Nemean games",
+    "the serpent's victim"
+  ],
+  "summary": [
+    {
+      "text": "Infant son of Lycurgus and Eurydice at Nemea, nursed by the Lemnian exile Hypsipyle when the Seven marched against Thebes; a serpent killed him when he was set on the ground before he could walk, and the captains buried him, renamed him Archemorus, and founded the Nemean games in his honour.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.4; Description of Greece 2.15.3, 8.48.2"
+    },
+    {
+      "text": "Not to be confused with Opheltes son of Peneleos in the Theban king-list, nor with Hyginus' variant in which the nursling is son of a king Lycus rather than of Lycurgus son of Pheres.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.14, 3.6.4; Fabulae 74; Description of Greece 9.5.16"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names him first as Opheltes, child of Lycurgus and Eurydice at Nemea. When the Seven came to the city on their way to Thebes, Hypsipyle — once queen of Lemnos, now a slave — was nursing the boy. An oracle had warned Lycurgus not to set the child on the ground until he could walk; but when the captains asked Hypsipyle for water, she showed them the way to a spring and left Opheltes behind. A serpent appeared and killed the infant.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.4"
+    },
+    {
+      "text": "The Seven slew the serpent and buried the boy. Amphiaraus told them the sign foreboded the future, and they called him Archemorus. They celebrated the Nemean games in his honour — Adrastus winning the horse-race, Eteoclus the footrace, Tydeus the boxing, Amphiaraus the leaping and quoit-throwing, Laodocus the javelin, Polynices the wrestling, and Parthenopaeus the archery.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.6.4"
+    },
+    {
+      "text": "Pausanias saw his tomb at Nemea, fenced with stones and altars within the enclosure, and explains that celery became the prize at the games to commemorate the sufferings of Archemorus and of Palaemon — the infant death at Nemea paired in cult memory with Melicertes' leap at the Isthmus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.15.3, 8.48.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "nemea",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.4; Description of Greece 2.15.3"
+    }
+  ]
+}

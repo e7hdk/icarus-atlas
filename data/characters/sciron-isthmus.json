@@ -1,0 +1,38 @@
+{
+  "id": "sciron-isthmus",
+  "name": "Sciron",
+  "greekName": "Sciron (Σκίρων)",
+  "romanName": "Sciron",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Isthmus brigand",
+    "the Scironian cliffs"
+  ],
+  "summary": [
+    {
+      "text": "The Corinthian brigand — son of Pelops, or in some accounts of Poseidon — who held the Scironian rocks on the Megarian side of the Isthmus and forced passers-by to wash his feet before kicking them into the sea for a tortoise to devour, until Theseus cast him down by the same death.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 1.2; Fabulae 38; Description of Greece 1.44.8"
+    },
+    {
+      "text": "Distinct from Sciron father of Endeïs, grandfather of Peleus and Telamon on Aegina (`Bibliotheca 3.12.6`), and from the Megarian war-minister Sciron of Athenian royal genealogy in Pausanias — this is the Isthmus robber of the Theseus road.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.12.6; Description of Greece 1.39.6, 1.44.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Megarian territory Sciron held the rocks called Scironian after him. He made travellers wash his feet and, in the act of washing, kicked them into the deep where a huge turtle preyed on them. Theseus seized him by the feet and threw him into the sea; from this the cliffs kept his name, and Pausanias says the Molurian dock beside them was accursed because Sciron dwelt there.",
+      "sources": ["apollodorus", "hyginus", "pausanias", "ovid"],
+      "citation": "Epitome 1.2; Fabulae 38; Description of Greece 1.44.8; Metamorphoses 7.445–447"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.2; Description of Greece 1.44.8"
+    }
+  ]
+}

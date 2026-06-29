@@ -59,8 +59,14 @@
   ],
   "residences": [
     {
+      "city": "iolcus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.235–259; Bibliotheca 1.9.11"
+    },
+    {
       "city": "pylos",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Bibliotheca 1.9.11"
     }
   ]
 }

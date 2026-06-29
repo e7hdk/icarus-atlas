@@ -16,6 +16,11 @@
       "citation": "Odyssey 15.225–260, 15.525–555, 17.120–165, 20.345–390"
     },
     {
+      "text": "He fled horse-pasturing Argos after slaying a kinsman before joining Telemachus at Pylos.",
+      "sources": ["homer"],
+      "citation": "Odyssey 15.272–300"
+    },
+    {
       "text": "Hyginus' catalogue of augurs makes Theoclymenus son of Proteus (with a garbled Thestor/Telemus aside) — not the Polypheides of Homer's Odyssey genealogy (topic theoclymenus-parentage).",
       "sources": ["hyginus"],
       "citation": "Fabulae 128",
@@ -42,15 +47,18 @@
   "residences": [
     {
       "city": "pylos",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–300"
     },
     {
       "city": "ithaca",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 15.225–260, 15.525–555, 17.120–165, 20.345–390"
     },
     {
       "city": "argos",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 15.272–300"
     }
   ]
 }

@@ -67,11 +67,13 @@
     },
     {
       "city": "andania",
-      "sources": ["pausanias", "apollodorus"]
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 4.2.2, 4.3.7; Bibliotheca 1.9.5"
     },
     {
       "city": "sparta",
-      "sources": ["apollodorus", "pausanias"]
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.9.5, 3.10.3–3.10.4; Description of Greece 2.21.7"
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "id": "phylomache-pelias",
+  "name": "Phylomache",
+  "greekName": "Phylomache (Φυλομάχη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Iolcus",
+    "wife of Pelias",
+    "the Amphion variant"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' alternate reckoning, wife of Pelias at Iolcus — daughter of Amphion — by whom the same royal brood of Acastus and the Peliades is sometimes genealogically ordered instead of through Anaxibia daughter of Bias.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10",
+      "topic": "pelias-wife-identity"
+    },
+    {
+      "text": "Homonym guard: Apollodorus names only Amphion without further qualification; the Orchomenian king father of Chloris (`amphion-orchomenus`) stands nearest the Thessalian stemma in the same book, but the Theban lyre-king (`amphion`) remains a rival reading in the scholia.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9–1.9.10",
+      "topic": "pelias-wife-identity"
+    }
+  ],
+  "story": [
+    {
+      "text": "But Pelias dwelt in Thessaly and married Anaxibia, daughter of Bias — according to some his wife was Phylomache, daughter of Amphion — and he begat a son, Acastus, and daughters, Pisidice, Pelopia, Hippothoe, and Alcestis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10",
+      "topic": "pelias-wife-identity"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10",
+      "topic": "pelias-wife-identity"
+    }
+  ]
+}

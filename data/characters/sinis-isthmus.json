@@ -1,0 +1,38 @@
+{
+  "id": "sinis-isthmus",
+  "name": "Sinis",
+  "greekName": "Sinis (Σίνις)",
+  "romanName": "Sinis",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Pine-bender",
+    "Isthmus brigand"
+  ],
+  "summary": [
+    {
+      "text": "Son of Polypemon and Sylea, daughter of Corinthus — a brigand of the Isthmus of Corinth surnamed the Pine-bender, who forced passers-by to bend pine trees and let the recoiling trunks tear them apart until Theseus killed him on the road to Athens.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.16.2; Description of Greece 2.1.4"
+    },
+    {
+      "text": "Not to be confused with any other Sinis figure — this is the Isthmus bandit slain by Theseus, whose name the pine-bending rite commemorates.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.16.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Sinis son of Polypemon and Sylea, daughter of Corinthus, and says he dwelt on the Isthmus of Corinth. He would compel travellers to keep bending pine trees until they were too weak; then the trees, released, dashed them to death. Theseus, coming on foot from Troezen with his father's sword and sandals, killed Sinis by the same device — some say Sinis was his own father by a daughter of Pittheus, and that the hero lay with the girl afterward.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.16.2; Description of Greece 2.1.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.16.2"
+    }
+  ]
+}

@@ -157,31 +157,36 @@
       "city": "kos",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.7.1"
     },
     {
       "city": "ephesus",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.6.3"
     },
     {
       "city": "sardis",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.6.2–2.6.3"
     },
     {
       "city": "thasos",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.5.9"
     },
     {
       "city": "icaria",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.6.3"
     },
     {
       "city": "chios",
@@ -207,25 +212,29 @@
         "apollodorus",
         "apollonius",
         "hyginus"
-      ]
+      ],
+      "citation": "Argonautica 1.1298–1309; Bibliotheca 3.15.2; Fabulae 14.3"
     },
     {
       "city": "cichyrus",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.7.6"
     },
     {
       "city": "croton",
       "sources": [
         "ovid"
-      ]
+      ],
+      "citation": "Metamorphoses 15.1–91"
     },
     {
       "city": "rhegium",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.5.10"
     },
     {
       "city": "phlius",
@@ -299,6 +308,25 @@
         "pausanias"
       ],
       "citation": "Bibliotheca 2.7.4; Description of Greece 8.4.9"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.23–233; Fabulae 14"
+    },
+    {
+      "city": "pherae",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.6.2"
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.7.3, 3.10.5; Description of Greece 3.1.4"
     }
   ]
 }

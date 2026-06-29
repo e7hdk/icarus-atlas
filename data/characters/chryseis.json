@@ -32,11 +32,13 @@
   "residences": [
     {
       "city": "chryse-troad",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 1.111–120, 1.430–432"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 1.111–120, 1.430–432"
     }
   ]
 }

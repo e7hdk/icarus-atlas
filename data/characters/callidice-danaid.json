@@ -1,0 +1,41 @@
+{
+  "id": "callidice-danaid",
+  "name": "Callidice",
+  "greekName": "Kallidikē (Καλλιδίκη)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Pandion"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by Crino — by lot the bride of Pandion son of Egyptus when the sons of Aegyptus married the Danaids at Argos; distinct from Callidice queen of the Thesprotians, wife of Odysseus in Apollodorus' Epitome.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Callidice first among the daughters of Danaus borne on Crino. When the youngest sons of Egyptus by Hephaestine cast lots for the Crino maidens, Pandion drew Callidice. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus counts her among the brides who obeyed Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

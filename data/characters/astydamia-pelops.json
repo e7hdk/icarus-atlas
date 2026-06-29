@@ -1,0 +1,56 @@
+{
+  "id": "astydamia-pelops",
+  "name": "Astydamia",
+  "greekName": "Astydamia (Ἀστυδάμεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "wife of Alcaeus",
+    "mother of Amphitryon",
+    "Pelopid marriage at Mycenae"
+  ],
+  "summary": [
+    {
+      "text": "In Apollodorus' primary account, daughter of Pelops and wife of Alcaeus at Mycenae, mother of Amphitryon and Anaxo — the Perseid queen through whom the Alcaeus line produced both Electryon's consort and the foster-father of Heracles.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    },
+    {
+      "text": "Homonym guard: not Astydamia wife of Acastus at Iolcus (`astydamia-acastus`); not Astydamia daughter of Amyntor among Heracles' lovers (Bibliotheca 2.7.8). Pausanias prefers Laonome daughter of Guneus as Amphitryon's mother — a disputed maternity beneath an undisputed line.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.5; Description of Greece 8.14.2",
+      "topic": "amphitryon-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus records that Alcaeus had a son Amphitryon and a daughter Anaxo by Astydamia, daughter of Pelops — but adds that some say he had them by Laonome, daughter of Guneus, and others by Hipponome, daughter of Menoeceus. Under the primary reading she is the mother of the Perseid prince who slew Electryon and of the woman Electryon married.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5",
+      "topic": "amphitryon-mother"
+    },
+    {
+      "text": "Through Anaxo she became grandmother of Alcmena; through Amphitryon she stood one generation from Heracles himself — though the hero was Zeus' son by guile, the house that reared him was hers by the Alcaeus marriage at Mycenae.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5–8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    }
+  ]
+}

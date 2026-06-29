@@ -94,6 +94,15 @@
       "city": "lesbos",
       "sources": ["ovid"],
       "citation": "Metamorphoses 11.1–99"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.23–318; Fabulae 14"
     }
   ]
 }

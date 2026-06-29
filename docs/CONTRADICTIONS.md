@@ -678,14 +678,14 @@ Significance: the two placements attach Clytemnestra's first husband to differen
 ## What were Agamemnon's daughters called?
 
 - **topic**: `agamemnon-daughters-identities`
-- **Characters**: `agamemnon`, `chrysothemis`, `electra`, `iphigenia`
+- **Characters**: `agamemnon`, `chrysothemis`, `electra`, `iphigenia`, `laodice-atreid`
 
 | Author | Claim | Citation |
 |---|---|---|
 | Homer | Agamemnon names Chrysothemis, Laodice and Iphianassa. | Iliad 9.141–145 |
 | Pseudo-Apollodorus | His catalogue names Chrysothemis, Electra and Iphigenia. | Epitome 3.12 |
 
-Significance: later tradition cannot safely turn Laodice into Electra or Iphianassa into Iphigenia without an explicitly sourced alias claim.
+Significance: later tradition cannot safely turn Laodice into Electra or Iphianassa into Iphigenia without an explicitly sourced alias claim. Homer’s Laodice is entered as `laodice-atreid`, distinct from Laodice daughter of Priam.
 
 ## Who were Iphigenia's parents?
 
@@ -1152,6 +1152,22 @@ Verification: ✓ verified — Odyssey 11.593–600 gives the torment without ca
 Significance: the leader of the Argonauts has two different mothers across the sources — a clean parentage fork that re-wires the maternal line of the saga's hero.
 
 Verification: ✓ verified — Bibliotheca 1.9.16 (Polymede) and Argonautica 1.45–47 / Fabulae 14 (Alcimede) confirmed.
+
+## The mother of Patroclus
+
+- **topic**: `patroclus-mother`
+- **Characters**: `patroclus`, `sthenele-acastus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Patroclus, son of Menoetius, by Sthenele daughter of Acastus. | Bibliotheca 3.13.8 |
+| Pseudo-Apollodorus | The mother of Patroclus was Periopis, daughter of Pheres. | Bibliotheca 3.13.8 |
+| Pseudo-Apollodorus (Philocrates) | The mother of Patroclus was Polymele, daughter of Peleus. | Bibliotheca 3.13.8 |
+| Homer | Patroclus' ghost names only Menoetius as father and the exile from Opus; the mother's name is unstated. | Iliad 23.83–90 |
+
+Significance: Apollodorus records three rival mothers for Achilles' comrade in a single passage — Sthenele of the Iolcan royal house, Periopis of the Pheraean line, or Polymele of Peleus' house — while Homer leaves the maternal line open.
+
+Verification: ✓ verified — Bibliotheca 3.13.8 (Sthenele / Periopis / Polymele) and Iliad 23.83–90 (father only) confirmed against Perseus.
 
 ## Who was Minyas of Orchomenus?
 
@@ -1836,6 +1852,18 @@ Significance: the cliff-monster of the strait is variously a daughter of the obs
 
 Verification: ✓ verified — Homer Od. 12.124–125 (Crataeis) and Apollodorus Epit. 7.20 (Crataeis/Phorcus) confirmed against Perseus; Hyginus' preface places her in the Typhon–Echidna litter.
 
+## Who was Amphitryon's mother?
+
+- **topic**: `amphitryon-mother`
+- **Characters**: `amphitryon`, `anaxo-alcaeus`, `astydamia-pelops`, `alcaeus-perseid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Alcaeus had Amphitryon and Anaxo by Astydamia, daughter of Pelops — but some say by Laonome, daughter of Guneus, and others by Hipponome, daughter of Menoeceus. | Bibliotheca 2.4.5 |
+| Pausanias | Amphitryon is son of Alcaeus by Laonome of Pheneus, daughter of Guneus, and not by Lysidice, daughter of Pelops. | Description of Greece 8.14.2 |
+
+Significance: three rival mothers within and across sources for the Perseid prince who married Alcmena; `astydamia-pelops` carries Apollodorus' primary reading only. Not Astydamia wife of Acastus at Iolcus (`astydamia-acastus`).
+
 ## Whose son is Heracles?
 
 - **topic**: `heracles-father`
@@ -2185,6 +2213,20 @@ Verification: ✓ verified — Apollodorus Epitome 3.8, 6.8; Hyginus Fab. 105; P
 Significance: the queen of sandy Pylos — mother in Apollodorus' full stemma of the princes Homer shows at the feast — bears one name in epic (Eurydice daughter of Clymenus) and another in the mythographer's genealogy (Anaxibia daughter of Cratieus). The same royal household, the same children in later reckoning, but a classic wife-name clash; not to be confused with the homonymous Anaxibia who married Pelias (Bibliotheca 1.9.10).
 
 Verification: ✓ verified — Odyssey 3.450–495 (Eurydice wife of Nestor, daughter of Clymenus), Hyginus Fabulae Trojan catalogue (Thrasymedes by Eurydice), and Pseudo-Apollodorus Bibliotheca 1.9.9 (Anaxibia, daughter of Cratieus) confirmed against the pinned corpus (Perseus).
+
+## Pelias' wife
+
+- **topic**: `pelias-wife-identity`
+- **Characters**: `pelias`, `anaxibia-pelias`, `bias-aeolid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Pelias dwelt in Thessaly and married Anaxibia, daughter of Bias, and begat Acastus and the daughters Pisidice, Pelopia, Hippothoe, and Alcestis — though according to some his wife was Phylomache, daughter of Amphion. | Bibliotheca 1.9.10 |
+| Hyginus | Acastus is son of Pelias and Anaxibia, daughter of Bias, of Iolchus; Alcestis is daughter of Pelias and Anaxibia, Bias' daughter. | Fabulae 14.4, 51 |
+
+Significance: Apollodorus' primary stemma names Anaxibia daughter of Bias as queen of Iolcus and mother of the Peliades, but the same passage records the alternate wife-name Phylomache daughter of Amphion — a quiet genealogical fork within one author. Not to be confused with the homonymous Anaxibia who married Nestor (Bibliotheca 1.9.9) or the Danaid Anaxibia (`anaxibia-danaid`).
+
+Verification: ✓ verified — Bibliotheca 1.9.10 and Hyginus Fabulae 14.4, 51 confirmed against the pinned corpus (Perseus).
 
 ## Who begot Nausithous?
 

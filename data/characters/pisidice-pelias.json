@@ -1,0 +1,43 @@
+{
+  "id": "pisidice-pelias",
+  "name": "Pisidice",
+  "greekName": "Pisidice (Πισιδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Pelias",
+    "one of the Peliades",
+    "Medea's cauldron"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Pelias and Anaxibia (`anaxibia-pelias`) at Iolcus — one of the Peliades named in Apollodorus' stemma beside Pelopia, Hippothoe, Alcestis, and their brother Acastus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "Namesake of Pisidice daughter of Aeolus and of Pisidice daughter of Nestor (`pisidice-nestor`); as a Peliad she belongs to the daughters whom Medea's cauldron trick led to mince and boil their father Pelias on Jason's return.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Pisidice among the daughters whom Pelias begot on Anaxibia, daughter of Bias, at Iolcus — sister to Pelopia, Hippothoe, Alcestis, and Acastus in the genealogical frame that orders the Thessalian royal house before the Argonaut voyage.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "When Jason returned from Colchis, Medea showed Pelias's daughters her art: an old ram cut up and boiled in her cauldron leapt forth a lamb. Trusting the promise of renewed youth, the daughters minced and boiled their father — Apollodorus and Ovid tell the fraud without naming each sister, but the Peliades of Bibliotheca 1.9.10 are the household implicated.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.27; Metamorphoses 7.487–568"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10, 1.9.27"
+    }
+  ]
+}

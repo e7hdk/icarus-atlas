@@ -11,8 +11,8 @@
   "summary": [
     {
       "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — wholly distinct from Laomedon king of Troy, father of Priam, whom Heracles slew when the king defrauded the gods and the hero alike.",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Epitome 7.29; Iliad 5.640–645; Bibliotheca 2.6.4"
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     },
     {
       "text": "Not to be confused with `laomedes-zacynthus`, the earlier name in the same Epitome list, nor with the Trojan royal `laomedon`.",
@@ -30,11 +30,13 @@
   "residences": [
     {
       "city": "zacynthus",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     }
   ]
 }

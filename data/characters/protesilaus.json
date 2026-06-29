@@ -10,6 +10,11 @@
       "text": "Warlike captain of the Phthians who leapt first from his ship at Troy and was slain by a Dardanian warrior ere the black earth held him — elder brother of Podarces, who marshalled the host when the men longed for their fallen leader.",
       "sources": ["homer"],
       "citation": "Iliad 2.695–730, 13.675–720"
+    },
+    {
+      "text": "Hyginus makes his wife Laodamia daughter of Acastus at Iolcus — so the Phthian captain who sailed from Phylace is bound by marriage to the Iolcan house even while Homer leaves his widow wailing in Phylace.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 103–104; Description of Greece 5.17.10"
     }
   ],
   "story": [
@@ -22,9 +27,19 @@
       "text": "About the ship that had borne Protesilaus to Troy but brought him not back to his native land, Achaeans and Trojans joined in close combat when the wall was breached — and his brother Podarces led the Phthians in the forefront.",
       "sources": ["homer"],
       "citation": "Iliad 13.675–720"
+    },
+    {
+      "text": "When Laodamia heard that her husband was first ashore and first to die, she begged the gods for three hours' speech with him — Hyginus names her daughter of Acastus, and Pausanias saw that king on the chest of Cypselus presiding over Pelias' funeral games as father of the Protesilaus who marched against Troy.",
+      "sources": ["hyginus", "pausanias", "apollodorus"],
+      "citation": "Fabulae 103–104; Description of Greece 5.17.10; Epitome 3.30"
     }
   ],
   "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 103–104; cf. Paus. 5.17.10"
+    },
     {
       "city": "phylace-phthiotis",
       "sources": ["homer"],

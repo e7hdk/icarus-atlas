@@ -64,12 +64,18 @@
       "sources": [
         "apollodorus",
         "hyginus"
-      ]
+      ],
+      "citation": "Epitome 2.10–14; Fabulae 86–88; Description of Greece 2.18.1"
     },
     {
       "city": "sicyon",
       "sources": ["hyginus"],
       "citation": "Fabulae 87–88"
+    },
+    {
+      "city": "midea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.6"
     }
   ]
 }

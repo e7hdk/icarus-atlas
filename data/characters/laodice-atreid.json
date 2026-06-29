@@ -1,0 +1,65 @@
+{
+  "id": "laodice-atreid",
+  "name": "Laodice",
+  "greekName": "Laodikē (Λαοδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Agamemnon",
+    "the Mycenaean royal house",
+    "Homeric marriage offer"
+  ],
+  "summary": [
+    {
+      "text": "A daughter of Agamemnon named in the Iliad among the three princesses waiting in the halls at Mycenae — offered with her sisters as bride to Achilles when the king sought to appease the hero's wrath.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 9.141–148"
+    },
+    {
+      "text": "Homonym guard: not Laodice daughter of Priam (`hecuba` catalogue); not Laodice wife of Helicaon and daughter-in-law of Antenor at Troy (Iliad 3); not Laodice daughter of Cinyras in Arcadia (Bibliotheca 3.9.1). Apollodorus replaces Homer's Laodice with Electra — the names must not be silently merged.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 9.141–148; Epitome 2.16",
+      "topic": "agamemnon-daughters-identities"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Agamemnon tried to win Achilles back to the war, he named three daughters in his well-builded hall — Chrysothemis first, then Laodice, then Iphianassa — and offered whichever the hero chose without gifts of wooing, with seven well-peopled cities besides.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 9.141–148",
+      "topic": "agamemnon-daughters-identities"
+    },
+    {
+      "text": "Nestor repeats the same catalogue when he urges Patroclus to remind Achilles of the offer: Chrysothemis, Laodice, and Ophianassa — a slight variation in the third name within Homer's own tradition, but Laodice stands firm in both lists as the middle daughter.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 9.290–325",
+      "topic": "agamemnon-daughters-identities"
+    },
+    {
+      "text": "Apollodorus, in his account of Agamemnon's children, preserves Chrysothemis but names Electra and Iphigenia where Homer had Laodice and Iphianassa. The atlas keeps Homer's Laodice distinct from Apollodorus' Electra under the daughters-identities dispute.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 2.16",
+      "topic": "agamemnon-daughters-identities"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 9.141–148"
+    }
+  ]
+}

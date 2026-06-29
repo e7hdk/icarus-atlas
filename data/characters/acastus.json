@@ -53,12 +53,13 @@
       "citation": "Bibliotheca 3.13.3, 3.13.7"
     },
     {
-      "text": "Pausanias saw him on the chest of Cypselus, presiding over the funeral games of Pelias: among the runners, Iphiclus the winner, and Acastus holding out the crown to him — a figure the traveller judges to be father of the Protesilaus who marched against Troy. The link is Hyginus's, who makes Laodamia, the bride who begged three hours' speech with her dead husband Protesilaus, the daughter of Acastus.",
+      "text": "Pausanias saw him on the chest of Cypselus, presiding over the funeral games of Pelias: among the runners, Iphiclus the winner, and Acastus holding out the crown to him — a figure the traveller judges to be father of the Protesilaus who marched against Troy. The link is Hyginus's, who makes Laodamia, the bride who begged three hours' speech with her dead husband Protesilaus, the daughter of Acastus. Apollodorus in the same book names Sthenele, another daughter of Acastus, as mother of Patroclus in one reckoning of Achilles' companions.",
       "sources": [
         "pausanias",
-        "hyginus"
+        "hyginus",
+        "apollodorus"
       ],
-      "citation": "Description of Greece 5.17.10; Fabulae 103, 104"
+      "citation": "Description of Greece 5.17.10; Fabulae 103, 104; Bibliotheca 3.13.8"
     }
   ],
   "residences": [
@@ -66,6 +67,11 @@
       "city": "iolcus",
       "sources": ["apollodorus", "hyginus", "apollonius"],
       "citation": "Bibliotheca 1.9.10, 1.9.27; Fabulae 14.4; Argonautica 1.224"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.224"
     }
   ]
 }

@@ -64,6 +64,12 @@
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 1.7.2; Hyg. Fab. 155",
       "topic": "hellen-paternity"
+    },
+    {
+      "title": "The sons of Hellen",
+      "text": "Hellen had Dorus, Xuthus, and Aeolus by the nymph Orseis, and divided Hellas among them. Dorus received the country over against the Peloponnese and named the settlers Dorians after himself; Aeolus took Thessaly and Xuthus the Peloponnese — the tripartite partition from which the Greek peoples take their names.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 1.7.3"
     }
   ],
   "cast": [
@@ -74,12 +80,19 @@
     { "id": "themis", "name": "Themis", "role": "Voice of the oracle in Ovid" },
     { "id": "hermes", "name": "Hermes", "role": "Messenger who grants Deucalion's wish" },
     { "id": "hellen", "name": "Hellen", "role": "Father of the Hellenes" },
+    { "id": "dorus-hellene", "name": "Dorus", "role": "Son of Hellen who received Doris and named the Dorians" },
     { "id": "lycaon", "name": "Lycaon", "role": "The impious king who triggered the flood in Ovid" },
     { "id": "pandora", "name": "Pandora", "role": "Mother of Pyrrha in Apollodorus" },
     { "id": "epimetheus", "name": "Epimetheus", "role": "Father of Pyrrha" },
     { "id": "ogyges-boeotia", "name": "Ogyges", "role": "Primeval king in whose reign Boeotia and Attica remembered a flood" }
   ],
-  "places": [],
+  "places": [
+    {
+      "id": "doris",
+      "name": "Doris",
+      "role": "Country Dorus received in Hellen's tripartite division of Hellas"
+    }
+  ],
   "attestations": [
     { "source": "hesiod", "work": "Works and Days", "citation": "109-201" },
     { "source": "apollodorus", "work": "The Library", "citation": "1.7.2, 3.8.1" },

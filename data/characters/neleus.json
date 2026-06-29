@@ -59,8 +59,14 @@
   ],
   "residences": [
     {
+      "city": "iolcus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 11.235–257; Bibliotheca 1.9.8–9; Description of Greece 4.2.5"
+    },
+    {
       "city": "pylos",
-      "sources": ["homer", "apollodorus", "pausanias"]
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 11.257; Bibliotheca 1.9.9; Description of Greece 4.2.5"
     }
   ]
 }

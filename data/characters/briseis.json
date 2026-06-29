@@ -43,11 +43,13 @@
   "residences": [
     {
       "city": "lyrnessus-troad",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 1.392–396, 19.282–300"
     },
     {
       "city": "troy",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 1.392–396, 19.282–300"
     }
   ]
 }

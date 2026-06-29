@@ -1,0 +1,53 @@
+{
+  "id": "heleus-perseid",
+  "name": "Heleus",
+  "greekName": "Heleus (Ἕλεος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Perseid prince of Mycenae",
+    "Helos in Argolis"
+  ],
+  "summary": [
+    {
+      "text": "One of the five sons Perseus and Andromeda reared at Mycenae, brother of Alcaeus, Sthenelus, Mestor, and Electryon — a Perseid prince whose name later attached to Helos in Argolis when he marched as Amphitryon's ally against the Taphians.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5, 2.4.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Heleus among the children Perseus fathered at Mycenae by Andromeda, alongside Alcaeus, Sthenelus, Mestor, and Electryon, with the one daughter Gorgophone whom Perieres married. He stands in the founding brood of the golden citadel before the line passed through Sthenelus to Eurystheus and through Electryon to Alcmena.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    },
+    {
+      "text": "When Amphitryon gathered allies to recover Electryon's stolen cattle from the Taphians, Apollodorus names among his supporters Heleus, son of Perseus, from Helos in Argolis — the Perseid prince lending his name to the settlement he came from, or founding it, in the same campaign that bound the houses of Mycenae and Thebes.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.7"
+    },
+    {
+      "text": "Helos in Argolis is attested only through this ally-list; it must be distinguished from the Laconian Helos Pausanias describes as founded by Helius, youngest son of Perseus, on the Spartan coast. Until a Pleiades fix exists for the Argive settlement, Helos remains documented here rather than entered as a separate city residence.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.7; Description of Greece 3.20.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    }
+  ]
+}

@@ -18,6 +18,12 @@
       "citation": "Apollod. 3.6.1; Hyg. Fab. 67-69"
     },
     {
+      "title": "At Nemea",
+      "text": "On the march to Thebes the host came to Nemea, where Lycurgus son of Pheres was king. Hypsipyle, once queen of Lemnos and now a slave, was nursing Lycurgus' infant Opheltes; an oracle had warned that the child must not be set on the ground until he could walk. When the Seven asked her for water she showed them a spring, leaving the boy behind — and a serpent killed him. They buried Opheltes, renamed him Archemorus at Amphiaraus' reading of the omen, and founded the Nemean games in his honour before ever they reached Thebes.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.6.4"
+    },
+    {
       "title": "Seven captains at seven gates",
       "text": "Seven champions led the host against the seven gates. The boast of Capaneus ended in lightning — Zeus struck him from the wall as he swore not even the gods would keep him out of the city.",
       "sources": ["apollodorus", "pausanias"],
@@ -46,25 +52,35 @@
     { "id": "antigone", "name": "Antigone", "role": "The defiant sister" },
     { "id": "tiresias", "name": "Tiresias", "role": "The blind seer" },
     { "id": "menoeceus-young", "name": "Menoeceus", "role": "The willing sacrifice" },
+    { "id": "haemon", "name": "Haemon", "role": "Creon's son, betrothed to Antigone" },
+    { "id": "eurydice-thebes", "name": "Eurydice", "role": "Creon's wife, mother of Haemon" },
+    { "id": "ismene", "name": "Ismene", "role": "Sister who would not join the burial" },
     { "id": "adrastus", "name": "Adrastus", "role": "King of Argos, leader of the host" },
     { "id": "capaneus", "name": "Capaneus", "role": "The lightning-struck boaster" },
     { "id": "amphiaraus", "name": "Amphiaraus", "role": "The seer who foresaw his death" },
     { "id": "eriphyle", "name": "Eriphyle", "role": "The necklace that sold the seer" },
     { "id": "lycurgus-pronax", "name": "Lycurgus", "role": "Pronax' son, feud with Amphiaraus" },
+    { "id": "lycurgus-nemea", "name": "Lycurgus", "role": "King at Nemea, father of Opheltes" },
+    { "id": "opheltes-nemea", "name": "Opheltes", "role": "The infant Archemorus, founder of the Nemean games" },
+    { "id": "hypsipyle", "name": "Hypsipyle", "role": "Nurse of Opheltes at Nemea" },
     { "id": "hippomedon", "name": "Hippomedon", "role": "Champion at the Oncaidian gate" },
     { "id": "parthenopaeus", "name": "Parthenopaeus", "role": "Champion at the Electran gate" },
     { "id": "tydeus", "name": "Tydeus", "role": "Champion at the Crenidian gate" },
+    { "id": "deipyle", "name": "Deipyle", "role": "Adrastus' daughter, wife of Tydeus and mother of Diomedes" },
     { "id": "laodamas-theban", "name": "Laodamas", "role": "Eteocles' heir" },
     { "id": "sthenelus-epigoni", "name": "Sthenelus", "role": "Epigon, son of Capaneus" },
     { "id": "promachus-epigoni", "name": "Promachus", "role": "Epigon, son of Parthenopaeus" },
     { "id": "polydorus-epigoni", "name": "Polydorus", "role": "Epigon, son of Hippomedon" },
     { "id": "alcmaeon", "name": "Alcmaeon", "role": "Leader of the Epigoni" },
     { "id": "amphilochus", "name": "Amphilochus", "role": "Epigon, brother of Alcmaeon" },
-    { "id": "thersander", "name": "Thersander", "role": "King set up by the Epigoni" }
+    { "id": "thersander", "name": "Thersander", "role": "King set up by the Epigoni" },
+    { "id": "theseus", "name": "Theseus", "role": "King of Athens who later took Thebes for the Argive dead" }
   ],
   "places": [
     { "id": "thebes", "name": "Thebes", "role": "The besieged city" },
-    { "id": "argos", "name": "Argos", "role": "Mustering ground of the Seven" }
+    { "id": "argos", "name": "Argos", "role": "Mustering ground of the Seven" },
+    { "id": "nemea", "name": "Nemea", "role": "Where Opheltes died and the Nemean games were founded" },
+    { "id": "athens", "name": "Athens", "role": "City to which Adrastus would later come as suppliant for the dead" }
   ],
   "attestations": [
     { "source": "apollodorus", "work": "The Library", "citation": "3.6-3.7" },

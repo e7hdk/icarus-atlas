@@ -76,11 +76,13 @@
   "residences": [
     {
       "city": "ithaca",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 3.201–204; Odyssey 11.187–196, 24.365–371; Epitome 3.10, 7.31"
     },
     {
       "city": "cephallenia",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.629–637; Odyssey 4.715–755"
     }
   ]
 }

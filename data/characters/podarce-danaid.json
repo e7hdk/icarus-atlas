@@ -1,0 +1,41 @@
+{
+  "id": "podarce-danaid",
+  "name": "Podarce",
+  "greekName": "Podarkē (Ποδάρκη)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Oeneus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by Pieria — by lot the bride of Oeneus son of Egyptus when the sons of Aegyptus by Gorgo married the Pieria maidens at Argos; distinct from Podarces king of Troy and the Phthian captain Podarces son of Iphiclus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Podarce second among the daughters of Danaus borne on Pieria. When the sons of Egyptus by Gorgo cast lots for the Pieria maidens, Oeneus drew Podarce — a namesake only of Oeneus king of Calydon. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus counts her among the brides who obeyed Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

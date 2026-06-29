@@ -1,0 +1,51 @@
+{
+  "id": "tisiphone-alcmaeon",
+  "name": "Tisiphone",
+  "greekName": "Tisiphōnē (Τισιφόνη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Alcmaeon",
+    "sold at Corinth",
+    "the Euripidean variant"
+  ],
+  "summary": [
+    {
+      "text": "Daughter whom Alcmaeon begot on Manto daughter of Tiresias in the Euripidean variant of his madness — not the Erinys Tisiphone of the Erinyes (`tisiphone-erinyes`); fostered at Corinth by Creon, sold as a slave by the queen, and unknowingly bought back by her father before he recovered his son Amphilochus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus reports a Euripidean strand beside the canonical brother of Alcmaeon born to Eriphyle: in madness Alcmaeon begot Amphilochus and Tisiphone on Manto, daughter of the Theban seer Tiresias, and brought the infants to Creon king of Corinth to be reared.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "topic": "amphilochus-parentage"
+    },
+    {
+      "text": "Because of her extraordinary beauty, Creon's wife feared the king might marry the girl and sold her as a slave. Alcmaeon later bought her as a handmaid without knowing she was his daughter; coming to Corinth to recover his children, he learned the truth and took back both daughter and son.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "topic": "amphilochus-parentage"
+    },
+    {
+      "text": "The name is shared with the Erinys Tisiphone whom Hesiod and Apollodorus name among the Furies born from Uranus' blood — a wholly different figure, kept under the suffixed id `tisiphone-erinyes` in the atlas homonym map.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Bibliotheca 1.1.4; Theogony 185–187"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7"
+    },
+    {
+      "city": "thebes",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7",
+      "topic": "amphilochus-parentage"
+    }
+  ]
+}

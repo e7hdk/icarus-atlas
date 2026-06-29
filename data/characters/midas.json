@@ -41,11 +41,13 @@
   "residences": [
     {
       "city": "sardis",
-      "sources": ["ovid", "apollodorus"]
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 11.130–299; Fabulae 191"
     },
     {
       "city": "gordion",
-      "sources": ["ovid", "hyginus", "pausanias"]
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 11.130–299; Description of Greece 1.4.5"
     }
   ]
 }

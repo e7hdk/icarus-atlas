@@ -47,5 +47,17 @@
       ],
       "citation": "Description of Greece 1.38.2"
     }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.5.2, 1.27.4, 1.38.3"
+    },
+    {
+      "city": "eleusis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.2–1.38.3"
+    }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "id": "electra-danaid",
+  "name": "Electra",
+  "greekName": "Elektra (Ἠλέκτρα)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Peristhenes"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by the Naiad nymph Polyxo — by lot the bride of Peristhenes son of Egyptus when the sons of Aegyptus married the Danaids at Argos; distinct from Electra daughter of Agamemnon, the Pleiad, and the Oceanid.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus lists Electra third among the daughters of Danaus borne on Polyxo. When the twelve sons of Egyptus by Caliadne cast lots for the Polyxo maidens, Peristhenes drew Electra. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus names her among the brides who obeyed Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

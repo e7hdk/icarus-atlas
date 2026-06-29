@@ -1,0 +1,44 @@
+{
+  "id": "asclepius",
+  "name": "Asclepius",
+  "greekName": "Asklēpios (Ἀσκληπιός)",
+  "romanName": "Aesculapius",
+  "type": "god",
+  "cluster": "olympian-band",
+  "domains": [
+    "healing and surgery",
+    "son of Apollo",
+    "father of the leech-princes"
+  ],
+  "summary": [
+    {
+      "text": "God of medicine, son of Apollo — born from Coronis in Thessaly according to most accounts, though the Messenians claimed him for Arsinoe daughter of Leucippus — reared by Chiron on Pelion and father of Machaon and Podalirius, the skilled leeches who led the Triccaean ships to Troy.",
+      "sources": ["apollodorus", "homer", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 3.10.3, 3.10.8; Iliad 2.695–730; Fabulae 14.4, 97; Description of Greece 4.3.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus records the quarrel over his birth. Leucippus begat Arsinoe, and with her Apollo lay and she bore Asclepius — yet some affirm he was not her son but the child of Coronis, daughter of Phlegyas in Thessaly, whom Apollo loved and who lay also with Ischys son of Elatus until the god struck her dead and snatched the infant from the pyre. The child he carried to Chiron the centaur, who reared him and taught the arts of healing and hunting until surgery reached so great a pitch that he kept men from dying and even raised the dead.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.3"
+    },
+    {
+      "text": "Hyginus names him among the Argonauts from Tricca — son of Apollo and Coronis — and in the Trojan roll counts Machaon his son from Tricca with twenty ships and Podalirius the brother with nine, the physician-princes of the western Thessalian plain.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14.4, 97"
+    },
+    {
+      "text": "Homer ranks his sons among the captains of the Catalogue: the two sons of Asclepius, the skilled leeches Podalirius and Machaon, led thirty hollow ships from Tricca, Ithome of the crags, and Oechalia — healers as well as princes, whose art the host could not afford to lose on the day Paris wounded Machaon on the plain.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 4.185–220, 11.601–844"
+    }
+  ],
+  "residences": [
+    {
+      "city": "tricca-thessaly",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14.4, 97"
+    }
+  ]
+}

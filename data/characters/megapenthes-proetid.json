@@ -37,12 +37,30 @@
   ],
   "residences": [
     {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.4; Fabulae 244; Description of Greece 2.16.3"
+    },
+    {
       "city": "argos",
       "sources": [
         "apollodorus",
         "hyginus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
+    },
+    {
+      "city": "tiryns",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
     }
   ]
 }

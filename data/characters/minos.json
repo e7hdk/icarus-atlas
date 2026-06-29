@@ -32,15 +32,18 @@
   "residences": [
     {
       "city": "knossos",
-      "sources": ["apollodorus", "homer"]
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.1.2–4; Odyssey 11.568"
     },
     {
       "city": "gortyn",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 3.291–294"
     },
     {
       "city": "paros",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.7"
     }
   ]
 }

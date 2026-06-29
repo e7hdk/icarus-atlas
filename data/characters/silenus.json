@@ -39,11 +39,13 @@
   "residences": [
     {
       "city": "sardis",
-      "sources": ["ovid"]
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.130–227"
     },
     {
       "city": "gordion",
-      "sources": ["ovid"]
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.130–227"
     }
   ]
 }

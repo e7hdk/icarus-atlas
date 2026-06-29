@@ -26,12 +26,23 @@
       "text": "When the Argonauts touched at Lemnos, Hypsipyle, ruling alone, welcomed them; she lay with Jason and bore sons Euneus and Nebrophonus — and in after days Euneus sent wine from Lemnos to the Achaeans before Troy.",
       "sources": ["apollodorus", "homer"],
       "citation": "Bibliotheca 1.9.17; Iliad 7.467–468"
+    },
+    {
+      "text": "Her later fate tied her to Nemea and the Seven. When the Lemnian women learned that Thoas had survived, they put him to death and sold Hypsipyle into slavery; at Nemea she nursed the infant Opheltes, son of Lycurgus and Eurydice, for the king of that city. When the Seven asked her for water on their march to Thebes, she left the boy to show them a spring — and a serpent killed Opheltes, whose death founded the Nemean games.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.6.4"
     }
   ],
   "residences": [
     {
       "city": "lemnos",
-      "sources": ["apollodorus", "apollonius", "homer"]
+      "sources": ["apollodorus", "apollonius", "homer"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640; Iliad 7.467–468"
+    },
+    {
+      "city": "nemea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.6.4"
     }
   ]
 }

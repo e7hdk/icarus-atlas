@@ -70,7 +70,17 @@
   "residences": [
     {
       "city": "salamis",
-      "sources": ["apollodorus", "apollonius", "pausanias"]
+      "sources": ["apollodorus", "apollonius", "pausanias"],
+      "citation": "Bibliotheca 3.12.6–7; Argonautica 1.90"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.90, 1.234–318; Fabulae 14"
     }
   ]
 }

@@ -3,30 +3,43 @@
   "name": "Chromius",
   "greekName": "Chromios (Χρόμιος)",
   "type": "hero",
-  "domains": ["Lycian warrior", "Odysseus' target"],
+  "domains": [
+    "Lycian warrior",
+    "Odysseus' target"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Lycian in Sarpedon's host from the eddying Xanthus — inferential homeland from the collective Lycian catalogue — whom goodly Odysseus slew with the sharp bronze when Athene turned his mind toward the host; distinct from Chromius among Nestor's Pylians, from Priam's sons, and from the Trojan whom Teucer killed.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 2.876–877, 5.670–710"
     }
   ],
   "story": [
     {
       "text": "After Coeranus fell, Odysseus slew Alastor and Chromius and Alcandrus and Halius and Noëmon and Prytanis among the Lycians, and yet more would he have laid low had not great Hector strode through the foremost fighters.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 5.670–710"
     }
   ],
   "residences": [
     {
       "city": "xanthus-lycia",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.876–877, 5.670–710"
     }
   ]
 }

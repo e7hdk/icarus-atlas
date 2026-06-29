@@ -118,15 +118,18 @@
   "residences": [
     {
       "city": "ithaca",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.629–637; Odyssey 1.1–21; Epitome 3.10"
     },
     {
       "city": "cephallenia",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.629–637; Odyssey 9.21–28"
     },
     {
       "city": "zacynthus",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.629–637; Odyssey 9.21–28"
     },
     {
       "city": "corcyra",
@@ -135,7 +138,8 @@
     },
     {
       "city": "cichyrus",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.34–7.35"
     },
     {
       "city": "aulis-boeotia",
@@ -159,11 +163,13 @@
     },
     {
       "city": "aeaea",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.1–574; Epitome 7.16–7.17"
     },
     {
       "city": "ogygia",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 5.1–170, 7.240–285; Epitome 7.21–23"
     },
     {
       "city": "sparta",

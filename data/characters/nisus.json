@@ -51,8 +51,14 @@
   ],
   "residences": [
     {
+      "city": "athens",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.5–6"
+    },
+    {
       "city": "megara",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.15.8; Metamorphoses 8.1–151"
     }
   ]
 }

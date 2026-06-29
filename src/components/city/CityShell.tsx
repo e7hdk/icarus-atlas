@@ -17,12 +17,15 @@ export function CityShell({
   region,
   parentRegion,
   active,
+  residentCount,
   children,
 }: {
   city: GeoCity;
   region: GeoRegion | undefined;
   parentRegion: GeoRegion | undefined;
   active: CityTab;
+  /** Residents linked via sourced residences — drives the sky tab badge and hint. */
+  residentCount?: number;
   children: React.ReactNode;
 }) {
   return (
@@ -83,10 +86,29 @@ export function CityShell({
                 }`}
               >
                 {tab.label.toUpperCase()}
+                {tab.key === 'sky' && residentCount != null && residentCount > 0 && (
+                  <span className="ml-1.5 font-body text-[10px] tabular-nums tracking-normal text-aether-faint">
+                    {residentCount}
+                  </span>
+                )}
               </Link>
             ))}
           </div>
         </nav>
+
+        {residentCount != null && (
+          <p className="mt-4 text-center font-body text-sm italic text-aether-muted">
+            {residentCount === 0 ? (
+              <>The city sky will populate as residence data grows.</>
+            ) : (
+              <>
+                {residentCount} {residentCount === 1 ? 'figure' : 'figures'} lived here — wander
+                among them in the{' '}
+                <span className="text-nebula-soft/90">City sky</span> tab.
+              </>
+            )}
+          </p>
+        )}
 
         {children}
       </div>

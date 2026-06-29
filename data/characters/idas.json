@@ -63,7 +63,8 @@
   "residences": [
     {
       "city": "arene",
-      "sources": ["apollodorus", "apollonius", "ovid"]
+      "sources": ["apollodorus", "apollonius", "ovid"],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.151–155"
     },
     {
       "city": "messene",
@@ -74,6 +75,11 @@
       "city": "sparta",
       "sources": ["hyginus", "pausanias"],
       "citation": "Fabulae 80; Description of Greece 3.14.7"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.151–155; Fabulae 14"
     }
   ]
 }

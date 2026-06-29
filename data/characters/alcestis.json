@@ -69,8 +69,14 @@
   ],
   "residences": [
     {
+      "city": "iolcus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.15; Fabulae 50–51"
+    },
+    {
       "city": "pherae",
-      "sources": ["homer", "apollodorus", "hyginus"]
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.711–715; Bibliotheca 1.9.15; Fabulae 51"
     }
   ]
 }

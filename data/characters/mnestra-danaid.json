@@ -1,0 +1,41 @@
+{
+  "id": "mnestra-danaid",
+  "name": "Mnestra",
+  "greekName": "Mnestra (Μνήστρα)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Aegius"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus — by lot the bride of Aegius son of Egyptus when the sons of Aegyptus married the Danaids at Argos.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus allots Mnestra to Aegius among the sons of Egyptus who drew lots for Danaus' daughters borne on a Phoenician woman — one of the seven pairings named before the mass slaughter of the wedding night. Hyginus lists her among the brides who killed their husbands.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

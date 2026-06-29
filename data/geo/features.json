@@ -8623,6 +8623,14 @@
           "apollodorus",
           "ovid"
         ]
+      },
+      {
+        "text": "Homer's Catalogue of Ships sets the Magnetes dwelling about the fair-flowing Peneius — forty black ships under Prothous son of Tenthredon beside forested Pelion.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Iliad 2.735–755; Epitome 3.14"
       }
     ],
     "sources": [
@@ -8633,7 +8641,8 @@
     "storyIds": [
       "metamorphoses",
       "daphne-laurel",
-      "io-wandering"
+      "io-wandering",
+      "trojan-war"
     ]
   },
   {
@@ -50644,6 +50653,13 @@
           "apollonius",
           "pausanias"
         ]
+      },
+      {
+        "text": "In the Catalogue of Ships the Magnetes dwelt about Pelion, covered with waving forests — the wooded mountain that bounds their muster beside the Peneius.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.735–755"
       }
     ],
     "sources": [
@@ -50657,7 +50673,8 @@
       "aristaeus-cycle",
       "caenis-caeneus",
       "lapith-centaur-war",
-      "muster-of-the-argo"
+      "muster-of-the-argo",
+      "trojan-war"
     ]
   },
   {
@@ -56014,6 +56031,57 @@
       "orpheus-cycle",
       "orpheus-eurydice",
       "orpheus-songs"
+    ]
+  },
+  {
+    "id": "cheimarrus",
+    "name": "Cheimarrus",
+    "greekName": "Χείμαρρος",
+    "kind": "river",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          22.785,
+          37.612
+        ],
+        [
+          22.798,
+          37.608
+        ],
+        [
+          22.812,
+          37.604
+        ],
+        [
+          22.828,
+          37.599
+        ],
+        [
+          22.844,
+          37.597
+        ]
+      ]
+    },
+    "region": "argolis",
+    "importance": "minor",
+    "placeIds": [
+      "lerna"
+    ],
+    "summary": [
+      {
+        "text": "The Winter-torrent on the Argive road between the Erasinus and Lerna — beside it Pausanias saw a circuit of stones where the Argives said Pluto descended with Kore to his kingdom below.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 2.36.7"
+      }
+    ],
+    "sources": [
+      "pausanias"
+    ],
+    "storyIds": [
+      "hymn-to-demeter"
     ]
   }
 ]

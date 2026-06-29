@@ -1080,6 +1080,16 @@
     }
   },
   {
+    "id": "liguria",
+    "name": "Liguria",
+    "greekName": "Λιγυστική",
+    "parent": null,
+    "blurb": {
+      "text": "Liguria on the Eridanus — where King Cycnus left his peopled cities to mourn Phaethon among the Heliades' poplars and was changed into a swan.",
+      "sources": ["ovid", "hyginus"]
+    }
+  },
+  {
     "id": "campania",
     "name": "Campania",
     "greekName": "Καμπανία",
@@ -1127,6 +1137,26 @@
     "blurb": {
       "text": "Egypt beyond the Greek map — where Io ended her wanderings as a cow, Danaus fled the sons of Aegyptus, and Menelaus was storm-driven for eight years until he bound Proteus on Pharos.",
       "sources": ["homer", "apollodorus", "ovid"]
+    }
+  },
+  {
+    "id": "mesopotamia",
+    "name": "Mesopotamia",
+    "greekName": "Μεσοποταμία",
+    "parent": null,
+    "blurb": {
+      "text": "Mesopotamia at the eastern horizon — Semiramis' brick Babylon where Pyramus and Thisbe whispered through the party wall, and where Ninus' tomb stood outside the city gate.",
+      "sources": ["ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "phoenicia",
+    "name": "Phoenicia",
+    "greekName": "Φοινίκη",
+    "parent": null,
+    "blurb": {
+      "text": "Phoenicia on the Syrian coast — Agenor's kingdom when Zeus bore Europa away in bull-form, and the homeland his sons Cadmus, Phoenix, and Cilix were forbidden to return to without her.",
+      "sources": ["apollodorus", "homer", "ovid"]
     }
   },
   {

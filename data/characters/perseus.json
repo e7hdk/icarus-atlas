@@ -53,14 +53,16 @@
       "sources": [
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
     },
     {
       "city": "seriphos",
       "sources": [
         "apollodorus",
         "hyginus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.1; Fabulae 63"
     },
     {
       "city": "aethiopia",
@@ -76,20 +78,40 @@
       "sources": [
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
+    },
+    {
+      "city": "midea",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
+    },
+    {
+      "city": "tiryns",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
     },
     {
       "city": "megara",
       "sources": [
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
     },
     {
       "city": "larisa",
       "sources": [
-        "apollodorus"
-      ]
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.4; Fabulae 273"
     }
   ]
 }

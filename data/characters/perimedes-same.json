@@ -10,7 +10,7 @@
   ],
   "summary": [
     {
-      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a namesake of Perimedes the comrade of Odysseus who bound him to the mast past the Sirens.",
+      "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue.",
       "sources": ["apollodorus"],
       "citation": "Epitome 7.28"
     }
@@ -30,11 +30,13 @@
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.28"
     }
   ]
 }

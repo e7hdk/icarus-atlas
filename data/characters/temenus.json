@@ -71,7 +71,20 @@
       "sources": [
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.8.4; Description of Greece 2.18.7"
+    },
+    {
+      "city": "temenium",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.7, 2.38.1"
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.8.4; Description of Greece 2.18.7, 3.1.5"
     }
   ]
 }

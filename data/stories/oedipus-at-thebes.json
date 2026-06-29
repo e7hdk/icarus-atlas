@@ -114,6 +114,36 @@
       "id": "antigone",
       "name": "Antigone",
       "role": "Daughter who led the blind father out"
+    },
+    {
+      "id": "ismene",
+      "name": "Ismene",
+      "role": "Daughter of the doomed house"
+    },
+    {
+      "id": "menoeceus",
+      "name": "Menoeceus",
+      "role": "Father of Jocasta and Creon"
+    },
+    {
+      "id": "creon",
+      "name": "Creon",
+      "role": "Regent after Laius, proclaimer of the Sphinx's prize"
+    },
+    {
+      "id": "labdacus",
+      "name": "Labdacus",
+      "role": "Father of Laius, from whom the Labdacids take their name"
+    },
+    {
+      "id": "polybus-corinth",
+      "name": "Polybus",
+      "role": "King of Corinth who raised the exposed infant"
+    },
+    {
+      "id": "periboea-corinth",
+      "name": "Periboea",
+      "role": "Queen who adopted Oedipus and named him for his swollen feet"
     }
   ],
   "places": [
@@ -121,6 +151,11 @@
       "id": "thebes",
       "name": "Thebes",
       "role": "City of the riddle and the curse"
+    },
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "role": "City where Polybus and Periboea raised Oedipus until he fled to Delphi"
     },
     {
       "name": "Delphi",

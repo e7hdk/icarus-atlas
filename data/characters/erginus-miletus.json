@@ -35,7 +35,13 @@
   "residences": [
     {
       "city": "miletus",
-      "sources": ["apollonius", "hyginus"]
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.185; Fabulae 14"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.185; Fabulae 14"
     }
   ]
 }

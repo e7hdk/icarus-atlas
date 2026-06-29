@@ -37,11 +37,13 @@
   "residences": [
     {
       "city": "troy",
-      "sources": ["homer", "apollodorus", "ovid"]
+      "sources": ["homer", "apollodorus", "ovid"],
+      "citation": "Iliad 6.76–102, 7.44–53, 13.576–600; Epitome 5.9–10; Metamorphoses 13.142–295"
     },
     {
       "city": "buthrotum",
-      "sources": ["apollodorus", "ovid", "pausanias"]
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Epitome 6.12–13; Metamorphoses 13.1015–1078; Description of Greece 1.11.1–2"
     }
   ]
 }

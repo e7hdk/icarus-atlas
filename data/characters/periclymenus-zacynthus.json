@@ -12,7 +12,7 @@
     {
       "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — wholly distinct from Periclymenus son of Neleus, the shape-shifting prince of Pylos slain when Heracles sacked the city.",
       "sources": ["apollodorus"],
-      "citation": "Epitome 7.29; Bibliotheca 1.9.9; Odyssey 11.281–287"
+      "citation": "Epitome 7.29"
     }
   ],
   "story": [
@@ -25,11 +25,13 @@
   "residences": [
     {
       "city": "zacynthus",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     }
   ]
 }

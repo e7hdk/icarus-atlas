@@ -91,9 +91,249 @@
       "role": "King of Argos who yielded the kingdom"
     },
     {
-      "id": "gorgophone",
+      "id": "gorgophone-danaid",
       "name": "Gorgophone",
       "role": "Daughter wed to Proteus son of Aegyptus"
+    },
+    {
+      "id": "amymone-danaid",
+      "name": "Amymone",
+      "role": "Daughter who found Poseidon's spring at Argos"
+    },
+    {
+      "id": "automate-danaid",
+      "name": "Automate",
+      "role": "Europe-born bride of Busiris son of Aegyptus by Argyphia"
+    },
+    {
+      "id": "agave-danaid",
+      "name": "Agave",
+      "role": "Europe-born bride of Lycus son of Aegyptus by Argyphia"
+    },
+    {
+      "id": "scaea-danaid",
+      "name": "Scaea",
+      "role": "Europe-born bride of Daiphron son of Aegyptus by Argyphia"
+    },
+    {
+      "id": "evippe-danaid",
+      "name": "Evippe",
+      "role": "Bride of Argius son of Aegyptus"
+    },
+    {
+      "id": "pirene-danaid",
+      "name": "Pirene",
+      "role": "Bride of Agaptolemus son of Aegyptus"
+    },
+    {
+      "id": "phartis-danaid",
+      "name": "Phartis",
+      "role": "Bride of Eurydamas son of Aegyptus"
+    },
+    {
+      "id": "mnestra-danaid",
+      "name": "Mnestra",
+      "role": "Bride of Aegius son of Aegyptus"
+    },
+    {
+      "id": "anaxibia-danaid",
+      "name": "Anaxibia",
+      "role": "Bride of Archelaus son of Aegyptus"
+    },
+    {
+      "id": "dorium-danaid",
+      "name": "Dorium",
+      "role": "Bride of Cercetes son of Aegyptus"
+    },
+    {
+      "id": "nelo-danaid",
+      "name": "Nelo",
+      "role": "Bride of Menemachus son of Aegyptus"
+    },
+    {
+      "id": "clite-danaid",
+      "name": "Clite",
+      "role": "Bride of Clitus son of Aegyptus by Tyria"
+    },
+    {
+      "id": "sthenele-danaid",
+      "name": "Sthenele",
+      "role": "Bride of Sthenelus son of Aegyptus by Tyria"
+    },
+    {
+      "id": "chrysippe-danaid",
+      "name": "Chrysippe",
+      "role": "Bride of Chrysippus son of Aegyptus by Tyria"
+    },
+    {
+      "id": "autonoe-danaid",
+      "name": "Autonoe",
+      "role": "Bride of Eurylochus son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "theano-danaid",
+      "name": "Theano",
+      "role": "Bride of Phantes son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "electra-danaid",
+      "name": "Electra",
+      "role": "Bride of Peristhenes son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "cleopatra-danaid",
+      "name": "Cleopatra",
+      "role": "Bride of Hermus son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "eurydice-danaid",
+      "name": "Eurydice",
+      "role": "Bride of Dryas son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "glaucippe-danaid",
+      "name": "Glaucippe",
+      "role": "Bride of Potamon son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "anthelia-danaid",
+      "name": "Anthelia",
+      "role": "Bride of Cisseus son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "cleodore-danaid",
+      "name": "Cleodore",
+      "role": "Bride of Lixus son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "evippe-polyxo-danaid",
+      "name": "Evippe",
+      "role": "Polyxo-born bride of Imbrus son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "erato-danaid",
+      "name": "Erato",
+      "role": "Bride of Bromius son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "stygne-danaid",
+      "name": "Stygne",
+      "role": "Bride of Polyctor son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "bryce-danaid",
+      "name": "Bryce",
+      "role": "Bride of Chthonius son of Aegyptus by Caliadne"
+    },
+    {
+      "id": "actaea-danaid",
+      "name": "Actaea",
+      "role": "Pieria-born bride of Periphas son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "podarce-danaid",
+      "name": "Podarce",
+      "role": "Pieria-born bride of Oeneus son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "dioxippe-danaid",
+      "name": "Dioxippe",
+      "role": "Pieria-born bride of Egyptus son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "adite-danaid",
+      "name": "Adite",
+      "role": "Pieria-born bride of Menalces son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "ocypete-danaid",
+      "name": "Ocypete",
+      "role": "Pieria-born bride of Lampus son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "pylarge-danaid",
+      "name": "Pylarge",
+      "role": "Pieria-born bride of Idmon son of Aegyptus by Gorgo"
+    },
+    {
+      "id": "hippodice-danaid",
+      "name": "Hippodice",
+      "role": "Herse-born bride of Idas son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "adiante-danaid",
+      "name": "Adiante",
+      "role": "Herse-born bride of Daiphron son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "callidice-danaid",
+      "name": "Callidice",
+      "role": "Crino-born bride of Pandion son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "oeme-danaid",
+      "name": "Oeme",
+      "role": "Crino-born bride of Arbelus son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "celaeno-danaid",
+      "name": "Celaeno",
+      "role": "Crino-born bride of Hyperbius son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "hyperippe-danaid",
+      "name": "Hyperippe",
+      "role": "Crino-born bride of Hippocorystes son of Aegyptus by Hephaestine"
+    },
+    {
+      "id": "hippodamia-istrus-danaid",
+      "name": "Hippodamia",
+      "role": "Hamadryad-born bride of Istrus son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "rhodia-danaid",
+      "name": "Rhodia",
+      "role": "Hamadryad-born bride of Chalcodon son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "cleopatra-agenor-danaid",
+      "name": "Cleopatra",
+      "role": "Hamadryad-born bride of Agenor son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "asteria-danaid",
+      "name": "Asteria",
+      "role": "Hamadryad-born bride of Chaetus son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "hippodamia-diocorystes-danaid",
+      "name": "Hippodamia",
+      "role": "Hamadryad-born bride of Diocorystes son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "glauce-danaid",
+      "name": "Glauce",
+      "role": "Hamadryad-born bride of Alces son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "hippomedusa-danaid",
+      "name": "Hippomedusa",
+      "role": "Hamadryad-born bride of Alcmenor son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "gorge-danaid",
+      "name": "Gorge",
+      "role": "Hamadryad-born bride of Hippothous son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "iphimedusa-danaid",
+      "name": "Iphimedusa",
+      "role": "Hamadryad-born bride of Euchenor son of Aegyptus by an Arabian woman"
+    },
+    {
+      "id": "rhode-danaid",
+      "name": "Rhode",
+      "role": "Hamadryad-born bride of Hippolytus son of Aegyptus by an Arabian woman"
     }
   ],
   "places": [

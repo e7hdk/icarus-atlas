@@ -47,11 +47,13 @@
   "residences": [
     {
       "city": "delos",
-      "sources": ["apollodorus", "hesiod"]
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Theogony 918–920; Bibliotheca 1.4.1"
     },
     {
       "city": "ephesus",
-      "sources": ["pausanias", "hyginus"]
+      "sources": ["pausanias", "hyginus"],
+      "citation": "Description of Greece 4.31.8, 7.2.7; Fabulae 223, 225"
     }
   ]
 }

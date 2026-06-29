@@ -75,12 +75,22 @@
         "homer",
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Iliad 3.236–244; Odyssey 11.298–304; Bibliotheca 3.11.2; Description of Greece 3.14.7, 3.20.1"
     },
     {
       "city": "athens",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Epitome 1.23; Description of Greece 1.41.4"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.146, 1.234–318; Fabulae 14"
     }
   ]
 }

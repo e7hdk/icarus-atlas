@@ -1,0 +1,42 @@
+{
+  "id": "asteria-danaid",
+  "name": "Asteria",
+  "greekName": "Asteria (Ἀστερία)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Chaetus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by the Hamadryad nymphs Atlantia and Phoebe — bride of Chaetus son of Egyptus when the ten Arabian-born sons married the Hamadryad maidens at Argos; distinct from Asteria the Titan daughter of Coeus and Phoebe, mother of Hecate.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus pairs Chaetus with Asteria among the ten sons of Egyptus begotten on an Arabian woman and the ten daughters of Danaus begotten on Hamadryad nymphs. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus names the man she killed as Chaetos rather than Chaetus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170",
+      "topic": "asteria-danaid-husband"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

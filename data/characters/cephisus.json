@@ -16,6 +16,11 @@
       "text": "River-god of Attica and Phocia — born to Oceanus and Tethys in Hesiod's catalogue, father of Narcissus in Ovid and Hyginus, and ancestor through Diogenia of Praxithea and the Athenian royal house; with Inachus and Asterion he judged the dispute between Hera and Poseidon for Argos.",
       "sources": ["hesiod", "ovid", "apollodorus", "pausanias", "hyginus"],
       "citation": "Theogony 337–345; Metamorphoses 3.1–510; Bibliotheca 3.15.1; Description of Greece 2.15.5; Fabulae preface"
+    },
+    {
+      "text": "Pausanias crosses the Attic Cephisus on the road into Athens — tomb, altars, and votives on its banks — distinct from the Phocian stream in Homer and the Argive river of the same name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.37.3–1.37.4"
     }
   ],
   "story": [
@@ -53,7 +58,8 @@
   "residences": [
     {
       "city": "athens",
-      "sources": ["apollodorus", "ovid", "pausanias"]
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Bibliotheca 3.15.1; Metamorphoses 3.1–510; Description of Greece 1.37.3–1.37.4"
     },
     {
       "city": "lilaea-phocis",

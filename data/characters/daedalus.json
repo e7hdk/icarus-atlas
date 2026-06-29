@@ -37,11 +37,13 @@
     },
     {
       "city": "knossos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.4, Epitome 1.8–9; Fabulae 40"
     },
     {
       "city": "gortyn",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.12"
     },
     {
       "city": "syracuse",

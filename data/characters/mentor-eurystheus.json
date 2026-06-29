@@ -1,0 +1,46 @@
+{
+  "id": "mentor-eurystheus",
+  "name": "Mentor",
+  "greekName": "Mentōr (Μέντωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Eurystheus",
+    "fallen in the Heraclid war"
+  ],
+  "summary": [
+    {
+      "text": "A son of Eurystheus king of Mycenae, slain with his brothers when the Athenians refused to surrender the Heraclids and bore the brunt of war with the persecutor of Heracles' children.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    },
+    {
+      "text": "Homonym guard: not Mentor father of Imbrius at Troy (`mentor-trojan`); not Mentor the Ithacan companion of Odysseus who reared Telemachus. Apollodorus names this Mentor only among Eurystheus' sons.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.8.1; Odyssey 2.226–234"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Heraclids fled Eurystheus' wrath after Heracles' apotheosis, the king demanded their surrender from every city that sheltered them. The Athenians refused, fought Eurystheus, and slew his sons — Apollodorus names Mentor after Eurybius and before Perimedes in the catalogue that begins with Alexander and Iphimedon.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5, 2.8.1"
+    }
+  ]
+}

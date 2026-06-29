@@ -55,10 +55,8 @@
   "residences": [
     {
       "city": "pergamon",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.9.1; Epitome 3.17"
     },
     {
       "city": "troy",

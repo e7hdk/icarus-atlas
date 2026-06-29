@@ -60,6 +60,14 @@
         "ovid"
       ],
       "citation": "Apollod. 1.9.27; Ov. Met. 7.487–568"
+    },
+    {
+      "title": "Peleus and the Iolcan betrayal",
+      "text": "At the games celebrated in honor of Pelias, Peleus contended in wrestling with Atalanta. Astydamia, wife of Acastus, fell in love with the guest and, rebuffed, sent word to his wife Antigone that Peleus meant to wed Sterope, daughter of Acastus — on which Antigone hanged herself — and falsely accused Peleus to her husband. Acastus, unwilling to kill the man he had purified, took him hunting on Pelion and deserted him swordless for the centaurs; Chiron restored the blade. Peleus repaid the treachery: with Jason and the Dioscuri he laid Iolcus waste, slaughtered Astydamia, and cut her limb from limb to lead his army through her into the city.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. 3.13.3, 3.13.7"
     }
   ],
   "cast": [
@@ -99,6 +107,21 @@
       "role": "Usurper boiled by his daughters"
     },
     {
+      "id": "pisidice-pelias",
+      "name": "Pisidice",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
+    },
+    {
+      "id": "pelopia-pelias",
+      "name": "Pelopia",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
+    },
+    {
+      "id": "hippothoe-pelias",
+      "name": "Hippothoe",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
+    },
+    {
       "id": "acastus",
       "name": "Acastus",
       "role": "Son of Pelias who buried him and expelled Jason and Medea"
@@ -112,6 +135,36 @@
       "id": "hera",
       "name": "Hera",
       "role": "She who saved the Argo at the Rocks"
+    },
+    {
+      "id": "peleus",
+      "name": "Peleus",
+      "role": "Hero who wrestled Atalanta and sacked Iolcus after Acastus' betrayal"
+    },
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "role": "Wrestling rival at Pelias' funeral games"
+    },
+    {
+      "id": "chiron",
+      "name": "Chiron",
+      "role": "Centaur who restored Peleus' sword on Pelion"
+    },
+    {
+      "id": "astydamia-acastus",
+      "name": "Astydamia",
+      "role": "Queen whose false accusation drove the betrayal"
+    },
+    {
+      "id": "sterope-acastus",
+      "name": "Sterope",
+      "role": "Daughter of Acastus named in the lie to Antigone"
+    },
+    {
+      "id": "antigone-peleus",
+      "name": "Antigone",
+      "role": "Wife of Peleus who hanged herself on the false report"
     }
   ],
   "places": [

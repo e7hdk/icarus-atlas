@@ -11,30 +11,44 @@
   "summary": [
     {
       "text": "One of the twenty-three suitors from Same on Cephallenia in Apollodorus' catalogue — a mortal namesake of Cerberus the hound of Hades, wholly distinct from the chthonic beast of Heracles' twelfth labour.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     }
   ],
   "story": [
     {
       "text": "Apollodorus names Cerberus among the wooers assigned to Same, listed after Antisthenes and before Perimedes in Epitome 7.28 — a man who shares the hound's name and nothing more.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Epitome 7.28"
     },
     {
       "text": "Homer knows the underworld hound without the name Cerberus; Hesiod, Apollodorus, and Hyginus make Cerberus the brazen-voiced guard of Hades whom Heracles fetched up — not this Cephallenian wooer.",
-      "sources": ["homer", "hesiod", "apollodorus"],
+      "sources": [
+        "homer",
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Odyssey 11.50–90; Theogony 311–312; Bibliotheca 2.5.12; Epitome 7.28"
     }
   ],
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 7.28"
     }
   ]
 }

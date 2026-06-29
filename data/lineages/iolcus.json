@@ -2,6 +2,13 @@
   "city": "iolcus",
   "reigns": [
     {
+      "ruler": "Cretheus",
+      "characterId": "cretheus",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.9.11; Od. 11.235–259",
+      "note": "Aeolid founder who married Tyro and begot Aeson, Amythaon, and Pheres."
+    },
+    {
       "ruler": "Pelias",
       "characterId": "pelias",
       "sources": ["homer", "apollodorus", "apollonius"],
@@ -21,6 +28,13 @@
       "sources": ["apollodorus", "apollonius"],
       "citation": "Apollod. 1.9.27; Arg. 3.1–4",
       "note": "Returned from Colchis with the fleece and Medea; in Apollodorus' account he succeeds after Pelias' death."
+    },
+    {
+      "ruler": "Acastus",
+      "characterId": "acastus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.27; Fabulae 14",
+      "note": "Son of Pelias who buried his father and expelled Jason and Medea; ruled Iolcus after the cauldron."
     }
   ]
 }

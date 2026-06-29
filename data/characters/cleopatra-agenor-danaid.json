@@ -1,0 +1,41 @@
+{
+  "id": "cleopatra-agenor-danaid",
+  "name": "Cleopatra",
+  "greekName": "Kleopatra (Κλεοπάτρα)",
+  "type": "mortal",
+  "domains": [
+    "Danaid",
+    "bride of Agenor"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the fifty daughters of Danaus by the Hamadryad nymphs Atlantia and Phoebe — bride of Agenor son of Egyptus when the ten Arabian-born sons married the Hamadryad maidens at Argos; distinct from Cleopatra daughter of Danaus by Polyxo, wife of Hermus, and from Cleopatra daughter of Boreas, wife of Meleager.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus pairs Agenor with Cleopatra among the ten sons of Egyptus begotten on an Arabian woman and the ten daughters of Danaus begotten on Hamadryad nymphs. On the wedding night she received her father's dagger and, like her sisters, slew her bridegroom — Hyginus counts her among the brides who obeyed Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 170"
+    }
+  ]
+}

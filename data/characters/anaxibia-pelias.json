@@ -1,0 +1,44 @@
+{
+  "id": "anaxibia-pelias",
+  "name": "Anaxibia",
+  "greekName": "Anaxibia (Ἀναξιβία)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Iolcus",
+    "wife of Pelias",
+    "mother of the Peliades"
+  ],
+  "summary": [
+    {
+      "text": "Wife of Pelias at Iolcus in Apollodorus and Hyginus — daughter of Bias (`bias-aeolid`) — by whom he begot Acastus and the daughters Pisidice, Pelopia, Hippothoe, and Alcestis.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.10; Fabulae 14.4, 51"
+    },
+    {
+      "text": "Homonym guard: not Anaxibia daughter of Cratieus, wife of Nestor (`anaxibia-nestor`); not Anaxibia the Danaid bride of Archelaus (`anaxibia-danaid`). Apollodorus notes that some give Pelias's wife as Phylomache, daughter of Amphion, instead (topic pelias-wife-identity).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9–1.9.10",
+      "topic": "pelias-wife-identity"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Pelias dwelt in Thessaly he married Anaxibia, daughter of Bias, and begat a son, Acastus, and daughters, Pisidice, Pelopia, Hippothoe, and Alcestis — the royal brood from which the Iolcan succession and the Pheraean queen Alcestis both descend.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.10"
+    },
+    {
+      "text": "Hyginus names the same queen at the wooing of Alcestis: many suitors sought the daughter of Pelias and Anaxibia, Bias' daughter, until Admetus won her by yoking a lion and a boar to a chariot with Apollo's help.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 51"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.10; Fabulae 14.4, 51"
+    }
+  ]
+}

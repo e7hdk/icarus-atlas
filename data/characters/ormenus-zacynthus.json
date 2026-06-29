@@ -11,8 +11,8 @@
   "summary": [
     {
       "text": "One of the forty-four suitors from Zacynthus in Apollodorus' catalogue — distinct from Ormenus father of Amyntor in Phoenix's genealogy at the court of Peleus.",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Epitome 7.29; Iliad 9.434–447"
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     }
   ],
   "story": [
@@ -25,11 +25,13 @@
   "residences": [
     {
       "city": "zacynthus",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 7.29"
     }
   ]
 }

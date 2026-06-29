@@ -3,17 +3,23 @@ import type { ProseSegment } from './parse-prose';
 import bakedJson from '../../../data/generated/linked-prose.json';
 
 export interface BakedStoryProse {
+  /** Per-entity bake fingerprint — build artifact only, ignored at runtime. */
+  signature?: string;
   summary: ProseSegment[];
   chapters: ProseSegment[][];
 }
 
 export interface BakedCharacterProse {
+  /** Per-entity bake fingerprint — build artifact only, ignored at runtime. */
+  signature?: string;
   summary: ProseSegment[][];
   story: ProseSegment[][];
 }
 
 export interface BakedLinkedProse {
   signature: string;
+  /** Global name-roster fingerprint — when it changes, every entity rebakes. */
+  namesSignature?: string;
   stories: Record<string, BakedStoryProse>;
   characters: Record<string, BakedCharacterProse>;
 }

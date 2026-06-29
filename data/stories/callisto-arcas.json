@@ -54,6 +54,14 @@
         "pausanias"
       ],
       "citation": "Ov. Met. 2.496–530; Apollod. 3.8.2; Paus. 8.3.6–7"
+    },
+    {
+      "title": "Arcas divides the land",
+      "text": "When Arcas grew to kingship he divided Arcadia among his sons. Pausanias records that he named Azania for Azan, that Cleitor son of Azan became the most powerful of the Arcadian kings and founded the city Cleitor on the northern plain, and that Lycosura on Mount Lycaeus — which Pausanias calls the oldest city on earth — was seat of Cleitor and cradle of the Lycaean cult of Zeus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 8.4.3–8.4.5, 8.2.1, 8.38.1"
     }
   ],
   "cast": [
@@ -86,6 +94,16 @@
       "id": "lycaon",
       "name": "Lycaon",
       "role": "Arcadian king, Callisto's father"
+    },
+    {
+      "id": "azan",
+      "name": "Azan",
+      "role": "Son of Arcas, eponym of Azania"
+    },
+    {
+      "id": "cleitor",
+      "name": "Cleitor",
+      "role": "Son of Azan who founded Cleitor and ruled from Lycosura"
     }
   ],
   "places": [
@@ -103,6 +121,21 @@
       "id": "mantinea",
       "name": "Mantinea",
       "role": "Arcadian city that kept Arcas' grave"
+    },
+    {
+      "id": "azania",
+      "name": "Azania",
+      "role": "District Arcas named for his son Azan"
+    },
+    {
+      "id": "cleitor",
+      "name": "Cleitor",
+      "role": "City Cleitor son of Azan founded on the northern plain"
+    },
+    {
+      "id": "lycosura",
+      "name": "Lycosura",
+      "role": "Oldest city on earth, seat of Cleitor and the Lycaean Zeus"
     }
   ],
   "attestations": [
@@ -124,7 +157,7 @@
     {
       "source": "pausanias",
       "work": "Description of Greece",
-      "citation": "8.3.6–7"
+      "citation": "8.3.6–7, 8.4.3–8.4.5"
     }
   ]
 }

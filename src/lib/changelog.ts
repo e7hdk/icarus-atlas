@@ -14,6 +14,19 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.2.2',
+    codename: 'The Named Dwellings and the Incremental Forge',
+    date: '2026-06-29',
+    lines: [
+      'At last every residence upon the map carries its witness — two thousand three hundred and twenty-nine dwellings cited to the ancient line, each star’s sojourn in a polis bound to the very passage that names it, so the lens may never show a home without the scroll that proves it.',
+      'Five figures alone keep their citation in the story alone — a Same-roll suitor at Dulichium, a prophetess at Argos who never sat the throne, and at Troy a river, a nymph of Ida, and a prince the Catalogue never called by name — for some truths live only in the prose, and the atlas will not pretend otherwise.',
+      'The Odyssey’s western islands were sealed in turn — Dulichium and Same, Zacynthus and long-suffering Ithaca, every insolent suitor and every dual-catalogue wanderer given the roll that belongs to his shore, and Homeric guests at Pylos beside the Neleid house under Nestor’s sandy court.',
+      'Then the far harbours took their turn — Colchis and the Phaeacian Corcyra, Lycia under Xanthus and the Mysian Pergamon of Telephus, Knossos and Gortyn with their Minos threads drawn apart, Delos where Leto laboured, and Samothrace where Dardanus first touched the island of mysteries.',
+      'The city sky learned to speak its own census — how many figures dwelt beneath each polis, a glass panel over the compact heavens, and for the empty shores a quiet nebula that sends the traveller back to lineage and map until the data catches up with the myth.',
+      'And the forge of linked prose was taught incrementality — no longer must a single edited line rebake the whole catalogue of names; each tale and each star keeps its own seal, that the dev fire may skip what still holds true and burn only what changed.',
+    ],
+  },
+  {
     version: '0.2.1',
     codename: 'The Bound Shores and the City Skies',
     date: '2026-06-28',

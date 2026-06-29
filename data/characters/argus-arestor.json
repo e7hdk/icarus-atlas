@@ -40,10 +40,16 @@
     {
       "city": "argos",
       "sources": [
-        "hyginus",
+        "hyginus"
+      ],
+      "citation": "Fabulae 14"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
         "apollonius"
       ],
-      "citation": "Fabulae 14; Argonautica 1.111–114"
+      "citation": "Argonautica 1.111–114, 1.321–326"
     }
   ]
 }

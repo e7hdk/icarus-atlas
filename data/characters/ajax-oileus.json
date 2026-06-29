@@ -44,11 +44,13 @@
   "residences": [
     {
       "city": "opous-locris",
-      "sources": ["homer", "hyginus"]
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.527–535; Fabulae 97"
     },
     {
       "city": "troy",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.527–535, 17.250–270"
     },
     {
       "city": "myconos",

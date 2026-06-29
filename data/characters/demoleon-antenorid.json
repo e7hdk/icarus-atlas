@@ -3,26 +3,37 @@
   "name": "Demoleon",
   "greekName": "Dēmoeleōn (Δημοέλεων)",
   "type": "hero",
-  "domains": ["son of Antenor", "valiant warder of battle", "Achilles' target"],
+  "domains": [
+    "son of Antenor",
+    "valiant warder of battle",
+    "Achilles' target"
+  ],
   "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Son of Antenor, a valiant warder of battle, whom Achilles pierced in the temple through the helmet with cheek-pieces of bronze when the chariots of the Achaeans tore Iphition asunder in the forefront of the fray — brother of Archelochus and Acamas among the Dardanian captains.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 20.375–415"
     }
   ],
   "story": [
     {
       "text": "Over Iphition the chariots of the Achaeans tore asunder with their tires in the forefront of the fray, and over him Demoleon, Antenor's son, a valiant warder of battle, did Achilles pierce in the temple through the helmet with cheek-pieces of bronze. Nor did the bronze helm stay the spear, but through it sped the spear-point and brake asunder the bone; and all the brain was scattered about within.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Iliad 20.375–415"
     }
   ],
   "residences": [
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 20.375–415"
     }
   ]
 }

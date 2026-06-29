@@ -27,11 +27,13 @@
   "residences": [
     {
       "city": "xanthus-lycia",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.876–877, 6.119–236"
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.876–877, 6.119–236, 12.387–397"
     }
   ]
 }

@@ -55,8 +55,14 @@
   ],
   "residences": [
     {
+      "city": "iolcus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 11.235–259; Bibliotheca 1.9.11"
+    },
+    {
       "city": "pherae",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.11, 1.9.14"
     }
   ]
 }

@@ -27,11 +27,13 @@
   "residences": [
     {
       "city": "knossos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.2"
     },
     {
       "city": "gortyn",
-      "sources": ["apollodorus", "homer"]
+      "sources": ["apollodorus", "homer"],
+      "citation": "Iliad 2.645–650; Bibliotheca 3.1.2"
     }
   ]
 }

@@ -68,12 +68,18 @@
   "residences": [
     {
       "city": "pherae",
-      "sources": ["homer", "apollodorus", "hyginus"]
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.711–715; Bibliotheca 1.9.14–15; Fabulae 49, 51"
     },
     {
       "city": "aulis-boeotia",
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 2.711–715; Epitome 3.11"
+    },
+    {
+      "city": "pagasae",
+      "sources": ["apollonius", "apollodorus", "hyginus"],
+      "citation": "Argonautica 1.49; Bibliotheca 1.9.16; Fabulae 14"
     }
   ]
 }

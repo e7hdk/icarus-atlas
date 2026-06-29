@@ -19,11 +19,12 @@
       "citation": "Iliad 16.1–45, 480–505; 23.83–90"
     },
     {
-      "text": "Apollodorus reckons him son of Menoetius who, in a quarrel over dice at Opus, slew the boy Clitonymus son of Amphidamas and fled with his father to dwell with Peleus.",
+      "text": "Apollodorus reckons him son of Menoetius and Sthenele, daughter of Acastus at Iolcus — though the same passage names Periopis daughter of Pheres, or Polymele daughter of Peleus according to Philocrates, as rival mothers. In the dice-quarrel at Opus he slew the boy Clitonymus son of Amphidamas and fled with his father to dwell with Peleus.",
       "sources": [
         "apollodorus"
       ],
-      "citation": "Bibliotheca 3.13.8"
+      "citation": "Bibliotheca 3.13.8",
+      "topic": "patroclus-mother"
     }
   ],
   "story": [
@@ -66,7 +67,8 @@
   "residences": [
     {
       "city": "opous-locris",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 23.83–90; Bibliotheca 3.13.8"
     },
     {
       "city": "phylace-phthiotis",
@@ -90,7 +92,8 @@
     },
     {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 16.1–45, 480–505"
     },
     {
       "city": "aulis-boeotia",

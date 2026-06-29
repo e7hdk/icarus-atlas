@@ -48,59 +48,107 @@
       "trojan-war"
     ],
     "characterIds": [
-      "cadmus",
-      "harmonia",
-      "autonoe",
       "actaeon",
-      "ino",
-      "semele",
-      "dionysus",
-      "learchus",
-      "melicertes",
+      "adrastus",
+      "aegialeus-adrastid",
       "agave",
-      "echion",
-      "pentheus",
-      "polydorus",
-      "nycteis",
-      "labdacus",
-      "udaeus",
-      "chthonius-spartos",
-      "hyperenor-spartos",
-      "pelorus-spartos",
-      "nycteus",
-      "antiope",
-      "lycus",
-      "dirce",
+      "alcmaeon",
+      "alcmene",
+      "alectryon-boeotian",
+      "amphiaraus",
+      "amphilochus",
       "amphion",
-      "zethus",
-      "niobe",
-      "laius",
-      "oedipus",
-      "jocasta",
-      "euryganeia",
-      "sphinx",
-      "tiresias",
-      "manto",
-      "eteocles",
-      "polynices",
+      "amphitryon",
+      "andropompus-theban",
       "antigone",
-      "ismene",
+      "antiope",
+      "arcesilaus",
+      "areilycus-achaean",
+      "argia-adrastid",
+      "aristaeus",
+      "asopus",
+      "athamas",
+      "autesion-theban",
+      "autonoe",
+      "cadmus",
+      "capaneus",
+      "chariclo",
+      "chloris-neleus",
+      "chthonius-spartos",
+      "cleobule-boeotian",
+      "clonius",
       "creon",
+      "damasichthon-theban",
+      "deipyle",
+      "demonassa-amphiarid",
+      "diomedes",
+      "dionysus",
+      "dirce",
+      "echion",
+      "eriphyle",
+      "eteocles",
+      "euryalus-aeolid",
       "eurydice-thebes",
+      "euryganeia",
+      "everes",
       "haemon",
+      "harmonia",
+      "helle",
+      "heracles",
+      "hippomedon",
+      "hyperenor-spartos",
+      "ino",
+      "iolaus",
+      "iphicles",
+      "ismene",
+      "jocasta",
+      "labdacus",
+      "lacritus-boeotian",
+      "laius",
+      "laodamas-theban",
+      "learchus",
+      "leitus",
+      "licymnius",
+      "linus-orpheus",
+      "lycus",
+      "manto",
+      "megara",
+      "melia-thebes",
+      "melicertes",
       "menoeceus",
       "menoeceus-young",
-      "laodamas-theban",
-      "thersander",
-      "peneleos",
-      "tisamenus-theban",
-      "demonassa-amphiarid",
-      "autesion-theban",
+      "niobe",
+      "nycteis",
+      "nycteus",
+      "oedipus",
+      "ogyges-boeotia",
       "opheltes-peneleid",
-      "damasichthon-theban",
+      "parthenopaeus",
+      "pelorus-spartos",
+      "peneleos",
+      "perimede-amphitryon",
+      "pentheus",
+      "polydorus",
+      "polydorus-epigoni",
+      "polynices",
+      "promachus-epigoni",
+      "prothoenor",
       "ptolemy-theban",
+      "semele",
+      "sphinx",
+      "sthenelus-epigoni",
+      "stichius-boeotian",
+      "thebe",
+      "theobula-boeotian",
+      "theras",
+      "thersander",
+      "tiresias",
+      "tisiphone-alcmaeon",
+      "tisamenus-theban",
+      "tydeus",
+      "udaeus",
       "xanthus-theban",
-      "andropompus-theban"
+      "zethus"
     ]
   },
   {
@@ -131,6 +179,24 @@
     "storyIds": [
       "birth-and-banishment",
       "trophonius-at-lebadeia"
+    ],
+    "characterIds": [
+      "actaeon",
+      "actor-azeus",
+      "agamedes-orchomenus",
+      "alcimede",
+      "amphion-orchomenus",
+      "ascalaphus-minyan",
+      "astyoche-minyan",
+      "chloris-neleus",
+      "clymene-minyas",
+      "clymenus-orchomenus",
+      "elara-orchomenus",
+      "erginus-orchomenus",
+      "heracles",
+      "ialmenus-minyan",
+      "minyas-orchomenus",
+      "trophonius-orchomenus"
     ]
   },
   {
@@ -177,29 +243,101 @@
       "twelve-labours"
     ],
     "characterIds": [
-      "perseus",
-      "andromeda",
-      "alcaeus-perseid",
-      "sthenelus-perseid",
-      "mestor-perseid",
-      "electryon",
-      "licymnius",
-      "amphitryon",
-      "alcmene",
-      "eurystheus",
-      "heracles",
-      "atreus",
-      "thyestes",
+      "aegisthus",
       "aerope",
       "agamemnon",
-      "clytemnestra",
-      "tantalus-clytemnestra-husband",
-      "iphigenia",
-      "electra",
-      "chrysothemis",
+      "aglaus",
+      "alcaeus-perseid",
+      "alcyone-sthenelid",
+      "alcmene",
+      "alexander-eurystheus",
+      "amphitryon",
+      "anaxibia-atreid",
+      "anaxo-alcaeus",
+      "andromeda",
+      "archelaus-electryonid",
+      "astydamia-pelops",
+      "atreus",
+      "callileon",
       "cassandra",
-      "aegisthus",
-      "orestes"
+      "chrysothemis",
+      "clytemnestra",
+      "electra",
+      "electryon",
+      "erigone",
+      "eurybius-eurystheus",
+      "eurystheus",
+      "gorgophone",
+      "gorgophonus-electryonid",
+      "heleus-perseid",
+      "heracles",
+      "hermione",
+      "hippothoe-mestor",
+      "iphicles",
+      "iphigenia",
+      "iphimedon-eurystheus",
+      "laodice-atreid",
+      "licymnius",
+      "lysiddice-pelops",
+      "medusa-sthenelid",
+      "megapenthes-proetid",
+      "megapenthes",
+      "menelaus",
+      "mentor-eurystheus",
+      "mestor-perseid",
+      "midea-phrygian",
+      "nicostratus",
+      "nicippe",
+      "orchomenus",
+      "orestes",
+      "pelopia",
+      "penthilus",
+      "perimede-amphitryon",
+      "perimedes-eurystheus",
+      "perseus",
+      "plisthenes",
+      "pylades",
+      "sthenelus-perseid",
+      "stratobates-electryonid",
+      "tantalus-clytemnestra-husband",
+      "tantalus-infant",
+      "thyestes",
+      "tisamenus"
+    ]
+  },
+  {
+    "id": "midea",
+    "name": "Midea",
+    "greekName": "Μιδέα",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.833,
+      37.612
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570485",
+    "importance": "major",
+    "cityId": "midea",
+    "summary": [
+      {
+        "text": "Midea on the eastern Argive plain — the citadel Perseus fortified beside Mycenae and Tiryns when he exchanged Argos for Megapenthes' kingdom; Pausanias places it on the road from Tiryns toward Epidaurus.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 2.4.4; Description of Greece 2.16.3"
+      }
+    ],
+    "storyIds": [
+      "perseus-cycle",
+      "return-and-mycenae"
+    ],
+    "characterIds": [
+      "perseus",
+      "sthenelus-perseid",
+      "atreus",
+      "thyestes"
     ]
   },
   {
@@ -246,64 +384,148 @@
       "trojan-war"
     ],
     "characterIds": [
-      "phoroneus",
+      "abas",
+      "actaea-danaid",
+      "acrisius",
+      "adrastus",
+      "adiante-danaid",
+      "adite-danaid",
+      "aegialeus-adrastid",
+      "aegialia-adrastid",
+      "agenor-argive",
+      "agave-danaid",
+      "alcaeus-perseid",
+      "alcmaeon",
+      "alcmene",
+      "alector-anaxagoras",
+      "amphiaraus",
+      "amphilochus",
+      "amphithea-adrastid",
+      "amphitryon",
+      "amymone-danaid",
+      "anaxagoras-argos",
+      "anaxibia-danaid",
+      "asteria-danaid",
+      "anthelia-danaid",
+      "autonoe-danaid",
+      "automate-danaid",
+      "antiphates-melampid",
+      "apis-phoroneus",
+      "argeus-argos",
+      "argia-adrastid",
+      "argus-arestor",
+      "argus-eponym",
+      "aristomachus-aeolid",
+      "bias-aeolid",
+      "bryce-danaid",
+      "callidice-danaid",
+      "capaneus",
+      "celaeno-danaid",
+      "chrysippe-danaid",
+      "cleopatra-agenor-danaid",
+      "cleopatra-danaid",
+      "cleodore-danaid",
+      "cleitus-melampid",
+      "clite-danaid",
+      "clymene-catreus",
+      "cometes-argolis",
+      "criasus-argive",
+      "crotopus-argive",
+      "cyanippus-adrastid",
+      "cylarabes-sthenelid",
+      "danae",
+      "danaus",
+      "deiphontes",
+      "deipyle",
+      "demonassa-amphiarid",
+      "diomedes",
+      "dioxippe-danaid",
+      "dorium-danaid",
+      "electryon",
+      "electra-danaid",
+      "eurydice-danaid",
+      "erato-danaid",
+      "erigone",
+      "eriphyle",
+      "euryalus-aeolid",
+      "eurystheus",
+      "evippe-danaid",
+      "evippe-polyxo-danaid",
+      "gelanor-argive",
+      "gorgophone",
+      "gorgophone-danaid",
+      "glaucippe-danaid",
+      "glauce-danaid",
+      "gorge-danaid",
+      "hermione",
+      "hippodamia-diocorystes-danaid",
+      "hippodamia-istrus-danaid",
+      "hippodice-danaid",
+      "hippomedusa-danaid",
+      "hippomedon",
+      "hyperippe-danaid",
+      "hypermnestra",
+      "hyrnetho",
+      "iasus-argive",
+      "idmon",
       "inachus",
       "io",
-      "danaus",
-      "hypermnestra",
-      "lynceus",
-      "abas",
-      "acrisius",
-      "proetus",
-      "perseus",
-      "megapenthes-proetid",
-      "gorgophone",
-      "alcaeus-perseid",
-      "sthenelus-perseid",
-      "mestor-perseid",
-      "melampus",
-      "bias-aeolid",
-      "talaus-aeolid",
-      "adrastus",
-      "argia-adrastid",
-      "aegialeus-adrastid",
-      "amphithea-adrastid",
-      "aegialia-adrastid",
-      "cyanippus-adrastid",
-      "mecisteus-aeolid",
-      "euryalus-aeolid",
-      "pronax-aeolid",
-      "capaneus",
-      "sthenelus-epigoni",
-      "promachus-epigoni",
-      "polydorus-epigoni",
-      "parthenopaeus",
-      "amphiaraus",
-      "oicles",
-      "antiphates-melampid",
-      "mantius-melampid",
-      "cleitus-melampid",
-      "eriphyle",
-      "alcmaeon",
-      "amphilochus",
-      "lycurgus-pronax",
-      "aristomachus-aeolid",
-      "hippomedon",
-      "deipyle",
-      "tydeus",
-      "diomedes",
-      "argeus-argos",
-      "anaxagoras-argos",
-      "alector-anaxagoras",
+      "iphicles",
+      "iphimedusa-danaid",
       "iphis-anaxagoras",
-      "cylarabes-sthenelid",
+      "leodocus",
+      "licymnius",
+      "linus-psamathe",
+      "lycurgus-pronax",
+      "lynceus",
+      "mantius-melampid",
+      "mecisteus-aeolid",
+      "megapenthes-proetid",
+      "melampus",
+      "mestor-perseid",
+      "mnestra-danaid",
+      "nauplius-amymone",
+      "nelo-danaid",
+      "niobe-phoroneus",
+      "oiax",
+      "oicles",
+      "oeme-danaid",
+      "ocypete-danaid",
       "orestes",
-      "tisamenus",
-      "temenus",
-      "hyrnetho",
-      "deiphontes",
+      "palamedes",
+      "parthenopaeus",
+      "perieres-aeolid",
+      "perseus",
+      "phartis-danaid",
+      "phorbas-argive",
+      "phoroneus",
+      "pirene-danaid",
+      "podarce-danaid",
+      "polydorus-epigoni",
+      "polynices",
       "polypheides",
-      "theoclymenus"
+      "proetus",
+      "promachus-epigoni",
+      "pronax-aeolid",
+      "psamathe-crotopid",
+      "pylarge-danaid",
+      "rhode-danaid",
+      "rhodia-danaid",
+      "stheneboea-proetid",
+      "sthenelas-argive",
+      "sthenele-danaid",
+      "stygne-danaid",
+      "scaea-danaid",
+      "sthenelus-epigoni",
+      "sthenelus-perseid",
+      "talaus-aeolid",
+      "temenus",
+      "theano-danaid",
+      "theoclymenus",
+      "thersander",
+      "tisamenus",
+      "triopas-argive",
+      "tydeus"
     ]
   },
   {
@@ -331,11 +553,89 @@
       }
     ],
     "characterIds": [
+      "acamas-athens",
+      "achaeus",
+      "actaeus-athens",
+      "adrastus",
       "aegeus",
+      "aethra",
+      "aglauros-cecrops",
+      "amphictyon",
+      "androgeus",
+      "antigone",
+      "antiope-amazon",
+      "bias-athenian",
+      "bucolus-athenian",
+      "butes-athenian",
+      "butes-athens",
+      "calais",
+      "castor",
+      "cecrops",
+      "cecrops-ii",
+      "cephisus",
+      "cephalus-aeolid",
+      "chione-boreas",
+      "chthonia-athens",
+      "cleopatra-boreas",
+      "cranaus",
+      "creusa-athens",
+      "daedalus",
+      "demophon-athens",
+      "electra",
+      "erechtheus",
+      "erichthonius-athens",
+      "erigone",
+      "erigone-icaria",
+      "eumolpus",
+      "helen",
+      "herse-cecrops",
+      "hippolyta",
+      "hippolytus",
+      "hyllus",
+      "iasus-athenian",
+      "icarius-attica",
+      "ilissus",
+      "immaradus",
+      "ion",
+      "itys",
+      "lycus-pandionid",
+      "macaria",
+      "maera-dog",
       "medea-colchis",
       "medus",
+      "menestheus",
+      "metion",
+      "nisus",
+      "oedipus",
+      "orestes",
+      "orithyia-athens",
+      "orneus",
+      "pallas-pandionid",
+      "pandion",
+      "pandion-ii",
+      "pandorus",
+      "pandrosos-cecrops",
+      "peirithous",
+      "peteus-athens",
+      "phaedra",
+      "phalerus-athens",
+      "pheidas-athenian",
+      "philomela",
+      "polydeuces",
+      "praxithea",
+      "praxithea-naiad",
+      "procne",
+      "procris",
+      "pylades",
+      "shepherds-attica",
+      "sphelus-athenian",
+      "stichius-athenian",
+      "tereus",
       "theseus",
-      "oedipus"
+      "triptolemus",
+      "xuthus",
+      "zetes",
+      "zeuxippe-naiad"
     ],
     "storyIds": [
       "aglauros-mercury",
@@ -356,6 +656,7 @@
       "pirithous-and-the-underworld",
       "polyxena-at-the-tomb",
       "road-to-athens",
+      "seven-against-thebes",
       "tereus-procne-philomela",
       "theseus-cycle"
     ]
@@ -405,10 +706,76 @@
       "trojan-war"
     ],
     "characterIds": [
-      "menelaus",
+      "agamemnon",
+      "agapenor",
+      "aigalus-sparta",
+      "ajax-telamonian",
+      "amyclas",
+      "aphareus",
+      "arene",
+      "aristodemus",
+      "aristomachus-heraclid",
+      "arsinoe-leucippid",
+      "autesion-theban",
+      "batia-naiad",
+      "castor",
+      "cepheus-tegea",
+      "cleocharia-naiad",
+      "cleodaeus",
+      "clytemnestra",
+      "cresphontes",
+      "cynortas",
+      "echemus",
+      "eurotas",
+      "eurysthenes",
+      "gorgophone",
       "helen",
+      "heracles",
+      "hermione",
+      "hilaira",
+      "hippocoon",
+      "hyacinthus",
+      "icarius",
+      "idas",
+      "idomeneus",
+      "iphicles",
+      "iphiclus-thestiad",
+      "lacedaemon",
+      "leda",
+      "lelex-laconia",
+      "leucippus",
+      "lynceus-apharetid",
+      "megapenthes",
+      "menelaus",
+      "myles",
+      "nemesis",
+      "neoptolemus",
+      "nicostratus",
+      "odysseus",
+      "oebalus",
+      "orestes",
+      "oxylus",
+      "paris",
+      "peirene-naiad",
+      "peisistratus-nestor",
+      "penelope",
+      "periboea-naiad",
+      "perieres-aeolid",
+      "phoebe-leucippid",
+      "phrontis-sparta",
+      "phylonoe",
+      "polydeuces",
+      "procles",
+      "sparte",
+      "taygete",
       "telemachus",
-      "peisistratus-nestor"
+      "temenus",
+      "teucer",
+      "theras",
+      "theseus",
+      "timandra",
+      "tisamenus",
+      "tyndareus"
     ]
   },
   {
@@ -445,22 +812,33 @@
       "telemachus-and-the-suitors"
     ],
     "characterIds": [
-      "nestor",
-      "eurydice-nestor",
+      "alastor-pylian",
+      "amythaon",
       "anaxibia-nestor",
+      "antilochus-nestor",
+      "aretus-nestor",
+      "bias-aeolid",
+      "bias-pylian",
+      "chloris-neleus",
+      "chromius-pylian",
       "clymenus-pylos",
       "cratieus-pylos",
+      "echephron-nestor",
+      "eurydice-nestor",
+      "haemon-pylian",
+      "melampus",
+      "neleus",
+      "nestor",
+      "peisistratus-nestor",
+      "pelagon-pylian",
+      "periclymenus-neleus",
+      "perseus-nestor",
+      "pisidice-nestor",
+      "polycaste-nestor",
+      "stratius-nestor",
       "telemachus",
       "theoclymenus",
-      "peisistratus-nestor",
-      "thrasymedes-nestor",
-      "echephron-nestor",
-      "stratius-nestor",
-      "perseus-nestor",
-      "aretus-nestor",
-      "antilochus-nestor",
-      "pisidice-nestor",
-      "polycaste-nestor"
+      "thrasymedes-nestor"
     ]
   },
   {
@@ -496,6 +874,11 @@
     ],
     "storyIds": [
       "return-of-heraclids"
+    ],
+    "characterIds": [
+      "caucon-messene",
+      "lycus-pandionid",
+      "perieres-aeolid"
     ]
   },
   {
@@ -533,6 +916,13 @@
     ],
     "storyIds": [
       "trojan-war"
+    ],
+    "characterIds": [
+      "aphareus",
+      "arene",
+      "idas",
+      "leucippus",
+      "lynceus-apharetid"
     ]
   },
   {
@@ -557,6 +947,304 @@
           "apollodorus"
         ]
       }
+    ],
+    "characterIds": [
+      "abarbarea-trojan",
+      "acamas-antenorid",
+      "acamas-athens",
+      "acamas-thracian",
+      "accessamenus-paeonian",
+      "achilles",
+      "adrastus-meropsid",
+      "adrastus-trojan",
+      "adrastus-trojan-ransom",
+      "aegialia-adrastid",
+      "aeneas",
+      "aenius-paeonian",
+      "aesepus-trojan",
+      "aesyetes-trojan",
+      "aesymnus-achaean",
+      "aethra",
+      "agamemnon",
+      "agapenor",
+      "agathon-trojan",
+      "agelaus-achaean",
+      "agenor-trojan",
+      "ajax-oileus",
+      "ajax-telamonian",
+      "alastor-achaean",
+      "alastor-lycian",
+      "alastor-trojan",
+      "alcandrus-lycian",
+      "alcathous-trojan",
+      "amopaon-trojan",
+      "amphilochus",
+      "amphimachus-epeian",
+      "amphimachus-nomionid",
+      "anchises",
+      "andromache",
+      "antenor",
+      "anticlus",
+      "antimachus-trojan",
+      "antiphonus-trojan",
+      "antiphus-maeonian",
+      "antiphus-thessalus-cos",
+      "araphion-epeian",
+      "araphius-meropsid",
+      "arcesilaus",
+      "archelochus-antenorid",
+      "areilycus-achaean",
+      "aretaon-phrygian",
+      "arsinous-mysian",
+      "asaeus-achaean",
+      "ascalaphus-minyan",
+      "ascanius-dardanian",
+      "ascanius-phrygian",
+      "asius-hyrtacid",
+      "assaracus",
+      "asteropaeus-paeonian",
+      "astyanax",
+      "astypylus-paeonian",
+      "automedon",
+      "autonous-achaean",
+      "autonous-trojan",
+      "bias-athenian",
+      "bias-trojan",
+      "bilsates-paphlagon",
+      "briseis",
+      "bucolion-trojan",
+      "bucolus-athenian",
+      "calchas-thestor",
+      "calybe-nymph",
+      "capys",
+      "cassandra",
+      "ceas-ciconian",
+      "cebriones",
+      "charops-trojan",
+      "chersidamas-trojan",
+      "chromis-mysian",
+      "chromius-lycian",
+      "chromius-priamid",
+      "chromius-trojan",
+      "chroraus-trojan",
+      "chryseis",
+      "cleitus-trojan",
+      "clonius",
+      "clytius-achaean",
+      "clytius-trojan",
+      "coeranus-lycian",
+      "coeranus-lyctian",
+      "cometes-argolis",
+      "creusa-troy",
+      "croesmus-trojan",
+      "daetor-trojan",
+      "dardanus",
+      "dardanus-trojan",
+      "deiochus-achaean",
+      "deiopites-trojan",
+      "deiphobus",
+      "deisenor-trojan",
+      "demoleon-antenorid",
+      "demophon-athens",
+      "demuchus-trojan",
+      "deucalion-trojan",
+      "diomedes",
+      "diores-epeian",
+      "dius-trojan",
+      "dolon",
+      "dolops-clytiid",
+      "dolops-trojan",
+      "dracius-epeian",
+      "dresus-trojan",
+      "dryops-trojan",
+      "echeclus-agenorid",
+      "echeclus-trojan",
+      "echemmon-priamid",
+      "echius-achaean",
+      "elasus-trojan",
+      "elephenor",
+      "ennomus-mysian",
+      "epeius",
+      "epistor-trojan",
+      "epistrophus-halizone",
+      "epistrophus-phocis",
+      "erichthonius-troy",
+      "eumedes-herald",
+      "eumelus-pherae",
+      "eunomus-trojan",
+      "euphemus-ciconian",
+      "euphorbus-trojan",
+      "euryalus-aeolid",
+      "eurybates",
+      "eurypylus-euaemonid",
+      "eurypylus-telephus",
+      "eusorus-thracian",
+      "ganymede",
+      "glaucus-lycian",
+      "gouneus-cyphus",
+      "guneus-aenian",
+      "halius-lycian",
+      "harpalion-paphlagon",
+      "hecamede",
+      "hector",
+      "hecuba",
+      "helen",
+      "helenus",
+      "heracles",
+      "hesione",
+      "hicetaon-trojan",
+      "hippasus-trojan",
+      "hippocoon-thrace",
+      "hippodamas-trojan",
+      "hippodameia-trojan",
+      "hippolochus-antimachid",
+      "hippolochus-lycian",
+      "hippomachus-antimachid",
+      "hipponous-achaean",
+      "hipponous-trojan",
+      "hippothous-pelasgian",
+      "hippothous-trojan",
+      "hypsenor-trojan",
+      "hyrtacus-trojan",
+      "ialmenus-minyan",
+      "iasus-athenian",
+      "idaios-trojan",
+      "idomeneus",
+      "ilus",
+      "ilus-childless",
+      "imbrasus-thracian",
+      "imbrius-trojan",
+      "iphition-otrynteid",
+      "lampus-trojan",
+      "laocoon-troy",
+      "laogonus-onetorid",
+      "laogonus-trojan",
+      "laomedon",
+      "leitus",
+      "leonteus-lapith",
+      "lethus-pelasgian",
+      "lycaon-pandarusid",
+      "lycaon-trojan",
+      "lycophontes-trojan",
+      "lycophron-cythera",
+      "machaon",
+      "mecisteus-echius",
+      "mecisteus-halizone",
+      "medesicaste-trojan",
+      "medon-phthian",
+      "megas-trojan",
+      "meges-dulichium",
+      "melanippus-hicetaonid",
+      "melanippus-patroclus-roll",
+      "melanippus-trojan",
+      "memnon",
+      "menelaus",
+      "menestheus",
+      "mentor-trojan",
+      "meriones",
+      "merops-percote",
+      "mesthles-maeonian",
+      "mnesus-paeonian",
+      "mulius-iliad20",
+      "mulius-trojan",
+      "mydon-paeonian",
+      "nastes-nomionid",
+      "nauplius-amymone",
+      "neoptolemus",
+      "nestor",
+      "noemon-lycian",
+      "nomion-carion",
+      "odius-halizone",
+      "odysseus",
+      "oenone-cebren",
+      "onetor-trojan",
+      "ophelestes-paeonian",
+      "ophelestes-trojan",
+      "opheltius-achaean",
+      "opheltius-trojan",
+      "opites-achaean",
+      "ormenus-trojan",
+      "orsilochus-trojan",
+      "orus-achaean",
+      "otrynteus-trojan",
+      "palamedes",
+      "pammon-trojan",
+      "pandarus",
+      "panthous-trojan",
+      "paris",
+      "patroclus",
+      "pedasus-trojan",
+      "peiros-thracian",
+      "peirous-thracian",
+      "peisander-trojan",
+      "peisenor-trojan",
+      "pelasgus-larissa",
+      "pelegon-paeonian",
+      "peneleos",
+      "penthesilea",
+      "periboea-paeonian",
+      "perimus-trojan",
+      "phaenops-asiusid",
+      "phaenops-trojan",
+      "pheidas-athenian",
+      "pheidippus-cos",
+      "philetor-trojan",
+      "philoctetes",
+      "phoenix-myrmidon",
+      "phorcys-phrygian",
+      "phrontis-sparta",
+      "pidytes-percote",
+      "podalirius",
+      "podarces-phthian",
+      "podes-eetionid",
+      "polites-trojan",
+      "polyaemon-trojan",
+      "polybus-antenorid",
+      "polydamas",
+      "polydorus-priamid",
+      "polypoetes-lapith",
+      "polyxena",
+      "polyxenus-epeian",
+      "priam",
+      "protesilaus",
+      "prothoenor",
+      "prothous-magnesia",
+      "prytanis-lycian",
+      "pylaemenes-paphlagon",
+      "pylaeus-pelasgian",
+      "pylartes-trojan",
+      "pyraechmes-paeonian",
+      "rhesus",
+      "sarpedon",
+      "schedius-phocis",
+      "simois",
+      "sinon",
+      "socus-trojan",
+      "sphelus-athenian",
+      "sthenelus-epigoni",
+      "stichius-athenian",
+      "stichius-boeotian",
+      "talaemenes-maeonian",
+      "talthybius",
+      "teucer",
+      "teutamus-pelasgian",
+      "thalpius-epeian",
+      "theanus-dardanian",
+      "thersilochus-paeonian",
+      "thersites",
+      "thoas-aetolia",
+      "thoon-phaenopid",
+      "thoon-trojan",
+      "thrasius-paeonian",
+      "thymoetes-trojan",
+      "tithonus",
+      "tlepolemus",
+      "troezenus-ciconian",
+      "troilus",
+      "tros",
+      "tros-alastorid",
+      "ucalegon-trojan",
+      "xanthus-phaenopid"
     ],
     "storyIds": [
       "achilles-and-hector",
@@ -625,10 +1313,21 @@
           "homer",
           "apollodorus",
           "pausanias"
-        ]
+        ],
+        "citation": "Iliad 6.152–155; Bibliotheca 1.9.3; Description of Greece 2.3.2–3"
+      },
+      {
+        "text": "After Pelias, Jason and Medea lived ten years at Corinth until Creon's daughter Glauce drew the hero away — and the witch answered with fire; elsewhere Polybus and Periboea raised the exposed Oedipus, and Peirene's spring still marks the gateway to the city.",
+        "sources": [
+          "apollodorus",
+          "ovid",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 1.9.28, 3.5.7; Metamorphoses 7.391–424; Description of Greece 2.3.2–6"
       }
     ],
     "characterIds": [
+      "alcmaeon",
       "amphilochus",
       "bellerophon",
       "creon-corinth",
@@ -636,19 +1335,26 @@
       "glaucus-corinth",
       "jason",
       "medea-colchis",
+      "melicertes",
       "mermerus-corinth",
       "merope-pleiad",
+      "manto",
       "oedipus",
       "peirene-naiad",
       "periboea-corinth",
       "pheres-corinth",
       "polybus-corinth",
-      "sisyphus"
+      "sciron-isthmus",
+      "sinis-isthmus",
+      "sisyphus",
+      "tisiphone-alcmaeon"
     ],
     "storyIds": [
       "argonautica",
       "bellerophon-chimera",
-      "medea-at-corinth"
+      "medea-at-corinth",
+      "oedipus-at-thebes",
+      "road-to-athens"
     ]
   },
   {
@@ -683,10 +1389,77 @@
       "twelve-labours"
     ],
     "characterIds": [
-      "heracles",
-      "eurystheus",
       "alcmene",
-      "amphitryon"
+      "amphitryon",
+      "electryon",
+      "eurystheus",
+      "heracles",
+      "megapenthes-proetid",
+      "perseus",
+      "proetus",
+      "stheneboea-proetid",
+      "sthenelus-perseid"
+    ]
+  },
+  {
+    "id": "nauplion",
+    "name": "Nauplia",
+    "greekName": "Ναυπλία",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.796,
+      37.565
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570501",
+    "importance": "major",
+    "cityId": "nauplion",
+    "summary": [
+      {
+        "text": "Nauplia on the Argive coast — the port Nauplius son of Poseidon and Amymone founded, with Poseidon's sanctuary, harbours, and the spring Canathus where the Argives say Hera bathes each year.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 2.38.2"
+      }
+    ],
+    "storyIds": [
+      "nauplius-vengeance"
+    ],
+    "characterIds": [
+      "amymone-danaid",
+      "nauplius-amymone"
+    ]
+  },
+  {
+    "id": "temenium",
+    "name": "Temenium",
+    "greekName": "Τημένιον",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      22.738,
+      37.582
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570710",
+    "importance": "minor",
+    "cityId": "temenium",
+    "summary": [
+      {
+        "text": "Temenium on the upper Argolic gulf — fifty stades from Nauplia, named for Temenus who fortified it as his base in the Dorian Return before taking Argos; Pausanias saw Poseidon's and Aphrodite's temples and Temenus' tomb.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 2.38.1–2, 2.18.7"
+      }
+    ],
+    "storyIds": [
+      "return-of-heraclids"
+    ],
+    "characterIds": [
+      "temenus"
     ]
   },
   {
@@ -718,6 +1491,13 @@
       "return-and-mycenae",
       "return-of-heraclids",
       "scylla-minos"
+    ],
+    "characterIds": [
+      "hippolyta",
+      "hyllus",
+      "nisus",
+      "perseus",
+      "scylla-nisus"
     ]
   },
   {
@@ -748,6 +1528,48 @@
       "ajax-and-the-arms",
       "nostoi",
       "teucer-to-cyprus"
+    ],
+    "characterIds": [
+      "ajax-telamonian",
+      "eurysaces",
+      "hesione",
+      "telamon",
+      "teucer"
+    ]
+  },
+  {
+    "id": "aegina",
+    "name": "Aegina",
+    "greekName": "Αἴγινα",
+    "kind": "city",
+    "region": "aegina",
+    "coordinates": [
+      23.427,
+      37.748
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "599102",
+    "importance": "major",
+    "cityId": "aegina",
+    "summary": [
+      {
+        "text": "Aeacus' island in the Saronic Gulf — where Zeus carried off the nymph Aegina, raised ants into the Myrmidons, and the pious king kept the keys of Hades after death.",
+        "sources": [
+          "apollodorus",
+          "pausanias",
+          "ovid",
+          "hyginus"
+        ]
+      }
+    ],
+    "characterIds": [
+      "aeacus",
+      "aegina-nymph",
+      "endeis",
+      "phocus-aeacid"
+    ],
+    "storyIds": [
+      "argonautica"
     ]
   },
   {
@@ -789,6 +1611,29 @@
       "scylla-minos",
       "theseus-cycle",
       "titanomachy"
+    ],
+    "characterIds": [
+      "ariadne",
+      "asterius-crete",
+      "clisithyra-crete",
+      "curetes-cretan",
+      "daedalus",
+      "deucalion-crete",
+      "europa",
+      "helen",
+      "ianthe-crete",
+      "idomeneus",
+      "iphis-crete",
+      "leucus-crete",
+      "ligdus-crete",
+      "meda-idomeneus",
+      "melisseus-cretan",
+      "menelaus",
+      "meriones",
+      "minos",
+      "pasiphae",
+      "rhadamanthus",
+      "telethusa"
     ]
   },
   {
@@ -809,31 +1654,51 @@
       "argonautica",
       "erysichthon-hunger",
       "muster-of-the-argo",
-      "return-of-the-argo"
+      "return-of-the-argo",
+      "trojan-war"
     ],
     "summary": [
       {
-        "text": "Iolcus on the Pagasetic gulf — Pelias' kingdom in Thessaly, where Jason was sent forth after the Golden Fleece and the Argo was launched.",
+        "text": "Iolcus on the Pagasetic gulf — Pelias' citadel in Thessaly, whence Jason was sent forth for the fleece; Apollonius sets the heroes' assembly and the Argo's launch at Pagasae on the harbour below.",
         "sources": [
           "homer",
           "apollodorus",
           "apollonius"
         ]
+      },
+      {
+        "text": "Homer's Catalogue of Ships names well-built Iolcus beside Pherae, Boebe, and Glaphyrae on lake Boebeis — towns whose spearmen followed Eumelus son of Admetus with eleven black ships to Troy.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.711–715"
       }
     ],
     "characterIds": [
       "acastus",
       "aeson",
       "alcimede",
+      "alcestis",
+      "amythaon",
+      "anaxibia-pelias",
+      "astydamia-acastus",
       "cretheus",
-      "erysichthon-thessaly",
+      "eumelus-pherae",
+      "hippothoe-pelias",
       "jason",
+      "laodamia-protesilaus",
       "medea-colchis",
-      "mestra-thessaly",
+      "neleus",
+      "peleus",
       "pelias",
+      "pelopia-pelias",
+      "phylomache-pelias",
+      "pheres-aeolid",
+      "pisidice-pelias",
       "polymede",
-      "prothous-magnesia",
-      "tenthredon-magnesia"
+      "sterope-acastus",
+      "sthenele-acastus",
+      "tyro"
     ]
   },
   {
@@ -870,6 +1735,22 @@
       "perseus-cycle",
       "return-and-mycenae",
       "salmoneus-false-thunder"
+    ],
+    "characterIds": [
+      "acrisius",
+      "aethalides",
+      "antiphus-thessalus-cos",
+      "erysichthon-thessaly",
+      "hippothous-pelasgian",
+      "lethus-pelasgian",
+      "mestra-thessaly",
+      "peirithous",
+      "pelasgus-larissa",
+      "perseus",
+      "polyphemus-elatid",
+      "pylaeus-pelasgian",
+      "teutamides-larissa",
+      "teutamus-pelasgian"
     ]
   },
   {
@@ -888,13 +1769,89 @@
     "cityId": "pherae",
     "summary": [
       {
-        "text": "Pherae beside lake Boebeis — the city Pheres founded in Thessaly, where Apollo served Admetus as herdsman and Alcestis died in her husband's stead.",
+        "text": "Pherae beside lake Boebeis — the city Pheres founded in Thessaly, where Apollo served Admetus as herdsman and Alcestis died in her husband's stead; in the Catalogue of Ships Eumelus son of Admetus led eleven black ships from the Pheraean quarter of the host.",
         "sources": [
           "homer",
           "apollodorus",
           "hyginus"
-        ]
+        ],
+        "citation": "Iliad 2.695–715, 2.763–767; Bibliotheca 1.9.11; Fabulae 50"
       }
+    ],
+    "storyIds": [
+      "argonautica",
+      "muster-of-the-argo",
+      "trojan-war"
+    ],
+    "characterIds": [
+      "admetus",
+      "alcestis",
+      "apollo",
+      "eumelus-pherae",
+      "heracles",
+      "iphitus-eurytus",
+      "pheres-aeolid"
+    ]
+  },
+  {
+    "id": "boebe-thessaly",
+    "name": "Boebe",
+    "greekName": "Βοίβη",
+    "kind": "city",
+    "region": "magnesia",
+    "coordinates": [
+      22.934,
+      39.382
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "543654",
+    "importance": "minor",
+    "cityId": "boebe-thessaly",
+    "summary": [
+      {
+        "text": "Boebe on the eastern shore of lake Boebeis — Magnesian town named in the Catalogue of Ships beside Pherae, Glaphyrae, and well-built Iolcus, whose spearmen followed Eumelus son of Admetus with eleven black ships.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.711–715"
+      }
+    ],
+    "characterIds": [
+      "admetus",
+      "alcestis",
+      "eumelus-pherae"
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "glaphyrae-thessaly",
+    "name": "Glaphyrae",
+    "greekName": "Γλαφυραί",
+    "kind": "city",
+    "region": "magnesia",
+    "coordinates": [
+      22.883,
+      39.444
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "540790",
+    "importance": "minor",
+    "cityId": "glaphyrae-thessaly",
+    "summary": [
+      {
+        "text": "Glaphyrae in Magnesian Thessaly — settlement beside lake Boebeis named with Pherae, Boebe, and Iolcus in Eumelus' muster roll, when the dear son of Admetus led eleven ships from the Pheraean quarter of the host.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.711–715"
+      }
+    ],
+    "characterIds": [
+      "admetus",
+      "alcestis",
+      "eumelus-pherae"
     ],
     "storyIds": [
       "trojan-war"
@@ -926,6 +1883,11 @@
       "iphigenia-at-aulis",
       "nauplius-vengeance",
       "trojan-war"
+    ],
+    "characterIds": [
+      "chalcodon-abantes",
+      "elephenor",
+      "nauplius-amymone"
     ]
   },
   {
@@ -986,6 +1948,18 @@
     ],
     "storyIds": [
       "idomeneus-and-leucus"
+    ],
+    "characterIds": [
+      "ariadne",
+      "caeneus-gortyn",
+      "daedalus",
+      "deucalion-crete",
+      "heracles",
+      "idomeneus",
+      "meriones",
+      "minos",
+      "pasiphae",
+      "rhadamanthus"
     ]
   },
   {
@@ -1018,6 +1992,104 @@
       "argonautica",
       "golden-fleece",
       "trials-at-colchis"
+    ]
+  },
+  {
+    "id": "babylon",
+    "name": "Babylon",
+    "greekName": "Βαβυλών",
+    "kind": "city",
+    "region": "mesopotamia",
+    "coordinates": [
+      44.421,
+      32.536
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "912816",
+    "importance": "major",
+    "cityId": "babylon",
+    "summary": [
+      {
+        "text": "Semiramis' eastern Babylon — where Ovid sets the adjoining houses of Pyramus and Thisbe by the queen's brick walls, and where their blood darkened the mulberry beside Ninus' tomb.",
+        "sources": [
+          "ovid",
+          "hyginus"
+        ],
+        "citation": "Metamorphoses 4.55–166; Fabulae 242–243"
+      }
+    ],
+    "characterIds": [
+      "pyramus",
+      "semiramis-babylon",
+      "thisbe"
+    ],
+    "storyIds": [
+      "pyramus-thisbe"
+    ]
+  },
+  {
+    "id": "bebrycia",
+    "name": "Bebrycia",
+    "greekName": "Βεβρυκία",
+    "kind": "city",
+    "region": "bithynia",
+    "coordinates": [
+      30.72,
+      40.56
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "511189",
+    "importance": "major",
+    "cityId": "bebrycia",
+    "summary": [
+      {
+        "text": "Bebrycia on the Propontis shore — kingdom of King Amycus, son of Poseidon and a Bithynian nymph, who forced every stranger to box and was slain by Polydeuces when the Argonauts landed.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 1.9.20; Argonautica 2.1–97; Fabulae 17"
+      }
+    ],
+    "characterIds": [
+      "amycus-bebrycian"
+    ],
+    "storyIds": [
+      "argonautica",
+      "voyage-to-colchis"
+    ]
+  },
+  {
+    "id": "mariandyni",
+    "name": "Mariandyni",
+    "greekName": "Μαριάνδυνοι",
+    "kind": "city",
+    "region": "bithynia",
+    "coordinates": [
+      31.35,
+      41.28
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "582563",
+    "importance": "major",
+    "cityId": "mariandyni",
+    "summary": [
+      {
+        "text": "Mariandyni on the Propontis shore — kingdom of King Lycus, who welcomed the Argonauts after Polydeuces slew Amycus; there Idmon was gored by a boar and Tiphys died of illness.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 1.9.23; Argonautica 2.752; Fabulae 18"
+      }
+    ],
+    "characterIds": [
+      "lycus-mariandyni"
+    ],
+    "storyIds": [
+      "argonautica"
     ]
   },
   {
@@ -1094,8 +2166,14 @@
       }
     ],
     "characterIds": [
+      "acis-sicily",
+      "alpheus",
+      "archias-syracuse",
       "arethusa-nymph",
-      "daedalus"
+      "cocalus-sicily",
+      "daedalus",
+      "galatea-nymph",
+      "polyphemus-cyclops"
     ],
     "storyIds": [
       "acis-galatea",
@@ -1136,8 +2214,14 @@
       }
     ],
     "characterIds": [
+      "aborigines-italy",
       "aeneas",
-      "anchises"
+      "anchises",
+      "ascanius-dardanian",
+      "canens",
+      "latinus-king",
+      "lavinia",
+      "picus-latium"
     ],
     "storyIds": [
       "aeneas-after-troy",
@@ -1145,6 +2229,37 @@
       "diomedes-exile",
       "picus-canens",
       "pomona-vertumnus"
+    ]
+  },
+  {
+    "id": "liguria",
+    "name": "Liguria",
+    "greekName": "Λιγυστική",
+    "kind": "city",
+    "region": "liguria",
+    "coordinates": [
+      8.786,
+      44.33
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "383698",
+    "importance": "major",
+    "cityId": "liguria",
+    "summary": [
+      {
+        "text": "Liguria on the Eridanus — where King Cycnus, kinsman and lover of Phaethon, left his peopled cities and throne to mourn among the Heliades' poplars until grief remade him a swan.",
+        "sources": [
+          "ovid",
+          "hyginus"
+        ],
+        "citation": "Metamorphoses 2.367–380; Fabulae 154"
+      }
+    ],
+    "characterIds": [
+      "cycnus-liguria"
+    ],
+    "storyIds": [
+      "phaethon-chariot"
     ]
   },
   {
@@ -1178,7 +2293,9 @@
       }
     ],
     "characterIds": [
-      "aeneas"
+      "aeneas",
+      "ascanius-dardanian",
+      "sibyl-cumae"
     ],
     "storyIds": [
       "aeneas-to-italy",
@@ -1218,6 +2335,10 @@
     ],
     "storyIds": [
       "diomedes-exile"
+    ],
+    "characterIds": [
+      "phalanthus-tarentine",
+      "taras-hero"
     ]
   },
   {
@@ -1252,6 +2373,11 @@
     ],
     "storyIds": [
       "diomedes-exile"
+    ],
+    "characterIds": [
+      "heracles",
+      "leonymus-croton",
+      "myscelus-croton"
     ]
   },
   {
@@ -1321,6 +2447,11 @@
     ],
     "storyIds": [
       "odyssey"
+    ],
+    "characterIds": [
+      "charybdis",
+      "heracles",
+      "scylla-monster"
     ]
   },
   {
@@ -1349,12 +2480,16 @@
       "amphoterus-alcmaeon",
       "aristodemus",
       "cassandra",
+      "deucalion",
       "epistrophus-phocis",
       "hermione",
       "iphitus-phocis",
       "machaereus-phocis",
       "naubolus-phocis",
+      "philammon",
       "pronous-psophis",
+      "protogeneia",
+      "pyrrha",
       "schedius-phocis",
       "trophonius-orchomenus"
     ],
@@ -1435,6 +2570,7 @@
       "celeus-eleusis",
       "demophon-metaneira",
       "eumolpus",
+      "immaradus",
       "metaneira",
       "theseus",
       "triptolemus"
@@ -1509,11 +2645,15 @@
     ],
     "storyIds": [
       "palamedes",
+      "seven-against-thebes",
       "twelve-labours"
     ],
     "cityId": "nemea",
     "characterIds": [
-      "heracles"
+      "heracles",
+      "hypsipyle",
+      "lycurgus-nemea",
+      "opheltes-nemea"
     ]
   },
   {
@@ -1542,6 +2682,10 @@
     ],
     "storyIds": [
       "trojan-war"
+    ],
+    "characterIds": [
+      "deiphontes",
+      "hyrnetho"
     ]
   },
   {
@@ -1617,6 +2761,11 @@
     "deityIds": [
       "poseidon"
     ],
+    "characterIds": [
+      "ino",
+      "melicertes",
+      "sisyphus"
+    ],
     "summary": [
       {
         "text": "The Isthmian sanctuary of Poseidon — beside the Corinthian crossing, where the games in honour of the sea-god drew Greeks from every quarter of the Peloponnese.",
@@ -1624,7 +2773,16 @@
           "homer",
           "pausanias",
           "apollodorus"
-        ]
+        ],
+        "citation": "Description of Greece 2.1.7"
+      },
+      {
+        "text": "Apollodorus says Sisyphus founded the Isthmian games for Melicertes after Ino's sea-leap; Pausanias tells how the boy was borne ashore here by a dolphin, buried by Sisyphus on the Isthmus, and honoured thereafter as Palaemon — while sailors invoke his mother Leucothea beside the crossing.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 3.4.3; Description of Greece 2.1.3"
       }
     ],
     "storyIds": [
@@ -1662,6 +2820,14 @@
     "storyIds": [
       "apollo-artemis-delos",
       "orion-the-hunter"
+    ],
+    "characterIds": [
+      "anius",
+      "apollo",
+      "artemis",
+      "asteria",
+      "eileithyia",
+      "leto"
     ]
   },
   {
@@ -1754,6 +2920,12 @@
     ],
     "storyIds": [
       "house-of-troy"
+    ],
+    "characterIds": [
+      "dardanus",
+      "electra-atlas",
+      "electra-pleiad",
+      "iasion"
     ]
   },
   {
@@ -1790,6 +2962,14 @@
       "minotaur-and-ariadne",
       "theseus-cycle",
       "tyrrhenian-pirates"
+    ],
+    "characterIds": [
+      "acoetes-tyrrhenian",
+      "ariadne",
+      "dionysus",
+      "ephialtes-aload",
+      "otus",
+      "theseus"
     ]
   },
   {
@@ -1817,6 +2997,10 @@
     ],
     "storyIds": [
       "lesser-returns"
+    ],
+    "characterIds": [
+      "menestheus",
+      "polyanax-melos"
     ]
   },
   {
@@ -1848,6 +3032,7 @@
       "locrian-ajax"
     ],
     "characterIds": [
+      "ajax-oileus",
       "thetis"
     ]
   },
@@ -1876,6 +3061,10 @@
     ],
     "storyIds": [
       "lesser-returns"
+    ],
+    "characterIds": [
+      "pheidippus-cos",
+      "thersanon-andros"
     ]
   },
   {
@@ -1904,6 +3093,11 @@
     ],
     "storyIds": [
       "trojan-war"
+    ],
+    "characterIds": [
+      "calais",
+      "heracles",
+      "zetes"
     ]
   },
   {
@@ -1929,7 +3123,8 @@
       }
     ],
     "characterIds": [
-      "aristaeus"
+      "aristaeus",
+      "cyparissus-ceos"
     ],
     "storyIds": [
       "aristaeus-cycle",
@@ -2026,10 +3221,12 @@
       "return-and-mycenae"
     ],
     "characterIds": [
-      "perseus",
+      "andromeda",
       "danae",
-      "polydectes",
-      "dictys"
+      "dictys",
+      "magnes-aeolid",
+      "perseus",
+      "polydectes"
     ]
   },
   {
@@ -2119,6 +3316,11 @@
     "storyIds": [
       "argonautica",
       "daedalus-icarus"
+    ],
+    "characterIds": [
+      "ancaeus-samos",
+      "astypalaea",
+      "hera"
     ]
   },
   {
@@ -2150,6 +3352,11 @@
     ],
     "storyIds": [
       "the-danaids"
+    ],
+    "characterIds": [
+      "helios",
+      "rhodos",
+      "tlepolemus"
     ]
   },
   {
@@ -2177,6 +3384,14 @@
     ],
     "storyIds": [
       "trojan-war"
+    ],
+    "characterIds": [
+      "antiphus-thessalus-cos",
+      "astypalaea",
+      "eurypylus-cos",
+      "heracles",
+      "pheidippus-cos",
+      "thessalus-cos"
     ]
   },
   {
@@ -2204,6 +3419,11 @@
     ],
     "storyIds": [
       "argonautica"
+    ],
+    "characterIds": [
+      "euphemus",
+      "membliarus",
+      "theras"
     ]
   },
   {
@@ -2234,6 +3454,10 @@
     ],
     "storyIds": [
       "birth-of-aphrodite"
+    ],
+    "characterIds": [
+      "aphrodite",
+      "lycophron-cythera"
     ]
   },
   {
@@ -2261,6 +3485,11 @@
     "storyIds": [
       "orpheus-cycle",
       "orpheus-death"
+    ],
+    "characterIds": [
+      "macar-lesbos",
+      "orpheus",
+      "penthilus"
     ]
   },
   {
@@ -2294,6 +3523,20 @@
       "nostoi",
       "pygmalion",
       "teucer-to-cyprus"
+    ],
+    "characterIds": [
+      "adonis",
+      "agapenor",
+      "anaxarete-salamis",
+      "cinyras-cyprus",
+      "helen",
+      "iphis-anaxarete",
+      "menelaus",
+      "myrrha-cyprus",
+      "pheidippus-cos",
+      "pygmalion-bride",
+      "pygmalion-sculptor",
+      "teucer"
     ]
   },
   {
@@ -2435,6 +3678,16 @@
     ],
     "storyIds": [
       "byblis-caunus"
+    ],
+    "characterIds": [
+      "amphimachus-nomionid",
+      "byblis-miletus",
+      "caunus-miletus",
+      "cyane-maeander",
+      "erginus-miletus",
+      "miletus-apollonid",
+      "nastes-nomionid",
+      "nomion-carion"
     ]
   },
   {
@@ -2462,6 +3715,15 @@
     ],
     "storyIds": [
       "omphale-and-troy"
+    ],
+    "characterIds": [
+      "androclus-ionian",
+      "artemis",
+      "coresus-ephesus",
+      "ephesus-cayster",
+      "heracles",
+      "otrera-amazon",
+      "penthesilea"
     ]
   },
   {
@@ -2490,15 +3752,18 @@
     ],
     "characterIds": [
       "aeetes",
-      "idyia-oceanid",
-      "medea-colchis",
-      "chalciope-colchis",
       "apsyrtus-colchis",
       "argus-colchis",
-      "melas-colchis",
-      "phrontis-colchis",
+      "chalciope-colchis",
+      "clytius-oechalia",
       "cytisorus-colchis",
-      "perses-colchis"
+      "idyia-oceanid",
+      "jason",
+      "medea-colchis",
+      "melas-colchis",
+      "perses-colchis",
+      "phrixus",
+      "phrontis-colchis"
     ],
     "storyIds": [
       "argonautica",
@@ -2534,6 +3799,21 @@
       "metamorphoses",
       "midas-golden-touch",
       "omphale-and-troy"
+    ],
+    "characterIds": [
+      "agelaus-lydian",
+      "antiphus-maeonian",
+      "broteas",
+      "heracles",
+      "mesthles-maeonian",
+      "midas",
+      "niobe",
+      "omphale",
+      "pelops",
+      "plouto",
+      "silenus",
+      "talaemenes-maeonian",
+      "tantalus"
     ]
   },
   {
@@ -2562,6 +3842,12 @@
     "storyIds": [
       "byblis-caunus",
       "hermaphroditus-salmacis"
+    ],
+    "characterIds": [
+      "aetius-halicarnassus",
+      "artemisia-halicarnassus",
+      "lygdamis-halicarnassus",
+      "mausolus-halicarnassus"
     ]
   },
   {
@@ -2589,6 +3875,14 @@
     ],
     "storyIds": [
       "house-of-troy"
+    ],
+    "characterIds": [
+      "aeneas",
+      "anchises",
+      "dardanus",
+      "scamander",
+      "teucer-troas",
+      "theanus-dardanian"
     ]
   },
   {
@@ -2615,6 +3909,9 @@
     ],
     "storyIds": [
       "voyage-to-colchis"
+    ],
+    "characterIds": [
+      "sinope-nymph"
     ]
   },
   {
@@ -2645,8 +3942,21 @@
       "telephus-at-mysia"
     ],
     "characterIds": [
+      "achilles",
+      "agamemnon",
+      "andromache",
+      "areius-teuthrania",
+      "arsinous-mysian",
+      "auge",
+      "chromis-mysian",
+      "ennomus-mysian",
+      "eurypylus-telephus",
+      "menelaus",
+      "odysseus",
+      "pergamus-neoptolemid",
       "telephus",
-      "eurypylus-telephus"
+      "teuthras-mysia",
+      "thersander"
     ]
   },
   {
@@ -2677,6 +3987,14 @@
       "baucis-philemon",
       "marsyas-apollo",
       "midas-golden-touch"
+    ],
+    "characterIds": [
+      "baucis-phrygia",
+      "gordius-phrygia",
+      "marsyas-phrygia",
+      "midas",
+      "philemon-phrygia",
+      "silenus"
     ]
   },
   {
@@ -2715,6 +4033,9 @@
       "myrrha-adonis",
       "metamorphoses",
       "cypria"
+    ],
+    "characterIds": [
+      "gras-aeolis"
     ]
   },
   {
@@ -2739,6 +4060,72 @@
         ],
         "citation": "Description of Greece 8.28.3"
       }
+    ]
+  },
+  {
+    "id": "cilicia",
+    "name": "Cilicia",
+    "greekName": "Κιλικία",
+    "kind": "city",
+    "region": "cilicia",
+    "coordinates": [
+      32.835,
+      36.129
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "638864",
+    "importance": "major",
+    "cityId": "cilicia",
+    "summary": [
+      {
+        "text": "Cilicia on the southern coast of Asia Minor — the region Cilix son of Agenor settled when he abandoned the search for Europa and gave his name to the land and its people.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Bibliotheca 3.1.1"
+      }
+    ],
+    "characterIds": [
+      "cilix"
+    ],
+    "storyIds": [
+      "europa-and-the-bull"
+    ]
+  },
+  {
+    "id": "phoenicia",
+    "name": "Phoenicia",
+    "greekName": "Φοινίκη",
+    "kind": "city",
+    "region": "phoenicia",
+    "coordinates": [
+      35.196,
+      33.271
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "658441",
+    "importance": "major",
+    "cityId": "phoenicia",
+    "summary": [
+      {
+        "text": "Phoenicia on the Syrian coast — Agenor's kingdom when Zeus bore Europa away, and the homeland his sons were forbidden to return to without her.",
+        "sources": [
+          "apollodorus",
+          "homer",
+          "ovid"
+        ],
+        "citation": "Bibliotheca 3.1.1; Iliad 14.321; Metamorphoses 2.858"
+      }
+    ],
+    "characterIds": [
+      "agenor",
+      "phoenix",
+      "telephassa-phoenicia"
+    ],
+    "storyIds": [
+      "cadmus-and-thebes",
+      "europa-and-the-bull",
+      "menelaus-in-egypt"
     ]
   },
   {
@@ -2795,6 +4182,9 @@
     ],
     "storyIds": [
       "cypria"
+    ],
+    "characterIds": [
+      "gras-aeolis"
     ]
   },
   {
@@ -2826,9 +4216,23 @@
       "byblis-caunus"
     ],
     "characterIds": [
-      "sarpedon",
+      "alastor-lycian",
+      "alcandrus-lycian",
+      "amisodarus-lycia",
+      "bellerophon",
+      "chromius-lycian",
+      "coeranus-lycian",
       "glaucus-lycian",
-      "bellerophon"
+      "halius-lycian",
+      "hippolochus-lycian",
+      "iobates-lycia",
+      "isander-lycian",
+      "laodameia-lycian",
+      "noemon-lycian",
+      "philonoe-lycia",
+      "prytanis-lycian",
+      "sarpedon",
+      "stheneboea-proetid"
     ]
   },
   {
@@ -2861,8 +4265,8 @@
       "marsyas-apollo"
     ],
     "characterIds": [
-      "telephus",
-      "apollo"
+      "apollo",
+      "telephus"
     ]
   },
   {
@@ -2892,16 +4296,18 @@
     "characterIds": [
       "alcinous-phaeacian",
       "arete-phaeacian",
-      "nausicaa",
-      "laodamas-phaeacian",
-      "halius-phaeacian",
       "clytoneus-phaeacian",
+      "corcyra",
       "demodocus",
+      "halius-phaeacian",
+      "jason",
+      "laodamas-phaeacian",
+      "medea-colchis",
+      "nausicaa",
       "nausithous-phaeacian",
-      "rhexenor-phaeacian",
-      "periboea-phaeacian",
       "odysseus",
-      "jason"
+      "periboea-phaeacian",
+      "rhexenor-phaeacian"
     ],
     "storyIds": [
       "argonautica",
@@ -3096,145 +4502,154 @@
       }
     ],
     "characterIds": [
-      "odysseus",
-      "penelope",
-      "telemachus",
-      "theoclymenus",
-      "laertes",
-      "arceisius",
-      "anticleia",
-      "eumaeus",
-      "philoetius",
-      "eurycleia",
-      "phemius-ithaca",
-      "antinous",
-      "eurymachus-ithaca",
-      "melanthius-ithaca",
-      "melantho-ithaca",
-      "dolius-ithaca",
-      "medon-ithaca",
-      "irus-beggar",
-      "amphinomus-dulichium",
-      "leiodes-ithaca",
-      "peisander-same",
+      "acamas-dulichium",
+      "acarnan-dulichium",
       "agelaus-same",
-      "amphimedon-ithaca",
-      "demoptolemus-dulichium",
-      "eurynomus-ithaca",
-      "polybus-ithaca",
-      "ctesippus-same",
-      "elatus-same",
-      "hippodochus-same",
-      "eurystratus-same",
-      "archemolus-same",
-      "ithacus-same",
-      "pisenor-same",
-      "hyperenor-same",
-      "pheroetes-same",
-      "antisthenes-same",
-      "cerberus-same",
-      "perimedes-same",
-      "cynnus-same",
-      "thriasus-same",
-      "eteoneus-same",
-      "prothous-same",
-      "lycaethus-same",
-      "eumelus-same",
-      "itanus-same",
-      "lyammus-same",
-      "eurylochus-zacynthus",
-      "laomedes-zacynthus",
-      "molebus-zacynthus",
-      "phrenius-zacynthus",
-      "indius-zacynthus",
-      "minis-zacynthus",
-      "liocritus-zacynthus",
-      "pronomus-zacynthus",
-      "nisas-zacynthus",
-      "daemon-zacynthus",
-      "archestratus-zacynthus",
-      "hippomachus-zacynthus",
-      "euryalus-zacynthus",
-      "periallus-zacynthus",
-      "evenorides-zacynthus",
-      "clytius-zacynthus",
+      "agenor-ithaca",
       "agenor-zacynthus",
-      "polybus-zacynthus",
-      "polydorus-zacynthus",
-      "thadytius-zacynthus",
-      "stratius-zacynthus",
-      "daesenor-zacynthus",
-      "laomedon-zacynthus",
-      "laodicus-zacynthus",
-      "halius-zacynthus",
-      "magnes-zacynthus",
-      "oloetrochus-zacynthus",
-      "barthas-zacynthus",
-      "theophron-zacynthus",
-      "nissaeus-zacynthus",
-      "alcarops-zacynthus",
-      "periclymenus-zacynthus",
-      "antenor-zacynthus",
-      "pellas-zacynthus",
-      "celtus-zacynthus",
-      "periphus-zacynthus",
-      "ormenus-zacynthus",
-      "andromedes-zacynthus",
-      "amphimachus-ithaca",
-      "pronous-ithaca",
-      "amphialus-ithaca",
-      "promachus-ithaca",
-      "aristratus-ithaca",
-      "helenus-ithaca",
-      "dulicheus-ithaca",
-      "eurydamas-ithaca",
-      "thoas-dulichium",
-      "paralus-dulichium",
-      "evenorides-ithaca",
-      "euryalus-ithaca",
-      "clytius-same",
-      "philodemus-dulichium",
-      "marpsius-dulichium",
-      "iphidamas-dulichium",
-      "pylaemenes-dulichium",
-      "thersilochus-dulichium",
-      "hagius-dulichium",
-      "clymenus-dulichium",
-      "meneptolemus-dulichium",
-      "astylochus-dulichium",
-      "schedius-dulichium",
-      "antigonus-dulichium",
-      "argius-dulichium",
-      "calydoneus-dulichium",
-      "glaucus-dulichium",
-      "echion-dulichium",
-      "lamas-dulichium",
-      "andraemon-dulichium",
       "agerochus-dulichium",
       "agrius-dulichium",
-      "promus-dulichium",
-      "ctesius-dulichium",
-      "acarnan-dulichium",
-      "cycnus-dulichium",
-      "pseras-dulichium",
-      "hellanicus-dulichium",
-      "periphron-dulichium",
-      "megasthenes-dulichium",
-      "ormenius-dulichium",
-      "diopithes-dulichium",
-      "mecisteus-dulichium",
+      "alcarops-zacynthus",
+      "amphialus-ithaca",
+      "amphimachus-ithaca",
+      "amphimedon-ithaca",
+      "amphinomus-dulichium",
+      "andraemon-dulichium",
+      "andromedes-zacynthus",
+      "antenor-zacynthus",
+      "anticleia",
+      "antigonus-dulichium",
       "antimachus-dulichium",
-      "ptolemaeus-dulichium",
-      "lestorides-dulichium",
-      "nicomachus-dulichium",
-      "polypoetes-dulichium",
+      "antinous",
+      "antisthenes-same",
+      "arceisius",
+      "archemolus-same",
+      "archestratus-zacynthus",
+      "argius-dulichium",
+      "aristratus-ithaca",
+      "astylochus-dulichium",
+      "barthas-zacynthus",
+      "bias-dulichium",
+      "calydoneus-dulichium",
+      "celtus-zacynthus",
       "ceraus-dulichium",
-      "agenor-ithaca",
-      "eurypylus-dulichium",
+      "cerberus-same",
+      "clymenus-dulichium",
+      "clytius-same",
+      "clytius-zacynthus",
+      "ctesippus-same",
+      "ctesius-dulichium",
+      "cycnus-dulichium",
+      "cynnus-same",
+      "daemon-zacynthus",
+      "daesenor-zacynthus",
       "damastor-dulichium",
-      "acamas-dulichium",
+      "demoptolemus-dulichium",
+      "diopithes-dulichium",
+      "dolius-ithaca",
+      "dulicheus-ithaca",
+      "echion-dulichium",
+      "elatus-same",
+      "elpenor",
+      "eteoneus-same",
+      "eumaeus",
+      "eumelus-same",
+      "euryalus-ithaca",
+      "euryalus-zacynthus",
+      "eurycleia",
+      "eurydamas-ithaca",
+      "eurylochus",
+      "eurylochus-zacynthus",
+      "eurymachus-ithaca",
+      "eurynomus-ithaca",
+      "eurypylus-dulichium",
+      "eurystratus-same",
+      "evenorides-ithaca",
+      "evenorides-zacynthus",
+      "glaucus-dulichium",
+      "hagius-dulichium",
+      "halius-zacynthus",
+      "helenus-ithaca",
+      "hellanicus-dulichium",
+      "hippodochus-same",
+      "hippomachus-zacynthus",
+      "hyperenor-same",
+      "indius-zacynthus",
+      "iphidamas-dulichium",
+      "irus-beggar",
+      "itanus-same",
+      "ithacus-same",
+      "laertes",
+      "lamas-dulichium",
+      "laodicus-zacynthus",
+      "laomedes-zacynthus",
+      "laomedon-zacynthus",
+      "leiodes-ithaca",
+      "lestorides-dulichium",
+      "liocritus-zacynthus",
+      "lyammus-same",
+      "lycaethus-same",
+      "magnes-zacynthus",
+      "marpsius-dulichium",
+      "mecisteus-dulichium",
+      "medon-dulichium",
+      "medon-ithaca",
+      "megasthenes-dulichium",
+      "melanthius-ithaca",
+      "melantho-ithaca",
+      "meneptolemus-dulichium",
+      "minis-zacynthus",
+      "molebus-zacynthus",
+      "nicomachus-dulichium",
+      "nisas-zacynthus",
+      "nissaeus-zacynthus",
+      "odysseus",
+      "oloetrochus-zacynthus",
+      "ormenius-dulichium",
+      "ormenus-zacynthus",
+      "paralus-dulichium",
+      "peisander-same",
+      "pellas-zacynthus",
+      "penelope",
+      "periallus-zacynthus",
+      "periclymenus-zacynthus",
+      "perimedes-odyssey",
+      "perimedes-same",
+      "periphron-dulichium",
+      "periphus-zacynthus",
+      "phemius-ithaca",
+      "pheroetes-same",
+      "philodemus-dulichium",
+      "philoetius",
+      "phrenius-zacynthus",
+      "pisenor-same",
+      "poliporthes",
+      "polites-odyssey",
+      "polybus-ithaca",
+      "polybus-zacynthus",
+      "polydorus-zacynthus",
+      "polyidus-dulichium",
+      "polypoetes-dulichium",
+      "promachus-ithaca",
+      "promus-dulichium",
+      "pronomus-zacynthus",
+      "pronous-ithaca",
+      "prothous-same",
+      "pseras-dulichium",
+      "ptolemaeus-dulichium",
+      "pylaemenes-dulichium",
+      "schedius-dulichium",
+      "stratius-zacynthus",
+      "telegonus-circe",
+      "telemachus",
       "telmius-dulichium",
-      "polyidus-dulichium"
+      "thadytius-zacynthus",
+      "theoclymenus",
+      "theophron-zacynthus",
+      "thersilochus-dulichium",
+      "thoas-dulichium",
+      "thrasymedes-dulichium",
+      "thriasus-same"
     ],
     "storyIds": [
       "calypso-and-scheria",
@@ -3263,29 +4678,31 @@
     "importance": "major",
     "cityId": "cephallenia",
     "characterIds": [
-      "ctesippus-same",
-      "elatus-same",
-      "hippodochus-same",
-      "eurystratus-same",
-      "archemolus-same",
-      "ithacus-same",
-      "pisenor-same",
-      "hyperenor-same",
-      "pheroetes-same",
-      "antisthenes-same",
-      "cerberus-same",
-      "perimedes-same",
-      "cynnus-same",
-      "thriasus-same",
-      "eteoneus-same",
-      "prothous-same",
-      "lycaethus-same",
-      "eumelus-same",
-      "itanus-same",
-      "lyammus-same",
       "agelaus-same",
+      "antisthenes-same",
+      "archemolus-same",
+      "cerberus-same",
+      "clytius-same",
+      "ctesippus-same",
+      "cynnus-same",
+      "elatus-same",
+      "eteoneus-same",
+      "eumelus-same",
+      "eurystratus-same",
+      "hippodochus-same",
+      "hyperenor-same",
+      "itanus-same",
+      "ithacus-same",
+      "laertes",
+      "lyammus-same",
+      "lycaethus-same",
+      "odysseus",
       "peisander-same",
-      "clytius-same"
+      "perimedes-same",
+      "pheroetes-same",
+      "pisenor-same",
+      "prothous-same",
+      "thriasus-same"
     ],
     "summary": [
       {
@@ -3314,44 +4731,45 @@
     "importance": "major",
     "cityId": "zacynthus",
     "characterIds": [
-      "eurylochus-zacynthus",
-      "laomedes-zacynthus",
-      "molebus-zacynthus",
-      "phrenius-zacynthus",
-      "indius-zacynthus",
-      "minis-zacynthus",
-      "liocritus-zacynthus",
-      "pronomus-zacynthus",
-      "nisas-zacynthus",
-      "daemon-zacynthus",
-      "archestratus-zacynthus",
-      "hippomachus-zacynthus",
-      "euryalus-zacynthus",
-      "periallus-zacynthus",
-      "evenorides-zacynthus",
-      "clytius-zacynthus",
       "agenor-zacynthus",
+      "alcarops-zacynthus",
+      "andromedes-zacynthus",
+      "antenor-zacynthus",
+      "archestratus-zacynthus",
+      "barthas-zacynthus",
+      "celtus-zacynthus",
+      "clytius-zacynthus",
+      "daemon-zacynthus",
+      "daesenor-zacynthus",
+      "euryalus-zacynthus",
+      "eurylochus-zacynthus",
+      "evenorides-zacynthus",
+      "halius-zacynthus",
+      "hippomachus-zacynthus",
+      "indius-zacynthus",
+      "laodicus-zacynthus",
+      "laomedes-zacynthus",
+      "laomedon-zacynthus",
+      "liocritus-zacynthus",
+      "magnes-zacynthus",
+      "minis-zacynthus",
+      "molebus-zacynthus",
+      "nisas-zacynthus",
+      "nissaeus-zacynthus",
+      "odysseus",
+      "oloetrochus-zacynthus",
+      "ormenus-zacynthus",
+      "pellas-zacynthus",
+      "periallus-zacynthus",
+      "periclymenus-zacynthus",
+      "periphus-zacynthus",
+      "phrenius-zacynthus",
       "polybus-zacynthus",
       "polydorus-zacynthus",
-      "thadytius-zacynthus",
+      "pronomus-zacynthus",
       "stratius-zacynthus",
-      "daesenor-zacynthus",
-      "laomedon-zacynthus",
-      "laodicus-zacynthus",
-      "halius-zacynthus",
-      "magnes-zacynthus",
-      "oloetrochus-zacynthus",
-      "barthas-zacynthus",
-      "theophron-zacynthus",
-      "nissaeus-zacynthus",
-      "alcarops-zacynthus",
-      "periclymenus-zacynthus",
-      "antenor-zacynthus",
-      "pellas-zacynthus",
-      "celtus-zacynthus",
-      "periphus-zacynthus",
-      "ormenus-zacynthus",
-      "andromedes-zacynthus"
+      "thadytius-zacynthus",
+      "theophron-zacynthus"
     ],
     "summary": [
       {
@@ -3423,6 +4841,22 @@
           "apollonius"
         ]
       }
+    ],
+    "characterIds": [
+      "ariadne",
+      "cedalion-orion",
+      "diomedes",
+      "dionysus",
+      "heracles",
+      "hypsipyle",
+      "jason",
+      "odysseus",
+      "peparethus",
+      "phanus-dionysus",
+      "philoctetes",
+      "polydeuces",
+      "staphylus-dionysus",
+      "thoas-lemnos"
     ]
   },
   {
@@ -3450,6 +4884,13 @@
     ],
     "storyIds": [
       "orion-the-hunter"
+    ],
+    "characterIds": [
+      "heracles",
+      "hylas",
+      "merope-chios",
+      "oenopion-chios",
+      "orion"
     ]
   },
   {
@@ -3479,6 +4920,10 @@
       "daedalus-icarus",
       "minotaur-and-ariadne",
       "twelve-labours"
+    ],
+    "characterIds": [
+      "chryses-paros",
+      "minos"
     ]
   },
   {
@@ -3506,6 +4951,10 @@
     ],
     "storyIds": [
       "twelve-labours"
+    ],
+    "characterIds": [
+      "cleoboea-thasos",
+      "heracles"
     ]
   },
   {
@@ -3534,6 +4983,11 @@
     "storyIds": [
       "daedalus-icarus",
       "tyrrhenian-pirates"
+    ],
+    "characterIds": [
+      "dionysus",
+      "heracles",
+      "icarus"
     ]
   },
   {
@@ -3564,6 +5018,13 @@
       "death-on-skyros",
       "little-iliad",
       "theseus-cycle"
+    ],
+    "characterIds": [
+      "achilles",
+      "deidamia",
+      "lycomedes-skyros",
+      "neoptolemus",
+      "theseus"
     ]
   },
   {
@@ -3670,6 +5131,29 @@
       "calydonian-boar",
       "deianira-and-achelous",
       "deianira-at-the-feast"
+    ],
+    "characterIds": [
+      "aetolus",
+      "agenor-aetolian",
+      "agrius-aetolian",
+      "althaea",
+      "atalanta",
+      "calydon",
+      "cleopatra-meleager",
+      "deianira",
+      "diomedes",
+      "gorge",
+      "hyllus",
+      "iphiclus-thestiad",
+      "laocoon-calydon",
+      "meleager",
+      "oeneus",
+      "palaemon-argonaut",
+      "periboea-oeneus",
+      "porthaon",
+      "thersites",
+      "thoas-aetolia",
+      "tydeus"
     ]
   },
   {
@@ -3697,6 +5181,18 @@
     ],
     "storyIds": [
       "calydonian-boar"
+    ],
+    "characterIds": [
+      "agenor-aetolian",
+      "agrius-aetolian",
+      "iphiclus-thestiad",
+      "leontophonus",
+      "oeneus",
+      "pleuron",
+      "plexippus-thestiad",
+      "porthaon",
+      "thestius",
+      "thoas-aetolia"
     ]
   },
   {
@@ -3714,63 +5210,65 @@
     "importance": "major",
     "cityId": "dulichium",
     "characterIds": [
-      "amphinomus-dulichium",
-      "thoas-dulichium",
-      "demoptolemus-dulichium",
-      "amphimachus-ithaca",
-      "euryalus-ithaca",
-      "paralus-dulichium",
-      "evenorides-ithaca",
-      "clytius-same",
-      "agenor-ithaca",
-      "eurypylus-dulichium",
-      "pylaemenes-dulichium",
       "acamas-dulichium",
-      "thersilochus-dulichium",
-      "hagius-dulichium",
-      "clymenus-dulichium",
-      "philodemus-dulichium",
-      "meneptolemus-dulichium",
-      "damastor-dulichium",
-      "bias-dulichium",
-      "telmius-dulichium",
-      "polyidus-dulichium",
-      "astylochus-dulichium",
-      "schedius-dulichium",
-      "antigonus-dulichium",
-      "marpsius-dulichium",
-      "iphidamas-dulichium",
-      "argius-dulichium",
-      "glaucus-dulichium",
-      "calydoneus-dulichium",
-      "echion-dulichium",
-      "lamas-dulichium",
-      "andraemon-dulichium",
-      "agerochus-dulichium",
-      "medon-dulichium",
-      "agrius-dulichium",
-      "promus-dulichium",
-      "ctesius-dulichium",
       "acarnan-dulichium",
-      "cycnus-dulichium",
-      "pseras-dulichium",
-      "hellanicus-dulichium",
-      "periphron-dulichium",
-      "megasthenes-dulichium",
-      "thrasymedes-dulichium",
-      "ormenius-dulichium",
-      "diopithes-dulichium",
-      "mecisteus-dulichium",
+      "agenor-ithaca",
+      "agerochus-dulichium",
+      "agrius-dulichium",
+      "amphimachus-ithaca",
+      "amphinomus-dulichium",
+      "andraemon-dulichium",
+      "antigonus-dulichium",
       "antimachus-dulichium",
-      "ptolemaeus-dulichium",
-      "lestorides-dulichium",
-      "nicomachus-dulichium",
-      "polypoetes-dulichium",
-      "ceraus-dulichium",
-      "nisus-dulichium",
+      "araphion-epeian",
       "aretias-dulichium",
+      "argius-dulichium",
+      "astylochus-dulichium",
+      "bias-dulichium",
+      "calydoneus-dulichium",
+      "ceraus-dulichium",
+      "clymenus-dulichium",
+      "clytius-same",
+      "ctesius-dulichium",
+      "cycnus-dulichium",
+      "damastor-dulichium",
+      "demoptolemus-dulichium",
+      "diopithes-dulichium",
+      "dracius-epeian",
+      "echion-dulichium",
+      "euryalus-ithaca",
+      "eurypylus-dulichium",
+      "evenorides-ithaca",
+      "glaucus-dulichium",
+      "hagius-dulichium",
+      "hellanicus-dulichium",
+      "iphidamas-dulichium",
+      "lamas-dulichium",
+      "lestorides-dulichium",
+      "marpsius-dulichium",
+      "mecisteus-dulichium",
+      "medon-dulichium",
+      "megasthenes-dulichium",
+      "meges-dulichium",
+      "meneptolemus-dulichium",
+      "nicomachus-dulichium",
+      "nisus-dulichium",
+      "ormenius-dulichium",
+      "paralus-dulichium",
+      "periphron-dulichium",
+      "philodemus-dulichium",
       "phyleus-dulichium",
-      "meges-dulichium"
+      "polyidus-dulichium",
+      "polypoetes-dulichium",
+      "promus-dulichium",
+      "pseras-dulichium",
+      "ptolemaeus-dulichium",
+      "pylaemenes-dulichium",
+      "schedius-dulichium",
+      "telmius-dulichium",
+      "thersilochus-dulichium",
+      "thoas-dulichium",
+      "thrasymedes-dulichium"
     ],
     "summary": [
       {
@@ -3811,8 +5309,9 @@
       "alcmaeon-wanderings"
     ],
     "characterIds": [
-      "alcmaeon",
       "acarnan",
+      "alcmaeon",
+      "amphilochus",
       "amphoterus-alcmaeon"
     ]
   },
@@ -3843,6 +5342,12 @@
     "storyIds": [
       "neoptolemus-to-epirus",
       "nostoi"
+    ],
+    "characterIds": [
+      "andromache",
+      "helenus",
+      "molossus",
+      "neoptolemus"
     ]
   },
   {
@@ -3873,10 +5378,11 @@
       "penelope-tested"
     ],
     "characterIds": [
-      "odysseus",
       "callidice-thesprotian",
-      "polypoetes-thesprotian",
-      "phylas-thesprotia"
+      "heracles",
+      "odysseus",
+      "phylas-thesprotia",
+      "polypoetes-thesprotian"
     ]
   },
   {
@@ -3979,10 +5485,10 @@
       "penelope-tested"
     ],
     "characterIds": [
-      "penelope",
-      "pan",
+      "arcas",
       "hermes",
-      "arcas"
+      "pan",
+      "penelope"
     ]
   },
   {
@@ -4008,6 +5514,7 @@
       }
     ],
     "characterIds": [
+      "diomedes",
       "philoctetes"
     ],
     "storyIds": [
@@ -4244,6 +5751,9 @@
     "storyIds": [
       "argonautica",
       "muster-of-the-argo"
+    ],
+    "characterIds": [
+      "deucalion-pella"
     ]
   },
   {
@@ -4283,6 +5793,40 @@
       "hippolytus",
       "pittheus",
       "theseus"
+    ]
+  },
+  {
+    "id": "hermione-argolis",
+    "name": "Hermione",
+    "greekName": "Ἑρμιόνη",
+    "kind": "city",
+    "region": "argolis",
+    "coordinates": [
+      23.254,
+      37.383
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570292",
+    "importance": "major",
+    "cityId": "hermione-argolis",
+    "summary": [
+      {
+        "text": "Hermione on the eastern Argive coast — where Apollodorus says Demeter learned from the Hermionians that Pluto had taken Persephone, and where Pausanias heard that Helen bore Iphigenia to Theseus and entrusted the child to Clytaemnestra to be reared as her own.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 1.5.1; Description of Greece 2.22.6–7"
+      }
+    ],
+    "storyIds": [
+      "hymn-to-demeter",
+      "iphigenia-at-aulis"
+    ],
+    "characterIds": [
+      "demeter",
+      "hades",
+      "persephone"
     ]
   },
   {
@@ -4575,8 +6119,10 @@
       "heracles",
       "hippalcimus",
       "hippodamia",
+      "iphianassa-elean",
       "menelaus",
       "molione-epeian",
+      "mulius-augeiad",
       "myrtilus",
       "oenomaus",
       "oxylus",
@@ -4588,6 +6134,36 @@
       "sterope-pleiad",
       "thalpius-epeian",
       "thyestes"
+    ]
+  },
+  {
+    "id": "azania",
+    "name": "Azania",
+    "greekName": "Ἀζανία",
+    "kind": "city",
+    "region": "arcadia",
+    "coordinates": [
+      22.15,
+      37.88
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "570359",
+    "importance": "major",
+    "cityId": "azania",
+    "summary": [
+      {
+        "text": "Azania in Arcadia — the district Arcas named for his son Azan when he divided the land, whence Cleitor son of Azan came to be the most powerful of the Arcadian kings.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.4.3–8.4.5"
+      }
+    ],
+    "characterIds": [
+      "azan"
+    ],
+    "storyIds": [
+      "callisto-arcas"
     ]
   },
   {
@@ -4621,6 +6197,7 @@
     ],
     "characterIds": [
       "acarnan",
+      "aepytus-elatid",
       "agapenor",
       "agenor-psophis",
       "alcmaeon",
@@ -4628,6 +6205,7 @@
       "amphidamas-arcadia",
       "amphoterus-alcmaeon",
       "ancaeus-arcadian",
+      "apheidas",
       "arsinoe-psophis",
       "atalanta",
       "auge",
@@ -4760,7 +6338,9 @@
       "the-sinners-of-tartarus"
     ],
     "characterIds": [
+      "cephalus-aeolid",
       "crisus",
+      "deion",
       "electra",
       "epeius",
       "epistrophus-phocis",
@@ -4768,6 +6348,7 @@
       "naubolus-phocis",
       "orestes",
       "panopeus",
+      "phocus-aeacid",
       "pylades",
       "schedius-phocis",
       "strophius-phocis"
@@ -4827,12 +6408,12 @@
     "cityId": "phylace-phthiotis",
     "summary": [
       {
-        "text": "Phylace in Phthiotis — home of Protesilaus, first of the Achaeans to leap ashore at Troy, and of Peleus and Patroclus among the Myrmidons who sailed from Phthia.",
+        "text": "Phylace in Phthiotis — citadel of warlike Protesilaus in the Catalogue of Ships, first of the Achaeans to leap ashore at Troy; his widow Laodamia was left wailing here when the black earth already held him fast.",
         "sources": [
           "homer",
           "apollodorus"
         ],
-        "citation": "Iliad 2.695–709; Bibliotheca Epitome 3.29"
+        "citation": "Iliad 2.695–702; Bibliotheca Epitome 3.29"
       }
     ],
     "characterIds": [
@@ -4851,7 +6432,8 @@
       "rhene-phthian"
     ],
     "storyIds": [
-      "protesilaus-at-troy"
+      "protesilaus-at-troy",
+      "trojan-war"
     ]
   },
   {
@@ -4935,6 +6517,39 @@
     ]
   },
   {
+    "id": "cyzicus",
+    "name": "Cyzicus",
+    "greekName": "Κύζικος",
+    "kind": "city",
+    "region": "mysia",
+    "coordinates": [
+      27.883,
+      40.386
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "511218",
+    "importance": "major",
+    "cityId": "cyzicus",
+    "summary": [
+      {
+        "text": "Cyzicus on the Propontis — city of the Doliones where King Cyzicus welcomed the Argonauts at harbour and was slain by Jason in a night of mistaken battle.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 1.9.18; Argonautica 1.961–1074; Fabulae 16"
+      }
+    ],
+    "characterIds": [
+      "cyzicus-dolion"
+    ],
+    "storyIds": [
+      "argonautica",
+      "voyage-to-colchis"
+    ]
+  },
+  {
     "id": "thespiae",
     "name": "Thespiae",
     "greekName": "Θεσπιαί",
@@ -5003,9 +6618,12 @@
       "andromeda",
       "cassiopeia-ethiopia",
       "cepheus-ethiopia",
+      "emathion-ethiopia",
+      "heliades",
       "merops-ethiopia",
       "perses-perseid",
       "perseus",
+      "phaethon",
       "phineus-ethiopia"
     ],
     "storyIds": [
@@ -5117,6 +6735,7 @@
     "characterIds": [
       "arcesilaus",
       "areilycus-achaean",
+      "autolycus",
       "clonius",
       "eribotes",
       "leitus",
@@ -5196,6 +6815,7 @@
       "butes-athens",
       "eurylochus",
       "odysseus",
+      "oeagrus",
       "orpheus",
       "perimedes-odyssey",
       "polites-odyssey",
@@ -5450,6 +7070,49 @@
     ]
   },
   {
+    "id": "magnesia",
+    "name": "Magnesia",
+    "greekName": "Μαγνησία",
+    "kind": "city",
+    "region": "magnesia",
+    "coordinates": [
+      22.921,
+      39.507
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "540923",
+    "importance": "major",
+    "cityId": "magnesia",
+    "summary": [
+      {
+        "text": "Magnesia on the Pagasaean coast — the Thessalian region whence Hyginus names Phocus and Priasus, sons of Caeneus, among Jason's Argonauts.",
+        "sources": [
+          "hyginus"
+        ],
+        "citation": "Fabulae 14"
+      },
+      {
+        "text": "Homer's Catalogue of Ships sets the Magnetes about the fair-flowing Peneius and forested Pelion — forty black ships under swift Prothous son of Tenthredon.",
+        "sources": [
+          "homer",
+          "apollodorus"
+        ],
+        "citation": "Iliad 2.735–755; Epitome 3.14"
+      }
+    ],
+    "characterIds": [
+      "phocus-magnesian",
+      "priasus",
+      "prothous-magnesia",
+      "tenthredon-magnesia"
+    ],
+    "storyIds": [
+      "argonautica",
+      "muster-of-the-argo",
+      "trojan-war"
+    ]
+  },
+  {
     "id": "meliboea-magnesia",
     "name": "Meliboea",
     "greekName": "Μελίβοια",
@@ -5465,16 +7128,18 @@
     "cityId": "meliboea-magnesia",
     "summary": [
       {
-        "text": "Meliboea in Magnesia — a coastal town of the Catalogue whose spears followed Philoctetes' father Poeas and the Magnesian muster to Troy.",
+        "text": "Meliboea in Magnesia — a coastal town of the Catalogue whose bowmen followed Philoctetes in seven companies from the Pagasaean shore.",
         "sources": [
-          "homer"
+          "homer",
+          "apollodorus"
         ],
-        "citation": "Iliad 2.711–716"
+        "citation": "Iliad 2.695–730; Epitome 3.14"
       }
     ],
     "storyIds": [
       "philoctetes-on-lemnos",
-      "philoctetes-to-italy"
+      "philoctetes-to-italy",
+      "trojan-war"
     ],
     "characterIds": [
       "philoctetes",
@@ -5497,16 +7162,18 @@
     "cityId": "methone-magnesia",
     "summary": [
       {
-        "text": "Methone in Magnesia — the well-built city whose warriors Poeas led from the Pagasaean shore in the muster of the Achaean kings.",
+        "text": "Methone in Magnesia — the well-built city whose bowmen followed Philoctetes in seven companies from the Pagasaean shore in the muster of the Achaean kings.",
         "sources": [
-          "homer"
+          "homer",
+          "apollodorus"
         ],
-        "citation": "Iliad 2.711–716"
+        "citation": "Iliad 2.695–730; Epitome 3.14"
       }
     ],
     "storyIds": [
       "philoctetes-on-lemnos",
-      "philoctetes-to-italy"
+      "philoctetes-to-italy",
+      "trojan-war"
     ],
     "characterIds": [
       "philoctetes",
@@ -5534,12 +7201,13 @@
           "homer",
           "apollodorus"
         ],
-        "citation": "Iliad 2.711–716; Bibliotheca Epitome 3.27"
+        "citation": "Iliad 2.695–730; Bibliotheca Epitome 3.14, 3.27"
       }
     ],
     "storyIds": [
       "philoctetes-on-lemnos",
-      "philoctetes-to-italy"
+      "philoctetes-to-italy",
+      "trojan-war"
     ],
     "characterIds": [
       "philoctetes",
@@ -5595,16 +7263,18 @@
     "cityId": "thaumacia-magnesia",
     "summary": [
       {
-        "text": "Thaumacia in Magnesia — one of the towns beside Olizon and Methone whose spearmen followed the Magnesian leaders to the war at Troy.",
+        "text": "Thaumacia in Magnesia — one of the towns beside Olizon and Methone whose bowmen followed Philoctetes to the war at Troy.",
         "sources": [
-          "homer"
+          "homer",
+          "apollodorus"
         ],
-        "citation": "Iliad 2.711–716"
+        "citation": "Iliad 2.695–730; Epitome 3.14"
       }
     ],
     "storyIds": [
       "philoctetes-on-lemnos",
-      "philoctetes-to-italy"
+      "philoctetes-to-italy",
+      "trojan-war"
     ],
     "characterIds": [
       "philoctetes"
@@ -5639,6 +7309,37 @@
     ],
     "characterIds": [
       "heracles"
+    ]
+  },
+  {
+    "id": "bistonia-thrace",
+    "name": "Bistonia",
+    "greekName": "Βιστωνία",
+    "kind": "city",
+    "region": "thrace",
+    "coordinates": [
+      24.77,
+      41.05
+    ],
+    "certainty": "traditional",
+    "pleiadesId": "501409",
+    "importance": "major",
+    "cityId": "bistonia-thrace",
+    "summary": [
+      {
+        "text": "Bistonia in Thrace — kingdom of Diomedes son of Ares, king of the warlike Bistones who kept man-eating mares; Heracles slew him there and founded Abdera beside the grave of Abderus.",
+        "sources": [
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 2.5.8; Fabulae 30"
+      }
+    ],
+    "characterIds": [
+      "diomedes-thrace"
+    ],
+    "storyIds": [
+      "twelve-labours"
     ]
   },
   {
@@ -5854,6 +7555,9 @@
       "patroclus",
       "peleus",
       "phoenix-myrmidon"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {
@@ -5973,7 +7677,8 @@
       }
     ],
     "storyIds": [
-      "protesilaus-at-troy"
+      "protesilaus-at-troy",
+      "trojan-war"
     ],
     "characterIds": [
       "iphiclus-phthian",
@@ -6067,8 +7772,8 @@
       "trojan-war"
     ],
     "characterIds": [
-      "areilycus-achaean",
       "arcesilaus",
+      "areilycus-achaean",
       "clonius",
       "leitus",
       "peneleos",
@@ -6456,6 +8161,9 @@
     ],
     "characterIds": [
       "gouneus-cyphus"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {
@@ -6516,8 +8224,10 @@
     "characterIds": [
       "epistrophus-phocis",
       "iphitus-phocis",
+      "itys",
       "naubolus-phocis",
-      "schedius-phocis"
+      "schedius-phocis",
+      "tereus"
     ],
     "storyIds": [
       "tereus-procne-philomela"
@@ -6554,6 +8264,10 @@
       "hippocoon-thrace",
       "lycurgus-thrace",
       "rhesus"
+    ],
+    "storyIds": [
+      "lycurgus-of-thrace",
+      "orpheus-death"
     ]
   },
   {
@@ -6763,9 +8477,139 @@
       }
     ],
     "characterIds": [
+      "caeneus-lapith",
       "coronus-gyrton",
+      "hippodameia-lapith",
       "leonteus-lapith",
       "polypoetes-lapith"
+    ],
+    "storyIds": [
+      "lapith-centaur-war",
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "argissa-thessaly",
+    "name": "Argissa",
+    "greekName": "Ἄργισσα",
+    "kind": "city",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22.341,
+      39.66
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "540659",
+    "importance": "minor",
+    "cityId": "argissa-thessaly",
+    "summary": [
+      {
+        "text": "Argissa in Perrhaebian Thessaly — Lapith town beside Gyrtone, Orthe, Elone, and white Oloösson whence Polypoetes and Leonteus ranged forty black ships to Troy.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.735–775"
+      }
+    ],
+    "characterIds": [
+      "leonteus-lapith",
+      "polypoetes-lapith"
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "orthe-thessaly",
+    "name": "Orthe",
+    "greekName": "Ὄρθη",
+    "kind": "city",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22.193,
+      39.709
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "540992",
+    "importance": "minor",
+    "cityId": "orthe-thessaly",
+    "summary": [
+      {
+        "text": "Orthe in Perrhaebian Thessaly — Lapith settlement in the Catalogue of Ships beside Argissa and Gyrtone, whose spearmen followed Polypoetes and Leonteus to Troy.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.735–775"
+      }
+    ],
+    "characterIds": [
+      "leonteus-lapith",
+      "polypoetes-lapith"
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "elone-thessaly",
+    "name": "Elone",
+    "greekName": "Ἠλώνη",
+    "kind": "city",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22.305,
+      39.832
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "540760",
+    "importance": "minor",
+    "cityId": "elone-thessaly",
+    "summary": [
+      {
+        "text": "Elone in Perrhaebian Thessaly — Lapith town named beside Argissa, Gyrtone, and Orthe in the Catalogue of Ships when Polypoetes and Leonteus led forty ships to Troy.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.735–775"
+      }
+    ],
+    "characterIds": [
+      "leonteus-lapith",
+      "polypoetes-lapith"
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
+    "id": "oloosson-thessaly",
+    "name": "Oloösson",
+    "greekName": "Ὀλοοσσόν",
+    "kind": "city",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22.216,
+      39.893
+    ],
+    "certainty": "approximate",
+    "pleiadesId": "540981",
+    "importance": "minor",
+    "cityId": "oloosson-thessaly",
+    "summary": [
+      {
+        "text": "White Oloösson in Perrhaebian Thessaly — the Lapith polis Homer sets beside Argissa, Gyrtone, Orthe, and Elone whence Polypoetes and Leonteus followed forty black ships to Troy.",
+        "sources": [
+          "homer"
+        ],
+        "citation": "Iliad 2.735–775"
+      }
+    ],
+    "characterIds": [
+      "leonteus-lapith",
+      "polypoetes-lapith"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {
@@ -6821,19 +8665,32 @@
     "cityId": "halus-achaea-phthiotis",
     "summary": [
       {
-        "text": "Halus in Achaea Phthiotis — Pelasgian Argissa beside the Myrmidons' muster in Homer's Catalogue of Ships, one of the Phthiotian settlements from which Peleus and Achilles drew their spearmen.",
+        "text": "Halus in Achaea Phthiotis — coastal polis of the Myrmidons beside Alope and Trachis in Homer's Catalogue of Ships, one of the Phthiotian settlements from which Peleus and Achilles drew their fifty black ships.",
         "sources": [
           "homer"
         ],
-        "citation": "Iliad 2.681–690"
+        "citation": "Iliad 2.655–690"
       }
     ],
     "characterIds": [
       "achilles",
+      "aeolus-hellene",
+      "alcyone-aeolid",
+      "aloeus-aeolid",
+      "antigone-peleus",
       "automedon",
+      "calyce",
+      "canace",
+      "enarete",
+      "hellen",
+      "iphimedeia",
       "patroclus",
       "peleus",
-      "phoenix-myrmidon"
+      "phoenix-myrmidon",
+      "polydora"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {
@@ -7000,6 +8857,9 @@
     ],
     "characterIds": [
       "guneus-aenian"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {
@@ -7068,7 +8928,8 @@
       "protesilaus"
     ],
     "storyIds": [
-      "protesilaus-at-troy"
+      "protesilaus-at-troy",
+      "trojan-war"
     ]
   },
   {
@@ -7162,6 +9023,10 @@
     "characterIds": [
       "heracles",
       "iolaus"
+    ],
+    "storyIds": [
+      "hymn-to-demeter",
+      "twelve-labours"
     ]
   },
   {
@@ -7348,6 +9213,9 @@
       "odysseus",
       "perimedes-odyssey",
       "polites-odyssey"
+    ],
+    "storyIds": [
+      "lotus-and-cyclops"
     ]
   },
   {
@@ -7509,12 +9377,12 @@
     "cityId": "oechalia",
     "summary": [
       {
-        "text": "Oechalia in Malis — the city of archer-king Eurytus that Heracles sacked for Iole after Eurytus refused him in marriage and Iphitus later sought the stolen mares.",
+        "text": "Oechalia in Malis — city of archer-king Eurytus, named with Tricca and Ithome in the Catalogue of Ships as one of the poleis whose levies Machaon and Podalirius commanded, and the city Heracles sacked for Iole after Eurytus refused him in marriage.",
         "sources": [
           "homer",
           "apollodorus"
         ],
-        "citation": "Iliad 2.730–733; Bibliotheca 2.6.1–2.7.7"
+        "citation": "Iliad 2.729–733; Bibliotheca 2.6.1–2.7.7"
       }
     ],
     "characterIds": [
@@ -7523,10 +9391,14 @@
       "hylas",
       "iole",
       "iphitus-oechalia",
-      "mopsus"
+      "machaon",
+      "mopsus",
+      "podalirius",
+      "thamyris"
     ],
     "storyIds": [
-      "death-of-heracles"
+      "death-of-heracles",
+      "trojan-war"
     ]
   },
   {
@@ -7557,6 +9429,7 @@
       "arcesilaus",
       "areilycus-achaean",
       "clonius",
+      "hippomenes",
       "leitus",
       "peneleos",
       "prothoenor",
@@ -7618,18 +9491,20 @@
     "cityId": "ormenion-magnesia",
     "summary": [
       {
-        "text": "Ormenion in Magnesia — settlement in the Catalogue of Ships whence Eurypylus son of Euaemon led forty black ships to the plain of Troy.",
+        "text": "Ormenion in Magnesia — the Ormenian settlement beside the fountain Hypereia, Asterium, and the white crests of Titanus whence Eurypylus son of Euaemon led forty black ships to the plain of Troy.",
         "sources": [
-          "homer"
+          "homer",
+          "apollodorus"
         ],
-        "citation": "Iliad 2.734–737"
+        "citation": "Iliad 2.735–775; Epitome 3.14"
       }
     ],
     "characterIds": [
       "eurypylus-euaemonid"
     ],
     "storyIds": [
-      "trojan-war"
+      "trojan-war",
+      "wounding-of-the-chiefs"
     ]
   },
   {
@@ -7657,7 +9532,112 @@
       }
     ],
     "storyIds": [
+      "argonautica",
       "muster-of-the-argo"
+    ],
+    "characterIds": [
+      "acastus",
+      "admetus",
+      "aethalides",
+      "amphion-pella",
+      "ancaeus-arcadian",
+      "ancaeus-samos",
+      "argus-arestor",
+      "asterion-pellene",
+      "asterius-piresia",
+      "atalanta",
+      "butes-athens",
+      "caeneus-gortyn",
+      "calais",
+      "castor",
+      "cepheus-tegea",
+      "clytius-oechalia",
+      "coronus-gyrton",
+      "deucalion-pella",
+      "erginus-miletus",
+      "eribotes",
+      "euphemus",
+      "heracles",
+      "idas",
+      "idmon",
+      "iphiclus-thestiad",
+      "iphitus-phocis",
+      "jason",
+      "laocoon-calydon",
+      "lynceus-apharetid",
+      "mopsus",
+      "nauplius-amymone",
+      "oileus-locris",
+      "palaemon-argonaut",
+      "orpheus",
+      "peleus",
+      "phalerus-athens",
+      "polydeuces",
+      "polyphemus-elatid",
+      "telamon",
+      "tiphys",
+      "zetes"
+    ]
+  },
+  {
+    "id": "pieria",
+    "name": "Pieria",
+    "greekName": "Πιερία",
+    "kind": "city",
+    "region": "pieria",
+    "coordinates": [
+      22.501,
+      40.174
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "491044",
+    "importance": "major",
+    "cityId": "pieria",
+    "summary": [
+      {
+        "text": "Pieria beneath Olympus' north face — where Hermes drove Apollo's cattle from the pasture of Neleus and Battus the forester betrayed his oath and was turned to touchstone.",
+        "sources": [
+          "ovid",
+          "apollodorus"
+        ],
+        "citation": "Metamorphoses 2.676–707; Bibliotheca 3.10.2"
+      }
+    ],
+    "characterIds": [
+      "battus-pieria"
+    ],
+    "storyIds": [
+      "birth-of-hermes"
+    ]
+  },
+  {
+    "id": "doris",
+    "name": "Doris",
+    "greekName": "Δωρίς",
+    "kind": "city",
+    "region": "doris",
+    "coordinates": [
+      22.38,
+      38.38
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540667",
+    "importance": "major",
+    "cityId": "doris",
+    "summary": [
+      {
+        "text": "Doris over against the Peloponnese — the country Hellen's son Dorus received in the tripartite division of Hellas and named after himself.",
+        "sources": [
+          "apollodorus"
+        ],
+        "citation": "Bibliotheca 1.7.3"
+      }
+    ],
+    "characterIds": [
+      "dorus-hellene"
+    ],
+    "storyIds": [
+      "great-flood"
     ]
   },
   {
@@ -7789,7 +9769,8 @@
     "characterIds": [
       "iphigenia",
       "orestes",
-      "pylades"
+      "pylades",
+      "thoas-tauris"
     ],
     "storyIds": [
       "oresteia"
@@ -7852,13 +9833,15 @@
     "characterIds": [
       "achilles",
       "automedon",
+      "ceyx",
       "hyllus",
       "patroclus",
       "peleus",
       "phoenix-myrmidon"
     ],
     "storyIds": [
-      "alcyone-ceyx"
+      "alcyone-ceyx",
+      "trojan-war"
     ]
   },
   {
@@ -7919,7 +9902,8 @@
       "protesilaus"
     ],
     "storyIds": [
-      "protesilaus-at-troy"
+      "protesilaus-at-troy",
+      "trojan-war"
     ]
   },
   {
@@ -7951,7 +9935,8 @@
       "protesilaus"
     ],
     "storyIds": [
-      "protesilaus-at-troy"
+      "protesilaus-at-troy",
+      "trojan-war"
     ]
   },
   {
@@ -8014,8 +9999,74 @@
       }
     ],
     "characterIds": [
+      "cyllen",
+      "elatus-arcadia",
       "heracles",
+      "ischys-elatid",
+      "pereus",
       "stymphalus-arcadian"
+    ]
+  },
+  {
+    "id": "cleitor",
+    "name": "Cleitor",
+    "greekName": "Κλείτωρ",
+    "kind": "city",
+    "region": "arcadia",
+    "coordinates": [
+      22.097,
+      37.891
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570359",
+    "importance": "major",
+    "cityId": "cleitor",
+    "summary": [
+      {
+        "text": "Cleitor on the northern Arcadian plain — the city Cleitor son of Azan founded and named after himself, ringed by low hills with sanctuaries of Demeter, Asclepius, and Eileithyia still standing in Pausanias' day.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.4.5, 8.21.3"
+      }
+    ],
+    "characterIds": [
+      "cleitor"
+    ],
+    "storyIds": [
+      "callisto-arcas"
+    ]
+  },
+  {
+    "id": "lycosura",
+    "name": "Lycosura",
+    "greekName": "Λυκόσουρα",
+    "kind": "city",
+    "region": "arcadia",
+    "coordinates": [
+      22.348,
+      37.367
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "570470",
+    "importance": "major",
+    "cityId": "lycosura",
+    "summary": [
+      {
+        "text": "Lycosura on Mount Lycaeus — the city Lycaon founded, which Pausanias calls the oldest on earth, seat of Cleitor son of Azan and cradle of the Lycaean cult of Zeus.",
+        "sources": [
+          "pausanias"
+        ],
+        "citation": "Description of Greece 8.2.1, 8.4.5, 8.38.1"
+      }
+    ],
+    "characterIds": [
+      "cleitor",
+      "lycaon",
+      "nyctimus"
+    ],
+    "storyIds": [
+      "callisto-arcas"
     ]
   },
   {
@@ -8504,6 +10555,39 @@
     ]
   },
   {
+    "id": "ithome-thessaly",
+    "name": "Ithome",
+    "greekName": "Ἰθώμη",
+    "kind": "city",
+    "region": "pelasgiotis",
+    "coordinates": [
+      21.799,
+      39.416
+    ],
+    "certainty": "fixed",
+    "pleiadesId": "540841",
+    "importance": "minor",
+    "cityId": "ithome-thessaly",
+    "summary": [
+      {
+        "text": "Ithome of the crags in Histiaeotis — Homer's stepped citadel west of Tricca, one of the three Thessalian poleis whose levies Machaon and Podalirius commanded in the Catalogue of Ships.",
+        "sources": [
+          "homer",
+          "pausanias"
+        ],
+        "citation": "Iliad 2.729–733; Description of Greece 4.9.2"
+      }
+    ],
+    "characterIds": [
+      "asclepius",
+      "machaon",
+      "podalirius"
+    ],
+    "storyIds": [
+      "trojan-war"
+    ]
+  },
+  {
     "id": "tricca-thessaly",
     "name": "Tricca",
     "greekName": "Τρίκκη",
@@ -8519,7 +10603,7 @@
     "cityId": "tricca-thessaly",
     "summary": [
       {
-        "text": "Tricca in Thessaly — city of the healers Machaon and Podalirius, sons of Asclepius, who led thirty ships from the western Thessalian plain to Troy.",
+        "text": "Tricca in Thessaly — with Ithome of the crags and Oechalia, city of Eurytus, one of the three poleis whose thirty hollow ships Machaon and Podalirius, sons of Asclepius, led to Troy.",
         "sources": [
           "homer",
           "apollodorus"
@@ -8528,8 +10612,12 @@
       }
     ],
     "characterIds": [
+      "asclepius",
       "machaon",
       "podalirius"
+    ],
+    "storyIds": [
+      "trojan-war"
     ]
   },
   {

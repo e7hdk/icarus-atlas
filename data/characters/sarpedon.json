@@ -10,6 +10,11 @@
       "text": "The son of Zeus and Europa. Defeated by his brother Minos in a dispute over the boy Miletus, he fled to Lycia where he became king.",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Bibliotheca 3.1.2; Fabulae 106, 178"
+    },
+    {
+      "text": "Homer makes him captain of the Lycian allies beside Glaucus from the eddying Xanthus when the Catalogue marshals the hosts before Ilion — the bronze-harnessed warrior Patroclus slays on the plain.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875, 16.419–505"
     }
   ],
   "story": [
@@ -32,11 +37,13 @@
   "residences": [
     {
       "city": "xanthus-lycia",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Bibliotheca 3.1.2"
     },
     {
       "city": "troy",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875, 16.419–505"
     }
   ]
 }

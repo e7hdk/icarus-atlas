@@ -32,23 +32,30 @@
     },
     {
       "title": "Beyond the labours",
-      "text": "When the tasks were done, he sacked Troy for Laomedon's broken oath, was sold to Omphale in Lydia and fought beside the gods at Phlegra, wrestled Achelous for Deianira at Calydon, and at last died on Oeta by the centaur's poison — yet Hesiod places him on Olympus wedded to Hebe, and Homer saw his shade among the dead: mortal agony and godhead both.",
+      "text": "When the tasks were done, he sacked Troy for Laomedon's broken oath, marched on Oechalia when Eurytus withheld Iole after the archery contest and carried the princess away, was sold to Omphale in Lydia and fought beside the gods at Phlegra, wrestled Achelous for Deianira at Calydon, and at last died on Oeta by the centaur's poison — yet Hesiod places him on Olympus wedded to Hebe, and Homer saw his shade among the dead: mortal agony and godhead both.",
       "sources": ["homer", "apollodorus", "hesiod", "ovid"],
-      "citation": "Hom. Il. 5.640–651, Od. 11.601–627; Apollod. 2.6.2–2.7.7; Hes. Th. 950–955; Ov. Met. 9.1–272"
+      "citation": "Hom. Il. 5.640–651, 2.729–733, Od. 11.601–627; Apollod. 2.6.1, 2.6.2–2.7.7; Hes. Th. 950–955; Ov. Met. 9.1–272"
     }
   ],
   "cast": [
     { "id": "heracles", "name": "Heracles", "role": "The hero of the labours" },
     { "id": "eurystheus", "name": "Eurystheus", "role": "The taskmaster king" },
     { "id": "alcmene", "name": "Alcmene", "role": "Mother of the twins" },
+    { "id": "amphitryon", "name": "Amphitryon", "role": "Mortal father of Iphicles and foster-father of Heracles" },
+    { "id": "iphicles", "name": "Iphicles", "role": "Mortal twin brother of Heracles" },
+    { "id": "electryon", "name": "Electryon", "role": "Maternal grandfather slain before the hero was born" },
+    { "id": "licymnius", "name": "Licymnius", "role": "Surviving bastard uncle of the hero" },
     { "id": "iolaus", "name": "Iolaus", "role": "Nephew and companion" },
     { "id": "hera", "name": "Hera", "role": "Everlasting enemy" },
-    { "id": "zeus", "name": "Zeus", "role": "Divine father in one tradition" }
+    { "id": "zeus", "name": "Zeus", "role": "Divine father in one tradition" },
+    { "id": "eurytus-oechalia", "name": "Eurytus", "role": "Archer-king whose refusal of Iole brought the sack" },
+    { "id": "iole", "name": "Iole", "role": "The withheld bride, prize of the Oechalian contest" }
   ],
   "places": [
     { "id": "thebes", "name": "Thebes", "role": "Where he was born" },
     { "id": "tiryns", "name": "Tiryns", "role": "Seat of Eurystheus' commands" },
-    { "id": "mycenae", "name": "Mycenae", "role": "Kingdom of the taskmaster" }
+    { "id": "mycenae", "name": "Mycenae", "role": "Kingdom of the taskmaster" },
+    { "id": "oechalia", "name": "Oechalia", "role": "City sacked for Iole after the archery contest" }
   ],
   "attestations": [
     { "source": "apollodorus", "work": "The Library", "citation": "2.4.5–2.5.12" },

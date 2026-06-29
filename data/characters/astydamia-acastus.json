@@ -1,0 +1,43 @@
+{
+  "id": "astydamia-acastus",
+  "name": "Astydamia",
+  "greekName": "Astydamia (Ἀστυδάμεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Iolcus",
+    "wife of Acastus",
+    "the Peleus betrayal"
+  ],
+  "summary": [
+    {
+      "text": "Wife of Acastus at Iolcus who fell in love with the guest Peleus, accused him when rebuffed, and was slaughtered and dismembered when Peleus returned with Jason and the Dioscuri to lay the city waste.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3, 3.13.7"
+    },
+    {
+      "text": "Homonym guard: not Astydamia daughter of Pelops, mother of Amphitryon (Bibliotheca 2.4.5); not Astydamia daughter of Amyntor in Heracles' catalogue of lovers (Bibliotheca 2.7.8).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.5, 2.7.8, 3.13.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "At the games celebrated in honor of Pelias, Peleus contended in wrestling with Atalanta. Astydamia, wife of Acastus, fell in love with Peleus and sent him a proposal for a meeting; when she could not prevail on him she sent word to his wife that Peleus was about to marry Sterope, daughter of Acastus — on hearing which the wife of Peleus hanged herself — and accused Peleus to her husband of forcing her.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3"
+    },
+    {
+      "text": "Acastus, unwilling to kill the man he had purified, took Peleus hunting on Pelion and deserted him swordless for the centaurs; but Chiron restored the blade. Peleus repaid the treachery: with Jason and the Dioscuri he laid Iolcus waste, slaughtered Astydamia, and divided her limb from limb to lead his army through her into the city.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3, 3.13.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3, 3.13.7"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "perimede-amphitryon",
+  "name": "Perimede",
+  "greekName": "Perimede (Περιμήδη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Perseid princess",
+    "sister of Amphitryon",
+    "wife of Licymnius"
+  ],
+  "summary": [
+    {
+      "text": "Sister of Amphitryon and Anaxo in the Perseid house at Mycenae, given in marriage to Licymnius when Amphitryon came purified to Thebes after the death of Electryon — the last branch of Electryon's surviving male line.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.6"
+    },
+    {
+      "text": "Homonym guard: not Perimede daughter of Aeolus and Enarete (`enarete` catalogue); not Perimedes son of Eurystheus slain at Athens (Bibliotheca 2.8.1); not Perimedes comrade of Odysseus (`perimedes-odyssey`) or suitor from Same (`perimedes-same`).",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 1.7.3, 2.4.6, 2.8.1; Odyssey 11.1–50"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Perimede only at the turning-point after Electryon's death: Amphitryon went with Alcmena and Licymnius to Thebes, was purified by Creon, and gave his sister Perimede to Licymnius in marriage. She thus bound the surviving bastard son of Electryon into the Alcaeus line through her brother's house.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.6"
+    },
+    {
+      "text": "As daughter of Alcaeus she stood in the same Perseid generation as Amphitryon and Anaxo — sister to the man who would marry Alcmena and to the woman Electryon had married before the Taphian slaughter took all nine legitimate sons.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5–6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5–6"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.6"
+    }
+  ]
+}

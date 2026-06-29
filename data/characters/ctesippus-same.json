@@ -12,40 +12,60 @@
   "summary": [
     {
       "text": "A suitor from Same on Cephallenia in Homer, named both among the twenty-three wooers from Same and among the twelve from Ithaca itself in Apollodorus' island rolls — trusting in boundless wealth, set on lawlessness, who cast an ox's hoof at the disguised Odysseus and grazed Eumaeus with a spear before he fell in the final fight.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Odyssey 20.270–340; 22.255–290; Epitome 7.28; Epitome 7.30"
     }
   ],
   "story": [
     {
       "text": "Among the haughty wooers Homer names Ctesippus as a man with his heart set on lawlessness, whose dwelling was in Same. Trusting in his boundless wealth, he wooed the wife of long-absent Odysseus and spoke among the proud suitors with insolence.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Odyssey 20.270–295"
     },
     {
       "text": "He hurled an ox's hoof at the stranger's head; Odysseus turned his head aside and smiled a grim smile while the hoof struck the well-built wall. Telemachus rebuked him sharply, saying the blow had profited Ctesippus' soul rather than harmed the guest — for had the missile struck, Telemachus would have run him through with his spear.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Odyssey 20.300–340"
     },
     {
       "text": "In the last spear-cast of the mnesterophonia, Ctesippus grazed Eumaeus' shoulder above his shield before Odysseus and his company hurled their sharp spears into the throng of wooers.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Odyssey 22.255–290"
     },
     {
       "text": "Apollodorus names Ctesippus among the twenty-three wooers from Same in Epitome 7.28 — listed after Pisander and before Hippodochus — and again among the twelve suitors from Ithaca itself in Epitome 7.30, while Homer knows him only at Same.",
-      "sources": ["apollodorus", "homer"],
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Epitome 7.28; Epitome 7.30; Odyssey 20.270–295"
     }
   ],
   "residences": [
     {
       "city": "cephallenia",
-      "sources": ["homer", "apollodorus"]
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 20.270–340; 22.255–290; Epitome 7.28; Epitome 7.30"
     },
     {
       "city": "ithaca",
-      "sources": ["homer", "apollodorus"]
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 20.270–340; 22.255–290; Epitome 7.30"
     }
   ]
 }

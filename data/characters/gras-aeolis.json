@@ -25,11 +25,13 @@
   "residences": [
     {
       "city": "cyme",
-      "sources": ["pausanias", "hesiod"]
+      "sources": ["pausanias", "hesiod"],
+      "citation": "Description of Greece 3.2.1; Works and Days 636–640"
     },
     {
       "city": "smyrna",
-      "sources": ["pausanias"]
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.2.1"
     }
   ]
 }

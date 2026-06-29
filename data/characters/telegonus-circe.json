@@ -44,11 +44,13 @@
   "residences": [
     {
       "city": "aeaea",
-      "sources": ["apollodorus", "hyginus"]
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 7.16, 7.36–7.37"
     },
     {
       "city": "ithaca",
-      "sources": ["apollodorus", "hyginus"]
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 7.16, 7.36–7.37; Theogony 995–1015"
     }
   ]
 }

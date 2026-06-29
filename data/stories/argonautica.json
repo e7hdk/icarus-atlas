@@ -491,9 +491,29 @@
       "role": "Jason's father, forced to death at the bull's blood"
     },
     {
+      "id": "alcimede",
+      "name": "Alcimede",
+      "role": "Jason's mother in Apollonius and Hyginus"
+    },
+    {
       "id": "polymede",
       "name": "Polymede",
       "role": "Jason's mother in Apollodorus"
+    },
+    {
+      "id": "pisidice-pelias",
+      "name": "Pisidice",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
+    },
+    {
+      "id": "pelopia-pelias",
+      "name": "Pelopia",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
+    },
+    {
+      "id": "hippothoe-pelias",
+      "name": "Hippothoe",
+      "role": "Daughter of Pelias who minced him in Medea's cauldron"
     },
     {
       "id": "aeetes",
@@ -693,9 +713,34 @@
       "role": "Where Pelias sent Jason forth and Acastus ruled after"
     },
     {
+      "id": "pagasae",
+      "name": "Pagasae",
+      "role": "Magnesian harbour where Jason mustered the heroes and the Argo first put to sea"
+    },
+    {
+      "id": "pherae",
+      "name": "Pherae",
+      "role": "Lordship of Admetus, whom Apollo served as herdsman before the voyage"
+    },
+    {
       "id": "lemnos",
       "name": "Lemnos",
       "role": "Island of Hypsipyle and the slaughtered husbands"
+    },
+    {
+      "id": "cyzicus",
+      "name": "Cyzicus",
+      "role": "Dolion king slain in the night battle on the Propontis"
+    },
+    {
+      "id": "bebrycia",
+      "name": "Bebrycia",
+      "role": "Coast where Amycus forced strangers to box"
+    },
+    {
+      "id": "mariandyni",
+      "name": "Mariandyni",
+      "role": "Kingdom of Lycus, who welcomed the Argonauts after Amycus"
     },
     {
       "id": "aea-colchis",
@@ -781,6 +826,16 @@
       "id": "dodona",
       "name": "Dodona",
       "role": "Oracle of Zeus whose oak supplied the Argo's speaking timber"
+    },
+    {
+      "id": "magnesia",
+      "name": "Magnesia",
+      "role": "Thessalian region whence Phocus and Priasus son of Caeneus sailed on the Argo"
+    },
+    {
+      "id": "aegina",
+      "name": "Aegina",
+      "role": "Island of Aeacus whence Telamon and Peleus sailed among the Minyae"
     }
   ],
   "attestations": [

@@ -1,0 +1,37 @@
+{
+  "id": "sterope-acastus",
+  "name": "Sterope",
+  "greekName": "Sterope (Στερόπη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Acastus",
+    "the false bride in the Peleus betrayal"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Acastus at Iolcus — named only in the lie Astydamia sent to Antigone, wife of Peleus, claiming that Peleus meant to marry Sterope instead.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3"
+    },
+    {
+      "text": "Homonym guard: not Sterope the Pleiad wife of Oenomaus (`sterope-pleiad`); not Steropes the Cyclops (`steropes-cyclops`); not Sterope daughter of Cepheus of Tegea or of Pleuron in the Aetolian stemma.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "At the games celebrated in honor of Pelias, Peleus contended in wrestling with Atalanta. When Astydamia, wife of Acastus, could not prevail on Peleus to accept her love, she sent word to his wife Antigone that Peleus was about to marry Sterope, daughter of Acastus — on hearing which Antigone hanged herself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.3"
+    }
+  ]
+}

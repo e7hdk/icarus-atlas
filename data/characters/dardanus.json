@@ -61,15 +61,18 @@
       "sources": [
         "homer",
         "apollodorus"
-      ]
+      ],
+      "citation": "Iliad 20.215–218; Bibliotheca 3.12.1"
     },
     {
       "city": "dardanus-city",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
     },
     {
       "city": "samothrace",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.1"
     }
   ]
 }

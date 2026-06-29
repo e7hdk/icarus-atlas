@@ -76,6 +76,20 @@
       "city": "aulis-boeotia",
       "sources": ["apollodorus", "homer"],
       "citation": "Epitome 3.11; Iliad 2.638–644; Bibliotheca 1.8.2"
+    },
+    {
+      "city": "pagasae",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16; Argonautica 1.190–201; Fabulae 14.3"
+    },
+    {
+      "city": "sparta",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14.3"
     }
   ]
 }

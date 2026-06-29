@@ -1,0 +1,38 @@
+{
+  "id": "iphimedon-eurystheus",
+  "name": "Iphimedon",
+  "greekName": "Iphimedōn (Ἰφιμέδων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Eurystheus",
+    "fallen in the Heraclid war"
+  ],
+  "summary": [
+    {
+      "text": "A son of Eurystheus king of Mycenae, slain with his brothers when the Athenians fought Eurystheus rather than surrender the Heraclids to his vengeance.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Iphimedon among the sons of Eurystheus whom the Athenians killed in the war over the Heraclids — listed after Alexander and before Eurybius, Mentor, and Perimedes. Their deaths preceded their father's flight and slaying by Hyllus at the Scironian cliffs.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.8.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5, 2.8.1"
+    }
+  ]
+}

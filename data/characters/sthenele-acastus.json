@@ -1,0 +1,44 @@
+{
+  "id": "sthenele-acastus",
+  "name": "Sthenele",
+  "greekName": "Sthenelē (Σθενέλη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Acastus",
+    "mother of Patroclus"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Acastus at Iolcus — in Apollodorus' account of Achilles' companions, mother of Patroclus son of Menoetius, the comrade reared in Peleus' house after the dice-quarrel at Opus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8"
+    },
+    {
+      "text": "Homonym guard: not Sthenele the Danaid bride of Sthenelus at Argos (`sthenele-danaid`); Apollodorus names other mothers for Patroclus in the same passage — Periopis daughter of Pheres, or Polymele daughter of Peleus according to Philocrates.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8",
+      "topic": "patroclus-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Apollodorus lists the captains who sailed with Achilles against Troy, he names Patroclus son of Menoetius and Sthenele, daughter of Acastus — knitting the squire of Achilles into the Iolcan royal house that Sterope and Laodamia also belong to.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8"
+    },
+    {
+      "text": "The genealogist immediately records rival mothers for the same hero: Periopis daughter of Pheres, or Polymele daughter of Peleus in Philocrates' version — while Homer, whose ghost of Patroclus names only the exile from Opus and the house of Peleus, leaves the mother's name unstated.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.13.8; Iliad 23.83–90",
+      "topic": "patroclus-mother"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.13.8"
+    }
+  ]
+}

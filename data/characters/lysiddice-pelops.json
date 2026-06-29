@@ -1,0 +1,54 @@
+{
+  "id": "lysiddice-pelops",
+  "name": "Lysidice",
+  "greekName": "Lysidikē (Λυσιδίκη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "wife of Mestor",
+    "mother of Hippothoe",
+    "Pelopid marriage at Mycenae"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Pelops and wife of Mestor son of Perseus at Mycenae, mother of Hippothoe — whose abduction by Poseidon began the Taphian line that would raid Electryon's cattle a generation later.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    },
+    {
+      "text": "Homonym guard: Pausanias explicitly rejects Lysidice daughter of Pelops as mother of Amphitryon, preferring Laonome (`alcaeus-perseid` dispute). This Lysidice belongs only to Mestor's house.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.5; Description of Greece 8.14.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus records that Mestor wedded Lysidice, daughter of Pelops, and by her had a daughter Hippothoe. Poseidon carried Hippothoe off to the Echinadian Islands and begat Taphius, who colonized Taphos and named its people the Teleboans — so Lysidice's marriage linked the Pelopid house to the seafaring raiders who would claim Mestor's kingdom.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    },
+    {
+      "text": "When Electryon reigned at Mycenae the sons of Pterelaus came with Taphians claiming the kingdom of Mestor, their maternal grandfather — the quarrel that cost Electryon all nine legitimate sons and opened the path toward Amphitryon, Alcmena, and Heracles.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    }
+  ]
+}
