@@ -25,7 +25,18 @@
   "residences": [
     {
       "city": "dulichium",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.628–637"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.628–637; 5.45–80; 10.90–125"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.628–637"
     }
   ]
 }

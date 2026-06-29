@@ -1,0 +1,46 @@
+{
+  "id": "aglauros-mercury",
+  "title": "Aglauros and Mercury",
+  "greekTitle": "Ἀγλαύρω καὶ Ἑρμῆς",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 4.5,
+  "summary": {
+    "text": "Mercury came to Athens seeking Herse, the fairest of Cecrops' three daughters, and tried to bribe the jealous middle sister Aglauros with gold — but Envy, sent by Minerva, filled Aglauros with spite until she blocked the god's path and was turned to black stone for her impiety.",
+    "sources": ["ovid"],
+    "citation": "Ov. Met. 2.708–832"
+  },
+  "chapters": [
+    {
+      "title": "The sisters of Cecrops",
+      "text": "On the Acropolis dwelt Pandrosos, Aglauros, and Herse between them — daughters of the earth-born king, devoted to Minerva's praise. Mercury, flying down from heaven on his way to a mission for Jove, saw Herse and burned to possess her. Aglauros was first to spy the god and ask his name and errand.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 2.708–760"
+    },
+    {
+      "title": "The golden bribe",
+      "text": "Mercury offered Aglauros gold if she would let him pass to Herse. Minerva, still angry that Aglauros had opened the chest where Erichthonius lay hidden with the serpent, sent Envy from the house of Pluto to poison the sister's heart. Aglauros grew green with spite and swelled with hidden rage.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 2.760–800"
+    },
+    {
+      "title": "Stone",
+      "text": "When Mercury came again Aglauros sat in the doorway and refused him entry, though he pleaded and doubled the gold. At last the god touched her with his wand; she felt her limbs grow stiff, her veins turn marble, and her tongue freeze in her mouth. Envy left her body, and Aglauros became a black statue seated on the threshold.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 2.800–832"
+    }
+  ],
+  "cast": [
+    { "id": "hermes", "name": "Mercury", "role": "God who sought Herse and petrified Aglauros" },
+    { "id": "aglauros-cecrops", "name": "Aglauros", "role": "Jealous sister turned to stone" },
+    { "id": "herse-cecrops", "name": "Herse", "role": "Youngest sister whom the god desired" },
+    { "id": "pandrosos-cecrops", "name": "Pandrosos", "role": "Elder sister who kept Minerva's charge" },
+    { "id": "cecrops", "name": "Cecrops", "role": "Earth-born king, father of the three sisters" }
+  ],
+  "places": [
+    { "id": "athens", "name": "Athens", "role": "City of Cecrops' daughters on the Acropolis" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "2.708–832" }
+  ]
+}

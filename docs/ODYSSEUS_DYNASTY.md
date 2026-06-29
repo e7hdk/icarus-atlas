@@ -61,7 +61,7 @@ Bracketed nodes already exist. "[disputed]" = competing sourced edges.
 | **Anticleia / Anticlia** | One figure (`anticleia`); Apollodorus Latinizes Anticlia in Epit. 3.10. |
 | **Autolycus** | `autolycus` (Hermes' son, Odysseus' maternal grandfather) vs unrelated Autolycus figures elsewhere — none currently in atlas. |
 | **Helenus** | `helenus-ithaca` (Ithaca suitor) vs `helenus` (Priam's seer son at Troy). |
-| **Chione** | `chione-daedalion` (mother of Autolycus and Philammon) vs `chione-athens` and any other Chiones. |
+| **Chione** | `chione-daedalion` (mother of Autolycus and Philammon) vs `chione-boreas` and any other Chiones. |
 | **Penelope** | `penelope` (queen of Ithaca) vs unrelated Penelopes — none merged. |
 | **Ithaca / Cephallenia / Same** | City nodes in `data/geo/cities.json` vs mythic `cephallenia` as Same's island group in suitor geography. |
 

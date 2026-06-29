@@ -52,7 +52,18 @@
         "apollodorus",
         "hyginus",
         "pausanias"
-      ]
+      ],
+      "citation": "Epitome 6.24; Fabulae 117; Description of Greece 2.16.7"
+    },
+    {
+      "city": "panopeus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.24; Fabulae 117"
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.24–25"
     }
   ]
 }

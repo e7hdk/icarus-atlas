@@ -230,6 +230,67 @@ Significance: the myth that supposedly explains the seasons cannot agree on its 
 
 Verification: ✓ verified, Ovid position tightened — claim re-worded to the Latin's "ex aequo... totidem menses" phrasing and the citation narrowed from 5.564–571 to 5.564–567, where the operative lines sit; Frazer's note on Apollodorus 1.5.3 flags this ancient disagreement.
 
+## The parentage of Triptolemus
+
+- **topic**: `triptolemus-parentage`
+- **Characters**: `triptolemus`, `metaneira`, `celeus-eleusis`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Triptolemus is the elder of Metaneira's children, to whom Demeter gave the winged dragon-chariot and wheat. | Bibliotheca 1.5.2 |
+| Panyasis (via Apollodorus) | Triptolemus was a son of Eleusis, for Demeter came to him. | Bibliotheca 1.5.2 |
+| Pherecydes (via Apollodorus) | Triptolemus was a son of Ocean and Earth. | Bibliotheca 1.5.2 |
+
+Significance: every author agrees on the mission — the boy who sowed Demeter's wheat over the world — but the genealogies split between an Eleusinian royal son, an eponymous Eleusis, and a primordial parentage through Ocean and Earth.
+
+Verification: ✓ verified — Apollodorus 1.5.2 records all three parentages in one passage; the dispute is attested only through his citation of Panyasis and Pherecydes.
+
+## The mother of the Eleusinian Demophon
+
+- **topic**: `demophon-eleusis-mother`
+- **Characters**: `demophon-metaneira`, `metaneira`, `praxithea`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Demeter nursed the infant Demophon in the fire to make him immortal; when he grew marvelously by day, Praxithea watched, discovered him buried in the fire, and cried out — whereupon the babe was consumed and the goddess revealed herself. | Bibliotheca 1.5.1 |
+| Pausanias (via Pamphos) | The daughters of Celeus brought Demeter home from the Flowery Well, and Metaneira entrusted to her the rearing of her son — the queen whose cry broke the immortal rite in the fuller Eleusinian tradition beside Apollodorus. | Description of Greece 1.39.1 |
+
+Significance: the infant's name is stable in Apollodorus, but the queen who interrupted Demeter's fire-rite is Metaneira in the Eleusinian poets Pausanias follows and Praxithea in the Library's adjacent paragraph — a homonym hazard with the Athenian queen Praxithea wife of Erechtheus, whom the data keeps as a separate node.
+
+Verification: ✓ verified — Bibliotheca 1.5.1 names Demophon and Praxithea in the fire ordeal; Paus. 1.39.1 assigns Metaneira the entrusted son without repeating the infant's name.
+
+## The parentage of Adonis
+
+- **topic**: `adonis-parentage`
+- **Characters**: `adonis`, `myrrha-cyprus`, `cinyras-cyprus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Adonis was born when Lucina split the myrrh-tree into which transformed Myrrha had been changed after incest with her father Cinyras. | Metamorphoses 10.680–818 |
+| Pseudo-Apollodorus | Cinyras in Cyprus married Metharme daughter of king Pygmalion and begot Oxyporus and Adonis among other children. | Bibliotheca 3.14.3 |
+| Hyginus | Adonis is listed among the youths whom Venus loved — in the Apollodoran royal genealogy, not the Ovidian tree-birth. | Fabulae 271 |
+
+Significance: the same beloved hunter carries two incompatible origins — incestuous metamorphosis and myrrh-sap versus a lawful Cypriot royal marriage — and the atlas keeps both parent edges under the dispute topic rather than choosing one genealogy.
+
+Verification: ✓ verified — Met. 10.680–818 and Bibliotheca 3.14.3 confirmed against the pinned corpus; Hyginus Fab. 271 attests the love-story without resolving the birth.
+
+## Pegasus in the Bellerophon myth
+
+- **topic**: `pegasus-in-bellerophon-myth`
+- **Characters**: `bellerophon`, `pegasus`, `chimera`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Bellerophon slew the Chimera on foot, trusting in the signs of the gods, with no mention of Pegasus. | Iliad 6.179–183 |
+| Hesiod | Pegasus and noble Bellerophon together destroyed the Chimera. | Theogony 325 |
+| Pseudo-Apollodorus | Bellerophon mounted the winged steed, offspring of Medusa and Poseidon, and shot the monster down from on high. | Bibliotheca 2.3.2 |
+| Pausanias | At Corinth, Athena Chalinitis bridled Pegasus and delivered him into Bellerophon's hands for the kill. | Description of Greece 2.4.1 |
+| Hyginus | He rode Pegasus to slay the Chimera and fell afterward in the Aleian plains, dislocating his hip. | Fabulae 57 |
+
+Significance: the canonical image of the aerial Chimera-slaying depends on Pegasus, yet Homer's Iliadic genealogy knows only a foot-born hero trusting divine signs — the winged horse enters through Hesiod, Apollodorus, and local Corinthian cult.
+
+Verification: ✓ verified — Iliad 6.179–183 (no Pegasus); Theogony 325; Bibliotheca 2.3.2; Description of Greece 2.4.1; Fabulae 57.
+
 ## Where Persephone was taken and who told Demeter
 
 - **topic**: `persephone-abduction-details`
@@ -529,6 +590,20 @@ Significance: the most famous of Inachus' children may not be his at all — the
 
 Verification: ✓ verified — Apollodorus' triple report (Iasus / Inachus per the tragedians / Piren per Hesiod) confirmed at Bibliotheca 2.1.3; the "Hesiod says Piren" claim is Apollodorus' report of a lost work and must never be tagged to the hesiod lens directly.
 
+## How did Danaus take Argos from Gelanor?
+
+- **topic**: `danaus-kingship`
+- **Characters**: `danaus`, `gelanor-argive`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | On arriving at Argos, the reigning king Gelanor surrendered the kingdom to Danaus. | Bibliotheca 2.1.4 |
+| Pausanias | Danaus claimed the kingdom against Gelanor son of Sthenelas; after both sides argued before the people, a wolf overcame a bull pasturing before the wall — and because Gelanor was like the bull and Danaus like the wolf, Danaus won and founded the sanctuary of Apollo Lycius. | Description of Greece 2.16.1, 2.19.3–2.19.4 |
+
+Significance: Apollodorus treats the transfer as peaceful surrender; Pausanias preserves a contested trial decided by an omen — the same event, two very different tones for how the Danai dynasty began at Argos.
+
+Verification: ✓ verified — Apollodorus 2.1.4 and Pausanias 2.19.3–2.19.4 confirmed in corpus.
+
 ## Who recruited Myrtilus, and why did Pelops kill him?
 
 - **topic**: `myrtilus-betrayal`
@@ -562,7 +637,7 @@ Verification: ✓ verified — Homer's total and Apollodorus' explicit source ca
 ## Who survived the Niobid massacre?
 
 - **topic**: `niobids-survivors`
-- **Characters**: `niobe`
+- **Characters**: `niobe`, `chloris-neleus`, `amphion-orchomenus`, `amphion`
 
 | Author | Claim | Citation |
 |---|---|---|
@@ -836,6 +911,21 @@ Significance: This contradiction strips away the divine glamour of the Perseus m
 
 Verification: ✓ verified — Apollodorus' note of Proetus' seduction confirmed.
 
+## Proetus' wife: Anteia or Stheneboea?
+
+- **topic**: `proetus-wife-name`
+- **Characters**: `stheneboea-proetid`, `proetus`, `bellerophon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Proetus' wife who lusted for Bellerophon and sent the lying letter is named Anteia (Antia). | Iliad 6.155–170 |
+| Pseudo-Apollodorus | The same queen is Stheneboea, daughter of Iobates of Lycia, whom Proetus married when driven to Lycia. | Bibliotheca 2.2.1, 2.3.1 |
+| Hyginus | Stheneboea, daughter of Iobates, falsely accused Bellerophon and later killed herself when he married her sister Philonoe. | Fabulae 57 |
+
+Significance: Homer and the mythographers name Proetus' queen differently — Anteia in the Iliad, Stheneboea in Apollodorus and Hyginus — yet both traditions make her Iobates' daughter and the author of the sealed death-token; she must never be merged with the Arcadian Stheneboea whom Apollodorus elsewhere makes a daughter of Apheidas.
+
+Verification: ✓ verified — Iliad 6.155–170 (Anteia); Bibliotheca 2.2.1, 2.3.1 (Stheneboea); Fabulae 57.
+
 ## How did Perseus die?
 
 - **topic**: `perseus-death`
@@ -951,6 +1041,20 @@ Significance: the same Pleiad name binds Oenomaus either as husband or as son �
 
 Verification: ✓ verified — Bibliotheca 3.10.1, Description of Greece 6.21.7, and Fabulae 84 confirmed against the pinned corpus.
 
+## Which Ilus begat Laomedon?
+
+- **topic**: `ilus-parentage`
+- **Characters**: `ilus`, `dardanus`, `tros`, `laomedon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | A barrow in the plain was reared for Ilus, son of Dardanus; in Aeneas' recitation Erichthonius begat Tros, and from Tros three sons were born — Ilus, Assaracus, and Ganymede — and Ilus again begat peerless Laomedon. | Iliad 11.371–372; 20.219–236 |
+| Pseudo-Apollodorus | Dardanus' elder son Ilus died childless; Erichthonius succeeded and begat Tros, whose son Ilus founded Ilium and begat Laomedon — two different men named Ilus in one stemma. | Bibliotheca 3.12.2–3 |
+
+Significance: Homer's plain keeps a tomb of Ilus son of Dardanus while the royal roll makes Laomedon the grandson of Tros through another Ilus; Apollodorus resolves the clash by making the Dardanid Ilus a childless elder brother and the founder of Ilium a younger namesake.
+
+Verification: ✓ verified — Iliad 11.371–372 (Ilus son of Dardanus) against Iliad 20.230–236 and Bibliotheca 3.12.2–3 (childless elder Ilus; founder Ilus son of Tros) confirmed against the pinned corpus.
+
 ## Troilus' paternity
 
 - **topic**: `troilus-paternity`
@@ -1048,6 +1152,21 @@ Verification: ✓ verified — Odyssey 11.593–600 gives the torment without ca
 Significance: the leader of the Argonauts has two different mothers across the sources — a clean parentage fork that re-wires the maternal line of the saga's hero.
 
 Verification: ✓ verified — Bibliotheca 1.9.16 (Polymede) and Argonautica 1.45–47 / Fabulae 14 (Alcimede) confirmed.
+
+## Who was Minyas of Orchomenus?
+
+- **topic**: `minyas-genealogy`
+- **Characters**: `minyas-orchomenus`, `clymene-minyas`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pausanias | Chryses son of Poseidon succeeded Phlegyas and begot Minyas, who built the treasury and begot Orchomenus the eponym. | Description of Greece 9.36.4–9.36.6 |
+| Apollonius | Minyas son of Aeolus built long ago the city of Orchomenus bordering on the Cadmeians; Jason's mother Alcimede was born of Clymene daughter of Minyas. | Argonautica 1.228–233, 3.1077 |
+| Hyginus | The Argonauts were called Minyae because Jason's mother was a daughter of Clymene, daughter of Minyas. | Fabulae 14.4 |
+
+Significance: the name-giving king of the Minyae is either a Boeotian descendant of Phlegyas through Chryses or an Aeolid founder — two genealogies that cannot share one parent without merging incompatible royal lines.
+
+Verification: ✓ verified — Pausanias 9.36.4–9.36.6 (Chryses → Minyas) and Argonautica 3.1077 (Minyas son of Aeolus) confirmed against Perseus.
 
 ## Where did the golden ram come from?
 
@@ -1150,6 +1269,21 @@ Significance: the eternal sleeper loved by the Moon is an Aeolid great-grandson 
 
 Verification: ✓ verified — Bibliotheca 1.7.5 ("but some say a son of Zeus") and Pausanias 5.1.3 confirmed.
 
+## The origin of Cecrops I
+
+- **topic**: `cecrops-origin`
+- **Characters**: `cecrops`, `actaeus-athens`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Cecrops, a son of the soil with a body compounded of man and serpent, was the first king of Attica; the country formerly called Acte he named Cecropia after himself. | Bibliotheca 3.14.1 |
+| Hyginus | Cecrops was born from the earth, half man and half serpent, and was the first to establish laws and marriage rites. | Fabulae 48 |
+| Pausanias | Actaeus was the first king of what is now Attica; when he died, Cecrops, the son-in-law of Actaeus, received the kingdom. | Description of Greece 1.2.6 |
+
+Significance: the founder of Athens is either the land's first autochthonous king or the successor of an earlier ruler Actaeus — a whole reign appears or vanishes with the teller, and Cecrops' marriage to Agraulus daughter of Actaeus sits awkwardly beside the soil-born genealogy.
+
+Verification: ✓ verified — Bibliotheca 3.14.1 (autochthon, Cecropia); Fabulae 48 (earth-born); Description of Greece 1.2.6 (Actaeus first, Cecrops son-in-law) confirmed against the pinned corpus.
+
 ## The parentage of Amphictyon
 
 - **topic**: `amphictyon-parentage`
@@ -1179,6 +1313,22 @@ Verification: ✓ verified — Bibliotheca 1.7.2 (son of Deucalion) and 3.14.6 (
 Significance: the founder-hero of Athens is the son of a mortal king, of the sea-god, or of both at once — a paternity the city itself never settled, half-claiming Theseus for the Aegean.
 
 Verification: ✓ verified — Iliad 1.265 (son of Aegeus); Bibliotheca 3.15.7 and Hyginus 37 (the same-night reconciliation); Pausanias 2.33.1 (Poseidon at Sphaeria).
+
+## The Amazon mother of Hippolytus
+
+- **topic**: `theseus-amazon-wife-name`
+- **Characters**: `theseus`, `antiope-amazon`, `hippolyta`, `hippolytus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Theseus carried off an Amazon whom he names Antiope and by her begot Hippolytus. | Epitome 1.16 |
+| Pseudo-Apollodorus | In the war's aftermath, Theseus killed Hippolyte — the rival name for the same campaign. | Epitome 1.16 |
+| Hyginus | The Amazon campaign is told with the rival names in the tradition of the Attic war. | Fabulae 250 |
+| Pausanias | The Amazon whom Theseus carried off is named differently in competing accounts; he records the Amazonium and Hippolyte's tomb at Megara. | Description of Greece 1.2.1, 1.41.7 |
+
+Significance: the warrior bride who bore Hippolytus is Antiope in Apollodorus' list, Melanippe in others, and Hippolyte in Simonides — three names for one captive, and she must never be merged with Antiope the Theban mother of Amphion.
+
+Verification: ✓ verified — Epitome 1.16 (Antiope and Hippolyte in the same passage); Fabulae 250; Pausanias 1.2.1, 1.41.7.
 
 ## The father of Odysseus
 
@@ -1701,6 +1851,20 @@ Significance: the archetypal double-fatherhood — the same night gives Alcmene 
 
 Verification: ✓ verified — Hesiod Theog. 526–532 (Zeus the father), Apollodorus 2.4.8 (the two nights, the twin paternity), and Homer Il. 19.95–133 (Zeus' oath and Hera's trick) confirmed against Perseus.
 
+## What became of Erginus after the Minyan war?
+
+- **topic**: `erginus-fate`
+- **Characters**: `erginus-orchomenus`, `heracles`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Heracles armed the Thebans, routed the Minyans at the Cephisus, and slew Erginus; then he marched on Orchomenus and ended the tribute. | Bibliotheca 2.4.11 |
+| Pausanias | Heracles conquered the Orchomenians and their king Erginus son of Clymenus; Erginus made peace, later took a young wife by oracle, and begot Trophonius and Agamedes. | Description of Greece 9.17.2, 9.37.3–9.37.5 |
+
+Significance: the Minyan king whom Heracles overthrew either dies in the rout that wins Megara for the hero or survives to rebuild Orchomenus and father the builders of Delphi's treasury — the same war, two incompatible fates for the same king.
+
+Verification: ✓ verified — Bibliotheca 2.4.11 (Erginus slain) and Pausanias 9.37.3–9.37.4 (peace, late marriage, Trophonius and Agamedes) confirmed against Perseus.
+
 ## Whose son is Augeas?
 
 - **topic**: `augeas-father`
@@ -1803,7 +1967,7 @@ Verification: ✓ verified — Homer Odyssey 11.576 ("Tityos, son of glorious Ga
 ## Whose daughters are the Hesperides?
 
 - **topic**: `hesperides-parentage`
-- **Characters**: `hesperides`, `nyx`, `atlas`
+- **Characters**: `hesperides`, `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid`, `nyx`, `atlas`
 
 | Author | Claim | Citation |
 |---|---|---|
@@ -2210,3 +2374,79 @@ Verification: ✓ verified — Bibliotheca 3.4.4 confirmed against the pinned co
 Significance: the city's ethnic label forks within the atlas lenses — geographic metadata prefers the Aeolian sub-region (`aeolis`), while Pausanias also records its Ionian membership and Ionian resettlement.
 
 Verification: ✓ verified — Description of Greece 7.5.1 and 4.21.5 confirmed against the pinned corpus.
+
+## Parentage of Peirene
+
+- **topic**: `peirene-parentage`
+- **Characters**: `peirene-naiad`, `achelous`, `oebalus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pausanias | Peirene is daughter of Achelous; by Poseidon she bore Leches and Cenchrias, eponyms of Corinth's harbours. | Description of Greece 2.2.3 |
+| Pausanias (rival line) | In the poem called the Great Eoeae, Peirene is said to be a daughter of Oebalus. | Description of Greece 2.2.3 |
+
+Significance: the Corinthian spring nymph's genealogy forks within a single Pausanias passage — Achelous' river-house versus the Spartan/Laconian stem of Oebalus — without either line being dismissed.
+
+Verification: ✓ verified — Description of Greece 2.2.3 confirmed against the pinned corpus.
+
+## Children of Endymion
+
+- **topic**: `endymion-children`
+- **Characters**: `endymion`, `aetolus`, `iphianassa-elean`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Endymion had by a Naiad nymph — or, as some say, by Iphianassa — a son Aetolus. | Bibliotheca 1.7.6 |
+| Pausanias | Endymion begat Paeon, Epeius, Aetolus, and Eurycyda by a mortal wife — Asterodia, or Cromia daughter of Itonus, or Hyperippe daughter of Arcas. | Description of Greece 5.1.4 |
+
+Significance: Aetolus' maternity forks three ways — unnamed Naiad, named princess Iphianassa, or one of Pausanias' mortal queens — while all strands agree Endymion fathered the eponym of Aetolia.
+
+Verification: ✓ verified — Bibliotheca 1.7.6 and Description of Greece 5.1.4 confirmed against the pinned corpus.
+
+## Mother of Bucolion
+
+- **topic**: `bucolion-mother`
+- **Characters**: `bucolion-trojan`, `calybe-nymph`, `abarbarea-trojan`, `laomedon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Laomedon begat a son Bucolion by a nymph Calybe. | Bibliotheca 3.12.3 |
+| Homer | Bucolion was son of lordly Laomedon, his eldest born, though the mother that bare him was unwed; while shepherding his flocks he lay with the fountain-nymph Abarbarea, who bare twin sons Aesepus and Pedasus. | Iliad 6.1–35 |
+
+Significance: Apollodorus names Calybe as Bucolion's mother in the king's prose genealogy, while Homer's battle narrative leaves Bucolion's birth-mother unnamed and introduces Abarbarea only as his lover and mother of the twins — two fountain-nymph strands in the Laomedon stemma that the atlas keeps as rival lines rather than merged identities.
+
+Verification: ✓ verified — Bibliotheca 3.12.3 and Iliad 6.1–35 confirmed against the pinned corpus.
+
+## Parentage of Callisto
+
+- **topic**: `callisto-parentage`
+- **Characters**: `callisto`, `lycaon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus (Eumelus and others) | Callisto is the daughter of Lycaon, who ruled in Arcadia. | Bibliotheca 3.8.2 |
+| Pseudo-Apollodorus (Hesiod) | Callisto is one of the nymphs. | Bibliotheca 3.8.2 |
+| Pseudo-Apollodorus (Asius) | Callisto is a daughter of Nycteus. | Bibliotheca 3.8.2 |
+| Pseudo-Apollodorus (Pherecydes) | Callisto is a daughter of Ceteus. | Bibliotheca 3.8.2 |
+| Hyginus | The maiden of the Great Bear is Callisto, daughter of Lycaon who ruled in Arcadia, citing Hesiod as authority. | Astronomica 2.1.1 |
+| Pausanias | Lycaon had a daughter Callisto, loved by Zeus and turned into a bear by Hera. | Description of Greece 8.3.6 |
+
+Significance: at the root of the Arcadian bear-myth, Callisto's maternity forks between a Lycaonid princess and several nymph or collateral-royal lines that Apollodorus records without choosing among them — the Hesiodic nymph strand underpins her `oread` kind, while Pausanias and Hyginus keep the Lycaonid default.
+
+Verification: ✓ verified — Bibliotheca 3.8.2, Astronomica 2.1.1, and Description of Greece 8.3.6 confirmed against the pinned corpus.
+
+## Consort and maternity of Arcas' sons
+
+- **topic**: `arcas-consort-mother`
+- **Characters**: `arcas`, `erato-dryad`, `chrysopelia-naiad`, `elatus-arcadia`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pausanias | Arcas' wife was no mortal woman but a Dryad nymph named Erato, by whom he had Azan, Apheidas, and Elatus. | Description of Greece 8.4.2 |
+| Pseudo-Apollodorus (default) | Arcas had two sons, Elatus and Aphidas, by Leanira daughter of Amyclas. | Bibliotheca 3.9.1 |
+| Pseudo-Apollodorus (some say) | The same sons were born of Meganira daughter of Croco. | Bibliotheca 3.9.1 |
+| Pseudo-Apollodorus (Eumelus) | The same sons were born of a nymph Chrysopelia. | Bibliotheca 3.9.1 |
+
+Significance: Pausanias' Dryad marriage gives Arcas three eponymous sons including Azan, while Apollodorus' roll names only Elatus and Aphidas and forks their mother three ways — mortal Leanira, mortal Meganira, or the nymph Chrysopelia — without harmonizing the son-lists.
+
+Verification: ✓ verified — Description of Greece 8.4.2 and Bibliotheca 3.9.1 confirmed against the pinned corpus.

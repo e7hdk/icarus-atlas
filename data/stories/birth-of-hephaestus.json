@@ -7,68 +7,140 @@
   "era": 0.42,
   "summary": {
     "text": "After Zeus bore Athena from his head, Hera bore Hephaestus in angry rivalry — alone, without any father, in Hesiod and Apollodorus, though Homer makes him son of both Zeus and Hera; lame at birth or lamed by the fall, he was flung from heaven and rescued in the sea by Thetis and Eurynome, who hid him nine years in an Ocean cave while he learned the smith's craft.",
-    "sources": ["hesiod", "homer", "apollodorus"],
+    "sources": [
+      "hesiod",
+      "homer",
+      "apollodorus"
+    ],
     "citation": "Hes. Th. 927-929; Hom. Il. 1.590-594, 18.394-405; Apollod. 1.3.5"
   },
   "chapters": [
     {
       "title": "Hera's rival birth",
       "text": "The nested episode on the birth of Athena tells how bright-eyed Tritogeneia sprang from Zeus's head after Metis was swallowed whole. What followed in Hesiod is Hera's answer: angry and quarrelling with her mate, she bore a son entirely on her own, without union with any father — Hephaestus, skilled in crafts beyond all the sons of Heaven. Apollodorus repeats that she gave birth without intercourse, though he notes himself that Homer instead makes the smith a child of Zeus and Hera.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 924-929; Apollod. 1.3.5",
       "topic": "hephaestus-conception"
     },
     {
       "title": "Son of Zeus and Hera",
       "text": "Homer knows no fatherless birth. Hephaestus speaks of Zeus as his father and counsels Hera to soothe the king of gods when the two quarrel in the Iliad's first book; Hera herself calls the bedchamber Hephaestus built for them the work of Zeus's own dear son. In the Odyssey the blind bard Demodocus sings of Aphrodite caught with Ares in the bed Hephaestus wrought — and names the lame god son of Zeus. The dispute lives in whether Hephaestus is Hera's solo retaliation or the legitimate child of the royal marriage-bed.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Il. 1.577-579, 14.338-339; Hom. Od. 8.312",
       "topic": "hephaestus-conception"
     },
     {
       "title": "Cast out for lameness",
       "text": "Hephaestus himself remembers a hard mother. Wishing to hide her child because he was lame, Hera flung him from heaven — and he would have suffered sorely had not Thetis and Eurynome received him in their bosom in the encircling sea. In their hollow cave beside the streams of Ocean he worked for nine years, forging brooches and spiral arm-bands, rosettes and necklaces, while no other god or mortal knew where he was. The lameness came before the exile, and the sea, not Lemnos, was his first refuge.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Il. 18.394-405",
       "topic": "hephaestus-fall-from-olympus"
     },
     {
       "title": "Zeus hurls him to Lemnos",
       "text": "Yet the Iliad remembers another fall. When Hephaestus took Hera's side against Zeus in the quarrel of Book One, the king seized him by the foot and hurled him from the divine threshold; he fell the whole day long and dropped at sunset on Lemnos with little life left in him, and the Sintian men tended him there. Apollodorus follows this version — Zeus cast him out for coming to the rescue of Hera in her bonds — and adds that it was the crash-landing on Lemnos that lamed his legs. Homer contradicts himself on who threw him, where he landed, and whether lameness caused the fall or the fall caused lameness.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 1.590-594; Apollod. 1.3.5",
       "topic": "hephaestus-fall-from-olympus"
     },
     {
       "title": "Nine years in the Ocean cave",
       "text": "Thetis and Eurynome kept the hidden smith beside the murmuring streams of Ocean — a nursery of craft, not of war. There Hephaestus learned to work gold and silver and grey iron before any god saw his face again on Olympus. The nested birth of Athena would later give him the midwife's part at the strangest of births: when the time came for Zeus to be delivered of Athena, it was Hephaestus — or, as others say, Prometheus — who smote the king's head with an axe. First he was the cast-out child; then he would split the skull that cast him out.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 18.394-405; Apollod. 1.3.6"
     },
     {
       "title": "The lame god among the Olympians",
       "text": "However he fell and whoever flung him, Hephaestus returned to Olympus as the divine smith — Amphigyeeis, the famous Lame One, who would mould Pandora from earth and water at Zeus's command and forge the shield of Achilles when Thetis came begging arms for her doomed son. His marriages shift with the teller, his parentage shifts with the lens, but every tradition agrees on the craft: fire, the forge, and the fine work no other god could match.",
-      "sources": ["hesiod", "homer", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 570-584; Hom. Il. 18.468-617; Apollod. 1.3.5-1.3.6"
     }
   ],
   "cast": [
-    { "id": "hephaestus", "name": "Hephaestus", "role": "Lame smith cast from heaven and hidden in the sea" },
-    { "id": "hera", "name": "Hera", "role": "Mother who bore him alone or with Zeus, and flung him in one account" },
-    { "id": "zeus", "name": "Zeus", "role": "Father in Homer; hurler from Olympus in another account" },
-    { "id": "thetis", "name": "Thetis", "role": "Sea-goddess who received the fallen child" },
-    { "id": "eurynome", "name": "Eurynome", "role": "Oceanid who hid him nine years in the cave" },
-    { "id": "athena", "name": "Athena", "role": "Head-born rival whose birth provoked Hera's answer" }
+    {
+      "id": "hephaestus",
+      "name": "Hephaestus",
+      "role": "Lame smith cast from heaven and hidden in the sea"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Mother who bore him alone or with Zeus, and flung him in one account"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Father in Homer; hurler from Olympus in another account"
+    },
+    {
+      "id": "thetis",
+      "name": "Thetis",
+      "role": "Sea-goddess who received the fallen child"
+    },
+    {
+      "id": "eurynome",
+      "name": "Eurynome",
+      "role": "Oceanid who hid him nine years in the cave"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Head-born rival whose birth provoked Hera's answer"
+    }
   ],
   "places": [
-    { "name": "Olympus", "role": "Threshold from which Hephaestus was flung" },
-    { "id": "lemnos", "name": "Lemnos", "role": "Island where he fell at sunset in one account" },
-    { "name": "Ocean", "role": "Encircling sea where Thetis and Eurynome hid him" }
+    {
+      "name": "Olympus",
+      "role": "Threshold from which Hephaestus was flung",
+      "featureId": "mount-olympus"
+    },
+    {
+      "id": "lemnos",
+      "name": "Lemnos",
+      "role": "Island where he fell at sunset in one account"
+    },
+    {
+      "name": "Ocean",
+      "role": "Encircling sea where Thetis and Eurynome hid him"
+    }
   ],
   "attestations": [
-    { "source": "hesiod", "work": "Theogony", "citation": "924-929, 570-584" },
-    { "source": "homer", "work": "Iliad", "citation": "1.577-594, 14.338-339, 18.394-405" },
-    { "source": "homer", "work": "Odyssey", "citation": "8.312" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.3.5-1.3.6" }
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "924-929, 570-584"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "1.577-594, 14.338-339, 18.394-405"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "8.312"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.3.5-1.3.6"
+    }
   ]
 }

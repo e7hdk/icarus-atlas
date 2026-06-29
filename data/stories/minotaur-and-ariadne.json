@@ -18,6 +18,12 @@
       "citation": "Apollod. Epit. 1.7; Ov. Met. 8.152–182"
     },
     {
+      "title": "The Cyclades answer Minos",
+      "text": "Before the tribute sailed, Minos mustered the Cyclades against Athens. Ovid names the allies who agreed to aid: level Myconos, the chalky fields of Kimolos, Syros covered with wild thyme, level Seriphos, Paros of marble cliffs, and Siphnos — the place Arne the impious Siphnian had betrayed for gold and was changed into a black-foot daw. When tidings of Androgeus' death reached Minos as he sacrificed to the Graces in Paros, he threw away his garland and stopped the flute-music, though he finished the rite — hence, Apollodorus says, the island long sacrificed to the Graces without flutes or garlands.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 3.15.7; Ov. Met. 7.731–882"
+    },
+    {
       "title": "The clew of thread",
       "text": "At Knossos, Ariadne, daughter of Minos, fell in love with the Athenian and promised help if he would take her away. Daedalus — the artificer who built the maze — gave her the plan: let the hero unwind a clew of thread as he went in, so he could find the way back. Theseus entered the labyrinth, met the Minotaur, and killed it with his bare hands; he drew the thread after him and came out with the youths and maidens of Athens.",
       "sources": ["apollodorus", "apollonius"],
@@ -39,18 +45,24 @@
     { "id": "daedalus", "name": "Daedalus", "role": "Builder of the labyrinth" },
     { "id": "minotaur", "name": "The Minotaur", "role": "The bull-headed prisoner of the maze" },
     { "id": "dionysus", "name": "Dionysus", "role": "He who took Ariadne on Naxos" },
+    { "id": "arne-siphnos", "name": "Arne", "role": "Siphnian betrayer changed to a daw" },
     { "id": "artemis", "name": "Artemis", "role": "She who slew Ariadne in Homer's telling" }
   ],
   "places": [
     { "id": "athens", "name": "Athens", "role": "City that sent the tribute" },
     { "id": "knossos", "name": "Knossos", "role": "Palace of Minos and the labyrinth" },
-    { "id": "naxos", "name": "Naxos", "role": "Dia, where Ariadne was left" }
+    { "id": "naxos", "name": "Naxos", "role": "Dia, where Ariadne was left" },
+    { "id": "paros", "name": "Paros", "role": "Marble isle where Minos learned of Androgeus' death" },
+    { "id": "siphnos", "name": "Siphnos", "role": "Island Arne betrayed for gold" },
+    { "id": "syros", "name": "Syros", "role": "Thyme-covered isle that joined Minos' allies" },
+    { "id": "kimolos", "name": "Kimolos", "role": "Chalky Cycladic isle in Minos' muster" }
   ],
   "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.15.7" },
     { "source": "apollodorus", "work": "Epitome", "citation": "1.7–1.10" },
     { "source": "homer", "work": "Odyssey", "citation": "11.321–325" },
     { "source": "hesiod", "work": "Theogony", "citation": "947–949" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "8.152–182" },
+    { "source": "ovid", "work": "Metamorphoses", "citation": "7.731–882, 8.152–182" },
     { "source": "apollonius", "work": "Argonautica", "citation": "3.997–1000" }
   ]
 }

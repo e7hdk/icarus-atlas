@@ -4,59 +4,140 @@
   "greekTitle": "Θηβαϊκὸς κύκλος",
   "kind": "saga",
   "parent": null,
-  "era": 6,
-  "eraEnd": 6.2,
+  "era": 5.5,
+  "eraEnd": 7.36,
   "summary": {
-    "text": "From Cadmus the dragon-slayer to Oedipus the riddle-breaker, from the war of the Seven at the seven gates to the Epigoni who came back — the Cadmean house of Thebes, cursed by kin-murder, incest, and fratricide until the city fell and rose again.",
-    "sources": ["apollodorus", "homer", "hyginus", "pausanias"],
+    "text": "From Cadmus the dragon-slayer to Oedipus the riddle-breaker, from the war of the Seven at the seven gates to the Epigoni who came back — the Cadmean house of Thebes, cursed by kin-murder, incest, and fratricide until the city fell and rose again. The birth of Dionysus to Semele and the fall of Pentheus belong to the same royal stem but are told on the nested `dionysus-cycle` shelf.",
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Apollod. 3.4–3.7; Hom. Od. 11.275; Hyg. Fab. 67–72; Paus. 9.5–9.9"
   },
   "chapters": [
     {
       "title": "The cow and the dragon",
       "text": "Cadmus came seeking Europa and found a kingdom instead: Apollo's cow led him to Boeotia, where he slew the dragon of Ares, sowed its teeth, and from the furrows armed men sprang — the Spartoi who fought each other until five remained to found the nobility of Thebes.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 3.4.1–2; Ov. Met. 3.1–200"
     },
     {
       "title": "The Labdacid curse",
       "text": "Through Labdacus and Laius the royal line ran on until an oracle warned that Laius would die by his son's hand. The exposed infant Oedipus grew up at Corinth, killed his father on the road, solved the Sphinx, and wed the widowed queen — not knowing she was his mother Jocasta. When the truth came out he blinded himself, cursed his sons, and wandered with Antigone to Colonus in Attica, where Theseus received him and he died.",
-      "sources": ["apollodorus", "homer"],
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Apollod. 3.5.7–9; Hom. Od. 11.275"
     },
     {
       "title": "The sons' war",
       "text": "When the truth came out, Oedipus blinded himself and cursed his sons to divide the kingdom with the sword. Eteocles kept the throne; Polynices marched from Argos with seven champions against seven gates — and the brothers killed each other in single combat.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.6.1–8; Hyg. Fab. 67–71"
     },
     {
       "title": "Burial and return",
       "text": "Creon forbade the burial of Polynices; Antigone defied him and was condemned. A generation later the Epigoni — sons of the Seven — beat Thebes at Glisas, Laodamas fell or fled, and Thersander son of Polynices took the throne. Alcmaeon their leader then killed his mother Eriphyle for the necklace, wandered to Acarnania, and left his sons to dedicate the cursed gifts at Delphi — until Troy called Thersander too to a hero's death.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.7.1–7; Paus. 9.5.13–14, 9.9.4–5"
     }
   ],
   "cast": [
-    { "id": "cadmus", "name": "Cadmus", "role": "Founder of the Cadmean house" },
-    { "id": "oedipus", "name": "Oedipus", "role": "King who solved the riddle" },
-    { "id": "eteocles", "name": "Eteocles", "role": "Holder of the throne" },
-    { "id": "polynices", "name": "Polynices", "role": "The exiled brother" },
-    { "id": "antigone", "name": "Antigone", "role": "The defiant sister" },
-    { "id": "tiresias", "name": "Tiresias", "role": "Blind seer of Thebes" },
-    { "id": "alcmaeon", "name": "Alcmaeon", "role": "Leader of the Epigoni" }
+    {
+      "id": "cadmus",
+      "name": "Cadmus",
+      "role": "Founder of the Cadmean house"
+    },
+    {
+      "id": "oedipus",
+      "name": "Oedipus",
+      "role": "King who solved the riddle"
+    },
+    {
+      "id": "eteocles",
+      "name": "Eteocles",
+      "role": "Holder of the throne"
+    },
+    {
+      "id": "polynices",
+      "name": "Polynices",
+      "role": "The exiled brother"
+    },
+    {
+      "id": "antigone",
+      "name": "Antigone",
+      "role": "The defiant sister"
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "Blind seer of Thebes"
+    },
+    {
+      "id": "alcmaeon",
+      "name": "Alcmaeon",
+      "role": "Leader of the Epigoni"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "Seven-gated city of the Cadmeans" },
-    { "id": "argos", "name": "Argos", "role": "Mustering ground of the Seven and the Epigoni" },
-    { "name": "Delphi", "role": "Oracle that sent Cadmus and warned Oedipus" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "Seven-gated city of the Cadmeans"
+    },
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Mustering ground of the Seven and the Epigoni"
+    },
+    {
+      "name": "Delphi",
+      "role": "Oracle that sent Cadmus and warned Oedipus",
+      "id": "delphi"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.4–3.7" },
-    { "source": "homer", "work": "Odyssey", "citation": "11.275" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "67–72" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "9.5–9.9" },
-    { "source": "hesiod", "work": "Theogony", "citation": "975–983" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "3–4" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.4–3.7"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.275"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "67–72"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.5–9.9"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "975–983"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3–4"
+    }
   ]
 }

@@ -61,6 +61,16 @@
     {
       "city": "pylos",
       "sources": ["homer", "apollodorus", "pausanias"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.80–105, 2.591–594; Epitome 3.8"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.7; Iliad 2.559–580"
     }
   ]
 }

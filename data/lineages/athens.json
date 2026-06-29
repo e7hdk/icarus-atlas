@@ -3,120 +3,100 @@
   "reigns": [
     {
       "ruler": "Actaeus",
-      "sources": [
-        "pausanias"
-      ],
-      "citation": "Paus. 1.2.5",
-      "note": "Pausanias' first king of the land then called Actaea; Apollodorus and Hyginus instead begin the line with the earth-born Cecrops."
+      "characterId": "actaeus-athens",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.2.6",
+      "note": "Pausanias' first king of the land then called Actaea. Apollodorus and Hyginus instead begin the royal roll with the earth-born Cecrops, who names the country Cecropia after himself.",
+      "topic": "cecrops-origin"
     },
     {
       "ruler": "Cecrops I",
       "characterId": "cecrops",
-      "sources": [
-        "apollodorus",
-        "pausanias",
-        "hyginus"
-      ],
-      "citation": "Apollod. 3.14.1; Paus. 1.2.6; Hyg. Fab. 48",
-      "note": "The autochthonous man-serpent, or (Pausanias) son-in-law of Actaeus; in his reign Athena and Poseidon contested the land."
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 3.14.1-2; Paus. 1.2.6; Hyg. Fab. 48",
+      "note": "The autochthonous man-serpent who first established laws and marriage rites — or (Pausanias) son-in-law of Actaeus who received the kingdom when Actaeus died. In his reign Athena and Poseidon contested Attica.",
+      "topic": "cecrops-origin"
     },
     {
       "ruler": "Cranaus",
       "characterId": "cranaus",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
+      "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 3.14.5; Paus. 1.2.6",
-      "note": "Another son of the soil; in his reign the flood of Deucalion fell. Expelled by Amphictyon."
+      "note": "Another son of the soil; in his reign the flood in the age of Deucalion fell. He married Pedias of Lacedaemon and named the country Atthis for his daughter; Amphictyon expelled him from the throne."
     },
     {
       "ruler": "Amphictyon",
       "characterId": "amphictyon",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
-      "citation": "Apollod. 3.14.6; Paus. 1.2.6",
-      "note": "Son of Deucalion or another autochthon; reigned twelve years, then expelled by Erichthonius."
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 1.7.2, 3.14.6; Paus. 1.2.6",
+      "note": "Son of Deucalion in the Deucalionid roll, or an autochthon in Apollodorus' Attic list ('some say… a son of the soil'). He reigned twelve years, then was expelled by Erichthonius.",
+      "topic": "amphictyon-parentage"
     },
     {
       "ruler": "Erichthonius",
       "characterId": "erichthonius-athens",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
-      "citation": "Apollod. 3.14.6; Paus. 1.2.6",
-      "note": "Earth-born of Hephaestus, reared by Athena; founded the Panathenaea and set up the wooden image of the goddess."
+      "sources": ["apollodorus", "pausanias", "ovid"],
+      "citation": "Apollod. 3.14.6; Paus. 1.2.6, 1.18.2; Ov. Met. 2.552-565",
+      "note": "Earth-born of Hephaestus, reared by Athena in her chest; he founded the Panathenaea and set up the wooden image of the goddess. His reign is the Attic golden age before the Eleusinian war."
     },
     {
       "ruler": "Pandion I",
       "characterId": "pandion",
-      "sources": [
-        "apollodorus"
-      ],
-      "citation": "Apollod. 3.14.7",
-      "note": "In his reign Demeter and Dionysus came to Attica; father of Erechtheus, Butes, Procne and Philomela."
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.14.7; Paus. 1.5.2",
+      "note": "In his reign Demeter and Dionysus came to Attica; father of Erechtheus, Butes, Procne and Philomela — the Tereus tragedy belongs to his daughters' generation."
     },
     {
       "ruler": "Erechtheus",
       "characterId": "erechtheus",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
-      "citation": "Apollod. 3.15.1, 3.15.4-5; Paus. 1.5.2-3",
-      "note": "Won the war with Eleusis but was destroyed by Poseidon (or Zeus' thunderbolt) for slaying Eumolpus."
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 3.15.1, 3.15.4-5; Paus. 1.38.3; Hyg. Fab. 46",
+      "note": "Won the war with Eleusis but perished when Poseidon destroyed him and his house (Apollodorus), when Zeus struck him with a thunderbolt at Poseidon's request (Hyginus), or simply fell in battle (Pausanias).",
+      "topic": "death-of-erechtheus"
     },
     {
       "ruler": "Cecrops II",
       "characterId": "cecrops-ii",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
+      "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 3.15.5; Paus. 1.5.3",
-      "note": "Eldest son of Erechtheus; succeeded after Poseidon destroyed his father's house."
+      "note": "Eldest son of Erechtheus; succeeded after Poseidon destroyed his father's house — not to be confused with the autochthonous Cecrops who named Cecropia."
     },
     {
       "ruler": "Pandion II",
       "characterId": "pandion-ii",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
-      "citation": "Apollod. 3.15.5; Paus. 1.5.3",
-      "note": "Driven out by the sons of Metion; fled to Megara, married Pylia, and became king there."
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.15.5-6; Paus. 1.5.3-4",
+      "note": "Driven out by the sons of Metion; fled to Megara, married Pylia, and became king there while the Metionids held Athens."
     },
     {
       "ruler": "The Metionids",
-      "sources": [
-        "apollodorus"
-      ],
+      "characterId": "metion",
+      "sources": ["apollodorus"],
       "citation": "Apollod. 3.15.5-6",
-      "note": "The sons of Metion usurped the throne during Pandion II's exile; Pandion's sons returned from Megara and expelled them."
+      "note": "The sons of Metion usurped the throne during Pandion II's exile; Pandion's sons Aegeus, Pallas, Nisus and Lycus returned from Megara and expelled them."
     },
     {
       "ruler": "Aegeus",
       "characterId": "aegeus",
-      "sources": [
-        "apollodorus",
-        "pausanias"
-      ],
+      "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 3.15.6, 3.16.1; Paus. 1.5.4",
-      "note": "Eldest of the four restored Pandionids, he took the whole power; childless until Theseus."
+      "note": "Eldest of the four restored Pandionids, he took the whole power; childless until Theseus. Pausanias preserves a variant that makes him a supposititious son of Scyrius rather than of Pandion.",
+      "topic": "theseus-paternity"
     },
     {
       "ruler": "Theseus",
       "characterId": "theseus",
-      "sources": [
-        "homer",
-        "apollodorus",
-        "pausanias"
-      ],
-      "citation": "Hom. Il. 1.265; Apollod. Epit. 1.1-1.24; Paus. 1.17, 1.22",
-      "note": "Son of Aegeus (or Poseidon); slayer of the Minotaur, unifier of Attica, the great Athenian hero-king."
+      "sources": ["homer", "apollodorus", "pausanias", "hyginus"],
+      "citation": "Hom. Il. 1.265; Apollod. Epit. 1.1-1.24, 3.15.7; Paus. 1.17, 1.22, 2.33.1; Hyg. Fab. 37",
+      "note": "Son of Aegeus alone in Homer, of Poseidon in Pausanias, or of both on the same night in Apollodorus and Hyginus — slayer of the Minotaur, unifier of Attica, the great Athenian hero-king.",
+      "topic": "theseus-paternity"
+    },
+    {
+      "ruler": "Menestheus",
+      "characterId": "menestheus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Hom. Il. 2.550-580; Apollod. Epit. 1.23-24, 3.11; Paus. 1.1.2, 1.3.3, 1.17.5-6",
+      "note": "Son of Peteos; while Theseus lay imprisoned in Hades (or abroad in Thesprotia), Menestheus seized Athens and expelled Demophon and Acamas — or was himself restored from exile when the Dioscuri captured Aphidna. He ruled during the Trojan War and led fifty ships unmatched in marshalling chariots and shield-bearers save Nestor alone; when Theseus returned, Menestheus drove him out to Scyros. After Troy he reigned on Melos."
     }
   ]
 }

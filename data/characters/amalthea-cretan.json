@@ -1,0 +1,45 @@
+{
+  "id": "amalthea-cretan",
+  "name": "Amalthea",
+  "greekName": "Amaltheia (Ἀμάλθεια)",
+  "romanName": "Amalthea",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "titan-ring",
+  "domains": [
+    "nurse of Zeus",
+    "Mount Dicte",
+    "the horn of plenty",
+    "Crete"
+  ],
+  "summary": [
+    {
+      "text": "The Cretan nurse of the hidden infant Zeus — in Apollodorus the nymphs feed him on her milk, in Hyginus she hangs his cradle from a tree so he can be found neither in heaven nor on earth nor in the sea, and in the star-myths she is remembered both as a nymph with a pet she-goat and as the goat herself whose horn became the vessel of unfailing plenty.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.7, 2.7.5; Fabulae 139; Astronomica 2.13.5–6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says the nymphs Adrastia and Ida fed the babe on the milk of Amalthea while the Curetes clashed spear on shield in the cave of Dicte. He does not say whether Amalthea is goat or nurse — only that her milk sustained the king who would overthrow Cronus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.7"
+    },
+    {
+      "text": "Hyginus tells the hiding of the cradle: Juno brought Jove to Crete, and Amalthea, the child's nurse, hung him in a cradle from a tree, that he might be found neither in heaven nor on earth nor in the sea; she summoned youths with brazen shields and spears to drown his crying while Saturn hunted the child in vain.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 139"
+    },
+    {
+      "text": "In his star-lore Hyginus records two traditions side by side. Parmeniscus says Melisseus was king in Crete and that his daughters, lacking milk, furnished a she-goat named Amalthea who reared Jove — the kids born with her were placed among the constellations. Musaeus, cited by Hyginus, says Jove was nursed by Themis and the nymph Amalthea, whom Ops his mother entrusted to the nymph; Amalthea had as a pet a certain goat which is said to have nursed Jove.",
+      "sources": ["hyginus"],
+      "citation": "Astronomica 2.13.5–6",
+      "topic": "amalthea-identity"
+    },
+    {
+      "text": "The horn she left to myth outlived the nursery. Apollodorus, telling how Achelous recovered the horn Heracles broke off in his wrestling, says Amalthea was a daughter of Haemonius and possessed a bull's horn with the power of supplying meat or drink in abundance — the cornucopia Achelous traded for his lost tusk.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.5"
+    }
+  ]
+}

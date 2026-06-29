@@ -37,6 +37,16 @@
     {
       "city": "argos",
       "sources": ["apollodorus", "hyginus"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.7, 3.11; Fabulae 95, 98"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.7–3.8, 6.8; Fabulae 105"
     }
   ]
 }

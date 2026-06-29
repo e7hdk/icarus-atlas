@@ -40,6 +40,15 @@
       "citation": "Apollod. Epit. 6.15; Paus. 8.15.7"
     },
     {
+      "title": "Menestheus at Melos",
+      "text": "After the sack of Troy, Menestheus son of Peteos — captain of the Athenians at Ilium — sailed with Elephenor's Euboeans and Philoctetes as far as Mimas. Then he went to Melos and reigned as king, because Polyanax the island's lord had died. The nested Theseus shelf tells how Menestheus seized Athens while the founder lay in Hades; here the Athenian marshal ends his Return not in Attica but on a Cycladic throne.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Apollod. Epit. 6.15b; Paus. 5.23.2"
+    },
+    {
       "title": "The nested captains",
       "text": "The Epitome's roll is richer than these plain names. Philoctetes went to the Campanians in Italy — the nested episode on Philoctetes to Italy tells the safe Return and the bow that slew Paris. Teucer was banished to Cyprus; Idomeneus was driven from Crete by Leucus; Calchas died at Colophon when Mopsus outprophesied him. Each has its own shelf on the Nostoi tree; here the catalogue serves as index to the settlements Apollodorus lists in a single chapter after the great captains' ruin has been told.",
       "sources": [
@@ -59,20 +68,34 @@
   ],
   "cast": [
     {
+      "id": "guneus-aenian",
       "name": "Guneus",
       "role": "Captain of the Aenianians who settled in Libya"
     },
     {
+      "id": "antiphus-thessalus-cos",
       "name": "Antiphus",
       "role": "Son of Thessalus who named Thessaly among the Pelasgians"
     },
     {
+      "id": "pheidippus-cos",
       "name": "Phidippus",
       "role": "Leader of the Coans who settled on Andros"
     },
     {
+      "id": "agapenor",
       "name": "Agapenor",
       "role": "Arcadian captain who went to Cyprus"
+    },
+    {
+      "id": "menestheus",
+      "name": "Menestheus",
+      "role": "Athenian captain who reigned on Melos after Troy"
+    },
+    {
+      "id": "peteus-athens",
+      "name": "Peteus",
+      "role": "Father of Menestheus in the Erechtheid line"
     },
     {
       "id": "philoctetes",
@@ -107,12 +130,14 @@
   ],
   "places": [
     {
+      "id": "libya",
       "name": "Libya",
       "role": "Where Guneus settled"
     },
     {
       "name": "Thessaly",
-      "role": "Country Antiphus renamed among the Pelasgians"
+      "role": "Country Antiphus renamed among the Pelasgians",
+      "id": "larisa"
     },
     {
       "id": "andros",
@@ -125,8 +150,14 @@
       "role": "Where Agapenor and Teucer both belong in the western strand"
     },
     {
+      "id": "melos",
+      "name": "Melos",
+      "role": "Cycladic isle where Menestheus reigned after Polyanax died"
+    },
+    {
       "name": "Campania",
-      "role": "Italian land of Philoctetes' settlement"
+      "role": "Italian land of Philoctetes' settlement",
+      "id": "campania"
     }
   ],
   "attestations": [
@@ -143,7 +174,7 @@
     {
       "source": "pausanias",
       "work": "Description of Greece",
-      "citation": "8.15.7"
+      "citation": "5.23.2, 8.15.7"
     }
   ]
 }

@@ -5,51 +5,78 @@
       "ruler": "Phoroneus",
       "characterId": "phoroneus",
       "sources": ["apollodorus", "pausanias", "hyginus"],
-      "citation": "Apollod. 2.1.1; Paus. 2.15.5, 2.19.5; Hyg. Fab. 143",
+      "citation": "Apollod. 2.1.1; Paus. 2.15.5, 2.19.5; Hyg. Fab. 143, 145",
       "note": "First gatherer of the Argolid into a single community — the City of Phoroneus. Pausanias' Argives begin human kingship with him; Hyginus makes him the first mortal to rule anywhere in Greece."
     },
     {
       "ruler": "Apis",
+      "characterId": "apis-phoroneus",
       "sources": ["apollodorus"],
       "citation": "Apollod. 2.1.1",
       "note": "Son of Phoroneus and Teledice; turned his power to tyranny, named the land Apia after himself, and died childless."
     },
     {
       "ruler": "Argus",
+      "characterId": "argus-eponym",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 2.1.2; Hyg. Fab. 124, 145",
       "note": "Son of Zeus and Niobe, daughter of Phoroneus — eponym of the city and the whole land called Argos after him."
     },
     {
       "ruler": "Criasus",
+      "characterId": "criasus-argive",
       "sources": ["apollodorus"],
       "citation": "Apollod. 2.1.2",
       "note": "Son of Argus and Evadne, daughter of the river Strymon."
     },
     {
       "ruler": "Phorbas",
+      "characterId": "phorbas-argive",
       "sources": ["apollodorus"],
       "citation": "Apollod. 2.1.2",
       "note": "Son of Criasus; during his reign the country was afflicted by a plague, and a Carian seer called in from Delphi ended it."
     },
     {
       "ruler": "Triopas",
+      "characterId": "triopas-argive",
       "sources": ["apollodorus"],
       "citation": "Apollod. 2.1.2",
       "note": "Son of Phorbas; father of Iasus and the seer Amphiaraus' ancestor through his daughter."
     },
     {
       "ruler": "Iasus",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 2.1.3-2.1.4",
-      "note": "Son of Triopas; father of Io, whom Hera's jealousy drove from the land — and of the twin kings who would divide the kingdom."
+      "characterId": "iasus-argive",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.1.3-2.1.4; Paus. 2.16.1",
+      "note": "Son of Triopas; father of Io, whom Hera's jealousy drove from the land — and of the twin kings who would divide the kingdom after Danaus."
+    },
+    {
+      "ruler": "Crotopus",
+      "characterId": "crotopus-argive",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.16.1, 2.23.7",
+      "note": "Son of Agenor; succeeded Iasus on the native Argive throne and begat Sthenelas — his tomb stood at Argos beside the precinct of Cretan Dionysus."
+    },
+    {
+      "ruler": "Sthenelas",
+      "characterId": "sthenelas-argive",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.16.1, 2.19.3",
+      "note": "Son of Crotopus; father of Gelanor. Pausanias spells the name Sthenelas — distinct from the later Sthenelus son of Capaneus."
+    },
+    {
+      "ruler": "Gelanor",
+      "characterId": "gelanor-argive",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.1.4; Paus. 2.16.1, 2.19.3-2.19.4",
+      "note": "Son of Sthenelas; last king of Agenor's line before Danaus returned from Egypt — Apollodorus has him surrender the kingdom, Pausanias a contested claim decided by wolf and bull."
     },
     {
       "ruler": "Danaus",
       "characterId": "danaus",
       "sources": ["apollodorus", "hyginus", "pausanias"],
-      "citation": "Apollod. 2.1.4-2.1.5; Hyg. Fab. 168; Paus. 2.19.3",
-      "note": "Returned from Egypt with his fifty daughters and seized the kingdom from his brother Lynceus — then set the famous marriage contest that left all but Hypermnestra's bridegroom dead."
+      "citation": "Apollod. 2.1.4-2.1.5; Hyg. Fab. 168; Paus. 2.16.1, 2.19.3-2.19.4, 2.20.5",
+      "note": "Returned from Egypt with his fifty daughters and took Argos from Gelanor son of Sthenelas — interrupting the Crotopid succession — then set the famous marriage contest that left all but Hypermnestra's bridegroom dead."
     },
     {
       "ruler": "Lynceus",
@@ -77,14 +104,14 @@
       "characterId": "perseus",
       "sources": ["apollodorus", "pausanias", "hyginus"],
       "citation": "Apollod. 2.4.4; Paus. 2.16.3; Hyg. Fab. 244",
-      "note": "Grandson of Acrisius; having killed him by accident, he exchanged kingdoms with Megapenthes son of Proetus — giving Argos away and taking Mycenae for himself."
+      "note": "Grandson of Acrisius; having killed him by accident, he exchanged kingdoms with Megapenthes son of Proetus — giving Argos away and taking Mycenae for himself. Hyginus instead has Megapenthes murder him to avenge Proetus."
     },
     {
       "ruler": "Megapenthes",
       "characterId": "megapenthes-proetid",
       "sources": ["apollodorus", "pausanias", "hyginus"],
-      "citation": "Apollod. 2.4.4; Paus. 2.16.3; Hyg. Fab. 244",
-      "note": "Son of Proetus; received Argos from Perseus in the peaceful exchange. Hyginus instead has him murder Perseus to avenge his father.",
+      "citation": "Apollod. 2.4.4; Paus. 2.16.3, 2.18.4; Hyg. Fab. 244",
+      "note": "Son of Proetus; received Argos from Perseus in the peaceful exchange attested by Apollodorus and Pausanias. Hyginus instead has him murder Perseus to avenge his father.",
       "topic": "perseus-death"
     },
     {
@@ -133,7 +160,7 @@
       "ruler": "Alcmaeon",
       "characterId": "alcmaeon",
       "sources": ["homer", "apollodorus", "pausanias"],
-      "citation": "Od. 15.248–251; Apollod. 3.7.2–3.7.3; Paus. 2.20.5",
+      "citation": "Od. 15.248–251; Apollod. 3.7.2–3.7.3; Paus. 2.18.4, 2.20.5",
       "note": "Son of Amphiaraus; leader of the Epigoni who slew Laodamas at Thebes, then wandered and colonized Acarnania before the Melampid roll reaches his brother."
     },
     {

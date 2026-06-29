@@ -1,0 +1,36 @@
+{
+  "id": "battus-pieria",
+  "name": "Battus",
+  "greekName": "Battos (Βάττος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "keeper of Neleus' pasture",
+    "the betrayed oath",
+    "the touchstone"
+  ],
+  "summary": [
+    {
+      "text": "Old forester of Pieria who saw Hermes drive Apollo's cattle away — bribed with a cow to keep silence, he betrayed the secret when tested in another shape, and Mercury turned his perjured heart to the touchstone that betrays gold.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 2.676–707; Bibliotheca 3.10.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "On the day of his birth Hermes slipped from his swaddling-bands, walked to Pieria, and stole fifty head from Apollo's herd. Only one witness saw the theft: an ancient forester called Battus, keeper of the wood and green pasture where the blooded mares of rich Neleus grazed.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 2.676–707; Bibliotheca 3.10.2"
+    },
+    {
+      "text": "Mercury distrusted him and led him aside, promising a cow if he would keep silence. The god returned in another guise, offering a bull and a cow for word of the herd, and the old man promptly betrayed the secret he had been paid to keep. Hermes turned his perjured heart to stone — the touchstone, which betrays gold as Battus betrayed his oath.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.676–707"
+    },
+    {
+      "text": "He must not be merged with Battus the founder of Cyrene — the Pierian witness to the cattle-theft and the colonist of Thera belong to different genealogies and different ages of myth.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.676–707"
+    }
+  ]
+}

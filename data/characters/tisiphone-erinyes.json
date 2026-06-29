@@ -1,0 +1,28 @@
+{
+  "id": "tisiphone-erinyes",
+  "name": "Tisiphone (Erinyes)",
+  "greekName": "Tisiphonē (Τισιφόνη)",
+  "romanName": "Tisiphone",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "avenging murder",
+    "blood-guilt",
+    "the avenging Furies"
+  ],
+  "summary": [
+    {
+      "text": "One of the three named Erinyes — Alecto, Tisiphone and Megaera — whom Apollodorus and Hyginus count among the Furies born from the castrated sky's blood on Earth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Tisiphone among the Furies who rose when the bloody drops of flowing blood from the castrated Uranus fell upon Gaia. Hyginus's preface lists the same three sisters — Alecto, Megaera and Tisiphone — as children of Aether and Terra, a rival genealogy kept on topic `erinyes-parentage`. The collective node `erinyes` holds their shared office; this node is the individual named in both rolls.",
+      "sources": ["apollodorus", "hyginus", "hesiod"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface; Theogony 183–187",
+      "topic": "erinyes-parentage"
+    }
+  ]
+}

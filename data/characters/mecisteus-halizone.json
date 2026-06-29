@@ -23,5 +23,22 @@
       "sources": ["apollodorus"],
       "citation": "Epitome 3.35; Bibliotheca 1.9.13"
     }
+  ],
+  "residences": [
+    {
+      "city": "alybe-pontus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.820–855"
+    }
   ]
 }

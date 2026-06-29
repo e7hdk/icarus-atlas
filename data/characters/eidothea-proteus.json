@@ -32,9 +32,21 @@
         "homer"
       ],
       "citation": "Odyssey 4.430–590"
+    },
+    {
+      "text": "Homer and Hyginus attest only that she is the daughter of Proteus the Old Man of the Sea, with no nymph sub-class in our seven lenses. She is not a Nereid — Nereids are daughters of Nereus and Doris — and Hyginus' separate Oceanid Idothea who nursed Zeus is a homonym, not this Proteus-born guide. `kinds` therefore remain empty until a sourced FigureKind tag lands in the corpus.",
+      "sources": [
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Odyssey 4.355–430; Hyginus, Fabulae 118, 182"
     }
   ],
-  "kinds": [
-    "nereid"
+  "residences": [
+    {
+      "city": "pharos",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.355–430"
+    }
   ]
 }

@@ -28,5 +28,37 @@
       "sources": ["apollodorus", "pausanias"],
       "citation": "Epitome 6.28; Description of Greece 2.16.7"
     }
+  ],
+  "residences": [
+    {
+      "city": "panopeus",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Epitome 6.24; Fabulae 117; Description of Greece 2.29.4"
+    },
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 6.24–25; Fabulae 119"
+    },
+    {
+      "city": "tauris",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 6.26–27; Fabulae 120"
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.25; Description of Greece 1.28.6"
+    }
   ]
 }

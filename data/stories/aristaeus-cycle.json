@@ -8,73 +8,184 @@
   "eraEnd": 5.05,
   "summary": {
     "text": "Son of Apollo and the Libyan nymph Cyrene, reared in Cheiron's cave and taught bee-keeping, herding, and prophecy by the Muses — husband of Cadmus' daughter Autonoe, father of Actaeon, culture-god of hive and olive who warded off Sirius' plague on Ceos and, grieving his son's death, migrated from Greece to Sardinia.",
-    "sources": ["apollonius", "hesiod", "apollodorus", "hyginus", "pausanias"],
+    "sources": [
+      "apollonius",
+      "hesiod",
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Arg. 2.500–527, 4.1128–1132; Hes. Th. 975–977; Apollod. 3.4.2–3.4.4; Hyg. Fab. 161, 180–181, Astr. 2.4.6; Paus. 8.2.4, 10.17.3, 10.30.5"
   },
   "chapters": [
     {
       "title": "Apollo and Cyrene",
       "text": "Apollonius tells how Apollo saw Cyrene guarding her flock by the marsh-meadow of Peneus in Haemonia and carried her off far from Thessaly to Libya, near the Myrtosian height. There she bore Aristaeus, whom the corn-rich Haemonians call 'Hunter' and 'Shepherd'. Hyginus names him last among the Sons of Apollo: 'Aristaeus by Cyrene, daughter of Peneus.' The god brought the infant while still in swaddling clothes to Cheiron's cave to be nurtured.",
-      "sources": ["apollonius", "hyginus"],
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
       "citation": "Arg. 2.500–527; Hyg. Fab. 161"
     },
     {
       "title": "Cheiron and the Muses",
       "text": "When Aristaeus grew to manhood the Muses gave him a bride, taught him the arts of healing and prophecy, and made him keeper of their sheep. Apollonius calls him lord of honey, who discovered the works of bees and the fatness of the olive — the fruit of labour — and in the sacred cave where Macris once nursed the Nysean son of Dionysus on Abantian Euboea, his rustic crafts bound herd, hive, and cheese into one pastoral god.",
-      "sources": ["apollonius"],
+      "sources": [
+        "apollonius"
+      ],
       "citation": "Arg. 2.500–527, 4.1128–1132"
     },
     {
       "title": "Marriage at Thebes",
       "text": "Hesiod and Apollodorus bind the culture-god into the Cadmean house: long-haired Aristaeus wedded Autonoe, daughter of Cadmus and Harmonia, in rich-crowned Thebes. To them was born Actaeon, whom Chiron bred to be a hunter — the grandson whose fate would drive his father from Greece.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 975–977; Apollod. 3.4.2–3.4.4"
     },
     {
       "title": "Actaeon's death",
       "text": "Actaeon perished on Cithaeron, devoured by his own dogs. Apollodorus cites three causes without choosing: Acusilaus said Zeus was angry because Actaeon wooed Semele; others that he saw Artemis bathing; still others that he boasted himself the better hunter. Hyginus tells the common tale — the shepherd saw Diana bathing and desired her, and the goddess set horns on his head so his own hounds tore him apart. Pausanias saw Actaeon beside his mother on the Delphic painting, a young deer in their hands and a hunting dog stretched at their side.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.4.4; Hyg. Fab. 180–181; Paus. 10.30.5",
       "topic": "actaeon-offense"
     },
     {
       "title": "Ceos and the Dog-Star",
       "text": "When Sirius scorched the Minoan isles and no respite came, Apollo's oracle summoned Aristaeus from Phthia to Ceos. At his father's command he gathered the Parrhasian people of Lycaon's line, built a great altar to Zeus Icmaeus on the mountains, and offered sacrifice to Sirius and to Zeus son of Cronus — and from that rite, Apollonius says, the Etesian winds cool the land for forty days; on Ceos even in later times the priests still perform the same observances before the Dog-star rises. Hyginus adds another strand: when Icarus' murderers hid among the Ceans and plague followed, Aristaeus asked Apollo how to free the state; expiation for Icarus and a prayer to Jove for wind when Canicula rises brought the Etesian breeze.",
-      "sources": ["apollonius", "hyginus"],
+      "sources": [
+        "apollonius",
+        "hyginus"
+      ],
       "citation": "Arg. 2.500–527; Hyg. Astr. 2.4.6"
     },
     {
       "title": "Exodus to Sardinia",
       "text": "Deeply grieved by the fate of Actaeon, and vexed alike with Boeotia and the whole of Greece, Aristaeus, son of Apollo and Cyrene, is said to have migrated from the land to Sardinia — leading a colony that Pausanias places among the early settlers of the island, long before the Iberians founded Nora under Norax. Pausanias also counts him among those mortals who in ancient days were changed to gods and still receive honours.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Paus. 8.2.4, 10.17.3–10.17.5"
     }
   ],
   "cast": [
-    { "id": "aristaeus", "name": "Aristaeus", "role": "Rustic culture-god of hive, herd, and olive" },
-    { "id": "cyrene-nymph", "name": "Cyrene", "role": "Libyan nymph, his mother" },
-    { "id": "apollo", "name": "Apollo", "role": "Father who carried Cyrene to Libya" },
-    { "id": "chiron", "name": "Chiron", "role": "Centaur who nurtured the infant in his cave" },
-    { "id": "autonoe", "name": "Autonoe", "role": "Cadmus' daughter, his Theban consort" },
-    { "id": "actaeon", "name": "Actaeon", "role": "Hunter son devoured by his own hounds" },
-    { "id": "cadmus", "name": "Cadmus", "role": "Founder-king whose house he married into" },
-    { "id": "harmonia", "name": "Harmonia", "role": "Mother of Autonoe in the Cadmean line" }
+    {
+      "id": "aristaeus",
+      "name": "Aristaeus",
+      "role": "Rustic culture-god of hive, herd, and olive"
+    },
+    {
+      "id": "cyrene-nymph",
+      "name": "Cyrene",
+      "role": "Libyan nymph, his mother"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Father who carried Cyrene to Libya"
+    },
+    {
+      "id": "chiron",
+      "name": "Chiron",
+      "role": "Centaur who nurtured the infant in his cave"
+    },
+    {
+      "id": "autonoe",
+      "name": "Autonoe",
+      "role": "Cadmus' daughter, his Theban consort"
+    },
+    {
+      "id": "actaeon",
+      "name": "Actaeon",
+      "role": "Hunter son devoured by his own hounds"
+    },
+    {
+      "id": "cadmus",
+      "name": "Cadmus",
+      "role": "Founder-king whose house he married into"
+    },
+    {
+      "id": "harmonia",
+      "name": "Harmonia",
+      "role": "Mother of Autonoe in the Cadmean line"
+    }
   ],
   "places": [
-    { "name": "Libya", "role": "Land where Apollo set Cyrene and she bore Aristaeus" },
-    { "name": "Haemonia", "role": "Thessalian country of the corn-rich Haemonians" },
-    { "name": "Mount Pelion", "role": "Cheiron's cave where the infant was nurtured" },
-    { "id": "thebes", "name": "Thebes", "role": "City where he wed Autonoe and Actaeon was born" },
-    { "id": "ceos", "name": "Ceos", "role": "Cycladic isle where he ended Sirius' plague" },
-    { "name": "Sardinia", "role": "Western isle of his migration after Actaeon's death" },
-    { "name": "Mount Cithaeron", "role": "Mountain where Actaeon's hounds ran down their master" }
+    {
+      "name": "Libya",
+      "role": "Land where Apollo set Cyrene and she bore Aristaeus"
+    },
+    {
+      "name": "Haemonia",
+      "role": "Thessalian country of the corn-rich Haemonians",
+      "id": "larisa"
+    },
+    {
+      "name": "Mount Pelion",
+      "role": "Cheiron's cave where the infant was nurtured",
+      "featureId": "mount-pelion"
+    },
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City where he wed Autonoe and Actaeon was born"
+    },
+    {
+      "id": "ceos",
+      "name": "Ceos",
+      "role": "Cycladic isle where he ended Sirius' plague"
+    },
+    {
+      "id": "zeus-icmaeus-ceos",
+      "name": "Altar of Zeus Icmaeus",
+      "role": "Mountain altar where he sacrificed to Sirius and Zeus and won the Etesian winds"
+    },
+    {
+      "name": "Sardinia",
+      "role": "Western isle of his migration after Actaeon's death",
+      "id": "sardinia"
+    },
+    {
+      "name": "Mount Cithaeron",
+      "role": "Mountain where Actaeon's hounds ran down their master",
+      "featureId": "mount-cithaeron"
+    }
   ],
   "attestations": [
-    { "source": "apollonius", "work": "Argonautica", "citation": "2.500–527, 4.1128–1132" },
-    { "source": "hesiod", "work": "Theogony", "citation": "975–977" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.4.2–3.4.4" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "161, 180–181" },
-    { "source": "hyginus", "work": "Astronomica", "citation": "2.4.6" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "8.2.4, 10.17.3–10.17.5, 10.30.5" }
+    {
+      "source": "apollonius",
+      "work": "Argonautica",
+      "citation": "2.500–527, 4.1128–1132"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "975–977"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.4.2–3.4.4"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "161, 180–181"
+    },
+    {
+      "source": "hyginus",
+      "work": "Astronomica",
+      "citation": "2.4.6"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "8.2.4, 10.17.3–10.17.5, 10.30.5"
+    }
   ]
 }

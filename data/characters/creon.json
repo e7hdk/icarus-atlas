@@ -5,12 +5,22 @@
   "type": "mortal",
   "domains": [
     "regent of Thebes",
+    "father of Megara",
     "state law"
   ],
   "cluster": "mortal-arm",
   "summary": [
     {
-      "text": "The brother of Jocasta and regent of Thebes. He took control of the city during its darkest hours, from the plague of the Sphinx to the War of the Seven.",
+      "text": "King of Thebes in the age of Heracles: after the hero broke the Minyans of Orchomenus and lifted their tribute on the city, Creon gave him his eldest daughter Megara as a prize of valour and his younger daughter to Iphicles — not to be confused with Creon king of Corinth in the Jason saga.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.11; Odyssey 11.269–270; Fabulae 32"
+    },
+    {
+      "text": "The brother of Jocasta and regent of Thebes in the Oedipus generation. He took control of the city during its darkest hours, from the plague of the Sphinx to the War of the Seven.",
       "sources": [
         "apollodorus",
         "hyginus",
@@ -20,6 +30,14 @@
     }
   ],
   "story": [
+    {
+      "text": "In the generation of Heracles, Creon ruled Thebes when Erginus and the Minyans still exacted tribute from the city. After Heracles overthrew them — in the fight Amphitryon fell fighting bravely — Creon rewarded the champion with his eldest daughter Megara and gave his younger daughter to Iphicles, who already had a son Iolaus by Automedusa, daughter of Alcathus. Homer presupposes this house when Odysseus sees Megara, daughter of Creon, among the wives of heroes in Hades.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.4.11; Odyssey 11.269–270"
+    },
     {
       "text": "When King Laius was murdered on the road, Creon assumed the regency of Thebes. Under his rule, the city was terrorized by the Sphinx, until Oedipus arrived to solve its riddle. Creon gratefully surrendered the throne and the hand of his sister Jocasta to the young hero.",
       "sources": [
@@ -50,9 +68,11 @@
       "city": "thebes",
       "sources": [
         "apollodorus",
+        "homer",
         "hyginus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.11, 3.5.8; Odyssey 11.269–270; Fabulae 67"
     }
   ]
 }

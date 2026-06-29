@@ -71,19 +71,33 @@
   "residences": [
     {
       "city": "aea-colchis",
-      "sources": ["hesiod", "apollodorus", "apollonius"]
+      "sources": ["hesiod", "apollodorus", "apollonius"],
+      "citation": "Theogony 956–961; Bibliotheca 1.9.23–24; Argonautica 3.210–4.140"
     },
     {
       "city": "corcyra",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.25"
     },
     {
       "city": "iolcus",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.27; Metamorphoses 7.487–568"
     },
     {
       "city": "corinth",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.9.28; Metamorphoses 7.391–424; Description of Greece 2.3.6–11; Fabulae 25"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.24"
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.9.28; Epitome 1.5–1.6; Metamorphoses 7.658–730"
     }
   ]
 }

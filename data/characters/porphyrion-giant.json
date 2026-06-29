@@ -1,0 +1,29 @@
+{
+  "id": "porphyrion-giant",
+  "name": "Porphyrion (Gigantes)",
+  "greekName": "Porphyriōn (Πορφυρίων)",
+  "romanName": "Porphyrion",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "chief of the Gigantes",
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "The greatest of the earthborn Giants beside Alcyoneus, who attacked Heracles and Hera in the Gigantomachy until Zeus smote him with a thunderbolt and Heracles finished him with an arrow.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.1–2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Porphyrion surpass all the rest among the Giants whom Earth bore to avenge the Titans — matchless in bulk, terrible of aspect, with dragon-scales for feet. When the oracle declared that no Giant could perish at the hands of gods alone but only with a mortal's help, Athena summoned Heracles to the war. In the battle Porphyrion attacked Heracles and Hera; Zeus inspired him with lust for Hera, and when he tore her robes and would have forced her, she called for help — Zeus smote him with a thunderbolt and Heracles shot him dead with an arrow.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.1–2",
+      "topic": "gigantes-parentage"
+    }
+  ]
+}

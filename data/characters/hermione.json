@@ -29,5 +29,29 @@
       "citation": "Epitome 6.28; Description of Greece 2.18.6",
       "topic": "orestes-marriages"
     }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 4.1–14; Bibliotheca 3.11.1; Description of Greece 2.18.6"
+    },
+    {
+      "city": "argos",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.18.6",
+      "topic": "orestes-marriages"
+    },
+    {
+      "city": "mycenae",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.28; Description of Greece 2.18.6",
+      "topic": "orestes-marriages"
+    },
+    {
+      "city": "delphi",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.14"
+    }
   ]
 }

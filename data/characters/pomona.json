@@ -1,0 +1,34 @@
+{
+  "id": "pomona",
+  "name": "Pomona",
+  "greekName": "Pomōna (Πομόνα)",
+  "romanName": "Pomona",
+  "type": "nymph",
+  "kinds": ["hamadryad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "Latin hamadryad",
+    "orchards of the Palatine",
+    "fruit-bearing trees",
+    "consort of Vertumnus"
+  ],
+  "summary": [
+    {
+      "text": "A Latin hamadryad who loved fruitful trees above forests and streams, fenced her orchard on the Palatine, and drove away every suitor with a pruning-hook until Vertumnus, god of the turning year, won her by disguise and persuasion.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.622–771, 14.882–1022"
+    }
+  ],
+  "story": [
+    {
+      "text": "Under King Proca on the Palatine, Pomona tended gardens with more skill than any Latin hamadryad. Her name came from the fruit she cherished; she cared nothing for woods or rivers and kept her orchard walled. Silvanus, Picus, and many gods in harvester's guise sought her love in vain.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.882–950"
+    },
+    {
+      "text": "Vertumnus, who exceeded them all in devotion, tried every seasonal shape — reaper, mower, fisherman, soldier — and at last entered as a bent old woman, praising the marriage of elm and vine and telling how Anaxarete was turned to stone for scorning Iphis. Pomona listened; when the god dropped his mask and stood in radiant youth, she yielded, and the orchard-goddess was joined to the god of change.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.950–1022"
+    }
+  ]
+}

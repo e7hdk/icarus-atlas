@@ -1,0 +1,34 @@
+{
+  "id": "calybe-nymph",
+  "name": "Calybe",
+  "greekName": "Kalubē (Καλύβη)",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "Trojan fountain-nymph",
+    "mother of Bucolion",
+    "Laomedon's lover"
+  ],
+  "summary": [
+    {
+      "text": "A nymph whom Apollodorus names as the mother of Bucolion, illegitimate eldest son of king Laomedon — the prose genealogy beside Homer's shepherd episode, where the only named fountain-nymph is Abarbarea, mother of Aesepus and Pedasus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus' roll of Laomedon's children, the king begat Tithonus, Lampus, Clytius, Hicetaon, and Podarces, and the daughters Hesione, Cilla, and Astyoche, besides a son Bucolion by a nymph Calybe. No other ancient author in the atlas' seven lenses names her; Homer knows Bucolion as Laomedon's eldest, born of an unwed mother, and names a different fountain-nymph, Abarbarea, as the mother of Bucolion's twin sons.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.12.3; Iliad 6.1–35",
+      "topic": "bucolion-mother"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "homer"]
+    }
+  ]
+}

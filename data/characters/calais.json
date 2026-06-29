@@ -69,8 +69,40 @@
   ],
   "residences": [
     {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.15.2; Argonautica 1.211–223; Metamorphoses 6.682–721"
+    },
+    {
+      "city": "salmydessus",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.178–300; Fabulae 19"
+    },
+    {
+      "city": "strophades",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.286–297; Fabulae 14"
+    },
+    {
       "city": "tenos",
-      "sources": ["apollodorus", "apollonius", "hyginus"]
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Argonautica 1.1298–1309; Bibliotheca 3.15.2; Fabulae 14.3"
     }
   ]
 }

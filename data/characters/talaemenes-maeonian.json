@@ -27,7 +27,13 @@
   "residences": [
     {
       "city": "sardis",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.860–875; Epitome 3.35"
     }
   ]
 }

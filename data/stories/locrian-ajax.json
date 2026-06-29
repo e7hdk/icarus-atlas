@@ -145,19 +145,23 @@
     },
     {
       "name": "Delphi",
-      "role": "Polygnotus' paintings of the outrage and the castaway"
+      "role": "Polygnotus' paintings of the outrage and the castaway",
+      "id": "delphi"
     },
     {
       "name": "Gyraean rocks",
-      "role": "Reef where Athena and Poseidon destroyed him"
+      "role": "Reef where Athena and Poseidon destroyed him",
+      "featureId": "gyraean-rocks"
     },
     {
       "name": "Cepharean Rocks",
-      "role": "Where Hyginus sets the divine storm"
+      "role": "Where Hyginus sets the divine storm",
+      "featureId": "capherian-rocks"
     },
     {
       "name": "Locrian coast",
-      "role": "The homeland he never reached"
+      "role": "The homeland he never reached",
+      "id": "opous-locris"
     }
   ],
   "attestations": [

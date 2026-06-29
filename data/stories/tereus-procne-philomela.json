@@ -1,0 +1,122 @@
+{
+  "id": "tereus-procne-philomela",
+  "title": "Tereus, Procne and Philomela",
+  "greekTitle": "Τηρεὺς καὶ Πρόκνη καὶ Φιλομήλα",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5.3,
+  "summary": {
+    "text": "Tereus of Thrace, son of Ares, won Procne of Athens for helping Pandion in war — then lusted after her sister Philomela, cut out her tongue, and kept the crime hidden until the women wove the truth into a robe, killed Itys, and served the boy to his father; the gods turned them all to birds.",
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Ov. Met. 6.412–674; Apollod. 3.14.8; Hyg. Fab. 45"
+  },
+  "chapters": [
+    {
+      "title": "The Thracian alliance",
+      "text": "Apollodorus tells how war with Labdacus over boundaries drove Pandion to call Tereus, son of Ares, from Thrace. Their joined arms ended the war, and Pandion gave Procne to the victor in marriage. By her Tereus had a son, Itys. Ovid adds that no Hymenaeus attended — no wedding grace, only the Thracian's might.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.14.8; Ov. Met. 6.412–480"
+    },
+    {
+      "title": "The severed tongue",
+      "text": "Tereus fell in love with Philomela and, pretending Procne was dead, fetched her to Thrace. When he had violated her he cut out her tongue so she could not accuse him. Voiceless, she wove the crime into a robe and sent it to her sister. Apollodorus agrees on the seduction and mutilation; Hyginus says Pandion granted the second daughter because Tereus claimed Procne had died.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.14.8; Ov. Met. 6.520–600; Hyg. Fab. 45"
+    },
+    {
+      "title": "The table and the birds",
+      "text": "Procne killed Itys and served him to Tereus at supper. When he learned what he had eaten he pursued the sisters with an axe. The gods changed them all: Ovid makes Procne a swallow and Philomela a nightingale, Tereus a hoopoe with crested head. Apollodorus also turns them to birds but swaps which sister becomes which. Hyginus makes Tereus a hawk.",
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Ov. Met. 6.600–674; Apollod. 3.14.8; Hyg. Fab. 45"
+    },
+    {
+      "title": "Daulis and the Daulian birds",
+      "text": "Pausanias localizes the whole horror in Phocis. The Megarians claimed Tereus had ruled around the Springs of Megaris, but the traveler judged from the evidence that he reigned over Daulis beyond Chaeronea. There the women served Tereus his own son at the table — the first pollution of the dining-table among men — and the Daulians said Procne carried Athena's ancient wooden image from Athens to the city's sanctuary. Even as birds, Philomela kept away from Phocis: swallows neither hatch nor lay eggs at Daulis, the Phocians say, because she still feared Tereus in bird-form.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 1.41.8, 10.4.8–9"
+    }
+  ],
+  "cast": [
+    {
+      "id": "tereus",
+      "name": "Tereus",
+      "role": "Thracian king who violated Philomela"
+    },
+    {
+      "id": "procne",
+      "name": "Procne",
+      "role": "Athenian queen who avenged her sister"
+    },
+    {
+      "id": "philomela",
+      "name": "Philomela",
+      "role": "Sister whose woven robe revealed the crime"
+    },
+    {
+      "id": "pandion",
+      "name": "Pandion",
+      "role": "King of Athens who gave Procne to Tereus"
+    },
+    {
+      "id": "itys",
+      "name": "Itys",
+      "role": "Son served to his unwitting father"
+    },
+    {
+      "id": "ares",
+      "name": "Ares",
+      "role": "Father of Tereus"
+    }
+  ],
+  "places": [
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "Home of Pandion's daughters"
+    },
+    {
+      "name": "Daulis",
+      "role": "Phocian city where Pausanias places the table and Tereus' rule",
+      "id": "daulis"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "6.412–674"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.14.8"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "45"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.41.8, 10.4.8–9"
+    }
+  ]
+}

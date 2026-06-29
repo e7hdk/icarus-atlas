@@ -1,0 +1,82 @@
+{
+  "id": "trophonius-at-lebadeia",
+  "title": "Trophonius at Lebadeia",
+  "greekTitle": "Τροφώνιος ἐν Λεβαδείᾳ",
+  "kind": "episode",
+  "parent": null,
+  "era": 6.35,
+  "summary": {
+    "text": "The Minyan builders Trophonius and Agamedes, sons of Erginus of Orchomenus, raised Apollo's temple at Delphi and Hyrieus' treasury before theft and betrayal ended in Agamedes' pit and the earth swallowing Trophonius at Lebadeia — where later Aristomenes the Messenian recovered his shield from the chthonic oracle on the Pythia's command.",
+    "sources": [
+      "pausanias"
+    ],
+    "citation": "Paus. 9.37.4–9.37.7, 4.16.7, 4.32.5–6"
+  },
+  "chapters": [
+    {
+      "title": "The pit of Agamedes",
+      "text": "When Erginus son of Clymenus, childless in old age, asked Delphi about offspring, the Pythia bade him wed anew; Trophonius and Agamedes were born and grew skilled at sacred architecture. They built Apollo's temple at Delphi and Hyrieus' treasury, leaving one stone removable so they could steal while the seals stayed intact. Hyrieus set snares over his gold and silver; Agamedes entered and was held fast, and Trophonius cut off his brother's head lest torture at dawn betray them both. The earth then opened and swallowed Trophonius in the grove at Lebadeia where the pit of Agamedes stands, with a slab beside it — and inquirers of the oracle still sacrifice a ram over the pit and call upon Agamedes before they descend.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 9.37.4–9.37.7, 9.39.6"
+    },
+    {
+      "title": "Aristomenes' shield",
+      "text": "Generations later, when Aristomenes the Messenian had lost his shield in battle, the Pythia bade him go to Delphi and descend into the holy shrine of Trophonius at Lebadeia. He recovered the shield there and dedicated it in the town — Pausanias saw it among the offerings, an eagle with both wings outspread to the rim. Trophonius himself answered in hexameters when the Messenians sought counsel before war: set up a trophy and deck it with his shield, which Aristomenes had placed in the god's temple, and he would destroy the foemen's host.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 4.16.7, 4.32.5–6"
+    }
+  ],
+  "cast": [
+    {
+      "id": "trophonius-orchomenus",
+      "name": "Trophonius",
+      "role": "Builder swallowed by the earth at Lebadeia"
+    },
+    {
+      "id": "agamedes-orchomenus",
+      "name": "Agamedes",
+      "role": "Brother trapped in Hyrieus' snare"
+    },
+    {
+      "id": "erginus-orchomenus",
+      "name": "Erginus",
+      "role": "Minyan king who begot the builder-brothers"
+    },
+    {
+      "name": "Aristomenes",
+      "role": "Messenian hero who recovered his shield from the oracle"
+    },
+    {
+      "name": "Hyrieus",
+      "role": "King whose treasury the brothers built and robbed"
+    }
+  ],
+  "places": [
+    {
+      "id": "lebadeia",
+      "name": "Lebadeia",
+      "role": "Boeotian town of Trophonius' chthonic oracle and Agamedes' pit"
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "role": "Where the brothers raised Apollo's temple and Aristomenes received the oracle"
+    },
+    {
+      "id": "orchomenos-boeotia",
+      "name": "Orchomenos",
+      "role": "Minyan kingdom of Erginus and his builder sons"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.37.4–9.37.7, 9.39.6, 4.16.7, 4.32.5–6"
+    }
+  ]
+}

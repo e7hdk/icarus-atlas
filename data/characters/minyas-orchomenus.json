@@ -1,0 +1,48 @@
+{
+  "id": "minyas-orchomenus",
+  "name": "Minyas",
+  "greekName": "Minyas (Μινύας)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Orchomenus",
+    "the Minyan treasury",
+    "father of Clymene"
+  ],
+  "summary": [
+    {
+      "text": "King of Orchomenus after whom the Minyae were named — in Pausanias' Boeotian reckoning son of Chryses and the first man known to build a treasury for his riches; in Apollonius and Hyginus the ancestor through whose daughters Clymene and the Argonauts claimed the name Minyae.",
+      "sources": ["pausanias", "apollonius", "hyginus"],
+      "citation": "Description of Greece 9.36.4–9.36.6; Argonautica 1.228–233, 3.1077; Fabulae 14.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias traces the Minyan kingdom through Almus and Phlegyas to Chryses, son of Poseidon by Chrysogeneia. When Phlegyas died childless, Chryses took the throne and begot Minyas; after him the people were still called Minyans. Minyas' revenues surpassed his predecessors, and he was the first man Pausanias knows to have built a treasury to hold his wealth — the marvel later travellers ranked beside the pyramids.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.36.4–9.36.5"
+    },
+    {
+      "text": "Minyas had a son Orchomenus, in whose reign the city took its name and the inhabitants were called Orchomenians, though they kept the additional name of Minyans to distinguish them from the Arcadian Orchomenians. Pausanias sets his grave beside that of Hesiod in the land he ruled.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.36.6, 9.38.3"
+    },
+    {
+      "text": "Apollonius gives a rival origin for the name: Minyas son of Aeolus built long ago the city of Orchomenus bordering on the Cadmeians — a genealogy that would make the Minyan stock Aeolid rather than Phlegyantid. The poet also styles Jason and the bravest Argonauts Minyae because they were sprung from the daughters of Minyas, naming Clymene daughter of Minyas as mother of Alcimede and grandmother of Jason.",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.228–233, 3.1077; Fabulae 14.4",
+      "topic": "minyas-genealogy"
+    },
+    {
+      "text": "Ovid sets a King Minyas at Orchomenus in the age of Bacchus, whose daughters Alcithoe, Leucippe, and Arsippe refused the god's orgies and were turned to bats — a Theban-side tale of impiety that shares the royal name but not the treasury-building king of Pausanias' list.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.1–75, 4.564–625"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["pausanias", "apollonius", "hyginus", "ovid"]
+    }
+  ]
+}

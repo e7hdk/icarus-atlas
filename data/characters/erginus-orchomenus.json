@@ -1,0 +1,44 @@
+{
+  "id": "erginus-orchomenus",
+  "name": "Erginus",
+  "greekName": "Erginos (Ἔργινος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of the Minyans",
+    "the Theban tribute",
+    "overthrown by Heracles"
+  ],
+  "summary": [
+    {
+      "text": "Son of Clymenus and last Minyan king to exact tribute from Thebes until Heracles armed the citizens, routed the Orchomenians, and ended the exaction — distinct from Erginus the Milesian Argonaut son of Poseidon.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.4.11; Description of Greece 9.17.2, 9.37.1–9.37.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles was returning from the hunt, heralds sent by Erginus met him to collect the Theban tribute. Apollodorus tells how the young hero heard the story of Clymenus' wounding at Onchestus, armed the Theban youths, met the Minyans at the river Cephisus, and in the rout slew Erginus and many besides, then marched on Orchomenus and tore up the tribute-stone. Creon of Thebes gave him Megara as a prize of valour.",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Bibliotheca 2.4.11; Odyssey 11.269–270; Fabulae 32",
+      "topic": "erginus-fate"
+    },
+    {
+      "text": "Pausanias knows the same war but not the same ending. He says Heracles conquered the Orchomenians and their king Erginus son of Clymenus, and that Pindar dedicated a stone lion of victory and an Apollo Rescuer near the precinct. Erginus, his citizens crushed, made peace with Heracles; in restoring their wealth he neglected all else and came childless to old age, until a Delphic oracle bade him wed anew and beget Trophonius and Agamedes.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.17.2, 9.37.3–9.37.5",
+      "topic": "erginus-fate"
+    },
+    {
+      "text": "Hyginus notes the homonym hazard in the Argonaut list: Erginus son of Neptune from Miletus sailed with Jason, but some make him son of Periclymenus from Orchomenus — a confusion our two stars must keep apart.",
+      "sources": ["hyginus", "apollonius"],
+      "citation": "Fabulae 14.3; Argonautica 1.185"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

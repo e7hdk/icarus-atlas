@@ -1,0 +1,34 @@
+{
+  "id": "phaenops-asiusid",
+  "name": "Phaenops",
+  "greekName": "Phainops (Φαίνοψ)",
+  "type": "hero",
+  "domains": ["Asius' son", "guest-friend of Hector", "Abydus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Asius (`asius-hyrtacid`) and of all Hector's guest-friends the dearest, who had his house at Abydus — whom Apollo assumed in likeness to urge Hector back against Ajax over Patroclus' body; distinct from Phaenops father of Xanthus and Thoön (`phaenops-trojan`) and from Phaenops father of the Phorcys whom Ajax smote in the same book.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.275–315, 17.570–595"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans fought to drag Patroclus toward Ilios, Apollo drew near to Hector in the likeness of Asius' son Phaenops, that of all his guest-friends was dearest to him and had his house at Abydus, and urged him on against the son of Telamon.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.570–595"
+    }
+  ],
+  "residences": [
+    {
+      "city": "abydus-hellespont",
+      "sources": ["homer"],
+      "citation": "Iliad 17.570–595"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 17.570–595"
+    }
+  ]
+}

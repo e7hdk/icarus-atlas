@@ -1,0 +1,47 @@
+{
+  "id": "strophius-phocis",
+  "name": "Strophius",
+  "greekName": "Strophios (Στρόφιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Phocis",
+    "foster-father of Orestes",
+    "father of Pylades"
+  ],
+  "summary": [
+    {
+      "text": "Son of Crisus and king of Phocis who received the infant Orestes from Electra and raised him beside his own son Pylades — the Phocian host whose house joined the Aeacid line to the vengeance of the Atreids.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 6.24; Fabulae 117; Description of Greece 2.29.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Aegisthus and Clytemnestra murdered Agamemnon, Electra smuggled the infant Orestes away and gave him to Strophius the Phocian to bring up. Apollodorus says he reared the boy with Pylades his own son; Hyginus adds that Strophius had married Agamemnon's sister Astyoche, while Pausanias following Asius names his wife Anaxibia, sister of Agamemnon, as Pylades' mother.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 6.24; Fabulae 117; Description of Greece 2.29.4"
+    },
+    {
+      "text": "When Orestes was grown, he returned with Pylades to avenge his father — the pattern Nestor held up to Telemachus in the Odyssey. Strophius' son stood with the avenger through matricide, madness, the Areopagus, and the voyage to Tauris.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 1.280–305, 3.193–200; Epitome 6.24–27; Fabulae 119–120"
+    },
+    {
+      "text": "Homer names another Strophius only as the father of Scamandrius, a mighty hunter whom Menelaus slew at Troy — taught by Artemis to smite all wild things the mountain forest nurtureth. The Phocian king who fostered Orestes and the father of the Trojan hunter must never share one star.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.45–80"
+    }
+  ],
+  "residences": [
+    {
+      "city": "panopeus",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Epitome 6.24; Fabulae 117; Description of Greece 2.29.4"
+    }
+  ]
+}

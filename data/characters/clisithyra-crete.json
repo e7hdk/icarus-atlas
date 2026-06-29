@@ -1,0 +1,40 @@
+{
+  "id": "clisithyra-crete",
+  "name": "Clisithyra",
+  "greekName": "Kleisithyra (Κλεισίθυρα)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Meda",
+    "Crete",
+    "slain in the temple"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Meda wife of Idomeneus, slain with her mother in the temple by Leucus before the Cretan king returned from Troy — the child refuge that did not save either from the usurper's hand.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.10"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Nauplius corrupted the heroes' wives on the Returns, Meda took Leucus as lover on Crete — the Cretan parallel to Clytemnestra and Aegisthus at Mycenae.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.9; Fabulae 116–117"
+    },
+    {
+      "text": "Before Idomeneus landed after Troy, Leucus killed Meda and her daughter Clisithyra, who had fled to a temple for refuge; he detached ten cities from Crete and made himself tyrant over them, driving the victor into exile when he came home.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.10"
+    }
+  ]
+}

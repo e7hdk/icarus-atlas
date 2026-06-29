@@ -17,7 +17,7 @@ export type Vec3 = [number, number, number];
  * ========================================================================= */
 
 /** Bumped when layout semantics change — invalidates baked galaxy-positions.json. */
-export const LAYOUT_VERSION = '7-radial-arm';
+export const LAYOUT_VERSION = '8-parent-radial-gap';
 
 /** Galaxy regions for BACKGROUND sampling (nebula wisps, dust, filler stars).
  *  Bands mirror the realm heights so the haze follows the named stars. */
@@ -117,6 +117,10 @@ export const SPIRAL_TWIST = 0.38;
 
 /** Stars may drift this far from their generation ring during relaxation. */
 export const RADIUS_TOLERANCE = 1.5;
+/** Minimum radial gap enforced between a parent and its child — kept in sync with
+ *  validate-layout chronology check. Cohort patches widen radialTolerance, which
+ *  can otherwise let adjacent-generation kin overlap after relaxation. */
+export const MIN_PARENT_CHILD_RADIAL_GAP = 2.5;
 /** Angular gap between top-level dynasty wedges. */
 const WEDGE_GUTTER = 0.07;
 /** Leaf-peer masses (suitors, sibling broods, co-resident catalogues) form cohort patches. */
@@ -1091,6 +1095,58 @@ export function computePositions(
       }
     }
     if (violations === 0) break;
+  }
+
+  /* ---- parent-child chronology on radius ----
+   * Residence cohorts widen radialTolerance so packed city skies can breathe in
+   * 3-D; that slack can leave a child star inside its parent's outer envelope
+   * (sibling attraction makes the Argos case worse). Nudge child outward first,
+   * then parent inward, always staying inside each star's ring slack. */
+
+  const charactersById = new Map(characters.map((character) => [character.id, character]));
+  const parentEdges = relations
+    .filter((relation) => isChronologicalParentRelation(relation, charactersById))
+    .filter((relation) => state.has(relation.from) && state.has(relation.to))
+    .sort(
+      (a, b) =>
+        (generations.get(a.to) ?? 0) - (generations.get(b.to) ?? 0) ||
+        a.id.localeCompare(b.id),
+    );
+  const radialSlack = (id: string) => {
+    const constraint = bounds.get(id)!;
+    return {
+      min: constraint.ringRadius - Math.min(constraint.radialTolerance, RADIUS_TOLERANCE),
+      max: constraint.ringRadius + constraint.radialTolerance,
+    };
+  };
+  for (let pass = 0; pass < parentEdges.length; pass++) {
+    let changed = false;
+    for (const relation of parentEdges) {
+      const childState = state.get(relation.from)!;
+      const parentState = state.get(relation.to)!;
+      const floor = parentState.radius + MIN_PARENT_CHILD_RADIAL_GAP + 0.01;
+      if (childState.radius >= floor) continue;
+      const childSlack = radialSlack(relation.from);
+      const parentSlack = radialSlack(relation.to);
+      if (floor <= childSlack.max) {
+        childState.radius = floor;
+        changed = true;
+        continue;
+      }
+      const parentCeiling = childState.radius - MIN_PARENT_CHILD_RADIAL_GAP - 0.01;
+      if (parentCeiling >= parentSlack.min) {
+        parentState.radius = parentCeiling;
+        changed = true;
+        continue;
+      }
+      childState.radius = childSlack.max;
+      parentState.radius = Math.max(
+        parentSlack.min,
+        childSlack.max - MIN_PARENT_CHILD_RADIAL_GAP - 0.01,
+      );
+      changed = true;
+    }
+    if (!changed) break;
   }
 
   /* ---- final invariant clamp ----

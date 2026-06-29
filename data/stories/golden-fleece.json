@@ -7,59 +7,126 @@
   "era": 6.95,
   "summary": {
     "text": "Phrixus and Helle, children of Athamas, were saved from sacrifice on a ram whose fleece was all of gold; Helle fell into the sea that bears her name, but Phrixus reached Colchis and hung the hide in the grove of Ares — the lure that would draw the Argo.",
-    "sources": ["apollodorus", "apollonius", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
     "citation": "Apollod. 1.9.1; Apoll. Arg. 2.1140–1145; Hyg. Fab. 3"
   },
   "chapters": [
     {
       "title": "Ino's plot",
       "text": "Athamas of Boeotia had Phrixus and Helle by Nephele, and when he wed Ino she plotted against them: she parched the seed-corn so the earth bore no crop, then bribed the messengers from Delphi to say the dearth would cease only if Phrixus were sacrificed to Zeus. The people forced Athamas to the altar with his son.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 1.9.1",
       "topic": "phrixus-cretheus-parentage"
     },
     {
       "title": "Hyginus' accusation",
       "text": "Hyginus tells the flight differently: Cretheus' wife, moved by Phrixus' beauty and spurned by him, charged the youth before her husband with assault; Cretheus persuaded Athamas to put the boy to death — and so Phrixus was driven not by a failed harvest but by a false accusation in the house of Cretheus.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Hyginus, Astronomica 2.20",
       "topic": "phrixus-cretheus-parentage"
     },
     {
       "title": "The ram of Hermes",
       "text": "Nephele gave her children a ram with a golden fleece, a marvel she had received from Hermes — so Apollodorus and Apollonius, who has Argus tell how Phrixus rode a ram Hermes had made all of gold. Hyginus instead makes the beast a living animal: Poseidon, in love with Theophane, hid her as a ewe and lay with her, and from that union came the golden ram.",
-      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
       "citation": "Apollod. 1.9.1; Apoll. Arg. 2.1140–1145; Hyg. Fab. 3",
       "topic": "ram-golden-ram-parentage"
     },
     {
       "title": "Helle in the strait",
       "text": "The ram bore both children over land and sea toward the east. Helle looked down, grew dizzy, and fell into the narrows between Europe and Asia — the Hellespont, the sea of Helle. Phrixus alone clung on until the beast brought him to the kingdom of Aeetes on the Phasis.",
-      "sources": ["apollodorus", "apollonius"],
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
       "citation": "Apollod. 1.9.1; Apoll. Arg. 1.247"
     },
     {
       "title": "The fleece in the grove",
       "text": "Phrixus sacrificed the ram to Zeus Phyxius and gave its golden hide to Aeetes, who hung it in the grove of Ares and set a sleepless dragon to coil around the oak. There it stayed until Jason came — and Medea's spells let him take what no mortal hand alone could win.",
-      "sources": ["apollodorus", "apollonius"],
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
       "citation": "Apollod. 1.9.1; Apoll. Arg. 2.1168, 4.123–131"
     }
   ],
   "cast": [
-    { "id": "phrixus", "name": "Phrixus", "role": "Rider who reached Colchis" },
-    { "id": "helle", "name": "Helle", "role": "She who fell into the strait" },
-    { "id": "nephele", "name": "Nephele", "role": "Cloud-nymph mother who sent the ram" },
-    { "id": "athamas", "name": "Athamas", "role": "King who would have sacrificed his son" },
-    { "id": "aeetes", "name": "Aeetes", "role": "King who received the fleece" },
-    { "id": "hermes", "name": "Hermes", "role": "Giver of the golden ram in Greek sources" }
+    {
+      "id": "phrixus",
+      "name": "Phrixus",
+      "role": "Rider who reached Colchis"
+    },
+    {
+      "id": "helle",
+      "name": "Helle",
+      "role": "She who fell into the strait"
+    },
+    {
+      "id": "nephele",
+      "name": "Nephele",
+      "role": "Cloud-nymph mother who sent the ram"
+    },
+    {
+      "id": "athamas",
+      "name": "Athamas",
+      "role": "King who would have sacrificed his son"
+    },
+    {
+      "id": "aeetes",
+      "name": "Aeetes",
+      "role": "King who received the fleece"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Giver of the golden ram in Greek sources"
+    }
   ],
   "places": [
-    { "id": "aea-colchis", "name": "Aea", "role": "Where the fleece was hung in Ares' grove" },
-    { "name": "Hellespont", "role": "Strait where Helle fell" }
+    {
+      "id": "colchis",
+      "name": "Colchis",
+      "role": "Eastern kingdom on the Phasis where Phrixus brought the golden ram"
+    },
+    {
+      "id": "aea-colchis",
+      "name": "Aea",
+      "role": "Where the fleece was hung in Ares' grove"
+    },
+    {
+      "name": "Hellespont",
+      "role": "Strait where Helle fell",
+      "featureId": "hellespont"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "1.9.1" },
-    { "source": "apollonius", "work": "Argonautica", "citation": "1.247, 2.1140–1168" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "3" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.9.1"
+    },
+    {
+      "source": "apollonius",
+      "work": "Argonautica",
+      "citation": "1.247, 2.1140–1168"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "3"
+    }
   ]
 }

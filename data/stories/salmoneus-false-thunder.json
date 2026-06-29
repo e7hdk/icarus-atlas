@@ -1,0 +1,107 @@
+{
+  "id": "salmoneus-false-thunder",
+  "title": "Salmoneus and the False Thunder",
+  "greekTitle": "Σαλμωνεὺς καὶ ὁ κεραυνὸς",
+  "kind": "saga",
+  "parent": null,
+  "era": 4.6,
+  "eraEnd": 4.65,
+  "summary": {
+    "text": "Salmoneus the Aeolid king, who dwelt first in Thessaly and afterwards in Elis, took away the sacrifices of Zeus and aped the god's thunder with bronze kettles and torches until a true thunderbolt struck him down — father of Tyro, through whom the impious line reaches Pelias and Neleus.",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "homer"
+    ],
+    "citation": "Apollod. 1.9.7–8; Hyg. Fab. 61; Hom. Od. 11.235–237"
+  },
+  "chapters": [
+    {
+      "title": "The Aeolid line",
+      "text": "Aeolus son of Hellen married Enarete and begat seven sons — Cretheus, Sisyphus, Athamas, Salmoneus, Deion, Magnes, and Perieres — and five daughters. Salmoneus was brother to the craftiest Sisyphus and to Cretheus, who would one day wed Salmoneus' own daughter Tyro; the Thessalian house of Hellen thus branches into the kings who will people Argos, Elis, and the coasts of the Aegean.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.7.3"
+    },
+    {
+      "title": "Elis and the counterfeit",
+      "text": "Salmoneus at first dwelt in Thessaly, but afterwards came to Elis and founded a city. Being arrogant and wishful to put himself on an equality with Zeus, he was punished for his impiety: he said that he was himself Zeus, took away the sacrifices of the god and ordered them offered to himself, dragged dried hides and bronze kettles behind his chariot to counterfeit thunder, and flung lighted torches at the sky and the people for lightning. Hyginus has him riding in a four-horse car, hurling torches to terrify his subjects until the true king of heaven answered.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.7; Fabulae 61, 250"
+    },
+    {
+      "title": "Tyro",
+      "text": "By Alcidice he had a daughter, Tyro — and to Homer that is all his fame among the living generations. In the house of Hades Odysseus questions high-born Tyro first among the noble women: she declared herself the daughter of noble Salmoneus and the wife of Cretheus son of Aeolus, enamoured once of the river Enipeus though Poseidon lay with her in the god's likeness. Through Tyro, Salmoneus is grandfather of Pelias and Neleus, the twin lords of Iolcus and Pylos who will send their sons against Troy.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 11.235–237; Bibliotheca 1.9.8"
+    }
+  ],
+  "cast": [
+    {
+      "id": "salmoneus",
+      "name": "Salmoneus",
+      "role": "Aeolid king blasted for mimicking Zeus"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "God whose thunder the king counterfeited"
+    },
+    {
+      "id": "tyro",
+      "name": "Tyro",
+      "role": "Daughter, mother of Pelias and Neleus"
+    },
+    {
+      "id": "aeolus-hellene",
+      "name": "Aeolus",
+      "role": "Father of the Aeolid house"
+    },
+    {
+      "id": "sisyphus",
+      "name": "Sisyphus",
+      "role": "Brother, craftiest of men"
+    },
+    {
+      "id": "cretheus",
+      "name": "Cretheus",
+      "role": "Brother, later husband of Tyro"
+    }
+  ],
+  "places": [
+    {
+      "name": "Thessaly",
+      "role": "First dwelling of Salmoneus",
+      "id": "larisa"
+    },
+    {
+      "name": "Elis",
+      "role": "Land where he founded a city and played at Zeus",
+      "id": "pisa-elis"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.7.3, 1.9.7–8"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "61, 250"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.235–237"
+    }
+  ]
+}

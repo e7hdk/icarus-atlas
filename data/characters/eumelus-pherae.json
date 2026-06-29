@@ -47,7 +47,18 @@
   "residences": [
     {
       "city": "pherae",
-      "sources": ["homer", "hyginus"]
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.711–715, 2.763–767"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.711–715, 23.288–565; Epitome 5.5"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.711–715"
     }
   ]
 }

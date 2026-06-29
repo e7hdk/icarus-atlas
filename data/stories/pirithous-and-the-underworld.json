@@ -7,57 +7,145 @@
   "era": 6.79,
   "summary": {
     "text": "Theseus and Pirithous swore each to marry a daughter of Zeus — the Athenian hid the child Helen at Aphidnae and went down with his friend to fetch Persephone; Hades bound them on the Chair of Forgetfulness until Heracles raised Theseus alone, while the Dioscuri stormed Aphidnae and led Aethra away captive.",
-    "sources": ["apollodorus", "hyginus", "homer"],
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "homer"
+    ],
     "citation": "Apollod. 3.10.7, Epit. 1.23; Hyg. Fab. 79; Hom. Il. 3.144"
   },
   "chapters": [
     {
       "title": "The oath of the comrades",
       "text": "Theseus and Peirithous, son of Ixion and king of the Lapiths, bound themselves by oath: each would marry a daughter of Zeus. Theseus took Helen, still a child, and carried her off from Sparta; Peirithous would have Persephone herself — a vow that drove them both to the house of Hades.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 3.10.7; Epit. 1.23"
     },
     {
       "title": "Helen at Aphidnae",
       "text": "Theseus hid Helen and her brothers' future prize at Aphidnae in Attica, leaving his mother Aethra to guard the girl. While he and Pirithous descended, Castor and Polydeuces — Helen's divine brothers — marched against the fortress, recovered their sister, and took Aethra captive to serve her in Sparta until the Trojan War.",
-      "sources": ["apollodorus", "homer", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 1.23; Hom. Il. 3.144; Hyg. Fab. 79"
     },
     {
       "title": "The Chair of Forgetfulness",
       "text": "In the underworld Hades welcomed the pair with feigned hospitality and seated them on the Chair of Forgetfulness — or Stone of Unforgetting — from which they could not rise, while coils of serpents held them fast. Pirithous had come to steal the queen of the dead; the lord of the shades kept him bound for ever.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.10.7; Hyg. Fab. 79"
     },
     {
       "title": "Heracles raises Theseus",
       "text": "When Heracles came down for Cerberus on his last labour, he found the trapped comrades and raised Theseus from the chair — though the earth quaked when he tried to free Pirithous, and the Lapith remained in Hades for his impiety. Theseus returned to find Helen gone, Aethra a captive, and Menestheus son of Peteos already seizing the throne of Athens.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 2.5.12, Epit. 1.23–1.24; Hyg. Fab. 79"
     }
   ],
   "cast": [
-    { "id": "theseus", "name": "Theseus", "role": "The comrade who descended and returned" },
-    { "id": "peirithous", "name": "Peirithous", "role": "The Lapith bound for ever below" },
-    { "id": "helen", "name": "Helen", "role": "The child bride hidden at Aphidnae" },
-    { "id": "persephone", "name": "Persephone", "role": "The queen Pirithous sought to steal" },
-    { "id": "hades", "name": "Hades", "role": "Lord of the chair and the serpents" },
-    { "id": "heracles", "name": "Heracles", "role": "He who raised Theseus on the Cerberus quest" },
-    { "id": "cerberus", "name": "Cerberus", "role": "The hound Heracles came to fetch" },
-    { "id": "castor", "name": "Castor", "role": "Helen's brother who stormed Aphidnae" },
-    { "id": "polydeuces", "name": "Polydeuces", "role": "Helen's brother who stormed Aphidnae" },
-    { "id": "aethra", "name": "Aethra", "role": "Guardian of Helen, taken captive to Sparta" },
-    { "id": "menestheus", "name": "Menestheus", "role": "He who seized Athens in the hero's absence" }
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "The comrade who descended and returned"
+    },
+    {
+      "id": "peirithous",
+      "name": "Peirithous",
+      "role": "The Lapith bound for ever below"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "The child bride hidden at Aphidnae"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "role": "The queen Pirithous sought to steal"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "role": "Lord of the chair and the serpents"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "He who raised Theseus on the Cerberus quest"
+    },
+    {
+      "id": "cerberus",
+      "name": "Cerberus",
+      "role": "The hound Heracles came to fetch"
+    },
+    {
+      "id": "castor",
+      "name": "Castor",
+      "role": "Helen's brother who stormed Aphidnae"
+    },
+    {
+      "id": "polydeuces",
+      "name": "Polydeuces",
+      "role": "Helen's brother who stormed Aphidnae"
+    },
+    {
+      "id": "aethra",
+      "name": "Aethra",
+      "role": "Guardian of Helen, taken captive to Sparta"
+    },
+    {
+      "id": "menestheus",
+      "name": "Menestheus",
+      "role": "He who seized Athens in the hero's absence"
+    }
   ],
   "places": [
-    { "id": "athens", "name": "Athens", "role": "Kingdom left empty by the descent" },
-    { "id": "sparta", "name": "Sparta", "role": "Whence Helen was carried off" },
-    { "name": "Aphidnae", "role": "Attic fortress where Helen was hidden" },
-    { "name": "Taenarum", "role": "Gate of the descent to Hades" }
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "Kingdom left empty by the descent"
+    },
+    {
+      "id": "sparta",
+      "name": "Sparta",
+      "role": "Whence Helen was carried off"
+    },
+    {
+      "name": "Aphidnae",
+      "role": "Attic fortress where Helen was hidden",
+      "id": "aphidnae"
+    },
+    {
+      "name": "Taenarum",
+      "role": "Gate of the descent to Hades",
+      "id": "taenarus"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "2.5.12, 3.10.7, Epitome 1.23–1.24" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "79" },
-    { "source": "homer", "work": "Iliad", "citation": "3.144" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.5.12, 3.10.7, Epitome 1.23–1.24"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "79"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "3.144"
+    }
   ]
 }

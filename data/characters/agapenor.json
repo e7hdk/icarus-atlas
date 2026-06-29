@@ -83,5 +83,32 @@
       ],
       "citation": "Apollodorus, Epitome 6.15"
     }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.12; Fabulae 81"
+    },
+    {
+      "city": "tegea",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 2.603–614; Description of Greece 8.5.2"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.603–614; Epitome 3.12"
+    },
+    {
+      "city": "salamis-cyprus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.15; Description of Greece 8.5.2"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.12; Iliad 2.603–614"
+    }
   ]
 }

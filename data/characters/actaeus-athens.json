@@ -1,0 +1,60 @@
+{
+  "id": "actaeus-athens",
+  "name": "Actaeus",
+  "greekName": "Aktaios (Ἀκταῖος)",
+  "romanName": "Actaeus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the kingship of Attica",
+    "Actaea before Cecropia",
+    "Pausanias' first Athenian king"
+  ],
+  "summary": [
+    {
+      "text": "The first king of what is now Attica in Pausanias' royal roll — ruler of the land then called Actaea, whose throne passed to Cecrops as his son-in-law when he died, a reign that vanishes when Apollodorus and Hyginus begin instead with the earth-born Cecrops.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.6"
+    },
+    {
+      "text": "Apollodorus knows him only as the father of Agraulus, whom Cecrops married — the earlier throne preserved in genealogy even where the Bibliotheca makes Cecrops the first king and names the country Cecropia after himself.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias opens the Attic succession with Actaeus. He was the first to reign over what is now Attica; when he died, Cecrops received the kingdom as the son-in-law of Actaeus, and to Cecrops were born Herse, Aglaurus, and Pandrosus, and a son Erysichthon who did not succeed. So in this telling Attica had a throne before its first autochthon, and the land's old name Actaea — from which Cranaus' daughter Atthis would later give Attica its name — belonged to Actaeus' age.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.6"
+    },
+    {
+      "text": "Apollodorus sets Cecrops at the head of the list as a son of the soil who renamed Acte Cecropia, yet still records that Cecrops married Agraulus, daughter of Actaeus. The marriage ties the autochthonous founder to an older royal house even where the Bibliotheca does not count Actaeus among the kings.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.1-2"
+    },
+    {
+      "text": "Amphictyon won the kingdom long after this first pair. Pausanias tells how he rose against Cranaus, his kinsman by marriage and king of Athens, and banished him — in a succession that had begun with Actaeus and run through Cecrops and Cranaus before Amphictyon took the throne.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.2.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "pausanias"
+      ]
+    }
+  ]
+}

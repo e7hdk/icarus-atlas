@@ -1,0 +1,34 @@
+{
+  "id": "pallas-giant",
+  "name": "Pallas (Gigantes)",
+  "greekName": "Pallas (Πάλλας)",
+  "romanName": "Pallas",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "flayed for Athena's aegis",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Athena flayed in the Gigantomachy and whose skin she used to shield her own body in the fight.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Pallas among the Giants destroyed when Heracles fought at the gods' side: Athena flayed Pallas and used his skin to shield her own body in the fight. The collective node `gigantes` holds the earthborn revolt; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Pallas distinct from the Titan `pallas`, son of Crius and Eurybia, and from `pallas-pandionid`, the son of Pandion.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2; Bibliotheca 1.2.2"
+    }
+  ]
+}

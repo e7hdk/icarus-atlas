@@ -1,0 +1,44 @@
+{
+  "id": "eurypylus-euaemonid",
+  "name": "Eurypylus",
+  "greekName": "Eurypylos (Εὐρύπυλος)",
+  "type": "hero",
+  "domains": ["Ormenian command", "son of Euaemon", "the forty ships"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Glorious son of Euaemon, captain of the men who held Ormenius, Hypereia, Asterium, and the white crests of Titanus — forty black ships in the Catalogue of Ships, and one of the foremost Achaean champions until an arrow struck him in the thigh.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.735–775; Epitome 3.14; Fabulae 81"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nestor's muster-roll sets Eurypylus son of Euaemon over the Ormenians beside the fountain Hypereia and Asterium with the white crests of Titanus; forty black ships followed the glorious captain — a namesake of the Dulichian suitor, the Coan king, and the Mysian son of Telephus, but Homer fixes this man among the Thessalian lords who sailed to Ilios.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.735–775; Epitome 3.14"
+    },
+    {
+      "text": "On the plain he stood among the champions who would face Hector in single combat, and in the assault on the wall he fought beside the Aiantes and Idomeneus. He slew Hypsenor priest of Scamander with his sword and laid Melanthius low; when the tide turned against the Danaans, an arrow pierced his thigh and Nestor bore him to the ships, where Patroclus tended his grievous wound amid the huts.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.45–80, 6.1–35, 7.135–170, 8.245–290, 11.575–844, 12.1–30, 15.380–400"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ormenion-magnesia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.735–775; Epitome 3.14"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775, 5.45–80, 11.575–844"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
+  ]
+}

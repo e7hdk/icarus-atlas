@@ -1,0 +1,33 @@
+{
+  "id": "iphianassa-elean",
+  "name": "Iphianassa",
+  "greekName": "Iphianassā (Ἰφιάνασσα)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Elean consort of Endymion",
+    "mother of Aetolus",
+    "not Agamemnon's daughter"
+  ],
+  "summary": [
+    {
+      "text": "In one Apollodorean reckoning, the woman by whom Endymion begat Aetolus — rival to an unnamed Naiad nymph and to the mortal wives Pausanias names for the sleeper-king of Elis.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Endymion had by a Naiad nymph — or, as some say, by Iphianassa — a son Aetolus. This Iphianassa must not be merged with Homer's Iphianassa, daughter of Agamemnon offered to Achilles among the wooing gifts, nor with the mad daughter of Proetus in Acusilaus' and Hesiod's accounts. The atlas disambiguates her as `iphianassa-elean`, the Elean mother of the Aetolian eponym.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.6",
+      "topic": "endymion-children"
+    },
+    {
+      "text": "Pausanias does not name Iphianassa among Endymion's wives, preferring mortal consorts Asterodia, Cromia, or Hyperippe daughter of Arcas — yet all agree that Endymion begat Paeon, Epeius, Aetolus, and Eurycyda. The Elean stem thus forks on whether Aetolus' mother was a named princess, an unnamed spring-nymph, or one of Pausanias' mortal queens.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.7.6; Description of Greece 5.1.4",
+      "topic": "endymion-children"
+    }
+  ]
+}

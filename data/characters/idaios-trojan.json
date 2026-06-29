@@ -1,0 +1,42 @@
+{
+  "id": "idaios-trojan",
+  "name": "Idaios",
+  "greekName": "Idaios (Ἰδαῖος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Trojan herald",
+    "Priam's charioteer",
+    "herald of the truce"
+  ],
+  "summary": [
+    {
+      "text": "Wise-hearted herald of Troy who bore the golden cup at the oaths before battle, held the staves between Hector and Ajax in single combat, and drove Priam's mule-car to Achilles' hut when the old king came for Hector's body — distinct from Idaeus son of Dares, slain by Diomedes in Book 5.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.248–260, 7.245–280, 24.300–335"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hector proposed that Paris and Menelaus settle the war by single combat, herald Idaeus bore a shining bowl and golden cups and roused Priam son of Laomedon to lead the chieftains of Troy and the brazen-coated Achaeans down to the plain for the oaths of the gods.",
+      "sources": ["homer"],
+      "citation": "Iliad 3.248–260"
+    },
+    {
+      "text": "After Hector and Ajax fought to a draw, Talthybius and Idaeus, messengers of Zeus and men, held forth their staves between the champions; Idaeus, skilled in prudent counsel, declared that night had parted them and bade both be honoured with gifts.",
+      "sources": ["homer"],
+      "citation": "Iliad 7.245–310"
+    },
+    {
+      "text": "When Priam set out through the night for the Achaean camp, wise-hearted Idaeus drove the mule-car loaded with ransom while the old king himself drove the horses behind — the herald who brought the king safely to Achilles' hut and back with Hector's body.",
+      "sources": ["homer"],
+      "citation": "Iliad 24.300–335, 24.400–440"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
+  ]
+}

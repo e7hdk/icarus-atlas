@@ -66,7 +66,8 @@
         "apollodorus",
         "homer",
         "hyginus"
-      ]
+      ],
+      "citation": "Odyssey 11.421–423; Epitome 6.23; Fabulae 117"
     },
     {
       "city": "troy",
@@ -74,7 +75,25 @@
         "homer",
         "apollodorus",
         "hyginus"
-      ]
+      ],
+      "citation": "Iliad 13.365–376, 24.699–706; Epitome 5.17, 5.22–23; Fabulae 93, 108"
+    },
+    {
+      "city": "delphi",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 10.26.3, 10.31.1"
+    },
+    {
+      "city": "amyclae",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.6, 3.26.5"
+    },
+    {
+      "city": "leuctra-laconia",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.6"
     }
   ]
 }

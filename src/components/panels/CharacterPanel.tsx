@@ -7,6 +7,9 @@ import { TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { bondsFor } from '@/features/characters/relations';
+import { getBakedLinkedProse, getCharacterStorySegments, resolveCharacterProseSegments } from '@/features/linking/load-baked';
+import { buildLinkingContext } from '@/features/linking/name-index';
+import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
 import { useIsMobile } from '@/lib/useIsMobile';
@@ -46,12 +49,25 @@ export function CharacterPanel({
   }
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
+  const bakedProse = useMemo(() => getBakedLinkedProse(), []);
+  const linkingContext = useMemo(
+    () => (bakedProse ? null : buildLinkingContext(characters)),
+    [characters, bakedProse],
+  );
   const sourceName = useMemo(
     () => new Map<SourceId, string>(sources.map((s) => [s.id, s.name])),
     [sources],
   );
 
   const character = selectedId ? byId.get(selectedId) : undefined;
+  const scopeIds = useMemo(() => {
+    if (!character) return [];
+    const ids = new Set<string>([character.id]);
+    for (const bond of bondsFor(character.id, filterRelations(relations, lens))) {
+      ids.add(bond.otherId);
+    }
+    return [...ids];
+  }, [character, relations, lens]);
 
   useEffect(() => {
     if (selectedId) panelRef.current?.scrollTo({ top: 0, behavior: 'instant' });
@@ -116,7 +132,16 @@ export function CharacterPanel({
           </div>
           {summary && (
             <p className="mt-2 line-clamp-2 font-body text-[14px] leading-snug text-aether/85">
-              {summary.text}
+              <LinkedProse
+                text={summary.text}
+                segments={
+                  bakedProse ? resolveCharacterProseSegments(bakedProse, character, summary.text) : undefined
+                }
+                characterIndex={linkingContext?.characterIndex}
+                nameIndex={linkingContext?.nameIndex}
+                sortedNames={linkingContext?.sortedNames}
+                scopeIds={scopeIds}
+              />
             </p>
           )}
           <button
@@ -194,19 +219,35 @@ export function CharacterPanel({
         )}
 
         <div className="mt-6 space-y-5">
-          {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => (
+          {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => {
+            const originalIndex = character.story.findIndex((p) => p.text === paragraph.text);
+            const segments =
+              bakedProse && originalIndex >= 0
+                ? getCharacterStorySegments(bakedProse, character.id, originalIndex)
+                : undefined;
+            return (
             <div key={index}>
               {lens === 'consensus' && paragraph.topic && (
                 <div className="mb-1 inline-block rounded-full border border-nebula-soft/40 bg-nebula-violet/15 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
                   Disputed tradition
                 </div>
               )}
-              <p className="font-body text-[16px] leading-relaxed text-aether/90">{paragraph.text}</p>
+              <p className="font-body text-[16px] leading-relaxed text-aether/90">
+                <LinkedProse
+                  text={paragraph.text}
+                  segments={segments}
+                  characterIndex={linkingContext?.characterIndex}
+                  nameIndex={linkingContext?.nameIndex}
+                  sortedNames={linkingContext?.sortedNames}
+                  scopeIds={scopeIds}
+                />
+              </p>
               <p className="mt-1 font-body text-[13px] italic text-aether-faint">
                 — {citeOf(paragraph.sources, paragraph.citation)}
               </p>
             </div>
-          ))}
+            );
+          })}
           {story.length === 0 && (
             <p className="rounded-xl border border-glass-border bg-glass px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
               No surviving account for this figure is included under the active source lens.

@@ -12,10 +12,17 @@ attribute vec3 aColor;
 attribute float aAlpha;
 varying vec3 vColor;
 varying float vAlpha;
+#ifdef USE_FOG
+  varying float vFogDepth;
+#endif
 void main() {
   vColor = aColor;
   vAlpha = aAlpha;
-  gl_Position = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+  vec4 mvPosition = modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+  gl_Position = projectionMatrix * mvPosition;
+  #ifdef USE_FOG
+    vFogDepth = -mvPosition.z;
+  #endif
 }
 `;
 
@@ -23,8 +30,18 @@ export const CORE_FRAG = /* glsl */ `
 precision highp float;
 varying vec3 vColor;
 varying float vAlpha;
+#ifdef USE_FOG
+  uniform vec3 fogColor;
+  uniform float fogDensity;
+  varying float vFogDepth;
+#endif
 void main() {
   gl_FragColor = vec4(vColor, vAlpha);
+  #ifdef USE_FOG
+    float fogFactor = clamp(1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth), 0.0, 1.0);
+    gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
+    gl_FragColor.a *= (1.0 - 0.85 * fogFactor);
+  #endif
 }
 `;
 
@@ -39,11 +56,17 @@ attribute float aOpacity;
 varying vec3 vColor;
 varying float vOpacity;
 varying vec2 vUv;
+#ifdef USE_FOG
+  varying float vFogDepth;
+#endif
 void main() {
   vColor = aColor;
   vOpacity = aOpacity;
   vUv = uv;
   vec4 mv = modelViewMatrix * instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0);
+  #ifdef USE_FOG
+    vFogDepth = -mv.z;
+  #endif
   mv.xy += position.xy * aScale;
   gl_Position = projectionMatrix * mv;
 }
@@ -55,8 +78,18 @@ uniform sampler2D uMap;
 varying vec3 vColor;
 varying float vOpacity;
 varying vec2 vUv;
+#ifdef USE_FOG
+  uniform float fogDensity;
+  varying float vFogDepth;
+#endif
 void main() {
   float a = texture2D(uMap, vUv).a;
-  gl_FragColor = vec4(vColor, a * vOpacity);
+  float op = vOpacity;
+  #ifdef USE_FOG
+    // Additive glow: a distant star simply ADDS less light, so it fades into the dark.
+    float fogFactor = clamp(1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth), 0.0, 1.0);
+    op *= (1.0 - fogFactor);
+  #endif
+  gl_FragColor = vec4(vColor, a * op);
 }
 `;

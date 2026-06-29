@@ -39,8 +39,39 @@
   ],
   "residences": [
     {
+      "city": "pisa-elis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.10; Description of Greece 5.8.2"
+    },
+    {
       "city": "mycenae",
-      "sources": ["homer", "apollodorus", "pausanias"]
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.104–108, 9.141–161; Odyssey 3.303–310, 11.404–434; Epitome 6.23; Description of Greece 2.16.6–7"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.104–108, 9.141–161; Epitome 3.12–16"
+    },
+    {
+      "city": "sicyon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.15"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.21, 3.29; Iliad 2.559–580"
+    },
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.17"
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 2.16, 3.12; Fabulae 78; Description of Greece 3.20.9"
     }
   ]
 }

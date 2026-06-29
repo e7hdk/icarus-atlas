@@ -1,0 +1,66 @@
+{
+  "id": "iasus-argive",
+  "name": "Iasus",
+  "greekName": "Iasos (Ἴασος)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "father of Io"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Argos, son of Triopas in Pausanias' native succession and father of Io; Apollodorus instead makes him son of Argus and Ismene, while Castor and the tragedians name Inachus as Io's father.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.3; Description of Greece 2.16.1",
+      "topic": "io-paternity"
+    },
+    {
+      "text": "Not Iasus the Athenian captain slain by Aeneas at the ships, nor Iasus of Arcadia who exposed Atalanta, nor other homonymous Iasus figures in the genealogies.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 15.315–340; Bibliotheca 3.9.2, 2.1.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Argus and Ismene, daughter of Asopus, had a son Iasus who is said to have been the father of Io — but the annalist Castor and many of the tragedians allege that Io was a daughter of Inachus, and Hesiod and Acusilaus say she was a daughter of Piren.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.3",
+      "topic": "io-paternity"
+    },
+    {
+      "text": "Pausanias' Argive king-list makes Iasus son of Triopas and father of Io, who went to Egypt — whether the circumstances be as Herodotus records or as the Greeks say. After Iasus, Crotopus son of Agenor succeeded before Danaus returned from Egypt.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1",
+      "topic": "io-paternity"
+    },
+    {
+      "text": "The lineage note preserved at Argos adds that Iasus was father of Io, whom Hera's jealousy drove from the land — and of the twin kings who would divide the kingdom after the age of Danaus.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.3–2.1.4; Description of Greece 2.16.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.3; Description of Greece 2.16.1"
+    }
+  ]
+}

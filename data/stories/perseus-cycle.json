@@ -47,7 +47,7 @@
     { "id": "argos", "name": "Argos", "role": "Kingdom of Acrisius and Danae" },
     { "id": "mycenae", "name": "Mycenae", "role": "The fortress he founded" },
     { "id": "larisa", "name": "Larisa", "role": "Where the discus fulfilled the oracle" },
-    { "name": "Ethiopia", "role": "Where Andromeda was chained to the rock" }
+    { "id": "aethiopia", "name": "Aethiopia", "role": "Where Andromeda was chained to the rock" }
   ],
   "attestations": [
     { "source": "apollodorus", "work": "The Library", "citation": "2.4.1–4" },

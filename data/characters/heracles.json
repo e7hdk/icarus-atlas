@@ -127,20 +127,31 @@
       "sources": [
         "homer",
         "apollodorus"
-      ]
+      ],
+      "citation": "Iliad 19.95–99; Bibliotheca 2.4.8–12"
+    },
+    {
+      "city": "orchomenos-boeotia",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.11; Description of Greece 9.17.2"
     },
     {
       "city": "mycenae",
       "sources": [
         "apollodorus",
         "homer"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.12, 2.5.1; Iliad 19.95–133"
     },
     {
       "city": "tiryns",
       "sources": [
         "apollodorus"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.12, 2.5.1"
     },
     {
       "city": "kos",
@@ -173,6 +184,24 @@
       ]
     },
     {
+      "city": "chios",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.19; Argonautica 1.1207–1354; Fabulae 14"
+    },
+    {
+      "city": "lemnos",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–910; Fabulae 15"
+    },
+    {
       "city": "tenos",
       "sources": [
         "apollodorus",
@@ -197,6 +226,79 @@
       "sources": [
         "apollodorus"
       ]
+    },
+    {
+      "city": "phlius",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.13.8"
+    },
+    {
+      "city": "gortyn",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.7"
+    },
+    {
+      "city": "troy",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 5.640–651; Bibliotheca 2.6.4"
+    },
+    {
+      "city": "nemea",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.1"
+    },
+    {
+      "city": "lerna",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.2"
+    },
+    {
+      "city": "stymphalus",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.6"
+    },
+    {
+      "city": "pholoe",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.4"
+    },
+    {
+      "city": "pisa-elis",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.5.5; Description of Greece 5.3.3"
+    },
+    {
+      "city": "abdera-thrace",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.5.8"
+    },
+    {
+      "city": "tegea",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.7.4; Description of Greece 8.4.9"
     }
   ]
 }

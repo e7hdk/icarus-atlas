@@ -1,0 +1,64 @@
+{
+  "id": "psamathe-crotopid",
+  "name": "Psamathe",
+  "greekName": "Psamathē (Ψαμάθη)",
+  "romanName": "Psamathe",
+  "type": "mortal",
+  "domains": [
+    "daughter of Crotopus",
+    "mother of Linus",
+    "the exposed birth",
+    "Apollo's vengeance on Argos"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Crotopus king of Argos; she bore Apollo a son and, in terror of her father, exposed the infant — whose death by Crotopus' sheepdogs brought Vengeance and plague upon the Argives.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.43.7, 2.19.8"
+    },
+    {
+      "text": "Not Psamathe the Nereid, daughter of Nereus and mother of Phocus by Aeacus — a sea-goddess of an entirely different house.",
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Theogony 240–264, 1003–1005; Bibliotheca 1.2.7, 3.12.6; Description of Greece 1.43.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the reign of Crotopus at Argos, Psamathe his daughter bore a son to Apollo. Being in dire terror of her father, she exposed the child; he was found and destroyed by the sheepdogs of Crotopus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.43.7"
+    },
+    {
+      "text": "Apollo sent Vengeance against the city to punish the Argives. They say she used to snatch children from their mothers until Coroebus, to please the Argives, slew Vengeance — whereat plague fell upon the city as a second punishment, until the Pythia ordered Coroebus to carry a tripod from the sanctuary and dwell where it fell from his hands.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.43.7, 1.43.8"
+    },
+    {
+      "text": "Pausanias saw at Argos the grave of Linus, son of Apollo by Psamathe the daughter of Crotopus — the same story he had already told beside the grave of Coroebus at Megara.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.19.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.43.7, 2.19.8"
+    }
+  ]
+}

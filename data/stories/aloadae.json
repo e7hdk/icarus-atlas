@@ -1,0 +1,140 @@
+{
+  "id": "aloadae",
+  "title": "Otus and Ephialtes",
+  "greekTitle": "Ὦτος καὶ Ἐφιάλτης",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 3.5,
+  "summary": {
+    "text": "The Aloadae — Otus and Ephialtes, twin sons of Poseidon and Iphimedeia — grew every year a cubit in breadth and a fathom in height until at nine years old they piled Ossa on Olympus and Pelion on Ossa to storm heaven, made war on the gods, and bound Ares in a brazen jar, until Apollo and Artemis destroyed them before their beards had grown.",
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hyginus"
+    ],
+    "citation": "Apollod. 1.7.4; Hom. Od. 11.305–320, Il. 5.385–391; Hyg. Fab. 28"
+  },
+  "chapters": [
+    {
+      "title": "Sons of Poseidon",
+      "text": "Aloeus wedded Iphimedia daughter of Triops, but she loved Poseidon and would go down to the sea and draw up the waves with her hands and pour them into her lap. The god met her and begat two sons, Otus and Ephialtes, who are called the Aloads. Each year they grew a cubit in breadth and a fathom in height.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. 1.7.4"
+    },
+    {
+      "title": "Mountains on mountains",
+      "text": "At nine years old they were nine cubits broad and nine fathoms high — the tallest and comeliest of men after Orion, Homer says — and they threatened to raise the din of furious war against the immortals on Olympus. They were fain to set Ossa upon Olympus, and Pelion with its waving forests upon Ossa, that heaven itself might be scaled; and they would have accomplished it had they reached the full measure of their youth. Hyginus reckons they grew nine inches every month and at nine years tried to climb into heaven by the same device.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 11.305–316; Apollod. 1.7.4; Hyg. Fab. 28"
+    },
+    {
+      "title": "War on the gods",
+      "text": "Insolent in their strength, the brothers boasted they would dam the sea with the hills and turn the dry land to sea. Otus wooed Artemis and Ephialtes wooed Hera — and they overpowered Ares and bound the war-god fast in a brazen jar, where he lay for thirteen months until Hermes stole him away on word from their stepmother Eëriboea. So even the dwellers on Olympus suffered at mortal hands, as Dione tells when she comforts the wounded Aphrodite.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Apollod. 1.7.4; Hom. Il. 5.385–391"
+    },
+    {
+      "title": "The deer between them",
+      "text": "Apollodorus gives their end through Artemis' cunning: the goddess changed herself into a deer and leapt between the brothers on Naxos, and as each hurled his javelin to strike the quarry they pierced and killed one another. Homer says the son of Zeus whom fair-haired Leto bore destroyed them both before the down had blossomed beneath their temples — and Hyginus preserves both that Apollo discovered and killed them and that Diana sent the deer between them in their rage.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Apollod. 1.7.4; Hom. Od. 11.317–320; Hyg. Fab. 28"
+    },
+    {
+      "title": "Shades in the Nekuia",
+      "text": "Among the heroines Odysseus questions in the house of Hades is Iphimedeia, wife of Aloeus, who declares she lay with Poseidon and bore two sons short of life — godlike Otus and far-famed Ephialtes — whom the grain-giving earth reared tallest after Orion, and whom Leto's son destroyed before they could bring their mountain-assault to completion.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Hom. Od. 11.305–320"
+    }
+  ],
+  "cast": [
+    {
+      "id": "otus",
+      "name": "Otus",
+      "role": "Aload who wooed Artemis and bound Ares"
+    },
+    {
+      "id": "ephialtes-aload",
+      "name": "Ephialtes",
+      "role": "Twin who wooed Hera and piled Pelion on Ossa"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "True father of the towering twins"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Father of Apollo, who ended the assault on heaven"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Son of Leto who destroyed them before manhood"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Goddess who lured them to mutual slaughter"
+    },
+    {
+      "id": "iphimedeia",
+      "name": "Iphimedeia",
+      "role": "Wife of Aloeus who bore Poseidon's sons"
+    },
+    {
+      "id": "ares",
+      "name": "Ares",
+      "role": "War-god imprisoned in the brazen jar"
+    }
+  ],
+  "places": [
+    {
+      "name": "Olympus",
+      "role": "Target of the piled mountains",
+      "featureId": "mount-olympus"
+    },
+    {
+      "name": "Naxos",
+      "role": "Where Artemis sent the deer between the brothers",
+      "id": "naxos"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.7.4"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.305–320"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "5.385–391"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "28"
+    }
+  ]
+}

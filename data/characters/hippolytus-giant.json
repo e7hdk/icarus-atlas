@@ -1,0 +1,33 @@
+{
+  "id": "hippolytus-giant",
+  "name": "Hippolytus (Gigantes)",
+  "greekName": "Hippolytos (Ἱππόλυτος)",
+  "romanName": "Hippolytus",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Hermes slew in the Gigantomachy, wearing the helmet of Hades.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Hippolytus among the Giants destroyed when the gods fought with Heracles' aid: Hermes, wearing the helmet of Hades, slew Hippolytus in the fight. The collective node `gigantes` holds the earthborn revolt; this node is the individual in Apollodorus' battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Hippolytus distinct from `hippolytus`, the son of Theseus whom Artemis rescued and whom Poseidon destroyed with a sea-bull.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2; Epitome 1.18–19"
+    }
+  ]
+}

@@ -66,19 +66,27 @@
     },
     {
       "city": "aea-colchis",
-      "sources": ["apollodorus", "apollonius"]
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.22–23; Argonautica 3.210–4.140"
     },
     {
       "city": "lemnos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.17"
     },
     {
       "city": "corcyra",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.25"
     },
     {
       "city": "corinth",
       "sources": ["apollodorus"]
+    },
+    {
+      "city": "aeaea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.24"
     }
   ]
 }

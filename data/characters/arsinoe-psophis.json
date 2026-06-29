@@ -1,0 +1,48 @@
+{
+  "id": "arsinoe-psophis",
+  "name": "Arsinoe",
+  "greekName": "Arsinoē (Ἀρσινόη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Psophis",
+    "the cursed necklace",
+    "Alcmaeon's first wife"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Phegeus king of Psophis and first wife of Alcmaeon, who received the golden necklace and robe of Harmonia — not to be confused with Arsinoe daughter of Leucippus, the Messenian mother of Asclepius in the rival tradition.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Alcmaeon, maddened by his mother's murder, came to Phegeus at Psophis and was purified, Apollodorus says he married Arsinoe daughter of the king and gave her the necklace and the robe that had twice destroyed his house — first when Eriphyle sold Amphiaraus to death, then when she sent her son to the Epigoni.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5"
+    },
+    {
+      "text": "The land grew barren on Alcmaeon's account, and Apollo sent him to Achelous for a second trial; he left Arsinoe and the cursed gifts behind, took Callirrhoe daughter of the river to wife, and later returned to claim the necklace and robe for his new bride. When Phegeus' sons learned he was carrying the heirlooms to Callirrhoe, they killed Alcmaeon; they clapped Arsinoe into a chest and sold her to Agapenor at Tegea, falsely accusing her of the murder.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "text": "Hyginus counts Phegeus among those who killed their sons-in-law — the Psophidian king who purified Alcmaeon and then destroyed him over the necklace Alcmaeon had first bestowed on Arsinoe.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 245"
+    }
+  ],
+  "residences": [
+    {
+      "city": "psophis",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5"
+    },
+    {
+      "city": "tegea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    }
+  ]
+}

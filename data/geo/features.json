@@ -5229,6 +5229,9 @@
     "sources": [
       "apollodorus",
       "pausanias"
+    ],
+    "storyIds": [
+      "orpheus-songs"
     ]
   },
   {
@@ -10096,6 +10099,9 @@
       "homer",
       "hesiod",
       "apollodorus"
+    ],
+    "storyIds": [
+      "alcmaeon-wanderings"
     ]
   },
   {
@@ -24259,11 +24265,20 @@
       "pausanias"
     ],
     "storyIds": [
+      "aloadae",
+      "birth-of-ares",
+      "birth-of-athena",
+      "birth-of-hephaestus",
+      "birth-of-hermes",
+      "cyparissus-cypress",
+      "ganymede",
       "metamorphoses",
-      "orpheus-eurydice",
-      "orpheus-songs",
+      "orpheus-cycle",
       "orpheus-death",
-      "cyparissus-cypress"
+      "orpheus-eurydice",
+      "orpheus-on-the-argo",
+      "orpheus-songs",
+      "the-swallowed-siblings"
     ]
   },
   {
@@ -24323,8 +24338,11 @@
     ],
     "storyIds": [
       "cosmogony",
-      "titanomachy",
-      "great-flood"
+      "daphne-laurel",
+      "great-flood",
+      "the-beggar-king",
+      "the-swallowed-siblings",
+      "titanomachy"
     ],
     "sources": [
       "homer",
@@ -24391,6 +24409,11 @@
       "homer",
       "apollodorus",
       "pausanias"
+    ],
+    "storyIds": [
+      "little-iliad",
+      "marsyas-apollo",
+      "orpheus-songs"
     ]
   },
   {
@@ -25922,6 +25945,9 @@
       "homer",
       "pausanias",
       "apollodorus"
+    ],
+    "storyIds": [
+      "narcissus-echo"
     ]
   },
   {
@@ -28963,6 +28989,9 @@
       "hesiod",
       "apollodorus",
       "apollonius"
+    ],
+    "storyIds": [
+      "lycurgus-of-thrace"
     ]
   },
   {
@@ -29026,9 +29055,12 @@
       "pausanias"
     ],
     "storyIds": [
-      "metamorphoses",
       "actaeon-artemis",
-      "narcissus-echo"
+      "aristaeus-cycle",
+      "metamorphoses",
+      "narcissus-echo",
+      "oedipus-at-thebes",
+      "pentheus-and-dionysus"
     ]
   },
   {
@@ -50621,9 +50653,11 @@
       "pausanias"
     ],
     "storyIds": [
+      "argonautica",
+      "aristaeus-cycle",
+      "caenis-caeneus",
       "lapith-centaur-war",
-      "muster-of-the-argo",
-      "argonautica"
+      "muster-of-the-argo"
     ]
   },
   {
@@ -50736,6 +50770,11 @@
       "apollodorus",
       "pausanias",
       "ovid"
+    ],
+    "storyIds": [
+      "death-of-heracles",
+      "deianira-at-the-feast",
+      "philoctetes-on-lemnos"
     ]
   },
   {
@@ -50953,6 +50992,10 @@
       "hesiod",
       "homer",
       "apollodorus"
+    ],
+    "storyIds": [
+      "perseus-at-the-feast",
+      "the-gorgon-medusa"
     ]
   },
   {
@@ -52257,6 +52300,11 @@
       "homer",
       "pausanias",
       "apollodorus"
+    ],
+    "storyIds": [
+      "ajax-and-the-arms",
+      "memnon",
+      "nekuia"
     ]
   },
   {
@@ -53879,6 +53927,2093 @@
     "sources": [
       "homer",
       "pausanias"
+    ]
+  },
+  {
+    "id": "mount-dicte",
+    "name": "Dicte",
+    "greekName": "Δίκτη",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            25.38,
+            35.18
+          ],
+          [
+            25.52,
+            35.16
+          ],
+          [
+            25.54,
+            35.08
+          ],
+          [
+            25.46,
+            35.04
+          ],
+          [
+            25.36,
+            35.08
+          ],
+          [
+            25.38,
+            35.18
+          ]
+        ]
+      ]
+    },
+    "region": "crete",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Dicte — the Cretan mountain whose cave received Zeus when Rhea hid her last-born from Cronus; the Curetes clashed their arms over the infant king.",
+        "sources": [
+          "hesiod",
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Theogony 477-484; Bibliotheca 1.1.6-7; Description of Greece 8.53.2"
+      }
+    ],
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "pausanias"
+    ],
+    "storyIds": [
+      "birth-of-zeus"
+    ]
+  },
+  {
+    "id": "mount-ida-crete",
+    "name": "Ida",
+    "greekName": "Ἴδη",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            24.72,
+            35.28
+          ],
+          [
+            24.92,
+            35.26
+          ],
+          [
+            24.96,
+            35.12
+          ],
+          [
+            24.82,
+            35.06
+          ],
+          [
+            24.68,
+            35.12
+          ],
+          [
+            24.72,
+            35.28
+          ]
+        ]
+      ]
+    },
+    "region": "crete",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Mount Ida of Crete — the island peak where some Cretans placed Zeus' birth and where the nymph Ida nursed the hidden child beside Adrasteia, rival holy cave to Dicte in local tradition.",
+        "sources": [
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Bibliotheca 1.1.6-7; Description of Greece 8.53.2"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "storyIds": [
+      "birth-of-zeus"
+    ]
+  },
+  {
+    "id": "mount-tmolus",
+    "name": "Tmolus",
+    "greekName": "Τμῶλος",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            27.62,
+            38.62
+          ],
+          [
+            27.78,
+            38.6
+          ],
+          [
+            27.8,
+            38.5
+          ],
+          [
+            27.68,
+            38.46
+          ],
+          [
+            27.58,
+            38.52
+          ],
+          [
+            27.62,
+            38.62
+          ]
+        ]
+      ]
+    },
+    "region": "lydia",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Tmolus — the Lydian mountain whose king judged the contest of Marsyas and Apollo, and where Midas learned the limits of mortal ears beside the god of song.",
+        "sources": [
+          "ovid",
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Metamorphoses 11.150-193; Bibliotheca 1.4.2; Fabulae 165"
+      }
+    ],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "dionysus-cycle",
+      "marsyas-apollo",
+      "midas-golden-touch"
+    ]
+  },
+  {
+    "id": "mount-sipylus",
+    "name": "Sipylus",
+    "greekName": "Σίπυλος",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            27.42,
+            38.64
+          ],
+          [
+            27.58,
+            38.62
+          ],
+          [
+            27.6,
+            38.52
+          ],
+          [
+            27.48,
+            38.48
+          ],
+          [
+            27.38,
+            38.54
+          ],
+          [
+            27.42,
+            38.64
+          ]
+        ]
+      ]
+    },
+    "region": "lydia",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Sipylus — the Lydian mountain of Niobe's pride, where the weeping stone still marks the queen who challenged Leto's children and was turned to grief on her native height.",
+        "sources": [
+          "homer",
+          "ovid",
+          "pausanias"
+        ],
+        "citation": "Iliad 24.602-620; Metamorphoses 6.146-312; Description of Greece 1.21.3"
+      }
+    ],
+    "sources": [
+      "homer",
+      "ovid",
+      "pausanias"
+    ],
+    "storyIds": [
+      "arachne-athena",
+      "niobe-niobids"
+    ]
+  },
+  {
+    "id": "mount-cyllene",
+    "name": "Cyllene",
+    "greekName": "Κυλλήνη",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            22.3,
+            38
+          ],
+          [
+            22.42,
+            37.98
+          ],
+          [
+            22.44,
+            37.9
+          ],
+          [
+            22.34,
+            37.86
+          ],
+          [
+            22.26,
+            37.92
+          ],
+          [
+            22.3,
+            38
+          ]
+        ]
+      ]
+    },
+    "region": "arcadia",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Cyllene — the Arcadian mountain and cave where Maia bore Hermes at dawn and where the god of thieves first fashioned his lyre from a tortoise shell.",
+        "sources": [
+          "hesiod",
+          "homer",
+          "pausanias"
+        ],
+        "citation": "Theogony 938-939; Homeric Hymn to Hermes 1-22; Description of Greece 8.17.5"
+      }
+    ],
+    "sources": [
+      "hesiod",
+      "homer",
+      "pausanias"
+    ],
+    "storyIds": [
+      "birth-of-hermes",
+      "tiresias-blindness"
+    ]
+  },
+  {
+    "id": "mount-nysa",
+    "name": "Nysa",
+    "greekName": "Νῦσα",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            24.82,
+            41.52
+          ],
+          [
+            24.98,
+            41.5
+          ],
+          [
+            25,
+            41.4
+          ],
+          [
+            24.88,
+            41.36
+          ],
+          [
+            24.78,
+            41.42
+          ],
+          [
+            24.82,
+            41.52
+          ]
+        ]
+      ]
+    },
+    "region": "thrace",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Nysa — the mountain of Dionysus' Thracian nurses, where Lycurgus met the god's madness and where Zeus hid the babe in his thigh until the birth at term.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Iliad 6.130-140; Bibliotheca 3.4.3, 3.5.1; Fabulae 132"
+      }
+    ],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "lycurgus-of-thrace",
+      "semele-and-the-birth"
+    ]
+  },
+  {
+    "id": "mount-erymanthus",
+    "name": "Erymanthus",
+    "greekName": "Ἐρύμανθος",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            21.72,
+            37.82
+          ],
+          [
+            21.88,
+            37.8
+          ],
+          [
+            21.9,
+            37.7
+          ],
+          [
+            21.78,
+            37.66
+          ],
+          [
+            21.66,
+            37.72
+          ],
+          [
+            21.72,
+            37.82
+          ]
+        ]
+      ]
+    },
+    "region": "arcadia",
+    "importance": "minor",
+    "summary": [
+      {
+        "text": "Erymanthus — the Arcadian mountain whose woods sheltered Callisto when Arcas nearly struck his transformed mother, and whose boar Heracles hunted in his labours.",
+        "sources": [
+          "ovid",
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 2.401-530; Bibliotheca 2.5.4; Description of Greece 8.24.5"
+      }
+    ],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "pausanias"
+    ],
+    "storyIds": [
+      "callisto-arcas"
+    ]
+  },
+  {
+    "id": "mount-hymettus",
+    "name": "Hymettus",
+    "greekName": "Ὑμηττός",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            23.74,
+            38
+          ],
+          [
+            23.86,
+            37.98
+          ],
+          [
+            23.88,
+            37.9
+          ],
+          [
+            23.78,
+            37.86
+          ],
+          [
+            23.7,
+            37.92
+          ],
+          [
+            23.74,
+            38
+          ]
+        ]
+      ]
+    },
+    "region": "attica",
+    "importance": "minor",
+    "summary": [
+      {
+        "text": "Hymettus — the Attic height above Athens where Cephalus hunted and called upon the breeze, and where the city's marble and honey were named in proverb.",
+        "sources": [
+          "ovid",
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 7.661-865; Description of Greece 1.32.2"
+      }
+    ],
+    "sources": [
+      "ovid",
+      "pausanias"
+    ],
+    "storyIds": [
+      "cephalus-procris"
+    ]
+  },
+  {
+    "id": "mount-caphareus",
+    "name": "Caphareus",
+    "greekName": "Καφήρεας",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            24.16,
+            38.2
+          ],
+          [
+            24.28,
+            38.18
+          ],
+          [
+            24.3,
+            38.1
+          ],
+          [
+            24.2,
+            38.06
+          ],
+          [
+            24.12,
+            38.12
+          ],
+          [
+            24.16,
+            38.2
+          ]
+        ]
+      ]
+    },
+    "region": "euboea",
+    "importance": "minor",
+    "summary": [
+      {
+        "text": "Caphareus — the Euboean headland where Nauplius kindled the false beacon that wrecked the Greek fleet on the homeward sea, punishing the killers of Palamedes.",
+        "sources": [
+          "apollodorus",
+          "hyginus",
+          "pausanias"
+        ],
+        "citation": "Epitome 6.11; Fabulae 116; Description of Greece 4.23.7"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "storyIds": [
+      "nauplius-vengeance"
+    ]
+  },
+  {
+    "id": "hellespont",
+    "name": "Hellespont",
+    "greekName": "Ἑλλήσποντος",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          26.066,
+          39.997
+        ],
+        [
+          26.0691,
+          39.9991
+        ],
+        [
+          26.0752,
+          40.0032
+        ],
+        [
+          26.0844,
+          40.0094
+        ],
+        [
+          26.0966,
+          40.0176
+        ],
+        [
+          26.1091,
+          40.0262
+        ],
+        [
+          26.1219,
+          40.0351
+        ],
+        [
+          26.1349,
+          40.0443
+        ],
+        [
+          26.1481,
+          40.0537
+        ],
+        [
+          26.1616,
+          40.0634
+        ],
+        [
+          26.1754,
+          40.0731
+        ],
+        [
+          26.1894,
+          40.083
+        ],
+        [
+          26.2036,
+          40.093
+        ],
+        [
+          26.2183,
+          40.1031
+        ],
+        [
+          26.2333,
+          40.1134
+        ],
+        [
+          26.2486,
+          40.1238
+        ],
+        [
+          26.2644,
+          40.1342
+        ],
+        [
+          26.2804,
+          40.1448
+        ],
+        [
+          26.2966,
+          40.1552
+        ],
+        [
+          26.3131,
+          40.1658
+        ],
+        [
+          26.3299,
+          40.1762
+        ],
+        [
+          26.3449,
+          40.1856
+        ],
+        [
+          26.3583,
+          40.1937
+        ],
+        [
+          26.37,
+          40.2006
+        ],
+        [
+          26.38,
+          40.2064
+        ],
+        [
+          26.3908,
+          40.2128
+        ],
+        [
+          26.4024,
+          40.2198
+        ],
+        [
+          26.4149,
+          40.2274
+        ],
+        [
+          26.4281,
+          40.2356
+        ],
+        [
+          26.4416,
+          40.2441
+        ],
+        [
+          26.4554,
+          40.2529
+        ],
+        [
+          26.4694,
+          40.2619
+        ],
+        [
+          26.4836,
+          40.2711
+        ],
+        [
+          26.4981,
+          40.2804
+        ],
+        [
+          26.5127,
+          40.2896
+        ],
+        [
+          26.5275,
+          40.2989
+        ],
+        [
+          26.5425,
+          40.3081
+        ],
+        [
+          26.5575,
+          40.3171
+        ],
+        [
+          26.5725,
+          40.3259
+        ],
+        [
+          26.5875,
+          40.3344
+        ],
+        [
+          26.6025,
+          40.3426
+        ],
+        [
+          26.6165,
+          40.3508
+        ],
+        [
+          26.6295,
+          40.3588
+        ],
+        [
+          26.6415,
+          40.3666
+        ],
+        [
+          26.6525,
+          40.3744
+        ],
+        [
+          26.6608,
+          40.3802
+        ],
+        [
+          26.6663,
+          40.3841
+        ],
+        [
+          26.669,
+          40.386
+        ]
+      ]
+    },
+    "region": "troad",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Hellespont — the narrow strait between Europe and Asia where Helle fell from the golden ram and Phrixus alone rode on to Colchis.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "ovid"
+        ],
+        "citation": "Bibliotheca 1.9.1; Argonautica 1.927-929; Metamorphoses 6.676-681"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "ovid"
+    ],
+    "storyIds": [
+      "golden-fleece"
+    ]
+  },
+  {
+    "id": "hebrus",
+    "name": "Hebrus",
+    "greekName": "Ἕβρος",
+    "kind": "river",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          25.8948,
+          42
+        ],
+        [
+          25.8955,
+          41.9976
+        ],
+        [
+          25.8989,
+          41.9776
+        ],
+        [
+          25.9054,
+          41.9618
+        ],
+        [
+          25.9207,
+          41.9554
+        ],
+        [
+          25.9292,
+          41.9479
+        ],
+        [
+          25.957,
+          41.9124
+        ],
+        [
+          25.9718,
+          41.9007
+        ],
+        [
+          25.9907,
+          41.8948
+        ],
+        [
+          26.0064,
+          41.8928
+        ],
+        [
+          26.0435,
+          41.8933
+        ],
+        [
+          26.0623,
+          41.8876
+        ],
+        [
+          26.0779,
+          41.8743
+        ],
+        [
+          26.1021,
+          41.8455
+        ],
+        [
+          26.1089,
+          41.8408
+        ],
+        [
+          26.1266,
+          41.8317
+        ],
+        [
+          26.1363,
+          41.8244
+        ],
+        [
+          26.1415,
+          41.8217
+        ],
+        [
+          26.1528,
+          41.8204
+        ],
+        [
+          26.1567,
+          41.8188
+        ],
+        [
+          26.1584,
+          41.8137
+        ],
+        [
+          26.1573,
+          41.7998
+        ],
+        [
+          26.1602,
+          41.794
+        ],
+        [
+          26.1905,
+          41.7737
+        ],
+        [
+          26.1983,
+          41.7664
+        ],
+        [
+          26.2031,
+          41.7581
+        ],
+        [
+          26.2114,
+          41.7508
+        ],
+        [
+          26.2256,
+          41.7499
+        ],
+        [
+          26.234,
+          41.7461
+        ],
+        [
+          26.2605,
+          41.7233
+        ],
+        [
+          26.2734,
+          41.7152
+        ],
+        [
+          26.2944,
+          41.7106
+        ],
+        [
+          26.3591,
+          41.7152
+        ],
+        [
+          26.377,
+          41.7109
+        ],
+        [
+          26.4039,
+          41.6922
+        ],
+        [
+          26.4423,
+          41.6848
+        ],
+        [
+          26.46,
+          41.679
+        ],
+        [
+          26.4757,
+          41.676
+        ],
+        [
+          26.492,
+          41.681
+        ],
+        [
+          26.4915,
+          41.674
+        ],
+        [
+          26.4937,
+          41.6708
+        ],
+        [
+          26.4971,
+          41.6694
+        ],
+        [
+          26.4994,
+          41.6673
+        ],
+        [
+          26.5343,
+          41.6666
+        ],
+        [
+          26.5608,
+          41.6548
+        ],
+        [
+          26.5805,
+          41.6357
+        ],
+        [
+          26.5949,
+          41.6127
+        ],
+        [
+          26.5947,
+          41.6053
+        ],
+        [
+          26.5958,
+          41.5978
+        ],
+        [
+          26.5982,
+          41.5911
+        ],
+        [
+          26.6018,
+          41.5854
+        ],
+        [
+          26.5973,
+          41.5735
+        ],
+        [
+          26.6012,
+          41.5476
+        ],
+        [
+          26.5949,
+          41.5377
+        ],
+        [
+          26.6056,
+          41.5233
+        ],
+        [
+          26.6104,
+          41.506
+        ],
+        [
+          26.6155,
+          41.4688
+        ],
+        [
+          26.6318,
+          41.42
+        ],
+        [
+          26.6358,
+          41.3998
+        ],
+        [
+          26.6362,
+          41.3787
+        ],
+        [
+          26.6313,
+          41.3577
+        ],
+        [
+          26.6221,
+          41.3406
+        ],
+        [
+          26.6093,
+          41.331
+        ],
+        [
+          26.5908,
+          41.3295
+        ],
+        [
+          26.569,
+          41.3338
+        ],
+        [
+          26.5502,
+          41.342
+        ],
+        [
+          26.5396,
+          41.3521
+        ],
+        [
+          26.4889,
+          41.3111
+        ],
+        [
+          26.4783,
+          41.3098
+        ],
+        [
+          26.4741,
+          41.3066
+        ],
+        [
+          26.4714,
+          41.3022
+        ],
+        [
+          26.4659,
+          41.2974
+        ],
+        [
+          26.4379,
+          41.2838
+        ],
+        [
+          26.4116,
+          41.2659
+        ],
+        [
+          26.3945,
+          41.2592
+        ],
+        [
+          26.3311,
+          41.2544
+        ],
+        [
+          26.3201,
+          41.2464
+        ],
+        [
+          26.3355,
+          41.2292
+        ],
+        [
+          26.3251,
+          41.2072
+        ],
+        [
+          26.3206,
+          41.1879
+        ],
+        [
+          26.3237,
+          41.1701
+        ],
+        [
+          26.3355,
+          41.1528
+        ],
+        [
+          26.3168,
+          41.1307
+        ],
+        [
+          26.3168,
+          41.1225
+        ],
+        [
+          26.3317,
+          41.1193
+        ],
+        [
+          26.339,
+          41.1148
+        ],
+        [
+          26.3219,
+          41.0888
+        ],
+        [
+          26.3246,
+          41.0743
+        ],
+        [
+          26.3386,
+          41.0518
+        ],
+        [
+          26.3472,
+          41.0412
+        ],
+        [
+          26.3736,
+          41.0314
+        ],
+        [
+          26.3745,
+          41.0196
+        ],
+        [
+          26.3676,
+          41.0079
+        ],
+        [
+          26.3591,
+          41.0026
+        ],
+        [
+          26.3442,
+          41.0013
+        ],
+        [
+          26.3355,
+          40.9974
+        ],
+        [
+          26.3326,
+          40.991
+        ],
+        [
+          26.3355,
+          40.9821
+        ],
+        [
+          26.3459,
+          40.972
+        ],
+        [
+          26.3557,
+          40.9684
+        ],
+        [
+          26.3585,
+          40.9649
+        ],
+        [
+          26.3486,
+          40.9548
+        ],
+        [
+          26.3345,
+          40.9465
+        ],
+        [
+          26.3059,
+          40.9362
+        ],
+        [
+          26.294,
+          40.9269
+        ],
+        [
+          26.2968,
+          40.9226
+        ],
+        [
+          26.3028,
+          40.9157
+        ],
+        [
+          26.3035,
+          40.9093
+        ],
+        [
+          26.2901,
+          40.9064
+        ],
+        [
+          26.2817,
+          40.9075
+        ],
+        [
+          26.2747,
+          40.9105
+        ],
+        [
+          26.2695,
+          40.9151
+        ],
+        [
+          26.266,
+          40.9207
+        ],
+        [
+          26.2598,
+          40.9207
+        ],
+        [
+          26.2517,
+          40.9008
+        ],
+        [
+          26.2459,
+          40.8917
+        ],
+        [
+          26.2388,
+          40.8859
+        ],
+        [
+          26.2319,
+          40.8859
+        ],
+        [
+          26.2306,
+          40.89
+        ],
+        [
+          26.2256,
+          40.8996
+        ],
+        [
+          26.2258,
+          40.889
+        ],
+        [
+          26.2246,
+          40.8839
+        ],
+        [
+          26.2205,
+          40.8815
+        ],
+        [
+          26.2114,
+          40.8797
+        ],
+        [
+          26.2107,
+          40.8749
+        ],
+        [
+          26.2119,
+          40.8734
+        ],
+        [
+          26.2148,
+          40.8731
+        ],
+        [
+          26.2182,
+          40.8723
+        ],
+        [
+          26.2083,
+          40.8686
+        ],
+        [
+          26.2053,
+          40.8653
+        ],
+        [
+          26.2045,
+          40.8586
+        ],
+        [
+          26.2114,
+          40.8477
+        ],
+        [
+          26.1577,
+          40.8124
+        ],
+        [
+          26.1425,
+          40.794
+        ],
+        [
+          26.134,
+          40.7674
+        ],
+        [
+          26.1118,
+          40.7473
+        ],
+        [
+          26.0811,
+          40.7358
+        ],
+        [
+          26.044,
+          40.7385
+        ],
+        [
+          26.024,
+          40.774
+        ],
+        [
+          26.014,
+          40.7917
+        ],
+        [
+          26.004,
+          40.8095
+        ],
+        [
+          25.994,
+          40.8272
+        ],
+        [
+          25.984,
+          40.845
+        ]
+      ]
+    },
+    "region": "thrace",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Hebrus — the Thracian river that bore Orpheus' severed head and lyre still murmuring Eurydice, and carried the bard's song to the Aegean shore.",
+        "sources": [
+          "ovid",
+          "apollodorus",
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 11.1-66; Bibliotheca 1.3.2; Description of Greece 9.30.4"
+      }
+    ],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "pausanias"
+    ],
+    "storyIds": [
+      "orpheus-cycle",
+      "orpheus-death"
+    ]
+  },
+  {
+    "id": "symplegades",
+    "name": "Symplegades",
+    "greekName": "Συμπληγάδες",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          29.02,
+          41.06
+        ],
+        [
+          29.0213,
+          41.0625
+        ],
+        [
+          29.0237,
+          41.0675
+        ],
+        [
+          29.0275,
+          41.075
+        ],
+        [
+          29.0325,
+          41.085
+        ],
+        [
+          29.0375,
+          41.095
+        ],
+        [
+          29.0425,
+          41.105
+        ],
+        [
+          29.0475,
+          41.115
+        ],
+        [
+          29.0525,
+          41.125
+        ],
+        [
+          29.0575,
+          41.135
+        ],
+        [
+          29.0625,
+          41.145
+        ],
+        [
+          29.0675,
+          41.155
+        ],
+        [
+          29.0725,
+          41.165
+        ],
+        [
+          29.0775,
+          41.175
+        ],
+        [
+          29.0825,
+          41.185
+        ],
+        [
+          29.0875,
+          41.195
+        ],
+        [
+          29.0925,
+          41.205
+        ],
+        [
+          29.0963,
+          41.2125
+        ],
+        [
+          29.0988,
+          41.2175
+        ],
+        [
+          29.1,
+          41.22
+        ]
+      ]
+    },
+    "region": null,
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Symplegades — the Clashing Rocks at the mouth of the Euxine Sea, which smashed together on any ship until the Argo passed and they stood fixed forever.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 1.9.22; Argonautica 2.549-610; Fabulae 17"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "storyIds": [
+      "phineus-and-the-harpies",
+      "return-of-the-argo",
+      "voyage-to-colchis"
+    ]
+  },
+  {
+    "id": "propontis",
+    "name": "Propontis",
+    "greekName": "Προποντίς",
+    "kind": "gulf",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            26.25,
+            40.05
+          ],
+          [
+            27.2,
+            40
+          ],
+          [
+            28.8,
+            40.35
+          ],
+          [
+            29.45,
+            40.95
+          ],
+          [
+            29.15,
+            41.2
+          ],
+          [
+            27.4,
+            41.15
+          ],
+          [
+            26.4,
+            40.85
+          ],
+          [
+            26.25,
+            40.05
+          ]
+        ]
+      ]
+    },
+    "region": null,
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Propontis — the sea between the Hellespont and the Bosporus where the Doliones welcomed the Argonauts and Jason's men slew their host Cyzicus in a night of mistaken battle.",
+        "sources": [
+          "apollodorus",
+          "apollonius",
+          "hyginus"
+        ],
+        "citation": "Bibliotheca 1.9.18; Argonautica 1.936-1077; Fabulae 14"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "storyIds": [
+      "voyage-to-colchis"
+    ]
+  },
+  {
+    "id": "scylla-charybdis",
+    "name": "Scylla and Charybdis",
+    "greekName": "Σκύλλη καὶ Χάρυβδις",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          15.65,
+          38.02
+        ],
+        [
+          15.6,
+          38.05
+        ],
+        [
+          15.55,
+          38.08
+        ],
+        [
+          15.5,
+          38.1
+        ],
+        [
+          15.46,
+          38.12
+        ],
+        [
+          15.42,
+          38.14
+        ],
+        [
+          15.38,
+          38.16
+        ],
+        [
+          15.34,
+          38.18
+        ],
+        [
+          15.3,
+          38.2
+        ],
+        [
+          15.28,
+          38.21
+        ]
+      ]
+    },
+    "region": null,
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The narrow strait where Scylla snatched six men from Odysseus' benches and Charybdis thrice sucked the sea into her whirlpool — the peril Circe warned of after the Sirens, and where Ovid set the cliff-monster Glaucus' maiden became.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "ovid"
+        ],
+        "citation": "Odyssey 12.235-275; Epitome 7.18-23; Metamorphoses 13.898-14.74"
+      }
+    ],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "ovid"
+    ],
+    "storyIds": [
+      "glaucus-scylla"
+    ]
+  },
+  {
+    "id": "gyraean-rocks",
+    "name": "Gyraean rocks",
+    "greekName": "Γυραῖαι πέτραι",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          24.04,
+          38.82
+        ],
+        [
+          24.0425,
+          38.8225
+        ],
+        [
+          24.0475,
+          38.8275
+        ],
+        [
+          24.055,
+          38.835
+        ],
+        [
+          24.065,
+          38.845
+        ],
+        [
+          24.075,
+          38.8544
+        ],
+        [
+          24.085,
+          38.8631
+        ],
+        [
+          24.095,
+          38.8712
+        ],
+        [
+          24.105,
+          38.8788
+        ],
+        [
+          24.115,
+          38.8856
+        ],
+        [
+          24.125,
+          38.8919
+        ],
+        [
+          24.135,
+          38.8975
+        ],
+        [
+          24.145,
+          38.9025
+        ],
+        [
+          24.155,
+          38.9075
+        ],
+        [
+          24.165,
+          38.9125
+        ],
+        [
+          24.175,
+          38.9175
+        ],
+        [
+          24.185,
+          38.9225
+        ],
+        [
+          24.1925,
+          38.9262
+        ],
+        [
+          24.1975,
+          38.9287
+        ],
+        [
+          24.2,
+          38.93
+        ]
+      ]
+    },
+    "region": "euboea",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Gyraean rocks — the reef off Euboea where Poseidon drove Ajax son of Oileus after the sack of Troy, and where his boast that he was saved despite Athena sealed his doom when the god split the rock with his trident.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Odyssey 4.499-511; Epitome 6.6; Fabulae 116"
+      }
+    ],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "locrian-ajax",
+      "menelaus-in-egypt",
+      "nostoi"
+    ]
+  },
+  {
+    "id": "capherian-rocks",
+    "name": "Capherian rocks",
+    "greekName": "Καφήρειαι πέτραι",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          24.58,
+          38.24
+        ],
+        [
+          24.5825,
+          38.2425
+        ],
+        [
+          24.5875,
+          38.2475
+        ],
+        [
+          24.595,
+          38.255
+        ],
+        [
+          24.605,
+          38.265
+        ],
+        [
+          24.615,
+          38.275
+        ],
+        [
+          24.625,
+          38.285
+        ],
+        [
+          24.635,
+          38.295
+        ],
+        [
+          24.645,
+          38.305
+        ],
+        [
+          24.6544,
+          38.3144
+        ],
+        [
+          24.6631,
+          38.3231
+        ],
+        [
+          24.6713,
+          38.3313
+        ],
+        [
+          24.6788,
+          38.3388
+        ],
+        [
+          24.6863,
+          38.3456
+        ],
+        [
+          24.6938,
+          38.3519
+        ],
+        [
+          24.7013,
+          38.3575
+        ],
+        [
+          24.7087,
+          38.3625
+        ],
+        [
+          24.7144,
+          38.3662
+        ],
+        [
+          24.7181,
+          38.3687
+        ],
+        [
+          24.72,
+          38.37
+        ]
+      ]
+    },
+    "region": "euboea",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Capherian rocks — the Euboean reef below Mount Caphareus where Nauplius' false beacon wrecked the Greek fleet on the homeward sea, and where Hyginus sets the storm that dashed the Locrian Ajax against the Rocks of Ajax.",
+        "sources": [
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Epitome 6.7; Fabulae 116"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "locrian-ajax",
+      "nauplius-vengeance"
+    ]
+  },
+  {
+    "id": "evenus",
+    "name": "Evenus",
+    "greekName": "Εὔηνος",
+    "kind": "river",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          21.55,
+          38.85
+        ],
+        [
+          21.65,
+          38.75
+        ],
+        [
+          21.75,
+          38.58
+        ],
+        [
+          21.82,
+          38.48
+        ],
+        [
+          21.72,
+          38.37
+        ]
+      ]
+    },
+    "region": "aetolia",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Evenus — the Aetolian river where Heracles crossed with Deianira and Nessus the centaur tried to ravish her; the hero’s hydra-poisoned arrow killed the ferryman, whose dying blood became the shirt that consumed the son of Zeus on Mount Oeta.",
+        "sources": [
+          "apollodorus",
+          "ovid"
+        ],
+        "citation": "Bibliotheca 2.7.6; Metamorphoses 9.101-158"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "storyIds": [
+      "deianira-at-the-feast"
+    ]
+  },
+  {
+    "id": "ismenus",
+    "name": "Ismenus",
+    "greekName": "Ἰσμηνός",
+    "kind": "river",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          23.05,
+          38.38
+        ],
+        [
+          23.08,
+          38.36
+        ],
+        [
+          23.1,
+          38.33
+        ],
+        [
+          23.12,
+          38.31
+        ]
+      ]
+    },
+    "region": "boeotia",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Ismenus — the Theban river beside which Apollo and Artemis descended on Niobe’s children, and where Amphiaraus fled before Zeus split the earth and made the seer immortal.",
+        "sources": [
+          "apollodorus",
+          "ovid",
+          "apollonius"
+        ],
+        "citation": "Bibliotheca 3.5.6, 3.6.8; Metamorphoses 6.146-312; Argonautica 1.519"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "apollonius"
+    ],
+    "storyIds": [
+      "niobe-niobids"
+    ]
+  },
+  {
+    "id": "cape-geraestus",
+    "name": "Geraestus",
+    "greekName": "Γεραιστός",
+    "kind": "strait",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          24.02,
+          38.38
+        ],
+        [
+          24.05,
+          38.36
+        ],
+        [
+          24.08,
+          38.34
+        ]
+      ]
+    },
+    "region": "euboea",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Cape Geraestus — the southern headland of Euboea where Pelops cast Myrtilus into the sea and the charioteer cursed the house of Pelops as he drowned in the waters that took the name Myrtoan.",
+        "sources": [
+          "homer",
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Odyssey 3.145-180; Epitome 2.8; Fabulae 84"
+      }
+    ],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "pelops-and-oenomaus"
+    ]
+  },
+  {
+    "id": "myrtoan-sea",
+    "name": "Myrtoan Sea",
+    "greekName": "Μυρτῷον πέλαγος",
+    "kind": "gulf",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            22.8,
+            38.45
+          ],
+          [
+            24.5,
+            38.45
+          ],
+          [
+            24.5,
+            37.2
+          ],
+          [
+            22.8,
+            37.2
+          ],
+          [
+            22.8,
+            38.45
+          ]
+        ]
+      ]
+    },
+    "region": null,
+    "importance": "major",
+    "summary": [
+      {
+        "text": "The Myrtoan Sea — the Aegean waters between Euboea and the Peloponnese into which Myrtilus was cast from Cape Geraestus, whose drowning curse ripened in the generation of Atreus and Thyestes.",
+        "sources": [
+          "apollodorus",
+          "hyginus"
+        ],
+        "citation": "Epitome 2.8; Fabulae 84"
+      }
+    ],
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "storyIds": [
+      "pelops-and-oenomaus"
+    ]
+  },
+  {
+    "id": "mount-rhodope",
+    "name": "Rhodope",
+    "greekName": "Ῥοδόπη",
+    "kind": "mountain-range",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            24.55,
+            41.75
+          ],
+          [
+            25.1,
+            41.7
+          ],
+          [
+            25.35,
+            41.55
+          ],
+          [
+            25.05,
+            41.35
+          ],
+          [
+            24.6,
+            41.3
+          ],
+          [
+            24.4,
+            41.5
+          ],
+          [
+            24.55,
+            41.75
+          ]
+        ]
+      ]
+    },
+    "region": "thrace",
+    "importance": "major",
+    "summary": [
+      {
+        "text": "Rhodope — the snow-clad Thracian mountain of Orpheus' mourning, where the bard of Rhodope shunned all women after Eurydice's death and where the Ciconian women drowned his voice in Bacchic clamour.",
+        "sources": [
+          "ovid",
+          "hyginus",
+          "apollodorus"
+        ],
+        "citation": "Metamorphoses 10.1-66, 11.1-66; Fabulae 132; Bibliotheca 1.3.2"
+      }
+    ],
+    "sources": [
+      "ovid",
+      "hyginus",
+      "apollodorus"
+    ],
+    "storyIds": [
+      "orpheus-cycle",
+      "orpheus-eurydice",
+      "orpheus-songs"
     ]
   }
 ]

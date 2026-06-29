@@ -143,6 +143,8 @@ export function placeToCity(place: GeoPlace): GeoCity {
 export interface Reign {
   ruler: string;
   characterId?: string;
+  /** Joint simultaneous rule — all linked characters share one reign row. */
+  characterIds?: string[];
   sources: SourceId[];
   citation?: string;
   note?: string;

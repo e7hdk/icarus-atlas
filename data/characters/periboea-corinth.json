@@ -1,0 +1,38 @@
+{
+  "id": "periboea-corinth",
+  "name": "Periboea",
+  "greekName": "Periboia (Περίβοια)",
+  "romanName": "Periboea",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Corinth",
+    "foster mother of Oedipus"
+  ],
+  "summary": [
+    {
+      "text": "Wife of Polybus king of Corinth who adopted the exposed infant from Cithaeron, healed his pierced ankles, and passed him off as her own — the foster mother Oedipus believed was his until he consulted the oracle at Delphi.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    },
+    {
+      "text": "Apollodorus names her Periboea, not Merope — distinct from Merope daughter of Atlas, wife of Sisyphus at Corinth, and from the several other Periboea figures (`periboea-naiad`, `periboea-oeneus`, `periboea-paeonian`, `periboea-phaeacian`).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.3, 3.5.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the neatherds of King Polybus brought the infant found on Cithaeron to the palace, Periboea adopted him as her own. She healed the ankles Laius had pierced with brooches and gave the boy the name Oedipus — 'Swell-foot' — on account of his swollen feet. At Corinth he was raised as a prince until spiteful taunts about his parentage sent him to Delphi and then toward Thebes.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    }
+  ]
+}

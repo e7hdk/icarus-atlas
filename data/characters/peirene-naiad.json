@@ -1,0 +1,45 @@
+{
+  "id": "peirene-naiad",
+  "name": "Peirene",
+  "greekName": "Peirēnē (Πειρήνη)",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "Corinthian spring",
+    "mother of Leches and Cenchrias",
+    "Peirene fountain"
+  ],
+  "summary": [
+    {
+      "text": "The spring nymph of Corinth, mother of Leches and Cenchrias by Poseidon — eponyms of the city's two harbours; Pausanias saw her water used to temper Corinthian bronze and heard that she became a spring from tears for Cenchrias, slain by Artemis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.2.3, 2.3.2–3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias names the Corinthian harbours after Leches and Cenchrias, children of Poseidon and Peirene daughter of Achelous — though in the poem called the Great Eoeae Peirene is said to be a daughter of Oebalus. The rival parentages are the dossier's `peirene-parentage` dispute; the atlas keeps both edges rather than choosing one.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.2.3",
+      "topic": "peirene-parentage"
+    },
+    {
+      "text": "At the gateway to Corinth, travellers pass the entrance to the water of Peirene. The legend is that she was a woman who became a spring because of tears shed in lamentation for her son Cenchrias, unintentionally killed by Artemis. Near the fountain stand an image and enclosure of Apollo, with a painting of Odysseus against the suitors.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.3.2–3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["pausanias"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.2.3",
+      "topic": "peirene-parentage"
+    }
+  ]
+}

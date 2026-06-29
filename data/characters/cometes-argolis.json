@@ -1,0 +1,53 @@
+{
+  "id": "cometes-argolis",
+  "name": "Cometes",
+  "greekName": "Komētēs (Κομήτης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Sthenelus",
+    "Aegialia's lover",
+    "the barred gates at Argos"
+  ],
+  "summary": [
+    {
+      "text": "Son of Sthenelus, Diomedes' charioteer at Troy, who became Aegialia's lover before the king returned — and with the Argives' help kept horse-taming Diomedes from punishing the adulterer or reclaiming his house.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Nauplius contrived that the victors' wives should play their husbands false: Aegialia, stately daughter of Adrastus and wife of Diomedes, took Cometes son of Sthenelus as lover before the king could secure his throne.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    },
+    {
+      "text": "Diomedes put in at Argos with the spoils of Troy and found the city closed against him. Cometes held Aegialia's favour and the Argives protected him in such numbers that Diomedes could not punish the adulterer without civil war. Unable to kill Cometes or reclaim his house, the lord of Athena's favour withdrew by night into exile.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    },
+    {
+      "text": "He must not be merged with Cometes father of the Argonaut Asterius (`asterius-crete`) in Apollodorus' Catalogue — the adulterer at Argos belongs to the Returns, not to Jason's crew.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16; Epitome 6.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.11, 6.9"
+    }
+  ]
+}

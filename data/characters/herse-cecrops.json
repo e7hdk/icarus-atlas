@@ -1,0 +1,43 @@
+{
+  "id": "herse-cecrops",
+  "name": "Herse",
+  "greekName": "Hersē (Ἕρση)",
+  "romanName": "Herse",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Cecropid princess",
+    "Mercury's desire",
+    "Erichthonius' ward"
+  ],
+  "summary": [
+    {
+      "text": "Youngest of Cecrops' three daughters on the Acropolis, fairest of the sisters — whom Mercury saw from heaven and sought through their jealous middle sister Aglauros, who was petrified when she blocked the god's path.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 2.708–832; Bibliotheca 3.14.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pandrosos, Aglauros, and Herse dwelt between them on the Acropolis, devoted to Minerva's praise. Mercury, flying down on a mission for Jove, saw Herse and burned to possess her — the youngest and fairest of the Cecropid sisters.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.708–760"
+    },
+    {
+      "text": "Apollodorus names Herse among Cecrops' daughters alongside Agraulus and Pandrosus, and records that Athena entrusted the chest holding the infant Erichthonius to Pandrosus with the charge that none open it — a trust Herse and Aglauros broke in other tellings.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.14.2"
+    },
+    {
+      "text": "The atlas keeps this Cecropid Herse distinct from Herse daughter of Selene in later Athenian genealogies — the Mercury episode belongs to Ovid's tale of the stone sister, not to every bearer of the name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.708–832"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["ovid", "apollodorus"]
+    }
+  ]
+}

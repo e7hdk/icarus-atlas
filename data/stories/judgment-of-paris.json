@@ -7,45 +7,112 @@
   "era": 7.954,
   "summary": {
     "text": "Shut out of the wedding of Peleus and Thetis, Eris threw an apple inscribed for the fairest — and a shepherd-prince on Mount Ida, asked to choose between three goddesses, chose the one who promised him Helen, and so chose the war.",
-    "sources": ["hyginus", "homer"],
+    "sources": [
+      "hyginus",
+      "homer"
+    ],
     "citation": "Hyg. Fab. 92; Hom. Il. 24.25-30"
   },
   "chapters": [
     {
       "title": "The uninvited goddess",
       "text": "To the wedding of Peleus and Thetis Zeus invited all the gods except Eris, goddess of discord. Arriving late and turned away from the banquet, she threw an apple through the door, saying that the fairest should take it. Hera, Aphrodite, and Athena each claimed the prize, and a huge quarrel broke out among them, until Zeus ordered Hermes to lead the three to Mount Ida, to Paris Alexander, and bid him judge.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Hyg. Fab. 92"
     },
     {
       "title": "Three bribes on Ida",
       "text": "Each goddess offered the shepherd-prince her own bribe. Hera promised that he would rule over all the lands and be pre-eminent in wealth; Athena, that he would be bravest of mortals and skilled in every craft; Aphrodite, that she would give him in marriage Helen, daughter of Tyndareus, most beautiful of all women. Paris preferred the last gift and judged Aphrodite the fairest. For this Hera and Athena turned hostile to the Trojans — and at Aphrodite's prompting, Paris took Helen from his host Menelaus in Lacedaemon and carried her to Troy.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Hyg. Fab. 92"
     },
     {
       "title": "The folly of Alexander",
       "text": "Homer never tells the tale outright, but in the last book of the Iliad it surfaces as a grim aside: holy Ilios and Priam and his folk remained hateful to Hera and Athena because of the sin of Alexander, who put reproach upon those goddesses when they came to his steading, and gave precedence to her who furthered his fatal lustfulness.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Il. 24.25-30"
     }
   ],
   "cast": [
-    { "id": "paris", "name": "Paris", "role": "The shepherd judge on Ida" },
-    { "id": "eris", "name": "Eris", "role": "The uninvited, who threw the apple" },
-    { "id": "aphrodite", "name": "Aphrodite", "role": "Winner of the apple, by the bribe of Helen" },
-    { "id": "hera", "name": "Hera", "role": "Offered dominion, and was refused" },
-    { "id": "athena", "name": "Athena", "role": "Offered prowess and craft, and was refused" },
-    { "id": "zeus", "name": "Zeus", "role": "Host who passed the judging to a mortal" },
-    { "id": "hermes", "name": "Hermes", "role": "Guide of the goddesses to Ida" },
-    { "id": "helen", "name": "Helen", "role": "The promised prize" },
-    { "id": "menelaus", "name": "Menelaus", "role": "The host betrayed" },
-    { "name": "Peleus", "role": "Bridegroom at the fateful wedding" },
-    { "name": "Thetis", "role": "Bride at the fateful wedding" }
+    {
+      "id": "paris",
+      "name": "Paris",
+      "role": "The shepherd judge on Ida"
+    },
+    {
+      "id": "eris",
+      "name": "Eris",
+      "role": "The uninvited, who threw the apple"
+    },
+    {
+      "id": "aphrodite",
+      "name": "Aphrodite",
+      "role": "Winner of the apple, by the bribe of Helen"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Offered dominion, and was refused"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Offered prowess and craft, and was refused"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Host who passed the judging to a mortal"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Guide of the goddesses to Ida"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "The promised prize"
+    },
+    {
+      "id": "menelaus",
+      "name": "Menelaus",
+      "role": "The host betrayed"
+    },
+    {
+      "id": "peleus",
+      "name": "Peleus",
+      "role": "Bridegroom at the fateful wedding"
+    },
+    {
+      "id": "thetis",
+      "name": "Thetis",
+      "role": "Bride at the fateful wedding"
+    }
   ],
-  "places": [{ "id": "troy", "name": "Troy", "role": "Paris' city, where Helen was carried" }],
+  "places": [
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Paris' city, where Helen was carried"
+    }
+  ],
   "attestations": [
-    { "source": "hyginus", "work": "Fabulae", "citation": "92" },
-    { "source": "homer", "work": "Iliad", "citation": "24.25-30" }
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "92"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "24.25-30"
+    }
   ]
 }

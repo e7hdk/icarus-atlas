@@ -1,0 +1,82 @@
+{
+  "id": "glaucus-scylla",
+  "title": "Glaucus, Scylla and Circe",
+  "greekTitle": "Γλαῦκος καὶ Σκύλλα καὶ Κίρκη",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 6.9,
+  "summary": {
+    "text": "Glaucus the sea-god loved the maiden Scylla, who spurned him; when he sought a love-potion from Circe on Aeaea the sorceress desired him herself, and in jealousy poisoned the bay where Scylla bathed until howling dogs girdled the girl's loins and she became the cliff-monster of the strait.",
+    "sources": [
+      "ovid"
+    ],
+    "citation": "Ov. Met. 13.898–14.74"
+  },
+  "chapters": [
+    {
+      "title": "The fisherman become sea-god",
+      "text": "Glaucus was once a mortal fisherman of Anthedon who tasted strange grass on the shore and leaped into the sea, changed by Oceanus and Tethys into a blue-green god of the deep. Swimming through his new element he saw Scylla, a maiden with a girl's own face, and burned with love.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 13.898–960"
+    },
+    {
+      "title": "The rejected suit",
+      "text": "Scylla fled his embraces and clung to a cliff above the safe dry land. Glaucus told her he was no monster but a god who could grant long life and fame — yet she would have none of him. In despair he crossed the sea to Circe's isle and begged the enchantress for a potion to win the maiden.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 13.960–14.20"
+    },
+    {
+      "title": "The poisoned bay",
+      "text": "Circe desired Glaucus herself and, when he refused her, poured poison into the bay where Scylla bathed. The water frothed; from Scylla's loins sprang ravening dogs barking around her waist, and the girl who had fled a lover became the dog-girt terror Homer placed in the strait opposite Charybdis — a Scylla distinct from Nisus' daughter of Megara.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 14.20–74"
+    }
+  ],
+  "cast": [
+    {
+      "id": "glaucus-sea",
+      "name": "Glaucus",
+      "role": "Sea-god who loved Scylla"
+    },
+    {
+      "id": "scylla-monster",
+      "name": "Scylla",
+      "role": "Maiden transformed into the strait-monster"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "Sorceress who poisoned the bay in jealousy"
+    }
+  ],
+  "places": [
+    {
+      "name": "Anthedon",
+      "role": "Boeotian shore where Glaucus became a sea-god",
+      "id": "anthedon"
+    },
+    {
+      "name": "Aeaea",
+      "role": "Circe's isle",
+      "id": "aeaea"
+    },
+    {
+      "name": "the strait",
+      "role": "Channel where Scylla became a ship-wrecking monster",
+      "featureId": "scylla-charybdis"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "13.898–14.74"
+    }
+  ]
+}

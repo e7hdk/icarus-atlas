@@ -7,58 +7,122 @@
   "era": 9.08,
   "summary": {
     "text": "Disguised by Athena, Odysseus tested the loyalty of Eumaeus the swineherd, reunited with Telemachus in the hut, and entered his own hall as a beggar — beaten by suitors, recognized by Eurycleia at the scar, and warned in vain by Amphinomus.",
-    "sources": ["homer"],
+    "sources": [
+      "homer"
+    ],
     "citation": "Hom. Od. 14–21"
   },
   "chapters": [
     {
       "title": "Eumaeus the swineherd",
       "text": "Odysseus came first to the loyal swineherd Eumaeus, who received the ragged stranger with honest hospitality though he did not know his lord. Over meat and wine they spoke of the absent king; the swineherd grieved for a master he believed lost, while Odysseus spun a Cretan tale of false lineage and hinted that the king would soon return.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 14.1–14.533"
     },
     {
       "title": "Father and son",
       "text": "Telemachus returned from Sparta, evading the suitors' ambush with Athena's help, and came to Eumaeus' hut. Athena lifted Odysseus' disguise long enough for father and son to recognize each other; they wept and laid their plan — the beggar would enter the hall while Telemachus hid the weapons and tested the wooers.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 16.1–16.491"
     },
     {
       "title": "The beggar in the hall",
       "text": "Odysseus entered his palace and begged from suitor to suitor. Antinous hurled a stool and struck him; Eurymachus mocked; yet Amphinomus alone spoke kindly and gave him wine — Penelope had noticed this suitor's good manners, though Homer never makes her his lover. The beggar prophesied ruin for the wooers; they laughed and went on feasting.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 17.1–17.606"
     },
     {
       "title": "Irus and the foot-washing",
       "text": "The Ithacan beggar Irus challenged the stranger to a boxing match for the right to beg at the hall; Odysseus shattered his jaw with one blow. When Eurycleia came to wash the guest's feet, she knew him by the scar from the boar-hunt on Parnassus — a wound he had received hunting with Autolycus — and nearly cried out, but Athena stayed her tongue.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 18.1–18.435; 19.388–475"
     },
     {
       "title": "Penelope's dream",
       "text": "Penelope summoned the beggar and told him her dream of the eagle that slew her twenty geese — which the stranger interpreted as Odysseus' return and the suitors' death. She set the test of the bow for the morrow, declaring she would marry whichever man could string it and shoot through twelve axes.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 19.1–19.604"
     }
   ],
   "cast": [
-    { "id": "odysseus", "name": "Odysseus", "role": "The king in beggar's rags" },
-    { "id": "telemachus", "name": "Telemachus", "role": "Son who shared the secret plan" },
-    { "id": "athena", "name": "Athena", "role": "She who shaped the disguise" },
-    { "id": "eumaeus", "name": "Eumaeus", "role": "Faithful swineherd" },
-    { "id": "penelope", "name": "Penelope", "role": "Queen who set the bow-test" },
-    { "id": "eurycleia", "name": "Eurycleia", "role": "Nurse who knew the scar" },
-    { "id": "antinous", "name": "Antinous", "role": "He who struck the beggar" },
-    { "id": "amphinomus-dulichium", "name": "Amphinomus", "role": "The one courteous suitor" },
-    { "id": "irus-beggar", "name": "Irus", "role": "Beggar beaten in the hall" },
-    { "id": "philoetius", "name": "Philoetius", "role": "Cowherd loyal to the king" }
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "The king in beggar's rags"
+    },
+    {
+      "id": "telemachus",
+      "name": "Telemachus",
+      "role": "Son who shared the secret plan"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "She who shaped the disguise"
+    },
+    {
+      "id": "eumaeus",
+      "name": "Eumaeus",
+      "role": "Faithful swineherd"
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "Queen who set the bow-test"
+    },
+    {
+      "id": "eurycleia",
+      "name": "Eurycleia",
+      "role": "Nurse who knew the scar"
+    },
+    {
+      "id": "antinous",
+      "name": "Antinous",
+      "role": "He who struck the beggar"
+    },
+    {
+      "id": "amphinomus-dulichium",
+      "name": "Amphinomus",
+      "role": "The one courteous suitor"
+    },
+    {
+      "id": "irus-beggar",
+      "name": "Irus",
+      "role": "Beggar beaten in the hall"
+    },
+    {
+      "id": "philoetius",
+      "name": "Philoetius",
+      "role": "Cowherd loyal to the king"
+    }
   ],
   "places": [
-    { "id": "ithaca", "name": "Ithaca", "role": "Palace, hut, and swinefold" },
-    { "name": "Parnassus", "role": "Where the boar left its scar" }
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "role": "Palace, hut, and swinefold"
+    },
+    {
+      "name": "Parnassus",
+      "role": "Where the boar left its scar",
+      "featureId": "mount-parnassus"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Odyssey", "citation": "14–21" }
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "14–21"
+    }
   ]
 }

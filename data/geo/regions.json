@@ -1088,5 +1088,65 @@
       "text": "Campania's western plain — where Philoctetes settled among the Campanians after Troy, and where Diomedes wandered in the same nostoi strand toward Cumae.",
       "sources": ["apollodorus"]
     }
+  },
+  {
+    "id": "sardinia",
+    "name": "Sardinia",
+    "greekName": "Σαρδώ",
+    "parent": null,
+    "blurb": {
+      "text": "Sardinia at the western horizon — the island where Pausanias sends Aristaeus after Actaeon's death and where early Greek colonists from Iolaus and Theras crossed the sea.",
+      "sources": ["pausanias", "apollodorus"]
+    }
+  },
+  {
+    "id": "libya",
+    "name": "Libya",
+    "greekName": "Λιβύη",
+    "parent": null,
+    "blurb": {
+      "text": "Libya beyond the Greek map — the western land where Atlas holds up heaven and where Guneus son of Ocytus settled by the Cinyps after Troy.",
+      "sources": ["apollodorus", "hesiod", "homer"]
+    }
+  },
+  {
+    "id": "aethiopia",
+    "name": "Aethiopia",
+    "greekName": "Αἰθιοπία",
+    "parent": null,
+    "blurb": {
+      "text": "Aethiopia at the southern horizon — the kingdom of Cepheus where Cassiopeia's boast against the Nereids chained Andromeda to the rock and Perseus turned Cetus to stone.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "greekName": "Αἴγυπτος",
+    "parent": null,
+    "blurb": {
+      "text": "Egypt beyond the Greek map — where Io ended her wanderings as a cow, Danaus fled the sons of Aegyptus, and Menelaus was storm-driven for eight years until he bound Proteus on Pharos.",
+      "sources": ["homer", "apollodorus", "ovid"]
+    }
+  },
+  {
+    "id": "illyria",
+    "name": "Illyria",
+    "greekName": "Ἰλλυρία",
+    "parent": null,
+    "blurb": {
+      "text": "Illyria of the Encheleans — where Cadmus and Harmonia ended their exile, led the tribe against the Illyrians, and were at last turned to crested serpents.",
+      "sources": ["apollodorus", "ovid", "hyginus"]
+    }
+  },
+  {
+    "id": "tauris",
+    "name": "Tauris",
+    "greekName": "Ταυρίς",
+    "parent": null,
+    "blurb": {
+      "text": "Tauris of the Taurians — the Scythian shore where Artemis made Iphigenia priestess and where Orestes came to steal the image from the bloody altar.",
+      "sources": ["apollodorus", "hyginus"]
+    }
   }
 ]

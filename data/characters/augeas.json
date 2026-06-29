@@ -80,6 +80,35 @@
         "pausanias"
       ],
       "citation": "Iliad 2.615–650; Description of Greece 5.3.3"
+    },
+    {
+      "text": "Every account fixes Augeas as king of Elis; Pausanias treats Pisa as the Elean royal seat whose kingship passed through his line to Agasthenes after Phyleus departed for Dulichium.",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 2.5.5; Description of Greece 5.1.9–5.1.10, 5.3.3; Argonautica 1.172"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pisa-elis",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias",
+        "apollonius"
+      ],
+      "citation": "Iliad 2.615–650; Bibliotheca 2.5.5; Description of Greece 5.1.9–5.1.10, 5.3.3; Argonautica 1.172"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Epitome 3.11; Iliad 2.615–650"
     }
   ]
 }

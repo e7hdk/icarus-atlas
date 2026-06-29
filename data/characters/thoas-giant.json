@@ -1,0 +1,33 @@
+{
+  "id": "thoas-giant",
+  "name": "Thoas (Gigantes)",
+  "greekName": "Thoas (Θόας)",
+  "romanName": "Thoas",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom the Fates killed with brazen clubs in the Gigantomachy — the Thoas named in Apollodorus 1.6.2, not the Lemnian or Aetolian kings of the same name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Thoas among the Giants destroyed when the Olympians fought with Heracles at their side: the Fates, fighting with brazen clubs, killed Agrius and Thoas. The collective node `gigantes` holds the Gigantomachy; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Thoas distinct from `thoas-lemnos`, king of Lemnos and father of Hypsipyle; `thoas-aetolia`, the Aetolian king; and `thoas-dulichium`, the Ithacan suitor.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2; Bibliotheca 1.9.17"
+    }
+  ]
+}

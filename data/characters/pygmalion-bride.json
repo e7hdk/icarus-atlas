@@ -1,0 +1,43 @@
+{
+  "id": "pygmalion-bride",
+  "name": "The ivory maiden",
+  "greekName": "Elephantinē parthenos (ἐλεφάντινος παρθένος)",
+  "romanName": "The ivory maiden",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Pygmalion's statue",
+    "Venus' gift of life",
+    "mother of Paphos"
+  ],
+  "summary": [
+    {
+      "text": "The snow-white ivory virgin Pygmalion carved and loved as his bride — warmed to living flesh by Venus on her festival — who bore a daughter Paphos, from whom the Cypriot city took its name.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.386–463"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pygmalion shaped her from ivory with consummate skill: a virgin's form more beautiful than any living woman, modest in expression, so lifelike that the sculptor kissed her and wondered whether she were flesh. He draped her in jewels and laid her on a purple couch, bringing gifts to the figure he treated as his wife.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.386–430"
+    },
+    {
+      "text": "When Venus answered his festival prayer, warmth spread beneath his hand — the ivory softened like wax under the sun, veins pulsed, and the statue breathed. Nine moons later she bore Paphos, and the island city was named from their child.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.430–463"
+    },
+    {
+      "text": "Later poets called her Galatea, but Ovid leaves her unnamed — a mortal woman born from art, not to be merged with Galatea the Nereid of Acis in Sicily.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.386–463"
+    }
+  ],
+  "residences": [
+    {
+      "city": "salamis-cyprus",
+      "sources": ["ovid"]
+    }
+  ]
+}

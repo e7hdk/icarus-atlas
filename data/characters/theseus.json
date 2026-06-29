@@ -75,12 +75,47 @@
       ]
     },
     {
+      "city": "troezen",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.15.7–3.16.2"
+    },
+    {
+      "city": "marathon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.5"
+    },
+    {
+      "city": "eleusis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.5"
+    },
+    {
+      "city": "colonus-athens",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.5.9"
+    },
+    {
+      "city": "aphidnae",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.7"
+    },
+    {
       "city": "naxos",
       "sources": ["apollodorus"]
     },
     {
       "city": "skyros",
       "sources": ["apollodorus"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.7"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 1.262–268"
     }
   ]
 }

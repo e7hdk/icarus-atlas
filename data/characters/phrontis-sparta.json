@@ -1,0 +1,48 @@
+{
+  "id": "phrontis-sparta",
+  "name": "Phrontis",
+  "greekName": "Phrontis (Φρόντις)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "helmsman of Menelaus",
+    "Sunium",
+    "the Returns"
+  ],
+  "summary": [
+    {
+      "text": "Son of Onetor and helmsman of Menelaus, slain by Apollo at Sunium as he held the steering-oar of the homeward ship — not to be confused with Phrontis son of Phrixus among the Colchian nephews, nor with queenly Phrontis wife of Panthous at Troy.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.280–325"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer says Phoebus Apollo assailed with his gentle shafts and slew the helmsman of Menelaus as he held the steering-oar of the speeding ship — Phrontis son of Onetor, who excelled the tribes of men in piloting when the storm winds blow strong. Menelaus tarried there, though eager for his journey, to bury his comrade and pay funeral rites over him before sailing on.",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.280–325"
+    },
+    {
+      "text": "Apollodorus names Phrontis among the sons Phrixus begot on Chalciope in Colchis — Argus, Melas, Phrontis, and Cytisorus — who joined the Argonauts' flight from Aeetes. That Phrontis leapt ashore with Jason to beg Medea for rescue; this Phrontis died at the helm on Menelaus' nostos from Troy.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.1; Argonautica 4.66; Odyssey 3.280–325"
+    },
+    {
+      "text": "In the Iliad, Hector foretells that he will lay the head and armour of Patroclus in the hands of Panthous and queenly Phrontis — the Trojan queen who shares the name but not the story of Menelaus' pilot.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.1–40"
+    }
+  ],
+  "residences": [
+    {
+      "city": "sparta",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.280–325; 4.1–14"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Odyssey 3.280–325"
+    }
+  ]
+}

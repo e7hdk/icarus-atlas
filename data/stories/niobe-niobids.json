@@ -7,49 +7,121 @@
   "era": 6.03,
   "summary": {
     "text": "Niobe queen of Thebes, daughter of Tantalus and wife of Amphion, boasted that her seven sons and seven daughters surpassed the children of Leto — and Apollo and Artemis answered with arrows until every child was dead, Amphion fell on his sword, and grief turned Niobe herself to weeping stone on Sipylus.",
-    "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
     "citation": "Hom. Il. 24.602–617; Apollod. 3.5.6; Ov. Met. 6.146–312; Hyg. Fab. 9"
   },
   "chapters": [
     {
       "title": "The boast",
       "text": "The Theban women were wreathed with laurel for Latona when Manto daughter of Tiresias cried that the goddess commanded worship — but Niobe, rich in husband, lineage, and kingdom, refused. She had known Arachne's fate in Maeonia and learned nothing: she counted her children — seven sons and seven daughters in Ovid, though Homer remembers six of each and Apollodorus catalogues rival totals from Hesiod and Herodorus — and mocked Latona for bearing only two.",
-      "sources": ["homer", "apollodorus", "ovid"],
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Hom. Il. 24.602–617; Apollod. 3.5.6; Ov. Met. 6.182–228",
       "topic": "niobids-number-and-names"
     },
     {
       "title": "The arrows",
       "text": "Leto appealed to her twins; Phoebus and Phoebe descended on Thebes in cloud. On the plain Niobe's sons rode their horses — Ismenus, Sipylus, Phaedimus, Tantalus, and the rest — and Apollo's shafts struck them one by one. At the palace Artemis slew the daughters as they mourned; Niobe spread her arms over the youngest and cried, leave me one! — but the last child died in that embrace.",
-      "sources": ["ovid", "homer"],
+      "sources": [
+        "ovid",
+        "homer"
+      ],
       "citation": "Ov. Met. 6.229–271; Hom. Il. 24.602–617"
     },
     {
       "title": "The weeping stone",
       "text": "Childless beside the corpses of sons, daughters, and husband, Niobe grew chill as marble; her tears still flowed while a whirlwind bore her to her native mountain on Sipylus, where she stands as stone that drips forever. Ovid leaves her utterly bereft; Apollodorus and Hyginus preserve survivors — a son Amphion or Amyclas, a daughter Chloris or Meliboea — so the house of Tantalus is not always extinguished.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 6.272–312; Apollod. 3.5.6; Hyg. Fab. 9–10",
       "topic": "niobids-survivors"
     }
   ],
   "cast": [
-    { "id": "niobe", "name": "Niobe", "role": "Queen of Thebes who boasted against Leto" },
-    { "id": "amphion", "name": "Amphion", "role": "King of Thebes, husband of Niobe" },
-    { "id": "tantalus", "name": "Tantalus", "role": "Niobe's father, the doomed host of the gods" },
-    { "id": "leto", "name": "Leto", "role": "Mother of Apollo and Artemis" },
-    { "id": "apollo", "name": "Apollo", "role": "Slayer of the Niobid sons" },
-    { "id": "artemis", "name": "Artemis", "role": "Slayer of the Niobid daughters" },
-    { "id": "tiresias", "name": "Tiresias", "role": "Father of Manto who proclaimed Latona's rites" }
+    {
+      "id": "niobe",
+      "name": "Niobe",
+      "role": "Queen of Thebes who boasted against Leto"
+    },
+    {
+      "id": "amphion",
+      "name": "Amphion",
+      "role": "King of Thebes, husband of Niobe"
+    },
+    {
+      "id": "tantalus",
+      "name": "Tantalus",
+      "role": "Niobe's father, the doomed host of the gods"
+    },
+    {
+      "id": "leto",
+      "name": "Leto",
+      "role": "Mother of Apollo and Artemis"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Slayer of the Niobid sons"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Slayer of the Niobid daughters"
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "Father of Manto who proclaimed Latona's rites"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "Seven-gated city where the massacre fell" },
-    { "name": "Mount Sipylus", "role": "Niobe's native mountain and weeping stone" },
-    { "name": "Ismenus", "role": "Theban stream beside which the women worshiped" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "Seven-gated city where the massacre fell"
+    },
+    {
+      "name": "Mount Sipylus",
+      "role": "Niobe's native mountain and weeping stone",
+      "featureId": "mount-sipylus"
+    },
+    {
+      "name": "Ismenus",
+      "role": "Theban stream beside which the women worshiped",
+      "featureId": "ismenus"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Iliad", "citation": "24.602–617" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.5.6" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "6.146–312" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "9–10" }
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "24.602–617"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.5.6"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "6.146–312"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "9–10"
+    }
   ]
 }

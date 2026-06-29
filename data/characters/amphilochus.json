@@ -64,6 +64,11 @@
   ],
   "residences": [
     {
+      "city": "corinth",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.7"
+    },
+    {
       "city": "argos",
       "sources": [
         "homer",
@@ -72,11 +77,43 @@
       ]
     },
     {
+      "city": "thebes",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.2–4; Description of Greece 2.20.5, 10.10.4"
+    },
+    {
+      "city": "glisas",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.3; Description of Greece 9.5.13, 9.9.4"
+    },
+    {
       "city": "argos-amphilochicum",
       "sources": [
         "pausanias",
         "apollodorus"
       ]
+    },
+    {
+      "city": "troy",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.18.4–5"
+    },
+    {
+      "city": "colophon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2"
+    },
+    {
+      "city": "notium",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2, 6.4"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8"
     }
   ]
 }

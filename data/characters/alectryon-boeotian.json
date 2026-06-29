@@ -23,6 +23,11 @@
     {
       "city": "thebes",
       "sources": ["homer"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.494–510"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "id": "podalirius",
+  "name": "Podalirius",
+  "greekName": "Podalirios (Ποδαλείριος)",
+  "type": "hero",
+  "domains": [
+    "healing at Troy",
+    "the sons of Asclepius",
+    "the Returns by land"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Asclepius and brother of Machaon, one of the two physician-princes who sailed with the Achaeans — he who cured Philoctetes at Troy and later settled in the Carian Chersonese by an oracle's riddle.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.10.8; Epitome 5.8, 6.2, 6.18; Fabulae 81"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Podalirius and Machaon among the sons of Asclepius in the muster of the Achaean leaders — healers as well as captains, with Podalirius commanding thirty ships of the Triccaeans in the Catalogue of the Epitome.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8; Epitome 3.14"
+    },
+    {
+      "text": "When the oracle declared that Troy could not fall without the bow of Heracles, Odysseus and Diomedes fetched Philoctetes from Lemnos; back at the war the archer was cured by Podalirius and shot Alexander — the healer's art closing the wound that had kept the indispensable man from the plain for years.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.8"
+    },
+    {
+      "text": "After the city fell, Calchas foresaw that he would die if he met a wiser diviner than himself and refused to sail home with the fleet. Podalirius marched overland with Amphilochus, Leonteus, and Polypoetes to Colophon, where Mopsus outprophesied Calchas and the greatest seer of the host was buried at Notium.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2"
+    },
+    {
+      "text": "His own nostos took him to Delphi. Apollodorus says he asked where he should settle and received an oracle that he should live in the city where, if the encompassing heaven were to fall, he would suffer no harm — and so he founded in the Carian Chersonese the place encircled by mountains on every side of the horizon.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.18"
+    },
+    {
+      "text": "Hyginus lists Podalirius among the captains who fought at Troy — beside Diomedes, Philoctetes, Idomeneus, and the rest — keeping the healer-prince in the roll of those who sailed for Helen and survived the war.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 81"
+    }
+  ],
+  "residences": [
+    {
+      "city": "tricca-thessaly",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.695–730; Epitome 3.14; Fabulae 97"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.8; Fabulae 81"
+    },
+    {
+      "city": "colophon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2"
+    },
+    {
+      "city": "notium",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2, 6.4"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.695–730"
+    }
+  ]
+}

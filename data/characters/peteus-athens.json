@@ -1,0 +1,64 @@
+{
+  "id": "peteus-athens",
+  "name": "Peteus",
+  "greekName": "Peteus (Πέτεως)",
+  "romanName": "Peteus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "erechtheid prince",
+    "father of menestheus",
+    "exile from attica"
+  ],
+  "summary": [
+    {
+      "text": "Son of Orneus and father of Menestheus, the Athenian captain at Troy. Homer names him only as the sire whose son the youths of Athens still honour with sacrifices of bulls and rams; Pausanias sets him in the Erechtheid line from Orneus and records a Phocian tradition that he fled Attica when pursued by Aegeus.",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.550–580; Bibliotheca 3.10.8; Description of Greece 2.25.6, 10.35.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer knows Peteos only through his son. At Troy the Athenians follow Menestheus son of Peteos, whom the young men of the city still seek to win with sacrifices — and like unto him was none other on earth for marshalling chariots and warriors who bear the shield, only Nestor being his elder. The father himself stands behind the name in the oldest layer of the myth.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.550–580; 4.310–345; 12.330–395; 13.675–720"
+    },
+    {
+      "text": "Apollodorus lists Menestheus among the leaders at Troy as son of Peteos, and in the Epitome tells how Menestheus son of Peteos seized the kingdom of Athens while Theseus lay imprisoned in Hades — expelling Theseus' sons and holding the throne until the hero's return drove him out in turn. The succession runs through the son; Peteos is the genealogical link named in every account of Menestheus' parentage.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8; Epitome 1.23–24"
+    },
+    {
+      "text": "Pausanias derives the Argive town of Orneae from Orneus son of Erechtheus, and says this Orneus begat Peteos, and Peteos begat Menestheus, who with a body of Athenians helped Agamemnon destroy the kingdom of Priam. So an Erechtheid prince of Athens is set at the head of a small Argolid house whose fame is carried by his grandson before the walls of Troy.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.25.6"
+    },
+    {
+      "text": "The people of Phocian Stiris claimed to be Athenians by descent, saying they came from Attica together with Peteos, son of Orneus, when he was pursued from Athens by Aegeus; and because most of those who followed Peteos came from the Attic deme of Stiria, the city they founded was called Stiris.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.35.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.550–580; Bibliotheca 3.10.8, Epitome 1.23–24; Description of Greece 2.25.6, 10.35.8"
+    },
+    {
+      "city": "stiris-attica",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.35.8"
+    },
+    {
+      "city": "stiris-phocis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.35.8"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.550–580"
+    }
+  ]
+}

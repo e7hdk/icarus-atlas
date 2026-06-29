@@ -1,0 +1,36 @@
+{
+  "id": "ascalaphus-demeter",
+  "name": "Ascalaphus",
+  "greekName": "Askalaphos (Ἀσκάλαφος)",
+  "type": "mortal",
+  "cluster": "chthonic",
+  "domains": [
+    "the pomegranate witness",
+    "Avernian nymph's son",
+    "the rock in Hades"
+  ],
+  "summary": [
+    {
+      "text": "Son of the infernal river Acheron who bore witness that Persephone ate the pomegranate seed, and whom Demeter crushed under a heavy rock in Hades — a wholly different Ascalaphus from the son of Ares who captained the Minyans at Troy.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.5.3; Metamorphoses 5.564–567"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus ordered Pluto to send Persephone up from the underworld, Apollodorus says, Pluto gave her a seed of a pomegranate to eat so that she might not tarry long with her mother. Not foreseeing the consequence she swallowed it — and because Ascalaphus, son of Acheron and Gorgyra, bore witness against her, Demeter laid a heavy rock on him in Hades.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.3"
+    },
+    {
+      "text": "Ovid tells the same betrayal with different parentage: Orphne, famed among Avernian nymphs, bore Ascalaphus to Acheron in an infernal cave; he alone saw Proserpina pluck seven grains from the pallid pomegranate rind, and with cruel lips debarred the Maid's return. The Queen of Erebus, indignant, made him a bird — the tale of witness and punishment that fixed Persephone's divided year.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 5.564–567"
+    },
+    {
+      "text": "The name is shared with Ascalaphus son of Ares and Astyoche, captain of the Orchomenian ships in the Iliad, whom Deïphobus slew before loud-voiced Ares knew his son had fallen. The atlas keeps them apart as `ascalaphus-minyan` and `ascalaphus-demeter`.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 13.515–555"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "poeas",
+  "name": "Poeas",
+  "greekName": "Poias (Ποίας)",
+  "type": "hero",
+  "domains": [
+    "Meliboea and Olizon",
+    "the pyre on Oeta",
+    "father of Philoctetes"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of the Olizonians and father of Philoctetes — in Apollodorus the man who chanced upon Heracles' pyre on Mount Oeta, kindled it, and received the hero's bow that passed to his son.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.7.7, 3.10.8; Fabulae 102"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles, poisoned by the shirt of Nessus, had a pyre heaped on lofty Oeta and bade it kindled, no one would set a torch to it. Apollodorus says Poeas, passing by in search of his flocks, lit the fire — and on him Heracles bestowed his bow before a cloud wafted the hero up to heaven.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.7.7"
+    },
+    {
+      "text": "Hyginus names him father of Philoctetes by Demonassa of Meliboea — though in the same author's telling the son sometimes kindles the pyre himself and earns Juno's enmity on Lemnos. The father remains the Thessalian king whose line supplied seven ships of bowmen to the Trojan muster.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 102; Bibliotheca 3.10.8; Epitome 3.14"
+    },
+    {
+      "text": "Apollodorus also lists a Poeas son of Thaumacus among the Argonauts — a homonym hazard in the same author's catalogue, distinct from the Meliboean king unless the genealogies are silently merged. The Philoctetes of our Trojan stories is always son of Poeas of the Olizonian coast.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.16, 3.10.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "olizon-magnesia",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.695–730; Bibliotheca 3.10.8; Fabulae 102"
+    },
+    {
+      "city": "meliboea-magnesia",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 102; Bibliotheca 3.10.8"
+    },
+    {
+      "city": "methone-magnesia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.695–730"
+    }
+  ]
+}

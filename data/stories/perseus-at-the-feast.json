@@ -4,52 +4,106 @@
   "greekTitle": "Περσεὺς ἐν τοῖς γάμοις",
   "kind": "episode",
   "parent": "metamorphoses",
-  "era": 5.02,
+  "era": 5.83,
   "summary": {
     "text": "At the wedding feast after Andromeda's rescue, Perseus was asked how he won the Gorgon's head — and Ovid's poem pauses its forward march for the hero's inset tale: the Graeae, the nymphs' gifts, Atlas turned to stone, the princess on the rock, and Phineus petrified when he attacked the bride.",
-    "sources": ["ovid", "apollodorus"],
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
     "citation": "Ov. Met. 4.615–5.249; Apollod. 2.4.3"
   },
   "chapters": [
     {
       "title": "The request",
       "text": "With Andromeda freed and the sea-monster stone upon the shore, the company at Cepheus' table asked Perseus to tell by what arms and arts he had slain Medusa. The hero laid down the trophy still warm with serpent hair and began — and for many lines Ovid's Metamorphoses becomes Perseus' own voice, a story within the story of changed forms.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 4.615–668"
     },
     {
       "title": "Medusa and Atlas",
       "text": "Perseus recounted the Graeae's single eye, the nymphs who gave him winged sandals, cap of darkness, and the adamantine sickle; how he saw Medusa only in bronze and turned her to stone; and how he showed the head to Atlas on the western edge of the world, and the king who held up heaven himself became a mountain.",
-      "sources": ["ovid", "apollodorus"],
-      "citation": "Ov. Met. 4.668–4.990; Apollod. 2.4.3"
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
+      "citation": "Ov. Met. 4.668–803; Apollod. 2.4.3"
     },
     {
       "title": "Andromeda",
       "text": "Flying homeward he saw the Ethiopian princess chained for her mother's boast against the Nereids, promised Cepheus he would save her, and turned Cetus to stone mid-leap with the Gorgon's face. The inset returns to the feast: the wedding was set, but Phineus, who had been betrothed to Andromeda, burst in with armed men.",
-      "sources": ["ovid", "apollodorus"],
-      "citation": "Ov. Met. 4.990–5.170; Apollod. 2.4.3"
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
+      "citation": "Ov. Met. 5.1–170; Apollod. 2.4.3"
     },
     {
       "title": "Phineus",
       "text": "Perseus shielded Andromeda and turned the attackers to stone — Phineus last of all, still reaching with trembling hands toward the bride as marble fixed his terror. The full Perseid arc — Danae's chest, Seriphos, the Gorgon hunt — lives on the Perseus shelf; here Ovid keeps only the feast-frame and the transformations the hero's tale requires.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 5.1–249; Apollod. 2.4.3–4"
     }
   ],
   "cast": [
-    { "id": "perseus", "name": "Perseus", "role": "Hero who tells his own adventures at the wedding feast" },
-    { "id": "andromeda", "name": "Andromeda", "role": "The rescued bride" },
-    { "name": "Cepheus", "role": "Ethiopian king, Andromeda's father" },
-    { "name": "Cassiopeia", "role": "Queen whose boast brought the sea-monster" },
-    { "name": "Phineus", "role": "Former betrothed, turned to stone at the feast" },
-    { "name": "Medusa", "role": "The Gorgon whose head Perseus recounts winning" }
+    {
+      "id": "perseus",
+      "name": "Perseus",
+      "role": "Hero who tells his own adventures at the wedding feast"
+    },
+    {
+      "id": "andromeda",
+      "name": "Andromeda",
+      "role": "The rescued bride"
+    },
+    {
+      "id": "cepheus-ethiopia",
+      "name": "Cepheus",
+      "role": "Ethiopian king, Andromeda's father"
+    },
+    {
+      "id": "cassiopeia-ethiopia",
+      "name": "Cassiopeia",
+      "role": "Queen whose boast brought the sea-monster"
+    },
+    {
+      "id": "phineus-ethiopia",
+      "name": "Phineus",
+      "role": "Former betrothed, turned to stone at the feast"
+    },
+    {
+      "id": "medusa",
+      "name": "Medusa",
+      "role": "The Gorgon whose head Perseus recounts winning"
+    }
   ],
   "places": [
-    { "name": "Ethiopia", "role": "Coast where Andromeda was exposed and wed" },
-    { "name": "Atlas' realm", "role": "Western edge where Perseus petrified the king" }
+    {
+      "id": "aethiopia",
+      "name": "Aethiopia",
+      "role": "Coast where Andromeda was exposed and wed"
+    },
+    {
+      "name": "Atlas' realm",
+      "role": "Western edge where Perseus petrified the king",
+      "featureId": "mount-atlas"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "4.615–5.249" },
-    { "source": "apollodorus", "work": "The Library", "citation": "2.4.3–4" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "4.615–5.249"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.4.3–4"
+    }
   ]
 }

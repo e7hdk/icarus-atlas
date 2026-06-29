@@ -1,0 +1,54 @@
+{
+  "id": "acamas-athens",
+  "name": "Acamas",
+  "greekName": "Acamas (Ἀκάμας)",
+  "romanName": "Acamas",
+  "type": "hero",
+  "domains": [
+    "son of Theseus and Phaedra",
+    "prince expelled from Athens",
+    "warrior at Troy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Theseus and Phaedra, brother of Demophon — a namesake of Antenor's Dardanian son, of Eusorus' Thracian captain, and of Penelope's Dulichian wooer, but Apollodorus and Pausanias keep this prince among the sons driven out by Menestheus and among the Athenians who fought at Troy and freed Aethra.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Epitome 1.18, 1.23, 5.22; Description of Greece 1.5.2, 10.10.1, 10.26.2; Fabulae 108"
+    }
+  ],
+  "story": [
+    {
+      "text": "Phaedra bore Acamas and Demophon to Theseus before she fell in love with Hippolytus, her stepson by the Amazon. When Castor and Polydeuces captured Athens and carried off Helen and Aethra, the two brothers fled while Menestheus son of Peteos was restored and given the sovereignty of Athens.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.18, 1.23"
+    },
+    {
+      "text": "Apollodorus says they afterwards went to Troy; at the fall of the city Demophon and Acamas led away their grandmother Aethra from Helen's house. Hyginus names Acamas among the warriors hidden in the wooden horse when Epeius built it at Athena's suggestion.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.22; Fabulae 108"
+    },
+    {
+      "text": "Pausanias counts Acamas among the eponymous heroes who gave names to Athenian tribes by Delphic oracle, and in the Delphic painting of the sack he stands beside Polypoetes son of Peirithous, wearing a crested helmet — one of the sons of Theseus set among the victors at Troy.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.5.2, 10.10.1, 10.26.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.18, 1.23, 5.22; Description of Greece 1.5.2, 10.10.1"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Epitome 5.22"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Epitome 5.22; Description of Greece 10.10.1, 10.26.2; Fabulae 108"
+    }
+  ]
+}

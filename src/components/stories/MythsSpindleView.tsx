@@ -7,7 +7,8 @@ import { Html, PerformanceMonitor } from '@react-three/drei';
 import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
 import * as THREE from 'three';
-import type { Story, StoryCrossing, StoryKind } from '@/types/story';
+import type { Chronology, Story, StoryCrossing, StoryKind } from '@/types/story';
+import { buildChronologyYears } from '@/features/stories/chronology';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
 import { childrenOf } from '@/features/stories/shelves';
@@ -427,16 +428,21 @@ function StoryPanel({
 export function MythsSpindleView({
   stories,
   crossings = [],
+  chronology = null,
 }: {
   stories: Story[];
   crossings?: StoryCrossing[];
+  chronology?: Chronology | null;
 }) {
   const lens = useGalaxyStore((s) => s.lens);
   const isMobile = useIsMobile();
   const [highPerf, setHighPerf] = useState(true);
   const dpr = isMobile ? (highPerf ? 1 : 0.75) : highPerf ? 1.75 : 1.5;
 
-  const layout = useMemo(() => buildSpindleLayout(stories), [stories]);
+  // Real chronographic years drive the spindle's depth (see buildSpindleLayout); the
+  // map is per-saga anchored + interpolated, with the timeless divine prologue null.
+  const years = useMemo(() => buildChronologyYears(stories, chronology), [stories, chronology]);
+  const layout = useMemo(() => buildSpindleLayout(stories, years), [stories, years]);
   const storyById = useMemo(() => new Map(stories.map((s) => [s.id, s])), [stories]);
 
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -480,6 +486,21 @@ export function MythsSpindleView({
     const set = new Set<SagaId>();
     for (const node of layout.nodes) set.add(node.sagaId);
     return SAGA_ORDER.filter((id) => set.has(id));
+  }, [layout.nodes]);
+
+  // The opening story of each saga (its earliest-era node = the arm's root / first
+  // chapter), so clicking a legend entry flies the camera to where that arm begins.
+  const firstStoryBySaga = useMemo(() => {
+    const m = new Map<SagaId, string>();
+    const minEra = new Map<SagaId, number>();
+    for (const node of layout.nodes) {
+      const cur = minEra.get(node.sagaId);
+      if (cur === undefined || node.era < cur) {
+        minEra.set(node.sagaId, node.era);
+        m.set(node.sagaId, node.id);
+      }
+    }
+    return m;
   }, [layout.nodes]);
 
   const universeRadius = layout.radius * UNIVERSE_SCALE;
@@ -594,6 +615,12 @@ export function MythsSpindleView({
           }}
         >
           <color attach="background" args={['#06031a']} />
+          {/* Depth fog: stars and threads far down the corridor dissolve into the
+              same dark as the background, so the tunnel reads as deep 3D space
+              instead of a flat scatter. Density is the one knob — higher = the haze
+              closes in sooner. The spindle materials opt in via fog:true; the galaxy
+              reuses the star shaders but sets no fog, so it stays crisp. */}
+          <fogExp2 attach="fog" args={['#06031a', 0.0011]} />
           <PerformanceMonitor onDecline={() => setHighPerf(false)} onIncline={() => setHighPerf(true)} />
           {/* The roll group: the rig spins it about its axis and slides it along
               to roll the chosen star down to the marble. Inside, the spindle is
@@ -663,16 +690,35 @@ export function MythsSpindleView({
         </p>
       </div>
 
-      {/* Legend */}
+      {/* Legend — click an arm to fly to where it begins */}
       <div className="pointer-events-none fixed bottom-16 left-4 z-20 hidden flex-col gap-1.5 sm:flex">
-        {presentSagas.map((id) => (
-          <span key={id} className="flex items-center gap-2">
-            <i className="h-2 w-2 rounded-full" style={{ background: SAGA_ACCENT[id], boxShadow: `0 0 8px ${SAGA_ACCENT[id]}` }} />
-            <span className="font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint">
-              {SAGA_LABEL[id]}
-            </span>
-          </span>
-        ))}
+        {presentSagas.map((id) => {
+          const target = firstStoryBySaga.get(id);
+          const active = selectedNode?.sagaId === id;
+          return (
+            <button
+              key={id}
+              type="button"
+              disabled={!target}
+              onClick={() => target && select(target)}
+              title={`Fly to ${SAGA_LABEL[id]}`}
+              className="group pointer-events-auto flex items-center gap-2 text-left disabled:cursor-default"
+            >
+              <i
+                className="h-2 w-2 rounded-full transition-transform duration-200 group-hover:scale-150"
+                style={{ background: SAGA_ACCENT[id], boxShadow: `0 0 8px ${SAGA_ACCENT[id]}` }}
+              />
+              <span
+                className={`font-display text-[10px] uppercase tracking-[0.2em] transition-colors group-hover:text-aether ${
+                  active ? '' : 'text-aether-faint'
+                }`}
+                style={active ? { color: SAGA_ACCENT[id] } : undefined}
+              >
+                {SAGA_LABEL[id]}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Hint */}

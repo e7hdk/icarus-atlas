@@ -1,0 +1,32 @@
+{
+  "id": "enyo-graea",
+  "name": "Enyo (Graeae)",
+  "greekName": "Enyō (Ἐνυώ)",
+  "romanName": "Enyo",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "grey from birth",
+    "sister of the Gorgons",
+    "the saffron-robed Graia"
+  ],
+  "summary": [
+    {
+      "text": "One of the fair-cheeked Graeae whom Hesiod names beside Pemphredo as a grey-haired daughter of Phorcys and Ceto; Apollodorus counts her among the three grey sisters who share one eye and one tooth.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 270–276; Bibliotheca 2.4.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names saffron-robed Enyo with Pemphredo among the Graiae grey from their birth, daughters of Phorcys and Ceto and sisters of the Gorgons. Apollodorus makes Enyo one of the three Phorcides — Enyo, Pephredo and Dino — who pass a single eye and tooth among them until Perseus snatches both. Hyginus lists Enyo between Pemphredo and Persis (whom others call Dino). The collective node `graeae` holds the shared eye; this node is the individual named in all three rolls.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 270–276; Bibliotheca 2.4.2; Fabulae preface"
+    },
+    {
+      "text": "The atlas keeps this Enyo distinct from the war-goddess Enyo — no separate node for the latter yet — who would belong to a different divine stock if promoted.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 270–276; Bibliotheca 2.4.2"
+    }
+  ]
+}

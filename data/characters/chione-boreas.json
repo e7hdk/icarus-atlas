@@ -1,15 +1,16 @@
 {
-  "id": "chione-athens",
+  "id": "chione-boreas",
   "name": "Chione",
   "greekName": "Chionē (Χιόνη)",
   "romanName": "Chione",
-  "type": "mortal",
+  "type": "nymph",
+  "cluster": "mortal-arm",
   "domains": [
-    "the North Wind's line",
+    "daughter of Boreas",
+    "mother of Eumolpus",
     "the concealed birth",
     "the Eleusinian descent"
   ],
-  "cluster": "mortal-arm",
   "summary": [
     {
       "text": "Daughter of Boreas the North Wind and Orithyia, sister to Cleopatra and to the winged Argonauts Zetes and Calais. Lying with Poseidon, she bore Eumolpus in secret and cast the child into the sea to escape her father's notice.",
@@ -17,6 +18,13 @@
         "apollodorus"
       ],
       "citation": "Bibliotheca 3.15.2, 3.15.4"
+    },
+    {
+      "text": "Pausanias records the same descent on the Eleusinian side: Eumolpus came from Thrace, son of Poseidon and Chione, and Chione was daughter of the wind Boreas and of Orithyia.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.38.2"
     }
   ],
   "story": [
@@ -40,6 +48,14 @@
         "pausanias"
       ],
       "citation": "Description of Greece 1.38.2"
+    },
+    {
+      "text": "Apollodorus and Pausanias name her only as Boreas' daughter without a nymph sub-class in our seven lenses; `kinds` is therefore omitted here by the same policy as Calypso and Eidothea until a sourced tag lands. She is distinct from `chione-daedalion`, Daedalion's daughter and mother of Autolycus and Philammon.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.15.2, 3.15.4; Description of Greece 1.38.2"
     }
   ]
 }

@@ -575,7 +575,7 @@ The quarrel of Achilles: the plague-priest, the two captives, the ugly railer, t
 
 ### Batch AV — Anchises' daughter, Oileus' household & Bucolion stemma ✅ (5 figures)
 
-`hippodameia-trojan`, `rhene-phthian`, `eriopis-phthian`, `bucolion-trojan`, `abarbarea-trojan` — *Iliad* 2, 6, 13, 15; *Bibl.* 3.12.3, 3.12.5; Fabulae 97. `Hippodameia`, `Rhene`, `Eriopis`, `Bucolion`, `Abarbarea` deferrals cleared; `priam` parent edge for `bias-trojan`; `hippodameia-trojan` ≠ `hippodameia-lapith` / Pelops' bride; `bucolion-trojan` ≠ `bucolus-athenian`; Hyginus names `rhene-phthian` mother of `ajax-oileus` (Homer silent); Apollodorus names Bucolion's mother Calybe (prose only — not a node).
+`hippodameia-trojan`, `rhene-phthian`, `eriopis-phthian`, `bucolion-trojan`, `abarbarea-trojan`, `calybe-nymph` — *Iliad* 2, 6, 13, 15; *Bibl.* 3.12.3, 3.12.5; Fabulae 97. `Hippodameia`, `Rhene`, `Eriopis`, `Bucolion`, `Abarbarea` deferrals cleared; `priam` parent edge for `bias-trojan`; `hippodameia-trojan` ≠ `hippodameia-lapith` / Pelops' bride; `bucolion-trojan` ≠ `bucolus-athenian`; Hyginus names `rhene-phthian` mother of `ajax-oileus` (Homer silent); Apollodorus names Bucolion's mother `calybe-nymph` — rival to Homer's `abarbarea-trojan` (`bucolion-mother`).
 
 ### Batch AW — Hecuba stemma & Apollodorus Priam sons ✅ (8 relations)
 

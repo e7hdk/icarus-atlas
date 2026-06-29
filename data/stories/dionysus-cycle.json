@@ -1,0 +1,152 @@
+{
+  "id": "dionysus-cycle",
+  "title": "The Dionysus Cycle",
+  "greekTitle": "Διονυσιακὸς κύκλος",
+  "kind": "saga",
+  "parent": null,
+  "era": 5,
+  "eraEnd": 7.2,
+  "summary": {
+    "text": "Twice-born from the lightning that slew Semele at Thebes, Dionysus wandered the world with his nurses and maenads — driving Lycurgus mad in Thrace, turning Tyrrhenian pirates into dolphins, shattering Pentheus who denied him, granting and revoking Midas' golden touch, and taking Ariadne from Naxos to be his bride among the stars.",
+    "sources": [
+      "hesiod",
+      "homer",
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "citation": "Hes. Th. 940–942; Hom. Il. 6.130–140; Apollod. 3.4.3–3.5.3; Ov. Met. 3.253–733, 11.130–299; Hyg. Fab. 134, 167, 184"
+  },
+  "chapters": [
+    {
+      "title": "Twice-born at Thebes",
+      "text": "Semele daughter of Cadmus lay with Zeus until Hera's trick brought the lightning; the god sewed the unborn child in his thigh, and Dionysus entered the world — though poets dispute whether Persephone or Semele was his first mother.",
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Hes. Th. 940–942; Apollod. 3.4.3; Ov. Met. 3.253–315; Hyg. Fab. 167"
+    },
+    {
+      "title": "Wanderings and resistance",
+      "text": "Lycurgus of Thrace was the first to drive the god's nurses from Nysa with an ox-goad, until Dionysus fled to Thetis and the gods blinded the king. Tyrrhenian sailors who tried to sell the beautiful stranger found mast and sail become vine and ivy, and themselves dolphins in the sea.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Hom. Il. 6.130–140; Apollod. 3.5.1, 3.5.3; Ov. Met. 3.582–691; Hyg. Fab. 134"
+    },
+    {
+      "title": "Pentheus and the maenads",
+      "text": "Returning to his mother's city, Dionysus found Pentheus denying the new god; he drove the Theban women to frenzy on Cithaeron, and Agave the king's mother tore her son apart with her bare hands, thinking him a lion.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.5.2; Ov. Met. 3.511–733; Hyg. Fab. 184"
+    },
+    {
+      "title": "Bridegroom and judge",
+      "text": "On Naxos he received Ariadne abandoned by Theseus — Homer makes Artemis slay her on his word, while other poets crown her among the stars as his wife. In Phrygia King Midas won the golden touch from Bacchus and washed the curse away in the river; on Tmolus he preferred Pan's pipes to Apollo's lyre and wore ass's ears for his judgment.",
+      "sources": [
+        "homer",
+        "hesiod",
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 11.321–325; Hes. Th. 947–948; Apollod. Epit. 1.9; Ov. Met. 8.174–182, 11.130–299; Hyg. Fab. 43, 191"
+    }
+  ],
+  "cast": [
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "role": "Twice-born god of wine and ecstasy"
+    },
+    {
+      "id": "semele",
+      "name": "Semele",
+      "role": "Theban mother blasted by Zeus' lightning"
+    },
+    {
+      "id": "pentheus",
+      "name": "Pentheus",
+      "role": "King who denied the god"
+    },
+    {
+      "id": "agave",
+      "name": "Agave",
+      "role": "Maenad who slew her son"
+    },
+    {
+      "id": "lycurgus-thrace",
+      "name": "Lycurgus",
+      "role": "Thracian king who persecuted the nurses"
+    },
+    {
+      "id": "acoetes-tyrrhenian",
+      "name": "Acoetes",
+      "role": "Pilot who alone recognized the god"
+    },
+    {
+      "id": "ariadne",
+      "name": "Ariadne",
+      "role": "Abandoned bride taken on Naxos"
+    },
+    {
+      "id": "midas",
+      "name": "Midas",
+      "role": "Phrygian king of the golden touch"
+    }
+  ],
+  "places": [
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "Birth-city of Semele and scene of Pentheus' fall"
+    },
+    {
+      "name": "Naxos",
+      "role": "Island where Ariadne was left and crowned",
+      "id": "naxos"
+    },
+    {
+      "name": "Mount Tmolus",
+      "role": "Judgment of the musical contest",
+      "featureId": "mount-tmolus"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "940–948"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "6.130–140"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.4.3–3.5.3, Epit. 1.9"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3.253–733, 8.174–182, 11.130–299"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "43, 134, 167, 184, 191"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "city": "messene",
+  "reigns": [
+    {
+      "ruler": "Cresphontes",
+      "characterId": "cresphontes",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 2.8.4–5; Paus. 4.3.3–7; Hyg. Fab. 137",
+      "note": "Heraclid who won Messenia by the clay lot and wed Merope; Pausanias makes Stenyclarus his royal seat before the rich killed him."
+    },
+    {
+      "ruler": "Polyphontes",
+      "characterId": "polyphontes",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 2.8.5; Hyg. Fab. 137",
+      "note": "Heraclid usurper who murdered Cresphontes and forced Merope to marry him until Aepytus avenged his father."
+    },
+    {
+      "ruler": "Aepytus",
+      "characterId": "aepytus-heraclid",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. 2.8.5; Paus. 4.3.8; Hyg. Fab. 137",
+      "note": "Sole surviving son of Cresphontes; restored the Messenian throne and gave his name to the Aepytidae line."
+    }
+  ]
+}

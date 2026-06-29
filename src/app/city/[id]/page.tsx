@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
-import { loadCities, loadLineage, loadRegions } from '@/features/geo/load';
+import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';
 import { CityShell } from '@/components/city/CityShell';
+import { buildCharacterIndex, loadAtlasData } from '@/features/characters/load';
+import { loadCities, loadLineage, loadRegions } from '@/features/geo/load';
 
 export async function generateStaticParams() {
   const cities = await loadCities();
@@ -21,10 +23,15 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
 
 export default async function CityPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [cities, regions] = await Promise.all([loadCities(), loadRegions()]);
+  const [cities, regions, { characters }] = await Promise.all([
+    loadCities(),
+    loadRegions(),
+    loadAtlasData(),
+  ]);
   const city = cities.find((c) => c.id === id);
   if (!city) notFound();
 
+  const characterIndex = buildCharacterIndex(characters);
   const lineage = await loadLineage(city.id);
   const region = city.region ? regions.find((r) => r.id === city.region) : undefined;
   const parentRegion = region?.parent ? regions.find((r) => r.id === region.parent) : undefined;
@@ -51,9 +58,11 @@ export default async function CityPage(props: { params: Promise<{ id: string }> 
                 </span>
                 <div className="min-w-0 pt-1" title={reign.citation}>
                   <div className="flex flex-wrap items-baseline gap-2">
-                    <h3 className="font-display text-xl tracking-[0.08em] text-aether">
-                      {reign.ruler}
-                    </h3>
+                    <ReignRulerLinks
+                      reign={reign}
+                      characterIndex={characterIndex}
+                      className="font-display text-xl tracking-[0.08em]"
+                    />
                     {reign.topic && (
                       <span
                         className="text-sm text-nebula-soft"

@@ -1,0 +1,46 @@
+{
+  "id": "pyramus-thisbe",
+  "title": "Pyramus and Thisbe",
+  "greekTitle": "Πύραμος καὶ Θισβή",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5.1,
+  "summary": {
+    "text": "Pyramus and Thisbe, the fairest youth and maiden in Semiramis' Babylon, loved through a crack in the wall between their fathers' houses — until a lioness stained Thisbe's cloak with blood, Pyramus thought her dead and fell on his sword, and she followed him; their blood darkened the mulberry forever.",
+    "sources": ["ovid", "hyginus"],
+    "citation": "Ov. Met. 4.55–166; Hyg. Fab. 242–243"
+  },
+  "chapters": [
+    {
+      "title": "The wall between",
+      "text": "In adjoining houses near the walls Queen Semiramis had built of brick, the two grew fond and spoke through a chink in the party wall — a crack their fathers' hatred of each other could not seal. They planned to steal out by night to Ninus' tomb outside the city and meet there alone.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 4.55–100"
+    },
+    {
+      "title": "The lioness",
+      "text": "Thisbe arrived first and fled a lioness fresh from the kill, dropping her cloak in her terror. When Pyramus came and saw the blood-stained garment and the beast's tracks, he believed his love destroyed and drove his sword into his side. Thisbe returned, found him dying, and took the weapon from his breast to follow.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 4.100–150"
+    },
+    {
+      "title": "The mulberry",
+      "text": "Their blood spattered the roots of a mulberry tree, and the gods changed its fruit from white to dark red in memory of the lovers. Hyginus counts Pyramus among those who killed themselves for love of Thisbe, and Thisbe among those who died when Pyramus had already slain himself.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Ov. Met. 4.150–166; Hyg. Fab. 242–243"
+    }
+  ],
+  "cast": [
+    { "id": "pyramus", "name": "Pyramus", "role": "The youth who died believing Thisbe lost" },
+    { "id": "thisbe", "name": "Thisbe", "role": "The maiden who followed him to death" },
+    { "id": "semiramis-babylon", "name": "Semiramis", "role": "Queen whose brick walls bound the lovers' houses" }
+  ],
+  "places": [
+    { "name": "Babylon", "role": "City of the adjoining houses and the stained mulberry" },
+    { "name": "Ninus' tomb", "role": "The trysting-place outside the walls" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "4.55–166" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "242–243" }
+  ]
+}

@@ -18,5 +18,22 @@
       "sources": ["homer"],
       "citation": "Iliad 2.735–775"
     }
+  ],
+  "residences": [
+    {
+      "city": "cyphus-perrhaebia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
   ]
 }

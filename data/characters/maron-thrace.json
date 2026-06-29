@@ -1,0 +1,39 @@
+{
+  "id": "maron-thrace",
+  "name": "Maron",
+  "greekName": "Marōn (Μάρων)",
+  "type": "mortal",
+  "domains": ["priest of Apollo", "Maroneian wine", "Ismarus"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Evanthes, priest of Apollo, who dwelt at Ismarus in the land of the Cicones — he gave Odysseus dark sweet wine in twelve jars, unmixed and divine, together with gold and a silver bowl, and his wife added cloaks and mantles; that wine later blinded Polyphemus.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 9.196–215; Epitome 7.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus sacked Ismarus, city of the Cicones, Maron son of Evanthes received him kindly because he revered the god. He gave twelve jars of sweet wine, a drink unmixed and divine — one cup of it poured into twenty of water still bore a sweet smell — and seven talents of gold and a silver mixing-bowl; his wife, daughter of Maron, gave twelve cloaks and as many mantles.",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.196–215"
+    },
+    {
+      "text": "Odysseus carried that vintage aboard the ships; in the Cyclops' cave he gave Polyphemus the Maronean wine to drink, and when the giant slept drunk the Greeks drove the heated stake into his one eye.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 9.196–215, 9.345–400; Epitome 7.4"
+    },
+    {
+      "text": "He must not be confused with Maron the Lacedaemonian honoured at Sparta beside Alpheius after Thermopylae — a different man who shares only the name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.12.9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "maroneia-thrace",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 9.196–215; Epitome 7.4"
+    }
+  ]
+}

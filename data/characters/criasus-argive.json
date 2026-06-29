@@ -1,0 +1,47 @@
+{
+  "id": "criasus-argive",
+  "name": "Criasus",
+  "greekName": "Kriasos (Κρίαςος)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "successor of Argus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Argus and Evadne who succeeded his father to the kingdom of Argos in Apollodorus' catalogue of the early Peloponnesian kings.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.2; Fabulae 145"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Criasus among the sons Argus begat on Evadne, daughter of Strymon and Neaera — with Ecbasus, Piras, and Epidaurus — and says that Criasus also succeeded to the kingdom after his father had named the land Argos.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.2"
+    },
+    {
+      "text": "Hyginus' compressed genealogy likewise makes Criasus a son of Argus and Evadne, born beside Piranthus and Ecbasus before the collateral lines that produce Triopas and the later Inachids.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 145"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.2; Fabulae 145"
+    }
+  ]
+}

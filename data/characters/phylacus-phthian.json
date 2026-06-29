@@ -23,5 +23,17 @@
       "sources": ["homer"],
       "citation": "Iliad 6.1–35; Odyssey 15.225–260"
     }
+  ],
+  "residences": [
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.695–730"
+    }
   ]
 }

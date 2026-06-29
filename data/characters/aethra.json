@@ -64,5 +64,22 @@
       ],
       "citation": "Iliad 3.143–145"
     }
+  ],
+  "residences": [
+    {
+      "city": "troezen",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.15.7–3.16.1; Description of Greece 2.33.1"
+    },
+    {
+      "city": "aphidnae",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.7"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.143–145; Epitome 5.22"
+    }
   ]
 }

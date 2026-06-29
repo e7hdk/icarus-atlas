@@ -7,68 +7,137 @@
   "era": 0.44,
   "summary": {
     "text": "Hera, joined in love with Zeus as his last and lasting wife, bore him Ares — god of war in its rawest aspect, feared by mortals and unloved even on Olympus — though Ovid preserves a Roman variant in which Juno conceived Mars with no father at all, touched by a magic flower from Flora's garden after Jupiter bore Minerva without her.",
-    "sources": ["hesiod", "homer", "ovid"],
+    "sources": [
+      "hesiod",
+      "homer",
+      "ovid"
+    ],
     "citation": "Hes. Th. 921-923; Hom. Il. 5.889-898; Ov. Fasti 5.229-258"
   },
   "chapters": [
     {
       "title": "Children of the royal marriage",
       "text": "When the blessed gods had finished their toil against the Titans, Zeus made gold-shod Hera his last and lasting wife. Hesiod names the children of that union: Hebe, Eileithyia, and Ares — the war god born not from a rival nymph or a swallowed counsellor but from the queen of Olympus herself. Apollodorus lists the same royal brood among Zeus's children by Hera. The nested Olympian births on Delos and Cyllene tell how Zeus's loves scattered across the earth; here the lawful marriage-bed produces the god whom even his father would call the most hateful of all who hold Olympus.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 921-923; Apollod. 1.3.1"
     },
     {
       "title": "The spirit of strife",
       "text": "No child of Zeus was less welcome at his father's knee. When Ares came whining to Olympus after Diomedes wounded him at Troy, the king of gods reviled him: most hateful of all gods who hold Olympus, a creature of strife, wars and fighting, with all his mother Hera's unbearable, unyielding spirit. Homer makes Ares son of Zeus and Hera without ambiguity — the divine embodiment of carnage, insatiate of war, whom Athena would later felled with a boundary stone when the gods themselves came to blows.",
-      "sources": ["homer", "hesiod"],
+      "sources": [
+        "homer",
+        "hesiod"
+      ],
       "citation": "Hom. Il. 5.889-898, 21.391-414; Hes. Th. 921-923"
     },
     {
       "title": "Juno and the flower",
       "text": "Ovid tells a stranger tale in his calendar of Roman rites. Juno, stung that Jupiter had brought forth Minerva from his head without a mother, sought counsel from Flora, goddess of flowering fields. Flora touched the queen with a magic flower from the gardens of Olenus, and Juno conceived Mars with no father at all — a Roman answer to Athena's head-birth that removes even Zeus from the war god's begetting. The Greek genealogies make Ares son of Zeus and Hera; Ovid's Fasti preserves the fatherless variant for Mars.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Fasti 5.229-258",
       "topic": "ares-conception"
     },
     {
       "title": "Enyalios and the battlefield",
       "text": "Homer often calls the war god Enyalios — a name that could blur with a separate spirit of battle, but in the Iliad Ares fights in person on the Trojan side, and the battlefield humbles him. Diomedes, with Pallas Athena guiding his spear, drove the bronze into the god's belly; Ares bellowed as loud as nine or ten thousand warriors crying in battle and fled wrapped in storm-cloud to Olympus to show Zeus his immortal blood. The son Hera bore would never win his father's love, only his father's scorn.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Il. 5.846-909"
     },
     {
       "title": "Brother of Hebe and Eileithyia",
       "text": "Hesiod sets Ares beside gentler siblings: Hebe, cupbearer of the gods, and Eileithyia, goddess of childbirth. The same queen who bore the war god also bore the divine nurse of youth and the helper of women in labour — three faces of Hera's motherhood on Olympus. Apollodorus counts Ares among Zeus's children by Hera without the Ovidian flower; the Theogony's list is the Greek spine on which the Iliad's scornful father builds.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 921-923; Apollod. 1.3.1"
     },
     {
       "title": "The unloved Olympian",
       "text": "Ares took his seat among the immortals as god of war, bloodlust, and carnage — beloved of Aphrodite in later song, bound in a bronze jar by the Aloadae until Hermes stole him away, tried and acquitted on the Areopagus for the blood of Halirrhothius. Yet his birth story is simple in Hesiod and Homer: the child of Zeus and Hera, born after the Titanomachy into a court that would never cherish him. The nested Titanomachy tells the war that made Zeus king; this episode tells how the king's lawful union produced the god he hated most.",
-      "sources": ["hesiod", "homer", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 921-923; Hom. Il. 5.889-898; Apollod. 1.3.1, 3.14.2"
     }
   ],
   "cast": [
-    { "id": "ares", "name": "Ares", "role": "War god born of Zeus and Hera, or of Juno alone in Ovid" },
-    { "id": "hera", "name": "Hera", "role": "Queen who bore the god of strife" },
-    { "id": "zeus", "name": "Zeus", "role": "Father who reviled his warlike son" },
-    { "id": "hebe", "name": "Hebe", "role": "Sister, cupbearer of the gods" },
-    { "id": "eileithyia", "name": "Eileithyia", "role": "Sister, goddess of childbirth" },
-    { "id": "athena", "name": "Athena", "role": "Head-born rival in Ovid's Juno motive" },
     {
+      "id": "ares",
+      "name": "Ares",
+      "role": "War god born of Zeus and Hera, or of Juno alone in Ovid"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Queen who bore the god of strife"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Father who reviled his warlike son"
+    },
+    {
+      "id": "hebe",
+      "name": "Hebe",
+      "role": "Sister, cupbearer of the gods"
+    },
+    {
+      "id": "eileithyia",
+      "name": "Eileithyia",
+      "role": "Sister, goddess of childbirth"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Head-born rival in Ovid's Juno motive"
+    },
+    {
+      "id": "flora",
       "name": "Flora",
       "role": "Goddess who gave Juno the magic flower in Ovid"
     }
   ],
   "places": [
-    { "name": "Olympus", "role": "Seat of Zeus and Hera where Ares was born among the immortals" },
-    { "name": "Olenus", "role": "Fields whence Flora's wondrous flower came in Ovid" }
+    {
+      "name": "Olympus",
+      "role": "Seat of Zeus and Hera where Ares was born among the immortals",
+      "featureId": "mount-olympus"
+    },
+    {
+      "name": "Olenus",
+      "role": "Fields whence Flora's wondrous flower came in Ovid"
+    }
   ],
   "attestations": [
-    { "source": "hesiod", "work": "Theogony", "citation": "921-923" },
-    { "source": "homer", "work": "Iliad", "citation": "5.846-909" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.3.1" },
-    { "source": "ovid", "work": "Fasti", "citation": "5.229-258" }
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "921-923"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "5.846-909"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.3.1"
+    },
+    {
+      "source": "ovid",
+      "work": "Fasti",
+      "citation": "5.229-258"
+    }
   ]
 }

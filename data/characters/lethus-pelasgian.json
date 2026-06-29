@@ -28,5 +28,22 @@
       "sources": ["apollodorus"],
       "citation": "Epitome 3.35"
     }
+  ],
+  "residences": [
+    {
+      "city": "larisa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855; Epitome 3.35"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 17.275–315"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.820–855"
+    }
   ]
 }

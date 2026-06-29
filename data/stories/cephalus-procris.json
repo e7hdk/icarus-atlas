@@ -7,49 +7,120 @@
   "era": 7.065,
   "summary": {
     "text": "Cephalus the Aeolid hunter and Procris swore never to be untrue — but Dawn carried him off, jealousy returned in whispers of a rival named Aura, and the wife who followed her husband into the thicket died on his unerring javelin when he hurled at what he thought was game.",
-    "sources": ["ovid", "apollodorus", "hyginus"],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Ov. Met. 7.690–865; Apollod. 3.15.1; Hyg. Fab. 189"
   },
   "chapters": [
     {
+      "title": "Minos and the Sporades",
+      "text": "Ovid sets the tale on Aegina while Minos son of Zeus sails against the Aeacidae: the Cretan fleet passed the islands that gave no aid — Oliarus, Didymae, Tenos, Gyaros, Andros, and Peparethos rich in glossy olives — before he turned to Oenopia, the realm Aeacus had renamed Aegina from his mother's name.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 7.731–760"
+    },
+    {
       "title": "The vow",
       "text": "Cephalus son of Deion, king of Phocis, married Procris — Apollodorus and Pausanias call her daughter of Erechtheus, Hyginus daughter of Pandion — and they bound each other with oaths of fidelity. He loved the hunt above all; she loved him. Then Eos saw the hunter on the mountain and carried him away, and the marriage cracked under suspicion.",
-      "sources": ["ovid", "apollodorus", "hyginus"],
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 7.690–740; Apollod. 1.9.4, 3.15.1; Hyg. Fab. 189"
     },
     {
       "title": "Aura",
       "text": "Ovid tells how reconciled lovers renewed their trust until a busybody heard Cephalus call upon the breeze — Aura, come — to cool him after the chase, and reported to Procris that a mistress shared the name. Hyginus instead has Aurora disguise the hunter to test his wife; either way Procris fled, won back gifts of the chase, and returned — yet doubt still gnawed.",
-      "sources": ["ovid", "hyginus"],
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 7.740–810; Hyg. Fab. 189"
     },
     {
       "title": "The gifts",
       "text": "Apollodorus says Procris, after fleeing to Crete and sharing Minos' bed, received a dog that no beast could outrun and a dart that never missed — the same weapons Diana gives her in Hyginus when she sends the wife back to out-hunt her husband and win reconciliation. Cephalus prized both; Procris kept the javelin close.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.15.1; Hyg. Fab. 189, 241"
     },
     {
       "title": "The thicket",
       "text": "Procris followed her husband at dawn to spy on the rival Aura; when she rustled the leaves Cephalus, hearing movement, threw the unerring dart at what he took for a beast and pierced his wife. She died in his arms naming the innocent breeze; he learned too late that jealousy, not adultery, had brought them to the wood. Apollodorus adds the Areopagus and perpetual banishment; Ovid ends in grief and the tale told to Aeacus.",
-      "sources": ["ovid", "apollodorus", "hyginus"],
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 7.810–865; Apollod. 3.15.1; Hyg. Fab. 189"
     }
   ],
   "cast": [
-    { "id": "cephalus-aeolid", "name": "Cephalus", "role": "Aeolid hunter of Phocis who killed Procris by mischance" },
-    { "id": "procris", "name": "Procris", "role": "His wife, killed by his unerring javelin" },
-    { "id": "eos", "name": "Eos", "role": "Dawn, who first carried Cephalus away" },
-    { "id": "minos", "name": "Minos", "role": "King of Crete, who gave Procris the hound and dart in Apollodorus" }
+    {
+      "id": "cephalus-aeolid",
+      "name": "Cephalus",
+      "role": "Aeolid hunter of Phocis who killed Procris by mischance"
+    },
+    {
+      "id": "procris",
+      "name": "Procris",
+      "role": "His wife, killed by his unerring javelin"
+    },
+    {
+      "id": "eos",
+      "name": "Eos",
+      "role": "Dawn, who first carried Cephalus away"
+    },
+    {
+      "id": "minos",
+      "name": "Minos",
+      "role": "King of Crete, who gave Procris the hound and dart in Apollodorus"
+    }
   ],
   "places": [
-    { "id": "athens", "name": "Athens", "role": "City where Cephalus tells the tale to Aeacus" },
-    { "name": "Phocis", "role": "Homeland of Cephalus son of Deion" },
-    { "name": "Mount Hymettus", "role": "Attic height where the hunter called upon the breeze" }
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "City where Cephalus tells the tale to Aeacus"
+    },
+    {
+      "id": "skopelos",
+      "name": "Peparethos",
+      "role": "Olive-rich Sporades isle the Cretan fleet passed without aid"
+    },
+    {
+      "name": "Phocis",
+      "role": "Homeland of Cephalus son of Deion",
+      "id": "delphi"
+    },
+    {
+      "name": "Mount Hymettus",
+      "role": "Attic height where the hunter called upon the breeze",
+      "featureId": "mount-hymettus"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "7.690–865" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.15.1" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "189" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "7.690–865"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.15.1"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "189"
+    }
   ]
 }

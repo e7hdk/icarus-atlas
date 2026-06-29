@@ -7,48 +7,105 @@
   "era": 7.145,
   "summary": {
     "text": "Ceyx king of Trachis sailed against his wife Alcyone's prayers to consult Apollo's oracle — and drowned in a storm crying her name; Juno sent a dream of his death, and when his body washed ashore both were changed into halcyon birds, nesting on calm winter seas while Aeolus held the winds for seven days.",
-    "sources": ["ovid", "apollodorus", "hyginus"],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Ov. Met. 11.410–748; Apollod. 1.7.3–4; Hyg. Fab. 65"
   },
   "chapters": [
     {
       "title": "The voyage",
       "text": "After Midas' golden touch, Ovid sings of love on the shore. Ceyx son of Lucifer reigned at Trachis without bloodshed, his face bright with his father's light; Alcyone daughter of Aeolus clung to him and begged him not to sail — the sea had taken her mother and her brothers. He would not stay; the ship put out for Claros and Apollo's oracle.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 11.410–520"
     },
     {
       "title": "The storm",
       "text": "Wind and lightning broke the vessel; Ceyx had no armour but his love, and as the waves closed over him he cried Alcyone! Alcyone! — glad only that she did not share his death. Apollodorus tells a different cause for their end: he called his wife Hera and she called him Zeus, and for that hubris the king of gods turned them into birds.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 11.520–650; Apollod. 1.7.3–4"
     },
     {
       "title": "The dream",
       "text": "Juno, pitying a wife who prayed at every altar for a husband already drowned, sent Iris to the cave of Sleep, and Morpheus stood over Alcyone in the likeness of Ceyx — pale, wet, with seawood in his hair — and told her to mourn. At dawn she ran to the shore still hoping; Hyginus instead has her leap into the sea when she learns of the wreck.",
-      "sources": ["ovid", "hyginus"],
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 11.650–710; Hyg. Fab. 65"
     },
     {
       "title": "Halcyon days",
       "text": "She saw his body borne in on the waves and flew to meet it — then felt her arms grow wings, her lips grow narrow, and Ceyx rise beside her as a bird. Together they nested on the winter sea while Aeolus restrained his winds for seven days each year, the halcyon days when sailors know a brief calm. Love, not pride, is Ovid's reason; the birds preserve their names in both tellings.",
-      "sources": ["ovid", "apollodorus", "hyginus"],
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 11.710–748; Apollod. 1.7.4; Hyg. Fab. 65"
     }
   ],
   "cast": [
-    { "id": "alcyone-aeolid", "name": "Alcyone", "role": "Wife transformed into the halcyon" },
-    { "id": "ceyx", "name": "Ceyx", "role": "King of Trachis, drowned and reborn as a seabird" },
-    { "id": "hera", "name": "Hera", "role": "Juno, who sent the dream of death" },
-    { "id": "apollo", "name": "Apollo", "role": "God whose Claros oracle drew Ceyx to sea" }
+    {
+      "id": "alcyone-aeolid",
+      "name": "Alcyone",
+      "role": "Wife transformed into the halcyon"
+    },
+    {
+      "id": "ceyx",
+      "name": "Ceyx",
+      "role": "King of Trachis, drowned and reborn as a seabird"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Juno, who sent the dream of death"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "God whose Claros oracle drew Ceyx to sea"
+    }
   ],
   "places": [
-    { "name": "Trachis", "role": "Coastal kingdom of Ceyx in Malis" },
-    { "name": "Claros", "role": "Oracle of Apollo that Ceyx sailed to consult" }
+    {
+      "name": "Trachis",
+      "role": "Coastal kingdom of Ceyx in Malis",
+      "id": "trachis-malis"
+    },
+    {
+      "name": "Thermopylae",
+      "role": "The Malian pass beside Trachis",
+      "id": "thermopylae-malis"
+    },
+    {
+      "name": "Claros",
+      "role": "Oracle of Apollo that Ceyx sailed to consult",
+      "id": "claros"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "11.410–748" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.7.3–4" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "65" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "11.410–748"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.7.3–4"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "65"
+    }
   ]
 }

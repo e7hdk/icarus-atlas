@@ -1,0 +1,38 @@
+{
+  "id": "mestra-thessaly",
+  "name": "Mestra",
+  "greekName": "Mestra (Μήστρα)",
+  "romanName": "Mestra",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Protean shape-changing",
+    "daughter of Erysichthon",
+    "wife of Autolycus"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of the Thessalian king Erysichthon, who inherited Proteus' power to change her form — Ovid makes her wife of deft Autolycus — and whom her starving father sold again and again as slave, mare, and fish until she escaped each time in a new shape.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.1124–1225"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Erysichthon's hunger had devoured his wealth, creditors closed on the king and he sold his daughter to buy food. Mestra had inherited Proteus' power to change form — Ovid calls her the wife of deft Autolycus — and each time she was sold she slipped her bonds as bull, stone, tree, stream, or fire, returning to her father until her price fed his maw again.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.1124–1225"
+    },
+    {
+      "text": "The metamorphosis is hers to command, not a punishment from the gods: while her father was consumed from within by Ceres' curse, Mestra survived by Protean shifts — the daughter's changing body set against the father's unchanging void.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.1124–1225"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["ovid"]
+    }
+  ]
+}

@@ -107,22 +107,27 @@
       "role": "Grandfather, craftiest of the Aeolids"
     },
     {
+      "id": "stheneboea-proetid",
       "name": "Anteia",
-      "role": "Proetus' wife in Homer's account"
+      "role": "Proetus' wife in Homer's account (Antia)"
     },
     {
+      "id": "stheneboea-proetid",
       "name": "Stheneboea",
       "role": "Proetus' wife in Apollodorus and Hyginus"
     },
     {
+      "id": "iobates-lycia",
       "name": "Iobates",
       "role": "Lycian king who set the trials"
     },
     {
+      "id": "glaucus-corinth",
       "name": "Glaucus",
       "role": "Father of Bellerophon at Ephyra"
     },
     {
+      "id": "philonoe-lycia",
       "name": "Philonoe",
       "role": "Iobates' daughter, Bellerophon's Lycian bride"
     },
@@ -142,6 +147,7 @@
       "role": "Grandson who fell at Troy"
     },
     {
+      "id": "amisodarus-lycia",
       "name": "Amisodarus",
       "role": "He who reared the raging Chimera"
     }
@@ -164,11 +170,13 @@
     },
     {
       "name": "Lycia",
-      "role": "Coast where Iobates set the trials"
+      "role": "Coast where Iobates set the trials",
+      "id": "xanthus-lycia"
     },
     {
       "name": "Xanthus",
-      "role": "River of Lycia where the king feasted the guest"
+      "role": "River of Lycia where the king feasted the guest",
+      "id": "xanthus-lycia"
     },
     {
       "name": "Aleian plain",

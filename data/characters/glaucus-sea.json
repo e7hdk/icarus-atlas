@@ -1,0 +1,43 @@
+{
+  "id": "glaucus-sea",
+  "name": "Glaucus",
+  "greekName": "Glaukos (Γλαῦκος)",
+  "romanName": "Glaucus",
+  "type": "god",
+  "cluster": "chthonic",
+  "domains": [
+    "Anthedon fisherman",
+    "sea-god of the deep",
+    "Scylla's suitor",
+    "blue-green immortality"
+  ],
+  "summary": [
+    {
+      "text": "Once a mortal fisherman of Anthedon who tasted strange grass on the shore and leaped into the sea, changed by Oceanus and Tethys into a blue-green god — who loved the maiden Scylla, sought a love-potion from Circe when she spurned him, and watched the sorceress poison the bay in jealous revenge.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.898–14.74"
+    }
+  ],
+  "story": [
+    {
+      "text": "Glaucus was once a mortal fisherman of Anthedon who, after a day's catch, spread his fish on the grass and saw them revive and slip back into the sea. He tasted the strange herb himself, leaped into the waves, and was changed by Oceanus and Tethys into a blue-green god of the deep.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.898–960"
+    },
+    {
+      "text": "Swimming through his new element he saw Scylla, a maiden with a girl's own face, and burned with love. She fled his embraces and clung to a cliff. In despair he crossed the sea to Circe's isle and begged the enchantress for a potion to win the maiden.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.960–14.20"
+    },
+    {
+      "text": "Circe desired Glaucus herself and, when he refused her, poured poison into the bay where Scylla bathed. The water frothed; from Scylla's loins sprang ravening dogs, and the maiden became the dog-girt terror of the strait.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.20–74"
+    },
+    {
+      "text": "The atlas keeps this Anthedonian sea-god distinct from `glaucus-lycian`, captain of the Lycians beside Sarpedon at Troy; from `glaucus-corinth`, father of Bellerophon through the Ephyrean line; and from `glaucus-dulichium`, the insolent suitor of Penelope in the Odyssey.",
+      "sources": ["ovid", "homer"],
+      "citation": "Metamorphoses 13.898–14.74; Iliad 6.119–236; Odyssey 18.327–339"
+    }
+  ]
+}

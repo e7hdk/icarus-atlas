@@ -1,0 +1,38 @@
+{
+  "id": "arethusa-hesperid",
+  "name": "Arethusa",
+  "greekName": "Arethousa (Ἀρέθουσα)",
+  "romanName": "Arethusa",
+  "type": "nymph",
+  "kinds": ["hesperid"],
+  "cluster": "night-court",
+  "domains": [
+    "evening nymph of the western garden",
+    "golden apples",
+    "Ladon's watch"
+  ],
+  "summary": [
+    {
+      "text": "The fourth Hesperid in Apollodorus' named roll beside Ladon — Aegle, Erythia, Hesperia, and Arethusa — not to be confused with `arethusa-nymph`, the Sicilian spring pursued by Alpheus (Ovid, Pausanias) or with Homer's spring on Ithaca.",
+      "sources": ["apollodorus", "ovid", "homer"],
+      "citation": "Bibliotheca 2.5.11; Metamorphoses 5.746–868; Odyssey 13.404–410"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus alone among our seven lenses names an Arethusa among the apple-guardians at Atlas' garden. With Ladon and her three sisters she kept the golden fruit that Earth gave Hera — the same western watch where Heracles came for his eleventh labour.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    },
+    {
+      "text": "The homonym hazard is real: Ovid's Arethusa fled Alpheus from Elis to Ortygia and witnessed Proserpina's rape; Homer knows a spring Arethusa on Ithaca; Hyginus lists other Arethusas among Nereids and in unrelated genealogies. The atlas keeps them apart — `arethusa-hesperid` for Apollodorus' western evening sister, `arethusa-nymph` for the Sicilian spring — per the hazard map topic `hesperid-arethusa-homonym`.",
+      "sources": ["apollodorus", "ovid", "homer", "hyginus"],
+      "citation": "Bibliotheca 2.5.11; Metamorphoses 5.746–868; Odyssey 13.404–410; Fabulae p.7"
+    },
+    {
+      "text": "Apollonius' Argonautica episode at the garden names only Aegle, Erytheis, and Hespere after Ladon's death; Arethusa is absent from that three-name roll but remains in Apollodorus' quartet. The collective `hesperides` node still carries the disputed parentage of the whole brood under topic `hesperides-parentage`.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 2.5.11; Argonautica 4.1422"
+    }
+  ]
+}

@@ -68,5 +68,22 @@
       ],
       "citation": "Apollodorus, Bibliotheca 1.8.6; Hyginus, Fabulae 175, 242"
     }
+  ],
+  "residences": [
+    {
+      "city": "pleuron",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 14.115–118; Bibliotheca 1.7.10"
+    },
+    {
+      "city": "calydon",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 14.115–118; Bibliotheca 1.7.10, 1.8.6"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.638–644, 14.115–118"
+    }
   ]
 }

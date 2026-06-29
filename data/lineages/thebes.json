@@ -41,6 +41,7 @@
     },
     {
       "ruler": "Amphion & Zethus",
+      "characterIds": ["amphion", "zethus"],
       "sources": ["homer", "apollodorus", "apollonius", "hyginus", "pausanias"],
       "citation": "Hom. Od. 11.260-265; Apollod. 3.5.5; Ap. Rhod. 1.735-741; Hyg. Fab. 76; Paus. 9.5.6-8",
       "note": "The twin sons of Antiope overthrew Lycus and walled the city — for Homer they are the founders of Thebes itself.",
@@ -62,6 +63,7 @@
     },
     {
       "ruler": "Eteocles & Polynices",
+      "characterIds": ["eteocles", "polynices"],
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 3.6.1; Hyg. Fab. 76",
       "note": "The brothers agreed to alternate the throne; Eteocles refused to yield, and the Seven marched on Thebes."

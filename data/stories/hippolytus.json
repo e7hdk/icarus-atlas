@@ -7,45 +7,120 @@
   "era": 6.78,
   "summary": {
     "text": "Theseus' son by an Amazon — Antiope or Hippolyte in the rival lists — scorned women and was destroyed when Phaedra falsely accused him and Poseidon sent a bull from the sea to wreck his chariot; the queen hanged herself when the truth came out.",
-    "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Apollod. Epit. 1.16, 1.18–1.19; Ov. Met. 15.712–816; Hyg. Fab. 47, 250; Paus. 1.22.2"
   },
   "chapters": [
     {
       "title": "The Amazon's son",
       "text": "By the Amazon he had carried off when her sisters marched on Athens — Antiope, Melanippe, or Hippolyte in the rival lists — Theseus begot Hippolytus, a youth who devoted himself to Artemis and would have nothing to do with Aphrodite or the company of women.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 1.16; Hyg. Fab. 250; Paus. 1.2.1"
     },
     {
       "title": "Phaedra's false charge",
       "text": "Theseus wedded Phaedra, daughter of Minos, and she bore him two sons — but fell in love with Hippolytus. When he fled her embraces she tore open her chamber, rent her garments, and told Theseus the youth had assaulted her. The king believed the lie and prayed to Poseidon that his son might die.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 1.18; Ov. Met. 15.712–816; Hyg. Fab. 47"
     },
     {
       "title": "The bull from the sea",
       "text": "As Hippolytus drove his chariot beside the shore, Poseidon sent up a bull from the surf; the horses bolted, the car was shattered, and the youth, tangled in the reins, was dragged to death. Phaedra hanged herself when the truth emerged. Apollodorus adds that Asclepius later raised Hippolytus from the dead — for which Zeus struck the healer — and Ovid has Diana hide the restored youth as Virbius in her sacred grove.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 1.19; Ov. Met. 15.712–816; Hyg. Fab. 47"
     }
   ],
   "cast": [
-    { "id": "theseus", "name": "Theseus", "role": "The credulous father" },
-    { "id": "hippolytus", "name": "Hippolytus", "role": "The chaste hunter" },
-    { "id": "phaedra", "name": "Phaedra", "role": "The stepmother who lied" },
-    { "id": "poseidon", "name": "Poseidon", "role": "He who sent the bull" },
-    { "id": "minos", "name": "Minos", "role": "Father of Phaedra" },
-    { "id": "artemis", "name": "Artemis", "role": "Goddess the youth served" }
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "The credulous father"
+    },
+    {
+      "id": "hippolytus",
+      "name": "Hippolytus",
+      "role": "The chaste hunter"
+    },
+    {
+      "id": "phaedra",
+      "name": "Phaedra",
+      "role": "The stepmother who lied"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "He who sent the bull"
+    },
+    {
+      "id": "minos",
+      "name": "Minos",
+      "role": "Father of Phaedra"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Goddess the youth served"
+    },
+    {
+      "id": "demophon-athens",
+      "name": "Demophon",
+      "role": "Son Phaedra bore to Theseus"
+    },
+    {
+      "id": "acamas-athens",
+      "name": "Acamas",
+      "role": "Son Phaedra bore to Theseus"
+    }
   ],
   "places": [
-    { "id": "athens", "name": "Athens", "role": "Where the tragedy unfolded" },
-    { "name": "Troezen", "role": "Where Hippolytus was reared in some tellings" }
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "Where the tragedy unfolded"
+    },
+    {
+      "name": "Troezen",
+      "role": "Where Hippolytus was reared in some tellings",
+      "id": "troezen"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "Epitome", "citation": "1.16, 1.18–1.19" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "15.712–816" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "47, 250" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "1.2.1, 1.22.2" }
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "1.16, 1.18–1.19"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "15.712–816"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "47, 250"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.2.1, 1.22.2"
+    }
   ]
 }

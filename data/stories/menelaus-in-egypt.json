@@ -168,10 +168,12 @@
       "role": "Made Menelaus immortal in Apollodorus' closing"
     },
     {
+      "id": "phrontis-sparta",
       "name": "Phrontis",
       "role": "Helmsman slain by Apollo at Sunium"
     },
     {
+      "id": "megapenthes",
       "name": "Megapenthes",
       "role": "Menelaus' son by a slave woman, wedded at the feast"
     }
@@ -194,11 +196,13 @@
     },
     {
       "name": "Egypt",
-      "role": "Land of the eight-year detour"
+      "role": "Land of the eight-year detour",
+      "id": "memphis"
     },
     {
       "name": "Pharos",
-      "role": "Island off the Nile where Proteus was bound"
+      "role": "Island off the Nile where Proteus was bound",
+      "id": "pharos"
     },
     {
       "name": "Libya",
@@ -210,19 +214,23 @@
     },
     {
       "name": "Cyprus",
-      "role": "Island on the homeward drift"
+      "role": "Island on the homeward drift",
+      "id": "salamis-cyprus"
     },
     {
       "name": "Crete",
-      "role": "Where the wind drove him after Sunium"
+      "role": "Where the wind drove him after Sunium",
+      "id": "knossos"
     },
     {
       "name": "Sunium",
-      "role": "Attic cape where Apollo slew Phrontis"
+      "role": "Attic cape where Apollo slew Phrontis",
+      "id": "sounion"
     },
     {
       "name": "Gyraean rocks",
-      "role": "Where Proteus said the Locrian Ajax perished"
+      "role": "Where Proteus said the Locrian Ajax perished",
+      "featureId": "gyraean-rocks"
     },
     {
       "name": "Elysium",

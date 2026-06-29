@@ -59,7 +59,9 @@
     { "id": "phoebe", "name": "Phoebe", "role": "Titaness mother of Leto" }
   ],
   "places": [
-    { "id": "delos", "name": "Delos", "role": "Wandering isle where the twins were born" }
+    { "id": "delos", "name": "Delos", "role": "Wandering isle where the twins were born" },
+    { "id": "delos-sanctuary", "name": "Delos", "role": "Sacred isle and sanctuary of Apollo and Artemis" },
+    { "id": "chryse-troad", "name": "Chryse", "role": "Troad shrine where Apollo is Smintheus beside Tenedos and Cilla" }
   ],
   "attestations": [
     { "source": "hesiod", "work": "Theogony", "citation": "918-923" },

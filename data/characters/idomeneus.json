@@ -47,11 +47,37 @@
   "residences": [
     {
       "city": "knossos",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.645–650; Epitome 6.10"
     },
     {
       "city": "gortyn",
       "sources": ["homer"]
+    },
+    {
+      "city": "lyctus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650"
+    },
+    {
+      "city": "rhytium",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.645–650; Epitome 6.9–6.10"
+    },
+    {
+      "city": "sparta",
+      "sources": ["homer"],
+      "citation": "Iliad 3.230–242"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.645–650"
     }
   ]
 }

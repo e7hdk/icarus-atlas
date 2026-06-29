@@ -38,6 +38,11 @@
     {
       "city": "troy",
       "sources": ["apollodorus", "ovid", "hyginus"]
+    },
+    {
+      "city": "sigeum",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 13.439–480; Epitome 5.23"
     }
   ]
 }

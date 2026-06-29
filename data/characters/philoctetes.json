@@ -90,12 +90,44 @@
   ],
   "residences": [
     {
+      "city": "olizon-magnesia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.695–730; Epitome 3.14"
+    },
+    {
+      "city": "meliboea-magnesia",
+      "sources": ["homer", "hyginus"],
+      "citation": "Iliad 2.695–730; Fabulae 102"
+    },
+    {
+      "city": "methone-magnesia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "city": "thaumacia-magnesia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.27; Iliad 2.695–730"
+    },
+    {
       "city": "lemnos",
-      "sources": ["apollodorus", "homer", "hyginus"]
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Iliad 2.716–728; Epitome 3.27"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.8"
     },
     {
       "city": "campania",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15"
     }
   ]
 }

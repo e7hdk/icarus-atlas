@@ -7,78 +7,188 @@
   "era": 9.02,
   "summary": {
     "text": "Sent by Circe to Oceanus and the house of Hades, Odysseus dug the pit of blood and summoned the shades — Elpenor unburied, Tiresias prophesying, Anticleia dying of longing, Agamemnon warning against treacherous wives, Achilles preferring the life of a slave on earth, and Ajax still wrathful for the arms of Achilles.",
-    "sources": ["homer", "apollodorus"],
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
     "citation": "Hom. Od. 11; Apollod. Epit. 7.17"
   },
   "chapters": [
     {
       "title": "Elpenor's shade",
       "text": "Elpenor had fallen drunk from Circe's roof and was left unburied when the company sailed. His shade came first among the dead, begging Odysseus to return to Aeaea, burn his body with his armour, and heap the mound with a pillar and oar — so he might not be nameless among the shades.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.51–96"
     },
     {
       "title": "Tiresias",
       "text": "The seer Tiresias alone kept understanding among the dead. He told Odysseus that Poseidon's wrath would not end until he reached a land so far from the sea that men would take the oar on his shoulder for a winnowing-fan — and he warned sternly against the cattle of the Sun on Thrinacia, foretelling shipwreck and a lonely homecoming if the herds were touched.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.90–151"
     },
     {
       "title": "Anticleia",
       "text": "Odysseus held back his own mother Anticleia until Tiresias had spoken. When he let her drink of the blood, she told him she had died not of sickness nor of gentle Artemis' shafts, but of longing for him and of grief for his name — and that Penelope still waited in the halls, though the suitors consumed his substance.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.152–224"
     },
     {
       "title": "The heroines",
       "text": "Persephone sent up the shades of famous women — Tyro, Antiope, Alcmene, Megara, Epicaste mother of Oedipus, Chloris, Leda, Iphimedeia, and others — and Odysseus questioned each in turn until Anticleia withdrew and he saw yet more heroes approaching the pit.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.225–332"
     },
     {
       "title": "Agamemnon's warning",
-      "text": "Agamemnon's shade came with those who died at Troy. He told how Clytemnestra and Aegisthus had slain him in the bath, how Cassandra died with him, and how Electra saved Orestes — then warned Odysseus that no death is so cruel as when a wife plots against the husband who trusted her. Yet he asked after Penelope and praised her faithfulness, unlike his own wife.",
-      "sources": ["homer"],
+      "text": "Agamemnon's shade came with those who died at Troy. He told how Clytemnestra and Aegisthus had slain him in the bath, how Cassandra died with him — then warned Odysseus that no death is so cruel as when a wife plots against the husband who trusted her. Yet he asked after Penelope and praised her faithfulness, unlike his own wife.",
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.385–434"
     },
     {
       "title": "Achilles and Ajax",
       "text": "Achilles came with Patroclus, Antilochus, and Ajax — and Odysseus told the greatest of the Achaeans how his son Neoptolemus had borne himself at Troy. Achilles answered that he would rather be a slave on earth than king of all the dead. Alone of all the shades, Ajax son of Telamon stood apart, still wrathful for the victory of Odysseus in the contest for Achilles' arms, and would not speak though Odysseus pleaded.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.465–564"
     },
     {
       "title": "Minos and Heracles",
       "text": "Odysseus saw Minos son of Zeus holding a golden sceptre, judging the dead; and the phantom of Heracles — his own self in the underworld, for the god on Olympus is another — with the bow and sword belt, driving the dead before him as though they were cattle. Then the host of shades clamoured, and Odysseus fled in terror back to the ship.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 11.568–640"
     }
   ],
   "cast": [
-    { "id": "odysseus", "name": "Odysseus", "role": "Summoner of the shades" },
-    { "id": "elpenor", "name": "Elpenor", "role": "The unburied comrade" },
-    { "id": "tiresias", "name": "Tiresias", "role": "The seer who foretold the homecoming" },
-    { "id": "anticleia", "name": "Anticleia", "role": "Odysseus' mother, dead of longing" },
-    { "id": "agamemnon", "name": "Agamemnon", "role": "Shade who warned against treacherous wives" },
-    { "id": "clytemnestra", "name": "Clytemnestra", "role": "Named in Agamemnon's tale of the bath" },
-    { "id": "aegisthus", "name": "Aegisthus", "role": "Named as the murderer's partner" },
-    { "id": "cassandra", "name": "Cassandra", "role": "Died with Agamemnon" },
-    { "id": "electra", "name": "Electra", "role": "Saved Orestes" },
-    { "id": "achilles", "name": "Achilles", "role": "King of the dead who chose life on earth" },
-    { "id": "patroclus", "name": "Patroclus", "role": "Beside Achilles among the heroes" },
-    { "id": "antilochus-nestor", "name": "Antilochus", "role": "Slain hero who came with Achilles" },
-    { "id": "ajax-telamonian", "name": "Ajax", "role": "Wrathful shade who would not speak" },
-    { "id": "minos", "name": "Minos", "role": "Judge of the dead" },
-    { "id": "heracles", "name": "Heracles", "role": "Phantom in the underworld" },
-    { "id": "circe", "name": "Circe", "role": "She who sent Odysseus to Hades" }
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Summoner of the shades"
+    },
+    {
+      "id": "elpenor",
+      "name": "Elpenor",
+      "role": "The unburied comrade"
+    },
+    {
+      "id": "eurylochus",
+      "name": "Eurylochus",
+      "role": "He who held the victims beside Perimedes"
+    },
+    {
+      "id": "perimedes-odyssey",
+      "name": "Perimedes",
+      "role": "Comrade who held the victims at the pit — not perimedes-same"
+    },
+    {
+      "id": "polites-odyssey",
+      "name": "Polites",
+      "role": "Comrade who sailed from Aeaea to Oceanus — not polites-trojan"
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "The seer who foretold the homecoming"
+    },
+    {
+      "id": "anticleia",
+      "name": "Anticleia",
+      "role": "Odysseus' mother, dead of longing"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Shade who warned against treacherous wives"
+    },
+    {
+      "id": "clytemnestra",
+      "name": "Clytemnestra",
+      "role": "Named in Agamemnon's tale of the bath"
+    },
+    {
+      "id": "aegisthus",
+      "name": "Aegisthus",
+      "role": "Named as the murderer's partner"
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "role": "Died with Agamemnon"
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "role": "King of the dead who chose life on earth"
+    },
+    {
+      "id": "patroclus",
+      "name": "Patroclus",
+      "role": "Beside Achilles among the heroes"
+    },
+    {
+      "id": "antilochus-nestor",
+      "name": "Antilochus",
+      "role": "Slain hero who came with Achilles"
+    },
+    {
+      "id": "ajax-telamonian",
+      "name": "Ajax",
+      "role": "Wrathful shade who would not speak"
+    },
+    {
+      "id": "minos",
+      "name": "Minos",
+      "role": "Judge of the dead"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "Phantom in the underworld"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "She who sent Odysseus to Hades"
+    }
   ],
   "places": [
-    { "name": "The house of Hades", "role": "Where Odysseus dug the pit of blood" },
-    { "name": "Oceanus", "role": "The stream at the world's edge" },
-    { "name": "Oracle of the Dead", "role": "Thesprotian nekuomanteion Pausanias linked to Homer's descent" }
+    {
+      "name": "The house of Hades",
+      "role": "Where Odysseus dug the pit of blood",
+      "featureId": "acheron"
+    },
+    {
+      "name": "Oceanus",
+      "role": "The stream at the world's edge"
+    },
+    {
+      "name": "Oracle of the Dead",
+      "role": "Thesprotian nekuomanteion Pausanias linked to Homer's descent",
+      "id": "nekuomanteion"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Odyssey", "citation": "11" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "7.17" }
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.17"
+    }
   ]
 }

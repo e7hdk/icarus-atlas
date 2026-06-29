@@ -1,0 +1,36 @@
+{
+  "id": "shepherds-attica",
+  "name": "The Shepherds",
+  "greekName": "poimenes (ποιμένες)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Attic herdsmen",
+    "killers of Icarius",
+    "wine and misunderstanding"
+  ],
+  "summary": [
+    {
+      "text": "Attic herdsmen to whom Icarius first showed wine — who, thinking themselves bewitched by the strange drink, killed him in drunken fear and were later punished when Athens atoned for neglecting his and Erigone's deaths.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.14.7; Fabulae 130"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Dionysus came to Attica in Pandion's time, Icarius received the god, learned viticulture from a vine-branch, and went to some shepherds to bestow the gift. They tasted the drink and quaffed it copiously without water, imagined they were bewitched, and killed him — though by day they understood and buried him.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.14.7"
+    },
+    {
+      "text": "Hyginus tells how Father Liber gave Icarius a skin full of wine and bade him spread its use abroad. Icarius loaded a wagon and showed Attic shepherds what wine could do; when the shepherds, drunk, thought he had given them bad medicine, they beat him to death with clubs.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 130"
+    },
+    {
+      "text": "After Erigone hanged herself, Apollo declared the Athenians had neglected the deaths of Icarius and Erigone; they avenged the shepherds and instituted the swinging festival in Erigone's honour — the collective punished for the murder that set the Aiora rites and the placing of Icarius among the stars.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 130"
+    }
+  ]
+}

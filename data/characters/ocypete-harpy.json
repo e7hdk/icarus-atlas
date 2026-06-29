@@ -1,0 +1,33 @@
+{
+  "id": "ocypete-harpy",
+  "name": "Ocypete (Harpies)",
+  "greekName": "Okypetē (Ὠκυπέτη)",
+  "romanName": "Ocypete",
+  "type": "creature",
+  "kinds": ["harpy"],
+  "cluster": "chthonic",
+  "domains": [
+    "swift-flier",
+    "snatching",
+    "winged torment"
+  ],
+  "summary": [
+    {
+      "text": "One of the storm-winged Harpies whom Hesiod and Apollodorus name beside Aello as daughters of Thaumas and the Oceanid Electra — Ocypete, 'Swift-flier,' sister of Iris the rainbow.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Ocypete with Aello among the long-haired Harpies born to Thaumas and Electra, swift as time upon the wind. Apollodorus repeats the pair in the same parentage roll. The collective node `harpies` holds the Phineus chase; this node is the individual named in both catalogues.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    },
+    {
+      "text": "When Zetes and Calais pursued the Harpies from Phineus' table, Apollodorus says one harpy fell into a Peloponnesian river and the other, Ocypete (or Ocythoe), fled to the islands thereafter called the Strophades. Hyginus lists Ocypete among three Harpies — Aellopous, Celaeno and Ocypete — daughters of Thaumas.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.21; Fabulae 14"
+    }
+  ]
+}

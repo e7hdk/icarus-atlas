@@ -1,0 +1,28 @@
+{
+  "id": "megaera-erinyes",
+  "name": "Megaera (Erinyes)",
+  "greekName": "Megaera (Μέγαιρα)",
+  "romanName": "Megaera",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "jealous vengeance",
+    "blood-guilt",
+    "the avenging Furies"
+  ],
+  "summary": [
+    {
+      "text": "One of the three named Erinyes — Alecto, Tisiphone and Megaera — whom Apollodorus and Hyginus count among the Furies born from the castrated sky's blood on Earth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Megaera among the Furies who rose when the bloody drops of flowing blood from the castrated Uranus fell upon Gaia. Hyginus's preface lists Megaera between Alecto and Tisiphone among the offspring of Aether and Terra, a rival parentage on topic `erinyes-parentage`. The collective node `erinyes` holds their shared pursuit of kin-slayers and oath-breakers; this node is the individual named in both rolls.",
+      "sources": ["apollodorus", "hyginus", "hesiod"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface; Theogony 183–187",
+      "topic": "erinyes-parentage"
+    }
+  ]
+}

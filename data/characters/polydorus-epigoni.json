@@ -57,7 +57,24 @@
       "sources": [
         "hyginus",
         "pausanias"
-      ]
+      ],
+      "citation": "Fabulae 71; Description of Greece 10.10.4"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "hyginus",
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Fabulae 71; Description of Greece 10.10.4; Bibliotheca 3.7.2–4"
+    },
+    {
+      "city": "glisas",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 9.5.13, 9.9.4"
     }
   ]
 }

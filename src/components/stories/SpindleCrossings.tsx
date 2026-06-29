@@ -61,9 +61,16 @@ function wallFilamentPoints(
  *  to a hot core when either of its two myths is hovered or selected. */
 const XING_VERT = /* glsl */ `
 varying vec2 vUv;
+#ifdef USE_FOG
+  varying float vFogDepth;
+#endif
 void main() {
   vUv = uv;
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+  gl_Position = projectionMatrix * mvPosition;
+  #ifdef USE_FOG
+    vFogDepth = -mvPosition.z;
+  #endif
 }
 `;
 const XING_FRAG = /* glsl */ `
@@ -71,13 +78,23 @@ uniform vec3 uColorA;
 uniform vec3 uColorB;
 uniform float uOpacity;
 varying vec2 vUv;
+#ifdef USE_FOG
+  uniform float fogDensity;
+  varying float vFogDepth;
+#endif
 void main() {
   // Gradient from A (uv.x=0) to B (uv.x=1); a soft golden core swells at the
   // midpoint so the knot reads as a tied ligament, not a flat wire.
   vec3 col = mix(uColorA, uColorB, smoothstep(0.0, 1.0, vUv.x));
   float core = 1.0 - smoothstep(0.0, 0.5, abs(vUv.x - 0.5));
   col = mix(col, vec3(1.0, 0.93, 0.72), core * 0.5);
-  gl_FragColor = vec4(col, uOpacity);
+  float op = uOpacity;
+  #ifdef USE_FOG
+    // Additive ligament: a distant tie simply adds less light and fades away.
+    float fogFactor = clamp(1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth), 0.0, 1.0);
+    op *= (1.0 - fogFactor);
+  #endif
+  gl_FragColor = vec4(col, op);
 }
 `;
 
@@ -115,11 +132,12 @@ const Filament = memo(function Filament({
       transparent: true,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
-      uniforms: {
+      fog: true,
+      uniforms: Object.assign(THREE.UniformsUtils.clone(THREE.UniformsLib.fog), {
         uColorA: { value: new THREE.Color(a.color) },
         uColorB: { value: new THREE.Color(b.color) },
         uOpacity: { value: 0.5 },
-      },
+      }),
     });
     return { geometry, material };
   }, [a, b, radius]);

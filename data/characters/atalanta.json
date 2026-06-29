@@ -102,5 +102,20 @@
       ],
       "citation": "Description of Greece 5.19.2"
     }
+  ],
+  "residences": [
+    {
+      "city": "tegea",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 3.9.2; Argonautica 1.769–773"
+    },
+    {
+      "city": "calydon",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 1.8.2–3; Metamorphoses 8.317–444"
+    }
   ]
 }

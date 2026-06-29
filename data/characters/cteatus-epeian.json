@@ -23,5 +23,17 @@
       "sources": ["apollodorus", "pausanias"],
       "citation": "Bibliotheca 2.7.2; Description of Greece 2.15.1, 5.3.3"
     }
+  ],
+  "residences": [
+    {
+      "city": "pisa-elis",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.615–650; Bibliotheca 2.7.2; Description of Greece 5.3.3"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.615–650"
+    }
   ]
 }

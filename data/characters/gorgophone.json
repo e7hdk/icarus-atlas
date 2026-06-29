@@ -59,11 +59,35 @@
   ],
   "residences": [
     {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5"
+    },
+    {
+      "city": "messene",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.5; Description of Greece 3.1.4, 4.2.4"
+    },
+    {
+      "city": "sparta",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.9.5, 3.10.3; Description of Greece 3.1.4"
+    },
+    {
       "city": "argos",
       "sources": [
         "apollodorus",
         "pausanias"
-      ]
+      ],
+      "citation": "Bibliotheca 2.4.5; Description of Greece 2.21.7"
     }
   ]
 }

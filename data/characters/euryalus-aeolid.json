@@ -58,6 +58,34 @@
         "homer",
         "apollodorus"
       ]
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.2–4; Description of Greece 2.20.5, 10.10.4"
+    },
+    {
+      "city": "glisas",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.3; Description of Greece 9.5.13, 9.9.4"
+    },
+    {
+      "city": "troy",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.565–570, 16.650–665"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.565–570"
     }
   ]
 }

@@ -1,0 +1,133 @@
+{
+  "id": "the-danaids",
+  "title": "The Danaids",
+  "greekTitle": "αἱ Δαναΐδες",
+  "kind": "saga",
+  "parent": null,
+  "era": 4.4,
+  "eraEnd": 4.45,
+  "summary": {
+    "text": "Danaus and his fifty daughters fled Egypt from their twin brother Aegyptus and his fifty sons, took Argos from King Gelanor, and on the wedding night forty-nine brides obeyed their father's command and murdered their husbands — only Hypermnestra spared Lynceus, through whom the Argive royal line would reach Perseus and Heracles while the rest carry water for a leaky jar in the underworld.",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
+    "citation": "Bibliotheca 2.1.4–5; Fabulae 168; Description of Greece 2.16.1"
+  },
+  "chapters": [
+    {
+      "title": "Belus' twin heirs",
+      "text": "Belus reigned over Egypt and begat twin sons, Egyptus and Danaus. Danaus was settled in Libya and Egyptus in Arabia, but Egyptus subjugated the land of the Melampods and named it Egypt after himself. Both had children by many wives — Egyptus fifty sons, Danaus fifty daughters. Hyginus says Egyptus wished to kill Danaus and his daughters so he alone might hold the paternal kingdom, and asked his brother for wives for his sons — a demand that masked a plot to destroy the rival house.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.4; Fabulae 168"
+    },
+    {
+      "title": "Flight to the land of Io",
+      "text": "Danaus distrusted his brother's professions and, putting his daughters on board ship, fled. Touching at Rhodes he set up the image of Lindian Athena; thence he came to Argos, land of his ancestor Io, and the reigning king Gelanor surrendered the kingdom to him. Having made himself master of the country he named the inhabitants Danai after himself. The country being waterless because Poseidon had dried up the springs out of anger at Inachus, Danaus sent his daughters to draw water — the first of many tasks the maidens would bear for their father's house.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.4; Description of Greece 2.16.1"
+    },
+    {
+      "title": "The fifty weddings",
+      "text": "The sons of Egyptus came to Argos, exhorted Danaus to lay aside his enmity, and begged to marry his daughters. Danaus bore them a grudge on account of his exile, yet consented and allotted the damsels among them. Hypermnestra the eldest he gave to Lynceus, and Gorgophone to Proteus — sons of Egyptus by the woman of royal blood Argyphia. Secretly Danaus gave each daughter a dagger and ordered them to murder their new husbands on the wedding night. Forty-nine obeyed and cut the throats of the sons of Aegyptus; only Hypermnestra spared Lynceus, because he respected her virginity.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.5; Fabulae 168, 170"
+    },
+    {
+      "title": "Mercy and the leaky jar",
+      "text": "Furious at Hypermnestra's disobedience, Danaus brought her to trial, but she was acquitted and reunited with Lynceus. When Danaus died Lynceus reigned over Argos and begat Abas by Hypermnestra — and through that spared marriage the line would run to Acrisius, Proetus, Perseus, and Heracles. Hyginus says a shrine was made for Hypermnestra and Lynceus, but the other Danaids are punished in the lower world, carrying water forever to fill a leaky jar.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.5, 2.2.1; Fabulae 168; Description of Greece 2.19.6"
+    }
+  ],
+  "cast": [
+    {
+      "id": "danaus",
+      "name": "Danaus",
+      "role": "Father of the fifty brides who ordered the slaughter"
+    },
+    {
+      "id": "aegyptus",
+      "name": "Aegyptus",
+      "role": "Twin brother whose fifty sons pursued the maidens"
+    },
+    {
+      "id": "hypermnestra",
+      "name": "Hypermnestra",
+      "role": "Eldest daughter who spared her husband"
+    },
+    {
+      "id": "lynceus",
+      "name": "Lynceus",
+      "role": "Only son of Aegyptus to survive the wedding night"
+    },
+    {
+      "id": "belus",
+      "name": "Belus",
+      "role": "Egyptian king, father of the warring twins"
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "role": "Argive ancestress in whose land Danaus took refuge"
+    },
+    {
+      "id": "gelanor-argive",
+      "name": "Gelanor",
+      "role": "King of Argos who yielded the kingdom"
+    },
+    {
+      "id": "gorgophone",
+      "name": "Gorgophone",
+      "role": "Daughter wed to Proteus son of Aegyptus"
+    }
+  ],
+  "places": [
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Kingdom Danaus seized from Gelanor"
+    },
+    {
+      "name": "Rhodes",
+      "role": "Island where Danaus set up Lindian Athena",
+      "id": "rhodes"
+    },
+    {
+      "name": "Egypt",
+      "role": "Land of Belus and the fleeing twins' origin",
+      "id": "memphis"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.1.4–5"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "168, 170"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "2.16.1, 2.19.6"
+    }
+  ]
+}

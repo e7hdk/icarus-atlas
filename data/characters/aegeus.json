@@ -72,6 +72,16 @@
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "troezen",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.15.5–3.16.1; Fabulae 37, 43"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 1.262–268"
     }
   ]
 }

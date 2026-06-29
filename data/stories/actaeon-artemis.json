@@ -7,43 +7,108 @@
   "era": 5.01,
   "summary": {
     "text": "Actaeon the Theban hunter, grandson of Cadmus, wandered into the vale of Gargaphie and saw Diana bathing — and the goddess flung water on his face, set antlers on his brow, and drove him as a stag until his own fifty hounds, blind to their master, ran him down and tore him apart on Cithaeron.",
-    "sources": ["apollodorus", "ovid"],
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
     "citation": "Apollod. 3.4.4; Ov. Met. 3.138–252"
   },
   "chapters": [
     {
       "title": "The sacred pool",
       "text": "When the day was spent, Actaeon of Hyantis called off the hunt and sent his comrades home; but he wandered alone into woods he did not know and came to Gargaphie, where Diana bathed with her nymphs in a grotto of cool stone and a pool edged with grass. Apollodorus says Chiron bred him to the chase, and records three charges against him without choosing one: that Zeus was angry because he wooed Semele; that he saw Artemis bathing; or that he boasted himself the better hunter.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 3.4.4; Ov. Met. 3.138–172",
       "topic": "actaeon-offense"
     },
     {
       "title": "The stag",
       "text": "The nymphs shrieked; Diana stood taller than her guards and wished for her arrows, but had only the spring. She dashed water on Actaeon's face and cursed him to tell the tale if he could: horns sprang from his head, his neck lengthened, his hands became hooves, and dappled hide covered the hunter who had been the grandson of Cadmus. He fled in terror, marveling at his speed, and saw his antlers in a stream.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 3.173–205"
     },
     {
       "title": "The hounds",
       "text": "Ashamed to go home, afraid to trust the woods, Actaeon hesitated — until his own pack found him. Blackfoot and Tracer gave the signal; the Arcadian and Spartan dogs followed, and the whole pack fixed their jaws in the flesh of their master, who could only groan in a stag's voice and turn entreating eyes on teeth that did not know him. His friends called Actaeon! Actaeon! while he died; Diana's wrath, Ovid says, did not abate until the torn flesh ceased to live.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 3.206–252; Apollod. 3.4.4"
+    },
+    {
+      "title": "The bed of Actaeon",
+      "text": "Pausanias walked the road from Megara toward Plataea and marked a spring on the right, a little farther on a rock called the bed of Actaeon — for it was said he slept there when weary from hunting and looked into this spring while Artemis was bathing in it. Stesichorus of Himera, the traveler adds, told how the goddess cast a deerskin round Actaeon so that his hounds would not know their master when they tore him.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 9.2.3"
     }
   ],
   "cast": [
-    { "id": "actaeon", "name": "Actaeon", "role": "Theban hunter transformed into a stag" },
-    { "id": "artemis", "name": "Artemis", "role": "Diana, goddess of the chase and the bath" },
-    { "id": "autonoe", "name": "Autonoe", "role": "Cadmus' daughter, Actaeon's mother" },
-    { "id": "aristaeus", "name": "Aristaeus", "role": "Actaeon's father in the usual genealogy" }
+    {
+      "id": "actaeon",
+      "name": "Actaeon",
+      "role": "Theban hunter transformed into a stag"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Diana, goddess of the chase and the bath"
+    },
+    {
+      "id": "autonoe",
+      "name": "Autonoe",
+      "role": "Cadmus' daughter, Actaeon's mother"
+    },
+    {
+      "id": "aristaeus",
+      "name": "Aristaeus",
+      "role": "Actaeon's father in the usual genealogy"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City of the Cadmean house Actaeon belonged to" },
-    { "name": "Gargaphie", "role": "Vale on Cithaeron sacred to Diana" },
-    { "name": "Mount Cithaeron", "role": "Mountain where the hounds ran down their master" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City of the Cadmean house Actaeon belonged to"
+    },
+    {
+      "name": "Gargaphie",
+      "role": "Vale on Cithaeron sacred to Diana",
+      "id": "gargaphie"
+    },
+    {
+      "name": "Mount Cithaeron",
+      "role": "Mountain where the hounds ran down their master",
+      "featureId": "mount-cithaeron"
+    },
+    {
+      "name": "Plataea",
+      "role": "On the road from Megara, where Pausanias saw the bed of Actaeon beside a spring",
+      "id": "plataea"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "3.138–252" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.4.4" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3.138–252"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.4.4"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.2.3"
+    }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "id": "flora",
+  "name": "Flora",
+  "greekName": "Flōra (Φλώρα)",
+  "romanName": "Flora",
+  "type": "god",
+  "domains": [
+    "flowering fields",
+    "Roman rites of May",
+    "the gardens of Olenus"
+  ],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Roman goddess of flowering plants who, in Ovid's calendar of rites, touched Juno with a magic flower from the gardens of Olenus so that the queen conceived Mars with no father — a Roman variant of Ares' birth answering Athena's head-birth.",
+      "sources": ["ovid"],
+      "citation": "Fasti 5.229–258"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid tells the tale in his Fasti for the Roman month of May. Juno, stung that Jupiter had brought forth Minerva from his head without a mother, sought counsel from Flora, goddess of flowering fields. Flora touched the queen with a wondrous flower from the gardens of Olenus, and Juno conceived Mars with no father at all.",
+      "sources": ["ovid"],
+      "citation": "Fasti 5.229–258",
+      "topic": "ares-conception"
+    },
+    {
+      "text": "The Greek genealogical spine in Hesiod and Homer makes Ares son of Zeus and Hera; Ovid's Flora preserves the fatherless Roman variant for Mars alone — a secondary tradition attested only in the Ovid lens, not in Hesiod or Apollodorus.",
+      "sources": ["ovid", "hesiod", "homer"],
+      "citation": "Fasti 5.229–258; Theogony 921–923; Iliad 5.889–898",
+      "topic": "ares-conception"
+    }
+  ]
+}

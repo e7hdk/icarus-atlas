@@ -71,8 +71,18 @@
   ],
   "residences": [
     {
+      "city": "pleuron",
+      "sources": ["homer"],
+      "citation": "Iliad 14.115–118"
+    },
+    {
       "city": "calydon",
       "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.638–644"
     }
   ]
 }

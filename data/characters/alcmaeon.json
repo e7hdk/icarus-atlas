@@ -39,8 +39,33 @@
       "sources": ["homer", "apollodorus"]
     },
     {
+      "city": "thebes",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 15.248–251; Bibliotheca 3.7.2–4; Description of Greece 9.5.13, 10.10.4"
+    },
+    {
+      "city": "glisas",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.3; Description of Greece 9.5.13, 9.9.4"
+    },
+    {
       "city": "argos-amphilochicum",
       "sources": ["apollodorus"]
+    },
+    {
+      "city": "psophis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.5–6; Description of Greece 8.24.7"
+    },
+    {
+      "city": "tegea",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.5–6; Description of Greece 8.45.4"
+    },
+    {
+      "city": "delphi",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–7"
     }
   ]
 }

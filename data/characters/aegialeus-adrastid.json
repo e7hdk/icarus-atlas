@@ -68,6 +68,23 @@
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.2–3; Description of Greece 2.20.5, 10.10.4; Fabulae 71"
+    },
+    {
+      "city": "glisas",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.3; Description of Greece 1.44.4, 9.5.13"
     }
   ]
 }

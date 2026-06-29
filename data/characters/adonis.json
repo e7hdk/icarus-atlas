@@ -1,0 +1,45 @@
+{
+  "id": "adonis",
+  "name": "Adonis",
+  "greekName": "Adōnis (Ἄδωνις)",
+  "romanName": "Adonis",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "beauty",
+    "the boar's death",
+    "the anemone"
+  ],
+  "summary": [
+    {
+      "text": "Youth of unparalleled beauty whom Venus loved — born from the myrrh-tree after Myrrha's incest in Ovid, or son of Cinyras and Metharme in Apollodorus — slain by a wild boar whose tusk found his groin, and mourned by the goddess who changed his blood to the short-lived anemone.",
+      "sources": ["ovid", "apollodorus", "hyginus"],
+      "citation": "Metamorphoses 10.680–1163; Bibliotheca 3.14.3; Fabulae 271"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid makes Adonis spring from the myrrh-tree when Lucina split the bark of transformed Myrrha — a boy anointed with his mother's weeping sap, so beautiful that Envy herself must praise him. He grew into a hunter whom Venus followed through thorny hills like Diana, warning him against lions and boars.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.680–879",
+      "topic": "adonis-parentage"
+    },
+    {
+      "text": "He would not heed. His hounds roused a savage boar; he struck a glancing blow, and the beast's tusk found his groin. Venus, flying on swans, heard his dying groan too late — she tore her hair, blamed Fate, and sprinkled nectar on his blood, and from it rose the anemone, wind-shaken on its frail stem.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.1031–1163"
+    },
+    {
+      "text": "Apollodorus traces a different birth: Cinyras in Cyprus married Metharme daughter of king Pygmalion and begot Oxyporus and Adonis among other children. Hyginus lists him among the youths whom Venus loved. Homer never names him, but the goddess' mourning for the hunter became one of the most celebrated love-stories in the ancient world.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.14.3; Fabulae 271",
+      "topic": "adonis-parentage"
+    }
+  ],
+  "residences": [
+    {
+      "city": "salamis-cyprus",
+      "sources": ["ovid", "apollodorus"]
+    }
+  ]
+}

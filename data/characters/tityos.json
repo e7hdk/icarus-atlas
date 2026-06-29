@@ -4,6 +4,7 @@
   "greekName": "Tityos (Τιτυός)",
   "romanName": "Tityus",
   "type": "creature",
+  "kinds": ["giant"],
   "domains": [
     "earth-giant",
     "underworld punishment",
@@ -56,6 +57,16 @@
         "pausanias"
       ],
       "citation": "Apollonius, Argonautica 1.759–762; Pausanias, Description of Greece 10.4.5"
+    },
+    {
+      "text": "Hyginus adds Juno's role: because Latona had lain with Jove, Juno ordered Tityos to offer violence to her. When he tried, he was slain by Zeus' thunderbolt. In the land of the dead he lies stretched over nine acres, and a serpent eats out his liver, which grows again with the moon.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 55"
+    },
+    {
+      "text": "Orpheus' song once made even his punishment pause: Tantalus forgot the returning water, Ixion's wheel stood still, the vultures left Tityos' liver, and the listening shades forgot their torments for a moment.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.1–137"
     },
     {
       "text": "Ovid sets Tityos among the great sinners of the underworld beside Tantalus, Sisyphus and Ixion: in the accursed seat his entrails are given over to be mangled, his body distended across nine acres. Pausanias adds that in Polygnotus' painting of the dead at Delphi Tityos is shown no longer suffering active torment but worn away by it, reduced to an indistinct and mutilated phantom.",

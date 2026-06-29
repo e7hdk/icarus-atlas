@@ -57,11 +57,25 @@
   ],
   "residences": [
     {
+      "city": "thebes",
+      "sources": [
+        "apollodorus"
+      ]
+    },
+    {
       "city": "mycenae",
       "sources": [
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias",
+        "homer"
+      ],
+      "citation": "Description of Greece 2.22.8; Iliad 2.653–670"
     }
   ]
 }

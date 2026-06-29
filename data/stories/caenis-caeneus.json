@@ -1,0 +1,85 @@
+{
+  "id": "caenis-caeneus",
+  "title": "Caenis and Caeneus",
+  "greekTitle": "Καινὴ καὶ Καινεύς",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 6.6,
+  "summary": {
+    "text": "Caenis of Thessaly, violated by Poseidon, asked to become an invulnerable man and was granted the change to Caeneus — who killed many centaurs at Peirithous' wedding before the survivors buried him under massy pines; Apollodorus tells the transformation and end, Ovid the full tale Nestor heard at Troy.",
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
+    "citation": "Ov. Met. 12.169–209; Apollod. Epit. 1.22"
+  },
+  "chapters": [
+    {
+      "title": "Caenis",
+      "text": "Ovid's Nestor tells how Caenis, a maiden of Thessaly famed for beauty, was seized by Neptune on the lonely shore. When the god offered any gift in recompense, she prayed that she might never suffer such outrage again — and asked to be changed into a man. Neptune granted it, and Caenis became Caeneus, invulnerable to steel.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 12.169–200"
+    },
+    {
+      "title": "The invulnerable man",
+      "text": "Apollodorus states the change plainly: Caeneus was formerly a woman, but after Poseidon had intercourse with her she asked to become an invulnerable man. Thereafter in battle with the centaurs he thought scorn of wounds and killed many of them — one of the mightiest men Nestor ever saw beside Peirithous and Theseus.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. Epit. 1.22; Ov. Met. 12.200–209"
+    },
+    {
+      "title": "Buried under the pines",
+      "text": "The centaurs could not pierce him with sword or spear. Apollodorus says the survivors surrounded him and by striking with fir trees buried him in the earth. Ovid names five centaurs he slew before Latreus mocked him and the whole brood drove their living pillar down — the end that ties him to Peirithous' wedding war.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. Epit. 1.22; Ov. Met. 12.459–532"
+    }
+  ],
+  "cast": [
+    {
+      "id": "caeneus-lapith",
+      "name": "Caeneus",
+      "role": "The invulnerable Lapith, formerly Caenis"
+    },
+    {
+      "id": "caeneus-lapith",
+      "name": "Caenis",
+      "role": "The maiden before Poseidon's gift"
+    },
+    {
+      "id": "poseidon",
+      "name": "Neptune",
+      "role": "God who granted the change of sex and invulnerability"
+    }
+  ],
+  "places": [
+    {
+      "name": "Thessaly",
+      "role": "Land of Caenis and the Lapith wedding",
+      "id": "larisa"
+    },
+    {
+      "name": "Mount Pelion",
+      "role": "Region of the centaur war",
+      "featureId": "mount-pelion"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "12.169–209, 459–532"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "1.22"
+    }
+  ]
+}

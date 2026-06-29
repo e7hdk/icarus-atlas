@@ -1,0 +1,84 @@
+{
+  "id": "hermaphroditus-salmacis",
+  "title": "Hermaphroditus and Salmacis",
+  "greekTitle": "Ἑρμαφρόδιτος καὶ Σαλμακίς",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5,
+  "summary": {
+    "text": "Hermaphroditus, the son of Hermes and Aphrodite, bathed in the Carian fountain of Salmacis; the nymph clung to him until their bodies merged into one biform shape, and the youth prayed that any man who entered the pool would issue softened — a curse his parents made eternal.",
+    "sources": [
+      "ovid",
+      "hyginus"
+    ],
+    "citation": "Ov. Met. 4.409–625; Hyg. Fab. 271"
+  },
+  "chapters": [
+    {
+      "title": "The nursling god",
+      "text": "The Naiads nursed an infant son of Mercury, gotten of Venus — Atlantius, who bears both parents' names and is called Hermaphroditus. When he reached fifteen he left Mount Ida's nurses and wandered Caria and Lycia, beautiful enough that man or woman might have loved him.",
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Ov. Met. 4.409–450; Hyg. Fab. 271"
+    },
+    {
+      "title": "The fountain",
+      "text": "He came to a pool clear as glass, stripped, and plunged in. Salmacis, unlike her sisters who hunted or spun, lived only to bathe and dress her hair at that spring. She saw him, burned, offered herself, and when he refused grew bold — feigning to leave, then springing from hiding to clasp him in the water.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 4.450–520"
+    },
+    {
+      "title": "The merged body",
+      "text": "Salmacis prayed that no day might ever part them. The gods fused their limbs: nor man nor woman wholly, but both in seeming neither one. Hermaphroditus, feeling his form soften in the guilty spring, begged father and mother that whoever bathed there would issue half-man and enervated. Moved, they made the fountain infamous forever.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 4.520–625"
+    }
+  ],
+  "cast": [
+    {
+      "id": "hermaphroditus",
+      "name": "Hermaphroditus",
+      "role": "Son of Hermes and Aphrodite, merged with Salmacis"
+    },
+    {
+      "id": "salmacis-nymph",
+      "name": "Salmacis",
+      "role": "Naiad of the enervating fountain"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Father who granted the spring's curse"
+    },
+    {
+      "id": "aphrodite",
+      "name": "Aphrodite",
+      "role": "Mother who granted the spring's curse"
+    }
+  ],
+  "places": [
+    {
+      "name": "Caria",
+      "role": "Land of the Salmacis fountain",
+      "id": "halicarnassus"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "4.409–625"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "271"
+    }
+  ]
+}

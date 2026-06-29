@@ -32,5 +32,19 @@
       "sources": ["homer", "apollodorus"],
       "citation": "Odyssey 12.1–35; Epitome 7.17"
     }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Odyssey 10.550–570, 11.55–95, 12.1–35; Epitome 7.17"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["homer", "apollodorus"]
+    }
   ]
 }

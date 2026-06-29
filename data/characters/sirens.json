@@ -4,6 +4,9 @@
   "greekName": "Seirēnes (Σειρῆνες)",
   "romanName": "Sirenes",
   "type": "creature",
+  "kinds": [
+    "siren"
+  ],
   "cluster": "chthonic",
   "domains": [
     "beguiling song",
@@ -70,6 +73,16 @@
         "pausanias"
       ],
       "citation": "Description of Greece 9.34.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "anthemoessa",
+      "sources": [
+        "apollonius",
+        "homer",
+        "apollodorus"
+      ]
     }
   ]
 }

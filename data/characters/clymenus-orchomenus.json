@@ -1,0 +1,42 @@
+{
+  "id": "clymenus-orchomenus",
+  "name": "Clymenus",
+  "greekName": "Klymenos (Κλύμενος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of the Minyans",
+    "the Onchestus grievance",
+    "father of Erginus"
+  ],
+  "summary": [
+    {
+      "text": "King of the Minyans at Orchomenus whose death at Onchestus set Erginus' tribute on Thebes — not to be confused with Clymenus father of Eurydice at Pylos, Clymenus the suitor at Dulichium, or Clymenus son of Oeneus in Aetolia.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 2.4.11; Description of Greece 9.37.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Clymenus king of the Minyans when a charioteer of Menoeceus called Perieres struck him with a stone in a precinct of Poseidon at Onchestus. Carried dying to Orchomenus, he charged his son Erginus with vengeance; Erginus marched on Thebes, slew many, and laid on the city a tribute of a hundred cattle each year for twenty years.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.11"
+    },
+    {
+      "text": "Pausanias gives a longer royal line: when Orchomenus son of Minyas died childless, the kingdom passed to Clymenus son of Presbon son of Phrixus. Sons were born to him — Erginus the eldest, then Stratius, Arrhon, and Pyleus, with Azeus the youngest. Clymenus was murdered at the feast of Onchestian Poseidon by men of Thebes over a trivial quarrel, and Erginus as eldest inherited both the grievance and the crown.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.1"
+    },
+    {
+      "text": "The homonym hazard is real in our corpus: Homer names a Clymenus as father of Eurydice at sandy Pylos, Apollodorus lists another among Penelope's suitors, and Oeneus in Aetolia also had a son Clymenus. Only the Minyan king whose death bound Thebes to tribute belongs at Orchomenus of the Minyae.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 3.450–495; Bibliotheca 2.4.11, 1.8.1; Epitome 7.27"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

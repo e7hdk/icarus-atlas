@@ -7,6 +7,9 @@ import { TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { filterRelations, pickSourced, isDisputed } from '@/lib/lens';
 import { bondsFor } from '@/features/characters/relations';
+import { getBakedLinkedProse, resolveCharacterProseSegments } from '@/features/linking/load-baked';
+import { buildLinkingContext } from '@/features/linking/name-index';
+import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
 
 /** Compact card shown while hovering a star. The full story lives in CharacterPanel. */
@@ -22,11 +25,24 @@ export function HoverCard({
   const lens = useGalaxyStore((s) => s.lens);
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
+  const bakedProse = useMemo(() => getBakedLinkedProse(), []);
+  const linkingContext = useMemo(
+    () => (bakedProse ? null : buildLinkingContext(characters)),
+    [characters, bakedProse],
+  );
   const character = hoveredId && hoveredId !== selectedId ? byId.get(hoveredId) : undefined;
+  const visibleRelations = filterRelations(relations, lens);
+  const scopeIds = useMemo(() => {
+    if (!character) return [];
+    const ids = new Set<string>([character.id]);
+    for (const bond of bondsFor(character.id, visibleRelations)) {
+      ids.add(bond.otherId);
+    }
+    return [...ids];
+  }, [character, visibleRelations]);
   if (!character) return null;
 
   const summary = pickSourced(character.summary, lens) ?? pickSourced(character.story, lens);
-  const visibleRelations = filterRelations(relations, lens);
   const disputed = lens === 'consensus' && isDisputed(character, relations);
   const bonds = bondsFor(character.id, visibleRelations).slice(0, 6);
 
@@ -46,7 +62,20 @@ export function HoverCard({
         <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
       </div>
       <p className="mt-3 font-body text-[15px] leading-relaxed text-aether/90">
-        {summary?.text ?? 'No surviving account for this figure is included under the active source lens.'}
+        {summary ? (
+          <LinkedProse
+            text={summary.text}
+            segments={
+              bakedProse ? resolveCharacterProseSegments(bakedProse, character, summary.text) : undefined
+            }
+            characterIndex={linkingContext?.characterIndex}
+            nameIndex={linkingContext?.nameIndex}
+            sortedNames={linkingContext?.sortedNames}
+            scopeIds={scopeIds}
+          />
+        ) : (
+          'No surviving account for this figure is included under the active source lens.'
+        )}
       </p>
       {disputed && (
         <p className="mt-2 rounded-lg border border-nebula-soft/35 bg-nebula-violet/15 px-3 py-1.5 font-body text-[13px] text-nebula-soft">

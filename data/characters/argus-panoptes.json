@@ -1,0 +1,36 @@
+{
+  "id": "argus-panoptes",
+  "name": "Argus Panoptes",
+  "greekName": "Argos Panoptēs (Ἄργος Πανόπτης)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the hundred-eyed guardian",
+    "Io's watcher",
+    "Hera's servant"
+  ],
+  "summary": [
+    {
+      "text": "The all-seeing guardian whom Hera set to watch Io in her heifer-form — eyes that never all slept at once — until Hermes lulled him with story and pipe and cut off his head; Juno set his eyes on the peacock's tail.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 1.583–687; Bibliotheca 2.1.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus turned Io into a milk-white heifer to hide her from Hera, the queen asked the cow as a gift and set Argus Panoptes to watch — a guardian whose hundred eyes never all closed at once. Io fed on bitter herbs and bellowed where she once would speak.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 1.583–687; Bibliotheca 2.1.3"
+    },
+    {
+      "text": "Mercury lulled Argus with story and pipe, then cut off his head; Juno set the hundred eyes on her peacock's tail and sent a gadfly to torment Io until the wanderings ended at the Nile.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 1.688–746; Bibliotheca 2.1.3"
+    },
+    {
+      "text": "He must not be merged with Argus builder of the Argo (`argus-colchis`), Argus son of Arestor (`argus-arestor`), or the eponymous Argus of the city — the hundred-eyed watcher belongs to Io's heifer-wandering alone.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.3"
+    }
+  ]
+}

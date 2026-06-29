@@ -1,0 +1,44 @@
+{
+  "id": "celeus-eleusis",
+  "name": "Celeus",
+  "greekName": "Keleus (Κελεός)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Eleusis",
+    "host of Demeter",
+    "father of Triptolemus"
+  ],
+  "summary": [
+    {
+      "text": "King of the Eleusinians who welcomed Demeter in mortal guise when she wandered the earth after Persephone's rape — father of Triptolemus in the Athenian tradition, and husband of Metaneira, whose daughters found the goddess at the Flowery Well.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.5.1, 3.14.7; Description of Greece 1.14.2, 1.38.3, 1.39.1; Fabulae 147"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Demeter quit Olympus and came in the likeness of a mortal woman to Eleusis, Apollodorus says, Celeus then reigned over the Eleusinians and received her into his house. In Pandion's Athens the same mythographer sets the parallel arrival of Demeter and Dionysus: Demeter welcomed by Celeus at Eleusis while Icarius received the wine-god elsewhere in Attica.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.1, 3.14.7"
+    },
+    {
+      "text": "Pausanias follows Pamphos in telling how the daughters of Celeus found Demeter sitting at the Flowery Well after the rape of her daughter and brought the seeming Argive woman home to their mother Metaneira. At Eleusis he reckons Celeus among those to whom Demeter herself taught the holy rites, with Eumolpus and Triptolemus; Pamphos and Homer agree in naming his daughters Diogenia, Pammerope, and Saesara as ministers of the Two Goddesses.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.3, 1.39.1"
+    },
+    {
+      "text": "The Athenians, Pausanias adds, hold that Triptolemus son of Celeus was the first to sow seed for cultivation — though Apollodorus in the same breath records rival parentages making the sower a son of Metaneira or of Ocean and Earth. Hyginus tells how, when Triptolemus returned from spreading grain, Celeus would have killed him for his benefactions until Ceres ordered the kingdom given to the sower instead.",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.14.2; Fabulae 147",
+      "topic": "triptolemus-parentage"
+    }
+  ],
+  "residences": [
+    {
+      "city": "eleusis",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.5.1, 3.14.7; Description of Greece 1.38.3, 1.39.1; Fabulae 147"
+    }
+  ]
+}

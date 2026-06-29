@@ -7,57 +7,157 @@
   "era": 6.45,
   "summary": {
     "text": "At Thebes Heracles strangled Hera's serpents in his cradle; after he freed the city from the Minyans, madness drove him to slay Megara's children, and Delphi sent him to serve Eurystheus — first Alcides, then Heracles.",
-    "sources": ["apollodorus", "homer", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hyginus"
+    ],
     "citation": "Apollod. 2.4.8–12; Hom. Il. 19.95–133, Od. 11.269–270; Hyg. Fab. 32"
   },
   "chapters": [
     {
       "title": "The serpents in the cradle",
       "text": "When Heracles was eight months old, Hera sent two great serpents to destroy him in his bed. The infant rose and strangled them with both hands while Amphitryon and Alcmene looked on — a sign that the elder twin was Zeus' son, though Apollodorus also knows a tale that Amphitryon himself laid the serpents there to learn which boy was his.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 2.4.8; Hyg. Fab. 30"
     },
     {
       "title": "Zeus or Amphitryon",
       "text": "Zeus came to Alcmene in Amphitryon's likeness and prolonged the night threefold; she bore Heracles the elder by one night and Iphicles by the mortal husband. Hesiod and Homer name Zeus as sire; the handbook gives both fathers — the archetypal dispute of the hero who is mortal and more than mortal at once.",
-      "sources": ["apollodorus", "hesiod", "homer"],
+      "sources": [
+        "apollodorus",
+        "hesiod",
+        "homer"
+      ],
       "citation": "Apollod. 2.4.8; Hes. Th. 943–944; Hom. Od. 11.266–268",
       "topic": "heracles-father"
     },
     {
       "title": "Megara and the madness",
       "text": "After he overthrew the Minyans of Orchomenus, Creon of Thebes gave him Megara as a prize. Hera drove him mad, and he slew the children he had by her and two sons of Iphicles. Condemned to exile, he went to Delphi — where the Pythia first named him Heracles, though before that he had been called Alcides.",
-      "sources": ["apollodorus", "homer", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
       "citation": "Apollod. 2.4.11–12; Hom. Od. 11.269–270; Hyg. Fab. 32–33"
     },
     {
       "title": "Service at Tiryns",
       "text": "The oracle told him to serve Eurystheus at Tiryns and Mycenae, performing whatever labours the king should set — penance for the slaughter, and Hera's long revenge made into twelve public ordeals that would drive the hero to the ends of the earth.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 2.4.12"
     }
   ],
   "cast": [
-    { "id": "heracles", "name": "Heracles", "role": "The infant who strangled the serpents" },
-    { "id": "alcmene", "name": "Alcmene", "role": "Mother of the twins" },
-    { "id": "amphitryon", "name": "Amphitryon", "role": "Mortal husband and father of Iphicles" },
-    { "id": "iphicles", "name": "Iphicles", "role": "The younger twin" },
-    { "id": "zeus", "name": "Zeus", "role": "Divine father" },
-    { "id": "hera", "name": "Hera", "role": "She who sent serpents and madness" },
-    { "id": "megara", "name": "Megara", "role": "First wife, daughter of Creon" },
-    { "id": "creon", "name": "Creon", "role": "Theban king who gave her" },
-    { "id": "eurystheus", "name": "Eurystheus", "role": "The cousin who became his master" }
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "The infant who strangled the serpents"
+    },
+    {
+      "id": "alcmene",
+      "name": "Alcmene",
+      "role": "Mother of the twins"
+    },
+    {
+      "id": "amphitryon",
+      "name": "Amphitryon",
+      "role": "Mortal husband and father of Iphicles"
+    },
+    {
+      "id": "iphicles",
+      "name": "Iphicles",
+      "role": "The younger twin"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Divine father"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "She who sent serpents and madness"
+    },
+    {
+      "id": "megara",
+      "name": "Megara",
+      "role": "First wife, daughter of Creon"
+    },
+    {
+      "id": "creon",
+      "name": "Creon",
+      "role": "Theban king who gave her"
+    },
+    {
+      "id": "erginus-orchomenus",
+      "name": "Erginus",
+      "role": "King of the Minyans who exacted tribute from Thebes until Heracles routed him"
+    },
+    {
+      "id": "clymenus-orchomenus",
+      "name": "Clymenus",
+      "role": "Erginus' father, whose death at Onchestus set the tribute on Thebes"
+    },
+    {
+      "id": "eurystheus",
+      "name": "Eurystheus",
+      "role": "The cousin who became his master"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City of birth and Megara's house" },
-    { "id": "tiryns", "name": "Tiryns", "role": "Where the oracle bound him to serve" },
-    { "name": "Delphi", "role": "Where he received the name Heracles" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City of birth and Megara's house"
+    },
+    {
+      "id": "orchomenos-boeotia",
+      "name": "Orchomenos",
+      "role": "Kingdom of the Minyans whom Heracles overthrew"
+    },
+    {
+      "id": "tiryns",
+      "name": "Tiryns",
+      "role": "Where the oracle bound him to serve"
+    },
+    {
+      "name": "Delphi",
+      "role": "Where he received the name Heracles",
+      "id": "delphi"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "2.4.8–12" },
-    { "source": "homer", "work": "Iliad", "citation": "19.95–133" },
-    { "source": "homer", "work": "Odyssey", "citation": "11.269–270" },
-    { "source": "hesiod", "work": "Theogony", "citation": "943–944" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "30–33" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.4.8–12"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "19.95–133"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.269–270"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "943–944"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "30–33"
+    }
   ]
 }

@@ -1,12 +1,22 @@
 # The Nymphs — taxonomy, inventory & batch plan — Research Dossier
 
-> Research status: source-mapped taxonomy locked 2026-06-15. **51** character nodes carry `type: "nymph"` (~4.4% of the live roster); **Pleiades complete (7/7)**. This dossier gates future entry; same-name hazards must be resolved before any character is written (per CLAUDE.md hard rule 7).
+> Research status: source-mapped taxonomy locked 2026-06-15. **60** dossier-tracked nymph nodes in §3 (+2 Batch L: `chione-boreas`, `chrysopelia-naiad`; `pleione-oceanid` wired); **Pleiades complete (7/7)**; **Apollodorus' Hesperid quartet promoted**. This dossier gates future entry; same-name hazards must be resolved before any character is written (per CLAUDE.md hard rule 7).
 >
 > **Schema locked 2026-06-15:** mythological sub-class lives in `kinds: FigureKind[]` (max 3), **not** in `domains` and **never** as extra `CharacterType` values. Primary `type: "nymph"` alone drives emerald glow and timeless mortal-clock placement. See docs/PLAN.md §5.1.
 >
 > **Batch E entered 2026-06-15:** 4 figures — `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` — completing the seven sisters. `electra-atlas` stays `hero`; maternity retargeted to `electra-pleiad`. One contradiction (`oenomaus-sterope-relation`).
 >
-> **Batch F entered 2026-06-15:** 1 figure — `cyrene-nymph` — Libyan/Peneus nymph wired to Apollo, Aristaeus, and Idmon. One contradiction (`idmon-parentage`).
+> **Batch G entered 2026-06-18:** 3 figures — `liriope-nymph`, `peirene-naiad`, `iphianassa-elean` — Cephissus/Corinth spring naiads and Endymion's disputed consort. Two contradictions (`peirene-parentage`, `endymion-children`). `narcissus-echo` cast wired.
+>
+> **Batch H entered 2026-06-18:** 0 new figures — kind pass on 9 city eponyms: 8 confirmed `naiad` (Asopus/Ladon/Eurotas/Imbrasus river daughters); `rhodos` retagged `oceanid` (Apollodorus *Bibliotheca* 1.4.5 — Rhode, daughter of Poseidon and Amphitrite).
+>
+> **Batch I entered 2026-06-18:** 5 figures — `pleione-oceanid` (Oceanid parent of the seven Pleiads); individual Hesperids `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid` (Apollodorus *Bibliotheca* 2.5.11 roll; Apollonius *Arg.* 4.1422 for Aegle/Erytheis/Hespere). Parent edges Atlas+Pleione → all seven Pleiads; disputed Hesperid parentage on individuals mirrors collective `hesperides`. Homonym `arethusa-hesperid` ≠ `arethusa-nymph` documented; reuses `hesperides-parentage`.
+>
+> **Batch J entered 2026-06-18:** 1 figure — `calybe-nymph` (Apollodorus' mother of Bucolion); `kinds` backfill on `abarbarea-trojan`; `bucolion-trojan` wired to Calybe and Laomedon. One contradiction (`bucolion-mother`); `house-of-troy` cast updated.
+>
+> **Batch K entered 2026-06-18:** 0 new figures — kind hygiene on `callisto` (`oread` + `callisto-parentage`), `pasiphae` (`oceanid`), `argiope-parnassus` (`oread` verified); `kinds` removed from `eidothea-proteus` (Homer/Hyginus: daughter of Proteus only, no sub-class); Calypso empty-kinds policy documented. One contradiction (`callisto-parentage`). §3 TBD row cleared.
+>
+> **Batch L entered 2026-06-18:** 2 figures — `chione-boreas` (renamed from `chione-athens`, Boreas' daughter, mother of Eumolpus; `kinds` deferred — no sub-class in corpus), `chrysopelia-naiad` (Eumelus' some-say consort of Arcas); 1 contradiction (`arcas-consort-mother`). **Creusa (nymph)** corpus gate failed — deferred.
 >
 > **Phase 2 plan locked 2026-06-15:** Batches **G–L** below — deferred §3 candidates, city-eponym kind pass, Pleione parent edges, Trojan nymph wires, and hygiene backfill. Batch F complete.
 >
@@ -18,7 +28,7 @@
 >
 > **Batch A entered 2026-06-15:** 6 figures — `doris-oceanid`, `electra-oceanid`, `eurynome`, `metis`, `amphitrite`, `galatea-nymph` — wiring Nereus↔Doris, Thaumas↔Electra, Charites↔Eurynome, Metis↔Athena, Poseidon↔Amphitrite, and the Galatea/Acis line. One documented contradiction (`amphitrite-parentage`).
 >
-> **Batch 0 backfill complete 2026-06-15:** 36/37 nymph nodes tagged with `kinds`; 25 centaur nodes tagged `kinds: ["centaur"]`; `styx` tagged `kinds: ["oceanid"]`. **`calypso`** omitted — Homer attests only “daughter of Atlas” with no sub-class in our seven lenses (kinds deferred until a sourced tag lands).
+> **Batch 0 backfill complete 2026-06-15:** 36/37 nymph nodes tagged with `kinds`; 25 centaur nodes tagged `kinds: ["centaur"]`; `styx` tagged `kinds: ["oceanid"]`. **`calypso`** and **`eidothea-proteus`** omit `kinds` — Homer attests only “daughter of Atlas” / “daughter of Proteus” with no sub-class in our seven lenses (kinds deferred until a sourced tag lands). See Batch K policy notes in each character's story.
 
 ## 1. Why this cluster
 
@@ -39,6 +49,7 @@
 **Rules for data entry:**
 
 - New `nymph` entries **must** include at least one `NYMPH_KINDS` value in `kinds`.
+- **Deferred exceptions (Batch K):** `calypso` and `eidothea-proteus` omit `kinds` when Homer attests parentage only (Atlas / Proteus) with no sub-class in our seven lenses; policy is narrated in each character's story prose.
 - New `creature` entries **must** include at least one `CREATURE_KINDS` value (see docs/CENTAURS.md).
 - Do **not** put mythological class in `domains` ("dryad nymph" → use `kinds: ['dryad']`).
 - `kinds` may stack (max 3): e.g. Maia → `['pleiad']` (Pleione is Ocean's daughter; add `oceanid` only if sourced parentage is in the node).
@@ -61,41 +72,42 @@
 
 Enum grows only via verified batches and PLAN.md decision-log entry — never ad hoc strings.
 
-## 3. Live inventory (51 nodes — Pleiades 7/7)
+## 3. Live inventory (58 nodes — Pleiades 7/7 + Pleione + Hesperid quartet + Calybe + Batch L pair)
 
 | id | Target `kinds` | Notes |
 |---|---|---|
-| `clymene`, `asia`, `melia`, `philyra`, `perseis-oceanid`, `idyia-oceanid`, `plouto`, `orseis` | `oceanid` | |
+| `clymene`, `asia`, `melia`, `philyra`, `perseis-oceanid`, `idyia-oceanid`, `plouto`, `orseis`, `rhodos` | `oceanid` | `rhodos` ✅ Batch H — Apollodorus *Bibliotheca* 1.4.5 |
 | `thetis`, `psamathe`, `galatea-nymph` | `nereid` | |
-| `praxithea-naiad`, `periboea-naiad`, `zeuxippe-naiad`, `batia-naiad`, `cleocharia-naiad`, `daphne-nymph`, `arethusa-nymph`, `cyrene-nymph` | `naiad` | |
+| `praxithea-naiad`, `periboea-naiad`, `zeuxippe-naiad`, `batia-naiad`, `cleocharia-naiad`, `daphne-nymph`, `arethusa-nymph`, `cyrene-nymph`, `liriope-nymph`, `peirene-naiad`, `calybe-nymph`, `abarbarea-trojan`, `aegina-nymph`, `thebe`, `salamis-nymph`, `corcyra`, `metope`, `sinope-nymph`, `astypalaea`, `sparte` | `naiad` | city eponyms ✅ Batch H 2026-06-18; Trojan fountain nymphs ✅ Batch J 2026-06-18 |
 | `erato-dryad` | `dryad` | |
-| `cyllene-oread`, `nonacris-oread`, `argiope-parnassus`, `callisto`, `echo-nymph` | `oread` | |
+| `cyllene-oread`, `nonacris-oread`, `argiope-parnassus`, `callisto`, `echo-nymph` | `oread` | `argiope-parnassus` ✅ Batch K — Pausanias 4.33.3; `callisto` ✅ Batch K — Hesiod nymph strand + Arcadian chase |
 | `syrinx-nymph` | `hamadryad` | |
 | `melia-thebes` | `melia` | ≠ Argive `melia` or collective `meliae` |
 | `meliae` | `melia` | collective ash nymphs |
 | `nephele`, `nubes-ixion` | `nephele` | |
 | `maia`, `taygete`, `merope-pleiad`, `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` | `pleiad` | `electra-atlas` = hero star-myth, not merged |
+| `pleione-oceanid` | `oceanid` | ✅ Batch I — mother of the seven Pleiads (Bibliotheca 3.10.1) |
 | `hesperides` | `hesperid` | collective |
-| `aegina-nymph`, `thebe`, `salamis-nymph`, `corcyra`, `metope`, `sinope-nymph`, `astypalaea`, `rhodos`, `sparte` | `naiad` or `oceanid` | verify per source before backfill |
+| `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid` | `hesperid` | ✅ Batch I — Apollodorus' Ladon roll; `arethusa-hesperid` ≠ `arethusa-nymph` |
 | `chariclo` | `naiad` | ✅ tagged Batch 0; Theban, mother of Tiresias |
-| `argiope-parnassus` | `oread` | verify in Batch K |
 | `chariclo-centaur` | `oceanid` | Pelion consort of Chiron |
-| `calypso`, `callisto`, `pasiphae`, `eidothea-proteus` | TBD | Batch K hygiene pass |
+| `pasiphae` | `oceanid` | ✅ Batch K — daughter of Helios and Perseis (Hesiod *Theogony* 956; Apollodorus *Bibliotheca* 3.1.2) |
+| `calypso`, `eidothea-proteus`, `chione-boreas`, `chrysopelia-naiad` | *(deferred kinds)* | ✅ Batch K/L — Homer/Apollodorus sub-class absent; `kinds` empty by policy (see character story prose). `chione-boreas` renamed from `chione-athens`; `chrysopelia-naiad` id suffix disambiguates, not a sourced Naiad tag |
 
 **Unpromoted / prose-only (batched in §5):**
 
 | Figure | Batch | Notes |
 |---|---|---|
 | **Cyrene** | F ✅ | Apollo's Libyan lover; mother of Aristaeus and (per Hyginus) Idmon. Homonym: Ares' Thracian consort → `diomedes-thrace` prose. |
-| **Endymion's wife** | G | Apollodorus 1.7.6: Aetolus born to Endymion by a Naiad nymph *or*, as some say, by Iphianassa — overlaps `endymion-children` in AEOLUS_DYNASTY. Do **not** merge with Homer's Iphianassa daughter of Agamemnon. |
-| **Liriope** | G | Narcissus' mother in Ovid; plain name in `narcissus-echo` cast — promote `liriope-nymph`. |
-| **Peirene** | G | Corinth spring nymph, mother of Leches and Cenchrias by Poseidon; parentage disputed (Achelous vs Oebalus). |
-| **Calybe** | J | Apollodorus names Bucolion son of Laomedon by nymph Calybe — rival to Homer's `abarbarea-trojan`. |
-| **Pleione** | I | Ocean's daughter, mother of all seven Pleiads — no node yet; parent edges missing on sisters. |
-| **Individual Hesperids** | I | Collective `hesperides` exists; Apollodorus names Aegle, Erytheia, Hesperia, Arethusa — last ≠ `arethusa-nymph`. |
-| **Chione (Boreas' daughter)** | L | Eumolpus' mother — distinct from `chione-athens` and `chione-daedalion`. |
-| **Chrysopelia** | L | Arcas' consort per Eumelus (Apollodorus 3.9.1) — rival to Leanira/Meganira. |
-| **Creusa (nymph)** | L | **Research gate:** no distinct nymph attestation in corpus under that label; `creusa-athens` is mortal (Erechtheus' daughter). Do not promote until a sourced nymph-class Creusa is verified. |
+| **Endymion's wife** | G ✅ | `iphianassa-elean` = Apollodorus' some-say mother of Aetolus; mortal wives in Pausanias under topic `endymion-children`. Homer's Agamemnon daughter stays separate. |
+| **Liriope** | G ✅ | `liriope-nymph` = Cephissus' lover, Narcissus' mother (Ovid Met. 3); cast linked in `narcissus-echo`. |
+| **Peirene** | G ✅ | `peirene-naiad` = Corinth spring; Leches/Cenchrias by Poseidon; parentage dispute Achelous vs Oebalus (`peirene-parentage`). |
+| **Calybe** | J ✅ | `calybe-nymph` = Apollodorus' mother of Bucolion; rival to Homer's `abarbarea-trojan` (`bucolion-mother`). |
+| **Pleione** | I ✅ | `pleione-oceanid` = Ocean's daughter, mother of all seven Pleiads; parent edges to Atlas+Pleione on every sister. |
+| **Individual Hesperids** | I ✅ | Apollodorus names Aegle, Erythia, Hesperia, Arethusa — promoted as `*-hesperid`; collective `hesperides` retained; `arethusa-hesperid` ≠ `arethusa-nymph`. |
+| **Chione (Boreas' daughter)** | L ✅ | `chione-boreas` — renamed from `chione-athens`; Eumolpus' mother; distinct from `chione-daedalion`. |
+| **Chrysopelia** | L ✅ | `chrysopelia-naiad` — Arcas' consort per Eumelus (Apollodorus 3.9.1); rival to Leanira/Meganira/Erato (`arcas-consort-mother`). |
+| **Creusa (nymph)** | L ⏸ | **Corpus gate failed 2026-06-18:** no distinct nymph attestation under that label in seven lenses; `creusa-athens` and `creusa-troy` remain mortal. Do not promote until a sourced nymph-class Creusa is verified. |
 
 ## 4. Same-name hazard map
 
@@ -117,15 +129,17 @@ Enum grows only via verified batches and PLAN.md decision-log entry — never ad
 | **Batia** | `batia-naiad` = Spartan Naiad, wife of Oebalus, mother of Tyndareus · Trojan princess (Teucer's daughter, Dardanus' bride) = plain name in `dardanus`/`teucer-troas` prose only |
 | **Periboea** | `periboea-naiad` = Icarius' wife, mother of Penelope · other Periboeae exist in myth — disambiguate id |
 | **Aegina** | `aegina-nymph` = the nymph · geo region `aegina` = separate layer |
+| **Rhode / Rhodos** | `rhodos` = island eponym, Helios' consort, daughter of Poseidon and Amphitrite (Apollodorus *Bibliotheca* 1.4.5) · Apollodorus *Bibliotheca* 2.1.5 names a different Rhode, daughter of Egyptus — not merged |
+| **Astypalaea** | `astypalaea` = Imbrasus nymph, Poseidon's lover (Apollonius *Arg.* 2.851) · Pausanias 7.4.1 gives alternative parentage through Phoenix — harmonizable genealogy, not a homonym merge |
 | **Cyrene** | `cyrene-nymph` = Peneus/Libya nymph, Apollo's lover, mother of Aristaeus · Thracian Cyrene (Ares, mother of Diomedes) = plain name in `diomedes-thracian` prose only |
 | **Creusa** | `creusa-athens` = mortal princess, Xuthus' wife · `creusa-troy` = Priam's daughter · nymph Creusa = not verified — do not merge |
-| **Chione** | `chione-athens` = daughter of Boreas, mother of Eumolpus · `chione-daedalion` = Daedalion's daughter, Philammon's mother · other Chiones = disambiguate id |
+| **Chione** | `chione-boreas` = daughter of Boreas, mother of Eumolpus (renamed from `chione-athens`) · `chione-daedalion` = Daedalion's daughter, Philammon's mother · other Chiones = disambiguate id |
 | **Pleione** | `pleione-oceanid` = Ocean's daughter, mother of the Pleiads · not to be confused with the constellation name alone |
-| **Arethusa (Hesperid)** | Apollodorus' Hesperid Arethusa = plain name until promoted (`*-hesperid`) · `arethusa-nymph` = Alpheus' Sicilian spring nymph |
+| **Arethusa (Hesperid)** | `arethusa-hesperid` = Apollodorus' apple-guardian (Bibliotheca 2.5.11) · `arethusa-nymph` = Alpheus' Sicilian spring nymph (Ovid, Pausanias) |
 | **Calybe / Abarbarea** | `calybe-nymph` = Apollodorus' mother of Bucolion · `abarbarea-trojan` = Homer's fountain-nymph mother of Aesepus and Pedasus |
 | **Liriope** | `liriope-nymph` = Cephissus' lover, Narcissus' mother · no other Liriope nodes |
 | **Peirene** | `peirene-naiad` = Corinth spring nymph · geo `corinth` = separate layer |
-| **Iphianassa (Elean)** | Endymion's disputed consort in Apollodorus 1.7.6 — if promoted, id `iphianassa-elean` (not Agamemnon's daughter) |
+| **Iphianassa (Elean)** | `iphianassa-elean` = Endymion's some-say consort, mother of Aetolus (Apollod. 1.7.6) · Homer's daughter of Agamemnon = separate mortal node · Proetus' mad daughter = prose only |
 
 ## 5. Phased batch plan
 
@@ -138,12 +152,12 @@ Enum grows only via verified batches and PLAN.md decision-log entry — never ad
 | **D — Metamorphosis nymphs** | Daphne, Echo, Arethusa, Syrinx | ✅ 2026-06-15 — 4 figures; story cast links; reuses `daphne-transformation-agent` | Metamorphoses shelf |
 | **E — Pleiad completion** | Alcyone, Celaeno, Electra, Sterope as `nymph` + `pleiad` | ✅ 2026-06-15 — 4 figures; 7/7 sisters; 1 contradiction (`oenomaus-sterope-relation`) | Atlas daughters |
 | **F — Cyrene cluster** | Libyan/Peneus nymph wired to Apollo, Aristaeus, Idmon | ✅ 2026-06-15 — `cyrene-nymph`; 1 contradiction (`idmon-parentage`) | Argonautica shelf; `aristaeus`, `idmon`, `apollo` |
-| **G — Spring naiads** | Cephissus and Corinth springs; Endymion consort dispute | **2–3 figures** — `liriope-nymph`, `peirene-naiad`; optional `iphianassa-elean` *or* unnamed-Naiad edge-only with topic `aetolus-mother` / `endymion-children` | `narcissus-echo` cast link; AEOLUS_DYNASTY interlock |
-| **H — City eponyms kind pass** | Verify `kinds` on existing Asopus-daughter nodes — **no new nodes** | **~9 nodes** — `aegina-nymph`, `thebe`, `salamis-nymph`, `corcyra`, `metope`, `sinope-nymph`, `astypalaea`, `rhodos`, `sparte` | Asopus genealogy; `corcyra` reference sibling list |
-| **I — Pleione & Hesperid individuals** | Parent node + individual evening nymphs | **1 + up to 4 figures** — `pleione-oceanid`; parent edges Atlas+Pleione → all seven Pleiads; individuals e.g. `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid` (confirm roll vs collective `hesperides`) | Batch E sisters; `hesperides-parentage` |
-| **J — Trojan fountain rivals** | Bucolion's dual maternity | **1 figure** — `calybe-nymph`; wire `bucolion-trojan`; backfill `kinds` on `abarbarea-trojan` | `bucolion-mother` (new topic) |
-| **K — Hygiene & deferred kinds** | Tag remaining TBD nodes; document Calypso policy | **0 new nodes** — `callisto` (`oread` + parentage note), `pasiphae` (`oceanid`), `eidothea-proteus`, `calypso` (kinds remain empty until Homer sub-class is sourced), `argiope-parnassus` verify | §3 inventory sync |
-| **L — Later catalogue** | Lower-priority promotions after F–K | **2+ figures** — `chione-boreas` (or `chione-eumolpus`), `chrysopelia-naiad`; **Creusa nymph** only after corpus gate clears | Arcadia batch; Boreas line |
+| **G — Spring naiads** | Cephissus and Corinth springs; Endymion consort dispute | ✅ 2026-06-18 — 3 figures: `liriope-nymph`, `peirene-naiad`, `iphianassa-elean`; 2 contradictions (`peirene-parentage`, `endymion-children`); `narcissus-echo` cast wired | `narcissus-echo` cast link; AEOLUS_DYNASTY interlock |
+| **H — City eponyms kind pass** | Verify `kinds` on existing Asopus-daughter nodes — **no new nodes** | ✅ 2026-06-18 — 9 nodes verified: 8 `naiad`, `rhodos` → `oceanid` (Apollodorus *Bibliotheca* 1.4.5) | Asopus genealogy; `corcyra` reference sibling list |
+| **I — Pleione & Hesperid individuals** | Parent node + individual evening nymphs | ✅ 2026-06-18 — 5 figures: `pleione-oceanid`; `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid`; parent edges Atlas+Pleione → all seven Pleiads; reuses `hesperides-parentage` | Batch E sisters; `hesperides-parentage` |
+| **J — Trojan fountain rivals** | Bucolion's dual maternity | ✅ 2026-06-18 — `calybe-nymph`; wire `bucolion-trojan`; backfill `kinds` on `abarbarea-trojan`; 1 contradiction (`bucolion-mother`) | `bucolion-mother` |
+| **K — Hygiene & deferred kinds** | Tag remaining TBD nodes; document Calypso policy | ✅ 2026-06-18 — 0 new nodes: `callisto` (`oread` + `callisto-parentage`), `pasiphae` (`oceanid`), `argiope-parnassus` (`oread` verified), `eidothea-proteus` (`kinds` cleared), `calypso` (empty `kinds` policy); 1 contradiction (`callisto-parentage`) | §3 inventory sync |
+| **L — Later catalogue** | Lower-priority promotions after F–K | ✅ 2026-06-18 — 2 figures: `chione-boreas`, `chrysopelia-naiad`; 1 contradiction (`arcas-consort-mother`); Creusa nymph deferred (corpus gate) | Arcadia batch; Boreas line |
 
 ### Phase 2 contradiction topics (proposed)
 
@@ -151,11 +165,12 @@ Enum grows only via verified batches and PLAN.md decision-log entry — never ad
 |---|---|---|
 | `cyrene-parentage` | Daughter of Peneus (Hyginus *Fab.* 161) vs pastoral nymph on Peneus without named father (Apollonius *Arg.* 2.500) — harmonizable; homonym hazard is Thracian Cyrene (Ares) | — |
 | `idmon-parentage` | ✅ Son of Apollo (± Cyrene) vs son of Abas | F |
-| `aetolus-mother` / `endymion-children` | Naiad nymph vs Iphianassa vs Pausanias' mortal wives (Asterodia, Cromia, Hyperippe) | G |
-| `peirene-parentage` | Daughter of Achelous (Pausanias 2.2.3) vs daughter of Oebalus (*Great Eoeae*) | G |
-| `bucolion-mother` | Abarbarea fountain-nymph (Homer *Il.* 6) vs Calybe (Apollodorus) | J |
-| `callisto-parentage` | Daughter of Lycaon (Apollodorus default) vs nymph of Hesiod / Nycteus / Ceteus variants | K |
-| `hesperid-arethusa-homonym` | Hesperid Arethusa vs Sicilian spring `arethusa-nymph` | I |
+| `aetolus-mother` / `endymion-children` | ✅ Naiad nymph vs Iphianassa vs Pausanias' mortal wives (Asterodia, Cromia, Hyperippe) | G |
+| `peirene-parentage` | ✅ Daughter of Achelous (Pausanias 2.2.3) vs daughter of Oebalus (*Great Eoeae*) | G |
+| `bucolion-mother` | ✅ Abarbarea fountain-nymph (Homer *Il.* 6) vs Calybe (Apollodorus) | J |
+| `callisto-parentage` | ✅ Daughter of Lycaon (Apollodorus default) vs nymph of Hesiod / Nycteus / Ceteus variants | K |
+| `hesperid-arethusa-homonym` | ✅ `arethusa-hesperid` vs Sicilian spring `arethusa-nymph` — separate nodes, hazard map §4 | I |
+| `arcas-consort-mother` | ✅ Pausanias' Erato (Dryad, three sons) vs Apollodorus' Leanira / Meganira / Eumelus' Chrysopelia (two sons) | L |
 
 Run `pnpm validate-data` and `pnpm validate-layout` after every batch.
 
@@ -173,4 +188,4 @@ Out of scope for first pass: exhaustive Hesiodic Oceanid catalogue (3000 names);
 
 ---
 
-*Last updated: 2026-06-15 (Batch F entered).*
+*Last updated: 2026-06-18 (Batch L entered).*

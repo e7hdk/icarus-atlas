@@ -1,0 +1,34 @@
+{
+  "id": "alcyoneus-giant",
+  "name": "Alcyoneus (Gigantes)",
+  "greekName": "Alkyoneus (Ἀλκυονεύς)",
+  "romanName": "Alcyoneus",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "immortal in his native land",
+    "chief of the Gigantes",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "The earthborn Giant who was immortal so long as he fought in the land of his birth, slain by Heracles when Athena advised the hero to drag him outside Pallene.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.1–2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus ranks Alcyoneus with Porphyrion as chief among the Giants whom Gaia bore in wrath over the Titans. He was immortal while he fought in his native land and had driven away the cows of the Sun from Erythia. Heracles first shot him with an arrow, but when the Giant fell he somewhat revived; at Athena's advice Heracles dragged him outside Pallene, and so he died. The collective node `gigantes` holds the whole Gigantomachy; this node is the individual named in Apollodorus' battle roll.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.1–2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Alcyoneus distinct from `alcyone-pleiad`, the Pleiad daughter of Atlas and Pleione.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.1–2"
+    }
+  ]
+}

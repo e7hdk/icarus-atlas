@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { loadStories, loadStoryCulture } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
+import { getBakedLinkedProse, getStoryProseSegments } from '@/features/linking/load-baked';
+import { buildLinkingContext } from '@/features/linking/name-index';
+import { StoryProse } from '@/components/stories/StoryProse';
 import { loadCities } from '@/features/geo/load';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { BackArrow } from '@/components/ui/BackArrow';
@@ -29,6 +32,7 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
     loadCities(),
     loadStoryCulture(id),
   ]);
+  const bakedProse = getBakedLinkedProse();
   const story = stories.find((s) => s.id === id);
   if (!story) notFound();
 
@@ -37,6 +41,9 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
   const sourceNames = new Map(atlas.sources.map((source) => [source.id, source.name]));
   const characterById = new Map(atlas.characters.map((character) => [character.id, character]));
   const cityById = new Map(cities.map((city) => [city.id, city]));
+  const linkingContext = buildLinkingContext(atlas.characters);
+  const scopeIds = story.cast.flatMap((member) => (member.id ? [member.id] : []));
+  const storySegments = bakedProse ? getStoryProseSegments(bakedProse, story.id) : undefined;
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-3xl px-6 pb-24 pt-6">
@@ -70,9 +77,13 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
         {story.greekTitle && (
           <p className="mt-2 font-body text-xl italic text-aether-muted">{story.greekTitle}</p>
         )}
-        <p className="mx-auto mt-5 max-w-xl font-body text-lg italic leading-relaxed text-aether-muted">
-          {story.summary.text}
-        </p>
+        <StoryProse
+          text={story.summary.text}
+          segments={storySegments?.summary}
+          linkingContext={linkingContext}
+          scopeIds={scopeIds}
+          className="mx-auto mt-5 block max-w-xl font-body text-lg italic leading-relaxed text-aether-muted"
+        />
       </header>
 
       <section className="mt-12">
@@ -95,9 +106,13 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
                   </span>
                 )}
               </h3>
-              <p className="mt-2 font-body text-[17px] leading-relaxed text-aether/90">
-                {chapter.text}
-              </p>
+              <StoryProse
+                text={chapter.text}
+                segments={storySegments?.chapters[index]}
+                linkingContext={linkingContext}
+                scopeIds={scopeIds}
+                className="mt-2 block font-body text-[17px] leading-relaxed text-aether/90"
+              />
             </article>
           ))}
         </div>

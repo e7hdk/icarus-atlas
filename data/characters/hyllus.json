@@ -71,5 +71,37 @@
       ],
       "citation": "Description of Greece 8.5.1; 1.41.2; 1.44.10"
     }
+  ],
+  "residences": [
+    {
+      "city": "calydon",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.7.5, 2.7.8; Description of Greece 2.23.5"
+    },
+    {
+      "city": "trachis-malis",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.7.7"
+    },
+    {
+      "city": "megara",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.41.2, 1.44.10"
+    },
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.8.1; Description of Greece 1.32.6"
+    }
   ]
 }

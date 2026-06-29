@@ -47,5 +47,22 @@
       ],
       "citation": "Fabulae 14.2; Description of Greece 1.28.2"
     }
+  ],
+  "residences": [
+    {
+      "city": "larisa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.735–775, 14.317–328; Bibliotheca 1.8.2"
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.23; Description of Greece 1.28.2, 1.41.5"
+    },
+    {
+      "city": "aphidnae",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.7; Epitome 1.23"
+    }
   ]
 }

@@ -7,41 +7,83 @@
   "era": 7.155,
   "summary": {
     "text": "Galatea the sea-nymph loved the mortal Acis, and Polyphemus the Cyclops loved her — when the giant saw them together he hurled Etna's summit upon the boy, and Galatea changed her slain lover into the river Acis that still runs beneath the Sicilian mountain where the shepherd Cyclops pipes his hopeless song.",
-    "sources": ["ovid", "apollodorus"],
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
     "citation": "Ov. Met. 13.750–14.74; Apollod. Epit. 7.4"
   },
   "chapters": [
     {
       "title": "Galatea's tale",
       "text": "After the fall of Troy, Ovid's poem reaches Sicily. Galatea, a Nereid of lovely form, tells how Polyphemus son of Poseidon loved her and sent her gifts of milk and cheese and newly weaned lambs — while she loved only Acis, son of Faunus and the river-nymph Symaethis. Homer knew the same Cyclops as a one-eyed cannibal on a distant island; here he is Etna's amorous shepherd, piping love-songs that cannot move her heart.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 13.750–900; Apollod. Epit. 7.4"
     },
     {
       "title": "Polyphemus' jealousy",
       "text": "The giant raged at rivals: he tore pines from the mountain and hurled them at the sea, he cursed Acis and prayed that Galatea might feel his pain. When he found the lovers together in a cave whose entrance the sea had narrowed, he crushed Acis with a jagged fragment of the mountain — the very mass that still smokes above the strait.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 13.900–14.50"
     },
     {
       "title": "The river",
       "text": "Galatea could not restore the body, but she changed what remained: Acis' blood sank into the earth and rose again as a stream, his horns crowned with reeds, his waters clear though born from a god's wrath. The river keeps his name beneath Etna to this day — love transformed, not into a flower or bird, but into running water under the Cyclops' feet.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 14.1–74"
     }
   ],
   "cast": [
-    { "name": "Galatea", "role": "Sea-nymph beloved of Acis, courted by Polyphemus" },
-    { "name": "Acis", "role": "Mortal youth crushed by the Cyclops" },
-    { "id": "polyphemus-cyclops", "name": "Polyphemus", "role": "Cyclops of Etna who loved Galatea" },
-    { "id": "poseidon", "name": "Poseidon", "role": "Father of Polyphemus in the tradition" }
+    {
+      "id": "galatea-nymph",
+      "name": "Galatea",
+      "role": "Sea-nymph beloved of Acis, courted by Polyphemus"
+    },
+    {
+      "id": "acis-sicily",
+      "name": "Acis",
+      "role": "Mortal youth crushed by the Cyclops"
+    },
+    {
+      "id": "polyphemus-cyclops",
+      "name": "Polyphemus",
+      "role": "Cyclops of Etna who loved Galatea"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "Father of Polyphemus in the tradition"
+    }
   ],
   "places": [
-    { "name": "Sicily", "role": "Island of Etna, Polyphemus, and the river Acis" },
-    { "name": "Mount Etna", "role": "Volcano whose rocks the Cyclops hurled" }
+    {
+      "name": "Sicily",
+      "role": "Island of Etna, Polyphemus, and the river Acis",
+      "id": "syracuse"
+    },
+    {
+      "name": "Mount Etna",
+      "role": "Volcano whose rocks the Cyclops hurled",
+      "featureId": "mount-etna"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "13.750–14.74" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "7.4" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "13.750–14.74"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.4"
+    }
   ]
 }

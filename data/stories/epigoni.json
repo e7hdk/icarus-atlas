@@ -4,54 +4,149 @@
   "greekTitle": "Ἐπίγονοι",
   "kind": "episode",
   "parent": "theban-cycle",
-  "era": 6.1,
+  "era": 7.35,
   "summary": {
     "text": "Ten years after the Seven fell, their sons marched on Thebes again — Alcmaeon and Amphilochus leading the Epigoni to victory at Glisas, Laodamas slain or fled, and Thersander son of Polynices set upon the throne until Troy claimed him too.",
-    "sources": ["apollodorus", "pausanias", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "hyginus"
+    ],
     "citation": "Apollod. 3.7.2–4; Paus. 9.5.13–14, 9.8.6, 9.9.4–5; Hyg. Fab. 71"
   },
   "chapters": [
     {
       "title": "The second muster",
       "text": "When the Epigoni were grown, Alcmaeon son of Amphiaraus and Amphilochus his brother asked the oracle whether they should avenge their fathers. Apollo answered that they would conquer when they had a leader; they chose Alcmaeon, and Adrastus who alone of the Seven had survived sailed with them from Argos.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 3.7.2"
     },
     {
       "title": "Battle at Glisas",
       "text": "The Epigoni met the Thebans at Glisas and broke them. Aegialeus son of Adrastus fell in the fighting — the only Epigon slain — while Laodamas son of Eteocles was killed by Alcmaeon, or in another telling led the survivors away by night to the Encheleans in Illyria.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.7.3–4; Paus. 9.5.13, 9.9.4–5"
     },
     {
       "title": "Thersander king",
       "text": "The Argives dismantled the lower town of Thebes and set Thersander son of Polynices upon the throne. Pausanias saw the tomb of Aegialeus at Pegae and the memorials of the Epigoni at Thebes; when the Trojan War came, Thersander sailed with the host but was cut down at Mysia by Telephus before ever they reached Ilion.",
-      "sources": ["apollodorus", "pausanias", "homer"],
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "homer"
+      ],
       "citation": "Apollod. 3.7.4, Epit. 3.17; Paus. 9.8.6, 9.9.4–5; Hom. Il. 4.404–410"
     }
   ],
   "cast": [
-    { "id": "alcmaeon", "name": "Alcmaeon", "role": "Leader of the Epigoni" },
-    { "id": "amphilochus", "name": "Amphilochus", "role": "Brother of Alcmaeon, seer's son" },
-    { "id": "adrastus", "name": "Adrastus", "role": "Sole survivor of the Seven" },
-    { "id": "aegialeus-adrastid", "name": "Aegialeus", "role": "Epigon slain at Glisas" },
-    { "id": "laodamas-theban", "name": "Laodamas", "role": "Last Labdacid king of the first fall" },
-    { "id": "thersander", "name": "Thersander", "role": "Epigon king, son of Polynices" },
-    { "id": "sthenelus-epigoni", "name": "Sthenelus", "role": "Epigon, son of Capaneus" },
-    { "id": "promachus-epigoni", "name": "Promachus", "role": "Epigon, son of Parthenopaeus" },
-    { "id": "polydorus-epigoni", "name": "Polydorus", "role": "Epigon, son of Hippomedon" },
-    { "id": "amphiaraus", "name": "Amphiaraus", "role": "Father of Alcmaeon, honoured in the second war" },
-    { "id": "telephus", "name": "Telephus", "role": "He who slew Thersander at Mysia" }
+    {
+      "id": "alcmaeon",
+      "name": "Alcmaeon",
+      "role": "Leader of the Epigoni"
+    },
+    {
+      "id": "amphilochus",
+      "name": "Amphilochus",
+      "role": "Brother of Alcmaeon, seer's son"
+    },
+    {
+      "id": "adrastus",
+      "name": "Adrastus",
+      "role": "Sole survivor of the Seven"
+    },
+    {
+      "id": "aegialeus-adrastid",
+      "name": "Aegialeus",
+      "role": "Epigon slain at Glisas"
+    },
+    {
+      "id": "laodamas-theban",
+      "name": "Laodamas",
+      "role": "Last Labdacid king of the first fall"
+    },
+    {
+      "id": "thersander",
+      "name": "Thersander",
+      "role": "Epigon king, son of Polynices"
+    },
+    {
+      "id": "diomedes",
+      "name": "Diomedes",
+      "role": "Epigon, son of Tydeus"
+    },
+    {
+      "id": "euryalus-aeolid",
+      "name": "Euryalus",
+      "role": "Epigon, son of Mecisteus"
+    },
+    {
+      "id": "sthenelus-epigoni",
+      "name": "Sthenelus",
+      "role": "Epigon, son of Capaneus"
+    },
+    {
+      "id": "promachus-epigoni",
+      "name": "Promachus",
+      "role": "Epigon, son of Parthenopaeus"
+    },
+    {
+      "id": "polydorus-epigoni",
+      "name": "Polydorus",
+      "role": "Epigon, son of Hippomedon"
+    },
+    {
+      "id": "amphiaraus",
+      "name": "Amphiaraus",
+      "role": "Father of Alcmaeon, honoured in the second war"
+    },
+    {
+      "id": "telephus",
+      "name": "Telephus",
+      "role": "He who slew Thersander at Mysia"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City beaten and partially dismantled" },
-    { "id": "argos", "name": "Argos", "role": "Whence the Epigoni marched" },
-    { "name": "Glisas", "role": "Field where the second war was won" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City beaten and partially dismantled"
+    },
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Whence the Epigoni marched"
+    },
+    {
+      "name": "Glisas",
+      "role": "Field where the second war was won",
+      "id": "glisas"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.7.2–4, Epit. 3.17" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "9.5.13–14, 9.8.6, 9.9.4–5" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "71" },
-    { "source": "homer", "work": "Iliad", "citation": "4.404–410" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.7.2–4, Epit. 3.17"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.5.13–14, 9.8.6, 9.9.4–5"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "71"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "4.404–410"
+    }
   ]
 }

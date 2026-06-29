@@ -1,0 +1,162 @@
+{
+  "id": "pelops-and-oenomaus",
+  "title": "Pelops and the Chariot Race",
+  "greekTitle": "Πέλοψ καὶ Ὀινόμαος",
+  "kind": "saga",
+  "parent": null,
+  "era": 5.9,
+  "eraEnd": 5.95,
+  "summary": {
+    "text": "Pelops, restored with an ivory shoulder after the gods' feast, came to Pisa in Poseidon's winged chariot and won Hippodamia by a sabotaged race against Oenomaus — then cast Myrtilus into the sea and took the curse that would haunt the house of Atreus.",
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias",
+      "ovid"
+    ],
+    "citation": "Apollod. Epit. 2.3–9; Hyg. Fab. 83–84; Paus. 5.13.1–7; Ov. Met. 6.404–411"
+  },
+  "chapters": [
+    {
+      "title": "The ivory shoulder",
+      "text": "Apollodorus says Pelops was slaughtered and boiled at a banquet of the gods, then returned to life more beautiful than before. Hyginus makes Tantalus the killer and says Ceres consumed part of the boy before the gods restored him, replacing the missing shoulder with ivory — the visible mark Ovid shows when Pelops mourns his sister Niobe. Poseidon loved the restored youth and gave him a winged chariot whose axles remained dry even across the sea.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "ovid"
+      ],
+      "citation": "Epitome 2.3; Fabulae 83; Metamorphoses 6.404–411",
+      "topic": "tantalus-pelops-feast"
+    },
+    {
+      "title": "Oenomaus and the suitors",
+      "text": "Coming to Pisa in Elis, Pelops sought Hippodamia daughter of Oenomaus. Apollodorus gives two motives for the king's cruelty: desire for his own daughter, or an oracle that her husband would kill him. Armed and driving horses given by Ares, Oenomaus pursued each suitor in a chariot race and displayed their severed heads on his house. Hyginus calls Oenomaus a son of Mars and Asterope and makes the oracle his sole motive — twelve youths had already died when Pelops arrived.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 2.4–6; Fabulae 84",
+      "topic": "oenomaus-motive"
+    },
+    {
+      "title": "Myrtilus and the race",
+      "text": "Hippodamia persuaded Myrtilus, charioteer of Oenomaus and son of Hermes, to remove the linchpins from the king's wheels — or, in Hyginus, Pelops promised him half the kingdom for the sabotage. The horses ran wild, Oenomaus was caught in the reins and dragged until he died, and Pelops carried off the bride. Apollodorus says Myrtilus then tried to assault Hippodamia and Pelops cast him into the sea at Cape Geraestus; dying, the charioteer cursed the house of Pelops. Hyginus says Pelops killed him rather than pay half the realm, and the sea into which he fell took the name Myrtoan.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 2.6–9; Fabulae 84",
+      "topic": "myrtilus-betrayal"
+    },
+    {
+      "title": "Olympia and the Peloponnese",
+      "text": "Pelops gave his name to the land men call the Peloponnese and became the preeminent hero of Olympia. Pausanias saw his precinct beside Zeus' sanctuary, annual sacrifices at his tomb, and one of his shoulder bones remembered as a relic with power over the fortunes of Troy and Elis. Through Hippodamia he begat Atreus and Thyestes — and the Myrtoan curse would ripen in their children's generation until Agamemnon and Menelaus sailed for Troy.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 2.9; Description of Greece 5.13.1–7"
+    }
+  ],
+  "cast": [
+    {
+      "id": "pelops",
+      "name": "Pelops",
+      "role": "Restored hero who won the race"
+    },
+    {
+      "id": "oenomaus",
+      "name": "Oenomaus",
+      "role": "King of Pisa killed in the contest"
+    },
+    {
+      "id": "hippodamia",
+      "name": "Hippodamia",
+      "role": "Bride won by the sabotaged chariot"
+    },
+    {
+      "id": "myrtilus",
+      "name": "Myrtilus",
+      "role": "Charoteer betrayed and cast into the sea"
+    },
+    {
+      "id": "tantalus",
+      "name": "Tantalus",
+      "role": "Father in the feast tradition"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "Lover who gave the winged chariot"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Father of Myrtilus"
+    },
+    {
+      "id": "ares",
+      "name": "Ares",
+      "role": "Father of Oenomaus in Hyginus"
+    },
+    {
+      "id": "atreus",
+      "name": "Atreus",
+      "role": "Son who inherits the curse"
+    },
+    {
+      "id": "thyestes",
+      "name": "Thyestes",
+      "role": "Son of Pelops and Hippodamia"
+    }
+  ],
+  "places": [
+    {
+      "name": "Pisa",
+      "role": "City of Oenomaus in Elis",
+      "id": "pisa-elis"
+    },
+    {
+      "name": "Olympia",
+      "role": "Sanctuary where Pelops became the local hero",
+      "id": "olympia"
+    },
+    {
+      "name": "Peloponnese",
+      "role": "Land that took his name",
+      "id": "sparta"
+    },
+    {
+      "name": "Cape Geraestus",
+      "role": "Where Myrtilus was thrown into the sea",
+      "featureId": "cape-geraestus"
+    },
+    {
+      "name": "Myrtoan Sea",
+      "role": "Waters named for the drowned charioteer",
+      "featureId": "myrtoan-sea"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "2.3–9"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "83–84"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "5.13.1–7"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "6.404–411"
+    }
+  ]
+}

@@ -7,54 +7,126 @@
   "era": 4.02,
   "summary": {
     "text": "Io princess of Argos, loved by Zeus and changed into a white heifer to hide her from Hera, was guarded by Argus of the hundred eyes until Hermes slew him; driven mad by Juno's gadfly she wandered the world to the Nile, where Zeus restored her form and she bore Epaphus — ancestress of kings in Egypt.",
-    "sources": ["apollodorus", "ovid", "hyginus"],
-    "citation": "Apollod. 2.1.3; Ov. Met. 1.583–747, 1.868–1052; Hyg. Fab. 145"
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "citation": "Apollod. 2.1.3; Ov. Met. 1.583–750; Hyg. Fab. 145"
   },
   "chapters": [
     {
       "title": "The heifer",
       "text": "Jove saw Io returning from her father's stream and pursued her; when Juno parted the cloud that hid their union, he turned the girl into a milk-white heifer. Hera asked the cow as a gift and set Argus Panoptes to watch — eyes that never all slept at once. Io fed on bitter herbs, slept on bare ground, and bellowed where she once would speak.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 1.583–687; Apollod. 2.1.3"
     },
     {
       "title": "Inachus",
       "text": "By the banks of Inachus the heifer saw her horns in the water and fled; her father and the Naiads did not know her until she traced IO in the dust with her hoof. Ovid makes her plainly the river-god's daughter; Apollodorus reports that Castor and the tragedians say Inachus, while his own account names Iasus son of Argus — and Hesiod, he adds, made her child of Piren.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 1.639–667; Apollod. 2.1.3",
       "topic": "io-paternity"
     },
     {
       "title": "Argus and the gadfly",
       "text": "Mercury lulled Argus with story and pipe, then cut off his head; Juno set the hundred eyes on her peacock's tail. She sent a Fury's stings and a gadfly to torment Io, who wandered through the world until she came at last to the Nile. There Jove swore on Styx that she would trouble Hera no more, and Io stood again a woman — fair-skinned, but human.",
-      "sources": ["ovid", "apollodorus"],
-      "citation": "Ov. Met. 1.868–1000; Apollod. 2.1.3"
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
+      "citation": "Ov. Met. 1.688–746; Apollod. 2.1.3"
     },
     {
       "title": "Epaphus",
       "text": "In Egypt the linen-wearing people worshiped Io as a goddess, believing Jove's seed had prevailed; she bore Epaphus, who would dwell in temples beside his mother in that land. Hyginus names her parents Inachus and Argia — another thread in the Argive genealogy of the wandering cow.",
-      "sources": ["ovid", "hyginus"],
-      "citation": "Ov. Met. 1.1001–1052; Hyg. Fab. 145"
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Ov. Met. 1.747–750; Hyg. Fab. 145"
     }
   ],
   "cast": [
-    { "id": "io", "name": "Io", "role": "Argive princess transformed into a heifer" },
-    { "id": "zeus", "name": "Zeus", "role": "Jove, her lover who hid her in a cow's form" },
-    { "id": "hera", "name": "Hera", "role": "Juno, who set Argus to watch and sent the gadfly" },
-    { "id": "hermes", "name": "Hermes", "role": "Mercury, slayer of Argus" },
-    { "id": "inachus", "name": "Inachus", "role": "River-god of Argos, Io's father in Ovid" },
-    { "id": "epaphus", "name": "Epaphus", "role": "Io's son, worshiped in Egypt" },
-    { "name": "Argus Panoptes", "role": "The hundred-eyed guardian of the heifer" }
+    {
+      "id": "io",
+      "name": "Io",
+      "role": "Argive princess transformed into a heifer"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Jove, her lover who hid her in a cow's form"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Juno, who set Argus to watch and sent the gadfly"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Mercury, slayer of Argus"
+    },
+    {
+      "id": "inachus",
+      "name": "Inachus",
+      "role": "River-god of Argos, Io's father in Ovid"
+    },
+    {
+      "id": "epaphus",
+      "name": "Epaphus",
+      "role": "Io's son, worshiped in Egypt"
+    },
+    {
+      "id": "argus-panoptes",
+      "name": "Argus Panoptes",
+      "role": "The hundred-eyed guardian of the heifer"
+    }
   ],
   "places": [
-    { "id": "argos", "name": "Argos", "role": "Io's homeland and Inachus' stream" },
-    { "name": "Lerna", "role": "Pasture where Jove first saw her" },
-    { "name": "The Nile", "role": "River where Io's wanderings ended" },
-    { "name": "Egypt", "role": "Land where she bore Epaphus and was worshiped" }
+    {
+      "id": "argos",
+      "name": "Argos",
+      "role": "Io's homeland and Inachus' stream"
+    },
+    {
+      "name": "Lerna",
+      "role": "Pasture where Jove first saw her",
+      "featureId": "inachus"
+    },
+    {
+      "name": "The Nile",
+      "role": "River where Io's wanderings ended",
+      "featureId": "nilus"
+    },
+    {
+      "id": "memphis",
+      "name": "Egypt",
+      "role": "Land where she bore Epaphus and was worshiped"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "1.583–1052" },
-    { "source": "apollodorus", "work": "The Library", "citation": "2.1.3" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "145" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "1.583–750"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.1.3"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "145"
+    }
   ]
 }

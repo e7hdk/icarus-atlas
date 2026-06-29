@@ -1,0 +1,48 @@
+{
+  "id": "amphion-orchomenus",
+  "name": "Amphion",
+  "greekName": "Amphiōn (Ἀμφίων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Orchomenus",
+    "father of Chloris",
+    "the Minyan royal house"
+  ],
+  "summary": [
+    {
+      "text": "Son of Iasus who once ruled mightily in Orchomenus of the Minyae and was father of Chloris, youngest of his daughters — the Orchomenian king Homer names in the underworld catalogue, not Amphion the Theban wall-builder son of Zeus and Antiope.",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Odyssey 11.275–296; Bibliotheca 1.9.9; Description of Greece 9.36.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Hades Odysseus sees Neleus dwelling in sandy Pylos and names his queen Chloris — whom Neleus wedded for her beauty after countless gifts of wooing. She was the youngest daughter of Amphion son of Iasus, who once ruled mightily in Orchomenus of the Minyae. By Neleus she bore Nestor, Chromius, Periclymenus, and Pero, the bride whose suitors had to drive the cattle of Iphicles.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.275–296"
+    },
+    {
+      "text": "Apollodorus follows the same marriage when Neleus, banished from Iolcus, founded Pylos and wedded Chloris daughter of Amphion — though he does not repeat Iasus' name or Orchomenus in that paragraph.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.9.9"
+    },
+    {
+      "text": "Hyginus instead makes Chloris the sole daughter of Niobe and Amphion of Thebes who survived Apollo's arrows — a genealogy that would merge the Theban lyre-king with the Orchomenian house if the same Amphion and Chloris were meant. Homer and Apollodorus keep the Minyan king distinct from the son of Zeus who built Thebes with his lyre.",
+      "sources": ["hyginus", "homer"],
+      "citation": "Fabulae 9–10; Odyssey 11.275–296",
+      "topic": "niobids-survivors"
+    },
+    {
+      "text": "Pausanias records local memory of Amphion at Orchomenus in the same region where Minyas built his treasury — the Boeotian king whose daughter's marriage carried Minyan blood to sandy Pylos.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.36.8"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  ]
+}

@@ -54,6 +54,11 @@
     {
       "city": "athens",
       "sources": ["apollodorus", "ovid", "pausanias"]
+    },
+    {
+      "city": "lilaea-phocis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "id": "aegle-hesperid",
+  "name": "Aegle",
+  "greekName": "Aiglē (Αἴγλη)",
+  "romanName": "Aegle",
+  "type": "nymph",
+  "kinds": ["hesperid"],
+  "cluster": "night-court",
+  "domains": [
+    "evening light",
+    "golden apples",
+    "the far west"
+  ],
+  "summary": [
+    {
+      "text": "One of the Hesperides named in Apollodorus' roll of the apple-guardians — Aegle, Erythia, Hesperia, and Arethusa — who kept watch beside Ladon at the garden of Atlas; Apollonius shows her keening over the slain dragon and later speaking from a willow trunk.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 2.5.11; Argonautica 4.1393–1450"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Heracles came for the golden apples, Apollodorus names the nymphs on guard with Ladon: Aegle, Erythia, Hesperia, and Arethusa — four sisters of evening at the western garden among the Hyperboreans. The collective node `hesperides` holds the disputed parentage of the whole brood; this node is the individual named in that Ladon roll.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    },
+    {
+      "text": "Apollonius passes the garden after Heracles has already slain the serpent. The Hesperides are busied about the tree until the Argonauts hear the lament of shining Aegle; when the nymphs are changed into trees, Aegle becomes a willow's sacred trunk and speaks with gentle words, pointing the thirsty heroes to a spring.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 4.1393–1450"
+    },
+    {
+      "text": "Hyginus lists Aegle among the Hesperides born of Nox in the Theogony preface — the same evening-brood that Hesiod sets beside the golden apples beyond glorious Ocean. The atlas keeps her distinct from Aegle daughter of Helios in the Phaethon tale and from the Hyacinthid maiden of the same name at Athens.",
+      "sources": ["hyginus", "hesiod"],
+      "citation": "Fabulae 0.2; Theogony 215–216"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "hyacinthus",
+  "title": "Apollo and Hyacinthus",
+  "greekTitle": "Ἀπόλλων καὶ Ὑάκινθος",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5.2,
+  "summary": {
+    "text": "Apollo loved the Laconian prince Hyacinthus and taught him to throw the discus; when the god's cast rebounded from the earth and struck the boy, Phoebus could not heal him, and from his blood rose the flower that bears the letters of the god's grief — while Apollodorus names the death plainly and Hyginus lists the prince among Apollo's beloved boys.",
+    "sources": ["ovid", "apollodorus", "hyginus"],
+    "citation": "Ov. Met. 10.162–219; Apollod. 3.10.3; Hyg. Fab. 271"
+  },
+  "chapters": [
+    {
+      "title": "The beloved prince",
+      "text": "Hyginus names Hyacinthus son of Oebalus among the handsome youths whom Apollo loved. Apollodorus makes him a son of Amyclas and says he was beloved of Apollo — the god's favourite in the Spartan line, honoured beside the altar at Amyclae.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Hyg. Fab. 271; Apollod. 3.10.3"
+    },
+    {
+      "title": "The discus",
+      "text": "Ovid sets the death in the games Phoebus and the boy played together. The god hurled his discus far; it struck the hard earth and bounded back into Hyacinthus' face. Apollo, paler than his dying favourite, tried every herb in vain — the wound was beyond healing.",
+      "sources": ["ovid"],
+      "citation": "Ov. Met. 10.162–195"
+    },
+    {
+      "title": "The flower",
+      "text": "As the blood ran into the grass Apollo changed it to a flower more brilliant than Tyrian dye and inscribed his grief upon the petals — the letters AI AI. Apollodorus states the death without the bloom: Hyacinthus was killed by Apollo involuntarily with the cast of a quoit. Sparta kept his fame and yearly feast.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Ov. Met. 10.195–219; Apollod. 3.10.3"
+    }
+  ],
+  "cast": [
+    { "id": "hyacinthus", "name": "Hyacinthus", "role": "Laconian prince beloved of Apollo" },
+    { "id": "apollo", "name": "Apollo", "role": "God whose discus struck the boy" }
+  ],
+  "places": [
+    { "id": "sparta", "name": "Sparta", "role": "Land of Amyclae and the Hyacinthia" }
+  ],
+  "attestations": [
+    { "source": "ovid", "work": "Metamorphoses", "citation": "10.162–219" },
+    { "source": "apollodorus", "work": "The Library", "citation": "3.10.3" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "271" }
+  ]
+}

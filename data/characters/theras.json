@@ -39,6 +39,12 @@
   ],
   "residences": [
     {
+      "city": "thebes",
+      "sources": [
+        "pausanias"
+      ]
+    },
+    {
       "city": "thera",
       "sources": ["pausanias", "apollonius"]
     },

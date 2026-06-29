@@ -26,8 +26,14 @@
   ],
   "residences": [
     {
+      "city": "percote-troad",
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
+    },
+    {
       "city": "troy",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 15.515–555"
     }
   ]
 }

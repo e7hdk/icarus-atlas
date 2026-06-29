@@ -1,0 +1,31 @@
+{
+  "id": "cedalion-orion",
+  "name": "Cedalion",
+  "greekName": "Kēdalion (Κηδαλίων)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "guide to the sunrise",
+    "Orion's healing",
+    "Lemnos and Chios"
+  ],
+  "summary": [
+    {
+      "text": "The guide whom blind Orion received from Hephaestus on Lemnos and carried on his shoulders to the sunrise, where Sol healed his sight — named in Hyginus' Astronomica where Apollodorus speaks only of an unnamed lad.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Astronomica 2.34.3; Bibliotheca 1.4.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Oenopion blinded Orion and cast him out of Chios, the hunter came to the smithy of Hephaestus. Apollodorus says Orion set a lad on his shoulders and bade him lead him to the sunrise; being come thither he was healed by the sun's rays.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.3"
+    },
+    {
+      "text": "Hyginus names the guide Cedalion: Orion came to Lemnos and Vulcan, received Cedalion from him, and carrying him on his shoulders came to Sol, and when Sol healed him returned to Chios to take vengeance on Oenopion.",
+      "sources": ["hyginus"],
+      "citation": "Astronomica 2.34.3"
+    }
+  ]
+}

@@ -146,6 +146,16 @@
       "role": "Companion who urged flight from the cave"
     },
     {
+      "id": "polites-odyssey",
+      "name": "Polites",
+      "role": "Dearest comrade at Circe's door — not the son of Priam"
+    },
+    {
+      "id": "perimedes-odyssey",
+      "name": "Perimedes",
+      "role": "Comrade at the pit of blood and the Sirens' mast — not perimedes-same"
+    },
+    {
       "id": "elpenor",
       "name": "Elpenor",
       "role": "The unburied comrade"
@@ -1014,11 +1024,13 @@
     },
     {
       "name": "Ogygia",
-      "role": "Calypso's isle"
+      "role": "Calypso's isle",
+      "id": "ogygia"
     },
     {
       "name": "Aeaea",
-      "role": "Circe's isle"
+      "role": "Circe's isle",
+      "id": "aeaea"
     }
   ],
   "attestations": [

@@ -18,8 +18,10 @@ export interface StoryCastMember {
 }
 
 export interface StoryPlace {
-  /** City id once the place is curated; plain name until then. */
+  /** Geo place id (`data/geo/places.json`) once curated; plain name until then. */
   id?: string;
+  /** Geo feature id (`data/geo/features.json`) for mountains, rivers, straits. */
+  featureId?: string;
   name: string;
   role?: string;
 }

@@ -24,8 +24,95 @@ import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
+/** Flagship city lineages — reign characterIds must carry matching residences. */
+const FLAGSHIP_CITIES = new Set(['thebes', 'mycenae', 'argos', 'athens', 'sparta', 'troy']);
 /** Lands map camera limits — docs/LANDS_PLAN.md §3.1. */
 const MAP_BOUNDS = { west: -6, south: 22, east: 44, north: 47 };
+/** Story place names that intentionally stay plain — sync with FORCE_PLAIN in scripts/wire-story-places.mjs */
+function normStoryPlaceName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+const STORY_FORCE_PLAIN = new Set([
+  normStoryPlaceName('Olympus'),
+  normStoryPlaceName('Mount Olympus'),
+  normStoryPlaceName('Parnassus'),
+  normStoryPlaceName('Mount Parnassus'),
+  normStoryPlaceName('Tartarus'),
+  normStoryPlaceName('Hades'),
+  normStoryPlaceName('Underworld'),
+  normStoryPlaceName('Ocean'),
+  normStoryPlaceName('Oceanus'),
+  normStoryPlaceName('Elysium'),
+  normStoryPlaceName('Elysian Fields'),
+  normStoryPlaceName('Asphodel Meadows'),
+  normStoryPlaceName('Styx'),
+  normStoryPlaceName('Islands of the Blest'),
+  normStoryPlaceName('The palace of the Sun'),
+  normStoryPlaceName("The Gorgons' lair"),
+  normStoryPlaceName('Ethiopia'),
+  normStoryPlaceName('Rome'),
+  normStoryPlaceName('Phoenicia'),
+  normStoryPlaceName('Libya'),
+  normStoryPlaceName('Babylon'),
+  normStoryPlaceName('Panchaea'),
+  normStoryPlaceName('India'),
+  normStoryPlaceName('Arabia'),
+  normStoryPlaceName('Scythia'),
+  normStoryPlaceName('Thrace'),
+  normStoryPlaceName('Thracian'),
+  normStoryPlaceName('Caucasus'),
+  normStoryPlaceName('Carthage'),
+  normStoryPlaceName('Maeonia'),
+  normStoryPlaceName('Paphlagonia'),
+  normStoryPlaceName('Ciconia'),
+  normStoryPlaceName('Cicones'),
+  normStoryPlaceName('Aleian plain'),
+  normStoryPlaceName('Phlegra'),
+  normStoryPlaceName('Nysa'),
+  normStoryPlaceName('Mount Ida'),
+  normStoryPlaceName('Mount Pelion'),
+  normStoryPlaceName('Mount Cithaeron'),
+  normStoryPlaceName('Mount Oeta'),
+  normStoryPlaceName('Mount Tmolus'),
+  normStoryPlaceName('Mount Cyllene'),
+  normStoryPlaceName('Mount Sipylus'),
+  normStoryPlaceName('Mount Nysa'),
+  normStoryPlaceName('Mount Etna'),
+  normStoryPlaceName('Mount Dicte'),
+  normStoryPlaceName('Mount Erymanthus'),
+  normStoryPlaceName('Lake Tritonis'),
+  normStoryPlaceName('Lake Pergus'),
+  normStoryPlaceName('River Acis'),
+  normStoryPlaceName('River Alpheus'),
+  normStoryPlaceName('River Simois'),
+  normStoryPlaceName('River Scamander'),
+  normStoryPlaceName('River Spercheius'),
+  normStoryPlaceName('River Eurotas'),
+  normStoryPlaceName('River Asopus'),
+  normStoryPlaceName('River Cephissus'),
+  normStoryPlaceName('River Ilissus'),
+  normStoryPlaceName('River Peneus'),
+  normStoryPlaceName('River Strymon'),
+  normStoryPlaceName('Scamander'),
+  normStoryPlaceName('Simois'),
+  normStoryPlaceName('Spercheius'),
+  normStoryPlaceName('Straits of Messina'),
+  normStoryPlaceName('Messina'),
+  normStoryPlaceName('Malea'),
+  normStoryPlaceName('Cape Malea'),
+  normStoryPlaceName("Aeolus' isle"),
+  normStoryPlaceName('The White Isle'),
+  normStoryPlaceName('White Island'),
+  normStoryPlaceName('Ismarus'),
+  normStoryPlaceName('Zacynthus'),
+  normStoryPlaceName('Olenus'),
+  normStoryPlaceName("Ninus' tomb"),
+  normStoryPlaceName('Enna'),
+  normStoryPlaceName('Henna'),
+  normStoryPlaceName("Hephaestus' forge"),
+  normStoryPlaceName('Forge of Hephaestus'),
+  normStoryPlaceName('Lemnos forge'),
+]);
 const errors: string[] = [];
 const info: string[] = [];
 
@@ -73,6 +160,7 @@ if (Array.isArray(sourcesRaw)) {
 // 2. Characters
 const charDir = join(DATA_DIR, 'characters');
 const charIds = new Set<string>();
+const charResidenceCities = new Map<string, Set<string>>();
 const topics = new Map<string, string[]>();
 
 if (existsSync(charDir)) {
@@ -88,6 +176,9 @@ if (existsSync(charDir)) {
     if (file !== `${c.id}.json`) errors.push(`characters/${file}: filename must match id "${c.id}"`);
     if (charIds.has(c.id)) errors.push(`characters/${file}: duplicate id "${c.id}"`);
     charIds.add(c.id);
+    if (c.residences?.length) {
+      charResidenceCities.set(c.id, new Set(c.residences.map((residence) => residence.city)));
+    }
     if (c.kinds) {
       if (new Set(c.kinds).size !== c.kinds.length) {
         errors.push(`characters/${file}: duplicate entries in kinds`);
@@ -318,8 +409,23 @@ if (existsSync(lineageDir)) {
     if (file !== `${parsed.data.city}.json`) errors.push(`lineages/${file}: filename must match city "${parsed.data.city}"`);
     if (!cityIds.has(parsed.data.city)) errors.push(`lineages/${file}: unknown city "${parsed.data.city}"`);
     for (const reign of parsed.data.reigns) {
-      if (reign.characterId && !charIds.has(reign.characterId)) {
-        errors.push(`lineages/${file}: unknown characterId "${reign.characterId}"`);
+      const linkedIds = reign.characterIds?.length
+        ? reign.characterIds
+        : reign.characterId
+          ? [reign.characterId]
+          : [];
+      for (const id of linkedIds) {
+        if (!charIds.has(id)) {
+          errors.push(`lineages/${file}: unknown characterId "${id}" (reign "${reign.ruler}")`);
+        }
+        if (
+          FLAGSHIP_CITIES.has(parsed.data.city) &&
+          !charResidenceCities.get(id)?.has(parsed.data.city)
+        ) {
+          errors.push(
+            `lineages/${file}: reign "${reign.ruler}" (${id}) lacks residence in ${parsed.data.city}`,
+          );
+        }
       }
     }
     lineageCount++;
@@ -368,8 +474,11 @@ if (existsSync(storyDir)) {
       }
     }
     for (const place of story.places) {
-      if (place.id && !cityIds.has(place.id)) {
-        errors.push(`stories/${story.id}.json: place "${place.name}" points at unknown city "${place.id}"`);
+      if (place.id && !placeIds.has(place.id)) {
+        errors.push(`stories/${story.id}.json: place "${place.name}" points at unknown place "${place.id}"`);
+      }
+      if (place.featureId && !featureIds.has(place.featureId)) {
+        errors.push(`stories/${story.id}.json: place "${place.name}" points at unknown feature "${place.featureId}"`);
       }
     }
     for (const chapter of story.chapters) {
@@ -380,6 +489,18 @@ if (existsSync(storyDir)) {
         ]);
       }
     }
+  }
+
+  const unwiredPlain: string[] = [];
+  for (const story of parsedStories) {
+    for (const place of story.places) {
+      if (!place.id && !place.featureId && !STORY_FORCE_PLAIN.has(normStoryPlaceName(place.name))) {
+        unwiredPlain.push(`${story.id}: "${place.name}"`);
+      }
+    }
+  }
+  if (unwiredPlain.length > 0) {
+    info.push(`story places still plain (not in FORCE_PLAIN): ${unwiredPlain.join('; ')}`);
   }
 }
 

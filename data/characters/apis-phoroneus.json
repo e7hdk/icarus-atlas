@@ -1,0 +1,56 @@
+{
+  "id": "apis-phoroneus",
+  "name": "Apis",
+  "greekName": "Apīs (Ἆπις)",
+  "type": "mortal",
+  "domains": [
+    "tyranny at Argos",
+    "the land called Apia",
+    "Phoroneid kingship"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Phoroneus who turned his father's kingship into a tyranny, named the Peloponnese Apia after himself, and died childless — after which the eponymous Argus son of Zeus and Niobe received the realm.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.1; Fabulae 145"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets Apis beside his sister Niobe in the first generation after Phoroneus: the nymph Teledice bore both to the gatherer of the Argolid. Apis converted his power into a tyranny and named the whole land afterwards called the Peloponnese after himself Apia; but being a stern tyrant he was conspired against and slain by Thelxion and Telchis. He left no child, and was afterwards deemed a god and called Sarapis.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.1"
+    },
+    {
+      "text": "Hyginus' king-list genealogy likewise makes Apis a son of Phoroneus and Cinna, brother to Nioba — the first mortal embraced by Jove, whose son Argus would give Argos its name.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 145"
+    },
+    {
+      "text": "Not the Arcadian Apis son of Jason whom Aetolus ran down at Azan's funeral games, nor the Egyptian bull with whom later mythographers identified the Argive king.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.7.6, 2.1.1; Description of Greece 8.4.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.1.1; Fabulae 145"
+    }
+  ]
+}

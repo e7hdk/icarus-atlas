@@ -60,6 +60,16 @@
     {
       "city": "mycenae",
       "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "tiryns",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.12, 2.5.1"
+    },
+    {
+      "city": "argos",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 19.95–133; Bibliotheca 2.4.5"
     }
   ]
 }

@@ -7,46 +7,85 @@
   "era": 7.075,
   "summary": {
     "text": "Erysichthon the Thessalian king scorned the gods and felled Ceres' ancient oak with an axe — and the goddess sent Famine to sit upon him, an endless hunger that sold his daughter Mestra again and again until he devoured himself, while she inherited Proteus' power to change her shape.",
-    "sources": ["ovid"],
+    "sources": [
+      "ovid"
+    ],
     "citation": "Ov. Met. 8.738–878, 8.1124–1359"
   },
   "chapters": [
     {
       "title": "The sacred oak",
       "text": "After Baucis and Philemon, Ovid turns to impiety. Erysichthon son of Triopas — not the childless son of Cecrops whom Apollodorus names in another genealogy — ordered his men to cut timber for a hall and struck with his axe the oak Ceres loved, where garlands hung and votive tablets praised the goddess. The tree bled; a nymph warned him; he threatened her and felled the holy trunk.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 8.738–812; Apollod. 3.14.2"
     },
     {
       "title": "Famine",
       "text": "Ceres, too far in Erysichthon's punishment to send her own wrath, asked Famine to cling to him. The hag flew on midnight wings and breathed her pestilence through the king's mouth — a hunger no feast could satisfy, no gold could buy away. Callimachus tells a like vengeance when the impious man cut down Demeter's grove.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 8.812–878"
     },
     {
       "title": "Mestra",
       "text": "His daughter Mestra had inherited Proteus' power to change form — Ovid makes her wife of Autolycus — and when creditors closed on the starving king she was sold as slave, then mare, then fish, escaping each time until her price fed his maw. He sold her again and again; she returned in new shape; the curse only deepened.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 8.1124–1225"
     },
     {
       "title": "Self-devouring",
       "text": "At last Erysichthon gnawed his own limbs to feed the void Ceres had opened in him — a metamorphosis of the body consumed from within rather than changed to tree or beast. Ovid's age of iron had found its perfect glutton: the man who violated the goddess of grain was eaten by hunger itself.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 8.1226–1359"
     }
   ],
   "cast": [
-    { "name": "Erysichthon", "role": "Thessalian king destroyed by insatiable hunger" },
-    { "name": "Mestra", "role": "His daughter, who could change shape like Proteus" },
-    { "id": "demeter", "name": "Demeter", "role": "Ceres, whose sacred oak he felled" },
-    { "name": "Autolycus", "role": "Mestra's husband in Ovid's telling" }
+    {
+      "id": "erysichthon-thessaly",
+      "name": "Erysichthon",
+      "role": "Thessalian king destroyed by insatiable hunger"
+    },
+    {
+      "id": "mestra-thessaly",
+      "name": "Mestra",
+      "role": "His daughter, who could change shape like Proteus"
+    },
+    {
+      "id": "demeter",
+      "name": "Demeter",
+      "role": "Ceres, whose sacred oak he felled"
+    },
+    {
+      "id": "autolycus",
+      "name": "Autolycus",
+      "role": "Mestra's husband in Ovid's telling"
+    }
   ],
   "places": [
-    { "name": "Thessaly", "role": "Land of Erysichthon's kingdom" },
-    { "id": "iolcus", "name": "Iolcus", "role": "Thessalian city on the Pagasetic gulf" }
+    {
+      "name": "Thessaly",
+      "role": "Land of Erysichthon's kingdom",
+      "id": "larisa"
+    },
+    {
+      "id": "iolcus",
+      "name": "Iolcus",
+      "role": "Thessalian city on the Pagasetic gulf"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "8.738–878, 8.1124–1359" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "8.738–878, 8.1124–1359"
+    }
   ]
 }

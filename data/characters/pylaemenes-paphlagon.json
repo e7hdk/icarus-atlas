@@ -28,5 +28,22 @@
       "sources": ["homer"],
       "citation": "Iliad 5.580–625"
     }
+  ],
+  "residences": [
+    {
+      "city": "cytorus-paphlagonia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "sesamon-paphlagonia",
+      "sources": ["homer"],
+      "citation": "Iliad 2.853–855"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 5.580–625"
+    }
   ]
 }

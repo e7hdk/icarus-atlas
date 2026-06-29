@@ -1,0 +1,32 @@
+{
+  "id": "isis",
+  "name": "Isis",
+  "greekName": "Isis (Ἶσις)",
+  "romanName": "Isis",
+  "type": "god",
+  "domains": [
+    "Egyptian goddess",
+    "the temple at Crete",
+    "sex and salvation"
+  ],
+  "cluster": "olympian-band",
+  "summary": [
+    {
+      "text": "Egyptian goddess who appeared to Telethusa in a dream forbidding the exposure of her daughter — and on the eve of Iphis' wedding nodded in her Cretan temple until the girl walked out a man and took Ianthe as his bride.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.666–797"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Ligdus vowed to expose any child that was not a boy, Isis appeared to Telethusa in a dream and forbade the killing. The goddess kept the secret of Iphis' birth until the betrothal to Ianthe made the impossible love plain.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.666–720"
+    },
+    {
+      "text": "On the eve of the wedding Telethusa and Iphis prayed in Isis' temple. The goddess nodded; the horns of the crescent moon shone, and sistrums rattled. When mother and daughter left, Iphis walked with a lengthened stride and short hair — a man in form. Venus and Hymenaeus came to the marriage fire.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.760–797"
+    }
+  ]
+}

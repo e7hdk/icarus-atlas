@@ -1,0 +1,55 @@
+{
+  "id": "tithonus",
+  "title": "Eos and Tithonus",
+  "greekTitle": "Ἠὼς καὶ Τιθωνός",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 3.2,
+  "summary": {
+    "text": "The Dawn snatched away Tithonus, son of Laomedon, for love and brought him to Ethiopia, where she bore Emathion and Memnon — and in the fuller ancient telling outside our seven author lenses, she asked Zeus for his immortality but forgot eternal youth, until he shrivelled and became a cicada.",
+    "sources": ["apollodorus", "hyginus"],
+    "citation": "Apollod. 3.12.4; Hyg. Fab. 189, 270"
+  },
+  "chapters": [
+    {
+      "title": "Laomedon's elder son",
+      "text": "In the royal line of Troy, Laomedon begat Tithonus with Priam, Clytius, and Hicetaon — making the Dawn's beloved an elder brother of Troy's last king. Apollodorus knows the abduction plainly: the Dawn snatched Tithonus away for love.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.12.3–3.12.4"
+    },
+    {
+      "title": "Carried to Ethiopia",
+      "text": "Eos brought him to Ethiopia and there consorting with him bore two sons, Emathion and Memnon. Apollodorus stops at the sons and the marriage — not at the gift of immortality that later tradition would make famous.",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.12.4"
+    },
+    {
+      "title": "Husband of Aurora",
+      "text": "Hyginus counts Tithonus among the most handsome youths, husband of Aurora. It was while she was his wife that the Dawn fell passionately in love with the hunter Cephalus — a later sorrow that presumes the marriage endures even when other loves call her eastward.",
+      "sources": ["hyginus"],
+      "citation": "Hyginus Fabulae 189, 270"
+    },
+    {
+      "title": "The gift beyond our lenses",
+      "text": "Apollodorus and Hyginus know the abduction, the sons, and the enduring marriage; they do not tell how immortality went wrong. The fullest ancient account is the Homeric Hymn to Aphrodite — not among our seven author lenses — where Eos asked Zeus to make Tithonus immortal and the king granted it, but she forgot to ask for eternal youth. He lived on while his limbs failed, his voice shrank to a piping trill, and at last the Dawn shut him in a chamber and transformed him into a cicada. That hymn is the source of the famous caution: eternal life without eternal youth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.12.4; Hyg. Fab. 189, 270"
+    }
+  ],
+  "cast": [
+    { "id": "eos", "name": "Eos", "role": "Dawn who snatched Tithonus for love" },
+    { "id": "tithonus", "name": "Tithonus", "role": "Trojan prince carried to Ethiopia" },
+    { "id": "zeus", "name": "Zeus", "role": "Grantor of immortality in the Homeric Hymn tradition" },
+    { "id": "memnon", "name": "Memnon", "role": "Son who would lead Ethiopians to Troy" },
+    { "id": "emathion-ethiopia", "name": "Emathion", "role": "Son slain by Heracles in Arabia" },
+    { "id": "laomedon", "name": "Laomedon", "role": "King of Troy, father of Tithonus and Priam" }
+  ],
+  "places": [
+    { "name": "Ethiopia", "role": "Where the Dawn brought her mortal consort" },
+    { "id": "troy", "name": "Troy", "role": "Kingdom of Tithonus' birth" }
+  ],
+  "attestations": [
+    { "source": "apollodorus", "work": "The Library", "citation": "3.12.3–3.12.4" },
+    { "source": "hyginus", "work": "Fabulae", "citation": "189, 270" }
+  ]
+}

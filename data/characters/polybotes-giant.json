@@ -1,0 +1,29 @@
+{
+  "id": "polybotes-giant",
+  "name": "Polybotes (Gigantes)",
+  "greekName": "Polybōtēs (Πολυβώτης)",
+  "romanName": "Polybotes",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "buried under Nisyrum",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Poseidon chased through the sea to Cos and buried by breaking off the island called Nisyrum and throwing it upon him.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Polybotes was chased through the sea by Poseidon and came to Cos; Poseidon, breaking off that piece of the island which is called Nisyrum, threw it on him. The collective node `gigantes` holds the Gigantomachy; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    }
+  ]
+}

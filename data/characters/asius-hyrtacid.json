@@ -23,5 +23,37 @@
       "sources": ["homer"],
       "citation": "Iliad 12.110–150"
     }
+  ],
+  "residences": [
+    {
+      "city": "arisbe-troad",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.828–835, 12.80–105; Epitome 3.35"
+    },
+    {
+      "city": "percote-troad",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "practius-troad",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "sestus-hellespont",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "abydus-hellespont",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 12.80–150, 13.365–400"
+    }
   ]
 }

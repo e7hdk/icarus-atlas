@@ -1,0 +1,33 @@
+{
+  "id": "erytheia-hesperid",
+  "name": "Erytheia",
+  "greekName": "Erytheia (Ἐρυθεία)",
+  "romanName": "Erytheia",
+  "type": "nymph",
+  "kinds": ["hesperid"],
+  "cluster": "night-court",
+  "domains": [
+    "evening red",
+    "golden apples",
+    "the far west"
+  ],
+  "summary": [
+    {
+      "text": "One of the four Hesperides whom Apollodorus names beside Ladon at the golden-apple tree — in his text Erythia, the radiant 'Red One' of sunset — not to be confused with Erytheia the island home of Geryon's cattle in the western labour.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus, recounting Heracles' eleventh labour, lists the nymphs who guarded the apples with the hundred-headed dragon offspring of Typhon and Echidna: Aegle, Erythia, Hesperia, and Arethusa. The Perseus translation prints 'Erythia'; the standard Greek form Erytheia names the evening nymph of the western garden, distinct from the far western cattle-land of Geryon.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    },
+    {
+      "text": "Apollonius' Argonautica preserves a shorter roll of three names at the same garden — Hespere, Erytheis, and Aegle — and shows Erytheis changed into an elm when the sisters took tree-form after Ladon's death. The atlas treats Erytheis and Apollodorus' Erythia as the same evening nymph under the id `erytheia-hesperid`, while the collective `hesperides` node still carries Hesiod's fatherless brood of Night.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 4.1422; Bibliotheca 2.5.11"
+    }
+  ]
+}

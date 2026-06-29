@@ -1,0 +1,35 @@
+{
+  "id": "elara-orchomenus",
+  "name": "Elare",
+  "greekName": "Elarē (Ἐλάρη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Orchomenus",
+    "mother of Tityus",
+    "hidden beneath the earth"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Orchomenus whom Zeus debauched and then hid under the earth for fear of Hera, where she bore the monstrous Tityus in her womb and brought him forth to the light.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus alone among our lenses names her in the genealogy of the giant: Elare, daughter of Orchomenus, lay with Zeus and was buried alive beneath the soil so that Hera might not discover the affair. From that hidden pregnancy came Tityus, of monstrous size — a mortal mother for a creature who would assault Leto and earn eternal punishment in Tartarus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.4.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.4.1"
+    }
+  ]
+}

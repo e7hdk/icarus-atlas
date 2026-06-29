@@ -1,0 +1,33 @@
+{
+  "id": "eurytus-giant",
+  "name": "Eurytus (Gigantes)",
+  "greekName": "Eurytos (Εὔρυτος)",
+  "romanName": "Eurytus",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Dionysus killed with a thyrsus in the Gigantomachy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Eurytus among the Giants whom Dionysus killed with a thyrsus when the gods, aided by Heracles, destroyed the earthborn brood. The collective node `gigantes` holds the war as a whole; this node is the individual named in the battle roll.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Eurytus distinct from the Oechalian king `eurytus-oechalia`, the Epeian `eurytus-epeian`, and the Argonaut `eurytus-hermes` — homonyms who share only the name.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ]
+}

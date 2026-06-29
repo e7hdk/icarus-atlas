@@ -1,0 +1,54 @@
+{
+  "id": "demophon-athens",
+  "name": "Demophon",
+  "greekName": "Demophon (Δημοφῶν)",
+  "romanName": "Demophon",
+  "type": "hero",
+  "domains": [
+    "son of Theseus and Phaedra",
+    "prince expelled from Athens",
+    "rescuer of Aethra at Troy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Theseus and Phaedra, brother of Acamas — a namesake of the infant nursed by Demeter at Eleusis, but Apollodorus keeps this prince among the sons expelled when Menestheus seized Athens and among those who later fought at Troy and freed their grandmother Aethra.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.18, 1.23, 5.22; Description of Greece 10.25.7–8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Phaedra, after she had borne two children, Acamas and Demophon, to Theseus, fell in love with Hippolytus, the son he had by the Amazon — the stepbrother of her own sons. When the Dioscuri captured Athens and carried Helen and Aethra away captive, Demophon and Acamas fled rather than submit to the usurper Menestheus son of Peteos, whom the divine brothers restored and made king of Athens.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.18, 1.23"
+    },
+    {
+      "text": "Apollodorus says that Demophon and Acamas afterwards went to Troy; at the sack, they led away Aethra, mother of Theseus, who had served as Helen's handmaid since the capture of Aphidnae. Pausanias, citing Lescheos, tells how Demophon asked Agamemnon for her — the commander was ready to grant the favour, but said Helen must first consent; a herald was sent, and Helen agreed, so the old queen went home with her grandsons.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 5.22; Description of Greece 10.25.7–8"
+    },
+    {
+      "text": "At Athens, Pausanias records traditions of a king Demophon tried at the court called At Palladium for involuntary homicide — the first case heard there — when Argive allies landing in darkness were mistaken for enemies; he is widely identified with the son of Theseus, though the accounts of the charge differ.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.28.8–9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.18, 1.23, 5.22; Description of Greece 1.28.8–9, 10.25.7–8"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Epitome 5.22"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Epitome 5.22; Description of Greece 10.25.7–8; Fabulae 108"
+    }
+  ]
+}

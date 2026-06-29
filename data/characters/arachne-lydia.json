@@ -1,0 +1,53 @@
+{
+  "id": "arachne-lydia",
+  "name": "Arachne",
+  "greekName": "Arachnē (Ἀράχνη)",
+  "romanName": "Arachne",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Lydian weaving",
+    "the contest with Athena",
+    "the spider"
+  ],
+  "summary": [
+    {
+      "text": "Lydian weaver famed through Hypaepa and Colophon — daughter of the dyer Idmon — who challenged Athena and wove the gods' crimes until Minerva tore her web; hanged herself, and was saved only as a spider dangling forever on her thread.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.1–244"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Pierides were turned to magpies, Minerva brooded on another mortal who denied her art — Arachne, whose skill in wool had made her famous through Lydia though her father Idmon dyed fleeces at Colophon. Nymphs left Timolus and Pactolus to watch her spin; she boasted that she needed no teacher and dared the goddess herself to a contest.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.1–137"
+    },
+    {
+      "text": "Athena wove the court of the gods and the dispute of Athens; Arachne answered with Europa on the bull, Leda and the swan, and every divine disguise — a tapestry flawless in craft that confessed the gods' deceits. Finding no flaw, Minerva tore the web and struck Arachne upon the head; the mortal hanged herself, and the goddess sprinkled her with Hecate's juice until she shrank into a spider.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.138–244"
+    },
+    {
+      "text": "The rumour ran through Lydia to Phrygia and soon reached Niobe — who learned nothing from the fate she had once known at Maeonia. Ovid alone tells the weaver's transformation; the tale is Roman literary license rather than an archaic Greek cult legend.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 6.245–371"
+    }
+  ],
+  "residences": [
+    {
+      "city": "hypaepa",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 6.1–244"
+    },
+    {
+      "city": "colophon",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Metamorphoses 6.1–244"
+    }
+  ]
+}

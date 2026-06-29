@@ -1,0 +1,48 @@
+{
+  "id": "erysichthon-thessaly",
+  "name": "Erysichthon",
+  "greekName": "Erysichthōn (Ἐρυσίχθων)",
+  "romanName": "Erysichthon",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Thessalian kingship",
+    "sacrilege against Ceres",
+    "insatiable hunger"
+  ],
+  "summary": [
+    {
+      "text": "Son of Triopas, king in Thessaly, who with impious axe felled the ancient oak Ceres loved — and whom the goddess punished with Famine's endless hunger until he sold his daughter Mestra again and again and at last devoured his own limbs.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.738–878, 8.1124–1359"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Baucis and Philemon, Ovid turns to impiety. Erysichthon son of Triopas ordered his men to cut timber for a hall and struck with his axe the oak Ceres loved, where garlands hung and votive tablets praised the goddess. The tree bled; a nymph warned him; he threatened her and felled the holy trunk.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.738–812"
+    },
+    {
+      "text": "Ceres, too far to send her own wrath in person, asked Famine to cling to him. The hag flew on midnight wings and breathed her pestilence through the king's mouth — a hunger no feast could satisfy, no gold could buy away. Callimachus tells a like vengeance when the impious man cut down Demeter's grove.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.812–878"
+    },
+    {
+      "text": "When creditors closed on the starving king, he sold his daughter Mestra again and again; she escaped each sale in a new shape and returned, and the price of her body only fed his maw. At last Erysichthon gnawed his own limbs to feed the void Ceres had opened in him.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 8.1124–1359"
+    },
+    {
+      "text": "Apollodorus names a different Erysichthon — the childless son of Cecrops who died before his father and left the Attic throne to Cranaus. The Thessalian glutton of Ovid's iron age and the Athenian prince in Pausanias' succession must never share one star.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.14.2; Description of Greece 1.2.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["ovid"]
+    }
+  ]
+}

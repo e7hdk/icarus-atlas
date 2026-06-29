@@ -1,0 +1,53 @@
+{
+  "id": "pronous-psophis",
+  "name": "Pronous",
+  "greekName": "Pronous (Πρόνοος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phegeus",
+    "the cursed necklace",
+    "slain at Agapenor's house"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phegeus king of Psophis who with his brother Agenor lay in wait for Alcmaeon, sold Arsinoe to Agapenor at Tegea, and was himself killed by Alcmaeon's grown sons while carrying the necklace and robe toward Delphi — not the Ithacan suitor of Penelope nor the Trojan whom Sarpedon slew in the Iliad.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Alcmaeon returned to Psophis claiming he would dedicate the heirlooms of Harmonia at Delphi but carried them instead to Callirrhoe, Phegeus' sons Pronous and Agenor ambushed and killed him. They clapped their sister Arsinoe into a chest and sold her to Agapenor at Tegea, falsely accusing her of the murder.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "text": "Callirrhoe, courted by Zeus, asked that her sons Amphoterus and Acarnan might at once be full-grown to avenge their father. The brothers met Pronous and Agenor at the house of Agapenor while the Psophidians were carrying the necklace and robe to Delphi — and killed their father's murderers.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6"
+    },
+    {
+      "text": "Apollodorus names a different Pronous among the twelve suitors from Ithaca itself, and Homer has Sarpedon cut down a Trojan Pronous beside the ships — neither is the son of Phegeus in the western wanderings.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 7.30; Iliad 16.395–435"
+    }
+  ],
+  "residences": [
+    {
+      "city": "psophis",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "city": "tegea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "city": "delphi",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6"
+    }
+  ]
+}

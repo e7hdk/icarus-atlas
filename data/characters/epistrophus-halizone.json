@@ -18,5 +18,22 @@
       "sources": ["homer"],
       "citation": "Iliad 2.515–545, 2.655–690, 2.820–855"
     }
+  ],
+  "residences": [
+    {
+      "city": "alybe-pontus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.820–855"
+    }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "id": "cocalus-sicily",
+  "name": "Cocalus",
+  "greekName": "Kōkalos (Κώκαλος)",
+  "type": "hero",
+  "domains": [
+    "king of Camicus",
+    "host of Daedalus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Sicilian king who sheltered the fugitive Daedalus at Camicus — and when Minos pursued the craftsman across the sea with ships and the spiral-shell riddle, Cocalus concealed his guest, promised surrender, and (with his daughters) brought the Cretan king to his death in the bath.",
+      "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+      "citation": "Epitome 1.14–15; Metamorphoses 8.259–272; Fabulae 44; Description of Greece 7.4.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Daedalus flew from Crete after Icarus fell into the sea, he landed in Sicily and sought protection from Cocalus. Ovid says the king gathered a great army for his guest; Apollodorus places the refuge at Camicus, where Daedalus was concealed while Minos hunted him.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 8.259–272; Epitome 1.14"
+    },
+    {
+      "text": "Minos followed with ships, offering a reward to whoever could thread a spiral shell — believing only Daedalus could solve the puzzle. Cocalus took the shell, promised to pass the thread through it, and secretly gave it to Daedalus; when an ant crawled through bearing the thread, Minos knew the inventor was at Camicus and demanded his surrender.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 1.14–15"
+    },
+    {
+      "text": "Cocalus promised to hand Daedalus over and entertained Minos — but after the Cretan king bathed, he was undone by Cocalus' daughters (some say scalded with boiling water). Hyginus names the same stratagem: Daedalus warned by the king's daughters, who killed Minos when surrender was imminent.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 1.15; Fabulae 44"
+    },
+    {
+      "text": "Pausanias knows Cocalus at Inycus in Sicily and makes the refuge the cause of war between Sicilians and Cretans, for when Minos demanded Daedalus back, Cocalus refused — and the daughters admired the craftsman's skill.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.4.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "syracuse",
+      "sources": ["apollodorus", "ovid", "hyginus", "pausanias"],
+      "citation": "Epitome 1.14–15; Metamorphoses 8.259–272; Fabulae 44; Description of Greece 7.4.6"
+    }
+  ]
+}

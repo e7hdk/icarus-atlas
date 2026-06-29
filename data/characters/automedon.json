@@ -1,0 +1,68 @@
+{
+  "id": "automedon",
+  "name": "Automedon",
+  "greekName": "Automedōn (Αὐτομέδων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "charioteer of Achilles",
+    "the Myrmidons at Troy",
+    "son of Diores"
+  ],
+  "summary": [
+    {
+      "text": "Valiant son of Diores, charioteer of Achilles' immortal horses — the man Achilles honoured most after Patroclus, who yoked Xanthus and Balius for the counter-attack after Patroclus fell and fought beside Ajax and Menelaus to keep the body from the Trojans.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.145–150, 16.220–245, 17.425–455"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Achilles sent Patroclus to war in his armour, he bade Automedon yoke the fleet horses beneath the yoke — the man he honoured most after himself, faithful above all to abide his call in battle. Automedon and Patroclus stood in the forefront of the Myrmidons as the two warriors arrayed for war.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.145–150, 16.220–245"
+    },
+    {
+      "text": "After Hector slew Patroclus, Automedon fought to save the body: he cut loose a fallen trace-horse with his sword, righted the chariot, and plied the swift lash on Xanthus and Balius while the horses wept for their slain charioteer — yet would not flee to the ships while Automedon called and threatened them.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.440–475, 17.425–455"
+    },
+    {
+      "text": "Homer names him son of Diores when the Myrmidons mourned Patroclus — the godlike squire who held the reins when Achilles' friend drove the Myrmidons against the Trojans and when the immortal horses bore the body's defenders through the press.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.425–455, 9.210–240"
+    }
+  ],
+  "residences": [
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "halus-achaea-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "alope-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "trachis-malis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 16.145–150, 17.425–455"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.655–690"
+    }
+  ]
+}

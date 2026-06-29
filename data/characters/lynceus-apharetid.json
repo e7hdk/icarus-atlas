@@ -66,6 +66,16 @@
     {
       "city": "arene",
       "sources": ["apollodorus", "apollonius", "pausanias"]
+    },
+    {
+      "city": "messene",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.8.2, 1.9.16; Description of Greece 4.3.1"
+    },
+    {
+      "city": "sparta",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 80; Description of Greece 3.14.7"
     }
   ]
 }

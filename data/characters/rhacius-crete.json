@@ -1,0 +1,38 @@
+{
+  "id": "rhacius-crete",
+  "name": "Rhacius",
+  "greekName": "Rhakios (Ῥάκιος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Cretan colonist of Ionia",
+    "husband of Manto",
+    "father of Mopsus in Pausanias"
+  ],
+  "summary": [
+    {
+      "text": "Cretan leader who came to the Ionian coast while the Carians still held the land — in Pausanias' colonization tale he married Manto when she crossed from Delphi and their son Mopsus drove the Carians from the country that bears the seer's name.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.1, 7.3.12"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias says that while the Carians still held the land, the first Greeks to arrive on the Ionian coast were Cretans under Rhacius, followed by a great crowd; they occupied the shore and were strong in ships while the interior remained Carian.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.1"
+    },
+    {
+      "text": "When Thebes fell, Manto daughter of Tiresias was dedicated to Apollo at Delphi and then crossed to Asia, where she married Rhacius the Cretan. Their son Mopsus drove the Carians from the land — the rival parentage Apollodorus gives through Apollo and Manto at Colophon, where the same seer outprophesied Calchas.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.12"
+    }
+  ],
+  "residences": [
+    {
+      "city": "colophon",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.1, 7.3.12"
+    }
+  ]
+}

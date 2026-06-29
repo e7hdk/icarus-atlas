@@ -1,0 +1,42 @@
+{
+  "id": "asterius-crete",
+  "name": "Asterius",
+  "greekName": "Asterios (Ἀστέριος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Crete",
+    "foster-father of Minos",
+    "Europa's husband"
+  ],
+  "summary": [
+    {
+      "text": "Prince of the Cretans who married Europa after Zeus bore her across the sea and brought up her sons Minos, Rhadamanthus, and Sarpedon — not to be confused with Asterius the Thessalian Argonaut from Piresia.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.1.1–2; Fabulae 178"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Zeus in the form of a bull carried Europa to Crete and lay with her, Apollodorus says, she bore Minos, Sarpedon, and Rhadamanthus. Asterius prince of the Cretans married her and brought up the children; when they were grown they quarrelled over a boy called Miletus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.1.1–2"
+    },
+    {
+      "text": "Hyginus preserves the Cadmean search: Agenor sent Cadmus, Phoenix, and Cilix to wander until Europa was found, forbidding their return without her — while on Crete Asterius held the household that would produce the judges of the underworld and the royal line of Minos.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 178; Bibliotheca 3.1.1"
+    },
+    {
+      "text": "Apollonius and Hyginus count a different Asterius among Jason's crew — from Piresia at the foot of Mount Phylleus, son of Hyperasius. The Cretan prince who fostered Europa's sons and the Thessalian Minyan who sailed for the Fleece must never be merged under one star.",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.35; Fabulae 14; Bibliotheca 3.1.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

@@ -14,6 +14,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.2.1',
+    codename: 'The Bound Shores and the City Skies',
+    date: '2026-06-28',
+    lines: [
+      'Every ancient polis at last cast its reflection upon the Lands — two hundred and twenty-one cities, from Boeotian Thebes to distant Colchis, each shore named, sourced, and bound to the map so no tale may speak of a place the atlas does not know.',
+      'Homer’s Catalogue of Ships was read into the earth: the seven Boeotian towns and their captains, Phocis and her four spears, Thessaly’s Lapiths and Aenians, the Meropid isles and the Paphlagonian coast — and behind them the whole Trojan muster, Lycia and Phrygia, Thrace and the Halizones of silver Alybe.',
+      'The wanderer’s road was charted in full — Ogygia where Calypso kept Odysseus, Thrinacia where Helios’ cattle lowed, the Cyclopes’ isle and Laestrygonian Telepylus, the Lotus-eaters’ shore, and the floating isles of Aeolus who binds the winds.',
+      'The six flagship cities opened their skies to every dweller the sources allow: Thebes and Mycenae, Argos and Athens, Sparta and Troy — and at Troy alone two hundred and eighty-six stars wheel together, the whole house of Priam and every ally who fought beneath her walls.',
+      'The Argo’s track was sewn in residence and harbour — Lemnos and Chios, Salmydessus and the Strophades, Aea in Colchis and Circe’s Aeaea, Canthus slain in Libya, and the Phaeacian Corcyra where Jason and Medea fled the avenging Colchians.',
+      'Corinth received its curse in place — Creon, Glauce, and the children Medea destroyed; Iolcus the usurped throne of Pelias and the return of Jason; Lebadeia the pit of Trophonius, where Agamedes was swallowed and Aristomenes’ shield hung in the dark.',
+      'And every myth was tied to its shore at last: the spindle’s tales know their harbours, their sanctuaries and their passes — Gargaphie where Actaeon was torn, Taenarus where Orpheus descended, Thermopylae and Sardinia and Illyria — so story and map may never again speak past one another.',
+      'Eight-and-twenty new stars joined the spindle since the last sealing — a hundred and seventy-six myths now told in sourced chapters, with cast and places and the ancient works that witness them.',
+    ],
+  },
+  {
     version: '0.2.0',
     codename: 'The Spindle of Time and the Lands of Men',
     date: '2026-06-19',

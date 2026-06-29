@@ -4,74 +4,198 @@
   "greekTitle": "Ἀλκμαίωνος πλάνη",
   "kind": "episode",
   "parent": "theban-cycle",
-  "era": 6.15,
+  "era": 7.36,
   "summary": {
     "text": "After the Epigoni took Thebes, Alcmaeon killed his mother Eriphyle for the necklace that had destroyed his father — and the Erinyes drove him mad through Arcadia until Achelous purified him; when he died by Phegeus' treachery, his sons avenged him, dedicated the cursed gifts at Delphi, and colonized Acarnania.",
-    "sources": ["apollodorus", "hyginus", "pausanias"],
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Apollod. 3.7.5–7; Hyg. Fab. 73, 245; Paus. 1.34.3, 8.24.7"
   },
   "chapters": [
     {
       "title": "Matricide at Thebes",
       "text": "When Alcmaeon learned that Eriphyle had taken Thersander's robe of Harmonia as the price of sending him to war — as she had once taken the golden necklace to send Amphiaraus to his death — he killed his mother by Apollo's oracle. Some say Amphilochus shared the deed, others that Alcmaeon acted alone; Hyginus tells the whole house of Oicles: the hidden seer betrayed by his wife, the sons who avenged him, and the matricide that followed.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.7.5; Hyg. Fab. 73",
       "topic": "alcmaeon-matricide-agency"
     },
     {
       "title": "Purification and the river bride",
       "text": "The Fury of his mother's murder maddened Alcmaeon. He fled first to Oicles in Arcadia, then to Phegeus at Psophis, where he was purified and married Arsinoe — giving her the necklace and robe that had ruined his house. When the land grew barren on his account, Apollo sent him to Achelous for a second trial. Driven from Calydon and the Thesprotian country, he came at last to the river's springs; Achelous cleansed him, gave him Callirrhoe to wife, and the silt-islands where he settled. Pausanias saw his tomb still standing at Psophis, overshadowed by cypresses.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.7.5; Paus. 8.24.7"
     },
     {
       "title": "The necklace again",
       "text": "Callirrhoe coveted the necklace and robe and refused to live with Alcmaeon until she had them. He returned to Psophis and told Phegeus that the oracle promised an end to his madness if the gifts were dedicated at Delphi; Phegeus gave them up — but when a servant revealed that Alcmaeon was taking them to Callirrhoe, Phegeus' sons lay in wait and killed him. They clapped Arsinoe into a chest and sold her to Agapenor at Tegea, falsely accusing her of the murder. Hyginus counts Phegeus among those who killed their sons-in-law.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.7.5; Hyg. Fab. 245"
     },
     {
       "title": "Sons' vengeance",
       "text": "Callirrhoe learned of Alcmaeon's death and, courted by Zeus, asked that the sons she had borne him might at once be full-grown to avenge their father. Amphoterus and Acarnan suddenly reached manhood and set out. At Agapenor's house they met Pronous and Agenor, sons of Phegeus, bearing the necklace and robe to Delphi — and killed their father's murderers. They entered the palace at Psophis and slew Phegeus and his wife; pursued to Tegea they were saved by Tegeans and Argives while the Psophidians fled.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 3.7.6"
     },
     {
       "title": "Delphi and Acarnania",
       "text": "The brothers told Callirrhoe what they had done, carried the necklace and robe to Delphi as Achelous had commanded, and journeyed to Epirus. There they gathered settlers and colonized Acarnania — the land west of the Achelous that bears Acarnan's name. At Oropos, Pausanias saw the cult consequence of matricide: Alcmaeon, for his treatment of Eriphyle, is honored neither in Amphiaraus' temple nor yet with Amphilochus, while his brother keeps his own portion of the altar. Apollodorus adds a Euripidean variant: in madness Alcmaeon begot Amphilochus and Tisiphone by Manto daughter of Tiresias, gave the infants to Creon of Corinth, and unknowingly bought his own daughter as a slave before recovering his son — a second Amphilochus who colonized Amphilochian Argos by Apollo's oracles.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.7.7; Paus. 1.34.3",
       "topic": "amphilochus-parentage"
     }
   ],
   "cast": [
-    { "id": "alcmaeon", "name": "Alcmaeon", "role": "Epigon who killed his mother and wandered west" },
-    { "id": "eriphyle", "name": "Eriphyle", "role": "Mother twice bribed by the Theban heirlooms" },
-    { "id": "amphilochus", "name": "Amphilochus", "role": "Brother who may have shared the matricide" },
-    { "id": "amphiaraus", "name": "Amphiaraus", "role": "Father whose death the necklace bought" },
-    { "id": "achelous", "name": "Achelous", "role": "River god who purified and gave a bride" },
-    { "id": "amphoterus-alcmaeon", "name": "Amphoterus", "role": "Son who avenged his father" },
-    { "id": "acarnan", "name": "Acarnan", "role": "Son and eponym of Acarnania" },
-    { "id": "oicles", "name": "Oicles", "role": "Grandfather who first gave refuge in Arcadia" },
-    { "id": "manto", "name": "Manto", "role": "Seer's daughter in the Euripidean variant" },
-    { "id": "creon-corinth", "name": "Creon of Corinth", "role": "Foster-king of Alcmaeon's children in the variant" },
-    { "name": "Phegeus", "role": "King of Psophis who purified, then slew, Alcmaeon" },
-    { "name": "Arsinoe", "role": "Daughter of Phegeus, first wife of the wanderer" },
-    { "name": "Callirrhoe", "role": "Daughter of Achelous who demanded the cursed gifts" }
+    {
+      "id": "alcmaeon",
+      "name": "Alcmaeon",
+      "role": "Epigon who killed his mother and wandered west"
+    },
+    {
+      "id": "eriphyle",
+      "name": "Eriphyle",
+      "role": "Mother twice bribed by the Theban heirlooms"
+    },
+    {
+      "id": "amphilochus",
+      "name": "Amphilochus",
+      "role": "Brother who may have shared the matricide"
+    },
+    {
+      "id": "amphiaraus",
+      "name": "Amphiaraus",
+      "role": "Father whose death the necklace bought"
+    },
+    {
+      "id": "achelous",
+      "name": "Achelous",
+      "role": "River god who purified and gave a bride"
+    },
+    {
+      "id": "amphoterus-alcmaeon",
+      "name": "Amphoterus",
+      "role": "Son who avenged his father"
+    },
+    {
+      "id": "acarnan",
+      "name": "Acarnan",
+      "role": "Son and eponym of Acarnania"
+    },
+    {
+      "id": "oicles",
+      "name": "Oicles",
+      "role": "Grandfather who first gave refuge in Arcadia"
+    },
+    {
+      "id": "manto",
+      "name": "Manto",
+      "role": "Seer's daughter in the Euripidean variant"
+    },
+    {
+      "id": "creon-corinth",
+      "name": "Creon of Corinth",
+      "role": "Foster-king of Alcmaeon's children in the variant"
+    },
+    {
+      "id": "phegeus-psophis",
+      "name": "Phegeus",
+      "role": "King of Psophis who purified, then slew, Alcmaeon"
+    },
+    {
+      "id": "arsinoe-psophis",
+      "name": "Arsinoe",
+      "role": "Daughter of Phegeus, first wife of the wanderer"
+    },
+    {
+      "id": "callirrhoe-achelon",
+      "name": "Callirrhoe",
+      "role": "Daughter of Achelous who demanded the cursed gifts"
+    },
+    {
+      "id": "pronous-psophis",
+      "name": "Pronous",
+      "role": "Son of Phegeus slain while bearing the heirlooms to Delphi"
+    },
+    {
+      "id": "agenor-psophis",
+      "name": "Agenor",
+      "role": "Brother of Pronous, Alcmaeon's murderer"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City just taken when the matricide followed" },
-    { "name": "Delphi", "role": "Where the necklace and robe were dedicated at last" },
-    { "id": "argos-amphilochicum", "name": "Argos Amphilochicum", "role": "Western colony founded from Epirus" },
-    { "name": "Psophis", "role": "Arcadian city of Phegeus and Alcmaeon's tomb" },
-    { "name": "Achelous", "role": "River whose springs purified the matricide" },
-    { "name": "Epirus", "role": "Whence settlers were gathered for Acarnania" },
-    { "name": "Tegea", "role": "Where Arsinoe was enslaved and the avengers were spared" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City just taken when the matricide followed"
+    },
+    {
+      "name": "Delphi",
+      "role": "Where the necklace and robe were dedicated at last",
+      "id": "delphi"
+    },
+    {
+      "id": "argos-amphilochicum",
+      "name": "Argos Amphilochicum",
+      "role": "Western colony founded from Epirus"
+    },
+    {
+      "name": "Psophis",
+      "role": "Arcadian city of Phegeus and Alcmaeon's tomb",
+      "id": "psophis"
+    },
+    {
+      "name": "Achelous",
+      "role": "River whose springs purified the matricide",
+      "featureId": "achelous"
+    },
+    {
+      "name": "Epirus",
+      "role": "Whence settlers were gathered for Acarnania",
+      "id": "ambracia"
+    },
+    {
+      "name": "Tegea",
+      "role": "Where Arsinoe was enslaved and the avengers were spared",
+      "id": "tegea"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.7.5–7" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "73, 245" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "1.34.3, 8.24.7" },
-    { "source": "homer", "work": "Odyssey", "citation": "15.248–251" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.7.5–7"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "73, 245"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.34.3, 8.24.7"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "15.248–251"
+    }
   ]
 }

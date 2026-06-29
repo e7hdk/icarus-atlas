@@ -73,6 +73,26 @@
     {
       "city": "salamis",
       "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.557–558, 2.768–769; Epitome 5.4–5; Description of Greece 10.31.1"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.7; Iliad 2.559–580"
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8, 3.12.7; Epitome 3.12"
+    },
+    {
+      "city": "rhyteion-troad",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.7"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "greekTitle": "Ἀποθέωσις Καίσαρος",
   "kind": "episode",
   "parent": "metamorphoses",
-  "era": 8.01,
+  "era": 9.4,
   "summary": {
     "text": "Ovid closes his song of changed forms with Rome: Venus bore Julius Caesar to the stars on a blazing comet while Augustus his heir guarded the earth — the poet's proof that metamorphosis did not end with myth, but continues wherever power passes from mortal flesh to divine honour.",
     "sources": ["ovid"],
@@ -37,8 +37,16 @@
     }
   ],
   "cast": [
-    { "name": "Julius Caesar", "role": "Dictator raised to the stars after death" },
-    { "name": "Augustus", "role": "His heir, greater guardian of earth" },
+    {
+      "id": "julius-caesar",
+      "name": "Julius Caesar",
+      "role": "Dictator raised to the stars after death"
+    },
+    {
+      "id": "augustus",
+      "name": "Augustus",
+      "role": "His heir, greater guardian of earth"
+    },
     { "id": "aphrodite", "name": "Aphrodite", "role": "Venus, Caesar's divine mother" },
     { "id": "zeus", "name": "Zeus", "role": "Jupiter, who granted the apotheosis" }
   ],

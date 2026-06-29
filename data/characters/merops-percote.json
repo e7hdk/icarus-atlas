@@ -23,5 +23,17 @@
       "sources": ["homer"],
       "citation": "Iliad 11.295–335"
     }
+  ],
+  "residences": [
+    {
+      "city": "percote-troad",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.820–855, 11.295–335; Apollod. 3.12.5"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 11.295–335"
+    }
   ]
 }

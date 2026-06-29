@@ -1,0 +1,38 @@
+{
+  "id": "hesperia-hesperid",
+  "name": "Hesperia",
+  "greekName": "Hesperia (Ἑσπερία)",
+  "romanName": "Hesperia",
+  "type": "nymph",
+  "kinds": ["hesperid"],
+  "cluster": "night-court",
+  "domains": [
+    "western evening",
+    "golden apples",
+    "sunset glow"
+  ],
+  "summary": [
+    {
+      "text": "One of the four Hesperides named by Apollodorus at Ladon's watch — Aegle, Erythia, Hesperia, and Arethusa — whose name is the singular of the collective western nymphs; Apollonius calls the same sister Hespere when she becomes a poplar after the dragon's death.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 2.5.11; Argonautica 4.1422"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus' account of the eleventh labour, the golden apples of the Hesperides are guarded by Ladon and by four named nymphs, among them Hesperia — the 'western one' whose plural name already denotes the whole sisterhood in Hesiod and in the collective node `hesperides`.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    },
+    {
+      "text": "Apollonius shows the garden after Heracles has killed the serpent: Hespere became a poplar, Erytheis an elm, and Aegle a willow, their forms still visible in the trunks. The shorter three-name roll does not contradict the four-name roll so much as abbreviate it — Arethusa is absent from this episode, but Apollodorus' full quartet stands for the apple-guardians in the atlas.",
+      "sources": ["apollonius", "apollodorus"],
+      "citation": "Argonautica 4.1422; Bibliotheca 2.5.11"
+    },
+    {
+      "text": "Ovid uses Hesperia for the western lands and for unrelated nymphs — the Hesperian Naiads who buried Phaethon, or the daughter of Cebrenus whom Aesacus loved — none of whom are merged with this evening sister of the golden apples.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.416–558; 11.1170–1245"
+    }
+  ]
+}

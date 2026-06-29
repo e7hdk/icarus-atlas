@@ -1,0 +1,83 @@
+{
+  "id": "polites-odyssey",
+  "name": "Polites",
+  "greekName": "Politēs (Πολίτης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Odysseus' comrade",
+    "leader among the scouts",
+    "Circe's hall"
+  ],
+  "summary": [
+    {
+      "text": "Polites of Odysseus' wanderings — dearest and trustiest of the hero's comrades, who spoke first when the scouting party found Circe's house amid the mountain wolves and lions that fawned at her door, and who entered with the rest until the enchantress turned them to swine. Not the son of Priam who fought at Troy (`polites-trojan`).",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.210–274"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus' company came to Aeaea and Eurylochus drew the lot to lead one band inland, Polites was among those who found Circe's polished stone house in a wide outlook. Mountain wolves and lions — bewitched by her drugs — pranced about the men fawningly; then Polites, a leader of men and dearest to Odysseus of all his comrades, urged that they call to the goddess or woman singing within at her imperishable web.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.210–240"
+    },
+    {
+      "text": "They cried aloud; Circe opened and invited them in. Polites went with the party into her halls, drank the potion she mixed, and was struck with her wand until he had the head, voice, and bristles of a swine — one of the comrades Eurylochus alone escaped to tell the ship. Odysseus later restored him with the rest when Circe swore her great oath and lay with the hero.",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.240–274, 10.475–520"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.210–274"
+    },
+    {
+      "city": "ciconia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.39–66"
+    },
+    {
+      "city": "maroneia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.196–215"
+    },
+    {
+      "city": "aeolus-islands",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.1–88"
+    },
+    {
+      "city": "laestrygonia",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.81–132"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.210–574"
+    },
+    {
+      "city": "lotus-eaters",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.82–104"
+    },
+    {
+      "city": "cyclopes-isle",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.105–542"
+    },
+    {
+      "city": "anthemoessa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.158–200; Bibliotheca 1.9.25"
+    },
+    {
+      "city": "thrinacia",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.260–420"
+    }
+  ]
+}

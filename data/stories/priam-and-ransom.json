@@ -52,7 +52,7 @@
     { "id": "antilochus-nestor", "name": "Antilochus", "role": "Runner-up in the chariot race" },
     { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Contender in the funeral games" },
     { "id": "odysseus", "name": "Odysseus", "role": "Contender in the funeral games" },
-    { "name": "Idaios", "role": "Herald who drove with Priam" }
+    { "id": "idaios-trojan", "name": "Idaios", "role": "Herald who drove with Priam" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "Camp, hut, and city of Hector's rites" }

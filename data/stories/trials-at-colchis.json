@@ -54,6 +54,7 @@
     { "id": "athena", "name": "Athena", "role": "Ally of Hera at Colchis" }
   ],
   "places": [
+    { "id": "colchis", "name": "Colchis", "role": "Kingdom of Aeetes on the Phasis where Jason faced the trials" },
     { "id": "aea-colchis", "name": "Aea", "role": "City of Aeetes and the guarded fleece" }
   ],
   "attestations": [

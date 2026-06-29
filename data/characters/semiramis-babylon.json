@@ -1,0 +1,37 @@
+{
+  "id": "semiramis-babylon",
+  "name": "Semiramis",
+  "greekName": "Semiramis (Σεμίραμις)",
+  "romanName": "Semiramis",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Babylon",
+    "the brick walls",
+    "eastern legend"
+  ],
+  "summary": [
+    {
+      "text": "Legendary queen of Babylon whose brick walls bound the adjoining houses of Pyramus and Thisbe in Ovid's tale — builder of the city's fortifications in Hyginus' catalogue of wonders, distinct from the Semiramis who slew Ninus in the Assyrian legend.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 4.55–100; Fabulae 223, 240"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid sets the Babylonian lovers in adjoining houses near the walls that Queen Semiramis had built of brick around her famous city — the party wall bore a chink their fathers' hatred could not seal, through which Pyramus and Thisbe whispered their vows.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.55–100"
+    },
+    {
+      "text": "Hyginus counts among the wonders of the world the wall in Babylon which Semiramis, daughter of Dercetis, made of baked brick and bitumen bound with iron — twenty-five feet broad, sixty feet high, and three hundred stades in circuit.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 223"
+    },
+    {
+      "text": "In Hyginus' roll of those who killed kings, Semiramis killed Ninus in Babylonia — a separate strand of the eastern legend that shares the name but not the Ovidian frame of the lovers' tragedy.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 240"
+    }
+  ]
+}

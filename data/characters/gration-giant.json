@@ -1,0 +1,28 @@
+{
+  "id": "gration-giant",
+  "name": "Gration (Gigantes)",
+  "greekName": "Gratiōn (Γρατίων)",
+  "romanName": "Gration",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Artemis slew in the Gigantomachy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Gration among the Giants destroyed when the Olympians fought with Heracles at their side: Artemis slew Gration in the fight. The collective node `gigantes` holds the Gigantomachy; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    }
+  ]
+}

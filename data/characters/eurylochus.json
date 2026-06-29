@@ -32,5 +32,59 @@
       "sources": ["homer"],
       "citation": "Odyssey 12.330–360"
     }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 10.180–470, 11.1–50, 12.195–360"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.180-574"
+    },
+    {
+      "city": "laestrygonia",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.81-132"
+    },
+    {
+      "city": "aeolus-islands",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.1-88"
+    },
+    {
+      "city": "ciconia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.39–66"
+    },
+    {
+      "city": "maroneia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.196–215"
+    },
+    {
+      "city": "lotus-eaters",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.82–104"
+    },
+    {
+      "city": "cyclopes-isle",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.105–542"
+    },
+    {
+      "city": "anthemoessa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.158–200; Bibliotheca 1.9.25"
+    },
+    {
+      "city": "thrinacia",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.330–360"
+    }
   ]
 }

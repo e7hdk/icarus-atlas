@@ -1,0 +1,47 @@
+{
+  "id": "astyanax",
+  "name": "Astyanax",
+  "greekName": "Astyanax (Ἀστυάναξ)",
+  "type": "mortal",
+  "domains": [
+    "Hector's son",
+    "lord of the city",
+    "the fall of Troy"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Infant son of Hector and Andromache — called Scamandrius by his father, Astyanax by the people, 'for Hector alone guarded Ilios' — thrown from the walls when Troy fell lest he avenge his father.",
+      "sources": ["homer", "apollodorus", "ovid"],
+      "citation": "Iliad 6.402–403, 22.485–505; Epitome 5.23; Metamorphoses 13.582–714"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer's Hector meets Andromache at the Scaean gate with their baby at her breast — a mere babe, like a fair star, whom Hector calls Scamandrius but other men Astyanax, for only Hector guarded Ilios. The hero takes the child, laughs when the boy cries at his flashing helmet, sets the helm on the ground, and prays that the child may one day be called better than his father.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.390–496"
+    },
+    {
+      "text": "After Hector's death the child returns in tears to his widowed mother — Astyanax who once ate marrow and rich fat on his father's knees, now denied even a father's feast. The Iliad ends with Hector's burial; the boy's fate belongs to the fall of the city.",
+      "sources": ["homer"],
+      "citation": "Iliad 22.485–505"
+    },
+    {
+      "text": "Apollodorus records the victors' fear: having slain the Trojans and divided the spoil, the Greeks sacrificed to all the gods and threw Astyanax from the battlements — lest the son of so great a captain avenge his father when he came of age.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.23"
+    },
+    {
+      "text": "Ovid sends Astyanax down from the very tower whence he had often looked forth and seen his father fighting, pointed out by his mother — hurled by the conquering Greeks as Troy burned and Boreas counselled departure.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.582–714"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "ovid"]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "crotopus-argive",
+  "name": "Crotopus",
+  "greekName": "Krotopos (Κροτόπος)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "father of Sthenelas"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "King of Argos after Iasus in Pausanias' native succession, son of Agenor and father of Sthenelas; his daughter Psamathe bore Apollo a son whose death brought vengeance on the city.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1, 1.43.7, 2.19.8, 2.23.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Iasus, Crotopus son of Agenor came to the throne at Argos and begat Sthenelas — until Danaus sailed from Egypt against Gelanor son of Sthenelas and interrupted the succession of Agenor's house.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "In the reign of Crotopus at Argos, Psamathe his daughter bore a son to Apollo; fearing her father she exposed the child, and when Crotopus' sheepdogs destroyed the infant Apollo sent Vengeance against the Argives — the story Pausanias tells beside the grave of Coroebus at Megara and again at Argos, where Linus son of Psamathe has a tomb.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 1.43.7, 2.19.8"
+    },
+    {
+      "text": "Pausanias saw Crotopus' tomb at Argos near a precinct of Cretan Dionysus, in the quarter where Perilaus the tyrant later pulled down the prison Acrisius had built for Danae.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.23.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1, 2.23.7"
+    }
+  ]
+}

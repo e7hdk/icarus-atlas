@@ -1,0 +1,53 @@
+{
+  "id": "machaon",
+  "name": "Machaon",
+  "greekName": "Machaōn (Μαχάων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "healing at Troy",
+    "son of Asclepius",
+    "the sons of the leech"
+  ],
+  "summary": [
+    {
+      "text": "Son of Asclepius and brother of Podalirius, one of the two skilled leech-princes who led thirty hollow ships from Tricca — wounded by Paris on the day the Achaean captains fell and rescued by Menelaus and Ajax when the host could not spare the sons of the healer-god.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.695–730, 11.601–844; Bibliotheca 3.10.8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer ranks Machaon with his brother among the sons of Asclepius, the skilled leeches who commanded thirty hollow ships from Tricca, Oechalia, and the craggy towns of the Catalogue. On the plain he was healer as well as captain — the art his father taught carried into the war for Helen.",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730"
+    },
+    {
+      "text": "When Agamemnon's aristeia broke and Hector turned the tide, Eurypylus fell with an arrow in the thigh and Machaon the healer was wounded by Paris and carried off in a chariot until Menelaus and Ajax ran to rescue him — for the Achaeans could not afford to lose the sons of Asclepius. Nestor later washed Machaon's clotted blood away in his hut while fair-tressed Hecamede mixed a warm draught.",
+      "sources": ["homer"],
+      "citation": "Iliad 4.185–220, 11.601–844"
+    },
+    {
+      "text": "Apollodorus counts Machaon and Podalirius among the sons of Asclepius in the muster of the Achaean leaders — physician-princes who sailed for Troy beside Diomedes, Philoctetes, and the rest of the captains named in the Epitome's catalogue.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8; Epitome 3.14"
+    }
+  ],
+  "residences": [
+    {
+      "city": "tricca-thessaly",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.695–730; Epitome 3.14; Fabulae 97"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 4.185–220, 11.601–844"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.695–730"
+    }
+  ]
+}

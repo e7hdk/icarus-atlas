@@ -30,7 +30,28 @@
   "residences": [
     {
       "city": "chalcis",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545"
+    },
+    {
+      "city": "carystus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545"
+    },
+    {
+      "city": "styra",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545"
+    },
+    {
+      "city": "cerinthus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.515–545"
     }
   ]
 }

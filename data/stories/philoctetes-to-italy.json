@@ -101,10 +101,12 @@
       "role": "Donor of the bow on Oeta"
     },
     {
+      "id": "poeas",
       "name": "Poeas",
       "role": "Father who lit the pyre in Apollodorus' telling"
     },
     {
+      "id": "podalirius",
       "name": "Podalirius",
       "role": "Healer at Troy who cured the Lemnian wound"
     }
@@ -122,11 +124,28 @@
     },
     {
       "name": "Campania",
-      "role": "Italian land of the Campanians who received him"
+      "role": "Italian land of the Campanians who received him",
+      "id": "campania"
     },
     {
       "name": "Meliboea",
-      "role": "Thessalian coast Homer named as his muster-place"
+      "role": "Thessalian coast Homer named as his muster-place",
+      "id": "meliboea-magnesia"
+    },
+    {
+      "name": "Methone",
+      "role": "Magnesian polis in the Catalogue of Ships",
+      "id": "methone-magnesia"
+    },
+    {
+      "name": "Thaumacia",
+      "role": "Coastal town mustered under Philoctetes",
+      "id": "thaumacia-magnesia"
+    },
+    {
+      "name": "Olizon",
+      "role": "Rugged harbour of the Olizonians",
+      "id": "olizon-magnesia"
     },
     {
       "id": "pylos",

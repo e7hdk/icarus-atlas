@@ -1,0 +1,44 @@
+{
+  "id": "ogyges-boeotia",
+  "name": "Ogyges",
+  "greekName": "Ogygos (Ὤγυγος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "primeval kingship",
+    "the Ogygian deluge",
+    "Boeotia and Attica"
+  ],
+  "summary": [
+    {
+      "text": "Primeval king in whose reign Boeotia and Attica remembered a flood before Deucalion's — the Ogygian deluge that drowned the valley of Copais and left Attica kingless until Cecrops, preserved by Pausanias but passed over in Apollodorus' systematic handbook.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.7, 9.5.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias says the first to occupy the land of Thebes were the Ectenes, whose king was Ogygus, an aboriginal — from his name comes Ogygian, an epithet of Thebes used by most poets. The Ectenes perished, he adds, by pestilence.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.5.1",
+      "topic": "ogyges-deluge-tradition"
+    },
+    {
+      "text": "Local tradition placed a primeval flood in Ogyges' reign: in Boeotia the waters of lake Copais rose and drowned the valley, and Attica too remembered an Ogygian inundation in which the land went kingless until Cecrops. Apollodorus' Library passes straight to Deucalion and names no flood of Ogyges — so Greece kept one catastrophe or two, depending on the teller.",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 1.38.7, 9.5.1; Apollod. 1.7.2",
+      "topic": "ogyges-deluge-tradition"
+    },
+    {
+      "text": "The name branches into rival genealogies: Pausanias also knows Ogygus as father of Eleusis and of Alalcomenia, and daughters who gave names to Aulis and other Boeotian places — homonym hazards that must not be merged with the flood-king without evidence.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.38.7, 9.19.6, 9.33.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["pausanias"]
+    }
+  ]
+}

@@ -54,8 +54,9 @@
     { "id": "pandarus", "name": "Pandarus", "role": "Archer slain in the aristeia" },
     { "id": "hector", "name": "Hector", "role": "Shield of Troy at the Scaean Gate" },
     { "id": "andromache", "name": "Andromache", "role": "Wife who begged him not to die" },
-    { "name": "Astyanax", "role": "Infant who shrank from the plume" },
-    { "id": "zeus", "name": "Zeus", "role": "Father who healed Ares on Olympus" }
+    { "id": "astyanax", "name": "Astyanax", "role": "Infant who shrank from the plume" },
+    { "id": "zeus", "name": "Zeus", "role": "Father who healed Ares on Olympus" },
+    { "id": "pidytes-percote", "name": "Pidytes", "role": "Trojan of Percote slain by Odysseus" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "Plain, wall, and Scaean Gate" }

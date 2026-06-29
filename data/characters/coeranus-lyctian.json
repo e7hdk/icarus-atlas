@@ -18,5 +18,22 @@
       "sources": ["homer"],
       "citation": "Iliad 17.600–625"
     }
+  ],
+  "residences": [
+    {
+      "city": "lyctus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650, 17.600–625"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 5.670–710, 17.600–625"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 17.600–625"
+    }
   ]
 }

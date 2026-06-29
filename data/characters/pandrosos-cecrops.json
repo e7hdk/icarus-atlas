@@ -1,0 +1,43 @@
+{
+  "id": "pandrosos-cecrops",
+  "name": "Pandrosos",
+  "greekName": "Pandrosos (Πάνδροσος)",
+  "romanName": "Pandrosos",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Cecropid princess",
+    "keeper of Erichthonius' chest",
+    "Minerva's charge"
+  ],
+  "summary": [
+    {
+      "text": "Eldest daughter of Cecrops, to whom Athena entrusted the chest holding the serpent-girdled infant Erichthonius — the one sister who kept the goddess's command while Aglauros and, in some tellings, Herse opened the forbidden basket.",
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Bibliotheca 3.14.2; Metamorphoses 2.744–904; Description of Greece 1.18.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Athena reared Erichthonius unknown to the other gods, she hid him in a chest and gave it to Pandrosus, forbidding her to open it. Pandrosus obeyed; her sisters Aglauros and Herse, driven by curiosity, looked inside and beheld a serpent coiled about the babe — and in some accounts went mad and flung themselves from the acropolis.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.14.2; Description of Greece 1.18.2"
+    },
+    {
+      "text": "Ovid sets the three sisters on the Acropolis between Pandrosos on the right and Aglauros on the left, with Herse between — all devoted to Minerva's praise when Mercury came seeking the youngest. Pandrosos alone kept the trust that Aglauros betrayed by opening Erichthonius' basket.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 2.744–904, 2.1019–1210"
+    },
+    {
+      "text": "The `-cecrops` id marks this Pandrosos as daughter of the earth-born king, not to be merged with any later namesake in the Athenian king-list.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.14.2; Description of Greece 1.2.6"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "ovid", "pausanias"]
+    }
+  ]
+}

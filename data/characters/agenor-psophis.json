@@ -1,0 +1,53 @@
+{
+  "id": "agenor-psophis",
+  "name": "Agenor",
+  "greekName": "Agenor (Ἀγήνωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Phegeus",
+    "the cursed necklace",
+    "slain at Agapenor's house"
+  ],
+  "summary": [
+    {
+      "text": "Son of Phegeus king of Psophis who with his brother Pronous killed Alcmaeon over the necklace of Harmonia and was himself slain by Alcmaeon's sons while bearing the heirlooms toward Delphi — not Agenor son of Poseidon who ruled Phoenicia, nor the Trojan, Argive, Aetolian, Ithacan, or Zacynthian homonyms.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Phegeus had purified Alcmaeon and given him Arsinoe, the sons of Phegeus lay in wait when Alcmaeon returned for the necklace and robe. Agenor and Pronous killed him, imprisoned their sister, and sold her to Agapenor at Tegea with a false charge of murder.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "text": "When Amphoterus and Acarnan suddenly reached manhood to avenge Alcmaeon, they encountered Agenor and Pronous carrying the necklace and robe to Delphi and turned in at Agapenor's house at the same moment — and slew their father's murderers there.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6"
+    },
+    {
+      "text": "Homer's battlefield knows other Agenors — the eldest son of Antenor, the Aetolian spearman, the Ithacan and Zacynthian wooers — and Apollodorus' Phoenician king who begat Cadmus and Europa. The Psophidian brother of Pronous belongs only to the Arcadian treachery of the western wanderings.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.155–211, 11.59–60; Bibliotheca 2.1.1, 3.1.1; Epitome 7.30"
+    }
+  ],
+  "residences": [
+    {
+      "city": "psophis",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "city": "tegea",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "city": "delphi",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.6"
+    }
+  ]
+}

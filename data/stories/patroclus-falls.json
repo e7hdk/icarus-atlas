@@ -45,8 +45,8 @@
     { "id": "zeus", "name": "Zeus", "role": "Father of Sarpedon, weigher of fates" },
     { "id": "menelaus", "name": "Menelaus", "role": "Defender of the body" },
     { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "Defender of the body" },
-    { "name": "Automedon", "role": "Charioteer of Achilles' horses" },
-    { "name": "Euphorbus", "role": "He who speared Patroclus first" }
+    { "id": "automedon", "name": "Automedon", "role": "Charioteer of Achilles' horses" },
+    { "id": "euphorbus-trojan", "name": "Euphorbus", "role": "He who speared Patroclus first" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "Plain before the ships where Patroclus fell" }

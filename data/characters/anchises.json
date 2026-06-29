@@ -61,6 +61,15 @@
   ],
   "residences": [
     {
+      "city": "dardanus-city",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Iliad 2.819–821, 20.215–240; Theogony 1008–1010; Bibliotheca 3.12.2"
+    },
+    {
       "city": "troy",
       "sources": [
         "homer",

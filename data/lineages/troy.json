@@ -4,9 +4,17 @@
     {
       "ruler": "Dardanus",
       "characterId": "dardanus",
-      "sources": ["homer", "apollodorus"],
-      "citation": "Hom. Il. 20.215-220; Apollod. 3.12.1",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Hom. Il. 20.215-220; Apollod. 3.12.1; Hyg. Fab. 155",
       "note": "Son of Zeus, dearest to him of all his mortal-born children. He founded Dardania on the slopes of many-fountained Ida, before sacred Ilios was built in the plain; in Apollodorus he crosses from Samothrace to the mainland of King Teucer."
+    },
+    {
+      "ruler": "Ilus",
+      "characterId": "ilus-childless",
+      "sources": ["apollodorus"],
+      "citation": "Apollod. 3.12.2",
+      "note": "Dardanus' elder son who died childless; Erichthonius succeeded to the kingdom. Apollodorus' first Ilus — not the later namesake son of Tros who founded Ilium (see reign below). Homer instead compresses the line: Dardanus begat Erichthonius directly.",
+      "topic": "ilus-parentage"
     },
     {
       "ruler": "Erichthonius",
@@ -26,8 +34,9 @@
       "ruler": "Ilus",
       "characterId": "ilus",
       "sources": ["homer", "apollodorus"],
-      "citation": "Hom. Il. 20.230-236; Apollod. 3.12.3",
-      "note": "Founder of Ilion: he followed the dappled cow won as a prize in Phrygia, and the Palladium fell from heaven before his tent as the sign of Zeus. Homer's plain keeps his barrow, though there he is hailed as son of Dardanus; in Apollodorus that elder Ilus is a separate, childless uncle."
+      "citation": "Hom. Il. 11.371-372, 20.230-236; Apollod. 3.12.2-3",
+      "note": "Founder of Ilion: he followed the dappled cow won as a prize in Phrygia, and the Palladium fell from heaven before his tent as the sign of Zeus. Homer's plain keeps a barrow for Ilus son of Dardanus while the royal roll makes him son of Tros and father of Laomedon; Apollodorus splits the name between a childless Dardanid uncle and the founder of Ilium.",
+      "topic": "ilus-parentage"
     },
     {
       "ruler": "Laomedon",

@@ -53,6 +53,16 @@
         "apollodorus",
         "hyginus"
       ]
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7"
+    },
+    {
+      "city": "colonus-athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7"
     }
   ]
 }

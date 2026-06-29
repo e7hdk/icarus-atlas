@@ -72,6 +72,11 @@
   ],
   "residences": [
     {
+      "city": "corinth",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.152–156; Bibliotheca 1.9.3, 2.3.1"
+    },
+    {
       "city": "xanthus-lycia",
       "sources": ["homer", "apollodorus"]
     }

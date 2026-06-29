@@ -58,6 +58,42 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
     mouth: [15.65, 38.02],
     mouthMaxDistKm: 3,
   },
+  symplegades: {
+    point: [29.06, 41.14],
+    maxDistKm: 5,
+    mouth: [29.1, 41.22],
+    mouthMaxDistKm: 3,
+  },
+  'gyraean-rocks': {
+    point: [24.12, 38.89],
+    maxDistKm: 5,
+    mouth: [24.2, 38.93],
+    mouthMaxDistKm: 3,
+  },
+  'capherian-rocks': {
+    point: [24.66, 38.32],
+    maxDistKm: 5,
+    mouth: [24.72, 38.37],
+    mouthMaxDistKm: 3,
+  },
+  evenus: {
+    point: [21.75, 38.58],
+    maxDistKm: 12,
+    mouth: [21.72, 38.37],
+    mouthMaxDistKm: 4,
+  },
+  ismenus: {
+    point: [23.08, 38.36],
+    maxDistKm: 6,
+    mouth: [23.12, 38.31],
+    mouthMaxDistKm: 3,
+  },
+  'cape-geraestus': {
+    point: [24.05, 38.36],
+    maxDistKm: 4,
+    mouth: [24.08, 38.34],
+    mouthMaxDistKm: 2,
+  },
   maeander: {
     point: [27.35, 37.55],
     maxDistKm: 40,
@@ -136,6 +172,13 @@ export const RIVER_ANCHORS: Record<string, RiverAnchor> = {
     maxDistKm: 20,
     mouth: [23.88, 40.78],
     mouthMaxDistKm: 12,
+  },
+  hebrus: {
+    // Edirne reach — Orpheus' Ciconian bank; the old hand line used a source too far west.
+    point: [26.555, 41.677],
+    maxDistKm: 25,
+    mouth: [25.984, 40.845],
+    mouthMaxDistKm: 8,
   },
   halys: {
     point: [34.0, 40.5],
@@ -264,6 +307,7 @@ export const MANUAL_OSM_QUERIES: Record<string, string> = {
   'tigris-lower.json': `[out:json][timeout:60];(way["waterway"="river"]["name"~"Dicle|Tigris|دجلة",i](31.0,43.0,38.0,45.5););out geom tags;`,
   'tigris-turkey.json': `[out:json][timeout:45];(way["waterway"~"river|canal"]["name"~"Dicle|Tigris|دجلة",i](37.5,38.0,39.5,42.5););out geom tags;`,
   'eridanus.json': `[out:json][timeout:90];(way["waterway"~"river|canal"]["name"~"Po|Po River|Fiume Po|Padus",i](44.5,8.0,46.8,12.8););out geom tags;`,
+  'hebrus.json': `[out:json][timeout:90];(way["waterway"~"river|stream"]["name"~"Έβρος|Evros|Maritsa|Meriç|Марица",i](24.5,40.5,27.0,42.0););out geom tags;`,
 };
 
 /** Maps feature id → OSM cache file(s) used by sync builders. */
@@ -284,6 +328,7 @@ export const FEATURE_OSM_CACHE: Record<string, string | string[]> = {
   jordan: 'jordan.json',
   euphrates: ['euphrates-turkey.json', 'euphrates-iraq.json'],
   eridanus: 'eridanus.json',
+  hebrus: 'hebrus.json',
 };
 
 /** Extra OSM name tags to try when auto-fetching (beyond greekName). */
@@ -302,6 +347,7 @@ export const OSM_NAME_ALIASES: Record<string, string[]> = {
   'cephissus-boeotia': ['Κηφισός', 'Kifissos', 'Cephissus'],
   pleistos: ['Πλείστος', 'Πλειστός', 'Pleistos', 'Pleistus'],
   strymon: ['Στρυμόνας', 'Στρυμών', 'Strymon', 'Struma', 'Струма'],
+  hebrus: ['Ἕβρος', 'Έβρος', 'Hebrus', 'Evros', 'Maritsa', 'Meriç', 'Марица'],
   halys: ['Άλυς', 'Halys', 'Kızılırmak', 'Kizilirmak'],
   enipeus: ['Ενιπέας', 'Ενιπεύς', 'Enipeus', 'Enipefs'],
   'axios-macedon': ['Αξιός', 'Axios', 'Vardar'],
@@ -319,6 +365,8 @@ export const OSM_NAME_ALIASES: Record<string, string[]> = {
   eridanus: ['Ηριδανός', 'Eridanus', 'Po', 'Padus', 'Po River', 'Fiume Po'],
   acheron: ['Αχέρων', 'Acheron', 'Acheronas'],
   cocytus: ['Κωκυτός', 'Κώκυτος', 'Kokytos', 'Cocytus'],
+  evenus: ['Εὔηνος', 'Εύηνος', 'Evenus', 'Evinos', 'Evros (Aetolia)'],
+  ismenus: ['Ἰσμηνός', 'Ισμηνός', 'Ismenus', 'Ismenos'],
 };
 
 /** Feature ids with a sync builder in sync-river-geometry.ts (includes NE-only). */
@@ -327,6 +375,12 @@ export const RIVER_SYNC_IDS = new Set([
   'simoeis',
   'hellespont',
   'scylla-charybdis',
+  'symplegades',
+  'gyraean-rocks',
+  'capherian-rocks',
+  'evenus',
+  'ismenus',
+  'cape-geraestus',
   'eurotas',
   'alpheus',
   'peneus',
@@ -342,6 +396,7 @@ export const RIVER_SYNC_IDS = new Set([
   'cephissus-boeotia',
   'pleistos',
   'strymon',
+  'hebrus',
   'halys',
   'enipeus',
   'axios-macedon',
@@ -364,6 +419,10 @@ export const RIVER_SYNC_IDS = new Set([
 export const SYNC_ONLY_IDS = new Set([
   'hellespont',
   'scylla-charybdis',
+  'symplegades',
+  'gyraean-rocks',
+  'capherian-rocks',
+  'cape-geraestus',
   'peneus',
   'achelous',
   'scamander',

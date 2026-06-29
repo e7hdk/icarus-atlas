@@ -1,0 +1,37 @@
+{
+  "id": "pyramus",
+  "name": "Pyramus",
+  "greekName": "Pýramos (Πύραμος)",
+  "romanName": "Pyramus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Babylonian lovers",
+    "the mulberry tree",
+    "tragic misunderstanding"
+  ],
+  "summary": [
+    {
+      "text": "The fairest youth of eastern Babylon, who loved Thisbe through a crack in the wall between their fathers' houses and, finding her blood-stained cloak beside a lioness' tracks, believed her dead and fell on his sword — whereupon she returned and followed him to death.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 4.55–166; Fabulae 242"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid tells how Pyramus and Thisbe, the handsomest boy and loveliest girl in Semiramis' Babylon, grew up in adjoining houses whose party wall bore a chink their fathers' hatred could not seal. Through that crack they whispered vows and planned to meet by night at Ninus' tomb outside the city.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.55–100"
+    },
+    {
+      "text": "Thisbe reached the tomb first and fled a lioness fresh from the kill, dropping her cloak in terror. When Pyramus came and saw the blood-stained garment and the beast's tracks, he believed his love destroyed and drove his sword into his side. Thisbe returned, found him dying, and took the weapon from his breast to follow.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.100–150"
+    },
+    {
+      "text": "Their blood darkened the roots of a mulberry tree, and the gods changed its fruit from white to dark red in memory of the lovers. Hyginus counts Pyramus among those who killed themselves for love of Thisbe in Babylonia.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 4.150–166; Fabulae 242"
+    }
+  ]
+}

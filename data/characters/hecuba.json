@@ -44,6 +44,11 @@
     {
       "city": "troy",
       "sources": ["homer", "apollodorus", "ovid", "hyginus", "pausanias"]
+    },
+    {
+      "city": "sigeum",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.439–480"
     }
   ]
 }

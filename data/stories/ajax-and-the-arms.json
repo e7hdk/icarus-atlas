@@ -4,7 +4,7 @@
   "greekTitle": "Αἴας καὶ τὰ ὅπλα τοῦ Ἀχιλλέως",
   "kind": "episode",
   "parent": "trojan-war",
-  "era": 8.30,
+  "era": 8.3,
   "summary": {
     "text": "When Achilles fell at the Scaean gate, Telamonian Ajax carried the body through a shower of darts while Odysseus fought off the assailants — yet at the funeral games the army judged the hero's armour to the Ithacan, not to the bulwark of the Achaeans; Athena drove Ajax mad among the cattle, and he fell on his sword, his shade still wrathful when Odysseus met him in Hades.",
     "sources": [
@@ -145,7 +145,8 @@
     },
     {
       "name": "The house of Hades",
-      "role": "Where Ajax' shade still kept its wrath"
+      "role": "Where Ajax' shade still kept its wrath",
+      "featureId": "acheron"
     }
   ],
   "attestations": [

@@ -7,45 +7,106 @@
   "era": 6.76,
   "summary": {
     "text": "After Aegeus' death Theseus united Attica under one polis, took Thebes when Creon forbade burial to the Argive dead, sheltered Oedipus at Colonus, and set the Panathenaea — the king whose public virtue would be undone in his own house.",
-    "sources": ["apollodorus", "pausanias", "homer"],
+    "sources": [
+      "apollodorus",
+      "pausanias",
+      "homer"
+    ],
     "citation": "Apollod. 3.5.9, 3.7.1, Epit. 1.11; Paus. 1.39.4; Hom. Il. 1.265"
   },
   "chapters": [
     {
       "title": "The synoecism",
       "text": "King of Athens after his father, Theseus abolished the separate councils of the demes and created one council hall and one magistracy for the united people — the synoecism that made Attica a single city under the acropolis. He instituted the Panathenaea and divided the citizens into Eupatridae, Geomori, and Demiurgi, though the three orders were later abolished.",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Apollod. Epit. 1.11; Paus. 1.39.4"
     },
     {
       "title": "The Argive dead",
       "text": "When the Seven against Thebes had fallen and Creon forbade burial to Polynices and the Argive champions, Adrastus came as a suppliant to Athens. Theseus mustered an army, took Thebes, and gave back the dead to their kin for funeral rites — the deed for which the Athenians long boasted that their city alone among the Greeks dared to do justice to the fallen.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 3.7.1"
     },
     {
       "title": "Oedipus at Colonus",
       "text": "Blinded Oedipus came with Antigone to the precinct of the Eumenides at Colonus in Attica, and Theseus received the suppliant Labdacid. The full tale of the blind king's last hour belongs to the Theban cycle — Homer remembers funeral games at Thebes, Apollodorus and Pausanias the death at Colonus — but every telling agrees that the Athenian hero sheltered the exile and earned his blessing before the curse passed to the next generation.",
-      "sources": ["apollodorus", "homer", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "homer",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.5.9; Hom. Il. 23.677–680; Paus. 1.28.7"
     }
   ],
   "cast": [
-    { "id": "theseus", "name": "Theseus", "role": "The synoecist king" },
-    { "id": "oedipus", "name": "Oedipus", "role": "The suppliant at Colonus" },
-    { "id": "antigone", "name": "Antigone", "role": "Daughter who led the blind king" },
-    { "id": "creon", "name": "Creon", "role": "Theban regent who forbade burial" },
-    { "id": "adrastus", "name": "Adrastus", "role": "Argive king who sought Athens' aid" },
-    { "id": "athena", "name": "Athena", "role": "Patron of the united city" }
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "The synoecist king"
+    },
+    {
+      "id": "oedipus",
+      "name": "Oedipus",
+      "role": "The suppliant at Colonus"
+    },
+    {
+      "id": "antigone",
+      "name": "Antigone",
+      "role": "Daughter who led the blind king"
+    },
+    {
+      "id": "creon",
+      "name": "Creon",
+      "role": "Theban regent who forbade burial"
+    },
+    {
+      "id": "adrastus",
+      "name": "Adrastus",
+      "role": "Argive king who sought Athens' aid"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Patron of the united city"
+    }
   ],
   "places": [
-    { "id": "athens", "name": "Athens", "role": "The united polis" },
-    { "id": "thebes", "name": "Thebes", "role": "City taken for the Argive dead" },
-    { "name": "Colonus", "role": "Attic deme where Oedipus died" }
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "The united polis"
+    },
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City taken for the Argive dead"
+    },
+    {
+      "name": "Colonus",
+      "role": "Attic deme where Oedipus died",
+      "id": "colonus-athens"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.5.9, 3.7.1, Epitome 1.11" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "1.28.7, 1.39.4" },
-    { "source": "homer", "work": "Iliad", "citation": "23.677–680" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.5.9, 3.7.1, Epitome 1.11"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.28.7, 1.39.4"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "23.677–680"
+    }
   ]
 }

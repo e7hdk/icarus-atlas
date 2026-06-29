@@ -61,12 +61,15 @@
     { "id": "ilus", "name": "Ilus", "role": "Founder of Ilion" },
     { "id": "ganymede", "name": "Ganymede", "role": "Cupbearer of Zeus" },
     { "id": "laomedon", "name": "Laomedon", "role": "The oath-breaking king" },
+    { "id": "bucolion-trojan", "name": "Bucolion", "role": "Illegitimate eldest son of Laomedon" },
+    { "id": "calybe-nymph", "name": "Calybe", "role": "Nymph mother of Bucolion (Apollodorus)" },
+    { "id": "abarbarea-trojan", "name": "Abarbarea", "role": "Fountain-nymph, mother of Aesepus and Pedasus (Homer)" },
     { "id": "priam", "name": "Priam", "role": "Last king of Troy" },
     { "id": "hecuba", "name": "Hecuba", "role": "Queen of Troy at its height" },
-    { "name": "Teucer", "role": "First king of the land, Dardanus' host" },
-    { "name": "Heracles", "role": "Sacker of the first Troy" },
-    { "name": "Hesione", "role": "The princess chained for the monster" },
-    { "name": "Telamon", "role": "First through the wall" }
+    { "id": "teucer-troas", "name": "Teucer", "role": "First king of the land, Dardanus' host" },
+    { "id": "heracles", "name": "Heracles", "role": "Sacker of the first Troy" },
+    { "id": "hesione", "name": "Hesione", "role": "The princess chained for the monster" },
+    { "id": "telamon", "name": "Telamon", "role": "First through the wall" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "The city of the house — founded, walled, and twice taken" }

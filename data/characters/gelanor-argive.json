@@ -1,0 +1,49 @@
+{
+  "id": "gelanor-argive",
+  "name": "Gelanor",
+  "greekName": "Gelanor (Γελάνωρ)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "last king before Danaus"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Sthenelas and last king of the Crotopid line at Argos before Danaus returned from Egypt; Apollodorus says he surrendered the kingdom, while Pausanias preserves a formal contest decided by a wolf overcoming a bull.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.4; Description of Greece 2.16.1, 2.19.3–2.19.4",
+      "topic": "danaus-kingship"
+    }
+  ],
+  "story": [
+    {
+      "text": "Danaus came to Argos, land of his ancestor Io, and the reigning king Gelanor surrendered the kingdom to him; having made himself master of the country Danaus named the inhabitants Danai after himself.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.4"
+    },
+    {
+      "text": "Pausanias' king-list places Gelanor son of Sthenelas on the throne when Danaus sailed from Egypt and stayed the succession to the kingdom of Agenor's descendants. On coming to Argos Danaus claimed the kingdom against Gelanor; after both sides argued their case before the people, a wolf attacked the leader of a herd of oxen pasturing before the wall and overcame the bull — and because Gelanor was like the bull and Danaus like the wolf, Danaus won the kingdom and founded the sanctuary of Apollo Lycius.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1, 2.19.3–2.19.4",
+      "topic": "danaus-kingship"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.4; Description of Greece 2.16.1"
+    }
+  ]
+}

@@ -23,5 +23,27 @@
       "sources": ["homer"],
       "citation": "Iliad 13.675–720, 15.315–340"
     }
+  ],
+  "residences": [
+    {
+      "city": "opous-locris",
+      "sources": ["homer"],
+      "citation": "Iliad 15.315–340"
+    },
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.695–730, 15.315–340"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720, 15.315–340"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.695–730"
+    }
   ]
 }

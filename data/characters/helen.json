@@ -76,6 +76,36 @@
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 3.121–380, 6.343–380, 24.765–775; Epitome 3.1–5"
+    },
+    {
+      "city": "knossos",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.50–95, 4.220–310; Epitome 6.29"
+    },
+    {
+      "city": "salamis-cyprus",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.50–95, 4.220–310"
+    },
+    {
+      "city": "memphis",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.220–310; Epitome 3.1–5, 6.29"
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.23; Description of Greece 1.41.4–5"
+    },
+    {
+      "city": "aphidnae",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.23; Description of Greece 1.41.5"
     }
   ]
 }

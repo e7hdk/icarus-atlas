@@ -70,7 +70,40 @@
         "homer",
         "apollodorus",
         "hyginus"
-      ]
+      ],
+      "citation": "Odyssey 3.193–200, 3.303–310; Epitome 6.24–25; Fabulae 117, 119"
+    },
+    {
+      "city": "panopeus",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 6.24; Fabulae 117"
+    },
+    {
+      "city": "sparta",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 6.28; Description of Greece 3.1.5, 2.18.5–6"
+    },
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 6.25; Description of Greece 1.28.6"
+    },
+    {
+      "city": "tauris",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 6.26–27; Fabulae 120"
     }
   ]
 }

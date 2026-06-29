@@ -39,7 +39,13 @@
   "residences": [
     {
       "city": "mycenae",
-      "sources": ["homer", "apollodorus", "hyginus"]
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 3.193–200, 3.250–310, 3.303–310; Epitome 6.23–25; Fabulae 117, 119"
+    },
+    {
+      "city": "sicyon",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 87–88"
     }
   ]
 }

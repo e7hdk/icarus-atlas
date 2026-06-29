@@ -1,0 +1,34 @@
+{
+  "id": "podes-eetionid",
+  "name": "Podes",
+  "greekName": "Podes (Πώδης)",
+  "type": "hero",
+  "domains": ["son of Eetion", "Trojan ally", "companion at the feast"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Eetion (`eetion-cilicia`), a rich man and a valiant whom Hector honoured above all the people as his comrade and welcome companion at the feast — slain by Menelaus as he stood over Patroclus' body in the fight for the corpse.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.575–590"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Hector stood over Patroclus and hurled his bright spear, Athena filled his dark heart with daring. Among the Trojans was Podes, son of Eetion, a rich man and a valiant, and Hector honoured him above all the people, for that he was his comrade, a welcome companion at the feast. Fair-haired Menelaus smote him upon the belt with a spear cast as he started to flee, and drave the bronze clean through and out at the navel; he fell with a thud and his armour clanged upon him.",
+      "sources": ["homer"],
+      "citation": "Iliad 17.575–590"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thebe-hypoplakia",
+      "sources": ["homer"],
+      "citation": "Iliad 17.575–590"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 17.575–590"
+    }
+  ]
+}

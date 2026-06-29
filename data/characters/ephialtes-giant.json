@@ -1,0 +1,33 @@
+{
+  "id": "ephialtes-giant",
+  "name": "Ephialtes (Gigantes)",
+  "greekName": "Ephialtēs (Ἐφιάλτης)",
+  "romanName": "Ephialtes",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Apollo shot in the left eye and Heracles in the right during the Gigantomachy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Ephialtes among the Giants destroyed when Heracles fought at the gods' side: Apollo shot him with an arrow in his left eye and Heracles in his right. The collective node `gigantes` holds the oracle that required a mortal's help; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "The atlas keeps this Ephialtes distinct from `ephialtes-aload`, the Aload who with his brother Otus piled Ossa on Olympus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2; Bibliotheca 1.7.4"
+    }
+  ]
+}

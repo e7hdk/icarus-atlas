@@ -1,0 +1,38 @@
+{
+  "id": "hermaphroditus",
+  "name": "Hermaphroditus",
+  "greekName": "Hermaphroditos (Ἑρμαφρόδιτος)",
+  "romanName": "Hermaphroditus",
+  "type": "god",
+  "cluster": "olympian-band",
+  "domains": [
+    "son of Hermes and Aphrodite",
+    "the merged body",
+    "the Salmacis spring",
+    "biform youth"
+  ],
+  "summary": [
+    {
+      "text": "Child of Hermes and Aphrodite, nursed by the Naiads and beautiful at fifteen; bathing in the fountain Salmacis, he was clasped by the nymph until their bodies merged, and he prayed that any man who entered those waters would grow soft — a prayer his parents granted.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 4.409–625; Fabulae 271"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid says the Naiads nursed an infant son of Mercury, gotten of Venus — Atlantius, who bears both parents' names and is called Hermaphroditus. When he reached his fifteenth year he left the Idaean nurses and wandered through Caria and Lycia, a boy whom man or woman might have loved.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.409–450"
+    },
+    {
+      "text": "At a fountain clear as glass he stripped to bathe. Salmacis, the pool's nymph, saw him and burned with desire; when he refused, she hid until he entered the water, then clasped him and prayed the gods never to part them. Their limbs fused — nor man nor woman wholly, but both in seeming neither one. Hermaphroditus, feeling his form soften in the guilty spring, begged his father and mother that whoever bathed there would issue half-man and weakened; moved, they made the fountain infamous forever.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.450–625"
+    },
+    {
+      "text": "Hyginus lists him among the beautiful boys whom Apollo loved in other tales, naming him Atlantius, son of Mercury and Venus, called Hermaphroditus — the catalogue form of the biform god.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 271"
+    }
+  ]
+}

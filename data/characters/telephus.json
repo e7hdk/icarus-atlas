@@ -76,8 +76,18 @@
   ],
   "residences": [
     {
+      "city": "tegea",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.7.4, 3.9.1"
+    },
+    {
       "city": "pergamon",
-      "sources": ["apollodorus", "pausanias"]
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ]
     }
   ]
 }

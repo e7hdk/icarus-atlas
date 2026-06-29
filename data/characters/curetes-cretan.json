@@ -1,0 +1,42 @@
+{
+  "id": "curetes-cretan",
+  "name": "The Curetes",
+  "greekName": "Kouretes (Κούρητες)",
+  "type": "creature",
+  "cluster": "titan-ring",
+  "domains": [
+    "armed dancers of Crete",
+    "Zeus' nursery guard",
+    "spear on shield"
+  ],
+  "summary": [
+    {
+      "text": "Armed youths of Crete who clashed spear on shield in the Dictaean cave so that Cronus might not hear the infant Zeus cry — Rhea's hidden guard distinct from the Curetes who warred with the Calydonians in Homer's tale of Meleager.",
+      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "citation": "Theogony 481–485; Bibliotheca 1.1.6–1.1.7; Fabulae 139"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Rhea bore Zeus in the cave of Dicte, Apollodorus says she gave the babe to the Curetes and to the nymphs Adrasteia and Ida, daughters of Melisseus, to nurse. The armed dancers drowned every cry while the king who would shake Olympus grew on honey and goat's milk far from Cronus' throne.",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Bibliotheca 1.1.6–1.1.7; Theogony 477–485"
+    },
+    {
+      "text": "Hesiod and Hyginus agree on the ruse: they clashed their spears on their shields so that Cronus might not hear the child's voice in the remote cave. Hyginus adds that Amalthea hung the cradle from a tree so the infant could be found neither in heaven nor on earth nor in the sea — a hiding that matched the mother's deceit and the dancers' din.",
+      "sources": ["hesiod", "hyginus"],
+      "citation": "Theogony 481–485; Fabulae 139"
+    },
+    {
+      "text": "Homer's Curetes are another company altogether — the people who beset Calydon beside the Aetolians when Artemis raised war over the boar's carcass, in Phoenix's warning to Achilles. The Cretan nursery-guard and the western warriors of Meleager's tale must never share one star.",
+      "sources": ["homer"],
+      "citation": "Iliad 9.495–580"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["apollodorus", "hesiod"]
+    }
+  ]
+}

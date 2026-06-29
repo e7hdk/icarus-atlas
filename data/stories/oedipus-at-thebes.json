@@ -7,65 +7,162 @@
   "era": 5.8,
   "summary": {
     "text": "Fated to kill his father and wed his mother, Oedipus solved the Sphinx's riddle and became king — until plague revealed the pollution, Jocasta hanged herself, and the blinded king cursed the sons who would destroy each other at the seven gates.",
-    "sources": ["apollodorus", "homer", "pausanias", "hyginus", "ovid"],
-    "citation": "Apollod. 3.5.7–9; Hom. Od. 11.275; Paus. 9.5.11; Hyg. Fab. 66–67; Ov. Met. 7.1251"
+    "sources": [
+      "apollodorus",
+      "homer",
+      "pausanias",
+      "hyginus",
+      "ovid"
+    ],
+    "citation": "Apollod. 3.5.7–9; Hom. Od. 11.275; Paus. 9.5.11; Hyg. Fab. 66–67; Ov. Met. 7.759–761"
   },
   "chapters": [
     {
       "title": "The oracle of Laius",
       "text": "Laius son of Labdacus learned at Delphi that he would die by his son's hand. When a child was born, he pierced the infant's ankles and gave him to a herdsman to expose on Mount Cithaeron — but the boy was saved and grew up at Corinth as the son of Polybus and Periboea, named Oedipus for his swollen feet.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.5.7; Hyg. Fab. 66"
     },
     {
       "title": "Patricide on the road",
       "text": "Taunted about his parentage, Oedipus consulted Delphi and heard he would kill his father and wed his mother. Fleeing Corinth, he met Laius at the narrow road called Schiste; an argument over right of way ended when Oedipus struck down the stranger in his chariot — not knowing he had slain the king of Thebes.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.5.7; Hyg. Fab. 67"
     },
     {
       "title": "The Sphinx",
       "text": "Thebes was besieged by the Sphinx — in Hesiod daughter of Echidna and Orthrus, in Apollodorus daughter of Echidna and Typhon — who devoured those who could not answer her riddle. Oedipus solved it: the creature that goes on four feet, two feet, and three is Man. The monster destroyed herself, and the Thebans gave Oedipus the kingdom and the hand of the widowed queen.",
-      "sources": ["apollodorus", "hesiod", "ovid", "hyginus"],
-      "citation": "Apollod. 3.5.8; Hes. Th. 326–327; Ov. Met. 7.1251; Hyg. Fab. 67",
+      "sources": [
+        "apollodorus",
+        "hesiod",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.5.8; Hes. Th. 326–327; Ov. Met. 7.759–761; Hyg. Fab. 67",
       "topic": "sphinx-parentage"
     },
     {
       "title": "Jocasta or Euryganeia",
       "text": "Apollodorus and Hyginus make Jocasta mother of Eteocles, Polynices, Antigone, and Ismene — children of the unwitting incest. Pausanias, following Homer and the lost Oedipodia, names Euryganeia daughter of Hyperphas as their mother, arguing the incest was discovered too quickly for four children to be born of the queen who was also Oedipus' mother.",
-      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
       "citation": "Apollod. 3.5.8; Hyg. Fab. 67; Paus. 9.5.11",
       "topic": "oedipus-children-mother"
     },
     {
       "title": "The revelation",
       "text": "When plague and barrenness struck Thebes, Tiresias revealed that the pollution was Oedipus himself. Jocasta hanged herself; Oedipus put out his own eyes with her brooch-pins and was driven into exile, escorted by Antigone. Homer remembers him in the underworld, still bearing his woes, and Apollodorus tells how he cursed his sons to divide the kingdom with iron, not lot.",
-      "sources": ["apollodorus", "homer", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.5.9; Hom. Od. 11.275; Hyg. Fab. 67"
     }
   ],
   "cast": [
-    { "id": "oedipus", "name": "Oedipus", "role": "The riddle-solver and doomed king" },
-    { "id": "laius", "name": "Laius", "role": "King slain on the road" },
-    { "id": "jocasta", "name": "Jocasta", "role": "Queen and unwitting mother" },
-    { "id": "euryganeia", "name": "Euryganeia", "role": "Mother of the children in Pausanias' tradition" },
-    { "id": "sphinx", "name": "The Sphinx", "role": "Monster who devoured the helpless" },
-    { "id": "tiresias", "name": "Tiresias", "role": "Seer who named the pollution" },
-    { "id": "eteocles", "name": "Eteocles", "role": "Son who would hold the throne" },
-    { "id": "polynices", "name": "Polynices", "role": "Son who would march from Argos" },
-    { "id": "antigone", "name": "Antigone", "role": "Daughter who led the blind father out" }
+    {
+      "id": "oedipus",
+      "name": "Oedipus",
+      "role": "The riddle-solver and doomed king"
+    },
+    {
+      "id": "laius",
+      "name": "Laius",
+      "role": "King slain on the road"
+    },
+    {
+      "id": "jocasta",
+      "name": "Jocasta",
+      "role": "Queen and unwitting mother"
+    },
+    {
+      "id": "euryganeia",
+      "name": "Euryganeia",
+      "role": "Mother of the children in Pausanias' tradition"
+    },
+    {
+      "id": "sphinx",
+      "name": "The Sphinx",
+      "role": "Monster who devoured the helpless"
+    },
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "Seer who named the pollution"
+    },
+    {
+      "id": "eteocles",
+      "name": "Eteocles",
+      "role": "Son who would hold the throne"
+    },
+    {
+      "id": "polynices",
+      "name": "Polynices",
+      "role": "Son who would march from Argos"
+    },
+    {
+      "id": "antigone",
+      "name": "Antigone",
+      "role": "Daughter who led the blind father out"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City of the riddle and the curse" },
-    { "name": "Delphi", "role": "Oracle that warned Laius and Oedipus" },
-    { "name": "Mount Cithaeron", "role": "Where the infant was exposed" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City of the riddle and the curse"
+    },
+    {
+      "name": "Delphi",
+      "role": "Oracle that warned Laius and Oedipus",
+      "id": "delphi"
+    },
+    {
+      "name": "Mount Cithaeron",
+      "role": "Where the infant was exposed",
+      "featureId": "mount-cithaeron"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.5.7–9" },
-    { "source": "homer", "work": "Odyssey", "citation": "11.275" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "9.5.11" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "66–67" },
-    { "source": "hesiod", "work": "Theogony", "citation": "326–327" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "7.1251" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.5.7–9"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.275"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.5.11"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "66–67"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "326–327"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "7.759–761"
+    }
   ]
 }

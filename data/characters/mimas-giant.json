@@ -1,0 +1,28 @@
+{
+  "id": "mimas-giant",
+  "name": "Mimas (Gigantes)",
+  "greekName": "Mimas (Μίμας)",
+  "romanName": "Mimas",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Hephaestus killed with missiles of red-hot metal in the Gigantomachy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Mimas among the Giants whom Hephaestus felled with missiles of red-hot metal when the gods, with Heracles' aid, destroyed the earthborn brood. The collective node `gigantes` holds the Gigantomachy; this node is the individual in the battle roster.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.6.2",
+      "topic": "gigantes-parentage"
+    }
+  ]
+}

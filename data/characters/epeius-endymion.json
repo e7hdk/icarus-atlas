@@ -1,0 +1,44 @@
+{
+  "id": "epeius-endymion",
+  "name": "Epeius",
+  "greekName": "Epeios (Ἐπειός)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of the Epeans",
+    "Elean kingship",
+    "Olympic footrace"
+  ],
+  "summary": [
+    {
+      "text": "Son of Endymion who won the footrace at Olympia for the throne and gave his name to the Epeans — distinct from Epeius son of Panopeus, the Trojan craftsman of the Wooden Horse.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.4, 5.1.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias gathers the Elean account: all agree that Endymion begat Paeon, Epeius, Aetolus, and a daughter Eurycyda. Endymion set his sons to race at Olympia for the kingdom; Epeius won, obtained the throne, and his subjects were named Epeans for the first time.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.4",
+      "topic": "endymion-children"
+    },
+    {
+      "text": "In his reign Epeius married Anaxiroe daughter of Coronus and begat a daughter Hyrmina but no male issue. While he ruled the land of Epeius, Oenomaus was lord of Pisa — until Pelops, crossing from Asia, overthrew Oenomaus and separated Pisa and Olympia from the Epean kingdom. On Epeius' death Aetolus came to the throne, before himself fleeing the Peloponnese after unintentionally killing Apis at the games of Azan.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.6–5.1.8"
+    },
+    {
+      "text": "The atlas disambiguates this Elean king as `epeius-endymion`. Homer and Apollodorus know another Epeius, son of Panopeus, the boxer and architect who built the Wooden Horse — a Phocian hero of the Trojan War with no share in the Elean royal stem.",
+      "sources": ["homer", "pausanias"],
+      "citation": "Iliad 23.665; Description of Greece 5.1.4, 10.26.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pisa-elis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.4–5.1.8"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { loadCities, loadFeatures, loadLineage, loadPlaces, loadRegions } from '@/features/geo/load';
-import { loadAtlasData } from '@/features/characters/load';
+import { buildCharacterIndex, loadAtlasData } from '@/features/characters/load';
 import { MapView } from '@/components/map/MapView';
 import { MainNav } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
@@ -24,9 +24,18 @@ export default async function AreasPage() {
     await Promise.all(cities.map(async (city) => [city.id, await loadLineage(city.id)])),
   );
 
+  const characterIndex = buildCharacterIndex(atlas.characters);
+
   return (
     <div className="fixed inset-0">
-      <MapView regions={regions} cities={cities} places={places} features={features} lineages={lineages} />
+      <MapView
+        regions={regions}
+        cities={cities}
+        places={places}
+        features={features}
+        lineages={lineages}
+        characterIndex={characterIndex}
+      />
       <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
         <IcarusBrand />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">

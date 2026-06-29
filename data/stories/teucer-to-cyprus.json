@@ -100,10 +100,12 @@
       "role": "Lord who praised his archery at Troy"
     },
     {
+      "id": "cinyras-cyprus",
       "name": "Cinyras",
       "role": "King of Paphos whose daughter he married on Cyprus"
     },
     {
+      "id": "eurysaces",
       "name": "Eurysaces",
       "role": "Ajax's young son, left behind in the accusation"
     }
@@ -126,7 +128,8 @@
     },
     {
       "name": "Paphos",
-      "role": "Cinyras' kingdom on Cyprus"
+      "role": "Cinyras' kingdom on Cyprus",
+      "id": "salamis-cyprus"
     }
   ],
   "attestations": [

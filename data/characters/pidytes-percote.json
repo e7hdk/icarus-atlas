@@ -1,0 +1,34 @@
+{
+  "id": "pidytes-percote",
+  "name": "Pidytes",
+  "greekName": "Pidytēs (Πιδύτης)",
+  "type": "hero",
+  "domains": ["Trojan ally", "Percote"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan of Percote whom Odysseus laid low with his spear of bronze when the Achaeans stripped the slain in the opening rout of *Iliad* 6 — distinct from the Lycian Pidytes whom Sarpedon slew in *Iliad* 5.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "story": [
+    {
+      "text": "When the Trojans fled and the Achaeans stripped the slain, Polypoetes staunch in fight slew Astyalus, and Odysseus with his spear of bronze laid low Pidytes of Percote, and Teucer goodly Aretaon.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ],
+  "residences": [
+    {
+      "city": "percote-troad",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    }
+  ]
+}

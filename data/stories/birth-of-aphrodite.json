@@ -3,68 +3,133 @@
   "title": "The Foam-Born",
   "greekTitle": "Ἀφροδίτη",
   "kind": "episode",
-  "parent": "cosmogony",
+  "parent": "reign-of-cronus",
   "era": 0.05,
   "summary": {
     "text": "When Cronus cast down his father's power into the sea, white foam gathered around the severed flesh and from it rose Aphrodite — awful and lovely — who first touched Cythera and then Cyprus, where grass grew beneath her feet and gods and men gave her names of foam and crown.",
-    "sources": ["hesiod", "apollodorus", "homer"],
+    "sources": [
+      "hesiod",
+      "apollodorus",
+      "homer"
+    ],
     "citation": "Hes. Th. 176-206; Apollod. 1.1.4; Hom. Il. 5.370-417"
   },
   "chapters": [
     {
       "title": "What the sickle cast into the sea",
       "text": "The nested chapter on the sickle of Cronus tells how crooked-counselled Cronus unmanned starry Uranus and cast the genitals into the sea. Apollodorus adds that from the drops of flowing blood were born the Furies — Alecto, Tisiphone, and Megaera — while the immortal flesh itself drifted on the waves. This episode follows what the sea received: not the blood-kin of vengeance, but the foam-born goddess of desire.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 176-190; Apollod. 1.1.4"
     },
     {
       "title": "White foam around immortal flesh",
       "text": "For a long time the severed flesh was carried over the sea; and white foam spread around the immortal flesh. Within it there grew a maiden — not born of womb or marriage-bed, but assembled from the wound of heaven and the salt of the deep.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Hes. Th. 190-195"
     },
     {
       "title": "Cythera and Cyprus",
       "text": "First she drew near holy Cythera, and from there she came to sea-girt Cyprus. There she came forth, an awful and lovely goddess, and grass grew up about her beneath her shapely feet — the isles that would forever claim her as Cythera-born and Cyprogenes.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 192-200; Apollod. 1.1.4"
     },
     {
       "title": "Names of foam and crown",
       "text": "Gods and men call her Aphrodite, and the foam-born goddess, and rich-crowned Cytherea, because she grew amid the foam and reached Cythera and was born in billowy Cyprus. Hesiod adds the name Philommedes — laughter-loving — for the genitals that parented her. She went on to Olympus and took her seat among the immortals, quick-glancing and golden.",
-      "sources": ["hesiod"],
+      "sources": [
+        "hesiod"
+      ],
       "citation": "Hes. Th. 195-206"
     },
     {
       "title": "The daughter of Zeus and Dione",
       "text": "Homer knows another lineage entirely. When Diomedes wounded her at Troy, fair Aphrodite fled to the knees of her mother Dione on Olympus, and Dione comforted her child — for in the Iliad the goddess of love is daughter of Zeus and Dione, not foam. Apollodorus lists her among Zeus's children by that goddess. The nested cosmogony beat names her foam-born; here the poets disagree on whether she is heaven's wound or heaven's daughter.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 5.370-417; Apollod. 1.3.1",
       "topic": "aphrodite-parentage"
     },
     {
       "title": "Ourania and Pandemos",
       "text": "Later Greeks would speak of two Aphrodites — Ourania, heavenly, and Pandemos, common to all — to reconcile what Hesiod and Homer could not. In this atlas both traditions stand under the dispute gate: the foam-born who rose at the castration of the sky, and the Olympian daughter who weeps in Dione's arms before returning to the war at Ilion.",
-      "sources": ["hesiod", "homer", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 176-206; Hom. Il. 5.370-417; Apollod. 1.3.1",
       "topic": "aphrodite-parentage"
     }
   ],
   "cast": [
-    { "id": "aphrodite", "name": "Aphrodite", "role": "Foam-born goddess who rose from the sea" },
-    { "id": "cronus", "name": "Cronus", "role": "He who cast the severed flesh into the waves" },
-    { "id": "uranus", "name": "Uranus", "role": "Sky whose wound begat the foam" },
-    { "id": "gaia", "name": "Gaia", "role": "Earth who armed the sickle" },
-    { "id": "zeus", "name": "Zeus", "role": "Father in Homer's account of her birth" },
-    { "id": "dione", "name": "Dione", "role": "Mother in Homer's account who comforted her at Troy" }
+    {
+      "id": "aphrodite",
+      "name": "Aphrodite",
+      "role": "Foam-born goddess who rose from the sea"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "role": "He who cast the severed flesh into the waves"
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "role": "Sky whose wound begat the foam"
+    },
+    {
+      "id": "gaia",
+      "name": "Gaia",
+      "role": "Earth who armed the sickle"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Father in Homer's account of her birth"
+    },
+    {
+      "id": "dione",
+      "name": "Dione",
+      "role": "Mother in Homer's account who comforted her at Troy"
+    }
   ],
   "places": [
-    { "id": "cythera", "name": "Cythera", "role": "First shore the foam-born goddess reached" },
-    { "name": "Cyprus", "role": "Island where she came forth from the sea" }
+    {
+      "id": "cythera",
+      "name": "Cythera",
+      "role": "First shore the foam-born goddess reached"
+    },
+    {
+      "name": "Cyprus",
+      "role": "Island where she came forth from the sea",
+      "id": "salamis-cyprus"
+    }
   ],
   "attestations": [
-    { "source": "hesiod", "work": "Theogony", "citation": "176-206" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.1.4, 1.3.1" },
-    { "source": "homer", "work": "Iliad", "citation": "5.370-417" }
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "176-206"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.1.4, 1.3.1"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "5.370-417"
+    }
   ]
 }

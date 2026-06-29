@@ -1,0 +1,27 @@
+{
+  "id": "pemphredo-graea",
+  "name": "Pemphredo (Graeae)",
+  "greekName": "Pemphrēdō (Πεμφρηδώ)",
+  "romanName": "Pemphredo",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "grey from birth",
+    "sister of the Gorgons",
+    "the well-clad Graia"
+  ],
+  "summary": [
+    {
+      "text": "One of the fair-cheeked Graeae whom Hesiod names beside saffron-robed Enyo as grey-haired daughters of Phorcys and Ceto, sisters of the Gorgons.",
+      "sources": ["hesiod"],
+      "citation": "Theogony 270–276"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets Pemphredo among the children of the sea: 'Ceto bore to Phorcys the fair-cheeked Graiae, sisters grey from their birth — and the Gorgons,' naming Pemphredo well-clad and Enyo saffron-robed. Apollodorus later spells the name Pephredo when he gives the Perseus episode with the shared eye and tooth. The collective node `graeae` holds the two-name and three-name dispute; this node is the individual in Hesiod's roll.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 270–276; Bibliotheca 2.4.2"
+    }
+  ]
+}

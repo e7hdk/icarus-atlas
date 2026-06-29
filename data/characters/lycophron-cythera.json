@@ -25,7 +25,13 @@
   "residences": [
     {
       "city": "cythera",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 15.430–437"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 15.430–437"
     }
   ]
 }

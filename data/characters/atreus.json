@@ -38,6 +38,11 @@
   ],
   "residences": [
     {
+      "city": "pisa-elis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.10; Description of Greece 5.8.2"
+    },
+    {
       "city": "mycenae",
       "sources": ["apollodorus", "pausanias", "hyginus"]
     }

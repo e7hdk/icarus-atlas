@@ -1,0 +1,32 @@
+{
+  "id": "liriope-nymph",
+  "name": "Liriope",
+  "greekName": "Liriopē (Λιριόπη)",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "naiad of the Cephisus",
+    "mother of Narcissus",
+    "Thespiae"
+  ],
+  "summary": [
+    {
+      "text": "A lovely nymph of Aonia whom the river Cephisus entwined in his winding stream; she bore Narcissus, already surpassingly beautiful at birth, and asked Tiresias whether the boy would live to old age.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.339–346"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid makes her the first to test Tiresias' fateful prophecies. The caerulean nymph Liriope came with her son, fifteen years old and already a wonder to the nymphs, whom she had borne where the green merge of Cephissus' stream meets the land — the mighty river-god whom she declared the father of her boy. She implored the seer to say whether Narcissus would reach old age; he answered that he would, if he never recognized himself.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.339–346"
+    },
+    {
+      "text": "Her story lives on the Metamorphoses shelf as `narcissus-echo`, where pride and Nemesis' answer prove the prophecy; Hyginus and Pausanias name only the river Cephisus as Narcissus' father, but Ovid gives the mother her name and her place beside the Boeotian water.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 3.339–510; Fabulae 271; Description of Greece 9.31.7"
+    }
+  ]
+}

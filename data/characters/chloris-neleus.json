@@ -36,6 +36,16 @@
   ],
   "residences": [
     {
+      "city": "orchomenos-boeotia",
+      "sources": ["homer", "pausanias"],
+      "citation": "Odyssey 11.275–296; Description of Greece 9.36.8"
+    },
+    {
+      "city": "thebes",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 9–10"
+    },
+    {
       "city": "pylos",
       "sources": ["homer", "apollodorus"]
     }

@@ -4,7 +4,7 @@
   "greekTitle": "ἡ κάθοδος τῶν Ἡρακλειδῶν",
   "kind": "episode",
   "parent": "heracles-cycle",
-  "era": 6.7,
+  "era": 9.3,
   "summary": {
     "text": "Persecuted by Eurystheus after Heracles' death, the hero's sons at last reclaimed the Peloponnese: Hyllus failed when Echemus slew him, but Temenus, Cresphontes, and Aristodemus cast lots for Argos, Messenia, and Sparta — driving out the Achaean Tisamenus and founding the Dorian royal lines.",
     "sources": ["apollodorus", "pausanias", "homer"],
@@ -32,9 +32,9 @@
     },
     {
       "title": "Argos, Messenia, Sparta",
-      "text": "Temenus took Argos and gave his daughter Hyrnetho to Deiphontes. Cresphontes won Messenia and wed Merope, but the usurper Polyphontes slew him until their son Aepytus avenged the murder. Aristodemus died at Delphi — struck by Apollo's bolt in one account — leaving twin sons Eurysthenes and Procles to found the two Spartan kingships.",
+      "text": "Temenus took Argos and gave his daughter Hyrnetho to Deiphontes. Cresphontes won Messenia and wed Merope, but the usurper Polyphontes slew him until their son Aepytus avenged the murder — Pausanias remembers that Perieres and the earlier Messenian kings had dwelt at Andania before the royal seat moved seaward to Arene and later Stenyclerus. Aristodemus died at Delphi — struck by Apollo's bolt in one account — leaving twin sons Eurysthenes and Procles to found the two Spartan kingships.",
       "sources": ["apollodorus", "pausanias"],
-      "citation": "Apollod. 2.8.2–2.8.5; Paus. 3.1.6, 4.3.3–4.3.7"
+      "citation": "Apollod. 2.8.2–2.8.5; Paus. 3.1.6, 4.1.2, 4.3.3–4.3.7"
     }
   ],
   "cast": [
@@ -63,7 +63,10 @@
     { "id": "argos", "name": "Argos", "role": "Land of Temenus" },
     { "id": "sparta", "name": "Sparta", "role": "Twin thrones of Eurysthenes and Procles" },
     { "id": "mycenae", "name": "Mycenae", "role": "Old seat of Eurystheus" },
-    { "id": "megara", "name": "Megara", "role": "Site of Hyllus' tomb and Eurystheus' fall" }
+    { "id": "megara", "name": "Megara", "role": "Site of Hyllus' tomb and Eurystheus' fall" },
+    { "id": "messene", "name": "Messene", "role": "Kingdom of Cresphontes and the Cresphontid line" },
+    { "id": "andania", "name": "Andania", "role": "Inland Messenian seat of the early Aeolid kings before Arene and Stenyclerus" },
+    { "id": "stenyclarus", "name": "Stenyclarus", "role": "Royal seat where Cresphontes built the Heraclid palace before Polyphontes seized the throne" }
   ],
   "attestations": [
     { "source": "apollodorus", "work": "The Library", "citation": "2.8.1–2.8.5" },

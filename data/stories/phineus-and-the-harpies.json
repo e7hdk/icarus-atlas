@@ -1,0 +1,147 @@
+{
+  "id": "phineus-and-the-harpies",
+  "title": "Phineus and the Harpies",
+  "greekTitle": "Φινεὺς καὶ αἱ Ἅρπυιαι",
+  "kind": "saga",
+  "parent": null,
+  "era": 6.92,
+  "eraEnd": 6.95,
+  "summary": {
+    "text": "At Salmydessus in Thrace the blind seer Phineus, whom the gods tormented with winged snatchers, was freed when Zetes and Calais the Boreads drove the Harpies to the Strophades — Iris swearing by Styx they would trouble him no more — and in return he foretold the Argonauts' passage through the Clashing Rocks.",
+    "sources": [
+      "apollodorus",
+      "apollonius",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 1.9.21–22; Argonautica 2.178–490; Fabulae 19"
+  },
+  "chapters": [
+    {
+      "title": "The blind seer of Salmydessus",
+      "text": "At Salmydessus in Thrace dwelt Phineus, a seer who had lost the sight of both eyes. Some say he was a son of Agenor, others of Poseidon; he is variously alleged to have been blinded by the gods for foretelling men the future too plainly, by Boreas and the Argonauts for blinding his own sons, or by Poseidon because he revealed to the children of Phrixus how they might sail from Colchis to Greece. Apollonius makes him son of Agenor, who above all men endured bitter woes for the gift of prophecy Apollo had granted — for he reverenced not even Zeus, foretelling unerringly the will of heaven until the king of gods in anger took away his sight and sent the long-lived affliction of the Harpies.",
+      "sources": [
+        "apollodorus",
+        "apollonius"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.178–220",
+      "topic": "phineus-blinding"
+    },
+    {
+      "title": "The snatchers at the table",
+      "text": "The gods sent the Harpies against him — winged females who, whenever a table was laid for Phineus, flew down from the sky and snatched up most of the victuals; what little they left stank so that nobody could touch it. Apollonius paints the torment at his door: neighbours brought food when they came to enquire the will of heaven, but the Harpies with crooked beaks incessantly snatched it from his mouth and hands, and poured a loathsome stench over all, so that he wasted away in hunger though food lay before him.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.178–220; Fabulae 14, 19"
+    },
+    {
+      "title": "The chase of the Boreads",
+      "text": "When the Argonauts would have him tell the way, Phineus promised to do so if they freed him from the Harpies. Zetes and Calais, the winged sons of Boreas, pursued the snatchers through the air — as hounds strain after horned deer upon the mountainside, so the Boreads flew, yet the Harpies ever outstripped even the blasts of the west wind when they came to Phineus and when they left him. Hyginus names three tormentors — Aellopous, Celaeno, and Ocypete — and says one fell into a Peloponnesian river called Harpys after her. At last Iris came swift on the wind and swore by the waters of Styx, most dread to all the gods, that the Harpies would never again approach the home of Phineus son of Agenor, for so it was fated; the heroes turned back, and men call those isles the Strophades, the Islands of Turning.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.21; Argonautica 2.262–291; Fabulae 14, 19",
+      "topic": "harpy-names"
+    },
+    {
+      "title": "The oracle of the Clashing Rocks",
+      "text": "Being rid of the Harpies, Phineus revealed to the Argonauts the course of their voyage and advised them about the Symplegades — huge cliffs dashed together by the winds that closed the sea passage. He bade them send a dove through first and row hard in the rocks' wake if she passed; all night he feasted with Jason's crew and told what lay ahead on the road to Colchis. Jason hailed the god who had sent the Boreads to aid the blind prophet; Phineus, sightless still, asked only that death come soon — after death he would take his share in perfect bliss.",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.22; Argonautica 2.301–490; Fabulae 19"
+    }
+  ],
+  "cast": [
+    {
+      "id": "phineus-thrace",
+      "name": "Phineus",
+      "role": "Blind Thracian seer tormented at his table"
+    },
+    {
+      "id": "zetes",
+      "name": "Zetes",
+      "role": "Winged son of Boreas who drove off the Harpies"
+    },
+    {
+      "id": "calais",
+      "name": "Calais",
+      "role": "Winged brother who chased the snatchers to the Strophades"
+    },
+    {
+      "id": "boreas",
+      "name": "Boreas",
+      "role": "North Wind, father of the winged pursuers"
+    },
+    {
+      "id": "aello-harpy",
+      "name": "Aello",
+      "role": "Storm-swift Harpy in Hesiod's roll"
+    },
+    {
+      "id": "ocypete-harpy",
+      "name": "Ocypete",
+      "role": "Swift-flier Harpy driven to the Turning Isles"
+    },
+    {
+      "id": "celaeno-harpy",
+      "name": "Celaeno",
+      "role": "Third Harpy in Hyginus' count at Salmydessus"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "role": "Messenger who swore by Styx for the Harpies' banishment"
+    },
+    {
+      "id": "jason",
+      "name": "Jason",
+      "role": "Captain who won the seer's oracle for the voyage"
+    },
+    {
+      "id": "harpies",
+      "name": "The Harpies",
+      "role": "Collective snatchers of Phineus' food"
+    }
+  ],
+  "places": [
+    {
+      "name": "Salmydessus",
+      "role": "Thracian shore where Phineus kept his oracle",
+      "id": "salmydessus"
+    },
+    {
+      "name": "The Strophades",
+      "role": "Islands of Turning where the Harpies were driven",
+      "id": "strophades"
+    },
+    {
+      "name": "The Symplegades",
+      "role": "Clashing Rocks whose passage Phineus foretold",
+      "featureId": "symplegades"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.9.21–22"
+    },
+    {
+      "source": "apollonius",
+      "work": "Argonautica",
+      "citation": "2.178–490"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "14, 19"
+    }
+  ]
+}

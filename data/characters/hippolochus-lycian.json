@@ -28,6 +28,11 @@
     {
       "city": "xanthus-lycia",
       "sources": ["homer"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 6.195–236"
     }
   ]
 }

@@ -4,47 +4,103 @@
   "greekTitle": "Δηϊάνειρα ἐν τοῖς εὐωχίαις",
   "kind": "episode",
   "parent": "metamorphoses",
-  "era": 7.165,
+  "era": 6.62,
   "summary": {
     "text": "At a harvest feast on the Achelous, the river-god in his own voice told how Heracles wrestled him for Deianira, how Nessus died by the Evenus with a poisoned arrow, and how the centaur's blood on a shirt consumed the hero on Mount Oeta — Ovid's ninth book pausing its march for Achelous' inset tale of love, jealousy, and mistaken charm.",
-    "sources": ["ovid", "apollodorus"],
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
     "citation": "Ov. Met. 9.1–272; Apollod. 2.7.5–7"
   },
   "chapters": [
     {
       "title": "Achelous' feast",
       "text": "Theseus and others had gathered where the Achelous ran high after rain; the river-god, horn restored with fruits by the Naiads, spread a banquet and began to speak. He told how Heracles came to Calydon and wrestled him for Deianira — how the hero broke his horn and won the bride. The full wedding and parentage dispute live on the Heracles shelf; here the river keeps only the contest in his own voice.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 9.1–97; Apollod. 2.7.5"
     },
     {
       "title": "Nessus",
       "text": "Achelous continued: Heracles crossed the Evenus with Deianira, and the centaur Nessus ferried her for hire. Nessus tried to ravish her; the hero shot him with an arrow dipped in the Hydra's gall. Dying, the centaur gave Deianira his blood, swearing it would bind her husband's love if ever it waned — the lie that would undo them both.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 9.101–158; Apollod. 2.7.6"
     },
     {
       "title": "The poisoned robe",
       "text": "When Heracles sacked Oechalia and brought Iole home, Deianira smeared the supposed charm on a robe and sent it by Lichas. The garment clung to his flesh; he tore at his own body on Mount Oeta and ordered a pyre built. Deianira, learning what she had done, hanged herself — and a cloud bore the hero to Olympus to wed Hebe.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 9.159–272; Apollod. 2.7.7"
     }
   ],
   "cast": [
-    { "id": "achelous", "name": "Achelous", "role": "River-god who narrates the inset tale" },
-    { "id": "heracles", "name": "Heracles", "role": "Hero destroyed by Nessus' blood" },
-    { "id": "deianira", "name": "Deianira", "role": "Wife who sent the poisoned robe" },
-    { "id": "nessus", "name": "Nessus", "role": "Centaur whose dying gift was a lie" },
-    { "id": "theseus", "name": "Theseus", "role": "Guest at Achelous' harvest feast" },
-    { "id": "iole", "name": "Iole", "role": "Princess whose coming provoked the shirt" }
+    {
+      "id": "achelous",
+      "name": "Achelous",
+      "role": "River-god who narrates the inset tale"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "Hero destroyed by Nessus' blood"
+    },
+    {
+      "id": "deianira",
+      "name": "Deianira",
+      "role": "Wife who sent the poisoned robe"
+    },
+    {
+      "id": "nessus",
+      "name": "Nessus",
+      "role": "Centaur whose dying gift was a lie"
+    },
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "Guest at Achelous' harvest feast"
+    },
+    {
+      "id": "iole",
+      "name": "Iole",
+      "role": "Princess whose coming provoked the shirt"
+    }
   ],
   "places": [
-    { "id": "calydon", "name": "Calydon", "role": "City of Deianira and the wrestling match" },
-    { "name": "River Evenus", "role": "Crossing where Nessus died" },
-    { "name": "Mount Oeta", "role": "Where Heracles built the pyre" }
+    {
+      "id": "calydon",
+      "name": "Calydon",
+      "role": "City of Deianira and the wrestling match"
+    },
+    {
+      "name": "River Evenus",
+      "role": "Crossing where Nessus died",
+      "featureId": "evenus"
+    },
+    {
+      "name": "Mount Oeta",
+      "role": "Where Heracles built the pyre",
+      "featureId": "mount-oeta"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "9.1–272" },
-    { "source": "apollodorus", "work": "The Library", "citation": "2.7.5–7" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "9.1–272"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "2.7.5–7"
+    }
   ]
 }

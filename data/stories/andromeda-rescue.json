@@ -41,12 +41,12 @@
     { "id": "andromeda", "name": "Andromeda", "role": "The princess chained to the rock" },
     { "id": "cetus", "name": "Cetus", "role": "The sea-beast turned to stone" },
     { "id": "poseidon", "name": "Poseidon", "role": "He who sent the flood and monster" },
-    { "name": "Cepheus", "role": "King of Ethiopia, Andromeda's father" },
-    { "name": "Cassiopeia", "role": "Queen whose boast doomed her daughter" },
-    { "name": "Phineus", "role": "The rejected suitor turned to stone" }
+    { "id": "cepheus-ethiopia", "name": "Cepheus", "role": "King of Ethiopia, Andromeda's father" },
+    { "id": "cassiopeia-ethiopia", "name": "Cassiopeia", "role": "Queen whose boast doomed her daughter" },
+    { "id": "phineus-ethiopia", "name": "Phineus", "role": "The rejected suitor turned to stone" }
   ],
   "places": [
-    { "name": "Ethiopia", "role": "Coast where Andromeda was exposed" },
+    { "id": "aethiopia", "name": "Aethiopia", "role": "Coast where Andromeda was exposed" },
     { "id": "seriphos", "name": "Seriphos", "role": "Where Perseus returned before Argos" }
   ],
   "attestations": [

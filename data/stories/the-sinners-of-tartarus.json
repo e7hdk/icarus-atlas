@@ -1,0 +1,142 @@
+{
+  "id": "the-sinners-of-tartarus",
+  "title": "The Sinners of Tartarus",
+  "greekTitle": "οἱ τιμωρούμενοι ἐν Ταρτάρῳ",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 3.8,
+  "eraEnd": 3.85,
+  "summary": {
+    "text": "In the pit of Tartarus four great offenders endure eternal torment — Tantalus thirsting among unreachable fruit and receding water, Sisyphus rolling his stone forever uphill, Ixion bound to a wheel of fire for his assault on Hera, and Tityus spread for vultures to devour his liver for his offense against Leto.",
+    "sources": [
+      "homer",
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "citation": "Hom. Od. 11.576–600; Apollod. Epit. 2.1; Ov. Met. 4.456–461, 10.42–44; Hyg. Fab. 62"
+  },
+  "chapters": [
+    {
+      "title": "Tantalus",
+      "text": "Homer saw Tantalus in violent torment, standing in a pool where the water rose to his chin — yet whenever the old man stooped to drink, the water was swallowed up and vanished, and whenever he reached for the fruit-laden trees above him, the wind tossed them to the shadowy clouds. Apollodorus adds the impending stone and the lake that touches his jaws without quenching thirst — the son of Zeus who served the gods his own son Pelops at a feast, or who stole nectar and ambrosia for mortal lips.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 11.582–592; Apollod. Epit. 2.1; Hyg. Fab. 82"
+    },
+    {
+      "title": "Sisyphus",
+      "text": "Odysseus saw Sisyphus in violent torment, straining with both hands to heave a monstrous stone toward the crest of a hill — yet as often as he was about to push it over the top, the weight turned back, and he must begin again at the plain below. Apollodorus says he is punished for betraying the secrets of Zeus and for his craftiness in cheating death twice; in Ovid's underworld even his torment pauses when Orpheus' song stilled the dead.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Hom. Od. 11.593–600; Apollod. 1.9.3; Ov. Met. 10.42–44"
+    },
+    {
+      "title": "Ixion",
+      "text": "For wooing Hera, or for boasting he had lain with her, Ixion was bound by Zeus to a wheel of fire that rolls forever through the air. Ovid tells how Juno set a cloud in her likeness — Nephele — and from that deception Ixion begat the Centaurs; the wheel is his everlasting payment for lust aimed at the queen of heaven.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. Epit. 1.20; Ov. Met. 4.456–461; Hyg. Fab. 62"
+    },
+    {
+      "title": "Tityus",
+      "text": "Homer saw Tityus spread over nine acres, and two vultures sat on either side tearing at his liver — punishment for offering violence to Leto as she went toward Pytho through Panopeus. Apollodorus makes him son of Zeus and Elara, or of Gaia; the giant's frame covers the meadow of the dead, and his organ grows again as fast as the birds consume it.",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Hom. Od. 11.576–581; Apollod. 1.4.1; Hyg. Fab. 55",
+      "topic": "tityos-parentage"
+    }
+  ],
+  "cast": [
+    {
+      "id": "tantalus",
+      "name": "Tantalus",
+      "role": "Thirsting beneath unreachable fruit"
+    },
+    {
+      "id": "sisyphus",
+      "name": "Sisyphus",
+      "role": "Heaver of the returning stone"
+    },
+    {
+      "id": "ixion",
+      "name": "Ixion",
+      "role": "Bound to the wheel of fire"
+    },
+    {
+      "id": "tityos",
+      "name": "Tityus",
+      "role": "Giant whose liver the vultures devour"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Judge who fixed Ixion's wheel and Tantalus' pool"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Queen whose likeness Ixion pursued"
+    },
+    {
+      "id": "leto",
+      "name": "Leto",
+      "role": "Mother whom Tityus assaulted on the road to Pytho"
+    },
+    {
+      "id": "tartarus",
+      "name": "Tartarus",
+      "role": "The pit where the torments are endured"
+    }
+  ],
+  "places": [
+    {
+      "name": "Tartarus",
+      "role": "The deepest pit of punishment beneath the house of Hades"
+    },
+    {
+      "name": "Panopeus",
+      "role": "Where Tityus offered violence to Leto",
+      "id": "panopeus"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "11.576–600"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "1.20, 2.1"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.4.1, 1.9.3"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "4.456–461, 10.42–44"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "55, 62, 82"
+    }
+  ]
+}

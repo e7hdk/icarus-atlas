@@ -65,5 +65,30 @@
       ],
       "citation": "Apollodorus, Bibliotheca 1.9.13, 3.7.2; Pausanias, Description of Greece 9.19.2"
     }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.9.13"
+    },
+    {
+      "city": "tegea",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.3, 3.9.2; Fabulae 70"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.6.6, 3.6.8; Description of Greece 9.18.6"
+    }
   ]
 }

@@ -60,5 +60,22 @@
       ],
       "citation": "Apollodorus, Bibliotheca 1.8.2–3; Ovid, Metamorphoses 8.434–444; Pausanias, Description of Greece 8.45.6"
     }
+  ],
+  "residences": [
+    {
+      "city": "pleuron",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.10"
+    },
+    {
+      "city": "calydon",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.190–201"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.638–644; Bibliotheca 1.8.2"
+    }
   ]
 }

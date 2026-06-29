@@ -39,7 +39,23 @@
     },
     {
       "city": "andros",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15"
+    },
+    {
+      "city": "salamis-cyprus",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.676–680; Epitome 3.13"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.676–680"
     }
   ]
 }

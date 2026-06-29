@@ -38,6 +38,11 @@
     {
       "city": "troy",
       "sources": ["apollodorus", "ovid", "hyginus"]
+    },
+    {
+      "city": "salamis",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Bibliotheca 3.12.7; Fabulae 89, 97; Metamorphoses 11.194–217"
     }
   ]
 }

@@ -71,11 +71,27 @@
   "residences": [
     {
       "city": "salamis",
-      "sources": ["homer", "apollodorus", "hyginus"]
+      "sources": ["homer", "apollodorus", "hyginus", "pausanias"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 8.266–291, 13.313–314, 23.859–883; Epitome 5.5"
     },
     {
       "city": "salamis-cyprus",
-      "sources": ["pausanias"]
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 1.3.2, 8.15.7; Epitome 6.15"
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.10.8, 3.12.7; Epitome 3.12"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.557–558"
     }
   ]
 }

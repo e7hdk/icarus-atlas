@@ -28,5 +28,15 @@
       "sources": ["homer"],
       "citation": "Iliad 1"
     }
+  ],
+  "residences": [
+    {
+      "city": "chryse-troad",
+      "sources": ["homer"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    }
   ]
 }

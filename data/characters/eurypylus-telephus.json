@@ -20,7 +20,7 @@
       "citation": "Description of Greece 9.5.15; Odyssey 11.519–521"
     },
     {
-      "text": "Not to be confused with Eurypylus son of Euaemon, lord of Ormenion in the Iliad (`eurypylus-dulichium`), or with Eurypylus king of Cos, son of Poseidon (`eurypylus-cos`).",
+      "text": "Not to be confused with Eurypylus son of Euaemon, lord of Ormenion in the Iliad (`eurypylus-euaemonid`), or with Eurypylus king of Cos, son of Poseidon (`eurypylus-cos`).",
       "sources": [
         "homer",
         "apollodorus"
@@ -59,6 +59,11 @@
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "pausanias"],
+      "citation": "Odyssey 11.519–521; Description of Greece 9.5.15"
     }
   ]
 }

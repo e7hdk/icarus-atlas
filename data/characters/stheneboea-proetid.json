@@ -1,0 +1,60 @@
+{
+  "id": "stheneboea-proetid",
+  "name": "Stheneboea",
+  "greekName": "Stheneboea (Σθενεβοία); Anteia (Ἀντιεία)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Proetus",
+    "the false accusation",
+    "daughter of Iobates"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Iobates of Lycia and wife of Proetus — Homer names her Anteia (Antia), Apollodorus and Hyginus Stheneboea — who lusted for Bellerophon at Tiryns, failed to seduce him, and sent him to her father bearing a sealed death-token; not to be confused with the Arcadian Stheneboea whom Apollodorus elsewhere makes a daughter of Apheidas or Aleus.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 6.155–170; Bibliotheca 2.2.1, 2.3.1; Fabulae 57"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Proetus was driven from Argos he fled to Lycia and married the daughter of King Iobates; Apollodorus names her Stheneboea. After he returned and fortified Tiryns, the purified exile Bellerophon came to his court — and the queen lusted madly for the upright guest, yet could in no wise prevail upon wise-hearted Bellerophon, for that his heart was upright.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.155–163; Bibliotheca 2.2.1, 2.3.1"
+    },
+    {
+      "text": "So she made a tale of lies, telling Proetus to slay Bellerophon or die himself. Wrath seized the king, yet awe of murdering a suppliant stayed his hand: he graved baneful tokens in a folded tablet and sent the hero to Lycia, bidding him show them to his own wife's father, that he might be slain. Homer calls the queen Anteia; Apollodorus and Hyginus call her Stheneboea — one woman, two names in the tradition.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 6.164–170; Bibliotheca 2.3.1; Fabulae 57",
+      "topic": "proetus-wife-name"
+    },
+    {
+      "text": "Hyginus adds that when she heard Bellerophon had married her sister Philonoe and won half the Lycian kingdom, Stheneboea killed herself out of love and shame at her rebuff — the queen's false charge answered by the hero's triumph and her own ruin.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 57, 243"
+    },
+    {
+      "text": "Apollodorus also records an Arcadian Stheneboea — daughter of Apheidas, or in another passage sister of Aleus — given in marriage to Proetus. That genealogical rival must never share this star: the wife of the lying letter is Iobates' daughter from Lycia, not a princess of Tegea.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.2.1, 3.9.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 2.2.1, 2.3.1; Iliad 6.155–170"
+    },
+    {
+      "city": "xanthus-lycia",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "tiryns",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

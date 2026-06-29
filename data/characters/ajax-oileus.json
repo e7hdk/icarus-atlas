@@ -40,5 +40,30 @@
       "sources": ["homer", "apollodorus", "hyginus", "pausanias"],
       "citation": "Iliad 2.527–535; Epitome 5.22, 6.6; Fabulae 116; Description of Greece 10.31.1"
     }
+  ],
+  "residences": [
+    {
+      "city": "opous-locris",
+      "sources": ["homer", "hyginus"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "myconos",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 6.6; Fabulae 116, 276; Description of Greece 10.31.1"
+    },
+    {
+      "city": "delphi",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.26.3, 10.31.1"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.527–535"
+    }
   ]
 }

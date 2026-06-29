@@ -1,0 +1,87 @@
+{
+  "id": "iphis-ianthe",
+  "title": "Iphis and Ianthe",
+  "greekTitle": "Ἶφις καὶ Ἰάνθη",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 5.4,
+  "summary": {
+    "text": "Ligdus of Crete vowed to expose any child that was not a boy; when his wife Telethusa bore a daughter she raised the infant Iphis as a son — until the girl fell in love with Ianthe and prayed to Isis on the eve of the wedding, and the goddess changed Iphis into a man.",
+    "sources": [
+      "ovid"
+    ],
+    "citation": "Ov. Met. 9.666–797"
+  },
+  "chapters": [
+    {
+      "title": "The hidden girl",
+      "text": "Near Phaestus and Gnossus lived Ligdus, poor but honest, and his wife Telethusa. When she was with child he swore to kill the infant if it were a girl, for they could not afford a dowry. Isis appeared to Telethusa in a dream and forbade the exposure; when a daughter was born the mother lied and named her Iphis after the grandfather.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 9.666–720"
+    },
+    {
+      "title": "The betrothal",
+      "text": "Iphis grew up with a girl's face but a boy's dress, and no one suspected the fraud except the nurse. When the time came to marry, Ligdus betrothed Iphis to Ianthe, fairest of the Cretan girls — and Iphis loved her with a love that seemed impossible, for both seemed maidens to the world.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 9.720–760"
+    },
+    {
+      "title": "Isis answers",
+      "text": "On the eve of the wedding Telethusa and Iphis prayed in Isis' temple. The goddess nodded; the horns of the crescent moon shone, and sistrums rattled. When mother and daughter left, Iphis walked with a lengthened stride, darker face, and short hair — a man in form. Venus and Hymenaeus came to the marriage fire, and Iphis took Ianthe as his bride.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 9.760–797"
+    }
+  ],
+  "cast": [
+    {
+      "id": "iphis-crete",
+      "name": "Iphis",
+      "role": "Girl raised as a boy, changed on her wedding eve"
+    },
+    {
+      "id": "ianthe-crete",
+      "name": "Ianthe",
+      "role": "Crete maiden betrothed to Iphis"
+    },
+    {
+      "id": "telethusa",
+      "name": "Telethusa",
+      "role": "Mother who hid the infant's sex"
+    },
+    {
+      "id": "ligdus-crete",
+      "name": "Ligdus",
+      "role": "Father who vowed to expose a daughter"
+    },
+    {
+      "id": "isis",
+      "name": "Isis",
+      "role": "Goddess who granted the change of sex"
+    }
+  ],
+  "places": [
+    {
+      "name": "Phaestus",
+      "role": "Cretan town near Ligdus' home",
+      "id": "phaistos"
+    },
+    {
+      "id": "knossos",
+      "name": "Gnossus",
+      "role": "Crete's great city, neighbour to the tale"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "9.666–797"
+    }
+  ]
+}

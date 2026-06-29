@@ -1,0 +1,32 @@
+{
+  "id": "julius-caesar",
+  "name": "Julius Caesar",
+  "greekName": "Ioulios Kaisar (Ἰούλιος Καῖσαρ)",
+  "romanName": "Julius Caesar",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "dictator of Rome",
+    "the Julian star",
+    "Venus' Trojan line"
+  ],
+  "summary": [
+    {
+      "text": "Roman dictator whom Ovid raises to the stars on a blazing comet after the knives of the Senate — Venus his divine ancestress through the Trojan line, his apotheosis the poet's proof that metamorphosis continues in the age of empire.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.745–850"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid closes his Metamorphoses with Rome: Caesar had fallen to the knives of the Senate, and Venus — Aeneas' ancestress — could not bear to leave him among the shades. She rose to Olympus and begged Jupiter that the Julian star might rise among the gods.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.745–810"
+    },
+    {
+      "text": "Jupiter agreed: Caesar's soul left his body and climbed heavenward on a fiery comet — the sign Romans saw at his funeral games. His temples stand on the ground he ruled; his name outlasts the month that bears it.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.810–850"
+    }
+  ]
+}

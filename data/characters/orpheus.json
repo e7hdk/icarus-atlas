@@ -82,8 +82,18 @@
   ],
   "residences": [
     {
+      "city": "anthemoessa",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.16, 1.9.25; Argonautica 1.23–34, 4.885–919; Fabulae 14"
+    },
+    {
       "city": "lesbos",
-      "sources": ["ovid"]
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.1–99"
     }
   ]
 }

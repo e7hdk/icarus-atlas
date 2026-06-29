@@ -36,5 +36,17 @@
       ],
       "citation": "Bibliotheca 1.9.16; Fabulae 14"
     }
+  ],
+  "residences": [
+    {
+      "city": "gyrton-thessaly",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.735–775; Bibliotheca 1.9.16; Fabulae 14"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
   ]
 }

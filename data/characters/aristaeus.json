@@ -96,6 +96,11 @@
   ],
   "residences": [
     {
+      "city": "thebes",
+      "sources": ["apollodorus", "hesiod"],
+      "citation": "Theogony 975–977; Bibliotheca 3.4.2"
+    },
+    {
       "city": "ceos",
       "sources": ["apollonius"]
     }

@@ -1,0 +1,38 @@
+{
+  "id": "aborigines-italy",
+  "name": "The Aborigines",
+  "greekName": "Aborigines (Ἀβοριγῖνες)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "native Italians",
+    "Aeneas' kingdom",
+    "Latin prehistory"
+  ],
+  "summary": [
+    {
+      "text": "The native Italian people among whom Apollodorus sets Aeneas' kingdom after Troy — the aboriginal stock with whom the Trojan survivor merged his line, seed of the Roman foundation legend in the Epitome's Returns.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.20"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus summarises the Latin tradition in the Nostoi: Aeneas, having escaped with Anchises and Ascanius after Troy was taken, came to Italy to the Aborigines and merged his line with the native kings — the seed from which Rome would claim descent.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.20; Fabulae 120"
+    },
+    {
+      "text": "The name aborigines — 'from the beginning' — marks the pre-Trojan inhabitants of the Italian peninsula in the historiographic tradition Apollodorus abbreviates. Pausanias uses the same word for the Arcadians and Achaeans as autochthonous Peloponnesians; the Italian Aborigines of the Aeneas legend are a separate collective, not to be merged with the Greek ethnographic term.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 6.20; Description of Greece 5.1.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "lavinium",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 6.20; Fabulae 120"
+    }
+  ]
+}

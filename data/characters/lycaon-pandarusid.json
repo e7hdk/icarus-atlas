@@ -26,6 +26,11 @@
   ],
   "residences": [
     {
+      "city": "zeleia-troad",
+      "sources": ["homer"],
+      "citation": "Iliad 2.820–855, 4.85–125"
+    },
+    {
       "city": "troy",
       "sources": ["homer"]
     }

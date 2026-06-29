@@ -1,0 +1,31 @@
+{
+  "id": "emathion-ethiopia",
+  "name": "Emathion",
+  "greekName": "Emathion (Ἠμαθίων)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Tithonus",
+    "Ethiopian kings",
+    "slain in Arabia"
+  ],
+  "summary": [
+    {
+      "text": "Lord Emathion, son of Tithonus and the Dawn, born in Ethiopia beside brazen-crested Memnon — slain by Heracles as he passed through Arabia on the quest for the apples of the Hesperides, distinct from the aged Emathion whom Perseus killed at the feast of Phineus in Ovid.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 984–985; Bibliotheca 2.5.11, 3.12.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod names Emathion among the sons of Eos and Tithonus, brother of Memnon king of the Ethiopians — the lord born when the Dawn snatched Tithonus away for love.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 984–985; Bibliotheca 3.12.4"
+    },
+    {
+      "text": "On his way to fetch the golden apples, Heracles passed through Arabia and slew Emathion son of Tithonus — one of the sons of the Dawn's couch who fell to a greater hero long before Memnon marched to Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.5.11"
+    }
+  ]
+}

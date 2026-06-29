@@ -1,13 +1,21 @@
 import type { Story } from '@/types/story';
 
-/** Top-level sagas that open the inner-cosmos shelf (era 0–2). */
-export const COSMIC_CYCLE_ROOT_IDS = ['cosmogony', 'great-flood'] as const;
+/** The three divine reigns — the succession myth split into its own arms instead of
+ *  one broad "cosmic" lump: Chaos→the Titans, the reign of Cronus, the Olympian order. */
+export const PRIMORDIAL_CYCLE_ROOT_IDS = ['cosmogony'] as const;
+export const TITAN_CYCLE_ROOT_IDS = ['reign-of-cronus'] as const;
+/** The Olympian order under Zeus — the Titanomachy and the younger gods, plus Zeus's
+ *  deluge (great-flood) that resets the ages of man into the heroic age. */
+export const OLYMPIAN_CYCLE_ROOT_IDS = ['titanomachy', 'great-flood'] as const;
 
 /** Top-level saga for the Argonaut voyage shelf (era ~7). */
 export const ARGONAUTICA_ROOT_IDS = ['argonautica'] as const;
 
 /** Top-level saga for the Cadmean house shelf (era ~5–6). */
 export const THEBAN_CYCLE_ROOT_IDS = ['theban-cycle'] as const;
+
+/** Top-level saga for Dionysus' birth, wanderings, and epiphanies (era ~5–7). */
+export const DIONYSUS_CYCLE_ROOT_IDS = ['dionysus-cycle'] as const;
 
 /** Top-level saga for Perseus and the Gorgon quest (era ~5.75–5.85). */
 export const PERSEUS_CYCLE_ROOT_IDS = ['perseus-cycle'] as const;
@@ -28,9 +36,12 @@ export const RETURNS_ROOT_IDS = ['odyssey'] as const;
 export const METAMORPHOSES_ROOT_IDS = ['metamorphoses'] as const;
 
 export type StoryShelfRootId =
-  | (typeof COSMIC_CYCLE_ROOT_IDS)[number]
+  | (typeof PRIMORDIAL_CYCLE_ROOT_IDS)[number]
+  | (typeof TITAN_CYCLE_ROOT_IDS)[number]
+  | (typeof OLYMPIAN_CYCLE_ROOT_IDS)[number]
   | (typeof ARGONAUTICA_ROOT_IDS)[number]
   | (typeof THEBAN_CYCLE_ROOT_IDS)[number]
+  | (typeof DIONYSUS_CYCLE_ROOT_IDS)[number]
   | (typeof PERSEUS_CYCLE_ROOT_IDS)[number]
   | (typeof HERACLES_CYCLE_ROOT_IDS)[number]
   | (typeof THESEUS_CYCLE_ROOT_IDS)[number]
@@ -39,9 +50,12 @@ export type StoryShelfRootId =
   | (typeof METAMORPHOSES_ROOT_IDS)[number];
 
 const SHELF_ROOT_IDS: readonly string[] = [
-  ...COSMIC_CYCLE_ROOT_IDS,
+  ...PRIMORDIAL_CYCLE_ROOT_IDS,
+  ...TITAN_CYCLE_ROOT_IDS,
+  ...OLYMPIAN_CYCLE_ROOT_IDS,
   ...ARGONAUTICA_ROOT_IDS,
   ...THEBAN_CYCLE_ROOT_IDS,
+  ...DIONYSUS_CYCLE_ROOT_IDS,
   ...PERSEUS_CYCLE_ROOT_IDS,
   ...HERACLES_CYCLE_ROOT_IDS,
   ...THESEUS_CYCLE_ROOT_IDS,
@@ -54,10 +68,38 @@ export function storiesById(stories: Story[]): Map<string, Story> {
   return new Map(stories.map((story) => [story.id, story]));
 }
 
-export function isCosmicCycleStory(story: Story, byId: Map<string, Story>): boolean {
+export function isPrimordialStory(story: Story, byId: Map<string, Story>): boolean {
   let current: Story | undefined = story;
   while (current) {
-    if (COSMIC_CYCLE_ROOT_IDS.includes(current.id as (typeof COSMIC_CYCLE_ROOT_IDS)[number])) {
+    if (
+      PRIMORDIAL_CYCLE_ROOT_IDS.includes(
+        current.id as (typeof PRIMORDIAL_CYCLE_ROOT_IDS)[number],
+      )
+    ) {
+      return true;
+    }
+    current = current.parent ? byId.get(current.parent) : undefined;
+  }
+  return false;
+}
+
+export function isTitanCycleStory(story: Story, byId: Map<string, Story>): boolean {
+  let current: Story | undefined = story;
+  while (current) {
+    if (TITAN_CYCLE_ROOT_IDS.includes(current.id as (typeof TITAN_CYCLE_ROOT_IDS)[number])) {
+      return true;
+    }
+    current = current.parent ? byId.get(current.parent) : undefined;
+  }
+  return false;
+}
+
+export function isOlympianCycleStory(story: Story, byId: Map<string, Story>): boolean {
+  let current: Story | undefined = story;
+  while (current) {
+    if (
+      OLYMPIAN_CYCLE_ROOT_IDS.includes(current.id as (typeof OLYMPIAN_CYCLE_ROOT_IDS)[number])
+    ) {
       return true;
     }
     current = current.parent ? byId.get(current.parent) : undefined;
@@ -80,6 +122,17 @@ export function isThebanCycleStory(story: Story, byId: Map<string, Story>): bool
   let current: Story | undefined = story;
   while (current) {
     if (THEBAN_CYCLE_ROOT_IDS.includes(current.id as (typeof THEBAN_CYCLE_ROOT_IDS)[number])) {
+      return true;
+    }
+    current = current.parent ? byId.get(current.parent) : undefined;
+  }
+  return false;
+}
+
+export function isDionysusCycleStory(story: Story, byId: Map<string, Story>): boolean {
+  let current: Story | undefined = story;
+  while (current) {
+    if (DIONYSUS_CYCLE_ROOT_IDS.includes(current.id as (typeof DIONYSUS_CYCLE_ROOT_IDS)[number])) {
       return true;
     }
     current = current.parent ? byId.get(current.parent) : undefined;
@@ -161,13 +214,22 @@ export function childrenOf(stories: Story[], parentId: string): Story[] {
 
 export function partitionStoryShelves(stories: Story[]) {
   const byId = storiesById(stories);
-  const cosmicRoots = COSMIC_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
+  const primordialRoots = PRIMORDIAL_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
+    (story): story is Story => story != null,
+  );
+  const titanRoots = TITAN_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
+    (story): story is Story => story != null,
+  );
+  const olympianRoots = OLYMPIAN_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
     (story): story is Story => story != null,
   );
   const argonautRoots = ARGONAUTICA_ROOT_IDS.map((id) => byId.get(id)).filter(
     (story): story is Story => story != null,
   );
   const thebanRoots = THEBAN_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
+    (story): story is Story => story != null,
+  );
+  const dionysusRoots = DIONYSUS_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
     (story): story is Story => story != null,
   );
   const perseusRoots = PERSEUS_CYCLE_ROOT_IDS.map((id) => byId.get(id)).filter(
@@ -197,9 +259,12 @@ export function partitionStoryShelves(stories: Story[]) {
     .sort((a, b) => a.era - b.era || a.title.localeCompare(b.title));
 
   return {
-    cosmicRoots,
+    primordialRoots,
+    titanRoots,
+    olympianRoots,
     argonautRoots,
     thebanRoots,
+    dionysusRoots,
     perseusRoots,
     heraclesRoots,
     theseusRoots,

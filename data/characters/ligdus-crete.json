@@ -1,0 +1,37 @@
+{
+  "id": "ligdus-crete",
+  "name": "Ligdus",
+  "greekName": "Ligdus (Λίγδος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "husband of Telethusa",
+    "father of Iphis",
+    "the vow to expose a daughter"
+  ],
+  "summary": [
+    {
+      "text": "Poor but honest Cretan near Phaestus who vowed to expose any child that was not a boy — and betrothed his daughter Iphis, raised in boy's dress, to Ianthe before Isis changed the bridegroom on the eve of the wedding.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.666–797"
+    }
+  ],
+  "story": [
+    {
+      "text": "Near Phaestus and Gnossus lived Ligdus, poor but honest, and his wife Telethusa. When she was with child he swore to kill the infant if it were a girl, for they could not afford a dowry — and Isis appeared to Telethusa in a dream forbidding the exposure.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.666–720"
+    },
+    {
+      "text": "When a daughter was born, Telethusa lied and named her Iphis after the grandfather; Ligdus never knew the fraud. He betrothed Iphis to Ianthe, fairest of the Cretan girls — and on the eve of the wedding Isis answered their prayer, changing Iphis into a man in form.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 9.720–797"
+    }
+  ],
+  "residences": [
+    {
+      "city": "knossos",
+      "sources": ["ovid"]
+    }
+  ]
+}

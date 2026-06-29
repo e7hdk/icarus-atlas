@@ -42,16 +42,28 @@
   ],
   "residences": [
     {
+      "city": "dardanus-city",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.819–855; Bibliotheca 3.12.2"
+    },
+    {
       "city": "troy",
       "sources": ["homer", "apollodorus", "ovid", "hyginus"]
     },
     {
+      "city": "antandros",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.623–639"
+    },
+    {
       "city": "lavinium",
-      "sources": ["ovid", "pausanias", "hyginus"]
+      "sources": ["apollodorus", "ovid", "pausanias", "hyginus"],
+      "citation": "Epitome 6.20; Metamorphoses 14.639–762; Description of Greece 3.22.11; Fabulae 273"
     },
     {
       "city": "cumae",
-      "sources": ["ovid"]
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.154–335"
     }
   ]
 }

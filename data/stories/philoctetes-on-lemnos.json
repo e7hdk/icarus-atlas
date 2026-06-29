@@ -82,6 +82,7 @@
       "role": "Archer abandoned on Lemnos with Heracles' bow"
     },
     {
+      "id": "poeas",
       "name": "Poeas",
       "role": "Father who lit the pyre in Apollodorus' telling"
     },
@@ -106,10 +107,12 @@
       "role": "God at whose sacrifice the snake struck"
     },
     {
-      "name": "Juno",
-      "role": "Goddess who sent the snake in Hyginus' account"
+      "id": "hera",
+      "name": "Hera",
+      "role": "Juno, goddess who sent the snake in Hyginus' account"
     },
     {
+      "id": "calchas-thestor",
       "name": "Calchas",
       "role": "Seer whose later oracle would name the bow indispensable"
     },
@@ -119,6 +122,7 @@
       "role": "Named with Odysseus for the future fetch"
     },
     {
+      "id": "podalirius",
       "name": "Podalirius",
       "role": "Healer who would cure the wound at Troy"
     },
@@ -136,11 +140,28 @@
     },
     {
       "name": "Mount Oeta",
-      "role": "Where Heracles' pyre earned the bow"
+      "role": "Where Heracles' pyre earned the bow",
+      "featureId": "mount-oeta"
     },
     {
       "name": "Meliboea",
-      "role": "Thessalian coast Homer named as his muster-place"
+      "role": "Thessalian coast Homer named as his muster-place",
+      "id": "meliboea-magnesia"
+    },
+    {
+      "name": "Methone",
+      "role": "Magnesian polis in the Catalogue of Ships",
+      "id": "methone-magnesia"
+    },
+    {
+      "name": "Thaumacia",
+      "role": "Coastal town mustered under Philoctetes",
+      "id": "thaumacia-magnesia"
+    },
+    {
+      "name": "Olizon",
+      "role": "Rugged harbour of the Olizonians",
+      "id": "olizon-magnesia"
     },
     {
       "id": "troy",

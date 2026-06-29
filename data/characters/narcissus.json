@@ -1,0 +1,38 @@
+{
+  "id": "narcissus",
+  "name": "Narcissus",
+  "greekName": "Nárkissos (Νάρκισσος)",
+  "romanName": "Narcissus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the narcissus flower",
+    "the pool at Thespiae",
+    "self-love",
+    "Tiresias' prophecy"
+  ],
+  "summary": [
+    {
+      "text": "Son of the river Cephisus and the nymph Liriope, surpassingly beautiful at fifteen — Tiresias prophesied he would live to old age only if he never knew himself; scorning Echo and all lovers, he fell in love with his own reflection and wasted away into the flower that bears his name.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 3.339–510; Fabulae 271; Description of Greece 9.31.7–8"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid tells his birth on the Cephisus. The river entwined Liriope in his winding stream and got her with child; she bore a boy the nymphs could love even in infancy, and named him Narcissus. When she asked Tiresias whether he would reach old age, the seer answered: if he but fail to recognize himself, a long life he may have — words that seemed idle until pride proved them true.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.339–346"
+    },
+    {
+      "text": "He mocked every suitor, male and female. Echo loved him and was scorned; a rejected youth prayed that Narcissus might love and not obtain, and Nemesis heard. At a fountain no beast had troubled he stooped to drink, saw his own face, and pined at the edge — speaking, being answered, reaching for kisses the pool returned, unable to leave the treacherous image.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 3.347–436"
+    },
+    {
+      "text": "When he knew he loved himself and could not live without that love, he died; the nymphs found only a flower with a yellow centre and white petals. Hyginus names him among the beautiful boys of myth, son of Cephisus, who loved himself. Pausanias knew the spring at Thespiae where he looked into the water, and records a lesser tale of a twin sister he grieved as though she were his reflection.",
+      "sources": ["ovid", "hyginus", "pausanias"],
+      "citation": "Metamorphoses 3.437–510; Fabulae 271; Description of Greece 9.31.7–8"
+    }
+  ]
+}

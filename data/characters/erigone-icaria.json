@@ -1,0 +1,55 @@
+{
+  "id": "erigone-icaria",
+  "name": "Erigone",
+  "greekName": "Ērigonē (Ἠριγόνη)",
+  "romanName": "Erigone",
+  "type": "mortal",
+  "domains": [
+    "daughter of Attic Icarius",
+    "the maiden of the Aiora",
+    "Virgo among the stars"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Daughter of Icarius of Attica, she searched for her father when he did not return from showing wine to the shepherds; the dog Maera led her to his unburied body, and she hanged herself in grief — whereupon Dionysus afflicted Athens until the swinging rites of the Aiora were instituted in her honour, and she was set in heaven as the sign Virgo.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.14.7; Fabulae 130"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Erigone was searching for her father, Apollodorus says, the domestic dog Maera, which had attended Icarius, discovered his dead body to her; she bewailed her father and hanged herself.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.7"
+    },
+    {
+      "text": "Hyginus has her travel with Icarius and Maera in the wagon that carried wine through Attica. After the shepherds killed her father, Maera howled over the slain body and showed Erigone where he lay unburied; she killed herself by hanging in a tree over her father's corpse.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 130"
+    },
+    {
+      "text": "Because of her death Father Liber afflicted the daughters of the Athenians with the same punishment until Apollo's oracle declared the city had neglected Icarius and Erigone. The Athenians punished the shepherds and, in honour of Erigone, instituted a festival day of swinging and decreed grape-harvest libations to both father and daughter. Erigone became the sign Virgo, whom Hyginus calls Justice.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 130, 224, 243, 254"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

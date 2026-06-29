@@ -41,18 +41,36 @@ class PolylineCurve extends THREE.Curve<THREE.Vector3> {
  *  end dissolves softly into space instead of stopping at an ugly hard cap. */
 const LINE_VERT = /* glsl */ `
 varying vec2 vUv;
+#ifdef USE_FOG
+  varying float vFogDepth;
+#endif
 void main() {
   vUv = uv;
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+  gl_Position = projectionMatrix * mvPosition;
+  #ifdef USE_FOG
+    vFogDepth = -mvPosition.z;
+  #endif
 }
 `;
 const LINE_FRAG = /* glsl */ `
 uniform vec3 uColor;
 uniform float uOpacity;
 varying vec2 vUv;
+#ifdef USE_FOG
+  uniform vec3 fogColor;
+  uniform float fogDensity;
+  varying float vFogDepth;
+#endif
 void main() {
   float fade = 1.0 - smoothstep(0.88, 1.0, vUv.x);
   gl_FragColor = vec4(uColor, uOpacity * fade);
+  #ifdef USE_FOG
+    // World-lines far down the corridor sink into the dark, so the eye reads depth.
+    float fogFactor = clamp(1.0 - exp(-fogDensity * fogDensity * vFogDepth * vFogDepth), 0.0, 1.0);
+    gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
+    gl_FragColor.a *= (1.0 - fogFactor);
+  #endif
 }
 `;
 
@@ -76,8 +94,43 @@ const WorldLine = memo(function WorldLine({
   const { geometry, material, pickGeometry } = useMemo(() => {
     const pts = node.points.map((p) => new THREE.Vector3(p[0], p[1], p[2]));
     const curve = new PolylineCurve(pts);
-    const radius = 0.07 + node.size * 0.05;
-    const geometry = new THREE.TubeGeometry(curve, Math.max(16, pts.length * 2), radius, 8, false);
+    // A saga-root's thread is the long structural SPINE that runs the arm's whole
+    // length — left thick it reads as a parallel rod next to its neighbours. Keep it
+    // SLIM (and faint, below) so the spine recedes and the bright branching children
+    // are what the eye follows; an episode/leaf branch stays full-bodied.
+    const radius = node.isSagaRoot ? 0.055 : 0.07 + node.size * 0.05;
+    const tubular = Math.max(16, pts.length * 2);
+    const geometry = new THREE.TubeGeometry(curve, tubular, radius, 8, false);
+    // Taper the tube from a full base at the star (u=0) down to a thin wisp at the
+    // tip (u=1), so a thread reads as an organic branch/tendril that narrows as it
+    // runs out — not a uniform parallel rod. Each TubeGeometry ring has radial+1
+    // verts; its centre is their mean, and we scale every vert toward that centre.
+    const radial = 8 + 1;
+    const pos = geometry.attributes.position as THREE.BufferAttribute;
+    for (let i = 0; i <= tubular; i += 1) {
+      let cx = 0;
+      let cy = 0;
+      let cz = 0;
+      for (let j = 0; j < radial; j += 1) {
+        const v = i * radial + j;
+        cx += pos.getX(v);
+        cy += pos.getY(v);
+        cz += pos.getZ(v);
+      }
+      cx /= radial;
+      cy /= radial;
+      cz /= radial;
+      const u = i / tubular;
+      const taper = 0.34 + 0.66 * (1 - u) ** 1.4;
+      for (let j = 0; j < radial; j += 1) {
+        const v = i * radial + j;
+        pos.setX(v, cx + (pos.getX(v) - cx) * taper);
+        pos.setY(v, cy + (pos.getY(v) - cy) * taper);
+        pos.setZ(v, cz + (pos.getZ(v) - cz) * taper);
+      }
+    }
+    pos.needsUpdate = true;
+    geometry.computeVertexNormals();
     // A fat, invisible companion tube is the real pointer target — the visible
     // thread is far too thin to raycast reliably, which is why some lines felt
     // un-clickable. Cheap radial resolution: it is never drawn, only picked.
@@ -93,16 +146,21 @@ const WorldLine = memo(function WorldLine({
       fragmentShader: LINE_FRAG,
       transparent: true,
       depthWrite: false,
-      uniforms: {
+      fog: true,
+      uniforms: Object.assign(THREE.UniformsUtils.clone(THREE.UniformsLib.fog), {
         uColor: { value: new THREE.Color(node.color) },
         uOpacity: { value: 0.6 },
-      },
+      }),
     });
     return { geometry, material, pickGeometry };
-  }, [node.points, node.size, node.color]);
+  }, [node.points, node.size, node.color, node.isSagaRoot]);
 
   const emphasized = hovered || selected;
-  const opacity = emphasized ? 0.95 : attested ? 0.6 : 0.14;
+  const base = emphasized ? 0.95 : attested ? 0.6 : 0.14;
+  // Fade the long saga-root spines back so they read as quiet connective tissue, not
+  // bright parallel rods — but bring them to full when hovered/selected so they stay
+  // legible and clickable.
+  const opacity = node.isSagaRoot && !emphasized ? base * 0.42 : base;
   material.uniforms.uOpacity.value = opacity;
 
   return (

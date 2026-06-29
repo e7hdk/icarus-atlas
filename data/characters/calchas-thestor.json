@@ -32,5 +32,37 @@
       "sources": ["apollodorus"],
       "citation": "Epitome 6.2–6.4"
     }
+  ],
+  "residences": [
+    {
+      "city": "aulis-boeotia",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 1.68–92, 2.322–332; Epitome 3.21"
+    },
+    {
+      "city": "troy",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 1.68–120, 2.322–332; Epitome 3.21"
+    },
+    {
+      "city": "colophon",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.2–6.4"
+    },
+    {
+      "city": "notium",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Epitome 6.4"
+    }
   ]
 }

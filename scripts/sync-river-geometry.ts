@@ -582,6 +582,40 @@ const SCYLLA_CHARYBDIS_STATIONS: LonLat[] = [
   [15.28, 38.21],
 ];
 
+/** Bosporus northern mouth — Propontis (SW) to Euxine (NE), Cyanean / Clashing Rocks reach. */
+const SYMPLEGADES_STATIONS: LonLat[] = [
+  [29.02, 41.06],
+  [29.04, 41.1],
+  [29.06, 41.14],
+  [29.08, 41.18],
+  [29.1, 41.22],
+];
+
+/** Euboean reef off Cape Gyraion — where Poseidon split the rock beneath Locrian Ajax. */
+const GYRAEAN_ROCKS_STATIONS: LonLat[] = [
+  [24.04, 38.82],
+  [24.08, 38.86],
+  [24.12, 38.89],
+  [24.16, 38.91],
+  [24.2, 38.93],
+];
+
+/** Southern Euboea — Cape Geraestus (Kavo Doro) and the Myrtoan strait reach. */
+const CAPE_GERAESTUS_STATIONS: LonLat[] = [
+  [24.02, 38.38],
+  [24.05, 38.36],
+  [24.08, 38.34],
+];
+
+/** Euboean reef below Cape Caphereus (Kafireas) — Nauplius' false beacon and the fleet-wreck. */
+const CAPHERIAN_ROCKS_STATIONS: LonLat[] = [
+  [24.58, 38.24],
+  [24.62, 38.28],
+  [24.66, 38.32],
+  [24.69, 38.35],
+  [24.72, 38.37],
+];
+
 /** Argive Inachus — hills above Argos to the Gulf of Argos (authored spine; OSM batch later). */
 const INACHUS_STATIONS: LonLat[] = [
   [22.528, 37.872],
@@ -724,6 +758,9 @@ const PLEISTOS_STATIONS: LonLat[] = [
  *  Wide enough for the whole Greek+lower-Bulgarian stem; excludes stray ways. */
 const STRYMON_OSM_BBOX: [number, number, number, number] = [22.9, 40.6, 24.05, 42.25];
 
+/** Maritsa/Evros/Hebrus — Rhodope source through Edirne to the Aegean delta. */
+const HEBRUS_OSM_BBOX: [number, number, number, number] = [24.5, 40.5, 27.0, 42.0];
+
 const STRYMON_STATIONS: LonLat[] = [
   [23.2, 41.65],
   [23.35, 41.45],
@@ -731,6 +768,17 @@ const STRYMON_STATIONS: LonLat[] = [
   [23.68, 41.0],
   [23.78, 40.88],
   [23.88, 40.78],
+];
+
+/** Authored fallback when OSM/NE fetch fails — Edirne reach to the delta. */
+const HEBRUS_STATIONS: LonLat[] = [
+  [24.85, 41.65],
+  [25.2, 41.58],
+  [25.75, 41.52],
+  [26.55, 41.67],
+  [26.35, 41.25],
+  [26.05, 41.0],
+  [25.98, 40.85],
 ];
 
 const HALYS_STATIONS: LonLat[] = [
@@ -955,6 +1003,10 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
   },
   hellespont: () => chaikinSmooth(HELLESPONT_STATIONS, 2),
   'scylla-charybdis': () => chaikinSmooth(SCYLLA_CHARYBDIS_STATIONS, 2),
+  symplegades: () => chaikinSmooth(SYMPLEGADES_STATIONS, 2),
+  'gyraean-rocks': () => chaikinSmooth(GYRAEAN_ROCKS_STATIONS, 2),
+  'capherian-rocks': () => chaikinSmooth(CAPHERIAN_ROCKS_STATIONS, 2),
+  'cape-geraestus': () => chaikinSmooth(CAPE_GERAESTUS_STATIONS, 2),
   inachus: () =>
     osmFromAutoCache('inachus', ANCHORS.inachus, () =>
       extendToMouth(
@@ -1090,6 +1142,27 @@ const SOURCES: Record<string, () => LonLat[] | null> = {
       neRiverNamed('Struma', [22.5, 40.0, 24.5, 42.0]) ?? chaikinSmooth(STRYMON_STATIONS, 2),
       ANCHORS.strymon.mouth!,
       ANCHORS.strymon.mouthMaxDistKm!,
+    ),
+  hebrus: () =>
+    buildOsmRiverFromFiles(
+      'hebrus.json',
+      HEBRUS_OSM_BBOX,
+      ANCHORS.hebrus,
+      9,
+      500,
+      (w) =>
+        w.tags?.name === 'Έβρος' ||
+        w.tags?.name === 'Evros' ||
+        w.tags?.name === 'Maritsa' ||
+        w.tags?.name === 'Meriç' ||
+        w.tags?.name === 'Марица',
+    ) ??
+    extendToMouth(
+      neRiverNamed('Evros', HEBRUS_OSM_BBOX) ??
+        neRiverNamed('Maritsa', HEBRUS_OSM_BBOX) ??
+        chaikinSmooth(HEBRUS_STATIONS, 2),
+      ANCHORS.hebrus.mouth!,
+      ANCHORS.hebrus.mouthMaxDistKm!,
     ),
   halys: () =>
     osmFromAutoCache('halys', ANCHORS.halys, () => {

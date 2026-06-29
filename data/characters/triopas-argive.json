@@ -1,0 +1,54 @@
+{
+  "id": "triopas-argive",
+  "name": "Triopas",
+  "greekName": "Triopas (Τριόπας)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "father of Iasus and Agenor"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Phorbas and king of Argos in Pausanias' native succession; father of Iasus and Agenor, and ancestor of Io and of the seer line through his daughter in later genealogies.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "Not Triopas the Thessalian king whom Hyginus sets among the stars for tearing down Ceres' temple, nor Pelasgus son of Triopas who first built Olympian Zeus' shrine in Arcadia.",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Astronomica 2.14.4–5; Fabulae 225; Description of Greece 2.22.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "In the Argive king-list Pausanias reports, Phorbas begat Triopas, and Triopas begat Iasus and Agenor. After Iasus, Crotopus son of Agenor came to the throne and begat Sthenelas, until Danaus sailed from Egypt against Gelanor and seized the kingdom.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "Hyginus' genealogical preface compresses the same early Argive house differently — Triopas appears from Piranthus and Callirhoe in one branch, and a Thessalian Triopas stands apart in the astral myths — but the Argive king whom Pausanias places between Phorbas and Iasus belongs to the native succession at Argos.",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Fabulae 145; Description of Greece 2.16.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    }
+  ]
+}

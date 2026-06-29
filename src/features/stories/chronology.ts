@@ -46,7 +46,7 @@ function interpolate(era: number, cps: { era: number; year: number }[]): number 
 }
 
 /** Maps every story to a BC year (negative) for the Spindle's chronology axis, or
- *  `null` for the timeless divine prologue — the cosmogony subtree, which no Greek
+ *  `null` for the timeless divine prologue — the three divine reigns, which no Greek
  *  chronographer dates (see docs/CHRONOLOGY.md). The mapping is per-saga: each
  *  cycle is a coherent lineage whose era order IS its chronological order, so its
  *  unanchored episodes interpolate between that saga's own dated anchors. (A global
@@ -81,7 +81,12 @@ export function buildChronologyYears(
     timeless.add(id);
     for (const kid of childrenOf.get(id) ?? []) markTimeless(kid.id);
   };
-  if (byId.has('cosmogony')) markTimeless('cosmogony');
+  // The whole divine prologue is timeless — the three reigns (primordial / Titan /
+  // Olympian), which no Greek chronographer dates. (great-flood and the ages of man
+  // are NOT here: they fall in the dated mortal corridor.)
+  for (const root of ['cosmogony', 'reign-of-cronus', 'titanomachy']) {
+    if (byId.has(root)) markTimeless(root);
+  }
 
   // 3. Group by saga and interpolate each story from that saga's anchors.
   const bySaga = new Map<SagaId, Story[]>();

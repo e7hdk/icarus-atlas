@@ -1,0 +1,34 @@
+{
+  "id": "enceladus-giant",
+  "name": "Enceladus (Gigantes)",
+  "greekName": "Enkelados (Ἐγκέλαδος)",
+  "romanName": "Enceladus",
+  "type": "creature",
+  "kinds": ["giant"],
+  "cluster": "chthonic",
+  "domains": [
+    "assault on heaven",
+    "crushed beneath Sicily",
+    "the Gigantomachy"
+  ],
+  "summary": [
+    {
+      "text": "One of the earthborn Giants whom Athena crushed by throwing the island of Sicily upon him as he fled; Pausanias preserves the tradition at Tegea.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.6.2; Description of Greece 8.47.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Enceladus fled in the Gigantomachy, but Athena threw on him in his flight the island of Sicily. Pausanias, at Tegea, records that Athena drove her chariot against Enceladus and crushed him beneath the island — the same earthborn foe of the Gigantomachy, not the Egyptian king of the same name.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.6.2; Description of Greece 8.47.1",
+      "topic": "gigantes-parentage"
+    },
+    {
+      "text": "Apollodorus elsewhere names an Enceladus, one of the sons of Aegyptus, slain by the Danaids — a wholly different figure from this earthborn Giant (`Bibliotheca 2.1.5`).",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.1.5; Bibliotheca 1.6.2"
+    }
+  ]
+}

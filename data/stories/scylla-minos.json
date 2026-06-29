@@ -33,7 +33,7 @@
   "cast": [
     { "id": "scylla-nisus", "name": "Scylla", "role": "Daughter of Nisus who betrayed Megara for Minos" },
     { "id": "minos", "name": "Minos", "role": "Cretan king who besieged the city" },
-    { "name": "Nisus", "role": "King of Megara, whose purple lock guarded the realm" }
+    { "id": "nisus", "name": "Nisus", "role": "King of Megara, whose purple lock guarded the realm" }
   ],
   "places": [
     { "id": "megara", "name": "Megara", "role": "City betrayed for love of the besieger" },

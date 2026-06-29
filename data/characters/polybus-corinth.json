@@ -1,0 +1,38 @@
+{
+  "id": "polybus-corinth",
+  "name": "Polybus",
+  "greekName": "Polybos (Πόλυβος)",
+  "romanName": "Polybus",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Corinth",
+    "foster father of Oedipus"
+  ],
+  "summary": [
+    {
+      "text": "King of Corinth whose neatherds found the exposed infant on Cithaeron and brought him to Queen Periboea; the royal pair raised the boy as their own son, naming him Oedipus for his swollen ankles.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    },
+    {
+      "text": "Not to be confused with wise Polybus of Ithaca among the suitors, Polybus son of Antenor at Troy, the Zacynthian suitor in Apollodorus' catalogue, nor with any other Polybus figure — this is the Corinthian king of the Oedipus saga.",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 3.5.7; Odyssey 22.210–290"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Laius exposed his infant on Mount Cithaeron, the herdsman set the child out as commanded — but the neatherds of Polybus, king of Corinth, discovered him and brought him to Periboea. She healed his pierced ankles, passed him off as her own, and called him Oedipus. He grew up at Corinth believing Polybus and Periboea were his true parents until taunts drove him to Delphi.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    }
+  ],
+  "residences": [
+    {
+      "city": "corinth",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    }
+  ]
+}

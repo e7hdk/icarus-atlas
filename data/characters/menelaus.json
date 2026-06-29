@@ -41,8 +41,58 @@
   ],
   "residences": [
     {
+      "city": "pisa-elis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 2.10; Description of Greece 5.8.2"
+    },
+    {
       "city": "sparta",
       "sources": ["homer", "apollodorus", "pausanias"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.581–590; Epitome 3.12"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer", "hyginus"],
+      "citation": "Epitome 3.11–3.12, 3.21; Iliad 2.559–580; Fabulae 98"
+    },
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.17; Iliad 4.404–410"
+    },
+    {
+      "city": "sicyon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 2.15"
+    },
+    {
+      "city": "knossos",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.50–95; Epitome 6.29"
+    },
+    {
+      "city": "salamis-cyprus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.50–95; Epitome 6.29"
+    },
+    {
+      "city": "mycenae",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.23"
+    },
+    {
+      "city": "memphis",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.50–95, 4.351–484; Epitome 6.29"
+    },
+    {
+      "city": "pharos",
+      "sources": ["homer", "hyginus"],
+      "citation": "Odyssey 4.351–484; Fabulae 118"
     }
   ]
 }

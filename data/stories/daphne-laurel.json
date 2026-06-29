@@ -7,50 +7,102 @@
   "era": 4.01,
   "summary": {
     "text": "Proud of slaying Python, Apollo mocked Cupid's bow — and the boy answered with a golden shaft for the god and a leaden one for the river-nymph Daphne, who fled Phoebus along the Thessalian streams until her body became the laurel tree that crowns him still.",
-    "sources": ["hyginus", "ovid"],
+    "sources": [
+      "hyginus",
+      "ovid"
+    ],
     "citation": "Ov. Met. 1.452–567, 577–687, 688–748; Hyg. Fab. 203"
   },
   "chapters": [
     {
       "title": "Cupid's revenge",
       "text": "When Phoebus boasted that his bow was fit for beasts and Python's slayer alone, Cupid pierced the god with a golden arrow of love and struck Daphne daughter of the river Peneus with lead that repelled desire — so Apollo burned for the maiden who would have none of men.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 1.452–567"
     },
     {
       "title": "The chase",
       "text": "Daphne had prayed her father to let her live unwed like Diana; but when Apollo saw her he pursued as a hound runs a hare, calling that he was no enemy but a god whose oracles the world obeyed. She fled, and he gained until his breath stirred her hair.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 1.577–687"
     },
     {
       "title": "The laurel",
       "text": "Spent and pale, Daphne looked to her father's waves and prayed: destroy the beauty that harms me, or change the body that destroys my life. Before the prayer ended bark closed her breast, her hair became leaves, her arms branches, her feet roots — and Phoebus, though she could not be his bride, made the laurel his tree forever, wreathed on lyre and brow. Hyginus tells it otherwise: she begged Earth for protection, and Earth received her and changed her into a laurel, which Apollo broke and placed upon his head.",
-      "sources": ["hyginus", "ovid"],
+      "sources": [
+        "hyginus",
+        "ovid"
+      ],
       "citation": "Ov. Met. 1.688–748; Hyg. Fab. 203",
       "topic": "daphne-transformation-agent"
     },
     {
       "title": "Another Daphne on the Ladon",
       "text": "Pausanias knew poets who sang Apollo's love for Daphne, but also an Arcadian tale of a different maiden of that name on the river Ladon — loved in secret by Leucippus disguised as a girl, until the huntresses stripped him and killed him with javelins when Apollo grew jealous. The laurel-nymph of Thessaly and the huntress of Arcadia must not be confused.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Paus. 8.20.1–4"
     }
   ],
   "cast": [
-    { "id": "apollo", "name": "Apollo", "role": "Phoebus, pursuer turned mourner of the laurel" },
-    { "id": "eros", "name": "Eros", "role": "Cupid, who punished Apollo's pride" },
-    { "id": "daphne-nymph", "name": "Daphne", "role": "River-nymph who became the laurel tree" },
-    { "name": "Peneus", "role": "River-god, father of Daphne" }
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Phoebus, pursuer turned mourner of the laurel"
+    },
+    {
+      "id": "eros",
+      "name": "Eros",
+      "role": "Cupid, who punished Apollo's pride"
+    },
+    {
+      "id": "daphne-nymph",
+      "name": "Daphne",
+      "role": "River-nymph who became the laurel tree"
+    },
+    {
+      "id": "peneus",
+      "name": "Peneus",
+      "role": "River-god, father of Daphne"
+    }
   ],
   "places": [
-    { "name": "Tempe", "role": "Thessalian vale where the Peneus flows" },
-    { "name": "Parnassus", "role": "Peak where Cupid shot his arrows" },
-    { "name": "Thessaly", "role": "Land of Daphne's flight" }
+    {
+      "name": "Tempe",
+      "role": "Thessalian vale where the Peneus flows",
+      "featureId": "peneus"
+    },
+    {
+      "name": "Parnassus",
+      "role": "Peak where Cupid shot his arrows",
+      "featureId": "mount-parnassus"
+    },
+    {
+      "name": "Thessaly",
+      "role": "Land of Daphne's flight",
+      "id": "larisa"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "1.452–748" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "203" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "8.20.1–4" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "1.452–748"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "203"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "8.20.1–4"
+    }
   ]
 }

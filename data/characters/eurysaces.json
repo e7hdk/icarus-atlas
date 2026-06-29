@@ -1,0 +1,37 @@
+{
+  "id": "eurysaces",
+  "name": "Eurysaces",
+  "greekName": "Eurysakēs (Εὐρυσάκης)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Ajax",
+    "Salamis",
+    "the broad shield"
+  ],
+  "summary": [
+    {
+      "text": "Son of Ajax son of Telamon — the child left behind on Salamis when Teucer pleaded his innocence before their father in the greater Ajax's death, and ancestor of Philaeus who later gave the island to the Athenians.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.35.2–1.35.3"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Teucer returned from Troy without his half-brother, Telamon drove him from Salamis for failing to protect Ajax or avenge him — and Eurysaces, Ajax's young son, stood in the accusation as the heir left on the island while the archer founded a second Salamis on Cyprus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 5.5–5.7; Description of Greece 1.35.2–1.35.3"
+    },
+    {
+      "text": "Pausanias saw on Salamis the altar of Ajax and his statue in ebony, and says the Athenians even in his day paid honours to Ajax and to Eurysaces — for there is an altar of Eurysaces also at Athens. Philaeus son of Eurysaces later handed Salamis over to the Athenians, having been made an Athenian by them.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.35.2–1.35.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "salamis",
+      "sources": ["pausanias", "apollodorus"]
+    }
+  ]
+}

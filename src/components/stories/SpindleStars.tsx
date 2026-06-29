@@ -118,6 +118,12 @@ export function SpindleStars({
       vertexShader: CORE_VERT,
       fragmentShader: CORE_FRAG,
       transparent: true,
+      // Depth fog: stars far down the corridor dissolve into the dark (see scene fog
+      // in MythsSpindleView). fog:true + the fog uniforms light up the shader's
+      // #ifdef USE_FOG path; the galaxy reuses these shaders but sets no fog, so it
+      // compiles the fog out and is unaffected.
+      fog: true,
+      uniforms: THREE.UniformsUtils.clone(THREE.UniformsLib.fog),
     });
     const glowTexture = makeGlowTexture();
     const glowMat = new THREE.ShaderMaterial({
@@ -126,7 +132,10 @@ export function SpindleStars({
       transparent: true,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
-      uniforms: { uMap: { value: glowTexture } },
+      fog: true,
+      uniforms: Object.assign(THREE.UniformsUtils.clone(THREE.UniformsLib.fog), {
+        uMap: { value: glowTexture },
+      }),
     });
     const hitMat = new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false });
 

@@ -1,0 +1,47 @@
+{
+  "id": "chrysopelia-naiad",
+  "name": "Chrysopelia",
+  "greekName": "Chrysopelia (Χρυσοπέλεια)",
+  "type": "nymph",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Arcadian consort of Arcas",
+    "mother of Elatus and Aphidas",
+    "Eumelus' some-say line"
+  ],
+  "summary": [
+    {
+      "text": "A nymph whom Eumelus names as the mother of Arcas' two sons Elatus and Aphidas — Apollodorus' third some-say beside Leanira daughter of Amyclas and Meganira daughter of Croco.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "In Apollodorus' Arcadian roll, Arcas had two sons, Elatus and Aphidas, by Leanira daughter of Amyclas, or by Meganira daughter of Croco, or — according to Eumelus — by the nymph Chrysopelia. The brothers divided the land between them, but Elatus held all the power.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.1",
+      "topic": "arcas-consort-mother"
+    },
+    {
+      "text": "Pausanias instead makes Arcas' wife a Dryad nymph named Erato, by whom he had Azan, Apheidas, and Elatus — a rival reckoning that omits Chrysopelia entirely and gives different sons. The atlas keeps Erato and Chrysopelia as separate nodes under topic `arcas-consort-mother`.",
+      "sources": [
+        "pausanias",
+        "apollodorus"
+      ],
+      "citation": "Description of Greece 8.4.2; Bibliotheca 3.9.1",
+      "topic": "arcas-consort-mother"
+    },
+    {
+      "text": "Apollodorus attests Chrysopelia only as a nymph, without river, spring, or tree sub-class in our seven lenses; the `-naiad` id suffix disambiguates this Arcadian figure from any homonym, not a sourced Naiad tag.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.9.1"
+    }
+  ]
+}

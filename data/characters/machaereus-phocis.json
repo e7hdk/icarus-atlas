@@ -1,0 +1,38 @@
+{
+  "id": "machaereus-phocis",
+  "name": "Machaereus",
+  "greekName": "Machaireus (Μαχαιρεύς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Phocian slayer of Neoptolemus",
+    "Delphi",
+    "rival Returns tradition"
+  ],
+  "summary": [
+    {
+      "text": "The Phocian who, in one Returns tradition, slew Neoptolemus at Delphi when the son of Achilles rifled the votive offerings and set fire to the temple — distinct from Machaon son of Asclepius, the healer-prince at Troy.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus knows two endings for Neoptolemus after Troy. In the main line Orestes went mad and Neoptolemus carried off Hermione, who had been betrothed to him, and for that Orestes slew him at Delphi.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.14"
+    },
+    {
+      "text": "But some say Neoptolemus went to Delphi to demand satisfaction from Apollo for the death of his father Achilles, rifled the votive offerings, and set fire to the temple — and on that account was slain by Machaereus the Phocian. The nested episode on Neoptolemus to Epirus carries the Orestes variant; this node holds the Phocian slayer named in the alternative.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.14"
+    }
+  ],
+  "residences": [
+    {
+      "city": "delphi",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.14"
+    }
+  ]
+}

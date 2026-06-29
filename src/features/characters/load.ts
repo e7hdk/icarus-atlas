@@ -3,6 +3,9 @@ import path from 'node:path';
 import { characterSchema, cultureSchema, referenceSchema, relationSchema, sourceSchema } from '@/lib/schemas';
 import type { Character, CultureData, ReferenceData, Relation, Source } from '@/types/character';
 
+export type { CharacterIndex } from './character-index';
+export { buildCharacterIndex } from './character-index';
+
 const DATA_DIR = path.join(process.cwd(), 'data');
 
 export interface AtlasData {

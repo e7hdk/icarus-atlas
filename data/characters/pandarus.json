@@ -26,6 +26,10 @@
   ],
   "residences": [
     {
+      "city": "zeleia-troad",
+      "sources": ["homer"]
+    },
+    {
       "city": "troy",
       "sources": ["homer"]
     }

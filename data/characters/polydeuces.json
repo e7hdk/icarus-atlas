@@ -61,12 +61,26 @@
   ],
   "residences": [
     {
+      "city": "lemnos",
+      "sources": [
+        "apollodorus",
+        "apollonius",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–910; Fabulae 15"
+    },
+    {
       "city": "sparta",
       "sources": [
         "homer",
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.23; Description of Greece 1.41.4"
     }
   ]
 }

@@ -7,68 +7,199 @@
   "era": 7.01,
   "summary": {
     "text": "From Lemnos to the Propontis the Argo's outward voyage was a chain of wonders and disasters — the Lemnian women, the accidental slaying of Cyzicus, the blind seer Phineus freed from the Harpies, the Symplegades clashing shut, and Amycus beaten in the boxing ring.",
-    "sources": ["apollonius", "apollodorus"],
-    "citation": "Apoll. Arg. 1.609–2.1280; Apollod. 1.9.17–22"
+    "sources": [
+      "apollonius",
+      "apollodorus"
+    ],
+    "citation": "Apoll. Arg. 1.580–2.1280; Apollod. 1.9.17–22"
   },
   "chapters": [
     {
+      "title": "Past Pelion and Sciathus",
+      "text": "Leaving Pagasae the Argo ran the Magnesian coast: Pelion's rugged flank sank astern, the Sepian headland fell away, and Sciathus rose in the sea while Piresiae and the calm shore of Magnesia came into view beside the tomb of Dolops. There, as the wind blew against them, they put to land at evening and burned honour to the hero in the night.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Apoll. Arg. 1.580–582"
+    },
+    {
       "title": "Lemnos and Hypsipyle",
       "text": "The first landfall was Lemnos, where the women had slain their husbands and Hypsipyle queen ruled alone. The Argonauts lay with the Lemnians and Jason took Hypsipyle to bed; twin sons were born, and Homer remembers Euneus who later sent wine from the isle to the Achaeans at Troy.",
-      "sources": ["apollonius", "apollodorus", "homer"],
+      "sources": [
+        "apollonius",
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Apoll. Arg. 1.609–910; Apollod. 1.9.17; Hom. Il. 7.467–469"
     },
     {
       "title": "The death of Cyzicus",
       "text": "At the Propontis, Cyzicus king of the Doliones welcomed them with gifts and feasting. A storm drove the Argo back by night; mist and battle-cry confused the hosts, and Jason's men slew Cyzicus in the dark — only at dawn did they see the king they had killed was their host. His wife Clite hanged herself for grief.",
-      "sources": ["apollonius", "apollodorus"],
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
       "citation": "Apoll. Arg. 1.936–1077; Apollod. 1.9.18"
+    },
+    {
+      "title": "Hylas lost",
+      "text": "At Cios the boy Hylas, beloved of Heracles, went to fetch water and was pulled under by a nymph who loved his beauty. Heracles searched the hills in vain and would not sail on; the Argo left without him — Apollonius says the hero stayed behind, Apollodorus that he had already gone forward overland. The strongest Argonaut never reached Colchis.",
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
+      "citation": "Apoll. Arg. 1.1207–1354; Apollod. 1.9.19"
+    },
+    {
+      "title": "Amycus the Bebrycian",
+      "text": "On the coast of Bithynia King Amycus forced all strangers to box with him and killed them. Polydeuces took the challenge, beat the king down, and the Bebrycians rushed on the Argonauts until Heracles and his comrades drove them off with spears.",
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
+      "citation": "Apoll. Arg. 2.1–97; Apollod. 1.9.20"
     },
     {
       "title": "Phineus and the Harpies",
       "text": "In Thrace the blind seer Phineus, tormented by the Harpies who snatched his food, begged the Argonauts for rescue. Zetes and Calais, the winged sons of Boreas, chased the monsters to the Strophades or drove them off for good — and Phineus, in gratitude, prophesied the road to Colchis and warned of the Clashing Rocks ahead.",
-      "sources": ["apollonius", "apollodorus"],
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
       "citation": "Apoll. Arg. 2.178–430; Apollod. 1.9.21"
     },
     {
       "title": "The Symplegades",
       "text": "At the mouth of the Euxine Sea the Symplegades — the Clashing Rocks — crashed together whenever anything passed. Phineus counselled release a dove first; when it flew through with only its tail-feathers caught, the heroes rowed with all their might and Athena held back one rock so the Argo scraped through. After that the rocks stood fixed forever.",
-      "sources": ["apollonius", "apollodorus"],
+      "sources": [
+        "apollonius",
+        "apollodorus"
+      ],
       "citation": "Apoll. Arg. 2.317–647; Apollod. 1.9.22"
     },
     {
-      "title": "Amycus the Bebrycian",
-      "text": "On the coast of Bithynia King Amycus forced all strangers to box with him and killed them. Polydeuces took the challenge, beat the king down, and the Bebrycians rushed on the Argonauts until Heracles and his comrades drove them off with spears.",
-      "sources": ["apollonius", "apollodorus"],
-      "citation": "Apoll. Arg. 2.1–97; Apollod. 1.9.20"
-    },
-    {
-      "title": "Hylas lost",
-      "text": "At Cios the boy Hylas, beloved of Heracles, went to fetch water and was pulled under by a nymph who loved his beauty. Heracles searched the hills in vain and would not sail on; the Argo left without him — Apollonius says the hero stayed behind, Apollodorus that he had already gone forward overland. The strongest Argonaut never reached Colchis.",
-      "sources": ["apollonius", "apollodorus"],
-      "citation": "Apoll. Arg. 1.1207–1354; Apollod. 1.9.19"
+      "title": "Assyrian shore",
+      "text": "Past the Clashing Rocks the Argo ran the southern Pontic coast and straightway landed on the Assyrian shore — where Zeus had given Sinope, daughter of Asopus, a home and the virginity she chose when he promised to grant whatever her heart desired. The god longed for her love; she in her craftiness asked for maidenhood, and he kept his word.",
+      "sources": [
+        "apollonius"
+      ],
+      "citation": "Apoll. Arg. 2.946"
     }
   ],
   "cast": [
-    { "id": "jason", "name": "Jason", "role": "Captain of the outward voyage" },
-    { "id": "hypsipyle", "name": "Hypsipyle", "role": "Queen of Lemnos" },
-    { "id": "thoas-lemnos", "name": "Thoas", "role": "Hypsipyle's father, saved on Lemnos" },
-    { "id": "cyzicus-dolion", "name": "Cyzicus", "role": "Host slain by mistake" },
-    { "id": "phineus-thrace", "name": "Phineus", "role": "Blind seer who read the road" },
-    { "id": "calais", "name": "Calais", "role": "Wind-foot who chased the Harpies" },
-    { "id": "polydeuces", "name": "Polydeuces", "role": "Slayer of Amycus" },
-    { "id": "heracles", "name": "Heracles", "role": "He who stayed for Hylas" },
-    { "id": "hylas", "name": "Hylas", "role": "Boy lost to the nymphs" },
-    { "id": "amycus-bebrycian", "name": "Amycus", "role": "King who demanded the boxing match" },
-    { "id": "athena", "name": "Athena", "role": "She who held back the Clashing Rock" }
+    {
+      "id": "jason",
+      "name": "Jason",
+      "role": "Captain of the outward voyage"
+    },
+    {
+      "id": "hypsipyle",
+      "name": "Hypsipyle",
+      "role": "Queen of Lemnos"
+    },
+    {
+      "id": "thoas-lemnos",
+      "name": "Thoas",
+      "role": "Hypsipyle's father, saved on Lemnos"
+    },
+    {
+      "id": "cyzicus-dolion",
+      "name": "Cyzicus",
+      "role": "Host slain by mistake"
+    },
+    {
+      "id": "phineus-thrace",
+      "name": "Phineus",
+      "role": "Blind seer who read the road"
+    },
+    {
+      "id": "calais",
+      "name": "Calais",
+      "role": "Wind-foot who chased the Harpies"
+    },
+    {
+      "id": "polydeuces",
+      "name": "Polydeuces",
+      "role": "Slayer of Amycus"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "role": "He who stayed for Hylas"
+    },
+    {
+      "id": "hylas",
+      "name": "Hylas",
+      "role": "Boy lost to the nymphs"
+    },
+    {
+      "id": "amycus-bebrycian",
+      "name": "Amycus",
+      "role": "King who demanded the boxing match"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "She who held back the Clashing Rock"
+    },
+    {
+      "id": "sinope-nymph",
+      "name": "Sinope",
+      "role": "Nymph whom Zeus settled on the Assyrian shore"
+    }
   ],
   "places": [
-    { "id": "lemnos", "name": "Lemnos", "role": "First landfall, isle of the Lemnian women" },
-    { "name": "Propontis", "role": "Sea where Cyzicus was slain" },
-    { "name": "Symplegades", "role": "The Clashing Rocks at the Euxine mouth" }
+    {
+      "id": "skiathos",
+      "name": "Sciathus",
+      "role": "Sporades isle sighted as the Argo ran past Pelion toward Dolops' tomb"
+    },
+    {
+      "id": "piresia",
+      "name": "Piresia",
+      "role": "Magnesian shore named beside Sciathus on the outward voyage"
+    },
+    {
+      "id": "lemnos",
+      "name": "Lemnos",
+      "role": "First landfall, isle of the Lemnian women"
+    },
+    {
+      "name": "Propontis",
+      "role": "Sea where Cyzicus was slain",
+      "featureId": "propontis"
+    },
+    {
+      "name": "Symplegades",
+      "role": "The Clashing Rocks at the Euxine mouth",
+      "featureId": "symplegades"
+    },
+    {
+      "name": "The Strophades",
+      "role": "Islands of Turning where the Boreads chased the Harpies",
+      "id": "strophades"
+    },
+    {
+      "id": "sinope",
+      "name": "Sinope",
+      "role": "Assyrian-shore colony where Zeus granted the nymph her chosen virginity"
+    }
   ],
   "attestations": [
-    { "source": "apollonius", "work": "Argonautica", "citation": "1.609–2.1280" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.9.17–22" },
-    { "source": "homer", "work": "Iliad", "citation": "7.467–469" }
+    {
+      "source": "apollonius",
+      "work": "Argonautica",
+      "citation": "Apoll. Arg. 1.580–2.1280"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.9.17–22"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "7.467–469"
+    }
   ]
 }

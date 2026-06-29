@@ -6,55 +6,126 @@
   "parent": "theban-cycle",
   "era": 5,
   "summary": {
-    "text": "Sent to find his sister Europa, Cadmus followed Apollo's cow to Boeotia, slew the dragon of Ares, sowed its teeth to reap the Spartoi, and built the Cadmea — marrying Harmonia in a wedding the gods themselves attended.",
-    "sources": ["apollodorus", "hesiod", "ovid"],
+    "text": "Forbidden to return without his sister Europa, Cadmus followed Apollo's cow to Boeotia, slew the dragon of Ares, sowed its teeth to reap the Spartoi, and built the Cadmea — marrying Harmonia in a wedding the gods themselves attended.",
+    "sources": [
+      "apollodorus",
+      "hesiod",
+      "ovid"
+    ],
     "citation": "Apollod. 3.4.1–2; Hes. Th. 975–983; Ov. Met. 3.1–200"
   },
   "chapters": [
     {
-      "title": "The search for Europa",
-      "text": "When Zeus carried off Europa, her father Agenor sent Cadmus to bring her back and forbade his return without her. Cadmus wandered the earth in vain; at Delphi Apollo told him to follow a cow marked with a white spot on each flank and found a city where she lay down from weariness. Homer makes Europa daughter of Phoenix and niece of Cadmus; Apollodorus and Hyginus make her sister of Cadmus, Phoenix, and Cilix — the same quest, two genealogies.",
-      "sources": ["apollodorus", "homer", "hyginus", "ovid"],
-      "citation": "Apollod. 3.1.1, 3.4.1; Hom. Il. 14.321; Hyg. Fab. 178; Ov. Met. 3.1–30",
-      "topic": "europa-paternity"
+      "title": "Apollo's cow",
+      "text": "When Telephassa died, Cadmus buried her and came to Delphi to inquire about Europa. Apollo told him not to trouble about the girl — Zeus had already borne her to Crete — but to follow a cow marked with a white spot on each flank and found a city wherever she should fall down from weariness. Cadmus journeyed through Phocis until the appointed cow sank down on the site of Thebes.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.4.1; Ov. Met. 3.1–30"
     },
     {
       "title": "The dragon of Ares",
       "text": "The cow sank down on the site of Thebes. When Cadmus sent his men to draw water from the spring of Ares for a sacrifice, the spring's guardian — a great dragon — killed them. Cadmus slew the serpent in vengeance, and Athena counselled him to sow its teeth in the furrows of the field.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 3.4.1; Ov. Met. 3.101–130"
     },
     {
       "title": "The Spartoi",
       "text": "Armed men sprang from the earth — the Spartoi, the Sown Men. Cadmus threw a stone among them, and in their confusion they fought until only five survived: Echion, Udaeus, Chthonius, Hyperenor, and Pelorus. These became the ancestors of the Theban nobility; Echion wed Cadmus' daughter Agave and begot Pentheus.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 3.4.1–2; Ov. Met. 3.131–200"
     },
     {
       "title": "Harmonia's wedding",
       "text": "Cadmus served Ares eight years to atone for the dragon's slaughter, and when his servitude ended Athena secured the kingdom for him. Zeus gave him Harmonia, daughter of Ares and Aphrodite, and all the gods left Olympus for the wedding in the Cadmea, bringing the necklace and the robe that would one day ruin their descendants.",
-      "sources": ["apollodorus", "hesiod"],
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
       "citation": "Apollod. 3.4.2; Hes. Th. 975–983"
     }
   ],
   "cast": [
-    { "id": "cadmus", "name": "Cadmus", "role": "Phoenician founder of Thebes" },
-    { "id": "harmonia", "name": "Harmonia", "role": "Bride of the Cadmea" },
-    { "id": "agenor", "name": "Agenor", "role": "Father who sent Cadmus forth" },
-    { "id": "europa", "name": "Europa", "role": "The sister sought across the sea" },
-    { "id": "echion", "name": "Echion", "role": "Spartos who survived the sowing" },
-    { "id": "athena", "name": "Athena", "role": "Goddess who counselled the teeth" },
-    { "id": "ares", "name": "Ares", "role": "Lord of the slain dragon" }
+    {
+      "id": "cadmus",
+      "name": "Cadmus",
+      "role": "Phoenician founder of Thebes"
+    },
+    {
+      "id": "harmonia",
+      "name": "Harmonia",
+      "role": "Bride of the Cadmea"
+    },
+    {
+      "id": "agenor",
+      "name": "Agenor",
+      "role": "Father who sent Cadmus forth"
+    },
+    {
+      "id": "europa",
+      "name": "Europa",
+      "role": "The sister sought across the sea"
+    },
+    {
+      "id": "echion",
+      "name": "Echion",
+      "role": "Spartos who survived the sowing"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Goddess who counselled the teeth"
+    },
+    {
+      "id": "ares",
+      "name": "Ares",
+      "role": "Lord of the slain dragon"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City founded where the cow lay down" },
-    { "name": "Delphi", "role": "Where Apollo sent Cadmus to follow the cow" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City founded where the cow lay down"
+    },
+    {
+      "name": "Delphi",
+      "role": "Where Apollo sent Cadmus to follow the cow",
+      "id": "delphi"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.1.1, 3.4.1–2" },
-    { "source": "hesiod", "work": "Theogony", "citation": "975–983" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "3.1–200" },
-    { "source": "homer", "work": "Iliad", "citation": "14.321" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "178" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.1.1, 3.4.1–2"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "975–983"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3.1–200"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "14.321"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "178"
+    }
   ]
 }

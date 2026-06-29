@@ -1,0 +1,56 @@
+{
+  "id": "ilus-childless",
+  "name": "Ilus",
+  "greekName": "Ilos (Ἶλος)",
+  "type": "mortal",
+  "domains": [
+    "Dardania",
+    "the Trojan royal line"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Dardanus who died childless, so his brother Erichthonius succeeded to the kingdom in Apollodorus' account.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2",
+      "topic": "ilus-parentage"
+    },
+    {
+      "text": "Not Ilus son of Tros who founded Ilium and fathered Laomedon — Apollodorus splits the name between this childless Dardanid and the later founder.",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Bibliotheca 3.12.2–3.12.3; Iliad 20.230–236"
+    }
+  ],
+  "story": [
+    {
+      "text": "Dardanus had sons born to him, Ilus and Erichthonius, of whom Ilus died childless, and Erichthonius succeeded to the kingdom and married Astyoche, daughter of Simoeis, and begat Tros.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2",
+      "topic": "ilus-parentage"
+    },
+    {
+      "text": "Homer compresses the line: Dardanus begat Erichthonius directly, with no intervening childless son; and the Ilus honored in the Iliad as founder with a barrow on the plain is elsewhere son of Tros.",
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
+      "citation": "Iliad 20.219–230, 11.371–372; Bibliotheca 3.12.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.12.2"
+    }
+  ]
+}

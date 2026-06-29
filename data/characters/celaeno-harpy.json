@@ -1,0 +1,33 @@
+{
+  "id": "celaeno-harpy",
+  "name": "Celaeno (Harpies)",
+  "greekName": "Kelainō (Κελαινώ)",
+  "romanName": "Celaeno",
+  "type": "creature",
+  "kinds": ["harpy"],
+  "cluster": "chthonic",
+  "domains": [
+    "the dark harpy",
+    "snatching",
+    "winged torment"
+  ],
+  "summary": [
+    {
+      "text": "The third Harpy whom Hyginus names beside Aellopous and Ocypete as a daughter of Thaumas — absent from Hesiod's two-name roll but attested in the Phineus catalogue.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod and Apollodorus name only two Harpies — Aello and Ocypete — daughters of Thaumas and the Oceanid Electra. Hyginus raises the count to three, listing Aellopous, Celaeno and Ocypete among the daughters of Thaumas driven from blind Phineus by the Boreads. The collective node `harpies` holds the two-name and three-name dispute; this node is the third individual in Hyginus' roll.",
+      "sources": ["hyginus", "hesiod", "apollodorus"],
+      "citation": "Fabulae 14; Theogony 265–269; Bibliotheca 1.2.6"
+    },
+    {
+      "text": "The atlas keeps this Celaeno distinct from `celaeno-pleiad`, the Pleiad daughter of Atlas and Pleione who shares only the name.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 14"
+    }
+  ]
+}

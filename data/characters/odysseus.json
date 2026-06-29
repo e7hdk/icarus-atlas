@@ -130,11 +130,85 @@
     },
     {
       "city": "corcyra",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–13.187"
     },
     {
       "city": "cichyrus",
       "sources": ["apollodorus"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.21–3.22; Iliad 2.559–580"
+    },
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.17"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus", "ovid", "pausanias"],
+      "citation": "Epitome 3.8, 6.8; Fabulae 105; Metamorphoses 13.1–141; Description of Greece 10.31.1–10.31.2"
+    },
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Epitome 3.27, 5.8; Metamorphoses 13.455–581"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "ogygia",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.10, 3.12; Fabulae 78"
+    },
+    {
+      "city": "ciconia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.39-66"
+    },
+    {
+      "city": "maroneia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.196-215"
+    },
+    {
+      "city": "lotus-eaters",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 9.82–104; Epitome 7.3"
+    },
+    {
+      "city": "cyclopes-isle",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Odyssey 9.105–542; Epitome 7.4–7"
+    },
+    {
+      "city": "aeolus-islands",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.1-88; Epitome 7.10-11"
+    },
+    {
+      "city": "laestrygonia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 10.81-132; Epitome 7.12"
+    },
+    {
+      "city": "anthemoessa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.158–200; Bibliotheca 1.9.25"
+    },
+    {
+      "city": "thrinacia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.127–420; Epitome 7.18–23"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "id": "oiax",
+  "name": "Oiax",
+  "greekName": "Oïax (Οïαξ)",
+  "type": "hero",
+  "domains": [
+    "brother of Palamedes",
+    "false word to Clytemnestra",
+    "vengeance for the stoning"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Brother of Palamedes who, to avenge the stoning at Troy, falsely told Clytemnestra that Cassandra was coming as Agamemnon's concubine — the lie that set her plotting with Aegisthus.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 117"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hyginus names Oiax brother of Palamedes in the chain of vengeance that wrecked the Greek returns. When Palamedes was stoned on Odysseus' forged charge of treachery, Nauplius sailed to demand satisfaction and failed; his sons' revenge took other shapes — and Oiax told Clytemnestra, daughter of Tyndareus and wife of Agamemnon, that Cassandra was being brought home as a concubine, though the tale was false, made to punish the wrong done to his brother.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 117"
+    },
+    {
+      "text": "Clytemnestra, believing the slander, plotted with Aegisthus son of Thyestes to kill Agamemnon on his homecoming — one thread in the Returns that binds the wooden horse, the stoning of the Argive counsellor, and the murder at Mycenae.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 117"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.2.2; Fabulae 117"
+    }
+  ]
+}

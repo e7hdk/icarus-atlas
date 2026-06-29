@@ -108,18 +108,22 @@
       "role": "Lord who hated Calchas' gloomy prophecies"
     },
     {
+      "id": "leonteus-lapith",
       "name": "Leonteus",
       "role": "Captain who left the ships at Ilium"
     },
     {
+      "id": "podalirius",
       "name": "Podalirius",
       "role": "Healer who marched by land with Calchas"
     },
     {
+      "id": "polypoetes-lapith",
       "name": "Polypoetes",
       "role": "Captain of the overland party"
     },
     {
+      "id": "rhacius-crete",
       "name": "Rhacius",
       "role": "Cretan husband of Manto in Pausanias' colonization tale"
     }
@@ -132,19 +136,23 @@
     },
     {
       "name": "Claros",
-      "role": "Apollo's oracular shrine of the Colophonian coast"
+      "role": "Apollo's oracular shrine of the Colophonian coast",
+      "id": "claros"
     },
     {
       "name": "Colophon",
-      "role": "Ionian city where Mopsus lodged the wanderers"
+      "role": "Ionian city where Mopsus lodged the wanderers",
+      "id": "colophon"
     },
     {
       "name": "Notium",
-      "role": "Harbour where Calchas died and was buried"
+      "role": "Harbour where Calchas died and was buried",
+      "id": "notium"
     },
     {
       "name": "Aulis",
-      "role": "Where Calchas had read Artemis' wrath at the muster"
+      "role": "Where Calchas had read Artemis' wrath at the muster",
+      "id": "aulis-boeotia"
     }
   ],
   "attestations": [

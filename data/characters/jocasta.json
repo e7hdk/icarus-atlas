@@ -50,9 +50,12 @@
     {
       "city": "thebes",
       "sources": [
+        "homer",
         "apollodorus",
-        "hyginus"
-      ]
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Odyssey 11.275; Bibliotheca 3.5.7–9; Fabulae 67; Description of Greece 9.5.10"
     }
   ]
 }

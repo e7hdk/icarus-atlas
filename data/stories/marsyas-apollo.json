@@ -7,43 +7,96 @@
   "era": 6.04,
   "summary": {
     "text": "Marsyas the satyr found the pipes Athena cast away and challenged Apollo to a contest — lyre against flute, with the loser's body at the victor's mercy. Apollo turned his lyre upside down and demanded Marsyas do the same; the satyr could not, and Phoebus flayed him alive until his tears became the river Marsyas in Phrygia.",
-    "sources": ["apollodorus", "ovid", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
     "citation": "Apollod. 1.4.2; Ov. Met. 6.622–667; Hyg. Fab. 165"
   },
   "chapters": [
     {
       "title": "The pipes",
-      "text": "Athena invented the flute but threw it away when Juno and Venus mocked her puffed cheeks in the mirror; she vowed whoever picked it up would be punished. Marsyas son of Oeagrus found the pipes on Ida and grew so skilled that he dared challenge Apollo — they agreed the loser should suffer whatever the winner willed.",
-      "sources": ["apollodorus", "hyginus"],
+      "text": "Athena invented the flute but threw it away when Juno and Venus mocked her puffed cheeks in the mirror; she vowed whoever picked it up would be punished. Marsyas son of Olympus found the pipes on Ida and grew so skilled that he dared challenge Apollo — they agreed the loser should suffer whatever the winner willed.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 1.4.2; Hyg. Fab. 165"
     },
     {
       "title": "The contest",
       "text": "The Muses judged; Marsyas seemed to win until Apollo inverted his lyre and sang while playing — a feat impossible on the flute. Apollodorus says Apollo hung the satyr on a tall pine and stripped off his skin; Ovid tells how Marsyas cried that a flute was not worth his life as living skin was torn from limbs until nerves and viscera lay exposed.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 1.4.2; Ov. Met. 6.622–667"
     },
     {
       "title": "The river",
       "text": "Fauns, satyrs, nymphs, and Olympus his pupil wept; their tears sinking into Phrygian earth became a fountain clear as any spring — the river Marsyas, named for the flayed satyr to this day. Hyginus adds that Midas judged the contest on Tmolus and received ass's ears for preferring Marsyas — a judgment told fully in the tale of Midas.",
-      "sources": ["ovid", "hyginus"],
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 6.622–667; Hyg. Fab. 165, 191"
     }
   ],
   "cast": [
-    { "id": "marsyas-phrygia", "name": "Marsyas", "role": "Satyr flayed for rivalling Apollo" },
-    { "id": "apollo", "name": "Apollo", "role": "Victor of the music contest" },
-    { "id": "athena", "name": "Athena", "role": "Original maker of the cursed pipes" },
-    { "id": "midas", "name": "Midas", "role": "Judge who favoured Marsyas in Hyginus" }
+    {
+      "id": "marsyas-phrygia",
+      "name": "Marsyas",
+      "role": "Satyr flayed for rivalling Apollo"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "Victor of the music contest"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Original maker of the cursed pipes"
+    },
+    {
+      "id": "midas",
+      "name": "Midas",
+      "role": "Judge who favoured Marsyas in Hyginus"
+    }
   ],
   "places": [
-    { "name": "Mount Ida", "role": "Phrygian mountain where Marsyas found the pipes" },
-    { "name": "Phrygia", "role": "Land of the contest and the Marsyas river" },
-    { "name": "Mount Tmolus", "role": "Seat of the judges in the contest" }
+    {
+      "name": "Mount Ida",
+      "role": "Phrygian mountain where Marsyas found the pipes",
+      "featureId": "mount-ida-troas"
+    },
+    {
+      "name": "Phrygia",
+      "role": "Land of the contest and the Marsyas river",
+      "id": "gordion"
+    },
+    {
+      "name": "Mount Tmolus",
+      "role": "Seat of the judges in the contest",
+      "featureId": "mount-tmolus"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "1.4.2" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "6.622–667" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "165, 191" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.4.2"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "6.622–667"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "165, 191"
+    }
   ]
 }

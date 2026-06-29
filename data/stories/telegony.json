@@ -7,45 +7,95 @@
   "era": 9.15,
   "summary": {
     "text": "After the suitors were slain and Penelope knew her husband at last, one ending still waited — Telegonus son of Circe, sent to find his father, came to Ithaca and unknowingly killed Odysseus with a sting-ray spear; then he bore the corpse and Penelope to Aeaea, married the queen, and Circe sent them both to the Islands of the Blest.",
-    "sources": ["apollodorus", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Apollod. Epit. 7.36–7.37; Hyg. Fab. 127"
   },
   "chapters": [
     {
       "title": "The son on Aeaea",
       "text": "When Odysseus had taken an oath from Circe that he should suffer no harm, he shared her bed on Aeaea and she bore him Telegonus. The boy grew on the witch's isle while his father wandered ten years more and won back rocky Ithaca.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 7.16"
     },
     {
       "title": "The sting-ray spear",
       "text": "Learning from Circe that he was Odysseus' son, Telegonus sailed in search of his father. Hyginus adds that a storm drove him to Ithaca, where hunger made him lay waste the fields. Odysseus and Telemachus — not knowing who he was — took up arms against the stranger until Telegonus wounded the king with the spear in his hands, barbed with the spine of a sting-ray, and Odysseus died of the wound.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 7.36; Hyg. Fab. 127",
       "topic": "odysseus-death"
     },
     {
       "title": "Penelope and the Blest Isles",
       "text": "When Telegonus recognized whom he had killed, he bitterly lamented, conveyed the corpse and Penelope to Circe, and there married Penelope. Circe sent them both away to the Islands of the Blest — an ending flatly opposed to Homer's faithful reunion, yet attested in the Epic Cycle's last book.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 7.37; Hyg. Fab. 127",
       "topic": "odysseus-death"
     }
   ],
   "cast": [
-    { "id": "telegonus-circe", "name": "Telegonus", "role": "Son of Circe who unknowingly killed his father" },
-    { "id": "odysseus", "name": "Odysseus", "role": "The king slain after his homecoming" },
-    { "id": "circe", "name": "Circe", "role": "Mother who sent the son to find his father" },
-    { "id": "penelope", "name": "Penelope", "role": "Widow who married Telegonus on Aeaea" },
-    { "id": "telemachus", "name": "Telemachus", "role": "Son who fought beside his father unawares" }
+    {
+      "id": "telegonus-circe",
+      "name": "Telegonus",
+      "role": "Son of Circe who unknowingly killed his father"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "The king slain after his homecoming"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "Mother who sent the son to find his father"
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "Widow who married Telegonus on Aeaea"
+    },
+    {
+      "id": "telemachus",
+      "name": "Telemachus",
+      "role": "Son who fought beside his father unawares"
+    }
   ],
   "places": [
-    { "id": "ithaca", "name": "Ithaca", "role": "Where Odysseus fell defending his herds" },
-    { "name": "Aeaea", "role": "Circe's isle, where Telegonus was born" },
-    { "name": "Islands of the Blest", "role": "Where Circe sent Telegonus and Penelope" }
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "role": "Where Odysseus fell defending his herds"
+    },
+    {
+      "name": "Aeaea",
+      "role": "Circe's isle, where Telegonus was born",
+      "id": "aeaea"
+    },
+    {
+      "name": "Islands of the Blest",
+      "role": "Where Circe sent Telegonus and Penelope"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "Epitome", "citation": "7.16, 7.36–7.37" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "127" }
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.16, 7.36–7.37"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "127"
+    }
   ]
 }

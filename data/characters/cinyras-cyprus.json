@@ -1,0 +1,54 @@
+{
+  "id": "cinyras-cyprus",
+  "name": "Cinyras",
+  "greekName": "Kinyras (Κινύρας)",
+  "romanName": "Cinyras",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Paphos",
+    "father of Myrrha",
+    "the Cypriot royal line"
+  ],
+  "summary": [
+    {
+      "text": "King of Cyprus who founded Paphos, gave Agamemnon the breastplate he wore at Troy, and in Ovid's telling unwittingly lay with his daughter Myrrha until he discovered her by lamplight and pursued her with a sword.",
+      "sources": ["homer", "ovid", "apollodorus"],
+      "citation": "Iliad 11.19–24; Metamorphoses 10.464–680; Bibliotheca 3.14.3"
+    },
+    {
+      "text": "Apollodorus makes him son of Sandocus, husband of Metharme daughter of king Pygmalion, and father of Adonis among other children — a genealogy Ovid replaces with incest and the myrrh-tree.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.14.3",
+      "topic": "adonis-parentage"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer knows Cinyras as a king so far off in Cyprus that he heard the rumour of the Achaean expedition and sent a guest-gift to Agamemnon — a breastplate of ten bands of dark cyanus, twelve of gold, and twenty of tin, with three serpents rearing up the collar.",
+      "sources": ["homer"],
+      "citation": "Iliad 11.19–24"
+    },
+    {
+      "text": "Apollodorus says Sandocus son of Astraeus begat Cinyras, who came to Cyprus with a company and founded Paphos; there he married Metharme daughter of Pygmalion king of Cyprus and begot Oxyporus, Adonis, and daughters Orsedice, Laogore, and Braesia.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.14.3"
+    },
+    {
+      "text": "In Ovid's iron-age telling the same king might have been happy but for his daughter Myrrha. Her nurse arranged for him to take an unknown girl during Ceres' rites; when he brought a lamp he saw his daughter and pursued her with a sword — the royal house that in Apollodorus begot Adonis lawfully here begets him from crime and metamorphosis.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 10.464–680"
+    },
+    {
+      "text": "After the Trojan War, Pausanias says, Teucer married the daughter of Cinyras and founded Salamis on Cyprus — the bowman exiled from his father's isle who wed into the Paphian royal line.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca Epitome 5.23; Description of Greece 8.15.7"
+    }
+  ],
+  "residences": [
+    {
+      "city": "salamis-cyprus",
+      "sources": ["homer", "apollodorus", "pausanias"]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "cassiopeia-ethiopia",
+  "name": "Cassiopeia",
+  "greekName": "Kassiepeia (Κασσιέπεια)",
+  "romanName": "Cassiopeia",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Ethiopia",
+    "the boast against the Nereids",
+    "the W-shaped constellation"
+  ],
+  "summary": [
+    {
+      "text": "Wife of King Cepheus and mother of Andromeda, whose boast that she surpassed the Nereids in beauty brought Poseidon's flood, the sea-monster, and her daughter's exposure on the rock.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.668–5.18; Fabulae 64"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Cassiopeia vied with the Nereids in beauty and boasted to be better than them all; the Nereids were angry, and Poseidon sent a flood and a sea-monster against the land. To appease the god, Cepheus was compelled to chain Andromeda naked to a rock by the sea — the queen's vanity paid for in her daughter's peril.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.3"
+    },
+    {
+      "text": "Ovid gives the boast at the heart of the metamorphosis-book: the queen's tongue outran the sea-goddesses, and Neptune answered with the beast that made Andromeda prey. When Perseus flew over Ethiopia and freed the princess, the rescued bride passed to the hero while Cassiopeia watched the deliverance her pride had made necessary.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.668–5.249"
+    },
+    {
+      "text": "Hyginus records that Cassiopeia claimed her daughter Andromeda's beauty excelled even the Nereids — and because of that claim Neptune demanded the girl be offered to the monster. The poets set mother and daughter among the stars beside Cepheus and Cetus: Cassiopeia in the chair that never dips below the horizon, a memorial of the boast that nearly cost a kingdom.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 64; Bibliotheca 2.4.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aethiopia",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.668–5.18; Fabulae 64"
+    }
+  ]
+}

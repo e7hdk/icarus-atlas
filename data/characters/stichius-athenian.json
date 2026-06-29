@@ -7,7 +7,7 @@
   "cluster": "mortal-arm",
   "summary": [
     {
-      "text": "Captain of the Athenians who followed Menestheus son of Peteos among the picked men of the host — no homonym in the atlas.",
+      "text": "Captain of the Athenians who followed Menestheus son of Peteos among the picked men of the host — distinct from Stichius (`stichius-boeotian`), the Boeotian leader whom Hector slew in Book 15.",
       "sources": ["homer"],
       "citation": "Iliad 13.195–230, 13.675–720"
     }
@@ -22,7 +22,13 @@
   "residences": [
     {
       "city": "athens",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.550–580, 13.195–230, 13.675–720"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 13.195–230, 13.675–720"
     }
   ]
 }

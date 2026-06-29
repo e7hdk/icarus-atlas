@@ -1,0 +1,32 @@
+{
+  "id": "morpheus-oneiros",
+  "name": "Morpheus (Oneiroi)",
+  "greekName": "Morphēus (Μορφεύς)",
+  "romanName": "Morpheus",
+  "type": "god",
+  "cluster": "night-court",
+  "domains": [
+    "shaping human forms in sleep",
+    "imitation of gait and speech",
+    "dream-messenger"
+  ],
+  "summary": [
+    {
+      "text": "The most skilful of Sleep's thousand sons in Ovid, who imitates any human shape — gait, countenance, dress and speech — and passes in dreams as the very person he copies.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.922–1169"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid alone among the seven lenses names Morpheus individually. When Iris flies from Somnus' cave, the god of sleep raises Morpheus from among his thousand sons as the one most skilled at imitating any human shape — dexterously copying in men the gait and countenance and every mode of speaking, the dress and customary words of any man. It is Morpheus who, in Ceyx's likeness, brings Alcyone the news of her husband's shipwreck. The collective node `oneiroi` holds Hesiod's fatherless tribe of Dreams born of Nyx and Homer's horn and ivory gates; this node is Ovid's named shapeshifter, son of Hypnos rather than a separate Hesiodic child of Night.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.922–1169"
+    },
+    {
+      "text": "Ovid's sub-classification — Morpheus for human forms, Icelos/Phobetor for beasts and Phantasos for lifeless things — belongs to the Latin dream-poetry alone and is not attested in Homer or Hesiod; `kinds` is therefore omitted by Batch K policy for Ovid-only figures.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.922–1169"
+    }
+  ]
+}

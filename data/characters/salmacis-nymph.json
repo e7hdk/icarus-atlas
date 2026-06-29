@@ -1,0 +1,34 @@
+{
+  "id": "salmacis-nymph",
+  "name": "Salmacis",
+  "greekName": "Salmacis (Σαλμακίς)",
+  "romanName": "Salmacis",
+  "type": "nymph",
+  "kinds": ["naiad"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the infamous fountain",
+    "naiad of Caria",
+    "union with Hermaphroditus",
+    "enervating waters"
+  ],
+  "summary": [
+    {
+      "text": "A Naiad whose fountain in Caria was famed for softening the limbs of men who bathed — she saw the beautiful Hermaphroditus, clung to him in the pool, and prayed the gods to fuse their bodies until neither could be parted.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.409–625; 15.378–497"
+    }
+  ],
+  "story": [
+    {
+      "text": "Ovid tells how the fountain Salmacis became infamous: the nymph, unlike her sisters who hunted or spun, only bathed and arranged her hair at the glass-clear pool. When Hermaphroditus came, she offered herself; refused, she feigned departure, then sprang on him in the water and clung with arms and legs, praying that no day ever sever them.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.450–580"
+    },
+    {
+      "text": "The gods heard her prayer and fused the pair. Hermaphroditus cursed the spring; from that hour, Ovid says, whoever enters Salmacis leaves enervated — a metamorphosis born of desire that would not accept refusal.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.580–625; 15.378–497"
+    }
+  ]
+}

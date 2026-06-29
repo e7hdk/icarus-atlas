@@ -22,7 +22,13 @@
   "residences": [
     {
       "city": "miletus",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.860–875"
     }
   ]
 }

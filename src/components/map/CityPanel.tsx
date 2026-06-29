@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';
+import type { CharacterIndex } from '@/features/characters/load';
 import type { GeoCity, GeoRegion, Lineage } from '@/types/geo';
 
 /** Lineage panel for a selected city: the royal succession as sourced facts.
@@ -10,11 +12,13 @@ export function CityPanel({
   city,
   region,
   lineage,
+  characterIndex = {},
   onClose,
 }: {
   city: GeoCity;
   region: GeoRegion | undefined;
   lineage: Lineage | null;
+  characterIndex?: CharacterIndex;
   onClose: () => void;
 }) {
   return (
@@ -56,9 +60,11 @@ export function CityPanel({
                   <span className="w-5 shrink-0 text-right font-display text-[11px] text-aether-faint">
                     {index + 1}
                   </span>
-                  <span className="font-display text-[15px] tracking-[0.06em] text-aether">
-                    {reign.ruler}
-                  </span>
+                  <ReignRulerLinks
+                    reign={reign}
+                    characterIndex={characterIndex}
+                    className="font-display text-[15px] tracking-[0.06em]"
+                  />
                   {reign.topic && (
                     <span
                       className="text-[13px] text-nebula-soft"

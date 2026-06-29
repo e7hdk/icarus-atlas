@@ -28,5 +28,17 @@
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 10.505–535; Bibliotheca 3.10.5"
     }
+  ],
+  "residences": [
+    {
+      "city": "edonia-thrace",
+      "sources": ["homer"],
+      "citation": "Iliad 10.505–535"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 10.505–535"
+    }
   ]
 }

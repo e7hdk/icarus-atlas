@@ -18,5 +18,22 @@
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 2.735–775; Epitome 3.11, 7.28"
     }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
   ]
 }

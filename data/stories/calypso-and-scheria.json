@@ -7,59 +7,129 @@
   "era": 9.05,
   "summary": {
     "text": "Hermes bore Zeus' command to release Odysseus from Calypso's Ogygia; wrecked by Poseidon, he reached Scheria where Nausicaa and Alcinous heard his tale and sent him home asleep in a ship that needed no steersman — until Athena hid the gold and disguised him as a beggar on Ithaca.",
-    "sources": ["homer", "apollodorus"],
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
     "citation": "Hom. Od. 5–8, 13.1–23; Apollod. Epit. 7.23–7.24"
   },
   "chapters": [
     {
       "title": "Release from Ogygia",
       "text": "For seven years Calypso had kept Odysseus in her hollow caves, promising immortality if he would stay. Hermes came from Zeus with the order that the wanderer must go free; the goddess helped him build a raft with tools and a sail, and sent a following wind — though Poseidon, returning from Ethiopia, wrecked the timbers and cast him up clinging to the keel before the whirlpool of Charybdis.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Od. 5.1–5.381; Apollod. Epit. 7.23"
     },
     {
       "title": "Nausicaa",
       "text": "Athena sent Nausicaa, daughter of Alcinous, to wash linen at the river mouth; there the princess found the naked castaway, gave him clothing, and brought him toward the city — but not into the street, lest gossip stain her name. At her father's house Odysseus entered as a suppliant, clasped Arete's knees, and was welcomed to the feast.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 6.1–7.77"
     },
     {
       "title": "Demodocus and the games",
       "text": "The blind bard Demodocus sang of Troy until Odysseus wept unseen beneath his cloak. On the next day the Phaeacians proved their fame in boxing, wrestling, leaping, and discus — and Odysseus, provoked by the young Euryalus, hurled a disc beyond all marks and declared his name still unknown. That evening he asked for passage home.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 8.1–8.586"
     },
     {
       "title": "The tale of wanderings",
       "text": "At Alcinous' command Odysseus recounted his whole story from Troy to the cattle of the Sun — the nested episodes of Lotus, Cyclops, Aeolus, Circe, Hades, Sirens, and shipwreck — while the Phaeacians listened in silence. When he finished, they loaded gifts of bronze and gold and set him in a ship that needed no steersman, swift as thought, to bear him sleeping to Ithaca.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 9.1–13.23"
     },
     {
       "title": "Awake on Ithaca",
       "text": "Odysseus woke on his own shore and did not know the land until Athena told him where he was. She hid the Phaeacian treasure in caves and disguised him as an aged beggar, wrinkled and foul, so he might learn who in the palace remained loyal before he struck at the suitors.",
-      "sources": ["homer"],
+      "sources": [
+        "homer"
+      ],
       "citation": "Hom. Od. 13.1–13.439"
     }
   ],
   "cast": [
-    { "id": "odysseus", "name": "Odysseus", "role": "Castaway who told his tale at court" },
-    { "id": "calypso", "name": "Calypso", "role": "Detainer who at last let him go" },
-    { "id": "hermes", "name": "Hermes", "role": "Zeus' messenger to Ogygia" },
-    { "id": "poseidon", "name": "Poseidon", "role": "He who wrecked the raft" },
-    { "id": "athena", "name": "Athena", "role": "Patron who disguised him on Ithaca" },
-    { "id": "nausicaa", "name": "Nausicaa", "role": "Princess who found him on the shore" },
-    { "id": "alcinous-phaeacian", "name": "Alcinous", "role": "King who sent him home" },
-    { "id": "arete-phaeacian", "name": "Arete", "role": "Queen whose knees he clasped" },
-    { "id": "demodocus", "name": "Demodocus", "role": "Blind bard of Troy" }
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Castaway who told his tale at court"
+    },
+    {
+      "id": "calypso",
+      "name": "Calypso",
+      "role": "Detainer who at last let him go"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Zeus' messenger to Ogygia"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "He who wrecked the raft"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Patron who disguised him on Ithaca"
+    },
+    {
+      "id": "nausicaa",
+      "name": "Nausicaa",
+      "role": "Princess who found him on the shore"
+    },
+    {
+      "id": "alcinous-phaeacian",
+      "name": "Alcinous",
+      "role": "King who sent him home"
+    },
+    {
+      "id": "arete-phaeacian",
+      "name": "Arete",
+      "role": "Queen whose knees he clasped"
+    },
+    {
+      "id": "demodocus",
+      "name": "Demodocus",
+      "role": "Blind bard of Troy"
+    }
   ],
   "places": [
-    { "name": "Ogygia", "role": "Calypso's isle" },
-    { "id": "corcyra", "name": "Scheria", "role": "Land of the Phaeacians" },
-    { "id": "ithaca", "name": "Ithaca", "role": "Where he woke at last" }
+    {
+      "name": "Ogygia",
+      "role": "Calypso's isle",
+      "id": "ogygia"
+    },
+    {
+      "id": "corcyra",
+      "name": "Scheria",
+      "role": "Land of the Phaeacians"
+    },
+    {
+      "id": "ithaca",
+      "name": "Ithaca",
+      "role": "Where he woke at last"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Odyssey", "citation": "5–8, 13.1–439" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "7.23–7.24" }
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "5–8, 13.1–439"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.23–7.24"
+    }
   ]
 }

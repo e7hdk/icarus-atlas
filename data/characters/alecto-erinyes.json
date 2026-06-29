@@ -1,0 +1,28 @@
+{
+  "id": "alecto-erinyes",
+  "name": "Alecto (Erinyes)",
+  "greekName": "Alectō (Ἀληκτώ)",
+  "romanName": "Alecto",
+  "type": "creature",
+  "cluster": "chthonic",
+  "domains": [
+    "unceasing wrath",
+    "blood-guilt",
+    "the avenging Furies"
+  ],
+  "summary": [
+    {
+      "text": "One of the three named Erinyes — Alecto, Tisiphone and Megaera — whom Apollodorus and Hyginus count among the Furies born from the castrated sky's blood on Earth.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names Alecto first among the Furies who rose when the bloody drops of flowing blood from the castrated Uranus fell upon Gaia — the same grim birth Hesiod assigns the Erinyes beside the Giants and the ash-tree Meliae. Hyginus's genealogical preface likewise lists Alecto, Megaera and Tisiphone among the offspring of Aether and Terra, registering a rival parentage on topic `erinyes-parentage`. The collective node `erinyes` holds the chthonic office of the three; this node is the individual named in both rolls.",
+      "sources": ["apollodorus", "hyginus", "hesiod"],
+      "citation": "Bibliotheca 1.1.4; Fabulae preface; Theogony 183–187",
+      "topic": "erinyes-parentage"
+    }
+  ]
+}

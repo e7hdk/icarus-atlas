@@ -1,0 +1,37 @@
+{
+  "id": "thisbe",
+  "name": "Thisbe",
+  "greekName": "Thísbe (Θίσβη)",
+  "romanName": "Thisbe",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Babylonian lovers",
+    "the mulberry tree",
+    "tragic misunderstanding"
+  ],
+  "summary": [
+    {
+      "text": "The loveliest maiden of eastern Babylon, who loved Pyramus through a chink in the wall between their houses, fled a lioness at their tryst, and on finding her lover dead by his own sword took the weapon and followed him — their blood staining the mulberry forever.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 4.55–166; Fabulae 243"
+    }
+  ],
+  "story": [
+    {
+      "text": "In adjoining houses near the brick walls Queen Semiramis had built, Thisbe and Pyramus grew fond through a crack in the party wall — a passage their fathers' enmity could not close. They planned to steal out by night to Ninus' tomb and meet alone.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.55–100"
+    },
+    {
+      "text": "Thisbe arrived first and fled a lioness fresh from the kill, dropping her cloak in her terror. When she returned and found Pyramus dying, she took his sword and followed him to death.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 4.100–150"
+    },
+    {
+      "text": "Hyginus lists Thisbe of Babylon among maidens who killed themselves because Pyramus had already slain himself for love of her.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 243"
+    }
+  ]
+}

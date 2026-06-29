@@ -7,51 +7,124 @@
   "era": 9.015,
   "summary": {
     "text": "Aeolus bottled the winds for Odysseus' homeward sail — until curious comrades opened the bag and drove the fleet back to exile; Laestrygonian giants destroyed all but one ship before Circe on Aeaea turned scouts to swine, until Hermes' moly and a year of feasting sent them on toward Hades.",
-    "sources": ["homer", "apollodorus"],
+    "sources": [
+      "homer",
+      "apollodorus"
+    ],
     "citation": "Hom. Od. 10; Apollod. Epit. 7.10–17"
   },
   "chapters": [
     {
       "title": "The keeper of the winds",
       "text": "On the floating isle of Aeolus Hippotades, whom the gods made steward of the winds, Odysseus was entertained a month. The king bound all the storm-blasts in an ox-hide bag and set the west wind free to drive the fleet toward Ithaca — until, within sight of home, Odysseus' comrades opened the bag thinking it held gold, and the released winds hurled them back to Aeolus, who refused them aid a second time.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Od. 10.1–88; Apollod. Epit. 7.10–11"
     },
     {
       "title": "The Laestrygonian harbour",
       "text": "At Telepylus in the land of the Laestrygonians a friendly maiden led Odysseus' scout to the king's house — but the queen was a giantess, and the king speared the Ithacan and devoured him. From the cliffs the Laestrygonians destroyed eleven ships with boulders; only Odysseus' vessel, moored outside the harbour, escaped.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Od. 10.81–132; Apollod. Epit. 7.12"
     },
     {
       "title": "Circe's swine",
       "text": "On Aeaea the witch Circe, daughter of Helios, mixed a potion and struck Odysseus' scouting party with her wand until they had the heads and voices of swine. Eurylochus alone fled back to the ship. Odysseus went to rescue them, armed with the herb moly Hermes gave him on the way — white-flowered, black-rooted, hard for mortal men to dig.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Od. 10.133–274; Apollod. Epit. 7.14–15"
     },
     {
       "title": "The oath on Aeaea",
       "text": "Immune to the drug, Odysseus drew his sword until Circe swore a great oath not to harm him. She restored his men, feasted them, and lay with the hero — Apollodorus says she bore Telegonus in this year. When the company wished to sail, Circe told them they must first descend to the house of Hades and consult Tiresias; Elpenor fell drunk from the roof and was left unburied when they departed for Oceanus.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Od. 10.475–574; Apollod. Epit. 7.16–17"
     }
   ],
   "cast": [
-    { "id": "odysseus", "name": "Odysseus", "role": "Guest of Aeolus and conqueror of Circe" },
-    { "id": "aeolus-hippotas", "name": "Aeolus", "role": "Keeper of the winds" },
-    { "id": "circe", "name": "Circe", "role": "Enchantress of Aeaea" },
-    { "id": "hermes", "name": "Hermes", "role": "Giver of moly" },
-    { "id": "eurylochus", "name": "Eurylochus", "role": "He who fled from Circe's hall" },
-    { "id": "elpenor", "name": "Elpenor", "role": "He who fell from the roof" },
-    { "id": "telegonus-circe", "name": "Telegonus", "role": "Son begotten on Aeaea in one tradition" }
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Guest of Aeolus and conqueror of Circe"
+    },
+    {
+      "id": "aeolus-hippotas",
+      "name": "Aeolus",
+      "role": "Keeper of the winds"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "Enchantress of Aeaea"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "role": "Giver of moly"
+    },
+    {
+      "id": "eurylochus",
+      "name": "Eurylochus",
+      "role": "He who fled from Circe's hall"
+    },
+    {
+      "id": "elpenor",
+      "name": "Elpenor",
+      "role": "He who fell from the roof"
+    },
+    {
+      "id": "polites-odyssey",
+      "name": "Polites",
+      "role": "Dearest comrade who called to Circe — not polites-trojan"
+    },
+    {
+      "id": "perimedes-odyssey",
+      "name": "Perimedes",
+      "role": "Comrade of the surviving ship after Laestrygonia"
+    },
+    {
+      "id": "telegonus-circe",
+      "name": "Telegonus",
+      "role": "Son begotten on Aeaea in one tradition"
+    }
   ],
   "places": [
-    { "name": "Aeolus' isle", "role": "Floating island of the wind-king" },
-    { "name": "Laestrygonia", "role": "Harbour of the man-eating giants" },
-    { "name": "Aeaea", "role": "Circe's isle" }
+    {
+      "name": "Aeolus' isle",
+      "role": "Floating island of the wind-king",
+      "id": "aeolus-islands"
+    },
+    {
+      "name": "Laestrygonia",
+      "role": "Harbour of the man-eating giants",
+      "id": "laestrygonia"
+    },
+    {
+      "name": "Aeaea",
+      "role": "Circe's isle",
+      "id": "aeaea"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Odyssey", "citation": "10" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "7.10–17" }
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "10"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "7.10–17"
+    }
   ]
 }

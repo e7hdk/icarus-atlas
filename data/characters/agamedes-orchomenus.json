@@ -1,0 +1,58 @@
+{
+  "id": "agamedes-orchomenus",
+  "name": "Agamedes",
+  "greekName": "Agamēdēs (Ἀγαμήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Delphic treasury-builder",
+    "brother of Trophonius",
+    "the pit at Lebadeia"
+  ],
+  "summary": [
+    {
+      "text": "Son of Erginus of Orchomenus and brother of Trophonius, who with him built Apollo's temple at Delphi and Hyrieus' treasury before he was trapped in the king's snare and killed by his brother's hand — not to be confused with Agamedes son of Stymphalus in Arcadia.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4–9.37.7, 10.5.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Erginus son of Clymenus, childless in old age, received a Delphic oracle to wed anew, he begot Trophonius and Agamedes. Pausanias places both in the Minyan house at Orchomenus, though he notes that Trophonius is widely held a son of Apollo instead.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4–9.37.5"
+    },
+    {
+      "text": "The brothers grew skilled at sacred and royal architecture. They built Apollo's temple at Delphi and the stone treasury of Hyrieus, leaving one block removable from outside so they could pilfer the treasure while the seals stayed intact.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.5, 10.5.13"
+    },
+    {
+      "text": "When Hyrieus set traps over his gold and silver, Agamedes entered and was held fast. Trophonius cut off his head so that torture at dawn would not force a confession implicating them both. At Lebadeia the pit of Agamedes still marks the place, and inquirers of Trophonius sacrifice a ram over it calling upon Agamedes before they descend.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.6–9.37.7, 9.39.6"
+    },
+    {
+      "text": "The homonym hazard is real: Pausanias also names Agamedes son of Stymphalus in Arcadia, three generations from Arcas, whose line through Gortys and Hippothous ruled Tegea and Trapezus. Only Erginus' builder brother belongs in the Orchomenian royal batch beside Trophonius.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.4.8, 8.5.4, 9.37.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4"
+    },
+    {
+      "city": "delphi",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.5, 10.5.13"
+    },
+    {
+      "city": "lebadeia",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.6–9.37.7, 9.39.6"
+    }
+  ]
+}

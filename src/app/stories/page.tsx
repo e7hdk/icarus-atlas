@@ -1,4 +1,4 @@
-import { loadStories, loadStoryCrossings } from '@/features/stories/load';
+import { loadStories, loadStoryCrossings, loadChronology } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { MainNav } from '@/components/hud/MainNav';
 import { HudActions } from '@/components/hud/HudActions';
@@ -12,15 +12,16 @@ export const metadata = {
 };
 
 export default async function StoriesPage() {
-  const [stories, crossings, atlas] = await Promise.all([
+  const [stories, crossings, atlas, chronology] = await Promise.all([
     loadStories(),
     loadStoryCrossings(),
     loadAtlasData(),
+    loadChronology(),
   ]);
 
   return (
     <main className="fixed inset-0 overflow-hidden">
-      <MythsSpindleView stories={stories} crossings={crossings} />
+      <MythsSpindleView stories={stories} crossings={crossings} chronology={chronology} />
 
       <div className="pointer-events-none fixed left-0 right-0 top-0 z-30 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
         <IcarusBrand />

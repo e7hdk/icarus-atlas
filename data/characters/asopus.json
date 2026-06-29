@@ -18,5 +18,17 @@
       "sources": ["pausanias"],
       "citation": "Description of Greece 2.6.1-4"
     }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.6.1-4"
+    },
+    {
+      "city": "phlius",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 2.5.2"
+    }
   ]
 }

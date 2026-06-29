@@ -36,11 +36,28 @@
   "residences": [
     {
       "city": "athens",
-      "sources": ["homer", "apollodorus", "pausanias"]
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.550–580; Epitome 1.23–24"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.550–580, 4.310–345, 12.330–395, 13.675–720"
     },
     {
       "city": "melos",
-      "sources": ["apollodorus"]
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15b"
+    },
+    {
+      "city": "stiris-attica",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.35.8"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.550–580"
     }
   ]
 }

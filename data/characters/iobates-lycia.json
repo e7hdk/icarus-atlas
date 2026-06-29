@@ -1,0 +1,47 @@
+{
+  "id": "iobates-lycia",
+  "name": "Iobates",
+  "greekName": "Iobates (Ἰοβάτης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "king of Lycia",
+    "the death-token trials",
+    "father of Stheneboea and Philonoe"
+  ],
+  "summary": [
+    {
+      "text": "King of Lycia at the stream of Xanthus, father of Stheneboea and Philonoe, who received Bellerophon bearing Proetus' sealed murder-token and set him trial after trial — the Chimera, the Solymi, the Amazons, and an ambush of Lycians — before giving him his daughter and half the kingdom.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 6.171–199; Bibliotheca 2.3.1–2; Fabulae 57"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Proetus was driven from Argos he fled to Lycia and married Iobates' daughter; Apollodorus names her Stheneboea. Later, believing his wife's false charge against the guest Bellerophon, Proetus sent the hero to his father-in-law with baneful tokens graved in a folded tablet — and Iobates was that king.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.155–170; Bibliotheca 2.2.1, 2.3.1"
+    },
+    {
+      "text": "Bellerophon came to Lycia and the stream of Xanthus, where for nine days Iobates feasted him before reading the murderous tablet from his daughter's husband. Fear of the Erinyes kept the Lycian king from killing a guest outright; instead he ordered the stranger to slay the raging Chimera — a creature Apollodorus says Iobates believed would destroy him, for it was more than a match for many, let alone one.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.171–183; Bibliotheca 2.3.1"
+    },
+    {
+      "text": "When the Chimera fell, the trials did not end. Iobates sent Bellerophon against the glorious Solymi, then against the Amazons, and when those snares also failed, picked out the bravest Lycians and bade them lay an ambush — but the hero cut them down as well. Seeing that his guest was the valiant offspring of a god, Iobates kept him, gave him his daughter Philonoe and half of all his kingly honour, and dying bequeathed his realm.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 6.184–199; Bibliotheca 2.3.2; Fabulae 57"
+    },
+    {
+      "text": "Apollodorus notes that some call this Lycian king Amphianax instead of Iobates — a rival name in the tradition, not a second figure. The king who set the trials and gave his daughter to the Corinthian hero remains one man whether named Iobates or Amphianax.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.3.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "xanthus-lycia",
+      "sources": ["homer", "apollodorus"]
+    }
+  ]
+}

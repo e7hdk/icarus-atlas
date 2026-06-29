@@ -1,0 +1,93 @@
+{
+  "id": "atalanta-race",
+  "title": "Atalanta and Hippomenes",
+  "greekTitle": "Ἀταλάντη καὶ Ἱππομένης",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 6.4,
+  "summary": {
+    "text": "Atalanta of Arcadia, warned by an oracle that marriage would harm her, set suitors a deadly footrace — until the stranger Hippomenes, helped by Venus' three golden apples from Cyprus, slowed the swift virgin and won her; Apollodorus tells her exposure and bear-nursing, and Hyginus names the apples' divine gift.",
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Ov. Met. 10.560–680; Apollod. 3.9.2; Hyg. Fab. 185"
+  },
+  "chapters": [
+    {
+      "title": "The swift virgin",
+      "text": "Apollodorus gives her Arcadian birth: Iasus had a daughter Atalanta by Clymene, daughter of Minyas, and exposed the infant wanting sons. A she-bear suckled the child until hunters reared her. Grown to womanhood she kept herself a virgin and hunted in the wilderness. Ovid's oracle warned that marriage would only harm her, so she set suitors a race — losers died.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.9.2; Ov. Met. 10.560–610"
+    },
+    {
+      "title": "The stranger",
+      "text": "Hippomenes came from Onchestus, son of Megareus, condemning the rash youths who risked death for love — until he saw Atalanta stripped for the running and prayed to be her suitor. He begged Venus for aid; the goddess plucked three golden apples from her sacred tree at Tamasus in Cyprus and taught him their use.",
+      "sources": [
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Ov. Met. 10.610–650; Hyg. Fab. 185"
+    },
+    {
+      "title": "The golden apples",
+      "text": "In the race Hippomenes dropped the apples one by one; each time Atalanta turned aside to gather the gleaming fruit and lost ground. He reached the goal first and claimed her. Apollodorus notes that Euripides made Hippomenes, not Melanion, her husband — a rival tradition to the Melanion line.",
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Ov. Met. 10.650–680; Apollod. 3.9.2; Hyg. Fab. 185"
+    }
+  ],
+  "cast": [
+    {
+      "id": "atalanta",
+      "name": "Atalanta",
+      "role": "Swift Arcadian virgin who set the deadly race"
+    },
+    {
+      "id": "hippomenes",
+      "name": "Hippomenes",
+      "role": "Stranger who won her with golden apples"
+    },
+    {
+      "id": "aphrodite",
+      "name": "Venus",
+      "role": "Goddess who gave the apples from Cyprus"
+    }
+  ],
+  "places": [
+    {
+      "name": "Arcadia",
+      "role": "Land of Atalanta's upbringing and the race",
+      "id": "mantinea"
+    },
+    {
+      "name": "Tamasus",
+      "role": "Cyprus grove where Venus' golden apples grew",
+      "id": "tamassos"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "10.560–680"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.9.2"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "185"
+    }
+  ]
+}

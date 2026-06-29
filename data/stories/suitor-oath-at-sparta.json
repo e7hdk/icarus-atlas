@@ -7,66 +7,146 @@
   "era": 7.952,
   "summary": {
     "text": "When Helen daughter of Tyndareus was courted by every prince of Greece, Odysseus counselled the king to bind the suitors by oath — they would defend whichever man won her hand against any wrong. Menelaus took her; when Paris carried her off to Troy, the oath summoned the whole Achaean host under Agamemnon of Mycenae.",
-    "sources": ["apollodorus", "hyginus", "pausanias"],
+    "sources": [
+      "apollodorus",
+      "hyginus",
+      "pausanias"
+    ],
     "citation": "Apollod. Epit. 3.12; Hyg. Fab. 78; Paus. 3.20.9"
   },
   "chapters": [
     {
       "title": "The suitors at Lacedaemon",
       "text": "Tyndareus of Sparta had two daughters famed through Hellas: Clytaemnestra, whom Agamemnon of Mycenae would marry after slaying her first husband, and Helen, whose beauty drew every prince who could claim a kingdom. Apollodorus sets the court in the generation before Troy: suitors came from Argos and Mycenae, from Ithaca and Crete, from Thessaly and the islands — each hoping to win the bride and with her the honour of ruling beside Tyndareus' house. The king faced a peril every father of a famous daughter knew: choose one, and the rest might turn enemy.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 2.16, 3.12"
     },
     {
       "title": "Odysseus' counsel",
       "text": "Odysseus of Ithaca came among the suitors, though his heart was set on Penelope and he had no wish to win Helen himself. When Tyndareus asked how he might bind the princes to peace, Odysseus advised that all should swear a solemn oath: whichever man Tyndareus gave Helen to, the rest would defend him if any wrong were done to his marriage. Hyginus preserves the stratagem in his Fabulae; Apollodorus folds it into the Epic Cycle's opening of the Trojan war. The wily king of Ithaca traded counsel for a bride of his own — Penelope, daughter of Icarius — and left Sparta having shaped the alliance that would one day sail against Ilion.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 3.12; Hyg. Fab. 78"
     },
     {
       "title": "The horse and the oath",
       "text": "Pausanias saw at Sparta the tomb of Clytaemnestra's sister Timandra and the memory of how Tyndareus bound the suitors: he sacrificed a horse and made the princes swear over the cut pieces that they would defend Helen's chosen husband. The ritual fixed the oath in flesh and blood — not a mere banquet promise but a curse-backed compact of the kind Greek kings used when they needed every lord to keep faith. Whoever broke it would share the pollution of the sacrilege; whoever kept it would be bound to war when the wrong came.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Paus. 3.20.9"
     },
     {
       "title": "Menelaus and the kingdom",
       "text": "Tyndareus gave Helen to Menelaus, and ceded the kingdom of Sparta to his son-in-law. Apollodorus sets the marriage beside Agamemnon's union with Clytaemnestra: the two sons of Atreus now linked to the house of Tyndareus, Mycenae and Sparta joined in one family compact sealed by the suitors' oath. For years the oath slept — a promise made before any Trojan prince had stolen a queen — while Menelaus ruled in Lacedaemon and Helen bore Hermione in the halls of Tyndareus' line.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 2.16"
     },
     {
       "title": "When Paris took Helen",
       "text": "The wrong that woke the oath came from Mount Ida, not from Sparta. The nested episode on the Judgment of Paris tells how Alexander judged Aphrodite fairest and, at the goddess' prompting, carried Helen from his host Menelaus in Lacedaemon to Priam's Troy. Homer never narrates the abduction in full, but in the last book of the Iliad the sin still burns: holy Ilios remained hateful to Hera and Athena because of Alexander, who put reproach upon those goddesses when they came to his steading. Once Helen was gone, the suitors' oath had its work: every prince who had sworn over Tyndareus' horse must sail to recover her.",
-      "sources": ["homer", "hyginus", "apollodorus"],
+      "sources": [
+        "homer",
+        "hyginus",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 24.25–30; Hyg. Fab. 92; Apollod. Epit. 3.12"
     },
     {
       "title": "Agamemnon lord of the muster",
       "text": "The oath did not make Menelaus commander of all Greece. Agamemnon of Mycenae, brother of the wronged king and the greater lord, took leadership of the expedition the suitors were bound to join. Apollodorus opens the Cypria's war-book with that muster: the oath born at Sparta, the theft told in the Judgment episode, and the thousand ships gathering under the son of Atreus — first at Aulis, where Calchas would demand a darker price before the fleet could sail. The nested episode on Iphigenia at Aulis tells what happened when the host was becalmed on the Euboean shore.",
-      "sources": ["apollodorus", "homer"],
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Apollod. Epit. 3.12, 3.21–3.22; Hom. Il. 2.559–580"
     }
   ],
   "cast": [
-    { "id": "tyndareus", "name": "Tyndareus", "role": "King who bound the suitors by oath" },
-    { "id": "helen", "name": "Helen", "role": "The bride whose theft would summon the host" },
-    { "id": "menelaus", "name": "Menelaus", "role": "The husband the oath was sworn to defend" },
-    { "id": "odysseus", "name": "Odysseus", "role": "Author of the oath, suitor who won Penelope" },
-    { "id": "agamemnon", "name": "Agamemnon", "role": "Brother of Menelaus, lord of the muster" },
-    { "id": "clytemnestra", "name": "Clytemnestra", "role": "Helen's sister, queen of Mycenae" },
-    { "id": "paris", "name": "Paris", "role": "He who broke the marriage and woke the oath" },
-    { "name": "Penelope", "role": "Bride Odysseus won for his counsel at Sparta" }
+    {
+      "id": "tyndareus",
+      "name": "Tyndareus",
+      "role": "King who bound the suitors by oath"
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "role": "The bride whose theft would summon the host"
+    },
+    {
+      "id": "menelaus",
+      "name": "Menelaus",
+      "role": "The husband the oath was sworn to defend"
+    },
+    {
+      "id": "odysseus",
+      "name": "Odysseus",
+      "role": "Author of the oath, suitor who won Penelope"
+    },
+    {
+      "id": "agamemnon",
+      "name": "Agamemnon",
+      "role": "Brother of Menelaus, lord of the muster"
+    },
+    {
+      "id": "clytemnestra",
+      "name": "Clytemnestra",
+      "role": "Helen's sister, queen of Mycenae"
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "role": "He who broke the marriage and woke the oath"
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "Bride Odysseus won for his counsel at Sparta"
+    }
   ],
   "places": [
-    { "id": "sparta", "name": "Sparta", "role": "Where Tyndareus bound the suitors" },
-    { "id": "mycenae", "name": "Mycenae", "role": "Seat of Agamemnon, commander of the host" },
-    { "id": "troy", "name": "Troy", "role": "Whither Paris carried Helen" }
+    {
+      "id": "sparta",
+      "name": "Sparta",
+      "role": "Where Tyndareus bound the suitors"
+    },
+    {
+      "id": "mycenae",
+      "name": "Mycenae",
+      "role": "Seat of Agamemnon, commander of the host"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Whither Paris carried Helen"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "Epitome", "citation": "3.12" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "78" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "3.20.9" },
-    { "source": "homer", "work": "Iliad", "citation": "24.25–30" }
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "3.12"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "78"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "3.20.9"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "24.25–30"
+    }
   ]
 }

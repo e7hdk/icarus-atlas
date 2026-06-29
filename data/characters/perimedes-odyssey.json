@@ -1,0 +1,88 @@
+{
+  "id": "perimedes-odyssey",
+  "name": "Perimedes",
+  "greekName": "Perimedēs (Περιμήδης)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Odysseus' comrade",
+    "sacrifice bearer at Hades",
+    "mast-binder at the Sirens"
+  ],
+  "summary": [
+    {
+      "text": "Perimedes of Odysseus' wanderings — one of the hero's trusty comrades who held the sacrificial victims beside Eurylochus at the pit of blood in the house of Hades, and who helped bind Odysseus upright to the mast when the ship passed the Sirens. Not the Cephallenian suitor from Same (`perimedes-same`).",
+      "sources": ["homer", "pausanias"],
+      "citation": "Odyssey 11.1–50, 12.195–230; Description of Greece 10.29.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Circe sent Odysseus to Oceanus and the house of Hades, Perimedes and Eurylochus held the black victims while the hero dug the pit a cubit long and wide, poured libations of milk and honey and wine, and sprinkled white barley — then the shades of the dead came thronging to drink the blood.",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.1–50"
+    },
+    {
+      "text": "After the Nekuia and Elpenor's burial on Aeaea, Perimedes helped carry out Circe's counsel at the Sirens' isle: he stopped his comrades' ears with wax and lashed Odysseus naked to the mast so the hero alone could hear the deadly song yet live to tell of it.",
+      "sources": ["homer"],
+      "citation": "Odyssey 12.195–230"
+    },
+    {
+      "text": "Pausanias saw Perimedes among the comrades of Odysseus on the chest of Cypselus at Olympia — carrying black rams as sacrificial victims beside Eurylochus, the same office Homer assigns at the pit of Ocean.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.29.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.1–50, 12.195–230"
+    },
+    {
+      "city": "ciconia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.39–66"
+    },
+    {
+      "city": "maroneia-thrace",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.196–215"
+    },
+    {
+      "city": "lotus-eaters",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.82–104"
+    },
+    {
+      "city": "cyclopes-isle",
+      "sources": ["homer"],
+      "citation": "Odyssey 9.105–542"
+    },
+    {
+      "city": "aeolus-islands",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.1–88"
+    },
+    {
+      "city": "laestrygonia",
+      "sources": ["homer"],
+      "citation": "Odyssey 10.81–132"
+    },
+    {
+      "city": "aeaea",
+      "sources": ["homer"],
+      "citation": "Odyssey 11.1–50, 12.1–35"
+    },
+    {
+      "city": "anthemoessa",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.158–200; Bibliotheca 1.9.25"
+    },
+    {
+      "city": "thrinacia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 12.260–420; Epitome 7.20–22"
+    }
+  ]
+}

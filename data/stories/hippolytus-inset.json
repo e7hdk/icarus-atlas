@@ -1,49 +1,103 @@
 {
   "id": "hippolytus-inset",
-  "title": "Hippolytus",
+  "title": "Hippolytus (Virbius)",
   "greekTitle": "Ἱππόλυτος",
   "kind": "episode",
   "parent": "metamorphoses",
-  "era": 7.985,
+  "era": 6.785,
   "summary": {
     "text": "In the fifteenth book, before Caesar rises among the stars, Ovid retells how Phaedra falsely accused Hippolytus and Poseidon sent a bull from the sea to wreck his chariot — and how Diana hid the restored youth as Virbius in her sacred grove, a chaste hunter destroyed by a stepmother's lie.",
-    "sources": ["ovid", "apollodorus", "hyginus"],
+    "sources": [
+      "ovid",
+      "apollodorus",
+      "hyginus"
+    ],
     "citation": "Ov. Met. 15.712–816; Apollod. Epit. 1.16, 1.18–19; Hyg. Fab. 47"
   },
   "chapters": [
     {
       "title": "The chaste hunter",
       "text": "Hippolytus son of Theseus and an Amazon — Antiope or Hippolyte in the rival lists — served Artemis and scorned Aphrodite's realm. He would not look on women; he hunted on the shore and kept his heart for the goddess of the chase. The full Theseus arc lives on the Theseus shelf; Metamorphoses keeps the tragedy as penultimate Greek inset before Rome's apotheosis.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 15.712–750; Apollod. Epit. 1.16"
     },
     {
       "title": "Phaedra's lie",
       "text": "Theseus wedded Phaedra daughter of Minos, and she fell in love with her stepson. When Hippolytus fled her embraces, she opened her chamber doors, tore her robe, and told the king the youth had assaulted her. Theseus prayed to Poseidon for his son's death — the curse that no mortal could recall.",
-      "sources": ["ovid", "apollodorus", "hyginus"],
+      "sources": [
+        "ovid",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Ov. Met. 15.750–780; Apollod. Epit. 1.18; Hyg. Fab. 47"
     },
     {
       "title": "Virbius",
       "text": "A bull rose from the sea; the horses bolted; Hippolytus was dragged entangled in the reins. Phaedra hanged herself when the truth emerged. Apollodorus adds that Asclepius raised him — for which Zeus struck the healer — and Ovid has Diana hide the restored youth in her grove under the name Virbius, forever chaste, forever hers.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 15.780–816; Apollod. Epit. 1.19"
     }
   ],
   "cast": [
-    { "id": "hippolytus", "name": "Hippolytus", "role": "Chaste hunter destroyed by false accusation" },
-    { "id": "phaedra", "name": "Phaedra", "role": "Stepmother who lied to Theseus" },
-    { "id": "theseus", "name": "Theseus", "role": "Father who prayed for his son's death" },
-    { "id": "poseidon", "name": "Poseidon", "role": "God who sent the bull from the sea" },
-    { "id": "artemis", "name": "Artemis", "role": "Goddess who hid Virbius in her grove" }
+    {
+      "id": "hippolytus",
+      "name": "Hippolytus",
+      "role": "Chaste hunter destroyed by false accusation"
+    },
+    {
+      "id": "phaedra",
+      "name": "Phaedra",
+      "role": "Stepmother who lied to Theseus"
+    },
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "Father who prayed for his son's death"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "God who sent the bull from the sea"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Goddess who hid Virbius in her grove"
+    }
   ],
   "places": [
-    { "id": "athens", "name": "Athens", "role": "City of Theseus and the tragedy" },
-    { "name": "Troezen", "role": "Shore where Hippolytus drove his chariot" }
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "City of Theseus and the tragedy"
+    },
+    {
+      "name": "Troezen",
+      "role": "Shore where Hippolytus drove his chariot",
+      "id": "troezen"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "15.712–816" },
-    { "source": "apollodorus", "work": "Epitome", "citation": "1.16, 1.18–19" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "47" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "15.712–816"
+    },
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "1.16, 1.18–19"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "47"
+    }
   ]
 }

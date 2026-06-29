@@ -1,0 +1,82 @@
+{
+  "id": "picus-canens",
+  "title": "Picus, Canens and Circe",
+  "greekTitle": "Πίκος καὶ Κανήν",
+  "kind": "episode",
+  "parent": "metamorphoses",
+  "era": 8.5,
+  "summary": {
+    "text": "Picus, son of Saturn and king of the Ausonian land, loved the singer Canens — until Circe, whom he refused, changed him into a woodpecker; Canens searched the woods until she wasted away into air, and the Laurentine grove kept the name of the lost king.",
+    "sources": [
+      "ovid"
+    ],
+    "citation": "Ov. Met. 14.320–434"
+  },
+  "chapters": [
+    {
+      "title": "The woodpecker king",
+      "text": "Picus ruled Latium, skilled in horses and hunting, beautiful and virtuous, wed to Canens — called so because her voice moved woods and rocks, tamed beasts, and stayed wandering birds. While she sang in their Laurentine palace, Picus rode out to hunt boar on the fields.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 14.320–360"
+    },
+    {
+      "title": "Circe's desire",
+      "text": "Circe saw him on the plain and burned to have him. She smeared his path with magic herbs; when he returned on his horse she blocked him with charms and offered herself. Picus refused — he belonged to another — and Circe, scorned, struck him with her wand and changed him into a bird with crimson crest: the woodpecker that still pecks at oak trees.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 14.360–400"
+    },
+    {
+      "title": "Canens' end",
+      "text": "Canens searched the woods for her husband until the seventh day, when she could no longer endure the long grief. She melted away into thin air, wasted by sorrow — and the place was called the Canens grove after her. Picus' companions, changed to wild beasts by Circe's anger, were restored only when the crew of Aeneas later came to the shore.",
+      "sources": [
+        "ovid"
+      ],
+      "citation": "Ov. Met. 14.400–434"
+    }
+  ],
+  "cast": [
+    {
+      "id": "picus-latium",
+      "name": "Picus",
+      "role": "Latian king changed into a woodpecker"
+    },
+    {
+      "id": "canens",
+      "name": "Canens",
+      "role": "Singer-wife who wasted away in searching"
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "Sorceress who transformed the king"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "role": "Saturn, father of Picus"
+    }
+  ],
+  "places": [
+    {
+      "name": "Latium",
+      "role": "Ausonian land Picus ruled",
+      "id": "lavinium"
+    },
+    {
+      "name": "Laurentum",
+      "role": "Region of the royal hunt and Canens' grove",
+      "id": "lavinium"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "14.320–434"
+    }
+  ]
+}

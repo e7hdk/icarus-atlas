@@ -3,6 +3,7 @@
   "name": "Abarbarea",
   "greekName": "Abarbareē (Ἀβαρβαρέη)",
   "type": "nymph",
+  "kinds": ["naiad"],
   "domains": ["fountain-nymph", "mother of Aesepus and Pedasus"],
   "cluster": "mortal-arm",
   "summary": [
@@ -15,6 +16,19 @@
   "story": [
     {
       "text": "Homer names Abarbarea only through her sons: Euryalus slew Dresus and Opheltius, then went on after Aesepus and Pedasus, whom on a time the fountain-nymph Abarbarea bare to peerless Bucolion when he lay with her in love amid the flocks.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.1–35"
+    },
+    {
+      "text": "The same passage sets Bucolion himself as son of lordly Laomedon, eldest born though the mother that bare him was unwed — then turns to Abarbarea as the nymph he lay with while shepherding. Apollodorus instead names a nymph Calybe as Bucolion's mother in the king's prose genealogy, leaving two fountain-nymph traditions in the Laomedon stemma.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 6.1–35; Bibliotheca 3.12.3",
+      "topic": "bucolion-mother"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
       "sources": ["homer"],
       "citation": "Iliad 6.1–35"
     }

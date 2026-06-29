@@ -7,46 +7,89 @@
   "era": 7.125,
   "summary": {
     "text": "Byblis daughter of Miletus loved her twin brother Caunus with a passion no sister should feel — she wrote him letters, pursued him across Caria and Lycia, and when he fled forever she wasted to tears and became a spring; Ovid sets her as the warning example that a maiden's love must stay within law.",
-    "sources": ["ovid"],
+    "sources": [
+      "ovid"
+    ],
     "citation": "Ov. Met. 9.676–1057"
   },
   "chapters": [
     {
       "title": "Forbidden love",
       "text": "Near the wandering Maeander, Cyane daughter of the river bore Miletus two children of surpassing beauty — Byblis and Caunus, twins. Byblis is Ovid's exemplum: she loved her brother not as a sister should, with a fire she at first did not recognize as sin, until longing outgrew shame and she resolved to speak.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 9.676–750"
     },
     {
       "title": "The letters",
       "text": "She wrote Caunus a letter confessing all — would that she might plead without naming herself, she says, until hope was realized. The servant who should deliver it read the scroll aloud in error; Caunus fled in horror, renouncing kinship and homeland. Byblis sent more letters; he would not read them. She followed, unkempt, a Bacchant of unlawful love.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 9.750–950"
     },
     {
       "title": "The pursuit",
       "text": "Through Caria and Lycia, over Cragus and past Lymira and the Xanthus, Byblis howled after the fleeing youth — past Bubassus, beyond the ridge of Chimaera, until Caunus vanished into lands she could not enter. Her hair fell loose, her girdle dropped, and she beat her breasts in the frenzy the Maeander's country had never seen.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 9.950–1003"
     },
     {
       "title": "The spring",
       "text": "At last she lay down where she had chased him and never rose. The nymphs who pity hidden grief saw her limbs grow stiff, her veins turn to water, and Byblis herself become a spring that still weeps beneath the ilex — love unchanged in form, but changed enough that law could bear it.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 9.1004–1057"
     }
   ],
   "cast": [
-    { "id": "byblis-miletus", "name": "Byblis", "role": "Sister who loved her twin beyond lawful bounds" },
-    { "id": "caunus-miletus", "name": "Caunus", "role": "Brother who fled her passion" },
-    { "id": "cyane-maeander", "name": "Cyane", "role": "Their mother, nymph of the Maeander" }
+    {
+      "id": "miletus-apollonid",
+      "name": "Miletus",
+      "role": "Father of Byblis and Caunus, eponym of the city"
+    },
+    {
+      "id": "byblis-miletus",
+      "name": "Byblis",
+      "role": "Sister who loved her twin beyond lawful bounds"
+    },
+    {
+      "id": "caunus-miletus",
+      "name": "Caunus",
+      "role": "Brother who fled her passion"
+    },
+    {
+      "id": "cyane-maeander",
+      "name": "Cyane",
+      "role": "Their mother, nymph of the Maeander"
+    }
   ],
   "places": [
-    { "id": "miletus", "name": "Miletus", "role": "Ionian city near the Maeander's mouth" },
-    { "name": "Caria", "role": "Land through which Byblis pursued her brother" },
-    { "name": "Lycia", "role": "Southern coast where Caunus escaped her" }
+    {
+      "id": "miletus",
+      "name": "Miletus",
+      "role": "Ionian city near the Maeander's mouth"
+    },
+    {
+      "name": "Caria",
+      "role": "Land through which Byblis pursued her brother",
+      "id": "halicarnassus"
+    },
+    {
+      "name": "Lycia",
+      "role": "Southern coast where Caunus escaped her",
+      "id": "xanthus-lycia"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "9.676–1057" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "9.676–1057"
+    }
   ]
 }

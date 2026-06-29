@@ -1,0 +1,72 @@
+{
+  "id": "argus-eponym",
+  "name": "Argus",
+  "greekName": "Argos (Ἄργος)",
+  "type": "mortal",
+  "domains": [
+    "eponym of Argos",
+    "Peloponnesian kingship",
+    "avenger of Apis"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Son of Zeus and Niobe daughter of Phoroneus who received the kingdom after Apis, named the Peloponnese Argos after himself, and begat the line that leads through Criasus to the age of Io and Danaus.",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.1–2.1.2; Fabulae 124, 145; Description of Greece 2.16.1, 2.22.5"
+    },
+    {
+      "text": "Not Argus Panoptes the All-seeing, nor Argus son of Arestor who built the Argo, nor other homonymous Argus figures in later myth.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.2–2.1.3; Description of Greece 2.16.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Apis died childless after his tyranny, Argus received the kingdom and called the Peloponnese after himself Argos. He married Evadne, daughter of Strymon and Neaera, and begat Ecbasus, Piras, Epidaurus, and Criasus, who also succeeded to the kingdom. From Ecbasus' branch came another Argus, the All-seeing, who avenged the murder of Apis by putting the guilty to death.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.1.1–2.1.2"
+    },
+    {
+      "text": "Pausanias' native king-list makes Argus the grandson of Phoroneus who succeeded to the throne and gave his name to the land; Argus begat Peirasus and Phorbas, and through that house the succession runs to Triopas and Iasus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "Hyginus places Argus immediately after Phoroneus in the catalogue of Achaean kings and makes him son of Jove and Nioba; his name stands at the head of the Argive roll before Peranthus, Triops, Pelasgus, and Danaus.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 124, 145"
+    },
+    {
+      "text": "The Argives showed Pausanias the grave of Argus, said to be the son of Zeus and Niobe daughter of Phoroneus — a hero's tomb beside the sanctuary of the Dioscuri.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.22.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.1–2.1.2; Fabulae 124, 145; Description of Greece 2.16.1, 2.22.5"
+    }
+  ]
+}

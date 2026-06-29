@@ -7,41 +7,81 @@
   "era": 6.02,
   "summary": {
     "text": "Arachne of Lydia, famed for weaving though born to humble dyers at Colophon, refused to credit Athena and challenged the goddess to a contest — and when Minerva's tapestry of divine majesty surpassed her own catalogue of the gods' crimes, the shuttle struck her brow and the mortal hung herself, to be saved only as a spider dangling forever on her thread.",
-    "sources": ["ovid"],
+    "sources": [
+      "ovid"
+    ],
     "citation": "Ov. Met. 6.1–137, 6.138–244"
   },
   "chapters": [
     {
       "title": "Pride of the loom",
       "text": "When the Pierides were turned to chattering magpies for slighting the Muses, Minerva brooded on another mortal who denied her art — Arachne, whose skill in wool had made her famous through Lydia though her father Idmon dyed fleeces at Colophon and her mother was of the common folk. Nymphs left Timolus and Pactolus to watch her spin; she boasted that she needed no teacher and dared the goddess herself to a contest.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 6.1–137"
     },
     {
       "title": "The contest",
       "text": "Minerva came disguised as an old woman and urged the girl to ask pardon; Arachne scowled and bade the goddess come in person. At once Athena stood revealed, and both set their webs. Minerva wove the court of the gods, the dispute of Athens — olive against Neptune's horse — and in the corners the punished mortals who had rivalled heaven. Arachne answered with Europa on the bull, Leda and the swan, Jove as shower and serpent and shepherd, Neptune's many disguises, and Apollo too — a tapestry flawless in craft that confessed the gods' deceits.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 6.1–137, 6.138–244"
     },
     {
       "title": "The spider",
       "text": "Finding no flaw, Minerva tore the web and struck Arachne three times and more upon the head. The mortal tied a noose and hanged herself; the goddess, moved to pity yet still angry, sprinkled her with Hecate's juice — hair, nose, and ears fell away, her body shrank, her fingers gathered to her sides as thin legs, and ever since Arachne weaves her thread as a spider. The rumour ran through Lydia to Phrygia, and soon reached Niobe — who learned nothing from the fate she had once known at Maeonia.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 6.138–244, 6.245–371"
     }
   ],
   "cast": [
-    { "id": "athena", "name": "Athena", "role": "Minerva, goddess of craft and contest judge" },
-    { "name": "Arachne", "role": "Lydian weaver transformed into a spider" },
-    { "name": "Niobe", "role": "Queen who heard the tale and did not heed it" }
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Minerva, goddess of craft and contest judge"
+    },
+    {
+      "id": "arachne-lydia",
+      "name": "Arachne",
+      "role": "Lydian weaver transformed into a spider"
+    },
+    {
+      "id": "niobe",
+      "name": "Niobe",
+      "role": "Queen who heard the tale and did not heed it"
+    }
   ],
   "places": [
-    { "name": "Colophon", "role": "City where Arachne's father dyed wool" },
-    { "id": "sardis", "name": "Sardis", "role": "Lydian capital near her mountain fame" },
-    { "name": "Hypaepa", "role": "Small town where she dwelt" },
-    { "name": "Mount Sipylus", "role": "Where Niobe had known her before" }
+    {
+      "name": "Colophon",
+      "role": "City where Arachne's father dyed wool",
+      "id": "colophon"
+    },
+    {
+      "id": "sardis",
+      "name": "Sardis",
+      "role": "Lydian capital near her mountain fame"
+    },
+    {
+      "name": "Hypaepa",
+      "role": "Small town where she dwelt",
+      "id": "hypaepa"
+    },
+    {
+      "name": "Mount Sipylus",
+      "role": "Where Niobe had known her before",
+      "featureId": "mount-sipylus"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "6.1–371" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "6.1–371"
+    }
   ]
 }

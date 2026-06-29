@@ -1,0 +1,47 @@
+{
+  "id": "phineus-ethiopia",
+  "name": "Phineus",
+  "greekName": "Phineus (Φινεύς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the rejected betrothal",
+    "the petrified feast",
+    "brother of Cepheus"
+  ],
+  "summary": [
+    {
+      "text": "Brother of King Cepheus of Ethiopia and first betrothed to Andromeda, who attacked Perseus at the wedding feast and was turned to stone with the Gorgon's head — a wholly different Phineus from the blind Thracian seer tormented by the Harpies at Salmydessus.",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 5.1–249; Fabulae 64"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Phineus a brother of Cepheus and records that Andromeda had first been betrothed to him before Perseus rescued her from the rock and won her by slaying the sea-monster. When the marriage feast was held, Phineus plotted against the hero with armed men; Perseus discovered the conspiracy and showed the head of Medusa, and Phineus and his fellow conspirators were turned at once into stone.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.3"
+    },
+    {
+      "text": "Ovid tells the wedding battle at length: Phineus, the former suitor, rushes in with his company, spears fly, and Perseus at last unveils the Gorgon's face — the last great use of the trophy before he laid it under the earth. Hyginus likewise sets Phineus among those who opposed the marriage after Andromeda was freed from the monster.",
+      "sources": ["ovid", "hyginus"],
+      "citation": "Metamorphoses 5.1–249; Fabulae 64"
+    },
+    {
+      "text": "The name is shared with the Argonaut seer of Thrace, son of Agenor or Poseidon in competing accounts, whom the Boreads freed from the Harpies — that Phineus prophesied the Clashing Rocks; this Phineus ends as a statue among the wedding guests. The atlas keeps them apart as `phineus-thrace` and `phineus-ethiopia`.",
+      "sources": ["apollodorus", "apollonius"],
+      "citation": "Bibliotheca 1.9.21, 2.4.3; Argonautica 2.178–490"
+    }
+  ],
+  "residences": [
+    {
+      "city": "aethiopia",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 5.1–249; Fabulae 64"
+    }
+  ]
+}

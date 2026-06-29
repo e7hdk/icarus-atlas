@@ -36,6 +36,16 @@
     {
       "city": "calydon",
       "sources": ["homer"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.638–644"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.638–644, 13.206–214"
     }
   ]
 }

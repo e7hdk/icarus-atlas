@@ -3,56 +3,123 @@
   "title": "The Madness of Lycurgus",
   "greekTitle": "Λυκοῦργος ὁ Θρᾷξ",
   "kind": "episode",
-  "parent": null,
+  "parent": "dionysus-cycle",
   "era": 5.3,
   "summary": {
     "text": "Lycurgus son of Dryas, king of the Edonians beside the Strymon, was the first to insult Dionysus — driving the nurses from Nysa with an ox-goad until the god fled to Thetis in the sea and the gods blinded the persecutor, who did not live long after.",
-    "sources": ["homer", "apollodorus", "hyginus", "ovid"],
+    "sources": [
+      "homer",
+      "apollodorus",
+      "hyginus",
+      "ovid"
+    ],
     "citation": "Hom. Il. 6.130–140; Apollod. 3.5.1; Hyg. Fab. 132, 242; Ov. Met. 4.1–75"
   },
   "chapters": [
     {
       "title": "Through Thrace",
       "text": "Dionysus discovered the vine and, driven mad by Hera, wandered Egypt and Syria until Proteus received him. Purified by Rhea on Mount Cybela and taught the rites of initiation, he took the Bacchic costume and hastened through Thrace toward India — the wine-god at the height of his wandering triumph.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 3.5.1"
     },
     {
       "title": "The Edonian king",
       "text": "Lycurgus son of Dryas ruled the Edonians who dwelt beside the river Strymon. He was the first who insulted and expelled Dionysus, seizing the Bacchanals and the god's satyr companions as prisoners. Hyginus says he denied that Liber was a god, drank wine, and in drunkenness tried to violate his mother, then cut down the vines because wine poisoned the mind.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.5.1; Hyg. Fab. 132"
     },
     {
       "title": "Nysa and the ox-goad",
       "text": "On the sacred mount of Nysa, man-slaying Lycurgus drove the nursing mothers of raging Dionysus downhill with an ox-goad; the women dropped their wands and fled. The young god dove terrified beneath the waves, and Thetis daughter of Nereus received him in her bosom — but the gods blinded Lycurgus, and he did not live long after, a warning Diomedes would one day hold up before a hero who might fight heaven.",
-      "sources": ["homer", "apollodorus"],
+      "sources": [
+        "homer",
+        "apollodorus"
+      ],
       "citation": "Hom. Il. 6.130–140; Apollod. 3.5.1"
     },
     {
       "title": "Madness and death",
       "text": "Liber sent Lycurgus madness for his persecution. Ovid counts him among those Bacchus smote — the wielder of the ax hurled down like Pentheus and the Tyrrhenian sailors. Hyginus closes the tale with self-destruction: Lycurgus son of Dryas killed himself in the madness the god sent, another king broken for denying Dionysus.",
-      "sources": ["hyginus", "ovid"],
+      "sources": [
+        "hyginus",
+        "ovid"
+      ],
       "citation": "Hyg. Fab. 132, 242; Ov. Met. 4.1–75"
     }
   ],
   "cast": [
-    { "id": "lycurgus-thrace", "name": "Lycurgus", "role": "Edonian king who persecuted the god" },
-    { "id": "dryas-thrace", "name": "Dryas", "role": "Father of Lycurgus" },
-    { "id": "dionysus", "name": "Dionysus", "role": "Wine-god driven from Thrace" },
-    { "id": "thetis", "name": "Thetis", "role": "Nereid who sheltered the god in the sea" },
-    { "id": "silenus", "name": "Silenus", "role": "Satyr companion taken prisoner" },
-    { "id": "rhea", "name": "Rhea", "role": "She who purified Dionysus in Phrygia" }
+    {
+      "id": "lycurgus-thrace",
+      "name": "Lycurgus",
+      "role": "Edonian king who persecuted the god"
+    },
+    {
+      "id": "dryas-thrace",
+      "name": "Dryas",
+      "role": "Father of Lycurgus"
+    },
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "role": "Wine-god driven from Thrace"
+    },
+    {
+      "id": "thetis",
+      "name": "Thetis",
+      "role": "Nereid who sheltered the god in the sea"
+    },
+    {
+      "id": "silenus",
+      "name": "Silenus",
+      "role": "Satyr companion taken prisoner"
+    },
+    {
+      "id": "rhea",
+      "name": "Rhea",
+      "role": "She who purified Dionysus in Phrygia"
+    }
   ],
   "places": [
-    { "name": "Mount Nysa", "role": "Sacred mountain of the nurses" },
-    { "name": "The Strymon", "role": "River beside which the Edonians dwelt" },
-    { "name": "Thrace", "role": "Land through which Dionysus marched" }
+    {
+      "name": "Mount Nysa",
+      "role": "Sacred mountain of the nurses",
+      "featureId": "mount-nysa"
+    },
+    {
+      "name": "The Strymon",
+      "role": "River beside which the Edonians dwelt",
+      "featureId": "strymon"
+    },
+    {
+      "name": "Thrace",
+      "role": "Land through which Dionysus marched"
+    }
   ],
   "attestations": [
-    { "source": "homer", "work": "Iliad", "citation": "6.130–140" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.5.1" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "132, 242" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "4.1–75" }
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "6.130–140"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.5.1"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "132, 242"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "4.1–75"
+    }
   ]
 }

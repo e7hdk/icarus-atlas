@@ -1,0 +1,43 @@
+{
+  "id": "metaneira",
+  "name": "Metaneira",
+  "greekName": "Metaneira (Μετάνειρα)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "queen of Eleusis",
+    "mother of Triptolemus",
+    "the interrupted immortal rite"
+  ],
+  "summary": [
+    {
+      "text": "Wife of Celeus king of Eleusis who welcomed Demeter in mortal guise and entrusted her infant son to the goddess — until her cry broke the charm that would have made the child immortal.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.39.1–2"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Demeter wandered the earth after Persephone's rape, Apollodorus says, she came in the likeness of an old woman to Eleusis and was welcomed by Celeus and Metaneira. The queen entrusted to her the rearing of her son — and Demeter anointed the child with ambrosia and breathed on him, nursing him in the fire by night to make him immortal.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.39.1"
+    },
+    {
+      "text": "Metaneira saw the babe in the flames and cried out in terror, breaking the rite. Demeter revealed herself and commanded that the Eleusinians build her a temple and institute the mysteries — but the queen's interruption cost her son the godlike age Demeter had begun to bestow. Pausanias tells how the daughters of Celeus found the goddess at the Flowery Well and brought her home to their mother.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.39.1–2"
+    },
+    {
+      "text": "For Triptolemus, the elder of Metaneira's children, Demeter fashioned a chariot of winged dragons and gave him wheat to sow over the inhabited earth — the gift of agriculture that spread from Eleusis through the sky. The infant whose immortality Metaneira's cry denied is a separate namesake from Demophon son of Theseus and Phaedra.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "eleusis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.39.1–2"
+    }
+  ]
+}

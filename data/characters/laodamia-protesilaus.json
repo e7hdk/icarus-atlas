@@ -1,0 +1,43 @@
+{
+  "id": "laodamia-protesilaus",
+  "name": "Laodamia",
+  "greekName": "Laodameia (Λαοδάμεια)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "wife of Protesilaus",
+    "the image of the dead",
+    "daughter of Acastus"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Acastus and wife of Protesilaus, who loved her husband even after he was first ashore and first to die at Troy — making an image of him and consorting with it until Hermes brought the hero up from Hades for a brief reunion, after which she could not endure her grief.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.30; Fabulae 103–104, 243, 256"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Protesilaus leapt first from his ship and fell to Hector, Laodamia was left in Phylace with her house but half established — Homer saw her two cheeks torn in wailing while the black earth held her husband fast.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.695–730; Epitome 3.30"
+    },
+    {
+      "text": "Apollodorus says she loved Protesilaus even after his death, made an image of him, and consorted with it. The gods had pity on her, and Hermes brought Protesilaus up from Hades; on seeing him Laodamia thought he had returned from Troy and was glad — but when he was led back down she stabbed herself.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.30"
+    },
+    {
+      "text": "Hyginus names her daughter of Acastus. When she heard of her husband's death she begged the gods for three hours' speech with him; Mercury led Protesilaus back and she spoke with him for the allotted time, then made a bronze likeness and could not endure her weeping and grief.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 103–104; Description of Greece 5.17.10"
+    }
+  ],
+  "residences": [
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.695–730; Epitome 3.30"
+    }
+  ]
+}

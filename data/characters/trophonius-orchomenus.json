@@ -1,0 +1,64 @@
+{
+  "id": "trophonius-orchomenus",
+  "name": "Trophonius",
+  "greekName": "Trophōnios (Τροφώνιος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "oracle of Lebadeia",
+    "Delphic temple-builder",
+    "son of Erginus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Erginus of Orchomenus — though many who descend into his oracle hold him a child of Apollo — who with his brother Agamedes built Apollo's temple at Delphi and Hyrieus' treasury before the earth swallowed him in the grove at Lebadeia.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4–9.37.7, 10.5.13"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Erginus son of Clymenus, crushed by Heracles and childless in old age, asked Delphi about offspring, the Pythia bade him wed anew and beget children. He obeyed, and Trophonius and Agamedes were born — the builders Pausanias sets in the Minyan royal house at Orchomenus.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4"
+    },
+    {
+      "text": "As they grew, the brothers proved clever at building sanctuaries for gods and palaces for men. They raised Apollo's temple at Delphi and the treasury of Hyrieus, fitting one stone so it could be removed from outside; by that contrivance they kept stealing from the store while keys and seals looked untouched.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.5, 10.5.13"
+    },
+    {
+      "text": "Hyrieus set snares over his vessels of silver and gold. Agamedes entered and was caught fast, but Trophonius cut off his brother's head lest torture at daybreak betray them both. The earth then opened and swallowed Trophonius at the point in the Lebadeian grove where the pit of Agamedes stands, with a slab beside it — and Lebadea itself was dedicated to Trophonius as to a god.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.34.2, 9.37.6–9.37.7"
+    },
+    {
+      "text": "Pausanias adds that Trophonius is said to have been a son of Apollo, not of Erginus — a genealogy he and everyone who has gone down to inquire of the oracle are inclined to believe. The Erginus line and the Apolline parentage both belong in our lens, not one silently merged.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.5",
+      "topic": "trophonius-paternity"
+    },
+    {
+      "text": "Their craft reached beyond Delphi: at Thebes they built the chamber of Alcmena for Amphitryon, with an inscription naming Anchasian Trophonius and Agamedes as its makers; and at Mantinea they first raised Poseidon's sanctuary from fitted oak logs before stone replaced the ruins.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.10.2, 9.11.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.4"
+    },
+    {
+      "city": "delphi",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.5, 10.5.13"
+    },
+    {
+      "city": "lebadeia",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.37.6–9.37.7, 9.39.1"
+    }
+  ]
+}

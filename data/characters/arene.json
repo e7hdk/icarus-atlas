@@ -60,6 +60,11 @@
     {
       "city": "arene",
       "sources": ["pausanias", "apollodorus"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.10.3; Description of Greece 3.1.4, 4.2.4"
     }
   ]
 }

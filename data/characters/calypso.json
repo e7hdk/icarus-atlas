@@ -32,6 +32,17 @@
       "text": "To the Phaeacians Odysseus himself told the tale: fate brought him to Calypso's hearth after Zeus shattered his ship; she kept him seven years until the seasons turned to the year the gods had ordained for his homecoming. Menelaus, told by Proteus in Egypt, had already heard that Odysseus was alive but detained on her isle — the first sure news Telemachus received that his father still lived.",
       "sources": ["homer"],
       "citation": "Odyssey 4.555–590, 7.240–285"
+    },
+    {
+      "text": "Homer names her only as the fair-tressed daughter of Atlas on Ogygia — a dread goddess and guileful nymph — without any nymph sub-class tag in our seven lenses. Hesiod lists a different Calypso among the daughters of Ocean and Tethys, but that Oceanid roll is not merged into this Odyssey figure. Per NYMPHS.md Batch K policy, `kinds` remain empty until a sourced FigureKind sub-class is attested for Homer's detainee of Odysseus.",
+      "sources": ["homer", "hesiod"],
+      "citation": "Odyssey 7.240–285; Theogony 345–365"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ogygia",
+      "sources": ["homer"]
     }
   ]
 }

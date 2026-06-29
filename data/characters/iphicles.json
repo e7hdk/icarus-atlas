@@ -70,5 +70,29 @@
       ],
       "citation": "Description of Greece 8.14.9–10"
     }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5–8"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 1.8.2, 2.4.8, 2.4.11"
+    },
+    {
+      "city": "mycenae",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.5–8"
+    }
   ]
 }

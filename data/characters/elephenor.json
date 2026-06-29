@@ -31,6 +31,30 @@
     {
       "city": "chalcis",
       "sources": ["homer"]
+    },
+    {
+      "city": "carystus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545"
+    },
+    {
+      "city": "styra",
+      "sources": ["homer"],
+      "citation": "Iliad 2.541–545"
+    },
+    {
+      "city": "cerinthus",
+      "sources": ["homer"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.515–545, 4.457–475"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.515–545"
     }
   ]
 }

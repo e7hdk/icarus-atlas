@@ -1,0 +1,45 @@
+{
+  "id": "demophon-metaneira",
+  "name": "Demophon",
+  "greekName": "Demophon (Δημοφῶν)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "son of Celeus and Metaneira",
+    "the interrupted immortal rite",
+    "namesake of Demophon of Athens"
+  ],
+  "summary": [
+    {
+      "text": "Infant son of Celeus and Metaneira at Eleusis whom Demeter nursed in the fire to make immortal — until his mother's cry broke the charm and cost him the godlike age the goddess had begun to bestow; Apollodorus names him Demophon but in the same passage calls the watcher Praxithea, not Metaneira.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.1–1.5.2; Description of Greece 1.39.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus says Demeter received the babe to nurse and, wishing to make him immortal, set him on the fire by night and stripped off his mortal flesh; as Demophon — for that was the child's name — grew marvelously by day, Praxithea watched, and discovering him buried in the fire she cried out, wherefore the babe was consumed by the fire and the goddess revealed herself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.1",
+      "topic": "demophon-eleusis-mother"
+    },
+    {
+      "text": "Pausanias, following Pamphos, tells the episode through Metaneira: the daughters of Celeus brought Demeter home from the Flowery Well, and Metaneira thereupon entrusted to her the rearing of her son — the queen whose cry, in the fuller Eleusinian tradition preserved beside Apollodorus, broke the immortal rite.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.39.1",
+      "topic": "demophon-eleusis-mother"
+    },
+    {
+      "text": "He must not be merged with Demophon son of Theseus and Phaedra, the Athenian prince who fled Menestheus and later fought at Troy — a homonym kept distinct in every handbook that names the Eleusinian infant.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.1–1.5.2; Epitome 1.18, 5.22; Description of Greece 1.39.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "eleusis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.1–1.5.2; Description of Greece 1.39.1"
+    }
+  ]
+}

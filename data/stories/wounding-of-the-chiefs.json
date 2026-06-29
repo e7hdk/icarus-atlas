@@ -51,8 +51,12 @@
     { "id": "sarpedon", "name": "Sarpedon", "role": "Lycian ally at the wall assault" },
     { "id": "glaucus-lycian", "name": "Glaucus", "role": "Lycian captain at the gates" },
     { "id": "polydamas", "name": "Polydamas", "role": "Counsellor beside Hector at the wall" },
-    { "name": "Machaon", "role": "Healer wounded and rescued" },
-    { "id": "eurypylus-telephus", "name": "Eurypylus", "role": "Captain wounded in the thigh" }
+    {
+      "id": "machaon",
+      "name": "Machaon",
+      "role": "Healer wounded and rescued"
+    },
+    { "id": "eurypylus-euaemonid", "name": "Eurypylus", "role": "Ormenian captain wounded in the thigh" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "Wall, gates, and plain of slaughter" }

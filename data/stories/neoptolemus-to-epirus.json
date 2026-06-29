@@ -137,14 +137,17 @@
       "role": "He who praised the son to Achilles' shade"
     },
     {
+      "id": "phoenix-myrmidon",
       "name": "Phoenix",
       "role": "Old tutor buried on the overland march"
     },
     {
+      "id": "molossus",
       "name": "Molossus",
       "role": "Son begotten on Andromache in Epirus"
     },
     {
+      "id": "machaereus-phocis",
       "name": "Machaereus",
       "role": "Phocian who kills him in Apollodorus' variant"
     }
@@ -162,19 +165,23 @@
     },
     {
       "name": "Tenedos",
-      "role": "Isle where Thetis bade him wait two days"
+      "role": "Isle where Thetis bade him wait two days",
+      "id": "tenedos"
     },
     {
       "name": "Delphi",
-      "role": "Sanctuary where Orestes slew him at the altar"
+      "role": "Sanctuary where Orestes slew him at the altar",
+      "id": "delphi"
     },
     {
       "name": "Epirus",
-      "role": "Kingdom of the Molossians he founded"
+      "role": "Kingdom of the Molossians he founded",
+      "id": "ambracia"
     },
     {
       "name": "Ambracia",
-      "role": "Where his scattered bones were honoured"
+      "role": "Where his scattered bones were honoured",
+      "id": "ambracia"
     }
   ],
   "attestations": [

@@ -1,0 +1,48 @@
+{
+  "id": "maera-dog",
+  "name": "Maera",
+  "greekName": "Maíra (Μαίρα)",
+  "romanName": "Maera",
+  "type": "creature",
+  "cluster": "mortal-arm",
+  "domains": [
+    "Icarius' hound",
+    "Canicula",
+    "discovery of the murdered host"
+  ],
+  "summary": [
+    {
+      "text": "The dog of Attic Icarius who attended him when he demonstrated wine to the shepherds — after the herdsmen killed their host, Maera discovered the body to Erigone and howled beside the slain man; by the gods' will she was set among the stars as Canicula.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 3.14.7; Fabulae 130; Astronomica 2.4.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Erigone was searching for her father, Apollodorus says, the domestic dog Maera, which had attended Icarius, discovered his dead body to her; she bewailed her father and hanged herself.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.14.7"
+    },
+    {
+      "text": "Hyginus has Maera travel with Icarius and Erigone in the wagon that carried wine through Attica. After the shepherds killed her master, Maera howled over the slain body and showed Erigone where he lay unburied.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 130"
+    },
+    {
+      "text": "By the will of the gods Icarius, Erigone, and Maera were placed among the stars. Hyginus names Maera Canicula; the Astronomica says the dog, from its own name and likeness, was called Canicula — Procyon to the Greeks because it rises before the greater Dog.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 130, 224; Astronomica 2.4.2–2.4.5"
+    },
+    {
+      "text": "The `-dog` id marks this Attic hound distinct from Maera the Nereid named in Homer's catalogue of the sea-nymphs who mourned with Thetis — a divine namesake, not Icarius' companion.",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 18.25–60; Bibliotheca 3.14.7; Fabulae 130"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

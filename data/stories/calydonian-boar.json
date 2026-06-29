@@ -146,6 +146,11 @@
       "role": "Aeacid hunter from Aegina"
     },
     {
+      "id": "telamon",
+      "name": "Telamon",
+      "role": "Aeacid hunter from Salamis"
+    },
+    {
       "id": "castor",
       "name": "Castor",
       "role": "Dioscur who joined the hunt"
@@ -189,7 +194,8 @@
     },
     {
       "name": "Aetolia",
-      "role": "The region Artemis' boar wasted"
+      "role": "The region Artemis' boar wasted",
+      "id": "calydon"
     }
   ],
   "attestations": [

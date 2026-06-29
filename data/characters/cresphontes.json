@@ -66,5 +66,23 @@
       ],
       "citation": "Pausanias 4.3.7"
     }
+  ],
+  "residences": [
+    {
+      "city": "messene",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Apollod. 2.8.4–5; Paus. 4.3.3–7; Hyg. Fab. 137"
+    },
+    {
+      "city": "stenyclarus",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Paus. 4.3.7"
+    }
   ]
 }

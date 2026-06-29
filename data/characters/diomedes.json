@@ -77,6 +77,54 @@
         "homer",
         "pausanias"
       ]
+    },
+    {
+      "city": "calydon",
+      "sources": [
+        "homer",
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Iliad 14.113–118; Bibliotheca 1.8.5–6; Description of Greece 2.25.2"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.7.2–4; Description of Greece 2.20.5, 10.10.4; Fabulae 71"
+    },
+    {
+      "city": "glisas",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.3; Description of Greece 9.5.13, 9.9.4"
+    },
+    {
+      "city": "troy",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Iliad 2.559–580, 5.1–8"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.559–580"
+    },
+    {
+      "city": "lemnos",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.8"
+    },
+    {
+      "city": "campania",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.9"
     }
   ]
 }

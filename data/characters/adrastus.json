@@ -88,6 +88,23 @@
         "pausanias",
         "hyginus"
       ]
+    },
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.1; Description of Greece 2.18.4, 2.20.5"
+    },
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.6.3, 3.6.6, 3.6.8; Iliad 23.346–348; Fabulae 71"
     }
   ]
 }

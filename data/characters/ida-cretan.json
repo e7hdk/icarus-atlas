@@ -1,0 +1,33 @@
+{
+  "id": "ida-cretan",
+  "name": "Ida",
+  "greekName": "Ida (Ἴδα)",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "titan-ring",
+  "domains": [
+    "nurse of Zeus",
+    "Mount Ida",
+    "daughter of Melisseus",
+    "Crete"
+  ],
+  "summary": [
+    {
+      "text": "Cretan nymph, daughter of Melisseus and sister of Adrasteia, who nursed the infant Zeus in the Dictaean cave while the Curetes clashed their arms — distinct from the mountain itself and from the Trojan Ida of the Iliad.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.6; Fabulae 182"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus places Zeus' birth in the cave of Dicte and names Ida with Adrastia as the Melisseus-born nymphs who received the child from Rhea alongside the Curetes. Pausanias records that some Cretans claimed the holy nursery on Mount Ida instead — two caves on the island, both insisting they hid the cloud-gatherer.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.1.6; Description of Greece 8.8.2"
+    },
+    {
+      "text": "Hyginus counts Ida among the nurses of Jove, daughters of Melisseus in one tradition — the same Idaean sisterhood Rhea's story names when the infant was fed on Amalthea's milk and the armed dancers drowned every cry.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 182; Bibliotheca 1.1.7"
+    }
+  ]
+}

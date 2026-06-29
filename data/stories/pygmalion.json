@@ -7,47 +7,91 @@
   "era": 7.11,
   "summary": {
     "text": "Pygmalion of Cyprus, disgusted by the shameless Propoetides whom Venus turned to stone for denying her divinity, carved an ivory maiden so perfect he fell in love with his own art — and on the goddess' festival Venus warmed the statue to living flesh; nine months later Paphos was born, and the island took its name.",
-    "sources": ["ovid", "apollodorus"],
+    "sources": [
+      "ovid",
+      "apollodorus"
+    ],
     "citation": "Ov. Met. 10.371–463; Apollod. 3.14.3"
   },
   "chapters": [
     {
       "title": "The Propoetides",
       "text": "The women of Amathus on Cyprus denied that Venus was a goddess; the angry goddess made them the first to prostitute their bodies publicly, and shame at last hardened their faces into flint. Pygmalion, seeing how nature's faults could waste women's lives, chose to live unmarried.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.371–386"
     },
     {
       "title": "The ivory maiden",
       "text": "With consummate skill he carved snow-white ivory into a virgin's form more beautiful than any living woman — modest in expression, so lifelike that he wondered if it were flesh, kissed it, and felt the kisses returned. He brought gifts, draped her in jewels, and laid her on a purple couch as his bride, praying only that she were real.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.386–430"
     },
     {
       "title": "Venus' answer",
       "text": "On Venus' festival, when he dared not say ivory statue aloud but prayed for one like his ivory maiden, the goddess heard. Three times the altar flame leaped high. When he returned and kissed the figure, warmth spread beneath his hand — the ivory softened like wax under the sun, veins pulsed, and the astonished sculptor won a living wife.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.430–455"
     },
     {
       "title": "Paphos",
       "text": "Venus blessed the marriage she had willed. When nine moons had waxed and waned, the statue-bride bore a daughter Paphos, from whom the Cypriot city took its name. Apollodorus knows another Pygmalion, king of Cyprus, whose daughter Metharme married Cinyras — a royal line that also ends in Adonis.",
-      "sources": ["ovid", "apollodorus"],
+      "sources": [
+        "ovid",
+        "apollodorus"
+      ],
       "citation": "Ov. Met. 10.455–463; Apollod. 3.14.3"
     }
   ],
   "cast": [
-    { "name": "Pygmalion", "role": "Sculptor who loved his ivory maiden" },
-    { "name": "The ivory maiden", "role": "Pygmalion's statue, warmed to living flesh by Venus" },
-    { "id": "aphrodite", "name": "Aphrodite", "role": "Venus, who answered his prayer" }
+    {
+      "id": "pygmalion-sculptor",
+      "name": "Pygmalion",
+      "role": "Sculptor who loved his ivory maiden"
+    },
+    {
+      "id": "pygmalion-bride",
+      "name": "The ivory maiden",
+      "role": "Pygmalion's statue, warmed to living flesh by Venus"
+    },
+    {
+      "id": "aphrodite",
+      "name": "Aphrodite",
+      "role": "Venus, who answered his prayer"
+    }
   ],
   "places": [
-    { "name": "Cyprus", "role": "Island of Pygmalion and Paphos" },
-    { "name": "Amathus", "role": "City of the Propoetides" },
-    { "name": "Paphos", "role": "City named from Pygmalion's daughter" }
+    {
+      "name": "Cyprus",
+      "role": "Island of Pygmalion and Paphos",
+      "id": "salamis-cyprus"
+    },
+    {
+      "name": "Amathus",
+      "role": "City of the Propoetides",
+      "id": "amathus-cyprus"
+    },
+    {
+      "name": "Paphos",
+      "role": "City named from Pygmalion's daughter",
+      "id": "salamis-cyprus"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "10.371–463" },
-    { "source": "apollodorus", "work": "The Library", "citation": "3.14.3" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "10.371–463"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.14.3"
+    }
   ]
 }

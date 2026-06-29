@@ -1,0 +1,138 @@
+{
+  "id": "orion-the-hunter",
+  "title": "Orion the Hunter",
+  "greekTitle": "Ὠρίων ὁ κυνηγός",
+  "kind": "saga",
+  "parent": null,
+  "era": 4.8,
+  "eraEnd": 4.88,
+  "summary": {
+    "text": "Orion the giant hunter wooed Merope on Chios, was blinded by her father Oenopion and healed at the sunrise, then died by Artemis' shaft or the scorpion's sting and was set among the stars — still driving beasts over the asphodel in Odysseus' Nekuia, and still pursued by the Bear through every night of heaven.",
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hesiod",
+      "hyginus"
+    ],
+    "citation": "Apollod. 1.4.3–5; Hom. Od. 5.121–124, 11.572–575; Hes. Astr. 326–332; Hyg. Astr. 2.34"
+  },
+  "chapters": [
+    {
+      "title": "Chios and Merope",
+      "text": "Orion went to Chios and paid court to Merope, daughter of Oenopion. The king made him drunk, put out his eyes as he slept, and cast him on the beach. So the hunter's first undoing came not from a beast of the field but from the father of the maiden he sought — a pattern of guest-violence that the island would remember in its genealogies.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.4.3"
+    },
+    {
+      "title": "The sunrise cure",
+      "text": "Blind Orion went to the forge of Hephaestus, set a lad called Cedalion on his shoulders, and bade him guide him eastward to the place where the sun rises. Being come thither he was healed by the sun's rays and returned to take vengeance on Oenopion — but the king had been hidden away in an underground chamber of bronze, and the hunter could not find him.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 1.4.3–4"
+    },
+    {
+      "title": "How he died",
+      "text": "The sources divide on his end. Homer says that when rosy-fingered Dawn took Orion to herself, the gods that live at ease begrudged her, till in Ortygia chaste Artemis of the golden throne assailed him with her gentle shafts and slew him. Hesiod's Astronomy tells another death: Orion was stung by the scorpion and died, and Zeus set him in the sky as a constellation. Hyginus preserves both the scorpion and the jealousy of the gods. Apollodorus adds that Dawn loved him and that Artemis shot him in Ortygia — or, in some tellings, that he died in Crete from the creature's sting.",
+      "sources": [
+        "homer",
+        "hesiod",
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Odyssey 5.121–124; Astronomy 326–332; Bibliotheca 1.4.3–5; Astronomica 2.34",
+      "topic": "orion-death"
+    },
+    {
+      "title": "The hunter among the dead",
+      "text": "Death did not end his hunting. On Calypso's isle Odysseus saw Orion driving wild beasts over the meadow of asphodel that he had himself slain on the lonely hills, bearing a bronze club unbreakable forever. In the shield of Achilles the Bear watches Orion and the Pleiades circle through the baths of Ocean — the hunter fixed in heaven, still the brightest sign beside the Dog that brings fever to mortals.",
+      "sources": [
+        "homer"
+      ],
+      "citation": "Odyssey 11.572–575; Iliad 18.486–489; 22.26–31"
+    }
+  ],
+  "cast": [
+    {
+      "id": "orion",
+      "name": "Orion",
+      "role": "Giant hunter set among the stars"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "role": "Slayer in the Dawn-jealousy tradition"
+    },
+    {
+      "id": "eos",
+      "name": "Eos",
+      "role": "Dawn who loved the hunter"
+    },
+    {
+      "id": "hephaestus",
+      "name": "Hephaestus",
+      "role": "Smith who sheltered the blind Orion"
+    },
+    {
+      "id": "merope-chios",
+      "name": "Merope",
+      "role": "Daughter of Oenopion on Chios"
+    },
+    {
+      "id": "oenopion-chios",
+      "name": "Oenopion",
+      "role": "King who blinded the suitor"
+    },
+    {
+      "id": "cedalion-orion",
+      "name": "Cedalion",
+      "role": "Guide to the healing sunrise"
+    }
+  ],
+  "places": [
+    {
+      "id": "chios",
+      "name": "Chios",
+      "role": "Island where Orion wooed Merope"
+    },
+    {
+      "name": "Ortygia",
+      "role": "Place of Artemis' killing in Homer's account",
+      "id": "delos"
+    },
+    {
+      "name": "Crete",
+      "role": "Land of the scorpion sting in some tellings",
+      "id": "knossos"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.4.3–5"
+    },
+    {
+      "source": "homer",
+      "work": "Odyssey",
+      "citation": "5.121–124, 11.572–575"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "18.486–489"
+    },
+    {
+      "source": "hesiod",
+      "work": "Astronomy",
+      "citation": "326–332"
+    },
+    {
+      "source": "hyginus",
+      "work": "Astronomica",
+      "citation": "2.34"
+    }
+  ]
+}

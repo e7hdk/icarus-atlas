@@ -1,0 +1,39 @@
+{
+  "id": "acis-sicily",
+  "name": "Acis",
+  "greekName": "Akis (Ἄκις)",
+  "romanName": "Acis",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "beloved of Galatea",
+    "son of Faunus",
+    "the river beneath Etna"
+  ],
+  "summary": [
+    {
+      "text": "Mortal youth of Sicily, son of Faunus and the river-nymph Symaethis, beloved of Galatea the Nereid — crushed by Polyphemus with a jagged mass of Etna and changed by his lover into the river Acis that still runs beneath the mountain.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 13.750–14.74; Epitome 7.4"
+    }
+  ],
+  "story": [
+    {
+      "text": "After Troy fell, Ovid's poem reaches Sicily. Galatea the Nereid loved only Acis while Polyphemus son of Poseidon courted her with milk and cheese and hopeless piping. When the Cyclops found the lovers together in a cave whose mouth the sea had narrowed, he hurled Etna's summit upon the boy.",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 13.900–14.50"
+    },
+    {
+      "text": "Galatea could not restore the body, but she changed what remained: Acis' blood sank into the earth and rose again as a stream crowned with reeds — love transformed into running water under the Cyclops' feet. Apollodorus knows the same triangle of Galatea, Acis, and Polyphemus on the Sicilian coast.",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 14.1–74; Epitome 7.4"
+    }
+  ],
+  "residences": [
+    {
+      "city": "syracuse",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 13.750–14.74; Epitome 7.4"
+    }
+  ]
+}

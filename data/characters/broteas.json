@@ -28,5 +28,15 @@
       "sources": ["pausanias"],
       "citation": "Description of Greece 3.22.4"
     }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 2.2; Description of Greece 3.22.4"
+    }
   ]
 }

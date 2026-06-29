@@ -4,7 +4,10 @@
     "name": "Thebes",
     "greekName": "Θῆβαι",
     "region": "boeotia",
-    "coordinates": [23.3177, 38.3199],
+    "coordinates": [
+      23.3177,
+      38.3199
+    ],
     "pleiadesId": "541138"
   },
   {
@@ -12,7 +15,10 @@
     "name": "Orchomenos",
     "greekName": "Ὀρχομενός",
     "region": "boeotia",
-    "coordinates": [22.619, 38.492],
+    "coordinates": [
+      22.619,
+      38.492
+    ],
     "pleiadesId": "540962"
   },
   {
@@ -20,7 +26,10 @@
     "name": "Mycenae",
     "greekName": "Μυκῆναι",
     "region": "argolis",
-    "coordinates": [22.7538, 37.7275],
+    "coordinates": [
+      22.7538,
+      37.7275
+    ],
     "pleiadesId": "570491"
   },
   {
@@ -28,7 +37,10 @@
     "name": "Argos",
     "greekName": "Ἄργος",
     "region": "argolis",
-    "coordinates": [22.7204, 37.631],
+    "coordinates": [
+      22.7204,
+      37.631
+    ],
     "pleiadesId": "570106"
   },
   {
@@ -36,15 +48,43 @@
     "name": "Athens",
     "greekName": "Ἀθῆναι",
     "region": "attica-proper",
-    "coordinates": [23.7239, 37.9716],
+    "coordinates": [
+      23.7239,
+      37.9716
+    ],
     "pleiadesId": "579885"
+  },
+  {
+    "id": "colonus-athens",
+    "name": "Colonus",
+    "greekName": "Κολωνός",
+    "region": "attica-proper",
+    "coordinates": [
+      23.715,
+      38.006
+    ],
+    "pleiadesId": "582869"
+  },
+  {
+    "id": "eleusis",
+    "name": "Eleusis",
+    "greekName": "Ἐλευσίς",
+    "region": "attica-proper",
+    "coordinates": [
+      23.539,
+      38.033
+    ],
+    "pleiadesId": "573876"
   },
   {
     "id": "sparta",
     "name": "Sparta",
     "greekName": "Σπάρτη",
     "region": "laconia",
-    "coordinates": [22.4247, 37.0818],
+    "coordinates": [
+      22.4247,
+      37.0818
+    ],
     "pleiadesId": "570685"
   },
   {
@@ -52,7 +92,10 @@
     "name": "Pylos",
     "greekName": "Πύλος",
     "region": "messenia",
-    "coordinates": [21.660, 36.952],
+    "coordinates": [
+      21.66,
+      36.952
+    ],
     "pleiadesId": "570640"
   },
   {
@@ -60,7 +103,10 @@
     "name": "Troy",
     "greekName": "Τροία",
     "region": "troad",
-    "coordinates": [26.2385, 39.9574],
+    "coordinates": [
+      26.2385,
+      39.9574
+    ],
     "pleiadesId": "550595"
   },
   {
@@ -68,23 +114,87 @@
     "name": "Corinth",
     "greekName": "Κόρινθος",
     "region": "corinthia",
-    "coordinates": [22.876, 37.906],
+    "coordinates": [
+      22.876,
+      37.906
+    ],
     "pleiadesId": "570067"
+  },
+  {
+    "id": "sicyon",
+    "name": "Sicyon",
+    "greekName": "Σικυών",
+    "region": "corinthia",
+    "coordinates": [
+      22.713,
+      37.984
+    ],
+    "pleiadesId": "570668"
+  },
+  {
+    "id": "phlius",
+    "name": "Phlius",
+    "greekName": "Φλειοῦς",
+    "region": "corinthia",
+    "coordinates": [
+      22.617,
+      37.85
+    ],
+    "pleiadesId": "570602"
+  },
+  {
+    "id": "pellene",
+    "name": "Pellene",
+    "greekName": "Πελλήνη",
+    "region": "achaea",
+    "coordinates": [
+      22.548,
+      38.043
+    ],
+    "pleiadesId": "570576"
   },
   {
     "id": "tiryns",
     "name": "Tiryns",
     "greekName": "Τίρυνς",
     "region": "argolis",
-    "coordinates": [22.800, 37.602],
+    "coordinates": [
+      22.8,
+      37.602
+    ],
     "pleiadesId": "570591"
+  },
+  {
+    "id": "nemea",
+    "name": "Nemea",
+    "greekName": "Νεμέα",
+    "region": "argolis",
+    "coordinates": [
+      22.719,
+      37.812
+    ],
+    "pleiadesId": "570483"
+  },
+  {
+    "id": "lerna",
+    "name": "Lerna",
+    "greekName": "Λέρνη",
+    "region": "argolis",
+    "coordinates": [
+      22.856,
+      37.596
+    ],
+    "pleiadesId": "570424"
   },
   {
     "id": "megara",
     "name": "Megara",
     "greekName": "Μέγαρα",
     "region": "megaris",
-    "coordinates": [23.343, 37.994],
+    "coordinates": [
+      23.343,
+      37.994
+    ],
     "pleiadesId": "570168"
   },
   {
@@ -92,7 +202,10 @@
     "name": "Salamis",
     "greekName": "Σαλαμίς",
     "region": "salamis",
-    "coordinates": [23.484, 37.943],
+    "coordinates": [
+      23.484,
+      37.943
+    ],
     "pleiadesId": "580101"
   },
   {
@@ -100,7 +213,10 @@
     "name": "Knossos",
     "greekName": "Κνωσσός",
     "region": "crete",
-    "coordinates": [25.163, 35.298],
+    "coordinates": [
+      25.163,
+      35.298
+    ],
     "pleiadesId": "589873"
   },
   {
@@ -108,15 +224,43 @@
     "name": "Gortyn",
     "greekName": "Γόρτυν",
     "region": "crete",
-    "coordinates": [24.947, 35.062],
+    "coordinates": [
+      24.947,
+      35.062
+    ],
     "pleiadesId": "589884"
+  },
+  {
+    "id": "lyctus",
+    "name": "Lyctus",
+    "greekName": "Λύκτος",
+    "region": "crete",
+    "coordinates": [
+      25.368,
+      35.208
+    ],
+    "pleiadesId": "589918"
+  },
+  {
+    "id": "rhytium",
+    "name": "Rhytium",
+    "greekName": "Ῥύτιον",
+    "region": "crete",
+    "coordinates": [
+      25.167,
+      35.012
+    ],
+    "pleiadesId": "590033"
   },
   {
     "id": "epidaurus-polis",
     "name": "Epidaurus",
     "greekName": "Ἐπίδαυρος",
     "region": "argolis",
-    "coordinates": [23.157, 37.640],
+    "coordinates": [
+      23.157,
+      37.64
+    ],
     "pleiadesId": "570182"
   },
   {
@@ -124,7 +268,10 @@
     "name": "Iolcus",
     "greekName": "Ἰωλκός",
     "region": "magnesia",
-    "coordinates": [22.950, 39.386],
+    "coordinates": [
+      22.95,
+      39.386
+    ],
     "pleiadesId": "540880"
   },
   {
@@ -132,7 +279,10 @@
     "name": "Larisa",
     "greekName": "Λάρισα",
     "region": "pelasgiotis",
-    "coordinates": [22.421, 39.640],
+    "coordinates": [
+      22.421,
+      39.64
+    ],
     "pleiadesId": "540876"
   },
   {
@@ -140,15 +290,32 @@
     "name": "Pherae",
     "greekName": "Φεραί",
     "region": "pelasgiotis",
-    "coordinates": [22.738, 39.384],
+    "coordinates": [
+      22.738,
+      39.384
+    ],
     "pleiadesId": "541044"
+  },
+  {
+    "id": "piresia",
+    "name": "Piresia",
+    "greekName": "Πειρασία",
+    "region": "thessaliotis",
+    "coordinates": [
+      22.103,
+      39.42
+    ],
+    "pleiadesId": "540674"
   },
   {
     "id": "chalcis",
     "name": "Chalcis",
     "greekName": "Χαλκίς",
     "region": "euboea",
-    "coordinates": [23.600, 38.463],
+    "coordinates": [
+      23.6,
+      38.463
+    ],
     "pleiadesId": "540799"
   },
   {
@@ -156,7 +323,10 @@
     "name": "Arene",
     "greekName": "Ἀρήνη",
     "region": "messenia",
-    "coordinates": [21.596, 37.526],
+    "coordinates": [
+      21.596,
+      37.526
+    ],
     "pleiadesId": "570653"
   },
   {
@@ -164,15 +334,43 @@
     "name": "Andania",
     "greekName": "Ἀνδανία",
     "region": "messenia",
-    "coordinates": [21.938, 37.262],
+    "coordinates": [
+      21.938,
+      37.262
+    ],
     "pleiadesId": "570079"
+  },
+  {
+    "id": "messene",
+    "name": "Messene",
+    "greekName": "Μεσσήνη",
+    "region": "messenia",
+    "coordinates": [
+      21.92,
+      37.175
+    ],
+    "pleiadesId": "570479"
+  },
+  {
+    "id": "stenyclarus",
+    "name": "Stenyclarus",
+    "greekName": "Στενύκληρος",
+    "region": "messenia",
+    "coordinates": [
+      21.997,
+      37.221
+    ],
+    "pleiadesId": "570690"
   },
   {
     "id": "delos",
     "name": "Delos",
     "greekName": "Δῆλος",
     "region": "delos",
-    "coordinates": [25.267, 37.391],
+    "coordinates": [
+      25.267,
+      37.391
+    ],
     "pleiadesId": "577086"
   },
   {
@@ -180,7 +378,10 @@
     "name": "Naxos",
     "greekName": "Νάξος",
     "region": "naxos",
-    "coordinates": [25.376, 37.104],
+    "coordinates": [
+      25.376,
+      37.104
+    ],
     "pleiadesId": "599117"
   },
   {
@@ -188,7 +389,10 @@
     "name": "Melos",
     "greekName": "Μῆλος",
     "region": "melos",
-    "coordinates": [24.433, 36.688],
+    "coordinates": [
+      24.433,
+      36.688
+    ],
     "pleiadesId": "570475"
   },
   {
@@ -196,7 +400,10 @@
     "name": "Myconos",
     "greekName": "Μύκονος",
     "region": "myconos",
-    "coordinates": [25.372, 37.453],
+    "coordinates": [
+      25.372,
+      37.453
+    ],
     "pleiadesId": "599808"
   },
   {
@@ -204,7 +411,10 @@
     "name": "Andros",
     "greekName": "Ἄνδρος",
     "region": "andros",
-    "coordinates": [24.853, 37.855],
+    "coordinates": [
+      24.853,
+      37.855
+    ],
     "pleiadesId": "589693"
   },
   {
@@ -212,7 +422,10 @@
     "name": "Tenos",
     "greekName": "Τῆνος",
     "region": "tenos",
-    "coordinates": [25.113, 37.615],
+    "coordinates": [
+      25.113,
+      37.615
+    ],
     "pleiadesId": "590074"
   },
   {
@@ -220,7 +433,10 @@
     "name": "Ceos",
     "greekName": "Κέως",
     "region": "ceos",
-    "coordinates": [24.327, 37.614],
+    "coordinates": [
+      24.327,
+      37.614
+    ],
     "pleiadesId": "570348"
   },
   {
@@ -228,7 +444,10 @@
     "name": "Kimolos",
     "greekName": "Κίμωλος",
     "region": "kimolos",
-    "coordinates": [24.560, 36.813],
+    "coordinates": [
+      24.56,
+      36.813
+    ],
     "pleiadesId": "589868"
   },
   {
@@ -236,7 +455,10 @@
     "name": "Seriphos",
     "greekName": "Σέριφος",
     "region": "seriphos",
-    "coordinates": [24.482, 37.156],
+    "coordinates": [
+      24.482,
+      37.156
+    ],
     "pleiadesId": "590044"
   },
   {
@@ -244,7 +466,10 @@
     "name": "Siphnos",
     "greekName": "Σίφνος",
     "region": "siphnos",
-    "coordinates": [24.694, 36.976],
+    "coordinates": [
+      24.694,
+      36.976
+    ],
     "pleiadesId": "590049"
   },
   {
@@ -252,7 +477,10 @@
     "name": "Syros",
     "greekName": "Σύρος",
     "region": "syros",
-    "coordinates": [24.900, 37.450],
+    "coordinates": [
+      24.9,
+      37.45
+    ],
     "pleiadesId": "590067"
   },
   {
@@ -260,7 +488,10 @@
     "name": "Samos",
     "greekName": "Σάμος",
     "region": "samos",
-    "coordinates": [26.887, 37.754],
+    "coordinates": [
+      26.887,
+      37.754
+    ],
     "pleiadesId": "599253"
   },
   {
@@ -268,7 +499,10 @@
     "name": "Rhodes",
     "greekName": "Ῥόδος",
     "region": "rhodes",
-    "coordinates": [28.227, 36.434],
+    "coordinates": [
+      28.227,
+      36.434
+    ],
     "pleiadesId": "599948"
   },
   {
@@ -276,7 +510,10 @@
     "name": "Cos",
     "greekName": "Κῶς",
     "region": "cos",
-    "coordinates": [27.288, 36.893],
+    "coordinates": [
+      27.288,
+      36.893
+    ],
     "pleiadesId": "599122"
   },
   {
@@ -284,7 +521,10 @@
     "name": "Thera",
     "greekName": "Θήρα",
     "region": "thera",
-    "coordinates": [25.478, 36.363],
+    "coordinates": [
+      25.478,
+      36.363
+    ],
     "pleiadesId": "599329"
   },
   {
@@ -292,7 +532,10 @@
     "name": "Cythera",
     "greekName": "Κύθηρα",
     "region": "cythera",
-    "coordinates": [23.010, 36.254],
+    "coordinates": [
+      23.01,
+      36.254
+    ],
     "pleiadesId": "599112"
   },
   {
@@ -300,7 +543,10 @@
     "name": "Lesbos",
     "greekName": "Λέσβος",
     "region": "lesbos",
-    "coordinates": [26.558, 39.104],
+    "coordinates": [
+      26.558,
+      39.104
+    ],
     "pleiadesId": "599266"
   },
   {
@@ -308,7 +554,10 @@
     "name": "Salamis",
     "greekName": "Σαλαμίς",
     "region": "cyprus",
-    "coordinates": [33.901, 35.185],
+    "coordinates": [
+      33.901,
+      35.185
+    ],
     "pleiadesId": "598825"
   },
   {
@@ -316,7 +565,10 @@
     "name": "Miletus",
     "greekName": "Μίλητος",
     "region": "ionia",
-    "coordinates": [27.286, 37.531],
+    "coordinates": [
+      27.286,
+      37.531
+    ],
     "pleiadesId": "599269"
   },
   {
@@ -324,7 +576,10 @@
     "name": "Ephesus",
     "greekName": "Ἔφεσος",
     "region": "ionia",
-    "coordinates": [27.343, 37.939],
+    "coordinates": [
+      27.343,
+      37.939
+    ],
     "pleiadesId": "550893"
   },
   {
@@ -332,15 +587,87 @@
     "name": "Aea",
     "greekName": "Αἶα",
     "region": "colchis",
-    "coordinates": [41.98, 42.25],
+    "coordinates": [
+      41.98,
+      42.25
+    ],
     "pleiadesId": "678034"
+  },
+  {
+    "id": "aeaea",
+    "name": "Aeaea",
+    "greekName": "Αἰαίη",
+    "region": "latium",
+    "coordinates": [
+      13.08,
+      41.22
+    ],
+    "pleiadesId": "621604967"
+  },
+  {
+    "id": "aeolus-islands",
+    "name": "Aeolus' Isle",
+    "greekName": "νησὸς Αἰόλου",
+    "region": "sicily",
+    "coordinates": [
+      14.954,
+      38.467
+    ],
+    "pleiadesId": "462283"
+  },
+  {
+    "id": "laestrygonia",
+    "name": "Laestrygonia",
+    "greekName": "Λαιστρυγονία",
+    "region": "sicily",
+    "coordinates": [
+      14.998,
+      37.285
+    ],
+    "pleiadesId": "462279"
+  },
+  {
+    "id": "thrinacia",
+    "name": "Thrinacia",
+    "greekName": "Θρινακίη",
+    "region": "sicily",
+    "coordinates": [
+      15,
+      37.5
+    ],
+    "pleiadesId": "462503"
+  },
+  {
+    "id": "lotus-eaters",
+    "name": "Land of the Lotus-eaters",
+    "greekName": "Λωτοφάγων γῆ",
+    "region": "libya",
+    "coordinates": [
+      23,
+      32.5
+    ],
+    "pleiadesId": "806907"
+  },
+  {
+    "id": "cyclopes-isle",
+    "name": "Cyclopes' Isle",
+    "greekName": "Κυκλώπεια νῆσος",
+    "region": "sicily",
+    "coordinates": [
+      14.95,
+      37.75
+    ],
+    "pleiadesId": "462179"
   },
   {
     "id": "sardis",
     "name": "Sardis",
     "greekName": "Σάρδεις",
     "region": "lydia",
-    "coordinates": [28.044, 38.488],
+    "coordinates": [
+      28.044,
+      38.488
+    ],
     "pleiadesId": "609106"
   },
   {
@@ -348,7 +675,10 @@
     "name": "Halicarnassus",
     "greekName": "Ἁλικαρνασσός",
     "region": "caria",
-    "coordinates": [27.429, 37.037],
+    "coordinates": [
+      27.429,
+      37.037
+    ],
     "pleiadesId": "549135"
   },
   {
@@ -356,7 +686,10 @@
     "name": "Dardanus",
     "greekName": "Δάρδανος",
     "region": "troad",
-    "coordinates": [26.223, 40.198],
+    "coordinates": [
+      26.223,
+      40.198
+    ],
     "pleiadesId": "550586"
   },
   {
@@ -364,7 +697,10 @@
     "name": "Sinope",
     "greekName": "Σινώπη",
     "region": "pontus",
-    "coordinates": [35.151, 42.027],
+    "coordinates": [
+      35.151,
+      42.027
+    ],
     "pleiadesId": "599282"
   },
   {
@@ -372,7 +708,10 @@
     "name": "Pergamon",
     "greekName": "Πέργαμον",
     "region": "teuthrania",
-    "coordinates": [27.129, 39.132],
+    "coordinates": [
+      27.129,
+      39.132
+    ],
     "pleiadesId": "550667"
   },
   {
@@ -380,7 +719,10 @@
     "name": "Gordion",
     "greekName": "Γόρδιον",
     "region": "phrygia",
-    "coordinates": [31.985, 39.656],
+    "coordinates": [
+      31.985,
+      39.656
+    ],
     "pleiadesId": "628903"
   },
   {
@@ -388,7 +730,10 @@
     "name": "Smyrna",
     "greekName": "Σμύρνα",
     "region": "aeolis",
-    "coordinates": [27.141, 38.417],
+    "coordinates": [
+      27.141,
+      38.417
+    ],
     "pleiadesId": "550893"
   },
   {
@@ -396,15 +741,32 @@
     "name": "Tarsus",
     "greekName": "Ταρσός",
     "region": "cilicia",
-    "coordinates": [34.896, 36.912],
+    "coordinates": [
+      34.896,
+      36.912
+    ],
     "pleiadesId": "648789"
+  },
+  {
+    "id": "tauris",
+    "name": "Tauris",
+    "greekName": "Ταυρίς",
+    "region": "tauris",
+    "coordinates": [
+      33.492,
+      44.611
+    ],
+    "pleiadesId": "226564"
   },
   {
     "id": "side",
     "name": "Side",
     "greekName": "Σίδη",
     "region": "pamphylia",
-    "coordinates": [31.392, 36.768],
+    "coordinates": [
+      31.392,
+      36.768
+    ],
     "pleiadesId": "639105"
   },
   {
@@ -412,15 +774,32 @@
     "name": "Cyme",
     "greekName": "Κύμη",
     "region": "aeolis",
-    "coordinates": [26.938, 38.760],
+    "coordinates": [
+      26.938,
+      38.76
+    ],
     "pleiadesId": "550506"
+  },
+  {
+    "id": "adramyttium-mysia",
+    "name": "Adramyttium",
+    "greekName": "Ἀδραμύττιον",
+    "region": "aeolis",
+    "coordinates": [
+      26.938,
+      39.495
+    ],
+    "pleiadesId": "550403"
   },
   {
     "id": "xanthus-lycia",
     "name": "Xanthus",
     "greekName": "Ξάνθος",
     "region": "lycia",
-    "coordinates": [29.320, 36.357],
+    "coordinates": [
+      29.32,
+      36.357
+    ],
     "pleiadesId": "639166"
   },
   {
@@ -428,7 +807,10 @@
     "name": "Patara",
     "greekName": "Πάταρα",
     "region": "lycia",
-    "coordinates": [29.315, 36.262],
+    "coordinates": [
+      29.315,
+      36.262
+    ],
     "pleiadesId": "639042"
   },
   {
@@ -436,7 +818,10 @@
     "name": "Corcyra",
     "greekName": "Κέρκυρα",
     "region": "corcyra",
-    "coordinates": [19.922, 39.624],
+    "coordinates": [
+      19.922,
+      39.624
+    ],
     "pleiadesId": "599044"
   },
   {
@@ -444,7 +829,10 @@
     "name": "Ithaca",
     "greekName": "Ἰθάκη",
     "region": "ithaca",
-    "coordinates": [20.667, 38.417],
+    "coordinates": [
+      20.667,
+      38.417
+    ],
     "pleiadesId": "530906"
   },
   {
@@ -452,7 +840,10 @@
     "name": "Cephallenia",
     "greekName": "Κεφαλληνία",
     "region": "cephallenia",
-    "coordinates": [20.553, 38.265],
+    "coordinates": [
+      20.553,
+      38.265
+    ],
     "pleiadesId": "530826"
   },
   {
@@ -460,7 +851,10 @@
     "name": "Zacynthus",
     "greekName": "Ζάκυνθος",
     "region": "zacynthus",
-    "coordinates": [20.750, 37.800],
+    "coordinates": [
+      20.75,
+      37.8
+    ],
     "pleiadesId": "531155"
   },
   {
@@ -468,7 +862,10 @@
     "name": "Lemnos",
     "greekName": "Λῆμνος",
     "region": "lemnos",
-    "coordinates": [25.230, 39.920],
+    "coordinates": [
+      25.23,
+      39.92
+    ],
     "pleiadesId": "599245"
   },
   {
@@ -476,7 +873,10 @@
     "name": "Chios",
     "greekName": "Χίος",
     "region": "chios",
-    "coordinates": [26.128, 38.368],
+    "coordinates": [
+      26.128,
+      38.368
+    ],
     "pleiadesId": "599108"
   },
   {
@@ -484,7 +884,10 @@
     "name": "Paros",
     "greekName": "Πάρος",
     "region": "paros",
-    "coordinates": [25.150, 37.085],
+    "coordinates": [
+      25.15,
+      37.085
+    ],
     "pleiadesId": "599937"
   },
   {
@@ -492,7 +895,10 @@
     "name": "Thasos",
     "greekName": "Θάσος",
     "region": "thasos",
-    "coordinates": [24.723, 40.776],
+    "coordinates": [
+      24.723,
+      40.776
+    ],
     "pleiadesId": "599326"
   },
   {
@@ -500,7 +906,10 @@
     "name": "Samothrace",
     "greekName": "Σαμοθρᾴκη",
     "region": "samothrace",
-    "coordinates": [25.539, 40.410],
+    "coordinates": [
+      25.539,
+      40.41
+    ],
     "pleiadesId": "599330"
   },
   {
@@ -508,7 +917,10 @@
     "name": "Icaria",
     "greekName": "Ἰκαρία",
     "region": "icaria",
-    "coordinates": [26.152, 37.618],
+    "coordinates": [
+      26.152,
+      37.618
+    ],
     "pleiadesId": "599223"
   },
   {
@@ -516,7 +928,10 @@
     "name": "Skyros",
     "greekName": "Σκῦρος",
     "region": "skyros",
-    "coordinates": [24.563, 38.762],
+    "coordinates": [
+      24.563,
+      38.762
+    ],
     "pleiadesId": "599324"
   },
   {
@@ -524,7 +939,10 @@
     "name": "Skiathos",
     "greekName": "Σκιάθος",
     "region": "skiathos",
-    "coordinates": [23.489, 39.164],
+    "coordinates": [
+      23.489,
+      39.164
+    ],
     "pleiadesId": "541104"
   },
   {
@@ -532,7 +950,10 @@
     "name": "Skopelos",
     "greekName": "Πεπάρηθος",
     "region": "skopelos",
-    "coordinates": [23.700, 39.117],
+    "coordinates": [
+      23.7,
+      39.117
+    ],
     "pleiadesId": "599310"
   },
   {
@@ -540,7 +961,10 @@
     "name": "Ikos",
     "greekName": "Ἴκος",
     "region": "ikos",
-    "coordinates": [23.905, 39.164],
+    "coordinates": [
+      23.905,
+      39.164
+    ],
     "pleiadesId": "540835"
   },
   {
@@ -548,7 +972,10 @@
     "name": "Calydon",
     "greekName": "Καλυδών",
     "region": "aetolia",
-    "coordinates": [21.533, 38.373],
+    "coordinates": [
+      21.533,
+      38.373
+    ],
     "pleiadesId": "540699"
   },
   {
@@ -556,7 +983,10 @@
     "name": "Pleuron",
     "greekName": "Πλευρών",
     "region": "aetolia",
-    "coordinates": [21.420, 38.448],
+    "coordinates": [
+      21.42,
+      38.448
+    ],
     "pleiadesId": "540702"
   },
   {
@@ -564,7 +994,10 @@
     "name": "Dulichium",
     "greekName": "Δουλίχιον",
     "region": "dulichium",
-    "coordinates": [20.820, 38.520],
+    "coordinates": [
+      20.82,
+      38.52
+    ],
     "pleiadesId": "530845"
   },
   {
@@ -572,7 +1005,10 @@
     "name": "Argos Amphilochicum",
     "greekName": "Ἄργος Ἀμφιλοχικόν",
     "region": "acarnania",
-    "coordinates": [21.345, 38.894],
+    "coordinates": [
+      21.345,
+      38.894
+    ],
     "pleiadesId": "530809"
   },
   {
@@ -580,7 +1016,10 @@
     "name": "Buthrotum",
     "greekName": "Βουθρωτόν",
     "region": "chaonia",
-    "coordinates": [20.017, 39.757],
+    "coordinates": [
+      20.017,
+      39.757
+    ],
     "pleiadesId": "530824"
   },
   {
@@ -588,7 +1027,10 @@
     "name": "Cichyrus",
     "greekName": "Κίχυρος",
     "region": "thesprotia",
-    "coordinates": [20.531, 39.243],
+    "coordinates": [
+      20.531,
+      39.243
+    ],
     "pleiadesId": "530870"
   },
   {
@@ -596,7 +1038,10 @@
     "name": "Ambracia",
     "greekName": "Ἀμβρακία",
     "region": "ambracia",
-    "coordinates": [20.990, 39.155],
+    "coordinates": [
+      20.99,
+      39.155
+    ],
     "pleiadesId": "530794"
   },
   {
@@ -604,7 +1049,10 @@
     "name": "Mantinea",
     "greekName": "Μαντίνεια",
     "region": "arcadia",
-    "coordinates": [22.4047, 37.6119],
+    "coordinates": [
+      22.4047,
+      37.6119
+    ],
     "pleiadesId": "570411"
   },
   {
@@ -612,7 +1060,10 @@
     "name": "Syracuse",
     "greekName": "Συράκουσαι",
     "region": "sicily",
-    "coordinates": [15.283, 37.07],
+    "coordinates": [
+      15.283,
+      37.07
+    ],
     "pleiadesId": "462503"
   },
   {
@@ -620,7 +1071,10 @@
     "name": "Lavinium",
     "greekName": "Λαουίνιον",
     "region": "latium",
-    "coordinates": [12.481, 41.665],
+    "coordinates": [
+      12.481,
+      41.665
+    ],
     "pleiadesId": "422960"
   },
   {
@@ -628,15 +1082,65 @@
     "name": "Campania",
     "greekName": "Καμπανία",
     "region": "campania",
-    "coordinates": [14.25, 40.83],
+    "coordinates": [
+      14.25,
+      40.83
+    ],
     "pleiadesId": "433087"
+  },
+  {
+    "id": "libya",
+    "name": "Libya",
+    "greekName": "Λιβύη",
+    "region": "libya",
+    "coordinates": [
+      20.067,
+      32.117
+    ],
+    "pleiadesId": "806907"
+  },
+  {
+    "id": "aethiopia",
+    "name": "Aethiopia",
+    "greekName": "Αἰθιοπία",
+    "region": "aethiopia",
+    "coordinates": [
+      33.748,
+      16.938
+    ],
+    "pleiadesId": "624324"
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "greekName": "Μέμφις",
+    "region": "egypt",
+    "coordinates": [
+      31.25,
+      29.87
+    ],
+    "pleiadesId": "776781"
+  },
+  {
+    "id": "pharos",
+    "name": "Pharos",
+    "greekName": "Φάρος",
+    "region": "egypt",
+    "coordinates": [
+      29.885,
+      31.214
+    ],
+    "pleiadesId": "776157"
   },
   {
     "id": "cumae",
     "name": "Cumae",
     "greekName": "Κύμη",
     "region": "campania",
-    "coordinates": [14.056, 40.848],
+    "coordinates": [
+      14.056,
+      40.848
+    ],
     "pleiadesId": "432808"
   },
   {
@@ -644,7 +1148,10 @@
     "name": "Tarentum",
     "greekName": "Τάρας",
     "region": "magna-graecia",
-    "coordinates": [17.233, 40.474],
+    "coordinates": [
+      17.233,
+      40.474
+    ],
     "pleiadesId": "442810"
   },
   {
@@ -652,7 +1159,10 @@
     "name": "Croton",
     "greekName": "Κρότων",
     "region": "magna-graecia",
-    "coordinates": [17.128, 39.081],
+    "coordinates": [
+      17.128,
+      39.081
+    ],
     "pleiadesId": "452317"
   },
   {
@@ -660,7 +1170,10 @@
     "name": "Locri",
     "greekName": "Λοκροὶ Ἐπιζεφύριοι",
     "region": "magna-graecia",
-    "coordinates": [16.244, 38.226],
+    "coordinates": [
+      16.244,
+      38.226
+    ],
     "pleiadesId": "452369"
   },
   {
@@ -668,7 +1181,1253 @@
     "name": "Rhegium",
     "greekName": "Ῥήγιον",
     "region": "magna-graecia",
-    "coordinates": [15.644, 38.109],
+    "coordinates": [
+      15.644,
+      38.109
+    ],
     "pleiadesId": "452416"
+  },
+  {
+    "id": "tenedos",
+    "name": "Tenedos",
+    "greekName": "Τένεδος",
+    "region": "troad",
+    "coordinates": [
+      26.176,
+      39.836
+    ],
+    "pleiadesId": "599587"
+  },
+  {
+    "id": "troezen",
+    "name": "Troezen",
+    "greekName": "Τροιζήν",
+    "region": "argolis",
+    "coordinates": [
+      23.357,
+      37.493
+    ],
+    "pleiadesId": "573026"
+  },
+  {
+    "id": "antandros",
+    "name": "Antandros",
+    "greekName": "Ἄντανδρος",
+    "region": "troad",
+    "coordinates": [
+      26.705,
+      39.752
+    ],
+    "pleiadesId": "550658"
+  },
+  {
+    "id": "colophon",
+    "name": "Colophon",
+    "greekName": "Κολοφών",
+    "region": "ionia",
+    "coordinates": [
+      27.142,
+      38.11
+    ],
+    "pleiadesId": "550829"
+  },
+  {
+    "id": "aulis-boeotia",
+    "name": "Aulis",
+    "greekName": "Αὐλίς",
+    "region": "boeotia",
+    "coordinates": [
+      23.595,
+      38.459
+    ],
+    "pleiadesId": "540860"
+  },
+  {
+    "id": "tegea",
+    "name": "Tegea",
+    "greekName": "Τεγέα",
+    "region": "arcadia",
+    "coordinates": [
+      22.404,
+      37.461
+    ],
+    "pleiadesId": "570795"
+  },
+  {
+    "id": "pagasae",
+    "name": "Pagasae",
+    "greekName": "Παγασαί",
+    "region": "magnesia",
+    "coordinates": [
+      22.944,
+      39.275
+    ],
+    "pleiadesId": "570435"
+  },
+  {
+    "id": "marathon",
+    "name": "Marathon",
+    "greekName": "Μαραθών",
+    "region": "attica-proper",
+    "coordinates": [
+      23.961,
+      38.155
+    ],
+    "pleiadesId": "580021"
+  },
+  {
+    "id": "hypaepa",
+    "name": "Hypaepa",
+    "greekName": "Ὑπαίπη",
+    "region": "lydia",
+    "coordinates": [
+      27.963,
+      38.248
+    ],
+    "pleiadesId": "550585"
+  },
+  {
+    "id": "amathus-cyprus",
+    "name": "Amathus",
+    "greekName": "Ἀμαθοῦς",
+    "region": "cyprus",
+    "coordinates": [
+      33.143,
+      34.712
+    ],
+    "pleiadesId": "707462"
+  },
+  {
+    "id": "amyclae",
+    "name": "Amyclae",
+    "greekName": "Ἀμύκλαι",
+    "region": "laconia",
+    "coordinates": [
+      22.45,
+      37.036
+    ],
+    "pleiadesId": "570074"
+  },
+  {
+    "id": "leuctra-laconia",
+    "name": "Leuctra",
+    "greekName": "Λεῦκτρα",
+    "region": "laconia",
+    "coordinates": [
+      22.265,
+      36.843
+    ],
+    "pleiadesId": "570431"
+  },
+  {
+    "id": "anthedon",
+    "name": "Anthedon",
+    "greekName": "Ἀνθηδών",
+    "region": "boeotia",
+    "coordinates": [
+      23.452,
+      38.498
+    ],
+    "pleiadesId": "540639"
+  },
+  {
+    "id": "phaistos",
+    "name": "Phaestus",
+    "greekName": "Φαιστός",
+    "region": "crete",
+    "coordinates": [
+      24.813,
+      35.051
+    ],
+    "pleiadesId": "589934"
+  },
+  {
+    "id": "glisas",
+    "name": "Glisas",
+    "greekName": "Γλίσας",
+    "region": "boeotia",
+    "coordinates": [
+      23.025,
+      38.365
+    ],
+    "pleiadesId": "540726"
+  },
+  {
+    "id": "aphidnae",
+    "name": "Aphidnae",
+    "greekName": "Ἀφίδναι",
+    "region": "attica-proper",
+    "coordinates": [
+      23.879,
+      38.187
+    ],
+    "pleiadesId": "579873"
+  },
+  {
+    "id": "thespiae",
+    "name": "Thespiae",
+    "greekName": "Θεσπιαί",
+    "region": "boeotia",
+    "coordinates": [
+      23.152,
+      38.295
+    ],
+    "pleiadesId": "541141"
+  },
+  {
+    "id": "panopeus",
+    "name": "Panopeus",
+    "greekName": "Πανοπεύς",
+    "region": "phocis",
+    "coordinates": [
+      22.794,
+      38.495
+    ],
+    "pleiadesId": "541008"
+  },
+  {
+    "id": "pisa-elis",
+    "name": "Pisa",
+    "greekName": "Πῖσα",
+    "region": "elis",
+    "coordinates": [
+      21.653,
+      37.64
+    ],
+    "pleiadesId": "570612"
+  },
+  {
+    "id": "strophades",
+    "name": "Strophades",
+    "greekName": "Στροφάδες",
+    "region": "zacynthus",
+    "coordinates": [
+      21.007,
+      37.253
+    ],
+    "pleiadesId": "142847211"
+  },
+  {
+    "id": "plataea",
+    "name": "Plataea",
+    "greekName": "Πλάταια",
+    "region": "boeotia",
+    "coordinates": [
+      23.273,
+      38.221
+    ],
+    "pleiadesId": "541063"
+  },
+  {
+    "id": "daulis",
+    "name": "Daulis",
+    "greekName": "Δαυλίς",
+    "region": "phocis",
+    "coordinates": [
+      22.734,
+      38.485
+    ],
+    "pleiadesId": "540723"
+  },
+  {
+    "id": "delphi",
+    "name": "Delphi",
+    "greekName": "Δελφοί",
+    "region": "phocis",
+    "coordinates": [
+      22.493,
+      38.482
+    ],
+    "pleiadesId": "570621"
+  },
+  {
+    "id": "notium",
+    "name": "Notium",
+    "greekName": "Νότιον",
+    "region": "ionia",
+    "coordinates": [
+      27.197,
+      37.992
+    ],
+    "pleiadesId": "599578"
+  },
+  {
+    "id": "oechalia",
+    "name": "Oechalia",
+    "greekName": "Οἰχαλία",
+    "region": "malis",
+    "coordinates": [
+      22.55,
+      38.75
+    ],
+    "pleiadesId": "543811"
+  },
+  {
+    "id": "trachis-malis",
+    "name": "Trachis",
+    "greekName": "Τραχίς",
+    "region": "malis",
+    "coordinates": [
+      22.448,
+      38.792
+    ],
+    "pleiadesId": "541157"
+  },
+  {
+    "id": "meliboea-magnesia",
+    "name": "Meliboea",
+    "greekName": "Μελίβοια",
+    "region": "magnesia",
+    "coordinates": [
+      23.02,
+      39.98
+    ],
+    "pleiadesId": "543784"
+  },
+  {
+    "id": "tamassos",
+    "name": "Tamassos",
+    "greekName": "Ταμασσός",
+    "region": "cyprus",
+    "coordinates": [
+      33.244,
+      35.03
+    ],
+    "pleiadesId": "707628"
+  },
+  {
+    "id": "methone-magnesia",
+    "name": "Methone",
+    "greekName": "Μεθώνη",
+    "region": "magnesia",
+    "coordinates": [
+      23.07,
+      39.33
+    ],
+    "pleiadesId": "540946"
+  },
+  {
+    "id": "olizon-magnesia",
+    "name": "Olizon",
+    "greekName": "Ὀλιζών",
+    "region": "magnesia",
+    "coordinates": [
+      23.218,
+      39.145
+    ],
+    "pleiadesId": "540923"
+  },
+  {
+    "id": "thaumacia-magnesia",
+    "name": "Thaumacia",
+    "greekName": "Θαυμακία",
+    "region": "magnesia",
+    "coordinates": [
+      23.34,
+      39.17
+    ],
+    "pleiadesId": "541135"
+  },
+  {
+    "id": "halus-achaea-phthiotis",
+    "name": "Halus",
+    "greekName": "Ἅλος",
+    "region": "phthia",
+    "coordinates": [
+      22.84,
+      39.14
+    ],
+    "pleiadesId": "540804"
+  },
+  {
+    "id": "phylace-phthiotis",
+    "name": "Phylace",
+    "greekName": "Φυλάκη",
+    "region": "phthia",
+    "coordinates": [
+      22.601,
+      39.241
+    ],
+    "pleiadesId": "541053"
+  },
+  {
+    "id": "antron-phthiotis",
+    "name": "Antron",
+    "greekName": "Ἄντρων",
+    "region": "phthia",
+    "coordinates": [
+      22.967482,
+      38.95098
+    ],
+    "pleiadesId": "540644"
+  },
+  {
+    "id": "pteleos-phthiotis",
+    "name": "Pteleos",
+    "greekName": "Πτελεός",
+    "region": "phthia",
+    "coordinates": [
+      22.975003,
+      39.033034
+    ],
+    "pleiadesId": "541077"
+  },
+  {
+    "id": "pyrasus-phthiotis",
+    "name": "Pyrasus",
+    "greekName": "Πύρασος",
+    "region": "phthia",
+    "coordinates": [
+      22.821298,
+      39.278802
+    ],
+    "pleiadesId": "541081"
+  },
+  {
+    "id": "iton-phthiotis",
+    "name": "Iton",
+    "greekName": "Ἴτων",
+    "region": "phthia",
+    "coordinates": [
+      22.690378,
+      39.174314
+    ],
+    "pleiadesId": "540842"
+  },
+  {
+    "id": "alope-phthiotis",
+    "name": "Alope",
+    "greekName": "Ἀλόπη",
+    "region": "phthia",
+    "coordinates": [
+      22.951055,
+      38.734463
+    ],
+    "pleiadesId": "540621"
+  },
+  {
+    "id": "ogygia",
+    "name": "Ogygia",
+    "greekName": "Ὠγυγίη",
+    "region": null,
+    "coordinates": [
+      14.35,
+      36.02
+    ],
+    "pleiadesId": "465964"
+  },
+  {
+    "id": "opous-locris",
+    "name": "Opus",
+    "greekName": "Ὀποῦς",
+    "region": "opuntian-locris",
+    "coordinates": [
+      23.008,
+      38.65
+    ],
+    "pleiadesId": "540986"
+  },
+  {
+    "id": "salmydessus",
+    "name": "Salmydessus",
+    "greekName": "Σαλμυδησσός",
+    "region": "thrace",
+    "coordinates": [
+      28.096,
+      41.635
+    ],
+    "pleiadesId": "511404"
+  },
+  {
+    "id": "lilybaeum",
+    "name": "Lilybaeum",
+    "greekName": "Λιλύβαιον",
+    "region": "sicily",
+    "coordinates": [
+      12.437,
+      37.798
+    ],
+    "pleiadesId": "462281"
+  },
+  {
+    "id": "anthemoessa",
+    "name": "Anthemoessa",
+    "greekName": "Ἀνθεμόεσσα",
+    "region": "sicily",
+    "coordinates": [
+      14.2,
+      38.35
+    ],
+    "pleiadesId": "462416"
+  },
+  {
+    "id": "psophis",
+    "name": "Psophis",
+    "greekName": "Ψωφίς",
+    "region": "arcadia",
+    "coordinates": [
+      21.893,
+      37.872
+    ],
+    "pleiadesId": "570638"
+  },
+  {
+    "id": "stymphalus",
+    "name": "Stymphalus",
+    "greekName": "Στύμφαλος",
+    "region": "arcadia",
+    "coordinates": [
+      22.459,
+      37.859
+    ],
+    "pleiadesId": "570696"
+  },
+  {
+    "id": "pholoe",
+    "name": "Pholoe",
+    "greekName": "Φολόη",
+    "region": "arcadia",
+    "coordinates": [
+      21.741,
+      37.754
+    ],
+    "pleiadesId": "570607"
+  },
+  {
+    "id": "sigeum",
+    "name": "Sigeum",
+    "greekName": "Σίγειον",
+    "region": "troad",
+    "coordinates": [
+      26.181,
+      39.99
+    ],
+    "pleiadesId": "550877"
+  },
+  {
+    "id": "rhyteion-troad",
+    "name": "Rhoeteum",
+    "greekName": "Ῥοίτειον",
+    "region": "troad",
+    "coordinates": [
+      26.3,
+      40.009
+    ],
+    "pleiadesId": "550856"
+  },
+  {
+    "id": "lyrnessus-troad",
+    "name": "Lyrnessus",
+    "greekName": "Λυρνησσός",
+    "region": "troad",
+    "coordinates": [
+      27.082,
+      39.508
+    ],
+    "pleiadesId": "550703"
+  },
+  {
+    "id": "chryse-troad",
+    "name": "Chryse",
+    "greekName": "Χρύση",
+    "region": "troad",
+    "coordinates": [
+      26.083,
+      39.521
+    ],
+    "pleiadesId": "550500"
+  },
+  {
+    "id": "thebe-hypoplakia",
+    "name": "Thebe (Hypoplakia)",
+    "greekName": "Θήβη ὑπὸ Πλάκῳ",
+    "region": "troad",
+    "coordinates": [
+      27.02,
+      39.597
+    ],
+    "pleiadesId": "550919"
+  },
+  {
+    "id": "zeleia-troad",
+    "name": "Zeleia",
+    "greekName": "Ζέλεια",
+    "region": "troad",
+    "coordinates": [
+      27.595,
+      40.204
+    ],
+    "pleiadesId": "511461"
+  },
+  {
+    "id": "arisbe-troad",
+    "name": "Arisbe",
+    "greekName": "Ἀρίσβη",
+    "region": "troad",
+    "coordinates": [
+      26.536,
+      40.194
+    ],
+    "pleiadesId": "501359"
+  },
+  {
+    "id": "percote-troad",
+    "name": "Percote",
+    "greekName": "Περκώτη",
+    "region": "troad",
+    "coordinates": [
+      26.589,
+      40.274
+    ],
+    "pleiadesId": "501556"
+  },
+  {
+    "id": "sestus-hellespont",
+    "name": "Sestus",
+    "greekName": "Σηστός",
+    "region": "troad",
+    "coordinates": [
+      26.417,
+      40.228
+    ],
+    "pleiadesId": "501609"
+  },
+  {
+    "id": "abydus-hellespont",
+    "name": "Abydus",
+    "greekName": "Ἄβυδος",
+    "region": "troad",
+    "coordinates": [
+      26.407,
+      40.196
+    ],
+    "pleiadesId": "501325"
+  },
+  {
+    "id": "amydon-paeonia",
+    "name": "Amydon",
+    "greekName": "Ἀμυδών",
+    "region": "paeonia",
+    "coordinates": [
+      22.85,
+      41.05
+    ],
+    "pleiadesId": "494527"
+  },
+  {
+    "id": "practius-troad",
+    "name": "Practius",
+    "greekName": "Πράκτιος",
+    "region": "troad",
+    "coordinates": [
+      26.673,
+      40.244
+    ],
+    "pleiadesId": "501577"
+  },
+  {
+    "id": "adrasteia-troad",
+    "name": "Adrasteia",
+    "greekName": "Ἀδρήστεια",
+    "region": "troad",
+    "coordinates": [
+      27.867,
+      40.345
+    ],
+    "pleiadesId": "511139"
+  },
+  {
+    "id": "apaesus-troad",
+    "name": "Apaesus",
+    "greekName": "Ἀπαισός",
+    "region": "troad",
+    "coordinates": [
+      26.787,
+      40.4
+    ],
+    "pleiadesId": "501544"
+  },
+  {
+    "id": "pityeia-troad",
+    "name": "Pityeia",
+    "greekName": "Πιτύεια",
+    "region": "troad",
+    "coordinates": [
+      27.197,
+      40.431
+    ],
+    "pleiadesId": "511308"
+  },
+  {
+    "id": "tereia-troad",
+    "name": "Tereia",
+    "greekName": "Τήρεια",
+    "region": "troad",
+    "coordinates": [
+      27.75,
+      40.36
+    ],
+    "pleiadesId": "515669"
+  },
+  {
+    "id": "arne-troad",
+    "name": "Arne",
+    "greekName": "Ἄρνη",
+    "region": "troad",
+    "coordinates": [
+      27.33,
+      40.375
+    ],
+    "pleiadesId": "573120"
+  },
+  {
+    "id": "ascania-phrygia",
+    "name": "Ascania",
+    "greekName": "Ἀσκανία",
+    "region": "ascania",
+    "coordinates": [
+      29.52,
+      40.43
+    ],
+    "pleiadesId": "511165"
+  },
+  {
+    "id": "abdera-thrace",
+    "name": "Abdera",
+    "greekName": "Ἄβδηρα",
+    "region": "thrace",
+    "coordinates": [
+      24.983,
+      40.95
+    ],
+    "pleiadesId": "501323"
+  },
+  {
+    "id": "ciconia-thrace",
+    "name": "Ciconia",
+    "greekName": "Κικονία",
+    "region": "thrace",
+    "coordinates": [
+      25.55,
+      40.88
+    ],
+    "pleiadesId": "507409"
+  },
+  {
+    "id": "aenus-thrace",
+    "name": "Aenus",
+    "greekName": "Αἶνος",
+    "region": "thrace",
+    "coordinates": [
+      26.087,
+      40.725
+    ],
+    "pleiadesId": "501337"
+  },
+  {
+    "id": "edonia-thrace",
+    "name": "Edonia",
+    "greekName": "Ἠδωνίς",
+    "region": "thrace",
+    "coordinates": [
+      23.85,
+      40.82
+    ],
+    "pleiadesId": "501409"
+  },
+  {
+    "id": "maroneia-thrace",
+    "name": "Maroneia",
+    "greekName": "Μαρώνεια",
+    "region": "thrace",
+    "coordinates": [
+      25.519,
+      40.906
+    ],
+    "pleiadesId": "501507"
+  },
+  {
+    "id": "alybe-pontus",
+    "name": "Alybe",
+    "greekName": "Ἀλύβη",
+    "region": "pontus",
+    "coordinates": [
+      36.5,
+      41
+    ],
+    "pleiadesId": "554184"
+  },
+  {
+    "id": "cytorus-paphlagonia",
+    "name": "Cytorus",
+    "greekName": "Κύτωρος",
+    "region": "paphlagonia",
+    "coordinates": [
+      32.856,
+      41.857
+    ],
+    "pleiadesId": "844997"
+  },
+  {
+    "id": "cromna-paphlagonia",
+    "name": "Cromna",
+    "greekName": "Κρῶμνα",
+    "region": "paphlagonia",
+    "coordinates": [
+      32.651,
+      41.838
+    ],
+    "pleiadesId": "844994"
+  },
+  {
+    "id": "sesamon-paphlagonia",
+    "name": "Sesamon",
+    "greekName": "Σήσαμον",
+    "region": "paphlagonia",
+    "coordinates": [
+      32.386,
+      41.747
+    ],
+    "pleiadesId": "844856"
+  },
+  {
+    "id": "cyphus-perrhaebia",
+    "name": "Cyphus",
+    "greekName": "Κύφος",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22,
+      39.76
+    ],
+    "pleiadesId": "543761"
+  },
+  {
+    "id": "gyrton-thessaly",
+    "name": "Gyrton",
+    "greekName": "Γυρτών",
+    "region": "hestiaeotis",
+    "coordinates": [
+      22.57,
+      39.798
+    ],
+    "pleiadesId": "540798"
+  },
+  {
+    "id": "cyparissus-phocis",
+    "name": "Cyparissus",
+    "greekName": "Κυπάρισσος",
+    "region": "phocis",
+    "coordinates": [
+      22.51,
+      38.47
+    ],
+    "pleiadesId": "540642"
+  },
+  {
+    "id": "aspledon",
+    "name": "Aspledon",
+    "greekName": "Ἀσπληδών",
+    "region": "boeotia",
+    "coordinates": [
+      23.035,
+      38.513
+    ],
+    "pleiadesId": "541126"
+  },
+  {
+    "id": "hypata-thessaly",
+    "name": "Hypata",
+    "greekName": "Ὑπάτη",
+    "region": "malis",
+    "coordinates": [
+      22.241,
+      38.872
+    ],
+    "pleiadesId": "540827"
+  },
+  {
+    "id": "stiris-attica",
+    "name": "Steiria",
+    "greekName": "Στειριά",
+    "region": "attica-proper",
+    "coordinates": [
+      24.011,
+      37.898
+    ],
+    "pleiadesId": "580110"
+  },
+  {
+    "id": "stiris-phocis",
+    "name": "Stiris",
+    "greekName": "Στῖρις",
+    "region": "phocis",
+    "coordinates": [
+      22.755354,
+      38.38432
+    ],
+    "pleiadesId": "541113"
+  },
+  {
+    "id": "crisa-phocis",
+    "name": "Crisa",
+    "greekName": "Κρῖσα",
+    "region": "phocis",
+    "coordinates": [
+      22.446,
+      38.43
+    ],
+    "pleiadesId": "540868"
+  },
+  {
+    "id": "hyampolis-phocis",
+    "name": "Hyampolis",
+    "greekName": "Ὑάμπολις",
+    "region": "phocis",
+    "coordinates": [
+      22.906,
+      38.596
+    ],
+    "pleiadesId": "540820"
+  },
+  {
+    "id": "anemoreia-phocis",
+    "name": "Anemoreia",
+    "greekName": "Ἀνεμώρεια",
+    "region": "phocis",
+    "coordinates": [
+      22.582,
+      38.477
+    ],
+    "pleiadesId": "543626"
+  },
+  {
+    "id": "lilaea-phocis",
+    "name": "Lilaea",
+    "greekName": "Λίλαια",
+    "region": "phocis",
+    "coordinates": [
+      22.51,
+      38.63
+    ],
+    "pleiadesId": "540915"
+  },
+  {
+    "id": "coroneia-boeotia",
+    "name": "Coroneia",
+    "greekName": "Κορώνεια",
+    "region": "boeotia",
+    "coordinates": [
+      22.957,
+      38.391
+    ],
+    "pleiadesId": "540717"
+  },
+  {
+    "id": "haliartus-boeotia",
+    "name": "Haliartus",
+    "greekName": "Ἁλίαρτος",
+    "region": "boeotia",
+    "coordinates": [
+      23.084,
+      38.377
+    ],
+    "pleiadesId": "540801"
+  },
+  {
+    "id": "lebadeia",
+    "name": "Lebadeia",
+    "greekName": "Λεβάδεια",
+    "region": "boeotia",
+    "coordinates": [
+      22.875,
+      38.435
+    ],
+    "pleiadesId": "540907"
+  },
+  {
+    "id": "thisbe-boeotia",
+    "name": "Thisbe",
+    "greekName": "Θίσβη",
+    "region": "boeotia",
+    "coordinates": [
+      22.965,
+      38.26
+    ],
+    "pleiadesId": "541146"
+  },
+  {
+    "id": "copae-boeotia",
+    "name": "Copae",
+    "greekName": "Κῶπαι",
+    "region": "boeotia",
+    "coordinates": [
+      23.163,
+      38.502
+    ],
+    "pleiadesId": "540878"
+  },
+  {
+    "id": "eutresis-boeotia",
+    "name": "Eutresis",
+    "greekName": "Εὔτρησις",
+    "region": "boeotia",
+    "coordinates": [
+      23.205,
+      38.268
+    ],
+    "pleiadesId": "540787"
+  },
+  {
+    "id": "onchestos-boeotia",
+    "name": "Onchestus",
+    "greekName": "Ὀγχηστός",
+    "region": "boeotia",
+    "coordinates": [
+      23.15,
+      38.373
+    ],
+    "pleiadesId": "540984"
+  },
+  {
+    "id": "arne-boeotia",
+    "name": "Arne",
+    "greekName": "Ἄρνη",
+    "region": "boeotia",
+    "coordinates": [
+      22.933,
+      38.483
+    ],
+    "pleiadesId": "540663"
+  },
+  {
+    "id": "hyria-boeotia",
+    "name": "Hyria",
+    "greekName": "Ὑρίη",
+    "region": "boeotia",
+    "coordinates": [
+      23.565,
+      38.457
+    ],
+    "pleiadesId": "540830"
+  },
+  {
+    "id": "schoenus-boeotia",
+    "name": "Schoenus",
+    "greekName": "Σχοῖνος",
+    "region": "boeotia",
+    "coordinates": [
+      23.364,
+      38.422
+    ],
+    "pleiadesId": "541091"
+  },
+  {
+    "id": "scolus-boeotia",
+    "name": "Scolus",
+    "greekName": "Σκῶλος",
+    "region": "boeotia",
+    "coordinates": [
+      23.384,
+      38.309
+    ],
+    "pleiadesId": "541106"
+  },
+  {
+    "id": "graia-boeotia",
+    "name": "Graia",
+    "greekName": "Γραῖα",
+    "region": "boeotia",
+    "coordinates": [
+      23.63,
+      38.387
+    ],
+    "pleiadesId": "540796"
+  },
+  {
+    "id": "mycalessus-boeotia",
+    "name": "Mycalessus",
+    "greekName": "Μυκαλησσός",
+    "region": "boeotia",
+    "coordinates": [
+      23.52,
+      38.417
+    ],
+    "pleiadesId": "540953"
+  },
+  {
+    "id": "harma-boeotia",
+    "name": "Harma",
+    "greekName": "Ἅρμα",
+    "region": "boeotia",
+    "coordinates": [
+      23.484,
+      38.376
+    ],
+    "pleiadesId": "540805"
+  },
+  {
+    "id": "eilesion-boeotia",
+    "name": "Eilesion",
+    "greekName": "Εἰλέσιον",
+    "region": "boeotia",
+    "coordinates": [
+      23.504,
+      38.302
+    ],
+    "pleiadesId": "540750"
+  },
+  {
+    "id": "medeon-boeotia",
+    "name": "Medeon",
+    "greekName": "Μεδεών",
+    "region": "boeotia",
+    "coordinates": [
+      23.167,
+      38.386
+    ],
+    "pleiadesId": "540940"
+  },
+  {
+    "id": "eleon-boeotia",
+    "name": "Eleon",
+    "greekName": "Ἐλεών",
+    "region": "boeotia",
+    "coordinates": [
+      23.48,
+      38.356
+    ],
+    "pleiadesId": "579946"
+  },
+  {
+    "id": "hyle-boeotia",
+    "name": "Hyle",
+    "greekName": "Ὕλη",
+    "region": "boeotia",
+    "coordinates": [
+      23.318,
+      38.459
+    ],
+    "pleiadesId": "540825"
+  },
+  {
+    "id": "peteon-boeotia",
+    "name": "Peteon",
+    "greekName": "Πετεών",
+    "region": "boeotia",
+    "coordinates": [
+      23.412,
+      38.444
+    ],
+    "pleiadesId": "541028"
+  },
+  {
+    "id": "ocalea-boeotia",
+    "name": "Ocalea",
+    "greekName": "Ὠκαλέα",
+    "region": "boeotia",
+    "coordinates": [
+      23.038,
+      38.352
+    ],
+    "pleiadesId": "540978"
+  },
+  {
+    "id": "eteonus-boeotia",
+    "name": "Eteonus",
+    "greekName": "Ἐτεωνός",
+    "region": "boeotia",
+    "coordinates": [
+      23.39,
+      38.315
+    ],
+    "pleiadesId": "543704"
+  },
+  {
+    "id": "erythrae-boeotia",
+    "name": "Erythrae",
+    "greekName": "Ἐρυθραί",
+    "region": "boeotia",
+    "coordinates": [
+      23.408,
+      38.24
+    ],
+    "pleiadesId": "540771"
+  },
+  {
+    "id": "potniai-boeotia",
+    "name": "Potniae",
+    "greekName": "Πότνιαι",
+    "region": "boeotia",
+    "coordinates": [
+      23.312,
+      38.3
+    ],
+    "pleiadesId": "541070"
+  },
+  {
+    "id": "tricca-thessaly",
+    "name": "Tricca",
+    "greekName": "Τρίκκη",
+    "region": "pelasgiotis",
+    "coordinates": [
+      21.783,
+      39.569
+    ],
+    "pleiadesId": "541163"
+  },
+  {
+    "id": "ormenion-magnesia",
+    "name": "Ormenion",
+    "greekName": "Ὀρμένιον",
+    "region": "magnesia",
+    "coordinates": [
+      22.972,
+      39.352
+    ],
+    "pleiadesId": "543819"
+  },
+  {
+    "id": "cerinthus",
+    "name": "Cerinthus",
+    "greekName": "Κήρινθος",
+    "region": "euboea",
+    "coordinates": [
+      23.472,
+      38.835
+    ],
+    "pleiadesId": "540861"
+  },
+  {
+    "id": "carystus",
+    "name": "Carystus",
+    "greekName": "Κάρυστος",
+    "region": "euboea",
+    "coordinates": [
+      24.431,
+      38.035
+    ],
+    "pleiadesId": "570336"
+  },
+  {
+    "id": "styra",
+    "name": "Styra",
+    "greekName": "Στύρα",
+    "region": "euboea",
+    "coordinates": [
+      24.262,
+      38.146
+    ],
+    "pleiadesId": "541117"
+  },
+  {
+    "id": "pella-macedonia",
+    "name": "Pella",
+    "greekName": "Πέλλα",
+    "region": "emathia",
+    "coordinates": [
+      22.518,
+      40.754
+    ],
+    "pleiadesId": "491687"
   }
 ]

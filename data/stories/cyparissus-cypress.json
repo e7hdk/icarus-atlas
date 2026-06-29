@@ -7,39 +7,71 @@
   "era": 7.095,
   "summary": {
     "text": "In the grove Orpheus drew together with his song, the fairest youth of Ceos loved a sacred stag with golden collar — and when a summer noon's javelin cast at a shadow killed the pet by mischance, Apollo granted his prayer to mourn forever and changed him into the cypress that still weeps at graves.",
-    "sources": ["ovid"],
+    "sources": [
+      "ovid"
+    ],
     "citation": "Ov. Met. 10.138–218"
   },
   "chapters": [
     {
       "title": "The sacred stag",
       "text": "Orpheus' lyre had raised an hilltop grove where trees and beasts gathered to listen. Among them came a stag sacred to the nymphs of Carthaea, with antlers tipped in gold and a jewelled collar — tame enough to accept strangers' hands, but dearest to Cyparissus of Ceos, who led it to pasture and wove garlands for its horns.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.138–172"
     },
     {
       "title": "The mis-thrown javelin",
       "text": "At high noon, when the Crab burned overhead, the stag lay in forest shade. Cyparissus cast a javelin at a moving shadow — and struck the beloved creature. Apollo comforted him in vain; the youth could not endure life without the stag and begged the gods that he might grieve eternally.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.172–195"
     },
     {
       "title": "The cypress",
       "text": "Phoebus granted the prayer with sorrow: Cyparissus' limbs took a green tint, his hair became a bristling crest, and he rose a slender tree pointing to the stars — the cypress, forever associated with mourning. Apollo said he would mourn Cyparissus as truly as the youth had mourned for others.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 10.195–218"
     }
   ],
   "cast": [
-    { "id": "orpheus", "name": "Orpheus", "role": "Bard whose song raised the grove" },
-    { "id": "apollo", "name": "Apollo", "role": "God who transformed the grieving youth" },
-    { "name": "Cyparissus", "role": "Ceian youth who became the cypress" }
+    {
+      "id": "orpheus",
+      "name": "Orpheus",
+      "role": "Bard whose song raised the grove"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "role": "God who transformed the grieving youth"
+    },
+    {
+      "id": "cyparissus-ceos",
+      "name": "Cyparissus",
+      "role": "Ceian youth who became the cypress"
+    }
   ],
   "places": [
-    { "name": "Ceos", "role": "Island home of Cyparissus" },
-    { "name": "Carthaea", "role": "Region whose nymphs held the stag sacred" }
+    {
+      "name": "Ceos",
+      "role": "Island home of Cyparissus",
+      "id": "ceos"
+    },
+    {
+      "name": "Carthaea",
+      "role": "Region whose nymphs held the stag sacred",
+      "id": "ceos"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "10.138–218" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "10.138–218"
+    }
   ]
 }

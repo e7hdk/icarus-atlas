@@ -25,7 +25,11 @@
       "label": "Sicyon founded (Aegialeus)",
       "stories": [],
       "dates": [
-        { "year": -2200, "source": "eusebius", "citation": "Castor ap. Eusebius, Chronicle 1 (235 yrs before Inachus)" }
+        {
+          "year": -2200,
+          "source": "eusebius",
+          "citation": "Castor ap. Eusebius, Chronicle 1 (235 yrs before Inachus)"
+        }
       ],
       "estimate": true
     },
@@ -34,7 +38,11 @@
       "label": "Inachus, first king of Argos",
       "stories": [],
       "dates": [
-        { "year": -1960, "source": "eusebius", "citation": "Africanus ap. Eusebius, Chronicle 1 (Inachus–Sthenelus, 382 yrs to Cecrops)" }
+        {
+          "year": -1960,
+          "source": "eusebius",
+          "citation": "Africanus ap. Eusebius, Chronicle 1 (Inachus–Sthenelus, 382 yrs to Cecrops)"
+        }
       ],
       "estimate": true
     },
@@ -43,70 +51,191 @@
       "label": "The Ogygian flood (Phoroneus' reign)",
       "stories": [],
       "dates": [
-        { "year": -1796, "source": "eusebius", "citation": "Africanus ap. Eusebius (1020 yrs before the first Olympiad)" }
+        {
+          "year": -1796,
+          "source": "eusebius",
+          "citation": "Africanus ap. Eusebius (1020 yrs before the first Olympiad)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "io-inachid",
       "label": "Io, daughter of Inachus",
-      "stories": ["io-wandering"],
+      "stories": [
+        "io-wandering"
+      ],
       "dates": [
-        { "year": -1900, "source": "eusebius", "citation": "Inachid generation (Inachus ≈ 1960)" }
+        {
+          "year": -1900,
+          "source": "eusebius",
+          "citation": "Inachid generation (Inachus ≈ 1960)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "deucalion-flood",
       "label": "Deucalion's flood",
-      "stories": ["great-flood"],
+      "stories": [
+        "great-flood"
+      ],
       "dates": [
-        { "year": -1528, "source": "marmor-parium", "citation": "Marmor Parium ep. 4 (1528/7)" }
+        {
+          "year": -1528,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 4 (1528/7)"
+        }
       ],
       "estimate": false
     },
     {
+      "id": "danaids-argos",
+      "label": "The Danaids flee to Argos",
+      "stories": [
+        "the-danaids"
+      ],
+      "dates": [
+        {
+          "year": -1510,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium (FGrHist 239) A10: Danaus sailed from Egypt, 1247 yr before 264/3 BC"
+        }
+      ],
+      "estimate": false
+    },
+    {
+      "id": "europa-abduction",
+      "label": "The abduction of Europa",
+      "stories": [
+        "europa-and-the-bull"
+      ],
+      "dates": [
+        {
+          "year": -1540,
+          "source": "eusebius",
+          "citation": "generational (one generation before Cadmus founds Thebes ≈ 1519)"
+        }
+      ],
+      "estimate": true
+    },
+    {
       "id": "cadmus-thebes",
       "label": "Cadmus founds Thebes",
-      "stories": ["cadmus-and-thebes"],
+      "stories": [
+        "cadmus-and-thebes"
+      ],
       "dates": [
-        { "year": -1519, "source": "marmor-parium", "citation": "Marmor Parium ep. 7 (1519/8)" }
+        {
+          "year": -1519,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 7 (1519/8)"
+        }
       ],
       "estimate": false
     },
     {
       "id": "aristaeus-cadmean",
       "label": "Aristaeus weds into the house of Cadmus",
-      "stories": ["aristaeus-cycle"],
+      "stories": [
+        "aristaeus-cycle"
+      ],
       "dates": [
-        { "year": -1490, "source": "eusebius", "citation": "generational (Cadmus' son-in-law; Cadmus ≈ 1519)" }
+        {
+          "year": -1490,
+          "source": "eusebius",
+          "citation": "generational (Cadmus' son-in-law; Cadmus ≈ 1519)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "actaeon-death",
       "label": "The death of Actaeon",
-      "stories": ["actaeon-artemis"],
+      "stories": [
+        "actaeon-artemis"
+      ],
       "dates": [
-        { "year": -1475, "source": "eusebius", "citation": "generational (Cadmus' grandson, son of Aristaeus & Autonoe)" }
+        {
+          "year": -1475,
+          "source": "eusebius",
+          "citation": "generational (Cadmus' grandson, son of Aristaeus & Autonoe)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "perseus-mycenae",
       "label": "Perseus, founding of Mycenae",
-      "stories": ["perseus-cycle"],
+      "stories": [
+        "perseus-cycle"
+      ],
       "dates": [
-        { "year": -1300, "source": "eusebius", "citation": "Eusebius (Perseus, founder of Mycenae); ~2–3 gen before Heracles" }
+        {
+          "year": -1300,
+          "source": "eusebius",
+          "citation": "Eusebius (Perseus, founder of Mycenae); ~2–3 gen before Heracles"
+        }
       ],
       "estimate": true
     },
     {
       "id": "bellerophon",
       "label": "Bellerophon & the Chimera",
-      "stories": ["bellerophon-chimera"],
+      "stories": [
+        "bellerophon-chimera"
+      ],
       "dates": [
-        { "year": -1290, "source": "eratosthenes", "citation": "generational (grandfather's gen of Glaucus & Sarpedon at Troy)" }
+        {
+          "year": -1290,
+          "source": "eratosthenes",
+          "citation": "generational (grandfather's gen of Glaucus & Sarpedon at Troy)"
+        }
+      ],
+      "estimate": true
+    },
+    {
+      "id": "salmoneus-thunder",
+      "label": "Salmoneus and the false thunder",
+      "stories": [
+        "salmoneus-false-thunder"
+      ],
+      "dates": [
+        {
+          "year": -1680,
+          "source": "eusebius",
+          "citation": "generational (Aeolid generation before Tyro and the Argonaut fathers)"
+        }
+      ],
+      "estimate": true
+    },
+    {
+      "id": "orion-hunter",
+      "label": "Orion the hunter",
+      "stories": [
+        "orion-the-hunter"
+      ],
+      "dates": [
+        {
+          "year": -1450,
+          "source": "eratosthenes",
+          "citation": "generational (pre-Argonaut hunter; constellation myth)"
+        }
+      ],
+      "estimate": true
+    },
+    {
+      "id": "pelops-chariot",
+      "label": "Pelops and the chariot race",
+      "stories": [
+        "pelops-and-oenomaus"
+      ],
+      "dates": [
+        {
+          "year": -1320,
+          "source": "eratosthenes",
+          "citation": "generational (Tantalid line: Pelops → Atreus → Agamemnon at Troy)"
+        }
       ],
       "estimate": true
     },
@@ -115,116 +244,212 @@
       "label": "Minos of Crete (the thalassocracy)",
       "stories": [],
       "dates": [
-        { "year": -1294, "source": "marmor-parium", "citation": "Marmor Parium ep. 11 (Minos the king; Theseus' slaying of the Minotaur falls a generation later, ~1259)" }
+        {
+          "year": -1294,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 11 (Minos the king; Theseus' slaying of the Minotaur falls a generation later, ~1259)"
+        }
       ],
       "estimate": false
     },
     {
       "id": "oedipus-thebes",
       "label": "Oedipus, house of Laius",
-      "stories": ["oedipus-at-thebes"],
+      "stories": [
+        "oedipus-at-thebes"
+      ],
       "dates": [
-        { "year": -1260, "source": "eratosthenes", "citation": "generational (one gen before the Seven)" }
+        {
+          "year": -1260,
+          "source": "eratosthenes",
+          "citation": "generational (one gen before the Seven)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "theseus-attica",
       "label": "Theseus unites Attica",
-      "stories": ["theseus-cycle"],
+      "stories": [
+        "theseus-cycle"
+      ],
       "dates": [
-        { "year": -1259, "source": "marmor-parium", "citation": "Marmor Parium ep. 20" }
+        {
+          "year": -1259,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 20"
+        }
       ],
       "estimate": false
     },
     {
       "id": "amazon-invasion",
       "label": "The Amazons invade Attica",
-      "stories": ["amazon-campaign"],
+      "stories": [
+        "amazon-campaign"
+      ],
       "dates": [
-        { "year": -1256, "source": "marmor-parium", "citation": "Marmor Parium ep. 21" }
+        {
+          "year": -1256,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 21"
+        }
       ],
       "estimate": false
     },
     {
       "id": "calydonian-boar",
       "label": "The Calydonian boar hunt",
-      "stories": ["calydonian-boar"],
+      "stories": [
+        "calydonian-boar"
+      ],
       "dates": [
-        { "year": -1250, "source": "eratosthenes", "citation": "generational (Argonaut generation)" }
+        {
+          "year": -1250,
+          "source": "eratosthenes",
+          "citation": "generational (Argonaut generation)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "heracles-birth",
       "label": "Birth of Heracles",
-      "stories": ["birth-and-banishment"],
+      "stories": [
+        "birth-and-banishment"
+      ],
       "dates": [
-        { "year": -1290, "source": "eratosthenes", "citation": "generational (floruit ~1 gen before Troy)" }
+        {
+          "year": -1290,
+          "source": "eratosthenes",
+          "citation": "generational (floruit ~1 gen before Troy)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "heracles-labours",
       "label": "The labours of Heracles",
-      "stories": ["twelve-labours"],
+      "stories": [
+        "twelve-labours"
+      ],
       "dates": [
-        { "year": -1255, "source": "eratosthenes", "citation": "generational (Heraclid return at Troy + 80)" }
+        {
+          "year": -1255,
+          "source": "eratosthenes",
+          "citation": "generational (Heraclid return at Troy + 80)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "heracles-death",
       "label": "The death of Heracles",
-      "stories": ["death-of-heracles", "deianira-at-the-feast"],
+      "stories": [
+        "death-of-heracles",
+        "deianira-at-the-feast"
+      ],
       "dates": [
-        { "year": -1245, "source": "eratosthenes", "citation": "generational" }
+        {
+          "year": -1245,
+          "source": "eratosthenes",
+          "citation": "generational"
+        }
+      ],
+      "estimate": true
+    },
+    {
+      "id": "phineus-harpies",
+      "label": "Phineus freed from the Harpies",
+      "stories": [
+        "phineus-and-the-harpies"
+      ],
+      "dates": [
+        {
+          "year": -1245,
+          "source": "eratosthenes",
+          "citation": "generational (the Argonaut voyage at Salmydessus)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "argo-to-colchis",
       "label": "The Argo to Colchis",
-      "stories": ["argonautica"],
+      "stories": [
+        "argonautica"
+      ],
       "dates": [
-        { "year": -1245, "source": "eratosthenes", "citation": "generational (fathers of the Trojan heroes: Peleus, Telamon)" }
+        {
+          "year": -1245,
+          "source": "eratosthenes",
+          "citation": "generational (fathers of the Trojan heroes: Peleus, Telamon)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "orpheus-on-the-argo",
       "label": "Orpheus sails with the Argo",
-      "stories": ["orpheus-on-the-argo"],
+      "stories": [
+        "orpheus-on-the-argo"
+      ],
       "dates": [
-        { "year": -1245, "source": "eratosthenes", "citation": "generational (the Argo voyage)" }
+        {
+          "year": -1245,
+          "source": "eratosthenes",
+          "citation": "generational (the Argo voyage)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "seven-against-thebes",
       "label": "The Seven against Thebes",
-      "stories": ["seven-against-thebes"],
+      "stories": [
+        "seven-against-thebes"
+      ],
       "dates": [
-        { "year": -1230, "source": "eratosthenes", "citation": "generational (one gen before Troy)" }
+        {
+          "year": -1230,
+          "source": "eratosthenes",
+          "citation": "generational (one gen before Troy)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "epigoni",
       "label": "The Epigoni take Thebes",
-      "stories": ["epigoni"],
+      "stories": [
+        "epigoni"
+      ],
       "dates": [
-        { "year": -1205, "source": "eratosthenes", "citation": "generational (their sons, just before Troy)" }
+        {
+          "year": -1205,
+          "source": "eratosthenes",
+          "citation": "generational (their sons, just before Troy)"
+        }
       ],
       "estimate": true
     },
     {
       "id": "trojan-war-begins",
       "label": "The Trojan War begins",
-      "stories": ["cypria"],
+      "stories": [
+        "cypria"
+      ],
       "dates": [
-        { "year": -1194, "source": "eratosthenes", "citation": "ap. Clement (fall + 10)" },
-        { "year": -1218, "source": "marmor-parium", "citation": "Marmor Parium ep. 23" }
+        {
+          "year": -1194,
+          "source": "eratosthenes",
+          "citation": "ap. Clement (fall + 10)"
+        },
+        {
+          "year": -1218,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 23"
+        }
       ],
       "topic": "trojan-war-start-date",
       "estimate": false
@@ -232,10 +457,20 @@
     {
       "id": "fall-of-troy",
       "label": "The fall of Troy",
-      "stories": ["sack-of-troy"],
+      "stories": [
+        "sack-of-troy"
+      ],
       "dates": [
-        { "year": -1184, "source": "eratosthenes", "citation": "ap. Clement, Stromata 1.21.138" },
-        { "year": -1209, "source": "marmor-parium", "citation": "Marmor Parium ep. 24" }
+        {
+          "year": -1184,
+          "source": "eratosthenes",
+          "citation": "ap. Clement, Stromata 1.21.138"
+        },
+        {
+          "year": -1209,
+          "source": "marmor-parium",
+          "citation": "Marmor Parium ep. 24"
+        }
       ],
       "topic": "fall-of-troy-date",
       "estimate": false
@@ -243,36 +478,60 @@
     {
       "id": "the-returns",
       "label": "The Returns (Nostoi)",
-      "stories": ["nostoi"],
+      "stories": [
+        "nostoi"
+      ],
       "dates": [
-        { "year": -1183, "source": "eratosthenes", "citation": "the decade after the fall" }
+        {
+          "year": -1183,
+          "source": "eratosthenes",
+          "citation": "the decade after the fall"
+        }
       ],
       "estimate": true
     },
     {
       "id": "vengeance-at-mycenae",
       "label": "Murder & vengeance at Mycenae",
-      "stories": ["oresteia"],
+      "stories": [
+        "oresteia"
+      ],
       "dates": [
-        { "year": -1176, "source": "eratosthenes", "citation": "within the Returns decade" }
+        {
+          "year": -1176,
+          "source": "eratosthenes",
+          "citation": "within the Returns decade"
+        }
       ],
       "estimate": true
     },
     {
       "id": "odysseus-home",
       "label": "Odysseus reaches Ithaca",
-      "stories": ["odyssey"],
+      "stories": [
+        "odyssey"
+      ],
       "dates": [
-        { "year": -1174, "source": "eratosthenes", "citation": "fall + 10" }
+        {
+          "year": -1174,
+          "source": "eratosthenes",
+          "citation": "fall + 10"
+        }
       ],
       "estimate": true
     },
     {
       "id": "heraclid-return",
       "label": "Return of the Heraclidae",
-      "stories": ["return-of-heraclids"],
+      "stories": [
+        "return-of-heraclids"
+      ],
       "dates": [
-        { "year": -1104, "source": "eratosthenes", "citation": "ap. Clement (Troy + 80; the Dorian return)" }
+        {
+          "year": -1104,
+          "source": "eratosthenes",
+          "citation": "ap. Clement (Troy + 80; the Dorian return)"
+        }
       ],
       "estimate": false
     }

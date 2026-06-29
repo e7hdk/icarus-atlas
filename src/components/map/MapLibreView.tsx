@@ -19,6 +19,7 @@ import {
   type RegionsMetaFile,
 } from '@/features/geo/region-drilldown';
 import type { MapManifest } from '@/types/map';
+import type { CharacterIndex } from '@/features/characters/load';
 import type { GeoCity, GeoFeature, GeoPlace, GeoRegion, Lineage } from '@/types/geo';
 import {
   FLY_ZOOM_CITY,
@@ -224,12 +225,14 @@ export function MapLibreView({
   places,
   features,
   lineages,
+  characterIndex,
 }: {
   regions: GeoRegion[];
   cities: GeoCity[];
   places: GeoPlace[];
   features: GeoFeature[];
   lineages: Record<string, Lineage | null>;
+  characterIndex: CharacterIndex;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
@@ -1162,6 +1165,7 @@ export function MapLibreView({
           city={selectedCity}
           region={selectedCity.region ? byId.get(selectedCity.region) : undefined}
           lineage={lineages[selectedCity.id] ?? null}
+          characterIndex={characterIndex}
           onClose={() => setSelectedCityId(null)}
         />
       )}

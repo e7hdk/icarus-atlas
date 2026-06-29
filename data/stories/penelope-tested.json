@@ -24,6 +24,12 @@
       "citation": "Hom. Od. 11.444–446; 23.205–348"
     },
     {
+      "title": "Shades of the suitors",
+      "text": "In the underworld the suitors' ghosts gathered gibbering, and Hermes the Helper led them down the dank ways — past the streams of Oceanus, past the rock Leucas, past the gates of the sun and the land of dreams, until they came quickly to the mead of asphodel where the spirits dwell. There Amphimedon told Agamemnon's shade how Odysseus had slain them all in the hall.",
+      "sources": ["homer"],
+      "citation": "Hom. Od. 24.1–99"
+    },
+    {
       "title": "Laertes in the orchard",
       "text": "Odysseus went to his aged father Laertes in the orchard, proved himself by the scar and by memories only they shared, and stood with Telemachus and the loyal servants when the kin of the slain suitors marched against the house armed with spears.",
       "sources": ["homer"],
@@ -79,6 +85,7 @@
   ],
   "places": [
     { "id": "ithaca", "name": "Ithaca", "role": "Bed-chamber and orchard" },
+    { "id": "leucas", "name": "Leucas", "role": "White rock on the road Hermes led the suitors' shades toward Hades" },
     { "id": "cichyrus", "name": "Cichyrus", "role": "Thesprotian kingdom in one continuation" },
     { "id": "mantinea", "name": "Mantinea", "role": "City of Penelope–Pan variant" }
   ],

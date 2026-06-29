@@ -3,49 +3,113 @@
   "title": "Pentheus and Dionysus",
   "greekTitle": "Πενθεὺς καὶ Διόνυσος",
   "kind": "episode",
-  "parent": "theban-cycle",
-  "era": 5.4,
+  "parent": "dionysus-cycle",
+  "era": 5.45,
   "summary": {
     "text": "Pentheus king of Thebes denied the god born to his aunt Semele; Dionysus drove the women to Cithaeron in frenzy, and Agave the king's mother tore her son apart with her bare hands, thinking him a lion.",
-    "sources": ["apollodorus", "hesiod", "ovid", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "hesiod",
+      "ovid",
+      "hyginus"
+    ],
     "citation": "Apollod. 3.4.3–4, 3.5.2; Hes. Th. 940–942; Ov. Met. 3.511–733; Hyg. Fab. 184"
   },
   "chapters": [
     {
       "title": "Semele's fire",
       "text": "Semele, daughter of Cadmus, lay with Zeus and asked to see him in his true form; the lightning consumed her, but Hermes snatched the infant Dionysus from her womb and stitched him into Zeus' thigh until the god was born again — the twice-born, whom Hera's jealousy would hound all his days.",
-      "sources": ["hesiod", "apollodorus", "hyginus"],
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Hes. Th. 940–942; Apollod. 3.4.3; Hyg. Fab. 179"
     },
     {
       "title": "The stranger at the gates",
       "text": "When Dionysus came back to Thebes as a god, Pentheus son of Echion and Agave forbade his rites and imprisoned the maenads. The stranger — the god in disguise — escaped his bonds and promised to show the king the sacred women on Mount Cithaeron if Pentheus would dress as one of them.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 3.5.2; Ov. Met. 3.511–690"
     },
     {
       "title": "The maenads' prey",
       "text": "On the mountain the Theban women, maddened by Dionysus, tore Pentheus limb from limb. Agave his mother bore his head on a thyrsus, thinking it the head of a lion, and only when the frenzy passed did she see what she had done to her son.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
       "citation": "Apollod. 3.5.2; Ov. Met. 3.691–733; Hyg. Fab. 184"
     }
   ],
   "cast": [
-    { "id": "pentheus", "name": "Pentheus", "role": "King who denied the god" },
-    { "id": "dionysus", "name": "Dionysus", "role": "The twice-born god of Thebes" },
-    { "id": "agave", "name": "Agave", "role": "Mother who tore her son apart" },
-    { "id": "echion", "name": "Echion", "role": "Pentheus' father, a Spartos" },
-    { "id": "cadmus", "name": "Cadmus", "role": "Grandfather who left Thebes in exile" },
-    { "id": "harmonia", "name": "Harmonia", "role": "Grandmother who departed with Cadmus" }
+    {
+      "id": "pentheus",
+      "name": "Pentheus",
+      "role": "King who denied the god"
+    },
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "role": "The twice-born god of Thebes"
+    },
+    {
+      "id": "agave",
+      "name": "Agave",
+      "role": "Mother who tore her son apart"
+    },
+    {
+      "id": "echion",
+      "name": "Echion",
+      "role": "Pentheus' father, a Spartos"
+    },
+    {
+      "id": "cadmus",
+      "name": "Cadmus",
+      "role": "Grandfather who left Thebes in exile"
+    },
+    {
+      "id": "harmonia",
+      "name": "Harmonia",
+      "role": "Grandmother who departed with Cadmus"
+    }
   ],
   "places": [
-    { "id": "thebes", "name": "Thebes", "role": "City that rejected the god" },
-    { "name": "Mount Cithaeron", "role": "Where the maenads tore Pentheus" }
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City that rejected the god"
+    },
+    {
+      "name": "Mount Cithaeron",
+      "role": "Where the maenads tore Pentheus",
+      "featureId": "mount-cithaeron"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "3.4.3–4, 3.5.2" },
-    { "source": "hesiod", "work": "Theogony", "citation": "940–942" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "3.511–733" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "179, 184" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.4.3–4, 3.5.2"
+    },
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "940–942"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3.511–733"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "179, 184"
+    }
   ]
 }

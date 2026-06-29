@@ -69,8 +69,52 @@
   ],
   "residences": [
     {
+      "city": "phylace-phthiotis",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.655–690, 9.330–370"
+    },
+    {
+      "city": "halus-achaea-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "alope-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "trachis-malis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
       "city": "skyros",
       "sources": ["apollodorus", "hyginus"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    },
+    {
+      "city": "sigeum",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 13.439–480; Epitome 5.23"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.21, 3.29; Iliad 2.559–580"
+    },
+    {
+      "city": "pergamon",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 3.17; Fabulae 101"
+    },
+    {
+      "city": "adramyttium-mysia",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.33"
     }
   ]
 }

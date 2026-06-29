@@ -1,0 +1,55 @@
+{
+  "id": "phorbas-argive",
+  "name": "Phorbas",
+  "greekName": "Phorbas (Φόρβας)",
+  "type": "mortal",
+  "domains": [
+    "Argive kingship",
+    "father of Triopas"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "An early king of Argos in the native succession after Argus, father of Triopas and ancestor of Iasus and Io in Pausanias' Argive king-list.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "Not Phorbas son of Triopas who cleared Rhodes of beasts in Hyginus' astral lore, nor the Boeotian Phorbas who fathered the Argo's helmsman Tiphys, nor the Trojan Phorbas whose son Ilioneus fell at Troy.",
+      "sources": [
+        "hyginus",
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Astronomica 2.14.5; Bibliotheca 1.9.4, 2.5.5; Iliad 14.475–505"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias records the Argive succession from Phoroneus through Argus, who begat Peirasus and Phorbas; Phorbas in turn begat Triopas, and Triopas begat Iasus and Agenor. Io, daughter of Iasus, is the princess whose wanderings link Argos to Egypt and to the return of Danaus.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    },
+    {
+      "text": "The Argive king-list preserved in the lineage places Phorbas after Criasus son of Argus — a reign-order that synthesizes Apollodorus' Criasus with Pausanias' house of Phorbas and Triopas.",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.1.2; Description of Greece 2.16.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "argos",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 2.16.1"
+    }
+  ]
+}

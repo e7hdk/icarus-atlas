@@ -23,5 +23,32 @@
       "sources": ["apollodorus", "hyginus"],
       "citation": "Epitome 3.11, 7.27–7.35; Fabulae 81"
     }
+  ],
+  "residences": [
+    {
+      "city": "gyrton-thessaly",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.735–775"
+    },
+    {
+      "city": "colophon",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2"
+    },
+    {
+      "city": "notium",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.2, 6.4"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
   ]
 }

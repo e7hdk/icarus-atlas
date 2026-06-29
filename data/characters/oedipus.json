@@ -46,7 +46,7 @@
         "ovid",
         "hyginus"
       ],
-      "citation": "Bibliotheca 3.5.8; Metamorphoses 7.1251; Fabulae 67"
+      "citation": "Bibliotheca 3.5.8; Metamorphoses 7.759–761; Fabulae 67"
     },
     {
       "text": "He lived for years in ignorance of his crimes. When plague and barrenness struck Thebes, the seer Tiresias revealed that the pollution was Oedipus himself. Jocasta hanged herself; Oedipus put out his own eyes and was driven into exile, escorted only by his loyal daughter Antigone, until he found a final resting place at Colonus.",
@@ -79,11 +79,27 @@
       ]
     },
     {
+      "city": "corinth",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.5.7; Fabulae 66"
+    },
+    {
       "city": "athens",
       "sources": [
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "colonus-athens",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.5.9; Description of Greece 1.28.7, 1.30.4"
     }
   ]
 }

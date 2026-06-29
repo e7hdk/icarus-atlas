@@ -48,5 +48,23 @@
       "sources": ["pausanias"],
       "citation": "Description of Greece 5.13.1–7"
     }
+  ],
+  "residences": [
+    {
+      "city": "sardis",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Epitome 2.3; Fabulae 83"
+    },
+    {
+      "city": "pisa-elis",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 2.4–9; Description of Greece 5.13.1–7"
+    }
   ]
 }

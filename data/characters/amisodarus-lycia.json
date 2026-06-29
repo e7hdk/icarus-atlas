@@ -1,0 +1,37 @@
+{
+  "id": "amisodarus-lycia",
+  "name": "Amisodarus",
+  "greekName": "Amisodaros (Ἀμισόδαρος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "breeder of the Chimera",
+    "bane to many men",
+    "Lycian keeper"
+  ],
+  "summary": [
+    {
+      "text": "The man who reared the raging Chimera, a bane to many men — named by Homer in the Lycian roll of warriors and by Apollodorus among those who bred the fire-breathing beast Bellerophon was sent to slay.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 16.328–329; Bibliotheca 2.3.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Homer names Amisodarus among the Lycian allies at Troy and adds, in passing, that he reared the raging Chimera — a bane to many men. The line treats him as a human keeper, not a divine progenitor: the hybrid of lion, goat, and serpent was bred and raised in Lycia before Iobates sent Bellerophon against it.",
+      "sources": ["homer"],
+      "citation": "Iliad 6.179–183, 16.328–329"
+    },
+    {
+      "text": "Apollodorus sets the Chimera among the trials Iobates ordered, noting that the king believed the beast would destroy the stranger — for it was more than a match for many, let alone one. Amisodarus stands in the tradition as the man who had reared that terror before the hero trusted in the signs of the gods and slew her.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.3.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "xanthus-lycia",
+      "sources": ["homer"]
+    }
+  ]
+}

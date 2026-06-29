@@ -1,0 +1,55 @@
+{
+  "id": "icarius-attica",
+  "name": "Icarius",
+  "greekName": "Ikarios (Ἰκάριος)",
+  "romanName": "Icarius",
+  "type": "mortal",
+  "domains": [
+    "host of Dionysus in Attica",
+    "first teacher of wine to shepherds",
+    "father of Erigone"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "When Dionysus came to Attica in the time of Pandion, Icarius received the god, learned viticulture from a vine-branch, and shared wine with shepherds — who, thinking themselves bewitched, killed him; his daughter Erigone found the body with the dog Maera and hanged herself, and the Athenians later honoured both in rites and among the stars.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.14.7; Fabulae 130"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus sets the episode in Pandion's Athens: Demeter was welcomed at Eleusis by Celeus, and Dionysus by Icarius, who received from him a branch of a vine and learned the process of making wine. Wishing to bestow the god's boons on men, Icarius went to some shepherds; they tasted the drink and quaffed it copiously without water, imagined they were bewitched, and killed him — though by day they understood and buried him.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 3.14.7"
+    },
+    {
+      "text": "Hyginus tells how Father Liber, visiting men to demonstrate the sweetness of his fruit, came to the hospitality of Icarius and Erigone, gave them a skin full of wine, and bade them spread its use abroad. Icarius loaded a wagon and, with Erigone and the dog Maera, showed Attic shepherds what wine could do; when the shepherds, drunk, thought he had given them bad medicine, they beat him to death with clubs.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 130"
+    },
+    {
+      "text": "After Erigone hanged herself over her father's body, Hyginus says the Athenians were punished until Apollo declared they had neglected the deaths of Icarius and Erigone; they avenged the shepherds and instituted the swinging festival in Erigone's honour, with grape-harvest libations to both. By the gods' will Icarius was placed among the stars as Arcturus — or, in the Astronomica, as Bootes — and Maera as Canicula.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Fabulae 130, 224; Astronomica 2.4.2–2.4.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ]
+    }
+  ]
+}

@@ -69,6 +69,11 @@
     {
       "city": "pherae",
       "sources": ["homer", "apollodorus", "hyginus"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.711–715; Epitome 3.11"
     }
   ]
 }

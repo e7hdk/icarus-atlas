@@ -1,0 +1,37 @@
+{
+  "id": "eleius-elis",
+  "name": "Eleius",
+  "greekName": "Eleios (Ἐλεῖος)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "eponym of Elis",
+    "Epean kingship"
+  ],
+  "summary": [
+    {
+      "text": "King of the Epeans after Pelops' sons were scattered over the Peloponnese — son of Eurycyda daughter of Endymion, and in the tale some tell, of Poseidon — who gave the inhabitants their present name of Eleans and begat Augeas.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.8–9"
+    }
+  ],
+  "story": [
+    {
+      "text": "Pausanias sets Eleius in the Elean royal stem after Pelops. When Pelops' sons were scattered over the rest of the Peloponnese, the kingdom of the Epeans fell to Eleius son of Eurycyda daughter of Endymion — and, believe the tale who will, of Poseidon — who gave the inhabitants their present name of Eleans. His son Augeas succeeded him as king of Elis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.8–9"
+    },
+    {
+      "text": "Pausanias treats the divine parentage as a glorifying play on a human name: those who exaggerate Augeas' glory give the name a turn and make Helius the Sun his father instead — yet the sober Elean account keeps Augeas son of Eleius, the eponym of Elis. Distinct from Eleius son of Amphimachus, whom Pausanias names in the later Heraclid settlement of Elis.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.9, 5.3.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "pisa-elis",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 5.1.8–9"
+    }
+  ]
+}

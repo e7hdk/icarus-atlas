@@ -1,0 +1,51 @@
+{
+  "id": "alcimede",
+  "name": "Alcimede",
+  "greekName": "Alkimēdē (Ἀλκιμήδη)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "daughter of Phylacus",
+    "mother of Jason",
+    "the Minyan line"
+  ],
+  "summary": [
+    {
+      "text": "Daughter of Phylacus and Clymene the Minyan, wife of Aeson and mother of Jason in Apollonius and Hyginus — the genealogy that lets the Argonauts be called Minyae after the daughters of Minyas, rival to Apollodorus' Polymede daughter of Autolycus.",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.45–47, 1.228–233; Fabulae 13–14",
+      "topic": "jason-mother"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollonius names Alcimede daughter of Phylacus as the woman Aeson wedded — Iphiclus of Phylace was her brother and Jason's uncle. When the Argo sailed she lamented on the shore, straining her son in her arms and cursing the day Pelias sent him for the Golden Fleece.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 1.45–47, 1.247–291",
+      "topic": "jason-mother"
+    },
+    {
+      "text": "The poet explains that Jason himself was the son of Alcimede who was born of Clymene the daughter of Minyas — and so the heroes who manned the Argo were styled Minyae because the most and bravest claimed descent from the daughters of Minyas.",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.228–233; Fabulae 14",
+      "topic": "jason-mother"
+    },
+    {
+      "text": "Hyginus consistently makes Jason son of Aeson and Alcimede, Clymene's daughter — in the tale of Juno and the lost sandal, in the catalogue of Argonauts, and in the Fleece legend. Apollodorus instead names Polymede daughter of Autolycus; the two mothers must never share one star.",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 3, 13–14; Bibliotheca 1.9.16",
+      "topic": "jason-mother"
+    }
+  ],
+  "residences": [
+    {
+      "city": "iolcus",
+      "sources": ["apollonius", "hyginus"]
+    },
+    {
+      "city": "orchomenos-boeotia",
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.228–233; Fabulae 14.4"
+    }
+  ]
+}

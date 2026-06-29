@@ -65,5 +65,23 @@
       ],
       "citation": "Description of Greece 7.2.2, 9.23.1"
     }
+  ],
+  "residences": [
+    {
+      "city": "thebes",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 2.4.11; Description of Greece 9.23.1"
+    },
+    {
+      "city": "lerna",
+      "sources": [
+        "apollodorus",
+        "hesiod"
+      ],
+      "citation": "Bibliotheca 2.5.2; Theogony 313–318"
+    }
   ]
 }

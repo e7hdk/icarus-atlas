@@ -70,7 +70,18 @@
   "residences": [
     {
       "city": "rhodes",
-      "sources": ["homer", "apollodorus"]
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.653–670; Bibliotheca 2.7.6, 2.8.2"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.653–670, 5.628–662; Epitome 3.13"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11, 3.13; Iliad 2.653–670"
     }
   ]
 }

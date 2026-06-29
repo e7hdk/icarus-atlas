@@ -22,7 +22,13 @@
   "residences": [
     {
       "city": "athens",
-      "sources": ["homer"]
+      "sources": ["homer"],
+      "citation": "Iliad 2.550–580, 13.675–720"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 13.675–720"
     }
   ]
 }

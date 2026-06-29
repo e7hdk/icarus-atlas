@@ -1,0 +1,37 @@
+{
+  "id": "anticlus",
+  "name": "Anticlus",
+  "greekName": "Antiklos (Ἀντίκλος)",
+  "type": "hero",
+  "domains": [
+    "warrior in the Wooden Horse",
+    "the silenced answer"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "One of the chiefs hidden in the Wooden Horse — he alone would have answered Helen when she called the warriors by their wives' voices, until Odysseus clamped his mouth and saved the stratagem.",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.265–310; Epitome 5.19"
+    }
+  ],
+  "story": [
+    {
+      "text": "Menelaus told Telemachus how Helen walked three times round the hollow horse in Troy, calling the hidden chieftains by name in the voices of their wives. The Achaeans within were eager to answer or to cry out straightway, but Odysseus held them back — all kept their peace except Anticlus alone, who was fain to speak and answer her; Odysseus firmly closed his mouth with strong hands and saved all the Achaeans until Athena led Helen away.",
+      "sources": ["homer"],
+      "citation": "Odyssey 4.265–310"
+    },
+    {
+      "text": "Apollodorus tells the same moment on the night of the sack: Helen went round the horse imitating each wife's voice, and when Anticlus would have answered, Ulysses held fast his mouth — the last test before Sinon kindled the beacon and the Greeks poured from Tenedos.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.19"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 4.265–310; Epitome 5.19"
+    }
+  ]
+}

@@ -44,6 +44,11 @@
     {
       "city": "troy",
       "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+    },
+    {
+      "city": "sparta",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 3.15–382; Epitome 3.3; Fabulae 92"
     }
   ]
 }

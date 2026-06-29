@@ -7,73 +7,156 @@
   "era": 7.15,
   "summary": {
     "text": "After Pelias, Jason and Medea lived ten years at Corinth in peace — until the king betrothed his daughter Glauce to the hero, and the witch answered betrayal with a poisoned robe, a burning palace, and a flight on winged dragons, leaving the sons Mermerus and Pheres dead by her hand or by the stones of Corinth.",
-    "sources": ["apollodorus", "ovid", "pausanias", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "pausanias",
+      "hyginus"
+    ],
     "citation": "Apollod. 1.9.28; Ov. Met. 7.391–424; Paus. 2.3.6–11; Hyg. Fab. 25"
   },
   "chapters": [
     {
       "title": "Ten years at Corinth",
       "text": "When Pelias was gone and Iolcus could not hold them, Jason came to Corinth with Medea and lived there happily for ten years. She had already renewed his father Aeson in Ovid's telling — draining the old man's blood and filling his veins with a brewed elixir of youth — and in the Isthmus city she bore him sons while the Argonaut captain grew restless for a royal bride of his own house.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 1.9.28; Ov. Met. 7.271–294, 7.391–397"
     },
     {
       "title": "Creon and the new bride",
       "text": "Creon king of Corinth betrothed his daughter Glauce to Jason, and the hero married her and divorced Medea — forgetting the oaths by which she had won him the fleece, yoked the bulls, and lulled the dragon. The Colchian witch invoked every god who had witnessed those vows and upbraided Jason's ingratitude before she turned from pleading to vengeance.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 1.9.28"
     },
     {
       "title": "The poisoned robe",
       "text": "Medea sent Glauce a robe steeped in poison as a bridal gift. When the bride put it on she was consumed with fierce fire, and Creon, who had come to his daughter's side, perished in the same blaze. Ovid paints the horror in detail: the gift flared on her limbs, the king died trying to tear the burning cloth away, and the palace roof collapsed in flame.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 1.9.28; Ov. Met. 7.391–424"
     },
     {
       "title": "Hyginus' crown and Creusa",
       "text": "Hyginus names the bride Creusa, not Glauce, and makes the weapon a golden crown wrought with Medea's drugs. In his version the sons Mermerus and Pheres carry the gift to their stepmother; when Creusa takes it she is burned to death along with Jason and Creon, the palace catches fire, and Medea slays both children before she flees — a single catastrophe in which the bride, the king, the hero, and the boys all perish by fire or her hand.",
-      "sources": ["hyginus"],
+      "sources": [
+        "hyginus"
+      ],
       "citation": "Hyginus, Fabulae 25"
     },
     {
       "title": "Medea's hand or Corinth's stones",
       "text": "Apollodorus records two fates for the sons Medea had borne Jason at Corinth. Some say she herself killed the children when she fled after sending the poisoned robe to Glauce. Another tradition: she left them still infants as suppliants on the altar of Hera of the Height, and the Corinthians removed them and wounded them to death — the same crime, two agents, and the sources do not agree who struck the blow.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. 1.9.28",
       "topic": "medea-children-corinth"
     },
     {
       "title": "The Well of Glauce",
       "text": "Pausanias walked the ground at Corinth: on the road toward Sicyon, a little beyond Apollo's temple, lies the Well of Glauce — into which, they say, the bride threw herself believing the water would cure Medea's drugs. Above it stand the Odeum and, beside it, the tomb of Medea's children. Their names were Mermerus and Pheres; the Corinthians stoned them because of the gifts Medea sent to Glauce, and until Roman times the city still offered them cult.",
-      "sources": ["pausanias"],
+      "sources": [
+        "pausanias"
+      ],
       "citation": "Paus. 2.3.6–7, 2.3.9",
       "topic": "medea-children-corinth"
     },
     {
       "title": "Flight on the dragon chariot",
       "text": "Medea escaped Corinth on a chariot drawn by winged dragons, the gift of her grandfather Helios. Apollodorus says she came to Athens and was wedded to Aegeus — where later she would plot against the unrecognized Theseus — and afterward returned in secret to Colchis, killed her uncle Perses who had usurped Aeetes, and restored her father to the throne. Jason's eastern witch was gone, and the Isthmus kept only the well, the tomb, and the memory of fire.",
-      "sources": ["apollodorus", "ovid"],
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
       "citation": "Apollod. 1.9.28, Epit. 1.5–1.6; Ov. Met. 7.425–434"
     }
   ],
   "cast": [
-    { "id": "medea-colchis", "name": "Medea", "role": "The betrayed witch" },
-    { "id": "jason", "name": "Jason", "role": "The hero who took a new bride" },
-    { "id": "creon-corinth", "name": "Creon", "role": "King of Corinth, father of the bride" },
-    { "id": "glauce-corinth", "name": "Glauce", "role": "The bride consumed by the robe" },
-    { "id": "mermerus-corinth", "name": "Mermerus", "role": "Son stoned or slain at Corinth" },
-    { "id": "pheres-corinth", "name": "Pheres", "role": "Son stoned or slain at Corinth" },
-    { "id": "helios", "name": "Helios", "role": "Medea's grandfather, giver of the dragon chariot" }
+    {
+      "id": "medea-colchis",
+      "name": "Medea",
+      "role": "The betrayed witch"
+    },
+    {
+      "id": "jason",
+      "name": "Jason",
+      "role": "The hero who took a new bride"
+    },
+    {
+      "id": "creon-corinth",
+      "name": "Creon",
+      "role": "King of Corinth, father of the bride"
+    },
+    {
+      "id": "glauce-corinth",
+      "name": "Glauce",
+      "role": "The bride consumed by the robe"
+    },
+    {
+      "id": "mermerus-corinth",
+      "name": "Mermerus",
+      "role": "Son stoned or slain at Corinth"
+    },
+    {
+      "id": "pheres-corinth",
+      "name": "Pheres",
+      "role": "Son stoned or slain at Corinth"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "role": "Medea's grandfather, giver of the dragon chariot"
+    }
   ],
   "places": [
-    { "id": "corinth", "name": "Corinth", "role": "City of the ten years and the catastrophe" },
-    { "name": "Well of Glauce", "role": "Where the bride sought to quench the poison" },
-    { "name": "Altar of Hera of the Height", "role": "Where the infants were left as suppliants in one tradition" }
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "role": "City of the ten years and the catastrophe"
+    },
+    {
+      "name": "Well of Glauce",
+      "role": "Where the bride sought to quench the poison",
+      "id": "well-of-glauce"
+    },
+    {
+      "name": "Altar of Hera of the Height",
+      "role": "Where the infants were left as suppliants in one tradition",
+      "id": "hera-of-the-height"
+    },
+    {
+      "id": "sicyon",
+      "name": "Sicyon",
+      "role": "Corinthian neighbour toward whose road lies the Well of Glauce"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "The Library", "citation": "1.9.28, Epitome 1.5–1.6" },
-    { "source": "ovid", "work": "Metamorphoses", "citation": "7.271–294, 7.391–434" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "2.3.6–11" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "25" }
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.9.28, Epitome 1.5–1.6"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "7.271–294, 7.391–434"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "2.3.6–11"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "25"
+    }
   ]
 }

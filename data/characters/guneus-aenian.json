@@ -1,0 +1,58 @@
+{
+  "id": "guneus-aenian",
+  "name": "Guneus",
+  "greekName": "Guneus (Γυνεύς)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "captain of the Aenianians",
+    "the Returns to Libya",
+    "son of Ocytus"
+  ],
+  "summary": [
+    {
+      "text": "Son of Ocytus who led twenty-two ships of the Aenianians to Troy and, after the scatter at Caphereus, went to Libya and dwelt by the Cinyps river — distinct from Guneus father of Laonome in the Perseid genealogy of Alcaeus.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 3.14, 6.15, 6.15a; Description of Greece 8.18.2"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus counts Guneus son of Ocytus among the captains of the Trojan muster, commander of twenty-two ships of the Aenianians beside Philoctetes, Podalirius, and the rest of the Catalogue.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 3.14"
+    },
+    {
+      "text": "After Troy fell, of those shipwrecked at Caphereus some drifted one way and some another. Guneus went to Libya; Apollodorus and the scholiasts add that he left his own ships, came to the Cinyps river in Libya, and dwelt there — a plain settlement in the Epitome's roll of the lesser Returns.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15, 6.15a"
+    },
+    {
+      "text": "Pausanias, listing those who came with Guneus, makes the river Titaresius receive its water from the Styx — anchoring the Aenianian captain in Thessalian geography distinct from the Guneus whom Alcaeus' genealogy knows as father of Laonome of Pheneus.",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 8.18.2; Bibliotheca 2.4.5"
+    }
+  ],
+  "residences": [
+    {
+      "city": "hypata-thessaly",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.735–775; Epitome 3.14; Description of Greece 8.18.2"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.14; Iliad 2.735–775"
+    },
+    {
+      "city": "libya",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 6.15, 6.15a"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.735–775"
+    }
+  ]
+}

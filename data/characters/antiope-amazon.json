@@ -1,0 +1,43 @@
+{
+  "id": "antiope-amazon",
+  "name": "Antiope",
+  "greekName": "Antiopē (Ἀντιόπη)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the Amazon bride",
+    "mother of Hippolytus",
+    "the Thermodon"
+  ],
+  "summary": [
+    {
+      "text": "Amazon princess carried off by Theseus — Apollodorus' name for the warrior bride who bore Hippolytus — not to be confused with Antiope the Theban mother of Amphion and Zethus.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epitome 1.16; Fabulae 250; Description of Greece 1.2.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "After he was king, Apollodorus says, Theseus joined Heracles in a campaign against the Amazons — or raided them alone — and carried away a princess whom he names Antiope. Others call the captive Melanippe, and Simonides calls her Hippolyte; the sources never agree on the Amazon's name, and she must not be merged with Antiope daughter of Nycteus who fled to Epopeus and bore Amphion.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.16; Description of Greece 1.2.1",
+      "topic": "theseus-amazon-wife-name"
+    },
+    {
+      "text": "Her sisters marched on Attica in vengeance and encamped on the height later called the Amazonium. Theseus met them in battle, routed their host, and by the captive begot Hippolytus — the hunter who would scorn Aphrodite and fall to his stepmother's charge and his father's curse.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Epitome 1.16; Description of Greece 1.41.7"
+    },
+    {
+      "text": "Hyginus lists the Amazon campaign among Theseus' deeds and preserves the rival names in the tradition that made Athens remember the war on the Palatine slope and Megara show Hippolyte's tomb shaped like an Amazon's shield.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 250"
+    }
+  ],
+  "residences": [
+    {
+      "city": "athens",
+      "sources": ["apollodorus", "pausanias"]
+    }
+  ]
+}

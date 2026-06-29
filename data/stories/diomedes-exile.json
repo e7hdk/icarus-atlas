@@ -88,6 +88,7 @@
       "role": "Cometes' father, his charioteer at Troy"
     },
     {
+      "id": "cometes-argolis",
       "name": "Cometes",
       "role": "Son of Sthenelus, Aegialia's lover"
     },
@@ -120,7 +121,8 @@
     },
     {
       "name": "Italy",
-      "role": "Land of exile in Apollodorus' Returns"
+      "role": "Land of exile in Apollodorus' Returns",
+      "id": "lavinium"
     }
   ],
   "attestations": [

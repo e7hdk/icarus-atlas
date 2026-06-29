@@ -59,18 +59,27 @@
   ],
   "residences": [
     {
-      "city": "argos",
-      "sources": [
-        "apollodorus",
-        "homer"
-      ]
-    },
-    {
       "city": "mycenae",
       "sources": [
         "homer",
         "apollodorus"
-      ]
+      ],
+      "citation": "Iliad 19.116–123; Bibliotheca 2.4.5, 2.4.6"
+    },
+    {
+      "city": "tiryns",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Bibliotheca 2.4.6"
+    },
+    {
+      "city": "argos",
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
+      "citation": "Iliad 19.115–150; Bibliotheca 2.4.5"
     }
   ]
 }

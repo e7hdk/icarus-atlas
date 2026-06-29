@@ -7,69 +7,167 @@
   "era": 0.15,
   "summary": {
     "text": "Cronus swallowed his firstborn children whole — Hestia, Demeter, Hera, Hades, and Poseidon — and they lived in darkness inside their father until Zeus, saved by a stone, forced him to disgorge them with Metis's drug; the stone came up first and was set at Pytho, and then the five siblings were born a second time, ready for the war that would cast the Titans down.",
-    "sources": ["hesiod", "apollodorus"],
+    "sources": [
+      "hesiod",
+      "apollodorus"
+    ],
     "citation": "Hes. Th. 445-506; Apollod. 1.1.5, 1.2.1"
   },
   "chapters": [
     {
       "title": "Five births, five devourings",
       "text": "Apollodorus names them in order of loss: firstborn Hestia, then Demeter and Hera, and after them Hades and Poseidon. Hesiod gives them their epithets at the swallowing — gold-sandalled Hera, strong Hades, the deep-roaring Earth-Shaker — and wise Zeus too would have been devoured had Rhea not saved him. Each child reached its mother's knees only to be seized by crooked-counselled Cronus, who intended that no other son of Heaven should hold the kingly office among the deathless gods.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 453-467; Apollod. 1.1.5"
     },
     {
       "title": "Inside the king",
       "text": "What the five endured inside their father's belly the poets do not narrate as separate journeys — no ageing, no throne, only the same swallowed darkness. Yet they were not destroyed: they waited with the stone Rhea had given in Zeus's place, the great deceit that lay heaviest in Cronus's gut. The nested episode on the birth of Zeus tells how the youngest was nursed in Crete; here the elder brothers and sisters remained unborn to the world above, held in the body of the king who feared his own offspring.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 453-467, 485-491; Apollod. 1.1.5-1.1.7"
     },
     {
       "title": "The youngest spared",
       "text": "While Hestia, Demeter, Hera, Hades, and Poseidon lay inside their father, Zeus grew mighty in the cave of Dicte. When he was full-grown he forced crooked-counselled Cronus to disgorge his offspring — vanquished by the arts and might of his own son. Apollodorus adds that Zeus asked Metis, daughter of Ocean, to help him, and she gave Cronus a drug to swallow that compelled the vomiting. The rescue of the five begins not in the womb but at the counsel of the goddess who would later herself be swallowed by Zeus.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 495-498; Apollod. 1.2.1"
     },
     {
       "title": "First the stone",
       "text": "Cronus vomited up first the stone which he had swallowed last — the swaddled boulder that had stood in for the infant king. Zeus set it fast in the wide-pathed earth at goodly Pytho under the glens of Parnassus, to be a sign thenceforth and a marvel to mortal men. Later Greeks would call it the omphalos, the navel-stone of the world; Pausanias saw Rhea's deception carved in marble at Plataea, the mother still offering the wrapped stone to her husband as though it were her newborn.",
-      "sources": ["hesiod", "apollodorus", "pausanias"],
+      "sources": [
+        "hesiod",
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Hes. Th. 498-500; Apollod. 1.2.1; Paus. 9.2.7"
     },
     {
       "title": "Born again in reverse",
       "text": "Then came the children Cronus had swallowed — in reverse order of their devouring. Hestia first, then Demeter and gold-sandalled Hera, then strong Hades and the deep-roaring Earth-Shaker Poseidon, and at last the youngest, Zeus himself, whom their mother had hidden. The five siblings who had never known sunlight stepped forth alive, the goddesses of hearth and grain and marriage, the lord of the dead and the lord of the sea — not yet allotted their realms, but freed to fight beside their brother.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 498-506; Apollod. 1.2.1"
     },
     {
       "title": "Ready for the war",
       "text": "With the siblings restored, Zeus set free from their deadly bonds the brothers of his father — the Cyclopes and the Hundred-Handers whom Cronus had imprisoned in the pit. The nested Titanomachy tells the ten-year war that followed: thunderbolt and trident and helmet of darkness, mountains hurled by Cottus, Briareus, and Gyges, and the old rulers cast into Tartarus. Here the story ends with the six children of Rhea standing together at last — the Olympians who would shake the cosmos, their first birth undone and their second birth paid for by a stone, a drug, and a mother's grief.",
-      "sources": ["hesiod", "apollodorus"],
+      "sources": [
+        "hesiod",
+        "apollodorus"
+      ],
       "citation": "Hes. Th. 501-506, 617-628; Apollod. 1.2.1"
     }
   ],
   "cast": [
-    { "id": "hestia", "name": "Hestia", "role": "Firstborn swallowed and first disgorged" },
-    { "id": "demeter", "name": "Demeter", "role": "Goddess of grain held inside Cronus" },
-    { "id": "hera", "name": "Hera", "role": "Gold-sandalled sister freed from the belly" },
-    { "id": "hades", "name": "Hades", "role": "Strong brother who would win the underworld" },
-    { "id": "poseidon", "name": "Poseidon", "role": "Deep-roaring Earth-Shaker disgorged alive" },
-    { "id": "zeus", "name": "Zeus", "role": "Youngest who forced the vomiting" },
-    { "id": "cronus", "name": "Cronus", "role": "Father who swallowed and was overthrown" },
-    { "id": "rhea", "name": "Rhea", "role": "Mother whose stone trick saved the youngest" },
-    { "id": "metis", "name": "Metis", "role": "Counsellor who gave Cronus the emetic drug" },
-    { "id": "gaia", "name": "Gaia", "role": "Earth who had foretold Cronus's fall" },
-    { "id": "uranus", "name": "Uranus", "role": "Starry Heaven who shared the prophecy" }
+    {
+      "id": "hestia",
+      "name": "Hestia",
+      "role": "Firstborn swallowed and first disgorged"
+    },
+    {
+      "id": "demeter",
+      "name": "Demeter",
+      "role": "Goddess of grain held inside Cronus"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Gold-sandalled sister freed from the belly"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "role": "Strong brother who would win the underworld"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "role": "Deep-roaring Earth-Shaker disgorged alive"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Youngest who forced the vomiting"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "role": "Father who swallowed and was overthrown"
+    },
+    {
+      "id": "rhea",
+      "name": "Rhea",
+      "role": "Mother whose stone trick saved the youngest"
+    },
+    {
+      "id": "metis",
+      "name": "Metis",
+      "role": "Counsellor who gave Cronus the emetic drug"
+    },
+    {
+      "id": "gaia",
+      "name": "Gaia",
+      "role": "Earth who had foretold Cronus's fall"
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "role": "Starry Heaven who shared the prophecy"
+    }
   ],
   "places": [
-    { "name": "Pytho", "role": "Where Zeus set the stone under Parnassus" },
-    { "name": "Parnassus", "role": "Mountain glens above the omphalos" },
-    { "name": "Olympus", "role": "Seat from which the war against the Titans began" },
-    { "name": "Tartarus", "role": "Pit where Cronus had bound the Cyclopes and Hundred-Handers" }
+    {
+      "name": "Pytho",
+      "role": "Where Zeus set the stone under Parnassus",
+      "id": "delphi"
+    },
+    {
+      "name": "Parnassus",
+      "role": "Mountain glens above the omphalos",
+      "featureId": "mount-parnassus"
+    },
+    {
+      "name": "Olympus",
+      "role": "Seat from which the war against the Titans began",
+      "featureId": "mount-olympus"
+    },
+    {
+      "name": "Tartarus",
+      "role": "Pit where Cronus had bound the Cyclopes and Hundred-Handers"
+    },
+    {
+      "name": "Plataea",
+      "role": "Where Pausanias saw Rhea offering the swaddled stone to Cronus",
+      "id": "plataea"
+    }
   ],
   "attestations": [
-    { "source": "hesiod", "work": "Theogony", "citation": "445-506" },
-    { "source": "apollodorus", "work": "The Library", "citation": "1.1.5, 1.2.1" },
-    { "source": "pausanias", "work": "Description of Greece", "citation": "9.2.7" }
+    {
+      "source": "hesiod",
+      "work": "Theogony",
+      "citation": "445-506"
+    },
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.1.5, 1.2.1"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "9.2.7"
+    }
   ]
 }

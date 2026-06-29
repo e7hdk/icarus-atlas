@@ -23,5 +23,17 @@
       "sources": ["apollodorus"],
       "citation": "Epitome 3.34"
     }
+  ],
+  "residences": [
+    {
+      "city": "dardanus-city",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.34; Iliad 2.819–821"
+    },
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.34; Iliad 2.820–855"
+    }
   ]
 }

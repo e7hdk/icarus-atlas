@@ -7,46 +7,83 @@
   "era": 7.16,
   "summary": {
     "text": "Pomona the hamadryad tended orchards on the Palatine and walled herself against every suitor — until Vertumnus, god of the turning year, came disguised as an old crone and told her the tale of Anaxarete, who scorned Iphis and was turned to stone; Pomona yielded, and the god dropped his mask and won the nymph who loved fruit-bearing trees above all woods and streams.",
-    "sources": ["ovid"],
+    "sources": [
+      "ovid"
+    ],
     "citation": "Ov. Met. 14.622–771, 14.882–1022"
   },
   "chapters": [
     {
       "title": "The orchard",
       "text": "Under King Proca on the Palatine, Pomona lived — no Latin hamadryad tended gardens with more skill, and none loved the fruitful trees that gave her name. She cared nothing for forests or rivers, fenced her orchard, and drove away suitors with a pruning-hook. Silvanus, Picus, and many gods disguised as reapers or vine-dressers sought her; Vertumnus surpassed them all in love, yet fared no better.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 14.622–700"
     },
     {
       "title": "Disguises",
       "text": "Vertumnus tried every shape the seasons allow — mower with barley ears, hay-wreathed reaper, fisherman, soldier, and more — but Pomona kept her gate. At last he aged himself into a bent old woman, entered the orchard as a harmless guest, and praised the elm that married the vine: how the tree supports the vine, how the vine crowns the tree.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 14.700–800"
     },
     {
       "title": "Anaxarete",
       "text": "To warn Pomona against hard-heartedness, the disguised god told of Iphis, who hanged himself before Anaxarete's door when she mocked his love — and how the girl, forced to look upon his funeral, hardened into stone from feet to face, still seen in Salamis of Cyprus. Pomona listened; the tale of love denied and punished softened her.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 14.800–900"
     },
     {
       "title": "The turning god",
       "text": "Vertumnus shed the crone's mask and stood before her in radiant youth, god of orchards and of all that turns — the year, the fruit, the graft. Pomona yielded; the two were joined, and Ovid's Italian catalogue gains a pair who belong to Rome's soil rather than to Thessaly or Crete — metamorphosis by persuasion, not by punishment.",
-      "sources": ["ovid"],
+      "sources": [
+        "ovid"
+      ],
       "citation": "Ov. Met. 14.900–1022"
     }
   ],
   "cast": [
-    { "name": "Pomona", "role": "Hamadryad of the orchard, won by Vertumnus" },
-    { "name": "Vertumnus", "role": "God of seasons and change, her suitor" },
-    { "name": "Iphis", "role": "Youth in the inset tale who died for scorned love" },
-    { "name": "Anaxarete", "role": "Maiden turned to stone for cruelty" }
+    {
+      "id": "pomona",
+      "name": "Pomona",
+      "role": "Hamadryad of the orchard, won by Vertumnus"
+    },
+    {
+      "id": "vertumnus",
+      "name": "Vertumnus",
+      "role": "God of seasons and change, her suitor"
+    },
+    {
+      "id": "iphis-anaxarete",
+      "name": "Iphis",
+      "role": "Youth in the inset tale who died for scorned love"
+    },
+    {
+      "id": "anaxarete-salamis",
+      "name": "Anaxarete",
+      "role": "Maiden turned to stone for cruelty"
+    }
   ],
   "places": [
-    { "name": "Rome", "role": "City of the Palatine and Proca's reign" },
-    { "name": "Latium", "role": "Land of orchards and Italian hamadryads" }
+    {
+      "name": "Rome",
+      "role": "City of the Palatine and Proca's reign"
+    },
+    {
+      "name": "Latium",
+      "role": "Land of orchards and Italian hamadryads",
+      "id": "lavinium"
+    }
   ],
   "attestations": [
-    { "source": "ovid", "work": "Metamorphoses", "citation": "14.622–771, 14.882–1022" }
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "14.622–771, 14.882–1022"
+    }
   ]
 }

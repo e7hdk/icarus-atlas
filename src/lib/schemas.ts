@@ -111,10 +111,11 @@ export const storySchema = z.object({
       role: z.string().min(1),
     }),
   ),
-  /** Places; `id` links to a curated city. */
+  /** Places; `id` links to a geo place, `featureId` to a geo feature. */
   places: z.array(
     z.object({
       id: z.string().optional(),
+      featureId: z.string().optional(),
       name: z.string().min(1),
       role: z.string().optional(),
     }),
@@ -304,6 +305,8 @@ export const lineageSchema = z.object({
         ruler: z.string().min(1),
         /** Optional link to data/characters once the ruler is a verified character. */
         characterId: z.string().optional(),
+        /** Joint simultaneous rule — all linked characters share one reign row. */
+        characterIds: z.array(z.string().min(1)).optional(),
         sources: z.array(z.enum(SOURCE_IDS)).min(1),
         citation: z.string().optional(),
         note: z.string().optional(),

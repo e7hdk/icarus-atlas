@@ -49,8 +49,10 @@
     { "id": "patroclus", "name": "Patroclus", "role": "He who wept at Achilles' door" },
     { "id": "achilles", "name": "Achilles", "role": "Still refusing battle as the fire spread" },
     { "id": "ajax-oileus", "name": "Ajax the Locrian", "role": "Second Ajax who held the line" },
-    { "name": "Calchas", "role": "Seer whose likeness Poseidon wore" },
-    { "id": "protesilaus", "name": "Protesilaus", "role": "Whose ship Hector fired first" }
+    { "id": "calchas-thestor", "name": "Calchas", "role": "Seer whose likeness Poseidon wore" },
+    { "id": "protesilaus", "name": "Protesilaus", "role": "Whose ship Hector fired first" },
+    { "id": "stichius-boeotian", "name": "Stichius", "role": "Boeotian leader whom Hector slew at the ships" },
+    { "id": "arcesilaus", "name": "Arcesilaus", "role": "Comrade of Menestheus whom Hector slew beside Stichius" }
   ],
   "places": [
     { "id": "troy", "name": "Troy", "role": "Wall, ditch, and ring of ships on the shore" }

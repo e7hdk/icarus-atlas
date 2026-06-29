@@ -1,0 +1,37 @@
+{
+  "id": "laocoon-troy",
+  "name": "Laocoon",
+  "greekName": "Laokoōn (Λαοκόων)",
+  "type": "hero",
+  "domains": [
+    "priest of Apollo at Troy",
+    "the serpents from the sea",
+    "warning against the horse"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan priest and seer who confirmed Cassandra's warning that armed Greeks lay hidden in the Wooden Horse — and whom Apollo destroyed with two serpents from the sea when Troy chose to spare the engine.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.17–5.18; Fabulae 135"
+    }
+  ],
+  "story": [
+    {
+      "text": "Not to be confused with Laocoon son of Porthaon, the Calydonian Argonaut uncle of Meleager — the Trojan Laocoon belongs to the fall of the city. When Cassandra declared that an armed force was inside the horse and Laocoon the seer confirmed her, some Trojans would have burned the engine or cast it from the cliffs; but the majority voted to spare it as a sacred votive, and the host turned to sacrifice and feasting.",
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Epitome 5.17; Argonautica 1.192; Fabulae 14.3"
+    },
+    {
+      "text": "Apollo then sent a sign: two serpents swam through the sea from the neighbouring islands and devoured the sons of Laocoon — and the Trojans read the omen as favouring the horse. Hyginus adds that Laocoon son of Acoetes, brother of Anchises and priest of Apollo, had married against the god's will and was appointed by lot to sacrifice to Neptune on the shore when the serpents struck.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.18; Fabulae 135"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus"]
+    }
+  ]
+}

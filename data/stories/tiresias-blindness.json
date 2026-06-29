@@ -1,0 +1,110 @@
+{
+  "id": "tiresias-blindness",
+  "title": "The Blinding of Tiresias",
+  "greekTitle": "Τειρεσίας καὶ ἡ τύφλωσις",
+  "kind": "episode",
+  "parent": "theban-cycle",
+  "era": 5.1,
+  "summary": {
+    "text": "Tiresias of Thebes struck mating snakes and became a woman, then a man again; when Zeus and Hera asked who has more pleasure in love he sided with Zeus, and Hera blinded him — but Zeus granted prophecy and a long life in compensation.",
+    "sources": [
+      "apollodorus",
+      "ovid"
+    ],
+    "citation": "Apollod. 3.6.7; Ov. Met. 3.316–338"
+  },
+  "chapters": [
+    {
+      "title": "The snakes on Cyllene",
+      "text": "Ovid tells how Tiresias, wandering in a green wood, saw two serpents coupling and struck them with his staff until they broke and fled — and at once he became a woman from a man, and so remained while seven autumns passed. When eight were told he saw the same snakes again and struck once more; his manhood was restored. Apollodorus, following Hesiod, places the same wonder on Cyllene: having wounded copulating snakes Tiresias was turned from a man into a woman, but on observing them couple again he became a man.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.6.7; Ov. Met. 3.316–320"
+    },
+    {
+      "title": "The wager of Zeus and Hera",
+      "text": "When Hera and Zeus disputed whether the pleasures of love are felt more by women or by men, they referred the question to Tiresias — than whom, Ovid says, none knew both male and female joys. Ovid has Jupiter jest with Juno over the nectar cup: the female's pleasure is a great delight, much greater than the pleasure of a male. Juno denied it; both agreed to choose Tiresias umpire of the sportive strife.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.6.7; Ov. Met. 3.321–330"
+    },
+    {
+      "title": "Hera's blindness, Zeus's gift",
+      "text": "Tiresias gave decision in support of Zeus: if the pleasures of love be reckoned at ten, men enjoy one and women nine — of ten parts a man enjoys one only, but a woman enjoys the full ten parts in her heart. Wherefore Hera blinded him; but Zeus bestowed on him the art of soothsaying. Ovid adds that immortal deities may never turn another god's decree to naught, yet Jupiter, to recompense his loss of sight, endowed him with the gift of prophecy. Apollodorus says he also lived to a great age.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.6.7; Ov. Met. 3.331–338"
+    },
+    {
+      "title": "Athena and the birds",
+      "text": "Apollodorus records other accounts of how Tiresias lost his sight. Some say the gods blinded him because he revealed their secrets to men. But Pherecydes says Athena blinded him: Chariclo was dear to the goddess and Tiresias saw her stark naked; she covered his eyes with her hands and rendered him sightless. When Chariclo asked her to restore his sight, Athena could not do so, but by cleansing his ears she caused him to understand every note of birds, and gave him a staff of cornel-wood wherewith he walked like those who see.",
+      "sources": [
+        "apollodorus"
+      ],
+      "citation": "Apollod. 3.6.7",
+      "topic": "tiresias-blindness-cause"
+    }
+  ],
+  "cast": [
+    {
+      "id": "tiresias",
+      "name": "Tiresias",
+      "role": "Theban seer who knew both sexes"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "God who wagered on pleasure"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "role": "Goddess who blinded the judge"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "role": "Goddess who blinded him in Pherecydes' tale"
+    },
+    {
+      "id": "chariclo",
+      "name": "Chariclo",
+      "role": "Nymph mother who pleaded for his sight"
+    }
+  ],
+  "places": [
+    {
+      "id": "thebes",
+      "name": "Thebes",
+      "role": "City whose soothsayer he became"
+    },
+    {
+      "name": "Mount Cyllene",
+      "role": "Where Hesiod placed the mating snakes",
+      "featureId": "mount-cyllene"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.6.7"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "3.316–338"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "75"
+    }
+  ]
+}

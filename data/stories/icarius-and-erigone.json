@@ -1,0 +1,117 @@
+{
+  "id": "icarius-and-erigone",
+  "title": "Icarius, Erigone and the Wine",
+  "greekTitle": "Ἰκάριος, Ἠριγόνη καὶ ὁ οἶνος",
+  "kind": "episode",
+  "parent": "dionysus-cycle",
+  "era": 5.5,
+  "summary": {
+    "text": "When Dionysus came to Attica in Pandion's time, Icarius received the vine and shared wine with shepherds who, thinking themselves poisoned, killed him; Erigone found the body with the dog Maera and hanged herself, and Dionysus punished Athens until the swinging rites of the Aiora honoured the maiden — father, daughter, and hound set among the stars.",
+    "sources": [
+      "apollodorus",
+      "hyginus"
+    ],
+    "citation": "Apollod. 3.14.7; Hyg. Fab. 130, 224; Hyg. Astr. 2.4.2–2.4.5"
+  },
+  "chapters": [
+    {
+      "title": "The vine in Attica",
+      "text": "In the reign of Pandion, Demeter and Dionysus came to Attica. Celeus welcomed the goddess at Eleusis; Icarius received Dionysus, took from him a branch of a vine, and learned how wine is made. Hyginus tells how Father Liber, travelling to show men the sweetness of his fruit, came to the generous hospitality of Icarius and Erigone, gave them a skin full of wine, and bade them spread its use through other lands.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.14.7; Hyg. Fab. 130"
+    },
+    {
+      "title": "Wine for the shepherds",
+      "text": "Wishing to bestow the god's gift on men, Icarius went to shepherds in Attica. Hyginus has him load a wagon and travel with Erigone and the dog Maera to demonstrate wine's sweetness. The shepherds tasted the new drink and quaffed it immoderately without water; made drunk, they collapsed, and thinking Icarius had given them bad medicine or bewitched them, they killed him — Apollodorus with clubs in the general account, Hyginus explicitly with clubs after the wagon journey.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.14.7; Hyg. Fab. 130"
+    },
+    {
+      "title": "Maera and the hanging",
+      "text": "By day the shepherds understood what they had done and buried Icarius. When his daughter Erigone searched for her father, the dog Maera — which had attended Icarius — discovered his dead body to her. She bewailed him and hanged herself; Hyginus adds that she hung from a tree over her father's corpse, Maera howling beside the slain man.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.14.7; Hyg. Fab. 130; Hyg. Astr. 2.4.4"
+    },
+    {
+      "title": "The Aiora",
+      "text": "Because of these deaths Father Liber afflicted the daughters of the Athenians with the same punishment. They consulted Apollo, who answered that they had neglected the deaths of Icarius and Erigone. The Athenians exacted punishment from the shepherds and, in honour of Erigone, instituted a festival day of swinging — the rite born of the affliction — decreeing that through the grape-harvest they should pour libations to Icarius and Erigone.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Hyg. Fab. 130"
+    },
+    {
+      "title": "Justice in the sky",
+      "text": "By the will of the gods Icarius, Erigone, and Maera were placed among the stars. Hyginus in the Fabulae names Erigone the sign Virgo, whom they call Justice; Icarius is Arcturus, and Maera is Canicula. The Astronomica identifies Bootes with Icarius, father of Erigone, and repeats the gift of wine and the dog's discovery of the murdered host.",
+      "sources": [
+        "hyginus"
+      ],
+      "citation": "Hyg. Fab. 130, 224; Hyg. Astr. 2.4.2–2.4.5"
+    }
+  ],
+  "cast": [
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "role": "God who gave the vine to Attica"
+    },
+    {
+      "id": "icarius-attica",
+      "name": "Icarius",
+      "role": "Attic host who spread wine to the shepherds"
+    },
+    {
+      "id": "erigone-icaria",
+      "name": "Erigone",
+      "role": "Daughter who hanged herself over her father"
+    },
+    {
+      "id": "maera-dog",
+      "name": "Maera",
+      "role": "Icarius' dog who found the body"
+    },
+    {
+      "id": "shepherds-attica",
+      "name": "Shepherds",
+      "role": "Attic herdsmen who killed Icarius in drunken fear"
+    }
+  ],
+  "places": [
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "City afflicted until the Aiora was instituted"
+    },
+    {
+      "name": "Attica",
+      "role": "Land where Dionysus came and Icarius taught wine",
+      "id": "athens"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.14.7"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "130, 224, 243, 254"
+    },
+    {
+      "source": "hyginus",
+      "work": "Astronomica",
+      "citation": "2.4.2–2.4.5"
+    }
+  ]
+}

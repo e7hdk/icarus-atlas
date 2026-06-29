@@ -1,0 +1,48 @@
+{
+  "id": "phegeus-psophis",
+  "name": "Phegeus",
+  "greekName": "Phegeus (Φηγεύς)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "kingship of Psophis",
+    "purification and treachery",
+    "the cursed necklace"
+  ],
+  "summary": [
+    {
+      "text": "King of Psophis in Arcadia who purified Alcmaeon after matricide, gave him his daughter Arsinoe, and later slew him over the necklace of Harmonia — not to be confused with Phegeus son of Dares the Trojan priest in the Iliad.",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 3.7.5–6; Fabulae 245; Description of Greece 8.24.7"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Alcmaeon came maddened from killing his mother Eriphyle, Apollodorus says, he repaired first to Oicles in Arcadia and thence to Phegeus at Psophis. Phegeus purified him and gave him Arsinoe his daughter in marriage, together with the necklace and robe that had twice bought betrayal in the house of Amphiaraus.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5"
+    },
+    {
+      "text": "The land grew barren on Alcmaeon's account, and Apollo sent the wanderer to Achelous for a second trial. When Alcmaeon returned claiming he would dedicate the heirlooms at Delphi but carried them instead to his new wife Callirrhoe, Phegeus' sons lay in wait and killed him. They clapped Arsinoe into a chest and sold her to Agapenor at Tegea, falsely accusing her of the murder.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.7.5–6"
+    },
+    {
+      "text": "Hyginus counts Phegeus among those who killed their sons-in-law. Pausanias saw Alcmaeon's tomb still standing at Psophis, overshadowed by cypresses — the city of the king who had welcomed the matricide and then destroyed him.",
+      "sources": ["hyginus", "pausanias"],
+      "citation": "Fabulae 245; Description of Greece 8.24.7"
+    },
+    {
+      "text": "Homer names a different Phegeus — son of Dares the priest of Hephaestus, who with his brother Idaeus charged Diomedes from a chariot and was slain on the Trojan plain. The Psophidian king of the western wanderings and the Trojan priest's son must never share one star.",
+      "sources": ["homer"],
+      "citation": "Iliad 5.1–40"
+    }
+  ],
+  "residences": [
+    {
+      "city": "psophis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.5; Description of Greece 8.24.7"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "triptolemus",
+  "name": "Triptolemus",
+  "greekName": "Triptolemos (Τριπτόλεμος)",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "sower of wheat",
+    "Demeter's protégé",
+    "the winged chariot"
+  ],
+  "summary": [
+    {
+      "text": "Eleusinian prince to whom Demeter gave wheat and a chariot of winged dragons, wafted through the sky to sow the crop over the inhabited earth — though poets disagree whether he was son of Metaneira, of Eleusis, or of Ocean and Earth.",
+      "sources": ["apollodorus", "ovid", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Metamorphoses 5.646–661; Description of Greece 1.14.2–3"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus makes Triptolemus the elder of Metaneira's children. After Demeter's sojourn at Eleusis and the institution of the mysteries, the goddess fashioned for him a chariot drawn by winged dragons and gave him wheat; riding through the sky he sowed the whole inhabited earth, carrying the arts of the harvest from the sanctuary of the Two Goddesses to every land.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.2"
+    },
+    {
+      "text": "Apollodorus records rival parentages in the same breath: Panyasis affirms that Triptolemus was a son of Eleusis, for he says Demeter came to him; Pherecydes makes him a son of Ocean and Earth. The dispute stays in the genealogies while every author agrees on the mission — the boy who spread Demeter's gift.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.5.2",
+      "topic": "triptolemus-parentage"
+    },
+    {
+      "text": "Ovid sets the gift in Sicily after Ceres' search: the goddess taught Triptolemus to yoke the dragons and sent him abroad with seed, that mortals might no longer browse on acorns. Pausanias saw his throne at Athens and records that Eumolpus was reckoned among those to whom Demeter taught the holy rites beside Triptolemus and Celeus.",
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 5.646–661; Description of Greece 1.14.2–3, 1.38.3"
+    },
+    {
+      "text": "Callisto's son Arcas learned the cultivation of crops from Triptolemus, Pausanias says, and taught the Pelasgians to make bread — so the Eleusinian sower's gift reached Arcadia and renamed the land. The hero who rode the dragon-chariot belongs to the cosmic agriculture Demeter established after Persephone's rape.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.4.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "eleusis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.2; Description of Greece 1.38.3"
+    },
+    {
+      "city": "athens",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.14.2–3"
+    }
+  ]
+}

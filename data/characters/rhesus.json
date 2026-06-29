@@ -35,5 +35,17 @@
       "citation": "Bibliotheca 1.3.4; Iliad 10.435–502; Fabulae 113",
       "topic": "rhesus-mother"
     }
+  ],
+  "residences": [
+    {
+      "city": "edonia-thrace",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.3.4; Iliad 10.435–450"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 10.435–535; Bibliotheca 1.3.4"
+    }
   ]
 }

@@ -57,5 +57,27 @@
       ],
       "citation": "Fabulae 92"
     }
+  ],
+  "residences": [
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 7.125–128, 16.13–16; Bibliotheca 3.12.6"
+    },
+    {
+      "city": "halus-achaea-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "alope-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "trachis-malis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    }
   ]
 }

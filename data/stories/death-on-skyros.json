@@ -7,44 +7,105 @@
   "era": 6.81,
   "summary": {
     "text": "Driven from Athens by Menestheus after the underworld adventure, Theseus fled to Lycomedes on Skyros — and the king cast him into the abyss, ending the founder-hero while his sons would one day fight at Troy and recover Aethra from Helen's house.",
-    "sources": ["apollodorus", "homer", "hyginus"],
+    "sources": [
+      "apollodorus",
+      "homer",
+      "hyginus"
+    ],
     "citation": "Apollod. Epit. 1.24; Hom. Il. 3.144; Hyg. Fab. 96"
   },
   "chapters": [
     {
       "title": "Menestheus takes Athens",
       "text": "While Theseus lay below with Pirithous, Castor and Polydeuces seized Aphidnae and carried off Aethra; Menestheus son of Peteos took the kingdom and expelled the hero's sons. When Heracles raised Theseus from the Chair of Forgetfulness, he returned to find his throne usurped and his house turned against him.",
-      "sources": ["apollodorus"],
+      "sources": [
+        "apollodorus"
+      ],
       "citation": "Apollod. Epit. 1.23–1.24"
     },
     {
       "title": "Flight to Scyros",
       "text": "Theseus left Attica and came as a suppliant to Lycomedes, king of Scyros in the Sporades — the same court where Thetis would later hide Achilles in maiden's dress among the king's daughters. The fallen founder sought refuge on an isle that would one day cradle the son of Peleus before Troy.",
-      "sources": ["apollodorus", "hyginus"],
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
       "citation": "Apollod. Epit. 1.24, 3.13.8; Hyg. Fab. 96"
     },
     {
       "title": "The abyss",
       "text": "Lycomedes received him with apparent friendship, then threw him down a precipice into the sea and killed him. Apollodorus gives no motive beyond the king's treachery; the Athenian hero who had cleared the road, slain the Minotaur, and buried the Argive dead perished far from the city he had united. His sons Demophon and Acamas would sail with the host to Troy and at last recover their grandmother Aethra from captivity in Helen's house.",
-      "sources": ["apollodorus", "homer"],
+      "sources": [
+        "apollodorus",
+        "homer"
+      ],
       "citation": "Apollod. Epit. 1.24; Hom. Il. 3.144"
     }
   ],
   "cast": [
-    { "id": "theseus", "name": "Theseus", "role": "The exiled king cast into the abyss" },
-    { "id": "lycomedes-skyros", "name": "Lycomedes", "role": "King of Scyros who killed his guest" },
-    { "id": "menestheus", "name": "Menestheus", "role": "Usurper who held Athens" },
-    { "id": "aethra", "name": "Aethra", "role": "Mother held captive in Sparta until Troy" },
-    { "name": "Demophon", "role": "Son who would fight at Troy" },
-    { "name": "Acamas", "role": "Son who would recover Aethra" }
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "role": "The exiled king cast into the abyss"
+    },
+    {
+      "id": "lycomedes-skyros",
+      "name": "Lycomedes",
+      "role": "King of Scyros who killed his guest"
+    },
+    {
+      "id": "menestheus",
+      "name": "Menestheus",
+      "role": "Usurper who held Athens"
+    },
+    {
+      "id": "aethra",
+      "name": "Aethra",
+      "role": "Mother held captive in Sparta until Troy"
+    },
+    {
+      "id": "demophon-athens",
+      "name": "Demophon",
+      "role": "Son who would fight at Troy"
+    },
+    {
+      "id": "acamas-athens",
+      "name": "Acamas",
+      "role": "Son who would recover Aethra"
+    }
   ],
   "places": [
-    { "id": "skyros", "name": "Skyros", "role": "Isle where Lycomedes cast him down" },
-    { "id": "athens", "name": "Athens", "role": "The city he lost to Menestheus" }
+    {
+      "id": "skyros",
+      "name": "Skyros",
+      "role": "Isle where Lycomedes cast him down"
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "role": "The city he lost to Menestheus"
+    },
+    {
+      "name": "Aphidnae",
+      "role": "Attic fortress seized by the Dioscuri while Theseus was below",
+      "id": "aphidnae"
+    }
   ],
   "attestations": [
-    { "source": "apollodorus", "work": "Epitome", "citation": "1.24" },
-    { "source": "homer", "work": "Iliad", "citation": "3.144" },
-    { "source": "hyginus", "work": "Fabulae", "citation": "96" }
+    {
+      "source": "apollodorus",
+      "work": "Epitome",
+      "citation": "1.24"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "3.144"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "96"
+    }
   ]
 }

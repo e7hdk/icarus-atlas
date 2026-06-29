@@ -83,11 +83,43 @@
   ],
   "residences": [
     {
+      "city": "argos",
+      "sources": [
+        "hyginus",
+        "pausanias"
+      ],
+      "citation": "Fabulae 69; Description of Greece 9.9.4"
+    },
+    {
       "city": "thebes",
       "sources": [
         "apollodorus",
         "pausanias"
       ]
+    },
+    {
+      "city": "glisas",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Bibliotheca 3.7.2–4; Description of Greece 9.5.13, 9.9.4"
+    },
+    {
+      "city": "pergamon",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 3.17; Description of Greece 9.5.14"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
+      "citation": "Epitome 3.17; Description of Greece 9.5.14"
     }
   ]
 }

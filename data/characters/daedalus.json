@@ -31,12 +31,22 @@
   ],
   "residences": [
     {
+      "city": "athens",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Bibliotheca 3.15.8; Metamorphoses 8.236"
+    },
+    {
       "city": "knossos",
       "sources": ["apollodorus"]
     },
     {
       "city": "gortyn",
       "sources": ["apollodorus"]
+    },
+    {
+      "city": "syracuse",
+      "sources": ["ovid", "apollodorus"],
+      "citation": "Metamorphoses 8.259–272; Epitome 1.13–15"
     }
   ]
 }

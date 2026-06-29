@@ -1,0 +1,79 @@
+{
+  "city": "pisa-elis",
+  "reigns": [
+    {
+      "ruler": "Salmoneus",
+      "characterId": "salmoneus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 1.9.7; Hyg. Fab. 61",
+      "note": "Aeolid son of Aeolus who, dwelling first in Thessaly, afterwards came to Elis and founded a city — before Zeus blasted him for counterfeiting thunder with a bronze chariot and torches.",
+      "topic": "elis-royal-stemma"
+    },
+    {
+      "ruler": "Aethlius",
+      "characterId": "aethlius",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 5.1.3; Apollod. 1.7.3, 1.7.5",
+      "note": "In the Elean account the first to rule the land, son of Zeus and Protogeneia daughter of Deucalion, and father of Endymion — though some say he was a son of Aeolus instead.",
+      "topic": "elis-royal-stemma"
+    },
+    {
+      "ruler": "Endymion",
+      "characterId": "endymion",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 5.1.3–5.1.5; Apollod. 1.7.5",
+      "note": "Son of Aethlius who deposed Clymenus and set his sons a footrace at Olympia with the kingdom for the prize; Epeius won and the people were first called Epeans."
+    },
+    {
+      "ruler": "Epeius",
+      "characterId": "epeius-endymion",
+      "sources": ["pausanias"],
+      "citation": "Paus. 5.1.4, 5.1.6",
+      "note": "Son of Endymion who won the Olympic footrace for the throne; in his reign Oenomaus was lord of Pisa. Pausanias says he married Anaxiroe and begat a daughter Hyrmina but no male issue — distinct from the Trojan craftsman Epeius son of Panopeus."
+    },
+    {
+      "ruler": "Oenomaus",
+      "characterId": "oenomaus",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Apollod. Epit. 2.4–7; Paus. 5.1.6–7; Hyg. Fab. 84",
+      "note": "King of Pisa who raced Hippodamia's suitors and killed those he overtook until Pelops, with Myrtilus' treachery, won the fatal chariot contest. Pausanias makes him son of Alxion — poets proclaim Ares his father."
+    },
+    {
+      "ruler": "Pelops",
+      "characterId": "pelops",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. Epit. 2.7–9; Paus. 5.1.7, 5.1.11",
+      "note": "After cleansing at the Ocean and by Hephaestus, he returned to Pisa in Elis and succeeded to the kingdom of Oenomaus, taking Pisa and bordering Olympia and separating them from the land of Epeius. About a generation later he held the Olympic games in honor of Zeus more splendidly than any predecessor.",
+      "topic": "pelops-kingship"
+    },
+    {
+      "ruler": "Eleius",
+      "characterId": "eleius-elis",
+      "sources": ["pausanias"],
+      "citation": "Paus. 5.1.8–9",
+      "note": "When Pelops' sons were scattered over the rest of the Peloponnese, the kingdom of the Epeans fell to Eleius son of Eurycyda daughter of Endymion — and, believe the tale who will, of Poseidon — who gave the inhabitants their present name of Eleans."
+    },
+    {
+      "ruler": "Augeas",
+      "characterId": "augeas",
+      "sources": ["homer", "apollodorus", "pausanias", "apollonius"],
+      "citation": "Il. 2.615–650; Apollod. 2.5.5; Paus. 5.1.9–10; Arg. 1.172",
+      "note": "Son of Eleius and king of Elis, master of cattle so vast that dung choked his land — the king whose broken bargain with Heracles over the cleansing bred the war that ended his line."
+    },
+    {
+      "ruler": "Phyleus",
+      "characterId": "phyleus-dulichium",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.5.11, 2.7.2; Paus. 5.3.1, 5.3.3",
+      "note": "Son of Augeas whom Heracles restored to the throne after marching on Elis and killing Augeas and his sons — Apollodorus' ending of the war. Pausanias instead has Heracles give up Elis to Phyleus out of respect while sparing Augeas, and says Phyleus later returned to Dulichium after organizing the affairs of Elis.",
+      "topic": "phyleus-restoration"
+    },
+    {
+      "ruler": "Agasthenes",
+      "characterId": "agasthenes-epeian",
+      "sources": ["homer", "pausanias"],
+      "citation": "Il. 2.615–650; Paus. 5.3.3",
+      "note": "Son of Augeias whom Homer names when Polyxenus leads the fourth Epeian company at Troy; Pausanias says that when Phyleus had returned to Dulichium and Augeas died at an advanced age, the kingdom of Elis devolved on Agasthenes together with Amphimachus and Thalpius."
+    }
+  ]
+}

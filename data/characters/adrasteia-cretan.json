@@ -1,0 +1,38 @@
+{
+  "id": "adrasteia-cretan",
+  "name": "Adrasteia",
+  "greekName": "Adrasteia (Ἀδράστεια)",
+  "type": "nymph",
+  "kinds": ["oread"],
+  "cluster": "titan-ring",
+  "domains": [
+    "nurse of Zeus",
+    "Mount Dicte",
+    "daughter of Melisseus",
+    "Crete"
+  ],
+  "summary": [
+    {
+      "text": "Cretan nymph, daughter of Melisseus, whom Rhea entrusted with the infant Zeus together with her sister Ida — one of the nurses in the Dictaean cave where the Curetes drowned the child's crying while Cronus swallowed the stone.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.6; Fabulae 182"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Rhea, big with Zeus, fled to Crete and bore him in the cave of Dicte, Apollodorus says she gave the babe to the Curetes and to the nymphs Adrastia and Ida, daughters of Melisseus, to nurse. On honey, goat's milk, and the care of these mountain nymphs the youngest Olympian grew in hiding.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.6–1.1.7"
+    },
+    {
+      "text": "Hyginus lists her among the nurses of Jove, calling her Adrasta and naming Melisseus as father — though in the same catalogue he also gives other parentages for nymphs who share her name, a hazard of common titles among the Idaean company.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 182"
+    },
+    {
+      "text": "Apollonius remembers her craft in the Argonautica: when Aphrodite sought to bribe Eros to strike Medea with love, the boy was cheating at golden dice in Zeus' orchard, and the goddess offered him the wondrous ball Adrasteia had made for the infant Zeus in the Idaean cave — golden zones circled by hidden seams and a dark-blue spiral, which streaks like a star when it is thrown.",
+      "sources": ["apollonius"],
+      "citation": "Argonautica 3.132–141"
+    }
+  ]
+}

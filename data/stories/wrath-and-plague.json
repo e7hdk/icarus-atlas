@@ -56,10 +56,11 @@
     { "id": "nestor", "name": "Nestor", "role": "Counsellor; the Dream wore his likeness" },
     { "id": "thersites", "name": "Thersites", "role": "Railer beaten at assembly" },
     { "id": "hephaestus", "name": "Hephaestus", "role": "He who poured wine among the quarrelling gods" },
-    { "name": "Calchas", "role": "Seer who named Apollo's anger" }
+    { "id": "calchas-thestor", "name": "Calchas", "role": "Seer who named Apollo's anger" }
   ],
   "places": [
-    { "id": "troy", "name": "Troy", "role": "City ringed by the mustered host" }
+    { "id": "troy", "name": "Troy", "role": "City ringed by the mustered host" },
+    { "id": "chryse-troad", "name": "Chryse", "role": "Shrine where Chryseis was restored and Apollo stayed his plague" }
   ],
   "attestations": [
     { "source": "homer", "work": "Iliad", "citation": "1–2" },

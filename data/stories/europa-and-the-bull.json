@@ -1,0 +1,136 @@
+{
+  "id": "europa-and-the-bull",
+  "title": "The Rape of Europa",
+  "greekTitle": "ἡ ἁρπαγὴ τῆς Εὐρώπης",
+  "kind": "episode",
+  "parent": "theban-cycle",
+  "era": 4.9,
+  "summary": {
+    "text": "Zeus, falling in love with the Phoenician princess Europa, took the form of a tame white bull and bore her across the sea to Crete, where she bore Minos, Rhadamanthus, and Sarpedon — and her father Agenor sent Cadmus and his brothers to wander the world until they found her, seeding the Cadmean search for Thebes.",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "homer",
+      "hyginus"
+    ],
+    "citation": "Bibliotheca 3.1.1–2; Met. 2.833–875; Iliad 14.321; Fabulae 178"
+  },
+  "chapters": [
+    {
+      "title": "Agenor's daughter",
+      "text": "Agenor went to Phoenicia, married Telephassa, and begat a daughter Europa and three sons, Cadmus, Phoenix, and Cilix. But some say Europa was a daughter not of Agenor but of Phoenix — and Homer makes her daughter of Phoenix and niece of Cadmus, not sister. The genealogies divide; the abduction is the same in every telling.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.1.1; Iliad 14.321; Fabulae 178",
+      "topic": "europa-paternity"
+    },
+    {
+      "title": "The tame bull",
+      "text": "Zeus loved her. Ovid tells how the god, fearing jealous Juno, changed himself to a bull — snow-white, gentle-eyed, horns gilded, no trace of fear upon his brow — and mingled with the herds on the grass. Europa and her maidens wove garlands for the creature; when she climbed onto its back the bull plunged into the sea and swam away from the shore. Apollodorus says simply that Zeus turned himself into a tame bull, mounted her on his back, and conveyed her through the sea to Crete.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Bibliotheca 3.1.1; Met. 2.833–875"
+    },
+    {
+      "title": "Crete and the Cretan kings",
+      "text": "In Crete Zeus lay with Europa, and she bore Minos, Sarpedon, and Rhadamanthus — though Homer makes Sarpedon son of Zeus by Laodamia daughter of Bellerophon, not by Europa. Asterius prince of the Cretans married her and brought up her children; when they were grown they quarrelled over a boy called Miletus. Agenor meanwhile sent Cadmus, Phoenix, and Cilix to search for Europa and forbade their return without her — the quest that would end not in Phoenicia but at Apollo's cow in Boeotia.",
+      "sources": [
+        "apollodorus",
+        "homer",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 3.1.1–2; Iliad 14.321; Fabulae 178",
+      "topic": "sarpedon-paternity"
+    }
+  ],
+  "cast": [
+    {
+      "id": "europa",
+      "name": "Europa",
+      "role": "Phoenician princess carried off by the bull"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "God who took bull-form and swam to Crete"
+    },
+    {
+      "id": "agenor",
+      "name": "Agenor",
+      "role": "Father who sent his sons to search for her"
+    },
+    {
+      "id": "cadmus",
+      "name": "Cadmus",
+      "role": "Brother sent forth on the hopeless quest"
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "role": "Brother who would give his name to Phoenicia"
+    },
+    {
+      "id": "minos",
+      "name": "Minos",
+      "role": "Son born in Crete, future king"
+    },
+    {
+      "id": "rhadamanthus",
+      "name": "Rhadamanthus",
+      "role": "Son of Zeus and Europa in Crete"
+    },
+    {
+      "id": "telephassa-phoenicia",
+      "name": "Telephassa",
+      "role": "Mother of Europa and the searching brothers"
+    },
+    {
+      "id": "cilix",
+      "name": "Cilix",
+      "role": "Brother sent to wander until Europa was found"
+    },
+    {
+      "id": "asterius-crete",
+      "name": "Asterius",
+      "role": "Cretan prince who raised Europa's sons"
+    }
+  ],
+  "places": [
+    {
+      "name": "Phoenicia",
+      "role": "Homeland of Agenor and the abducted princess"
+    },
+    {
+      "id": "knossos",
+      "name": "Crete",
+      "role": "Island where Zeus brought Europa ashore"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.1.1–2"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "2.833–875"
+    },
+    {
+      "source": "homer",
+      "work": "Iliad",
+      "citation": "14.321"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "178"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "ganymede",
+  "title": "The Rape of Ganymede",
+  "greekTitle": "ἡ ἁρπαγὴ τοῦ Γανυμήδου",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 3.1,
+  "summary": {
+    "text": "Ganymede, son of Tros and fairest of mortal men, was caught up by Zeus on an eagle to pour wine for the gods on Olympus — and in recompense for the boy the king of heaven gave Tros horses, the best that run beneath the dawn and the sun, fixed forever in the sky as the Eagle and Aquarius.",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus"
+    ],
+    "citation": "Apollod. 3.12.2; Ov. Met. 10.155–161; Hyg. Astr. 2.16.1, 2.29.1"
+  },
+  "chapters": [
+    {
+      "title": "The fairest of mortals",
+      "text": "Tros, king among the Trojans, begat three peerless sons — Ilus, Assaracus, and Ganymede. For the sake of his beauty, Zeus caught the boy up on an eagle and appointed him cupbearer of the gods in heaven. Hyginus counts him among the youths most handsome in the world, beloved of Jove.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. 3.12.2; Hyg. Fab. 271"
+    },
+    {
+      "title": "The eagle's flight",
+      "text": "Ovid tells the rapture in Orpheus' song of boys loved by gods: the king of the gods burned with love for Ganymede of Phrygia and would take no bird's shape but the eagle's, able to sustain the weight of his own thunderbolts. Without delay Jove beat the air on counterfeit wings, stole the Trojan boy away, and flew off with him to heaven.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.12.2; Ov. Met. 10.155–161"
+    },
+    {
+      "title": "Cupbearer on Olympus",
+      "text": "Even now, against Juno's will, Ganymede mixes the nectar and serves the cups of Jupiter — the mortal youth who dwells among the immortals because beauty moved the king of gods to rapture. Apollodorus names the office plainly: cupbearer of the gods in heaven.",
+      "sources": [
+        "apollodorus",
+        "ovid"
+      ],
+      "citation": "Apollod. 3.12.2; Ov. Met. 10.155–161"
+    },
+    {
+      "title": "Horses and stars",
+      "text": "The price paid to Troy outlived the boy himself. Zeus gave Tros horses in compensation for the rape of Ganymede — the same divine mares Laomedon later promised Heracles for saving Hesione and then refused, bringing the hero's threat of war. Hyginus fixes the myth in the sky: the Eagle that snatched Ganymede for Jove flies above Aquarius, whom many say is Ganymede himself, shown forever tilting his urn as water-bearer among the twelve signs.",
+      "sources": [
+        "apollodorus",
+        "hyginus"
+      ],
+      "citation": "Apollod. 2.5.9, 3.12.2; Hyg. Astr. 2.16.1, 2.29.1, Fab. 224"
+    }
+  ],
+  "cast": [
+    {
+      "id": "ganymede",
+      "name": "Ganymede",
+      "role": "Trojan prince made cupbearer of the gods"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "King who snatched the boy on an eagle"
+    },
+    {
+      "id": "tros",
+      "name": "Tros",
+      "role": "King of Troy who received divine horses in recompense"
+    }
+  ],
+  "places": [
+    {
+      "id": "troy",
+      "name": "Troy",
+      "role": "Kingdom of Ganymede's birth"
+    },
+    {
+      "name": "Olympus",
+      "role": "Where the boy pours nectar for the gods",
+      "featureId": "mount-olympus"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "3.12.2, 2.5.9"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "10.155–161"
+    },
+    {
+      "source": "hyginus",
+      "work": "Astronomica",
+      "citation": "2.16.1, 2.29.1"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "224, 271"
+    }
+  ]
+}

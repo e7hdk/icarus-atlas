@@ -24,6 +24,13 @@
         "pausanias"
       ],
       "citation": "Description of Greece 2.29.4"
+    },
+    {
+      "text": "Distinct from Epeius son of Endymion, the Elean king who won the Olympic footrace and gave the Epeans their name — a separate figure in Pausanias' Elean royal stem, not the Phocian craftsman of Troy.",
+      "sources": [
+        "pausanias"
+      ],
+      "citation": "Description of Greece 5.1.4, 5.1.6; Iliad 23.665"
     }
   ],
   "story": [
@@ -61,6 +68,23 @@
         "pausanias"
       ],
       "citation": "Description of Greece 2.29.4, 10.26.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "panopeus",
+      "sources": ["homer", "pausanias", "apollodorus"],
+      "citation": "Iliad 23.665–695; Description of Greece 2.29.4; Bibliotheca 2.4.7"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 23.665–699; Odyssey 8.492–494; Epitome 5.14"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.559–580"
     }
   ]
 }

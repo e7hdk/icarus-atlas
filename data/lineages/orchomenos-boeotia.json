@@ -3,21 +3,31 @@
   "reigns": [
     {
       "ruler": "Minyas",
-      "sources": ["apollonius"],
-      "citation": "Arg. 3.1077",
-      "note": "Son of Aeolus, who in Jason's telling built long ago the city of Orchomenus bordering on the Cadmeians."
+      "characterId": "minyas-orchomenus",
+      "sources": ["pausanias", "apollonius"],
+      "citation": "Paus. 9.36.4–9.36.6; Arg. 3.1077",
+      "note": "King who built the treasury and begot Orchomenus the eponym; Apollonius makes him son of Aeolus instead (Arg. 3.1077)."
     },
     {
       "ruler": "Clymenus",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 2.4.11",
+      "characterId": "clymenus-orchomenus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.11; Paus. 9.37.1",
       "note": "King of the Minyans, wounded in a precinct of Poseidon by a Theban charioteer — the grievance that set Erginus' tribute on Thebes."
     },
     {
       "ruler": "Erginus",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 2.4.11",
+      "characterId": "erginus-orchomenus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.11; Paus. 9.37.1–9.37.4",
       "note": "Son of Clymenus, who sent heralds to Thebes for the tribute until Heracles routed the Minyans and ended their exaction."
+    },
+    {
+      "ruler": "Ascalaphus & Ialmenus",
+      "characterIds": ["ascalaphus-minyan", "ialmenus-minyan"],
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.37.7",
+      "note": "After Trophonius was swallowed in the Lebadeian grove, Pausanias says the kingdom of Orchomenus passed to the sons of Ares and Astyoche — the same pair Homer leads to Troy from Orchomenus and Aspledon."
     }
   ]
 }

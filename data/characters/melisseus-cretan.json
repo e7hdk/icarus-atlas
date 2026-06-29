@@ -1,0 +1,31 @@
+{
+  "id": "melisseus-cretan",
+  "name": "Melisseus",
+  "greekName": "Melisseus (Μελισσεύς)",
+  "type": "mortal",
+  "cluster": "titan-ring",
+  "domains": [
+    "king of Crete",
+    "father of Zeus' nurses",
+    "the Idaean cave"
+  ],
+  "summary": [
+    {
+      "text": "King in Crete to whom Rhea brought the infant Zeus to nurse — father of the nymphs Adrasteia and Ida in Apollodorus, and in Hyginus' star-lore the ruler whose daughters, lacking milk, furnished the she-goat Amalthea for Jove.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.1.6; Astronomica 2.13.5"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus names him only as the father of Adrastia and Ida, the nymphs who received the newborn Zeus in the Dictaean cave together with the Curetes. Beyond that parentage he leaves Melisseus without genealogy or reign — a Cretan king known chiefly through his daughters' service to Rhea's hidden child.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.1.6"
+    },
+    {
+      "text": "Hyginus' Parmeniscus says a certain Melisseus was king in Crete when Jove was brought to nurse, and that his daughters, having no milk of their own, supplied the she-goat Amalthea. The name suggests the honey-fed mountain wilds of Ida, though the poet gives no further history of the king himself.",
+      "sources": ["hyginus"],
+      "citation": "Astronomica 2.13.5"
+    }
+  ]
+}

@@ -80,6 +80,15 @@
   ],
   "residences": [
     {
+      "city": "tegea",
+      "sources": [
+        "apollodorus",
+        "pausanias",
+        "hyginus"
+      ],
+      "citation": "Bibliotheca 2.7.4, 3.9.1; Description of Greece 8.4.8–9"
+    },
+    {
       "city": "pergamon",
       "sources": ["apollodorus", "pausanias", "hyginus"]
     }

@@ -27,7 +27,7 @@
     },
     {
       "title": "The Argo and the muster",
-      "text": "Jason assembled the noblest heroes of Hellas. Athena guided Argus in building the fifty-oared Argo and set a speaking timber from Dodona in her prow; Orpheus came from Pieria, the Dioscuri from Sparta, the Aeacids from Aegina, Heracles and the seers Idmon and Mopsus among the rest — the roll Hyginus calls the Minyae.",
+      "text": "Jason assembled the noblest heroes of Hellas. Athena guided Argus in building the fifty-oared Argo and set a speaking timber from Dodona in her prow; Orpheus came from Pieria, the Dioscuri from Sparta, the Aeacids from Aegina, Heracles and the seers Idmon and Mopsus among the rest — the roll Hyginus calls the Minyae. From Samos, seat of the Imbrasian Hera, Ancaeus son of Poseidon sailed with the crew.",
       "sources": [
         "apollodorus",
         "apollonius",
@@ -75,7 +75,7 @@
     },
     {
       "title": "Phineus and the Clashing Rocks",
-      "text": "At Salmydessus the blind seer Phineus, tormented by the Harpies, revealed the route when Zetes and Calais drove the snatchers off — Iris swore by Styx they would trouble him no more. He bade them send a dove through the Symplegades and row hard in the rocks' wake.",
+      "text": "At Salmydessus the blind seer Phineus, long tormented by the Harpies at his table, revealed the route when Zetes and Calais drove the snatchers to the Strophades — Iris swore by Styx they would trouble him no more. He bade them send a dove through the Symplegades and row hard in the rocks' wake.",
       "sources": [
         "apollodorus",
         "apollonius",
@@ -95,13 +95,13 @@
     },
     {
       "title": "Apsyrtus and the flight",
-      "text": "Aeetes pursued the fugitives. Medea murdered her brother Apsyrtus — Apollodorus says she cut him limb from limb into the sea; Apollonius sets Jason in ambush on Artemis' isle. Circe purified the crew for the slaughter; at the Sirens only Butes was lost, saved by Aphrodite.",
+      "text": "Aeetes pursued the fugitives. Medea murdered her brother Apsyrtus — Apollodorus says she cut him limb from limb into the sea; Apollonius sets Jason in ambush on Artemis' isle. Circe purified the crew for the slaughter; at the Sirens only Butes was lost, saved by Aphrodite. On the homeward voyage Euphemus son of Poseidon dreamed that the clod of earth he carried nursed at white streams of milk; Triton bade him cast it into the sea, and when he did an island rose — Calliste, sacred nurse of the sons of Euphemus, who in after days dwelt in Lemnos and came to Sparta as suppliants before Theras son of Autesion led them thither and gave the isle his name.",
       "sources": [
         "apollodorus",
         "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.24–25; Argonautica 4.303–919; Fabulae 23",
+      "citation": "Bibliotheca 1.9.24–25; Argonautica 4.303–919, 4.1755; Fabulae 23",
       "topic": "apsyrtus-death"
     },
     {
@@ -341,7 +341,7 @@
       "role": "Beloved of Heracles, lost to the nymphs"
     },
     {
-      "id": "pirithous",
+      "id": "peirithous",
       "name": "Pirithous",
       "role": "Lapith comrade of Theseus"
     },
@@ -576,6 +576,26 @@
       "role": "Snatchers of Phineus' table"
     },
     {
+      "id": "aello-harpy",
+      "name": "Aello",
+      "role": "Storm-swift Harpy driven from Salmydessus"
+    },
+    {
+      "id": "ocypete-harpy",
+      "name": "Ocypete",
+      "role": "Swift-flier Harpy banished to the Strophades"
+    },
+    {
+      "id": "celaeno-harpy",
+      "name": "Celaeno",
+      "role": "Third Harpy in Hyginus' roll at the seer's table"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "role": "Messenger who swore by Styx for Phineus' release"
+    },
+    {
       "id": "amycus-bebrycian",
       "name": "Amycus",
       "role": "Bebrycian boxer slain by Polydeuces"
@@ -683,9 +703,19 @@
       "role": "Aeetes' city and the fleece in Mars' grove"
     },
     {
+      "id": "colchis",
+      "name": "Colchis",
+      "role": "Eastern kingdom on the Phasis, goal of the voyage and seat of Aeetes"
+    },
+    {
       "id": "corcyra",
       "name": "Corcyra",
       "role": "Land of the Phaeacians where Medea was wed"
+    },
+    {
+      "id": "aeaea",
+      "name": "Aeaea",
+      "role": "Circe's isle where the Argo's crew was purified after Apsyrtus' murder"
     },
     {
       "id": "corinth",
@@ -701,6 +731,56 @@
       "id": "knossos",
       "name": "Crete",
       "role": "Where Talos the brazen man guarded the coast"
+    },
+    {
+      "name": "The Strophades",
+      "role": "Islands of Turning where the Harpies were driven from Phineus",
+      "id": "strophades"
+    },
+    {
+      "id": "pellene",
+      "name": "Pellene",
+      "role": "Achaean home of Asterion and Amphion son of Hyperasius among the Minyae"
+    },
+    {
+      "id": "piresia",
+      "name": "Piresia",
+      "role": "Thessalian settlement of Asterius son of Hyperasius in Hyginus' catalogue"
+    },
+    {
+      "id": "pella-macedonia",
+      "name": "Pella",
+      "role": "Macedonian city Hyginus names for Deucalion son of Hyperasius among the Minyae"
+    },
+    {
+      "id": "cerinthus",
+      "name": "Cerinthus",
+      "role": "Euboean city whence Canthus sailed on the Argo"
+    },
+    {
+      "id": "libya",
+      "name": "Libya",
+      "role": "Western land where Canthus perished raiding flocks on the homeward voyage"
+    },
+    {
+      "id": "thera",
+      "name": "Thera",
+      "role": "Calliste, the isle Euphemus' clod raised from the sea"
+    },
+    {
+      "id": "samos",
+      "name": "Samos",
+      "role": "Ionian isle of Ancaeus and the Imbrasian Hera"
+    },
+    {
+      "id": "heraion-samos",
+      "name": "Heraion of Samos",
+      "role": "Great sanctuary of Hera whence Ancaeus sailed to Colchis"
+    },
+    {
+      "id": "dodona",
+      "name": "Dodona",
+      "role": "Oracle of Zeus whose oak supplied the Argo's speaking timber"
     }
   ],
   "attestations": [

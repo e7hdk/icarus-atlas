@@ -62,5 +62,40 @@
       ],
       "citation": "Iliad 15.64–68; 22; 23.83–92, 257–270"
     }
+  ],
+  "residences": [
+    {
+      "city": "opous-locris",
+      "sources": ["homer", "apollodorus"]
+    },
+    {
+      "city": "phylace-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "halus-achaea-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "alope-phthiotis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "trachis-malis",
+      "sources": ["homer"],
+      "citation": "Iliad 2.655–690"
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"]
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.655–690"
+    }
   ]
 }

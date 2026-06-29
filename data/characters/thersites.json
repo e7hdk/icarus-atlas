@@ -39,5 +39,21 @@
       "citation": "Epitome 5.1",
       "topic": "thersites-death"
     }
+  ],
+  "residences": [
+    {
+      "city": "calydon",
+      "sources": ["apollodorus"]
+    },
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 2.211–277"
+    },
+    {
+      "city": "aulis-boeotia",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Epitome 3.11; Iliad 2.211–277"
+    }
   ]
 }

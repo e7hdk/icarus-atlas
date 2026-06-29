@@ -1,0 +1,33 @@
+{
+  "id": "aello-harpy",
+  "name": "Aello (Harpies)",
+  "greekName": "Aellō (Αἴλλω)",
+  "romanName": "Aello",
+  "type": "creature",
+  "kinds": ["harpy"],
+  "cluster": "chthonic",
+  "domains": [
+    "storm-swift flight",
+    "snatching",
+    "winged torment"
+  ],
+  "summary": [
+    {
+      "text": "One of the storm-winged Harpies whom Hesiod and Apollodorus name beside Ocypete as daughters of Thaumas and the Oceanid Electra — Aello, 'Storm-swift,' who keeps pace with the blasts of the winds.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    }
+  ],
+  "story": [
+    {
+      "text": "Hesiod sets Aello in the sea-god line: Thaumas wedded Electra, daughter of deep-flowing Ocean, and she bore him swift Iris and the long-haired Harpies, Aello and Ocypete, who on their swift wings keep pace with the blasts of the winds and the birds. Apollodorus repeats the parentage and the pair exactly. The collective node `harpies` holds the Phineus episode and the disputed third name; this node is the individual named in Hesiod's two-Harpy roll.",
+      "sources": ["hesiod", "apollodorus"],
+      "citation": "Theogony 265–269; Bibliotheca 1.2.6"
+    },
+    {
+      "text": "In the torment of blind Phineus, Apollodorus tells how the winged females snatched his food until the Boreads drove them off; one fell into a river of the Peloponnese called Harpys after her — some name her Nicothoe, others Aellopus — a variant that may identify the same storm-snatcher as Aello. Hyginus raises the count to three Harpies and names Aellopous, Celaeno and Ocypete.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 1.9.21; Fabulae 14"
+    }
+  ]
+}

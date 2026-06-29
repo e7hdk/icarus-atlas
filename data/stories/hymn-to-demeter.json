@@ -1,0 +1,149 @@
+{
+  "id": "hymn-to-demeter",
+  "title": "Demeter and Persephone",
+  "greekTitle": "Δημήτηρ καὶ Περσεφόνη",
+  "kind": "episode",
+  "parent": "titanomachy",
+  "era": 2.4,
+  "eraEnd": 2.55,
+  "summary": {
+    "text": "When Pluto carried off Persephone with Zeus' connivance, Demeter wandered the earth with torches until she came to Eleusis in mortal guise — and when the Maid ate a pomegranate seed in the underworld, the goddess' grief withered the crops until a compromise split the year between mother and king of the dead.",
+    "sources": [
+      "apollodorus",
+      "ovid",
+      "hyginus",
+      "pausanias"
+    ],
+    "citation": "Apollod. 1.5.1–1.5.3; Ov. Met. 5.385–571; Hyg. Fab. 146; Paus. 1.38.5, 2.36.7"
+  },
+  "chapters": [
+    {
+      "title": "The Maid taken",
+      "text": "Apollodorus says Pluto seized Persephone secretly, with Zeus' help. Demeter learned from the Hermionians that the god of the dead had taken her, and in anger she quit Olympus. Ovid places the rape in Sicily: while Proserpina gathered flowers by Lake Pergus near Henna, Dis saw her, loved her, and plunged with his chariot through the pool of Cyane — and the nymph Arethusa, whose stream runs beneath the earth, later told Ceres where her daughter had gone. Pausanias records rival Greek localizations at Eleusis and Argos.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "pausanias"
+      ],
+      "citation": "Apollod. 1.5.1; Ov. Met. 5.385–424, 5.487–508; Paus. 1.38.5, 2.36.7",
+      "topic": "persephone-abduction-details"
+    },
+    {
+      "title": "Torches and Eleusis",
+      "text": "Demeter roamed the whole earth by night and day with torches in search of the Maid. Coming in the likeness of a mortal woman to Eleusis, she was welcomed by Celeus and Metaneira; she nursed their infant Demophon in the fire to make him immortal, but Metaneira's cry broke the charm. For Triptolemus, eldest son of Metaneira, she fashioned a chariot of winged dragons and gave him wheat to sow over the inhabited world.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 1.5.2; Ov. Met. 5.425–661; Hyg. Fab. 147"
+    },
+    {
+      "title": "The pomegranate seed",
+      "text": "When Zeus ordered Pluto to send the Maid up, Pluto gave her a seed of a pomegranate to eat so that she might not stay long with her mother. Not foreseeing the consequence, she swallowed it — and because Ascalaphus bore witness that she had eaten, Demeter laid a heavy rock on him in Hades. For that one seed she must spend a third of every year below with Pluto and the rest with the gods; Ovid and Hyginus also reckon half the revolving year with each parent.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 1.5.3; Ov. Met. 5.564–567; Hyg. Fab. 146",
+      "topic": "persephone-split-year"
+    },
+    {
+      "title": "The turning seasons",
+      "text": "While Persephone dwells in the house of Hades, Demeter's sorrow withholds growth from the earth; when the Maid returns to Olympus, the world blooms again. The compromise is the mythic root of sowing and harvest — agriculture bound to the rhythm of descent and return.",
+      "sources": [
+        "apollodorus",
+        "ovid",
+        "hyginus"
+      ],
+      "citation": "Apollod. 1.5.3; Ov. Met. 5.564–571; Hyg. Fab. 146"
+    }
+  ],
+  "cast": [
+    {
+      "id": "demeter",
+      "name": "Demeter",
+      "role": "Grain-goddess who searched with torches"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "role": "The Maid carried off to Hades"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "role": "Pluto, king who gave the pomegranate seed"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "role": "Father who connived at the rape and brokered return"
+    },
+    {
+      "id": "hecate",
+      "name": "Hecate",
+      "role": "Torch-bearing companion in the search"
+    },
+    {
+      "id": "celeus-eleusis",
+      "name": "Celeus",
+      "role": "King of Eleusis who welcomed Demeter"
+    },
+    {
+      "id": "triptolemus",
+      "name": "Triptolemus",
+      "role": "Eleusinian prince who spread wheat over the world"
+    },
+    {
+      "id": "metaneira",
+      "name": "Metaneira",
+      "role": "Queen of Eleusis who interrupted the immortal rite"
+    },
+    {
+      "id": "demophon-metaneira",
+      "name": "Demophon",
+      "role": "Infant nursed in the fire to win immortality"
+    },
+    {
+      "id": "ascalaphus-demeter",
+      "name": "Ascalaphus",
+      "role": "Witness crushed under a rock for the pomegranate"
+    }
+  ],
+  "places": [
+    {
+      "name": "Eleusis",
+      "role": "Where Demeter sojourned and taught the mysteries",
+      "id": "eleusis"
+    },
+    {
+      "name": "Sicily",
+      "role": "Ovid's meadow of Henna and Lake Pergus",
+      "id": "syracuse"
+    }
+  ],
+  "attestations": [
+    {
+      "source": "apollodorus",
+      "work": "The Library",
+      "citation": "1.5.1–1.5.3"
+    },
+    {
+      "source": "ovid",
+      "work": "Metamorphoses",
+      "citation": "5.385–571"
+    },
+    {
+      "source": "hyginus",
+      "work": "Fabulae",
+      "citation": "146–147"
+    },
+    {
+      "source": "pausanias",
+      "work": "Description of Greece",
+      "citation": "1.38.5, 2.36.7, 8.25.4–7"
+    }
+  ]
+}

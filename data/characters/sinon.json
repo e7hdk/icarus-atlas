@@ -1,0 +1,48 @@
+{
+  "id": "sinon",
+  "name": "Sinon",
+  "greekName": "Sinōn (Σίνων)",
+  "type": "hero",
+  "domains": [
+    "the lying tale",
+    "the beacon at Achilles' grave",
+    "the Wooden Horse"
+  ],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "The Greek left behind when the host feigned departure to Tenedos — he told the Trojans a false tale of desertion, opened the hollow horse, and kindled the beacon that guided the fleet back to the burning city.",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.15, 5.19; Fabulae 108"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Odysseus persuaded the army to build the wooden horse and the chosen warriors had climbed inside, Apollodorus says the Greeks burned their tents, left Sinon on the shore to light a beacon as a signal, and put to sea by night off Tenedos. The inscription on the horse declared it a thank-offering to Athena for their return home — while Sinon remained to play the part of the deserter.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.15"
+    },
+    {
+      "text": "Hyginus credits him with opening the engine: the Achaeans came out of the horse which Sinon had opened, killed the gate-guards, and at the given signal admitted their friends — so the stratagem turned on the man who stayed behind when the rest sailed away.",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 108"
+    },
+    {
+      "text": "When night fell and Troy slept, the Greeks drew near from Tenedos and Sinon kindled the beacon on the grave of Achilles to guide them. Helen went round the horse calling the chiefs in the voices of their wives; when Anticlus would have answered, Odysseus held fast his mouth — and the fire Sinon raised was the sign for the sack to begin.",
+      "sources": ["apollodorus"],
+      "citation": "Epitome 5.19"
+    },
+    {
+      "text": "Pausanias saw Sinon again in art at Delphi: in Polygnotus' painting of Troy's fall he carries off the body of Laomedon together with Anchialus — a comrade of Odysseus remembered beside the older king's corpse in the painter's catalogue of the city's last hours.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.27.3"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Epitome 5.15, 5.19; Fabulae 108"
+    }
+  ]
+}
