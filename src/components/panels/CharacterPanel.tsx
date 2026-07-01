@@ -13,6 +13,8 @@ import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
 import { useIsMobile } from '@/lib/useIsMobile';
+import type { CitySkyContext } from '@/components/galaxy/GalaxyView';
+import { CitySkyResidenceHints } from '@/components/city/CitySkyResidenceHints';
 
 /** How many bonds to show inline before the overflow opens the full list. */
 const INLINE_BONDS = 8;
@@ -25,10 +27,12 @@ export function CharacterPanel({
   characters,
   relations,
   sources,
+  cityContext,
 }: {
   characters: Character[];
   relations: Relation[];
   sources: Source[];
+  cityContext?: CitySkyContext;
 }) {
   const selectedId = useGalaxyStore((s) => s.selectedId);
   const select = useGalaxyStore((s) => s.select);
@@ -57,6 +61,10 @@ export function CharacterPanel({
   const sourceName = useMemo(
     () => new Map<SourceId, string>(sources.map((s) => [s.id, s.name])),
     [sources],
+  );
+  const citiesById = useMemo(
+    () => new Map(cityContext?.cities.map((city) => [city.id, city]) ?? []),
+    [cityContext?.cities],
   );
 
   const character = selectedId ? byId.get(selectedId) : undefined;
@@ -143,6 +151,14 @@ export function CharacterPanel({
                 scopeIds={scopeIds}
               />
             </p>
+          )}
+          {cityContext && (
+            <CitySkyResidenceHints
+              character={character}
+              currentCityId={cityContext.cityId}
+              citiesById={citiesById}
+              compact
+            />
           )}
           <button
             type="button"
@@ -280,6 +296,14 @@ export function CharacterPanel({
               )}
             </div>
           </div>
+        )}
+
+        {cityContext && (
+          <CitySkyResidenceHints
+            character={character}
+            currentCityId={cityContext.cityId}
+            citiesById={citiesById}
+          />
         )}
 
         <div className="mt-8 pb-4">

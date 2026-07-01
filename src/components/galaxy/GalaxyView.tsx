@@ -15,6 +15,12 @@ import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import { HoverCard } from '@/components/panels/HoverCard';
 import { CharacterPanel } from '@/components/panels/CharacterPanel';
 import type { MainTab } from '@/components/hud/MainNav';
+import type { GeoCity } from '@/types/geo';
+
+export type CitySkyContext = {
+  cityId: string;
+  cities: Pick<GeoCity, 'id' | 'name' | 'greekName'>[];
+};
 
 export function GalaxyView({
   characters,
@@ -24,6 +30,8 @@ export function GalaxyView({
   activeMainTab = 'galaxy',
   back,
   bakedLayout = null,
+  cityContext,
+  cameraIntro = false,
 }: {
   characters: Character[];
   relations: Relation[];
@@ -38,6 +46,10 @@ export function GalaxyView({
    *  the content signature matches. Only the full galaxy is baked — compact city
    *  skies are tiny, so they always solve at runtime. */
   bakedLayout?: BakedLayout | null;
+  /** When set, panels surface cross-residence links for other city skies. */
+  cityContext?: CitySkyContext;
+  /** Drift-in overview on mount — used for city skies. */
+  cameraIntro?: boolean;
 }) {
   const positions = useMemo(() => {
     if (
@@ -87,11 +99,21 @@ export function GalaxyView({
 
   return (
     <div className="fixed inset-0">
-      <GalaxyCanvas characters={characters} relations={relations} positions={scaledPositions} />
+      <GalaxyCanvas
+        characters={characters}
+        relations={relations}
+        positions={scaledPositions}
+        cameraIntro={cameraIntro}
+      />
       <TopBar active={activeMainTab} back={back} />
       <Legend />
-      <HoverCard characters={characters} relations={relations} />
-      <CharacterPanel characters={characters} relations={relations} sources={sources} />
+      <HoverCard characters={characters} relations={relations} cityContext={cityContext} />
+      <CharacterPanel
+        characters={characters}
+        relations={relations}
+        sources={sources}
+        cityContext={cityContext}
+      />
       <SettingsPanel sources={sources} starCount={characters.length} />
       <SearchOverlay characters={characters} />
     </div>

@@ -20,10 +20,12 @@ export function GalaxyCanvas({
   characters,
   relations,
   positions,
+  cameraIntro = false,
 }: {
   characters: Character[];
   relations: Relation[];
   positions: Map<string, Vec3>;
+  cameraIntro?: boolean;
 }) {
   const select = useGalaxyStore((s) => s.select);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
@@ -49,7 +51,7 @@ export function GalaxyCanvas({
       </group>
       <StarsDriver characters={characters} positions={positions} />
       <RelationLines relations={relations} positions={positions} />
-      <CameraRig positions={positions} />
+      <CameraRig positions={positions} intro={cameraIntro} />
       {/* Mobile: no MSAA, and skip the grain pass (one fewer fullscreen draw). */}
       {isMobile ? (
         <EffectComposer key="m" multisampling={0}>

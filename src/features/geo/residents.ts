@@ -18,3 +18,11 @@ export function filterInternalRelations(residents: Character[], relations: Relat
     (relation) => residentIds.has(relation.from) && residentIds.has(relation.to),
   );
 }
+
+/** Residences on polises other than the city sky currently open. */
+export function otherCityResidences(
+  character: Character,
+  currentCityId: string,
+): NonNullable<Character['residences']> {
+  return (character.residences ?? []).filter((residence) => residence.city !== currentCityId);
+}

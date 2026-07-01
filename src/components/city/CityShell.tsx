@@ -1,15 +1,11 @@
-import Link from 'next/link';
 import { MainNav } from '@/components/hud/MainNav';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { BackArrow } from '@/components/ui/BackArrow';
+import { CityTabNav } from '@/components/city/CityTabNav';
+import type { CityTab } from '@/components/city/city-tabs';
 import type { GeoCity, GeoRegion } from '@/types/geo';
 
-const TABS = [
-  { key: 'lineage', label: 'Lineage', path: '' },
-  { key: 'sky', label: 'City sky', path: '/sky' },
-] as const;
-
-export type CityTab = (typeof TABS)[number]['key'];
+export type { CityTab };
 
 /** Shared chrome of the city codex routes: top bar, hero identity, tab navigation. */
 export function CityShell({
@@ -73,28 +69,7 @@ export function CityShell({
           )}
         </header>
 
-        <nav className="mt-7 flex justify-center">
-          <div className="flex gap-1 rounded-full border border-glass-border bg-glass p-1 backdrop-blur-xl">
-            {TABS.map((tab) => (
-              <Link
-                key={tab.key}
-                href={`/city/${city.id}${tab.path}`}
-                className={`rounded-full px-5 py-2 font-display text-[12px] tracking-[0.1em] transition-colors ${
-                  active === tab.key
-                    ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
-                    : 'border border-transparent text-aether-muted hover:text-aether'
-                }`}
-              >
-                {tab.label.toUpperCase()}
-                {tab.key === 'sky' && residentCount != null && residentCount > 0 && (
-                  <span className="ml-1.5 font-body text-[10px] tabular-nums tracking-normal text-aether-faint">
-                    {residentCount}
-                  </span>
-                )}
-              </Link>
-            ))}
-          </div>
-        </nav>
+        <CityTabNav cityId={city.id} active={active} residentCount={residentCount} className="mt-7" />
 
         {residentCount != null && (
           <p className="mt-4 text-center font-body text-sm italic text-aether-muted">

@@ -11,14 +11,18 @@ import { getBakedLinkedProse, resolveCharacterProseSegments } from '@/features/l
 import { buildLinkingContext } from '@/features/linking/name-index';
 import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import type { CitySkyContext } from '@/components/galaxy/GalaxyView';
+import { CitySkyResidenceHints } from '@/components/city/CitySkyResidenceHints';
 
 /** Compact card shown while hovering a star. The full story lives in CharacterPanel. */
 export function HoverCard({
   characters,
   relations,
+  cityContext,
 }: {
   characters: Character[];
   relations: Relation[];
+  cityContext?: CitySkyContext;
 }) {
   const hoveredId = useGalaxyStore((s) => s.hoveredId);
   const selectedId = useGalaxyStore((s) => s.selectedId);
@@ -31,6 +35,10 @@ export function HoverCard({
     [characters, bakedProse],
   );
   const character = hoveredId && hoveredId !== selectedId ? byId.get(hoveredId) : undefined;
+  const citiesById = useMemo(
+    () => new Map(cityContext?.cities.map((city) => [city.id, city]) ?? []),
+    [cityContext?.cities],
+  );
   const visibleRelations = filterRelations(relations, lens);
   const scopeIds = useMemo(() => {
     if (!character) return [];
@@ -97,6 +105,14 @@ export function HoverCard({
             ))}
           </div>
         </div>
+      )}
+      {cityContext && character && (
+        <CitySkyResidenceHints
+          character={character}
+          currentCityId={cityContext.cityId}
+          citiesById={citiesById}
+          compact
+        />
       )}
       <div className="mt-3 border-t border-glass-border pt-2 font-display text-[10px] uppercase tracking-[0.2em] text-nebula-soft">
         Click to travel
