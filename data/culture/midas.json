@@ -1,6 +1,42 @@
 {
   "id": "midas",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Midas Washing at the Source of the Pactolus",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1627",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Midas_Washing_at_the_Source_of_the_Pactolus_MET_DP123854.jpg/960px-Midas_Washing_at_the_Source_of_the_Pactolus_MET_DP123854.jpg",
+      "description": "Poussin's Metropolitan canvas shows the Phrygian king scrubbing the golden curse from his hands in the Pactolus. Ovid's remedy made landscape: desire rinsed into a river that will run with gold dust."
+    },
+    {
+      "title": "Midas and Bacchus",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1624",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Midas_und_Bacchus%2C_um_1624.jpg/960px-Midas_und_Bacchus%2C_um_1624.jpg",
+      "description": "In the Bavarian State collections, Poussin stages Midas before Bacchus — the mortal king begging release from the gift that starves him. The golden touch as a theological bargain, not a fairy-tale joke."
+    },
+    {
+      "title": "Apollo as Victor over Pan",
+      "artist": "Jacob Jordaens",
+      "year": "1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Jacob_Jordaens_-_Apollo_as_Victor_over_Pan%2C_1637.jpg/960px-Jacob_Jordaens_-_Apollo_as_Victor_over_Pan%2C_1637.jpg",
+      "description": "Jordaens' Prado contest paints Midas among the judges who prefer Pan's pipes to Apollo's lyre — and earn the donkey ears. The Phrygian king as bad critic: taste punished in fur and long ears."
+    },
+    {
+      "title": "King Midas",
+      "artist": "Nicolas Tournier",
+      "year": "c. 1620",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Le_Roi_Midas%2C_par_Nicolas_Tournier.jpg/960px-Le_Roi_Midas%2C_par_Nicolas_Tournier.jpg",
+      "description": "Tournier's half-length Midas wears the ass's ears as royal attribute — the king who judged the music contest wrong, fixed in Caravaggesque light. Punishment become portrait."
+    },
+    {
+      "title": "The Punishment of Midas",
+      "artist": "Nicolas Régnier",
+      "year": "c. 1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Nicolas_R%C3%A9gnier_-_The_punishment_of_Midas.jpg/960px-Nicolas_R%C3%A9gnier_-_The_punishment_of_Midas.jpg",
+      "description": "Régnier shows Apollo fastening the donkey ears on Midas after the verdict for Pan. The golden-touch king here is pure hubris of judgment — ears as the visible price of preferring the wrong music."
+    }
+  ],
   "films": [
     {
       "title": "The Golden Touch",

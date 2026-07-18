@@ -1,6 +1,42 @@
 {
   "id": "jocasta",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Oedipus Separating from Jocasta",
+      "artist": "Alexandre Cabanel",
+      "year": "1843",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Cabanel_Oedipus_Separating_from_Jocasta.jpg/960px-Cabanel_Oedipus_Separating_from_Jocasta.jpg",
+      "description": "Cabanel's early academic canvas freezes the palace catastrophe: Oedipus turns from Jocasta as recognition unmakes their marriage. The queen who was mother and wife stands at the hinge of Sophocles' plot — the moment before the noose."
+    },
+    {
+      "title": "Farewell of Oedipus to the Corpses of His Wife and Sons",
+      "artist": "Édouard Toudouze",
+      "year": "1871",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Toudouze_-_Les_adieux_d%27%C5%92dipe_aux_cadavres_de_sa_femme_et_de_ses_fils.jpg/960px-Toudouze_-_Les_adieux_d%27%C5%92dipe_aux_cadavres_de_sa_femme_et_de_ses_fils.jpg",
+      "description": "Toudouze's Prix de Rome painting (École des Beaux-Arts, Paris) lays Jocasta among the dead of the house of Cadmus. Blind Oedipus takes leave of the queen who hanged herself when the bed's riddle was spoken — Theban ruin staged as a funeral farewell."
+    },
+    {
+      "title": "Oedipus and Jocasta",
+      "artist": "Émile Bernard",
+      "year": "1930",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Emile_Bernard_Oedipe_et_Jocaste.jpg",
+      "description": "Bernard's late modernist pair keeps mother and son in the same charged space — Jocasta as consort before the recognition, the double bond made visible without the Sphinx or the noose. A twentieth-century return to the Theban queen at the heart of the tragedy."
+    },
+    {
+      "title": "Eteocles and Polynices Admonished to Peace by Their Mother Jocasta",
+      "artist": "After Gerard de Lairesse",
+      "year": "c. 1670–1729",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Eteocles_en_Polynices%2C_door_hun_moeder_Jocaste_tot_vrede_vermaand.%2C_RP-P-1888-A-12884.jpg/960px-Eteocles_en_Polynices%2C_door_hun_moeder_Jocaste_tot_vrede_vermaand.%2C_RP-P-1888-A-12884.jpg",
+      "description": "Rijksmuseum print (CC0): Jocasta stands between her warring sons, pleading for peace before the Seven march on Thebes. The queen as mediator — the mother who cannot stop the brothers' mutual slaughter that will leave Creon the throne."
+    },
+    {
+      "title": "Jocasta and Oedipus",
+      "artist": "Anonymous (after Boccaccio, De mulieribus claris)",
+      "year": "c. 1474",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Woodcut_illustration_of_Jocasta_and_her_son_Oedipus_-_Penn_Provenance_Project.jpg/960px-Woodcut_illustration_of_Jocasta_and_her_son_Oedipus_-_Penn_Provenance_Project.jpg",
+      "description": "Hand-colored German woodcut from Steinhöwel's Boccaccio: Jocasta and her son Oedipus as a famous woman of antiquity. Early print culture already fixed the Theban queen beside the son who was also her husband."
+    }
+  ],
   "films": [
     {
       "title": "Edipo re",

@@ -1,6 +1,42 @@
 {
   "id": "laius",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Murder of Laius by Oedipus",
+      "artist": "Joseph Blanc",
+      "year": "1867",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Joseph_Blanc_Le_meurtre_de_La%C3%AFus.JPG",
+      "description": "Blanc's Prix de Rome canvas freezes the fork in the road: Oedipus strikes down the older king in the chariot while attendants fall back — the patricide Sophocles' recognition will later uncover. Painted for the École des Beaux-Arts, Paris, it made Laius the corpse at the centre of the Theban tragedy, not a name in a genealogy."
+    },
+    {
+      "title": "The Murder of Laius by Oedipus",
+      "artist": "Édouard-Théophile Blanchard",
+      "year": "1867",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Blanchard_1867_Cluny.jpg",
+      "description": "Blanchard's rival Prix de Rome entry stages the same roadside killing: Laius toppled from the chariot as the unrecognized son strikes. Now in the Musée d'art et d'archéologie, Cluny, the canvas shows how the Academy treated Laius' death as a history-painting test — the king whose oracle and exposure set the recognition in motion."
+    },
+    {
+      "title": "The Death of King Laius",
+      "artist": "Unknown",
+      "year": "17th–18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Unknown_artist_-_The_Death_of_King_Laius_-_NG_1829_-_National_Galleries_of_Scotland.jpg",
+      "description": "This anonymous oil in the National Galleries of Scotland (NG 1829) returns to the crossroads murder: the Theban king cut down on the road from Corinth. Without a named painter, the canvas still carries Laius as the first casualty of the Labdacid curse — the father Oedipus must discover he has already killed."
+    },
+    {
+      "title": "The Childhood of Oedipus (Laius and Jocasta)",
+      "artist": "Unknown (French illuminator)",
+      "year": "c. 1260–1270",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Miniature_de_l%27enfance_d%27%C5%92dipe_%28f._65v%29%2C_manuscrit_de_%22L%27Histoire_ancienne_jusqu%27%C3%A0_C%C3%A9sar%22_%28Ms_562%29%2C_conserv%C3%A9_%C3%A0_la_Biblioth%C3%A8que_municipale_de_Dijon.jpg",
+      "description": "In Dijon Ms 562 (L'Histoire ancienne jusqu'à César), the upper register shows Laius and Jocasta with the infant who will destroy them — the exposure that tries to outrun Delphi. The medieval miniature keeps Laius present as the father who orders the child cast out, the first link in the recognition Sophocles later stages."
+    },
+    {
+      "title": "Abduction of Chrysippus",
+      "artist": "Darius Painter",
+      "year": "c. 340–320 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Darius_Painter_-_RVAp_18-66_-_abduction_of_Chrysippos_-_Dionysos_and_Eros_with_maenads_and_youth_and_satyr_-_Berlin_AS_1968-12-_01.jpg/960px-Darius_Painter_-_RVAp_18-66_-_abduction_of_Chrysippos_-_Dionysos_and_Eros_with_maenads_and_youth_and_satyr_-_Berlin_AS_1968-12-_01.jpg",
+      "description": "On this Apulian red-figure bell-krater (Berlin AS 1968.12), Laius seizes Pelops' son Chrysippus in a quadriga — the guest-crime that, in later tradition, draws Pelops' curse on the Theban house. The Darius Painter's workshop stages Laius not only as Oedipus' victim but as the king whose earlier violence seeds the Labdacid doom."
+    }
+  ],
   "films": [
     {
       "title": "Edipo re",

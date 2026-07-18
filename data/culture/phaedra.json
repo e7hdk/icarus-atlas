@@ -1,6 +1,42 @@
 {
   "id": "phaedra",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Phèdre (Phaedra)",
+      "artist": "Alexandre Cabanel",
+      "year": "1880",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Alexandre_Cabanel_Ph%C3%A8dre.jpg/960px-Alexandre_Cabanel_Ph%C3%A8dre.jpg",
+      "description": "Shown at the Paris Salon of 1880 and given by the artist to his native Montpellier, this large oil on canvas (194 × 286 cm) is the defining modern image of Phaedra: the Cretan queen, daughter of Minos and wife of Theseus, lies wasted on her bed while two attendants watch her silent agony. Cabanel's academic, faintly Orientalist staging follows Euripides and Racine — the stepmother consumed by forbidden love for Hippolytus — and remains the centrepiece of the Musée Fabre."
+    },
+    {
+      "title": "Phèdre et Hippolyte (Phaedra and Hippolytus)",
+      "artist": "Pierre-Narcisse Guérin",
+      "year": "1802",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ph%C3%A8dre_et_Hippolyte_par_Pierre-Narcisse_Gu%C3%A9rin%2C_1802_-_Mus%C3%A9e_du_Louvre.jpg/960px-Ph%C3%A8dre_et_Hippolyte_par_Pierre-Narcisse_Gu%C3%A9rin%2C_1802_-_Mus%C3%A9e_du_Louvre.jpg",
+      "description": "Bought by the French state at the Salon of 1802 and now in the Louvre (INV 5182), Guérin's Neoclassical canvas stages Racine's Act IV: Hippolytus denies before Theseus the charge that Phaedra, counselled by Oenone, has laid against him. Marble architecture and hunting dogs frame a palace confrontation in which the stepmother's false accusation seals the curse that will destroy her stepson — a cold, calculated drama that made Guérin's reputation."
+    },
+    {
+      "title": "Phaedra with an Attendant (Pompeii fresco)",
+      "artist": "Unknown (Roman wall painter)",
+      "year": "c. 60–20 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Phaedra_BM.jpg/960px-Phaedra_BM.jpg",
+      "description": "This small Pompeian fresco (21.5 × 28.5 cm) in the British Museum (1856,0625.5) shows Phaedra seated in distress beside a standing attendant, almost certainly her nurse — the go-between of Euripides' tragedy. Recovered from Pompeii and later in the Fejérváry and Bööcke collections, the panel proves how early Roman domestic art already treated the lovesick queen as a recognizable mythic type."
+    },
+    {
+      "title": "Sarcophagus of Phaedra and Hippolytus",
+      "artist": "Unknown (Roman sculptor)",
+      "year": "c. 290 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Hippolytus_Phaedra_Louvre_Ma_2294.jpg/960px-Hippolytus_Phaedra_Louvre_Ma_2294.jpg",
+      "description": "The front of this marble sarcophagus in the Louvre (Ma 2294), found in 1853 on the Chiarone in Tuscany and once in the Campana Collection, narrates the Phaedra cycle in high relief: the queen's passion, the huntress-youth Hippolytus, and the disaster that follows Theseus' curse. Carved about AD 290 at roughly 1.1 × 2.2 m, it shows how late Roman funerary art kept the Euripidean story as a moral and mythic frieze."
+    },
+    {
+      "title": "Hippolytus, Phaedra and the Nurse",
+      "artist": "Unknown (Roman wall painter)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hippolytus%2C_Phaedra_and_nurse_-_wall_painting_%281st_century_AD%29_from_Herculaneum.jpg/960px-Hippolytus%2C_Phaedra_and_nurse_-_wall_painting_%281st_century_AD%29_from_Herculaneum.jpg",
+      "description": "From Herculaneum and now in the National Archaeological Museum of Naples, this First Style–tradition fresco centres the seated, lovesick Phaedra with her aged nurse as go-between, while the chaste Hippolytus stands apart. Buried by Vesuvius in AD 79, the composition preserves a Greek pictorial type that made Phaedra's forbidden passion a favourite subject of Campanian wall decoration."
+    }
+  ],
   "films": [
     {
       "title": "Phaedra",

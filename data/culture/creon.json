@@ -1,6 +1,35 @@
 {
   "id": "creon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Antigone Condemned to Death by Creon",
+      "artist": "Giuseppe Diotti",
+      "year": "1845",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Giuseppe_Diotti_-_Antigone_condannata_a_morte_da_Creonte_%28prima_del_restauro%29.jpg/960px-Giuseppe_Diotti_-_Antigone_condannata_a_morte_da_Creonte_%28prima_del_restauro%29.jpg",
+      "description": "Diotti's vast Accademia Carrara canvas stages the uncle-king at full authority: Creon sentences Antigone (and Ismene) while the court looks on. Thebes' rigid law made flesh — the decree that will wall the sister alive and ruin his own house."
+    },
+    {
+      "title": "Antigone Forced from Her Father",
+      "artist": "After John Flaxman",
+      "year": "1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Antigone_Forced_from_her_Father_%28BM_1878%2C1012.477%29.jpg/960px-Antigone_Forced_from_her_Father_%28BM_1878%2C1012.477%29.jpg",
+      "description": "British Museum lithograph after Flaxman for Sophocles' Oedipus at Colonus: Creon seizes Antigone from the blind exile who clings to her. The Theban king as political force — reclaiming the daughters for Thebes against Athens' sanctuary."
+    },
+    {
+      "title": "Creon, King of Thebes (Costume Design)",
+      "artist": "Anonymous (French theatre maquette)",
+      "year": "1790",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Creon_roi_de_thebes_-_1790_-_maquette_de_costume_-_btv1b8455025t.jpg/960px-Creon_roi_de_thebes_-_1790_-_maquette_de_costume_-_btv1b8455025t.jpg",
+      "description": "BnF costume maquette labelled Creon roi de Thebes: the Theban king as a late-Ancien Régime stage figure in cloak and crown. Theatre's stock image of the uncle who holds the city after Oedipus falls."
+    },
+    {
+      "title": "Final Scene of Antigone: Creon Mourning Haemon",
+      "artist": "Anonymous (French theatre press image)",
+      "year": "c. 1844",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Derni%C3%A8re_sc%C3%A8ne_d%27Antigone-_Cr%C3%A9on_pleurant_sur_le_corps_de_H%C3%A9mon%2C_son_fils._Costumes-_Ism%C3%A8ne%2C_Mlle_Vollet._Tir%C3%A9sias%2C_M._Rouvi%C3%A8re._Eurydice%2C_Mlle_Dupont._Cr%C3%A9on%2C_M._Bocage._Antigone%2C_Mlle_Bourbier._H%C3%A9mon%2C_M...._-_btv1b84365897.jpg/960px-thumbnail.jpg",
+      "description": "Nineteenth-century stage print of Sophocles' catastrophe: Creon (Bocage) weeps over Haemon's body while the Theban court gathers. The king who forbade burial learns too late what his decree cost — son, bride, and queen."
+    }
+  ],
   "films": [
     {
       "title": "Antigone",

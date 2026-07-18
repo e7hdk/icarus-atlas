@@ -1,6 +1,42 @@
 {
   "id": "selene",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Selene and Endymion",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1630",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nicolas_Poussin_-_Selene_and_Endymion_-_36.11_-_Detroit_Institute_of_Arts.jpg/960px-Nicolas_Poussin_-_Selene_and_Endymion_-_36.11_-_Detroit_Institute_of_Arts.jpg",
+      "description": "Poussin's Detroit canvas: the moon goddess descends in her chariot toward the sleeping shepherd — Selene's nightly love staged as cool classical theatre."
+    },
+    {
+      "title": "Selene and Endymion",
+      "artist": "Gerard de Lairesse",
+      "year": "c. 1680",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Selene_en_Endymion_Rijksmuseum_SK-A-4210.jpeg/960px-Selene_en_Endymion_Rijksmuseum_SK-A-4210.jpeg",
+      "description": "Lairesse's Rijksmuseum overmantel: Cupid's torch leads Selene to Endymion while the moon breaks through cloud — lunar desire painted for a royal bedchamber."
+    },
+    {
+      "title": "Selene and Endymion",
+      "artist": "Ubaldo Gandolfi",
+      "year": "c. 1770",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Selene_and_Endymion_by_Ubaldo_Gandolfi.jpg/960px-Selene_and_Endymion_by_Ubaldo_Gandolfi.jpg",
+      "description": "Bolognese Rococo: Selene leans from the night sky over the eternally sleeping youth — the moon's visit rendered as soft flesh and silver light."
+    },
+    {
+      "title": "Selene",
+      "artist": "Albert Aublet",
+      "year": "1880",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Albert_Aublet_-_Selene.jpg/960px-Albert_Aublet_-_Selene.jpg",
+      "description": "Aublet's fin-de-siècle moon goddess — Selene alone as luminous nude against the dark, crescent and night condensed into one figure."
+    },
+    {
+      "title": "Endymion and Selene",
+      "artist": "Victor Florence Pollet",
+      "year": "1854",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Endymion_and_Selene_by_Victor_Florence_Pollet_1854.jpg/960px-Endymion_and_Selene_by_Victor_Florence_Pollet_1854.jpg",
+      "description": "Pollet's academic nocturne: Selene arrives at the sleeping shepherd — nineteenth-century polish on the oldest lunar love story."
+    }
+  ],
   "popCulture": [
     {
       "title": "Hades II",

@@ -1,6 +1,42 @@
 {
   "id": "pandora",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Pandora",
+      "artist": "John William Waterhouse",
+      "year": "1896",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Pandora_-_John_William_Waterhouse.jpg",
+      "description": "Waterhouse's Pre-Raphaelite Pandora kneels over the fatal casket in a wooded hollow — Hesiod's first woman as curious opener, the jar restyled as a Victorian box. The moment before the world's troubles spill."
+    },
+    {
+      "title": "Pandora",
+      "artist": "Dante Gabriel Rossetti",
+      "year": "1871",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Dante_Gabriel_Rossetti_-_Pandora.jpg",
+      "description": "Rossetti's half-length Pandora holds the sealed box against a sulphurous glow — Jane Morris as the gift the gods sent to punish mankind. The Pre-Raphaelite jar made into a jewel of dread."
+    },
+    {
+      "title": "Eva Prima Pandora",
+      "artist": "Jean Cousin the Elder",
+      "year": "c. 1550",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Eva_Prima_Pandora_-_Jean_Cousin_l%27Ancien_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2373.jpg/960px-Eva_Prima_Pandora_-_Jean_Cousin_l%27Ancien_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2373.jpg",
+      "description": "Cousin's Louvre masterpiece fuses Eve and Pandora on one reclining nude — the first woman as both biblical fall and Hesiodic jar. Renaissance France's great allegory of curiosity and ruin."
+    },
+    {
+      "title": "Pandora",
+      "artist": "Jules Lefebvre",
+      "year": "1872",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Jules_Joseph_Lefebvre_-_Pandora.jpg/960px-Jules_Joseph_Lefebvre_-_Pandora.jpg",
+      "description": "Lefebvre's academic Pandora stands with the box still closed — beauty as bait, the gift Zeus sent through Epimetheus. Salon mythology at full polish: the woman who has not yet opened the world."
+    },
+    {
+      "title": "Pandora",
+      "artist": "Alexandre Cabanel",
+      "year": "1873",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Alexandre_Cabanel_-_Pandora_-_Walters_3799.jpg/960px-Alexandre_Cabanel_-_Pandora_-_Walters_3799.jpg",
+      "description": "Cabanel's Walters portrait casts soprano Christine Nilsson as Pandora with the casket — high-society myth, the opener as celebrity. The jar becomes an opera singer's prop in Second Empire silk."
+    }
+  ],
   "popCulture": [
     {
       "title": "Pandora's box",

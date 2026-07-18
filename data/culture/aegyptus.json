@@ -1,6 +1,28 @@
 {
   "id": "aegyptus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Danaides Killing Their Husbands",
+      "artist": "Unknown (French illuminator)",
+      "year": "15th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg/960px-Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg",
+      "description": "BnF Français 874 (fol. 170v) stages the wedding-night massacre of Aegyptus' fifty sons — the bridegrooms cut down in their beds by Danaus' daughters. The miniature is the visual afterlife of Aegyptus' claim: his line dies in Argos so that Danaus' may rule."
+    },
+    {
+      "title": "Plate with Hypermnestra Watching Lynceus Take Her Father's Crown",
+      "artist": "Francesco Xanto Avelli",
+      "year": "1537",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Francesco_Xanto_Avelli_-_Plate_with_Hypermnestra_Watching_Lynceus_Take_Her_Father%27s_Crown_-_Walters_481324.jpg/960px-Francesco_Xanto_Avelli_-_Plate_with_Hypermnestra_Watching_Lynceus_Take_Her_Father%27s_Crown_-_Walters_481324.jpg",
+      "description": "Xanto's maiolica plate (Walters Art Museum 48.1324) shows Lynceus — Aegyptus' sole surviving son — seizing Danaus' crown while Hypermnestra looks on. The Urbino workshop turns the myth's aftermath into tableware: the one son who escaped the knives and avenged his brothers."
+    },
+    {
+      "title": "The Danaides in Hell",
+      "artist": "Nicolas Bertin",
+      "year": "c. 1700–1715",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Nicolas_Bertin_-_The_Danaides_in_Hell.jpg/960px-Nicolas_Bertin_-_The_Danaides_in_Hell.jpg",
+      "description": "Bertin's underworld canvas shows the Danaids at their leaking vessels — eternal labour for murdering Aegyptus' sons on their wedding night. The French baroque scene keeps Aegyptus present as the bereaved twin: his fifty heirs become the crime that fills Tartarus with water that never stays."
+    }
+  ],
   "music": [
     {
       "title": "Les Danaïdes",

@@ -1,6 +1,42 @@
 {
   "id": "danae",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Danaë",
+      "artist": "Rembrandt",
+      "year": "1636",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Rembrandt_Harmensz._van_Rijn_026.jpg",
+      "description": "Rembrandt's Hermitage Danaë waits in a shadowed bed as Zeus' golden light pours toward her — the Argive princess as intimate Baroque drama of desire and captivity. Oil on canvas, State Hermitage Museum, Saint Petersburg."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Gustav Klimt",
+      "year": "1907",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Gustav_Klimt_010.jpg",
+      "description": "Klimt curls Danaë into a gold-patterned coil as Zeus arrives as a shower of coin-like rain — the bronze tower myth restaged as Symbolist erotic ornament. Oil on canvas, Leopold Museum, Vienna."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Artemisia Gentileschi",
+      "year": "c. 1612",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg",
+      "description": "Artemisia paints Danaë and a servant receiving the golden rain — Zeus' visit as a charged exchange of light, flesh, and watchfulness. Oil on canvas, Saint Louis Art Museum."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Antonio da Correggio",
+      "year": "c. 1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Correggio_008.jpg",
+      "description": "Correggio's Borghese Danaë reclines as Eros and putti manage the golden shower — soft High Renaissance flesh for the impregnation that will father Perseus. Oil on canvas, Galleria Borghese, Rome."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Titian",
+      "year": "c. 1560",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Tizian_-_Danae_receiving_the_Golden_Rain_-_Prado.jpg",
+      "description": "Titian's Prado Danaë receives Zeus as a rain of gold while a maid gathers coins — the Argive confinement turned into Venetian sensual theatre. Oil on canvas, Museo del Prado, Madrid."
+    }
+  ],
   "music": [
     {
       "title": "Die Liebe der Danae",

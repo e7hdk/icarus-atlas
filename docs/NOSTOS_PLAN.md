@@ -1,6 +1,6 @@
 # Nostos — the Odyssey Experience (M13 Plan)
 
-> **Status:** APPROVED 2026-07-17 — M13.1 + M13.2 in progress. Milestone **M13** (PLAN.md §2 decision row + §8 entry added).
+> **Status:** SHIPPED — M13.1–M13.5 landed 2026-07-17/18 (see the milestone notes below); production `pnpm build` green 2026-07-18 (`/odyssey` + its opengraph-image statically generated). Still open: Lighthouse + full manual UX review, the finale's galaxy cast-highlight, and one pre-M13 deploy chore — hosting the gitignored geo archives (now env-switchable via `GEO_ASSETS_BASE`, scripts/build-map-style.ts). Milestone **M13** (PLAN.md §2 decision row + §8 entry).
 > **Codename:** *Nostos* (νόστος — the homecoming). Public route: **`/odyssey`**.
 > **Scope:** a flagship, cinematic, scroll-driven retelling of Homer's Odyssey — art, sound, bilingual fragments — built as a **presentation layer over data that already exists**.
 > **Occasion:** Nolan's *The Odyssey* premieres 2026-07-17. The film is the door; the atlas is the house. Every screen of this experience must offer a way deeper into the atlas.

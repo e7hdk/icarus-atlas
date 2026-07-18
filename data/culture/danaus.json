@@ -1,6 +1,42 @@
 {
   "id": "danaus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Danaus Showing the Argives Painted Figurines of Egyptian Gods",
+      "artist": "Johann Georg Hiltensperger",
+      "year": "19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/History_of_Ancient_painting_in_Hermitage_-_I_%281%29.jpg",
+      "description": "Hiltensperger's ceiling panel for the Hermitage's Gallery of the History of Ancient Painting shows Danaus presenting painted Egyptian god-figurines to the Argives — the refugee king as culture-bearer from Egypt to Argos. The scene answers Pausanias' notice that Danaus dedicated the first wooden images at Apollo Lykeios; here the father of the Danaids appears in his own right, not only through his daughters' crime."
+    },
+    {
+      "title": "Amymone with Her Father (Danaus) and One of Her Sisters",
+      "artist": "Providence Painter",
+      "year": "c. 470–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Providence_Painter_-_ARV_636_16_-_Amymone_with_her_father_and_one_of_her_sisters_-_Paris_BnF_CabMed_359_-_01.jpg/960px-Providence_Painter_-_ARV_636_16_-_Amymone_with_her_father_and_one_of_her_sisters_-_Paris_BnF_CabMed_359_-_01.jpg",
+      "description": "On this Attic red-figure neck amphora (BnF Cabinet des Médailles, De Ridder 359), a hydria-bearing woman runs toward a bearded man with a staff — conventionally read as Amymone (or a sister) approaching Danaus. The Providence Painter gives the Argive father a rare vase presence beside the Danaid he will later arm for the wedding night."
+    },
+    {
+      "title": "The Daughters of Danaus",
+      "artist": "Fernand Sabatté",
+      "year": "c. 1900",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fernand_Sabatt%C3%A9_-_The_daughters_of_Danaus_%28c.1900%29.jpg/960px-Fernand_Sabatt%C3%A9_-_The_daughters_of_Danaus_%28c.1900%29.jpg",
+      "description": "Sabatté's wide frieze names Danaus in the title while staging the fifty daughters at their endless labour — the leaking vessel that punishes the crime he commanded. Fin-de-siècle academic painting carries his reception through the Danaids: the father's order made visible as their eternal task."
+    },
+    {
+      "title": "The Danaides",
+      "artist": "John William Waterhouse",
+      "year": "1903",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Danaides_by_John_William_Waterhouse%2C_1903.jpg/960px-Danaides_by_John_William_Waterhouse%2C_1903.jpg",
+      "description": "Waterhouse's Pre-Raphaelite canvas gathers Danaus' daughters around a great vessel, pouring water that will never fill — the underworld sentence for the wedding-night murders he ordered. Private collection; the image became the modern West's default picture of the Danaid myth and, through them, of Danaus' deadly command."
+    },
+    {
+      "title": "The Danaides Killing Their Husbands",
+      "artist": "Unknown (French illuminator)",
+      "year": "15th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg/960px-Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg",
+      "description": "In BnF Français 874 (fol. 170v), the Danaids strike down the sleeping sons of Aegyptus — the massacre Danaus planned after feigning consent to the marriages. The medieval miniature keeps the father's strategy on the page: fifty knives, one wedding night, and the Argive throne secured in blood."
+    }
+  ],
   "music": [
     {
       "title": "Les Danaïdes",

@@ -107,6 +107,14 @@ const DEM_PMTILES_PATH = join('public', 'geo', 'dem.pmtiles');
 const TERRAIN_DEM_PMTILES_PATH = join('public', 'geo', 'dem-terrain.pmtiles');
 const AWS_DEM_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
 
+/** Hosted-geo base for deploys (e.g. a Cloudflare R2 bucket): the pmtiles
+ *  archives and baked relief tiles are gitignored (~2.2 GB, reproducible), so
+ *  CI never has them on disk. Set GEO_ASSETS_BASE=https://tiles.example.com
+ *  at build time and the style points every heavy source there instead —
+ *  PMTiles range-reads need an object store, not the app CDN. Unset (local
+ *  dev), everything serves from public/geo exactly as before. */
+const ASSET_BASE = (process.env.GEO_ASSETS_BASE ?? '').replace(/\/+$/, '');
+
 /** Baked relief raster (tint + hillshade pre-shaded offline by
  *  scripts/bake-relief.ts). When present, ONE cheap raster layer replaces the
  *  two runtime DEM layers — under 3D terrain those were re-rasterized per
@@ -125,13 +133,14 @@ interface DemSourceSpec {
 
 /** raster-dem source spec for whichever elevation tier is available. */
 function demSource(): DemSourceSpec {
-  if (existsSync(TERRAIN_DEM_PMTILES_PATH)) {
+  if (ASSET_BASE || existsSync(TERRAIN_DEM_PMTILES_PATH)) {
     return {
       type: 'raster-dem',
       // The 512px source tiles are split losslessly into 256px z+1 children by
       // `pnpm dem:terrain`. Ground resolution stays identical while MapLibre's
-      // terrain RTT edge drops from 2048px to 1024px.
-      url: 'pmtiles:///geo/dem-terrain.pmtiles',
+      // terrain RTT edge drops from 2048px to 1024px. With GEO_ASSETS_BASE set
+      // the archive is trusted to exist at the hosted base (CI has no copy).
+      url: `pmtiles://${ASSET_BASE}/geo/dem-terrain.pmtiles`,
       encoding: 'terrarium',
       tileSize: 256,
       attribution: '© Mapterhorn',
@@ -387,7 +396,7 @@ function buildStyle(
     };
     sources.relief = {
       type: 'raster',
-      tiles: ['/geo/relief/{z}/{x}/{y}.webp'],
+      tiles: [`${ASSET_BASE}/geo/relief/{z}/{x}/{y}.webp`],
       tileSize: reliefManifest.tileSize,
       minzoom: reliefManifest.minzoom,
       maxzoom: reliefManifest.maxzoom,

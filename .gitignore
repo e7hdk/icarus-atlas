@@ -58,5 +58,8 @@ data/geo/raw/
 /public/geo/dem-terrain.pmtiles
 /public/geo/dem-terrain.tmp.mbtiles
 
-# baked relief raster tiles (reproducible via `pnpm relief:bake`)
-/public/geo/relief/
+# baked relief raster tiles (reproducible via `pnpm relief:bake`) — the tiny
+# manifest stays tracked so CI can build the relief source spec while the
+# tiles themselves serve from the hosted geo base (GEO_ASSETS_BASE).
+/public/geo/relief/*
+!/public/geo/relief/manifest.json

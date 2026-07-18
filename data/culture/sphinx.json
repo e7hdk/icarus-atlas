@@ -1,6 +1,42 @@
 {
   "id": "sphinx",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "year": "1808–1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/%C5%92dipe_explique_l%27%C3%A9nigme_du_sphinx_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_218.jpg",
+      "description": "Ingres' Louvre canvas fixes the Theban confrontation: Oedipus answers while the winged woman-lion waits on the rock — bones of failed travellers at their feet. Oil on canvas, Musée du Louvre, Paris."
+    },
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Gustave Moreau",
+      "year": "1864",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Oedipus_and_the_Sphinx_MET_DP-14201-023.jpg",
+      "description": "Moreau's Salon triumph sets the Sphinx clawing at Oedipus' chest — the riddle as Symbolist duel, victory not yet assured. Oil on canvas, Metropolitan Museum of Art, New York."
+    },
+    {
+      "title": "The Kiss of the Sphinx",
+      "artist": "Franz von Stuck",
+      "year": "1895",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Franz_von_Stuck_-_The_Kiss_of_the_Sphinx_-_Google_Art_Project.jpg",
+      "description": "Stuck's Symbolist Sphinx pins a mortal in a lethal embrace — the Theban monster remade as femme fatale, kiss and kill in one gesture. Oil on canvas, Hungarian National Gallery, Budapest."
+    },
+    {
+      "title": "Oedipus and the Sphinx of Thebes (Attic kylix)",
+      "artist": "Oedipus Painter",
+      "year": "c. 470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Oedipus_and_the_Sphinx_of_Thebes%2C_Red_Figure_Kylix%2C_c._470_BC%2C_from_Vulci%2C_attributed_to_the_Oedipus_Painter%2C_Vatican_Museums_%289665213064%29.jpg",
+      "description": "On this Attic red-figure kylix tondo, travelling Oedipus listens as the crowned Sphinx poses her riddle — the Theban monster in its earliest Greek vase form. Ceramic, Vatican Museums (Gregorian Etruscan Museum)."
+    },
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Unknown (Attic)",
+      "year": "c. 470–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Oedipus_sphinx_Louvre_G417.jpg",
+      "description": "An Attic red-figure amphora shows Oedipus before the Theban Sphinx — the same riddle scene that later painters would enlarge into Romantic and Symbolist drama. Ceramic, Musée du Louvre, Paris."
+    }
+  ],
   "popCulture": [
     {
       "title": "Riddle of the Sphinx",

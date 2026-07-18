@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "source": "Mapterhorn DEM extract (public/geo/dem.pmtiles)",
+  "bbox": [
+    -6,
+    22,
+    44,
+    47
+  ],
+  "minzoom": 4,
+  "maxzoom": 9,
+  "tileSize": 512,
+  "exaggeration": 0.5,
+  "tiles": 4222
+}
