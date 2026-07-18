@@ -8,5 +8,25 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg/960px-Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg",
       "description": "Van Dyck shows the father fastening wax and feathers — the warning spoken before the boy climbed too close to the sun."
     }
+  ],
+  "music": [
+    {
+      "title": "Flight of Icarus",
+      "year": "1983",
+      "kind": "song",
+      "composer": "Iron Maiden",
+      "description": "Maiden's single from Piece of Mind, cut while the wax myth was pure heavy-metal material: the boy's climb becomes a son's defiance of a betraying father, and the fall a blaze of glory rather than a warning heeded.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Flight_of_Icarus"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Musée des Beaux Arts",
+      "year": "1938",
+      "kind": "other",
+      "creator": "W. H. Auden",
+      "description": "Auden's poem, written after standing before Bruegel's Fall of Icarus in Brussels, reads the unnoticed splash as the shape of all suffering — the ploughman keeps his furrow, the ship sails calmly on, and disaster happens off to the side.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux_Arts_(poem)"
+    }
   ]
 }

@@ -22,5 +22,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Langlois_Priam_aux_pieds_d%27Achille.JPG/960px-Langlois_Priam_aux_pieds_d%27Achille.JPG",
       "description": "The painting with which Jérôme-Martin Langlois, a pupil of David, won the Prix de Rome in 1809; it is kept at the École nationale supérieure des Beaux-Arts in Paris. In the torch-lit tent, Priam in his heavy red mantle kneels at the couch of the young Achilles and presses the hero's hand to his face, while attendants look on in silence."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Peter O'Toole's Priam walks into Achilles' tent to beg for Hector's body — the Iliad's last mercy, played as the film's quietest and hardest scene.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's epic keeps Priam on the walls as Troy's last king — the father who watches sons fall and still opens the gate for Helen.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle gives Priam the long siege: a king holding a doomed city while his house tears itself between Paris and Hector.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "music": [
+    {
+      "title": "Les Troyens",
+      "year": "1858",
+      "kind": "opera",
+      "composer": "Hector Berlioz",
+      "description": "Berlioz opens his Virgilian epic in Priam's Troy — the king, the horse, and the night the city falls before Aeneas' flight begins.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    }
   ]
 }

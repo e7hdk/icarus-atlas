@@ -89,6 +89,9 @@ const KIND_LABEL: Record<StoryKind, string> = {
   episode: 'episode',
 };
 
+const GREEK_KEY_PATTERN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12' viewBox='0 0 32 12'%3E%3Cpath d='M0 11H27V1H5V8H21V4H9' fill='none' stroke='%23fcd34d' stroke-width='1' opacity='.78'/%3E%3C/svg%3E\")";
+
 /** The enclosing universe: a huge inward-facing cylinder whose dark inner wall
  *  is the night sky. We live *inside* it — the camera can never leave — so the
  *  whole cosmos is the spindle, with the myth world-lines floating at its core. */
@@ -341,33 +344,61 @@ function StoryPanel({
   const shownEpisodes = showAllEpisodes ? episodes : episodes.slice(0, EP_LIMIT);
 
   return (
-    <aside className="fixed right-4 top-24 z-40 flex max-h-[calc(100vh-7.5rem)] w-[350px] max-w-[calc(100%-32px)] flex-col rounded-2xl border border-glass-border bg-glass-heavy p-6 shadow-[var(--shadow-panel-lg)] backdrop-blur-2xl sm:right-6">
-      <button
-        type="button"
-        onClick={onClose}
-        aria-label="Close"
-        className="absolute right-4 top-4 rounded-full border border-glass-border bg-glass px-2.5 py-0.5 font-display text-[11px] text-aether-muted transition-colors hover:text-aether"
-      >
-        ✕
-      </button>
-      <span
-        className="inline-flex w-fit items-center gap-2 rounded-full border px-2.5 py-1 font-display text-[10px] uppercase tracking-[0.16em]"
-        style={{
-          color: KIND_COLOR[story.kind],
-          borderColor: `${KIND_COLOR[story.kind]}66`,
-          background: `${KIND_COLOR[story.kind]}1a`,
-        }}
-      >
-        <i className="h-1.5 w-1.5 rounded-full" style={{ background: KIND_COLOR[story.kind] }} />
-        {KIND_LABEL[story.kind]}
-      </span>
-      <h2 className="mt-3 font-display text-2xl tracking-[0.08em] text-aether">{story.title}</h2>
-      {story.greekTitle && (
-        <p className="font-body text-base italic text-aether-muted">{story.greekTitle}</p>
-      )}
+    <aside
+      className="fixed right-4 top-24 z-40 flex max-h-[calc(100vh-7.5rem)] w-[350px] max-w-[calc(100%-32px)] flex-col overflow-hidden rounded-2xl border border-star-olympian/30 shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] backdrop-blur-2xl sm:right-6"
+      style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
+    >
+      <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.08]" />
+      <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/45" />
+      <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/25" />
+      <div
+        className="pointer-events-none absolute inset-x-14 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
+        style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
+      />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.12),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.1),transparent_48%)]" />
+
+      <header className="relative px-6 pb-5 pt-7 text-center">
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-5 top-5 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+          </svg>
+        </button>
+
+        <span
+          className="mx-auto inline-flex w-fit items-center gap-2 border-y px-2.5 py-1 font-display text-[9px] uppercase tracking-[0.18em]"
+          style={{
+            color: KIND_COLOR[story.kind],
+            borderColor: `${KIND_COLOR[story.kind]}55`,
+          }}
+        >
+          <i
+            className="h-1.5 w-1.5 rotate-45"
+            style={{ background: KIND_COLOR[story.kind], boxShadow: `0 0 9px ${KIND_COLOR[story.kind]}88` }}
+          />
+          {KIND_LABEL[story.kind]}
+        </span>
+
+        <div className="mx-auto mt-4 flex w-28 items-center gap-2" aria-hidden>
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/55" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/70 bg-star-olympian/20 shadow-[0_0_10px_rgba(252,211,77,0.42)]" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/55" />
+        </div>
+
+        <h2 className="mt-4 font-display text-[22px] tracking-[0.1em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.14)]">
+          {story.title}
+        </h2>
+        {story.greekTitle && (
+          <p className="mt-1 font-body text-[17px] italic text-star-olympian/80">{story.greekTitle}</p>
+        )}
+      </header>
 
       {/* Scrollable body so the fixed panel never overflows the screen. */}
-      <div className="mt-3.5 min-h-0 flex-1 overflow-y-auto pr-1">
+      <div className="relative min-h-0 flex-1 overflow-y-auto border-t border-star-olympian/15 px-6 py-5">
         <p
           className={`font-body text-[15px] leading-relaxed text-aether/90 ${
             summaryLong && !showFullSummary ? 'line-clamp-6' : ''
@@ -379,7 +410,7 @@ function StoryPanel({
           <button
             type="button"
             onClick={() => setShowFullSummary((v) => !v)}
-            className="mt-1 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft transition-colors hover:text-aether"
+            className="mt-2 font-display text-[9px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
           >
             {showFullSummary ? 'Read less' : 'Read more'}
           </button>
@@ -387,16 +418,19 @@ function StoryPanel({
 
         {episodes.length > 0 && (
           <>
-            <p className="mt-4 font-display text-[10px] uppercase tracking-[0.2em] text-aether-faint">
-              Episodes
-            </p>
-            <div className="mt-2.5 flex flex-wrap gap-1.5">
+            <div className="mt-5 flex items-center gap-3">
+              <p className="font-display text-[9px] uppercase tracking-[0.24em] text-aether-faint">
+                Episodes
+              </p>
+              <span className="h-px flex-1 bg-gradient-to-r from-star-olympian/25 to-transparent" />
+            </div>
+            <div className="mt-3 flex flex-wrap gap-1.5">
               {shownEpisodes.map((ep) => (
                 <button
                   key={ep.id}
                   type="button"
                   onClick={() => onSelectEpisode(ep.id)}
-                  className="rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[13px] text-aether/85 transition-colors hover:border-nebula-soft/50 hover:text-aether"
+                  className="border border-star-olympian/15 bg-star-olympian/[0.035] px-2.5 py-1.5 font-body text-[13px] text-aether/85 transition-all hover:border-star-olympian/40 hover:bg-star-olympian/[0.08] hover:text-aether"
                 >
                   {ep.title}
                 </button>
@@ -405,7 +439,7 @@ function StoryPanel({
                 <button
                   type="button"
                   onClick={() => setShowAllEpisodes((v) => !v)}
-                  className="rounded-full border border-border-accent bg-nebula-violet/15 px-2.5 py-1 font-display text-[11px] uppercase tracking-[0.12em] text-nebula-soft transition-colors hover:bg-nebula-violet/25"
+                  className="border border-nebula-soft/25 bg-nebula-violet/10 px-2.5 py-1.5 font-display text-[9px] uppercase tracking-[0.14em] text-nebula-soft transition-colors hover:bg-nebula-violet/20"
                 >
                   {showAllEpisodes ? 'Show fewer' : `+${episodes.length - EP_LIMIT} more`}
                 </button>
@@ -415,12 +449,21 @@ function StoryPanel({
         )}
       </div>
 
-      <Link
-        href={`/story/${story.id}`}
-        className="mt-5 block w-full shrink-0 rounded-xl border border-border-accent bg-nebula-violet/15 py-3 text-center font-display text-[12px] uppercase tracking-[0.16em] text-nebula-soft transition-colors hover:bg-nebula-violet/25"
-      >
-        Enter the saga →
-      </Link>
+      <footer className="relative border-t border-star-olympian/20 bg-cosmos-deep/55 px-6 py-4">
+        <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
+        </div>
+        <Link
+          href={`/story/${story.id}`}
+          className="group flex w-full items-center justify-center gap-3 border border-star-olympian/35 bg-star-olympian/[0.06] py-3 font-display text-[10px] uppercase tracking-[0.22em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether"
+        >
+          <span className="text-[8px]">◆</span>
+          <span>Enter the saga</span>
+          <span className="transition-transform group-hover:translate-x-0.5">→</span>
+        </Link>
+      </footer>
     </aside>
   );
 }

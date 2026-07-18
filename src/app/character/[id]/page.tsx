@@ -4,9 +4,10 @@ import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
-import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
-import { CharacterShell } from '@/components/character/CharacterShell';
-import { PoetsView } from '@/components/character/PoetsView';
+import { storiesFeaturingCharacter } from '@/features/stories/appearances';
+import { CharacterTabs } from '@/components/character/CharacterTabs';
+import { CharacterTheatre } from '@/components/character/CharacterTheatre';
+import { CrumbBar } from '@/components/hud/CrumbBar';
 
 export async function generateStaticParams() {
   const { characters } = await loadAtlasData();
@@ -25,8 +26,8 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
 
   const culture = await loadCulture(id);
   const teaser = culture?.artworks.slice(0, 3) ?? [];
-  const storyIndex = storiesById(stories);
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
+  const citiesById = new Map(cities.map((city) => [city.id, city]));
   const orreryRelations = relations.filter(
     (relation) => relation.from === character.id || relation.to === character.id,
   );
@@ -38,18 +39,28 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
     .map(({ id: candidateId, name, type }) => ({ id: candidateId, name, type }));
 
   return (
-    <CharacterShell
-      character={character}
-      active="poets"
-      cities={cities}
-      storyAppearances={storyAppearances}
-      storiesById={storyIndex}
-    >
-      <PoetsView
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-20">
+      <CrumbBar
+        back={{ href: '/', label: 'Back to the galaxy' }}
+        trail={[{ href: '/', label: 'Galaxy' }]}
+        current={`The codex of ${character.name}`}
+        laurelCharacterId={character.id}
+      />
+
+      <nav className="mt-4 flex justify-center">
+        <CharacterTabs characterId={character.id} active="poets" />
+      </nav>
+
+      <CharacterTheatre
         character={character}
         characters={orreryCharacters}
         relations={orreryRelations}
         sources={sources}
+        residences={(character.residences ?? []).map((residence) => ({
+          city: residence.city,
+          label: citiesById.get(residence.city)?.name ?? residence.city,
+        }))}
+        appearances={storyAppearances.map((story) => ({ id: story.id, title: story.title }))}
       />
 
       <div className="mt-16 border-t border-glass-border pt-6">
@@ -84,6 +95,6 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
           </span>
         </Link>
       </div>
-    </CharacterShell>
+    </main>
   );
 }

@@ -1,0 +1,48 @@
+[
+  {
+    "day": 3,
+    "label": "Athena's day",
+    "deities": ["athena"],
+    "testimonia": [
+      "Scholia to Aristophanes, Plutus 1126 (the third of the month as Athena's birthday)",
+      "Mikalson, The Sacred and Civil Calendar of the Athenian Year (1975) 16–17"
+    ]
+  },
+  {
+    "day": 4,
+    "label": "the day of Hermes, Aphrodite and Heracles",
+    "deities": ["hermes", "aphrodite", "heracles"],
+    "testimonia": [
+      "Hesiod, Works and Days 770 (the fourth a holy day)",
+      "Scholia to Aristophanes, Plutus 1126 (the fourth of Hermes)",
+      "Mikalson (1975) 17–20"
+    ]
+  },
+  {
+    "day": 6,
+    "label": "Artemis' day",
+    "deities": ["artemis"],
+    "testimonia": [
+      "Diogenes Laertius 2.44 (the sixth of Thargelion as Artemis' birthday, the monthly sixth hers)",
+      "Mikalson (1975) 18–19"
+    ]
+  },
+  {
+    "day": 7,
+    "label": "Apollo's day",
+    "deities": ["apollo"],
+    "testimonia": [
+      "Hesiod, Works and Days 770–771 (the seventh, on which Leto bore Apollo with the blade of gold)",
+      "Mikalson (1975) 19"
+    ]
+  },
+  {
+    "day": 8,
+    "label": "the day of Poseidon and Theseus",
+    "deities": ["poseidon", "theseus"],
+    "testimonia": [
+      "Plutarch, Theseus 36.4 (the eighth of each month kept for Theseus, the number of Poseidon)",
+      "Mikalson (1975) 19–20"
+    ]
+  }
+]

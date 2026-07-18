@@ -29,5 +29,43 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg/960px-Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg",
       "description": "An academic oil painting of Venus newly born from the sea, reclining on the crest of a wave beneath a flight of putti. A sensation at the Paris Salon of 1863, where it was purchased by Napoleon III, it epitomizes the polished mythological nude of its era. It is now in the Musée d'Orsay, Paris."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix Trojan cycle keeps Aphrodite in the Judgement that starts the war — the golden apple, the bribe of Helen, and the goddess whose vanity lights the pyre of Troy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "music": [
+    {
+      "title": "The Golden Apple",
+      "year": "1954",
+      "kind": "stage",
+      "composer": "Jerome Moross",
+      "description": "Broadway's through-sung Homer pastiche gives Aphrodite the winning argument in the angel-food bake-off for the golden apple — love, as ever, taking the prize.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Golden_Apple_(musical)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Aphrodite's boons in Supergiant's underworld run are charm and weak-point strike — the goddess of love as a build that makes enemies fall for you, then fall.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "She returns among the Olympian boon-givers in the sequel: the same velvet voice, now arming Melinoë's hunt for Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

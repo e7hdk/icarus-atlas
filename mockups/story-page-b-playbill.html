@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Story Page B: Playbill</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap">
+<style>
+  /* ============ STORY CONCEPT B — PLAYBILL ============
+     The myth as a night at the theatre: a gold-ruled programme.
+     Dramatis personae precede the tale; chapters are acts divided
+     by meander ornaments; the attestations close as a colophon.
+     Hovering a player in the bill illuminates them in the prose. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --gold-dim: rgba(252,211,77,.55);
+  }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos-deep);
+    background-image:
+      radial-gradient(52% 30% at 50% 0%, rgba(252,211,77,.09), transparent 70%),
+      radial-gradient(42% 36% at 4% 84%, rgba(124,77,255,.13), transparent 70%),
+      radial-gradient(30% 26% at 98% 48%, rgba(0,229,255,.05), transparent 70%);
+    background-attachment: fixed;
+  }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 16% 22%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 74% 12%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 40% 70%, rgba(252,211,77,.35), transparent),
+      radial-gradient(1px 1px at 60% 40%, rgba(241,245,249,.28), transparent),
+      radial-gradient(1px 1px at 90% 84%, rgba(192,132,252,.3), transparent); }
+
+  .page { position: relative; max-width: 700px; margin: 0 auto; padding: 20px 26px 100px; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+  .pill { border: 1px solid var(--glass-border); background: rgba(255,255,255,.05); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  /* ---------- The programme sheet ---------- */
+  .bill { position: relative; border: 1px solid rgba(252,211,77,.28); padding: 54px 52px 60px; background: rgba(20,12,48,.3); backdrop-filter: blur(10px); }
+  .bill::before { content: ''; position: absolute; inset: 7px; border: 1px solid rgba(252,211,77,.14); pointer-events: none; }
+  .bill::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(70% 24% at 50% 0%, rgba(252,211,77,.06), transparent 70%); }
+
+  .presents { text-align: center; font: 500 11px Cinzel, serif; letter-spacing: .5em; color: var(--faint); }
+  .presents b { color: var(--gold-dim); font-weight: 500; }
+  .hero { text-align: center; margin-top: 26px; }
+  .hero .saga { font: 500 10.5px Cinzel, serif; letter-spacing: .26em; color: var(--soft); text-decoration: none; }
+  .hero .saga:hover { color: var(--aether); }
+  .hero h1 { font: 700 clamp(32px,5.4vw,50px) Cinzel, serif; letter-spacing: .14em; line-height: 1.2; margin-top: 14px; text-shadow: 0 0 44px rgba(252,211,77,.35); }
+  .hero .greek { font-style: italic; font-size: 21px; color: var(--muted); margin-top: 10px; }
+  .hero .after { font: 500 11.5px Cinzel, serif; letter-spacing: .3em; color: var(--gold-dim); margin-top: 18px; }
+  .hero .sum { margin: 22px auto 0; max-width: 500px; font-style: italic; font-size: 18.5px; line-height: 1.6; color: var(--muted); }
+
+  /* ---------- Meander divider (inline SVG, gold) ---------- */
+  .meander { display: flex; align-items: center; gap: 18px; margin: 44px 0 38px; }
+  .meander .ln { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(252,211,77,.4)); }
+  .meander .ln:last-child { background: linear-gradient(90deg, rgba(252,211,77,.4), transparent); }
+  .meander svg { display: block; color: var(--gold-dim); }
+
+  .shead { text-align: center; font: 600 13px Cinzel, serif; letter-spacing: .4em; color: var(--aether); }
+  .snote { text-align: center; font-style: italic; font-size: 15px; color: var(--faint); margin-top: 6px; }
+
+  /* ---------- Dramatis personae ---------- */
+  .personae { margin-top: 26px; }
+  .person { display: flex; align-items: baseline; padding: 8px 0; font-size: 18px; cursor: pointer; }
+  .person b { font: 600 14.5px Cinzel, serif; letter-spacing: .1em; color: var(--aether); transition: color .2s, text-shadow .2s; }
+  .person.plain b { color: var(--muted); }
+  .person .dots { flex: 1; margin: 0 12px; border-bottom: 1px dotted rgba(241,245,249,.22); transform: translateY(-4px); }
+  .person i { color: var(--muted); font-size: 16.5px; text-align: right; max-width: 58%; }
+  .person:hover b { color: #fde68a; text-shadow: 0 0 18px rgba(252,211,77,.6); }
+  .person .st { width: 8px; height: 8px; border-radius: 50%; margin-right: 12px; align-self: center; flex: none; background: var(--c, #e5e7eb); box-shadow: 0 0 7px 1px var(--c, #e5e7eb); }
+  .person.plain .st { background: var(--faint); box-shadow: none; }
+
+  /* ---------- Acts ---------- */
+  .act { margin-top: 46px; }
+  .act .ahead { text-align: center; }
+  .act .ahead .no { font: 600 12px Cinzel, serif; letter-spacing: .44em; color: var(--gold-dim); }
+  .act .ahead h3 { font: 600 24px Cinzel, serif; letter-spacing: .14em; margin-top: 8px; }
+  .act .ahead .scene { font-style: italic; font-size: 16px; color: var(--faint); margin-top: 6px; }
+  .act .ahead .scene b { font-style: normal; font-weight: 500; color: #fde68a; }
+  .act p { margin-top: 20px; font-size: 19px; line-height: 1.68; color: rgba(241,245,249,.92); text-align: justify; text-align-last: left; hyphens: auto; }
+  .act p .cap { float: left; font: 600 64px/0.8 Cinzel, serif; color: var(--gold); padding: 8px 10px 0 0; text-shadow: 0 0 24px rgba(252,211,77,.5); }
+  .player { transition: all .25s; color: inherit; border-bottom: 1px dotted transparent; }
+  .player.lit { color: #fde68a; text-shadow: 0 0 16px rgba(252,211,77,.55); border-bottom-color: rgba(252,211,77,.5); }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 13px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; right: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(252,211,77,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .dqm { position: relative; color: var(--soft); cursor: default; font-size: 16px; }
+  .dqm:hover::after { content: 'The tellers place the fall in different waters.'; position: absolute; left: 50%; transform: translateX(-50%); bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+
+  /* ---------- The scenes ---------- */
+  .scenes { margin-top: 26px; }
+  .scene-row { display: flex; align-items: baseline; padding: 7px 0; font-size: 17.5px; }
+  .scene-row b { font: 500 13.5px Cinzel, serif; letter-spacing: .12em; color: #fde68a; }
+  .scene-row.plain b { color: var(--muted); }
+  .scene-row .dots { flex: 1; margin: 0 12px; border-bottom: 1px dotted rgba(241,245,249,.22); transform: translateY(-4px); }
+  .scene-row i { color: var(--faint); font-size: 15.5px; text-align: right; max-width: 60%; }
+
+  /* ---------- Colophon ---------- */
+  .colo { margin-top: 30px; text-align: center; }
+  .colo .s { font-size: 17.5px; padding: 4px 0; }
+  .colo .s b { font: 600 13.5px Cinzel, serif; letter-spacing: .1em; }
+  .colo .s span { font-style: italic; color: var(--muted); }
+  .colo .s em { font-style: normal; font-size: 14.5px; color: var(--faint); }
+  .fin { margin-top: 40px; text-align: center; font: 600 12px Cinzel, serif; letter-spacing: .5em; color: var(--gold-dim); }
+  footer { text-align: center; margin-top: 42px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 620px) {
+    .bill { padding: 40px 22px 44px; }
+    .act p { text-align: left; }
+    .person i { max-width: 48%; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← MYTHS</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="bill">
+    <div class="presents"><b>ICARUS ATLAS</b> · PRESENTS</div>
+
+    <header class="hero">
+      <a class="saga" href="#">AN EPISODE OF METAMORPHOSES ↗</a>
+      <h1>DAEDALUS<br>AND ICARUS</h1>
+      <div class="greek">Δαίδαλος καὶ Ἴκαρος</div>
+      <div class="after">A TALE IN FOUR ACTS</div>
+      <p class="sum">Daedalus the Athenian craftsman, imprisoned by Minos with his son Icarus, fashioned wings of feather and wax; the boy soared too near the sun and fell into the sea that bears his name, while the father flew on to Sicily in grief.<span class="fn" data-c="Ovid · Apollodorus · Hyginus — Met. 8.152–259 · Epit. 1.12–13 · Fab. 40">1</span></p>
+    </header>
+
+    <div class="meander"><span class="ln"></span>
+      <svg width="112" height="14" viewBox="0 0 112 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 13V1h12v8H9V5H5v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h12" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+    <span class="ln"></span></div>
+
+    <div class="shead">DRAMATIS PERSONAE</div>
+    <div class="snote">hover a player to follow them through the acts</div>
+    <div class="personae" id="personae">
+      <div class="person" data-p="daedalus" style="--c:#e5e7eb"><span class="st"></span><b>DAEDALUS</b><span class="dots"></span><i>Athenian inventor who built the wings</i></div>
+      <div class="person" data-p="icarus" style="--c:#e5e7eb"><span class="st"></span><b>ICARUS</b><span class="dots"></span><i>his son, who flew too near the sun</i></div>
+      <div class="person" data-p="minos" style="--c:#e5e7eb"><span class="st"></span><b>MINOS</b><span class="dots"></span><i>Cretan king who imprisoned them</i></div>
+      <div class="person plain" data-p="cocalus" title="Not yet a star in the galaxy"><span class="st"></span><b>COCALUS</b><span class="dots"></span><i>Sicilian king who sheltered Daedalus</i></div>
+      <div class="person" data-p="ariadne" style="--c:#e5e7eb"><span class="st"></span><b>ARIADNE</b><span class="dots"></span><i>the betrayal that provoked Minos' wrath</i></div>
+    </div>
+
+    <div class="meander"><span class="ln"></span>
+      <svg width="112" height="14" viewBox="0 0 112 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 13V1h12v8H9V5H5v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h12" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+    <span class="ln"></span></div>
+
+    <article class="act">
+      <div class="ahead">
+        <div class="no">ACT I</div>
+        <h3>Flight from Athens</h3>
+        <div class="scene">the scene — <b>Knossos</b>, palace of the labyrinth</div>
+      </div>
+      <p><span class="cap">D</span><span class="player" data-p="daedalus">aedalus</span> son of Metion, architect of the labyrinth and the wooden cow for Pasiphae, had fled Athens after killing his nephew Talos in jealousy of the boy's invention. In Crete he served <span class="player" data-p="minos">Minos</span> until <span class="player" data-p="ariadne">Ariadne</span>'s thread betrayed the maze — and the king shut both craftsman and son within the very walls Daedalus had designed.<span class="fn" data-c="Apollodorus · Ovid — Apollod. 3.15.8, Epit. 1.12 · Ov. Met. 8.152–208">2</span></p>
+    </article>
+
+    <article class="act">
+      <div class="ahead">
+        <div class="no">ACT II</div>
+        <h3>The Wings</h3>
+        <div class="scene">the scene — a tower above the Cretan shore</div>
+      </div>
+      <p><span class="cap">K</span>nowing <span class="player" data-p="minos">Minos</span> held land and sea, <span class="player" data-p="daedalus">Daedalus</span> turned to the air. He bound feathers with thread and soft wax into curving wings for himself and <span class="player" data-p="icarus">Icarus</span>, and warned the boy to fly the middle way — neither so low that the sea spray clog the plumes, nor so high that the sun melt the wax.<span class="fn" data-c="Ovid · Hyginus — Ov. Met. 8.183–235 · Hyg. Fab. 40">3</span></p>
+    </article>
+
+    <article class="act">
+      <div class="ahead">
+        <div class="no">ACT III</div>
+        <h3>The Fall <span class="dqm">⚖</span></h3>
+        <div class="scene">the scene — the open sky between Samos and Lebinthos</div>
+      </div>
+      <p><span class="cap">I</span><span class="player" data-p="icarus">carus</span> exulted in flight and climbed toward heaven; the heat loosened the wax, the feathers scattered, and the boy plunged into the blue sea. <span class="player" data-p="daedalus">Daedalus</span>, crying his son's name, found only feathers on the waves. Apollodorus calls the sea Icarian, and the island Icaria where the body washed ashore.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.223–259 · Apollod. Epit. 1.13">4</span></p>
+    </article>
+
+    <article class="act">
+      <div class="ahead">
+        <div class="no">ACT IV</div>
+        <h3>Sicily</h3>
+        <div class="scene">the scene — the court of Cocalus, far to the west</div>
+      </div>
+      <p><span class="cap">T</span>he father flew on to Sicily and the court of <span class="player" data-p="cocalus">Cocalus</span>, while <span class="player" data-p="minos">Minos</span> pursued him across the seas with ships and thread. On the flight Ovid names the islands they passed: Juno's sacred Samos on the left, Delos and Paros left behind, Lebinthos and honey-rich Calymne on the right.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.259–272, 8.289–399 · Apollod. Epit. 1.13–15">5</span></p>
+    </article>
+
+    <div class="meander"><span class="ln"></span>
+      <svg width="112" height="14" viewBox="0 0 112 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 13V1h12v8H9V5H5v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h12" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+    <span class="ln"></span></div>
+
+    <div class="shead">THE SCENES</div>
+    <div class="scenes">
+      <div class="scene-row"><b>KNOSSOS</b><span class="dots"></span><i>Cretan palace-city of Minos and the labyrinth</i></div>
+      <div class="scene-row"><b>ICARIAN SEA</b><span class="dots"></span><i>waters where the boy fell</i></div>
+      <div class="scene-row"><b>SICILY</b><span class="dots"></span><i>land where Daedalus found refuge</i></div>
+      <div class="scene-row"><b>SAMOS · DELOS · PAROS</b><span class="dots"></span><i>isles passed on the flight</i></div>
+    </div>
+
+    <div class="meander"><span class="ln"></span>
+      <svg width="112" height="14" viewBox="0 0 112 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 13V1h12v8H9V5H5v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h22V1h12v8h-4V5h-4v8h12" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+    <span class="ln"></span></div>
+
+    <div class="shead">TOLD IN</div>
+    <div class="colo">
+      <div class="s"><b>Ovid</b> — <span>Metamorphoses</span> <em>8.152–259</em></div>
+      <div class="s"><b>Apollodorus</b> — <span>Epitome</span> <em>1.12–13</em></div>
+      <div class="s"><b>Hyginus</b> — <span>Fabulae</span> <em>40</em></div>
+    </div>
+
+    <div class="fin">· EXEUNT ·</div>
+  </div>
+
+  <footer>Story concept B — Playbill · the myth as a programme: players first, acts divided by the meander, tellers as the colophon</footer>
+</div>
+
+<script>
+  // Hovering a player in the bill illuminates them through the acts.
+  const personae = document.getElementById('personae');
+  personae.addEventListener('mouseover', e => {
+    const row = e.target.closest('.person'); if (!row) return;
+    document.querySelectorAll(`.player[data-p="${row.dataset.p}"]`).forEach(s => s.classList.add('lit'));
+  });
+  personae.addEventListener('mouseout', e => {
+    const row = e.target.closest('.person'); if (!row) return;
+    document.querySelectorAll('.player.lit').forEach(s => s.classList.remove('lit'));
+  });
+</script>
+</body>
+</html>

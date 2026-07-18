@@ -1,0 +1,34 @@
+{
+  "id": "ismene",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Antigone",
+      "year": "1961",
+      "medium": "film",
+      "director": "Yorgos Javellas",
+      "description": "Javellas keeps Ismene as the sister who will not dig: caution against Antigone's fire, then late courage when the sentence is already fixed.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(1961_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Antigone",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Arthur Honegger",
+      "description": "Honegger gives Ismene the voice of survival — the sister who argues for life while Antigone chooses the grave.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Honegger)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Antigone",
+      "year": "1944",
+      "kind": "other",
+      "creator": "Jean Anouilh",
+      "description": "Anouilh's Ismene is the reasonable sister under Occupation logic — she loves Antigone and still cannot bring herself to break the law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Anouilh_play)"
+    }
+  ]
+}

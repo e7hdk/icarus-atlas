@@ -29,5 +29,32 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/CarracciHercules.jpg/960px-CarracciHercules.jpg",
       "description": "Carracci's Baroque canvas shows the young hero seated at a crossroads between two female personifications: Virtue, who points up the steep rocky path toward lasting glory, and Pleasure, who offers an easier life of ease and indulgence. Painted for the Camerino of the Palazzo Farnese in Rome, it casts Heracles as the moral exemplar who must choose his arduous destiny. The picture is now in the Museo di Capodimonte, Naples."
     }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney's gospel-singing Olympus turns the labours into a satire of hero-branding — merchandise, action figures and all — while Hades steals the film as a fast-talking dealmaker. For a generation it is the first Heracles they meet.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    },
+    {
+      "title": "Hercules: The Legendary Journeys",
+      "year": "1995–1999",
+      "medium": "tv",
+      "description": "Kevin Sorbo's syndicated wanderer softened the strongman into a reluctant do-gooder roaming a mix-and-match antiquity; its success spun off Xena: Warrior Princess and ruled 1990s syndicated television.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules:_The_Legendary_Journeys"
+    }
+  ],
+  "music": [
+    {
+      "title": "Hercules",
+      "year": "1745",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's 'musical drama' of the homecoming centres not on the hero's strength but on Dejanira's jealousy, driving toward the poisoned robe and one of the great mad scenes of the baroque stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(Handel)"
+    }
   ]
 }

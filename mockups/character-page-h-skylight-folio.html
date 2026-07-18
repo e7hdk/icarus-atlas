@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page H: Skylight Folio (E × F)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CONCEPT H — SKYLIGHT FOLIO (E × F) ============
+     Observatory-dominant hero, Marginalia-dominant reading.
+     The name IS the star: the bonds orbit the title itself, full-bleed.
+     Scrolling draws a veil over the heavens and hands the page to the
+     illuminated manuscript column with its engraved margin notes. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --pink: #ff4081; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf;
+  }
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos-deep); }
+
+  /* ---------- The fixed heavens ---------- */
+  #sky { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
+  .neb { position: absolute; inset: -12%; transition: transform .6s cubic-bezier(.2,.8,.2,1); background:
+      radial-gradient(46% 36% at 50% 30%, rgba(45,212,191,.14), transparent 68%),
+      radial-gradient(44% 40% at 8% 86%, rgba(124,77,255,.2), transparent 70%),
+      radial-gradient(32% 28% at 90% 16%, rgba(0,229,255,.09), transparent 70%),
+      radial-gradient(28% 30% at 84% 84%, rgba(255,64,129,.06), transparent 70%); }
+  .stars { position: absolute; inset: -10%; transition: transform .8s cubic-bezier(.2,.8,.2,1); background-image:
+      radial-gradient(1px 1px at 11% 19%, rgba(241,245,249,.7), transparent),
+      radial-gradient(1px 1px at 24% 66%, rgba(241,245,249,.4), transparent),
+      radial-gradient(1.6px 1.6px at 41% 31%, rgba(192,132,252,.55), transparent),
+      radial-gradient(1px 1px at 55% 79%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1.4px 1.4px at 69% 22%, rgba(0,229,255,.5), transparent),
+      radial-gradient(1px 1px at 83% 57%, rgba(241,245,249,.5), transparent),
+      radial-gradient(1px 1px at 93% 12%, rgba(241,245,249,.35), transparent),
+      radial-gradient(1.4px 1.4px at 8% 88%, rgba(252,211,77,.4), transparent); }
+  #veil { position: absolute; inset: 0; background: rgba(5,2,15,0); pointer-events: none; }
+
+  .page { position: relative; z-index: 1; }
+  .top { position: fixed; top: 0; left: 0; right: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 18px 26px; }
+  .pill { border: 1px solid var(--glass-border); background: rgba(255,255,255,.06); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(14px); }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  /* ---------- Helio hero: the bonds orbit the name ---------- */
+  #helio { position: relative; height: 92vh; min-height: 620px; display: grid; place-items: center; }
+  #rings { position: absolute; left: 50%; top: 50%; width: 0; height: 0; }
+  .ring { position: absolute; left: 0; top: 0; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(255,255,255,.08); }
+  .ring.r1 { width: 400px; height: 400px; border-color: rgba(252,211,77,.18); }
+  .ring.r2 { width: 560px; height: 560px; }
+  .ring.r3 { width: 700px; height: 700px; border-style: dotted; border-color: rgba(96,165,250,.24); }
+  .ring.r4 { width: 830px; height: 830px; border-style: dashed; border-color: rgba(244,114,182,.2); }
+  .rw { position: absolute; left: 0; top: 0; width: 0; height: 0; animation: spin linear infinite; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  #helio.hold .rw { animation-play-state: paused; }
+  .body { position: absolute; transform: translate(-50%,-50%); border-radius: 50%; background: var(--c); width: var(--s,12px); height: var(--s,12px); cursor: pointer; box-shadow: 0 0 10px 3px var(--c), 0 0 26px 9px color-mix(in srgb, var(--c) 36%, transparent); transition: box-shadow .25s; }
+  .body:hover { box-shadow: 0 0 16px 6px var(--c), 0 0 48px 16px color-mix(in srgb, var(--c) 55%, transparent); }
+  .htext { position: relative; text-align: center; pointer-events: none; }
+  .htext .over { font: 400 11px Cinzel, serif; letter-spacing: .5em; color: var(--faint); }
+  .htext h1 { font: 700 clamp(44px,7.5vw,74px) Cinzel, serif; letter-spacing: .2em; padding-left: .2em; margin-top: 12px;
+      text-shadow: 0 0 26px rgba(45,212,191,.65), 0 0 90px rgba(45,212,191,.35), 0 0 200px rgba(45,212,191,.18); }
+  .htext .sub { font-style: italic; font-size: 19px; color: var(--muted); margin-top: 8px; }
+  .htext .sub em { font-style: normal; color: #99f6e4; }
+  .htext .hint { margin-top: 26px; font-style: italic; font-size: 14px; color: var(--faint); }
+  #down { position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); color: var(--faint); font-size: 22px; animation: drift 2.6s ease-in-out infinite; }
+  @keyframes drift { 0%,100% { transform: translate(-50%,0); } 50% { transform: translate(-50%,8px); } }
+  #tell { position: fixed; pointer-events: none; z-index: 50; opacity: 0; transition: opacity .18s; background: rgba(20,12,48,.92); border: 1px solid rgba(45,212,191,.4); border-radius: 10px; padding: 7px 14px; backdrop-filter: blur(8px); white-space: nowrap; }
+  #tell b { display: block; font: 600 13px Cinzel, serif; letter-spacing: .12em; }
+  #tell i { font-size: 14.5px; color: var(--muted); }
+
+  /* ---------- The folio rises over the dimmed sky ---------- */
+  .folio-shell { position: relative; background: linear-gradient(180deg, transparent, rgba(5,2,15,.66) 130px, rgba(5,2,15,.66)); }
+  .folio { max-width: 1010px; margin: 0 auto; padding: 30px 24px 90px; }
+  .lensbar { display: flex; justify-content: center; align-items: center; gap: 12px; padding-top: 26px; }
+  .lensbar .told { font-style: italic; font-size: 17px; color: var(--faint); }
+  .lens { display: flex; gap: 4px; background: var(--glass); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 4px; backdrop-filter: blur(12px); }
+  .lens button { padding: 8px 18px; border-radius: 999px; border: 1px solid transparent; background: none; color: rgba(226,232,240,.55); font: 500 12.5px Cinzel, serif; letter-spacing: .08em; cursor: pointer; transition: all .2s; }
+  .lens button:hover { color: var(--aether); }
+  .lens button.on { background: rgba(192,132,252,.22); border-color: rgba(192,132,252,.5); color: #e9d5ff; }
+  .sect { text-align: center; font: 500 12px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin: 44px 0 34px; }
+  .pgrid { display: grid; grid-template-columns: minmax(0,1fr) 216px; column-gap: 46px; row-gap: 34px; }
+  .para { position: relative; font-size: 19.5px; line-height: 1.66; color: rgba(241,245,249,.92); transition: opacity .35s; }
+  .para .cap { float: left; font: 600 74px/0.78 Cinzel, serif; color: var(--gold); padding: 10px 12px 2px 0; text-shadow: 0 0 26px rgba(252,211,77,.45); }
+  .note { position: relative; padding-left: 18px; font-size: 14.5px; line-height: 1.5; color: var(--faint); border-left: 1px solid rgba(241,245,249,.14); align-self: start; transition: color .3s, border-color .3s, opacity .35s; }
+  .note .num { font: 600 12px Cinzel, serif; letter-spacing: .18em; color: var(--muted); display: block; margin-bottom: 3px; transition: color .3s; }
+  .note .who { font-variant: small-caps; letter-spacing: .06em; font-size: 15px; }
+  .note .cite { display: block; font-style: italic; margin-top: 2px; }
+  .pair { display: contents; }
+  .pair.current .note { border-color: rgba(45,212,191,.6); color: var(--muted); }
+  .pair.current .note .num { color: #99f6e4; }
+  .pair.hidden .para, .pair.hidden .note { opacity: .13; pointer-events: none; }
+  .asterism { grid-column: 1 / -1; text-align: center; color: rgba(241,245,249,.3); font-size: 18px; letter-spacing: .6em; padding-left: .6em; }
+  .empty { grid-column: 1 / -1; display: none; text-align: center; font-style: italic; font-size: 18px; color: var(--faint); padding: 20px 0 8px; }
+  .folio.void .empty { display: block; }
+  .dqm { position: relative; color: var(--soft); cursor: default; }
+  .dqm:hover::after { content: 'Told differently in other tellings — change the lens above'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; font-style: normal; color: var(--aether); z-index: 9; }
+
+  .registers { max-width: 1010px; margin: 40px auto 0; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .reg .head { display: flex; align-items: center; gap: 14px; font: 500 11.5px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin-bottom: 18px; }
+  .reg .head .line { flex: 1; height: 1px; background: rgba(255,255,255,.1); }
+  .reg ul { list-style: none; }
+  .reg li { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px dotted rgba(241,245,249,.1); font-size: 17.5px; cursor: pointer; transition: color .2s; }
+  .reg li:hover { color: #fde68a; }
+  .reg li .no { font: 600 11px Cinzel, serif; color: var(--faint); letter-spacing: .1em; min-width: 22px; }
+  .reg li em { margin-left: auto; font-size: 14.5px; color: var(--faint); }
+  footer { text-align: center; padding: 70px 0 40px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 900px) {
+    #rings { transform: scale(.6); }
+    .pgrid { grid-template-columns: 1fr; }
+    .note { border-left: none; padding: 0; margin-top: -22px; font-size: 13.5px; }
+    .note .num { display: inline; margin-right: 8px; }
+    .note .cite { display: inline; margin-left: 6px; }
+    .registers { grid-template-columns: 1fr; gap: 40px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .neb, .stars { transition: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+  <div id="sky">
+    <div class="neb"></div>
+    <div class="stars"></div>
+    <div id="veil"></div>
+  </div>
+  <div id="tell"><b></b><i></i></div>
+
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="page">
+    <!-- The name is the star; the bonds orbit it -->
+    <header id="helio">
+      <div id="rings">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div>
+        <div id="orbits"></div>
+      </div>
+      <div class="htext">
+        <div class="over">THE CODEX OF</div>
+        <h1>PERSEUS</h1>
+        <div class="sub">Perseus (Περσεύς) · <em>Hero</em> · the Gorgon-slayer · founder of Mycenae</div>
+        <div class="hint">his bonds keep their orbits — hover a star to name it</div>
+      </div>
+      <div id="down">▾</div>
+    </header>
+
+    <!-- The manuscript rises; the sky dims behind it -->
+    <div class="folio-shell">
+      <div class="lensbar">
+        <span class="told">told after</span>
+        <div class="lens" id="lens">
+          <button class="on" data-l="consensus">All tellers</button>
+          <button data-l="apollodorus">Apollodorus</button>
+          <button data-l="ovid">Ovid</button>
+          <button data-l="hyginus">Hyginus</button>
+          <button data-l="hesiod">Hesiod</button>
+        </div>
+      </div>
+
+      <section class="folio" id="folio">
+        <div class="sect">THE STORY</div>
+        <div class="pgrid">
+          <div class="pair" data-src="apollodorus hyginus">
+            <p class="para"><span class="cap">B</span>orn in a subterranean bronze chamber after Zeus visited his mother Danaë in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.</p>
+            <aside class="note"><span class="num">I</span><span class="who">Apollodorus · Hyginus</span><span class="cite">Bibliotheca 2.4.1 · Fabulae 63</span></aside>
+          </div>
+          <div class="pair" data-src="apollodorus ovid">
+            <p class="para">To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon Medusa. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades<span class="dqm"> ⚖</span>. He beheaded Medusa and used her petrifying gaze to turn his enemies — the titan Atlas and the sea monster Cetus among them — to stone.</p>
+            <aside class="note"><span class="num">II</span><span class="who">Apollodorus · Ovid</span><span class="cite">Bibliotheca 2.4.2–3 · Metamorphoses 4.740</span></aside>
+          </div>
+          <div class="pair" data-src="apollodorus hyginus pausanias">
+            <p class="para">After rescuing and marrying the Aethiopian princess Andromeda, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.</p>
+            <aside class="note"><span class="num">III</span><span class="who">Apollodorus · Hyginus · Pausanias</span><span class="cite">Bibliotheca 2.4.4 · Fabulae 273 · Paus. 2.16.3</span></aside>
+          </div>
+          <p class="empty">Nothing of this figure survives under this teller — choose another lens above.</p>
+          <div class="asterism">⁂</div>
+        </div>
+      </section>
+
+      <div class="registers">
+        <div class="reg">
+          <div class="head">APPEARS IN THE MYTHS<span class="line"></span></div>
+          <ul>
+            <li><span class="no">01</span>Birth at Seriphos<em>the chest on the waves</em></li>
+            <li><span class="no">02</span>The Gorgon Medusa<em>the beheading</em></li>
+            <li><span class="no">03</span>Andromeda Rescued<em>the sea monster</em></li>
+            <li><span class="no">04</span>Perseus at the Feast<em>the petrified court</em></li>
+            <li><span class="no">05</span>Return and Mycenae<em>the stray discus</em></li>
+          </ul>
+        </div>
+        <div class="reg">
+          <div class="head">DWELT AT<span class="line"></span></div>
+          <ul>
+            <li><span class="no">·</span>Seriphos<em>raised ashore</em></li>
+            <li><span class="no">·</span>Argos<em>the throne refused</em></li>
+            <li><span class="no">·</span>Mycenae<em>founder</em></li>
+            <li><span class="no">·</span>Tiryns<em>exchanged kingdom</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>Concept H — Skylight Folio (E × F) · the bonds orbit the name itself; scrolling draws a veil over the heavens and opens the manuscript</footer>
+    </div>
+  </div>
+
+<script>
+  // Bonds in orbit around the title.
+  const BODIES = [
+    { n: 'Zeus', r: 'father', ring: 200, a: 24,  c: '#fcd34d', s: 14, t: 100 },
+    { n: 'Danaë', r: 'mother', ring: 200, a: 200, c: '#e5e7eb', s: 11, t: 100 },
+    { n: 'Andromeda', r: 'wife', ring: 280, a: 320, c: '#e5e7eb', s: 12, t: 140 },
+    { n: 'Perses', r: 'son', ring: 280, a: 60,  c: '#e5e7eb', s: 8,  t: 140 },
+    { n: 'Electryon', r: 'son', ring: 280, a: 130, c: '#e5e7eb', s: 8,  t: 140 },
+    { n: 'Gorgophone', r: 'daughter', ring: 280, a: 190, c: '#e5e7eb', s: 8, t: 140 },
+    { n: 'Athena', r: 'guide', ring: 350, a: 10,  c: '#fcd34d', s: 10, t: 180 },
+    { n: 'Hermes', r: 'guide', ring: 350, a: 150, c: '#60a5fa', s: 10, t: 180 },
+    { n: 'Dictys', r: 'foster father', ring: 350, a: 255, c: '#e5e7eb', s: 8, t: 180 },
+    { n: 'Medusa', r: 'slain', ring: 415, a: 100, c: '#f472b6', s: 11, t: 225 },
+    { n: 'Polydectes', r: 'petrified', ring: 415, a: 215, c: '#e5e7eb', s: 9, t: 225 },
+    { n: 'Acrisius', r: 'grandfather · the prophecy', ring: 415, a: 335, c: '#e5e7eb', s: 9, t: 225 },
+  ];
+  const orbits = document.getElementById('orbits');
+  BODIES.forEach(b => {
+    const w = document.createElement('div');
+    w.className = 'rw';
+    w.style.animationDuration = b.t + 's';
+    w.style.transform = `rotate(${b.a}deg)`;
+    const s = document.createElement('div');
+    s.className = 'body';
+    s.style.setProperty('--c', b.c);
+    s.style.setProperty('--s', b.s + 'px');
+    s.style.left = b.ring + 'px'; s.style.top = '0px';
+    s.dataset.n = b.n; s.dataset.r = b.r;
+    w.appendChild(s); orbits.appendChild(w);
+  });
+  // Hover: halt the heavens, name the body.
+  const helio = document.getElementById('helio'), tell = document.getElementById('tell');
+  helio.addEventListener('mouseover', e => {
+    const b = e.target.closest('.body'); if (!b) return;
+    helio.classList.add('hold');
+    tell.querySelector('b').textContent = b.dataset.n;
+    tell.querySelector('i').textContent = b.dataset.r;
+    tell.style.opacity = 1;
+  });
+  helio.addEventListener('mousemove', e => {
+    if (tell.style.opacity === '1') { tell.style.left = (e.clientX + 16) + 'px'; tell.style.top = (e.clientY - 10) + 'px'; }
+  });
+  helio.addEventListener('mouseout', e => {
+    if (e.target.closest('.body')) { helio.classList.remove('hold'); tell.style.opacity = 0; }
+  });
+  // Parallax sky.
+  const neb = document.querySelector('.neb'), stars = document.querySelector('.stars');
+  addEventListener('mousemove', e => {
+    const x = (e.clientX / innerWidth - .5), y = (e.clientY / innerHeight - .5);
+    neb.style.transform = `translate(${x * -16}px, ${y * -10}px)`;
+    stars.style.transform = `translate(${x * -30}px, ${y * -20}px)`;
+  });
+  // Reading draws the veil.
+  const veil = document.getElementById('veil');
+  addEventListener('scroll', () => {
+    const k = Math.min(scrollY / (innerHeight * .9), 1) * .58;
+    veil.style.background = `rgba(5,2,15,${k})`;
+  }, { passive: true });
+  // Lens: fade paragraphs that do not survive.
+  const lens = document.getElementById('lens'), folio = document.getElementById('folio');
+  lens.addEventListener('click', e => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    lens.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === btn));
+    const l = btn.dataset.l; let seen = 0;
+    document.querySelectorAll('.pair').forEach(p => {
+      const keep = l === 'consensus' || p.dataset.src.split(' ').includes(l);
+      p.classList.toggle('hidden', !keep); if (keep) seen++;
+    });
+    folio.classList.toggle('void', seen === 0);
+  });
+  // The margin note in view lights up.
+  const pairs = [...document.querySelectorAll('.pair')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) { pairs.forEach(p => p.classList.remove('current')); en.target.closest('.pair')?.classList.add('current'); }
+    });
+  }, { rootMargin: '-30% 0px -55% 0px' });
+  document.querySelectorAll('.para').forEach(p => io.observe(p));
+</script>
+</body>
+</html>

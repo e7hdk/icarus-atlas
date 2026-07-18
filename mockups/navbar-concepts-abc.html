@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Navbar Concepts A · B · C</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+<style>
+  /* ============ NAVBAR CONCEPTS ============
+     One shared chrome for every page of the atlas. Toggle A / B / C
+     (bottom right) and scroll: each concept declares its own scroll
+     behaviour. The page below fakes both surfaces the bar must serve —
+     an immersive canvas (galaxy/map) and a long codex page. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf;
+  }
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos); }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 14% 18%, rgba(241,245,249,.5), transparent),
+      radial-gradient(1px 1px at 71% 9%, rgba(241,245,249,.35), transparent),
+      radial-gradient(1.5px 1.5px at 36% 64%, rgba(192,132,252,.4), transparent),
+      radial-gradient(1px 1px at 88% 76%, rgba(0,229,255,.35), transparent); }
+
+  /* shared bits */
+  .brandmark { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
+  .brandmark .star { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px 3px rgba(252,211,77,.65); }
+  .brandmark b { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.8); }
+  .brandmark b em { font-style: normal; color: var(--gold); }
+  .doors { display: flex; gap: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 4px; backdrop-filter: blur(16px); }
+  .doors a { padding: 7px 15px; border-radius: 999px; border: 1px solid transparent; font: 500 11px Cinzel, serif; letter-spacing: .16em; color: var(--muted); text-decoration: none; transition: all .2s; }
+  .doors a:hover { color: var(--aether); }
+  .doors a.on { border-color: rgba(192,132,252,.5); background: rgba(124,77,255,.2); color: #e9d5ff; }
+  .act { display: flex; align-items: center; gap: 8px; }
+  .icon-pill { display: inline-flex; align-items: center; gap: 8px; height: 34px; padding: 0 12px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; color: var(--muted); backdrop-filter: blur(16px); cursor: pointer; font: 500 10px Cinzel, serif; letter-spacing: .12em; transition: all .2s; }
+  .icon-pill:hover { color: var(--aether); border-color: rgba(192,132,252,.5); }
+  .icon-pill svg { width: 13px; height: 13px; }
+  .icon-pill kbd { border: 1px solid var(--glass-border); border-radius: 6px; padding: 1px 5px; font: 500 9px Cinzel, serif; letter-spacing: .1em; color: var(--faint); }
+
+  /* ---------- CONCEPT A — Atlas Bar (fixed glass masthead) ---------- */
+  #nav-a { position: fixed; inset: 0 0 auto 0; z-index: 40; display: none; }
+  body[data-v="a"] #nav-a { display: block; }
+  #nav-a .bar { display: flex; align-items: center; gap: 16px; padding: 11px 22px; transition: background .35s, box-shadow .35s, border-color .35s; border-bottom: 1px solid transparent; }
+  #nav-a.scrolled .bar { background: rgba(10,5,30,.72); backdrop-filter: blur(18px); border-bottom-color: rgba(255,255,255,.08); box-shadow: 0 18px 50px rgba(5,2,15,.45); }
+  #nav-a .doors { position: absolute; left: 50%; transform: translateX(-50%); }
+  #nav-a .act { margin-left: auto; }
+  /* contextual crumb strip (codex pages only) — scrolls away with the page */
+  .crumb-a { max-width: 1120px; margin: 0 auto; padding: 74px 24px 0; display: flex; align-items: center; gap: 12px; font: 500 10px Cinzel, serif; letter-spacing: .22em; color: var(--faint); }
+  .crumb-a a { color: var(--muted); text-decoration: none; }
+  .crumb-a a:hover { color: var(--aether); }
+  .crumb-a .sep { color: rgba(241,245,249,.25); }
+  .crumb-a .here { color: var(--gold); }
+  .crumb-a .back { margin-right: 4px; display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 999px; color: var(--muted); text-decoration: none; font-size: 15px; }
+  .crumb-a .back:hover { color: var(--aether); border-color: rgba(192,132,252,.5); }
+  body[data-v="a"] .spacer-top { height: 0; }
+
+  /* ---------- CONCEPT B — Floating Dock (detached pill, auto-hide) ---------- */
+  #nav-b { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 40; display: none; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .35s; }
+  body[data-v="b"] #nav-b { display: block; }
+  #nav-b.hidden { transform: translateX(-50%) translateY(-160%); opacity: 0; }
+  #nav-b .dock { display: flex; align-items: center; gap: 12px; padding: 7px 9px 7px 16px; border: 1px solid var(--glass-border); background: rgba(12,6,34,.66); border-radius: 999px; backdrop-filter: blur(20px); box-shadow: 0 16px 50px rgba(5,2,15,.5), inset 0 1px 0 rgba(255,255,255,.07); }
+  #nav-b .doors { border: none; background: none; padding: 0; backdrop-filter: none; }
+  #nav-b .glyph { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px 3px rgba(252,211,77,.6); }
+  #nav-b .div { width: 1px; height: 18px; background: rgba(255,255,255,.12); }
+  #back-b { position: fixed; top: 14px; left: 18px; z-index: 40; display: none; transition: transform .35s, opacity .35s; }
+  body[data-v="b"] #back-b { display: inline-flex; }
+  #back-b.hidden { transform: translateY(-160%); opacity: 0; }
+  #gear-b { position: fixed; top: 14px; right: 18px; z-index: 40; display: none; transition: transform .35s, opacity .35s; }
+  body[data-v="b"] #gear-b { display: inline-flex; }
+  #gear-b.hidden { transform: translateY(-160%); opacity: 0; }
+
+  /* ---------- CONCEPT C — Editorial Masthead (centered wordmark) ---------- */
+  #nav-c { position: fixed; inset: 0 0 auto 0; z-index: 40; display: none; background: rgba(10,5,30,.6); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(252,211,77,.18); transition: background .35s; }
+  body[data-v="c"] #nav-c { display: block; }
+  #nav-c .upper { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: 0 auto; padding: 7px 24px; font: 500 9.5px Cinzel, serif; letter-spacing: .22em; color: var(--faint); border-bottom: 1px solid rgba(255,255,255,.06); transition: all .3s; }
+  #nav-c .upper a { color: var(--muted); text-decoration: none; }
+  #nav-c .upper a:hover { color: var(--aether); }
+  #nav-c .upper .here { color: var(--gold); }
+  #nav-c .main { display: flex; align-items: center; justify-content: center; gap: 26px; padding: 12px 24px; transition: padding .3s; }
+  #nav-c .side { display: flex; gap: 22px; }
+  #nav-c .side a { font: 500 11px Cinzel, serif; letter-spacing: .2em; color: var(--muted); text-decoration: none; padding: 6px 2px; border-bottom: 1px solid transparent; transition: all .2s; }
+  #nav-c .side a:hover { color: var(--aether); }
+  #nav-c .side a.on { color: #e9d5ff; border-bottom-color: rgba(192,132,252,.6); }
+  #nav-c .wordmark { font: 700 17px Cinzel, serif; letter-spacing: .4em; padding-left: .4em; color: var(--aether); text-decoration: none; text-shadow: 0 0 24px rgba(252,211,77,.35); transition: font-size .3s; white-space: nowrap; }
+  #nav-c .wordmark em { font-style: normal; color: var(--gold); }
+  #nav-c .wordmark .st { color: var(--gold); font-size: 12px; vertical-align: 2px; }
+  #nav-c.condensed .upper { padding-top: 0; padding-bottom: 0; height: 0; overflow: hidden; opacity: 0; border-bottom-color: transparent; }
+  #nav-c.condensed .main { padding: 9px 24px; }
+  #nav-c.condensed .wordmark { font-size: 13.5px; }
+
+  /* ---------- demo page below ---------- */
+  .canvas { position: relative; height: 86vh; display: grid; place-items: center; overflow: hidden;
+    background:
+      radial-gradient(42% 40% at 30% 42%, rgba(124,77,255,.25), transparent 68%),
+      radial-gradient(36% 34% at 72% 30%, rgba(0,229,255,.12), transparent 70%),
+      radial-gradient(30% 30% at 60% 76%, rgba(255,64,129,.1), transparent 70%), var(--cosmos-deep); }
+  .canvas .stars { position: absolute; inset: 0; background-image:
+      radial-gradient(1.6px 1.6px at 21% 34%, rgba(252,211,77,.9), transparent),
+      radial-gradient(1.2px 1.2px at 44% 58%, rgba(45,212,191,.9), transparent),
+      radial-gradient(1.4px 1.4px at 63% 27%, rgba(96,165,250,.9), transparent),
+      radial-gradient(1.2px 1.2px at 78% 66%, rgba(244,114,182,.85), transparent),
+      radial-gradient(1px 1px at 35% 78%, rgba(241,245,249,.8), transparent),
+      radial-gradient(1.1px 1.1px at 55% 42%, rgba(192,132,252,.9), transparent),
+      radial-gradient(1px 1px at 84% 22%, rgba(241,245,249,.6), transparent); }
+  .canvas h2 { position: relative; font: 700 clamp(26px,4.5vw,44px) Cinzel, serif; letter-spacing: .26em; padding-left: .26em; text-shadow: 0 0 46px rgba(192,132,252,.5); }
+  .canvas p { position: relative; margin-top: 12px; text-align: center; font-style: italic; font-size: 17px; color: var(--muted); }
+
+  .codex { max-width: 1120px; margin: 0 auto; padding: 40px 24px 120px; }
+  .codex .card { max-width: 322px; border: 1px solid rgba(252,211,77,.3); background: rgba(20,12,48,.42); padding: 26px; margin-bottom: 34px; }
+  .codex .card .t { text-align: center; font: 700 22px Cinzel, serif; letter-spacing: .15em; text-shadow: 0 0 14px rgba(45,212,191,.6); }
+  .codex .card .s { text-align: center; font-style: italic; color: var(--muted); margin-top: 6px; font-size: 15px; }
+  .codex h3 { font: 600 20px Cinzel, serif; letter-spacing: .1em; margin: 34px 0 10px; }
+  .codex p { font-size: 18.5px; line-height: 1.66; color: rgba(241,245,249,.88); max-width: 660px; }
+
+  /* variant switcher */
+  #switch { position: fixed; right: 18px; bottom: 18px; z-index: 60; display: flex; align-items: center; gap: 8px; }
+  #switch .lbl { font-style: italic; font-size: 13.5px; color: var(--faint); background: rgba(5,2,15,.7); padding: 4px 10px; border-radius: 8px; }
+  #switch .grp { display: flex; gap: 4px; border: 1px solid var(--glass-border); background: rgba(12,6,34,.8); border-radius: 999px; padding: 4px; backdrop-filter: blur(14px); }
+  #switch button { width: 38px; height: 34px; border-radius: 999px; border: 1px solid transparent; background: none; color: var(--muted); font: 600 12px Cinzel, serif; cursor: pointer; }
+  #switch button.on { background: rgba(252,211,77,.16); border-color: rgba(252,211,77,.5); color: #fde68a; }
+
+  @media (max-width: 720px) {
+    #nav-a .doors a, #nav-b .doors a { padding: 7px 10px; letter-spacing: .1em; }
+    #nav-a .brandmark b { display: none; }
+    #nav-c .side { gap: 12px; }
+    #nav-c .wordmark { letter-spacing: .22em; }
+    .crumb-a { padding-top: 66px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body data-v="a">
+<div class="dust"></div>
+
+<!-- ============ A — ATLAS BAR ============ -->
+<header id="nav-a">
+  <div class="bar">
+    <a class="brandmark" href="#"><span class="star"></span><b>ICARUS <em>ATLAS</em></b></a>
+    <nav class="doors">
+      <a class="on" href="#">GALAXY</a><a href="#">LANDS</a><a href="#">MYTHS</a>
+    </nav>
+    <div class="act">
+      <button class="icon-pill" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg>
+        SEARCH <kbd>⌘K</kbd>
+      </button>
+      <button class="icon-pill" type="button" aria-label="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ B — FLOATING DOCK ============ -->
+<div id="nav-b">
+  <div class="dock">
+    <span class="glyph"></span>
+    <nav class="doors">
+      <a class="on" href="#">GALAXY</a><a href="#">LANDS</a><a href="#">MYTHS</a>
+    </nav>
+    <span class="div"></span>
+    <button class="icon-pill" style="border:none;background:none;padding:0 4px" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg>
+      <kbd>⌘K</kbd>
+    </button>
+  </div>
+</div>
+<a id="back-b" class="icon-pill" href="#" aria-label="Back">←</a>
+<button id="gear-b" class="icon-pill" type="button" aria-label="Settings">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1" stroke-linecap="round"/></svg>
+</button>
+
+<!-- ============ C — EDITORIAL MASTHEAD ============ -->
+<header id="nav-c">
+  <div class="upper">
+    <span><a href="#">← THE GALAXY</a> <span style="color:rgba(241,245,249,.25)">/</span> <span class="here">THE CODEX OF PERSEUS</span></span>
+    <span style="display:flex;gap:18px"><a href="#">SEARCH ⌘K</a><a href="#">SETTINGS</a></span>
+  </div>
+  <div class="main">
+    <nav class="side">
+      <a class="on" href="#">GALAXY</a><a href="#">LANDS</a>
+    </nav>
+    <a class="wordmark" href="#"><span class="st">✦</span> ICARUS <em>ATLAS</em> <span class="st">✦</span></a>
+    <nav class="side">
+      <a href="#">MYTHS</a><a href="#">SEARCH</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ the two surfaces every concept must serve ============ -->
+<section class="canvas">
+  <div class="stars"></div>
+  <div style="position:relative;text-align:center">
+    <h2>THE GALAXY OF MYTH</h2>
+    <p>an immersive canvas — how much sky does each bar cost?</p>
+  </div>
+</section>
+
+<div class="crumb-a" id="crumb-a">
+  <a class="back" href="#">←</a>
+  <a href="#">GALAXY</a><span class="sep">/</span><span class="here">THE CODEX OF PERSEUS</span>
+</div>
+
+<main class="codex">
+  <div class="card">
+    <div class="t">PERSEUS</div>
+    <div class="s">the marquee rides under whichever bar you pick</div>
+  </div>
+  <h3>Scroll to feel each bar</h3>
+  <p>Concept A deepens its glass as the page scrolls and never leaves. Concept B steps aside the moment you read downward and returns the instant you look up. Concept C folds its breadcrumb row away and shrinks the wordmark to a single quiet line.</p>
+  <h3>The chest on the waves</h3>
+  <p>Born in a subterranean bronze chamber after Zeus visited his mother Danaë in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.</p>
+  <h3>The Gorgon quest</h3>
+  <p>To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon Medusa. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades. He beheaded Medusa and used her petrifying gaze to turn his enemies to stone.</p>
+  <h3>Return &amp; Mycenae</h3>
+  <p>After rescuing and marrying the Aethiopian princess Andromeda, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.</p>
+  <h3>And on the tale runs</h3>
+  <p>Keep scrolling — the point of this page is the chrome above it, not the prose. Watch how each concept treats the reading line, the immersive canvas, and your way back to the three doors of the atlas.</p>
+  <h3>The three doors</h3>
+  <p>Galaxy, Lands, Myths. Wherever a reader stands — a codex, a city sky, a saga — the doors should be one glance and one click away, and the search never further than ⌘K.</p>
+</main>
+
+<div id="switch">
+  <span class="lbl" id="switch-lbl">A — Atlas Bar</span>
+  <div class="grp">
+    <button class="on" data-v="a">A</button>
+    <button data-v="b">B</button>
+    <button data-v="c">C</button>
+  </div>
+</div>
+
+<script>
+  const LABELS = { a: 'A — Atlas Bar', b: 'B — Floating Dock', c: 'C — Editorial Masthead' };
+  const sw = document.getElementById('switch');
+  sw.addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    document.body.dataset.v = b.dataset.v;
+    sw.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    document.getElementById('switch-lbl').textContent = LABELS[b.dataset.v];
+  });
+
+  const navA = document.getElementById('nav-a');
+  const navB = document.getElementById('nav-b');
+  const backB = document.getElementById('back-b');
+  const gearB = document.getElementById('gear-b');
+  const navC = document.getElementById('nav-c');
+  let lastY = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    // A: glass deepens once the page moves
+    navA.classList.toggle('scrolled', y > 40);
+    // B: hide on scroll down, reveal on scroll up
+    const down = y > lastY && y > 120;
+    navB.classList.toggle('hidden', down);
+    backB.classList.toggle('hidden', down);
+    gearB.classList.toggle('hidden', down);
+    // C: condense past the fold
+    navC.classList.toggle('condensed', y > 60);
+    lastY = y;
+  }, { passive: true });
+</script>
+</body>
+</html>

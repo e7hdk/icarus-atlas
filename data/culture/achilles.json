@@ -29,5 +29,35 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Leon_Benouville_The_Wrath_of_Achilles.jpg/960px-Leon_Benouville_The_Wrath_of_Achilles.jpg",
       "description": "This Neoclassical canvas by the French painter François-Léon Benouville, awarded a prize at the École des Beaux-Arts, isolates Achilles in a moment of brooding rage as he sits apart from the Greek camp. Idealized in the academic tradition, the hero clutches his weapons and stares fixedly ahead, embodying the menis — the divine wrath — that is the very first word of the Iliad. The restrained palette and sculptural figure exemplify mid-nineteenth-century French history painting's fascination with Homeric subjects."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Brad Pitt's Achilles carries Petersen's de-godded Iliad: the wrath, Patroclus and the duel with Hector staged as blockbuster spectacle — the myth's widest cinema audience to date.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Achilles Last Stand",
+      "year": "1976",
+      "kind": "song",
+      "composer": "Led Zeppelin",
+      "description": "The galloping ten-minute opener of Presence, cut while Robert Plant was still mending from the car crash that shattered his ankle — the title a wry nod to the hero's one weak point.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Achilles_Last_Stand"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "The Song of Achilles",
+      "year": "2011",
+      "kind": "novel",
+      "creator": "Madeline Miller",
+      "description": "Miller retells the Iliad through Patroclus' eyes, from Pelion to the pyre; the novel won the 2012 Orange Prize and returned Achilles to the bestseller lists three millennia on.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Song_of_Achilles"
+    }
   ]
 }

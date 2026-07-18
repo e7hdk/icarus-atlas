@@ -22,5 +22,31 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Triumphant_Achilles_in_Achilleion.jpg/960px-Triumphant_Achilles_in_Achilleion.jpg",
       "description": "Monumental fresco by the Austrian painter Franz Matsch in the main hall of the Achilleion, the palace built on Corfu for Empress Elisabeth of Austria. Achilles drives his chariot in triumph before the walls of Troy, dragging the lifeless body of Hector in the dust behind him as the Trojans watch from the ramparts."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Eric Bana's Hector is the film's moral centre — the defender who fights for a city and a family, not a goddess's vanity — until the duel with Achilles ends the Iliad's greatest warrior on a beach of sand and CGI.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's widescreen epic keeps Hector as Troy's shield: the prince who holds the wall while Paris' choice unravels the house of Priam.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle gives Hector room to be husband, brother and captain — the farewell with Andromache staged again for a streaming age.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
   ]
 }

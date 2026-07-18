@@ -1,0 +1,15 @@
+{
+  "id": "diasia",
+  "name": "Diasia",
+  "greekName": "Διάσια",
+  "deities": ["zeus"],
+  "place": "athens",
+  "atticDate": { "month": "anthesterion", "days": [23] },
+  "conventionalDates": ["02-23"],
+  "summary": "The greatest Athenian feast of Zeus — Zeus Meilichios, the placable one of the underworld shape — kept outside the walls with bloodless offerings and family gatherings.",
+  "testimonia": [
+    "Thucydides 1.126.6 (the Diasia, greatest festival of Zeus Meilichios)",
+    "Scholia to Aristophanes, Clouds 408 (23 Anthesterion)",
+    "Mikalson (1975) 117–118"
+  ]
+}

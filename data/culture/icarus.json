@@ -1,0 +1,40 @@
+{
+  "id": "icarus",
+  "artworks": [
+    {
+      "title": "Landscape with the Fall of Icarus",
+      "artist": "After Pieter Bruegel the Elder",
+      "year": "c. 1560",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Pieter_Bruegel_de_Oude_-_De_val_van_Icarus.jpg/960px-Pieter_Bruegel_de_Oude_-_De_val_van_Icarus.jpg",
+      "description": "A ploughman keeps his furrow and a galleon sails on while two white legs vanish into the green sea — the fall reduced to a splash nobody notices. Long attributed to Bruegel and now generally thought an early copy of his lost original, the painting in the Royal Museums of Fine Arts of Belgium inspired famous poems by Auden and William Carlos Williams."
+    }
+  ],
+  "music": [
+    {
+      "title": "Flight of Icarus",
+      "year": "1983",
+      "kind": "song",
+      "composer": "Iron Maiden",
+      "description": "Maiden's single from Piece of Mind, cut while the wax myth was pure heavy-metal material: the boy's climb becomes a son's defiance of a betraying father, and the fall a blaze of glory rather than a warning heeded.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Flight_of_Icarus"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Kid Icarus",
+      "year": "1986",
+      "kind": "videogame",
+      "creator": "Nintendo",
+      "description": "Pit, a winged boy archer, escapes an underworld prison to save a Greek-flavoured skyworld from Medusa. The name and the wings are Icarus' own — borrowed for a flight that, for once, ends happily.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Kid_Icarus"
+    },
+    {
+      "title": "Musée des Beaux Arts",
+      "year": "1938",
+      "kind": "other",
+      "creator": "W. H. Auden",
+      "description": "Auden's poem, written after standing before Bruegel's Fall of Icarus in Brussels, reads the unnoticed splash as the shape of all suffering — the ploughman keeps his furrow, the ship sails calmly on, and disaster happens off to the side.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux_Arts_(poem)"
+    }
+  ]
+}

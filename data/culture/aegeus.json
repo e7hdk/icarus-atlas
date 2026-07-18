@@ -22,5 +22,33 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Antoine_Placide_Gibert_Th%C3%A9s%C3%A9e_reconnu_par_son_p%C3%A8re.JPG/960px-Antoine_Placide_Gibert_Th%C3%A9s%C3%A9e_reconnu_par_son_p%C3%A8re.JPG",
       "description": "Antoine-Placide Gibert treats the same Prix de Rome subject of 1832: the recognition of Theseus by King Aegeus of Athens. At the banquet arranged by the sorceress Medea to poison the newly arrived stranger, Aegeus spies the family sword Theseus carries and dashes away the deadly cup, embracing the son he had never met. The dramatic, theatrically lit composition belongs to the museum tradition of French academic history painting and is housed in the Musée des Beaux-Arts de Bordeaux."
     }
+  ],
+  "films": [
+    {
+      "title": "Medea",
+      "year": "1988",
+      "medium": "tv",
+      "director": "Lars von Trier",
+      "description": "Von Trier keeps Aegeus in Euripides' Corinth frame: the Athenian king who offers Medea sanctuary, the political exit that lets her revenge proceed.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_(1988_film)"
+    },
+    {
+      "title": "Minotaur, the Wild Beast of Crete",
+      "year": "1960",
+      "medium": "film",
+      "director": "Silvio Amadio",
+      "description": "The peplum keeps Aegeus as the father watching the black sail: the king whose suicide gives the Aegean its name when Theseus forgets the white signal.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "The King Must Die",
+      "year": "1958",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's Aegeus is the aging king of Athens who leaves the tokens under the rock — the father Theseus must claim before Crete.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_King_Must_Die"
+    }
   ]
 }

@@ -17,7 +17,12 @@ import {
   sourceSchema,
   storySchema,
   storyCrossingsSchema,
+  voyageSchema,
   chronologySchema,
+  spotlightOverridesSchema,
+  spotlightWeeksSchema,
+  festivalSchema,
+  sacredDaysSchema,
 } from '../src/lib/schemas';
 import { CREATURE_KINDS, NYMPH_KINDS } from '../src/types/character';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
@@ -447,6 +452,8 @@ if (existsSync(charDir)) {
 // 6. Stories: schema, parent nesting, cast/place references, story topics.
 const storyDir = join(DATA_DIR, 'stories');
 const storyIds = new Set<string>();
+/** id → parent/chapterCount, for the voyage-overlay checks in §6d. */
+const storiesMeta = new Map<string, { parent: string | null; chapterCount: number }>();
 let storyCount = 0;
 if (existsSync(storyDir)) {
   const parsedStories = [];
@@ -461,6 +468,10 @@ if (existsSync(storyDir)) {
     if (file !== `${parsed.data.id}.json`) errors.push(`stories/${file}: filename must match id "${parsed.data.id}"`);
     if (storyIds.has(parsed.data.id)) errors.push(`stories/${file}: duplicate id "${parsed.data.id}"`);
     storyIds.add(parsed.data.id);
+    storiesMeta.set(parsed.data.id, {
+      parent: parsed.data.parent,
+      chapterCount: parsed.data.chapters.length,
+    });
     parsedStories.push(parsed.data);
     storyCount++;
   }
@@ -525,6 +536,8 @@ if (Array.isArray(featuresRaw)) {
 
 // Optional saga artwork galleries (story pages).
 let storyCultureCount = 0;
+/** story id → imagery-bearing item titles (artworks + artifacts), for voyage art picks. */
+const storyCultureTitles = new Map<string, Set<string>>();
 const storyCultureDir = join(DATA_DIR, 'story-culture');
 if (existsSync(storyCultureDir)) {
   for (const file of readdirSync(storyCultureDir).filter((f) => f.endsWith('.json'))) {
@@ -543,6 +556,13 @@ if (existsSync(storyCultureDir)) {
     if (!storyIds.has(parsed.data.id)) {
       errors.push(`story-culture/${file}: unknown story "${parsed.data.id}"`);
     }
+    storyCultureTitles.set(
+      parsed.data.id,
+      new Set([
+        ...parsed.data.artworks.map((a) => a.title),
+        ...(parsed.data.artifacts ?? []).map((a) => a.title),
+      ]),
+    );
     storyCultureCount++;
   }
 }
@@ -604,6 +624,81 @@ if (existsSync(chronologyPath)) {
   }
 }
 
+// 6d. Voyage overlays (the experience layer, docs/NOSTOS_PLAN.md §7): stations must
+//     reference real episodes of the voyage's saga, in-range chapters, resolvable
+//     art picks, real cities, and declared movements in monotone order.
+let voyageCount = 0;
+const voyageDir = join(DATA_DIR, 'experience');
+if (existsSync(voyageDir)) {
+  for (const file of readdirSync(voyageDir).filter((f) => f.endsWith('.json'))) {
+    const raw = loadJson(join(voyageDir, file));
+    if (raw === null) continue;
+    const parsed = voyageSchema.safeParse(raw);
+    if (!parsed.success) {
+      errors.push(
+        `experience/${file}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+      );
+      continue;
+    }
+    const voyage = parsed.data;
+    if (file !== `${voyage.id}.json`) errors.push(`experience/${file}: filename must match id "${voyage.id}"`);
+    if (!storyIds.has(voyage.story)) errors.push(`experience/${file}: unknown story "${voyage.story}"`);
+
+    const declaredMovements = new Set(voyage.movements.map((m) => m.n));
+    if (voyage.movements.length !== declaredMovements.size) {
+      errors.push(`experience/${file}: duplicate movement declarations`);
+    }
+
+    const stationIds = new Set<string>();
+    let lastMovement = 0;
+    for (const station of voyage.stations) {
+      const at = `experience/${file} [${station.id}]`;
+      if (stationIds.has(station.id)) errors.push(`${at}: duplicate station id`);
+      stationIds.add(station.id);
+
+      if (!declaredMovements.has(station.movement)) {
+        errors.push(`${at}: movement ${station.movement} is not declared`);
+      }
+      if (station.movement < lastMovement) {
+        errors.push(`${at}: movements must be monotone along the voyage`);
+      }
+      lastMovement = Math.max(lastMovement, station.movement);
+
+      const episode = storiesMeta.get(station.episode);
+      if (!episode) {
+        errors.push(`${at}: unknown episode "${station.episode}"`);
+      } else {
+        if (station.episode !== voyage.story && episode.parent !== voyage.story) {
+          errors.push(`${at}: episode "${station.episode}" is not part of saga "${voyage.story}"`);
+        }
+        for (const index of station.chapterIndexes ?? []) {
+          if (index >= episode.chapterCount) {
+            errors.push(`${at}: chapter index ${index} out of range (episode has ${episode.chapterCount})`);
+          }
+        }
+      }
+
+      for (const pick of station.art ?? []) {
+        const titles = storyCultureTitles.get(pick.culture);
+        if (!titles) {
+          errors.push(`${at}: art pick references story-culture "${pick.culture}" which has no file`);
+          continue;
+        }
+        for (const title of pick.titles) {
+          if (!titles.has(title)) {
+            errors.push(`${at}: art pick "${title}" not found in story-culture/${pick.culture}.json`);
+          }
+        }
+      }
+
+      if (station.place && !cityIds.has(station.place)) {
+        errors.push(`${at}: unknown city "${station.place}"`);
+      }
+    }
+    voyageCount++;
+  }
+}
+
 // 7. Every disputed topic must be documented before it can surface in the UI.
 const contradictions = readFileSync(CONTRADICTIONS_PATH, 'utf-8');
 const documentedTopics = new Set(
@@ -619,8 +714,144 @@ for (const [topic, entries] of topics) {
   }
 }
 
+// 8. Spotlight overrides (the Ephemeris pool, docs/EPHEMERIS_PLAN.md D8):
+//    pins/exclusions must reference real characters, never repeat, never overlap.
+let spotlightPins = 0;
+let spotlightExclusions = 0;
+{
+  const spotlightPath = join(DATA_DIR, 'spotlight', 'spotlight.json');
+  if (!existsSync(spotlightPath)) {
+    errors.push('spotlight/spotlight.json: missing — the Ephemeris pool needs it (may be empty lists)');
+  } else {
+    const raw = loadJson(spotlightPath);
+    if (raw !== null) {
+      const parsed = spotlightOverridesSchema.safeParse(raw);
+      if (!parsed.success) {
+        errors.push(`spotlight/spotlight.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      } else {
+        for (const [label, list] of [
+          ['pins', parsed.data.pins],
+          ['exclusions', parsed.data.exclusions],
+        ] as const) {
+          const seen = new Set<string>();
+          for (const id of list) {
+            if (!charIds.has(id)) errors.push(`spotlight/spotlight.json: unknown character "${id}" in ${label}`);
+            if (seen.has(id)) errors.push(`spotlight/spotlight.json: duplicate "${id}" in ${label}`);
+            seen.add(id);
+          }
+        }
+        for (const id of parsed.data.pins.filter((pin) => parsed.data.exclusions.includes(pin))) {
+          errors.push(`spotlight/spotlight.json: "${id}" is both pinned and excluded`);
+        }
+        spotlightPins = parsed.data.pins.length;
+        spotlightExclusions = parsed.data.exclusions.length;
+      }
+    }
+  }
+}
+
+// 9. Curated Ephemeris weeks (data/spotlight/weeks.json, docs/EPHEMERIS_PLAN.md D4):
+//    each entry must point at a real story, pin real characters, and claim its
+//    ISO week only once. Eligibility of pinned days is validate-ephemeris's job.
+let curatedWeeks = 0;
+{
+  const weeksPath = join(DATA_DIR, 'spotlight', 'weeks.json');
+  if (!existsSync(weeksPath)) {
+    errors.push('spotlight/weeks.json: missing — the Ephemeris week overrides need it (may be an empty array)');
+  } else {
+    const raw = loadJson(weeksPath);
+    if (raw !== null) {
+      const parsed = spotlightWeeksSchema.safeParse(raw);
+      if (!parsed.success) {
+        errors.push(`spotlight/weeks.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      } else {
+        const seenWeeks = new Set<string>();
+        for (const entry of parsed.data) {
+          if (seenWeeks.has(entry.isoWeek)) {
+            errors.push(`spotlight/weeks.json: duplicate isoWeek "${entry.isoWeek}"`);
+          }
+          seenWeeks.add(entry.isoWeek);
+          if (!storyIds.has(entry.story)) {
+            errors.push(`spotlight/weeks.json [${entry.isoWeek}]: unknown story "${entry.story}"`);
+          }
+          for (const [day, id] of Object.entries(entry.days ?? {})) {
+            if (id && !charIds.has(id)) {
+              errors.push(`spotlight/weeks.json [${entry.isoWeek}]: unknown character "${id}" on ${day}`);
+            }
+          }
+        }
+        curatedWeeks = parsed.data.length;
+      }
+    }
+  }
+}
+
+// 10. Festivals (data/festivals/*.json, docs/EPHEMERIS_PLAN.md M12.4):
+//     lens-independent reference layer pinned to the Attic calendar — every
+//     deity, place and aition must resolve, ids must be unique.
+let festivalCount = 0;
+{
+  const dir = join(DATA_DIR, 'festivals');
+  if (existsSync(dir)) {
+    const festivalIds = new Set<string>();
+    for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
+      const raw = loadJson(join(dir, file));
+      if (raw === null) continue;
+      const parsed = festivalSchema.safeParse(raw);
+      if (!parsed.success) {
+        errors.push(`festivals/${file}: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+        continue;
+      }
+      const festival = parsed.data;
+      if (file !== `${festival.id}.json`) errors.push(`festivals/${file}: filename must match id "${festival.id}"`);
+      if (festivalIds.has(festival.id)) errors.push(`festivals/${file}: duplicate id "${festival.id}"`);
+      festivalIds.add(festival.id);
+      for (const deity of festival.deities) {
+        if (!charIds.has(deity)) errors.push(`festivals/${file}: unknown deity "${deity}"`);
+      }
+      if (festival.place && !placeIds.has(festival.place)) {
+        errors.push(`festivals/${file}: unknown place "${festival.place}"`);
+      }
+      if (festival.aition && !storyIds.has(festival.aition)) {
+        errors.push(`festivals/${file}: unknown aition story "${festival.aition}"`);
+      }
+      if (festival.atticDate.days && festival.atticDate.days.length === 2 &&
+          festival.atticDate.days[0] > festival.atticDate.days[1]) {
+        errors.push(`festivals/${file}: atticDate days out of order`);
+      }
+      festivalCount++;
+    }
+  }
+}
+
+// 11. Monthly sacred days (data/sacred-days.json): deities must resolve and
+//     each day-number may carry only one entry.
+let sacredDayCount = 0;
+{
+  const sacredPath = join(DATA_DIR, 'sacred-days.json');
+  if (existsSync(sacredPath)) {
+    const raw = loadJson(sacredPath);
+    if (raw !== null) {
+      const parsed = sacredDaysSchema.safeParse(raw);
+      if (!parsed.success) {
+        errors.push(`sacred-days.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`);
+      } else {
+        const seenDays = new Set<number>();
+        for (const sacred of parsed.data) {
+          if (seenDays.has(sacred.day)) errors.push(`sacred-days.json: duplicate day ${sacred.day}`);
+          seenDays.add(sacred.day);
+          for (const deity of sacred.deities) {
+            if (!charIds.has(deity)) errors.push(`sacred-days.json [day ${sacred.day}]: unknown deity "${deity}"`);
+          }
+        }
+        sacredDayCount = parsed.data.length;
+      }
+    }
+  }
+}
+
 console.log(
-  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Chronology anchors: ${chronologyAnchorCount} · Disputed topics: ${info.length}`,
+  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Disputed topics: ${info.length}`,
 );
 for (const line of info) console.log(`  ⚖ ${line}`);
 

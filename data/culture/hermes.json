@@ -15,5 +15,49 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg/960px-Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg",
       "description": "A bronze statue by the Mannerist sculptor Giambologna, now in the Museo Nazionale del Bargello, Florence. The messenger god is caught in full flight, balanced on one foot upon a breath of air issuing from the mouth of a wind god, caduceus in hand and winged sandals barely touching the earth. Its weightless poise made it one of the most influential and widely reproduced sculptures of the late Renaissance."
     }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney's winged messenger is all sunglasses and rapid-fire delivery — Hermes as celestial courier and comic MC, complete with the gospel Muses on call.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Hermes in his Homeric office: the god who brings moly to Odysseus on Circe's island and clears the path home.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "Jason and the Argonauts",
+      "year": "1963",
+      "medium": "film",
+      "director": "Don Chaffey",
+      "description": "Harryhausen's adventure puts Hermes among the Olympians watching Jason's voyage — the messenger at the edge of the divine board.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Hermes' boons are all dash and haste — the fleet-footed god as the run's tempo, chattering from the surface while Zagreus sprints.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "He remains the Olympian of speed in the sequel, now pacing Melinoë's hunt with the same restless wit.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

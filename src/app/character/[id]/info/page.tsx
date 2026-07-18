@@ -3,9 +3,13 @@ import { notFound } from 'next/navigation';
 import { loadAtlasData, loadReference } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
-import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
-import { CharacterShell } from '@/components/character/CharacterShell';
-import { GlassPanel } from '@/components/ui/GlassPanel';
+import { storiesFeaturingCharacter } from '@/features/stories/appearances';
+import { CharacterTabs } from '@/components/character/CharacterTabs';
+import { CharacterCodexPanel } from '@/components/character/CharacterCodexPanel';
+import { CrumbBar } from '@/components/hud/CrumbBar';
+import { TYPE_GLOW } from '@/types/character';
+
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
 export async function generateStaticParams() {
   const { characters } = await loadAtlasData();
@@ -24,10 +28,21 @@ export default async function CharacterInfoPage(props: { params: Promise<{ id: s
 
   const reference = await loadReference(id);
   const byId = new Map(characters.map((c) => [c.id, c]));
-  const storyIndex = storiesById(stories);
+  const citiesById = new Map(cities.map((city) => [city.id, city]));
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
+  const glow = TYPE_GLOW[character.type].color;
 
-  const parentEdges = relations.filter((r) => r.type === 'parent' && r.from === id);
+  const codexRelations = relations.filter(
+    (relation) => relation.from === character.id || relation.to === character.id,
+  );
+  const codexCharacterIds = new Set(
+    codexRelations.flatMap((relation) => [relation.from, relation.to]),
+  );
+  const codexCharacters = characters
+    .filter((candidate) => codexCharacterIds.has(candidate.id))
+    .map(({ id: candidateId, name, type }) => ({ id: candidateId, name, type }));
+
+  const parentEdges = codexRelations.filter((r) => r.type === 'parent' && r.from === id);
   const parentNames = [...new Set(parentEdges.map((r) => byId.get(r.to)?.name ?? r.to))];
   const parentageDisputed = parentEdges.some((r) => r.topic);
 
@@ -69,88 +84,126 @@ export default async function CharacterInfoPage(props: { params: Promise<{ id: s
     ...(reference?.etymology ? [{ label: 'Etymology', value: reference.etymology }] : []),
   ];
 
+  const sections = reference?.sections ?? [];
+  const contents = [
+    ...sections.map((section, index) => ({ id: `article-${index + 1}`, label: section.heading })),
+    { id: 'at-a-glance', label: 'At a glance' },
+  ];
+
   return (
-    <CharacterShell
-      character={character}
-      active="info"
-      cities={cities}
-      storyAppearances={storyAppearances}
-      storiesById={storyIndex}
-    >
-      <div className="mx-auto mt-9 max-w-3xl">
-        {reference ? (
-          <GlassPanel className="bg-glass-heavy px-7 py-6">
-            <p className="font-body text-lg leading-relaxed text-aether/90">{reference.summary}</p>
-            <p className="mt-3 font-body text-sm italic text-aether-faint">{reference.attribution}</p>
-          </GlassPanel>
-        ) : (
-          <p className="text-center font-body text-lg italic text-aether-faint">
-            The reference entry for this figure is still being written.
-          </p>
-        )}
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-20">
+      <CrumbBar
+        back={{ href: '/', label: 'Back to the galaxy' }}
+        trail={[{ href: '/', label: 'Galaxy' }]}
+        current={`The codex of ${character.name}`}
+        laurelCharacterId={character.id}
+      />
 
-        {reference?.sections?.length ? (
-          <div className="mt-9 space-y-8">
-            {reference.sections.map((section) => (
-              <section key={section.heading}>
-                <h2 className="font-display text-[19px] tracking-[0.02em] text-aether border-b border-glass-border pb-2">
-                  {section.heading}
-                </h2>
-                <div className="mt-3 space-y-3">
-                  {section.paragraphs.map((paragraph, index) => (
-                    <p
-                      key={index}
-                      className="font-body text-[17px] leading-relaxed text-aether/85"
-                    >
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </section>
-            ))}
-          </div>
-        ) : null}
+      <nav className="mt-4 flex justify-center">
+        <CharacterTabs characterId={character.id} active="info" />
+      </nav>
 
-        <h2 className="mt-10 font-display text-[12px] tracking-[0.26em] text-aether-faint">
-          AT A GLANCE
-        </h2>
-        <div className="mt-4 overflow-hidden rounded-2xl border border-glass-border">
-          {facts.map((fact, index) => (
-            <div
-              key={fact.label}
-              className={`flex flex-wrap gap-x-6 gap-y-1 px-6 py-3.5 ${
-                index % 2 ? 'bg-white/[0.02]' : 'bg-white/[0.05]'
-              }`}
-            >
-              <span className="w-36 shrink-0 font-display text-[11px] uppercase tracking-[0.18em] text-aether-faint leading-6">
-                {fact.label}
-              </span>
-              <span className="min-w-0 flex-1 font-body text-[16px] text-aether/90">
-                {fact.value}
-              </span>
+      <div className="mt-8 grid gap-8 lg:grid-cols-[322px_minmax(0,1fr)] lg:gap-x-14">
+        <CharacterCodexPanel
+          character={character}
+          characters={codexCharacters}
+          relations={codexRelations}
+          contentsHeading="THE ARTICLE"
+          contents={contents}
+          residences={(character.residences ?? []).map((residence) => ({
+            city: residence.city,
+            label: citiesById.get(residence.city)?.name ?? residence.city,
+          }))}
+          appearances={storyAppearances.map((story) => ({ id: story.id, title: story.title }))}
+        />
+
+        <div className="max-w-[680px]">
+          {reference ? (
+            <div className="border-l-2 pl-6" style={{ borderColor: `${glow}80` }}>
+              <p className="font-body text-lg leading-relaxed text-aether/90">
+                {reference.summary}
+              </p>
+              <p className="mt-2.5 font-body text-sm italic text-aether-faint">
+                {reference.attribution}
+              </p>
             </div>
-          ))}
-        </div>
+          ) : (
+            <p className="font-body text-lg italic text-aether-faint">
+              The reference entry for this figure is still being written.
+            </p>
+          )}
 
-        {reference?.externalLinks?.length ? (
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <span className="font-display text-[11px] tracking-[0.22em] text-aether-faint">
-              READ MORE
-            </span>
-            {reference.externalLinks.map((link) => (
-              <a
-                key={link.url}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-glass-border bg-glass px-4 py-1.5 font-body text-[15px] text-aether/85 transition-colors hover:border-nebula-soft/50 hover:text-aether"
-              >
-                {link.label} ↗
-              </a>
-            ))}
-          </div>
-        ) : null}
+          {sections.length > 0 && (
+            <div className="mt-12 space-y-11">
+              {sections.map((section, index) => (
+                <section key={section.heading} id={`article-${index + 1}`} className="scroll-mt-6">
+                  <h2 className="flex items-baseline gap-3">
+                    <span className="font-display text-[12px] tracking-[0.12em] text-star-olympian/70">
+                      {ROMAN[index] ?? String(index + 1)}.
+                    </span>
+                    <span className="font-display text-[19px] tracking-[0.02em] text-aether">
+                      {section.heading}
+                    </span>
+                    <span className="h-px min-w-6 flex-1 self-center bg-glass-border" />
+                  </h2>
+                  <div className="mt-3.5 space-y-3">
+                    {section.paragraphs.map((paragraph, paragraphIndex) => (
+                      <p
+                        key={paragraphIndex}
+                        className="font-body text-[17px] leading-relaxed text-aether/85"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+          )}
+
+          <section id="at-a-glance" className="mt-12 scroll-mt-6">
+            <h2 className="font-display text-[12px] tracking-[0.26em] text-aether-faint">
+              AT A GLANCE
+            </h2>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-glass-border">
+              {facts.map((fact, index) => (
+                <div
+                  key={fact.label}
+                  className={`flex flex-wrap gap-x-6 gap-y-1 px-6 py-3.5 ${
+                    index % 2 ? 'bg-white/[0.02]' : 'bg-white/[0.05]'
+                  }`}
+                >
+                  <span className="w-36 shrink-0 font-display text-[11px] uppercase leading-6 tracking-[0.18em] text-aether-faint">
+                    {fact.label}
+                  </span>
+                  <span className="min-w-0 flex-1 font-body text-[16px] text-aether/90">
+                    {fact.value}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {reference?.externalLinks?.length ? (
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <span className="font-display text-[11px] tracking-[0.22em] text-aether-faint">
+                READ MORE
+              </span>
+              {reference.externalLinks.map((link) => (
+                <a
+                  key={link.url}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-glass-border bg-glass px-4 py-1.5 font-body text-[15px] text-aether/85 transition-colors hover:border-nebula-soft/50 hover:text-aether"
+                >
+                  {link.label} ↗
+                </a>
+              ))}
+            </div>
+          ) : null}
+        </div>
       </div>
-    </CharacterShell>
+    </main>
   );
 }

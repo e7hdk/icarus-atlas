@@ -1,0 +1,17 @@
+{
+  "id": "hyakinthia",
+  "name": "Hyakinthia",
+  "greekName": "Ὑακίνθια",
+  "deities": ["apollo", "hyacinthus"],
+  "place": "amyclae",
+  "atticDate": { "month": "thargelion", "approximate": true },
+  "conventionalDates": ["05-16", "05-17", "05-18"],
+  "aition": "hyacinthus",
+  "summary": "Three days at Amyclae that turn from mourning to song: offerings passed to Hyacinthus through the bronze door of his tomb beneath Apollo's throne, then the god's own day of choirs and riders.",
+  "testimonia": [
+    "Pausanias 3.19.3–5 (the throne of Amyclae and Hyacinthus' tomb beneath it)",
+    "Athenaeus 4.139d–f (the three days, grief then festival)",
+    "Xenophon, Hellenica 4.5.11 (the Amyclaeans always go home for the Hyakinthia)",
+    "Spartan month Hyakinthios ≈ early summer — the Attic mapping is a convention"
+  ]
+}

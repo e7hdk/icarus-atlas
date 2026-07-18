@@ -22,5 +22,51 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Vognstyreren-fra_Delfi2.jpg/960px-Vognstyreren-fra_Delfi2.jpg",
       "description": "A rare surviving Greek bronze of a victorious charioteer, dedicated at Apollo's sanctuary at Delphi to commemorate a chariot-race triumph. Its calm, austere features exemplify the Early Classical severe style. It is preserved in the Delphi Archaeological Museum."
     }
+  ],
+  "films": [
+    {
+      "title": "Immortals",
+      "year": "2011",
+      "medium": "film",
+      "director": "Tarsem Singh",
+      "description": "Tarsem's hyper-stylised Olympus puts Apollo among the gods who descend to fight the Titans — the archer of light in a bronze-and-blood tableau.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Immortals_(2011_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Apollo",
+      "year": "1928",
+      "kind": "ballet",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Apollon musagète for Diaghilev's Ballets Russes shows the young god taught by the Muses — cool, luminous classicism after the shock of the Rite.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Apollo_(ballet)"
+    },
+    {
+      "title": "Apollo et Hyacinthus",
+      "year": "1767",
+      "kind": "opera",
+      "composer": "Wolfgang Amadeus Mozart",
+      "description": "Mozart's first true opera, written at eleven: Apollo's love for Hyacinthus, the jealous Zephyrus, and the boy reborn as a flower — Latin school drama set to precocious music.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Apollo_et_Hyacinthus"
+    },
+    {
+      "title": "Daphne",
+      "year": "1938",
+      "kind": "opera",
+      "composer": "Richard Strauss",
+      "description": "Strauss's bucolic tragedy ends as Apollo transforms the fleeing Daphne into the laurel — the god of music mourning the voice he has just silenced.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Daphne_(opera)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Apollo joins the Olympian boon roster in Supergiant's sequel: radiant strikes and harmonious casts from the god of light as Melinoë hunts Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

@@ -44426,5 +44426,53 @@
     "to": "archelaus-electryonid",
     "sources": ["apollodorus"],
     "note": "Sons of Electryon by Anaxo (Bibliotheca 2.4.5)"
+  },
+  {
+    "id": "mentor-ithaca-ally-odysseus",
+    "type": "ally",
+    "from": "mentor-ithaca",
+    "to": "odysseus",
+    "sources": ["homer"],
+    "note": "Comrade given all the king's house in charge when Odysseus sailed for Troy (Odyssey 2.225–241)"
+  },
+  {
+    "id": "odysseus-ally-mentor-ithaca",
+    "type": "ally",
+    "from": "odysseus",
+    "to": "mentor-ithaca",
+    "sources": ["homer"],
+    "note": "Entrusted his household to the old man on departing with his ships (Odyssey 2.225–241)"
+  },
+  {
+    "id": "mentor-ithaca-ally-telemachus",
+    "type": "ally",
+    "from": "mentor-ithaca",
+    "to": "telemachus",
+    "sources": ["homer"],
+    "note": "Rose for the absent king's son at the Ithacan assembly; Athena guides the boy in his likeness (Odyssey 2.225–241, 2.267–268)"
+  },
+  {
+    "id": "telemachus-ally-mentor-ithaca",
+    "type": "ally",
+    "from": "telemachus",
+    "to": "mentor-ithaca",
+    "sources": ["homer"],
+    "note": "Sailed to Pylos beside the Mentor-shaped goddess and leaned on the old man's name (Odyssey 2.399–406; 3.12–28)"
+  },
+  {
+    "id": "argos-dog-ally-odysseus",
+    "type": "ally",
+    "from": "argos-dog",
+    "to": "odysseus",
+    "sources": ["homer"],
+    "note": "The hound who alone knew his master through the disguise, in the twentieth year (Odyssey 17.290–327)"
+  },
+  {
+    "id": "odysseus-ally-argos-dog",
+    "type": "ally",
+    "from": "odysseus",
+    "to": "argos-dog",
+    "sources": ["homer"],
+    "note": "Bred the hound before Troy; looked aside and wiped away a tear at the dung-heap (Odyssey 17.290–305)"
   }
 ]

@@ -29,5 +29,39 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/PanandDaphnis.jpg",
       "description": "This Roman marble group, copied from a Hellenistic Greek original, shows the goat-horned Pan leaning close to instruct the young herdsman Daphnis in the art of the syrinx. The sculpture embodies Pan's role as the divine source of pastoral music: it was Pan, the Arcadians said, who first discovered the music of the pipes at Melpeia on the Nomian Mountains, and the reed flute he invented passed from the god to mortal shepherds. The intimate, tender grouping reflects the bucolic charm prized in Hellenistic art."
     }
+  ],
+  "music": [
+    {
+      "title": "Syrinx",
+      "year": "1913",
+      "kind": "orchestral",
+      "composer": "Claude Debussy",
+      "description": "Debussy's unaccompanied flute solo takes the nymph's name — Pan's lost beloved as a breath of solo reed, the pastoral myth distilled to one player.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Syrinx_(Debussy)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Panic",
+      "year": "—",
+      "kind": "language",
+      "description": "English panic descends from Pan — the sudden terror said to seize flocks and armies when the goat-god's shout rolled through the trees.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Panic"
+    },
+    {
+      "title": "The Great God Pan",
+      "year": "1894",
+      "kind": "novel",
+      "creator": "Arthur Machen",
+      "description": "Machen's horror novella turns the rustic god into a Victorian nightmare of transcendence and ruin — Pan as the force that shatters the thin veil of the everyday.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Great_God_Pan"
+    },
+    {
+      "title": "Pan flute",
+      "year": "—",
+      "kind": "other",
+      "description": "The syrinx of reed pipes still bears Pan's name worldwide — the god's pursuit of Syrinx turned into the instrument of shepherds and concert stages.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Pan_flute"
+    }
   ]
 }

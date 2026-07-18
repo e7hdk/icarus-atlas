@@ -1,0 +1,16 @@
+{
+  "id": "city-dionysia",
+  "name": "City Dionysia",
+  "greekName": "Διονύσια τὰ ἐν ἄστει",
+  "deities": ["dionysus"],
+  "place": "athens",
+  "panhellenic": true,
+  "atticDate": { "month": "elaphebolion", "days": [10, 16] },
+  "conventionalDates": ["03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16"],
+  "summary": "The great spring theatre festival: the old image of Dionysus escorted in from the road to Eleutherae, and days of dithyramb, tragedy and comedy before the assembled city and its guests.",
+  "testimonia": [
+    "Aeschines 3.68 (the assembly after the City Dionysia in Elaphebolion)",
+    "IG II² 1006 (the ephebes escort the image from the eschara)",
+    "Mikalson (1975) 123–129 (10–16 Elaphebolion)"
+  ]
+}

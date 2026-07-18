@@ -1,4 +1,5 @@
 import type { Character, Relation, RelationType } from '@/types/character';
+import { hashString, mulberry32 } from '@/lib/prng';
 
 export type Vec3 = [number, number, number];
 
@@ -174,26 +175,9 @@ export function realmOf(character: Character): Realm {
 
 /* --------------------------- deterministic rng --------------------------- */
 
-/** FNV-1a — stable across sessions so the sky never rearranges between visits. */
-export function hashString(input: string): number {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < input.length; i++) {
-    h ^= input.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return h >>> 0;
-}
-
-export function mulberry32(seed: number): () => number {
-  let a = seed;
-  return () => {
-    a |= 0;
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
+/** Lifted verbatim into src/lib/prng.ts (the Ephemeris shares them);
+ *  re-exported here so the galaxy/spindle callers keep their import path. */
+export { hashString, mulberry32 } from '@/lib/prng';
 
 /** Random point inside a cluster's band volume — same elevation model as
  *  computePositions, so nebula wisps and dust stars share the stars' bands. */

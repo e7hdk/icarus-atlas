@@ -39,3 +39,10 @@
   --color-star-nymph: #4ade80;
   --color-star-creature: #f472b6;
 }
+
+/* "Gilded" variant (Settings toggle → html[data-theme='gilded']): gold as
+   JEWELRY at focal points, never as an ambient wash — the fifth UX review
+   killed a token-level tint that muddied panels and dimmed captions. No
+   token here changes; the scoped placements live in src/app/globals.css
+   (wordmark, active door, the bar's gold thread, and corner ornaments on the
+   reading fragments only — panels and functional chrome stay clean). */

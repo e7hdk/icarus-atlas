@@ -1,0 +1,15 @@
+{
+  "id": "lenaia",
+  "name": "Lenaia",
+  "greekName": "Λήναια",
+  "deities": ["dionysus"],
+  "place": "athens",
+  "atticDate": { "month": "gamelion", "days": [12, 15], "approximate": true },
+  "conventionalDates": ["01-12", "01-13", "01-14", "01-15"],
+  "summary": "The midwinter Dionysia of the wine-press, a festival of comedy above all, when the archon basileus led the procession and the theatre belonged mostly to Athenians.",
+  "testimonia": [
+    "IG II² 1496 (the Lenaia accounts)",
+    "Aristophanes, Acharnians 504–506 (\"we are by ourselves at the Lenaion\")",
+    "Mikalson (1975) 109–110 (the days a reconstruction around 12 Gamelion)"
+  ]
+}

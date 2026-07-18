@@ -1,0 +1,17 @@
+{
+  "id": "eleusinian-mysteries",
+  "name": "Eleusinian Mysteries",
+  "greekName": "Μυστήρια",
+  "deities": ["demeter", "persephone"],
+  "place": "eleusis",
+  "panhellenic": true,
+  "atticDate": { "month": "boedromion", "days": [15, 23] },
+  "conventionalDates": ["09-15", "09-16", "09-17", "09-18", "09-19", "09-20", "09-21", "09-22", "09-23"],
+  "aition": "hymn-to-demeter",
+  "summary": "The great autumn initiation at Eleusis: nine days from the gathering in Athens to the night of the Telesterion, promising the initiate a kinder portion in the world below — founded, the hymn says, by Demeter herself as she mourned for Persephone.",
+  "testimonia": [
+    "Homeric Hymn to Demeter 470–482 (the founding of the rites)",
+    "IG I³ 6 (the Eleusinian regulations)",
+    "Mikalson (1975) 54–60 (15–23 Boedromion)"
+  ]
+}

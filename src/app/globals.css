@@ -113,10 +113,63 @@ body {
   animation-play-state: paused;
 }
 
+/* The codex seal (character marquee): while a passage is under the reader's
+   eyes, its bonds burn and the rest of the heavens recede. Driven imperatively
+   via data attributes from CharacterTheatre's scroll trace. */
+.orrery[data-follow='true'] [data-seal-body] {
+  opacity: 0.16;
+}
+.orrery[data-follow='true'] [data-seal-body][data-now='true'] {
+  opacity: 1;
+}
+
+/* City gates (city codex): the HER SKY gate's drifting starfield preview. */
+@keyframes gate-sky-drift {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 60%; }
+}
+.gate-sky {
+  background:
+    radial-gradient(1.6px 1.6px at 16% 34%, rgb(252 211 77 / 0.95), transparent),
+    radial-gradient(1.3px 1.3px at 30% 64%, rgb(45 212 191 / 0.95), transparent),
+    radial-gradient(1.2px 1.2px at 44% 26%, rgb(229 231 235 / 0.9), transparent),
+    radial-gradient(1.5px 1.5px at 58% 58%, rgb(96 165 250 / 0.95), transparent),
+    radial-gradient(1.2px 1.2px at 72% 30%, rgb(192 132 252 / 0.95), transparent),
+    radial-gradient(1.3px 1.3px at 84% 66%, rgb(229 231 235 / 0.85), transparent),
+    radial-gradient(1.2px 1.2px at 24% 82%, rgb(244 114 182 / 0.85), transparent),
+    radial-gradient(1.2px 1.2px at 66% 84%, rgb(252 211 77 / 0.8), transparent),
+    radial-gradient(80% 130% at 50% 130%, rgb(124 77 255 / 0.22), transparent 70%),
+    #070317;
+  background-size: 200% 200%;
+  animation: gate-sky-drift 26s ease-in-out infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gate-sky { animation: none; }
+}
+
+/* Story theatre (story page): hovering a player on the marquee lights every
+   mention of them in the prose. Filter boosts the link's own type-glow color,
+   so it never fights the inline styling of CharacterTypeLink. */
+.story-cast-lit {
+  filter: brightness(1.45) drop-shadow(0 0 9px currentColor);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* City stars on the areas map: restrained pulse around the cartographic spark. */
 @keyframes city-twinkle {
   0%, 100% { transform: scale(0.94); }
   50% { transform: scale(1.1); }
+}
+
+/* Artwork lightbox (legacy galleries): veil fade + piece rise */
+@keyframes artwork-veil-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes artwork-zoom-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Search overlay (⌘K): veil fade + panel rise */
@@ -127,6 +180,150 @@ body {
 @keyframes search-panel-in {
   from { opacity: 0; transform: translateY(10px) scale(0.985); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* The Proem — cinematic staging over the live galaxy (docs/EPHEMERIS_PLAN.md §6).
+ * Letterbox bars scale in, the invocation settles out of wide tracking like a
+ * film title, beats rise from the stage floor, the trace breathes (Ken Burns).
+ * All applied through motion-safe: variants — reduced motion gets the same
+ * full-bleed composition, just still. */
+@keyframes proem-bar-in {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@keyframes proem-title-in {
+  from { opacity: 0; letter-spacing: 0.45em; transform: translateY(18px); }
+  to { opacity: 1; letter-spacing: 0.14em; transform: translateY(0); }
+}
+@keyframes proem-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes proem-kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+/* Stage sparks — a scatter of ✦ over the proem's upper stage, each on its own
+ * slow phase so the field never reads as a loop. */
+@keyframes proem-twinkle {
+  0%, 100% { opacity: 0.12; transform: scale(0.85); }
+  50% { opacity: 0.75; transform: scale(1.15); }
+}
+/* Gilded variant — gold as jewelry, placed only where the eye should land;
+   every token stays Aether Nebula, so readability is untouched by design.
+   The four placements: the wordmark, the active door, a gold thread under
+   the bar, and illuminated corner ornaments on the glass panels. */
+[data-theme='gilded'] ::selection {
+  background: rgb(252 211 77 / 0.28);
+  color: #05020f;
+}
+[data-theme='gilded'] .icarus-brand {
+  color: #fcd34d;
+  text-shadow: 0 0 16px rgb(252 211 77 / 0.45);
+}
+[data-theme='gilded'] .icarus-brand img {
+  filter: drop-shadow(0 0 8px rgb(252 211 77 / 0.42));
+}
+[data-theme='gilded'] .atlas-bar::after {
+  content: '';
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgb(252 211 77 / 0.55), transparent);
+  pointer-events: none;
+}
+[data-theme='gilded'] .nav-active {
+  border-color: rgb(252 211 77 / 0.55);
+  background: rgb(252 211 77 / 0.12);
+  color: #fcd34d;
+}
+/* Corner ornaments — READING FRAGMENTS ONLY (ninth UX review: every panel
+   and functional surface stays clean; the illumination belongs to the
+   prose). Each story passage / chapter section gets serifed arms, a square
+   volute coiled in the elbow, and a small diamond seal on the diagonal.
+   In-flow pseudo blocks with self-cancelling margins: zero layout cost,
+   floating just outside the fragment's corners, clear of the text. */
+[data-theme='gilded'] .gilded-prose::before,
+[data-theme='gilded'] .gilded-prose::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cg fill='none' stroke='%23fcd34d' stroke-opacity='0.62' stroke-width='1.3'%3E%3Cpath d='M23 2 H2 V23'/%3E%3Cpath d='M23 0.5 V3.5 M0.5 23 H3.5'/%3E%3Cpath d='M16 6.5 H6.5 V16 H11.5 V10.5 H9'/%3E%3C/g%3E%3Crect x='16.6' y='16.6' width='3.2' height='3.2' transform='rotate(45 18.2 18.2)' fill='%23fcd34d' fill-opacity='0.55'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  pointer-events: none;
+}
+[data-theme='gilded'] .gilded-prose::before {
+  margin-top: -32px;
+  margin-bottom: 2px;
+  margin-left: -26px;
+}
+[data-theme='gilded'] .gilded-prose::after {
+  margin-top: 2px;
+  margin-bottom: -32px;
+  margin-right: -26px;
+  margin-left: auto;
+  transform: rotate(180deg);
+}
+
+/* On the voyage the app scrollbar retires — Penelope's thread (with its
+   station knots) is the only guide. Toggled on <html> by VoyageView. */
+html.voyage-hide-scrollbar {
+  scrollbar-width: none;
+}
+html.voyage-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Nostos arrival reveals — content blocks rise softly as the reader lands on
+   them (IntersectionObserver stamps data-shown once; reduced motion shows all). */
+.voyage-reveal {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.voyage-reveal[data-shown='true'] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .voyage-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Nostos pinned-scene atmosphere: the breathing aura behind a held fragment,
+   the Sirens' expanding song-rings, and the underworld's drifting shades.
+   Transform/opacity only; every use is motion-safe-gated. */
+@keyframes voyage-aura-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.72; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+@keyframes voyage-song-ring {
+  0% { transform: scale(0.35); opacity: 0; }
+  12% { opacity: 0.55; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+@keyframes voyage-shade-drift {
+  0%, 100% { transform: translate3d(-3%, 2%, 0); }
+  50% { transform: translate3d(3%, -2%, 0); }
+}
+
+/* Nostos star-sea — two nebula washes breathing over the voyage (transform/
+   opacity only; stilled by motion-safe gating in StarSea). */
+@keyframes voyage-swell {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.75; }
+  50% { transform: translate3d(3%, 2%, 0) scale(1.07); opacity: 1; }
+}
+
+/* The chip's beckon — a soft breathing halo until today's telling is opened. */
+@keyframes ephemeris-beckon {
+  0%, 100% { box-shadow: 0 0 0 0 var(--ephemeris-beckon-color, rgba(192, 132, 252, 0)); }
+  50% { box-shadow: 0 0 14px 3px var(--ephemeris-beckon-color, rgba(192, 132, 252, 0.45)); }
 }
 
 /* MapLibre Lands map — canvas fills the container; controls stay hidden (M9.4). */

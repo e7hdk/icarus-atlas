@@ -1,0 +1,76 @@
+{
+  "id": "orestes",
+  "artworks": [
+    {
+      "title": "Orestes Pursued by the Furies",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1862",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Orestes_Pursued_by_the_Furies_by_William-Adolphe_Bouguereau_%281862%29_-_Google_Art_Project.jpg/960px-Orestes_Pursued_by_the_Furies_by_William-Adolphe_Bouguereau_%281862%29_-_Google_Art_Project.jpg",
+      "description": "Bouguereau's famous remorse scene shows Orestes after the matricide: naked, recoiling, while the Erinyes throng around him with snakes and torches and Clytemnestra's corpse lies at his feet. The canvas is the Oresteia's nightmare made flesh — the avenger hunted by the Furies for the blood he was ordered to spill. Oil on canvas, Chrysler Museum of Art."
+    },
+    {
+      "title": "Pylades and Orestes Brought as Victims before Iphigenia",
+      "artist": "Benjamin West",
+      "year": "1766",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Benjamin_West_-_Pylades_and_Orestes_Brought_as_Victims_before_Iphigenia_-_Google_Art_Project.jpg/960px-Benjamin_West_-_Pylades_and_Orestes_Brought_as_Victims_before_Iphigenia_-_Google_Art_Project.jpg",
+      "description": "West's National Gallery oil sends the Fury-haunted Orestes to Tauris with Pylades: the two Greeks bound as sacrificial victims before the priestess who is his sister. The painting catches Euripides' recognition plot at its sharpest — the matricide still hunted, almost killed by the sibling Artemis once saved. Oil on canvas, National Gallery, London."
+    },
+    {
+      "title": "Orestes and Electra (Palazzo Altemps)",
+      "artist": "Unknown (Roman copy after Greek original)",
+      "year": "1st century AD (after a Hellenistic original)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Altemps_Orestes_y_Electra_01.JPG/960px-Altemps_Orestes_y_Electra_01.JPG",
+      "description": "The marble group in Rome's Palazzo Altemps pairs Orestes with Electra in a quiet standing embrace — the siblings of the Libation Bearers just before or after the recognition that leads to Clytemnestra's death. A Roman copy of a Hellenistic type, it fixes Orestes as the returned avenger beside the sister who kept the vow alive. Museo Nazionale Romano, Palazzo Altemps."
+    },
+    {
+      "title": "Sarcophagus of Orestes",
+      "artist": "Unknown (Roman sculptor)",
+      "year": "c. AD 100–125",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Antica_roma%2C_sarcofago_di_oreste%2C_100-125_dc_ca.jpg/960px-Antica_roma%2C_sarcofago_di_oreste%2C_100-125_dc_ca.jpg",
+      "description": "This Roman marble sarcophagus compresses the Oresteia into a continuous frieze: the murder of Aegisthus and Clytemnestra, the pursuit by the Furies, and the refuge at Delphi. Orestes appears as the cycle's central actor — killer, hunted, and suppliant. Cleveland Museum of Art."
+    },
+    {
+      "title": "Orestes and Pylades (San Ildefonso Group, Prado)",
+      "artist": "Unknown (Roman copy after Greek original)",
+      "year": "c. 1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Grupo_de_Orestes_y_P%C3%ADlades_%28Museo_del_Prado%29.jpg/960px-Grupo_de_Orestes_y_P%C3%ADlades_%28Museo_del_Prado%29.jpg",
+      "description": "The Prado's San Ildefonso Group — long read as Orestes and Pylades — shows two youths in sacrificial quiet, one resting an arm on the other's shoulder. Whether cast as the Dioscuri or the Oresteia's inseparable pair, the sculpture has entered Orestes' afterlife as the image of the friend who shares exile, Tauris, and the blood-debt. Museo del Prado, Madrid."
+    }
+  ],
+  "films": [
+    {
+      "title": "Electra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Cacoyannis' Orestes returns in secret to kill his mother and Aegisthus — the matricide that ends one curse and begins the Furies' chase.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(1962_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Iphigénie en Tauride",
+      "year": "1779",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck's reform masterpiece sends Orestes to Tauris still hunted by the Furies — recognition with Iphigenia, and a brotherhood with Pylades that steals the show.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iphig%C3%A9nie_en_Tauride"
+    },
+    {
+      "title": "Elektra",
+      "year": "1909",
+      "kind": "opera",
+      "composer": "Richard Strauss",
+      "description": "In Strauss' one-act nightmare Orestes is the long-awaited brother who finally strikes — the axe behind Electra's dance.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Elektra_(opera)"
+    },
+    {
+      "title": "Ermione",
+      "year": "1819",
+      "kind": "opera",
+      "composer": "Gioachino Rossini",
+      "description": "Rossini's Orestes arrives in Epirus still carrying the Oresteia's blood — the avenger as rival to Pyrrhus for Hermione.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ermione"
+    }
+  ]
+}

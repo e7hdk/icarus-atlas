@@ -1,10 +1,19 @@
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
-import { storiesById, storiesFeaturingCharacter } from '@/features/stories/appearances';
-import { CharacterShell } from '@/components/character/CharacterShell';
+import { storiesFeaturingCharacter } from '@/features/stories/appearances';
+import { CharacterTabs } from '@/components/character/CharacterTabs';
+import { CharacterCodexPanel } from '@/components/character/CharacterCodexPanel';
+import { ArtworkImage } from '@/components/ui/ArtworkImage';
+import {
+  CultureShelves,
+  ShelfHeading,
+  cultureHasAnything,
+  cultureShelfAnchors,
+} from '@/components/culture/CultureShelves';
+import { CrumbBar } from '@/components/hud/CrumbBar';
+import { TYPE_GLOW } from '@/types/character';
 
 export async function generateStaticParams() {
   const { characters } = await loadAtlasData();
@@ -13,7 +22,7 @@ export async function generateStaticParams() {
 
 export default async function CharacterLegacyPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [{ characters }, cities, stories] = await Promise.all([
+  const [{ characters, relations }, cities, stories] = await Promise.all([
     loadAtlasData(),
     loadCities(),
     loadStories(),
@@ -23,64 +32,103 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
 
   const culture = await loadCulture(id);
   const artworks = culture?.artworks ?? [];
-  const storyIndex = storiesById(stories);
+  const citiesById = new Map(cities.map((city) => [city.id, city]));
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
+  const glow = TYPE_GLOW[character.type].color;
+
+  const codexRelations = relations.filter(
+    (relation) => relation.from === character.id || relation.to === character.id,
+  );
+  const codexCharacterIds = new Set(
+    codexRelations.flatMap((relation) => [relation.from, relation.to]),
+  );
+  const codexCharacters = characters
+    .filter((candidate) => codexCharacterIds.has(candidate.id))
+    .map(({ id: candidateId, name, type }) => ({ id: candidateId, name, type }));
 
   return (
-    <CharacterShell
-      character={character}
-      active="legacy"
-      cities={cities}
-      storyAppearances={storyAppearances}
-      storiesById={storyIndex}
-    >
-      <div className="mx-auto mt-9 max-w-5xl">
-        <p className="text-center font-body text-lg italic text-aether-muted">
-          Unchanged by any teller — how the centuries since have seen {character.name}.
-        </p>
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-20">
+      <CrumbBar
+        back={{ href: '/', label: 'Back to the galaxy' }}
+        trail={[{ href: '/', label: 'Galaxy' }]}
+        current={`The codex of ${character.name}`}
+        laurelCharacterId={character.id}
+      />
 
-        {artworks.length > 0 ? (
-          <div className="mt-12 flex flex-col gap-16">
-            {artworks.map((artwork, index) => (
-              <figure
-                key={artwork.imageUrl}
-                className={`flex flex-col gap-6 md:items-center md:gap-12 ${
-                  index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
-                }`}
-              >
-                <div className="group relative h-80 w-full shrink-0 overflow-hidden rounded-2xl border border-glass-border md:h-96 md:w-[46%]">
-                  <Image
-                    src={artwork.imageUrl}
-                    alt={artwork.title}
-                    fill
-                    unoptimized
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                  />
-                </div>
-                <figcaption className="min-w-0 flex-1">
-                  <h3 className="font-display text-xl tracking-[0.06em] text-aether">
-                    {artwork.title}
-                  </h3>
-                  <p className="mt-1.5 font-body text-[15px] italic text-aether-muted">
-                    {artwork.artist}, {artwork.year}
-                  </p>
-                  <span
-                    className="mt-4 block h-px w-14 bg-gradient-to-r from-nebula-soft/70 to-transparent"
-                    aria-hidden
-                  />
-                  <p className="mt-4 font-body text-lg leading-relaxed text-aether/90">
-                    {artwork.description}
-                  </p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        ) : (
-          <p className="mt-14 text-center font-body text-lg italic text-aether-faint">
-            The gallery for this figure is still being curated — the galaxy grows one star at a time.
+      <nav className="mt-4 flex justify-center">
+        <CharacterTabs characterId={character.id} active="legacy" />
+      </nav>
+
+      <div className="mt-8 grid gap-8 lg:grid-cols-[322px_minmax(0,1fr)] lg:gap-x-14">
+        <CharacterCodexPanel
+          character={character}
+          characters={codexCharacters}
+          relations={codexRelations}
+          contentsHeading="THE SHELVES"
+          contents={cultureShelfAnchors(culture)}
+          residences={(character.residences ?? []).map((residence) => ({
+            city: residence.city,
+            label: citiesById.get(residence.city)?.name ?? residence.city,
+          }))}
+          appearances={storyAppearances.map((story) => ({ id: story.id, title: story.title }))}
+        />
+
+        <div className="max-w-[680px]">
+          <p
+            className="border-l-2 pl-6 font-body text-xl italic leading-relaxed text-aether-muted"
+            style={{ borderColor: `${glow}80` }}
+          >
+            Unchanged by any teller — how the centuries since have seen {character.name}.
           </p>
-        )}
+
+          {artworks.length > 0 && (
+            <section id="shelf-gallery" className="mt-14 scroll-mt-6">
+              <ShelfHeading>The gallery</ShelfHeading>
+              <div className="mt-9 flex flex-col gap-14">
+                {artworks.map((artwork, index) => (
+                  <figure
+                    key={artwork.imageUrl}
+                    className={`flex flex-col gap-6 md:items-center md:gap-10 ${
+                      index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
+                    }`}
+                  >
+                    <ArtworkImage
+                      src={artwork.imageUrl}
+                      title={artwork.title}
+                      meta={`${artwork.artist}, ${artwork.year}`}
+                      className="h-72 w-full shrink-0 md:h-80 md:w-[46%]"
+                    />
+                    <figcaption className="min-w-0 flex-1">
+                      <h3 className="font-display text-lg tracking-[0.06em] text-aether">
+                        {artwork.title}
+                      </h3>
+                      <p className="mt-1.5 font-body text-[15px] italic text-aether-muted">
+                        {artwork.artist}, {artwork.year}
+                      </p>
+                      <span
+                        className="mt-4 block h-px w-14 bg-gradient-to-r from-nebula-soft/70 to-transparent"
+                        aria-hidden
+                      />
+                      <p className="mt-4 font-body text-[16.5px] leading-relaxed text-aether/90">
+                        {artwork.description}
+                      </p>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {culture && <CultureShelves culture={culture} />}
+
+          {!cultureHasAnything(culture) && (
+            <p className="mt-14 font-body text-lg italic text-aether-faint">
+              The gallery for this figure is still being curated — the galaxy grows one star at a
+              time.
+            </p>
+          )}
+        </div>
       </div>
-    </CharacterShell>
+    </main>
   );
 }

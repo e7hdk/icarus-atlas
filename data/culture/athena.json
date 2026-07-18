@@ -22,5 +22,51 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Klimt_-_Pallas_Athene.jpeg/960px-Klimt_-_Pallas_Athene.jpeg",
       "description": "An oil painting of Athena in gleaming golden armor, the gorgoneion on her breast and a small nude figure of victory in her hand, her gaze level and unyielding. Painted at the height of the Vienna Secession, it became an emblem of the movement. It is held by the Wien Museum, Vienna."
     }
+  ],
+  "films": [
+    {
+      "title": "Clash of the Titans",
+      "year": "1981",
+      "medium": "film",
+      "director": "Desmond Davis",
+      "description": "Harryhausen's Athena arms Perseus for the quest — owl, shield and divine counsel — the goddess of strategy as the hero's Olympian quartermaster.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Athena as Odysseus' steadfast advocate, steering the nostos while Poseidon rages — the grey-eyed goddess of the poem made flesh for television.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Il pomo d'oro",
+      "year": "1668",
+      "kind": "opera",
+      "composer": "Antonio Cesti",
+      "description": "Cesti's colossal Viennese festa teatrale stages the Judgement of Paris and the golden apple: Athena among the three goddesses whose quarrel lights the road to Troy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Il_pomo_d%27oro"
+    },
+    {
+      "title": "The Golden Apple",
+      "year": "1954",
+      "kind": "stage",
+      "composer": "Jerome Moross",
+      "description": "Broadway's through-sung Homer pastiche casts Athena in the angel-food contest for the golden apple — wisdom arguing its case in a Washington-state town fair.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Golden_Apple_(musical)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Athena's boons in Supergiant's underworld run are all deflection and disciplined strike — the goddess of strategy as a build you can feel in the dash.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
   ]
 }

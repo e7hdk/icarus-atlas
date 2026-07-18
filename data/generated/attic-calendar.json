@@ -1,0 +1,1156 @@
+{
+  "convention": "Reconstruction: Hekatombaion Day 1 = the Athens day after the first new-moon conjunction following the June solstice; each conjunction starts the next month the same way; 13-lunation years double Poseideon (poseideon-ii); Olympiad years (astronomical ≡ 1 mod 4) record the second full moon after the solstice as the games peak. Modern convention — the UI always labels it \"reconstructed\".",
+  "engine": "astronomy-engine ^2.1.19",
+  "years": [
+    {
+      "atticYear": "2024/2025",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2024-07-07"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2024-08-05"
+        },
+        {
+          "name": "boedromion",
+          "start": "2024-09-04"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2024-10-03"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2024-11-02"
+        },
+        {
+          "name": "poseideon",
+          "start": "2024-12-02"
+        },
+        {
+          "name": "gamelion",
+          "start": "2025-01-01"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2025-01-30"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2025-03-01"
+        },
+        {
+          "name": "mounichion",
+          "start": "2025-03-30"
+        },
+        {
+          "name": "thargelion",
+          "start": "2025-04-28"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2025-05-28"
+        }
+      ]
+    },
+    {
+      "atticYear": "2025/2026",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2025-06-26"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2025-07-25"
+        },
+        {
+          "name": "boedromion",
+          "start": "2025-08-24"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2025-09-22"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2025-10-22"
+        },
+        {
+          "name": "poseideon",
+          "start": "2025-11-21"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2025-12-21"
+        },
+        {
+          "name": "gamelion",
+          "start": "2026-01-19"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2026-02-18"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2026-03-20"
+        },
+        {
+          "name": "mounichion",
+          "start": "2026-04-18"
+        },
+        {
+          "name": "thargelion",
+          "start": "2026-05-17"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2026-06-16"
+        }
+      ],
+      "olympicPeak": "2025-08-09"
+    },
+    {
+      "atticYear": "2026/2027",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2026-07-15"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2026-08-13"
+        },
+        {
+          "name": "boedromion",
+          "start": "2026-09-12"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2026-10-11"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2026-11-10"
+        },
+        {
+          "name": "poseideon",
+          "start": "2026-12-10"
+        },
+        {
+          "name": "gamelion",
+          "start": "2027-01-08"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2027-02-07"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2027-03-09"
+        },
+        {
+          "name": "mounichion",
+          "start": "2027-04-08"
+        },
+        {
+          "name": "thargelion",
+          "start": "2027-05-07"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2027-06-05"
+        }
+      ]
+    },
+    {
+      "atticYear": "2027/2028",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2027-07-05"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2027-08-03"
+        },
+        {
+          "name": "boedromion",
+          "start": "2027-09-01"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2027-10-01"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2027-10-30"
+        },
+        {
+          "name": "poseideon",
+          "start": "2027-11-29"
+        },
+        {
+          "name": "gamelion",
+          "start": "2027-12-28"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2028-01-27"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2028-02-26"
+        },
+        {
+          "name": "mounichion",
+          "start": "2028-03-27"
+        },
+        {
+          "name": "thargelion",
+          "start": "2028-04-25"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2028-05-25"
+        }
+      ]
+    },
+    {
+      "atticYear": "2028/2029",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2028-06-23"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2028-07-23"
+        },
+        {
+          "name": "boedromion",
+          "start": "2028-08-21"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2028-09-19"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2028-10-19"
+        },
+        {
+          "name": "poseideon",
+          "start": "2028-11-17"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2028-12-17"
+        },
+        {
+          "name": "gamelion",
+          "start": "2029-01-15"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2029-02-14"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2029-03-16"
+        },
+        {
+          "name": "mounichion",
+          "start": "2029-04-15"
+        },
+        {
+          "name": "thargelion",
+          "start": "2029-05-14"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2029-06-13"
+        }
+      ]
+    },
+    {
+      "atticYear": "2029/2030",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2029-07-12"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2029-08-11"
+        },
+        {
+          "name": "boedromion",
+          "start": "2029-09-09"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2029-10-08"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2029-11-07"
+        },
+        {
+          "name": "poseideon",
+          "start": "2029-12-06"
+        },
+        {
+          "name": "gamelion",
+          "start": "2030-01-05"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2030-02-03"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2030-03-05"
+        },
+        {
+          "name": "mounichion",
+          "start": "2030-04-04"
+        },
+        {
+          "name": "thargelion",
+          "start": "2030-05-03"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2030-06-02"
+        }
+      ],
+      "olympicPeak": "2029-07-25"
+    },
+    {
+      "atticYear": "2030/2031",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2030-07-02"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2030-07-31"
+        },
+        {
+          "name": "boedromion",
+          "start": "2030-08-30"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2030-09-28"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2030-10-27"
+        },
+        {
+          "name": "poseideon",
+          "start": "2030-11-26"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2030-12-25"
+        },
+        {
+          "name": "gamelion",
+          "start": "2031-01-24"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2031-02-22"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2031-03-24"
+        },
+        {
+          "name": "mounichion",
+          "start": "2031-04-22"
+        },
+        {
+          "name": "thargelion",
+          "start": "2031-05-22"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2031-06-21"
+        }
+      ]
+    },
+    {
+      "atticYear": "2031/2032",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2031-07-20"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2031-08-19"
+        },
+        {
+          "name": "boedromion",
+          "start": "2031-09-17"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2031-10-17"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2031-11-15"
+        },
+        {
+          "name": "poseideon",
+          "start": "2031-12-15"
+        },
+        {
+          "name": "gamelion",
+          "start": "2032-01-13"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2032-02-12"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2032-03-12"
+        },
+        {
+          "name": "mounichion",
+          "start": "2032-04-11"
+        },
+        {
+          "name": "thargelion",
+          "start": "2032-05-10"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2032-06-09"
+        }
+      ]
+    },
+    {
+      "atticYear": "2032/2033",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2032-07-08"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2032-08-07"
+        },
+        {
+          "name": "boedromion",
+          "start": "2032-09-05"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2032-10-05"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2032-11-04"
+        },
+        {
+          "name": "poseideon",
+          "start": "2032-12-03"
+        },
+        {
+          "name": "gamelion",
+          "start": "2033-01-02"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2033-02-01"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2033-03-02"
+        },
+        {
+          "name": "mounichion",
+          "start": "2033-03-31"
+        },
+        {
+          "name": "thargelion",
+          "start": "2033-04-30"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2033-05-29"
+        }
+      ]
+    },
+    {
+      "atticYear": "2033/2034",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2033-06-28"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2033-07-27"
+        },
+        {
+          "name": "boedromion",
+          "start": "2033-08-26"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2033-09-24"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2033-10-24"
+        },
+        {
+          "name": "poseideon",
+          "start": "2033-11-23"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2033-12-22"
+        },
+        {
+          "name": "gamelion",
+          "start": "2034-01-21"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2034-02-20"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2034-03-21"
+        },
+        {
+          "name": "mounichion",
+          "start": "2034-04-19"
+        },
+        {
+          "name": "thargelion",
+          "start": "2034-05-19"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2034-06-17"
+        }
+      ],
+      "olympicPeak": "2033-08-10"
+    },
+    {
+      "atticYear": "2034/2035",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2034-07-16"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2034-08-15"
+        },
+        {
+          "name": "boedromion",
+          "start": "2034-09-13"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2034-10-13"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2034-11-12"
+        },
+        {
+          "name": "poseideon",
+          "start": "2034-12-11"
+        },
+        {
+          "name": "gamelion",
+          "start": "2035-01-10"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2035-02-09"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2035-03-11"
+        },
+        {
+          "name": "mounichion",
+          "start": "2035-04-09"
+        },
+        {
+          "name": "thargelion",
+          "start": "2035-05-08"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2035-06-07"
+        }
+      ]
+    },
+    {
+      "atticYear": "2035/2036",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2035-07-06"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2035-08-04"
+        },
+        {
+          "name": "boedromion",
+          "start": "2035-09-03"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2035-10-02"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2035-11-01"
+        },
+        {
+          "name": "poseideon",
+          "start": "2035-11-30"
+        },
+        {
+          "name": "gamelion",
+          "start": "2035-12-30"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2036-01-29"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2036-02-28"
+        },
+        {
+          "name": "mounichion",
+          "start": "2036-03-28"
+        },
+        {
+          "name": "thargelion",
+          "start": "2036-04-27"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2036-05-26"
+        }
+      ]
+    },
+    {
+      "atticYear": "2036/2037",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2036-06-25"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2036-07-24"
+        },
+        {
+          "name": "boedromion",
+          "start": "2036-08-22"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2036-09-21"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2036-10-20"
+        },
+        {
+          "name": "poseideon",
+          "start": "2036-11-19"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2036-12-18"
+        },
+        {
+          "name": "gamelion",
+          "start": "2037-01-17"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2037-02-16"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2037-03-18"
+        },
+        {
+          "name": "mounichion",
+          "start": "2037-04-16"
+        },
+        {
+          "name": "thargelion",
+          "start": "2037-05-16"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2037-06-14"
+        }
+      ]
+    },
+    {
+      "atticYear": "2037/2038",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2037-07-14"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2037-08-12"
+        },
+        {
+          "name": "boedromion",
+          "start": "2037-09-10"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2037-10-10"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2037-11-08"
+        },
+        {
+          "name": "poseideon",
+          "start": "2037-12-08"
+        },
+        {
+          "name": "gamelion",
+          "start": "2038-01-06"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2038-02-05"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2038-03-07"
+        },
+        {
+          "name": "mounichion",
+          "start": "2038-04-05"
+        },
+        {
+          "name": "thargelion",
+          "start": "2038-05-05"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2038-06-04"
+        }
+      ],
+      "olympicPeak": "2037-07-27"
+    },
+    {
+      "atticYear": "2038/2039",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2038-07-03"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2038-08-02"
+        },
+        {
+          "name": "boedromion",
+          "start": "2038-08-31"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2038-09-29"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2038-10-29"
+        },
+        {
+          "name": "poseideon",
+          "start": "2038-11-27"
+        },
+        {
+          "name": "gamelion",
+          "start": "2038-12-27"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2039-01-25"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2039-02-24"
+        },
+        {
+          "name": "mounichion",
+          "start": "2039-03-25"
+        },
+        {
+          "name": "thargelion",
+          "start": "2039-04-24"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2039-05-24"
+        }
+      ]
+    },
+    {
+      "atticYear": "2039/2040",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2039-06-22"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2039-07-22"
+        },
+        {
+          "name": "boedromion",
+          "start": "2039-08-20"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2039-09-19"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2039-10-18"
+        },
+        {
+          "name": "poseideon",
+          "start": "2039-11-17"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2039-12-16"
+        },
+        {
+          "name": "gamelion",
+          "start": "2040-01-15"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2040-02-13"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2040-03-14"
+        },
+        {
+          "name": "mounichion",
+          "start": "2040-04-12"
+        },
+        {
+          "name": "thargelion",
+          "start": "2040-05-12"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2040-06-10"
+        }
+      ]
+    },
+    {
+      "atticYear": "2040/2041",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2040-07-10"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2040-08-09"
+        },
+        {
+          "name": "boedromion",
+          "start": "2040-09-07"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2040-10-07"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2040-11-05"
+        },
+        {
+          "name": "poseideon",
+          "start": "2040-12-05"
+        },
+        {
+          "name": "gamelion",
+          "start": "2041-01-03"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2041-02-02"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2041-03-03"
+        },
+        {
+          "name": "mounichion",
+          "start": "2041-04-02"
+        },
+        {
+          "name": "thargelion",
+          "start": "2041-05-01"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2041-05-31"
+        }
+      ]
+    },
+    {
+      "atticYear": "2041/2042",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2041-06-29"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2041-07-29"
+        },
+        {
+          "name": "boedromion",
+          "start": "2041-08-27"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2041-09-26"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2041-10-26"
+        },
+        {
+          "name": "poseideon",
+          "start": "2041-11-24"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2041-12-24"
+        },
+        {
+          "name": "gamelion",
+          "start": "2042-01-22"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2042-02-21"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2042-03-22"
+        },
+        {
+          "name": "mounichion",
+          "start": "2042-04-21"
+        },
+        {
+          "name": "thargelion",
+          "start": "2042-05-20"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2042-06-18"
+        }
+      ],
+      "olympicPeak": "2041-08-12"
+    },
+    {
+      "atticYear": "2042/2043",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2042-07-18"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2042-08-16"
+        },
+        {
+          "name": "boedromion",
+          "start": "2042-09-15"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2042-10-15"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2042-11-13"
+        },
+        {
+          "name": "poseideon",
+          "start": "2042-12-13"
+        },
+        {
+          "name": "gamelion",
+          "start": "2043-01-12"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2043-02-10"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2043-03-12"
+        },
+        {
+          "name": "mounichion",
+          "start": "2043-04-10"
+        },
+        {
+          "name": "thargelion",
+          "start": "2043-05-10"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2043-06-08"
+        }
+      ]
+    },
+    {
+      "atticYear": "2043/2044",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2043-07-07"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2043-08-06"
+        },
+        {
+          "name": "boedromion",
+          "start": "2043-09-04"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2043-10-04"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2043-11-02"
+        },
+        {
+          "name": "poseideon",
+          "start": "2043-12-02"
+        },
+        {
+          "name": "gamelion",
+          "start": "2044-01-01"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2044-01-31"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2044-02-29"
+        },
+        {
+          "name": "mounichion",
+          "start": "2044-03-30"
+        },
+        {
+          "name": "thargelion",
+          "start": "2044-04-28"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2044-05-28"
+        }
+      ]
+    },
+    {
+      "atticYear": "2044/2045",
+      "months": [
+        {
+          "name": "hekatombaion",
+          "start": "2044-06-26"
+        },
+        {
+          "name": "metageitnion",
+          "start": "2044-07-25"
+        },
+        {
+          "name": "boedromion",
+          "start": "2044-08-24"
+        },
+        {
+          "name": "pyanepsion",
+          "start": "2044-09-22"
+        },
+        {
+          "name": "maimakterion",
+          "start": "2044-10-22"
+        },
+        {
+          "name": "poseideon",
+          "start": "2044-11-20"
+        },
+        {
+          "name": "poseideon-ii",
+          "start": "2044-12-20"
+        },
+        {
+          "name": "gamelion",
+          "start": "2045-01-19"
+        },
+        {
+          "name": "anthesterion",
+          "start": "2045-02-18"
+        },
+        {
+          "name": "elaphebolion",
+          "start": "2045-03-19"
+        },
+        {
+          "name": "mounichion",
+          "start": "2045-04-18"
+        },
+        {
+          "name": "thargelion",
+          "start": "2045-05-17"
+        },
+        {
+          "name": "skirophorion",
+          "start": "2045-06-16"
+        }
+      ]
+    }
+  ]
+}

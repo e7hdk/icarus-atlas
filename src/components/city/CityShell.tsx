@@ -1,6 +1,4 @@
-import { MainNav } from '@/components/hud/MainNav';
-import { IcarusBrand } from '@/components/ui/IcarusBrand';
-import { BackArrow } from '@/components/ui/BackArrow';
+import { CrumbBar } from '@/components/hud/CrumbBar';
 import { CityTabNav } from '@/components/city/CityTabNav';
 import type { CityTab } from '@/components/city/city-tabs';
 import type { GeoCity, GeoRegion } from '@/types/geo';
@@ -25,26 +23,13 @@ export function CityShell({
   children: React.ReactNode;
 }) {
   return (
-    <main className="min-h-screen w-full pb-24">
-      {/* Mobile: back arrow to the left of the centered nav, all on the top row. */}
-      <div className="relative flex items-center px-4 pt-4 sm:hidden">
-        <BackArrow href="/areas" label="Back to the lands" />
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <MainNav active="areas" />
-        </div>
-      </div>
-      <div className="pointer-events-none relative flex min-h-[68px] items-center px-6 py-4">
-        <IcarusBrand />
-        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 sm:block">
-          <MainNav active="areas" />
-        </div>
-      </div>
-      {/* Desktop keeps the back arrow under the nav bar. */}
-      <div className="hidden px-6 sm:block">
-        <BackArrow href="/areas" label="Back to the lands" />
-      </div>
-
+    <main className="min-h-screen w-full pb-24 pt-20">
       <div className="mx-auto w-full max-w-4xl px-6">
+        <CrumbBar
+          back={{ href: '/areas', label: 'Back to the lands' }}
+          trail={[{ href: '/areas', label: 'Lands' }]}
+          current={city.name}
+        />
         <header className="mt-8 text-center">
           <h1 className="font-display text-[clamp(26px,7vw,60px)] tracking-[0.22em] text-aether [text-shadow:0_0_46px_rgba(252,211,77,.45)]">
             {city.name.toUpperCase()}

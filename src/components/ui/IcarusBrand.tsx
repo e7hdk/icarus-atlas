@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function IcarusBrand({ compact = false }: { compact?: boolean }) {
   return (
     <span
-      className={`inline-flex items-center font-display tracking-[0.34em] ${
+      className={`icarus-brand inline-flex items-center font-display tracking-[0.34em] transition-colors duration-500 ${
         compact ? 'gap-2 text-xs text-aether/55' : 'gap-2.5 text-sm text-aether'
       }`}
     >

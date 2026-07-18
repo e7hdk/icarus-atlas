@@ -1,0 +1,67 @@
+{
+  "id": "perseus",
+  "artworks": [
+    {
+      "title": "Perseus with the Head of Medusa",
+      "artist": "Benvenuto Cellini",
+      "year": "1545–1554",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Perseus_%28Benvenuto_Cellini%29_2013_February.jpg/960px-Perseus_%28Benvenuto_Cellini%29_2013_February.jpg",
+      "description": "Cellini's bronze masterpiece shows the Argive hero triumphant: Perseus stands astride Medusa's body, raising her severed head while serpents and rivulets of bronze blood pour from the wound. Cast for Cosimo I de' Medici and still under the Loggia dei Lanzi in Florence, it remains the canonical image of Perseus as Gorgon-slayer."
+    },
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Titian",
+      "year": "1554–1556",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg/960px-Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg",
+      "description": "Titian paints Perseus mid-dive, sword raised against the sea-monster as Andromeda strains at her chains on the rock. The Venetian poesie turns the Ethiopian rescue into a storm of flesh, foam, and heroic flight — the quest that follows Medusa's head. Oil on canvas, Wallace Collection, London."
+    },
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1622",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Peter_Paul_Rubens_-_Perseus_and_Andromeda_-_WGA20304.jpg/960px-Peter_Paul_Rubens_-_Perseus_and_Andromeda_-_WGA20304.jpg",
+      "description": "Rubens shows the aftermath of the rescue: Perseus, still helmed and winged, receives Andromeda's gratitude while putti and Pegasus fill the sky. The Hermitage canvas celebrates the hero not at the kill but at the marriage that seals his Argive destiny. Oil on canvas, State Hermitage Museum, Saint Petersburg."
+    },
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Frederic Leighton",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Frederic_Leighton_-_Perseus_and_Andromeda_-_Google_Art_Project_2.jpg/960px-Frederic_Leighton_-_Perseus_and_Andromeda_-_Google_Art_Project_2.jpg",
+      "description": "Leighton's Victorian spectacle freezes Perseus airborne above the chained Andromeda as the sea-dragon coils below — Athena's gifts and Medusa's head implied in the hero's descent. Oil on canvas, Walker Art Gallery, Liverpool."
+    },
+    {
+      "title": "Perseus Freeing Andromeda",
+      "artist": "Piero di Cosimo",
+      "year": "c. 1510–1513",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Piero_di_Cosimo_-_Liberazione_di_Andromeda_-_Google_Art_Project.jpg/960px-Piero_di_Cosimo_-_Liberazione_di_Andromeda_-_Google_Art_Project.jpg",
+      "description": "Piero di Cosimo's Florentine panel crowds the shore with spectators as Perseus, winged and armored, strikes the fantastical sea-dragon before the bound Andromeda. The rescue that makes the Gorgon-slayer a husband unfolds as a busy Renaissance pageant. Oil on panel, Uffizi Gallery, Florence."
+    }
+  ],
+  "films": [
+    {
+      "title": "Clash of the Titans",
+      "year": "1981",
+      "medium": "film",
+      "director": "Desmond Davis",
+      "description": "Harryhausen's stop-motion epic casts Perseus as the questing demigod who rides Pegasus, faces Medusa, and turns the Kraken to stone — the modern screen template for the Argive hero.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
+    },
+    {
+      "title": "Clash of the Titans",
+      "year": "2010",
+      "medium": "film",
+      "director": "Louis Leterrier",
+      "description": "The CGI remake restages Perseus against Olympus and the Kraken for a new century — same mythic beats, louder gods, and a hero who refuses divinity even as he wields it.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(2010_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Perseus (constellation)",
+      "year": "—",
+      "kind": "other",
+      "description": "Ptolemy's catalogue fixed the hero among the northern stars — Medusa's head as the variable star Algol — so the rescue of Andromeda still hangs overhead every autumn night.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Perseus_(constellation)"
+    }
+  ]
+}

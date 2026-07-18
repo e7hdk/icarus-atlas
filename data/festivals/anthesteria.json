@@ -1,0 +1,15 @@
+{
+  "id": "anthesteria",
+  "name": "Anthesteria",
+  "greekName": "Ἀνθεστήρια",
+  "deities": ["dionysus"],
+  "place": "athens",
+  "atticDate": { "month": "anthesterion", "days": [11, 13] },
+  "conventionalDates": ["02-11", "02-12", "02-13"],
+  "summary": "The flowers of Dionysus and the oldest of his feasts: Jar-Opening, Wine-Jugs and Pots — the new wine broached, each drinker silent at a table of his own, and the dead abroad in the city until told to leave.",
+  "testimonia": [
+    "Thucydides 2.15.4 (\"the older Dionysia... on the twelfth of Anthesterion\")",
+    "Philochorus, FGrH 328 F 84–87 (the three days)",
+    "Deubner, Attische Feste (1932) 93–123"
+  ]
+}

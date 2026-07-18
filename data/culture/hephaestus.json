@@ -22,5 +22,33 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Anthonis_van_Dyck_066.jpg/960px-Anthonis_van_Dyck_066.jpg",
       "description": "An oil on canvas showing the sea nymph Thetis receiving from Hephaestus the divine armor forged for her son Achilles, the episode recounted in Book 18 of the Iliad. Van Dyck stages the exchange amid attendant figures and putti at the god's forge. The painting is in the Kunsthistorisches Museum, Vienna."
     }
+  ],
+  "films": [
+    {
+      "title": "Clash of the Titans",
+      "year": "1981",
+      "medium": "film",
+      "director": "Desmond Davis",
+      "description": "Harryhausen's forge-god arms the hero: mechanical owl, divine shield and the workshop that equips Perseus for Medusa and the Kraken.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
+    },
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney's Hephaestus is the burly smith of Olympus, hammering out gadgets and one-liners in the gods' armory — the craftsman as comic relief with a forge.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Hephaestus joins the Olympian boon roster as the god of the forge: armor, blast and Volcanic trade for Melinoë's war on Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

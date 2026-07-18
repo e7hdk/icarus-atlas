@@ -2,71 +2,103 @@
 
 import { useCallback, useEffect, useRef } from 'react';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useEphemerisStore } from '@/features/spotlight/store';
+import { useVoyageAudioStore } from '@/features/voyage/store';
 
-/** The looping ambient score (public/audio/icarus-atlas.mp3). */
-const SRC = '/audio/icarus-atlas.mp3';
+/** The looping ambient score, and the Proem's own theme. While the Proem
+ *  plays (docs/EPHEMERIS_PLAN.md §6) the ambient bed crossfades into the
+ *  theme and hands back on exit. A missing proem.mp3 degrades silently —
+ *  the crossfade only happens once the theme has actually started. */
+const AMBIENT_SRC = '/audio/icarus-atlas.mp3';
+const PROEM_SRC = '/audio/proem.mp3';
 const FADE_IN_MS = 1600;
 const FADE_OUT_MS = 600;
+const CROSSFADE_MS = 1200;
 
-/** A single global audio element, mounted once in the root layout so the score
+type RampHolder = { current: number | null };
+
+/** Two global audio elements, mounted once in the root layout so the score
  *  plays unbroken across every route. Honours the persisted enabled/volume
  *  preferences, and works around browser autoplay policy by starting on the
  *  first user gesture when an immediate play() is refused. */
 export function AmbientAudio() {
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const rampRef = useRef<number | null>(null);
+  const ambientRef = useRef<HTMLAudioElement>(null);
+  const proemRef = useRef<HTMLAudioElement>(null);
+  const ambientRamp = useRef<number | null>(null);
+  const proemRamp = useRef<number | null>(null);
   const enabled = useGalaxyStore((s) => s.musicEnabled);
   const volume = useGalaxyStore((s) => s.musicVolume);
-  // Latest target volume, readable inside async play callbacks.
+  const proemActive = useEphemerisStore((s) => s.proemActive);
+  // Latest targets, readable inside async play callbacks.
   const volumeRef = useRef(volume);
   useEffect(() => {
     volumeRef.current = volume;
   }, [volume]);
+  const proemActiveRef = useRef(proemActive);
+  useEffect(() => {
+    proemActiveRef.current = proemActive;
+  }, [proemActive]);
+  // While the Odyssey voyage plays its own mood stems, the atlas bed ducks out
+  // (docs/NOSTOS_PLAN.md §8) and hands back when the reader leaves the route.
+  const voyageActive = useVoyageAudioStore((s) => s.active);
+  const voyageActiveRef = useRef(voyageActive);
+  useEffect(() => {
+    voyageActiveRef.current = voyageActive;
+  }, [voyageActive]);
 
-  const stopRamp = useCallback(() => {
-    if (rampRef.current !== null) {
-      cancelAnimationFrame(rampRef.current);
-      rampRef.current = null;
+  const stopRamp = useCallback((holder: RampHolder) => {
+    if (holder.current !== null) {
+      cancelAnimationFrame(holder.current);
+      holder.current = null;
     }
   }, []);
 
   const rampTo = useCallback(
-    (target: number, ms: number, onDone?: () => void) => {
-      const audio = audioRef.current;
+    (
+      audio: HTMLAudioElement | null,
+      holder: RampHolder,
+      target: number,
+      ms: number,
+      onDone?: () => void,
+    ) => {
       if (!audio) return;
-      stopRamp();
+      stopRamp(holder);
       const from = audio.volume;
       const start = performance.now();
       const tick = (now: number) => {
         const t = Math.min((now - start) / ms, 1);
         audio.volume = Math.max(0, Math.min(1, from + (target - from) * t));
-        if (t < 1) rampRef.current = requestAnimationFrame(tick);
+        if (t < 1) holder.current = requestAnimationFrame(tick);
         else {
-          rampRef.current = null;
+          holder.current = null;
           onDone?.();
         }
       };
-      rampRef.current = requestAnimationFrame(tick);
+      holder.current = requestAnimationFrame(tick);
     },
     [stopRamp],
   );
 
-  // Live volume changes from the slider apply at once while the score plays.
+  // Live volume changes from the slider apply at once to whichever bed plays.
   useEffect(() => {
-    const audio = audioRef.current;
-    if (audio && enabled && !audio.paused) {
-      stopRamp();
-      audio.volume = volume;
+    if (!enabled || voyageActive) return;
+    const active = proemActive ? proemRef.current : ambientRef.current;
+    const holder = proemActive ? proemRamp : ambientRamp;
+    if (active && !active.paused) {
+      stopRamp(holder);
+      active.volume = volume;
     }
-  }, [volume, enabled, stopRamp]);
+  }, [volume, enabled, proemActive, voyageActive, stopRamp]);
 
   // Play / pause on the enabled toggle, fading either way.
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    const ambient = ambientRef.current;
+    const proem = proemRef.current;
+    if (!ambient || !proem) return;
 
     if (!enabled) {
-      rampTo(0, FADE_OUT_MS, () => audio.pause());
+      rampTo(ambient, ambientRamp, 0, FADE_OUT_MS, () => ambient.pause());
+      rampTo(proem, proemRamp, 0, FADE_OUT_MS, () => proem.pause());
       return;
     }
 
@@ -96,15 +128,23 @@ export function AmbientAudio() {
       for (const type of events) window.removeEventListener(type, onGesture, opts);
     };
     const start = () => {
-      audio.volume = 0;
-      audio
+      // On the voyage the stem mixer owns the sound — nothing to raise here.
+      if (voyageActiveRef.current) return;
+      // Mid-proem re-enable belongs to the theme; the proem effect below
+      // handles the hand-back when the stage folds.
+      const target = proemActiveRef.current ? proem : ambient;
+      const holder = proemActiveRef.current ? proemRamp : ambientRamp;
+      target.volume = 0;
+      target
         .play()
         ?.then(() => {
-          if (cancelled) {
-            audio.pause();
+          // A slow-resolving play() must not raise the bed after the reader
+          // has meanwhile entered the voyage (its mixer owns the sound).
+          if (cancelled || voyageActiveRef.current) {
+            target.pause();
             return;
           }
-          rampTo(volumeRef.current, FADE_IN_MS);
+          rampTo(target, holder, volumeRef.current, FADE_IN_MS);
           removeGesture();
         })
         .catch(() => {
@@ -122,9 +162,134 @@ export function AmbientAudio() {
     return () => {
       cancelled = true;
       removeGesture();
-      stopRamp();
+      stopRamp(ambientRamp);
+      stopRamp(proemRamp);
     };
   }, [enabled, rampTo, stopRamp]);
 
-  return <audio ref={audioRef} src={SRC} loop preload="auto" aria-hidden />;
+  // The Proem crossfade. Entering the stage is a user gesture (Begin the
+  // proem / the ?proem=1 click chain), so play() normally resolves at once;
+  // when it can't (cold ?proem=1 load), the first advance click retries.
+  useEffect(() => {
+    const ambient = ambientRef.current;
+    const proem = proemRef.current;
+    if (!ambient || !proem || !enabled) return;
+    let cancelled = false;
+
+    if (proemActive) {
+      const events = ['pointerdown', 'keydown', 'click'] as const;
+      const opts: AddEventListenerOptions = { capture: true };
+      let removed = false;
+      const removeGesture = () => {
+        if (removed) return;
+        removed = true;
+        for (const type of events) window.removeEventListener(type, onGesture, opts);
+      };
+      const attempt = () => {
+        proem.volume = 0;
+        proem.currentTime = 0;
+        proem
+          .play()
+          ?.then(() => {
+            if (cancelled) {
+              proem.pause();
+              return;
+            }
+            rampTo(proem, proemRamp, volumeRef.current, CROSSFADE_MS);
+            rampTo(ambient, ambientRamp, 0, CROSSFADE_MS, () => ambient.pause());
+            removeGesture();
+          })
+          .catch(() => {
+            // Missing proem.mp3 or blocked autoplay — the ambient bed keeps
+            // playing; an armed gesture retries the theme harmlessly.
+          });
+      };
+      const onGesture = () => attempt();
+      attempt();
+      for (const type of events) window.addEventListener(type, onGesture, opts);
+      return () => {
+        cancelled = true;
+        removeGesture();
+      };
+    }
+
+    // Stage folded — hand back to the ambient bed. Never while the voyage
+    // plays its stems: this branch also fires on plain mount (proem inactive),
+    // and without the guard it would resurrect the bed over the mixer.
+    if (!proem.paused) {
+      rampTo(proem, proemRamp, 0, FADE_OUT_MS, () => {
+        proem.pause();
+        proem.currentTime = 0;
+      });
+    }
+    if (voyageActiveRef.current) {
+      return () => {
+        cancelled = true;
+      };
+    }
+    if (ambient.paused) {
+      ambient
+        .play()
+        ?.then(() => {
+          if (cancelled || voyageActiveRef.current) {
+            ambient.pause();
+            return;
+          }
+          rampTo(ambient, ambientRamp, volumeRef.current, CROSSFADE_MS);
+        })
+        .catch(() => {});
+    } else {
+      rampTo(ambient, ambientRamp, volumeRef.current, CROSSFADE_MS);
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [proemActive, enabled, rampTo, stopRamp]);
+
+  // The voyage duck: fade the atlas bed out while /odyssey plays its stems,
+  // and fade back in when the reader returns to the rest of the atlas.
+  useEffect(() => {
+    const ambient = ambientRef.current;
+    if (!ambient || !enabled) return;
+    let cancelled = false;
+
+    if (voyageActive) {
+      if (!ambient.paused) {
+        rampTo(ambient, ambientRamp, 0, CROSSFADE_MS, () => ambient.pause());
+      } else {
+        // Aborts any still-pending play() promise (its .then guards re-check
+        // the voyage flag, and pausing makes the promise reject harmlessly).
+        ambient.pause();
+        ambient.volume = 0;
+      }
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    if (proemActiveRef.current) return;
+    if (ambient.paused) {
+      ambient
+        .play()
+        ?.then(() => {
+          if (cancelled) return;
+          rampTo(ambient, ambientRamp, volumeRef.current, CROSSFADE_MS);
+        })
+        .catch(() => {
+          // Autoplay still blocked — the enabled-effect's armed gesture covers it.
+        });
+    } else {
+      rampTo(ambient, ambientRamp, volumeRef.current, CROSSFADE_MS);
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [voyageActive, enabled, rampTo]);
+
+  return (
+    <>
+      <audio ref={ambientRef} src={AMBIENT_SRC} loop preload="auto" aria-hidden />
+      <audio ref={proemRef} src={PROEM_SRC} loop preload="none" aria-hidden />
+    </>
+  );
 }

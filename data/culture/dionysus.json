@@ -29,5 +29,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg/960px-Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg",
       "description": "An Attic black-figure drinking cup (kylix) by the painter Exekias, showing Dionysus reclining in a ship whose mast sprouts grapevines, surrounded by dolphins. The scene evokes the Homeric Hymn in which the god, captured by Tyrrhenian pirates, transforms his captors into dolphins. The cup is held by the Staatliche Antikensammlungen in Munich."
     }
+  ],
+  "music": [
+    {
+      "title": "L'Arianna",
+      "year": "1608",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's lost opera for the Gonzaga court survives chiefly in Ariadne's lament — the cry of the woman Bacchus will claim on Naxos, the wine god arriving as consolation after Theseus' sail.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Arianna"
+    },
+    {
+      "title": "Bacchus and Ariadne",
+      "year": "1931",
+      "kind": "ballet",
+      "composer": "Albert Roussel",
+      "description": "Roussel's ballet for the Paris Opéra retells the Naxos rescue in bright, neo-classical colour — Dionysus' arrival as choreography rather than tragedy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Bacchus_and_Ariadne_(ballet)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Dionysus' boons are hangover and festive fog — the wine god as a party build, cheering Zagreus on from Olympus between cups.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "He returns among the Olympian boon-givers in the sequel, still the god of revels in a war that has little time for revels.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

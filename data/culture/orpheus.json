@@ -1,0 +1,63 @@
+{
+  "id": "orpheus",
+  "artworks": [
+    {
+      "title": "Orpheus",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg/960px-Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+      "description": "A Thracian girl cradles Orpheus' severed head where it has come to rest on his own lyre, head and instrument fused into a single relic. Moreau turns the myth's most violent moment into still, jewelled mourning; the painting entered the French state collections in his lifetime and now hangs in the Musée d'Orsay, Paris."
+    },
+    {
+      "title": "Orpheus Leading Eurydice from the Underworld",
+      "artist": "Jean-Baptiste-Camille Corot",
+      "year": "1861",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg/960px-Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg",
+      "description": "Corot's silvery twilight catches the pair mid-passage: Orpheus lifts his lyre like a lantern while Eurydice follows a half-step behind, the fatal backward glance only moments away. Museum of Fine Arts, Houston."
+    }
+  ],
+  "films": [
+    {
+      "title": "Orphée",
+      "year": "1950",
+      "medium": "film",
+      "director": "Jean Cocteau",
+      "description": "Cocteau moves the poet to postwar Paris, where Death rides in a Rolls-Royce, messages come over car radio, and mirrors are the doors to the underworld — the central panel of his Orphic film trilogy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orpheus_(film)"
+    },
+    {
+      "title": "Black Orpheus",
+      "year": "1959",
+      "medium": "film",
+      "director": "Marcel Camus",
+      "description": "The myth replayed across Rio de Janeiro's Carnival to the bossa nova of Jobim and Bonfá: a tram-driver Orpheus, a country-girl Eurydice, and Death in a skeleton suit. It took both the Palme d'Or and the Academy Award for Best Foreign Language Film.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Black_Orpheus"
+    }
+  ],
+  "music": [
+    {
+      "title": "L'Orfeo",
+      "year": "1607",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's favola in musica for the Mantuan court is the earliest opera still in regular repertory — the newborn art form chose the singer who could move the underworld as its founding subject.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Orfeo"
+    },
+    {
+      "title": "Orfeo ed Euridice",
+      "year": "1762",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck's Viennese 'reform opera' strips the myth to its grief and lets the drama drive the music; the lament 'Che farò senza Euridice?' became one of opera's most famous arias.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orfeo_ed_Euridice"
+    },
+    {
+      "title": "Hadestown",
+      "year": "2019",
+      "kind": "stage",
+      "composer": "Anaïs Mitchell",
+      "description": "Mitchell's folk-and-jazz retelling grew from a concept album into a Broadway musical, setting Orpheus' vow against Hades' industrial underworld; it won eight Tony Awards including Best Musical.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — City Page B: Gazetteer Plate</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CITY CONCEPT B — GAZETTEER PLATE ============
+     The city as an engraved sheet of the atlas: a survey-chart hero
+     (the city star under crosshair ticks), a plate-meta identity band,
+     and the royal succession set as a leadered archival table — the
+     print voice of concept G, warmed with the marquee gold. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --line: rgba(241,245,249,.14); --line-soft: rgba(241,245,249,.08);
+    --gold: #fcd34d; --hero: #2dd4bf;
+  }
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos-deep);
+    background-image:
+      radial-gradient(circle 1px at center, rgba(241,245,249,.045) 1px, transparent 1.5px),
+      radial-gradient(44% 30% at 82% 0%, rgba(0,229,255,.05), transparent 70%),
+      radial-gradient(40% 32% at 6% 96%, rgba(124,77,255,.09), transparent 70%);
+    background-size: 84px 84px, auto, auto; }
+
+  .atlasbar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; height: 56px; padding: 0 22px; background: rgba(10,5,30,.72); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .brandmark { display: inline-flex; align-items: center; gap: 9px; }
+  .brandmark .st { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px 3px rgba(252,211,77,.65); }
+  .brandmark b { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.8); }
+  .brandmark b em { font-style: normal; color: var(--gold); }
+  .doors { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 4px; }
+  .doors a { padding: 6px 14px; border-radius: 999px; border: 1px solid transparent; font: 500 11px Cinzel, serif; letter-spacing: .16em; color: var(--muted); text-decoration: none; }
+  .doors a.on { border-color: rgba(192,132,252,.5); background: rgba(124,77,255,.2); color: #e9d5ff; }
+  .actions { margin-left: auto; display: flex; gap: 8px; font: 500 10px Cinzel, serif; letter-spacing: .12em; color: var(--muted); }
+  .actions span { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 8px 12px; }
+  .crumb { display: flex; align-items: center; gap: 12px; font: 500 10px Cinzel, serif; letter-spacing: .22em; color: var(--faint); text-transform: uppercase; }
+  .crumb .back { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 999px; color: var(--muted); font-size: 15px; }
+  .crumb a { color: var(--muted); text-decoration: none; }
+  .crumb .sep { color: rgba(241,245,249,.25); }
+  .crumb .here { color: var(--gold); }
+
+  .sheet { position: relative; max-width: 1120px; margin: 0 auto; padding: 76px 40px 110px; }
+  #frame { position: fixed; inset: 66px 16px 16px; border: 1px solid var(--line); pointer-events: none; z-index: 5; }
+  #frame::before { content: ''; position: absolute; inset: 5px; border: 1px solid var(--line-soft); }
+  #frame i { position: absolute; width: 14px; height: 14px; border-color: rgba(252,211,77,.5); border-style: solid; border-width: 0; }
+  #frame i:nth-child(1) { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+  #frame i:nth-child(2) { top: -1px; right: -1px; border-top-width: 1px; border-right-width: 1px; }
+  #frame i:nth-child(3) { bottom: -1px; left: -1px; border-bottom-width: 1px; border-left-width: 1px; }
+  #frame i:nth-child(4) { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+
+  /* ---- survey hero: the city under the crosshair ---- */
+  .survey { position: relative; margin-top: 18px; height: 240px; border: 1px solid var(--line); background:
+      radial-gradient(60% 90% at 50% 50%, rgba(0,229,255,.05), transparent 70%); overflow: hidden; }
+  .survey svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .survey .label { position: absolute; font: 500 10px Cinzel, serif; letter-spacing: .3em; color: rgba(153,246,228,.6); }
+  .survey .citylabel { position: absolute; left: 50%; top: 50%; transform: translate(18px, -34px); font: 600 12px Cinzel, serif; letter-spacing: .26em; color: #fde68a; text-shadow: 0 0 12px rgba(252,211,77,.5); }
+  .survey .star { position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; transform: translate(-50%,-50%); border-radius: 50%; background: var(--gold); box-shadow: 0 0 14px 5px rgba(252,211,77,.7), 0 0 44px 16px rgba(252,211,77,.25); animation: beat 3.6s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.15); } }
+
+  /* ---- identity band ---- */
+  .band { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; padding: 30px 0 26px; border-bottom: 1px solid var(--line); }
+  .band::after { content: ''; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: var(--line-soft); }
+  .band h1 { font: 700 clamp(40px,6vw,64px) Cinzel, serif; letter-spacing: .16em; line-height: 1; text-shadow: 0 0 40px rgba(252,211,77,.35); }
+  .band .greek { font-style: italic; font-size: 19px; color: var(--muted); margin-top: 10px; }
+  .meta { text-align: right; font-size: 15px; color: var(--muted); min-width: 260px; }
+  .meta .plate { font: 600 11px Cinzel, serif; letter-spacing: .4em; color: rgba(253,230,138,.75); }
+  .meta .row { display: flex; justify-content: space-between; gap: 26px; padding: 6px 0; border-bottom: 1px dotted var(--line-soft); }
+  .meta .row:first-of-type { margin-top: 14px; }
+  .meta .k { font: 500 10.5px Cinzel, serif; letter-spacing: .22em; color: var(--faint); align-self: center; }
+  .meta .v { font-size: 16px; }
+  .meta .v.gold { color: #fde68a; font: 600 12px Cinzel, serif; letter-spacing: .16em; align-self: center; }
+
+  /* ---- main grid: index + matter ---- */
+  .main { display: grid; grid-template-columns: 200px minmax(0,1fr); gap: 60px; margin-top: 44px; }
+  .index { position: sticky; top: 80px; align-self: start; }
+  .index .h { font: 500 10.5px Cinzel, serif; letter-spacing: .34em; color: var(--faint); margin-bottom: 16px; }
+  .index a { position: relative; display: flex; gap: 12px; align-items: baseline; padding: 8px 0 8px 18px; text-decoration: none; color: var(--muted); font-size: 16.5px; border-left: 1px solid var(--line-soft); transition: color .2s; }
+  .index a b { font: 600 11px Cinzel, serif; letter-spacing: .1em; color: var(--faint); min-width: 24px; }
+  .index a:hover { color: var(--aether); }
+  .index a.on { color: #fde68a; }
+  .index a.on b { color: #fde68a; }
+  .index a.on::before { content: ''; position: absolute; left: -1px; top: 20%; bottom: 20%; width: 1px; background: var(--gold); box-shadow: 0 0 8px 1px rgba(252,211,77,.7); }
+  .index .foot { margin-top: 26px; font-style: italic; font-size: 13.5px; color: var(--faint); line-height: 1.5; }
+
+  section { padding-bottom: 54px; scroll-margin-top: 76px; }
+  .shead { display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px; }
+  .shead b { font: 600 13px Cinzel, serif; letter-spacing: .12em; color: rgba(253,230,138,.85); }
+  .shead h2 { font: 600 15px Cinzel, serif; letter-spacing: .3em; color: var(--aether); }
+  .shead .ln { flex: 1; height: 1px; background: var(--line-soft); align-self: center; }
+
+  /* the succession as an archival table */
+  .table { border-top: 1px solid var(--line); }
+  .trow { display: grid; grid-template-columns: 44px minmax(0,1fr) auto; gap: 18px; padding: 13px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline; }
+  .trow .no { font: 600 11px Cinzel, serif; letter-spacing: .1em; color: var(--faint); }
+  .trow .who { min-width: 0; }
+  .trow .who .name { font: 600 17px Cinzel, serif; letter-spacing: .06em; }
+  .trow .who .name a { color: #7dd3c8; text-decoration: none; }
+  .trow .who .name a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .trow .who .note { margin-top: 3px; font-size: 16px; font-style: italic; color: var(--muted); line-height: 1.5; }
+  .trow .refs { font-variant: small-caps; letter-spacing: .05em; font-size: 13.5px; color: var(--faint); text-align: right; white-space: nowrap; }
+  .trow .dq { color: var(--soft); cursor: help; }
+  .trow:hover { background: rgba(255,255,255,.015); }
+
+  .lrow { display: flex; align-items: baseline; padding: 8px 0; font-size: 17.5px; cursor: pointer; }
+  .lrow:hover { color: #fde68a; }
+  .lrow .dots { flex: 1; margin: 0 10px; border-bottom: 1px dotted rgba(241,245,249,.22); transform: translateY(-4px); }
+  .lrow em { font-size: 14.5px; color: var(--faint); }
+  .skyband { position: relative; border: 1px solid var(--line); padding: 34px 30px; overflow: hidden; cursor: pointer; transition: border-color .3s; background:
+      radial-gradient(1.4px 1.4px at 18% 30%, rgba(252,211,77,.9), transparent),
+      radial-gradient(1.2px 1.2px at 34% 66%, rgba(45,212,191,.9), transparent),
+      radial-gradient(1.2px 1.2px at 52% 28%, rgba(229,231,235,.85), transparent),
+      radial-gradient(1.4px 1.4px at 68% 60%, rgba(96,165,250,.9), transparent),
+      radial-gradient(1.2px 1.2px at 84% 36%, rgba(192,132,252,.9), transparent),
+      radial-gradient(60% 120% at 50% 120%, rgba(124,77,255,.14), transparent 70%);
+  }
+  .skyband:hover { border-color: rgba(252,211,77,.45); }
+  .skyband .t { font: 600 14px Cinzel, serif; letter-spacing: .3em; color: #fde68a; }
+  .skyband .s { font-style: italic; font-size: 16px; color: var(--muted); margin-top: 6px; }
+  .skyband .go { position: absolute; right: 26px; top: 50%; transform: translateY(-50%); font: 600 12px Cinzel, serif; letter-spacing: .2em; color: var(--faint); transition: color .2s, transform .2s; }
+  .skyband:hover .go { color: #fde68a; transform: translateY(-50%) translateX(4px); }
+  footer { text-align: center; margin-top: 30px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 880px) {
+    .sheet { padding: 72px 20px 90px; }
+    #frame, .doors { display: none; }
+    .main { grid-template-columns: 1fr; gap: 26px; }
+    .index { position: static; display: flex; flex-wrap: wrap; gap: 2px 16px; }
+    .index .h, .index .foot { display: none; }
+    .index a { border-left: none; padding: 4px 0; }
+    .band { grid-template-columns: 1fr; gap: 18px; }
+    .meta { text-align: left; }
+    .trow { grid-template-columns: 34px minmax(0,1fr); }
+    .trow .refs { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="atlasbar">
+  <span class="brandmark"><span class="st"></span><b>ICARUS <em>ATLAS</em></b></span>
+  <nav class="doors"><a href="#">GALAXY</a><a class="on" href="#">LANDS</a><a href="#">MYTHS</a></nav>
+  <div class="actions"><span>SEARCH ⌘K</span><span>⚙</span></div>
+</div>
+<div id="frame"><i></i><i></i><i></i><i></i></div>
+
+<div class="sheet">
+  <div class="crumb">
+    <span class="back">←</span>
+    <a href="#">LANDS</a><span class="sep">/</span><span class="here">THEBES</span>
+  </div>
+
+  <!-- survey hero: the city under the crosshair -->
+  <div class="survey">
+    <svg viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 178 C 140 150, 240 196, 380 176 S 640 128, 780 156 S 940 190, 1000 172" fill="none" stroke="rgba(0,229,255,.22)" stroke-width="1.4"/>
+      <path d="M0 205 C 180 186, 320 222, 520 204 S 820 168, 1000 196" fill="none" stroke="rgba(0,229,255,.1)" stroke-width="1"/>
+      <line x1="500" y1="0" x2="500" y2="98" stroke="rgba(252,211,77,.28)" stroke-width="1"/>
+      <line x1="500" y1="142" x2="500" y2="240" stroke="rgba(252,211,77,.28)" stroke-width="1"/>
+      <line x1="0" y1="120" x2="458" y2="120" stroke="rgba(252,211,77,.28)" stroke-width="1"/>
+      <line x1="542" y1="120" x2="1000" y2="120" stroke="rgba(252,211,77,.28)" stroke-width="1"/>
+      <circle cx="500" cy="120" r="34" fill="none" stroke="rgba(252,211,77,.35)" stroke-width="1"/>
+      <circle cx="500" cy="120" r="58" fill="none" stroke="rgba(252,211,77,.15)" stroke-width="1" stroke-dasharray="3 5"/>
+    </svg>
+    <span class="label" style="left:8%;top:16%">BOEOTIA</span>
+    <span class="label" style="right:7%;bottom:14%">38.32° N · 23.32° E</span>
+    <span class="star"></span>
+    <span class="citylabel">THEBES</span>
+  </div>
+
+  <!-- identity band -->
+  <div class="band">
+    <div>
+      <h1>THEBES</h1>
+      <div class="greek">Θῆβαι — the seven-gated, citadel of Cadmus</div>
+    </div>
+    <div class="meta">
+      <div class="plate">SHEET XII · BOEOTIA</div>
+      <div class="row"><span class="k">REGION</span><span class="v">Boeotia</span></div>
+      <div class="row"><span class="k">HER SKY</span><span class="v gold">101 STARS</span></div>
+      <div class="row"><span class="k">REIGNS</span><span class="v">19 recorded</span></div>
+      <div class="row"><span class="k">GAZETTEER</span><span class="v">Pleiades 541138</span></div>
+    </div>
+  </div>
+
+  <!-- index + matter -->
+  <div class="main">
+    <nav class="index" id="index">
+      <div class="h">CONTENTS</div>
+      <a href="#s1" class="on"><b>I</b>The Succession</a>
+      <a href="#s2"><b>II</b>Myths Set Here</a>
+      <a href="#s3"><b>III</b>Her Sky</a>
+      <div class="foot">An engraved sheet of the gazetteer — the index follows your place on the plate.</div>
+    </nav>
+
+    <div>
+      <section id="s1">
+        <div class="shead"><b>I.</b><h2>THE SUCCESSION</h2><span class="ln"></span></div>
+        <div class="table" id="table"></div>
+      </section>
+
+      <section id="s2">
+        <div class="shead"><b>II.</b><h2>MYTHS SET HERE</h2><span class="ln"></span></div>
+        <div class="lrow">Cadmus and Thebes<span class="dots"></span><em>the founding</em></div>
+        <div class="lrow">Pentheus and Dionysus<span class="dots"></span><em>the god refused</em></div>
+        <div class="lrow">Oedipus at Thebes<span class="dots"></span><em>the riddle and the fall</em></div>
+        <div class="lrow">Seven Against Thebes<span class="dots"></span><em>the war of the brothers</em></div>
+        <div class="lrow">Antigone at Thebes<span class="dots"></span><em>the burial defied</em></div>
+        <div class="lrow">The Epigoni<span class="dots"></span><em>the sons return</em></div>
+      </section>
+
+      <section id="s3">
+        <div class="shead"><b>III.</b><h2>HER SKY</h2><span class="ln"></span></div>
+        <div class="skyband">
+          <div class="t">ENTER THE SKY OF THEBES</div>
+          <div class="s">a 3D mini-galaxy of her 101 dwellers — Cadmus to Antigone, Dionysus to Heracles</div>
+          <span class="go">ENTER →</span>
+        </div>
+      </section>
+
+      <footer>City concept B — Gazetteer Plate · survey-chart hero, plate meta, the succession as an engraved archival table</footer>
+    </div>
+  </div>
+</div>
+
+<script>
+  const REIGNS = [
+    { n: 'Cadmus', star: true, dq: true, note: 'Founder of the Cadmeia — Homer instead credits Amphion and Zethus with first walling seven-gated Thebes.', c: 'Apollod. 3.4.1–2 · Hyg. 76 · Paus. 9.5.1' },
+    { n: 'Pentheus', star: true, dq: true, note: 'Torn apart on Cithaeron; succeeds Cadmus directly in Apollodorus.', c: 'Apollod. 3.5.2 · Ov. Met. 3.511' },
+    { n: 'Polydorus', star: true, dq: true, note: "In Hyginus' king list he follows Cadmus directly, before Pentheus.", c: 'Apollod. 3.5.5 · Hyg. 76' },
+    { n: 'Labdacus', star: true, dq: false, note: 'Perished like-minded with Pentheus, leaving the year-old Laius.', c: 'Apollod. 3.5.5' },
+    { n: 'Lycus', star: true, dq: false, note: 'Guardian of the child Laius — or usurper, by the telling.', c: 'Apollod. 3.5.5 · Paus. 9.5.4' },
+    { n: 'Amphion & Zethus', star: true, dq: true, note: 'Overthrew Lycus and walled the city; for Homer, the founders themselves.', c: 'Od. 11.260 · Apollod. 3.5.5' },
+    { n: 'Laius', star: true, dq: false, note: 'Restored after the twin houses perished.', c: 'Apollod. 3.5.7' },
+    { n: 'Oedipus', star: true, dq: false, note: "Solved the Sphinx's riddle — and took, unknowing, his father's widow.", c: 'Od. 11.271 · Apollod. 3.5.8' },
+    { n: 'Eteocles & Polynices', star: true, dq: false, note: 'Agreed to alternate the throne; Eteocles refused, and the Seven marched.', c: 'Apollod. 3.6.1' },
+    { n: 'Creon', star: true, dq: true, note: 'King in his own right — or mere regent for Laodamas, by the teller.', c: 'Apollod. 3.7.1 · Paus. 9.5.13' },
+    { n: 'Laodamas', star: true, dq: false, note: 'Faced the Epigoni: killed by Alcmaeon, or escaped to Illyria.', c: 'Apollod. 3.7.3' },
+    { n: 'Thersander', star: true, dq: false, note: 'Set over Thebes by the victorious Argives; fell to Telephus in Mysia.', c: 'Paus. 9.5.14' },
+    { n: 'Peneleos', star: true, dq: false, note: 'Led the Boeotians to Troy while Tisamenus was under age.', c: 'Paus. 9.5.15 · Il. 2.494' },
+    { n: 'Tisamenus', star: false, dq: false, note: "Chosen king after Peneleos' death.", c: 'Paus. 9.5.15' },
+    { n: 'Autesion', star: false, dq: false, note: 'Driven out to the Dorians by the Erinyes of Laius and Oedipus.', c: 'Paus. 9.5.15' },
+    { n: 'Damasichthon', star: false, dq: false, note: 'Chosen when Autesion departed.', c: 'Paus. 9.5.16' },
+    { n: 'Ptolemy', star: false, dq: false, note: 'Father of Xanthus in the closing Peneleid roll.', c: 'Paus. 9.5.16' },
+    { n: 'Xanthus', star: false, dq: false, note: 'Last sole king — after him, Thebes turned to magistrates.', c: 'Paus. 9.5.16' },
+  ];
+  document.getElementById('table').innerHTML = REIGNS.map((r, i) => `
+    <div class="trow">
+      <span class="no">${String(i + 1).padStart(2, '0')}</span>
+      <div class="who">
+        <div class="name">${r.star ? `<a href="#">${r.n}</a>` : r.n}${r.dq ? ' <span class="dq" title="The tellers disagree about this reign.">⚖</span>' : ''}</div>
+        <div class="note">${r.note}</div>
+      </div>
+      <span class="refs">${r.c}</span>
+    </div>`).join('');
+
+  const links = [...document.querySelectorAll('.index a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-20% 0px -65% 0px' });
+  document.querySelectorAll('section').forEach(s => io.observe(s));
+</script>
+</body>
+</html>

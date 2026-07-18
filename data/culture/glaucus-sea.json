@@ -1,0 +1,39 @@
+{
+  "id": "glaucus-sea",
+  "artworks": [
+    {
+      "title": "Circe Invidiosa",
+      "artist": "John William Waterhouse",
+      "year": "1892",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/J._W._Waterhouse_-_Circe_Invidiosa_-_Google_Art_Project.jpg/960px-J._W._Waterhouse_-_Circe_Invidiosa_-_Google_Art_Project.jpg",
+      "description": "Waterhouse paints Circe poisoning the bay for Scylla — the jealous revenge that answers Glaucus' refusal. The sea-god himself is off-canvas, but the green pour is the climax of his Ovidian love story (Art Gallery of South Australia)."
+    }
+  ],
+  "music": [
+    {
+      "title": "Scylla et Glaucus",
+      "year": "1746",
+      "kind": "opera",
+      "composer": "Jean-Marie Leclair",
+      "description": "Leclair's tragédie en musique gives the Anthedonian sea-god the title role — Glaucus, Scylla, and Circe's revenge for the Paris Opéra.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Scylla_et_glaucus"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Metamorphoses",
+      "year": "—",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Books 13–14: the fisherman tastes the herb, becomes a blue-green god, loves Scylla, and watches Circe poison the strait.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
+    },
+    {
+      "title": "Glaucus",
+      "year": "—",
+      "kind": "other",
+      "description": "Semi-divine sea-dweller of Anthedon — distinct from the Lycian captain, forever bound to Scylla's transformation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Glaucus"
+    }
+  ]
+}

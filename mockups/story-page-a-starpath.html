@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Story Page A: Star Path</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ STORY CONCEPT A — STAR PATH ============
+     The tale as a voyage traced across the sky: chapters are stars
+     on a constellation line that ignites as you read past it.
+     Places dock onto the chapter where they enter the story. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --pink: #ff4081; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --mortal: #e5e7eb;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos);
+    background-image:
+      radial-gradient(46% 26% at 50% 0%, rgba(192,132,252,.13), transparent 70%),
+      radial-gradient(40% 34% at 6% 70%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(34% 30% at 96% 34%, rgba(0,229,255,.08), transparent 70%);
+    background-attachment: fixed;
+  }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 14% 18%, rgba(241,245,249,.5), transparent),
+      radial-gradient(1px 1px at 71% 9%, rgba(241,245,249,.35), transparent),
+      radial-gradient(1.5px 1.5px at 36% 64%, rgba(192,132,252,.4), transparent),
+      radial-gradient(1px 1px at 58% 42%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1px 1px at 88% 76%, rgba(0,229,255,.35), transparent),
+      radial-gradient(1.4px 1.4px at 9% 92%, rgba(241,245,249,.3), transparent); }
+  .page { position: relative; max-width: 880px; margin: 0 auto; padding: 20px 24px 100px; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .pill { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(12px); }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  /* ---------- Hero ---------- */
+  .hero { text-align: center; padding: 46px 0 0; }
+  .hero .saga { font: 500 11px Cinzel, serif; letter-spacing: .26em; color: var(--soft); text-decoration: none; }
+  .hero .saga:hover { color: var(--aether); }
+  .hero h1 { font: 700 clamp(34px,5.6vw,54px) Cinzel, serif; letter-spacing: .16em; margin-top: 12px; text-shadow: 0 0 46px rgba(192,132,252,.45); }
+  .hero .greek { font-style: italic; font-size: 20px; color: var(--muted); margin-top: 8px; }
+  .hero .sum { max-width: 590px; margin: 20px auto 0; font-style: italic; font-size: 19px; line-height: 1.6; color: var(--muted); }
+  .hero .sum .fn { font-style: normal; }
+
+  /* ---------- The voyage ---------- */
+  .voyage { position: relative; margin-top: 84px; padding-left: 92px; }
+  #rail { position: absolute; left: 33px; top: 8px; bottom: 8px; width: 2px; background: rgba(241,245,249,.1); border-radius: 2px; }
+  #fill { position: absolute; left: 0; top: 0; width: 100%; height: 0; background: linear-gradient(180deg, var(--soft), var(--cyan)); box-shadow: 0 0 12px 1px rgba(192,132,252,.55); border-radius: 2px; }
+  .leg { position: relative; padding-bottom: 74px; }
+  .leg:last-of-type { padding-bottom: 30px; }
+  .node { position: absolute; left: -92px; top: 2px; width: 68px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .node .star { width: 15px; height: 15px; border-radius: 50%; background: rgba(241,245,249,.22); box-shadow: none; transition: background .5s, box-shadow .5s; }
+  .node .no { font: 600 12px Cinzel, serif; letter-spacing: .18em; color: var(--faint); transition: color .5s; }
+  .leg.lit .node .star { background: var(--soft); box-shadow: 0 0 12px 4px rgba(192,132,252,.65), 0 0 34px 12px rgba(192,132,252,.22); }
+  .leg.lit .node .no { color: #e9d5ff; }
+  .leg h3 { font: 600 22px Cinzel, serif; letter-spacing: .1em; color: var(--aether); }
+  .leg h3 .dqm { position: relative; color: var(--soft); font-size: 16px; cursor: default; margin-left: 6px; }
+  .leg h3 .dqm:hover::after { content: 'The tellers place the fall in different waters.'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font: 400 14px 'Cormorant Garamond', serif; color: var(--aether); z-index: 9; }
+  .leg p { margin-top: 10px; font-size: 19px; line-height: 1.64; color: rgba(241,245,249,.9); max-width: 640px; }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 13px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .ports { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .port { display: inline-flex; align-items: center; gap: 7px; border: 1px solid rgba(252,211,77,.3); background: rgba(252,211,77,.07); border-radius: 999px; padding: 4px 13px; font-size: 14.5px; color: #fde68a; cursor: pointer; transition: all .2s; }
+  .port:hover { border-color: rgba(252,211,77,.7); background: rgba(252,211,77,.14); }
+  .port i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 6px 1px rgba(252,211,77,.8); }
+  .port.ghost { border-color: var(--glass-border); background: var(--glass); color: var(--muted); }
+  .port.ghost i { background: var(--faint); box-shadow: none; }
+
+  /* terminal star */
+  .term { position: relative; margin-top: 6px; padding-left: 0; }
+  .term .node { top: -4px; }
+  .term .node .star { width: 22px; height: 22px; background: var(--cyan); box-shadow: 0 0 16px 5px rgba(0,229,255,.6), 0 0 48px 18px rgba(0,229,255,.2); }
+  .term .epi { font-style: italic; font-size: 18px; color: var(--muted); padding-top: 4px; }
+
+  /* ---------- Registers under the voyage ---------- */
+  .sect { text-align: center; font: 500 12px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin: 90px 0 22px; }
+  .cast { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .cchip { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 14px; padding: 9px 18px; text-align: center; cursor: pointer; transition: all .2s; }
+  .cchip.linked { border-color: rgba(192,132,252,.4); background: rgba(124,77,255,.13); }
+  .cchip.linked:hover { border-color: var(--soft); background: rgba(124,77,255,.22); }
+  .cchip b { display: block; font: 600 14px Cinzel, serif; letter-spacing: .08em; color: var(--aether); }
+  .cchip.plain b { color: var(--muted); }
+  .cchip i { display: block; font-size: 13.5px; color: var(--faint); margin-top: 2px; }
+  .colo { max-width: 460px; margin: 0 auto; border: 1px solid var(--glass-border); background: rgba(20,12,48,.45); backdrop-filter: blur(14px); border-radius: 16px; padding: 20px 26px; }
+  .colo .s { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 6px 0; font-size: 16.5px; }
+  .colo .s b { font: 600 13.5px Cinzel, serif; letter-spacing: .08em; }
+  .colo .s span { font-style: italic; color: var(--muted); }
+  .colo .s em { font-size: 14px; color: var(--faint); white-space: nowrap; }
+  footer { text-align: center; margin-top: 80px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 700px) {
+    .voyage { padding-left: 58px; }
+    #rail { left: 19px; }
+    .node { left: -58px; width: 40px; }
+    .leg p { font-size: 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← MYTHS</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <header class="hero">
+    <a class="saga" href="#">AN EPISODE OF METAMORPHOSES ↗</a>
+    <h1>DAEDALUS AND ICARUS</h1>
+    <div class="greek">Δαίδαλος καὶ Ἴκαρος</div>
+    <p class="sum">Daedalus the Athenian craftsman, imprisoned by Minos with his son Icarus, fashioned wings of feather and wax; the boy soared too near the sun, the wax melted, and he fell into the sea that bears his name while the father flew on to Sicily in grief.<span class="fn" data-c="Ovid · Apollodorus · Hyginus — Met. 8.152–259 · Epit. 1.12–13 · Fab. 40">1</span></p>
+  </header>
+
+  <!-- The voyage: chapters as stars on an igniting line -->
+  <div class="voyage" id="voyage">
+    <div id="rail"><div id="fill"></div></div>
+
+    <article class="leg">
+      <div class="node"><span class="star"></span><span class="no">I</span></div>
+      <h3>Flight from Athens</h3>
+      <p>Daedalus son of Metion, architect of the labyrinth and the wooden cow for Pasiphae, had fled Athens after killing his nephew Talos in jealousy of the boy's invention. In Crete he served Minos until Ariadne's thread betrayed the maze — and the king shut both craftsman and son within the very walls Daedalus had designed.<span class="fn" data-c="Apollodorus · Ovid — Apollod. 3.15.8, Epit. 1.12 · Ov. Met. 8.152–208">2</span></p>
+      <div class="ports"><span class="port"><i></i>Knossos</span></div>
+    </article>
+
+    <article class="leg">
+      <div class="node"><span class="star"></span><span class="no">II</span></div>
+      <h3>The Wings</h3>
+      <p>Knowing Minos held land and sea, Daedalus turned to the air. He bound feathers with thread and soft wax into curving wings for himself and Icarus, and warned the boy to fly the middle way — neither so low that the sea spray clog the plumes, nor so high that the sun melt the wax.<span class="fn" data-c="Ovid · Hyginus — Ov. Met. 8.183–235 · Hyg. Fab. 40">3</span></p>
+    </article>
+
+    <article class="leg">
+      <div class="node"><span class="star"></span><span class="no">III</span></div>
+      <h3>The Fall <span class="dqm">⚖</span></h3>
+      <p>Icarus exulted in flight and climbed toward heaven; the heat loosened the wax, the feathers scattered, and the boy plunged into the blue sea. Daedalus, crying his son's name, found only feathers on the waves. Apollodorus calls the sea Icarian and the island Icaria where the body washed ashore.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.223–259 · Apollod. Epit. 1.13">4</span></p>
+      <div class="ports"><span class="port"><i></i>Icarian Sea</span><span class="port ghost"><i></i>Icaria</span></div>
+    </article>
+
+    <article class="leg">
+      <div class="node"><span class="star"></span><span class="no">IV</span></div>
+      <h3>Sicily</h3>
+      <p>The father flew on to Sicily and the court of Cocalus, while Minos pursued him across the seas with ships and thread. On the flight Ovid names the islands they passed: Juno's sacred Samos on the left, Delos and Paros left behind, Lebinthos and honey-rich Calymne on the right.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.259–272, 8.289–399 · Apollod. Epit. 1.13–15">5</span></p>
+      <div class="ports"><span class="port"><i></i>Samos</span><span class="port"><i></i>Delos</span><span class="port"><i></i>Paros</span><span class="port"><i></i>Sicily</span></div>
+    </article>
+
+    <div class="leg term">
+      <div class="node"><span class="star"></span></div>
+      <p class="epi">— and the sea keeps the boy's name.</p>
+    </div>
+  </div>
+
+  <!-- Registers -->
+  <div class="sect">THE CAST</div>
+  <div class="cast">
+    <span class="cchip linked"><b>Daedalus</b><i>Athenian inventor who built the wings</i></span>
+    <span class="cchip linked"><b>Icarus</b><i>his son, who flew too near the sun</i></span>
+    <span class="cchip linked"><b>Minos</b><i>Cretan king who imprisoned them</i></span>
+    <span class="cchip plain" title="Not yet a star in the galaxy"><b>Cocalus</b><i>Sicilian king who sheltered Daedalus</i></span>
+    <span class="cchip linked"><b>Ariadne</b><i>the betrayal that provoked Minos</i></span>
+  </div>
+
+  <div class="sect">TOLD IN</div>
+  <div class="colo">
+    <div class="s"><span><b>Ovid</b> — <span>Metamorphoses</span></span><em>8.152–259</em></div>
+    <div class="s"><span><b>Apollodorus</b> — <span>Epitome</span></span><em>1.12–13</em></div>
+    <div class="s"><span><b>Hyginus</b> — <span>Fabulae</span></span><em>40</em></div>
+  </div>
+
+  <footer>Story concept A — Star Path · the tale is a voyage: the line ignites as you read, places dock onto their chapter</footer>
+</div>
+
+<script>
+  // The constellation line fills with your reading; passed stars ignite.
+  const voyage = document.getElementById('voyage');
+  const fill = document.getElementById('fill');
+  const legs = [...document.querySelectorAll('.leg')];
+  function trace() {
+    const r = voyage.getBoundingClientRect();
+    const anchor = innerHeight * 0.42; // reading line
+    const k = Math.min(Math.max((anchor - r.top) / r.height, 0), 1);
+    fill.style.height = (k * 100) + '%';
+    legs.forEach(leg => {
+      const n = leg.querySelector('.node').getBoundingClientRect();
+      leg.classList.toggle('lit', n.top < anchor);
+    });
+  }
+  addEventListener('scroll', trace, { passive: true });
+  addEventListener('resize', trace);
+  trace();
+</script>
+</body>
+</html>

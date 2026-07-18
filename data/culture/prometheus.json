@@ -22,5 +22,43 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg/960px-Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg",
       "description": "Neoclassical oil painting by the Austrian artist Heinrich Füger. Lit by the flame he has stolen from the gods, Prometheus bears the torch of fire down to humankind — a Romantic-era vision of the Titan as the great benefactor and enlightener of the human race."
     }
+  ],
+  "films": [
+    {
+      "title": "Prometheus",
+      "year": "2012",
+      "medium": "film",
+      "director": "Ridley Scott",
+      "description": "Scott's Alien prequel borrows the Titan's name for a ship seeking the makers of humankind — fire, creation and punishment restaged as cosmic horror.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_(2012_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Prométhée",
+      "year": "1900",
+      "kind": "opera",
+      "composer": "Gabriel Fauré",
+      "description": "Fauré's tragédie lyrique for Béziers stages the fire-theft and the chaining — the Titan as Symbolist benefactor under open-air spectacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prom%C3%A9th%C3%A9e_(Faur%C3%A9)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Frankenstein",
+      "year": "1818",
+      "kind": "novel",
+      "creator": "Mary Shelley",
+      "description": "Shelley's subtitle names her creator 'The Modern Prometheus' — the fire-bringer rewritten as the scientist who animates a body and cannot control what he makes.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Frankenstein"
+    },
+    {
+      "title": "Prometheus Unbound",
+      "year": "1820",
+      "kind": "other",
+      "creator": "Percy Bysshe Shelley",
+      "description": "Shelley's lyrical drama frees the Titan from Zeus' rock — Romantic liberation written against Aeschylus' chains.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_Unbound_(Shelley)"
+    }
   ]
 }

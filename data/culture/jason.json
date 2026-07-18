@@ -1,0 +1,59 @@
+{
+  "id": "jason",
+  "artworks": [
+    {
+      "title": "Jason with the Golden Fleece",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1803 (marble 1828)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg/960px-Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg",
+      "description": "Thorvaldsen's breakthrough statue shows Jason after the fight — nude, helmeted, the Golden Fleece draped over his arm, spear in hand, frozen between rest and return. The marble (242 cm) in Copenhagen's Thorvaldsen Museum became a neoclassical emblem of the Argonaut hero."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg/960px-Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg",
+      "description": "Moreau's Salon canvas pairs Jason with Medea after the fleece is won: the hero stands triumphant while the Colchian sorceress clings beside him amid jewel-like Symbolist detail. Oil on canvas, Musée d'Orsay (RF 2780) — the Argonaut as ornate, ambiguous victor."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "John William Waterhouse",
+      "year": "1907",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Jason_and_Medea_-_John_William_Waterhouse.jpg/960px-Jason_and_Medea_-_John_William_Waterhouse.jpg",
+      "description": "Waterhouse stages the Colchian pact: Medea mixes the protective potion while Jason waits, the Pre-Raphaelite room crowded with charms that will let him face Aeëtes' bulls. Oil on canvas (private collection) — the hero as beneficiary of Medea's craft before Corinth's later betrayal."
+    },
+    {
+      "title": "Jason and the Dragon (Douris cup)",
+      "artist": "Douris",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg",
+      "description": "On this Attic red-figure kylix from Cerveteri, Jason is swallowed and regurgitated by the dragon that guards the Golden Fleece, while Athena stands by and the fleece hangs on the tree. Signed by Douris; Vatican Museums (inv. 16545) — one of the strangest ancient images of the Argonaut's ordeal."
+    }
+  ],
+  "films": [
+    {
+      "title": "Jason and the Argonauts",
+      "year": "1963",
+      "medium": "film",
+      "director": "Don Chaffey",
+      "description": "Harryhausen's stop-motion voyage is still the modern face of the quest: Jason, the Argo, the fleece, and the skeleton army rising from the dragon's teeth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    },
+    {
+      "title": "Medea",
+      "year": "1969",
+      "medium": "film",
+      "director": "Pier Paolo Pasolini",
+      "description": "Pasolini's Jason is the Greek who takes Medea from Colchis and discards her in Corinth — the hero as colonial thief, filmed opposite Callas.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_(1969_film)"
+    },
+    {
+      "title": "Jason and the Argonauts",
+      "year": "2000",
+      "medium": "tv",
+      "director": "Nick Willing",
+      "description": "Hallmark's miniseries retells the voyage for television — Jason's claim on the fleece and on Medea restaged without Harryhausen's skeletons.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(miniseries)"
+    }
+  ]
+}

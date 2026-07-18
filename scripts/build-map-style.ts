@@ -20,6 +20,14 @@ import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } 
 import { join } from 'node:path';
 import bboxClip from '@turf/bbox-clip';
 import { featureCollection } from '@turf/helpers';
+import {
+  RELIEF_MINZOOM,
+  RELIEF_OPACITY_STOPS,
+  SHADE_ACCENT,
+  SHADE_HIGHLIGHT,
+  SHADE_SHADOW,
+  TINT_STOPS,
+} from './lib/relief-style';
 import type {
   Feature,
   FeatureCollection,
@@ -83,6 +91,160 @@ const COLORS = {
    *  the bright coastline and the curated mythic rivers drawn on top. */
   river: '#3fb8d6',
 } as const;
+
+/**
+ * Terrain elevation (terrarium encoding). Three tiers:
+ * - TERRAIN (preferred): the pinned extract split losslessly into 256px tiles
+ *   at public/geo/dem-terrain.pmtiles (`pnpm dem:terrain`).
+ * - PINNED: the original 512px Mapterhorn extract at public/geo/dem.pmtiles
+ *   (`pnpm dem:fetch`, ~1.2 GB, not committed).
+ * - REMOTE: AWS Open Data "Terrain Tiles" (Mapzen/Joerd lineage), keyless — a
+ *   fresh checkout still gets relief with zero setup.
+ * The sea is bathymetry (negative), so every relief ramp below keeps
+ * elevation ≤ 0 fully transparent and the nebula sea stays untouched.
+ */
+const DEM_PMTILES_PATH = join('public', 'geo', 'dem.pmtiles');
+const TERRAIN_DEM_PMTILES_PATH = join('public', 'geo', 'dem-terrain.pmtiles');
+const AWS_DEM_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
+
+/** Baked relief raster (tint + hillshade pre-shaded offline by
+ *  scripts/bake-relief.ts). When present, ONE cheap raster layer replaces the
+ *  two runtime DEM layers — under 3D terrain those were re-rasterized per
+ *  terrain tile (render-to-texture), the single largest draped-layer cost. */
+const RELIEF_MANIFEST_PATH = join('public', 'geo', 'relief', 'manifest.json');
+
+interface DemSourceSpec {
+  type: 'raster-dem';
+  encoding: 'terrarium';
+  tileSize: number;
+  attribution: string;
+  url?: string;
+  tiles?: string[];
+  maxzoom?: number;
+}
+
+/** raster-dem source spec for whichever elevation tier is available. */
+function demSource(): DemSourceSpec {
+  if (existsSync(TERRAIN_DEM_PMTILES_PATH)) {
+    return {
+      type: 'raster-dem',
+      // The 512px source tiles are split losslessly into 256px z+1 children by
+      // `pnpm dem:terrain`. Ground resolution stays identical while MapLibre's
+      // terrain RTT edge drops from 2048px to 1024px.
+      url: 'pmtiles:///geo/dem-terrain.pmtiles',
+      encoding: 'terrarium',
+      tileSize: 256,
+      attribution: '© Mapterhorn',
+    };
+  }
+  if (existsSync(DEM_PMTILES_PATH)) {
+    return {
+      type: 'raster-dem',
+      // The pmtiles:// protocol (registered in MapLibreView) reads the archive
+      // with range requests; min/max zoom come from the archive header.
+      url: 'pmtiles:///geo/dem.pmtiles',
+      encoding: 'terrarium',
+      tileSize: 512,
+      attribution: '© Mapterhorn',
+    };
+  }
+  return {
+    type: 'raster-dem',
+    tiles: [AWS_DEM_TILES],
+    encoding: 'terrarium',
+    tileSize: 256,
+    maxzoom: 12,
+    attribution: 'Terrain Tiles (Mapzen/AWS)',
+  };
+}
+
+/** The zoom→opacity fade shared by both relief tiers. */
+const reliefOpacityExpr = [
+  'interpolate',
+  ['linear'],
+  ['zoom'],
+  ...RELIEF_OPACITY_STOPS.flat(),
+];
+
+/**
+ * Relief layers, two tiers:
+ * - BAKED (preferred): scripts/bake-relief.ts pre-shaded tint + hillshade into
+ *   raster tiles — one texture-copy layer, near-free under terrain RTT.
+ * - RUNTIME (fallback): color-relief + hillshade computed from the DEM on the
+ *   GPU per tile — correct but the most expensive draped layers we had.
+ * Both read their colours from scripts/lib/relief-style.ts.
+ */
+function reliefLayers(): object[] {
+  if (existsSync(RELIEF_MANIFEST_PATH)) {
+    return [
+      {
+        id: 'relief-baked',
+        type: 'raster',
+        source: 'relief',
+        minzoom: RELIEF_MINZOOM,
+        paint: {
+          'raster-opacity': reliefOpacityExpr,
+        },
+      },
+    ];
+  }
+  return [
+    {
+      // Hypsometric tint in the Aether palette: lowlands keep the plain land
+      // fill, highlands lift toward nebula violet, peaks toward star white.
+      // Alpha ramp (not opaque colors) so the land base glows through, and the
+      // bathymetric sea (≤ 0 m) stays fully transparent.
+      id: 'dem-color-relief',
+      type: 'color-relief',
+      source: 'dem',
+      // The basin overview opens at z4.6 — a hard minzoom keeps the overview
+      // DEM-free; the opacity ramp still eases relief in.
+      minzoom: RELIEF_MINZOOM,
+      paint: {
+        'color-relief-color': [
+          'interpolate',
+          ['linear'],
+          ['elevation'],
+          ...TINT_STOPS.flat(),
+        ],
+        // The far view stays the flat 2D atlas; relief only breathes in as the
+        // camera closes on a region (the "walking onto the map" narrative).
+        'color-relief-opacity': reliefOpacityExpr,
+      },
+    },
+    {
+      // Soft directional shading so ridges and valleys read as relief. Igor
+      // method stays gentle; colors carry alpha so the effect is a whisper at
+      // basin view and firms up as you close in.
+      id: 'dem-hillshade',
+      type: 'hillshade',
+      source: 'dem',
+      minzoom: RELIEF_MINZOOM,
+      paint: {
+        'hillshade-method': 'igor',
+        // Near zero at basin view (hillshade has no opacity prop — exaggeration
+        // doubles as one), firming up as the camera approaches. Also keeps the
+        // bathymetric seafloor from texturing the nebula sea at overview.
+        'hillshade-exaggeration': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          RELIEF_MINZOOM,
+          0.02,
+          6.5,
+          0.36,
+          9,
+          0.5,
+          12,
+          0.58,
+        ],
+        'hillshade-shadow-color': SHADE_SHADOW,
+        'hillshade-highlight-color': SHADE_HIGHLIGHT,
+        'hillshade-accent-color': SHADE_ACCENT,
+      },
+    },
+  ];
+}
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -210,13 +372,51 @@ function buildStyle(
     // Loaded by URL (not inlined) so style.json stays small — built by
     // scripts/build-rivers-base.ts from bulk OSM extracts. Data © OSM (ODbL).
     'rivers-base': { type: 'geojson', data: '/geo/rivers-base.json' },
+    // One shared raster-dem source for the mesh AND the (fallback) relief
+    // layers — a second identical source doubled tile fetch, webp decode and
+    // GPU upload for every DEM tile, which is exactly the mid-zoom stutter band.
+    dem: demSource(),
   };
+
+  if (existsSync(RELIEF_MANIFEST_PATH)) {
+    const reliefManifest = JSON.parse(readFileSync(RELIEF_MANIFEST_PATH, 'utf-8')) as {
+      bbox: [number, number, number, number];
+      minzoom: number;
+      maxzoom: number;
+      tileSize: number;
+    };
+    sources.relief = {
+      type: 'raster',
+      tiles: ['/geo/relief/{z}/{x}/{y}.webp'],
+      tileSize: reliefManifest.tileSize,
+      minzoom: reliefManifest.minzoom,
+      maxzoom: reliefManifest.maxzoom,
+      // No requests outside the baked extract (tiles there would 404).
+      bounds: reliefManifest.bbox,
+      attribution: '© Mapterhorn',
+    };
+  }
 
   const layers: object[] = [
     {
       id: 'background',
       type: 'background',
-      paint: { 'background-color': COLORS.background },
+      paint: {
+        // Transparent at the flat 2D band so the CSS nebula sea glows through.
+        // Once the camera enters the 3D terrain band the background turns
+        // opaque cosmos: MapLibre's terrain render-to-texture smears the edge
+        // pixels of transparent tiles down tile seams (vertical streak walls),
+        // so the sea must be painted inside the canvas there.
+        'background-color': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          6.4,
+          'rgba(8, 4, 29, 0)',
+          7,
+          'rgba(8, 4, 29, 1)',
+        ],
+      },
     },
     {
       id: 'land-fill',
@@ -227,6 +427,7 @@ function buildStyle(
         'fill-opacity': 0.98,
       },
     },
+    ...reliefLayers(),
     {
       id: 'lakes-fill',
       type: 'fill',
@@ -265,28 +466,37 @@ function buildStyle(
     },
     {
       // Wide, blurred cyan bloom — fakes the galaxy's glow where shore meets the
-      // nebula sea. Drawn first so the halo and crisp core sit on top.
+      // nebula sea. Drawn first so the halo and crisp core sit on top. An
+      // overview-only effect: in the 3D terrain band every render-to-texture
+      // tile would redraw this blurred ribbon along the whole fractal coast,
+      // so it fades out before the mesh switches on and hard-stops at 7.5.
       id: 'coast-bloom',
       type: 'line',
       source: 'coastline',
+      maxzoom: 7.5,
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: {
         'line-color': COLORS.coast,
         'line-blur': ['interpolate', ['linear'], ['zoom'], 3, 2.5, 12, 7],
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.03, 8, 0.05, 12, 0.08],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.03, 6.5, 0.05, 7.4, 0],
         'line-width': ['interpolate', ['linear'], ['zoom'], 3, 3, 8, 7, 12, 12],
       },
     },
     {
+      // Soft violet halo behind the crisp coast — an overview effect like
+      // coast-bloom: in the terrain band every render-to-texture tile would
+      // re-blur it along the fractal coastline, so it fades out before the
+      // mesh switches on (baked relief + coast-line carry the shore there).
       id: 'coast-halo',
       type: 'line',
       source: 'coastline',
+      maxzoom: 7.5,
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: {
         'line-color': COLORS.coastHalo,
         'line-blur': 0.6,
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.06, 8, 0.1, 12, 0.14],
-        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.2, 8, 2.2, 12, 3],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.06, 6.5, 0.1, 7.4, 0],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.2, 8, 2.2],
       },
     },
     {
@@ -301,12 +511,16 @@ function buildStyle(
       },
     },
     {
+      // Hairline violet land edge — an overview affordance; in the terrain
+      // band the hillshade and coast-line already draw the edge, so drop it
+      // from the render-to-texture pass there.
       id: 'land-outline',
       type: 'line',
       source: 'land',
+      maxzoom: 7.5,
       paint: {
         'line-color': COLORS.landStroke,
-        'line-opacity': 0.18,
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 3, 0.18, 6.5, 0.18, 7.4, 0],
         'line-width': 0.5,
       },
     },
@@ -321,6 +535,42 @@ function buildStyle(
       'icarus:resolution': '10m',
     },
     glyphs: '/geo/font/{fontstack}/{range}.pbf',
+    // Horizon atmosphere for the tilted camera (M-camera choreography): the sky
+    // is the deep cosmos, the horizon a nebula-violet haze, and distant terrain
+    // fades into fog instead of ending at a hard clip line. atmosphere-blend is
+    // zoom-gated so the flat basin overview keeps its pure 2D look.
+    sky: {
+      'sky-color': '#0b0620',
+      'horizon-color': '#2a1b5e',
+      'fog-color': '#08041d',
+      'sky-horizon-blend': 0.7,
+      'horizon-fog-blend': 0.6,
+      // Pull the ground fog closer as the camera goes horizontal: distant
+      // terrain LOD rings (and their skirt seams) melt into the nebula instead
+      // of rendering as hard walls. 0 = fog at the camera, 1 = at the horizon.
+      'fog-ground-blend': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        9,
+        0.82,
+        10.5,
+        0.62,
+        12.5,
+        0.48,
+      ],
+      'atmosphere-blend': [
+        'interpolate',
+        ['linear'],
+        ['zoom'],
+        5.5,
+        0,
+        7,
+        0.55,
+        10,
+        0.75,
+      ],
+    },
     sources,
     layers,
   };
@@ -335,6 +585,12 @@ const INPUT_FILES = [
   join('scripts', 'build-map-style.ts'),
   join('scripts', 'build-regions-geojson.ts'),
   join('scripts', 'lib', 'svg-path-geo.ts'),
+  join('scripts', 'lib', 'relief-style.ts'),
+  // Appearing/refreshing local DEM tiers must update the selected terrain source.
+  DEM_PMTILES_PATH,
+  TERRAIN_DEM_PMTILES_PATH,
+  // Appearing/refreshing baked relief must flip the style to the raster tier.
+  RELIEF_MANIFEST_PATH,
   join('data', 'geo', 'basemap.json'),
   join('data', 'geo', 'regions.json'),
 ];
@@ -353,6 +609,26 @@ const OUTPUT_FILES = [
  *  no raw cache always rebuilds (and downloads). */
 function isCurrent(): boolean {
   if (!OUTPUT_FILES.every(existsSync)) return false;
+  // Optional local terrain assets can appear or disappear without an mtime to
+  // compare. Confirm the built style still points at the tier demSource() now
+  // selects, otherwise rebuild even when every remaining input is older.
+  try {
+    const style = JSON.parse(readFileSync(join(OUT_DIR, 'style.json'), 'utf-8')) as {
+      sources?: Record<string, { url?: string; tiles?: string[]; tileSize?: number }>;
+    };
+    const currentDem = style.sources?.dem;
+    const desiredDem = demSource();
+    if (
+      currentDem?.url !== desiredDem.url ||
+      currentDem?.tileSize !== desiredDem.tileSize ||
+      JSON.stringify(currentDem?.tiles) !== JSON.stringify(desiredDem.tiles)
+    ) {
+      return false;
+    }
+    if (!!style.sources?.relief !== existsSync(RELIEF_MANIFEST_PATH)) return false;
+  } catch {
+    return false;
+  }
   const inputs = INPUT_FILES.filter(existsSync);
   // Raw tiles are mandatory inputs; if they aren't cached we must rebuild.
   if (!existsSync(join(RAW_DIR, 'ne_10m_land.geojson'))) return false;
@@ -415,6 +691,17 @@ async function main() {
         url: 'https://www.naturalearthdata.com/',
         license: 'CC0 1.0',
       },
+      existsSync(TERRAIN_DEM_PMTILES_PATH) || existsSync(DEM_PMTILES_PATH)
+        ? {
+            name: 'Mapterhorn',
+            url: 'https://mapterhorn.com/attribution',
+            license: 'Open Data',
+          }
+        : {
+            name: 'Terrain Tiles (Mapzen/AWS)',
+            url: 'https://registry.opendata.aws/terrain-tiles/',
+            license: 'Open Data',
+          },
     ],
   };
   writeFileSync(join(OUT_DIR, 'manifest.json'), JSON.stringify(manifest, null, 2));

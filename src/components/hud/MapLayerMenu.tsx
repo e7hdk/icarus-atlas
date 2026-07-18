@@ -14,6 +14,7 @@ const LABELS: Record<MapLayerId, string> = {
   cities: 'Cities',
   sanctuaries: 'Sanctuaries',
   rivers: 'Rivers',
+  relief: 'Relief',
 };
 
 /** Map layer filter — ellipsis menu to the left of the Lands search bar. */

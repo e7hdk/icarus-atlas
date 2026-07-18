@@ -1,9 +1,27 @@
 import { notFound } from 'next/navigation';
 import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';
-import { CityShell } from '@/components/city/CityShell';
+import { CityTheatre, type SealResident, type TheatreReign } from '@/components/city/CityTheatre';
+import { CityGates, type GateMyth } from '@/components/city/CityGates';
+import { CityTabNav } from '@/components/city/CityTabNav';
+import { CrumbBar } from '@/components/hud/CrumbBar';
 import { buildCharacterIndex, loadAtlasData } from '@/features/characters/load';
 import { loadCities, loadLineage, loadRegions } from '@/features/geo/load';
 import { countCityResidents } from '@/features/geo/residents';
+import { loadStories } from '@/features/stories/load';
+import type { CharacterType, SourceId } from '@/types/character';
+
+/** Seal ordering: the brightest orders of the sky first, then the mortal roll. */
+const SEAL_TYPE_ORDER: CharacterType[] = [
+  'olympian',
+  'god',
+  'titan',
+  'primordial',
+  'hero',
+  'nymph',
+  'creature',
+  'mortal',
+];
+const SEAL_CAP = 28;
 
 export async function generateStaticParams() {
   const cities = await loadCities();
@@ -24,10 +42,11 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
 
 export default async function CityPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [cities, regions, { characters }] = await Promise.all([
+  const [cities, regions, { characters, sources }, stories] = await Promise.all([
     loadCities(),
     loadRegions(),
     loadAtlasData(),
+    loadStories(),
   ]);
   const city = cities.find((c) => c.id === id);
   if (!city) notFound();
@@ -36,71 +55,75 @@ export default async function CityPage(props: { params: Promise<{ id: string }> 
   const lineage = await loadLineage(city.id);
   const region = city.region ? regions.find((r) => r.id === city.region) : undefined;
   const parentRegion = region?.parent ? regions.find((r) => r.id === region.parent) : undefined;
+  const regionLabel = region
+    ? `${region.name}${parentRegion ? ` — ${parentRegion.name}` : ''}`
+    : undefined;
   const residentCount = countCityResidents(characters, city.id);
 
-  return (
-    <CityShell
-      city={city}
-      region={region}
-      parentRegion={parentRegion}
-      active="lineage"
-      residentCount={residentCount}
-    >
-      <section className="mt-10">
-        <h2 className="text-center font-display text-[12px] uppercase tracking-[0.3em] text-aether-faint">
-          Royal succession
-        </h2>
-        {lineage ? (
-          <ol className="relative mx-auto mt-8 max-w-2xl">
-            <span
-              className="absolute bottom-2 left-[15px] top-2 w-px bg-gradient-to-b from-nebula-soft/50 via-glass-border to-transparent"
-              aria-hidden
-            />
-            {lineage.reigns.map((reign, index) => (
-              <li key={`${reign.ruler}-${index}`} className="relative flex gap-5 pb-8 last:pb-0">
-                <span
-                  className="z-10 mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-glass-border bg-cosmos-raised font-display text-[11px] text-aether-muted"
-                  style={{ boxShadow: '0 0 12px rgb(124 77 255 / 0.35)' }}
-                >
-                  {index + 1}
-                </span>
-                <div className="min-w-0 pt-1" title={reign.citation}>
-                  <div className="flex flex-wrap items-baseline gap-2">
-                    <ReignRulerLinks
-                      reign={reign}
-                      characterIndex={characterIndex}
-                      className="font-display text-xl tracking-[0.08em]"
-                    />
-                    {reign.topic && (
-                      <span
-                        className="text-sm text-nebula-soft"
-                        title="The sources disagree about this reign."
-                        aria-label="Disputed reign"
-                      >
-                        ⚖
-                      </span>
-                    )}
-                  </div>
-                  {reign.note && (
-                    <p className="mt-1 font-body text-[16px] leading-relaxed text-aether-muted">
-                      {reign.note}
-                    </p>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ol>
-        ) : (
-          <p className="mt-8 text-center font-body text-lg italic text-aether-faint">
-            The royal line of {city.name} is still being researched — the atlas grows one throne
-            at a time.
-          </p>
-        )}
-      </section>
+  /** Her sky in miniature: real dwellers, brightest orders first. */
+  const sealResidents: SealResident[] = characters
+    .filter((character) => character.residences?.some((residence) => residence.city === city.id))
+    .map(({ id: characterId, name, type }) => ({ id: characterId, name, type }))
+    .sort(
+      (a, b) =>
+        SEAL_TYPE_ORDER.indexOf(a.type) - SEAL_TYPE_ORDER.indexOf(b.type) ||
+        a.name.localeCompare(b.name),
+    )
+    .slice(0, SEAL_CAP);
 
-      <p className="mt-16 text-center font-body text-[12px] italic text-aether-faint">
+  const sourceNames = new Map<SourceId, string>(sources.map((source) => [source.id, source.name]));
+  const reigns: TheatreReign[] = (lineage?.reigns ?? []).map((reign) => ({
+    label: reign.ruler,
+    title: <ReignRulerLinks reign={reign} characterIndex={characterIndex} />,
+    note: reign.note,
+    footnote: `${reign.sources.map((sourceId) => sourceNames.get(sourceId) ?? sourceId).join(' · ')}${
+      reign.citation ? ` — ${reign.citation}` : ''
+    }`,
+    disputed: Boolean(reign.topic),
+  }));
+
+  /** The tales whose places include this city, in mythic order. */
+  const myths: GateMyth[] = stories
+    .filter((story) => story.places.some((place) => place.id === city.id))
+    .map((story) => ({
+      id: story.id,
+      title: story.title,
+      role: story.places.find((place) => place.id === city.id)?.role,
+    }));
+
+  return (
+    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-20">
+      <CrumbBar
+        back={{ href: '/areas', label: 'Back to the lands' }}
+        trail={[{ href: '/areas', label: 'Lands' }]}
+        current={city.name}
+      />
+
+      <CityTabNav cityId={city.id} active="lineage" residentCount={residentCount} className="mt-4" />
+
+      <CityTheatre
+        city={{
+          id: city.id,
+          name: city.name,
+          greekName: city.greekName,
+          pleiadesId: city.pleiadesId,
+        }}
+        regionLabel={regionLabel}
+        residentCount={residentCount}
+        sealResidents={sealResidents}
+        reigns={reigns}
+      />
+
+      <CityGates
+        cityId={city.id}
+        residentCount={residentCount}
+        myths={myths}
+        regionLabel={regionLabel}
+      />
+
+      <p className="mt-14 text-center font-body text-[12px] italic text-aether-faint">
         Coordinates: Pleiades gazetteer, CC BY · place {city.pleiadesId}
       </p>
-    </CityShell>
+    </main>
   );
 }

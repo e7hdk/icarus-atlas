@@ -1,0 +1,37 @@
+{
+  "id": "polyxena",
+  "artworks": [
+    {
+      "title": "The Sacrifice of Polyxena",
+      "artist": "Giovanni Francesco Romanelli",
+      "year": "c. 1630",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/The_Sacrifice_of_Polyxena_MET_DP307492.jpg/960px-The_Sacrifice_of_Polyxena_MET_DP307492.jpg",
+      "description": "Romanelli's Met canvas: the Trojan princess is led to Achilles' tomb while the Greeks demand her blood — Polyxena's last dignity painted as a baroque altar-piece."
+    },
+    {
+      "title": "The Sacrifice of Polyxena",
+      "artist": "Charles Le Brun",
+      "year": "1647",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Charles_Le_Brun_-_The_Sacrifice_of_Polyxena.jpg/960px-Charles_Le_Brun_-_The_Sacrifice_of_Polyxena.jpg",
+      "description": "Le Brun stages the knife above the tomb: Polyxena as the war's final price, Hecuba's daughter offered so the winds will let the fleet sail home."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hecuba",
+      "year": "c. 424 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides makes Polyxena's sacrifice the first wound of the play — the princess who chooses a free death at Achilles' tomb before her mother's grief turns to revenge.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hecuba_(play)"
+    },
+    {
+      "title": "The Trojan Women",
+      "year": "415 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Among the captive women of Troy, Polyxena's fate is already sealed for the tomb — Euripides' chorus of defeat where the princess is the Greeks' last demand.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women"
+    }
+  ]
+}

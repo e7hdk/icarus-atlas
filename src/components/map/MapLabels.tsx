@@ -10,8 +10,8 @@ import {
   regionLabelColors,
 } from '@/features/geo/map-theme';
 import { isLinearFeatureVisible } from '@/features/geo/feature-visibility';
+import { liveGroundParent } from '@/features/geo/ground-focus';
 import {
-  pickTopRegionAtPoint,
   ZOOM_CITY_NAMES,
   ZOOM_SUBREGION,
   ZOOM_TOP_LABELS,
@@ -59,6 +59,10 @@ interface LabelMarker {
   el: HTMLDivElement;
   kind: LabelKind;
   id: string;
+  /** Whether the marker is currently added to the map. Hidden labels are fully
+   *  detached instead of opacity-0: an attached marker costs a projection (and,
+   *  under 3D terrain, an elevation + occlusion lookup) on every render frame. */
+  attached: boolean;
   /** Marker placement, kept so the collision pass can rebuild the screen-space box. */
   anchor: maplibregl.PositionAnchor;
   offset: [number, number];
@@ -121,6 +125,7 @@ export function MapLabels({
   selectedCityId,
   mapLayers,
   cityFamily,
+  onFeatureClick,
 }: {
   map: MaplibreMap | null;
   cities: GeoCity[];
@@ -134,8 +139,13 @@ export function MapLabels({
   selectedCityId: string | null;
   mapLayers: MapLayerVisibility;
   cityFamily: (city: GeoCity) => string | null;
+  /** Click handler for labels that ARE the feature's interactive surface
+   *  (mountain ranges — they no longer carry a map polygon). */
+  onFeatureClick?: (id: string) => void;
 }) {
   const markersRef = useRef<LabelMarker[]>([]);
+  /** Hidden off-screen box for measuring detached labels (they have no DOM box). */
+  const measurerRef = useRef<HTMLDivElement | null>(null);
   const stateRef = useRef<LabelState>({
     focusedSubId,
     hoveredRegionId,
@@ -152,15 +162,23 @@ export function MapLabels({
   const apply = useCallback(() => {
     if (!map) return;
     const zoom = map.getZoom();
-    const center = map.getCenter();
-    const liveParent =
-      regionsMeta && zoom >= ZOOM_SUBREGION
-        ? pickTopRegionAtPoint(center.lng, center.lat, regionsMeta)
-        : null;
+    // Region under the terrain point at the exact viewport centre.
+    const liveParent = liveGroundParent(map, zoom, regionsMeta);
     const s = stateRef.current;
     const canvas = map.getCanvas();
     const W = canvas.clientWidth;
     const H = canvas.clientHeight;
+    const centreX = W / 2;
+    const centreY = H / 2;
+    const focusRadius = Math.min(W, H) * 0.28;
+
+    const hide = (label: LabelMarker) => {
+      label.el.style.opacity = '0';
+      if (label.attached) {
+        label.marker.remove();
+        label.attached = false;
+      }
+    };
 
     interface Candidate {
       label: LabelMarker;
@@ -172,6 +190,12 @@ export function MapLabels({
     const candidates: Candidate[] = [];
 
     for (const label of markersRef.current) {
+      const screenPoint = map.project(label.marker.getLngLat());
+      const distanceFromCentre = Math.hypot(
+        screenPoint.x + label.offset[0] - centreX,
+        screenPoint.y + label.offset[1] - centreY,
+      );
+      const centrality = Math.max(0, 1 - distanceFromCentre / focusRadius);
       let eligible = false;
       let priority = 0;
       let color: string = MAP.aetherMuted;
@@ -216,8 +240,8 @@ export function MapLabels({
         eligible = zoom >= ZOOM_SUBREGION && label.parent === liveParent;
         const hov = label.id === s.hoveredRegionId || label.id === s.focusedSubId;
         const c = regionLabelColors(label.parent ?? label.id);
-        color = hov ? c.bright : c.base;
-        glow = c.glow;
+        color = hov ? c.bright : MAP.aetherFaint;
+        glow = hov ? c.glow : null;
         glowHovered = hov;
         priority = hov ? 90 : 64;
       }
@@ -225,9 +249,19 @@ export function MapLabels({
       if (label.group && !s.mapLayers[label.group]) eligible = false;
 
       if (eligible) {
+        // Collision placement used to break equal priorities by data order, so
+        // distant labels could hide the places the user was actually zooming
+        // into. Screen distance is the final, generic tie-breaker: no city or
+        // region receives a hand-authored exception.
+        priority += centrality * 28;
+        if ((label.kind === 'city' || label.kind === 'place') && centrality > 0) {
+          color = MAP.aether;
+          glow = 'rgb(0 229 255 / 0.55)';
+          glowHovered = centrality > 0.45;
+        }
         candidates.push({ label, priority, color, glow, glowHovered });
       } else {
-        label.el.style.opacity = '0';
+        hide(label);
       }
     }
 
@@ -242,9 +276,14 @@ export function MapLabels({
     for (const cand of candidates) {
       const label = cand.label;
       if (label.w === undefined || label.h === undefined) {
+        // A detached marker has no DOM box — measure inside the hidden measurer.
+        const measurer = !label.attached ? measurerRef.current : null;
+        const root = label.marker.getElement();
+        if (measurer) measurer.appendChild(root);
         const rect = label.el.getBoundingClientRect();
         label.w = rect.width;
         label.h = rect.height;
+        if (measurer) measurer.removeChild(root);
       }
       const p = map.project(label.marker.getLngLat());
       const ax = p.x + label.offset[0];
@@ -256,7 +295,7 @@ export function MapLabels({
       const y1 = label.anchor === 'top' ? ay + label.h : ay + label.h / 2;
 
       if (x1 < -MARGIN || x0 > W + MARGIN || y1 < -MARGIN || y0 > H + MARGIN) {
-        label.el.style.opacity = '0';
+        hide(label);
         continue;
       }
 
@@ -269,16 +308,23 @@ export function MapLabels({
         }
       }
       if (collides) {
-        label.el.style.opacity = '0';
+        hide(label);
         continue;
       }
 
       placed.push(box);
+      if (!label.attached) {
+        label.marker.addTo(map);
+        label.attached = true;
+      }
       label.el.style.opacity = '1';
       label.el.style.color = cand.color;
       if (cand.glow) {
         label.el.style.textShadow =
           `0 0 3px rgb(5 2 15 / 0.92), 0 0 7px rgb(5 2 15 / 0.7), 0 0 ${cand.glowHovered ? 15 : 10}px ${cand.glow}`;
+      } else {
+        label.el.style.textShadow =
+          '0 0 3px rgb(5 2 15 / 0.92), 0 0 7px rgb(5 2 15 / 0.7), 0 1px 2px rgb(5 2 15 / 0.85)';
       }
     }
   }, [map, regionsMeta, regionById, features]);
@@ -287,6 +333,12 @@ export function MapLabels({
   useEffect(() => {
     if (!map) return;
     const markers: LabelMarker[] = [];
+
+    const measurer = document.createElement('div');
+    measurer.style.cssText =
+      'position:fixed;left:-9999px;top:0;visibility:hidden;pointer-events:none;';
+    document.body.appendChild(measurer);
+    measurerRef.current = measurer;
 
     const add = (
       kind: LabelKind,
@@ -303,6 +355,7 @@ export function MapLabels({
         group?: LabelGroup;
         regionMinZoom?: number;
         important?: boolean;
+        onClick?: (id: string) => void;
       },
     ) => {
       // MapLibre's Marker owns the root element's style.opacity (it resets it on
@@ -315,10 +368,30 @@ export function MapLabels({
       el.style.pointerEvents = 'none';
       el.textContent = name.toUpperCase();
       wrap.appendChild(el);
-      const marker = new maplibregl.Marker({ element: wrap, anchor, offset })
-        .setLngLat(coords)
-        .addTo(map);
-      markers.push({ marker, el, kind, id, anchor, offset, ...extra });
+      if (extra?.onClick) {
+        const onClick = extra.onClick;
+        wrap.style.pointerEvents = 'auto';
+        el.style.pointerEvents = 'auto';
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', (event) => {
+          event.stopPropagation();
+          onClick(id);
+        });
+      }
+      // Created detached: the collision pass attaches only the labels it places,
+      // so hidden labels never cost a per-frame projection.
+      // These are cartographic annotations, not physical objects. MapLibre's
+      // default terrain-covered opacity is 0.2, which was multiplying away the
+      // centre-focus colour/glow whenever a label's zero-height anchor fell a
+      // fraction behind the exaggerated DEM. Collision placement already owns
+      // visibility, so terrain must not independently dim the chosen labels.
+      const marker = new maplibregl.Marker({
+        element: wrap,
+        anchor,
+        offset,
+        opacityWhenCovered: 1,
+      }).setLngLat(coords);
+      markers.push({ marker, el, kind, id, attached: false, anchor, offset, ...extra });
     };
 
     for (const city of cities) {
@@ -344,6 +417,8 @@ export function MapLabels({
         featureKind: feature.kind,
         importance: feature.importance,
         group: feature.kind === 'mountain-range' ? undefined : 'rivers',
+        // Mountain ranges have no map polygon — the label is the click target.
+        onClick: feature.kind === 'mountain-range' ? onFeatureClick : undefined,
       });
     }
 
@@ -367,7 +442,30 @@ export function MapLabels({
 
     markersRef.current = markers;
     apply();
-    map.on('move', apply); // pan + zoom + flyTo all change live zoom/centre gating
+
+    // Pan/zoom/flyTo all change the live gating, but a full eligibility +
+    // collision pass over every label is too heavy for every move frame.
+    // Attached markers track the camera natively between passes, so placement
+    // only needs to catch up a few times per second (plus a settle on moveend).
+    let lastRun = 0;
+    let trailing: number | null = null;
+    const onMove = () => {
+      const now = performance.now();
+      if (now - lastRun >= 120) {
+        lastRun = now;
+        apply();
+        return;
+      }
+      if (trailing === null) {
+        trailing = window.setTimeout(() => {
+          trailing = null;
+          lastRun = performance.now();
+          apply();
+        }, 130);
+      }
+    };
+    map.on('move', onMove);
+    map.on('moveend', apply);
 
     // Sizes measured before Cinzel loads are off (fallback metrics) — re-measure once
     // the web font is ready so the collision boxes match what's actually drawn.
@@ -383,11 +481,15 @@ export function MapLabels({
 
     return () => {
       cancelled = true;
-      map.off('move', apply);
+      if (trailing !== null) window.clearTimeout(trailing);
+      map.off('move', onMove);
+      map.off('moveend', apply);
       for (const label of markers) label.marker.remove();
       markersRef.current = [];
+      measurer.remove();
+      measurerRef.current = null;
     };
-  }, [map, cities, places, features, regionLabels, regionsMeta, cityFamily, apply]);
+  }, [map, cities, places, features, regionLabels, regionsMeta, cityFamily, apply, onFeatureClick]);
 
   // Re-apply when interaction state (hover / selection / layers) changes. Also
   // bound to map 'zoom' in the build effect for live zoom/centre updates.

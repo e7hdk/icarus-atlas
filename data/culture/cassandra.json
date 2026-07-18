@@ -22,5 +22,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Cassandra%2C_1885_by_Anthony_Frederick_Augustus_Sandys.jpg/960px-Cassandra%2C_1885_by_Anthony_Frederick_Augustus_Sandys.jpg",
       "description": "Head of Cassandra by the Pre-Raphaelite artist Anthony Frederick Augustus Sandys, dated 1885. Caught at the moment of prophecy, she cries out with wide eyes, her hair and white drapery streaming against the walls of Troy — a vision of warnings fated to go unheeded."
     }
+  ],
+  "films": [
+    {
+      "title": "The Trojan Women",
+      "year": "1971",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Geneviève Bujold's Cassandra is Euripides' prophetess unbound — cursed to see the truth and never be believed, still crying the fall while the Greeks divide the captives.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women_(film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix retelling keeps Cassandra's ignored warnings in the palace — Apollo's curse as the voice nobody in Troy will hear.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's epic gives Cassandra her traditional role at the horse: the prophetess who sees the trap and is dragged from Athena's altar for saying so.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Les Troyens",
+      "year": "1858",
+      "kind": "opera",
+      "composer": "Hector Berlioz",
+      "description": "Berlioz makes Cassandra the tragic engine of Acts I–II: she foresees the horse, the fire, and her own death — and Troy still will not listen.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    }
   ]
 }

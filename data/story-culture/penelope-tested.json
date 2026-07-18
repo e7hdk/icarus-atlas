@@ -1,0 +1,36 @@
+{
+  "id": "penelope-tested",
+  "artworks": [
+    {
+      "title": "The Return of Odysseus",
+      "artist": "Pinturicchio",
+      "year": "1508–1509",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pinturicchio_-_The_Return_of_Odysseus_-_WGA17830.jpg/960px-Pinturicchio_-_The_Return_of_Odysseus_-_WGA17830.jpg",
+      "description": "A Sienese chamber fresco turned gallery panel: suitors crowd the loom with gifts and music while, through the window, the ship is already in the harbour."
+    },
+    {
+      "title": "Penelope and the Suitors",
+      "artist": "John William Waterhouse",
+      "year": "1912",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/JohnWilliamWaterhouse-PenelopeandtheSuitors%281912%29.jpg",
+      "description": "The queen bends to the loom with her back to the window full of pleading men — fidelity painted as concentration, the thread held taut."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Odyssey",
+      "year": "—",
+      "kind": "other",
+      "creator": "Homer",
+      "description": "Books 23–24 — the immovable bed, the orchard, Athena staying the feud — the recognition that ends the nostos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+    },
+    {
+      "title": "Penelope",
+      "year": "—",
+      "kind": "other",
+      "description": "The queen who tests her husband with their secret bed — fidelity as intelligence, not only waiting.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Penelope"
+    }
+  ]
+}

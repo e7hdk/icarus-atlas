@@ -11,6 +11,7 @@ import { getBakedLinkedProse, getCharacterStorySegments, resolveCharacterProseSe
 import { buildLinkingContext } from '@/features/linking/name-index';
 import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useEphemerisStore } from '@/features/spotlight/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
 import { useIsMobile } from '@/lib/useIsMobile';
 import type { CitySkyContext } from '@/components/galaxy/GalaxyView';
@@ -21,6 +22,9 @@ const INLINE_BONDS = 8;
 /** Story paragraphs shown before "Read more" expands the rest — keeps the panel
  *  compact and scroll-free by default even for long, multi-chapter figures. */
 const STORY_PREVIEW = 2;
+
+const GREEK_KEY_PATTERN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12' viewBox='0 0 32 12'%3E%3Cpath d='M0 11H27V1H5V8H21V4H9' fill='none' stroke='%23fcd34d' stroke-width='1' opacity='.78'/%3E%3C/svg%3E\")";
 
 /** Full story panel, opened by clicking a star. Every paragraph carries its sources. */
 export function CharacterPanel({
@@ -38,6 +42,7 @@ export function CharacterPanel({
   const select = useGalaxyStore((s) => s.select);
   const lens = useGalaxyStore((s) => s.lens);
   const setDiving = useGalaxyStore((s) => s.setDiving);
+  const proemActive = useEphemerisStore((s) => s.proemActive);
   const router = useRouter();
   const isMobile = useIsMobile();
   const panelRef = useRef<HTMLElement>(null);
@@ -96,6 +101,9 @@ export function CharacterPanel({
   }, [bondsOpen]);
 
   if (!character) return null;
+  // While the Proem plays, the stage belongs to the beats — the full panel
+  // would wash the sky it narrates (docs/EPHEMERIS_PLAN.md §6).
+  if (proemActive) return null;
 
   const openCharacterPage = () => {
     setDiving(true);
@@ -110,13 +118,20 @@ export function CharacterPanel({
     const summary = filterSourced(character.summary, lens)[0] ?? filterSourced(character.story, lens)[0];
     return (
       <div className="fixed inset-x-3 top-3 z-30">
-        <GlassPanel className="bg-glass-heavy px-4 py-3.5 shadow-[0_18px_60px_rgba(5,2,15,0.8),0_0_40px_rgba(124,77,255,0.14)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)]">
-          <div className="flex items-start justify-between gap-3">
-            <div className="min-w-0">
-              <h2 className="truncate font-display text-lg tracking-[0.08em] text-aether">
+        <GlassPanel
+          className="relative overflow-hidden border-star-olympian/30 px-4 py-4 shadow-[0_18px_60px_rgba(5,2,15,0.85),0_0_34px_rgba(252,211,77,0.09)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)]"
+          style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
+        >
+          <div
+            className="pointer-events-none absolute inset-x-12 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
+            style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
+          />
+          <div className="relative flex items-start justify-between gap-3">
+            <div className="min-w-0 flex-1 text-center">
+              <h2 className="truncate font-display text-lg tracking-[0.1em] text-aether">
                 {character.name.toUpperCase()}
               </h2>
-              <p className="truncate font-body text-[13px] italic text-aether-muted">
+              <p className="truncate font-body text-[14px] italic text-star-olympian/75">
                 {character.greekName}
               </p>
             </div>
@@ -124,12 +139,14 @@ export function CharacterPanel({
               type="button"
               onClick={() => select(null)}
               aria-label="Close"
-              className="-mr-1 -mt-1 shrink-0 rounded-full px-2 py-1 font-display text-sm text-aether-faint transition-colors hover:text-aether"
+              className="-mr-1 -mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
             >
-              ✕
+              <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+                <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+              </svg>
             </button>
           </div>
-          <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+          <div className="relative mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
             <TypeBadge type={character.type} />
             {character.kinds?.map((kind) => (
               <KindBadge key={kind} kind={kind} primaryType={character.type} />
@@ -139,7 +156,7 @@ export function CharacterPanel({
             </span>
           </div>
           {summary && (
-            <p className="mt-2 line-clamp-2 font-body text-[14px] leading-snug text-aether/85">
+            <p className="relative mt-3 border-t border-star-olympian/15 pt-3 font-body text-[14px] leading-snug text-aether/85 line-clamp-2">
               <LinkedProse
                 text={summary.text}
                 segments={
@@ -163,7 +180,7 @@ export function CharacterPanel({
           <button
             type="button"
             onClick={openCharacterPage}
-            className="mt-3 w-full rounded-xl border border-nebula-soft/40 bg-nebula-violet/15 px-4 py-2.5 font-display text-[12px] uppercase tracking-[0.14em] text-nebula-soft transition-colors hover:bg-nebula-violet/25"
+            className="relative mt-3 w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-4 py-2.5 font-display text-[11px] uppercase tracking-[0.18em] text-star-olympian transition-all hover:border-star-olympian/60 hover:bg-star-olympian/[0.12] hover:text-aether"
           >
             Step into the star →
           </button>
@@ -190,7 +207,7 @@ export function CharacterPanel({
           select(other.id);
           setBondsOpen(false);
         }}
-        className="rounded-full border border-glass-border bg-glass px-3 py-1 text-left font-body text-[14px] text-aether/90 transition-colors hover:border-nebula-soft/50 hover:text-aether"
+        className="border border-star-olympian/15 bg-star-olympian/[0.035] px-3 py-1.5 text-left font-body text-[14px] text-aether/90 transition-all hover:border-star-olympian/40 hover:bg-star-olympian/[0.08] hover:text-aether"
       >
         {other.name}
         <span className="text-aether-faint"> · {bond.label}</span>
@@ -203,25 +220,46 @@ export function CharacterPanel({
     <>
     <aside
       ref={panelRef}
-      className="fixed bottom-0 right-0 top-0 z-30 w-[400px] max-w-full overflow-y-auto border-l border-glass-border bg-glass-heavy backdrop-blur-2xl"
+      className="fixed bottom-0 right-0 top-14 z-30 w-[400px] max-w-full overflow-y-auto border-l border-t border-star-olympian/30 shadow-[-18px_24px_80px_rgba(5,2,15,0.88),0_0_34px_rgba(252,211,77,0.08),inset_0_0_42px_rgba(124,77,255,0.05)] backdrop-blur-2xl"
+      style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
     >
-      <div className="px-7 py-6">
+      <div className="pointer-events-none absolute inset-2 border border-star-olympian/[0.07]" />
+      <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/40" />
+      <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/20" />
+      <div
+        className="pointer-events-none absolute inset-x-16 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
+        style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
+      />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.1),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.08),transparent_48%)]" />
+      {/* The AtlasBar owns the top 3.5rem strip on every route — the panel
+          starts entirely below it (top-14), so bar and panel never share
+          pixels (tenth UX review). */}
+      <div className="relative px-7 py-6">
         <button
           type="button"
           onClick={() => select(null)}
-          className="absolute right-5 top-5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-display text-[11px] tracking-[0.1em] text-aether-muted transition-colors hover:text-aether"
+          aria-label="Close"
+          className="absolute right-5 top-5 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
         >
-          ✕
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+          </svg>
         </button>
 
-        <h2 className="pr-16 font-display text-2xl tracking-[0.14em] text-aether">
+        <div className="mx-auto flex w-28 items-center gap-2" aria-hidden>
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/50" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/65 bg-star-olympian/15 shadow-[0_0_9px_rgba(252,211,77,0.36)]" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/50" />
+        </div>
+
+        <h2 className="mt-4 text-center font-display text-2xl tracking-[0.14em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.12)]">
           {character.name.toUpperCase()}
         </h2>
-        <p className="mt-1 font-body text-lg italic text-aether-muted">
+        <p className="mt-1 text-center font-body text-lg italic text-star-olympian/75">
           {character.greekName}
           {character.romanName ? ` · Roman ${character.romanName}` : ''}
         </p>
-        <div className="mt-3 flex flex-wrap items-center gap-2">
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
           <TypeBadge type={character.type} />
           {character.kinds?.map((kind) => (
             <KindBadge key={kind} kind={kind} primaryType={character.type} />
@@ -229,12 +267,12 @@ export function CharacterPanel({
           <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
         </div>
         {character.epithets && character.epithets.length > 0 && (
-          <p className="mt-2 font-body text-sm italic text-aether-faint">
+          <p className="mt-2 text-center font-body text-sm italic text-aether-faint">
             {character.epithets.join(' · ')}
           </p>
         )}
 
-        <div className="mt-6 space-y-5">
+        <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
           {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => {
             const originalIndex = character.story.findIndex((p) => p.text === paragraph.text);
             const segments =
@@ -244,7 +282,7 @@ export function CharacterPanel({
             return (
             <div key={index}>
               {lens === 'consensus' && paragraph.topic && (
-                <div className="mb-1 inline-block rounded-full border border-nebula-soft/40 bg-nebula-violet/15 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
+                <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
                   Disputed tradition
                 </div>
               )}
@@ -265,7 +303,7 @@ export function CharacterPanel({
             );
           })}
           {story.length === 0 && (
-            <p className="rounded-xl border border-glass-border bg-glass px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
+            <p className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
               No surviving account for this figure is included under the active source lens.
             </p>
           )}
@@ -273,7 +311,7 @@ export function CharacterPanel({
             <button
               type="button"
               onClick={() => setStoryOpen((value) => !value)}
-              className="font-display text-[11px] uppercase tracking-[0.16em] text-nebula-soft transition-colors hover:text-aether"
+              className="font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
             >
               {storyOpen ? '— Read less' : `Read more · ${story.length - STORY_PREVIEW} →`}
             </button>
@@ -281,15 +319,18 @@ export function CharacterPanel({
         </div>
 
         {bonds.length > 0 && (
-          <div className="mt-7 border-t border-glass-border pt-5">
-            <div className="font-display text-[11px] uppercase tracking-[0.22em] text-aether-faint">Bonds</div>
+          <div className="mt-7 border-t border-star-olympian/15 pt-5">
+            <div className="flex items-center gap-3">
+              <div className="font-display text-[10px] uppercase tracking-[0.22em] text-aether-faint">Bonds</div>
+              <span className="h-px flex-1 bg-gradient-to-r from-star-olympian/25 to-transparent" />
+            </div>
             <div className="mt-3 flex flex-wrap gap-2">
               {bonds.slice(0, INLINE_BONDS).map(renderBond)}
               {bonds.length > INLINE_BONDS && (
                 <button
                   type="button"
                   onClick={() => setBondsOpen(true)}
-                  className="rounded-full border border-nebula-soft/40 bg-nebula-violet/15 px-3 py-1 font-body text-[14px] text-nebula-soft transition-colors hover:border-nebula-soft/70 hover:bg-nebula-violet/25"
+                  className="border border-nebula-soft/30 bg-nebula-violet/10 px-3 py-1.5 font-body text-[14px] text-nebula-soft transition-colors hover:border-nebula-soft/60 hover:bg-nebula-violet/20"
                 >
                   ··· {bonds.length - INLINE_BONDS} more
                 </button>
@@ -306,11 +347,16 @@ export function CharacterPanel({
           />
         )}
 
-        <div className="mt-8 pb-4">
+        <div className="relative mt-8 border-t border-star-olympian/20 pb-4 pt-5">
+          <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
+            <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
+          </div>
           <button
             type="button"
             onClick={openCharacterPage}
-            className="w-full rounded-xl border border-nebula-soft/40 bg-nebula-violet/10 px-5 py-3 font-display text-[13px] uppercase tracking-[0.15em] text-nebula-soft shadow-[0_0_15px_rgba(255,255,255,0.05)] transition-all hover:bg-nebula-violet/25 hover:shadow-[0_0_25px_rgba(255,255,255,0.15)]"
+            className="w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-5 py-3 font-display text-[11px] uppercase tracking-[0.2em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether hover:shadow-[0_0_26px_rgba(252,211,77,0.12)]"
           >
             Step into the star
           </button>
@@ -326,10 +372,15 @@ export function CharacterPanel({
         <GlassPanel
           role="dialog"
           aria-modal="true"
-          className="flex max-h-[80vh] w-full max-w-md flex-col overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_48px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
+          className="relative flex max-h-[80vh] w-full max-w-md flex-col overflow-hidden border-star-olympian/30 shadow-[0_24px_80px_rgba(5,2,15,0.88),0_0_36px_rgba(252,211,77,0.1)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
+          style={{ backgroundColor: 'rgba(5, 2, 18, 0.96)' }}
           onMouseDown={(event) => event.stopPropagation()}
         >
-          <div className="flex items-center justify-between border-b border-glass-border px-5 py-4">
+          <div
+            className="pointer-events-none absolute inset-x-14 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
+            style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
+          />
+          <div className="relative flex items-center justify-between border-b border-star-olympian/15 px-5 py-5">
             <h3 className="font-display text-sm tracking-[0.16em] text-aether">
               {character.name.toUpperCase()}
               <span className="ml-2 font-body text-sm italic tracking-normal text-aether-faint">
@@ -340,9 +391,11 @@ export function CharacterPanel({
               type="button"
               onClick={() => setBondsOpen(false)}
               aria-label="Close bonds list"
-              className="rounded-full px-2 py-0.5 font-display text-sm text-aether-faint transition-colors hover:text-aether"
+              className="grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
             >
-              ✕
+              <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+                <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+              </svg>
             </button>
           </div>
           <div className="min-h-0 flex-1 overflow-y-auto p-4">

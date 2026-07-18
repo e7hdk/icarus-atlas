@@ -14,6 +14,12 @@ export interface AtlasData {
   sources: Source[];
 }
 
+/** Batched reads: page prerenders run many renders in parallel, and an
+ *  unbounded Promise.all over 1484 character files per render can overflow
+ *  the macOS system file table during `next build` (ENFILE). Order is
+ *  preserved; behavior is otherwise identical. */
+const READ_BATCH = 64;
+
 async function readJsonDir<T>(dir: string, parse: (raw: unknown) => T): Promise<T[]> {
   let files: string[];
   try {
@@ -21,9 +27,17 @@ async function readJsonDir<T>(dir: string, parse: (raw: unknown) => T): Promise<
   } catch {
     return [];
   }
-  return Promise.all(
-    files.map(async (file) => parse(JSON.parse(await readFile(path.join(dir, file), 'utf-8')))),
-  );
+  const results: T[] = [];
+  for (let start = 0; start < files.length; start += READ_BATCH) {
+    results.push(
+      ...(await Promise.all(
+        files
+          .slice(start, start + READ_BATCH)
+          .map(async (file) => parse(JSON.parse(await readFile(path.join(dir, file), 'utf-8')))),
+      )),
+    );
+  }
+  return results;
 }
 
 /** Loads and validates the core data layer. Server-side only (build/render time). */

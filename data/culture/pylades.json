@@ -1,0 +1,32 @@
+{
+  "id": "pylades",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Electra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Cacoyannis keeps Pylades as Orestes' steadfast companion — the friend who shares the road home and the blood that waits there.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(1962_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Iphigénie en Tauride",
+      "year": "1779",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck's Pylades is the friend who offers to die for Orestes — the Tauris recognition trio's third voice, and one of opera's great portraits of loyalty.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iphig%C3%A9nie_en_Tauride"
+    },
+    {
+      "title": "Ermione",
+      "year": "1819",
+      "kind": "opera",
+      "composer": "Gioachino Rossini",
+      "description": "Rossini brings Pylades to Epirus at Orestes' side — still the companion, now in a court intrigue over Hermione and Andromache.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ermione"
+    }
+  ]
+}

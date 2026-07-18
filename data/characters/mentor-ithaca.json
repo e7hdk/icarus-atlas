@@ -1,0 +1,43 @@
+{
+  "id": "mentor-ithaca",
+  "name": "Mentor",
+  "greekName": "Mentōr (Μέντωρ)",
+  "type": "mortal",
+  "cluster": "mortal-arm",
+  "domains": [
+    "trusted counsel",
+    "guardian of the king's house",
+    "Athena's chosen likeness"
+  ],
+  "summary": [
+    {
+      "text": "The aged comrade of Odysseus on Ithaca, to whom the king, departing with his ships for Troy, gave all his house in charge, that it should obey the old man and that he should keep all things safe. Athena wears his form and voice again and again — beside Telemachus at the assembly and at Pylos, in the hall-fight, and at the making of the final peace.",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.225–241, 2.267–268; 22.205–240; 24.502–548"
+    }
+  ],
+  "story": [
+    {
+      "text": "When Telemachus called the Ithacan assembly, it was old Mentor who rose for the absent king — the comrade to whom Odysseus, on departing with his ships, had given all his house in charge. He rebuked the people of Ithaca for sitting silent while a few suitors devoured the house of their rightful lord.",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.225–241"
+    },
+    {
+      "text": "From the first voyage onward Athena walks in Mentor's shape. In his form and voice she heartens Telemachus after his prayer on the shore, gathers the crew and sails with him to Pylos, and counsels the young man before he approaches Nestor — so that the old guardian's face becomes the goddess's favourite disguise.",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.267–268, 2.399–406; 3.12–28"
+    },
+    {
+      "text": "At the crisis of the fight in the hall Athena comes to Odysseus in the likeness of Mentor, and the king, glad at the sight, calls on him to ward off ruin — while the suitors threaten the old man with death should he join the battle. In Mentor's form and voice again the goddess stays the feud between the house and the suitors' kin, and peace is sealed over Ithaca.",
+      "sources": ["homer"],
+      "citation": "Odyssey 22.205–240; 24.502–548"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"],
+      "citation": "Odyssey 2.225–241"
+    }
+  ]
+}

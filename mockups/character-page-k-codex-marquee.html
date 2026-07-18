@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page K: Codex Marquee (story-page language)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CONCEPT K — CODEX MARQUEE ============
+     The character page rebuilt in the myth page's approved language
+     (Marquee & Path): identity, lens, bonds and registers fold into a
+     sticky gold marquee card; the story marches down an igniting spine.
+     Hovering a bond on the card lights every mention in the prose —
+     the same mechanic as the story page's dramatis personae. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --gold-dim: rgba(252,211,77,.55); --hero: #2dd4bf;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos);
+    background-image:
+      radial-gradient(48% 28% at 44% 0%, rgba(45,212,191,.08), transparent 70%),
+      radial-gradient(42% 36% at 2% 80%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(30% 26% at 98% 40%, rgba(0,229,255,.06), transparent 70%);
+    background-attachment: fixed;
+  }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 18% 14%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 68% 8%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 34% 58%, rgba(252,211,77,.3), transparent),
+      radial-gradient(1px 1px at 56% 36%, rgba(241,245,249,.28), transparent),
+      radial-gradient(1px 1px at 88% 78%, rgba(192,132,252,.3), transparent); }
+  .page { position: relative; max-width: 1120px; margin: 0 auto; padding: 20px 24px 100px; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+  .pill { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(12px); }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  .stagegrid { display: grid; grid-template-columns: 322px minmax(0,1fr); gap: 58px; align-items: start; }
+
+  /* ---------------- The marquee: the codex in hand ---------------- */
+  #marquee { position: sticky; top: 22px; max-height: calc(100vh - 44px); overflow-y: auto; border: 1px solid rgba(252,211,77,.32); background: rgba(20,12,48,.42); backdrop-filter: blur(18px); padding: 30px 28px 26px; box-shadow: 0 22px 60px rgba(5,2,15,.5); scrollbar-width: thin; }
+  #marquee::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgba(252,211,77,.15); pointer-events: none; }
+  .presents { text-align: center; font: 500 9.5px Cinzel, serif; letter-spacing: .44em; color: var(--faint); }
+  .presents b { color: var(--gold-dim); font-weight: 500; }
+  #marquee h1 { text-align: center; font: 700 30px Cinzel, serif; letter-spacing: .16em; padding-left: .16em; margin-top: 12px; text-shadow: 0 0 14px rgba(45,212,191,.65), 0 0 44px rgba(45,212,191,.3); }
+  #marquee .greek { text-align: center; font-style: italic; font-size: 15.5px; color: var(--muted); margin-top: 5px; }
+  .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
+  .badge { border: 1px solid rgba(45,212,191,.45); background: rgba(45,212,191,.12); color: #99f6e4; border-radius: 999px; padding: 3px 11px; font: 600 10px Cinzel, serif; letter-spacing: .16em; }
+  .domains { text-align: center; font-style: italic; font-size: 14.5px; color: var(--muted); margin-top: 7px; }
+  /* the miniature heavens — the codex seal, riding the card */
+  #minisky { position: relative; height: 238px; margin-top: 14px; }
+  .ring { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(255,255,255,.09); }
+  .ring.r1 { width: 78px; height: 78px; border-color: rgba(252,211,77,.22); }
+  .ring.r2 { width: 134px; height: 134px; }
+  .ring.r3 { width: 182px; height: 182px; border-style: dotted; border-color: rgba(96,165,250,.3); }
+  .ring.r4 { width: 226px; height: 226px; border-style: dashed; border-color: rgba(244,114,182,.24); }
+  #core { position: absolute; left: 50%; top: 50%; width: 15px; height: 15px; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle at 38% 34%, #ccfbf1, var(--hero) 55%, #0d9488); box-shadow: 0 0 14px 5px rgba(45,212,191,.7), 0 0 46px 18px rgba(45,212,191,.25); animation: beat 4.2s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.1); } }
+  .rw { position: absolute; left: 50%; top: 50%; width: 0; height: 0; animation: spin linear infinite; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  #minisky:hover .rw { animation-play-state: paused; }
+  .body { position: absolute; transform: translate(-50%,-50%); border-radius: 50%; background: var(--c); width: var(--s,7px); height: var(--s,7px); cursor: pointer; box-shadow: 0 0 6px 2px var(--c), 0 0 14px 5px color-mix(in srgb, var(--c) 30%, transparent); transition: box-shadow .35s, opacity .35s; }
+  #minisky.follow .body { opacity: .16; }
+  #minisky.follow .body.now { opacity: 1; box-shadow: 0 0 10px 3px var(--c), 0 0 28px 10px color-mix(in srgb, var(--c) 55%, transparent); }
+  .body.hot { opacity: 1 !important; box-shadow: 0 0 12px 4px var(--c), 0 0 32px 12px color-mix(in srgb, var(--c) 60%, transparent) !important; }
+  #skyhint { text-align: center; font-style: italic; font-size: 12.5px; color: var(--faint); margin-top: 4px; }
+  #tell { position: fixed; pointer-events: none; z-index: 50; opacity: 0; transition: opacity .18s; background: rgba(20,12,48,.94); border: 1px solid rgba(45,212,191,.4); border-radius: 9px; padding: 6px 12px; white-space: nowrap; }
+  #tell b { display: block; font: 600 12px Cinzel, serif; letter-spacing: .12em; }
+  #tell i { font-size: 13.5px; color: var(--muted); }
+
+  .mrule { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; }
+  .mrule .ln { flex: 1; height: 1px; background: rgba(252,211,77,.28); }
+  .mrule svg { display: block; color: var(--gold-dim); }
+  .mh { font: 500 10px Cinzel, serif; letter-spacing: .32em; color: var(--faint); margin: 18px 0 8px; }
+
+  /* the lens, folded into the programme */
+  #lens { display: flex; flex-wrap: wrap; gap: 4px; }
+  #lens button { padding: 6px 12px; border-radius: 999px; border: 1px solid transparent; background: rgba(255,255,255,.05); color: rgba(226,232,240,.6); font: 500 10.5px Cinzel, serif; letter-spacing: .08em; cursor: pointer; transition: all .2s; }
+  #lens button:hover { color: var(--aether); }
+  #lens button.on { background: rgba(192,132,252,.22); border-color: rgba(192,132,252,.5); color: #e9d5ff; }
+
+  /* the passages, live */
+  .passages a { display: flex; align-items: baseline; gap: 10px; padding: 6px 0; text-decoration: none; color: var(--muted); font-size: 16px; transition: color .25s, opacity .25s; }
+  .passages a b { font: 600 10px Cinzel, serif; letter-spacing: .14em; color: var(--faint); min-width: 16px; transition: color .25s; }
+  .passages a .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(241,245,249,.18); align-self: center; flex: none; transition: all .3s; }
+  .passages a:hover { color: var(--aether); }
+  .passages a.on { color: #fde68a; }
+  .passages a.on b { color: #fde68a; }
+  .passages a.on .dot { background: var(--gold); box-shadow: 0 0 9px 2px rgba(252,211,77,.65); }
+  .passages a.gone { opacity: .3; }
+  .passages a.gone i { text-decoration: line-through; text-decoration-color: rgba(241,245,249,.4); }
+  .passages a i { font-style: normal; }
+
+  /* the bonds — dramatis personae of a life */
+  .bcat { font: 500 9px Cinzel, serif; letter-spacing: .3em; color: rgba(153,246,228,.55); margin: 10px 0 2px; }
+  .bond { display: flex; align-items: center; gap: 9px; padding: 4.5px 0; font-size: 15.5px; color: var(--muted); cursor: pointer; transition: color .2s; }
+  .bond:hover { color: #fde68a; }
+  .bond i { width: 7px; height: 7px; border-radius: 50%; flex: none; background: var(--c, #e5e7eb); box-shadow: 0 0 6px 1px var(--c, #e5e7eb); }
+  .bond em { margin-left: auto; font-style: italic; font-size: 12.5px; color: var(--faint); text-align: right; }
+  .bond .dq { color: var(--soft); font-size: 12px; }
+
+  /* compact registers */
+  .reg-line { font-style: italic; font-size: 14.5px; color: var(--muted); line-height: 1.7; }
+  .reg-line b { font-style: normal; font-weight: 500; color: #fde68a; cursor: pointer; }
+  .reg-line b:hover { text-decoration: underline; text-underline-offset: 3px; }
+  #marquee .fin { text-align: center; color: rgba(241,245,249,.35); font-size: 15px; letter-spacing: .5em; padding-left: .5em; margin-top: 16px; }
+
+  /* ---------------- The stage: the story on the spine ---------------- */
+  .stage { max-width: 660px; }
+  .sum { font-style: italic; font-size: 19.5px; line-height: 1.62; color: var(--muted); border-left: 2px solid rgba(45,212,191,.5); padding-left: 22px; }
+  .voyage { position: relative; margin-top: 58px; padding-left: 88px; }
+  #rail { position: absolute; left: 31px; top: 8px; bottom: 8px; width: 2px; background: rgba(241,245,249,.1); border-radius: 2px; }
+  #fill { position: absolute; left: 0; top: 0; width: 100%; height: 0; background: linear-gradient(180deg, var(--gold), var(--soft)); box-shadow: 0 0 12px 1px rgba(252,211,77,.5); border-radius: 2px; }
+  .pass { position: relative; padding-bottom: 64px; transition: opacity .35s; }
+  .pass:last-of-type { padding-bottom: 26px; }
+  .pass.hidden { opacity: .13; pointer-events: none; }
+  .node { position: absolute; left: -88px; top: 2px; width: 62px; display: flex; flex-direction: column; align-items: center; gap: 9px; }
+  .node .star { width: 15px; height: 15px; border-radius: 50%; background: rgba(241,245,249,.22); transition: background .5s, box-shadow .5s; }
+  .node .no { font: 600 10.5px Cinzel, serif; letter-spacing: .15em; color: var(--faint); transition: color .5s; white-space: nowrap; }
+  .pass.lit .node .star { background: var(--gold); box-shadow: 0 0 12px 4px rgba(252,211,77,.6), 0 0 34px 12px rgba(252,211,77,.22); }
+  .pass.lit .node .no { color: #fde68a; }
+  .pass h3 { font: 600 21px Cinzel, serif; letter-spacing: .11em; }
+  .pass p { margin-top: 11px; font-size: 19px; line-height: 1.66; color: rgba(241,245,249,.91); }
+  .mention { color: inherit; border-bottom: 1px dotted transparent; transition: all .25s; }
+  .mention.lit { color: #fde68a; text-shadow: 0 0 16px rgba(252,211,77,.55); border-bottom-color: rgba(252,211,77,.5); }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 13px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(252,211,77,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .dqm { position: relative; color: var(--soft); cursor: default; }
+  .dqm:hover::after { content: 'Told differently in other tellings — change the lens on the card'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .term { position: relative; }
+  .term .node { top: -4px; }
+  .term .node .star { width: 21px; height: 21px; background: var(--gold); box-shadow: 0 0 16px 5px rgba(252,211,77,.6), 0 0 48px 18px rgba(252,211,77,.2); }
+  .term .fin { color: rgba(241,245,249,.4); font-size: 17px; letter-spacing: .55em; padding-left: .55em; }
+  #empty { display: none; font-style: italic; font-size: 18px; color: var(--faint); padding-top: 4px; }
+  .voyage.void #empty { display: block; }
+  .voyage.void #rail { opacity: .25; }
+  .hint { margin-top: 46px; font-style: italic; font-size: 13.5px; color: var(--faint); text-align: center; }
+
+  footer { text-align: center; margin-top: 80px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 880px) {
+    .stagegrid { grid-template-columns: 1fr; gap: 26px; }
+    #marquee { position: static; max-height: none; }
+    .voyage { padding-left: 56px; }
+    #rail { left: 19px; }
+    .node { left: -56px; width: 38px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div id="tell"><b></b><i></i></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="stagegrid">
+    <!-- The codex in hand -->
+    <aside id="marquee">
+      <div class="presents"><b>ICARUS ATLAS</b> · THE CODEX OF</div>
+      <h1>PERSEUS</h1>
+      <div class="greek">Perseus (Περσεύς) · Roman Perseus</div>
+      <div class="badges"><span class="badge">HERO</span></div>
+      <div class="domains">the Gorgon-slayer · founder of Mycenae</div>
+
+      <!-- the codex seal: his bonds in orbit, following the tale -->
+      <div id="minisky">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div>
+        <div id="core"></div>
+        <div id="orbits"></div>
+      </div>
+      <div id="skyhint">the heavens follow the tale — hover a star to name it</div>
+
+      <div class="mrule"><span class="ln"></span>
+        <svg width="64" height="12" viewBox="0 0 64 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+      <span class="ln"></span></div>
+
+      <div class="mh">TOLD AFTER</div>
+      <div id="lens">
+        <button class="on" data-l="consensus">All tellers</button>
+        <button data-l="apollodorus">Apollodorus</button>
+        <button data-l="ovid">Ovid</button>
+        <button data-l="hyginus">Hyginus</button>
+        <button data-l="hesiod">Hesiod</button>
+      </div>
+
+      <div class="mh">THE PASSAGES</div>
+      <nav class="passages" id="passages">
+        <a href="#p1" class="on" data-p="1"><span class="dot"></span><b>I</b><i>The chest on the waves</i></a>
+        <a href="#p2" data-p="2"><span class="dot"></span><b>II</b><i>The Gorgon quest</i></a>
+        <a href="#p3" data-p="3"><span class="dot"></span><b>III</b><i>Return &amp; Mycenae</i></a>
+      </nav>
+
+      <div class="mh">THE BONDS</div>
+      <div id="bonds">
+        <div class="bcat">PARENTS</div>
+        <div class="bond" data-b="zeus" style="--c:#fcd34d"><i></i>Zeus<em>the shower of gold</em></div>
+        <div class="bond" data-b="danae" style="--c:#e5e7eb"><i></i>Danaë<em>of Argos</em></div>
+        <div class="bcat">CONSORT</div>
+        <div class="bond" data-b="andromeda" style="--c:#e5e7eb"><i></i>Andromeda<em>rescued from the sea</em></div>
+        <div class="bcat">LINE</div>
+        <div class="bond" data-b="perses" style="--c:#e5e7eb"><i></i>Perses<em>son</em></div>
+        <div class="bond" data-b="electryon" style="--c:#e5e7eb"><i></i>Electryon<em>son</em></div>
+        <div class="bond" data-b="gorgophone" style="--c:#e5e7eb"><i></i>Gorgophone<em>daughter</em></div>
+        <div class="bcat">GUIDES</div>
+        <div class="bond" data-b="athena" style="--c:#fcd34d"><i></i>Athena<em>the bright shield</em></div>
+        <div class="bond" data-b="hermes" style="--c:#60a5fa"><i></i>Hermes<em>the sickle</em></div>
+        <div class="bcat">FOES</div>
+        <div class="bond" data-b="medusa" style="--c:#f472b6"><i></i>Medusa<em>slain</em></div>
+        <div class="bond" data-b="polydectes" style="--c:#e5e7eb"><i></i>Polydectes<em>petrified</em></div>
+        <div class="bond" data-b="acrisius" style="--c:#e5e7eb"><i></i>Acrisius<em>the prophecy <span class="dq">⚖</span></em></div>
+      </div>
+
+      <div class="mh">DWELT AT</div>
+      <p class="reg-line"><b>Seriphos</b> · <b>Argos</b> · <b>Mycenae</b> · <b>Tiryns</b> · <b>Aethiopia</b></p>
+
+      <div class="mh">APPEARS IN THE MYTHS</div>
+      <p class="reg-line"><b>Birth at Seriphos</b> · <b>The Gorgon Medusa</b> · <b>Andromeda Rescued</b> · <b>Perseus at the Feast</b> · <b>Return and Mycenae</b></p>
+
+      <div class="fin">⁂</div>
+    </aside>
+
+    <!-- The story on the spine -->
+    <div class="stage" id="stage">
+      <p class="sum">The legendary son of Zeus and Danaë. With the help of the gods, he beheaded the Gorgon Medusa, rescued Andromeda from a sea monster, and founded the great city of Mycenae.<span class="fn" data-c="Apollodorus · Ovid · Hyginus · Hesiod — Bibliotheca 2.4.1–4 · Met. 4.604 · Fab. 63–64 · Theog. 280">1</span></p>
+
+      <div class="voyage" id="voyage">
+        <div id="rail"><div id="fill"></div></div>
+
+        <section class="pass" id="p1" data-src="apollodorus hyginus" data-bodies="zeus danae acrisius">
+          <div class="node"><span class="star"></span><span class="no">I</span></div>
+          <h3>The chest on the waves</h3>
+          <p>Born in a subterranean bronze chamber after <span class="mention" data-b="zeus">Zeus</span> visited his mother <span class="mention" data-b="danae">Danaë</span> in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather <span class="mention" data-b="acrisius">Acrisius</span>. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.<span class="fn" data-c="Apollodorus · Hyginus — Bibliotheca 2.4.1 · Fabulae 63">2</span></p>
+        </section>
+
+        <section class="pass" id="p2" data-src="apollodorus ovid" data-bodies="polydectes medusa hermes athena">
+          <div class="node"><span class="star"></span><span class="no">II</span></div>
+          <h3>The Gorgon quest</h3>
+          <p>To protect his mother from the unwanted advances of King <span class="mention" data-b="polydectes">Polydectes</span>, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon <span class="mention" data-b="medusa">Medusa</span>. Guided by <span class="mention" data-b="hermes">Hermes</span> and <span class="mention" data-b="athena">Athena</span>, he acquired winged sandals, a magic wallet, and the cap of Hades<span class="dqm"> ⚖</span>. He beheaded Medusa and used her petrifying gaze to turn his enemies — the titan Atlas and the sea monster Cetus among them — to stone.<span class="fn" data-c="Apollodorus · Ovid — Bibliotheca 2.4.2–3 · Metamorphoses 4.740">3</span></p>
+        </section>
+
+        <section class="pass" id="p3" data-src="apollodorus hyginus pausanias" data-bodies="andromeda acrisius">
+          <div class="node"><span class="star"></span><span class="no">III</span></div>
+          <h3>Return &amp; Mycenae</h3>
+          <p>After rescuing and marrying the Aethiopian princess <span class="mention" data-b="andromeda">Andromeda</span>, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather <span class="mention" data-b="acrisius">Acrisius</span> with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.<span class="fn" data-c="Apollodorus · Hyginus · Pausanias — Bibliotheca 2.4.4 · Fabulae 273 · Paus. 2.16.3">4</span></p>
+        </section>
+
+        <p id="empty">Nothing of this figure survives under this teller — choose another on the card.</p>
+
+        <div class="pass term">
+          <div class="node"><span class="star"></span></div>
+          <div class="fin">⁂</div>
+        </div>
+      </div>
+
+      <p class="hint">the spine ignites as you read · hover a bond on the card — every mention of them lights in the story</p>
+    </div>
+  </div>
+
+  <footer>Concept K — Codex Marquee · the character codex retold in the myth page's approved language: programme in hand, life on the spine</footer>
+</div>
+
+<script>
+  // The codex seal: his bonds in orbit (ring radius · angle · color · size · period).
+  const BODIES = [
+    { k: 'zeus', n: 'Zeus', r: 'father — the shower of gold', ring: 39, a: 24, c: '#fcd34d', s: 9, t: 85 },
+    { k: 'danae', n: 'Danaë', r: 'mother', ring: 39, a: 200, c: '#e5e7eb', s: 8, t: 85 },
+    { k: 'andromeda', n: 'Andromeda', r: 'wife — rescued from the sea', ring: 67, a: 320, c: '#e5e7eb', s: 8, t: 120 },
+    { k: 'perses', n: 'Perses', r: 'son', ring: 67, a: 60, c: '#e5e7eb', s: 6, t: 120 },
+    { k: 'electryon', n: 'Electryon', r: 'son', ring: 67, a: 130, c: '#e5e7eb', s: 6, t: 120 },
+    { k: 'gorgophone', n: 'Gorgophone', r: 'daughter', ring: 67, a: 190, c: '#e5e7eb', s: 6, t: 120 },
+    { k: 'athena', n: 'Athena', r: 'guide — the bright shield', ring: 91, a: 10, c: '#fcd34d', s: 7, t: 155 },
+    { k: 'hermes', n: 'Hermes', r: 'guide — the sickle', ring: 91, a: 150, c: '#60a5fa', s: 7, t: 155 },
+    { k: 'medusa', n: 'Medusa', r: 'slain', ring: 113, a: 100, c: '#f472b6', s: 8, t: 190 },
+    { k: 'polydectes', n: 'Polydectes', r: 'petrified', ring: 113, a: 215, c: '#e5e7eb', s: 7, t: 190 },
+    { k: 'acrisius', n: 'Acrisius', r: 'grandfather — the prophecy', ring: 113, a: 335, c: '#e5e7eb', s: 7, t: 190 },
+  ];
+  const orbits = document.getElementById('orbits');
+  const minisky = document.getElementById('minisky');
+  BODIES.forEach(b => {
+    const w = document.createElement('div');
+    w.className = 'rw';
+    w.style.animationDuration = b.t + 's';
+    w.style.transform = `rotate(${b.a}deg)`;
+    const s = document.createElement('div');
+    s.className = 'body';
+    s.style.setProperty('--c', b.c);
+    s.style.setProperty('--s', b.s + 'px');
+    s.style.left = b.ring + 'px'; s.style.top = '0px';
+    s.dataset.k = b.k; s.dataset.n = b.n; s.dataset.r = b.r;
+    w.appendChild(s); orbits.appendChild(w);
+  });
+  const bodyEls = [...orbits.querySelectorAll('.body')];
+
+  // The igniting spine (same mechanic as the story page) + the seal follows the tale.
+  const voyage = document.getElementById('voyage');
+  const fill = document.getElementById('fill');
+  const passes = [...voyage.querySelectorAll('.pass')];
+  const links = [...document.querySelectorAll('.passages a')];
+  function trace() {
+    const r = voyage.getBoundingClientRect();
+    const anchor = innerHeight * 0.42;
+    const k = Math.min(Math.max((anchor - r.top) / r.height, 0), 1);
+    fill.style.height = (k * 100) + '%';
+    let current = null;
+    passes.forEach(p => {
+      const n = p.querySelector('.node').getBoundingClientRect();
+      const lit = n.top < anchor;
+      p.classList.toggle('lit', lit);
+      if (lit && p.id && !p.classList.contains('hidden')) current = p.id;
+    });
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + (current ?? 'p1')));
+    const src = current ? document.getElementById(current) : null;
+    const keys = src ? (src.dataset.bodies || '').split(' ') : null;
+    minisky.classList.toggle('follow', Boolean(keys));
+    bodyEls.forEach(el => el.classList.toggle('now', Boolean(keys && keys.includes(el.dataset.k))));
+  }
+  addEventListener('scroll', trace, { passive: true });
+  addEventListener('resize', trace);
+  trace();
+
+  // The lens, folded into the marquee: passages ghost, the card list strikes through.
+  const lens = document.getElementById('lens');
+  lens.addEventListener('click', e => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    lens.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === btn));
+    const l = btn.dataset.l; let seen = 0;
+    passes.forEach(p => {
+      if (!p.dataset.src) return;
+      const keep = l === 'consensus' || p.dataset.src.split(' ').includes(l);
+      p.classList.toggle('hidden', !keep); if (keep) seen++;
+      const link = document.querySelector(`.passages a[href="#${p.id}"]`);
+      if (link) link.classList.toggle('gone', !keep);
+    });
+    voyage.classList.toggle('void', seen === 0);
+  });
+
+  // Hover a bond: light every mention in the prose AND flare its star on the seal.
+  const bonds = document.getElementById('bonds');
+  bonds.addEventListener('mouseover', e => {
+    const row = e.target.closest('.bond'); if (!row) return;
+    document.querySelectorAll(`.mention[data-b="${row.dataset.b}"]`).forEach(s => s.classList.add('lit'));
+    bodyEls.forEach(el => el.classList.toggle('hot', el.dataset.k === row.dataset.b));
+  });
+  bonds.addEventListener('mouseout', e => {
+    const row = e.target.closest('.bond'); if (!row) return;
+    document.querySelectorAll('.mention.lit').forEach(s => s.classList.remove('lit'));
+    bodyEls.forEach(el => el.classList.remove('hot'));
+  });
+
+  // Hover a star on the seal: name it, halt the heavens, light its mentions.
+  const tell = document.getElementById('tell');
+  minisky.addEventListener('mouseover', e => {
+    const b = e.target.closest('.body'); if (!b) return;
+    tell.querySelector('b').textContent = b.dataset.n;
+    tell.querySelector('i').textContent = b.dataset.r;
+    tell.style.opacity = 1;
+    document.querySelectorAll(`.mention[data-b="${b.dataset.k}"]`).forEach(s => s.classList.add('lit'));
+  });
+  minisky.addEventListener('mousemove', e => {
+    if (tell.style.opacity === '1') { tell.style.left = (e.clientX + 14) + 'px'; tell.style.top = (e.clientY - 8) + 'px'; }
+  });
+  minisky.addEventListener('mouseout', e => {
+    if (!e.target.closest('.body')) return;
+    tell.style.opacity = 0;
+    document.querySelectorAll('.mention.lit').forEach(s => s.classList.remove('lit'));
+  });
+</script>
+</body>
+</html>

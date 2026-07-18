@@ -1,0 +1,15 @@
+{
+  "id": "thesmophoria",
+  "name": "Thesmophoria",
+  "greekName": "Θεσμοφόρια",
+  "deities": ["demeter", "persephone"],
+  "place": "athens",
+  "atticDate": { "month": "pyanepsion", "days": [11, 13] },
+  "conventionalDates": ["10-11", "10-12", "10-13"],
+  "summary": "The women's three days for Demeter the Lawgiver — Ascent, Fast and Fair Birth — held apart from the men before the autumn sowing.",
+  "testimonia": [
+    "Aristophanes, Thesmophoriazusae (staged on the Middle Day)",
+    "Scholia to Aristophanes, Thesmophoriazusae 80 (11–13 Pyanopsion)",
+    "Mikalson (1975) 71–73"
+  ]
+}

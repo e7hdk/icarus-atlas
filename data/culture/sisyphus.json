@@ -1,0 +1,61 @@
+{
+  "id": "sisyphus",
+  "artworks": [
+    {
+      "title": "Sisyphus",
+      "artist": "Titian",
+      "year": "1548–1549",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Titian_-_Sisyphus_-_Madrid_-_Prado.jpg/960px-Titian_-_Sisyphus_-_Madrid_-_Prado.jpg",
+      "description": "One of Titian's underworld Furias for Mary of Hungary: Sisyphus strains beneath the boulder he must forever drive uphill, cliffs and infernal fire closing around him. Oil on canvas, Museo del Prado, Madrid — the Corinthian king's punishment as a colossal single figure of futile labour."
+    },
+    {
+      "title": "Sisyphus",
+      "artist": "Antonio Zanchi",
+      "year": "c. 1660–1665",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Antonio_Zanchi_-_Sisyphus_-_335_-_Mauritshuis.jpg/960px-Antonio_Zanchi_-_Sisyphus_-_335_-_Mauritshuis.jpg",
+      "description": "The Venetian Baroque painter crowds the eternal sentence into a dark, muscular canvas: Sisyphus locked against the rock that will always roll back down. Oil on canvas in the Mauritshuis, The Hague (inv. 335) — the crafty king of Corinth reduced to raw, repeating effort."
+    },
+    {
+      "title": "Sisyphus",
+      "artist": "Franz von Stuck",
+      "year": "1920",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sisyphus_by_von_Stuck.jpg/960px-Sisyphus_by_von_Stuck.jpg",
+      "description": "Stuck's Symbolist Sisyphus bends naked into the stone, the hillside a stark plane of struggle without landscape comfort. Painted in 1920, the image became one of the modern emblems of the absurd labour Camus would later name — the boulder as destiny."
+    }
+  ],
+  "films": [
+    {
+      "title": "Triangle",
+      "year": "2009",
+      "medium": "film",
+      "director": "Christopher Smith",
+      "description": "Smith's time-loop horror restages the Corinthian king's punishment as a yacht that cannot leave its own wake — Sisyphus rewritten as a mother trapped in a repeating day of violence.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Triangle_(2009_British_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "The Myth of Sisyphus",
+      "year": "1942",
+      "kind": "novel",
+      "creator": "Albert Camus",
+      "description": "Camus' essay makes the rolling stone the emblem of the absurd — and ends by imagining Sisyphus happy, turning the underworld labour into modern philosophy's most famous image of defiance.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus"
+    },
+    {
+      "title": "Sisyphean",
+      "year": "—",
+      "kind": "language",
+      "description": "English borrowed the king's name for any endless, futile labour — a daily word that keeps the Corinthian punishment alive long after the underworld scene is forgotten.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Sisyphus"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's underworld roguelike keeps Sisyphus as a cheerful boulder-pusher in Tartarus — the eternal sentence turned into a warm, talkative side character.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
+  ]
+}

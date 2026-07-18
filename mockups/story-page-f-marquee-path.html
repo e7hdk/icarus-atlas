@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Story Page F: Marquee &amp; Path (A × B)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ STORY CONCEPT F — MARQUEE & PATH (A × B) ============
+     Programme in hand, voyage on stage: the playbill folds into a
+     sticky gold marquee card that rides beside Star Path's igniting
+     line. The marquee's act list is live — the act under your eyes
+     glows gold on the card while its star burns on the spine. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --gold-dim: rgba(252,211,77,.55);
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos);
+    background-image:
+      radial-gradient(48% 28% at 44% 0%, rgba(252,211,77,.08), transparent 70%),
+      radial-gradient(42% 36% at 2% 80%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(30% 26% at 98% 40%, rgba(0,229,255,.06), transparent 70%);
+    background-attachment: fixed;
+  }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 18% 14%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 68% 8%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 34% 58%, rgba(252,211,77,.3), transparent),
+      radial-gradient(1px 1px at 56% 36%, rgba(241,245,249,.28), transparent),
+      radial-gradient(1px 1px at 88% 78%, rgba(192,132,252,.3), transparent); }
+  .page { position: relative; max-width: 1120px; margin: 0 auto; padding: 20px 24px 100px; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+  .pill { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(12px); }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  .stagegrid { display: grid; grid-template-columns: 316px minmax(0,1fr); gap: 58px; align-items: start; }
+
+  /* ---------- The marquee: the programme in hand ---------- */
+  #marquee { position: sticky; top: 22px; border: 1px solid rgba(252,211,77,.32); background: rgba(20,12,48,.42); backdrop-filter: blur(18px); padding: 30px 28px 26px; box-shadow: 0 22px 60px rgba(5,2,15,.5); }
+  #marquee::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgba(252,211,77,.15); pointer-events: none; }
+  #marquee .presents { text-align: center; font: 500 9.5px Cinzel, serif; letter-spacing: .44em; color: var(--faint); }
+  #marquee .presents b { color: var(--gold-dim); font-weight: 500; }
+  #marquee .saga { display: block; text-align: center; margin-top: 14px; font: 500 9.5px Cinzel, serif; letter-spacing: .22em; color: var(--soft); text-decoration: none; }
+  #marquee .saga:hover { color: var(--aether); }
+  #marquee h1 { text-align: center; font: 700 22px Cinzel, serif; letter-spacing: .12em; line-height: 1.35; margin-top: 8px; text-shadow: 0 0 30px rgba(252,211,77,.35); }
+  #marquee .greek { text-align: center; font-style: italic; font-size: 15.5px; color: var(--muted); margin-top: 4px; }
+  .mrule { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; }
+  .mrule .ln { flex: 1; height: 1px; background: rgba(252,211,77,.28); }
+  .mrule svg { display: block; color: var(--gold-dim); }
+  .mh { font: 500 10px Cinzel, serif; letter-spacing: .32em; color: var(--faint); margin: 18px 0 8px; }
+  .acts-list a { display: flex; align-items: baseline; gap: 10px; padding: 6px 0; text-decoration: none; color: var(--muted); font-size: 16px; transition: color .25s; }
+  .acts-list a b { font: 600 10px Cinzel, serif; letter-spacing: .14em; color: var(--faint); min-width: 44px; transition: color .25s; }
+  .acts-list a .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(241,245,249,.18); align-self: center; flex: none; transition: all .3s; }
+  .acts-list a:hover { color: var(--aether); }
+  .acts-list a.on { color: #fde68a; }
+  .acts-list a.on b { color: #fde68a; }
+  .acts-list a.on .dot { background: var(--gold); box-shadow: 0 0 9px 2px rgba(252,211,77,.65); }
+  .plist .person { display: flex; align-items: center; gap: 9px; padding: 4.5px 0; font-size: 15.5px; color: var(--muted); cursor: pointer; }
+  .plist .person:hover { color: #fde68a; }
+  .plist .person i { width: 7px; height: 7px; border-radius: 50%; flex: none; background: #e5e7eb; box-shadow: 0 0 6px 1px rgba(229,231,235,.7); }
+  .plist .person.plain i { background: var(--faint); box-shadow: none; }
+  .plist .person em { margin-left: auto; font-style: italic; font-size: 12.5px; color: var(--faint); }
+  #marquee .told { border-top: 1px dotted rgba(252,211,77,.25); margin-top: 16px; padding-top: 12px; font-size: 13.5px; color: var(--faint); line-height: 1.65; }
+  #marquee .told b { font: 600 11px Cinzel, serif; letter-spacing: .06em; color: var(--muted); }
+  #marquee .told i { font-style: italic; }
+  #marquee .fin { text-align: center; font: 600 10px Cinzel, serif; letter-spacing: .44em; color: var(--gold-dim); margin-top: 16px; }
+
+  /* ---------- The stage: Star Path ---------- */
+  .stage { max-width: 660px; }
+  .sum { font-style: italic; font-size: 19.5px; line-height: 1.62; color: var(--muted); border-left: 2px solid rgba(252,211,77,.45); padding-left: 22px; }
+  .voyage { position: relative; margin-top: 58px; padding-left: 88px; }
+  #rail { position: absolute; left: 31px; top: 8px; bottom: 8px; width: 2px; background: rgba(241,245,249,.1); border-radius: 2px; }
+  #fill { position: absolute; left: 0; top: 0; width: 100%; height: 0; background: linear-gradient(180deg, var(--gold), var(--soft)); box-shadow: 0 0 12px 1px rgba(252,211,77,.5); border-radius: 2px; }
+  .act { position: relative; padding-bottom: 70px; }
+  .act:last-of-type { padding-bottom: 26px; }
+  .node { position: absolute; left: -88px; top: 2px; width: 62px; display: flex; flex-direction: column; align-items: center; gap: 9px; }
+  .node .star { width: 15px; height: 15px; border-radius: 50%; background: rgba(241,245,249,.22); transition: background .5s, box-shadow .5s; }
+  .node .no { font: 600 10.5px Cinzel, serif; letter-spacing: .15em; color: var(--faint); transition: color .5s; white-space: nowrap; }
+  .act.lit .node .star { background: var(--gold); box-shadow: 0 0 12px 4px rgba(252,211,77,.6), 0 0 34px 12px rgba(252,211,77,.22); }
+  .act.lit .node .no { color: #fde68a; }
+  .act h3 { font: 600 23px Cinzel, serif; letter-spacing: .11em; }
+  .act .scene { font-style: italic; font-size: 16px; color: var(--faint); margin-top: 4px; }
+  .act .scene b { font-style: normal; font-weight: 500; color: #fde68a; }
+  .act p { margin-top: 12px; font-size: 19px; line-height: 1.66; color: rgba(241,245,249,.91); }
+  .act p .cap { float: left; font: 600 58px/0.82 Cinzel, serif; color: var(--gold); padding: 7px 9px 0 0; text-shadow: 0 0 22px rgba(252,211,77,.5); }
+  .player { transition: all .25s; color: inherit; border-bottom: 1px dotted transparent; }
+  .player.lit { color: #fde68a; text-shadow: 0 0 16px rgba(252,211,77,.55); border-bottom-color: rgba(252,211,77,.5); }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 13px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(252,211,77,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .dqm { position: relative; color: var(--soft); cursor: default; font-size: 16px; }
+  .dqm:hover::after { content: 'The tellers place the fall in different waters.'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .ports { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .port { display: inline-flex; align-items: center; gap: 7px; border: 1px solid rgba(252,211,77,.3); background: rgba(252,211,77,.07); border-radius: 999px; padding: 4px 13px; font-size: 14.5px; color: #fde68a; cursor: pointer; transition: all .2s; }
+  .port:hover { border-color: rgba(252,211,77,.7); background: rgba(252,211,77,.14); }
+  .port i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 6px 1px rgba(252,211,77,.8); }
+  .port.ghost { border-color: var(--glass-border); background: var(--glass); color: var(--muted); }
+  .port.ghost i { background: var(--faint); box-shadow: none; }
+  .term { position: relative; }
+  .term .node { top: -6px; }
+  .term .node .star { width: 21px; height: 21px; background: var(--gold); box-shadow: 0 0 16px 5px rgba(252,211,77,.6), 0 0 48px 18px rgba(252,211,77,.2); }
+  .term .fin { font: 600 12px Cinzel, serif; letter-spacing: .5em; color: var(--gold-dim); }
+  .term .epi { font-style: italic; font-size: 17.5px; color: var(--muted); margin-top: 6px; }
+  footer { text-align: center; margin-top: 80px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 880px) {
+    .stagegrid { grid-template-columns: 1fr; gap: 26px; }
+    #marquee { position: static; }
+    .voyage { padding-left: 58px; }
+    #rail { left: 19px; }
+    .node { left: -58px; width: 40px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← MYTHS</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="stagegrid">
+    <!-- The programme in hand -->
+    <aside id="marquee">
+      <div class="presents"><b>ICARUS ATLAS</b> · PRESENTS</div>
+      <a class="saga" href="#">AN EPISODE OF METAMORPHOSES ↗</a>
+      <h1>DAEDALUS<br>AND ICARUS</h1>
+      <div class="greek">Δαίδαλος καὶ Ἴκαρος</div>
+      <div class="mrule"><span class="ln"></span>
+        <svg width="64" height="12" viewBox="0 0 64 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+      <span class="ln"></span></div>
+
+      <div class="mh">THE ACTS</div>
+      <nav class="acts-list" id="actslist">
+        <a href="#a1" class="on"><span class="dot"></span><b>ACT I</b>Flight from Athens</a>
+        <a href="#a2"><span class="dot"></span><b>ACT II</b>The Wings</a>
+        <a href="#a3"><span class="dot"></span><b>ACT III</b>The Fall</a>
+        <a href="#a4"><span class="dot"></span><b>ACT IV</b>Sicily</a>
+      </nav>
+
+      <div class="mh">DRAMATIS PERSONAE</div>
+      <div class="plist" id="plist">
+        <div class="person" data-p="daedalus"><i></i>Daedalus<em>the inventor</em></div>
+        <div class="person" data-p="icarus"><i></i>Icarus<em>the son</em></div>
+        <div class="person" data-p="minos"><i></i>Minos<em>the king</em></div>
+        <div class="person plain" data-p="cocalus" title="Not yet a star in the galaxy"><i></i>Cocalus<em>the refuge</em></div>
+        <div class="person" data-p="ariadne"><i></i>Ariadne<em>the thread</em></div>
+      </div>
+
+      <div class="told"><b>Told in</b> — <i>Metamorphoses</i> 8.152–259 · <i>Epitome</i> 1.12–13 · <i>Fabulae</i> 40</div>
+      <div class="fin">· EXEUNT ·</div>
+    </aside>
+
+    <!-- The voyage on stage -->
+    <div class="stage">
+      <p class="sum">Daedalus the Athenian craftsman, imprisoned by Minos with his son Icarus, fashioned wings of feather and wax; the boy soared too near the sun, the wax melted, and he fell into the sea that bears his name while the father flew on to Sicily in grief.<span class="fn" data-c="Ovid · Apollodorus · Hyginus — Met. 8.152–259 · Epit. 1.12–13 · Fab. 40">1</span></p>
+
+      <div class="voyage" id="voyage">
+        <div id="rail"><div id="fill"></div></div>
+
+        <article class="act" id="a1">
+          <div class="node"><span class="star"></span><span class="no">ACT I</span></div>
+          <h3>Flight from Athens</h3>
+          <div class="scene">the scene — <b>Knossos</b>, palace of the labyrinth</div>
+          <p><span class="cap">D</span><span class="player" data-p="daedalus">aedalus</span> son of Metion, architect of the labyrinth and the wooden cow for Pasiphae, had fled Athens after killing his nephew Talos in jealousy of the boy's invention. In Crete he served <span class="player" data-p="minos">Minos</span> until <span class="player" data-p="ariadne">Ariadne</span>'s thread betrayed the maze — and the king shut both craftsman and son within the very walls Daedalus had designed.<span class="fn" data-c="Apollodorus · Ovid — Apollod. 3.15.8, Epit. 1.12 · Ov. Met. 8.152–208">2</span></p>
+          <div class="ports"><span class="port"><i></i>Knossos</span></div>
+        </article>
+
+        <article class="act" id="a2">
+          <div class="node"><span class="star"></span><span class="no">ACT II</span></div>
+          <h3>The Wings</h3>
+          <div class="scene">the scene — a tower above the Cretan shore</div>
+          <p><span class="cap">K</span>nowing <span class="player" data-p="minos">Minos</span> held land and sea, <span class="player" data-p="daedalus">Daedalus</span> turned to the air. He bound feathers with thread and soft wax into curving wings for himself and <span class="player" data-p="icarus">Icarus</span>, and warned the boy to fly the middle way — neither so low that the sea spray clog the plumes, nor so high that the sun melt the wax. Hyginus repeats the counsel: keep to the path between sky and water.<span class="fn" data-c="Ovid · Hyginus — Ov. Met. 8.183–235 · Hyg. Fab. 40">3</span></p>
+        </article>
+
+        <article class="act" id="a3">
+          <div class="node"><span class="star"></span><span class="no">ACT III</span></div>
+          <h3>The Fall <span class="dqm">⚖</span></h3>
+          <div class="scene">the scene — the open sky between Samos and Lebinthos</div>
+          <p><span class="cap">I</span><span class="player" data-p="icarus">carus</span> exulted in flight and climbed toward heaven; the heat loosened the wax, the feathers scattered, and the boy plunged into the blue sea. <span class="player" data-p="daedalus">Daedalus</span>, crying his son's name, found only feathers on the waves. Apollodorus calls the sea Icarian, and the island Icaria where the body washed ashore.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.223–259 · Apollod. Epit. 1.13">4</span></p>
+          <div class="ports"><span class="port"><i></i>Icarian Sea</span><span class="port ghost"><i></i>Icaria</span></div>
+        </article>
+
+        <article class="act" id="a4">
+          <div class="node"><span class="star"></span><span class="no">ACT IV</span></div>
+          <h3>Sicily</h3>
+          <div class="scene">the scene — the court of Cocalus, far to the west</div>
+          <p><span class="cap">T</span>he father flew on to Sicily and the court of <span class="player" data-p="cocalus">Cocalus</span>, while <span class="player" data-p="minos">Minos</span> pursued him across the seas with ships and thread — a chase Ovid resumes later when the king dies in the bath Daedalus built. On the flight Ovid names the islands they passed: Juno's sacred Samos on the left, Delos and Paros left behind, Lebinthos and honey-rich Calymne on the right.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.259–272, 8.289–399 · Apollod. Epit. 1.13–15">5</span></p>
+          <div class="ports"><span class="port"><i></i>Samos</span><span class="port"><i></i>Delos</span><span class="port"><i></i>Paros</span><span class="port"><i></i>Sicily</span></div>
+        </article>
+
+        <div class="act term">
+          <div class="node"><span class="star"></span></div>
+          <div class="fin">· EXEUNT ·</div>
+          <p class="epi">— and the sea keeps the boy's name.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Story concept F — Marquee &amp; Path (A × B) · programme in hand, voyage on stage: the marquee's act list follows your reading</footer>
+</div>
+
+<script>
+  // The igniting spine.
+  const voyage = document.getElementById('voyage');
+  const fill = document.getElementById('fill');
+  const acts = [...voyage.querySelectorAll('.act')];
+  function trace() {
+    const r = voyage.getBoundingClientRect();
+    const anchor = innerHeight * 0.42;
+    const k = Math.min(Math.max((anchor - r.top) / r.height, 0), 1);
+    fill.style.height = (k * 100) + '%';
+    acts.forEach(a => {
+      const n = a.querySelector('.node').getBoundingClientRect();
+      a.classList.toggle('lit', n.top < anchor);
+    });
+  }
+  addEventListener('scroll', trace, { passive: true });
+  addEventListener('resize', trace);
+  trace();
+
+  // The marquee follows the act under your eyes.
+  const links = [...document.querySelectorAll('.acts-list a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-24% 0px -60% 0px' });
+  acts.filter(a => a.id).forEach(a => io.observe(a));
+
+  // Hover a player on the programme: light them on stage.
+  const plist = document.getElementById('plist');
+  plist.addEventListener('mouseover', e => {
+    const row = e.target.closest('.person'); if (!row) return;
+    document.querySelectorAll(`.player[data-p="${row.dataset.p}"]`).forEach(s => s.classList.add('lit'));
+  });
+  plist.addEventListener('mouseout', e => {
+    const row = e.target.closest('.person'); if (!row) return;
+    document.querySelectorAll('.player.lit').forEach(s => s.classList.remove('lit'));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "id": "pygmalion-sculptor",
+  "artworks": [
+    {
+      "title": "Pygmalion and Galatea",
+      "artist": "Jean-Léon Gérôme",
+      "year": "c. 1890",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Jean-L%C3%A9on_G%C3%A9r%C3%B4me%2C_Pygmalion_and_Galatea%2C_ca._1890.jpg/960px-Jean-L%C3%A9on_G%C3%A9r%C3%B4me%2C_Pygmalion_and_Galatea%2C_ca._1890.jpg",
+      "description": "Gérôme's Cypriot sculptor kissing life into ivory — the academic image that fixed Pygmalion for the salon age."
+    }
+  ],
+  "films": [
+    {
+      "title": "My Fair Lady",
+      "year": "1964",
+      "medium": "film",
+      "director": "George Cukor",
+      "description": "Higgins as Pygmalion — Audrey Hepburn's Eliza the living statue speech remakes.",
+      "externalUrl": "https://en.wikipedia.org/wiki/My_Fair_Lady_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "My Fair Lady",
+      "year": "1956",
+      "kind": "stage",
+      "composer": "Frederick Loewe",
+      "description": "Broadway's most famous Pygmalion — the sculptor myth as musical theatre of class and voice.",
+      "externalUrl": "https://en.wikipedia.org/wiki/My_Fair_Lady"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Pygmalion (play)",
+      "year": "1913",
+      "kind": "other",
+      "creator": "George Bernard Shaw",
+      "description": "Shaw borrowed the sculptor's name for Higgins — creation as social engineering, Galatea as Eliza.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Pygmalion_(play)"
+    },
+    {
+      "title": "Pygmalion",
+      "year": "—",
+      "kind": "other",
+      "description": "The sculptor of Cyprus who loved his statue into life — still the archetype of the artist enamoured of his work.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Pygmalion_(mythology)"
+    }
+  ]
+}

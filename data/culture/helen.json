@@ -1,0 +1,84 @@
+{
+  "id": "helen",
+  "artworks": [
+    {
+      "title": "The Loves of Paris and Helen",
+      "artist": "Jacques-Louis David",
+      "year": "1788",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Les_amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3696_%3B_MR_1439.jpg/960px-Les_amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3696_%3B_MR_1439.jpg",
+      "description": "Commissioned by the comte d'Artois and now in the Louvre, David's neoclassical chamber scene stages Helen with Paris after Aphrodite has spirited him from the duel with Menelaus. Helen stands in cool marble stillness as Paris draws her toward the couch — the face that launched the war framed as private desire rather than battlefield prize. The painting became one of the defining modern images of the Spartan queen at Troy."
+    },
+    {
+      "title": "Helen of Troy",
+      "artist": "Evelyn De Morgan",
+      "year": "1898",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Helen_of_Troy.jpg/960px-Helen_of_Troy.jpg",
+      "description": "De Morgan's Pre-Raphaelite Helen stands alone against a burning city, roses at her feet and a distant Trojan skyline already in flame. The canvas treats her not as a passive prize but as the haunted centre of the war her beauty unleashed — a late-Victorian meditation on the cost of desire. Oil on canvas, De Morgan Foundation."
+    },
+    {
+      "title": "The Abduction of Helen",
+      "artist": "Guido Reni",
+      "year": "1631",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/L%27Enl%C3%A8vement_d%27H%C3%A9l%C3%A8ne_-_Guido_Reni_-_Mus%C3%A9e_du_Louvre_Peintures_INV_539_%3B_MR_288_-_photo_2.jpg/960px-L%27Enl%C3%A8vement_d%27H%C3%A9l%C3%A8ne_-_Guido_Reni_-_Mus%C3%A9e_du_Louvre_Peintures_INV_539_%3B_MR_288_-_photo_2.jpg",
+      "description": "Reni's Louvre canvas freezes the departure from Sparta: Helen, half-reluctant, is led toward Paris's waiting ship as attendants and putti swirl around the pair. The Bolognese baroque turns the abduction into a luminous pageant — the moment Menelaus's marriage becomes Troy's casus belli. Oil on canvas, Musée du Louvre, Paris."
+    },
+    {
+      "title": "Venus Induces Helen to Fall in Love with Paris",
+      "artist": "Angelica Kauffmann",
+      "year": "1790",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Angelica_Kauffmann_-_Venus_Induces_Helen_to_Fall_in_Love_with_Paris_-_WGA12099.jpg/960px-Angelica_Kauffmann_-_Venus_Induces_Helen_to_Fall_in_Love_with_Paris_-_WGA12099.jpg",
+      "description": "Kauffmann paints the divine persuasion behind the abduction: Venus (Aphrodite) softens Helen toward Paris while Cupid aims his bow. The Hermitage canvas makes Helen's choice a goddess's work — desire staged as mythology rather than mere elopement. Oil on canvas, State Hermitage Museum, Saint Petersburg."
+    },
+    {
+      "title": "Helen Brought to Paris",
+      "artist": "Benjamin West",
+      "year": "1776",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Benjamin_West_-_Helen_Brought_to_Paris_-_Google_Art_Project.jpg/960px-Benjamin_West_-_Helen_Brought_to_Paris_-_Google_Art_Project.jpg",
+      "description": "West's neoclassical oil shows Aphrodite delivering Helen to Paris after the duel of Iliad 3 — the goddess leading the queen into the Trojan prince's chamber while the war rages outside. Painted in London and now in the Smithsonian American Art Museum, it fixes Helen as the prize the gods themselves keep returning to the lover who fled the field."
+    }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Diane Kruger's Helen is the face that launches Petersen's fleet — less Homeric prize than modern woman caught between Menelaus, Paris and a city that will burn for her.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's CinemaScope epic puts Helen at the title: the abduction, the Judgement's payoff, and the war told as a widescreen romance.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle opens on the golden apple and stays with Helen's choice — the woman whose arrival is Troy's beginning of the end.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    },
+    {
+      "title": "The Trojan Women",
+      "year": "1971",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Cacoyannis' Euripides adaptation keeps Helen among the captive women — the cause of the war forced to answer for it before Hecuba and the chorus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "La belle Hélène",
+      "year": "1864",
+      "kind": "opera",
+      "composer": "Jacques Offenbach",
+      "description": "Offenbach's opéra bouffe turns the face that launched a thousand ships into a Second Empire satire — Helen bored in Sparta, Paris in disguise, and the Judgement as a joke the gods are in on.",
+      "externalUrl": "https://en.wikipedia.org/wiki/La_belle_H%C3%A9l%C3%A8ne"
+    }
+  ]
+}

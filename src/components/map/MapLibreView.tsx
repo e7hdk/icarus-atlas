@@ -1,8 +1,19 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import maplibregl, { Map as MaplibreMap, type StyleSpecification } from 'maplibre-gl';
+import maplibregl, {
+  Map as MaplibreMap,
+  type FlyToOptions,
+  type StyleSpecification,
+} from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { Protocol as PmtilesProtocol } from 'pmtiles';
+
+// The pinned DEM extract (public/geo/dem.pmtiles) is one archive read with
+// range requests — register the pmtiles:// protocol the style sources use.
+// Module scope is browser-only here (this file is dynamically imported with
+// ssr: false); re-registration on HMR just overwrites the same handler.
+maplibregl.addProtocol('pmtiles', new PmtilesProtocol().tile);
 import { CityPanel } from '@/components/map/CityPanel';
 import { FeaturePanel } from '@/components/map/FeaturePanel';
 import { PlacePanel } from '@/components/map/PlacePanel';
@@ -28,6 +39,11 @@ import {
   FLY_ZOOM_RIVER,
   flyZoomForFeature,
   flyZoomFrom,
+  MAX_PITCH_LIMIT,
+  pitchForZoom,
+  TERRAIN_ZOOM_HYSTERESIS,
+  TERRAIN_ZOOM_ON,
+  ZOOM_RETURN_VISIBLE,
 } from '@/features/geo/map-nav';
 import {
   applyMapLayerVisibility,
@@ -38,6 +54,16 @@ import {
 } from '@/features/geo/map-layers';
 import { useLandsStore, type LandsMapTarget } from '@/features/geo/lands-store';
 import {
+  liveGroundParent,
+  screenCenterGround,
+} from '@/features/geo/ground-focus';
+import {
+  BEACON_CORE_RADIUS_M,
+  BEACON_FULL_ZOOM,
+  BEACON_HALO_RADIUS_M,
+  BEACON_HEIGHT_M,
+  BEACON_HEIGHT_SELECTED_M,
+  BEACON_MIN_ZOOM,
   CITY_CORE_OPACITY,
   CITY_CORE_RADIUS,
   CITY_CORE_STROKE,
@@ -49,18 +75,54 @@ import {
   PLACE_MYTH_GLOW_RADIUS,
   PLACE_MYTH_HIT_RADIUS,
   MAP,
+  TERRAIN_EXAGGERATION,
   riverCoreOpacityExpr,
   riverGlowOpacityExpr,
   riverHitWidthExpr,
 } from '@/features/geo/map-theme';
-import {
-  isLinearFeatureVisible,
-  liveMapParent,
-} from '@/features/geo/feature-visibility';
+import { isLinearFeatureVisible } from '@/features/geo/feature-visibility';
 
 const STYLE_URL = '/geo/style.json';
 const MANIFEST_URL = '/geo/manifest.json';
 const REGIONS_META_URL = '/geo/regions-meta.json';
+const PITCH_EASE_ID = 'lands-pitch-settle';
+
+function targetPitchForMap(map: MaplibreMap, relief: boolean, zoom = map.getZoom()): number {
+  return relief ? pitchForZoom(zoom) : 0;
+}
+
+/**
+ * Settle the authored tilt only after a direct-manipulation gesture ends.
+ *
+ * MapLibre's centre-anchored wheel handler intentionally skips centre
+ * correction because it assumes pitch is unchanged. Changing pitch later in
+ * transformCameraUpdate violated that invariant and made the visible target
+ * slide. easeTo's public `around` path updates zoom/pitch first and then calls
+ * setLocationAtPoint on every frame, so the geographic centre remains pinned.
+ */
+function settlePitchAroundCenter(map: MaplibreMap, relief: boolean): void {
+  const pitch = targetPitchForMap(map, relief);
+  const delta = Math.abs(map.getPitch() - pitch);
+  if (delta < 0.35) return;
+
+  map.easeTo({
+    zoom: map.getZoom(),
+    pitch,
+    around: map.getCenter(),
+    duration: Math.min(420, 160 + delta * 5),
+    easing: (t) => t * t * (3 - 2 * t),
+    easeId: PITCH_EASE_ID,
+  });
+}
+
+/** Programmatic navigation owns its whole pose in one camera transaction. */
+function flyToWithPose(map: MaplibreMap, options: FlyToOptions, relief: boolean): void {
+  const zoom = options.zoom ?? map.getZoom();
+  map.flyTo({
+    ...options,
+    pitch: targetPitchForMap(map, relief, zoom),
+  });
+}
 
 function readMapHash(): {
   center: [number, number] | null;
@@ -203,7 +265,6 @@ const DEFAULT_MANIFEST: MapManifest = {
 };
 
 const LINE_KINDS = ['river', 'strait'] as const;
-const MOUNTAIN_KIND = 'mountain-range';
 
 function citiesGeoJson(cities: GeoCity[]) {
   return {
@@ -217,6 +278,39 @@ function citiesGeoJson(cities: GeoCity[]) {
       properties: { id: city.id, name: city.name, important: IMPORTANT_CITY_IDS.has(city.id) },
     })),
   };
+}
+
+/** Hexagon ring (closed) of a given ground radius around a point. */
+function hexRing(lng: number, lat: number, radiusM: number): number[][] {
+  const latR = radiusM / 111320;
+  const lonR = radiusM / (111320 * Math.cos((lat * Math.PI) / 180));
+  const ring: number[][] = [];
+  for (let i = 0; i <= 6; i += 1) {
+    const a = (i / 6) * Math.PI * 2;
+    ring.push([lng + Math.cos(a) * lonR, lat + Math.sin(a) * latR]);
+  }
+  return ring;
+}
+
+/** Flagship-city beacon footprints: a core and a wider halo hexagon per city.
+ *  Both share the city id, so one feature-state flag lights the whole pillar. */
+function cityBeaconsGeoJson(cities: GeoCity[]) {
+  const features = [];
+  for (const city of cities) {
+    if (!IMPORTANT_CITY_IDS.has(city.id)) continue;
+    const [lng, lat] = city.coordinates;
+    for (const [part, radius] of [
+      ['core', BEACON_CORE_RADIUS_M],
+      ['halo', BEACON_HALO_RADIUS_M],
+    ] as const) {
+      features.push({
+        type: 'Feature' as const,
+        geometry: { type: 'Polygon' as const, coordinates: [hexRing(lng, lat, radius)] },
+        properties: { id: city.id, part },
+      });
+    }
+  }
+  return { type: 'FeatureCollection' as const, features };
 }
 
 export function MapLibreView({
@@ -257,7 +351,10 @@ export function MapLibreView({
     featuresRef.current = features;
   }, [features]);
 
-  const initialHash = readMapHash();
+  // Parse the hash ONCE per mount — this ran on every render, and since it
+  // returns a fresh object each time, the layers-bootstrap effect below
+  // re-fired on every render too (guarded, but noisy).
+  const initialHash = useMemo(() => readMapHash(), []);
   const selectionRef = useRef({
     place: initialHash.place,
     city: initialHash.city,
@@ -276,6 +373,8 @@ export function MapLibreView({
   const [detailParentId, setDetailParentId] = useState<string | null>(null);
   const [focusedSubId, setFocusedSubId] = useState<string | null>(null);
   const [hoveredRegionId, setHoveredRegionId] = useState<string | null>(null);
+  const [returnVisible, setReturnVisible] = useState(false);
+  const returnVisibleRef = useRef(false);
   const mapLayers = useLandsStore((s) => s.mapLayers);
   const setMapLayers = useLandsStore((s) => s.setMapLayers);
   const mapLayersRef = useRef(mapLayers);
@@ -284,6 +383,7 @@ export function MapLibreView({
   useEffect(() => {
     if (layersBootstrapped.current) return;
     layersBootstrapped.current = true;
+    mapLayersRef.current = initialHash.layers;
     setMapLayers(initialHash.layers);
   }, [setMapLayers, initialHash.layers]);
 
@@ -305,11 +405,32 @@ export function MapLibreView({
     writeMapHash(map, selectionRef.current, mapLayers);
   }, [selectedPlaceId, selectedCityId, selectedFeatureId, mapReady, mapLayers]);
 
+  /** The 3D mesh follows the relief toggle AND the tilt band: outside it the
+   *  mesh is pure cost (render-to-texture draping, elevation-aware marker
+   *  projections) with zero visible payoff at pitch 0. Hysteresis on the way
+   *  out so a zoom hovering at the threshold doesn't thrash setTerrain. */
+  const applyTerrain = useCallback((map: MaplibreMap) => {
+    if (!map.getSource('dem')) return;
+    const zoom = map.getZoom();
+    const has = !!map.getTerrain();
+    const want =
+      mapLayersRef.current.relief &&
+      (has ? zoom > TERRAIN_ZOOM_ON - TERRAIN_ZOOM_HYSTERESIS : zoom >= TERRAIN_ZOOM_ON);
+    if (want !== has) {
+      map.setTerrain(
+        want ? { source: 'dem', exaggeration: TERRAIN_EXAGGERATION } : null,
+      );
+    }
+  }, []);
+
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !mapReady) return;
     applyMapLayerVisibility(map, mapLayers);
-  }, [mapLayers, mapReady]);
+    applyTerrain(map);
+    // Ease the camera to the pose the toggle implies (flat when relief is off).
+    settlePitchAroundCenter(map, mapLayers.relief);
+  }, [mapLayers, mapReady, applyTerrain]);
 
   const setMapTarget = useLandsStore((s) => s.setMapTarget);
   const mapTarget = useLandsStore((s) => s.mapTarget);
@@ -324,12 +445,12 @@ export function MapLibreView({
       setSelectedCityId(target.id);
       setSelectedPlaceId(null);
       setSelectedFeatureId(null);
-      map.flyTo({
+      flyToWithPose(map, {
         center: [city.coordinates[0], city.coordinates[1]],
         zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_CITY),
         duration: 900,
         essential: true,
-      });
+      }, mapLayersRef.current.relief);
       return;
     }
 
@@ -339,12 +460,12 @@ export function MapLibreView({
       setSelectedPlaceId(target.id);
       setSelectedCityId(null);
       setSelectedFeatureId(null);
-      map.flyTo({
+      flyToWithPose(map, {
         center: [place.coordinates[0], place.coordinates[1]],
         zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_PLACE),
         duration: 900,
         essential: true,
-      });
+      }, mapLayersRef.current.relief);
       return;
     }
 
@@ -354,12 +475,12 @@ export function MapLibreView({
     setSelectedFeatureId(target.id);
     setSelectedCityId(null);
     setSelectedPlaceId(null);
-    map.flyTo({
+    flyToWithPose(map, {
       center: centroid,
       zoom: flyZoomFrom(map.getZoom(), flyZoomForFeature(feature!)),
       duration: 900,
       essential: true,
-    });
+    }, mapLayersRef.current.relief);
   }, []);
 
   useEffect(() => {
@@ -380,6 +501,7 @@ export function MapLibreView({
   const selectedPlace = selectedPlaceId ? (placesById.get(selectedPlaceId) ?? null) : null;
   const hoveredFeature = hoveredFeatureId ? (featuresById.get(hoveredFeatureId) ?? null) : null;
   const cityData = useMemo(() => citiesGeoJson(cities), [cities]);
+  const beaconData = useMemo(() => cityBeaconsGeoJson(cities), [cities]);
   const placeData = useMemo(() => placesToGeoJson(places), [places]);
   const featureData = useMemo(() => featuresToGeoJson(features), [features]);
   const regionLabels = useMemo(
@@ -437,12 +559,16 @@ export function MapLibreView({
     setHoveredFeatureId(id);
   }, []);
 
+  /** Last `show` feature-state per river/strait — setFeatureState invalidates
+   *  (terrain-draped) tiles even when the value is unchanged, and this runs on
+   *  every move frame, so only write real transitions. */
+  const linearShowRef = useRef<Map<string, boolean>>(new Map());
+
   const syncLinearFeatureVisibility = useCallback(
     (map: MaplibreMap) => {
       if (!map.getSource('features') || !map.getLayer('features-line-major')) return;
       const zoom = map.getZoom();
-      const center = map.getCenter();
-      const liveParent = liveMapParent(zoom, center, regionsMetaRef.current);
+      const liveParent = liveGroundParent(map, zoom, regionsMetaRef.current);
       const layers = mapLayersRef.current;
 
       for (const feature of featuresRef.current) {
@@ -450,6 +576,8 @@ export function MapLibreView({
         const show =
           layers.rivers &&
           isLinearFeatureVisible(feature, zoom, liveParent, byId, regionsMetaRef.current);
+        if (linearShowRef.current.get(feature.id) === show) continue;
+        linearShowRef.current.set(feature.id, show);
         map.setFeatureState({ source: 'features', id: feature.id }, { show });
       }
     },
@@ -460,27 +588,41 @@ export function MapLibreView({
     const meta = regionsMetaRef.current;
     if (!meta) return;
 
+    // A stationary pointer must not leave a stale hovered region in charge
+    // while the map moves underneath it. During pan/zoom, the screen-centred
+    // focus is authoritative; hover resumes with the next pointer movement.
+    if (hoveredRegionIdRef.current !== null) {
+      hoveredRegionIdRef.current = null;
+      setHoveredRegionId(null);
+    }
+
     const zoom = map.getZoom();
-    const { lng, lat } = map.getCenter();
 
     if (zoom < ZOOM_SUBREGION) {
       if (detailParentIdRef.current !== null) {
+        detailParentIdRef.current = null;
+        focusedSubIdRef.current = null;
         setDetailParentId(null);
         setFocusedSubId(null);
       }
       return;
     }
 
-    const parentId = pickTopRegionAtPoint(lng, lat, meta);
+    // Read the literal centre pixel. On pitched terrain map.getCenter() can be
+    // geographically offset from the ground the user sees at that pixel.
+    const focus = screenCenterGround(map);
+    const parentId = pickTopRegionAtPoint(focus.lng, focus.lat, meta);
     if (parentId !== detailParentIdRef.current) {
+      detailParentIdRef.current = parentId;
       setDetailParentId(parentId);
     }
 
     const subId =
       parentId && zoom >= ZOOM_SUBREGION + 0.5
-        ? pickSubRegionAtPoint(lng, lat, parentId, meta)
+        ? pickSubRegionAtPoint(focus.lng, focus.lat, parentId, meta)
         : null;
     if (subId !== focusedSubIdRef.current) {
+      focusedSubIdRef.current = subId;
       setFocusedSubId(subId);
     }
   }, []);
@@ -572,48 +714,8 @@ export function MapLibreView({
 
       // River / strait name labels are DOM markers (real Cinzel) — see MapLabels.
 
-      const mountainFilter: maplibregl.FilterSpecification = [
-        '==',
-        ['get', 'kind'],
-        MOUNTAIN_KIND,
-      ];
-
-      map.addLayer({
-        id: 'features-mountain-fill',
-        type: 'fill',
-        source: 'features',
-        minzoom: 4,
-        filter: mountainFilter,
-        paint: {
-          'fill-color': MAP.nebulaViolet,
-          'fill-opacity': [
-            'interpolate',
-            ['linear'],
-            ['zoom'],
-            4,
-            0.04,
-            7,
-            0.08,
-            10,
-            0.12,
-          ] as maplibregl.ExpressionSpecification,
-          'fill-outline-color': MAP.nebulaSoft,
-        },
-      });
-
-      map.addLayer({
-        id: 'features-mountain-hit',
-        type: 'fill',
-        source: 'features',
-        minzoom: 4,
-        filter: mountainFilter,
-        paint: {
-          'fill-color': MAP.cosmos,
-          'fill-opacity': 0,
-        },
-      });
-
-      // Mountain-range labels are DOM markers (real Cinzel) — see MapLabels.
+      // Mountain ranges carry NO polygon layers anymore: the 3D terrain itself
+      // is the mountain. Their Cinzel labels (MapLabels) are the click target.
 
       map.on('mouseenter', 'features-hit', (event) => {
         map.getCanvas().style.cursor = 'pointer';
@@ -621,16 +723,6 @@ export function MapLibreView({
         if (id) setFeatureHover(map, id);
       });
       map.on('mouseleave', 'features-hit', () => {
-        map.getCanvas().style.cursor = '';
-        setFeatureHover(map, null);
-      });
-
-      map.on('mouseenter', 'features-mountain-hit', (event) => {
-        map.getCanvas().style.cursor = 'pointer';
-        const id = event.features?.[0]?.properties?.id as string | undefined;
-        if (id) setFeatureHover(map, id);
-      });
-      map.on('mouseleave', 'features-mountain-hit', () => {
         map.getCanvas().style.cursor = '';
         setFeatureHover(map, null);
       });
@@ -645,36 +737,38 @@ export function MapLibreView({
         const feature = featuresRef.current.find((f) => f.id === id);
         const centroid = feature ? featureCentroid(feature) : null;
         if (centroid) {
-          map.flyTo({
+          flyToWithPose(map, {
             center: centroid,
             zoom: flyZoomFrom(map.getZoom(), flyZoomForFeature(feature!)),
             duration: 900,
             essential: true,
-          });
+          }, mapLayersRef.current.relief);
         }
       });
 
-      map.on('click', 'features-mountain-hit', (event) => {
-        const id = event.features?.[0]?.properties?.id as string | undefined;
-        if (!id) return;
-        event.originalEvent.stopPropagation();
-        setSelectedCityId(null);
-        setSelectedPlaceId(null);
-        setSelectedFeatureId(id);
-        const feature = featuresRef.current.find((f) => f.id === id);
-        const centroid = feature ? featureCentroid(feature) : null;
-        if (centroid) {
-          map.flyTo({
-            center: centroid,
-            zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_MOUNTAIN),
-            duration: 900,
-            essential: true,
-          });
-        }
-      });
     },
     [featureData, setFeatureHover],
   );
+
+  /** Mountain ranges have no polygon on the map anymore — their Cinzel label
+   *  is the click target (wired through MapLabels). */
+  const handleFeatureLabelClick = useCallback((id: string) => {
+    const map = mapRef.current;
+    if (!map) return;
+    setSelectedCityId(null);
+    setSelectedPlaceId(null);
+    setSelectedFeatureId(id);
+    const feature = featuresRef.current.find((f) => f.id === id);
+    const centroid = feature ? featureCentroid(feature) : null;
+    if (centroid) {
+      flyToWithPose(map, {
+        center: centroid,
+        zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_MOUNTAIN),
+        duration: 900,
+        essential: true,
+      }, mapLayersRef.current.relief);
+    }
+  }, []);
 
   const addPlaceLayers = useCallback(
     (map: MaplibreMap) => {
@@ -698,12 +792,12 @@ export function MapLibreView({
           setSelectedPlaceId(id);
           const place = placesRef.current.find((p) => p.id === id);
           if (place) {
-            map.flyTo({
+            flyToWithPose(map, {
               center: [place.coordinates[0], place.coordinates[1]],
               zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_PLACE),
               duration: 900,
               essential: true,
-            });
+            }, mapLayersRef.current.relief);
           }
         });
       };
@@ -855,24 +949,82 @@ export function MapLibreView({
         setSelectedCityId(id);
         const city = citiesRef.current.find((c) => c.id === id);
         if (city) {
-          map.flyTo({
+          flyToWithPose(map, {
             center: [city.coordinates[0], city.coordinates[1]],
             zoom: flyZoomFrom(map.getZoom(), FLY_ZOOM_CITY),
             duration: 900,
             essential: true,
-          });
+          }, mapLayersRef.current.relief);
         }
       });
     },
     [cityData],
   );
 
+  /** Flagship-city light pillars, visible only once the tilted camera closes in.
+   *  Non-interactive: clicks fall through to the cities hit layer beneath. */
+  const addCityBeaconLayers = useCallback(
+    (map: MaplibreMap) => {
+      if (map.getSource('city-beacons')) return;
+
+      map.addSource('city-beacons', { type: 'geojson', data: beaconData, promoteId: 'id' });
+
+      const selectedExpr: maplibregl.ExpressionSpecification = [
+        'boolean',
+        ['feature-state', 'selected'],
+        false,
+      ];
+      const beaconColor: maplibregl.ExpressionSpecification = [
+        'case',
+        selectedExpr,
+        MAP.starOlympian,
+        MAP.nebulaCyan,
+      ];
+
+      for (const [part, opacity, heightScale] of [
+        ['halo', 0.08, 0.55],
+        ['core', 0.3, 1],
+      ] as const) {
+        map.addLayer({
+          id: `city-beacons-${part}`,
+          type: 'fill-extrusion',
+          source: 'city-beacons',
+          minzoom: BEACON_MIN_ZOOM,
+          filter: ['==', ['get', 'part'], part],
+          paint: {
+            'fill-extrusion-color': beaconColor,
+            'fill-extrusion-height': [
+              'case',
+              selectedExpr,
+              BEACON_HEIGHT_SELECTED_M * heightScale,
+              BEACON_HEIGHT_M * heightScale,
+            ] as maplibregl.ExpressionSpecification,
+            'fill-extrusion-base': 0,
+            // Breathe in across the fade band instead of popping at minzoom.
+            'fill-extrusion-opacity': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              BEACON_MIN_ZOOM,
+              0,
+              BEACON_FULL_ZOOM,
+              opacity,
+            ] as maplibregl.ExpressionSpecification,
+          },
+        });
+      }
+    },
+    [beaconData],
+  );
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container || mapRef.current) return;
 
+    const linearShow = linearShowRef.current;
     let map: MaplibreMap | null = null;
     let cancelled = false;
+    let pitchSettleFrame: number | null = null;
 
     const scheduleResize = () => {
       requestAnimationFrame(() => {
@@ -894,12 +1046,22 @@ export function MapLibreView({
       map = new maplibregl.Map({
         container,
         style: STYLE_URL as unknown as StyleSpecification,
+        // Cap the render resolution: on a 2x retina screen full DPR means ~4x
+        // the fragments of 1x — with terrain render-to-texture and the glass
+        // HUD compositing on top, that is the single biggest GPU line item.
+        // 1.5 is visually indistinguishable on this dark, glow-heavy style.
+        pixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
         center: view.center,
         zoom: view.zoom,
         minZoom: cfg.minZoom,
         maxZoom: cfg.maxZoom,
         maxBounds: cfg.maxBounds,
-        pitch: 0,
+        // The horizon band of the choreography leans past MapLibre's default
+        // maxPitch (60) — lift the clamp to the authored limit.
+        maxPitch: MAX_PITCH_LIMIT,
+        // The tilt is a pure function of zoom (camera choreography) — restore
+        // the same pose the hash zoom implies, flat when relief is off.
+        pitch: hash.layers.relief ? pitchForZoom(view.zoom) : 0,
         bearing: 0,
         attributionControl: false,
         fadeDuration: 0,
@@ -909,6 +1071,17 @@ export function MapLibreView({
       map.touchPitch.disable();
       map.keyboard.disableRotation();
       map.dragPan.enable({ linearity: 0.28, maxSpeed: 1600, deceleration: 2600 });
+      // Direct manipulation owns zoom only. Pitch settles through a separate,
+      // centre-anchored camera transition after the gesture; injecting pitch
+      // into MapLibre's handler transaction breaks its anchor invariant.
+      map.scrollZoom.enable({ around: 'center' });
+
+      // NOTE: do NOT dynamically lower the pixel ratio during gestures.
+      // setPixelRatio() runs resize(), and resize() calls stop() whenever the
+      // camera isn't easing — handler-driven gestures (drag, wheel) keep
+      // `_moving` false, so the resize killed the gesture it was reacting to
+      // (panning became impossible). The fixed 1.5 cap above is the only safe
+      // resolution lever through the public API.
 
       map.on('error', (event) => {
         const msg = event.error?.message ?? 'Map failed to load';
@@ -921,22 +1094,58 @@ export function MapLibreView({
         addFeatureLayers(map!);
         addPlaceLayers(map!);
         addCityLayers(map!);
+        addCityBeaconLayers(map!);
         setMapReady(true);
-        setMapInstance(map);
       });
 
       map.on('moveend', () => {
         if (map) {
           syncDrilldownFromMap(map);
+          // setTerrain rebuilds the render pipeline — a guaranteed hitch. Fired
+          // here (camera at rest) instead of mid-zoom-animation, it is invisible;
+          // the raster relief carries the look until the gesture settles.
+          applyTerrain(map);
           writeMapHash(map, selectionRef.current, mapLayersRef.current);
         }
+      });
+      // Centre focus is cheap (one unproject + bbox lookup), so keep the
+      // panel/label highlight locked to the screen centre throughout zoom and
+      // pan instead of updating only after the gesture settles.
+      map.on('move', () => {
+        if (map) syncDrilldownFromMap(map);
       });
       map.on('zoomend', () => {
         if (!map) return;
         syncDrilldownFromMap(map);
+        // Let MapLibre finish and publish the direct-manipulation transaction
+        // first. The following frame starts one supported, centre-anchored
+        // camera ease for the authored pitch pose.
+        if (pitchSettleFrame !== null) cancelAnimationFrame(pitchSettleFrame);
+        pitchSettleFrame = requestAnimationFrame(() => {
+          pitchSettleFrame = null;
+          if (!cancelled && map) {
+            settlePitchAroundCenter(map, mapLayersRef.current.relief);
+          }
+        });
       });
 
+      // Keep the continuous zoom listener UI-only; camera choreography settles
+      // once per completed gesture above.
+      const syncReturnVisibility = () => {
+        if (!map) return;
+        const next = map.getZoom() > ZOOM_RETURN_VISIBLE;
+        if (next === returnVisibleRef.current) return;
+        returnVisibleRef.current = next;
+        setReturnVisible(next);
+      };
+      map.on('zoom', syncReturnVisibility);
+      syncReturnVisibility();
+
       mapRef.current = map;
+      // Labels are DOM markers and only need projection, not style/tiles — hand
+      // the map over immediately so names appear while DEM tiles still stream
+      // (map `load` now waits on the S3 elevation tiles too).
+      setMapInstance(map);
     };
 
     const ro = new ResizeObserver(() => {
@@ -949,14 +1158,23 @@ export function MapLibreView({
 
     return () => {
       cancelled = true;
+      if (pitchSettleFrame !== null) cancelAnimationFrame(pitchSettleFrame);
       ro.disconnect();
       window.removeEventListener('resize', scheduleResize);
       map?.remove();
       mapRef.current = null;
+      linearShow.clear();
       setMapReady(false);
       setMapInstance(null);
     };
-  }, [addCityLayers, addFeatureLayers, addPlaceLayers, syncDrilldownFromMap]);
+  }, [
+    addCityLayers,
+    addCityBeaconLayers,
+    addFeatureLayers,
+    addPlaceLayers,
+    syncDrilldownFromMap,
+    applyTerrain,
+  ]);
 
   // Region hover (point-in-bbox pick) drives both the info panel and the DOM
   // region label highlight. Bind once the map is ready.
@@ -1010,9 +1228,33 @@ export function MapLibreView({
 
     const run = () => syncLinearFeatureVisibility(map);
     run();
-    map.on('move', run);
+
+    // Same 120ms cadence as the label collision pass: the full feature sweep
+    // (point-in-bbox region pick per frame) is too heavy for every move frame,
+    // and a ≤130ms settle on the fade-in of a river is imperceptible.
+    let lastRun = 0;
+    let trailing: number | null = null;
+    const onMove = () => {
+      const now = performance.now();
+      if (now - lastRun >= 120) {
+        lastRun = now;
+        run();
+        return;
+      }
+      if (trailing === null) {
+        trailing = window.setTimeout(() => {
+          trailing = null;
+          lastRun = performance.now();
+          run();
+        }, 130);
+      }
+    };
+    map.on('move', onMove);
+    map.on('moveend', run);
     return () => {
-      map.off('move', run);
+      if (trailing !== null) window.clearTimeout(trailing);
+      map.off('move', onMove);
+      map.off('moveend', run);
     };
   }, [mapReady, syncLinearFeatureVisibility, mapLayers, regionsMeta, features]);
 
@@ -1030,11 +1272,18 @@ export function MapLibreView({
     // read it (gold stroke/glow, full opacity) per-feature, so no whole-layer repaint
     // turns every city gold. The zoom curves keep ['zoom'] at their top level.
     const prev = selectedCityStateRef.current;
+    const hasBeacons = !!map.getSource('city-beacons');
     if (prev && prev !== selectedCityId) {
       map.setFeatureState({ source: 'cities', id: prev }, { selected: false });
+      if (hasBeacons) {
+        map.setFeatureState({ source: 'city-beacons', id: prev }, { selected: false });
+      }
     }
     if (selectedCityId) {
       map.setFeatureState({ source: 'cities', id: selectedCityId }, { selected: true });
+      if (hasBeacons) {
+        map.setFeatureState({ source: 'city-beacons', id: selectedCityId }, { selected: true });
+      }
     }
     selectedCityStateRef.current = selectedCityId;
   }, [selectedCityId, mapReady]);
@@ -1051,8 +1300,16 @@ export function MapLibreView({
     return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  const activeRegionId = hoveredRegionId ?? focusedSubId ?? detailParentId;
+  // Once drill-down is active, the viewport centre owns the information panel.
+  // Hover remains useful for label feedback, but must never replace the place
+  // the user is actually zooming into (a stray pointer was causing Euboea to
+  // override a screen-centred Boeotia focus).
+  const activeRegionId = focusedSubId ?? detailParentId ?? hoveredRegionId;
   const activeRegion = activeRegionId ? byId.get(activeRegionId) : undefined;
+  /** Whichever elevation tier the style was built against (Mapterhorn extract
+   *  or the AWS fallback) — the manifest carries its attribution entry. */
+  const terrainAttribution =
+    manifest.attribution.find((entry) => entry.name !== 'Natural Earth') ?? null;
 
   return (
     <div
@@ -1076,31 +1333,26 @@ export function MapLibreView({
         aria-label="Interactive lands map"
       />
 
-      {/* Faint star dust over the basin — screen-blended so it only adds light,
-          echoing the galaxy's starfield without competing with the labels. */}
+      {/* Star dust + vignette in ONE overlay with normal blending. The old
+          screen-blended layer forced the compositor to re-blend the whole
+          viewport on every map frame; over this dark basin, low-alpha dots
+          composited normally (alphas pre-multiplied by the old 0.45 layer
+          opacity) are visually identical. Vignette gradient first = on top,
+          so it still dims the dust at the far edges. */}
       <div
         className="pointer-events-none absolute inset-0 z-[1]"
         style={{
-          opacity: 0.45,
-          mixBlendMode: 'screen',
           backgroundImage: [
-            'radial-gradient(1px 1px at 20% 30%, rgb(241 245 249 / 0.7), transparent)',
-            'radial-gradient(1px 1px at 70% 62%, rgb(192 132 252 / 0.6), transparent)',
-            'radial-gradient(1px 1px at 42% 82%, rgb(0 229 255 / 0.5), transparent)',
-            'radial-gradient(1px 1px at 85% 24%, rgb(241 245 249 / 0.6), transparent)',
-            'radial-gradient(1px 1px at 55% 14%, rgb(241 245 249 / 0.5), transparent)',
-          ].join(','),
-          backgroundSize: '320px 320px, 280px 280px, 360px 360px, 300px 300px, 340px 340px',
-        }}
-      />
-
-      {/* Vignette — darkens only the far edges to focus the basin, matching the
-          galaxy's Vignette. Center stays clear so labels there are untouched. */}
-      <div
-        className="pointer-events-none absolute inset-0 z-[2]"
-        style={{
-          background:
             'radial-gradient(125% 105% at 50% 42%, transparent 52%, rgb(5 2 15 / 0.5) 100%)',
+            'radial-gradient(1px 1px at 20% 30%, rgb(241 245 249 / 0.32), transparent)',
+            'radial-gradient(1px 1px at 70% 62%, rgb(192 132 252 / 0.27), transparent)',
+            'radial-gradient(1px 1px at 42% 82%, rgb(0 229 255 / 0.22), transparent)',
+            'radial-gradient(1px 1px at 85% 24%, rgb(241 245 249 / 0.27), transparent)',
+            'radial-gradient(1px 1px at 55% 14%, rgb(241 245 249 / 0.22), transparent)',
+          ].join(','),
+          backgroundSize:
+            '100% 100%, 320px 320px, 280px 280px, 360px 360px, 300px 300px, 340px 340px',
+          backgroundRepeat: 'no-repeat, repeat, repeat, repeat, repeat, repeat',
         }}
       />
 
@@ -1117,6 +1369,7 @@ export function MapLibreView({
         selectedCityId={selectedCityId}
         mapLayers={mapLayers}
         cityFamily={cityFamily}
+        onFeatureClick={handleFeatureLabelClick}
       />
 
       {mapError && (
@@ -1190,6 +1443,41 @@ export function MapLibreView({
         </GlassPanel>
       )}
 
+      {returnVisible && !selectedCity && !selectedFeature && !selectedPlace && (
+        <button
+          type="button"
+          onClick={() => {
+            const map = mapRef.current;
+            if (!map) return;
+            const cfg = manifestRef.current;
+            flyToWithPose(map, {
+              center: cfg.center,
+              zoom: cfg.defaultZoom,
+              duration: 1600,
+              essential: true,
+            }, mapLayersRef.current.relief);
+          }}
+          aria-label="Return to the basin overview"
+          title="Return to the basin"
+          className="absolute bottom-5 right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-glass-border bg-glass text-aether-muted backdrop-blur-xl transition-colors hover:border-nebula-soft/50 hover:text-aether"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            className="h-4 w-4"
+            aria-hidden
+          >
+            <path d="M4 9V5.5A1.5 1.5 0 0 1 5.5 4H9" strokeLinecap="round" />
+            <path d="M15 4h3.5A1.5 1.5 0 0 1 20 5.5V9" strokeLinecap="round" />
+            <path d="M20 15v3.5a1.5 1.5 0 0 1-1.5 1.5H15" strokeLinecap="round" />
+            <path d="M9 20H5.5A1.5 1.5 0 0 1 4 18.5V15" strokeLinecap="round" />
+            <circle cx="12" cy="12" r="2.25" fill="currentColor" stroke="none" />
+          </svg>
+        </button>
+      )}
+
       <p className="pointer-events-none absolute bottom-3 left-1/2 z-10 max-w-lg -translate-x-1/2 text-center font-body text-[11px] italic text-aether-faint">
         Basemap:{' '}
         <a
@@ -1209,6 +1497,19 @@ export function MapLibreView({
         >
           © OpenStreetMap contributors
         </a>
+        {terrainAttribution && (
+          <>
+            {' · Terrain: '}
+            <a
+              href={terrainAttribution.url}
+              className="pointer-events-auto underline decoration-aether-faint/40 hover:text-aether-muted"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {terrainAttribution.name}
+            </a>
+          </>
+        )}
       </p>
     </div>
   );

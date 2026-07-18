@@ -8,5 +8,51 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rape_of_Prosepina_September_2015-3a.jpg/960px-Rape_of_Prosepina_September_2015-3a.jpg",
       "description": "A virtuoso Baroque marble group carved by the young Gian Lorenzo Bernini, showing Pluto — the Roman Hades — seizing Proserpina as she twists away from him. The god's fingers pressing into her marble flesh are celebrated as a technical marvel, and the three-headed Cerberus guards the base. The sculpture stands in the Galleria Borghese in Rome."
     }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney's Hades — blue flame, fast talk, soul contracts — stole the film and became the modern face of the underworld king for a generation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Hadestown",
+      "year": "2019",
+      "kind": "stage",
+      "composer": "Anaïs Mitchell",
+      "description": "Mitchell's folk-jazz musical rebuilds the underworld as an industrial company town: Hades the boss, Persephone his seasonal wife, Orpheus the boy who walks in singing — and walks out alone.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's breakout names the game after him and then makes him a father: stern, wounded, and the boss at the end of every escape Zagreus attempts.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "The sequel keeps the house of Hades at its centre — now through Melinoë, the daughter raised to wage war while her father is held by Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    },
+    {
+      "title": "Kingdom Hearts",
+      "year": "2002",
+      "kind": "videogame",
+      "creator": "Square",
+      "description": "Disney's Hades crosses into Square's crossover RPG as a recurring schemer in Olympus Coliseum — the same blue flame, now trading blows with Sora.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Kingdom_Hearts"
+    }
   ]
 }

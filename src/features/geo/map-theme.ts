@@ -18,6 +18,25 @@ export const MAP = {
   riverCoreOpacity: 0.45,
 } as const;
 
+/** 3D terrain mesh vertical exaggeration. True scale (1.0) reads flat at map
+ *  zooms — Olympus is ~10 screen pixels tall at z8 — so, like every campaign
+ *  map, we cheat upward. 1.8 is the lower edge of the "game feel" band; push
+ *  further only after checking coastal cliffs and LOD seams stay acceptable. */
+export const TERRAIN_EXAGGERATION = 1.8;
+
+/**
+ * Flagship-city beacons — slim extruded light pillars that rise from the
+ * IMPORTANT_CITY_IDS once the tilted camera is close enough (M-city presence).
+ * Cheap: two hexagons per city through fill-extrusion, no models, no shaders.
+ */
+export const BEACON_MIN_ZOOM = 7.4;
+/** Fade band so the pillars breathe in rather than pop. */
+export const BEACON_FULL_ZOOM = 8.4;
+export const BEACON_CORE_RADIUS_M = 260;
+export const BEACON_HALO_RADIUS_M = 520;
+export const BEACON_HEIGHT_M = 1200;
+export const BEACON_HEIGHT_SELECTED_M = 1900;
+
 /** Per-region accent for the labels — gives each region its own colour (like the
  *  galaxy's coloured zones) without region polygons. A deterministic golden-angle
  *  hue keeps neighbours distinct yet pastel/on-theme; sub-regions inherit their

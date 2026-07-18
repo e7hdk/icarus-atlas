@@ -29,5 +29,35 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hippolytus_Sir_Lawrence_Alma_Tadema.jpg/960px-Hippolytus_Sir_Lawrence_Alma_Tadema.jpg",
       "description": "An early work by the Anglo-Dutch painter Sir Lawrence Alma-Tadema, this canvas depicts the fatal moment on the shore when the sea-bull conjured by Poseidon panics Hippolytus' team. Faithful to the myth in which Theseus' curse and Phaedra's false accusation doom the innocent youth, Alma-Tadema combines archaeological detail with theatrical drama, the rearing horses and the monstrous bull surging from the waves as Hippolytus is hurled to his death. The painting reflects the nineteenth-century revival of interest in Euripidean tragedy among academic history painters."
     }
+  ],
+  "films": [
+    {
+      "title": "Phaedra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Jules Dassin",
+      "description": "Dassin's modern retelling casts the stepson as Hippolytus' heir: the chaste son destroyed by Phaedra's desire and a father's curse.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phaedra_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Hippolyte et Aricie",
+      "year": "1733",
+      "kind": "opera",
+      "composer": "Jean-Philippe Rameau",
+      "description": "Rameau's first opera centres Hippolytus between Phaedra's passion and Aricia's love — the huntress-youth whose death the sea-bull completes.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hippolyte_et_Aricie"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Phèdre",
+      "year": "1677",
+      "kind": "other",
+      "creator": "Jean Racine",
+      "description": "Racine's tragedy keeps Hippolytus as the innocent who dies for a lie — the stepson whose virtue cannot survive Phaedra's confession.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ph%C3%A8dre"
+    }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "panathenaia",
+  "name": "Panathenaia",
+  "greekName": "Παναθήναια",
+  "deities": ["athena"],
+  "place": "athens",
+  "atticDate": { "month": "hekatombaion", "days": [23, 30] },
+  "conventionalDates": ["07-23", "07-24", "07-25", "07-26", "07-27", "07-28", "07-29", "07-30"],
+  "aition": "gigantomachy",
+  "summary": "Athena's birthday festival and the city's greatest procession: games, torch-races, and the peplos woven with the Gigantomachy carried up to the goddess on the Acropolis.",
+  "testimonia": [
+    "Harpocration s.v. Παναθήναια (the birthday on 28 Hekatombaion)",
+    "Euripides, Hecuba 466–474 (the peplos woven with the battle of the giants)",
+    "Mikalson, The Sacred and Civil Calendar of the Athenian Year (1975) 23, 33–34"
+  ]
+}

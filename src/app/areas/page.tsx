@@ -1,10 +1,7 @@
 import { loadCities, loadFeatures, loadLineage, loadPlaces, loadRegions } from '@/features/geo/load';
 import { buildCharacterIndex, loadAtlasData } from '@/features/characters/load';
 import { MapView } from '@/components/map/MapView';
-import { MainNav } from '@/components/hud/MainNav';
-import { HudActions } from '@/components/hud/HudActions';
 import { LandsOverlays } from '@/components/hud/LandsOverlays';
-import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import type { Lineage } from '@/types/geo';
 
 export const metadata = {
@@ -36,13 +33,6 @@ export default async function AreasPage() {
         lineages={lineages}
         characterIndex={characterIndex}
       />
-      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex min-h-[68px] items-center px-4 py-3 sm:px-6 sm:py-4">
-        <IcarusBrand />
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <MainNav active="areas" />
-        </div>
-        <HudActions mapLayers />
-      </header>
       <LandsOverlays
         cities={cities}
         places={places}

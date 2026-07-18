@@ -1,0 +1,16 @@
+{
+  "id": "thargelia",
+  "name": "Thargelia",
+  "greekName": "Θαργήλια",
+  "deities": ["artemis", "apollo"],
+  "place": "athens",
+  "atticDate": { "month": "thargelion", "days": [6, 7] },
+  "conventionalDates": ["05-06", "05-07"],
+  "aition": "apollo-artemis-delos",
+  "summary": "The first fruits of early summer and the twins' birthdays kept back to back — Artemis on the sixth, Apollo on the seventh — with the city purified before the offering of the thargelos loaf.",
+  "testimonia": [
+    "Diogenes Laertius 2.44 (Thargelion 6, Artemis' day; the 7th, Apollo's)",
+    "Plutarch, Table Talk 8.1.1 (Plato born on Thargelion 7, Apollo's feast)",
+    "Deubner, Attische Feste (1932) 179–198"
+  ]
+}

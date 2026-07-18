@@ -29,5 +29,38 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mosaico_Trabajos_H%C3%A9rcules_%28M.A.N._Madrid%29_02.jpg/960px-Mosaico_Trabajos_H%C3%A9rcules_%28M.A.N._Madrid%29_02.jpg",
       "description": "A panel from a Roman floor mosaic depicting the Twelve Labours of Hercules, this section shows the hero combating the Lernaean Hydra, the water-serpent rendered with multiple coiling heads emerging from the Lernaean swamp. Such labour cycles were a popular decorative program in Roman villas, presenting Hercules as a model of virtue triumphing over chaos. The mosaic, from Roman Hispania (Liria, Valencia), is preserved in the Museo Arqueológico Nacional in Madrid."
     }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "John Musker",
+      "description": "Disney's multiplying Hydra turned the Lernaean labour into cartoon spectacle — cut one head, grow more, until the hero finds fire.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hydra (genus)",
+      "year": "—",
+      "kind": "other",
+      "description": "Biology borrowed the monster's name for a freshwater polyp that regenerates — the Lernaean curse as a lab metaphor for regrowth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hydra_(genus)"
+    },
+    {
+      "title": "Hydra (constellation)",
+      "year": "—",
+      "kind": "other",
+      "description": "The longest constellation keeps the water-serpent in the sky — Hydra as a winding southern landmark.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hydra_(constellation)"
+    },
+    {
+      "title": "Lernaean Hydra",
+      "year": "—",
+      "kind": "other",
+      "description": "The Hydra endures as the problem that multiplies when attacked — Heracles' second labour as the stock image of regenerative evil.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Lernaean_Hydra"
+    }
   ]
 }

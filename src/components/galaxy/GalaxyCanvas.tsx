@@ -15,17 +15,22 @@ import { BackgroundDome } from './BackgroundDome';
 import { StarField } from './StarField';
 import { RelationLines } from './RelationLines';
 import { CameraRig } from './CameraRig';
+import { EphemerisBeacon } from './EphemerisBeacon';
+import { WeekConstellation } from './WeekConstellation';
 
 export function GalaxyCanvas({
   characters,
   relations,
   positions,
   cameraIntro = false,
+  ephemerisBeacon = false,
 }: {
   characters: Character[];
   relations: Relation[];
   positions: Map<string, Vec3>;
   cameraIntro?: boolean;
+  /** Mark the star of the day — the full galaxy only, never the city skies. */
+  ephemerisBeacon?: boolean;
 }) {
   const select = useGalaxyStore((s) => s.select);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
@@ -51,6 +56,8 @@ export function GalaxyCanvas({
       </group>
       <StarsDriver characters={characters} positions={positions} />
       <RelationLines relations={relations} positions={positions} />
+      {ephemerisBeacon && <EphemerisBeacon positions={positions} />}
+      {ephemerisBeacon && <WeekConstellation positions={positions} />}
       <CameraRig positions={positions} intro={cameraIntro} />
       {/* Mobile: no MSAA, and skip the grain pass (one fewer fullscreen draw). */}
       {isMobile ? (

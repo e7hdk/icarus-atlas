@@ -22,5 +22,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg/960px-Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg",
       "description": "Oil painting by Angelica Kauffmann, held by the National Trust at Saltram in Devon. In the famous farewell from Book 6 of the Iliad, Hector parts from Andromache and the infant Astyanax at the gates of Troy before returning to the battle from which he will not come home."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Saffron Burrows' Andromache is the farewell and the widow — Hector's wife watching the duel that ends the Iliad's greatest defender.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    },
+    {
+      "title": "The Trojan Women",
+      "year": "1971",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Vanessa Redgrave's Andromache is Euripides' captive: the widow who learns Astyanax will die and that she herself is allotted to Neoptolemus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women_(film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix retelling keeps Andromache in the palace and on the wall — wife, mother, and the voice that begs Hector not to go.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "music": [
+    {
+      "title": "Ermione",
+      "year": "1819",
+      "kind": "opera",
+      "composer": "Gioachino Rossini",
+      "description": "Rossini's opera, after Racine, puts Andromache between Pyrrhus and Orestes — the Trojan widow as the prize that wrecks a Greek court.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ermione"
+    }
   ]
 }

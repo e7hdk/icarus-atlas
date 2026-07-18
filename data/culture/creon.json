@@ -1,0 +1,58 @@
+{
+  "id": "creon",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Antigone",
+      "year": "1961",
+      "medium": "film",
+      "director": "Yorgos Javellas",
+      "description": "Javellas' Creon is the law that will not bend — the uncle-king who walls Antigone alive and learns too late what the gods require.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(1961_film)"
+    },
+    {
+      "title": "Oedipus the King",
+      "year": "1968",
+      "medium": "film",
+      "director": "Philip Saville",
+      "description": "Saville keeps Creon as the brother-in-law under suspicion — the future king already waiting in Sophocles' first Theban play.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_the_King_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Creon brings the Delphic word and the political edge — the brother of Jocasta as the state answering the plague.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex_(Stravinsky)"
+    },
+    {
+      "title": "Antigone",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Arthur Honegger",
+      "description": "Honegger's Creon is the decree itself set to music — the king who forbids the burial and pays with his house.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Honegger)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Antigone",
+      "year": "c. 441 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' Creon forbids the burial and walls Antigone alive — the uncle-king whose decree becomes Western drama's type of rigid state law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Sophocles_play)"
+    },
+    {
+      "title": "Antigone",
+      "year": "1944",
+      "kind": "other",
+      "creator": "Jean Anouilh",
+      "description": "Anouilh's Creon argues like a collaborator-administrator — reasonable, exhausted, and still the man who will kill the girl for order.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Anouilh_play)"
+    }
+  ]
+}

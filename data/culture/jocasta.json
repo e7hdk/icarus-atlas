@@ -1,0 +1,42 @@
+{
+  "id": "jocasta",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Edipo re",
+      "year": "1967",
+      "medium": "film",
+      "director": "Pier Paolo Pasolini",
+      "description": "Pasolini's Jocasta is mother and wife in the same frame — the queen who hangs herself when the riddle of the bed is finally spoken aloud.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Edipo_re"
+    },
+    {
+      "title": "Oedipus the King",
+      "year": "1968",
+      "medium": "film",
+      "director": "Philip Saville",
+      "description": "Saville's adaptation keeps Jocasta in the palace recognition — the mother who sees the truth a breath before her son does.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_the_King_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "In Stravinsky's Latin ritual Jocasta's voice cuts the oratorio's stone — the queen whose aria knows too much before the messenger arrives.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex_(Stravinsky)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Oedipus Rex",
+      "year": "c. 429 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' queen who hung herself when the bed's riddle was spoken — mother and wife in the same recognition, the palace's silent collapse.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex"
+    }
+  ]
+}

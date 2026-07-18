@@ -85,6 +85,67 @@ export interface Chronology {
   anchors: ChronologyAnchor[];
 }
 
+/** Sound moods the voyage's ambient layer mixes between (docs/NOSTOS_PLAN.md §8). */
+export const VOYAGE_MOODS = [
+  'silence',
+  'open-sea',
+  'drift',
+  'storm',
+  'island',
+  'hall',
+  'hearth',
+  'dread',
+  'underworld',
+  'sirens',
+  'dawn',
+] as const;
+
+export type VoyageMood = (typeof VOYAGE_MOODS)[number];
+
+/** A verbatim bilingual quotation from the poem, always citation-carrying. */
+export interface VoyageEpigraph {
+  grc: string;
+  en: string;
+  citation: string;
+}
+
+/** One star on the voyage's star-sea (docs/NOSTOS_PLAN.md §5, §7). The station is
+ *  presentation overlay only — all myth prose renders from the referenced episode's
+ *  sourced chapters; the epigraph is a verbatim, citation-carrying quotation. */
+export interface VoyageStation {
+  id: string;
+  movement: 1 | 2 | 3;
+  title: string;
+  /** Small rubric over the title, e.g. "Od. 9.105–566". */
+  kicker?: string;
+  /** Nested story id whose chapters this station tells. */
+  episode: string;
+  /** Subset of the episode's chapters (indexes) when an episode spans stations. */
+  chapterIndexes?: number[];
+  /** The poem's own line, bilingual: grc Monro–Allen, en Murray 1919 (PD). */
+  epigraph: VoyageEpigraph;
+  /** Gallery picks by exact title from story-culture file(s). */
+  art?: { culture: string; titles: string[] }[];
+  /** Geo city id — only where geography is honest (Movements I & III). */
+  place?: string;
+  mood: VoyageMood;
+  /** True across the apologoi: Odysseus narrates his own past (register shift). */
+  told?: boolean;
+  /** Pinned scroll-scrubbed epigraph scene — used only where the hold carries
+   *  mythological meaning (NOSTOS_PLAN D12 experiment B). */
+  pinned?: boolean;
+}
+
+/** A flagship scroll experience over an existing saga (data/experience/*.json). */
+export interface Voyage {
+  id: string;
+  /** Root saga id the voyage retells. */
+  story: string;
+  movements: { n: 1 | 2 | 3; title: string; books: string }[];
+  stations: VoyageStation[];
+  finale?: { castHighlight: boolean; epigraph?: VoyageEpigraph };
+}
+
 /** A myth told as a story (data/stories/*.json). Sub-stories nest via `parent`. */
 export interface Story {
   id: string;

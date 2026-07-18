@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — City Page C: Seven Gates</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CITY CONCEPT C — SEVEN GATES ============
+     The city as a crossroads, not a document: a ceremonial identity
+     under the pulsing city-star, then three temple gates — LINEAGE,
+     SKY, MYTHS — each a living preview of what lies through it, with
+     her notable dwellers hung as a constellation strip beneath. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf; --mortal: #e5e7eb;
+  }
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos);
+    background-image:
+      radial-gradient(50% 30% at 50% 0%, rgba(252,211,77,.09), transparent 70%),
+      radial-gradient(42% 36% at 4% 84%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(30% 26% at 96% 50%, rgba(0,229,255,.06), transparent 70%);
+    background-attachment: fixed; }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 16% 20%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 72% 10%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 38% 66%, rgba(252,211,77,.3), transparent),
+      radial-gradient(1px 1px at 86% 80%, rgba(192,132,252,.3), transparent); }
+
+  .atlasbar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; height: 56px; padding: 0 22px; background: rgba(10,5,30,.72); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .brandmark { display: inline-flex; align-items: center; gap: 9px; }
+  .brandmark .st { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px 3px rgba(252,211,77,.65); }
+  .brandmark b { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.8); }
+  .brandmark b em { font-style: normal; color: var(--gold); }
+  .doors { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 4px; }
+  .doors a { padding: 6px 14px; border-radius: 999px; border: 1px solid transparent; font: 500 11px Cinzel, serif; letter-spacing: .16em; color: var(--muted); text-decoration: none; }
+  .doors a.on { border-color: rgba(192,132,252,.5); background: rgba(124,77,255,.2); color: #e9d5ff; }
+  .actions { margin-left: auto; display: flex; gap: 8px; font: 500 10px Cinzel, serif; letter-spacing: .12em; color: var(--muted); }
+  .actions span { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 8px 12px; }
+  .crumb { display: flex; align-items: center; gap: 12px; font: 500 10px Cinzel, serif; letter-spacing: .22em; color: var(--faint); text-transform: uppercase; }
+  .crumb .back { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 999px; color: var(--muted); font-size: 15px; }
+  .crumb a { color: var(--muted); text-decoration: none; }
+  .crumb .sep { color: rgba(241,245,249,.25); }
+  .crumb .here { color: var(--gold); }
+
+  .page { position: relative; max-width: 1080px; margin: 0 auto; padding: 76px 24px 100px; }
+
+  /* ---- ceremonial identity ---- */
+  .hero { text-align: center; padding-top: 34px; }
+  .hero .citystar { position: relative; margin: 0 auto 20px; width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle at 38% 34%, #fef3c7, var(--gold) 55%, #b45309); box-shadow: 0 0 22px 8px rgba(252,211,77,.65), 0 0 70px 28px rgba(252,211,77,.22); animation: beat 3.8s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.14); } }
+  .hero .over { font: 500 10px Cinzel, serif; letter-spacing: .5em; color: var(--faint); }
+  .hero h1 { font: 700 clamp(38px,6vw,58px) Cinzel, serif; letter-spacing: .24em; padding-left: .24em; margin-top: 10px; text-shadow: 0 0 20px rgba(252,211,77,.55), 0 0 60px rgba(252,211,77,.25); }
+  .hero .sub { font-style: italic; font-size: 19px; color: var(--muted); margin-top: 8px; }
+  .hero .sub em { font-style: normal; color: #fde68a; }
+  .hero .meta { margin-top: 12px; font: 500 10px Cinzel, serif; letter-spacing: .26em; color: var(--faint); }
+  .hero .meta b { color: rgba(253,230,138,.8); font-weight: 500; }
+
+  /* ---- the gates ---- */
+  .gates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 52px; }
+  .gate { position: relative; display: flex; flex-direction: column; border: 1px solid var(--glass-border); background: rgba(20,12,48,.4); backdrop-filter: blur(14px); text-decoration: none; color: inherit; transition: transform .3s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .3s; }
+  .gate:hover { transform: translateY(-4px); border-color: rgba(252,211,77,.45); box-shadow: 0 26px 60px rgba(5,2,15,.55); }
+  /* meander lintel */
+  .lintel { display: flex; align-items: center; gap: 10px; padding: 14px 18px 0; color: rgba(252,211,77,.5); transition: color .3s; }
+  .gate:hover .lintel { color: rgba(252,211,77,.85); }
+  .lintel .ln { flex: 1; height: 1px; background: currentColor; opacity: .5; }
+  .lintel svg { display: block; }
+  .gate h2 { text-align: center; font: 600 13px Cinzel, serif; letter-spacing: .34em; padding: 12px 16px 2px; color: var(--aether); }
+  .gate .cnt { text-align: center; font-style: italic; font-size: 14.5px; color: var(--faint); }
+  .gate .body { flex: 1; padding: 16px 20px 18px; }
+  .gate .go { padding: 0 20px 16px; text-align: right; font: 600 11px Cinzel, serif; letter-spacing: .2em; color: var(--faint); transition: color .2s; }
+  .gate:hover .go { color: #fde68a; }
+
+  /* gate 1: lineage preview (mini spine) */
+  .mini-spine { position: relative; padding-left: 26px; }
+  .mini-spine::before { content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px; width: 1.5px; background: linear-gradient(180deg, var(--gold), rgba(192,132,252,.6)); box-shadow: 0 0 8px rgba(252,211,77,.4); border-radius: 2px; }
+  .mini-reign { position: relative; padding-bottom: 14px; }
+  .mini-reign::before { content: ''; position: absolute; left: -24px; top: 5px; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 7px 2px rgba(252,211,77,.55); }
+  .mini-reign.dim::before { background: rgba(241,245,249,.25); box-shadow: none; }
+  .mini-reign b { font: 600 14.5px Cinzel, serif; letter-spacing: .06em; color: var(--aether); }
+  .mini-reign i { display: block; font-size: 14px; color: var(--faint); }
+  .mini-reign .dq { color: var(--soft); font-size: 12px; }
+  .mini-more { font-style: italic; font-size: 14.5px; color: var(--faint); padding-left: 2px; }
+
+  /* gate 2: sky preview */
+  .sky-preview { position: relative; height: 158px; border-radius: 10px; overflow: hidden; background:
+      radial-gradient(1.6px 1.6px at 16% 34%, rgba(252,211,77,.95), transparent),
+      radial-gradient(1.3px 1.3px at 30% 64%, rgba(45,212,191,.95), transparent),
+      radial-gradient(1.2px 1.2px at 44% 26%, rgba(229,231,235,.9), transparent),
+      radial-gradient(1.5px 1.5px at 58% 58%, rgba(96,165,250,.95), transparent),
+      radial-gradient(1.2px 1.2px at 72% 30%, rgba(192,132,252,.95), transparent),
+      radial-gradient(1.3px 1.3px at 84% 66%, rgba(229,231,235,.85), transparent),
+      radial-gradient(1.2px 1.2px at 24% 82%, rgba(244,114,182,.85), transparent),
+      radial-gradient(1.2px 1.2px at 66% 84%, rgba(252,211,77,.8), transparent),
+      radial-gradient(1px 1px at 50% 44%, rgba(241,245,249,.7), transparent),
+      radial-gradient(80% 130% at 50% 130%, rgba(124,77,255,.22), transparent 70%), #070317;
+    animation: drift 26s ease-in-out infinite alternate; background-size: 200% 200%; }
+  @keyframes drift { from { background-position: 0% 0%; } to { background-position: 100% 60%; } }
+  .sky-preview .veil { position: absolute; inset: auto 0 0 0; padding: 26px 12px 8px; text-align: center; font-style: italic; font-size: 14px; color: var(--muted); background: linear-gradient(transparent, rgba(5,2,15,.85)); }
+
+  /* gate 3: myths list */
+  .myth-row { display: flex; align-items: baseline; padding: 6px 0; font-size: 15.5px; color: var(--muted); }
+  .myth-row b { font: 500 13px Cinzel, serif; letter-spacing: .08em; color: var(--aether); }
+  .myth-row .dots { flex: 1; margin: 0 9px; border-bottom: 1px dotted rgba(241,245,249,.2); transform: translateY(-3px); }
+  .myth-row em { font-size: 13px; color: var(--faint); }
+
+  /* ---- the dwellers strip ---- */
+  .strip-head { text-align: center; font: 500 11px Cinzel, serif; letter-spacing: .34em; color: var(--faint); margin-top: 66px; }
+  .strip-rule { display: flex; align-items: center; gap: 12px; max-width: 320px; margin: 12px auto 0; }
+  .strip-rule .ln { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(241,245,249,.25)); }
+  .strip-rule .ln:last-child { background: linear-gradient(90deg, rgba(241,245,249,.25), transparent); }
+  .strip-rule .st { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px 2px rgba(252,211,77,.55); }
+  .strip { position: relative; max-width: 760px; margin: 26px auto 0; height: 92px; }
+  .strip .base { position: absolute; left: 0; right: 0; top: 30px; height: 1px; background: linear-gradient(90deg, transparent, rgba(241,245,249,.22) 12%, rgba(241,245,249,.22) 88%, transparent); }
+  .dweller { position: absolute; top: 30px; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; cursor: pointer; text-decoration: none; }
+  .dweller i { display: block; border-radius: 50%; background: var(--c); width: var(--s,10px); height: var(--s,10px); box-shadow: 0 0 8px 2px var(--c), 0 0 20px 7px color-mix(in srgb, var(--c) 32%, transparent); transition: box-shadow .25s; }
+  .dweller:hover i { box-shadow: 0 0 13px 4px var(--c), 0 0 34px 12px color-mix(in srgb, var(--c) 55%, transparent); }
+  .dweller b { position: absolute; top: 22px; font: 500 10.5px Cinzel, serif; letter-spacing: .12em; color: var(--muted); white-space: nowrap; transition: color .2s; }
+  .dweller:hover b { color: #fde68a; }
+  .dweller em { position: absolute; top: 40px; font-style: italic; font-size: 12px; color: transparent; white-space: nowrap; transition: color .2s; }
+  .dweller:hover em { color: var(--faint); }
+  .strip-more { text-align: center; font-style: italic; font-size: 14.5px; color: var(--faint); margin-top: 18px; }
+  .strip-more b { font-style: normal; font-weight: 500; color: #fde68a; cursor: pointer; }
+
+  .region-line { text-align: center; margin-top: 46px; font: 500 10px Cinzel, serif; letter-spacing: .26em; color: var(--faint); }
+  .region-line b { color: rgba(253,230,138,.8); font-weight: 500; }
+  footer { text-align: center; margin-top: 70px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 860px) {
+    .gates { grid-template-columns: 1fr; }
+    .doors { display: none; }
+    .strip { transform: scale(.85); }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+
+<div class="atlasbar">
+  <span class="brandmark"><span class="st"></span><b>ICARUS <em>ATLAS</em></b></span>
+  <nav class="doors"><a href="#">GALAXY</a><a class="on" href="#">LANDS</a><a href="#">MYTHS</a></nav>
+  <div class="actions"><span>SEARCH ⌘K</span><span>⚙</span></div>
+</div>
+
+<div class="page">
+  <div class="crumb">
+    <span class="back">←</span>
+    <a href="#">LANDS</a><span class="sep">/</span><span class="here">THEBES</span>
+  </div>
+
+  <!-- ceremonial identity -->
+  <header class="hero">
+    <div class="citystar"></div>
+    <div class="over">THE CITY OF</div>
+    <h1>THEBES</h1>
+    <div class="sub">Θῆβαι · <em>seven-gated</em> · citadel of Cadmus</div>
+    <div class="meta"><b>BOEOTIA</b> · 101 STARS IN HER SKY · 19 REIGNS · PLEIADES 541138</div>
+  </header>
+
+  <!-- the three gates -->
+  <div class="gates">
+    <a class="gate" href="#">
+      <div class="lintel"><span class="ln"></span>
+        <svg width="54" height="10" viewBox="0 0 64 12" fill="none"><path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span class="ln"></span></div>
+      <h2>THE LINEAGE</h2>
+      <div class="cnt">nineteen reigns, five disputed</div>
+      <div class="body">
+        <div class="mini-spine">
+          <div class="mini-reign"><b>Cadmus</b> <span class="dq">⚖</span><i>founder of the Cadmeia</i></div>
+          <div class="mini-reign"><b>Oedipus</b><i>the riddle and the fall</i></div>
+          <div class="mini-reign dim"><b>Creon</b> <span class="dq">⚖</span><i>king — or regent, by the teller</i></div>
+          <div class="mini-more">… down to Xanthus, last of the kings</div>
+        </div>
+      </div>
+      <div class="go">READ THE SUCCESSION →</div>
+    </a>
+
+    <a class="gate" href="#">
+      <div class="lintel"><span class="ln"></span>
+        <svg width="54" height="10" viewBox="0 0 64 12" fill="none"><path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span class="ln"></span></div>
+      <h2>HER SKY</h2>
+      <div class="cnt">a mini-galaxy of 101 dwellers</div>
+      <div class="body">
+        <div class="sky-preview"><div class="veil">the sky drifts, waiting</div></div>
+      </div>
+      <div class="go">ENTER THE SKY →</div>
+    </a>
+
+    <a class="gate" href="#">
+      <div class="lintel"><span class="ln"></span>
+        <svg width="54" height="10" viewBox="0 0 64 12" fill="none"><path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span class="ln"></span></div>
+      <h2>MYTHS SET HERE</h2>
+      <div class="cnt">six tales walk these walls</div>
+      <div class="body">
+        <div class="myth-row"><b>Cadmus and Thebes</b><span class="dots"></span><em>the founding</em></div>
+        <div class="myth-row"><b>Oedipus at Thebes</b><span class="dots"></span><em>the riddle</em></div>
+        <div class="myth-row"><b>Seven Against Thebes</b><span class="dots"></span><em>the war</em></div>
+        <div class="myth-row"><b>Antigone at Thebes</b><span class="dots"></span><em>the burial</em></div>
+      </div>
+      <div class="go">ALL SIX TALES →</div>
+    </a>
+  </div>
+
+  <!-- the dwellers strip -->
+  <div class="strip-head">NOTABLE DWELLERS</div>
+  <div class="strip-rule"><span class="ln"></span><span class="st"></span><span class="ln"></span></div>
+  <div class="strip">
+    <div class="base"></div>
+    <a class="dweller" style="left:8%; --c:#2dd4bf; --s:12px" href="#"><i></i><b>Cadmus</b><em>founder</em></a>
+    <a class="dweller" style="left:22%; --c:#fcd34d; --s:13px" href="#"><i></i><b>Dionysus</b><em>born of Semele</em></a>
+    <a class="dweller" style="left:36%; --c:#e5e7eb" href="#"><i></i><b>Semele</b><em>the lightning bride</em></a>
+    <a class="dweller" style="left:50%; --c:#2dd4bf; --s:13px" href="#"><i></i><b>Heracles</b><em>born here</em></a>
+    <a class="dweller" style="left:64%; --c:#e5e7eb" href="#"><i></i><b>Oedipus</b><em>the riddle-solver</em></a>
+    <a class="dweller" style="left:77%; --c:#e5e7eb" href="#"><i></i><b>Antigone</b><em>the defiant</em></a>
+    <a class="dweller" style="left:90%; --c:#e5e7eb" href="#"><i></i><b>Tiresias</b><em>the blind seer</em></a>
+  </div>
+  <p class="strip-more">and <b>94 more</b> in her sky</p>
+
+  <div class="region-line">REGION — <b>BOEOTIA</b> · ON THE MAP ↗</div>
+
+  <footer>City concept C — Seven Gates · the city as a crossroads: three living gates, her dwellers hung beneath</footer>
+</div>
+</body>
+</html>

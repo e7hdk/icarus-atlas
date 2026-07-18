@@ -1,8 +1,14 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { storySchema, storyCrossingsSchema, chronologySchema, cultureSchema } from '@/lib/schemas';
-import type { Artwork } from '@/types/character';
-import type { Story, StoryCrossing, Chronology } from '@/types/story';
+import {
+  storySchema,
+  storyCrossingsSchema,
+  chronologySchema,
+  cultureSchema,
+  voyageSchema,
+} from '@/lib/schemas';
+import type { CultureData } from '@/types/character';
+import type { Story, StoryCrossing, Chronology, Voyage } from '@/types/story';
 
 const STORY_DIR = path.join(process.cwd(), 'data', 'stories');
 const STORY_CROSSINGS_PATH = path.join(process.cwd(), 'data', 'story-crossings.json');
@@ -57,14 +63,23 @@ export async function loadStory(id: string): Promise<Story | null> {
 
 const STORY_CULTURE_DIR = path.join(process.cwd(), 'data', 'story-culture');
 
-/** Optional artwork gallery for a saga (data/story-culture/{id}.json). */
-export async function loadStoryCulture(
-  id: string,
-): Promise<{ id: string; artworks: Artwork[] } | null> {
+/** Optional culture shelves for a saga (data/story-culture/{id}.json). */
+export async function loadStoryCulture(id: string): Promise<CultureData | null> {
   try {
     const raw = JSON.parse(await readFile(path.join(STORY_CULTURE_DIR, `${id}.json`), 'utf-8'));
-    const parsed = cultureSchema.parse(raw);
-    return parsed;
+    return cultureSchema.parse(raw) as CultureData;
+  } catch {
+    return null;
+  }
+}
+
+const EXPERIENCE_DIR = path.join(process.cwd(), 'data', 'experience');
+
+/** A flagship voyage overlay (data/experience/{id}.json, docs/NOSTOS_PLAN.md §7). */
+export async function loadVoyage(id: string): Promise<Voyage | null> {
+  try {
+    const raw = JSON.parse(await readFile(path.join(EXPERIENCE_DIR, `${id}.json`), 'utf-8'));
+    return voyageSchema.parse(raw) as Voyage;
   } catch {
     return null;
   }

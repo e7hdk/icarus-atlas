@@ -1,0 +1,57 @@
+{
+  "id": "pygmalion",
+  "artworks": [
+    {
+      "title": "Pygmalion and Galatea",
+      "artist": "Jean-Léon Gérôme",
+      "year": "c. 1890",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Jean-L%C3%A9on_G%C3%A9r%C3%B4me%2C_Pygmalion_and_Galatea%2C_ca._1890.jpg/960px-Jean-L%C3%A9on_G%C3%A9r%C3%B4me%2C_Pygmalion_and_Galatea%2C_ca._1890.jpg",
+      "description": "Gérôme's marble maiden warming into flesh under the sculptor's kiss — Ovid's festival miracle as academic theatre."
+    }
+  ],
+  "films": [
+    {
+      "title": "My Fair Lady",
+      "year": "1964",
+      "medium": "film",
+      "director": "George Cukor",
+      "description": "Cukor's musical film of Lerner and Loewe — Eliza and Higgins as the modern Pygmalion myth of speech, class, and creation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/My_Fair_Lady_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "My Fair Lady",
+      "year": "1956",
+      "kind": "stage",
+      "composer": "Frederick Loewe",
+      "description": "Lerner and Loewe's Broadway musical after Shaw — the sculptor's myth remade as phonetics and a flower girl's transformation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/My_Fair_Lady"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Pygmalion (play)",
+      "year": "1913",
+      "kind": "other",
+      "creator": "George Bernard Shaw",
+      "description": "Shaw's comedy of manners named for the Cypriot sculptor — language as the chisel that shapes a living Galatea.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Pygmalion_(play)"
+    },
+    {
+      "title": "Metamorphoses",
+      "year": "AD 8",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Book 10 — the ivory bride Venus warms to life: the source text every later Pygmalion still answers.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
+    },
+    {
+      "title": "Pygmalion",
+      "year": "—",
+      "kind": "other",
+      "description": "The sculptor who loved his own art into flesh — still the name for creators who fall for what they make.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Pygmalion_(mythology)"
+    }
+  ]
+}

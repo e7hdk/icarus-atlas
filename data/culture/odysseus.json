@@ -71,5 +71,42 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Odysseus_Ajax_Louvre_F340.jpg/960px-Odysseus_Ajax_Louvre_F340.jpg",
       "description": "The Taleides Painter's black-figure oinochoe in the Louvre (inv. F 340) shows Ajax and Odysseus confronting one another over the arms of the dead Achilles — the contest Apollodorus and Homer both remember, decided in Odysseus' favour and fatal to Ajax' pride. The kalos inscription and balanced pairing of the two heroes capture a bitter postscript to the Trojan War: the man of brute force against the man of speech, with victory going to the counsellor whose eloquence had swayed the army. The episode shadows Odysseus' entire legend with the grief of his greatest rival."
     }
+  ],
+  "films": [
+    {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Kirk Douglas' wanderer compresses the Odyssey into Technicolor spectacle — Polyphemus, the Sirens and Circe in a single voyage — the definitive screen Ulysses of its century.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
+    },
+    {
+      "title": "Ulysses 31",
+      "year": "1981",
+      "medium": "animation",
+      "description": "A French-Japanese animated odyssey exiled to the 31st century: the gods scatter Ulysses' way home across the stars, and each island of the poem returns as a space trial for his ship, the Odysseus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_31"
+    }
+  ],
+  "music": [
+    {
+      "title": "Il ritorno d'Ulisse in patria",
+      "year": "1640",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's late Venetian opera of the homecoming: the beggar-king strings his bow in music, and Penelope's long refusal to hope becomes the work's true summit.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Il_ritorno_d%27Ulisse_in_patria"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Ulysses",
+      "year": "1922",
+      "kind": "novel",
+      "creator": "James Joyce",
+      "description": "A single Dublin day — 16 June 1904 — mapped episode for episode onto the Odyssey; Joyce's modernist epic made Homer's wanderer the scaffolding of twentieth-century literature.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(novel)"
+    }
   ]
 }

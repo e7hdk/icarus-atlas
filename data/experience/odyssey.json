@@ -1,0 +1,497 @@
+{
+  "id": "odyssey",
+  "story": "odyssey",
+  "movements": [
+    {
+      "n": 1,
+      "title": "The Son",
+      "books": "Od. 1–4"
+    },
+    {
+      "n": 2,
+      "title": "The Tale",
+      "books": "Od. 5–12"
+    },
+    {
+      "n": 3,
+      "title": "The Homecoming",
+      "books": "Od. 13–24"
+    }
+  ],
+  "stations": [
+    {
+      "id": "overture",
+      "movement": 1,
+      "title": "Tell Me, Muse",
+      "kicker": "Od. 1.1",
+      "episode": "odyssey",
+      "chapterIndexes": [
+        0
+      ],
+      "epigraph": {
+        "grc": "ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ\nπλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν·\nπολλῶν δʼ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,\nπολλὰ δʼ ὅ γʼ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,\nἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.",
+        "en": "Tell me, O Muse, of the man of many devices, who wandered full many ways after he had sacked the sacred citadel of Troy. Many were the men whose cities he saw and whose mind he learned, aye, and many the woes he suffered in his heart upon the sea, seeking to win his own life and the return of his comrades.",
+        "citation": "Hom. Od. 1.1–5"
+      },
+      "mood": "silence",
+      "pinned": true,
+      "art": [
+        {
+          "culture": "odyssey",
+          "titles": [
+            "Head of Odysseus (Sperlonga group)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-house-eaten-alive",
+      "movement": 1,
+      "title": "A House Eaten Alive",
+      "kicker": "Od. 1–2",
+      "episode": "telemachus-and-the-suitors",
+      "chapterIndexes": [
+        0,
+        1,
+        2
+      ],
+      "epigraph": {
+        "grc": "ἔνθα καὶ ἠματίη μὲν ὑφαίνεσκεν μέγαν ἱστόν,\nνύκτας δʼ ἀλλύεσκεν, ἐπεὶ δαΐδας παραθεῖτο.",
+        "en": "Then day by day she would weave at the great web, but by night would unravel it, when she had let place torches by her.",
+        "citation": "Hom. Od. 2.104–105"
+      },
+      "place": "ithaca",
+      "mood": "hall",
+      "art": [
+        {
+          "culture": "telemachus-and-the-suitors",
+          "titles": [
+            "Penelope Unraveling Her Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-other-mens-halls",
+      "movement": 1,
+      "title": "In Other Men's Halls",
+      "kicker": "Od. 3–4",
+      "episode": "telemachus-and-the-suitors",
+      "chapterIndexes": [
+        3,
+        4
+      ],
+      "epigraph": {
+        "grc": "δάκρυ δʼ ἀπὸ βλεφάρων χαμάδις βάλε πατρὸς ἀκούσας,\nχλαῖναν πορφυρέην ἄντʼ ὀφθαλμοῖιν ἀνασχὼν\nἀμφοτέρῃσιν χερσί.",
+        "en": "Tears from his eyelids he let fall upon the ground, when he heard his father's name, and with both hands held up his purple cloak before his eyes.",
+        "citation": "Hom. Od. 4.114–116"
+      },
+      "place": "sparta",
+      "mood": "open-sea"
+    },
+    {
+      "id": "the-island-at-the-worlds-end",
+      "movement": 2,
+      "title": "The Island at the World's End",
+      "kicker": "Od. 5",
+      "episode": "calypso-and-scheria",
+      "chapterIndexes": [
+        0
+      ],
+      "epigraph": {
+        "grc": "πότνα θεά, μή μοι τόδε χώεο· οἶδα καὶ αὐτὸς\nπάντα μάλʼ, οὕνεκα σεῖο περίφρων Πηνελόπεια\nεἶδος ἀκιδνοτέρη μέγεθός τʼ εἰσάντα ἰδέσθαι·\nἡ μὲν γὰρ βροτός ἐστι, σὺ δʼ ἀθάνατος καὶ ἀγήρως.\nἀλλὰ καὶ ὣς ἐθέλω καὶ ἐέλδομαι ἤματα πάντα\nοἴκαδέ τʼ ἐλθέμεναι καὶ νόστιμον ἦμαρ ἰδέσθαι.",
+        "en": "Mighty goddess, be not wroth with me for this. I know full well of myself that wise Penelope is meaner to look upon than thou in comeliness and in stature, for she is a mortal, while thou art immortal and ageless. But even so I wish and long day by day to reach my home, and to see the day of my return.",
+        "citation": "Hom. Od. 5.215–220"
+      },
+      "place": "ogygia",
+      "mood": "island",
+      "pinned": true,
+      "art": [
+        {
+          "culture": "calypso-and-scheria",
+          "titles": [
+            "Odysseus and Calypso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-kind-strangers",
+      "movement": 2,
+      "title": "The Kind Strangers",
+      "kicker": "Od. 6–8",
+      "episode": "calypso-and-scheria",
+      "chapterIndexes": [
+        1,
+        2,
+        3
+      ],
+      "epigraph": {
+        "grc": "εἴμʼ Ὀδυσεὺς Λαερτιάδης, ὃς πᾶσι δόλοισιν\nἀνθρώποισι μέλω, καί μευ κλέος οὐρανὸν ἵκει.",
+        "en": "I am Odysseus, son of Laertes, who am known among men for all manner of wiles, and my fame reaches unto heaven.",
+        "citation": "Hom. Od. 9.19–20"
+      },
+      "place": "corcyra",
+      "mood": "hall",
+      "art": [
+        {
+          "culture": "calypso-and-scheria",
+          "titles": [
+            "Nausicaa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-lotus-and-forgetting",
+      "movement": 2,
+      "title": "The Lotus and Forgetting",
+      "kicker": "Od. 9.82–104",
+      "episode": "lotus-and-cyclops",
+      "chapterIndexes": [
+        0
+      ],
+      "epigraph": {
+        "grc": "τῶν δʼ ὅς τις λωτοῖο φάγοι μελιηδέα καρπόν,\nοὐκέτʼ ἀπαγγεῖλαι πάλιν ἤθελεν οὐδὲ νέεσθαι,\nἀλλʼ αὐτοῦ βούλοντο μετʼ ἀνδράσι Λωτοφάγοισι\nλωτὸν ἐρεπτόμενοι μενέμεν νόστου τε λαθέσθαι.",
+        "en": "And whosoever of them ate of the honey-sweet fruit of the lotus, had no longer any wish to bring back word or to return, but there they were fain to abide among the Lotus-eaters, feeding on the lotus, and forgetful of their homeward way.",
+        "citation": "Hom. Od. 9.94–97"
+      },
+      "mood": "drift",
+      "told": true
+    },
+    {
+      "id": "nobody",
+      "movement": 2,
+      "title": "Nobody",
+      "kicker": "Od. 9.105–566",
+      "episode": "lotus-and-cyclops",
+      "chapterIndexes": [
+        1,
+        2,
+        3
+      ],
+      "epigraph": {
+        "grc": "Οὖτις ἐμοί γʼ ὄνομα· Οὖτιν δέ με κικλήσκουσι\nμήτηρ ἠδὲ πατὴρ ἠδʼ ἄλλοι πάντες ἑταῖροι.",
+        "en": "Noman is my name, Noman do they call me—my mother and my father, and all my comrades as well.",
+        "citation": "Hom. Od. 9.366–367"
+      },
+      "art": [
+        {
+          "culture": "lotus-and-cyclops",
+          "titles": [
+            "Odysseus and his men blinding Polyphemus (Eleusis Amphora, detail)",
+            "Ulysses Deriding Polyphemus"
+          ]
+        }
+      ],
+      "mood": "dread",
+      "told": true
+    },
+    {
+      "id": "the-bag-of-winds",
+      "movement": 2,
+      "title": "The Bag of Winds",
+      "kicker": "Od. 10.1–79",
+      "episode": "winds-and-circe",
+      "chapterIndexes": [
+        0
+      ],
+      "epigraph": {
+        "grc": "ἐννῆμαρ μὲν ὁμῶς πλέομεν νύκτας τε καὶ ἦμαρ,\nτῇ δεκάτῃ δʼ ἤδη ἀνεφαίνετο πατρὶς ἄρουρα,\nκαὶ δὴ πυρπολέοντας ἐλεύσσομεν ἐγγὺς ἐόντες·",
+        "en": "For nine days we sailed, night and day alike, and now on the tenth our native land came in sight, and lo, we were so near that we saw men tending the beacon fires.",
+        "citation": "Hom. Od. 10.28–30"
+      },
+      "mood": "open-sea",
+      "told": true
+    },
+    {
+      "id": "harbors-of-the-giants",
+      "movement": 2,
+      "title": "Harbors of the Giants",
+      "kicker": "Od. 10.80–132",
+      "episode": "winds-and-circe",
+      "chapterIndexes": [
+        1
+      ],
+      "epigraph": {
+        "grc": "ἀσπασίως δʼ ἐς πόντον ἐπηρεφέας φύγε πέτρας\nνηῦς ἐμή· αὐτὰρ αἱ ἄλλαι ἀολλέες αὐτόθʼ ὄλοντο.",
+        "en": "and joyfully seaward, away from the beetling cliffs, my ship sped on; but all those other ships were lost together there.",
+        "citation": "Hom. Od. 10.131–132"
+      },
+      "mood": "dread",
+      "told": true,
+      "art": [
+        {
+          "culture": "winds-and-circe",
+          "titles": [
+            "The Laestrygonians Hurl Rocks at the Fleet (Odyssey Landscapes)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-witch-and-the-year",
+      "movement": 2,
+      "title": "The Witch and the Year",
+      "kicker": "Od. 10.133–574",
+      "episode": "winds-and-circe",
+      "chapterIndexes": [
+        2,
+        3
+      ],
+      "epigraph": {
+        "grc": "δαιμόνιʼ, ἤδη νῦν μιμνήσκεο πατρίδος αἴης,\nεἴ τοι θέσφατόν ἐστι σαωθῆναι καὶ ἱκέσθαι\nοἶκον ἐς ὑψόροφον καὶ σὴν ἐς πατρίδα γαῖαν.",
+        "en": "Strange man, bethink thee now at last of thy native land, if it is fated for thee to be saved, and to reach thy high-roofed house and thy native land.",
+        "citation": "Hom. Od. 10.472–474"
+      },
+      "place": "aeaea",
+      "mood": "island",
+      "told": true,
+      "art": [
+        {
+          "culture": "winds-and-circe",
+          "titles": [
+            "Circe Offering the Cup to Ulysses"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-house-of-the-dead",
+      "movement": 2,
+      "title": "The House of the Dead",
+      "kicker": "Od. 11",
+      "episode": "nekuia",
+      "epigraph": {
+        "grc": "τρὶς μὲν ἐφωρμήθην, ἑλέειν τέ με θυμὸς ἀνώγει,\nτρὶς δέ μοι ἐκ χειρῶν σκιῇ εἴκελον ἢ καὶ ὀνείρῳ\nἔπτατʼ. ἐμοὶ δʼ ἄχος ὀξὺ γενέσκετο κηρόθι μᾶλλον,",
+        "en": "Thrice I sprang towards her, and my heart bade me clasp her, and thrice she flitted from my arms like a shadow or a dream, and pain grew ever sharper at my heart.",
+        "citation": "Hom. Od. 11.206–208"
+      },
+      "art": [
+        {
+          "culture": "nekuia",
+          "titles": [
+            "Odysseus and the shade of Tiresias (Attic red-figure pelike, detail)",
+            "Tiresias Appears to Ulysses During the Sacrifice"
+          ]
+        }
+      ],
+      "mood": "underworld",
+      "told": true,
+      "pinned": true
+    },
+    {
+      "id": "the-song-that-knows-everything",
+      "movement": 2,
+      "title": "The Song That Knows Everything",
+      "kicker": "Od. 12.158–200",
+      "episode": "sirens-and-the-strait",
+      "chapterIndexes": [
+        0,
+        1
+      ],
+      "epigraph": {
+        "grc": "ἴδμεν γάρ τοι πάνθʼ ὅσʼ ἐνὶ Τροίῃ εὐρείῃ\nἈργεῖοι Τρῶές τε θεῶν ἰότητι μόγησαν,\nἴδμεν δʼ, ὅσσα γένηται ἐπὶ χθονὶ πουλυβοτείρῃ.",
+        "en": "For we know all the toils that in wide Troy the Argives and Trojans endured through the will of the gods, and we know all things that come to pass upon the fruitful earth.",
+        "citation": "Hom. Od. 12.189–191"
+      },
+      "art": [
+        {
+          "culture": "odyssey",
+          "titles": [
+            "Odysseus and the Sirens (the \"Siren Vase\")"
+          ]
+        },
+        {
+          "culture": "sirens-and-the-strait",
+          "titles": [
+            "Ulysses and the Sirens"
+          ]
+        }
+      ],
+      "mood": "sirens",
+      "told": true,
+      "pinned": true
+    },
+    {
+      "id": "six-men",
+      "movement": 2,
+      "title": "Six Men",
+      "kicker": "Od. 12.201–259",
+      "episode": "sirens-and-the-strait",
+      "chapterIndexes": [
+        2
+      ],
+      "epigraph": {
+        "grc": "οἴκτιστον δὴ κεῖνο ἐμοῖς ἴδον ὀφθαλμοῖσι\nπάντων, ὅσσʼ ἐμόγησα πόρους ἁλὸς ἐξερεείνων.",
+        "en": "Most piteous did mine eyes behold that thing of all that I bore while I explored the paths of the sea.",
+        "citation": "Hom. Od. 12.258–259"
+      },
+      "mood": "dread",
+      "told": true,
+      "art": [
+        {
+          "culture": "sirens-and-the-strait",
+          "titles": [
+            "Odysseus Between Scylla and Charybdis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-cattle-of-the-sun",
+      "movement": 2,
+      "title": "The Cattle of the Sun",
+      "kicker": "Od. 12.260–450",
+      "episode": "sirens-and-the-strait",
+      "chapterIndexes": [
+        3,
+        4
+      ],
+      "epigraph": {
+        "grc": "πάντες μὲν στυγεροὶ θάνατοι δειλοῖσι βροτοῖσι,\nλιμῷ δʼ οἴκτιστον θανέειν καὶ πότμον ἐπισπεῖν.",
+        "en": "All forms of death are hateful to wretched mortals, but to die of hunger, and so meet one's doom, is the most pitiful.",
+        "citation": "Hom. Od. 12.341–342"
+      },
+      "mood": "storm",
+      "told": true
+    },
+    {
+      "id": "asleep-he-arrives",
+      "movement": 3,
+      "title": "Asleep, He Arrives",
+      "kicker": "Od. 13",
+      "episode": "calypso-and-scheria",
+      "chapterIndexes": [
+        4
+      ],
+      "epigraph": {
+        "grc": "ὁ δʼ ἔγρετο δῖος Ὀδυσσεὺς\nεὕδων ἐν γαίῃ πατρωΐῃ, οὐδέ μιν ἔγνω,\nἤδη δὴν ἀπεών· περὶ γὰρ θεὸς ἠέρα χεῦε",
+        "en": "but Odysseus awoke out of his sleep in his native land. Yet he knew it not after his long absence, for about him the goddess had shed a mist.",
+        "citation": "Hom. Od. 13.187–189"
+      },
+      "place": "ithaca",
+      "mood": "dawn"
+    },
+    {
+      "id": "the-beggar-in-his-own-house",
+      "movement": 3,
+      "title": "The Beggar in His Own House",
+      "kicker": "Od. 14–18",
+      "episode": "the-beggar-king",
+      "chapterIndexes": [
+        0,
+        1,
+        2
+      ],
+      "epigraph": {
+        "grc": "Ἄργον δʼ αὖ κατὰ μοῖρʼ ἔλαβεν μέλανος θανάτοιο,\nαὐτίκʼ ἰδόντʼ Ὀδυσῆα ἐεικοστῷ ἐνιαυτῷ.",
+        "en": "But as for Argos, the fate of black death seized him straightway when he had seen Odysseus in the twentieth year.",
+        "citation": "Hom. Od. 17.326–327"
+      },
+      "place": "ithaca",
+      "mood": "hearth",
+      "pinned": true,
+      "art": [
+        {
+          "culture": "the-beggar-king",
+          "titles": [
+            "Odysseus Recognized by His Dog Argus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-scar",
+      "movement": 3,
+      "title": "The Scar",
+      "kicker": "Od. 19",
+      "episode": "the-beggar-king",
+      "chapterIndexes": [
+        3,
+        4
+      ],
+      "epigraph": {
+        "grc": "τὴν γρηῢς χείρεσσι καταπρηνέσσι λαβοῦσα\nγνῶ ῥʼ ἐπιμασσαμένη, πόδα δὲ προέηκε φέρεσθαι·\nἐν δὲ λέβητι πέσε κνήμη, κανάχησε δὲ χαλκός,\nἂψ δʼ ἑτέρωσʼ ἐκλίθη· τὸ δʼ ἐπὶ χθονὸς ἐξέχυθʼ ὕδωρ.",
+        "en": "This scar the old dame, when she had taken the limb in the flat of her hands, knew by the touch, and she let fall the foot. Into the basin the leg fell, and the brazen vessel rang. Over it tilted, and the water was spilled upon the ground.",
+        "citation": "Hom. Od. 19.467–470"
+      },
+      "place": "ithaca",
+      "mood": "hall"
+    },
+    {
+      "id": "the-bow-and-the-blood",
+      "movement": 3,
+      "title": "The Bow and the Blood",
+      "kicker": "Od. 21–22",
+      "episode": "slaughter-of-the-suitors",
+      "epigraph": {
+        "grc": "ὡς ὅτʼ ἀνὴρ φόρμιγγος ἐπιστάμενος καὶ ἀοιδῆς\nῥηϊδίως ἐτάνυσσε νέῳ περὶ κόλλοπι χορδήν,\nἅψας ἀμφοτέρωθεν ἐϋστρεφὲς ἔντερον οἰός,\nὣς ἄρʼ ἄτερ σπουδῆς τάνυσεν μέγα τόξον Ὀδυσσεύς.\nδεξιτερῇ ἄρα χειρὶ λαβὼν πειρήσατο νευρῆς·\nἡ δʼ ὑπὸ καλὸν ἄεισε, χελιδόνι εἰκέλη αὐδήν.",
+        "en": "even as when a man well-skilled in the lyre and in song easily stretches the string about a new peg, making fast at either end the twisted sheep-gut—so without effort did Odysseus string the great bow. And he held it in his right hand, and tried the string, which sang sweetly beneath his touch, like to a swallow in tone.",
+        "citation": "Hom. Od. 21.406–411"
+      },
+      "place": "ithaca",
+      "mood": "silence",
+      "art": [
+        {
+          "culture": "slaughter-of-the-suitors",
+          "titles": [
+            "Ulysses' Revenge on Penelope's Suitors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-tree-that-is-a-bed",
+      "movement": 3,
+      "title": "The Tree That Is a Bed",
+      "kicker": "Od. 23–24",
+      "episode": "penelope-tested",
+      "chapterIndexes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "epigraph": {
+        "grc": "θάμνος ἔφυ τανύφυλλος ἐλαίης ἕρκεος ἐντός,\nἀκμηνὸς θαλέθων· πάχετος δʼ ἦν ἠΰτε κίων.\nτῷ δʼ ἐγὼ ἀμφιβαλὼν θάλαμον δέμον, ὄφρʼ ἐτέλεσσα,\nπυκνῇσιν λιθάδεσσι, καὶ εὖ καθύπερθεν ἔρεψα,\nκολλητὰς δʼ ἐπέθηκα θύρας, πυκινῶς ἀραρυίας.",
+        "en": "A bush of long-leafed olive was growing within the court, strong and vigorous, and girth it was like a pillar. Round about this I built my chamber, till I had finished it, with close-set stones, and I roofed it over well, and added to it jointed doors, close-fitting.",
+        "citation": "Hom. Od. 23.190–194"
+      },
+      "place": "ithaca",
+      "mood": "hearth",
+      "art": [
+        {
+          "culture": "penelope-tested",
+          "titles": [
+            "The Return of Odysseus",
+            "Penelope and the Suitors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-oar-and-the-sea",
+      "movement": 3,
+      "title": "The Oar and the Sea",
+      "kicker": "Od. 11.119–137 · Telegony",
+      "episode": "telegony",
+      "epigraph": {
+        "grc": "θάνατος δέ τοι ἐξ ἁλὸς αὐτῷ\nἀβληχρὸς μάλα τοῖος ἐλεύσεται, ὅς κέ σε πέφνῃ\nγήραι ὕπο λιπαρῷ ἀρημένον· ἀμφὶ δὲ λαοὶ\nὄλβιοι ἔσσονται.",
+        "en": "And death shall come to thee thyself far from the sea, a death so gentle, that shall lay thee low when thou art overcome with sleek old age, and thy people shall dwell in prosperity around thee.",
+        "citation": "Hom. Od. 11.134–137"
+      },
+      "mood": "drift",
+      "pinned": true
+    }
+  ],
+  "finale": {
+    "castHighlight": true,
+    "epigraph": {
+      "grc": "αὐτὰρ ὁ πηδαλίῳ ἰθύνετο τεχνηέντως\nἥμενος, οὐδέ οἱ ὕπνος ἐπὶ βλεφάροισιν ἔπιπτεν\nΠληιάδας τʼ ἐσορῶντι καὶ ὀψὲ δύοντα Βοώτην\nἌρκτον θʼ, ἣν καὶ ἄμαξαν ἐπίκλησιν καλέουσιν,\nἥ τʼ αὐτοῦ στρέφεται καί τʼ Ὠρίωνα δοκεύει,\nοἴη δʼ ἄμμορός ἐστι λοετρῶν Ὠκεανοῖο·\nτὴν γὰρ δή μιν ἄνωγε Καλυψώ, δῖα θεάων,\nποντοπορευέμεναι ἐπʼ ἀριστερὰ χειρὸς ἔχοντα.",
+      "en": "he sat and guided his raft skilfully with the steering-oar, nor did sleep fall upon his eyelids, as he watched the Pleiads, and late-setting Bootes, and the Bear, which men also call the Wain, which ever circles where it is and watches Orion, and alone has no part in the baths of Ocean. For this star Calypso, the beautiful goddess, had bidden him to keep on the left hand as he sailed over the sea.",
+      "citation": "Hom. Od. 5.270–277"
+    }
+  }
+}

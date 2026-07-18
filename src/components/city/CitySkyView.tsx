@@ -38,7 +38,6 @@ export function CitySkyView({
         relations={relations}
         sources={sources}
         layout="compact"
-        activeMainTab="areas"
         back={{ href: `/city/${city.id}`, label: `Back to the ${city.name} codex` }}
         cityContext={cityContext}
         cameraIntro

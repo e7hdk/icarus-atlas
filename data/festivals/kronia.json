@@ -1,0 +1,16 @@
+{
+  "id": "kronia",
+  "name": "Kronia",
+  "greekName": "Κρόνια",
+  "deities": ["cronus"],
+  "place": "athens",
+  "atticDate": { "month": "hekatombaion", "days": [12] },
+  "conventionalDates": ["07-12"],
+  "aition": "reign-of-cronus",
+  "summary": "The harvest holiday of Cronus, when masters and slaves feasted together in memory of the golden age before the reigns were counted.",
+  "testimonia": [
+    "Demosthenes 24.26 with scholia (the Kronia on 12 Hekatombaion)",
+    "Plutarch, Theseus 12.1 (the Kronia called the old harvest feast)",
+    "Deubner, Attische Feste (1932) 152–155"
+  ]
+}

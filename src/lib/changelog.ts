@@ -14,6 +14,23 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.3.0',
+    codename: 'The Daily Sky and the Voyage Home',
+    date: '2026-07-18',
+    lines: [
+      'The atlas learned to keep its own calendar: at every Athens-midnight a star of the day is dealt from a deterministic sky — five hundred and two souls in the cycle, no name repeated until all have burned — and the chosen star opens not a page but a Proem, a five-beat telling staged within the galaxy itself, with a Sphinx’s riddle for those who would earn the name.',
+      'Nineteen ancient festivals were pinned to a reconstructed Attic moon, Lenaia in her true lunar seat, and a Heortologion was raised at its own quiet door — the sacred days of each month waiting beneath the reckoned calendar, real time and mythic time bound at last.',
+      'The Legacy widened from paintings alone to the whole afterlife of myth: shelves for the screen, for music and the stage, for the games and speech of the living — nine hundred and eighty-seven artworks, a hundred and forty-three films, seven-and-seventy works of music and four hundred and thirty echoes in play across four hundred and fifty-seven figures — and every one of the hundred and seventy-six myths was given its own gallery of the centuries.',
+      'The Lands took on true relief — the mountains’ shadow baked from the raw elevation of the earth into the basemap, so Taygetus and Ida and Parnassus stand up from the map as they stand against the Aegean light.',
+      'And then the great door: NOSTOS, the Odyssey told as a voyage — three movements and twenty stations across a star-sea drifting in two depths, each part of the poem a new country under a new colour of sky, each station a landfall, and every epigraph the poem’s own words in Greek and in Murray’s English, drawn verbatim from the pinned corpus with the line that proves them.',
+      'Six of the poem’s most human moments hold the scroll itself still — the invocation and Calypso’s refusal, the House of the Dead and the Sirens’ song, the dog who waited and the gentle death from the sea — the world dimming behind a veil while the lines surface one by one, song-rings rippling where the singers wait, cold light rising where the dead drink.',
+      'Penelope’s thread hangs at the page’s left hand as true yarn: a waving strand that weaves itself forward as the reader sails and comes undone when they turn back, twenty knots for twenty stations, each knot a door, the whole roll of names kindling at a touch — and the thread never breaks, even in the dark.',
+      'The voyage found its voice: four moods of sea-music crossfade as the reading line crosses each station — open water, storm, hearth, and the Sirens’ own song — the storm breaking at Scylla, the fire crackling on Ithaca, while the atlas’s older score stands aside until the traveller returns.',
+      'Two long-waiting figures took the sky at last — Mentor, whose face Athena wears, and Argos the hound, first of a new kind, who knew his king in the twentieth year — while Ino was given her sea-name Leucothea; and along the stations were hung the centuries themselves, from the Eleusis amphora to Turner’s burning dawn.',
+      'And the moment was given its doors: the Wain rides the masthead at the day-star’s left hand, as Calypso instructed; this week’s sky tells the Odyssey day by day; the codex offers the voyage in gold; and the atlas casts a proper shadow abroad at last — a card of the star-sea for every hearth the link may reach.',
+    ],
+  },
+  {
     version: '0.2.2',
     codename: 'The Named Dwellings and the Incremental Forge',
     date: '2026-06-29',

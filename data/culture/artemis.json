@@ -22,5 +22,33 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Artemis_of_Ephesus_statue_Ephesus_Museum_2024.jpeg/960px-Artemis_of_Ephesus_statue_Ephesus_Museum_2024.jpeg",
       "description": "A marble cult statue of Artemis in her distinctive Ephesian form, the torso covered with rows of oval protuberances and the tight skirt paneled with rows of animals. The image embodies the Anatolian mother-goddess aspect of Artemis worshipped at her great temple in Ephesus. It is preserved in the Ephesus Archaeological Museum."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle keeps Artemis in the shadow of Iphigenia's sacrifice — the huntress whose withheld winds demand a daughter's blood before the fleet can sail.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Artemis' boons are crit and seek — the huntress as a clean shot from Olympus, cool-voiced and exact while Zagreus runs.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "She remains among the Olympian hunters in the sequel, still the goddess of the clean kill as Melinoë takes the field.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

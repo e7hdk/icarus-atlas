@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page E: Codex Marginalia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CONCEPT E — CODEX MARGINALIA ============
+     The page reads as one illuminated manuscript column.
+     Citations live as engraved sidenotes in the right margin,
+     aligned to their paragraph; the constellation of bonds is a
+     quiet horizontal strip under the hero, not a competing panel. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --pink: #ff4081; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf; --god: #60a5fa; --mortal: #e5e7eb; --creature: #f472b6;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether);
+    font-family: 'Cormorant Garamond', serif; background: var(--cosmos);
+    background-image:
+      radial-gradient(50% 26% at 50% 0%, rgba(45,212,191,.09), transparent 70%),
+      radial-gradient(40% 34% at 8% 88%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(30% 26% at 94% 62%, rgba(0,229,255,.06), transparent 70%);
+    background-attachment: fixed;
+  }
+  /* Starfield specks */
+  .dust, .dust::after {
+    content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      radial-gradient(1px 1px at 12% 22%, rgba(241,245,249,.5), transparent),
+      radial-gradient(1px 1px at 78% 12%, rgba(241,245,249,.35), transparent),
+      radial-gradient(1.5px 1.5px at 32% 74%, rgba(192,132,252,.4), transparent),
+      radial-gradient(1px 1px at 64% 48%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1px 1px at 90% 82%, rgba(0,229,255,.35), transparent),
+      radial-gradient(1.5px 1.5px at 6% 52%, rgba(241,245,249,.25), transparent);
+  }
+  .dust::after { transform: scale(-1); opacity: .7; }
+  .page { position: relative; z-index: 1; max-width: 1060px; margin: 0 auto; padding: 20px 24px 90px; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .pill { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(12px); transition: color .2s, border-color .2s; }
+  .pill:hover { color: var(--aether); border-color: rgba(255,255,255,.3); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  /* ---------- Hero as an illuminated frontispiece ---------- */
+  .hero { text-align: center; padding: 44px 0 0; }
+  .hero .over { font: 400 11px Cinzel, serif; letter-spacing: .5em; color: var(--faint); }
+  .hero h1 { font: 700 clamp(40px,7vw,64px) Cinzel, serif; letter-spacing: .22em; margin: 10px 0 4px; padding-left: .22em; text-shadow: 0 0 46px rgba(45,212,191,.5); }
+  .hero .sub { font-style: italic; font-size: 19px; color: var(--muted); }
+  .hero .sub em { font-style: normal; color: #99f6e4; }
+  /* double hairline ornament with a star at its heart */
+  .rule { display: flex; align-items: center; gap: 14px; max-width: 460px; margin: 22px auto 0; }
+  .rule .ln { flex: 1; height: 3px; border-top: 1px solid rgba(241,245,249,.22); border-bottom: 1px solid rgba(241,245,249,.1); }
+  .rule .st { width: 7px; height: 7px; border-radius: 50%; background: var(--hero); box-shadow: 0 0 10px 3px rgba(45,212,191,.65); }
+
+  /* ---------- Constellation strip (bonds, quiet) ---------- */
+  .strip { position: relative; max-width: 780px; margin: 40px auto 0; height: 118px; }
+  .strip .base { position: absolute; left: 0; right: 0; top: 44px; height: 1px; background: linear-gradient(90deg, transparent, rgba(241,245,249,.22) 12%, rgba(241,245,249,.22) 88%, transparent); }
+  .knot { position: absolute; top: 44px; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; cursor: pointer; }
+  .knot i { display: block; border-radius: 50%; background: var(--c); width: var(--s,10px); height: var(--s,10px); box-shadow: 0 0 8px 2px var(--c), 0 0 20px 6px color-mix(in srgb, var(--c) 35%, transparent); transition: box-shadow .25s; }
+  .knot:hover i { box-shadow: 0 0 12px 4px var(--c), 0 0 34px 12px color-mix(in srgb, var(--c) 55%, transparent); }
+  .knot b { position: absolute; top: calc(50% + 14px); font: 500 11px Cinzel, serif; letter-spacing: .12em; color: var(--muted); white-space: nowrap; opacity: 0; transition: opacity .2s; }
+  .knot:hover b { opacity: 1; color: var(--aether); }
+  .knot.center b { opacity: 1; color: #99f6e4; }
+  .knot.center { cursor: default; }
+  .knot.center i { animation: beat 3.6s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.14); } }
+  /* foes hang from dashed drops beneath the line */
+  .knot.foe { top: 92px; }
+  .knot.foe::before { content: ''; position: absolute; bottom: calc(50% + 6px); height: 34px; width: 0; border-left: 1px dashed rgba(244,114,182,.45); }
+  .glabel { position: absolute; top: 6px; transform: translateX(-50%); font: 400 10px Cinzel, serif; letter-spacing: .34em; color: var(--faint); }
+  .strip .hint { position: absolute; left: 50%; bottom: -26px; transform: translateX(-50%); font-style: italic; font-size: 14px; color: var(--faint); white-space: nowrap; }
+
+  /* ---------- Lens ---------- */
+  .lensbar { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 72px 0 0; }
+  .lensbar .told { font-style: italic; font-size: 17px; color: var(--faint); }
+  .lens { display: flex; gap: 4px; background: var(--glass); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 4px; backdrop-filter: blur(12px); }
+  .lens button { padding: 8px 18px; border-radius: 999px; border: 1px solid transparent; background: none; color: rgba(226,232,240,.55); font: 500 12.5px Cinzel, serif; letter-spacing: .08em; cursor: pointer; transition: all .2s; }
+  .lens button:hover { color: var(--aether); }
+  .lens button.on { background: rgba(192,132,252,.22); border-color: rgba(192,132,252,.5); color: #e9d5ff; }
+
+  /* ---------- Manuscript body with sidenotes ---------- */
+  .folio { max-width: 950px; margin: 42px auto 0; }
+  .folio .sect { text-align: center; font: 500 12px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin-bottom: 34px; }
+  .pgrid { display: grid; grid-template-columns: minmax(0,1fr) 216px; column-gap: 46px; row-gap: 34px; }
+  .para { position: relative; font-size: 19.5px; line-height: 1.66; color: rgba(241,245,249,.92); transition: opacity .35s; }
+  .para .cap { float: left; font: 600 74px/0.78 Cinzel, serif; color: var(--gold); padding: 10px 12px 2px 0; text-shadow: 0 0 26px rgba(252,211,77,.45); }
+  .note { position: relative; padding-left: 18px; font-size: 14.5px; line-height: 1.5; color: var(--faint); border-left: 1px solid rgba(241,245,249,.14); align-self: start; transition: color .3s, border-color .3s, opacity .35s; }
+  .note .num { font: 600 12px Cinzel, serif; letter-spacing: .18em; color: var(--muted); display: block; margin-bottom: 3px; transition: color .3s; }
+  .note .who { font-variant: small-caps; letter-spacing: .06em; font-size: 15px; }
+  .note .cite { display: block; font-style: italic; margin-top: 2px; }
+  .pair.current .note { border-color: rgba(45,212,191,.6); color: var(--muted); }
+  .pair.current .note .num { color: #99f6e4; }
+  .pair { display: contents; }
+  .pair.hidden .para, .pair.hidden .note { opacity: .13; pointer-events: none; }
+  .asterism { grid-column: 1 / -1; text-align: center; color: rgba(241,245,249,.3); font-size: 18px; letter-spacing: .6em; padding-left: .6em; }
+  .empty { grid-column: 1 / -1; display: none; text-align: center; font-style: italic; font-size: 18px; color: var(--faint); padding: 20px 0 8px; }
+  .folio.void .empty { display: block; }
+  .folio.void .asterism { opacity: .25; }
+  /* dispute mark */
+  .dqm { position: relative; color: var(--soft); cursor: default; }
+  .dqm:hover::after { content: 'Told differently in other tellings — change the lens above'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; font-style: normal; color: var(--aether); z-index: 9; }
+  .cross { color: #99f6e4; cursor: pointer; border-bottom: 1px dotted rgba(45,212,191,.5); }
+
+  /* ---------- Registers: appears in / dwelt at ---------- */
+  .registers { max-width: 950px; margin: 84px auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .reg .head { display: flex; align-items: center; gap: 14px; font: 500 11.5px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin-bottom: 18px; }
+  .reg .head .line { flex: 1; height: 1px; background: rgba(255,255,255,.1); }
+  .reg ul { list-style: none; }
+  .reg li { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px dotted rgba(241,245,249,.1); font-size: 17.5px; cursor: pointer; transition: color .2s; }
+  .reg li:hover { color: #fde68a; }
+  .reg li .no { font: 600 11px Cinzel, serif; color: var(--faint); letter-spacing: .1em; min-width: 22px; }
+  .reg li em { margin-left: auto; font-size: 14.5px; color: var(--faint); }
+  footer { text-align: center; margin-top: 90px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 900px) {
+    .pgrid { grid-template-columns: 1fr; }
+    .note { border-left: none; padding: 0 0 0 0; margin-top: -22px; font-size: 13.5px; }
+    .note .num { display: inline; margin-right: 8px; }
+    .note .cite { display: inline; margin-left: 6px; }
+    .registers { grid-template-columns: 1fr; gap: 40px; }
+    .strip { transform: scale(.86); margin-top: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <header class="hero">
+    <div class="over">THE CODEX OF</div>
+    <h1>PERSEUS</h1>
+    <div class="sub">Perseus (Περσεύς) · <em>Hero</em> · the Gorgon-slayer · founder of Mycenae</div>
+    <div class="rule"><span class="ln"></span><span class="st"></span><span class="ln"></span></div>
+  </header>
+
+  <!-- Bonds as a quiet constellation strip: kin left, consorts & line right, foes hang below -->
+  <div class="strip" aria-label="Bonds of Perseus">
+    <span class="glabel" style="left:14%">KIN</span>
+    <span class="glabel" style="left:50%">&nbsp;</span>
+    <span class="glabel" style="left:66%">CONSORT</span>
+    <span class="glabel" style="left:86%">LINE</span>
+    <div class="base"></div>
+    <div class="knot" style="left:9%; --c:#fcd34d; --s:13px"><i></i><b>Zeus · father</b></div>
+    <div class="knot" style="left:19%; --c:#e5e7eb;"><i></i><b>Danaë · mother</b></div>
+    <div class="knot" style="left:31%; --c:#fcd34d; --s:9px"><i></i><b>Athena · guide</b></div>
+    <div class="knot" style="left:38%; --c:#60a5fa; --s:9px"><i></i><b>Hermes · guide</b></div>
+    <div class="knot center" style="left:50%; --c:#2dd4bf; --s:17px"><i></i><b>PERSEUS</b></div>
+    <div class="knot" style="left:66%; --c:#e5e7eb; --s:12px"><i></i><b>Andromeda · wife</b></div>
+    <div class="knot" style="left:80%; --c:#e5e7eb; --s:8px"><i></i><b>Perses · son</b></div>
+    <div class="knot" style="left:86%; --c:#e5e7eb; --s:8px"><i></i><b>Electryon · son</b></div>
+    <div class="knot" style="left:92%; --c:#e5e7eb; --s:8px"><i></i><b>Gorgophone · daughter</b></div>
+    <div class="knot foe" style="left:42%; --c:#f472b6; --s:11px"><i></i><b>Medusa · slain</b></div>
+    <div class="knot foe" style="left:58%; --c:#e5e7eb; --s:9px"><i></i><b>Polydectes · petrified</b></div>
+    <div class="hint">the bonds — hover a star to name it</div>
+  </div>
+
+  <div class="lensbar">
+    <span class="told">told after</span>
+    <div class="lens" id="lens">
+      <button class="on" data-l="consensus">All tellers</button>
+      <button data-l="apollodorus">Apollodorus</button>
+      <button data-l="ovid">Ovid</button>
+      <button data-l="hyginus">Hyginus</button>
+      <button data-l="hesiod">Hesiod</button>
+    </div>
+  </div>
+
+  <!-- The story: manuscript column + engraved sidenotes -->
+  <section class="folio" id="folio">
+    <div class="sect">THE STORY</div>
+    <div class="pgrid">
+
+      <div class="pair" data-src="apollodorus hyginus">
+        <p class="para"><span class="cap">B</span>orn in a subterranean bronze chamber after Zeus visited his mother Danaë in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.</p>
+        <aside class="note"><span class="num">I</span><span class="who">Apollodorus · Hyginus</span><span class="cite">Bibliotheca 2.4.1 · Fabulae 63</span></aside>
+      </div>
+
+      <div class="pair" data-src="apollodorus ovid">
+        <p class="para">To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon <span class="cross">Medusa</span>. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades<span class="dqm"> ⚖</span>. He beheaded Medusa and used her petrifying gaze to turn his enemies — the titan Atlas and the sea monster Cetus among them — to stone.</p>
+        <aside class="note"><span class="num">II</span><span class="who">Apollodorus · Ovid</span><span class="cite">Bibliotheca 2.4.2–3 · Metamorphoses 4.740</span></aside>
+      </div>
+
+      <div class="pair" data-src="apollodorus hyginus pausanias">
+        <p class="para">After rescuing and marrying the Aethiopian princess <span class="cross">Andromeda</span>, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.</p>
+        <aside class="note"><span class="num">III</span><span class="who">Apollodorus · Hyginus · Pausanias</span><span class="cite">Bibliotheca 2.4.4 · Fabulae 273 · Paus. 2.16.3</span></aside>
+      </div>
+
+      <p class="empty">Nothing of this figure survives under this teller — choose another lens above.</p>
+      <div class="asterism">⁂</div>
+    </div>
+  </section>
+
+  <!-- Registers -->
+  <div class="registers">
+    <div class="reg">
+      <div class="head">APPEARS IN THE MYTHS<span class="line"></span></div>
+      <ul>
+        <li><span class="no">01</span>Birth at Seriphos<em>the chest on the waves</em></li>
+        <li><span class="no">02</span>The Gorgon Medusa<em>the beheading</em></li>
+        <li><span class="no">03</span>Andromeda Rescued<em>the sea monster</em></li>
+        <li><span class="no">04</span>Perseus at the Feast<em>the petrified court</em></li>
+        <li><span class="no">05</span>Return and Mycenae<em>the stray discus</em></li>
+      </ul>
+    </div>
+    <div class="reg">
+      <div class="head">DWELT AT<span class="line"></span></div>
+      <ul>
+        <li><span class="no">·</span>Seriphos<em>raised ashore</em></li>
+        <li><span class="no">·</span>Argos<em>the throne refused</em></li>
+        <li><span class="no">·</span>Mycenae<em>founder</em></li>
+        <li><span class="no">·</span>Tiryns<em>exchanged kingdom</em></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>Concept E — Codex Marginalia · citations live in the margin, aligned to their paragraph · the reading column stays unbroken</footer>
+</div>
+
+<script>
+  // Lens: a pair survives if its data-src contains the chosen teller.
+  const lens = document.getElementById('lens');
+  const folio = document.getElementById('folio');
+  lens.addEventListener('click', (e) => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    lens.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+    const l = btn.dataset.l;
+    let visible = 0;
+    document.querySelectorAll('.pair').forEach(p => {
+      const keep = l === 'consensus' || p.dataset.src.split(' ').includes(l);
+      p.classList.toggle('hidden', !keep);
+      if (keep) visible++;
+    });
+    folio.classList.toggle('void', visible === 0);
+  });
+  // Scroll: the sidenote of the paragraph in view is gently lit.
+  const pairs = [...document.querySelectorAll('.pair')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        pairs.forEach(p => p.classList.remove('current'));
+        en.target.closest('.pair')?.classList.add('current');
+      }
+    });
+  }, { rootMargin: '-30% 0px -55% 0px' });
+  document.querySelectorAll('.para').forEach(p => io.observe(p));
+</script>
+</body>
+</html>

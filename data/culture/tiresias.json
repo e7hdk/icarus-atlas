@@ -1,0 +1,32 @@
+{
+  "id": "tiresias",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Oedipus the King",
+      "year": "1968",
+      "medium": "film",
+      "director": "Philip Saville",
+      "description": "Orson Welles' Tiresias is the blind seer who will not speak until forced — the prophet who already knows the king's crime.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_the_King_(film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky keeps Tiresias in the underworld Nekyia — the Theban seer who tells Odysseus how to get home, still blind, still certain.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Tiresias delivers the oracle in Latin granite — the blind voice that turns the opera-oratorio toward recognition.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex_(Stravinsky)"
+    }
+  ]
+}

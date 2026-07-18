@@ -22,5 +22,43 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Frederic_Leighton_-_The_Return_of_Persephone_%281891%29.jpg/960px-Frederic_Leighton_-_The_Return_of_Persephone_%281891%29.jpg",
       "description": "Late Victorian oil painting by Frederic Leighton, now in Leeds Art Gallery. Hermes guides Persephone up from the darkness of the underworld toward the outstretched arms of her mother Demeter, picturing the annual return that brings spring back to the earth."
     }
+  ],
+  "films": [
+    {
+      "title": "The Goddess of Spring",
+      "year": "1934",
+      "medium": "animation",
+      "director": "Wilfred Jackson",
+      "description": "Disney's Silly Symphony retells Persephone's abduction as a musical underworld: spring stolen below, winter above, until the seasons bargain is struck.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Goddess_of_Spring"
+    }
+  ],
+  "music": [
+    {
+      "title": "Hadestown",
+      "year": "2019",
+      "kind": "stage",
+      "composer": "Anaïs Mitchell",
+      "description": "Mitchell's musical makes Persephone the seasonal wife who leaves Hades' industrial underworld each spring — the goddess as the show's weather and its conscience.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's Persephone is the missing queen whose return remakes the House — mother to Zagreus, and the secret the underworld has been keeping.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "She remains central in the sequel as Melinoë's mother — the queen whose absence and return still shape the war on Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

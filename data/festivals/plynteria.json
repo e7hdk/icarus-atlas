@@ -1,0 +1,15 @@
+{
+  "id": "plynteria",
+  "name": "Plynteria",
+  "greekName": "Πλυντήρια",
+  "deities": ["athena"],
+  "place": "athens",
+  "atticDate": { "month": "thargelion", "days": [25], "approximate": true },
+  "conventionalDates": ["05-25"],
+  "summary": "The washing of Athena's ancient image: the statue veiled and carried to the sea, the temple roped off — an unlucky day, as Alcibiades learned when he sailed home into it.",
+  "testimonia": [
+    "Xenophon, Hellenica 1.4.12 (Alcibiades returns on the Plynteria, the image veiled)",
+    "Plutarch, Alcibiades 34.1 (the ill-omened day)",
+    "Mikalson (1975) 160–164 (literary 25 Thargelion against epigraphic 29)"
+  ]
+}

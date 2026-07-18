@@ -1,0 +1,39 @@
+{
+  "id": "argos-dog",
+  "name": "Argos",
+  "greekName": "Argos (Ἄργος)",
+  "type": "creature",
+  "kinds": ["hound"],
+  "cluster": "mortal-arm",
+  "domains": [
+    "the loyal hound",
+    "recognition through disguise",
+    "twenty years' waiting"
+  ],
+  "summary": [
+    {
+      "text": "The hound of Odysseus, bred by the king himself before he sailed for Troy. Neglected on the dung-heap through twenty years of his master's absence, he alone knew Odysseus at once through the beggar's disguise — wagged his tail, dropped both ears, and died.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.290–327"
+    }
+  ],
+  "story": [
+    {
+      "text": "Odysseus bred him but had no joy of him, for ere that he went to sacred Ilios. In days past the young men coursed wild goats and deer and hares with him; but with the master gone he lay neglected, full of vermin, in the deep dung of mules and cattle heaped before the doors.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.290–300"
+    },
+    {
+      "text": "When the disguised king came at last to his own gate, Argos marked him standing near and knew him: he wagged his tail and dropped both his ears, but nearer to his master he no longer had strength to move. Odysseus looked aside and wiped away a tear, hiding it easily from Eumaeus; and the fate of black death seized Argos straightway, when he had seen Odysseus again in the twentieth year.",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.301–327"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ithaca",
+      "sources": ["homer"],
+      "citation": "Odyssey 17.290–327"
+    }
+  ]
+}

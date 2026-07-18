@@ -15,5 +15,49 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Giovanni_Lorenzo_Bernini-Neptune_and_Triton-Victoria_and_Albert_Museum.jpg/960px-Giovanni_Lorenzo_Bernini-Neptune_and_Triton-Victoria_and_Albert_Museum.jpg",
       "description": "Early marble group by Gian Lorenzo Bernini, carved to crown a garden fountain in Rome and now in the Victoria and Albert Museum, London. Neptune thrusts his trident downward to command the waters while the young Triton crouches between his legs, blowing a conch shell."
     }
+  ],
+  "films": [
+    {
+      "title": "Clash of the Titans",
+      "year": "1981",
+      "medium": "film",
+      "director": "Desmond Davis",
+      "description": "Harryhausen's sea god looses the Kraken at Zeus' command — Poseidon as the hand that opens the deep, even when the thunderbolt gives the order.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Poseidon as Odysseus' implacable enemy: the blinded Cyclops' father who will not forgive, and will not let the sea go still.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "Immortals",
+      "year": "2011",
+      "medium": "film",
+      "director": "Tarsem Singh",
+      "description": "Tarsem's pantheon brings Poseidon into the melee against the Titans — trident and seafoam in a fight choreographed like a Renaissance fresco come loose.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Immortals_(2011_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Poseidon's boons in Supergiant's roguelike are all knockback and surf — the earth-shaker as a splash of force that clears a room.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Percy Jackson & the Olympians",
+      "year": "2005",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "Riordan's demigod series makes Poseidon the absent father of its hero: the sea god's claim on Percy is the secret that opens Camp Half-Blood and a generation's gateway into Greek myth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians"
+    }
   ]
 }

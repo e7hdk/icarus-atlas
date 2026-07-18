@@ -29,5 +29,49 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg/960px-Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg",
       "description": "Oil painting by Antonio da Correggio from his series on the loves of Jupiter, now in the Kunsthistorisches Museum, Vienna. The god, dissolved into a dark cloud from which a face and hand barely emerge, embraces the nymph Io — one of the most sensuous inventions of Renaissance painting."
     }
+  ],
+  "films": [
+    {
+      "title": "Clash of the Titans",
+      "year": "1981",
+      "medium": "film",
+      "director": "Desmond Davis",
+      "description": "Ray Harryhausen's stop-motion Olympus puts Zeus at the board of the gods, releasing the Kraken with a chess-piece gesture — the modern template for a cinematic king of the gods.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
+    },
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney's gospel Olympus casts Zeus as a booming, affectionate father whose infant son is stolen from the cradle — for a generation, the first face of the king of the gods.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    },
+    {
+      "title": "Jason and the Argonauts",
+      "year": "1963",
+      "medium": "film",
+      "director": "Don Chaffey",
+      "description": "Harryhausen's adventure opens on Olympus, where Zeus and Hera wager on Jason's voyage; the gods lean over the mortal board like players at a game.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "God of War III",
+      "year": "2010",
+      "kind": "videogame",
+      "creator": "Santa Monica Studio",
+      "description": "The climax of the Greek God of War trilogy sends Kratos up Mount Olympus to kill Zeus himself — the father-son feud rewritten as a siege of the gods.",
+      "externalUrl": "https://en.wikipedia.org/wiki/God_of_War_III"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's underworld roguelike keeps Zeus on the surface as a booming Olympian relative whose boons crackle into Zagreus' runs — the king of the gods as a voice in the ear.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
   ]
 }

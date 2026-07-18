@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — City Page A: Dynasty Spine</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CITY CONCEPT A — DYNASTY SPINE ============
+     The city codex in the family language: the marquee card carries the
+     city's identity, a miniature of her sky (the seal), the live reign
+     index and the registers; the royal succession marches down the
+     igniting spine — a dynasty read like a tale. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf; --mortal: #e5e7eb; --olymp: #fcd34d; --god: #60a5fa;
+  }
+  html { scroll-behavior: smooth; }
+  body { min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos);
+    background-image:
+      radial-gradient(48% 28% at 44% 0%, rgba(252,211,77,.07), transparent 70%),
+      radial-gradient(42% 36% at 2% 80%, rgba(124,77,255,.14), transparent 70%),
+      radial-gradient(30% 26% at 98% 40%, rgba(0,229,255,.06), transparent 70%);
+    background-attachment: fixed; }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 18% 14%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 68% 8%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 34% 58%, rgba(252,211,77,.3), transparent),
+      radial-gradient(1px 1px at 88% 78%, rgba(192,132,252,.3), transparent); }
+
+  /* ---- the shipped AtlasBar + crumb, for context ---- */
+  .atlasbar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; height: 56px; padding: 0 22px; background: rgba(10,5,30,.72); backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .brandmark { display: inline-flex; align-items: center; gap: 9px; }
+  .brandmark .st { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px 3px rgba(252,211,77,.65); }
+  .brandmark b { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.8); }
+  .brandmark b em { font-style: normal; color: var(--gold); }
+  .doors { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 4px; }
+  .doors a { padding: 6px 14px; border-radius: 999px; border: 1px solid transparent; font: 500 11px Cinzel, serif; letter-spacing: .16em; color: var(--muted); text-decoration: none; }
+  .doors a.on { border-color: rgba(192,132,252,.5); background: rgba(124,77,255,.2); color: #e9d5ff; }
+  .actions { margin-left: auto; display: flex; gap: 8px; font: 500 10px Cinzel, serif; letter-spacing: .12em; color: var(--muted); }
+  .actions span { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 8px 12px; }
+  .crumb { display: flex; align-items: center; gap: 12px; font: 500 10px Cinzel, serif; letter-spacing: .22em; color: var(--faint); text-transform: uppercase; }
+  .crumb .back { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 999px; color: var(--muted); font-size: 15px; }
+  .crumb a { color: var(--muted); text-decoration: none; }
+  .crumb .sep { color: rgba(241,245,249,.25); }
+  .crumb .here { color: var(--gold); }
+
+  .page { position: relative; max-width: 1120px; margin: 0 auto; padding: 76px 24px 100px; }
+  .tabs { display: flex; justify-content: center; margin-top: 16px; }
+  .tabs .grp { display: flex; gap: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 4px; }
+  .tabs a { padding: 8px 18px; border-radius: 999px; border: 1px solid transparent; font: 500 11px Cinzel, serif; letter-spacing: .1em; color: var(--muted); text-decoration: none; }
+  .tabs a.on { border-color: rgba(192,132,252,.5); background: rgba(124,77,255,.2); color: #e9d5ff; }
+
+  .stagegrid { display: grid; grid-template-columns: 322px minmax(0,1fr); gap: 58px; align-items: start; margin-top: 30px; }
+
+  /* ---- marquee ---- */
+  #marquee { position: sticky; top: 70px; max-height: calc(100vh - 92px); overflow-y: auto; border: 1px solid rgba(252,211,77,.32); background: rgba(20,12,48,.42); backdrop-filter: blur(18px); padding: 30px 28px 26px; box-shadow: 0 22px 60px rgba(5,2,15,.5); scrollbar-width: thin; }
+  #marquee::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgba(252,211,77,.15); pointer-events: none; }
+  .presents { text-align: center; font: 500 9.5px Cinzel, serif; letter-spacing: .44em; color: var(--faint); }
+  .presents b { color: rgba(252,211,77,.55); font-weight: 500; }
+  #marquee h1 { text-align: center; font: 700 30px Cinzel, serif; letter-spacing: .18em; padding-left: .18em; margin-top: 12px; text-shadow: 0 0 16px rgba(252,211,77,.6), 0 0 46px rgba(252,211,77,.28); }
+  #marquee .greek { text-align: center; font-style: italic; font-size: 16px; color: var(--muted); margin-top: 5px; }
+  .badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
+  .badge { border: 1px solid rgba(252,211,77,.45); background: rgba(252,211,77,.1); color: #fde68a; border-radius: 999px; padding: 3px 11px; font: 600 10px Cinzel, serif; letter-spacing: .16em; }
+  .badge.ghost { border-color: var(--glass-border); background: var(--glass); color: var(--muted); font-weight: 500; }
+
+  /* the seal: her sky in miniature */
+  #seal { position: relative; height: 210px; margin-top: 14px; }
+  #seal .ring { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(255,255,255,.09); }
+  #seal .core { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle at 38% 34%, #fef3c7, var(--gold) 55%, #b45309); box-shadow: 0 0 14px 5px rgba(252,211,77,.7), 0 0 46px 18px rgba(252,211,77,.25); animation: beat 4s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.1); } }
+  #seal .rw { position: absolute; left: 50%; top: 50%; width: 0; height: 0; animation: spin linear infinite; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  #seal:hover .rw { animation-play-state: paused; }
+  #seal .b { position: absolute; transform: translate(-50%,-50%); border-radius: 50%; background: var(--c); width: var(--s,5px); height: var(--s,5px); box-shadow: 0 0 5px 1.5px var(--c), 0 0 12px 4px color-mix(in srgb, var(--c) 30%, transparent); }
+  .sealhint { text-align: center; font-style: italic; font-size: 12.5px; color: var(--faint); margin-top: 4px; }
+  .sealhint b { font-style: normal; font-weight: 500; color: #fde68a; }
+
+  .mrule { display: flex; align-items: center; gap: 10px; margin: 18px 0 0; }
+  .mrule .ln { flex: 1; height: 1px; background: rgba(252,211,77,.28); }
+  .mrule svg { display: block; color: rgba(252,211,77,.55); }
+  .mh { font: 500 10px Cinzel, serif; letter-spacing: .32em; color: var(--faint); margin: 18px 0 8px; }
+
+  .reignlist a { display: flex; align-items: baseline; gap: 9px; padding: 4.5px 0; text-decoration: none; color: var(--muted); font-size: 15px; transition: color .25s; }
+  .reignlist a b { font: 600 9.5px Cinzel, serif; letter-spacing: .1em; color: var(--faint); min-width: 26px; }
+  .reignlist a .dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(241,245,249,.18); align-self: center; flex: none; transition: all .3s; }
+  .reignlist a:hover { color: var(--aether); }
+  .reignlist a.on { color: #fde68a; }
+  .reignlist a.on b { color: #fde68a; }
+  .reignlist a.on .dot { background: var(--gold); box-shadow: 0 0 8px 2px rgba(252,211,77,.6); }
+  .reignlist .dq { color: var(--soft); font-size: 12px; }
+  .reg-line { font-style: italic; font-size: 14.5px; color: var(--muted); line-height: 1.8; }
+  .reg-line b { font-style: normal; font-weight: 500; color: rgba(252,211,77,.85); cursor: pointer; }
+  .reg-line b:hover { text-decoration: underline; text-underline-offset: 3px; }
+  #marquee .fin { text-align: center; color: rgba(241,245,249,.35); font-size: 15px; letter-spacing: .5em; padding-left: .5em; margin-top: 16px; }
+
+  /* ---- stage: the succession spine ---- */
+  .stage { max-width: 660px; }
+  .sum { font-style: italic; font-size: 19.5px; line-height: 1.62; color: var(--muted); border-left: 2px solid rgba(252,211,77,.55); padding-left: 22px; }
+  .voyage { position: relative; margin-top: 54px; padding-left: 88px; }
+  #rail { position: absolute; left: 31px; top: 8px; bottom: 8px; width: 2px; background: rgba(241,245,249,.1); border-radius: 2px; }
+  #fill { position: absolute; left: 0; top: 0; width: 100%; height: 0; background: linear-gradient(180deg, var(--gold), var(--soft)); box-shadow: 0 0 12px 1px rgba(252,211,77,.5); border-radius: 2px; }
+  .reign { position: relative; padding-bottom: 46px; }
+  .reign:last-of-type { padding-bottom: 24px; }
+  .node { position: absolute; left: -88px; top: 0; width: 62px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .node .star { width: 14px; height: 14px; border-radius: 50%; background: rgba(241,245,249,.22); transition: background .5s, box-shadow .5s; }
+  .node .no { font: 600 10px Cinzel, serif; letter-spacing: .14em; color: var(--faint); transition: color .5s; }
+  .reign.lit .node .star { background: var(--gold); box-shadow: 0 0 12px 4px rgba(252,211,77,.6), 0 0 32px 11px rgba(252,211,77,.2); }
+  .reign.lit .node .no { color: #fde68a; }
+  .reign h3 { font: 600 20px Cinzel, serif; letter-spacing: .08em; }
+  .reign h3 a { color: #7dd3c8; text-decoration: none; text-shadow: 0 0 8px rgba(45,212,191,.35); }
+  .reign h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .reign h3 .plain { color: var(--aether); }
+  .reign p { margin-top: 6px; font-size: 17.5px; line-height: 1.6; color: rgba(241,245,249,.86); }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 12.5px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(252,211,77,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; max-width: 70vw; white-space: normal; width: max-content; }
+  .dqm { position: relative; color: var(--soft); cursor: default; }
+  .dqm:hover::after { content: 'The tellers disagree about this reign.'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .term { position: relative; }
+  .term .node { top: -4px; }
+  .term .node .star { width: 20px; height: 20px; background: var(--gold); box-shadow: 0 0 16px 5px rgba(252,211,77,.6), 0 0 48px 18px rgba(252,211,77,.2); }
+  .term .fin { color: rgba(241,245,249,.4); font-size: 17px; letter-spacing: .55em; padding-left: .55em; }
+  .hint { margin-top: 42px; font-style: italic; font-size: 13.5px; color: var(--faint); text-align: center; }
+  footer { text-align: center; margin-top: 80px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 880px) {
+    .stagegrid { grid-template-columns: 1fr; gap: 26px; }
+    #marquee { position: static; max-height: none; }
+    .voyage { padding-left: 56px; }
+    #rail { left: 19px; }
+    .node { left: -56px; width: 38px; }
+    .doors { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+
+<div class="atlasbar">
+  <span class="brandmark"><span class="st"></span><b>ICARUS <em>ATLAS</em></b></span>
+  <nav class="doors"><a href="#">GALAXY</a><a class="on" href="#">LANDS</a><a href="#">MYTHS</a></nav>
+  <div class="actions"><span>SEARCH ⌘K</span><span>⚙</span></div>
+</div>
+
+<div class="page">
+  <div class="crumb">
+    <span class="back">←</span>
+    <a href="#">LANDS</a><span class="sep">/</span><span class="here">THEBES</span>
+  </div>
+
+  <div class="tabs"><div class="grp"><a class="on" href="#">LINEAGE</a><a href="#">THE SKY · 101</a></div></div>
+
+  <div class="stagegrid">
+    <!-- the marquee: the city in hand -->
+    <aside id="marquee">
+      <div class="presents"><b>ICARUS ATLAS</b> · THE CITY OF</div>
+      <h1>THEBES</h1>
+      <div class="greek">Θῆβαι · seven-gated</div>
+      <div class="badges"><span class="badge">BOEOTIA</span><span class="badge ghost">PLEIADES 541138</span></div>
+
+      <!-- the seal: her sky in miniature -->
+      <div id="seal">
+        <div class="ring" style="width:70px;height:70px;border-color:rgba(252,211,77,.2)"></div>
+        <div class="ring" style="width:126px;height:126px"></div>
+        <div class="ring" style="width:182px;height:182px;border-style:dashed;border-color:rgba(192,132,252,.18)"></div>
+        <div class="core"></div>
+        <div id="orbits"></div>
+      </div>
+      <div class="sealhint">her sky in miniature — <b>101 stars</b> dwell here</div>
+
+      <div class="mrule"><span class="ln"></span>
+        <svg width="64" height="12" viewBox="0 0 64 12" fill="none"><path d="M1 11V1h10v7H8V4H5v7h18V1h10v7h-3V4h-3v7h18V1h10v7h-3V4h-3v7h11" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span class="ln"></span></div>
+
+      <div class="mh">THE REIGNS</div>
+      <nav class="reignlist" id="reignlist"></nav>
+
+      <div class="mh">MYTHS SET HERE</div>
+      <p class="reg-line"><b>Cadmus and Thebes</b> · <b>Oedipus at Thebes</b> · <b>Seven Against Thebes</b> · <b>Antigone at Thebes</b> · <b>The Epigoni</b> · <b>Pentheus and Dionysus</b></p>
+
+      <div class="mh">THE GATES</div>
+      <p class="reg-line"><b>On the map ↗</b> · <b>Enter the sky ↗</b> · <b>Boeotia region ↗</b></p>
+
+      <div class="fin">⁂</div>
+    </aside>
+
+    <!-- the stage: the succession on the spine -->
+    <div class="stage">
+      <p class="sum">Seven-gated Thebes — Cadmus' citadel, birthplace of Dionysus and Heracles, stage of Oedipus and of the Seven. Her kings are counted below as the tellers count them, disagreements and all.</p>
+      <div class="voyage" id="voyage">
+        <div id="rail"><div id="fill"></div></div>
+        <div id="reigns"></div>
+        <div class="reign term">
+          <div class="node"><span class="star"></span></div>
+          <p class="fin">⁂</p>
+        </div>
+      </div>
+      <p class="hint">the spine ignites as you read · the card's reign index follows your place · starred kings link to their codices</p>
+    </div>
+  </div>
+
+  <footer>City concept A — Dynasty Spine · the succession read like a tale, in the codex marquee language</footer>
+</div>
+
+<script>
+  // Real Thebes reigns (data/lineages/thebes.json), notes abridged.
+  const REIGNS = [
+    { n: 'Cadmus', star: true, dq: true, note: "Founder of the Cadmeia. Homer instead credits Amphion and Zethus with first establishing and walling seven-gated Thebes.", c: 'Apollod. 3.4.1–2 · Hyg. Fab. 76 · Paus. 9.5.1–3' },
+    { n: 'Pentheus', star: true, dq: true, note: 'Son of Echion and Agave, torn apart on Cithaeron — in Apollodorus he succeeds Cadmus directly.', c: 'Apollod. 3.5.2 · Hyg. Fab. 76 · Ov. Met. 3.511–733' },
+    { n: 'Polydorus', star: true, dq: true, note: "Son of Cadmus and Harmonia; in Hyginus' king list he follows Cadmus directly, before Pentheus.", c: 'Apollod. 3.5.5 · Hyg. Fab. 76 · Paus. 9.5.3' },
+    { n: 'Labdacus', star: true, dq: false, note: 'Son of Polydorus; perished like-minded with Pentheus, leaving the year-old Laius.', c: 'Apollod. 3.5.5 · Hyg. Fab. 76' },
+    { n: 'Lycus', star: true, dq: false, note: 'Brother of Nycteus — guardian of the child Laius, or usurper of the throne, by the telling.', c: 'Apollod. 3.5.5 · Paus. 9.5.4–5' },
+    { n: 'Amphion & Zethus', star: true, dq: true, note: 'The twin sons of Antiope overthrew Lycus and walled the city — for Homer they are the founders themselves.', c: 'Hom. Od. 11.260–265 · Apollod. 3.5.5' },
+    { n: 'Laius', star: true, dq: false, note: 'Restored by the Thebans after the houses of Amphion and Zethus perished.', c: 'Apollod. 3.5.7 · Paus. 9.5.6' },
+    { n: 'Oedipus', star: true, dq: false, note: "Solved the Sphinx's riddle and took the kingdom — and, unknowing, his father's widow.", c: 'Hom. Od. 11.271–280 · Apollod. 3.5.8' },
+    { n: 'Eteocles & Polynices', star: true, dq: false, note: 'The brothers agreed to alternate the throne; Eteocles refused to yield, and the Seven marched.', c: 'Apollod. 3.6.1 · Hyg. Fab. 67' },
+    { n: 'Creon', star: true, dq: true, note: 'Succeeded after the brothers fell — king in his own right, or mere regent for Laodamas, by the teller.', c: 'Apollod. 3.7.1 · Paus. 9.5.13' },
+    { n: 'Laodamas', star: true, dq: false, note: 'Son of Eteocles, faced the Epigoni — killed by Alcmaeon, or escaped to Illyria.', c: 'Apollod. 3.7.3 · Paus. 9.5.13' },
+    { n: 'Thersander', star: true, dq: false, note: 'Son of Polynices, set over Thebes by the victorious Argives; fell to Telephus in Mysia.', c: 'Paus. 9.5.14' },
+    { n: 'Peneleos', star: true, dq: false, note: 'Not king in his own right — led the Boeotian contingent to Troy while Tisamenus was under age.', c: 'Paus. 9.5.15 · Hom. Il. 2.494' },
+    { n: 'Tisamenus', star: false, dq: false, note: "Son of Thersander and Demonassa daughter of Amphiaraus; chosen king after Peneleos' death.", c: 'Paus. 9.5.15' },
+    { n: 'Autesion', star: false, dq: false, note: 'The Erinyes of Laius and Oedipus drove him out at the oracle’s bidding, to the Dorians.', c: 'Paus. 9.5.15' },
+    { n: 'Damasichthon', star: false, dq: false, note: 'Son of Opheltes son of Peneleos; chosen when Autesion departed.', c: 'Paus. 9.5.16' },
+    { n: 'Ptolemy', star: false, dq: false, note: 'Son of Damasichthon; father of Xanthus in the closing Peneleid roll.', c: 'Paus. 9.5.16' },
+    { n: 'Xanthus', star: false, dq: false, note: 'Last sole king — killed in a duel with Andropompus by craft, not fair fight; Thebes turned to magistrates.', c: 'Paus. 9.5.16' },
+  ];
+  const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX'];
+
+  // stage spine
+  const stage = document.getElementById('reigns');
+  stage.innerHTML = REIGNS.map((r, i) => `
+    <section class="reign" id="r${i}">
+      <div class="node"><span class="star"></span><span class="no">${ROMAN[i]}</span></div>
+      <h3>${r.star ? `<a href="#">${r.n}</a>` : `<span class="plain">${r.n}</span>`}${r.dq ? ' <span class="dqm">⚖</span>' : ''}</h3>
+      <p>${r.note}<span class="fn" data-c="${r.c}">${i + 1}</span></p>
+    </section>`).join('');
+
+  // marquee index
+  const list = document.getElementById('reignlist');
+  list.innerHTML = REIGNS.map((r, i) => `
+    <a href="#r${i}" data-i="${i}"><span class="dot"></span><b>${ROMAN[i]}</b><span>${r.n}</span>${r.dq ? '<span class="dq">⚖</span>' : ''}</a>`).join('');
+  list.addEventListener('click', e => {
+    const a = e.target.closest('a'); if (!a) return;
+    e.preventDefault();
+    document.getElementById('r' + a.dataset.i)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // the seal: scatter a miniature sky (type-colored, deterministic)
+  const COLORS = ['#fcd34d', '#2dd4bf', '#e5e7eb', '#e5e7eb', '#60a5fa', '#c084fc', '#e5e7eb', '#f472b6'];
+  const orbits = document.getElementById('orbits');
+  for (let i = 0; i < 26; i++) {
+    const ring = [35, 63, 91][i % 3];
+    const w = document.createElement('div');
+    w.className = 'rw';
+    w.style.animationDuration = (110 + (i % 3) * 45) + 's';
+    w.style.transform = `rotate(${(i * 137.5) % 360}deg)`;
+    const b = document.createElement('div');
+    b.className = 'b';
+    b.style.setProperty('--c', COLORS[i % COLORS.length]);
+    b.style.setProperty('--s', (4 + (i % 3)) + 'px');
+    b.style.left = ring + 'px'; b.style.top = '0';
+    w.appendChild(b); orbits.appendChild(w);
+  }
+
+  // ignite + follow
+  const voyage = document.getElementById('voyage');
+  const fill = document.getElementById('fill');
+  const sections = [...document.querySelectorAll('.reign')];
+  const links = [...list.querySelectorAll('a')];
+  function trace() {
+    const r = voyage.getBoundingClientRect();
+    const anchor = innerHeight * .42;
+    fill.style.height = (Math.min(Math.max((anchor - r.top) / r.height, 0), 1) * 100) + '%';
+    let current = 0;
+    sections.forEach((s, i) => {
+      const n = s.querySelector('.node').getBoundingClientRect();
+      const lit = n.top < anchor;
+      s.classList.toggle('lit', lit);
+      if (lit && s.id) current = i;
+    });
+    links.forEach((a, i) => a.classList.toggle('on', i === current));
+    links[current]?.scrollIntoView({ block: 'nearest' });
+  }
+  addEventListener('scroll', trace, { passive: true });
+  addEventListener('resize', trace);
+  trace();
+</script>
+</body>
+</html>

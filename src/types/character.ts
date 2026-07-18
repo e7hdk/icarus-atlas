@@ -57,6 +57,7 @@ export const CREATURE_KINDS = [
   'dragon',
   'sphinx',
   'chimera',
+  'hound',
 ] as const;
 
 export const FIGURE_KINDS = [...NYMPH_KINDS, ...CREATURE_KINDS] as const;
@@ -142,10 +143,59 @@ export interface Artwork {
   description: string;
 }
 
-/** Cultural legacy items (artworks now; films/music later). Lens-independent. */
+/** Museum objects — beside artworks, the only Legacy shelf allowed imagery
+ *  (verified Wikimedia Commons only; licensing rules in docs/CULTURE_PLAN.md). */
+export interface Artifact {
+  title: string;
+  kind: 'vase' | 'sculpture' | 'relief' | 'mosaic' | 'coin' | 'fresco' | 'other';
+  /** Display period, e.g. "c. 670 BC, Archaic". */
+  period: string;
+  museum: string;
+  imageUrl: string;
+  description: string;
+  externalUrl?: string;
+}
+
+/** Cinema & television — text cards only, no imagery (license rule). */
+export interface ScreenWork {
+  title: string;
+  year: string;
+  medium: 'film' | 'tv' | 'animation';
+  director?: string;
+  description: string;
+  /** One-click verification link (Wikipedia or equally stable). */
+  externalUrl: string;
+}
+
+/** Opera, ballet, stage and song — text cards only, no imagery. */
+export interface MusicWork {
+  title: string;
+  year: string;
+  kind: 'opera' | 'ballet' | 'song' | 'album' | 'orchestral' | 'stage';
+  /** Composer, or the performing artist for songs/albums. */
+  composer: string;
+  description: string;
+  externalUrl: string;
+}
+
+/** Games, comics, brands, idioms, post-classical books — text cards only. */
+export interface PopCultureItem {
+  title: string;
+  year: string;
+  kind: 'videogame' | 'comic' | 'novel' | 'brand' | 'language' | 'other';
+  creator?: string;
+  description: string;
+  externalUrl: string;
+}
+
+/** Cultural legacy shelves (M8, docs/CULTURE_PLAN.md). Lens-independent. */
 export interface CultureData {
   id: string;
   artworks: Artwork[];
+  artifacts?: Artifact[];
+  films?: ScreenWork[];
+  music?: MusicWork[];
+  popCulture?: PopCultureItem[];
 }
 
 export interface ExternalLink {

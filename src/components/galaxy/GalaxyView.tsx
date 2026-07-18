@@ -1,20 +1,20 @@
 'use client';
 
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import type { Character, Relation, Source } from '@/types/character';
 import { computePositions, type Vec3 } from '@/features/galaxy/layout';
 import { layoutSignature } from '@/features/galaxy/layoutSignature';
 import type { BakedLayout } from '@/features/characters/load';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useEphemerisStore } from '@/features/spotlight/store';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
 import { GalaxyCanvas } from './GalaxyCanvas';
-import { TopBar } from '@/components/hud/TopBar';
 import { Legend } from '@/components/hud/Legend';
 import { SearchOverlay } from '@/components/hud/SearchOverlay';
 import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import { HoverCard } from '@/components/panels/HoverCard';
 import { CharacterPanel } from '@/components/panels/CharacterPanel';
-import type { MainTab } from '@/components/hud/MainNav';
+import { BackArrow } from '@/components/ui/BackArrow';
 import type { GeoCity } from '@/types/geo';
 
 export type CitySkyContext = {
@@ -27,7 +27,6 @@ export function GalaxyView({
   relations,
   sources,
   layout = 'galaxy',
-  activeMainTab = 'galaxy',
   back,
   bakedLayout = null,
   cityContext,
@@ -38,9 +37,7 @@ export function GalaxyView({
   sources: Source[];
   /** 'compact' remaps generations to start at zero — for the small city skies. */
   layout?: 'galaxy' | 'compact';
-  /** City skies belong to Lands even though they reuse the galaxy renderer. */
-  activeMainTab?: MainTab;
-  /** When set, the top bar shows this back affordance in place of the brand on mobile. */
+  /** When set, a floating back affordance rides under the AtlasBar (city skies). */
   back?: { href: string; label: string };
   /** Build-time-baked galaxy positions; used instead of the ~5s runtime solve when
    *  the content signature matches. Only the full galaxy is baked — compact city
@@ -97,6 +94,56 @@ export function GalaxyView({
     (window as unknown as { __icarus?: unknown }).__icarus = { store: useGalaxyStore };
   }, []);
 
+  useEffect(() => {
+    // ?fly=<id> — the Ephemeris (and any shared link) lands here: select the
+    // star so the CameraRig flies to it, then strip the param so refreshes
+    // and later navigation don't re-fly.
+    const params = new URLSearchParams(window.location.search);
+    const fly = params.get('fly');
+    if (!fly || !positions.has(fly)) return;
+    useGalaxyStore.getState().select(fly);
+    params.delete('fly');
+    const query = params.toString();
+    window.history.replaceState(
+      null,
+      '',
+      query ? `${window.location.pathname}?${query}` : window.location.pathname,
+    );
+  }, [positions]);
+
+  const ephemerisPick = useEphemerisStore((s) => s.pick);
+  const proemHandled = useRef(false);
+  useEffect(() => {
+    // ?proem=1 — begin the day's telling once the pick and the sky are ready.
+    // Full-galaxy only; the city skies never stage the proem.
+    if (proemHandled.current || layout !== 'galaxy') return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('proem') !== '1') {
+      proemHandled.current = true;
+      return;
+    }
+    if (!ephemerisPick || !positions.has(ephemerisPick.id)) return;
+    proemHandled.current = true;
+    // The riddle gates the stage (docs/EPHEMERIS_PLAN.md §11): an unrevealed
+    // day opens the Sphinx instead of a proem that would name the star in
+    // its first beat.
+    if (localStorage.getItem('ephemeris-riddle') !== ephemerisPick.isoDate) {
+      useEphemerisStore.getState().setRiddleOpen(true);
+    } else {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        useGalaxyStore.getState().select(ephemerisPick.id);
+      }
+      useEphemerisStore.getState().startProem();
+    }
+    params.delete('proem');
+    const query = params.toString();
+    window.history.replaceState(
+      null,
+      '',
+      query ? `${window.location.pathname}?${query}` : window.location.pathname,
+    );
+  }, [ephemerisPick, positions, layout]);
+
   return (
     <div className="fixed inset-0">
       <GalaxyCanvas
@@ -104,8 +151,13 @@ export function GalaxyView({
         relations={relations}
         positions={scaledPositions}
         cameraIntro={cameraIntro}
+        ephemerisBeacon={layout === 'galaxy'}
       />
-      <TopBar active={activeMainTab} back={back} />
+      {back && (
+        <div className="pointer-events-auto fixed left-4 top-[4.25rem] z-20 sm:left-6">
+          <BackArrow href={back.href} label={back.label} />
+        </div>
+      )}
       <Legend />
       <HoverCard characters={characters} relations={relations} cityContext={cityContext} />
       <CharacterPanel

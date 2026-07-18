@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page G: Atlas Plate</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CONCEPT G — ATLAS PLATE ============
+     The character as an engraved plate from a celestial atlas:
+     a framed sheet, a strict two-column grid with a sticky index,
+     genealogy as a leadered table, citations set in the colophon
+     style under each paragraph. Austere, print-born, cyan-cooled. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --pink: #ff4081; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --line: rgba(241,245,249,.14); --line-soft: rgba(241,245,249,.08);
+    --gold: #fcd34d; --hero: #2dd4bf; --god: #60a5fa; --mortal: #e5e7eb; --creature: #f472b6;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos-deep);
+    /* engraving grid: faint survey crosses */
+    background-image:
+      radial-gradient(circle 1px at center, rgba(241,245,249,.05) 1px, transparent 1.5px),
+      radial-gradient(44% 30% at 82% 0%, rgba(0,229,255,.05), transparent 70%),
+      radial-gradient(40% 32% at 6% 96%, rgba(124,77,255,.09), transparent 70%);
+    background-size: 84px 84px, auto, auto;
+  }
+  /* ---------- The plate frame ---------- */
+  #frame { position: fixed; inset: 16px; border: 1px solid var(--line); pointer-events: none; z-index: 30; }
+  #frame::before { content: ''; position: absolute; inset: 5px; border: 1px solid var(--line-soft); }
+  #frame i { position: absolute; width: 14px; height: 14px; border-color: rgba(0,229,255,.55); border-style: solid; border-width: 0; }
+  #frame i:nth-child(1) { top: -1px; left: -1px; border-top-width: 1px; border-left-width: 1px; }
+  #frame i:nth-child(2) { top: -1px; right: -1px; border-top-width: 1px; border-right-width: 1px; }
+  #frame i:nth-child(3) { bottom: -1px; left: -1px; border-bottom-width: 1px; border-left-width: 1px; }
+  #frame i:nth-child(4) { bottom: -1px; right: -1px; border-bottom-width: 1px; border-right-width: 1px; }
+
+  .sheet { position: relative; max-width: 1120px; margin: 0 auto; padding: 40px 56px 110px; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 46px; }
+  .pill { border: 1px solid var(--line); background: rgba(255,255,255,.04); border-radius: 2px; padding: 7px 16px; font: 500 11.5px Cinzel, serif; letter-spacing: .14em; color: var(--muted); cursor: pointer; text-decoration: none; }
+  .pill:hover { color: var(--aether); border-color: rgba(0,229,255,.4); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  /* ---------- Identity band: name left, plate meta right ---------- */
+  .band { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+  .band::after { content: ''; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: var(--line-soft); }
+  /* astrolabe ghost behind the name */
+  .band .arc { position: absolute; left: -70px; top: -110px; width: 340px; height: 340px; border-radius: 50%; border: 1px solid rgba(0,229,255,.09); pointer-events: none; }
+  .band .arc::before { content: ''; position: absolute; inset: 34px; border-radius: 50%; border: 1px dashed rgba(0,229,255,.07); }
+  .band h1 { font: 700 clamp(44px,6.5vw,72px) Cinzel, serif; letter-spacing: .16em; line-height: 1; text-shadow: 0 0 40px rgba(45,212,191,.4); }
+  .band .greek { font-style: italic; font-size: 20px; color: var(--muted); margin-top: 10px; }
+  .meta { text-align: right; font-size: 15px; color: var(--muted); min-width: 250px; }
+  .meta .plate { font: 600 11px Cinzel, serif; letter-spacing: .4em; color: rgba(153,246,228,.8); }
+  .meta .row { display: flex; justify-content: space-between; gap: 26px; padding: 6px 0; border-bottom: 1px dotted var(--line-soft); }
+  .meta .row:first-of-type { margin-top: 14px; }
+  .meta .k { font: 500 10.5px Cinzel, serif; letter-spacing: .22em; color: var(--faint); align-self: center; }
+  .meta .v { font-size: 16px; }
+  .meta .v.hero { color: #99f6e4; font: 600 12px Cinzel, serif; letter-spacing: .18em; align-self: center; }
+
+  /* ---------- Main grid: index + matter ---------- */
+  .main { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 64px; margin-top: 48px; }
+  .index { position: sticky; top: 46px; align-self: start; }
+  .index .h { font: 500 10.5px Cinzel, serif; letter-spacing: .34em; color: var(--faint); margin-bottom: 18px; }
+  .index a { position: relative; display: flex; gap: 12px; align-items: baseline; padding: 9px 0 9px 18px; text-decoration: none; color: var(--muted); font-size: 16.5px; border-left: 1px solid var(--line-soft); transition: color .2s; }
+  .index a b { font: 600 11px Cinzel, serif; letter-spacing: .1em; color: var(--faint); min-width: 26px; transition: color .2s; }
+  .index a:hover { color: var(--aether); }
+  .index a.on { color: #99f6e4; }
+  .index a.on b { color: #99f6e4; }
+  .index a.on::before { content: ''; position: absolute; left: -1px; top: 20%; bottom: 20%; width: 1px; background: var(--hero); box-shadow: 0 0 8px 1px rgba(45,212,191,.7); }
+  .index .foot { margin-top: 30px; font-style: italic; font-size: 13.5px; color: var(--faint); line-height: 1.5; }
+
+  section { padding-bottom: 58px; }
+  .shead { display: flex; align-items: baseline; gap: 16px; margin-bottom: 26px; }
+  .shead b { font: 600 13px Cinzel, serif; letter-spacing: .12em; color: rgba(153,246,228,.85); }
+  .shead h2 { font: 600 15px Cinzel, serif; letter-spacing: .3em; color: var(--aether); }
+  .shead .ln { flex: 1; height: 1px; background: var(--line-soft); align-self: center; }
+
+  /* lens, set austerely */
+  .lensbar { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .lensbar .told { font-style: italic; font-size: 16px; color: var(--faint); }
+  .lens { display: flex; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+  .lens button { padding: 8px 16px; border: none; border-right: 1px solid var(--line-soft); background: none; color: rgba(226,232,240,.55); font: 500 11.5px Cinzel, serif; letter-spacing: .08em; cursor: pointer; transition: all .2s; }
+  .lens button:last-child { border-right: none; }
+  .lens button:hover { color: var(--aether); }
+  .lens button.on { background: rgba(0,229,255,.1); color: #7ff3ff; box-shadow: inset 0 -1px 0 rgba(0,229,255,.6); }
+
+  .prose p { font-size: 19px; line-height: 1.66; color: rgba(241,245,249,.92); }
+  .entry { margin-bottom: 30px; transition: opacity .3s; }
+  .entry.hidden { display: none; }
+  .entry .ref { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; font-variant: small-caps; letter-spacing: .05em; font-size: 14.5px; color: var(--faint); }
+  .entry .ref::before { content: '—'; }
+  .empty { display: none; font-style: italic; font-size: 18px; color: var(--faint); }
+  .prose.void .empty { display: block; }
+  .dqm { position: relative; color: var(--soft); cursor: default; }
+  .dqm:hover::after { content: 'Told differently in other tellings — change the lens above'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 4px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+
+  /* ---------- Genealogy as an engraved leadered table ---------- */
+  .table { border-top: 1px solid var(--line); }
+  .trow { display: grid; grid-template-columns: 150px minmax(0,1fr); border-bottom: 1px solid var(--line-soft); }
+  .trow .cat { padding: 15px 0; font: 500 11px Cinzel, serif; letter-spacing: .26em; color: var(--faint); }
+  .trow .names { padding: 12px 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+  .name { display: inline-flex; align-items: baseline; gap: 8px; font-size: 18px; cursor: pointer; transition: color .2s; }
+  .name:hover { color: #99f6e4; }
+  .name i { align-self: center; width: 8px; height: 8px; border-radius: 50%; background: var(--c); box-shadow: 0 0 7px 1px var(--c); flex: none; }
+  .name em { font-size: 14px; color: var(--faint); }
+  .name .dq { color: var(--soft); font-size: 14px; cursor: help; }
+
+  /* ---------- Dwellings / myths: two-column leadered registers ---------- */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 54px; }
+  .lrow { display: flex; align-items: baseline; padding: 8px 0; font-size: 17.5px; cursor: pointer; }
+  .lrow:hover { color: #fde68a; }
+  .lrow .dots { flex: 1; margin: 0 10px; border-bottom: 1px dotted rgba(241,245,249,.22); transform: translateY(-4px); }
+  .lrow em { font-size: 14.5px; color: var(--faint); text-align: right; }
+  .lrow b { font: 600 11px Cinzel, serif; letter-spacing: .1em; color: var(--faint); margin-right: 12px; }
+
+  /* ---------- Sources colophon ---------- */
+  .colo { border: 1px solid var(--line); padding: 22px 26px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 40px; position: relative; }
+  .colo::before { content: ''; position: absolute; inset: 4px; border: 1px solid var(--line-soft); pointer-events: none; }
+  .colo .s { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; font-size: 16.5px; }
+  .colo .s b { font: 600 13px Cinzel, serif; letter-spacing: .1em; color: var(--aether); }
+  .colo .s span { font-style: italic; color: var(--muted); }
+  .colo .s em { font-size: 14px; color: var(--faint); white-space: nowrap; }
+
+  footer { text-align: center; margin-top: 26px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 900px) {
+    .sheet { padding: 28px 22px 90px; }
+    .main { grid-template-columns: 1fr; gap: 30px; }
+    .index { position: static; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+    .index .h, .index .foot { display: none; }
+    .index a { border-left: none; padding: 4px 0; }
+    .index a.on::before { display: none; }
+    .band { grid-template-columns: 1fr; gap: 18px; }
+    .meta { text-align: left; }
+    .meta .row { justify-content: flex-start; }
+    .cols { grid-template-columns: 1fr; }
+    .colo { grid-template-columns: 1fr; }
+    #frame { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div id="frame"><i></i><i></i><i></i><i></i></div>
+<div class="sheet">
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="band">
+    <div class="arc"></div>
+    <div>
+      <h1>PERSEUS</h1>
+      <div class="greek">Perseus (Περσεύς) — the Gorgon-slayer, founder of Mycenae</div>
+    </div>
+    <div class="meta">
+      <div class="plate">PLATE XXIV</div>
+      <div class="row"><span class="k">ORDER</span><span class="v hero">HERO</span></div>
+      <div class="row"><span class="k">HOUSE</span><span class="v">the line of Danaus, at Argos</span></div>
+      <div class="row"><span class="k">RECORDED BY</span><span class="v">four tellers</span></div>
+      <div class="row"><span class="k">FIRST LIGHT</span><span class="v">Theogony 280</span></div>
+    </div>
+  </div>
+
+  <div class="main">
+    <nav class="index" id="index">
+      <div class="h">CONTENTS</div>
+      <a href="#s1" class="on"><b>I</b>The Story</a>
+      <a href="#s2"><b>II</b>Bonds &amp; Kin</a>
+      <a href="#s3"><b>III</b>Dwellings</a>
+      <a href="#s4"><b>IV</b>In the Myths</a>
+      <a href="#s5"><b>V</b>The Tellers</a>
+      <div class="foot">An engraved sheet of the atlas — the index follows your place on the plate.</div>
+    </nav>
+
+    <div class="matter">
+      <section id="s1">
+        <div class="shead"><b>I.</b><h2>THE STORY</h2><span class="ln"></span></div>
+        <div class="lensbar">
+          <span class="told">told after</span>
+          <div class="lens" id="lens">
+            <button class="on" data-l="consensus">All tellers</button>
+            <button data-l="apollodorus">Apollodorus</button>
+            <button data-l="ovid">Ovid</button>
+            <button data-l="hyginus">Hyginus</button>
+            <button data-l="pausanias">Pausanias</button>
+          </div>
+        </div>
+        <div class="prose" id="prose">
+          <div class="entry" data-src="apollodorus hyginus">
+            <p>Born in a subterranean bronze chamber after Zeus visited his mother Danaë in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.</p>
+            <div class="ref">Bibliotheca 2.4.1 · Fabulae 63</div>
+          </div>
+          <div class="entry" data-src="apollodorus ovid">
+            <p>To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon Medusa. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades<span class="dqm"> ⚖</span>. He beheaded Medusa and used her petrifying gaze to turn his enemies — the titan Atlas and the sea monster Cetus among them — to stone.</p>
+            <div class="ref">Bibliotheca 2.4.2–3 · Metamorphoses 4.740</div>
+          </div>
+          <div class="entry" data-src="apollodorus hyginus pausanias">
+            <p>After rescuing and marrying the Aethiopian princess Andromeda, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.</p>
+            <div class="ref">Bibliotheca 2.4.4 · Fabulae 273 · Descr. Graec. 2.16.3</div>
+          </div>
+          <p class="empty">Nothing of this figure survives under this teller — choose another lens above.</p>
+        </div>
+      </section>
+
+      <section id="s2">
+        <div class="shead"><b>II.</b><h2>BONDS &amp; KIN</h2><span class="ln"></span></div>
+        <div class="table">
+          <div class="trow">
+            <div class="cat">PARENTS</div>
+            <div class="names">
+              <span class="name" style="--c:#fcd34d"><i></i>Zeus<em>the shower of gold</em></span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Danaë<em>of Argos</em></span>
+            </div>
+          </div>
+          <div class="trow">
+            <div class="cat">CONSORT</div>
+            <div class="names">
+              <span class="name" style="--c:#e5e7eb"><i></i>Andromeda<em>rescued from the sea beast</em></span>
+            </div>
+          </div>
+          <div class="trow">
+            <div class="cat">CHILDREN</div>
+            <div class="names">
+              <span class="name" style="--c:#e5e7eb"><i></i>Perses</span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Electryon</span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Sthenelus</span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Alcaeus</span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Gorgophone</span>
+            </div>
+          </div>
+          <div class="trow">
+            <div class="cat">GUIDES</div>
+            <div class="names">
+              <span class="name" style="--c:#fcd34d"><i></i>Athena<em>the bright shield</em></span>
+              <span class="name" style="--c:#60a5fa"><i></i>Hermes<em>the adamantine sickle</em></span>
+            </div>
+          </div>
+          <div class="trow">
+            <div class="cat">FOES</div>
+            <div class="names">
+              <span class="name" style="--c:#f472b6"><i></i>Medusa<em>slain</em></span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Polydectes<em>petrified</em></span>
+              <span class="name" style="--c:#e5e7eb"><i></i>Acrisius<em>the prophecy fulfilled</em><span class="dq" title="The manner of the killing differs by teller."> ⚖</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s3">
+        <div class="shead"><b>III.</b><h2>DWELLINGS</h2><span class="ln"></span></div>
+        <div class="cols">
+          <div class="lrow">Seriphos<span class="dots"></span><em>raised ashore</em></div>
+          <div class="lrow">Argos<span class="dots"></span><em>the throne refused</em></div>
+          <div class="lrow">Mycenae<span class="dots"></span><em>founder</em></div>
+          <div class="lrow">Tiryns<span class="dots"></span><em>exchanged kingdom</em></div>
+          <div class="lrow">Aethiopia<span class="dots"></span><em>the rescue of Andromeda</em></div>
+          <div class="lrow">Larisa<span class="dots"></span><em>the stray discus</em></div>
+        </div>
+      </section>
+
+      <section id="s4">
+        <div class="shead"><b>IV.</b><h2>IN THE MYTHS</h2><span class="ln"></span></div>
+        <div class="cols">
+          <div class="lrow"><b>01</b>Birth at Seriphos<span class="dots"></span><em>episode</em></div>
+          <div class="lrow"><b>02</b>The Gorgon Medusa<span class="dots"></span><em>episode</em></div>
+          <div class="lrow"><b>03</b>Andromeda Rescued<span class="dots"></span><em>episode</em></div>
+          <div class="lrow"><b>04</b>Perseus at the Feast<span class="dots"></span><em>episode</em></div>
+          <div class="lrow"><b>05</b>Return and Mycenae<span class="dots"></span><em>episode</em></div>
+        </div>
+      </section>
+
+      <section id="s5">
+        <div class="shead"><b>V.</b><h2>THE TELLERS</h2><span class="ln"></span></div>
+        <div class="colo">
+          <div class="s"><span><b>Apollodorus</b> — <span>Bibliotheca</span></span><em>2.4.1–4</em></div>
+          <div class="s"><span><b>Ovid</b> — <span>Metamorphoses</span></span><em>4.604–5.249</em></div>
+          <div class="s"><span><b>Hyginus</b> — <span>Fabulae</span></span><em>63 · 64 · 273</em></div>
+          <div class="s"><span><b>Pausanias</b> — <span>Description of Greece</span></span><em>2.16.3</em></div>
+        </div>
+      </section>
+
+      <footer>Concept G — Atlas Plate · an engraved sheet: sticky contents, leadered tables, citations set as colophons</footer>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Lens filters the entries.
+  const lens = document.getElementById('lens'), prose = document.getElementById('prose');
+  lens.addEventListener('click', e => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    lens.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === btn));
+    const l = btn.dataset.l; let seen = 0;
+    prose.querySelectorAll('.entry').forEach(p => {
+      const keep = l === 'consensus' || p.dataset.src.split(' ').includes(l);
+      p.classList.toggle('hidden', !keep); if (keep) seen++;
+    });
+    prose.classList.toggle('void', seen === 0);
+  });
+  // The index follows your place on the plate.
+  const links = [...document.querySelectorAll('.index a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-20% 0px -65% 0px' });
+  document.querySelectorAll('section').forEach(s => io.observe(s));
+</script>
+</body>
+</html>

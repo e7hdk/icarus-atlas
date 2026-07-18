@@ -22,5 +22,32 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Adolphe_Yvon_Penelope_%28cropped_to_image%29.jpg",
       "description": "A drawing by the French academic painter Adolphe Yvon (1817–1893), held in the Département des Arts Graphiques of the Louvre, rendering Penelope in the classical manner as 'a seated woman after the antique.' Yvon reprises one of the oldest visual formulas for Penelope, known from fifth-century Attic vase painting: the queen seated with her head bowed and a hand raised to her cheek in the attitude of grief and patient waiting, her loom nearby. The pose became the canonical image of mourning faithfulness, embodying the wife who endured Odysseus's twenty-year absence. Yvon's nineteenth-century copy testifies to the long afterlife of the ancient Penelope type in the academic tradition."
     }
+  ],
+  "films": [
+    {
+      "title": "O Brother, Where Art Thou?",
+      "year": "2000",
+      "medium": "film",
+      "director": "Joel and Ethan Coen",
+      "description": "The Coens' Depression-era Odyssey gives Penelope a Mississippi double: Penny, the waiting wife who will not remarry until her wandering man comes home — loyalty restaged as screwball stubbornness.",
+      "externalUrl": "https://en.wikipedia.org/wiki/O_Brother,_Where_Art_Thou%3F"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Penelope at the loom and the bow-contest centre-stage — the Ithacan queen as the home the entire voyage is measured against.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Penelopean",
+      "year": "—",
+      "kind": "language",
+      "description": "English borrowed the queen's name for faithful delay and endless weaving — a penelopean task is work undone each night so that hope can last another day.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Penelope"
+    }
   ]
 }

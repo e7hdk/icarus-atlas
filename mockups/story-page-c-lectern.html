@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Story Page C: Lectern</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ STORY CONCEPT C — LECTERN ============
+     A reader's desk: a sticky companion rail keeps the story map,
+     cast, scenes and tellers at hand while the tale flows as one
+     unbroken column, each chapter opening under a ghost numeral.
+     The rail follows your reading and can carry you anywhere. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh; color: var(--aether); font-family: 'Cormorant Garamond', serif;
+    background: var(--cosmos);
+    background-image:
+      radial-gradient(44% 26% at 62% 0%, rgba(0,229,255,.08), transparent 70%),
+      radial-gradient(42% 36% at 2% 78%, rgba(124,77,255,.15), transparent 70%),
+      radial-gradient(30% 24% at 96% 60%, rgba(192,132,252,.07), transparent 70%);
+    background-attachment: fixed;
+  }
+  .dust { position: fixed; inset: 0; pointer-events: none; background-image:
+      radial-gradient(1px 1px at 18% 14%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1px 1px at 68% 8%, rgba(241,245,249,.3), transparent),
+      radial-gradient(1.4px 1.4px at 34% 58%, rgba(0,229,255,.3), transparent),
+      radial-gradient(1px 1px at 56% 36%, rgba(241,245,249,.28), transparent),
+      radial-gradient(1px 1px at 88% 78%, rgba(192,132,252,.3), transparent),
+      radial-gradient(1.3px 1.3px at 8% 90%, rgba(241,245,249,.3), transparent); }
+
+  .page { position: relative; max-width: 1080px; margin: 0 auto; padding: 20px 24px 100px; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+  .pill { border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; backdrop-filter: blur(12px); }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  .desk { display: grid; grid-template-columns: 288px minmax(0,1fr); gap: 58px; align-items: start; }
+
+  /* ---------- Companion rail ---------- */
+  .rail { position: sticky; top: 22px; border: 1px solid var(--glass-border); border-radius: 20px; background: rgba(20,12,48,.45); backdrop-filter: blur(20px); padding: 26px 24px 24px; box-shadow: 0 22px 60px rgba(5,2,15,.5), inset 0 1px 0 rgba(255,255,255,.07); }
+  .rail .saga { font: 500 10px Cinzel, serif; letter-spacing: .24em; color: var(--soft); text-decoration: none; }
+  .rail .saga:hover { color: var(--aether); }
+  .rail h1 { font: 700 21px Cinzel, serif; letter-spacing: .12em; margin-top: 8px; line-height: 1.35; }
+  .rail .greek { font-style: italic; font-size: 15.5px; color: var(--muted); margin-top: 3px; }
+  .rail .bar { height: 2px; background: rgba(241,245,249,.1); border-radius: 2px; margin: 18px 0 4px; overflow: hidden; }
+  .rail .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--soft)); box-shadow: 0 0 8px rgba(0,229,255,.6); transition: width .2s; }
+  .rail .pct { font-style: italic; font-size: 13px; color: var(--faint); text-align: right; }
+  .rh { font: 500 10.5px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin: 20px 0 10px; }
+  .toc a { display: flex; align-items: baseline; gap: 11px; padding: 6px 0; text-decoration: none; color: var(--muted); font-size: 16.5px; transition: color .2s; }
+  .toc a b { font: 600 11px Cinzel, serif; letter-spacing: .1em; color: var(--faint); min-width: 20px; transition: color .2s; }
+  .toc a .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(241,245,249,.18); align-self: center; flex: none; transition: all .3s; }
+  .toc a:hover { color: var(--aether); }
+  .toc a.on { color: #7ff3ff; }
+  .toc a.on b { color: #7ff3ff; }
+  .toc a.on .dot { background: var(--cyan); box-shadow: 0 0 9px 2px rgba(0,229,255,.6); }
+  .cast .c { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 16px; color: var(--muted); cursor: pointer; }
+  .cast .c:hover { color: var(--aether); }
+  .cast .c i { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--c, #e5e7eb); box-shadow: 0 0 6px 1px var(--c, #e5e7eb); }
+  .cast .c.plain i { background: var(--faint); box-shadow: none; }
+  .cast .c em { margin-left: auto; font-size: 13px; color: var(--faint); font-style: italic; }
+  .told { border-top: 1px dotted rgba(241,245,249,.14); margin-top: 18px; padding-top: 14px; font-size: 14.5px; color: var(--faint); line-height: 1.7; }
+  .told b { font: 600 12px Cinzel, serif; letter-spacing: .06em; color: var(--muted); }
+  .told i { font-style: italic; }
+
+  /* ---------- The tale ---------- */
+  .tale { max-width: 660px; }
+  .tale .sum { font-style: italic; font-size: 20px; line-height: 1.62; color: var(--muted); border-left: 2px solid rgba(0,229,255,.4); padding-left: 22px; margin-bottom: 66px; }
+  .chapter { position: relative; padding: 30px 0 30px; }
+  .chapter .ghost { position: absolute; top: -34px; left: -22px; font: 700 150px Cinzel, serif; line-height: 1; color: rgba(241,245,249,.045); pointer-events: none; user-select: none; z-index: 0; }
+  .chapter h3 { position: relative; font: 600 25px Cinzel, serif; letter-spacing: .1em; z-index: 1; }
+  .chapter h3 .dqm { position: relative; color: var(--soft); font-size: 17px; cursor: default; margin-left: 7px; }
+  .chapter h3 .dqm:hover::after { content: 'The tellers place the fall in different waters.'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font: 400 14px 'Cormorant Garamond', serif; letter-spacing: 0; color: var(--aether); z-index: 9; }
+  .chapter p { position: relative; margin-top: 14px; font-size: 19.5px; line-height: 1.68; color: rgba(241,245,249,.92); z-index: 1; }
+  .fn { position: relative; color: var(--faint); cursor: default; font-size: 13px; vertical-align: super; }
+  .fn:hover::after { content: attr(data-c); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(0,229,255,.35); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .scene-tags { position: relative; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; z-index: 1; }
+  .scene-tags span { border: 1px solid rgba(252,211,77,.3); background: rgba(252,211,77,.07); border-radius: 999px; padding: 3px 12px; font-size: 14px; color: #fde68a; cursor: pointer; }
+  .scene-tags span:hover { border-color: rgba(252,211,77,.65); }
+  .scene-tags .ghosted { border-color: var(--glass-border); background: var(--glass); color: var(--muted); }
+  .chapter + .chapter { border-top: 1px dotted rgba(241,245,249,.1); }
+
+  /* continue card */
+  .next { margin-top: 60px; display: block; text-decoration: none; border: 1px solid rgba(192,132,252,.35); background: rgba(124,77,255,.1); border-radius: 18px; padding: 22px 26px; transition: all .25s; }
+  .next:hover { border-color: var(--soft); background: rgba(124,77,255,.18); }
+  .next .k { font: 500 10.5px Cinzel, serif; letter-spacing: .3em; color: var(--soft); }
+  .next .t { font: 600 20px Cinzel, serif; letter-spacing: .1em; color: var(--aether); margin-top: 8px; }
+  .next .d { font-style: italic; font-size: 16px; color: var(--muted); margin-top: 4px; }
+  footer { text-align: center; margin-top: 70px; font-style: italic; font-size: 14px; color: var(--faint); }
+
+  @media (max-width: 880px) {
+    .desk { grid-template-columns: 1fr; gap: 26px; }
+    .rail { position: static; }
+    .rail .cast, .rail .told, .rail .rh.optional { display: none; }
+    .chapter .ghost { font-size: 110px; left: -8px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<div class="page">
+  <div class="top">
+    <a class="pill" href="#">← MYTHS</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+
+  <div class="desk">
+    <!-- Companion rail: map of the tale, always at hand -->
+    <aside class="rail">
+      <a class="saga" href="#">AN EPISODE OF METAMORPHOSES ↗</a>
+      <h1>DAEDALUS AND ICARUS</h1>
+      <div class="greek">Δαίδαλος καὶ Ἴκαρος</div>
+      <div class="bar"><i id="prog"></i></div>
+      <div class="pct" id="pct">the tale begins</div>
+
+      <div class="rh">THE TALE</div>
+      <nav class="toc" id="toc">
+        <a href="#c1" class="on"><span class="dot"></span><b>I</b>Flight from Athens</a>
+        <a href="#c2"><span class="dot"></span><b>II</b>The Wings</a>
+        <a href="#c3"><span class="dot"></span><b>III</b>The Fall</a>
+        <a href="#c4"><span class="dot"></span><b>IV</b>Sicily</a>
+      </nav>
+
+      <div class="rh optional">THE CAST</div>
+      <div class="cast">
+        <div class="c" style="--c:#e5e7eb"><i></i>Daedalus<em>the inventor</em></div>
+        <div class="c" style="--c:#e5e7eb"><i></i>Icarus<em>the son</em></div>
+        <div class="c" style="--c:#e5e7eb"><i></i>Minos<em>the king</em></div>
+        <div class="c plain"><i></i>Cocalus<em>the refuge</em></div>
+        <div class="c" style="--c:#e5e7eb"><i></i>Ariadne<em>the thread</em></div>
+      </div>
+
+      <div class="told"><b>Told in</b> — <i>Metamorphoses</i> 8.152–259 · <i>Epitome</i> 1.12–13 · <i>Fabulae</i> 40</div>
+    </aside>
+
+    <!-- The tale, unbroken -->
+    <div class="tale">
+      <p class="sum">Daedalus the Athenian craftsman, imprisoned by Minos with his son Icarus, fashioned wings of feather and wax; the boy soared too near the sun, the wax melted, and he fell into the sea that bears his name while the father flew on to Sicily in grief.<span class="fn" data-c="Ovid · Apollodorus · Hyginus — Met. 8.152–259 · Epit. 1.12–13 · Fab. 40">1</span></p>
+
+      <section class="chapter" id="c1">
+        <div class="ghost">I</div>
+        <h3>Flight from Athens</h3>
+        <p>Daedalus son of Metion, architect of the labyrinth and the wooden cow for Pasiphae, had fled Athens after killing his nephew Talos in jealousy of the boy's invention. In Crete he served Minos until Ariadne's thread betrayed the maze — and the king shut both craftsman and son within the very walls Daedalus had designed.<span class="fn" data-c="Apollodorus · Ovid — Apollod. 3.15.8, Epit. 1.12 · Ov. Met. 8.152–208">2</span></p>
+        <div class="scene-tags"><span>Knossos</span></div>
+      </section>
+
+      <section class="chapter" id="c2">
+        <div class="ghost">II</div>
+        <h3>The Wings</h3>
+        <p>Knowing Minos held land and sea, Daedalus turned to the air. He bound feathers with thread and soft wax into curving wings for himself and Icarus, and warned the boy to fly the middle way — neither so low that the sea spray clog the plumes, nor so high that the sun melt the wax. Hyginus repeats the counsel: keep to the path between sky and water.<span class="fn" data-c="Ovid · Hyginus — Ov. Met. 8.183–235 · Hyg. Fab. 40">3</span></p>
+      </section>
+
+      <section class="chapter" id="c3">
+        <div class="ghost">III</div>
+        <h3>The Fall <span class="dqm">⚖</span></h3>
+        <p>Icarus exulted in flight and climbed toward heaven; the heat loosened the wax, the feathers scattered, and the boy plunged into the blue sea. Daedalus, crying his son's name, found only feathers on the waves. Apollodorus calls the sea Icarian and the island Icaria where the body washed ashore.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.223–259 · Apollod. Epit. 1.13">4</span></p>
+        <div class="scene-tags"><span>Icarian Sea</span><span class="ghosted">Icaria</span></div>
+      </section>
+
+      <section class="chapter" id="c4">
+        <div class="ghost">IV</div>
+        <h3>Sicily</h3>
+        <p>The father flew on to Sicily and the court of Cocalus, while Minos pursued him across the seas with ships and thread — a chase Ovid resumes later when the king dies in the bath Daedalus built. On the flight Ovid names the islands they passed: Juno's sacred Samos on the left, Delos and Paros left behind, Lebinthos and honey-rich Calymne on the right.<span class="fn" data-c="Ovid · Apollodorus — Ov. Met. 8.259–272, 8.289–399 · Apollod. Epit. 1.13–15">5</span></p>
+        <div class="scene-tags"><span>Samos</span><span>Delos</span><span>Paros</span><span>Sicily</span></div>
+      </section>
+
+      <a class="next" href="#">
+        <div class="k">CONTINUE THE SAGA</div>
+        <div class="t">METAMORPHOSES</div>
+        <div class="d">return to the mother-poem of changed forms ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>Story concept C — Lectern · a companion rail keeps the map, cast and tellers at hand while the tale flows unbroken</footer>
+</div>
+
+<script>
+  // Reading progress on the rail.
+  const prog = document.getElementById('prog'), pct = document.getElementById('pct');
+  const tale = document.querySelector('.tale');
+  function measure() {
+    const r = tale.getBoundingClientRect();
+    const total = r.height - innerHeight * .6;
+    const k = Math.min(Math.max((innerHeight * .42 - r.top) / total, 0), 1);
+    prog.style.width = (k * 100) + '%';
+    pct.textContent = k <= 0 ? 'the tale begins' : k >= 1 ? 'the tale is told' : Math.round(k * 100) + '% read';
+  }
+  addEventListener('scroll', measure, { passive: true });
+  addEventListener('resize', measure);
+  measure();
+
+  // The rail follows your reading.
+  const links = [...document.querySelectorAll('.toc a')];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-24% 0px -60% 0px' });
+  document.querySelectorAll('.chapter').forEach(c => io.observe(c));
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "id": "hippolytus",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Phaedra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Jules Dassin",
+      "description": "Dassin's modern Greece retelling — Melina Mercouri's Phaedra destroying her stepson — keeps Euripides on screen.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phaedra_(film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hippolytus (play)",
+      "year": "428 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' tragedy of the chaste hunter and the stepmother's desire — still the source text for every Phaedra.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hippolytus_(play)"
+    },
+    {
+      "title": "Phèdre",
+      "year": "1677",
+      "kind": "other",
+      "creator": "Jean Racine",
+      "description": "Racine's French classic remakes Hippolytus' doom for the neoclassical stage — passion as fatal clarity.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ph%C3%A8dre"
+    }
+  ]
+}

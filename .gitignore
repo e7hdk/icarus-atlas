@@ -44,3 +44,19 @@ next-env.d.ts
 /research/corpus/raw/
 /research/corpus/normalized/
 data/geo/raw/
+
+# culture harvest candidates (reproducible via `pnpm harvest:culture <id>`)
+/research/culture-candidates/
+
+# festival research staging (docs/EPHEMERIS_PLAN.md M12.4)
+/research/festivals/
+
+# pinned terrain extract (~1.2 GB, reproducible via `pnpm dem:fetch`)
+/public/geo/dem.pmtiles
+
+# 256px terrain-mesh archive (reproducible via `pnpm dem:terrain`)
+/public/geo/dem-terrain.pmtiles
+/public/geo/dem-terrain.tmp.mbtiles
+
+# baked relief raster tiles (reproducible via `pnpm relief:bake`)
+/public/geo/relief/

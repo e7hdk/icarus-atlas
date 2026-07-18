@@ -1,0 +1,14 @@
+{
+  "id": "haloa",
+  "name": "Haloa",
+  "greekName": "Ἁλῶα",
+  "deities": ["demeter", "dionysus"],
+  "place": "eleusis",
+  "atticDate": { "month": "poseideon", "days": [26] },
+  "conventionalDates": ["12-26"],
+  "summary": "The midwinter threshing-floor feast at Eleusis, kept largely by women for Demeter and Dionysus, with first fruits on the tables and the vine pruned for the new year.",
+  "testimonia": [
+    "Scholia to Lucian, Dialogues of the Courtesans 7.4 (26 Poseideon, the rites described)",
+    "Deubner, Attische Feste (1932) 60–67"
+  ]
+}

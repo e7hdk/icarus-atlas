@@ -22,5 +22,24 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Caravaggio_-_Amor_Vincit_Omnia%2C_1602-03.jpg/960px-Caravaggio_-_Amor_Vincit_Omnia%2C_1602-03.jpg",
       "description": "An oil painting of a grinning adolescent Cupid trampling the emblems of music, science, warfare and statecraft, illustrating Virgil's line 'love conquers all.' Caravaggio's provocative realism made the picture famous in his own lifetime. It hangs in the Gemäldegalerie, Berlin."
     }
+  ],
+  "music": [
+    {
+      "title": "Psyché",
+      "year": "1678",
+      "kind": "opera",
+      "composer": "Jean-Baptiste Lully",
+      "description": "Lully's tragédie lyrique stages Cupid's secret love for Psyche — Eros as the unseen bridegroom whose identity must not be seen by lamp-light.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Psych%C3%A9_(opera)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Erotic",
+      "year": "—",
+      "kind": "language",
+      "description": "English erotic and French érotique descend from Eros — the god's name turned into the ordinary word for desire.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Eros"
+    }
   ]
 }

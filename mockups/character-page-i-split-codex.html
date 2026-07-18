@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Character Page I: Split Codex (E × F)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+  /* ============ CONCEPT I — SPLIT CODEX (E × F) ============
+     A true half-and-half: Observatory keeps the left of the screen
+     as a living sky; the right is not a glass card but Marginalia's
+     open illuminated column with engraved sidenotes. The two halves
+     talk: hover a paragraph and its stars flare in the sky; hover a
+     star and the paragraphs that tell of it are cued. */
+  * { margin: 0; box-sizing: border-box; }
+  :root {
+    --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+    --violet: #7c4dff; --cyan: #00e5ff; --pink: #ff4081; --soft: #c084fc;
+    --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+    --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14);
+    --gold: #fcd34d; --hero: #2dd4bf;
+  }
+  body { height: 100vh; overflow: hidden; color: var(--aether); font-family: 'Cormorant Garamond', serif; background: var(--cosmos-deep); display: flex; flex-direction: column; }
+
+  .top { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
+  .pill { border: 1px solid var(--glass-border); background: rgba(255,255,255,.06); border-radius: 999px; padding: 7px 16px; font: 500 12px Cinzel, serif; letter-spacing: .1em; color: var(--muted); cursor: pointer; text-decoration: none; }
+  .pill:hover { color: var(--aether); }
+  .brand { font: 600 12px Cinzel, serif; letter-spacing: .34em; color: rgba(241,245,249,.45); }
+  .brand em { font-style: normal; color: var(--gold); }
+
+  .split { flex: 1; display: flex; min-height: 0; }
+
+  /* ---------- Left: the living sky ---------- */
+  #skypane { position: relative; width: 45%; overflow: hidden; border-right: 1px solid rgba(255,255,255,.08); }
+  .neb { position: absolute; inset: -12%; background:
+      radial-gradient(48% 44% at 46% 40%, rgba(45,212,191,.15), transparent 68%),
+      radial-gradient(44% 42% at 10% 84%, rgba(124,77,255,.2), transparent 70%),
+      radial-gradient(30% 26% at 80% 10%, rgba(0,229,255,.1), transparent 70%); }
+  .stars { position: absolute; inset: 0; background-image:
+      radial-gradient(1px 1px at 13% 21%, rgba(241,245,249,.7), transparent),
+      radial-gradient(1px 1px at 27% 68%, rgba(241,245,249,.4), transparent),
+      radial-gradient(1.5px 1.5px at 44% 33%, rgba(192,132,252,.5), transparent),
+      radial-gradient(1px 1px at 58% 81%, rgba(241,245,249,.45), transparent),
+      radial-gradient(1.4px 1.4px at 72% 24%, rgba(0,229,255,.45), transparent),
+      radial-gradient(1px 1px at 86% 59%, rgba(241,245,249,.5), transparent),
+      radial-gradient(1.3px 1.3px at 9% 90%, rgba(252,211,77,.35), transparent); }
+  #system { position: absolute; left: 50%; top: 46%; width: 0; height: 0; }
+  .ring { position: absolute; left: 0; top: 0; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(255,255,255,.09); }
+  .ring.r1 { width: 210px; height: 210px; border-color: rgba(252,211,77,.2); }
+  .ring.r2 { width: 340px; height: 340px; }
+  .ring.r3 { width: 458px; height: 458px; border-style: dotted; border-color: rgba(96,165,250,.28); }
+  .ring.r4 { width: 566px; height: 566px; border-style: dashed; border-color: rgba(244,114,182,.22); }
+  #core { position: absolute; left: 0; top: 0; width: 36px; height: 36px; transform: translate(-50%,-50%); border-radius: 50%; background: radial-gradient(circle at 38% 34%, #ccfbf1, var(--hero) 55%, #0d9488); box-shadow: 0 0 28px 10px rgba(45,212,191,.7), 0 0 100px 40px rgba(45,212,191,.28); animation: beat 4.2s ease-in-out infinite; }
+  @keyframes beat { 0%,100% { transform: translate(-50%,-50%) scale(1); } 50% { transform: translate(-50%,-50%) scale(1.08); } }
+  .rw { position: absolute; left: 0; top: 0; width: 0; height: 0; animation: spin linear infinite; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  #skypane.hold .rw { animation-play-state: paused; }
+  .body { position: absolute; transform: translate(-50%,-50%); border-radius: 50%; background: var(--c); width: var(--s,11px); height: var(--s,11px); cursor: pointer; box-shadow: 0 0 9px 3px var(--c), 0 0 22px 8px color-mix(in srgb, var(--c) 34%, transparent); transition: box-shadow .3s, opacity .3s; }
+  .body:hover { box-shadow: 0 0 15px 5px var(--c), 0 0 44px 15px color-mix(in srgb, var(--c) 55%, transparent); }
+  /* cross-talk states */
+  #skypane.cue .body { opacity: .22; }
+  #skypane.cue .body.lit { opacity: 1; box-shadow: 0 0 16px 6px var(--c), 0 0 52px 18px color-mix(in srgb, var(--c) 60%, transparent); }
+  #plate { position: absolute; left: 22px; bottom: 18px; font-size: 13.5px; color: var(--faint); font-style: italic; }
+  #plate .cst { font: 500 10.5px Cinzel, serif; letter-spacing: .3em; color: rgba(153,246,228,.75); font-style: normal; display: block; margin-bottom: 5px; }
+  #tell { position: fixed; pointer-events: none; z-index: 50; opacity: 0; transition: opacity .18s; background: rgba(20,12,48,.92); border: 1px solid rgba(45,212,191,.4); border-radius: 10px; padding: 7px 14px; white-space: nowrap; }
+  #tell b { display: block; font: 600 13px Cinzel, serif; letter-spacing: .12em; }
+  #tell i { font-size: 14.5px; color: var(--muted); }
+
+  /* ---------- Right: the illuminated column ---------- */
+  #read { flex: 1; overflow-y: auto; padding: 26px 44px 60px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.16) transparent; background: linear-gradient(270deg, rgba(5,2,15,.5), transparent 70%); }
+  #read::-webkit-scrollbar { width: 7px; }
+  #read::-webkit-scrollbar-thumb { background: rgba(255,255,255,.16); border-radius: 99px; }
+  .id { text-align: center; }
+  .id .over { font: 400 10.5px Cinzel, serif; letter-spacing: .5em; color: var(--faint); }
+  .id h1 { font: 700 46px Cinzel, serif; letter-spacing: .2em; padding-left: .2em; margin-top: 8px; text-shadow: 0 0 40px rgba(45,212,191,.5); }
+  .id .sub { font-style: italic; font-size: 17.5px; color: var(--muted); margin-top: 4px; }
+  .id .sub em { font-style: normal; color: #99f6e4; }
+  .rule { display: flex; align-items: center; gap: 14px; max-width: 380px; margin: 20px auto 0; }
+  .rule .ln { flex: 1; height: 3px; border-top: 1px solid rgba(241,245,249,.22); border-bottom: 1px solid rgba(241,245,249,.1); }
+  .rule .st { width: 7px; height: 7px; border-radius: 50%; background: var(--hero); box-shadow: 0 0 10px 3px rgba(45,212,191,.65); }
+  .lensbar { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 22px 0 0; }
+  .lensbar .told { font-style: italic; font-size: 16px; color: var(--faint); }
+  .lens { display: flex; gap: 4px; background: var(--glass); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 4px; }
+  .lens button { padding: 7px 15px; border-radius: 999px; border: 1px solid transparent; background: none; color: rgba(226,232,240,.55); font: 500 12px Cinzel, serif; letter-spacing: .08em; cursor: pointer; }
+  .lens button:hover { color: var(--aether); }
+  .lens button.on { background: rgba(192,132,252,.22); border-color: rgba(192,132,252,.5); color: #e9d5ff; }
+  .sect { text-align: center; font: 500 11.5px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin: 34px 0 26px; }
+  .pgrid { display: grid; grid-template-columns: minmax(0,1fr) 196px; column-gap: 36px; row-gap: 30px; max-width: 860px; margin: 0 auto; }
+  .para { position: relative; font-size: 19px; line-height: 1.65; color: rgba(241,245,249,.92); transition: opacity .35s; padding-left: 14px; border-left: 1px solid transparent; cursor: default; }
+  .para .cap { float: left; font: 600 64px/0.8 Cinzel, serif; color: var(--gold); padding: 9px 11px 0 0; text-shadow: 0 0 24px rgba(252,211,77,.45); }
+  .pair.cued .para { border-left-color: rgba(45,212,191,.65); }
+  .pair.dimmed .para, .pair.dimmed .note { opacity: .3; }
+  .note { position: relative; padding-left: 16px; font-size: 14px; line-height: 1.5; color: var(--faint); border-left: 1px solid rgba(241,245,249,.14); align-self: start; transition: opacity .35s; }
+  .note .num { font: 600 11.5px Cinzel, serif; letter-spacing: .18em; color: var(--muted); display: block; margin-bottom: 3px; }
+  .note .who { font-variant: small-caps; letter-spacing: .06em; font-size: 14.5px; }
+  .note .cite { display: block; font-style: italic; margin-top: 2px; }
+  .pair { display: contents; }
+  .pair.hidden .para, .pair.hidden .note { opacity: .13; pointer-events: none; }
+  .empty { grid-column: 1 / -1; display: none; text-align: center; font-style: italic; font-size: 17.5px; color: var(--faint); }
+  .pgrid.void .empty { display: block; }
+  .dqm { position: relative; color: var(--soft); }
+  .dqm:hover::after { content: 'Told differently in other tellings — change the lens above'; position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; background: var(--cosmos-raised); border: 1px solid rgba(192,132,252,.4); border-radius: 8px; padding: 5px 12px; font-size: 14px; color: var(--aether); z-index: 9; }
+  .hint { text-align: center; font-style: italic; font-size: 13.5px; color: var(--faint); margin-top: 8px; }
+
+  .registers { max-width: 860px; margin: 44px auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+  .reg .head { display: flex; align-items: center; gap: 12px; font: 500 11px Cinzel, serif; letter-spacing: .3em; color: var(--faint); margin-bottom: 14px; }
+  .reg .head .line { flex: 1; height: 1px; background: rgba(255,255,255,.1); }
+  .reg ul { list-style: none; }
+  .reg li { display: flex; align-items: baseline; gap: 10px; padding: 6px 0; border-bottom: 1px dotted rgba(241,245,249,.1); font-size: 16.5px; cursor: pointer; }
+  .reg li:hover { color: #fde68a; }
+  .reg li em { margin-left: auto; font-size: 14px; color: var(--faint); }
+  footer { text-align: center; margin-top: 40px; font-style: italic; font-size: 13.5px; color: var(--faint); }
+
+  @media (max-width: 860px) {
+    body { height: auto; overflow: auto; flex-direction: column; }
+    .split { flex-direction: column; }
+    #skypane { width: 100%; height: 46vh; border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+    #system { transform: scale(.62); }
+    #read { overflow: visible; padding: 22px 20px 50px; }
+    .pgrid { grid-template-columns: 1fr; }
+    .note { border-left: none; padding: 0; margin-top: -18px; font-size: 13px; }
+    .registers { grid-template-columns: 1fr; gap: 30px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+  <div class="top">
+    <a class="pill" href="#">← GALAXY</a>
+    <div class="brand">ICARUS <em>ATLAS</em></div>
+  </div>
+  <div id="tell"><b></b><i></i></div>
+
+  <div class="split">
+    <!-- Left half: the heavens -->
+    <div id="skypane">
+      <div class="neb"></div>
+      <div class="stars"></div>
+      <div id="system">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="ring r4"></div>
+        <div id="core"></div>
+        <div id="orbits"></div>
+      </div>
+      <div id="plate">
+        <span class="cst">α PER · THE HERO'S SKY</span>
+        hover a star to name it — or hover the prose,<br>and watch its stars flare
+      </div>
+    </div>
+
+    <!-- Right half: the illuminated column -->
+    <div id="read">
+      <div class="id">
+        <div class="over">THE CODEX OF</div>
+        <h1>PERSEUS</h1>
+        <div class="sub">Perseus (Περσεύς) · <em>Hero</em> · the Gorgon-slayer · founder of Mycenae</div>
+        <div class="rule"><span class="ln"></span><span class="st"></span><span class="ln"></span></div>
+      </div>
+
+      <div class="lensbar">
+        <span class="told">told after</span>
+        <div class="lens" id="lens">
+          <button class="on" data-l="consensus">All tellers</button>
+          <button data-l="apollodorus">Apollodorus</button>
+          <button data-l="ovid">Ovid</button>
+          <button data-l="hyginus">Hyginus</button>
+        </div>
+      </div>
+
+      <div class="sect">THE STORY</div>
+      <div class="pgrid" id="pgrid">
+        <div class="pair" data-src="apollodorus hyginus" data-bodies="zeus danae acrisius dictys">
+          <p class="para"><span class="cap">B</span>orn in a subterranean bronze chamber after Zeus visited his mother Danaë in a shower of gold, Perseus was cast into the sea in a wooden chest by his paranoid grandfather Acrisius. He washed ashore on Seriphus, where he was raised by the fisherman Dictys.</p>
+          <aside class="note"><span class="num">I</span><span class="who">Apollodorus · Hyginus</span><span class="cite">Bibliotheca 2.4.1 · Fabulae 63</span></aside>
+        </div>
+        <div class="pair" data-src="apollodorus ovid" data-bodies="polydectes medusa hermes athena">
+          <p class="para">To protect his mother from the unwanted advances of King Polydectes, Perseus embarked on a seemingly impossible quest to retrieve the head of the Gorgon Medusa. Guided by Hermes and Athena, he acquired winged sandals, a magic wallet, and the cap of Hades<span class="dqm"> ⚖</span>. He beheaded Medusa and turned his enemies to stone.</p>
+          <aside class="note"><span class="num">II</span><span class="who">Apollodorus · Ovid</span><span class="cite">Bibliotheca 2.4.2–3 · Metamorphoses 4.740</span></aside>
+        </div>
+        <div class="pair" data-src="apollodorus hyginus pausanias" data-bodies="andromeda acrisius">
+          <p class="para">After rescuing and marrying the Aethiopian princess Andromeda, he returned to Greece. Fulfilling an ancient prophecy, he accidentally killed his grandfather Acrisius with a stray discus. Ashamed to take the throne of Argos, he exchanged kingdoms with his cousin Megapenthes and founded the mighty fortress of Mycenae.</p>
+          <aside class="note"><span class="num">III</span><span class="who">Apollodorus · Hyginus · Pausanias</span><span class="cite">Bibliotheca 2.4.4 · Fabulae 273 · Paus. 2.16.3</span></aside>
+        </div>
+        <p class="empty">Nothing of this figure survives under this teller — choose another lens above.</p>
+      </div>
+      <div class="hint">hover a paragraph — its stars flare on the left · hover a star — its paragraphs are cued</div>
+
+      <div class="registers">
+        <div class="reg">
+          <div class="head">APPEARS IN THE MYTHS<span class="line"></span></div>
+          <ul>
+            <li>Birth at Seriphos<em>the chest on the waves</em></li>
+            <li>The Gorgon Medusa<em>the beheading</em></li>
+            <li>Andromeda Rescued<em>the sea monster</em></li>
+            <li>Perseus at the Feast<em>the petrified court</em></li>
+            <li>Return and Mycenae<em>the stray discus</em></li>
+          </ul>
+        </div>
+        <div class="reg">
+          <div class="head">DWELT AT<span class="line"></span></div>
+          <ul>
+            <li>Seriphos<em>raised ashore</em></li>
+            <li>Argos<em>the throne refused</em></li>
+            <li>Mycenae<em>founder</em></li>
+            <li>Tiryns<em>exchanged kingdom</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>Concept I — Split Codex (E × F) · half sky, half manuscript — and the two halves answer each other</footer>
+    </div>
+  </div>
+
+<script>
+  // The orbit system; body keys match the prose data-bodies.
+  const BODIES = [
+    { k: 'zeus', n: 'Zeus', r: 'father', ring: 105, a: 24,  c: '#fcd34d', s: 13, t: 95 },
+    { k: 'danae', n: 'Danaë', r: 'mother', ring: 105, a: 200, c: '#e5e7eb', s: 11, t: 95 },
+    { k: 'andromeda', n: 'Andromeda', r: 'wife', ring: 170, a: 320, c: '#e5e7eb', s: 12, t: 135 },
+    { k: 'perses', n: 'Perses', r: 'son', ring: 170, a: 60,  c: '#e5e7eb', s: 8,  t: 135 },
+    { k: 'electryon', n: 'Electryon', r: 'son', ring: 170, a: 130, c: '#e5e7eb', s: 8, t: 135 },
+    { k: 'gorgophone', n: 'Gorgophone', r: 'daughter', ring: 170, a: 190, c: '#e5e7eb', s: 8, t: 135 },
+    { k: 'athena', n: 'Athena', r: 'guide', ring: 229, a: 10,  c: '#fcd34d', s: 10, t: 175 },
+    { k: 'hermes', n: 'Hermes', r: 'guide', ring: 229, a: 150, c: '#60a5fa', s: 10, t: 175 },
+    { k: 'dictys', n: 'Dictys', r: 'foster father', ring: 229, a: 255, c: '#e5e7eb', s: 8, t: 175 },
+    { k: 'medusa', n: 'Medusa', r: 'slain', ring: 283, a: 100, c: '#f472b6', s: 11, t: 215 },
+    { k: 'polydectes', n: 'Polydectes', r: 'petrified', ring: 283, a: 215, c: '#e5e7eb', s: 9, t: 215 },
+    { k: 'acrisius', n: 'Acrisius', r: 'grandfather · the prophecy', ring: 283, a: 335, c: '#e5e7eb', s: 9, t: 215 },
+  ];
+  const orbits = document.getElementById('orbits');
+  BODIES.forEach(b => {
+    const w = document.createElement('div');
+    w.className = 'rw';
+    w.style.animationDuration = b.t + 's';
+    w.style.transform = `rotate(${b.a}deg)`;
+    const s = document.createElement('div');
+    s.className = 'body';
+    s.style.setProperty('--c', b.c);
+    s.style.setProperty('--s', b.s + 'px');
+    s.style.left = b.ring + 'px'; s.style.top = '0px';
+    s.dataset.k = b.k; s.dataset.n = b.n; s.dataset.r = b.r;
+    w.appendChild(s); orbits.appendChild(w);
+  });
+
+  const skypane = document.getElementById('skypane'), tell = document.getElementById('tell');
+  const pairs = [...document.querySelectorAll('.pair')];
+
+  // Hover a star: name it, halt the sky, cue its paragraphs.
+  skypane.addEventListener('mouseover', e => {
+    const b = e.target.closest('.body'); if (!b) return;
+    skypane.classList.add('hold');
+    tell.querySelector('b').textContent = b.dataset.n;
+    tell.querySelector('i').textContent = b.dataset.r;
+    tell.style.opacity = 1;
+    pairs.forEach(p => {
+      const has = (p.dataset.bodies || '').split(' ').includes(b.dataset.k);
+      p.classList.toggle('cued', has);
+      p.classList.toggle('dimmed', !has);
+    });
+  });
+  skypane.addEventListener('mousemove', e => {
+    if (tell.style.opacity === '1') { tell.style.left = (e.clientX + 16) + 'px'; tell.style.top = (e.clientY - 10) + 'px'; }
+  });
+  skypane.addEventListener('mouseout', e => {
+    if (!e.target.closest('.body')) return;
+    skypane.classList.remove('hold'); tell.style.opacity = 0;
+    pairs.forEach(p => p.classList.remove('cued', 'dimmed'));
+  });
+
+  // Hover the prose: its stars flare, the rest of the sky recedes.
+  const bodyEls = [...document.querySelectorAll('.body')];
+  pairs.forEach(p => {
+    const para = p.querySelector('.para'); if (!para) return;
+    para.addEventListener('mouseenter', () => {
+      const keys = (p.dataset.bodies || '').split(' ');
+      skypane.classList.add('cue', 'hold');
+      bodyEls.forEach(b => b.classList.toggle('lit', keys.includes(b.dataset.k)));
+    });
+    para.addEventListener('mouseleave', () => {
+      skypane.classList.remove('cue', 'hold');
+      bodyEls.forEach(b => b.classList.remove('lit'));
+    });
+  });
+
+  // Lens.
+  const lens = document.getElementById('lens'), pgrid = document.getElementById('pgrid');
+  lens.addEventListener('click', e => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    lens.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === btn));
+    const l = btn.dataset.l; let seen = 0;
+    pairs.forEach(p => {
+      const keep = l === 'consensus' || p.dataset.src.split(' ').includes(l);
+      p.classList.toggle('hidden', !keep); if (keep) seen++;
+    });
+    pgrid.classList.toggle('void', seen === 0);
+  });
+</script>
+</body>
+</html>

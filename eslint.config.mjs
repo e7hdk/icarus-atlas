@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Harness worktrees checked out inside the repo carry their own .next /
+    // node_modules; the root-relative patterns above don't reach them.
+    ".claude/**",
   ]),
 ]);
 

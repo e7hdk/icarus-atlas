@@ -31,6 +31,10 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm corpus:sync` / `pnpm corpus:verify` — download and verify the pinned local source corpus
 - `pnpm corpus:search <query>` — search citation-bearing local passages before web research
 - `pnpm validate-layout` — generation ordering, family proximity, and deterministic-position checks
+- `pnpm validate-ephemeris` — the Ephemeris gate: eligibility probes, Athens-midnight calendar, cycle determinism, golden pick sequence (see docs/EPHEMERIS_PLAN.md §8; refresh goldens with `--print-golden`)
+- `pnpm bake-attic-calendar` — regenerate the committed reconstructed Attic calendar (`data/generated/attic-calendar.json`, astronomy-engine; convention in the script header)
+- `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
+- `pnpm verify:culture [ids …]` — network gate for the Legacy shelves: link liveness + Commons license check (run after culture batches; separate from the offline validate-data)
 
 ## Directory map
 
@@ -73,7 +77,7 @@ A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge +
 
 ## Theme
 
-Decided: **Aether Nebula** (vivid nebula cosmos, glassmorphism panels, neon type glows) paired with **classical serif typography** (Cinzel for display, Cormorant Garamond for body). All design tokens live in `src/styles/theme.css` (Tailwind v4 `@theme`); WebGL star colors mirror them in `TYPE_GLOW` (`src/types/character.ts`) — keep the two in sync. Build UI from the primitives in `src/components/ui/` (GlassPanel, TypeBadge, …) instead of ad-hoc styling, so the theme stays controllable from one place.
+Decided: **Aether Nebula** (vivid nebula cosmos, glassmorphism panels, neon type glows) paired with **classical serif typography** (Cinzel for display, Cormorant Garamond for body). All design tokens live in `src/styles/theme.css` (Tailwind v4 `@theme`); WebGL star colors mirror them in `TYPE_GLOW` (`src/types/character.ts`) — keep the two in sync. The **Gilded** chrome is always on (`data-theme='gilded'` served on `<html>` from the root layout; no toggle) and adds gold as jewelry at focal points only — wordmark, active door, a gold thread under the bar, and ornate corner pieces on the reading fragments alone; panels and functional chrome stay clean (scoped rules in globals.css; no token changes, so readability and the WebGL sky are untouched). Build UI from the primitives in `src/components/ui/` (GlassPanel, TypeBadge, …) instead of ad-hoc styling, so the theme stays controllable from one place.
 
 ## Feature in progress: Areas — the map & city skies
 
@@ -91,7 +95,7 @@ Geography becomes the second major axis beside the galaxy. Status: IN PROGRESS �
 
 ## Feature: Stories — the mythic sagas
 
-The third door beside Galaxy and Areas (the main HUD carries a GALAXY · AREAS · STORIES nav). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate.
+The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS · MYTHS nav; the Heortologion at `/festivals` is an Ephemeris satellite page, entered from the daily card, not a nav door). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate.
 
 ## Current status
 

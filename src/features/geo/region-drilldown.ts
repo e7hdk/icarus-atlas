@@ -5,6 +5,8 @@ export interface RegionMetaEntry {
   centroid: [number, number];
   bbox: [number, number, number, number];
   labelNudge: [number, number];
+  /** Simplified WGS84 rings used for hit-testing only. */
+  polygons?: [number, number][][];
 }
 
 export interface RegionsMetaFile {
@@ -30,6 +32,41 @@ function bboxArea(bbox: RegionMetaEntry['bbox']): number {
   return Math.max(0, east - west) * Math.max(0, north - south);
 }
 
+function pointOnSegment(
+  lon: number,
+  lat: number,
+  start: [number, number],
+  end: [number, number],
+): boolean {
+  const cross = (lon - start[0]) * (end[1] - start[1]) -
+    (lat - start[1]) * (end[0] - start[0]);
+  if (Math.abs(cross) > 1e-9) return false;
+  return lon >= Math.min(start[0], end[0]) && lon <= Math.max(start[0], end[0]) &&
+    lat >= Math.min(start[1], end[1]) && lat <= Math.max(start[1], end[1]);
+}
+
+function pointInRing(lon: number, lat: number, ring: [number, number][]): boolean {
+  let inside = false;
+  for (let i = 0, previous = ring.length - 1; i < ring.length; previous = i++) {
+    const a = ring[previous];
+    const b = ring[i];
+    if (pointOnSegment(lon, lat, a, b)) return true;
+    if (
+      (a[1] > lat) !== (b[1] > lat) &&
+      lon < ((b[0] - a[0]) * (lat - a[1])) / (b[1] - a[1]) + a[0]
+    ) {
+      inside = !inside;
+    }
+  }
+  return inside;
+}
+
+function containsPoint(lon: number, lat: number, entry: RegionMetaEntry): boolean {
+  if (!pointInBbox(lon, lat, entry.bbox)) return false;
+  if (!entry.polygons?.length) return true;
+  return entry.polygons.some((ring) => pointInRing(lon, lat, ring));
+}
+
 /** Smallest containing top-level region for a map centre point. */
 export function pickTopRegionAtPoint(
   lon: number,
@@ -37,13 +74,21 @@ export function pickTopRegionAtPoint(
   meta: RegionsMetaFile,
 ): string | null {
   let best: { id: string; area: number } | null = null;
+  let bboxFallback: { id: string; area: number } | null = null;
   for (const [id, entry] of Object.entries(meta.regions)) {
     if (entry.level !== 'region') continue;
     if (!pointInBbox(lon, lat, entry.bbox)) continue;
     const area = bboxArea(entry.bbox);
+    if (!containsPoint(lon, lat, entry)) {
+      if (!bboxFallback || area < bboxFallback.area) bboxFallback = { id, area };
+      continue;
+    }
     if (!best || area < best.area) best = { id, area };
   }
-  return best?.id ?? null;
+  // Gazetteer points can sit a few metres offshore. In that narrow case the
+  // smallest bbox preserves the legacy island-friendly fallback without ever
+  // overriding a genuine polygon hit (as it previously did around Thebes).
+  return best?.id ?? bboxFallback?.id ?? null;
 }
 
 /** Region under the cursor — sub-region when drilled in, else top-level. */
@@ -73,7 +118,7 @@ export function pickSubRegionAtPoint(
   let best: { id: string; area: number } | null = null;
   for (const [id, entry] of Object.entries(meta.regions)) {
     if (entry.level !== 'subregion' || entry.parent !== parentId) continue;
-    if (!pointInBbox(lon, lat, entry.bbox)) continue;
+    if (!containsPoint(lon, lat, entry)) continue;
     const area = bboxArea(entry.bbox);
     if (!best || area < best.area) best = { id, area };
   }

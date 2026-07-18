@@ -1,0 +1,16 @@
+{
+  "id": "karneia",
+  "name": "Karneia",
+  "greekName": "Κάρνεια",
+  "deities": ["apollo"],
+  "place": "sparta",
+  "atticDate": { "month": "metageitnion", "days": [7, 15], "approximate": true },
+  "conventionalDates": ["08-07", "08-08", "08-09", "08-10", "08-11", "08-12", "08-13", "08-14", "08-15"],
+  "summary": "Sparta's nine days of Apollo Karneios, the Dorian holy month that kept armies at home — atonement, Pausanias tells, for the killing of the seer Carnus on the march of the Heracleidae.",
+  "testimonia": [
+    "Pausanias 3.13.3–5 (Apollo Carneus and the seer Carnus — the founding)",
+    "Thucydides 5.54 (the Karneia as the Dorian holy month)",
+    "Athenaeus 4.141e–f (the nine days and the feast of tents)",
+    "Spartan month Karneios ≈ Attic Metageitnion — the Attic mapping is a convention"
+  ]
+}

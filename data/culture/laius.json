@@ -1,0 +1,50 @@
+{
+  "id": "laius",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Edipo re",
+      "year": "1967",
+      "medium": "film",
+      "director": "Pier Paolo Pasolini",
+      "description": "Pasolini's desert tragedy keeps Laius in the road encounter — the father who exposes the infant and dies at the crossroads he tried to outrun.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Edipo_re"
+    },
+    {
+      "title": "Oedipus the King",
+      "year": "1968",
+      "medium": "film",
+      "director": "Philip Saville",
+      "description": "Saville's British Oedipus still turns on Laius' murder: the king whose oracle and exposure set the recognition in motion.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_the_King_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Latin ritual names the slain king as the plague's cause — Laius as the corpse the investigation cannot leave buried.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex_(Stravinsky)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Oedipus Rex",
+      "year": "c. 429 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' Theban king who exposed his son and died at the fork in the road — Laius as the first link in the recognition that blinds Oedipus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex"
+    },
+    {
+      "title": "Oedipus",
+      "year": "c. 1st century AD",
+      "kind": "other",
+      "creator": "Seneca the Younger",
+      "description": "Seneca's bloodier Theban play still pivots on Laius' ghost and the crime at the crossroads — the father whose murder the son must confess.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_(Seneca)"
+    }
+  ]
+}

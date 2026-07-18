@@ -44,3 +44,11 @@ Narrative order in Homer differs (Books 1–4 present, 5–8 present, 9–12 fla
 ```bash
 pnpm validate-data
 ```
+
+## 6. M13.1 micro-batch (Nostos, 2026-07-17)
+
+Two nodes + one extension, corpus-verified (docs/NOSTOS_PLAN.md §7):
+
+- **`mentor-ithaca`** — Odysseus' guardian of the house (Od. 2.225–241; Athena's guise 2.267–268, 2.399–406, 22.205–240, 24.502–548). **Same-name hazard:** `mentor-eurystheus` (Heraclid-cycle homonym) and `mentor-trojan` already exist — the bare id `mentor` stays unused.
+- **`argos-dog`** — the hound (Od. 17.290–327), `type: creature`, `kinds: ['hound']` (new controlled kind, NOSTOS_PLAN D10). **Same-name hazard:** `argus-panoptes`, `argus-arestor`, `argus-colchis`, `argus-eponym`, `argeus-argos` are all different figures; the city is `argos`.
+- **`ino`** — Leucothea aspect added (epithets + Homer summary/story fragments, Od. 5.333–353, 5.458–462); no separate `leucothea` node — dual identity on one star, Styx precedent.

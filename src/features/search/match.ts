@@ -1,8 +1,15 @@
 import type { Character } from '@/types/character';
 
+/** The slice of a character the search needs — the global ⌘K overlay ships
+ *  this for every star on every page, so it stays deliberately narrow. */
+export type SearchableCharacter = Pick<
+  Character,
+  'id' | 'name' | 'greekName' | 'romanName' | 'type' | 'epithets' | 'domains'
+>;
+
 /** One character matched by a search query, with the matched range for highlighting. */
 export interface SearchHit {
-  character: Character;
+  character: SearchableCharacter;
   /** Field the query matched; non-name fields render as a context line under the name. */
   field: 'name' | 'romanName' | 'greekName' | 'epithet' | 'domain';
   /** Exact field value the match was found in. */
@@ -56,7 +63,11 @@ export function matchIn(
 }
 
 /** Rank characters against a query; each character contributes its single best field match. */
-export function searchCharacters(characters: Character[], rawQuery: string, limit = 8): SearchHit[] {
+export function searchCharacters(
+  characters: SearchableCharacter[],
+  rawQuery: string,
+  limit = 8,
+): SearchHit[] {
   const query = fold(rawQuery.trim());
   if (!query) return [];
 

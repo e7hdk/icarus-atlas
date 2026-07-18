@@ -16,6 +16,14 @@ export function Legend() {
           {type}
         </span>
       ))}
+      <span className="flex items-center gap-2 font-display text-[10px] uppercase tracking-[0.18em] text-aether-muted">
+        <span
+          aria-hidden
+          className="w-5 border-t border-dashed border-nebula-soft/80"
+          style={{ boxShadow: '0 0 6px rgba(192, 132, 252, 0.45)' }}
+        />
+        constellation of the week
+      </span>
     </div>
   );
 }

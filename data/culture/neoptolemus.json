@@ -29,5 +29,25 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pompeii_-_Casa_di_Marco_Lucrezio_Frontone_-_Winter_Triclinium.jpg/960px-Pompeii_-_Casa_di_Marco_Lucrezio_Frontone_-_Winter_Triclinium.jpg",
       "description": "This Roman wall painting from the winter triclinium of the Casa di Marco Lucrezio Frontone in Pompeii illustrates the end of Neoptolemus, drawn from Euripides' tragedy Andromache. Orestes strikes down Neoptolemus at the altar of Apollo at Delphi, while the despairing Hermione, wife of Neoptolemus but once promised to Orestes, kneels at the foot of the altar. The fresco completes the hero's arc with the same sacrilegious violence he had once inflicted on others, now turned against him in the god's own sanctuary."
     }
+  ],
+  "films": [
+    {
+      "title": "The Trojan Women",
+      "year": "1971",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Cacoyannis' Euripides keeps Neoptolemus offstage as fate: Andromache learns she is his prize, and Astyanax will die before she is led away.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Ermione",
+      "year": "1819",
+      "kind": "opera",
+      "composer": "Gioachino Rossini",
+      "description": "Rossini's Pyrrhus is Neoptolemus under his other name: Achilles' son as Epirote king, torn between Hermione and the captive Andromache.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ermione"
+    }
   ]
 }

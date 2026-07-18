@@ -29,5 +29,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Theseus_Slaying_Minotaur_by_Barye.jpg/960px-Theseus_Slaying_Minotaur_by_Barye.jpg",
       "description": "The French Romantic sculptor Antoine-Louis Barye, celebrated as a master of animal anatomy, cast this dramatic bronze of Theseus wrestling the bull-headed Minotaur to the ground, the hero's body coiled in muscular tension as he forces his monstrous adversary down. Modeled in 1843, the work fuses Barye's naturalistic vigor with the heroic grandeur of myth. It is held in the collection of the Baltimore Museum of Art."
     }
+  ],
+  "films": [
+    {
+      "title": "Immortals",
+      "year": "2011",
+      "medium": "film",
+      "director": "Tarsem Singh",
+      "description": "Tarsem's hyper-stylised Theseus fights through a labyrinthine underworld toward a Minotaur and a war for the gods — Athens' hero restaged as bronze-and-blood spectacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Immortals_(2011_film)"
+    },
+    {
+      "title": "Minotaur, the Wild Beast of Crete",
+      "year": "1960",
+      "medium": "film",
+      "director": "Silvio Amadio",
+      "description": "Italian peplum sends Theseus to Crete for Ariadne and the bull-headed beast — the labyrinth myth in sword-and-sandal shorthand.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "The King Must Die",
+      "year": "1958",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's Theseus grows from Troezen to the bull-court of Crete — the hero who will take the labyrinth written as historical novel.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_King_Must_Die"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Theseus waits in Elysium as a boastful champion boss — the Athenian hero forever replaying his glory opposite the Minotaur.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
   ]
 }

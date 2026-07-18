@@ -8,8 +8,10 @@ const TABS = [
 
 export type MainTab = (typeof TABS)[number]['key'];
 
-/** The three doors of the atlas — shared by the galaxy HUD and the 2D pages. */
-export function MainNav({ active }: { active: MainTab }) {
+/** The three doors of the atlas — shared by the galaxy HUD and the 2D pages.
+ *  `active: null` keeps every door dim (satellite pages like the
+ *  Heortologion, which belongs to the Ephemeris layer, not a world). */
+export function MainNav({ active }: { active: MainTab | null }) {
   return (
     <nav className="pointer-events-auto flex gap-1 rounded-full border border-glass-border bg-glass p-1 backdrop-blur-xl">
       {TABS.map((tab) => (
@@ -18,7 +20,7 @@ export function MainNav({ active }: { active: MainTab }) {
           href={tab.href}
           className={`rounded-full px-3 py-2.5 font-display text-[11px] tracking-[0.16em] transition-colors sm:px-4 sm:py-1.5 ${
             active === tab.key
-              ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
+              ? 'nav-active border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
               : 'border border-transparent text-aether-muted hover:text-aether'
           }`}
         >

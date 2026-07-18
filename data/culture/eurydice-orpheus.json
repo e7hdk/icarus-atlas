@@ -1,0 +1,49 @@
+{
+  "id": "eurydice-orpheus",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Black Orpheus",
+      "year": "1959",
+      "medium": "film",
+      "director": "Marcel Camus",
+      "description": "Eurydice as a country girl at Rio's Carnival — Camus' Palme d'Or retelling makes her the myth's living heart.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Black_Orpheus"
+    }
+  ],
+  "music": [
+    {
+      "title": "Orfeo ed Euridice",
+      "year": "1762",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck names both lovers in the title — Euridice's loss drives the reform opera's most famous lament.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orfeo_ed_Euridice"
+    },
+    {
+      "title": "Hadestown",
+      "year": "2019",
+      "kind": "stage",
+      "composer": "Anaïs Mitchell",
+      "description": "Mitchell's Broadway Eurydice walks into Hades' industrial underworld of her own will — the myth retold from her side.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Eurydice",
+      "year": "—",
+      "kind": "other",
+      "description": "The bride who dies on her wedding day and almost returns — Eurydice remains the name for love lost by a backward glance.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Eurydice"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Orpheus and Eurydice appear as underworld NPCs — the game restores their song after the glance that broke them.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
+  ]
+}

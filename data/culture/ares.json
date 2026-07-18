@@ -22,5 +22,48 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Los_horrores_de_la_guerra.jpg/960px-Los_horrores_de_la_guerra.jpg",
       "description": "A Baroque oil painting in which Mars is dragged toward destruction by the Fury Alecto while Venus vainly tries to hold him back. Painted during the Thirty Years' War as an allegory of a Europe ravaged by conflict, it is held in the Palazzo Pitti, Florence."
     }
+  ],
+  "films": [
+    {
+      "title": "Wonder Woman",
+      "year": "2017",
+      "medium": "film",
+      "director": "Patty Jenkins",
+      "description": "Jenkins' origin film makes Ares the war behind the War — the god of conflict as the secret architect of the twentieth century's slaughter, and Diana's true opponent.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)"
+    },
+    {
+      "title": "Xena: Warrior Princess",
+      "year": "1995–2001",
+      "medium": "tv",
+      "description": "Kevin Smith's Ares is the series' recurring dark flirtation: the god of war as leather-clad tempter, ally and adversary across six seasons of syndicated myth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Xena:_Warrior_Princess"
+    },
+    {
+      "title": "Immortals",
+      "year": "2011",
+      "medium": "film",
+      "director": "Tarsem Singh",
+      "description": "Tarsem's bronze-and-blood Olympus puts Ares in the melee against the Titans — war incarnate in a fight staged like a living frieze.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Immortals_(2011_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "God of War",
+      "year": "2005",
+      "kind": "videogame",
+      "creator": "Santa Monica Studio",
+      "description": "The game that named a franchise: Kratos begins as Ares' pawn and ends as his killer, seizing the title God of War from the Olympian who forged him.",
+      "externalUrl": "https://en.wikipedia.org/wiki/God_of_War_(2005_video_game)"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Ares' boons are doom and blade — the god of war as a red-mist build, urging Zagreus to keep the blood flowing.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    }
   ]
 }

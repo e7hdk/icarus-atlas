@@ -15,5 +15,51 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hera_Campana_Louvre_Ma2283.jpg/960px-Hera_Campana_Louvre_Ma2283.jpg",
       "description": "A monumental marble statue of Hera, a Roman copy of the second century AD after a Greek original. The goddess stands veiled and crowned with a diadem, an image of regal, matronly dignity befitting the queen of Olympus. Named after the Campana collection from which it was acquired, the statue is now in the Louvre, Paris."
     }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "animation",
+      "director": "Ron Clements & John Musker",
+      "description": "Disney softens the queen of the gods into a warm stepmother — a deliberate rewrite of the jealous Hera of the labours — so the film's real antagonist can be Hades instead.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    },
+    {
+      "title": "Jason and the Argonauts",
+      "year": "1963",
+      "medium": "film",
+      "director": "Don Chaffey",
+      "description": "On Harryhausen's Olympus, Hera is Jason's quiet patron, tipping the divine scales while Zeus looks on — the goddess of marriage as a player in the Argonaut game.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "The Golden Apple",
+      "year": "1954",
+      "kind": "stage",
+      "composer": "Jerome Moross",
+      "description": "A through-sung Broadway retelling of the Judgement of Paris set in turn-of-the-century Washington state: Hera, Athena and Aphrodite compete for a golden apple at an angel-food bake-off.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Golden_Apple_(musical)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Wonder Woman Historia: The Amazons",
+      "year": "2021",
+      "kind": "comic",
+      "creator": "Kelly Sue DeConnick",
+      "description": "DeConnick's DC Black Label epic opens with Hera's rage and the forging of the Amazons — the queen of the gods as the mythic engine behind Wonder Woman's people.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_Historia:_The_Amazons"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's sequel brings Hera among the Olympian boon-givers: the goddess of marriage offers frost and family barbs as Melinoë fights Chronos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
   ]
 }

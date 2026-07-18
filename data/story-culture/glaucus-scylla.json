@@ -1,0 +1,39 @@
+{
+  "id": "glaucus-scylla",
+  "artworks": [
+    {
+      "title": "Circe Invidiosa",
+      "artist": "John William Waterhouse",
+      "year": "1892",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/J._W._Waterhouse_-_Circe_Invidiosa_-_Google_Art_Project.jpg/960px-J._W._Waterhouse_-_Circe_Invidiosa_-_Google_Art_Project.jpg",
+      "description": "Waterhouse's tall oil (Art Gallery of South Australia) freezes Ovid's jealousy: Circe pours emerald poison into the bay where Scylla will bathe, turning Glaucus' rejected love into the strait-monster of Messina."
+    }
+  ],
+  "music": [
+    {
+      "title": "Scylla et Glaucus",
+      "year": "1746",
+      "kind": "opera",
+      "composer": "Jean-Marie Leclair",
+      "description": "Leclair's only surviving tragédie en musique — Glaucus, Scylla, and Circe's revenge staged for the Paris Opéra from Ovid's Metamorphoses.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Scylla_et_glaucus"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Metamorphoses",
+      "year": "—",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Books 13–14: the fisherman-god loves Scylla, Circe loves him, and poison in the bay makes the dog-girt rock of the strait.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
+    },
+    {
+      "title": "Glaucus",
+      "year": "—",
+      "kind": "other",
+      "description": "The Anthedonian fisherman made sea-god — Scylla's rejected suitor whose name still means the blue-green deep.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Glaucus"
+    }
+  ]
+}

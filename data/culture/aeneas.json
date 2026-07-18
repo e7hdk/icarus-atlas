@@ -22,5 +22,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/%C3%89n%C3%A9e_et_Didon_-_Pierre-Narcisse_Gu%C3%A9rin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_762.jpg/960px-%C3%89n%C3%A9e_et_Didon_-_Pierre-Narcisse_Gu%C3%A9rin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_762.jpg",
       "description": "Oil painting by Pierre-Narcisse Guérin, now in the Musée du Louvre, Paris. In a scene from the opening books of Virgil's Aeneid, the Trojan hero recounts the fall of his city to Dido, queen of Carthage, as evening falls over her court — the telling that kindles the queen's fatal love."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle keeps Aeneas in the burning city — Aphrodite's son gathering the remnant that will, offscreen, become Rome.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's epic gives Aeneas his Virgilian exit: the survivor who walks out of the sack carrying the future.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Dido and Aeneas",
+      "year": "1688",
+      "kind": "opera",
+      "composer": "Henry Purcell",
+      "description": "Purcell's chamber opera for a girls' school ends with Dido's lament as Aeneas sails for Italy — the Trojan's duty staged as the cruelest courtesy in English music.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Dido_and_Aeneas"
+    },
+    {
+      "title": "Les Troyens",
+      "year": "1858",
+      "kind": "opera",
+      "composer": "Hector Berlioz",
+      "description": "Berlioz's vast Virgilian opera follows Aeneas from the fall of Troy to Dido's pyre — the hero of the Aeneid given a five-hour voice of brass and lament.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    }
   ]
 }

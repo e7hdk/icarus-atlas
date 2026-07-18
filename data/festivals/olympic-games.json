@@ -1,0 +1,17 @@
+{
+  "id": "olympic-games",
+  "name": "Olympic Games",
+  "greekName": "Ὀλύμπια",
+  "deities": ["zeus"],
+  "place": "olympia",
+  "panhellenic": true,
+  "games": { "cycleYears": 4 },
+  "atticDate": { "month": "hekatombaion", "approximate": true },
+  "aition": "pelops-and-oenomaus",
+  "summary": "The greatest of the crown games, held for Zeus at midsummer every fourth year in the Altis — founded, the Olympians' own tale ran, on Pelops' chariot victory over Oenomaus, whose mound stood beside the course.",
+  "testimonia": [
+    "Pausanias 5.7.6–5.8.5 (the foundings of the games)",
+    "Pindar, Olympian 1 (Pelops and the race as the games' charter myth)",
+    "The penteteric anchor joins the reconstructed calendar in M12.5 — no conventional dates in v1"
+  ]
+}

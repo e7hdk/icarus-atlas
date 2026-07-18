@@ -1,0 +1,45 @@
+{
+  "id": "calypso-and-scheria",
+  "artworks": [
+    {
+      "title": "Odysseus and Calypso",
+      "artist": "Arnold Böcklin",
+      "year": "1883",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Arnold_B%C3%B6cklin_008.jpg/960px-Arnold_B%C3%B6cklin_008.jpg",
+      "description": "Two figures who cannot meet: the nymph glowing against her red drapery at the cave-mouth, the hero a dark back on a dark rock, staring at the sea that is the only way home."
+    },
+    {
+      "title": "Nausicaa",
+      "artist": "Frederic Leighton",
+      "year": "c. 1878",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Nausicaa_%281878%29.jpg/960px-Nausicaa_%281878%29.jpg",
+      "description": "The Phaeacian princess pauses in a doorway, the ball games done — the girl on the edge of womanhood who found a salt-crusted stranger on the shore and led him to her father's hall."
+    }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "The miniseries gives Calypso's isle and the Phaeacian landing their screen duration — the last delays before Ithaca.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Calypso (mythology)",
+      "year": "—",
+      "kind": "other",
+      "description": "The nymph who keeps Odysseus seven years on Ogygia — love as detention until Hermes brings Zeus' release.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+    },
+    {
+      "title": "Odyssey",
+      "year": "—",
+      "kind": "other",
+      "description": "Books V–XIII — from Calypso's cave to Scheria's ships — are the poem's long road home after Troy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+    }
+  ]
+}

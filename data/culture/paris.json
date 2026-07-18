@@ -22,5 +22,41 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg/960px-Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg",
       "description": "Oil painting by the Spanish artist Enrique Simonet, now in the Museo de Málaga. Under the trees of Mount Ida, Hera, Athena and Aphrodite present themselves before Paris, who sits at the right in his herdsman's skins among his grazing flock, weighing the judgement that ancient tradition made the seed of the Trojan War."
     }
+  ],
+  "films": [
+    {
+      "title": "Troy",
+      "year": "2004",
+      "medium": "film",
+      "director": "Wolfgang Petersen",
+      "description": "Orlando Bloom's Paris is the lover who brings Helen home and the archer who finds Achilles' heel — the prince whose choice and whose arrow bookend Petersen's war.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(film)"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's Paris is the shepherd-prince of the Judgement and the abduction — the face that launches the widescreen fleet.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix retelling opens on the golden apple and stays with Paris' bargain — love as the spark that burns Ilion.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "music": [
+    {
+      "title": "The Golden Apple",
+      "year": "1954",
+      "kind": "stage",
+      "composer": "Jerome Moross",
+      "description": "Broadway's through-sung Homer pastiche makes Paris the judge at an angel-food bake-off — the Judgement of Paris restaged as a Washington-state town fair.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Golden_Apple_(musical)"
+    }
   ]
 }

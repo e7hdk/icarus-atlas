@@ -2,10 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import type { Character } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
-import { searchCharacters, type SearchHit } from '@/features/search/match';
+import {
+  searchCharacters,
+  type SearchHit,
+  type SearchableCharacter,
+} from '@/features/search/match';
 import { useGalaxyStore } from '@/features/galaxy/store';
 
 /** Command-palette search (⌘K). Matched substrings glow in the star's type color.
@@ -15,7 +18,7 @@ export function SearchOverlay({
   characters,
   navigate = false,
 }: {
-  characters: Character[];
+  characters: SearchableCharacter[];
   navigate?: boolean;
 }) {
   const searchOpen = useGalaxyStore((s) => s.searchOpen);
@@ -24,7 +27,13 @@ export function SearchOverlay({
   return <SearchDialog characters={characters} navigate={navigate} />;
 }
 
-function SearchDialog({ characters, navigate }: { characters: Character[]; navigate: boolean }) {
+function SearchDialog({
+  characters,
+  navigate,
+}: {
+  characters: SearchableCharacter[];
+  navigate: boolean;
+}) {
   const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);
   const select = useGalaxyStore((s) => s.select);
   const router = useRouter();

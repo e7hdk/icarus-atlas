@@ -1,0 +1,78 @@
+{
+  "id": "antigone",
+  "artworks": [
+    {
+      "title": "Antigone",
+      "artist": "Frederic Leighton",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Antigoneleigh.jpg/960px-Antigoneleigh.jpg",
+      "description": "Leighton's solitary Antigone stands in classical drapery — the Theban sister as a Victorian icon of conscience, poised between burial and death. The canvas isolates Sophocles' heroine without Creon or corpse, pure resolve made flesh."
+    },
+    {
+      "title": "Oedipus and Antigone",
+      "artist": "Antoni Brodowski",
+      "year": "1828",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Antoni_Brodowski_-_Oedipus_and_Antigone_-_MP_311_-_National_Museum_in_Warsaw.jpg/960px-Antoni_Brodowski_-_Oedipus_and_Antigone_-_MP_311_-_National_Museum_in_Warsaw.jpg",
+      "description": "Polish neoclassical canvas in the National Museum in Warsaw: the blind Oedipus leans on Antigone as she leads him into exile. Brodowski makes the sister the staff of Colonus — piety before the burial that will destroy her."
+    },
+    {
+      "title": "Antigone at the Bedside of Polynices",
+      "artist": "Jean-Joseph Benjamin-Constant",
+      "year": "1868",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Benjamin-Constant_Antigone_au_chevet_de_Polynice_%282007_6_1%29.jpg",
+      "description": "Benjamin-Constant's Antigone keeps vigil over Polynices' corpse — the sister who will sprinkle dust against Creon's decree. The painting stages the quiet moment before defiance becomes tragedy."
+    },
+    {
+      "title": "Ismene and Antigone Plead with Theseus",
+      "artist": "Nicolai Abildgaard",
+      "year": "1794",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg/960px-Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg",
+      "description": "Abildgaard's canvas in the Statens Museum for Kunst shows Antigone and Ismene before Theseus, begging for their father's protection at Colonus. Danish neoclassicism turns Sophocles' last play into a scene of sisterly embassy."
+    },
+    {
+      "title": "Antigone Giving Burial to Polynices",
+      "artist": "Sébastien Norblin",
+      "year": "1825",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/S%C3%A9bastien_Norblin_Antigone_et_Polynice.JPG",
+      "description": "Norblin's 1825 Prix de Rome painting (École des Beaux-Arts, Paris) shows Antigone burying Polynices against the city's ban. The handful of dust becomes the act that defines her — piety chosen over survival."
+    }
+  ],
+  "films": [
+    {
+      "title": "Antigone",
+      "year": "1961",
+      "medium": "film",
+      "director": "Yorgos Javellas",
+      "description": "Irene Papas' Antigone buries her brother against Creon's decree — Sophocles filmed in Greece, the sister who chooses the dead over the living law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(1961_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Antigone",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Arthur Honegger",
+      "description": "Honegger's opera, after Cocteau's compression of Sophocles, sets Antigone's defiance in stark modern harmony — the burial as an act of music.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Honegger)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Antigone",
+      "year": "c. 441 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' sister who buries Polynices against Creon's decree — still the West's central drama of conscience versus the city's law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Sophocles_play)"
+    },
+    {
+      "title": "Antigone",
+      "year": "1944",
+      "kind": "other",
+      "creator": "Jean Anouilh",
+      "description": "Anouilh's Occupation-era rewrite makes Antigone a quiet refusal under tyranny — the Theban sister as a wartime allegory that never names its Vichy Creon.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Anouilh_play)"
+    }
+  ]
+}

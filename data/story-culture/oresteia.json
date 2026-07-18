@@ -1,0 +1,50 @@
+{
+  "id": "oresteia",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Electra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "Cacoyannis films the Oresteia's core — the son returned, the axe, the mother — in stark Greek light.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(1962_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Elektra",
+      "year": "1909",
+      "kind": "opera",
+      "composer": "Richard Strauss",
+      "description": "Strauss' one-act nightmare of waiting and the axe — Hofmannsthal's Electra until Orestes strikes.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Elektra_(opera)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Oresteia",
+      "year": "458 BC",
+      "kind": "other",
+      "creator": "Aeschylus",
+      "description": "Aeschylus' only surviving trilogy — Agamemnon, the Libation Bearers, the Eumenides — still the West's map of blood-guilt turning into law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oresteia"
+    },
+    {
+      "title": "Electra (Sophocles play)",
+      "year": "c. 410 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' Electra waiting at Mycenae — sister and recognition before the matricide the Oresteia made inevitable.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(Sophocles_play)"
+    },
+    {
+      "title": "Electra (Euripides play)",
+      "year": "c. 420 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' rural Electra — the same revenge, colder and more uneasy, the Oresteia's blood without Aeschylus' civic closure.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(Euripides_play)"
+    }
+  ]
+}
