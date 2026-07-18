@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { loadAtlasData, loadCulture } from '@/features/characters/load';
+import { loadAtlasData, loadCulture, loadFlagshipCharacterIds } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
 import { storiesFeaturingCharacter } from '@/features/stories/appearances';
@@ -9,9 +9,13 @@ import { CharacterTabs } from '@/components/character/CharacterTabs';
 import { CharacterTheatre } from '@/components/character/CharacterTheatre';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 
+/** Prerender the flagship stars; the long tail renders on demand and caches
+ *  at the CDN (docs/NOSTOS_PLAN.md D16 — Netlify's build window). */
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-  const { characters } = await loadAtlasData();
-  return characters.map((character) => ({ id: character.id }));
+  const ids = await loadFlagshipCharacterIds();
+  return ids.map((id) => ({ id }));
 }
 
 export default async function CharacterPoetsPage(props: { params: Promise<{ id: string }> }) {

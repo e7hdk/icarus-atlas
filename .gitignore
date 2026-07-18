@@ -63,3 +63,6 @@ data/geo/raw/
 # tiles themselves serve from the hosted geo base (GEO_ASSETS_BASE).
 /public/geo/relief/*
 !/public/geo/relief/manifest.json
+
+# Local Netlify folder
+.netlify
