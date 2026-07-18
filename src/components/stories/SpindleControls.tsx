@@ -107,11 +107,16 @@ export function SpindleRig({
     travelTarget.current = baseTravel.current;
   }, [selectedPos, originPos]);
 
-  // Wheel = travel through time; drag = spin the cylinder.
+  // Wheel = travel through time; drag = spin the cylinder. On touch, a
+  // vertical drag travels too (phones have no wheel). The canvas opts out of
+  // browser gestures via CSS (`.spindle-stage canvas { touch-action: none }`,
+  // globals.css) — without it the browser cancels the pointer stream after a
+  // few pixels, which read as "barely moves".
   useEffect(() => {
     const el = gl.domElement;
     let dragging = false;
     let lastX = 0;
+    let lastY = 0;
     let moved = 0;
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
@@ -120,14 +125,19 @@ export function SpindleRig({
     const onDown = (e: PointerEvent) => {
       dragging = true;
       lastX = e.clientX;
+      lastY = e.clientY;
       moved = 0;
     };
     const onMove = (e: PointerEvent) => {
       if (!dragging) return;
       const dx = e.clientX - lastX;
+      const dy = e.clientY - lastY;
       lastX = e.clientX;
+      lastY = e.clientY;
       userRoll.current += dx * ROLL_SENS;
-      moved += Math.abs(dx);
+      // Drag up = advance down the corridor (the touch twin of wheel-down).
+      if (e.pointerType !== 'mouse') userTravel.current += dy * TRAVEL_SENS;
+      moved += Math.abs(dx) + Math.abs(dy);
       if (moved > 6) draggedRef.current = true;
     };
     const onUp = () => {

@@ -548,7 +548,11 @@ export function MythsSpindleView({
   const lens = useGalaxyStore((s) => s.lens);
   const isMobile = useIsMobile();
   const [highPerf, setHighPerf] = useState(true);
-  const dpr = isMobile ? (highPerf ? 1 : 0.75) : highPerf ? 1.75 : 1.5;
+  // The spindle scene is small (a few hundred story stars + threads), so it
+  // affords real sharpness everywhere — clamp to the device's native ratio,
+  // capped at 2×, instead of the galaxy's sub-native caution that smeared
+  // the tunnel on retina screens.
+  const dpr: [number, number] = isMobile ? (highPerf ? [1, 2] : [1, 1.6]) : highPerf ? [1, 2] : [1, 1.75];
 
   // Real chronographic years drive the spindle's depth (see buildSpindleLayout); the
   // map is per-saga anchored + interpolated, with the timeless divine prologue null.
@@ -724,7 +728,7 @@ export function MythsSpindleView({
 
   return (
     <>
-      <div className="fixed inset-0 z-0">
+      <div className="spindle-stage fixed inset-0 z-0">
         <Canvas
           dpr={dpr}
           camera={{ position: [0, 4, -40], fov: 60, near: 0.5, far: 12000 }}
@@ -741,7 +745,10 @@ export function MythsSpindleView({
               instead of a flat scatter. Density is the one knob — higher = the haze
               closes in sooner. The spindle materials opt in via fog:true; the galaxy
               reuses the star shaders but sets no fog, so it stays crisp. */}
-          <fogExp2 attach="fog" args={['#06031a', 0.0011]} />
+          {/* Density tuned so threads dissolve BEFORE their tubes drop below a
+              pixel — thinner fog left a wide band of sub-pixel "dotted" shimmer
+              on the far world-lines. */}
+          <fogExp2 attach="fog" args={['#06031a', 0.0034]} />
           <PerformanceMonitor onDecline={() => setHighPerf(false)} onIncline={() => setHighPerf(true)} />
           {/* The roll group: the rig spins it about its axis and slides it along
               to roll the chosen star down to the marble. Inside, the spindle is
@@ -787,7 +794,7 @@ export function MythsSpindleView({
             draggedRef={draggedRef}
           />
           {isMobile ? (
-            <EffectComposer key="m" multisampling={0}>
+            <EffectComposer key="m" multisampling={highPerf ? 4 : 2}>
               <Bloom mipmapBlur resolutionScale={0.5} intensity={0.7} luminanceThreshold={0.32} luminanceSmoothing={0.3} radius={0.7} />
               <Vignette eskil={false} offset={0.15} darkness={0.55} />
             </EffectComposer>

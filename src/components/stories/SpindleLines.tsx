@@ -98,7 +98,9 @@ const WorldLine = memo(function WorldLine({
     // length — left thick it reads as a parallel rod next to its neighbours. Keep it
     // SLIM (and faint, below) so the spine recedes and the bright branching children
     // are what the eye follows; an episode/leaf branch stays full-bodied.
-    const radius = node.isSagaRoot ? 0.055 : 0.07 + node.size * 0.05;
+    // Thick enough to stay above one screen pixel until the fog takes over —
+    // thinner tubes shattered into dots at distance.
+    const radius = node.isSagaRoot ? 0.09 : 0.115 + node.size * 0.07;
     const tubular = Math.max(16, pts.length * 2);
     const geometry = new THREE.TubeGeometry(curve, tubular, radius, 8, false);
     // Taper the tube from a full base at the star (u=0) down to a thin wisp at the

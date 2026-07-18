@@ -73,6 +73,12 @@ export function AtlasBar() {
         <Link href="/" className="pointer-events-auto" aria-label="Icarus Atlas — the galaxy">
           <IcarusBrand />
         </Link>
+        {/* Mobile: the Wain rides at the brand's side — the left hand, as
+            Calypso instructed — which also balances the flex row so the three
+            doors sit at the true optical centre. */}
+        <span className="ml-1.5 sm:hidden">
+          <OdysseyChip active={pathname.startsWith('/odyssey')} />
+        </span>
         {/* Mobile: the nav lives in the flex flow (auto margins centre it, and
             siblings can push — overlap is impossible). sm+: true optical
             centring via absolute positioning, as before. */}
@@ -80,7 +86,9 @@ export function AtlasBar() {
           <MainNav active={doorFor(pathname)} />
         </div>
         <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
-          <OdysseyChip active={pathname.startsWith('/odyssey')} />
+          <span className="hidden sm:flex">
+            <OdysseyChip active={pathname.startsWith('/odyssey')} />
+          </span>
           <EphemerisChip />
           <HudActions mapLayers={pathname.startsWith('/areas')} />
         </div>
