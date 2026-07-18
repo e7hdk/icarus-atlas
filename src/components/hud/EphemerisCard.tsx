@@ -112,7 +112,7 @@ export function EphemerisCard() {
     // outside press, the card swallows its own (tenth UX review).
     <div className="fixed inset-0 z-40" onMouseDown={() => setCardOpen(false)}>
       <GlassPanel
-        className="pointer-events-auto absolute right-4 top-16 max-h-[calc(100vh-5rem)] w-[21rem] overflow-y-auto bg-glass-heavy px-5 py-4 sm:right-6"
+        className="pointer-events-auto absolute inset-x-3 top-16 max-h-[calc(100svh-5rem)] w-auto overflow-y-auto break-words bg-glass-heavy px-5 py-4 sm:inset-x-auto sm:right-6 sm:w-[21rem]"
         onMouseDown={(event) => event.stopPropagation()}
       >
       <div className="flex items-center justify-between">

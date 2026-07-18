@@ -42,7 +42,7 @@ export function CitySkyView({
         cityContext={cityContext}
         cameraIntro
       />
-      <div className="pointer-events-none fixed inset-x-0 top-[4.25rem] z-20 flex justify-center px-4 sm:top-[4.5rem]">
+      <div className="pointer-events-none fixed inset-x-0 top-[4.25rem] z-20 flex justify-center pl-16 pr-3 sm:top-[4.5rem] sm:px-4">
         <CityTabNav
           cityId={city.id}
           active="sky"

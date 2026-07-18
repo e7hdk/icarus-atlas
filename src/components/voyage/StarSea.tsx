@@ -50,7 +50,9 @@ const LAYERS: LayerSpec[] = [
 function paintLayer(canvas: HTMLCanvasElement, spec: LayerSpec) {
   const context = canvas.getContext('2d');
   if (!context) return;
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  // Phones cap at 1.5× — the star specks read identically and the two
+  // double-viewport canvases cost ~half the memory.
+  const dpr = Math.min(window.devicePixelRatio || 1, window.innerWidth < 640 ? 1.5 : 2);
   const width = window.innerWidth;
   const tile = window.innerHeight;
   canvas.width = Math.round(width * dpr);

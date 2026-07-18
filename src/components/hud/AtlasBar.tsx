@@ -64,7 +64,7 @@ export function AtlasBar() {
       }`}
     >
       <div
-        className={`atlas-bar relative flex h-14 items-center border-b px-4 transition-[background-color,box-shadow,border-color] duration-300 sm:px-6 ${
+        className={`atlas-bar relative flex h-14 items-center border-b px-3 transition-[background-color,box-shadow,border-color] duration-300 sm:px-6 ${
           scrolled
             ? 'border-white/10 bg-[rgba(10,5,30,0.72)] shadow-[0_18px_50px_rgba(5,2,15,0.45)] backdrop-blur-xl'
             : 'border-transparent'
@@ -73,10 +73,13 @@ export function AtlasBar() {
         <Link href="/" className="pointer-events-auto" aria-label="Icarus Atlas — the galaxy">
           <IcarusBrand />
         </Link>
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        {/* Mobile: the nav lives in the flex flow (auto margins centre it, and
+            siblings can push — overlap is impossible). sm+: true optical
+            centring via absolute positioning, as before. */}
+        <div className="mx-auto sm:absolute sm:left-1/2 sm:top-1/2 sm:mx-0 sm:-translate-x-1/2 sm:-translate-y-1/2">
           <MainNav active={doorFor(pathname)} />
         </div>
-        <div className="ml-auto flex items-center gap-2.5">
+        <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
           <OdysseyChip active={pathname.startsWith('/odyssey')} />
           <EphemerisChip />
           <HudActions mapLayers={pathname.startsWith('/areas')} />

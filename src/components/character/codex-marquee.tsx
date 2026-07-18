@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 import type { Character } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
@@ -75,6 +78,51 @@ export function CodexIdentity({ character }: { character: Character }) {
 }
 
 /** The compact registers: dwellings and myth appearances as inline links. */
+const REGISTER_LINK_CLASS =
+  'not-italic text-star-olympian/85 transition-colors hover:text-star-olympian hover:underline hover:underline-offset-2';
+
+/** Long registers clamp behind the house gold pill (Heracles dwells in a dozen
+ *  cities; Odysseus appears in dozens of myths) — first N inline, the rest on
+ *  demand, on every screen size. */
+const REGISTER_CLAMP = 10;
+
+function ClampedRegister({
+  heading,
+  items,
+}: {
+  heading: string;
+  items: { key: string; href: string; label: string }[];
+}) {
+  const [open, setOpen] = useState(false);
+  if (items.length === 0) return null;
+  const shown = open ? items : items.slice(0, REGISTER_CLAMP);
+  const hidden = items.length - REGISTER_CLAMP;
+  return (
+    <>
+      <MarqueeHeading>{heading}</MarqueeHeading>
+      <p className="font-body text-[14.5px] italic leading-[1.8] text-aether-muted">
+        {shown.map((item, index) => (
+          <span key={item.key}>
+            {index > 0 && ' · '}
+            <Link href={item.href} className={REGISTER_LINK_CLASS}>
+              {item.label}
+            </Link>
+          </span>
+        ))}
+        {hidden > 0 && (
+          <button
+            type="button"
+            onClick={() => setOpen((value) => !value)}
+            className="ml-2 rounded-full border border-star-olympian/35 bg-star-olympian/10 px-2.5 py-0.5 align-middle font-display text-[9px] not-italic tracking-[0.12em] text-star-olympian transition-colors hover:border-star-olympian/70 hover:bg-star-olympian/20"
+          >
+            {open ? 'SHOW LESS' : `+${hidden} MORE`}
+          </button>
+        )}
+      </p>
+    </>
+  );
+}
+
 export function CodexRegisters({
   residences,
   appearances,
@@ -82,40 +130,24 @@ export function CodexRegisters({
   residences: { city: string; label: string }[];
   appearances: { id: string; title: string }[];
 }) {
-  const linkClass =
-    'not-italic text-star-olympian/85 transition-colors hover:text-star-olympian hover:underline hover:underline-offset-2';
   return (
     <>
-      {residences.length > 0 && (
-        <>
-          <MarqueeHeading>DWELT AT</MarqueeHeading>
-          <p className="font-body text-[14.5px] italic leading-[1.8] text-aether-muted">
-            {residences.map((residence, index) => (
-              <span key={residence.city}>
-                {index > 0 && ' · '}
-                <Link href={`/city/${residence.city}`} className={linkClass}>
-                  {residence.label}
-                </Link>
-              </span>
-            ))}
-          </p>
-        </>
-      )}
-      {appearances.length > 0 && (
-        <>
-          <MarqueeHeading>APPEARS IN THE MYTHS</MarqueeHeading>
-          <p className="font-body text-[14.5px] italic leading-[1.8] text-aether-muted">
-            {appearances.map((story, index) => (
-              <span key={story.id}>
-                {index > 0 && ' · '}
-                <Link href={`/story/${story.id}`} className={linkClass}>
-                  {story.title}
-                </Link>
-              </span>
-            ))}
-          </p>
-        </>
-      )}
+      <ClampedRegister
+        heading="DWELT AT"
+        items={residences.map((residence) => ({
+          key: residence.city,
+          href: `/city/${residence.city}`,
+          label: residence.label,
+        }))}
+      />
+      <ClampedRegister
+        heading="APPEARS IN THE MYTHS"
+        items={appearances.map((story) => ({
+          key: story.id,
+          href: `/story/${story.id}`,
+          label: story.title,
+        }))}
+      />
     </>
   );
 }

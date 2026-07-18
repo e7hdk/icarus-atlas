@@ -72,7 +72,9 @@ export function OdysseyChip({ active }: { active: boolean }) {
       onClick={markSeen}
       aria-label="The Odyssey — a voyage home, told by the stars"
       aria-current={active ? 'page' : undefined}
-      className={`pointer-events-auto flex h-10 w-10 items-center justify-center rounded-full border bg-glass backdrop-blur-xl transition-colors sm:h-9 sm:w-9 lg:w-auto lg:justify-start lg:gap-2 lg:px-3 ${
+      className={`pointer-events-auto h-9 w-9 items-center justify-center rounded-full border bg-glass backdrop-blur-xl transition-colors lg:w-auto lg:justify-start lg:gap-2 lg:px-3 ${
+        active ? 'hidden sm:flex' : 'flex'
+      } ${
         active
           ? 'border-star-olympian/60 text-star-olympian'
           : 'border-glass-border text-aether-muted hover:border-star-olympian/50 hover:text-star-olympian'

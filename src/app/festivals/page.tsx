@@ -77,7 +77,7 @@ export default async function FestivalsPage() {
     });
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-4xl px-6 pb-24 pt-20">
+    <main className="mx-auto min-h-screen w-full max-w-4xl overflow-x-clip px-5 pb-24 pt-20 sm:px-6">
       <CrumbBar
         back={{ href: '/', label: 'Back to the galaxy' }}
         trail={[{ href: '/', label: 'Galaxy' }]}
@@ -85,10 +85,10 @@ export default async function FestivalsPage() {
       />
 
       <header className="mt-9 text-center">
-        <p className="font-display text-[11px] uppercase tracking-[0.3em] text-star-olympian">
+        <p className="font-display text-[10px] uppercase tracking-[0.2em] text-star-olympian sm:text-[11px] sm:tracking-[0.3em]">
           The festival year
         </p>
-        <h1 className="mt-2 font-display text-4xl uppercase tracking-[0.12em] text-aether">
+        <h1 className="mt-2 font-display text-[1.7rem] uppercase tracking-[0.08em] text-aether sm:text-4xl sm:tracking-[0.12em]">
           Heortologion
         </h1>
         <p className="mx-auto mt-3 max-w-xl font-body text-[15px] italic leading-relaxed text-aether-muted">

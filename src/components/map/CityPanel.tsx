@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useRef, useState } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';
 import type { CharacterIndex } from '@/features/characters/load';
@@ -77,12 +78,50 @@ export function CityPanel({
   characterIndex?: CharacterIndex;
   onClose: () => void;
 }) {
+  /* Two-detent mobile sheet: swipe the header up to open the full succession,
+   * swipe down to duck back to the low peek (sm+ ignores all of this — the
+   * desktop side panel keeps its fixed geometry). Gestures live on the header
+   * only, so the scrolling body never fights the sheet. */
+  const [expanded, setExpanded] = useState(false);
+  const touchStartY = useRef<number | null>(null);
+  /* A newly selected city starts at the low peek again (render-time state
+   * adjustment — the documented pattern for prop-driven resets). */
+  const [peekCityId, setPeekCityId] = useState(city.id);
+  if (peekCityId !== city.id) {
+    setPeekCityId(city.id);
+    setExpanded(false);
+  }
+  const onSheetTouchStart = (event: React.TouchEvent) => {
+    touchStartY.current = event.touches[0].clientY;
+  };
+  const onSheetTouchEnd = (event: React.TouchEvent) => {
+    const start = touchStartY.current;
+    touchStartY.current = null;
+    if (start === null) return;
+    const delta = event.changedTouches[0].clientY - start;
+    if (delta < -36) setExpanded(true);
+    else if (delta > 36) setExpanded(false);
+  };
+
   return (
     <GlassPanel
       data-map-overlay
-      className="absolute inset-x-4 bottom-4 top-auto z-10 flex max-h-[70%] w-auto touch-auto flex-col overflow-hidden overscroll-contain border-star-olympian/30 shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-20 sm:max-h-[calc(100%-7rem)] sm:w-[24rem]"
+      className={`absolute inset-x-4 bottom-4 top-auto z-10 flex w-auto touch-auto flex-col overflow-hidden overscroll-contain border-star-olympian/30 shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] transition-[max-height] duration-300 ease-out sm:inset-x-auto sm:bottom-auto sm:right-5 sm:top-20 sm:max-h-[calc(100%-7rem)] sm:w-[24rem] ${
+        expanded ? 'max-h-[88%]' : 'max-h-[42%]'
+      }`}
       style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
     >
+      <button
+        type="button"
+        aria-label={expanded ? 'Collapse the city panel' : 'Expand the city panel'}
+        aria-expanded={expanded}
+        onClick={() => setExpanded((value) => !value)}
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+        className="mx-auto mt-2 flex h-4 w-16 shrink-0 items-center justify-center sm:hidden"
+      >
+        <span className="h-1 w-10 rounded-full bg-white/15" />
+      </button>
       <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.08]" />
       <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/45" />
       <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/25" />
@@ -92,7 +131,11 @@ export function CityPanel({
       />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.14),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.13),transparent_48%)]" />
 
-      <header className="relative px-6 pb-5 pt-7 text-center">
+      <header
+        className="relative px-6 pb-5 pt-3 text-center sm:pt-7"
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+      >
         <div className="flex items-center justify-between gap-3">
           <p className="min-w-0 truncate text-left font-display text-[8px] uppercase tracking-[0.24em] text-star-olympian/70">
             {region?.name ?? 'City of the atlas'}

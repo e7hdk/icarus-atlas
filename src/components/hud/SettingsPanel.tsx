@@ -1,9 +1,12 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import type { LensId, Source } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useLandsStore } from '@/features/geo/lands-store';
+import { MAP_LAYER_IDS, MAP_LAYER_LABELS } from '@/features/geo/map-layers';
 import { APP_VERSION } from '@/lib/changelog';
 import { ChangelogPanel } from './ChangelogPanel';
 
@@ -17,6 +20,12 @@ export function SettingsPanel({ sources, starCount }: { sources: Source[]; starC
   const open = useGalaxyStore((state) => state.settingsOpen);
   const setOpen = useGalaxyStore((state) => state.setSettingsOpen);
   const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
+  // On the Lands, phones fold the map-layer toggles in here — the bar has no
+  // room for a page-specific button (sm+ keeps the ellipsis menu).
+  const pathname = usePathname();
+  const onLands = pathname.startsWith('/areas');
+  const mapLayers = useLandsStore((state) => state.mapLayers);
+  const setMapLayers = useLandsStore((state) => state.setMapLayers);
   const lens = useGalaxyStore((state) => state.lens);
   const setLens = useGalaxyStore((state) => state.setLens);
   const spacingScale = useGalaxyStore((state) => state.spacingScale);
@@ -98,6 +107,31 @@ export function SettingsPanel({ sources, starCount }: { sources: Source[]; starC
             </span>
           </button>
         </section>
+
+        {onLands && (
+          <section className="border-b border-glass-border px-5 py-4 sm:hidden">
+            <h3 className="font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint">
+              Map layers
+            </h3>
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              {MAP_LAYER_IDS.map((id) => (
+                <button
+                  key={id}
+                  type="button"
+                  aria-pressed={mapLayers[id]}
+                  onClick={() => setMapLayers({ ...mapLayers, [id]: !mapLayers[id] })}
+                  className={`rounded-full border px-3 py-2 font-display text-[10px] tracking-[0.14em] transition-colors ${
+                    mapLayers[id]
+                      ? 'border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
+                      : 'border-glass-border text-aether-muted'
+                  }`}
+                >
+                  {MAP_LAYER_LABELS[id].toUpperCase()}
+                </button>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="border-b border-glass-border px-5 py-4">
           <div className="flex items-center justify-between">

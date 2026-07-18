@@ -23,7 +23,7 @@ export function CharacterTabs({
         <Link
           key={tab.key}
           href={`/character/${characterId}${tab.path}`}
-          className={`rounded-full px-3.5 py-2 font-display text-[11px] tracking-[0.1em] transition-colors sm:px-5 sm:text-[12px] ${
+          className={`whitespace-nowrap rounded-full px-2.5 py-2 font-display text-[10px] tracking-[0.06em] transition-colors sm:px-5 sm:text-[12px] sm:tracking-[0.1em] ${
             active === tab.key
               ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
               : 'border border-transparent text-aether-muted hover:text-aether'

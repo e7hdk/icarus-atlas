@@ -37,7 +37,7 @@ export function ChangelogPanel({ open, onClose }: { open: boolean; onClose: () =
         className="max-h-[calc(100dvh-3rem)] w-[min(34rem,calc(100vw-1.5rem))] overflow-y-auto overscroll-contain bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_46px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
         onMouseDown={(event) => event.stopPropagation()}
       >
-        <div className="flex items-start justify-between border-b border-glass-border px-6 py-4">
+        <div className="flex items-start justify-between border-b border-glass-border px-5 py-4 sm:px-6">
           <div>
             <h2 id="atlas-changelog-title" className="font-display text-sm tracking-[0.2em] text-aether">
               THE CHRONICLE
@@ -56,10 +56,10 @@ export function ChangelogPanel({ open, onClose }: { open: boolean; onClose: () =
           </button>
         </div>
 
-        <div className="px-6 py-5">
+        <div className="px-5 py-5 sm:px-6">
           {CHANGELOG.map((release, index) => (
             <section key={release.version} className={index > 0 ? 'mt-8' : ''}>
-              <div className="flex items-baseline gap-3">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
                 <span className="font-display text-base tracking-[0.12em] text-nebula-soft drop-shadow-[0_0_12px_rgba(192,132,252,0.5)]">
                   v{release.version}
                 </span>
@@ -106,9 +106,9 @@ export function ChangelogPanel({ open, onClose }: { open: boolean; onClose: () =
             className="max-h-[calc(100dvh-3rem)] w-[min(38rem,calc(100vw-1.5rem))] overflow-y-auto overscroll-contain bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.88),0_0_46px_rgba(124,77,255,0.18)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
             onMouseDown={(event) => event.stopPropagation()}
           >
-            <div className="flex items-start justify-between border-b border-glass-border px-6 py-4">
+            <div className="flex items-start justify-between border-b border-glass-border px-5 py-4 sm:px-6">
               <div>
-                <div className="flex items-baseline gap-3">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
                   <span className="font-display text-lg tracking-[0.12em] text-nebula-soft drop-shadow-[0_0_12px_rgba(192,132,252,0.5)]">
                     v{detail.version}
                   </span>
@@ -129,7 +129,7 @@ export function ChangelogPanel({ open, onClose }: { open: boolean; onClose: () =
                 ×
               </button>
             </div>
-            <ul className="space-y-3.5 border-l border-glass-border px-6 py-5 pl-7">
+            <ul className="space-y-3.5 border-l border-glass-border px-5 py-5 pl-6 sm:px-6 sm:pl-7">
               {detail.lines.map((line, lineIndex) => (
                 <li key={lineIndex} className="font-body text-[15px] leading-relaxed text-aether/90">
                   {line}

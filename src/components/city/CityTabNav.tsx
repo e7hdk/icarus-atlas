@@ -20,7 +20,7 @@ export function CityTabNav({
           <Link
             key={tab.key}
             href={`/city/${cityId}${tab.path}`}
-            className={`rounded-full px-5 py-2 font-display text-[12px] tracking-[0.1em] transition-colors ${
+            className={`whitespace-nowrap rounded-full px-3 py-2 font-display text-[10px] tracking-[0.06em] transition-colors sm:px-5 sm:text-[12px] sm:tracking-[0.1em] ${
               active === tab.key
                 ? 'border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
                 : 'border border-transparent text-aether-muted hover:text-aether'
@@ -28,7 +28,7 @@ export function CityTabNav({
           >
             {tab.label.toUpperCase()}
             {tab.key === 'sky' && residentCount != null && residentCount > 0 && (
-              <span className="ml-1.5 font-body text-[10px] tabular-nums tracking-normal text-aether-faint">
+              <span className="ml-1 font-body text-[9px] tabular-nums sm:ml-1.5 sm:text-[10px] tracking-normal text-aether-faint">
                 {residentCount}
               </span>
             )}

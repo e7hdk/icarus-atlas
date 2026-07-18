@@ -331,23 +331,86 @@ function StoryPanel({
   episodes,
   onClose,
   onSelectEpisode,
+  onStepEarlier,
+  onStepLater,
 }: {
   story: Story;
   episodes: Story[];
   onClose: () => void;
   onSelectEpisode: (id: string) => void;
+  /** Mobile ‹ › walk through time — the panel's stand-in for the arrow keys. */
+  onStepEarlier?: () => void;
+  onStepLater?: () => void;
 }) {
   const [showFullSummary, setShowFullSummary] = useState(false);
   const [showAllEpisodes, setShowAllEpisodes] = useState(false);
+  /* Two-detent mobile sheet (the CityPanel pattern): swipe the header up for a
+   * near-full reading view, down for the low peek. Keyed by story id in the
+   * parent, so every newly selected myth starts back at the peek. */
+  const [expanded, setExpanded] = useState(false);
+  const touchStartY = useRef<number | null>(null);
+  const onSheetTouchStart = (event: React.TouchEvent) => {
+    touchStartY.current = event.touches[0].clientY;
+  };
+  const onSheetTouchEnd = (event: React.TouchEvent) => {
+    const start = touchStartY.current;
+    touchStartY.current = null;
+    if (start === null) return;
+    const delta = event.changedTouches[0].clientY - start;
+    if (delta < -36) setExpanded(true);
+    else if (delta > 36) setExpanded(false);
+  };
   const EP_LIMIT = 8;
   const summaryLong = story.summary.text.length > 240;
   const shownEpisodes = showAllEpisodes ? episodes : episodes.slice(0, EP_LIMIT);
 
   return (
     <aside
-      className="fixed right-4 top-24 z-40 flex max-h-[calc(100vh-7.5rem)] w-[350px] max-w-[calc(100%-32px)] flex-col overflow-hidden rounded-2xl border border-star-olympian/30 shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] backdrop-blur-2xl sm:right-6"
+      className={`fixed inset-x-0 bottom-0 z-40 flex w-full flex-col overflow-hidden rounded-t-2xl border border-star-olympian/30 pb-[env(safe-area-inset-bottom)] shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] backdrop-blur-2xl transition-[max-height] duration-300 ease-out sm:inset-x-auto sm:bottom-auto sm:right-6 sm:top-24 sm:max-h-[calc(100vh-7.5rem)] sm:w-[350px] sm:max-w-[calc(100%-32px)] sm:rounded-2xl sm:pb-0 ${
+        expanded ? 'max-h-[92svh]' : 'max-h-[40svh]'
+      }`}
       style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
     >
+      {/* Mobile bottom-sheet handle — tap or swipe to open the full reading
+          view; the spindle keeps turning above the low peek. */}
+      <button
+        type="button"
+        aria-label={expanded ? 'Collapse the myth panel' : 'Expand the myth panel'}
+        aria-expanded={expanded}
+        onClick={() => setExpanded((value) => !value)}
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+        className="mx-auto mt-2 flex h-4 w-16 shrink-0 items-center justify-center sm:hidden"
+      >
+        <span className="h-1 w-10 rounded-full bg-white/15" />
+      </button>
+
+      {/* Mobile time-walk: ‹ earlier and later › flank the sheet, standing in
+          for the desktop's ↑/↓ arrow keys. */}
+      {onStepEarlier && (
+        <button
+          type="button"
+          onClick={onStepEarlier}
+          aria-label="Sail to the earlier myth"
+          className="absolute left-1.5 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-glass text-aether-muted backdrop-blur-xl transition-colors active:border-star-olympian/60 active:text-star-olympian sm:hidden"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="m12 4-6 6 6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      )}
+      {onStepLater && (
+        <button
+          type="button"
+          onClick={onStepLater}
+          aria-label="Sail to the later myth"
+          className="absolute right-1.5 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-glass text-aether-muted backdrop-blur-xl transition-colors active:border-star-olympian/60 active:text-star-olympian sm:hidden"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="m8 4 6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      )}
       <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.08]" />
       <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/45" />
       <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/25" />
@@ -357,7 +420,11 @@ function StoryPanel({
       />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.12),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.1),transparent_48%)]" />
 
-      <header className="relative px-6 pb-5 pt-7 text-center">
+      <header
+        className="relative px-5 pb-3 pt-3 text-center sm:px-6 sm:pb-5 sm:pt-7"
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+      >
         <button
           type="button"
           onClick={onClose}
@@ -397,8 +464,9 @@ function StoryPanel({
         )}
       </header>
 
-      {/* Scrollable body so the fixed panel never overflows the screen. */}
-      <div className="relative min-h-0 flex-1 overflow-y-auto border-t border-star-olympian/15 px-6 py-5">
+      {/* Scrollable body so the fixed panel never overflows the screen. Extra
+          side padding on phones keeps the prose clear of the ‹ › buttons. */}
+      <div className="relative min-h-0 flex-1 overflow-y-auto border-t border-star-olympian/15 px-10 py-5 sm:px-6">
         <p
           className={`font-body text-[15px] leading-relaxed text-aether/90 ${
             summaryLong && !showFullSummary ? 'line-clamp-6' : ''
@@ -551,6 +619,38 @@ export function MythsSpindleView({
   // ⌘K / Ctrl+K opens the command palette (and Escape closes it) on this page too.
   useAtlasSearchHotkey();
 
+  /** One step through time along the tunnel — the ↑/↓ walk of the current saga
+   *  limb (hopping to the globally next/previous story at a limb's end), shared
+   *  by the keyboard and the mobile panel's ‹ earlier / later › buttons. */
+  const stepInTime = useCallback(
+    (forward: boolean) => {
+      if (!selectedId) return;
+      const current = layout.byId.get(selectedId);
+      if (!current) return;
+      const ref = focusPos ?? current.pos;
+      const curY = ref[1];
+      // Y-EPS: siblings sharing a cross-section (the simultaneous returns) count
+      // as the "same moment" — the time-walk steps PAST them; ←/→ walks among
+      // them. Without this the walk would cycle the same-ring siblings.
+      const Y_EPS = 4;
+      let best: SpindleNode | null = null;
+      for (const n of layout.nodes) {
+        if (n.id === current.id || n.sagaId !== current.sagaId) continue;
+        if (forward ? n.pos[1] >= curY - Y_EPS : n.pos[1] <= curY + Y_EPS) continue;
+        if (!best || (forward ? n.pos[1] > best.pos[1] : n.pos[1] < best.pos[1])) best = n;
+      }
+      if (!best) {
+        for (const n of layout.nodes) {
+          if (n.id === current.id) continue;
+          if (forward ? n.pos[1] >= curY - Y_EPS : n.pos[1] <= curY + Y_EPS) continue;
+          if (!best || (forward ? n.pos[1] > best.pos[1] : n.pos[1] < best.pos[1])) best = n;
+        }
+      }
+      if (best) select(best.id);
+    },
+    [selectedId, layout, select, focusPos],
+  );
+
   // Keyboard navigation, a 2-D grid over the tunnel:
   //  · Up/Down = TIME. Walk the current saga limb (nodes sorted by descending Y =
   //    earliest→latest down the tunnel); at the limb's end, hop to the globally
@@ -586,33 +686,11 @@ export function MythsSpindleView({
       // is set (focusPos), else the myth's star. So "forward" continues from the
       // click, not from the thread's start.
       const ref = focusPos ?? current.pos;
-      const curY = ref[1];
-
-      // Y-EPS: siblings sharing a cross-section (the simultaneous returns) count as
-      // the "same moment" — Up/Down steps PAST them in time; Left/Right walks among
-      // them. Without this, Up/Down would cycle the same-ring siblings (the bug).
-      const Y_EPS = 4;
 
       if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
-        const forward = e.key === 'ArrowUp'; // forward = deeper/later in time = lower Y
-        // The nearest node in this saga at a CLEARLY different time, in the chosen
-        // direction (skips same-cross-section siblings).
-        let best: SpindleNode | null = null;
-        for (const n of layout.nodes) {
-          if (n.id === current.id || n.sagaId !== current.sagaId) continue;
-          if (forward ? n.pos[1] >= curY - Y_EPS : n.pos[1] <= curY + Y_EPS) continue;
-          if (!best || (forward ? n.pos[1] > best.pos[1] : n.pos[1] < best.pos[1])) best = n;
-        }
-        // End of this saga's chain — continue to the nearest story ahead/behind in
-        // time across every arm, so the journey carries on instead of stopping.
-        if (!best) {
-          for (const n of layout.nodes) {
-            if (n.id === current.id) continue;
-            if (forward ? n.pos[1] >= curY - Y_EPS : n.pos[1] <= curY + Y_EPS) continue;
-            if (!best || (forward ? n.pos[1] > best.pos[1] : n.pos[1] < best.pos[1])) best = n;
-          }
-        }
-        if (best) select(best.id);
+        // forward = deeper/later in time = lower Y (logic shared with the
+        // mobile panel buttons via stepInTime).
+        stepInTime(e.key === 'ArrowUp');
         return;
       }
 
@@ -642,7 +720,7 @@ export function MythsSpindleView({
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [selectedId, originNode, layout, select, focusPos]);
+  }, [selectedId, originNode, layout, select, focusPos, stepInTime]);
 
   return (
     <>
@@ -765,7 +843,7 @@ export function MythsSpindleView({
       </div>
 
       {/* Hint */}
-      <div className="pointer-events-none fixed bottom-5 left-0 right-0 z-20 text-center font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint">
+      <div className="pointer-events-none fixed bottom-5 left-0 right-0 z-20 hidden text-center font-display text-[10px] uppercase tracking-[0.24em] text-aether-faint sm:block">
         ↑↓ travel through time · ←→ cross to the next arm · Esc to step out · drag &amp; scroll to roam
       </div>
 
@@ -777,6 +855,8 @@ export function MythsSpindleView({
           episodes={episodes}
           onClose={() => select(null)}
           onSelectEpisode={select}
+          onStepEarlier={() => stepInTime(false)}
+          onStepLater={() => stepInTime(true)}
         />
       )}
 

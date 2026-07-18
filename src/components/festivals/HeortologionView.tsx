@@ -113,7 +113,7 @@ export function HeortologionView({ entries }: { entries: FeastEntry[] }) {
         {entry ? (
           // Re-keyed per feast so the plaque rises anew with each aim.
           <article key={entry.id} className="text-center motion-safe:[animation:proem-fade-up_500ms_ease_both]">
-            <p className="font-display text-[11px] uppercase tracking-[0.3em] text-star-olympian">
+            <p className="font-display text-[10px] uppercase tracking-[0.2em] text-star-olympian sm:text-[11px] sm:tracking-[0.3em]">
               {entry.dateLabel}
             </p>
             <h2 className="mt-2.5 font-display text-3xl tracking-[0.1em] text-aether sm:text-4xl">

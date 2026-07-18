@@ -112,12 +112,14 @@ export function CharacterPanel({
     }, 600); // Wait for the dive animation (smoothTime 0.5s + small buffer)
   };
 
-  // Mobile: a slim card up top instead of a full-screen panel, so the star
-  // stays visible below. Name, a couple of facts, and a jump to the codex.
+  // Mobile: a slim card at the BOTTOM (the atlas-wide sheet grammar) so the
+  // star stays visible above and the codex CTA lands in the thumb zone — the
+  // old top anchor collided with the fixed bar. Name, a couple of facts, and
+  // a jump to the codex.
   if (isMobile) {
     const summary = filterSourced(character.summary, lens)[0] ?? filterSourced(character.story, lens)[0];
     return (
-      <div className="fixed inset-x-3 top-3 z-30">
+      <div className="fixed inset-x-3 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-30">
         <GlassPanel
           className="relative overflow-hidden border-star-olympian/30 px-4 py-4 shadow-[0_18px_60px_rgba(5,2,15,0.85),0_0_34px_rgba(252,211,77,0.09)] animate-[search-panel-in_180ms_cubic-bezier(0.2,0.8,0.2,1)]"
           style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
@@ -126,25 +128,25 @@ export function CharacterPanel({
             className="pointer-events-none absolute inset-x-12 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
             style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
           />
-          <div className="relative flex items-start justify-between gap-3">
-            <div className="min-w-0 flex-1 text-center">
-              <h2 className="truncate font-display text-lg tracking-[0.1em] text-aether">
-                {character.name.toUpperCase()}
-              </h2>
-              <p className="truncate font-body text-[14px] italic text-star-olympian/75">
-                {character.greekName}
-              </p>
-            </div>
-            <button
-              type="button"
-              onClick={() => select(null)}
-              aria-label="Close"
-              className="-mr-1 -mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
-            >
-              <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
-                <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
-              </svg>
-            </button>
+          {/* ✕ floats out of flow so the name centres on the CARD's axis —
+              sharing a flex row shifted the title left of the rows below. */}
+          <button
+            type="button"
+            onClick={() => select(null)}
+            aria-label="Close"
+            className="absolute right-2 top-2 z-10 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
+          >
+            <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+              <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+            </svg>
+          </button>
+          <div className="relative min-w-0 px-8 text-center">
+            <h2 className="truncate font-display text-lg tracking-[0.1em] text-aether">
+              {character.name.toUpperCase()}
+            </h2>
+            <p className="truncate font-body text-[14px] italic text-star-olympian/75">
+              {character.greekName}
+            </p>
           </div>
           <div className="relative mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
             <TypeBadge type={character.type} />

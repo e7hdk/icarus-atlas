@@ -960,7 +960,7 @@ export function MapView({
         </div>
       )}
 
-      <p className="pointer-events-none absolute bottom-3 left-1/2 z-10 -translate-x-1/2 font-body text-[11px] italic text-aether-faint">
+      <p className="pointer-events-none absolute bottom-1.5 left-1/2 z-10 w-[94vw] -translate-x-1/2 truncate text-center font-body text-[10px] italic text-aether-faint sm:bottom-3 sm:w-auto sm:whitespace-normal sm:text-[11px]">
         Basemap adapted from the &ldquo;Greece (ancient)&rdquo; series, Wikimedia Commons · CC
         BY-SA 3.0
       </p>

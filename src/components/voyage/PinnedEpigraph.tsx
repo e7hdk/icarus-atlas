@@ -57,6 +57,11 @@ export function PinnedEpigraph({
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    /* The pin is an sm+ experience: long epigraphs physically exceed a phone
+     * viewport (overflowing the held stage onto the content below), and a
+     * 230vh thumb-scrub is tiring UX besides — mobile renders the static
+     * fragment instead (the `sm:motion-safe:` classes never apply there). */
+    if (!window.matchMedia('(min-width: 640px)').matches) return;
 
     let raf = 0;
     const scrub = () => {
@@ -131,8 +136,8 @@ export function PinnedEpigraph({
   }, [lines.length]);
 
   return (
-    <div ref={sectionRef} className="my-8 motion-safe:my-0 motion-safe:h-[230vh]">
-      <div className="motion-safe:sticky motion-safe:top-0 motion-safe:flex motion-safe:h-screen motion-safe:items-center">
+    <div ref={sectionRef} className="my-8 sm:motion-safe:my-0 sm:motion-safe:h-[230vh]">
+      <div className="sm:motion-safe:sticky sm:motion-safe:top-0 sm:motion-safe:flex sm:motion-safe:h-dvh sm:motion-safe:items-center">
         {/* The veil: full-bleed dark that swallows the page while the moment holds.
             Penelope's knotted thread (z-20, sticky beside the column) stays lit
             above it — the thread never breaks. */}
@@ -173,7 +178,7 @@ export function PinnedEpigraph({
               first, then the fragment opens beneath them. */}
           <div
             ref={headRef}
-            className="mx-auto w-full max-w-3xl px-3 motion-safe:translate-y-7 motion-safe:opacity-0 sm:px-8"
+            className="mx-auto w-full max-w-3xl px-3 sm:px-8 sm:motion-safe:translate-y-7 sm:motion-safe:opacity-0"
           >
             {kicker && (
               <p className="font-display text-[11px] tracking-[0.32em] text-aether-faint">
@@ -183,7 +188,7 @@ export function PinnedEpigraph({
             )}
             <h3
               id={`station-${stationId}`}
-              className="mt-3 font-display text-4xl tracking-[0.04em] text-aether sm:text-6xl"
+              className="mt-3 font-display text-3xl tracking-[0.04em] text-aether sm:text-6xl"
             >
               {title}
             </h3>
@@ -191,23 +196,23 @@ export function PinnedEpigraph({
 
           <figure
             ref={stageRef}
-            className="gilded-prose relative mx-auto mt-10 w-full max-w-3xl px-3 py-12 motion-safe:will-change-transform sm:mt-12 sm:px-8 sm:py-14"
+            className="gilded-prose relative mx-auto mt-6 w-full max-w-3xl px-3 py-8 sm:mt-12 sm:px-8 sm:py-14 sm:motion-safe:will-change-transform"
           >
           {/* The frame draws itself open as the moment takes hold. */}
           <span
             ref={lineTopRef}
             aria-hidden
-            className="absolute inset-x-0 top-0 h-px origin-left bg-star-olympian/40 [transform:scaleX(0)] motion-reduce:[transform:scaleX(1)]"
+            className="absolute inset-x-0 top-0 h-px origin-left bg-star-olympian/40 sm:motion-safe:[transform:scaleX(0)]"
           />
           <span
             ref={lineBottomRef}
             aria-hidden
-            className="absolute inset-x-0 bottom-0 h-px origin-right bg-star-olympian/40 [transform:scaleX(0)] motion-reduce:[transform:scaleX(1)]"
+            className="absolute inset-x-0 bottom-0 h-px origin-right bg-star-olympian/40 sm:motion-safe:[transform:scaleX(0)]"
           />
 
           <blockquote
             lang="grc"
-            className="font-body text-xl leading-relaxed text-aether-muted sm:text-2xl"
+            className="font-body text-lg leading-relaxed text-aether-muted sm:text-2xl"
           >
             {lines.map((line, index) => (
               <span
@@ -215,7 +220,7 @@ export function PinnedEpigraph({
                 ref={(el) => {
                   lineRefs.current[index] = el;
                 }}
-                className="block motion-safe:translate-y-6 motion-safe:opacity-0"
+                className="-indent-5 block pl-5 sm:motion-safe:translate-y-6 sm:motion-safe:opacity-0"
               >
                 {line}
               </span>
@@ -223,13 +228,13 @@ export function PinnedEpigraph({
           </blockquote>
           <blockquote
             ref={enRef}
-            className="mt-8 font-body text-2xl italic leading-relaxed text-aether motion-safe:translate-y-5 motion-safe:opacity-0 sm:text-3xl"
+            className="mt-6 font-body text-xl italic leading-relaxed text-aether sm:mt-8 sm:text-3xl sm:motion-safe:translate-y-5 sm:motion-safe:opacity-0"
           >
             {epigraph.en}
           </blockquote>
           <figcaption
             ref={citeRef}
-            className="mt-7 font-display text-[11px] tracking-[0.28em] text-star-olympian/75 motion-safe:opacity-0"
+            className="mt-5 font-display text-[11px] tracking-[0.28em] text-star-olympian/75 sm:mt-7 sm:motion-safe:opacity-0"
           >
             {epigraph.citation} · TRANS. A. T. MURRAY, 1919
           </figcaption>

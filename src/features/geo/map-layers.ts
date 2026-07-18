@@ -4,6 +4,15 @@ export const MAP_LAYER_IDS = ['cities', 'sanctuaries', 'rivers', 'relief'] as co
 
 export type MapLayerId = (typeof MAP_LAYER_IDS)[number];
 
+/** Display names — shared by the bar's ellipsis menu (sm+) and the mobile
+ *  settings-panel section. */
+export const MAP_LAYER_LABELS: Record<MapLayerId, string> = {
+  cities: 'Cities',
+  sanctuaries: 'Sanctuaries',
+  rivers: 'Rivers',
+  relief: 'Relief',
+};
+
 export type MapLayerVisibility = Record<MapLayerId, boolean>;
 
 export const DEFAULT_MAP_LAYERS: MapLayerVisibility = {

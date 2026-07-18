@@ -5,17 +5,11 @@ import {
   DEFAULT_MAP_LAYERS,
   layersEqual,
   MAP_LAYER_IDS,
+  MAP_LAYER_LABELS as LABELS,
   type MapLayerId,
 } from '@/features/geo/map-layers';
 import { useLandsStore } from '@/features/geo/lands-store';
 import { GlassPanel } from '@/components/ui/GlassPanel';
-
-const LABELS: Record<MapLayerId, string> = {
-  cities: 'Cities',
-  sanctuaries: 'Sanctuaries',
-  rivers: 'Rivers',
-  relief: 'Relief',
-};
 
 /** Map layer filter — ellipsis menu to the left of the Lands search bar. */
 export function MapLayerMenu() {
@@ -49,7 +43,9 @@ export function MapLayerMenu() {
   };
 
   return (
-    <div ref={rootRef} className="relative">
+    /* sm+ only — on phones the layer toggles live in the settings panel
+     * (the bar was too crowded for a page-specific button). */
+    <div ref={rootRef} className="relative hidden sm:block">
       <button
         type="button"
         aria-label="Map layers"

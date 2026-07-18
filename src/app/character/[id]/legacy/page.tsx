@@ -51,7 +51,7 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
     .map(({ id: candidateId, name, type }) => ({ id: candidateId, name, type }));
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-6xl px-6 pb-24 pt-20">
+    <main className="mx-auto min-h-screen w-full max-w-6xl touch-manipulation overflow-x-clip px-5 pb-24 pt-20 sm:px-6">
       <CrumbBar
         back={{ href: '/', label: 'Back to the galaxy' }}
         trail={[{ href: '/', label: 'Galaxy' }]}

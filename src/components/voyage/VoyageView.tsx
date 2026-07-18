@@ -6,6 +6,7 @@ import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import { PinnedEpigraph } from '@/components/voyage/PinnedEpigraph';
 import { StarSea } from '@/components/voyage/StarSea';
 import { VoyageAudio } from '@/components/voyage/VoyageAudio';
+import { useGalaxyStore } from '@/features/galaxy/store';
 import { useVoyageAudioStore } from '@/features/voyage/store';
 import type { VoyageMood } from '@/types/story';
 
@@ -166,7 +167,7 @@ function StationSection({
           (a column-sized blur repaints on scroll); a pure gradient is free. */}
       <div
         aria-hidden
-        className="absolute -inset-x-6 -top-6 bottom-6 -z-[1] rounded-[2.5rem] bg-[linear-gradient(180deg,transparent,rgba(5,2,15,0.68)_6%,rgba(5,2,15,0.68)_94%,transparent)] [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)] sm:-inset-x-12"
+        className="absolute -inset-x-5 -top-6 bottom-6 -z-[1] rounded-[2.5rem] bg-[linear-gradient(180deg,transparent,rgba(5,2,15,0.68)_6%,rgba(5,2,15,0.68)_94%,transparent)] [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)] sm:-inset-x-12"
       />
       {station.showToldRubric && (
         <p className="voyage-reveal mb-6 max-w-2xl border-l-2 border-nebula-soft/40 pl-4 font-body text-[15px] italic text-nebula-soft">
@@ -179,7 +180,7 @@ function StationSection({
           of sky before the fragment begins. Pinned stations skip this — their
           title opens INSIDE the held scene, as part of its choreography. */}
       {!station.pinned && (
-        <header className="voyage-reveal flex min-h-[46vh] flex-col justify-center">
+        <header className="voyage-reveal flex min-h-[40svh] flex-col justify-center sm:min-h-[46vh]">
           {station.kicker && (
             <p className="font-display text-[11px] tracking-[0.32em] text-aether-faint">
               {station.kicker}
@@ -284,6 +285,8 @@ const DOORS = [
 ];
 
 export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: VoyageViewProps) {
+  const musicEnabled = useGalaxyStore((s) => s.musicEnabled);
+  const setMusicEnabled = useGalaxyStore((s) => s.setMusicEnabled);
   const rootRef = useRef<HTMLDivElement | null>(null);
   const threadRef = useRef<SVGPathElement | null>(null);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -334,7 +337,9 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
         const state = index < current ? 'passed' : index === current ? 'current' : 'ahead';
         if (knot.dataset.state !== state) knot.dataset.state = state;
       });
-      setMood(current >= 0 ? (moods[current] ?? 'silence') : 'silence');
+      /* Before the first station the sea already plays — silence is reserved
+       * for the one place it means something (the bow, before the blood). */
+      setMood(current >= 0 ? (moods[current] ?? 'open-sea') : 'open-sea');
       /* The sky changes country with the poem's movements (tint crossfade). */
       const movement = String(current >= 0 ? (stationMovements[current] ?? 1) : 1);
       if (rootRef.current && rootRef.current.dataset.movement !== movement) {
@@ -402,7 +407,7 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
   };
 
   return (
-    <div ref={rootRef} data-movement="1" className="group/voyage relative">
+    <div ref={rootRef} data-movement="1" className="group/voyage relative overflow-x-clip">
       <StarSea />
       <VoyageAudio />
 
@@ -415,9 +420,11 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
       </div>
 
       {/* Overture masthead. */}
-      <header className="mx-auto flex min-h-[86vh] w-full max-w-3xl flex-col items-center justify-center px-6 text-center">
-        <p className="font-display text-[11px] tracking-[0.5em] text-star-olympian/70">ICARUS ATLAS · PRESENTS</p>
-        <h1 className="mt-6 font-display text-5xl tracking-[0.08em] text-aether sm:text-7xl">
+      <header className="mx-auto flex min-h-[86svh] w-full max-w-3xl flex-col items-center justify-center px-6 text-center">
+        <p className="font-display text-[10px] tracking-[0.4em] text-star-olympian/70 sm:text-[11px] sm:tracking-[0.5em]">
+          ICARUS ATLAS · PRESENTS
+        </p>
+        <h1 className="mt-6 font-display text-[2.6rem] leading-[1.1] tracking-[0.06em] text-aether sm:text-7xl sm:tracking-[0.08em]">
           THE ODYSSEY
         </h1>
         <p className="mt-3 font-body text-2xl italic text-aether-muted" lang="grc">
@@ -427,7 +434,26 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
           Twenty years. A man sailing home by the stars; a house holding its breath. This is the
           story of a return — told station by station, in the poem&apos;s own words.
         </p>
-        <p className="mt-14 animate-pulse font-display text-[10px] tracking-[0.4em] text-aether-faint motion-reduce:animate-none">
+        {/* The sound invitation: browsers only unlock audio after a real tap or
+            click — wheel-scrolling never counts — so a reader who arrives by
+            URL and only scrolls would sail in silence. One click here grants
+            the page sticky activation (any later stem may play) and doubles as
+            the persisted music preference. The overture stays silent by design;
+            the sea rises at the first station. */}
+        <button
+          type="button"
+          onClick={() => setMusicEnabled(!musicEnabled)}
+          aria-pressed={musicEnabled}
+          className={`mt-10 rounded-full border px-5 py-2 font-display text-[10px] tracking-[0.3em] backdrop-blur-sm transition-colors ${
+            musicEnabled
+              ? 'border-star-olympian/50 bg-star-olympian/10 text-star-olympian hover:border-star-olympian/80'
+              : 'border-glass-border bg-glass text-aether-muted hover:border-star-olympian/50 hover:text-star-olympian'
+          }`}
+        >
+          {musicEnabled ? '♪ SAILING WITH SOUND' : '♪ SAIL WITH SOUND'}
+        </button>
+
+        <p className="mt-8 animate-pulse font-display text-[10px] tracking-[0.4em] text-aether-faint motion-reduce:animate-none">
           SCROLL TO SET SAIL ↓
         </p>
       </header>
@@ -500,16 +526,16 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
 
       {/* The voyage column — wide enough to breathe, prose kept to a readable
           measure inside it. */}
-      <div className="relative mx-auto w-full max-w-4xl px-6 pl-12 sm:pl-16">
+      <div className="relative mx-auto w-full max-w-4xl px-5 sm:px-6 sm:pl-16">
 
         {movements.map((movement) => (
           <div key={movement.n}>
             {/* The gateway: a whole screen for each part of the poem — a new
                 country begins here, under a new colour of sky. */}
-            <section className="relative flex min-h-[92vh] flex-col items-center justify-center text-center">
+            <section className="relative flex min-h-[92svh] flex-col items-center justify-center overflow-hidden text-center">
               <span
                 aria-hidden
-                className="pointer-events-none absolute select-none font-display text-[11rem] leading-none text-star-olympian/[0.05] sm:text-[18rem]"
+                className="pointer-events-none absolute select-none font-display text-[8.5rem] leading-none text-star-olympian/[0.05] sm:text-[18rem]"
               >
                 {movement.roman}
               </span>
@@ -517,7 +543,7 @@ export function VoyageView({ movements, stations, finaleEpigraph, finaleCast }: 
                 <p className="font-display text-[11px] tracking-[0.5em] text-star-olympian/70">
                   MOVEMENT {movement.roman}
                 </p>
-                <h2 className="mt-5 font-display text-5xl tracking-[0.1em] text-aether sm:text-6xl">
+                <h2 className="mt-5 font-display text-3xl tracking-[0.06em] text-aether sm:text-6xl sm:tracking-[0.1em]">
                   {movement.title.toUpperCase()}
                 </h2>
                 <p className="mt-4 font-display text-[11px] tracking-[0.34em] text-aether-faint">

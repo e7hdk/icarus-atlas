@@ -957,6 +957,25 @@ export function MapLibreView({
           }, mapLayersRef.current.relief);
         }
       });
+
+      // Bare-map clicks (open sea, terrain outside every marker) close whatever
+      // panel is open — the spindle's empty-space behaviour, brought to the
+      // Lands. Every interactive layer follows the `*-hit` naming convention,
+      // so probing them at the click point cleanly separates "hit something"
+      // (its own handler answers) from "hit nothing" (dismiss).
+      map.on('click', (event) => {
+        const hitLayers = (map.getStyle()?.layers ?? [])
+          .map((layer) => layer.id)
+          .filter((id) => id.endsWith('-hit'));
+        const hits = hitLayers.length
+          ? map.queryRenderedFeatures(event.point, { layers: hitLayers })
+          : [];
+        if (hits.length === 0) {
+          setSelectedCityId(null);
+          setSelectedPlaceId(null);
+          setSelectedFeatureId(null);
+        }
+      });
     },
     [cityData],
   );
@@ -1478,7 +1497,7 @@ export function MapLibreView({
         </button>
       )}
 
-      <p className="pointer-events-none absolute bottom-3 left-1/2 z-10 max-w-lg -translate-x-1/2 text-center font-body text-[11px] italic text-aether-faint">
+      <p className="pointer-events-none absolute bottom-1.5 left-1/2 z-10 w-[94vw] -translate-x-1/2 truncate text-center font-body text-[10px] italic text-aether-faint sm:bottom-3 sm:w-auto sm:max-w-lg sm:whitespace-normal sm:text-[11px]">
         Basemap:{' '}
         <a
           href="https://www.naturalearthdata.com/"
