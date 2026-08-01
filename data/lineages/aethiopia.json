@@ -1,0 +1,33 @@
+{
+  "city": "aethiopia",
+  "reigns": [
+    {
+      "ruler": "Cepheus",
+      "characterId": "cepheus-ethiopia",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.668–5.249; Fabulae 64; Astronomica 2.9",
+      "note": "King of Ethiopia when Perseus found Andromeda exposed to the sea-monster. Hyginus makes him son of Phoenix. Not the Tegean Argonaut Cepheus son of Aleus. Separate from Memnon's Ethiopian kingship (Hesiod)."
+    },
+    {
+      "ruler": "Cassiopeia",
+      "characterId": "cassiopeia-ethiopia",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.3; Metamorphoses 4.668–5.18; Fabulae 64; Astronomica 2.10",
+      "note": "Queen consort of Cepheus — not a solo succession step. Her boast against the Nereids brought Poseidon's flood and the monster; the lenses name her wife and mother, not an independent reigning queen."
+    },
+    {
+      "ruler": "Andromeda",
+      "characterId": "andromeda",
+      "sources": ["apollodorus", "ovid", "hyginus"],
+      "citation": "Bibliotheca 2.4.3–5; Metamorphoses 4.668–5.249; Fabulae 64; Astronomica 2.11",
+      "note": "Not a reigning queen of Aethiopia — Cepheus' daughter, the bride Perseus won and took to Greece (Mycenae). Kept here as the royal hinge through which Perses stays behind."
+    },
+    {
+      "ruler": "Perses",
+      "characterId": "perses-perseid",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 2.4.5",
+      "note": "Firstborn of Perseus and Andromeda, left with Cepheus before the return to Greece; from him the kings of Persia are said to descend. Apollodorus does not style him 'king of Ethiopia' — the stay-behind heir, not the Titan Perses nor Perses of Colchis."
+    }
+  ]
+}

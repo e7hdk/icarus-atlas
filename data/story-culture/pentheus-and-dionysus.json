@@ -1,6 +1,35 @@
 {
   "id": "pentheus-and-dionysus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Pentheus Torn by Maenads (House of the Vettii, Pompeii)",
+      "artist": "Unknown (Roman wall-painter)",
+      "year": "Before AD 79",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Pompeii_-_Casa_dei_Vettii_-_Pentheus.jpg/960px-Pompeii_-_Casa_dei_Vettii_-_Pentheus.jpg",
+      "description": "Pompeii's House of the Vettii — Pentheus torn by maenads on the wall, Euripides' Bacchae in Roman domestic myth."
+    },
+    {
+      "title": "Death of Pentheus (Douris cup, Kimbell Art Museum)",
+      "artist": "Douris",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Red-figure_cup_showing_the_death_of_Pentheus_and_a_Maenad_by_Douris%2C_Kimbell_Art_Museum.jpg/960px-Red-figure_cup_showing_the_death_of_Pentheus_and_a_Maenad_by_Douris%2C_Kimbell_Art_Museum.jpg",
+      "description": "Douris' cup — the Theban king ripped apart on Cithaeron, red-figure violence for the god he refused."
+    },
+    {
+      "title": "Death of Pentheus (Louvre G445)",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 450–425 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Death_Pentheus_Louvre_G445.jpg/960px-Death_Pentheus_Louvre_G445.jpg",
+      "description": "Louvre G445 — Attic death of Pentheus, the spy in women's dress becoming the sacrifice the Bacchae demands."
+    },
+    {
+      "title": "Maenads Killing Pentheus (Meidias Painter, Kerameikos)",
+      "artist": "Meidias Painter (circle)",
+      "year": "c. 420–400 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Meidias_Painter_ARV_1313_6_Helena_and_her_sisters_-_maenads_killing_Pentheus_-_Athens_Kerameikos_Museum_2712_-_08.jpg/960px-Meidias_Painter_ARV_1313_6_Helena_and_her_sisters_-_maenads_killing_Pentheus_-_Athens_Kerameikos_Museum_2712_-_08.jpg",
+      "description": "Meidias Painter circle — maenads killing Pentheus, late-classical vase fury for Dionysus' Theban revenge."
+    }
+  ],
   "popCulture": [
     {
       "title": "The Bacchae",

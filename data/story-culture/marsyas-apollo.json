@@ -1,6 +1,42 @@
 {
   "id": "marsyas-apollo",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Flaying of Marsyas",
+      "artist": "Titian",
+      "year": "c. 1570–1576",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tizian_-_Apoll%C3%B3n_a_Marsyas%2C_z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_1.jpg/960px-Tizian_-_Apoll%C3%B3n_a_Marsyas%2C_z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_1.jpg",
+      "description": "Titian's Kroměříž masterpiece — Apollo's assistants flay the defeated satyr hung upside down, pain and music dissolving in late paint."
+    },
+    {
+      "title": "Apollo Flaying Marsyas",
+      "artist": "Jusepe de Ribera",
+      "year": "1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jos%C3%A9_de_Ribera_-_Apollo_Flaying_Marsyas_-_WGA19374.jpg/960px-Jos%C3%A9_de_Ribera_-_Apollo_Flaying_Marsyas_-_WGA19374.jpg",
+      "description": "Ribera's Brussels canvas — luminous Apollo peels the skin from Marsyas in a shaft of light, the contest's aftermath as Spanish tenebrism."
+    },
+    {
+      "title": "Athena and Marsyas",
+      "artist": "Roman copy after Myron",
+      "year": "Roman copy after a Greek bronze of c. 450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Mirone_%28da%29%2C_Atena_e_Marsia%2C_copia_romana_da_originale_del_450_ac.ca_01.JPG/960px-Mirone_%28da%29%2C_Atena_e_Marsia%2C_copia_romana_da_originale_del_450_ac.ca_01.JPG",
+      "description": "After Myron: Athena has discarded the aulos; Marsyas starts forward to claim the pipes — the step before hubris and Apollo's knife."
+    },
+    {
+      "title": "The Flaying of Marsyas",
+      "artist": "Bronzino",
+      "year": "c. 1531–1532",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Angelo_Bronzino_-_Sfida_tra_apollo_e_marsia.jpg/960px-Angelo_Bronzino_-_Sfida_tra_apollo_e_marsia.jpg",
+      "description": "Bronzino's Hermitage panel stages the musical contest itself — Florentine Mannerism before the flaying."
+    },
+    {
+      "title": "Apollo and Marsyas",
+      "artist": "Pietro Perugino",
+      "year": "c. 1490–1500",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apollon_et_Daphnis_-_Le_P%C3%A9rugin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_370.jpg/960px-Apollon_et_Daphnis_-_Le_P%C3%A9rugin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_370.jpg",
+      "description": "Perugino's Louvre panel — lyre against pipes in Umbrian calm, the deadly rivalry still a quiet pastoral exchange."
+    }
+  ],
   "popCulture": [
     {
       "title": "Marsyas",

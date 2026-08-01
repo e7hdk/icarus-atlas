@@ -1,0 +1,16 @@
+{
+  "id": "chalkeia",
+  "name": "Chalkeia",
+  "greekName": "Χαλκεῖα",
+  "deities": ["athena", "hephaestus"],
+  "place": "athens",
+  "atticDate": { "month": "pyanepsion", "days": [30] },
+  "conventionalDates": ["10-30"],
+  "summary": "The smiths' and craftsmen's day for Athena and Hephaestus at month's end — when the loom for the Panathenaic peplos was set up and the bronze-workers kept holiday.",
+  "testimonia": [
+    "Suda s.v. Χαλκεῖα (Athena and Hephaestus; the peplos begun)",
+    "Mikalson (1975) 78 (30 Pyanopsion)",
+    "Parke (1977) 92–93",
+    "Deubner, Attische Feste (1932) 35–36"
+  ]
+}

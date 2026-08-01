@@ -1,6 +1,35 @@
 {
   "id": "cephalus-procris",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Death of Procris",
+      "artist": "Piero di Cosimo",
+      "year": "c. 1486–1510",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Piero_di_Cosimo_013.jpg/960px-Piero_di_Cosimo_013.jpg",
+      "description": "Piero's National Gallery panel: Procris lies by the shore, slain by the unerring javelin she gave Cephalus — love undone by suspicion."
+    },
+    {
+      "title": "Cephalus and Procris",
+      "artist": "Paolo Veronese",
+      "year": "c. 1580–1584",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cephalus_and_Procris.jpg/960px-Cephalus_and_Procris.jpg",
+      "description": "Veronese's Strasbourg canvas: the hunter cradles dying Procris among dogs and foliage — the fatal throw of the never-missing spear."
+    },
+    {
+      "title": "Landscape with Cephalus and Procris Reunited by Diana",
+      "artist": "Claude Lorrain",
+      "year": "1645",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Claude_Lorrain_-_Landscape_with_Cephalus_and_Procris_Reunited_by_Diana_-_WGA04994.jpg/960px-Claude_Lorrain_-_Landscape_with_Cephalus_and_Procris_Reunited_by_Diana_-_WGA04994.jpg",
+      "description": "Claude's National Gallery light: Diana reconciles the couple and bestows the hound and javelin that will later doom them."
+    },
+    {
+      "title": "Cephalus and Procris (The Death of Procris)",
+      "artist": "Joachim Wtewael",
+      "year": "c. 1595–1600",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Joachem_Wtewael_-_Cephalus_and_Procris_%28The_Death_of_Procris%29.jpg",
+      "description": "Wtewael's Mannerist collapse: Procris dies in Cephalus' arms in the forest — mistrust ending in irreversible loss."
+    }
+  ],
   "popCulture": [
     {
       "title": "Cephalus",

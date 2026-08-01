@@ -1,6 +1,53 @@
 {
   "id": "dionysus-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Bacchus",
+      "artist": "Caravaggio",
+      "year": "c. 1596",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bacchus_by_Caravaggio_1.jpg/960px-Bacchus_by_Caravaggio_1.jpg",
+      "description": "Uffizi oil: the youthful wine god reclining with a shallow glass, crowned with vine leaves beside overripe fruit — Caravaggio's fleshy, faintly drowsy Bacchus as sensuality edged with decay."
+    },
+    {
+      "title": "Bacchus and Ariadne",
+      "artist": "Titian",
+      "year": "1522–1523",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Titian_Bacchus_and_Ariadne.jpg/960px-Titian_Bacchus_and_Ariadne.jpg",
+      "description": "National Gallery, London: Bacchus leaps from his cheetah-drawn chariot toward Ariadne on Naxos — the cycle's rescue climax, her crown already among the stars."
+    },
+    {
+      "title": "The Dionysus Cup",
+      "artist": "Exekias",
+      "year": "c. 540–530 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg/960px-Exekias_Dionysos_Staatliche_Antikensammlungen_2044_n2.jpg",
+      "description": "Munich kylix: Dionysus reclines in a ship whose mast sprouts grapevines, dolphins circling — the Homeric Hymn's Tyrrhenian pirates transformed, the god's voyage as black-figure miracle."
+    },
+    {
+      "title": "Bacchus",
+      "artist": "Michelangelo",
+      "year": "1496–1497",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Michelangelo_Bacchus.jpg",
+      "description": "Bargello marble: a swaying, drunken Bacchus raising his cup while a satyr nibbles grapes behind him — intoxication carved in stone by the young Michelangelo."
+    }
+  ],
+  "music": [
+    {
+      "title": "L'Arianna",
+      "year": "1608",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's lost Gonzaga opera survives chiefly in Ariadne's lament — the cry of the woman Bacchus will claim on Naxos, the wine god arriving as consolation after Theseus' sail.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Arianna"
+    },
+    {
+      "title": "Bacchus and Ariadne",
+      "year": "1931",
+      "kind": "ballet",
+      "composer": "Albert Roussel",
+      "description": "Roussel's ballet for the Paris Opéra retells the Naxos rescue in bright neo-classical colour — Dionysus' arrival as choreography rather than Theban tragedy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Bacchus_and_Ariadne_(ballet)"
+    }
+  ],
   "popCulture": [
     {
       "title": "The Bacchae",
@@ -16,6 +63,14 @@
       "kind": "other",
       "description": "Wine, theatre and ecstatic cult still orbit Dionysus' cycle — the twice-born god as Europe's name for sacred intoxication.",
       "externalUrl": "https://en.wikipedia.org/wiki/Dionysus"
+    },
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Dionysus' boons are hangover and festive fog — the wine god as a party build, cheering Zagreus on from Olympus between cups.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
     }
   ]
 }

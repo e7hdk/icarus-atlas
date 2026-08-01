@@ -1,6 +1,35 @@
 {
   "id": "protesilaus-at-troy",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Protesilaos Advancing from a Ship's Prow (Silver Drachm of Thessalian Thebai)",
+      "artist": "Unknown (Thessalian mint)",
+      "year": "c. 302–286 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Silver_drachma_or_tetrobol%2C_Thebes%2C_302-286_BC.jpg",
+      "description": "Thessalian drachm — Protesilaos advancing from a ship's prow, the first ashore who would be first to die."
+    },
+    {
+      "title": "Coinage of Skione (Founded by Protesilaus)",
+      "artist": "Unknown (Skionian mint)",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/MACEDON%2C_Skione._Circa_480-470_BC.jpg",
+      "description": "Skione coinage — the city that claimed Protesilaus as founder, the landing hero turned cult name."
+    },
+    {
+      "title": "Laodamia Writing (from Ovid's Heroides)",
+      "artist": "Robinet Testard",
+      "year": "c. 1496–1498",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Laodamie_BnF_Fran%C3%A7ais_875_fol._71v.jpg",
+      "description": "Testard's Heroides — Laodamia writing to the husband who leapt first from the black ships."
+    },
+    {
+      "title": "Laodamia",
+      "artist": "George William Joy",
+      "year": "c. 1870–1890",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/George_William_Joy_%281844-1925%29_-_Laodamia_-_1976-118-1_-_Portsmouth_Museums_and_Visitor_Services.jpg/960px-George_William_Joy_%281844-1925%29_-_Laodamia_-_1976-118-1_-_Portsmouth_Museums_and_Visitor_Services.jpg",
+      "description": "Joy's Laodamia — the widow whose grief outlived the first Achaean dead at Troy."
+    }
+  ],
   "popCulture": [
     {
       "title": "Protesilaus",

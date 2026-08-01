@@ -189,7 +189,11 @@ async function assembleContext(): Promise<EphemerisContext> {
       .filter((id): id is string => Boolean(id && rosterIds.has(id)));
   const sagas: EphemerisWeekSaga[] = stories
     .filter((story) => story.parent === null)
-    .map((story) => ({ storyId: story.id, title: story.title, cast: eligibleCast(story) }))
+    .map((story) => ({
+      storyId: story.id,
+      title: story.title,
+      cast: eligibleCast(story),
+    }))
     .filter((saga) => saga.cast.length >= WEEK_MIN_CAST);
   const storiesById = new Map(stories.map((story) => [story.id, story]));
   const curated: EphemerisCuratedWeek[] = weekEntries.flatMap((entry) => {
@@ -262,9 +266,13 @@ const BOND_LABEL_PRIORITY = [
 ];
 
 function keyBonds(id: string, context: EphemerisContext): ProemBond[] {
+  // Disputed bonds (topic set) never become key bonds: the Oracle would grade
+  // a minority telling as "the" answer (Athena, child of… Poseidon — Pausanias'
+  // Libyan variant) and the Proem thread would show it unmarked. Quarrels have
+  // their own ⚖ beat; the thread and the riddle stick to what the tellers agree on.
   const ranked = bondsFor(id, context.relations)
     .map((bond) => ({ bond, rank: BOND_LABEL_PRIORITY.indexOf(bond.label) }))
-    .filter(({ bond, rank }) => rank >= 0 && context.charactersById.has(bond.otherId));
+    .filter(({ bond, rank }) => rank >= 0 && !bond.topic && context.charactersById.has(bond.otherId));
   const seen = new Set<string>();
   const picked: ProemBond[] = [];
   for (const { bond } of [...ranked].sort((a, b) => a.rank - b.rank)) {
@@ -331,6 +339,24 @@ export async function buildEphemerisData(): Promise<EphemerisData> {
   };
 }
 
+/** Every title under which the star truthfully appears: the stories that cast
+ *  it plus each one's parent sagas up to the root. The Oracle deals its wrong
+ *  answers from the saga shelf, and any title in this set is a RIGHT answer —
+ *  Athena stands on the Argo's deck, and she fights through episodes of sagas
+ *  whose root cast never names her. */
+function featuredStoryTitles(stories: Story[], featured: Story[]): string[] {
+  const byId = new Map(stories.map((story) => [story.id, story]));
+  const titles = new Set<string>();
+  for (const story of featured) {
+    let current: Story | undefined = story;
+    while (current) {
+      titles.add(current.title);
+      current = current.parent ? byId.get(current.parent) : undefined;
+    }
+  }
+  return [...titles];
+}
+
 /** Card payload for one eligible star; null when the id is off the roster. */
 export async function buildCardPayload(id: string): Promise<EphemerisCardPayload | null> {
   const context = await getEphemerisContext();
@@ -340,7 +366,8 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
 
   const culture = await loadCulture(id);
   const artwork = culture?.artworks[0] ?? null;
-  const story = storiesFeaturingCharacter(context.stories, id)[0] ?? null;
+  const featured = storiesFeaturingCharacter(context.stories, id);
+  const story = featured[0] ?? null;
   const residence = character.residences?.find((entry) => context.citiesById.has(entry.city));
 
   return {
@@ -361,6 +388,7 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
       : null,
     storyId: story?.id ?? null,
     storyTitle: story?.title ?? null,
+    storyTitles: featuredStoryTitles(context.stories, featured),
     city: residence
       ? { id: residence.city, name: context.citiesById.get(residence.city) as string }
       : null,

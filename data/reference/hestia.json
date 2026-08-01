@@ -1,20 +1,57 @@
 {
   "id": "hestia",
-  "summary": "In ancient Greek religion and mythology, Hestia is the virgin goddess of the hearth and the home. In myth, she is the firstborn child of the Titans Cronus and Rhea, and one of the Twelve Olympians.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In ancient Greek religion and mythology, Hestia is the virgin goddess of the hearth and the home — of domestic and civic fire, family, and the state. She is the firstborn child of the Titans Cronus and Rhea and one of the Twelve Olympians, though she has little narrative prominence in myth. As goddess of sacrificial fire she received the first offering at every domestic sacrifice; the hearth of the prytaneum was her official public sanctuary. Her Roman equivalent is Vesta.",
+  "attribution": "Adapted from Wikipedia, \"Hestia\" · CC BY-SA 4.0",
+  "etymology": "Hestia's name means \"hearth, fireplace, altar,\" from a Proto-Indo-European root related to burning and dwelling (*wes / *h₂wes-). It refers to the oikos — domestic life, household, and family — so that the goddess is a personification of the hearth fire as the ritual and social centre of home and city.",
+  "symbols": [
+    "hearth",
+    "sacred flame",
+    "kettle",
+    "veil"
+  ],
+  "sacredAnimals": [
+    "pig"
+  ],
+  "cultCenters": [
+    "The prytaneion of every Greek city",
+    "Delphi (the common hearth)",
+    "Hermione",
+    "Sparta",
+    "Olympia"
+  ],
+  "sections": [
+    {
+      "heading": "Origins and etymology",
+      "paragraphs": [
+        "Hestia's name means \"hearth, fireplace, altar,\" stemming from a Proto-Indo-European root connected with burning and dwelling. It thus refers to the oikos: domestic life, home, household, and family. Walter Burkert noted that an early form of the temple is the hearth house, as at Dreros and Prinias on Crete and in the temple of Apollo at Delphi, which always had its inner hestia.",
+        "The Mycenaean megaron, like Homer's hall of Odysseus, had a central hearth; likewise the hearth of the later Greek prytaneum was the community's ritual and secular focus. Hestia personifies that hearth fire as a symbol of society, family, authority, and kingship."
+      ]
+    },
+    {
+      "heading": "Status and attributes",
+      "paragraphs": [
+        "Hestia belongs to the first Olympian generation as eldest daughter of Rhea and Cronus. Like Athena and Artemis she remains an eternal virgin; in the Homeric Hymn to Aphrodite, Aphrodite has \"no power\" over her. Zeus assigned her the duty of tending the Olympian hearth with the fatty portions of animal sacrifices, so that wherever food was cooked or an offering burnt she received a share of honour.",
+        "Because the hearth is immovable, she rarely joins the other gods' processions or adventures; she is traditionally absent from Gigantomachy scenes as the one who keeps the home fires burning. Portrayals are rare: in classical art she may appear as a modestly veiled woman, sometimes with a staff or beside a fire, seated on a plain wooden throne. Her associated sacrificial animal was the domestic pig."
+      ]
+    },
+    {
+      "heading": "Worship",
+      "paragraphs": [
+        "Worship centred on the hearth, both domestic and civic. Hestia often received the first offering at sacrifices and the first and last libations at feasts; Pausanias records that the Eleans sacrificed first to Hestia and then to other gods. Extinguishing a domestic or public hearth fire carelessly was a breach of religious duty; deliberate extinction required rites of purification and renewal.",
+        "Every private and public hearth was regarded as her sanctuary. Free-standing temples were few — Pausanias mentions ones at Hermione and Sparta — but the prytaneum hearth was the common hearth of the state, and when a new colony was founded a flame from the mother city's public hearth was carried to the settlement. Civic rites were usually led by civil officials rather than a specialised priesthood."
+      ]
+    },
+    {
+      "heading": "Equivalence",
+      "paragraphs": [
+        "Her Roman equivalent is Vesta, likewise a personification of public, domestic, and colonial hearths. Burkert notes that the hestia–Vesta name pair cannot be explained by Indo-European linguistics alone and likely involves borrowing from a third language. Herodotus equated Hestia with the Scythian deity Tabiti; Procopius compared her to the Zoroastrian holy fire of the Sasanians."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Hestia"
     }
-  ],
-  "symbols": [
-    "hearth",
-    "sacred flame"
-  ],
-  "cultCenters": [
-    "The prytaneion of every Greek city",
-    "Delphi (the common hearth)"
-  ],
-  "etymology": "From hestia, \"hearth\" — the goddess and the household fire share one name."
+  ]
 }

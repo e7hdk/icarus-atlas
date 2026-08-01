@@ -2,25 +2,38 @@
   "city": "tiryns",
   "reigns": [
     {
+      "ruler": "Tiryns",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.25.8",
+      "note": "Eponymous hero of the citadel — son of Argus, son of Zeus. Pausanias records the local claim at the ruins; he stands outside the later Proetid and Perseid succession."
+    },
+    {
       "ruler": "Proetus",
       "characterId": "proetus",
       "sources": ["apollodorus", "pausanias"],
-      "citation": "Apollod. 2.2.1; Paus. 2.25.7",
-      "note": "Driven from Argos, he returned with a Lycian army and fortified Tiryns with the Cyclopes' help."
+      "citation": "Apollod. 2.2.1; Paus. 2.16.2, 2.25.7–8",
+      "note": "Twin of Acrisius; Apollodorus has him reign over Tiryns after the brothers divided Argive land, the Cyclopes fortifying the walls. Pausanias still saw traces of his residence there — distinct from Acrisius at Argos."
+    },
+    {
+      "ruler": "Megapenthes",
+      "characterId": "megapenthes-proetid",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.2–3",
+      "note": "Son of Proetus; Apollodorus finds him at Tiryns when Perseus comes to exchange kingdoms — he yields the Tirynthian seat and takes Argos. Not Homeric Megapenthes son of Menelaus."
     },
     {
       "ruler": "Perseus",
       "characterId": "perseus",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 2.4.4; Paus. 2.16.3",
-      "note": "After killing Acrisius he exchanged Argos for Tiryns with Megapenthes and founded walled Mycenae."
+      "note": "After killing Acrisius he exchanged with Megapenthes: Apollodorus says he reigned over Tiryns and fortified Midea and Mycenae. Pausanias stresses the founding of Mycenae from the kingdom he took."
     },
     {
       "ruler": "Sthenelus",
       "characterId": "sthenelus-perseid",
       "sources": ["apollodorus"],
       "citation": "Apollod. 2.4.5–6",
-      "note": "Seized the thrones of Mycenae and Tiryns after banishing Amphitryon from Argos."
+      "note": "Son of Perseus; after Amphitryon killed Electryon he banished Amphitryon from Argos and seized the thrones of Mycenae and Tiryns. Electryon is attested as king of Mycenae (Medea in Pausanias), Amphitryon as exile from Tiryns — neither as Tiryns king. Eurystheus inherits Mycenae and commands Heracles from Tiryns, but no source names him king of Tiryns."
     }
   ]
 }

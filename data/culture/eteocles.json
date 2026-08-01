@@ -1,6 +1,42 @@
 {
   "id": "eteocles",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Eteocles and Polynices",
+      "artist": "Giovanni Silvagni",
+      "year": "c. 1800",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Giovanni_Silvagni%2C_Eteocle_e_Polinice.jpg/960px-Giovanni_Silvagni%2C_Eteocle_e_Polinice.jpg",
+      "description": "Neoclassical oil by Giovanni Silvagni staging the mutual slaughter of Oedipus' sons before the gates of Thebes: Eteocles and Polynices lock shields and spears in the duel that ends the Seven's war and opens Antigone's tragedy. The brothers' interlocking bodies make the fratricide a single fatal knot — the image that later painters and urn-makers return to whenever they need the Theban civil war in one frame."
+    },
+    {
+      "title": "Eteocles and Polynices",
+      "artist": "Frans Francken the Younger",
+      "year": "c. 1615–1620",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Frans_Francken_II_-_Eteocles_en_Polynices_-_155_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff/lossy-page1-960px-Frans_Francken_II_-_Eteocles_en_Polynices_-_155_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff.jpg",
+      "description": "Flemish cabinet picture in the Royal Museum of Fine Arts Antwerp (inv. 155): Francken crowds the Theban duel with spectators, armour, and the chaos of the Seven Against Thebes, keeping Eteocles and Polynices as the bright centre of the slaughter. The small panel translates Aeschylus' and Statius' civil war into Antwerp's taste for densely peopled mythological histories."
+    },
+    {
+      "title": "Duel of Eteocles and Polynices (Etruscan cinerary urn)",
+      "artist": "Unknown (Etruscan)",
+      "year": "2nd century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Duel_between_Eteocles_and_Polynices_%282nd-cent._BC%29_-_Museo_archeologico_nazionale_-_Siena_2016.jpg/960px-Duel_between_Eteocles_and_Polynices_%282nd-cent._BC%29_-_Museo_archeologico_nazionale_-_Siena_2016.jpg",
+      "description": "Alabaster cinerary urn relief in Siena's Museo Archeologico Nazionale: the Theban brothers thrust at each other while winged demons frame the fight — an Etruscan reading of the Greek fratricide used as a funerary emblem. Carved in the Hellenistic centuries, it shows how far west the duel of Eteocles and Polynices travelled as an image of civil strife and shared death."
+    },
+    {
+      "title": "The Seven Chiefs against Thebes",
+      "artist": "Angélique Mongez",
+      "year": "1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Angelique_Mongez_-_Les_sept_chefs_devant_Thebes.jpg/960px-Angelique_Mongez_-_Les_sept_chefs_devant_Thebes.jpg",
+      "description": "History painting exhibited at the Salon of 1827: Mongez gathers the Argive champions before the walls of Thebes, the army that Polynices leads against his brother's throne. Eteocles' city is the fortress under siege; the canvas turns Aeschylus' Seven into a grand Napoleonic-era battle machine, with the disputed kingship of Eteocles as the war's cause."
+    },
+    {
+      "title": "Eteocles and Polynices (detail)",
+      "artist": "Giovanni Battista Tiepolo",
+      "year": "c. 1725–1730",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Eteocles_and_Polynices_by_Tiepolo_-_detail.jpg",
+      "description": "Detail from Tiepolo's treatment of the Theban brothers: armour, gesture, and the locked struggle that leaves both kings dead on the same field. The Venetian painter keeps the duel as a flash of Baroque motion — Eteocles still the brother who held the city, Polynices the exile who came back with the Seven."
+    }
+  ],
   "films": [
     {
       "title": "Antigone",

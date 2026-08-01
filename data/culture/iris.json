@@ -25,6 +25,22 @@
   ],
   "popCulture": [
     {
+      "title": "Percy Jackson & the Olympians",
+      "year": "2005",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "Riordan's demigods call long-distance by tossing a drachma into a rainbow — Iris Messages that keep the messenger goddess in every camp conversation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians"
+    },
+    {
+      "title": "The Sea of Monsters",
+      "year": "2006",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "Percy tricks Luke into confessing over an Iris Message — the rainbow goddess as the plot's telephone at the climax of the second quest.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Sea_of_Monsters"
+    },
+    {
       "title": "Rainbow",
       "year": "—",
       "kind": "other",
@@ -32,11 +48,18 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Rainbow"
     },
     {
-      "title": "Iris (plant)",
+      "title": "Iridescence",
       "year": "—",
-      "kind": "other",
-      "description": "The iris flower took the goddess's name for its spectrum of petals — Hera's messenger blooming in gardens worldwide.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Iris_(plant)"
+      "kind": "language",
+      "description": "English iridescent descends from Iris — the rainbow goddess's name still naming every shimmer of shifting colour.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iridescence"
+    },
+    {
+      "title": "Iris (anatomy)",
+      "year": "—",
+      "kind": "language",
+      "description": "The coloured ring of the eye took the goddess's name for its spectrum — Hera's messenger living in every gaze.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iris_(anatomy)"
     }
   ]
 }

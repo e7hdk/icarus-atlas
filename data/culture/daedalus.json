@@ -30,6 +30,31 @@
       "description": "Caravaggesque oil by Orazio Riminaldi showing Daedalus fastening the wings to a youthful Icarus. Strong chiaroscuro isolates the craftsman's tools and touch — the inventor of the labyrinth rendered as an intimate scene of instruction before the fatal flight."
     }
   ],
+  "films": [
+    {
+      "title": "Icarus",
+      "year": "2022",
+      "medium": "animation",
+      "director": "Carlo Vogele",
+      "description": "Vogele's Cretan animation keeps Daedalus at the centre of the workshop and the labyrinth — the father whose genius cages the Minotaur and arms his son's fatal flight.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Icarus_(2022_film)"
+    },
+    {
+      "title": "Atlantis",
+      "year": "2013–2015",
+      "medium": "tv",
+      "description": "Robert Lindsay's Daedalus is the series' resident inventor — the labyrinth-builder as recurring ally and complication in BBC fantasy Crete.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Atlantis_(TV_series)"
+    },
+    {
+      "title": "A Portrait of the Artist as a Young Man",
+      "year": "1977",
+      "medium": "film",
+      "director": "Joseph Strick",
+      "description": "Strick's Joyce adaptation follows Stephen Dedalus — the craftsman's name carried into Dublin as the artist who must grow wings of his own.",
+      "externalUrl": "https://en.wikipedia.org/wiki/A_Portrait_of_the_Artist_as_a_Young_Man_(film)"
+    }
+  ],
   "popCulture": [
     {
       "title": "The King Must Die",
@@ -46,6 +71,14 @@
       "creator": "James Joyce",
       "description": "Joyce names Stephen Dedalus after the labyrinth-builder — the artist who must craft wings to escape the nets of nation, language and religion.",
       "externalUrl": "https://en.wikipedia.org/wiki/A_Portrait_of_the_Artist_as_a_Young_Man"
+    },
+    {
+      "title": "Stephen Dedalus",
+      "year": "1916–1922",
+      "kind": "other",
+      "creator": "James Joyce",
+      "description": "Joyce's alter ego keeps the craftsman's name across Portrait and Ulysses — Daedalus as the emblem of the artist trapped in, and fleeing, a labyrinth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Stephen_Dedalus"
     }
   ]
 }

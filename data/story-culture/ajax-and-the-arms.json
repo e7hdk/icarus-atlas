@@ -1,6 +1,35 @@
 {
   "id": "ajax-and-the-arms",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Suicide of Ajax (Boulogne Amphora)",
+      "artist": "Exekias",
+      "year": "c. 540 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Exekias_Suicide_d_Ajax_01.jpg/960px-Exekias_Suicide_d_Ajax_01.jpg",
+      "description": "Exekias shows Ajax planting his sword after the arms contest — shame after Odysseus wins Achilles' armor, fixed in Archaic black-figure quiet."
+    },
+    {
+      "title": "Ajax and Odysseus Contest the Arms of Achilles",
+      "artist": "Unknown (Dutch engraving)",
+      "year": "16th–17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ajax_en_Odysseus_twisten_om_de_wapens_van_Achilles%2C_RP-P-1964-4443.jpg/960px-Ajax_en_Odysseus_twisten_om_de_wapens_van_Achilles%2C_RP-P-1964-4443.jpg",
+      "description": "Rijksmuseum print: Ajax and Odysseus quarrel over the armor — the Little Iliad's judgment that drives Sophocles' madness."
+    },
+    {
+      "title": "Oinochoe with Odysseus and Ajax",
+      "artist": "Unknown (Attic)",
+      "year": "c. 520–500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Oinochoe_Odysseus_Ajax_Louvre_F340_glare_reduced.png/960px-Oinochoe_Odysseus_Ajax_Louvre_F340_glare_reduced.png",
+      "description": "Louvre oinochoe F 340: the two heroes of the arms dispute face each other — the contest antiquity painted as often as it told."
+    },
+    {
+      "title": "Sorrowful Ajax",
+      "artist": "Asmus Jacob Carstens",
+      "year": "c. 1791",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Ajax_%28Carstens%29.jpg/960px-Ajax_%28Carstens%29.jpg",
+      "description": "Carstens' Neoclassical Ajax broods after losing the armor — wounded honor before the cattle slaughter and the sword."
+    }
+  ],
   "popCulture": [
     {
       "title": "Ajax (play)",

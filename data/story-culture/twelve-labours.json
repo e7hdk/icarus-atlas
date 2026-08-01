@@ -1,6 +1,42 @@
 {
   "id": "twelve-labours",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Heracles and the Nemean Lion, metope from the Temple of Zeus at Olympia",
+      "artist": "Unknown (workshop of the Temple of Zeus, Olympia)",
+      "year": "c. 470–456 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/M%C3%A8topa_del_temple_de_Zeus_d%27Ol%C3%ADmpia_amb_representaci%C3%B3_d%27H%C3%A8racles_i_el_lle%C3%B3_de_Nemea_%28Museu_Arqueol%C3%B2gic_d%27Ol%C3%ADmpia%29.jpg/960px-M%C3%A8topa_del_temple_de_Zeus_d%27Ol%C3%ADmpia_amb_representaci%C3%B3_d%27H%C3%A8racles_i_el_lle%C3%B3_de_Nemea_%28Museu_Arqueol%C3%B2gic_d%27Ol%C3%ADmpia%29.jpg",
+      "description": "Olympia's Temple of Zeus metope opens the Twelve Labours: the weary hero rests after the Nemean Lion while Athena looks on — Severe-style restraint instead of gore."
+    },
+    {
+      "title": "Heracles brings the Erymanthian boar to Eurystheus",
+      "artist": "Oltos",
+      "year": "c. 510 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Erymanthian_Boar_Louvre_G17.jpg/960px-Erymanthian_Boar_Louvre_G17.jpg",
+      "description": "The comic emblem of the Labours: Heracles delivers the live Erymanthian boar while Eurystheus hides in a pithos — Oltos' kylix made the cowering taskmaster the cycle's punchline."
+    },
+    {
+      "title": "Hercules Killing the Stymphalian Birds",
+      "artist": "Albrecht Dürer",
+      "year": "1500",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Albrecht_D%C3%BCrer_042.jpg/960px-Albrecht_D%C3%BCrer_042.jpg",
+      "description": "Dürer restages the sixth Labour for Northern Renaissance eyes — Hercules loosing arrows at the man-eating birds of the Stymphalian marsh."
+    },
+    {
+      "title": "Heracles, Cerberus and Eurystheus (Caeretan hydria)",
+      "artist": "Unknown (Caeretan workshop)",
+      "year": "c. 530 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Herakles_Kerberos_Eurystheus_Louvre_E701.jpg/960px-Herakles_Kerberos_Eurystheus_Louvre_E701.jpg",
+      "description": "The last Labour on an archaic Caeretan hydria: Heracles hauls three-headed Cerberus before Eurystheus, who has flung himself into a pithos in panic."
+    },
+    {
+      "title": "Farnese Hercules",
+      "artist": "After Lysippos (signed by Glykon of Athens)",
+      "year": "c. 216 CE (Roman copy after a 4th-century BCE Greek original)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg/960px-Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg",
+      "description": "The Farnese Hercules — exhausted after the cycle, the golden apples of the Hesperides hidden behind his back — the Labours completed and immortality near."
+    }
+  ],
   "popCulture": [
     {
       "title": "Labours of Hercules",
@@ -15,6 +51,16 @@
       "kind": "other",
       "description": "The labours are the hero's public face — every vase, statue, and film returns to Eurystheus' impossible list.",
       "externalUrl": "https://en.wikipedia.org/wiki/Heracles"
+    }
+  ],
+  "films": [
+    {
+      "title": "Hercules",
+      "year": "1997",
+      "medium": "film",
+      "director": "Ron Clements and John Musker",
+      "description": "Disney's gospel-singing cartoon made the Labours a generation's first Heracles — merchandise and montage in place of Eurystheus' grim list.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
     }
   ]
 }

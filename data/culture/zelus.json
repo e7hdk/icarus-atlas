@@ -1,4 +1,33 @@
 {
   "id": "zelus",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Envy (Invidia)",
+      "artist": "Giotto",
+      "year": "1306",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Giotto-_The_Seven_Vices_-_Envy.JPG",
+      "description": "In the Arena Chapel at Padua, Giotto's vice cycle gives Envy a clenched, fire-eating female figure — the Latin Invidia that Hyginus's Preface equates with Greek Zelos (Zelus), the daimon of rivalry and jealous emulation who stands with Nike, Kratos and Bia at Zeus's throne. Fresco, Cappella degli Scrovegni: the medieval image through which Zelus's force of envious striving entered the Western gallery of the vices."
+    },
+    {
+      "title": "Table of the Mortal Sins (detail: Invidia)",
+      "artist": "Hieronymus Bosch",
+      "year": "c. 1500–1525",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jheronimus_Bosch_Table_of_the_Mortal_Sins_%28Invidia%29.jpg",
+      "description": "Bosch's tabletop allegory of the Seven Deadly Sins isolates Invidia as a domestic scene of corrosive jealousy — the Latin personification Hyginus names as the counterpart of Zelus. Detail from the panel in the Museo del Prado, Madrid: envy as a lived social poison, the mortal afterlife of the winged emulous spirit who attends Zeus."
+    },
+    {
+      "title": "Pallas Athene Visits Invidia",
+      "artist": "Karel Dujardin",
+      "year": "1652",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Karel_Dujardin_-_Pallas_Athene_Visits_Invidia%2C_1652.jpg",
+      "description": "Oil on wood (Akademie der bildenden Künste, Vienna): Athena descends into the cave of Invidia to send envy against Aglauros, the Ovidian episode (Metamorphoses 2.760–796) that gave Latin literature its fullest portrait of the daimon Hyginus lists as Zelus. Dujardin's small cabinet picture stages that Roman Invidia as a living body of rivalry — Zelus under his Latin name."
+    },
+    {
+      "title": "Invidia",
+      "artist": "Jacob de Backer",
+      "year": "c. 1570–1580",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Invidia%2C_Jacques_de_Backer_001.JPG/960px-Invidia%2C_Jacques_de_Backer_001.JPG",
+      "description": "From de Backer's Seven Deadly Sins cycle in the Museo di Capodimonte, Naples: Invidia sits as a bare, snake-haunted allegory of envy, the Latin mask of the Greek Zelus whom Hyginus places among the children of Styx and Pallas. A Mannerist emblem of the competitive jealousy that classical genealogies seat forever at Zeus's side."
+    }
+  ]
 }

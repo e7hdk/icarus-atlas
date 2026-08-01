@@ -4,16 +4,22 @@
     {
       "ruler": "Thoas",
       "characterId": "thoas-lemnos",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Bibliotheca 1.9.17; Iliad 14.249",
-      "note": "King of Lemnos before the Lemnian women slew their husbands; saved by Hypsipyle."
+      "sources": ["apollodorus", "apollonius", "homer"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640; Iliad 14.249–251",
+      "note": "King of Lemnos before the Lemnian women slew their husbands; Homer still knows the isle as the city of godlike Thoas, and Apollonius makes Hypsipyle spare him alone."
     },
     {
       "ruler": "Hypsipyle",
       "characterId": "hypsipyle",
-      "sources": ["apollodorus", "apollonius"],
-      "citation": "Bibliotheca 1.9.17; Arg. 1.609–640",
-      "note": "Ruled the island alone when the Argonauts came."
+      "sources": ["apollodorus", "apollonius", "hyginus"],
+      "citation": "Bibliotheca 1.9.17; Argonautica 1.609–640, 1.717–834; Fabulae 15",
+      "note": "Daughter of Thoas who ruled the women-held island when the Argonauts came; Jason left the sovereignty with her, and she bore him Euneus (and Nebrophonus or Deipylus)."
+    },
+    {
+      "ruler": "Euneus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 7.467–475, 21.40–44, 23.740–749; Bibliotheca 1.9.17",
+      "note": "Son of Jason and Hypsipyle; in the Iliad he is the Lemnian lord who ships wine to the Achaeans and pays the ransom when Achilles sells Lycaon into Lemnos."
     }
   ]
 }

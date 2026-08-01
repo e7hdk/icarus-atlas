@@ -4,6 +4,9 @@
   "greekName": "Kerberos (Κέρβερος)",
   "romanName": "Cerberus",
   "type": "creature",
+  "kinds": [
+    "hound"
+  ],
   "cluster": "chthonic",
   "domains": [
     "hound of Hades",

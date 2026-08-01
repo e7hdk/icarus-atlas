@@ -1,0 +1,80 @@
+{
+  "city": "sicyon",
+  "reigns": [
+    {
+      "ruler": "Aegialeus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.5.6, 2.7.1, 7.1.1",
+      "note": "First and aboriginal king of the land later called Sicyonia; the coastal strip Aegialus and the city Aegialea on the plain were named for him. Not Adrastus' Epigonid son Aegialeus (aegialeus-adrastid)."
+    },
+    {
+      "ruler": "Apis",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.5.6–7",
+      "note": "Fourth in the Sicyonian stem after Aegialeus through Europs and Telchis; his power before Pelops came to Olympia was so great that all the land south of the Isthmus was called Apia after him. Not the Argive Apis son of Phoroneus (apis-phoroneus)."
+    },
+    {
+      "ruler": "Peratus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.5.7",
+      "note": "Son of Poseidon by Calchinia, daughter of Leucippus; reared by Leucippus, who at death handed him the kingdom after the intervening reigns of Thelxion, Aegyrus, Thurimachus, and Leucippus."
+    },
+    {
+      "ruler": "Orthopolis",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.5.8",
+      "note": "Sole surviving son of Plemnaeus, son of Peratus — Demeter in the guise of a stranger reared him at Aegialea when all Plemnaeus' earlier children died at their first cry. Through his daughter Chrysorthe the line passes to Coronus and Corax before Epopeus."
+    },
+    {
+      "ruler": "Epopeus",
+      "characterId": "epopeus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 2.6.1–3; Apollod. 3.5.5",
+      "note": "Came from Thessaly and took the kingdom when Corax died childless; in his reign the first hostile army entered the land — war over Antiope, whom he married when she fled Thebes. He died of a neglected wound; not the Aeolid Epopeus (epopeus-aeolid)."
+    },
+    {
+      "ruler": "Lamedon",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.3, 2.6.5",
+      "note": "Younger son of Coronus; became king after Epopeus and surrendered Antiope to Lycus. Married the Athenian Pheno and, when war arose with Achaeus' sons Archander and Architeles, brought in Sicyon of Attica as ally."
+    },
+    {
+      "ruler": "Sicyon",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.5",
+      "note": "Attic ally whom Lamedon made son-in-law and who became king; the land was renamed Sicyonia and the city Sicyon instead of Aegiale. Pausanias records rival fathers: Metion son of Erechtheus (local tradition, Asius), Erechtheus (Hesiod), or Pelops (Ibycus) — not Marathon son of Epopeus.",
+      "topic": "sicyon-parentage"
+    },
+    {
+      "ruler": "Polybus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.6",
+      "note": "Son of Hermes and Chthonophyle, daughter of Sicyon; gave his daughter Lysianassa to Talaus of Argos and received the exiled Adrastus. Not Polybus of Corinth who fostered Oedipus (polybus-corinth)."
+    },
+    {
+      "ruler": "Adrastus",
+      "characterId": "adrastus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.6",
+      "note": "Fled Argos to Polybus at Sicyon and on Polybus' death became king there; later returned to Argos, after which the Attic Ianiscus took the Sicyonian throne."
+    },
+    {
+      "ruler": "Phaestus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.6–7",
+      "note": "Said to be one of the children of Heracles; succeeded Ianiscus (the Attic descendant of Clytius who ruled after Adrastus left) and later migrated to Crete in obedience to an oracle."
+    },
+    {
+      "ruler": "Zeuxippus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.7",
+      "note": "Son of Apollo and the nymph Syllis; next king after Phaestus departed for Crete."
+    },
+    {
+      "ruler": "Hippolytus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.6.7",
+      "note": "Son of Rhopalus, son of Phaestus; when Agamemnon led an army against Sicyon he submitted and became subject to Mycenae. Father of Lacestades, whom the Dorian Phalces later made partner in the kingdom. Not Theseus' son Hippolytus (hippolytus)."
+    }
+  ]
+}

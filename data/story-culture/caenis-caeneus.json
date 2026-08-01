@@ -1,6 +1,35 @@
 {
   "id": "caenis-caeneus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Caeneus and the Centaur (Attic black-figure)",
+      "artist": "Unknown Attic vase-painter",
+      "year": "c. 6th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kaineus_Kentauros_Louvre_CA2494_n2.jpg/960px-Kaineus_Kentauros_Louvre_CA2494_n2.jpg",
+      "description": "Louvre CA 2494: invulnerable Caeneus driven into the earth by a centaur — the burial-death after Poseidon granted Caenis manhood and unpierceable flesh."
+    },
+    {
+      "title": "Caeneus Group (detail of the François Vase)",
+      "artist": "Kleitias (painter) and Ergotimos (potter)",
+      "year": "c. 570 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Caeneus_Group_%28Fran%C3%A7ois_Vase%29.jpg/960px-Caeneus_Group_%28Fran%C3%A7ois_Vase%29.jpg",
+      "description": "François Vase detail: the Caeneus group in the centauromachy — the Lapith once called Caenis named among Peirithous' wedding warriors."
+    },
+    {
+      "title": "Centaurs Fighting Caeneus (Lycian sarcophagus, Istanbul)",
+      "artist": "Unknown Classical sculptor",
+      "year": "c. 5th–4th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Istanbul_Archaeological_Museum_Lycian_sarcophagus_Short_side_with_Two_centaurs_fight_Caeneus_027.jpg/960px-Istanbul_Archaeological_Museum_Lycian_sarcophagus_Short_side_with_Two_centaurs_fight_Caeneus_027.jpg",
+      "description": "Lycian sarcophagus short side: two centaurs hammer Caeneus into the ground — the same burial reserved for the Lapith who could not be pierced."
+    },
+    {
+      "title": "Centaurs and Caeneus (bronze relief, Olympia)",
+      "artist": "Unknown",
+      "year": "Archaic / early Classical",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Centaurs_and_Kaineus_%28Caeneus%29%2C_small_bronze_relief%2C_AM_Olympia%2C_Olym14.jpg/960px-Centaurs_and_Kaineus_%28Caeneus%29%2C_small_bronze_relief%2C_AM_Olympia%2C_Olym14.jpg",
+      "description": "Olympia bronze relief: centaurs overwhelm Caeneus — portable testimony to the gender-changed Lapith's distinctive death."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

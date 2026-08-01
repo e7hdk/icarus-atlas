@@ -1,0 +1,51 @@
+{
+  "id": "agave",
+  "artworks": [
+    {
+      "title": "Death of Pentheus (Attic red-figure kylix)",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Death_Pentheus_Louvre_G445.jpg/960px-Death_Pentheus_Louvre_G445.jpg",
+      "description": "On this Louvre cup maenads tear Pentheus apart — Agave among the Theban women who, in Euripides, mistake her son for a lion on Cithaeron and bring his head home in triumph."
+    },
+    {
+      "title": "The Torment of Pentheus (House of the Vettii, Pompeii)",
+      "artist": "Unknown (Roman)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pompeii-_Domus_Vettiorum%2C_Fresco_representing_the_torment_of_Pentheus%2C_No._11201_%28SM_stf1558%29.png/960px-Pompeii-_Domus_Vettiorum%2C_Fresco_representing_the_torment_of_Pentheus%2C_No._11201_%28SM_stf1558%29.png",
+      "description": "A Pompeian fresco restages the sparagmos: Pentheus torn by bacchants — the scene whose climax, in the Bacchae, is Agave waking to her son's head in her hands."
+    },
+    {
+      "title": "The Death of Pentheus (from Ovid's Metamorphoses)",
+      "artist": "Unknown",
+      "year": "17th–18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Plate_30-_The_Death_of_Pentheus_%28Pentheus_a_matre%2C_sororibusq_discerpitur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864259.jpg/960px-Plate_30-_The_Death_of_Pentheus_%28Pentheus_a_matre%2C_sororibusq_discerpitur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864259.jpg",
+      "description": "A Metropolitan Museum plate after Ovid titles the horror plainly: Pentheus torn by his mother and sisters — Agave's madness as a set-piece of the Metamorphoses cycle."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "The Bacchae",
+      "year": "405 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' last tragedy makes Agave its most terrible recognition: the Cadmeid princess, mad on Cithaeron, returns carrying Pentheus' head and only then sees what Dionysus has done.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bacchae"
+    },
+    {
+      "title": "Metamorphoses",
+      "year": "8 AD",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Ovid retells the Theban sparagmos with Agave first among the maenads — the mother who begins the tearing and ends in exile.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
+    },
+    {
+      "title": "Agave (daughter of Cadmus)",
+      "year": "—",
+      "kind": "other",
+      "description": "Daughter of Cadmus and Harmonia, mother of Pentheus — the princess Dionysus drove to kill her own son on Cithaeron.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Agave_(daughter_of_Cadmus)"
+    }
+  ]
+}

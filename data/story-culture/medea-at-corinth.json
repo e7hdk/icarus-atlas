@@ -1,6 +1,42 @@
 {
   "id": "medea-at-corinth",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Medea about to Kill her Children",
+      "artist": "Eugène Delacroix",
+      "year": "1838",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Eug%C3%A8ne_Delacroix_-_Medea_about_to_Kill_her_Children_-_Mus%C3%A9e_du_Louvre.jpg",
+      "description": "Delacroix's Louvre Medea — the Colchian pressed into a cave with her children and a dagger, Euripides' Corinthian revenge at the brink of the act."
+    },
+    {
+      "title": "Medea",
+      "artist": "Anselm Feuerbach",
+      "year": "1870",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Anselm_Feuerbach_-_Medea_-_WGA07869.jpg/960px-Anselm_Feuerbach_-_Medea_-_WGA07869.jpg",
+      "description": "Feuerbach's seated sorceress holds the fatal gifts — cool neoclassical calm before the bridal fire and the children's deaths."
+    },
+    {
+      "title": "Medea's Gift to Creusa (Louvre CA 2193)",
+      "artist": "Unknown (Apulian red-figure)",
+      "year": "c. 390 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Medeia_Kreousa_Louvre_CA2193.jpg/960px-Medeia_Kreousa_Louvre_CA2193.jpg",
+      "description": "Apulian crater: Creusa receives Medea's bridal gifts while the children stand by — the poisoned robe and diadem frozen in clay."
+    },
+    {
+      "title": "Medea, or the Marriage of Jason and Creusa",
+      "artist": "Rembrandt",
+      "year": "1648",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Rembrandt_van_Rijn%2C_Medea%2C_or_the_Marriage_of_Jason_and_Creusa%2C_1648%2C_NGA_9925.jpg/960px-Rembrandt_van_Rijn%2C_Medea%2C_or_the_Marriage_of_Jason_and_Creusa%2C_1648%2C_NGA_9925.jpg",
+      "description": "Rembrandt's etching for Jan Six's Medea — Jason and Creusa at the altar while the Colchian's tragedy gathers offstage."
+    },
+    {
+      "title": "Medea Sarcophagus (Berlin)",
+      "artist": "Unknown (Roman)",
+      "year": "c. 140–150",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Berlin_Medea_sarcophagus.jpg/960px-Berlin_Medea_sarcophagus.jpg",
+      "description": "Roman sarcophagus: the children carry poisoned wedding gifts to Creusa — Corinth's crimes carved beside the infanticide."
+    }
+  ],
   "popCulture": [
     {
       "title": "Medea (play)",

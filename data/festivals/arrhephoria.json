@@ -1,0 +1,16 @@
+{
+  "id": "arrhephoria",
+  "name": "Arrhephoria",
+  "greekName": "Ἀρρηφόρια",
+  "deities": ["athena"],
+  "place": "athens",
+  "atticDate": { "month": "skirophorion", "days": [3], "approximate": true },
+  "conventionalDates": ["06-03"],
+  "summary": "The secret night rite of the Arrhephoroi — two girls chosen for Athena who carry covered baskets down from the Acropolis and bring other sacred things back — ending their year of service as the old year closes.",
+  "testimonia": [
+    "Pausanias 1.27.3 (the Arrhephoroi and the underground descent)",
+    "Aristophanes, Lysistrata 641–647 (arrhephoros among a girl's ritual stages)",
+    "Deubner, Attische Feste (1932) 9–17",
+    "Parke (1977) 141–143 (day within Skirophorion approximate)"
+  ]
+}

@@ -66,3 +66,6 @@ data/geo/raw/
 
 # Local Netlify folder
 .netlify
+
+# baked Greek sky sources (reproducible via `pnpm build-sky`)
+/research/sky/

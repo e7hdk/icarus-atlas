@@ -2,18 +2,43 @@
   "city": "pylos",
   "reigns": [
     {
+      "ruler": "Pylos",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.36.1",
+      "note": "Son of Cleson; founded the citadel with Leleges from the Megarid before Neleus and the Pelasgians of Iolcos drove him out to the Pylos in Elis."
+    },
+    {
       "ruler": "Neleus",
       "characterId": "neleus",
       "sources": ["homer", "apollodorus", "pausanias"],
-      "citation": "Od. 11.257; Apollod. 1.9.9; Paus. 4.2.5",
-      "note": "Founder of sandy Pylos after his banishment from Iolcus; father of Nestor and the Neleid house."
+      "citation": "Od. 11.257; Apollod. 1.9.9; Paus. 4.2.5, 4.36.1",
+      "note": "Founder of sandy Pylos after his banishment from Iolcus; raised the city to such renown that Homer calls it the city of Neleus."
     },
     {
       "ruler": "Nestor",
       "characterId": "nestor",
       "sources": ["homer", "apollodorus", "pausanias"],
-      "citation": "Il. 2.80–105; Apollod. 1.9.9; Paus. 4.2.7",
-      "note": "Survivor of Heracles' sack; old king of Pylos who counselled the Achaeans at Troy with ninety ships."
+      "citation": "Il. 2.80–105, 2.591–594; Apollod. 1.9.9; Paus. 4.2.7, 4.3.1",
+      "note": "Sole survivor when Heracles sacked Pylos; old king of sandy Pylos who counselled the Achaeans at Troy with ninety ships, and in Messenian reckoning inherited Aphareus' kingdom too."
+    },
+    {
+      "ruler": "Thrasymedes",
+      "characterId": "thrasymedes-nestor",
+      "sources": ["homer", "pausanias"],
+      "citation": "Od. 3.36–50; Paus. 4.3.3, 4.31.11, 4.36.2",
+      "note": "Son of Nestor singled out with Antilochus among the Pylians at Troy; after Nestor's death Pausanias keeps his tomb outside the city and traces the Neleid house through him until the Heraclids expelled his line from Messenia."
+    },
+    {
+      "ruler": "Alcmaeon",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.8, 4.3.3",
+      "note": "Son of Sillus, grandson of Thrasymedes — named among the descendants of Nestor whom the returning Heraclids expelled from Messenia (not the Argive Epigonus Alcmaeon)."
+    },
+    {
+      "ruler": "Melanthus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.18.8–9, 7.2.3",
+      "note": "Neleid of Periclymenus' line; expelled with the rest from Messenia, then deposed Thymoetes and took the Athenian throne — the last Pylian Neleid named in the exile."
     }
   ]
 }

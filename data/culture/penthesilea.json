@@ -1,13 +1,86 @@
 {
   "id": "penthesilea",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Achilles Killing Penthesilea (Penthesilea Painter kylix)",
+      "artist": "Penthesilea Painter",
+      "year": "c. 470–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Akhilleus_Penthesileia_Staatliche_Antikensammlungen_2688.jpg/960px-Akhilleus_Penthesileia_Staatliche_Antikensammlungen_2688.jpg",
+      "description": "The name-vase of the Penthesilea Painter: the tondo of this Attic red-figure kylix from Vulci shows Achilles driving his spear into the falling Amazon queen as their eyes meet. The cup, now in the Staatliche Antikensammlungen in Munich (inv. 2688), became the defining ancient image of the duel that ends Penthesilea's brief alliance with Troy — and the moment later tradition said left Achilles stricken with love for the woman he had just killed."
+    },
+    {
+      "title": "Penthesilea",
+      "artist": "Arturo Michelena",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Arturo_Michelena%2C_Penthesilea%2C_1891.jpg",
+      "description": "The Venezuelan academic master Arturo Michelena isolates the Amazon queen in a late Romantic portrait: armed, intent, and already marked for the battlefield of Troy. Painted in 1891, the canvas treats Penthesilea as a sovereign warrior rather than a mere foil to Achilles — the queen who will ride east to aid Priam and die under the spear of Peleus' son."
+    },
+    {
+      "title": "Achilles and Penthesilea",
+      "artist": "Johann Heinrich Wilhelm Tischbein",
+      "year": "c. 1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Achill_und_Penthesila_%28Tischbein%29.jpg/960px-Achill_und_Penthesila_%28Tischbein%29.jpg",
+      "description": "Tischbein's Neoclassical oil stages the aftermath of the duel: Achilles supports the dying Amazon as her strength fails. The composition freezes the Aethiopis tradition in which the hero recognizes too late the beauty and courage of the queen he has slain — a quiet Pietà of the Trojan War rather than a melee of spears."
+    },
+    {
+      "title": "Achilles and Penthesilea",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1837",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Achilles_and_Penthesilea_1837_CC0_from_the_Thorvaldsens_Museum_A496_white-balanced_black-bg.png/960px-Achilles_and_Penthesilea_1837_CC0_from_the_Thorvaldsens_Museum_A496_white-balanced_black-bg.png",
+      "description": "Thorvaldsen's circular plaster relief (Thorvaldsens Museum, inv. A496) reduces the myth to two interlocking figures: Achilles holding the collapsing Penthesilea. The Danish Neoclassical sculptor turns the Amazon's death into a medallion of tragic recognition — the conqueror already mourning the warrior he has struck down."
+    },
+    {
+      "title": "Death of Penthesilea (Amazonomachy sarcophagus)",
+      "artist": "Unknown Roman sculptor",
+      "year": "2nd–3rd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Amazonomachy_sarcophagus_%28Louvre%2C_Ma_2119%29_Penthesilea%27s_death.jpg/960px-Amazonomachy_sarcophagus_%28Louvre%2C_Ma_2119%29_Penthesilea%27s_death.jpg",
+      "description": "Detail from a Roman marble Amazonomachy sarcophagus in the Louvre (Ma 2119): Achilles cradles the mortally wounded Amazon queen amid the crush of Greeks and Amazons. The relief carries into imperial funerary art the same hinge as the epic cycle — Penthesilea dying in the arms of the hero who killed her, love arriving a breath too late."
+    }
+  ],
+  "films": [
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix cycle brings the Amazon queen into Paris's exile in the hills — Penthesilea as Troy's brief ally before the war's last acts.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    }
+  ],
+  "music": [
+    {
+      "title": "Penthesilea",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Othmar Schoeck",
+      "description": "Schoeck's one-act Dresden opera after Kleist stages the Amazon queen's fatal passion for Achilles — love misread as conquest, then murderous ecstasy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Penthesilea_(opera)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Penthesilea",
-      "year": "—",
+      "year": "1808",
       "kind": "other",
-      "description": "The Amazon queen Achilles killed (and mourned) remains tragedy's warrior-beloved — Kleist's drama and endless vase-paintings of her fall.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Penthesilea"
+      "creator": "Heinrich von Kleist",
+      "description": "Kleist's tragedy made the Amazon queen modern drama's warrior-beloved — sexual frenzy, battlefield law, and Achilles torn between love and arms.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Penthesilea_(Kleist)"
+    },
+    {
+      "title": "Aethiopis",
+      "year": "c. 7th century BC",
+      "kind": "other",
+      "creator": "Arctinus of Miletus (attrib.)",
+      "description": "The lost epic cycle poem that brought Penthesilea to Troy — the Amazon's day of glory and death under Achilles before Memnon arrives.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Aethiopis"
+    },
+    {
+      "title": "Posthomerica",
+      "year": "c. 3rd–4th century AD",
+      "kind": "other",
+      "creator": "Quintus of Smyrna",
+      "description": "Quintus opens after Hector with Penthesilea's arrival and duel — the fullest surviving ancient narrative of the Amazon queen at Troy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Posthomerica"
     }
   ]
 }

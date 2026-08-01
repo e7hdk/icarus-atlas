@@ -1,22 +1,49 @@
 {
   "id": "nemesis",
-  "summary": "In ancient Greek religion and myth, Nemesis, also called Rhamnousia, was the goddess who personified retribution for the sin of hubris: arrogance before the gods. By consequence, she was associated with Hybris, the goddess of hubris and arrogance before the gods.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In ancient Greek religion and myth, Nemesis (Ancient Greek: Νέμεσις), also called Rhamnousia, was the goddess who personified retribution for hubris — arrogance before the gods — and, more broadly, the due distribution of fortune. Hesiod makes her a child of Nyx; her chief Attic sanctuary stood at Rhamnous. In some epic traditions she, not Leda, is the true mother of Helen.",
+  "attribution": "Adapted from Wikipedia, \"Nemesis\" · CC BY-SA 4.0",
+  "etymology": "From némein, \"to give what is due,\" Proto-Indo-European *nem- \"distribute.\" The English common noun nemesis inherits the sense of inescapable retributive agent. Epithet Adrasteia is often explained as \"one from whom there is no escape.\"",
+  "symbols": [
+    "measuring rod",
+    "bridle",
+    "scales",
+    "whip",
+    "sword",
+    "wheel"
+  ],
+  "sacredAnimals": [
+    "goose",
+    "griffin (chariot team)"
+  ],
+  "cultCenters": [
+    "Rhamnous (Attica)",
+    "Smyrna",
+    "Athens (Nemeseia)"
+  ],
+  "sections": [
+    {
+      "heading": "Family and meaning",
+      "paragraphs": [
+        "Hesiod's Theogony lists Nemesis among Night's fatherless children, \"an affliction to mortals.\" Pausanias makes her daughter of Oceanus; Hyginus of Erebus and Nyx; some name Zeus as her father. Originally the word meant proportionate distribution of fortune; in Herodotus and Pindar it shades into resentment at any disturbance of that measure. From the fourth century she is often paired with Tyche as balancer of chance. Tragedy casts her as avenger of crime and hubris, akin to Atë and the Erinyes."
+      ]
+    },
+    {
+      "heading": "Helen, Narcissus, Aura",
+      "paragraphs": [
+        "In the lost epic Cypria, Zeus pursues Nemesis, who flees through many shapes; Apollodorus has her become a goose while Zeus becomes a swan. She lays an egg that Hermes (or a shepherd) brings to Leda, who raises Helen as her own — so Helen's beauty is itself a work of retributive fate. Ovid has Nemesis punish Narcissus's vanity by luring him to the reflecting pool. In Nonnus, Artemis asks Nemesis to avenge Aura's insults; Nemesis has Eros drive Dionysus to violate Aura's prized virginity."
+      ]
+    },
+    {
+      "heading": "Cult and iconography",
+      "paragraphs": [
+        "At Rhamnous in northeastern Attica she was \"the Goddess of Rhamnous\"; Pausanias describes a Pheidian statue crowned with stags and Nikai, carved from marble the Persians had brought for a victory stele after Marathon. Smyrna had twin Nemeseis. Athens kept a Nemeseia festival to avert the anger of the neglected dead. She is shown winged, with measuring rod, bridle, scales, whip, or dagger, sometimes in a griffin-drawn chariot. Mesomedes' hymn calls her \"winged balancer of life\" whose adamantine bridles restrain mortal insolence. Rome knew her on the drill-ground and in the arena as a kind of Imperial Fortuna."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Nemesis"
     }
-  ],
-  "symbols": [
-    "measuring rod",
-    "bridle",
-    "wheel",
-    "apple branch"
-  ],
-  "cultCenters": [
-    "Rhamnous (Attica)",
-    "Smyrna"
-  ],
-  "etymology": "From nemein, \"to give what is due\" — retribution as rightful distribution."
+  ]
 }

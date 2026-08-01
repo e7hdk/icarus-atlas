@@ -1,17 +1,43 @@
 {
   "id": "arethusa-nymph",
-  "summary": "Arethusa is a Naiad nymph in Greek mythology who fled the river-god Alpheus and became a spring on Ortygia in Sicily. In Ovid she witnesses Proserpina's abduction and tells Ceres. She is distinct from Arethusa the Hesperid in Apollodorus.",
+  "summary": "Arethusa is a Naiad nymph who fled the river-god Alpheus and became a freshwater spring on Ortygia at Syracuse in Sicily. In Ovid she also witnesses the abduction of Proserpina and reports it to Ceres. She is distinct from Arethusa the Hesperid listed by Apollodorus.",
   "attribution": "Adapted from Wikipedia, \"Arethusa (nymph)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Ἀρέθουσα (Aréthousa). The Sicilian fountain kept the name into historical times.",
+  "symbols": [
+    "spring",
+    "fresh water in the sea",
+    "dolphins (Syracusan coinage)"
+  ],
+  "cultCenters": [
+    "Fountain of Arethusa, Ortygia (Syracuse)",
+    "Elis (Alpheus)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Flight from Alpheus",
       "paragraphs": [
-        "Ovid's Arethusa flees Alpheus beneath Elis until Diana opens the earth and she rises at Ortygia (Metamorphoses 5.746–868).",
-        "She reveals Proserpina's rape to Ceres (5.487–508). Pausanias records the tradition that Alpheus mingles underground with her Sicilian spring (Description of Greece 5.7.2–3)."
+        "Ovid's Metamorphoses tells how Arethusa, bathing in the Alpheus in Elis, is pursued by the river-god. Artemis (Diana) hides her in a cloud and opens the earth; Arethusa flees underground and rises as a spring on Ortygia off Sicily, while Alpheus is said to follow beneath the sea and mingle with her waters.",
+        "Pausanias records the same underground journey: Greeks held that the Peloponnesian Alpheus crossed the Adriatic and surfaced in the Syracusan fountain (Description of Greece 5.7.2–3)."
+      ]
+    },
+    {
+      "heading": "Witness of Proserpina",
+      "paragraphs": [
+        "In Ovid's Demeter–Persephone narrative Arethusa, already a Sicilian spring, tells Ceres that she saw Dis carry Proserpina down into the underworld while flowing beneath the earth. The episode links the fountain myth to the Eleusinian cycle without making Arethusa a principal actor in the abduction itself."
+      ]
+    },
+    {
+      "heading": "Cult and homonyms",
+      "paragraphs": [
+        "The Fountain of Arethusa on Ortygia was a landmark of Syracuse; ancient writers marvelled that a freshwater spring rose so near the sea. Syracusan coins often show Arethusa's head surrounded by dolphins.",
+        "Apollodorus also names an Arethusa among the Hesperides; that western nymph is a separate atlas node (arethusa-hesperid) and must not be merged with the Sicilian Naiad."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Arethusa_(nymph)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arethusa_(nymph)"
+    }
   ]
 }

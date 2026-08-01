@@ -1,12 +1,40 @@
 {
   "id": "erebus",
-  "summary": "In Greek mythology, Erebus, or Erebos, is the personification of darkness. In Hesiod's Theogony, he is the offspring of Chaos, and the father of Aether and Hemera (Day) by Nyx (Night); in other Greek cosmogonies, he is the father of Aether, Eros, and Metis, or the first ruler of the gods. In genealogies given by Roman authors, he begets a large progeny of personifications upon Nox, while in an Orphic theogony, he is the offspring of Chronos (Time).",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Erebus (Erebos; Ancient Greek: Ἔρεβος, \"darkness, gloom\") is the personification of darkness. Hesiod makes him offspring of Chaos and, by Nyx (Night), father of Aether and Hemera (Day). The name also denotes the darkness of the underworld, the underworld itself, or the region souls cross to reach it, and is sometimes used loosely for Tartarus or Hades. This entry concerns the primordial Darkness, not later place-names alone.",
+  "attribution": "Adapted from Wikipedia, \"Erebus\" · CC BY-SA 4.0",
+  "etymology": "Greek Érebos (Ἔρεβος) means darkness or gloom, especially of the underworld. From Proto-Indo-European *h₁regʷ-os- (\"darkness\"); cognate with Sanskrit rájas (dark lower air, dust), Armenian erek (evening), Gothic riqis, and Old Norse røkkr (dark, dusk).",
+  "symbols": [
+    "Nether gloom",
+    "Underworld threshold",
+    "Wind-egg of Night (Aristophanes)"
+  ],
+  "sections": [
+    {
+      "heading": "Personification and cosmogony",
+      "paragraphs": [
+        "In Hesiod's Theogony, Erebus and Nyx arise from Chaos; their union — the first sexual generation in the poem — produces Aether and Hemera, luminous opposites of their parents. Acusilaus (via Damascius) has Chaos first, then Erebus and Night, who bear Aether, Eros, and Metis. One tradition in Philodemus makes Erebus the first of five rulers of the gods. Antagoras names Erebus and Night among possible parents of Eros.",
+        "Aristophanes's Birds places Erebus among the first beings with Chaos, Night, and Tartarus; Night lays a wind-egg in Erebus's boundless bosom from which golden-winged Eros springs. Orphic theogony (Hieronyman) makes Erebus, with Aether and Chaos, offspring of serpent Chronos."
+      ]
+    },
+    {
+      "heading": "Roman genealogies",
+      "paragraphs": [
+        "Cicero lists many personifications as children of Erebus and Nox, including Aether, Dies, Amor, Mors, the Parcae, the Hesperides, and the Somnia. Hyginus has Erebus born of Chaos and Caligo (Mist) and, by Nox, father of Fate, Old Age, Death, Sleep, Dreams, Discord, Nemesis, Styx, the Parcae, the Hesperides, and a long roster of abstractions.",
+        "These Latin stemmas expand Hesiod's compact Night-brood into encyclopedic lists of moral and natural forces."
+      ]
+    },
+    {
+      "heading": "Name of the underworld",
+      "paragraphs": [
+        "Authors also use \"Erebus\" for underworld darkness, the underworld as a whole, or the passage toward Hades. In the Odyssey, souls gather \"from out of Erebus\" at Ocean's edge; the Iliad places the Erinyes there and has Heracles fetch Cerberus from Erebus. Hesiod casts Menoetius into Erebus and brings the Hecatoncheires up from it. The Homeric Hymn to Demeter and Euripides use the name for Hades's realm; Ovid calls Proserpina queen of Erebus.",
+        "The word can shade into synonymy with Tartarus or Hades without erasing the distinct personified Darkness of cosmogony."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Erebus"
     }
-  ],
-  "etymology": "From erebos, the dark of the underworld — an old Indo-European word for darkness."
+  ]
 }

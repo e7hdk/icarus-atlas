@@ -10664,6 +10664,48 @@
     "note": "Bore Cychreus, the snake-king of Salamis, to Poseidon (Bibliotheca 3.12.7)"
   },
   {
+    "id": "cychreus-parent-poseidon",
+    "type": "parent",
+    "from": "cychreus",
+    "to": "poseidon",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Son of Poseidon by Salamis daughter of Asopus (Bibliotheca 3.12.7; Description of Greece 1.35.2)"
+  },
+  {
+    "id": "cychreus-parent-salamis-nymph",
+    "type": "parent",
+    "from": "cychreus",
+    "to": "salamis-nymph",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "note": "Son of the Asopid Salamis; he named the island for her (Bibliotheca 3.12.7; Description of Greece 1.35.2)"
+  },
+  {
+    "id": "cychreus-ally-telamon",
+    "type": "ally",
+    "from": "cychreus",
+    "to": "telamon",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Dying childless, bequeathed the Salaminian kingdom to Telamon (Bibliotheca 3.12.7)"
+  },
+  {
+    "id": "telamon-ally-cychreus",
+    "type": "ally",
+    "from": "telamon",
+    "to": "cychreus",
+    "sources": [
+      "apollodorus"
+    ],
+    "note": "Received Salamis from childless Cychreus after exile from Aegina (Bibliotheca 3.12.7)"
+  },
+  {
     "id": "corcyra-lover-poseidon",
     "type": "lover",
     "from": "corcyra",

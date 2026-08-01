@@ -12,11 +12,14 @@ import {
 } from '../src/features/linking/name-index';
 import { parseLinkedProse } from '../src/features/linking/parse-prose';
 import {
+  changedNames,
   characterLinkingSignature,
+  linkableNameOwners,
   linkingFileSignature,
   linkingNamesSignature,
   storyLinkingSignature,
 } from '../src/features/linking/linkingSignature';
+import { fold } from '../src/features/search/match';
 import type { Character, CharacterType, Relation } from '../src/types/character';
 import type { Story } from '../src/types/story';
 import type { ProseSegment } from '../src/features/linking/parse-prose';
@@ -40,6 +43,9 @@ type BakedCharacterEntry = {
 type PrevBaked = {
   signature?: string;
   namesSignature?: string;
+  /** Folded matchable name → its owners. Absent in bakes written before the
+   *  name-delta cache; those can only be migrated by one full rebake. */
+  nameOwners?: Record<string, string>;
   stories?: Record<string, BakedStoryEntry>;
   characters?: Record<string, BakedCharacterEntry>;
 };
@@ -56,14 +62,12 @@ const stories = readdirSync(join(DATA, 'stories'))
 
 const namesSignature = linkingNamesSignature(characters);
 
+const nameOwners = linkableNameOwners(characters);
 const storySignatures = Object.fromEntries(
-  stories.map((story) => [story.id, storyLinkingSignature(story, namesSignature)]),
+  stories.map((story) => [story.id, storyLinkingSignature(story)]),
 );
 const characterSignatures = Object.fromEntries(
-  characters.map((character) => [
-    character.id,
-    characterLinkingSignature(character, relations, namesSignature),
-  ]),
+  characters.map((character) => [character.id, characterLinkingSignature(character, relations)]),
 );
 const fileSignature = linkingFileSignature(namesSignature, characterSignatures, storySignatures);
 
@@ -80,6 +84,22 @@ if (existsSync(OUT)) {
   } catch {
     prev = null;
   }
+}
+
+// Which names moved since the last bake. A paragraph that contains none of
+// them cannot bake differently, however many characters joined the roster —
+// so growing the sky no longer costs a full rebake. A bake written before this
+// cache existed carries no name map, and can only be migrated by rebaking once.
+const moved = prev?.nameOwners ? changedNames(prev.nameOwners, nameOwners) : null;
+const migrating = moved === null;
+/** Does this text contain a name whose meaning moved? Folded like the matcher,
+ *  and deliberately loose (no word boundaries): a false positive costs one
+ *  reparse, a false negative would bake a stale link. */
+function namesMoveInside(texts: string[]): boolean {
+  if (migrating) return true;
+  if (moved.length === 0) return false;
+  const folded = fold(texts.join('\0'));
+  return moved.some((name) => folded.includes(name));
 }
 
 const nameIndex = buildNameIndex(characters);
@@ -107,7 +127,10 @@ const bakedStories: Record<string, BakedStoryEntry> = {};
 for (const story of stories) {
   const signature = storySignatures[story.id]!;
   const prevEntry = prev?.stories?.[story.id];
-  if (prevEntry?.signature === signature) {
+  const shaken =
+    !prevEntry ||
+    namesMoveInside([story.summary.text, ...story.chapters.map((ch) => ch.text)]);
+  if (prevEntry?.signature === signature && !shaken) {
     bakedStories[story.id] = prevEntry;
     storiesReused++;
     continue;
@@ -128,7 +151,13 @@ const bakedCharacters: Record<string, BakedCharacterEntry> = {};
 for (const character of characters) {
   const signature = characterSignatures[character.id]!;
   const prevEntry = prev?.characters?.[character.id];
-  if (prevEntry?.signature === signature) {
+  const shaken =
+    !prevEntry ||
+    namesMoveInside([
+      ...character.summary.map((p) => p.text),
+      ...character.story.map((p) => p.text),
+    ]);
+  if (prevEntry?.signature === signature && !shaken) {
     bakedCharacters[character.id] = prevEntry;
     charactersReused++;
     continue;
@@ -152,6 +181,7 @@ const ms = Math.round(performance.now() - t0);
 const out = {
   signature: fileSignature,
   namesSignature,
+  nameOwners,
   stories: bakedStories,
   characters: bakedCharacters,
 };

@@ -1,6 +1,28 @@
 {
   "id": "arete-phaeacian",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ulysses at the Court of Alcinous",
+      "artist": "Francesco Hayez",
+      "year": "1814–1815",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Francesco_Hayez_028.jpg/960px-Francesco_Hayez_028.jpg",
+      "description": "Hayez seats the Phaeacian queen beside her husband as Odysseus weeps to Demodocus' song — Arete as the courtly presence Homer tells the stranger to clasp first."
+    },
+    {
+      "title": "Ulysses in the Palace of Alcinous",
+      "artist": "Jean-Jacques Lagrenée",
+      "year": "c. 1760s–1780s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jean-Jacques_Lagren%C3%A9e_-_Ulysse_dans_le_palais_d%27Alcino%C3%BCs.jpg/960px-Jean-Jacques_Lagren%C3%A9e_-_Ulysse_dans_le_palais_d%27Alcino%C3%BCs.jpg",
+      "description": "Lagrenée follows Nausicaa's counsel: Odysseus throws himself at the feet of Alcinous and Arete — the queen whose favour decides whether the stranger will be sent home."
+    },
+    {
+      "title": "Odysseus before Alcinous, King of the Phaeacians",
+      "artist": "August Malmström",
+      "year": "1853",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Odysseus_before_Alcinous%2C_King_of_the_Phaeacians_%28August_Malmstr%C3%B6m%29_-_Nationalmuseum_-_117888.tif/lossy-page1-960px-Odysseus_before_Alcinous%2C_King_of_the_Phaeacians_%28August_Malmstr%C3%B6m%29_-_Nationalmuseum_-_117888.tif.jpg",
+      "description": "Malmström's throne-room scene keeps Arete within the Phaeacian court that hears Odysseus — the wise queen of Scheria as the Odyssey's image of female authority at the world's edge."
+    }
+  ],
   "popCulture": [
     {
       "title": "Arete (mythology)",
@@ -8,6 +30,34 @@
       "kind": "other",
       "description": "Alcinous' queen, whom Odysseus is told to clasp first, remains the Odyssey's image of wise female authority at the edge of the world.",
       "externalUrl": "https://en.wikipedia.org/wiki/Arete_(mythology)"
+    }
+  ],
+  "films": [
+    {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Ludmilla Dudarova's Arete receives the shipwrecked stranger with Alcinous — Homer's counsel made flesh: clasp the queen first.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Sally Plumb's Arete stands as Phaeacian queen beside Krabbé's Alcinous — the wise authority Nausicaa tells Odysseus to win.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Nausicaa",
+      "year": "1961",
+      "kind": "opera",
+      "composer": "Peggy Glanville-Hicks",
+      "description": "Glanville-Hicks' Athens premiere casts Arete as queen of Drepanum — Graves' Phaeacian mother in the opera that makes Nausicaa the Odyssey's author.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Nausicaa_(opera)"
     }
   ]
 }

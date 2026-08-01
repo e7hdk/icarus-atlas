@@ -1,17 +1,42 @@
 {
   "id": "melia-thebes",
-  "summary": "Melia of Thebes is a Boeotian ash-tree nymph in Greek mythology, attested by Pausanias as daughter of Ocean, sister of Caanthus, lover of Apollo, and mother of Tenerus and Ismenus at the Ismenian spring. She is distinct from Melia the Argive Oceanid and from the collective Hesiodic Meliae.",
+  "summary": "Melia of Thebes is a Boeotian Oceanid or ash-nymph attested by Pausanias as daughter of Oceanus, sister of Caanthus, lover of Apollo, and mother of Tenerus and Ismenus at the Ismenian spring. She is distinct from Melia the Argive Oceanid (mother of Phoroneus traditions) and from the collective Hesiodic Meliae.",
   "attribution": "Adapted from Wikipedia, \"Melia (consort of Apollo)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Μελία (Melía), \"ash tree\"; related to the Meliae, ash-tree nymphs born from Uranus' blood.",
+  "symbols": [
+    "Ismenian spring",
+    "ash tree"
+  ],
+  "cultCenters": [
+    "Ismenion (Thebes)",
+    "River Ismenus"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Apollo and the Ismenion",
       "paragraphs": [
-        "Pausanias tells how Caanthus, son of Ocean and brother of Melia, sought his abducted sister, found her with Apollo, and burned the god's precinct; Apollo killed him, and his tomb stands by the Ismenian fountain (Description of Greece 9.10.5).",
-        "By Apollo, Melia bore Tenerus, to whom the god gave divination, and Ismenus, eponym of the Theban river (9.10.6)."
+        "Pausanias tells that Apollo carried off Melia, daughter of Oceanus; her brother Caanthus was sent to fetch her, found her with the god, and in anger fired the precinct of Apollo. The god shot him; his tomb stood by the Ismenian fountain at Thebes (Description of Greece 9.10.5–6).",
+        "By Apollo, Melia bore Tenerus, who received the gift of divination, and Ismenus, eponym of the Theban river. The story anchors Apollo's Ismenion cult in a local family of Oceanids."
+      ]
+    },
+    {
+      "heading": "Ash nymph and Oceanid",
+      "paragraphs": [
+        "Melia's name links her to ash-tree nymphs, yet Pausanias' genealogy makes her an Oceanid sister of Caanthus. Handbooks often treat her as both: a tree-nymph of the Theban spring and a daughter of Oceanus in the literary stemma.",
+        "The episode is Boeotian and cultic rather than panhellenic epic; it does not appear in Homer."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "Other Meliae and Melias populate Argive and Hesiodic tradition (including Melia mother of figures in the Phoroneus line). The atlas id melia-thebes is reserved for Apollo's Theban consort at the Ismenus; do not merge her with the Argive Oceanid or the anonymous plural Meliae of the Theogony."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Melia_(consort_of_Apollo)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Melia_(mythology)"
+    }
   ]
 }

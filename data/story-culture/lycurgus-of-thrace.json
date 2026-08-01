@@ -1,6 +1,35 @@
 {
   "id": "lycurgus-of-thrace",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Lycurgus Cup",
+      "artist": "Unknown (Late Roman)",
+      "year": "4th century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Lycurgus_Cup_red_BM_MME1958.12-2.1.jpg/960px-Lycurgus_Cup_red_BM_MME1958.12-2.1.jpg",
+      "description": "British Museum dichroic cage cup — Lycurgus trapped in Ambrosia's vine as Dionysus' revenge closes, ruby by transmission, green by reflection."
+    },
+    {
+      "title": "Lycurgus and Ambrosia (mosaic from Herculaneum)",
+      "artist": "Unknown (Roman)",
+      "year": "45–79 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mosaik_%22Wahnsinn_des_Lykurg%22_%E2%80%94_Exponat_in_der_Arch%C3%A4ologischen_Staatssammlung_M%C3%BCnchen.JPG/960px-Mosaik_%22Wahnsinn_des_Lykurg%22_%E2%80%94_Exponat_in_der_Arch%C3%A4ologischen_Staatssammlung_M%C3%BCnchen.JPG",
+      "description": "Herculaneum mosaic — Lycurgus raising his axe against Ambrosia as she becomes the vine that will bind him."
+    },
+    {
+      "title": "Lycurgus",
+      "artist": "Abel de Pujol",
+      "year": "1811",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Abel_de_Pujol_Lycurgue.JPG",
+      "description": "Pujol's Neoclassical Thracian king — Homer's first persecutor of Dionysus staged as a moral drama of hubris."
+    },
+    {
+      "title": "King Lycurgus of Thrace (relief from the Roman theatre at Philippi)",
+      "artist": "Unknown (Roman)",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/The_west_cornier_pier_of_the_south_portico_of_the_stage_building_of_the_Roman_theatre%2C_2nd_century_AD%2C_King_Lycurgus_of_Thraceos_depicted_in_relief%2C_Philippi_Museum_%287416431354%29.jpg/960px-thumbnail.jpg",
+      "description": "Philippi theatre relief — the Edonian king in the scaenae frons of a city under Dionysus' patronage."
+    }
+  ],
   "popCulture": [
     {
       "title": "Lycurgus of Thrace",

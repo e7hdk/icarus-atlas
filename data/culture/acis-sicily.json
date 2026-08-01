@@ -1,6 +1,35 @@
 {
   "id": "acis-sicily",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Acis and Galatea",
+      "artist": "Luca Giordano",
+      "year": "c. 1685",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bemberg_Fondation_Toulouse_-_Acis_et_Galat%C3%A9e_-_Luca_Giordano_%28ca1685%29_120%2C6x190%2C5_inv.1074.jpg/960px-Bemberg_Fondation_Toulouse_-_Acis_et_Galat%C3%A9e_-_Luca_Giordano_%28ca1685%29_120%2C6x190%2C5_inv.1074.jpg",
+      "description": "Giordano's Baroque canvas stages Ovid's Sicilian pastoral at the fatal instant: the nereid Galatea embraces the shepherd Acis while the jealous Cyclops Polyphemus looms with the rock that will crush him. Held by the Fondation Bemberg, Toulouse, it is one of the fullest painted tellings of the love triangle that ends with Acis transformed into a river."
+    },
+    {
+      "title": "Acis and Galatea",
+      "artist": "François Perrier",
+      "year": "c. 1645–1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Beaux-Arts_de_Carcassonne_-_Acis_et_Galath%C3%A9e_-_Fran%C3%A7ois_Perrier.jpg/960px-Beaux-Arts_de_Carcassonne_-_Acis_et_Galath%C3%A9e_-_Fran%C3%A7ois_Perrier.jpg",
+      "description": "Perrier's French Classical painting pairs the shepherd Acis with Galatea against a coastal setting, freezing the idyll before Polyphemus' jealous violence. The canvas is in the Musée des Beaux-Arts de Carcassonne."
+    },
+    {
+      "title": "Acis and Galatea",
+      "artist": "Johann Heinrich Tischbein the Elder",
+      "year": "1758",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Johann_Heinrich_Tischbein_-_Acis_and_Galatea%2C_1758.jpg/960px-Johann_Heinrich_Tischbein_-_Acis_and_Galatea%2C_1758.jpg",
+      "description": "Tischbein's Rococo treatment of Ovid's lovers keeps Acis and Galatea in a soft pastoral embrace, the Sicilian myth translated into eighteenth-century elegance before the Cyclops' rock falls."
+    },
+    {
+      "title": "Acis and Galatea",
+      "artist": "Alexandre-Charles Guillemot",
+      "year": "1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Guillemot_-_Acis_and_Galatea%2C_1827.jpg",
+      "description": "Guillemot's Neoclassical canvas returns to the Sicilian shore: Acis and Galatea as Ovid's doomed couple, the pastoral calm already shadowed by Polyphemus' approaching jealousy."
+    }
+  ],
   "music": [
     {
       "title": "Acis and Galatea",

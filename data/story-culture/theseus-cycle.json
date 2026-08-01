@@ -1,6 +1,42 @@
 {
   "id": "theseus-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Theseus Slaying the Minotaur (tondo of the Aison Kylix)",
+      "artist": "Aison",
+      "year": "c. 435-415 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg/960px-Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg",
+      "description": "The Aison kylix tondo: Athens' hero pins the Minotaur in the labyrinth — the deed that crowns the Theseus cycle."
+    },
+    {
+      "title": "Theseus Victorious over the Minotaur",
+      "artist": "Unknown (Roman wall-painter, Fourth Pompeian Style)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Wall_painting_-_Theseus_victorious_over_the_Minotaur_-_Pompeii_%28VII_2_16%29_-_Napoli_MAN_9043_-_01.jpg/960px-Wall_painting_-_Theseus_victorious_over_the_Minotaur_-_Pompeii_%28VII_2_16%29_-_Napoli_MAN_9043_-_01.jpg",
+      "description": "A Pompeian wall-painting freezes the aftermath: Theseus stands over the slain bull-man, the labyrinth's tribute ended."
+    },
+    {
+      "title": "The Minotaur",
+      "artist": "George Frederic Watts",
+      "year": "1885",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/George_Frederic_Watts_-_The_Minotaur_-_Google_Art_Project.jpg/960px-George_Frederic_Watts_-_The_Minotaur_-_Google_Art_Project.jpg",
+      "description": "Watts' brooding Minotaur — the creature at the heart of the cycle, waiting in Knossos for the tribute ship."
+    },
+    {
+      "title": "Theseus Slaying the Minotaur",
+      "artist": "Antoine-Louis Barye",
+      "year": "1843",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Theseus_Slaying_Minotaur_by_Barye.jpg/960px-Theseus_Slaying_Minotaur_by_Barye.jpg",
+      "description": "Barye's bronze compresses the labyrinth combat into a single violent knot of hero and bull."
+    },
+    {
+      "title": "Ariadne Abandoned by Theseus",
+      "artist": "Angelica Kauffmann",
+      "year": "1774",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg/960px-Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg",
+      "description": "Kauffmann's abandoned Ariadne — the cycle's bitter coda after the Minotaur falls and the black sails set for Athens."
+    }
+  ],
   "popCulture": [
     {
       "title": "Minotaur",

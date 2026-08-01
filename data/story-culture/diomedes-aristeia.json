@@ -1,6 +1,38 @@
 {
   "id": "diomedes-aristeia",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Combat of Diomedes",
+      "artist": "Jacques-Louis David",
+      "year": "1776",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jacques-Louis_David_-_The_Combat_of_Diomedes%2C1776_-_Google_Art_Project.jpg/960px-Jacques-Louis_David_-_The_Combat_of_Diomedes%2C1776_-_Google_Art_Project.jpg",
+      "description": "Albertina drawing by the young David: Athena-fired Diomedes rampages across the Trojan plain — Iliad 5's aristeia as neoclassical frenzy, the mortal who wounds Aphrodite and Ares."
+    },
+    {
+      "title": "Diomedes and Glaucus Exchanging Armour",
+      "artist": "Hasselmann Painter",
+      "year": "c. 420 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Diomedes_Glaucus_MAR_Gela.jpg/960px-Diomedes_Glaucus_MAR_Gela.jpg",
+      "description": "Gela pelike: after the day's slaughter, Diomedes and Glaucus refuse to fight and trade armour — gold for bronze, Iliad 6's pause that closes the aristeia with guest-friendship."
+    },
+    {
+      "title": "Diomedes (Roman copy after Kresilas)",
+      "artist": "Unknown (Roman copy after a Greek original attributed to Kresilas)",
+      "year": "2nd–3rd century CE (after c. 430 BC)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Diomedes_Louvre_Ma890_n3.jpg/960px-Diomedes_Louvre_Ma890_n3.jpg",
+      "description": "Louvre Ma 890: the athletic Argive type — taut, alert, the warrior of the great day when Athena made him match even the gods in battle."
+    }
+  ],
+  "films": [
+    {
+      "title": "Helen of Troy",
+      "year": "1956",
+      "medium": "film",
+      "director": "Robert Wise",
+      "description": "Wise's epic keeps Diomedes among the Greek captains at Troy — the Argive who, in Homer, dares to wound gods and still rarely gets the close-up.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Iliad",

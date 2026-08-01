@@ -23,21 +23,54 @@
       "description": "An oil-on-panel ceiling painting from the Sala degli Elementi of the Palazzo Vecchio in Florence. It depicts the pivotal act of divine succession in Hesiod's Theogony: Cronus castrating his father Uranus, the sky, with the adamantine sickle."
     }
   ],
+  "films": [
+    {
+      "title": "Wrath of the Titans",
+      "year": "2012",
+      "medium": "film",
+      "director": "Jonathan Liebesman",
+      "description": "The Clash sequel makes Kronos the lava Titan breaking Tartarus — Cronus as the imprisoned father whose sons must stop him from reclaiming the world.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Wrath_of_the_Titans"
+    }
+  ],
   "popCulture": [
     {
-      "title": "Saturn Devouring His Son",
-      "year": "c. 1820–1823",
-      "kind": "other",
-      "creator": "Francisco Goya",
-      "description": "Goya's Black Painting — Saturn/Cronus eating a child — became the modern West's most terrifying image of the Titan who swallowed his offspring.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+      "title": "Percy Jackson & the Olympians",
+      "year": "2005",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "Riordan's series casts Kronos as the rising Titan lord — the swallowed-children myth rewritten as a demigod war against Time's king.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians"
     },
     {
-      "title": "Saturn (mythology)",
+      "title": "The Last Olympian",
+      "year": "2009",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "The series climax brings Kronos into Luke's body for the siege of Olympus — Cronus as the final boss of a children's epic.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Last_Olympian"
+    },
+    {
+      "title": "God of War III",
+      "year": "2010",
+      "kind": "videogame",
+      "creator": "Santa Monica Studio",
+      "description": "Kratos climbs and kills the colossal Titan Cronos in the desert of the lost — the child-swallower as a boss the size of a mountain.",
+      "externalUrl": "https://en.wikipedia.org/wiki/God_of_War_III"
+    },
+    {
+      "title": "Saturday",
       "year": "—",
+      "kind": "language",
+      "description": "English Saturday descends from Latin dies Saturni — Cronus' Roman name still naming the seventh day of the week.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Saturday"
+    },
+    {
+      "title": "Saturnalia",
+      "year": "Roman antiquity",
       "kind": "other",
-      "description": "Roman Saturn carries Cronus forward — the harvest god, the Golden Age, and Saturday still bear the Titan's Latin name.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Saturn_(mythology)"
+      "description": "Rome's midwinter festival of gift-giving and role-reversal honored Saturn — Cronus' Latin face as the Golden Age returned for a week.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Saturnalia"
     }
   ]
 }

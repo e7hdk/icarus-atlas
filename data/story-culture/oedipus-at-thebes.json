@@ -1,6 +1,28 @@
 {
   "id": "oedipus-at-thebes",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "year": "1808–1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%C5%92dipe_explique_l%27%C3%A9nigme_du_sphinx_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_218.jpg/960px-%C5%92dipe_explique_l%27%C3%A9nigme_du_sphinx_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_218.jpg",
+      "description": "Ingres' Louvre masterpiece freezes the Theban roadside encounter: Oedipus stands naked before the winged Sphinx, answering the riddle of the creature that has been devouring travellers. Bones litter the rock while the hero's calm profile already carries the irony of a man who will solve every puzzle except his own birth. The canvas fixed the modern West's image of Oedipus as intellect facing monster."
+    },
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Gustave Moreau",
+      "year": "1864",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Oedipus_and_the_Sphinx_MET_DP-14201-023.jpg/960px-Oedipus_and_the_Sphinx_MET_DP-14201-023.jpg",
+      "description": "Moreau's Symbolist confrontation turns the riddle into erotic menace: the Sphinx clings to Oedipus' breast like a living puzzle, her feline body pressing against the hero who meets her gaze without flinching. Painted for the Salon of 1864 and now in the Metropolitan Museum of Art, it made Oedipus a fin-de-siècle emblem of knowledge bought at a terrible price."
+    },
+    {
+      "title": "The Blind Oedipus Commending his Children to the Gods",
+      "artist": "Bénigne Gagneraux",
+      "year": "1784",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/B%C3%A9nigne_Gagneraux%2C_The_Blind_Oedipus_Commending_his_Children_to_the_Gods.jpg/960px-B%C3%A9nigne_Gagneraux%2C_The_Blind_Oedipus_Commending_his_Children_to_the_Gods.jpg",
+      "description": "Gagneraux's neoclassical canvas shows the aftermath of recognition: the blind king, eyes gouged, gathers Antigone and her siblings as he entrusts them to the gods before exile. The painting stages Sophocles' ruined Oedipus not as monster but as father — the curse made intimate. Nationalmuseum, Stockholm."
+    }
+  ],
   "popCulture": [
     {
       "title": "Oedipus Rex",
@@ -16,6 +38,24 @@
       "kind": "other",
       "description": "The Theban who killed his father and married his mother — a name Freud made inescapable in modern culture.",
       "externalUrl": "https://en.wikipedia.org/wiki/Oedipus"
+    },
+    {
+      "title": "Oedipus complex",
+      "year": "1899–1910",
+      "kind": "language",
+      "creator": "Sigmund Freud",
+      "description": "Freud's name for the child's desire for the opposite-sex parent — the Theban king remade as the West's shorthand for unconscious family desire.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_complex"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex (Stravinsky)",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Latin oratorio-opera after Sophocles — the Theban recognition scored as ritual chant, Cocteau's libretto keeping the plague and the self-discovery on stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_rex_(opera)"
     }
   ]
 }

@@ -1,13 +1,8 @@
 {
   "id": "hephaestus",
-  "summary": "Hephaestus is the Greek god of artisans, blacksmiths, carpenters, craftsmen, fire, metallurgy, metalworking, sculpture, and volcanoes. In Greek mythology, Hephaestus was the son of Hera, either on her own or by her husband Zeus. He was cast off Mount Olympus by his mother Hera because of his lameness, the result of a congenital impairment; or in another account, by Zeus for protecting Hera from his advances.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Hephaestus"
-    }
-  ],
+  "summary": "Hephaestus is the Greek god of artisans, blacksmiths, craftsmen, fire, metallurgy, and volcanoes. Son of Hera — alone in Hesiod, or of Zeus and Hera in Homeric tradition — he was cast from Olympus because of his lameness or for intervening between Zeus and Hera. His forges on Lemnos and later under Etna produce the gods' weapons, automata, and wondrous metalwork.",
+  "attribution": "Adapted from Wikipedia, \"Hephaestus\" · CC BY-SA 4.0",
+  "etymology": "Pre-Greek; in Homer his name can stand for fire itself.",
   "symbols": [
     "hammer",
     "anvil",
@@ -22,5 +17,33 @@
     "Athens (Hephaisteion)",
     "Mount Etna (his forge in later myth)"
   ],
-  "etymology": "Pre-Greek; in Homer his very name can stand for fire itself."
+  "sections": [
+    {
+      "heading": "Parentage and fall from Olympus",
+      "paragraphs": [
+        "Hesiod's Theogony has Hera bear Hephaestus parthenogenetically in anger after Zeus produced Athena; Apollodorus reports both that version and Homer's pairing of Zeus and Hera as parents. One tradition says Hera cast the lame infant from heaven into the sea, where Thetis and Eurynome raised him; another says Zeus hurled him down for defending Hera, and he fell for a day onto Lemnos, where the Sintians taught him craft.",
+        "In an archaic revenge tale he traps Hera on a magical golden throne until Dionysus (or other agents) brings him back to Olympus drunk, securing his reinstatement among the gods."
+      ]
+    },
+    {
+      "heading": "Craft and workshop",
+      "paragraphs": [
+        "On Olympus Hephaestus keeps a palace-workshop with anvil and self-working bellows. Myth credits him with the gods' thrones, Achilles' armour, Hermes' winged gear, Helios' chariot, Pandora and her jar, and many automata and self-moving tripods. Later writers place his forge under volcanic Etna with Cyclopes as assistants.",
+        "His lameness — congenital in Homer, or caused by the fall in other tellings — becomes part of his iconography: a powerful, bearded smith who moves with difficulty yet outworks every other artisan."
+      ]
+    },
+    {
+      "heading": "Aphrodite and cult",
+      "paragraphs": [
+        "Married to Aphrodite in Homeric tradition, he traps her with Ares in an invisible net after Helios reveals their affair, then exposes the lovers to the laughter of the gods. Other local myths link him with Athena (the Erichthonius story) and with mortal pupils such as Cedalion.",
+        "Lemnos and Athens (the Hephaisteion) were major cult centres; as god of skilled fire he stood close to civic craft and, in Roman religion, to Vulcan."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hephaestus"
+    }
+  ]
 }

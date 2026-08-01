@@ -1,6 +1,28 @@
 {
   "id": "return-and-mycenae",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Polydectes Turned Into Stone by Perseus",
+      "artist": "Willy Pogány",
+      "year": "1921",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/The_golden_fleece_and_the_heroes_who_lived_before_Achilles_%281921%29_%2814580287378%29.jpg/960px-The_golden_fleece_and_the_heroes_who_lived_before_Achilles_%281921%29_%2814580287378%29.jpg",
+      "description": "Pogány's Seriphos climax — Perseus unveiling Medusa at Polydectes' feast, the tyrant and his friends turned to stone."
+    },
+    {
+      "title": "King Polydectes Petrified by the Head of Medusa",
+      "artist": "Sébastien Leclerc",
+      "year": "1676",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Le_roi_Polydecte_p%C3%A9trifi%C3%A9_par_la_t%C3%AAte_de_M%C3%A9duse.tif/lossy-page1-960px-Le_roi_Polydecte_p%C3%A9trifi%C3%A9_par_la_t%C3%AAte_de_M%C3%A9duse.tif.jpg",
+      "description": "Leclerc's engraving — King Polydectes petrified, the return that frees Danae and Dictys."
+    },
+    {
+      "title": "Perseus Promises Polydectes to Kill Medusa",
+      "artist": "Unknown (Veronese master)",
+      "year": "c. 1475–1500",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Anonimo_veronese%2C_perseo_promette_a_polydectes_di_uccidere_medusa%2C_1475-1500_ca.jpg/960px-Anonimo_veronese%2C_perseo_promette_a_polydectes_di_uccidere_medusa%2C_1475-1500_ca.jpg",
+      "description": "The promise that starts the quest — Perseus before Polydectes, the boast that sends him after Medusa and brings him home a founder."
+    }
+  ],
   "popCulture": [
     {
       "title": "Perseus",

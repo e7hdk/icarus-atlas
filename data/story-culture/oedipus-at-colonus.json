@@ -1,6 +1,35 @@
 {
   "id": "oedipus-at-colonus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Oedipus at Colonus",
+      "artist": "Fulchran-Jean Harriet",
+      "year": "1798",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Fulchran-Jean_Harriet_-_Oedipus_at_Colonus_%281798%29.jpg/960px-Fulchran-Jean_Harriet_-_Oedipus_at_Colonus_%281798%29.jpg",
+      "description": "Harriet's Colonus — the blind exile led by Antigone into Attic sacred ground, Sophocles' last Theban play as revolutionary-era pathos."
+    },
+    {
+      "title": "Oedipus and Antigone",
+      "artist": "Antoni Brodowski",
+      "year": "1828",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Antoni_Brodowski_-_Oedipus_and_Antigone_-_MP_311_-_National_Museum_in_Warsaw.jpg/960px-Antoni_Brodowski_-_Oedipus_and_Antigone_-_MP_311_-_National_Museum_in_Warsaw.jpg",
+      "description": "Brodowski's father and guide — Oedipus and Antigone on the road that ends at Colonus, dependence remade as piety."
+    },
+    {
+      "title": "The Blind Oedipus Commending his Children to the Gods",
+      "artist": "Bénigne Gagneraux",
+      "year": "1784",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/B%C3%A9nigne_Gagneraux%2C_The_Blind_Oedipus_Commending_his_Children_to_the_Gods.jpg/960px-B%C3%A9nigne_Gagneraux%2C_The_Blind_Oedipus_Commending_his_Children_to_the_Gods.jpg",
+      "description": "Gagneraux's blind king entrusting his children to the gods — the aftermath that Colonus will turn into Athens' hidden blessing."
+    },
+    {
+      "title": "Ismene and Antigone Plead with Theseus",
+      "artist": "Nicolai Abildgaard",
+      "year": "1794",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg/960px-Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg",
+      "description": "Abildgaard's Ismene and Antigone before Theseus — the Attic king who receives the Labdacid exile as Sophocles wrote him."
+    }
+  ],
   "popCulture": [
     {
       "title": "Oedipus at Colonus",

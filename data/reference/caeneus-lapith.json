@@ -1,17 +1,42 @@
 {
   "id": "caeneus-lapith",
-  "summary": "Caeneus was a Lapith hero who fought the centaurs at Peirithous' wedding. Originally a woman, he became invulnerable after Poseidon's gift and was buried alive under pine trunks when the centaurs could not wound him with steel.",
+  "summary": "Caeneus was a Lapith hero famed for invulnerability and for fighting the centaurs at Peirithous' wedding. Born a woman named Caenis, he was transformed by Poseidon into an invulnerable man; when the centaurs could not wound him with steel, they buried him alive under uprooted pine trunks. Homer ranks him among the mightiest who ever fought centaurs.",
   "attribution": "Adapted from Wikipedia, \"Caeneus\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Καινεύς (Kaineús); the feminine form is Καινίς (Cainís / Caenis). Distinct from Caeneus of Gortyn and other homonyms.",
+  "symbols": [
+    "invulnerable body",
+    "pine trunks"
+  ],
+  "cultCenters": [
+    "Thessaly (Lapith country)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Transformation",
       "paragraphs": [
-        "Apollodorus tells the transformation and burial. Homer ranks Caeneus among the mightiest men who ever fought centaurs.",
-        "Ovid names five centaurs Caeneus killed at the wedding before the pine-trunk end."
+        "In the usual tale Caenis, a Lapith woman, is loved by Poseidon and granted a wish: she asks to become a man and to be invulnerable to weapons. Poseidon transforms her into Caeneus. Apollodorus and Ovid are the chief continuous tellings; details of the wish and the change vary slightly among mythographers.",
+        "Some later summaries stress that the invulnerability was Poseidon's gift rather than a native Lapith trait, tying Caeneus' fate to the sea-god's favour and to the wedding violence that follows."
+      ]
+    },
+    {
+      "heading": "Battle with the centaurs",
+      "paragraphs": [
+        "At the wedding of Peirithous and Hippodameia the centaurs riot; Caeneus fights on the Lapith side. Homer's Nestor, recalling the generation before Troy, names Caeneus among the greatest who contended with the mountain-dwelling centaurs.",
+        "Ovid's Metamorphoses has Caeneus slay several named centaurs before the herd, unable to pierce his skin, heaps pine trunks and earth upon him until he is crushed or driven into the ground. Apollodorus likewise reports burial under trees when steel fails."
+      ]
+    },
+    {
+      "heading": "Aftermath and identity",
+      "paragraphs": [
+        "Versions differ on whether Caeneus dies under the trees or is transformed again — some say into a bird. He belongs to the Lapith–centaur cycle centred on Peirithous, not to the Cretan or other figures who share the name Caeneus.",
+        "In art and later literature the episode illustrates both gender transformation and the paradox of an unwoundable warrior undone by mass and weight rather than by a spear."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Caeneus" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Caeneus"
+    }
   ]
 }

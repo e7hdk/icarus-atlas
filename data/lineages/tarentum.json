@@ -2,18 +2,18 @@
   "city": "tarentum",
   "reigns": [
     {
-      "ruler": "Phalanthus",
-      "characterId": "phalanthus-tarentine",
-      "sources": ["pausanias"],
-      "citation": "Description of Greece 10.10.6–10.10.8",
-      "note": "The Spartan whom Delphi sent to seize the coast when rain fell from a cloudless sky upon his wife Aethra's tears — founder of the Lacedaemonian colony on Italy's heel."
-    },
-    {
       "ruler": "Taras",
       "characterId": "taras-hero",
       "sources": ["pausanias"],
       "citation": "Description of Greece 10.10.8",
-      "note": "Eponymous hero, son of Poseidon and a nymph of the country — the city and its river bear his name in colonial legend."
+      "note": "Eponymous hero — son of Poseidon by a nymph of the Italian country; Pausanias says both the city and its river were called after him. Local naming tradition, not a civic king or successor in a royal line."
+    },
+    {
+      "ruler": "Phalanthus",
+      "characterId": "phalanthus-tarentine",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 10.10.6–10.10.8; 10.13.10",
+      "note": "Spartan oecist of the Lacedaemonian colony — Delphi promised him territory when rain fell under a cloudless sky (aethra); his wife Aethra's tears solved the riddle, and that night he took Tarentum from the barbarians. Before Italy a dolphin brought him ashore after shipwreck in the Crisaean sea (Delphi offering with Taras). Founder, not the head of a padded king-list. Ovid later calls the place Spartan Tarentum (Met. 15.1–91) without naming him. Distinguishes from Arcadian Phalanthus son of Agelaus (Paus. 8.35.9)."
     }
   ]
 }

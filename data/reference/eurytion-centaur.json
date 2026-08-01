@@ -1,18 +1,42 @@
 {
   "id": "eurytion-centaur",
-  "summary": "Eurytion was a centaur who, drunk at Peirithous' wedding, tried to carry off the bride and provoked the battle of Lapiths and centaurs. Heracles later slew a centaur Eurytion at Olenus when he came to fetch Dexamenus' daughter.",
+  "summary": "Eurytion was a centaur who, drunk at Peirithous' wedding, tried to carry off the bride and helped ignite the battle of Lapiths and centaurs. A centaur of the same name was later slain by Heracles at Olenus when he came as a violent suitor of Dexamenus' daughter. He is distinct from Eurytion king of Phthia, son of Actor.",
   "attribution": "Adapted from Wikipedia, \"Eurytion\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Εὐρυτίων (Eurytíōn). Several heroes share the name; this node is the centaur (or centaurs) of the Lapith and Heracles tales.",
+  "symbols": [
+    "wine",
+    "wedding violence"
+  ],
+  "cultCenters": [
+    "Mount Pelion",
+    "Olenus (Achaia)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Peirithous' wedding",
       "paragraphs": [
-        "Homer's Odyssey remembers Eurytion as the centaur whom wine maddened in Peirithous' hall.",
-        "Apollodorus tells the Olenus episode in which Heracles killed Eurytion the centaur suitor.",
-        "Distinct from Eurytion king of Phthia, son of Actor."
+        "Homer's Odyssey remembers Eurytion as the centaur whom wine maddened in the hall of Peirithous: he did evil in the house of Peirithous and began the feud between centaurs and men (Odyssey 21.295–304). Later epic and handbook tradition expands the scene into the full Centauromachy at the wedding of Peirithous and Hippodameia.",
+        "In that riot Eurytion (sometimes with other named centaurs) seizes or assaults the bride; Lapiths and heroes drive the herd out. Ovid and Apollodorus distribute the fighting among many names; Eurytion remains the Homeric emblem of drunken outrage."
+      ]
+    },
+    {
+      "heading": "Heracles at Olenus",
+      "paragraphs": [
+        "Apollodorus and others tell of a centaur Eurytion who demanded the daughter of Dexamenus of Olenus. Heracles, returning from an adventure, kills him when he comes to claim the bride. Mythographers sometimes treat this Eurytion as the same figure who rioted at Peirithous' feast, sometimes as a second centaur of the same name.",
+        "Either way the Olenus episode belongs to Heracles' guest-friendship and monster-slaying dossier, not to the Phthian royal house."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "Eurytion son of Actor (or of Irus) is a mortal king of Phthia connected with Peleus; that hero is a separate figure. Do not merge the centaur with the Phthian Eurytion or with minor namesakes in local lists."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Eurytion" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eurytion"
+    }
   ]
 }

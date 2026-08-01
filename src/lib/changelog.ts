@@ -14,6 +14,23 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.3.1',
+    codename: 'The Firmament and the Steady Hand',
+    date: '2026-08-01',
+    lines: [
+      'The galaxy was given a sky to hang in. Ptolemy’s eight-and-forty figures now stand around it on a true celestial sphere — five hundred and fifty-four stars, each at the right ascension and declination the catalogues record, joined by the very lines the ancients drew, so the Wain looks like the Wain and the Swan falls down the Milky Way as it always has.',
+      'And the sky was made honest. The ancients set whole figures among the stars — Callisto turned bear, the lyre the Muses carried up, the ship shown only from mast to stern — but they never named a character to each star, and the atlas will not pretend they did. Two claims are kept apart and both are cited: what a constellation IS, and which myth merely looks up and names it. Odysseus steers by the Bear; he is not the Bear.',
+      'Where the sources do go star by star, the atlas follows them there — the seven daughters of Atlas in the shoulder of the Bull, Alcyone to Merope, each sister her own light; and the Twins, whose two bright stars have carried Castor and Pollux since antiquity.',
+      'The twelve signs were filled from Hyginus’ own hand: the ram of the golden fleece, the bull that swam to Crete, the crab that snapped at Hercules in the swamp and was rewarded by Juno for its one moment of service; Justice who left the world when the ages turned; the goat-fish who threw panic among the Titans; and the two fishes that were Venus and her son, fleeing Typhon into the Euphrates. Where the tellers disagree — who pours the water, whether the Archer is a Centaur at all — the disagreement is printed, not resolved.',
+      'Every figure was given a page of its own, as characters and cities and myths have: its plate engraved from the catalogue, how it came to the sky, the myths that raise their eyes to it, its stars listed by magnitude, and beneath all of it the testimony.',
+      'Then the atlas turned to the hand that holds it. On the small screen the stars gave up their thousand separate labels for a single painted overlay, the pointer learned to wait for a true tap instead of chasing every drift of a thumb, and the instance matrices stopped crossing the bus each frame — the same sky, the same light, arriving steady.',
+      'The Legacy nearly doubled while the sky was being built: eight hundred and thirty-five figures now carry their afterlife — two thousand and sixty-two artworks, three hundred and thirty-six films, two hundred and forty-eight works of music and fifteen hundred and sixty-four echoes in the speech of the living — and the neutral record grew to one thousand one hundred and ninety-seven entries.',
+      'The festival year more than doubled: two-and-forty feasts now pinned to the reconstructed Attic moon, from the Apatouria where the phratries counted their sons to the Isthmian games, the Brauronia and the Chalkeia and the Genesia of the dead.',
+      'The Oracle was taught not to test what the tellers dispute, nor to offer as false a myth the figure truly walks in — Athena stands on the Argo’s deck, and the riddle will not deny it — and whoever names the star of the day is now offered the questions first.',
+      'And the forge learned what it need not repeat: the linked prose no longer rebakes the whole catalogue because one new name joined the sky, and the scan that binds names to prose was taught to look only where a name can begin. What took thirteen minutes now takes less than a second.',
+    ],
+  },
+  {
     version: '0.3.0',
     codename: 'The Daily Sky and the Voyage Home',
     date: '2026-07-18',

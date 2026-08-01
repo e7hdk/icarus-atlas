@@ -35,12 +35,36 @@
   ],
   "music": [
     {
+      "title": "The Creatures of Prometheus",
+      "year": "1801",
+      "kind": "ballet",
+      "composer": "Ludwig van Beethoven",
+      "description": "Beethoven's only full-length ballet stages the fire-bringer as Enlightenment allegory — Prometheus teaching clay-born humans science and art on the Vienna stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Creatures_of_Prometheus"
+    },
+    {
       "title": "Prométhée",
       "year": "1900",
       "kind": "opera",
       "composer": "Gabriel Fauré",
       "description": "Fauré's tragédie lyrique for Béziers stages the fire-theft and the chaining — the Titan as Symbolist benefactor under open-air spectacle.",
       "externalUrl": "https://en.wikipedia.org/wiki/Prom%C3%A9th%C3%A9e_(Faur%C3%A9)"
+    },
+    {
+      "title": "Prometheus",
+      "year": "1850",
+      "kind": "orchestral",
+      "composer": "Franz Liszt",
+      "description": "Liszt's symphonic poem sets the chained Titan's defiance in orchestral storm — Romantic heroism scored from Aeschylus' rock.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_(Liszt)"
+    },
+    {
+      "title": "Prometheus: The Poem of Fire",
+      "year": "1910",
+      "kind": "orchestral",
+      "composer": "Alexander Scriabin",
+      "description": "Scriabin's color-symphony for orchestra and clavier à lumières — the fire-theft as mystic light, with a part written for a keyboard of projected hues.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus:_The_Poem_of_Fire"
     }
   ],
   "popCulture": [
@@ -59,6 +83,14 @@
       "creator": "Percy Bysshe Shelley",
       "description": "Shelley's lyrical drama frees the Titan from Zeus' rock — Romantic liberation written against Aeschylus' chains.",
       "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_Unbound_(Shelley)"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's sequel keeps the fire-bringer among the Titan-age cast — Prometheus as a chained ally whose gifts still cost blood.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
     }
   ]
 }

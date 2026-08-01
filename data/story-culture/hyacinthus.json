@@ -1,6 +1,35 @@
 {
   "id": "hyacinthus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Death of Hyacinthos",
+      "artist": "Jean Broc",
+      "year": "1801",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Jean_Broc_-_The_Death_of_Hyacinthos.jpg",
+      "description": "Broc's Neoclassical canvas — Apollo cradling the Spartan youth struck by the discus, the flower still to rise from the spilled blood."
+    },
+    {
+      "title": "The Death of Hyacinth (La morte di Giacinto)",
+      "artist": "Giovanni Battista Tiepolo",
+      "year": "1752–1753",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Giambattista_Tiepolo_-_La_morte_di_Giacinto_%281752-53%29_-_Museo_Nacional_Thyssen-Bornemisza_Madrid.jpg/960px-Giambattista_Tiepolo_-_La_morte_di_Giacinto_%281752-53%29_-_Museo_Nacional_Thyssen-Bornemisza_Madrid.jpg",
+      "description": "Tiepolo's Thyssen canvas updates the fatal sport with tennis racquet and balls — Apollo's grief under a luminous Rococo sky."
+    },
+    {
+      "title": "Apollo and Hyacinth (fresco, Palazzo Farnese)",
+      "artist": "Domenichino",
+      "year": "1603–1604",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Apollo_and_Hyacinth._Domenichino.jpg/960px-Apollo_and_Hyacinth._Domenichino.jpg",
+      "description": "Domenichino's Farnese fresco — the god bending over the fallen prince, athletic play reversed into mourning in Ovid's Book X."
+    },
+    {
+      "title": "Apollo, Hyacinthus and Cyparissus Playing Music and Singing",
+      "artist": "Alexander Ivanov",
+      "year": "1831–1834",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Apollo%2C_Hyacinthus_and_Cyparis_singing_and_playing_by_Alexander_Ivanov.jpg/960px-Apollo%2C_Hyacinthus_and_Cyparis_singing_and_playing_by_Alexander_Ivanov.jpg",
+      "description": "Ivanov's idyll before the discus — Apollo at music with Hyacinthus and Cyparissus, the bloom of youth that makes the later death cut deeper."
+    }
+  ],
   "music": [
     {
       "title": "Apollo et Hyacinthus",
@@ -9,15 +38,6 @@
       "composer": "Wolfgang Amadeus Mozart",
       "description": "Mozart's first opera Latin school-drama stages the discus death — Hyacinthus as Apollo's beloved on a Salzburg stage.",
       "externalUrl": "https://en.wikipedia.org/wiki/Apollo_et_Hyacinthus"
-    }
-  ],
-  "popCulture": [
-    {
-      "title": "Hyacinth (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "The Spartan youth whose blood becomes the flower — Apollo's grief written into every garden hyacinth.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Hyacinth_(mythology)"
     }
   ]
 }

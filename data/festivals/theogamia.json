@@ -1,0 +1,16 @@
+{
+  "id": "theogamia",
+  "name": "Theogamia",
+  "greekName": "Θεογάμια",
+  "deities": ["hera", "zeus"],
+  "place": "athens",
+  "atticDate": { "month": "gamelion", "days": [27], "approximate": true },
+  "conventionalDates": ["01-27"],
+  "summary": "Hera Teleia's sacred marriage feast in the wedding-month — bridal rites and offerings for the hieros gamos of Hera and Zeus, which gave Gamelion its name and its luck for mortal marriages.",
+  "testimonia": [
+    "Hesychius s.v. Θεογάμια / Γαμήλια",
+    "Mikalson (1975) 111–112 (late Gamelion)",
+    "Parke (1977) 104–105",
+    "Deubner, Attische Feste (1932) 177–178"
+  ]
+}

@@ -1,6 +1,35 @@
 {
   "id": "lycurgus-thrace",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Lycurgus Cup",
+      "artist": "Unknown (Late Roman)",
+      "year": "4th century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Lycurgus_Cup_red_BM_MME1958.12-2.1.jpg/960px-Lycurgus_Cup_red_BM_MME1958.12-2.1.jpg",
+      "description": "The celebrated Late Roman cage cup in dichroic glass at the British Museum stages the madness of King Lycurgus of Thrace: the Edonian persecutor of Dionysus is caught in Ambrosia's vine as the god's revenge closes around him. Lit from behind the cup glows ruby red; in reflected light it turns opaque green — one of antiquity's most famous optical miracles, and the single most iconic image of Lycurgus' doom."
+    },
+    {
+      "title": "Lycurgus and Ambrosia (mosaic from Herculaneum)",
+      "artist": "Unknown (Roman)",
+      "year": "45–79 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Mosaik_%22Wahnsinn_des_Lykurg%22_%E2%80%94_Exponat_in_der_Arch%C3%A4ologischen_Staatssammlung_M%C3%BCnchen.JPG/960px-Mosaik_%22Wahnsinn_des_Lykurg%22_%E2%80%94_Exponat_in_der_Arch%C3%A4ologischen_Staatssammlung_M%C3%BCnchen.JPG",
+      "description": "A small Roman mosaic (about 40 × 40 cm) from Herculaneum, now in the Museo Archeologico Nazionale di Napoli (inv. 9988), shows Lycurgus raising his axe against the nymph Ambrosia as she transforms into a vine that will bind him for Dionysus' vengeance. The scene freezes the myth at the instant Homer's first persecutor of the god meets his vegetal prison."
+    },
+    {
+      "title": "Lycurgus",
+      "artist": "Abel de Pujol",
+      "year": "1811",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Abel_de_Pujol_Lycurgue.JPG",
+      "description": "Abel de Pujol's Neoclassical canvas of the Thracian king — painted in 1811 and now associated with the French academic revival of Homeric subjects — isolates Lycurgus as a tragic antagonist rather than a mere foil to Dionysus. The work belongs to the early nineteenth-century fashion for staging the Bacchic persecutors as moral dramas of hubris and divine retaliation."
+    },
+    {
+      "title": "King Lycurgus of Thrace (relief from the Roman theatre at Philippi)",
+      "artist": "Unknown (Roman)",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/The_west_cornier_pier_of_the_south_portico_of_the_stage_building_of_the_Roman_theatre%2C_2nd_century_AD%2C_King_Lycurgus_of_Thraceos_depicted_in_relief%2C_Philippi_Museum_%287416431354%29.jpg/960px-thumbnail.jpg",
+      "description": "A second-century AD relief pier from the stage building of the Roman theatre at Philippi, now in the Philippi Museum, depicts King Lycurgus of Thrace among the mythological programme of the scaenae frons. The architectural sculpture places the Dionysian antagonist in the civic fabric of a Macedonian city that itself lived under Dionysus' patronage."
+    }
+  ],
   "popCulture": [
     {
       "title": "Lycurgus of Thrace",

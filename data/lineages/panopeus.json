@@ -1,0 +1,47 @@
+{
+  "city": "panopeus",
+  "reigns": [
+    {
+      "ruler": "Phocus",
+      "characterId": "phocus-aeacid",
+      "sources": ["pausanias", "hesiod", "apollodorus"],
+      "citation": "Paus. 2.29.2–4, 10.1.1, 10.30.4; Theog. 1003–1005; Apollod. 3.12.6",
+      "note": "Aeacid son of Aeacus by Psamathe — not the Corinthian Phocus son of Ornytion who first named the Tithorea district, nor the Magnesian Argonaut. Pausanias has him cross from Aegina into Phocis; after his murder his sons settled about Parnassus, and from him the land-name spread."
+    },
+    {
+      "ruler": "Panopeus",
+      "characterId": "panopeus",
+      "sources": ["pausanias", "apollodorus", "homer"],
+      "citation": "Paus. 2.29.4; Apollod. 2.4.7; Il. 23.665–695",
+      "note": "Son of Phocus and eponym of this Phocian city (Asius via Pausanias); father of Epeius the wooden-horse builder. Distinct from the Nereid Panopea."
+    },
+    {
+      "ruler": "Crisus",
+      "characterId": "crisus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.29.2, 2.29.4",
+      "note": "Brother of the eponym Panopeus; father of Strophius and so the attested link from Phocus to Pylades. Pedigree in Asius/Pausanias — not separately styled king of the city."
+    },
+    {
+      "ruler": "Strophius",
+      "characterId": "strophius-phocis",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epit. 6.24; Fab. 117; Paus. 2.29.4",
+      "note": "Son of Crisus; Phocian host who reared Orestes with Pylades. Sources place him in Phocis (not by city-name); the atlas seats this Aeacid Phocian house at the eponym city. Distinct from Homer's Strophius, father of the Trojan hunter Scamandrius."
+    },
+    {
+      "ruler": "Pylades",
+      "characterId": "pylades",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Epit. 6.24–28; Fab. 117, 119–120; Paus. 2.29.4",
+      "note": "Son of Strophius by Anaxibia (Pausanias/Asius) or Astyoche (Hyginus); companion of Orestes and heir of the Crisus line in the Aeacid Phocian pedigree."
+    },
+    {
+      "ruler": "Schedius",
+      "characterId": "schedius-phocis",
+      "sources": ["homer"],
+      "citation": "Il. 2.515–545, 17.275–315",
+      "note": "Son of Iphitus son of Naubolus — a different Phocian stem from Crisus–Strophius. Homer alone calls him king over many men dwelling in famous Panopeus; Hector slew him in the fight for Patroclus. Distinct from the Dulichian suitor Schedius."
+    }
+  ]
+}

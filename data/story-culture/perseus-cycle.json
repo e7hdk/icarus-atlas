@@ -1,6 +1,35 @@
 {
   "id": "perseus-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Perseus with the Head of Medusa",
+      "artist": "Benvenuto Cellini",
+      "year": "1545–1554",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Perseus_%28Benvenuto_Cellini%29_2013_February.jpg/960px-Perseus_%28Benvenuto_Cellini%29_2013_February.jpg",
+      "description": "Cellini's Loggia bronze — Perseus astride Medusa's body with the severed head aloft, the cycle's Gorgon climax cast for Cosimo's Florence."
+    },
+    {
+      "title": "Medusa",
+      "artist": "Caravaggio",
+      "year": "c. 1597",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Medusa_by_Carvaggio.jpg",
+      "description": "Caravaggio's shield Medusa — the severed head frozen mid-scream, Perseus' trophy as a tournament-piece of terror."
+    },
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Titian",
+      "year": "1554–1556",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg/960px-Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg",
+      "description": "Titian's poesie of the Ethiopian rescue — Perseus diving on the sea-monster while Andromeda strains at her chains."
+    },
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Frederic Leighton",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Frederic_Leighton_-_Perseus_and_Andromeda_-_Google_Art_Project_2.jpg/960px-Frederic_Leighton_-_Perseus_and_Andromeda_-_Google_Art_Project_2.jpg",
+      "description": "Leighton's Victorian spectacle — Perseus airborne above Andromeda as the dragon coils, Athena's gifts implied in the flight."
+    }
+  ],
   "films": [
     {
       "title": "Clash of the Titans",

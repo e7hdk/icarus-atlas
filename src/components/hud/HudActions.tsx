@@ -3,8 +3,8 @@
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { MapLayerMenu } from '@/components/hud/MapLayerMenu';
 
-/** The search + settings cluster shared by the galaxy HUD and the 2D pages.
- *  On mobile the search affordance lives inside the settings panel. */
+/** The desktop search + settings cluster shared by the galaxy HUD and 2D pages.
+ *  Immersive mobile surfaces provide their own thumb-reachable search entry. */
 export function HudActions({ mapLayers = false }: { mapLayers?: boolean }) {
   const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
   const settingsOpen = useGalaxyStore((state) => state.settingsOpen);

@@ -3,16 +3,17 @@
   "reigns": [
     {
       "ruler": "Cychreus",
+      "characterId": "cychreus",
       "sources": ["apollodorus", "pausanias"],
-      "citation": "Apollod. 3.12.6–7; Paus. 1.35.2",
-      "note": "Son of Poseidon and the nymph Salamis; he slew the island's serpent and, dying childless, left the kingdom to Telamon."
+      "citation": "Apollod. 3.12.6–7; Paus. 1.35.2, 1.36.1",
+      "note": "Son of Poseidon and the nymph Salamis; he named the island for his mother, slew its ravaging serpent, and, dying childless, left the kingdom to Telamon. Athenians later kept his sanctuary and named him the fleet-serpent at the Persian sea-fight."
     },
     {
       "ruler": "Telamon",
       "characterId": "telamon",
       "sources": ["homer", "apollodorus", "apollonius", "pausanias"],
       "citation": "Il. 2.557–558; Apollod. 3.12.6–7; Arg. 1.90; Paus. 1.35.2",
-      "note": "Exiled from Aegina for Phocus' death, he took Salamis and fathered Ajax and, by Hesione, Teucer."
+      "note": "Exiled from Aegina for Phocus' death, he took Salamis from childless Cychreus and fathered Ajax by Periboea and, by Hesione, Teucer. Pausanias adds that Aeginetans colonized the island with him."
     },
     {
       "ruler": "Ajax",
@@ -20,6 +21,19 @@
       "sources": ["homer", "apollodorus"],
       "citation": "Il. 2.557–558, 7.181–312; Apollod. 3.12.7",
       "note": "King of Salamis when he led twelve ships to Troy and stood as bulwark of the Achaeans after Achilles' wrath."
+    },
+    {
+      "ruler": "Eurysaces",
+      "characterId": "eurysaces",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 1.35.2–3; Apollod. Epit. 5.5–7",
+      "note": "Son of Ajax left on Salamis when Teucer was driven out; Athenians still paid him cult beside Ajax, with an altar of Eurysaces at Athens."
+    },
+    {
+      "ruler": "Philaeus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.35.2",
+      "note": "Son of Eurysaces, grandson of Ajax; handed Salamis over to the Athenians after they made him an Athenian — last named heir of the Telamonian house on the island. Plain attested name (no character node yet)."
     }
   ]
 }

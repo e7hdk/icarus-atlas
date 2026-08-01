@@ -1,12 +1,31 @@
 {
   "id": "momus",
-  "summary": "Momus in Greek mythology was the personification of satire and mockery, two stories about whom figure among Aesop's Fables. During the Renaissance, several literary works used him as a mouthpiece for their criticism of tyranny, while others later made him a critic of contemporary society. Onstage he finally became the figure of harmless fun. Today, celebrations of Momus survive in the Momoeria New Year's festivals of Northern Greece.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "Momus (Ancient Greek: Μῶμος, Momos) is the personification of satire, mockery, and fault-finding in Greek mythology. Hesiod makes him a fatherless son of Night (Nyx) and twin of the misery-goddess Oizys. Aesop's fables cast him as an impossible critic; later satire and Renaissance allegory reused him as a sharp tongue against gods and tyrants.",
+  "attribution": "Adapted from Wikipedia, \"Momus\" · CC BY-SA 4.0",
+  "etymology": "Related to μομφή (momphḗ), \"blame,\" \"reproach,\" or \"disgrace.\"",
+  "symbols": [
+    "Satirical mask",
+    "Fool's role in later comedy"
+  ],
+  "sections": [
+    {
+      "heading": "Classical literature",
+      "paragraphs": [
+        "Hesiod's Theogony names Momus among the children Nyx bore \"though she lay with none,\" twin to Oizys. In the epic Cypria he is credited with stirring the Trojan War to thin the human population. Sophocles wrote a lost satyr play Momos that may have drawn on that tradition. As a spirit of unfair criticism he was eventually expelled from Olympus.",
+        "Two Aesopic fables feature him. In Perry Index 100 he judges the handiwork of three gods — a man, a house, and a bull — and finds every creation wanting (the man's heart hidden, the house without wheels, the bull without eyes in its horns). In another he can fault Aphrodite only for squeaky sandals. Classical writers made him a byword for fault-finding: if even Momus could not criticize a work, it was perfect."
+      ]
+    },
+    {
+      "heading": "Later satire and comedy",
+      "paragraphs": [
+        "Lucian's Gods in Council gives Momus a leading voice against foreign gods crowding Olympus. Renaissance writers from Leon Battista Alberti to Erasmus and Giordano Bruno used him as a mouthpiece for legitimate criticism of authority. In early modern masques and Commedia dell'arte he softens into a figure of light comedy — partner to Comus or Harlequin — and his name survives in the Momoeria New Year festivals of northern Greece."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Momus"
     }
-  ],
-  "etymology": "From momos, \"blame, censure\"."
+  ]
 }

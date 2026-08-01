@@ -1,6 +1,35 @@
 {
   "id": "perseus-at-the-feast",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Perseus Turning Phineus and His Followers to Stone",
+      "artist": "Unknown (after Luca Giordano / Baroque tradition)",
+      "year": "17th–18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Perseus_Turning_Phineus_and_his_followers_to_Stone.jpg/960px-Perseus_Turning_Phineus_and_his_followers_to_Stone.jpg",
+      "description": "After Giordano — Perseus raising Medusa's head at the wedding, Phineus and his men freezing mid-assault."
+    },
+    {
+      "title": "Phineus Attacking Perseus at the Wedding",
+      "artist": "Unknown (after the antique / LACMA collection print)",
+      "year": "18th–19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Phineus_Attacking_Perseus_at_the_Wedding_LACMA_65.37.126.jpg/960px-Phineus_Attacking_Perseus_at_the_Wedding_LACMA_65.37.126.jpg",
+      "description": "Antique-derived attack — Phineus storming the bridal feast, the brawl Ovid inserts after Andromeda's rescue."
+    },
+    {
+      "title": "Phineus Interrupts the Wedding of Perseus and Andromeda",
+      "artist": "Unknown (Dutch Ovid cycle)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Phineus_verstoort_de_bruiloft_van_Perseus_en_Andromeda_Herscheppinge_van_Publius_Ovidius_Naso_%28serietitel%29%2C_RP-P-1909-2009.jpg/960px-Phineus_verstoort_de_bruiloft_van_Perseus_en_Andromeda_Herscheppinge_van_Publius_Ovidius_Naso_%28serietitel%29%2C_RP-P-1909-2009.jpg",
+      "description": "Dutch Ovid cycle — Phineus interrupting Perseus and Andromeda's wedding, Metamorphoses Book 5 as narrative strip."
+    },
+    {
+      "title": "Phineus Interrupting the Wedding of Perseus and Andromeda",
+      "artist": "Dominicus van Wijnen",
+      "year": "c. 1680–1690",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Wijnen%2C_Dominicus_van_%E2%80%94_Phineus_interrupting_the_Wedding_of_Perseus_and_Andromeda.webp/960px-Wijnen%2C_Dominicus_van_%E2%80%94_Phineus_interrupting_the_Wedding_of_Perseus_and_Andromeda.webp",
+      "description": "Van Wijnen's interruption — the uncle's claim on the bride answered by the Gorgon's stare."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

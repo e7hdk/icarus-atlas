@@ -1,17 +1,42 @@
 {
   "id": "electra-pleiad",
-  "summary": "Electra is one of the Pleiades and a daughter of Atlas. By Zeus on Samothrace she bore Iasion and Dardanus. She is distinct from Electra daughter of Agamemnon and from the Oceanid Electra.",
+  "summary": "In Greek mythology, Electra (Ἠλέκτρα) was one of the Pleiades, the seven daughters of Atlas and Pleione. She lived on the island of Samothrace. She had two sons, Dardanus and Iasion (or Eetion), by Zeus.",
   "attribution": "Adapted from Wikipedia, \"Electra (Pleiad)\" · CC BY-SA 4.0",
   "sections": [
     {
+      "heading": "Overview",
+      "paragraphs": [
+        "In Greek mythology, Electra (Ἠλέκτρα) was one of the Pleiades, the seven daughters of Atlas and Pleione. She lived on the island of Samothrace. She had two sons, Dardanus and Iasion (or Eetion), by Zeus.",
+        "Electra was connected with the legend of the Palladium, the sacred statue, which became the talismanic protector of Troy. Electra, along with the rest of the Pleiades, were transformed into stars by Zeus. By some accounts she was the one star among seven of the constellation not easily seen because, since she could not bear to look upon the destruction of Troy, she hid her eyes, or turned away; or in her grief, she abandoned her sisters and became a comet."
+      ]
+    },
+    {
+      "heading": "Family",
+      "paragraphs": [
+        "The Pleiades were said to be the daughters of Atlas, who was the son of the Titan Iapetos. No early source mentions their mother, but according to some late accounts she was the Oceanid Pleione. Hyginus' De astronomia says that Electra and her six sisters were called the Pleiades because, according to the 1st-century BC Greek scholar and historian Alexander Polyhistor, they were the daughters of Pleione. De astronomia also says that, according to Musaeus, their mother was instead an Oceanid named Aithra, explaining that they were called the Pleiades because there were more (pleion in Greek) of them than their sisters the Hyades. According to the mythographer Apollodorus, the Pleiades were born to Pleione \"at Cyllene\" (Mount Cyllene?) in Arcadia.",
+        "On the island of Samothrace, Electra had, by Zeus, a son Dardanus who left Samothrace and founded the city of Dardanus in the Troad. Through Dardanus, Electra was the progenitor of the Trojan royal line. She also had another son, by Zeus, Iasion (also called Eetion), who was killed by a thunderbolt because of an outrage against Demeter. The logographer Hellanicus also makes Electra the mother, by Zeus, of Harmonia the wife of Cadmus, although usually Harmonia is the daughter of Ares and Aphrodite. Nonnus also makes Electra the mother of Emathion, who succeeded his brother Dardanus as king of Samothrace.",
+        "According to an Italian tradition, Electra was the wife of the Etruscan king Corythus. Her sons Dardanus and Iasion were born in Italy, with Iasion being the son of Electra and Corythus, and Dardanus being the son of Electra and Zeus."
+      ]
+    },
+    {
       "heading": "Mythology",
       "paragraphs": [
-        "Apollodorus counts Electra among the Pleiades and reports that she bore Iasion and Dardanus to Zeus on Samothrace (Bibliotheca 3.10.1, 3.12.1).",
-        "Hyginus preserves the star-myth of her grief for Troy on the hero node `electra-atlas` (Fabulae 192)."
+        "There are two stories involving Electra. One concerns the Palladium, the sacred statue of Pallas Athena, considered to be the divine protector of Troy (and later Rome). According to Apollodorus, Electra, seeking protection from Zeus, took refuge at the divine statue, but Zeus in his anger threw the statue from heaven. It landed near Troy, where Ilus, the founder of Troy, found the statue and built a temple to house and honor it. According to another version of the story Electra herself gave the statue to Dardanus as protection for Troy.",
+        "Another story involving Electra, concerns her, and her six sisters transformation into stars. The reason for their transformation varied. According to one account, the Pleiades were being pursued by the huntsman Orion, intent on rape, but Zeus took pity on the sisters and placed them among the stars. And by way of explanation for the fact that only six of the seven stars in the constellation were readily visible, it was said that Electra, unable to behold the destruction of Troy, hid her eyes, or turned away; or, in another version, Electra, in mourning, let down her hair, and left her sisters altogether and became a \"long haired star\" (i.e. a \"comet\")."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "This atlas entry (electra-pleiad) is the Pleiad nymph, daughter of Atlas and mother of Dardanus and Iasion. The star-myth of her grief for Troy lives on the hero node electra-atlas. Distinct from Electra daughter of Agamemnon (electra) and from the Oceanid Electra (electra-oceanid)."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Electra_(Pleiad)" }
-  ]
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Electra_(Pleiad)"
+    }
+  ],
+  "etymology": "Ancient Greek Ἠλέκτρα (Ēlektra), often connected with \"amber\" / \"bright.\""
 }

@@ -1,6 +1,42 @@
 {
   "id": "little-iliad",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Wounded Philoctetes",
+      "artist": "Nicolai Abildgaard",
+      "year": "1775",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Den_s%C3%A5rede_Filoktet.jpg/960px-Den_s%C3%A5rede_Filoktet.jpg",
+      "description": "Abildgaard's Copenhagen canvas — the Lemnos exile whose bow the Little Iliad must fetch before Troy can fall."
+    },
+    {
+      "title": "The Isolation of Philoctetes on Lemnos",
+      "artist": "Jean-Charles-Joseph Rémond",
+      "year": "1818",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Remond_Philoct%C3%A8te_mus%C3%A9e_des_Augustins.jpg/960px-Remond_Philoct%C3%A8te_mus%C3%A9e_des_Augustins.jpg",
+      "description": "Rémond's Toulouse landscape — the abandoned archer alone with Heracles' weapons until Odysseus and Diomedes return."
+    },
+    {
+      "title": "The Building of the Trojan Horse",
+      "artist": "Giovanni Domenico Tiepolo",
+      "year": "c. 1760",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GD_Tiepolo_Construction_du_cheval_de_Troie.jpg/960px-GD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
+      "description": "Tiepolo's Epeius at work — the wooden horse that closes the Little Iliad and opens the sack."
+    },
+    {
+      "title": "Neoptolemus Killing Priam (Attic black-figure amphora)",
+      "artist": "Attributed to the Class of Cambridge 49",
+      "year": "c. 520–510 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Amphora_death_Priam_Louvre_F222.jpg/960px-Amphora_death_Priam_Louvre_F222.jpg",
+      "description": "Attic amphora — Achilles' son fetched from Scyros in the Little Iliad, already the killer of Priam at the altar."
+    },
+    {
+      "title": "Philoctetes on the Island of Lemnos",
+      "artist": "Guillaume Guillon-Lethière",
+      "year": "1798",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Guillaume_Guillon-Lethiere%2C_Philoctetes_on_the_Island_of_Lemnos.jpg",
+      "description": "Lethière's Neoclassical Lemnos — the indispensable archer the cycle must reclaim before Paris falls to Heracles' arrows."
+    }
+  ],
   "popCulture": [
     {
       "title": "Little Iliad",

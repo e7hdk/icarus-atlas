@@ -1,6 +1,35 @@
 {
   "id": "deianira-at-the-feast",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Banquet of Achelous",
+      "artist": "Peter Paul Rubens and Jan Brueghel the Elder",
+      "year": "c. 1615",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Metropolitan_Rubens_Achelous.jpg/960px-Metropolitan_Rubens_Achelous.jpg",
+      "description": "Metropolitan Museum collaboration: Achelous hosts Theseus at a grotto feast and recounts the wrestling for Deianira — Ovid's Metamorphoses banquet where the broken horn spills as cornucopia and the Nessus tragedy waits in the telling."
+    },
+    {
+      "title": "Nessus and Deianira",
+      "artist": "Enrique Simonet",
+      "year": "1888",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Simonet_-_Neso_y_Deyanira.jpg/960px-Simonet_-_Neso_y_Deyanira.jpg",
+      "description": "Simonet's academic canvas: the centaur seizes Deianira at the Evenus — the dying deceit Achelous' feast narrative will name as the shirt that kills Heracles."
+    },
+    {
+      "title": "Heracles, Deianira and Nessus (Attic black-figure hydria, Louvre E 803)",
+      "artist": "Attributed to the Painter of Vatican 309",
+      "year": "c. 575–550 BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Herakles_Nessos_Louvre_E803.jpg/960px-Herakles_Nessos_Louvre_E803.jpg",
+      "description": "Louvre E 803: the river-crossing confrontation that seeds the poisoned 'love-charm' — the feast's dark punchline already painted in sixth-century black-figure."
+    },
+    {
+      "title": "Hercules and Deianira (Pompeian fresco)",
+      "artist": "Unknown",
+      "year": "1st century CE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Hercules_and_Deianira%2C_Pompeii.jpg",
+      "description": "Pompeian wall painting of the conjugal pair whose story Achelous recounts at his harvest feast — the serene face of the wife who will send the fatal tunic."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

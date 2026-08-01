@@ -35,9 +35,16 @@
       "citation": "Metamorphoses 3.437–510; Fabulae 271; Description of Greece 9.31.7–8"
     },
     {
-      "text": "Pausanias records the spring at Thespiae and Ovid the Cephisus birth-myth, but sources disagree on locale and the figure is cult topography rather than stable civic habitation. Residence stays deferred.",
+      "text": "Pausanias places the spring in Thespian territory at Donacon and calls him Narcissus the Thespian; Ovid's Cephisus birth-myth belongs to Boeotia without naming another polis.",
       "sources": ["ovid", "hyginus", "pausanias"],
-      "citation": "Metamorphoses 3.339–510; Fabulae 271; Description of Greece 9.31.7–8"
+      "citation": "Metamorphoses 3.339–510; Fabulae 271; Description of Greece 9.31.7–9"
+    }
+  ],
+  "residences": [
+    {
+      "city": "thespiae",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 9.31.7–9"
     }
   ]
 }

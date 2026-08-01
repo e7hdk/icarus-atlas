@@ -37,6 +37,23 @@
       "description": "On the tondo of an Attic red-figure kylix from Vulci, Pasiphaë faces the child she bore — the Minotaur already horned beside his mother. Bibliothèque nationale de France, Cabinet des Médailles (De Ridder 1066)."
     }
   ],
+  "films": [
+    {
+      "title": "Atlantis",
+      "year": "2013–2015",
+      "medium": "tv",
+      "description": "Sarah Parish's Pasiphae is the power-hungry queen of BBC Atlantis — Helios' daughter rewritten as sorceress and usurper opposite Minos and Ariadne.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Atlantis_(TV_series)"
+    },
+    {
+      "title": "Minotaur, the Wild Beast of Crete",
+      "year": "1960",
+      "medium": "film",
+      "director": "Silvio Amadio",
+      "description": "The peplum keeps Pasiphae as Minos' queen and mother of the labyrinth's twins — the dying wish that reunites Ariadne with Phaedra and opens Theseus' path to Crete.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
+    }
+  ],
   "popCulture": [
     {
       "title": "The King Must Die",
@@ -55,11 +72,12 @@
       "externalUrl": "https://en.wikipedia.org/wiki/The_Bull_from_the_Sea"
     },
     {
-      "title": "Pasiphaë",
-      "year": "—",
+      "title": "Inferno",
+      "year": "c. 1320",
       "kind": "other",
-      "description": "Pasiphaë endures as the witch-queen of the bull — Helios' daughter whose unnatural desire begot the Minotaur and stained the house of Minos.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Pasipha%C3%AB"
+      "creator": "Dante Alighieri",
+      "description": "In Canto XII Dante recalls Pasiphaë's wooden cow when he meets the Minotaur — the queen's unnatural passion as the beast's birth-story in Hell.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Inferno_(Dante)"
     }
   ]
 }

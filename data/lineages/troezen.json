@@ -1,0 +1,48 @@
+{
+  "city": "troezen",
+  "reigns": [
+    {
+      "ruler": "Orus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.5",
+      "note": "First king in the Troezenian foundation tale — the land called Oraea after him. Pausanias flags the name as Egyptian and un-Greek, but records the local claim."
+    },
+    {
+      "ruler": "Althepus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.5, 2.32.8",
+      "note": "Son of Poseidon and Leis, daughter of Orus; inherited the kingdom and named the land Althepia. Credited with setting up Demeter Thesmophoros above Poseidon Phytalmios."
+    },
+    {
+      "ruler": "Saron",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.7",
+      "note": "Succeeded Althepus; built the sanctuary of Saronian Artemis by the Phoebaean lagoon and gave his name to the Saronic Gulf after drowning in the chase of a doe."
+    },
+    {
+      "ruler": "Hyperes & Anthas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.8",
+      "note": "Sons of Poseidon and Alcyone, daughter of Atlas — the next named kings after a forgotten stretch. They founded Hyperea and Anthea in the territory that later became Troezen."
+    },
+    {
+      "ruler": "Aetius",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.8, 2.31.10",
+      "note": "Son of Anthas; inherited the kingdoms of his father and of his uncle Hyperes, and renamed one city Poseidonias. Distinct from the later Halicarnassian colonists Pausanias calls descendants of this Aetius."
+    },
+    {
+      "ruler": "Troezen, Pittheus & Aetius",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.30.8",
+      "note": "The sons of Pelops — Troezen and Pittheus — arrived and shared the kingship with Aetius, three kings instead of one, though the Pelopids held the balance of power."
+    },
+    {
+      "ruler": "Pittheus",
+      "characterId": "pittheus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.15.7; Paus. 2.30.9",
+      "note": "After Troezen died, Pittheus alone gathered Hyperea and Anthea into one city and named it Troezen after his brother. Apollodorus keeps him as the wise king with whom Aegeus lodged — grandfather and tutor of Theseus, birthplace of the Athenian hero."
+    }
+  ]
+}

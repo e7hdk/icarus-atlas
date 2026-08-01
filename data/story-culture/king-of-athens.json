@@ -1,6 +1,21 @@
 {
   "id": "king-of-athens",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ismene and Antigone Plead with Theseus",
+      "artist": "Nicolai Abildgaard",
+      "year": "1790s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg/960px-Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg",
+      "description": "SMK Copenhagen: Oedipus' daughters petition Athens' king — Theseus as public monarch of Attica, the hospitable ruler of Colonus and the Panathenaea."
+    },
+    {
+      "title": "The Embassy Hippolyta Sends to Theseus, King of Athens",
+      "artist": "Vittore Carpaccio",
+      "year": "c. 1495",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Carpaccio_-_L%E2%80%99Ambassade_qu%E2%80%99Hippolyte%2C_la_reine_des_Amazones_envoie_%C3%A0_Th%C3%A9s%C3%A9e%2C_roi_d%E2%80%99Ath%C3%A8nes%2C_Vers_1495.jpg/960px-Carpaccio_-_L%E2%80%99Ambassade_qu%E2%80%99Hippolyte%2C_la_reine_des_Amazones_envoie_%C3%A0_Th%C3%A9s%C3%A9e%2C_roi_d%E2%80%99Ath%C3%A8nes%2C_Vers_1495.jpg",
+      "description": "Musée Jacquemart-André tradition (Carpaccio): Amazon envoys before Theseus as king of Athens — the synoecist monarch receiving foreign power in civic dignity."
+    }
+  ],
   "popCulture": [
     {
       "title": "Oedipus at Colonus",

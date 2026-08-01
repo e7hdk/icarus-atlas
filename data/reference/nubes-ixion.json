@@ -1,13 +1,39 @@
 {
   "id": "nubes-ixion",
-  "summary": "Nubes (Latin for \"cloud\") is the cloud-mate Hyginus names alongside Ixion as parent of centaurs such as Nessus and Eurytion. She belongs to the Ixion-centaur genealogy and must be distinguished from Nephele, the cloud of Athamas.",
-  "attribution": "Atlas entry — Hyginus Fabulae 34",
+  "summary": "Nubes (Latin for \"cloud\") is the cloud-mate Hyginus names with Ixion as parent of wild centaurs such as Nessus and Eurytion. She corresponds to the unnamed cloud Zeus shaped in Hera's likeness in Apollodorus — the mother of Centaurus — and must be distinguished from Nephele, the cloud-wife of Athamas who bore Phrixus and Helle.",
+  "attribution": "Adapted from Wikipedia, \"Nephele\" · CC BY-SA 4.0",
+  "etymology": "Latin nubes, \"cloud\"; Greek counterpart νεφέλη (nephélē), \"cloud.\" The atlas id nubes-ixion marks the Ixion genealogy against the Athamantid Nephele.",
+  "symbols": [
+    "cloud shaped like Hera",
+    "centaur parentage"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Ixion and the false Hera",
       "paragraphs": [
-        "Hyginus gives Nessus and other centaurs the parentage Ixion and Nubes. Apollodorus instead has Zeus' cloud in Hera's likeness bear Centaurus after Ixion's attempt on Hera."
+        "When Ixion lusts after Hera, Zeus forms a cloud in the goddess's image. Ixion couples with the cloud; punishment (binding to a fiery wheel) follows the outrage against hospitality and the queen of heaven.",
+        "Apollodorus says the cloud bears Centaurus, who then fathers the horse-men on Magnesian mares. The cloud herself is usually left unnamed in that account."
       ]
+    },
+    {
+      "heading": "Hyginus' Nubes",
+      "paragraphs": [
+        "Hyginus Fabulae names Nubes explicitly as mother, with Ixion, of centaurs including Nessus and others of the wild brood. In that Latin handbook the cloud is a genealogical parent rather than a silent prop.",
+        "The atlas keeps this Hyginus naming under nubes-ixion so that centaur parent edges can point at a stable node without collapsing her into the Boeotian Nephele."
+      ]
+    },
+    {
+      "heading": "Homonym: Nephele of Athamas",
+      "paragraphs": [
+        "Nephele, first wife of Athamas and mother of Phrixus and Helle, is a different cloud-nymph with a separate myth (the golden ram, the Hellespont). Sharing the language of clouds does not make the two figures one person; sources and children diverge cleanly.",
+        "Reception sometimes speaks loosely of \"Nephele\" for Ixion's cloud; in this dataset the Athamantid remains nephele and the Ixion mate remains nubes-ixion."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nephele"
     }
   ]
 }

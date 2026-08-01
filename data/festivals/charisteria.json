@@ -1,0 +1,16 @@
+{
+  "id": "charisteria",
+  "name": "Charisteria",
+  "greekName": "Χαριστήρια",
+  "deities": ["artemis"],
+  "place": "athens",
+  "atticDate": { "month": "boedromion", "days": [6] },
+  "conventionalDates": ["09-06"],
+  "summary": "Artemis Agrotera's thanksgiving after Marathon — the annual herd of goats vowed for the Persian dead, led out by the ephebes to the Huntress across the Ilissus.",
+  "testimonia": [
+    "Xenophon, Anabasis 3.2.12 (the vow of a goat for every enemy slain)",
+    "Plutarch, On the Malice of Herodotus 862b–c (the yearly five hundred goats)",
+    "Pausanias 1.19.6 (the temple of Artemis Agrotera at Agrae)",
+    "Mikalson (1975) 50 (6 Boedromion)"
+  ]
+}

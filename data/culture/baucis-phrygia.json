@@ -1,6 +1,28 @@
 {
   "id": "baucis-phrygia",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Philemon and Baucis",
+      "artist": "Rembrandt van Rijn",
+      "year": "1658",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Rembrandt_van_Rijn%2C_Philemon_and_Baucis%2C_1658%2C_NGA_1204.jpg/960px-Rembrandt_van_Rijn%2C_Philemon_and_Baucis%2C_1658%2C_NGA_1204.jpg",
+      "description": "Rembrandt's National Gallery of Art panel sets Zeus and Hermes at the humble table of Philemon and Baucis — hospitality rewarded in a glow of Dutch Golden Age light."
+    },
+    {
+      "title": "Jupiter and Mercury in the House of Philemon and Baucis",
+      "artist": "Jacob Jordaens",
+      "year": "c. 1645",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Jacob_Jordaens_-_Jupiter_and_Mercury_in_the_House_of_Philemon_and_Baucis.jpg/960px-Jacob_Jordaens_-_Jupiter_and_Mercury_in_the_House_of_Philemon_and_Baucis.jpg",
+      "description": "Jordaens fills the cottage with Flemish abundance as the disguised gods accept the old couple's meal — Baucis and Philemon's poverty turned into festive welcome."
+    },
+    {
+      "title": "Jupiter and Mercury in the House of Philemon and Baucis",
+      "artist": "Adam Elsheimer",
+      "year": "c. 1609–1610",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Adam_Elsheimer_-_Jupiter_and_Mercury_in_the_House_of_Philemon_and_Baucis.jpg/960px-Adam_Elsheimer_-_Jupiter_and_Mercury_in_the_House_of_Philemon_and_Baucis.jpg",
+      "description": "Elsheimer's small night scene places the gods inside a candlelit hut — Baucis and Philemon's kindness painted as intimate German Baroque drama."
+    }
+  ],
   "popCulture": [
     {
       "title": "Baucis and Philemon",

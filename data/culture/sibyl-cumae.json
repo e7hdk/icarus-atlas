@@ -1,0 +1,65 @@
+{
+  "id": "sibyl-cumae",
+  "artworks": [
+    {
+      "title": "The Cumaean Sibyl (Sistine Chapel)",
+      "artist": "Michelangelo",
+      "year": "c. 1508–1512",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/CumaeanSibylByMichelangelo.jpg",
+      "description": "Michelangelo's monumental prophetess on the Sistine vault — massive limbs and an open book, the Cumaean Sibyl as Renaissance theology's pagan witness to the Word."
+    },
+    {
+      "title": "Cumaean Sibyl",
+      "artist": "Domenichino",
+      "year": "c. 1610",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Domenichino_-_Cumaean_Sibyl.JPG/960px-Domenichino_-_Cumaean_Sibyl.JPG",
+      "description": "Domenichino's Capitoline canvas: the Sibyl as a young woman with scroll and laurel — Bolognese clarity for Virgil's guide through the underworld."
+    },
+    {
+      "title": "Aeneas and the Sibyl in the Underworld",
+      "artist": "Jan Brueghel the Younger",
+      "year": "c. 1630",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aeneas_and_the_Sibyl_in_the_Underworld_MET_DP234687.jpg/960px-Aeneas_and_the_Sibyl_in_the_Underworld_MET_DP234687.jpg",
+      "description": "Brueghel's Met panel crowds Aeneas and the Cumaean Sibyl through a hellscape of monsters and fire — Aeneid VI as Flemish cabinet drama."
+    },
+    {
+      "title": "The Bay of Baiae, with Apollo and the Sibyl",
+      "artist": "J. M. W. Turner",
+      "year": "1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Joseph_Mallord_William_Turner_-_The_Bay_of_Baiae%2C_with_Apollo_and_the_Sibyl_-_Google_Art_Project.jpg/960px-Joseph_Mallord_William_Turner_-_The_Bay_of_Baiae%2C_with_Apollo_and_the_Sibyl_-_Google_Art_Project.jpg",
+      "description": "Turner's Tate canvas: Apollo offers the Sibyl as many years as the sand in her hand — the Bay of Baiae dissolving into light while her bargain with immortality fails."
+    },
+    {
+      "title": "Aeneas and the Sibyl in the Underworld",
+      "artist": "Edward Burne-Jones",
+      "year": "c. 1870s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Aeneas_and_the_Sibyl_in_the_Underworld%2C_by_Edward_Burne-Jones_%28Fitzwilliam_Museum%29.jpg/960px-Aeneas_and_the_Sibyl_in_the_Underworld%2C_by_Edward_Burne-Jones_%28Fitzwilliam_Museum%29.jpg",
+      "description": "Burne-Jones' Fitzwilliam design: the Sibyl leads Aeneas among the shades — Pre-Raphaelite stillness for Virgil's most famous katabasis."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Aeneid",
+      "year": "c. 19 BC",
+      "kind": "other",
+      "creator": "Virgil",
+      "description": "Book VI — the golden bough, the gates of sleep, and the Cumaean Sibyl as Aeneas' guide through the underworld.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Aeneid"
+    },
+    {
+      "title": "The Waste Land",
+      "year": "1922",
+      "kind": "other",
+      "creator": "T. S. Eliot",
+      "description": "Eliot's epigraph quotes Petronius' Cumaean Sibyl hanging in a jar, wishing only to die — the atlas's most famous modern echo of her failed immortality.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Waste_Land"
+    },
+    {
+      "title": "Cumaean Sibyl",
+      "year": "—",
+      "kind": "other",
+      "description": "Apollo's prophetess at Cumae — Virgil's guide, Michelangelo's giantess, Eliot's hanging Sibyl.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cumaean_Sibyl"
+    }
+  ]
+}

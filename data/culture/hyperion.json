@@ -1,6 +1,35 @@
 {
   "id": "hyperion",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Artemis and Hyperion",
+      "artist": "George Frederic Watts",
+      "year": "c. 1881",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/George_Frederic_Watts_-_Artemis_and_Hyperion_-_c._1881.jpg/960px-George_Frederic_Watts_-_Artemis_and_Hyperion_-_c._1881.jpg",
+      "description": "Watts' Symbolist canvas pairs Artemis with Hyperion, the Titan of light whose name still means 'the High One.' The painting treats the Hesiodic father of Helios, Selene and Eos as a luminous presence rather than a mere genealogy — Hyperion as living light beside the huntress."
+    },
+    {
+      "title": "A Study for Hyperion",
+      "artist": "George Frederic Watts",
+      "year": "c. 1880s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/George_Frederic_Watts_%281817-1904%29_-_A_Study_for_Hyperion_-_27_-_Somerville_College.jpg",
+      "description": "A preparatory study held at Somerville College, Oxford, for Watts' Hyperion imagery. The Titan of watchful light is reduced to a concentrated figure study — Victorian idealism reaching for the Hesiodic sun before the Olympian Helios took the chariot."
+    },
+    {
+      "title": "The Fall of the Titans",
+      "artist": "Cornelis van Haarlem",
+      "year": "1588–1590",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg/960px-Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg",
+      "description": "Haarlem Mannerism's showpiece in Copenhagen hurls Hyperion's generation into Tartarus — the Titans cast down after Zeus' victory. Hyperion, father of the lights of heaven, falls with his brothers in a writhing mass of foreshortened nudes."
+    },
+    {
+      "title": "The Fall of the Titans",
+      "artist": "Peter Paul Rubens (workshop / after)",
+      "year": "c. 1630s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mus%C3%A9e_de_Bruxelles._Rubens._La_Chute_des_Titans_-_Der_Fall_der_Titanen_-_The_fall_of_the_Titan%2C_GP019175.jpg/960px-Mus%C3%A9e_de_Bruxelles._Rubens._La_Chute_des_Titans_-_Der_Fall_der_Titanen_-_The_fall_of_the_Titan%2C_GP019175.jpg",
+      "description": "A Rubensian Fall of the Titans in Brussels restages the Titanomachy's end: the elder gods of light and sky plunge as Olympus rises. Hyperion belongs to that defeated generation — the High One cast from the upper air his children would later rule."
+    }
+  ],
   "popCulture": [
     {
       "title": "Hyperion (moon)",

@@ -1,6 +1,35 @@
 {
   "id": "voyage-to-colchis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jason with the Golden Fleece",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1803 (marble 1828)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg/960px-Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg",
+      "description": "Thorvaldsen's Jason with the Golden Fleece — the voyage's prize, the ram's gold brought home from Colchis."
+    },
+    {
+      "title": "Jason and the Dragon (Douris cup)",
+      "artist": "Douris",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg",
+      "description": "The Douris cup: Jason and the Dragon — the Colchian ordeal at the end of the Argo's eastward run."
+    },
+    {
+      "title": "Meeting of Jason and King Aeëtes",
+      "artist": "Annibale Carracci",
+      "year": "c. 1584",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg/960px-Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg",
+      "description": "Carracci's Meeting of Jason and King Aeëtes — the Colchian court that sets the impossible trials."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg/960px-Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg",
+      "description": "Moreau's Jason and Medea — the enchantress who makes the voyage survive Aeëtes' tests."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

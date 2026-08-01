@@ -1,6 +1,35 @@
 {
   "id": "cyparissus-ceos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Cyparissus",
+      "artist": "Jacopo Vignali",
+      "year": "c. 1620",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Vignali_Cyparissus.jpg/960px-Vignali_Cyparissus.jpg",
+      "description": "Vignali's Baroque canvas in the Musée des Beaux-Arts de Strasbourg shows the Cean youth mourning the tame stag he has accidentally slain — the grief Apollo will answer by turning him into the cypress, emblem of endless mourning."
+    },
+    {
+      "title": "Metamorphosis of Cyparissus (House of the Vettii)",
+      "artist": "Unknown Roman wall-painter",
+      "year": "1st century AD (Pompeian)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Fresco_depicting_the_metamorphosis_of_Cyparissus%2C_House_of_the_Vettii%2C_Pompeii.jpg/960px-Fresco_depicting_the_metamorphosis_of_Cyparissus%2C_House_of_the_Vettii%2C_Pompeii.jpg",
+      "description": "A Pompeian fresco from the House of the Vettii stages Ovid's metamorphosis: Cyparissus beside the stag whose death will root him forever as the funeral cypress."
+    },
+    {
+      "title": "Apollo and Cyparissus",
+      "artist": "Unknown (Dutch print; Metamorphoses of Ovid series)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Apollo_en_Cyparissus_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2014-34-58.jpg/960px-Apollo_en_Cyparissus_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2014-34-58.jpg",
+      "description": "A Dutch Metamorphoses engraving: Apollo with Cyparissus and the doomed stag — the pastoral friendship that ends when the youth's accidental shot becomes the aetiology of the cypress."
+    },
+    {
+      "title": "Cyparissus Changed into a Cypress",
+      "artist": "Unknown (Dutch print)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cyparissus_in_een_cipres_veranderd%2C_RP-P-OB-37.867.jpg/960px-Cyparissus_in_een_cipres_veranderd%2C_RP-P-OB-37.867.jpg",
+      "description": "Rijksmuseum engraving of the climax Ovid names: Cyparissus transformed into the cypress tree, grief made evergreen — the reception image that keeps the Cean youth as a botanical myth."
+    }
+  ],
   "popCulture": [
     {
       "title": "Cyparissus",

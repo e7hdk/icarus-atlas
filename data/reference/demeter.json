@@ -1,26 +1,61 @@
 {
   "id": "demeter",
-  "summary": "In ancient Greek religion and mythology, Demeter is the Olympian goddess of the harvest and agriculture, presiding over crops, grains, food, and the fertility of the earth. Although Demeter is mostly known as a grain goddess, she also appeared as a goddess of health, birth, and marriage, and had connections to the Underworld. She is also called Deo.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In ancient Greek religion and mythology, Demeter is the Olympian goddess of the harvest and agriculture, presiding over crops, grains, food, and the fertility of the earth. She also appeared as a goddess of health, birth, and marriage, with strong Underworld connections, and is sometimes called Deo. With her daughter Persephone she was central to the Eleusinian Mysteries, which promised initiates a happier afterlife. She was identified with the Roman goddess Ceres and often compared to Anatolian Cybele.",
+  "attribution": "Adapted from Wikipedia, \"Demeter\" · CC BY-SA 4.0",
+  "etymology": "The second element meter (μήτηρ) is \"mother\" (PIE *méh₂tēr). The first element is disputed: antiquity already offered \"earth\" (Doric Da ~ Gē) or a grain word (Cretan dea / Ionic zeia), yielding \"Earth-Mother\" or \"Grain-Mother\"; other proposals include an Illyrian/Messapic Damatura or a house-mother formation related to Potnia/Despoina. Linear A may show da-ma-te; Mycenaean si-to-po-ti-ni-ja (\"Potnia of the Grain\") is often linked to her Bronze Age predecessor.",
+  "symbols": [
+    "sheaf of wheat",
+    "torch",
+    "cornucopia",
+    "poppy",
+    "bread"
+  ],
+  "sacredAnimals": [
+    "pig",
+    "serpent",
+    "turtle-dove"
+  ],
+  "cultCenters": [
+    "Eleusis",
+    "Enna (Sicily)",
+    "Hermione",
+    "Thesmophoria sites (panhellenic)",
+    "Anthele (near Thermopylae)"
+  ],
+  "sections": [
+    {
+      "heading": "Etymology",
+      "paragraphs": [
+        "Demeter's name contains meter, \"mother,\" from Proto-Indo-European *méh₂tēr. The first element was already debated in antiquity: some read Doric Da (\"earth\") and took the name as \"Mother-Earth\"; others connected Deo/dea with Cretan words for cereal and preferred \"Grain-Mother.\" Modern proposals also include an Illyrian Damatura borrowing and a \"mother of the house\" formation related to Despoina.",
+        "Linear A may attest da-ma-te in religious contexts. In Linear B, si-to-po-ti-ni-ja, \"Potnia of the Grain,\" is widely regarded as referring to her Bronze Age predecessor or to one of her epithets."
+      ]
+    },
+    {
+      "heading": "Roles and iconography",
+      "paragraphs": [
+        "In epic and Hesiod she is above all the Grain-Mother who provides cereals for bread and blesses harvesters. Epithets such as Sito (\"of the grain\"), Chloe (\"green shoot\"), Haloas (\"of the threshing floor\"), and Thesmophoros (\"bringer of customs\" / law-giver) mark agricultural and legislative aspects. She also functions as an earth and underworld goddess, sharing with Persephone the double theme of death and fertility.",
+        "Art associates her with harvest imagery — flowers, fruit, grain, torch, and poppy. In Arcadia, \"Black Demeter\" (Melaina) could be shown with a horse's head. She is not generally portrayed with consorts, apart from rare scenes with Iasion."
+      ]
+    },
+    {
+      "heading": "Worship",
+      "paragraphs": [
+        "Major cult sites include Eleusis in Attica, Hermion, Megara, Corinth, Delos, Enna in Sicily, and many others across the Greek world. An early amphictyony centred on Demeter at Anthele near Thermopylae. Her two greatest festivals were mystery rites: the women-only Thesmophoria and the Eleusinian Mysteries, open to initiates of any gender or class.",
+        "Isocrates summarised her greatest gifts as agriculture — a civilised way of life — and the Mysteries, which gave initiates higher hopes for this life and the next. In the Roman period she was conflated with Ceres; from the later third century BC Greek-style rites of Ceres and Proserpina were installed at Rome, and she was also widely compared to Cybele in Asia Minor."
+      ]
+    },
+    {
+      "heading": "Eleusis and sacred law",
+      "paragraphs": [
+        "Demeter and Persephone were the central figures of the Eleusinian Mysteries, rooted in older agrarian cults and probably reaching back to the Mycenaean period. The tradition promised the initiated a happier afterlife and was intimately tied to the seasonal cycle of grain.",
+        "As Thesmophoros she was linked to sacred law and the female Thesmophoria festival celebrated throughout Greece. Though often described simply as goddess of the harvest, she thus also presided over custom, cereal agriculture's laws, and the cycle of life and death."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Demeter"
     }
-  ],
-  "symbols": [
-    "sheaf of wheat",
-    "torch",
-    "cornucopia"
-  ],
-  "sacredAnimals": [
-    "pig",
-    "serpent"
-  ],
-  "cultCenters": [
-    "Eleusis",
-    "Enna (Sicily)",
-    "Hermione"
-  ],
-  "etymology": "The -meter element is \"mother\"; the de- element was read as \"earth\" or \"grain\" already by the ancients."
+  ]
 }

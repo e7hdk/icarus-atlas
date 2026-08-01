@@ -4,6 +4,9 @@
   "greekName": "Antaios (Ἀνταῖος)",
   "romanName": "Antaeus",
   "type": "creature",
+  "kinds": [
+    "giant"
+  ],
   "domains": [
     "Libyan earth-giant",
     "invincible wrestler",

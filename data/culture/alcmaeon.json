@@ -1,6 +1,35 @@
 {
   "id": "alcmaeon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Erinyes Drive Alcmaeon from the Corpse of Eriphyle",
+      "artist": "Henry Fuseli",
+      "year": "1821",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Henry_Fuseli_-_Die_Erinnyen_vertreiben_Alkmaion_von_der_Leiche_seiner_von_ihm_get%C3%B6teten_Mutter_Eriphyle_-_2441_-_Kunsthaus_Z%C3%BCrich.jpg/960px-Henry_Fuseli_-_Die_Erinnyen_vertreiben_Alkmaion_von_der_Leiche_seiner_von_ihm_get%C3%B6teten_Mutter_Eriphyle_-_2441_-_Kunsthaus_Z%C3%BCrich.jpg",
+      "description": "Fuseli's 1821 canvas in the Kunsthaus Zürich seizes the aftermath of Alcmaeon's matricide: the Erinyes swarm as he flees the body of Eriphyle, whom he killed to avenge Amphiaraus and the bribe of Harmonia's necklace. Romantic terror turns the Epigoni hero into a second Orestes — pollution made visible."
+    },
+    {
+      "title": "Alcmaeon Killing His Mother Eriphyle",
+      "artist": "Unknown Roman wall-painter",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Alcmaeon_killing_his_mother_Eriphyle.jpg",
+      "description": "A Pompeian fresco from the House of Siricus (VII.1.25 / VII.1.47), now in the Naples Archaeological Museum: Alcmaeon strikes down Eriphyle, the mother who sold Amphiaraus into the war on Thebes. One of the few ancient paintings to show the matricide that sent the Epigoni leader wandering mad until purification."
+    },
+    {
+      "title": "Eriphyle Suckling Alcmaeon, with Amphiaraus",
+      "artist": "Unknown Attic red-figure painter",
+      "year": "c. 450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Classical_hydria_ARV_extra_-_Eriphyle_suckling_Alkmaion_%2802%29.jpg/960px-Classical_hydria_ARV_extra_-_Eriphyle_suckling_Alkmaion_%2802%29.jpg",
+      "description": "Attic red-figure hydria: Amphiaraus leans on his staff while Eriphyle suckles the infant Alcmaeon — the domestic calm before the necklace, the Seven, and the son's revenge. The vase, photographed in Berlin's Altes Museum collections, foreshadows the house that will make Alcmaeon both Epigoni captain and matricide."
+    },
+    {
+      "title": "The Erinyes beside the Body of Eriphyle",
+      "artist": "Henry Fuseli",
+      "year": "1821",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Les_Erinyes_aupr%C3%A8s_du_corps_d%27Eriphyle.jpg",
+      "description": "Fuseli's related treatment of the same crisis, long associated with the Louvre: the Furies crowd Eriphyle's corpse as Alcmaeon is driven into exile. With the Zürich canvas it fixed the Epigoni matricide as Romantic tragedy's second Orestes."
+    }
+  ],
   "popCulture": [
     {
       "title": "Alcmaeon in Psophis",
@@ -17,13 +46,6 @@
       "creator": "Euripides",
       "description": "Staged posthumously with the Bacchae — the lost play of Alcmaeon's children and Corinthian recognition.",
       "externalUrl": "https://en.wikipedia.org/wiki/Alcmaeon_in_Corinth"
-    },
-    {
-      "title": "Alcmaeon (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "Epigoni leader who killed Eriphyle for Harmonia's necklace and wandered mad until Achelous purified him.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Alcmaeon_(mythology)"
     }
   ]
 }

@@ -1,6 +1,35 @@
 {
   "id": "deiphobus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Prowess of Deiphobus",
+      "artist": "Unknown (French illuminator)",
+      "year": "c. 1330–1340",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Histoire_ancienne_jusqu%27a_Cesar_BL_MS_Royal_20_D_1_f_126r_Prowess_of_Deiphobus.jpg/960px-Histoire_ancienne_jusqu%27a_Cesar_BL_MS_Royal_20_D_1_f_126r_Prowess_of_Deiphobus.jpg",
+      "description": "Miniature from the Histoire ancienne jusqu'à César (British Library, Royal MS 20 D I, f. 126r). Deiphobus rides in armed prowess among the Trojan knights — Priam's son as a medieval chivalric hero before the sack that, in Virgil, leaves him mutilated in the underworld."
+    },
+    {
+      "title": "Cassandra Preventing Deiphobus from Killing Paris",
+      "artist": "Jean Cousin",
+      "year": "16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Cassandra_preventing_Deiphobe_from_killing_Paris_MET_DP805773.jpg/960px-Cassandra_preventing_Deiphobe_from_killing_Paris_MET_DP805773.jpg",
+      "description": "Drawing by Jean Cousin in the Metropolitan Museum of Art. Cassandra restrains Deiphobus as he raises a weapon against Paris — the brother who later inherits Helen after Paris' death, here still the rival who would have ended the war by ending the abductor."
+    },
+    {
+      "title": "Paris Attacked by Deiphobus",
+      "artist": "Unknown (Etruscan)",
+      "year": "c. 150–100 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Volterra%2C_urnetta_in_alabastro_con_paride_attaccato_da_deifobo%2C_con_afrodite%2C_ettore%2C_ecuba%2C_una_pedagogo%2C_priamo_e_un_giovane%2C_150-100_ac_ca.JPG/960px-Volterra%2C_urnetta_in_alabastro_con_paride_attaccato_da_deifobo%2C_con_afrodite%2C_ettore%2C_ecuba%2C_una_pedagogo%2C_priamo_e_un_giovane%2C_150-100_ac_ca.JPG",
+      "description": "Etruscan alabaster cinerary urn in the Museo Guarnacci, Volterra. Deiphobus assaults Paris while Aphrodite, Hector, Hecuba and Priam look on — the recognition scene in which the herdsman-prince is attacked by his own brother before the house of Troy claims him."
+    },
+    {
+      "title": "Recognition of Paris Attacked by Deiphobus",
+      "artist": "Unknown (Etruscan)",
+      "year": "3rd century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Etruschi%2C_urna_cineraria_con_defunta_e_riconoscimento_di_peride_aggredito_da_deifobo%2C_in_alabastro%2C_III_secolo_ac._02.jpg/960px-Etruschi%2C_urna_cineraria_con_defunta_e_riconoscimento_di_peride_aggredito_da_deifobo%2C_in_alabastro%2C_III_secolo_ac._02.jpg",
+      "description": "Etruscan alabaster funerary urn in the Museo archeologico nazionale di Chiusi. The relief shows Paris under attack by Deiphobus at the moment of recognition — the same fraternal assault the Volterra workshops carved for tombs across Etruria."
+    }
+  ],
   "popCulture": [
     {
       "title": "Deiphobus",

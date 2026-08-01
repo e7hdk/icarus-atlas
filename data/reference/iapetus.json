@@ -1,12 +1,39 @@
 {
   "id": "iapetus",
-  "summary": "In Greek mythology, Iapetus or Iapetos, also Japetus or Japetos, was one of the Titans, the son of Uranus (Sky) and Gaia (Earth) and father of Atlas, Prometheus, Epimetheus, and Menoetius. He was also called the father of Buphagus and Anchiale in other sources.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Iapetus (also Iapetos, Japetus) is one of the Titans, son of Uranus and Gaia, and father of Atlas, Prometheus, Epimetheus, and Menoetius. Homer places him in Tartarus with Cronus after the Titanomachy. Through his sons he was imagined as an ancestor of humankind. This entry is the Titan — not Saturn's moon Iapetus.",
+  "attribution": "Adapted from Wikipedia, \"Iapetus\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Iapetós (Ἰαπετός). Of uncertain origin; Beekes suggests Pre-Greek. The name has long been compared with biblical Japheth (Hebrew Yepheth), a similarity that early modern scholars used to fuse Greek and Genesis ethnographies — a reception history, not Hesiod's own claim.",
+  "symbols": [
+    "Tartarus (post-Titanomachy prison)",
+    "Ancestry of Prometheus and Atlas"
+  ],
+  "sections": [
+    {
+      "heading": "Family",
+      "paragraphs": [
+        "Iapetus is a brother of Cronus and the other Titans. His wife is usually an Oceanid: Clymene in Hesiod and Hyginus, Asia in Apollodorus. Their four famous sons are Atlas, Menoetius, Prometheus, and Epimetheus. Other sources also name him father of Buphagus and Anchiale.",
+        "Hesiod's Works and Days can address Prometheus simply as \"son of Iapetus\" without naming a mother. Aeschylus's Prometheus Bound instead makes Prometheus a son of Themis, still counting Atlas among his brothers. Horace likewise calls Prometheus the bold offspring of Iapetus."
+      ]
+    },
+    {
+      "heading": "Mythology and moral genealogy",
+      "paragraphs": [
+        "Homer's Iliad mentions Iapetus with Cronus in the depths of Tartarus — one of the few early narrative footholds for this otherwise genealogical Titan. He belongs to the generation defeated in the Titanomachy and imprisoned thereafter.",
+        "Greek moralizing tradition treated his four sons as ancestors who bequeathed humankind its worst traits: Menoetius's arrogance (hurled to Tartarus), Prometheus's cunning deceit (the eagle's torment), Epimetheus's foolishness (Pandora's jar), and Atlas's patient endurance (the sky on his shoulders). Iapetus himself remains mostly a name at the head of that pedigree."
+      ]
+    },
+    {
+      "heading": "Japheth and namesakes",
+      "paragraphs": [
+        "From Josephus onward, Japheth was cast as ancestor of European peoples; the resemblance of Iapetus / Japheth led some early modern and modern writers to identify or align the two figures. That comparative tradition is reception, not a classical Greek doctrine.",
+        "In modern astronomy one of Saturn's moons is named Iapetus after the Titan. This notice concerns the mythological father of Prometheus and Atlas, not the icy satellite."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Iapetus"
     }
-  ],
-  "etymology": "Of unknown origin; sometimes linked to iaptein, \"to wound, to hurl down\"."
+  ]
 }

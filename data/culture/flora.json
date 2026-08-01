@@ -1,0 +1,50 @@
+{
+  "id": "flora",
+  "artworks": [
+    {
+      "title": "Primavera",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1480",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/960px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg",
+      "description": "In Botticelli's allegory of spring in the Uffizi, Flora stands at the right in a flower-strewn gown, scattering blossoms as Zephyrus seizes Chloris behind her — Ovid's Fasti transformed into a Florentine garden of eternal May. The Roman flower-goddess becomes the painting's most recognizable figure of seasonal return."
+    },
+    {
+      "title": "Flora",
+      "artist": "Titian",
+      "year": "c. 1517",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tiziano_-_Flora_-_Google_Art_Project.jpg/960px-Tiziano_-_Flora_-_Google_Art_Project.jpg",
+      "description": "Titian's half-length goddess in the Uffizi holds roses and jasmine against loose white linen — Flora as Venetian beauty rather than calendar rite. The soft light and open bodice made this one of the Renaissance's most copied images of the flower goddess."
+    },
+    {
+      "title": "Flora",
+      "artist": "Rembrandt",
+      "year": "1634",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Harmensz_van_Rijn_Rembrandt_-_%D0%A4%D0%BB%D0%BE%D1%80%D0%B0_-_Google_Art_Project.jpg/960px-Harmensz_van_Rijn_Rembrandt_-_%D0%A4%D0%BB%D0%BE%D1%80%D0%B0_-_Google_Art_Project.jpg",
+      "description": "Rembrandt paints his bride Saskia as Flora: staff, flowers, and a soft Amsterdam light that turns the Roman goddess into a private wedding allegory. The Hermitage canvas remains one of the most intimate modern faces given to the Sabine flower deity."
+    },
+    {
+      "title": "The Triumph of Flora",
+      "artist": "Nicolas Poussin",
+      "year": "1627",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Le_Triomphe_de_Flore_-_Nicolas_Poussin_-_Louvre_-_INV_7298.jpg/960px-Le_Triomphe_de_Flore_-_Nicolas_Poussin_-_Louvre_-_INV_7298.jpg",
+      "description": "Poussin's Louvre triumph stages Flora in a chariot amid putti and blooming nymphs — a classical procession of spring drawn from Ovid and Roman festival memory. Order, dance, and flowers fuse the goddess with the season she governs."
+    },
+    {
+      "title": "The Return of Spring",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1886",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/William-Adolphe_Bouguereau_%281825-1905%29_-_Return_of_Spring_%281886%29.jpg",
+      "description": "Bouguereau's Joslyn Art Museum canvas surrounds a nude Flora with putti and blossoms — academic spring as the goddess's bodily return. The painting made Flora a late-Victorian emblem of seasonal rebirth for American audiences."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Fasti",
+      "year": "8",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Book 5 of Ovid's calendar poem gives Flora her voice: the Sabine flower-goddess who tells how she helped Juno conceive Mars, and why Rome keeps the Floralia.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Fasti_(poem)"
+    }
+  ]
+}

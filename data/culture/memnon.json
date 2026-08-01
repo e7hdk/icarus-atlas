@@ -1,6 +1,42 @@
 {
   "id": "memnon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Eos Lifting the Body of Memnon (Douris kylix)",
+      "artist": "Douris",
+      "year": "c. 490–480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Eos_Memnon_Louvre_G115.jpg/960px-Eos_Memnon_Louvre_G115.jpg",
+      "description": "The so-called Memnon Pietà: the tondo of this Attic red-figure cup signed by Douris (Louvre G 115) shows winged Eos gathering up the corpse of her son after Achilles has slain him. From Capua and now in the Louvre, the interior turns the Aethiopis into a mother's recovery of her fallen king — dawn bearing away Ethiopia's champion from the field of Troy."
+    },
+    {
+      "title": "Hydria with the Fight of Achilles and Memnon",
+      "artist": "Unknown Corinthian painter",
+      "year": "c. 575–550 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg/960px-Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg",
+      "description": "A Late Corinthian black-figure hydria in the Walters Art Museum (48.2230) stages the duel of Achilles and Memnon with their divine mothers looking on — Thetis and Eos — and chariots waiting at either side. Corinthian inscriptions name the figures; the water-jug freezes the clash of Troy's two greatest living heroes before either falls."
+    },
+    {
+      "title": "Achilles and Memnon between Thetis and Eos",
+      "artist": "Painter of Munich 1410",
+      "year": "c. 510 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Akhilleus_Memnon_Staatliche_Antikensammlungen_1410.jpg/960px-Akhilleus_Memnon_Staatliche_Antikensammlungen_1410.jpg",
+      "description": "Side A of an Attic black-figure amphora from Vulci, the name-vase of the Painter of Munich 1410 (Staatliche Antikensammlungen). Achilles and Memnon duel while Thetis and Eos stand beside their sons — the epic cycle's pairing of matched champions and immortal mothers reduced to a single panel of Archaic silhouette and spear."
+    },
+    {
+      "title": "Achilles Fighting Memnon",
+      "artist": "Unknown Greek painter",
+      "year": "6th–5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Achilles_fighting_against_Memnon_Leiden_Rijksmuseum_voor_Oudheden.jpg",
+      "description": "A Greek vase fragment in the Rijksmuseum van Oudheden, Leiden, shows Achilles locked in combat with Memnon, the Ethiopian king who came to Troy as Priam's ally. The duel is the hinge of the Aethiopis: two heroes of nearly equal renown, one destined to fall before Achilles' own death draws near."
+    },
+    {
+      "title": "Monteleone Chariot (Achilles and Memnon panel)",
+      "artist": "Unknown Etruscan bronze-worker",
+      "year": "c. 530–520 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bronze_chariot_inlaid_with_ivory_MET_DP137936.jpg/960px-Bronze_chariot_inlaid_with_ivory_MET_DP137936.jpg",
+      "description": "The parade chariot from Monteleone di Spoleto, now in the Metropolitan Museum of Art, carries on its front panel the duel of Achilles and Memnon in hammered bronze and ivory inlay. An Etruscan master of the late Archaic period chose Memnon's death-struggle with Peleus' son as the chariot's central myth — Ethiopia's king cast in metal for an Italian tomb."
+    }
+  ],
   "popCulture": [
     {
       "title": "Colossi of Memnon",
@@ -10,11 +46,20 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Colossi_of_Memnon"
     },
     {
-      "title": "Memnon (mythology)",
-      "year": "—",
+      "title": "Aethiopis",
+      "year": "c. 7th century BC",
       "kind": "other",
-      "description": "The Ethiopian king Achilles slew remains the Iliad's great eastern ally — Eos' morning tears as dew for her fallen son.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Memnon_(mythology)"
+      "creator": "Arctinus of Miletus (attrib.)",
+      "description": "The lost epic that brought Memnon and his Ethiopian host to Troy — Achilles' last great duel before the arrow at the Scaean Gates.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Aethiopis"
+    },
+    {
+      "title": "Posthomerica",
+      "year": "c. 3rd–4th century AD",
+      "kind": "other",
+      "creator": "Quintus of Smyrna",
+      "description": "Quintus's Book 2 is the fullest surviving Memnon narrative: the dawn-king's feast at Troy, Antilochus's death, and Achilles' spear through the Ethiopian's chest.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Posthomerica"
     }
   ]
 }

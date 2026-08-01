@@ -1,0 +1,17 @@
+{
+  "id": "pythian-games",
+  "name": "Pythian Games",
+  "greekName": "Πύθια",
+  "deities": ["apollo"],
+  "place": "delphi",
+  "panhellenic": true,
+  "games": { "cycleYears": 4 },
+  "atticDate": { "month": "metageitnion", "approximate": true },
+  "summary": "Delphi's crown games for Apollo — music and verse before the foot-races — held every four years in late summer to mark the god's victory over the serpent Python and his taking of the oracle.",
+  "testimonia": [
+    "Ovid, Metamorphoses 1.445–451 (Apollo founds the Pythian games after slaying Python)",
+    "Pausanias 10.7.2–5 (the Amphictyons reorganise the games; the laurel crown)",
+    "Pindar, Pythian odes (victors at Delphi)",
+    "Calendar note: no baked Delphic peak yet — Olympics alone use olympicPeak in the Attic reconstruction; Pythia still awaits its own cycle anchor (not faked with annual conventionalDates)"
+  ]
+}

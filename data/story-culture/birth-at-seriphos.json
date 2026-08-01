@@ -1,6 +1,42 @@
 {
   "id": "birth-at-seriphos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Danaë",
+      "artist": "Titian",
+      "year": "c. 1560",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Tizian_-_Danae_receiving_the_Golden_Rain_-_Prado.jpg",
+      "description": "Titian's Prado Danaë receives Zeus as a rain of gold while a maid gathers coins — the impregnation that fathers Perseus before Acrisius' chest and the Seriphos landfall."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Rembrandt",
+      "year": "1636",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Rembrandt_Harmensz._van_Rijn_026.jpg",
+      "description": "Rembrandt's Hermitage Danaë waits in shadowed light as Zeus' golden visitation arrives — the bronze-tower conception that opens the Seriphos birth saga."
+    },
+    {
+      "title": "Danaë",
+      "artist": "Artemisia Gentileschi",
+      "year": "c. 1612",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg",
+      "description": "Artemisia paints Danaë and a servant under the golden rain — Zeus' visit as charged exchange before the infant and the sea-chest."
+    },
+    {
+      "title": "Danaë and Perseus on Seriphos",
+      "artist": "Henry Fuseli",
+      "year": "1785–1790",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Henry_Fuseli_-_Dana%C3%AB_and_Perseus_on_Seriphos%28%5E%29_-_1958.65_-_Yale_University_Art_Gallery.jpg/960px-Henry_Fuseli_-_Dana%C3%AB_and_Perseus_on_Seriphos%28%5E%29_-_1958.65_-_Yale_University_Art_Gallery.jpg",
+      "description": "Fuseli's Yale canvas: the chest washes onto Seriphos — Danaë and the infant Perseus delivered from Acrisius' sea sentence to Dictys' shore."
+    },
+    {
+      "title": "Danaë Arriving at Seriphos with the Infant Perseus",
+      "artist": "Pompeian workshop (House of the Greek Epigrams)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Danae_cradling_baby_Perseus_arriving_in_Seriphos_on_west_wall_of_exedra_o_House_of_the_Greek_Epigrams_Pompeii.jpg",
+      "description": "Roman fresco: Danaë cradles baby Perseus as their drifting chest reaches Seriphos — the ancient landfall that begins the island childhood."
+    }
+  ],
   "films": [
     {
       "title": "Clash of the Titans",

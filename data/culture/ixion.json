@@ -1,6 +1,35 @@
 {
   "id": "ixion",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ixion",
+      "artist": "Jusepe de Ribera",
+      "year": "1632",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ixion_by_Jusepe_de_Ribera_%281632%29.jpg/960px-Ixion_by_Jusepe_de_Ribera_%281632%29.jpg",
+      "description": "Ribera's Prado canvas binds the Lapith king to the wheel that never stops: a tormentor turns the rim while Ixion's body twists in tenebrist shadow — one of the surviving Furias of eternal insolence against Zeus."
+    },
+    {
+      "title": "Ixion, King of the Lapiths, Deceived by Juno",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1615",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ixion%2C_roi_des_Lapithes%2C_tromp%C3%A9_par_Junon_qu%27il_voulait_s%C3%A9duire_-_Pierre_Paul_Rubens_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2121.jpg/960px-Ixion%2C_roi_des_Lapithes%2C_tromp%C3%A9_par_Junon_qu%27il_voulait_s%C3%A9duire_-_Pierre_Paul_Rubens_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2121.jpg",
+      "description": "Rubens stages the crime before the wheel: Ixion embraces the cloud-form of Juno while Zeus looks on — desire for the queen of heaven that will birth the Centaurs and earn the spinning punishment."
+    },
+    {
+      "title": "Ixion (from The Four Disgracers)",
+      "artist": "Hendrick Goltzius, after Cornelis Cornelisz. van Haarlem",
+      "year": "1588",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hendrik_Goltzius%2C_after_Cornelis_Cornelisz_van_Haarlem%2C_Ixion%2C_1588%2C_NGA_152778.jpg/960px-Hendrik_Goltzius%2C_after_Cornelis_Cornelisz_van_Haarlem%2C_Ixion%2C_1588%2C_NGA_152778.jpg",
+      "description": "Goltzius engraves Cornelis' foreshortened fall: Ixion plummets through air toward the wheel below — one of the Four Disgracers who insulted the gods and learned the measure of Tartarus."
+    },
+    {
+      "title": "The Torture of Ixion",
+      "artist": "Giovanni Battista Langetti",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Giovanni_Battista_Langetti_-_The_Torture_of_Ixion.jpg/960px-Giovanni_Battista_Langetti_-_The_Torture_of_Ixion.jpg",
+      "description": "Langetti's Venetian tenebrism locks the king to the fiery wheel — muscle and flame in the dark, the Lapith's eternal spin rendered as raw underworld theatre."
+    }
+  ],
   "popCulture": [
     {
       "title": "Ixion",
@@ -15,6 +44,13 @@
       "kind": "other",
       "description": "A large Kuiper-belt object took Ixion's name — the wheel-bound king carried into the outer solar system.",
       "externalUrl": "https://en.wikipedia.org/wiki/28978_Ixion"
+    },
+    {
+      "title": "Centaur",
+      "year": "—",
+      "kind": "other",
+      "description": "Greek tradition makes Ixion father of the Centaurs by the cloud-form Nephele — the wheel-bound Lapith as the genealogical source of the horse-men.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Centaur"
     }
   ]
 }

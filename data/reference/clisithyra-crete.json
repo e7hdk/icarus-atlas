@@ -1,0 +1,35 @@
+{
+  "id": "clisithyra-crete",
+  "summary": "In Greek mythology, Clisithyra (Cleisithyra; Ancient Greek Κλεισιθύρα) is the daughter of Meda, wife of Idomeneus of Crete. While Idomeneus is at Troy, the usurper Leucus kills Meda and her daughter in the temple — though she had been betrothed to him — and seizes the kingdom.",
+  "attribution": "Adapted from Wikipedia, \"Leucus\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Κλεισιθύρα (Kleisithúra); Wikipedia and Apollodorus use Cleisithyra / Clisithyra for Idomeneus' daughter.",
+  "symbols": [
+    "Daughter of Meda",
+    "Slain in the temple",
+    "Cretan nostos tragedy"
+  ],
+  "cultCenters": [
+    "Crete (Knossos / Idomeneus' kingdom)"
+  ],
+  "sections": [
+    {
+      "heading": "Killed with Meda by Leucus",
+      "paragraphs": [
+        "Apollodorus (Epitome 6.9–10) and Wikipedia's Leucus page tell how Leucus, foster son of Idomeneus and son of Talos, seduces Meda at Nauplius' instigation, then kills her and her daughter Cleisithyra (despite a betrothal) along with Meda's sons Iphiclus and Lycus (or Leucus), and drives Idomeneus out on his return from Troy.",
+        "Wikipedia's Meda (mythology) page repeats the same murder of mother and daughter. The atlas keeps clisithyra-crete as the child node beside meda-idomeneus."
+      ]
+    },
+    {
+      "heading": "Homonym care",
+      "paragraphs": [
+        "Clisithyra is this Cretan princess alone — not a Danaid or Trojan namesake. Leucus the killer and Idomeneus remain separate ids."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leucus"
+    }
+  ]
+}

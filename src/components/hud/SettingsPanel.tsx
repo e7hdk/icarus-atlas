@@ -19,7 +19,6 @@ const CONSENSUS: { id: LensId; name: string; note: string } = {
 export function SettingsPanel({ sources, starCount }: { sources: Source[]; starCount: number }) {
   const open = useGalaxyStore((state) => state.settingsOpen);
   const setOpen = useGalaxyStore((state) => state.setSettingsOpen);
-  const setSearchOpen = useGalaxyStore((state) => state.setSearchOpen);
   // On the Lands, phones fold the map-layer toggles in here — the bar has no
   // room for a page-specific button (sm+ keeps the ellipsis menu).
   const pathname = usePathname();
@@ -80,32 +79,6 @@ export function SettingsPanel({ sources, starCount }: { sources: Source[]; starC
           <span className="font-display text-sm tracking-[0.14em] text-nebula-soft drop-shadow-[0_0_10px_rgba(192,132,252,0.5)]">
             {starCount.toLocaleString()}
           </span>
-        </section>
-
-        <section className="border-b border-glass-border px-5 py-3 sm:hidden">
-          <button
-            type="button"
-            onClick={() => {
-              setOpen(false);
-              setSearchOpen(true);
-            }}
-            className="flex w-full items-center gap-3 rounded-xl border border-glass-border bg-white/[0.03] px-3.5 py-3 text-left transition-colors hover:border-nebula-soft/50"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              className="h-4 w-4 shrink-0 text-nebula-soft"
-              aria-hidden
-            >
-              <circle cx="11" cy="11" r="7" />
-              <path d="m20 20-3.5-3.5" strokeLinecap="round" />
-            </svg>
-            <span className="font-display text-[11px] tracking-[0.16em] text-aether">
-              SEARCH THE ATLAS
-            </span>
-          </button>
         </section>
 
         {onLands && (

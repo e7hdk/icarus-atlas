@@ -1,28 +1,54 @@
 {
   "id": "aphrodite",
-  "summary": "Aphrodite is an ancient Greek goddess associated with love, lust, beauty, pleasure, passion, procreation, and as her syncretised Roman counterpart Venus, desire, sex, fertility, prosperity, and victory. Aphrodite's major symbols include seashells, myrtles, roses, doves, sparrows, and swans. The cult of Aphrodite was largely derived from that of the Phoenician goddess Astarte, a cognate of the East Semitic goddess Ishtar, whose cult was based on the Sumerian cult of Inanna. Aphrodite's main cult centers were Cythera, Cyprus, Corinth, and Athens. Her main festival was the Aphrodisia, which was celebrated annually in midsummer. In Laconia, Aphrodite was worshipped as a warrior goddess. She was also the patron goddess of prostitutes, an association which led early scholars to propose the concept of sacred prostitution in Greco-Roman culture, an idea which is now generally seen as erroneous.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "Aphrodite is an ancient Greek goddess of love, lust, beauty, pleasure, passion, and procreation, later syncretised with the Roman Venus. Major symbols include the seashell, myrtle, rose, dove, sparrow, and swan. Her chief cult centres were Cythera, Cyprus (especially Paphos), Corinth, and Athens; her principal festival was the Aphrodisia. In Laconia she was also worshipped as a warrior goddess (Areia). Early scholars linked her with sacred prostitution; that reconstruction is now generally rejected.",
+  "attribution": "Adapted from Wikipedia, \"Aphrodite\" · CC BY-SA 4.0",
+  "etymology": "Hesiod derives Aphrodite from aphrós (\"sea-foam\"), a folk etymology most modern scholars reject. The name is widely taken as Near Eastern in origin (compare Astarte / Ishtar), though its exact Semitic or Cypriot derivation remains debated.",
+  "symbols": [
+    "rose",
+    "myrtle",
+    "seashell",
+    "mirror",
+    "girdle"
+  ],
+  "sacredAnimals": [
+    "dove",
+    "sparrow",
+    "swan",
+    "dolphin"
+  ],
+  "cultCenters": [
+    "Paphos (Cyprus)",
+    "Cythera",
+    "Corinth",
+    "Athens"
+  ],
+  "sections": [
+    {
+      "heading": "Origins and birth",
+      "paragraphs": [
+        "Greek tradition preserves two main genealogies. In Homer she is daughter of Zeus and Dione; in Hesiod's Theogony she rises from the sea-foam around the severed genitals of Uranus, cast into the sea by Cronus, and comes ashore by Cythera and Cyprus. Plato's Symposium later distinguishes a heavenly Aphrodite Urania from a common Aphrodite Pandemos.",
+        "Her cult shows clear Near Eastern affinities with Astarte and Ishtar/Inanna. Pausanias traces her worship from the Assyrians to Paphos and Cythera. Epithets such as Cypris, Cytherea, and Ourania mark local birth and heavenly aspects."
+      ]
+    },
+    {
+      "heading": "Myth and functions",
+      "paragraphs": [
+        "In myth she is married to Hephaestus yet often unfaithful; the Odyssey tells how Hephaestus traps her with Ares in a net before the laughing gods. She bears or fosters Adonis, loves Anchises and becomes mother of Aeneas, and with Hera and Athena contests the judgment of Paris that helps ignite the Trojan War.",
+        "Cult and literature stress persuasion, desire, and generation (Pandemos, Peitho, Genetyllis), but also darker titles such as Androphonos. Spartan and Cytherean xoana showed her armed, preserving an older warlike face of the goddess."
+      ]
+    },
+    {
+      "heading": "Worship",
+      "paragraphs": [
+        "The Aphrodisia was celebrated widely, notably at Athens and Corinth. At Athens the fourth of Hekatombaion honoured her role in Attic unity; doves were sacrificed and cult images of Aphrodite Pandemos and Peitho ritually bathed. The fourth day of each month was sacred to her.",
+        "Corinth's temple on the Acrocorinth and Cypriot Paphos were panhellenic destinations. Her Roman identification with Venus carried the cult into Latin religion, planetary naming, and later Western art as an emblem of female beauty."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Aphrodite"
     }
-  ],
-  "symbols": [
-    "rose",
-    "myrtle",
-    "seashell",
-    "mirror"
-  ],
-  "sacredAnimals": [
-    "dove",
-    "sparrow",
-    "swan"
-  ],
-  "cultCenters": [
-    "Paphos (Cyprus)",
-    "Cythera",
-    "Corinth"
-  ],
-  "etymology": "Linked in antiquity to aphros, sea-foam, after her birth tale; modern scholarship considers the origin uncertain, possibly Near Eastern."
+  ]
 }

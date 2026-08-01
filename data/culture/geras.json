@@ -1,4 +1,19 @@
 {
   "id": "geras",
-  "artworks": []
+  "artworks": [
+    {
+      "title": "Heracles and Geras (Louvre G234)",
+      "artist": "Geras Painter",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pelike_Geras_Louvre_G234_full.jpg/960px-Pelike_Geras_Louvre_G234_full.jpg",
+      "description": "Attic red-figure pelike in the Musée du Louvre (G234), the name-vase of the Geras Painter: Heracles, in lion-skin with club raised, seizes the shrunken personification of Old Age by the head while Geras leans on a staff and begs. No literary myth of this encounter survives — the scene is known only from a handful of Athenian vases — yet the painter labels the wizened nude ΓΕΡΑΣ and makes the contrast unmistakable: the ageless hero confronting the one foe no labour can finally defeat. Side B shows Poseidon."
+    },
+    {
+      "title": "Heracles and Geras (Villa Giulia 48238)",
+      "artist": "Matsch Painter",
+      "year": "c. 500–450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Matsch_Painter_-_ARV_284_1_-_Herakles_and_Geras_-_Dionysos_and_maenad_-_Roma_MNEVG_48238_-_05.jpg/960px-Matsch_Painter_-_ARV_284_1_-_Herakles_and_Geras_-_Dionysos_and_maenad_-_Roma_MNEVG_48238_-_05.jpg",
+      "description": "Attic red-figure pelike in the Museo Nazionale Etrusco di Villa Giulia, Rome (inv. 48238), attributed to the Matsch Painter: Heracles, club planted and lion-skin over his shoulders, converses with Geras, who stands as an emaciated, bald old man with crooked back and walking stick. Where the Louvre pelike stages a beating, this vase freezes the quieter moment before or beside the struggle — Old Age as a named daemon Heracles can face and talk to. The reverse shows Dionysos with a maenad."
+    }
+  ]
 }

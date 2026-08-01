@@ -1,0 +1,49 @@
+{
+  "id": "cychreus",
+  "name": "Cychreus",
+  "greekName": "Kychreus (Κυχρεύς)",
+  "romanName": "Cychreus",
+  "type": "hero",
+  "cluster": "mortal-arm",
+  "domains": [
+    "the kingship of Salamis",
+    "the island serpent",
+    "the hero of the Salaminian fleet"
+  ],
+  "summary": [
+    {
+      "text": "Son of Poseidon and the nymph Salamis, daughter of Asopus; first king of the island he named for his mother, won by slaying the snake that ravaged it.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.12.7; Description of Greece 1.35.2"
+    },
+    {
+      "text": "Dying childless, he bequeathed the kingdom to Telamon; later Athenians kept a sanctuary of Cychreus on Salamis, and an oracle named him the serpent that appeared in the fleet at the Persian sea-fight.",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.12.7; Description of Greece 1.36.1"
+    }
+  ],
+  "story": [
+    {
+      "text": "Apollodorus tells that Telamon, exiled from Aegina for the death of Phocus, came to Salamis to the court of Cychreus, son of Poseidon and of Salamis the daughter of Asopus. Cychreus had become king of the island by killing a snake that ravaged it, and, dying childless, he left the kingdom to Telamon.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.12.6–3.12.7"
+    },
+    {
+      "text": "Pausanias records that the island opposite Eleusis took its name from the nymph: the first to call it Salamis was Cychreus, who named it after his mother Salamis, daughter of Asopus, and afterwards it was colonized by the Aeginetans with Telamon.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.35.2"
+    },
+    {
+      "text": "On Salamis Pausanias saw a sanctuary of Cychreus. When the Athenians fought the Persians at sea, a serpent is said to have appeared among the ships, and the god in an oracle told them that it was Cychreus the hero.",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 1.36.1"
+    }
+  ],
+  "residences": [
+    {
+      "city": "salamis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.12.7; Description of Greece 1.35.2, 1.36.1"
+    }
+  ]
+}

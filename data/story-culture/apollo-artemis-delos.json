@@ -1,6 +1,35 @@
 {
   "id": "apollo-artemis-delos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Latona Giving Birth to Apollo and Diana on the Island of Delos",
+      "artist": "Diana Scultori after Giulio Romano",
+      "year": "16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Diana_Scultori_after_Giulio_Romano%2C_Latona_Giving_Birth_to_Apollo_and_Diana_on_the_Island_of_Delos%2C_NGA_7358.jpg/960px-Diana_Scultori_after_Giulio_Romano%2C_Latona_Giving_Birth_to_Apollo_and_Diana_on_the_Island_of_Delos%2C_NGA_7358.jpg",
+      "description": "NGA engraving after Giulio Romano: Leto in labour on Delos as the twin archers arrive — the Homeric Hymn's birth fixed in print."
+    },
+    {
+      "title": "Latona with Diana and Apollo on Delos",
+      "artist": "Unknown (Dutch engraving)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Latona_met_Diana_en_Apollo_op_Delos%2C_RP-P-OB-74.726.jpg/960px-Latona_met_Diana_en_Apollo_op_Delos%2C_RP-P-OB-74.726.jpg",
+      "description": "Rijksmuseum print: Latona with the newborn twins on the sacred isle — Delos as the only land that would receive the birth."
+    },
+    {
+      "title": "Leto after the Birth of Apollo and Diana",
+      "artist": "Unknown (Dutch engraving)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Leto_na_de_geboorte_van_Apollo_en_Diana%2C_RP-P-OB-37.373.jpg/960px-Leto_na_de_geboorte_van_Apollo_en_Diana%2C_RP-P-OB-37.373.jpg",
+      "description": "Leto with her children after the Delian labour — the Titaness who wandered until the floating isle stood still."
+    },
+    {
+      "title": "Latona with Her Children Apollo and Diana",
+      "artist": "Unknown (French, after antique models)",
+      "year": "18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Latona_with_Her_Children_Apollo_and_Diana_LACMA_M.78.86.jpg/960px-Latona_with_Her_Children_Apollo_and_Diana_LACMA_M.78.86.jpg",
+      "description": "LACMA marble group of the protective mother with the infant twins — Delos' birth translated into Enlightenment collectible form."
+    }
+  ],
   "popCulture": [
     {
       "title": "Delos",

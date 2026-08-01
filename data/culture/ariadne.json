@@ -37,6 +37,23 @@
       "description": "Gros returns to the Naxos meeting in the grand manner of French Romantic history painting: Bacchus' train surges toward the seated Ariadne as the island shore becomes a theatre of divine rescue. The canvas is held by the Phoenix Art Museum."
     }
   ],
+  "films": [
+    {
+      "title": "Minotaur, the Wild Beast of Crete",
+      "year": "1960",
+      "medium": "film",
+      "director": "Silvio Amadio",
+      "description": "The peplum keeps Ariadne as the thread-giver: Minos' daughter who arms Theseus for the labyrinth and pays for it with exile.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
+    },
+    {
+      "title": "Atlantis",
+      "year": "2013–2015",
+      "medium": "tv",
+      "description": "Aiysha Hart's Ariadne is princess then queen of BBC Atlantis — the thread-heroine rewritten as heir, lover and Pasiphae's chief obstacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Atlantis_(TV_series)"
+    }
+  ],
   "music": [
     {
       "title": "L'Arianna",
@@ -61,16 +78,48 @@
       "composer": "Albert Roussel",
       "description": "Roussel's ballet for the Paris Opéra dances the Naxos rescue — Ariadne found by Bacchus after Theseus' sail has gone.",
       "externalUrl": "https://en.wikipedia.org/wiki/Bacchus_and_Ariadne_(ballet)"
+    },
+    {
+      "title": "L'Abandon d'Ariane",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Darius Milhaud",
+      "description": "Milhaud's one-act opéra-minute compresses the Naxos desertion — Ariadne left on the shore in a few taut minutes of myth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Abandon_d%27Ariane"
+    },
+    {
+      "title": "The Minotaur",
+      "year": "2008",
+      "kind": "opera",
+      "composer": "Harrison Birtwistle",
+      "description": "Birtwistle's Covent Garden retelling keeps Ariadne as strategist and survivor — the sister who steers Theseus toward the bull-man and her own escape.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Minotaur_(opera)"
     }
   ],
-  "films": [
+  "popCulture": [
     {
-      "title": "Minotaur, the Wild Beast of Crete",
-      "year": "1960",
-      "medium": "film",
-      "director": "Silvio Amadio",
-      "description": "The peplum keeps Ariadne as the thread-giver: Minos' daughter who arms Theseus for the labyrinth and pays for it with exile.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
+      "title": "Catullus 64",
+      "year": "c. 60s BC",
+      "kind": "other",
+      "creator": "Catullus",
+      "description": "Catullus' little epic freezes Ariadne on Naxos after the thread: the abandoned princess whose lament became the Latin template for desertion.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Catullus_64"
+    },
+    {
+      "title": "The King Must Die",
+      "year": "1958",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's Crete gives Ariadne the thread and the choice — Minos' daughter who arms Theseus for the labyrinth and follows him from the bull-court.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_King_Must_Die"
+    },
+    {
+      "title": "The Bull from the Sea",
+      "year": "1962",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's sequel remembers Ariadne as the cost of Theseus' first victory — the Naxos abandonment that shadows the king who once held her thread.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bull_from_the_Sea"
     }
   ]
 }

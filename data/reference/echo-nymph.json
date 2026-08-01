@@ -1,17 +1,33 @@
 {
   "id": "echo-nymph",
-  "summary": "Echo is a mountain nymph in Greek mythology who, punished by Juno, could only repeat the last words of others. She loved Narcissus and wasted away until only her voice remained.",
+  "summary": "In Greek mythology, Echo was an Oread who resided on Mount Cithaeron. When Zeus consorted with nymphs, Echo delayed Hera with charming chatter so the others could escape; Hera punished her by taking away free speech, leaving her able only to repeat the last words spoken to her. She later loved Narcissus, could not declare herself, and wasted away until only her voice remained among the mountains.",
   "attribution": "Adapted from Wikipedia, \"Echo (mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Ēkhō (Ἠχώ), \"echo,\" from ēchos (ἦχος), \"sound.\"",
+  "symbols": [
+    "Repeating voice",
+    "Mountain cliffs and caves"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Classical depiction",
       "paragraphs": [
-        "Ovid tells how Juno stripped Echo of free speech because the nymph delayed her while Jove's mistresses escaped (Metamorphoses 3.347–370).",
-        "Echo loved Narcissus, answered his call, was scorned, and faded to repeating voice alone (3.371–510)."
+        "Ovid's Metamorphoses gives the most influential account. Juno (Hera), jealous of Jupiter's affairs, was repeatedly delayed by Echo's lengthy conversations while the god's lovers fled. When Juno discovered the ruse, she cursed the once-loquacious nymph: thenceforth Echo could only repeat the most recently spoken words of another.",
+        "After the curse Echo saw Narcissus, fell in love, and could answer only by echoing his speech. He rejected her; she wasted away in longing until her bones became stone and nothing remained but her voice, still answering from hills and caves when others call.",
+        "Longus's romance Daphnis and Chloe preserves a different aetiology: Echo, raised among the Nymphs, is torn apart by shepherds at Pan's urging after she refuses him; Earth hides her limbs and her voice lives on as echo. Homeric and Orphic hymns to Pan, Photius, and Nonnus likewise link Echo with Pan's unrequited pursuit across the mountains."
+      ]
+    },
+    {
+      "heading": "Later reception",
+      "paragraphs": [
+        "Medieval European writers often transformed Echo from a nymph into a mortal noblewoman, adapting Ovid for courtly love in works such as the Norman-French Lay of Narcissus and the Romance of the Rose.",
+        "Her name supplies modern terms including echolalia and echopraxia. Literary criticism treats Ovid's Echo as a figure of revelation through repetition, and early modern poetry developed the \"echo dialogue,\" in which repeated syllables create ironic second meanings."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Echo_(mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Echo_(mythology)"
+    }
   ]
 }

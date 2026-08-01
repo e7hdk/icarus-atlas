@@ -1,18 +1,14 @@
 {
   "id": "zeus",
-  "summary": "Zeus is the supreme deity of the Greek pantheon. He is a sky and thunder god in ancient Greek religion and mythology, who rules as king of the gods on Mount Olympus.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Zeus"
-    }
-  ],
+  "summary": "Zeus is the supreme deity of the Greek pantheon: a sky and thunder god who rules as king of the gods on Mount Olympus. He is the child of Cronus and Rhea, usually married to Hera, and was equated with many foreign weather gods; Pausanias observed that \"That Zeus is king in heaven is a saying common to all men.\" Among his symbols are the thunderbolt and the eagle. In ancient Rome he was identified with Jupiter.",
+  "attribution": "Adapted from Wikipedia, \"Zeus\" · CC BY-SA 4.0",
+  "etymology": "The nominative Ζεύς (Zeús) continues Proto-Indo-European *Dyēus, the daytime sky god also called *Dyeus ph₂tēr (\"Sky Father\"), cognate with Vedic Dyaus/Dyaus Pita and Latin Iuppiter. Mycenaean Linear B already attests di-we (dative) and di-wo (genitive). Zeus is the only Olympian whose name has such a transparent Indo-European etymology; Plato's folk etymology linking Zeus/Zen/Dia to \"life\" is not supported by modern scholarship.",
   "symbols": [
     "thunderbolt",
     "eagle",
     "oak",
-    "royal scepter"
+    "royal scepter",
+    "aegis"
   ],
   "sacredAnimals": [
     "eagle",
@@ -21,7 +17,43 @@
   "cultCenters": [
     "Olympia",
     "Dodona",
-    "Nemea"
+    "Nemea",
+    "Mount Lykaion",
+    "Cretan caves (Ida, Dicte)"
   ],
-  "etymology": "From Proto-Indo-European *Dyeus, the bright daytime sky — cognate with Latin Iuppiter and Sanskrit Dyaus."
+  "sections": [
+    {
+      "heading": "Name and etymology",
+      "paragraphs": [
+        "The god's name in the nominative is Ζεύς (Zeús), with the familiar oblique stem in Διός (Diós) and related forms. The earliest attested forms are Mycenaean Greek di-we (dative) and di-wo (genitive), written in Linear B.",
+        "Zeus continues *Dyēus, the Proto-Indo-European god of the daytime sky (*Dyeus ph₂tēr, \"Sky Father\"), cognate with Vedic Dyaus and Latin Iuppiter. He is the only deity in the Olympic pantheon whose name has such a transparent Indo-European etymology. Ancient folk etymologies (for example Plato in the Cratylus) that connect Zeus or Zen with \"life\" are not accepted by modern scholarship."
+      ]
+    },
+    {
+      "heading": "Roles and epithets",
+      "paragraphs": [
+        "Zeus presided over the Olympian pantheon as sky father and chief of the gods. Homeric epic styles him the \"cloud-gatherer\" (Νεφεληγερέτα), god of sky and thunder, while also treating him as the archetypal Greek deity who assigns roles to the other gods.",
+        "Local cults often differed sharply except in name: some conceived Zeus as a chthonic earth-god rather than a sky god. Epithets marked aspects of his authority, among them Zeus Olympios (patron of the games at Olympia), Zeus Xenios (protector of hospitality), Zeus Horkios (keeper of oaths), Zeus Agoraeus (marketplace justice), and Zeus Eleutherios (\"freedom-giver\")."
+      ]
+    },
+    {
+      "heading": "Cult",
+      "paragraphs": [
+        "The major panhellenic centre was Olympia, where a quadrennial festival featured the Olympic Games and an ash altar built up from centuries of sacrifices. Outside the great inter-polis sanctuaries, worship varied widely from Asia Minor to Sicily, though shared practices included the sacrifice of a white animal on a raised altar.",
+        "Crete retained youthful, Minoan-tinged cults of Zeus Velchanos (\"boy-Zeus\") at caves such as Ida and Dicte. In Arcadia, Zeus Lykaios was honoured on Mount Lykaion. Oracular cults included Dodona in Epirus, centred on a sacred oak and consort Dione, and the oracle of Zeus Ammon at Siwa in Egypt, already known to Greeks in the archaic period and later associated with Alexander."
+      ]
+    },
+    {
+      "heading": "Identifications",
+      "paragraphs": [
+        "In Rome Zeus was identified with Jupiter. Through interpretatio graeca he was associated with deities such as Egyptian Ammon, Etruscan Tinia, and, with Dionysus, the Phrygian Sabazios (Roman Sabazius). Hellenistic and later sources sometimes link him with Helios or with syncretic solar figures such as Serapis."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeus"
+    }
+  ]
 }

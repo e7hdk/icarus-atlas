@@ -3,6 +3,9 @@
   "name": "Orthrus",
   "greekName": "Orthros (Ὄρθρος)",
   "type": "creature",
+  "kinds": [
+    "hound"
+  ],
   "cluster": "chthonic",
   "domains": [
     "watchdog of Geryon",

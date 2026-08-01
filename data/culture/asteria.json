@@ -1,6 +1,35 @@
 {
   "id": "asteria",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jupiter and Asteria",
+      "artist": "Marco Liberi",
+      "year": "c. 1670–1680",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Marco_Liberi_-_Jupiter_and_Asteria_-_WGA12975.jpg/960px-Marco_Liberi_-_Jupiter_and_Asteria_-_WGA12975.jpg",
+      "description": "The Venetian painter Marco Liberi stages Zeus's pursuit of the Titaness Asteria, sister of Leto: the god descends upon the starry nymph who, in Apollodorus and later mythographers, fled his advances and became the floating island later called Delos. Held in the Museum of Fine Arts, Budapest, the canvas is among the rare Baroque treatments that name Asteria herself rather than only her island aftermath."
+    },
+    {
+      "title": "Jupiter and Asteria (Jupiter as Eagle with the Nymph Asterié)",
+      "artist": "Bernard Picart",
+      "year": "1707",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jupiter_en_Asteria_Jupiter_en_Aigle_avec_la_Nimphe_Asteri%C3%A9_%28titel_op_object%29%2C_RP-P-OB-51.261.jpg/960px-Jupiter_en_Asteria_Jupiter_en_Aigle_avec_la_Nimphe_Asteri%C3%A9_%28titel_op_object%29%2C_RP-P-OB-51.261.jpg",
+      "description": "Picart's Paris etching-engraving, now in the Rijksmuseum (RP-P-OB-51.261), shows Jupiter in eagle form wrestling with Asteria before her metamorphosis. The print crystallizes the same flight-and-capture tradition that makes the Titaness the mythic seed of Delos — Zeus as raptor, Asteria still in human shape."
+    },
+    {
+      "title": "Asteria Fighting Giants (Pergamon Altar)",
+      "artist": "Unknown (Pergamon Altar sculptors)",
+      "year": "c. 180–160 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Altar_P%C3%A9rgamo_Asteria_01.JPG/960px-Altar_P%C3%A9rgamo_Asteria_01.JPG",
+      "description": "On the Great Altar of Pergamon in Berlin, the Titaness Asteria appears among the gods of the Gigantomachy frieze, locked in combat with Giants. The Hellenistic relief gives Coeus and Phoebe's daughter a martial identity beside her better-known sister Leto — an ancient image of Asteria as celestial power, not only as the future island of Delos."
+    },
+    {
+      "title": "Asteria in the Gigantomachy (Pergamon Altar, detail)",
+      "artist": "Unknown (Pergamon Altar sculptors)",
+      "year": "c. 180–160 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Altar_P%C3%A9rgamo_Asteria_02.JPG/960px-Altar_P%C3%A9rgamo_Asteria_02.JPG",
+      "description": "A second view of the Asteria group on the Pergamon Altar: drapery and limbs surge with the altar's signature baroque motion as the Titaness presses the fight. For a figure whose later fame rests on Delos and Hecate, these Berlin slabs are the principal monumental witness to her place in the cosmic war."
+    }
+  ],
   "popCulture": [
     {
       "title": "Delos",
@@ -8,13 +37,6 @@
       "kind": "other",
       "description": "Tradition makes Asteria the floating island that became Delos — the Titaness who fled Zeus and gave Leto a place to bear Apollo and Artemis.",
       "externalUrl": "https://en.wikipedia.org/wiki/Delos"
-    },
-    {
-      "title": "Asteria (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "Asteria remains the starry sister of Leto — mother of Hecate in some tellings, and the mythic seed of the holy island.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Asteria_(mythology)"
     }
   ]
 }

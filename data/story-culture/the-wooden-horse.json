@@ -1,6 +1,35 @@
 {
   "id": "the-wooden-horse",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Building of the Trojan Horse",
+      "artist": "Giovanni Domenico Tiepolo",
+      "year": "c. 1760",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GD_Tiepolo_Construction_du_cheval_de_Troie.jpg/960px-GD_Tiepolo_Construction_du_cheval_de_Troie.jpg",
+      "description": "Tiepolo's National Gallery canvas: Epeius' carpenters raise Athena's stratagem outside the walls — the horse still hollow and unfinished."
+    },
+    {
+      "title": "The Procession of the Trojan Horse into Troy",
+      "artist": "Giovanni Domenico Tiepolo",
+      "year": "c. 1760",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Giovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg/960px-Giovanni_Domenico_Tiepolo_-_The_Procession_of_the_Trojan_Horse_in_Troy_-_WGA22382.jpg",
+      "description": "The procession into Troy — Tiepolo's companion scene of the gift the city pulls through its own gates."
+    },
+    {
+      "title": "Child Murder (Mykonos Vase, detail)",
+      "artist": "Unknown (Orientalizing potter)",
+      "year": "c. 670 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Child_murder_AM_Mykonos_2240.jpg/960px-Child_murder_AM_Mykonos_2240.jpg",
+      "description": "The Mykonos pithos — among the earliest images of the Trojan Horse, and of the massacre that follows when the belly opens."
+    },
+    {
+      "title": "The Greek Sinon before Priam",
+      "artist": "Pieter Goddyn",
+      "year": "1782",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pieter_Goddyn_-_The_Greek_Sinon_before_Priam.jpg/960px-Pieter_Goddyn_-_The_Greek_Sinon_before_Priam.jpg",
+      "description": "Sinon before Priam: the captive whose false tale persuades Troy to accept the horse — the verbal half of the stratagem."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

@@ -192,8 +192,35 @@ the host calls `Date.now()` directly.
   ≤ 1 draw call; visible (dimmed) while another star is selected; respects
   `prefers-reduced-motion`. Hard rule 4 applies: 60 fps or it ships without
   the pulse.
-- **Week constellation** (M12.3): faint polyline through the week's cast in
-  day order, drawn with the relation-line approach at low opacity.
+- **The Greek sky** (M12.3, rebuilt 2026-07): the galaxy hangs inside a real
+  celestial sphere. `data/sky/constellations.json` (baked by `pnpm build-sky`)
+  holds Ptolemy's 48 plus the Pleiades — 554 stars at catalogue RA/Dec, drawn
+  with the classical figures. Sources: Yale Bright Star Catalogue (public
+  domain) for positions, doinab/constellation-lines IAU sky culture (CC BY-SA)
+  for the figures; the catalogue is a derivative and carries its attribution
+  and licence in the file. Argo Navis is stitched back from the four modern
+  constellations the IAU broke it into, as Ptolemy had it.
+
+  **What the sources actually say** — the correction that shapes everything:
+  the ancients record catasterisms of WHOLE figures (Callisto became the Bear,
+  Hyginus 177), never a character per star; the familiar star names are Arabic
+  and astronomical. So the sky carries two distinct sourced claims and invents
+  nothing between them (hard rule 2):
+    · `catasterism` — the constellation IS this person or thing.
+    · `namedIn` — a saga's own telling looks up and names it. Odysseus steers
+      by the Bear (Od. 5.272–277); he is not the Bear.
+  The single place the sources go star by star is the Pleiades, where
+  Apollodorus 3.10.1 names all seven sisters — so there, and only there, each
+  star carries a `character`. `validate-data` checks both claims resolve, that
+  no story is claimed twice, and that no star is listed twice.
+
+  **In the sky**: everything is drawn always, faint and in one constant
+  starlight, sized by three magnitude buckets. Hovering a figure names it;
+  clicking flies out to it and opens its card (what it is, whose catasterism,
+  which myths name it, star-by-star cast where attested, all testimonia). From
+  the card or its named stars you go on to a character. The week's figure —
+  the one its saga names, or the one it IS — burns brighter and carries the
+  Ephemeris door. Weeks with no attested figure light none.
 - **Day laurel**: visiting `/character/<id>` on the star's own day shows a
   quiet `★ Star of the day` marker by the breadcrumb strip — the same codex
   page, crowned for its day.

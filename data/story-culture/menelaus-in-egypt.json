@@ -1,6 +1,28 @@
 {
   "id": "menelaus-in-egypt",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Helen Offering Menelaus the Potion of Queen Polydamna",
+      "artist": "Simon Vouet",
+      "year": "c. 1640",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Vouet_Simon_H%C3%A9l%C3%A8ne_offrant_%C3%A0_M%C3%A9n%C3%A9las_la_potion_de_la_reine_Polydamne.jpg/960px-Vouet_Simon_H%C3%A9l%C3%A8ne_offrant_%C3%A0_M%C3%A9n%C3%A9las_la_potion_de_la_reine_Polydamne.jpg",
+      "description": "Vouet's Egyptian gift — Helen pours Polydamna's nepenthe for Menelaus, Odyssey IV's drug of forgetfulness from the Nile court."
+    },
+    {
+      "title": "Menelaus wrestling Proteus",
+      "artist": "Giulio Bonasone",
+      "year": "1574",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Menelaus_Proteus_engraving_achillis_1574.jpg",
+      "description": "Bonasone's emblem — Menelaus grappling the Old Man of the Sea on Pharos until every shape yields the truth of the returns."
+    },
+    {
+      "title": "Menelaus and Companions Battling Proteus",
+      "artist": "Unknown (Medieval game piece)",
+      "year": "c. 12th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Game_Piece_with_Menelaus_and_Companions_Battling_Proteus_MET_DP228476.jpg/960px-Game_Piece_with_Menelaus_and_Companions_Battling_Proteus_MET_DP228476.jpg",
+      "description": "MET ivory game piece — Menelaus and his men holding Proteus through his changes, the Pharos ordeal carved for a medieval board."
+    }
+  ],
   "films": [
     {
       "title": "The Odyssey",

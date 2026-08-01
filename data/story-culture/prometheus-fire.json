@@ -1,13 +1,51 @@
 {
   "id": "prometheus-fire",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Prometheus Brings Fire to Mankind",
+      "artist": "Heinrich Füger",
+      "year": "1817",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg/960px-Heinrich_fueger_1817_prometheus_brings_fire_to_mankindFXD.jpg",
+      "description": "Füger's torchbearer — the Titan carrying stolen fire down to humankind, the gift that names the myth and costs him the rock."
+    },
+    {
+      "title": "Prometheus Bound",
+      "artist": "Peter Paul Rubens",
+      "year": "1611–1618",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Peter_Paul_Rubens%2C_Flemish_%28active_Italy%2C_Antwerp%2C_and_England%29_-_Prometheus_Bound_-_Google_Art_Project.jpg/960px-Peter_Paul_Rubens%2C_Flemish_%28active_Italy%2C_Antwerp%2C_and_England%29_-_Prometheus_Bound_-_Google_Art_Project.jpg",
+      "description": "Rubens' Philadelphia Bound — eagle and chains after the theft, Snyders' bird tearing the liver Hesiod and Aeschylus fixed as the price of fire."
+    },
+    {
+      "title": "Prometheus",
+      "artist": "Paul Manship",
+      "year": "1934",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rockefeller_Center_Prometheus.jpg/960px-Rockefeller_Center_Prometheus.jpg",
+      "description": "Gilded bronze sculpture by Paul Manship overlooking the sunken plaza of Rockefeller Center in New York. Prometheus glides through a ring bearing the signs of the zodiac as he carries the stolen fire down to mankind, making him one of the most recognizable public artworks in America."
+    }
+  ],
   "popCulture": [
+    {
+      "title": "Prometheus Bound",
+      "year": "c. 430 BC",
+      "kind": "other",
+      "creator": "Aeschylus",
+      "description": "Aeschylus' (or his school's) rock-chained Titan — the fire-theft's aftermath as tragic defiance against Zeus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_Bound"
+    },
     {
       "title": "Prometheus",
       "year": "—",
       "kind": "other",
       "description": "The fire-theft remains modernity's favourite Titan myth — enlightenment, punishment, and the benefactor chained for humankind.",
       "externalUrl": "https://en.wikipedia.org/wiki/Prometheus"
+    },
+    {
+      "title": "Prometheus Unbound",
+      "year": "1820",
+      "kind": "other",
+      "creator": "Percy Bysshe Shelley",
+      "description": "Shelley's lyrical drama frees the fire-bringer — Romantic liberation rewriting Aeschylus' chained Titan as revolutionary hope.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Prometheus_Unbound"
     }
   ]
 }

@@ -1,17 +1,48 @@
 {
   "id": "galatea-nymph",
-  "summary": "Galatea is a Nereid nymph, daughter of Nereus and Doris. In Ovid's Metamorphoses she loved the Sicilian river-god Acis; when the Cyclops Polyphemus killed him, she transformed Acis into the river that bears his name. She is distinct from Galatea, the name later applied to Pygmalion's statue.",
-  "attribution": "Adapted from Wikipedia, \"Galatea (mythology)\" · CC BY-SA 4.0",
+  "summary": "In Greek mythology, Galatea (Galateia, \"she who is milk-white\") is a Nereid, daughter of Nereus and Doris, named among the sea-sisters in Homer and Hesiod. In later poetry she is loved by the Sicilian Cyclops Polyphemus and, in Ovid, by the youth Acis; when Polyphemus kills Acis, Galatea turns her lover into the Sicilian river that bears his name. She is distinct from the post-antique Galatea name given to Pygmalion's statue.",
+  "etymology": "Ancient Greek Γαλάτεια (Galáteia). Commonly glossed \"she who is milk-white\" (from γάλα, \"milk\"); another inference links the name to calm seas, beside Hesiod's separate Nereid Galene (\"Calm\").",
+  "attribution": "Adapted from Wikipedia, \"Acis and Galatea\" and \"Galatea (mythology)\" · CC BY-SA 4.0",
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Family and early attestations",
       "paragraphs": [
-        "Hesiod, Homer, and Apollodorus name Galatea among the Nereids. Ovid gives her a speaking role in the love-triangle with Acis and Polyphemus on Sicily.",
-        "The Pygmalion statue named Galatea belongs to a separate Roman tradition and is not identified with this Nereid in the ancient Greek sources used here."
+        "Galatea is a daughter of Nereus, the Old Man of the Sea, and the Oceanid Doris. Homer (Iliad 18.45) and Hesiod (Theogony 250) name her among the Nereids; Hesiod calls her \"comely\" Galatea. Apollodorus includes her in his catalogue of Nereids. In the Iliad she and her sisters gather to Thetis when Achilles mourns Patroclus; later tradition also has Galatea, with Doto and Panope, escort Thetis to her wedding with Peleus."
+      ]
+    },
+    {
+      "heading": "Polyphemus and Acis",
+      "paragraphs": [
+        "Theocritus (Idylls 6 and 11) makes Galatea the object of the Sicilian Cyclops Polyphemus's rustic courtship — songs, milk, and cheese that she spurns. Virgil mentions her several times in the same pastoral vein.",
+        "Ovid's Metamorphoses gives the version that became canonical in later art: Galatea loves Acis, son of Faunus and the river-nymph Symaethis. Jealous Polyphemus tears a boulder from Mount Etna and crushes Acis; Galatea turns the blood trickling from under the rock into the stream Acis and transforms her lover into the horned god of that river, larger and deep blue in face but still recognizably himself.",
+        "Athenaeus reports that Philoxenus of Cythera had earlier shaped a Galatea–Polyphemus story as political satire against Dionysius I of Syracuse. A later tradition has Galatea eventually yield to Polyphemus; their son Galas or Galates becomes ancestor of the Gauls — a genealogy already noted by the Sicilian historian Timaeus."
+      ]
+    },
+    {
+      "heading": "Homonym and cultural legacy",
+      "paragraphs": [
+        "The ivory bride of Pygmalion was given the name Galatea only in post-antique tradition; ancient Greek sources do not identify that statue with this Nereid. Statues and \"Triumph of Galatea\" paintings (notably Raphael's) draw on Philostratus and the Sicilian love story, typically with shells, dolphins, tritons, and a billowing scarf.",
+        "The Acis and Galatea episode became a major Renaissance and Baroque theme in poetry (Góngora), opera (Lully, Handel, Haydn), and painting (Poussin, Claude Lorrain, and many others), usually staging the pastoral triangle of nymph, youth, and Cyclops."
       ]
     }
   ],
+  "symbols": [
+    "milk-white beauty",
+    "Sicilian sea",
+    "dolphin / shell chariot (Triumph imagery)"
+  ],
+  "cultCenters": [
+    "Sicily (Etna / Acis tradition)",
+    "shrine on Mount Etna (aetiological claim)"
+  ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Galatea_(mythology)" }
+    {
+      "label": "Wikipedia — Acis and Galatea",
+      "url": "https://en.wikipedia.org/wiki/Acis_and_Galatea"
+    },
+    {
+      "label": "Wikipedia — Galatea (mythology)",
+      "url": "https://en.wikipedia.org/wiki/Galatea_(mythology)"
+    }
   ]
 }

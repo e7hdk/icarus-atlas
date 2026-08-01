@@ -1,6 +1,35 @@
 {
   "id": "caesar-apotheosis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Apotheosis of Julius Caesar",
+      "artist": "Louis Laguerre",
+      "year": "1692–1694",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apotheosis_of_Julius_Caesar%2C_by_Louis_Laguerre%2C_1692-1694%2C_oil_on_plaster_-_Entrance_Hall%2C_Chatsworth_House_-_Derbyshire%2C_England_-_DSC02984.jpg/960px-Apotheosis_of_Julius_Caesar%2C_by_Louis_Laguerre%2C_1692-1694%2C_oil_on_plaster_-_Entrance_Hall%2C_Chatsworth_House_-_Derbyshire%2C_England_-_DSC02984.jpg",
+      "description": "Laguerre's Chatsworth ceiling: Julius Caesar lifted toward the gods — Baroque apotheosis for the dictator Ovid ends as a star."
+    },
+    {
+      "title": "Murder and Deification of Julius Caesar",
+      "artist": "Unknown (Netherlandish print)",
+      "year": "16th–17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Moord_op_en_vergoddelijking_van_Julius_Caesar%2C_RP-P-OB-22.125%28R%29.jpg/960px-Moord_op_en_vergoddelijking_van_Julius_Caesar%2C_RP-P-OB-22.125%28R%29.jpg",
+      "description": "Rijksmuseum print: the Ides murder paired with Caesar's deification — reception's hinge between Curia steel and celestial ascent."
+    },
+    {
+      "title": "Augustus Denarius with Sidus Iulium (RIC I 37a)",
+      "artist": "Roman mint (Augustus)",
+      "year": "19–18 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Augustus%2C_denarius%2C_19-18_BC%2C_RIC_I_37a.jpg/960px-Augustus%2C_denarius%2C_19-18_BC%2C_RIC_I_37a.jpg",
+      "description": "Silver denarius: Augustus' coinage of the Julian star — the sidus Iulium that Romans read as Caesar's soul ascending."
+    },
+    {
+      "title": "Comet Caesar (Roman denarius)",
+      "artist": "Roman mint",
+      "year": "1st century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Comet_Caesar_%28Roman_denarius%29.png/960px-Comet_Caesar_%28Roman_denarius%29.png",
+      "description": "Roman denarius reverse with Caesar's comet — the daylight omen Augustan propaganda and Ovid's Metamorphoses XV made proof of apotheosis."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

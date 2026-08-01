@@ -4,6 +4,9 @@
   "greekName": "Harpyiai (Ἅρπυιαι)",
   "romanName": "Harpyiae",
   "type": "creature",
+  "kinds": [
+    "harpy"
+  ],
   "cluster": "chthonic",
   "domains": [
     "storm winds",

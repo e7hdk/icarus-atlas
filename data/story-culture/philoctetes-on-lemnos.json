@@ -1,6 +1,28 @@
 {
   "id": "philoctetes-on-lemnos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Wounded Philoctetes",
+      "artist": "Nicolai Abildgaard",
+      "year": "1775",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Den_s%C3%A5rede_Filoktet.jpg/960px-Den_s%C3%A5rede_Filoktet.jpg",
+      "description": "Abildgaard's wounded archer — Philoctetes alone with Heracles' bow, Sophocles' Lemnos exile as neoclassical pain."
+    },
+    {
+      "title": "The Isolation of Philoctetes on Lemnos",
+      "artist": "Jean-Charles-Joseph Rémond",
+      "year": "1818",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Remond_Philoct%C3%A8te_mus%C3%A9e_des_Augustins.jpg/960px-Remond_Philoct%C3%A8te_mus%C3%A9e_des_Augustins.jpg",
+      "description": "Rémond's isolation — the snakebite hero abandoned on Lemnos, the ethical knot Odysseus and Neoptolemus must untie."
+    },
+    {
+      "title": "Philoctetes on the Island of Lemnos",
+      "artist": "Guillaume Guillon-Lethière",
+      "year": "1798",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Guillaume_Guillon-Lethiere%2C_Philoctetes_on_the_Island_of_Lemnos.jpg",
+      "description": "Lethière's island — Philoctetes on Lemnos with the bow Troy cannot fall without."
+    }
+  ],
   "popCulture": [
     {
       "title": "Philoctetes",
@@ -9,6 +31,13 @@
       "creator": "Sophocles",
       "description": "The Lemnos exile is Sophocles' ethical knot — whether to deceive the wounded man for the sake of Troy's fall.",
       "externalUrl": "https://en.wikipedia.org/wiki/Philoctetes_(Sophocles_play)"
+    },
+    {
+      "title": "Philoctetes",
+      "year": "—",
+      "kind": "other",
+      "description": "The wounded archer of Lemnos — Heracles' bow, the Achaean deception, and Troy's necessary ally.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Philoctetes"
     }
   ]
 }

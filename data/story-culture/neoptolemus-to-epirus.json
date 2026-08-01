@@ -1,6 +1,35 @@
 {
   "id": "neoptolemus-to-epirus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Andromache and Pyrrhus",
+      "artist": "Pierre-Narcisse Guerin",
+      "year": "1810 (Salon of 1814)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Gu%C3%A9rin_Andromaque_et_Pyrrhus_1810.jpg/960px-Gu%C3%A9rin_Andromaque_et_Pyrrhus_1810.jpg",
+      "description": "Guérin's Salon scene — Andromache before Pyrrhus in Epirus, Hector's widow as the Molossian prize of Achilles' son."
+    },
+    {
+      "title": "Captive Andromache",
+      "artist": "Frederic Leighton",
+      "year": "c. 1888",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Leighton_Captive_Andromache.jpg/960px-Leighton_Captive_Andromache.jpg",
+      "description": "Leighton's captive — Andromache among the spoil, the Trojan queen whose Epirote fate this nostos seals."
+    },
+    {
+      "title": "The Death of Neoptolemus at Delphi (Pompeian fresco)",
+      "artist": "Unknown Roman painter",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pompeii_-_Casa_di_Marco_Lucrezio_Frontone_-_Winter_Triclinium.jpg/960px-Pompeii_-_Casa_di_Marco_Lucrezio_Frontone_-_Winter_Triclinium.jpg",
+      "description": "Pompeian fresco — Neoptolemus slain at Delphi, the Return's end after the Molossian kingdom."
+    },
+    {
+      "title": "Neoptolemus Killing Priam (Attic black-figure amphora)",
+      "artist": "Attributed to the Class of Cambridge 49",
+      "year": "c. 520-510 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Amphora_death_Priam_Louvre_F222.jpg/960px-Amphora_death_Priam_Louvre_F222.jpg",
+      "description": "Attic amphora — Neoptolemus killing Priam at the altar, the Troy chapter that opens his unscathed homecoming."
+    }
+  ],
   "popCulture": [
     {
       "title": "Neoptolemus",

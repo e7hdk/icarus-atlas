@@ -155,6 +155,12 @@ export function RiddleOverlay() {
     setRiddleOpen(false);
     setCardOpen(true);
   };
+  // Naming the star earns the questions about it: whoever solved the riddle is
+  // exactly the visitor who wants to be asked more (docs/EPHEMERIS_PLAN.md §11).
+  const consultOracle = () => {
+    setRiddleOpen(false);
+    useEphemerisStore.getState().setOracleOpen(true);
+  };
   const beginProem = () => {
     setRiddleOpen(false);
     if (pathname !== '/') {
@@ -336,6 +342,13 @@ export function RiddleOverlay() {
                 </p>
               )}
               <div className="mx-auto mt-7 flex w-full max-w-sm flex-col gap-2 motion-safe:[animation:proem-fade-up_700ms_ease_320ms_both]">
+                <button
+                  type="button"
+                  onClick={consultOracle}
+                  className="pointer-events-auto rounded-xl border border-star-olympian/45 bg-star-olympian/10 px-6 py-3 text-center font-display text-[12px] uppercase tracking-[0.18em] text-star-olympian backdrop-blur-xl transition-all hover:bg-star-olympian/20"
+                >
+                  Consult the oracle
+                </button>
                 <button
                   type="button"
                   onClick={beginProem}

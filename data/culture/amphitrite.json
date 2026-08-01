@@ -1,6 +1,28 @@
 {
   "id": "amphitrite",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Neptune and Amphitrite",
+      "artist": "Jan Gossaert",
+      "year": "1516",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jan_Gossaert_-_Neptune_and_Amphitrite_-_Google_Art_Project.jpg/960px-Jan_Gossaert_-_Neptune_and_Amphitrite_-_Google_Art_Project.jpg",
+      "description": "Gossaert's Gemäldegalerie panel crowns Poseidon and Amphitrite as a Renaissance sea-couple — shell, trident, and nude majesty standing for the ocean's royal household."
+    },
+    {
+      "title": "Amphitrite",
+      "artist": "Antoine Coysevox",
+      "year": "c. 1695–1700",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Louvre_amphitrite_mr3005.jpg/960px-Louvre_amphitrite_mr3005.jpg",
+      "description": "Coysevox's marble Amphitrite in the Louvre rides a dolphin-borne wave — Poseidon's queen as French Baroque allegory of the sea's calm power."
+    },
+    {
+      "title": "Amphitrite",
+      "artist": "Modern public sculpture, Agde",
+      "year": "—",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Agde_-_Amphitrite01.jpg/960px-Agde_-_Amphitrite01.jpg",
+      "description": "A bronze Amphitrite on the Place de la Marine in Agde, France — Poseidon's queen as the Mediterranean's local sea goddess, facing the harbour."
+    }
+  ],
   "popCulture": [
     {
       "title": "29 Amphitrite",

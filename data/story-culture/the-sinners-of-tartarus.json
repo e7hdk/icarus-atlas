@@ -1,6 +1,42 @@
 {
   "id": "the-sinners-of-tartarus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Sisyphus",
+      "artist": "Titian",
+      "year": "1548–1549",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Titian_-_Sisyphus_-_Madrid_-_Prado.jpg/960px-Titian_-_Sisyphus_-_Madrid_-_Prado.jpg",
+      "description": "Titian's Sisyphus — the boulder forever rolling, Tartarus' emblem of futile labour."
+    },
+    {
+      "title": "Tantalus",
+      "artist": "Gioacchino Assereto",
+      "year": "c. 1640s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tantalus_Gioacchino_Assereto_circa1640s.jpg/960px-Tantalus_Gioacchino_Assereto_circa1640s.jpg",
+      "description": "Assereto's Tantalus — fruit and water forever out of reach, the feast denied."
+    },
+    {
+      "title": "Ixion",
+      "artist": "Jusepe de Ribera",
+      "year": "1632",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ixion_by_Jusepe_de_Ribera_%281632%29.jpg/960px-Ixion_by_Jusepe_de_Ribera_%281632%29.jpg",
+      "description": "Ribera's Ixion — bound to the flaming wheel for his crime against Hera."
+    },
+    {
+      "title": "Tityus",
+      "artist": "Titian (Tiziano Vecellio)",
+      "year": "1548–1549",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Titian_-_Tityus_-_WGA22895.jpg/960px-Titian_-_Tityus_-_WGA22895.jpg",
+      "description": "Titian's Tityus — the giant's liver forever eaten in Tartarus for assaulting Leto."
+    },
+    {
+      "title": "Sisyphus",
+      "artist": "Franz von Stuck",
+      "year": "1920",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Sisyphus_by_von_Stuck.jpg/960px-Sisyphus_by_von_Stuck.jpg",
+      "description": "Franz von Stuck's Sisyphus — Symbolist restaging of the endless ascent."
+    }
+  ],
   "popCulture": [
     {
       "title": "Tantalus",

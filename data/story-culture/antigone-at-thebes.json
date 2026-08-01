@@ -1,6 +1,48 @@
 {
   "id": "antigone-at-thebes",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Antigone Giving Burial to Polynices",
+      "artist": "Sébastien Norblin",
+      "year": "1825",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/S%C3%A9bastien_Norblin_Antigone_et_Polynice.JPG",
+      "description": "Norblin's Prix de Rome canvas shows the handful of dust: Antigone burying Polynices against Creon's ban — the act that defines the Theban sister."
+    },
+    {
+      "title": "Antigone at the Bedside of Polynices",
+      "artist": "Jean-Joseph Benjamin-Constant",
+      "year": "1868",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Benjamin-Constant_Antigone_au_chevet_de_Polynice_%282007_6_1%29.jpg",
+      "description": "Benjamin-Constant's Antigone keeps vigil over her brother's corpse — the quiet moment before defiance becomes Sophocles' tragedy."
+    },
+    {
+      "title": "Antigone",
+      "artist": "Frederic Leighton",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Antigoneleigh.jpg/960px-Antigoneleigh.jpg",
+      "description": "Leighton's solitary Antigone in classical drapery — conscience without Creon or corpse, the sister who chooses the dead over the city's law."
+    }
+  ],
+  "films": [
+    {
+      "title": "Antigone",
+      "year": "1961",
+      "medium": "film",
+      "director": "Yorgos Javellas",
+      "description": "Irene Papas' Antigone buries her brother against Creon's decree — Sophocles filmed in Greece, the sister who chooses the dead over the living law.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(1961_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Antigone",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Arthur Honegger",
+      "description": "Honegger's opera, after Cocteau's compression of Sophocles, sets Antigone's defiance in stark modern harmony — the burial as an act of music.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antigone_(Honegger)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Antigone (Sophocles play)",

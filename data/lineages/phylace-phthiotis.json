@@ -1,0 +1,33 @@
+{
+  "city": "phylace-phthiotis",
+  "reigns": [
+    {
+      "ruler": "Phylacus",
+      "characterId": "phylacus-phthian",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Od. 15.225–260; Apollod. 1.9.12; Il. 2.695–730",
+      "note": "Eponymous lord of Phylace whose halls held Melampus and whose cattle were guarded there — grandfather of the Phthian captains Protesilaus and Podarces. Distinct from the Phylacus slain in Iliad 6 and from the Delphic local hero."
+    },
+    {
+      "ruler": "Iphiclus",
+      "characterId": "iphiclus-phthian",
+      "sources": ["homer", "apollonius", "apollodorus"],
+      "citation": "Il. 2.695–730; Arg. 1.45; Apollod. 1.9.12",
+      "note": "Son of Phylacus, rich in flocks, left behind in Phylace when the Argo sailed — father of Protesilaus and Podarces. Distinct from Iphiclus son of Thestius."
+    },
+    {
+      "ruler": "Protesilaus",
+      "characterId": "protesilaus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Il. 2.695–730; Epitome 3.14, 3.30",
+      "note": "Warlike leader of those who held Phylace and the Phthian towns; first Achaean ashore at Troy, slain before his house in Phylace was fully established."
+    },
+    {
+      "ruler": "Podarces",
+      "characterId": "podarces-phthian",
+      "sources": ["homer"],
+      "citation": "Il. 2.695–730, 13.675–720",
+      "note": "Younger brother of Protesilaus who marshalled the Phthians when the host longed for their fallen leader — successor of the Phylace contingent at Troy."
+    }
+  ]
+}

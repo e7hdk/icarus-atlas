@@ -38,6 +38,14 @@
       "director": "John Musker",
       "description": "Disney's underworld sequence sends Hercules against a cartoon Cerberus — the three-headed hound as family-film gatekeeper of Hades' realm.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(1997_film)"
+    },
+    {
+      "title": "L'Inferno",
+      "year": "1911",
+      "medium": "film",
+      "director": "Francesco Bertolini",
+      "description": "The pioneering Italian Dante film puts the three-headed Cerberus on screen — Hades' hound as early cinema's guardian of the gluttons.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Inferno"
     }
   ],
   "popCulture": [
@@ -56,6 +64,40 @@
       "creator": "Supergiant Games",
       "description": "Supergiant's roguelike keeps Cerberus as the House of Hades' enormous, affectionate pet — the terror of Tartarus turned into a good boy at the gates.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Kerberos (protocol)",
+      "year": "1988",
+      "kind": "language",
+      "creator": "MIT Project Athena",
+      "description": "MIT named its network authentication protocol for the three-headed guard dog — Cerberus as the metaphor for a gate that checks every ticket.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Kerberos_(protocol)"
+    },
+    {
+      "title": "Dante's Inferno",
+      "year": "2010",
+      "kind": "videogame",
+      "creator": "Visceral Games",
+      "description": "EA's action game restages Dante's Third Circle boss as a three-headed worm-hound — Cerberus as the gluttony's gatekeeper to fight through.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Dante%27s_Inferno_(video_game)"
+    },
+    {
+      "title": "Devil May Cry 3: Dante's Awakening",
+      "year": "2005",
+      "kind": "videogame",
+      "creator": "Capcom",
+      "description": "Capcom's ice-hound boss borrows the underworld dog's name and triple threat — Cerberus as a stylish demonic gatekeeper in the tower.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Devil_May_Cry_3:_Dante%27s_Awakening"
+    }
+  ],
+  "music": [
+    {
+      "title": "Orfeo ed Euridice",
+      "year": "1762",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck's underworld chorus names Cerberus at the gate — the hound of Hades as the barrier Orfeo's lyre must pass.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orfeo_ed_Euridice"
     }
   ]
 }

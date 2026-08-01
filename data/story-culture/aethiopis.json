@@ -1,6 +1,42 @@
 {
   "id": "aethiopis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Achilles Killing Penthesilea (Penthesilea Painter kylix)",
+      "artist": "Penthesilea Painter",
+      "year": "c. 470–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Akhilleus_Penthesileia_Staatliche_Antikensammlungen_2688.jpg/960px-Akhilleus_Penthesileia_Staatliche_Antikensammlungen_2688.jpg",
+      "description": "Munich kylix tondo: Achilles drives his spear into the falling Amazon — the Aethiopis duel that later tradition said left him stricken with love."
+    },
+    {
+      "title": "Achilles and Penthesilea",
+      "artist": "Johann Heinrich Wilhelm Tischbein",
+      "year": "c. 1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Achill_und_Penthesila_%28Tischbein%29.jpg/960px-Achill_und_Penthesila_%28Tischbein%29.jpg",
+      "description": "Tischbein stages the aftermath: Achilles supports the dying Amazon — recognition arriving a breath too late."
+    },
+    {
+      "title": "Eos Lifting the Body of Memnon (Douris kylix)",
+      "artist": "Douris",
+      "year": "c. 490–480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Eos_Memnon_Louvre_G115.jpg/960px-Eos_Memnon_Louvre_G115.jpg",
+      "description": "Louvre G 115: winged Eos gathers Memnon's corpse after Achilles' kill — the Aethiopis as a mother's recovery of Ethiopia's champion."
+    },
+    {
+      "title": "Hydria with the Fight of Achilles and Memnon",
+      "artist": "Unknown (Corinthian)",
+      "year": "c. 575–550 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg/960px-Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg",
+      "description": "Walters hydria: Achilles and Memnon duel while Thetis and Eos look on — Troy's two greatest living heroes before either falls."
+    },
+    {
+      "title": "Penthesilea",
+      "artist": "Arturo Michelena",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Arturo_Michelena%2C_Penthesilea%2C_1891.jpg",
+      "description": "Michelena's Amazon queen armed for Troy — the sovereign warrior who will die under Achilles' spear in the lost epic after Hector."
+    }
+  ],
   "popCulture": [
     {
       "title": "Aethiopis",

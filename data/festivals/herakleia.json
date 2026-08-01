@@ -1,0 +1,17 @@
+{
+  "id": "herakleia",
+  "name": "Herakleia",
+  "greekName": "Ἡράκλεια",
+  "deities": ["heracles"],
+  "place": "athens",
+  "atticDate": { "month": "metageitnion", "days": [4], "approximate": true },
+  "conventionalDates": ["08-04"],
+  "aition": "heracles-cycle",
+  "summary": "The men's feast of Heracles at Cynosarges — sacrifice, games and a table of twelve parasitoi in the gymnasium sacred to the hero outside the walls.",
+  "testimonia": [
+    "Pausanias 1.19.3 (Cynosarges sacred to Heracles; altars of Hebe, Alcmena and Iolaus)",
+    "Athenaeus 6.234c–e (the parasitoi of Heracles)",
+    "Mikalson (1975) 31–32 (Metageitnion; day within the month approximate)",
+    "Parke (1977) 50–51"
+  ]
+}

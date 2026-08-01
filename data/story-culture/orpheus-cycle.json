@@ -1,6 +1,35 @@
 {
   "id": "orpheus-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Orpheus Leading Eurydice from the Underworld",
+      "artist": "Jean-Baptiste-Camille Corot",
+      "year": "1861",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg/960px-Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg",
+      "description": "Corot's descent — the cycle's heart: Orpheus leading Eurydice from the underworld before the fatal glance."
+    },
+    {
+      "title": "Landscape with Orpheus and Eurydice",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg/960px-Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg",
+      "description": "Poussin's landscape — Eurydice's snakebite that opens the whole Orpheus saga."
+    },
+    {
+      "title": "Orpheus",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg/960px-Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+      "description": "Moreau's lyre and head — the cycle's aftermath distilled into Symbolist melancholy."
+    },
+    {
+      "title": "Nymphs Finding the Head of Orpheus",
+      "artist": "John William Waterhouse",
+      "year": "1900",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/John_William_Waterhouse%2C_1900_-_Nymphs_finding_the_head_of_Orpheus%2C_1900_version.jpg",
+      "description": "Waterhouse's nymphs — the Maenad murder's aftermath, the singing head that closes the cycle."
+    }
+  ],
   "music": [
     {
       "title": "Hadestown",
@@ -9,6 +38,14 @@
       "composer": "Anaïs Mitchell",
       "description": "Mitchell's folk musical restages the Orpheus cycle for Broadway — the poet, the underworld factory, and the look back that loses everything.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    },
+    {
+      "title": "L'Orfeo",
+      "year": "1607",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's favola in musica — the Orpheus cycle's first great operatic telling, descent and glance intact.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Orfeo"
     }
   ],
   "popCulture": [

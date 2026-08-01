@@ -1,6 +1,35 @@
 {
   "id": "hippolytus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hippolytus, Phaedra and the Nurse",
+      "artist": "Unknown (Roman wall painter)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hippolytus%2C_Phaedra_and_nurse_-_wall_painting_%281st_century_AD%29_from_Herculaneum.jpg/960px-Hippolytus%2C_Phaedra_and_nurse_-_wall_painting_%281st_century_AD%29_from_Herculaneum.jpg",
+      "description": "Herculaneum fresco: lovesick Phaedra and her nurse opposite the chaste Hippolytus — Euripides' confession scene on a Campanian wall."
+    },
+    {
+      "title": "Hippolytus after the Confession of Phaedra, his Stepmother",
+      "artist": "Étienne-Barthélémy Garnier",
+      "year": "1793",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mus%C3%A9e-Ingres-Bourdelle_-_Hippolyte%2C_apr%C3%A8s_l%27aveu_de_Ph%C3%A8dre%2C_sa_belle-m%C3%A8re_-_%C3%89tienne-Barth%C3%A9l%C3%A9my_Garnier_-_Joconde06070000123.jpg/960px-Mus%C3%A9e-Ingres-Bourdelle_-_Hippolyte%2C_apr%C3%A8s_l%27aveu_de_Ph%C3%A8dre%2C_sa_belle-m%C3%A8re_-_%C3%89tienne-Barth%C3%A9l%C3%A9my_Garnier_-_Joconde06070000123.jpg",
+      "description": "Garnier's Salon canvas — Hippolytus recoiling after Phaedra's confession, the instant that sets Theseus' curse in motion."
+    },
+    {
+      "title": "The Death of Hippolytus (La mort d'Hippolyte)",
+      "artist": "Jean-Baptiste Lemoyne the Elder",
+      "year": "1715",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Death_Hippolytus_Lemoyne_Louvre_MR2026.jpg/960px-Death_Hippolytus_Lemoyne_Louvre_MR2026.jpg",
+      "description": "Lemoyne's Louvre marble — Poseidon's sea-bull panics the horses and Hippolytus is dragged in the reins, Euripides' catastrophe in stone."
+    },
+    {
+      "title": "The Death of Hippolytus",
+      "artist": "Lawrence Alma-Tadema",
+      "year": "1860",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hippolytus_Sir_Lawrence_Alma_Tadema.jpg/960px-Hippolytus_Sir_Lawrence_Alma_Tadema.jpg",
+      "description": "Alma-Tadema's shore: the bull surges from the waves as the chariot wrecks — the chaste hunter destroyed by a father's curse."
+    }
+  ],
   "films": [
     {
       "title": "Phaedra",

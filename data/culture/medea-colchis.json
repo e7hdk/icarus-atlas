@@ -71,9 +71,41 @@
       "composer": "Luigi Cherubini",
       "description": "Cherubini's French Médée is the great Classical Medea opera: the abandoned wife whose fury Callas later made legendary in Italian revival.",
       "externalUrl": "https://en.wikipedia.org/wiki/M%C3%A9d%C3%A9e_(Cherubini)"
+    },
+    {
+      "title": "Médée",
+      "year": "1693",
+      "kind": "opera",
+      "composer": "Marc-Antoine Charpentier",
+      "description": "Charpentier's tragédie en musique for the Paris Opéra: Médée in Corinth, the poisoned robe, and Baroque machinery for a sorceress's revenge.",
+      "externalUrl": "https://en.wikipedia.org/wiki/M%C3%A9d%C3%A9e_(Charpentier)"
+    },
+    {
+      "title": "Medea",
+      "year": "1946",
+      "kind": "ballet",
+      "composer": "Samuel Barber",
+      "description": "Barber's score for Martha Graham — later Cave of the Heart — turns Euripides' jealousy into modern dance: Medea and Jason as mythic figures who step into contemporary fury.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_(ballet)"
+    },
+    {
+      "title": "Medea in Corinto",
+      "year": "1813",
+      "kind": "opera",
+      "composer": "Simon Mayr",
+      "description": "Mayr's Neapolitan Medea opera, with a libretto by Felice Romani: Corinth, the bridal poison, and bel canto fury that kept the Colchian queen on the Italian stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_in_Corinto"
     }
   ],
   "popCulture": [
+    {
+      "title": "Medea",
+      "year": "431 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' Corinth play fixed the modern Medea: the betrayed wife who kills Creusa and her own sons — the script every later opera, film and ballet still answers.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_(play)"
+    },
     {
       "title": "Hades II",
       "year": "2024",
@@ -81,6 +113,14 @@
       "creator": "Supergiant Games",
       "description": "Supergiant brings Medea into the crossroads as a witch of the mountain — Colchian craft offered to Melinoë on the road against Chronos.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    },
+    {
+      "title": "Cave of the Heart",
+      "year": "1946",
+      "kind": "other",
+      "creator": "Martha Graham",
+      "description": "Graham's dance drama (first Serpent Heart) stages Medea's jealousy without literal Corinth — Noguchi's set and Barber's score making the Colchian rage a modern psychological rite.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cave_of_the_Heart"
     }
   ]
 }

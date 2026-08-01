@@ -1,6 +1,35 @@
 {
   "id": "zephyrus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Birth of Venus",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1485",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+      "description": "Botticelli's Uffizi masterpiece: Zephyrus, locked with the breeze-nymph Aura, blows Venus ashore on her shell — the west wind as Renaissance art's most famous breath of spring."
+    },
+    {
+      "title": "Primavera",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1480",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/960px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg",
+      "description": "On the left edge of Botticelli's Primavera, Zephyrus seizes the nymph Chloris, who transforms into Flora — the west wind as the violent spark that turns the orchard into spring."
+    },
+    {
+      "title": "Flora and Zephyr",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1875",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William-Adolphe_Bouguereau_%281825-1905%29_-_Flora_And_Zephyr_%281875%29_transparency.png/960px-William-Adolphe_Bouguereau_%281825-1905%29_-_Flora_And_Zephyr_%281875%29_transparency.png",
+      "description": "Bouguereau's Mulhouse canvas: Zephyr, winged and airborne, lifts Flora among putti and roses — academic polish on the Ovidian marriage of west wind and flowers."
+    },
+    {
+      "title": "Flora Caressed by Zephyr",
+      "artist": "François Gérard",
+      "year": "1802",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Fran%C3%A7ois_G%C3%A9rard_-_Flore_caress%C3%A9e_par_Z%C3%A9phyr.jpg/960px-Fran%C3%A7ois_G%C3%A9rard_-_Flore_caress%C3%A9e_par_Z%C3%A9phyr.jpg",
+      "description": "Gérard's Grenoble painting: Zephyr leans from the air to kiss Flora — Neoclassical tenderness for the breeze that brings the year's first blossoms."
+    }
+  ],
   "popCulture": [
     {
       "title": "The Birth of Venus",

@@ -30,6 +30,24 @@
       "description": "An etching by the French Renaissance printmaker Jean Mignon, associated with the School of Fontainebleau, illustrating the central transformation episode from Ovid's Metamorphoses. Mignon shows the moment Diana sprinkles the hunter at her woodland spring as antlers begin to rise from his brow, the mannerist elongation of the bathing nymphs and rippling landscape typical of Fontainebleau style. Prints like this spread the Actaeon story through sixteenth-century Europe and fed directly into the imagery later monumentalized by painters such as Titian."
     }
   ],
+  "music": [
+    {
+      "title": "Actéon",
+      "year": "1684",
+      "kind": "opera",
+      "composer": "Marc-Antoine Charpentier",
+      "description": "Charpentier's miniature tragédie en musique stages the fatal bath: Actéon sees Diane naked, she turns him into a stag, and his own hounds tear him apart.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Act%C3%A9on_(opera)"
+    },
+    {
+      "title": "Diana and Actaeon",
+      "year": "1935",
+      "kind": "ballet",
+      "composer": "Cesare Pugni",
+      "description": "Vaganova's bravura pas de deux for La Esmeralda turns the hunter and the huntress into a gala showpiece — stag leaps for Actaeon, bow and moonlit glitter for Diana.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Diana_and_Actaeon"
+    }
+  ],
   "popCulture": [
     {
       "title": "Diana and Actaeon",
@@ -38,6 +56,14 @@
       "creator": "Titian",
       "description": "Titian's National Gallery canvas — the hunter stumbling on Diana's bath — became the modern West's defining image of Actaeon's fatal glance.",
       "externalUrl": "https://en.wikipedia.org/wiki/Diana_and_Actaeon"
+    },
+    {
+      "title": "Tales from Ovid",
+      "year": "1997",
+      "kind": "other",
+      "creator": "Ted Hughes",
+      "description": "Hughes retells Actaeon's metamorphosis among twenty-four Ovidian tales — the hunter's glance and the hounds rewritten in late-century English verse.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Tales_from_Ovid"
     }
   ]
 }

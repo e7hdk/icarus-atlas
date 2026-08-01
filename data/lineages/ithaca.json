@@ -2,6 +2,13 @@
   "city": "ithaca",
   "reigns": [
     {
+      "ruler": "Arceisius",
+      "characterId": "arceisius",
+      "sources": ["homer", "apollodorus", "ovid", "hyginus"],
+      "citation": "Odyssey 16.90–130, 24.235–275, 24.500–545; Bibliotheca 1.9.16; Metamorphoses 13.142–295; Fabulae 173",
+      "note": "Forefather of the single-line Ithacan house — father of Laertes and grandsire of Odysseus — whose race the suitors sought to wipe from Ithaca; Homer names him as the stem of the high-roofed halls, not a catalogue king with a separate reign narrative."
+    },
+    {
       "ruler": "Laertes",
       "characterId": "laertes",
       "sources": ["homer", "apollodorus"],
@@ -12,8 +19,15 @@
       "ruler": "Odysseus",
       "characterId": "odysseus",
       "sources": ["homer", "apollodorus"],
-      "citation": "Odyssey 1.1–21; Epitome 3.10",
+      "citation": "Odyssey 1.1–21, 9.1–28; Iliad 2.629–637; Epitome 3.10, 3.12",
       "note": "King of rocky Ithaca and captain of the Cephallenian contingent at Troy."
+    },
+    {
+      "ruler": "Telemachus",
+      "characterId": "telemachus",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Odyssey 1.365–420, 16.90–130; Epitome 3.10, 7.33",
+      "note": "Sole heir of the house: kingship in sea-girt Ithaca is by birth his heritage. Homer closes before a settled succession after Odysseus' return; later variants remove him from the island with Telegonus rather than enthroning him as a long-reigning king."
     }
   ]
 }

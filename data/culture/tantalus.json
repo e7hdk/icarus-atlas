@@ -1,6 +1,35 @@
 {
   "id": "tantalus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Tantalus",
+      "artist": "Gioacchino Assereto",
+      "year": "c. 1640s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tantalus_Gioacchino_Assereto_circa1640s.jpg/960px-Tantalus_Gioacchino_Assereto_circa1640s.jpg",
+      "description": "Assereto's Genoese canvas shows the Pelopid king reaching for fruit and water that forever recede — the underworld feast that made his name a verb for torment just out of reach."
+    },
+    {
+      "title": "Tantalus",
+      "artist": "Hendrick Goltzius, after Cornelis Cornelisz. van Haarlem",
+      "year": "1588",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hendrick_Goltzius_-_Tantalus_-_Google_Art_Project.jpg/960px-Hendrick_Goltzius_-_Tantalus_-_Google_Art_Project.jpg",
+      "description": "From The Four Disgracers: Goltzius engraves Tantalus hurtling through empty air — the king who served his son to the gods, falling toward the hunger and thirst that await him below."
+    },
+    {
+      "title": "Tantalus",
+      "artist": "Attributed to Giovanni Battista Langetti",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Tantalus%2C_att._to_Giovanni_Battista_Langetti.jpg/960px-Tantalus%2C_att._to_Giovanni_Battista_Langetti.jpg",
+      "description": "A Venetian tenebrist treatment of the standing sinner: Tantalus half-submerged, straining toward what he cannot grasp — the classic Tartarean punishment of the feast denied."
+    },
+    {
+      "title": "Tantalus",
+      "artist": "Manner of Jusepe de Ribera",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Imitaci%C3%B3n_de_Ribera_-_T%C3%A1ntalo%2C_P003784.jpg/960px-Imitaci%C3%B3n_de_Ribera_-_T%C3%A1ntalo%2C_P003784.jpg",
+      "description": "A Prado canvas in Ribera's manner keeps the lost Furia alive: the underworld king twisted in shadow, still reaching for the water and fruit that slip away — Tantalus as Spanish Baroque torment."
+    }
+  ],
   "popCulture": [
     {
       "title": "Tantalize",
@@ -15,6 +44,13 @@
       "kind": "other",
       "description": "The element tantalum was named for Tantalus — a metal that, like his water and fruit, resists being taken, hard to extract from its ore.",
       "externalUrl": "https://en.wikipedia.org/wiki/Tantalum"
+    },
+    {
+      "title": "House of Atreus",
+      "year": "—",
+      "kind": "other",
+      "description": "The Atreid curse begins with Tantalus' crime against the gods — the Pelopid feast that seeds Agamemnon's house and the Oresteia's inherited blood-guilt.",
+      "externalUrl": "https://en.wikipedia.org/wiki/House_of_Atreus"
     }
   ]
 }

@@ -1,6 +1,28 @@
 {
   "id": "embassy-to-achilles",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Embassy to Achilles (Attic red-figure hydria, Munich)",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Akhilleus_embassy_Staatliche_Antikensammlungen_8770.jpg/960px-Akhilleus_embassy_Staatliche_Antikensammlungen_8770.jpg",
+      "description": "Munich hydria: Phoenix and Odysseus stand before sulking Achilles — Iliad 9 made visible, the foster-father's Meleager parable still to fail."
+    },
+    {
+      "title": "The Embassy to Achilles (Attic red-figure cup, Louvre G146)",
+      "artist": "Ambassador Painter (attributed)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Akhilleus_embassy_Louvre_G146.jpg/960px-Akhilleus_embassy_Louvre_G146.jpg",
+      "description": "Louvre G146 names the ambassadors: Phoenix, Ajax, and Odysseus before Achilles in his hut — persuasion, pride, and the cost of wrath in three registers."
+    },
+    {
+      "title": "Achilles Receiving the Ambassadors of Agamemnon",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "year": "1801",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jean-Auguste-Dominique_Ingres_-_Achilles_Receiving_the_Ambassadors_of_Agamemnon%2C_1801.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Achilles_Receiving_the_Ambassadors_of_Agamemnon%2C_1801.jpg",
+      "description": "Ingres' Prix de Rome canvas: Odysseus speaks while Phoenix and Ajax attend Achilles and Patroclus — neoclassical calm for the embassy that cannot bend the hero."
+    }
+  ],
   "popCulture": [
     {
       "title": "Iliad",

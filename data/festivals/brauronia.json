@@ -1,0 +1,16 @@
+{
+  "id": "brauronia",
+  "name": "Brauronia",
+  "greekName": "Βραυρώνια",
+  "deities": ["artemis"],
+  "place": "brauron",
+  "atticDate": { "month": "mounichion", "approximate": true },
+  "conventionalDates": ["04-10", "04-11", "04-12"],
+  "summary": "Artemis' festival at Brauron, where selected Athenian girls 'played the bear' before marriage — the arkteia — and where Iphigenia, the Athenians said, left the Tauric image of the goddess.",
+  "testimonia": [
+    "Pausanias 1.33.1 (Iphigenia lands the image at Brauron)",
+    "Pausanias 1.23.7 (Brauronian Artemis on the Acropolis; the old wooden image at Brauron)",
+    "Aristophanes, Lysistrata 641–647 (the arktos among a girl's ritual stages)",
+    "Parke (1977) 139–140 (the Brauronia; exact day within Mounichion unfixed — Attic mapping approximate)"
+  ]
+}

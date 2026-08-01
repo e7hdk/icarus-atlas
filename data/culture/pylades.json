@@ -1,6 +1,35 @@
 {
   "id": "pylades",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Pylades and Orestes Brought as Victims before Iphigenia",
+      "artist": "Benjamin West",
+      "year": "1766",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Benjamin_West_-_Pylades_and_Orestes_Brought_as_Victims_before_Iphigenia_-_Google_Art_Project.jpg/960px-Benjamin_West_-_Pylades_and_Orestes_Brought_as_Victims_before_Iphigenia_-_Google_Art_Project.jpg",
+      "description": "West's National Gallery oil sends Pylades to Tauris bound beside Orestes — the friend who shares the sacrificial altar before recognition saves them. Friendship as the third voice of Euripides' plot."
+    },
+    {
+      "title": "Orestes and Pylades (San Ildefonso Group, Prado)",
+      "artist": "Unknown (Roman copy after Greek original)",
+      "year": "c. 1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Grupo_de_Orestes_y_P%C3%ADlades_%28Museo_del_Prado%29.jpg/960px-Grupo_de_Orestes_y_P%C3%ADlades_%28Museo_del_Prado%29.jpg",
+      "description": "The Prado's San Ildefonso Group — long read as Orestes and Pylades — shows two youths in sacrificial quiet. Whether Dioscuri or Oresteian companions, the marble has become the image of the friend who shares exile and blood-debt."
+    },
+    {
+      "title": "Orestes and Pylades Disputing the Sacrifice",
+      "artist": "Pieter Lastman",
+      "year": "1614",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lastman_orestes.jpg/960px-Lastman_orestes.jpg",
+      "description": "Lastman paints the Taurian dilemma: which friend will die for the other. Pylades offers himself so Orestes may live — Dutch history painting as a study in classical loyalty."
+    },
+    {
+      "title": "Orestes and Pylades in Tauris (Roman fresco)",
+      "artist": "Unknown (Roman wall-painter)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Oreste_et_Pylade_en_Tauride%2C_fresque.jpg/960px-Oreste_et_Pylade_en_Tauride%2C_fresque.jpg",
+      "description": "A Roman fresco keeps the pair before the Taurian altar — Pylades still at Orestes' shoulder as Iphigenia's recognition approaches. Ancient wall-painting of the friendship that opera later made famous."
+    }
+  ],
   "films": [
     {
       "title": "Electra",

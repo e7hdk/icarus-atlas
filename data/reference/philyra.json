@@ -1,17 +1,42 @@
 {
   "id": "philyra",
-  "summary": "Philyra was an Oceanid nymph, daughter of Oceanus, who became the mother of Chiron the centaur by Cronus. When Cronus, surprised in their union, transformed into a horse, Philyra bore a child of double form and, in shame, was later transformed into the linden tree.",
+  "summary": "Philyra was an Oceanid nymph, daughter of Oceanus, and by Cronus the mother of the wise centaur Chiron. Surprised in their union, Cronus took the form of a horse; Philyra bore a child of double form and, in shame, was later transformed into the linden tree that bears her name in Greek.",
   "attribution": "Adapted from Wikipedia, \"Philyra (Oceanid)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Φιλύρα (Philýra), also the word for the linden or lime tree (Tilia).",
+  "symbols": [
+    "linden tree",
+    "centaur birth"
+  ],
+  "cultCenters": [
+    "Philyra (island in the Black Sea tradition)",
+    "Mount Pelion (Chiron)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Union with Cronus",
       "paragraphs": [
-        "Apollodorus names Philyra among the great genealogies as mother of Chiron by Cronus. Apollonius tells how Cronus lay with her on the island named for her while Zeus was still hidden in Crete, and how she fled in shame after bearing the centaur.",
-        "Hyginus adds that Philyra prayed to be changed into another form and became the linden tree (philyra in Greek)."
+        "Apollonius of Rhodes and later mythographers place Cronus' liaison with Philyra while Zeus was still hidden in Crete. Cronus approaches her as a stallion — either to conceal the affair from Rhea or when surprised mid-embrace — and Philyra conceives Chiron, who is born half man and half horse.",
+        "Apollodorus names Philyra in the Oceanid genealogies as Chiron's mother by Cronus, separating Chiron's birth from the cloud-born wild centaurs of Ixion."
+      ]
+    },
+    {
+      "heading": "Shame and the linden",
+      "paragraphs": [
+        "Ashamed of the monstrous child, Philyra prays to be released from her form. Hyginus and others say the gods change her into the linden tree (philyra). The tree etymology closes the aetiology: the Oceanid and the tree share one name.",
+        "Some traditions locate the episode on an island named Philyra in the Euxine; Chiron is thereafter raised or dwells on Pelion as tutor of heroes, while his mother survives only as the tree or as a briefly named Oceanid."
+      ]
+    },
+    {
+      "heading": "Relation to other centaur births",
+      "paragraphs": [
+        "Greek sources carefully distinguish Chiron — son of Cronus and Philyra, immortal and civilised — from the violent centaurs sprung from Ixion and the cloud (Nephele / Nubes) or from Centaurus. Philyra belongs only to Chiron's line; she is not mother of the wedding-riot herd."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Philyra_(Oceanid)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Philyra_(Oceanid)"
+    }
   ]
 }

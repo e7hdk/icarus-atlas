@@ -1,0 +1,40 @@
+{
+  "id": "elpenor",
+  "artworks": [],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Elpenor's fall and underworld plea — the youngest crewman who begs Odysseus for burial rites.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "L'Odissea",
+      "year": "1968",
+      "medium": "tv",
+      "director": "Franco Rossi",
+      "description": "Rossi's Italian-Yugoslav Odyssey gives Elpenor his Circean roof and Nekyia voice among the shades.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1968_miniseries)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Odyssey",
+      "year": "—",
+      "kind": "other",
+      "creator": "Homer",
+      "description": "Books 10–12: the drunken fall from Circe's roof, the unburied shade who speaks first in Hades, and the cairn Odysseus raises on Aeaea.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+    },
+    {
+      "title": "Elpenor",
+      "year": "1783",
+      "kind": "other",
+      "creator": "Johann Wolfgang von Goethe",
+      "description": "Goethe's unfinished tragedy borrows the Homeric name for a classical fragment — Elpenor as German neoclassical experiment.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Elpenor"
+    }
+  ]
+}

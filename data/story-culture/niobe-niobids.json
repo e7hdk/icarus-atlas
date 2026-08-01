@@ -1,6 +1,35 @@
 {
   "id": "niobe-niobids",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Apollo and Diana Attacking the Children of Niobe",
+      "artist": "Jacques-Louis David",
+      "year": "1772",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Apollo_and_Diana_Attacking_the_Children_of_Niobe_by_Jacques-Louis_David.jpg/960px-Apollo_and_Diana_Attacking_the_Children_of_Niobe_by_Jacques-Louis_David.jpg",
+      "description": "David's Rome prize canvas — Apollo and Diana raining arrows on Niobe's children, the Metamorphoses slaughter as neoclassical terror."
+    },
+    {
+      "title": "Apollo and Diana Kill the Children of Niobe",
+      "artist": "Jan Boeckhorst",
+      "year": "c. 1630–1660",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jan_Boeckhorst_-_Apollo_and_Diana_kill_the_children_of_Niobe.jpg/960px-Jan_Boeckhorst_-_Apollo_and_Diana_kill_the_children_of_Niobe.jpg",
+      "description": "Boeckhorst's Baroque massacre — the twins' wrath among the Niobids, maternal boast answered in blood."
+    },
+    {
+      "title": "The Florentine Niobids",
+      "artist": "Unknown (Roman)",
+      "year": "1st–2nd century AD (found 1583)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/The_so-called_Florentine_Niobids%2C_discovered_in_Rome_in_1583%2C_Galleria_degli_Uffizi%2C_Florence_%2831440543353%29.jpg/960px-The_so-called_Florentine_Niobids%2C_discovered_in_Rome_in_1583%2C_Galleria_degli_Uffizi%2C_Florence_%2831440543353%29.jpg",
+      "description": "The Florentine Niobids — Roman marble group that taught Europe the myth as sculpture: children dying, mother already turning to stone."
+    },
+    {
+      "title": "The Children of Niobe Killed by Apollo and Diana",
+      "artist": "Pierre-Charles Jombert",
+      "year": "1772",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pierre-Charles_Jombert_-_Les_enfants_de_Niob%C3%A9_tu%C3%A9s_par_Apollon_et_Diane.JPG/960px-Pierre-Charles_Jombert_-_Les_enfants_de_Niob%C3%A9_tu%C3%A9s_par_Apollon_et_Diane.JPG",
+      "description": "Jombert's Prix de Rome — the Niobids falling under Apollo and Diana, Leto's insult paid in a mother's emptied arms."
+    }
+  ],
   "popCulture": [
     {
       "title": "Niobe",
@@ -8,6 +37,14 @@
       "kind": "other",
       "description": "The slaughter of the Niobids remains the myth of maternal boast answered by arrows — grief petrified on Sipylus.",
       "externalUrl": "https://en.wikipedia.org/wiki/Niobe"
+    },
+    {
+      "title": "Metamorphoses",
+      "year": "AD 8",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Book 6 — Niobe's boast against Leto and the slaughter of her children: the source that petrifies her tears on Sipylus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
     }
   ]
 }

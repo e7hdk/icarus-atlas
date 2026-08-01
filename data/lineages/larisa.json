@@ -2,18 +2,18 @@
   "city": "larisa",
   "reigns": [
     {
-      "ruler": "Pirithous",
-      "characterId": "peirithous",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 1.8.2",
-      "note": "Son of Ixion from Larissa — a Calydonian hunter and one of the Argonauts in Apollodorus' catalogue."
-    },
-    {
       "ruler": "Teutamides",
       "characterId": "teutamides-larissa",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 2.4.4",
-      "note": "King of Larissa in the Pelasgian land who held funeral games for his father when Perseus' quoit killed Acrisius — not Teutamus (`teutamus-pelasgian`) of Homer's Trojan catalogue."
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 2.4.4; Paus. 2.16.2",
+      "note": "Explicitly 'king of Larissa' in the Pelasgian land when Perseus' quoit killed Acrisius at his father's funeral games. Pausanias places that Larisa on the Peneus — this Thessalian city id (Pelasgiotis), not the Argive citadel Larisa (Paus. 2.24.1) and not Homer's deep-soiled Larisa of the Trojan-allied Pelasgi (Il. 2.840)."
+    },
+    {
+      "ruler": "Peirithous",
+      "characterId": "peirithous",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Apollod. 1.8.2; Il. 2.735–775, 14.317–328",
+      "note": "King of the Lapiths whom Apollodorus lists as coming from Larissa; Homer sets his son Polypoetes over Argissa, Gyrtone, Orthe, Elone, and Oloösson — Lapith Thessaly, not a separate Argive Larisa throne. Kept as the Lapith seat tied to this city by Apollodorus' origin, not as Homeric city-king of the Catalogue's Larisa of the Pelasgi."
     }
   ]
 }

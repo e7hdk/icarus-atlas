@@ -1,6 +1,35 @@
 {
   "id": "nausicaa",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Odysseus and Nausicaa",
+      "artist": "Pieter Lastman",
+      "year": "1619",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Odysseus_and_Nausicaa.jpg/960px-Odysseus_and_Nausicaa.jpg",
+      "description": "Lastman's Munich canvas freezes Odyssey 6 at the river mouth: the shipwrecked Odysseus kneels before Nausicaa while her startled handmaids scatter. The Phaeacian princess stands as the civilised welcome that will send the wanderer home."
+    },
+    {
+      "title": "Coastal Landscape with Ulysses and Nausicaa",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1625–1627",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Rubens%2C_Ulisse_nell%27isola_dei_Feaci.jpg",
+      "description": "Rubens sets the meeting on a windy Phaeacian shore — Odysseus emerging from the brush, Nausicaa and her train with the laundry carts Homer names. The Palazzo Pitti panel turns hospitality into a Baroque coastal drama."
+    },
+    {
+      "title": "Ulysses and Nausicaa",
+      "artist": "Michele Desubleo",
+      "year": "1654",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Michele_Desubleo_-_Ulysses_and_Nausicaa%2C_1654.jpg/960px-Michele_Desubleo_-_Ulysses_and_Nausicaa%2C_1654.jpg",
+      "description": "Desubleo's Bolognese oil gathers Nausicaa and her companions around the half-naked stranger — the Homeric ball game interrupted by awe. The princess's calm gesture steadies the scene as Athena's plan unfolds."
+    },
+    {
+      "title": "Odysseus and Nausicaa",
+      "artist": "Friedrich Preller the Elder",
+      "year": "1864",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Friedrich_Preller_der_%C3%84ltere_-_Odysseus_and_Nausicaa%2C_1864.jpg",
+      "description": "Preller the Elder's history painting renders the Odyssean threshold: brine-caked Odysseus supplicates the composed Phaeacian princess while her maids flee. Neoclassical balance makes Nausicaa the face of civilised welcome."
+    }
+  ],
   "films": [
     {
       "title": "Nausicaä of the Valley of the Wind",
@@ -11,21 +40,47 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind"
     },
     {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Rossana Podestà's Nausicaa finds the amnesiac stranger on the Phaeacian shore — laundry, almost-marriage, and the memory that sends him home.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
+    },
+    {
       "title": "The Odyssey",
       "year": "1997",
       "medium": "tv",
       "director": "Andrei Konchalovsky",
-      "description": "Konchalovsky's miniseries keeps the Phaeacian laundry shore — Nausicaa as the civilised welcome that sends Odysseus home.",
+      "description": "Katie Carr's Nausicaa recovers the shipwrecked king among her handmaidens — the civilised welcome that secretly lands him on Ithaca.",
       "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
     }
   ],
   "popCulture": [
+    {
+      "title": "Homer's Daughter",
+      "year": "1955",
+      "kind": "novel",
+      "creator": "Robert Graves",
+      "description": "Graves invents a Sicilian princess who is Nausicaa — and argues she wrote the Odyssey to save her house from suitors.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Homer%27s_Daughter"
+    },
     {
       "title": "Nausicaa",
       "year": "—",
       "kind": "other",
       "description": "Nausicaa remains the type of the generous princess at the water's edge — the Odyssey's most graceful host, forever almost a bride.",
       "externalUrl": "https://en.wikipedia.org/wiki/Nausicaa"
+    }
+  ],
+  "music": [
+    {
+      "title": "Nausicaa",
+      "year": "1961",
+      "kind": "opera",
+      "composer": "Peggy Glanville-Hicks",
+      "description": "Glanville-Hicks sets Graves' Homer's Daughter at the Odeon of Herodes Atticus — Nausicaa as author-heroine rewriting the Odyssey in her own voice.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Nausicaa_(opera)"
     }
   ]
 }

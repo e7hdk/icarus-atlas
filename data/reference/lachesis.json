@@ -1,20 +1,35 @@
 {
   "id": "lachesis",
-  "summary": "Lachesis, in ancient Greek religion, was the middle of the Three Fates, or Moirai, alongside her sisters Clotho and Atropos. Normally seen clothed in white, Lachesis is the measurer of the thread spun on Clotho's spindle, and in some texts, determines Destiny. Her Roman equivalent was Decima. Lachesis apportioned the thread of life, determining the length of each lifespan. She measured the thread of life with her rod and is also said to choose a person's destiny during the measurement. Myths attest that she and her sisters appear within three days of a baby's birth to decide the child's fate.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Lachesis"
-    }
-  ],
+  "summary": "Lachesis is the middle of the three Moirai (Fates), with Clotho and Atropos. She measures the thread of life spun on Clotho's spindle, apportioning each lifespan; her Roman counterpart is Decima. Myths place the sisters at a child's birth to fix destiny within three days.",
+  "attribution": "Adapted from Wikipedia, \"Lachesis\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Λάχεσις (Lákhesis), \"disposer of lots\" — from λαγχάνω (lanchánō), to obtain by lot or by fate.",
   "symbols": [
     "measuring rod",
-    "the lot"
+    "the lot",
+    "thread of life"
   ],
   "cultCenters": [
     "Corinth (sanctuary of the Moirai)",
     "Olympia"
   ],
-  "etymology": "Lachesis, \"the Apportioner\" — from lanchanein, to obtain by lot."
+  "sections": [
+    {
+      "heading": "Measurer of the thread",
+      "paragraphs": [
+        "Clothed in white in standard iconography, Lachesis draws out and measures the thread Clotho spins and Atropos will cut. She determines how long each mortal lives and, in some texts, chooses the person's destiny during the measurement. With her sisters she appears within three days of a birth to decide the child's fate."
+      ]
+    },
+    {
+      "heading": "Parentage and Plato",
+      "paragraphs": [
+        "Hesiod's Theogony first makes the Moirai daughters of Nyx, then later daughters of Zeus and Themis. Plato's Republic book 10 presents Lachesis as daughter of Necessity: she instructs souls about to choose their next life, assigns lots, and displays the human and animal lives from which they may choose. Cicero's Parcae are children of Erebus and Night; Renaissance mythographers (Boccaccio and others) continue to dispute the Fates' origin while keeping Lachesis as the measuring middle sister."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lachesis"
+    }
+  ]
 }

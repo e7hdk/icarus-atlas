@@ -4,6 +4,9 @@
   "greekName": "Pythōn (Πύθων)",
   "romanName": "Python",
   "type": "creature",
+  "kinds": [
+    "dragon"
+  ],
   "cluster": "chthonic",
   "domains": [
     "earth-serpent",

@@ -1,20 +1,36 @@
 {
   "id": "clotho",
-  "summary": "Clotho or Klotho, is a mythological figure. She was one of the Three Fates or Moirai. In ancient Greek mythology, she spins the thread of human life while her sisters draw out (Lachesis) and cut (Atropos) the thread. She is generally considered the youngest of the three Fates, although in some later sources, such as Giovanni Boccaccio’s Genealogia Deorum Gentilium, she is described as the eldest among the Moirai. She also made major decisions, such as when a person was born, thus in effect controlling people's lives. This power enabled her not only to choose who was born, but also to decide when deities or mortals were to be saved or put to death. For example, Clotho resurrected Pelops when his father killed him. Her Roman equivalent is Nona.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Clotho"
-    }
-  ],
+  "summary": "Clotho (Klotho) is the spinner among the three Moirai. She draws out the thread of human life at birth while Lachesis measures it and Atropos cuts it. Generally the youngest Fate—though some later authors reverse the ages—she also figures in tales of Pelops' resurrection and the bargaining over Admetus' life. Her Roman counterpart is Nona.",
+  "attribution": "Adapted from Wikipedia, \"Clotho\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Κλωθώ, \"the Spinner\" — she who spins the thread.",
   "symbols": [
     "spindle",
-    "the thread of life"
+    "thread of life"
   ],
   "cultCenters": [
     "Corinth (sanctuary of the Moirai)",
     "Olympia"
   ],
-  "etymology": "Klotho, \"the Spinner\" — she who spins the thread."
+  "sections": [
+    {
+      "heading": "Spinner of the thread",
+      "paragraphs": [
+        "With her sisters Clotho embodies fate as textile work: birth is the spinning of a thread whose length and end the others fix. Hesiod first makes the Moirai daughters of Night, then—later in the Theogony—of Zeus and Themis; Plato's Republic names them daughters of Necessity. Cicero's Parcae are children of Erebus and Night.",
+        "She is usually youngest of the three; Boccaccio and a few others make her eldest. Beyond spinning, handbooks credit the Fates with wider interventions—persuading Zeus against Asclepius, aiding the gods against Giants—while Ariadne's ball of thread is sometimes likened to Clotho's spindle."
+      ]
+    },
+    {
+      "heading": "Pelops, Alcestis, and Meleager",
+      "paragraphs": [
+        "When Tantalus served his son Pelops to the gods, they reconstituted the boy in a cauldron; Clotho restored him to life, replacing the shoulder Demeter had eaten with ivory. In the Admetus cycle the Fates, once tricked or bound by hospitality, allow a substitute death—Alcestis offers herself until Heracles wrestles Thanatos.",
+        "In the Calydonian brand story the Fates announce at Meleager's birth that he will live only as long as a certain log burns; Althaea quenches and hides it, then rekindles it in revenge, and Meleager dies as the brand is consumed. The episode shows Clotho and her sisters fixing a life at its start."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Clotho"
+    }
+  ]
 }

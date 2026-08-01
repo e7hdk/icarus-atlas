@@ -1,6 +1,62 @@
 {
   "id": "troilus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Achilles and Troilus",
+      "artist": "Unknown (Roman)",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Achilles_Troilus_MAN_Napoli_Inv5999.jpg/960px-Achilles_Troilus_MAN_Napoli_Inv5999.jpg",
+      "description": "Roman marble group in the Naples National Archaeological Museum (inv. 5999), often read as Achilles seizing the boy Troilus. The warrior lifts the struggling youth — the ambush at the fountain that vase-painters made Troilus' defining death, here carved as a single fatal grasp."
+    },
+    {
+      "title": "Achilles Ambushing Troilus",
+      "artist": "Unknown (Etruscan)",
+      "year": "c. 530–520 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Achilles_ambushing_Troilus_%28on_horseback%29_Etruscan_fresco%2C_Tomb_of_the_Bulls%2C_Tarquinia%2C_530%E2%80%93520_BCE.jpg/960px-Achilles_ambushing_Troilus_%28on_horseback%29_Etruscan_fresco%2C_Tomb_of_the_Bulls%2C_Tarquinia%2C_530%E2%80%93520_BCE.jpg",
+      "description": "Etruscan wall painting in the Tomb of the Bulls at Tarquinia. Achilles crouches in ambush as Troilus rides past on horseback — one of the earliest monumental images of the Trojan prince's death, painted more than a century before the Classical vase tradition fixed the fountain scene."
+    },
+    {
+      "title": "Achilles Lying in Wait for Troilus",
+      "artist": "Attributed to the Painter of London B 76",
+      "year": "c. 560–550 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Achilles_Troilos_Polyxena_hydria_Met_45.11.2.jpg/960px-Achilles_Troilos_Polyxena_hydria_Met_45.11.2.jpg",
+      "description": "Attic black-figure hydria in the Metropolitan Museum of Art (45.11.2). Achilles lurks behind the fountain as Troilus and Polyxena approach to water their horses — the ambush that ends the youth before Troy falls, already a favourite subject of sixth-century Athenian painters."
+    },
+    {
+      "title": "A Scene from Troilus and Cressida",
+      "artist": "Angelica Kauffmann",
+      "year": "1789",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/A_Scene_from_Troilus_and_Cressida_-_Angelica_Kauffmann.jpg/960px-A_Scene_from_Troilus_and_Cressida_-_Angelica_Kauffmann.jpg",
+      "description": "Engraving by Luigi Schiavonetti after Angelica Kauffmann's 1789 painting of Shakespeare's Troilus and Cressida, Act V, Scene ii. Troilus watches as Cressida yields to Diomedes — the medieval romance of the Trojan prince restaged as bitter theatrical betrayal."
+    },
+    {
+      "title": "Troilus and Cressida in the Garden of Pandarus",
+      "artist": "Edward Henry Corbould",
+      "year": "1873",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Troilus_and_Cressida_in_the_Garden_of_Pandarus.jpg/960px-Troilus_and_Cressida_in_the_Garden_of_Pandarus.jpg",
+      "description": "Oil painting by the Victorian illustrator Edward Henry Corbould. Troilus and Cressida meet in Pandarus' garden — Chaucer's and Shakespeare's lovers before the war and the betrayal unmake them, the Trojan prince cast as courtly suitor rather than Achilles' victim."
+    }
+  ],
+  "films": [
+    {
+      "title": "The Face of Love",
+      "year": "1954",
+      "medium": "tv",
+      "director": "Alvin Rakoff",
+      "description": "BBC modern-dress Troilus and Cressida: Laurence Payne's Troilus watches love turn to betrayal — Shakespeare's bitter Trojan comedy for early television.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Face_of_Love_(1954_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Troilus and Cressida",
+      "year": "1954",
+      "kind": "opera",
+      "composer": "William Walton",
+      "description": "Walton's Covent Garden opera after Chaucer gives Troilus a full-length lyric voice — the Trojan prince as betrayed lover rather than fountain victim.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troilus_and_Cressida_(opera)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Troilus and Cressida",
@@ -9,6 +65,22 @@
       "creator": "William Shakespeare",
       "description": "Shakespeare's bitter Trojan comedy made Troilus the betrayed lover — medieval romance grafted onto the Iliad's doomed prince.",
       "externalUrl": "https://en.wikipedia.org/wiki/Troilus_and_Cressida"
+    },
+    {
+      "title": "Troilus and Criseyde",
+      "year": "c. 1380s",
+      "kind": "other",
+      "creator": "Geoffrey Chaucer",
+      "description": "Chaucer's long Middle English poem is Troilus' great medieval afterlife — courtly love, Criseyde's exchange, and the prince who dies still loving.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troilus_and_Criseyde"
+    },
+    {
+      "title": "Il Filostrato",
+      "year": "c. 1335–1340",
+      "kind": "other",
+      "creator": "Giovanni Boccaccio",
+      "description": "Boccaccio's ottava rima romance gave Chaucer his Troilus plot — the Trojan prince as love's prostrate victim before Shakespeare made him bitter.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Il_Filostrato"
     },
     {
       "title": "Troilus",

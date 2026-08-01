@@ -1,17 +1,43 @@
 {
   "id": "thanatos",
-  "summary": "In Greek mythology, Thanatos was the personification of death. He was a minor figure in Greek mythology, often referred to but rarely appearing in person.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Thanatos is the personification of death. A minor figure, he is often referred to but rarely appears in person. Hesiod makes him a fatherless son of Nyx (Night) and twin brother of Hypnos (Sleep). His Roman counterparts include Mors and Letum. He is associated with a peaceful death, in contrast to the bloodthirsty Keres of violent dying.",
+  "attribution": "Adapted from Wikipedia, \"Thanatos\" · CC BY-SA 4.0",
+  "etymology": "From Ancient Greek Thánatos (Θάνατος), \"death,\" related to thnēskō, \"I die.\"",
+  "symbols": [
+    "Inverted torch",
+    "Sword",
+    "Wings",
+    "Butterfly",
+    "Poppy",
+    "Theta"
+  ],
+  "sections": [
+    {
+      "heading": "Family and character",
+      "paragraphs": [
+        "Hesiod's Theogony names Thanatos among the children of Nyx alone; Homer earlier calls Hypnos and Thanatos twin brothers. His siblings include other dark personifications such as Geras, Oizys, Moros, Apate, Momus, Eris, and Nemesis. He was loosely associated with the Moirai, especially Atropos. His duties as guide of the dead sometimes overlapped with Hermes Psychopompos.",
+        "Hesiod contrasts the brothers: Sleep roams the earth kindly toward men, but Death has a heart of iron, pitiless as bronze, hateful even to the deathless gods. Whomsoever he seizes he holds fast. In later eras he could also be imagined as a gentle ephebe, closer to a quiet passing than a woeful demise."
+      ]
+    },
+    {
+      "heading": "Sarpedon, Sisyphus, and Alcestis",
+      "paragraphs": [
+        "In the Iliad, Zeus through Apollo charges Hypnos and Thanatos with carrying the body of Sarpedon from the Trojan battlefield to Lycia — a scene famous on the Euphronios Krater and on white-ground lekythoi.",
+        "Myths that feature Thanatos show him occasionally outwitted. Zeus ordered him to chain Sisyphus in Tartarus; Sisyphus trapped Thanatos in his own shackles, so that no one could die until Ares freed Death and handed Sisyphus over. Sisyphus escaped again by persuading Persephone to let him return aboveground, and was finally dragged back by Hermes. In Euripides' Alcestis, Thanatos comes for Alcestis, who dies in her husband Admetus's place; Heracles overpowers Death and wins her return."
+      ]
+    },
+    {
+      "heading": "Iconography",
+      "paragraphs": [
+        "Thanatos is usually winged, often with a sheathed sword, and frequently carries an inverted torch representing a life extinguished. He may hold a butterfly (psychē meaning both soul and butterfly) or a wreath of poppies. Euripides dresses him in black with a sword that consecrates the dying to the gods below.",
+        "Roman sarcophagi often show him as a winged boy akin to Cupid with crossed legs and torch reversed. He is rarely portrayed without Hypnos. An Orphic Hymn addresses him as the common end of all ages and sexes, whose rage no vow can revoke."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Thanatos"
     }
-  ],
-  "symbols": [
-    "wings",
-    "an extinguished torch",
-    "the sword that cuts the lock of the dying"
-  ],
-  "etymology": "From thanatos, \"death\"."
+  ]
 }

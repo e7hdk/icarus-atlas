@@ -1,6 +1,35 @@
 {
   "id": "ismene",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ismene and Antigone Plead with Theseus",
+      "artist": "Nicolai Abildgaard",
+      "year": "c. 1794",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg/960px-Nicolai_Abildgaard_-_Ismene_and_Antogone_Plead_with_Theseus_-_KMS7593_-_Statens_Museum_for_Kunst.jpg",
+      "description": "Abildgaard's oil in the Statens Museum for Kunst shows the Theban sisters before Theseus, begging for their father's resting place at Colonus. Ismene stands with Antigone as co-suppliant — not the cautious foil of Sophocles' Antigone alone, but a daughter still pleading in the wake of Oedipus."
+    },
+    {
+      "title": "Oedipus Condemns Polynices (with Ismene and Antigone)",
+      "artist": "André Marcel Baschet",
+      "year": "1883",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Baschet%2C_Andr%C3%A9_Marcel_-_%C3%96dipus_verurteilt_Polyneikes_-_1883.jpg",
+      "description": "Baschet's academic canvas stages the Colonus curse: blind Oedipus turns on Polynices while Ismene and Antigone frame the scene. The quieter sister is present as witness — filial piety caught between brothers already doomed."
+    },
+    {
+      "title": "Tydeus and Ismene (Corinthian amphora, Louvre E640)",
+      "artist": "Unknown (Corinthian painter)",
+      "year": "c. 560 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Tydeus_Ismene_Louvre_E640.jpg/960px-Tydeus_Ismene_Louvre_E640.jpg",
+      "description": "A Corinthian black-figure amphora in the Louvre names Ismene beside Tydeus — a rare archaic image of the Theban princess in the cycle of the Seven against Thebes. The vase preserves a darker local strand in which Ismene herself falls in the war her brothers began."
+    },
+    {
+      "title": "Antigone and Ismene",
+      "artist": "Heinz Kiwitz",
+      "year": "1931",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Heinz_Kiwitz_Antigone_und_Ismene_1931.jpg",
+      "description": "Kiwitz's 1931 print pairs the sisters as a modern woodcut dialogue — Antigone's resolve set against Ismene's caution. The image keeps Sophocles' two voices in one frame, Ismene no longer a footnote but the necessary other half of the argument."
+    }
+  ],
   "films": [
     {
       "title": "Antigone",

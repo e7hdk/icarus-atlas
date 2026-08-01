@@ -1,17 +1,13 @@
 {
   "id": "ares",
-  "summary": "Ares is the Greek god of war and courage. He is one of the Twelve Olympians, and the son of Zeus and Hera. Many Greeks were ambivalent towards him. He embodies the physical valor necessary for success in war but can also personify sheer brutality and bloodlust, in contrast to his sister Athena, whose martial functions include military strategy and generalship. An association with Ares endows places, objects, and other deities with a savage, dangerous, or militarized quality.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Ares"
-    }
-  ],
+  "summary": "Ares is the Greek god of war and courage, one of the Twelve Olympians and son of Zeus and Hera. He embodies the physical fury and bloodlust of battle, in contrast to Athena's strategic generalship. Many Greeks were ambivalent toward him; in myth he is often humiliated. His nearest Roman counterpart is Mars, who held a far more dignified place in Roman state religion.",
+  "attribution": "Adapted from Wikipedia, \"Ares\" · CC BY-SA 4.0",
+  "etymology": "Traditionally linked to ἀρή / ἀρά (\"bane, ruin, curse\"); Burkert treats Ares as an ancient abstract noun for the throng of battle. The Mycenaean form a-re is attested in Linear B. Beekes suggested a Pre-Greek origin. The epithet Enyalios is sometimes identical with Ares, sometimes a distinct war god.",
   "symbols": [
     "spear",
     "helmet",
-    "shield"
+    "shield",
+    "sword"
   ],
   "sacredAnimals": [
     "vulture",
@@ -19,9 +15,38 @@
     "serpent"
   ],
   "cultCenters": [
-    "Thrace (his mythic homeland)",
+    "Thrace (mythic homeland)",
     "Sparta",
-    "Areopagus (Athens)"
+    "Areopagus (Athens)",
+    "Metropolis (Asia Minor)"
   ],
-  "etymology": "Linked to are, \"ruin, bane\" — perhaps an old abstract noun for the havoc of war."
+  "sections": [
+    {
+      "heading": "Character in myth",
+      "paragraphs": [
+        "In the Iliad Zeus calls Ares the most hateful of the Olympians, forever delighting in quarrel and war. Aphrodite persuades him to fight for Troy; Athena aids the Greeks and he is wounded and mocked. The Odyssey's song of Ares and Aphrodite trapped in Hephaestus' net became the best-known comic episode of his love life.",
+        "Children ascribed to him include Phobos, Deimos, Harmonia, and (in some traditions) the Amazons. An association with Ares marks places and objects as savage or militarised; when he appears in narrative, he typically suffers defeat or ridicule."
+      ]
+    },
+    {
+      "heading": "Cult",
+      "paragraphs": [
+        "Mainland temples were relatively few. The Areopagus in Athens was named for his trial and acquittal after he killed Poseidon's son Halirrhothius. Sparta bound an archaic statue of Ares/Enyalios in chains so that the spirit of war would stay in the city; similar chained images appear in Pamphylian oracle instructions.",
+        "Thrace was imagined as his homeland. In parts of Asia Minor he was a prominent oracular and civic protector, better attested on coinage than in mainland Greece. Scythian sword-cult and Aksumite royal inscriptions under the name Ares show how far interpretatio Graeca carried the war god."
+      ]
+    },
+    {
+      "heading": "Rome and later tradition",
+      "paragraphs": [
+        "Roman Mars absorbed Ares' myths during the Hellenization of Latin literature, but Mars remained an ancestral guardian of the Roman people rather than a figure of pure bloodlust. Tuesday (hēméra Áreōs) and the planet Mars preserve his name in the calendar and sky.",
+        "Attributes are the instruments of war: helmet, shield, spear or sword. Vultures and dogs accompany him in art and omen lore as scavengers of the battlefield."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ares"
+    }
+  ]
 }

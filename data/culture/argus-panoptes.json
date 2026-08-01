@@ -1,6 +1,28 @@
 {
   "id": "argus-panoptes",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Juno and Argus",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1610",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Peter_Paul_Rubens_-_Juno_and_Argus_-_WGA20280.jpg/960px-Peter_Paul_Rubens_-_Juno_and_Argus_-_WGA20280.jpg",
+      "description": "Rubens's Wallraf–Richartz canvas shows Juno claiming the eyes of the slain hundred-eyed watchman — Argus's gaze transferred to the peacock's tail."
+    },
+    {
+      "title": "Mercury and Argus",
+      "artist": "Diego Velázquez",
+      "year": "c. 1659",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Diego_Vel%C3%A1zquez_-_Mercury_and_Argus_-_WGA24471.jpg/960px-Diego_Vel%C3%A1zquez_-_Mercury_and_Argus_-_WGA24471.jpg",
+      "description": "Velázquez's Prado night-piece: Mercury pipes Argus to sleep before the killing stroke — the all-seeing guardian undone by music and a single blade."
+    },
+    {
+      "title": "Mercury and Argus",
+      "artist": "Peter Paul Rubens",
+      "year": "1636–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Peter_Paul_Rubens_-_Mercury_and_Argus_-_WGA20315.jpg",
+      "description": "Rubens's Dresden painting catches Hermes lulling the many-eyed Argus as Io the heifer waits nearby — the spy of Hera about to lose every waking eye."
+    }
+  ],
   "popCulture": [
     {
       "title": "Argus Panoptes",

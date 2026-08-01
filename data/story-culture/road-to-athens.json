@@ -1,6 +1,35 @@
 {
   "id": "road-to-athens",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Aethra Showing her Son Theseus the Place Where his Father had Hidden his Arms",
+      "artist": "Nicolas-Guy Brenet",
+      "year": "1768",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nicolas-Guy_Brenet_-_Aethra_Showing_her_Son_Theseus_the_Place_Where_his_Father_had_Hidden_his_Arms.jpg/960px-Nicolas-Guy_Brenet_-_Aethra_Showing_her_Son_Theseus_the_Place_Where_his_Father_had_Hidden_his_Arms.jpg",
+      "description": "Brenet's Troezen — Aethra shows Theseus where Aegeus hid the sword and sandals, the tokens that start the Isthmus road."
+    },
+    {
+      "title": "Theseus Finding his Father's Sword (Thésée retrouve l'épée de son père)",
+      "artist": "Nicolas Poussin and Jean Lemaire",
+      "year": "c. 1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Th%C3%A9s%C3%A9e_retrouve_l%27%C3%A9p%C3%A9e_de_son_p%C3%A8re_-_Poussin_-_c1638.jpg/960px-Th%C3%A9s%C3%A9e_retrouve_l%27%C3%A9p%C3%A9e_de_son_p%C3%A8re_-_Poussin_-_c1638.jpg",
+      "description": "Poussin and Lemaire — Theseus recovering his father's arms under the rock, then turning toward Athens on foot."
+    },
+    {
+      "title": "Theseus and Pirithous Clearing the Earth of Brigands",
+      "artist": "Angélique Mongez",
+      "year": "1806",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Theseus_and_Pirithous%2C_1806%2C_by_Angelique_Mongez.jpg/960px-Theseus_and_Pirithous%2C_1806%2C_by_Angelique_Mongez.jpg",
+      "description": "Mongez's brigand-clearing — Theseus and Pirithous making the road safe, the labours that name the journey to Athens."
+    },
+    {
+      "title": "Theseus Recognized by his Father",
+      "artist": "Hippolyte Flandrin",
+      "year": "1832",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Hippolyte_Flandrin_-_Theseus_Recognized_by_his_Father_-_1832.jpg/960px-Hippolyte_Flandrin_-_Theseus_Recognized_by_his_Father_-_1832.jpg",
+      "description": "Flandrin's recognition — Theseus known by Aegeus at Athens, the road's end when the sword proves the son."
+    }
+  ],
   "popCulture": [
     {
       "title": "Theseus",

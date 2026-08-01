@@ -34,9 +34,16 @@
       "citation": "Metamorphoses 11.66–129"
     },
     {
-      "text": "Ovid and Apollodorus name Ciconian matrons on a Thracian hill, not a polis — a collective actor at Orpheus' death. Residence stays deferred.",
+      "text": "Ovid names them Ciconian matrons of Thrace; Apollodorus leaves the Maenads ethnonym-free. Their seat is the Ciconian land that also sends Homeric spearmen to Troy.",
       "sources": ["apollodorus", "ovid"],
       "citation": "Bibliotheca 1.3.2; Metamorphoses 11.1–66"
+    }
+  ],
+  "residences": [
+    {
+      "city": "ciconia-thrace",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 11.1–66"
     }
   ]
 }

@@ -1,27 +1,53 @@
 {
   "id": "athena",
-  "summary": "Athena or Athene, often given the epithet Pallas, is an ancient Greek goddess associated with wisdom, warfare, and handicraft who was later syncretised with the Roman goddess Minerva. Athena was regarded as the patron and protectress of various cities across Greece, particularly the city of Athens, from which she most likely received her name. Her major symbols include owls, olive trees, snakes, and the gorgoneion. In art, she is generally depicted wearing a helmet and holding a spear.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "Athena (Athene), often called Pallas, is the ancient Greek goddess of wisdom, warfare, and handicraft, later syncretised with Roman Minerva. Patron and protectress of many cities—above all Athens—she is marked by the owl, olive tree, serpent, aegis, and gorgoneion. In art she usually wears a helmet and carries a spear. Her chief Athenian festival was the Panathenaia.",
+  "attribution": "Adapted from Wikipedia, \"Athena\" · CC BY-SA 4.0",
+  "etymology": "The goddess most likely takes her name from the city Athens (Ἀθῆναι), a pre-Greek toponym; ancient debate ran both ways. Plato's Cratylus offers folk links to \"mind\" and \"divine intelligence.\" Mycenaean a-ta-na po-ti-ni-ja at Knossos may already name a Mistress Athena or Lady of Athana.",
+  "symbols": [
+    "owl",
+    "olive tree",
+    "aegis",
+    "gorgoneion",
+    "helmet and spear"
+  ],
+  "sacredAnimals": [
+    "owl",
+    "serpent",
+    "horse"
+  ],
+  "cultCenters": [
+    "Athens (Acropolis / Parthenon)",
+    "Lindos (Rhodes)",
+    "Tegea",
+    "Troy (Palladium)"
+  ],
+  "sections": [
+    {
+      "heading": "Birth and city patronage",
+      "paragraphs": [
+        "In Hesiod, Zeus swallows the pregnant Metis and Athena springs fully armed from his forehead. As Polias and Poliouchos she guards the fortified acropolis; the Parthenon and countless other temples honour her. In Athens' founding contest she defeats Poseidon by giving the olive tree.",
+        "Epithets map her roles: Parthenos (virgin), Promachos (who fights in front), Ergane (of crafts), Hippia (of horses), Glaukopis (bright-eyed). The palladium—a talismanic statue—was said to keep Troy safe until the Greeks seized it."
+      ]
+    },
+    {
+      "heading": "Heroes and epic",
+      "paragraphs": [
+        "Athena sponsors heroic endeavour: she aids Perseus, Heracles, Bellerophon, and Jason, and in the Odyssey she is Odysseus' tutelary deity. With Aphrodite and Hera she is one of the three goddesses whose quarrel at the judgment of Paris leads into the Trojan War; in the Iliad she fights for the Achaeans.",
+        "Later Latin myth elaborates her contests with Arachne and her transformation of Medusa—stories that shaped Renaissance and modern allegory of wisdom, the arts, and civic virtue."
+      ]
+    },
+    {
+      "heading": "Worship and origins",
+      "paragraphs": [
+        "The Panathenaia in Hekatombaion was Athens' greatest festival. As Aegean palace goddess she preserves older craft and kingship cult; scholars also compare Near Eastern warrior goddesses and the Egyptian Neith, whom Plato identified with Athena at Sais.",
+        "The owl became Athens' civic emblem on coinage; the olive remains her tree. Roman Minerva carried her identity into Latin religion, and since the Renaissance she has stood internationally for wisdom, learning, and democratic freedom."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Athena"
     }
-  ],
-  "symbols": [
-    "owl",
-    "olive tree",
-    "aegis",
-    "gorgoneion"
-  ],
-  "sacredAnimals": [
-    "owl",
-    "serpent"
-  ],
-  "cultCenters": [
-    "Athens (Acropolis)",
-    "Lindos (Rhodes)",
-    "Tegea"
-  ],
-  "etymology": "Named for Athens, or Athens for her — the ancients themselves disagreed; the name is pre-Greek."
+  ]
 }

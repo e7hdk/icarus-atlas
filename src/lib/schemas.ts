@@ -168,6 +168,88 @@ export const sacredDaySchema = z.object({
 
 export const sacredDaysSchema = z.array(sacredDaySchema);
 
+/** One of Ptolemy's 48 — the Greek sky (data/sky/constellations.json, baked by
+ *  scripts/build-sky.ts). Stars carry real RA/Dec in degrees, so the sky hangs
+ *  on a celestial sphere rather than an invented plane; `lines` are the
+ *  classical figure as index pairs. `story` appears only where the ancients
+ *  record the catasterism, and then carries its testimonia the way festivals
+ *  do — lens-independent reference data. */
+export const constellationSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+  name: z.string().min(1),
+  /** What the figure IS, in plain English: "The Great Bear", "The Hunter". */
+  figure: z.string().min(1),
+  /** Modern IAU abbreviations the figure covers (Argo Navis covers four). */
+  iau: z.array(z.string().min(2)).min(1),
+  /** An asterism inside another figure (the Pleiades in Taurus) names its host. */
+  asterism: z.string().min(1).optional(),
+  greekName: z.string().min(1).optional(),
+  /** The constellation IS this person or thing — a claim the ancients record,
+   *  so it carries its testimonia. `character` appears only where the atlas
+   *  holds that figure; the Argo is a ship, not a character. */
+  catasterism: z
+    .object({
+      /** Some figures are two people (the Twins, the Fishes); some are a thing
+       *  with no character at all; and where the ancients disagree about WHO it
+       *  is, this stays empty and the tellings are laid out in the testimonia. */
+      characters: z.array(z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/)).min(1).optional(),
+      testimonia: z.array(z.string().min(1)).min(1),
+    })
+    .optional(),
+  /** How the figure came to the sky, told in the atlas's own fact grammar:
+   *  sourced paragraphs with citations, so the lens reads them like any other
+   *  prose. This is the constellation's own story — it stands whether or not
+   *  the same events are also told inside a myth. */
+  origin: z.array(sourcedTextSchema).min(1).optional(),
+  /** Sagas whose own telling looks up and names this figure — a different claim
+   *  from being it: Odysseus steers by the Bear, he is not the Bear. */
+  namedIn: z
+    .array(
+      z.object({
+        story: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'story must be kebab-case'),
+        testimonia: z.array(z.string().min(1)).min(1),
+      }),
+    )
+    .min(1)
+    .optional(),
+  stars: z
+    .array(
+      z.object({
+        name: z.string().min(1),
+        bayer: z.string(),
+        ra: z.number().min(0).max(360),
+        dec: z.number().min(-90).max(90),
+        mag: z.number(),
+        /** The figure standing in this star — only where the sources name them
+         *  star by star, which in the Greek sky means the Pleiades. */
+        character: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/).optional(),
+      }),
+    )
+    .min(2),
+  lines: z.array(z.tuple([z.number().int().min(0), z.number().int().min(0)])).min(1),
+});
+
+export const constellationsFileSchema = z.object({
+  note: z.string().min(1),
+  /** Where the sky came from and under what terms — CC BY-SA obliges us. */
+  attribution: z.object({
+    lines: z.object({
+      work: z.string().min(1),
+      author: z.string().min(1),
+      url: z.string().url(),
+      licence: z.string().min(1),
+      note: z.string().min(1).optional(),
+    }),
+    positions: z.object({
+      work: z.string().min(1),
+      author: z.string().min(1),
+      url: z.string().url(),
+      licence: z.string().min(1),
+    }),
+  }),
+  constellations: z.array(constellationSchema).min(1),
+});
+
 export const festivalSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
   name: z.string().min(1),

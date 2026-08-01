@@ -10,9 +10,27 @@ interface GalaxyState {
   isDiving: boolean;
   searchOpen: boolean;
   settingsOpen: boolean;
+  /** Where the camera should fly for the current selection, when that is NOT
+   *  the star's own place on the disc. The week's catasterism hangs copies of
+   *  its cast high above the galaxy: clicking one opens that character, but
+   *  the camera must rise to the copy the visitor actually clicked. */
+  focusPoint: [number, number, number] | null;
+  /** How far the camera should stand off that focus. The sky's stars are drawn
+   *  tens of units wide at their distance, so the galaxy's close framing would
+   *  put the camera inside them. */
+  focusDistance: number | null;
+  /** A constellation the visitor has flown out to read — the sky's own focus,
+   *  independent of any character selection. */
+  skyFocus: { id: string; at: [number, number, number]; distance: number } | null;
+  setSkyFocus: (focus: GalaxyState['skyFocus']) => void;
   setLens: (lens: LensId) => void;
   setHovered: (id: string | null) => void;
   select: (id: string | null) => void;
+  selectAt: (
+    id: string,
+    focusPoint: [number, number, number],
+    focusDistance?: number | null,
+  ) => void;
   setDiving: (isDiving: boolean) => void;
   setSearchOpen: (open: boolean) => void;
   setSettingsOpen: (open: boolean) => void;
@@ -32,6 +50,9 @@ export const useGalaxyStore = create<GalaxyState>()(
       hoveredId: null,
       selectedId: null,
       isDiving: false,
+      focusPoint: null,
+      focusDistance: null,
+      skyFocus: null,
       searchOpen: false,
       settingsOpen: false,
       spacingScale: 6.1,
@@ -39,7 +60,11 @@ export const useGalaxyStore = create<GalaxyState>()(
       musicVolume: 0.45,
       setLens: (lens) => set({ lens }),
       setHovered: (hoveredId) => set({ hoveredId }),
-      select: (selectedId) => set({ selectedId, hoveredId: null, isDiving: false }),
+      select: (selectedId) =>
+        set({ selectedId, hoveredId: null, isDiving: false, focusPoint: null, focusDistance: null }),
+      selectAt: (selectedId, focusPoint, focusDistance = null) =>
+        set({ selectedId, hoveredId: null, isDiving: false, focusPoint, focusDistance }),
+      setSkyFocus: (skyFocus) => set({ skyFocus }),
       setDiving: (isDiving) => set({ isDiving }),
       setSearchOpen: (searchOpen) =>
         set((state) => ({

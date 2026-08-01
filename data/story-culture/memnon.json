@@ -1,13 +1,40 @@
 {
   "id": "memnon",
-  "artworks": [],
-  "popCulture": [
+  "artworks": [
     {
-      "title": "Memnon (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "Memnon's duel with Achilles and the Colossi that bear his name keep Eos' son at the edge of Troy and Egypt alike.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Memnon_(mythology)"
+      "title": "Eos Lifting the Body of Memnon (Douris kylix)",
+      "artist": "Douris",
+      "year": "c. 490–480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Eos_Memnon_Louvre_G115.jpg/960px-Eos_Memnon_Louvre_G115.jpg",
+      "description": "Douris' Louvre kylix — Dawn gathers her son's corpse after Achilles' duel, the Aethiopis grief made red-figure."
+    },
+    {
+      "title": "Hydria with the Fight of Achilles and Memnon",
+      "artist": "Unknown Corinthian painter",
+      "year": "c. 575–550 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg/960px-Greek_-_Hydria_with_the_Fight_of_Achilles_and_Memnon_-_Walters_482230.jpg",
+      "description": "Corinthian hydria — Achilles and Memnon locked in combat, Thetis and Eos at their sons' sides."
+    },
+    {
+      "title": "Achilles and Memnon between Thetis and Eos",
+      "artist": "Painter of Munich 1410",
+      "year": "c. 510 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Akhilleus_Memnon_Staatliche_Antikensammlungen_1410.jpg/960px-Akhilleus_Memnon_Staatliche_Antikensammlungen_1410.jpg",
+      "description": "Attic black-figure — the two mothers watch as Achilles and Memnon fight for Troy's last eastern ally."
+    },
+    {
+      "title": "Achilles Fighting Memnon",
+      "artist": "Unknown Greek painter",
+      "year": "6th–5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Achilles_fighting_against_Memnon_Leiden_Rijksmuseum_voor_Oudheden.jpg",
+      "description": "Leiden vase — the Aethiopian king against Achilles, the duel that ends Memnon's brief aristeia."
+    },
+    {
+      "title": "Monteleone Chariot (Achilles and Memnon panel)",
+      "artist": "Unknown Etruscan bronze-worker",
+      "year": "c. 530–520 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bronze_chariot_inlaid_with_ivory_MET_DP137936.jpg/960px-Bronze_chariot_inlaid_with_ivory_MET_DP137936.jpg",
+      "description": "Etruscan bronze chariot panel — Achilles and Memnon's combat carried west of Greece, the Aethiopis in ivory and bronze."
     }
   ]
 }

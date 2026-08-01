@@ -1,6 +1,35 @@
 {
   "id": "tereus-procne-philomela",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Rape of Philomela by Tereus",
+      "artist": "Virgil Solis",
+      "year": "1562",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Virgil_Solis_-_Tereus_Philomela.jpg",
+      "description": "The rape of Philomela — Tereus' crime that starts the Thracian house's metamorphosis into nightingale, swallow, and hoopoe."
+    },
+    {
+      "title": "Philomela and Procne Preparing to Kill Itys (Athenian wine cup)",
+      "artist": "Unknown",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Philomela_Procne_preparing_to_kill_Itys.jpg",
+      "description": "Procne and Philomela prepare to kill Itys — the sisters' revenge banquet before the feathers close the myth."
+    },
+    {
+      "title": "Tereus Confronted with the Head of his Son Itys",
+      "artist": "Peter Paul Rubens",
+      "year": "1636–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tereo.jpg/960px-Tereo.jpg",
+      "description": "Tereus confronted with Itys' head — the recognition that turns the Thracian king into the pursuing hoopoe."
+    },
+    {
+      "title": "Statue of Procne and Itys",
+      "artist": "Alkamenes",
+      "year": "c. 430-420 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Athens_Acropolis_Museum_Marble_Statue_of_Prokne_and_Itys%2C_by_Sculptor_Alkamenes%2C_430-420_BC_%2828409431716%29.jpg/960px-Athens_Acropolis_Museum_Marble_Statue_of_Prokne_and_Itys%2C_by_Sculptor_Alkamenes%2C_430-420_BC_%2828409431716%29.jpg",
+      "description": "The statue of Procne and Itys — maternal grief cast in marble at the hinge of the bird-metamorphosis tale."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

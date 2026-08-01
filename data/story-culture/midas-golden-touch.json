@@ -1,6 +1,35 @@
 {
   "id": "midas-golden-touch",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Midas Washing at the Source of the Pactolus",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1627",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Midas_Washing_at_the_Source_of_the_Pactolus_MET_DP123854.jpg/960px-Midas_Washing_at_the_Source_of_the_Pactolus_MET_DP123854.jpg",
+      "description": "Poussin's Metropolitan canvas — the Phrygian king scrubbing the golden curse from his hands in the Pactolus, Ovid's remedy made landscape."
+    },
+    {
+      "title": "Midas and Bacchus",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1624",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Midas_und_Bacchus%2C_um_1624.jpg/960px-Midas_und_Bacchus%2C_um_1624.jpg",
+      "description": "Midas before Bacchus begging release from the gift that starves him — the golden touch as a theological bargain, not a fairy-tale joke."
+    },
+    {
+      "title": "King Midas with his Daughter",
+      "artist": "Walter Crane",
+      "year": "1893",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Midas_gold2.jpg/960px-Midas_gold2.jpg",
+      "description": "Crane's Wonder Book plate — Hawthorne's Midas discovering that the touch that gilds a rose can also freeze a child to gold."
+    },
+    {
+      "title": "The Golden Touch",
+      "artist": "Mary Hamilton Frye",
+      "year": "1910",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/The-Golden-Touch.jpg/960px-The-Golden-Touch.jpg",
+      "description": "Frye's illustration of the stranger's cure — plunge into the river, sprinkle the water, and wash the fatal gift away."
+    }
+  ],
   "films": [
     {
       "title": "The Golden Touch",

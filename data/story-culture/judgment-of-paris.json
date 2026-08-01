@@ -1,6 +1,35 @@
 {
   "id": "judgment-of-paris",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1632–1635",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rubens_-_Judgement_of_Paris.jpg/960px-Rubens_-_Judgement_of_Paris.jpg",
+      "description": "Rubens' National Gallery canvas — Mercury beside the shepherd-prince as he awards the golden apple to Venus, while Juno and Minerva wait for the verdict that will burn Troy."
+    },
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Lucas Cranach the Elder",
+      "year": "c. 1537–1540",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/CRANACH_the_Elder%2C_Lucas_-_The_Judgement_of_Paris_%281537-40%29.JPG/960px-CRANACH_the_Elder%2C_Lucas_-_The_Judgement_of_Paris_%281537-40%29.JPG",
+      "description": "Cranach's German Renaissance Ida: armoured Paris between the three goddesses and the apple of Eris — the contest restaged as courtly spectacle before the war."
+    },
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Enrique Simonet",
+      "year": "1904",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg/960px-Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg",
+      "description": "Simonet's Málaga canvas sets Hera, Athena and Aphrodite before the herdsman among his flock — the seed of the Trojan War under Ida's trees."
+    },
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Lucas Cranach the Elder",
+      "year": "1528",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Judgement_of_Paris_by_Lucas_Cranach_the_Elder_%281528%29.jpg/960px-Judgement_of_Paris_by_Lucas_Cranach_the_Elder_%281528%29.jpg",
+      "description": "An earlier Cranach reading of the same choice — Paris in armour, the goddesses unveiled, Mercury's apple still unawarded."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

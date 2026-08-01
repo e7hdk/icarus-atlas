@@ -4,6 +4,9 @@
   "greekName": "Hydra (Ὕδρα)",
   "romanName": "Hydra Lernaea",
   "type": "creature",
+  "kinds": [
+    "dragon"
+  ],
   "cluster": "chthonic",
   "domains": [
     "serpents",

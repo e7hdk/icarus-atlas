@@ -50,12 +50,15 @@ export function festivalOn(
   const hits: FestivalContext[] = [];
   for (const festival of festivals) {
     if (festival.gamesCycle) {
-      // Olympiad window: peak ± 2 days, only in years the table marks.
-      if (atticInfo?.olympicPeak) {
+      // Only the Olympics have a baked peak (M12.5). Other crown games keep
+      // `games` metadata for the Heortologion but wait for their own anchors —
+      // never share the Olympiad window (alphabetical id would steal Zeus's day).
+      if (festival.id === 'olympic-games' && atticInfo?.olympicPeak) {
         const offset = Math.round((utcOf(isoDate) - utcOf(atticInfo.olympicPeak)) / DAY_MS);
         if (Math.abs(offset) <= 2) hits.push({ festival, day: offset + 3, of: 5 });
       }
-      continue;
+      if (festival.id === 'olympic-games') continue;
+      // Non-Olympic games: fall through to attic/conventional when present.
     }
     if (atticInfo && festival.atticDate) {
       const [start, end = start] = festival.atticDate.days;

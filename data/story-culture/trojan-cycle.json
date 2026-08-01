@@ -1,6 +1,42 @@
 {
   "id": "trojan-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1632-1635",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rubens_-_Judgement_of_Paris.jpg/960px-Rubens_-_Judgement_of_Paris.jpg",
+      "description": "Rubens' Judgement of Paris — the apple that opens the whole Trojan Cycle from wedding quarrel to ten-year war."
+    },
+    {
+      "title": "The Loves of Paris and Helen",
+      "artist": "Jacques-Louis David",
+      "year": "1788",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Les_amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3696_%3B_MR_1439.jpg/960px-Les_amours_de_P%C3%A2ris_et_d%27H%C3%A9l%C3%A8ne_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3696_%3B_MR_1439.jpg",
+      "description": "David's Loves of Paris and Helen — the abduction that binds Sparta to Troy and launches the Achaean fleet."
+    },
+    {
+      "title": "Hector Taking Leave of Andromache",
+      "artist": "Angelica Kauffman",
+      "year": "1768",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg/960px-Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg",
+      "description": "Kauffman's Hector taking leave of Andromache — the Iliad's human centre inside the larger Cycle."
+    },
+    {
+      "title": "Aeneas' Flight from Troy",
+      "artist": "Federico Barocci",
+      "year": "1598",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg/960px-Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg",
+      "description": "Barocci's Flight from Troy — the Cycle's Roman afterlife as Aeneas carries Anchises from the burning city."
+    },
+    {
+      "title": "Triumphant Achilles",
+      "artist": "Franz Matsch",
+      "year": "c. 1892",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Triumphant_Achilles_in_Achilleion.jpg/960px-Triumphant_Achilles_in_Achilleion.jpg",
+      "description": "Matsch's Triumphant Achilles — Hector dragged before the walls, the wrath that defines the war's middle books."
+    }
+  ],
   "popCulture": [
     {
       "title": "Trojan War",

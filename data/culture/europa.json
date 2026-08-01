@@ -37,20 +37,37 @@
       "description": "Young Goya paints Europa's bull-ride with Rococo lightness — the Phoenician princess still aloft on Zeus, the myth that named a continent restaged for an eighteenth-century Spanish wall."
     }
   ],
+  "music": [
+    {
+      "title": "Europa riconosciuta",
+      "year": "1778",
+      "kind": "opera",
+      "composer": "Antonio Salieri",
+      "description": "Salieri's opera for the opening of La Scala returns Europa of Tyre — once Zeus' lover — to reclaim her name and settle a Phoenician throne war.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Europa_riconosciuta"
+    }
+  ],
   "popCulture": [
     {
       "title": "Europe",
       "year": "—",
-      "kind": "other",
+      "kind": "brand",
       "description": "The continent took the Phoenician princess's name — Zeus' bull-ride became the label for a whole half of the world map.",
       "externalUrl": "https://en.wikipedia.org/wiki/Europe"
     },
     {
       "title": "Europa (moon)",
       "year": "1610",
-      "kind": "other",
+      "kind": "brand",
       "description": "Jupiter's ice moon keeps the princess beside the god who carried her — Europa orbiting Zeus under another name.",
       "externalUrl": "https://en.wikipedia.org/wiki/Europa_(moon)"
+    },
+    {
+      "title": "Europa series",
+      "year": "2013–",
+      "kind": "brand",
+      "description": "The euro banknote redesign takes her name and a Hellenistic vase portrait — the princess as the face of a currency, not a film about the bull.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Europa_series"
     }
   ]
 }

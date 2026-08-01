@@ -1,6 +1,45 @@
 {
   "id": "acis-galatea",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Acis and Galatea",
+      "artist": "Luca Giordano",
+      "year": "c. 1685",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bemberg_Fondation_Toulouse_-_Acis_et_Galat%C3%A9e_-_Luca_Giordano_%28ca1685%29_120%2C6x190%2C5_inv.1074.jpg/960px-Bemberg_Fondation_Toulouse_-_Acis_et_Galat%C3%A9e_-_Luca_Giordano_%28ca1685%29_120%2C6x190%2C5_inv.1074.jpg",
+      "description": "Giordano stages Ovid's Sicilian triangle at the fatal instant: Galatea with Acis while Polyphemus looms with the rock that will crush him."
+    },
+    {
+      "title": "Acis and Galatea",
+      "artist": "Claude Lorrain",
+      "year": "1657",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Claude_Lorrain_008.jpg/960px-Claude_Lorrain_008.jpg",
+      "description": "Claude's golden pastoral: the lovers at ease before the Cyclops' jealousy — Sicilian idyll as classical landscape."
+    },
+    {
+      "title": "Acis, Galatea, and Polyphemus",
+      "artist": "François Perrier",
+      "year": "c. 1645–1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Fran%C3%A7ois_Perrier_-_Acis%2C_Galatea%2C_and_Polyphemus_-_WGA17206.jpg/960px-Fran%C3%A7ois_Perrier_-_Acis%2C_Galatea%2C_and_Polyphemus_-_WGA17206.jpg",
+      "description": "Perrier's Louvre canvas: Galatea and Acis slip away while Polyphemus watches from the rocks — the boulder already waiting."
+    },
+    {
+      "title": "Polyphemus and Galatea (Boscotrecase)",
+      "artist": "Unknown (Roman)",
+      "year": "c. 10 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Wall_painting-_Polyphemus_and_Galatea_in_a_landscape%2C_from_the_imperial_villa_at_Boscotrecase_MET_DP140711.jpg/960px-Wall_painting-_Polyphemus_and_Galatea_in_a_landscape%2C_from_the_imperial_villa_at_Boscotrecase_MET_DP140711.jpg",
+      "description": "Third-Style fresco from Boscotrecase: Polyphemus among his flock as Galatea rides a dolphin — the Sicilian romance before Ovid."
+    }
+  ],
+  "music": [
+    {
+      "title": "Acis and Galatea",
+      "year": "1718",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's pastoral masque stages the Sicilian shepherd crushed by Polyphemus — Acis as English Baroque's favourite rustic martyr.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Acis_and_Galatea_(Handel)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Acis and Galatea (mythology)",

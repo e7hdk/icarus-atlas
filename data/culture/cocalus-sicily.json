@@ -1,0 +1,49 @@
+{
+  "id": "cocalus-sicily",
+  "artworks": [
+    {
+      "title": "Daedalus and Icarus",
+      "artist": "Anthony van Dyck",
+      "year": "c. 1620",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg/960px-Anthony_van_Dyck_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg",
+      "description": "Van Dyck's wing-fitting: Daedalus prepares the flight that will end in Icarus' fall and the craftsman's later refuge with King Cocalus at Camicus in Sicily."
+    },
+    {
+      "title": "Daedalus and Icarus",
+      "artist": "Andrea Sacchi",
+      "year": "c. 1645",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Andrea_Sacchi_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg/960px-Andrea_Sacchi_-_Daedalus_and_Icarus_-_Google_Art_Project.jpg",
+      "description": "Sacchi's Baroque father and son — the Cretan escape whose survivor Daedalus will shelter under Cocalus' roof when Minos pursues him across the sea."
+    },
+    {
+      "title": "Minos (detail from The Last Judgment)",
+      "artist": "Michelangelo",
+      "year": "1536–1541",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Michelangelo-minos2.jpg",
+      "description": "Michelangelo's Minos in the Sistine Last Judgment — the judge-king who, in the Sicilian tale, tracks Daedalus to Cocalus and dies in the boiling bath the king's daughters prepare."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Cocalus",
+      "year": "—",
+      "kind": "other",
+      "description": "King of Camicus in Sicily who shelters Daedalus and engineers Minos' death — the western end of the craftsman's exile.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cocalus"
+    },
+    {
+      "title": "Daedalus",
+      "year": "—",
+      "kind": "other",
+      "description": "Cocalus' famous guest — the labyrinth-builder who flees Crete and finds a second court in Sicily.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Daedalus"
+    },
+    {
+      "title": "Minos",
+      "year": "—",
+      "kind": "other",
+      "description": "The Cretan king who pursues Daedalus with the spiral-shell riddle and dies at Cocalus' palace — hospitality as trap.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minos"
+    }
+  ]
+}

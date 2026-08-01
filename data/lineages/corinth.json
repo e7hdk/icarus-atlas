@@ -2,32 +2,88 @@
   "city": "corinth",
   "reigns": [
     {
+      "ruler": "Aeetes",
+      "characterId": "aeetes",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.3.10",
+      "note": "In Eumelus' Corinthian History, as Pausanias reports it, Helius gave Ephyraea to Aeetes; when Aeetes departed for Colchis he left the land in trust — the Colchian king first holding the site later called Corinth."
+    },
+    {
+      "ruler": "Bunus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.3.10, 2.4.7",
+      "note": "Son of Hermes and Alcidamea; entrusted with Ephyraea when Aeetes left for Colchis, and founder of the temple of Hera Bunaea on the Acrocorinthus."
+    },
+    {
+      "ruler": "Corinthus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.1.1, 2.3.10",
+      "note": "Son of Marathon (son of Epopeus) in Eumelus; eponym of the land after Ephyraea was renamed. Died childless — the Corinthians then sent for Medea from Iolcus. Local speech also called him a son of Zeus, which Pausanias treats as unserious."
+    },
+    {
+      "ruler": "Medea & Jason",
+      "characterIds": ["medea-colchis", "jason"],
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.3.10–11",
+      "note": "Pausanias' Eumelus strand: the Corinthians bestowed the kingdom on Medea after Corinthus died childless, and through her Jason was king. She later departed and handed the throne to Sisyphus — a chronology that rivals Apollodorus' Creon-era Medea at Corinth."
+    },
+    {
       "ruler": "Sisyphus",
       "characterId": "sisyphus",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Apollod. 1.9.3; Il. 6.152–155",
-      "note": "Founder of Ephyra, the city later called Corinth — craftiest of men, whose son Glaucus begat Bellerophon."
+      "sources": ["apollodorus", "homer", "pausanias"],
+      "citation": "Apollod. 1.9.3; Il. 6.152–155; Paus. 2.3.11, 2.4.3",
+      "note": "Craftiest of men: Apollodorus and Homer make him founder-dweller of Ephyra (later Corinth); Pausanias has Medea hand him the kingdom when she leaves. Father of Glaucus, Ornytion, Thersander, and Almus."
     },
     {
       "ruler": "Glaucus",
       "characterId": "glaucus-corinth",
       "sources": ["homer", "apollodorus"],
       "citation": "Il. 6.154–155; Apollod. 1.9.3",
-      "note": "Son of Sisyphus and king of Ephyra; father of Bellerophon, slayer of the Chimera."
+      "note": "Son of Sisyphus and father of Bellerophon in the Homeric Aeolid stem — not the Lycian Glaucus of the Trojan War. Pausanias' continuous Corinthian roll continues instead through Ornytion's son Thoas."
+    },
+    {
+      "ruler": "Thoas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.4.3",
+      "note": "Younger son of Ornytion son of Sisyphus; remained at Corinth when his brother Phocus migrated to Tithorea. Not the Lemnian Thoas, the Taurian king, or any other homonym."
+    },
+    {
+      "ruler": "Damophon",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.4.3",
+      "note": "Son of Thoas in Pausanias' Ornytionid succession — not the later Messenian sculptor Damophon."
+    },
+    {
+      "ruler": "Propodas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.4.3",
+      "note": "Son of Damophon; father of the last Aeolid twin-kings before the Dorian takeover."
+    },
+    {
+      "ruler": "Doridas & Hyanthidas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.4.3",
+      "note": "Sons of Propodas; while they were kings the Dorians under Aletes took Corinth — they gave up the kingship but remained in the city as the people were expelled."
+    },
+    {
+      "ruler": "Aletes",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.4.3–4",
+      "note": "Heraclid son of Hippotas who led the Dorians against Corinth and received the kingship from Doridas and Hyanthidas. His line ran five generations to Bacchis; not Aletes son of Aegisthus nor the Lacedaemonian son of Icarius."
     },
     {
       "ruler": "Polybus",
       "characterId": "polybus-corinth",
       "sources": ["apollodorus", "hyginus"],
-      "citation": "Apollod. 3.5.7; Hyg. Fab. 66",
-      "note": "King of Corinth in the Oedipus saga — not the Ithacan suitor Polybus nor any other homonym; his neatherds found the exposed infant on Cithaeron and Periboea raised him as their son."
+      "citation": "Apollod. 3.5.7; Hyg. Fab. 66–67",
+      "note": "King of Corinth in the Oedipus saga — his neatherds found the exposed infant on Cithaeron. Not in Pausanias' Corinthian king catalogue (and distinct from Polybus of Sicyon at Paus. 2.6.6); listed after the Pausanias roll because relative place beside the Ornytionids is unattested."
     },
     {
       "ruler": "Creon",
       "characterId": "creon-corinth",
       "sources": ["apollodorus", "hyginus", "ovid"],
       "citation": "Apollod. 1.9.28; Hyg. Fab. 25; Ov. Met. 7.391–424",
-      "note": "King of Corinth in the Jason–Medea episode — distinct from Creon of Thebes (`creon`); betrothed Glauce to Jason and perished in Medea's poisoned robe."
+      "note": "King of Corinth in Apollodorus' Jason–Medea episode — distinct from Creon of Thebes (`creon`). Betrothed Glauce to Jason and perished in Medea's poisoned robe. Hyginus wrongly calls him son of Menoeceus. Rivals Pausanias' earlier Medea–Jason kingship; not in Pausanias' continuous roll."
     }
   ]
 }

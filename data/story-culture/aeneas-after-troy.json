@@ -1,6 +1,45 @@
 {
   "id": "aeneas-after-troy",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Aeneas, Anchises, and Ascanius",
+      "artist": "Gian Lorenzo Bernini",
+      "year": "1618–1619",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Aeneas%2C_Anchises%2C_and_Ascanius_by_Bernini.jpg/960px-Aeneas%2C_Anchises%2C_and_Ascanius_by_Bernini.jpg",
+      "description": "Bernini's Borghese marble: Aeneas carries Anchises from burning Troy while Ascanius follows — three generations in one spiral of flight."
+    },
+    {
+      "title": "Aeneas' Flight from Troy",
+      "artist": "Federico Barocci",
+      "year": "1598",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg/960px-Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg",
+      "description": "Barocci's Borghese canvas: Aeneas bears Anchises through the sack, Ascanius beside him, Creusa behind — Virgil's departure from the flames."
+    },
+    {
+      "title": "Aeneas Fleeing from Troy",
+      "artist": "Pompeo Batoni",
+      "year": "1753",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pompeo_Batoni_-_Aeneas_fleeing_from_Troy%2C_1753.jpg/960px-Pompeo_Batoni_-_Aeneas_fleeing_from_Troy%2C_1753.jpg",
+      "description": "Batoni's neoclassical flight: the Trojan house leaves Ilion with the Penates — exile as polished Roman destiny."
+    },
+    {
+      "title": "Aeneas Rescuing Anchises from Burning Troy",
+      "artist": "Adam Elsheimer",
+      "year": "c. 1600–1601",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Adam_Elsheimer_-_Aeneas_rettet_Anchisis_aus_dem_brennenden_Troja.jpg/960px-Adam_Elsheimer_-_Aeneas_rettet_Anchisis_aus_dem_brennenden_Troja.jpg",
+      "description": "Elsheimer's night fire: Aeneas carries Anchises out of Troy's blaze — the sack reduced to a small copper of flame and piety."
+    }
+  ],
+  "music": [
+    {
+      "title": "Les Troyens",
+      "year": "1858",
+      "kind": "opera",
+      "composer": "Hector Berlioz",
+      "description": "Berlioz's Virgilian opera opens with Troy's fall and Aeneas' flight — the survivor who must leave the burning city for Italy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    }
+  ],
   "popCulture": [
     {
       "title": "Aeneas",

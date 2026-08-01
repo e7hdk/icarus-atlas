@@ -1,0 +1,39 @@
+{
+  "city": "colophon",
+  "reigns": [
+    {
+      "ruler": "Rhacius",
+      "characterId": "rhacius-crete",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.1–7.3.2",
+      "note": "Cretan leader of the first Greeks to reach the Colophonian coast while the Carians still held the land — strong in ships on the shore; later married Manto when the Delphic colonists were brought to him at Clarus."
+    },
+    {
+      "ruler": "Manto",
+      "characterId": "manto",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.2; 9.33.2",
+      "note": "Daughter of Tiresias, dedicated to Apollo after Thebes fell; at the god's command she crossed to the Colophonian land, married Rhacius the Cretan, and with her people was allowed to inhabit the country."
+    },
+    {
+      "ruler": "Mopsus",
+      "characterId": "mopsus-colophon",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 7.3.2; Epitome 6.3–6.4, 6.19",
+      "note": "Son of Rhacius and Manto in Pausanias' colonization tale — he drove the Carians from the land; Apollodorus instead makes the Colophonian seer who outprophesied Calchas a son of Apollo and Manto. Not the Argonaut Mopsus son of Ampycus.",
+      "topic": "mopsus-colophon-parentage"
+    },
+    {
+      "ruler": "Damasichthon",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.3",
+      "note": "Son of Codrus; with his brother Promethus he took the kingship when the Ionians joined the Greeks already at Colophon on equal terms. Distinct from Damasichthon the Theban (Niobid or son of Opheltes)."
+    },
+    {
+      "ruler": "Promethus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 7.3.3",
+      "note": "Son of Codrus who killed his brother Damasichthon and fled to Naxos, where he died; his body was carried home and received by the sons of Damasichthon."
+    }
+  ]
+}

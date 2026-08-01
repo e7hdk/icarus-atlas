@@ -1,12 +1,34 @@
 {
   "id": "hemera",
-  "summary": "In Greek mythology, Hemera was the personification of day. According to Hesiod, she was the daughter of Erebus (Darkness) and Nyx (Night), and the sister of Aether. Though separate entities in Hesiod's Theogony, Hemera and Eos (Dawn) were often identified with each other.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Hemera is the personification of day. Hesiod makes her daughter of Erebus and Nyx and sister of Aether; she and Night pass at the bronze threshold of Tartarus so that the house never holds both. Though distinct from Eos in the Theogony, later writers often identify Hemera with Dawn.",
+  "attribution": "Adapted from Wikipedia, \"Hemera\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Ἡμέρα (Hēmérā), \"Day\".",
+  "symbols": [
+    "daylight",
+    "the bronze threshold of Night and Day"
+  ],
+  "cultCenters": [
+    "Kos (small shrine with Helios)"
+  ],
+  "sections": [
+    {
+      "heading": "Genealogy",
+      "paragraphs": [
+        "In Hesiod's Theogony, Hemera and Aether are the offspring of Erebus (Darkness) and Nyx (Night). Bacchylides apparently makes her daughter of Chronus and Nyx; a rare strand makes her daughter of Helios. The lost Titanomachy may have made her, by Aether, mother of Uranus. Her Roman counterpart is Dies, whose parentage in Hyginus and Cicero differs (Chaos and Caligo; or pairings that make Dies parent of Caelus, Terra, and Mare)."
+      ]
+    },
+    {
+      "heading": "Myth and identification with Eos",
+      "paragraphs": [
+        "Hesiod describes Night and Day greeting each other as they cross the great bronze threshold: one enters Tartarus as the other leaves, so the house never holds both. Hemera brings much-seeing light over the earth; Night holds Sleep, brother of Death.",
+        "Although Eos is a separate Titaness in Hesiod (daughter of Theia and Hyperion), Pausanias identifies Hemera with the goddess who carries off Cephalus in Athenian and Amyclaean art and who pleads for Memnon at Olympia. A scholiast cites Euphorion for Hemera as Orion's abductor where Homer names Eos. Cult evidence is thin; archaeology attests a small shrine to Hemera and Helios on Kos."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Hemera"
     }
-  ],
-  "etymology": "From hemera, \"day\"."
+  ]
 }

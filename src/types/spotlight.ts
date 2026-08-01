@@ -229,6 +229,10 @@ export interface EphemerisCardPayload {
   /** Earliest-era story whose cast lists the figure — the "Read the myth" door. */
   storyId: string | null;
   storyTitle: string | null;
+  /** Every title under which the figure truthfully appears — its stories plus
+   *  their parent sagas up to the root. The Oracle may never deal one of these
+   *  as a wrong answer. */
+  storyTitles: string[];
   /** First residence promoted to a city-sky door, when the geo layer knows it. */
   city: { id: string; name: string } | null;
 }

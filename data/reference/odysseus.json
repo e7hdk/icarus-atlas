@@ -1,33 +1,54 @@
 {
   "id": "odysseus",
-  "summary": "Odysseus (Latin: Ulysses) is a legendary Greek hero, king of Ithaca, and the central figure of Homer's Odyssey. Renowned for his intelligence, eloquence, and resourcefulness — the Greek epithet polytropos means 'many-turning' or 'of many devices' — he is best known for his ten-year journey home after the Trojan War, during which he encountered the Cyclops Polyphemus, the witch Circe, the Sirens, and the nymph Calypso. He also plays a major role in the Iliad as one of the most trusted counsellors of the Greeks. His long absence and eventual return to reclaim his kingdom from Penelope's suitors became one of the foundational narratives of Western literature.",
+  "summary": "Odysseus (Latin: Ulysses) is a legendary Greek king of Ithaca and the hero of Homer's Odyssey, also a major counsellor in the Iliad and the wider Epic Cycle. Son of Laertes and Anticlea, husband of Penelope and father of Telemachus, he is renowned for intellectual brilliance, guile and versatility — the epithet polytropos, \"of many turns\" — and for his ten-year nostos after Troy, during which he faces Polyphemus, Circe, the Sirens, Calypso and Penelope's suitors.",
   "attribution": "Adapted from Wikipedia, \"Odysseus\" · CC BY-SA 4.0",
-  "etymology": "The name Odysseus (Ὀδυσσεύς) may be related to the verb odyssomai ('to hate') or to oduromai ('to lament'), though ancient etymologies connected it with odyssesthai ('to be wroth against'). Roman writers Latinized the name as Ulysses or Ulixes.",
+  "etymology": "The etymology of Odysseus (Ὀδυσσεύς) is uncertain. Ancient authors linked it to odussomai (\"to be wroth against, to hate\"), oduromai (\"to lament\"), or even ollumi (\"to perish\"). In Odyssey 19 Autolycus names the child from his own anger (odyssamenos) against many. Robert S. P. Beekes suggested a Pre-Greek origin. Latin Ulixes / Ulysses may reflect Etruscan Uthuze; vase inscriptions show many Greek variants (Olyseus, Olysseus, Oulixes, and others). Homer's opening epithet polytropos is variously rendered \"man of many devices,\" \"man of twists and turns,\" or \"a complicated man.\"",
+  "cultCenters": [
+    "Ithaca",
+    "Pheneus (Arcadia; traditions of Poseidon Hippios and Artemis Heurippa)",
+    "Lisbon (folk etymology Ulisipo / Olisipo)"
+  ],
   "sections": [
     {
-      "heading": "Family and early life",
+      "heading": "Name and epithets",
       "paragraphs": [
-        "Odysseus was generally said to be the son of Laertes and Anticleia, daughter of the master-thief Autolycus. An alternative tradition recorded by Hyginus held that Sisyphus seduced Anticleia before her marriage and that Odysseus was therefore called 'Sisyphean' for his shrewdness. He married Penelope, daughter of Icarius of Sparta, and fathered Telemachus.",
-        "Before the Trojan War, Odysseus feigned madness to avoid the expedition until Palamedes exposed the ruse by placing the infant Telemachus in his path. He also advised Tyndareus to bind Helen's suitors by oath, a counsel that later forced the Greek kings to honor the alliance when Paris abducted Helen."
+        "Epic and classical Greek use Odys(s)eus; vase inscriptions preserve variants such as Oliseus, Olyseus, Olysseus, Olyteus and Ōlysseus. Magna Graecia attests Oulixēs; Latin settled on Ulixēs or (less correctly to some) Ulyssēs. Some scholars once supposed two figures fused into one; others explain the d/l variation through Etruscan Uthuze, possibly from a Minoan form with an affricate foreign to early Greek.",
+        "Homer's Odyssey opens by calling him polytropos — Murray's \"man of many devices,\" Fagles's \"man of twists and turns,\" Wilson's \"a complicated man.\" He also bears the patronymic Laertiades, \"son of Laertes.\" In Odyssey 19 Euryclea hopes Autolycus will name the infant something like Polyaretos (\"much prayed for\"); Autolycus instead commemorates his own lifelong anger with many men and women by choosing Odysseus."
+      ]
+    },
+    {
+      "heading": "Description and genealogy",
+      "paragraphs": [
+        "Dares the Phrygian describes Odysseus as tough, crafty, cheerful, of medium height, eloquent and wise. In Iliad 3 Priam sees him shorter than Agamemnon but broader in chest and shoulders, like a deep-fleeced ram among the flock; Antenor recalls that seated he looked more imposing than Menelaus. The Odyssey gives him bushy hyacinth-like locks, a bronze tan, and, when he sheds his rags, fine massive thighs and brawny arms.",
+        "Homer makes him son of Laertes and Anticlea, with a younger sister Ctimene. Apollodorus traces his paternal line through Arcesius to Cephalus and Aeolus, and his maternal grandfather as the thief Autolycus, son of Hermes — though the Odyssey itself does not assert that blood link. A non-Homeric tradition held that Sisyphus was his true father and that Laertes bought the child. Later genealogies multiply his offspring beyond Telemachus (Telegonus by Circe, Nausithous and Nausinous by Calypso, and others) often to claim Italic city foundations."
+      ]
+    },
+    {
+      "heading": "Before Troy",
+      "paragraphs": [
+        "Most pre-war exploits are told by late mythographers such as Apollodorus and Hyginus. When Helen's abduction summons the suitors bound by Tyndareus's oath, Odysseus feigns madness — yoking mismatched beasts to a plow, in some modern retellings sowing salt — until Palamedes places infant Telemachus in the furrow; Odysseus swerves aside and is exposed. He nurses a lasting grudge against Palamedes.",
+        "He also helps recruit Achilles on Scyros: Thetis has hidden her son among the king's daughters, but Odysseus lays out ornaments and weapons, then sounds a battle alarm; Achilles alone seizes a weapon and is unmasked. A related stratagem of mixed gifts appears in Statius's Achilleid."
       ]
     },
     {
       "heading": "At Troy",
       "paragraphs": [
-        "In the Iliad, Odysseus leads the Cephallenians from Ithaca and the surrounding isles. He is repeatedly called the peer of Zeus in counsel, leads the embassy to Achilles in Book 9, and undertakes the night raid with Diomedes in Book 10. After Achilles' death, he won the arms of the dead hero in a contest judged against Ajax, who then took his own life.",
-        "Apollodorus credits him with inventing the Wooden Horse and hiding warriors inside it to capture Troy. After the sack he sailed for home, but blinded Polyphemus, son of Poseidon, and thereby earned the god's lasting enmity."
+        "In the Iliad Odysseus is among the most trusted Achaean counsellors, with Nestor and Idomeneus. He quells the army when Agamemnon tests morale, joins the embassy to Achilles in Book 9, and with Diomedes kills Rhesus in the night raid of Book 10 so that the Thracian's horses never drink from the Scamander. After Patroclus's death he urges Achilles to let the men eat before fighting. At the funeral games he wrestles Ajax to a draw and, aided by Athena, wins the foot race. He is often read as Achilles' antithesis — restraint and diplomacy against all-consuming rage — and as Ajax's foil: eloquence and mêtis against pure brawn.",
+        "Cyclic and tragic tradition adds darker exploits: arranging Palamedes' death by forged letter or by burying him in a well with Diomedes; retrieving Achilles' body with Ajax and then winning Achilles' arms in the contest that drives Ajax to suicide; fetching Neoptolemus and Philoctetes (with Heracles' bow) when oracles demand them; stealing the Palladium with Diomedes; and devising the Wooden Horse. Roman poets who claimed descent from Aeneas cast him as \"cruel\" or \"deceitful Ulixes,\" valuing Greek cunning as fraud against Latin honor."
       ]
     },
     {
       "heading": "The Odyssey",
       "paragraphs": [
-        "Homer's Odyssey narrates ten years of wandering: the Lotus-eaters, Polyphemus, Aeolus, the Laestrygonians, Circe, the journey to the underworld, the Sirens, Scylla and Charybdis, the cattle of the Sun, and seven years with Calypso on Ogygia. Rescued by the Phaeacians, he returns to Ithaca in disguise, reunites with his son Telemachus and the swineherd Eumaeus, slays Penelope's suitors, and is recognized by his wife through the secret of their immovable bed."
+        "Homer's Odyssey narrates ten years of homecoming. After a raid on the Cicones, Odysseus's fleet meets the Lotus-Eaters and the Cyclops Polyphemus, whom he blinds under the alias Outis (\"Nobody\") before rashly revealing his name and earning Poseidon's enmity. Aeolus's bag of winds is opened by the crew in sight of Ithaca; the Laestrygonians destroy eleven ships; Circe turns men to swine until Hermes' moly protects Odysseus, who stays a year before sailing to the edge of the world to consult Tiresias among the dead.",
+        "Warned again by Circe, they pass the Sirens, lose six men to Scylla, and — against orders — slaughter Helios's cattle on Thrinacia; Zeus wrecks the ship and only Odysseus survives, spending seven years with Calypso on Ogygia until Hermes orders his release. The Phaeacians convey him sleeping to Ithaca. Disguised by Athena as a beggar, he reunites with Telemachus and Eumaeus, is recognized by the dog Argos and the nurse Eurycleia (by an old boar-hunt scar), strings his bow in Penelope's contest, and with Telemachus, Eumaeus and Philoetius slaughters the suitors. Penelope tests him with the secret of their olive-tree bed; their recognition turns on homophrosýnē (\"like-mindedness\"). Athena and Zeus then halt a civil war over the suitors' deaths."
       ]
     },
     {
       "heading": "Later tradition",
       "paragraphs": [
-        "Post-Homeric sources add a final voyage inland carrying an oar until he meets men who mistake it for a winnowing fan, and some tell of Telegonus, his son by Circe, accidentally killing him. Apollodorus also records a variant in which Penelope was seduced by Antinous and sent away by Odysseus — opposed to Homer's faithful queen."
+        "The lost Telegony sent Odysseus to Thesprotia, marriage to Callidice, and eventual death at the hands of Telegonus, his son by Circe, who struck him with a stingray-tipped spear. Telegonus brings Penelope and Telemachus to Aeaea; Circe makes them immortal and pairs the households. Other ends include a heron's barb rotting an aged Odysseus's scalp (Aeschylus's lost Ghost-Raisers), resurrection and a second death from grief, transformation into a horse by Athena, or exile after Neoptolemus arbitrates the suitors' blood-feud.",
+        "Tragedy kept him central (Sophocles' Ajax and Philoctetes; Euripides' Hecuba, Rhesus, Cyclops). Plato's Hippias Minor asks whether Homer meant Achilles or Odysseus as the better man. Pausanias records Arcadian traditions of statues and a sanctuary he dedicated at Pheneus after recovering lost mares. Medieval and modern reception ranges from Dante's fraudulent Ulisse sailing past the Pillars of Hercules, to Tennyson's restless \"Ulysses,\" to countless novels, films and operas — while folk etymology even made him founder of Lisbon (Ulisipo / Olisipo)."
       ]
     }
   ],

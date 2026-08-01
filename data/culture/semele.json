@@ -1,6 +1,35 @@
 {
   "id": "semele",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jupiter and Semele",
+      "artist": "Gustave Moreau",
+      "year": "1889–1895",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jupiter_and_Semele_by_Gustave_Moreau.jpg/960px-Jupiter_and_Semele_by_Gustave_Moreau.jpg",
+      "description": "Moreau's Symbolist altarpiece in the Musée Gustave Moreau, Paris: Zeus unveils himself in a blaze of jewels and thrones while Semele dies of the sight — the Theban princess consumed by the god she asked to see entire."
+    },
+    {
+      "title": "Jupiter and Semele",
+      "artist": "Jacopo Tintoretto",
+      "year": "c. 1545",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Jacopo_Tintoretto_-_Jupiter_and_Semele%2C_1545.jpg/960px-Jacopo_Tintoretto_-_Jupiter_and_Semele%2C_1545.jpg",
+      "description": "An early Venetian canvas attributed to Tintoretto: Jupiter descends upon Semele in a rush of cloud and flesh — the mortal love that will end in fire and the birth of Dionysus."
+    },
+    {
+      "title": "The Death of Semele",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1640",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rubens-Death-of-Semele.jpg/960px-Rubens-Death-of-Semele.jpg",
+      "description": "Rubens stages the fatal revelation: Jupiter's thunderbolts fill the chamber as Semele collapses — Hera's cruel counsel fulfilled, and Dionysus still to be rescued from the ashes."
+    },
+    {
+      "title": "Jupiter and Semele",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1636–1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jupiter_and_Semele_by_Peter_Paul_Rubens.jpg/960px-Jupiter_and_Semele_by_Peter_Paul_Rubens.jpg",
+      "description": "A Torre de la Parada oil sketch by Rubens for Philip IV: Jupiter arrives in splendour before the Theban princess — the same myth Moreau would later jewel into Symbolist ecstasy."
+    }
+  ],
   "music": [
     {
       "title": "Semele",

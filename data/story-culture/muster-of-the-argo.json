@@ -1,6 +1,35 @@
 {
   "id": "muster-of-the-argo",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Argus Building the Ship Argo",
+      "artist": "Unknown (after Christopher Wordsworth illustration)",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Argus_building_the_ship_Argo_-_Wordsworth_Christopher_-_1882.jpg/960px-Argus_building_the_ship_Argo_-_Wordsworth_Christopher_-_1882.jpg",
+      "description": "Victorian plate — Argus at the keel Athena planned, the muster beginning as wood becomes the speaking ship."
+    },
+    {
+      "title": "The Building of the Ship Argo",
+      "artist": "Antoon Derkinderen",
+      "year": "c. 1888–1893",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/De_bouw_van_het_schip_%27Argo%27_Rijksmuseum_SK-A-3470.jpeg/960px-De_bouw_van_het_schip_%27Argo%27_Rijksmuseum_SK-A-3470.jpeg",
+      "description": "Rijksmuseum canvas — the Argo rising on the strand while Argonauts point toward the open sea from Pagasae."
+    },
+    {
+      "title": "Building the Argo",
+      "artist": "Unknown (Roman terracotta)",
+      "year": "c. 1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Building_Argo_BM_TerrD603.jpg/960px-Building_Argo_BM_TerrD603.jpg",
+      "description": "British Museum terracotta — Athena oversees the Argo's yard, the vessel the flower of Greece will take to Colchis."
+    },
+    {
+      "title": "The Argonauts",
+      "artist": "Lorenzo Costa",
+      "year": "c. 1484–1490",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Lorenzo_Costa_001.jpg",
+      "description": "Costa's Ferrarese crew aboard — the mustered heroes packed into the ship that leaves Iolcus for the fleece."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

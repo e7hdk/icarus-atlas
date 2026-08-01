@@ -1,0 +1,30 @@
+{
+  "city": "phlius",
+  "reigns": [
+    {
+      "ruler": "Aras",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.12.4–5, 2.14.4",
+      "note": "Autochthon and first man of the land; founded a city on the Arantine Hill and gave both land and city the name Arantia. Pausanias uses the king-formula while he reigned (βασιλεύοντι), when Asopus discovered the river water. Tomb at Celeae; the Phliasians call him a contemporary of Prometheus and three generations older than Pelasgus son of Arcas."
+    },
+    {
+      "ruler": "Aoris",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.12.5",
+      "note": "Son of Aras; with his sister Araethyrea famed as hunters and warriors. After she died first he renamed the land Araethyrea in her memory — the Homeric name (Il. 2.571). Pausanias does not repeat the βασιλεύς formula for him, but he is the attested male heir who carries the second land-name; their tombs on the Arantine Hill receive libations before the Demeter mysteries."
+    },
+    {
+      "ruler": "Phlias",
+      "characterId": "phlias",
+      "sources": ["pausanias", "apollonius", "hyginus"],
+      "citation": "Paus. 2.12.6; Argonautica 1.115–117; Fabulae 14",
+      "note": "Eponym who gave the land its third name (Phlius). Pausanias rejects the Argive claim that he was son of Ceisus son of Temenus and follows Dionysus as father, with Araethyrea as mother; Apollonius places him at Araethyrea by the springs of Asopus among the Argonauts; Hyginus names Phliasus son of Liber and Ariadne from Phlious (or Theban). Wife Chthonophyle bore Androdamas — not listed here as a Phliasian king, since Pausanias only names him as son and as dedicant of Baccheus at Sicyon (2.6.6, 2.7.6)."
+    },
+    {
+      "ruler": "Rhegnidas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 2.13.1–2",
+      "note": "Dorian son of Phalces son of Temenus; attacked Phlius from Argos and Sicyonia after the return of the Heracleidae. The people accepted his terms — stay on their estates, receive him as king (βασιλέα), and share the land with his Dorians. Hippasus' party urged resistance, then fled to Samos when the demos chose submission; Hippasus is not a Phliasian king."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "nemean-games",
+  "name": "Nemean Games",
+  "greekName": "Νέμεα",
+  "deities": ["zeus"],
+  "place": "nemea",
+  "panhellenic": true,
+  "games": { "cycleYears": 2 },
+  "atticDate": { "month": "hekatombaion", "approximate": true },
+  "aition": "seven-against-thebes",
+  "summary": "The biennial crown games of Zeus at Nemea — founded, the Theban saga says, when the Seven buried the infant Opheltes as Archemorus and first ran and wrestled beside his grave.",
+  "testimonia": [
+    "Apollodorus, Bibliotheca 3.6.4 (the Seven found the Nemean games for Opheltes/Archemorus)",
+    "Pausanias 2.15.2–3 (the grove of Nemean Zeus and the grave of Opheltes)",
+    "Calendar note: no baked Nemean peak yet — Olympics alone use olympicPeak in the Attic reconstruction; Nemea still awaits its own cycle anchor (not faked with annual conventionalDates)"
+  ]
+}

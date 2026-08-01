@@ -1,6 +1,63 @@
 {
   "id": "pentheus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Pentheus Torn by Maenads (House of the Vettii, Pompeii)",
+      "artist": "Unknown (Roman wall-painter)",
+      "year": "Before AD 79",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Pompeii_-_Casa_dei_Vettii_-_Pentheus.jpg/960px-Pompeii_-_Casa_dei_Vettii_-_Pentheus.jpg",
+      "description": "The triclinium fresco in the Casa dei Vettii freezes Euripides' climax: Pentheus, still in women's dress, torn limb from limb by Agave and the maenads. Roman wall-painting makes the Bacchae's sparagmos domestic decoration."
+    },
+    {
+      "title": "Death of Pentheus (Douris cup, Kimbell Art Museum)",
+      "artist": "Douris",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Red-figure_cup_showing_the_death_of_Pentheus_and_a_Maenad_by_Douris%2C_Kimbell_Art_Museum.jpg/960px-Red-figure_cup_showing_the_death_of_Pentheus_and_a_Maenad_by_Douris%2C_Kimbell_Art_Museum.jpg",
+      "description": "Douris paints the Theban king already dismembered on an Attic red-figure cup — maenads wielding his limbs as trophies. The Kimbell kylix is among the earliest and clearest images of Pentheus' death."
+    },
+    {
+      "title": "Death of Pentheus (Louvre G445)",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 450–425 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Death_Pentheus_Louvre_G445.jpg/960px-Death_Pentheus_Louvre_G445.jpg",
+      "description": "On this Attic red-figure lekanis lid in the Louvre, Agave and Ino tear Pentheus apart — the Bacchae's mother-murder rendered in clay. The vase keeps the Theban king's refusal of Dionysus as a visual warning."
+    },
+    {
+      "title": "Maenads Killing Pentheus (Meidias Painter, Kerameikos)",
+      "artist": "Meidias Painter (circle)",
+      "year": "c. 420–400 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Meidias_Painter_ARV_1313_6_Helena_and_her_sisters_-_maenads_killing_Pentheus_-_Athens_Kerameikos_Museum_2712_-_08.jpg/960px-Meidias_Painter_ARV_1313_6_Helena_and_her_sisters_-_maenads_killing_Pentheus_-_Athens_Kerameikos_Museum_2712_-_08.jpg",
+      "description": "A Kerameikos hydria in the Meidias Painter's ornate style stages the sparagmos: maenads closing on Pentheus. Athenian luxury pottery makes the Bacchic killing a jewelled surface."
+    }
+  ],
+  "films": [
+    {
+      "title": "Dionysus in '69",
+      "year": "1970",
+      "medium": "film",
+      "director": "Brian De Palma",
+      "description": "De Palma and Schechner film The Performance Group's ritual Bacchae — Pentheus torn in a New York warehouse as living theatre bleeds into cinema.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Dionysus_in_%2769"
+    },
+    {
+      "title": "The Bacchantes",
+      "year": "1961",
+      "medium": "film",
+      "director": "Giorgio Ferroni",
+      "description": "Ferroni's peplum Bacchae casts Alberto Lupo as Pentheus against Pierre Brice's Dionysus — the Theban king's refusal dressed for Italian sword-and-sandal spectacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bacchantes_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "The Bassarids",
+      "year": "1966",
+      "kind": "opera",
+      "composer": "Hans Werner Henze",
+      "description": "Henze's Auden–Kallman Bacchae makes Pentheus the voice of rational order destroyed by Dionysus — sparagmos rewritten as modern opera at Salzburg.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bassarids"
+    }
+  ],
   "popCulture": [
     {
       "title": "The Bacchae",
@@ -9,13 +66,6 @@
       "creator": "Euripides",
       "description": "Euripides' tragedy keeps Pentheus on every modern stage — the Theban king torn by maenads as the emblem of a city that refuses the god.",
       "externalUrl": "https://en.wikipedia.org/wiki/The_Bacchae"
-    },
-    {
-      "title": "Pentheus",
-      "year": "—",
-      "kind": "other",
-      "description": "Pentheus endures as the cautionary name for the ruler who spies on ecstasy and is destroyed by what he forbids.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Pentheus"
     }
   ]
 }

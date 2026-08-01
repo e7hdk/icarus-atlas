@@ -1,6 +1,45 @@
 {
   "id": "aeneas-to-italy",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Landscape with the Landing of Aeneas in Latium",
+      "artist": "Claude Lorrain",
+      "year": "c. 1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Claude_Lorrain_-_Landscape_with_the_Landing_of_Aeneas_in_Latium_-_NMH_358-1969_-_Nationalmuseum.jpg/960px-Claude_Lorrain_-_Landscape_with_the_Landing_of_Aeneas_in_Latium_-_NMH_358-1969_-_Nationalmuseum.jpg",
+      "description": "Claude's coast: Aeneas' ships touch Latium — Virgil's Italian arrival staged as golden light on the Tiber shore."
+    },
+    {
+      "title": "Coast Scene with the Landing of Aeneas in Latium",
+      "artist": "After Claude Lorrain",
+      "year": "17th–18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kustgezicht_met_landing_van_Aeneas_in_Latium%2C_RP-P-OB-17.885.jpg/960px-Kustgezicht_met_landing_van_Aeneas_in_Latium%2C_RP-P-OB-17.885.jpg",
+      "description": "Rijksmuseum engraving after Claude: the Trojan landing that opens the Italian war books — destiny stepping onto Latin soil."
+    },
+    {
+      "title": "Aeneas and Turnus",
+      "artist": "Unknown",
+      "year": "—",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Aeneas_and_Turnus.jpg",
+      "description": "The final duel of Aeneid 12: Aeneas faces Turnus — the cost of founding Latium paid in the Rutulian king's blood."
+    },
+    {
+      "title": "The Fight between Aeneas and King Turnus",
+      "artist": "Unknown (after Virgil)",
+      "year": "—",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Fight_between_Aeneas_and_King_Turnus%2C_from_Virgil%27s_Aeneid_LACMA_M.2000.93.jpg/960px-The_Fight_between_Aeneas_and_King_Turnus%2C_from_Virgil%27s_Aeneid_LACMA_M.2000.93.jpg",
+      "description": "LACMA print from the Aeneid cycle: Aeneas and Turnus locked in combat — Rome's founding war as graphic epic."
+    }
+  ],
+  "music": [
+    {
+      "title": "Dido and Aeneas",
+      "year": "1688",
+      "kind": "opera",
+      "composer": "Henry Purcell",
+      "description": "Purcell's chamber opera ends as Aeneas sails for Italy — Dido's lament the price of the Trojan's Italian destiny.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Dido_and_Aeneas"
+    }
+  ],
   "popCulture": [
     {
       "title": "Aeneid",

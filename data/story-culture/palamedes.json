@@ -1,6 +1,35 @@
 {
   "id": "palamedes",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Palamedes",
+      "artist": "Antonio Canova",
+      "year": "c. 1804–1805",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Canova_-_Palamede.jpg",
+      "description": "Canova's neoclassical Palamedes — the inventor-hero Odysseus framed, Trojan War's first judicial murder."
+    },
+    {
+      "title": "Odysseus Feigns Madness",
+      "artist": "Unknown (early 17th century)",
+      "year": "early 17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Odysseus_fakes_insanity_%28Ptuj_Ormo%C5%BE_Regional_Museum%29.jpg/960px-Odysseus_fakes_insanity_%28Ptuj_Ormo%C5%BE_Regional_Museum%29.jpg",
+      "description": "Odysseus feigning madness — the draft-dodge Palamedes exposed, the insult that seeds the forged letter and the grave."
+    },
+    {
+      "title": "Palamedes (Promptuarii Iconum Insigniorum)",
+      "artist": "Published by Guillaume Rouillé",
+      "year": "1553",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Palamedes02.jpg",
+      "description": "Rouillé's Promptuarii woodcut — Renaissance emblem of Palamedes, the wise Achaean undone by envy."
+    },
+    {
+      "title": "Reconstruction of the Nekyia of Polygnotus (with Palamedes among the dead)",
+      "artist": "Carl Robert and Hermann Schenck (after Polygnotus)",
+      "year": "1892 (reconstruction of a 5th-century BC mural)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Reconstruction_of_Nekyia_by_Polygnotus.JPG/960px-Reconstruction_of_Nekyia_by_Polygnotus.JPG",
+      "description": "Polygnotus Nekyia reconstruction — Palamedes among the dead, the framed inventor still present in the underworld catalogue."
+    }
+  ],
   "popCulture": [
     {
       "title": "Palamedes",

@@ -1,22 +1,47 @@
 {
   "id": "gaia",
-  "summary": "In Greek mythology, Gaia, also spelled Gaea, is the personification of Earth. She is the mother of Uranus (Sky), with whom she conceived the Titans, the Cyclopes, and the Giants, as well as of Pontus (Sea), from whose union she bore the primordial sea gods. Her equivalent in the Roman pantheon was Terra.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Gaia (also Gaea, Ge; Ancient Greek: Γαῖα / Γῆ) is the personification of Earth. After Chaos she arises as the everlasting seat of the gods; she bears Uranus, the Mountains, and Pontus without a father, then with Uranus the Titans, Cyclopes, and Hecatoncheires. By Pontus she mothers the primordial sea gods; by Tartarus she bears Typhon. Her Roman equivalent is Terra. This entry concerns the mythic Earth, not the modern planet alone.",
+  "attribution": "Adapted from Wikipedia, \"Gaia\" · CC BY-SA 4.0",
+  "etymology": "Greek Gaîa (Γαῖα) is a mostly epic form of Attic Gê (Γῆ) and Doric Gâ (Γᾶ), \"earth, land.\" Etymology is debated: Pre-Greek origin has been proposed; M. L. West and others link it to Indo-European *dʰéǵʰōm (earth), with cognates such as Latin humus. Mycenaean Ma-ka (\"Mother Gaia\") may preserve the same root.",
+  "symbols": [
+    "Fruit and cornucopia",
+    "Serpent (chthonic oracular cult)",
+    "Broad earth / omphalos (Delphi)"
+  ],
+  "cultCenters": [
+    "Delphi (earliest oracle of Earth)",
+    "Athens (Ge Kourotrophos, Ge Olympia, Ge Karpophoros)",
+    "Olympia (altar Gaios; early oracle tradition)",
+    "Aegae in Achaea (Ge Eurysternos)",
+    "Dodona (earth with sky-Zeus)"
+  ],
+  "sections": [
+    {
+      "heading": "Cosmogony and offspring",
+      "paragraphs": [
+        "Hesiod places wide-bosomed Gaia after Chaos as the everlasting seat of the Olympians. She brings forth her equal Uranus to cover her on every side, then the Ourea and Pontus \"without sweet union of love.\" With Uranus she bears the twelve Titans, the Cyclopes Brontes, Steropes, and Arges, and the hundred-handed Cottus, Briareus, and Gyges. Distressed when Uranus hides the younger brood inside her, she fashions an adamantine sickle; Cronus castrates his father. From Uranus's blood Gaia produces the Erinyes, Giants, and Meliae; from the genitals cast into the sea comes Aphrodite.",
+        "By Pontus she bears Nereus, Thaumas, Phorcys, Ceto, and Eurybia. She advises Rhea how to save Zeus from Cronus and later counsels Zeus against the Titans, yet afterward, united with Tartarus, she bears Typhon as a last challenge to Zeus. Apollodorus makes her and Tartarus parents of Echidna; other tales connect her with Erichthonius, the Gigantes, and the Apples of the Hesperides."
+      ]
+    },
+    {
+      "heading": "Cult and epithets",
+      "paragraphs": [
+        "Worship of Earth appears indigenous in Greece, yet in classical times Ge was seldom a major festival goddess and was often honored with other deities. Oracular and chthonic roles stand out: Delphi is said to have belonged first to Earth (then Poseidon and Themis, then Apollo); Athens had Ge Kourotrophos, Ge Olympia near the Olympieion, and Ge Karpophoros; Olympia kept an ash altar of Ge and a tradition of an early oracle; Aegae in Achaea had a very old image of Ge Eurysternos served by a chaste priestess tested with bull's blood.",
+        "Common epithets include Anesidora (sender of gifts), Karpophoros (bringer of fruits), Kourotrophos (nurse of children), Eurysternos (broad-bosomed), Chthonia, and Pammētōr (mother of all). She is often paired with Zeus or Demeter and associated with graves, dreams, and the dead."
+      ]
+    },
+    {
+      "heading": "Iconography and later reception",
+      "paragraphs": [
+        "Art shows Gaia rising from the ground to hand Erichthonius to Athena, pleading for the Giants on the Pergamon Altar, or reclining as Earth with fruits and children in Roman mosaics (Tellus / Terra). She is distinct from Demeter in cult yet overlaps with her in maternal and agrarian imagery.",
+        "Modern pagan and ecological uses of \"Gaia\" as living Earth are later reception. This notice treats the ancient personification and her attested cult, not planetary science or New Age theology alone."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Gaia"
     }
-  ],
-  "symbols": [
-    "the earth",
-    "fruits",
-    "cornucopia"
-  ],
-  "cultCenters": [
-    "Delphi (the oracle before Themis)",
-    "Olympia",
-    "Athens"
-  ],
-  "etymology": "From ge / gaia, the common Greek word for \"earth\"."
+  ]
 }

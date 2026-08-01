@@ -2,18 +2,62 @@
   "city": "megara",
   "reigns": [
     {
-      "ruler": "Nisus",
-      "characterId": "nisus",
-      "sources": ["apollodorus"],
-      "citation": "Apollod. 3.15.5–8",
-      "note": "Son of Pandion and king of Megara, whose life hung on a single purple lock until his daughter Scylla betrayed him to Minos."
+      "ruler": "Car",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.39.5, 1.40.6, 1.44.6",
+      "note": "Son of Phoroneus; first named king in the Megarians' own foundation tale — in his reign they first built Demeter sanctuaries and used the name Megara ('Chambers'). The citadel Caria and his tomb on the Corinth road keep his name. Boeotians instead derive the city-name from Megareus of Onchestus."
     },
     {
-      "ruler": "Perseus",
-      "characterId": "perseus",
+      "ruler": "Lelex",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.39.6, 1.44.3",
+      "note": "Arrived from Egypt in the twelfth generation after Car and became king; the Leleges took their name in his reign. At Nisaea they bury him as son of Poseidon by Libya daughter of Epaphus — distinct from the Laconian autochthon Lelex (lelex-laconia)."
+    },
+    {
+      "ruler": "Cleson",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.39.6, 1.42.7",
+      "note": "Son of Lelex in the Megarian stemma; father of Pylas. His daughters Cleso and Tauropolis are said to have found and buried Ino's corpse on the Megarian coast."
+    },
+    {
+      "ruler": "Pylas",
       "sources": ["apollodorus", "pausanias"],
-      "citation": "Apollod. 2.4.4; Paus. 2.16.3",
-      "note": "After killing Acrisius he exchanged Argos for Tiryns with Megapenthes and went down to reign at Megara."
+      "citation": "Apollod. 3.15.5; Paus. 1.5.3, 1.39.4, 1.39.6",
+      "note": "Son of Cleson; king of Megara whose daughter Pylia wed the exiled Pandion II. Apollodorus has him slay his father's brother Bias, hand the kingdom to Pandion, and found Pylus in the Peloponnese — not the Neleid Pylos of Nestor."
+    },
+    {
+      "ruler": "Pandion II",
+      "characterId": "pandion-ii",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.15.5–6; Paus. 1.5.3, 1.39.4",
+      "note": "Deposed Athenian who fled to Megara, married Pylia, and received the kingship from Pylas. Father there of Aegeus, Pallas, Nisus, and Lycus; his tomb lies on the Megarid coast. Not Pandion I (pandion)."
+    },
+    {
+      "ruler": "Nisus",
+      "characterId": "nisus",
+      "sources": ["apollodorus", "pausanias", "ovid", "hyginus"],
+      "citation": "Apollod. 3.15.5–8; Paus. 1.19.4, 1.39.4–6; Ov. Met. 8.1–151; Hyg. Fab. 198",
+      "note": "Son of Pandion II; Aeacus awarded him the Megarian kingship against Sciron (war-leadership only). Port Nisaea bears his name. Life hung on a purple lock until his daughter Scylla (scylla-nisus — not the cliff-monster) betrayed him to Minos. Distinct from Nisus of Dulichium (nisus-dulichium)."
+    },
+    {
+      "ruler": "Megareus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 1.39.5–6, 1.41.3–5, 1.42.1; Apollod. 3.15.8",
+      "note": "Megarians make him son of Poseidon from Onchestus, son-in-law of Nisus by Iphinoe, and Nisus' successor — suppressing the Cretan capture. Apollodorus instead has him slain helping Nisus against Minos (son of Hippomenes there — not the Atalanta-race Hippomenes). Tomb on the Alcathous citadel.",
+      "topic": "megara-after-nisus"
+    },
+    {
+      "ruler": "Alcathous",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.41.3–6, 1.42.1–6, 1.43.4–5",
+      "note": "Came from Elis after Nisus' fall; Megarians cast him as Megareus' son-in-law and successor who rebuilt the walls with Apollo's lyre laid on the stone. Father of Callipolis and Ischepolis, and of Periboea who wed Telamon. Distinct from the Trojan Alcathous (alcathous-trojan).",
+      "topic": "megara-after-nisus"
+    },
+    {
+      "ruler": "Hyperion",
+      "sources": ["pausanias"],
+      "citation": "Paus. 1.43.3",
+      "note": "Son of Agamemnon and last king of Megara; slain by Sandion for greed and violence, after which the Megarians abolished kingship for elected magistrates. Plain attested name — not the Titan Hyperion (hyperion)."
     }
   ]
 }

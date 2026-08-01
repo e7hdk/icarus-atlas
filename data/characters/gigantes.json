@@ -4,6 +4,9 @@
   "greekName": "Gigantes (Γίγαντες)",
   "romanName": "Gigantes",
   "type": "creature",
+  "kinds": [
+    "giant"
+  ],
   "domains": [
     "earthborn giants",
     "revolt against the gods",

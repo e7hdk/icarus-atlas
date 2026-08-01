@@ -1,6 +1,28 @@
 {
   "id": "notus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Notos (South Wind), Tower of the Winds",
+      "artist": "Unknown (Hellenistic Athenian workshop)",
+      "year": "c. 50 BC (Tower of the Winds, Athens)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CE%B5%CF%82_-_%CE%9D%CF%8C%CF%84%CE%BF%CF%82_6558.jpg/960px-%CE%91%CE%AD%CF%81%CE%B7%CE%B4%CE%B5%CF%82_-_%CE%9D%CF%8C%CF%84%CE%BF%CF%82_6558.jpg",
+      "description": "On the octagonal Horologion of Andronikos Kyrrhestes in the Roman Agora of Athens, the relief of Notos faces due south: a winged youth emptying a water jar, the classical image of the warm, rain-bearing south wind that Hesiod and later poets paired with Boreas, Zephyrus, and Eurus. The Tower of the Winds remains the most famous architectural personification of the Anemoi, and this face is the canonical ancient portrait of Notus as storm-bringer."
+    },
+    {
+      "title": "Notos, God of the South Wind (Byzantine)",
+      "artist": "Unknown (Byzantine)",
+      "year": "Byzantine period",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NotosGodOfTheSouthWind-Byzantine-ROM-Dec29-07.png/960px-NotosGodOfTheSouthWind-Byzantine-ROM-Dec29-07.png",
+      "description": "A Byzantine relief of Notos preserved in the Royal Ontario Museum continues the classical south-wind type into Christian-era decorative sculpture — a winged figure still named for the ancient Anemos. The piece shows how the Greek wind gods survived as directional emblems long after their cults had faded, keeping Notus recognizable as the wet southern breath of the Mediterranean year."
+    },
+    {
+      "title": "Statue of Notus (Palace of the Four Winds, Warsaw)",
+      "artist": "Unknown (Baroque sculptural program)",
+      "year": "17th–18th century (façade sculpture)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/VarsaviaPalazzo4VentiVento1.jpg",
+      "description": "On the façade of Warsaw's Pałac Pod Czterema Wiatrami (Palace under the Four Winds) on ulica Długa, a Baroque statue personifies Notus among the four cardinal winds. The European palace tradition of the Four Winds kept the Greek Anemoi — Boreas, Zephyrus, Eurus, and Notus — as civic ornaments; this figure is the southern member of that quartet, the classical south wind translated into Central European stone."
+    }
+  ],
   "popCulture": [
     {
       "title": "Notus",

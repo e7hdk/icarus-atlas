@@ -1,6 +1,42 @@
 {
   "id": "eurydice-orpheus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Orpheus and Eurydice",
+      "artist": "Peter Paul Rubens",
+      "year": "1636–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Orpheus_and_Eurydice_by_Peter_Paul_Rubens.jpg/960px-Orpheus_and_Eurydice_by_Peter_Paul_Rubens.jpg",
+      "description": "Painted for Philip IV's Torre de la Parada and now in the Museo del Prado, Rubens stages the underworld bargain: Orpheus leads Eurydice past Hades and Persephone as the fatal glance still hangs unmade. Eurydice is the luminous prize of the ascent — the bride the lyre almost brings home."
+    },
+    {
+      "title": "Landscape with Orpheus and Eurydice",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1650–1651",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Nicolas_Poussin_-_Landscape_with_Orpheus_and_Euridice_-_WGA18321.jpg/960px-Nicolas_Poussin_-_Landscape_with_Orpheus_and_Euridice_-_WGA18321.jpg",
+      "description": "Poussin's Louvre landscape sets the myth in a classical Arcadia: Orpheus sings while Eurydice, bitten by the snake, collapses at the edge of the idyll. The painting makes her death the quiet hinge of the scene — a small figure whose fall will send the singer into the underworld."
+    },
+    {
+      "title": "Orpheus and Eurydice",
+      "artist": "George Frederic Watts",
+      "year": "c. 1870",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Watts_George_Frederic_Orpheus_And_Eurydice.jpg/960px-Watts_George_Frederic_Orpheus_And_Eurydice.jpg",
+      "description": "The Victorian Symbolist George Frederic Watts isolates the moment of loss: Orpheus turns and Eurydice slips back into shadow. Where Baroque painters filled the underworld with gods, Watts reduces the myth to two bodies and a glance — Eurydice as the vanishing half of the song."
+    },
+    {
+      "title": "Orpheus and Eurydice",
+      "artist": "Angelica Kauffman",
+      "year": "c. 1792",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Orpheus_and_Eurydice._Angelica_Kauffman.jpg/960px-Orpheus_and_Eurydice._Angelica_Kauffman.jpg",
+      "description": "Angelica Kauffman's Neoclassical canvas softens the catastrophe into tender parting: Orpheus reaches as Eurydice is drawn downward. Painted by one of the eighteenth century's most celebrated women artists, the picture makes Eurydice the emotional centre of the glance that undoes the rescue."
+    },
+    {
+      "title": "Orpheus and Eurydice",
+      "artist": "Titian",
+      "year": "c. 1508",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Titian_-_Orpheus_and_Eurydice_-_WGA22856.jpg/960px-Titian_-_Orpheus_and_Eurydice_-_WGA22856.jpg",
+      "description": "An early Titian (or Titianesque Venetian) treatment of the lovers in a darkening landscape, now associated with the Accademia Carrara. Eurydice's pale form already belongs more to death than to daylight — the myth told as Venetian colour and shadow rather than as underworld spectacle."
+    }
+  ],
   "films": [
     {
       "title": "Black Orpheus",

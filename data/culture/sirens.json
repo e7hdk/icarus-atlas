@@ -38,15 +38,42 @@
       "director": "Joel and Ethan Coen",
       "description": "The Coens' roadside sirens drug the escaped convicts with corn whiskey and song — Odyssey 12 restaged as Depression-era temptation.",
       "externalUrl": "https://en.wikipedia.org/wiki/O_Brother,_Where_Art_Thou%3F"
+    },
+    {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Kirk Douglas is lashed to the mast while the Sirens speak with the voices of his family — Homer's fatal song as peplum sound design.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
     }
   ],
   "popCulture": [
     {
-      "title": "Siren (mythology)",
-      "year": "—",
+      "title": "The Silence of the Sirens",
+      "year": "1917",
       "kind": "other",
-      "description": "The bird-women of the rocks remain the emblem of fatal song — sailors lashed to masts, and every later siren that lures by voice.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+      "creator": "Franz Kafka",
+      "description": "Kafka flips Odyssey 12: the Sirens' silence is deadlier than their song, and Odysseus escapes by misunderstanding his own cleverness.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Silence_of_the_Sirens"
+    }
+  ],
+  "music": [
+    {
+      "title": "Sirenen",
+      "year": "2014",
+      "kind": "opera",
+      "composer": "Rolf Riehm",
+      "description": "Riehm's Frankfurt opera fragments Odysseus, Circe and the Sirens into images of desire and destruction — Homeric song scored for musical saw and shattered samples.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Sirenen"
+    },
+    {
+      "title": "EPIC: The Musical",
+      "year": "2022–2024",
+      "kind": "stage",
+      "composer": "Jorge Rivera-Herrans",
+      "description": "The Thunder Saga opens with sirens disguised as Penelope — beeswax in the ears, then a different beast when Odysseus refuses mercy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/EPIC:_The_Musical"
     }
   ]
 }

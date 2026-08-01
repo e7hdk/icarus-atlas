@@ -4,6 +4,9 @@
   "greekName": "Khimaira (Χίμαιρα)",
   "romanName": "Chimaera",
   "type": "creature",
+  "kinds": [
+    "chimera"
+  ],
   "cluster": "chthonic",
   "domains": [
     "fire-breathing hybrid",

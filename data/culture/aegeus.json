@@ -41,6 +41,24 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Minotaur,_the_Wild_Beast_of_Crete"
     }
   ],
+  "music": [
+    {
+      "title": "Thésée",
+      "year": "1675",
+      "kind": "opera",
+      "composer": "Jean-Baptiste Lully",
+      "description": "Lully and Quinault stage Aegeus at the poisoned cup — the Athenian king who almost kills his unrecognized son before the family sword stops Medea's plot.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Th%C3%A9s%C3%A9e_(Lully)"
+    },
+    {
+      "title": "Teseo",
+      "year": "1713",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's London rewrite of Quinault keeps Aegeus in the recognition drama — the father who dashes the poison when he sees Theseus' sword.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Teseo"
+    }
+  ],
   "popCulture": [
     {
       "title": "The King Must Die",
@@ -49,6 +67,22 @@
       "creator": "Mary Renault",
       "description": "Renault's Aegeus is the aging king of Athens who leaves the tokens under the rock — the father Theseus must claim before Crete.",
       "externalUrl": "https://en.wikipedia.org/wiki/The_King_Must_Die"
+    },
+    {
+      "title": "The Bull from the Sea",
+      "year": "1962",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's sequel looks back on Aegeus' tokens and the black-sail death — the father whose sea-name still marks Theseus' inheritance.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bull_from_the_Sea"
+    },
+    {
+      "title": "Medea",
+      "year": "431 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides gives Aegeus the Corinth sanctuary scene — the childless Athenian king whose promise of refuge lets Medea's revenge proceed.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Medea_(play)"
     }
   ]
 }

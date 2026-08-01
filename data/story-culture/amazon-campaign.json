@@ -1,6 +1,35 @@
 {
   "id": "amazon-campaign",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Theseus and the Amazons (Aison kylix)",
+      "artist": "Aison",
+      "year": "c. 420 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Aison_-_ARV_1174_6_-_Theseus_and_the_Amazons_-_Baia_MAdCF_86492_-_05.jpg/960px-Aison_-_ARV_1174_6_-_Theseus_and_the_Amazons_-_Baia_MAdCF_86492_-_05.jpg",
+      "description": "Attic red-figure: Theseus locked with Amazons — the Athenian campaign that answers the abduction of Antiope or Hippolyte."
+    },
+    {
+      "title": "Theseus in the Amazonomachy",
+      "artist": "Group of Polygnotos",
+      "year": "c. 450–440 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Group_of_Polygnotos_ARV_1052_29_Theseus_in_the_amazonomachy_%2801%29.jpg/960px-Group_of_Polygnotos_ARV_1052_29_Theseus_in_the_amazonomachy_%2801%29.jpg",
+      "description": "Red-figure Amazonomachy with Theseus among the fighters — Athens' mythic war against the warrior women."
+    },
+    {
+      "title": "Theseus and Antiope (Athenian Treasury, Delphi)",
+      "artist": "Unknown (Archaic Greek)",
+      "year": "c. 500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Treasury_of_Athenians%2C_Theseus_and_Antiope%2C_500_BC%2C_AM_Delphi%2C_201401.jpg/960px-Treasury_of_Athenians%2C_Theseus_and_Antiope%2C_500_BC%2C_AM_Delphi%2C_201401.jpg",
+      "description": "Delphi metope: Theseus carries off Antiope — the abduction that brings Amazon vengeance to Athens and sires Hippolytus."
+    },
+    {
+      "title": "The Embassy of Hippolyta to Theseus",
+      "artist": "Vittore Carpaccio",
+      "year": "c. 1495",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Carpaccio_-_L%E2%80%99Ambassade_qu%E2%80%99Hippolyte%2C_la_reine_des_Amazones_envoie_%C3%A0_Th%C3%A9s%C3%A9e%2C_roi_d%E2%80%99Ath%C3%A8nes%2C_Vers_1495.jpg/960px-Carpaccio_-_L%E2%80%99Ambassade_qu%E2%80%99Hippolyte%2C_la_reine_des_Amazones_envoie_%C3%A0_Th%C3%A9s%C3%A9e%2C_roi_d%E2%80%99Ath%C3%A8nes%2C_Vers_1495.jpg",
+      "description": "Carpaccio's Venetian pageant: Hippolyta's embassy to King Theseus — the Amazon queen and the Athenian hero before war or marriage."
+    }
+  ],
   "popCulture": [
     {
       "title": "Penthesilea",

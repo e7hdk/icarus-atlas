@@ -2,18 +2,25 @@
   "city": "xanthus-lycia",
   "reigns": [
     {
+      "ruler": "Iobates",
+      "characterId": "iobates-lycia",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 6.171–199; Bibliotheca 2.2.1, 2.3.1–2; Fabulae 57",
+      "note": "King of Lycia at the stream of Xanthus — father of Stheneboea and Philonoe — who received Bellerophon bearing Proetus' sealed murder-token and set the Chimera, Solymi, Amazons, and Lycian ambush as trials. Apollodorus notes some call this same king Amphianax."
+    },
+    {
       "ruler": "Bellerophon",
       "characterId": "bellerophon",
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 6.171–205; Bibliotheca 2.3.1–2.3.2",
-      "note": "Sent to Lycia bearing baneful tokens, he slew the Chimera, fought the glorious Solymi and the Amazons, and received half the kingly honour; he came to the stream of Xanthus and was bequeathed the Lycian realm."
+      "note": "Sent to Lycia with baneful tokens, he slew the Chimera, fought the glorious Solymi and the Amazons, and received half the kingly honour and Philonoe; dying, Iobates bequeathed him the Lycian realm. Father of Isander, Hippolochus, and Laodameia."
     },
     {
-      "ruler": "Sarpedon",
-      "characterId": "sarpedon",
+      "ruler": "Sarpedon & Glaucus",
+      "characterIds": ["sarpedon", "glaucus-lycian"],
       "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 2.876–877; Bibliotheca 3.1.2",
-      "note": "Son of Zeus and Europa who fled Crete after Minos' victory, allied with Cilix, and became king of Lycia; Homer makes him and peerless Glaucus captains of the Lycians from the eddying Xanthus."
+      "citation": "Iliad 2.876–877, 6.196–205, 12.310–314; Bibliotheca 3.1.1–2; Epitome 3.35",
+      "note": "Homeric co-captains of the Lycians from the eddying Xanthus, held in honour above all in Lycia with seats, messes, and a demesne by Xanthus' banks — Glaucus son of Hippolochus of Bellerophon's house; Sarpedon son of Zeus by Laodameia in Homer, or by Europa (king of Lycia after fleeing Crete) in Apollodorus, who notes both parentages."
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "id": "kallynteria",
+  "name": "Kallynteria",
+  "greekName": "Καλλυντήρια",
+  "deities": ["athena"],
+  "place": "athens",
+  "atticDate": { "month": "thargelion", "days": [28], "approximate": true },
+  "conventionalDates": ["05-28"],
+  "summary": "The adorning of Athena after the Plynteria washing — the Praxiergidai clean the temple, relight the sacred lamp, and restore the goddess to her peplos and jewelry so the closed sanctuary opens again.",
+  "testimonia": [
+    "Photius / Suda s.v. Καλλυντήρια (the cleaning and adorning rites)",
+    "Mikalson (1975) 163–165 (after the Plynteria; day within 24–28 Thargelion approximate)",
+    "Parke (1977) 152–155",
+    "Deubner, Attische Feste (1932) 17–22"
+  ]
+}

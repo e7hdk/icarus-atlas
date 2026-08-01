@@ -1,17 +1,42 @@
 {
   "id": "nonacris-oread",
-  "summary": "Nonacris is an Arcadian nymph in Greek mythology, named by Pausanias as the wife of Lycaon and the eponym of the town Nonacris near the Styx waterfall in Arcadia.",
+  "summary": "Nonacris is an Arcadian nymph named by Pausanias as the wife of Lycaon and the eponym of the town Nonacris near the cliff from which the Styx water falls. The settlement was already in ruins in Pausanias' day; the nymph exists mainly as that place-name's mythic mother.",
   "attribution": "Adapted from Wikipedia, \"Nonacris (mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Νώνακρις (Nónakris), also the town name in northern Arcadia.",
+  "symbols": [
+    "Styx waterfall",
+    "Arcadian eponym"
+  ],
+  "cultCenters": [
+    "Nonacris (Arcadia)",
+    "Styx water (Arcadian cliff)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Wife of Lycaon",
       "paragraphs": [
-        "Pausanias records that the Arcadian town Nonacris was named after the wife of Lycaon (Description of Greece 8.17.6).",
-        "The site lay near a high cliff from which the water called the Styx descends — a landmark the geographer saw in ruins on his visit."
+        "Pausanias records that the Arcadian town Nonacris was named after Nonacris, wife of Lycaon (Description of Greece 8.17.6). In that notice she is an eponymous consort rather than an actor in Lycaon's infamous banquet for Zeus.",
+        "Other genealogies of Lycaon's many sons rarely repeat her name; she is a local aetiology attached to one Arcadian site."
+      ]
+    },
+    {
+      "heading": "Town and the Styx",
+      "paragraphs": [
+        "The historical Nonacris lay near a high crag from which water called the Styx descends — the Arcadian Styx known to poets and to the oath of the gods. Pausanias found the town in ruins but still identified the waterfall.",
+        "Because Syrinx is also linked to Nonacris in Ovid, the place gathers several Arcadian nymph traditions; the eponym Nonacris herself remains the wife-of-Lycaon figure in Pausanias."
+      ]
+    },
+    {
+      "heading": "Scope",
+      "paragraphs": [
+        "Nonacris has no independent epic cycle. She should not be confused with the town as a purely geographic label, nor merged with Syrinx or Cyllene, neighbouring Arcadian nymphs with separate myths."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nonacris_(mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nonacris"
+    }
   ]
 }

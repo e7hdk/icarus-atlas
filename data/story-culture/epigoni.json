@@ -1,6 +1,35 @@
 {
   "id": "epigoni",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Erinyes Drive Alcmaeon from the Corpse of Eriphyle",
+      "artist": "Henry Fuseli",
+      "year": "1821",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Henry_Fuseli_-_Die_Erinnyen_vertreiben_Alkmaion_von_der_Leiche_seiner_von_ihm_get%C3%B6teten_Mutter_Eriphyle_-_2441_-_Kunsthaus_Z%C3%BCrich.jpg/960px-Henry_Fuseli_-_Die_Erinnyen_vertreiben_Alkmaion_von_der_Leiche_seiner_von_ihm_get%C3%B6teten_Mutter_Eriphyle_-_2441_-_Kunsthaus_Z%C3%BCrich.jpg",
+      "description": "Kunsthaus Zürich: Fuseli seizes the Epigoni captain's aftermath — Alcmaeon flees Eriphyle's corpse as the Erinyes swarm, the necklace-revenge that avenges Amphiaraus and pollutes the second Theban war's leader."
+    },
+    {
+      "title": "Alcmaeon Killing His Mother Eriphyle",
+      "artist": "Unknown Roman wall-painter",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Alcmaeon_killing_his_mother_Eriphyle.jpg",
+      "description": "Pompeian fresco (Naples): Alcmaeon strikes down the mother who sold Amphiaraus into the Seven — the matricide that binds the Epigoni generation to Orestes' kind of pollution."
+    },
+    {
+      "title": "Eriphyle Suckling Alcmaeon, with Amphiaraus",
+      "artist": "Unknown Attic red-figure painter",
+      "year": "c. 450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Classical_hydria_ARV_extra_-_Eriphyle_suckling_Alkmaion_%2802%29.jpg/960px-Classical_hydria_ARV_extra_-_Eriphyle_suckling_Alkmaion_%2802%29.jpg",
+      "description": "Attic hydria: Amphiaraus leans on his staff while Eriphyle suckles infant Alcmaeon — domestic calm before the necklace, the Seven's failure, and the sons' return."
+    },
+    {
+      "title": "The Erinyes beside the Body of Eriphyle",
+      "artist": "Henry Fuseli",
+      "year": "1821",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/Les_Erinyes_aupr%C3%A8s_du_corps_d%27Eriphyle.jpg",
+      "description": "Fuseli's pendant treatment: the Furies crowd Eriphyle's corpse as Alcmaeon is driven into exile — Romantic tragedy fixing the Epigoni matricide as the cycle's second Orestes."
+    }
+  ],
   "popCulture": [
     {
       "title": "Epigoni (epic)",

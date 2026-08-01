@@ -1,20 +1,46 @@
 {
   "id": "prometheus",
-  "summary": "In Greek mythology, Prometheus is a Titan responsible for creating or aiding humanity in its earliest days. He defied the Olympian gods by taking fire from them and giving it to humanity in the form of technology, knowledge and, more generally, civilization.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Prometheus is a Titan responsible for creating or aiding humanity in its earliest days. He defied the Olympian gods by taking fire from them and giving it to humanity in the form of technology, knowledge and, more generally, civilization. Zeus punished him by chaining him to a rock where an eagle ate his regenerating liver daily until Heracles freed him. He became a lasting emblem of human striving, scientific ambition, and the cost of overreaching — Mary Shelley's Frankenstein is subtitled \"The Modern Prometheus.\"",
+  "attribution": "Adapted from Wikipedia, \"Prometheus\" · CC BY-SA 4.0",
+  "etymology": "The usual reading takes Prometheus as \"forethinker\" (pro- \"before\" + a root related to learning or thought), paired with his brother Epimetheus, the \"afterthinker.\" Plato's Protagoras folk-etymologizes the name from pro- and manthano (\"learn\"). Hesychius also records the opaque variant names Ithas and Ithax for him as herald of the Titans.",
+  "symbols": [
+    "Fire",
+    "Fennel stalk (narthex)",
+    "Chains",
+    "Eagle"
+  ],
+  "cultCenters": [
+    "Athens (altar in the Academy; torch races of the Prometheia)",
+    "Argos and Opus (rival tombs)",
+    "Panopeus (cult statue linked to the creation of humans)"
+  ],
+  "sections": [
+    {
+      "heading": "Hesiodic myths",
+      "paragraphs": [
+        "Hesiod's Theogony makes Prometheus a son of the Titan Iapetus by the Oceanid Clymene (or Asia), brother of Atlas, Epimetheus, and Menoetius. At Mecone he tricks Zeus into choosing the worse portion of a sacrificial ox — bones wrapped in fat — establishing the Greek practice of burnt offering while mortals keep the meat. Zeus hides fire in retribution; Prometheus steals it back in a fennel stalk. Zeus binds him and sends an eagle to devour his liver each day; Heracles later kills the eagle and frees him with Zeus's consent.",
+        "Works and Days retells the fire theft and elaborates Zeus's counter-gift: Pandora, fashioned by Hephaestus and adorned by the gods, whom Epimetheus accepts despite Prometheus's warning. From her jar escape evils upon humankind, Hope alone remaining inside."
+      ]
+    },
+    {
+      "heading": "Aeschylus, Plato, and creation of man",
+      "paragraphs": [
+        "Prometheus Bound (traditionally ascribed to Aeschylus) widens the Titan's gifts to writing, mathematics, agriculture, medicine, and other arts, and makes him keeper of a secret that could unseat Zeus — the prophecy about Thetis. The lost plays of the Prometheia trilogy apparently staged his release and reconciliation. Plato's Protagoras has Epimetheus exhaust natural gifts on animals, leaving humans naked until Prometheus steals technical fire from Athena and Hephaestus.",
+        "Later authors (Sappho, Aesop, Ovid, and others) credit Prometheus with fashioning humans from clay. Pseudo-Apollodorus and others also place him at Athena's birth and have Chiron take on his suffering so that the Titan may be freed."
+      ]
+    },
+    {
+      "heading": "Cult and reception",
+      "paragraphs": [
+        "Outside Athens, direct cult of Prometheus was scarce; Lucian joked that temples of the major Olympians were everywhere, but none for Prometheus. At Athens he shared honor with Athena and Hephaestus: the altar in the Academy was the starting point of torch races (lampadedromia) that kindled the Panathenaic fire, and the Prometheia festival commemorated him. Pausanias notes rival tombs at Argos and Opus and a statue at Panopeus tied to the creation of humankind.",
+        "In Western tradition Prometheus became the rebel genius and benefactor of humanity — from Romantic poems by Goethe, Byron, and Shelley to philosophical and political allegory. The torment by the eagle and the gift of fire remained favorite subjects in ancient vase-painting and later European art."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Prometheus"
     }
-  ],
-  "symbols": [
-    "fire",
-    "fennel stalk (narthex)",
-    "chains"
-  ],
-  "cultCenters": [
-    "Athens (altar in the Academy; torch races of the Promethia)"
-  ],
-  "etymology": "Read by the Greeks as \"fore-thinker\", paired with his brother Epimetheus, the \"after-thinker\"."
+  ]
 }

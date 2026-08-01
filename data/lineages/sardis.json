@@ -2,18 +2,24 @@
   "city": "sardis",
   "reigns": [
     {
-      "ruler": "Omphale",
-      "characterId": "omphale",
+      "ruler": "Tmolus",
       "sources": ["apollodorus"],
       "citation": "Bibliotheca 2.6.3",
-      "note": "Queen of Lydia to whom Tmolus had bequeathed the kingdom; she bought Heracles as a slave when the oracle demanded his servitude."
+      "note": "Husband of Omphale who at his death bequeathed the government of Lydia to her — the only plain Lydian predecessor Apollodorus names before her queenship. Plain name until promoted. Homonym care: Ovid's Mount Tmolus (between Sardis and Hypaepa) that judges Apollo and Pan is the mountain; this reign is the mortal king who left Omphale the throne."
+    },
+    {
+      "ruler": "Omphale",
+      "characterId": "omphale",
+      "sources": ["apollodorus", "hyginus", "pausanias"],
+      "citation": "Bibliotheca 2.6.2–2.6.3, 2.7.8; Fabulae 32; Description of Greece 1.35.8",
+      "note": "Daughter of Iardanes, queen of Lydia; bought Heracles when Hermes sold him into servitude. By him she bore Agelaus, from whom Apollodorus derives the later house of Croesus — Agelaus himself is not styled a reigning king in the seven lenses, so he is kept out of this list."
     },
     {
       "ruler": "Midas",
       "characterId": "midas",
       "sources": ["ovid", "hyginus"],
       "citation": "Metamorphoses 11.130–299; Fabulae 191",
-      "note": "Mygdonian or Lydian king who entertained Silenus and judged the contest on Tmolus between Apollo and Pan."
+      "note": "Ovid's King Midas washes the golden curse in the stream by Sardis and judges the contest on Tmolus overlooking Sardis and Hypaepa. Pausanias instead roots him in Phrygia (Gordion / Ancyra) via Gordius — dual geography, not a continuous Omphale heir."
     }
   ]
 }

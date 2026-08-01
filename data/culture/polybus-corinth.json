@@ -1,0 +1,49 @@
+{
+  "id": "polybus-corinth",
+  "artworks": [],
+  "films": [
+    {
+      "title": "Edipo re",
+      "year": "1967",
+      "medium": "film",
+      "director": "Pier Paolo Pasolini",
+      "description": "Pasolini's Oedipus still rests on Corinthian fosterage — Polybus and Merope as the gentle parents the hero flees, believing them the parents of the oracle's doom.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Edipo_re"
+    },
+    {
+      "title": "Oedipus the King",
+      "year": "1968",
+      "medium": "film",
+      "director": "Philip Saville",
+      "description": "Saville's Sophocles adaptation keeps the Corinthian lie at the tragedy's core: Polybus' death-news is the false comfort that drives Oedipus toward recognition.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_the_King_(film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Oedipus Rex",
+      "year": "1927",
+      "kind": "opera",
+      "composer": "Igor Stravinsky",
+      "description": "Stravinsky's Latin opera-oratorio still needs Corinth: the messenger from Polybus' house who thinks he brings mercy and instead opens the wound of birth.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex_(Stravinsky)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Oedipus Rex",
+      "year": "c. 429 BC",
+      "kind": "other",
+      "creator": "Sophocles",
+      "description": "Sophocles' tragedy makes Polybus of Corinth the foster-father whose supposed death frees Oedipus from fear — until the Corinthian messenger reveals the adoption that unravels Thebes.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Oedipus_Rex"
+    },
+    {
+      "title": "Polybus of Corinth",
+      "year": "mythic reception",
+      "kind": "other",
+      "description": "Childless king who raised the exposed infant as his own — the gentle Corinthian father Oedipus flees so as not to kill, and whose name still marks the foster half of the Theban plot.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Polybus_of_Corinth"
+    }
+  ]
+}

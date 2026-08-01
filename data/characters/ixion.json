@@ -44,9 +44,16 @@
       "citation": "Fabulae 14.2, 34"
     },
     {
-      "text": "Sources place his Thessalian kingship at Larissa, but his punishment binds him to the wheel in the sky — a figure of wandering crime and cosmic torment, not civic residence. Residence stays deferred.",
-      "sources": ["apollodorus", "homer", "hyginus"],
-      "citation": "Epitome 1.20; Iliad 14.317–328; Fabulae 14.2"
+      "text": "Apollodorus lists Pirithous son of Ixion among the Calydonian hunters as coming from Larissa — the Lapith house's Thessalian seat before the wheel bound him to the sky.",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.8.2"
+    }
+  ],
+  "residences": [
+    {
+      "city": "larisa",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.8.2"
     }
   ]
 }

@@ -1,6 +1,35 @@
 {
   "id": "semele-and-the-birth",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jupiter and Semele",
+      "artist": "Gustave Moreau",
+      "year": "1889–1895",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Jupiter_and_Semele_by_Gustave_Moreau.jpg/960px-Jupiter_and_Semele_by_Gustave_Moreau.jpg",
+      "description": "Moreau's Jupiter and Semele — the mortal mother consumed by the god's true form, Dionysus still unborn in the blaze."
+    },
+    {
+      "title": "The Death of Semele",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1640",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rubens-Death-of-Semele.jpg/960px-Rubens-Death-of-Semele.jpg",
+      "description": "Rubens' Death of Semele — Hera's jealous counsel fulfilled as the thunderbolt that births Bacchus kills his mother."
+    },
+    {
+      "title": "Jupiter and Semele",
+      "artist": "Jacopo Tintoretto",
+      "year": "c. 1545",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Jacopo_Tintoretto_-_Jupiter_and_Semele%2C_1545.jpg/960px-Jacopo_Tintoretto_-_Jupiter_and_Semele%2C_1545.jpg",
+      "description": "Tintoretto's Jupiter and Semele — Venetian drama of the visitation that seals Thebes' wine-god lineage."
+    },
+    {
+      "title": "Bacchus",
+      "artist": "Caravaggio",
+      "year": "c. 1596",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bacchus_by_Caravaggio_1.jpg/960px-Bacchus_by_Caravaggio_1.jpg",
+      "description": "Caravaggio's Bacchus — the god who survives the fire, twice-born from Zeus' thigh after Semele's death."
+    }
+  ],
   "popCulture": [
     {
       "title": "Semele",

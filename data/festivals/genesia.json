@@ -1,0 +1,16 @@
+{
+  "id": "genesia",
+  "name": "Genesia",
+  "greekName": "Γενέσια",
+  "deities": ["gaia"],
+  "place": "athens",
+  "atticDate": { "month": "boedromion", "days": [5] },
+  "conventionalDates": ["09-05"],
+  "summary": "The city's day for the dead early in Boedromion — a public mourning before the Mysteries, kept for Earth and the ancestors rather than a single Olympian cult.",
+  "testimonia": [
+    "Herodotus 4.26 (the Issedones' customs compared with the Greek Genesia)",
+    "Hesychius s.v. Γενέσια (a festival of mourning among the Athenians)",
+    "Mikalson (1975) 49 (5 Boedromion)",
+    "Parke (1977) 53–54"
+  ]
+}

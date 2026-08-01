@@ -1,66 +1,51 @@
 'use client';
 
-import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
+import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
-import type { Character, CharacterType } from '@/types/character';
+import type { Character } from '@/types/character';
 import { TYPE_GLOW, IRIDESCENT_BASE_HUE } from '@/types/character';
 import { hashString, type Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
-import { CORE_VERT, CORE_FRAG, GLOW_VERT, GLOW_FRAG } from './shaders/starInstanced';
+import {
+  CORE_VERT,
+  CORE_FRAG,
+  GLOW_VERT,
+  GLOW_FRAG,
+  MOBILE_CORE_VERT,
+} from './shaders/starInstanced';
 import { useElapsedRef } from './useElapsedRef';
 import { StarLabel } from './StarLabel';
+import { STAR_SIZE, STAR_PULSE, starGlowTexture } from './starLook';
 
-/** Per-type sizes — identical to the old CharacterStar (and StarLabel). */
-const SIZE: Record<CharacterType, number> = {
-  primordial: 0.85,
-  titan: 0.78,
-  olympian: 0.95,
-  god: 0.8,
-  hero: 0.7,
-  mortal: 0.6,
-  nymph: 0.65,
-  creature: 0.75,
-};
-
-const PULSE: Record<'slow' | 'steady' | 'quick' | 'irregular', { speed: number; amp: number }> = {
-  slow: { speed: 0.7, amp: 0.1 },
-  steady: { speed: 1.4, amp: 0.06 },
-  quick: { speed: 3.2, amp: 0.1 },
-  irregular: { speed: 2.1, amp: 0.12 },
-};
+/** Per-type sizes and pulses — identical to the old CharacterStar (and
+ *  StarLabel), now shared with the week's catasterism via starLook. */
+const SIZE = STAR_SIZE;
+const PULSE = STAR_PULSE;
 
 const SHIMMER_SPEED = 0.06;
 const SHIMMER_SAT = 0.82;
 const SHIMMER_LIGHT = 0.62;
+/** A 48px invisible mobile target meets touch ergonomics without making the
+ *  rendered star larger. The custom raycast chooses the closest screen centre
+ *  when targets overlap, instead of letting oversized world spheres compete. */
+const MOBILE_STAR_HIT_RADIUS_PX = 24;
 
-/** Soft radial halo texture, generated once and shared by every glow instance. */
-function makeGlowTexture(): THREE.CanvasTexture {
-  const canvas = document.createElement('canvas');
-  canvas.width = canvas.height = 128;
-  const ctx = canvas.getContext('2d')!;
-  const gradient = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
-  gradient.addColorStop(0, 'rgba(255,255,255,0.85)');
-  gradient.addColorStop(0.25, 'rgba(255,255,255,0.28)');
-  gradient.addColorStop(0.6, 'rgba(255,255,255,0.07)');
-  gradient.addColorStop(1, 'rgba(255,255,255,0)');
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, 128, 128);
-  return new THREE.CanvasTexture(canvas);
-}
-
-/** GPU-instanced replacement for the 521 individual <CharacterStar> meshes.
+/** GPU-instanced replacement for the individual <CharacterStar> meshes.
  *  ONE driver useFrame writes pulse/brightness/Muse-hue/emphasis into per-instance
  *  buffers; two instanced draws (core spheres + glow billboards) plus one invisible
- *  instanced hit-volume and a single shared selection ring replace ~1,563 draw
- *  calls and 521 frame callbacks. The animation math is byte-identical to the old
+ *  instanced hit-volume and a single shared selection ring replace thousands of
+ *  draws and frame callbacks. The animation math is byte-identical to the old
  *  per-star path (same sin/lerp/PULSE/SHIMMER/emphasis/attested formulas), so the
- *  result is visually unchanged. Labels stay as drei <Html> (StarLabel) for now. */
+ *  result is visually unchanged. Desktop keeps drei Html labels; mobile batches
+ *  them into one Canvas2D overlay in GalaxyCanvas. */
 export function StarsDriver({
   characters,
+  isMobile,
   positions,
 }: {
   characters: Character[];
+  isMobile: boolean;
   positions: Map<string, Vec3>;
 }) {
   const coreRef = useRef<THREE.InstancedMesh>(null);
@@ -68,6 +53,9 @@ export function StarsDriver({
   const hitRef = useRef<THREE.InstancedMesh>(null);
   const ringRef = useRef<THREE.Mesh>(null);
   const prevSelected = useRef<number>(-1);
+  const prevHoveredIndex = useRef<number>(-1);
+  const prevSelectedIndex = useRef<number>(-1);
+  const opacityDirty = useRef(true);
 
   const setHovered = useGalaxyStore((s) => s.setHovered);
   const select = useGalaxyStore((s) => s.select);
@@ -103,6 +91,10 @@ export function StarsDriver({
     const glowColor = new Float32Array(N * 3);
     const glowScale = new Float32Array(N);
     const glowOpacity = new Float32Array(N).fill(0.55);
+    const coreScale = new Float32Array(N);
+    const posX = new Float32Array(N);
+    const posY = new Float32Array(N);
+    const posZ = new Float32Array(N);
 
     const indexToId: string[] = [];
     const idToIndex = new Map<string, number>();
@@ -114,6 +106,7 @@ export function StarsDriver({
       const pulse = PULSE[glow.pulse];
       const size = SIZE[c.type];
       sizeArr[i] = size;
+      coreScale[i] = size;
       hitScaleArr[i] = Math.max(size * 3, 1.5);
       speedArr[i] = pulse.speed;
       ampArr[i] = pulse.amp;
@@ -137,20 +130,36 @@ export function StarsDriver({
     }
 
     const coreGeo = new THREE.SphereGeometry(1, 24, 24);
-    coreGeo.setAttribute('aColor', new THREE.InstancedBufferAttribute(coreColor, 3));
+    const coreColorAttribute = new THREE.InstancedBufferAttribute(coreColor, 3);
+    const glowColorAttribute = new THREE.InstancedBufferAttribute(glowColor, 3);
+    const glowScaleAttribute = new THREE.InstancedBufferAttribute(glowScale, 1);
+    const glowOpacityAttribute = new THREE.InstancedBufferAttribute(glowOpacity, 1);
+    if (isMobile) {
+      coreColorAttribute.setUsage(THREE.DynamicDrawUsage);
+      glowColorAttribute.setUsage(THREE.DynamicDrawUsage);
+      glowScaleAttribute.setUsage(THREE.DynamicDrawUsage);
+      glowOpacityAttribute.setUsage(THREE.DynamicDrawUsage);
+    }
+    coreGeo.setAttribute('aColor', coreColorAttribute);
     coreGeo.setAttribute('aAlpha', new THREE.InstancedBufferAttribute(coreAlpha, 1));
+    if (isMobile) {
+      coreGeo.setAttribute(
+        'aScale',
+        new THREE.InstancedBufferAttribute(coreScale, 1).setUsage(THREE.DynamicDrawUsage),
+      );
+    }
     const glowGeo = new THREE.PlaneGeometry(1, 1);
-    glowGeo.setAttribute('aColor', new THREE.InstancedBufferAttribute(glowColor, 3));
-    glowGeo.setAttribute('aScale', new THREE.InstancedBufferAttribute(glowScale, 1));
-    glowGeo.setAttribute('aOpacity', new THREE.InstancedBufferAttribute(glowOpacity, 1));
+    glowGeo.setAttribute('aColor', glowColorAttribute);
+    glowGeo.setAttribute('aScale', glowScaleAttribute);
+    glowGeo.setAttribute('aOpacity', glowOpacityAttribute);
     const hitGeo = new THREE.SphereGeometry(1, 12, 12);
 
     const coreMat = new THREE.ShaderMaterial({
-      vertexShader: CORE_VERT,
+      vertexShader: isMobile ? MOBILE_CORE_VERT : CORE_VERT,
       fragmentShader: CORE_FRAG,
       transparent: true,
     });
-    const glowTexture = makeGlowTexture();
+    const glowTexture = starGlowTexture();
     const glowMat = new THREE.ShaderMaterial({
       vertexShader: GLOW_VERT,
       fragmentShader: GLOW_FRAG,
@@ -160,47 +169,75 @@ export function StarsDriver({
       uniforms: { uMap: { value: glowTexture } },
     });
     const hitMat = new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false });
+    // Material visibility removes the invisible draw while preserving raycast.
+    hitMat.visible = !isMobile;
 
     return {
       N, sizeArr, hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr,
       baseR, baseG, baseB, displayColors, groupCur, attested,
-      coreColor, coreAlpha, glowColor, glowScale, glowOpacity,
+      coreColor, coreAlpha, coreScale, glowColor, glowScale, glowOpacity, posX, posY, posZ,
       indexToId, idToIndex,
       coreGeo, glowGeo, hitGeo, coreMat, glowMat, hitMat, glowTexture,
     };
-  }, [stars, count]);
+  }, [stars, count, isMobile]);
+
+  const dataRef = useRef(data);
+  useLayoutEffect(() => {
+    dataRef.current = data;
+  }, [data]);
+
+  useEffect(
+    () => () => {
+      data.coreGeo.dispose();
+      data.glowGeo.dispose();
+      data.hitGeo.dispose();
+      data.coreMat.dispose();
+      data.glowMat.dispose();
+      data.hitMat.dispose();
+    },
+    [data],
+  );
 
   // Position the instances; rebuild when positions (e.g. spacingScale) change.
-  const posX = useMemo(() => new Float32Array(count), [count]);
-  const posY = useMemo(() => new Float32Array(count), [count]);
-  const posZ = useMemo(() => new Float32Array(count), [count]);
   useLayoutEffect(() => {
     const core = coreRef.current, glow = glowRef.current, hit = hitRef.current;
     if (!core || !glow || !hit) return;
+    const currentData = dataRef.current;
     const m = new THREE.Matrix4();
     for (let i = 0; i < count; i++) {
       const p = positions.get(stars[i].id)!;
-      posX[i] = p[0]; posY[i] = p[1]; posZ[i] = p[2];
-      // core: translation + (size × current=1) scale; the loop rewrites the scale.
-      m.makeScale(data.sizeArr[i], data.sizeArr[i], data.sizeArr[i]);
-      m.setPosition(p[0], p[1], p[2]);
+      currentData.posX[i] = p[0];
+      currentData.posY[i] = p[1];
+      currentData.posZ[i] = p[2];
+      // Mobile keeps the matrix static; its compact aScale attribute pulses.
+      if (isMobile) {
+        m.makeTranslation(p[0], p[1], p[2]);
+      } else {
+        m.makeScale(currentData.sizeArr[i], currentData.sizeArr[i], currentData.sizeArr[i]);
+        m.setPosition(p[0], p[1], p[2]);
+      }
       core.setMatrixAt(i, m);
       // glow: translation only (size lives in aScale).
       m.makeTranslation(p[0], p[1], p[2]);
       glow.setMatrixAt(i, m);
       // hit: translation + static oversized scale.
-      m.makeScale(data.hitScaleArr[i], data.hitScaleArr[i], data.hitScaleArr[i]);
+      m.makeScale(
+        currentData.hitScaleArr[i],
+        currentData.hitScaleArr[i],
+        currentData.hitScaleArr[i],
+      );
       m.setPosition(p[0], p[1], p[2]);
       hit.setMatrixAt(i, m);
     }
     core.instanceMatrix.needsUpdate = true;
     glow.instanceMatrix.needsUpdate = true;
     hit.instanceMatrix.needsUpdate = true;
-  }, [data, positions, stars, count, posX, posY, posZ]);
+  }, [data, positions, stars, count, isMobile]);
 
   // Recompute attested + core alpha only when the lens changes (one pass, no
   // per-frame work and no per-star React re-render).
   useLayoutEffect(() => {
+    const currentData = dataRef.current;
     for (let i = 0; i < count; i++) {
       const c = stars[i];
       const att =
@@ -209,28 +246,100 @@ export function StarsDriver({
         c.story.some((e) => e.sources.includes(lens))
           ? 1
           : 0;
-      data.attested[i] = att;
-      data.coreAlpha[i] = att ? 1 : 0.45;
+      currentData.attested[i] = att;
+      currentData.coreAlpha[i] = att ? 1 : 0.45;
     }
     if (coreRef.current) {
       (coreRef.current.geometry.getAttribute('aAlpha') as THREE.BufferAttribute).needsUpdate = true;
     }
+    opacityDirty.current = true;
   }, [lens, data, stars, count]);
+
+  useEffect(() => {
+    if (!isMobile) return;
+    setHovered(null);
+    document.body.style.cursor = 'auto';
+  }, [isMobile, setHovered]);
 
   const shimmer = useMemo(() => new THREE.Color(), []);
   const elapsed = useElapsedRef();
+  const camera = useThree((state) => state.camera);
+  const viewportHeight = useThree((state) => state.size.height);
+
+  const mobileHitRaycast = useCallback(
+    (raycaster: THREE.Raycaster, intersects: THREE.Intersection[]) => {
+      const object = hitRef.current;
+      if (
+        !object ||
+        !(camera instanceof THREE.PerspectiveCamera) ||
+        viewportHeight <= 0
+      ) {
+        return;
+      }
+
+      const currentData = dataRef.current;
+      const ray = raycaster.ray;
+      const angularRadius =
+        (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov) * 0.5) *
+          MOBILE_STAR_HIT_RADIUS_PX) /
+        viewportHeight;
+      const angularRadiusSq = angularRadius * angularRadius;
+      let bestIndex = -1;
+      let bestDistance = Infinity;
+      let bestAngularDistanceSq = Infinity;
+
+      for (let index = 0; index < count; index++) {
+        const dx = currentData.posX[index] - ray.origin.x;
+        const dy = currentData.posY[index] - ray.origin.y;
+        const dz = currentData.posZ[index] - ray.origin.z;
+        const distance = dx * ray.direction.x + dy * ray.direction.y + dz * ray.direction.z;
+        if (distance <= raycaster.near || distance >= raycaster.far) continue;
+
+        const perpendicularSq = Math.max(
+          0,
+          dx * dx + dy * dy + dz * dz - distance * distance,
+        );
+        const angularDistanceSq = perpendicularSq / (distance * distance);
+        if (
+          angularDistanceSq <= angularRadiusSq &&
+          (angularDistanceSq < bestAngularDistanceSq ||
+            (angularDistanceSq === bestAngularDistanceSq && distance < bestDistance))
+        ) {
+          bestIndex = index;
+          bestDistance = distance;
+          bestAngularDistanceSq = angularDistanceSq;
+        }
+      }
+
+      if (bestIndex < 0) return;
+      intersects.push({
+        distance: bestDistance,
+        instanceId: bestIndex,
+        object,
+        point: ray.at(bestDistance, new THREE.Vector3()),
+      });
+    },
+    [camera, count, viewportHeight],
+  );
 
   useFrame(({ camera }) => {
     const core = coreRef.current, glow = glowRef.current;
     if (!core || !glow) return;
+    const currentData = dataRef.current;
     const t = elapsed.current;
     const st = useGalaxyStore.getState();
-    const hi = st.hoveredId ? data.idToIndex.get(st.hoveredId) ?? -1 : -1;
-    const si = st.selectedId ? data.idToIndex.get(st.selectedId) ?? -1 : -1;
+    const hi = st.hoveredId ? currentData.idToIndex.get(st.hoveredId) ?? -1 : -1;
+    const si = st.selectedId ? currentData.idToIndex.get(st.selectedId) ?? -1 : -1;
 
     const cm = core.instanceMatrix.array as Float32Array;
-    const { coreColor, glowColor, glowScale, glowOpacity, groupCur, attested,
-      sizeArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr, baseR, baseG, baseB } = data;
+    const { coreColor, coreScale, glowColor, glowScale, glowOpacity, groupCur, attested,
+      sizeArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr, baseR, baseG, baseB,
+      posX, posY, posZ } = currentData;
+    const updateGlowOpacity =
+      !isMobile ||
+      opacityDirty.current ||
+      hi !== prevHoveredIndex.current ||
+      si !== prevSelectedIndex.current;
 
     for (let i = 0; i < count; i++) {
       const sp = speedArr[i], am = ampArr[i], ph = phaseArr[i];
@@ -257,18 +366,41 @@ export function StarsDriver({
       glowColor[j] = cr; glowColor[j + 1] = cg; glowColor[j + 2] = cb;
 
       const s = sizeArr[i] * cur;
-      const o = i * 16;
-      cm[o] = s; cm[o + 5] = s; cm[o + 10] = s;
+      if (isMobile) {
+        coreScale[i] = s;
+      } else {
+        const o = i * 16;
+        cm[o] = s; cm[o + 5] = s; cm[o + 10] = s;
+      }
 
       glowScale[i] = sizeArr[i] * 7 * cur;
-      glowOpacity[i] = att ? (i === si ? 0.7 : i === hi ? 0.85 : 0.55) : i === hi ? 0.3 : 0.14;
+      if (updateGlowOpacity) {
+        glowOpacity[i] = att
+          ? i === si
+            ? 0.7
+            : i === hi
+              ? 0.85
+              : 0.55
+          : i === hi
+            ? 0.3
+            : 0.14;
+      }
     }
 
-    core.instanceMatrix.needsUpdate = true;
+    if (isMobile) {
+      (core.geometry.getAttribute('aScale') as THREE.BufferAttribute).needsUpdate = true;
+    } else {
+      core.instanceMatrix.needsUpdate = true;
+    }
     (core.geometry.getAttribute('aColor') as THREE.BufferAttribute).needsUpdate = true;
     (glow.geometry.getAttribute('aColor') as THREE.BufferAttribute).needsUpdate = true;
     (glow.geometry.getAttribute('aScale') as THREE.BufferAttribute).needsUpdate = true;
-    (glow.geometry.getAttribute('aOpacity') as THREE.BufferAttribute).needsUpdate = true;
+    if (updateGlowOpacity) {
+      (glow.geometry.getAttribute('aOpacity') as THREE.BufferAttribute).needsUpdate = true;
+      opacityDirty.current = false;
+      prevHoveredIndex.current = hi;
+      prevSelectedIndex.current = si;
+    }
 
     const ring = ringRef.current;
     if (ring) {
@@ -278,7 +410,7 @@ export function StarsDriver({
         ring.scale.setScalar(sizeArr[si] * groupCur[si]);
         ring.quaternion.copy(camera.quaternion);
         if (si !== prevSelected.current) {
-          (ring.material as THREE.MeshBasicMaterial).color.copy(data.displayColors[si]);
+          (ring.material as THREE.MeshBasicMaterial).color.copy(currentData.displayColors[si]);
           prevSelected.current = si;
         }
       } else {
@@ -294,19 +426,33 @@ export function StarsDriver({
         ref={hitRef}
         args={[data.hitGeo, data.hitMat, count]}
         frustumCulled={false}
-        onPointerMove={(e) => {
-          e.stopPropagation();
-          const id = e.instanceId !== undefined ? data.indexToId[e.instanceId] : undefined;
-          if (id && useGalaxyStore.getState().hoveredId !== id) setHovered(id);
-        }}
-        onPointerOver={(e) => {
-          e.stopPropagation();
-          document.body.style.cursor = 'pointer';
-        }}
-        onPointerOut={() => {
-          setHovered(null);
-          document.body.style.cursor = 'auto';
-        }}
+        raycast={isMobile ? mobileHitRaycast : THREE.InstancedMesh.prototype.raycast}
+        onPointerMove={
+          isMobile
+            ? undefined
+            : (e) => {
+                e.stopPropagation();
+                const id =
+                  e.instanceId !== undefined ? data.indexToId[e.instanceId] : undefined;
+                if (id && useGalaxyStore.getState().hoveredId !== id) setHovered(id);
+              }
+        }
+        onPointerOver={
+          isMobile
+            ? undefined
+            : (e) => {
+                e.stopPropagation();
+                document.body.style.cursor = 'pointer';
+              }
+        }
+        onPointerOut={
+          isMobile
+            ? undefined
+            : () => {
+                setHovered(null);
+                document.body.style.cursor = 'auto';
+              }
+        }
         onClick={(e) => {
           e.stopPropagation();
           const id = e.instanceId !== undefined ? data.indexToId[e.instanceId] : undefined;
@@ -328,9 +474,10 @@ export function StarsDriver({
         <ringGeometry args={[1.55, 1.68, 64]} />
         <meshBasicMaterial toneMapped={false} transparent opacity={0.85} side={THREE.DoubleSide} />
       </mesh>
-      {stars.map((c) => (
-        <StarLabel key={c.id} character={c} position={positions.get(c.id)!} />
-      ))}
+      {!isMobile &&
+        stars.map((c) => (
+          <StarLabel key={c.id} character={c} position={positions.get(c.id)!} />
+        ))}
     </>
   );
 }

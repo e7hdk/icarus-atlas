@@ -47,6 +47,22 @@
       "director": "Owen Harris",
       "description": "The BBC/Netflix cycle gives Priam the long siege: a king holding a doomed city while his house tears itself between Paris and Hector.",
       "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    },
+    {
+      "title": "Helen of Troy",
+      "year": "2003",
+      "medium": "tv",
+      "director": "John Kent Harrison",
+      "description": "John Rhys-Davies' Priam orders the infant Paris abandoned, then welcomes him home — the king whose mercy and stubbornness both doom Troy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(miniseries)"
+    },
+    {
+      "title": "The Trojan Horse",
+      "year": "1961",
+      "medium": "film",
+      "director": "Giorgio Ferroni",
+      "description": "Carlo Tamberlani plays Priam in Ferroni's peplum — the aged king of Troy as Aeneas fights through the city's last year.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Horse_(film)"
     }
   ],
   "music": [
@@ -57,6 +73,56 @@
       "composer": "Hector Berlioz",
       "description": "Berlioz opens his Virgilian epic in Priam's Troy — the king, the horse, and the night the city falls before Aeneas' flight begins.",
       "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    },
+    {
+      "title": "King Priam",
+      "year": "1962",
+      "kind": "opera",
+      "composer": "Michael Tippett",
+      "description": "Tippett's own libretto makes Priam the tragic centre — the father who orders Paris killed to save the city, then lives every consequence.",
+      "externalUrl": "https://en.wikipedia.org/wiki/King_Priam"
+    },
+    {
+      "title": "Paris",
+      "year": "2003",
+      "kind": "stage",
+      "composer": "Jon English",
+      "description": "English and Mackay's musical keeps Priam as Troy's father-king — the palace that must absorb Paris' choice and the war that follows.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Paris_(musical)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hamlet",
+      "year": "c. 1600",
+      "kind": "other",
+      "creator": "William Shakespeare",
+      "description": "The Player's speech on Priam's slaughter still haunts Hamlet — 'What's Hecuba to him' hangs on the image of the old king cut down.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hamlet"
+    },
+    {
+      "title": "A Thousand Ships",
+      "year": "2019",
+      "kind": "novel",
+      "creator": "Natalie Haynes",
+      "description": "Haynes' women's Trojan War keeps Hecabe and the royal house in view — Priam as the father whose city and sons are taken one by one.",
+      "externalUrl": "https://en.wikipedia.org/wiki/A_Thousand_Ships"
+    },
+    {
+      "title": "Troy (novel series)",
+      "year": "2005–2007",
+      "kind": "novel",
+      "creator": "David Gemmell",
+      "description": "Gemmell's trilogy restages the siege with Priam's court at the centre — the king of Troy in bestselling heroic fantasy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy_(novel_series)"
+    },
+    {
+      "title": "Troilus and Cressida",
+      "year": "c. 1602",
+      "kind": "other",
+      "creator": "William Shakespeare",
+      "description": "Shakespeare's bitter Troy keeps Priam among the Trojan elders — the aged king watching a war that will not end cleanly.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troilus_and_Cressida"
     }
   ]
 }

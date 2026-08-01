@@ -1,6 +1,35 @@
 {
   "id": "picus-canens",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Circe Turning King Picus into a Woodpecker",
+      "artist": "Teodor Lubieniecki",
+      "year": "c. 1680–1700",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Teodor_Lubieniecki_-_Circe_turning_king_Picus_into_a_woodpecker_-_MP_3159_MNW_-_National_Museum_in_Warsaw.jpg/960px-Teodor_Lubieniecki_-_Circe_turning_king_Picus_into_a_woodpecker_-_MP_3159_MNW_-_National_Museum_in_Warsaw.jpg",
+      "description": "Lubieniecki — Circe turning King Picus into a woodpecker, Ovid's Latin metamorphosis of love refused."
+    },
+    {
+      "title": "Picus and Circe",
+      "artist": "Luca Giordano",
+      "year": "c. 1670–1680",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Luca_Giordano_-_Picus_and_Circe.jpg/960px-Luca_Giordano_-_Picus_and_Circe.jpg",
+      "description": "Giordano's Picus and Circe — the Ausonian king before the cup that will leave Canens singing herself into air."
+    },
+    {
+      "title": "Circe Changing Picus into a Bird",
+      "artist": "Antonio Tempesta (after)",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Plate_136-_Circe_Changing_Picus_into_a_Bird_%28Circes_concubitum_detestatur_Picus%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864227.jpg/960px-Plate_136-_Circe_Changing_Picus_into_a_Bird_%28Circes_concubitum_detestatur_Picus%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864227.jpg",
+      "description": "Tempesta after Ovid — Circe changing Picus into a bird among the Italian woods of Metamorphoses Book 14."
+    },
+    {
+      "title": "Circe Changes Picus into a Woodpecker",
+      "artist": "Unknown (Dutch, after Ovid)",
+      "year": "c. 1600–1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circe_verandert_Picus_in_een_specht_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2013-10-22.jpg/960px-Circe_verandert_Picus_in_een_specht_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2013-10-22.jpg",
+      "description": "Dutch Ovid illustration — Picus as woodpecker, Canens' grief implied in the Circean revenge."
+    }
+  ],
   "popCulture": [
     {
       "title": "Picus",

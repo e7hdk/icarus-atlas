@@ -48,5 +48,49 @@
       "description": "The BBC/Netflix cycle gives Hector room to be husband, brother and captain — the farewell with Andromache staged again for a streaming age.",
       "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
     }
+  ],
+  "music": [
+    {
+      "title": "Les Troyens",
+      "year": "1858",
+      "kind": "opera",
+      "composer": "Hector Berlioz",
+      "description": "Berlioz's epic opens with Hector's ghost warning Aeneas to flee — the defender of Troy returning as shade to send Troy's remnant toward Rome.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Troyens"
+    },
+    {
+      "title": "King Priam",
+      "year": "1962",
+      "kind": "opera",
+      "composer": "Michael Tippett",
+      "description": "Tippett's Iliad opera makes Hector the moral weight of Priam's house — husband, son and captain before Achilles ends the war's greatest Trojan.",
+      "externalUrl": "https://en.wikipedia.org/wiki/King_Priam"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Troilus and Cressida",
+      "year": "c. 1602",
+      "kind": "other",
+      "creator": "William Shakespeare",
+      "description": "Shakespeare's bitter Troy play keeps Hector as the honour the Greeks and Trojans both fail — the duel with Achilles staged as anti-heroic slaughter.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troilus_and_Cressida"
+    },
+    {
+      "title": "Andromache",
+      "year": "1667",
+      "kind": "other",
+      "creator": "Jean Racine",
+      "description": "Racine's tragedy is haunted by the dead Hector — Andromache's fidelity to his memory driving the court of Epirus toward catastrophe.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Andromache_(Racine)"
+    },
+    {
+      "title": "The Silence of the Girls",
+      "year": "2018",
+      "kind": "novel",
+      "creator": "Pat Barker",
+      "description": "Barker's camp narrative keeps Hector as the wall the women watch fall — Troy's shield seen from the Greek tents that hold his city's captives.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Silence_of_the_Girls"
+    }
   ]
 }

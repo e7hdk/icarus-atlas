@@ -4,6 +4,9 @@
   "greekName": "Gēryonēs (Γηρυόνης)",
   "romanName": "Geryon",
   "type": "creature",
+  "kinds": [
+    "giant"
+  ],
   "cluster": "chthonic",
   "domains": [
     "triple-bodied giant",

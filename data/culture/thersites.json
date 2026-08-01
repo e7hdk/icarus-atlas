@@ -1,6 +1,28 @@
 {
   "id": "thersites",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Thersites Accosts Achilles",
+      "artist": "Henry Courtney Selous",
+      "year": "1886",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Henry_Courtney_Selous%2C_Thersites_accosts_Achilles.jpg/960px-Henry_Courtney_Selous%2C_Thersites_accosts_Achilles.jpg",
+      "description": "Selous' Victorian illustration for Shakespeare's Troilus and Cressida: the deformed railer Thersites confronts Achilles — the Iliad's insolent voice from the ranks reinvented as the play's bitter fool."
+    },
+    {
+      "title": "Odysseus Beats Thersites (Iliad Book II, Pope edition)",
+      "artist": "Unknown (illustrator of Pope's Iliad)",
+      "year": "18th–19th century edition plate",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/THE_ILLIAD_OF_HOMER_%28translated_by_POPE%29_p1.217_2d_Book_Page_89.jpg/960px-THE_ILLIAD_OF_HOMER_%28translated_by_POPE%29_p1.217_2d_Book_Page_89.jpg",
+      "description": "Plate from an illustrated Pope Iliad: in the assembly of Book II, Odysseus strikes Thersites with Agamemnon's sceptre — the epic's rare punishment of a common soldier for mocking kings."
+    },
+    {
+      "title": "Achilles Strikes Thersites (Roman sarcophagus relief)",
+      "artist": "Unknown (Roman sculptor)",
+      "year": "Roman Imperial",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Antalya_Museum_-_Sarkophag_5a_Achilles_schl%C3%A4gt_Thersites.jpg/960px-Antalya_Museum_-_Sarkophag_5a_Achilles_schl%C3%A4gt_Thersites.jpg",
+      "description": "Detail of a sarcophagus in the Antalya Museum: Achilles kills Thersites for mocking his grief over Penthesilea — the Cyclic sequel to the Iliad, carved in marble for a Roman tomb."
+    }
+  ],
   "popCulture": [
     {
       "title": "Thersites",

@@ -1,6 +1,35 @@
 {
   "id": "calchas-thestor",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Prophecy of Calchas (from The Story of Troy)",
+      "artist": "Unknown (Macao, for the European market)",
+      "year": "late 16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Prophecy_of_Calchas_from_a_set_of_The_Story_of_Troy_MET_DP332719.jpg/960px-The_Prophecy_of_Calchas_from_a_set_of_The_Story_of_Troy_MET_DP332719.jpg",
+      "description": "A silk-and-gilt tapestry from a Macao-woven Troy cycle (Metropolitan Museum of Art, 50.97.2): Calchas reads the omens that bind the Achaean war — the seer of Aulis and the Iliad rendered for a Renaissance collector's wall."
+    },
+    {
+      "title": "Calchas as Haruspex (Etruscan bronze mirror)",
+      "artist": "Unknown (Etruscan)",
+      "year": "5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Calchas_Miroir.jpg/960px-Calchas_Miroir.jpg",
+      "description": "An Etruscan engraved mirror names Calchas (Chalchas) as a winged haruspex reading a liver — the Greek mantis recast in Italian ritual guise, proof of how early the Trojan seer travelled west of the Adriatic."
+    },
+    {
+      "title": "The Sacrifice of Iphigenia",
+      "artist": "Sébastien Bourdon",
+      "year": "1653",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bourdon%2C_S%C3%A9bastien_-_Le_Sacrifice_d%27Iphig%C3%A9nie_-_1653.jpg",
+      "description": "Bourdon's Aulis canvas gathers the priestly circle around the altar where Calchas names Artemis' price — the seer whose reading turns Agamemnon's fleet into a daughter's death."
+    },
+    {
+      "title": "The Sacrifice of Iphigenia (Pompeii fresco)",
+      "artist": "Unknown (Roman)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg/960px-MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg",
+      "description": "A peristyle fresco from Pompeii (Naples, MAN 9112) shows Calchas at the sacrifice of Iphigenia — the Homeric prophet as the ritual hinge that buys the winds for Troy."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

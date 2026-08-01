@@ -1,6 +1,28 @@
 {
   "id": "teucer-to-cyprus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Teucer",
+      "artist": "Sir William Hamo Thornycroft",
+      "year": "1881 (plaster); bronze cast 1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hamo_Thornycroft-Teucer-07286.jpg/960px-Hamo_Thornycroft-Teucer-07286.jpg",
+      "description": "Thornycroft's Teucer — the Telamonian archer whose exile after Ajax's death sends him to found Salamis in Cyprus."
+    },
+    {
+      "title": "Statue of an Archer from the West Pediment of the Temple of Aphaia (traditionally identified as Teucer)",
+      "artist": "Unknown (Late Archaic Greek sculptor, Aegina)",
+      "year": "ca. 505-500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aphaia_pediment_Teukros_W-IV_Glyptothek_Munich_77.jpg/960px-Aphaia_pediment_Teukros_W-IV_Glyptothek_Munich_77.jpg",
+      "description": "The Aphaia pediment archer — traditionally identified as Teucer, the bastard brother who outlives Ajax and loses Telamon's hall."
+    },
+    {
+      "title": "Teucer with Seated Heracles (amethyst intaglio)",
+      "artist": "Unknown (Roman gem-engraver)",
+      "year": "c. 50–100 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Teukros%2C_ercole_seduto%2C_su_ametista%2C_50-100_dc_ca.jpg",
+      "description": "A Roman intaglio of Teucer with seated Heracles — the hero whose Cypriot foundation keeps Telamon's line alive overseas."
+    }
+  ],
   "popCulture": [
     {
       "title": "Teucer",

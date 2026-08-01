@@ -62,6 +62,7 @@ export function GalaxyView({
   }, [characters, relations, layout, bakedLayout]);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
   const setDiving = useGalaxyStore((s) => s.setDiving);
+  const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);
 
   const scaledPositions = useMemo(() => {
     if (spacingScale === 1.0) return positions;
@@ -159,6 +160,24 @@ export function GalaxyView({
         </div>
       )}
       <Legend />
+      <button
+        type="button"
+        onClick={() => setSearchOpen(true)}
+        aria-label="Search the galaxy"
+        className="pointer-events-auto fixed bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-3.5 z-30 grid h-11 w-11 place-items-center rounded-full border border-glass-border bg-glass text-aether-muted shadow-[0_10px_30px_rgba(5,2,15,0.55),0_0_18px_rgba(124,77,255,0.1)] backdrop-blur-xl transition-colors active:border-nebula-soft/60 active:text-nebula-soft sm:hidden"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          className="h-4 w-4"
+          aria-hidden
+        >
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" strokeLinecap="round" />
+        </svg>
+      </button>
       <HoverCard characters={characters} relations={relations} cityContext={cityContext} />
       <CharacterPanel
         characters={characters}

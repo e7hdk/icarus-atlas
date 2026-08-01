@@ -1,17 +1,43 @@
 {
   "id": "centauros",
-  "summary": "Centaurus was the first of the cloud-born centaurs in Greek mythology, child of Ixion and the cloud Zeus set in Hera's likeness according to Apollodorus. Hyginus makes him brother of Peirithous and forefather of the wild centaur brood of Thessaly.",
+  "summary": "Centaurus (Centauros) is the eponymous first of the cloud-born centaurs in Greek mythology. In Apollodorus he is the son of Ixion and the cloud Zeus shaped in Hera's likeness; from him descend the wild Thessalian centaurs, as distinct from Chiron, who was born separately from Cronus and Philyra. Hyginus makes Centaurus brother of Peirithous.",
   "attribution": "Adapted from Wikipedia, \"Centaurus (Greek mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Κένταυρος (Kéntauros); the plural Kentauroi names the race. The constellation Centaurus is a separate catasterism tradition.",
+  "symbols": [
+    "horse-man form",
+    "Magnesian / Pelion wilds"
+  ],
+  "cultCenters": [
+    "Mount Pelion",
+    "Magnesia (Thessaly)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Birth from the cloud",
       "paragraphs": [
-        "From Centaurus descended the violent centaurs unlike Chiron, who was born separately from Cronus and Philyra.",
-        "Hyginus lists Peirithous as son of Ixion and brother of Centaurus."
+        "After Ixion attempts to violate Hera, Zeus fashions a cloud in the goddess's likeness. Ixion mates with the cloud; Apollodorus says she bears Centaurus, who later mates with Magnesian mares on Pelion and fathers the double-formed centaurs.",
+        "Hyginus instead treats Nubes (\"Cloud\") as mother, with Ixion, of named centaurs and sometimes lists Centaurus beside Peirithous as Ixion's son. The atlas node nubes-ixion holds that Hyginus naming; Centaurus is the Apollodoran eponym of the herd."
+      ]
+    },
+    {
+      "heading": "Ancestor of the wild centaurs",
+      "paragraphs": [
+        "From Centaurus come the violent centaurs of the Lapith wedding and of Heracles' adventures — creatures of the mountain forests, often drunk and hostile to guests. They are genealogically and morally set apart from Chiron, the just son of Cronus and Philyra.",
+        "Literary catalogues (Homer, Apollodorus, Ovid, Hyginus) name individual centaurs as members of this brood without always repeating the Centaurus step; the eponym explains the race as a whole."
+      ]
+    },
+    {
+      "heading": "Name and sky",
+      "paragraphs": [
+        "Later astronomy associates a southern constellation Centaurus with a centaur figure — sometimes Chiron, sometimes a generic or other hero — but that star-lore is reception, not the same as the Thessalian genealogical Centaurus of Apollodorus.",
+        "Keep Centaurus distinct from named centaurs such as Nessus, Pholus, and Eurytion, who are descendants or herd-members rather than the eponymous first father."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Centaurus_(Greek_mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Centaurus_(Greek_mythology)"
+    }
   ]
 }

@@ -1,6 +1,55 @@
 {
   "id": "agamemnon-murder",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Clytemnestra and Agamemnon",
+      "artist": "Pierre-Narcisse Guérin",
+      "year": "1817",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pierre-Narcisse_Gu%C3%A9rin_-_Clytemnestra_and_Agamemnon_-_WGA10974.jpg/960px-Pierre-Narcisse_Gu%C3%A9rin_-_Clytemnestra_and_Agamemnon_-_WGA10974.jpg",
+      "description": "Guérin's Louvre night-scene: the returning king asleep as Clytemnestra hesitates with the dagger and Aegisthus urges the blow — Aeschylus' homecoming murder at the hinge."
+    },
+    {
+      "title": "Clytemnestra",
+      "artist": "John Collier",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Collier-Clytemnestra_after_the_murder.jpg",
+      "description": "Collier's queen just after the deed: bloodied axe in hand on the palace threshold — Agamemnon's murder already fact behind the curtain."
+    },
+    {
+      "title": "Clytemnestra from the Battlements of Argos Watches for the Beacon Fires Which Are to Announce the Return of Agamemnon",
+      "artist": "Frederic Leighton",
+      "year": "c. 1874",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Frederic_Leighton_%281830-1896%29_-_Clytemnestra_from_the_Battlements_of_Argos_Watches_for_the_Beacon_Fires_Which_Are_to_Announce_the_Return_of_Agamemnon_-_LH0372_-_Leighton_House.jpg",
+      "description": "Leighton paints the watch that opens Aeschylus' Agamemnon: Clytemnestra alone on the Argive walls, waiting for the beacons that will bring her husband home to the axe."
+    },
+    {
+      "title": "The Ghost of Clytemnestra Awakening the Furies",
+      "artist": "John Downman",
+      "year": "1781",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/John_Downman_-_The_Ghost_of_Clytemnestra_Awakening_the_Furies_-_Google_Art_Project.jpg/960px-John_Downman_-_The_Ghost_of_Clytemnestra_Awakening_the_Furies_-_Google_Art_Project.jpg",
+      "description": "Downman stages the sequel the murder demands: the queen's shade rouses the Erinyes against Orestes — blood calling for blood after Agamemnon's death."
+    }
+  ],
+  "films": [
+    {
+      "title": "Electra",
+      "year": "1962",
+      "medium": "film",
+      "director": "Michalis Cacoyannis",
+      "description": "The murder of Agamemnon hangs over Cacoyannis' Electra — the king already dead, his blood the debt his children will collect from Clytemnestra.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Electra_(1962_film)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Elektra",
+      "year": "1909",
+      "kind": "opera",
+      "composer": "Richard Strauss",
+      "description": "Strauss and Hofmannsthal make the aftermath of Agamemnon's murder a nightmare of guilt — Elektra who will not let her mother's sleep rest.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Elektra_(opera)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Agamemnon (play)",

@@ -10,6 +10,7 @@ import {
 import { selectDay } from '@/features/spotlight/selection';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { EphemerisCard } from './EphemerisCard';
+import { ConstellationCard } from './ConstellationCard';
 import { OracleOverlay } from './OracleOverlay';
 import { ProemOverlay } from './ProemOverlay';
 import { RiddleOverlay } from './RiddleOverlay';
@@ -49,6 +50,7 @@ export function EphemerisHost({ data }: { data: EphemerisData }) {
   return (
     <>
       <EphemerisCard />
+      <ConstellationCard />
       <ProemOverlay />
       <OracleOverlay />
       <RiddleOverlay />

@@ -2,11 +2,47 @@
   "city": "knossos",
   "reigns": [
     {
+      "ruler": "Asterius",
+      "characterId": "asterius-crete",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. 3.1.2–3; Hyg. Fab. 178",
+      "note": "Prince of the Cretans who married Europa after Zeus brought her to Crete and raised her sons Minos, Rhadamanthus, and Sarpedon. Apollodorus has him die childless, after which Minos claimed the kingdom."
+    },
+    {
       "ruler": "Minos",
       "characterId": "minos",
+      "sources": ["homer", "apollodorus", "pausanias", "hyginus"],
+      "citation": "Hom. Od. 11.568, 19.178–180; Il. 13.450–453; Apollod. 3.1.2–4; Paus. 3.2.4; Hyg. Fab. 41, 178",
+      "note": "Son of Zeus and Europa, raised by Asterius; after Asterius died childless he proved his claim with Poseidon's bull and became lord of Cnossus — thalassocrat, lawgiver (Pausanias), and after death a judge in Hades."
+    },
+    {
+      "ruler": "Catreus",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 3.1.2, 3.2.1–2; Epit. 3.3; Paus. 8.53.4",
+      "note": "Son of Minos; Apollodorus treats him as holder of the Cretan kingdom he meant to hand to Althaemenes. An oracle said he would die by a child's hand — Althaemenes fled to Rhodes, later killed him by mistake when Catreus landed there; Menelaus was away at his grandfather's funeral when Paris took Helen. Homer's Cretan stemma skips him and runs Minos → Deucalion → Idomeneus.",
+      "topic": "cretan-succession"
+    },
+    {
+      "ruler": "Deucalion",
+      "characterId": "deucalion-crete",
+      "sources": ["homer", "apollodorus", "pausanias", "hyginus"],
+      "citation": "Hom. Il. 13.450–453; Od. 19.178–181; Apollod. 3.1.2, 3.3.1; Epit. 1.17; Paus. 1.17.6; Hyg. Fab. 14",
+      "note": "Son of Minos (and Pasiphae in Hyginus); father of Idomeneus. Homer makes him the sole named link between Minos and Idomeneus; Apollodorus also counts Catreus among Minos' sons who held the kingdom. Pausanias has Theseus set out for Deucalion in Crete; Apollodorus has Theseus receive Phaedra from him.",
+      "topic": "cretan-succession"
+    },
+    {
+      "ruler": "Idomeneus",
+      "characterId": "idomeneus",
       "sources": ["homer", "apollodorus", "pausanias"],
-      "citation": "Od. 11.568; Apollod. 3.1.2–4; Paus. 3.2.4",
-      "note": "Son of Zeus and Europa, raised in Crete and lord of Knossos — builder of the labyrinth, master of the seas, and after death a judge in Hades."
+      "citation": "Hom. Il. 2.645–650, 13.450–453; Apollod. 3.3.1; Epit. 3.13; Paus. 5.25.9",
+      "note": "Son of Deucalion; captain of eighty ships from Cnossus and Crete's hundred cities at Troy — Homer's lord over many men in wide Crete, and Pausanias' descendant of Minos whose cock-blazoned shield remembered Pasiphae's solar line."
+    },
+    {
+      "ruler": "Leucus",
+      "characterId": "leucus-crete",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Apollod. Epit. 6.9–6.10; Hyg. Fab. 116–117",
+      "note": "While Idomeneus was at Troy, Nauplius' corruption turned Meda to Leucus; he killed the queen and Clisithyra in a temple, detached ten cities, and drove the returning king into exile — the Cretan parallel to Aegisthus at Mycenae."
     }
   ]
 }

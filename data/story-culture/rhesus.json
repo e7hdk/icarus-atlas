@@ -1,6 +1,35 @@
 {
   "id": "rhesus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ulysses and Diomedes in the Tent of Rhesus",
+      "artist": "Corrado Giaquinto",
+      "year": "1753–1762",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Corrado_giaquinto%2C_ulisse_e_diomede_nella_tenda_di_reso.jpg/960px-Corrado_giaquinto%2C_ulisse_e_diomede_nella_tenda_di_reso.jpg",
+      "description": "Giaquinto's night raid — Odysseus and Diomedes in Rhesus' tent, Iliad X as Baroque theatre."
+    },
+    {
+      "title": "Diomed and Ulysses Returning with the Spoils of Rhesus",
+      "artist": "John Flaxman",
+      "year": "1895",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Diomed_and_Ulysses_returning_with_the_spoils_of_Rhesus.jpg/960px-Diomed_and_Ulysses_returning_with_the_spoils_of_Rhesus.jpg",
+      "description": "Flaxman's outline — the Achaeans returning with Rhesus' spoils and the snow-white horses."
+    },
+    {
+      "title": "Diomedes Slays Rhesus",
+      "artist": "Crispijn van de Passe",
+      "year": "1613",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Diomedes_doodt_Rhesus_Speculum_Heroicum_Homeri_%28serietitel%29%2C_RP-P-OB-16.041.jpg/960px-Diomedes_doodt_Rhesus_Speculum_Heroicum_Homeri_%28serietitel%29%2C_RP-P-OB-16.041.jpg",
+      "description": "Van de Passe's engraving — Diomedes slaying the Thracian king before Troy's walls."
+    },
+    {
+      "title": "Diomedes and Odysseus Stealing the Horses of Rhesus",
+      "artist": "Lycurgus Painter",
+      "year": "c. 360 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Rhesos_MNA_Naples.jpg/960px-Rhesos_MNA_Naples.jpg",
+      "description": "Apulian vase — Diomedes and Odysseus stealing Rhesus' horses, the Doloneia in red-figure."
+    }
+  ],
   "popCulture": [
     {
       "title": "Rhesus (play)",
@@ -8,6 +37,13 @@
       "kind": "other",
       "description": "The night raid becomes a freestanding tragedy — Dolon's failure and Rhesus' death under Trojan walls.",
       "externalUrl": "https://en.wikipedia.org/wiki/Rhesus_(play)"
+    },
+    {
+      "title": "Iliad",
+      "year": "—",
+      "kind": "other",
+      "description": "Book 10 — the Doloneia: Odysseus and Diomedes' night raid that ends with Rhesus dead and his horses taken.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iliad"
     }
   ]
 }

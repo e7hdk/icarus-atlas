@@ -1,13 +1,8 @@
 {
   "id": "apollo",
-  "summary": "Apollo is one of the Olympian deities in ancient Greek religion and mythology. He is the god of the Sun and light, prophecy, philosophy, truth, logic, inspiration, music, poetry, the arts, purification, medicine, healing, plague, archery, and masculine beauty. He is the son of Zeus and Leto, and the twin brother of Artemis, goddess of the hunt. He is considered to be the most beautiful god and is represented as the ideal of the kouros.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Apollo"
-    }
-  ],
+  "summary": "Apollo is one of the Twelve Olympians in ancient Greek religion and mythology: god of light, prophecy, music and poetry, healing and plague, archery, and masculine beauty. Son of Zeus and Leto and twin brother of Artemis, he is often shown as the ideal kouros. As Apollo Pythios he speaks through the Delphic Oracle; as god of mousikē he leads the Muses with the lyre. From the Classical period he was frequently identified with Helios, the Sun.",
+  "attribution": "Adapted from Wikipedia, \"Apollo\" · CC BY-SA 4.0",
+  "etymology": "The origin of Ἀπόλλων is unclear. Ancient folk etymologies linked it to apollymi (\"to destroy\"), apella (\"assembly\"), or purification. Modern proposals include a Doric connection with the apellai festival and a Pre-Greek or Anatolian form (cf. Hittite Apaliunas); Beekes favoured a Pre-Greek *Apalyun.",
   "symbols": [
     "lyre",
     "bow and arrow",
@@ -23,7 +18,36 @@
   "cultCenters": [
     "Delphi",
     "Delos",
-    "Didyma"
+    "Didyma",
+    "Actium"
   ],
-  "etymology": "Connected by the Greeks to apollymi (\"destroy\") or apella (\"assembly\"); likely pre-Greek or Anatolian."
+  "sections": [
+    {
+      "heading": "Birth and oracular power",
+      "paragraphs": [
+        "Leto bore Apollo and Artemis on Delos after wandering the earth under Hera's hostility. Apollo soon claimed Delphi by slaying the serpent Python and established the Pythian oracle, whose priestess, the Pythia, spoke for him. Cities and colonists consulted Delphi before laws, foundations, and wars.",
+        "He is Alexicacus, the averter of evil, yet also a sender of plague with his arrows (as in the opening of the Iliad). Healing may come from Apollo himself or through his son Asclepius. Epithets such as Paean, Iatros, and Smintheus mark these medical and apotropaic sides."
+      ]
+    },
+    {
+      "heading": "Music, youth, and civic order",
+      "paragraphs": [
+        "As leader of the Muses, Apollo invents string music and presides over song, dance, and poetry; the lyre and laurel are his constant attributes. He is kourotrophos to youths: long hair cut at the ephebeia was dedicated to him, and he himself keeps uncut locks as a sign of eternal youth.",
+        "Pastoral and civic roles overlap: he protects flocks from disease, yet also sponsors colonies, street-shrines (Agyieus), and constitutional order. Phoebus (\"bright\") is his most common literary epithet for light; later theology often merges him with the Sun."
+      ]
+    },
+    {
+      "heading": "Worship",
+      "paragraphs": [
+        "Delos and Delphi were the twin poles of panhellenic cult; other great oracles stood at Didyma and Claros. The Pythian Games at Delphi ranked among the four crown games. In the fifth century BCE his worship was imported to Rome, where he remained under his Greek name.",
+        "Sacred animals include the raven, swan, and wolf; the laurel and cypress are his trees. Etruscan Apulu and Celtic Grannus show the range of interpretatio across the Mediterranean and beyond."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apollo"
+    }
+  ]
 }

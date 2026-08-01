@@ -7,6 +7,44 @@
       "year": "c. 1560",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Pieter_Bruegel_de_Oude_-_De_val_van_Icarus.jpg/960px-Pieter_Bruegel_de_Oude_-_De_val_van_Icarus.jpg",
       "description": "A ploughman keeps his furrow and a galleon sails on while two white legs vanish into the green sea — the fall reduced to a splash nobody notices. Long attributed to Bruegel and now generally thought an early copy of his lost original, the painting in the Royal Museums of Fine Arts of Belgium inspired famous poems by Auden and William Carlos Williams."
+    },
+    {
+      "title": "The Lament for Icarus",
+      "artist": "Herbert James Draper",
+      "year": "1898",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Herbert_Draper_-_The_Lament_for_Icarus_-_Google_Art_Project.jpg/960px-Herbert_Draper_-_The_Lament_for_Icarus_-_Google_Art_Project.jpg",
+      "description": "An oil painting by Herbert James Draper, awarded the gold medal at the 1900 Paris Exposition and now in Tate Britain. Fallen Icarus lies among mourning nymphs, his great wings still spread — the Victorian myth retold as a soft, elegiac nude rather than Bruegel's unnoticed splash, the boy become a romantic martyr of ambition."
+    },
+    {
+      "title": "The Fall of Icarus",
+      "artist": "Jacob Peter Gowy (after Peter Paul Rubens)",
+      "year": "c. 1636–1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Gowy-icaro-prado.jpg/960px-Gowy-icaro-prado.jpg",
+      "description": "An oil in the Museo del Prado painted by Jacob Peter Gowy after Rubens's design for the Torre de la Parada. Daedalus still climbs while Icarus plunges headlong, wax and feathers scattering — the Baroque fall staged as pure kinetic catastrophe against an open sky, the father's craft undone in a single dive."
+    },
+    {
+      "title": "Landscape with the Fall of Icarus",
+      "artist": "Joos de Momper the Younger",
+      "year": "c. 1565–1635",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Landscape_with_the_Fall_of_Icarus_%28Joos_de_Momper_d.y.%29_-_Nationalmuseum_-_17734.tif/lossy-page1-960px-Landscape_with_the_Fall_of_Icarus_%28Joos_de_Momper_d.y.%29_-_Nationalmuseum_-_17734.tif.jpg",
+      "description": "A panoramic mountain landscape by the Flemish master Joos de Momper, now in Stockholm's Nationalmuseum. As in Bruegel's famous treatment, Icarus is nearly lost in the vista — a tiny falling figure amid travellers and peaks — so that the myth becomes a lesson in how the world keeps moving while one boy falls."
+    }
+  ],
+  "films": [
+    {
+      "title": "Icarus",
+      "year": "2022",
+      "medium": "animation",
+      "director": "Carlo Vogele",
+      "description": "Vogele's Luxembourgish feature retells the Cretan myth from the boy's side — friendship with the Minotaur, distrust of Daedalus, and the choice between darkness and the sun.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Icarus_(2022_film)"
+    },
+    {
+      "title": "Atlantis",
+      "year": "2013–2015",
+      "medium": "tv",
+      "description": "The BBC fantasy casts Joseph Timms as Icarus beside Robert Lindsay's Daedalus — the winged son as a recurring player in a soap-opera Crete.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Atlantis_(TV_series)"
     }
   ],
   "music": [
@@ -35,6 +73,14 @@
       "creator": "W. H. Auden",
       "description": "Auden's poem, written after standing before Bruegel's Fall of Icarus in Brussels, reads the unnoticed splash as the shape of all suffering — the ploughman keeps his furrow, the ship sails calmly on, and disaster happens off to the side.",
       "externalUrl": "https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux_Arts_(poem)"
+    },
+    {
+      "title": "Landscape with the Fall of Icarus",
+      "year": "1960",
+      "kind": "other",
+      "creator": "William Carlos Williams",
+      "description": "Williams' short poem stares at the same Bruegel splash Auden read — Icarus a detail at the edge of a page where spring and ploughing go on.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Landscape_with_the_Fall_of_Icarus_(poem)"
     }
   ]
 }

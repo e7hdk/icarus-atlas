@@ -33,11 +33,37 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)"
     },
     {
+      "title": "Wonder Woman 1984",
+      "year": "2020",
+      "medium": "film",
+      "director": "Patty Jenkins",
+      "description": "Nielsen's Hippolyta returns in flashback as the mother who trained Diana on Themyscira — the Amazon queen behind Wonder Woman's origin.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_1984"
+    },
+    {
+      "title": "Justice League",
+      "year": "2017",
+      "medium": "film",
+      "director": "Zack Snyder",
+      "description": "Hippolyta guards a Mother Box on Themyscira and warns Diana when Steppenwolf comes — the Amazon queen as first line against the New Gods' war.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Justice_League_(film)"
+    },
+    {
       "title": "Wonder Woman",
       "year": "1975–1979",
       "medium": "tv",
       "description": "The Lynda Carter series keeps Hippolyta as the island queen who sends Diana into Man's World — the mythic mother behind the lasso and the invisible jet.",
       "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_(TV_series)"
+    }
+  ],
+  "music": [
+    {
+      "title": "By Jupiter",
+      "year": "1942",
+      "kind": "stage",
+      "composer": "Richard Rodgers",
+      "description": "Rodgers and Hart's last Broadway musical, after The Warrior's Husband, puts Hippolyta's Amazons on stage — the queen's realm invaded by Greek men in comic reverse.",
+      "externalUrl": "https://en.wikipedia.org/wiki/By_Jupiter"
     }
   ],
   "popCulture": [
@@ -48,6 +74,30 @@
       "creator": "Kelly Sue DeConnick",
       "description": "DeConnick's Black Label epic rebuilds Amazon origins with Hippolyta at the centre — the queen forged in Hera's rage and the mother of Wonder Woman's people.",
       "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_Historia:_The_Amazons"
+    },
+    {
+      "title": "Hippolyta",
+      "year": "1941",
+      "kind": "comic",
+      "creator": "William Moulton Marston",
+      "description": "Marston and H. G. Peter's Golden Age queen is Diana's mother from All Star Comics onward — the mythic Hippolyta reborn as Paradise Island's immortal ruler.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hippolyta_(DC_Comics)"
+    },
+    {
+      "title": "Wonder Woman",
+      "year": "1942",
+      "kind": "comic",
+      "creator": "William Moulton Marston",
+      "description": "The ongoing Wonder Woman title keeps Hippolyta as Amazon queen and Diana's mother — the mythic belt-bearer rewritten as the source of the lasso's world.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Wonder_Woman_(comic_book)"
+    },
+    {
+      "title": "The Warrior's Husband",
+      "year": "1924",
+      "kind": "other",
+      "creator": "Julian F. Thompson",
+      "description": "Thompson's Broadway comedy flips the Amazon war: Hippolyta's women-ruled Pontus meets Greek invaders — the source play behind Rodgers and Hart's By Jupiter.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Warrior%27s_Husband"
     }
   ]
 }

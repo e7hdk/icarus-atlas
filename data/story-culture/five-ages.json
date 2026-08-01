@@ -1,6 +1,35 @@
 {
   "id": "five-ages",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Golden Age",
+      "artist": "Lucas Cranach the Elder",
+      "year": "c. 1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Lucas_Cranach_the_Elder_-_The_Golden_Age_-_Google_Art_Project.jpg/960px-Lucas_Cranach_the_Elder_-_The_Golden_Age_-_Google_Art_Project.jpg",
+      "description": "Oslo Nasjonalmuseet: Cranach's enclosed paradise of ease and play — Hesiod's first race remembered as a garden before silver and iron."
+    },
+    {
+      "title": "The Close of the Silver Age (?)",
+      "artist": "Lucas Cranach the Elder",
+      "year": "c. 1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Lucas_Cranach_the_Elder_-_The_Close_of_the_Silver_Age_%28%3F%29_-_Google_Art_Project.jpg/960px-Lucas_Cranach_the_Elder_-_The_Close_of_the_Silver_Age_%28%3F%29_-_Google_Art_Project.jpg",
+      "description": "National Gallery, London: Cranach's quarreling nude race — the Silver Age tipping from soft living into the violence that ends the second race."
+    },
+    {
+      "title": "The Bronze Age (L'Aage d'Airain)",
+      "artist": "Jacob Gole (after earlier design)",
+      "year": "c. 1670–1724",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bronzen_eeuw_L%27Aage_d%27Airain_%28titel_op_object%29_De_vier_tijdperken_%28serietitel%29%2C_RP-P-1912-1194.jpg/960px-Bronzen_eeuw_L%27Aage_d%27Airain_%28titel_op_object%29_De_vier_tijdperken_%28serietitel%29%2C_RP-P-1912-1194.jpg",
+      "description": "Rijksmuseum print from a Four Ages series: the Bronze Age as armed strife — Hesiod's ash-born warriors who destroy one another."
+    },
+    {
+      "title": "The Iron Age (Aetas Ferrea)",
+      "artist": "Jan Collaert II (after Tobias Verhaecht; published by Philip Galle)",
+      "year": "late 16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/AetasFerrea.jpg/960px-AetasFerrea.jpg",
+      "description": "Engraved Iron Age: toil, war, and broken faith — the last race Hesiod says Zeus will destroy when even the newborn are grey."
+    }
+  ],
   "popCulture": [
     {
       "title": "Ages of Man",
@@ -8,6 +37,14 @@
       "kind": "other",
       "description": "Hesiod's gold-to-iron descent remains the West's template for civilizational decline — five ages from ease to iron war.",
       "externalUrl": "https://en.wikipedia.org/wiki/Ages_of_Man"
+    },
+    {
+      "title": "Works and Days",
+      "year": "c. 700 BC",
+      "kind": "other",
+      "creator": "Hesiod",
+      "description": "Hesiod's poem that numbers the races — gold, silver, bronze, heroes, iron — and makes decline a moral calendar.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Works_and_Days"
     }
   ]
 }

@@ -1,6 +1,35 @@
 {
   "id": "titanomachy",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Battle Between the Gods and the Titans",
+      "artist": "Joachim Wtewael",
+      "year": "c. 1600",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Joachim_Wtewael_-_The_Battle_Between_the_Gods_and_the_Titans_-_WGA25902.jpg",
+      "description": "Wtewael's jewel-like chaos: Olympians and Titans locked in the theogonic war Hesiod fixed as the cosmos' founding battle."
+    },
+    {
+      "title": "The Fall of the Titans (the Titans cast into Tartarus)",
+      "artist": "Cornelis van Haarlem",
+      "year": "1588–1590",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg/960px-Cornelis_Cornelisz._van_Haarlem_-_The_Fall_of_the_Titans_-_Google_Art_Project.jpg",
+      "description": "Cornelis van Haarlem's Fall of the Titans — the elder gods cast into Tartarus when Zeus' order wins."
+    },
+    {
+      "title": "The Fall of the Titans",
+      "artist": "Peter Paul Rubens (workshop / after)",
+      "year": "c. 1630s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mus%C3%A9e_de_Bruxelles._Rubens._La_Chute_des_Titans_-_Der_Fall_der_Titanen_-_The_fall_of_the_Titan%2C_GP019175.jpg/960px-Mus%C3%A9e_de_Bruxelles._Rubens._La_Chute_des_Titans_-_Der_Fall_der_Titanen_-_The_fall_of_the_Titan%2C_GP019175.jpg",
+      "description": "Rubens' workshop Fall of the Titans — Baroque bodies tumbling as the ten-year war ends in the abyss."
+    },
+    {
+      "title": "Saturn Devouring His Son",
+      "artist": "Francisco Goya",
+      "year": "1819–1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
+      "description": "Goya's Saturn devouring his son — the Titan father's crime that sets the succession war in motion."
+    }
+  ],
   "popCulture": [
     {
       "title": "Titanomachy",

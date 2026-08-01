@@ -1,0 +1,51 @@
+{
+  "id": "butes-athens",
+  "artworks": [
+    {
+      "title": "Ulysses and the Sirens",
+      "artist": "John William Waterhouse",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/WATERHOUSE_-_Ulises_y_las_Sirenas_%28National_Gallery_of_Victoria%2C_Melbourne%2C_1891._%C3%93leo_sobre_lienzo%2C_100.6_x_202_cm%29.jpg/960px-WATERHOUSE_-_Ulises_y_las_Sirenas_%28National_Gallery_of_Victoria%2C_Melbourne%2C_1891._%C3%93leo_sobre_lienzo%2C_100.6_x_202_cm%29.jpg",
+      "description": "Waterhouse's Siren lure — the song that in Apollonius' Argonautica pulls Butes son of Teleon overboard while Orpheus sings against it. National Gallery of Victoria."
+    },
+    {
+      "title": "Odysseus and the Sirens (the \"Siren Vase\")",
+      "artist": "Siren Painter",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Siren_Painter_ARV_289_1_Odysseus_and_the_Sirens_-_three_erotes_%2802%29.jpg/960px-Siren_Painter_ARV_289_1_Odysseus_and_the_Sirens_-_three_erotes_%2802%29.jpg",
+      "description": "Attic red-figure name-vase of the Siren episode — the same peril Butes alone fails among the Argonauts, saved by Aphrodite at Lilybaeum."
+    },
+    {
+      "title": "The Birth of Venus",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1485",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+      "description": "Botticelli's Venus — the goddess who, in Apollonius, lifts drowning Butes from the Sirens' sea and sets him ashore in western Sicily."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Butes",
+      "year": "—",
+      "kind": "other",
+      "description": "Athenian Argonaut, son of Teleon, who leapt toward the Sirens and was saved by Aphrodite — not Butes son of Pandion, the Erechtheid priest.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Butes"
+    },
+    {
+      "title": "Argonautica",
+      "year": "3rd century BC",
+      "kind": "novel",
+      "creator": "Apollonius of Rhodes",
+      "description": "Apollonius' voyage: Orpheus out-sings the Sirens while Butes alone jumps — the Athenian as the crew's single failure of will.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Argonautica"
+    },
+    {
+      "title": "Jason and the Argonauts",
+      "year": "1963",
+      "kind": "other",
+      "creator": "Don Chaffey / Ray Harryhausen",
+      "description": "Harryhausen's screen Argonautica keeps the Siren peril in popular memory — Butes' leap as the literary twin of that danger.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    }
+  ]
+}

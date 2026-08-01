@@ -1,12 +1,40 @@
 {
   "id": "chaos",
-  "summary": "In the context of religious cosmogony, Chaos refers to the division of reality outside or in contrast to the ordered cosmos. As such it refers to a state, place, or time beyond the known, familiar, and reliable world, often said to be inhabited by strange, ominous, or demonic beings.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek cosmogony, Chaos (Ancient Greek: χάος, kháos) is the first being or condition to exist — a gaping void, chasm, or formless expanse before the ordered cosmos. In Hesiod's Theogony, Chaos comes first; next arise Gaia, Tartarus, and Eros, while Erebus and Nyx are born from Chaos. Later poets and philosophers treat Chaos as unformed matter, empty space, or a place below the earth. This entry concerns mythic cosmogony, not the modern sense of disorder alone.",
+  "attribution": "Adapted from Wikipedia, \"Chaos (cosmogony)\" · CC BY-SA 4.0",
+  "etymology": "Greek kháos (χάος) means emptiness, vast void, chasm, or abyss, related to kháskō / khaínō, \"to gape, be wide open,\" from Proto-Indo-European *ǵʰeh₂n- (cognate with English yawn). It may also denote space, the expanse of air, the nether abyss, or infinite darkness.",
+  "symbols": [
+    "Gaping void or chasm",
+    "Formless mass (Ovid)",
+    "Cosmic egg (Orphic and later reception)"
+  ],
+  "sections": [
+    {
+      "heading": "Hesiod and early Greece",
+      "paragraphs": [
+        "In Hesiod's Theogony, \"at first Chaos came to be\"; next (whether from Chaos or after it) come Gaia, Tartarus, and Eros. Unambiguously born from Chaos are Erebus and Nyx. Chaos is personified enough to bear children, yet also a gloomy place far underground, beyond which the Titans live, and like earth, ocean, and upper air it can be shaken by Zeus's thunderbolts. Scholars read Hesiod's Chaos as a gaping void above or below the earth rather than a jumble of disordered matter.",
+        "Pre-Socratic thought reworks the idea: Anaximander's apeiron (the unlimited) and later talk of an infinite windy gap that holds the sources of earth, sea, sky, and Tartarus refine the older religious image. Aristophanes's Birds opens with Chaos, Night, Erebus, and Tartarus before Eros hatches from Night's egg in Erebus's bosom."
+      ]
+    },
+    {
+      "heading": "Classical, Roman, and Orphic accounts",
+      "paragraphs": [
+        "Plato's Timaeus speaks of chôra — shapeless receptacle in which elemental traces move in disorder — as a philosophical counterpart rather than a simple void. Aristotle treats Hesiodic chaos within a physical inquiry into place and challenges atomist empty space. Ovid's Metamorphoses pictures Chaos as a rude, undeveloped mass in which discordant elements lie congested before ocean, earth, and sky appear.",
+        "Hyginus has Mist (Caligo) produce Chaos, then Chaos and Mist produce Night, Day, Erebus, and Aether. Orphic tradition sometimes makes Chaos a child of Chronus and Ananke, or pairs Aether and Chaos (Chasm) as offspring of ageless Time."
+      ]
+    },
+    {
+      "heading": "Later reception",
+      "paragraphs": [
+        "Comparative mythology and biblical studies have linked Greek chaos language to Near Eastern watery abyss and Genesis tohu wa-bohu, though the Septuagint does not use χάος for creation and the parallel remains debated. Gnostic, Hermetic, and alchemical writers identify Chaos with prima materia; Paracelsus uses chaos for the classical elements, and the chemical term gas was coined from the same idea.",
+        "In modern English, \"chaos\" as complete disorder is a later figurative sense. This notice treats the Greek cosmogonic figure and place, not chaos theory or popular synonymy with confusion."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Chaos"
+      "url": "https://en.wikipedia.org/wiki/Chaos_(cosmogony)"
     }
-  ],
-  "etymology": "From chasko, \"to gape, yawn\" — the primal gap before all things."
+  ]
 }

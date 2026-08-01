@@ -1,0 +1,18 @@
+{
+  "city": "zacynthus",
+  "reigns": [
+    {
+      "ruler": "Zacynthus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 8.24.3",
+      "note": "Eponymous founder — son of Dardanus, a Psophidian who first sailed to the island; the Zacynthian acropolis kept the name Psophis after his homeland. Not the Trojan Dardanus of the Idaean line, and no later Zacynthian royal succession is attested in our sources."
+    },
+    {
+      "ruler": "Odysseus",
+      "characterId": "odysseus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.629–637; Odyssey 9.21–28",
+      "note": "Homeric captain of the Cephallenians who held wooded Zacynthus among the western isles — lordship from Ithaca's house, not a local Zacynthian dynasty. The island's princes appear only as suitors of Penelope, never as a king-list."
+    }
+  ]
+}

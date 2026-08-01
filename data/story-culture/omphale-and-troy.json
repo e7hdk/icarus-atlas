@@ -1,6 +1,35 @@
 {
   "id": "omphale-and-troy",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hercules and Omphale",
+      "artist": "Lucas Cranach the Elder",
+      "year": "1537",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Lucas_Cranach_d.%C3%84._-_Herkules_bei_Omphale_%28Herzog_Anton_Ulrich-Museum%29.jpg/960px-Lucas_Cranach_d.%C3%84._-_Herkules_bei_Omphale_%28Herzog_Anton_Ulrich-Museum%29.jpg",
+      "description": "Cranach's exchange of genders — Heracles at Omphale's spindle, the Lydian year of soft bondage between Troy and the later labours."
+    },
+    {
+      "title": "Hercules at the Feet of Omphale (Hercule aux pieds d'Omphale)",
+      "artist": "Édouard Joseph Dantan",
+      "year": "1874",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Hercules_at_the_feet_of_Omphale.jpg/960px-Hercules_at_the_feet_of_Omphale.jpg",
+      "description": "Dantan's Salon canvas — the hero at the queen's feet, club and lion-skin surrendered for the spindle."
+    },
+    {
+      "title": "Drunken Hercules and Queen Omphale (Pompeian fresco)",
+      "artist": "Unknown",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Fresco_depicting_drunk_Hercules%2C_his_weapons_stolen_by_Cupids%2C_observed_by_a_cool_Queen_Omphale.jpg/960px-Fresco_depicting_drunk_Hercules%2C_his_weapons_stolen_by_Cupids%2C_observed_by_a_cool_Queen_Omphale.jpg",
+      "description": "Pompeian fresco — drunken Hercules and Omphale, Roman domestic myth of the hero unarmed."
+    },
+    {
+      "title": "Omphale and Hercules (fresco tondo)",
+      "artist": "Unknown",
+      "year": "45–79 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Fresco_tondo_depicting_Omphale_and_Hercules.jpg/960px-Fresco_tondo_depicting_Omphale_and_Hercules.jpg",
+      "description": "Fresco tondo of Omphale and Hercules — the Lydian queen still holding the hero who sacked Laomedon's Troy."
+    }
+  ],
   "popCulture": [
     {
       "title": "Omphale",

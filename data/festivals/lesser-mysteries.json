@@ -1,0 +1,17 @@
+{
+  "id": "lesser-mysteries",
+  "name": "Lesser Mysteries",
+  "greekName": "Μικρὰ Μυστήρια",
+  "deities": ["persephone", "demeter"],
+  "place": "athens",
+  "atticDate": { "month": "anthesterion", "days": [20, 26], "approximate": true },
+  "conventionalDates": ["02-20", "02-21", "02-22", "02-23", "02-24", "02-25", "02-26"],
+  "aition": "heracles-cycle",
+  "summary": "The spring myesis at Agrai by the Ilissus — purification and teaching that opened the road to the Greater Mysteries, focused on Kore's return, and in myth the rites Heracles needed before facing Persephone below.",
+  "testimonia": [
+    "Pausanias 1.19.6 (Agrae and Artemis Agrotera across the Ilissus)",
+    "Scholia to Aristophanes, Plutus 845 (the Lesser Mysteries at Agrai)",
+    "Mikalson (1975) 120–121 (Anthesterion window, days approximate)",
+    "Parke (1977) 122–124 (preparatory initiation before Boedromion)"
+  ]
+}

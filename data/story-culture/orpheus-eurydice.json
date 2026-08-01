@@ -7,6 +7,55 @@
       "year": "1865",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg/960px-Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
       "description": "Moreau's symbolist Orpheus — lyre, laurel, and the Pierian melancholy Ovid and Apollodorus fixed in the tradition."
+    },
+    {
+      "title": "Orpheus Leading Eurydice from the Underworld",
+      "artist": "Jean-Baptiste-Camille Corot",
+      "year": "1861",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg/960px-Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg",
+      "description": "Corot's silvery twilight catches the pair mid-passage: Orpheus lifts his lyre like a lantern while Eurydice follows a half-step behind, the fatal backward glance only moments away. Museum of Fine Arts, Houston."
+    },
+    {
+      "title": "Orpheus and Eurydice",
+      "artist": "Peter Paul Rubens",
+      "year": "1636–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Orpheus_and_Eurydice_by_Peter_Paul_Rubens.jpg/960px-Orpheus_and_Eurydice_by_Peter_Paul_Rubens.jpg",
+      "description": "Painted for Philip IV's Torre de la Parada and now in the Museo del Prado, Rubens stages the underworld bargain: Orpheus leads Eurydice past Hades and Persephone as the fatal glance still hangs unmade. Eurydice is the luminous prize of the ascent — the bride the lyre almost brings home."
+    },
+    {
+      "title": "Landscape with Orpheus and Eurydice",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg/960px-Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg",
+      "description": "Poussin sets the Thracian singer in a classical landscape at the moment of Eurydice's death by snakebite — marriage crowns cast aside, smoke rising beyond the trees. The Louvre canvas makes Orpheus' music a calm centre against catastrophe."
+    }
+  ],
+  "music": [
+    {
+      "title": "L'Orfeo",
+      "year": "1607",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's Mantua favola in musica — Orpheus' descent and the fatal glance that opera never stopped restaging.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Orfeo"
+    },
+    {
+      "title": "Orfeo ed Euridice",
+      "year": "1762",
+      "kind": "opera",
+      "composer": "Christoph Willibald Gluck",
+      "description": "Gluck's reform opera — the underworld bargain stripped to voice and dance, Eurydice lost and (in the Vienna ending) restored.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orfeo_ed_Euridice"
+    }
+  ],
+  "films": [
+    {
+      "title": "Black Orpheus",
+      "year": "1959",
+      "medium": "film",
+      "director": "Marcel Camus",
+      "description": "Camus' Rio Carnival retelling — Orpheus and Eurydice among the favelas, Palme d'Or myth in samba time.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Black_Orpheus"
     }
   ]
 }

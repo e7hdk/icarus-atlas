@@ -1,0 +1,50 @@
+{
+  "id": "alcimede",
+  "artworks": [
+    {
+      "title": "Jason with the Golden Fleece",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1803",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg/960px-Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg",
+      "description": "Thorvaldsen's neoclassical Jason — the son Alcimede bears to Aeson in Apollonius and Hyginus, the Minyan mother behind the Argonaut captain."
+    },
+    {
+      "title": "Medea Rejuvenates Aeson",
+      "artist": "Bartolomeo Guidobono",
+      "year": "c. 1700",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Bartolomeo_Guidobono_-_Medea_rejuvenates_Aeson.jpg",
+      "description": "Guidobono's Medea restoring Aeson — Alcimede's husband and Jason's father in the Argonaut genealogy that ties Iolcus to the Minyan line."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Alcimede (mother of Jason)",
+      "year": "—",
+      "kind": "other",
+      "description": "Daughter of Phylacus and Clymene, wife of Aeson, mother of Jason — not every minor Alcimede of the catalogues.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Alcimede_(mother_of_Jason)"
+    },
+    {
+      "title": "Jason",
+      "year": "—",
+      "kind": "other",
+      "description": "Alcimede's son — the Argonaut leader her Minyan blood legitimates in Apollonius' opening genealogy.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Jason"
+    },
+    {
+      "title": "Argonautica",
+      "year": "3rd century BC",
+      "kind": "novel",
+      "creator": "Apollonius of Rhodes",
+      "description": "Apollonius names Alcimede among Jason's kin at the launch from Iolcus — the mother who weeps as the Argo sails.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Argonautica"
+    },
+    {
+      "title": "Aeson",
+      "year": "—",
+      "kind": "other",
+      "description": "Alcimede's husband — Pelias' brother and the rightful king whose son she raises for the fleece-quest.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Aeson"
+    }
+  ]
+}

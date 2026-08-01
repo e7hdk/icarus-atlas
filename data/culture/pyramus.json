@@ -1,6 +1,42 @@
 {
   "id": "pyramus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Stormy Landscape with Pyramus and Thisbe",
+      "artist": "Nicolas Poussin",
+      "year": "1651",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nicolas_Poussin_-_Stormy_Landscape_with_Pyramus_and_Thisbe_-_WGA18334.jpg/960px-Nicolas_Poussin_-_Stormy_Landscape_with_Pyramus_and_Thisbe_-_WGA18334.jpg",
+      "description": "Poussin's Frankfurt stormscape dwarfs the lovers under lightning: Pyramus fallen on his sword, Thisbe discovering him as the lion flees. Ovid's mulberry tragedy becomes a classical landscape of catastrophe."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Hans Baldung",
+      "year": "1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/1530_Baldung_Pyramus_und_Thisbe_Gem%C3%A4ldegalerie_Kat.Nr._1875.jpg/960px-1530_Baldung_Pyramus_und_Thisbe_Gem%C3%A4ldegalerie_Kat.Nr._1875.jpg",
+      "description": "Baldung's Berlin panel sets Thisbe over the dying Pyramus beneath the fatal mulberry — German Renaissance flesh and forest framing Ovid's double suicide. Gemäldegalerie, Berlin."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Lucas Cranach the Elder",
+      "year": "c. 1520",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pyram_i_Tysbe.jpg/960px-Pyram_i_Tysbe.jpg",
+      "description": "Cranach stages the Babylonian lovers at the spring: Pyramus already wounded, Thisbe arriving too late. Saxon court style turns the Metamorphoses episode into a cool, jewelled tragedy."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Lucas Gassel",
+      "year": "c. 1550",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lucas_Gassel_-_Pyramus_and_Thisbe.jpg/960px-Lucas_Gassel_-_Pyramus_and_Thisbe.jpg",
+      "description": "Gassel's panoramic landscape nests the mulberry rendezvous in a Flemish world-view — tiny lovers, vast hills, and the lion that started the misunderstanding. Ovid's wall-split romance as world landscape."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Pierre Gautherot",
+      "year": "1799",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pierre_Gautherot_-_Pyramus_and_Thisbe%2C_1799.jpg/960px-Pierre_Gautherot_-_Pyramus_and_Thisbe%2C_1799.jpg",
+      "description": "Gautherot's neoclassical canvas catches Thisbe's discovery of Pyramus — sword, blood, and the mulberry that will stain forever. Late-eighteenth-century pathos for Shakespeare's favourite Ovidian lovers."
+    }
+  ],
   "popCulture": [
     {
       "title": "A Midsummer Night's Dream",

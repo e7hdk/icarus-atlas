@@ -1,6 +1,28 @@
 {
   "id": "aglauros-cecrops",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Daughters of Cecrops Finding the Child Erichthonius",
+      "artist": "Jacob Jordaens",
+      "year": "1617",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Jacob-jordaens-erichtonius.jpg/960px-Jacob-jordaens-erichtonius.jpg",
+      "description": "Jordaens' Antwerp canvas shows Cecrops' three daughters opening Athena's forbidden basket — Aglauros among the sisters who glimpse the serpent-child Erichthonius and seal their doom."
+    },
+    {
+      "title": "Daughters of Cecrops Discovering Erichthonius",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1615",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Peter_Paul_Rubens_%281577-1640%29_-_Daughters_of_Cecrops_Discovering_Erichthonius_-_P.1978.PG.364_-_Courtauld_Gallery.jpg/960px-Peter_Paul_Rubens_%281577-1640%29_-_Daughters_of_Cecrops_Discovering_Erichthonius_-_P.1978.PG.364_-_Courtauld_Gallery.jpg",
+      "description": "Rubens' Courtauld oil sketch returns to the same Athenian crisis: the Cecropids uncover Erichthonius — Aglauros' curiosity as the prelude to envy, Mercury, and the stone that Ovid makes of her."
+    },
+    {
+      "title": "Athena Pursuing Aglauros (Attic red-figure kylix)",
+      "artist": "The Phiale Painter",
+      "year": "c. 440–430 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Phiale_Painter_ARV_1021_106extra_Athena_pursuing_Aglauros_%2801%29.jpg/960px-Phiale_Painter_ARV_1021_106extra_Athena_pursuing_Aglauros_%2801%29.jpg",
+      "description": "On this Attic cup the goddess herself pursues Aglauros — a rare vase naming the middle daughter of Cecrops in the aftermath of the opened basket, when Athena's anger still runs through Athens."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

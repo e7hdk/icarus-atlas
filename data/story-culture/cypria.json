@@ -1,6 +1,42 @@
 {
   "id": "cypria",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1632–1635",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Rubens_-_Judgement_of_Paris.jpg/960px-Rubens_-_Judgement_of_Paris.jpg",
+      "description": "Rubens' National Gallery Judgment: Paris awards the apple on Ida — the Cypria's spark that wins Helen and dooms Troy."
+    },
+    {
+      "title": "The Judgement of Paris",
+      "artist": "Enrique Simonet",
+      "year": "1904",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg/960px-Enrique_Simonet_-_El_Juicio_de_Paris_-_1904.jpg",
+      "description": "Simonet's Málaga canvas restages the herdsman-prince among the three goddesses — the Epic Cycle opening as Academic spectacle."
+    },
+    {
+      "title": "The Sacrifice of Iphigenia (Pompeii fresco)",
+      "artist": "Unknown (Roman wall-painter)",
+      "year": "Before AD 79",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg/960px-MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg",
+      "description": "Pompeian fresco of the Aulis sacrifice — the Cypria episode that buys the winds so the fleet can sail for Troy."
+    },
+    {
+      "title": "The Sacrifice of Iphigenia",
+      "artist": "Giovanni Battista Tiepolo",
+      "year": "c. 1757",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Giovanni_Battista_Tiepolo_-_The_Sacrifice_of_Iphigenia_-_WGA22333.jpg/960px-Giovanni_Battista_Tiepolo_-_The_Sacrifice_of_Iphigenia_-_WGA22333.jpg",
+      "description": "Tiepolo's airy altar: Iphigenia as the price of the voyage — the Cypria's Aulis crisis in Venetian light."
+    },
+    {
+      "title": "The Loves of Paris and Helen",
+      "artist": "Jacques-Louis David",
+      "year": "1788",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jacques-Louis_David_-_The_Loves_of_Paris_and_Helen_-_WGA6057.jpg/960px-Jacques-Louis_David_-_The_Loves_of_Paris_and_Helen_-_WGA6057.jpg",
+      "description": "David's Louvre lovers: the abduction the Judgment purchased — Helen in Paris' chamber as the Cypria's human cost."
+    }
+  ],
   "films": [
     {
       "title": "Iphigenia",

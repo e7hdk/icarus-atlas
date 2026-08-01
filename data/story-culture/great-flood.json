@@ -1,6 +1,28 @@
 {
   "id": "great-flood",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Deucalion and Pyrrha",
+      "artist": "Peter Paul Rubens",
+      "year": "1636",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Peter_Paul_Rubens_-_Deucalion_and_Pyrrha%2C_1636.jpg/960px-Peter_Paul_Rubens_-_Deucalion_and_Pyrrha%2C_1636.jpg",
+      "description": "Rubens' Prado sketch for the Torre de la Parada: the flood survivors cast stones that become a new human race — Ovid's Greek deluge as Baroque energy after the waters fall."
+    },
+    {
+      "title": "Deucalion and Pyrrha",
+      "artist": "Giovanni Benedetto Castiglione",
+      "year": "1655",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Giovanni_Benedetto_Castiglione_-_Deucalion_and_Pyrrha_-_Google_Art_Project.jpg/960px-Giovanni_Benedetto_Castiglione_-_Deucalion_and_Pyrrha_-_Google_Art_Project.jpg",
+      "description": "Castiglione's Denver canvas isolates the couple in a rocky waste as they throw their 'mother's bones' — the stones of earth that rise as men and women after Zeus' flood."
+    },
+    {
+      "title": "Deucalion and Pyrrha",
+      "artist": "Virgil Solis",
+      "year": "1562",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Virgil_Solis_-_Deucalion_Pyrrha.jpg",
+      "description": "Solis's Metamorphoses woodcut freezes the oracle's command: husband and wife hurl stones over their shoulders while new bodies form — the print that carried Greece's Noah story through Renaissance editions."
+    }
+  ],
   "popCulture": [
     {
       "title": "Deucalion",
@@ -8,6 +30,14 @@
       "kind": "other",
       "description": "Deucalion and Pyrrha's flood endures as Greece's Noah story — stones thrown over the shoulder that become a new humankind.",
       "externalUrl": "https://en.wikipedia.org/wiki/Deucalion"
+    },
+    {
+      "title": "Metamorphoses",
+      "year": "8",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Book 1 makes Deucalion and Pyrrha the survivors who repopulate the world from stones — the Greek flood as Rome's foundational metamorphosis.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
     }
   ]
 }

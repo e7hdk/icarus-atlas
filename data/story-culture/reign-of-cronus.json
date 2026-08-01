@@ -1,6 +1,28 @@
 {
   "id": "reign-of-cronus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Saturn Devouring His Son",
+      "artist": "Francisco Goya",
+      "year": "1819–1823",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
+      "description": "Goya's Black Painting — Cronus/Saturn devouring a child, the Titan's reign remembered as appetite that swallows the next generation."
+    },
+    {
+      "title": "Saturn Devouring His Son",
+      "artist": "Peter Paul Rubens",
+      "year": "1636",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Rubens_saturn.jpg/960px-Rubens_saturn.jpg",
+      "description": "Rubens' Saturn — the same cannibal kingship in Baroque flesh, Hesiod's swallower of the Olympians-to-be."
+    },
+    {
+      "title": "The Mutilation of Uranus by Saturn",
+      "artist": "Giorgio Vasari & Cristofano Gherardi",
+      "year": "c. 1560",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/The_Mutilation_of_Uranus_by_Saturn.jpg/960px-The_Mutilation_of_Uranus_by_Saturn.jpg",
+      "description": "Vasari's Palazzo Vecchio fresco — Saturn castrating Uranus, the coup that begins Cronus' golden and terrible reign."
+    }
+  ],
   "popCulture": [
     {
       "title": "Golden Age",
@@ -8,6 +30,13 @@
       "kind": "other",
       "description": "Cronus' reign became Hesiod's Golden Age — the lost paradise of easy harvests that later ages could only remember.",
       "externalUrl": "https://en.wikipedia.org/wiki/Golden_Age"
+    },
+    {
+      "title": "Cronus",
+      "year": "—",
+      "kind": "other",
+      "description": "The Titan who ruled before Zeus — sickle, swallowed children, and the Golden Age later ages could only name.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cronus"
     }
   ]
 }

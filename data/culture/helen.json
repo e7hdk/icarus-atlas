@@ -55,6 +55,14 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(1956_film)"
     },
     {
+      "title": "Helen of Troy",
+      "year": "2003",
+      "medium": "tv",
+      "director": "John Kent Harrison",
+      "description": "The USA Network miniseries retells the war from Helen's side — Sienna Guillory as the Spartan queen whose choice of Paris becomes the casus belli in primetime epic form.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_of_Troy_(miniseries)"
+    },
+    {
       "title": "Troy: Fall of a City",
       "year": "2018",
       "medium": "tv",
@@ -79,6 +87,39 @@
       "composer": "Jacques Offenbach",
       "description": "Offenbach's opéra bouffe turns the face that launched a thousand ships into a Second Empire satire — Helen bored in Sparta, Paris in disguise, and the Judgement as a joke the gods are in on.",
       "externalUrl": "https://en.wikipedia.org/wiki/La_belle_H%C3%A9l%C3%A8ne"
+    },
+    {
+      "title": "Die ägyptische Helena",
+      "year": "1928",
+      "kind": "opera",
+      "composer": "Richard Strauss",
+      "description": "Strauss and Hofmannsthal stage Euripides' phantom Helen: the real queen hidden in Egypt while Troy fought over a wraith — marriage, memory potions, and a post-war reconciliation in Dresden opulence.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Die_%C3%A4gyptische_Helena"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Helen",
+      "year": "412 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' Helen never went to Troy: a phantom fought the war while the real queen waited in Egypt — the play that gave Strauss his Egyptian Helen and unsettled the face that launched the ships.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Helen_(play)"
+    },
+    {
+      "title": "The face that launched a thousand ships",
+      "year": "1604",
+      "kind": "language",
+      "creator": "Christopher Marlowe",
+      "description": "Marlowe's Doctor Faustus coined the English proverb that still names Helen — one line that made her beauty a measure for every later face.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_face_that_launched_a_thousand_ships"
+    },
+    {
+      "title": "Poire belle Hélène",
+      "year": "1864",
+      "kind": "brand",
+      "description": "The pear-and-chocolate dessert takes its name from Offenbach's operetta — Helen of Troy sweetened into a Parisian classic still printed on brasserie menus.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Poire_belle_H%C3%A9l%C3%A8ne"
     }
   ]
 }

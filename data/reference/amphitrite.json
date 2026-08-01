@@ -1,17 +1,45 @@
 {
   "id": "amphitrite",
-  "summary": "Amphitrite is a sea goddess and queen of the sea, consort of Poseidon. Ancient sources disagree whether she is an Oceanid daughter of Oceanus and Tethys or a Nereid daughter of Nereus and Doris. By Poseidon she is the mother of Triton.",
+  "summary": "In ancient Greek mythology, Amphitrite was goddess and queen of the sea and the consort of Poseidon. Sources disagree whether she is a Nereid daughter of Nereus and Doris or an Oceanid daughter of Oceanus and Tethys. By Poseidon she is mother of Triton and, in some accounts, of Rhodos, Benthesikyme, and Kymopoleia. Her Roman counterpart is Salacia.",
+  "etymology": "Ancient Greek Ἀμφιτρίτη (Amphitrítē), often glossed as \"the third one who encircles [the sea].\" Homer shares with Thetis the epithet Halosydne (\"sea-nourished\").",
   "attribution": "Adapted from Wikipedia, \"Amphitrite\" · CC BY-SA 4.0",
   "sections": [
     {
-      "heading": "Parentage and role",
+      "heading": "Family",
       "paragraphs": [
-        "Hesiod lists Amphitrite among the Nereids born to Nereus and Doris, and later names her as Poseidon's wife and Triton's mother.",
-        "Apollodorus includes her both in the catalogue of Oceanids and in the list of Nereids — an unresolved double genealogy preserved in the mythographic tradition."
+        "Hesiod's Theogony counts Amphitrite among the fifty Nereid daughters of Nereus and Doris. Apollodorus lists her both among the Nereids and among the Oceanids — a double genealogy preserved without resolution in the mythographic tradition.",
+        "With Poseidon she bore the merman Triton. Apollodorus also names Benthesikyme as their daughter; Rhodos is sometimes theirs, sometimes attributed to Poseidon and Halia or to Asopus. Later lists add Kymopoleia. Tradition also associates her with seals, dolphins, and the dangerous breakers of the open sea."
+      ]
+    },
+    {
+      "heading": "Mythology",
+      "paragraphs": [
+        "When Poseidon sought to marry her, Amphitrite fled to protect her virginity — in one version to the Atlas Mountains at the far edge of the sea. Poseidon sent creatures to find her; a dolphin persuaded her to accept the marriage and was set among the stars as the constellation Delphinus (Hyginus; related catasterism traditions).",
+        "Eustathius reports another version in which Poseidon first saw her dancing with the Nereids at Naxos and carried her off. In the Homeric epics she is only partly personified: \"Amphitrite's breakers,\" \"moaning Amphitrite\" who nourishes countless fishes. Pindar still names Poseidon as \"husband of Amphitrite, goddess of the golden spindle\"; for later poets her name often becomes a metonym for the sea itself."
+      ]
+    },
+    {
+      "heading": "Cult and representation",
+      "paragraphs": [
+        "Amphitrite has little independent Greek cult, yet early poetry ranks her among the chief goddesses: she appears at Apollo's birth in the Homeric Hymn to Delian Apollo, and a fragment of Bacchylides shows \"august, ox-eyed Amphitrite\" crowning Theseus with her wedding wreath in Poseidon's submarine halls. Pausanias saw a cult image of her in the temple of Poseidon at the Isthmus of Corinth.",
+        "In vase-painting and mosaic she is distinguished from other Nereids chiefly by queenly attributes — robes, nets in the hair, sometimes crab-pincers at the temples — and is shown enthroned beside Poseidon or riding with him in a chariot of hippocamps, attended by Tritons and Nereids."
       ]
     }
   ],
+  "symbols": [
+    "trident",
+    "dolphin",
+    "seal",
+    "queenly nets / crab-pincers"
+  ],
+  "cultCenters": [
+    "Isthmus of Corinth (temple of Poseidon)",
+    "the sea / Mount Olympus (abode traditions)"
+  ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Amphitrite" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amphitrite"
+    }
   ]
 }

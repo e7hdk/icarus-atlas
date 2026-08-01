@@ -1,23 +1,47 @@
 {
   "id": "persephone",
-  "summary": "In ancient Greek mythology and religion, Persephone, also called Kore or Cora, is the daughter of Zeus and Demeter. She became the queen of the underworld after her abduction by her uncle Hades, the king of the underworld, who later took her into marriage. The myth of her abduction, her sojourn in the underworld, and her cyclical return to the surface represents her functions as the embodiment of spring and the personification of vegetation, especially grain crops, which disappear into the earth when sown, remain hidden for a period, sprout from the earth, and are harvested when fully grown.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In ancient Greek mythology and religion, Persephone (Greek: Περσεφόνη), also called Kore or Cora, is the daughter of Zeus and Demeter. She became queen of the underworld after her abduction by her uncle Hades, who later took her into marriage. Her sojourn below and cyclical return embody spring and the life of grain — sown into the earth, hidden, then sprouting and harvested. With Demeter she is central to the Eleusinian Mysteries. Romans identified her with Proserpina (and Italic Libera).",
+  "attribution": "Adapted from Wikipedia, \"Persephone\" · CC BY-SA 4.0",
+  "etymology": "The many dialect forms (Persephassa, Persephatta, Homeric Persephoneia, Attic Perrōphátta) suggest a difficult or Pre-Greek name. A popular folk etymology is pherein phonon, \"to bring death.\" One modern hypothesis reads Perso- with an Indo-Iranian grain word and -phatta from a root \"to strike,\" yielding something like \"thresher of grain.\" As Kore she is simply \"the Maiden.\" Latin Proserpina.",
+  "symbols": [
+    "pomegranate",
+    "torch",
+    "sheaf of grain",
+    "narcissus",
+    "sceptre"
+  ],
+  "cultCenters": [
+    "Eleusis",
+    "Locri Epizephyrii",
+    "Enna (Sicily)",
+    "Athens (Anthesterion mysteries)"
+  ],
+  "sections": [
+    {
+      "heading": "Titles and double nature",
+      "paragraphs": [
+        "Epithets mark her as both vegetation goddess and dread queen of the dead. As Kore she is the spring maiden; as Persephone she shares control of the underworld with Hades — Homer's \"dread Persephone,\" whose true name initiates sometimes avoided, conflating her with archaic Despoina (\"the Mistress\"). Orphic tradition makes her, by Zeus, mother of Dionysus/Zagreus and Melinoë. Empedocles' elemental Nestis (\"the Fasting One\") is widely read as a euphemism for her.",
+        "In Classical art she is usually robed, often with a sheaf of grain; she may hold a sceptre and cista, but the dominant narrative image is her abduction by Hades."
+      ]
+    },
+    {
+      "heading": "Abduction and return",
+      "paragraphs": [
+        "Hesiod mentions the rape briefly; the Homeric Hymn to Demeter tells it in full. Zeus allows Hades to seize Persephone while she gathers flowers with Oceanids, Athena, and Artemis. Local traditions place the abduction near Enna in Sicily, on Crete, on the Nysian plain, or near Eleusis. Demeter searches the earth with Hecate's torches, withholds the harvest, and forces Zeus to intervene. Helios reveals the truth; Hermes is sent to retrieve her.",
+        "Before releasing her, Hades gives her pomegranate seeds; having tasted underworld food, she must spend a third of each year (winter in the hymn; half the year in Ovid and Hyginus) below and the rest with the gods above. The myth explains the seasons: growth while she is with Demeter, barrenness while she reigns with Hades. Ascalaphus, who informs on the seeds, is punished by Demeter or Persephone."
+      ]
+    },
+    {
+      "heading": "Eleusis and cult",
+      "paragraphs": [
+        "Persephone and Demeter are the twin centres of the Eleusinian Mysteries, which promised initiates a happier afterlife and grew from older agrarian rites. In Athens mysteries of Anthesterion were dedicated to her; at Epizephyrian Locri she was also a goddess of marriage and childbirth. Sicilian Enna claimed her meadows and a well of descent. Together with Demeter she appears as the Thesmophoroi, Karpophoroi, or simply \"the Two Goddesses.\""
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Persephone"
     }
-  ],
-  "symbols": [
-    "pomegranate",
-    "torch",
-    "sheaf of grain",
-    "narcissus"
-  ],
-  "cultCenters": [
-    "Eleusis",
-    "Locri",
-    "Enna (Sicily)"
-  ],
-  "etymology": "Ancient and modern etymologies disagree; the name may be pre-Greek. As Kore she is simply \"the Maiden\"."
+  ]
 }

@@ -1,20 +1,43 @@
 {
   "id": "hypnos",
-  "summary": "In Greek mythology, Hypnos, also spelled Hypnus, is the personification of sleep. The Roman equivalent is Somnus. His name is the origin of the word hypnosis. Pausanias wrote that Hypnos was the dearest friend of the Muses.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Hypnos (also Hypnus) is the personification of sleep. Usually a fatherless son of Nyx (Night), he is the twin brother of Thanatos (Death); both dwell in the Underworld. The Roman equivalent is Somnus. His name is the origin of the English word hypnosis. Pausanias wrote that Hypnos was the dearest friend of the Muses.",
+  "attribution": "Adapted from Wikipedia, \"Hypnos\" · CC BY-SA 4.0",
+  "etymology": "From Ancient Greek Húpnos (Ὕπνος), \"sleep,\" from Proto-Indo-European *sup-no-; cognate with Latin somnus.",
+  "symbols": [
+    "Poppy",
+    "Horn of sleep",
+    "Wings at the temples"
+  ],
+  "cultCenters": [
+    "Troezen (honored with the Muses)"
+  ],
+  "sections": [
+    {
+      "heading": "Family and dwelling",
+      "paragraphs": [
+        "In Hesiod's Theogony Hypnos is among the children of Nyx without a father; Roman genealogies sometimes add Erebus (Darkness) as his father. His twin brother is Thanatos. The brothers live in the Underworld, where the sun's rays never reach them. Tradition places Hypnos in a cave near the river Lethe, in a land of dreams: his bed is of ebony, poppies and other soporific plants grow at the entrance, and no light or sound enters the grotto. Homer also associates him with the island of Lemnos.",
+        "His wife is Pasithea, one of the youngest Charites (Graces), promised to him by Hera in return for putting Zeus to sleep during the Trojan War."
+      ]
+    },
+    {
+      "heading": "Mythology in the Iliad",
+      "paragraphs": [
+        "Hypnos's chief epic role is aiding Hera against Zeus. She had once before persuaded him to lull Zeus while she raised storms against Heracles at sea; when Zeus awoke he hunted Hypnos, who escaped by hiding with Nyx. Offered a golden seat, Hypnos refused until Hera swore by the Styx to give him Pasithea in marriage.",
+        "On Mount Ida, shrouded in mist in a pine tree, Hypnos put Zeus to sleep in Hera's arms, then told Poseidon he might aid the Achaeans. Thanks to this ruse the war briefly turned in Hera's favour, and Zeus never learned that Hypnos had tricked him again. Homer also pairs Hypnos with Thanatos as the twin messengers who, at Zeus's command, carry the slain Sarpedon home to Lycia."
+      ]
+    },
+    {
+      "heading": "Other traditions and art",
+      "paragraphs": [
+        "According to Licymnius of Chios (quoted by Athenaeus), Hypnos loved Endymion and left his eyes open even in sleep so that he might gaze on them without interruption. Hypnos is generally portrayed as calm and gentle, helping mortals through rest and, as poets noted, owning half of human life.",
+        "In art he appears as a winged youth, often with wings at the temples, sometimes dripping Lethean water on a sleeper such as Ariadne. Famous bronzes include the British Museum head from Civitella d'Arno and finds from Roman Spain; a marble head from Hadrian's Villa is in the National Roman Museum. English hypnotics and hypnosis take their names from him."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Hypnos"
     }
-  ],
-  "symbols": [
-    "poppy",
-    "a horn of sleep",
-    "wings at the temples"
-  ],
-  "cultCenters": [
-    "Troezen (honored with the Muses)"
-  ],
-  "etymology": "From hypnos, \"sleep\" — cognate with Latin somnus."
+  ]
 }

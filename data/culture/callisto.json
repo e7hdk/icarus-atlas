@@ -30,6 +30,16 @@
       "description": "This South Italian (Apulian) terracotta wine-jug preserves one of the few ancient depictions of the myth's grimmest turn: Callisto's metamorphosis into a bear. The painted figure is shown mid-transformation, animal features overtaking her human form as the gods who set her fate look on, an image of the catasterism tradition by which Callisto would ultimately be placed among the stars as the Great Bear. A rare visual witness to the Arcadian legend from the Greek world itself, the vessel is in the collection of the J. Paul Getty Museum, Getty Villa, Pacific Palisades."
     }
   ],
+  "music": [
+    {
+      "title": "La Calisto",
+      "year": "1651",
+      "kind": "opera",
+      "composer": "Francesco Cavalli",
+      "description": "Cavalli's Venetian comedy gives the Arcadian nymph the title role: Giove seduces Calisto in Diana's shape, Giunone answers with a bear's form, and the heavens take her as a constellation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/La_Calisto"
+    }
+  ],
   "popCulture": [
     {
       "title": "Ursa Major",
@@ -39,11 +49,12 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Ursa_Major"
     },
     {
-      "title": "Callisto (mythology)",
-      "year": "—",
+      "title": "Diana and Callisto",
+      "year": "1556–1559",
       "kind": "other",
-      "description": "The Arcadian companion of Artemis remains the myth of violated chastity — pregnancy revealed at the bath, then fur and stars.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Callisto_(mythology)"
+      "creator": "Titian",
+      "description": "Titian's poesie of the bathside exposure made Callisto's pregnancy the Renaissance's defining image of the myth — shame, accusation, and Diana's cold pointing finger.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Diana_and_Callisto"
     }
   ]
 }

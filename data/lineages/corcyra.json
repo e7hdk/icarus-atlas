@@ -2,11 +2,18 @@
   "city": "corcyra",
   "reigns": [
     {
+      "ruler": "Nausithous",
+      "characterId": "nausithous-phaeacian",
+      "sources": ["homer"],
+      "citation": "Odyssey 6.1–13, 7.40–75",
+      "note": "Godlike founder who led the Phaeacians from Hypereia to Scheria, walled the city, and ruled them; father of Rhexenor and Alcinous. Later tradition equates the island with Corcyra."
+    },
+    {
       "ruler": "Alcinous",
       "characterId": "alcinous-phaeacian",
       "sources": ["homer", "apollodorus"],
-      "citation": "Odyssey 6.12–13; Bibliotheca 1.9.25",
-      "note": "King of the Phaeacians on Scheria / Corcyra, host of Odysseus and patron of the Argonaut marriage."
+      "citation": "Odyssey 6.12–13, 7.40–75; Bibliotheca 1.9.25; Epitome 7.25",
+      "note": "Son of Nausithous; king of the Phaeacians on Scheria / Corcyra — host of Odysseus, husband of Arete (daughter of his brother Rhexenor, who never reigned). Apollodorus names Corcyra the Phaeacian island of which he was king. No later successor is attested before Poseidon’s wrath."
     }
   ]
 }

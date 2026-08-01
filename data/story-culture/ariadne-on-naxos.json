@@ -1,6 +1,35 @@
 {
   "id": "ariadne-on-naxos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Bacchus and Ariadne",
+      "artist": "Titian",
+      "year": "1522–1523",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Titian_Bacchus_and_Ariadne.jpg/960px-Titian_Bacchus_and_Ariadne.jpg",
+      "description": "On Naxos Ariadne turns as Bacchus leaps from his cheetah chariot — Theseus' sail already pale on the horizon, the crown of stars foreshadowed above her head."
+    },
+    {
+      "title": "Ariadne Abandoned by Theseus",
+      "artist": "Angelica Kauffmann",
+      "year": "1774",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg/960px-Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg",
+      "description": "Kauffmann isolates the Naxos morning: Ariadne alone on the shore, the thread-giver left after the labyrinth, Catullus' abandoned heroine restaged for neoclassicism."
+    },
+    {
+      "title": "Sleeping Ariadne",
+      "artist": "Unknown (Roman copy after a Hellenistic original)",
+      "year": "Hadrianic, 2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sleeping_Ariadne_2.jpg/960px-Sleeping_Ariadne_2.jpg",
+      "description": "The Vatican's reclining marble freezes the abandoned princess asleep on Naxos — antiquity's most famous image of the island vigil before Bacchus arrives."
+    },
+    {
+      "title": "Bacchus, Venus and Ariadne",
+      "artist": "Jacopo Tintoretto",
+      "year": "1576–1577",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Jacopo_Tintoretto_-_Bacchus%2C_Venus_and_Ariadne_-_WGA22618.jpg/960px-Jacopo_Tintoretto_-_Bacchus%2C_Venus_and_Ariadne_-_WGA22618.jpg",
+      "description": "Tintoretto's Doge's Palace canvas: Bacchus rises from the sea with a ring while Venus crowns Ariadne — Naxos as apotheosis, not only abandonment."
+    }
+  ],
   "music": [
     {
       "title": "Ariadne auf Naxos",
@@ -9,6 +38,14 @@
       "composer": "Richard Strauss",
       "description": "Strauss and Hofmannsthal nest the abandoned princess inside a comedy of opera itself — Naxos as meta-theatre.",
       "externalUrl": "https://en.wikipedia.org/wiki/Ariadne_auf_Naxos"
+    },
+    {
+      "title": "L'Arianna",
+      "year": "1608",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's lost Mantuan opera survives in Ariadne's lament — the cry of the woman Theseus left on Naxos.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Arianna"
     }
   ],
   "popCulture": [

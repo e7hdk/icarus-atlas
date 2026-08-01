@@ -1,0 +1,39 @@
+{
+  "city": "memphis",
+  "reigns": [
+    {
+      "ruler": "Epaphus",
+      "characterId": "epaphus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.3–4; Fabulae 149, 275",
+      "note": "Son of Zeus and Io; reigned over the Egyptians, founded Memphis and named it after his wife, Memphis daughter of Nile."
+    },
+    {
+      "ruler": "Belus",
+      "characterId": "belus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.4; Fabulae 157, 168",
+      "note": "Son of Poseidon and Libya; remained in Egypt and ruled while his twin Agenor departed for Phoenicia."
+    },
+    {
+      "ruler": "Aegyptus",
+      "characterId": "aegyptus",
+      "sources": ["apollodorus", "hyginus"],
+      "citation": "Bibliotheca 2.1.4–5; Fabulae 168",
+      "note": "Son of Belus; subdued the Melampodes and named the land Egypt after himself. Twin Danaus held Libya and fled to Argos — not a Memphis successor."
+    },
+    {
+      "ruler": "Busiris",
+      "sources": ["apollodorus", "hyginus", "ovid"],
+      "citation": "Bibliotheca 2.5.11; Fabulae 31, 56; Metamorphoses 9.182–183",
+      "note": "King of Egypt who sacrificed strangers until Heracles slew him — son of Poseidon by Lysianassa daughter of Epaphus (Apollodorus). Episode-king, not a continuous Belid heir; distinct from Busiris son of Aegyptus killed among the Danaids (Bibliotheca 2.1.5). Plain name until promoted."
+    },
+    {
+      "ruler": "Proteus",
+      "characterId": "proteus",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 3.5.1; Epitome 6.29",
+      "note": "Apollodorus alone among our lenses calls Proteus king of Egypt — host of Dionysus and keeper of Helen until Menelaus found her. Homer's Old Man of the Sea sleeps among seals on Pharos (Odyssey 4), not as Memphis' dynast; both strands share one star, with Pharos as the Homeric seat."
+    }
+  ]
+}

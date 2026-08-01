@@ -1,6 +1,28 @@
 {
   "id": "antiope-amazon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Theseus and Antiope (pedimental group from the Temple of Apollo Daphnephoros, Eretria)",
+      "artist": "Unknown Archaic sculptor",
+      "year": "c. 510–500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Theseus_Antiope_archmus_Eretria.jpg/960px-Theseus_Antiope_archmus_Eretria.jpg",
+      "description": "Archaic marble from Eretria: Theseus carries off the Amazon Antiope — the abduction that sparks Athens' Amazon war and, in many tellings, makes her the mother of Hippolytus. Now in the Archaeological Museum of Eretria."
+    },
+    {
+      "title": "Theseus and Antiope (metope of the Athenian Treasury at Delphi)",
+      "artist": "Unknown Archaic sculptor",
+      "year": "c. 500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Treasury_of_Athenians%2C_Theseus_and_Antiope%2C_500_BC%2C_AM_Delphi%2C_201401.jpg/960px-Treasury_of_Athenians%2C_Theseus_and_Antiope%2C_500_BC%2C_AM_Delphi%2C_201401.jpg",
+      "description": "Delphi, Athenian Treasury: Theseus and the Amazon Antiope locked in the struggle of her abduction. The metope is a flagship Archaic image of the Amazon consort, distinct from the Theban Antiope of Zeus."
+    },
+    {
+      "title": "The Abduction of Antiope by Theseus",
+      "artist": "Unknown (Attic or related classical relief)",
+      "year": "5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/The_abduction_of_Antiope_by_Theseus%2C_5th_cent._B.C._%28EAM_1-16-2020%29.jpg/960px-The_abduction_of_Antiope_by_Theseus%2C_5th_cent._B.C._%28EAM_1-16-2020%29.jpg",
+      "description": "A fifth-century relief (National Archaeological Museum, Athens) of Theseus seizing the Amazon Antiope — the war-bride whose capture opens the Amazonomachy in Athenian myth."
+    }
+  ],
   "popCulture": [
     {
       "title": "Antiope (Amazon)",

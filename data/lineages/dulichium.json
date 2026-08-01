@@ -4,9 +4,16 @@
     {
       "ruler": "Phyleus",
       "characterId": "phyleus-dulichium",
-      "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 2.628–637; Bibliotheca 2.5.5",
-      "note": "Settled on Dulichium in wrath against his father Augeias; father of Meges."
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 2.628–637; Bibliotheca 2.5.5; Description of Greece 5.3.1, 5.3.3",
+      "note": "Son of Augeias who of old went to dwell in Dulichium in wrath against his father and begat Meges there. Pausanias has him return to the isle after briefly organizing Elis. No separate eponym founder is named in Homeric or Apollodoran tradition — the exile settlement is the island's founding strand."
+    },
+    {
+      "ruler": "Meges",
+      "characterId": "meges-dulichium",
+      "sources": ["homer", "apollodorus", "hyginus"],
+      "citation": "Iliad 2.628–637; Epitome 3.12; Fabulae 97",
+      "note": "Son of Phyleus, peer of Ares, who led the folk of Dulichium and the holy Echinae in forty black ships (Hyginus: sixty) to Troy. Odyssey princes from the isle (Amphinomus son of Nisus, and Apollodorus' fifty-seven wooers) are suitors, not a later king-list."
     }
   ]
 }

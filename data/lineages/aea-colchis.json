@@ -4,23 +4,23 @@
     {
       "ruler": "Aeetes",
       "characterId": "aeetes",
-      "sources": ["apollodorus", "hesiod", "homer"],
-      "citation": "Bibliotheca 1.9.1; Theogony 956–959; Odyssey 10.137",
-      "note": "King of Colchis at Aea, guardian of the Golden Fleece, until his brother Perses deposed him after the Argonaut affair."
+      "sources": ["hesiod", "homer", "apollodorus", "apollonius", "hyginus"],
+      "citation": "Theogony 956–959; Od. 10.137; Bibliotheca 1.9.1, 1.9.23; Arg. 2.1268; Fabulae 3, 22",
+      "note": "Son of Helios and Perse/Persa — Helios fathers the house but never reigns at Aea. King of Colchis when Phrixus and the Argonauts came; father of Medea and Apsyrtus, who appear in his era but do not take the Colchian throne in the seven lenses."
     },
     {
       "ruler": "Perses",
       "characterId": "perses-colchis",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Bibliotheca 1.9.28; Fabulae 27, p.35",
-      "note": "Brother of Aeetes who seized the Colchian throne; slain when Medea returned unknown from her exile."
+      "note": "Brother of Aeetes (Hyginus: son of Sol) who seized the Colchian throne after the Argonaut affair. Not the Titan Perses, nor Perses son of Perseus."
     },
     {
       "ruler": "Aeetes",
       "characterId": "aeetes",
       "sources": ["apollodorus"],
       "citation": "Bibliotheca 1.9.28",
-      "note": "Restored to the kingship of Colchis after Medea killed his usurping brother Perses."
+      "note": "Restored when Medea returned unknown, killed Perses, and gave the kingdom back to her father — she does not reign at Aea."
     }
   ]
 }

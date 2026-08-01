@@ -1,6 +1,35 @@
 {
   "id": "the-gorgon-medusa",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Medusa",
+      "artist": "Caravaggio",
+      "year": "c. 1597",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Medusa_by_Carvaggio.jpg",
+      "description": "Caravaggio's shield-Medusa — the severed Gorgon mid-scream, Perseus' trophy as Baroque terror."
+    },
+    {
+      "title": "Perseus with the Head of Medusa",
+      "artist": "Benvenuto Cellini",
+      "year": "1545–1554",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Perseus_%28Benvenuto_Cellini%29_2013_February.jpg/960px-Perseus_%28Benvenuto_Cellini%29_2013_February.jpg",
+      "description": "Cellini's Loggia Perseus holds the head aloft — Renaissance bronze freezing the beheading's aftermath."
+    },
+    {
+      "title": "Medusa",
+      "artist": "Arnold Böcklin",
+      "year": "c. 1878",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Medusa.jpg",
+      "description": "Böcklin's Medusa — Symbolist isolation of the snake-haired face that turns flesh to stone."
+    },
+    {
+      "title": "Perseus beheading Medusa (Boeotian relief pithos)",
+      "artist": "Unknown (Boeotian)",
+      "year": "c. 660 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Perseus_Medusa_Louvre_CA795.jpg/960px-Perseus_Medusa_Louvre_CA795.jpg",
+      "description": "A Boeotian relief pithos shows Perseus beheading Medusa — among the earliest narrative images of the Gorgon episode."
+    }
+  ],
   "films": [
     {
       "title": "Clash of the Titans",

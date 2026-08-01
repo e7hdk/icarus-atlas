@@ -1,0 +1,42 @@
+{
+  "id": "asterius-crete",
+  "artworks": [
+    {
+      "title": "The Abduction of Europa",
+      "artist": "Rembrandt",
+      "year": "1632",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Rembrandt_-_The_Abduction_of_Europa_-_Google_Art_Project.jpg/960px-Rembrandt_-_The_Abduction_of_Europa_-_Google_Art_Project.jpg",
+      "description": "Rembrandt's Europa on the bull — the princess Asterius of Crete will marry after Zeus leaves her, raising Minos, Rhadamanthys and Sarpedon as his foster-sons."
+    },
+    {
+      "title": "The Rape of Europa",
+      "artist": "Titian",
+      "year": "c. 1560–1562",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Tizian_085.jpg/960px-Tizian_085.jpg",
+      "description": "Titian's poesie: Europa carried to Crete — the island where Asterius (Asterion) becomes her mortal husband and the boys' foster-father. Not Asterius the Minotaur, nor the Thessalian Argonaut."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Asterion (king of Crete)",
+      "year": "—",
+      "kind": "other",
+      "description": "Cretan prince who marries Europa and raises Zeus' sons — carefully distinct from Asterius/Asterion as a name of the Minotaur.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Asterion_(king_of_Crete)"
+    },
+    {
+      "title": "Europa (consort of Zeus)",
+      "year": "—",
+      "kind": "other",
+      "description": "Asterius' wife after the bull-ride — mother of Minos, Rhadamanthys and Sarpedon in the house he fosters.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Europa_(consort_of_Zeus)"
+    },
+    {
+      "title": "Minos",
+      "year": "—",
+      "kind": "other",
+      "description": "Asterius' most famous foster-son — the Cretan lawgiver whose mortal stepfather holds the throne until the boys quarrel and leave.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Minos"
+    }
+  ]
+}

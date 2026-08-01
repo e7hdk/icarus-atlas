@@ -29,6 +29,10 @@ const doorClass =
 const primaryDoorClass =
   'pointer-events-auto rounded-xl border border-nebula-soft/45 bg-nebula-violet/15 px-6 py-3 text-center font-display text-[12px] uppercase tracking-[0.18em] text-nebula-soft backdrop-blur-xl transition-all hover:bg-nebula-violet/30';
 
+/** Dark halo under long prose — ink, not glow, so the serif body stays legible
+ *  where the star's bloom still leaks through the reading veil. */
+const PROSE_INK = '0 2px 22px rgba(5, 2, 15, 0.95), 0 0 8px rgba(5, 2, 15, 0.85)';
+
 /** Greek-key hairline for the letterbox inner edges — the frame the ancients
  *  would have painted on it. Gold at whisper opacity. */
 const MEANDER =
@@ -96,6 +100,10 @@ export function ProemOverlay() {
   const atDoors = script !== null && beatIndex >= script.beats.length;
   const beat = script && !atDoors ? script.beats[beatIndex] : null;
   const glow = payload ? TYPE_GLOW[payload.type].color : '#c084fc';
+  // Long serif prose can climb well past the stage floor — on those beats the
+  // house lights go down so the words own the stage. Display-type beats
+  // (invocation, thread) keep the galaxy at full burn: there the star performs.
+  const proseBeat = beat?.kind === 'telling' || beat?.kind === 'quarrel';
 
   const advance = () => {
     if (!script || atDoors) return;
@@ -170,6 +178,15 @@ export function ProemOverlay() {
       {/* Edge scrim + stage floor: the star stays lit center-stage, the type gets a dark house. */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_28%,rgba(5,2,15,0.62)_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[46vh] bg-gradient-to-t from-cosmos-deep/95 via-cosmos-deep/45 to-transparent" />
+      {/* Reading veil — house lights down while long prose speaks. Bottom-weighted
+          so the text floor goes near-black and the star dims to an ember instead
+          of washing out the words. Pure opacity transition: compositor-only. */}
+      <div
+        aria-hidden
+        className={`pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(5,2,15,0.94)_0%,rgba(5,2,15,0.82)_42%,rgba(5,2,15,0.5)_72%,rgba(5,2,15,0.18)_100%)] transition-opacity duration-700 ${
+          proseBeat ? 'opacity-100' : 'opacity-0'
+        }`}
+      />
 
       {/* Stage sparks — the sky glitters a little more tonight. */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -350,7 +367,10 @@ export function ProemOverlay() {
 
             {beat?.kind === 'telling' && telling && (
               <div className="mx-auto max-w-3xl text-center motion-safe:[animation:proem-fade-up_650ms_ease_both]">
-                <p className="font-body text-2xl leading-relaxed text-aether/95 sm:text-[28px] sm:leading-relaxed">
+                <p
+                  className="font-body text-2xl leading-relaxed text-aether/95 sm:text-[28px] sm:leading-relaxed"
+                  style={{ textShadow: PROSE_INK }}
+                >
                   {telling.text}
                 </p>
                 {telling.citation && (
@@ -369,7 +389,10 @@ export function ProemOverlay() {
                 >
                   ⚖
                 </span>
-                <p className="font-display text-[11px] uppercase tracking-[0.34em] text-nebula-soft motion-safe:[animation:proem-fade-up_500ms_ease_both]">
+                <p
+                  className="font-display text-[11px] uppercase tracking-[0.34em] text-nebula-soft motion-safe:[animation:proem-fade-up_500ms_ease_both]"
+                  style={{ textShadow: PROSE_INK }}
+                >
                   The tellers disagree
                 </p>
                 <div className="mt-6 space-y-5">
@@ -377,7 +400,7 @@ export function ProemOverlay() {
                     <p
                       key={variant.sourceLabel + variant.text.slice(0, 24)}
                       className="font-body text-lg leading-relaxed text-aether/90 sm:text-xl motion-safe:[animation:proem-fade-up_600ms_ease_both]"
-                      style={{ animationDelay: `${150 + index * 200}ms` }}
+                      style={{ animationDelay: `${150 + index * 200}ms`, textShadow: PROSE_INK }}
                     >
                       <span className="font-display text-[12px] uppercase tracking-[0.24em] text-nebula-soft">
                         {variant.sourceLabel}

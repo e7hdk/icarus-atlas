@@ -1,0 +1,43 @@
+{
+  "id": "antenor",
+  "artworks": [
+    {
+      "title": "Tomb of Antenor, Padua",
+      "artist": "Unknown (medieval shrine; classical reception)",
+      "year": "medieval (tradition ancient)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Padua%2CTomb_of_Antenor.jpg/960px-Padua%2CTomb_of_Antenor.jpg",
+      "description": "Padua's Tomba di Antenore — the shrine that claims the Trojan counselor as the city's founder. Homeric prudence becomes Italian foundation myth: Antenor who urged Helen's return sails on as Padua's first father."
+    },
+    {
+      "title": "Tomba di Antenore",
+      "artist": "Unknown",
+      "year": "medieval",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Tomba_di_Antenore.jpg",
+      "description": "Another view of the Antenor tomb in Padua: stone and legend binding the Iliad's peace-speaker to the Veneto — not the Athenian sculptor Antenor of the Kore, but Priam's elder."
+    },
+    {
+      "title": "Antenor (Prato della Valle, Padua)",
+      "artist": "Unknown",
+      "year": "modern statue (after classical tradition)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Antenor_Prato_della_Valle_Padua.jpg/960px-Antenor_Prato_della_Valle_Padua.jpg",
+      "description": "Statue of Antenor among Padua's Prato della Valle worthies — the Trojan hero still named as civic ancestor centuries after Homer seated him at the Scaean Gate."
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Iliad",
+      "year": "c. 8th century BC",
+      "kind": "other",
+      "creator": "Homer",
+      "description": "Homer seats Antenor with Priam's elders and lets him urge the return of Helen — the Trojan counselor of peace in Books 3 and 7.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Iliad"
+    },
+    {
+      "title": "Antenor (Trojan)",
+      "year": "—",
+      "kind": "other",
+      "description": "Trojan hero and counselor — husband of Theano, father of many Trojan fighters; later tradition makes him founder of Padua. Not the set of mythological namesakes, nor the sculptor of the Antenor Kore.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Antenor_(Trojan)"
+    }
+  ]
+}

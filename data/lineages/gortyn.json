@@ -2,11 +2,24 @@
   "city": "gortyn",
   "reigns": [
     {
-      "ruler": "Minos",
-      "characterId": "minos",
-      "sources": ["homer", "apollodorus"],
-      "citation": "Od. 3.291–294; Apollod. 3.1.2",
-      "note": "Lord of Crete whose thalassocracy Homer knew — the Gortynian headland lay within the island kingdom ruled from Knossos."
+      "ruler": "Rhadamanthys",
+      "characterId": "rhadamanthus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 8.53.4; Bibliotheca 3.1.2",
+      "note": "In the Cretan account, father of the eponym Gortys; Apollodorus has him legislate for the islands before his exile to Boeotia. Tegeans instead derive Gortys from Tegeates."
+    },
+    {
+      "ruler": "Gortys",
+      "sources": ["pausanias"],
+      "citation": "Paus. 8.53.4",
+      "note": "Eponym of Gortyna — son of Rhadamanthys in Cretan tradition, or a migrating son of Tegeates in the Tegean story that also names Cydonia and Catreus from his brothers."
+    },
+    {
+      "ruler": "Idomeneus",
+      "characterId": "idomeneus",
+      "sources": ["homer"],
+      "citation": "Iliad 2.645–650",
+      "note": "Homeric captain of the Cretans who held Cnosus and Gortys among the hundred cities — listed here as the epic lord of wall-famed Gortys, not a Knossos-only succession dump."
     }
   ]
 }

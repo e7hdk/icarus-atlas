@@ -4,6 +4,9 @@
   "greekName": "Medousa (Μέδουσα)",
   "romanName": "Medusa",
   "type": "creature",
+  "kinds": [
+    "gorgon"
+  ],
   "cluster": "chthonic",
   "domains": [
     "the petrifying gaze",

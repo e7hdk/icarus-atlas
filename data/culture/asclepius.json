@@ -1,6 +1,35 @@
 {
   "id": "asclepius",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Statue of Asclepius from Epidaurus",
+      "artist": "Roman copy after a Greek original",
+      "year": "c. 160 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Ancient_Greece_Marble_Statue_of_Asclepius%2C_c._160_AD_Roman_Copy_of_4th_C._BC_Greek_Original%2C_from_Sanctuary_of_Asclepius_at_Epidauros.jpg/960px-Ancient_Greece_Marble_Statue_of_Asclepius%2C_c._160_AD_Roman_Copy_of_4th_C._BC_Greek_Original%2C_from_Sanctuary_of_Asclepius_at_Epidauros.jpg",
+      "description": "A monumental marble Asclepius from his sanctuary at Epidaurus, now in the National Archaeological Museum, Athens — the bearded healer with staff and serpent, copied from a Classical Greek type."
+    },
+    {
+      "title": "Asclepius",
+      "artist": "Roman",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Asclepius%2C_Roman%2C_2nd_century_AD%2C_marble_-_Galleria_Borghese_-_Rome%2C_Italy_-_DSC04791.jpg/960px-Asclepius%2C_Roman%2C_2nd_century_AD%2C_marble_-_Galleria_Borghese_-_Rome%2C_Italy_-_DSC04791.jpg",
+      "description": "A Roman marble of the god of medicine in the Galleria Borghese, Rome — draped, calm, and carrying the serpent-staff that later became medicine's emblem."
+    },
+    {
+      "title": "Statue of Aesculapius",
+      "artist": "Roman",
+      "year": "1st–2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Roman_-_Statue_of_Aesculapius_-_Walters_2375.jpg",
+      "description": "A Roman marble Aesculapius in the Walters Art Museum, Baltimore — the healing god as a standing philosopher-physician, staff coiled with a snake."
+    },
+    {
+      "title": "A Visit to Aesculapius",
+      "artist": "Edward John Poynter",
+      "year": "1880",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Edward_John_Poynter_%281836-1919%29_-_A_Visit_to_Aesculapius_-_N01586_-_National_Gallery.jpg/960px-Edward_John_Poynter_%281836-1919%29_-_A_Visit_to_Aesculapius_-_N01586_-_National_Gallery.jpg",
+      "description": "Poynter's Tate canvas imagines Venus bringing a thorn-wounded foot to Aesculapius — the Classical healer receiving a goddess in a marble grove, snake-staff at his side."
+    }
+  ],
   "popCulture": [
     {
       "title": "Rod of Asclepius",

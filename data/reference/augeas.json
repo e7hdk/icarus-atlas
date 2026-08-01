@@ -1,28 +1,38 @@
 {
   "id": "augeas",
-  "summary": "In Greek mythology, Augeas (also Augeias), whose name means \"bright,\" was a king of Elis best known for his stables, which held the greatest number of cattle in the land and had never been cleaned. Cleansing them in a single day became the fifth Labour of Heracles, who succeeded by rerouting two rivers through them. Some authors number Augeas among the Argonauts. From his fouled stables the adjective \"augean\" came to denote a daunting task of cleaning or reform.",
+  "summary": "In Greek mythology, Augeas (also Augeias; Ancient Greek: Αὐγείας), whose name means \"bright,\" was king of Elis and keeper of vast herds whose cattle-yard — the Augean stables — had never been cleaned. Clearing the dung in a single day became the fifth Labour of Heracles, who succeeded by diverting the rivers Alpheus and Peneus through the yard. Some authors count Augeas among the Argonauts. From the proverbially filthy stables the adjective \"augean\" came to denote a daunting task of cleaning or reform.",
   "attribution": "Adapted from Wikipedia, \"Augeas\" · CC BY-SA 4.0",
-  "etymology": "According to the hellenist Gregory Nagy, the Homeric form of the name derives from a word meaning \"sunlight.\" This etymology helps explain why Augeas (Augeias) is presented as a son of Helios, the Sun, in some versions of the myth. The name itself is glossed as \"bright.\"",
+  "etymology": "According to the hellenist Gregory Nagy, the Homeric form Αὐγείας (Augeíās) derives from αὐγή (augḗ), \"sunlight.\" That etymology helps explain why Augeas is presented as a son of Helios, the Sun, in some versions of the myth. The name itself is glossed as \"bright.\"",
+  "symbols": [
+    "cattle-yard / stables",
+    "diverted rivers (Alpheus and Peneus)",
+    "tithe of cattle"
+  ],
+  "cultCenters": [
+    "Elis",
+    "Olympia (Heracles' foundation of the Games after defeating Augeas, in Pindar)"
+  ],
   "sections": [
     {
       "heading": "Family",
       "paragraphs": [
-        "Augeas's lineage varies across the ancient sources. He was said to be either the son of Helios (by Nausidame or by Iphiboe), or of Eleios, or of Poseidon, or of Phorbas and Hyrmine. In the last account, Augeas was probably the brother of Actor, Tiphys, and Diogeneia.",
-        "His children were named as Epicaste, Phyleus, Agamede, Agasthenes, Eurytus, and Ambracia. Ancient authors set out these relationships differently, and comparative accounts of his parentage and offspring diverge from source to source."
+        "Augeas's lineage varies across the ancient sources. He was said to be a son of Helios (by Nausidame or by Iphiboe), or of Eleios, or of Poseidon, or of Phorbas and Hyrmine. In the last account he was probably brother of Actor, Tiphys, and Diogeneia. Apollodorus records the Helios, Poseidon, and Phorbas alternatives side by side without choosing among them.",
+        "His children include Epicaste, Phyleus, Agamede, Agasthenes, Eurytus, and Ambracia. Phyleus is the son who sides with Heracles in the dispute over the promised reward and is driven into exile at Dulichium; Agasthenes appears in the Homeric Catalogue of Ships as a leader of the Epeians."
       ]
     },
     {
-      "heading": "Mythology",
+      "heading": "The Fifth Labour of Heracles",
       "paragraphs": [
-        "The fifth Labour of Heracles was to clean the Augean stables. Eurystheus intended the assignment to be both humiliating and impossible, since the livestock were divinely healthy and therefore produced an enormous quantity of dung. Three thousand cattle were said to live in the stables, which had not been cleaned in over thirty years. Heracles nonetheless succeeded by rerouting the rivers Alpheus and Peneus to wash out the filth.",
-        "Augeas reacted angrily, for he had promised Heracles a tenth of his cattle if the task were finished in a single day. He refused to honour the agreement, and Heracles killed him after the work was done. Heracles gave Augeas's kingdom to Phyleus, Augeas's son, who had been exiled for siding with Heracles against his father. According to the odes of the poet Pindar, Heracles then founded the Olympic Games.",
-        "Eurystheus discounted the success of this labour, both because the rushing waters had done the work of cleaning the stables and because Heracles had been paid for it. Eurystheus then sent Heracles on to defeat the Stymphalian Birds."
+        "Eurystheus ordered Heracles to carry out the dung of Augeas's cattle in a single day — a task meant to be both humiliating and impossible, since the livestock were divinely healthy and produced an enormous quantity of dung. Tradition gives the herd some three thousand head and says the yard had not been cleaned in over thirty years.",
+        "In Apollodorus' account Heracles approached Augeas without revealing Eurystheus' command and offered to clean the yard in one day if paid a tenth of the cattle. Augeas, incredulous, promised. Taking Phyleus as witness, Heracles breached the foundations of the cattle-yard, diverted the nearby Alpheus and Peneus into it, and made an outlet for the flood, washing the filth away.",
+        "When Augeas learned the work had been done at Eurystheus' order he refused the reward and denied the promise. At arbitration Phyleus testified for Heracles; Augeas, enraged, expelled both from Elis before a verdict could be given. Eurystheus refused to count the labour among the ten, alleging it had been performed for hire — and because the rivers, not Heracles alone, had done the cleaning."
       ]
     },
     {
-      "heading": "Etymology",
+      "heading": "Aftermath and the Olympic Games",
       "paragraphs": [
-        "According to the hellenist Gregory Nagy, the Homeric form of the name Augeias derives from a word meaning \"sunlight.\" This etymology explains why Augeias is presented as the son of Helios in some versions of the myth. The name itself is glossed as meaning \"bright,\" and from the proverbially filthy Augean stables the derivative adjective \"augean\" came to signify a challenging task, typically the improving or fixing of something in a very bad condition."
+        "Later tradition holds that Heracles returned, made war on Elis, and killed Augeas, installing the loyal Phyleus as king. Pindar connects Heracles' victory over Augeas and his sons Cleatus and Eurytus with the founding of the Olympic Games by the tomb of Pelops.",
+        "Roman mosaics and later art often show Heracles rerouting the rivers through the stables — a third-century AD mosaic is a well-known example — fixing the labour as a scene of ingenuity rather than brute strength."
       ]
     }
   ],

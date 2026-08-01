@@ -1,17 +1,42 @@
 {
   "id": "alcyone-pleiad",
-  "summary": "Alcyone is one of the Pleiades in Greek mythology, a daughter of Atlas and Pleione born at Cyllene in Arcadia. Poseidon lay with her and she bore Hyrieus, Hyperenor, and Aethusa. She must be distinguished from Alcyone daughter of Aeolus, wife of Ceyx.",
+  "summary": "Alcyone is one of the seven Pleiades, daughters of Atlas and the Oceanid Pleione, born on Mount Cyllene in Arcadia. By Poseidon she bore children including Hyrieus, Hyperenor, and Aethusa. She must be distinguished from Alcyone daughter of Aeolus, wife of Ceyx, and from other Alcyone homonyms.",
   "attribution": "Adapted from Wikipedia, \"Alcyone (Pleiades)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Ἀλκυόνη (Alkyónē), related to ἀλκυών, \"kingfisher\" — the bird-name also belongs to the Aeolid Alcyone's metamorphosis myth.",
+  "symbols": [
+    "Pleiades star-cluster",
+    "Poseidon"
+  ],
+  "cultCenters": [
+    "Mount Cyllene (Arcadia)",
+    "Amyclae (throne of Pelops relief)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Among the Pleiades",
       "paragraphs": [
-        "Apollodorus lists Alcyone among the seven Pleiades and reports that Poseidon had intercourse with her after Celaeno, begetting Hyrieus and other offspring (Bibliotheca 3.10.1).",
-        "Pausanias describes Poseidon carrying off Alcyone on the throne of Pelops at Amyclae (Description of Greece 3.18.10)."
+        "Apollodorus lists Alcyone with Maia, Electra, Celaeno, Taygete, Sterope, and Merope as daughters of Atlas and Pleione (Bibliotheca 3.10.1). The sisters are sometimes called Atlantides or mountain nymphs of Cyllene; catasterism traditions place them as the Pleiades in the sky.",
+        "As a Pleiad she shares the collective myths of Orion's pursuit and of Zeus, Poseidon, or other gods taking several sisters as lovers."
+      ]
+    },
+    {
+      "heading": "Children by Poseidon",
+      "paragraphs": [
+        "Apollodorus reports that Poseidon lay with Alcyone and that she bore Hyrieus and other offspring (including Hyperenor and Aethusa in fuller lists). Hyrieus becomes an important Boeotian eponym and father in Orion traditions.",
+        "Pausanias describes Poseidon carrying off Alcyone among the reliefs on the throne of Amyclaean Apollo (Description of Greece 3.18.10), tying her abduction to Laconian cult art."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "The Aeolid Alcyone who marries Ceyx and becomes a kingfisher is a separate figure (often alcyone-aeolid in atlas data). Other minor Alcyones appear in local genealogies; the Pleiad is identified by Atlas–Pleione parentage and Poseidon’s Boeotian children."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alcyone_(Pleiad)"
+    }
   ]
 }

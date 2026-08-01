@@ -1,6 +1,42 @@
 {
   "id": "theban-cycle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "year": "1808–1827",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%C5%92dipe_explique_l%27%C3%A9nigme_du_sphinx_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_218.jpg/960px-%C5%92dipe_explique_l%27%C3%A9nigme_du_sphinx_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_218.jpg",
+      "description": "Ingres' Oedipus before the Sphinx — the riddle that opens the Theban cycle and seals Laius' house."
+    },
+    {
+      "title": "Oedipus and the Sphinx",
+      "artist": "Gustave Moreau",
+      "year": "1864",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Oedipus_and_the_Sphinx_MET_DP-14201-023.jpg/960px-Oedipus_and_the_Sphinx_MET_DP-14201-023.jpg",
+      "description": "Moreau's Symbolist Sphinx — the same encounter turned dreamlike and fatal, the cycle's central wound restaged for the nineteenth century."
+    },
+    {
+      "title": "The Seven Chiefs against Thebes",
+      "artist": "Angélique Mongez",
+      "year": "1826",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Angelique_Mongez_-_Les_sept_chefs_devant_Thebes.jpg/960px-Angelique_Mongez_-_Les_sept_chefs_devant_Thebes.jpg",
+      "description": "Mongez's Seven Chiefs — the Argive assault that turns Oedipus' curse into civil war at the seven gates."
+    },
+    {
+      "title": "Eteocles and Polynices",
+      "artist": "Frans Francken the Younger",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Frans_Francken_II_-_Eteocles_en_Polynices_-_155_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff/lossy-page1-960px-Frans_Francken_II_-_Eteocles_en_Polynices_-_155_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff.jpg",
+      "description": "Francken's duel of Eteocles and Polynices — the fratricide that ends the Seven and opens Antigone's burial."
+    },
+    {
+      "title": "Antigone",
+      "artist": "Frederic Leighton",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Antigoneleigh.jpg/960px-Antigoneleigh.jpg",
+      "description": "Leighton's Antigone — the cycle's political afterlife, burial rights against the state."
+    }
+  ],
   "popCulture": [
     {
       "title": "Oedipus Rex",

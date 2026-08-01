@@ -1,20 +1,57 @@
 {
   "id": "rhesus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ulysses and Diomedes in the Tent of Rhesus",
+      "artist": "Corrado Giaquinto",
+      "year": "1753–1762",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Corrado_giaquinto%2C_ulisse_e_diomede_nella_tenda_di_reso.jpg/960px-Corrado_giaquinto%2C_ulisse_e_diomede_nella_tenda_di_reso.jpg",
+      "description": "Oil painting by the Neapolitan Rococo painter Corrado Giaquinto, in the Pinacoteca metropolitana di Bari. Odysseus and Diomedes have slipped into the Thracian king's pavilion by night; Rhesus still sleeps on a canopied bed while his charioteer nods nearby — the Doloneia of Iliad 10, staged with the auriga who belongs to the Attic tragedy Rhesus."
+    },
+    {
+      "title": "Diomed and Ulysses Returning with the Spoils of Rhesus",
+      "artist": "John Flaxman",
+      "year": "1895",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Diomed_and_Ulysses_returning_with_the_spoils_of_Rhesus.jpg/960px-Diomed_and_Ulysses_returning_with_the_spoils_of_Rhesus.jpg",
+      "description": "Line engraving after John Flaxman's neoclassical outline design, published in Alfred John Church's Story of the Iliad. Diomedes drives the snow-white horses of Rhesus while Odysseus follows with the Thracian spoil — the prize that, had the horses drunk from the Scamander, would have made Troy impregnable."
+    },
+    {
+      "title": "Diomedes Slays Rhesus",
+      "artist": "Crispijn van de Passe",
+      "year": "1613",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Diomedes_doodt_Rhesus_Speculum_Heroicum_Homeri_%28serietitel%29%2C_RP-P-OB-16.041.jpg/960px-Diomedes_doodt_Rhesus_Speculum_Heroicum_Homeri_%28serietitel%29%2C_RP-P-OB-16.041.jpg",
+      "description": "Engraving by Crispijn van de Passe from the Speculum Heroicum Homeri series, in the Rijksmuseum, Amsterdam. In the Thracian camp Diomedes strikes down the sleeping king while Odysseus gathers the horses — Homer's night raid compressed into a single heroic plate."
+    },
+    {
+      "title": "Diomedes and Odysseus Stealing the Horses of Rhesus",
+      "artist": "Lycurgus Painter",
+      "year": "c. 360 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Rhesos_MNA_Naples.jpg/960px-Rhesos_MNA_Naples.jpg",
+      "description": "Apulian red-figure situla by the Lycurgus Painter, in the Naples National Archaeological Museum (inv. 81863), from Ruvo di Puglia. Odysseus in his pilos and Diomedes drive off Rhesus' white horses after slaying the Thracian king and twelve of his men in their sleep — the Doloneia fixed in clay."
+    }
+  ],
   "popCulture": [
     {
-      "title": "Rhesus (play)",
+      "title": "Rhesus",
       "year": "c. 450–400 BC",
       "kind": "other",
       "description": "The Attic tragedy (often kept under Euripides' name) restages the Iliad's night raid — Rhesus' arrival and death as a self-contained war play.",
       "externalUrl": "https://en.wikipedia.org/wiki/Rhesus_(play)"
     },
     {
-      "title": "Rhesus of Thrace",
+      "title": "Total War Saga: Troy",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Creative Assembly",
+      "description": "The Rhesus & Memnon DLC makes the Thracian king a playable faction leader — snow-white horses and night-raid fame turned into campaign power.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Total_War_Saga:_Troy"
+    },
+    {
+      "title": "Doloneia",
       "year": "—",
       "kind": "other",
-      "description": "The Thracian king whose snow-white horses Odysseus and Diomedes steal remains the Iliad's most famous nocturnal ambush.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Rhesus_of_Thrace"
+      "description": "Scholars still call Iliad Book 10 the Doloneia — the night when Odysseus and Diomedes kill Dolon and steal Rhesus' horses.",
+      "externalUrl": "https://en.wikipedia.org/wiki/List_of_Homeric_scenes_with_proper_names"
     }
   ]
 }

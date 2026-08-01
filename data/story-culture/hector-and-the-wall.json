@@ -1,6 +1,35 @@
 {
   "id": "hector-and-the-wall",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hector Taking Leave of Andromache",
+      "artist": "Angelica Kauffmann",
+      "year": "1768",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg/960px-Angelica_Kauffmann_%281741-1807%29_-_Hector_Taking_Leave_of_Andromache_-_872177_-_National_Trust.jpg",
+      "description": "Kauffmann's Sceafton parting — Hector, Andromache and Astyanax at the Scaean Gate before the champion returns to the wall."
+    },
+    {
+      "title": "Triumphant Achilles",
+      "artist": "Franz Matsch",
+      "year": "1892",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Triumphant_Achilles_in_Achilleion.jpg/960px-Triumphant_Achilles_in_Achilleion.jpg",
+      "description": "Matsch's Achilleion fresco — Achilles dragging Hector's corpse behind his chariot, Iliad XXII after the chase around the walls."
+    },
+    {
+      "title": "Andromache Mourning Hector",
+      "artist": "Jacques-Louis David",
+      "year": "1783",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Jacques-Louis_David_-_Andromache_Mourning_Hector_-_WGA6050.jpg",
+      "description": "David's Louvre reception piece — Andromache beside Hector's body after the wall duel, Troy's private grief made public."
+    },
+    {
+      "title": "Priam Asking Achilles for the Body of Hector",
+      "artist": "Alexander Ivanov",
+      "year": "1824",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Alexandr_Ivanov_005.jpg/960px-Alexandr_Ivanov_005.jpg",
+      "description": "Ivanov's ransom — aged Priam at Achilles' feet for the son dragged around the walls, the Iliad's last mercy."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

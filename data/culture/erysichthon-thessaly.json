@@ -1,6 +1,35 @@
 {
   "id": "erysichthon-thessaly",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Erysichthon Sells His Daughter Mestra",
+      "artist": "Jan Steen",
+      "year": "c. 1650–1660",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Erysichthon_verkoopt_zijn_dochter_Mestra_Rijksmuseum_SK-A-2572.jpeg/960px-Erysichthon_verkoopt_zijn_dochter_Mestra_Rijksmuseum_SK-A-2572.jpeg",
+      "description": "A Dutch Golden Age oil in the Rijksmuseum in which Jan Steen stages Ovid's cruel sequel to the oak-felling: Erysichthon, wasting under Demeter's curse of hunger, sells his shape-shifting daughter Mestra for food. The Thessalian king becomes a market-day prodigal — sacrilege rewritten as domestic desperation."
+    },
+    {
+      "title": "Erysichthon and Mestra",
+      "artist": "Johann Wilhelm Baur",
+      "year": "c. 1639–1641",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bauer_-_Erysichthon_Mnestra.jpg",
+      "description": "An etching from Baur's illustrated Metamorphoses: Erysichthon bargains over Mestra while the hunger that Ceres sent still claws at him. Seventeenth-century print cycles made the Thessalian king's appetite a stock Ovidian scene — the grove's vengeance carried into the marketplace."
+    },
+    {
+      "title": "Ceres' Nymph Telling Famine to Strike Erysichthon",
+      "artist": "Antonio Tempesta",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Plate_80-_Ceres%27_Nymph_Telling_Famine_to_Strike_Erysichthon_%28Insatiabili_fame_Erisichtonem_torquet_Fames%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP866521.jpg/960px-Plate_80-_Ceres%27_Nymph_Telling_Famine_to_Strike_Erysichthon_%28Insatiabili_fame_Erisichtonem_torquet_Fames%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP866521.jpg",
+      "description": "Plate 80 from Tempesta's Metamorphoses series in the Metropolitan Museum of Art: Ceres' nymph carries the order that Famine should enter Erysichthon's vitals. The print isolates the myth's machinery — not the axe in the grove, but the divine command that turns sacrilege into endless hunger."
+    },
+    {
+      "title": "Erysichthon Selling His Daughter",
+      "artist": "Antonio Tempesta",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Plate_81-_Erysichthon_Selling_his_Daughter_%28Diversas_induta_Mitra_diversis_divenditur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP866522.jpg/960px-Plate_81-_Erysichthon_Selling_his_Daughter_%28Diversas_induta_Mitra_diversis_divenditur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP866522.jpg",
+      "description": "Plate 81 of the same Tempesta cycle: Mestra is sold again and again in shifting guise while her father eats through every ransom. Ovid's Thessalian king becomes a print-series emblem of appetite that consumes the household — the Metamorphoses as moral spectacle for early modern collectors."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

@@ -2,18 +2,18 @@
   "city": "cephallenia",
   "reigns": [
     {
-      "ruler": "Laertes",
-      "characterId": "laertes",
-      "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 3.201–204; Odyssey 1.180–225, 24.365–371; Epitome 3.10",
-      "note": "Lord of the Cephallenians who held Same and the neighbouring isles; in old age withdrew to his farm on Ithaca while suitors devoured his son's house."
+      "ruler": "Cephalus",
+      "characterId": "cephalus-aeolid",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Description of Greece 1.37.6; Bibliotheca 2.4.7",
+      "note": "Eponymous first settler of the island later called Cephallenia: Pausanias says that after helping Amphitryon destroy the Teleboans he was the first to dwell there (exiled from Athens for killing Procris, having resided at Thebes till then). Apollodorus has Amphitryon give the conquered islands to Cephalus and Heleus, who each founded a city named after himself and dwelt in it. Hyginus makes him father of Arcesius and so grandsire of Laertes — a genealogical bridge to the Ithacan house, not a Cephallenian king-list; Arceisius→Laertes→Odysseus→Telemachus reign on Ithaca, not here."
     },
     {
       "ruler": "Odysseus",
       "characterId": "odysseus",
       "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 2.629–637; Odyssey 24.365–371; Epitome 3.10",
-      "note": "Succeeded Laertes as lord of the Cephallenians; captain of their contingent at Troy and king of rocky Ithaca."
+      "citation": "Iliad 2.629–637; Epitome 3.12",
+      "note": "Homeric captain of the Cephallenians who held Ithaca, Zacynthus, and Same (Samos) with the facing mainland — twelve vermilion-prowed ships at Troy. Entered here only as Catalogue lord of the Cephallenian isle-group that includes Same; the single-line Ithacan succession (Arceisius→Laertes→Odysseus→Telemachus) is tracked on Ithaca, and Laertes is not listed as a Cephallenian reign. No Same suitor is a king."
     }
   ]
 }

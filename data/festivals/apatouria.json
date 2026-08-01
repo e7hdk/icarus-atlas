@@ -1,0 +1,16 @@
+{
+  "id": "apatouria",
+  "name": "Apatouria",
+  "greekName": "Ἀπατούρια",
+  "deities": ["zeus", "athena"],
+  "place": "athens",
+  "atticDate": { "month": "pyanepsion", "days": [11, 13] },
+  "conventionalDates": ["10-11", "10-12", "10-13"],
+  "summary": "The three days when Athens' phratries gather — feast, sacrifice to Zeus Phratrios and Athena Phratria, then the enrolment of children — running the same calendar stretch as the women's Thesmophoria, but at the clan shrines rather than the Thesmophorion.",
+  "testimonia": [
+    "Herodotus 1.147 (the Apatouria as a mark of Ionian kinship, save Ephesus and Colophon)",
+    "Scholia to Aristophanes, Acharnians 146 (Dorpia, Anarrhysis, Koureotis)",
+    "Mikalson (1975) 68–69 (11–13 Pyanopsion; phratry timing)",
+    "Parke, Festivals of the Athenians (1977) 88–92"
+  ]
+}

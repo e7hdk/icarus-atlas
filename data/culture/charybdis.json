@@ -14,6 +14,20 @@
       "year": "1840",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Scylla_and_Charybdis.jpg",
       "description": "This 1840 steel engraving by the English printmaker Albert Henry Payne presents the legendary strait identified in antiquity with the Strait of Messina, where Scylla and Charybdis menaced passing ships from opposite shores. The print gives topographic, picturesque form to the Homeric geography: the rocky narrows where, in Odyssey 12, Charybdis lay beneath the great fig tree and thrice each day sucked down and belched up the sea. Such nineteenth-century engravings popularized the myth as a real-world locale, fixing the proverbial image of being caught 'between Scylla and Charybdis' — between two equally deadly hazards."
+    },
+    {
+      "title": "Odysseus Between Scylla and Charybdis",
+      "artist": "William Bromley, after Henry Fuseli",
+      "year": "1806",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/William_Bromley_-_Odysseus_Between_Scylla_and_Charybdis%2C_1806.jpg",
+      "description": "Bromley's engraving after a Fuseli watercolour isolates the Odyssey's second ordeal with Charybdis: Odysseus clings to the wild fig tree above the whirlpool while the vortex yawns below and Scylla coils among the rocks at left. Made as an illustration to Pope's Odyssey, the print freezes Circe's counsel made flesh — when the ship is lost, only the fig and the sucking deep remain, and Charybdis is the sea that will either drown or spit the hero back."
+    },
+    {
+      "title": "Between Scylla and Charybdis",
+      "artist": "Adolf Hirémy-Hirschl",
+      "year": "c. 1910",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Adolf_Hiremy-Hirschl_-_Zwischen_Skylla_und_Charybdis.jpg/960px-Adolf_Hiremy-Hirschl_-_Zwischen_Skylla_und_Charybdis.jpg",
+      "description": "The Hungarian Symbolist Adolf Hirémy-Hirschl restages the proverbial strait as a late Romantic ordeal: the ship trapped between the cliff-monster and the devouring swirl. Painted around 1910, the pastel keeps Charybdis as Homer cast her — not a figured body but the thrice-daily suck of the deep — the hazard Odysseus must skirt if he is to keep any of his crew alive."
     }
   ],
   "popCulture": [
@@ -25,11 +39,32 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Between_Scylla_and_Charybdis"
     },
     {
-      "title": "Charybdis",
-      "year": "—",
-      "kind": "other",
-      "description": "The thrice-daily suck of the deep remains the mythic name for a consuming vortex — Charybdis as disaster that swallows whole.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Charybdis"
+      "title": "Ulysses",
+      "year": "1922",
+      "kind": "novel",
+      "creator": "James Joyce",
+      "description": "Joyce titles the library episode Scylla and Charybdis — Stephen Dedalus arguing Shakespeare between two intellectual hazards named for the Homeric strait.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(novel)"
+    }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "After Scylla takes the crew, Charybdis wrecks the ship outright — Konchalovsky's whirlpool as the last Homeric hazard before Calypso's shore.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "EPIC: The Musical",
+      "year": "2022–2024",
+      "kind": "stage",
+      "composer": "Jorge Rivera-Herrans",
+      "description": "In the Vengeance Saga, Odysseus faces Charybdis alone on a raft — the thrice-daily suck restaged as a duel with the whirlpool before Ithaca.",
+      "externalUrl": "https://en.wikipedia.org/wiki/EPIC:_The_Musical"
     }
   ]
 }

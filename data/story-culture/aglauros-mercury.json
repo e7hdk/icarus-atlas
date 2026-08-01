@@ -1,6 +1,35 @@
 {
   "id": "aglauros-mercury",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Mercury, Herse, and Aglaurus",
+      "artist": "Louis-Jean-François Lagrenée",
+      "year": "1767",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mercury%2C_Herse%2C_and_Aglaurus%2C1767%2C_by_Louis-Jean-Fran%C3%A7ois_Lagren%C3%A9e._Nationalmuseum%2C_Stockholm%2C_Sweden.jpg/960px-Mercury%2C_Herse%2C_and_Aglaurus%2C1767%2C_by_Louis-Jean-Fran%C3%A7ois_Lagren%C3%A9e._Nationalmuseum%2C_Stockholm%2C_Sweden.jpg",
+      "description": "Lagrenée's Nationalmuseum canvas: Mercury at the threshold, Herse the prize, Aglauros the envious sister who will turn to stone — Ovid's Cecropid triangle."
+    },
+    {
+      "title": "Mercury, Herse, and Aglauros",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1624–1627",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Poussin_Mercure_Hers%C3%A9_et_Aglaure_ENSBA.jpg",
+      "description": "Poussin's ENSBA drawing compresses Metamorphoses II into a doorway drama — Mercury, Herse, and the sister who bars the god."
+    },
+    {
+      "title": "Hermes and Herse",
+      "artist": "Makron (potter Hieron)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Hermes_Herse_Louvre_G494.jpg/960px-Hermes_Herse_Louvre_G494.jpg",
+      "description": "Attic red-figure cup (Louvre G494): Hermes pursues Herse — the desire that makes Aglauros' envy fatal in Ovid's later telling."
+    },
+    {
+      "title": "Lekythos with Hermes and Herse",
+      "artist": "Attic workshop",
+      "year": "c. 5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Lekythos_Hermes_Herse_MAN.jpg/960px-Lekythos_Hermes_Herse_MAN.jpg",
+      "description": "White-ground lekythos (Madrid): Hermes and Herse meet — the named encounter before Roman poets thicken the jealousy plot with Aglauros' stone."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

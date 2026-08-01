@@ -1,24 +1,56 @@
 import { hashString } from '@/features/galaxy/layout';
+import { fold } from '@/features/search/match';
 import type { Character, Relation } from '@/types/character';
 import type { Story } from '@/types/story';
 import { LINKED_PROSE_PARSER_VERSION } from './parse-prose';
 
-/** Fingerprint of the global searchable name roster — any change rebakes every entity
- *  (new names can match in any prose block). */
+/** Fingerprint of the global searchable name roster — the whole-file "nothing
+ *  at all changed" exit. It is NOT folded into the per-entity signatures: a
+ *  single new character used to invalidate every baked paragraph, and the
+ *  linker does not work that way (see nameOwners below). */
 export function linkingNamesSignature(characters: Character[]): string {
   const names = characters
-    .map((c) => `${c.id}:${c.name}:${c.romanName ?? ''}`)
+    .map((c) => `${c.id}:${c.name}:${c.romanName ?? ''}:${c.type}`)
     .sort()
     .join(',');
   return `${LINKED_PROSE_PARSER_VERSION}.${characters.length}.${hashString(names)}`;
 }
 
-/** Per-character inputs: global names, relation scope partners, and own prose. */
-export function characterLinkingSignature(
-  character: Character,
-  relations: Relation[],
-  namesSignature: string,
-): string {
+/** Every string the linker can match, folded exactly as the matcher folds it,
+ *  mapped to who answers to it. The owners carry their `type` because a link
+ *  segment records the type it linked to, so a retyped character changes the
+ *  baked output of every paragraph that names it. */
+export function linkableNameOwners(characters: Character[]): Record<string, string> {
+  const owners = new Map<string, string[]>();
+  for (const character of characters) {
+    for (const raw of [character.name, character.romanName].filter(Boolean) as string[]) {
+      const key = fold(raw);
+      owners.set(key, [...(owners.get(key) ?? []), `${character.id}:${character.type}`]);
+    }
+  }
+  return Object.fromEntries([...owners].map(([key, ids]) => [key, ids.sort().join(',')]));
+}
+
+/** The names whose meaning moved between two bakes — added, removed, re-owned
+ *  (a homonym joined them) or retyped. This is the whole trick: parseLinkedProse
+ *  walks a text left to right and matches names locally, consulting nothing
+ *  global, so a paragraph containing NONE of these strings must bake to exactly
+ *  the bytes it baked to last time, however much the roster grew around it. */
+export function changedNames(
+  before: Record<string, string>,
+  after: Record<string, string>,
+): string[] {
+  const moved: string[] = [];
+  for (const name of new Set([...Object.keys(before), ...Object.keys(after)])) {
+    if (before[name] !== after[name]) moved.push(name);
+  }
+  return moved;
+}
+
+/** Per-character inputs that are the character's OWN: its prose and the
+ *  relation scope its links resolve against. What the rest of the roster is
+ *  called is handled by the name delta, not by invalidating this. */
+export function characterLinkingSignature(character: Character, relations: Relation[]): string {
   const relScope = relations
     .filter((r) => r.from === character.id || r.to === character.id)
     .map((r) => `${r.from}|${r.to}`)
@@ -28,17 +60,17 @@ export function characterLinkingSignature(
     ...character.summary.map((p) => p.text),
     ...character.story.map((p) => p.text),
   ].join('\0');
-  return `${namesSignature}.${hashString(relScope)}.${hashString(prose)}`;
+  return `${LINKED_PROSE_PARSER_VERSION}.${hashString(relScope)}.${hashString(prose)}`;
 }
 
-/** Per-story inputs: global names, cast ids (link scope), and prose. */
-export function storyLinkingSignature(story: Story, namesSignature: string): string {
+/** Per-story inputs that are the story's own: cast ids (link scope) and prose. */
+export function storyLinkingSignature(story: Story): string {
   const cast = story.cast
     .flatMap((member) => (member.id ? [member.id] : []))
     .sort()
     .join(',');
   const prose = [story.summary.text, ...story.chapters.map((ch) => ch.text)].join('\0');
-  return `${namesSignature}.${hashString(cast)}.${hashString(prose)}`;
+  return `${LINKED_PROSE_PARSER_VERSION}.${hashString(cast)}.${hashString(prose)}`;
 }
 
 /** Aggregate file signature from per-entity signatures — quick "nothing changed" exit. */
@@ -56,20 +88,4 @@ export function linkingFileSignature(
     .map(([id, sig]) => `${id}:${sig}`)
     .join(',');
   return `${namesSignature}.${hashString(chars)}.${hashString(stories)}`;
-}
-
-/** @deprecated Use per-entity signatures + linkingFileSignature. Kept for docs/tests. */
-export function linkingSignature(
-  characters: Character[],
-  relations: Relation[],
-  stories: Story[],
-): string {
-  const namesSignature = linkingNamesSignature(characters);
-  const characterSignatures = Object.fromEntries(
-    characters.map((c) => [c.id, characterLinkingSignature(c, relations, namesSignature)]),
-  );
-  const storySignatures = Object.fromEntries(
-    stories.map((s) => [s.id, storyLinkingSignature(s, namesSignature)]),
-  );
-  return linkingFileSignature(namesSignature, characterSignatures, storySignatures);
 }

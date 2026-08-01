@@ -1,6 +1,35 @@
 {
   "id": "scylla-minos",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Scylla Watching Minos from the Castle Walls",
+      "artist": "Antonio Tempesta",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Scylla_Watching_Minos_from_the_Castle_Walls_LACMA_65.37.155.jpg/960px-Scylla_Watching_Minos_from_the_Castle_Walls_LACMA_65.37.155.jpg",
+      "description": "Scylla watching Minos from the walls — Ovid's princess in love with the besieging king of Crete."
+    },
+    {
+      "title": "Scylla and Nisus",
+      "artist": "Nicolas-André Monsiau",
+      "year": "c. late 18th–early 19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Scylla_et_Nisus_Nicolas-Andr%C3%A9_Monsiau.jpg",
+      "description": "Scylla and Nisus — the lock of purple hair cut from her father's head to open Megara's gates."
+    },
+    {
+      "title": "Scylla Rejected by Minos After Destroying Her Father",
+      "artist": "Antonio Tempesta",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Scylla_Rejected_by_Minos_After_Destroying_Her_Father_LACMA_65.37.156.jpg/960px-Scylla_Rejected_by_Minos_After_Destroying_Her_Father_LACMA_65.37.156.jpg",
+      "description": "Scylla rejected by Minos after destroying her city — the betrayal rewarded with exile and metamorphosis."
+    },
+    {
+      "title": "Scylla et Nisus (Scylla Cutting Her Father's Lock)",
+      "artist": "Nicolas-André Monsiau",
+      "year": "1806",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Scylla_et_Nisus_Nicolas-Andr%C3%A9_Monsiau.jpg",
+      "description": "Monsiau's Scylla cutting her father's hair — the crime that makes the Ciris myth."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",

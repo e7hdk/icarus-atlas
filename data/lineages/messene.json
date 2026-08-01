@@ -2,25 +2,84 @@
   "city": "messene",
   "reigns": [
     {
+      "ruler": "Polycaon & Messene",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.1.1–5, 4.2.1–2",
+      "note": "Younger son of Lelex of Laconia and Messene daughter of Triopas; they led colonists from Argos and Lacedaemon, named the land Messene, and ruled from Andania. Pausanias found no children named in the genealogies and judged their house lasted some five generations before it failed."
+    },
+    {
+      "ruler": "Perieres",
+      "characterId": "perieres-aeolid",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 4.2.2, 4.2.4; Apollod. 1.9.5",
+      "note": "Summoned as king when no descendant of Polycaon survived; Apollodorus instead says he took possession of Messene and married Gorgophone. He and the earlier kings dwelt at Andania.",
+      "topic": "perieres-parentage"
+    },
+    {
+      "ruler": "Aphareus",
+      "characterId": "aphareus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 4.2.4, 4.3.7; Apollod. 1.9.5, 3.10.3",
+      "note": "With his brother Leucippus he inherited Messene, but held the greater authority; on accession he founded Arene for his wife and settled there with his sons, shifting the palace from Andania."
+    },
+    {
+      "ruler": "Idas & Lynceus",
+      "characterIds": ["idas", "lynceus-apharetid"],
+      "sources": ["pausanias", "apollodorus", "hyginus"],
+      "citation": "Paus. 4.2.7, 4.3.1; Apollod. 3.10.3, 3.11.2; Hyg. Fab. 80",
+      "note": "Sons of Aphareus who held the Apharetid share of Messenia until the cattle-feud with the Dioscuri wiped out the male line; Pausanias then passes Idas' former realm to Nestor (not the Asclepiad part). Homonym: lynceus-apharetid, not the Danaid lynceus."
+    },
+    {
+      "ruler": "Nestor",
+      "characterId": "nestor",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.3.1, 4.3.7",
+      "note": "After the Apharetids fell, the kingdom of Messenia passed to Neleus' son, including what Idas had ruled; in his generation and his descendants' the palace stood at Pylos, not Andania or Arene."
+    },
+    {
       "ruler": "Cresphontes",
       "characterId": "cresphontes",
       "sources": ["apollodorus", "pausanias", "hyginus"],
       "citation": "Apollod. 2.8.4–5; Paus. 4.3.3–7; Hyg. Fab. 137",
-      "note": "Heraclid who won Messenia by the clay lot and wed Merope; Pausanias makes Stenyclarus his royal seat before the rich killed him."
+      "note": "Heraclid who won Messenia by the clay lot and wed Merope; he moved the royal seat to Stenyclarus before the rich killed him."
     },
     {
       "ruler": "Polyphontes",
       "characterId": "polyphontes",
       "sources": ["apollodorus", "hyginus"],
       "citation": "Apollod. 2.8.5; Hyg. Fab. 137",
-      "note": "Heraclid usurper who murdered Cresphontes and forced Merope to marry him until Aepytus avenged his father."
+      "note": "Heraclid usurper who murdered Cresphontes and forced Merope to marry him until Aepytus avenged his father. Pausanias instead blames a rising of the rich and does not name him."
     },
     {
       "ruler": "Aepytus",
       "characterId": "aepytus-heraclid",
       "sources": ["apollodorus", "pausanias", "hyginus"],
-      "citation": "Apollod. 2.8.5; Paus. 4.3.8; Hyg. Fab. 137",
-      "note": "Sole surviving son of Cresphontes; restored the Messenian throne and gave his name to the Aepytidae line."
+      "citation": "Apollod. 2.8.5; Paus. 4.3.8–9; Hyg. Fab. 137",
+      "note": "Sole surviving son of Cresphontes; restored the Messenian throne and gave his name to the Aepytidae. Homonym: aepytus-heraclid, not the Arcadian Elatid aepytus-elatid."
+    },
+    {
+      "ruler": "Glaucus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.3.9",
+      "note": "Son and successor of Aepytus; Pausanias credits him with renewing the Ithome cult of Zeus that Polycaon and Messene had founded. Plain name — not the Corinthian, Lycian, or sea Glaucus."
+    },
+    {
+      "ruler": "Isthmius",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.3.10",
+      "note": "Son of the Aepytid Glaucus; built the shrine of Gorgasus and Nicomachus at Pharae. Plain name — not Isthmius son of Temenus who helped restore Aepytus."
+    },
+    {
+      "ruler": "Dotadas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.3.10",
+      "note": "Son of Isthmius; Pausanias says he constructed the harbor at Mothone."
+    },
+    {
+      "ruler": "Sybotas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 4.3.10, 4.4.1",
+      "note": "Son of Dotadas; established the king's annual sacrifice to the Pamisus and the offering to Eurytus at Oechalia before the Andanian mysteries. His son Phintas is the next named reign, where the quarrel with Sparta begins."
     }
   ]
 }

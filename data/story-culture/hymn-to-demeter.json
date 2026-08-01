@@ -1,6 +1,42 @@
 {
   "id": "hymn-to-demeter",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Rape of Proserpina",
+      "artist": "Gian Lorenzo Bernini",
+      "year": "1621–1622",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Rape_of_Prosepina_September_2015-3a.jpg/960px-Rape_of_Prosepina_September_2015-3a.jpg",
+      "description": "Bernini's Borghese marble — Pluto seizing Proserpina for the underworld, the Hymn's abduction carved into yielding flesh."
+    },
+    {
+      "title": "The Return of Persephone",
+      "artist": "Frederic Leighton",
+      "year": "1891",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Frederic_Leighton_-_The_Return_of_Persephone_%281891%29.jpg/960px-Frederic_Leighton_-_The_Return_of_Persephone_%281891%29.jpg",
+      "description": "Leighton's Leeds canvas — Hermes leading Persephone up to Demeter's arms, the annual reunion that brings spring back."
+    },
+    {
+      "title": "Proserpine",
+      "artist": "Dante Gabriel Rossetti",
+      "year": "1874",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Dante_Gabriel_Rossetti_-_Proserpine_-_Google_Art_Project.jpg/960px-Dante_Gabriel_Rossetti_-_Proserpine_-_Google_Art_Project.jpg",
+      "description": "Rossetti's Tate Proserpine holds the bitten pomegranate — the Hymn's binding fruit that splits the year between worlds."
+    },
+    {
+      "title": "Demeter Mourning for Persephone",
+      "artist": "Evelyn de Morgan",
+      "year": "1906",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Evelyn_de_Morgan_-_Demeter_Mourning_for_Persephone%2C_1906.jpg",
+      "description": "De Morgan's winter goddess among withered stalks — the mother's grief that barrened the earth until the Kore returned."
+    },
+    {
+      "title": "The Demeter of Knidos",
+      "artist": "Unknown",
+      "year": "c. 350 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Marble_Statue_of_Demeter.jpg/960px-Marble_Statue_of_Demeter.jpg",
+      "description": "Seated marble from Knidos — the sorrowful mother of the mysteries, grief read into the grain-goddess' face."
+    }
+  ],
   "popCulture": [
     {
       "title": "Homeric Hymn to Demeter",

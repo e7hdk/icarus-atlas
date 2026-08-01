@@ -1,0 +1,46 @@
+{
+  "id": "mentor-ithaca",
+  "artworks": [
+    {
+      "title": "Telemachus and Mentor",
+      "artist": "Charles Monnet",
+      "year": "late 18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Monnet_Telemachus_and_Mentor.jpg/960px-Monnet_Telemachus_and_Mentor.jpg",
+      "description": "Charles Monnet's illustration for Fénelon's Télémaque shows the Ithacan elder with Odysseus' son — the Homeric Mentor whose name Athena borrows when she guides Telemachus. Eighteenth-century engraving culture made this pair the emblem of wise counsel; the print is the visual root of the modern word 'mentor.'"
+    },
+    {
+      "title": "Telemachus, Urged by Mentor, Leaving the Island of Calypso",
+      "artist": "Charles Meynier",
+      "year": "c. 1800",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MEYNIER_-_Telemachus%2C_Urged_by_Mentor%2C_Leaving_the_Island_of_Calypso.jpg/960px-MEYNIER_-_Telemachus%2C_Urged_by_Mentor%2C_Leaving_the_Island_of_Calypso.jpg",
+      "description": "Meynier's neoclassical canvas stages Fénelon's episode in which Mentor (Athena in disguise) pulls Telemachus away from Calypso's isle. The painting belongs to the didactic afterlife of the Odyssey's trusted friend — Mentor as the voice that turns a wandering prince toward duty."
+    }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps Ithaca's household and Telemachus' search — the world in which Mentor stands as Odysseus' friend and Athena's chosen likeness.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Les Aventures de Télémaque",
+      "year": "1699",
+      "kind": "novel",
+      "creator": "François Fénelon",
+      "description": "Fénelon's didactic novel made Mentor the tutor of princes — the Homeric name that entered every European language as the word for a wise guide.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Les_Aventures_de_T%C3%A9l%C3%A9maque"
+    },
+    {
+      "title": "mentor (word)",
+      "year": "from antiquity via Fénelon",
+      "kind": "language",
+      "description": "English and many other languages took 'mentor' from the Odyssey figure — Odysseus' Ithacan friend as the common noun for a trusted adviser.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Mentor_(Odyssey)"
+    }
+  ]
+}

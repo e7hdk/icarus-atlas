@@ -1,17 +1,43 @@
 {
   "id": "daphne-nymph",
-  "summary": "Daphne is a Naiad nymph in Greek mythology, daughter of the river Peneus, who fled Apollo and was transformed into the laurel tree. She must be distinguished from the Arcadian huntress Daphne of the Ladon in Pausanias.",
+  "summary": "Daphne (Ancient Greek Δάφνη, \"laurel\"), a figure in Greek mythology, was in various retellings a mortal woman or a nymph, daughter of a river god. Apollo fell in love with her and chased her against her wishes; before he caught her she prayed for escape and was transformed into a laurel tree, which thereafter became sacred to the god. Laurel crowns at the Pythian Games and later poetic laureates trace back to this reverence. She must be kept distinct from variant genealogies that place the metamorphosis in Arcadia (Ladon) rather than Thessaly (Peneus).",
   "attribution": "Adapted from Wikipedia, \"Daphne\" · CC BY-SA 4.0",
+  "etymology": "Daphne (Δάφνη) means \"laurel\" in Greek; the myth explains Apollo's cult association with the bay laurel (Laurus nobilis).",
+  "symbols": [
+    "Laurel tree and wreath",
+    "Pursuit and metamorphosis"
+  ],
+  "cultCenters": [
+    "Vale of Tempe (laurel for Pythian crowns)",
+    "Apollo Daphnephoros at Eretria",
+    "Artemis Daphnaia near Sparta (Hypsoi)"
+  ],
   "sections": [
+    {
+      "heading": "Family",
+      "paragraphs": [
+        "Sources disagree on her parentage. Ovid and Hyginus make her a daughter of the Thessalian river-god Peneus (sometimes by the nymph Creusa). Other traditions name the Arcadian river Ladon and Ge (Earth), or make her a mortal daughter of King Amyclas. The atlas node daphne-nymph follows the Thessalian Naiad of Ovid and Hyginus; Pausanias's Arcadian huntress belongs to a separate strand of the same name-complex."
+      ]
+    },
     {
       "heading": "Mythology",
       "paragraphs": [
-        "In Ovid's Metamorphoses Apollo pursues Daphne after Cupid's revenge; she prays and becomes the laurel (1.577–748).",
-        "Hyginus makes Earth receive her and change her into a laurel when she begs for protection (Fabulae 203)."
+        "The earliest written account is Phylarchus as quoted by Parthenius: Daphne is a hunting maiden sworn to virginity, pursued by Leucippus in disguise and by Apollo; Earth swallows her and a laurel rises in her place. Pausanias retells the Leucippus episode in Arcadia.",
+        "Ovid's Metamorphoses made the pursuit famous: Cupid, insulted by Apollo after the slaying of Python, struck the god with a golden arrow of desire and Daphne with lead that repelled love. Apollo chased her; she prayed to her father Peneus (or, in Hyginus, to Earth) and became the laurel. Apollo vowed to honor the tree forever, wearing its leaves and making it evergreen.",
+        "Later authors relocate the transformation: Philostratus and Nonnus associate Apollo Daphnaeus and Daphne with Antioch on the Orontes; Lucian has Apollo complain that Daphne and Hyacinthus escaped him into plant form."
+      ]
+    },
+    {
+      "heading": "Cult and culture",
+      "paragraphs": [
+        "At Delphi the Pythian victor's crown was of laurel from Tempe. Sanctuaries include Apollo Daphnephoros (\"laurel-bearer\") at Eretria and Artemis Daphnaia among the Lacedaemonians. Bernini's Apollo and Daphne (1622–25) and operas from Peri's Dafne (1598) to Strauss's Daphne (1938) keep the metamorphosis at the center of Western reception."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Daphne" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daphne"
+    }
   ]
 }

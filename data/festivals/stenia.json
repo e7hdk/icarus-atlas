@@ -1,0 +1,16 @@
+{
+  "id": "stenia",
+  "name": "Stenia",
+  "greekName": "Στήνια",
+  "deities": ["demeter", "persephone"],
+  "place": "athens",
+  "atticDate": { "month": "pyanepsion", "days": [9] },
+  "conventionalDates": ["10-09"],
+  "summary": "The women's night before the Thesmophoria — aite and aischrologia for Demeter and Kore, when the jests that once made the mourning goddess smile are traded among the celebrants.",
+  "testimonia": [
+    "Hesychius s.v. Στήνια (the women's festival and the abuse)",
+    "Apollodorus, Bibliotheca 1.5.1 (Iambe's jests as the charter for women's jokes at Demeter's rites)",
+    "Mikalson (1975) 71 (9 Pyanopsion)",
+    "Deubner, Attische Feste (1932) 52–53"
+  ]
+}

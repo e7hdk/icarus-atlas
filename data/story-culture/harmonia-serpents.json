@@ -1,6 +1,35 @@
 {
   "id": "harmonia-serpents",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Cadmus and Harmonia",
+      "artist": "Evelyn De Morgan",
+      "year": "1877",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/CadmusHarmoniaEvelynMorgan.jpg/960px-CadmusHarmoniaEvelynMorgan.jpg",
+      "description": "De Morgan's Pre-Raphaelite pair — the Theban founders already half serpents, Ovid's Illyrian end as quiet metamorphosis."
+    },
+    {
+      "title": "Cadmus and Harmonia Transformed into Serpents",
+      "artist": "Crispijn de Passe the Elder",
+      "year": "c. 1602–1607",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Cadmus_en_Harmonia_veranderen_in_een_slang%2C_objectno_PK.OPB.0006.040.tif/lossy-page1-960px-Cadmus_en_Harmonia_veranderen_in_een_slang%2C_objectno_PK.OPB.0006.040.tif.jpg",
+      "description": "De Passe's engraving — Cadmus and Harmonia becoming crested snakes after Thebes' disasters gather."
+    },
+    {
+      "title": "Cadmus and Harmonia (Cadmus cum Uxore in Serpentem)",
+      "artist": "Virgil Solis",
+      "year": "1569",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Harmonia_en_Cadmus%2C_RP-P-OB-22.064%28V%29.jpg/960px-Harmonia_en_Cadmus%2C_RP-P-OB-22.064%28V%29.jpg",
+      "description": "Solis' Metamorphoses woodcut — the prayer answered as husband and wife take serpent form together."
+    },
+    {
+      "title": "Cadmus and Harmonia Transformed into Serpents",
+      "artist": "Workshop of Virgiliotto Calamelli",
+      "year": "mid-16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Virgiliotto_16705.jpg",
+      "description": "Maiolica dish — the Theban founders' serpent end for a Renaissance table, Ovid glazed in colour."
+    }
+  ],
   "popCulture": [
     {
       "title": "Metamorphoses",
@@ -16,13 +45,6 @@
       "kind": "other",
       "description": "The Phoenician founder who sowed dragon's teeth and later left Thebes for Illyria — Harmonia's consort until both wear crested scales.",
       "externalUrl": "https://en.wikipedia.org/wiki/Cadmus"
-    },
-    {
-      "title": "Harmonia (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "Ares and Aphrodite's daughter, bride of Cadmus — concord that ends as twin serpents after the Labdacid disasters gather round their city.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Harmonia_(mythology)"
     }
   ]
 }

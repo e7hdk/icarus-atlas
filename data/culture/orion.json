@@ -30,6 +30,24 @@
       "description": "Engraved frontispiece for Lacoste's opera Orion: the hunter and Diana framed for the stage — the myth as Parisian libretto ornament."
     }
   ],
+  "music": [
+    {
+      "title": "L'Orione",
+      "year": "1653",
+      "kind": "opera",
+      "composer": "Francesco Cavalli",
+      "description": "Cavalli's Delos opera stages Diana's love for the giant hunter and the trick that makes her shoot him — Orion lamented before the heavens take him.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Orione"
+    },
+    {
+      "title": "Orion",
+      "year": "1728",
+      "kind": "opera",
+      "composer": "Louis de La Coste",
+      "description": "Lacoste's tragédie lyrique after the Boeotian hunter: Orion blinded for Merope, healed by Cedalion, then killed when Diana's love turns fatal — the myth as Paris Opéra spectacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orion_(Lacoste)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Orion (constellation)",

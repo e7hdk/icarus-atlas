@@ -1,17 +1,51 @@
 {
   "id": "silenus",
-  "summary": "Silenus was a rustic god or satyr companion of Dionysus, often depicted as drunken and prophetic. Apollodorus names him father of the centaur Pholus by a Melian nymph.",
+  "summary": "In Greek mythology, Silenus (Ancient Greek Σιληνός / Σειληνός) was a companion and tutor of the wine-god Dionysus. He is typically older than the satyrs of the Dionysian retinue (thiasos), and when emphasized as aged may be called a Papposilenus. Usage of \"silen\" and \"satyr\" is not always consistent; early sileni were often horse-eared forest beings, later drunken followers of Dionysus, bald and pot-bellied. Intoxicated, Silenus was said to possess special knowledge and the power of prophecy.",
   "attribution": "Adapted from Wikipedia, \"Silenus\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Σιληνός (Sīlēnós) or Σειληνός (Seilēnós). The plural sileni once named a type of horse-featured woodland spirits; later the word narrowed to the single tutor of Dionysus.",
+  "symbols": [
+    "Wine and grapes",
+    "Kantharos",
+    "Thyrsos",
+    "Wineskin",
+    "Donkey"
+  ],
+  "sacredAnimals": [
+    "Donkey",
+    "Panther"
+  ],
+  "cultCenters": [
+    "Nysa (mythic abode with Dionysus)",
+    "Phrygia (Midas episode)"
+  ],
   "sections": [
+    {
+      "heading": "Character and evolution",
+      "paragraphs": [
+        "The original Silenus resembled a folkloric man of the forest, with the ears of a horse and sometimes also the tail and legs of a horse. Later sileni were drunken followers of Dionysus, usually bald and fat with thick lips and squat noses, and having human legs. Still later the plural fell out of use and references clustered on one individual: Silenus, teacher and faithful companion of Dionysus.",
+        "A notorious consumer of wine, he was usually drunk and had to be supported by satyrs or carried by a donkey. Orphic tradition makes him the young god's tutor, placing him among phallic or half-animal tutors of the gods that also include Priapus, Hermaphroditus, Cedalion, and Chiron. Parentage traditions variously name Pan, or Hermes and Gaia. Apollodorus makes him father of the centaur Pholus by a Melian nymph."
+      ]
+    },
     {
       "heading": "Mythology",
       "paragraphs": [
-        "Pholus, host of Heracles on the Erymanthian boar quest, was son of Silenus according to Apollodorus.",
-        "Ovid shows Silenus in Dionysus' retinue and as captive of the Phrygians who brought him to Midas."
+        "When intoxicated, Silenus was said to possess prophecy. The Phrygian king Midas was eager to learn from him and either laced with wine a fountain from which Silenus drank, or received him after peasants rescued the wandering old man. Dionysus later offered Midas a reward for kindness toward Silenus; Midas chose the power of turning everything he touched into gold.",
+        "In Euripides' satyr play Cyclops, Silenus is stranded with the satyrs in Sicily and enslaved by the Cyclopes — a comic parody of Odyssey IX in which he calls the satyrs his children. Ovid shows him in Dionysus' train, unsteady on his ass among satyrs and Bacchanals, and later captive among the Phrygians who bring him to Midas.",
+        "Pausanias reports a tradition that Silenus' grave lay \"in the land of the Hebrews.\" In decorative arts a \"silene\" may be a Silenus-like face alone; Papposilenus is the stock comic emphasis on his old age in satyr play and vase-painting."
+      ]
+    },
+    {
+      "heading": "Wisdom and classical reception",
+      "paragraphs": [
+        "Greek philosophy and literature preserve an antinatalist \"wisdom of Silenus\": asked by Midas what is most desirable for humankind, the captive replies that best is never to have been born, and next best to die as soon as possible — a saying Aristotle's Eudemus transmits via Plutarch and that later writers from Schopenhauer to Nietzsche revisit. Plato's Symposium has Alcibiades compare Socrates to Silenus statues that open to reveal images of the gods within.",
+        "Roman sarcophagi repeatedly place Silenus in Dionysus' train. Renaissance and Baroque painters — Rubens, van Dyck, Ribera — treated the drunken Silenus; Carl Linnaeus used the feminine form Silene for a genus of flowering plants. In literature he appears from Rabelais and Julian's Caesars to Evelyn Waugh's Professor Silenus and Tony Harrison's Trackers of Oxyrhynchus."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Silenus" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Silenus"
+    }
   ]
 }

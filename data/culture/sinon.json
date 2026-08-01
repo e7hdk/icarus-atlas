@@ -1,6 +1,35 @@
 {
   "id": "sinon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Greek Sinon before Priam",
+      "artist": "Pieter Goddyn",
+      "year": "1782",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pieter_Goddyn_-_The_Greek_Sinon_before_Priam.jpg/960px-Pieter_Goddyn_-_The_Greek_Sinon_before_Priam.jpg",
+      "description": "Goddyn paints Virgil's smooth-tongued captive pleading before Priam — the Greek left behind to sell the wooden horse as a sacred offering. Sinon's false tears and polished story open Troy's gates more surely than any siege engine."
+    },
+    {
+      "title": "Sinon as a Captive before the Walls of Troy",
+      "artist": "Giuseppe Maria Mitelli",
+      "year": "1663",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Enea_Vagante%2C_Mitelli_-_Sinone_imprigionato.jpg/960px-Enea_Vagante%2C_Mitelli_-_Sinone_imprigionato.jpg",
+      "description": "Mitelli's engraving after the Carracci Aeneas frieze in Palazzo Fava shows Sinon bound and brought before the Trojans — the staged prisoner whose confession will persuade them to drag the horse inside. The print freezes the moment deceit puts on the mask of vulnerability."
+    },
+    {
+      "title": "Sinon Deceiving the Trojans",
+      "artist": "Giorgio Ghisi after Giovanni Battista Scultori",
+      "year": "c. 1545",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Giorgio_Ghisi_after_Giovanni_Battista_Scultori%2C_Sinon_Deceiving_the_Trojans%2C_c._1545%2C_NGA_121901.jpg/960px-Giorgio_Ghisi_after_Giovanni_Battista_Scultori%2C_Sinon_Deceiving_the_Trojans%2C_c._1545%2C_NGA_121901.jpg",
+      "description": "Ghisi's engraving after Scultori stages Aeneid Book II: Sinon stands among the Trojans and the looming horse, spinning the lie that Minerva demands the offering. Renaissance print culture made him the face of polished betrayal. National Gallery of Art, Washington."
+    },
+    {
+      "title": "The Treacherous Sinon Brought into the Trojan Camp by the Shepherds",
+      "artist": "Jean Mignon after Luca Penni",
+      "year": "1535–55",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/The_Treacherous_Sinon_Brought_into_the_Trajan%27s_Camp_by_the_Shepherds_MET_DP855162.jpg/960px-The_Treacherous_Sinon_Brought_into_the_Trajan%27s_Camp_by_the_Shepherds_MET_DP855162.jpg",
+      "description": "Mignon's etching after Luca Penni shows shepherds leading the bound Greek into the Trojan camp — the first act of Virgil's trap, before Sinon speaks. The horse waits; the city still believes it chooses its own doom. Metropolitan Museum of Art, New York."
+    }
+  ],
   "popCulture": [
     {
       "title": "Trojan Horse",

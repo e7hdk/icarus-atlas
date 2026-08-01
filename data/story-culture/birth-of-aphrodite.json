@@ -1,6 +1,28 @@
 {
   "id": "birth-of-aphrodite",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Birth of Venus",
+      "artist": "Sandro Botticelli",
+      "year": "c. 1484–1486",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+      "description": "Botticelli's Uffizi tempera: foam-born Venus arrives on a scallop shell, Zephyrs blowing her shoreward while a Hora waits with a flowered cloak — Hesiod's birth as the Renaissance's most famous image."
+    },
+    {
+      "title": "The Birth of Venus",
+      "artist": "Alexandre Cabanel",
+      "year": "1863",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg/960px-Alexandre_Cabanel_-_The_Birth_of_Venus_-_Google_Art_Project_2.jpg",
+      "description": "Cabanel's Salon sensation: Venus reclining on the wave-crest beneath putti — academic polish for the same foam-born arrival Napoleon III bought at once."
+    },
+    {
+      "title": "The Birth of Venus",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1879",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/William-Adolphe_Bouguereau_%281825-1905%29_-_The_Birth_of_Venus_%281879%29.jpg/960px-William-Adolphe_Bouguereau_%281825-1905%29_-_The_Birth_of_Venus_%281879%29.jpg",
+      "description": "Bouguereau's Orsay canvas returns Venus to the shell amid a ring of nymphs and tritons — the Anadyomene birth restaged as French academic spectacle."
+    }
+  ],
   "popCulture": [
     {
       "title": "Aphrodite",

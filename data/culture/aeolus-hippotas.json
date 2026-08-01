@@ -1,6 +1,35 @@
 {
   "id": "aeolus-hippotas",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ulysses Receiving the Winds in a Leather Bag from Aeolus",
+      "artist": "After Théodore van Thulden (Met print after Primaticcio / Niccolò dell'Abbate)",
+      "year": "17th century (after a 16th-century design)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Plate_8-_Ulysses_receiving_the_winds_in_a_leather_bag_from_Aeolus_Met_DP885417.jpg/960px-Plate_8-_Ulysses_receiving_the_winds_in_a_leather_bag_from_Aeolus_Met_DP885417.jpg",
+      "description": "A Metropolitan Museum print from the Odyssey cycle shows Hippotades Aeolus handing Odysseus the sealed bag of contrary winds — the gift that will almost bring the hero home until his crew opens it. This is the Homeric wind-keeper of the floating island, not a later Roman conflation."
+    },
+    {
+      "title": "Odysseus Receives from Aeolus the Bag of Contrary Winds",
+      "artist": "Unknown (Dutch print; works of Odysseus series)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Odysseus_ontvangt_van_Aeolus_de_zak_met_tegenwinden_De_werken_van_Odysseus_%28serietitel%29%2C_RP-P-OB-66.744.jpg/960px-Odysseus_ontvangt_van_Aeolus_de_zak_met_tegenwinden_De_werken_van_Odysseus_%28serietitel%29%2C_RP-P-OB-66.744.jpg",
+      "description": "A Dutch engraving from a series on Odysseus' labours: Aeolus, host on his island, entrusts the leather bag of winds to the departing hero. The Rijksmuseum holds the impression (RP-P-OB-66.744)."
+    },
+    {
+      "title": "Odysseus' Companions Open the Bag of Winds",
+      "artist": "Unknown (Dutch print; works of Odysseus series)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Odysseus_metgezellen_openen_de_zak_met_winden_De_werken_van_Odysseus_%28serietitel%29%2C_RP-P-OB-66.747.jpg/960px-Odysseus_metgezellen_openen_de_zak_met_winden_De_werken_van_Odysseus_%28serietitel%29%2C_RP-P-OB-66.747.jpg",
+      "description": "The sequel plate: while Odysseus sleeps, his jealous crew unbind Aeolus' gift and the released storms drive the ships back from Ithaca's sight. The print completes the Homeric episode that made Aeolus' bag proverbial."
+    },
+    {
+      "title": "Juno Asking Aeolus to Release the Winds",
+      "artist": "Louis de Boullogne",
+      "year": "c. 1700–1720",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Boullogne_Juno_asking_Aeolus_to_release_the_winds.jpg/960px-Boullogne_Juno_asking_Aeolus_to_release_the_winds.jpg",
+      "description": "Boullogne's painting follows Virgil rather than Homer: Juno bribes the keeper of the winds to wreck Aeneas' fleet. Reception often merges this Aeolus with the Odyssey's Hippotades; the canvas shows how later art kept the wind-king as a single theatrical figure."
+    }
+  ],
   "popCulture": [
     {
       "title": "Aeolus",
@@ -10,11 +39,48 @@
       "externalUrl": "https://en.wikipedia.org/wiki/Aeolus"
     },
     {
-      "title": "Odyssey",
-      "year": "—",
-      "kind": "other",
-      "description": "Aeolus' modern afterlife is Homer's bag of winds — opened too soon by jealous crew, and the voyage blown off course.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+      "title": "Ulysses",
+      "year": "1922",
+      "kind": "novel",
+      "creator": "James Joyce",
+      "description": "Joyce's Aeolus episode is the newspaper office — rhetoric and windy headlines mapped onto Homer's keeper of the bag of storms.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(novel)"
+    }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Michael J. Pollard's Aeolus gifts the bag of winds — opened too soon by jealous crew, and Ithaca blown out of reach again.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1968",
+      "medium": "tv",
+      "director": "Franco Rossi",
+      "description": "Rossi's Italian-Yugoslav miniseries keeps Hippotades' floating island — the sealed bag, the sleeping king, and the storm that undoes the voyage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1968_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Le nozze di Teti e di Peleo",
+      "year": "1639",
+      "kind": "opera",
+      "composer": "Francesco Cavalli",
+      "description": "Cavalli's first surviving Venetian opera casts Aeolus among the wedding gods — the wind-keeper as festa teatrale spectacle at San Cassiano.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Le_nozze_di_Teti_e_di_Peleo"
+    },
+    {
+      "title": "EPIC: The Musical",
+      "year": "2022–2024",
+      "kind": "stage",
+      "composer": "Jorge Rivera-Herrans",
+      "description": "Aeolus and the winions bottle the storm for Odysseus — Keep Your Friends Close turns the Odyssey's wind-bag into an internet-era earworm.",
+      "externalUrl": "https://en.wikipedia.org/wiki/EPIC:_The_Musical"
     }
   ]
 }

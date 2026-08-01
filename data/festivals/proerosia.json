@@ -1,0 +1,16 @@
+{
+  "id": "proerosia",
+  "name": "Proerosia",
+  "greekName": "Προηρόσια",
+  "deities": ["demeter", "persephone"],
+  "place": "eleusis",
+  "atticDate": { "month": "pyanepsion", "days": [6], "approximate": true },
+  "conventionalDates": ["10-06"],
+  "summary": "The preliminary-to-the-ploughing rites at Eleusis: first-fruits of grain offered to Demeter before the autumn sowing, which the Athenians said Apollo's oracle had ordered them to keep on behalf of all Greece.",
+  "testimonia": [
+    "IG I³ 78 (the first-fruits decree for Eleusis)",
+    "Lycurgus, Against Leocrates 98–99 (the Delphic command and the Proerosia)",
+    "Mikalson (1975) 67–68 (6 Pyanopsion favored over the pre-festival 5th)",
+    "Parke (1977) 73–75"
+  ]
+}

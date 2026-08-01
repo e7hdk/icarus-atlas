@@ -206,3 +206,19 @@ Pausanias 7.5.1 is the canonical “twelve cities” anchor but does **not** enu
 **Future ship path (not executed):** Pleiades **550756** (Myrina/Sebastopolis, Aeolis; ~26.986°E, 38.840°N) is the expected gazetteer id when a seven-lens passage appears. No lineage attested in the pinned corpus.
 
 **Verdict:** STILL PENDING — no `cities.json` / `places.json` row.
+
+### 10.3 Tarsus city sky (`tarsus`) — SKIP (no honest residents)
+
+Research pass: **2026-07-21**. City id `tarsus` (Ταρσός, Pleiades 648789, region `cilicia`) is already promoted. Lineage panel keeps Homeric Cilician proxies (`eetion-cilicia`, `achilles` at Thebe under Placus) with notes that their seat is **not** Tarsus. **No `residences:[{city:'tarsus'}]` added.**
+
+| Query | Hits | Tarsus resident/ruler? |
+|---|---|---|
+| `Tarsus` | 1 | Pausanias 8.28.3 — cold **Cydnus** through Tarsus only (geography) |
+| `Tarsos` | 0 | — |
+| `Cilicia` / `Cilix` | yes | Region eponym / Homeric Cilicians of Thebe; Cilix already resides at `cilicia`, not Tarsus |
+| `Celenderis` / `Sandocus` | yes | Apollodorus 3.14.3 — foundation of **Celenderis**, not Tarsus |
+| `Mallus` / `Amphilochus` | yes | Pausanias 1.34.3 — oracle at **Mallus**, not Tarsus |
+
+Out-of-lens foundation tales (e.g. Perseus / Triptolemus at Tarsus in Strabo and later) stay excluded under the seven-lens rule.
+
+**Verdict:** SKIP — lineage notes document the empty sky; no invented residents.

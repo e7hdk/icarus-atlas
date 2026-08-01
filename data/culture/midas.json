@@ -47,6 +47,16 @@
       "externalUrl": "https://en.wikipedia.org/wiki/The_Golden_Touch_(film)"
     }
   ],
+  "music": [
+    {
+      "title": "Le Jugement de Midas",
+      "year": "1778",
+      "kind": "opera",
+      "composer": "André Grétry",
+      "description": "Grétry's opéra comique restages the music contest — Midas prefers Pan and Marsyas to Apollo, and earns the donkey ears on a Paris stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Le_jugement_de_Midas"
+    }
+  ],
   "popCulture": [
     {
       "title": "Midas touch",
@@ -57,10 +67,11 @@
     },
     {
       "title": "Midas",
-      "year": "—",
+      "year": "1820",
       "kind": "other",
-      "description": "The king who wished everything gold remains the emblem of desire that backfires — donkey ears, the Pactolus, and a lesson in enough.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Midas"
+      "creator": "Mary Shelley",
+      "description": "Mary Shelley's verse drama (with lyrics by Percy) binds the golden touch to the donkey-ear contest — Romantic satire of greed and bad judgment.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Midas_(Shelley)"
     }
   ]
 }

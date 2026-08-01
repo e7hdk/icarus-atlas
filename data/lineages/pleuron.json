@@ -2,11 +2,32 @@
   "city": "pleuron",
   "reigns": [
     {
+      "ruler": "Pleuron",
+      "characterId": "pleuron",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.7",
+      "note": "Eponymous son of Aetolus by Pronoe; with his brother Calydon he gave his name to the Aetolian city that heads this house."
+    },
+    {
+      "ruler": "Agenor",
+      "characterId": "agenor-aetolian",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.7.7; Description of Greece 3.13.8",
+      "note": "Son of Pleuron by Xanthippe; by Epicaste, daughter of Calydon, he begat Porthaon and Demonice — the hinge from which the Porthaonid and Thestiad lines diverge."
+    },
+    {
+      "ruler": "Porthaon",
+      "characterId": "porthaon",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 14.115–118; Bibliotheca 1.7.7, 1.7.10",
+      "note": "Homeric Portheus, son of Agenor; his three peerless sons Agrius, Melas, and the horseman Oeneus dwelt in Pleuron and steep Calydon — the Porthaonid trunk shared with the sister city."
+    },
+    {
       "ruler": "Thoas",
       "characterId": "thoas-aetolia",
-      "sources": ["homer"],
-      "citation": "Iliad 2.638–644; 13.206–214",
-      "note": "In all Pleuron and steep Calydon lord over the Aetolians, honoured even as a god."
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.638–644, 13.206–214; Epitome 3.12",
+      "note": "Son of Andraemon and Gorge; in all Pleuron and steep Calydon lord over the Aetolians when Oeneus' house was gone, honoured of the folk even as a god."
     }
   ]
 }

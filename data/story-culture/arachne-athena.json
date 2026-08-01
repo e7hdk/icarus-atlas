@@ -1,7 +1,37 @@
 {
   "id": "arachne-athena",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Las Hilanderas (The Fable of Arachne)",
+      "artist": "Diego Velázquez",
+      "year": "c. 1657",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Velazquez-las_hilanderas.jpg/960px-Velazquez-las_hilanderas.jpg",
+      "description": "Velázquez's Prado masterpiece folds the weaving contest into a tapestry workshop — Athena's challenge and Arachne's pride as Baroque art about art itself."
+    },
+    {
+      "title": "Pallas and Arachne",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1636–1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Rubens_Arachn%C3%A9.jpg",
+      "description": "Rubens paints Athena's fury as Arachne's loom is struck — the mortal weaver's victory met by the goddess who will turn her into a spider."
+    },
+    {
+      "title": "Minerva and Arachne",
+      "artist": "René-Antoine Houasse",
+      "year": "1706",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Ren%C3%A9-Antoine_Houasse_-_Minerve_et_Arachne_%28Versailles%29.jpg/960px-Ren%C3%A9-Antoine_Houasse_-_Minerve_et_Arachne_%28Versailles%29.jpg",
+      "description": "Houasse's Versailles canvas from the Story of Minerva cycle: the goddess confronts Arachne at her loom — Ovid's contest as court allegory of skill and hubris."
+    }
+  ],
   "popCulture": [
+    {
+      "title": "Las Hilanderas",
+      "year": "c. 1657",
+      "kind": "other",
+      "creator": "Diego Velázquez",
+      "description": "Velázquez's Prado canvas is the modern West's defining image of the Arachne contest — Athena's wrath as meta-painting.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Las_Hilanderas"
+    },
     {
       "title": "Arachne",
       "year": "—",

@@ -1,6 +1,28 @@
 {
   "id": "laertes",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Penelope, Laertes and Telemachus (BnF Français 874, fol. 3v)",
+      "artist": "Unknown (French illuminator)",
+      "year": "c. 15th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/P%C3%A9n%C3%A9lope%2C_La%C3%ABrte_et_T%C3%A9l%C3%A9maque_BnF_Fran%C3%A7ais_874_fol._3v.JPEG/960px-P%C3%A9n%C3%A9lope%2C_La%C3%ABrte_et_T%C3%A9l%C3%A9maque_BnF_Fran%C3%A7ais_874_fol._3v.JPEG",
+      "description": "A fifteenth-century French miniature in the Bibliothèque nationale de France gathers Penelope, aged Laertes and young Telemachus — the Ithacan household waiting while Odysseus wanders. Laertes appears as the retired king, grief and orchard still ahead of him in the Odyssey's last books."
+    },
+    {
+      "title": "Penelope, Laertes and Telemachus (BnF Français 874, fol. 8v)",
+      "artist": "Unknown (French illuminator)",
+      "year": "c. 15th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/P%C3%A9n%C3%A9lope%2C_La%C3%ABrte_et_T%C3%A9l%C3%A9maque_BnF_Fran%C3%A7ais_874_fol._8v.jpg",
+      "description": "Another leaf from the same BnF manuscript returns to Laertes with Penelope and Telemachus, the court of Ithaca imaged as a late-medieval family group. The illuminator keeps the father of Odysseus inside the homecoming story long before the orchard recognition."
+    },
+    {
+      "title": "Fragment of a Sarcophagus with Odysseus and Laertes",
+      "artist": "Unknown Roman sculptor",
+      "year": "c. 150 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Arte_romana%2C_frammento_di_sarcofago_con_ulisse_e_laerte%2C_150_dc_ca.%2C_da_roma_%28museo_barracco%29.jpg/960px-Arte_romana%2C_frammento_di_sarcofago_con_ulisse_e_laerte%2C_150_dc_ca.%2C_da_roma_%28museo_barracco%29.jpg",
+      "description": "A Roman marble sarcophagus fragment in the Museo Barracco, Rome, shows Odysseus reunited with his aged father Laertes. The orchard recognition of Odyssey XXIV — scar, trees, and tears — becomes funerary relief, the nostos carved as a son's return to an old man among his vines."
+    }
+  ],
   "films": [
     {
       "title": "Ulysses",

@@ -14,6 +14,27 @@
       "year": "c. 1580",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg/960px-Mercurio_volante%2C_Giambologna%2C_Bargello_Florenz-01.jpg",
       "description": "A bronze statue by the Mannerist sculptor Giambologna, now in the Museo Nazionale del Bargello, Florence. The messenger god is caught in full flight, balanced on one foot upon a breath of air issuing from the mouth of a wind god, caduceus in hand and winged sandals barely touching the earth. Its weightless poise made it one of the most influential and widely reproduced sculptures of the late Renaissance."
+    },
+    {
+      "title": "Hermes Ludovisi",
+      "artist": "Roman copy after a Greek original of the 5th century BC",
+      "year": "1st century AD (copy)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hermes_Logios_Altemps_33.jpg",
+      "description": "A Roman marble of Hermes Logios — the orator Hermes — in the Palazzo Altemps, Rome. The god stands with one arm raised as if mid-address, the caduceus once completing the gesture; the type descends from a Classical Greek original and became a Renaissance favourite for the messenger as eloquent guide of souls and speech."
+    },
+    {
+      "title": "Hermes Belvedere",
+      "artist": "Roman copy after a Greek original of the 4th century BC",
+      "year": "2nd century AD (copy)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/0_Hermes-_Museo_Pio-Clementino_-_Vatican_%281%29.JPG/960px-0_Hermes-_Museo_Pio-Clementino_-_Vatican_%281%29.JPG",
+      "description": "A monumental marble Hermes in the Museo Pio-Clementino of the Vatican Museums, long admired beside the Apollo Belvedere. The god stands in quiet contrapposto, cloak falling from one shoulder — an Imperial Roman copy of a late Classical Greek type that fixed Hermes as the graceful, almost contemplative courier of Olympus."
+    },
+    {
+      "title": "Hermes Fastening his Sandal",
+      "artist": "Roman copy after Lysippos (type)",
+      "year": "Roman Imperial copy after a 4th-century BC Greek original",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Hermes-louvre3.jpg",
+      "description": "A marble statue in the Louvre of Hermes pausing to lace a winged sandal — the messenger caught in the ordinary instant before flight. The bent pose, credited to a Lysippan type, turns divine haste into a moment of private concentration; copies were prized across the Roman world as images of readiness and departure."
     }
   ],
   "films": [
@@ -40,6 +61,22 @@
       "director": "Don Chaffey",
       "description": "Harryhausen's adventure puts Hermes among the Olympians watching Jason's voyage — the messenger at the edge of the divine board.",
       "externalUrl": "https://en.wikipedia.org/wiki/Jason_and_the_Argonauts_(1963_film)"
+    },
+    {
+      "title": "Troy: Fall of a City",
+      "year": "2018",
+      "medium": "tv",
+      "director": "Owen Harris",
+      "description": "The BBC/Netflix Trojan cycle keeps Hermes in the Olympian traffic of messages and bargains — the courier god at the edge of a war the gods themselves stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Troy:_Fall_of_a_City"
+    },
+    {
+      "title": "Percy Jackson & the Olympians: The Lightning Thief",
+      "year": "2010",
+      "medium": "film",
+      "director": "Chris Columbus",
+      "description": "Hermes appears as the winged messenger among the gods Percy must face — the courier of Olympus translated into Hollywood demigod adventure.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians:_The_Lightning_Thief"
     }
   ],
   "popCulture": [
@@ -58,6 +95,48 @@
       "creator": "Supergiant Games",
       "description": "He remains the Olympian of speed in the sequel, now pacing Melinoë's hunt with the same restless wit.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    },
+    {
+      "title": "Hermès",
+      "year": "1837",
+      "kind": "brand",
+      "creator": "Thierry Hermès",
+      "description": "The Paris luxury house takes its name and caduceus from the messenger god — Hermes as trademark of craft, travel and speed for nearly two centuries.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Herm%C3%A8s"
+    },
+    {
+      "title": "Percy Jackson & the Olympians",
+      "year": "2005",
+      "kind": "novel",
+      "creator": "Rick Riordan",
+      "description": "Riordan's Hermes is the tired god of thieves and delivery — father of Luke Castellan, and the Olympian whose broken family drives half the series' betrayal.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians"
+    }
+  ],
+  "music": [
+    {
+      "title": "The Planets — Mercury, the Winged Messenger",
+      "year": "1914–1916",
+      "kind": "orchestral",
+      "composer": "Gustav Holst",
+      "description": "Holst's scherzo names the planet for the winged courier — Hermes as fleet, glittering motion in the middle of the suite.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Planets"
+    },
+    {
+      "title": "Il ritorno d'Ulisse in patria",
+      "year": "1640",
+      "kind": "opera",
+      "composer": "Claudio Monteverdi",
+      "description": "Monteverdi's late Venetian opera gives Mercury the job Homer gave him: urging Calypso to release Odysseus and clearing the hero's road home.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Il_ritorno_d%27Ulisse_in_patria"
+    },
+    {
+      "title": "EPIC: The Musical",
+      "year": "2022–2024",
+      "kind": "album",
+      "composer": "Jorge Rivera-Herrans",
+      "description": "Rivera-Herrans' Odyssey album casts Hermes as the slick divine helper — the messenger who arms Odysseus with moly and attitude on Circe's island.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Epic:_The_Musical"
     }
   ]
 }

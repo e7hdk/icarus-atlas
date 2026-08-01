@@ -1,6 +1,35 @@
 {
   "id": "hippolytus-inset",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hippolytus Saved from Death (Virbius)",
+      "artist": "Antonio Tempesta",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Plate_146-_Hippolytus_Saved_from_Death_%28Hippolitum_Dianae_impulsu_ad_vitam_revocat_AEsculapius_et_Virbius_vocatur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864237.jpg/960px-Plate_146-_Hippolytus_Saved_from_Death_%28Hippolitum_Dianae_impulsu_ad_vitam_revocat_AEsculapius_et_Virbius_vocatur%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864237.jpg",
+      "description": "Tempesta's Metamorphoses plate — Aesculapius restoring Hippolytus at Diana's bidding, the youth renamed Virbius as Ovid's Book XV inset ends."
+    },
+    {
+      "title": "Hippolytus Saved and Named Virbius",
+      "artist": "Vieira Lusitano",
+      "year": "c. 18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Vieira_Lusitano_-_Hyppolitum_Dianae_impulsu_ad_vitam_revocat_Aesculapius_et_Virbius_vocatur.jpg",
+      "description": "Vieira Lusitano's Ovid scene — Diana's impulse, Aesculapius' revival, and the new name Virbius in the sacred grove."
+    },
+    {
+      "title": "The Death of Hippolytus (La mort d'Hippolyte)",
+      "artist": "Jean-Baptiste Lemoyne the Elder",
+      "year": "1715",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Death_Hippolytus_Lemoyne_Louvre_MR2026.jpg/960px-Death_Hippolytus_Lemoyne_Louvre_MR2026.jpg",
+      "description": "Lemoyne's Louvre marble — Poseidon's sea-bull wrecks the chariot, the death Ovid's inset must reverse before Virbius rises."
+    },
+    {
+      "title": "The Death of Hippolytus",
+      "artist": "Lawrence Alma-Tadema",
+      "year": "1860",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hippolytus_Sir_Lawrence_Alma_Tadema.jpg/960px-Hippolytus_Sir_Lawrence_Alma_Tadema.jpg",
+      "description": "Alma-Tadema's shore — the bull from the waves and the wrecked hunter, Phaedra's lie completed before Diana's rescue."
+    }
+  ],
   "popCulture": [
     {
       "title": "Hippolytus (play)",

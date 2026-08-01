@@ -1,17 +1,12 @@
 {
   "id": "hermes",
-  "summary": "Hermes is an Olympian deity in ancient Greek religion and mythology considered the herald of the gods. He is also widely considered the protector of human heralds, travelers, thieves, merchants, and orators. He is able to move quickly and freely between the worlds of the mortal and the divine aided by his winged sandals. Hermes plays the role of the psychopomp or \"soul guide\"—a conductor of souls into the afterlife.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Hermes"
-    }
-  ],
+  "summary": "Hermes is an Olympian deity in ancient Greek religion and mythology, the herald of the gods and protector of heralds, travelers, thieves, merchants, and orators. Winged sandals let him move freely between mortal and divine realms; as psychopomp he guides souls to the afterlife. He begins in early cult as a chthonic and boundary god tied to roadside herms.",
+  "attribution": "Adapted from Wikipedia, \"Hermes\" · CC BY-SA 4.0",
+  "etymology": "Linked since antiquity to herma, the stone cairn or boundary marker; Mycenaean Greek already attests the name (e-ma-a2). Some scholars prefer a Pre-Greek origin.",
   "symbols": [
     "kerykeion (caduceus)",
     "winged sandals",
-    "petasos (traveler’s hat)"
+    "petasos (traveler's hat)"
   ],
   "sacredAnimals": [
     "tortoise",
@@ -23,5 +18,33 @@
     "Athens (the herms)",
     "Pheneus"
   ],
-  "etymology": "Linked since antiquity to herma, the stone cairn or boundary marker that bore his name."
+  "sections": [
+    {
+      "heading": "Origins and functions",
+      "paragraphs": [
+        "Hermes began as a god with strong chthonic associations: a psychopomp leading souls between upper and lower worlds. That role expanded to roads, boundaries, travelers, sailors, and commerce. Hermai — squared pillars with a head (and often a phallus) — marked roads, graves, and household entrances as protective boundary stones.",
+        "As divine messenger he conveys word among Olympus, the underworld, and mortals. He is also patron of flocks and shepherds, of cunning speech and invention, and of thieves — traits already vivid in the Homeric Hymn to Hermes, which tells of his infant cattle-raid and invention of the lyre."
+      ]
+    },
+    {
+      "heading": "Myths and iconography",
+      "paragraphs": [
+        "Son of Zeus and the Pleiad Maia, Hermes is born on Mount Cyllene in Arcadia. He escorts Priam to Achilles, leads Persephone from Hades at Zeus's command, and serves as guide and trickster throughout epic and drama. Archaic art often shows him bearded and traveler-clad; Classical and Hellenistic images prefer a youthful, athletic, beardless type.",
+        "Standard attributes are the caduceus (kerykeion), winged sandals, and the traveler's petasos. Romans identified him with Mercury; later antiquity also folded him into philosophical Hermes Trismegistus traditions distinct from the Olympian cult figure."
+      ]
+    },
+    {
+      "heading": "Cult",
+      "paragraphs": [
+        "Arcadia, especially Cyllene and Pheneus, claimed early and strong cult. Athens filled its streets with herms, and Hermes shared household and civic honours with other protective deities. Festival and local lore also remember him as a plague-averting shepherd god who circled city walls with a ram or calf.",
+        "Because he crossed every threshold — market, road, death, and speech — Hermes remained one of the most pervasive Olympians in daily Greek life."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hermes"
+    }
+  ]
 }

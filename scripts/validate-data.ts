@@ -23,6 +23,7 @@ import {
   spotlightWeeksSchema,
   festivalSchema,
   sacredDaysSchema,
+  constellationsFileSchema,
 } from '../src/lib/schemas';
 import { CREATURE_KINDS, NYMPH_KINDS } from '../src/types/character';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
@@ -850,8 +851,68 @@ let sacredDayCount = 0;
   }
 }
 
+// 12. Constellations (data/sky/constellations.json): every figure must name a
+//     root story that exists, hold no duplicate id or story, and draw its
+//     stick figure only between stars it actually has.
+let constellationCount = 0;
+{
+  const skyPath = join(DATA_DIR, 'sky', 'constellations.json');
+  if (existsSync(skyPath)) {
+    const raw = loadJson(skyPath);
+    if (raw !== null) {
+      const parsed = constellationsFileSchema.safeParse(raw);
+      if (!parsed.success) {
+        errors.push(
+          `sky/constellations.json: ${parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')}`,
+        );
+      } else {
+        const seenIds = new Set<string>();
+        for (const figure of parsed.data.constellations) {
+          const where = `sky/constellations.json [${figure.id}]`;
+          if (seenIds.has(figure.id)) errors.push(`${where}: duplicate id`);
+          seenIds.add(figure.id);
+          // Both sky claims are optional — most of the sky is simply the sky —
+          // but each must point at something real and carry its citation.
+          for (const character of figure.catasterism?.characters ?? []) {
+            if (!charIds.has(character)) {
+              errors.push(`${where}: catasterism names unknown character "${character}"`);
+            }
+          }
+          // A myth may well name several figures — the Labours look up at both
+          // the Lion and the Crab — so a story is not claimed exclusively.
+          for (const named of figure.namedIn ?? []) {
+            if (!storyIds.has(named.story)) errors.push(`${where}: unknown story "${named.story}"`);
+          }
+          for (const star of figure.stars) {
+            if (star.character && !charIds.has(star.character)) {
+              errors.push(`${where}: star "${star.name}" names unknown character "${star.character}"`);
+            }
+          }
+          // A Bayer letter may legitimately repeat — Argo Navis is four modern
+          // constellations stitched back together, each with its own α — but the
+          // same STAR must never be listed twice, which is what a broken
+          // designation lookup would produce.
+          const seenStars = new Set<string>();
+          for (const star of figure.stars) {
+            const at = `${star.ra.toFixed(3)},${star.dec.toFixed(3)}`;
+            if (seenStars.has(at)) errors.push(`${where}: "${star.name}" is listed twice`);
+            seenStars.add(at);
+          }
+          for (const [a, b] of figure.lines) {
+            if (a >= figure.stars.length || b >= figure.stars.length) {
+              errors.push(`${where}: stick-figure line [${a}, ${b}] points past the star list`);
+            }
+            if (a === b) errors.push(`${where}: stick-figure line [${a}, ${b}] joins a star to itself`);
+          }
+        }
+        constellationCount = parsed.data.constellations.length;
+      }
+    }
+  }
+}
+
 console.log(
-  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Disputed topics: ${info.length}`,
+  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Constellations: ${constellationCount} · Disputed topics: ${info.length}`,
 );
 for (const line of info) console.log(`  ⚖ ${line}`);
 

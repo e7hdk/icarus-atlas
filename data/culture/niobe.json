@@ -1,6 +1,42 @@
 {
   "id": "niobe",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Apollo and Diana Attacking the Children of Niobe",
+      "artist": "Jacques-Louis David",
+      "year": "1772",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Apollo_and_Diana_Attacking_the_Children_of_Niobe_by_Jacques-Louis_David.jpg/960px-Apollo_and_Diana_Attacking_the_Children_of_Niobe_by_Jacques-Louis_David.jpg",
+      "description": "David's early Prix de Rome canvas shows Apollo and Artemis raining arrows on Niobe's children while the Theban queen still stands amid the slaughter. Neoclassical clarity frames the myth of maternal pride punished; Dallas Museum of Art."
+    },
+    {
+      "title": "Apollo and Diana Kill the Children of Niobe",
+      "artist": "Jan Boeckhorst",
+      "year": "c. 1630–1660",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jan_Boeckhorst_-_Apollo_and_Diana_kill_the_children_of_Niobe.jpg/960px-Jan_Boeckhorst_-_Apollo_and_Diana_kill_the_children_of_Niobe.jpg",
+      "description": "Boeckhorst's Baroque storm of bodies and divine archers stages the massacre as swirling motion — Niobe's house emptied in a rush of flesh and cloud. Royal Museum of Fine Arts Antwerp."
+    },
+    {
+      "title": "The Destruction of the Children of Niobe",
+      "artist": "William Woollett after Richard Wilson",
+      "year": "1761",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/The_Destruction_of_the_Children_of_Niobe%2C_by_W._Woollett_after_R._Wilson_%28state_1%29%2C_British_Museum.png/960px-The_Destruction_of_the_Children_of_Niobe%2C_by_W._Woollett_after_R._Wilson_%28state_1%29%2C_British_Museum.png",
+      "description": "Woollett's celebrated engraving after Richard Wilson's 1760 landscape made Niobe a Georgian print sensation — the Theban queen's ruin set in a Claudian vista of rock and storm. British Museum, London."
+    },
+    {
+      "title": "The Florentine Niobids",
+      "artist": "Unknown (Roman)",
+      "year": "1st–2nd century AD (found 1583)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/The_so-called_Florentine_Niobids%2C_discovered_in_Rome_in_1583%2C_Galleria_degli_Uffizi%2C_Florence_%2831440543353%29.jpg/960px-The_so-called_Florentine_Niobids%2C_discovered_in_Rome_in_1583%2C_Galleria_degli_Uffizi%2C_Florence_%2831440543353%29.jpg",
+      "description": "Roman marble group of Niobe and her dying children, unearthed in Rome in 1583 and long the centrepiece of the Uffizi's Sala della Niobe. The queen still tries to shield her youngest as the arrows fall — antiquity's sculptural emblem of maternal grief."
+    },
+    {
+      "title": "The Children of Niobe Killed by Apollo and Diana",
+      "artist": "Pierre-Charles Jombert",
+      "year": "1772",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pierre-Charles_Jombert_-_Les_enfants_de_Niob%C3%A9_tu%C3%A9s_par_Apollon_et_Diane.JPG/960px-Pierre-Charles_Jombert_-_Les_enfants_de_Niob%C3%A9_tu%C3%A9s_par_Apollon_et_Diane.JPG",
+      "description": "Jombert's Prix de Rome painting of the same year as David's treats the Theban massacre as a wide classical panorama — gods above, children falling, Niobe's pride already turning to stone. École nationale supérieure des Beaux-Arts, Paris."
+    }
+  ],
   "popCulture": [
     {
       "title": "Niobium",

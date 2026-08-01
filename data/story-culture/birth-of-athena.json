@@ -1,6 +1,42 @@
 {
   "id": "birth-of-athena",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Amphora with the Birth of Athena",
+      "artist": "Unknown (Attic black-figure)",
+      "year": "c. 570–560 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Amphora_birth_Athena_Louvre_F32.jpg/960px-Amphora_birth_Athena_Louvre_F32.jpg",
+      "description": "Louvre amphora F 32: Athena springs fully armed from Zeus' head as Olympians look on — the Hesiodic birth fixed in Archaic black-figure."
+    },
+    {
+      "title": "Exaleiptron with the Birth of Athena",
+      "artist": "Unknown (Attic black-figure)",
+      "year": "c. 570–560 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Exaleiptron_birth_Athena_Louvre_CA616_resized_glare_reduced_black_bg.png/960px-Exaleiptron_birth_Athena_Louvre_CA616_resized_glare_reduced_black_bg.png",
+      "description": "Louvre exaleiptron CA 616: Hephaestus' axe and the armed goddess rising from the skull — the same cosmogonic birth on a perfume vessel."
+    },
+    {
+      "title": "Birth of Athena (puteal relief)",
+      "artist": "Unknown (Roman, after a Greek type)",
+      "year": "Roman Imperial",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Birth_of_Athena_-_puteal_%28Madrid%2C_cast_in_Pushkin_museum%29_02_by_shakko.jpg/960px-Birth_of_Athena_-_puteal_%28Madrid%2C_cast_in_Pushkin_museum%29_02_by_shakko.jpg",
+      "description": "Madrid puteal (cast in Pushkin): the birth in continuous relief — Zeus seated, Athena emerging, Eileithyia assisting the cry of war."
+    },
+    {
+      "title": "La Naissance de Minerve",
+      "artist": "Louis Boullogne (engraved by Étienne Baudet)",
+      "year": "17th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/La_Naissance_de_Minerve_-_%28peint_par%29_Louis_Boullogne_%3B_%28grav%C3%A9_par%29_Ste_Baudet_-_btv1b84187571.jpg/960px-La_Naissance_de_Minerve_-_%28peint_par%29_Louis_Boullogne_%3B_%28grav%C3%A9_par%29_Ste_Baudet_-_btv1b84187571.jpg",
+      "description": "Boullogne's French academic birth: Minerva rises armed from Jupiter's brow — the Renaissance–Baroque restaging of the Hesiodic axe-blow."
+    },
+    {
+      "title": "Birth of Minerva",
+      "artist": "Joseph Kuhn-Régnier",
+      "year": "c. 1920s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Birth_of_Minerva_-_Joseph_Kuhn-R%C3%A9gnier.jpg",
+      "description": "Kuhn-Régnier's Art Deco plate returns Athena to the split skull — a modern illustrator's take on wisdom springing complete."
+    }
+  ],
   "popCulture": [
     {
       "title": "Athena",

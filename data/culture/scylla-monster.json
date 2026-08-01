@@ -46,5 +46,33 @@
       "description": "Supergiant's sequel brings Scylla back as a siren-voiced sea boss — the many-headed strait hazard restaged for Melinoë's war.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
     }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries sends Odysseus past a CGI Scylla — Jim Henson's Creature Shop restaging the strait that takes the crew before Charybdis finishes the ship.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    }
+  ],
+  "music": [
+    {
+      "title": "Scylla et Glaucus",
+      "year": "1746",
+      "kind": "opera",
+      "composer": "Jean-Marie Leclair",
+      "description": "Leclair's only full tragédie en musique retells Ovid's Glaucus and Scylla — Circe's poison, the fountain, and the nymph petrified into the Messina rock.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Scylla_et_Glaucus"
+    },
+    {
+      "title": "EPIC: The Musical",
+      "year": "2022–2024",
+      "kind": "stage",
+      "composer": "Jorge Rivera-Herrans",
+      "description": "Rivera-Herrans' concept-album Odyssey gives Scylla her own Thunder Saga number — six torches, six heads, and the sacrifice Odysseus chooses to sail past her lair.",
+      "externalUrl": "https://en.wikipedia.org/wiki/EPIC:_The_Musical"
+    }
   ]
 }

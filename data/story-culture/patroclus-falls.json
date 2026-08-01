@@ -1,6 +1,35 @@
 {
   "id": "patroclus-falls",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Funeral of Patroclus",
+      "artist": "Jacques-Louis David",
+      "year": "1778",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JL_David_Les_fun%C3%A9railles_de_Patrocle.jpg/960px-JL_David_Les_fun%C3%A9railles_de_Patrocle.jpg",
+      "description": "David's funeral pyre — Patroclus' body at the centre of Iliadic grief, the games and sacrifice that follow Hector's kill."
+    },
+    {
+      "title": "Achilles Bandaging the Wounded Patroclus",
+      "artist": "Unknown (the Sosias Painter)",
+      "year": "c. 500 BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg/960px-Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg",
+      "description": "The Sosias Painter's cup — Achilles binding Patroclus' wound, the friendship Homeric art never stopped restaging before the fall."
+    },
+    {
+      "title": "Menelaus Bearing the Body of Patroclus (The Pasquino Group)",
+      "artist": "Unknown (Roman copy after a Hellenistic original)",
+      "year": "Roman period (after a 3rd-century BCE Greek bronze)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pasquino_Group_2013_February.jpg/960px-Pasquino_Group_2013_February.jpg",
+      "description": "The Pasquino Group — Menelaus (or Ajax) bearing Patroclus' corpse, Hellenistic pathos that made the body's recovery a sculptural type."
+    },
+    {
+      "title": "Warriors Lifting the Body of Patroclus (Etruscan relief)",
+      "artist": "Unknown (Etruscan)",
+      "year": "2nd century BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Patroclus_corpse_MAN_Firenze.jpg/960px-Patroclus_corpse_MAN_Firenze.jpg",
+      "description": "Etruscan relief of warriors lifting Patroclus — Italic reception of the Iliad's most mourned corpse."
+    }
+  ],
   "films": [
     {
       "title": "Troy",
@@ -25,6 +54,14 @@
       "kind": "other",
       "description": "Hector's slaying of Patroclus remains the poem's central grief — the death that costs Troy its best defender.",
       "externalUrl": "https://en.wikipedia.org/wiki/Iliad"
+    },
+    {
+      "title": "The Song of Achilles",
+      "year": "2011",
+      "kind": "novel",
+      "creator": "Madeline Miller",
+      "description": "Miller's novel retells the Iliad through Patroclus' love — his death in Achilles' armor as the book's devastating hinge.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Song_of_Achilles"
     }
   ]
 }

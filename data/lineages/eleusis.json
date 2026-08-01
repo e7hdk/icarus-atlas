@@ -1,0 +1,27 @@
+{
+  "city": "eleusis",
+  "reigns": [
+    {
+      "ruler": "Eleusinus",
+      "sources": ["hyginus", "apollodorus"],
+      "citation": "Fabulae 147, 275; Bibliotheca 1.5.2",
+      "note": "Hyginus' eponymous king of Eleusis (son of Mercury in his founders' catalogue), husband of Cothonea and father of Triptolemus in the nurse-of-Demeter tale. Apollodorus records Panyasis' rival reading that Triptolemus was son of Eleusis — the same eponym treated as a person — while the Athenian host of the goddess in Apollodorus is Celeus.",
+      "topic": "eleusis-host-king"
+    },
+    {
+      "ruler": "Celeus",
+      "characterId": "celeus-eleusis",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 1.5.1, 3.14.7; Paus. 1.38.3, 1.39.1, 2.14.3",
+      "note": "Apollodorus' king who 'at that time reigned over the Eleusinians' when Demeter came in mortal guise; husband of Metaneira. Pausanias quotes the Homeric Hymn naming him 'leader of peoples' among those to whom the goddess taught the holy rites, and follows Pamphos in the daughters who found her at the Flowery Well.",
+      "topic": "eleusis-host-king"
+    },
+    {
+      "ruler": "Triptolemus",
+      "characterId": "triptolemus",
+      "sources": ["hyginus"],
+      "citation": "Fabulae 147",
+      "note": "In Hyginus alone the civic succession is explicit: when Triptolemus returned from sowing grain, Celeus would have killed him for the benefaction until Ceres ordered the kingdom given to the sower, who named the land Eleusis from his father's name and established rites of Ceres. Apollodorus and Pausanias keep him the dragon-chariot prince and first sower without calling him king."
+    }
+  ]
+}

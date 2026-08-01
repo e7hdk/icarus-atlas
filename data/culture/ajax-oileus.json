@@ -1,13 +1,75 @@
 {
   "id": "ajax-oileus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ajax and Cassandra",
+      "artist": "Solomon Joseph Solomon",
+      "year": "1886",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Solomon_Ajax_and_Cassandra.jpg/960px-Solomon_Ajax_and_Cassandra.jpg",
+      "description": "Solomon's Victorian canvas (Art Gallery of Ballarat) shows the Locrian Ajax dragging Cassandra from Athena's sanctuary — the sacrilege that dooms Ajax the Lesser on the voyage home. The painting is the modern image most closely tied to Oileus' son rather than Telamonian Ajax."
+    },
+    {
+      "title": "Ajax and Cassandra (Attic red-figure cup, Louvre G 458)",
+      "artist": "Unknown Attic vase-painter",
+      "year": "c. 5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Attic_red-figure_cup_with_Cassandra_and_Ajax_Louvre_G_458.jpg/960px-Attic_red-figure_cup_with_Cassandra_and_Ajax_Louvre_G_458.jpg",
+      "description": "An Attic red-figure kylix in the Louvre: Locrian Ajax seizes Cassandra as she clings to Athena's statue — the Ilioupersis crime that the poets and vase-painters pinned on the son of Oileus."
+    },
+    {
+      "title": "Ajax the Lesser, Son of Oileus",
+      "artist": "Francesco Sabatelli",
+      "year": "1829",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ajax_the_Lesser%2C_Son_of_Oileus%2C_by_Francesco_Sabatelli_1829.png/960px-Ajax_the_Lesser%2C_Son_of_Oileus%2C_by_Francesco_Sabatelli_1829.png",
+      "description": "Sabatelli's print labels the warrior explicitly as Ajax the Lesser, son of Oileus — a rare modern portrait that refuses the Telamonian namesake and keeps the Locrian hero distinct."
+    },
+    {
+      "title": "Ajax Slain by Poseidon",
+      "artist": "Bonaventura Genelli",
+      "year": "19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Ajax_slain_by_Poseidon_-_Bonaventura_Genelli.png/960px-Ajax_slain_by_Poseidon_-_Bonaventura_Genelli.png",
+      "description": "Genelli's drawing closes the Locrian Ajax story: Poseidon shatters the rock where the shipwrecked hero boasted, drowning the man Athena had already marked for sacrilege at Troy."
+    },
+    {
+      "title": "Locrian Ajax",
+      "artist": "Unknown (French school drawing; Metropolitan Museum)",
+      "year": "c. 18th–19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Locrian_Ajax_%28Ajax_Locrien%29_MET_DP834453.jpg/960px-Locrian_Ajax_%28Ajax_Locrien%29_MET_DP834453.jpg",
+      "description": "A Metropolitan Museum drawing titled Ajax Locrien — reception's shorthand for Oileus' son, the lesser Ajax of the sack and the storm."
+    }
+  ],
   "popCulture": [
+    {
+      "title": "Cassandra",
+      "year": "1983",
+      "kind": "novel",
+      "creator": "Christa Wolf",
+      "description": "Wolf's Troy monologue keeps Locrian Ajax's temple rape among the war's founding crimes — the sacrilege that dooms the lesser Ajax and the Greek fleet.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cassandra_(novel)"
+    },
+    {
+      "title": "The Trojan Women",
+      "year": "415 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' captive chorus still names Ajax's violation of Athena's sanctuary — the Locrian crime that turns the goddess against the returning Greeks.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Trojan_Women"
+    },
     {
       "title": "Ajax the Lesser",
       "year": "—",
       "kind": "other",
-      "description": "The Locrian Ajax remains the cautionary sack of Troy — Athena's storm and the violated sanctuary as the price of sacrilege.",
+      "description": "Reception keeps Oileus' son distinct from Telamonian Ajax — the sack's sacrilege and Poseidon's storm as the Locrian cautionary tale.",
       "externalUrl": "https://en.wikipedia.org/wiki/Ajax_the_Lesser"
+    }
+  ],
+  "music": [
+    {
+      "title": "Ajax",
+      "year": "1716",
+      "kind": "opera",
+      "composer": "Toussaint Bertin de la Doué",
+      "description": "A Paris tragédie en musique whose Locrian Ajax loves Cassandra — Oileus' son staged as Baroque opera hero rather than Telamonian namesake.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ajax_(opera)"
     }
   ]
 }

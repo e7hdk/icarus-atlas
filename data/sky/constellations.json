@@ -1,0 +1,7158 @@
+{
+  "note": "Ptolemy's 48 constellations — the Greek sky — baked by scripts/build-sky.ts. Star positions are RA/Dec in degrees (equinox 2000), so the sky is hung on a real celestial sphere around the galaxy rather than on an invented plane. `lines` are the classical figure as index pairs into `stars`. A constellation carries `story` only where the ancients record the catasterism, with its testimonia; the rest are simply the sky.",
+  "attribution": {
+    "lines": {
+      "work": "constellation-lines — IAU sky culture",
+      "author": "Doina Bucur",
+      "url": "https://github.com/doinab/constellation-lines",
+      "licence": "CC BY-SA",
+      "note": "This catalogue is a derivative and is therefore CC BY-SA."
+    },
+    "positions": {
+      "work": "Yale Bright Star Catalogue, 5th revised edition",
+      "author": "Hoffleit & Warren, Astronomical Data Center",
+      "url": "http://tdc-www.harvard.edu/catalogs/bsc5.html",
+      "licence": "public domain (JSON packaging MIT: brettonw/YaleBrightStarCatalog)"
+    }
+  },
+  "constellations": [
+    {
+      "id": "andromeda",
+      "name": "Andromeda",
+      "figure": "The Chained Maiden",
+      "iau": [
+        "And"
+      ],
+      "stars": [
+        {
+          "name": "Alpheratz",
+          "bayer": "α",
+          "ra": 2.0971,
+          "dec": 29.0906,
+          "mag": 2.06
+        },
+        {
+          "name": "δ And",
+          "bayer": "δ",
+          "ra": 9.8321,
+          "dec": 30.8608,
+          "mag": 3.27
+        },
+        {
+          "name": "Mirach",
+          "bayer": "β",
+          "ra": 17.4329,
+          "dec": 35.6206,
+          "mag": 2.06
+        },
+        {
+          "name": "Almach",
+          "bayer": "γ¹",
+          "ra": 30.975,
+          "dec": 42.3297,
+          "mag": 2.26
+        },
+        {
+          "name": "ο And",
+          "bayer": "ο",
+          "ra": 345.4804,
+          "dec": 42.3261,
+          "mag": 3.62
+        },
+        {
+          "name": "ι And",
+          "bayer": "ι",
+          "ra": 354.5342,
+          "dec": 43.2681,
+          "mag": 4.29
+        },
+        {
+          "name": "κ And",
+          "bayer": "κ",
+          "ra": 355.1021,
+          "dec": 44.3339,
+          "mag": 4.14
+        },
+        {
+          "name": "λ And",
+          "bayer": "λ",
+          "ra": 354.3913,
+          "dec": 46.4581,
+          "mag": 3.82
+        },
+        {
+          "name": "σ And",
+          "bayer": "σ",
+          "ra": 4.5821,
+          "dec": 36.7853,
+          "mag": 4.52
+        },
+        {
+          "name": "π And",
+          "bayer": "π",
+          "ra": 9.2204,
+          "dec": 33.7194,
+          "mag": 4.36
+        },
+        {
+          "name": "μ And",
+          "bayer": "μ",
+          "ra": 14.1883,
+          "dec": 38.4994,
+          "mag": 3.87
+        },
+        {
+          "name": "ν And",
+          "bayer": "ν",
+          "ra": 12.4533,
+          "dec": 41.0789,
+          "mag": 4.53
+        },
+        {
+          "name": "φ And",
+          "bayer": "φ",
+          "ra": 17.3758,
+          "dec": 47.2419,
+          "mag": 4.25
+        },
+        {
+          "name": "ε And",
+          "bayer": "ε",
+          "ra": 9.6387,
+          "dec": 29.3117,
+          "mag": 4.37
+        },
+        {
+          "name": "ζ And",
+          "bayer": "ζ",
+          "ra": 11.8346,
+          "dec": 24.2672,
+          "mag": 4.06
+        },
+        {
+          "name": "η And",
+          "bayer": "η",
+          "ra": 14.3017,
+          "dec": 23.4175,
+          "mag": 4.42
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "aquarius",
+      "name": "Aquarius",
+      "figure": "The Water-Pourer",
+      "iau": [
+        "Aqr"
+      ],
+      "greekName": "Ὑδροχόος",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.29 — many say he is Ganymede, made cupbearer of the gods, shown pouring from an urn; Hegesianax says Deucalion, in whose reign the Flood came; Eubulus says Cecrops"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "ganymede",
+          "testimonia": [
+            "Hyginus, Astronomica 2.29 — many say the Water Bearer is Ganymede"
+          ]
+        },
+        {
+          "story": "great-flood",
+          "testimonia": [
+            "Hyginus, Astronomica 2.29 — Hegesianax says he is Deucalion, in whose reign the Flood came"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "A figure pouring water endlessly from a jar, and no agreement about who he is. Many say Ganymede, snatched up for his beauty to be cupbearer of the gods. Hegesianax says Deucalion, in whose reign so much water came down from the sky that the Flood followed. Eubulus says Cecrops, older than wine, who poured water at the altars.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.29"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Albali",
+          "bayer": "ε",
+          "ra": 311.9192,
+          "dec": -9.4958,
+          "mag": 3.77
+        },
+        {
+          "name": "Sadalsuud",
+          "bayer": "β",
+          "ra": 322.8896,
+          "dec": -5.5711,
+          "mag": 2.91
+        },
+        {
+          "name": "Sadalmelik",
+          "bayer": "α",
+          "ra": 331.4458,
+          "dec": -0.3197,
+          "mag": 2.96
+        },
+        {
+          "name": "Sadachbia",
+          "bayer": "γ",
+          "ra": 335.4142,
+          "dec": -1.3872,
+          "mag": 3.84
+        },
+        {
+          "name": "ζ¹ Aqr",
+          "bayer": "ζ¹",
+          "ra": 337.2071,
+          "dec": -0.0203,
+          "mag": 4.59
+        },
+        {
+          "name": "η Aqr",
+          "bayer": "η",
+          "ra": 338.8392,
+          "dec": -0.1175,
+          "mag": 4.02
+        },
+        {
+          "name": "π Aqr",
+          "bayer": "π",
+          "ra": 336.3192,
+          "dec": 1.3775,
+          "mag": 4.66
+        },
+        {
+          "name": "ι Aqr",
+          "bayer": "ι",
+          "ra": 331.6092,
+          "dec": -13.8697,
+          "mag": 4.27
+        },
+        {
+          "name": "Ancha",
+          "bayer": "θ",
+          "ra": 334.2083,
+          "dec": -7.7833,
+          "mag": 4.16
+        },
+        {
+          "name": "λ Aqr",
+          "bayer": "λ",
+          "ra": 343.1538,
+          "dec": -7.5797,
+          "mag": 3.74
+        },
+        {
+          "name": "φ Aqr",
+          "bayer": "φ",
+          "ra": 348.5808,
+          "dec": -6.0489,
+          "mag": 4.22
+        },
+        {
+          "name": "ψ² Aqr",
+          "bayer": "ψ²",
+          "ra": 349.4758,
+          "dec": -9.1825,
+          "mag": 4.39
+        },
+        {
+          "name": "Skat",
+          "bayer": "δ",
+          "ra": 343.6625,
+          "dec": -15.8208,
+          "mag": 3.27
+        },
+        {
+          "name": "τ¹ Aqr",
+          "bayer": "τ¹",
+          "ra": 341.9283,
+          "dec": -14.0564,
+          "mag": 5.66
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          9
+        ]
+      ]
+    },
+    {
+      "id": "aquila",
+      "name": "Aquila",
+      "figure": "The Eagle",
+      "iau": [
+        "Aql"
+      ],
+      "stars": [
+        {
+          "name": "Alshain",
+          "bayer": "β",
+          "ra": 298.8283,
+          "dec": 6.4067,
+          "mag": 3.71
+        },
+        {
+          "name": "Altair",
+          "bayer": "α",
+          "ra": 297.6958,
+          "dec": 8.8683,
+          "mag": 0.77
+        },
+        {
+          "name": "Tarazed",
+          "bayer": "γ",
+          "ra": 296.565,
+          "dec": 10.6133,
+          "mag": 2.72
+        },
+        {
+          "name": "δ Aql",
+          "bayer": "δ",
+          "ra": 291.3746,
+          "dec": 3.1147,
+          "mag": 3.36
+        },
+        {
+          "name": "Al Thalimain",
+          "bayer": "λ",
+          "ra": 286.5621,
+          "dec": -4.8825,
+          "mag": 3.44
+        },
+        {
+          "name": "Deneb el Okab",
+          "bayer": "ζ",
+          "ra": 286.3525,
+          "dec": 13.8633,
+          "mag": 2.99
+        },
+        {
+          "name": "η Aql",
+          "bayer": "η",
+          "ra": 298.1183,
+          "dec": 1.0056,
+          "mag": 3.9
+        },
+        {
+          "name": "θ Aql",
+          "bayer": "θ",
+          "ra": 302.8263,
+          "dec": -0.8214,
+          "mag": 3.23
+        },
+        {
+          "name": "ε Aql",
+          "bayer": "ε",
+          "ra": 284.9058,
+          "dec": 15.0683,
+          "mag": 4.02
+        },
+        {
+          "name": "Al Thalimain",
+          "bayer": "ι",
+          "ra": 294.1804,
+          "dec": -1.2864,
+          "mag": 4.36
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "ara",
+      "name": "Ara",
+      "figure": "The Altar",
+      "iau": [
+        "Ara"
+      ],
+      "stars": [
+        {
+          "name": "γ Ara",
+          "bayer": "γ",
+          "ra": 261.3483,
+          "dec": -56.3775,
+          "mag": 3.34
+        },
+        {
+          "name": "δ Ara",
+          "bayer": "δ",
+          "ra": 262.7746,
+          "dec": -60.6839,
+          "mag": 3.62
+        },
+        {
+          "name": "η Ara",
+          "bayer": "η",
+          "ra": 252.4463,
+          "dec": -59.0414,
+          "mag": 3.76
+        },
+        {
+          "name": "ζ Ara",
+          "bayer": "ζ",
+          "ra": 254.655,
+          "dec": -55.9903,
+          "mag": 3.13
+        },
+        {
+          "name": "ε¹ Ara",
+          "bayer": "ε¹",
+          "ra": 254.8963,
+          "dec": -53.1606,
+          "mag": 4.06
+        },
+        {
+          "name": "α Ara",
+          "bayer": "α",
+          "ra": 262.9604,
+          "dec": -49.8761,
+          "mag": 2.95
+        },
+        {
+          "name": "θ Ara",
+          "bayer": "θ",
+          "ra": 271.6579,
+          "dec": -50.0917,
+          "mag": 3.66
+        },
+        {
+          "name": "β Ara",
+          "bayer": "β",
+          "ra": 261.325,
+          "dec": -55.53,
+          "mag": 2.85
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "argo-navis",
+      "name": "Argo Navis",
+      "figure": "The Ship Argo",
+      "iau": [
+        "Car",
+        "Pup",
+        "Pyx",
+        "Vel"
+      ],
+      "greekName": "Ἀργώ",
+      "catasterism": {
+        "testimonia": [
+          "Eratosthenes, Catasterismi 35 — the ship Argo placed in the sky, shown from the mast to the stern"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "argonautica",
+          "testimonia": [
+            "Apollonius Rhodius, Argonautica 1.111–114 — Athena builds the Argo"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "The first ship ever built for the open sea was put into the sky when her voyage was done — and she is shown from the mast to the stern only, the prow left out of the stars, so that a ship already through the Clashing Rocks should not seem to be sailing into anything again.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.37"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Canopus",
+          "bayer": "α",
+          "ra": 95.9879,
+          "dec": -52.6958,
+          "mag": -0.72
+        },
+        {
+          "name": "Miaplacidus",
+          "bayer": "β",
+          "ra": 138.3,
+          "dec": -69.7172,
+          "mag": 1.68
+        },
+        {
+          "name": "ω Car",
+          "bayer": "ω",
+          "ra": 153.4342,
+          "dec": -70.0381,
+          "mag": 3.32
+        },
+        {
+          "name": "θ Car",
+          "bayer": "θ",
+          "ra": 160.7392,
+          "dec": -64.3944,
+          "mag": 2.76
+        },
+        {
+          "name": "Aspidiske",
+          "bayer": "ι",
+          "ra": 139.2725,
+          "dec": -59.2753,
+          "mag": 2.25
+        },
+        {
+          "name": "δ Vel",
+          "bayer": "δ",
+          "ra": 131.1758,
+          "dec": -54.7083,
+          "mag": 1.96
+        },
+        {
+          "name": "Avior",
+          "bayer": "ε",
+          "ra": 125.6283,
+          "dec": -59.5097,
+          "mag": 1.86
+        },
+        {
+          "name": "χ Car",
+          "bayer": "χ",
+          "ra": 119.1946,
+          "dec": -52.9822,
+          "mag": 3.47
+        },
+        {
+          "name": "γ² Vel",
+          "bayer": "γ²",
+          "ra": 122.3833,
+          "dec": -47.3367,
+          "mag": 1.78
+        },
+        {
+          "name": "Naos",
+          "bayer": "ζ",
+          "ra": 120.8963,
+          "dec": -40.0033,
+          "mag": 2.25
+        },
+        {
+          "name": "Tureis",
+          "bayer": "ρ",
+          "ra": 121.8858,
+          "dec": -24.3042,
+          "mag": 2.81
+        },
+        {
+          "name": "Azmidiske",
+          "bayer": "ξ",
+          "ra": 117.3237,
+          "dec": -24.8597,
+          "mag": 3.34
+        },
+        {
+          "name": "π Pup",
+          "bayer": "π",
+          "ra": 109.2858,
+          "dec": -37.0975,
+          "mag": 2.7
+        },
+        {
+          "name": "ν Pup",
+          "bayer": "ν",
+          "ra": 99.4404,
+          "dec": -43.1961,
+          "mag": 3.17
+        },
+        {
+          "name": "ο Pup",
+          "bayer": "ο",
+          "ra": 117.0217,
+          "dec": -25.9372,
+          "mag": 4.5
+        },
+        {
+          "name": "β Pyx",
+          "bayer": "β",
+          "ra": 130.0258,
+          "dec": -35.3083,
+          "mag": 3.97
+        },
+        {
+          "name": "α Pyx",
+          "bayer": "α",
+          "ra": 130.8979,
+          "dec": -33.1864,
+          "mag": 3.68
+        },
+        {
+          "name": "γ Pyx",
+          "bayer": "γ",
+          "ra": 132.6329,
+          "dec": -27.71,
+          "mag": 4.01
+        },
+        {
+          "name": "Suhail",
+          "bayer": "λ",
+          "ra": 136.9992,
+          "dec": -43.4325,
+          "mag": 2.21
+        },
+        {
+          "name": "ψ Vel",
+          "bayer": "ψ",
+          "ra": 142.675,
+          "dec": -40.4667,
+          "mag": 3.6
+        },
+        {
+          "name": "μ Vel",
+          "bayer": "μ",
+          "ra": 161.6925,
+          "dec": -49.42,
+          "mag": 2.69
+        },
+        {
+          "name": "φ Vel",
+          "bayer": "φ",
+          "ra": 149.2158,
+          "dec": -54.5678,
+          "mag": 3.54
+        },
+        {
+          "name": "κ Vel",
+          "bayer": "κ",
+          "ra": 140.5283,
+          "dec": -55.0108,
+          "mag": 2.5
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          18,
+          19
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          22,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "aries",
+      "name": "Aries",
+      "figure": "The Ram",
+      "iau": [
+        "Ari"
+      ],
+      "greekName": "Κριός",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.20 — the ram that carried Phrixus and Helle over the Hellespont; Hesiod and Pherecydes say its fleece was of gold",
+          "Apollodorus 1.9.1 — the ram of the golden fleece"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "golden-fleece",
+          "testimonia": [
+            "Hyginus, Astronomica 2.20 — the ram of Phrixus and Helle, whose fleece the Argonauts sought"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "The ram with the golden fleece carried Phrixus and Helle away from their stepmother; Helle fell into the strait that still bears her name, and the ram brought the boy safe to Colchis. Its fleece hung in the grove there until the Argonauts came for it, and the ram itself went up among the stars.",
+          "sources": [
+            "hyginus",
+            "apollodorus"
+          ],
+          "citation": "Astronomica 2.20; Bibliotheca 1.9.1"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Mesarthim",
+          "bayer": "γ¹",
+          "ra": 28.3825,
+          "dec": 19.2958,
+          "mag": 4.83
+        },
+        {
+          "name": "Sheratan",
+          "bayer": "β",
+          "ra": 28.66,
+          "dec": 20.8081,
+          "mag": 2.64
+        },
+        {
+          "name": "Hamal",
+          "bayer": "α",
+          "ra": 31.7933,
+          "dec": 23.4625,
+          "mag": 2
+        },
+        {
+          "name": "41 Ari",
+          "bayer": "",
+          "ra": 42.4958,
+          "dec": 27.2606,
+          "mag": 3.63
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "auriga",
+      "name": "Auriga",
+      "figure": "The Charioteer",
+      "iau": [
+        "Aur"
+      ],
+      "stars": [
+        {
+          "name": "Elnath",
+          "bayer": "β",
+          "ra": 81.5729,
+          "dec": 28.6075,
+          "mag": 1.65
+        },
+        {
+          "name": "Kabdhilinan",
+          "bayer": "ι",
+          "ra": 74.2483,
+          "dec": 33.1661,
+          "mag": 2.69
+        },
+        {
+          "name": "Hoedus II",
+          "bayer": "η",
+          "ra": 76.6287,
+          "dec": 41.2344,
+          "mag": 3.17
+        },
+        {
+          "name": "Capella",
+          "bayer": "α",
+          "ra": 79.1725,
+          "dec": 45.9981,
+          "mag": 0.08
+        },
+        {
+          "name": "Menkalinan",
+          "bayer": "β",
+          "ra": 89.8821,
+          "dec": 44.9475,
+          "mag": 1.9
+        },
+        {
+          "name": "Mahasim",
+          "bayer": "θ",
+          "ra": 89.9304,
+          "dec": 37.2125,
+          "mag": 2.62
+        },
+        {
+          "name": "Haedus",
+          "bayer": "ζ",
+          "ra": 75.6196,
+          "dec": 41.0758,
+          "mag": 3.75
+        },
+        {
+          "name": "Haldus",
+          "bayer": "ε",
+          "ra": 75.4921,
+          "dec": 43.8233,
+          "mag": 2.99
+        },
+        {
+          "name": "δ Aur",
+          "bayer": "δ",
+          "ra": 89.8817,
+          "dec": 54.2847,
+          "mag": 3.72
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "bootes",
+      "name": "Bootes",
+      "figure": "The Herdsman",
+      "iau": [
+        "Boo"
+      ],
+      "stars": [
+        {
+          "name": "Arcturus",
+          "bayer": "α",
+          "ra": 213.9154,
+          "dec": 19.1825,
+          "mag": -0.04
+        },
+        {
+          "name": "Izar",
+          "bayer": "ε",
+          "ra": 221.2467,
+          "dec": 27.075,
+          "mag": 5.12
+        },
+        {
+          "name": "δ Boo",
+          "bayer": "δ",
+          "ra": 228.8758,
+          "dec": 33.3147,
+          "mag": 3.47
+        },
+        {
+          "name": "Nekkar",
+          "bayer": "β",
+          "ra": 225.4867,
+          "dec": 40.3906,
+          "mag": 3.5
+        },
+        {
+          "name": "Seginus",
+          "bayer": "γ",
+          "ra": 218.0196,
+          "dec": 38.3083,
+          "mag": 3.03
+        },
+        {
+          "name": "ρ Boo",
+          "bayer": "ρ",
+          "ra": 217.9575,
+          "dec": 30.3714,
+          "mag": 3.58
+        },
+        {
+          "name": "Muphrid",
+          "bayer": "η",
+          "ra": 208.6713,
+          "dec": 18.3978,
+          "mag": 2.68
+        },
+        {
+          "name": "τ Boo",
+          "bayer": "τ",
+          "ra": 206.8154,
+          "dec": 17.4567,
+          "mag": 4.5
+        },
+        {
+          "name": "ζ Boo",
+          "bayer": "ζ",
+          "ra": 220.2871,
+          "dec": 13.7283,
+          "mag": 4.83
+        },
+        {
+          "name": "λ Boo",
+          "bayer": "λ",
+          "ra": 214.0958,
+          "dec": 46.0883,
+          "mag": 4.18
+        },
+        {
+          "name": "Asellus Primus",
+          "bayer": "θ",
+          "ra": 216.2992,
+          "dec": 51.8508,
+          "mag": 4.05
+        },
+        {
+          "name": "κ² Boo",
+          "bayer": "κ²",
+          "ra": 213.3708,
+          "dec": 51.7903,
+          "mag": 4.54
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          9
+        ]
+      ]
+    },
+    {
+      "id": "cancer",
+      "name": "Cancer",
+      "figure": "The Crab",
+      "iau": [
+        "Cnc"
+      ],
+      "greekName": "Καρκίνος",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.23 — put among the stars by the favour of Juno, because it snapped at the foot of Hercules as he stood against the Lernaean Hydra"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "heracles-cycle",
+          "testimonia": [
+            "Hyginus, Astronomica 2.23 — the crab at the Lernaean Hydra"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "While Hercules stood in the swamp against the Lernaean Hydra, a crab came out of the water and snapped at his foot. He crushed it — and Juno, who wished him no good, set the little creature among the stars for its one moment of service.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.23"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Acubens",
+          "bayer": "α",
+          "ra": 134.6217,
+          "dec": 11.8578,
+          "mag": 4.25
+        },
+        {
+          "name": "Asellus Australis",
+          "bayer": "δ",
+          "ra": 131.1712,
+          "dec": 18.1542,
+          "mag": 3.94
+        },
+        {
+          "name": "Altarf",
+          "bayer": "β",
+          "ra": 124.1288,
+          "dec": 9.1856,
+          "mag": 3.52
+        },
+        {
+          "name": "Asellus Borealis",
+          "bayer": "γ",
+          "ra": 130.8212,
+          "dec": 21.4686,
+          "mag": 4.66
+        },
+        {
+          "name": "ι Cnc",
+          "bayer": "ι",
+          "ra": 131.6667,
+          "dec": 28.7653,
+          "mag": 6.57
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "canis-major",
+      "name": "Canis Major",
+      "figure": "The Great Dog",
+      "iau": [
+        "CMa"
+      ],
+      "stars": [
+        {
+          "name": "Mirzam",
+          "bayer": "β",
+          "ra": 95.675,
+          "dec": -17.9558,
+          "mag": 1.98
+        },
+        {
+          "name": "Sirius",
+          "bayer": "α",
+          "ra": 101.2871,
+          "dec": -16.7161,
+          "mag": -1.46
+        },
+        {
+          "name": "Wezen",
+          "bayer": "δ",
+          "ra": 107.0979,
+          "dec": -26.3933,
+          "mag": 1.84
+        },
+        {
+          "name": "Adhara",
+          "bayer": "ε",
+          "ra": 104.6563,
+          "dec": -28.9722,
+          "mag": 1.5
+        },
+        {
+          "name": "Aludra",
+          "bayer": "η",
+          "ra": 111.0238,
+          "dec": -29.3031,
+          "mag": 2.45
+        },
+        {
+          "name": "ν² CMa",
+          "bayer": "ν²",
+          "ra": 99.1708,
+          "dec": -19.2558,
+          "mag": 3.95
+        },
+        {
+          "name": "ο¹ CMa",
+          "bayer": "ο¹",
+          "ra": 103.5329,
+          "dec": -24.1839,
+          "mag": 3.87
+        },
+        {
+          "name": "ι CMa",
+          "bayer": "ι",
+          "ra": 104.0342,
+          "dec": -17.0542,
+          "mag": 4.37
+        },
+        {
+          "name": "Muliphein",
+          "bayer": "γ",
+          "ra": 105.9396,
+          "dec": -15.6333,
+          "mag": 4.12
+        },
+        {
+          "name": "θ CMa",
+          "bayer": "θ",
+          "ra": 103.5475,
+          "dec": -12.0386,
+          "mag": 4.07
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "canis-minor",
+      "name": "Canis Minor",
+      "figure": "The Lesser Dog",
+      "iau": [
+        "CMi"
+      ],
+      "stars": [
+        {
+          "name": "Procyon",
+          "bayer": "α",
+          "ra": 114.8254,
+          "dec": 5.225,
+          "mag": 0.38
+        },
+        {
+          "name": "Gomeisa",
+          "bayer": "β",
+          "ra": 111.7875,
+          "dec": 8.2894,
+          "mag": 2.9
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "capricornus",
+      "name": "Capricornus",
+      "figure": "The Sea-Goat",
+      "iau": [
+        "Cap"
+      ],
+      "greekName": "Αἰγόκερως",
+      "catasterism": {
+        "characters": [
+          "pan"
+        ],
+        "testimonia": [
+          "Hyginus, Astronomica 2.28 — the sign resembles Aegipan, nursed with Jupiter, who first cast among the Titans the fear that is called panic; his lower body is a fish because he hurled shellfish at the enemy"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "titanomachy",
+          "testimonia": [
+            "Hyginus, Astronomica 2.28 — Aegipan casting panic among the Titans"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "Aegipan was nursed alongside Jupiter, and when the Titans attacked he was the one who threw among them the terror that is still called panic. He is a goat above and a fish below, because he flung shellfish at the enemy out of the sea.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.28"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Algedi",
+          "bayer": "α²",
+          "ra": 304.5137,
+          "dec": -12.5447,
+          "mag": 3.57
+        },
+        {
+          "name": "Dabih",
+          "bayer": "β",
+          "ra": 305.2529,
+          "dec": -14.7814,
+          "mag": 3.08
+        },
+        {
+          "name": "ψ Cap",
+          "bayer": "ψ",
+          "ra": 311.5237,
+          "dec": -25.2708,
+          "mag": 4.14
+        },
+        {
+          "name": "ω Cap",
+          "bayer": "ω",
+          "ra": 312.9554,
+          "dec": -26.9192,
+          "mag": 4.11
+        },
+        {
+          "name": "ζ Cap",
+          "bayer": "ζ",
+          "ra": 321.6667,
+          "dec": -22.4114,
+          "mag": 3.74
+        },
+        {
+          "name": "Kastra",
+          "bayer": "ε",
+          "ra": 324.27,
+          "dec": -19.4661,
+          "mag": 4.68
+        },
+        {
+          "name": "Deneb Algedi",
+          "bayer": "δ",
+          "ra": 326.76,
+          "dec": -16.1272,
+          "mag": 2.87
+        },
+        {
+          "name": "Nashira",
+          "bayer": "γ",
+          "ra": 325.0229,
+          "dec": -16.6622,
+          "mag": 3.68
+        },
+        {
+          "name": "θ Cap",
+          "bayer": "θ",
+          "ra": 316.4867,
+          "dec": -17.2328,
+          "mag": 4.07
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "cassiopeia",
+      "name": "Cassiopeia",
+      "figure": "The Queen",
+      "iau": [
+        "Cas"
+      ],
+      "stars": [
+        {
+          "name": "Caph",
+          "bayer": "β",
+          "ra": 2.2946,
+          "dec": 59.1497,
+          "mag": 2.27
+        },
+        {
+          "name": "Schedar",
+          "bayer": "α",
+          "ra": 10.1271,
+          "dec": 56.5372,
+          "mag": 2.23
+        },
+        {
+          "name": "Navi",
+          "bayer": "γ",
+          "ra": 14.1771,
+          "dec": 60.7167,
+          "mag": 2.47
+        },
+        {
+          "name": "Ruchbah",
+          "bayer": "δ",
+          "ra": 21.4542,
+          "dec": 60.2353,
+          "mag": 2.68
+        },
+        {
+          "name": "Segin",
+          "bayer": "ε",
+          "ra": 28.5987,
+          "dec": 63.67,
+          "mag": 3.38
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "centaurus",
+      "name": "Centaurus",
+      "figure": "The Centaur",
+      "iau": [
+        "Cen"
+      ],
+      "stars": [
+        {
+          "name": "γ Cen",
+          "bayer": "γ",
+          "ra": 190.3792,
+          "dec": -48.9597,
+          "mag": 2.17
+        },
+        {
+          "name": "ε Cen",
+          "bayer": "ε",
+          "ra": 204.9717,
+          "dec": -53.4664,
+          "mag": 2.3
+        },
+        {
+          "name": "Hadar",
+          "bayer": "β",
+          "ra": 210.9558,
+          "dec": -60.3731,
+          "mag": 0.61
+        },
+        {
+          "name": "Rigil Kentaurus",
+          "bayer": "α¹",
+          "ra": 219.8996,
+          "dec": -60.8353,
+          "mag": -0.01
+        },
+        {
+          "name": "ζ Cen",
+          "bayer": "ζ",
+          "ra": 208.885,
+          "dec": -47.2883,
+          "mag": 2.55
+        },
+        {
+          "name": "υ¹ Cen",
+          "bayer": "υ¹",
+          "ra": 209.67,
+          "dec": -44.8036,
+          "mag": 3.87
+        },
+        {
+          "name": "φ Cen",
+          "bayer": "φ",
+          "ra": 209.5679,
+          "dec": -42.1008,
+          "mag": 3.83
+        },
+        {
+          "name": "η Cen",
+          "bayer": "η",
+          "ra": 218.8767,
+          "dec": -42.1578,
+          "mag": 2.31
+        },
+        {
+          "name": "χ Cen",
+          "bayer": "χ",
+          "ra": 211.5117,
+          "dec": -41.1797,
+          "mag": 4.36
+        },
+        {
+          "name": "ψ Cen",
+          "bayer": "ψ",
+          "ra": 215.1392,
+          "dec": -37.8853,
+          "mag": 4.05
+        },
+        {
+          "name": "Menkent",
+          "bayer": "θ",
+          "ra": 211.6708,
+          "dec": -36.37,
+          "mag": 2.06
+        },
+        {
+          "name": "ν Cen",
+          "bayer": "ν",
+          "ra": 207.3762,
+          "dec": -41.6878,
+          "mag": 3.41
+        },
+        {
+          "name": "π Cen",
+          "bayer": "π",
+          "ra": 170.2517,
+          "dec": -54.4911,
+          "mag": 3.89
+        },
+        {
+          "name": "δ Cen",
+          "bayer": "δ",
+          "ra": 182.0896,
+          "dec": -50.7225,
+          "mag": 2.6
+        },
+        {
+          "name": "σ Cen",
+          "bayer": "σ",
+          "ra": 187.01,
+          "dec": -50.2306,
+          "mag": 3.91
+        },
+        {
+          "name": "ρ Cen",
+          "bayer": "ρ",
+          "ra": 182.9129,
+          "dec": -52.3686,
+          "mag": 3.96
+        },
+        {
+          "name": "ο¹ Cen",
+          "bayer": "ο¹",
+          "ra": 172.9421,
+          "dec": -59.4422,
+          "mag": 5.13
+        },
+        {
+          "name": "ι Cen",
+          "bayer": "ι",
+          "ra": 200.1492,
+          "dec": -36.7122,
+          "mag": 2.75
+        },
+        {
+          "name": "κ Cen",
+          "bayer": "κ",
+          "ra": 224.7904,
+          "dec": -42.1042,
+          "mag": 3.13
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          7,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "cepheus",
+      "name": "Cepheus",
+      "figure": "The King",
+      "iau": [
+        "Cep"
+      ],
+      "stars": [
+        {
+          "name": "η Cep",
+          "bayer": "η",
+          "ra": 311.3225,
+          "dec": 61.8389,
+          "mag": 3.43
+        },
+        {
+          "name": "Alderamin",
+          "bayer": "α",
+          "ra": 319.645,
+          "dec": 62.5856,
+          "mag": 2.44
+        },
+        {
+          "name": "Alfirk",
+          "bayer": "β",
+          "ra": 322.165,
+          "dec": 70.5608,
+          "mag": 3.23
+        },
+        {
+          "name": "ι Cep",
+          "bayer": "ι",
+          "ra": 342.42,
+          "dec": 66.2006,
+          "mag": 3.52
+        },
+        {
+          "name": "Errai",
+          "bayer": "γ",
+          "ra": 354.8367,
+          "dec": 77.6325,
+          "mag": 3.21
+        },
+        {
+          "name": "δ Cep",
+          "bayer": "δ",
+          "ra": 337.2929,
+          "dec": 58.4153,
+          "mag": 3.75
+        },
+        {
+          "name": "ζ Cep",
+          "bayer": "ζ",
+          "ra": 332.7138,
+          "dec": 58.2011,
+          "mag": 3.35
+        },
+        {
+          "name": "ε Cep",
+          "bayer": "ε",
+          "ra": 333.7583,
+          "dec": 57.0436,
+          "mag": 4.19
+        },
+        {
+          "name": "Garnet Star",
+          "bayer": "μ",
+          "ra": 325.8767,
+          "dec": 58.78,
+          "mag": 4.08
+        },
+        {
+          "name": "θ Cep",
+          "bayer": "θ",
+          "ra": 307.3954,
+          "dec": 62.9942,
+          "mag": 4.22
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "cetus",
+      "name": "Cetus",
+      "figure": "The Sea-Monster",
+      "iau": [
+        "Cet"
+      ],
+      "stars": [
+        {
+          "name": "Kaffaljidhma",
+          "bayer": "γ",
+          "ra": 40.825,
+          "dec": 3.2358,
+          "mag": 3.47
+        },
+        {
+          "name": "Menkar",
+          "bayer": "α",
+          "ra": 45.57,
+          "dec": 4.0897,
+          "mag": 2.53
+        },
+        {
+          "name": "λ Cet",
+          "bayer": "λ",
+          "ra": 44.9288,
+          "dec": 8.9075,
+          "mag": 4.7
+        },
+        {
+          "name": "μ Cet",
+          "bayer": "μ",
+          "ra": 41.2354,
+          "dec": 10.1142,
+          "mag": 4.27
+        },
+        {
+          "name": "ξ² Cet",
+          "bayer": "ξ²",
+          "ra": 37.0396,
+          "dec": 8.46,
+          "mag": 4.28
+        },
+        {
+          "name": "δ Cet",
+          "bayer": "δ",
+          "ra": 39.8708,
+          "dec": 0.3286,
+          "mag": 4.07
+        },
+        {
+          "name": "Mira",
+          "bayer": "ο",
+          "ra": 34.8362,
+          "dec": -2.9775,
+          "mag": 3.04
+        },
+        {
+          "name": "Baten Kaitos",
+          "bayer": "ζ",
+          "ra": 27.865,
+          "dec": -10.335,
+          "mag": 3.73
+        },
+        {
+          "name": "τ Cet",
+          "bayer": "τ",
+          "ra": 26.0171,
+          "dec": -15.9375,
+          "mag": 3.5
+        },
+        {
+          "name": "Diphda",
+          "bayer": "β",
+          "ra": 10.8975,
+          "dec": -17.9867,
+          "mag": 2.04
+        },
+        {
+          "name": "Deneb Kaitos Schemali",
+          "bayer": "ι",
+          "ra": 4.8571,
+          "dec": -8.8239,
+          "mag": 3.56
+        },
+        {
+          "name": "Dheneb",
+          "bayer": "η",
+          "ra": 17.1475,
+          "dec": -10.1822,
+          "mag": 3.45
+        },
+        {
+          "name": "θ Cet",
+          "bayer": "θ",
+          "ra": 21.0058,
+          "dec": -8.1833,
+          "mag": 3.6
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "corona-australis",
+      "name": "Corona Australis",
+      "figure": "The Southern Crown",
+      "iau": [
+        "CrA"
+      ],
+      "stars": [
+        {
+          "name": "γ CrA",
+          "bayer": "γ",
+          "ra": 286.6046,
+          "dec": -37.0633,
+          "mag": 4.93
+        },
+        {
+          "name": "Alfecca Meridiana",
+          "bayer": "α",
+          "ra": 287.3679,
+          "dec": -37.9044,
+          "mag": 4.11
+        },
+        {
+          "name": "β CrA",
+          "bayer": "β",
+          "ra": 287.5071,
+          "dec": -39.3408,
+          "mag": 4.11
+        },
+        {
+          "name": "δ CrA",
+          "bayer": "δ",
+          "ra": 287.0871,
+          "dec": -40.4967,
+          "mag": 4.59
+        },
+        {
+          "name": "θ CrA",
+          "bayer": "θ",
+          "ra": 278.3758,
+          "dec": -42.3125,
+          "mag": 4.64
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "corona-borealis",
+      "name": "Corona Borealis",
+      "figure": "Ariadne's Crown",
+      "iau": [
+        "CrB"
+      ],
+      "stars": [
+        {
+          "name": "θ CrB",
+          "bayer": "θ",
+          "ra": 233.2325,
+          "dec": 31.3592,
+          "mag": 4.14
+        },
+        {
+          "name": "Nusakan",
+          "bayer": "β",
+          "ra": 231.9571,
+          "dec": 29.1058,
+          "mag": 3.68
+        },
+        {
+          "name": "Alphecca",
+          "bayer": "α",
+          "ra": 233.6721,
+          "dec": 26.7147,
+          "mag": 2.23
+        },
+        {
+          "name": "γ CrB",
+          "bayer": "γ",
+          "ra": 235.6858,
+          "dec": 26.2956,
+          "mag": 3.84
+        },
+        {
+          "name": "δ CrB",
+          "bayer": "δ",
+          "ra": 237.3988,
+          "dec": 26.0683,
+          "mag": 4.63
+        },
+        {
+          "name": "ε CrB",
+          "bayer": "ε",
+          "ra": 239.3971,
+          "dec": 26.8778,
+          "mag": 4.15
+        },
+        {
+          "name": "ι CrB",
+          "bayer": "ι",
+          "ra": 240.3608,
+          "dec": 29.8511,
+          "mag": 4.99
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "corvus",
+      "name": "Corvus",
+      "figure": "The Raven",
+      "iau": [
+        "Crv"
+      ],
+      "stars": [
+        {
+          "name": "Algorab",
+          "bayer": "δ",
+          "ra": 187.4663,
+          "dec": -16.5156,
+          "mag": 2.95
+        },
+        {
+          "name": "Gienah",
+          "bayer": "γ",
+          "ra": 183.9517,
+          "dec": -17.5419,
+          "mag": 2.59
+        },
+        {
+          "name": "Minkar",
+          "bayer": "ε",
+          "ra": 182.5313,
+          "dec": -22.6197,
+          "mag": 3
+        },
+        {
+          "name": "Kraz",
+          "bayer": "β",
+          "ra": 188.5967,
+          "dec": -23.3967,
+          "mag": 2.65
+        },
+        {
+          "name": "Alchiba",
+          "bayer": "α",
+          "ra": 182.1033,
+          "dec": -24.7289,
+          "mag": 4.02
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "crater",
+      "name": "Crater",
+      "figure": "The Cup",
+      "iau": [
+        "Crt"
+      ],
+      "stars": [
+        {
+          "name": "Alkes",
+          "bayer": "α",
+          "ra": 164.9437,
+          "dec": -18.2989,
+          "mag": 4.08
+        },
+        {
+          "name": "β Crt",
+          "bayer": "β",
+          "ra": 167.9146,
+          "dec": -22.8258,
+          "mag": 4.48
+        },
+        {
+          "name": "γ Crt",
+          "bayer": "γ",
+          "ra": 171.2204,
+          "dec": -17.6839,
+          "mag": 4.08
+        },
+        {
+          "name": "ζ Crt",
+          "bayer": "ζ",
+          "ra": 176.1908,
+          "dec": -18.3508,
+          "mag": 4.73
+        },
+        {
+          "name": "η Crt",
+          "bayer": "η",
+          "ra": 179.0037,
+          "dec": -17.1508,
+          "mag": 5.18
+        },
+        {
+          "name": "δ Crt",
+          "bayer": "δ",
+          "ra": 169.8354,
+          "dec": -14.7786,
+          "mag": 3.56
+        },
+        {
+          "name": "ε Crt",
+          "bayer": "ε",
+          "ra": 171.1525,
+          "dec": -10.8594,
+          "mag": 4.83
+        },
+        {
+          "name": "θ Crt",
+          "bayer": "θ",
+          "ra": 174.1704,
+          "dec": -9.8022,
+          "mag": 4.7
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "cygnus",
+      "name": "Cygnus",
+      "figure": "The Swan",
+      "iau": [
+        "Cyg"
+      ],
+      "stars": [
+        {
+          "name": "Deneb",
+          "bayer": "α",
+          "ra": 310.3579,
+          "dec": 45.2803,
+          "mag": 1.25
+        },
+        {
+          "name": "Sadr",
+          "bayer": "γ",
+          "ra": 305.5571,
+          "dec": 40.2567,
+          "mag": 2.2
+        },
+        {
+          "name": "ε Cyg",
+          "bayer": "ε",
+          "ra": 311.5529,
+          "dec": 33.9703,
+          "mag": 2.46
+        },
+        {
+          "name": "Albireo",
+          "bayer": "β¹",
+          "ra": 292.6804,
+          "dec": 27.9597,
+          "mag": 3.08
+        },
+        {
+          "name": "Al Fawaris",
+          "bayer": "δ",
+          "ra": 296.2437,
+          "dec": 45.1308,
+          "mag": 2.87
+        },
+        {
+          "name": "ι¹ Cyg",
+          "bayer": "ι¹",
+          "ra": 291.8579,
+          "dec": 52.3206,
+          "mag": 5.75
+        },
+        {
+          "name": "κ Cyg",
+          "bayer": "κ",
+          "ra": 289.2758,
+          "dec": 53.3686,
+          "mag": 3.77
+        },
+        {
+          "name": "ν Cyg",
+          "bayer": "ν",
+          "ra": 314.2933,
+          "dec": 41.1672,
+          "mag": 3.94
+        },
+        {
+          "name": "ζ Cyg",
+          "bayer": "ζ",
+          "ra": 318.2342,
+          "dec": 30.2269,
+          "mag": 3.2
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "delphinus",
+      "name": "Delphinus",
+      "figure": "The Dolphin",
+      "iau": [
+        "Del"
+      ],
+      "stars": [
+        {
+          "name": "Deneb Dulfim",
+          "bayer": "ε",
+          "ra": 308.3033,
+          "dec": 11.3033,
+          "mag": 4.03
+        },
+        {
+          "name": "Rotanev",
+          "bayer": "β",
+          "ra": 309.3875,
+          "dec": 14.5953,
+          "mag": 3.63
+        },
+        {
+          "name": "Sualocin",
+          "bayer": "α",
+          "ra": 309.9096,
+          "dec": 15.9119,
+          "mag": 3.77
+        },
+        {
+          "name": "γ² Del",
+          "bayer": "γ²",
+          "ra": 311.6646,
+          "dec": 16.1242,
+          "mag": 4.27
+        },
+        {
+          "name": "δ Del",
+          "bayer": "δ",
+          "ra": 310.8646,
+          "dec": 15.0744,
+          "mag": 4.43
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "draco",
+      "name": "Draco",
+      "figure": "The Dragon",
+      "iau": [
+        "Dra"
+      ],
+      "stars": [
+        {
+          "name": "Gianfar",
+          "bayer": "λ",
+          "ra": 172.8508,
+          "dec": 69.3311,
+          "mag": 3.84
+        },
+        {
+          "name": "κ Dra",
+          "bayer": "κ",
+          "ra": 188.3708,
+          "dec": 69.7883,
+          "mag": 3.87
+        },
+        {
+          "name": "Thuban",
+          "bayer": "α",
+          "ra": 211.0971,
+          "dec": 64.3758,
+          "mag": 3.65
+        },
+        {
+          "name": "Edasich",
+          "bayer": "ι",
+          "ra": 231.2325,
+          "dec": 58.9661,
+          "mag": 3.29
+        },
+        {
+          "name": "θ Dra",
+          "bayer": "θ",
+          "ra": 240.4721,
+          "dec": 58.5653,
+          "mag": 4.01
+        },
+        {
+          "name": "η Dra",
+          "bayer": "η",
+          "ra": 245.9979,
+          "dec": 61.5142,
+          "mag": 2.74
+        },
+        {
+          "name": "Aldhibain",
+          "bayer": "ζ",
+          "ra": 257.1967,
+          "dec": 65.7147,
+          "mag": 3.17
+        },
+        {
+          "name": "φ Dra",
+          "bayer": "φ",
+          "ra": 275.1896,
+          "dec": 71.3378,
+          "mag": 4.22
+        },
+        {
+          "name": "χ Dra",
+          "bayer": "χ",
+          "ra": 275.2642,
+          "dec": 72.7328,
+          "mag": 3.57
+        },
+        {
+          "name": "Altais",
+          "bayer": "δ",
+          "ra": 288.1388,
+          "dec": 67.6617,
+          "mag": 3.07
+        },
+        {
+          "name": "Tyl",
+          "bayer": "ε",
+          "ra": 297.0433,
+          "dec": 70.2678,
+          "mag": 3.83
+        },
+        {
+          "name": "Grumium",
+          "bayer": "ξ",
+          "ra": 268.3821,
+          "dec": 56.8728,
+          "mag": 3.75
+        },
+        {
+          "name": "Kuma",
+          "bayer": "ν²",
+          "ra": 263.0667,
+          "dec": 55.1731,
+          "mag": 4.87
+        },
+        {
+          "name": "Rastaban",
+          "bayer": "β",
+          "ra": 262.6083,
+          "dec": 52.3014,
+          "mag": 2.79
+        },
+        {
+          "name": "Eltanin",
+          "bayer": "γ",
+          "ra": 269.1517,
+          "dec": 51.4889,
+          "mag": 2.23
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          11
+        ]
+      ]
+    },
+    {
+      "id": "equuleus",
+      "name": "Equuleus",
+      "figure": "The Foal",
+      "iau": [
+        "Equ"
+      ],
+      "stars": [
+        {
+          "name": "Kitalpha",
+          "bayer": "α",
+          "ra": 318.9558,
+          "dec": 5.2478,
+          "mag": 3.92
+        },
+        {
+          "name": "δ Equ",
+          "bayer": "δ",
+          "ra": 318.6204,
+          "dec": 10.0069,
+          "mag": 4.49
+        },
+        {
+          "name": "γ Equ",
+          "bayer": "γ",
+          "ra": 317.5854,
+          "dec": 10.1317,
+          "mag": 4.69
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "eridanus",
+      "name": "Eridanus",
+      "figure": "The River",
+      "iau": [
+        "Eri"
+      ],
+      "stars": [
+        {
+          "name": "Cursa",
+          "bayer": "β",
+          "ra": 76.9625,
+          "dec": -5.0864,
+          "mag": 2.79
+        },
+        {
+          "name": "μ Eri",
+          "bayer": "μ",
+          "ra": 71.3754,
+          "dec": -3.2547,
+          "mag": 4.02
+        },
+        {
+          "name": "ν Eri",
+          "bayer": "ν",
+          "ra": 69.0796,
+          "dec": -3.3525,
+          "mag": 3.93
+        },
+        {
+          "name": "Beid",
+          "bayer": "ο¹",
+          "ra": 62.9663,
+          "dec": -6.8375,
+          "mag": 4.04
+        },
+        {
+          "name": "Zaurak",
+          "bayer": "γ",
+          "ra": 59.5075,
+          "dec": -13.5086,
+          "mag": 2.95
+        },
+        {
+          "name": "π Eri",
+          "bayer": "π",
+          "ra": 56.5354,
+          "dec": -12.1017,
+          "mag": 4.42
+        },
+        {
+          "name": "Rana",
+          "bayer": "δ",
+          "ra": 55.8121,
+          "dec": -9.7633,
+          "mag": 3.54
+        },
+        {
+          "name": "Ran",
+          "bayer": "ε",
+          "ra": 53.2325,
+          "dec": -9.4583,
+          "mag": 3.73
+        },
+        {
+          "name": "Azha",
+          "bayer": "η",
+          "ra": 44.1071,
+          "dec": -8.8981,
+          "mag": 3.89
+        },
+        {
+          "name": "π Cet",
+          "bayer": "π",
+          "ra": 41.0308,
+          "dec": -13.8586,
+          "mag": 4.25
+        },
+        {
+          "name": "τ¹ Eri",
+          "bayer": "τ¹",
+          "ra": 41.2758,
+          "dec": -18.5725,
+          "mag": 4.47
+        },
+        {
+          "name": "τ³ Eri",
+          "bayer": "τ³",
+          "ra": 45.5979,
+          "dec": -23.6244,
+          "mag": 4.09
+        },
+        {
+          "name": "τ⁴ Eri",
+          "bayer": "τ⁴",
+          "ra": 49.8792,
+          "dec": -21.7578,
+          "mag": 3.69
+        },
+        {
+          "name": "τ⁵ Eri",
+          "bayer": "τ⁵",
+          "ra": 53.4471,
+          "dec": -21.6328,
+          "mag": 4.27
+        },
+        {
+          "name": "τ⁶ Eri",
+          "bayer": "τ⁶",
+          "ra": 56.7121,
+          "dec": -23.2497,
+          "mag": 4.23
+        },
+        {
+          "name": "τ⁸ Eri",
+          "bayer": "τ⁸",
+          "ra": 58.4275,
+          "dec": -24.6125,
+          "mag": 4.65
+        },
+        {
+          "name": "τ⁹ Eri",
+          "bayer": "τ⁹",
+          "ra": 59.9813,
+          "dec": -24.0164,
+          "mag": 4.66
+        },
+        {
+          "name": "υ¹ Eri",
+          "bayer": "υ¹",
+          "ra": 68.3775,
+          "dec": -29.7667,
+          "mag": 4.51
+        },
+        {
+          "name": "Theemin",
+          "bayer": "υ²",
+          "ra": 68.8875,
+          "dec": -30.5622,
+          "mag": 3.82
+        },
+        {
+          "name": "υ⁴ Eri",
+          "bayer": "υ⁴",
+          "ra": 64.4737,
+          "dec": -33.7983,
+          "mag": 3.56
+        },
+        {
+          "name": "Acamar",
+          "bayer": "θ¹",
+          "ra": 44.5654,
+          "dec": -40.3047,
+          "mag": 3.24
+        },
+        {
+          "name": "ι Eri",
+          "bayer": "ι",
+          "ra": 40.1667,
+          "dec": -39.8556,
+          "mag": 4.11
+        },
+        {
+          "name": "κ Eri",
+          "bayer": "κ",
+          "ra": 36.7463,
+          "dec": -47.7039,
+          "mag": 4.25
+        },
+        {
+          "name": "χ Eri",
+          "bayer": "χ",
+          "ra": 28.9896,
+          "dec": -51.6089,
+          "mag": 3.7
+        },
+        {
+          "name": "Achernar",
+          "bayer": "α",
+          "ra": 24.4288,
+          "dec": -57.2367,
+          "mag": 0.46
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ]
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "figure": "The Twins",
+      "iau": [
+        "Gem"
+      ],
+      "greekName": "Δίδυμοι",
+      "catasterism": {
+        "characters": [
+          "castor",
+          "polydeuces"
+        ],
+        "testimonia": [
+          "Hyginus, Astronomica 2.22 — many astronomers have called these stars Castor and Pollux, of all brothers the most affectionate"
+        ]
+      },
+      "origin": [
+        {
+          "text": "Of all brothers these two were the most affectionate, never striving against one another for the leadership, never acting without the other. For that the astronomers set Castor and Pollux side by side, each with his own star, and neither the brighter for long.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.22"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Alzir",
+          "bayer": "ξ",
+          "ra": 101.3225,
+          "dec": 12.8956,
+          "mag": 3.36
+        },
+        {
+          "name": "λ Gem",
+          "bayer": "λ",
+          "ra": 109.5233,
+          "dec": 16.5403,
+          "mag": 3.58
+        },
+        {
+          "name": "Wasat",
+          "bayer": "δ",
+          "ra": 110.0308,
+          "dec": 21.9822,
+          "mag": 3.53
+        },
+        {
+          "name": "Mekbuda",
+          "bayer": "ζ",
+          "ra": 106.0271,
+          "dec": 20.5703,
+          "mag": 3.79
+        },
+        {
+          "name": "Alhena",
+          "bayer": "γ",
+          "ra": 99.4279,
+          "dec": 16.3992,
+          "mag": 1.93
+        },
+        {
+          "name": "υ Gem",
+          "bayer": "υ",
+          "ra": 113.9804,
+          "dec": 26.8958,
+          "mag": 4.06
+        },
+        {
+          "name": "κ Gem",
+          "bayer": "κ",
+          "ra": 116.1117,
+          "dec": 24.3981,
+          "mag": 3.57
+        },
+        {
+          "character": "polydeuces",
+          "name": "Pollux",
+          "bayer": "β",
+          "ra": 116.3287,
+          "dec": 28.0261,
+          "mag": 1.14
+        },
+        {
+          "name": "ι Gem",
+          "bayer": "ι",
+          "ra": 111.4317,
+          "dec": 27.7981,
+          "mag": 3.79
+        },
+        {
+          "name": "τ Gem",
+          "bayer": "τ",
+          "ra": 107.785,
+          "dec": 30.2453,
+          "mag": 4.41
+        },
+        {
+          "character": "castor",
+          "name": "Castor",
+          "bayer": "α",
+          "ra": 113.65,
+          "dec": 31.8886,
+          "mag": 2.88
+        },
+        {
+          "name": "θ Gem",
+          "bayer": "θ",
+          "ra": 103.1971,
+          "dec": 33.9611,
+          "mag": 3.6
+        },
+        {
+          "name": "Mebsuta",
+          "bayer": "ε",
+          "ra": 100.9829,
+          "dec": 25.1311,
+          "mag": 2.98
+        },
+        {
+          "name": "ν Gem",
+          "bayer": "ν",
+          "ra": 97.2408,
+          "dec": 20.2122,
+          "mag": 4.15
+        },
+        {
+          "name": "Tejat Posterior",
+          "bayer": "μ",
+          "ra": 95.74,
+          "dec": 22.5136,
+          "mag": 2.88
+        },
+        {
+          "name": "Propus",
+          "bayer": "η",
+          "ra": 93.7192,
+          "dec": 22.5067,
+          "mag": 3.28
+        },
+        {
+          "name": "1 Gem",
+          "bayer": "",
+          "ra": 91.03,
+          "dec": 23.2633,
+          "mag": 4.16
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ]
+      ]
+    },
+    {
+      "id": "hercules",
+      "name": "Hercules",
+      "figure": "The Kneeler",
+      "iau": [
+        "Her"
+      ],
+      "greekName": "Ἐνγόνασιν",
+      "catasterism": {
+        "characters": [
+          "heracles"
+        ],
+        "testimonia": [
+          "Eratosthenes, Catasterismi 4 — the Kneeler, whom some tellers name Heracles, over the dragon"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "heracles-cycle",
+          "testimonia": [
+            "Eratosthenes, Catasterismi 4"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "The oldest name for this figure is simply the Kneeler — a man on one knee, fighting something the sky does not name. Later tellers gave him the club and the lion skin and called him Heracles, over the dragon he killed at the world's western edge.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.6"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Sarin",
+          "bayer": "δ",
+          "ra": 258.7579,
+          "dec": 24.8392,
+          "mag": 3.14
+        },
+        {
+          "name": "Rasalgethi",
+          "bayer": "α¹",
+          "ra": 258.6621,
+          "dec": 14.3903,
+          "mag": 3.48
+        },
+        {
+          "name": "Kornephoros",
+          "bayer": "β",
+          "ra": 247.555,
+          "dec": 21.4897,
+          "mag": 2.77
+        },
+        {
+          "name": "γ Her",
+          "bayer": "γ",
+          "ra": 245.48,
+          "dec": 19.1531,
+          "mag": 3.75
+        },
+        {
+          "name": "ζ Her",
+          "bayer": "ζ",
+          "ra": 250.3217,
+          "dec": 31.6031,
+          "mag": 2.81
+        },
+        {
+          "name": "ε Her",
+          "bayer": "ε",
+          "ra": 255.0725,
+          "dec": 30.9264,
+          "mag": 3.92
+        },
+        {
+          "name": "η Her",
+          "bayer": "η",
+          "ra": 250.7242,
+          "dec": 38.9222,
+          "mag": 3.53
+        },
+        {
+          "name": "σ Her",
+          "bayer": "σ",
+          "ra": 248.5258,
+          "dec": 42.4369,
+          "mag": 4.2
+        },
+        {
+          "name": "τ Her",
+          "bayer": "τ",
+          "ra": 244.935,
+          "dec": 46.3133,
+          "mag": 3.89
+        },
+        {
+          "name": "π Her",
+          "bayer": "π",
+          "ra": 258.7617,
+          "dec": 36.8092,
+          "mag": 3.16
+        },
+        {
+          "name": "ρ Her",
+          "bayer": "ρ",
+          "ra": 260.9196,
+          "dec": 37.1467,
+          "mag": 5.47
+        },
+        {
+          "name": "θ Her",
+          "bayer": "θ",
+          "ra": 269.0633,
+          "dec": 37.2506,
+          "mag": 3.86
+        },
+        {
+          "name": "ι Her",
+          "bayer": "ι",
+          "ra": 264.8662,
+          "dec": 46.0064,
+          "mag": 3.8
+        },
+        {
+          "name": "Maasym",
+          "bayer": "λ",
+          "ra": 262.6846,
+          "dec": 26.1106,
+          "mag": 4.41
+        },
+        {
+          "name": "μ Her",
+          "bayer": "μ",
+          "ra": 266.6146,
+          "dec": 27.7206,
+          "mag": 3.42
+        },
+        {
+          "name": "ξ Her",
+          "bayer": "ξ",
+          "ra": 269.4412,
+          "dec": 29.2478,
+          "mag": 3.7
+        },
+        {
+          "name": "ο Her",
+          "bayer": "ο",
+          "ra": 271.8858,
+          "dec": 28.7625,
+          "mag": 3.83
+        },
+        {
+          "name": "χ Her",
+          "bayer": "χ",
+          "ra": 238.1688,
+          "dec": 42.4517,
+          "mag": 4.62
+        },
+        {
+          "name": "φ Her",
+          "bayer": "φ",
+          "ra": 242.1925,
+          "dec": 44.935,
+          "mag": 4.26
+        },
+        {
+          "name": "Kajam",
+          "bayer": "ω",
+          "ra": 246.3542,
+          "dec": 14.0333,
+          "mag": 4.57
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          8
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    {
+      "id": "hydra",
+      "name": "Hydra",
+      "figure": "The Water-Serpent",
+      "iau": [
+        "Hya"
+      ],
+      "stars": [
+        {
+          "name": "ρ Hya",
+          "bayer": "ρ",
+          "ra": 132.1083,
+          "dec": 5.8378,
+          "mag": 4.36
+        },
+        {
+          "name": "η Hya",
+          "bayer": "η",
+          "ra": 130.8063,
+          "dec": 3.3986,
+          "mag": 4.3
+        },
+        {
+          "name": "Minchir",
+          "bayer": "σ",
+          "ra": 129.6892,
+          "dec": 3.3414,
+          "mag": 4.44
+        },
+        {
+          "name": "δ Hya",
+          "bayer": "δ",
+          "ra": 129.4142,
+          "dec": 5.7036,
+          "mag": 4.16
+        },
+        {
+          "name": "ε Hya",
+          "bayer": "ε",
+          "ra": 131.6942,
+          "dec": 6.4189,
+          "mag": 3.38
+        },
+        {
+          "name": "Hydrobius",
+          "bayer": "ζ",
+          "ra": 133.8483,
+          "dec": 5.9456,
+          "mag": 3.11
+        },
+        {
+          "name": "θ Hya",
+          "bayer": "θ",
+          "ra": 138.5912,
+          "dec": 2.3142,
+          "mag": 3.88
+        },
+        {
+          "name": "ι Hya",
+          "bayer": "ι",
+          "ra": 144.9642,
+          "dec": -1.1428,
+          "mag": 3.91
+        },
+        {
+          "name": "Alphard",
+          "bayer": "α",
+          "ra": 141.8967,
+          "dec": -8.6586,
+          "mag": 1.98
+        },
+        {
+          "name": "υ¹ Hya",
+          "bayer": "υ¹",
+          "ra": 147.8696,
+          "dec": -14.8467,
+          "mag": 4.12
+        },
+        {
+          "name": "υ² Hya",
+          "bayer": "υ²",
+          "ra": 151.2813,
+          "dec": -13.0647,
+          "mag": 4.6
+        },
+        {
+          "name": "λ Hya",
+          "bayer": "λ",
+          "ra": 152.6471,
+          "dec": -12.3542,
+          "mag": 3.61
+        },
+        {
+          "name": "μ Hya",
+          "bayer": "μ",
+          "ra": 156.5225,
+          "dec": -16.8364,
+          "mag": 3.81
+        },
+        {
+          "name": "ν Hya",
+          "bayer": "ν",
+          "ra": 162.4063,
+          "dec": -16.1936,
+          "mag": 3.11
+        },
+        {
+          "name": "Alkes",
+          "bayer": "α",
+          "ra": 164.9437,
+          "dec": -18.2989,
+          "mag": 4.08
+        },
+        {
+          "name": "β Crt",
+          "bayer": "β",
+          "ra": 167.9146,
+          "dec": -22.8258,
+          "mag": 4.48
+        },
+        {
+          "name": "ξ Hya",
+          "bayer": "ξ",
+          "ra": 173.2504,
+          "dec": -31.8578,
+          "mag": 3.54
+        },
+        {
+          "name": "β Hya",
+          "bayer": "β",
+          "ra": 178.2275,
+          "dec": -33.9081,
+          "mag": 4.28
+        },
+        {
+          "name": "γ Hya",
+          "bayer": "γ",
+          "ra": 199.7304,
+          "dec": -23.1717,
+          "mag": 3
+        },
+        {
+          "name": "π Hya",
+          "bayer": "π",
+          "ra": 211.5929,
+          "dec": -26.6825,
+          "mag": 3.27
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          18,
+          19
+        ]
+      ]
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "figure": "The Lion",
+      "iau": [
+        "Leo"
+      ],
+      "greekName": "Λέων",
+      "catasterism": {
+        "characters": [
+          "nemean-lion"
+        ],
+        "testimonia": [
+          "Hyginus, Astronomica 2.24 — set there as king of beasts; writers add that he was Hercules' first Labour, killed unarmed",
+          "Apollodorus 2.5.1 — the lion of Nemea"
+        ]
+      },
+      "origin": [
+        {
+          "text": "He is in the sky because he is king of beasts; and writers add that he was the first Labour, the lion whose hide no weapon would cut, so that Hercules had to kill him unarmed and with his hands.",
+          "sources": [
+            "hyginus",
+            "apollodorus"
+          ],
+          "citation": "Astronomica 2.24; Bibliotheca 2.5.1"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Regulus",
+          "bayer": "α",
+          "ra": 152.0929,
+          "dec": 11.9672,
+          "mag": 1.35
+        },
+        {
+          "name": "η Leo",
+          "bayer": "η",
+          "ra": 151.8333,
+          "dec": 16.7628,
+          "mag": 3.52
+        },
+        {
+          "name": "Algieba",
+          "bayer": "γ¹",
+          "ra": 154.9929,
+          "dec": 19.8417,
+          "mag": 2.61
+        },
+        {
+          "name": "Adhafera",
+          "bayer": "ζ",
+          "ra": 154.1725,
+          "dec": 23.4172,
+          "mag": 3.44
+        },
+        {
+          "name": "Rasalas",
+          "bayer": "μ",
+          "ra": 148.1908,
+          "dec": 26.0069,
+          "mag": 3.88
+        },
+        {
+          "name": "Ras Elased Australis",
+          "bayer": "ε",
+          "ra": 146.4629,
+          "dec": 23.7742,
+          "mag": 2.98
+        },
+        {
+          "name": "Zosma",
+          "bayer": "δ",
+          "ra": 168.5271,
+          "dec": 20.5236,
+          "mag": 2.56
+        },
+        {
+          "name": "Denebola",
+          "bayer": "β",
+          "ra": 177.265,
+          "dec": 14.5719,
+          "mag": 2.14
+        },
+        {
+          "name": "Chertan",
+          "bayer": "θ",
+          "ra": 168.56,
+          "dec": 15.4294,
+          "mag": 3.34
+        },
+        {
+          "name": "Al Minliar al Asad",
+          "bayer": "κ",
+          "ra": 141.1637,
+          "dec": 26.1822,
+          "mag": 4.46
+        },
+        {
+          "name": "Alterf",
+          "bayer": "λ",
+          "ra": 142.93,
+          "dec": 22.9681,
+          "mag": 4.31
+        },
+        {
+          "name": "ι Leo",
+          "bayer": "ι",
+          "ra": 170.9812,
+          "dec": 10.5292,
+          "mag": 3.94
+        },
+        {
+          "name": "σ Leo",
+          "bayer": "σ",
+          "ra": 170.2842,
+          "dec": 6.0294,
+          "mag": 4.05
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          11,
+          12
+        ]
+      ]
+    },
+    {
+      "id": "lepus",
+      "name": "Lepus",
+      "figure": "The Hare",
+      "iau": [
+        "Lep"
+      ],
+      "stars": [
+        {
+          "name": "ε Lep",
+          "bayer": "ε",
+          "ra": 76.3654,
+          "dec": -22.3711,
+          "mag": 3.19
+        },
+        {
+          "name": "μ Lep",
+          "bayer": "μ",
+          "ra": 78.2329,
+          "dec": -16.2056,
+          "mag": 3.31
+        },
+        {
+          "name": "Arneb",
+          "bayer": "α",
+          "ra": 83.1825,
+          "dec": -17.8222,
+          "mag": 2.58
+        },
+        {
+          "name": "Nihal",
+          "bayer": "β",
+          "ra": 82.0613,
+          "dec": -20.7594,
+          "mag": 2.84
+        },
+        {
+          "name": "λ Lep",
+          "bayer": "λ",
+          "ra": 79.8937,
+          "dec": -13.1767,
+          "mag": 4.29
+        },
+        {
+          "name": "κ Lep",
+          "bayer": "κ",
+          "ra": 78.3079,
+          "dec": -12.9414,
+          "mag": 4.36
+        },
+        {
+          "name": "γ Lep",
+          "bayer": "γ",
+          "ra": 86.1158,
+          "dec": -22.4483,
+          "mag": 3.6
+        },
+        {
+          "name": "δ Lep",
+          "bayer": "δ",
+          "ra": 87.8304,
+          "dec": -20.8792,
+          "mag": 3.81
+        },
+        {
+          "name": "θ Lep",
+          "bayer": "θ",
+          "ra": 91.5387,
+          "dec": -14.9353,
+          "mag": 4.67
+        },
+        {
+          "name": "η Lep",
+          "bayer": "η",
+          "ra": 89.1013,
+          "dec": -14.1678,
+          "mag": 3.71
+        },
+        {
+          "name": "ζ Lep",
+          "bayer": "ζ",
+          "ra": 86.7387,
+          "dec": -14.8219,
+          "mag": 3.55
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "libra",
+      "name": "Libra",
+      "figure": "The Scales",
+      "iau": [
+        "Lib"
+      ],
+      "greekName": "Χηλαί",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.26 — the Scorpion is divided in two by the spread of its claws, and one part our writers have called the Balance"
+        ]
+      },
+      "origin": [
+        {
+          "text": "To the Greeks this was not a figure of its own but the Claws — the Scorpion reaches so far across the sky that its grasp was counted as a second sign. Later writers weighed the two halves against each other and called this one the Balance.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.26"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Zubenelgenubi",
+          "bayer": "α²",
+          "ra": 222.7196,
+          "dec": -16.0417,
+          "mag": 2.75
+        },
+        {
+          "name": "Zubeneschamali",
+          "bayer": "β",
+          "ra": 229.2517,
+          "dec": -9.3831,
+          "mag": 2.61
+        },
+        {
+          "name": "Brachium",
+          "bayer": "σ",
+          "ra": 226.0175,
+          "dec": -25.2819,
+          "mag": 3.29
+        },
+        {
+          "name": "Zuben-el-Akrab",
+          "bayer": "γ",
+          "ra": 233.8817,
+          "dec": -14.7894,
+          "mag": 3.91
+        },
+        {
+          "name": "υ Lib",
+          "bayer": "υ",
+          "ra": 234.2562,
+          "dec": -28.135,
+          "mag": 3.58
+        },
+        {
+          "name": "τ Lib",
+          "bayer": "τ",
+          "ra": 234.6642,
+          "dec": -29.7778,
+          "mag": 3.66
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "id": "lupus",
+      "name": "Lupus",
+      "figure": "The Beast",
+      "iau": [
+        "Lup"
+      ],
+      "stars": [
+        {
+          "name": "α Lup",
+          "bayer": "α",
+          "ra": 220.4825,
+          "dec": -47.3883,
+          "mag": 2.3
+        },
+        {
+          "name": "ζ Lup",
+          "bayer": "ζ",
+          "ra": 228.0712,
+          "dec": -52.0992,
+          "mag": 3.41
+        },
+        {
+          "name": "ε Lup",
+          "bayer": "ε",
+          "ra": 230.6704,
+          "dec": -44.6894,
+          "mag": 3.37
+        },
+        {
+          "name": "γ Lup",
+          "bayer": "γ",
+          "ra": 233.7854,
+          "dec": -41.1669,
+          "mag": 2.78
+        },
+        {
+          "name": "δ Lup",
+          "bayer": "δ",
+          "ra": 230.3429,
+          "dec": -40.6475,
+          "mag": 3.22
+        },
+        {
+          "name": "β Lup",
+          "bayer": "β",
+          "ra": 224.6329,
+          "dec": -43.1339,
+          "mag": 2.68
+        },
+        {
+          "name": "η Lup",
+          "bayer": "η",
+          "ra": 240.0304,
+          "dec": -38.3969,
+          "mag": 3.41
+        },
+        {
+          "name": "φ¹ Lup",
+          "bayer": "φ¹",
+          "ra": 230.4517,
+          "dec": -36.2614,
+          "mag": 3.56
+        },
+        {
+          "name": "χ Lup",
+          "bayer": "χ",
+          "ra": 237.7396,
+          "dec": -33.6272,
+          "mag": 3.95
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "lyra",
+      "name": "Lyra",
+      "figure": "Orpheus' Lyre",
+      "iau": [
+        "Lyr"
+      ],
+      "greekName": "Λύρα",
+      "catasterism": {
+        "characters": [
+          "orpheus"
+        ],
+        "testimonia": [
+          "Eratosthenes, Catasterismi 24 — the Muses gather the lyre of Orpheus and Zeus sets it among the stars"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "orpheus-cycle",
+          "testimonia": [
+            "Eratosthenes, Catasterismi 24 — the lyre is Orpheus' own"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "When Orpheus was torn apart, the Muses gathered what was left of him and buried it, and the lyre they carried up to Zeus, who set it among the stars. The instrument went to heaven; the man did not.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.7"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Vega",
+          "bayer": "α",
+          "ra": 279.2346,
+          "dec": 38.7836,
+          "mag": 0.03
+        },
+        {
+          "name": "ε¹ Lyr",
+          "bayer": "ε¹",
+          "ra": 281.085,
+          "dec": 39.67,
+          "mag": 5.06
+        },
+        {
+          "name": "ζ¹ Lyr",
+          "bayer": "ζ¹",
+          "ra": 281.1933,
+          "dec": 37.605,
+          "mag": 4.36
+        },
+        {
+          "name": "δ² Lyr",
+          "bayer": "δ²",
+          "ra": 283.6258,
+          "dec": 36.8989,
+          "mag": 4.3
+        },
+        {
+          "name": "Sulafat",
+          "bayer": "γ",
+          "ra": 284.7358,
+          "dec": 32.6894,
+          "mag": 3.24
+        },
+        {
+          "name": "Sheliak",
+          "bayer": "β",
+          "ra": 282.52,
+          "dec": 33.3628,
+          "mag": 3.45
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "ophiuchus",
+      "name": "Ophiuchus",
+      "figure": "The Serpent-Bearer",
+      "iau": [
+        "Oph"
+      ],
+      "stars": [
+        {
+          "name": "Rasalhague",
+          "bayer": "α",
+          "ra": 263.7337,
+          "dec": 12.56,
+          "mag": 2.08
+        },
+        {
+          "name": "κ Oph",
+          "bayer": "κ",
+          "ra": 254.4171,
+          "dec": 9.375,
+          "mag": 3.2
+        },
+        {
+          "name": "Marfik",
+          "bayer": "λ",
+          "ra": 247.7283,
+          "dec": 1.9839,
+          "mag": 3.82
+        },
+        {
+          "name": "Yed Prior",
+          "bayer": "δ",
+          "ra": 243.5863,
+          "dec": -3.6944,
+          "mag": 2.74
+        },
+        {
+          "name": "Yed Posterior",
+          "bayer": "ε",
+          "ra": 244.5804,
+          "dec": -4.6925,
+          "mag": 3.24
+        },
+        {
+          "name": "υ Oph",
+          "bayer": "υ",
+          "ra": 246.9504,
+          "dec": -8.3717,
+          "mag": 4.63
+        },
+        {
+          "name": "ζ Oph",
+          "bayer": "ζ",
+          "ra": 249.2896,
+          "dec": -10.5672,
+          "mag": 2.56
+        },
+        {
+          "name": "Sabik",
+          "bayer": "η",
+          "ra": 257.5946,
+          "dec": -15.7247,
+          "mag": 2.43
+        },
+        {
+          "name": "Cebalrai",
+          "bayer": "β",
+          "ra": 265.8683,
+          "dec": 4.5672,
+          "mag": 2.77
+        },
+        {
+          "name": "γ Oph",
+          "bayer": "γ",
+          "ra": 266.9733,
+          "dec": 2.7072,
+          "mag": 3.75
+        },
+        {
+          "name": "Sinistra",
+          "bayer": "ν",
+          "ra": 269.7567,
+          "dec": -9.7736,
+          "mag": 3.34
+        },
+        {
+          "name": "θ Oph",
+          "bayer": "θ",
+          "ra": 260.5025,
+          "dec": -24.9994,
+          "mag": 3.27
+        },
+        {
+          "name": "φ Oph",
+          "bayer": "φ",
+          "ra": 247.7846,
+          "dec": -16.6128,
+          "mag": 4.28
+        },
+        {
+          "name": "χ Oph",
+          "bayer": "χ",
+          "ra": 246.7558,
+          "dec": -18.4564,
+          "mag": 4.42
+        },
+        {
+          "name": "ψ Oph",
+          "bayer": "ψ",
+          "ra": 246.0258,
+          "dec": -20.0375,
+          "mag": 4.5
+        },
+        {
+          "name": "ρ Oph",
+          "bayer": "ρ",
+          "ra": 246.3967,
+          "dec": -23.4472,
+          "mag": 5.02
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ]
+      ]
+    },
+    {
+      "id": "orion",
+      "name": "Orion",
+      "figure": "The Hunter",
+      "iau": [
+        "Ori"
+      ],
+      "greekName": "Ὠρίων",
+      "catasterism": {
+        "characters": [
+          "orion"
+        ],
+        "testimonia": [
+          "Homer, Odyssey 11.572–575 — Orion still hunting on the asphodel meadow",
+          "Eratosthenes, Catasterismi 32"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "orion-the-hunter",
+          "testimonia": [
+            "Homer, Odyssey 5.121–124 — Orion and the anger of the gods"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "The hunter who was too great for the earth was set opposite the beast that killed him: the Scorpion rises as Orion goes down, so that the two never share the sky. He hunts still, Homer saw him, driving the beasts he had killed on the lonely hills.",
+          "sources": [
+            "hyginus",
+            "homer"
+          ],
+          "citation": "Astronomica 2.34; Odyssey 11.572–575"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Betelgeuse",
+          "bayer": "α",
+          "ra": 88.7929,
+          "dec": 7.4069,
+          "mag": 0.5
+        },
+        {
+          "name": "Alnitak",
+          "bayer": "ζ",
+          "ra": 85.1896,
+          "dec": -1.9428,
+          "mag": 2.05
+        },
+        {
+          "name": "Saiph",
+          "bayer": "κ",
+          "ra": 86.9392,
+          "dec": -9.6697,
+          "mag": 2.06
+        },
+        {
+          "name": "Alnilam",
+          "bayer": "ε",
+          "ra": 84.0533,
+          "dec": -1.2019,
+          "mag": 1.7
+        },
+        {
+          "name": "Mintaka",
+          "bayer": "δ",
+          "ra": 83.0021,
+          "dec": -0.2844,
+          "mag": 6.85
+        },
+        {
+          "name": "Bellatrix",
+          "bayer": "γ",
+          "ra": 81.2829,
+          "dec": 6.3497,
+          "mag": 1.64
+        },
+        {
+          "name": "η Ori",
+          "bayer": "η",
+          "ra": 81.1192,
+          "dec": -2.3969,
+          "mag": 3.36
+        },
+        {
+          "name": "Rigel",
+          "bayer": "β",
+          "ra": 78.6346,
+          "dec": -8.2017,
+          "mag": 0.12
+        },
+        {
+          "name": "Meissa",
+          "bayer": "λ",
+          "ra": 83.7846,
+          "dec": 9.9342,
+          "mag": 3.54
+        },
+        {
+          "name": "11 Ori",
+          "bayer": "",
+          "ra": 76.1421,
+          "dec": 15.4042,
+          "mag": 4.68
+        },
+        {
+          "name": "ο² Ori",
+          "bayer": "ο²",
+          "ra": 74.0929,
+          "dec": 13.5144,
+          "mag": 4.07
+        },
+        {
+          "name": "π¹ Ori",
+          "bayer": "π¹",
+          "ra": 73.7242,
+          "dec": 10.1508,
+          "mag": 4.65
+        },
+        {
+          "name": "π² Ori",
+          "bayer": "π²",
+          "ra": 72.6529,
+          "dec": 8.9003,
+          "mag": 4.36
+        },
+        {
+          "name": "Tabit",
+          "bayer": "π³",
+          "ra": 72.46,
+          "dec": 6.9614,
+          "mag": 3.19
+        },
+        {
+          "name": "π⁴ Ori",
+          "bayer": "π⁴",
+          "ra": 72.8017,
+          "dec": 5.605,
+          "mag": 3.69
+        },
+        {
+          "name": "π⁵ Ori",
+          "bayer": "π⁵",
+          "ra": 73.5629,
+          "dec": 2.4406,
+          "mag": 3.72
+        },
+        {
+          "name": "π⁶ Ori",
+          "bayer": "π⁶",
+          "ra": 74.6371,
+          "dec": 1.7142,
+          "mag": 4.47
+        },
+        {
+          "name": "μ Ori",
+          "bayer": "μ",
+          "ra": 90.5958,
+          "dec": 9.6475,
+          "mag": 4.12
+        },
+        {
+          "name": "ν Ori",
+          "bayer": "ν",
+          "ra": 91.8929,
+          "dec": 14.7683,
+          "mag": 4.42
+        },
+        {
+          "name": "ξ Ori",
+          "bayer": "ξ",
+          "ra": 92.985,
+          "dec": 14.2089,
+          "mag": 4.48
+        },
+        {
+          "name": "χ² Ori",
+          "bayer": "χ²",
+          "ra": 90.98,
+          "dec": 20.1383,
+          "mag": 4.63
+        },
+        {
+          "name": "χ¹ Ori",
+          "bayer": "χ¹",
+          "ra": 88.5954,
+          "dec": 20.2761,
+          "mag": 4.41
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          19,
+          20
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "pegasus",
+      "name": "Pegasus",
+      "figure": "The Winged Horse",
+      "iau": [
+        "Peg"
+      ],
+      "stars": [
+        {
+          "name": "π¹ Peg",
+          "bayer": "π¹",
+          "ra": 332.3067,
+          "dec": 33.1722,
+          "mag": 5.58
+        },
+        {
+          "name": "Matar",
+          "bayer": "η",
+          "ra": 340.7504,
+          "dec": 30.2214,
+          "mag": 2.94
+        },
+        {
+          "name": "Scheat",
+          "bayer": "β",
+          "ra": 345.9438,
+          "dec": 28.0828,
+          "mag": 2.42
+        },
+        {
+          "name": "Sadalbari",
+          "bayer": "μ",
+          "ra": 342.5008,
+          "dec": 24.6017,
+          "mag": 3.48
+        },
+        {
+          "name": "λ Peg",
+          "bayer": "λ",
+          "ra": 341.6329,
+          "dec": 23.5656,
+          "mag": 3.95
+        },
+        {
+          "name": "ι Peg",
+          "bayer": "ι",
+          "ra": 331.7529,
+          "dec": 25.345,
+          "mag": 3.76
+        },
+        {
+          "name": "κ Peg",
+          "bayer": "κ",
+          "ra": 326.1613,
+          "dec": 25.645,
+          "mag": 4.13
+        },
+        {
+          "name": "Alpheratz",
+          "bayer": "α",
+          "ra": 2.0971,
+          "dec": 29.0906,
+          "mag": 2.06
+        },
+        {
+          "name": "Markab",
+          "bayer": "α",
+          "ra": 346.1904,
+          "dec": 15.2053,
+          "mag": 2.49
+        },
+        {
+          "name": "Algenib",
+          "bayer": "γ",
+          "ra": 3.3092,
+          "dec": 15.1836,
+          "mag": 2.83
+        },
+        {
+          "name": "Enif",
+          "bayer": "ε",
+          "ra": 326.0467,
+          "dec": 9.875,
+          "mag": 2.39
+        },
+        {
+          "name": "Biham",
+          "bayer": "θ",
+          "ra": 332.55,
+          "dec": 6.1978,
+          "mag": 3.53
+        },
+        {
+          "name": "Homam",
+          "bayer": "ζ",
+          "ra": 340.3654,
+          "dec": 10.8314,
+          "mag": 3.4
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          8
+        ]
+      ]
+    },
+    {
+      "id": "perseus",
+      "name": "Perseus",
+      "figure": "The Champion",
+      "iau": [
+        "Per"
+      ],
+      "greekName": "Περσεύς",
+      "catasterism": {
+        "characters": [
+          "perseus"
+        ],
+        "testimonia": [
+          "Eratosthenes, Catasterismi 22 — Perseus set among the stars with the Gorgon's head",
+          "Apollodorus 2.4.3 — Perseus, Andromeda and Cassiopeia"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "perseus-cycle",
+          "testimonia": [
+            "Apollodorus 2.4.3 — the Perseus cycle"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "He stands in the sky as he stood in life, the Gorgon's head still in his hand — and the head keeps its own star, the one that dims and brightens, which later watchers called the Demon.",
+          "sources": [
+            "hyginus",
+            "apollodorus"
+          ],
+          "citation": "Astronomica 2.12; Bibliotheca 2.4.3"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Atik",
+          "bayer": "ο",
+          "ra": 56.0796,
+          "dec": 32.2883,
+          "mag": 3.83
+        },
+        {
+          "name": "ζ Per",
+          "bayer": "ζ",
+          "ra": 58.5329,
+          "dec": 31.8836,
+          "mag": 2.85
+        },
+        {
+          "name": "Menkib",
+          "bayer": "ξ",
+          "ra": 59.7413,
+          "dec": 35.7911,
+          "mag": 4.04
+        },
+        {
+          "name": "ε Per",
+          "bayer": "ε",
+          "ra": 59.4633,
+          "dec": 40.0103,
+          "mag": 2.89
+        },
+        {
+          "name": "δ Per",
+          "bayer": "δ",
+          "ra": 55.7313,
+          "dec": 47.7875,
+          "mag": 3.01
+        },
+        {
+          "name": "Mirfak",
+          "bayer": "α",
+          "ra": 51.0808,
+          "dec": 49.8611,
+          "mag": 1.79
+        },
+        {
+          "name": "γ Per",
+          "bayer": "γ",
+          "ra": 46.1992,
+          "dec": 53.5064,
+          "mag": 2.93
+        },
+        {
+          "name": "Miram",
+          "bayer": "η",
+          "ra": 42.6742,
+          "dec": 55.8956,
+          "mag": 3.76
+        },
+        {
+          "name": "τ Per",
+          "bayer": "τ",
+          "ra": 43.5646,
+          "dec": 52.7625,
+          "mag": 3.95
+        },
+        {
+          "name": "ι Per",
+          "bayer": "ι",
+          "ra": 47.2667,
+          "dec": 49.6133,
+          "mag": 4.05
+        },
+        {
+          "name": "Misam",
+          "bayer": "κ",
+          "ra": 47.3742,
+          "dec": 44.8572,
+          "mag": 3.8
+        },
+        {
+          "name": "Algol",
+          "bayer": "β",
+          "ra": 47.0421,
+          "dec": 40.9556,
+          "mag": 2.12
+        },
+        {
+          "name": "Gorgonea Tertia",
+          "bayer": "ρ",
+          "ra": 46.2942,
+          "dec": 38.8403,
+          "mag": 3.39
+        },
+        {
+          "name": "μ Per",
+          "bayer": "μ",
+          "ra": 63.7246,
+          "dec": 48.4094,
+          "mag": 4.14
+        },
+        {
+          "name": "λ Per",
+          "bayer": "λ",
+          "ra": 61.6458,
+          "dec": 50.3514,
+          "mag": 4.29
+        },
+        {
+          "name": "θ Per",
+          "bayer": "θ",
+          "ra": 41.05,
+          "dec": 49.2283,
+          "mag": 4.12
+        },
+        {
+          "name": "φ Per",
+          "bayer": "φ",
+          "ra": 25.915,
+          "dec": 50.6886,
+          "mag": 4.07
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          15,
+          16
+        ]
+      ]
+    },
+    {
+      "id": "pisces",
+      "name": "Pisces",
+      "figure": "The Fishes",
+      "iau": [
+        "Psc"
+      ],
+      "greekName": "Ἰχθύες",
+      "catasterism": {
+        "characters": [
+          "aphrodite",
+          "eros"
+        ],
+        "testimonia": [
+          "Hyginus, Astronomica 2.30 — Diognetus Erythraeus tells that Venus and her son Cupid, meeting Typhon by the Euphrates, threw themselves into the river and took the form of fishes"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "typhonomachy",
+          "testimonia": [
+            "Hyginus, Astronomica 2.30 — Venus and Cupid taking fish form to escape Typhon"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "Venus and her son Cupid were at the Euphrates when Typhon appeared, and they threw themselves into the river and took the shape of fishes to escape him. Two fishes went into the sky for it, tied together by the tail so that they should never again be parted.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.30"
+        }
+      ],
+      "stars": [
+        {
+          "name": "φ Psc",
+          "bayer": "φ",
+          "ra": 18.4371,
+          "dec": 24.5836,
+          "mag": 4.65
+        },
+        {
+          "name": "υ Psc",
+          "bayer": "υ",
+          "ra": 19.8667,
+          "dec": 27.2642,
+          "mag": 4.76
+        },
+        {
+          "name": "τ Psc",
+          "bayer": "τ",
+          "ra": 17.915,
+          "dec": 30.0897,
+          "mag": 4.51
+        },
+        {
+          "name": "Kullat Nunu",
+          "bayer": "η",
+          "ra": 22.8708,
+          "dec": 15.3458,
+          "mag": 3.62
+        },
+        {
+          "name": "Torcularis Septentrionalis",
+          "bayer": "ο",
+          "ra": 26.3483,
+          "dec": 9.1578,
+          "mag": 4.26
+        },
+        {
+          "name": "Alrescha",
+          "bayer": "α",
+          "ra": 30.5117,
+          "dec": 2.7636,
+          "mag": 5.23
+        },
+        {
+          "name": "ν Psc",
+          "bayer": "ν",
+          "ra": 25.3579,
+          "dec": 5.4875,
+          "mag": 4.44
+        },
+        {
+          "name": "ε Psc",
+          "bayer": "ε",
+          "ra": 15.7358,
+          "dec": 7.89,
+          "mag": 4.28
+        },
+        {
+          "name": "δ Psc",
+          "bayer": "δ",
+          "ra": 12.1708,
+          "dec": 7.585,
+          "mag": 4.43
+        },
+        {
+          "name": "ω Psc",
+          "bayer": "ω",
+          "ra": 359.8279,
+          "dec": 6.8633,
+          "mag": 4.01
+        },
+        {
+          "name": "ι Psc",
+          "bayer": "ι",
+          "ra": 354.9875,
+          "dec": 5.6264,
+          "mag": 4.13
+        },
+        {
+          "name": "θ Psc",
+          "bayer": "θ",
+          "ra": 351.9921,
+          "dec": 6.3789,
+          "mag": 4.28
+        },
+        {
+          "name": "γ Psc",
+          "bayer": "γ",
+          "ra": 349.2912,
+          "dec": 3.2822,
+          "mag": 3.69
+        },
+        {
+          "name": "κ Psc",
+          "bayer": "κ",
+          "ra": 351.7333,
+          "dec": 1.2556,
+          "mag": 4.94
+        },
+        {
+          "name": "λ Psc",
+          "bayer": "λ",
+          "ra": 355.5117,
+          "dec": 1.78,
+          "mag": 4.5
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          10
+        ]
+      ]
+    },
+    {
+      "id": "piscis-austrinus",
+      "name": "Piscis Austrinus",
+      "figure": "The Southern Fish",
+      "iau": [
+        "PsA"
+      ],
+      "stars": [
+        {
+          "name": "Fomalhaut",
+          "bayer": "α",
+          "ra": 344.4129,
+          "dec": -29.6222,
+          "mag": 1.16
+        },
+        {
+          "name": "δ PsA",
+          "bayer": "δ",
+          "ra": 343.9871,
+          "dec": -32.5397,
+          "mag": 4.21
+        },
+        {
+          "name": "γ PsA",
+          "bayer": "γ",
+          "ra": 343.1317,
+          "dec": -32.8756,
+          "mag": 4.46
+        },
+        {
+          "name": "β PsA",
+          "bayer": "β",
+          "ra": 337.8762,
+          "dec": -32.3461,
+          "mag": 4.29
+        },
+        {
+          "name": "μ PsA",
+          "bayer": "μ",
+          "ra": 332.0958,
+          "dec": -32.9886,
+          "mag": 4.5
+        },
+        {
+          "name": "ι PsA",
+          "bayer": "ι",
+          "ra": 326.2367,
+          "dec": -33.0258,
+          "mag": 4.34
+        },
+        {
+          "name": "θ PsA",
+          "bayer": "θ",
+          "ra": 326.9342,
+          "dec": -30.8983,
+          "mag": 5.01
+        },
+        {
+          "name": "ε PsA",
+          "bayer": "ε",
+          "ra": 340.1642,
+          "dec": -27.0436,
+          "mag": 4.17
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "pleiades",
+      "name": "Pleiades",
+      "figure": "The Seven Sisters",
+      "iau": [
+        "Tau"
+      ],
+      "asterism": "Taurus",
+      "greekName": "Πλειάδες",
+      "catasterism": {
+        "testimonia": [
+          "Apollodorus 3.10.1 — Atlas and Pleione had seven daughters called the Pleiades: Alcyone, Merope, Celaeno, Electra, Sterope, Taygete and Maia",
+          "Homer, Iliad 18.485 — the Pleiades among the constellations on the shield"
+        ]
+      },
+      "origin": [
+        {
+          "text": "Seven daughters of Atlas and Pleione, born in Arcadia: Alcyone, Merope, Celaeno, Electra, Sterope, Taygete and Maia. They are the one company in the Greek sky the sources count star by star — and only six are easily seen, for Merope, who married a mortal, hides her light.",
+          "sources": [
+            "apollodorus",
+            "hyginus"
+          ],
+          "citation": "Bibliotheca 3.10.1; Astronomica 2.21"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Alcyone",
+          "bayer": "η",
+          "ra": 56.8713,
+          "dec": 24.105,
+          "mag": 2.87,
+          "character": "alcyone-pleiad"
+        },
+        {
+          "name": "Electra",
+          "bayer": "",
+          "ra": 56.2188,
+          "dec": 24.1133,
+          "mag": 3.7,
+          "character": "electra-pleiad"
+        },
+        {
+          "name": "Maia",
+          "bayer": "",
+          "ra": 56.4567,
+          "dec": 24.3678,
+          "mag": 3.87,
+          "character": "maia"
+        },
+        {
+          "name": "Merope",
+          "bayer": "",
+          "ra": 56.5817,
+          "dec": 23.9483,
+          "mag": 4.18,
+          "character": "merope-pleiad"
+        },
+        {
+          "name": "Taygeta",
+          "bayer": "",
+          "ra": 56.3021,
+          "dec": 24.4672,
+          "mag": 4.3,
+          "character": "taygete"
+        },
+        {
+          "name": "Celaeno",
+          "bayer": "",
+          "ra": 56.2008,
+          "dec": 24.2894,
+          "mag": 5.46,
+          "character": "celaeno-pleiad"
+        },
+        {
+          "name": "Asterope",
+          "bayer": "",
+          "ra": 56.4767,
+          "dec": 24.5547,
+          "mag": 5.76,
+          "character": "sterope-pleiad"
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "sagitta",
+      "name": "Sagitta",
+      "figure": "The Arrow",
+      "iau": [
+        "Sge"
+      ],
+      "stars": [
+        {
+          "name": "γ Sge",
+          "bayer": "γ",
+          "ra": 299.6892,
+          "dec": 19.4922,
+          "mag": 3.47
+        },
+        {
+          "name": "δ Sge",
+          "bayer": "δ",
+          "ra": 296.8471,
+          "dec": 18.5342,
+          "mag": 3.82
+        },
+        {
+          "name": "Sham",
+          "bayer": "α",
+          "ra": 295.0242,
+          "dec": 18.0139,
+          "mag": 4.37
+        },
+        {
+          "name": "β Sge",
+          "bayer": "β",
+          "ra": 295.2621,
+          "dec": 17.4761,
+          "mag": 4.37
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "sagittarius",
+      "name": "Sagittarius",
+      "figure": "The Archer",
+      "iau": [
+        "Sgr"
+      ],
+      "greekName": "Τοξότης",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.27 — many have called this sign the Centaur; others deny it, since no Centaur uses arrows, and ask why he is formed with horse flanks but a Satyr’s tail",
+          "Eratosthenes, Catasterismi 28 — the archer is Crotus, not Chiron"
+        ]
+      },
+      "origin": [
+        {
+          "text": "Many call this figure the Centaur, and many deny it — no Centaur ever used a bow, and this one has the flanks of a horse but the tail of a Satyr. Eratosthenes names him Crotus instead, who lived with the Muses on Helicon and invented applause.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.27"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Kaus Australis",
+          "bayer": "ε",
+          "ra": 276.0429,
+          "dec": -34.3847,
+          "mag": 1.85
+        },
+        {
+          "name": "Alnasl",
+          "bayer": "γ²",
+          "ra": 271.4521,
+          "dec": -30.4242,
+          "mag": 2.99
+        },
+        {
+          "name": "Kaus Media",
+          "bayer": "δ",
+          "ra": 275.2487,
+          "dec": -29.8281,
+          "mag": 2.7
+        },
+        {
+          "name": "Kaus Borealis",
+          "bayer": "λ",
+          "ra": 276.9925,
+          "dec": -25.4217,
+          "mag": 2.81
+        },
+        {
+          "name": "φ Sgr",
+          "bayer": "φ",
+          "ra": 281.4142,
+          "dec": -26.9908,
+          "mag": 3.17
+        },
+        {
+          "name": "Nunki",
+          "bayer": "σ",
+          "ra": 283.8163,
+          "dec": -26.2967,
+          "mag": 2.02
+        },
+        {
+          "name": "τ Sgr",
+          "bayer": "τ",
+          "ra": 286.735,
+          "dec": -27.6706,
+          "mag": 3.32
+        },
+        {
+          "name": "Ascella",
+          "bayer": "ζ",
+          "ra": 285.6529,
+          "dec": -29.8803,
+          "mag": 2.6
+        },
+        {
+          "name": "η Sgr",
+          "bayer": "η",
+          "ra": 274.4067,
+          "dec": -36.7617,
+          "mag": 3.11
+        },
+        {
+          "name": "μ Sgr",
+          "bayer": "μ",
+          "ra": 273.4408,
+          "dec": -21.0589,
+          "mag": 3.86
+        },
+        {
+          "name": "ρ¹ Sgr",
+          "bayer": "ρ¹",
+          "ra": 290.4183,
+          "dec": -17.8472,
+          "mag": 3.93
+        },
+        {
+          "name": "Albaldah",
+          "bayer": "π",
+          "ra": 287.4408,
+          "dec": -21.0236,
+          "mag": 2.89
+        },
+        {
+          "name": "ο Sgr",
+          "bayer": "ο",
+          "ra": 286.1708,
+          "dec": -21.7417,
+          "mag": 3.77
+        },
+        {
+          "name": "ξ² Sgr",
+          "bayer": "ξ²",
+          "ra": 284.4325,
+          "dec": -21.1067,
+          "mag": 3.51
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          11
+        ]
+      ]
+    },
+    {
+      "id": "scorpius",
+      "name": "Scorpius",
+      "figure": "The Scorpion",
+      "iau": [
+        "Sco"
+      ],
+      "greekName": "Σκορπίος",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.26 — the Scorpion, whose claws reach so far that the sign is counted as two",
+          "Hyginus, Astronomica 2.34 — the scorpion sent against Orion, set in the sky opposite him"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "orion-the-hunter",
+          "testimonia": [
+            "Hyginus, Astronomica 2.34 — the scorpion set in the sky opposite Orion"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "The scorpion came out of the ground against Orion and killed him, and both were set in the sky — but set apart, at opposite ends of the year, so that the hunter goes down as the beast comes up and they are never in the sky together.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.26; 2.34"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Acrab",
+          "bayer": "β¹",
+          "ra": 241.3592,
+          "dec": -19.8056,
+          "mag": 2.62
+        },
+        {
+          "name": "Dschubba",
+          "bayer": "δ",
+          "ra": 240.0833,
+          "dec": -22.6217,
+          "mag": 2.32
+        },
+        {
+          "name": "π Sco",
+          "bayer": "π",
+          "ra": 239.7129,
+          "dec": -26.1142,
+          "mag": 2.89
+        },
+        {
+          "name": "Al Niyat",
+          "bayer": "σ",
+          "ra": 245.2971,
+          "dec": -25.5928,
+          "mag": 2.89
+        },
+        {
+          "name": "Antares",
+          "bayer": "α",
+          "ra": 247.3517,
+          "dec": -26.4319,
+          "mag": 0.96
+        },
+        {
+          "name": "Alniyat",
+          "bayer": "τ",
+          "ra": 248.9708,
+          "dec": -28.2161,
+          "mag": 2.82
+        },
+        {
+          "name": "ε Sco",
+          "bayer": "ε",
+          "ra": 252.5408,
+          "dec": -34.2933,
+          "mag": 2.29
+        },
+        {
+          "name": "μ¹ Sco",
+          "bayer": "μ¹",
+          "ra": 252.9675,
+          "dec": -38.0475,
+          "mag": 3.08
+        },
+        {
+          "name": "ζ² Sco",
+          "bayer": "ζ²",
+          "ra": 253.6458,
+          "dec": -42.3614,
+          "mag": 3.62
+        },
+        {
+          "name": "η Sco",
+          "bayer": "η",
+          "ra": 258.0383,
+          "dec": -43.2392,
+          "mag": 3.33
+        },
+        {
+          "name": "Sargas",
+          "bayer": "θ",
+          "ra": 264.33,
+          "dec": -42.9978,
+          "mag": 1.87
+        },
+        {
+          "name": "ι¹ Sco",
+          "bayer": "ι¹",
+          "ra": 266.8963,
+          "dec": -40.1269,
+          "mag": 3.03
+        },
+        {
+          "name": "Girtab",
+          "bayer": "κ",
+          "ra": 265.6221,
+          "dec": -39.03,
+          "mag": 2.41
+        },
+        {
+          "name": "Lesath",
+          "bayer": "υ",
+          "ra": 262.6908,
+          "dec": -37.2958,
+          "mag": 2.69
+        },
+        {
+          "name": "Shaula",
+          "bayer": "λ",
+          "ra": 263.4021,
+          "dec": -37.1039,
+          "mag": 1.63
+        },
+        {
+          "name": "Jabbah",
+          "bayer": "ν",
+          "ra": 242.9942,
+          "dec": -19.4497,
+          "mag": 6.3
+        },
+        {
+          "name": "ρ Sco",
+          "bayer": "ρ",
+          "ra": 239.2212,
+          "dec": -29.2142,
+          "mag": 3.88
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          2,
+          16
+        ]
+      ]
+    },
+    {
+      "id": "serpens",
+      "name": "Serpens",
+      "figure": "The Serpent",
+      "iau": [
+        "Ser"
+      ],
+      "stars": [
+        {
+          "name": "Chow",
+          "bayer": "β",
+          "ra": 236.5471,
+          "dec": 15.4219,
+          "mag": 3.67
+        },
+        {
+          "name": "γ Ser",
+          "bayer": "γ",
+          "ra": 239.1133,
+          "dec": 15.6617,
+          "mag": 3.85
+        },
+        {
+          "name": "κ Ser",
+          "bayer": "κ",
+          "ra": 237.185,
+          "dec": 18.1417,
+          "mag": 4.09
+        },
+        {
+          "name": "ι Ser",
+          "bayer": "ι",
+          "ra": 235.3879,
+          "dec": 19.6703,
+          "mag": 4.52
+        },
+        {
+          "name": "δ Ser",
+          "bayer": "δ",
+          "ra": 233.7004,
+          "dec": 10.5375,
+          "mag": 3.8
+        },
+        {
+          "name": "Unukalhai",
+          "bayer": "α",
+          "ra": 236.0671,
+          "dec": 6.4256,
+          "mag": 2.65
+        },
+        {
+          "name": "ε Ser",
+          "bayer": "ε",
+          "ra": 237.7042,
+          "dec": 4.4778,
+          "mag": 3.71
+        },
+        {
+          "name": "μ Ser",
+          "bayer": "μ",
+          "ra": 237.405,
+          "dec": -3.4303,
+          "mag": 3.53
+        },
+        {
+          "name": "Yed Prior",
+          "bayer": "δ",
+          "ra": 243.5863,
+          "dec": -3.6944,
+          "mag": 2.74
+        },
+        {
+          "name": "Sabik",
+          "bayer": "η",
+          "ra": 257.5946,
+          "dec": -15.7247,
+          "mag": 2.43
+        },
+        {
+          "name": "ξ Ser",
+          "bayer": "ξ",
+          "ra": 264.3967,
+          "dec": -15.3986,
+          "mag": 3.54
+        },
+        {
+          "name": "Sinistra",
+          "bayer": "ν",
+          "ra": 269.7567,
+          "dec": -9.7736,
+          "mag": 3.34
+        },
+        {
+          "name": "η Ser",
+          "bayer": "η",
+          "ra": 275.3275,
+          "dec": -2.8989,
+          "mag": 3.26
+        },
+        {
+          "name": "Alya",
+          "bayer": "θ¹",
+          "ra": 284.055,
+          "dec": 4.2036,
+          "mag": 4.62
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "taurus",
+      "name": "Taurus",
+      "figure": "The Bull",
+      "iau": [
+        "Tau"
+      ],
+      "greekName": "Ταῦρος",
+      "catasterism": {
+        "testimonia": [
+          "Hyginus, Astronomica 2.21 — placed among the stars because it carried Europa safely to Crete, as Euripides says; others say it is Io, changed into a heifer"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "europa-and-the-bull",
+          "testimonia": [
+            "Hyginus, Astronomica 2.21 — the bull that carried Europa to Crete"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "A bull swam to Crete with Europa on his back, and was set in the sky for it — so Euripides says. Others tell it otherwise: that this is Io, changed into a heifer, and that Jupiter put her among the constellations to make amends for what he had done to her.",
+          "sources": [
+            "hyginus"
+          ],
+          "citation": "Astronomica 2.21"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Tien Kwan",
+          "bayer": "ζ",
+          "ra": 84.4113,
+          "dec": 21.1425,
+          "mag": 3
+        },
+        {
+          "name": "Aldebaran",
+          "bayer": "α",
+          "ra": 68.98,
+          "dec": 16.5092,
+          "mag": 0.85
+        },
+        {
+          "name": "θ² Tau",
+          "bayer": "θ²",
+          "ra": 67.1654,
+          "dec": 15.8708,
+          "mag": 3.4
+        },
+        {
+          "name": "Hyadum I",
+          "bayer": "γ",
+          "ra": 64.9483,
+          "dec": 15.6275,
+          "mag": 3.65
+        },
+        {
+          "name": "Hyadum II",
+          "bayer": "δ¹",
+          "ra": 65.7338,
+          "dec": 17.5425,
+          "mag": 3.76
+        },
+        {
+          "name": "Ain",
+          "bayer": "ε",
+          "ra": 67.1542,
+          "dec": 19.1803,
+          "mag": 3.53
+        },
+        {
+          "name": "Elnath",
+          "bayer": "β",
+          "ra": 81.5729,
+          "dec": 28.6075,
+          "mag": 1.65
+        },
+        {
+          "name": "ξ Tau",
+          "bayer": "ξ",
+          "ra": 51.7925,
+          "dec": 9.7328,
+          "mag": 3.74
+        },
+        {
+          "name": "ν Tau",
+          "bayer": "ν",
+          "ra": 60.7892,
+          "dec": 5.9892,
+          "mag": 3.91
+        },
+        {
+          "name": "ο Tau",
+          "bayer": "ο",
+          "ra": 51.2033,
+          "dec": 9.0289,
+          "mag": 3.6
+        },
+        {
+          "name": "10 Tau",
+          "bayer": "",
+          "ra": 54.2183,
+          "dec": 0.4017,
+          "mag": 4.28
+        },
+        {
+          "name": "λ Tau",
+          "bayer": "λ",
+          "ra": 60.17,
+          "dec": 12.4903,
+          "mag": 3.47
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          11,
+          7
+        ]
+      ]
+    },
+    {
+      "id": "triangulum",
+      "name": "Triangulum",
+      "figure": "The Triangle",
+      "iau": [
+        "Tri"
+      ],
+      "stars": [
+        {
+          "name": "Mothallah",
+          "bayer": "α",
+          "ra": 28.2704,
+          "dec": 29.5789,
+          "mag": 3.41
+        },
+        {
+          "name": "β Tri",
+          "bayer": "β",
+          "ra": 32.3858,
+          "dec": 34.9872,
+          "mag": 3
+        },
+        {
+          "name": "γ Tri",
+          "bayer": "γ",
+          "ra": 34.3287,
+          "dec": 33.8472,
+          "mag": 4.01
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "ursa-major",
+      "name": "Ursa Major",
+      "figure": "The Great Bear",
+      "iau": [
+        "UMa"
+      ],
+      "greekName": "Ἄρκτος",
+      "catasterism": {
+        "characters": [
+          "callisto"
+        ],
+        "testimonia": [
+          "Hyginus, Fabulae 177 — Callisto, changed into a bear, is put among the stars as the constellation that never sets",
+          "Apollodorus 3.8.2 — Callisto in the chase with Artemis, and the wrath that followed",
+          "Eratosthenes, Catasterismi 1"
+        ]
+      },
+      "namedIn": [
+        {
+          "story": "odyssey",
+          "testimonia": [
+            "Homer, Odyssey 5.272–277 — Calypso bids Odysseus keep the Bear, which men also call the Wain, on his left hand as he sails"
+          ]
+        }
+      ],
+      "origin": [
+        {
+          "text": "Callisto followed Artemis in the chase and swore to stay a maid; Zeus came to her all the same, and for the child she bore she was turned into a bear. Jupiter set her among the stars afterwards, in the one place in the sky that never sinks into the sea — she wheels there and never sets.",
+          "sources": [
+            "hyginus",
+            "apollodorus"
+          ],
+          "citation": "Astronomica 2.1; Bibliotheca 3.8.2"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Phecda",
+          "bayer": "γ",
+          "ra": 178.4575,
+          "dec": 53.6947,
+          "mag": 2.44
+        },
+        {
+          "name": "Al Kaphrah",
+          "bayer": "χ",
+          "ra": 176.5125,
+          "dec": 47.7794,
+          "mag": 3.71
+        },
+        {
+          "name": "ψ UMa",
+          "bayer": "ψ",
+          "ra": 167.4158,
+          "dec": 44.4986,
+          "mag": 3.01
+        },
+        {
+          "name": "Tania Australis",
+          "bayer": "μ",
+          "ra": 155.5821,
+          "dec": 41.4994,
+          "mag": 3.05
+        },
+        {
+          "name": "Tania Borealis",
+          "bayer": "λ",
+          "ra": 154.2742,
+          "dec": 42.9144,
+          "mag": 3.45
+        },
+        {
+          "name": "Alula Borealis",
+          "bayer": "ν",
+          "ra": 169.6196,
+          "dec": 33.0942,
+          "mag": 3.48
+        },
+        {
+          "name": "Alula Australis",
+          "bayer": "ξ",
+          "ra": 169.5454,
+          "dec": 31.5292,
+          "mag": 4.87
+        },
+        {
+          "name": "Megrez",
+          "bayer": "δ",
+          "ra": 183.8567,
+          "dec": 57.0325,
+          "mag": 3.31
+        },
+        {
+          "name": "Dubhe",
+          "bayer": "α",
+          "ra": 165.9321,
+          "dec": 61.7508,
+          "mag": 1.79
+        },
+        {
+          "name": "Merak",
+          "bayer": "β",
+          "ra": 165.4604,
+          "dec": 56.3825,
+          "mag": 2.37
+        },
+        {
+          "name": "Alioth",
+          "bayer": "ε",
+          "ra": 193.5071,
+          "dec": 55.9597,
+          "mag": 1.77
+        },
+        {
+          "name": "Mizar",
+          "bayer": "ζ",
+          "ra": 200.9812,
+          "dec": 54.9253,
+          "mag": 2.27
+        },
+        {
+          "name": "Alkaid",
+          "bayer": "η",
+          "ra": 206.885,
+          "dec": 49.3133,
+          "mag": 1.86
+        },
+        {
+          "name": "υ UMa",
+          "bayer": "υ",
+          "ra": 147.7475,
+          "dec": 59.0386,
+          "mag": 3.8
+        },
+        {
+          "name": "Muscida",
+          "bayer": "ο",
+          "ra": 127.5662,
+          "dec": 60.7181,
+          "mag": 3.36
+        },
+        {
+          "name": "Sarir",
+          "bayer": "θ",
+          "ra": 143.2142,
+          "dec": 51.6772,
+          "mag": 3.17
+        },
+        {
+          "name": "Talitha Australis",
+          "bayer": "κ",
+          "ra": 135.9063,
+          "dec": 47.1567,
+          "mag": 3.6
+        },
+        {
+          "name": "Talitha",
+          "bayer": "ι",
+          "ra": 134.8017,
+          "dec": 48.0417,
+          "mag": 3.14
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ]
+      ]
+    },
+    {
+      "id": "ursa-minor",
+      "name": "Ursa Minor",
+      "figure": "The Little Bear",
+      "iau": [
+        "UMi"
+      ],
+      "stars": [
+        {
+          "name": "Polaris",
+          "bayer": "α",
+          "ra": 37.9529,
+          "dec": 89.2642,
+          "mag": 2.02
+        },
+        {
+          "name": "Yildun",
+          "bayer": "δ",
+          "ra": 263.0538,
+          "dec": 86.5864,
+          "mag": 4.36
+        },
+        {
+          "name": "ε UMi",
+          "bayer": "ε",
+          "ra": 251.4921,
+          "dec": 82.0372,
+          "mag": 4.23
+        },
+        {
+          "name": "ζ UMi",
+          "bayer": "ζ",
+          "ra": 236.0146,
+          "dec": 77.7944,
+          "mag": 4.32
+        },
+        {
+          "name": "η UMi",
+          "bayer": "η",
+          "ra": 244.3762,
+          "dec": 75.7553,
+          "mag": 4.95
+        },
+        {
+          "name": "Pherkad",
+          "bayer": "γ",
+          "ra": 230.1821,
+          "dec": 71.8339,
+          "mag": 3.05
+        },
+        {
+          "name": "Kochab",
+          "bayer": "β",
+          "ra": 222.6763,
+          "dec": 74.1556,
+          "mag": 2.08
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "virgo",
+      "name": "Virgo",
+      "figure": "The Maiden",
+      "iau": [
+        "Vir"
+      ],
+      "greekName": "Παρθένος",
+      "catasterism": {
+        "characters": [
+          "dike"
+        ],
+        "testimonia": [
+          "Hyginus, Astronomica 2.25 — Hesiod calls her daughter of Jove and Themis, Aratus of Astraeus and Aurora; for her fairness she was called Justice, and led men in the Golden Age"
+        ]
+      },
+      "origin": [
+        {
+          "text": "She lived among men in the Golden Age and led them, and for her fairness they called her Justice. Then the races grew worse, and she went up out of the world into the stars — Hesiod makes her the daughter of Zeus and Themis, Aratus of Astraeus and the Dawn.",
+          "sources": [
+            "hyginus",
+            "hesiod"
+          ],
+          "citation": "Astronomica 2.25"
+        }
+      ],
+      "stars": [
+        {
+          "name": "Zaniah",
+          "bayer": "η",
+          "ra": 184.9767,
+          "dec": -0.6669,
+          "mag": 3.89
+        },
+        {
+          "name": "ο Vir",
+          "bayer": "ο",
+          "ra": 181.3021,
+          "dec": 8.7331,
+          "mag": 4.12
+        },
+        {
+          "name": "ν Vir",
+          "bayer": "ν",
+          "ra": 176.465,
+          "dec": 6.5294,
+          "mag": 4.03
+        },
+        {
+          "name": "Zavijava",
+          "bayer": "β",
+          "ra": 177.6738,
+          "dec": 1.7647,
+          "mag": 3.61
+        },
+        {
+          "name": "Porrima",
+          "bayer": "γ",
+          "ra": 190.415,
+          "dec": -1.4494,
+          "mag": 3.65
+        },
+        {
+          "name": "Auva",
+          "bayer": "δ",
+          "ra": 193.9008,
+          "dec": 3.3975,
+          "mag": 3.38
+        },
+        {
+          "name": "Vindemiatrix",
+          "bayer": "ε",
+          "ra": 195.5442,
+          "dec": 10.9592,
+          "mag": 2.83
+        },
+        {
+          "name": "θ Vir",
+          "bayer": "θ",
+          "ra": 197.4875,
+          "dec": -5.5389,
+          "mag": 4.38
+        },
+        {
+          "name": "Spica",
+          "bayer": "α",
+          "ra": 201.2983,
+          "dec": -11.1614,
+          "mag": 0.98
+        },
+        {
+          "name": "Heze",
+          "bayer": "ζ",
+          "ra": 203.6733,
+          "dec": -0.5958,
+          "mag": 3.37
+        },
+        {
+          "name": "τ Vir",
+          "bayer": "τ",
+          "ra": 210.4117,
+          "dec": 1.5444,
+          "mag": 4.26
+        },
+        {
+          "name": "109 Vir",
+          "bayer": "",
+          "ra": 221.5621,
+          "dec": 1.8928,
+          "mag": 3.72
+        },
+        {
+          "name": "Syrma",
+          "bayer": "ι",
+          "ra": 214.0037,
+          "dec": -6.0006,
+          "mag": 4.08
+        },
+        {
+          "name": "Rijl al Awwa",
+          "bayer": "μ",
+          "ra": 220.765,
+          "dec": -5.6583,
+          "mag": 3.88
+        }
+      ],
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          12,
+          13
+        ]
+      ]
+    }
+  ]
+}

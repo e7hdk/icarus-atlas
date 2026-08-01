@@ -14,6 +14,20 @@
       "year": "1861",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg/960px-Jean-Baptiste-Camille_Corot_-_Orpheus_Leading_Eurydice_from_the_Underworld_-_Google_Art_Project.jpg",
       "description": "Corot's silvery twilight catches the pair mid-passage: Orpheus lifts his lyre like a lantern while Eurydice follows a half-step behind, the fatal backward glance only moments away. Museum of Fine Arts, Houston."
+    },
+    {
+      "title": "Landscape with Orpheus and Eurydice",
+      "artist": "Nicolas Poussin",
+      "year": "c. 1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg/960px-Orph%C3%A9e_et_Eurydice_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7307_-_photo_2.jpg",
+      "description": "Poussin sets the Thracian singer in a classical landscape at the moment of Eurydice's death by snakebite — marriage crowns cast aside, smoke rising beyond the trees. The Louvre canvas makes Orpheus' music a calm centre against catastrophe."
+    },
+    {
+      "title": "Nymphs Finding the Head of Orpheus",
+      "artist": "John William Waterhouse",
+      "year": "1900",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/John_William_Waterhouse%2C_1900_-_Nymphs_finding_the_head_of_Orpheus%2C_1900_version.jpg",
+      "description": "Waterhouse paints the aftermath of the Thracian sparagmos: two nymphs lean over a woodland pool where Orpheus' severed head still rests upon his lyre. Pre-Raphaelite stillness turns the myth's most violent end into a quiet, haunted discovery."
     }
   ],
   "films": [
@@ -32,6 +46,22 @@
       "director": "Marcel Camus",
       "description": "The myth replayed across Rio de Janeiro's Carnival to the bossa nova of Jobim and Bonfá: a tram-driver Orpheus, a country-girl Eurydice, and Death in a skeleton suit. It took both the Palme d'Or and the Academy Award for Best Foreign Language Film.",
       "externalUrl": "https://en.wikipedia.org/wiki/Black_Orpheus"
+    },
+    {
+      "title": "Orfeu",
+      "year": "1999",
+      "medium": "film",
+      "director": "Carlos Diegues",
+      "description": "Diegues' Rio remake returns the myth to Carnival with a Black Brazilian cast and a Jobim-scored favela — Orpheus as the samba musician who cannot not look back.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orfeu"
+    },
+    {
+      "title": "Portrait of a Lady on Fire",
+      "year": "2019",
+      "medium": "film",
+      "director": "Céline Sciamma",
+      "description": "Sciamma's Brittany love story turns the Orpheus glance into its governing myth — the painter and the bride who know the ending and look anyway.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Portrait_of_a_Lady_on_Fire"
     }
   ],
   "music": [
@@ -58,6 +88,32 @@
       "composer": "Anaïs Mitchell",
       "description": "Mitchell's folk-and-jazz retelling grew from a concept album into a Broadway musical, setting Orpheus' vow against Hades' industrial underworld; it won eight Tony Awards including Best Musical.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hadestown"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Hades",
+      "year": "2020",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant stations Orpheus in the House of Hades as court musician — the lyre silenced by grief until Zagreus coaxes the Thracian singer back to song.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    {
+      "title": "Sonnets to Orpheus",
+      "year": "1923",
+      "kind": "other",
+      "creator": "Rainer Maria Rilke",
+      "description": "Rilke's fifty-five sonnets make the Thracian singer a modern emblem of transformation — song that outlasts the torn body.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Sonnets_to_Orpheus"
+    },
+    {
+      "title": "Orpheus Descending",
+      "year": "1957",
+      "kind": "other",
+      "creator": "Tennessee Williams",
+      "description": "Williams' Southern-gothic rewrite casts Orpheus as a guitar-playing stranger in a dry-goods store — the underworld as small-town America.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Orpheus_Descending"
     }
   ]
 }

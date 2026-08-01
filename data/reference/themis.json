@@ -1,19 +1,48 @@
 {
   "id": "themis",
-  "summary": "In Greek mythology and religion, Themis is the goddess and personification of justice, divine order, law, and custom. She is one of the twelve Titan children of Gaia and Uranus, and the second wife of Zeus. She is associated with oracles and prophecies, including the Oracle of Delphi.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology and religion, Themis is a Titaness, daughter of Uranus and Gaia, and the personification of divine justice, order, law, and custom. As a consort of Zeus she is mother of the Horae (including Dike, Eunomia, and Eirene) and, in Hesiod, of the Moirai. She is also an oracular goddess associated with Delphi and with the proper conduct of assemblies.",
+  "attribution": "Adapted from Wikipedia, \"Themis\" · CC BY-SA 4.0",
+  "etymology": "From Greek θέμις, \"that which is put in place,\" from τίθημι (títhēmi), \"to put.\" The word denotes divine or customary law rather than statute alone — right procedure, social order, and sometimes the revealed will of the gods. In the Homeric Hymn to Apollo she also bears the epithet Ichnaea, \"Tracker.\"",
+  "symbols": [
+    "Scales",
+    "Sword (in some Classical and later depictions)"
+  ],
+  "cultCenters": [
+    "Rhamnous (shared sanctuary with Nemesis)",
+    "Delphi (oracular succession traditions)",
+    "Dodona (temple beside Zeus's oracle)",
+    "Athens (temple west of the Theatre of Dionysus)",
+    "Thebes (sanctuary beside the Moirai)",
+    "Olympia (altar at the Stomion)",
+    "Tanagra",
+    "Phthiotis (Themis Ikhnaia)"
+  ],
+  "sections": [
+    {
+      "heading": "Name and domains",
+      "paragraphs": [
+        "Themis personifies divine law and established custom: the communal order of assemblies, the rightly ordered household, and the settled relations among gods. Homer uses themis for proper procedure and civilized order; judges could be called themistopóloi, \"servants of Themis.\" When she is disregarded, Nemesis may bring retribution — the two shared a sanctuary at Rhamnous — yet Themis herself is typically portrayed as sober and conciliatory rather than wrathful.",
+        "Classical art and later \"Lady Justice\" imagery often show a grave woman with scales (and sometimes a sword). Modern courthouse statues and dedications (including the Themis Building of the EU General Court) continue that personification; this atlas entry is the Titaness, not the modern allegorical figure alone."
+      ]
+    },
+    {
+      "heading": "Family and mythology",
+      "paragraphs": [
+        "Hesiod lists Themis among the twelve Titans and makes her Zeus's second wife, mother of the Horae — Eunomia (Good Order), Dike (Justice), and Eirene (Peace) — and of the Moirai Clotho, Lachesis, and Atropos. Variant genealogies include Hyginus (Aether and Earth as parents) and Prometheus Bound, which equates her with Gaia and makes her mother of Prometheus. A scholion on Euripides also names her mother of the Hesperides by Zeus.",
+        "She is strongly oracular: traditions say she built or held Delphi after Gaia and before Phoebe and Apollo, or that she helped Apollo establish the oracle for humankind. Myths credit her with warnings about Thetis's future son, advice to Deucalion after the flood (in Ovid), and counsel that stops the gods from fighting after the Trojan Horse. In the Iliad Zeus sends her to summon the Olympian council; she also witnesses Apollo's birth on Delos and nurses him with nectar and ambrosia."
+      ]
+    },
+    {
+      "heading": "Cult",
+      "paragraphs": [
+        "Pausanias and other sources record temples or altars at Dodona, Tanagra, Athens, Rhamnous, Olympia, Thebes (beside sanctuaries of the Moirai and Zeus Agoraios), Epidauros (shared with Aphrodite), and Phthiotis under the title Ikhnaia. She often appears in the sanctuaries of related deities rather than as a solitary major Olympian cult."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Themis"
     }
-  ],
-  "symbols": [
-    "scales of divine law"
-  ],
-  "cultCenters": [
-    "Delphi (held the oracle before Apollo)",
-    "Rhamnous"
-  ],
-  "etymology": "From tithenai, \"that which is laid down\" — divine law as the settled order."
+  ]
 }

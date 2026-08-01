@@ -1,6 +1,28 @@
 {
   "id": "mnemosyne",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Mnemosyne (The Lamp of Memory)",
+      "artist": "Dante Gabriel Rossetti",
+      "year": "1875–1881",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mnemosyne_Rossetti.jpg/960px-Mnemosyne_Rossetti.jpg",
+      "description": "An oil by Dante Gabriel Rossetti in the Delaware Art Museum, also called The Lamp of Memory. The Titaness of recollection holds a lamp and wears a dark, heavy gaze — Pre-Raphaelite Memory as longing made flesh, the mother of the Muses reimagined as a late-Victorian icon of remembrance."
+    },
+    {
+      "title": "Jupiter and Mnemosyne",
+      "artist": "Jacob de Wit",
+      "year": "1727",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jupiter%2C_vermomd_als_herder%2C_verleidt_Mnemosyne%2C_godin_van_het_geheugen%2C_SK-A-3886.jpg/960px-Jupiter%2C_vermomd_als_herder%2C_verleidt_Mnemosyne%2C_godin_van_het_geheugen%2C_SK-A-3886.jpg",
+      "description": "An oil by Jacob de Wit in the Rijksmuseum, Amsterdam (SK-A-3886). Jupiter, disguised as a shepherd, courts Mnemosyne in a pastoral landscape while his eagle wheels above — the nine nights that will father the Muses staged as Rococo gallantry, Memory herself the object of divine pursuit."
+    },
+    {
+      "title": "Wall Mosaic of Mnemosyne",
+      "artist": "Unknown Roman mosaicist",
+      "year": "Third quarter of the 2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mosa%C3%AFque_murale_Mn%C3%A9mosyne.jpg/960px-Mosa%C3%AFque_murale_Mn%C3%A9mosyne.jpg",
+      "description": "A Roman wall mosaic of the mid–late second century AD naming Mnemosyne, Memory personified among the powers that govern recollection. Tesserae rather than canvas: the Titaness as a cult and decorative presence in the Imperial house, the goddess whose name still anchors every mnemonic."
+    }
+  ],
   "popCulture": [
     {
       "title": "Mnemonic",

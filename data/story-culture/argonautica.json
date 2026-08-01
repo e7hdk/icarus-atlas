@@ -1,6 +1,42 @@
 {
   "id": "argonautica",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jason with the Golden Fleece",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1803 (marble 1828)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg/960px-Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg",
+      "description": "Thorvaldsen's neoclassical Jason after the Colchian ordeal — fleece on his arm, spear in hand, the Argonautica frozen at the prize won."
+    },
+    {
+      "title": "Jason and the Dragon (Douris cup)",
+      "artist": "Douris",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg",
+      "description": "Attic red-figure kylix: the dragon of the fleece swallows and disgorges Jason while Athena watches — one of antiquity's strangest images of the quest."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "John William Waterhouse",
+      "year": "1907",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Jason_and_Medea_-_John_William_Waterhouse.jpg/960px-Jason_and_Medea_-_John_William_Waterhouse.jpg",
+      "description": "Waterhouse stages the Colchian pact that makes the Argonautica possible: Medea mixes the charm while Jason waits to face Aeëtes' bulls."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg/960px-Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg",
+      "description": "Moreau's Salon canvas after the fleece is taken — Jason triumphant, Medea at his side, the voyage's eastern prize already shadowed by later betrayal."
+    },
+    {
+      "title": "Meeting of Jason and King Aeëtes",
+      "artist": "Annibale Carracci",
+      "year": "c. 1584",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg/960px-Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg",
+      "description": "Study for Carracci's Palazzo Fava Argonaut frieze: Jason before Aeëtes, the Colchian king who will price the Golden Fleece in fire-breathing bulls."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

@@ -4,6 +4,9 @@
   "greekName": "Ladōn (Λάδων)",
   "romanName": "Ladon",
   "type": "creature",
+  "kinds": [
+    "dragon"
+  ],
   "cluster": "chthonic",
   "domains": [
     "guardian of the golden apples",

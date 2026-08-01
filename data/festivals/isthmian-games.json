@@ -1,0 +1,17 @@
+{
+  "id": "isthmian-games",
+  "name": "Isthmian Games",
+  "greekName": "Ἴσθμια",
+  "deities": ["poseidon"],
+  "place": "isthmia",
+  "panhellenic": true,
+  "games": { "cycleYears": 2 },
+  "atticDate": { "month": "mounichion", "approximate": true },
+  "summary": "Poseidon's biennial crown games on the Corinthian Isthmus — pine, later wild celery, for the victors — instituted, the poets say, by Sisyphus over the drowned child Melicertes, renamed Palaemon.",
+  "testimonia": [
+    "Apollodorus, Bibliotheca 3.4.3 (Sisyphus institutes the Isthmian games for Melicertes)",
+    "Pausanias 2.1.3 (the boy brought ashore by a dolphin; the games on the Isthmus)",
+    "Hyginus, Fabulae 2 (contests every fifth year for Palaemon)",
+    "Calendar note: no baked Isthmian peak yet — Olympics alone use olympicPeak in the Attic reconstruction; Isthmia still awaits its own cycle anchor (not faked with annual conventionalDates)"
+  ]
+}

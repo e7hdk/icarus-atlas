@@ -18,10 +18,11 @@ export {
   type BakedStoryProse,
 } from './load-baked';
 export {
+  changedNames,
   characterLinkingSignature,
+  linkableNameOwners,
   linkingFileSignature,
   linkingNamesSignature,
-  linkingSignature,
   storyLinkingSignature,
 } from './linkingSignature';
 export { LINKED_PROSE_PARSER_VERSION, parseLinkedProse, type ProseSegment } from './parse-prose';

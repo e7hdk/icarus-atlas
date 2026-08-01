@@ -1,17 +1,40 @@
 {
   "id": "batia-naiad",
-  "summary": "Batia is a Naiad nymph in Greek mythology, named by Pseudo-Apollodorus as the consort of Oebalus and mother of Tyndareus, Hippocoon, and Icarius in one variant of the Spartan royal genealogy. She must be distinguished from Batia, the mortal daughter of Teucer whom Dardanus married in the Troad.",
+  "summary": "Batia is a Naiad nymph named by Pseudo-Apollodorus as consort of Oebalus and mother, in one variant, of Tyndareus, Hippocoon, and Icarius — the Spartan generation that includes the Dioscuri's father. She must be distinguished from Batia (or Bateia), mortal daughter of Teucer whom Dardanus married in the Troad.",
   "attribution": "Adapted from Wikipedia, \"Batia (mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Βάτεια / Βατία (Báteia / Batía); spelling varies in manuscripts and handbooks.",
+  "symbols": [
+    "Spartan royal motherhood"
+  ],
+  "cultCenters": [
+    "Laconia (Oebalus' house)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Spartan genealogy",
       "paragraphs": [
-        "In Bibliotheca 3.10.4 Apollodorus reports that Oebalus begat Tyndareus, Hippocoon, and Icarius by a Naiad nymph Batia — an alternative to the tradition making Gorgophone their mother.",
-        "A separate Batia appears at 3.12.1 as the daughter of Teucer and wife of Dardanus; that princess is not the Spartan nymph."
+        "In Bibliotheca 3.10.4 Apollodorus reports that Oebalus begat Tyndareus, Hippocoon, and Icarius by a Naiad nymph Batia. That stemma is an alternative to the widespread tradition in which Gorgophone, daughter of Perseus, is their mother.",
+        "Through Tyndareus and Icarius the Batia variant still feeds the Dioscuri, Helen, and Penelope lines; only the maternal name changes."
+      ]
+    },
+    {
+      "heading": "Variant against Gorgophone",
+      "paragraphs": [
+        "Most later summaries prefer Gorgophone as Oebalus' wife. Apollodorus' Naiad Batia preserves a local or handbook alternative in which the Spartan kings' mother is a water nymph rather than a Perseïd princess.",
+        "The coexistence of the two mothers is a typical Greek genealogical fork; both are attested, neither should be silently deleted."
+      ]
+    },
+    {
+      "heading": "Homonym in the Troad",
+      "paragraphs": [
+        "A separate Batia (Bateia) appears as daughter of Teucer and wife of Dardanus, mother of Ilus and Erichthonius in Trojan stemma (Apollodorus 3.12.1). That princess is a mortal eponym of the Troad, not the Laconian Naiad; the atlas keeps them apart."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Batia_(mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Batia_(mythology)"
+    }
   ]
 }

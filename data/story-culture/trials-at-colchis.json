@@ -1,6 +1,35 @@
 {
   "id": "trials-at-colchis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jason Taming the Bulls of Aeëtes",
+      "artist": "Jean-François de Troy",
+      "year": "1742",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Jean-Fran%C3%A7ois_de_Troy_-_Jason_Taming_the_Bulls_of_Ae%C3%ABtes%2C_1742.jpg",
+      "description": "De Troy's Jason taming Aeëtes' fire-breathing bulls — the first Colchian labour Medea's charms let him survive."
+    },
+    {
+      "title": "Jason and the Dragon (Douris cup)",
+      "artist": "Douris",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg",
+      "description": "The Douris cup: Jason and the Dragon — the sleepless serpent that guards the Fleece at the trial's end."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "John William Waterhouse",
+      "year": "1907",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Jason_and_Medea_-_John_William_Waterhouse.jpg/960px-Jason_and_Medea_-_John_William_Waterhouse.jpg",
+      "description": "Waterhouse's Jason and Medea — the Colchian enchantress preparing the drugs that make the king's trials survivable."
+    },
+    {
+      "title": "Meeting of Jason and King Aeëtes",
+      "artist": "Annibale Carracci",
+      "year": "c. 1584",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg/960px-Annibale_Carracci_-_Meeting_of_Jason_and_King_Ae%C3%ABtes.jpg",
+      "description": "Carracci's Meeting of Jason and King Aeëtes — the court where the impossible labours are set."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

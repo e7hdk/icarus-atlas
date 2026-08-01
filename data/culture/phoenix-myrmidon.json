@@ -1,6 +1,28 @@
 {
   "id": "phoenix-myrmidon",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Embassy to Achilles (Attic red-figure hydria, Munich)",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Akhilleus_embassy_Staatliche_Antikensammlungen_8770.jpg/960px-Akhilleus_embassy_Staatliche_Antikensammlungen_8770.jpg",
+      "description": "On this Attic red-figure hydria in Munich, Phoenix and Odysseus stand before the sulking Achilles — Iliad 9 made visible. Phoenix is the foster-father whose Meleager parable will fail to move the hero. Staatliche Antikensammlungen."
+    },
+    {
+      "title": "The Embassy to Achilles (Attic red-figure cup, Louvre G146)",
+      "artist": "Ambassador Painter (attributed)",
+      "year": "c. 480 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Akhilleus_embassy_Louvre_G146.jpg/960px-Akhilleus_embassy_Louvre_G146.jpg",
+      "description": "Louvre G146 names the ambassadors of Iliad 9: Phoenix, Ajax, and Odysseus before Achilles in his hut. The old tutor appears as the diplomatic voice Homer gives him — persuasion before the wrath."
+    },
+    {
+      "title": "Achilles Receiving the Ambassadors of Agamemnon",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "year": "1801",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jean-Auguste-Dominique_Ingres_-_Achilles_Receiving_the_Ambassadors_of_Agamemnon%2C_1801.jpg/960px-Jean-Auguste-Dominique_Ingres_-_Achilles_Receiving_the_Ambassadors_of_Agamemnon%2C_1801.jpg",
+      "description": "Ingres' Prix de Rome canvas restages the embassy: Odysseus speaks while Phoenix and Ajax attend Achilles and Patroclus. Neoclassical calm for the tutor who raised the hero and cannot bring him back to battle."
+    }
+  ],
   "popCulture": [
     {
       "title": "Phoenix (son of Amyntor)",

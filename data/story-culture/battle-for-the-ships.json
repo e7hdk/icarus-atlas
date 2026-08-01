@@ -1,6 +1,35 @@
 {
   "id": "battle-for-the-ships",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Battle of the Ships (Ambrosian Iliad)",
+      "artist": "Unknown (Ambrosian Iliad illuminator)",
+      "year": "5th century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Battle_of_the_Ships_in_the_Ambrosian_Iliad.jpg/960px-Battle_of_the_Ships_in_the_Ambrosian_Iliad.jpg",
+      "description": "Milan, Biblioteca Ambrosiana Cod. F. 205 Inf.: late antique miniature of the fight at the hulls — Hector's push to the Achaean ships as Homer's crisis of Books XIII–XVI."
+    },
+    {
+      "title": "The Siege of the Greek Camp (Ambrosian Iliad)",
+      "artist": "Unknown (Ambrosian Iliad illuminator)",
+      "year": "5th century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Siege_of_the_Greek_Camp_in_the_Ambrosian_Iliad.jpg/960px-The_Siege_of_the_Greek_Camp_in_the_Ambrosian_Iliad.jpg",
+      "description": "Ambrosian Iliad: Trojans pressing the Greek camp and ships — the wall broken, the fleet at stake before Patroclus enters the fight."
+    },
+    {
+      "title": "Ajax Defending the Greek Ships against the Trojans",
+      "artist": "John Flaxman",
+      "year": "1793 (published 1895)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ajax_defending_the_Greek_Ships_against_the_Trojans.jpg/960px-Ajax_defending_the_Greek_Ships_against_the_Trojans.jpg",
+      "description": "Flaxman's outline for Church's Story of the Iliad: Telamonian Ajax alone at the prow while Hector calls for fire — the ship-fight distilled to a single stubborn defence."
+    },
+    {
+      "title": "Polydamas Advising Hector to Retire from the Trench",
+      "artist": "John Flaxman",
+      "year": "1793 (published 1895)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Polydamus_advising_Hector_to_retire_from_the_trench.jpg/960px-Polydamus_advising_Hector_to_retire_from_the_trench.jpg",
+      "description": "Flaxman: Polydamas urges caution at the trench before Hector presses on to the ships — the omen ignored on the road to the fleet."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

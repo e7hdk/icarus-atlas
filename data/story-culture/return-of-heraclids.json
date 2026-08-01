@@ -1,6 +1,28 @@
 {
   "id": "return-of-heraclids",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Heraclidae Drawing Lots for the Peloponnese (engraving of an antique gem)",
+      "artist": "Unknown (engraving after C. W. King, 1869)",
+      "year": "1869",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Robbins_Heraclidae_gem_1869.jpg",
+      "description": "Engraving after the antique gem — the Heraclidae drawing lots for Argos, Messenia, and Sparta, the Return's partition."
+    },
+    {
+      "title": "The Heraclidae Drawing Lots (woodcut of a Graeco-Roman engraved gem)",
+      "artist": "Unknown (woodcut published by C. W. King)",
+      "year": "1869 (after a 1st-century BCE gem)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Woodcut_of_a_Roman_gem_showing_three_warriors_drawing_lots_from_an_urn_%28BNF%2C_Cabinet_des_M%C3%A9dailles%2C_Luynes.110%29.jpg",
+      "description": "King's woodcut of the Roman gem — three warriors at the urn, Temenus, Cresphontes, and Aristodemus casting for the Peloponnese."
+    },
+    {
+      "title": "Lucanian Red-Figure Column Krater with the Children of Herakles (Herakleidai)",
+      "artist": "Attributed to the circle of the Policoro Painter",
+      "year": "c. 400 BCE",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Lucanian_RF_column_krater_-_Herakleidai_%28Berlin_Ant_1969.9%29.jpg/960px-Lucanian_RF_column_krater_-_Herakleidai_%28Berlin_Ant_1969.9%29.jpg",
+      "description": "Lucanian krater — the children of Heracles, the exile line that will reclaim the Peloponnese in the Return."
+    }
+  ],
   "popCulture": [
     {
       "title": "Heracleidae",

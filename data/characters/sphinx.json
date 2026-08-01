@@ -3,6 +3,9 @@
   "name": "Sphinx",
   "greekName": "Sphigx (Σφίγξ)",
   "type": "creature",
+  "kinds": [
+    "sphinx"
+  ],
   "domains": [
     "the riddle",
     "the plague of Thebes"

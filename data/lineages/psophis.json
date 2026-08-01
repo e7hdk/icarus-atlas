@@ -1,0 +1,19 @@
+{
+  "city": "psophis",
+  "reigns": [
+    {
+      "ruler": "Phegeus",
+      "characterId": "phegeus-psophis",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 3.7.5–6; Paus. 8.24.2, 8.24.8–10; Hyg. Fab. 245",
+      "note": "King of the Arcadian city then called Phegia (Erymanthus before his reign). Apollodorus has him purify the exiled matricide Alcmaeon, give him Arsinoe in marriage with Harmonia's necklace and robe, then — when Alcmaeon returned for the heirlooms — order his sons to kill the guest. Pausanias names the bride Alphesiboea and keeps Alcmaeon's tomb at Psophis; Hyginus counts Phegeus among those who slew their sons-in-law. Alcmaeon is attested as purified guest and son-in-law, not as king."
+    },
+    {
+      "ruler": "Pronous and Agenor",
+      "characterIds": ["pronous-psophis", "agenor-psophis"],
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Bibliotheca 3.7.5–6; Paus. 8.24.10, 9.41.2",
+      "note": "Sons of Phegeus who murdered Alcmaeon over the necklace and dedicated it at Delphi. Pausanias says they were kings of still-named Phegia when the Greeks sailed for Troy, and that Psophis sat out the war because its princes had earned the enmity of Alcmaeon's Argive kin; he names the pair Temenus and Axion. Apollodorus instead names Pronous and Agenor, slain at Agapenor's house by Amphoterus and Acarnan, who then killed Phegeus and his wife in the palace — ending the house."
+    }
+  ]
+}

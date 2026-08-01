@@ -1,6 +1,28 @@
 {
   "id": "priam-and-ransom",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Priam Asking Achilles for the Body of Hector",
+      "artist": "Alexander Ivanov",
+      "year": "1824",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Alexandr_Ivanov_005.jpg/960px-Alexandr_Ivanov_005.jpg",
+      "description": "Ivanov's tent — Priam kissing Achilles' hands for Hector's body, Iliad XXIV as Russian neoclassical mercy."
+    },
+    {
+      "title": "Priam Pleading with Achilles for the Body of Hector",
+      "artist": "Gavin Hamilton",
+      "year": "1775",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Gavin_Hamilton_%281723-1798%29_-_Priam_Pleading_with_Achilles_for_the_Body_of_Hector_-_T00864_-_Tate.jpg/960px-Gavin_Hamilton_%281723-1798%29_-_Priam_Pleading_with_Achilles_for_the_Body_of_Hector_-_T00864_-_Tate.jpg",
+      "description": "Hamilton's ransom — the old king pleading before the seated hero, the poem's quietest and greatest scene of pity."
+    },
+    {
+      "title": "Priam at the Feet of Achilles",
+      "artist": "Jérôme-Martin Langlois",
+      "year": "1809",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Langlois_Priam_aux_pieds_d%27Achille.JPG/960px-Langlois_Priam_aux_pieds_d%27Achille.JPG",
+      "description": "Langlois' Priam at Achilles' feet — the ransom that ends the Iliad not with Troy's fall but with shared grief."
+    }
+  ],
   "films": [
     {
       "title": "Troy",

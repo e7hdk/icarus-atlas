@@ -1,17 +1,14 @@
 {
   "id": "poseidon",
-  "summary": "Poseidon is one of the twelve Olympians in ancient Greek religion and mythology, presiding over the sea, storms, earthquakes and horses. He was the protector of seafarers and the guardian of many Hellenic cities and colonies. In pre-Olympian Bronze Age Greece, Poseidon was venerated as a chief deity at Pylos and Thebes, with the cult title \"earth shaker\"; in the myths of isolated Arcadia, he is related to Demeter and Despoina and was venerated as a horse, and as a god of the waters. Poseidon maintained both associations among most Greeks: he was regarded as the tamer or father of horses, who, with a strike of his trident, created springs. His Roman equivalent is Neptune.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Poseidon"
-    }
-  ],
+  "summary": "Poseidon is one of the twelve Olympians in ancient Greek religion and mythology, god of the sea, storms, earthquakes, and horses. Protector of seafarers and patron of many Hellenic cities and colonies, he was already a chief deity in Bronze Age Pylos and Thebes under the cult title \"earth-shaker.\" With a strike of his trident he creates springs and is father or tamer of horses. His Roman equivalent is Neptune.",
+  "attribution": "Adapted from Wikipedia, \"Poseidon\" · CC BY-SA 4.0",
+  "etymology": "Mycenaean Po-se-da-o / Po-se-da-wo-ne (Poseidaōn). One theory reads posis (\"husband/lord\") + Doric da (\"earth\") as \"lord of the earth\"; another links the second element to water (dâwon). Burkert finds \"husband of Earth\" unprovable; Beekes prefers a Pre-Greek origin. Plato's Cratylus offers playful \"foot-bond\" and \"knowing many things\" readings. Epithets include Ennosigaios / Ennosidas, \"earth-shaker.\"",
   "symbols": [
     "trident",
     "dolphin",
-    "horse"
+    "fish",
+    "horse",
+    "bull"
   ],
   "sacredAnimals": [
     "horse",
@@ -21,7 +18,40 @@
   "cultCenters": [
     "Isthmia (Corinth)",
     "Cape Sounion",
-    "Helike"
+    "Helike",
+    "Pylos (Mycenaean)",
+    "Onchestos"
   ],
-  "etymology": "Often read as posis + da, \"lord of the earth\" — discussed since antiquity, never settled."
+  "sections": [
+    {
+      "heading": "Division of the cosmos",
+      "paragraphs": [
+        "Homer reports that after the Titans' overthrow Cronus's three sons drew lots: Zeus took the sky, Hades the underworld, and Poseidon the sea, while earth and Olympus remained common. He supports the Greeks in the Iliad; in the Odyssey he relentlessly punishes Odysseus for blinding his son Polyphemus, wrecking the fleet and delaying the nostos by ten years. Plato's Atlantis is his domain."
+      ]
+    },
+    {
+      "heading": "Bronze Age and Arcadian horse-god",
+      "paragraphs": [
+        "Linear B tablets mention Poseidon more often than Zeus at Pylos, with a feminine Po-se-de-ia and the title wa-na-ka (wanax). He is \"earth-shaker\" (E-ne-si-da-o-ne) and closely paired with Potnia. In Arcadia and Boeotia he mates in stallion form with Demeter or Erinys, begetting the horse Arion and — at Thelpusa and Phigalia — an unnamed daughter (Despoina) whose true name initiates alone may hear. Burkert links the horse cult to the arrival of the war-chariot around 1600 BCE."
+      ]
+    },
+    {
+      "heading": "Contests and offspring",
+      "paragraphs": [
+        "Athena wins the patronage of Athens after their contest on the Acropolis; Poseidon offers a salt spring (or horse), Athena the olive, and in anger he floods the Attic plain — yet he remains present through the Erechtheus cult. Similar city contests recur elsewhere. By Amphitrite he is husband of the sea's queen; among countless other unions he fathers heroes, monsters, and horses, including (by Medusa) Pegasus."
+      ]
+    },
+    {
+      "heading": "Cult and temples",
+      "paragraphs": [
+        "Major sanctuaries include the Isthmian Games at Corinth, the cliff temple at Cape Sounion, and Helike before its destruction. He received bull sacrifice; horses and springs remain linked in language and folklore. As Hippios he was worshipped across Arcadia; as Helikonios his Boeotian and Ionian cults featured horseracing."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Poseidon"
+    }
+  ]
 }

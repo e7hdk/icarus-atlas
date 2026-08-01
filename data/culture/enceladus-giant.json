@@ -1,6 +1,35 @@
 {
   "id": "enceladus-giant",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Athena and Enceladus",
+      "artist": "Unknown (Attic black-figure)",
+      "year": "c. 520 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Athena_Enkelados_Staatliche_Antikensammlungen_1612.jpg/960px-Athena_Enkelados_Staatliche_Antikensammlungen_1612.jpg",
+      "description": "Attic black-figure amphora from Vulci: Athena closes on the Giant Enceladus in the Gigantomachy — the earthborn who will be crushed beneath Sicily, not the icy moon that later borrowed his name."
+    },
+    {
+      "title": "Artemis and Enceladus (Temple E metope, Selinus)",
+      "artist": "Unknown (Temple E of Selinus)",
+      "year": "c. 450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/DSC00405_-_Tempio_E_di_Selinunte_-_Artemide_ed_Encelado_-_Ca._450_a.C._-_Foto_G._Dall%27Orto.jpg/960px-DSC00405_-_Tempio_E_di_Selinunte_-_Artemide_ed_Encelado_-_Ca._450_a.C._-_Foto_G._Dall%27Orto.jpg",
+      "description": "Classical metope from Temple E at Selinus: Artemis spears the falling Giant — Enceladus in stone combat, the Gigantomachy carved for a Sicilian temple that stands over the myth's volcanic ground."
+    },
+    {
+      "title": "Fountain of Enceladus",
+      "artist": "Gaspard Marsy",
+      "year": "1675–1676",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Eug%C3%A8ne_Atget_-_Versailles%2C_Fountain_of_Enceladus_-_1985.117_-_Cleveland_Museum_of_Art.jpg/960px-Eug%C3%A8ne_Atget_-_Versailles%2C_Fountain_of_Enceladus_-_1985.117_-_Cleveland_Museum_of_Art.jpg",
+      "description": "Marsy's gilded-lead Giant writhes under rock in the Versailles bosquet — Enceladus buried as at Etna, water standing in for volcanic fire. Photographed by Eugène Atget for the Cleveland Museum of Art."
+    },
+    {
+      "title": "Trojans Land Near Mount Etna; Beneath Lies the Giant Enceladus",
+      "artist": "Master of the Aeneid",
+      "year": "c. 1530–1535",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Trojans_Land_Near_Mount_Etna%3B_Beneath_Lies_the_Giant_Enceladus_%28Aeneid%2C_Book_III%29_MET_ES770.jpg",
+      "description": "Limoges enamel plaque (Metropolitan Museum): the Trojans beach under Etna while the Giant Enceladus lies crushed beneath the mountain — Virgil's etiology of Sicilian fire cast in Renaissance enamel."
+    }
+  ],
   "artifacts": [
     {
       "title": "Athena and Enceladus",

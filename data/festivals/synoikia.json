@@ -1,0 +1,17 @@
+{
+  "id": "synoikia",
+  "name": "Synoikia",
+  "greekName": "Συνοίκια",
+  "deities": ["athena"],
+  "place": "athens",
+  "atticDate": { "month": "hekatombaion", "days": [16] },
+  "conventionalDates": ["07-16"],
+  "aition": "theseus-cycle",
+  "summary": "Athena's feast of the synoecism — the day Athens kept for Theseus' uniting of the Attic demes into one city, with sacrifice on the Acropolis early in the civic year.",
+  "testimonia": [
+    "Thucydides 2.15.1–2 (Theseus synoecises Attica; the Synoikia still kept)",
+    "Plutarch, Theseus 24.1–4 (the synoecism and the festival)",
+    "Mikalson (1975) 31 (16 Hekatombaion)",
+    "Deubner, Attische Feste (1932) 36–38"
+  ]
+}

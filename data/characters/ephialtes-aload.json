@@ -4,6 +4,9 @@
   "greekName": "Ephialtes (Ἐφιάλτης)",
   "romanName": "Ephialtes",
   "type": "creature",
+  "kinds": [
+    "giant"
+  ],
   "domains": [
     "giant stature",
     "war on the gods",
@@ -69,7 +72,10 @@
   "residences": [
     {
       "city": "naxos",
-      "sources": ["apollodorus", "pausanias"],
+      "sources": [
+        "apollodorus",
+        "pausanias"
+      ],
       "citation": "Bibliotheca 1.7.4; Description of Greece 9.22.6"
     }
   ]

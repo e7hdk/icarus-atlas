@@ -1,6 +1,28 @@
 {
   "id": "chryseis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Odysseus Returns Chryseis to Her Father",
+      "artist": "Claude Lorrain",
+      "year": "1644",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/CF6640_Louvre_Claude_Gellee_Ulysse_remet_Chryseis_INV4718_v3_rwk.jpg/960px-CF6640_Louvre_Claude_Gellee_Ulysse_remet_Chryseis_INV4718_v3_rwk.jpg",
+      "description": "Claude stages the Iliad's first reconciliation as a luminous seaport: Odysseus escorts Chryseis back to Chryses amid classical quays and morning light. The priest's daughter whose ransom opened Book I becomes a quiet figure in a vast harbour world. Oil on canvas, Musée du Louvre, Paris."
+    },
+    {
+      "title": "Chryseis Returned to Her Father",
+      "artist": "Benjamin West",
+      "year": "1771",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Chryseis_returned_to_her_Father_1865_1.jpeg",
+      "description": "West's grand-manner canvas reunites Chryses with his daughter after Apollo's plague forced Agamemnon's hand — the priest's prayer answered, the captive restored beneath the god's statue. A companion piece in the New-York Historical Society's collection, it treats Chryseis as the moral hinge of Iliad Book I."
+    },
+    {
+      "title": "Chryses Ransoming Chryseis from Agamemnon",
+      "artist": "Painter of Athens 1714",
+      "year": "c. 360–350 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Chryses_Agamemnon_Louvre_K1.jpg/960px-Chryses_Agamemnon_Louvre_K1.jpg",
+      "description": "Side A of an Apulian red-figure volute-krater from Taranto shows Chryses pleading before Agamemnon for his daughter's return — the Homeric embassy that Agamemnon refuses, unleashing Apollo's arrows. Chryseis stands as the contested prize at the origin of the Achaean quarrel. Musée du Louvre, Paris."
+    }
+  ],
   "popCulture": [
     {
       "title": "Iliad",

@@ -1,6 +1,35 @@
 {
   "id": "oresteia",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Clytemnestra",
+      "artist": "John Collier",
+      "year": "1882",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Collier-Clytemnestra_after_the_murder.jpg",
+      "description": "Collier's queen after the murder that opens Aeschylus' trilogy — bloodied axe, bare feet on the threshold, Agamemnon already dead inside the house the Oresteia must avenge."
+    },
+    {
+      "title": "Electra at the Tomb of Agamemnon",
+      "artist": "Frederic Leighton",
+      "year": "1869",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/1869_Frederic_Leighton_-_Electra_at_the_Tomb_of_Agamemnon.jpg/960px-1869_Frederic_Leighton_-_Electra_at_the_Tomb_of_Agamemnon.jpg",
+      "description": "Leighton's Electra at her father's Mycenaean tomb — the Libation Bearers' vigil before Orestes returns and the axe falls again."
+    },
+    {
+      "title": "Orestes Pursued by the Furies",
+      "artist": "William-Adolphe Bouguereau",
+      "year": "1862",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Orestes_Pursued_by_the_Furies_by_William-Adolphe_Bouguereau_%281862%29_-_Google_Art_Project.jpg/960px-Orestes_Pursued_by_the_Furies_by_William-Adolphe_Bouguereau_%281862%29_-_Google_Art_Project.jpg",
+      "description": "Bouguereau's remorse after the matricide — Orestes recoiling as the Erinyes throng, the Oresteia's blood-guilt before Athens' court."
+    },
+    {
+      "title": "The Ghost of Clytemnestra Awakening the Furies",
+      "artist": "John Downman",
+      "year": "1781",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/John_Downman_-_The_Ghost_of_Clytemnestra_Awakening_the_Furies_-_Google_Art_Project.jpg/960px-John_Downman_-_The_Ghost_of_Clytemnestra_Awakening_the_Furies_-_Google_Art_Project.jpg",
+      "description": "Downman stages the Eumenides' opening: the murdered queen's shade rises to rouse the sleeping Erinyes against her son Orestes. Clytemnestra appears after death as the engine of the Oresteia's final pursuit — blood calling for blood. Oil on panel, Yale Center for British Art."
+    }
+  ],
   "films": [
     {
       "title": "Electra",

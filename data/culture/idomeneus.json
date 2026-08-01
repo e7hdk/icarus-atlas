@@ -1,6 +1,28 @@
 {
   "id": "idomeneus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Return of Idomeneus",
+      "artist": "Jacques Gamelin",
+      "year": "18th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Le_retour_d%27Idom%C3%A9d%C3%A9e.JPG/960px-Le_retour_d%27Idom%C3%A9d%C3%A9e.JPG",
+      "description": "Jacques Gamelin's painting of the Cretan king's nostos, now in the Musée des Augustins (Palais Niel), Toulouse, stages the storm-tossed return that will force Idomeneus into his fatal vow to Neptune. The canvas belongs to the French academic tradition that treated Homeric homecomings as moral dramas of oath, sacrifice, and exile."
+    },
+    {
+      "title": "Megarian bowl with Idomeneus (fragmentary)",
+      "artist": "Unknown (Hellenistic Greek)",
+      "year": "2nd century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Megarian_bowl%2C_fragmentary_MET_DP107327.jpg/960px-Megarian_bowl%2C_fragmentary_MET_DP107327.jpg",
+      "description": "A fragmentary Megarian relief bowl in the Metropolitan Museum of Art (1980.11.2a–c) names the Cretan king in clay: from left to right, inscribed Idomeneus attacks Phaistos as he steps into his chariot, while Athena and Ares watch Homeric duels from the banks of the Skamandros. The bowl closely follows Iliad 5 — one of the rare ancient vessels to label Idomeneus by name."
+    },
+    {
+      "title": "Hegesippus Summons Philocles at Idomeneus' Request",
+      "artist": "Jean-Baptiste Tilliard (after Charles Monnet)",
+      "year": "1785",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hegesippus_ontbiedt_Philokles_terug_te_komen_op_verzoek_van_Idomeneus%2C_RP-P-1905-970.jpg/960px-Hegesippus_ontbiedt_Philokles_terug_te_komen_op_verzoek_van_Idomeneus%2C_RP-P-1905-970.jpg",
+      "description": "An etching from the 1785 Didot edition of Fénelon's Les Aventures de Télémaque shows Idomeneus seated beneath a tree reading a letter while Hegesippus stands beside him. In Fénelon's political romance the Homeric Cretan king becomes a ruler whose court Telemachus must navigate — the mythological Idomeneus translated into Enlightenment didactic fiction."
+    }
+  ],
   "music": [
     {
       "title": "Idomeneo",

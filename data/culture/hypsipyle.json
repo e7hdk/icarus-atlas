@@ -1,6 +1,35 @@
 {
   "id": "hypsipyle",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Landscape with Hypsipyle and Opheltes",
+      "artist": "Johann Christian Reinhart",
+      "year": "1816",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Landscape_with_Hypsipyle_and_Opheltes_by_J.C.Reinhart_%281816%2C_Karlsruhe%29.jpg/960px-Landscape_with_Hypsipyle_and_Opheltes_by_J.C.Reinhart_%281816%2C_Karlsruhe%29.jpg",
+      "description": "Johann Christian Reinhart's classical landscape at the Staatliche Kunsthalle Karlsruhe sets the Lemnian queen Hypsipyle in an Arcadian Nemean wilderness with the infant Opheltes (Archemoros). The painting freezes the quiet before the snake-strike that will found the Nemean Games — Hypsipyle as nurse and tragic witness rather than Argonaut queen."
+    },
+    {
+      "title": "Stone figurine of Hypsipyle with Opheltes",
+      "artist": "Unknown (Late Archaic / early Classical)",
+      "year": "c. 500 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Stone_figurine%2C_Hypsipyle%2C_Opheltes%2C_ca_500_BC%2C_AM_of_Nemea%2C_SS_3%2C_201815.jpg/960px-Stone_figurine%2C_Hypsipyle%2C_Opheltes%2C_ca_500_BC%2C_AM_of_Nemea%2C_SS_3%2C_201815.jpg",
+      "description": "An eroded stone figurine from the shrine of the hero Opheltes at Nemea, now in the Archaeological Museum of Nemea, shows a woman — almost certainly Hypsipyle — holding a child to her breast. Late Archaic or early Classical in date, it is among the rare cult objects that place the Lemnian exile at the heart of the Nemean hero-cult she accidentally founded."
+    },
+    {
+      "title": "Hypsipyle Finds Opheltes Killed by a Snake",
+      "artist": "Karl Ludwig Friedrich Becker",
+      "year": "mid-19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Hypsipyle_findet_den_von_einer_Schlange_get%C3%B6teten_Opheltes.jpg",
+      "description": "Karl Ludwig Friedrich Becker's mural for the Niobidensaal of Berlin's Neues Museum (destroyed) staged the instant Hypsipyle discovers the infant Opheltes slain by a serpent — the catastrophe that turns a forgotten Lemnian nurse into the aetiology of the Nemean Games. The surviving reproduction keeps the nineteenth-century museum's reading of her as a figure of horrified recognition."
+    },
+    {
+      "title": "Opheltes Ensnared by the Snake",
+      "artist": "K. A. Baumeister (after Braun)",
+      "year": "19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Archemoros_119.png/960px-Archemoros_119.png",
+      "description": "A nineteenth-century line reconstruction after an ancient bas-relief, published by K. A. Baumeister, shows the infant Opheltes (Archemoros) strangled in the coils of the Nemean serpent — the death Hypsipyle failed to prevent when she left the child to guide the Seven against Thebes to a spring. The print preserves the visual type through which Hypsipyle's Nemean tragedy entered modern handbooks."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

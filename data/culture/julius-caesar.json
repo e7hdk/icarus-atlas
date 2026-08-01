@@ -1,0 +1,48 @@
+{
+  "id": "julius-caesar",
+  "artworks": [
+    {
+      "title": "The Death of Caesar",
+      "artist": "Jean-Léon Gérôme",
+      "year": "1859–1867",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_The_Death_of_Caesar_-_Walters_37884.jpg/960px-Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_The_Death_of_Caesar_-_Walters_37884.jpg",
+      "description": "Gérôme’s Walters canvas freezes the Ides: Caesar fallen, conspirators exiting the Curia. Academic history painting is the modern image of the dictator Ovid will soon lift to a comet — murder as the hinge before apotheosis."
+    }
+  ],
+  "films": [
+    {
+      "title": "Julius Caesar",
+      "year": "1953",
+      "medium": "film",
+      "director": "Joseph L. Mankiewicz",
+      "description": "Mankiewicz’s Shakespeare film (Brando as Antony) keeps Caesar’s assassination and funeral as mid-century screen classics of the Roman dictator.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Julius_Caesar_(1953_film)"
+    },
+    {
+      "title": "Cleopatra",
+      "year": "1963",
+      "medium": "film",
+      "director": "Joseph L. Mankiewicz",
+      "description": "Rex Harrison’s Caesar opposite Taylor’s Cleopatra — Hollywood’s grandest staging of the dictator’s Egyptian years before the knives of the Senate.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Cleopatra_(1963_film)"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Metamorphoses XV (apotheosis of Caesar)",
+      "year": "c. 8 AD",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Ovid’s poem — our atlas hinge — turns the murdered dictator into a star: Venus snatches Caesar’s soul to heaven as a comet, proof metamorphosis still happens in Augustan Rome.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Julius_Caesar"
+    },
+    {
+      "title": "Julius Caesar",
+      "year": "1599",
+      "kind": "other",
+      "creator": "William Shakespeare",
+      "description": "Shakespeare’s tragedy makes Caesar’s death and Antony’s funeral the English stage’s lasting dossier of ambition, friendship, and the Ides.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Julius_Caesar_(play)"
+    }
+  ]
+}

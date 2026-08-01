@@ -1,6 +1,28 @@
 {
   "id": "orpheus-death",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Nymphs Finding the Head of Orpheus",
+      "artist": "John William Waterhouse",
+      "year": "1900",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/John_William_Waterhouse%2C_1900_-_Nymphs_finding_the_head_of_Orpheus%2C_1900_version.jpg",
+      "description": "Waterhouse paints the aftermath of the Thracian sparagmos: two nymphs lean over a woodland pool where Orpheus' severed head still rests upon his lyre. Pre-Raphaelite stillness turns the myth's most violent end into a quiet, haunted discovery."
+    },
+    {
+      "title": "Orpheus",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg/960px-Gustave_Moreau_-_Orpheus_-_Google_Art_Project.jpg",
+      "description": "A Thracian girl cradles Orpheus' severed head where it has come to rest on his own lyre, head and instrument fused into a single relic. Moreau turns the myth's most violent moment into still, jewelled mourning; the painting entered the French state collections in his lifetime and now hangs in the Musée d'Orsay, Paris."
+    },
+    {
+      "title": "The Death of Orpheus",
+      "artist": "Albrecht Dürer",
+      "year": "1494",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Albrecht_D%C3%BCrer_-_The_Death_of_Orpheus%2C_1494_-Hamburger_Kunsthalle%2C_Kupferstichkabinett.jpg/960px-Albrecht_D%C3%BCrer_-_The_Death_of_Orpheus%2C_1494_-Hamburger_Kunsthalle%2C_Kupferstichkabinett.jpg",
+      "description": "Dürer's Hamburg drawing — Thracian women killing the bard who refused their love after Eurydice, Northern Renaissance violence for Apollodorus' and Ovid's Maenad murder."
+    }
+  ],
   "films": [
     {
       "title": "Black Orpheus",
@@ -18,6 +40,14 @@
       "kind": "other",
       "description": "The head that still sings after the Maenads — Orpheus' death remains the poet's martyrdom in Western art.",
       "externalUrl": "https://en.wikipedia.org/wiki/Orpheus"
+    },
+    {
+      "title": "Metamorphoses",
+      "year": "AD 8",
+      "kind": "other",
+      "creator": "Ovid",
+      "description": "Book 11 — the Ciconian women drown Orpheus' song with drums, then tear him; Bacchus roots the killers into oaks.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Metamorphoses"
     }
   ]
 }

@@ -1,6 +1,42 @@
 {
   "id": "polyphemus-cyclops",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Blinding of Polyphemus",
+      "artist": "Alessandro Allori",
+      "year": "c. 1580",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Alessandro_Allori_-_The_Blinding_of_Polyphemus.jpg/960px-Alessandro_Allori_-_The_Blinding_of_Polyphemus.jpg",
+      "description": "Allori's Mannerist canvas stages the climax of Odyssey 9: Odysseus and his comrades drive the heated olive stake into the single eye of the sleeping Cyclops. The giant sprawls in drunken collapse while the Greeks lean into the thrust — the night-time vengeance that answers Polyphemus' cannibal hospitality and opens the road of escape under the rams."
+    },
+    {
+      "title": "Odysseus and Polyphemus",
+      "artist": "Arnold Böcklin",
+      "year": "1896",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Arnold_B%C3%B6cklin_-_Odysseus_und_Polyphemus_%281896%29.jpg/960px-Arnold_B%C3%B6cklin_-_Odysseus_und_Polyphemus_%281896%29.jpg",
+      "description": "Böcklin's oil in the Museum of Fine Arts, Boston, catches the escape from the Cyclopes' shore: Odysseus' ship rides the spray while the blinded giant, vast against the cliffs, prepares to hurl a rock. The Swiss Symbolist turns Homer's sea-getaway into a Romantic landscape of foam and stone — the moment Nobody's cunning becomes open taunt and Poseidon's wrath is sealed."
+    },
+    {
+      "title": "Ulysses Deriding Polyphemus",
+      "artist": "J. M. W. Turner",
+      "year": "1829",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Turner_-_Ulysses_deriding_Polyphemus_1829.jpg/960px-Turner_-_Ulysses_deriding_Polyphemus_1829.jpg",
+      "description": "Turner's National Gallery masterpiece dissolves Odyssey 9 into light: Odysseus, already free of the cave, stands on his ship and mocks the blinded Cyclops as dawn floods the bay. Polyphemus looms on the headland while horses of the sun blaze across the water — the insult that will cost the hero his homecoming, painted as one of British Romanticism's great Homeric seascapes."
+    },
+    {
+      "title": "The Cyclops Polyphemus",
+      "artist": "Annibale Carracci",
+      "year": "c. 1597–1604",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Annibale_Carracci_-_The_Cyclops_Polyphemus_-_WGA04461.jpg",
+      "description": "In the Farnese Gallery fresco cycle Carracci paints Polyphemus as the jealous giant of the Acis and Galatea legend: the one-eyed shepherd, pipe discarded, heaves a boulder toward the fleeing lovers. The Bolognese master gives the Odyssey's cannibal a second afterlife as Ovid's thwarted suitor — still Poseidon's son, still a force of rock and rage."
+    },
+    {
+      "title": "Landscape with Polyphemus",
+      "artist": "Nicolas Poussin",
+      "year": "1649",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nicolas_Poussin_-_Landscape_with_Polyphemus_-_WGA18316.jpg/960px-Nicolas_Poussin_-_Landscape_with_Polyphemus_-_WGA18316.jpg",
+      "description": "Poussin's Hermitage canvas sets the Cyclops high on a mountain in an ideal classical landscape, piping his hopeless love for Galatea while nymphs and satyrs listen below. The giant of Odyssey 9 becomes here the pastoral mourner of Metamorphoses — enormous, solitary, and still the son of the sea-god, reduced to song instead of slaughter."
+    }
+  ],
   "popCulture": [
     {
       "title": "Polyphemus",
@@ -15,6 +51,58 @@
       "kind": "other",
       "description": "Polyphemus' cave is still the schoolroom image of cunning versus force — the stake, the wine, and the name that is no name.",
       "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+    },
+    {
+      "title": "Hades II",
+      "year": "2024",
+      "kind": "videogame",
+      "creator": "Supergiant Games",
+      "description": "Supergiant's sequel keeps the Odyssey's Cyclops in the mythic roster — Polyphemus as a returning face of Poseidon's monstrous brood.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hades_II"
+    }
+  ],
+  "films": [
+    {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Kirk Douglas faces a cave-bound Cyclops in Technicolor — Odyssey 9's blinding and escape compressed into mid-century peplum spectacle.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
+    },
+    {
+      "title": "O Brother, Where Art Thou?",
+      "year": "2000",
+      "medium": "film",
+      "director": "Joel and Ethan Coen",
+      "description": "The Coens' Depression Odyssey turns Polyphemus into Big Dan Teague — the one-eyed Bible salesman who clubs the heroes in a picnic-table cave.",
+      "externalUrl": "https://en.wikipedia.org/wiki/O_Brother,_Where_Art_Thou%3F"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries restages the Cyclops' cave in full — wine, Nobody, and the heated stake as prestige-television Homer.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "L'Odissea",
+      "year": "1968",
+      "medium": "tv",
+      "director": "Franco Rossi",
+      "description": "Rossi's Italian-Yugoslav Odyssey gives Polyphemus a monumental cave sequence — the blinded giant of European television's Homeric landmark.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Odissea"
+    }
+  ],
+  "music": [
+    {
+      "title": "Acis and Galatea",
+      "year": "1718",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's English pastoral makes Polyphemus the jealous giant who crushes Acis — Odyssey's cannibal rewritten as Ovid's thwarted suitor in Baroque song.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Acis_and_Galatea_(Handel)"
     }
   ]
 }

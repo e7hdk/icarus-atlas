@@ -1,6 +1,35 @@
 {
   "id": "phineus-and-the-harpies",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Phineus and the Boreads",
+      "artist": "Unknown (Attic red-figure)",
+      "year": "c. 480–460 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Phineus_Boreads_Louvre_G364_n2.jpg/960px-Phineus_Boreads_Louvre_G364_n2.jpg",
+      "description": "Attic red-figure — Phineus and the Boreads, the Argonautica mercy that clears the prophet's table of Harpies."
+    },
+    {
+      "title": "Phineas and the Sons of Boreas",
+      "artist": "Sebastiano Ricci",
+      "year": "c. 1695",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ricci_-_Phineas_and_the_Sons_of_Boreas%2C_about_1695%2C_1980.275.jpg/960px-Ricci_-_Phineas_and_the_Sons_of_Boreas%2C_about_1695%2C_1980.275.jpg",
+      "description": "Ricci's Baroque rescue — Calais and Zetes driving the Harpies from Phineus, Apollonius' episode as Venetian theatre."
+    },
+    {
+      "title": "Calais and Zetes Deliver Phineus from the Harpies",
+      "artist": "Unknown (French engraving)",
+      "year": "18th–19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cala%C3%AFs_et_Z%C3%A9t%C3%A8s_d%C3%A9livrent_Phin%C3%A9e_des_Harpies.jpg/960px-Cala%C3%AFs_et_Z%C3%A9t%C3%A8s_d%C3%A9livrent_Phin%C3%A9e_des_Harpies.jpg",
+      "description": "French engraving — the winged sons of Boreas delivering Phineus, the chase that ends the pollution of the feast."
+    },
+    {
+      "title": "Phineus and the Harpies",
+      "artist": "Willy Pogany",
+      "year": "1921",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Phineus_and_the_Harpies_by_Willy_Pogany.gif/960px-Phineus_and_the_Harpies_by_Willy_Pogany.gif",
+      "description": "Pogány's modern illustration — Phineus and the Harpies restaged for twentieth-century myth books."
+    }
+  ],
   "popCulture": [
     {
       "title": "Phineus",
@@ -8,6 +37,14 @@
       "kind": "other",
       "description": "The blind prophet tormented by Harpies endures as the Argonautica's mercy episode — the Boreads' chase and the table finally left clean.",
       "externalUrl": "https://en.wikipedia.org/wiki/Phineus"
+    },
+    {
+      "title": "Argonautica",
+      "year": "—",
+      "kind": "other",
+      "creator": "Apollonius of Rhodes",
+      "description": "Book 2 — the Argonauts' stop with Phineus: Harpies, Boreads, and the prophecy that opens the way to Colchis.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Argonautica"
     }
   ]
 }

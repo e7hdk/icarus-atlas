@@ -2,32 +2,78 @@
   "city": "orchomenos-boeotia",
   "reigns": [
     {
+      "ruler": "Athamas",
+      "characterId": "athamas",
+      "sources": ["apollodorus", "pausanias"],
+      "citation": "Apollod. 1.9.1–2; Paus. 9.24.1, 9.34.5–9.34.8",
+      "note": "Aeolid whom Apollodorus makes king over Boeotia; Pausanias settles him on the Athamantian Plain by the Copaic Lake and Mount Laphystius in Orchomenian country — regional power beside the Andreus city-succession, not the Arcadian Orchomenus."
+    },
+    {
+      "ruler": "Andreus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.34.6",
+      "note": "Son of the river Peneius; first settler of the land afterward called Andreis, the opening of Pausanias' Boeotian Orchomenus king-list."
+    },
+    {
+      "ruler": "Eteocles",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.34.9–9.34.10",
+      "note": "Son of Andreus by Euippe (or, locally, of the Cephisus); kept the land-name Andreis and founded two tribes — not the Theban son of Oedipus."
+    },
+    {
+      "ruler": "Phlegyas",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.36.1–9.36.2",
+      "note": "Son of Ares by Chryse daughter of Almus; took the throne when Eteocles died childless and renamed the country Phlegyantis."
+    },
+    {
+      "ruler": "Chryses",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.36.4",
+      "note": "Son of Poseidon by Chrysogeneia daughter of Almus; succeeded the childless Phlegyas and begot Minyas — not Chryses the priest of Apollo at Chryse."
+    },
+    {
       "ruler": "Minyas",
       "characterId": "minyas-orchomenus",
       "sources": ["pausanias", "apollonius"],
       "citation": "Paus. 9.36.4–9.36.6; Arg. 3.1077",
-      "note": "King who built the treasury and begot Orchomenus the eponym; Apollonius makes him son of Aeolus instead (Arg. 3.1077)."
+      "note": "King who built the treasury and begot Orchomenus the eponym; Apollonius makes him son of Aeolus instead (Arg. 3.1077).",
+      "topic": "minyas-genealogy"
+    },
+    {
+      "ruler": "Orchomenus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 9.36.6, 9.37.1",
+      "note": "Son of Minyas in whose reign the city took its name; the people kept the name Minyans to distinguish them from the Arcadian Orchomenians. Died childless — not the Thyestes-son banquet victim (`orchomenus`), nor Lycaon's Arcadian eponym."
+    },
+    {
+      "ruler": "Amphion",
+      "characterId": "amphion-orchomenus",
+      "sources": ["homer", "pausanias"],
+      "citation": "Od. 11.275–296; Paus. 9.36.8",
+      "note": "Son of Iasus who once ruled mightily in Orchomenus of the Minyae — Homer's Minyan king and father of Chloris; outside Pausanias' Andreus–Minyas–Clymenus succession, and not the Theban wall-builder."
     },
     {
       "ruler": "Clymenus",
       "characterId": "clymenus-orchomenus",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 2.4.11; Paus. 9.37.1",
-      "note": "King of the Minyans, wounded in a precinct of Poseidon by a Theban charioteer — the grievance that set Erginus' tribute on Thebes."
+      "note": "Son of Presbon son of Phrixus; inherited when Orchomenus died childless. Wounded at Onchestus by a Theban charioteer — the grievance that set Erginus' tribute on Thebes."
     },
     {
       "ruler": "Erginus",
       "characterId": "erginus-orchomenus",
       "sources": ["apollodorus", "pausanias"],
       "citation": "Apollod. 2.4.11; Paus. 9.37.1–9.37.4",
-      "note": "Son of Clymenus, who sent heralds to Thebes for the tribute until Heracles routed the Minyans and ended their exaction."
+      "note": "Son of Clymenus, who sent heralds to Thebes for the tribute until Heracles routed the Minyans — slain in Apollodorus, spared to rebuild and father Trophonius and Agamedes in Pausanias.",
+      "topic": "erginus-fate"
     },
     {
       "ruler": "Ascalaphus & Ialmenus",
       "characterIds": ["ascalaphus-minyan", "ialmenus-minyan"],
-      "sources": ["pausanias"],
-      "citation": "Paus. 9.37.7",
-      "note": "After Trophonius was swallowed in the Lebadeian grove, Pausanias says the kingdom of Orchomenus passed to the sons of Ares and Astyoche — the same pair Homer leads to Troy from Orchomenus and Aspledon."
+      "sources": ["homer", "pausanias"],
+      "citation": "Il. 2.515–545; Paus. 9.37.7",
+      "note": "After Trophonius was swallowed in the Lebadeian grove, Pausanias says the kingdom passed to the sons of Ares and Astyoche — the same pair Homer leads to Troy from Orchomenus and Aspledon."
     }
   ]
 }

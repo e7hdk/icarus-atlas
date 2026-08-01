@@ -1,13 +1,40 @@
 {
   "id": "io-wandering",
-  "artworks": [],
-  "popCulture": [
+  "artworks": [
     {
-      "title": "Io (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "The cow-maiden's gadfly wander across continents remains Hera's jealousy mapped onto geography — Argus slain, Io reaching Egypt.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Io_(mythology)"
+      "title": "Jupiter and Io",
+      "artist": "Correggio",
+      "year": "c. 1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg",
+      "description": "Correggio's Vienna canvas — Zeus as a dark cloud embracing Io, the passion that begins her gadfly wander."
+    },
+    {
+      "title": "Mercury and Argus",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1636–1638",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Peter_Paul_Rubens_-_Mercury_and_Argus_-_WGA20315.jpg",
+      "description": "Rubens' Prado scene — Hermes lulling hundred-eyed Argus so Io the heifer may escape Hera's watch."
+    },
+    {
+      "title": "Mercury and Argus",
+      "artist": "Diego Velázquez",
+      "year": "c. 1659",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/F%C3%A1bula_de_Mercurio_y_Argos%2C_by_Diego_Vel%C3%A1zquez.jpg",
+      "description": "Velázquez's Prado fable — Argus already asleep as Mercury reaches for the sword, Io's prison about to open."
+    },
+    {
+      "title": "Io watched by Argus (Pompeii fresco)",
+      "artist": "Unknown (Roman wall painter)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Io_Argos_MAN_Napoli_Inv9556.jpg",
+      "description": "Pompeian fresco — Io as white heifer under Argus' gaze, the wander still ahead across continents to Egypt."
+    },
+    {
+      "title": "The Myth of Io",
+      "artist": "Bartolomeo di Giovanni",
+      "year": "c. 1490",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bartolomeo_di_Giovanni_-_The_Myth_of_Io_-_Walters_37421.jpg",
+      "description": "Cassone panel cycling Io's story — transformation, Argus, and the long road that ends beside the Nile."
     }
   ]
 }

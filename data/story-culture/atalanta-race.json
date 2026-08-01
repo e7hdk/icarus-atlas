@@ -1,6 +1,45 @@
 {
   "id": "atalanta-race",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hippomenes and Atalanta",
+      "artist": "Guido Reni",
+      "year": "1618–1619",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Hip%C3%B3menes_y_Atalanta_%28Reni%29.jpg/960px-Hip%C3%B3menes_y_Atalanta_%28Reni%29.jpg",
+      "description": "Reni's Prado canvas freezes the race's hinge: Atalanta stoops for a golden apple while Hippomenes surges ahead — Aphrodite's gift buying victory."
+    },
+    {
+      "title": "The Race between Hippomenes and Atalanta",
+      "artist": "Noël Hallé",
+      "year": "1765",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/La_Course_d%27Hippom%C3%A8ne_et_d%27Atalante_-_No%C3%ABl_Hall%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5270_%3B_B_645.jpg/960px-La_Course_d%27Hippom%C3%A8ne_et_d%27Atalante_-_No%C3%ABl_Hall%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5270_%3B_B_645.jpg",
+      "description": "Hallé's Louvre Rococo race: Atalanta hesitates over scattered apples as Hippomenes runs on — Ovid's contest as courtly allegory of love conquering pride."
+    },
+    {
+      "title": "Atalanta and Hippomenes",
+      "artist": "Nicolas Colombel",
+      "year": "c. 1680",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Nicolas_Colombel_-_Atalanta_et_Hippom%C3%A8nes_%28ca._1680%29.jpg/960px-Nicolas_Colombel_-_Atalanta_et_Hippom%C3%A8nes_%28ca._1680%29.jpg",
+      "description": "Colombel's late-Baroque runners restage the footrace — the huntress who races suitors to the death, slowed by gold that will cost them both."
+    },
+    {
+      "title": "Atalanta and Hippomenes, from 'Game of Mythology'",
+      "artist": "Unknown (after Stefano della Bella)",
+      "year": "1644",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Atalanta_and_Hippomenes%2C_from_%27Game_of_Mythology%27_%28Jeu_de_la_Mythologie%29_MET_DP831090.jpg/960px-Atalanta_and_Hippomenes%2C_from_%27Game_of_Mythology%27_%28Jeu_de_la_Mythologie%29_MET_DP831090.jpg",
+      "description": "MET engraving from the Jeu de la Mythologie: the race reduced to a playing-card emblem — golden apples and the suitor who will not be outrun."
+    }
+  ],
+  "music": [
+    {
+      "title": "Atalanta",
+      "year": "1736",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's pastoral for Frederick, Prince of Wales, casts Atalanta as a huntress of love and flight — the Arcadian runner on the London stage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Atalanta_(opera)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Atalanta",

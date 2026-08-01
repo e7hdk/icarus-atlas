@@ -1,0 +1,16 @@
+{
+  "id": "eleusinia",
+  "name": "Eleusinia",
+  "greekName": "Ἐλευσίνια",
+  "deities": ["demeter", "persephone"],
+  "place": "eleusis",
+  "atticDate": { "month": "metageitnion", "days": [15, 18], "approximate": true },
+  "conventionalDates": ["08-15", "08-16", "08-17", "08-18"],
+  "summary": "The older Eleusinian games for the Two Goddesses — athletic, equestrian and musical contests with gifts of grain — kept in Metageitnion as a thanksgiving for Demeter's corn, distinct from the autumn Mysteries.",
+  "testimonia": [
+    "IG II² 1672 (accounts naming the Eleusinia)",
+    "Mikalson (1975) 46–47 (Metageitnion window, not Boedromion)",
+    "Rigsby, \"The Schedule of the Eleusinia,\" Mnemosyne 63 (2010) 289–297",
+    "Parke, Festivals of the Athenians (1977) 62–63 (Greater and Lesser Eleusinia by Olympiad year)"
+  ]
+}

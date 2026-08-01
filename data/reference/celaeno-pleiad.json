@@ -1,16 +1,41 @@
 {
   "id": "celaeno-pleiad",
-  "summary": "Celaeno is one of the Pleiades, a daughter of Atlas and Pleione. By Poseidon she bore Lycus, whom the god set in the Islands of the Blest. She is distinct from Celaeno the Harpy.",
+  "summary": "Celaeno is one of the Pleiades, a daughter of Atlas and Pleione. By Poseidon she bore Lycus, whom the god translated to the Islands of the Blest; some lists add other sons. She is distinct from Celaeno the Harpy and from other dark-named homonyms.",
   "attribution": "Adapted from Wikipedia, \"Pleiades (Greek mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Κελαινώ (Kelainṓ), \"the dark one,\" from κελαινός, \"black, dark.\"",
+  "symbols": [
+    "Pleiades star-cluster",
+    "Islands of the Blest (Lycus)"
+  ],
+  "cultCenters": [
+    "Mount Cyllene (Arcadia)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Pleiad genealogy",
       "paragraphs": [
-        "Apollodorus names Celaeno among the Pleiades and says Poseidon lay with her first among the sisters, begetting Lycus (Bibliotheca 3.10.1)."
+        "Celaeno belongs to the canonical seven daughters of Atlas and Pleione. Apollodorus places her in the sisterhood with Maia, Electra, Taygete, Alcyone, Sterope, and Merope (Bibliotheca 3.10.1).",
+        "Like her sisters she may be treated as an oread of Cyllene and as a star in the Pleiades cluster after catasterism."
+      ]
+    },
+    {
+      "heading": "Poseidon and Lycus",
+      "paragraphs": [
+        "Apollodorus says Poseidon lay with Celaeno and that she bore Lycus, whom Poseidon made immortal and settled in the Islands of the Blest. Some mythographic lists add further children (for example Eurypylus or Lycaon in variant handbooks), but Lycus is the stable core of her motherhood.",
+        "The Blessed-isles motif marks Lycus as a favourite of the sea-god rather than a standard mortal hero of the mainland cycles."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "Celaeno is also the name of one of the Harpies in Virgil and later authors; that storm-demon is a separate creature node (celaeno-harpy). Do not merge the Pleiad with the Harpy or with minor figures who share the \"dark\" name."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Celaeno"
+    }
   ]
 }

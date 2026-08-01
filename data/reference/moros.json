@@ -1,12 +1,27 @@
 {
   "id": "moros",
-  "summary": "In Greek mythology, Moros /ˈmɔːrɒs/ or Morus /ˈmɔːrəs/ is the personified spirit of impending doom, who drives mortals to their deadly fate. It was also said that Moros gave people the ability to foresee their death. His Roman equivalent was Fatum.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "Moros (Ancient Greek: Μόρος, \"Doom\") or Morus is the personified spirit of impending doom who drives mortals toward their deadly fate. Hesiod makes him a child of Night (Nyx); some Roman accounts add Erebus as father. His Roman counterpart is Fatum.",
+  "attribution": "Adapted from Wikipedia, \"Moros\" · CC BY-SA 4.0",
+  "etymology": "From Ancient Greek μόρος (móros), \"doom, destined death,\" kin to μοῖρα (moîra), the allotted portion.",
+  "sections": [
+    {
+      "heading": "Family",
+      "paragraphs": [
+        "In Hesiod's Theogony Nyx bears Moros by herself among her dark brood. Hyginus and Cicero sometimes pair him with Erebus. That parentage makes him brother to the Moirai (Fates), Thanatos (peaceful Death), and the Keres — spirits of violent or diseased death — so that Moros names the doom that precedes the blow."
+      ]
+    },
+    {
+      "heading": "Mythology",
+      "paragraphs": [
+        "Sources say Moros drives mortals to their appointed end and can grant foresight of death. In Aeschylus' Prometheus Bound the Titan claims he gave humanity Elpis (Hope) so that they might ignore the inevitability of Moros. He is elsewhere called an all-destroying god who does not free his victim even in the realm of Death.",
+        "The common noun moros appears in Aeschylus without full personification — a man does not escape his appointed doom by staying home — but the passage clarifies the concept the personification embodies. Later Christian reception sometimes associated him, with Thanatos, with the pale horseman of the Apocalypse."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Moros"
     }
-  ],
-  "etymology": "From moros, \"doom, fated death\" — kin to moira, the portion."
+  ]
 }

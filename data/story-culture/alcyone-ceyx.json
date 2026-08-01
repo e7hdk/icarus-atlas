@@ -1,6 +1,35 @@
 {
   "id": "alcyone-ceyx",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Halcyone",
+      "artist": "Herbert James Draper",
+      "year": "1915",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Herbert_James_Draper_-_Halcyone_%281915%29.jpg/960px-Herbert_James_Draper_-_Halcyone_%281915%29.jpg",
+      "description": "Draper's Edwardian Alcyone keeps vigil for Ceyx lost at sea — Ovid's widow before the gods turn both into halcyons."
+    },
+    {
+      "title": "Morpheus in the House of Ceyx, before Alcyone",
+      "artist": "Johann Wilhelm Baur",
+      "year": "1641",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Johann_Wilhelm_Baur_-_Morpheus_in_the_house_of_Ceyx%2C_before_Alcyone.jpg/960px-Johann_Wilhelm_Baur_-_Morpheus_in_the_house_of_Ceyx%2C_before_Alcyone.jpg",
+      "description": "Baur's Ovid etching: Morpheus wears the drowned king's face to Alcyone's sleep — the dream that reveals the wreck."
+    },
+    {
+      "title": "Alcyone and Ceyx Transformed into Halcyons",
+      "artist": "Bernard Picart",
+      "year": "1733",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Alcyone_and_Ceyx_transformed_into_Halycons_%28cropped%29.jpg/960px-Alcyone_and_Ceyx_transformed_into_Halycons_%28cropped%29.jpg",
+      "description": "Picart's engraving of the climax: Alcyone finds Ceyx's body and both become kingfishers — the origin of the halcyon days."
+    },
+    {
+      "title": "Ceyx and Alcyone",
+      "artist": "Unknown",
+      "year": "—",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ceyx_and_Alcyone.jpg/960px-Ceyx_and_Alcyone.jpg",
+      "description": "A classic illustration of the Trachinian couple — married love that Ovid carries past shipwreck into birds and calm seas."
+    }
+  ],
   "popCulture": [
     {
       "title": "Alcyone (mythology)",

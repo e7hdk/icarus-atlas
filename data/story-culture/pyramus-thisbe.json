@@ -1,6 +1,35 @@
 {
   "id": "pyramus-thisbe",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Stormy Landscape with Pyramus and Thisbe",
+      "artist": "Nicolas Poussin",
+      "year": "1651",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nicolas_Poussin_-_Stormy_Landscape_with_Pyramus_and_Thisbe_-_WGA18334.jpg/960px-Nicolas_Poussin_-_Stormy_Landscape_with_Pyramus_and_Thisbe_-_WGA18334.jpg",
+      "description": "Poussin's stormy landscape — the lovers under the mulberry, Ovid's Babylonian tragedy as classical weather."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Hans Baldung",
+      "year": "1530",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/1530_Baldung_Pyramus_und_Thisbe_Gem%C3%A4ldegalerie_Kat.Nr._1875.jpg/960px-1530_Baldung_Pyramus_und_Thisbe_Gem%C3%A4ldegalerie_Kat.Nr._1875.jpg",
+      "description": "Baldung's 1530 pair — Pyramus fallen on his sword, Thisbe discovering him, the wall's crack already behind them."
+    },
+    {
+      "title": "Pyramus and Thisbe",
+      "artist": "Lucas Cranach the Elder",
+      "year": "c. 1520",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pyram_i_Tysbe.jpg/960px-Pyram_i_Tysbe.jpg",
+      "description": "Cranach's German Renaissance take — the lion, the bloody veil, and the double suicide that dyes the mulberry."
+    },
+    {
+      "title": "Thisbe",
+      "artist": "John William Waterhouse",
+      "year": "1909",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/John_William_Waterhouse_-_Thisbe.jpg/960px-John_William_Waterhouse_-_Thisbe.jpg",
+      "description": "Waterhouse's Thisbe alone at the wall — the crack through which the fairest of Babylon whispered before the tomb."
+    }
+  ],
   "popCulture": [
     {
       "title": "A Midsummer Night's Dream",
@@ -24,6 +53,14 @@
       "kind": "other",
       "description": "The fairest youth and maiden of Babylon — love through a wall that ends under a mulberry tree.",
       "externalUrl": "https://en.wikipedia.org/wiki/Pyramus_and_Thisbe"
+    },
+    {
+      "title": "Romeo and Juliet",
+      "year": "c. 1595",
+      "kind": "other",
+      "creator": "William Shakespeare",
+      "description": "Shakespeare's Verona tragedy inherits Ovid's plot — the wall, the misread death, the double suicide — through the Pyramus and Thisbe template.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Romeo_and_Juliet"
     }
   ]
 }

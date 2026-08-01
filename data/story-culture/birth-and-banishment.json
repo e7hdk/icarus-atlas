@@ -1,6 +1,35 @@
 {
   "id": "birth-and-banishment",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Heracles Strangling the Serpents",
+      "artist": "Attributed to the Berlin Painter",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Herakles_strangling_snakes_Louvre_G192.jpg/960px-Herakles_strangling_snakes_Louvre_G192.jpg",
+      "description": "Louvre stamnos: the infant in the cradle throttles Hera's snakes while Iphicles recoils — the Theban birth that proves Zeus' son."
+    },
+    {
+      "title": "Boy Heracles Strangling a Snake",
+      "artist": "Unknown (Roman)",
+      "year": "2nd century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Herakles_snake_Musei_Capitolini_MC247.jpg/960px-Herakles_snake_Musei_Capitolini_MC247.jpg",
+      "description": "Capitoline marble: the chubby child grips a writhing serpent — the cradle miracle sculpted as innate heroic strength."
+    },
+    {
+      "title": "The Choice of Hercules",
+      "artist": "Annibale Carracci",
+      "year": "1596",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/CarracciHercules.jpg/960px-CarracciHercules.jpg",
+      "description": "Carracci's young hero at the crossroads of Virtue and Pleasure — the arduous path that follows the cradle and precedes Eurystheus' labours."
+    },
+    {
+      "title": "Farnese Hercules",
+      "artist": "After Lysippos (signed by Glykon of Athens)",
+      "year": "c. 216 AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg/960px-Herakles_Farnese_MAN_Napoli_Inv6001_n01.jpg",
+      "description": "The exhausted strongman after the labours — the end-state of the child who strangled serpents and was banished into Eurystheus' service."
+    }
+  ],
   "films": [
     {
       "title": "Hercules",

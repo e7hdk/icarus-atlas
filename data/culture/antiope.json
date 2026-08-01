@@ -1,6 +1,35 @@
 {
   "id": "antiope",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jupiter and Antiope (The Pardo Venus)",
+      "artist": "Titian",
+      "year": "c. 1551",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jupiter_et_Antiope%2C_dit_aussi_La_V%C3%A9nus_du_Pardo_-_Titien_-_Mus%C3%A9e_du_Louvre_Sculptures_INV_752_%3B_MR_521.jpg/960px-Jupiter_et_Antiope%2C_dit_aussi_La_V%C3%A9nus_du_Pardo_-_Titien_-_Mus%C3%A9e_du_Louvre_Sculptures_INV_752_%3B_MR_521.jpg",
+      "description": "Titian's great Louvre canvas (also called the Pardo Venus) stages Zeus as a satyr unveiling the sleeping Theban Antiope — the encounter that begets Amphion and Zethus. It is the Renaissance's most famous image of this Antiope, not the Amazon queen."
+    },
+    {
+      "title": "Jupiter and Antiope (Nymph and Satyr)",
+      "artist": "Jean-Antoine Watteau",
+      "year": "1715–1716",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nymphe_et_satyre_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1129.jpg/960px-Nymphe_et_satyre_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1129.jpg",
+      "description": "Watteau's Louvre painting returns to the same Theban myth: a satyr-like Jupiter discovers the sleeping Antiope. The soft Rococo handling keeps the subject of Zeus' love for the mother of Amphion and Zethus."
+    },
+    {
+      "title": "Jupiter and Antiope",
+      "artist": "Jacques-Louis David",
+      "year": "1771",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Jacques-Louis_David_-_Jupiter_et_Antiope.jpg",
+      "description": "David's early canvas (Musées de Sens) shows Jupiter as satyr approaching the sleeping Antiope — a Neoclassical essay on the Theban mother whose twin sons will later avenge her against Dirce."
+    },
+    {
+      "title": "Farnese Bull",
+      "artist": "Apollonius of Tralles and Tauriscus of Tralles (Roman copy)",
+      "year": "c. late 2nd century BC (original type); Roman copy",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Farnese_Bull_MAN_Napoli_Inv6002_n07.jpg/960px-Farnese_Bull_MAN_Napoli_Inv6002_n07.jpg",
+      "description": "The colossal Naples group shows Amphion and Zethus binding Dirce to the bull — the revenge that restores their mother, the Theban Antiope, after years of persecution. Antiope's story is the mythic hinge of antiquity's most famous Dirce monument."
+    }
+  ],
   "popCulture": [
     {
       "title": "Antiope (mother of Amphion)",

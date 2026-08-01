@@ -1,0 +1,16 @@
+{
+  "id": "pompaia",
+  "name": "Pompaia",
+  "greekName": "Πομπαία",
+  "deities": ["zeus", "hermes"],
+  "place": "athens",
+  "atticDate": { "month": "maimakterion", "days": [25], "approximate": true },
+  "conventionalDates": ["11-25"],
+  "summary": "The late-autumn purifying procession for Zeus Meilichios — the Διὸς κῴδιον, the sheepskin of Zeus, carried with Hermes' caduceus to ward the city as the storm-month closes in.",
+  "testimonia": [
+    "Suda / Photius s.v. Διὸς κῴδιον (the fleece and the purifying procession)",
+    "Harpocration s.v. Πομπαία",
+    "Mikalson (1975) 86–87 (last third of Maimakterion)",
+    "Parke (1977) 95–96 (linked in season to Zeus Maimaktes, not identical with a Maimakteria)"
+  ]
+}

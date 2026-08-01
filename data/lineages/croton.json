@@ -2,17 +2,37 @@
   "city": "croton",
   "reigns": [
     {
+      "ruler": "Croton",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.1–91",
+      "note": "Eponym whose friendly house received Hercules on the Lacinian shore — not a civic king. Myscelus later named the colony for the sacred bones buried by the Aesar's mouth. Not promoted as a character node."
+    },
+    {
+      "ruler": "Heracles",
+      "characterId": "heracles",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 15.1–59",
+      "note": "Landed with Iberian herds on Lacinian shores, rested at Croton's house, and prophesied that the place would become a city of Croton's numerous race — hospitality and foundation oracle, not a reign."
+    },
+    {
       "ruler": "Myscelus",
       "characterId": "myscelus-croton",
       "sources": ["ovid"],
       "citation": "Metamorphoses 15.1–91",
-      "note": "Son of Argive Alemon, whom Hercules bade found a city where the hero rested on the Italian shore — the colony that keeps Croton's buried name."
+      "note": "Son of Argive Alemon, whom sleeping Hercules commanded to desert Argos and mark out walls where the hero had rested — Ovid's founder of Crotona. Pausanias instead frames Croton as a Lacedaemonian colony under Polydorus (3.3.1); both strands stand without a padded king-list."
     },
     {
-      "ruler": "Croton",
-      "sources": ["ovid"],
-      "citation": "Metamorphoses 15.1–91",
-      "note": "The eponym whose sacred bones lie beneath the mound by the Aesar's mouth — not promoted as a character node; Hercules promised the site to Myscelus' race."
+      "ruler": "Polydorus",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.3.1",
+      "note": "King of Sparta under whom the Lacedaemonians sent colonies to Croton in Italy and to the Locri by the Western headland — colonial-era marker only, not a Crotoniate king. Not the Theban Polydorus son of Cadmus (`polydorus`). No named Spartan settler of Croton is attested in the seven lenses."
+    },
+    {
+      "ruler": "Leonymus",
+      "characterId": "leonymus-croton",
+      "sources": ["pausanias"],
+      "citation": "Description of Greece 3.19.11–3.19.12",
+      "note": "General of the Crotoniates when war arose with the Locri of Italy — wounded by Locrian Ajax, then first to sail to Achilles' White Island. Civic legend and hero-cult voyage, not a royal succession."
     }
   ]
 }

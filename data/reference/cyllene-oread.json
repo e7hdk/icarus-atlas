@@ -1,17 +1,41 @@
 {
   "id": "cyllene-oread",
-  "summary": "Cyllene is an Arcadian mountain nymph in Greek mythology, named by Pseudo-Apollodorus as a consort of Pelasgus and, in one variant, the mother of Lycaon. She must be distinguished from Cyllen, the male eponym of Mount Cyllene, son of Elatus.",
+  "summary": "Cyllene is an Arcadian mountain nymph associated with Mount Cyllene. Pseudo-Apollodorus names her as a possible consort of Pelasgus and mother of Lycaon. She must be distinguished from Cyllen, the male eponym of the mountain (son of Elatus), and from the mountain itself as Hermes' birthplace.",
   "attribution": "Adapted from Wikipedia, \"Cyllene (mythology)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Κυλλήνη (Kyllḗnē), also the name of the Arcadian peak.",
+  "symbols": [
+    "Mount Cyllene",
+    "Arcadian oread"
+  ],
+  "cultCenters": [
+    "Mount Cyllene (Arcadia)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Consort of Pelasgus",
       "paragraphs": [
-        "In Bibliotheca 3.8.1 Apollodorus reports that Pelasgus begat Lycaon either by Meliboea, daughter of Ocean, or by a nymph named Cyllene.",
-        "Mount Cyllene in Arcadia is also named for the hero Cyllen, son of Elatus, and is famed as the birthplace of Hermes; the feminine nymph and the masculine eponym are distinct figures."
+        "In Bibliotheca 3.8.1 Apollodorus reports that Pelasgus, first king of Arcadia in that tradition, begat Lycaon either by Meliboea daughter of Ocean or by a nymph named Cyllene. The variant makes Cyllene a genealogical mother of the notorious Lycaon rather than a figure with an independent adventure cycle.",
+        "Other Arcadian lists omit her, preferring Meliboea or leaving Lycaon's mother unnamed."
+      ]
+    },
+    {
+      "heading": "Mountain and Hermes",
+      "paragraphs": [
+        "Mount Cyllene is famed as the birthplace of Hermes in the Homeric Hymn and later poetry; Maia bears him in a cave there. The feminine nymph Cyllene and the mountain's name reinforce each other, but the hymn's nursing figure is sometimes the local goddess Cyllene rather than Maia alone (as in Sophocles' Ichneutae fragments).",
+        "Pausanias and geographers treat Cyllene primarily as a place; the personal nymph appears mainly in the Pelasgus variant."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "Cyllen (Κύλλην), son of Elatus, is a masculine eponym of the same mountain and a different person. Do not merge the oread consort of Pelasgus with that hero or with Maia, who is a Pleiad of Cyllene but a separate atlas node."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cyllene_(mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cyllene_(mythology)"
+    }
   ]
 }

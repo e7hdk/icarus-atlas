@@ -1,6 +1,35 @@
 {
   "id": "picus-latium",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Circe Turning King Picus into a Woodpecker",
+      "artist": "Teodor Lubieniecki",
+      "year": "c. 1680–1700",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Teodor_Lubieniecki_-_Circe_turning_king_Picus_into_a_woodpecker_-_MP_3159_MNW_-_National_Museum_in_Warsaw.jpg/960px-Teodor_Lubieniecki_-_Circe_turning_king_Picus_into_a_woodpecker_-_MP_3159_MNW_-_National_Museum_in_Warsaw.jpg",
+      "description": "Lubieniecki paints Ovid's Latian king mid-metamorphosis: Circe's wand raised, feathers already sprouting on Picus's arms. National Museum in Warsaw."
+    },
+    {
+      "title": "Picus and Circe",
+      "artist": "Luca Giordano",
+      "year": "c. 1670–1680",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Luca_Giordano_-_Picus_and_Circe.jpg/960px-Luca_Giordano_-_Picus_and_Circe.jpg",
+      "description": "Giordano's Neapolitan oil stages Circe's rejected courtship of Picus — the woodpecker-king before the spell that will punish his fidelity to Canens."
+    },
+    {
+      "title": "Circe Changing Picus into a Bird",
+      "artist": "Antonio Tempesta (after)",
+      "year": "1606",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Plate_136-_Circe_Changing_Picus_into_a_Bird_%28Circes_concubitum_detestatur_Picus%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864227.jpg/960px-Plate_136-_Circe_Changing_Picus_into_a_Bird_%28Circes_concubitum_detestatur_Picus%29%2C_from_Ovid%27s_%27Metamorphoses%27_MET_DP864227.jpg",
+      "description": "A Metamorphoses plate from the Metropolitan Museum series: Circe's companions drive Picus as wings break from his body. Print culture for the Latin woodpecker-king."
+    },
+    {
+      "title": "Circe Changes Picus into a Woodpecker",
+      "artist": "Unknown (Dutch, after Ovid)",
+      "year": "c. 1600–1650",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Circe_verandert_Picus_in_een_specht_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2013-10-22.jpg/960px-Circe_verandert_Picus_in_een_specht_Metamorfosen_van_Ovidius_%28serietitel%29%2C_RP-P-2013-10-22.jpg",
+      "description": "A Rijksmuseum Metamorphoses print shows Circe's circle watching Picus take flight — the king of Latium becoming the bird that still bears his name in Roman augury."
+    }
+  ],
   "popCulture": [
     {
       "title": "Picus",

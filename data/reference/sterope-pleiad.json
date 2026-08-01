@@ -1,17 +1,41 @@
 {
   "id": "sterope-pleiad",
-  "summary": "Sterope is one of the Pleiades, a daughter of Atlas. Apollodorus names her as the wife of Oenomaus; Hyginus also calls Oenomaus the son of Ares and Asterope daughter of Atlas.",
+  "summary": "Sterope (also Asterope) is one of the Pleiades, a daughter of Atlas and Pleione. Apollodorus makes her the wife of Oenomaus of Pisa; Hyginus instead calls Oenomaus the son of Ares and Asterope daughter of Atlas. She is tied to the Pelops–Hippodameia cycle at Olympia.",
   "attribution": "Adapted from Wikipedia, \"Sterope (Pleiades)\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Στερόπη (Sterópē) or Ἀστερόπη (Asterópē), \"lightning\" / \"star-face.\"",
+  "symbols": [
+    "Pleiades star-cluster",
+    "Olympia / Pisa (Oenomaus)"
+  ],
+  "cultCenters": [
+    "Pisa (Elis)",
+    "Olympia (east pediment tradition)"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Among the Pleiades",
       "paragraphs": [
-        "Apollodorus lists Sterope among the Pleiades and says she was married to Oenomaus (Bibliotheca 3.10.1).",
-        "Hyginus makes Oenomaus the son of Mars and Asterope daughter of Atlas (Fabulae 84); Pausanias shows Sterope as Oenomaus' wife on the Pelops pediment (Description of Greece 6.21.7)."
+        "Sterope is listed with the other Atlantides in Apollodorus' catalogue of the Pleiades (Bibliotheca 3.10.1). Variant spelling Asterope appears in Hyginus and some astronomical lists; both names point to the same Pleiad in standard handbooks."
+      ]
+    },
+    {
+      "heading": "Oenomaus",
+      "paragraphs": [
+        "Apollodorus says Sterope was married to Oenomaus, the king who challenged suitors of his daughter Hippodameia to a chariot race. Pausanias describes the east pediment of the temple of Zeus at Olympia with Oenomaus and Sterope among the figures of the Pelops myth (Description of Greece 5.10.6–7; cf. 6.21.7 on related local lore).",
+        "Hyginus Fabulae 84 makes Oenomaus the son of Mars (Ares) and Asterope daughter of Atlas — so Sterope/Asterope is mother rather than wife in that branch. The contradiction is a standing mythographic fork, not a modern error."
+      ]
+    },
+    {
+      "heading": "Homonyms",
+      "paragraphs": [
+        "Other Steropes exist in Greek myth (including a Cyclops Steropes). The Pleiad is identified by Atlas parentage and the Oenomaus connection at Pisa–Olympia."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sterope_(Pleiades)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sterope_(Pleiad)"
+    }
   ]
 }

@@ -1,6 +1,35 @@
 {
   "id": "andromeda-rescue",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Perseus and Andromeda",
+      "artist": "Titian",
+      "year": "1554–1556",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg/960px-Perseo_y_Andr%C3%B3meda%2C_por_Tiziano.jpg",
+      "description": "Titian's poesie: Andromeda chained to the rock as Perseus dives sword-first at the sea-monster — the Ethiopian rescue as Venetian storm of flesh and foam."
+    },
+    {
+      "title": "Perseus Freeing Andromeda",
+      "artist": "Peter Paul Rubens",
+      "year": "1621",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Perseus_befreit_Andromeda%2C_-_Gem%C3%A4ldegalerie_Berlin_-_5397736.jpg/960px-Perseus_befreit_Andromeda%2C_-_Gem%C3%A4ldegalerie_Berlin_-_5397736.jpg",
+      "description": "Rubens shows the chains giving way: Andromeda steps into Perseus' arms while putti and the slain monster fill the shore."
+    },
+    {
+      "title": "Andromeda Chained to the Rocks",
+      "artist": "Rembrandt",
+      "year": "1630",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Andromeda%2C_Rembrandt_van_Rijn%2C_1630-1631%2C_Mauritshuis%2C_The_Hague.jpg/960px-Andromeda%2C_Rembrandt_van_Rijn%2C_1630-1631%2C_Mauritshuis%2C_The_Hague.jpg",
+      "description": "Rembrandt isolates the princess alone on the rock — no Perseus yet, only the chain that waits for the monster Cassiopeia's boast has summoned."
+    },
+    {
+      "title": "Andromeda Chained to the Rock by the Nereids",
+      "artist": "Théodore Chassériau",
+      "year": "1840",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/1840_Chasseriau_Theodore_-_Andromeda_Chained_to_the_Rock_by_the_Nereids.jpg",
+      "description": "Chassériau paints the Nereids binding Andromeda to the cliff before the rescue — the sacrifice the city demands, staged for the Louvre."
+    }
+  ],
   "films": [
     {
       "title": "Clash of the Titans",
@@ -9,15 +38,6 @@
       "director": "Desmond Davis",
       "description": "Harryhausen's Perseus frees Andromeda from the sea-beast — the rescue that fixed the myth for a generation of screens.",
       "externalUrl": "https://en.wikipedia.org/wiki/Clash_of_the_Titans_(1981_film)"
-    }
-  ],
-  "popCulture": [
-    {
-      "title": "Andromeda (mythology)",
-      "year": "—",
-      "kind": "other",
-      "description": "The princess chained for the monster — and set among the stars — remains Perseus' most famous deed.",
-      "externalUrl": "https://en.wikipedia.org/wiki/Andromeda_(mythology)"
     }
   ]
 }

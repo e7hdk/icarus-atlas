@@ -75,14 +75,17 @@ function SearchDialog({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center bg-cosmos-deep/55 px-4 pt-16 backdrop-blur-[6px] animate-[search-veil-in_160ms_ease-out] sm:pt-[18vh]"
+      className="fixed inset-0 z-50 flex items-start justify-center bg-transparent px-4 pt-[14dvh] animate-[search-veil-in_160ms_ease-out] sm:bg-cosmos-deep/55 sm:pt-[18vh] sm:backdrop-blur-[6px]"
       onMouseDown={() => setSearchOpen(false)}
     >
       <GlassPanel
-        className="w-full max-w-xl overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_48px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)]"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search the galaxy"
+        className="w-full max-w-[21rem] overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_48px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)] sm:max-w-xl"
         onMouseDown={(event) => event.stopPropagation()}
       >
-        <div className="flex items-center gap-3 border-b border-glass-border px-5 py-4">
+        <div className="flex items-center gap-3 border-b border-glass-border px-4 py-3 sm:px-5 sm:py-4">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -104,8 +107,23 @@ function SearchDialog({
             onKeyDown={onKeyDown}
             placeholder="Search the galaxy…"
             spellCheck={false}
-            className="flex-1 bg-transparent font-body text-xl text-aether placeholder:text-aether-faint focus:outline-none"
+            className="min-w-0 flex-1 bg-transparent font-body text-lg text-aether placeholder:text-aether-faint focus:outline-none sm:text-xl"
           />
+          <button
+            type="button"
+            onClick={() => setSearchOpen(false)}
+            aria-label="Close search"
+            className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-glass-border text-aether-faint transition-colors active:border-nebula-soft/60 active:text-aether sm:hidden"
+          >
+            <svg viewBox="0 0 20 20" fill="none" className="h-3.5 w-3.5" aria-hidden>
+              <path
+                d="M5 5l10 10M15 5 5 15"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
           <kbd className="hidden rounded-md border border-glass-border bg-glass px-1.5 py-0.5 font-display text-[9px] tracking-[0.18em] text-aether-faint sm:block">
             ESC
           </kbd>
@@ -118,7 +136,10 @@ function SearchDialog({
         )}
 
         {hits.length > 0 && (
-          <div ref={listRef} className="max-h-[46vh] overflow-y-auto py-1.5">
+          <div
+            ref={listRef}
+            className="max-h-[min(38dvh,15rem)] overflow-y-auto py-1.5 sm:max-h-[46vh]"
+          >
             {hits.map((hit, index) => (
               <ResultRow
                 key={hit.character.id}

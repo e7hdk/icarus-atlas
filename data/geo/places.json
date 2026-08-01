@@ -1531,8 +1531,10 @@
     ],
     "characterIds": [
       "ajax-telamonian",
+      "cychreus",
       "eurysaces",
       "hesione",
+      "salamis-nymph",
       "telamon",
       "teucer"
     ]
@@ -2157,23 +2159,18 @@
         "citation": "Description of Greece 5.7.2–5.7.3"
       },
       {
-        "text": "The great Sicilian city stood at the western horizon of the Greek world — refuge of Daedalus after Icarus fell, and the shore toward which Odysseus' long wandering touched the Italian West.",
+        "text": "Ovid places the Bacchiad walls of Corinthian Syracuse beside Cyane and Pisaean Arethusa — the same Sicilian shore where the spring-nymph rose after fleeing Alpheus, and where she later told Ceres of Proserpina's rape.",
         "sources": [
-          "homer",
           "ovid",
-          "apollodorus"
-        ]
+          "pausanias"
+        ],
+        "citation": "Metamorphoses 5.385–508, 5.634–868; Description of Greece 5.7.2–5.7.3, 8.54.3"
       }
     ],
     "characterIds": [
-      "acis-sicily",
       "alpheus",
       "archias-syracuse",
-      "arethusa-nymph",
-      "cocalus-sicily",
-      "daedalus",
-      "galatea-nymph",
-      "polyphemus-cyclops"
+      "arethusa-nymph"
     ],
     "storyIds": [
       "acis-galatea",
@@ -4144,16 +4141,12 @@
     "cityId": "side",
     "summary": [
       {
-        "text": "Side on the Pamphylian coast — whose river Melas Pausanias counted among the coldest waters of Asia Minor, and which Apollodorus lists among the cities Achilles ravaged before Troy.",
+        "text": "Side on the Pamphylian coast — whose river Melas Pausanias counted among the coldest waters of Asia Minor. (The Side Achilles took beside Adramyttium in Apollodorus Epitome 3.33 is a Mysian coastal town, not this Pamphylian city.)",
         "sources": [
-          "pausanias",
-          "apollodorus"
+          "pausanias"
         ],
-        "citation": "Description of Greece 8.28.3; Epitome 3.33"
+        "citation": "Description of Greece 8.28.3"
       }
-    ],
-    "storyIds": [
-      "cypria"
     ]
   },
   {

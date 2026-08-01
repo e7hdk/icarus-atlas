@@ -1,20 +1,43 @@
 {
   "id": "cronus",
-  "summary": "In ancient Greek religion and mythology, Cronus, Cronos, or Kronos was the leader and youngest of the Titans, the children of Gaia (Earth) and Uranus (Sky). He overthrew his father and ruled during the mythological Golden Age until he was overthrown by his son Zeus and imprisoned in Tartarus. According to Plato, however, Cronus, along with the deities Phorcys and Rhea, were the eldest children of Oceanus and Tethys.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In ancient Greek religion and mythology, Cronus (also Cronos or Kronos) was the leader and youngest of the Titans, children of Gaia and Uranus. He overthrew his father and ruled during the mythological Golden Age until he was overthrown by his son Zeus and, in the most common account, imprisoned in Tartarus. He was often depicted with a sickle or scythe, the weapon used to castrate Uranus, and was identified in classical antiquity with the Roman god Saturn. He is a distinct figure from Chronos, the personification of Time, though the two names were sometimes confused in antiquity and later art.",
+  "attribution": "Adapted from Wikipedia, \"Cronus\" · CC BY-SA 4.0",
+  "etymology": "The origin of Κρόνος is debated; attempts at a native Greek etymology have often failed. Ancient writers sometimes equated the name with χρόνος (\"time\"), an association that fed later \"Father Time\" imagery, but modern scholarship generally treats Cronus the Titan and Chronos (Time) as separate figures. One recent proposal links the name to a root meaning \"to cut,\" fitting the castration of Uranus.",
+  "symbols": [
+    "Harpe (sickle or scythe)",
+    "Grain"
+  ],
+  "cultCenters": [
+    "Olympia (Kronion hill)",
+    "Athens (Kronia festival)"
+  ],
+  "sections": [
+    {
+      "heading": "Rise and Golden Age",
+      "paragraphs": [
+        "In Hesiod's Theogony, Uranus imprisoned Gaia's youngest children, the Hecatoncheires and Cyclopes, in Tartarus. Gaia fashioned a great stone sickle and urged her sons to act; only Cronus agreed. He ambushed Uranus, castrated him, and cast the severed parts into the sea. Cronus and Rhea then took the throne; the age of his rule was remembered as the Golden Age, when people lived without need of laws and without immorality.",
+        "According to Plato, however, Cronus, with Phorcys and Rhea, were among the eldest children of Oceanus and Tethys — one of several alternative genealogies preserved in later sources."
+      ]
+    },
+    {
+      "heading": "Devouring of the children and overthrow",
+      "paragraphs": [
+        "Warned that he would be overcome by his own child as he had overcome his father, Cronus swallowed the offspring of Rhea — Demeter, Hestia, Hera, Hades, and Poseidon — as soon as they were born. Rhea hid the sixth child, Zeus, in Crete and gave Cronus a stone wrapped in swaddling clothes, which he swallowed instead.",
+        "When Zeus came of age he forced Cronus to disgorge his siblings (or, in other versions, Metis gave Cronus an emetic). With the freed Olympians, and aided by the Cyclopes and Hecatoncheires, Zeus waged the Titanomachy and defeated Cronus and the Titans. Most accounts imprison Cronus in Tartarus; some traditions, including interpolations in Hesiod's Works and Days and poems of Pindar, have Zeus later release him to rule over the Isles of the Blessed."
+      ]
+    },
+    {
+      "heading": "Cult, Rome, and namesakes",
+      "paragraphs": [
+        "Cronus was likely originally connected with the harvest; in many regions a harvest month was named Cronion after him, and at Athens the Kronia festival was held in his honour. His Roman counterpart was Saturn, whose temple stood in the Forum and whose festival was the Saturnalia. Through that Roman identification, the planet Saturn takes its English name from Saturn, not from a separate Greek \"planet Cronus\" — though modern Greek still calls the planet Κρόνος.",
+        "By Philyra, Cronus was also said to be the father of the centaur Chiron. This notice concerns the Titan king of myth, not Chronos as abstract Time, nor astronomical bodies named after his Roman equivalent."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Cronus"
     }
-  ],
-  "symbols": [
-    "harpe (sickle)",
-    "grain"
-  ],
-  "cultCenters": [
-    "Olympia (Kronion hill)",
-    "Athens (the Kronia festival)"
-  ],
-  "etymology": "Pre-Greek; the ancients punned him with Chronos, \"Time\" — a confusion that stuck for good."
+  ]
 }

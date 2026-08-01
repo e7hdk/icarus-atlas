@@ -1,6 +1,42 @@
 {
   "id": "the-danaids",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Danaides",
+      "artist": "John William Waterhouse",
+      "year": "1903",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Danaides_by_John_William_Waterhouse%2C_1903.jpg/960px-Danaides_by_John_William_Waterhouse%2C_1903.jpg",
+      "description": "Waterhouse's Danaides — the sisters forever pouring into broken jars, Tartarus' punishment for the wedding-night massacre."
+    },
+    {
+      "title": "The Danaides Killing Their Husbands",
+      "artist": "Unknown (French illuminator)",
+      "year": "15th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg/960px-Dana%C3%AFdes_tuant_leurs_maris_BnF_Fran%C3%A7ais_874_fol._170v.jpg",
+      "description": "The Danaids killing their husbands — the wedding-night slaughter that earns the jars of Tartarus."
+    },
+    {
+      "title": "Hypermnestra Writing",
+      "artist": "Unknown (French illuminator)",
+      "year": "c. 15th–16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hypermnestre_%C3%A9crivant_BnF_Fran%C3%A7ais_874_fol._175v.jpg/960px-Hypermnestre_%C3%A9crivant_BnF_Fran%C3%A7ais_874_fol._175v.jpg",
+      "description": "Hypermnestra writing — the one bride who spares Lynceus, breaking the sisters' bloody pact."
+    },
+    {
+      "title": "Plate with Hypermnestra Watching Lynceus Take Her Father's Crown",
+      "artist": "Francesco Xanto Avelli",
+      "year": "c. 1530s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Francesco_Xanto_Avelli_-_Plate_with_Hypermnestra_Watching_Lynceus_Take_Her_Father%27s_Crown_-_Walters_481324.jpg/960px-Francesco_Xanto_Avelli_-_Plate_with_Hypermnestra_Watching_Lynceus_Take_Her_Father%27s_Crown_-_Walters_481324.jpg",
+      "description": "Hypermnestra watches Lynceus escape — the solitary mercy among Danaus' fifty daughters."
+    },
+    {
+      "title": "The Daughters of Danaus",
+      "artist": "Fernand Sabatté",
+      "year": "c. 1900",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fernand_Sabatt%C3%A9_-_The_daughters_of_Danaus_%28c.1900%29.jpg/960px-Fernand_Sabatt%C3%A9_-_The_daughters_of_Danaus_%28c.1900%29.jpg",
+      "description": "Sabatté's Daughters of Danaus — the fifty brides whose crime becomes Argos' founding myth and the underworld's sieve."
+    }
+  ],
   "popCulture": [
     {
       "title": "Danaïdes",

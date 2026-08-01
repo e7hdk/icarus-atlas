@@ -1,0 +1,52 @@
+{
+  "city": "tegea",
+  "reigns": [
+    {
+      "ruler": "Tegeates",
+      "sources": ["pausanias"],
+      "citation": "Paus. 8.3.4, 8.45.1, 8.48.6",
+      "note": "Son of Lycaon and eponym of the district; in his day the Tegeans still lived in eight country parishes, and his tomb — with that of his wife Maera — stood at Tegea."
+    },
+    {
+      "ruler": "Apheidas",
+      "characterId": "apheidas",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 8.4.3–4, 8.45.1; Apollod. 3.9.1",
+      "note": "Son of Arcas; Tegea and the adjoining land fell to him as his lot, so poets call the city the lot of Apheidas, and a ninth parish — the Apheidantes — was added in his reign."
+    },
+    {
+      "ruler": "Aleus",
+      "characterId": "aleus",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 8.4.5, 8.4.8, 8.45.1; Apollod. 3.9.1, 2.7.4",
+      "note": "Son of Apheidas; founder of the city proper, he built the old sanctuary of Athena Alea and made Tegea the capital of his kingdom."
+    },
+    {
+      "ruler": "Lycurgus",
+      "characterId": "lycurgus-arcadia",
+      "sources": ["pausanias", "apollodorus"],
+      "citation": "Paus. 8.4.8, 8.4.10; Apollod. 3.9.1–2",
+      "note": "Eldest son of Aleus; succeeded to the Tegean throne, outlived his sons Ancaeus and Epochus, and reached extreme old age before the kingship passed to the Cepheid line."
+    },
+    {
+      "ruler": "Echemus",
+      "characterId": "echemus",
+      "sources": ["pausanias"],
+      "citation": "Paus. 8.5.1, 8.45.3, 8.53.10",
+      "note": "Son of Aeropus, son of Cepheus, son of Aleus; Tegean king who slew Hyllus in single combat and turned back the first Heraclid return — his tomb and duel relief stood at Tegea beside the house of Aleus."
+    },
+    {
+      "ruler": "Agapenor",
+      "characterId": "agapenor",
+      "sources": ["homer", "pausanias", "apollodorus"],
+      "citation": "Il. 2.603–614; Paus. 8.5.2; Apollod. Epit. 3.12, 6.15",
+      "note": "Son of Ancaeus, son of Lycurgus; king after Echemus who led the Arcadians — Tegea among their towns — to Troy, then was storm-driven to Cyprus and never returned."
+    },
+    {
+      "ruler": "Hippothous",
+      "sources": ["pausanias"],
+      "citation": "Paus. 8.5.4, 8.53.6",
+      "note": "Son of Cercyon of the Stymphalian house; when Agapenor did not come home from Troy the kingdom devolved on him, and he moved the Arcadian capital from Tegea to Trapezus — closing Tegea's run as royal seat."
+    }
+  ]
+}

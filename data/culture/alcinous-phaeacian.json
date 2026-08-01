@@ -1,6 +1,35 @@
 {
   "id": "alcinous-phaeacian",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Ulysses at the Court of Alcinous",
+      "artist": "Francesco Hayez",
+      "year": "1814–1815",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Francesco_Hayez_028.jpg/960px-Francesco_Hayez_028.jpg",
+      "description": "Hayez's vast Capodimonte canvas shows Odysseus weeping in Alcinous' hall as Demodocus sings of Troy — the Phaeacian king as the perfect host whose court hears the hero's name before the hero will speak it."
+    },
+    {
+      "title": "Ulysses in the Palace of Alcinous",
+      "artist": "Jean-Jacques Lagrenée",
+      "year": "c. 1760s–1780s",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Jean-Jacques_Lagren%C3%A9e_-_Ulysse_dans_le_palais_d%27Alcino%C3%BCs.jpg/960px-Jean-Jacques_Lagren%C3%A9e_-_Ulysse_dans_le_palais_d%27Alcino%C3%BCs.jpg",
+      "description": "Lagrenée stages Odyssey 7: the shipwrecked stranger clasps the knees of Alcinous and Arete — Nausicaa's counsel made into a palace tableau of Phaeacian hospitality."
+    },
+    {
+      "title": "Odysseus before Alcinous, King of the Phaeacians",
+      "artist": "August Malmström",
+      "year": "1853",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Odysseus_before_Alcinous%2C_King_of_the_Phaeacians_%28August_Malmstr%C3%B6m%29_-_Nationalmuseum_-_117888.tif/lossy-page1-960px-Odysseus_before_Alcinous%2C_King_of_the_Phaeacians_%28August_Malmstr%C3%B6m%29_-_Nationalmuseum_-_117888.tif.jpg",
+      "description": "Malmström's Nationalmuseum painting seats Odysseus before the Phaeacian throne — Alcinous as the island king who will hear the wanderer's tale and send him home on a self-steering ship."
+    },
+    {
+      "title": "The Banquet in the House of Alcinous, with Homer",
+      "artist": "Francesco Nenci",
+      "year": "1833",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Francesco_nenci%2C_il_banchetto_in_casa_di_alcinoo_con_omero%2C_1833%2C_01.jpg/960px-Francesco_nenci%2C_il_banchetto_in_casa_di_alcinoo_con_omero%2C_1833%2C_01.jpg",
+      "description": "Nenci's academic banquet folds Homer himself into Alcinous' feast — a nineteenth-century allegory of the Odyssey's most civilized court, where song, gift, and safe passage still define the king."
+    }
+  ],
   "popCulture": [
     {
       "title": "Alcinous",
@@ -8,6 +37,32 @@
       "kind": "other",
       "description": "The Phaeacian king who hosted Odysseus remains the type of perfect hospitality — ships that know the way, and a court of dance and gift.",
       "externalUrl": "https://en.wikipedia.org/wiki/Alcinous"
+    }
+  ],
+  "films": [
+    {
+      "title": "Ulysses",
+      "year": "1954",
+      "medium": "film",
+      "director": "Mario Camerini",
+      "description": "Jacques Dumesnil's Alcinous hosts the amnesiac stranger who almost weds Nausicaa — Phaeacian hospitality as the frame for Kirk Douglas' voyage.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Ulysses_(1954_film)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Jeroen Krabbé's Alcinous rules the court that receives Odysseus after the storm — the island king whose ships know the way home.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "The Odyssey",
+      "year": "1968",
+      "medium": "tv",
+      "director": "Franco Rossi",
+      "description": "Rossi's miniseries keeps the Phaeacian palace — Alcinous hearing Demodocus' song and sending the wanderer home on a self-steering ship.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1968_miniseries)"
     }
   ]
 }

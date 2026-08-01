@@ -1,6 +1,35 @@
 {
   "id": "adonis",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Venus and Adonis",
+      "artist": "Paolo Veronese",
+      "year": "c. 1580",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Venus_y_Adonis_%28Veronese%29.jpg/960px-Venus_y_Adonis_%28Veronese%29.jpg",
+      "description": "Veronese's Prado canvas shows Venus clinging to Adonis as he rises for the hunt — the doomed youth already half-turned toward the boar that will kill him. Soft Venetian colour wraps a myth of love that cannot hold him."
+    },
+    {
+      "title": "The Death of Adonis",
+      "artist": "Peter Paul Rubens",
+      "year": "c. 1614",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Peter_Paul_Rubens%2C_The_Death_of_Adonis%2C_ca._1614._The_Israel_Museum%2C_Jerusalem.jpg/960px-Peter_Paul_Rubens%2C_The_Death_of_Adonis%2C_ca._1614._The_Israel_Museum%2C_Jerusalem.jpg",
+      "description": "Rubens stages the aftermath in the Israel Museum: Venus rushes to the fallen Adonis while the fatal boar still lurks in the landscape — grief and blood painted with Baroque urgency."
+    },
+    {
+      "title": "Venus, Adonis and Cupid",
+      "artist": "Annibale Carracci",
+      "year": "c. 1590",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Annibale_Carracci_-_Venus%2C_Adonis_and_Cupid_-_WGA4428.jpg/960px-Annibale_Carracci_-_Venus%2C_Adonis_and_Cupid_-_WGA4428.jpg",
+      "description": "Carracci's Prado painting freezes a quieter moment: Venus and Adonis at rest with Cupid nearby, before the hunt. Classical bodies and cool light make the coming death feel almost inevitable."
+    },
+    {
+      "title": "Death of Adonis",
+      "artist": "Sebastiano del Piombo",
+      "year": "c. 1512",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sebastiano_del_Piombo_-_Morte_di_Adone_-_Google_Art_Project.jpg/960px-Sebastiano_del_Piombo_-_Morte_di_Adone_-_Google_Art_Project.jpg",
+      "description": "An early High Renaissance lament in the Uffizi: Venus and her companions gather around Adonis's corpse as the landscape opens behind them — the dying beloved as Venetian tragedy."
+    }
+  ],
   "popCulture": [
     {
       "title": "Venus and Adonis",

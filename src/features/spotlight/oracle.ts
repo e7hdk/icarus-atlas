@@ -6,6 +6,7 @@
  *    poet — which teller says a quarrel variant (options are the variants'
  *           own source labels; no synthetic fillers, so the style matches)
  *    myth — which story carries the star, distractors from the saga shelf
+ *           minus every myth that truly casts the star (payload.storyTitles)
  *    role — the cosmic-role fallback that keeps the oracle at three. */
 
 import { hashString, mulberry32 } from '@/lib/prng';
@@ -87,9 +88,15 @@ export function buildOracle(
   }
 
   if (payload.storyTitle) {
+    // A wrong answer must be a myth the star truly never walks in. The shelf
+    // alone can't tell — its casts stop at the saga root — so the payload
+    // carries the star's full appearance set (stories plus their parent
+    // sagas). Without it, Athena's oracle dealt the Argonautica as a wrong
+    // answer while she stands on the Argo's deck.
+    const featured = new Set(payload.storyTitles);
     const others = data.weeks.sagas
       .map((saga) => saga.title)
-      .filter((title) => title !== payload.storyTitle);
+      .filter((title) => title !== payload.storyTitle && !featured.has(title));
     const distractors = seededShuffle(others, rng).slice(0, 3);
     if (distractors.length >= 2) {
       const options = seededShuffle([payload.storyTitle, ...distractors], rng);

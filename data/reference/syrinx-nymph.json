@@ -1,17 +1,43 @@
 {
   "id": "syrinx-nymph",
-  "summary": "Syrinx is a Hamadryad nymph of Arcadian Nonacris who fled Pan and was transformed into reeds, from which the god fashioned the pastoral pipes named syrinx.",
+  "summary": "Syrinx is an Arcadian nymph — often called a Hamadryad of Nonacris — who fled the god Pan and was transformed into reeds beside the river Ladon. Pan cut and bound the reeds into the multi-piped pastoral instrument that bears her name, the syrinx or panpipes.",
   "attribution": "Adapted from Wikipedia, \"Syrinx\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek σῦριγξ (sŷrinx), \"pipe\" or \"reed\"; the instrument takes its name from the nymph.",
+  "symbols": [
+    "reeds",
+    "panpipes",
+    "Ladon river"
+  ],
+  "cultCenters": [
+    "Nonacris (Arcadia)",
+    "River Ladon"
+  ],
   "sections": [
     {
-      "heading": "Mythology",
+      "heading": "Pursuit and metamorphosis",
       "paragraphs": [
-        "Ovid places Syrinx among the Hamadryads of Nonacris; pursued by Pan to the Ladon, she prays the river nymphs to change her and becomes reeds (Metamorphoses 1.868–954).",
-        "Pan cuts the reeds to unequal lengths and binds them with wax, inventing the instrument that bears her name."
+        "Ovid places Syrinx among the Hamadryads of Nonacris in Arcadia. Like Artemis she scorns marriage; when Pan pursues her she flees to the Ladon and begs the water nymphs to change her form. She becomes a clump of marsh reeds just as the god reaches her (Metamorphoses 1.689–712 in many numberings; the chase closes the Io episode).",
+        "Other handbooks repeat the Arcadian setting and the reed-change without Ovid's frame narrative; the core is always flight from Pan and transformation at a river."
+      ]
+    },
+    {
+      "heading": "Invention of the panpipes",
+      "paragraphs": [
+        "Pan sighs over the reeds; the wind in the hollow stems makes a plaintive sound. He cuts reeds of unequal length, joins them with wax, and names the instrument syrinx after the nymph. Thereafter the pipes are his constant attribute in pastoral poetry and art.",
+        "The myth aetiologises both the instrument and Pan's association with wild Arcadian mountains and river margins."
+      ]
+    },
+    {
+      "heading": "Later reception",
+      "paragraphs": [
+        "Syrinx becomes a stock figure of pastoral and musical allegory from Hellenistic poetry through Roman and later European art. She is distinct from other Arcadian nymphs of Nonacris (such as the eponym Nonacris) and from unrelated uses of the Greek word syrinx in anatomy and musicology."
       ]
     }
   ],
   "externalLinks": [
-    { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Syrinx_(mythology)" }
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Syrinx_(mythology)"
+    }
   ]
 }

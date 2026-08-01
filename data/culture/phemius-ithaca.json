@@ -1,0 +1,39 @@
+{
+  "id": "phemius-ithaca",
+  "artworks": [],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries keeps the palace bard among Odysseus' household — Phemius as the singer spared when the suitors fall.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
+    },
+    {
+      "title": "L'Odissea",
+      "year": "1968",
+      "medium": "tv",
+      "director": "Franco Rossi",
+      "description": "Rossi's Italian-Yugoslav Odyssey stages the Ithacan court where Phemius sings the returns from Troy against Penelope's grief.",
+      "externalUrl": "https://en.wikipedia.org/wiki/L%27Odissea"
+    }
+  ],
+  "popCulture": [
+    {
+      "title": "Odyssey",
+      "year": "c. 8th century BC",
+      "kind": "other",
+      "creator": "Homer",
+      "description": "Homer's self-taught bard of Odysseus' house — forced to sing for the suitors, spared at Telemachus' word, then ordered to play wedding songs loud enough to mask the slaughter.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Odyssey"
+    },
+    {
+      "title": "Phemius",
+      "year": "Homeric reception",
+      "kind": "other",
+      "description": "Son of Terpes, minstrel of Ithaca — the Odyssey's figure of the poet who sings unwillingly and lives.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phemius"
+    }
+  ]
+}

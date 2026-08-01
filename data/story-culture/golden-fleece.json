@@ -1,6 +1,35 @@
 {
   "id": "golden-fleece",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Jason with the Golden Fleece",
+      "artist": "Bertel Thorvaldsen",
+      "year": "1803 (marble 1828)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg/960px-Jas%C3%A3o_e_o_Velo_de_ouro_-_Bertel_Thorvaldsen_-_1803.jpg",
+      "description": "Thorvaldsen's breakthrough statue: Jason nude and helmeted after the fight, the Golden Fleece draped over his arm — Copenhagen's neoclassical emblem of the Colchian prize."
+    },
+    {
+      "title": "Jason and the Dragon (Douris cup)",
+      "artist": "Douris",
+      "year": "c. 480–470 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Douris_cup_Jason_Vatican_16545.jpg/960px-Douris_cup_Jason_Vatican_16545.jpg",
+      "description": "Attic red-figure kylix: Jason swallowed and regurgitated by the dragon that guards the Fleece, Athena standing by while the hide hangs on the tree. Vatican Museums — one of the strangest ancient images of the ordeal."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "Gustave Moreau",
+      "year": "1865",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg/960px-Moreau_-_Jason_et_M%C3%A9d%C3%A9e.jpg",
+      "description": "Moreau's Salon canvas pairs Jason with Medea after the fleece is won: the hero triumphant, the Colchian sorceress clinging beside him amid Symbolist jewel-work. Musée d'Orsay."
+    },
+    {
+      "title": "Jason and Medea",
+      "artist": "John William Waterhouse",
+      "year": "1907",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Jason_and_Medea_-_John_William_Waterhouse.jpg/960px-Jason_and_Medea_-_John_William_Waterhouse.jpg",
+      "description": "Waterhouse stages the Colchian pact: Medea mixes the protective potion while Jason waits — the charms that let him face Aeëtes' bulls and claim the sleepless dragon's hide."
+    }
+  ],
   "films": [
     {
       "title": "Jason and the Argonauts",

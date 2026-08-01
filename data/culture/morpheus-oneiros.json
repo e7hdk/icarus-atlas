@@ -1,6 +1,28 @@
 {
   "id": "morpheus-oneiros",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Morpheus and Iris",
+      "artist": "Pierre-Narcisse Guérin",
+      "year": "1811",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Guerin_Pierre_Narcisse_-_Morpheus_and_Iris_1811.jpg/960px-Guerin_Pierre_Narcisse_-_Morpheus_and_Iris_1811.jpg",
+      "description": "An oil by Pierre-Narcisse Guérin showing Iris waking or addressing Morpheus, the shaper of dreams. Neoclassical flesh and cool drapery stage Ovid's dream-messenger as a sleeping youth interrupted by the rainbow goddess — sleep personified at the threshold of waking."
+    },
+    {
+      "title": "Morpheus (Sleep)",
+      "artist": "Jean-Bernard Restout",
+      "year": "c. 1771",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Restout_-_Morpheus.jpg/960px-Restout_-_Morpheus.jpg",
+      "description": "An oil by Jean-Bernard Restout in the Cleveland Museum of Art, exhibited as Morpheus or Sleep. A nude youth sinks into oblivion on dark drapery — the Oneiros who takes human form in dreams reduced to pure, academic repose, the body as the vessel of night."
+    },
+    {
+      "title": "Aurora Awakening Morpheus",
+      "artist": "Bartolomeo Altomonte",
+      "year": "1769",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Aurora_weckt_Morpheus.jpg",
+      "description": "A ceiling or decorative oil by Bartolomeo Altomonte in which Aurora, goddess of dawn, rouses Morpheus from sleep. Light breaks over the dream-god's limbs — the daily contest between daybreak and the architect of dreams, painted for an Austrian Baroque interior."
+    }
+  ],
   "popCulture": [
     {
       "title": "Morphine",

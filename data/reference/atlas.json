@@ -1,15 +1,42 @@
 {
   "id": "atlas",
-  "summary": "In Greek mythology, Atlas is a Titan condemned to hold up the heavens or sky for eternity after the Titanomachy. Atlas also plays a role in the myths of two of the greatest Greek heroes: Heracles and Perseus. According to the ancient Greek poet Hesiod, Atlas stood at the ends of the earth in the extreme west. Later, he became commonly identified with the Atlas Mountains in northwest Africa and was said to be the first King of Mauretania. Atlas was said to have been skilled in philosophy, mathematics, and astronomy. In antiquity, he was credited with inventing the first celestial sphere. In some texts, he is even credited with the invention of astronomy itself.",
-  "attribution": "after Wikipedia · CC BY-SA",
+  "summary": "In Greek mythology, Atlas is a Titan condemned to hold up the heavens or sky for eternity after the Titanomachy. Son of Iapetus and the Oceanid Asia or Clymene, and brother of Prometheus, Epimetheus, and Menoetius, he also appears in the myths of Heracles and Perseus. Hesiod places him at the western edge of the earth; later tradition identified him with the Atlas Mountains of northwest Africa and credited him with inventing the celestial sphere. Classical art shows him bearing the sky or celestial globe, not the terrestrial Earth — a common modern misconception.",
+  "attribution": "Adapted from Wikipedia, \"Atlas (mythology)\" · CC BY-SA 4.0",
+  "etymology": "The etymology of Ἄτλας is uncertain. Ancients connected it with τλῆναι (\"to endure\"), yielding a sense of \"the enduring one\" or \"very enduring\"; some modern linguists propose Pre-Greek origin instead. The modern map book called an \"atlas\" and the name of the Atlantic Ocean derive from later associations with this Titan, not from a separate figure.",
+  "symbols": [
+    "Celestial sphere (or vault of the sky)",
+    "Pillars of the western edge of the world"
+  ],
+  "cultCenters": [
+    "Northwest Africa / Mauretania (legendary kingship and mountain association)"
+  ],
+  "sections": [
+    {
+      "heading": "Family",
+      "paragraphs": [
+        "Atlas is the son of the Titan Iapetus and the Oceanid Asia or Clymene, and brother of Menoetius, Epimetheus, and Prometheus. Ancient sources assign him many children, mostly daughters: by Hesperis the Hesperides; by Pleione (or Aethra) the Hyades, the Pleiades, and the son Hyas; and by one or more unnamed partners Calypso, Dione, and others.",
+        "Besides the Titan, other mythological figures also bear the name Atlas, including Plato's first king of Atlantis (a son of Poseidon and Cleito) and a legendary king of Mauretania celebrated by later cartographers. This entry concerns the Titan condemned to bear the sky."
+      ]
+    },
+    {
+      "heading": "Punishment and mythology",
+      "paragraphs": [
+        "Atlas and his brother Menoetius sided with the Titans in the Titanomachy. When the Olympians prevailed, Zeus condemned Atlas to stand at the western edge of the earth and hold up the sky on his shoulders — Atlas Telamon, \"enduring Atlas\" — rather than imprisoning him in Tartarus with many of the other Titans.",
+        "In one of Heracles' labours, the hero seeks the golden apples of the Hesperides. Heracles offers to bear the heavens while Atlas fetches the fruit; on returning, Atlas tries to leave the burden permanently on Heracles, but the hero tricks him into taking the sky back. In Ovid and related tradition, Perseus turns Atlas to stone with Medusa's head, and the Titan becomes a mountain range — the Atlas Mountains."
+      ]
+    },
+    {
+      "heading": "Astronomy and later reception",
+      "paragraphs": [
+        "Ancient authors such as Diodorus credit Atlas with perfecting astrology and publishing the doctrine of the sphere, so that the myth of the heavens on his shoulders was read as an allegory of that discovery. In antiquity he was also said to have been skilled in philosophy and mathematics.",
+        "The Farnese Atlas and other Classical images show him supporting a celestial globe. From the sixteenth century, printers associated the Titan with collections of maps; Gerardus Mercator dedicated his Atlas to the learned \"King of Mauretania,\" fixing the modern sense of the word. This encyclopedic notice treats the mythological Titan, not later map books, spacecraft, or other namesakes."
+      ]
+    }
+  ],
   "externalLinks": [
     {
       "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Atlas"
+      "url": "https://en.wikipedia.org/wiki/Atlas_(mythology)"
     }
-  ],
-  "symbols": [
-    "the celestial sphere"
-  ],
-  "etymology": "Read by the ancients as \"very enduring\" (from tlenai, \"to bear\") — the bearer by name."
+  ]
 }

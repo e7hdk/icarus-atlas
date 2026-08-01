@@ -1,6 +1,21 @@
 {
   "id": "birth-of-hephaestus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Return of Hephaestus (Attic red-figure pelike)",
+      "artist": "Kleophon Painter",
+      "year": "c. 440–430 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Return_Hephaistos_Staatliche_Antikensammlungen_2361.jpg/960px-Return_Hephaistos_Staatliche_Antikensammlungen_2361.jpg",
+      "description": "Munich pelike: Dionysus leads the cast-out smith back to Olympus with his thiasos — the visual tradition that follows Hera's rejection of the lame newborn Hephaestus."
+    },
+    {
+      "title": "Return of Hephaestus (Laconian kylix)",
+      "artist": "Boreades Painter",
+      "year": "c. 565–560 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Laconian_kylix_depicting_the_return_of_Hephaistos_%28565-560_BC%29.jpg/960px-Laconian_kylix_depicting_the_return_of_Hephaistos_%28565-560_BC%29.jpg",
+      "description": "Rhodes AM 10711: archaic Laconian cup of Hephaestus' return — the smith-god's expulsion and homecoming told as procession, not cradle scene."
+    }
+  ],
   "popCulture": [
     {
       "title": "Hephaestus",

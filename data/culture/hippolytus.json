@@ -48,9 +48,33 @@
       "composer": "Jean-Philippe Rameau",
       "description": "Rameau's first opera centres Hippolytus between Phaedra's passion and Aricia's love — the huntress-youth whose death the sea-bull completes.",
       "externalUrl": "https://en.wikipedia.org/wiki/Hippolyte_et_Aricie"
+    },
+    {
+      "title": "Fedra",
+      "year": "1915",
+      "kind": "opera",
+      "composer": "Ildebrando Pizzetti",
+      "description": "Pizzetti's La Scala Fedra keeps Hippolytus as the rejected hunter — the stepson whose virtue answers Phaedra's passion with death.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Fedra_(Pizzetti)"
+    },
+    {
+      "title": "Phaedra",
+      "year": "1975",
+      "kind": "orchestral",
+      "composer": "Benjamin Britten",
+      "description": "Britten's Racine cantata turns on Hippolytus' destruction — the stepson named in Phaedra's confessions as her last vocal work unfolds.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phaedra_(cantata)"
     }
   ],
   "popCulture": [
+    {
+      "title": "Hippolytus",
+      "year": "428 BC",
+      "kind": "other",
+      "creator": "Euripides",
+      "description": "Euripides' City Dionysia prize play is still the root text: Hippolytus the Artemis-devotee destroyed by Aphrodite, Phaedra and a father's curse.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hippolytus_(play)"
+    },
     {
       "title": "Phèdre",
       "year": "1677",
@@ -58,6 +82,30 @@
       "creator": "Jean Racine",
       "description": "Racine's tragedy keeps Hippolytus as the innocent who dies for a lie — the stepson whose virtue cannot survive Phaedra's confession.",
       "externalUrl": "https://en.wikipedia.org/wiki/Ph%C3%A8dre"
+    },
+    {
+      "title": "Phaedra",
+      "year": "c. 54 AD",
+      "kind": "other",
+      "creator": "Seneca",
+      "description": "Seneca's Roman tragedy ends with Hippolytus torn by his horses — the chaste son whose death is the price of Phaedra's accusation.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phaedra_(Seneca)"
+    },
+    {
+      "title": "Phaedra's Love",
+      "year": "1996",
+      "kind": "other",
+      "creator": "Sarah Kane",
+      "description": "Kane's modern Seneca rewrite keeps Hippolytus as the object of brutal desire — the stepson caught in a court where love is only violence.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Phaedra%27s_Love"
+    },
+    {
+      "title": "The Bull from the Sea",
+      "year": "1962",
+      "kind": "novel",
+      "creator": "Mary Renault",
+      "description": "Renault's sequel follows Hippolytus as Theseus' Amazon-born son — the youth Phaedra desires and the curse that closes the king's house.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Bull_from_the_Sea"
     }
   ]
 }

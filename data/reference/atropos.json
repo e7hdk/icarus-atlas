@@ -1,19 +1,36 @@
 {
   "id": "atropos",
-  "summary": "Atropos, in Greek mythology, was the third of the Three Fates or Moirai, goddesses of fate and destiny. Her Roman equivalent was Morta.",
-  "attribution": "after Wikipedia · CC BY-SA",
-  "externalLinks": [
-    {
-      "label": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Atropos"
-    }
-  ],
+  "summary": "Atropos (\"the Inflexible,\" \"without turn\") is the third of the Moirai, the Greek Fates. With Clotho, who spins the thread of life, and Lachesis, who measures it, she chooses the manner of death and cuts the thread. Her Roman counterpart is Morta (among the Parcae). Even Zeus is often pictured as subject to their decree.",
+  "attribution": "Adapted from Wikipedia, \"Atropos\" · CC BY-SA 4.0",
+  "etymology": "Ancient Greek Ἄτροπος, \"without turn\" — she who cannot be swayed.",
   "symbols": [
-    "the shears"
+    "shears",
+    "scissors"
   ],
   "cultCenters": [
     "Corinth (sanctuary of the Moirai)",
     "Olympia"
   ],
-  "etymology": "Atropos, \"the Unturnable\" — she who cannot be swayed."
+  "sections": [
+    {
+      "heading": "The cutter among the Moirai",
+      "paragraphs": [
+        "Classical imagery divides the sisters' labor: Clotho spins, Lachesis allots the length, Atropos severs. She is \"the Inflexible One,\" ending each mortal span. Parentage varies—daughters of Nyx (and Erebus), or of Zeus and Themis later in Hesiod's Theogony; Plato's Republic ties them to Necessity.",
+        "Early poetry sometimes names the third fate Aesa; Atropos becomes the standard name later. Order of seniority also shifts: the Shield of Heracles can call Atropos oldest and smallest, while Boccaccio and others rearrange the birth order of the Parcae."
+      ]
+    },
+    {
+      "heading": "Fate above the gods",
+      "paragraphs": [
+        "Although Zeus is chief of the Olympians, many traditions cast him as executor rather than author of destiny: the Fates' cutting is not lightly undone. Their shared cult marks them as powers of birth, lot, and death together, not death alone.",
+        "Atropos' name passed into science and natural history: atropine and the nightshade genus Atropa, the asteroid 273 Atropos, and species epithets such as Acherontia atropos (the death's-head hawkmoth) and Bitis atropos."
+      ]
+    }
+  ],
+  "externalLinks": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atropos"
+    }
+  ]
 }

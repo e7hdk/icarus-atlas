@@ -1,6 +1,35 @@
 {
   "id": "return-of-the-argo",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Return of the Argonauts",
+      "artist": "Konstantinos Volanakis",
+      "year": "c. 19th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Volanakis_Constantine_epistrofi_argonauton.jpeg/960px-Volanakis_Constantine_epistrofi_argonauton.jpeg",
+      "description": "Volanakis' seascape of the Argo homeward — the return voyage as Greek marine painting."
+    },
+    {
+      "title": "The Return of the Argonauts",
+      "artist": "Unknown",
+      "year": "—",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Retour_des_Argonautes.jpg/960px-Retour_des_Argonautes.jpg",
+      "description": "The Argonauts' homecoming — the fleece-bearing ship after Colchis, Wandering Rocks, and Corcyra."
+    },
+    {
+      "title": "Plaque with Medea's Murder of Absyrtus",
+      "artist": "Martin Didier Pape",
+      "year": "c. 16th century",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Martin_Didier_Pape_-_Plaque_with_Medea%27s_Murder_of_Absyrtus_-_Walters_44281.jpg/960px-Martin_Didier_Pape_-_Plaque_with_Medea%27s_Murder_of_Absyrtus_-_Walters_44281.jpg",
+      "description": "Limoges plaque — Medea's murder of Apsyrtus that delays Aeetes and opens the Argo's return."
+    },
+    {
+      "title": "The Golden Fleece",
+      "artist": "Herbert James Draper",
+      "year": "1904",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Herbert_James_Draper%2C_The_Golden_Fleece.jpg/960px-Herbert_James_Draper%2C_The_Golden_Fleece.jpg",
+      "description": "Draper's Jason and Medea with the fleece — the prize the return voyage must carry home to Iolcus."
+    }
+  ],
   "popCulture": [
     {
       "title": "Argonautica",

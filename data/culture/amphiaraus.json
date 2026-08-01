@@ -1,6 +1,35 @@
 {
   "id": "amphiaraus",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Amphiaraus",
+      "artist": "Domenico del Barbiere",
+      "year": "c. 1540–1550",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Amphiaraus_MET_DP854214.jpg/960px-Amphiaraus_MET_DP854214.jpg",
+      "description": "Fontainebleau-school engraving by Domenico del Barbiere in the Metropolitan Museum of Art: the Argive seer Amphiaraus, who foresaw his death in the war of the Seven against Thebes yet marched when Eriphyle, bribed with Harmonia's necklace, forced his hand. Renaissance print culture made the reluctant prophet a type of doomed foresight."
+    },
+    {
+      "title": "Votive Relief of Amphiaraus from Oropos",
+      "artist": "Unknown",
+      "year": "5th century BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Votive_relief_depicting_Ampiaraus_%285th_cent._B.C.%29_National_Archaeological_Museum_of_Athens_%2822_July_2018%29.jpg/960px-Votive_relief_depicting_Ampiaraus_%285th_cent._B.C.%29_National_Archaeological_Museum_of_Athens_%2822_July_2018%29.jpg",
+      "description": "Marble votive from the Amphiareion at Oropos, now in the National Archaeological Museum, Athens: Amphiaraus appears in the healing type of Asclepius, accompanied by a younger attendant. The relief shows the seer's afterlife as oracle-hero — swallowed by the earth before Thebes, worshipped where the sick slept for dreams."
+    },
+    {
+      "title": "Amphiaraus Betrayed by His Wife (maiolica bowl)",
+      "artist": "Francesco Xanto Avelli",
+      "year": "1533",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Urbino%2C_francesco_xanto_avelli%2C_scodella_con_anfiarao_tradito_dalla_moglie%2C_1533.JPG/960px-Urbino%2C_francesco_xanto_avelli%2C_scodella_con_anfiarao_tradito_dalla_moglie%2C_1533.JPG",
+      "description": "Urbino istoriato maiolica by Francesco Xanto Avelli: Amphiaraus betrayed by Eriphyle, the wife who sold him into the Theban war for a necklace. The bowl turns the Argive household drama into colorful Renaissance narrative ware — the seer's forced departure painted for the table."
+    },
+    {
+      "title": "Votive Relief of Archinos to Amphiaraos",
+      "artist": "Unknown",
+      "year": "c. 400–350 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Relief%3B_offering_to_Archinos_to_Amphiaraos_Wellcome_L0007389EA.jpg/960px-Relief%3B_offering_to_Archinos_to_Amphiaraos_Wellcome_L0007389EA.jpg",
+      "description": "Marble shrine-relief of the offering of Archinos to Amphiaraos: the hero-healer stands treating a youth's shoulder, while the same youth sleeps on a couch as a sacred snake glides over him — incubation made visible. The inscription names Amphiaraos; the piece is the classic image of the Oropos oracle-cult that followed the seer's disappearance into the earth."
+    }
+  ],
   "popCulture": [
     {
       "title": "Seven Against Thebes",

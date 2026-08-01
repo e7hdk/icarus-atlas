@@ -1,6 +1,14 @@
 {
   "id": "nostoi",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Shipwreck of the Greek Fleet on the Voyage Home from Troy",
+      "artist": "Joos de Momper the Younger",
+      "year": "c. 1585–1590",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Joos_de_Momper_%28II%29_-_Shipwreck_of_the_Greek_Fleet_on_the_Voyage_Home_from_Troy_DSC6852.jpg/960px-Joos_de_Momper_%28II%29_-_Shipwreck_of_the_Greek_Fleet_on_the_Voyage_Home_from_Troy_DSC6852.jpg",
+      "description": "Nationalmuseum Stockholm: the Returns as wreckage — storm and reef standing in for the Nostoi's catalogue of captains who never came home clean."
+    }
+  ],
   "popCulture": [
     {
       "title": "Nostoi",
@@ -16,6 +24,16 @@
       "kind": "language",
       "description": "Greek for the hero's return — the word that still names longing for home after war and wandering.",
       "externalUrl": "https://en.wikipedia.org/wiki/Nostos"
+    }
+  ],
+  "films": [
+    {
+      "title": "The Odyssey",
+      "year": "1997",
+      "medium": "tv",
+      "director": "Andrei Konchalovsky",
+      "description": "Konchalovsky's miniseries stages one strand of the Returns — Odysseus' nostos while other captains' homecomings end in murder and storm.",
+      "externalUrl": "https://en.wikipedia.org/wiki/The_Odyssey_(1997_miniseries)"
     }
   ]
 }

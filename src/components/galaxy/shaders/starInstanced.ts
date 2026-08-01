@@ -26,6 +26,28 @@ void main() {
 }
 `;
 
+/** Mobile core: identical transform result, but pulse scale is a compact float
+ *  attribute so the static 4x4 instance matrices do not cross the bus each frame. */
+export const MOBILE_CORE_VERT = /* glsl */ `
+attribute vec3 aColor;
+attribute float aAlpha;
+attribute float aScale;
+varying vec3 vColor;
+varying float vAlpha;
+#ifdef USE_FOG
+  varying float vFogDepth;
+#endif
+void main() {
+  vColor = aColor;
+  vAlpha = aAlpha;
+  vec4 mvPosition = modelViewMatrix * instanceMatrix * vec4(position * aScale, 1.0);
+  gl_Position = projectionMatrix * mvPosition;
+  #ifdef USE_FOG
+    vFogDepth = -mvPosition.z;
+  #endif
+}
+`;
+
 export const CORE_FRAG = /* glsl */ `
 precision highp float;
 varying vec3 vColor;

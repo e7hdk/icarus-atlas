@@ -4,16 +4,23 @@
     {
       "ruler": "Latinus",
       "characterId": "latinus-king",
-      "sources": ["ovid", "hyginus"],
-      "citation": "Metamorphoses 14.639–761; Fabulae 127",
-      "note": "King of the Latins whom Ovid names son of Faunus — disambiguated as latinus-king from Odysseus' son Latinus in Apollodorus Epit. 7.24 and Hyginus' Telegonus strand."
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.639–761",
+      "note": "King of the Latins whom Ovid names son of Faunus — the Laurentine host whose daughter Aeneas won. Disambiguated as latinus-king from Odysseus' son Latinus (Hesiod Theogony 995–1015; Apollodorus Epit. 7.24; Hyginus Fabulae 127)."
+    },
+    {
+      "ruler": "Lavinia",
+      "characterId": "lavinia",
+      "sources": ["ovid"],
+      "citation": "Metamorphoses 14.639–761, 14.762–841",
+      "note": "Not a reigning queen — Latinus' daughter and the pure Laurentine bride for whom Turnus fought; the marriage-dower through which Aeneas inherits the Latin kingdom. Vergil and Dionysius expand this strand outside the seven lenses."
     },
     {
       "ruler": "Aeneas",
       "characterId": "aeneas",
-      "sources": ["ovid", "pausanias", "hyginus"],
-      "citation": "Metamorphoses 14.639–762, 14.101–119; Description of Greece 3.22.11; Fabulae 273",
-      "note": "Married Lavinia and succeeded to Latinus' kingdom after war with Turnus — the westward destiny Apollodorus Epit. 5.21 prepares when the Greeks spare him at Troy."
+      "sources": ["ovid", "pausanias"],
+      "citation": "Metamorphoses 14.639–762, 14.842–881, 15.1012–1099; Description of Greece 2.23.5, 3.22.11",
+      "note": "Won Lavinia and Latinus' realm after war with Turnus; Ovid washes his mortality in the Numicius on Laurentine shores (Indiges) and names Lavinium's sacred homes on the Tiber approach. Pausanias knows him as carrier of Troy's Palladium to Italy and founder of Laconian cities when storms drove him west."
     }
   ]
 }

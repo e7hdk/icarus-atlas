@@ -1,6 +1,45 @@
 {
   "id": "death-of-heracles",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Hercules on the Pyre",
+      "artist": "Guido Reni",
+      "year": "1617–1619",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Guido_reni%2C_storie_di_ercole%2C_ercole_sulla_pira%2C_1617-21.JPG/960px-Guido_reni%2C_storie_di_ercole%2C_ercole_sulla_pira%2C_1617-21.JPG",
+      "description": "Louvre INV 538: Reni's Mantuan cycle ends with Heracles on the funeral pile — the poisoned shirt's agony staged as monumental nude stoicism before the flames that will make him a god."
+    },
+    {
+      "title": "The Apotheosis of Hercules",
+      "artist": "François Lemoyne",
+      "year": "1731–1736",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Fran%C3%A7ois_Lemoyne_-_L%27Apoth%C3%A9ose_d%27Hercule_-_Google_Art_Project.jpg/960px-Fran%C3%A7ois_Lemoyne_-_L%27Apoth%C3%A9ose_d%27Hercule_-_Google_Art_Project.jpg",
+      "description": "Versailles Salon d'Hercule ceiling: after Oeta's pyre, Hercules is received on Olympus by Jupiter and Juno — the death that becomes godhead painted as Rococo triumph."
+    },
+    {
+      "title": "The Apotheosis of Hercules",
+      "artist": "Noël Coypel",
+      "year": "1700",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/No%C3%ABl_Coypel_-_The_Apotheosis_of_Hercules.jpg/960px-No%C3%ABl_Coypel_-_The_Apotheosis_of_Hercules.jpg",
+      "description": "Coypel's oil restages the cloud-borne ascent: the labourer of Trachis and Oeta lifted among the immortals — Hesiod's Hebe-wedding afterlife in French classical colour."
+    },
+    {
+      "title": "Nessus and Deianira",
+      "artist": "Enrique Simonet",
+      "year": "1888",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Simonet_-_Neso_y_Deyanira.jpg/960px-Simonet_-_Neso_y_Deyanira.jpg",
+      "description": "Simonet's academic canvas: the centaur seizes Deianira at the Evenus — the dying deceit that furnishes the poisoned 'love-charm' and seals Heracles' pyre years later."
+    }
+  ],
+  "music": [
+    {
+      "title": "Hercules",
+      "year": "1745",
+      "kind": "opera",
+      "composer": "George Frideric Handel",
+      "description": "Handel's musical drama of the homecoming centres on Dejanira's jealousy, driving toward the poisoned robe and one of the great mad scenes of the baroque stage — Sophocles' Trachiniae as oratorio theatre.",
+      "externalUrl": "https://en.wikipedia.org/wiki/Hercules_(Handel)"
+    }
+  ],
   "popCulture": [
     {
       "title": "Trachiniae",

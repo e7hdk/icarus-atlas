@@ -1,0 +1,17 @@
+{
+  "id": "theseia",
+  "name": "Theseia",
+  "greekName": "Θησεῖα",
+  "deities": ["theseus"],
+  "place": "athens",
+  "atticDate": { "month": "pyanepsion", "days": [8] },
+  "conventionalDates": ["10-08"],
+  "aition": "theseus-cycle",
+  "summary": "The hero-feast of Theseus on the day after the Pyanepsia — procession, games and a public meal — enlarged after Cimon brought the hero's bones home from Skyros.",
+  "testimonia": [
+    "Pausanias 3.3.7 (Cimon recovers the bones of Theseus from Scyros)",
+    "Plutarch, Theseus 36.1–4 (the Theseion and the eighth-day honours)",
+    "Mikalson (1975) 64 (8 Pyanopsion)",
+    "Parke (1977) 81–82"
+  ]
+}

@@ -2,18 +2,52 @@
   "city": "calydon",
   "reigns": [
     {
+      "ruler": "Calydon",
+      "characterId": "calydon",
+      "sources": ["apollodorus"],
+      "citation": "Bibliotheca 1.7.7",
+      "note": "Eponymous son of Aetolus by Pronoe; with his brother Pleuron he gave his name to the Aetolian city that heads the house."
+    },
+    {
+      "ruler": "Porthaon",
+      "characterId": "porthaon",
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 14.115–118; Bibliotheca 1.7.7, 1.7.10",
+      "note": "Homeric Portheus, son of Agenor by Epicaste daughter of Calydon; father of Oeneus, Agrius, and Melas, whose sons dwelt in Pleuron and steep Calydon."
+    },
+    {
       "ruler": "Oeneus",
       "characterId": "oeneus",
+      "sources": ["homer", "apollodorus", "pausanias"],
+      "citation": "Iliad 9.529–540; Bibliotheca 1.8.1; Paus. 2.25.2",
+      "note": "Reigning over Calydon, first to receive the vine from Dionysus; father of Meleager, who slighted Artemis and loosed the boar."
+    },
+    {
+      "ruler": "Meleager",
+      "characterId": "meleager",
       "sources": ["homer", "apollodorus"],
-      "citation": "Iliad 9.529–540; Bibliotheca 1.8.1",
-      "note": "King of Calydon who slighted Artemis and fathered Meleager."
+      "citation": "Iliad 2.638–644, 9.529–599; Bibliotheca 1.8.2–3",
+      "note": "Son of Oeneus to whom commands had been given that he should bear full sway among the Aetolians; dead before the Trojan muster, after the Curetes war and the brand."
+    },
+    {
+      "ruler": "Agrius",
+      "characterId": "agrius-aetolian",
+      "sources": ["apollodorus", "pausanias", "hyginus"],
+      "citation": "Bibliotheca 1.8.6; Paus. 2.25.2; Hyg. Fab. 175",
+      "note": "Brother of Oeneus; his sons wrested Calydon from the aged king and gave the kingdom to their father until Diomedes restored the house."
+    },
+    {
+      "ruler": "Andraemon",
+      "sources": ["apollodorus", "homer"],
+      "citation": "Bibliotheca 1.8.6; Iliad 2.638–644",
+      "note": "Husband of Gorge; Diomedes gave him the kingdom when Oeneus was too old to rule, and his son Thoas later led the Aetolians."
     },
     {
       "ruler": "Thoas",
       "characterId": "thoas-aetolia",
-      "sources": ["homer"],
-      "citation": "Iliad 2.638–644",
-      "note": "Lord of Pleuron and Calydon when the Aetolians sailed to Troy after Oeneus' house fell."
+      "sources": ["homer", "apollodorus"],
+      "citation": "Iliad 2.638–644, 13.206–214; Epitome 3.12",
+      "note": "Son of Andraemon and Gorge; lord of Pleuron and steep Calydon when the Aetolians sailed to Troy after Oeneus' house fell."
     }
   ]
 }

@@ -1,6 +1,42 @@
 {
   "id": "minotaur-and-ariadne",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "Theseus Slaying the Minotaur (tondo of the Aison Kylix)",
+      "artist": "Aison",
+      "year": "c. 435–415 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg/960px-Kylix_Theseus_Aison_MNA_Inv11365_n1.jpg",
+      "description": "Attic red-figure tondo: Theseus drags the slain Minotaur from the labyrinth while Athena stands by — Athens' founding exploit in a single charged cup."
+    },
+    {
+      "title": "Theseus Victorious over the Minotaur",
+      "artist": "Unknown (Roman wall-painter, Fourth Pompeian Style)",
+      "year": "1st century AD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Wall_painting_-_Theseus_victorious_over_the_Minotaur_-_Pompeii_%28VII_2_16%29_-_Napoli_MAN_9043_-_01.jpg/960px-Wall_painting_-_Theseus_victorious_over_the_Minotaur_-_Pompeii_%28VII_2_16%29_-_Napoli_MAN_9043_-_01.jpg",
+      "description": "Pompeian fresco: Theseus stands over the crumpled bull-man as the freed Athenian youths crowd forward — the labyrinth's end painted for a Campanian house."
+    },
+    {
+      "title": "Bacchus and Ariadne",
+      "artist": "Titian",
+      "year": "1522–1523",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Titian_Bacchus_and_Ariadne.jpg/960px-Titian_Bacchus_and_Ariadne.jpg",
+      "description": "On Naxos Ariadne turns as Bacchus leaps from his chariot — Theseus' ship already a pale sail, the crown of stars waiting above her head."
+    },
+    {
+      "title": "Ariadne Abandoned by Theseus",
+      "artist": "Angelica Kauffmann",
+      "year": "1774",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg/960px-Angelica_Kauffmann_-_Ariadne_Abandoned_by_Theseus_-_Google_Art_Project.jpg",
+      "description": "Kauffmann isolates the morning after the thread: Ariadne alone on the shore, the hero's sail gone — Catullus' abandoned heroine for a neoclassical audience."
+    },
+    {
+      "title": "Theseus Slaying the Minotaur",
+      "artist": "Antoine-Louis Barye",
+      "year": "1843",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Theseus_Slaying_Minotaur_by_Barye.jpg/960px-Theseus_Slaying_Minotaur_by_Barye.jpg",
+      "description": "Barye's bronze coils the hero and the bull-headed beast in one struggle — the labyrinth fight cast as Romantic animal force."
+    }
+  ],
   "popCulture": [
     {
       "title": "Minotaur",

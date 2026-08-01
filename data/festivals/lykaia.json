@@ -1,0 +1,16 @@
+{
+  "id": "lykaia",
+  "name": "Lykaia",
+  "greekName": "Λύκαια",
+  "deities": ["zeus"],
+  "place": "lycosura",
+  "atticDate": { "month": "hekatombaion", "approximate": true },
+  "conventionalDates": ["07-20", "07-21"],
+  "summary": "The Arcadian games of Zeus Lycaeus on Mount Lycaion — founded, Pausanias says, by Lycaon before the Panathenaia itself — athletic contests beneath the summit sanctuary where no living thing casts a shadow.",
+  "testimonia": [
+    "Pausanias 8.2.1 (Lycaon founds Lycosura, names Zeus Lycaeus, and institutes the Lycaean games)",
+    "Pausanias 8.38.2–7 (the summit precinct, the altar, and the games)",
+    "Pindar, Olympian 13.107–108 (victories at the Lykaia)",
+    "Arcadian summer festival — the Attic month is a seasonal convention only"
+  ]
+}

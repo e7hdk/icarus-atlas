@@ -1,6 +1,42 @@
 {
   "id": "marsyas-phrygia",
-  "artworks": [],
+  "artworks": [
+    {
+      "title": "The Flaying of Marsyas",
+      "artist": "Titian",
+      "year": "c. 1570–1576",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tizian_-_Apoll%C3%B3n_a_Marsyas%2C_z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_1.jpg/960px-Tizian_-_Apoll%C3%B3n_a_Marsyas%2C_z%C3%A1mek_Krom%C4%9B%C5%99%C3%AD%C5%BE_1.jpg",
+      "description": "Titian's late masterpiece in the Archdiocesan Museum at Kroměříž: Apollo and his assistants flay the defeated satyr Marsyas, hung upside down like a hunter's quarry. The thick, almost dissolving paint makes pain and music inseparable — one of the most unflinching images of divine punishment in Western art."
+    },
+    {
+      "title": "Apollo Flaying Marsyas",
+      "artist": "Jusepe de Ribera",
+      "year": "1637",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jos%C3%A9_de_Ribera_-_Apollo_Flaying_Marsyas_-_WGA19374.jpg/960px-Jos%C3%A9_de_Ribera_-_Apollo_Flaying_Marsyas_-_WGA19374.jpg",
+      "description": "An oil by Jusepe de Ribera in the Royal Museums of Fine Arts of Belgium, Brussels. Apollo, luminous and calm, peels the skin from Marsyas in a shaft of light — Spanish tenebrism turned on the Phrygian contest's aftermath, the satyr's scream answering the god's pitiless clarity."
+    },
+    {
+      "title": "Athena and Marsyas",
+      "artist": "Roman copy after Myron",
+      "year": "Roman copy after a Greek bronze of c. 450 BC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Mirone_%28da%29%2C_Atena_e_Marsia%2C_copia_romana_da_originale_del_450_ac.ca_01.JPG/960px-Mirone_%28da%29%2C_Atena_e_Marsia%2C_copia_romana_da_originale_del_450_ac.ca_01.JPG",
+      "description": "A Roman marble group after Myron's lost bronze: Athena has just discarded the aulos; Marsyas starts forward to claim the pipes she cursed. The moment before hubris — the satyr's first step toward the contest with Apollo — frozen in Classical restraint rather than in the later flaying."
+    },
+    {
+      "title": "The Flaying of Marsyas",
+      "artist": "Bronzino",
+      "year": "c. 1531–1532",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Angelo_Bronzino_-_Sfida_tra_apollo_e_marsia.jpg/960px-Angelo_Bronzino_-_Sfida_tra_apollo_e_marsia.jpg",
+      "description": "An early oil by Agnolo Bronzino in the Hermitage, Saint Petersburg. Apollo and Marsyas face one another in the musical contest that will end in the satyr's flaying — Florentine Mannerism staging the Phrygian challenge as poised, almost courtly confrontation before the knife."
+    },
+    {
+      "title": "Apollo and Marsyas",
+      "artist": "Pietro Perugino",
+      "year": "c. 1490–1500",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apollon_et_Daphnis_-_Le_P%C3%A9rugin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_370.jpg/960px-Apollon_et_Daphnis_-_Le_P%C3%A9rugin_-_Mus%C3%A9e_du_Louvre_Peintures_RF_370.jpg",
+      "description": "A small panel in the Louvre long read as Apollo with the shepherd Daphnis and now often identified with the Marsyas contest: the god seated with his lyre opposite a youthful piper. Perugino's Umbrian calm turns the deadly rivalry into a quiet pastoral exchange — music before the flaying."
+    }
+  ],
   "popCulture": [
     {
       "title": "Marsyas",
