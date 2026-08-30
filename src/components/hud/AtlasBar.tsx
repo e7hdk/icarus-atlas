@@ -4,7 +4,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
+import { CompareChip } from '@/components/palimpsest/CompareChip';
+import { CompareQuerySync } from '@/components/palimpsest/CompareQuerySync';
 import { useEphemerisStore } from '@/features/spotlight/store';
+import type { Source } from '@/types/character';
 import { MainNav, type MainTab } from './MainNav';
 import { HudActions } from './HudActions';
 import { EphemerisChip } from './EphemerisChip';
@@ -25,7 +28,7 @@ function doorFor(pathname: string): MainTab | null {
   return 'galaxy';
 }
 
-export function AtlasBar() {
+export function AtlasBar({ sources }: { sources: Source[] }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -58,6 +61,8 @@ export function AtlasBar() {
   }, []);
 
   return (
+    <>
+    <CompareQuerySync />
     <header
       className={`pointer-events-none fixed inset-x-0 top-0 z-30 transition-transform duration-300 ${
         hidden || proemActive || oracleOpen || riddleOpen ? '-translate-y-full' : ''
@@ -86,6 +91,7 @@ export function AtlasBar() {
           <MainNav active={doorFor(pathname)} />
         </div>
         <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
+          <CompareChip sources={sources} />
           <span className="hidden sm:flex">
             <OdysseyChip active={pathname.startsWith('/odyssey')} />
           </span>
@@ -94,5 +100,6 @@ export function AtlasBar() {
         </div>
       </div>
     </header>
+    </>
   );
 }

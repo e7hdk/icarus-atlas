@@ -71,7 +71,7 @@ export default async function RootLayout({
       className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <AtlasBar />
+        <AtlasBar sources={sources} />
         {children}
         <GlobalOverlays characters={searchable} sources={sources} />
         <EphemerisHost data={ephemeris} />

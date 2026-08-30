@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import type { LensId, Source } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { ComparePairControl } from '@/components/palimpsest/ComparePairControl';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useLandsStore } from '@/features/geo/lands-store';
 import { MAP_LAYER_IDS, MAP_LAYER_LABELS } from '@/features/geo/map-layers';
@@ -213,6 +214,8 @@ export function SettingsPanel({ sources, starCount }: { sources: Source[]; starC
             })}
           </div>
         </section>
+
+        <ComparePairControl sources={sources} />
 
         <footer className="border-t border-glass-border px-5 py-4 text-center">
           <div className="flex items-center justify-between font-display text-[9px] uppercase tracking-[0.18em] text-aether-faint">
