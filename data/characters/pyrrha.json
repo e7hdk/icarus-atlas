@@ -15,7 +15,12 @@
       "text": "The most god-fearing of women, spared with Deucalion — her cousin and husband — on the drowned world's last dry summit, the twin peaks of Parnassus.",
       "sources": ["ovid"],
       "citation": "Metamorphoses 1.316–319, 1.322–329, 1.350–390",
-      "topic": "flood-landing"
+      "topic": "flood-landing",
+      "stance": "parnassus",
+      "factId": "flood-landing-ovid",
+      "witnesses": [
+        { "source": "ovid", "citation": "Metamorphoses 1.313–321", "corpusEntry": "ovid-metamorphoses-lat" }
+      ]
     },
     {
       "text": "Daughter of Epimetheus and Pandora, said to be the first mortal created.",
@@ -27,7 +32,9 @@
       "text": "With Deucalion she fled the cataclysm to Mount Etna, said to be the highest mountain in Sicily.",
       "sources": ["hyginus"],
       "citation": "Fabulae 153",
-      "topic": "flood-landing"
+      "topic": "flood-landing",
+      "stance": "etna",
+      "factId": "flood-landing-hyginus"
     }
   ],
   "story": [

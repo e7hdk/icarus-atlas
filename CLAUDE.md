@@ -48,10 +48,10 @@ src/
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
   features/
-    lens/               # source-lens state + fact-filtering logic
+    palimpsest/         # source-pair comparison: stance classifier (M14)
     characters/         # character loading, relation/ring grouping
     search/             # name search
-  lib/                  # utils, zod schemas, three helpers
+  lib/                  # utils, zod schemas, three helpers, lens.ts (fact filtering)
   types/                # shared TS types (character.ts is the contract)
 data/
   sources.json          # the 7 ancient source authors

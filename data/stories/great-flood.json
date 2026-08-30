@@ -38,11 +38,29 @@
       "citation": "Apollod. 1.7.2"
     },
     {
-      "title": "The chest on the waters",
-      "text": "Deucalion embarked with Pyrrha — daughter of Epimetheus and Pandora in the later tradition. Nine days and nine nights they drifted over the drowned world. Apollodorus and Ovid ground them on the heights of Parnassus when the rain ceased; Hyginus instead sends them fleeing to Mount Etna in Sicily when Phaethon's fall had set the world ablaze and Jove let loose every river.",
-      "sources": ["apollodorus", "ovid", "hyginus"],
-      "citation": "Apollod. 1.7.2; Ov. Met. 1.313-347; Hyg. Fab. 152A, 153",
-      "topic": "flood-landing"
+      "title": "Parnassus takes them",
+      "text": "Deucalion embarked with Pyrrha — daughter of Epimetheus and Pandora in the later tradition — and rode out the drowned world until the mountain of Phocis took them. In the one telling the chest drifts nine days and nine nights before it grounds, and Deucalion sacrifices there to Zeus the god of Escape; in the other only Parnassus' twin peaks still break the waves, and a small boat brings the pair to the Corycian nymphs and to prophetic Themis, who held the oracle then. Both leave them on the same summit.",
+      "sources": ["apollodorus", "ovid"],
+      "citation": "Apollod. 1.7.2; Ov. Met. 1.313-321",
+      "topic": "flood-landing",
+      "stance": "parnassus",
+      "factId": "landing-parnassus",
+      "witnesses": [
+        { "source": "apollodorus", "citation": "Bibliotheca 1.7.2", "corpusEntry": "apollodorus-library-grc" },
+        { "source": "ovid", "citation": "Metamorphoses 1.313–321", "corpusEntry": "ovid-metamorphoses-lat" }
+      ]
+    },
+    {
+      "title": "Etna, in the Sicilian telling",
+      "text": "One catalogue moves the refuge to another island altogether. There the flood is loosed after Phaethon's fall has set the world ablaze and Jove, wanting a pretext to destroy the mortal race, pretends he means to put the fire out and lets every river go; the whole race perishes except Deucalion and Pyrrha, who flee — with no chest and no boat — to Mount Etna, said to be the highest mountain in Sicily.",
+      "sources": ["hyginus"],
+      "citation": "Hyg. Fab. 152A, 153",
+      "topic": "flood-landing",
+      "stance": "etna",
+      "factId": "landing-etna",
+      "witnesses": [
+        { "source": "hyginus", "citation": "Fabulae 153", "corpusEntry": "hyginus-fabulae-en" }
+      ]
     },
     {
       "title": "Who survived?",

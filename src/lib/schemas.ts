@@ -11,11 +11,32 @@ import { VOYAGE_MOODS } from '@/types/story';
 
 export const sourceIdSchema = z.enum(SOURCE_IDS);
 
+const kebab = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'must be kebab-case');
+
+/** One source's evidence for a fact, when a combined `citation` cannot be
+ *  assigned to a single witness (docs/PALIMPSEST_PLAN.md §8.1). */
+export const sourceWitnessSchema = z.object({
+  source: sourceIdSchema,
+  citation: z.string().min(1),
+  corpusEntry: z.string().min(1).optional(),
+});
+
+/** Comparison fields (docs/PALIMPSEST_PLAN.md §8.1). All optional and additive:
+ *  a fact only carries them once its topic is promoted to compare-ready. The
+ *  cross-record invariants — stance requires topic, factId uniqueness, witnesses
+ *  as a subset of sources — are enforced in scripts/validate-data.ts. */
+export const compareFields = {
+  stance: kebab.optional(),
+  factId: kebab.optional(),
+  witnesses: z.array(sourceWitnessSchema).min(1).optional(),
+};
+
 export const sourcedTextSchema = z.object({
   text: z.string().min(1),
   sources: z.array(sourceIdSchema).min(1),
   citation: z.string().optional(),
   topic: z.string().optional(),
+  ...compareFields,
 });
 
 export const characterSchema = z.object({
@@ -47,6 +68,8 @@ export const relationSchema = z.object({
   to: z.string().min(1),
   sources: z.array(sourceIdSchema).min(1),
   topic: z.string().optional(),
+  stance: compareFields.stance,
+  witnesses: compareFields.witnesses,
   note: z.string().optional(),
 });
 
@@ -307,6 +330,7 @@ export const storySchema = z.object({
         sources: z.array(sourceIdSchema).min(1),
         citation: z.string().optional(),
         topic: z.string().optional(),
+        ...compareFields,
       }),
     )
     .min(1),
@@ -339,7 +363,6 @@ export const storySchema = z.object({
     .min(1),
 });
 
-const kebab = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'must be kebab-case');
 
 /** A voyage station: presentation overlay on an existing episode (docs/NOSTOS_PLAN.md §7).
  *  Myth prose always renders from the episode's sourced chapters; the epigraph is a

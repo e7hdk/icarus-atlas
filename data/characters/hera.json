@@ -36,13 +36,24 @@
       "text": "Hephaestus himself remembers a hard mother: wishing to hide her son because he was lame, Hera flung him from heaven, and he would have suffered sorely had not Thetis and Eurynome received him in the sea.",
       "sources": ["homer"],
       "citation": "Iliad 18.394–399",
-      "topic": "hephaestus-fall-from-olympus"
+      "topic": "hephaestus-fall-from-olympus",
+      "stance": "cast-by-hera",
+      "factId": "fall-hera",
+      "witnesses": [
+        { "source": "homer", "citation": "Iliad 18.394–399", "corpusEntry": "homer-iliad-grc" }
+      ]
     },
     {
       "text": "Yet in the first book of the same Iliad the thrower is Zeus: when Hephaestus took Hera's side against him, Zeus seized him by the foot and hurled him from the divine threshold, and he fell the whole day before landing on Lemnos. Apollodorus likewise has Zeus cast him out of heaven for coming to the rescue of Hera in her bonds — and adds that it was the crash-landing on Lemnos that lamed his legs.",
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 1.590–594; Bibliotheca 1.3.5",
-      "topic": "hephaestus-fall-from-olympus"
+      "topic": "hephaestus-fall-from-olympus",
+      "stance": "cast-by-zeus",
+      "factId": "fall-zeus",
+      "witnesses": [
+        { "source": "homer", "citation": "Iliad 1.590–594", "corpusEntry": "homer-iliad-grc" },
+        { "source": "apollodorus", "citation": "Bibliotheca 1.3.5", "corpusEntry": "apollodorus-library-grc" }
+      ]
     },
     {
       "text": "Of all her grudges against Zeus' loves, none burned hotter than her hatred of Semele, daughter of Cadmus, who in Hesiod bore Zeus a splendid son, Dionysus — a mortal mother bearing an immortal child. Apollodorus tells how Hera repaid her: deceived by Hera's trick, Semele asked Zeus to come to her as he came to his own queen, and was incinerated by his lightning; Zeus sewed the six-month child into his thigh and bore him at term.",

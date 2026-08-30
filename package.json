@@ -30,7 +30,8 @@
     "audit:residences": "tsx scripts/audit-city-residences.ts",
     "theogony:gap": "tsx scripts/theogony-gap.ts",
     "water-nymph:gap": "tsx scripts/water-nymph-gap.ts",
-    "build-sky": "tsx scripts/build-sky.ts"
+    "build-sky": "tsx scripts/build-sky.ts",
+    "test:palimpsest": "tsx --test src/features/palimpsest/*.test.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

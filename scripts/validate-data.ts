@@ -30,6 +30,7 @@ import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
+const CORPUS_MANIFEST_PATH = join(import.meta.dirname, '..', 'research', 'corpus', 'manifest.json');
 /** Flagship city lineages — reign characterIds must carry matching residences. */
 const FLAGSHIP_CITIES = new Set(['thebes', 'mycenae', 'argos', 'athens', 'sparta', 'troy']);
 /** Lands map camera limits — docs/LANDS_PLAN.md §3.1. */
@@ -169,6 +170,25 @@ const charIds = new Set<string>();
 const charResidenceCities = new Map<string, Set<string>>();
 const topics = new Map<string, string[]>();
 
+/** Comparison readiness (docs/PALIMPSEST_PLAN.md §8.1). Every stance-bearing
+ *  fact is collected as it is walked, so section 7b can judge a topic whole
+ *  rather than one file at a time. All fields stay optional: the invariants
+ *  only bite once a fact has been promoted with a `stance`. */
+interface CompareFact {
+  /** Human-readable origin, for the error message. */
+  owner: string;
+  /** The file a `factId` must be unique within. */
+  scope: string;
+  topic?: string;
+  stance?: string;
+  factId?: string;
+  sources: readonly string[];
+  witnesses?: readonly { source: string; citation: string; corpusEntry?: string }[];
+  /** Relations already carry a stable `id`, so they need no separate factId. */
+  needsFactId: boolean;
+}
+const compareFacts: CompareFact[] = [];
+
 if (existsSync(charDir)) {
   for (const file of readdirSync(charDir).filter((f) => f.endsWith('.json'))) {
     const raw = loadJson(join(charDir, file));
@@ -198,6 +218,9 @@ if (existsSync(charDir)) {
     }
     for (const t of [...c.summary, ...c.story]) {
       if (t.topic) topics.set(t.topic, [...(topics.get(t.topic) ?? []), `${c.id} (${t.sources.join(', ')})`]);
+      if (t.topic || t.stance || t.factId || t.witnesses) {
+        compareFacts.push({ owner: `characters/${file}`, scope: `characters/${file}`, needsFactId: true, ...t });
+      }
     }
   }
 } else {
@@ -221,6 +244,9 @@ if (Array.isArray(relationsRaw)) {
       if (!charIds.has(endpoint)) errors.push(`relations.json [${rel.id}]: unknown character "${endpoint}"`);
     }
     if (rel.topic) topics.set(rel.topic, [...(topics.get(rel.topic) ?? []), `${rel.id} (${rel.sources.join(', ')})`]);
+    if (rel.topic || rel.stance || rel.witnesses) {
+      compareFacts.push({ owner: `relations.json [${rel.id}]`, scope: 'relations.json', needsFactId: false, ...rel });
+    }
   }
 } else {
   errors.push('relations.json: expected a JSON array');
@@ -500,6 +526,14 @@ if (existsSync(storyDir)) {
           `story:${story.id} (${chapter.sources.join(', ')})`,
         ]);
       }
+      if (chapter.topic || chapter.stance || chapter.factId || chapter.witnesses) {
+        compareFacts.push({
+          owner: `stories/${story.id}.json ("${chapter.title}")`,
+          scope: `stories/${story.id}.json`,
+          needsFactId: true,
+          ...chapter,
+        });
+      }
     }
   }
 
@@ -714,6 +748,95 @@ for (const [topic, entries] of topics) {
     }
   }
 }
+
+// 7b. Comparison readiness (docs/PALIMPSEST_PLAN.md §8.1, §13). Every field is
+//     optional — a legacy topic keeps rendering as it always has — but once a
+//     fact carries a `stance` it must be able to answer for itself: which
+//     question it answers, which passage attests it, and a stable identity that
+//     survives the record splits promotion causes.
+const corpusEntries = new Map<string, string>();
+if (existsSync(CORPUS_MANIFEST_PATH)) {
+  const manifest = loadJson(CORPUS_MANIFEST_PATH) as { entries?: { id: string; sourceId: string }[] } | null;
+  for (const entry of manifest?.entries ?? []) corpusEntries.set(entry.id, entry.sourceId);
+} else {
+  info.push('research/corpus/manifest.json missing — corpusEntry references not checked');
+}
+
+const factIdsByScope = new Map<string, Set<string>>();
+const stancesByTopic = new Map<string, Set<string>>();
+const promotionByTopic = new Map<string, { promoted: number; plain: string[] }>();
+
+for (const fact of compareFacts) {
+  if (fact.stance && !fact.topic) {
+    errors.push(`${fact.owner}: stance "${fact.stance}" without a topic — a stance answers a question`);
+  }
+  if (fact.factId && !fact.stance) {
+    errors.push(`${fact.owner}: factId "${fact.factId}" on a fact with no stance — ids exist to reference compare-ready facts`);
+  }
+  if (fact.stance && fact.needsFactId && !fact.factId) {
+    errors.push(`${fact.owner}: compare-ready fact needs a stable factId (array position is not one)`);
+  }
+  if (fact.factId) {
+    const seen = factIdsByScope.get(fact.scope) ?? new Set<string>();
+    if (seen.has(fact.factId)) {
+      errors.push(`${fact.owner}: duplicate factId "${fact.factId}" in ${fact.scope}`);
+    }
+    seen.add(fact.factId);
+    factIdsByScope.set(fact.scope, seen);
+  }
+  const witnessKeys = new Set<string>();
+  for (const witness of fact.witnesses ?? []) {
+    if (!fact.sources.includes(witness.source)) {
+      errors.push(`${fact.owner}: witness "${witness.source}" is not among the fact's sources`);
+    }
+    const key = `${witness.source}|${witness.citation}`;
+    if (witnessKeys.has(key)) {
+      errors.push(`${fact.owner}: duplicate witness ${witness.source} ${witness.citation}`);
+    }
+    witnessKeys.add(key);
+    if (witness.corpusEntry && corpusEntries.size > 0) {
+      const owner = corpusEntries.get(witness.corpusEntry);
+      if (!owner) {
+        errors.push(`${fact.owner}: corpusEntry "${witness.corpusEntry}" is not in research/corpus/manifest.json`);
+      } else if (owner !== witness.source) {
+        errors.push(`${fact.owner}: corpusEntry "${witness.corpusEntry}" belongs to ${owner}, not ${witness.source}`);
+      }
+    }
+  }
+  if (!fact.topic) continue;
+  const promotion = promotionByTopic.get(fact.topic) ?? { promoted: 0, plain: [] };
+  if (fact.stance) {
+    promotion.promoted++;
+    stancesByTopic.set(fact.topic, (stancesByTopic.get(fact.topic) ?? new Set()).add(fact.stance));
+  } else {
+    promotion.plain.push(fact.owner);
+  }
+  promotionByTopic.set(fact.topic, promotion);
+}
+
+// A topic is either fully compare-ready or fully legacy. Half-promoted topics
+// would let a surface show a Knot that silently omits one of the tellings.
+for (const [topic, promotion] of promotionByTopic) {
+  if (promotion.promoted === 0) continue;
+  if (promotion.plain.length > 0) {
+    errors.push(
+      `topic "${topic}" is half-promoted: ${promotion.promoted} fact(s) carry a stance but ${promotion.plain.length} do not (${promotion.plain.join('; ')})`,
+    );
+  }
+  const stances = stancesByTopic.get(topic) ?? new Set<string>();
+  if (stances.size < 2) {
+    errors.push(`compare-ready topic "${topic}" has only one stance ("${[...stances][0]}") — a comparison needs two answers`);
+  }
+}
+
+const compareReadyTopics = [...stancesByTopic].filter(([, stances]) => stances.size >= 2);
+info.push(
+  `compare-ready topics: ${compareReadyTopics.length}${
+    compareReadyTopics.length > 0
+      ? ` (${compareReadyTopics.map(([topic, stances]) => `${topic} → ${[...stances].join(' | ')}`).join('; ')})`
+      : ''
+  }`,
+);
 
 // 8. Spotlight overrides (the Ephemeris pool, docs/EPHEMERIS_PLAN.md D8):
 //    pins/exclusions must reference real characters, never repeat, never overlap.

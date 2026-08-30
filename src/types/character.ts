@@ -82,6 +82,15 @@ export const RELATION_TYPES = [
 
 export type RelationType = (typeof RELATION_TYPES)[number];
 
+/** One source's evidence for a fact, used when a combined `citation` string
+ *  cannot be assigned to a single witness (docs/PALIMPSEST_PLAN.md §8.1). */
+export interface SourceWitness {
+  source: SourceId;
+  citation: string;
+  /** Pinned-corpus entry (research/corpus/manifest.json) holding the passage. */
+  corpusEntry?: string;
+}
+
 /** A piece of text attested by one or more ancient sources.
  *  Competing variants of the same fact share a `topic` key. */
 export interface SourcedText {
@@ -89,6 +98,16 @@ export interface SourcedText {
   sources: SourceId[];
   citation?: string;
   topic?: string;
+  /** One incompatible answer within `topic` — `topic` asks the question, this
+   *  answers it. Local to its topic, never a global taxonomy. Required once the
+   *  topic is promoted to compare-ready (docs/PALIMPSEST_PLAN.md §8.1, P4). */
+  stance?: string;
+  /** Stable identity for cross-surface references. Array position is not one:
+   *  promoting a topic splits combined records and renumbers everything after
+   *  them (docs/PALIMPSEST_PLAN.md §8.3). Unique within the owning file. */
+  factId?: string;
+  /** Per-source evidence, when one `citation` covers several works at once. */
+  witnesses?: SourceWitness[];
 }
 
 export interface Character {
@@ -122,6 +141,11 @@ export interface Relation {
   to: string;
   sources: SourceId[];
   topic?: string;
+  /** One incompatible answer within `topic`; see SourcedText.stance. Relations
+   *  carry their own `id`, so they need no separate `factId`. */
+  stance?: string;
+  /** Per-source evidence when the edge's sources cite different passages. */
+  witnesses?: SourceWitness[];
   note?: string;
 }
 

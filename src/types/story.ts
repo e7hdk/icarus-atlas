@@ -1,4 +1,4 @@
-import type { SourceId } from './character';
+import type { SourceId, SourceWitness } from './character';
 
 export type StoryKind = 'cosmogony' | 'war' | 'catastrophe' | 'saga' | 'episode';
 
@@ -8,6 +8,12 @@ export interface StoryChapter {
   sources: SourceId[];
   citation?: string;
   topic?: string;
+  /** One incompatible answer within `topic`; see SourcedText.stance. */
+  stance?: string;
+  /** Stable identity for cross-surface refs; unique within the story file. */
+  factId?: string;
+  /** Per-source evidence when one `citation` covers several works at once. */
+  witnesses?: SourceWitness[];
 }
 
 export interface StoryCastMember {

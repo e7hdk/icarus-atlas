@@ -26,13 +26,24 @@
       "text": "By his own telling, it was his mother who cast him out: Hera, wishing to hide her child for his lameness, flung Hephaestus from heaven. Thetis and Eurynome received him into their bosom in the encircling sea, and in their hollow cave he worked for nine years, forging brooches and spiral arm-bands, rosettes and necklaces, while the streams of Ocean murmured past and no other god or mortal knew where he was.",
       "sources": ["homer"],
       "citation": "Iliad 18.394–405",
-      "topic": "hephaestus-fall-from-olympus"
+      "topic": "hephaestus-fall-from-olympus",
+      "stance": "cast-by-hera",
+      "factId": "fall-hera",
+      "witnesses": [
+        { "source": "homer", "citation": "Iliad 18.394–405", "corpusEntry": "homer-iliad-grc" }
+      ]
     },
     {
       "text": "Yet the Iliad also remembers another fall. When Hephaestus took Hera's side, Zeus seized him by the foot and hurled him from the divine threshold; he fell the whole day long and dropped at sunset on Lemnos with little life left in him, and the Sintian men tended him there. Apollodorus follows this version — Zeus cast him out of heaven for coming to the rescue of Hera in her bonds — and adds that it was the crash-landing on Lemnos that lamed his legs.",
       "sources": ["homer", "apollodorus"],
       "citation": "Iliad 1.590–594; Bibliotheca 1.3.5",
-      "topic": "hephaestus-fall-from-olympus"
+      "topic": "hephaestus-fall-from-olympus",
+      "stance": "cast-by-zeus",
+      "factId": "fall-zeus",
+      "witnesses": [
+        { "source": "homer", "citation": "Iliad 1.590–594", "corpusEntry": "homer-iliad-grc" },
+        { "source": "apollodorus", "citation": "Bibliotheca 1.3.5", "corpusEntry": "apollodorus-library-grc" }
+      ]
     },
     {
       "text": "Apollodorus also gives him the midwife's part at the strangest of births: when the time came for Zeus to be delivered of Athena, it was Hephaestus — or, as others say, Prometheus — who smote the head of Zeus with an axe, and the goddess sprang up from his crown, fully armed.",
