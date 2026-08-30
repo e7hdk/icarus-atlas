@@ -1,0 +1,72 @@
+Icarus Atlas — data and research prose
+======================================
+
+Copyright (c) 2026 Mehmet Fatih Aksoy
+
+Licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+License (CC BY-SA 4.0).
+
+  Deed:        https://creativecommons.org/licenses/by-sa/4.0/
+  Legal code:  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit and license your
+contributions under the same terms.
+
+
+What this covers
+----------------
+
+  data/     the sourced mythology layer — characters, relations, stories,
+            places and lineages, the cultural-legacy records, the geographic
+            data, and the generated indexes built from them.
+  docs/     the research catalogs and planning documents — SOURCES.md,
+            CHARACTERS.md, CONTRADICTIONS.md, the dynasty dossiers, PLAN.md
+            and the feature plans.
+
+Source code is under the MIT License; audio is all rights reserved. See the
+top-level LICENSE.
+
+
+Why ShareAlike
+--------------
+
+This is not only a preference. Part of the material is derived from sources
+that are themselves ShareAlike:
+
+  - data/reference/*.json adapts Wikipedia articles (CC BY-SA 4.0); each file
+    carries its own `attribution` string naming the article.
+  - data/geo/basemap.json adapts a Wikimedia Commons SVG map series
+    (CC BY-SA 3.0).
+
+That material cannot be relicensed under permissive terms by anyone,
+including the copyright holder of the surrounding work. Downstream users
+inherit the same obligation.
+
+Some parts carry additional upstream terms that travel with them — notably
+river geometry derived from OpenStreetMap, which is licensed under the Open
+Database License (ODbL 1.0) and remains so regardless of this file.
+ATTRIBUTION.md lists every upstream source, its license, and what was taken.
+
+
+How to attribute
+----------------
+
+A reasonable credit for the work as a whole:
+
+  "Icarus Atlas" by Mehmet Fatih Aksoy, CC BY-SA 4.0
+  https://github.com/e7hdk/icarus-atlas
+
+If you reuse a specific fact, keep its `sources` and `citation` fields with
+it. They are the point of the dataset: every mythological claim records which
+ancient authors attest it, and stripping that turns sourced research back
+into unattributed assertion.
+
+
+What is not here
+----------------
+
+The ancient primary texts are not redistributed in this repository.
+research/corpus/manifest.json pins their editions, URLs, licenses and
+checksums; `pnpm corpus:sync` fetches them into a gitignored local corpus.
+Their licenses are the originators' own — see ATTRIBUTION.md.

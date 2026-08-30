@@ -2,6 +2,11 @@
   "name": "icarus-atlas",
   "version": "0.1.0",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e7hdk/icarus-atlas.git"
+  },
   "scripts": {
     "dev": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && next dev -p 3500",
     "build:fonts": "tsx scripts/build-map-fonts.ts",
