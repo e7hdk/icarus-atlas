@@ -1,5 +1,7 @@
 # Icarus Atlas
 
+**[icarus-atlas.netlify.app](https://icarus-atlas.netlify.app)**
+
 An interactive galaxy of Greek mythology. Every figure — god, titan, primordial, hero, nymph, mortal, creature — is a star. Hover a star to read who they are and who they are bound to; click to fly to it and unfold the full story. Switch the **source lens** (Hesiod, Homer, Apollodorus, …) and watch genealogies re-wire, because the ancient authors never agreed in the first place.
 
 ## Stack
@@ -27,10 +29,14 @@ Every mythological fact carries `sources` (which ancient authors attest it) and,
 
 ## Licensing
 
-Source code is MIT; the sourced mythology data and the research prose in `data/` and `docs/` are CC BY-SA 4.0, because part of that layer derives from ShareAlike sources and cannot be relicensed. The audio is the author's own and is not licensed for reuse.
+Three kinds of work, three sets of terms — **[LICENSING.md](LICENSING.md) is the overview**:
 
-- [LICENSE](LICENSE) — the split, and the MIT terms
-- [data/LICENSE](data/LICENSE) — CC BY-SA 4.0, what it covers, how to attribute
-- [ATTRIBUTION.md](ATTRIBUTION.md) — every upstream source: Perseus, ToposText, Wikipedia, Wikimedia Commons, Wikidata, Pleiades, Natural Earth, OpenStreetMap (ODbL), Mapterhorn, astronomy-engine, and the fonts
+| What | Terms |
+|---|---|
+| Source code (`src/`, `scripts/`) | [MIT](LICENSE) |
+| Data and research prose (`data/`, `docs/`) | [CC BY-SA 4.0](data/LICENSE) |
+| Audio (`public/audio/`) | © the author, all rights reserved |
+
+ShareAlike on the data is inherited, not chosen: part of that layer adapts Wikipedia and a Commons map series, and cannot be relicensed. [ATTRIBUTION.md](ATTRIBUTION.md) names every upstream source — Perseus, ToposText, Wikipedia, Wikimedia Commons, Wikidata, Pleiades, Natural Earth, OpenStreetMap (ODbL), Mapterhorn, astronomy-engine and the fonts.
 
 The ancient primary texts are **not** redistributed here — `research/corpus/manifest.json` pins their editions and checksums, and `pnpm corpus:sync` fetches them into a gitignored local corpus.
