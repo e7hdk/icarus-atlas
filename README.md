@@ -24,3 +24,13 @@ pnpm validate-data  # check data integrity after editing data/
 ## The one rule of the data layer
 
 Every mythological fact carries `sources` (which ancient authors attest it) and, where versions clash, a shared `topic` key. Nothing in this galaxy is presented as undisputed unless the sources actually agree.
+
+## Licensing
+
+Source code is MIT; the sourced mythology data and the research prose in `data/` and `docs/` are CC BY-SA 4.0, because part of that layer derives from ShareAlike sources and cannot be relicensed. The audio is the author's own and is not licensed for reuse.
+
+- [LICENSE](LICENSE) — the split, and the MIT terms
+- [data/LICENSE](data/LICENSE) — CC BY-SA 4.0, what it covers, how to attribute
+- [ATTRIBUTION.md](ATTRIBUTION.md) — every upstream source: Perseus, ToposText, Wikipedia, Wikimedia Commons, Wikidata, Pleiades, Natural Earth, OpenStreetMap (ODbL), Mapterhorn, astronomy-engine, and the fonts
+
+The ancient primary texts are **not** redistributed here — `research/corpus/manifest.json` pins their editions and checksums, and `pnpm corpus:sync` fetches them into a gitignored local corpus.
