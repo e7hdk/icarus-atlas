@@ -13,13 +13,10 @@ import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
 import { childrenOf } from '@/features/stories/shelves';
 import { hashString, mulberry32 } from '@/features/galaxy/layout';
+import { SAGA_ACCENT, SAGA_LABEL, SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import {
   buildSpindleLayout,
   isStoryAttested,
-  SAGA_ACCENT,
-  SAGA_LABEL,
-  SAGA_ORDER,
-  type SagaId,
   type SpindleNode,
   type Vec3,
 } from '@/features/stories/spindle';

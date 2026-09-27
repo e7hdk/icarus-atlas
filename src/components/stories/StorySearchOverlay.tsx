@@ -4,7 +4,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Story } from '@/types/story';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { searchStories, type StorySearchHit } from '@/features/search/stories-match';
-import { SAGA_LABEL, type SpindleNode } from '@/features/stories/spindle';
+import { SAGA_LABEL } from '@/features/stories/sagas';
+import type { SpindleNode } from '@/features/stories/spindle';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 
 /** Command-palette search (⌘K) for the Spindle of Time. Type a figure's name and

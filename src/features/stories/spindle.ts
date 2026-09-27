@@ -1,132 +1,10 @@
 import type { LensId } from '@/types/character';
 import type { Story } from '@/types/story';
-import {
-  storiesById,
-  isArgonauticaStory,
-  isPrimordialStory,
-  isTitanCycleStory,
-  isOlympianCycleStory,
-  isHeraclesCycleStory,
-  isMetamorphosesStory,
-  isPerseusCycleStory,
-  isReturnsStory,
-  isTheseusCycleStory,
-  isThebanCycleStory,
-  isDionysusCycleStory,
-  isTrojanCycleStory,
-  PRIMORDIAL_CYCLE_ROOT_IDS,
-  TITAN_CYCLE_ROOT_IDS,
-  OLYMPIAN_CYCLE_ROOT_IDS,
-  ARGONAUTICA_ROOT_IDS,
-  THEBAN_CYCLE_ROOT_IDS,
-  DIONYSUS_CYCLE_ROOT_IDS,
-  PERSEUS_CYCLE_ROOT_IDS,
-  HERACLES_CYCLE_ROOT_IDS,
-  THESEUS_CYCLE_ROOT_IDS,
-  TROJAN_CYCLE_ROOT_IDS,
-  RETURNS_ROOT_IDS,
-  METAMORPHOSES_ROOT_IDS,
-} from './shelves';
+import { resolveSaga, SAGA_ACCENT, SAGA_ORDER, SHELF_ROOT_IDS, type SagaId } from './sagas';
+import { storiesById } from './shelves';
+import { AGE_BANDS, eraToYearCurve, timelessStoryIds, YEAR_BLEND } from './timeAxis';
 
 export type Vec3 = [number, number, number];
-
-/** A saga arm of the spindle — one color, one angular band. */
-export type SagaId =
-  | 'primordial'
-  | 'titan'
-  | 'olympian'
-  | 'argonaut'
-  | 'theban'
-  | 'dionysus'
-  | 'perseus'
-  | 'heracles'
-  | 'theseus'
-  | 'trojan'
-  | 'returns'
-  | 'metamorphoses'
-  | 'heroic';
-
-/** Saga accent colors — the single source of truth for the Myths palette. */
-export const SAGA_ACCENT: Record<SagaId, string> = {
-  primordial: '#a78bfa',
-  titan: '#e3b341',
-  olympian: '#7dd3fc',
-  argonaut: '#38bdf8',
-  theban: '#fb7185',
-  dionysus: '#c026d3',
-  perseus: '#eab308',
-  heracles: '#f97316',
-  theseus: '#2dd4bf',
-  trojan: '#fbbf24',
-  returns: '#34d399',
-  metamorphoses: '#e879f9',
-  heroic: '#aab4c8',
-};
-
-export const SAGA_LABEL: Record<SagaId, string> = {
-  primordial: 'The Primordials',
-  titan: 'The Titans',
-  olympian: 'The Olympians',
-  argonaut: 'The Argonautica',
-  theban: 'The Theban Cycle',
-  dionysus: 'The Dionysus Cycle',
-  perseus: 'The Perseus Cycle',
-  heracles: 'The Labours of Heracles',
-  theseus: 'The Attic Cycle',
-  trojan: 'The Trojan Cycle',
-  returns: 'The Returns',
-  metamorphoses: 'The Metamorphoses',
-  heroic: 'Heroic Ages',
-};
-
-/** Angular order of the saga arms around the spindle (also the legend order). */
-export const SAGA_ORDER: SagaId[] = [
-  'primordial',
-  'titan',
-  'olympian',
-  'metamorphoses',
-  'theban',
-  'dionysus',
-  'perseus',
-  'argonaut',
-  'heracles',
-  'theseus',
-  'trojan',
-  'returns',
-  'heroic',
-];
-
-const SHELF_ROOT_IDS = new Set<string>([
-  ...PRIMORDIAL_CYCLE_ROOT_IDS,
-  ...TITAN_CYCLE_ROOT_IDS,
-  ...OLYMPIAN_CYCLE_ROOT_IDS,
-  ...ARGONAUTICA_ROOT_IDS,
-  ...THEBAN_CYCLE_ROOT_IDS,
-  ...DIONYSUS_CYCLE_ROOT_IDS,
-  ...PERSEUS_CYCLE_ROOT_IDS,
-  ...HERACLES_CYCLE_ROOT_IDS,
-  ...THESEUS_CYCLE_ROOT_IDS,
-  ...TROJAN_CYCLE_ROOT_IDS,
-  ...RETURNS_ROOT_IDS,
-  ...METAMORPHOSES_ROOT_IDS,
-]);
-
-/** Walks the parent chain to the shelf root that owns this story → its saga arm. */
-export function resolveSaga(story: Story, byId: Map<string, Story>): SagaId {
-  if (isPrimordialStory(story, byId)) return 'primordial';
-  if (isTitanCycleStory(story, byId)) return 'titan';
-  if (isOlympianCycleStory(story, byId)) return 'olympian';
-  if (isReturnsStory(story, byId)) return 'returns';
-  if (isTrojanCycleStory(story, byId)) return 'trojan';
-  if (isArgonauticaStory(story, byId)) return 'argonaut';
-  if (isThebanCycleStory(story, byId)) return 'theban';
-  if (isDionysusCycleStory(story, byId)) return 'dionysus';
-  if (isPerseusCycleStory(story, byId)) return 'perseus';
-  if (isHeraclesCycleStory(story, byId)) return 'heracles';
-  if (isTheseusCycleStory(story, byId)) return 'theseus';
-  if (isMetamorphosesStory(story, byId)) return 'metamorphoses';
-  return 'heroic';
-}
 
 /** A story rendered as a world-line on the spindle: a star where it begins,
  *  then a thread spanning era → eraEnd, branching out of its parent's line. */
@@ -236,17 +114,6 @@ const CONNECT_IN = 40;
  *  no matter the pathology. Inactive for all real envelopes (proven in verification). */
 const SLOT_CLAMP = ARM_GAP / 2 - 0.004;
 
-const AGE_BANDS: { era: number; label: string }[] = [
-  { era: 0, label: 'Before the gods' },
-  { era: 1, label: 'The war in heaven' },
-  { era: 2, label: 'The first mortals' },
-  { era: 4, label: "Ovid's changing forms" },
-  { era: 5.5, label: 'The age of heroes' },
-  { era: 7, label: 'The voyage and the quests' },
-  { era: 8, label: 'The fall of Troy' },
-  { era: 9, label: 'The long homecoming' },
-];
-
 function sizeFor(story: Story): number {
   if (SHELF_ROOT_IDS.has(story.id)) return 1.15;
   if (story.kind === 'episode') return 0.6;
@@ -305,42 +172,14 @@ export function buildSpindleLayout(
   // chronographer dates) floats above the dated corridor; an undatable frame-saga
   // tale (Ovid) with no lineage anchor falls back to a global era→year curve so it
   // still lands near its narrated moment. With no chronology we degrade to era. ---
-  const timeless = new Set<string>();
-  if (years) {
-    const mark = (id: string) => {
-      if (timeless.has(id)) return;
-      timeless.add(id);
-      for (const k of childrenOfId.get(id) ?? []) mark(k.id);
-    };
-    // The whole divine prologue is timeless — all three reigns (primordial, Titan,
-    // Olympian), not just the cosmogony, since no chronographer dates the gods.
-    for (const root of ['cosmogony', 'reign-of-cronus', 'titanomachy']) {
-      if (byIdStory.has(root)) mark(root);
-    }
-    for (const id of [...timeless]) if (years.get(id) != null) timeless.delete(id);
-  }
-  const datedPairs = years
-    ? stories
-        .filter((s) => years.get(s.id) != null)
-        .map((s) => ({ era: s.era, year: years.get(s.id)! }))
-        .sort((a, b) => a.era - b.era)
+  // The whole divine prologue is timeless — all three reigns (primordial, Titan,
+  // Olympian), not just the cosmogony, since no chronographer dates the gods.
+  const timeless = years ? timelessStoryIds(stories) : new Set<string>();
+  for (const id of [...timeless]) if (years?.get(id) != null) timeless.delete(id);
+  const eraToYear = years ? eraToYearCurve(stories, years) : () => 0;
+  const datedYears = years
+    ? stories.filter((s) => years.get(s.id) != null).map((s) => years.get(s.id)!)
     : [];
-  const eraToYear = (era: number): number => {
-    if (datedPairs.length === 0) return 0;
-    if (era <= datedPairs[0].era) return datedPairs[0].year;
-    const last = datedPairs[datedPairs.length - 1];
-    if (era >= last.era) return last.year;
-    for (let i = 0; i < datedPairs.length - 1; i += 1) {
-      const a = datedPairs[i];
-      const b = datedPairs[i + 1];
-      if (era >= a.era && era <= b.era) {
-        const t = (era - a.era) / (b.era - a.era || 1);
-        return a.year + (b.year - a.year) * t;
-      }
-    }
-    return last.year;
-  };
-  const datedYears = datedPairs.map((p) => p.year);
   const minYear = datedYears.length ? Math.min(...datedYears) : -2000;
   const maxYear = datedYears.length ? Math.max(...datedYears) : -800;
   const midYear = (minYear + maxYear) / 2;
@@ -357,10 +196,9 @@ export function buildSpindleLayout(
 
   // BLENDED time axis: pure proportional years crush 68% of the myths into the
   // ~200-year heroic age (a dense knot) while millennia of deep past sit empty, so we
-  // blend real-year position with even chronological-rank position. ALPHA dials the
-  // feel: 1 = strict years (uneven), 0 = even spacing (rank). 0.4 keeps order and a
-  // real sense of elapsed time while evening the density so nothing overlaps.
-  const ALPHA = 0.4;
+  // blend real-year position with even chronological-rank position. YEAR_BLEND dials
+  // the feel: 1 = strict years (uneven), 0 = even spacing (rank). 0.4 keeps order and
+  // a real sense of elapsed time while evening the density so nothing overlaps.
   const effYearOf = (s: Story): number => {
     const yr = years ? years.get(s.id) : null;
     return yr != null ? yr : eraToYear(s.era);
@@ -389,10 +227,10 @@ export function buildSpindleLayout(
   };
   const blendStory = (s: Story): number => {
     const frac = M > 1 ? (ordinalOf.get(s.id) ?? 0) / (M - 1) : 0;
-    return ALPHA * yForYear(effYearOf(s)) + (1 - ALPHA) * rankPos(frac);
+    return YEAR_BLEND * yForYear(effYearOf(s)) + (1 - YEAR_BLEND) * rankPos(frac);
   };
   const blendYear = (year: number): number =>
-    ALPHA * yForYear(year) + (1 - ALPHA) * rankPos(fracOfYear(year));
+    YEAR_BLEND * yForYear(year) + (1 - YEAR_BLEND) * rankPos(fracOfYear(year));
 
   const depthOf = (s: Story): number => {
     if (!years) return yForEra(s.era);
