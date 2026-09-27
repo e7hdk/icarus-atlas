@@ -6,25 +6,18 @@ import { Html, PerformanceMonitor } from '@react-three/drei';
 import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
 import * as THREE from 'three';
-import type { Chronology, Story, StoryCrossing } from '@/types/story';
-import { buildChronologyYears } from '@/features/stories/chronology';
+import type { Story, StoryCrossing } from '@/types/story';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
 import { childrenOf } from '@/features/stories/shelves';
 import { hashString, mulberry32 } from '@/features/galaxy/layout';
 import { SAGA_ACCENT, SAGA_LABEL, SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
-import {
-  buildSpindleLayout,
-  isStoryAttested,
-  type SpindleNode,
-  type Vec3,
-} from '@/features/stories/spindle';
+import { isStoryAttested, type SpindleNode, type Vec3 } from '@/features/stories/spindle';
 import type { RiverScene } from '@/features/stories/river';
 import { buildThreadedSpindle } from '@/features/stories/threadedSpindle';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
 import { useElapsedRef } from '@/components/galaxy/useElapsedRef';
 import { SpindleStars } from './SpindleStars';
-import { SpindleLines } from './SpindleLines';
 import { SpindleThreads } from './SpindleThreads';
 import { SpindleCrossings } from './SpindleCrossings';
 import { SpindleRig } from './SpindleControls';
@@ -314,16 +307,13 @@ function SpindleLabels({
 export function MythsSpindleView({
   stories,
   crossings = [],
-  chronology = null,
-  river = null,
+  river,
 }: {
   stories: Story[];
   crossings?: StoryCrossing[];
-  chronology?: Chronology | null;
-  /** The River of Myth's layout: when given, the myths are spun onto the
-   *  spindle as one thread per saga (threadedSpindle.ts) instead of the
-   *  Spindle's own branching world-lines. */
-  river?: RiverScene | null;
+  /** The River of Myth's layout, spun onto the spindle as one thread per saga
+   *  (threadedSpindle.ts). */
+  river: RiverScene;
 }) {
   const lens = useGalaxyStore((s) => s.lens);
   const isMobile = useIsMobile();
@@ -334,14 +324,16 @@ export function MythsSpindleView({
   // the tunnel on retina screens.
   const dpr: [number, number] = isMobile ? (highPerf ? [1, 2] : [1, 1.6]) : highPerf ? [1, 2] : [1, 1.75];
 
-  // Real chronographic years drive the spindle's depth (see buildSpindleLayout); the
-  // map is per-saga anchored + interpolated, with the timeless divine prologue null.
-  const years = useMemo(() => buildChronologyYears(stories, chronology), [stories, chronology]);
-  const threaded = useMemo(() => (river ? buildThreadedSpindle(stories, river) : null), [stories, river]);
-  const layout = useMemo(
-    () => threaded?.layout ?? buildSpindleLayout(stories, years),
-    [threaded, stories, years],
-  );
+  // The myths as threads on the spindle: time down its length, the river's lane
+  // order around it, each saga one thread with its stories as stars on it.
+  const threaded = useMemo(() => buildThreadedSpindle(stories, river), [stories, river]);
+  const layout = threaded.layout;
+  // A crossing the threads already show by touching needs no filament: only the
+  // threads of fate — myths too far apart to touch — are drawn on focus.
+  const threadsOfFate = useMemo(() => {
+    const far = new Set(river.bridges.map((bridge) => `${bridge.a}|${bridge.b}`));
+    return crossings.filter((crossing) => far.has(`${crossing.a}|${crossing.b}`));
+  }, [crossings, river]);
   const storyById = useMemo(() => new Map(stories.map((s) => [s.id, s])), [stories]);
 
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -541,20 +533,9 @@ export function MythsSpindleView({
             <group rotation={[-Math.PI / 2, 0, 0]}>
               <SpindleUniverse yTop={layout.yTop} yBottom={layout.yBottom} radius={universeRadius} />
               <AgeRings ages={layout.ages} radius={layout.radius} />
-              {threaded ? (
-                <SpindleThreads threads={threaded.threads} nodeById={layout.byId} lens={lens} />
-              ) : (
-                <SpindleLines
-                  nodes={layout.nodes}
-                  lens={lens}
-                  hoveredId={hoveredId}
-                  selectedId={selectedId}
-                  onHover={setHoveredId}
-                  onSelect={select}
-                />
-              )}
+              <SpindleThreads threads={threaded.threads} nodeById={layout.byId} lens={lens} />
               <SpindleCrossings
-                crossings={crossings}
+                crossings={threadsOfFate}
                 byId={layout.byId}
                 radius={layout.radius}
                 lens={lens}

@@ -1,6 +1,6 @@
 # The River of Myth — redrawing `/stories` as a river system
 
-**Status, 2026-09-28: R0 (sketch) and R1 (engine) done. R2 changed course: a flat river scene was built and dropped — laid on a plane, the myths read as a chart of neon bands, and the river's 15:1 length never framed well. The engine's layout is now spun onto the Spindle instead (`src/features/stories/threadedSpindle.ts`, `SpindleThreads`): each saga one continuous thread down the spindle, its stories stars on it in time order, threads touching where the sources say the myths meet, parting only at the Nostoi. It keeps the Spindle's tunnel, rolling-marble rig and navigation, and is previewed at `/stories/river` beside the old Spindle at `/stories`.** Open question 1 (the stage) is settled by that: the Spindle. Orphans are short streams (a tributary where they meet a saga); the name stays undecided. The engine is `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`; `pnpm validate-myth-river` gates it, `pnpm myth-river:metrics` reports it, `pnpm myth-river:sketch` draws it flat to gitignored `research/myth-river/sketch.svg` (the `myth-river` prefix keeps these apart from the map's geographic `rivers` scripts). The threads will replace the Spindle's branching world-lines on the Myths door.
+**Status, 2026-09-28: done — the threads are the Myths door.** R0 (sketch) and R1 (engine) went as planned. R2 changed course: a flat river scene was built and dropped — laid on a plane, the myths read as a chart of neon bands, and the river's 15:1 length never framed well. The engine's layout is spun onto the Spindle instead (`src/features/stories/threadedSpindle.ts`, `SpindleThreads`): each saga one continuous thread down the spindle, its stories stars on it in time order, threads touching where the sources say the myths meet, parting only at the Nostoi. `/stories` shows it, keeping the Spindle's tunnel, rolling-marble rig and navigation; the Spindle's branching world-lines (`SpindleLines`) and their layout (`buildSpindleLayout`) are gone, and its crossing filaments now draw only the threads of fate. Open question 1 (the stage) is settled by that: the Spindle. Orphans are short streams (a tributary where they meet a saga); the name stays undecided. The engine is `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`; `pnpm validate-myth-river` gates it, `pnpm myth-river:metrics` reports it, `pnpm myth-river:sketch` draws it flat to gitignored `research/myth-river/sketch.svg` (the `myth-river` prefix keeps these apart from the map's geographic `rivers` scripts).
 The page shell, the story panel, search, the legend, the chronology pipeline and
 the lens stay; the geometry, the scene and the camera are rebuilt.
 
@@ -206,13 +206,14 @@ over every kiss until they share one point.
 - **R1 — Engine.** ✓ `river.ts` in stages, `timeAxis.ts`, `sagas.ts`,
   `validate-myth-river`, `myth-river:metrics`.
 - **R2 — Scene.** ✓ (changed course) The flat river scene was built and
-  dropped; the layout is spun onto the Spindle instead and previewed at
-  `/stories/river` (a static, prerendered route) beside the old Spindle.
+  dropped; the layout is spun onto the Spindle instead.
 - **R3 — Journey.** `RiverRig`, keyboard and click navigation, mobile gestures.
 - **R4 — Polish.** Flow sparkles, lens transitions, labels; 60 fps on desktop,
   steady on mid-range phones.
-- **R5 — Switch.** The river becomes the Myths door; the Spindle code is removed;
-  CLAUDE.md (Stories), docs/CHRONOLOGY.md and the PLAN decision log are updated.
+- **R5 — Switch.** ✓ The threads are the Myths door at `/stories`, laid out on
+  the server; the branching world-lines and their layout are removed; CLAUDE.md
+  (Stories) and the PLAN decision log are updated. R3–R4 (journey, polish)
+  carry on over the Spindle's own rig.
 
 ## 9. Open questions
 

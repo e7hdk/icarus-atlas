@@ -129,7 +129,6 @@ export function buildThreadedSpindle(stories: Story[], river: RiverScene): Threa
       size: sizeFor(story),
       isSagaRoot: SHELF_ROOT_IDS.has(story.id),
       pos,
-      points: [pos],
       sources: star.sources as LensId[],
     });
   }

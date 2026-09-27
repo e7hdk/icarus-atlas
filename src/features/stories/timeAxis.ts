@@ -1,9 +1,9 @@
 import type { Story } from '@/types/story';
 import { storiesById } from './shelves';
 
-/** The Myths time axis, shared by the Spindle and the River of Myth
- *  (docs/MYTHS_RIVER_PLAN.md §4): which myths are timeless, where an undated
- *  myth falls, and how real years blend with chronological rank. */
+/** The Myths time axis (docs/MYTHS_RIVER_PLAN.md §4): which myths are
+ *  timeless, where an undated myth falls, and how real years blend with
+ *  chronological rank — shared by the chronology and the River of Myth. */
 
 /** The three divine reigns no Greek chronographer dates (docs/CHRONOLOGY.md). */
 export const TIMELESS_ROOTS = ['cosmogony', 'reign-of-cronus', 'titanomachy'];
