@@ -1233,3 +1233,38 @@ export function buildRiverLayout(
     yMax,
   };
 }
+
+/* ------------------------------ transport ------------------------------ */
+
+/** The laid-out river as it travels from the server: the layout without its
+ *  lookup map, which the client rebuilds. */
+export type RiverScene = Omit<RiverLayout, 'byId'>;
+
+/** Four decimals are ample for lanes and time, and a third of the payload. */
+const round4 = (x: number) => Math.round(x * 1e4) / 1e4;
+
+/** The layout as it travels to the client: without the lookup map, and its
+ *  coordinates rounded. */
+export function toRiverScene(layout: RiverLayout): RiverScene {
+  return {
+    streams: layout.streams.map((stream) => ({
+      ...stream,
+      points: stream.points.map((p) => ({ ...p, t: round4(p.t), y: round4(p.y), width: round4(p.width) })),
+    })),
+    stars: layout.stars.map((star) => ({ ...star, t: round4(star.t), y: round4(star.y) })),
+    confluences: layout.confluences.map((c) => ({
+      ...c,
+      t: round4(c.t),
+      y: round4(c.y),
+      t1: round4(c.t1),
+      t2: round4(c.t2),
+    })),
+    bridges: layout.bridges,
+    passes: layout.passes.map((p) => ({ ...p, t1: round4(p.t1), t2: round4(p.t2) })),
+    forks: layout.forks.map((f) => ({ ...f, t: round4(f.t), t1: round4(f.t1), t2: round4(f.t2) })),
+    unmet: layout.unmet,
+    ages: layout.ages.map((age) => ({ ...age, t: round4(age.t) })),
+    yMin: round4(layout.yMin),
+    yMax: round4(layout.yMax),
+  };
+}
