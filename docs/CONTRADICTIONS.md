@@ -2507,3 +2507,21 @@ Verification: ✓ verified — Description of Greece 8.4.2 and Bibliotheca 3.9.1
 Significance: Zeus is the father everywhere, but the mother moves Sarpedon across two generations and two houses — a grandson of Bellerophon in Homer, a brother of Minos in the mythographers. Apollodorus records Homer's version himself and bridges the gap with a life three generations long, so the atlas keeps one `sarpedon` star and tags the two mothers instead of splitting the figure.
 
 Verification: ✓ verified — Iliad 6.198–199 (English and Greek), Bibliotheca 3.1.1–3.1.2, and Fabulae 106, 155, 178 confirmed against the pinned corpus. The `sarpedon-parent-europa` edge previously listed `homer` among its sources; Homer never names Europa as Sarpedon's mother, so that attribution was removed.
+
+## Heracles on the Argo
+
+- **topic**: `heracles-on-the-argo`
+- **Characters**: `heracles`, `hylas`, `omphale`, `jason`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollonius of Rhodes | Heracles joins the Argo of his own will, straight from carrying the Erymanthian boar alive to Mycenae; he is left behind in Mysia searching for Hylas, destined to go back to the labours of Eurystheus. | Argonautica 1.122–131, 1.1273–1357 |
+| Pseudo-Apollodorus (main line) | The Argonauts left Heracles and Polyphemus in Mysia when Hylas was carried off by the nymphs. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Herodorus) | Heracles did not sail at all at that time; he was serving as a slave at the court of Omphale. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Pherecydes) | He was left behind at Aphetae in Thessaly, the Argo having declared with a human voice that she could not bear his weight. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Demaratus, Dionysius) | Heracles sailed all the way to Colchis — Dionysius even makes him the leader of the Argonauts. | Bibliotheca 1.9.19 |
+| Hyginus | Hercules is counted among the Argonauts, with Hylas as his companion. | Fabulae 14 |
+
+Significance: where the voyage falls in Heracles' life orders the heroic age. If he sails in the midst of his labours (Apollonius, the main line of Apollodorus), the Argo comes before his servitude to Omphale, his wrestling for Deianira and his death; on Herodorus' reckoning the voyage and the Lydian servitude run together. The atlas's time axis follows the voyage-within-the-labours line — the death of Heracles is dated after the Argo in `data/chronology.json` — while `omphale-and-troy` keeps the Herodorus strand in view.
+
+Verification: ✓ verified — Argonautica 1.122, 1.1273, 1.1296 and 1.1344, Bibliotheca 1.9.19 and Fabulae 14 confirmed against the pinned corpus.

@@ -101,6 +101,7 @@ chronographer-derived or generational estimate, not a directly attested year.
 | Calydonian boar hunt | `calydonian-boar` | **≈1250** | gen | Argonaut generation |
 | Heracles' labours / floruit | `heracles-cycle`, `twelve-labours` | **≈1250** | gen | 1 gen before Troy; Heraclid return +80 = 1104 |
 | The Argo to Colchis | `argonautica` | **≈1245** | gen | fathers of the Trojan heroes (Peleus, Telamon) |
+| Death of Heracles | `death-of-heracles`, `deianira-at-the-feast` | **≈1240** | gen | after the Argo, which sails in the midst of his labours (Arg. 1.122, 1.1344); a gen before Troy (Tlepolemus, Il. 2.653) — ⚖ `heracles-on-the-argo` |
 | Seven against Thebes | `seven-against-thebes` | **≈1230** | gen | their sons (Epigoni) sack Thebes just before Troy |
 | Epigoni take Thebes | `epigoni` | **≈1205** | gen | one gen after the Seven |
 | **Trojan War begins** | `trojan-cycle`, `cypria` | **1218** (P) / **1194** (E) | P/E | Marmor Parium ep. 23; E = fall + 10 |
