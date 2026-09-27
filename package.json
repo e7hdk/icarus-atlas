@@ -37,7 +37,10 @@
     "audit:residences": "tsx scripts/audit-city-residences.ts",
     "theogony:gap": "tsx scripts/theogony-gap.ts",
     "water-nymph:gap": "tsx scripts/water-nymph-gap.ts",
-    "build-sky": "tsx scripts/build-sky.ts"
+    "build-sky": "tsx scripts/build-sky.ts",
+    "validate-myth-river": "tsx scripts/validate-myth-river.ts",
+    "myth-river:metrics": "tsx scripts/myth-river-metrics.ts",
+    "myth-river:sketch": "tsx scripts/myth-river-sketch.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

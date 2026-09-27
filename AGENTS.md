@@ -32,6 +32,8 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm corpus:search <query>` — search citation-bearing local passages before web research
 - `pnpm validate-layout` — generation ordering, family-locality gates, and deterministic-position checks
 - `pnpm layout:metrics` — family-readability report for the galaxy layout (`--baked`, `--json`); the numbers `validate-layout` gates
+- `pnpm validate-myth-river` — the River of Myth gate (docs/MYTHS_RIVER_PLAN.md): every story one star in time order, every sourced crossing drawn once (kiss, tributary, knot or thread of fate), no ribbon overlaps, determinism, braid limits
+- `pnpm myth-river:metrics` — readability report for the River of Myth (`--json`); the numbers `validate-myth-river` gates. `pnpm myth-river:sketch` draws the river flat to gitignored `research/myth-river/`
 
 ## Directory map
 
@@ -85,7 +87,7 @@ Geography becomes the second major axis beside the galaxy. Status: IN PROGRESS �
 
 ## Feature: Stories — the mythic sagas
 
-The third door beside Galaxy and Areas (the main HUD carries a GALAXY · AREAS · STORIES nav). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate.
+The third door beside Galaxy and Areas (the main HUD carries a GALAXY · AREAS · STORIES nav). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate. The Myths door's Spindle is being replaced by the **River of Myth** (docs/MYTHS_RIVER_PLAN.md — engine `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`): run `pnpm validate-myth-river` after story or crossing edits.
 
 ## Current status
 

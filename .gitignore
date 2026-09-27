@@ -69,3 +69,6 @@ data/geo/raw/
 
 # baked Greek sky sources (reproducible via `pnpm build-sky`)
 /research/sky/
+
+# River of Myth layout sketches (docs/MYTHS_RIVER_PLAN.md)
+/research/myth-river/
