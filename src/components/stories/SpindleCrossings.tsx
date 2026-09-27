@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useMemo } from 'react';
+import { memo, useLayoutEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { LensId } from '@/types/character';
@@ -142,8 +142,14 @@ const Filament = memo(function Filament({
     return { geometry, material };
   }, [a, b, radius]);
 
-  // Drive opacity from a frame callback (not during render) so we never mutate
-  // the memoized material in render — the target reflects the latest focus/lens.
+  const materialRef = useRef(material);
+  useLayoutEffect(() => {
+    materialRef.current = material;
+  }, [material]);
+
+  // Drive opacity from a frame callback (not during render), through the ref, so
+  // we never mutate the memoized material in render — the target reflects the
+  // latest focus/lens.
   // Crossings are now focus-gated: near-invisible until one of their two myths
   // is hovered/selected, so they read as "select a myth to reveal its ties"
   // instead of stray wires shooting across the tube. (The emergent, axis-true
@@ -151,7 +157,7 @@ const Filament = memo(function Filament({
   // these drawn filaments once the chronology axis lands; see docs/CHRONOLOGY.md.)
   const target = emphasized ? 0.92 : attested ? 0.05 : 0.0;
   useFrame(() => {
-    const u = material.uniforms.uOpacity;
+    const u = materialRef.current.uniforms.uOpacity;
     u.value += (target - u.value) * 0.2; // ease for a soft fade-in/out
   });
 

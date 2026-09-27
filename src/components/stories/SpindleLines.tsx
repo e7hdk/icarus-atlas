@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useMemo } from 'react';
+import { memo, useLayoutEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import type { LensId } from '@/types/character';
 import { isStoryAttested, type SpindleNode, type Vec3 } from '@/features/stories/spindle';
@@ -163,7 +163,15 @@ const WorldLine = memo(function WorldLine({
   // bright parallel rods — but bring them to full when hovered/selected so they stay
   // legible and clickable.
   const opacity = node.isSagaRoot && !emphasized ? base * 0.42 : base;
-  material.uniforms.uOpacity.value = opacity;
+  // Land the opacity on the memoised material after render, through a ref —
+  // still before the next frame is drawn.
+  const materialRef = useRef(material);
+  useLayoutEffect(() => {
+    materialRef.current = material;
+  }, [material]);
+  useLayoutEffect(() => {
+    materialRef.current.uniforms.uOpacity.value = opacity;
+  }, [material, opacity]);
 
   return (
     <group>
