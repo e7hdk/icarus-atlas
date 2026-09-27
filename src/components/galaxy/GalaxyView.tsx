@@ -81,6 +81,8 @@ export function GalaxyView({
       const store = useGalaxyStore.getState();
       if (store.searchOpen || store.settingsOpen) return;
       store.select(null);
+      // Escape steps out of a constellation just as it does out of a star.
+      store.setSkyFocus(null);
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);

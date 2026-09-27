@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, PerformanceMonitor } from '@react-three/drei';
@@ -218,10 +218,18 @@ function SpindleUniverse({
     return { objects: out, pointsMaterial };
   }, [yTop, yBottom, radius]);
 
+  // The frame loop drives the memoised material through a ref, as the galaxy's
+  // StarsDriver does with its buffers.
+  const materialRef = useRef(pointsMaterial);
+  useLayoutEffect(() => {
+    materialRef.current = pointsMaterial;
+  }, [pointsMaterial]);
+
   const elapsed = useElapsedRef();
   useFrame(({ gl }) => {
-    pointsMaterial.uniforms.uTime.value = elapsed.current;
-    pointsMaterial.uniforms.uPixelRatio.value = gl.getPixelRatio();
+    const material = materialRef.current;
+    material.uniforms.uTime.value = elapsed.current;
+    material.uniforms.uPixelRatio.value = gl.getPixelRatio();
   });
 
   return (

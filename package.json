@@ -30,6 +30,8 @@
     "verify:culture": "tsx scripts/verify-culture-links.ts",
     "harvest:culture": "tsx scripts/harvest-culture.ts",
     "validate-layout": "tsx scripts/validate-layout.ts",
+    "layout:metrics": "tsx scripts/layout-metrics.ts",
+    "audit:parents": "tsx scripts/audit-parent-direction.ts",
     "validate-ephemeris": "tsx scripts/validate-ephemeris.ts",
     "bake-attic-calendar": "tsx scripts/build-attic-calendar.ts",
     "audit:residences": "tsx scripts/audit-city-residences.ts",

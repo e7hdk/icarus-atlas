@@ -2492,3 +2492,18 @@ Verification: ✓ verified — Bibliotheca 3.8.2, Astronomica 2.1.1, and Descrip
 Significance: Pausanias' Dryad marriage gives Arcas three eponymous sons including Azan, while Apollodorus' roll names only Elatus and Aphidas and forks their mother three ways — mortal Leanira, mortal Meganira, or the nymph Chrysopelia — without harmonizing the son-lists.
 
 Verification: ✓ verified — Description of Greece 8.4.2 and Bibliotheca 3.9.1 confirmed against the pinned corpus.
+
+## Mother of Sarpedon
+
+- **topic**: `sarpedon-mother`
+- **Characters**: `sarpedon`, `zeus`, `europa`, `laodameia-lycian`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | Sarpedon, captain of the Lycians at Troy, is the son of Zeus and Laodameia, daughter of Bellerophon. | Iliad 6.198–199 |
+| Pseudo-Apollodorus | Europa bore Zeus three sons in Crete — Minos, Sarpedon, and Rhadamanthys — "but according to Homer, Sarpedon was a son of Zeus by Laodamia, daughter of Bellerophon"; driven out by Minos, this Sarpedon became king of Lycia, and Zeus granted him to live for three generations. | Bibliotheca 3.1.1–3.1.2 |
+| Hyginus | Sarpedon, whom Patroclus slew, is the son of Jove and Europa, brother of Minos and Rhadamanthus. | Fabulae 106, 155, 178 |
+
+Significance: Zeus is the father everywhere, but the mother moves Sarpedon across two generations and two houses — a grandson of Bellerophon in Homer, a brother of Minos in the mythographers. Apollodorus records Homer's version himself and bridges the gap with a life three generations long, so the atlas keeps one `sarpedon` star and tags the two mothers instead of splitting the figure.
+
+Verification: ✓ verified — Iliad 6.198–199 (English and Greek), Bibliotheca 3.1.1–3.1.2, and Fabulae 106, 155, 178 confirmed against the pinned corpus. The `sarpedon-parent-europa` edge previously listed `homer` among its sources; Homer never names Europa as Sarpedon's mother, so that attribution was removed.

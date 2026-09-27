@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { hashString, mulberry32, sampleBandPoint } from '@/features/galaxy/layout';
 import { clusterTint, WISP_CLUSTERS } from './palette';
 import { POINTS_VERT, POINTS_FRAG } from './shaders/points';
+import { kelvinToRGB } from './blackbody';
 import { useElapsedRef } from './useElapsedRef';
 
 /** Background starfield — one Points draw call, three seeded populations:
@@ -19,23 +20,6 @@ const TOTAL = BAND_COUNT + SHELL_COUNT + VOLUME_COUNT;
 
 /** ~2% giants cross the bloom threshold — a few naturally blooming field stars. */
 const GIANT_CHANCE = 0.02;
-
-/** Tanner-Helland blackbody fit; returns sRGB 0..1 (convert to linear before use). */
-function kelvinToRGB(kelvin: number): [number, number, number] {
-  const t = kelvin / 100;
-  let r: number, g: number, b: number;
-  if (t <= 66) {
-    r = 255;
-    g = 99.4708025861 * Math.log(t) - 161.1195681661;
-    b = t <= 19 ? 0 : 138.5177312231 * Math.log(t - 10) - 305.0447927307;
-  } else {
-    r = 329.698727446 * Math.pow(t - 60, -0.1332047592);
-    g = 288.1221695283 * Math.pow(t - 60, -0.0755148492);
-    b = 255;
-  }
-  const clamp = (x: number) => Math.min(255, Math.max(0, x)) / 255;
-  return [clamp(r), clamp(g), clamp(b)];
-}
 
 function spherePoint(rng: () => number): THREE.Vector3 {
   const u = rng() * 2 - 1;

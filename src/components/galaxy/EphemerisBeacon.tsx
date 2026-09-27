@@ -33,8 +33,9 @@ export function EphemerisBeacon({ positions }: { positions: Map<string, Vec3> })
         : null,
     [data, pick],
   );
+  // Authored in HDR: only light above 1.0 blooms, and the beacon should glow.
   const color = useMemo(
-    () => (entry ? new THREE.Color(TYPE_GLOW[entry.type].color) : null),
+    () => (entry ? new THREE.Color(TYPE_GLOW[entry.type].color).multiplyScalar(3) : null),
     [entry],
   );
   const position = pick ? positions.get(pick.id) : undefined;
