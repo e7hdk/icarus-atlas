@@ -3,6 +3,7 @@ import {
   CHARACTER_TYPES,
   FIGURE_KINDS,
   MAX_FIGURE_KINDS,
+  PARENT_BONDS,
   RELATION_TYPES,
   SOURCE_IDS,
 } from '@/types/character';
@@ -47,6 +48,7 @@ export const relationSchema = z.object({
   to: z.string().min(1),
   sources: z.array(sourceIdSchema).min(1),
   topic: z.string().optional(),
+  bond: z.enum(PARENT_BONDS).optional(),
   note: z.string().optional(),
 });
 

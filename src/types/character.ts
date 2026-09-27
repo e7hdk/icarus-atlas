@@ -82,6 +82,15 @@ export const RELATION_TYPES = [
 
 export type RelationType = (typeof RELATION_TYPES)[number];
 
+/** Non-birth parentage on a `parent` edge. Absent means a birth parent.
+ *  `foster` — raised or adopted the child (Polybus and Periboea for Oedipus);
+ *  `nominal` — the mortal husband credited as father while the sources name a
+ *  divine sire (Aloeus for the Aloadae). An undisputed fact, never a dispute
+ *  `topic`: the sources agree on who bore the child and who reared it. */
+export const PARENT_BONDS = ['foster', 'nominal'] as const;
+
+export type ParentBond = (typeof PARENT_BONDS)[number];
+
 /** A piece of text attested by one or more ancient sources.
  *  Competing variants of the same fact share a `topic` key. */
 export interface SourcedText {
@@ -122,6 +131,8 @@ export interface Relation {
   to: string;
   sources: SourceId[];
   topic?: string;
+  /** Only on `parent` edges; see PARENT_BONDS. */
+  bond?: ParentBond;
   note?: string;
 }
 

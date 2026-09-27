@@ -3563,6 +3563,7 @@
       "apollodorus",
       "hyginus"
     ],
+    "bond": "foster",
     "citation": "Bibliotheca 3.5.7; Fabulae 66",
     "note": "Foster father at Corinth; neatherds brought the exposed infant from Cithaeron (Bibliotheca 3.5.7; Fabulae 66)"
   },
@@ -3575,6 +3576,7 @@
       "apollodorus",
       "hyginus"
     ],
+    "bond": "foster",
     "citation": "Bibliotheca 3.5.7; Fabulae 66",
     "note": "Foster mother at Corinth; adopted the infant and named him Oedipus for his swollen ankles (Bibliotheca 3.5.7; Fabulae 66)"
   },
@@ -5268,9 +5270,10 @@
     "to": "europa",
     "sources": [
       "apollodorus",
-      "hyginus",
-      "homer"
-    ]
+      "hyginus"
+    ],
+    "topic": "sarpedon-mother",
+    "note": "Europa bore Zeus Minos, Sarpedon, and Rhadamanthys (Bibliotheca 3.1.1; Fabulae 106, 155, 178); Homer instead names Laodameia"
   },
   {
     "id": "sarpedon-parent-zeus",
@@ -7511,6 +7514,7 @@
     "sources": [
       "apollodorus"
     ],
+    "bond": "nominal",
     "note": "Nominal father; the Aloadae are biologically Poseidon's (Bibliotheca 1.7.4)"
   },
   {
@@ -7543,6 +7547,7 @@
     "sources": [
       "apollodorus"
     ],
+    "bond": "nominal",
     "note": "Nominal father (Bibliotheca 1.7.4)"
   },
   {
@@ -10475,8 +10480,8 @@
   {
     "id": "penthesilea-parent-otrera-amazon",
     "type": "parent",
-    "from": "otrera-amazon",
-    "to": "penthesilea",
+    "from": "penthesilea",
+    "to": "otrera-amazon",
     "sources": [
       "hyginus"
     ],
@@ -10485,8 +10490,8 @@
   {
     "id": "penthesilea-parent-ares",
     "type": "parent",
-    "from": "ares",
-    "to": "penthesilea",
+    "from": "penthesilea",
+    "to": "ares",
     "sources": [
       "hyginus"
     ],
@@ -10495,8 +10500,8 @@
   {
     "id": "memnon-parent-eos",
     "type": "parent",
-    "from": "eos",
-    "to": "memnon",
+    "from": "memnon",
+    "to": "eos",
     "sources": [
       "apollodorus",
       "hesiod",
@@ -10507,8 +10512,8 @@
   {
     "id": "memnon-parent-tithonus",
     "type": "parent",
-    "from": "tithonus",
-    "to": "memnon",
+    "from": "memnon",
+    "to": "tithonus",
     "sources": [
       "apollodorus",
       "hesiod"
@@ -18262,6 +18267,7 @@
     "sources": [
       "apollodorus"
     ],
+    "bond": "foster",
     "note": "Adopted son who succeeded Teuthras as king of Mysia (Bibliotheca 3.9.1)"
   },
   {
@@ -25321,10 +25327,10 @@
     "note": "Leader of the Paphlagonian shieldmen in the press of battle (Iliad 5.580–625)"
   },
   {
-    "id": "pylaemenes-paphlagon-parent-harpalion-paphlagon",
+    "id": "harpalion-paphlagon-parent-pylaemenes-paphlagon",
     "type": "parent",
-    "from": "pylaemenes-paphlagon",
-    "to": "harpalion-paphlagon",
+    "from": "harpalion-paphlagon",
+    "to": "pylaemenes-paphlagon",
     "sources": [
       "homer"
     ],
@@ -26003,10 +26009,10 @@
     "note": "Thracian captain in the Catalogue of Ships (Iliad 2.820–855)"
   },
   {
-    "id": "antenor-parent-archelochus-antenorid",
+    "id": "archelochus-antenorid-parent-antenor",
     "type": "parent",
-    "from": "antenor",
-    "to": "archelochus-antenorid",
+    "from": "archelochus-antenorid",
+    "to": "antenor",
     "sources": [
       "homer",
       "apollodorus"
@@ -26014,10 +26020,10 @@
     "note": "Son of Antenor, well skilled in fighting (Iliad 2.820–855; Epitome 3.34)"
   },
   {
-    "id": "antenor-parent-acamas-antenorid",
+    "id": "acamas-antenorid-parent-antenor",
     "type": "parent",
-    "from": "antenor",
-    "to": "acamas-antenorid",
+    "from": "acamas-antenorid",
+    "to": "antenor",
     "sources": [
       "homer",
       "apollodorus"
@@ -26283,10 +26289,10 @@
     "note": "Son of Merops, taken with Adrastus from the field (Iliad 11.295–335)"
   },
   {
-    "id": "antenor-parent-polybus-antenorid",
+    "id": "polybus-antenorid-parent-antenor",
     "type": "parent",
-    "from": "antenor",
-    "to": "polybus-antenorid",
+    "from": "polybus-antenorid",
+    "to": "antenor",
     "sources": [
       "homer"
     ],
@@ -27026,10 +27032,10 @@
     "note": "From those two are the sons of Phrixus sprung who returned to Colchis on the Argo (Bibliotheca 1.9.1; Arg. 2.1140)"
   },
   {
-    "id": "echius-achaean-parent-mecisteus-echius",
+    "id": "mecisteus-echius-parent-echius-achaean",
     "type": "parent",
-    "from": "echius-achaean",
-    "to": "mecisteus-echius",
+    "from": "mecisteus-echius",
+    "to": "echius-achaean",
     "sources": [
       "homer"
     ],
@@ -27076,10 +27082,10 @@
     "note": "Achaean warrior at the ships (Iliad 15.315–340)"
   },
   {
-    "id": "priam-parent-polites-trojan",
+    "id": "polites-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "polites-trojan",
+    "from": "polites-trojan",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -27744,10 +27750,10 @@
     "note": "Fell among the Trojans before the ships (Iliad 8.245–290)"
   },
   {
-    "id": "priam-parent-pammon-trojan",
+    "id": "pammon-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "pammon-trojan",
+    "from": "pammon-trojan",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -27755,20 +27761,20 @@
     "note": "Son of Priam and Hecuba (Iliad 24.230–260; Bibliotheca 3.12.5)"
   },
   {
-    "id": "priam-parent-antiphonus-trojan",
+    "id": "antiphonus-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "antiphonus-trojan",
+    "from": "antiphonus-trojan",
+    "to": "priam",
     "sources": [
       "homer"
     ],
     "note": "One of the nine sons at Hector's ransom (Iliad 24.230–260)"
   },
   {
-    "id": "priam-parent-agathon-trojan",
+    "id": "agathon-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "agathon-trojan",
+    "from": "agathon-trojan",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -27776,10 +27782,10 @@
     "note": "Goodly son of Priam (Iliad 24.230–260; Bibliotheca 3.12.5)"
   },
   {
-    "id": "priam-parent-dius-trojan",
+    "id": "dius-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "dius-trojan",
+    "from": "dius-trojan",
+    "to": "priam",
     "sources": [
       "homer"
     ],
@@ -28764,10 +28770,10 @@
     "note": "Fell in Teucer's havoc (Iliad 8.245–290)"
   },
   {
-    "id": "priam-parent-hippothous-trojan",
+    "id": "hippothous-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "hippothous-trojan",
+    "from": "hippothous-trojan",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -29333,10 +29339,10 @@
     "note": "Fell in Teucer's havoc (Iliad 8.245–290)"
   },
   {
-    "id": "priam-parent-chromius-priamid",
+    "id": "chromius-priamid-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "chromius-priamid",
+    "from": "chromius-priamid",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -29707,10 +29713,10 @@
     "note": "Received back his throne through his daughter's vengeance on Perses (Bibliotheca 1.9.28)"
   },
   {
-    "id": "priam-parent-echemmon-priamid",
+    "id": "echemmon-priamid-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "echemmon-priamid",
+    "from": "echemmon-priamid",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -34027,10 +34033,10 @@
     "note": "Slain in the rout before Troy (Iliad 20.455–485)"
   },
   {
-    "id": "agenor-trojan-parent-echeclus-agenorid",
+    "id": "echeclus-agenorid-parent-agenor-trojan",
     "type": "parent",
-    "from": "agenor-trojan",
-    "to": "echeclus-agenorid",
+    "from": "echeclus-agenorid",
+    "to": "agenor-trojan",
     "sources": [
       "homer"
     ],
@@ -34097,10 +34103,10 @@
     "note": "Warrior slain by Achilles (Iliad 20.455–485)"
   },
   {
-    "id": "priam-parent-hipponous-trojan",
+    "id": "hipponous-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "hipponous-trojan",
+    "from": "hipponous-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
@@ -34607,10 +34613,10 @@
     "note": "Warrior slain by Achilles (Iliad 20.455–485)"
   },
   {
-    "id": "megas-trojan-parent-perimus-trojan",
+    "id": "perimus-trojan-parent-megas-trojan",
     "type": "parent",
-    "from": "megas-trojan",
-    "to": "perimus-trojan",
+    "from": "perimus-trojan",
+    "to": "megas-trojan",
     "sources": [
       "homer"
     ],
@@ -34637,10 +34643,10 @@
     "note": "Father of Perimus slain by Patroclus (Iliad 16.660–695)"
   },
   {
-    "id": "priam-parent-lycaon-trojan",
+    "id": "lycaon-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "lycaon-trojan",
+    "from": "lycaon-trojan",
+    "to": "priam",
     "sources": [
       "homer"
     ],
@@ -34847,10 +34853,10 @@
     "note": "Valiant warder of battle (Iliad 20.375–415)"
   },
   {
-    "id": "antenor-parent-demoleon-antenorid",
+    "id": "demoleon-antenorid-parent-antenor",
     "type": "parent",
-    "from": "antenor",
-    "to": "demoleon-antenorid",
+    "from": "demoleon-antenorid",
+    "to": "antenor",
     "sources": [
       "homer"
     ],
@@ -34959,10 +34965,10 @@
     "note": "Youngest and dearest son of Priam (Iliad 20.375–415, 21.65–95)"
   },
   {
-    "id": "priam-parent-polydorus-priamid",
+    "id": "polydorus-priamid-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "polydorus-priamid",
+    "from": "polydorus-priamid",
+    "to": "priam",
     "sources": [
       "homer",
       "apollodorus"
@@ -35096,20 +35102,20 @@
     "note": "Father of warrior slain by Achilles (Iliad 20.455–485)"
   },
   {
-    "id": "bias-trojan-parent-laogonus-trojan",
+    "id": "laogonus-trojan-parent-bias-trojan",
     "type": "parent",
-    "from": "bias-trojan",
-    "to": "laogonus-trojan",
+    "from": "laogonus-trojan",
+    "to": "bias-trojan",
     "sources": [
       "homer"
     ],
     "note": "Son of Bias (Iliad 20.455–485)"
   },
   {
-    "id": "bias-trojan-parent-dardanus-trojan",
+    "id": "dardanus-trojan-parent-bias-trojan",
     "type": "parent",
-    "from": "bias-trojan",
-    "to": "dardanus-trojan",
+    "from": "dardanus-trojan",
+    "to": "bias-trojan",
     "sources": [
       "homer"
     ],
@@ -35251,10 +35257,10 @@
     "note": "Glorious son who led the Troes (Iliad 2.820–855)"
   },
   {
-    "id": "alectryon-boeotian-parent-leitus",
+    "id": "leitus-parent-alectryon-boeotian",
     "type": "parent",
-    "from": "alectryon-boeotian",
-    "to": "leitus",
+    "from": "leitus",
+    "to": "alectryon-boeotian",
     "sources": [
       "homer"
     ],
@@ -36613,10 +36619,10 @@
     "note": "Son of Hippasus (Iliad 13.405–420)"
   },
   {
-    "id": "laomedon-parent-hicetaon-trojan",
+    "id": "hicetaon-trojan-parent-laomedon",
     "type": "parent",
-    "from": "laomedon",
-    "to": "hicetaon-trojan",
+    "from": "hicetaon-trojan",
+    "to": "laomedon",
     "sources": [
       "homer",
       "apollodorus"
@@ -36756,10 +36762,10 @@
     "note": "Father of Imbrius (Iliad 13.155–190)"
   },
   {
-    "id": "priam-parent-medesicaste-trojan",
+    "id": "medesicaste-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "medesicaste-trojan",
+    "from": "medesicaste-trojan",
+    "to": "priam",
     "sources": [
       "homer"
     ],
@@ -36846,10 +36852,10 @@
     "note": "Counsellor at the Scaean gates (Iliad 3.150–190)"
   },
   {
-    "id": "laomedon-parent-clytius-trojan",
+    "id": "clytius-trojan-parent-laomedon",
     "type": "parent",
-    "from": "laomedon",
-    "to": "clytius-trojan",
+    "from": "clytius-trojan",
+    "to": "laomedon",
     "sources": [
       "homer",
       "apollodorus"
@@ -38773,10 +38779,10 @@
     "note": "Father of an Achaean messenger (Iliad 19.240–275)"
   },
   {
-    "id": "priam-parent-deiopites-trojan",
+    "id": "deiopites-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "deiopites-trojan",
+    "from": "deiopites-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus",
       "hyginus"
@@ -38784,10 +38790,10 @@
     "note": "Son of Priam by other women (Bibliotheca 3.12.5; Fabulae 90)"
   },
   {
-    "id": "priam-parent-chersidamas-trojan",
+    "id": "chersidamas-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "chersidamas-trojan",
+    "from": "chersidamas-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
@@ -38918,10 +38924,10 @@
     "note": "Co-leader of the Dardanians (Epitome 3.34)"
   },
   {
-    "id": "anchises-parent-hippodameia-trojan",
+    "id": "hippodameia-trojan-parent-anchises",
     "type": "parent",
-    "from": "anchises",
-    "to": "hippodameia-trojan",
+    "from": "hippodameia-trojan",
+    "to": "anchises",
     "sources": [
       "homer"
     ],
@@ -38948,20 +38954,20 @@
     "note": "Married Anchises' eldest daughter (Iliad 13.425–450)"
   },
   {
-    "id": "rhene-phthian-parent-medon-phthian",
+    "id": "medon-phthian-parent-rhene-phthian",
     "type": "parent",
-    "from": "rhene-phthian",
-    "to": "medon-phthian",
+    "from": "medon-phthian",
+    "to": "rhene-phthian",
     "sources": [
       "homer"
     ],
     "note": "Bastard son of Oileus (Iliad 2.695–730)"
   },
   {
-    "id": "rhene-phthian-parent-ajax-oileus",
+    "id": "ajax-oileus-parent-rhene-phthian",
     "type": "parent",
-    "from": "rhene-phthian",
-    "to": "ajax-oileus",
+    "from": "ajax-oileus",
+    "to": "rhene-phthian",
     "sources": [
       "hyginus"
     ],
@@ -39080,10 +39086,10 @@
     "note": "Son of Laomedon by nymph Calybe (Bibliotheca 3.12.3; rival to Homer's unnamed mother and Abarbarea episode)"
   },
   {
-    "id": "priam-parent-bias-trojan",
+    "id": "bias-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "bias-trojan",
+    "from": "bias-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
@@ -39192,30 +39198,30 @@
     "note": "Hecuba bore sons, Polydorus among them (Bibliotheca 3.12.5)"
   },
   {
-    "id": "priam-parent-dryops-trojan",
+    "id": "dryops-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "dryops-trojan",
+    "from": "dryops-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
     "note": "Son by other women (Bibliotheca 3.12.5); Homer names only the warrior Achilles slew (Iliad 20.455–485)"
   },
   {
-    "id": "priam-parent-hippodamas-trojan",
+    "id": "hippodamas-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "hippodamas-trojan",
+    "from": "hippodamas-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
     "note": "Son by other women (Bibliotheca 3.12.5); Homer names only the warrior Achilles slew (Iliad 20.375–415)"
   },
   {
-    "id": "priam-parent-melanippus-trojan",
+    "id": "melanippus-trojan-parent-priam",
     "type": "parent",
-    "from": "priam",
-    "to": "melanippus-trojan",
+    "from": "melanippus-trojan",
+    "to": "priam",
     "sources": [
       "apollodorus"
     ],
@@ -39421,10 +39427,10 @@
     "note": "Minyan householder in the Catalogue (Iliad 2.515–545)"
   },
   {
-    "id": "arsinous-achaean-parent-hecamede",
+    "id": "hecamede-parent-arsinous-achaean",
     "type": "parent",
-    "from": "arsinous-achaean",
-    "to": "hecamede",
+    "from": "hecamede",
+    "to": "arsinous-achaean",
     "sources": [
       "homer"
     ],
@@ -39471,10 +39477,10 @@
     "note": "Grandfather-line of Hecamede (Iliad 11.620–650)"
   },
   {
-    "id": "pelegon-paeonian-parent-asteropaeus-paeonian",
+    "id": "asteropaeus-paeonian-parent-pelegon-paeonian",
     "type": "parent",
-    "from": "pelegon-paeonian",
-    "to": "asteropaeus-paeonian",
+    "from": "asteropaeus-paeonian",
+    "to": "pelegon-paeonian",
     "sources": [
       "homer"
     ],
@@ -39501,20 +39507,20 @@
     "note": "Paeonian ally house (Iliad 21.140–230)"
   },
   {
-    "id": "accessamenus-paeonian-parent-periboea-paeonian",
+    "id": "periboea-paeonian-parent-accessamenus-paeonian",
     "type": "parent",
-    "from": "accessamenus-paeonian",
-    "to": "periboea-paeonian",
+    "from": "periboea-paeonian",
+    "to": "accessamenus-paeonian",
     "sources": [
       "homer"
     ],
     "note": "Eldest of his daughters (Iliad 21.140–230)"
   },
   {
-    "id": "axius-river-parent-pelegon-paeonian",
+    "id": "pelegon-paeonian-parent-axius-river",
     "type": "parent",
-    "from": "axius-river",
-    "to": "pelegon-paeonian",
+    "from": "pelegon-paeonian",
+    "to": "axius-river",
     "sources": [
       "homer"
     ],
@@ -39670,13 +39676,14 @@
     "note": "Brother and sister (Iliad 6.196–205)"
   },
   {
-    "id": "laodameia-lycian-parent-sarpedon",
+    "id": "sarpedon-parent-laodameia-lycian",
     "type": "parent",
-    "from": "laodameia-lycian",
-    "to": "sarpedon",
+    "from": "sarpedon",
+    "to": "laodameia-lycian",
     "sources": [
       "homer"
     ],
+    "topic": "sarpedon-mother",
     "note": "With Laodameia lay Zeus and she bare godlike Sarpedon (Iliad 6.198–205)"
   },
   {
@@ -40589,10 +40596,10 @@
     "note": "Tethys bore Peneus among the eddying rivers (Theogony 337–345)"
   },
   {
-    "id": "peneus-parent-cyrene-nymph",
+    "id": "cyrene-nymph-parent-peneus",
     "type": "parent",
-    "from": "peneus",
-    "to": "cyrene-nymph",
+    "from": "cyrene-nymph",
+    "to": "peneus",
     "sources": [
       "apollonius",
       "hyginus"
@@ -40600,10 +40607,10 @@
     "note": "Cyrene daughter of Peneus (Argonautica 2.500–527; Fabulae 161)"
   },
   {
-    "id": "peneus-parent-daphne-nymph",
+    "id": "daphne-nymph-parent-peneus",
     "type": "parent",
-    "from": "peneus",
-    "to": "daphne-nymph",
+    "from": "daphne-nymph",
+    "to": "peneus",
     "sources": [
       "ovid"
     ],
@@ -42847,18 +42854,18 @@
     "note": "Expelled Theseus' sons when he seized Athens (Epitome 1.23)"
   },
   {
-    "id": "melisseus-parent-adrasteia-cretan",
+    "id": "adrasteia-cretan-parent-melisseus-cretan",
     "type": "parent",
-    "from": "melisseus-cretan",
-    "to": "adrasteia-cretan",
+    "from": "adrasteia-cretan",
+    "to": "melisseus-cretan",
     "sources": ["apollodorus", "hyginus"],
     "note": "Father of the Cretan nymph who nursed the infant Zeus with her sister Ida (Bibliotheca 1.1.6; Fabulae 182)"
   },
   {
-    "id": "melisseus-parent-ida-cretan",
+    "id": "ida-cretan-parent-melisseus-cretan",
     "type": "parent",
-    "from": "melisseus-cretan",
-    "to": "ida-cretan",
+    "from": "ida-cretan",
+    "to": "melisseus-cretan",
     "sources": ["apollodorus", "hyginus"],
     "note": "Father of the Cretan nymph who nursed the infant Zeus with her sister Adrasteia (Bibliotheca 1.1.6; Fabulae 182)"
   },
@@ -43218,18 +43225,18 @@
     "note": "Proetus married Iobates' daughter when driven to Lycia (Bibliotheca 2.2.1; Iliad 6.155–170)"
   },
   {
-    "id": "iobates-lycia-parent-stheneboea-proetid",
+    "id": "stheneboea-proetid-parent-iobates-lycia",
     "type": "parent",
-    "from": "iobates-lycia",
-    "to": "stheneboea-proetid",
+    "from": "stheneboea-proetid",
+    "to": "iobates-lycia",
     "sources": ["apollodorus", "hyginus"],
     "note": "Daughter of the Lycian king (Bibliotheca 2.2.1, 2.3.1; Fabulae 57)"
   },
   {
-    "id": "iobates-lycia-parent-philonoe-lycia",
+    "id": "philonoe-lycia-parent-iobates-lycia",
     "type": "parent",
-    "from": "iobates-lycia",
-    "to": "philonoe-lycia",
+    "from": "philonoe-lycia",
+    "to": "iobates-lycia",
     "sources": ["apollodorus"],
     "note": "Daughter of Iobates, given to Bellerophon (Bibliotheca 2.3.2)"
   },
@@ -43267,26 +43274,26 @@
     "note": "Death-token trials: Chimera, Solymi, Amazons, and Lycian ambush (Iliad 6.171–190; Bibliotheca 2.3.1–2)"
   },
   {
-    "id": "philonoe-lycia-parent-isander-lycian",
+    "id": "isander-lycian-parent-philonoe-lycia",
     "type": "parent",
-    "from": "philonoe-lycia",
-    "to": "isander-lycian",
+    "from": "isander-lycian",
+    "to": "philonoe-lycia",
     "sources": ["homer", "apollodorus"],
     "note": "Son of Bellerophon and Philonoe (Iliad 6.196–205; Bibliotheca 2.3.2)"
   },
   {
-    "id": "philonoe-lycia-parent-hippolochus-lycian",
+    "id": "hippolochus-lycian-parent-philonoe-lycia",
     "type": "parent",
-    "from": "philonoe-lycia",
-    "to": "hippolochus-lycian",
+    "from": "hippolochus-lycian",
+    "to": "philonoe-lycia",
     "sources": ["homer", "apollodorus"],
     "note": "Son of Bellerophon and Philonoe (Iliad 6.196–205; Bibliotheca 2.3.2)"
   },
   {
-    "id": "philonoe-lycia-parent-laodameia-lycian",
+    "id": "laodameia-lycian-parent-philonoe-lycia",
     "type": "parent",
-    "from": "philonoe-lycia",
-    "to": "laodameia-lycian",
+    "from": "laodameia-lycian",
+    "to": "philonoe-lycia",
     "sources": ["homer", "apollodorus"],
     "note": "Daughter of Bellerophon and Philonoe (Iliad 6.196–205; Bibliotheca 2.3.2)"
   },
@@ -43307,10 +43314,10 @@
     "note": "Married in youth in the same cottage and grew old together on the Phrygian slope (Met. 8.618–660)"
   },
   {
-    "id": "erysichthon-thessaly-parent-mestra-thessaly",
+    "id": "mestra-thessaly-parent-erysichthon-thessaly",
     "type": "parent",
-    "from": "erysichthon-thessaly",
-    "to": "mestra-thessaly",
+    "from": "mestra-thessaly",
+    "to": "erysichthon-thessaly",
     "sources": ["ovid"],
     "note": "Sold his daughter again and again to feed his hunger (Met. 8.1124–1225)"
   },
@@ -43355,27 +43362,27 @@
     "note": "Warmed the ivory statue to living flesh at Pygmalion's prayer (Met. 10.430–455)"
   },
   {
-    "id": "cinyras-cyprus-parent-myrrha-cyprus",
+    "id": "myrrha-cyprus-parent-cinyras-cyprus",
     "type": "parent",
-    "from": "cinyras-cyprus",
-    "to": "myrrha-cyprus",
+    "from": "myrrha-cyprus",
+    "to": "cinyras-cyprus",
     "sources": ["ovid"],
     "note": "King of Cyprus whose daughter burned with unlawful love (Met. 10.464–680)"
   },
   {
-    "id": "myrrha-cyprus-parent-adonis",
+    "id": "adonis-parent-myrrha-cyprus",
     "type": "parent",
-    "from": "myrrha-cyprus",
-    "to": "adonis",
+    "from": "adonis",
+    "to": "myrrha-cyprus",
     "sources": ["ovid"],
     "topic": "adonis-parentage",
     "note": "Lucina delivered Adonis from the myrrh-tree after Myrrha's transformation (Met. 10.680–818)"
   },
   {
-    "id": "cinyras-cyprus-parent-adonis",
+    "id": "adonis-parent-cinyras-cyprus",
     "type": "parent",
-    "from": "cinyras-cyprus",
-    "to": "adonis",
+    "from": "adonis",
+    "to": "cinyras-cyprus",
     "sources": ["apollodorus", "hyginus"],
     "topic": "adonis-parentage",
     "note": "Begot Adonis by Metharme daughter of king Pygmalion (Bibliotheca 3.14.3; Fabulae 271)"
@@ -43397,18 +43404,18 @@
     "note": "Loved and mourned the hunter slain by the boar (Met. 10.819–1163; Bibliotheca 3.14.3; Fabulae 271)"
   },
   {
-    "id": "crisus-parent-strophius-phocis",
+    "id": "strophius-phocis-parent-crisus",
     "type": "parent",
-    "from": "crisus",
-    "to": "strophius-phocis",
+    "from": "strophius-phocis",
+    "to": "crisus",
     "sources": ["pausanias"],
     "note": "Son of Crisus son of Phocus; grandfather of Pylades (Description of Greece 2.29.4)"
   },
   {
-    "id": "strophius-phocis-parent-pylades",
+    "id": "pylades-parent-strophius-phocis",
     "type": "parent",
-    "from": "strophius-phocis",
-    "to": "pylades",
+    "from": "pylades",
+    "to": "strophius-phocis",
     "sources": ["apollodorus", "hyginus", "pausanias"],
     "note": "Raised Pylades beside the fostered Orestes (Epitome 6.24; Fabulae 117; Description of Greece 2.29.4)"
   },
@@ -43437,34 +43444,34 @@
     "note": "Married in Phoenicia and begat Europa, Cadmus, Phoenix, and Cilix (Bibliotheca 3.1.1)"
   },
   {
-    "id": "telephassa-phoenicia-parent-europa",
+    "id": "europa-parent-telephassa-phoenicia",
     "type": "parent",
-    "from": "telephassa-phoenicia",
-    "to": "europa",
+    "from": "europa",
+    "to": "telephassa-phoenicia",
     "sources": ["apollodorus"],
     "note": "Mother of Europa in the Agenorid genealogy (Bibliotheca 3.1.1)"
   },
   {
-    "id": "telephassa-phoenicia-parent-cadmus",
+    "id": "cadmus-parent-telephassa-phoenicia",
     "type": "parent",
-    "from": "telephassa-phoenicia",
-    "to": "cadmus",
+    "from": "cadmus",
+    "to": "telephassa-phoenicia",
     "sources": ["apollodorus"],
     "note": "Mother of Cadmus sent to search for Europa (Bibliotheca 3.1.1, 3.4.1)"
   },
   {
-    "id": "telephassa-phoenicia-parent-phoenix",
+    "id": "phoenix-parent-telephassa-phoenicia",
     "type": "parent",
-    "from": "telephassa-phoenicia",
-    "to": "phoenix",
+    "from": "phoenix",
+    "to": "telephassa-phoenicia",
     "sources": ["apollodorus"],
     "note": "Mother of Phoenix in the Agenorid line (Bibliotheca 3.1.1)"
   },
   {
-    "id": "telephassa-phoenicia-parent-cilix",
+    "id": "cilix-parent-telephassa-phoenicia",
     "type": "parent",
-    "from": "telephassa-phoenicia",
-    "to": "cilix",
+    "from": "cilix",
+    "to": "telephassa-phoenicia",
     "sources": ["apollodorus"],
     "note": "Mother of Cilix who settled Cilicia (Bibliotheca 3.1.1)"
   },
@@ -43679,10 +43686,10 @@
     "note": "Husband of Telethusa near Phaestus (Met. 9.666–720)"
   },
   {
-    "id": "ligdus-crete-parent-iphis-crete",
+    "id": "iphis-crete-parent-ligdus-crete",
     "type": "parent",
-    "from": "ligdus-crete",
-    "to": "iphis-crete",
+    "from": "iphis-crete",
+    "to": "ligdus-crete",
     "sources": ["ovid"],
     "note": "Father who betrothed Iphis to Ianthe (Met. 9.666–797)"
   },
@@ -43695,10 +43702,10 @@
     "note": "Forbade exposure in a dream and changed Iphis into a man on the wedding eve (Met. 9.666–797)"
   },
   {
-    "id": "sthenelus-epigoni-parent-cometes-argolis",
+    "id": "cometes-argolis-parent-sthenelus-epigoni",
     "type": "parent",
-    "from": "sthenelus-epigoni",
-    "to": "cometes-argolis",
+    "from": "cometes-argolis",
+    "to": "sthenelus-epigoni",
     "sources": ["apollodorus"],
     "note": "Cometes son of Sthenelus, Diomedes' charioteer at Troy (Epitome 6.9)"
   },

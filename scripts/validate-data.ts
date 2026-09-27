@@ -25,7 +25,8 @@ import {
   sacredDaysSchema,
   constellationsFileSchema,
 } from '../src/lib/schemas';
-import { CREATURE_KINDS, NYMPH_KINDS } from '../src/types/character';
+import { CREATURE_KINDS, NYMPH_KINDS, type Character, type Relation } from '../src/types/character';
+import { isChronologicalParentRelation } from '../src/features/galaxy/layout';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
@@ -166,6 +167,7 @@ if (Array.isArray(sourcesRaw)) {
 // 2. Characters
 const charDir = join(DATA_DIR, 'characters');
 const charIds = new Set<string>();
+const charactersById = new Map<string, Character>();
 const charResidenceCities = new Map<string, Set<string>>();
 const topics = new Map<string, string[]>();
 
@@ -182,6 +184,7 @@ if (existsSync(charDir)) {
     if (file !== `${c.id}.json`) errors.push(`characters/${file}: filename must match id "${c.id}"`);
     if (charIds.has(c.id)) errors.push(`characters/${file}: duplicate id "${c.id}"`);
     charIds.add(c.id);
+    charactersById.set(c.id, c);
     if (c.residences?.length) {
       charResidenceCities.set(c.id, new Set(c.residences.map((residence) => residence.city)));
     }
@@ -205,6 +208,87 @@ if (existsSync(charDir)) {
 }
 
 // 3. Relations
+const parentEdges: Relation[] = [];
+/** Undisputed parent edges the layout drops on purpose: an Olympian keeps the
+ *  cosmic age of the Olympian band although the mother's line runs later — a
+ *  mortal (Semele), or a nymph charted five generations deep (Maia, through
+ *  Atlas and Iapetus). Letting such an edge count pushes the god outward and,
+ *  with him, the base ring of every mortal. Listed by id rather than by rule: a
+ *  rule such as "divine child of a mortal parent" would also wave through a
+ *  reversed edge like Ares recorded as the child of Penthesilea. Add an id only
+ *  after checking the edge is not simply the wrong way round. */
+const TIMELESS_CHILD_EDGES = new Set(['dionysus-parent-semele', 'hermes-parent-maia']);
+
+/** Parent-edge direction gates. The contract is `from` = child, `to` = parent;
+ *  a batch entered the other way round turns a father into the child of his own
+ *  brood, which nothing else in this file can see. Three structural symptoms:
+ *  too many birth parents, a lineage loop, or an edge the layout would silently
+ *  discard. None proves a reversal on its own — each message names the fixes. */
+function checkParentEdges(edges: Relation[]): void {
+  // a. Nobody has more than two undisputed birth parents in one author's account.
+  //    Rival parents share a dispute `topic`; foster and nominal parents carry `bond`.
+  const birthParents = new Map<string, Set<string>>();
+  for (const rel of edges) {
+    if (rel.topic || rel.bond) continue;
+    for (const source of rel.sources) {
+      const key = `${rel.from}|${source}`;
+      birthParents.set(key, (birthParents.get(key) ?? new Set()).add(rel.to));
+    }
+  }
+  const crowded = new Map<string, string>();
+  for (const [key, parents] of birthParents) {
+    if (parents.size <= 2) continue;
+    const [child, source] = key.split('|');
+    if (!crowded.has(child)) crowded.set(child, `${parents.size} under ${source}: ${[...parents].join(', ')}`);
+  }
+  for (const [child, detail] of crowded) {
+    errors.push(
+      `relations.json: "${child}" has more than two undisputed birth parents (${detail}) — check for reversed from/to, a missing dispute topic, or a missing bond`,
+    );
+  }
+
+  // b. No lineage loops, including a figure recorded as its own ancestor's parent.
+  const parentsOf = new Map<string, string[]>();
+  for (const rel of edges) parentsOf.set(rel.from, [...(parentsOf.get(rel.from) ?? []), rel.to]);
+  const state = new Map<string, 'open' | 'done'>();
+  const path: string[] = [];
+  const reported = new Set<string>();
+  const visit = (id: string): void => {
+    state.set(id, 'open');
+    path.push(id);
+    for (const parent of parentsOf.get(id) ?? []) {
+      if (state.get(parent) === 'open') {
+        const cycle = [...path.slice(path.indexOf(parent)), parent];
+        const key = [...cycle].sort().join('|');
+        if (!reported.has(key)) {
+          reported.add(key);
+          errors.push(`relations.json: parent edges form a loop: ${cycle.join(' ⇐ ')}`);
+        }
+      } else if (!state.has(parent)) {
+        visit(parent);
+      }
+    }
+    path.pop();
+    state.set(id, 'done');
+  };
+  for (const id of [...parentsOf.keys()].sort()) if (!state.has(id)) visit(id);
+
+  // c. The layout ignores a parent edge whose child belongs to an older cosmic age
+  //    than the parent (`isChronologicalParentRelation`). That is intended for a
+  //    documented variant (Eros born of Aphrodite) and for TIMELESS_CHILD_EDGES.
+  //    Anything else dropped this way is a reversed edge or a pair of inconsistent
+  //    `cluster` values, and must not pass silently.
+  for (const rel of edges) {
+    const child = charactersById.get(rel.from);
+    const parent = charactersById.get(rel.to);
+    if (!child || !parent || isChronologicalParentRelation(rel, charactersById)) continue;
+    if (rel.topic || TIMELESS_CHILD_EDGES.has(rel.id)) continue;
+    errors.push(
+      `relations.json [${rel.id}]: the layout drops this undisputed parent edge — child cluster "${child.cluster}" predates parent cluster "${parent.cluster}"; check for reversed from/to, reconcile the clusters, or list it in TIMELESS_CHILD_EDGES`,
+    );
+  }
+}
+
 const relationsRaw = loadJson(join(DATA_DIR, 'relations.json'));
 if (Array.isArray(relationsRaw)) {
   const relIds = new Set<string>();
@@ -221,7 +305,12 @@ if (Array.isArray(relationsRaw)) {
       if (!charIds.has(endpoint)) errors.push(`relations.json [${rel.id}]: unknown character "${endpoint}"`);
     }
     if (rel.topic) topics.set(rel.topic, [...(topics.get(rel.topic) ?? []), `${rel.id} (${rel.sources.join(', ')})`]);
+    if (rel.bond && rel.type !== 'parent') {
+      errors.push(`relations.json [${rel.id}]: "bond" is only valid on parent edges`);
+    }
+    if (rel.type === 'parent') parentEdges.push(rel);
   }
+  checkParentEdges(parentEdges);
 } else {
   errors.push('relations.json: expected a JSON array');
 }
