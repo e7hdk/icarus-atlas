@@ -1,3 +1,5 @@
+import { DISC_VEIL_GLSL } from './discVeil';
+
 /** Point-spread character stars.
  *
  *  A star is drawn the way a camera sees one: not as a solid ball but as the
@@ -16,12 +18,39 @@
  *  shrinking below it, which is what keeps distant stars from shimmering.
  *  Output is linear HDR straight into the composer (additive, alpha unused). */
 
+/** The sizing curve on its own, for anything that must know how large a star
+ *  is drawn — the sky's threads stop short of their stars by it. Vertex only:
+ *  it reads the projection. */
+export const PSF_RADIUS_GLSL = /* glsl */ `
+const float KNEE_PX = 6.0;       // below: r tracks perspective
+const float GROWTH = 0.62;       // above: r grows as a power of it
+const float FLOOR_CSS_PX = 1.15; // r never drops below this
+const float FADE_POWER = 0.75;   // how fast a star dims once it sits on the floor
+const float MIN_FADE = 0.28;     // the far side of the disc still reads
+
+// The PSF scale r in device px of a star of world radius size at view depth
+// depth; fade is how far it dims while held on the pixel floor.
+float psfRadius(float size, float depth, float viewportHeight, float pixelRatio, out float fade) {
+  float r = size * 0.5 * viewportHeight * projectionMatrix[1][1] / max(depth, 1e-3);
+  if (r > KNEE_PX) r = KNEE_PX * pow(r / KNEE_PX, GROWTH);
+  float floorPx = FLOOR_CSS_PX * pixelRatio;
+  fade = 1.0;
+  if (r < floorPx) {
+    fade = max(pow(r / floorPx, FADE_POWER), MIN_FADE);
+    r = floorPx;
+  }
+  return r;
+}
+`;
+
 export const PSF_VERT = /* glsl */ `
 attribute vec3 aColor;  // linear tint: TYPE_GLOW, or a Muse's travelling hue
 attribute float aSize;  // the star's world radius (STAR_SIZE)
 attribute vec4 aDyn;    // x: scale, y: radiance, z: spike gain, w: selection ring
 uniform float uViewportHeight; // drawing-buffer height in device px
 uniform float uPixelRatio;
+uniform float uDiscRadius; // sky stars only: recede behind the galaxy's disc (0 = off)
+uniform float uBehindDisc;
 varying vec3 vColor;
 varying vec2 vP;        // offset from the centre, in units of r
 varying float vRadiance;
@@ -31,33 +60,25 @@ varying float vRing;
 varying float vRadiusPx;
 varying float vExtent;
 
-const float KNEE_PX = 6.0;       // below: r tracks perspective
-const float GROWTH = 0.62;       // above: r grows as a power of it
-const float FLOOR_CSS_PX = 1.15; // r never drops below this
-const float FADE_POWER = 0.75;   // how fast a star dims once it sits on the floor
-const float MIN_FADE = 0.28;     // the far side of the disc still reads
+${PSF_RADIUS_GLSL}
+${DISC_VEIL_GLSL}
 const float SPIKE_SATURATION_PX = 40.0;
 
 void main() {
   vec4 mv = modelViewMatrix * instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0);
   float depth = max(-mv.z, 1e-3);
   float pxPerUnit = 0.5 * uViewportHeight * projectionMatrix[1][1] / depth;
+  float fade;
+  float r = psfRadius(aSize, depth, uViewportHeight, uPixelRatio, fade) * aDyn.x;
 
-  float r = aSize * pxPerUnit;
-  if (r > KNEE_PX) r = KNEE_PX * pow(r / KNEE_PX, GROWTH);
-  float floorPx = FLOOR_CSS_PX * uPixelRatio;
-  float fade = 1.0;
-  if (r < floorPx) {
-    fade = max(pow(r / floorPx, FADE_POWER), MIN_FADE);
-    r = floorPx;
-  }
-  r *= aDyn.x;
+  vec3 world = (modelMatrix * instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0)).xyz;
+  float veil = discVeil(world, uDiscRadius, uBehindDisc);
 
   vColor = aColor;
-  vRadiance = aDyn.y * fade;
+  vRadiance = aDyn.y * fade * veil;
   // A faint star shows its colour; a bright one saturates to white.
   vWhite = 0.9 * smoothstep(0.35, 1.3, vRadiance);
-  vSpike = aDyn.z;
+  vSpike = aDyn.z * veil;
   vRing = aDyn.w;
   vRadiusPx = r;
   // Spikes reach far on a small star and are reined in as it swells.
