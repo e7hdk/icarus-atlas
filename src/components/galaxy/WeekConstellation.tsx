@@ -42,7 +42,9 @@ const QUIET_STAR = '#c9d2f5';
 /** The week's figure. */
 const LIT_LINE = '#e9d5ff';
 const LIT_LINE_OPACITY = 0.62;
-const LIT_STAR = '#ffffff';
+/** White authored in HDR: only light above 1.0 blooms, and the lit figure
+ *  has to outshine the quiet sky. */
+const LIT_STAR = new THREE.Color(3, 3, 3);
 /** Point sizes are attenuated, so these are world units at the sphere. A chart
  *  has magnitudes: three buckets give the quiet sky its hierarchy in three
  *  draws, without a shader. */

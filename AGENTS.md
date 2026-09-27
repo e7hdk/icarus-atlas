@@ -63,7 +63,7 @@ A "fact" (a summary sentence, a story paragraph, a relation edge) is text/edge +
 
 ## Theme
 
-Decided: **Aether Nebula** (vivid nebula cosmos, glassmorphism panels, neon type glows) paired with **classical serif typography** (Cinzel for display, Cormorant Garamond for body). All design tokens live in `src/styles/theme.css` (Tailwind v4 `@theme`); WebGL star colors mirror them in `TYPE_GLOW` (`src/types/character.ts`) — keep the two in sync. Build UI from the primitives in `src/components/ui/` (GlassPanel, TypeBadge, …) instead of ad-hoc styling, so the theme stays controllable from one place.
+Decided: **Aether Nebula** (vivid nebula cosmos, glassmorphism panels, neon type glows) paired with **classical serif typography** (Cinzel for display, Cormorant Garamond for body). All design tokens live in `src/styles/theme.css` (Tailwind v4 `@theme`); WebGL star colors mirror them in `TYPE_GLOW` (`src/types/character.ts`) — keep the two in sync. The galaxy renders in HDR: star cores are authored above 1.0, bloom only takes light past 1.0, and a highlight roll-off (`HighlightRolloff`, identity below 0.8) keeps every theme colour exact — author anything meant to glow above 1.0, and keep lines, rings and nebula below the knee. Build UI from the primitives in `src/components/ui/` (GlassPanel, TypeBadge, …) instead of ad-hoc styling, so the theme stays controllable from one place.
 
 ## Future Scope
 
