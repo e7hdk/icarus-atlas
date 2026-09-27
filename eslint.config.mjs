@@ -15,6 +15,8 @@ const eslintConfig = defineConfig([
     // Harness worktrees checked out inside the repo carry their own .next /
     // node_modules; the root-relative patterns above don't reach them.
     ".claude/**",
+    // Netlify's local build output (gitignored): bundled server code, not ours.
+    ".netlify/**",
   ]),
 ]);
 
