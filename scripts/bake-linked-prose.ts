@@ -185,10 +185,10 @@ for (const character of characters) {
   bakedCharacters[character.id] = {
     signature,
     summary: character.summary.map((paragraph) =>
-      parseLinkedProse(paragraph.text, sortedNames, nameIndex, characterTypes, scopeIds),
+      parseLinkedProse(paragraph.text, sortedNames, nameIndex, characterTypes, scopeIds, character.id),
     ),
     story: character.story.map((paragraph) =>
-      parseLinkedProse(paragraph.text, sortedNames, nameIndex, characterTypes, scopeIds),
+      parseLinkedProse(paragraph.text, sortedNames, nameIndex, characterTypes, scopeIds, character.id),
     ),
   };
   charactersRebaked++;

@@ -4,8 +4,9 @@ import type { NameIndex } from './name-index';
 import { resolveCharacterId } from './resolve-name';
 
 /** Bumped when link-scan semantics change — invalidates linked-prose.json.
- *  2: names link only when written as names, and a place's name only in scope. */
-export const LINKED_PROSE_PARSER_VERSION = 2;
+ *  2: names link only when written as names, and a place's name only in scope.
+ *  3: a figure's own prose never links to itself. */
+export const LINKED_PROSE_PARSER_VERSION = 3;
 
 export type ProseSegment =
   | { kind: 'plain'; text: string }
@@ -64,13 +65,15 @@ function writtenAsName(text: string, start: number, name: string): boolean {
   return initial !== undefined && initial !== initial.toLowerCase();
 }
 
-/** Split prose into plain runs and resolvable character links (longest match, word boundaries). */
+/** Split prose into plain runs and resolvable character links (longest match,
+ *  word boundaries). `selfId` is the figure whose own prose this is. */
 export function parseLinkedProse(
   text: string,
   sortedNames: string[],
   nameIndex: NameIndex,
   characterTypes: Record<string, CharacterType>,
   scopeIds?: string[],
+  selfId?: string,
 ): ProseSegment[] {
   if (!text) return [];
 
@@ -92,7 +95,7 @@ export function parseLinkedProse(
         if (!writtenAsName(text, cursor, name)) continue;
 
         const slice = text.slice(cursor, cursor + name.length);
-        const id = resolveCharacterId(name, nameIndex, scopeIds);
+        const id = resolveCharacterId(name, nameIndex, scopeIds, selfId);
         if (!id) {
           linked = { kind: 'plain', text: slice };
           break;

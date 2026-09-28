@@ -168,6 +168,7 @@ export function CharacterPanel({
                 nameIndex={linkingContext?.nameIndex}
                 sortedNames={linkingContext?.sortedNames}
                 scopeIds={scopeIds}
+                selfId={character.id}
               />
             </p>
           )}
@@ -298,6 +299,7 @@ export function CharacterPanel({
                     nameIndex={linkingContext?.nameIndex}
                     sortedNames={linkingContext?.sortedNames}
                     scopeIds={scopeIds}
+                    selfId={character.id}
                   />
                 </p>
                 <p className="mt-1 font-body text-[13px] italic text-aether-faint">

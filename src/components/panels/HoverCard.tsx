@@ -106,6 +106,7 @@ export function HoverCard({
               nameIndex={linkingContext?.nameIndex}
               sortedNames={linkingContext?.sortedNames}
               scopeIds={scopeIds}
+              selfId={character.id}
             />
           ) : (
             'No surviving account for this figure is included under the active source lens.'
