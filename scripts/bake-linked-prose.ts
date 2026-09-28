@@ -1,14 +1,16 @@
 /** Precompute linked-prose segments at build time and write them to
  *  data/generated/linked-prose.json, so story and character pages never run the
  *  ~1200-name greedy scan on the client. Incremental: only entities whose
- *  per-entity signature changed are rebaked. Run via `pnpm bake-linked-prose`
- *  (also chained into `pnpm dev` and `pnpm build`). */
+ *  per-entity signature changed are rebaked. Also writes the place names the
+ *  linker reads against (data/generated/place-names.json). Run via
+ *  `pnpm bake-linked-prose` (also chained into `pnpm dev` and `pnpm build`). */
 
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   buildNameIndex,
   buildSortedSearchNames,
+  foldedPlaceNames,
 } from '../src/features/linking/name-index';
 import { parseLinkedProse } from '../src/features/linking/parse-prose';
 import {
@@ -60,9 +62,25 @@ const stories = readdirSync(join(DATA, 'stories'))
   .map((f) => JSON.parse(readFileSync(join(DATA, 'stories', f), 'utf-8')) as Story)
   .sort((a, b) => a.id.localeCompare(b.id));
 
-const namesSignature = linkingNamesSignature(characters);
+// Every place, city and feature name: a figure named like a place links only
+// where it is in scope. Written first, so the app's copy never lags the bake.
+const placeNameList = foldedPlaceNames(
+  ['places.json', 'cities.json', 'features.json'].flatMap(
+    (file) => JSON.parse(readFileSync(join(DATA, 'geo', file), 'utf-8')) as { name: string }[],
+  ),
+);
+const placeNames: ReadonlySet<string> = new Set(placeNameList);
+const PLACE_NAMES_OUT = join(OUT_DIR, 'place-names.json');
+const placeNamesJson = `${JSON.stringify(placeNameList)}\n`;
+if (!existsSync(PLACE_NAMES_OUT) || readFileSync(PLACE_NAMES_OUT, 'utf-8') !== placeNamesJson) {
+  mkdirSync(OUT_DIR, { recursive: true });
+  writeFileSync(PLACE_NAMES_OUT, placeNamesJson);
+  console.log(`Wrote ${placeNameList.length} place names → data/generated/place-names.json`);
+}
 
-const nameOwners = linkableNameOwners(characters);
+const namesSignature = linkingNamesSignature(characters, placeNames);
+
+const nameOwners = linkableNameOwners(characters, placeNames);
 const storySignatures = Object.fromEntries(
   stories.map((story) => [story.id, storyLinkingSignature(story)]),
 );
@@ -102,7 +120,7 @@ function namesMoveInside(texts: string[]): boolean {
   return moved.some((name) => folded.includes(name));
 }
 
-const nameIndex = buildNameIndex(characters);
+const nameIndex = buildNameIndex(characters, placeNames);
 const sortedNames = buildSortedSearchNames(characters);
 const characterTypes: Record<string, CharacterType> = Object.fromEntries(
   characters.map((c) => [c.id, c.type]),

@@ -2682,7 +2682,7 @@ Verification: ✓ verified — Bibliotheca 3.11.2 and Description of Greece 4.3.
 | Ovid | Lynceus' sword pierced Castor's chest; Pollux speared Lynceus, and Idas was barely driven back by Jupiter's fire. | Fasti 5.707–714 |
 | Hyginus | Castor killed Lynceus; when Castor tried to stop Idas raising a tomb for his brother, Idas drove his sword into Castor's groin, and Pollux killed Idas in single combat. Castor is also said to have died at Aphidnae, in a war of the Lacedaemonians against the Athenians, or when Idas and Lynceus attacked Sparta. | Fabulae 80; Astronomica 2.22 |
 
-Significance: every pairing of killer and victim shifts — Castor falls to Idas or to Lynceus, Lynceus to Polydeuces or to Castor, Idas to Zeus' bolt or to Pollux' hand. The `castor-slayer-lynceus-apharetid` edge, which only Hyginus supports, shares this topic.
+Significance: every pairing of killer and victim shifts — Castor falls to Idas or to Lynceus, Lynceus to Polydeuces or to Castor, Idas to Zeus' bolt or to Pollux' hand. Every slayer edge of the fight carries this topic, each tagged with the tellers who make it.
 
 Verification: ✓ verified — Bibliotheca 3.11.2 and Description of Greece 4.3.1 in the Greek (the corpus English of Bibliotheca 3.11.2 says "pursuing Lynceus", but the Greek has Polydeuces pursuing Idas); Fabulae 80 and Astronomica 2.22 in the Latin (The Latin Library); Fasti 5.707–714 in the Latin (The Latin Library; outside the pinned corpus).
 

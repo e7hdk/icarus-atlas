@@ -6,32 +6,32 @@
   "parent": "trojan-war",
   "era": 8.11,
   "summary": {
-    "text": "Agamemnon's aristeia broke against Hector's charge; Diomedes and Odysseus fell wounded; the healer Machaon was carried off until Menelaus saved him — and Ajax alone held the wall while the Trojans assaulted the gates with fire.",
+    "text": "Agamemnon's aristeia broke against Hector's charge; Diomedes and Odysseus fell wounded, and Paris' arrow sent the healer Machaon to the ships in Nestor's chariot — until, at the Achaean wall, Hector smashed a gate with a boulder and the Trojans poured through.",
     "sources": ["homer"],
     "citation": "Hom. Il. 11–12"
   },
   "chapters": [
     {
       "title": "Agamemnon's day",
-      "text": "Dawn brought Agamemnon's aristeia: the son of Atreus cut down Trojans from the plain to the wall until his armpits ran with sweat and his hands grew weary on the spear. Zeus sent Iris to Hector with a warning — when Agamemnon was wounded, then Hector might drive the host. The king was speared in the belt when he stood his ground too long; he left the field in his chariot, and the tide turned.",
+      "text": "Dawn brought Agamemnon's aristeia: the son of Atreus drove the Trojans across the plain to the Scaean gates, his invincible hands spattered with gore. Zeus sent Iris to Hector with a warning — hold back while Agamemnon raged, and when he was wounded, then Hector might drive the host. Coön's spear pierced the king's arm below the elbow; he fought on until the pain came, then left the field in his chariot, and the tide turned.",
       "sources": ["homer"],
       "citation": "Hom. Il. 11.1–296"
     },
     {
       "title": "Diomedes and Odysseus down",
-      "text": "Diomedes fought on until Paris' arrow struck his foot; he climbed into his chariot and withdrew. Odysseus stood alone among the Trojans until he was speared; companions bore him out senseless. The Achaean captains fell one by one — Eurypylus wounded, Teucer driven back — and Hector called on Troy to fire the ships. The nested episode on the Night Raid tells Book 10, when Odysseus and Diomedes would strike back in darkness; here the daylight slaughter leaves the host leaderless on the wall.",
+      "text": "Diomedes fought on until Paris' arrow struck his foot; he climbed into his chariot and withdrew. Odysseus stood alone among the Trojans until Socus' spear tore his side; at his cry Menelaus and Ajax ran to him, and while Ajax held the Trojans off behind his tower-like shield, Menelaus led him out by the hand to his chariot. The nested episode on the Night Raid tells Book 10, the night before, when Odysseus and Diomedes struck in the darkness; here the daylight fighting leaves the host's best men wounded.",
       "sources": ["homer"],
-      "citation": "Hom. Il. 11.297–600"
+      "citation": "Hom. Il. 11.297–488"
     },
     {
       "title": "Machaon and the healers",
-      "text": "Eurypylus fell with an arrow in the thigh; Nestor lifted him into his chariot and drove to the ships, passing the wounded captains sitting in the sand. Machaon the healer, wounded by Paris, was carried off in a chariot until Menelaus and Ajax ran to rescue him — for the host could not afford to lose the sons of Asclepius. Achilles, watching from his ship, sent Patroclus to learn who was hurt; the first step toward the armour Patroclus would borrow.",
+      "text": "Paris' arrow struck Machaon the healer in the right shoulder, and at Idomeneus' urging Nestor took him into his chariot and drove to the ships — for a healer is worth many other men. Paris shot Eurypylus too, in the thigh, and he limped back from the fighting. Achilles, watching from his ship, saw Nestor's chariot pass and sent Patroclus to learn who was hurt; the first step toward the armour Patroclus would borrow.",
       "sources": ["homer"],
-      "citation": "Hom. Il. 11.601–844"
+      "citation": "Hom. Il. 11.489–848"
     },
     {
       "title": "Ajax on the wall",
-      "text": "Book 12 opens with the Trojans assaulting the wall the Achaeans had built — Hector and Polydamas at the gates, Sarpedon and Glaucus among the Lycians. Ajax and Teucer held the tower; stones and arrows beat back the first wave. Poseidon and Hera chafed on Olympus while Zeus slept, but the law held: no god might fight openly yet. The wall would stand one more day because Telamonian Ajax would not yield a stone's breadth — until Hector found the weak gate in the next book's battle for the ships.",
+      "text": "Book 12 opens with a glance ahead: once Troy had fallen, Poseidon and Apollo would turn the rivers of the Troad against the Achaeans' wall and wash it away. Now the Trojans assaulted it — Hector and Polydamas at the ditch, Sarpedon and Glaucus leading the Lycians against Menestheus' tower, where Ajax crushed Epicles with a stone and Teucer's arrow drove Glaucus from the wall. Then Hector, calling on the Trojans to fire the ships, lifted a boulder two strong men could scarcely have raised, smashed the gate, and the Trojans poured over the wall and through it as the Achaeans fled among the ships.",
       "sources": ["homer"],
       "citation": "Hom. Il. 12.1–471"
     }
@@ -40,11 +40,12 @@
     { "id": "agamemnon", "name": "Agamemnon", "role": "King wounded after his aristeia" },
     { "id": "hector", "name": "Hector", "role": "Captain who turned the tide" },
     { "id": "diomedes", "name": "Diomedes", "role": "Wounded by Paris' arrow" },
-    { "id": "odysseus", "name": "Odysseus", "role": "Wounded and borne from the field" },
-    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "He who held the wall" },
+    { "id": "odysseus", "name": "Odysseus", "role": "Wounded by Socus and led from the field by Menelaus" },
+    { "id": "ajax-telamonian", "name": "Ajax the Telamonian", "role": "He who shielded Odysseus and held Menestheus' tower" },
     { "id": "teucer", "name": "Teucer", "role": "Archer beside Ajax on the tower" },
-    { "id": "nestor", "name": "Nestor", "role": "He who drove Eurypylus to the ships" },
-    { "id": "menelaus", "name": "Menelaus", "role": "He who helped save Machaon" },
+    { "id": "nestor", "name": "Nestor", "role": "He who drove the wounded Machaon to the ships" },
+    { "id": "idomeneus", "name": "Idomeneus", "role": "He who bade Nestor carry Machaon off" },
+    { "id": "menelaus", "name": "Menelaus", "role": "He who, with Ajax, saved Odysseus" },
     { "id": "paris", "name": "Paris", "role": "Archer who wounded Diomedes and Machaon" },
     { "id": "patroclus", "name": "Patroclus", "role": "Sent by Achilles to learn who was hurt" },
     { "id": "achilles", "name": "Achilles", "role": "Watcher from the ships" },
@@ -54,7 +55,7 @@
     {
       "id": "machaon",
       "name": "Machaon",
-      "role": "Healer wounded and rescued"
+      "role": "Healer shot by Paris and carried to the ships"
     },
     { "id": "eurypylus-euaemonid", "name": "Eurypylus", "role": "Ormenian captain wounded in the thigh" }
   ],

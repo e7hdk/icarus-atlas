@@ -148,6 +148,15 @@ function loadJson(path: string): unknown {
   }
 }
 
+/** Character and story prose is shown to readers verbatim, so it never carries
+ *  maintainer markup: an id or a note in backticks belongs in docs or a relation
+ *  note, not in the text. */
+function checkReaderProse(where: string, text: string): void {
+  if (text.includes('`')) {
+    errors.push(`${where}: backtick in reader-facing prose — keep internal ids and maintainer notes out of the text`);
+  }
+}
+
 // 1. Sources
 const sourcesRaw = loadJson(join(DATA_DIR, 'sources.json'));
 const sourceIds = new Set<string>();
@@ -202,6 +211,8 @@ if (existsSync(charDir)) {
     for (const t of [...c.summary, ...c.story]) {
       if (t.topic) topics.set(t.topic, [...(topics.get(t.topic) ?? []), `${c.id} (${t.sources.join(', ')})`]);
     }
+    c.summary.forEach((t, i) => checkReaderProse(`characters/${file}: summary[${i}]`, t.text));
+    c.story.forEach((t, i) => checkReaderProse(`characters/${file}: story[${i}]`, t.text));
   }
 } else {
   errors.push('data/characters/ directory is missing');
@@ -569,6 +580,8 @@ if (existsSync(storyDir)) {
     if (story.parent !== null && !storyIds.has(story.parent)) {
       errors.push(`stories/${story.id}.json: unknown parent story "${story.parent}"`);
     }
+    checkReaderProse(`stories/${story.id}.json: summary`, story.summary.text);
+    story.chapters.forEach((chapter, i) => checkReaderProse(`stories/${story.id}.json: chapters[${i}]`, chapter.text));
     for (const member of story.cast) {
       if (member.id && !charIds.has(member.id)) {
         errors.push(`stories/${story.id}.json: cast member "${member.name}" points at unknown character "${member.id}"`);
