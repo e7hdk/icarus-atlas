@@ -404,6 +404,36 @@
       "estimate": true
     },
     {
+      "id": "asclepius-birth",
+      "label": "Coronis' pyre and the birth of Asclepius",
+      "stories": [
+        "coronis-and-asclepius"
+      ],
+      "dates": [
+        {
+          "year": -1275,
+          "source": "eratosthenes",
+          "citation": "generational — grown in time to raise Hippolytus (Apollod. 3.10.3; Hyg. Fab. 49), whose death the Theseus arm sets ≈1255, and dead before Apollo's year of service to Admetus, who sails on the Argo (Apollod. 3.10.4, 1.9.16)"
+        }
+      ],
+      "estimate": true
+    },
+    {
+      "id": "atreus-thyestes-mycenae",
+      "label": "Atreus and Thyestes contend for Mycenae",
+      "stories": [
+        "atreus-and-thyestes"
+      ],
+      "dates": [
+        {
+          "year": -1235,
+          "source": "eratosthenes",
+          "citation": "generational — the Mycenaeans send for the sons of Pelops once Eurystheus falls, after the death of Heracles (Apollod. 2.8.1; Epit. 2.11); a generation before Agamemnon sails for Troy"
+        }
+      ],
+      "estimate": true
+    },
+    {
       "id": "seven-against-thebes",
       "label": "The Seven against Thebes",
       "stories": [

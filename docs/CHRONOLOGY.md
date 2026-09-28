@@ -98,10 +98,12 @@ chronographer-derived or generational estimate, not a directly attested year.
 | Oedipus / house of Laius | `oedipus-at-thebes` | **≈1260** | gen | gen before the Seven |
 | Theseus unites Attica | `theseus-cycle`, `king-of-athens` | **1259** | P | Marmor Parium ep. 20 |
 | Amazons invade Attica | `amazon-campaign` | **1256** | P | Marmor Parium ep. 21 |
+| Coronis' pyre, birth of Asclepius | `coronis-and-asclepius` | **≈1275** | gen | grown to raise Hippolytus (Apollod. 3.10.3), dead before Apollo serves Admetus, an Argonaut (Apollod. 3.10.4) |
 | Calydonian boar hunt | `calydonian-boar` | **≈1250** | gen | Argonaut generation |
 | Heracles' labours / floruit | `heracles-cycle`, `twelve-labours` | **≈1250** | gen | 1 gen before Troy; Heraclid return +80 = 1104 |
 | The Argo to Colchis | `argonautica` | **≈1245** | gen | fathers of the Trojan heroes (Peleus, Telamon) |
 | Death of Heracles | `death-of-heracles`, `deianira-at-the-feast` | **≈1240** | gen | after the Argo, which sails in the midst of his labours (Arg. 1.122, 1.1344); a gen before Troy (Tlepolemus, Il. 2.653) — ⚖ `heracles-on-the-argo` |
+| Atreus and Thyestes contend for Mycenae | `atreus-and-thyestes` | **≈1235** | gen | the sons of Pelops are sent for once Eurystheus falls, after Heracles' death (Apollod. 2.8.1; Epit. 2.11); a gen before Agamemnon sails |
 | Seven against Thebes | `seven-against-thebes` | **≈1230** | gen | their sons (Epigoni) sack Thebes just before Troy |
 | Epigoni take Thebes | `epigoni` | **≈1205** | gen | one gen after the Seven |
 | **Trojan War begins** | `trojan-cycle`, `cypria` | **1218** (P) / **1194** (E) | P/E | Marmor Parium ep. 23; E = fall + 10 |

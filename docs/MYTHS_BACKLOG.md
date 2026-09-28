@@ -72,6 +72,7 @@ Vertumnus, Scylla & Minos, Alcyone & Ceyx, Marsyas, Midas, Pygmalion, Io.
 | ~~`harmonia-serpents`~~ | ~~Cadmus and Harmonia at the End~~ | ~~6.0~~ | ovid (Met. 4.563–603), apollodorus (3.5.4) | _Promoted 2026-06-20 — `data/stories/harmonia-serpents.json`; crossing to `cadmus-and-thebes`._ |
 | ~~`semele-and-the-birth`~~ | ~~Semele and the Birth of Dionysus~~ | ~~5.0~~ | ovid (Met. 3.253–315), apollodorus (3.4.3) | _Promoted 2026-06-18 — `data/stories/semele-and-the-birth.json`._ |
 | ~~`tiresias-blindness`~~ | ~~The Blinding of Tiresias~~ | ~~5.1~~ | ovid (Met. 3.316–338), apollodorus (3.6.7) | _Promoted 2026-06-20 — `data/stories/tiresias-blindness.json`; crossings to `oedipus-at-thebes`, `nekuia`._ |
+| ~~`antiope-and-the-twins`~~ | ~~Antiope, Amphion and Zethus~~ | ~~5.6~~ | apollodorus (3.5.5–6), pausanias (2.6.1–4, 9.5.5–9), hyginus (Fab. 7–9), homer (Od. 11.260–265) | _Promoted 2026-09-28 — `data/stories/antiope-and-the-twins.json`; episode under `theban-cycle`; crossings to `niobe-niobids`, `oedipus-at-thebes`, `cadmus-and-thebes`, `nekuia`._ |
 
 ## Dionysus arc (era 5–7) — shelf root `dionysus-cycle` (2026-06-20)
 
@@ -95,12 +96,16 @@ Nested under `dionysus-cycle`: `semele-and-the-birth`, `lycurgus-of-thrace`, `ty
 | ~~`phineus-and-the-harpies`~~ | ~~Phineus and the Harpies~~ | ~~6.92~~ | apollodorus (1.9.21), apollonius (Arg. 2.178–434) | _Promoted 2026-06-20 — `data/stories/phineus-and-the-harpies.json`; crossing to `argonautica`; harpy adversary relations._ |
 | ~~`salmoneus-false-thunder`~~ | ~~Salmoneus and the False Thunder~~ | ~~4.6~~ | apollodorus (1.9.7), hyginus (Fab. 61) | _Promoted 2026-06-20 — `data/stories/salmoneus-false-thunder.json`._ |
 | ~~`the-danaids`~~ | ~~The Danaids~~ | ~~4.4~~ | apollodorus (2.1.4–5), hyginus (Fab. 168) | _Promoted 2026-06-20 — `data/stories/the-danaids.json`; crossing to `io-wandering`._ |
+| ~~`coronis-and-asclepius`~~ | ~~Coronis and Asclepius~~ | ~~6.65~~ | apollodorus (3.10.3–4), ovid (Met. 2.534–675), pausanias (2.26.3–2.27.4), hyginus (Fab. 49, 202) | _Promoted 2026-09-28 — `data/stories/coronis-and-asclepius.json`; anchor `asclepius-birth` (≈1275, gen); crossings to `hippolytus`, `duel-and-truce`._ |
+| ~~`heracles-in-elis-and-pylos`~~ | ~~Heracles' Wars on Elis, Pylos and Sparta~~ | ~~7.22~~ | apollodorus (2.7.2–3), pausanias (5.2.1–5.3.3), homer (Il. 11.682–693) | _Promoted 2026-09-28 — `data/stories/heracles-in-elis-and-pylos.json`; episode under `heracles-cycle`; crossing to `suitor-oath-at-sparta`._ |
+| ~~`atreus-and-thyestes`~~ | ~~Atreus and Thyestes~~ | ~~7.4~~ | apollodorus (Epit. 2.10–16), hyginus (Fab. 85–88), pausanias (2.18.1–2), homer (Il. 2.100–108) | _Promoted 2026-09-28 — `data/stories/atreus-and-thyestes.json`; anchor `atreus-thyestes-mycenae` (≈1235, gen); crossings to `pelops-and-oenomaus`, `agamemnon-murder`, `iphigenia-at-aulis`, `suitor-oath-at-sparta`._ |
 
 ## Trojan & Returns arm (era 7.5–9.5) — episodes still missing
 
 | candidate id | title | ~era | source pointers | note |
 |---|---|---|---|---|
 | ~~`memnon`~~ | ~~Memnon the Ethiopian~~ | ~~8.27~~ | apollodorus (Epit. 5.3), hyginus (Fab. 112) | _Promoted 2026-06-20 — data/stories/memnon.json; split from aethiopis._ |
+| ~~`dioscuri-and-apharetids`~~ | ~~The Dioscuri and the Sons of Aphareus~~ | ~~7.953~~ | apollodorus (3.11.2), hyginus (Fab. 80), ovid (Fasti 5.699–720), pausanias (4.3.1) | _Promoted 2026-09-28 — `data/stories/dioscuri-and-apharetids.json`; episode under `cypria`; crossings to `nekuia`, `calydonian-boar`, `pirithous-and-the-underworld`._ |
 
 _Promoted to data in **Trojan Batch 16** (2026-06-16): `palamedes`, `philoctetes-on-lemnos`, `ajax-and-the-arms`._
 _Promoted to data in **Trojan Batch 17** (2026-06-16): `the-wooden-horse`._
@@ -110,6 +115,7 @@ _Promoted to data in **Olympian Births Batch 1** (2026-06-18): `birth-of-aphrodi
 _Promoted to data in **Olympian Births Batch 2** (2026-06-18): `birth-of-hermes`, `birth-of-hephaestus`, `birth-of-ares`._
 _Promoted to data in **Heroic Myths Batch** (2026-06-20): `phineus-and-the-harpies`, `the-danaids`, `europa-and-the-bull`._
 _Promoted to data in **Dionysus Cycle shelf** (2026-06-20): `dionysus-cycle` root; reparented `semele-and-the-birth`, `lycurgus-of-thrace`, `tyrrhenian-pirates`, `pentheus-and-dionysus`, `ariadne-on-naxos`, `midas-golden-touch`._
+_Promoted to data in **Heroic Myths Batch 2** (2026-09-28): `dioscuri-and-apharetids`, `antiope-and-the-twins`, `coronis-and-asclepius`, `atreus-and-thyestes`, `heracles-in-elis-and-pylos`._
 
 ---
 
@@ -118,4 +124,4 @@ _Promoted to data in **Dionysus Cycle shelf** (2026-06-20): `dionysus-cycle` roo
 When a batch is chosen, write each story with `pnpm corpus:search "<key phrase>"` first,
 compare lenses, then create `data/stories/<id>.json` (schema in `src/lib/schemas.ts`) and
 run `pnpm validate-data`. The new star appears on the spindle automatically at its `era`,
-colored by the saga arm its `parent` chain resolves to (`src/features/stories/spindle.ts`).
+colored by the saga arm its `parent` chain resolves to (`src/features/stories/sagas.ts`).
