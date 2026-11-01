@@ -1,0 +1,1626 @@
+<!doctype html>
+<html lang="en" data-theme="gilded">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Loom Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<style>
+:root {
+  --cosmos: #08041d; --deep: #05020f; --raised: #140c30;
+  --violet: #7c4dff; --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+  --gold: #fcd34d; --gold-dim: rgb(252 211 77 / .55);
+  --glass: rgb(255 255 255 / .06); --glass-border: rgb(255 255 255 / .14); --glass-heavy: rgb(20 12 48 / .72);
+  --display: 'Cinzel', serif; --body: 'Cormorant Garamond', serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--deep); color: var(--aether); font-family: var(--body); -webkit-font-smoothing: antialiased; }
+#sky, #gl, #thread { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+#gl { cursor: grab; touch-action: none; }
+#gl.dragging { cursor: grabbing; }
+#gl.on-tile { cursor: pointer; }
+#thread { pointer-events: none; }
+#hires { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+#hires img { position: absolute; left: 0; top: 0; object-fit: cover; opacity: 0; transition: opacity .35s ease; will-change: transform; transform-origin: 0 0; }
+#hires img.in { opacity: 1; }
+#labels { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+
+/* masthead, as in AtlasBar */
+.bar { position: fixed; inset: 0 0 auto 0; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; z-index: 30; pointer-events: none; }
+.brand { font-family: var(--display); font-size: 14px; letter-spacing: .22em; color: var(--gold); }
+.doors { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; padding: 4px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass); backdrop-filter: blur(20px); pointer-events: auto; }
+.doors a { font-family: var(--display); font-size: 11px; letter-spacing: .16em; color: var(--muted); padding: 6px 16px; border-radius: 999px; border: 1px solid transparent; text-decoration: none; }
+.doors a.on { color: var(--gold); border-color: rgb(252 211 77 / .55); background: rgb(252 211 77 / .12); }
+.meta { font-style: italic; font-size: 14px; color: var(--faint); }
+
+.head { position: fixed; left: 28px; bottom: 22px; width: 186px; z-index: 12; transition: opacity .4s ease; }
+.head h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 25px; letter-spacing: .14em; }
+.head p { margin: 9px 0 0; font-size: 15px; line-height: 1.32; color: var(--muted); }
+.head p em { color: var(--aether); }
+.legend { margin-top: 13px; display: grid; grid-template-columns: 16px 1fr; gap: 3px 6px; font-size: 13.5px; color: var(--faint); }
+.legend b { font-family: var(--display); font-weight: 400; color: var(--gold); font-size: 11px; line-height: 19px; }
+.quiet .head, .quiet .rail { opacity: 0; pointer-events: none; }
+.bar::before { content: ''; position: absolute; inset: 0 0 -30px 0; z-index: -1; background: linear-gradient(rgb(5 2 15 / .8), transparent); opacity: 0; transition: opacity .4s ease; pointer-events: none; }
+.quiet .bar::before { opacity: 1; }
+.quiet .era { padding: 2px 9px 3px; border-radius: 999px; background: rgb(5 2 15 / .66); backdrop-filter: blur(8px); color: var(--muted); }
+.quiet .era::after { display: none; }
+
+.rail { position: fixed; right: 26px; top: 84px; width: 176px; z-index: 12; transition: opacity .4s ease; }
+.rail h2 { margin: 0 0 7px; font-family: var(--display); font-weight: 400; font-size: 10px; letter-spacing: .28em; color: var(--faint); }
+.rail section + section { margin-top: 22px; }
+.rail button { all: unset; display: block; width: 100%; padding: 3px 0 3px 15px; position: relative; cursor: pointer; font-size: 16px; line-height: 1.22; color: var(--muted); transition: color .2s ease; }
+.rail button::before { content: ''; position: absolute; left: 1px; top: 11px; width: 5px; height: 5px; border-radius: 50%; background: transparent; box-shadow: inset 0 0 0 1px rgb(255 255 255 / .22); transition: all .2s ease; }
+.rail button:hover { color: var(--aether); }
+.rail button.on { color: var(--gold); }
+.rail button.on::before { background: var(--gold); box-shadow: 0 0 8px 2px rgb(252 211 77 / .5); }
+.rail button:focus-visible { outline: 1px solid var(--gold-dim); outline-offset: 2px; }
+.note { margin-top: 12px; font-size: 14.5px; line-height: 1.3; font-style: italic; color: var(--muted); min-height: 0; opacity: 0; transition: opacity .3s ease; }
+.note.in { opacity: 1; }
+
+.foot { position: relative; margin-top: 15px; font-size: 14.5px; line-height: 1.3; font-style: italic; color: var(--faint); }
+.foot sup { color: var(--gold); font-style: normal; cursor: help; }
+.foot .fn { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; padding: 7px 11px; white-space: nowrap; font-style: normal; color: var(--aether); background: var(--glass-heavy); border: 1px solid var(--glass-border); border-radius: 8px; backdrop-filter: blur(16px); }
+.foot:hover .fn { display: block; }
+
+.progress { position: fixed; right: 26px; bottom: 22px; z-index: 12; font-size: 14px; font-style: italic; color: var(--faint); transition: opacity .8s ease; }
+
+/* era rail: sticks to the left edge of the screen as you zoom */
+.era { position: absolute; left: 0; top: 0; display: flex; align-items: baseline; gap: 7px; white-space: nowrap; color: var(--faint); transition: color .25s ease; font-size: 12.5px; will-change: transform; }
+.era b { font-family: var(--display); font-weight: 400; font-size: 10.5px; letter-spacing: .14em; }
+.era i { font-size: 12px; opacity: .8; }
+.era.tear b { color: var(--gold); }
+.era.tear { color: rgb(252 211 77 / .75); }
+.era.now { color: var(--aether); }
+.era::after { content: ''; width: 12px; height: 1px; background: currentColor; opacity: .5; align-self: center; }
+
+/* loom weights: one per saga, the warp's bundles end here */
+.weight { all: unset; position: absolute; left: 0; top: 0; width: 76px; margin-left: -38px; display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; pointer-events: auto; color: var(--muted); will-change: transform; }
+.weight svg { display: block; overflow: visible; transition: transform .35s cubic-bezier(.3, 1.6, .5, 1); transform-origin: 50% 0; }
+.weight span { font-size: 14px; font-style: italic; line-height: 1; transition: color .2s ease; white-space: nowrap; }
+.weight em { font-style: normal; font-family: var(--display); font-size: 8.5px; letter-spacing: .1em; color: var(--faint); opacity: 0; transition: opacity .2s ease; }
+.weight:hover span, .weight.on span { color: var(--aether); }
+.weight:hover em, .weight.on em { opacity: 1; }
+.weight:hover svg { transform: translateY(2px); }
+.weight.on svg { transform: translateY(5px); }
+.weight:focus-visible span { outline: 1px solid var(--gold-dim); outline-offset: 3px; }
+
+/* hover card, same grammar as HoverCard */
+#card { position: fixed; left: 0; top: 0; z-index: 20; width: 248px; padding: 10px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--glass-heavy); backdrop-filter: blur(22px); box-shadow: 0 22px 50px rgb(5 2 15 / .6); pointer-events: none; opacity: 0; transition: opacity .16s ease; }
+#card.in { opacity: 1; }
+#card img { display: block; width: 100%; max-height: 190px; object-fit: contain; border-radius: 6px; background: rgb(0 0 0 / .3); }
+#card .k { margin-top: 8px; display: flex; gap: 6px; align-items: center; font-family: var(--display); font-size: 9px; letter-spacing: .2em; color: var(--faint); text-transform: uppercase; }
+#card .k i { width: 6px; height: 6px; border-radius: 50%; }
+#card h3 { margin: 4px 0 0; font-weight: 500; font-size: 18px; line-height: 1.12; }
+#card p { margin: 3px 0 0; font-size: 14.5px; font-style: italic; color: var(--muted); }
+
+/* the plate: one work, full height */
+#plate { position: fixed; inset: 0; z-index: 40; display: grid; grid-template-columns: minmax(0, 1fr) 372px; gap: 34px; padding: 68px 44px 40px; background: rgb(5 2 15 / .88); backdrop-filter: blur(14px); opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+#plate.in { opacity: 1; pointer-events: auto; }
+.frame { position: relative; display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; }
+.frame img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; box-shadow: 0 0 0 1px rgb(252 211 77 / .4), 0 0 0 6px var(--deep), 0 0 0 7px rgb(252 211 77 / .16), 0 34px 90px rgb(0 0 0 / .7); }
+.cap { align-self: center; max-height: 100%; overflow: auto; padding-right: 6px; }
+.cap .k { display: flex; gap: 7px; align-items: center; font-family: var(--display); font-size: 10px; letter-spacing: .24em; color: var(--faint); text-transform: uppercase; }
+.cap .k i { width: 7px; height: 7px; border-radius: 50%; }
+.cap h2 { margin: 12px 0 0; font-family: var(--display); font-weight: 400; font-size: 25px; line-height: 1.22; letter-spacing: .03em; }
+.cap .by { margin: 7px 0 0; font-size: 19px; font-style: italic; color: var(--muted); }
+.cap .d { margin: 18px 0 0; font-size: 19px; line-height: 1.42; color: #dfe4ee; }
+.cap .link { margin-top: 20px; padding-top: 13px; border-top: 1px solid rgb(255 255 255 / .1); }
+.cap .link h4 { margin: 0 0 7px; font-family: var(--display); font-weight: 400; font-size: 10px; letter-spacing: .24em; color: var(--faint); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chips span { padding: 2px 9px 3px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass); font-size: 15px; color: var(--aether); }
+.go { all: unset; display: block; margin-top: 16px; font-size: 17px; font-style: italic; color: var(--gold); cursor: pointer; }
+.go:hover { text-decoration: underline; text-underline-offset: 3px; }
+.close { all: unset; position: fixed; right: 28px; top: 16px; z-index: 41; padding: 6px 13px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass); font-family: var(--display); font-size: 10px; letter-spacing: .18em; color: var(--muted); cursor: pointer; }
+.close:hover { color: var(--aether); }
+.tn { margin: 16px 0 0; padding-left: 13px; border-left: 1px solid var(--gold-dim); font-size: 18px; line-height: 1.34; font-style: italic; color: #f3e3b3; }
+.hint { position: fixed; left: 44px; bottom: 15px; font-size: 14px; font-style: italic; color: var(--faint); }
+
+#lift { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 9; }
+.lt { all: unset; position: absolute; left: 0; top: 0; pointer-events: auto; cursor: pointer; will-change: transform; background: #0b0718; box-shadow: 0 0 0 1.5px rgb(252 211 77 / .72), 0 14px 38px rgb(5 2 15 / .72); }
+.lt img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.lt:hover { box-shadow: 0 0 0 2px #fde68a, 0 18px 44px rgb(5 2 15 / .8); }
+.lt.focus { box-shadow: 0 0 0 2px #fcd34d, 0 0 0 7px rgb(5 2 15 / .82), 0 0 0 8px rgb(252 211 77 / .42), 0 34px 80px rgb(0 0 0 / .78); }
+.rail button.turn { width: auto; padding: 7px 14px; margin-bottom: 20px; border-radius: 999px; border: 1px solid rgb(252 211 77 / .5); background: rgb(252 211 77 / .08); font-family: var(--display); font-size: 10px; letter-spacing: .18em; color: var(--gold); }
+.rail button.turn::before { display: none; }
+.rail button.turn:hover { background: rgb(252 211 77 / .16); color: #fde68a; }
+#back-note { margin: -8px 0 18px; }
+.back .only-front, .pulled .only-front, .pulled .turn { display: none; }
+.pulled .rail { opacity: 1; pointer-events: auto; }
+#web-card .wt { margin: 0; font-family: var(--display); font-size: 15px; line-height: 1.28; letter-spacing: .03em; }
+#web-card .wa { margin: 5px 0 13px; font-size: 15.5px; font-style: italic; color: var(--muted); }
+#thread-list button { font-size: 15.5px; }
+#thread-list button i { font-style: normal; font-size: 13px; color: var(--faint); margin-left: 5px; }
+#thread-list p { margin: 0; font-size: 15px; font-style: italic; color: var(--faint); }
+.rail button.act { margin-top: 13px; padding-left: 0; font-size: 16.5px; font-style: italic; color: var(--gold); }
+.rail button.act::before { display: none; }
+.rail button.act.dim { margin-top: 3px; font-size: 14.5px; color: var(--faint); }
+#card .th { margin-top: 4px; font-size: 13.5px; font-style: italic; color: rgb(252 211 77 / .82); }
+
+@media (max-width: 1080px) {
+  .head, .rail { display: none; }
+  #plate { grid-template-columns: 1fr; grid-template-rows: 55% 1fr; padding: 60px 16px 16px; gap: 16px; }
+}
+</style>
+</head>
+<body>
+<canvas id="sky"></canvas>
+<canvas id="gl"></canvas>
+<div id="hires"></div>
+<canvas id="thread"></canvas>
+<div id="labels"></div>
+<div id="lift"></div>
+
+<header class="bar">
+  <div class="brand">ICARUS ATLAS</div>
+  <nav class="doors" aria-label="Doors">
+    <a>GALAXY</a><a>LANDS</a><a>MYTHS</a><a class="on">ART</a>
+  </nav>
+  <div class="meta">⌘K</div>
+</header>
+
+<section class="head">
+  <h1>The Loom</h1>
+  <p>Every image of the myths the atlas holds, woven into one cloth.</p>
+  <div class="legend">
+    <b>→</b><span>the order of the myths</span>
+    <b>↓</b><span>the order of the hands</span>
+    <b>↗</b><span>pull a work to lift its web</span>
+  </div>
+  <div class="foot">
+    <span class="fn">Ovid, Metamorphoses 6.129–131</span>
+    Arachne wove the crimes of heaven, and Athena tore the cloth.<sup>1</sup> Everything here is the mending.
+  </div>
+</section>
+
+<aside class="rail" id="rail">
+  <button class="turn" id="turn">TURN THE CLOTH</button>
+  <div class="note" id="back-note"></div>
+  <section class="only-front">
+    <h2>PATTERNS</h2>
+    <div id="patterns"></div>
+    <div class="note" id="note"></div>
+  </section>
+  <section class="only-front">
+    <h2>MEDIUM</h2>
+    <div id="media"></div>
+  </section>
+  <section id="web-card" hidden>
+    <h2>THREADS OF THIS WORK</h2>
+    <p class="wt"></p>
+    <p class="wa"></p>
+    <div id="thread-list"></div>
+    <button class="act" id="web-open">Open the plate</button>
+    <button class="act dim" id="web-release">Let go · Esc</button>
+  </section>
+</aside>
+
+<div class="progress" id="progress"></div>
+
+<div id="card" aria-hidden="true">
+  <img alt="">
+  <div class="k"><i></i><span></span></div>
+  <h3></h3>
+  <p></p>
+  <div class="th"></div>
+</div>
+
+<section id="plate" aria-hidden="true">
+  <div class="frame"><img alt=""></div>
+  <div class="cap">
+    <div class="k"><i></i><span></span></div>
+    <h2></h2>
+    <p class="by"></p>
+    <p class="d"></p>
+    <p class="tn" id="plate-note" hidden></p>
+    <div class="link" id="plate-links"></div>
+    <button class="go" id="plate-go" hidden></button>
+  </div>
+  <button class="close" id="plate-close">CLOSE · ESC</button>
+  <div class="hint">← → the neighbouring hands</div>
+</section>
+
+<script src="shared/loom-works.js"></script>
+<script src="shared/loom-links.js"></script>
+<script>
+'use strict';
+const L = window.LOOM;
+const { W, H, tearTop, tearRows } = L;
+const FRINGE = 8;              // warp length below the cloth, in cells
+const CELL_PX = 64;            // atlas pixels per cell
+const WARP_PER_CELL = 3;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const dpr = Math.min(devicePixelRatio || 1, 2);
+
+const works = L.works.map((w, i) => ({
+  i, x: w[0], r: w[1], w: w[2], h: w[3], saga: w[4], medium: w[5], y: w[6], title: w[7], artist: w[8], year: w[9], url: w[10], desc: w[11], figures: w[12], stories: w[13],
+}));
+const cellOf = new Int32Array(W * H).fill(-1);
+for (const t of works) for (let i = 0; i < t.w; i++) for (let j = 0; j < t.h; j++) cellOf[(t.r + j) * W + t.x + i] = t.i;
+for (const t of works) t.links = window.LOOM_LINKS.links[t.i];
+Object.assign(L.names, window.LOOM_LINKS.names);
+const hexRgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+const sagaRgb = L.sagas.map((s) => hexRgb(s.color));
+
+// One thread per figure: it falls through the cloth from that figure's oldest work to its newest.
+const threadList = (() => {
+  const byFigure = new Map();
+  for (const t of works) for (const f of t.links) {
+    if (!byFigure.has(f)) byFigure.set(f, []);
+    byFigure.get(f).push(t.i);
+  }
+  const list = [];
+  for (const [id, members] of [...byFigure].sort((a, b) => a[0].localeCompare(b[0]))) {
+    if (members.length < 2) continue;
+    members.sort((a, b) => works[a].y - works[b].y || a - b);
+    const tally = new Map();
+    for (const i of members) tally.set(works[i].saga, (tally.get(works[i].saga) ?? 0) + 1);
+    const saga = [...tally].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0][0];
+    list.push({ id, name: L.names[id] ?? id, works: members, saga, crosses: members.some((i) => works[i].y < 500) && members.some((i) => works[i].y >= 1400) });
+  }
+  return list;
+})();
+const threadsOf = works.map(() => []);
+threadList.forEach((th, n) => th.works.forEach((i) => threadsOf[i].push(n)));
+
+// ---- image URLs: the data keeps Commons paths, thumbs use the standard steps
+function thumb(t, px) {
+  const base = 'https://upload.wikimedia.org/wikipedia/commons/';
+  if (t.url.startsWith('thumb/')) return base + t.url.replace(/\/\d+px-/, `/${px}px-`);
+  const m = t.url.match(/^([0-9a-f]\/[0-9a-f]{2})\/(.+)$/);
+  if (!m) return base + t.url;
+  const ext = m[2].toLowerCase().split('.').pop();
+  const name = ext === 'tif' || ext === 'tiff' ? `lossy-page1-${px}px-${m[2]}.jpg` : `${px}px-${m[2]}`;
+  return `${base}thumb/${m[1]}/${m[2]}/${name}`;
+}
+
+// ---- GL
+const canvas = document.getElementById('gl');
+const gl = canvas.getContext('webgl2', { antialias: true, alpha: false, powerPreference: 'high-performance' });
+if (!gl) throw new Error('WebGL2 is required for this mockup');
+
+function program(vs, fs) {
+  const compile = (type, src) => {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s));
+    return s;
+  };
+  const p = gl.createProgram();
+  gl.attachShader(p, compile(gl.VERTEX_SHADER, vs));
+  gl.attachShader(p, compile(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(p);
+  if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
+  const u = new Proxy({}, { get: (c, n) => c[n] ?? (c[n] = gl.getUniformLocation(p, n)) });
+  return { p, u };
+}
+
+// The hanging cloth: pinned at the beam, freer the further it falls.
+const CLOTH_GLSL = `
+uniform float uTime, uAmp;
+uniform vec2 uGrid;
+float wave(vec2 p, float t) {
+  return sin(p.x * .17 + t * .46 + sin(p.y * .10 + t * .19) * 1.5) * .62
+       + sin(p.x * .061 - t * .29 + p.y * .047) * 1.1
+       + sin(p.y * .21 + t * .37 + p.x * .029) * .34;
+}
+float pin(float y) { float v = clamp(y / uGrid.y, 0., 1.5); return smoothstep(0., .34, v) * (.55 + v * .75); }
+vec3 drape(vec2 p) {
+  float k = pin(p.y) * uAmp;
+  float sway = sin(uTime * .23) * .55 + sin(uTime * .11 + 1.3) * .35;
+  return vec3(p.x + sway * k * .7, p.y + k * .12 * sin(p.x * .13 + uTime * .3), wave(p, uTime) * k);
+}
+`;
+
+const cloth = program(`#version 300 es
+precision highp float;
+in vec2 aPos;
+uniform mat4 uVP;
+uniform vec3 uHover;
+${CLOTH_GLSL}
+out vec2 vG; out vec3 vN;
+void main() {
+  vec3 q = drape(aPos);
+  float e = .35;
+  vec3 dx = drape(aPos + vec2(e, 0.)) - q;
+  vec3 dy = drape(aPos + vec2(0., e)) - q;
+  vN = normalize(cross(dx, dy));
+  if (aPos.y > 0. && aPos.y < uGrid.y) {
+    vec2 d = aPos - uHover.xy;
+    q.z += uHover.z * 1.5 * exp(-dot(d, d) / 7.);
+  }
+  vG = aPos;
+  gl_Position = uVP * vec4(q.x, -q.y, q.z, 1.);
+}`, `#version 300 es
+precision highp float;
+precision highp sampler2D;
+uniform sampler2D uTex, uCells, uCrack;
+uniform vec2 uGrid;
+uniform float uWeave, uThreads, uTime;
+in vec2 vG; in vec3 vN;
+out vec4 o;
+float luma(vec3 c) { return dot(c, vec3(.2126, .7152, .0722)); }
+void main() {
+  // the gold beam the warp hangs from
+  if (vG.y < 0.) {
+    float t = (vG.y + 1.28) / .46;
+    if (t < 0. || t > 1.) discard;
+    float s = 1. - pow(abs(t * 2. - 1.), 2.);
+    float cap = min(vG.x + 1.5, uGrid.x + 1.5 - vG.x);
+    if (cap < 0.) discard;
+    vec3 gold = mix(vec3(.30, .20, .07), vec3(.99, .84, .44), pow(s, 1.6));
+    gold += vec3(.25, .2, .1) * pow(s, 14.);
+    o = vec4(gold, 1.);
+    return;
+  }
+  if (vG.x < 0. || vG.x > uGrid.x || vG.y > uGrid.y) discard;
+  vec2 uv = vG / uGrid;
+  vec4 s = texture(uTex, uv);
+  if (s.a < .5) discard;
+  ivec2 id = ivec2(clamp(vG, vec2(0.), uGrid - 1.));
+  vec4 cell = texelFetch(uCells, id, 0);
+  float b = cell.a * 1.6;
+  if (!gl_FrontFacing) {
+    // the reverse of a tapestry: the picture is only a rumour, the thread is the subject
+    vec3 back = vec3(.034, .024, .07) + luma(s.rgb) * vec3(.05, .046, .08);
+    back += cell.rgb * .032 * (.5 + .5 * sin(vG.x * 6.2832 * ${WARP_PER_CELL}.));
+    back += vec3(1., .78, .36) * texture(uCrack, uv).r * .9;
+    o = vec4(back, 1.);
+    return;
+  }
+
+  // from a distance whites turn to old wool and shadows deepen; up close the
+  // painting is left exactly as it is
+  vec3 c = s.rgb;
+  float L = luma(c);
+  vec3 wool = mix(c, c * .74, smoothstep(.55, 1., L));
+  wool = pow(max(wool, vec3(0.)), vec3(1.04));
+  wool = mix(vec3(luma(wool)), wool, 1.42);
+  wool *= vec3(1.06, .96, .82);
+  c = mix(c, wool, uWeave);
+
+  // the warp shows between the tiles, the weft ribs across them
+  float anchor = mod(floor(cell.r * 255. + .5), 2.);
+  float warpLine = smoothstep(.435, .5, abs(fract(vG.x) - .5)) * (1. - anchor);
+  c = mix(c, cell.rgb * .92, warpLine * uWeave * .55);
+  c *= 1. + uWeave * (.03 * sin(vG.y * 6.2832 * uThreads) + .018 * sin(vG.x * 6.2832 * uThreads));
+
+  // light on the fold
+  vec3 n = normalize(vN);
+  float l = dot(n, normalize(vec3(-.42, .55, .72)));
+  c *= mix(1., .66 + .56 * l, uWeave * .92);
+
+  // dimmed tiles sink into the warp, they do not vanish
+  vec3 ghost = vec3(luma(c)) * vec3(.26, .24, .34);
+  c = mix(ghost, c, smoothstep(.06, .92, b)) * max(1., b);
+
+  // the tear: bare warp in the gap, gold along the mend
+  vec4 k = texture(uCrack, uv);
+  if (k.g > .01) {
+    float warp = .5 + .5 * sin(vG.x * 6.2832 * ${WARP_PER_CELL}.);
+    vec3 bare = cell.rgb * (.1 + .34 * warp * warp) + vec3(.012, .008, .03);
+    c = mix(c, bare, k.g);
+  }
+  float shimmer = .86 + .14 * sin(vG.x * .8 - uTime * .9);
+  c += vec3(1., .78, .36) * k.r * 1.25 * shimmer;
+  o = vec4(c, 1.);
+}`);
+
+const warp = program(`#version 300 es
+precision highp float;
+in vec3 aPos;    // x at the beam, x at the weight, t along the thread
+in vec3 aColor;
+uniform mat4 uVP;
+uniform float uTop, uBottom, uRows;
+${CLOTH_GLSL}
+out vec3 vC; out float vT;
+void main() {
+  float y = mix(uTop, uBottom, aPos.z);
+  float gather = smoothstep(uRows + .4, uBottom - .4, y);
+  float x = mix(aPos.x, aPos.y, gather * gather * (3. - 2. * gather));
+  vec3 q = drape(vec2(x, y));
+  float rest = 1. - smoothstep(uRows + 3., uBottom - .2, y);
+  q.xy = mix(vec2(x, y), q.xy, rest);
+  q.z *= rest;
+  vC = aColor; vT = aPos.z;
+  gl_Position = uVP * vec4(q.x, -q.y, q.z - .02, 1.);
+}`, `#version 300 es
+precision highp float;
+in vec3 vC; in float vT;
+uniform float uAlpha;
+out vec4 o;
+void main() { o = vec4(vC * 1.3, uAlpha); }`);
+
+const sky = program(`#version 300 es
+out vec2 vUv;
+void main() {
+  vec2 p = vec2((gl_VertexID << 1) & 2, gl_VertexID & 2);
+  vUv = vec2(p.x, 1. - p.y);
+  gl_Position = vec4(p * 2. - 1., 0., 1.);
+}`, `#version 300 es
+precision mediump float;
+uniform sampler2D uTex;
+in vec2 vUv;
+out vec4 o;
+void main() { o = texture(uTex, vUv); }`);
+const skyTex = gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D, skyTex);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+const emptyVao = gl.createVertexArray();
+
+// A stitch: one ribbon arcing out of the cloth between two works of a thread.
+const stitch = program(`#version 300 es
+precision highp float;
+precision highp sampler2D;
+in vec2 aStrip;      // t along the stitch, side of the ribbon
+in vec4 aEnds;       // the two works' cells
+in vec4 aIds;        // work a, work b, thread, place along the thread
+in vec4 aColor;      // saga colour, seed
+uniform mat4 uVP;
+uniform vec3 uEye;
+uniform sampler2D uLift, uState;
+uniform float uPx, uFace;
+${CLOTH_GLSL}
+out vec3 vC; out float vA; out float vS;
+vec3 at(float t, vec2 a, vec2 b, float za, float zb, float h) {
+  float e = t * t * (3. - 2. * t);
+  vec3 q = drape(vec2(mix(a.x, b.x, e), mix(a.y, b.y, t)));
+  return vec3(q.x, -q.y, q.z + (mix(za, zb, t) + sin(t * 3.14159265) * h) * uFace);
+}
+void main() {
+  vec4 la = texelFetch(uLift, ivec2(int(aIds.x), 0), 0);
+  vec4 lb = texelFetch(uLift, ivec2(int(aIds.y), 0), 0);
+  vec4 st = texelFetch(uState, ivec2(int(aIds.z), 0), 0);
+  vec2 a = aEnds.xy + la.xy, b = aEnds.zw + lb.xy;
+  float h = (.9 + min(length(b - a), 34.) * .3) * (.7 + .6 * aColor.a);
+  vec3 p = at(aStrip.x, a, b, la.z, lb.z, h);
+  vec3 n = at(aStrip.x + .015, a, b, la.z, lb.z, h);
+  vec3 side = normalize(cross(n - p, uEye - p));
+  gl_Position = uVP * vec4(p + side * aStrip.y * st.g * 3.2 * uPx, 1.);
+  // a thread is brightest at the work it is held by and dies away along its length
+  float reach = st.a * 255.;
+  float fade = reach > 254. ? 1. : clamp(1.25 - abs(aIds.w + .5 - st.b * 255.) / reach, 0., 1.);
+  vC = aColor.rgb; vA = st.r * fade; vS = aStrip.y;
+}`, `#version 300 es
+precision highp float;
+in vec3 vC; in float vA; in float vS;
+out vec4 o;
+void main() {
+  float a = (1. - smoothstep(.25, 1., abs(vS))) * vA;
+  o = vec4(vC * a * 1.25, 1.);
+}`);
+
+// cloth mesh: fine enough for the folds, extended upward to carry the beam
+const SEG = 3;
+const mesh = (() => {
+  const nx = (W + 3) * SEG, ny = (H + 2) * SEG;
+  const pos = new Float32Array((nx + 1) * (ny + 1) * 2);
+  let n = 0;
+  for (let j = 0; j <= ny; j++) for (let i = 0; i <= nx; i++) { pos[n++] = -1.5 + i / SEG; pos[n++] = -2 + j / SEG; }
+  const idx = new Uint32Array(nx * ny * 6);
+  n = 0;
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const a = j * (nx + 1) + i, b = a + 1, c = a + nx + 1, d = c + 1;
+    idx[n++] = a; idx[n++] = c; idx[n++] = b; idx[n++] = b; idx[n++] = c; idx[n++] = d;
+  }
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  const vb = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, vb);
+  gl.bufferData(gl.ARRAY_BUFFER, pos, gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(cloth.p, 'aPos');
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  const ib = gl.createBuffer();
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ib);
+  gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, idx, gl.STATIC_DRAW);
+  gl.bindVertexArray(null);
+  return { vao, count: idx.length };
+})();
+
+// warp threads: straight down the cloth, gathering to one weight per saga below it
+const weightX = L.sagas.map((_, i) => 1.5 + (i + .5) * (W - 3) / L.sagas.length);
+const threads = (() => {
+  // every saga gets its bundle, sized by its share of the works
+  const total = W * WARP_PER_CELL, floor = 5;
+  const spare = total - floor * L.sagas.length;
+  const per = L.sagas.map((g) => floor + Math.round(spare * g.count / works.length));
+  while (per.reduce((a, b) => a + b, 0) > total) per[per.indexOf(Math.max(...per))]--;
+  while (per.reduce((a, b) => a + b, 0) < total) per[per.indexOf(Math.max(...per))]++;
+  const sorted = per.flatMap((n, s) => Array(n).fill(s));
+  const STEPS = 34, count = W * WARP_PER_CELL;
+  const data = new Float32Array(count * STEPS * 2 * 6);
+  let n = 0;
+  for (let i = 0; i < count; i++) {
+    const x = (i + .5) / WARP_PER_CELL;
+    const saga = sorted[i];
+    const c = sagaRgb[saga].map((v) => v / 255 * .9);
+    const end = weightX[saga] + (Math.sin(i * 12.9898) * .5) * .5;
+    for (let s = 0; s < STEPS; s++) for (const t of [s / STEPS, (s + 1) / STEPS]) {
+      data[n++] = x; data[n++] = end; data[n++] = t; data[n++] = c[0]; data[n++] = c[1]; data[n++] = c[2];
+    }
+  }
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  const vb = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, vb);
+  gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(warp.p, 'aPos'), col = gl.getAttribLocation(warp.p, 'aColor');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 3, gl.FLOAT, false, 24, 0);
+  gl.enableVertexAttribArray(col);
+  gl.vertexAttribPointer(col, 3, gl.FLOAT, false, 24, 12);
+  gl.bindVertexArray(null);
+  return { vao, count: n / 6 };
+})();
+
+const stitches = (() => {
+  const edges = [];
+  threadList.forEach((th, n) => {
+    const c = sagaRgb[th.saga].map((v) => v / 255);
+    for (let i = 1; i < th.works.length; i++) {
+      const a = works[th.works[i - 1]], b = works[th.works[i]];
+      const seed = Math.abs(Math.sin(n * 12.9898 + i * 78.233) * 43758.5453) % 1;
+      edges.push(a.x + a.w / 2, a.r + a.h / 2, b.x + b.w / 2, b.r + b.h / 2, a.i, b.i, n, i - 1, c[0], c[1], c[2], seed);
+    }
+  });
+  const STEPS = 15, strip = [];
+  for (let i = 0; i <= STEPS; i++) strip.push(i / STEPS, -1, i / STEPS, 1);
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  const sb = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, sb);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(strip), gl.STATIC_DRAW);
+  const aStrip = gl.getAttribLocation(stitch.p, 'aStrip');
+  gl.enableVertexAttribArray(aStrip);
+  gl.vertexAttribPointer(aStrip, 2, gl.FLOAT, false, 0, 0);
+  const ib = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, ib);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(edges), gl.STATIC_DRAW);
+  for (const [name, size, offset] of [['aEnds', 4, 0], ['aIds', 4, 16], ['aColor', 4, 32]]) {
+    const loc = gl.getAttribLocation(stitch.p, name);
+    gl.enableVertexAttribArray(loc);
+    gl.vertexAttribPointer(loc, size, gl.FLOAT, false, 48, offset);
+    gl.vertexAttribDivisor(loc, 1);
+  }
+  gl.bindVertexArray(null);
+  return { vao, verts: (STEPS + 1) * 2, count: edges.length / 12 };
+})();
+const dataTexture = (internal, format, type, data, width) => {
+  const tex = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, tex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, internal, width, 1, 0, format, type, data);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  return tex;
+};
+const liftData = new Float32Array(works.length * 4);     // per work: dx, dy, z out of the cloth
+const liftTex = dataTexture(gl.RGBA32F, gl.RGBA, gl.FLOAT, liftData, works.length);
+const stateData = new Uint8Array(threadList.length * 4); // per thread: alpha, width
+const stateTex = dataTexture(gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, stateData, threadList.length);
+const stateCur = new Float32Array(threadList.length * 2);
+const stateGoal = new Float32Array(threadList.length * 2);
+let stateTouched = false;
+
+// ---- atlas: the cloth itself, one texture, each cell a place in it
+const atlas = gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D, atlas);
+gl.texStorage2D(gl.TEXTURE_2D, Math.floor(Math.log2(Math.max(W, H) * CELL_PX)) + 1, gl.RGBA8, W * CELL_PX, H * CELL_PX);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+const aniso = gl.getExtension('EXT_texture_filter_anisotropic');
+if (aniso) gl.texParameterf(gl.TEXTURE_2D, aniso.TEXTURE_MAX_ANISOTROPY_EXT, 8);
+gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+let mipDirty = false;
+
+const scratch = document.createElement('canvas');
+const sx = scratch.getContext('2d', { willReadFrequently: false });
+function weaveTile(t, img) {
+  const w = t.w * CELL_PX, h = t.h * CELL_PX;
+  scratch.width = w; scratch.height = h;
+  sx.fillStyle = '#0b0718';
+  sx.fillRect(0, 0, w, h);
+  if (img) {
+    const iw = img.naturalWidth, ih = img.naturalHeight;
+    const s = Math.max(w / iw, h / ih);
+    const dw = iw * s, dh = ih * s;
+    sx.imageSmoothingQuality = 'high';
+    sx.drawImage(img, (w - dw) / 2, (h - dh) * .42, dw, dh);
+  } else {
+    const c = sagaRgb[t.saga];
+    sx.fillStyle = `rgb(${c[0] * .12 | 0} ${c[1] * .12 | 0} ${c[2] * .12 | 0})`;
+    sx.fillRect(0, 0, w, h);
+  }
+  if (t.w > 1) {
+    sx.strokeStyle = 'rgba(252,211,77,.72)';
+    sx.lineWidth = 2.5;
+    sx.strokeRect(1.5, 1.5, w - 3, h - 3);
+  }
+  gl.bindTexture(gl.TEXTURE_2D, atlas);
+  gl.texSubImage2D(gl.TEXTURE_2D, 0, t.x * CELL_PX, t.r * CELL_PX, gl.RGBA, gl.UNSIGNED_BYTE, scratch);
+  mipDirty = true;
+}
+// the bare gap of the tear is cloth too, so the warp shows through it
+function weaveGap() {
+  const w = W * CELL_PX, h = 8;
+  const c = document.createElement('canvas');
+  c.width = W; c.height = 1;
+  const x = c.getContext('2d');
+  x.fillStyle = '#05020f';
+  x.fillRect(0, 0, W, 1);
+  gl.bindTexture(gl.TEXTURE_2D, atlas);
+  for (let r = tearTop; r < tearTop + tearRows; r++) for (let i = 0; i < W; i++) {
+    if (cellOf[r * W + i] >= 0) continue;
+    scratch.width = CELL_PX; scratch.height = CELL_PX;
+    sx.fillStyle = '#05020f';
+    sx.fillRect(0, 0, CELL_PX, CELL_PX);
+    gl.texSubImage2D(gl.TEXTURE_2D, 0, i * CELL_PX, r * CELL_PX, gl.RGBA, gl.UNSIGNED_BYTE, scratch);
+  }
+  // single holes on the torn rim of antiquity read as wear, not as missing data
+  for (let r = tearTop - 2; r < tearTop; r++) for (let i = 0; i < W; i++) {
+    if (r < 0 || cellOf[r * W + i] >= 0) continue;
+    scratch.width = CELL_PX; scratch.height = CELL_PX;
+    sx.fillStyle = '#05020f';
+    sx.fillRect(0, 0, CELL_PX, CELL_PX);
+    gl.texSubImage2D(gl.TEXTURE_2D, 0, i * CELL_PX, r * CELL_PX, gl.RGBA, gl.UNSIGNED_BYTE, scratch);
+  }
+  mipDirty = true;
+}
+
+// per-cell state: saga colour and brightness, eased on the CPU
+const cellData = new Uint8Array(W * H * 4);
+const cellTex = gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D, cellTex);
+gl.texStorage2D(gl.TEXTURE_2D, 1, gl.RGBA8, W, H);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+const level = new Float32Array(works.length);          // current brightness, 0..1.6 mapped to 0..1
+const target = new Float32Array(works.length).fill(.625);
+const woven = new Uint8Array(works.length);
+for (let r = 0; r < H; r++) for (let x = 0; x < W; x++) {
+  const id = cellOf[r * W + x];
+  let saga = id >= 0 ? works[id].saga : -1;
+  for (let up = r; saga < 0 && up >= 0; up--) { const k = cellOf[up * W + x]; if (k >= 0) saga = works[k].saga; }
+  for (let dn = r; saga < 0 && dn < H; dn++) { const k = cellOf[dn * W + x]; if (k >= 0) saga = works[k].saga; }
+  const c = sagaRgb[saga < 0 ? 0 : saga];
+  const o = (r * W + x) * 4;
+  cellData[o] = (c[0] & 254) | (id >= 0 && works[id].w > 1 ? 1 : 0); cellData[o + 1] = c[1]; cellData[o + 2] = c[2]; cellData[o + 3] = 0;
+}
+function pushCells() {
+  gl.bindTexture(gl.TEXTURE_2D, cellTex);
+  gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, W, H, gl.RGBA, gl.UNSIGNED_BYTE, cellData);
+}
+
+// ---- the tear: seeded, so the mend always falls the same way
+const crackTex = gl.createTexture();
+(function drawTear() {
+  let seed = 7;
+  const rand = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const CW = 2560, k = CW / W, CH = Math.round(H * k);
+  const c = document.createElement('canvas');
+  c.width = CW; c.height = CH;
+  const x = c.getContext('2d');
+  x.fillStyle = '#000';
+  x.fillRect(0, 0, CW, CH);
+  const edge = (base, amp) => {
+    const pts = [];
+    let y = 0, v = 0;
+    for (let i = 0; i <= W * 2; i++) {
+      v = v * .72 + (rand() - .5) * .62;
+      y = (y + v) * .86;
+      pts.push([i / 2 * k, (base + Math.max(-amp, Math.min(amp, y))) * k]);
+    }
+    return pts;
+  };
+  const top = edge(tearTop - .1, .5);
+  const bot = edge(tearTop + tearRows + .1, .5);
+  x.fillStyle = '#0f0';
+  x.beginPath();
+  top.forEach(([a, b], i) => (i ? x.lineTo(a, b) : x.moveTo(a, b)));
+  [...bot].reverse().forEach(([a, b]) => x.lineTo(a, b));
+  x.closePath();
+  x.fill();
+  // the empty cells on the torn rim are bare warp too
+  x.fillStyle = '#0f0';
+  for (let r = Math.max(0, tearTop - 2); r < tearTop; r++) for (let i = 0; i < W; i++) if (cellOf[r * W + i] < 0) x.fillRect(i * k, r * k, k + 1, k + 1);
+  // the survivors of the gap are not torn
+  x.fillStyle = '#000';
+  for (const t of works) if (t.y >= 500 && t.y < 1400) x.fillRect(t.x * k, t.r * k, k, k);
+
+  x.globalCompositeOperation = 'lighter';
+  const stroke = (pts, width, alpha, blur) => {
+    x.strokeStyle = `rgba(255,0,0,${alpha})`;
+    x.shadowColor = 'rgba(255,0,0,.9)';
+    x.shadowBlur = blur;
+    x.lineWidth = width;
+    x.lineJoin = 'round';
+    x.beginPath();
+    pts.forEach(([a, b], i) => (i ? x.lineTo(a, b) : x.moveTo(a, b)));
+    x.stroke();
+  };
+  for (const e of [top, bot]) {
+    stroke(e, 2.2, .95, 9);
+    // kintsugi veins running off the rim into the cloth
+    for (let n = 0; n < 7; n++) {
+      const p = e[2 + Math.floor(rand() * (e.length - 4))];
+      const dir = e === top ? -1 : 1;
+      const vein = [p];
+      let a = p[0], b = p[1], d = (rand() - .5) * 1.1;
+      const len = 2 + Math.floor(rand() * 4);
+      for (let i = 0; i < len; i++) {
+        d += (rand() - .5) * .9;
+        a += Math.sin(d) * k * .55;
+        b += dir * Math.cos(d) * k * .5;
+        vein.push([a, b]);
+      }
+      stroke(vein, 1.1, .6, 4);
+    }
+  }
+  // sutures: the gold stitches holding the two halves together
+  x.shadowBlur = 5;
+  for (let i = 3; i < W; i += 6) {
+    stroke([top[i * 2], bot[i * 2 + 1]], 1.2, .7, 4);
+  }
+  gl.bindTexture(gl.TEXTURE_2D, crackTex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, c);
+  gl.generateMipmap(gl.TEXTURE_2D);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+})();
+
+// ---- camera: scale is CSS px per cell at the cloth, (x, y) the cell it looks at; yaw and pitch orbit that cell
+let vw = innerWidth, vh = innerHeight;
+const FOV = 30 * Math.PI / 180;
+const cam = { x: W / 2, y: H / 2, s: 16, yaw: 0, pitch: 0 };
+const goal = { x: W / 2, y: H / 2, s: 16, yaw: 0, pitch: 0 };
+let home = { x: W / 2, y: H / 2, s: 16 };
+const par = { x: 0, y: 0 }, mouse = { x: 0, y: 0 };
+let view = null, face = 0;
+
+function fitHome() {
+  const narrow = vw <= 1080;
+  const left = narrow ? 16 : 236, right = narrow ? 16 : 214, top = 74, bottom = 24;
+  const availW = vw - left - right, availH = vh - top - bottom;
+  const above = 1.6, below = 3.5;
+  const worldH = above + H + FRINGE + below;
+  const s = Math.min(availW / W, availH / worldH);
+  const spare = availH - worldH * s;
+  home = { x: W / 2 - (left + availW / 2 - vw / 2) / s, y: -above + (vh / 2 - top - spare / 2) / s, s };
+}
+function resize() {
+  vw = innerWidth; vh = innerHeight;
+  canvas.width = Math.round(vw * dpr); canvas.height = Math.round(vh * dpr);
+  threadCanvas.width = Math.round(vw * dpr); threadCanvas.height = Math.round(vh * dpr);
+  fitHome();
+}
+const sub = (a, b) => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+const crossV = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
+const unit = (a) => { const l = Math.hypot(a[0], a[1], a[2]); return [a[0] / l, a[1] / l, a[2] / l]; };
+
+function solveView() {
+  const tan = Math.tan(FOV / 2), dist = (vh / 2) / (cam.s * tan);
+  const yaw = cam.yaw + par.x, pitch = cam.pitch + par.y;
+  const T = [cam.x, -cam.y, 0];
+  const E = [T[0] + dist * Math.sin(yaw) * Math.cos(pitch), T[1] + dist * Math.sin(pitch), dist * Math.cos(yaw) * Math.cos(pitch)];
+  const F = unit(sub(T, E)), R = unit(crossV(F, [0, 1, 0])), U = crossV(R, F);
+  const f = 1 / tan, asp = vw / vh, near = dist * .05, far = dist * 4;
+  const a = (far + near) / (near - far), b = 2 * far * near / (near - far);
+  const ex = -dot(R, E), ey = -dot(U, E), ez = dot(F, E);
+  view = {
+    E, F, R, U, f, tan, asp,
+    vp: new Float32Array([
+      f / asp * R[0], f * U[0], -a * F[0], F[0],
+      f / asp * R[1], f * U[1], -a * F[1], F[1],
+      f / asp * R[2], f * U[2], -a * F[2], F[2],
+      f / asp * ex, f * ey, a * ez + b, -ez,
+    ]),
+  };
+}
+function toScreen(x, y, z = 0) {
+  const m = view.vp, Y = -y;
+  const cx = m[0] * x + m[4] * Y + m[8] * z + m[12];
+  const cy = m[1] * x + m[5] * Y + m[9] * z + m[13];
+  const cw = m[3] * x + m[7] * Y + m[11] * z + m[15];
+  return [(cx / cw * .5 + .5) * vw, (.5 - cy / cw * .5) * vh, view.f * vh / 2 / cw];
+}
+function toWorld(px, py) {
+  const nx = (px / vw) * 2 - 1, ny = 1 - (py / vh) * 2;
+  const { E, F, R, U, tan, asp } = view;
+  const d = [0, 1, 2].map((i) => F[i] + R[i] * nx * tan * asp + U[i] * ny * tan);
+  const t = -E[2] / d[2];
+  return [E[0] + d[0] * t, -(E[1] + d[1] * t)];
+}
+function goHome() {
+  goal.x = face ? W - home.x : home.x;
+  goal.y = home.y;
+  goal.s = face ? home.s * .88 : home.s;
+}
+const BACK_YAW = Math.PI - .34, BACK_PITCH = .05;
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+const smooth = (a, b, v) => { const t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+
+// ---- interaction state
+let time = 0, last = performance.now();
+let hoverId = -1, lift = 0, liftGoal = 0, hoverX = 0, hoverY = 0;
+let activeSaga = -1, peekSaga = -1, activeMedium = -1, activePattern = null;
+let plateId = -1, plateReturn = null;
+const web = { focus: -1, only: -1, reach: 8, peek: -1, items: new Map() };
+let threadStart = 0;
+
+function refreshTargets() {
+  const members = activePattern ? new Set([...activePattern.stops, ...activePattern.members]) : null;
+  const saga = peekSaga >= 0 ? peekSaga : activeSaga;
+  const near = web.focus >= 0 ? new Set((web.only >= 0 ? [web.only] : threadsOf[web.focus]).flatMap((n) => threadList[n].works)) : null;
+  for (const t of works) {
+    let v = .625; // 1.0 on the 0..1.6 scale
+    if (saga >= 0 && t.saga !== saga) v = .1;
+    if (activeMedium >= 0 && t.medium !== activeMedium) v = .1;
+    if (members && !members.has(t.i)) v = .1;
+    if (members && activePattern.stops.includes(t.i)) v = .78;
+    if (near) v = web.items.has(t.i) && !web.items.get(t.i).leaving ? .03 : near.has(t.i) ? .6 : .085;
+    target[t.i] = v;
+  }
+  refreshThreads();
+}
+function refreshThreads() {
+  const saga = peekSaga >= 0 ? peekSaga : activeSaga;
+  const focus = web.focus >= 0 ? web.focus : hoverId;
+  const lit = new Set(focus >= 0 ? threadsOf[focus] : []);
+  const pulled = web.focus >= 0;
+  threadList.forEach((th, n) => {
+    let a = 0, w = 0, at = 0, reach = 255;
+    if (face) {
+      a = th.crosses ? .34 : .11;
+      w = th.crosses ? .2 : .15;
+      if (saga >= 0 && th.saga !== saga) a = .025;
+      if (focus >= 0 && !lit.has(n)) a *= .3;
+    }
+    if (lit.has(n)) {
+      const only = web.only < 0 || web.only === n;
+      a = only ? 1 : .2;
+      w = only ? (pulled ? .4 : .26) : .18;
+      at = th.works.indexOf(focus);
+      // held by one work a thread shows its neighbours, not its whole length
+      reach = web.only === n ? 255 : pulled ? web.reach : 3;
+    }
+    stateGoal[n * 2] = a;
+    stateGoal[n * 2 + 1] = w;
+    stateData[n * 4 + 2] = Math.min(at, 255);
+    stateData[n * 4 + 3] = reach;
+  });
+  stateTouched = true;
+}
+function setCell(t, v) {
+  const a = Math.round(v * 255);
+  for (let j = 0; j < t.h; j++) for (let i = 0; i < t.w; i++) cellData[((t.r + j) * W + t.x + i) * 4 + 3] = a;
+}
+
+// hi-res layer: when a tile is big enough to be read, the real image takes over
+const hires = document.getElementById('hires');
+const pool = new Map();
+function syncHires() {
+  const size = cam.s;
+  if (size < 58 || plateId >= 0 || web.focus >= 0 || face) {
+    for (const [, img] of pool) img.remove();
+    pool.clear();
+    return;
+  }
+  const [x0, y0] = toWorld(0, 0), [x1, y1] = toWorld(vw, vh);
+  const keep = new Set();
+  for (const t of works) {
+    if (t.x + t.w < x0 || t.x > x1 || t.r + t.h < y0 || t.r > y1) continue;
+    keep.add(t.i);
+    let img = pool.get(t.i);
+    if (!img) {
+      img = new Image();
+      img.alt = '';
+      img.decoding = 'async';
+      img.dataset.px = '0';
+      img.onload = () => img.classList.add('in');
+      hires.append(img);
+      pool.set(t.i, img);
+    }
+    const want = size * Math.max(t.w, t.h) * dpr > 280 ? 500 : 250;
+    if (Number(img.dataset.px) < want) { img.dataset.px = want; img.src = thumb(t, want); }
+    const [sx0, sy0] = toScreen(t.x, t.r);
+    const gap = Math.max(1, size * .012);
+    img.style.width = `${t.w * size - gap * 2}px`;
+    img.style.height = `${t.h * size - gap * 2}px`;
+    img.style.transform = `translate(${sx0 + gap}px, ${sy0 + gap}px)`;
+  }
+  for (const [i, img] of pool) if (!keep.has(i)) { img.remove(); pool.delete(i); }
+}
+
+// ---- labels
+const labels = document.getElementById('labels');
+const eraEls = L.eras.map((e, i) => {
+  const d = document.createElement('div');
+  d.className = 'era' + (e.label === 'The tear' ? ' tear' : '');
+  d.innerHTML = `<b>${e.label.toUpperCase()}</b>${e.sub ? `<i>${e.sub}</i>` : ''}`;
+  labels.append(d);
+  return d;
+});
+// two eras can start on one row (1400s and 1500s): nudge so they stack
+const eraRows = L.eras.map((e) => e.label === 'The tear' ? tearTop + tearRows / 2 : e.row);
+for (let i = 1; i < eraRows.length; i++) if (eraRows[i] <= eraRows[i - 1] + 1) eraRows[i] = eraRows[i - 1] + 1.15;
+
+const weightEls = L.sagas.map((s, i) => {
+  const b = document.createElement('button');
+  b.className = 'weight';
+  b.setAttribute('aria-label', `${s.short}, ${s.count} works`);
+  b.innerHTML = `<svg width="22" height="30" viewBox="0 0 22 30" aria-hidden="true">
+    <path d="M7.4 1.4 h7.2 L19.6 27 Q20 28.6 18.4 28.6 H3.6 Q2 28.6 2.4 27 Z" fill="#6f3a22" stroke="${s.color}" stroke-width="1.05"/>
+    <path d="M7.4 1.4 h7.2 L19.6 27 Q20 28.6 18.4 28.6 H3.6 Q2 28.6 2.4 27 Z" fill="url(#clay)" opacity=".55"/>
+    <circle cx="11" cy="6.2" r="1.45" fill="#05020f" stroke="${s.color}" stroke-width=".7"/>
+  </svg><span>${s.short}</span><em>${s.count}</em>`;
+  b.onmouseenter = () => { peekSaga = i; refreshTargets(); };
+  b.onmouseleave = () => { peekSaga = -1; refreshTargets(); };
+  b.onclick = () => {
+    activeSaga = activeSaga === i ? -1 : i;
+    weightEls.forEach((el, k) => el.classList.toggle('on', k === activeSaga));
+    refreshTargets();
+  };
+  labels.append(b);
+  return b;
+});
+labels.insertAdjacentHTML('afterbegin', `<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="clay" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c98a5e"/><stop offset="1" stop-color="#2a130b"/></linearGradient></defs></svg>`);
+
+function syncLabels() {
+  const narrow = vw <= 1080;
+  const nowY = vh / 2;
+  const fade = clamp((Math.abs(Math.cos(cam.yaw)) - .55) / .3, 0, 1);
+  let now = -1, best = Infinity;
+  eraEls.forEach((el, i) => {
+    const [ax, ay] = toScreen(0, eraRows[i]), [bx, by] = toScreen(W, eraRows[i]);
+    const left = ax < bx ? ax : bx, y = ax < bx ? ay : by;
+    if (y <= nowY && nowY - y < best) { best = nowY - y; now = i; }
+    const w = el._w ?? (el._w = el.offsetWidth);
+    const x = Math.max(left - 14 - w, 10);
+    el.style.transform = `translate(${x}px, ${y - 8}px)`;
+    el.style.opacity = narrow ? 0 : fade * (cam.s < home.s * 1.4 ? 1 : (y > 66 && y < vh - 8 ? 1 : 0));
+  });
+  eraEls.forEach((el, i) => el.classList.toggle('now', cam.s > home.s * 1.4 && i === now));
+  const wy = H + FRINGE;
+  weightEls.forEach((el, i) => {
+    const [x, y] = toScreen(weightX[i], wy);
+    el.style.transform = `translate(${x}px, ${y}px) scale(${Math.min(1.2, Math.max(.82, cam.s / 15.5))})`;
+    el.style.transformOrigin = '50% 0';
+    el.style.visibility = y > vh + 10 ? 'hidden' : 'visible';
+    el.style.opacity = fade * (web.focus >= 0 ? .45 : 1);
+  });
+  document.body.classList.toggle('quiet', cam.s > home.s * 1.9);
+}
+
+// ---- gold thread: a pattern stitched through time, drawn in screen space
+const threadCanvas = document.getElementById('thread');
+const tc = threadCanvas.getContext('2d');
+function centre(i) { const t = works[i]; return [t.x + t.w / 2, t.r + t.h / 2]; }
+function drawThread(now) {
+  tc.setTransform(dpr, 0, 0, dpr, 0, 0);
+  tc.clearRect(0, 0, vw, vh);
+  if (loading.front >= 0) {
+    const [x0, y0] = toScreen(0, loading.front + 1), [x1, y1] = toScreen(W, loading.front + 1);
+    tc.strokeStyle = 'rgba(252,211,77,.75)';
+    tc.shadowColor = 'rgba(252,211,77,.8)';
+    tc.shadowBlur = 12;
+    tc.lineWidth = 1.2;
+    tc.beginPath(); tc.moveTo(x0, y0); tc.lineTo(x1, y1); tc.stroke();
+    tc.shadowBlur = 0;
+  }
+  if (!activePattern || plateId >= 0 || face || web.focus >= 0) return;
+  const pts = activePattern.stops.map((i) => toScreen(...centre(i)));
+  if (pts.length < 2) return;
+  const p = Math.min(1, (now - threadStart) / 1400);
+  const ease = 1 - Math.pow(1 - p, 3);
+  const path = new Path2D();
+  path.moveTo(...pts[0]);
+  for (let i = 0; i < pts.length - 1; i++) {
+    const [x0, y0] = pts[i], [x1, y1] = pts[i + 1];
+    const mid = (y1 - y0) * .55;
+    path.bezierCurveTo(x0, y0 + mid, x1, y1 - mid, x1, y1);
+  }
+  const length = pts.reduce((n, q, i) => (i ? n + Math.hypot(q[0] - pts[i - 1][0], q[1] - pts[i - 1][1]) * 1.4 : 0), 0);
+  tc.setLineDash([length * ease, length]);
+  tc.strokeStyle = 'rgba(252,211,77,.28)';
+  tc.lineWidth = 6;
+  tc.stroke(path);
+  tc.strokeStyle = '#fde68a';
+  tc.shadowColor = 'rgba(252,211,77,.95)';
+  tc.shadowBlur = 10;
+  tc.lineWidth = 1.5;
+  tc.stroke(path);
+  tc.setLineDash([]);
+  const reached = Math.ceil(ease * pts.length);
+  pts.slice(0, reached).forEach(([x, y]) => {
+    tc.beginPath(); tc.arc(x, y, 3.4, 0, 6.3); tc.fillStyle = '#05020f'; tc.fill();
+    tc.lineWidth = 1.5; tc.strokeStyle = '#fde68a'; tc.stroke();
+  });
+  tc.shadowBlur = 0;
+}
+
+// ---- loading: the cloth grows from the beam downward, as on a warp-weighted loom
+const loading = { front: 0, done: 0, failed: 0, active: 0, nextAt: 0, retry: [] };
+const queue = [...works].sort((a, b) => a.r - b.r || a.x - b.x);
+let cursor = 0;
+function pump() {
+  const now = performance.now();
+  if (now < loading.nextAt || loading.active >= 6) return;
+  const t = cursor < queue.length ? queue[cursor++] : loading.retry.shift();
+  if (t) fetchTile(t);
+}
+function fetchTile(t) {
+  loading.active++;
+  const started = performance.now();
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  const settle = () => {
+    woven[t.i] = 1;
+    loading.done++;
+    if (cursor < queue.length) loading.front = queue[cursor].r;
+    const el = document.getElementById('progress');
+    el.textContent = `${loading.done.toLocaleString('en')} of ${works.length.toLocaleString('en')} woven`;
+    if (loading.done === works.length) { loading.front = -1; el.style.opacity = 0; }
+  };
+  img.onload = () => {
+    loading.active--;
+    // cache hits may run fast; fresh thumbnails are paced to stay under Commons' limit
+    loading.nextAt = performance.now() + (performance.now() - started < 120 ? 4 : 44);
+    weaveTile(t, img);
+    settle();
+  };
+  img.onerror = () => {
+    loading.active--;
+    t.tries = (t.tries || 0) + 1;
+    loading.nextAt = performance.now() + 1400;
+    if (t.tries < 4) { loading.retry.push(t); return; }
+    weaveTile(t, null);
+    loading.failed++;
+    settle();
+  };
+  img.src = thumb(t, t.w > 1 ? 330 : 120);
+}
+setInterval(pump, 8);
+
+// ---- frame
+function frame(now) {
+  const dt = Math.min(.05, (now - last) / 1000);
+  last = now;
+  if (!reduced) time += dt;
+  const ease = 1 - Math.exp(-dt * 7.5);
+  const moving = Math.abs(goal.s - cam.s) > .002 * cam.s || Math.abs(goal.x - cam.x) > .002 || Math.abs(goal.y - cam.y) > .002;
+  cam.x += (goal.x - cam.x) * ease;
+  cam.y += (goal.y - cam.y) * ease;
+  // zoom in log space so the flight feels even from cloth to canvas
+  cam.s = Math.exp(Math.log(cam.s) + (Math.log(goal.s) - Math.log(cam.s)) * ease);
+  cam.yaw += (goal.yaw - cam.yaw) * (1 - Math.exp(-dt * 3.1));
+  cam.pitch += (goal.pitch - cam.pitch) * (1 - Math.exp(-dt * 3.6));
+  // the cloth answers the pointer a little; a pulled web answers it more
+  const calm = 1 - smooth(20, 46, cam.s);
+  const ampX = plateId >= 0 || reduced ? 0 : web.focus >= 0 ? .2 : .06 * calm;
+  const ampY = plateId >= 0 || reduced ? 0 : web.focus >= 0 ? .13 : .04 * calm;
+  const follow = 1 - Math.exp(-dt * 2.8);
+  par.x += (mouse.x * ampX - par.x) * follow;
+  par.y += (-mouse.y * ampY - par.y) * follow;
+  solveView();
+  lift += (liftGoal - lift) * (1 - Math.exp(-dt * 14));
+
+  let threadsDirty = false;
+  const threadRate = 1 - Math.exp(-dt * 8);
+  for (let k = 0; k < stateCur.length; k++) {
+    const d = stateGoal[k] - stateCur[k];
+    if (Math.abs(d) < .003) continue;
+    stateCur[k] += d * threadRate;
+    stateData[(k >> 1) * 4 + (k & 1)] = Math.round(clamp(stateCur[k], 0, 1) * 255);
+    threadsDirty = true;
+  }
+  if (threadsDirty || stateTouched) {
+    stateTouched = false;
+    gl.bindTexture(gl.TEXTURE_2D, stateTex);
+    gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, threadList.length, 1, gl.RGBA, gl.UNSIGNED_BYTE, stateData);
+  }
+
+  let liftDirty = false;
+  const liftRate = 1 - Math.exp(-dt * 5.5);
+  for (const [id, it] of web.items) {
+    it.k += ((it.leaving ? 0 : 1) - it.k) * liftRate;
+    const o = id * 4;
+    if (it.leaving && it.k < .015) {
+      liftData[o] = liftData[o + 1] = liftData[o + 2] = 0;
+      it.el.remove();
+      web.items.delete(id);
+    } else {
+      liftData[o] = it.dx * it.k; liftData[o + 1] = it.dy * it.k; liftData[o + 2] = it.z * it.k;
+    }
+    liftDirty = true;
+  }
+  if (liftDirty) {
+    gl.bindTexture(gl.TEXTURE_2D, liftTex);
+    gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, works.length, 1, gl.RGBA, gl.FLOAT, liftData);
+  }
+
+  let dirty = false;
+  const rate = 1 - Math.exp(-dt * 9);
+  for (const t of works) {
+    if (!woven[t.i]) continue;
+    const goalLevel = t.i === hoverId ? Math.max(target[t.i], .86) : target[t.i];
+    const d = goalLevel - level[t.i];
+    if (Math.abs(d) < .004) continue;
+    level[t.i] += d * rate;
+    setCell(t, level[t.i]);
+    dirty = true;
+  }
+  if (dirty) pushCells();
+
+  if (mipDirty && now - (frame.lastMip || 0) > 450) {
+    gl.bindTexture(gl.TEXTURE_2D, atlas);
+    gl.generateMipmap(gl.TEXTURE_2D);
+    mipDirty = false;
+    frame.lastMip = now;
+  }
+
+  gl.viewport(0, 0, canvas.width, canvas.height);
+  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+  gl.disable(gl.DEPTH_TEST);
+  gl.useProgram(sky.p);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, skyTex);
+  gl.uniform1i(sky.u.uTex, 0);
+  gl.bindVertexArray(emptyVao);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
+  gl.bindVertexArray(null);
+  gl.enable(gl.DEPTH_TEST);
+
+  const px = cam.s;
+  const amp = 1 - smooth(26, 62, px);
+  const weaveAmount = 1 - smooth(30, 84, px);
+  const vp = view.vp;
+
+  gl.useProgram(warp.p);
+  gl.uniformMatrix4fv(warp.u.uVP, false, vp);
+  gl.uniform1f(warp.u.uTime, time);
+  gl.uniform1f(warp.u.uAmp, amp);
+  gl.uniform2f(warp.u.uGrid, W, H);
+  gl.uniform1f(warp.u.uTop, -1.05);
+  gl.uniform1f(warp.u.uBottom, H + FRINGE + .35);
+  gl.uniform1f(warp.u.uRows, H);
+  gl.uniform1f(warp.u.uAlpha, .5);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+  gl.bindVertexArray(threads.vao);
+  gl.drawArrays(gl.LINES, 0, threads.count);
+  gl.disable(gl.BLEND);
+
+  gl.useProgram(cloth.p);
+  gl.uniformMatrix4fv(cloth.u.uVP, false, vp);
+  gl.uniform1f(cloth.u.uTime, time);
+  gl.uniform1f(cloth.u.uAmp, amp);
+  gl.uniform2f(cloth.u.uGrid, W, H);
+  gl.uniform3f(cloth.u.uHover, hoverX, hoverY, lift * amp);
+  gl.uniform1f(cloth.u.uWeave, weaveAmount);
+  gl.uniform1f(cloth.u.uThreads, dpr >= 1.5 ? 8 : 4);
+  gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, atlas); gl.uniform1i(cloth.u.uTex, 0);
+  gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, cellTex); gl.uniform1i(cloth.u.uCells, 1);
+  gl.activeTexture(gl.TEXTURE2); gl.bindTexture(gl.TEXTURE_2D, crackTex); gl.uniform1i(cloth.u.uCrack, 2);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindVertexArray(mesh.vao);
+  gl.drawElements(gl.TRIANGLES, mesh.count, gl.UNSIGNED_INT, 0);
+  gl.bindVertexArray(null);
+
+  gl.useProgram(stitch.p);
+  gl.uniformMatrix4fv(stitch.u.uVP, false, vp);
+  gl.uniform3f(stitch.u.uEye, view.E[0], view.E[1], view.E[2]);
+  gl.uniform1f(stitch.u.uTime, time);
+  gl.uniform1f(stitch.u.uAmp, amp);
+  gl.uniform2f(stitch.u.uGrid, W, H);
+  gl.uniform1f(stitch.u.uPx, 1 / cam.s);
+  gl.uniform1f(stitch.u.uFace, Math.cos(cam.yaw));
+  gl.activeTexture(gl.TEXTURE3); gl.bindTexture(gl.TEXTURE_2D, liftTex); gl.uniform1i(stitch.u.uLift, 3);
+  gl.activeTexture(gl.TEXTURE4); gl.bindTexture(gl.TEXTURE_2D, stateTex); gl.uniform1i(stitch.u.uState, 4);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE);
+  gl.depthMask(false);
+  gl.bindVertexArray(stitches.vao);
+  gl.drawArraysInstanced(gl.TRIANGLE_STRIP, 0, stitches.verts, stitches.count);
+  gl.bindVertexArray(null);
+  gl.depthMask(true);
+  gl.disable(gl.BLEND);
+
+  if (moving || frame.first !== false) { syncHires(); frame.first = false; }
+  syncLabels();
+  syncLifted();
+  drawThread(now);
+  requestAnimationFrame(frame);
+}
+
+// ---- pointer
+const card = document.getElementById('card');
+const cardImg = card.querySelector('img');
+let drag = null;
+function hitTest(px, py) {
+  const [x, y] = toWorld(px, py);
+  if (x < 0 || y < 0 || x >= W || y >= H) return -1;
+  return cellOf[Math.floor(y) * W + Math.floor(x)];
+}
+const eraOf = (y) => (y < -480 ? 'Archaic' : y < -323 ? 'Classical' : y < -31 ? 'Hellenistic' : y < 500 ? 'Roman' : y < 1400 ? 'Medieval' : `${Math.floor(y / 100) * 100}s`);
+function showCard(t, px, py) {
+  card.querySelector('h3').textContent = t.title;
+  card.querySelector('p').textContent = `${t.artist}, ${t.year}`;
+  card.querySelector('.k span').textContent = `${L.sagas[t.saga].short} · ${eraOf(t.y)}`;
+  card.querySelector('.k i').style.background = L.sagas[t.saga].color;
+  card.querySelector('.th').textContent = t.links.map((f) => L.names[f]).filter(Boolean).slice(0, 5).join(' · ');
+  const src = thumb(t, 250);
+  if (cardImg.dataset.src !== src) { cardImg.dataset.src = src; cardImg.src = src; }
+  card.classList.add('in');
+  const w = 248, h = card.offsetHeight;
+  const x = px + 20 + w > vw - 12 ? px - w - 20 : px + 20;
+  const y = Math.min(Math.max(66, py - h / 2), vh - h - 12);
+  card.style.transform = `translate(${x}px, ${y}px)`;
+}
+addEventListener('pointermove', (e) => { mouse.x = (e.clientX / vw) * 2 - 1; mouse.y = (e.clientY / vh) * 2 - 1; });
+canvas.addEventListener('pointerdown', (e) => {
+  canvas.setPointerCapture(e.pointerId);
+  drag = { x: e.clientX, y: e.clientY, cx: goal.x, cy: goal.y, yaw: goal.yaw, pitch: goal.pitch, moved: 0 };
+  card.classList.remove('in');
+});
+canvas.addEventListener('pointermove', (e) => {
+  if (drag) {
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    drag.moved = Math.max(drag.moved, Math.hypot(dx, dy));
+    if (drag.moved > 4) canvas.classList.add('dragging');
+    if (web.focus >= 0 || face) {
+      const mid = face ? Math.PI : 0;
+      goal.yaw = clamp(drag.yaw + dx * .0042, mid - .95, mid + .95);
+      goal.pitch = clamp(drag.pitch + dy * .0032, -.5, .5);
+      return;
+    }
+    const sign = Math.cos(cam.yaw) < 0 ? -1 : 1;
+    goal.x = drag.cx - sign * dx / cam.s;
+    goal.y = drag.cy - dy / cam.s;
+    return;
+  }
+  const id = hitTest(e.clientX, e.clientY);
+  if (id !== hoverId) { hoverId = id; refreshThreads(); }
+  canvas.classList.toggle('on-tile', id >= 0);
+  if (id >= 0) {
+    const t = works[id];
+    hoverX = t.x + t.w / 2; hoverY = t.r + t.h / 2;
+    liftGoal = face ? 0 : 1;
+    showCard(t, e.clientX, e.clientY);
+  } else {
+    liftGoal = 0;
+    card.classList.remove('in');
+  }
+});
+canvas.addEventListener('pointerleave', () => { hoverId = -1; liftGoal = 0; card.classList.remove('in'); refreshThreads(); });
+canvas.addEventListener('pointerup', (e) => {
+  const clicked = drag && drag.moved <= 4;
+  drag = null;
+  canvas.classList.remove('dragging');
+  if (!clicked) return;
+  const id = hitTest(e.clientX, e.clientY);
+  if (id < 0) { release(); return; }
+  if (cam.s > 46 && !face) { openPlate(id); return; }
+  if (face) setFace(0);
+  pull(id);
+});
+const onWheel = (e) => {
+  e.preventDefault();
+  const pinch = e.ctrlKey ? 3.2 : 1;
+  const factor = Math.exp(-e.deltaY * .0017 * pinch);
+  const s = Math.min(web.focus >= 0 ? 42 : 460, Math.max(home.s * .8, goal.s * factor));
+  const sign = Math.cos(cam.yaw) < 0 ? -1 : 1;
+  const dx = e.clientX - vw / 2, dy = e.clientY - vh / 2;
+  goal.x += sign * (dx / goal.s - dx / s);
+  goal.y += dy / goal.s - dy / s;
+  goal.s = s;
+  card.classList.remove('in');
+};
+canvas.addEventListener('wheel', onWheel, { passive: false });
+document.getElementById('lift').addEventListener('wheel', onWheel, { passive: false });
+canvas.addEventListener('dblclick', () => { release(); goHome(); });
+
+// ---- the web: pulling a work lifts it out of the cloth, and its threads bring their nearest neighbours with it
+const LIFT_MAX = 24;
+const liftLayer = document.getElementById('lift');
+const webCard = document.getElementById('web-card');
+const threadListEl = document.getElementById('thread-list');
+const hash01 = (n) => Math.abs(Math.sin(n * 91.17 + 3.3) * 24634.6345) % 1;
+const cxOf = (i) => works[i].x + works[i].w / 2;
+const cyOf = (i) => works[i].r + works[i].h / 2;
+
+function pull(id, along = -1) {
+  web.focus = id;
+  web.only = along;
+  hoverId = -1;
+  liftGoal = 0;
+  card.classList.remove('in');
+  const ths = along >= 0 ? [along] : threadsOf[id];
+  const chosen = new Set();
+  for (let ring = 1; chosen.size < LIFT_MAX && ring < 150; ring++) {
+    web.reach = ring + 1;
+    for (const n of ths) {
+      const list = threadList[n].works, at = list.indexOf(id);
+      for (const k of [at - ring, at + ring]) {
+        const w = list[k];
+        if (w !== undefined && w !== id && chosen.size < LIFT_MAX) chosen.add(w);
+      }
+    }
+  }
+  const items = [id, ...chosen].map((w) => ({ w, x: cxOf(w), y: cyOf(w), size: w === id ? 11.5 : 4.4 }));
+  // spread the lifted works so they read, keeping each near its place on the cloth
+  for (let pass = 0; pass < 70; pass++) {
+    for (let a = 0; a < items.length; a++) for (let b = a + 1; b < items.length; b++) {
+      const p = items[a], q = items[b];
+      const need = (p.size + q.size) * .58;
+      let dx = q.x - p.x, dy = q.y - p.y;
+      let d = Math.hypot(dx, dy);
+      if (d >= need) continue;
+      if (d < .01) { dx = hash01(a + b) - .5; dy = .5; d = Math.hypot(dx, dy); }
+      const push = (need - d) / d * .5;
+      const pw = p.w === id ? .15 : 1, qw = 1;
+      p.x -= dx * push * pw; p.y -= dy * push * pw;
+      q.x += dx * push * qw; q.y += dy * push * qw;
+    }
+    for (const p of items) { p.x = clamp(p.x, 4, W - 4); p.y = clamp(p.y, 3, H - 3); }
+  }
+  for (const it of web.items.values()) it.leaving = true;
+  for (const a of items) {
+    let it = web.items.get(a.w);
+    if (!it) {
+      const el = document.createElement('button');
+      el.className = 'lt';
+      el.setAttribute('aria-label', works[a.w].title);
+      const img = new Image();
+      img.alt = '';
+      img.onload = () => { it.ar = clamp(img.naturalWidth / img.naturalHeight, .62, 1.7); };
+      el.append(img);
+      el.onmouseenter = (e) => { showCard(works[a.w], e.clientX, e.clientY); };
+      el.onmouseleave = () => card.classList.remove('in');
+      el.onclick = () => { card.classList.remove('in'); if (web.focus === a.w) openPlate(a.w); else pull(a.w); };
+      liftLayer.append(el);
+      it = { el, img, k: 0, ar: 1, px: 0, dx: 0, dy: 0, z: 0, size: 1 };
+      web.items.set(a.w, it);
+    }
+    const shared = threadsOf[a.w].filter((n) => threadsOf[id].includes(n)).length;
+    it.leaving = false;
+    it.dx = a.x - cxOf(a.w);
+    it.dy = a.y - cyOf(a.w);
+    it.z = a.w === id ? 26 : 9 + 6 * Math.max(0, shared - 1) + 7 * hash01(a.w);
+    it.size = a.size;
+    it.el.classList.toggle('focus', a.w === id);
+    const want = a.w === id ? 500 : 250;
+    if (it.px < want) { it.px = want; it.img.src = thumb(works[a.w], want); }
+  }
+  goal.x = home.x + (cxOf(id) - W / 2) * .22;
+  goal.y = home.y + (cyOf(id) - H / 2) * .2;
+  goal.s = home.s;
+  goal.yaw = cxOf(id) < W / 2 ? .17 : -.17;
+  goal.pitch = .09;
+  document.body.classList.add('pulled');
+  fillWebCard(id);
+  refreshTargets();
+}
+function release() {
+  if (web.focus < 0) return;
+  web.focus = -1;
+  web.only = -1;
+  for (const it of web.items.values()) it.leaving = true;
+  goal.yaw = face ? BACK_YAW : 0;
+  goal.pitch = face ? BACK_PITCH : 0;
+  document.body.classList.remove('pulled');
+  webCard.hidden = true;
+  card.classList.remove('in');
+  refreshTargets();
+  goHome();
+}
+function fillWebCard(id) {
+  const t = works[id];
+  webCard.hidden = false;
+  webCard.querySelector('.wt').textContent = t.title;
+  webCard.querySelector('.wa').textContent = `${t.artist}, ${t.year}`;
+  threadListEl.textContent = '';
+  const mine = [...threadsOf[id]].sort((a, b) => threadList[b].works.length - threadList[a].works.length);
+  if (!mine.length) threadListEl.innerHTML = '<p>No other work shares a figure with this one yet.</p>';
+  for (const n of mine) {
+    const b = document.createElement('button');
+    b.innerHTML = `${threadList[n].name}<i>${threadList[n].works.length}</i>`;
+    b.classList.toggle('on', web.only === n);
+    b.onmouseenter = () => { if (web.only < 0) { web.peek = n; web.only = n; refreshThreads(); } };
+    b.onmouseleave = () => { if (web.peek === n) { web.peek = -1; web.only = -1; refreshThreads(); } };
+    b.onclick = () => { web.peek = -1; pull(id, web.only === n && !b.classList.contains('on') ? n : b.classList.contains('on') ? -1 : n); };
+    threadListEl.append(b);
+  }
+}
+function syncLifted() {
+  for (const [id, it] of web.items) {
+    const t = works[id];
+    const base = Math.max(t.w, t.h);
+    const [px, py, scale] = toScreen(cxOf(id) + it.dx * it.k, cyOf(id) + it.dy * it.k, it.z * it.k);
+    const size = (base + (it.size - base) * it.k) * scale;
+    const root = Math.sqrt(it.ar);
+    const w = size * root, h = size / root;
+    it.el.style.width = `${w}px`;
+    it.el.style.height = `${h}px`;
+    it.el.style.transform = `translate(${px - w / 2}px, ${py - h / 2}px)`;
+    it.el.style.opacity = Math.min(1, it.k * 2.4);
+    it.el.style.zIndex = Math.round(it.z * 10);
+  }
+}
+document.getElementById('web-open').onclick = () => { if (web.focus >= 0) openPlate(web.focus); };
+document.getElementById('web-release').onclick = release;
+
+// ---- turning the cloth: the back of a tapestry is where its threads are
+const turnBtn = document.getElementById('turn');
+const backNote = document.getElementById('back-note');
+const crossing = threadList.filter((th) => th.crosses).length;
+function setFace(f) {
+  release();
+  face = f;
+  goal.yaw = f ? BACK_YAW : 0;
+  goal.pitch = f ? BACK_PITCH : 0;
+  document.body.classList.toggle('back', Boolean(f));
+  turnBtn.textContent = f ? 'TURN IT BACK' : 'TURN THE CLOTH';
+  backNote.textContent = f ? `The back of the cloth: ${threadList.length} figures, ${stitches.count.toLocaleString('en')} stitches. Each thread falls from a figure's oldest work to its newest. The bright ones cross the tear: ${crossing} figures seen on both sides of it.` : '';
+  backNote.classList.toggle('in', Boolean(f));
+  if (f && activePattern) setPattern(null);
+  refreshTargets();
+  goHome();
+}
+turnBtn.onclick = () => setFace(face ? 0 : 1);
+
+// ---- plate
+const plate = document.getElementById('plate');
+const plateImg = plate.querySelector('.frame img');
+const plateGo = document.getElementById('plate-go');
+const arachneThread = L.patterns.find((p) => p.id === 'first-scene');
+function fillPlate(t) {
+  plateImg.onerror = () => { plateImg.onerror = null; plateImg.src = `https://upload.wikimedia.org/wikipedia/commons/${t.url}`; };
+  plateImg.src = thumb(t, 960);
+  plate.querySelector('.cap .k span').textContent = `${L.sagas[t.saga].short} · ${eraOf(t.y)} · ${L.media[t.medium]}`;
+  plate.querySelector('.cap .k i').style.background = L.sagas[t.saga].color;
+  plate.querySelector('.cap h2').textContent = t.title;
+  plate.querySelector('.cap .by').textContent = `${t.artist}, ${t.year}`;
+  plate.querySelector('.cap .d').textContent = t.desc;
+  const figs = t.figures.map((f) => L.names[f]).filter(Boolean);
+  const tales = t.stories.map((f) => L.names[f]).filter(Boolean);
+  const chips = (items) => `<div class="chips">${items.map((n) => `<span>${n}</span>`).join('')}</div>`;
+  document.getElementById('plate-links').innerHTML =
+    (figs.length ? `<h4>STARS IN THIS WORK</h4>${chips(figs)}` : '') +
+    (tales.length ? `<h4 style="margin-top:12px">THE MYTH</h4>${chips(tales)}` : '');
+  const stop = arachneThread.stops.indexOf(t.i);
+  const onThread = stop >= 0;
+  const noteEl = document.getElementById('plate-note');
+  noteEl.hidden = !onThread;
+  noteEl.textContent = onThread ? arachneThread.notes[stop] : '';
+  plateGo.hidden = !onThread;
+  if (onThread) plateGo.textContent = "Follow Arachne's first scene through the cloth";
+}
+function openPlate(id) {
+  plateId = id;
+  const t = works[id];
+  if (web.focus < 0) {
+    plateReturn ??= { ...goal };
+    Object.assign(goal, { x: t.x + t.w / 2, y: t.r + t.h / 2, s: Math.min(vh * .62 / Math.max(t.w, t.h), 380) });
+  }
+  card.classList.remove('in');
+  fillPlate(t);
+  setTimeout(() => plate.classList.add('in'), web.focus >= 0 ? 60 : 420);
+  plate.setAttribute('aria-hidden', 'false');
+}
+function closePlate() {
+  if (plateId < 0) return;
+  plateId = -1;
+  plate.classList.remove('in');
+  plate.setAttribute('aria-hidden', 'true');
+  if (plateReturn) { Object.assign(goal, plateReturn); plateReturn = null; }
+}
+function neighbour(step) {
+  const list = [...works].sort((a, b) => a.y - b.y || a.i - b.i);
+  const at = list.findIndex((t) => t.i === plateId);
+  const t = list[(at + step + list.length) % list.length];
+  plateId = t.i;
+  fillPlate(t);
+}
+document.getElementById('plate-close').onclick = closePlate;
+plateGo.onclick = () => { closePlate(); release(); setPattern(arachneThread.id); };
+addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { if (plateId >= 0) closePlate(); else if (web.focus >= 0) release(); else if (activePattern) setPattern(null); else goHome(); }
+  if (e.key === 't' && plateId < 0) setFace(face ? 0 : 1);
+  if (plateId >= 0 && e.key === 'ArrowRight') neighbour(1);
+  if (plateId >= 0 && e.key === 'ArrowLeft') neighbour(-1);
+});
+
+// ---- rail
+const note = document.getElementById('note');
+function setPattern(id) {
+  activePattern = id ? L.patterns.find((p) => p.id === id) : null;
+  document.querySelectorAll('#patterns button').forEach((b) => b.classList.toggle('on', b.dataset.id === id));
+  note.textContent = activePattern ? activePattern.note : '';
+  note.classList.toggle('in', Boolean(activePattern));
+  threadStart = performance.now();
+  refreshTargets();
+  goHome();
+}
+const patternsEl = document.getElementById('patterns');
+for (const p of L.patterns) {
+  const b = document.createElement('button');
+  b.textContent = p.name;
+  b.dataset.id = p.id;
+  b.onclick = () => setPattern(activePattern?.id === p.id ? null : p.id);
+  patternsEl.append(b);
+}
+const mediaEl = document.getElementById('media');
+L.media.forEach((m, i) => {
+  const b = document.createElement('button');
+  b.textContent = m;
+  b.onclick = () => {
+    activeMedium = activeMedium === i ? -1 : i;
+    [...mediaEl.children].forEach((el, k) => el.classList.toggle('on', k === activeMedium));
+    refreshTargets();
+  };
+  mediaEl.append(b);
+});
+
+// ---- sky, once
+function paintSky() {
+  const c = document.getElementById('sky');
+  c.width = Math.round(vw * dpr); c.height = Math.round(vh * dpr);
+  const x = c.getContext('2d');
+  x.scale(dpr, dpr);
+  const bg = x.createRadialGradient(vw * .5, vh * .46, 40, vw * .5, vh * .5, Math.max(vw, vh) * .72);
+  bg.addColorStop(0, '#191036');
+  bg.addColorStop(.42, '#0c0624');
+  bg.addColorStop(1, '#05020f');
+  x.fillStyle = bg;
+  x.fillRect(0, 0, vw, vh);
+  const haze = (cx, cy, r, color) => {
+    const g = x.createRadialGradient(cx, cy, 0, cx, cy, r);
+    g.addColorStop(0, color); g.addColorStop(1, 'rgba(0,0,0,0)');
+    x.fillStyle = g; x.fillRect(0, 0, vw, vh);
+  };
+  haze(vw * .2, vh * .28, vw * .34, 'rgba(124,77,255,.10)');
+  haze(vw * .84, vh * .72, vw * .3, 'rgba(255,64,129,.06)');
+  haze(vw * .52, vh * .96, vw * .34, 'rgba(252,211,77,.05)');
+  let seed = 11;
+  const rand = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 360; i++) {
+    const a = rand() * rand();
+    x.fillStyle = `rgba(226,232,255,${.08 + a * .7})`;
+    const r = .35 + rand() * rand() * 1.1;
+    x.beginPath(); x.arc(rand() * vw, rand() * vh, r, 0, 6.3); x.fill();
+  }
+  gl.bindTexture(gl.TEXTURE_2D, skyTex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, c);
+}
+
+addEventListener('resize', () => { resize(); paintSky(); goHome(); Object.assign(cam, { x: goal.x, y: goal.y, s: goal.s }); eraEls.forEach((el) => { el._w = undefined; }); frame.first = true; });
+
+// ---- boot
+resize();
+paintSky();
+Object.assign(cam, home);
+Object.assign(goal, home);
+solveView();
+weaveGap();
+// the gap cells must count as cloth from the first frame
+for (let r = 0; r < H; r++) for (let x = 0; x < W; x++) if (cellOf[r * W + x] < 0) cellData[(r * W + x) * 4 + 3] = 160;
+pushCells();
+pump();
+requestAnimationFrame(frame);
+
+// test hooks for the headless check
+window.__loom = { works, threadList, threadsOf, web, loading, cam, goal, home, setPattern, openPlate, closePlate, pull, release, setFace, toScreen, setSaga: (i) => { peekSaga = i; refreshTargets(); } };
+</script>
+</body>
+</html>
