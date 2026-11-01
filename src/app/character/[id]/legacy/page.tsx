@@ -5,6 +5,7 @@ import { loadStories } from '@/features/stories/load';
 import { storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterTabs } from '@/components/character/CharacterTabs';
 import { CharacterCodexPanel } from '@/components/character/CharacterCodexPanel';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import {
   CultureShelves,
@@ -100,6 +101,7 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
                       src={artwork.imageUrl}
                       title={artwork.title}
                       meta={`${artwork.artist}, ${artwork.year}`}
+                      credit={artwork.credit}
                       className="h-72 w-full shrink-0 md:h-80 md:w-[46%]"
                     />
                     <figcaption className="min-w-0 flex-1">
@@ -116,6 +118,7 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
                       <p className="mt-4 font-body text-[16.5px] leading-relaxed text-aether/90">
                         {artwork.description}
                       </p>
+                      <WorkCredit credit={artwork.credit} className="mt-3" />
                     </figcaption>
                   </figure>
                 ))}

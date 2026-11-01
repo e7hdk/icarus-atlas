@@ -384,7 +384,13 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
     bonds: keyBonds(id, context),
     quarrel: firstQuarrel(character, context),
     artwork: artwork
-      ? { title: artwork.title, artist: artwork.artist, year: artwork.year, imageUrl: artwork.imageUrl }
+      ? {
+          title: artwork.title,
+          artist: artwork.artist,
+          year: artwork.year,
+          imageUrl: artwork.imageUrl,
+          ...(artwork.credit ? { credit: artwork.credit } : {}),
+        }
       : null,
     storyId: story?.id ?? null,
     storyTitle: story?.title ?? null,

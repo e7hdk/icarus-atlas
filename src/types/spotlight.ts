@@ -225,7 +225,7 @@ export interface EphemerisCardPayload {
   /** First documented dispute told in this figure's own prose, when any. */
   quarrel: { topic: string; variants: ProemQuarrelVariant[] } | null;
   /** First Legacy artwork, when the figure carries culture data. */
-  artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl'> | null;
+  artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl' | 'credit'> | null;
   /** Earliest-era story whose cast lists the figure — the "Read the myth" door. */
   storyId: string | null;
   storyTitle: string | null;
@@ -244,7 +244,7 @@ export type ProemBeat =
   | { kind: 'thread'; steps: ProemBond[] }
   | { kind: 'telling'; summary: SourcedText[] }
   | { kind: 'quarrel'; variants: ProemQuarrelVariant[] }
-  | { kind: 'trace'; artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl'> };
+  | { kind: 'trace'; artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl' | 'credit'> };
 
 /** A staged telling, assembled purely from existing sourced data (D12). */
 export interface ProemScript {

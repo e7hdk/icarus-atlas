@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { WorkCredit } from '@/components/art/WorkCredit';
+import type { ImageCredit } from '@/types/art';
 
 /** Clickable image for the Legacy shelves (artworks and museum artifacts).
  *  Opens the piece full size in an Aether Nebula lightbox — deep-cosmos veil,
@@ -12,11 +14,13 @@ export function ArtworkImage({
   src,
   title,
   meta,
+  credit,
   className,
 }: {
   src: string;
   title: string;
   meta: string;
+  credit?: ImageCredit;
   className?: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -87,6 +91,7 @@ export function ArtworkImage({
               <figcaption className="text-center">
                 <p className="font-display text-lg tracking-[0.06em] text-aether">{title}</p>
                 <p className="mt-1 font-body text-[15px] italic text-aether-muted">{meta}</p>
+                <WorkCredit credit={credit} className="mt-1" />
               </figcaption>
             </figure>
           </div>,

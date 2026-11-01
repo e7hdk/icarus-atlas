@@ -7,6 +7,7 @@ import {
   cultureSchema,
   voyageSchema,
 } from '@/lib/schemas';
+import { withCredits } from '@/features/art/credits';
 import type { CultureData } from '@/types/character';
 import type { Story, StoryCrossing, Chronology, Voyage } from '@/types/story';
 
@@ -67,7 +68,7 @@ const STORY_CULTURE_DIR = path.join(process.cwd(), 'data', 'story-culture');
 export async function loadStoryCulture(id: string): Promise<CultureData | null> {
   try {
     const raw = JSON.parse(await readFile(path.join(STORY_CULTURE_DIR, `${id}.json`), 'utf-8'));
-    return cultureSchema.parse(raw) as CultureData;
+    return await withCredits(cultureSchema.parse(raw) as CultureData);
   } catch {
     return null;
   }

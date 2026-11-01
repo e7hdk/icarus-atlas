@@ -1,4 +1,5 @@
 import type { CultureData } from '@/types/character';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import { CultureShelves, cultureHasAnything } from '@/components/culture/CultureShelves';
 
@@ -25,6 +26,7 @@ export function StoryLegacy({ culture }: { culture: CultureData }) {
                 src={artwork.imageUrl}
                 title={artwork.title}
                 meta={`${artwork.artist}, ${artwork.year}`}
+                credit={artwork.credit}
                 className="h-72 w-full shrink-0 md:h-80 md:w-[44%]"
               />
               <figcaption className="min-w-0 flex-1">
@@ -39,6 +41,7 @@ export function StoryLegacy({ culture }: { culture: CultureData }) {
                 <p className="mt-4 font-body text-[17px] leading-relaxed text-aether/90">
                   {artwork.description}
                 </p>
+                <WorkCredit credit={artwork.credit} className="mt-3" />
               </figcaption>
             </figure>
           ))}

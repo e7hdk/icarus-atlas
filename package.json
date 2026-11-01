@@ -8,7 +8,7 @@
     "url": "https://github.com/e7hdk/icarus-atlas.git"
   },
   "scripts": {
-    "dev": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && next dev -p 3500",
+    "dev": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && pnpm bake-art && next dev -p 3500",
     "build:fonts": "tsx scripts/build-map-fonts.ts",
     "build:map": "tsx scripts/build-map-fonts.ts && tsx scripts/build-map-style.ts",
     "bake-layout": "tsx scripts/bake-layout.ts",
@@ -17,7 +17,7 @@
     "rivers:base": "tsx scripts/build-rivers-base.ts",
     "fetch:osm-rivers": "tsx scripts/fetch-osm-rivers.ts",
     "refresh:rivers": "tsx scripts/refresh-river-geometry.ts",
-    "build": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && next build",
+    "build": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && pnpm bake-art && next build",
     "start": "next start",
     "lint": "eslint",
     "dem:fetch": "pmtiles extract https://download.mapterhorn.com/planet.pmtiles public/geo/dem.pmtiles --bbox=-6,22,44,47 --maxzoom=9",
@@ -29,6 +29,9 @@
     "validate-data": "tsx scripts/validate-data.ts",
     "verify:culture": "tsx scripts/verify-culture-links.ts",
     "harvest:culture": "tsx scripts/harvest-culture.ts",
+    "art:commons": "tsx scripts/art-commons.ts",
+    "bake-art": "tsx scripts/bake-art.ts",
+    "loom:metrics": "tsx scripts/loom-metrics.ts",
     "validate-layout": "tsx scripts/validate-layout.ts",
     "layout:metrics": "tsx scripts/layout-metrics.ts",
     "audit:parents": "tsx scripts/audit-parent-direction.ts",

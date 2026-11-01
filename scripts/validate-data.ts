@@ -26,8 +26,14 @@ import {
   constellationsFileSchema,
 } from '../src/lib/schemas';
 import { CREATURE_KINDS, NYMPH_KINDS, type Character, type Relation } from '../src/types/character';
+import type { ArtOverrides } from '../src/types/art';
+import type { Story } from '../src/types/story';
+import { buildCatalogue } from '../src/features/art/catalogue';
+import { commonsFileName, isFreeLicense } from '../src/features/art/commons';
+import { SAGA_ORDER, type SagaId } from '../src/features/stories/sagas';
 import { isChronologicalParentRelation } from '../src/features/galaxy/layout';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
+import { readArtCommons, readArtOverrides, readShelfEntries } from './lib/art-sources';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
@@ -1013,6 +1019,54 @@ let constellationCount = 0;
   }
 }
 
+// 13. The Loom's catalogue (docs/LOOM_PLAN.md §4): overrides must resolve, every
+//     culture image needs Commons metadata under a free license, and every work
+//     needs a date. Liveness and fresh license checks stay in verify:culture.
+const artEntries = readShelfEntries();
+const artCommons = readArtCommons().files;
+let artOverrides: ArtOverrides = { works: {} };
+try {
+  artOverrides = readArtOverrides();
+} catch (error) {
+  errors.push(`art/overrides.json: ${error instanceof Error ? error.message : String(error)}`);
+}
+const artFiles = new Set(artEntries.flatMap((entry) => commonsFileName(entry.imageUrl) ?? []));
+for (const file of artFiles) {
+  const meta = artCommons[file];
+  if (!meta) errors.push(`culture image "${file}" has no Commons record: run pnpm art:commons`);
+  else if (!meta.license || !isFreeLicense(meta.license)) {
+    errors.push(`culture image "${file}" is not under a free license: ${meta.license}`);
+  }
+}
+for (const [file, override] of Object.entries(artOverrides.works)) {
+  const where = `art/overrides.json [${file}]`;
+  if (!artFiles.has(file)) errors.push(`${where}: no culture entry shows this file`);
+  for (const other of override.sameAs ?? []) {
+    if (!artFiles.has(other)) errors.push(`${where}: sameAs "${other}" is not a culture image`);
+    if (artOverrides.works[other]) errors.push(`${where}: sameAs "${other}" has overrides of its own`);
+  }
+  for (const id of [...(override.figuresAdd ?? []), ...(override.figuresRemove ?? [])]) {
+    if (!charIds.has(id)) errors.push(`${where}: unknown figure "${id}"`);
+  }
+  if (override.saga && !SAGA_ORDER.includes(override.saga as SagaId)) {
+    errors.push(`${where}: unknown saga "${override.saga}"`);
+  }
+}
+const artCatalogue = buildCatalogue({
+  entries: artEntries,
+  stories: readdirSync(join(DATA_DIR, 'stories'))
+    .filter((file) => file.endsWith('.json'))
+    .map((file) => loadJson(join(DATA_DIR, 'stories', file)) as Story),
+  characters: [...charactersById.values()],
+  relations: relationsRaw as Relation[],
+  commons: artCommons,
+  overrides: artOverrides,
+});
+for (const work of artCatalogue.held) errors.push(`art catalogue: "${work.title}": ${work.reason}`);
+
+console.log(
+  `Art catalogue: ${artCatalogue.works.length} works from ${artEntries.length} shelf entries.`,
+);
 console.log(
   `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Constellations: ${constellationCount} · Disputed topics: ${info.length}`,
 );

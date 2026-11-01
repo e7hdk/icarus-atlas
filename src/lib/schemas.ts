@@ -120,6 +120,43 @@ export const cultureSchema = z.object({
   popCulture: z.array(popCultureItemSchema).max(8).optional(),
 });
 
+/** One Commons file as `pnpm art:commons` records it (docs/LOOM_PLAN.md §4.1). */
+export const commonsFileSchema = z.object({
+  width: z.number().int().nonnegative(),
+  height: z.number().int().nonnegative(),
+  mime: z.string().min(1),
+  license: z.string().min(1).nullable(),
+  licenseUrl: z.string().url().optional(),
+  author: z.string().min(1).optional(),
+  attributionRequired: z.boolean(),
+  categories: z.array(z.string()),
+});
+
+export const artCommonsSchema = z.object({ files: z.record(z.string(), commonsFileSchema) });
+
+const unitInterval = z.number().min(0).max(1);
+
+/** Exceptions to the catalogue's derivation rules, keyed by Commons file name. */
+export const artOverridesSchema = z.object({
+  works: z.record(
+    z.string(),
+    z
+      .object({
+        exclude: z.boolean().optional(),
+        sameAs: z.array(z.string().min(1)).min(1).optional(),
+        sortYear: z.number().int().optional(),
+        medium: z.enum(['painting', 'vase', 'stone', 'wall', 'print']).optional(),
+        saga: z.string().min(1).optional(),
+        figuresAdd: z.array(z.string().min(1)).min(1).optional(),
+        figuresRemove: z.array(z.string().min(1)).min(1).optional(),
+        caption: z.string().min(1).optional(),
+        span: z.tuple([z.number().int().min(1), z.number().int().min(1)]).optional(),
+        focus: z.tuple([unitInterval, unitInterval]).optional(),
+      })
+      .strict(),
+  ),
+});
+
 /** Editorial overrides for the Ephemeris spotlight pool (docs/EPHEMERIS_PLAN.md D8).
  *  Pins are always eligible, exclusions never; validate-data forbids overlap. */
 export const spotlightOverridesSchema = z.object({

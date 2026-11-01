@@ -87,6 +87,7 @@ export default async function OdysseyVoyagePage() {
           year: 'year' in item ? item.year : item.period,
           imageUrl: item.imageUrl,
           description: item.description,
+          credit: item.credit,
         }));
     });
 

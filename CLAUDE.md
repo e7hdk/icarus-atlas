@@ -37,6 +37,9 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm myth-river:metrics` — readability report for the River of Myth (`--json`); the numbers `validate-myth-river` gates. `pnpm myth-river:sketch` draws the river flat to gitignored `research/myth-river/`
 - `pnpm validate-ephemeris` — the Ephemeris gate: eligibility probes, Athens-midnight calendar, cycle determinism, golden pick sequence (see docs/EPHEMERIS_PLAN.md §8; refresh goldens with `--print-golden`)
 - `pnpm bake-attic-calendar` — regenerate the committed reconstructed Attic calendar (`data/generated/attic-calendar.json`, astronomy-engine; convention in the script header)
+- `pnpm art:commons` — fetch Commons size, license, author and categories of new culture images into `data/generated/art-commons.json` (`--all` refetches; run after culture batches, network step)
+- `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
+- `pnpm loom:metrics` — the catalogue report (`--review` lists works whose medium needs an eye, `--json`)
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
 - `pnpm verify:culture [ids …]` — network gate for the Legacy shelves: link liveness + Commons license check (run after culture batches; separate from the offline validate-data)
 
@@ -63,6 +66,7 @@ data/
   relations.json        # relation edges, each tagged with sources
   reference/*.json      # neutral encyclopedic facts (Information tab; CC BY-SA attributed)
   culture/*.json        # cultural legacy items, artworks for now (Legacy page)
+  art/overrides.json    # the Loom's catalogue exceptions, keyed by Commons file (docs/LOOM_PLAN.md)
   stories/*.json        # myths as stories: sourced chapters, cast, places, attestations
   geo/                  # regions.json, cities.json (Pleiades CC BY), generated basemap.json
   lineages/*.json       # per-city royal successions, sources-tagged reigns

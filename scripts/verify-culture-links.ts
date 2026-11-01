@@ -12,6 +12,7 @@
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { commonsFileName, isFreeLicense } from '../src/features/art/commons';
 import { cultureSchema } from '../src/lib/schemas';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -19,16 +20,6 @@ const DIRS = ['culture', 'story-culture'] as const;
 const USER_AGENT =
   'IcarusAtlas-culture-verify/1.0 (https://github.com/e7hdk/icarus-atlas; research tooling)';
 const DELAY_MS = 400;
-
-const FREE_LICENSE_PREFIXES = [
-  'cc0',
-  'cc ',
-  'cc-',
-  'public domain',
-  'pd',
-  'no restrictions',
-  'attribution',
-];
 
 interface Target {
   refs: string[];
@@ -61,15 +52,6 @@ async function checkUrl(url: string): Promise<number> {
   } catch {
     return 0;
   }
-}
-
-/** Commons file name from an upload.wikimedia.org URL (original or thumb). */
-function commonsFileName(url: string): string | null {
-  if (!url.startsWith('https://upload.wikimedia.org/')) return null;
-  const parts = new URL(url).pathname.split('/').filter(Boolean);
-  const thumbIndex = parts.indexOf('thumb');
-  const name = thumbIndex >= 0 ? parts[thumbIndex + 3] : parts[parts.length - 1];
-  return name ? decodeURIComponent(name) : null;
 }
 
 async function licenseFor(fileName: string): Promise<string | null> {
@@ -161,9 +143,7 @@ async function main() {
         if (!license) {
           unknownLicense.push(`${url}\n      ← ${target.refs.join('; ')}`);
           licenseNote = ' · license: unknown ⚠';
-        } else if (
-          !FREE_LICENSE_PREFIXES.some((prefix) => license.toLowerCase().startsWith(prefix))
-        ) {
+        } else if (!isFreeLicense(license)) {
           nonFree.push(`"${license}" ${url}\n      ← ${target.refs.join('; ')}`);
           licenseNote = ` · license: ${license} ✗`;
         } else {

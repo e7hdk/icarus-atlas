@@ -174,3 +174,5 @@ harvest source.
 | PD film posters | **No image exception** — text shelves stay structurally image-free even where a poster is public domain; revisit in M8.4 at the earliest | 2026-07-09 |
 | Character/story duplication | **Accepted** — culture files stay independent; the same opera may appear on both Orpheus and his story; measure before abstracting a shared-reference mechanism | 2026-07-09 |
 | Discovery pipeline | **Harvest → curate → verify** (§9): Wikidata SPARQL discovery into gitignored `research/culture-candidates/`, human curation unchanged, scripted link + Commons-license verification; QID pins live in `data/wikidata-map.json` | 2026-07-09 |
+| Duplication, measured | **Still no shared-reference migration.** 2,734 artwork entries are 1,741 Commons files; the Loom's derived catalogue merges them at bake time (docs/LOOM_PLAN.md §4) and these files stay the authored source | 2026-11-01 |
+| Attribution audit (M8.4) | **Moved to M14.1 and widened**: the Legacy UI shows no image credit while 414 images require attribution, so credits land on every image surface, derived from Commons metadata | 2026-11-01 |

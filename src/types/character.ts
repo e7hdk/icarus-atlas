@@ -1,3 +1,5 @@
+import type { ImageCredit } from './art';
+
 /** Core domain types for Icarus Atlas.
  *  This file is the contract between the data layer (data/*.json) and the UI.
  *  Keep in sync with src/lib/schemas.ts (zod) and docs/PLAN.md §4. */
@@ -152,6 +154,8 @@ export interface Artwork {
   imageUrl: string;
   /** Museum-caption style paragraph: what the work shows and why it matters. */
   description: string;
+  /** Attached at load time from Commons metadata, never authored. */
+  credit?: ImageCredit;
 }
 
 /** Museum objects — beside artworks, the only Legacy shelf allowed imagery
@@ -165,6 +169,8 @@ export interface Artifact {
   imageUrl: string;
   description: string;
   externalUrl?: string;
+  /** Attached at load time from Commons metadata, never authored. */
+  credit?: ImageCredit;
 }
 
 /** Cinema & television — text cards only, no imagery (license rule). */
