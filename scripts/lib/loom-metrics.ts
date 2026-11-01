@@ -179,7 +179,8 @@ export function measureLoom(layout: LoomLayout, works: ArtWork[]) {
   const edgeMoves: number[] = [];
   for (const [row, span] of edges) {
     const next = edges.get(row + 1);
-    if (!next) continue;
+    // A block's last row is frayed on purpose: its tiles spread out, so its bands do too.
+    if (!next || !woven(row) || !woven(row + 1)) continue;
     for (const [saga, [start, end]] of span) {
       const after = next.get(saga);
       if (after) edgeMoves.push(Math.abs(after[0] - start), Math.abs(after[1] - end));

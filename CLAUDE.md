@@ -38,6 +38,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm validate-ephemeris` — the Ephemeris gate: eligibility probes, Athens-midnight calendar, cycle determinism, golden pick sequence (see docs/EPHEMERIS_PLAN.md §8; refresh goldens with `--print-golden`)
 - `pnpm bake-attic-calendar` — regenerate the committed reconstructed Attic calendar (`data/generated/attic-calendar.json`, astronomy-engine; convention in the script header)
 - `pnpm art:commons` — fetch Commons size, license, author and categories of new culture images into `data/generated/art-commons.json` (`--all` refetches; run after culture batches, network step)
+- `pnpm bake-loom-atlas` — fetch Commons thumbnails into gitignored `research/loom/thumbs/` and bake the sheets in `public/art/` (network step at batch boundaries; `--fetch` or `--compose` for one half; also writes duplicate candidates to `research/loom/duplicates.json`)
 - `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
 - `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits (run after art or culture edits, once `pnpm bake-art` has run)
 - `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`

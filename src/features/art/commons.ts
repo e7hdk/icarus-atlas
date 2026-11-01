@@ -16,6 +16,33 @@ export function commonsHashPath(url: string): string | null {
   return url.match(/\/commons\/(?:thumb\/)?([0-9a-f]\/[0-9a-f]{2})\//)?.[1] ?? null;
 }
 
+const COMMONS_BASE = 'https://upload.wikimedia.org/wikipedia/commons';
+
+/** The widths Commons serves thumbnails at; anything else is refused. */
+const THUMB_STEPS = [120, 250, 330, 500, 960, 1280, 1920];
+
+/** The usable thumbnail widths for a file, best first: at most `wanted`, and
+ *  narrower than the original, which Commons will not upscale. */
+export function commonsThumbSteps(originalWidth: number, wanted: number): number[] {
+  return THUMB_STEPS.filter((step) => step <= wanted && step < originalWidth).reverse();
+}
+
+export function commonsThumbUrl(path: string, file: string, step: number): string {
+  const name = encodeURIComponent(file);
+  const extension = file.toLowerCase().split('.').pop();
+  const rendered =
+    extension === 'tif' || extension === 'tiff'
+      ? `lossy-page1-${step}px-${name}.jpg`
+      : extension === 'webp'
+        ? `${step}px-${name}.png`
+        : `${step}px-${name}`;
+  return `${COMMONS_BASE}/thumb/${path}/${name}/${rendered}`;
+}
+
+export function commonsOriginalUrl(path: string, file: string): string {
+  return `${COMMONS_BASE}/${path}/${encodeURIComponent(file)}`;
+}
+
 export function commonsPageUrl(file: string): string {
   return `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file)}`;
 }

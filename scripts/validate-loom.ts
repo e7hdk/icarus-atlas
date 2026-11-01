@@ -22,12 +22,13 @@ import type { ArtCatalogue, ArtWork } from '../src/types/art';
 import { ART_CATALOGUE_PATH } from './lib/art-sources';
 import { measureCatalogue, measureLoom } from './lib/loom-metrics';
 
-/** Set with headroom over the measured cloth: 3 and 6 rows of drift, band edges
- *  moving 9 and 11 cells at worst. A trip means the weave has torn, not that a
- *  number wants nudging. A phone row is short, so the same years span more rows. */
+/** Set over the measured cloth: 3 rows of drift, and 95% of band edges moving 6
+ *  cells or fewer. A phone row is short, so the same years can span more rows. Band
+ *  edges are gated at the 95th percentile because a row where several anchors begin
+ *  pushes its singles aside: one such row says nothing about how the bands flow. */
 const LIMITS = {
-  [LOOM_WIDTH.desktop]: { drift: 3, anchorDrift: 4, bandEdge: 12 },
-  [LOOM_WIDTH.phone]: { drift: 6, anchorDrift: 8, bandEdge: 14 },
+  [LOOM_WIDTH.desktop]: { drift: 3, anchorDrift: 4, bandEdgeP95: 8 },
+  [LOOM_WIDTH.phone]: { drift: 6, anchorDrift: 8, bandEdgeP95: 8 },
 };
 const MAX_OTHER_TALES_PERCENT = 8;
 const MAX_UNPLACED_PERCENT = 1.5;
@@ -90,8 +91,8 @@ function checkWidth(width: keyof typeof LIMITS) {
 
   /* 5. A saga is one band, and its edges ease. */
   if (metrics.bandBreaks) errors.push(`${where}: ${metrics.bandBreaks} row(s) break the saga order`);
-  if (metrics.bandEdge.max > limits.bandEdge) {
-    errors.push(`${where}: a band edge jumps ${metrics.bandEdge.max} cells between rows`);
+  if (metrics.bandEdge.p95 > limits.bandEdgeP95) {
+    errors.push(`${where}: band edges jump ${metrics.bandEdge.p95} cells between rows at the 95th percentile`);
   }
 
   /* 6. Every saga appears. */
@@ -128,8 +129,8 @@ for (const work of works) {
 /* 9. Every work has a sprite, once the atlas exists (M14.3). */
 const manifestPath = join(import.meta.dirname, '..', 'public', 'art', 'manifest.json');
 if (existsSync(manifestPath)) {
-  const { sprites } = JSON.parse(readFileSync(manifestPath, 'utf-8')) as { sprites: Record<string, unknown> };
-  const missing = works.filter((work) => !sprites[work.id]).length;
+  const { sprites } = JSON.parse(readFileSync(manifestPath, 'utf-8')) as { sprites: Record<string, number> };
+  const missing = works.filter((work) => sprites[work.id] === undefined).length;
   if (missing) console.warn(`  ⚠ ${missing} work(s) have no sprite yet: run pnpm bake-loom-atlas`);
 }
 

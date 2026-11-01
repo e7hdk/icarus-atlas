@@ -43,12 +43,13 @@ the reason `data/` as a whole is ShareAlike.
 
 | Source | Used for | License |
 |---|---|---|
-| [Wikimedia Commons](https://commons.wikimedia.org/) | Artwork images in `data/culture/` and `data/story-culture/`, referenced by URL — the image files are **not** vendored into this repository | Per file; public domain or a free Commons license, checked by `pnpm verify:culture` |
+| [Wikimedia Commons](https://commons.wikimedia.org/) | Artwork images in `data/culture/` and `data/story-culture/`, referenced by URL. The images themselves are not vendored, except the small crops baked into `public/art/` for the Loom | Per file; public domain or a free Commons license, checked by `pnpm verify:culture` |
 | [Wikidata](https://www.wikidata.org/) | Reception-candidate discovery; 814 pinned QIDs in `data/wikidata-map.json` | CC0 1.0 |
 
 Each image's license and author are recorded in `data/generated/art-commons.json`
 and shown beside the image, with a link to its Commons page, wherever the
-application displays it at reading size.
+application displays it at reading size. The sheets in `public/art/` hold cropped
+thumbnails of these same files, and each crop stays under its own file's license.
 
 Artwork records store title, artist, date and a Commons image URL. Nothing is
 harvested straight into the application: `pnpm harvest:culture` writes to a

@@ -326,7 +326,8 @@ export function buildCatalogue(input: CatalogueInput): CatalogueResult {
       sortYear,
       ...(override?.medium ? { medium: override.medium, mediumVia: 'override' as const } : resolveMedium(ordered, meta.categories, sortYear)),
       file,
-      path: commonsHashPath(lead.imageUrl) ?? '',
+      // The lead may be a merged scan; the hash path must be this file's own.
+      path: commonsHashPath(group.find((entry) => commonsFileName(entry.imageUrl) === file)?.imageUrl ?? '') ?? '',
       width: meta.width,
       height: meta.height,
       license: meta.license ?? 'unknown',

@@ -1,6 +1,6 @@
 # The Loom — the Art door (M14 Plan)
 
-> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 and M14.2 done on branch `art-loom` (see §9); M14.3 is next.
+> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 to M14.3 done on branch `art-loom` (see §9); M14.4 is next.
 > **Door:** `ART` in the main nav, route **`/art`**, one work at **`/art/[id]`**. The world behind the door is **the Loom**, as the world behind Myths is the Spindle.
 > **Scope:** gather every image of the culture layer into one designed place, with a coordinate system that means something, without changing how the Legacy tab works.
 > **Does not touch:** the source lens, the authored files in `data/culture/` and `data/story-culture/`, the text-only shelves (film, music, popular culture).
@@ -31,23 +31,23 @@ The metaphor comes from the myths and continues the door beside it. The Spindle 
 
 ---
 
-## 2. What we have (measured 2026-11-01, after M14.1)
+## 2. What we have (measured 2026-11-01, after M14.3)
 
 | Measure | Value |
 |---|---|
 | Artwork entries (`data/culture` + `data/story-culture`) | 2,734, plus 3 artifacts |
-| Unique Commons files | 1,741, all alive |
-| Catalogue | **1,720 works**: 19 scans merged by reviewed `sameAs` overrides, 2 modern photographs of places excluded. Identical images under different names wait for the image hash in M14.3 |
-| Medium | 675 paintings, 344 prints and drawings, 319 sculpture and objects, 245 vases and ceramics, 137 walls and floors |
-| Era | 535 before AD 500, 11 from 500–1400, 1,174 after 1400 (53 of them from 1900 on) |
-| License | 1,307 public domain or CC0, 98 CC BY, 315 CC BY-SA |
+| Unique Commons files | 1,740, all alive |
+| Catalogue | **1,703 works**: 35 scans merged by reviewed `sameAs` overrides, 2 modern photographs of places excluded |
+| Medium | 666 paintings, 338 prints and drawings, 319 sculpture and objects, 245 vases and ceramics, 135 walls and floors |
+| Era | 533 before AD 500, 11 from 500–1400, 1,159 after 1400 (53 of them from 1900 on) |
+| License | 1,291 public domain or CC0, 97 CC BY, 315 CC BY-SA |
 | Attribution required by Commons metadata | 414 images; 18 of them have no `Artist` field |
 | Image credit in the UI | None before M14.1; now on every image surface |
 | Original width | 322 under 960 px, 66 under 500 px; 355 files over 4,096 px on the long side |
 | Aspect | 720 landscape, 611 portrait, 329 square, 81 wide |
-| Works in *Other tales* | 126 (7.3%), down from 426 (25%) in the mockup. 109 are real `heroic` tales such as Orpheus and Bellerophon; 17 (1%) have nothing to place them |
+| Works in *Other tales* | 126 (7.4%), down from 426 (25%) in the mockup. 109 are real `heroic` tales such as Orpheus and Bellerophon; 17 (1%) have nothing to place them |
 | The network on Legacy shelves alone | Median 1 figure per work; largest connected set 89 works (5%), 425 separate sets; longest thread 8 works |
-| The network in the catalogue | Median 2 figures per work; largest connected set 1,391 works (81%), 93 sets; 565 threads, 2,594 stitches; Heracles 105, Achilles 65, Odysseus 63, Zeus 53 |
+| The network in the catalogue | Median 2 figures per work; largest connected set 1,379 works (81%), 93 sets; 565 threads, 2,571 stitches; Heracles 104, Achilles 64, Odysseus 63, Zeus 53 |
 | Figures seen on both sides of the tear | 301 |
 
 The collection is not "every painting of Greek myth". It is what the atlas holds. §9 M14.9 is how it grows.
@@ -139,7 +139,7 @@ interface ArtWork {
 
 ### 4.3 Resolution rules
 
-- **`figures`:** the union, in order of trust: the Legacy shelves holding the work; names in its title, read by the prose linker with its homonym guard (`parseLinkedProse`, scoped to the work's own figures and its stories' casts); a Commons category that *is* the figure (`Athena`, `Athena (mythology)`, `Athena in art`); overrides, which can also remove a link. Measured: 2,059 links from shelves, 1,032 from titles, 121 from categories. Captions and loose category matches stay out: sampling found them noisy (`Paris` from Louvre categories, `Artemisia` from Gentileschi, vase painters' names).
+- **`figures`:** the union, in order of trust: the Legacy shelves holding the work; names in its title, read by the prose linker with its homonym guard (`parseLinkedProse`, scoped to the work's own figures and its stories' casts); a Commons category that *is* the figure (`Athena`, `Athena (mythology)`, `Athena in art`); overrides, which can also remove a link. Measured: 2,053 links from shelves, 1,015 from titles, 121 from categories. Captions and loose category matches stay out: sampling found them noisy (`Paris` from Louvre categories, `Artemisia` from Gentileschi, vase painters' names).
 - **`sortYear`:** parsed from `year` (BC/AD, ranges, centuries, early/late, a few era words); a leading modern year wins, as in `1893 (after a 5th-century BC mural)`. Anything unparsable must be in overrides; zero unresolved is a gate.
 - **`medium`:** override, then `artifacts.kind`, then a vote between Commons categories and keywords in title, description and artist. Where the two signals disagree the record goes on a review list printed by `loom:metrics`.
 - **`saga`**, first that resolves:
@@ -149,15 +149,15 @@ interface ArtWork {
   4. One hop through `relations.json`: the neighbours' cast weights. Resolves 191 more.
   5. `heroic`, shown as *Other tales*.
 
-Measured: 563 works settled by story, 968 by cast, 117 by type, 55 by relation, 17 by nothing. The 126 in *Other tales* are mostly real tales outside every cycle, so the band is meaningful, not a residue.
+Measured: 561 works settled by story, 957 by cast, 113 by type, 55 by relation, 17 by nothing. The 126 in *Other tales* are mostly real tales outside every cycle, so the band is meaningful, not a residue.
 
 `sagaVia` is stored so the heuristic share stays visible. The plate shows only real links (figures, stories), never the guessed saga's reasoning. These rules are metadata on already verified works, so hard rule 3 is not in play, but each rule's output is reviewed in samples before it ships.
 
 ### 4.4 Duplicates
 
-Same file merges automatically. Everything else is a reviewed `sameAs` override, because a shared title proves nothing: Cranach and Rubens each painted the *Judgement of Paris* more than once, and the catalogue holds distinct versions under one title. Near-identical images under different names need a perceptual hash of the baked thumbnails; candidates print from `pnpm bake-loom-atlas` and land the same way. No merge is ever automatic on title or hash alone.
+Same file merges automatically. Everything else is a reviewed `sameAs` override, because a shared title proves nothing: Cranach and Rubens each painted the *Judgement of Paris* more than once, and the catalogue holds distinct versions under one title. Near-identical images under different names come from a difference hash of the thumbnails: `pnpm bake-loom-atlas` writes the candidates to `research/loom/duplicates.json`, and they land the same way. The first pass gave 26 pairs; looking at them, 16 were one work, the rest unrelated images or real second versions such as Batoni's two *Aeneas*. No merge is ever automatic on title or hash alone.
 
-Reading Commons also showed where the shelves were wrong. 37 entries on 23 files had their artist or date corrected from the file pages, for instance *Ixion and Nephele* from "Unknown, 18th–19th century" to Rubens, 1615, because a wrong date puts a tile in the wrong row.
+Reading Commons also showed where the shelves were wrong. 37 entries on 23 files had their artist or date corrected from the file pages, for instance *Ixion and Nephele* from "Unknown, 18th–19th century" to Rubens, 1615, because a wrong date puts a tile in the wrong row. Fetching every thumbnail also found one dead file, `07leucip.jpg`, listed by the Commons API but gone from its storage, so Rubens's *Daughters of Leucippus* was broken on its Legacy page. It now points at a live scan.
 
 ### 4.5 Credits
 
@@ -221,7 +221,7 @@ Legacy is capped per figure on purpose, which conflicts with "all of them in one
 - Deterministic and blind to input order (hash compare after a shuffle).
 - Within a saga, row order follows `sortYear`; no work sits more than 3 rows from its ideal row (6 on a phone, where a row is short).
 - Nothing crosses the tear: before 500 above it, 1400 on below it.
-- A saga's tiles are contiguous within a row, and a band edge moves at most 12 cells between rows (14 on a phone).
+- A saga's tiles are contiguous within a row, and 95% of band edges move at most 8 cells between rows. The worst single move is reported, not gated: where several anchors begin in one row they push its singles aside, and one such row says nothing about the flow.
 - Every saga appears at the phone width.
 - *Other tales* ≤ 8%, unplaced works (`sagaVia: none`) ≤ 1.5%, anchors ≤ 40, unresolved dates 0, every work carries a free license, every work has a sprite.
 
@@ -238,7 +238,7 @@ Legacy is capped per figure on purpose, which conflicts with "all of them in one
 - Fetches each work's Commons thumbnail at a standard step, politely and resumably, into gitignored `research/loom/thumbs/`.
 - Crops to the cell with `sharp`'s attention strategy or the override `focus`. Only 329 files are close to square, so a plain centre crop would lose too much.
 - Writes to `public/art/`: `sheet.webp` (64 px cells), `anchors.webp` (256 px cells), `sheet-lq.webp` (24 px cells), `manifest.json`.
-- Budget: LQ ≤ 300 KB, full sheet ≤ 4 MB, total ≤ 6 MB. These are estimates until the first bake. Rebakes happen at batch boundaries to limit git growth.
+- Budget: LQ ≤ 300 KB, full sheet ≤ 4 MB, total ≤ 6 MB. First bake: LQ 248 KB, full sheet 1.7 MB, anchors 302 KB, total 2.3 MB. Rebakes happen at batch boundaries to limit git growth.
 
 The catalogue only includes works present in the manifest, so a culture batch simply waits for the next bake; the door never shows a hole. Drift is a warning in `validate-loom`.
 
@@ -301,8 +301,8 @@ The Loom must lead back into the atlas, and into it.
 Each lands green on `pnpm lint`, `pnpm build`, `pnpm validate-data`, plus its own gate.
 
 - **M14.1 — The catalogue and the credits.** Types, schemas, `art:commons`, `bake-art`, `data/art/overrides.json`, the §4.3 rules including figure links, `validate-data` growth, `loom:metrics` in first form, `<WorkCredit>` on every existing surface. **User-visible outcome: the attribution gap closes.** *Done 2026-11-01:* 0 unresolved dates, *Other tales* 7.3% with 1% unplaced, the §3 shares re-measured, credits on the Legacy gallery and vitrines, the story section, the Nostos art, the daily card, the proem and every lightbox. The medium review list (`loom:metrics --review`) was read through; 36 overrides corrected what it found, and its remaining 99 disputed and 67 default records were left as they stand.
-- **M14.2 — The engine.** `loom.ts`, `validate-loom`, `loom:sketch`. Done when both widths pass every gate. *Done 2026-11-01:* 58 wide makes 38 rows, 26 wide makes 82; no overlaps, no holes; drift 3 and 6 rows at worst, 1 at the 95th percentile; band edges 9 and 11 cells at worst; 35 anchors. Both widths lay out in under 20 ms.
-- **M14.3 — The atlas.** Bake script, first sheets, budget check, image-hash duplicate pass, `ATTRIBUTION.md`. Can run beside M14.2.
+- **M14.2 — The engine.** `loom.ts`, `validate-loom`, `loom:sketch`. Done when both widths pass every gate. *Done 2026-11-01:* 58 wide makes 38 rows, 26 wide makes 81; no overlaps, no holes; drift 3 rows at worst, 1 at the 95th percentile; 95% of band edges within 6 cells; 35 anchors. Both widths lay out in under 20 ms.
+- **M14.3 — The atlas.** Bake script, first sheets, budget check, image-hash duplicate pass, `ATTRIBUTION.md`. Can run beside M14.2. *Done 2026-11-01:* 1,703 sprites in 2.3 MB, 16 more works merged after review by eye, one dead Commons file replaced.
 - **M14.4 — The door, desktop.** `/art`, nav, cloth, warp, rig, labels, hover, plate, filters, search, `/art/list`. Done when it matches the mockup's front in the user's browser and the desktop budget is measured.
 - **M14.5 — The web.** Threads from the catalogue, ribbons, hover stitches, pull, walk, orbit, turn. Done when it matches `art-loom-web.html` and the budget holds with every stitch drawn.
 - **M14.6 — The phone.** §7 phone spec, tested by the user on a real device.

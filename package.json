@@ -31,6 +31,7 @@
     "harvest:culture": "tsx scripts/harvest-culture.ts",
     "art:commons": "tsx scripts/art-commons.ts",
     "bake-art": "tsx scripts/bake-art.ts",
+    "bake-loom-atlas": "tsx scripts/bake-loom-atlas.ts",
     "validate-loom": "tsx scripts/validate-loom.ts",
     "loom:metrics": "tsx scripts/loom-metrics.ts",
     "loom:sketch": "tsx scripts/loom-sketch.ts",
