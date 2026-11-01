@@ -4,16 +4,18 @@
  *         pnpm loom:metrics --json     the numbers, for tooling */
 
 import { readFileSync } from 'node:fs';
+import { buildLoomLayout, LOOM_WIDTH } from '../src/features/art/loom';
 import { SAGA_ORDER } from '../src/features/stories/sagas';
 import type { ArtCatalogue } from '../src/types/art';
 import { ART_CATALOGUE_PATH } from './lib/art-sources';
-import { measureCatalogue } from './lib/loom-metrics';
+import { measureCatalogue, measureLoom } from './lib/loom-metrics';
 
 const { works } = JSON.parse(readFileSync(ART_CATALOGUE_PATH, 'utf-8')) as ArtCatalogue;
 const metrics = measureCatalogue(works);
+const cloths = Object.values(LOOM_WIDTH).map((width) => measureLoom(buildLoomLayout(works, width), works));
 
 if (process.argv.includes('--json')) {
-  console.log(JSON.stringify(metrics, null, 2));
+  console.log(JSON.stringify({ ...metrics, cloths }, null, 2));
   process.exit(0);
 }
 
@@ -33,6 +35,13 @@ line('Threads', `${metrics.threads}, ${metrics.stitches} stitches`);
 line('Largest connected set', `${metrics.largestSet} works (${metrics.largestSetPercent}%), ${metrics.connectedSets} sets`);
 line('Longest threads', metrics.longestThreads.map((thread) => `${thread.id} ${thread.works}`).join(', '));
 line('Figures across the tear', metrics.figuresCrossingTear);
+
+for (const cloth of cloths) {
+  line(
+    `Cloth, ${cloth.width} wide`,
+    `${cloth.height} rows, ${cloth.anchors} anchors, drift ${cloth.drift.max} (p95 ${cloth.drift.p95}), band edge ${cloth.bandEdge.max} (p95 ${cloth.bandEdge.p95})`,
+  );
+}
 
 console.log('\nShare of each age, percent:');
 const shown = SAGA_ORDER;

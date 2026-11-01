@@ -1,6 +1,6 @@
 # The Loom — the Art door (M14 Plan)
 
-> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 done on branch `art-loom` (see §9); M14.2 is next.
+> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 and M14.2 done on branch `art-loom` (see §9); M14.3 is next.
 > **Door:** `ART` in the main nav, route **`/art`**, one work at **`/art/[id]`**. The world behind the door is **the Loom**, as the world behind Myths is the Spindle.
 > **Scope:** gather every image of the culture layer into one designed place, with a coordinate system that means something, without changing how the Legacy tab works.
 > **Does not touch:** the source lens, the authored files in `data/culture/` and `data/story-culture/`, the text-only shelves (film, music, popular culture).
@@ -210,8 +210,8 @@ Legacy is capped per figure on purpose, which conflicts with "all of them in one
 
 1. Split into three blocks: before AD 500, the tear, from 1400 on.
 2. In each block give every work an ideal row by cumulative area in time order.
-3. Place anchors first, at their ideal row and at their saga's share of the width, keeping one clear cell between anchors.
-4. Fill the remaining cells row by row from per-saga quotas: each saga's density across rows is smoothed (Gaussian, σ 1.8 rows) and each saga keeps its own chronological queue, so a single print series cannot stripe a row.
+3. Place anchors first, at their ideal row and at their saga's share of the width, keeping one clear cell between anchors. Spans follow the image's real shape: 4×3 for a landscape, 3×4 for a portrait, 3×3 near square.
+4. Fill the remaining cells row by row from per-saga quotas: each saga's density across rows is smoothed (Gaussian, σ 1.8 rows) and each saga keeps its own chronological queue, so a single print series cannot stripe a row. Quotas chase a cumulative target, so a saga that falls behind catches up and drift never accumulates.
 5. Sort each row by saga and assign left to right.
 6. Lay the tear's works evenly across its two rows.
 
@@ -219,9 +219,9 @@ Legacy is capped per figure on purpose, which conflicts with "all of them in one
 
 - Every catalogue work has exactly one tile; no overlap, nothing out of bounds, every cell filled except the fringe rows and the tear.
 - Deterministic and blind to input order (hash compare after a shuffle).
-- Within a saga, row order follows `sortYear`; no work sits more than 3 rows from its ideal row.
+- Within a saga, row order follows `sortYear`; no work sits more than 3 rows from its ideal row (6 on a phone, where a row is short).
 - Nothing crosses the tear: before 500 above it, 1400 on below it.
-- A saga's tiles are contiguous within a row, and a band edge moves at most a set number of cells between rows.
+- A saga's tiles are contiguous within a row, and a band edge moves at most 12 cells between rows (14 on a phone).
 - Every saga appears at the phone width.
 - *Other tales* ≤ 8%, unplaced works (`sagaVia: none`) ≤ 1.5%, anchors ≤ 40, unresolved dates 0, every work carries a free license, every work has a sprite.
 
@@ -301,7 +301,7 @@ The Loom must lead back into the atlas, and into it.
 Each lands green on `pnpm lint`, `pnpm build`, `pnpm validate-data`, plus its own gate.
 
 - **M14.1 — The catalogue and the credits.** Types, schemas, `art:commons`, `bake-art`, `data/art/overrides.json`, the §4.3 rules including figure links, `validate-data` growth, `loom:metrics` in first form, `<WorkCredit>` on every existing surface. **User-visible outcome: the attribution gap closes.** *Done 2026-11-01:* 0 unresolved dates, *Other tales* 7.3% with 1% unplaced, the §3 shares re-measured, credits on the Legacy gallery and vitrines, the story section, the Nostos art, the daily card, the proem and every lightbox. The medium review list (`loom:metrics --review`) was read through; 36 overrides corrected what it found, and its remaining 99 disputed and 67 default records were left as they stand.
-- **M14.2 — The engine.** `loom.ts`, `validate-loom`, `loom:sketch`. Done when both widths pass every gate.
+- **M14.2 — The engine.** `loom.ts`, `validate-loom`, `loom:sketch`. Done when both widths pass every gate. *Done 2026-11-01:* 58 wide makes 38 rows, 26 wide makes 82; no overlaps, no holes; drift 3 and 6 rows at worst, 1 at the 95th percentile; band edges 9 and 11 cells at worst; 35 anchors. Both widths lay out in under 20 ms.
 - **M14.3 — The atlas.** Bake script, first sheets, budget check, image-hash duplicate pass, `ATTRIBUTION.md`. Can run beside M14.2.
 - **M14.4 — The door, desktop.** `/art`, nav, cloth, warp, rig, labels, hover, plate, filters, search, `/art/list`. Done when it matches the mockup's front in the user's browser and the desktop budget is measured.
 - **M14.5 — The web.** Threads from the catalogue, ribbons, hover stitches, pull, walk, orbit, turn. Done when it matches `art-loom-web.html` and the budget holds with every stitch drawn.

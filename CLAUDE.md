@@ -39,7 +39,8 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm bake-attic-calendar` — regenerate the committed reconstructed Attic calendar (`data/generated/attic-calendar.json`, astronomy-engine; convention in the script header)
 - `pnpm art:commons` — fetch Commons size, license, author and categories of new culture images into `data/generated/art-commons.json` (`--all` refetches; run after culture batches, network step)
 - `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
-- `pnpm loom:metrics` — the catalogue report (`--review` lists works whose medium needs an eye, `--json`)
+- `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits (run after art or culture edits, once `pnpm bake-art` has run)
+- `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
 - `pnpm verify:culture [ids …]` — network gate for the Legacy shelves: link liveness + Commons license check (run after culture batches; separate from the offline validate-data)
 
