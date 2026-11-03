@@ -428,9 +428,10 @@ export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: L
       const filters = useLoomStore.getState();
       const { target } = state.current;
       const near = web.near(filters.peekThread);
+      const lit = filters.pattern === null ? null : door.patterns[filters.pattern].lit;
       for (const work of door.works) {
         if (!near) {
-          target[work.index] = isDimmed(work, filters) ? DIMMED : LIT;
+          target[work.index] = isDimmed(work, filters, lit) ? DIMMED : LIT;
           continue;
         }
         const lifted = web.items.get(work.index);

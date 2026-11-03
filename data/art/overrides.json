@@ -173,7 +173,8 @@
     "Ixion,_roi_des_Lapithes,_trompé_par_Junon_qu'il_voulait_séduire_-_Pierre_Paul_Rubens_-_Musée_du_Louvre_Peintures_RF_2121.jpg": {
       "sameAs": [
         "Ixion_and_Nephele.jpg"
-      ]
+      ],
+      "medium": "painting"
     },
     "Jacques-Louis_David_-_Andromache_Mourning_Hector_-_WGA6050.jpg": {
       "span": [
@@ -244,7 +245,8 @@
     "Les_amours_de_Pâris_et_d'Hélène_-_Jacques-Louis_David_-_Musée_du_Louvre_Peintures_INV_3696_;_MR_1439.jpg": {
       "sameAs": [
         "Jacques-Louis_David_-_The_Loves_of_Paris_and_Helen_-_WGA6057.jpg"
-      ]
+      ],
+      "medium": "painting"
     },
     "MANNapoli_9112_Sacrifice_Iphigenia_painting.jpg": {
       "span": [
@@ -476,12 +478,25 @@
       "span": [
         4,
         3
-      ]
+      ],
+      "medium": "painting"
     },
     "Wall_painting_-_the_three_Graces_-_Pompeii_(IX_2_16)_-_Napoli_MAN_9236.jpg": {
       "sameAs": [
         "The_Three_Graces,_from_Pompeii_(fresco).jpg"
       ]
+    },
+    "Giovanni_Battista_Tiepolo_-_Apollo_and_Daphne.jpg": {
+      "medium": "painting"
+    },
+    "Nicolas_Poussin_-_Helios_and_Phaeton_with_Saturn_and_the_Four_Seasons.jpg": {
+      "medium": "painting"
+    },
+    "Pygmalion_et_Galatée_-_Anne-Louis_Girodet_-_Musée_du_Louvre_Peintures_RF_2002_4.jpg": {
+      "medium": "painting"
+    },
+    "Achilles_ambushing_Troilus_(on_horseback)_Etruscan_fresco,_Tomb_of_the_Bulls,_Tarquinia,_530–520_BCE.jpg": {
+      "medium": "wall"
     }
   }
 }

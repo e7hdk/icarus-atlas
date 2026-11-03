@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
-import { decodeDoor, type LoomDoor, type LoomWork } from '@/features/art/door';
+import { decodeDoor, stopsAt, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { LoomCamera, MAX_SCALE, WEB_MAX_SCALE } from '@/features/art/loomCamera';
@@ -18,6 +18,7 @@ import { LoomChips } from './LoomChips';
 import { LoomHires } from './LoomHires';
 import { LoomLabels } from './LoomLabels';
 import { LoomLifted } from './LoomLifted';
+import { LoomPatternThread } from './LoomPatternThread';
 import { LoomRail } from './LoomRail';
 import { LoomSheet } from './LoomSheet';
 import { LoomScene } from './LoomScene';
@@ -266,6 +267,20 @@ export function LoomView() {
     rig.letGo();
   }, [rig, web]);
 
+  /** Show a Pattern's gold thread, or none: the whole cloth where it fits the screen,
+   *  and on a phone the rows its stops fall through. */
+  const showPattern = useCallback(
+    (index: number | null) => {
+      if (!door) return;
+      release();
+      useLoomStore.getState().setPattern(index);
+      if (index === null) return;
+      const stops = door.patterns[index].stops.map(({ work }) => door.works[work]);
+      rig.frameRows(Math.min(...stops.map((work) => work.row)), Math.max(...stops.map((work) => work.row + work.h)));
+    },
+    [door, release, rig],
+  );
+
   const turn = useCallback(
     (face: boolean) => {
       release();
@@ -376,8 +391,10 @@ export function LoomView() {
       if (window.location.pathname !== '/art') return;
       const typing = event.target instanceof HTMLElement && event.target.closest('input, textarea, [contenteditable]');
       if (event.key === 'Escape') {
-        // Escape steps back one level: the web, then the whole cloth.
-        if (useLoomStore.getState().focus !== null) release();
+        // Escape steps back one level: the web, the Pattern, then the whole cloth.
+        const { focus, pattern, setPattern } = useLoomStore.getState();
+        if (focus !== null) release();
+        else if (pattern !== null) setPattern(null);
         else rig.goHome();
       }
       if (!typing && !event.metaKey && !event.ctrlKey && event.key.toLowerCase() === 't') {
@@ -540,6 +557,7 @@ export function LoomView() {
       {door && web && (
         <>
           <LoomHires door={door} rig={rig} subscribe={subscribe} />
+          <LoomPatternThread door={door} rig={rig} subscribe={subscribe} />
           <LoomLifted door={door} web={web} rig={rig} subscribe={subscribe} onPick={pick} phone={phone} />
           <div
             aria-hidden
@@ -549,7 +567,7 @@ export function LoomView() {
           <LoomTitle />
           {phone ? (
             <>
-              <LoomChips onTurn={() => turn(!useLoomStore.getState().face)} />
+              <LoomChips door={door} onTurn={() => turn(!useLoomStore.getState().face)} onPattern={showPattern} />
               <LoomSheet
                 door={door}
                 onAlong={(thread) => {
@@ -565,6 +583,7 @@ export function LoomView() {
             <LoomRail
               door={door}
               onTurn={() => turn(!useLoomStore.getState().face)}
+              onPattern={showPattern}
               onAlong={(thread) => {
                 if (web.focus !== null) pull(door.works[web.focus], thread);
               }}
@@ -575,7 +594,24 @@ export function LoomView() {
             />
           )}
           <WorkHoverCard door={door} />
-          {plateWork && <WorkPlate work={plateWork} onClose={closePlate} onStep={stepPlate} />}
+          {plateWork && (
+            <WorkPlate
+              work={plateWork}
+              stops={stopsAt(door, plateWork.index).map(({ pattern, stop }) => ({
+                pattern,
+                title: door.patterns[pattern].title,
+                stop,
+              }))}
+              onClose={closePlate}
+              onStep={stepPlate}
+              onFollow={(pattern) => {
+                // The thread is seen from afar, not from where the plate was opened.
+                plateReturn.current = null;
+                closePlate();
+                showPattern(pattern);
+              }}
+            />
+          )}
           <WorkSearchOverlay door={door} onSelect={openPlate} />
           <p className="sr-only" aria-live="polite">
             {announced}

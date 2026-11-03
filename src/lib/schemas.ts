@@ -157,6 +157,32 @@ export const artOverridesSchema = z.object({
   ),
 });
 
+/** A stop of a Pattern. An ancient claim in its note carries a citation with its
+ *  sources (hard rules 2 and 5); an art-historical one, such as a copy, an https link
+ *  to its evidence (CULTURE_PLAN §3). */
+const artPatternStopSchema = z
+  .object({
+    work: z.string().min(1),
+    note: z.string().min(1).optional(),
+    citation: z.string().min(1).optional(),
+    sources: z.array(sourceIdSchema).min(1).optional(),
+    evidence: httpsUrl.optional(),
+  })
+  .strict()
+  .refine((stop) => !stop.citation === !stop.sources, 'a citation needs its sources, and sources a citation');
+
+/** One curated Pattern, data/art/patterns/<id>.json (docs/LOOM_PLAN.md §4.6): a gesture
+ *  followed through time. Stops run oldest first; members light up off the thread. */
+export const artPatternSchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+    title: z.string().min(1),
+    summary: z.string().min(1),
+    stops: z.array(artPatternStopSchema).min(2),
+    members: z.array(z.string().min(1)).optional(),
+  })
+  .strict();
+
 /** Editorial overrides for the Ephemeris spotlight pool (docs/EPHEMERIS_PLAN.md D8).
  *  Pins are always eligible, exclusions never; validate-data forbids overlap. */
 export const spotlightOverridesSchema = z.object({

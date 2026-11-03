@@ -1,4 +1,5 @@
 import type { SagaId } from '@/features/stories/sagas';
+import type { SourceId } from './character';
 
 /** The Loom's data layer (docs/LOOM_PLAN.md §4). `data/culture` and
  *  `data/story-culture` stay the authored source; everything here is derived from
@@ -81,6 +82,30 @@ export interface ArtOverrides {
   works: Record<string, ArtWorkOverride>;
 }
 
+/** A work the gold thread passes through. An ancient claim in its note carries a
+ *  citation and sources; an art-historical one, an evidence link. */
+export interface ArtPatternStop {
+  /** Catalogue id. */
+  work: string;
+  note?: string;
+  citation?: string;
+  sources?: SourceId[];
+  evidence?: string;
+}
+
+/** data/art/patterns/<id>.json (docs/LOOM_PLAN.md §4.6): one gesture followed through
+ *  time. A Pattern groups by likeness; descent is stated only with evidence. */
+export interface ArtPattern {
+  id: string;
+  title: string;
+  /** Museum-caption voice. */
+  summary: string;
+  /** Oldest first: the thread only ever falls. */
+  stops: ArtPatternStop[];
+  /** Lit, but off the thread. */
+  members?: string[];
+}
+
 export interface ArtWorkFigure {
   id: string;
   via: FigureVia;
@@ -133,11 +158,22 @@ export interface LoomDoorLayout {
   cells: number[];
 }
 
+/** A Pattern as the door holds it: stops and members as indices into `works`, and a
+ *  stop's sources and citation already written out as its footnote. */
+export interface LoomDoorPattern {
+  id: string;
+  title: string;
+  summary: string;
+  stops: { work: number; note?: string; footnote?: string; evidence?: string }[];
+  members: number[];
+}
+
 /** public/art/loom.json: what the door needs before its first frame. */
 export interface LoomDoorData {
   works: LoomWorkRow[];
   /** Every figure some work shows, as [id, name]; the threads are built from these. */
   figures: [string, string][];
+  patterns: LoomDoorPattern[];
   desktop: LoomDoorLayout;
   phone: LoomDoorLayout;
   sheet: { columns: number; cell: number; lqCell: number; anchorColumns: number; anchorSlot: number };

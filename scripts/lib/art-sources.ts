@@ -1,13 +1,14 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { artCommonsSchema, artOverridesSchema, cultureSchema } from '../../src/lib/schemas';
-import type { ArtCommons, ArtOverrides, ShelfEntry } from '../../src/types/art';
+import { artCommonsSchema, artOverridesSchema, artPatternSchema, cultureSchema } from '../../src/lib/schemas';
+import type { ArtCommons, ArtOverrides, ArtPattern, ShelfEntry } from '../../src/types/art';
 
 const DATA = join(import.meta.dirname, '..', '..', 'data');
 
 export const ART_COMMONS_PATH = join(DATA, 'generated', 'art-commons.json');
 export const ART_CATALOGUE_PATH = join(DATA, 'generated', 'art-catalogue.json');
 export const ART_OVERRIDES_PATH = join(DATA, 'art', 'overrides.json');
+export const ART_PATTERNS_DIR = join(DATA, 'art', 'patterns');
 
 /** Every artwork and artifact on a figure's or a story's shelf, in a stable order. */
 export function readShelfEntries(): ShelfEntry[] {
@@ -44,4 +45,19 @@ export function readArtCommons(): ArtCommons {
 
 export function readArtOverrides(): ArtOverrides {
   return artOverridesSchema.parse(JSON.parse(readFileSync(ART_OVERRIDES_PATH, 'utf-8'))) as ArtOverrides;
+}
+
+/** The curated Patterns, in file order, each checked against its schema. The file name
+ *  is the Pattern's id. */
+export function readArtPatterns(): ArtPattern[] {
+  if (!existsSync(ART_PATTERNS_DIR)) return [];
+  return readdirSync(ART_PATTERNS_DIR)
+    .filter((name) => name.endsWith('.json'))
+    .sort()
+    .map((name) => {
+      const parsed = artPatternSchema.safeParse(JSON.parse(readFileSync(join(ART_PATTERNS_DIR, name), 'utf-8')));
+      if (!parsed.success) throw new Error(`art/patterns/${name}: ${parsed.error.issues.map((issue) => `${issue.path.join('.')} ${issue.message}`).join('; ')}`);
+      if (`${parsed.data.id}.json` !== name) throw new Error(`art/patterns/${name}: id "${parsed.data.id}" must match the file name`);
+      return parsed.data as ArtPattern;
+    });
 }

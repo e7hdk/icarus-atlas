@@ -8,6 +8,7 @@
  *   a saga is one band in a row, and its edges ease from row to row
  *   every saga appears
  *   deterministic, and blind to the order of its input
+ *   a Pattern's gold thread only ever falls
  * And of the catalogue feeding it: few works unplaced, few anchors, all dated
  * and all under a free license. Rerun `pnpm bake-art` first after a data edit.
  */
@@ -19,7 +20,7 @@ import { isFreeLicense } from '../src/features/art/commons';
 import { buildLoomLayout, LOOM_WIDTH, TEAR_FROM, TEAR_TO, type LoomLayout } from '../src/features/art/loom';
 import { SAGA_ORDER } from '../src/features/stories/sagas';
 import type { ArtCatalogue, ArtWork } from '../src/types/art';
-import { ART_CATALOGUE_PATH } from './lib/art-sources';
+import { ART_CATALOGUE_PATH, readArtPatterns } from './lib/art-sources';
 import { measureCatalogue, measureLoom } from './lib/loom-metrics';
 
 /** Set over the measured cloth: 3 rows of drift, and 95% of band edges moving 6
@@ -49,6 +50,7 @@ function shuffled(works: ArtWork[]): ArtWork[] {
 }
 
 const { works } = JSON.parse(readFileSync(ART_CATALOGUE_PATH, 'utf-8')) as ArtCatalogue;
+const patterns = readArtPatterns();
 const errors: string[] = [];
 
 function checkWidth(width: keyof typeof LIMITS) {
@@ -105,6 +107,19 @@ function checkWidth(width: keyof typeof LIMITS) {
     errors.push(`${where}: the cloth depends on the order of its input`);
   }
 
+  /* 8. A Pattern's gold thread only ever falls: each stop sits no higher than the last. */
+  const tileOf = new Map(layout.tiles.map((tile) => [tile.id, tile]));
+  for (const pattern of patterns) {
+    const centres = pattern.stops.flatMap(({ work }) => {
+      const tile = tileOf.get(work);
+      return tile ? [{ work, y: tile.row + tile.h / 2 }] : [];
+    });
+    for (let index = 1; index < centres.length; index++) {
+      const [from, to] = [centres[index - 1], centres[index]];
+      if (to.y < from.y) errors.push(`${where}: the ${pattern.id} thread rises from ${from.work} to ${to.work}`);
+    }
+  }
+
   console.log(
     `${String(width).padStart(2)} wide, ${metrics.height} rows · ${metrics.tiles} tiles, ${metrics.anchors} anchors · drift ${metrics.drift.max} (p95 ${metrics.drift.p95}) · band edge ${metrics.bandEdge.max} (p95 ${metrics.bandEdge.p95})`,
   );
@@ -112,7 +127,7 @@ function checkWidth(width: keyof typeof LIMITS) {
 
 for (const width of Object.values(LOOM_WIDTH)) checkWidth(width);
 
-/* 8. The catalogue feeding the cloth. */
+/* 9. The catalogue feeding the cloth. */
 const catalogue = measureCatalogue(works);
 const unplacedPercent = ((catalogue.sagaVia.none ?? 0) * 100) / works.length;
 if (catalogue.catchAllPercent > MAX_OTHER_TALES_PERCENT) {
@@ -126,7 +141,7 @@ for (const work of works) {
   if (!isFreeLicense(work.license)) errors.push(`${work.id}: not under a free license (${work.license})`);
 }
 
-/* 9. Every work has a sprite, once the atlas exists (M14.3). */
+/* 10. Every work has a sprite, once the atlas exists (M14.3). */
 const manifestPath = join(import.meta.dirname, '..', 'public', 'art', 'manifest.json');
 if (existsSync(manifestPath)) {
   const { sprites } = JSON.parse(readFileSync(manifestPath, 'utf-8')) as { sprites: Record<string, number> };

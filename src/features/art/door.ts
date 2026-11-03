@@ -1,9 +1,11 @@
 import { SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import type {
+  ArtPattern,
   ArtWork,
   CommonsFileMeta,
   LoomDoorData,
   LoomDoorLayout,
+  LoomDoorPattern,
   LoomWorkDetail,
   LoomWorkRow,
   Medium,
@@ -15,7 +17,7 @@ import { buildLoomLayout, LOOM_WIDTH, type LoomLayout } from './loom';
 import { buildThreads, type LoomThread } from './threads';
 
 /** Bumped whenever public/art/loom.json changes shape, so the bake rewrites it. */
-export const DOOR_VERSION = 2;
+export const DOOR_VERSION = 3;
 
 /** The Art door's client data (docs/LOOM_PLAN.md §4.8). `pnpm bake-art` writes it to
  *  public/art/ instead of each page embedding it, because `/art/[id]` is prerendered
@@ -57,8 +59,15 @@ function compactLayout(layout: LoomLayout, works: ArtWork[]): LoomDoorLayout {
   };
 }
 
-export function buildDoorData(catalogue: ArtWork[], manifest: AtlasManifest, characters: Character[]): LoomDoorData {
+export function buildDoorData(
+  catalogue: ArtWork[],
+  manifest: AtlasManifest,
+  characters: Character[],
+  patterns: ArtPattern[],
+  sourceNames: Record<string, string>,
+): LoomDoorData {
   const works = catalogue.filter((work) => manifest.sprites[work.id] !== undefined);
+  const workIndex = new Map(works.map((work, index) => [work.id, index]));
   const names = new Map(characters.map((character) => [character.id, character.name]));
   const figureIds = [...new Set(works.flatMap((work) => work.figures.map(({ id }) => id)))].sort();
   const figureIndex = new Map(figureIds.map((id, index) => [id, index]));
@@ -85,6 +94,24 @@ export function buildDoorData(catalogue: ArtWork[], manifest: AtlasManifest, cha
   return {
     works: rows,
     figures: figureIds.map((id): [string, string] => [id, names.get(id) ?? id]),
+    // A work the atlas does not hold yet drops out of its Pattern until the next bake.
+    patterns: patterns.map(
+      (pattern): LoomDoorPattern => ({
+        id: pattern.id,
+        title: pattern.title,
+        summary: pattern.summary,
+        stops: pattern.stops.flatMap(({ work, note, citation, sources, evidence }) => {
+          const index = workIndex.get(work);
+          if (index === undefined) return [];
+          // Written as the site's other footnotes are: the tellers, then the passage.
+          const footnote = sources
+            ? `${sources.map((id) => sourceNames[id] ?? id).join(' · ')}${citation ? ` — ${citation}` : ''}`
+            : undefined;
+          return [{ work: index, note, footnote, evidence }];
+        }),
+        members: (pattern.members ?? []).flatMap((work) => workIndex.get(work) ?? []),
+      }),
+    ),
     desktop: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.desktop), works),
     phone: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.phone), works),
     sheet: {
@@ -152,10 +179,20 @@ export interface LoomWork {
   figures: number[];
 }
 
+/** A stop of a Pattern, as the door holds it: `work` indexes `LoomDoor.works`. */
+export type LoomPatternStop = LoomDoorPattern['stops'][number];
+
+/** A Pattern on the client: `lit` holds its stops and members, which stay bright
+ *  while it is shown. */
+export interface LoomPattern extends LoomDoorPattern {
+  lit: Set<number>;
+}
+
 export interface LoomDoor {
   works: LoomWork[];
   byId: Map<string, LoomWork>;
   figures: { id: string; name: string }[];
+  patterns: LoomPattern[];
   threads: LoomThread[];
   /** Thread indices per work. */
   threadsOf: number[][];
@@ -203,12 +240,23 @@ export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
     works,
     byId: new Map(works.map((work) => [work.id, work])),
     figures,
+    patterns: data.patterns.map((pattern) => ({
+      ...pattern,
+      lit: new Set([...pattern.stops.map((stop) => stop.work), ...pattern.members]),
+    })),
     threads,
     threadsOf,
     cellOf,
     layout,
     sheet: data.sheet,
   };
+}
+
+/** The Patterns whose gold thread passes through a work, with what each says there. */
+export function stopsAt(door: LoomDoor, work: number): { pattern: number; stop: LoomPatternStop }[] {
+  return door.patterns.flatMap((pattern, index) =>
+    pattern.stops.filter((stop) => stop.work === work).map((stop) => ({ pattern: index, stop })),
+  );
 }
 
 /** The sharpest Commons image of a work up to `wanted` pixels wide. */

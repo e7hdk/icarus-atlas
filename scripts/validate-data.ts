@@ -26,14 +26,14 @@ import {
   constellationsFileSchema,
 } from '../src/lib/schemas';
 import { CREATURE_KINDS, NYMPH_KINDS, type Character, type Relation } from '../src/types/character';
-import type { ArtOverrides } from '../src/types/art';
+import type { ArtOverrides, ArtPattern } from '../src/types/art';
 import type { Story } from '../src/types/story';
 import { buildCatalogue } from '../src/features/art/catalogue';
 import { commonsFileName, isFreeLicense } from '../src/features/art/commons';
 import { SAGA_ORDER, type SagaId } from '../src/features/stories/sagas';
 import { isChronologicalParentRelation } from '../src/features/galaxy/layout';
 import { RIVER_ANCHORS, RIVER_SYNC_IDS } from './lib/river-geometry-recipes';
-import { readArtCommons, readArtOverrides, readShelfEntries } from './lib/art-sources';
+import { readArtCommons, readArtOverrides, readArtPatterns, readShelfEntries } from './lib/art-sources';
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
@@ -1064,8 +1064,36 @@ const artCatalogue = buildCatalogue({
 });
 for (const work of artCatalogue.held) errors.push(`art catalogue: "${work.title}": ${work.reason}`);
 
+// 14. The Loom's Patterns (docs/LOOM_PLAN.md §4.6): every stop and member is a work
+//     in the catalogue, once, and the stops run oldest first. That the gold thread
+//     never rises on the cloth is validate-loom's to check, at both widths.
+let artPatterns: ArtPattern[] = [];
+try {
+  artPatterns = readArtPatterns();
+} catch (error) {
+  errors.push(error instanceof Error ? error.message : String(error));
+}
+const catalogueWork = new Map(artCatalogue.works.map((work) => [work.id, work]));
+for (const pattern of artPatterns) {
+  const where = `art/patterns/${pattern.id}.json`;
+  const stops = pattern.stops.map((stop) => stop.work);
+  const seen = new Set<string>();
+  for (const id of [...stops, ...(pattern.members ?? [])]) {
+    if (!catalogueWork.has(id)) errors.push(`${where}: "${id}" is not a work in the catalogue`);
+    if (seen.has(id)) errors.push(`${where}: "${id}" is listed twice`);
+    seen.add(id);
+  }
+  for (let index = 1; index < stops.length; index++) {
+    const before = catalogueWork.get(stops[index - 1]);
+    const after = catalogueWork.get(stops[index]);
+    if (before && after && after.sortYear < before.sortYear) {
+      errors.push(`${where}: stop "${after.id}" (${after.year}) is older than the stop before it`);
+    }
+  }
+}
+
 console.log(
-  `Art catalogue: ${artCatalogue.works.length} works from ${artEntries.length} shelf entries.`,
+  `Art catalogue: ${artCatalogue.works.length} works from ${artEntries.length} shelf entries, ${artPatterns.length} Patterns.`,
 );
 console.log(
   `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Constellations: ${constellationCount} · Disputed topics: ${info.length}`,

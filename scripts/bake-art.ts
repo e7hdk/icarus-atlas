@@ -1,8 +1,8 @@
 /** Derive the Loom's catalogue and write it to data/generated/art-catalogue.json
  *  (docs/LOOM_PLAN.md §4). Offline: it reads the culture shelves, the committed
- *  Commons metadata and data/art/overrides.json. A content signature skips an
- *  unchanged bake. Run via `pnpm bake-art` (also chained into `pnpm dev` and
- *  `pnpm build`). */
+ *  Commons metadata, data/art/overrides.json and the Patterns in data/art/patterns/.
+ *  A content signature skips an unchanged bake. Run via `pnpm bake-art` (also
+ *  chained into `pnpm dev` and `pnpm build`). */
 
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -11,7 +11,7 @@ import { buildCatalogue, CATALOGUE_VERSION } from '../src/features/art/catalogue
 import { buildDoorData, buildDoorDetails, DOOR_VERSION, type AtlasManifest } from '../src/features/art/door';
 import type { Character, Relation } from '../src/types/character';
 import type { Story } from '../src/types/story';
-import { ART_CATALOGUE_PATH, readArtCommons, readArtOverrides, readShelfEntries } from './lib/art-sources';
+import { ART_CATALOGUE_PATH, readArtCommons, readArtOverrides, readArtPatterns, readShelfEntries } from './lib/art-sources';
 
 const DATA = join(import.meta.dirname, '..', 'data');
 const readDir = <T>(dir: string): T[] =>
@@ -23,6 +23,13 @@ const readDir = <T>(dir: string): T[] =>
 const entries = readShelfEntries();
 const commons = readArtCommons().files;
 const overrides = readArtOverrides();
+const patterns = readArtPatterns();
+const sourceNames = Object.fromEntries(
+  (JSON.parse(readFileSync(join(DATA, 'sources.json'), 'utf-8')) as { id: string; name: string }[]).map((source) => [
+    source.id,
+    source.name,
+  ]),
+);
 const stories = readDir<Story>('stories');
 const characters = readDir<Character>('characters');
 const relations = JSON.parse(readFileSync(join(DATA, 'relations.json'), 'utf-8')) as Relation[];
@@ -43,6 +50,8 @@ const signature = createHash('sha1')
       entries,
       commons,
       overrides,
+      patterns,
+      sourceNames,
       stories: stories.map((story) => [story.id, story.parent, story.cast.map((member) => member.id)]),
       characters: characters.map((c) => [c.id, c.name, c.romanName, c.type]),
       relations: relations.map((relation) => [relation.from, relation.to]),
@@ -77,7 +86,7 @@ console.log(
 // The door shows only works the atlas holds: a culture batch waits for the next
 // atlas bake, and the cloth never has a hole (LOOM_PLAN §6).
 if (manifest) {
-  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest, characters)));
+  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest, characters, patterns, sourceNames)));
   writeFileSync(DETAILS_PATH, JSON.stringify(buildDoorDetails(works, captions, commons, characters, stories)));
   console.log('Wrote the door data → public/art/loom.json, public/art/details.json');
 }

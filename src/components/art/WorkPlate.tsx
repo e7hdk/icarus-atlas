@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';
-import { MEDIUM_LABEL, workImageUrl, type LoomWork } from '@/features/art/door';
+import { MEDIUM_LABEL, workImageUrl, type LoomPatternStop, type LoomWork } from '@/features/art/door';
 import { useWorkDetails } from '@/features/art/useWorkDetails';
 import { SAGA_ACCENT, SAGA_LABEL } from '@/features/stories/sagas';
 
@@ -12,17 +12,36 @@ const FRAME_SHADOW =
   'shadow-[0_0_0_1px_rgba(252,211,77,.4),0_0_0_6px_#05020f,0_0_0_7px_rgba(252,211,77,.16),0_34px_90px_rgba(0,0,0,.7)]';
 const CHIP =
   'rounded-full border border-glass-border bg-glass px-2.5 pb-[3px] pt-0.5 font-body text-[15px] text-aether transition-colors hover:border-star-olympian/50 hover:text-star-olympian';
+const KICKER = 'mb-[7px] font-display text-[10px] font-normal tracking-[0.24em] text-aether-faint';
+
+/** Hover footnote superscript (tellers + citation), the codex idiom. */
+function Footnote({ text }: { text: string }) {
+  return (
+    <span className="group/fn relative ml-0.5 cursor-default align-super font-body text-[13px] not-italic text-aether-faint">
+      1
+      <span className="pointer-events-none absolute bottom-full right-0 z-10 mb-1.5 hidden whitespace-nowrap rounded-lg border border-star-olympian/40 bg-cosmos-raised px-2.5 py-1 font-body text-sm not-italic text-aether group-hover/fn:block">
+        {text}
+      </span>
+    </span>
+  );
+}
 
 /** One work, full height: the end of the zoom, and of the Loom's reading path. Arrow
- *  keys walk to the neighbouring work in time; Escape returns to the cloth. */
+ *  keys walk to the neighbouring work in time; Escape returns to the cloth. A stop on a
+ *  Pattern says what the thread finds there, and the thread can be followed from it. */
 export function WorkPlate({
   work,
+  stops,
   onClose,
   onStep,
+  onFollow,
 }: {
   work: LoomWork;
+  /** The Patterns whose thread passes through this work. */
+  stops: { pattern: number; title: string; stop: LoomPatternStop }[];
   onClose: () => void;
   onStep: (step: number) => void;
+  onFollow: (pattern: number) => void;
 }) {
   const details = useWorkDetails(true);
   const detail = details?.[work.id];
@@ -82,13 +101,39 @@ export function WorkPlate({
           <>
             <p className="mt-[18px] font-body text-[19px] leading-[1.42] text-aether/90">{detail.caption}</p>
             <WorkCredit credit={detail.credit} className="mt-3" />
+            {stops.map(({ pattern, title, stop }) => (
+              <div key={pattern} className="mt-5 border-t border-white/10 pt-[13px]">
+                <h4 className={KICKER}>{`PATTERN · ${title.toUpperCase()}`}</h4>
+                {stop.note && (
+                  <p className="font-body text-[17.5px] leading-[1.4] text-aether/90">
+                    {stop.note}
+                    {stop.footnote && <Footnote text={stop.footnote} />}
+                  </p>
+                )}
+                {stop.evidence && (
+                  <a
+                    href={stop.evidence}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block font-body text-[14px] italic text-aether-faint transition-colors hover:text-aether"
+                  >
+                    Evidence ↗
+                  </a>
+                )}
+                <button
+                  type="button"
+                  onClick={() => onFollow(pattern)}
+                  className="mt-2 block font-body text-[16.5px] italic text-star-olympian transition-colors hover:text-[#fde68a]"
+                >
+                  Follow the thread through the cloth
+                </button>
+              </div>
+            ))}
             {(detail.figures.length > 0 || detail.stories.length > 0) && (
               <div className="mt-5 border-t border-white/10 pt-[13px]">
                 {detail.figures.length > 0 && (
                   <>
-                    <h4 className="mb-[7px] font-display text-[10px] font-normal tracking-[0.24em] text-aether-faint">
-                      STARS IN THIS WORK
-                    </h4>
+                    <h4 className={KICKER}>STARS IN THIS WORK</h4>
                     <div className="flex flex-wrap gap-[5px]">
                       {detail.figures.map((figure) => (
                         <Link key={figure.id} href={`/character/${figure.id}`} className={CHIP}>

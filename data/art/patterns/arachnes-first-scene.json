@@ -1,0 +1,36 @@
+{
+  "id": "arachnes-first-scene",
+  "title": "Arachne's first scene",
+  "summary": "Ovid opens Arachne's tapestry with Europa carried off by the bull. Titian painted the scene, Rubens copied his canvas and later gave it to Arachne's own loom, and Velázquez hung it on the back wall of his.",
+  "stops": [
+    {
+      "work": "titian-the-rape-of-europa",
+      "note": "Europa on the bull: the first scene Ovid has Arachne weave.",
+      "citation": "Metamorphoses 6.103–107",
+      "sources": ["ovid"]
+    },
+    {
+      "work": "rubens-the-rape-of-europa",
+      "note": "Rubens copied Titian's canvas in 1628–29.",
+      "evidence": "https://en.wikipedia.org/wiki/The_Rape_of_Europa_(Titian)"
+    },
+    {
+      "work": "rubens-pallas-and-arachne",
+      "note": "Pallas strikes Arachne before her tapestry, and the tapestry is Titian's Europa.",
+      "citation": "Metamorphoses 6.129–133",
+      "sources": ["ovid"],
+      "evidence": "https://en.wikipedia.org/wiki/Pallas_and_Arachne"
+    },
+    {
+      "work": "velazquez-las-hilanderas-the-fable-of-arachne",
+      "note": "On the back wall hangs Arachne's tapestry, a copy of Titian's Europa.",
+      "evidence": "https://en.wikipedia.org/wiki/Las_Hilanderas"
+    }
+  ],
+  "members": [
+    "rembrandt-the-abduction-of-europa",
+    "reni-the-rape-of-europa",
+    "houasse-minerva-and-arachne",
+    "goya-the-rape-of-europa"
+  ]
+}

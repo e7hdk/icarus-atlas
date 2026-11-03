@@ -1,20 +1,37 @@
 'use client';
 
+import { useState } from 'react';
+import type { LoomDoor } from '@/features/art/door';
 import { SAGA_ACCENT, SAGA_ORDER } from '@/features/stories/sagas';
 import { useLoomStore } from '@/features/art/store';
 import { WEIGHT_LABEL } from './LoomLabels';
+import { LoomPatternSheet } from './LoomPatternSheet';
 
 const CHIP =
   'flex shrink-0 items-center gap-1.5 rounded-full border px-3 pb-[5px] pt-1 font-body text-[14.5px] backdrop-blur-md transition-colors';
 
 /** On a phone the clay weights become a strip of chips along the bottom, with turning
- *  the cloth one tap away at its start. It steps aside while a web is held. */
-export function LoomChips({ onTurn }: { onTurn: () => void }) {
+ *  the cloth and the Patterns one tap away at its start. It steps aside while a web is
+ *  held. */
+export function LoomChips({
+  door,
+  onTurn,
+  onPattern,
+}: {
+  door: LoomDoor;
+  onTurn: () => void;
+  onPattern: (pattern: number | null) => void;
+}) {
   const saga = useLoomStore((state) => state.saga);
   const setSaga = useLoomStore((state) => state.setSaga);
   const face = useLoomStore((state) => state.face);
   const focus = useLoomStore((state) => state.focus);
+  const pattern = useLoomStore((state) => state.pattern);
+  const [patternsOpen, setPatternsOpen] = useState(false);
   if (focus !== null) return null;
+  if (patternsOpen) {
+    return <LoomPatternSheet door={door} onPattern={onPattern} onClose={() => setPatternsOpen(false)} />;
+  }
 
   return (
     <nav
@@ -28,6 +45,20 @@ export function LoomChips({ onTurn }: { onTurn: () => void }) {
       >
         {face ? 'TURN IT BACK' : 'TURN THE CLOTH'}
       </button>
+      {!face && door.patterns.length > 0 && (
+        <button
+          type="button"
+          aria-haspopup="dialog"
+          onClick={() => setPatternsOpen(true)}
+          className={`shrink-0 rounded-full border px-3.5 py-1.5 font-display text-[10px] tracking-[0.16em] backdrop-blur-md ${
+            pattern === null
+              ? 'border-glass-border bg-cosmos-deep/80 text-aether-muted'
+              : 'border-star-olympian/60 bg-cosmos-deep/90 text-star-olympian'
+          }`}
+        >
+          {pattern === null ? 'PATTERNS' : door.patterns[pattern].title.toUpperCase()}
+        </button>
+      )}
       {SAGA_ORDER.map((id) => (
         <button
           key={id}

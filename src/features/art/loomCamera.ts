@@ -147,6 +147,22 @@ export class LoomCamera {
     this.goal.s = this.face ? this.home.s * 0.88 : this.home.s;
   }
 
+  /** Rows `top` to `bottom` in one view, as a shown Pattern needs: the whole cloth when
+   *  it fits the screen, and on a scrolling cloth as close as shows them all. */
+  frameRows(top: number, bottom: number) {
+    if (!this.scrolling) {
+      this.goHome();
+      return;
+    }
+    const room = this.viewHeight - SCROLL_MARGIN.top - SCROLL_MARGIN.bottom;
+    // A row to spare at either end, so the first stop never sits on the beam.
+    const s = Math.min(this.home.s, room / (bottom - top + 2));
+    this.goal.s = s;
+    this.goal.x = this.clothWidth / 2;
+    this.goal.y = (top + bottom) / 2 + (SCROLL_MARGIN.bottom - SCROLL_MARGIN.top) / 2 / s;
+    this.keepInView();
+  }
+
   /** Turn to the back of the cloth, or back to its face. */
   turn(face: boolean) {
     this.face = face;
@@ -260,7 +276,8 @@ export class LoomCamera {
 
   /** Zoom toward a screen point, keeping the cell under it in place. */
   zoomAt(factor: number, screenX: number, screenY: number, max = MAX_SCALE) {
-    const s = Math.min(max, Math.max(this.home.s * 0.8, this.goal.s * factor));
+    // A view framed wider than home, such as a Pattern on a phone, may stay that wide.
+    const s = Math.min(max, Math.max(Math.min(this.home.s * 0.8, this.goal.s), this.goal.s * factor));
     const dx = screenX - this.viewWidth / 2;
     const dy = screenY - this.viewHeight / 2;
     this.goal.x += this.across * (dx / this.goal.s - dx / s);

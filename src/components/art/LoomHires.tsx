@@ -82,9 +82,14 @@ export function LoomHires({
       const [left, top] = rig.toCell(0, 0);
       const [right, bottom] = rig.toCell(rig.viewWidth, rig.viewHeight);
       const filters = useLoomStore.getState();
+      const lit = filters.pattern === null ? null : door.patterns[filters.pattern].lit;
       const visible = door.works.filter(
         (work) =>
-          work.x + work.w >= left && work.x <= right && work.row + work.h >= top && work.row <= bottom && !isDimmed(work, filters),
+          work.x + work.w >= left &&
+          work.x <= right &&
+          work.row + work.h >= top &&
+          work.row <= bottom &&
+          !isDimmed(work, filters, lit),
       );
       visible.sort((a, b) => fromCentre(a) - fromCentre(b));
       const keep = new Set<number>();

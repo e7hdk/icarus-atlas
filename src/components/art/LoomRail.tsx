@@ -18,23 +18,27 @@ function Dot({ on }: { on: boolean }) {
   );
 }
 
-/** The right rail: turning the cloth, the medium filter on its face, and while a work
- *  is held, that work's threads. */
+/** The right rail: turning the cloth, the Patterns and the medium filter on its face,
+ *  and while a work is held, that work's threads. */
 export function LoomRail({
   door,
   onTurn,
+  onPattern,
   onAlong,
   onOpen,
   onRelease,
 }: {
   door: LoomDoor;
   onTurn: () => void;
+  /** Show a Pattern's gold thread, or none with null. */
+  onPattern: (pattern: number | null) => void;
   /** Lift along one thread, or back to all of them with null. */
   onAlong: (thread: number | null) => void;
   onOpen: () => void;
   onRelease: () => void;
 }) {
   const medium = useLoomStore((state) => state.medium);
+  const pattern = useLoomStore((state) => state.pattern);
   const setMedium = useLoomStore((state) => state.setMedium);
   const focus = useLoomStore((state) => state.focus);
   const only = useLoomStore((state) => state.only);
@@ -72,6 +76,28 @@ export function LoomRail({
         <p className="-mt-2 mb-[18px] font-body text-[14.5px] italic leading-[1.3] text-aether-muted">
           {`The back of the cloth: ${door.threads.length} figures, ${totals.stitches.toLocaleString('en')} stitches. Each thread falls from a figure’s oldest work to its newest. The bright ones cross the tear: ${totals.crossing} figures seen on both sides of it.`}
         </p>
+      )}
+      {!face && !held && door.patterns.length > 0 && (
+        <section className="mb-[22px]">
+          <h2 className={HEADING}>PATTERNS</h2>
+          {door.patterns.map((item, index) => (
+            <button
+              key={item.id}
+              type="button"
+              aria-pressed={pattern === index}
+              onClick={() => onPattern(pattern === index ? null : index)}
+              className={`${RAIL_BUTTON} ${pattern === index ? 'text-star-olympian' : 'text-aether-muted'}`}
+            >
+              <Dot on={pattern === index} />
+              {item.title}
+            </button>
+          ))}
+          {pattern !== null && (
+            <p className="mt-3 font-body text-[14.5px] italic leading-[1.3] text-aether-muted">
+              {door.patterns[pattern].summary}
+            </p>
+          )}
+        </section>
       )}
       {!face && !held && (
         <section>
