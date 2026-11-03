@@ -5,13 +5,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
-import { decodeDoor, stopsAt, type LoomDoor, type LoomWork } from '@/features/art/door';
+import { decodeDoor, stopsAt, subjectOf, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { LoomCamera, MAX_SCALE, WEB_MAX_SCALE } from '@/features/art/loomCamera';
 import { LIFT, LoomWeb } from '@/features/art/loomWeb';
 import { useLoomStore } from '@/features/art/store';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import { MOBILE_TAP_SLOP, useIsMobile } from '@/lib/useIsMobile';
 import type { LoomDoorData } from '@/types/art';
 import { LoomChips } from './LoomChips';
@@ -267,19 +268,47 @@ export function LoomView() {
     rig.letGo();
   }, [rig, web]);
 
-  /** Show a Pattern's gold thread, or none: the whole cloth where it fits the screen,
-   *  and on a phone the rows its stops fall through. */
+  /** The view for a set of works: the whole cloth where it fits the screen, and on a
+   *  phone the rows they fall through. */
+  const frameWorks = useCallback(
+    (works: LoomWork[]) => {
+      if (!works.length) return;
+      rig.frameRows(Math.min(...works.map((work) => work.row)), Math.max(...works.map((work) => work.row + work.h)));
+    },
+    [rig],
+  );
+
+  /** Show a Pattern's gold thread, or none. */
   const showPattern = useCallback(
     (index: number | null) => {
       if (!door) return;
       release();
       useLoomStore.getState().setPattern(index);
-      if (index === null) return;
-      const stops = door.patterns[index].stops.map(({ work }) => door.works[work]);
-      rig.frameRows(Math.min(...stops.map((work) => work.row)), Math.max(...stops.map((work) => work.row + work.h)));
+      if (index !== null) frameWorks(door.patterns[index].stops.map(({ work }) => door.works[work]));
     },
-    [door, release, rig],
+    [door, release, frameWorks],
   );
+
+  // A deep link opens the door on a figure, a story or a saga (LOOM_PLAN §7, Filters):
+  // `/art?figure=perseus`, `/art?story=daedalus-icarus`, `/art?saga=trojan`.
+  useEffect(() => {
+    if (!door) return;
+    const params = new URLSearchParams(window.location.search);
+    const store = useLoomStore.getState();
+    const saga = params.get('saga');
+    if (saga && (SAGA_ORDER as readonly string[]).includes(saga)) store.setSaga(saga as SagaId);
+    const figure = params.get('figure');
+    const story = params.get('story');
+    const subject = figure ? subjectOf(door, 'figure', figure) : story ? subjectOf(door, 'story', story) : null;
+    store.setSubject(subject);
+    if (subject) frameWorks([...subject.works].map((index) => door.works[index]));
+  }, [door, frameWorks]);
+
+  /** Back to the whole cloth from a deep link's subject, and the address with it. */
+  const clearSubject = useCallback(() => {
+    useLoomStore.getState().setSubject(null);
+    if (window.location.pathname === '/art' && window.location.search) window.history.replaceState(null, '', '/art');
+  }, []);
 
   const turn = useCallback(
     (face: boolean) => {
@@ -391,10 +420,11 @@ export function LoomView() {
       if (window.location.pathname !== '/art') return;
       const typing = event.target instanceof HTMLElement && event.target.closest('input, textarea, [contenteditable]');
       if (event.key === 'Escape') {
-        // Escape steps back one level: the web, the Pattern, then the whole cloth.
-        const { focus, pattern, setPattern } = useLoomStore.getState();
+        // Escape steps back one level: the web, the Pattern, the subject, then home.
+        const { focus, pattern, setPattern, subject } = useLoomStore.getState();
         if (focus !== null) release();
         else if (pattern !== null) setPattern(null);
+        else if (subject) clearSubject();
         else rig.goHome();
       }
       if (!typing && !event.metaKey && !event.ctrlKey && event.key.toLowerCase() === 't') {
@@ -407,7 +437,7 @@ export function LoomView() {
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [rig, release, turn]);
+  }, [rig, release, turn, clearSubject]);
 
   useEffect(() => {
     const element = surface.current;
@@ -567,7 +597,12 @@ export function LoomView() {
           <LoomTitle />
           {phone ? (
             <>
-              <LoomChips door={door} onTurn={() => turn(!useLoomStore.getState().face)} onPattern={showPattern} />
+              <LoomChips
+                door={door}
+                onTurn={() => turn(!useLoomStore.getState().face)}
+                onPattern={showPattern}
+                onClearSubject={clearSubject}
+              />
               <LoomSheet
                 door={door}
                 onAlong={(thread) => {
@@ -584,6 +619,7 @@ export function LoomView() {
               door={door}
               onTurn={() => turn(!useLoomStore.getState().face)}
               onPattern={showPattern}
+              onClearSubject={clearSubject}
               onAlong={(thread) => {
                 if (web.focus !== null) pull(door.works[web.focus], thread);
               }}

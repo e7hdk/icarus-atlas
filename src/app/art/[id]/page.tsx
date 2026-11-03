@@ -2,22 +2,42 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { LoomView } from '@/components/art/LoomView';
 import { SettingsPanel } from '@/components/hud/SettingsPanel';
-import { loadArtCatalogue } from '@/features/art/load';
+import type { Metadata } from 'next';
+import { commonsThumbSteps } from '@/features/art/commons';
+import { workImageUrl } from '@/features/art/door';
+import { loadArtCatalogue, loadPreviewPolicy } from '@/features/art/load';
 import { loadAtlasData } from '@/features/characters/load';
+import { LOOM_SHARE_IMAGE } from '../share';
 
 export async function generateStaticParams() {
   const { works } = await loadArtCatalogue();
   return works.map((work) => ({ id: work.id }));
 }
 
-export async function generateMetadata(props: { params: Promise<{ id: string }> }) {
+/** One painting can be shared on its own (docs/LOOM_PLAN.md §8): its link previews as
+ *  the work, from Commons, or as the cloth where the work is nude (§10). */
+export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await props.params;
-  const { works, captions } = await loadArtCatalogue();
+  const [{ works, captions }, previewable] = await Promise.all([loadArtCatalogue(), loadPreviewPolicy()]);
   const work = works.find((candidate) => candidate.id === id);
   if (!work) return {};
+  const title = `${work.title} — Icarus Atlas`;
+  const description = captions[id] || `${work.title}, ${work.artist}, ${work.year}.`;
+  const [step] = commonsThumbSteps(work.width, 1280);
+  const width = step ?? work.width;
+  const image = previewable(work)
+    ? {
+        url: workImageUrl(work, 1280),
+        width,
+        height: Math.round((width * work.height) / work.width),
+        alt: `${work.title}, ${work.artist}, ${work.year}`,
+      }
+    : LOOM_SHARE_IMAGE;
   return {
-    title: `${work.title} — Icarus Atlas`,
-    description: captions[id] || `${work.title}, ${work.artist}, ${work.year}.`,
+    title,
+    description,
+    openGraph: { title, description, type: 'article', images: [image] },
+    twitter: { card: 'summary_large_image', images: [image.url] },
   };
 }
 

@@ -2,10 +2,12 @@ import type { CultureData } from '@/types/character';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import { CultureShelves, cultureHasAnything } from '@/components/culture/CultureShelves';
+import { LoomBridge } from '@/components/art/LoomBridge';
 
 /** Cultural legacy of a saga (data/story-culture/*.json): the artwork gallery
- *  plus the M8 reception shelves (artifacts, screen, music, pop culture). */
-export function StoryLegacy({ culture }: { culture: CultureData }) {
+ *  plus the M8 reception shelves (artifacts, screen, music, pop culture), and the way
+ *  onto the Loom, where every work that tells the story hangs. */
+export function StoryLegacy({ culture, loom }: { culture: CultureData; loom?: { href: string; count: number } }) {
   if (!cultureHasAnything(culture)) return null;
 
   return (
@@ -13,6 +15,7 @@ export function StoryLegacy({ culture }: { culture: CultureData }) {
       <h2 className="text-center font-display text-[12px] uppercase tracking-[0.3em] text-aether-faint">
         How the centuries saw it
       </h2>
+      {loom && loom.count > 0 && <LoomBridge href={loom.href} count={loom.count} className="mx-auto mt-5" />}
       {culture.artworks.length > 0 && (
         <div className="mt-10 flex flex-col gap-16">
           {culture.artworks.map((artwork, index) => (

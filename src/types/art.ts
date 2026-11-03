@@ -76,6 +76,9 @@ export interface ArtWorkOverride {
   span?: [number, number];
   /** Tile crop centre, 0..1. */
   focus?: [number, number];
+  /** Whether a shared link previews as the work itself: false shows the cloth instead,
+   *  true overrides the nudity read from Commons categories (docs/LOOM_PLAN.md §10). */
+  preview?: boolean;
 }
 
 export interface ArtOverrides {
@@ -173,6 +176,9 @@ export interface LoomDoorData {
   works: LoomWorkRow[];
   /** Every figure some work shows, as [id, name]; the threads are built from these. */
   figures: [string, string][];
+  /** Every story some work is linked to, as [id, title, work indices], so a deep link
+   *  such as `/art?story=…` can light its works. */
+  stories: [string, string, number[]][];
   patterns: LoomDoorPattern[];
   desktop: LoomDoorLayout;
   phone: LoomDoorLayout;

@@ -17,7 +17,7 @@ import { buildLoomLayout, LOOM_WIDTH, type LoomLayout } from './loom';
 import { buildThreads, type LoomThread } from './threads';
 
 /** Bumped whenever public/art/loom.json changes shape, so the bake rewrites it. */
-export const DOOR_VERSION = 3;
+export const DOOR_VERSION = 4;
 
 /** The Art door's client data (docs/LOOM_PLAN.md §4.8). `pnpm bake-art` writes it to
  *  public/art/ instead of each page embedding it, because `/art/[id]` is prerendered
@@ -63,6 +63,7 @@ export function buildDoorData(
   catalogue: ArtWork[],
   manifest: AtlasManifest,
   characters: Character[],
+  stories: Story[],
   patterns: ArtPattern[],
   sourceNames: Record<string, string>,
 ): LoomDoorData {
@@ -94,6 +95,10 @@ export function buildDoorData(
   return {
     works: rows,
     figures: figureIds.map((id): [string, string] => [id, names.get(id) ?? id]),
+    stories: stories.flatMap((story): [string, string, number[]][] => {
+      const linked = works.flatMap((work, index) => (work.stories.includes(story.id) ? [index] : []));
+      return linked.length ? [[story.id, story.title, linked]] : [];
+    }),
     // A work the atlas does not hold yet drops out of its Pattern until the next bake.
     patterns: patterns.map(
       (pattern): LoomDoorPattern => ({
@@ -192,6 +197,8 @@ export interface LoomDoor {
   works: LoomWork[];
   byId: Map<string, LoomWork>;
   figures: { id: string; name: string }[];
+  /** Works linked to each story, by story id. */
+  stories: Map<string, { title: string; works: number[] }>;
   patterns: LoomPattern[];
   threads: LoomThread[];
   /** Thread indices per work. */
@@ -240,6 +247,7 @@ export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
     works,
     byId: new Map(works.map((work) => [work.id, work])),
     figures,
+    stories: new Map(data.stories.map(([id, title, linked]) => [id, { title, works: linked }])),
     patterns: data.patterns.map((pattern) => ({
       ...pattern,
       lit: new Set([...pattern.stops.map((stop) => stop.work), ...pattern.members]),
@@ -250,6 +258,23 @@ export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
     layout,
     sheet: data.sheet,
   };
+}
+
+/** A deep link's subject (docs/LOOM_PLAN.md §7, Filters): the works that show a figure
+ *  or tell a story, and what to call them. Null for an id the door does not know. */
+export function subjectOf(
+  door: LoomDoor,
+  kind: 'figure' | 'story',
+  id: string,
+): { kind: 'figure' | 'story'; id: string; label: string; works: Set<number> } | null {
+  if (kind === 'story') {
+    const story = door.stories.get(id);
+    return story ? { kind, id, label: story.title, works: new Set(story.works) } : null;
+  }
+  const figure = door.figures.findIndex((candidate) => candidate.id === id);
+  if (figure < 0) return null;
+  const works = door.works.filter((work) => work.figures.includes(figure)).map((work) => work.index);
+  return { kind, id, label: door.figures[figure].name, works: new Set(works) };
 }
 
 /** The Patterns whose gold thread passes through a work, with what each says there. */

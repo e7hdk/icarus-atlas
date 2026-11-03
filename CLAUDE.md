@@ -52,15 +52,18 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 src/
   app/                  # Next.js routes
     character/[id]/     # character codex: Poets (page.tsx), info/, legacy/
+    art/                # the Loom: /art, a work's plate at /art/[id], /art/list
   components/
     galaxy/             # R3F scene: GalaxyCanvas, StarField, Star, CameraRig, effects
     character/          # CharacterShell, PoetsView, RelationOrrery (codex routes)
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
+    art/                # the Loom: LoomView, LoomScene (cloth + web), rails, sheets, plate
   features/
     lens/               # source-lens state + fact-filtering logic
     characters/         # character loading, relation/ring grouping
     search/             # name search
+    art/                # catalogue rules, layout engine (loom.ts), door data, camera, web
   lib/                  # utils, zod schemas, three helpers
   types/                # shared TS types (character.ts is the contract)
 data/
@@ -70,6 +73,7 @@ data/
   reference/*.json      # neutral encyclopedic facts (Information tab; CC BY-SA attributed)
   culture/*.json        # cultural legacy items, artworks for now (Legacy page)
   art/overrides.json    # the Loom's catalogue exceptions, keyed by Commons file (docs/LOOM_PLAN.md)
+  art/patterns/*.json   # curated Patterns: gold threads through one gesture, cited per stop
   stories/*.json        # myths as stories: sourced chapters, cast, places, attestations
   geo/                  # regions.json, cities.json (Pleiades CC BY), generated basemap.json
   lineages/*.json       # per-city royal successions, sources-tagged reigns
@@ -106,7 +110,20 @@ Geography becomes the second major axis beside the galaxy. Status: IN PROGRESS �
 
 ## Feature: Stories — the mythic sagas
 
-The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS · MYTHS nav; the Heortologion at `/festivals` is an Ephemeris satellite page, entered from the daily card, not a nav door). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate. The Myths door is the **Spindle of Time** spun with the **River of Myth** layout (docs/MYTHS_RIVER_PLAN.md — engine `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`, wound onto the spindle by `threadedSpindle.ts`): each saga one thread, its stories stars on it in time order, threads touching where the sources say the myths meet. Run `pnpm validate-myth-river` after story or crossing edits.
+The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS · MYTHS · ART nav; the Heortologion at `/festivals` is an Ephemeris satellite page, entered from the daily card, not a nav door). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate. The Myths door is the **Spindle of Time** spun with the **River of Myth** layout (docs/MYTHS_RIVER_PLAN.md — engine `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`, wound onto the spindle by `threadedSpindle.ts`): each saga one thread, its stories stars on it in time order, threads touching where the sources say the myths meet. Run `pnpm validate-myth-river` after story or crossing edits.
+
+## Feature: The Loom — the Art door
+
+The fourth door (`ART`, `/art`, docs/LOOM_PLAN.md is the contract): every image of the culture layer, one tile each, woven into a single cloth. Across run the sagas in Spindle order and colour; down run the centuries the works were made in (rank time, oldest at the beam); a gold-mended tear marks AD 500–1400. It is lens-independent, like Legacy.
+
+- **Pipeline:** `data/culture` and `data/story-culture` stay the authored source. `pnpm bake-art` derives `data/generated/art-catalogue.json` (one record per physical work) and writes the door's `public/art/loom.json` and `details.json`; `pnpm bake-loom-atlas` bakes the sprite sheets.
+- **Overrides:** exceptions live in `data/art/overrides.json`, keyed by Commons file: `sameAs`, `medium`, `sortYear`, `saga`, `figuresAdd`/`figuresRemove`, `exclude`, `span`, `focus`, `preview`.
+- **The web:** a thread per figure (two works or more) runs through the cloth. A click pulls a work with its neighbours (24 on desktop, 12 on a phone, gathered into rows there), and *Turn the cloth* shows the back.
+- **Patterns** (`data/art/patterns/*.json`) are gold threads through one gesture, with stops oldest first. An ancient claim in a note carries `citation` and `sources` (hard rules 2 and 5); an art-historical one (a copy, a descent) carries an https `evidence` link. Resemblance is never stated as influence.
+- **Ways in:** deep links `/art?figure=…`, `?story=…` and `?saga=…` open the door filtered, and the Legacy gallery, the story page, the Spindle panel and the day's artwork lead there.
+- **Sharing:** `/art/[id]` is a work's plate and shares with its own Open Graph image, or with the cloth's (`public/art/og-loom.jpg`) where Commons categories or an override mark it nude.
+- **Gates:** run `pnpm validate-loom` after art, culture or Pattern edits (it gates the layout and that every thread only falls), and `pnpm validate-data` (overrides and Patterns).
+- **Ids:** a work's id comes from its artist and title, and the atlas keys its sprites by id. Correcting either moves the sprite only after `pnpm bake-loom-atlas`, or after renaming its key in `public/art/manifest.json`.
 
 ## Current status
 

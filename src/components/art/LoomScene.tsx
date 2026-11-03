@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { FRINGE_ROWS, type LoomCamera } from '@/features/art/loomCamera';
 import type { LoomWeb } from '@/features/art/loomWeb';
-import { isDimmed, useLoomStore } from '@/features/art/store';
+import { isDimmed, litSets, useLoomStore } from '@/features/art/store';
 import { SAGA_ACCENT, SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import {
   CLOTH_FRAGMENT,
@@ -428,7 +428,7 @@ export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: L
       const filters = useLoomStore.getState();
       const { target } = state.current;
       const near = web.near(filters.peekThread);
-      const lit = filters.pattern === null ? null : door.patterns[filters.pattern].lit;
+      const lit = litSets(door, filters);
       for (const work of door.works) {
         if (!near) {
           target[work.index] = isDimmed(work, filters, lit) ? DIMMED : LIT;

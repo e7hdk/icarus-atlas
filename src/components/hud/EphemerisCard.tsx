@@ -251,6 +251,8 @@ export function EphemerisCard() {
                   meta={`${payload.artwork.artist}, ${payload.artwork.year}`}
                   credit={payload.artwork.credit}
                   className="h-40 w-full"
+                  href={payload.artwork.workId ? `/art/${payload.artwork.workId}` : undefined}
+                  onFollow={() => setCardOpen(false)}
                 />
               </div>
               <p className="mt-1.5 font-body text-[12px] italic text-aether-faint">

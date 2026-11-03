@@ -34,9 +34,12 @@ export function StoryPanel({
   onSelectEpisode,
   onStepEarlier,
   onStepLater,
+  loomCount = 0,
 }: {
   story: Story;
   episodes: Story[];
+  /** How many works on the Loom tell this story; above zero the panel leads there. */
+  loomCount?: number;
   onClose: () => void;
   onSelectEpisode: (id: string) => void;
   /** Mobile ‹ › walk through time — the panel's stand-in for the arrow keys. */
@@ -232,6 +235,17 @@ export function StoryPanel({
           <span>Enter the saga</span>
           <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </Link>
+        {loomCount > 0 && (
+          <Link
+            href={`/art?story=${story.id}`}
+            className="mt-2.5 flex items-baseline justify-center gap-2 font-display text-[9.5px] uppercase tracking-[0.22em] text-aether-muted transition-colors hover:text-star-olympian"
+          >
+            Woven on the Loom
+            <span className="font-body text-[14px] normal-case italic tracking-normal text-aether-faint">
+              {`${loomCount} ${loomCount === 1 ? 'work' : 'works'}`}
+            </span>
+          </Link>
+        )}
       </footer>
     </aside>
   );

@@ -6,6 +6,7 @@
 
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { loadLoomIndex } from '@/features/art/load';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
 import { bondsFor } from '@/features/characters/relations';
 import { loadPlaces } from '@/features/geo/load';
@@ -364,8 +365,9 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
   const character = context.charactersById.get(id);
   if (!character) return null;
 
-  const culture = await loadCulture(id);
+  const [culture, loom] = await Promise.all([loadCulture(id), loadLoomIndex()]);
   const artwork = culture?.artworks[0] ?? null;
+  const workId = artwork ? loom.workForImage(artwork.imageUrl) : null;
   const featured = storiesFeaturingCharacter(context.stories, id);
   const story = featured[0] ?? null;
   const residence = character.residences?.find((entry) => context.citiesById.has(entry.city));
@@ -390,6 +392,7 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
           year: artwork.year,
           imageUrl: artwork.imageUrl,
           ...(artwork.credit ? { credit: artwork.credit } : {}),
+          ...(workId ? { workId } : {}),
         }
       : null,
     storyId: story?.id ?? null,

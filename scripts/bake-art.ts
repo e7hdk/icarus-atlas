@@ -52,7 +52,7 @@ const signature = createHash('sha1')
       overrides,
       patterns,
       sourceNames,
-      stories: stories.map((story) => [story.id, story.parent, story.cast.map((member) => member.id)]),
+      stories: stories.map((story) => [story.id, story.title, story.parent, story.cast.map((member) => member.id)]),
       characters: characters.map((c) => [c.id, c.name, c.romanName, c.type]),
       relations: relations.map((relation) => [relation.from, relation.to]),
     }),
@@ -86,7 +86,7 @@ console.log(
 // The door shows only works the atlas holds: a culture batch waits for the next
 // atlas bake, and the cloth never has a hole (LOOM_PLAN §6).
 if (manifest) {
-  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest, characters, patterns, sourceNames)));
+  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest, characters, stories, patterns, sourceNames)));
   writeFileSync(DETAILS_PATH, JSON.stringify(buildDoorDetails(works, captions, commons, characters, stories)));
   console.log('Wrote the door data → public/art/loom.json, public/art/details.json');
 }

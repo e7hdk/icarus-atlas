@@ -224,8 +224,9 @@ export interface EphemerisCardPayload {
   bonds: ProemBond[];
   /** First documented dispute told in this figure's own prose, when any. */
   quarrel: { topic: string; variants: ProemQuarrelVariant[] } | null;
-  /** First Legacy artwork, when the figure carries culture data. */
-  artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl' | 'credit'> | null;
+  /** First Legacy artwork, when the figure carries culture data; `workId` is its plate
+   *  on the Loom, when the Loom holds it. */
+  artwork: (Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl' | 'credit'> & { workId?: string }) | null;
   /** Earliest-era story whose cast lists the figure — the "Read the myth" door. */
   storyId: string | null;
   storyTitle: string | null;

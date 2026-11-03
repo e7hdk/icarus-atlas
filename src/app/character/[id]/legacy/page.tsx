@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
+import { loadLoomIndex } from '@/features/art/load';
 import { loadAtlasData, loadCulture, loadFlagshipCharacterIds } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
 import { storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterTabs } from '@/components/character/CharacterTabs';
 import { CharacterCodexPanel } from '@/components/character/CharacterCodexPanel';
+import { LoomBridge } from '@/components/art/LoomBridge';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import {
@@ -27,16 +29,19 @@ export async function generateStaticParams() {
 
 export default async function CharacterLegacyPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [{ characters, relations }, cities, stories] = await Promise.all([
+  const [{ characters, relations }, cities, stories, loom] = await Promise.all([
     loadAtlasData(),
     loadCities(),
     loadStories(),
+    loadLoomIndex(),
   ]);
   const character = characters.find((c) => c.id === id);
   if (!character) notFound();
 
   const culture = await loadCulture(id);
   const artworks = culture?.artworks ?? [];
+  // The shelf is a figure's selection; the Loom holds every work that shows them.
+  const onTheLoom = loom.figureWorks(id);
   const citiesById = new Map(cities.map((city) => [city.id, city]));
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
   const glow = TYPE_GLOW[character.type].color;
@@ -85,10 +90,14 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
           >
             Unchanged by any teller — how the centuries since have seen {character.name}.
           </p>
+          {artworks.length === 0 && onTheLoom > 0 && (
+            <LoomBridge href={`/art?figure=${id}`} count={onTheLoom} className="mt-8" />
+          )}
 
           {artworks.length > 0 && (
             <section id="shelf-gallery" className="mt-14 scroll-mt-6">
               <ShelfHeading>The gallery</ShelfHeading>
+              {onTheLoom > 0 && <LoomBridge href={`/art?figure=${id}`} count={onTheLoom} className="mx-auto mt-5" />}
               <div className="mt-9 flex flex-col gap-14">
                 {artworks.map((artwork, index) => (
                   <figure

@@ -21,6 +21,19 @@ import { buildRiverLayout, toRiverScene } from '../src/features/stories/river';
 import { toSkyCharacter, type SourcedText } from '../src/types/character';
 
 const LINKED_PROSE = join('data', 'generated', 'linked-prose.json');
+const ART_CATALOGUE = join('data', 'generated', 'art-catalogue.json');
+
+/** How many works on the Loom tell each story, for the Spindle's way onto it. */
+function loomStoryCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  try {
+    const { works } = JSON.parse(readFileSync(ART_CATALOGUE, 'utf-8')) as { works: { stories: string[] }[] };
+    for (const work of works) for (const story of work.stories) counts[story] = (counts[story] ?? 0) + 1;
+  } catch {
+    // Before the first art bake there is no Loom to count.
+  }
+  return counts;
+}
 
 type LinkedProseFile = { characters: Record<string, { summary: ProseSegment[][]; story: ProseSegment[][] }> };
 
@@ -64,7 +77,12 @@ async function main() {
   write(ATLAS_FILES.searchIndex, characters.map(toSearchable));
   write(ATLAS_FILES.ephemeris, ephemeris);
   write(ATLAS_FILES.galaxy, { characters: characters.map(toSkyCharacter), relations, bakedLayout });
-  write(ATLAS_FILES.myths, { stories: stories.map((story) => ({ ...story, chapters: [] })), crossings, river });
+  write(ATLAS_FILES.myths, {
+    stories: stories.map((story) => ({ ...story, chapters: [] })),
+    crossings,
+    river,
+    loom: loomStoryCounts(),
+  });
   write(ATLAS_FILES.lands, {
     regions,
     cities,

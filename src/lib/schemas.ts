@@ -152,6 +152,7 @@ export const artOverridesSchema = z.object({
         caption: z.string().min(1).optional(),
         span: z.tuple([z.number().int().min(1), z.number().int().min(1)]).optional(),
         focus: z.tuple([unitInterval, unitInterval]).optional(),
+        preview: z.boolean().optional(),
       })
       .strict(),
   ),

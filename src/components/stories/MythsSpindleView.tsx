@@ -308,12 +308,15 @@ export function MythsSpindleView({
   stories,
   crossings = [],
   river,
+  loom = {},
 }: {
   stories: Story[];
   crossings?: StoryCrossing[];
   /** The River of Myth's layout, spun onto the spindle as one thread per saga
    *  (threadedSpindle.ts). */
   river: RiverScene;
+  /** How many works on the Loom tell each story. */
+  loom?: Record<string, number>;
 }) {
   const lens = useGalaxyStore((s) => s.lens);
   const isMobile = useIsMobile();
@@ -629,6 +632,7 @@ export function MythsSpindleView({
           key={selectedStory.id}
           story={selectedStory}
           episodes={episodes}
+          loomCount={loom[selectedStory.id] ?? 0}
           onClose={() => select(null)}
           onSelectEpisode={select}
           onStepEarlier={() => stepInTime(false)}

@@ -24,6 +24,7 @@ export function LoomRail({
   door,
   onTurn,
   onPattern,
+  onClearSubject,
   onAlong,
   onOpen,
   onRelease,
@@ -32,6 +33,8 @@ export function LoomRail({
   onTurn: () => void;
   /** Show a Pattern's gold thread, or none with null. */
   onPattern: (pattern: number | null) => void;
+  /** Back to the whole cloth from a deep link's figure or story. */
+  onClearSubject: () => void;
   /** Lift along one thread, or back to all of them with null. */
   onAlong: (thread: number | null) => void;
   onOpen: () => void;
@@ -39,6 +42,7 @@ export function LoomRail({
 }) {
   const medium = useLoomStore((state) => state.medium);
   const pattern = useLoomStore((state) => state.pattern);
+  const subject = useLoomStore((state) => state.subject);
   const setMedium = useLoomStore((state) => state.setMedium);
   const focus = useLoomStore((state) => state.focus);
   const only = useLoomStore((state) => state.only);
@@ -76,6 +80,22 @@ export function LoomRail({
         <p className="-mt-2 mb-[18px] font-body text-[14.5px] italic leading-[1.3] text-aether-muted">
           {`The back of the cloth: ${door.threads.length} figures, ${totals.stitches.toLocaleString('en')} stitches. Each thread falls from a figure’s oldest work to its newest. The bright ones cross the tear: ${totals.crossing} figures seen on both sides of it.`}
         </p>
+      )}
+      {!face && !held && subject && (
+        <section className="mb-[22px]">
+          <h2 className={HEADING}>SHOWING</h2>
+          <p className="font-display text-[15px] leading-[1.28] tracking-[0.03em] text-star-olympian">{subject.label}</p>
+          <p className="mt-1 font-body text-[14.5px] italic text-aether-muted">
+            {`${subject.works.size} ${subject.works.size === 1 ? 'work' : 'works'} on the cloth`}
+          </p>
+          <button
+            type="button"
+            onClick={onClearSubject}
+            className="mt-1.5 block font-body text-[14.5px] italic text-aether-faint transition-colors hover:text-aether"
+          >
+            The whole cloth · Esc
+          </button>
+        </section>
       )}
       {!face && !held && door.patterns.length > 0 && (
         <section className="mb-[22px]">

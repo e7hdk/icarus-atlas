@@ -12,6 +12,8 @@ export interface MythsData {
   stories: Story[];
   crossings: StoryCrossing[];
   river: RiverScene;
+  /** How many works on the Loom tell each story, by story id. */
+  loom: Record<string, number>;
 }
 
 /** The Myths door: the River of Myth is laid out at bake time and preloaded by the
@@ -20,5 +22,5 @@ export function MythsDoor() {
   const { data, failed } = useAtlasFile<MythsData>(ATLAS_FILES.myths);
   if (failed) return <DoorUnavailable what="The spindle" />;
   if (!data) return null;
-  return <MythsSpindleView stories={data.stories} crossings={data.crossings} river={data.river} />;
+  return <MythsSpindleView stories={data.stories} crossings={data.crossings} river={data.river} loom={data.loom} />;
 }

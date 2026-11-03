@@ -17,16 +17,19 @@ export function LoomChips({
   door,
   onTurn,
   onPattern,
+  onClearSubject,
 }: {
   door: LoomDoor;
   onTurn: () => void;
   onPattern: (pattern: number | null) => void;
+  onClearSubject: () => void;
 }) {
   const saga = useLoomStore((state) => state.saga);
   const setSaga = useLoomStore((state) => state.setSaga);
   const face = useLoomStore((state) => state.face);
   const focus = useLoomStore((state) => state.focus);
   const pattern = useLoomStore((state) => state.pattern);
+  const subject = useLoomStore((state) => state.subject);
   const [patternsOpen, setPatternsOpen] = useState(false);
   if (focus !== null) return null;
   if (patternsOpen) {
@@ -45,6 +48,16 @@ export function LoomChips({
       >
         {face ? 'TURN IT BACK' : 'TURN THE CLOTH'}
       </button>
+      {!face && subject && (
+        <button
+          type="button"
+          aria-label={`Showing ${subject.label}; back to the whole cloth`}
+          onClick={onClearSubject}
+          className="shrink-0 rounded-full border border-star-olympian/60 bg-cosmos-deep/90 px-3.5 py-1.5 font-display text-[10px] tracking-[0.16em] text-star-olympian backdrop-blur-md"
+        >
+          {`${subject.label.toUpperCase()} · ${subject.works.size} ×`}
+        </button>
+      )}
       {!face && door.patterns.length > 0 && (
         <button
           type="button"

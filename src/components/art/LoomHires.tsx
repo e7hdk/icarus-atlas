@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { workImageUrl, type LoomDoor, type LoomWork } from '@/features/art/door';
 import type { LoomCamera } from '@/features/art/loomCamera';
-import { isDimmed, useLoomStore } from '@/features/art/store';
+import { isDimmed, litSets, useLoomStore } from '@/features/art/store';
 
 /** Past this many CSS pixels per cell a tile can be read, and the real image takes
  *  over from the woven one. */
@@ -82,7 +82,7 @@ export function LoomHires({
       const [left, top] = rig.toCell(0, 0);
       const [right, bottom] = rig.toCell(rig.viewWidth, rig.viewHeight);
       const filters = useLoomStore.getState();
-      const lit = filters.pattern === null ? null : door.patterns[filters.pattern].lit;
+      const lit = litSets(door, filters);
       const visible = door.works.filter(
         (work) =>
           work.x + work.w >= left &&
