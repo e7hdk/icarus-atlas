@@ -120,6 +120,70 @@ export const cultureSchema = z.object({
   popCulture: z.array(popCultureItemSchema).max(8).optional(),
 });
 
+/** One Commons file as `pnpm art:commons` records it (docs/LOOM_PLAN.md §4.1). */
+export const commonsFileSchema = z.object({
+  width: z.number().int().nonnegative(),
+  height: z.number().int().nonnegative(),
+  mime: z.string().min(1),
+  license: z.string().min(1).nullable(),
+  licenseUrl: z.string().url().optional(),
+  author: z.string().min(1).optional(),
+  attributionRequired: z.boolean(),
+  categories: z.array(z.string()),
+});
+
+export const artCommonsSchema = z.object({ files: z.record(z.string(), commonsFileSchema) });
+
+const unitInterval = z.number().min(0).max(1);
+
+/** Exceptions to the catalogue's derivation rules, keyed by Commons file name. */
+export const artOverridesSchema = z.object({
+  works: z.record(
+    z.string(),
+    z
+      .object({
+        exclude: z.boolean().optional(),
+        sameAs: z.array(z.string().min(1)).min(1).optional(),
+        sortYear: z.number().int().optional(),
+        medium: z.enum(['painting', 'vase', 'stone', 'wall', 'print']).optional(),
+        saga: z.string().min(1).optional(),
+        figuresAdd: z.array(z.string().min(1)).min(1).optional(),
+        figuresRemove: z.array(z.string().min(1)).min(1).optional(),
+        caption: z.string().min(1).optional(),
+        span: z.tuple([z.number().int().min(1), z.number().int().min(1)]).optional(),
+        focus: z.tuple([unitInterval, unitInterval]).optional(),
+        preview: z.boolean().optional(),
+      })
+      .strict(),
+  ),
+});
+
+/** A stop of a Pattern. An ancient claim in its note carries a citation with its
+ *  sources (hard rules 2 and 5); an art-historical one, such as a copy, an https link
+ *  to its evidence (CULTURE_PLAN §3). */
+const artPatternStopSchema = z
+  .object({
+    work: z.string().min(1),
+    note: z.string().min(1).optional(),
+    citation: z.string().min(1).optional(),
+    sources: z.array(sourceIdSchema).min(1).optional(),
+    evidence: httpsUrl.optional(),
+  })
+  .strict()
+  .refine((stop) => !stop.citation === !stop.sources, 'a citation needs its sources, and sources a citation');
+
+/** One curated Pattern, data/art/patterns/<id>.json (docs/LOOM_PLAN.md §4.6): a gesture
+ *  followed through time. Stops run oldest first; members light up off the thread. */
+export const artPatternSchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'id must be kebab-case'),
+    title: z.string().min(1),
+    summary: z.string().min(1),
+    stops: z.array(artPatternStopSchema).min(2),
+    members: z.array(z.string().min(1)).optional(),
+  })
+  .strict();
+
 /** Editorial overrides for the Ephemeris spotlight pool (docs/EPHEMERIS_PLAN.md D8).
  *  Pins are always eligible, exclusions never; validate-data forbids overlap. */
 export const spotlightOverridesSchema = z.object({

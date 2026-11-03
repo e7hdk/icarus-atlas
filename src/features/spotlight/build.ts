@@ -6,6 +6,7 @@
 
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { loadLoomIndex } from '@/features/art/load';
 import { loadAtlasData, loadCulture } from '@/features/characters/load';
 import { bondsFor } from '@/features/characters/relations';
 import { loadPlaces } from '@/features/geo/load';
@@ -327,7 +328,7 @@ function getEphemerisContext(): Promise<EphemerisContext> {
   return contextPromise;
 }
 
-/** The compact payload RootLayout hands to the client host. */
+/** The compact payload `pnpm bake-atlas-data` writes for the client host. */
 export async function buildEphemerisData(): Promise<EphemerisData> {
   const context = await getEphemerisContext();
   return {
@@ -364,8 +365,9 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
   const character = context.charactersById.get(id);
   if (!character) return null;
 
-  const culture = await loadCulture(id);
+  const [culture, loom] = await Promise.all([loadCulture(id), loadLoomIndex()]);
   const artwork = culture?.artworks[0] ?? null;
+  const workId = artwork ? loom.workForImage(artwork.imageUrl) : null;
   const featured = storiesFeaturingCharacter(context.stories, id);
   const story = featured[0] ?? null;
   const residence = character.residences?.find((entry) => context.citiesById.has(entry.city));
@@ -384,7 +386,14 @@ export async function buildCardPayload(id: string): Promise<EphemerisCardPayload
     bonds: keyBonds(id, context),
     quarrel: firstQuarrel(character, context),
     artwork: artwork
-      ? { title: artwork.title, artist: artwork.artist, year: artwork.year, imageUrl: artwork.imageUrl }
+      ? {
+          title: artwork.title,
+          artist: artwork.artist,
+          year: artwork.year,
+          imageUrl: artwork.imageUrl,
+          ...(artwork.credit ? { credit: artwork.credit } : {}),
+          ...(workId ? { workId } : {}),
+        }
       : null,
     storyId: story?.id ?? null,
     storyTitle: story?.title ?? null,

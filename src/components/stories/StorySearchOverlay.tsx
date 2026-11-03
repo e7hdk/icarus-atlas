@@ -4,19 +4,25 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Story } from '@/types/story';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { searchStories, type StorySearchHit } from '@/features/search/stories-match';
-import { SAGA_LABEL, type SpindleNode } from '@/features/stories/spindle';
+import { SAGA_LABEL, type SagaId } from '@/features/stories/sagas';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 
 /** Command-palette search (⌘K) for the Spindle of Time. Type a figure's name and
  *  every myth they walk through is laid out; choosing one rolls the spindle to
  *  that star instead of opening a codex — we already have somewhere to fly. */
+/** What the palette needs of a placed story: its saga and colour. */
+interface SearchNode {
+  sagaId: SagaId;
+  color: string;
+}
+
 export function StorySearchOverlay({
   stories,
   nodeById,
   onSelect,
 }: {
   stories: Story[];
-  nodeById: Map<string, SpindleNode>;
+  nodeById: Map<string, SearchNode>;
   onSelect: (storyId: string) => void;
 }) {
   const searchOpen = useGalaxyStore((s) => s.searchOpen);
@@ -31,7 +37,7 @@ function StorySearchDialog({
   onSelect,
 }: {
   stories: Story[];
-  nodeById: Map<string, SpindleNode>;
+  nodeById: Map<string, SearchNode>;
   onSelect: (storyId: string) => void;
 }) {
   const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);

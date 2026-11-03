@@ -11,7 +11,7 @@ import { EphemerisChip } from './EphemerisChip';
 import { OdysseyChip } from './OdysseyChip';
 
 /** The one chrome of the atlas — a fixed glass masthead on every page:
- *  brand left, the three doors centered, search ⌘K + settings right.
+ *  brand left, the four doors centered, search ⌘K + settings right.
  *  Transparent over the immersive canvases; the glass deepens once a page
  *  scrolls, and on long reads the bar steps aside on scroll-down and returns
  *  the instant the reader looks up. Codex pages add their own breadcrumb
@@ -20,6 +20,7 @@ import { OdysseyChip } from './OdysseyChip';
 function doorFor(pathname: string): MainTab | null {
   if (pathname.startsWith('/areas') || pathname.startsWith('/city')) return 'areas';
   if (pathname.startsWith('/stories') || pathname.startsWith('/story')) return 'stories';
+  if (pathname.startsWith('/art')) return 'art';
   if (pathname.startsWith('/festivals')) return null; // Ephemeris satellite — no world door lit
   if (pathname.startsWith('/odyssey')) return null; // Nostos voyage satellite — no world door lit
   return 'galaxy';
@@ -74,7 +75,7 @@ export function AtlasBar() {
           <IcarusBrand />
         </Link>
         {/* Mobile: the Wain rides at the brand's side — the left hand, as
-            Calypso instructed — which also balances the flex row so the three
+            Calypso instructed — which also balances the flex row so the four
             doors sit at the true optical centre. */}
         <span className="ml-1.5 sm:hidden">
           <OdysseyChip active={pathname.startsWith('/odyssey')} />

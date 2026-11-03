@@ -69,3 +69,12 @@ data/geo/raw/
 
 # baked Greek sky sources (reproducible via `pnpm build-sky`)
 /research/sky/
+
+# River of Myth layout sketches (docs/MYTHS_RIVER_PLAN.md)
+/research/myth-river/
+
+# Loom layout sketches and thumbnail cache (docs/LOOM_PLAN.md)
+/research/loom/
+
+# the ⌘K index and Ephemeris data, rebuilt by `pnpm dev` and `pnpm build`
+/public/atlas/

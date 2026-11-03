@@ -9,6 +9,7 @@ import {
   countCityResidents,
 } from '@/features/geo/residents';
 import { loadCities, loadRegions } from '@/features/geo/load';
+import { toSkyCharacter } from '@/types/character';
 
 export async function generateStaticParams() {
   const cities = await loadCities();
@@ -73,7 +74,7 @@ export default async function CitySkyPage(props: { params: Promise<{ id: string 
     <CitySkyView
       city={city}
       residentCount={residentCount}
-      characters={residents}
+      characters={residents.map(toSkyCharacter)}
       relations={relations}
       sources={atlas.sources}
       cities={citySummaries}

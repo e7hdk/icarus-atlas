@@ -100,3 +100,17 @@ Round-1 feedback: Star Path (A) and Playbill (B) both landed; round 2 blends the
 | `story-page-d-illuminated-programme.html` | Illuminated Programme (B sheet, A spine) | The gold-ruled playbill kept whole — personae first, meanders, colophon — but the acts march down an igniting constellation spine with ports of call; the terminal star closes as · EXEUNT · |
 | `story-page-e-skybill.html` | Sky Bill (A body, B voice) | The programme dissolved into the open sky: the dramatis personae hang as a cast constellation; hover a player and their name lights in the prose while their acts are ringed on the spine |
 | `story-page-f-marquee-path.html` | Marquee & Path (side by side) | The playbill folds into a sticky gold marquee card riding beside the star path; its act list is live — the act under your eyes glows on the card while its star burns on the spine |
+
+## Art door concept (round 1)
+
+A fourth door beside Galaxy, Lands and Myths, gathering the Legacy artworks into one place. One file, on real data: `shared/loom-works.js` holds the 1,715 unique works of `data/culture` and `data/story-culture`, with images hot-linked from Wikimedia Commons (the first open takes about a minute while the cloth weaves itself; a real build would bake the thumbnails into one atlas).
+
+| File | Concept | Signature idea |
+|------|---------|----------------|
+| `art-loom.html` | **The Loom** | Every work is a tile in one hanging cloth, woven from the beam down like a Greek warp-weighted loom: across, the sagas in Spindle order and colour; down, the centuries; a band's width is how much that age cared. Clay loom weights light a saga, a gold-mended tear marks the thin medieval rows, gold threads stitch one gesture across centuries (Patterns), and the weave dissolves into the painting as you zoom. Saga links and medium are heuristic in this mockup |
+
+**Decision (2026-11-01): The Loom is the fourth door — plan in docs/LOOM_PLAN.md (M14). This mockup stays as the visual bar for the build.**
+
+| File | Concept | Signature idea |
+|------|---------|----------------|
+| `art-loom-web.html` | **The Loom, with its web** | The same cloth in true 3D, opened to the network between works. One thread per figure (`shared/loom-links.js`: Legacy shelves, titles and exact Commons categories) falls through the cloth from that figure's oldest work to its newest. Click a work and it rises out of the cloth with its nearest neighbours on those threads; click a neighbour to walk the web; drag to turn it. **Turn the cloth** shows the back: every thread at once, the bright ones crossing the tear |

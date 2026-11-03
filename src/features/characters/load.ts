@@ -1,5 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { withCredits } from '@/features/art/credits';
 import { characterSchema, cultureSchema, referenceSchema, relationSchema, sourceSchema } from '@/lib/schemas';
 import type { Character, CultureData, ReferenceData, Relation, Source } from '@/types/character';
 
@@ -103,7 +104,7 @@ export async function loadReference(id: string): Promise<ReferenceData | null> {
 export async function loadCulture(id: string): Promise<CultureData | null> {
   try {
     const raw = JSON.parse(await readFile(path.join(DATA_DIR, 'culture', `${id}.json`), 'utf-8'));
-    return cultureSchema.parse(raw) as CultureData;
+    return await withCredits(cultureSchema.parse(raw) as CultureData);
   } catch {
     return null;
   }

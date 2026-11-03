@@ -2,15 +2,15 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import type { Character, Relation, Source, SourceId } from '@/types/character';
+import type { Relation, SkyCharacter, Source, SourceId } from '@/types/character';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { ProseShimmer } from '@/components/ui/ProseShimmer';
 import { bondsFor } from '@/features/characters/relations';
-import { getBakedLinkedProse, getCharacterStorySegments, resolveCharacterProseSegments } from '@/features/linking/load-baked';
-import { buildLinkingContext } from '@/features/linking/name-index';
 import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useStarProse } from '@/features/galaxy/useStarProse';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { filterRelations, filterSourced } from '@/lib/lens';
 import { useIsMobile } from '@/lib/useIsMobile';
@@ -33,7 +33,7 @@ export function CharacterPanel({
   sources,
   cityContext,
 }: {
-  characters: Character[];
+  characters: SkyCharacter[];
   relations: Relation[];
   sources: Source[];
   cityContext?: CitySkyContext;
@@ -58,11 +58,7 @@ export function CharacterPanel({
   }
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
-  const bakedProse = useMemo(() => getBakedLinkedProse(), []);
-  const linkingContext = useMemo(
-    () => (bakedProse ? null : buildLinkingContext(characters)),
-    [characters, bakedProse],
-  );
+  const { prose, failed } = useStarProse(selectedId);
   const sourceName = useMemo(
     () => new Map<SourceId, string>(sources.map((s) => [s.id, s.name])),
     [sources],
@@ -73,14 +69,6 @@ export function CharacterPanel({
   );
 
   const character = selectedId ? byId.get(selectedId) : undefined;
-  const scopeIds = useMemo(() => {
-    if (!character) return [];
-    const ids = new Set<string>([character.id]);
-    for (const bond of bondsFor(character.id, filterRelations(relations, lens))) {
-      ids.add(bond.otherId);
-    }
-    return [...ids];
-  }, [character, relations, lens]);
 
   useEffect(() => {
     if (selectedId) panelRef.current?.scrollTo({ top: 0, behavior: 'instant' });
@@ -117,7 +105,7 @@ export function CharacterPanel({
   // old top anchor collided with the fixed bar. Name, a couple of facts, and
   // a jump to the codex.
   if (isMobile) {
-    const summary = filterSourced(character.summary, lens)[0] ?? filterSourced(character.story, lens)[0];
+    const summary = prose ? (filterSourced(prose.summary, lens)[0] ?? filterSourced(prose.story, lens)[0]) : undefined;
     return (
       <div className="fixed inset-x-3 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-30">
         <GlassPanel
@@ -157,18 +145,13 @@ export function CharacterPanel({
               {character.domains.join(' · ')}
             </span>
           </div>
-          {summary && (
+          {(summary || (!prose && !failed)) && (
             <p className="relative mt-3 border-t border-star-olympian/15 pt-3 font-body text-[14px] leading-snug text-aether/85 line-clamp-2">
-              <LinkedProse
-                text={summary.text}
-                segments={
-                  bakedProse ? resolveCharacterProseSegments(bakedProse, character, summary.text) : undefined
-                }
-                characterIndex={linkingContext?.characterIndex}
-                nameIndex={linkingContext?.nameIndex}
-                sortedNames={linkingContext?.sortedNames}
-                scopeIds={scopeIds}
-              />
+              {summary ? (
+                <LinkedProse text={summary.text} segments={summary.segments} selfId={character.id} />
+              ) : (
+                <ProseShimmer lines={2} />
+              )}
             </p>
           )}
           {cityContext && (
@@ -191,7 +174,7 @@ export function CharacterPanel({
     );
   }
 
-  const story = filterSourced(character.story, lens);
+  const story = prose ? filterSourced(prose.story, lens) : [];
   const bonds = bondsFor(character.id, filterRelations(relations, lens));
   const citeOf = (entrySources: SourceId[], citation?: string) => {
     const names = entrySources.map((id) => sourceName.get(id) ?? id).join(' · ');
@@ -277,13 +260,7 @@ export function CharacterPanel({
           )}
 
           <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
-            {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => {
-              const originalIndex = character.story.findIndex((p) => p.text === paragraph.text);
-              const segments =
-                bakedProse && originalIndex >= 0
-                  ? getCharacterStorySegments(bakedProse, character.id, originalIndex)
-                  : undefined;
-              return (
+            {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => (
               <div key={index}>
                 {lens === 'consensus' && paragraph.topic && (
                   <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
@@ -291,22 +268,15 @@ export function CharacterPanel({
                   </div>
                 )}
                 <p className="font-body text-[16px] leading-relaxed text-aether/90">
-                  <LinkedProse
-                    text={paragraph.text}
-                    segments={segments}
-                    characterIndex={linkingContext?.characterIndex}
-                    nameIndex={linkingContext?.nameIndex}
-                    sortedNames={linkingContext?.sortedNames}
-                    scopeIds={scopeIds}
-                  />
+                  <LinkedProse text={paragraph.text} segments={paragraph.segments} selfId={character.id} />
                 </p>
                 <p className="mt-1 font-body text-[13px] italic text-aether-faint">
                   — {citeOf(paragraph.sources, paragraph.citation)}
                 </p>
               </div>
-              );
-            })}
-            {story.length === 0 && (
+            ))}
+            {!prose && !failed && <ProseShimmer lines={4} />}
+            {prose && story.length === 0 && (
               <p className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
                 No surviving account for this figure is included under the active source lens.
               </p>

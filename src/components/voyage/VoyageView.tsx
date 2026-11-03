@@ -2,12 +2,14 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, type ReactNode } from 'react';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import { PinnedEpigraph } from '@/components/voyage/PinnedEpigraph';
 import { StarSea } from '@/components/voyage/StarSea';
 import { VoyageAudio } from '@/components/voyage/VoyageAudio';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useVoyageAudioStore } from '@/features/voyage/store';
+import type { ImageCredit } from '@/types/art';
 import type { VoyageMood } from '@/types/story';
 
 /** Nostos — the Odyssey told as a constellation being drawn (docs/NOSTOS_PLAN.md §4–6).
@@ -37,6 +39,7 @@ export interface VoyageViewArtwork {
   year: string;
   imageUrl: string;
   description: string;
+  credit?: ImageCredit;
 }
 
 export interface VoyageViewCastChip {
@@ -238,6 +241,7 @@ function StationSection({
                 src={artwork.imageUrl}
                 title={artwork.title}
                 meta={`${artwork.artist}, ${artwork.year}`}
+                credit={artwork.credit}
                 className="aspect-[16/10] w-full"
               />
               <figcaption className="mt-3">
@@ -245,6 +249,7 @@ function StationSection({
                 <p className="font-body text-[14px] italic text-aether-faint">
                   {artwork.artist}, {artwork.year}
                 </p>
+                <WorkCredit credit={artwork.credit} className="mt-0.5" />
               </figcaption>
             </figure>
           ))}

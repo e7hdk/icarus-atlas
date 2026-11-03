@@ -3,8 +3,10 @@ import { fold } from '@/features/search/match';
 import type { NameIndex } from './name-index';
 import { resolveCharacterId } from './resolve-name';
 
-/** Bumped when link-scan semantics change — invalidates linked-prose.json. */
-export const LINKED_PROSE_PARSER_VERSION = 1;
+/** Bumped when link-scan semantics change — invalidates linked-prose.json.
+ *  2: names link only when written as names, and a place's name only in scope.
+ *  3: a figure's own prose never links to itself. */
+export const LINKED_PROSE_PARSER_VERSION = 3;
 
 export type ProseSegment =
   | { kind: 'plain'; text: string }
@@ -54,13 +56,24 @@ function hasWordBoundary(text: string, start: number, length: number): boolean {
   return beforeOk && afterOk;
 }
 
-/** Split prose into plain runs and resolvable character links (longest match, word boundaries). */
+/** A name is a proper noun: it links only where its first word — past a
+ *  leading "The", which prose writes "the Harpies" — is capitalized, so the
+ *  verb "ate" is not the goddess Ate and "this atlas" is not the Titan. */
+function writtenAsName(text: string, start: number, name: string): boolean {
+  const article = /^the\s+/i.exec(name)?.[0].length ?? 0;
+  const initial = text[start + article];
+  return initial !== undefined && initial !== initial.toLowerCase();
+}
+
+/** Split prose into plain runs and resolvable character links (longest match,
+ *  word boundaries). `selfId` is the figure whose own prose this is. */
 export function parseLinkedProse(
   text: string,
   sortedNames: string[],
   nameIndex: NameIndex,
   characterTypes: Record<string, CharacterType>,
   scopeIds?: string[],
+  selfId?: string,
 ): ProseSegment[] {
   if (!text) return [];
 
@@ -79,9 +92,10 @@ export function parseLinkedProse(
         const name = sortedNames[index]!;
         if (!foldedText.startsWith(folded[index]!, cursor)) continue;
         if (!hasWordBoundary(text, cursor, name.length)) continue;
+        if (!writtenAsName(text, cursor, name)) continue;
 
         const slice = text.slice(cursor, cursor + name.length);
-        const id = resolveCharacterId(name, nameIndex, scopeIds);
+        const id = resolveCharacterId(name, nameIndex, scopeIds, selfId);
         if (!id) {
           linked = { kind: 'plain', text: slice };
           break;

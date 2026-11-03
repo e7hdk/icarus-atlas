@@ -1,6 +1,7 @@
 import type { Chronology, ChronographerId, Story } from '@/types/story';
-import { resolveSaga, type SagaId } from './spindle';
+import { resolveSaga, type SagaId } from './sagas';
 import { storiesById } from './shelves';
+import { timelessStoryIds } from './timeAxis';
 
 /** The Eratosthenes-anchored spine: when an anchor carries several chronographers'
  *  dates, the layout reads the spine's year first (Eratosthenes → Parian → Eusebius).
@@ -67,26 +68,10 @@ export function buildChronologyYears(
     for (const sid of a.stories) anchorYear.set(sid, year);
   }
 
-  // 2. The timeless set = cosmogony and all its descendants (the divine prologue).
-  const childrenOf = new Map<string, Story[]>();
-  for (const s of stories) {
-    if (!s.parent) continue;
-    const list = childrenOf.get(s.parent) ?? [];
-    list.push(s);
-    childrenOf.set(s.parent, list);
-  }
-  const timeless = new Set<string>();
-  const markTimeless = (id: string) => {
-    if (timeless.has(id)) return;
-    timeless.add(id);
-    for (const kid of childrenOf.get(id) ?? []) markTimeless(kid.id);
-  };
-  // The whole divine prologue is timeless — the three reigns (primordial / Titan /
-  // Olympian), which no Greek chronographer dates. (great-flood and the ages of man
-  // are NOT here: they fall in the dated mortal corridor.)
-  for (const root of ['cosmogony', 'reign-of-cronus', 'titanomachy']) {
-    if (byId.has(root)) markTimeless(root);
-  }
+  // 2. The timeless set: the whole divine prologue — the three reigns (primordial /
+  // Titan / Olympian), which no Greek chronographer dates. (great-flood and the ages
+  // of man are NOT here: they fall in the dated mortal corridor.)
+  const timeless = timelessStoryIds(stories);
 
   // 3. Group by saga and interpolate each story from that saga's anchors.
   const bySaga = new Map<SagaId, Story[]>();

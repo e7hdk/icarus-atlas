@@ -14,6 +14,21 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.4.0',
+    codename: 'The Loom and the Gold Thread',
+    date: '2026-11-03',
+    lines: [
+      'A fourth door opened beside the Galaxy, the Lands and the Myths, and behind it hangs the Loom: every image of the myths the atlas holds, one thousand six hundred and ninety-eight works from the gold mask of Mycenae to the painters of the last century, woven into a single cloth. Across it run the myths in the Spindle’s order and colours; down it run the centuries in which hands made them, oldest at the beam, as a Greek loom was woven from the top with its clay weights hanging below.',
+      'Where the collection thins, in the thousand years between AD 500 and 1400, the cloth is torn and mended in gold, and the mending says plainly that what is missing is ours to gather, not art that was never made.',
+      'Through the cloth run five hundred and sixty-two threads, one for every figure seen in two works or more. Pull a work and it rises out of the weave with its nearest neighbours along each thread; turn the cloth and its back is Arachne’s web, every stitch drawn at once, brightest where a figure crosses the tear.',
+      'Six gold threads follow one gesture through the centuries: Arachne’s first scene, arms becoming branches, the carried body, the fall, the monster slain and the judgement of Paris. Each stop names the teller or the evidence that vouches for it, and resemblance is never passed off as descent.',
+      'On the small screen the cloth hangs tall and scrolls down through time. A tap gathers a work’s web into the middle of the screen, earlier works above and later ones below, and a sheet beneath carries its threads.',
+      'Every image across the atlas now carries its credit from Commons: the author, the license and the page that keeps it. The debt to those who photographed these works and set them free is paid in the open.',
+      'And the doors were joined. A figure’s gallery and a myth’s centuries lead onto the Loom; the Spindle counts the works woven for each tale; the day’s artwork opens on its plate; and any single painting can be sent on its own.',
+      'The atlas grew lighter on the way: its first page, which once carried three and a half megabytes of text, now carries thirty kilobytes, and each star’s prose arrives only when it is opened.',
+    ],
+  },
+  {
     version: '0.3.1',
     codename: 'The Firmament and the Steady Hand',
     date: '2026-08-01',

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Character } from '@/types/character';
+import type { StarFacts } from '@/types/character';
 import type { GeoCity } from '@/types/geo';
 import { otherCityResidences } from '@/features/geo/residents';
 import { ClampList } from '@/components/ui/ClampList';
@@ -11,7 +11,7 @@ export function CitySkyResidenceHints({
   citiesById,
   compact = false,
 }: {
-  character: Character;
+  character: StarFacts;
   currentCityId: string;
   citiesById: Map<string, Pick<GeoCity, 'id' | 'name' | 'greekName'>>;
   /** Tighter layout for hover cards. */

@@ -5,6 +5,7 @@ import type {
   PopCultureItem,
   ScreenWork,
 } from '@/types/character';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 
 /** The M8 Legacy shelves (docs/CULTURE_PLAN.md §5), shared by the character
@@ -213,6 +214,7 @@ function ArtifactShelf({ artifacts }: { artifacts: Artifact[] }) {
                 src={artifact.imageUrl}
                 title={artifact.title}
                 meta={`${artifact.museum} · ${artifact.period}`}
+                credit={artifact.credit}
                 className="h-72 w-full"
               />
             </div>
@@ -241,6 +243,7 @@ function ArtifactShelf({ artifacts }: { artifacts: Artifact[] }) {
               <p className="mt-2.5 font-body text-[15.5px] leading-relaxed text-aether/85">
                 {artifact.description}
               </p>
+              <WorkCredit credit={artifact.credit} className="mt-2.5" />
             </figcaption>
           </figure>
         ))}

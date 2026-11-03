@@ -1,15 +1,7 @@
-import { loadAtlasData, loadBakedLayout } from '@/features/characters/load';
-import { GalaxyView } from '@/components/galaxy/GalaxyView';
+import { GalaxyDoor } from '@/components/galaxy/GalaxyDoor';
+import { loadAtlasData } from '@/features/characters/load';
 
 export default async function Home() {
-  const { characters, relations, sources } = await loadAtlasData();
-  const bakedLayout = await loadBakedLayout();
-  return (
-    <GalaxyView
-      characters={characters}
-      relations={relations}
-      sources={sources}
-      bakedLayout={bakedLayout}
-    />
-  );
+  const { sources } = await loadAtlasData();
+  return <GalaxyDoor sources={sources} />;
 }

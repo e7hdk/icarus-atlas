@@ -864,10 +864,14 @@ Verification: ✓ verified — Apollodorus' Colonus death confirmed; Homer's und
 |---|---|---|
 | Pseudo-Apollodorus | Antiope was the daughter of Nycteus and Polyxo. | Bibliotheca 3.5.5, 3.10.1 |
 | Pausanias | Reports a tradition that her father was the river god Asopus, citing the poet Asius. | Description of Greece 2.6.1, 2.6.4 |
+| Homer | Antiope is the daughter of Asopus, who boasted of sleeping in the arms of Zeus. | Odyssey 11.260–262 |
+| Apollonius of Rhodes | On Jason's cloak she is Antiope daughter of Asopus, yet Arete later names Nycteus as the father who plotted against her. | Argonautica 1.735–736, 4.1089–1090 |
+| Ovid | Jupiter, in a satyr's shape, fills Nycteus' daughter with twins. | Metamorphoses 6.110–111 |
+| Hyginus | Antiope is the daughter of Nycteus. | Fabulae 7–8 |
 
 Significance: Whether the mother of the great Theban twin-kings was a mortal princess or the daughter of a river god reflects the competing local traditions of Thebes and Sicyon.
 
-Verification: ✓ verified — Apollodorus' claim confirmed; Pausanias' citation of Asius and local report of Asopus as father confirmed.
+Verification: ✓ verified — Apollodorus' claim confirmed; Pausanias' citation of Asius and local report of Asopus as father confirmed; Odyssey 11.260–262 and Argonautica 1.735–736, 4.1089–1090 line-checked in the Greek and Metamorphoses 6.110–111 in the Latin; Fabulae 7–8 in the corpus English and the Latin (Lingua Latina Legenda).
 
 ## Who is the mother of Nicostratus?
 
@@ -1599,11 +1603,12 @@ Verification: ✓ verified — Epitome 6.3 (Apollo and Manto) against Descriptio
 | Author | Claim | Citation |
 |---|---|---|
 | Homer | Castor and Polydeuces are both sons of Tyndareus by Leda — yet the earth holds them living on alternate days, honoured like gods. | Odyssey 11.298–304 |
+| Apollonius of Rhodes | Leda bore the two at a single birth in the house of Tyndareus. | Argonautica 1.146–150 |
 | Pseudo-Apollodorus / Hyginus | Zeus and Tyndareus lay with Leda the same night: she bore Polydeuces (and Helen) to Zeus, Castor (and Clytemnestra) to Tyndareus — so one twin is immortal, the other mortal. | Bibliotheca 3.10.7; Fabulae 77 |
 
 Significance: whether the Dioscuri are wholly Tyndareus' mortal sons or a split mortal/immortal pair is the very point of their myth — for it is Polydeuces' divine half that he shares with dead Castor so the two alternate between Olympus and the grave.
 
-Verification: ✓ verified — Odyssey 11.298–304 (both Tyndareus', alternating life) against Bibliotheca 3.10.7 and Fabulae 77 (the split paternity).
+Verification: ✓ verified — Odyssey 11.298–304 (both Tyndareus', alternating life) and Argonautica 1.146–150 (one birth in Tyndareus' house) against Bibliotheca 3.10.7 and Fabulae 77 (the split paternity).
 
 ## Who killed Phocus?
 
@@ -2507,3 +2512,281 @@ Verification: ✓ verified — Description of Greece 8.4.2 and Bibliotheca 3.9.1
 Significance: Zeus is the father everywhere, but the mother moves Sarpedon across two generations and two houses — a grandson of Bellerophon in Homer, a brother of Minos in the mythographers. Apollodorus records Homer's version himself and bridges the gap with a life three generations long, so the atlas keeps one `sarpedon` star and tags the two mothers instead of splitting the figure.
 
 Verification: ✓ verified — Iliad 6.198–199 (English and Greek), Bibliotheca 3.1.1–3.1.2, and Fabulae 106, 155, 178 confirmed against the pinned corpus. The `sarpedon-parent-europa` edge previously listed `homer` among its sources; Homer never names Europa as Sarpedon's mother, so that attribution was removed.
+
+## Heracles on the Argo
+
+- **topic**: `heracles-on-the-argo`
+- **Characters**: `heracles`, `hylas`, `omphale`, `jason`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Apollonius of Rhodes | Heracles joins the Argo of his own will, straight from carrying the Erymanthian boar alive to Mycenae; he is left behind in Mysia searching for Hylas, destined to go back to the labours of Eurystheus. | Argonautica 1.122–131, 1.1273–1357 |
+| Pseudo-Apollodorus (main line) | The Argonauts left Heracles and Polyphemus in Mysia when Hylas was carried off by the nymphs. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Herodorus) | Heracles did not sail at all at that time; he was serving as a slave at the court of Omphale. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Pherecydes) | He was left behind at Aphetae in Thessaly, the Argo having declared with a human voice that she could not bear his weight. | Bibliotheca 1.9.19 |
+| Pseudo-Apollodorus (Demaratus, Dionysius) | Heracles sailed all the way to Colchis — Dionysius even makes him the leader of the Argonauts. | Bibliotheca 1.9.19 |
+| Hyginus | Hercules is counted among the Argonauts, with Hylas as his companion. | Fabulae 14 |
+
+Significance: where the voyage falls in Heracles' life orders the heroic age. If he sails in the midst of his labours (Apollonius, the main line of Apollodorus), the Argo comes before his servitude to Omphale, his wrestling for Deianira and his death; on Herodorus' reckoning the voyage and the Lydian servitude run together. The atlas's time axis follows the voyage-within-the-labours line — the death of Heracles is dated after the Argo in `data/chronology.json` — while `omphale-and-troy` keeps the Herodorus strand in view.
+
+Verification: ✓ verified — Argonautica 1.122, 1.1273, 1.1296 and 1.1344, Bibliotheca 1.9.19 and Fabulae 14 confirmed against the pinned corpus.
+
+## Who killed Coronis?
+
+- **topic**: `coronis-death`
+- **Characters**: `apollo`, `artemis`, `hermes`, `ischys-elatid`, `asclepius`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Ovid | Apollo himself shoots Coronis through the breast; repenting too late, he tears his unborn son from her womb on the pyre and carries him to Chiron's cave. | Metamorphoses 2.600–632 |
+| Pseudo-Apollodorus | Apollo kills Coronis and, while she burns, snatches the babe from the pyre and brings him to Chiron. | Bibliotheca 3.10.3 |
+| Hyginus | Apollo strikes Coronis and takes Asclepius from her womb; her lover Ischys dies by Jove's thunderbolt — or, in the star-myths, by Apollo's arrows. | Fabulae 202; Astronomica 2.40.2 |
+| Pausanias | Artemis kills Coronis to avenge the insult to her brother, and Hermes snatches the infant from the pyre already alight. | Description of Greece 2.26.6 |
+
+Significance: the god who loved her is her killer in the poet and the mythographers, while the tradition Pausanias heard gives the killing to Artemis and the rescue to Hermes — and within Hyginus even Ischys dies two different deaths.
+
+Verification: ✓ verified — Metamorphoses 2.600–632 line-checked in the Latin; Bibliotheca 3.10.3 and Description of Greece 2.26.6 in the Greek; Fabulae 202 and Astronomica 2.40.2 in the corpus English.
+
+## Who was the mother of Asclepius?
+
+- **topic**: `asclepius-mother`
+- **Characters**: `asclepius`, `arsinoe-leucippid`, `apollo`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Arsinoe, daughter of Leucippus, bore Asclepius to Apollo; "some say" his mother was Coronis, daughter of Phlegyas, in Thessaly. | Bibliotheca 3.10.3 |
+| Pausanias | The Epidaurians say Phlegyas' daughter bore him in secret in their land and exposed him on Mount Titthion; the Messenians claim him as Arsinoe's son, which Pausanias judges the least true, citing the Pythia's verse that Coronis bore him in rocky Epidaurus. | Description of Greece 2.26.3–7, 4.3.2 |
+| Apollonius of Rhodes | Divine Coronis bore him in bright Lacereia, at the outflow of the Thessalian Amyrus. | Argonautica 4.616–617, 1.596 |
+| Ovid | His mother is Coronis of Larisa in Haemonia. | Metamorphoses 2.542–632 |
+
+Significance: Thessaly, Epidaurus and Messenia each claimed the healer's birth. The Messenian version makes him a Leucippid and gives Messenia his sons; the Delphic verse Pausanias quotes settles it for Epidaurus, the seat of his greatest sanctuary.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 and Description of Greece 2.26.3–7 in the Greek, 4.3.2 in the corpus English; Argonautica 4.616–617 and 1.596 line-checked in the Greek; Metamorphoses 2.542 in the Latin.
+
+## Whom did Asclepius raise, and who revived Glaucus?
+
+- **topic**: `glaucus-revival`
+- **Characters**: `asclepius`, `hippolytus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | With the Gorgon's blood Asclepius raised Capaneus, Lycurgus, Hippolytus, Tyndareus, Hymenaeus and Glaucus son of Minos; yet in the Cretan saga it is the seer Polyidus who revives the drowned Glaucus with a herb a serpent showed him. | Bibliotheca 3.10.3, 3.3.1 |
+| Hyginus | Asclepius is said to have restored Glaucus or Hippolytus and was struck by the thunderbolt for it; the fable of Glaucus gives the revival to Polyidus and the serpent's herb. | Fabulae 49, 136; Astronomica 2.14.6 |
+| Ovid | Hippolytus, reborn as Virbius, owes his second life to the strong medicine of Apollo's son. | Metamorphoses 15.531–535 |
+| Pausanias | An old slab at Epidaurus records twenty horses Hippolytus dedicated to the god, and the Aricians say Asclepius raised him. | Description of Greece 2.27.4 |
+
+Significance: the same resurrection of a Cretan prince is credited both to the healer-god's son and to a mortal seer, and the mythographers cannot agree which raising — Glaucus' or Hippolytus' — brought down the thunderbolt that killed Asclepius.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 in the Greek and 3.3.1 in the corpus English; Fabulae 49 and 136 and Astronomica 2.14.6 in the corpus English; Metamorphoses 15.531–535 in the Latin; Description of Greece 2.27.4 in the Greek.
+
+## Did Heracles kill Augeas?
+
+- **topic**: `phyleus-restoration`
+- **Characters**: `augeas`, `phyleus-dulichium`, `heracles`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Heracles took Elis, killed Augeas and his sons, and brought Phyleus back from exile to give him the kingdom. | Bibliotheca 2.7.2 |
+| Pausanias | Heracles gave Elis to Phyleus out of respect for him but left Augeas unpunished; Phyleus set the realm in order and went back to Dulichium, and Augeas died in old age — the Eleans still sacrifice to him as a hero. | Description of Greece 5.3.1–3, 5.4.2 |
+
+Significance: the king whose broken bargain started the war either dies with his sons or lives on to be honoured as a hero of Elis, and Phyleus either rules a conquered kingdom or restores his father's house and leaves. The Phyleus reign in `data/lineages/pisa-elis.json` carries the same topic.
+
+Verification: ✓ verified — Bibliotheca 2.7.2 and Description of Greece 5.3.1–3 and 5.4.2 in the Greek.
+
+## Why and where did Heracles sack Pylos — and did Neleus survive?
+
+- **topic**: `heracles-at-pylos`
+- **Characters**: `heracles`, `neleus`, `nestor`, `hades`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Neleus had refused to purify Heracles after the murder of Iphitus; Heracles took Pylos, killed Neleus and all his sons but Nestor, then being reared among the Gerenians, and wounded Hades, who fought for the Pylians. | Bibliotheca 2.6.2, 2.7.3 |
+| Hyginus | Heracles killed Neleus and ten of his sons because Neleus would not purify him after he had killed Megara and her children. | Fabulae 10, 31 |
+| Homer | Heracles crushed Pylos and of Neleus' twelve sons only Nestor was left — yet in Nestor's tale Neleus still reigns; Hades took Heracles' arrow "at Pylos among the dead". | Iliad 11.682–693, 11.717; 5.395–402 |
+| Pausanias | The Eleans say it was at their own Pylos, in Elis, that Hades fought against Heracles, with Athena on Heracles' side — and that is why they alone honour Hades. | Description of Greece 6.25.2–3 |
+
+Significance: the sack of Nestor's home either wipes out the Neleid house but for its youngest son or leaves the old king on his throne; the purification Neleus refused has two different victims behind it; and the Eleans moved the battle, wounded god and all, to their own Pylos.
+
+Verification: ✓ verified — Bibliotheca 2.6.2 and 2.7.3 in the Greek; Iliad 11.682–693, 11.717 and 5.395–402 line-checked in the Greek; Description of Greece 6.25.2–3 in the Greek; Fabulae 10 and 31 in the corpus English.
+
+## Did Periclymenus escape Heracles?
+
+- **topic**: `periclymenus-fate`
+- **Characters**: `periclymenus-neleus`, `heracles`, `poseidon`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Poseidon's gift let Periclymenus turn into a lion, a snake or a bee, but Heracles killed him with the rest of Neleus' sons. | Bibliotheca 1.9.9, 2.7.3 |
+| Ovid | Having tried every shape in vain, Periclymenus became an eagle; Hercules' arrow caught him where wing meets side, and he fell to his death. | Metamorphoses 12.556–572 |
+| Hyginus | His grandfather Neptune turned Periclymenus into an eagle, and he escaped the siege alive. | Fabulae 10 |
+
+Significance: the shape-shifter is either the last and hardest kill of the sack of Pylos or, with Nestor, the only son of Neleus to survive it.
+
+Verification: ✓ verified — Bibliotheca 1.9.9 and 2.7.3 in the Greek; Metamorphoses 12.556–572 line-checked in the Latin; Fabulae 10 in the corpus English.
+
+## Where did Iphicles die?
+
+- **topic**: `iphicles-death`
+- **Characters**: `iphicles`, `heracles`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Iphicles fell in Heracles' war on Hippocoon and his sons at Sparta, together with Cepheus of Tegea and his sons. | Bibliotheca 2.7.3 |
+| Pausanias | Iphicles was wounded by the sons of Actor in Heracles' first battle against Augeas, was carried to Pheneus, and died and was buried there. | Description of Greece 8.14.9 |
+
+Significance: Heracles' mortal twin falls either in the Spartan campaign that restored Tyndareus or, earlier, of a wound from the Elean war — two different wars for the same death.
+
+Verification: ✓ verified — Bibliotheca 2.7.3 and Description of Greece 8.14.9 in the Greek.
+
+## Were the daughters of Leucippus stolen brides?
+
+- **topic**: `leucippides-abduction`
+- **Characters**: `hilaira`, `phoebe-leucippid`, `leucippus`, `castor`, `polydeuces`, `idas`, `lynceus-apharetid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The Dioscuri carried off Hilaira and Phoebe, daughters of Leucippus, from Messene and married them; Phoebe bore Mnesileus to Polydeuces and Hilaira bore Anogon to Castor. No betrothal to the sons of Aphareus is mentioned. | Bibliotheca 3.10.3, 3.11.2 |
+| Hyginus | Phoebe and Hilaira, priestesses of Minerva and Diana, were already betrothed to Idas and Lynceus when Castor and Pollux, burning with love, carried them off. | Fabulae 80 |
+| Ovid | The Tyndarid brothers carried off Phoebe and her sister, and both sons of Aphareus, each pledged to Leucippus as a son-in-law, armed to win them back. | Fasti 5.699–702 |
+| Pausanias | The poet of the Cypria called Hilaira and Phoebe daughters of Apollo; at Argos their images stood beside the twins and two sons named Anaxis and Mnasinous. | Description of Greece 3.16.1, 2.22.5 |
+
+Significance: the Dioscuri either take unattached brides or steal their cousins' promised wives, which makes the feud a war over women; and the sisters' father and the names of their sons change with the teller.
+
+Verification: ✓ verified — Bibliotheca 3.10.3 and 3.11.2 and Description of Greece 3.16.1 and 2.22.5 in the Greek; Fabulae 80 in the Latin (The Latin Library); Fasti 5.699–702 in the Latin (The Latin Library) — the Fasti is outside the pinned corpus.
+
+## What set the Dioscuri against the sons of Aphareus?
+
+- **topic**: `apharetid-feud-cause`
+- **Characters**: `castor`, `polydeuces`, `idas`, `lynceus-apharetid`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | The four cousins raided cattle in Arcadia; Idas, left to divide the herd, won it all by a trick with a quartered cow and drove it to Messene, and the Dioscuri marched on Messene, drove off the herd and much besides, and lay in wait. | Bibliotheca 3.11.2 |
+| Pausanias | The cousins fought over cattle. | Description of Greece 4.3.1 |
+| Hyginus | Idas and Lynceus fought to recover the brides Castor and Pollux had carried off. | Fabulae 80 |
+| Ovid | The brothers armed to reclaim the promised brides; love drove one pair to demand and the other to refuse, so each fought with equal right. | Fasti 5.699–706 |
+
+Significance: the fatal fight is either a quarrel among cattle-raiders over a cheated share or a war of rival bridegrooms — plunder or love as the cause of the Dioscuri's mortal end.
+
+Verification: ✓ verified — Bibliotheca 3.11.2 and Description of Greece 4.3.1 in the Greek; Fabulae 80 and Fasti 5.699–706 in the Latin (The Latin Library; the Fasti is outside the pinned corpus).
+
+## Who killed whom when the Dioscuri fought the sons of Aphareus?
+
+- **topic**: `castor-slayer`
+- **Characters**: `castor`, `polydeuces`, `idas`, `lynceus-apharetid`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Lynceus spied Castor in ambush and Idas killed him; Polydeuces speared Lynceus and, chasing Idas, was stunned by a stone before Zeus struck Idas with a thunderbolt. | Bibliotheca 3.11.2 |
+| Pausanias | Polydeuces killed Lynceus, and Idas was struck by lightning. | Description of Greece 4.3.1 |
+| Ovid | Lynceus' sword pierced Castor's chest; Pollux speared Lynceus, and Idas was barely driven back by Jupiter's fire. | Fasti 5.707–714 |
+| Hyginus | Castor killed Lynceus; when Castor tried to stop Idas raising a tomb for his brother, Idas drove his sword into Castor's groin, and Pollux killed Idas in single combat. Castor is also said to have died at Aphidnae, in a war of the Lacedaemonians against the Athenians, or when Idas and Lynceus attacked Sparta. | Fabulae 80; Astronomica 2.22 |
+
+Significance: every pairing of killer and victim shifts — Castor falls to Idas or to Lynceus, Lynceus to Polydeuces or to Castor, Idas to Zeus' bolt or to Pollux' hand. Every slayer edge of the fight carries this topic, each tagged with the tellers who make it.
+
+Verification: ✓ verified — Bibliotheca 3.11.2 and Description of Greece 4.3.1 in the Greek (the corpus English of Bibliotheca 3.11.2 says "pursuing Lynceus", but the Greek has Polydeuces pursuing Idas); Fabulae 80 and Astronomica 2.22 in the Latin (The Latin Library); Fasti 5.707–714 in the Latin (The Latin Library; outside the pinned corpus).
+
+## How do the Dioscuri share immortality?
+
+- **topic**: `dioscuri-alternate-life`
+- **Characters**: `castor`, `polydeuces`, `zeus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Homer | The life-giving earth holds both alive; beneath the earth, honoured by Zeus, they live on alternate days and are dead on the others, with honour equal to the gods'. | Odyssey 11.301–304 |
+| Pseudo-Apollodorus | Taken up to heaven, Polydeuces refused immortality while Castor was dead, so Zeus let both be every other day among the gods and among mortals. | Bibliotheca 3.11.2 |
+| Hyginus | Jupiter gave a star to Pollux alone, as Castor was Tyndareus' son, until Pollux asked to share it with his brother; the Twins are set in the sky for their devotion. | Fabulae 80; Astronomica 2.22 |
+| Ovid | Pollux pleads that half the gift is worth more than the whole, and the brothers keep their stations by turns as stars that help ships in distress. | Fasti 5.715–720 |
+
+Significance: the alternation is constant, but where the twins spend their days is not — under the earth in Homer, between Olympus and the mortal world in Apollodorus, among the stars in Hyginus and Ovid.
+
+Verification: ✓ verified — Odyssey 11.301–304 line-checked in the Greek; Bibliotheca 3.11.2 in the Greek; Fabulae 80 and Astronomica 2.22 in the Latin (The Latin Library); Fasti 5.715–720 in the Latin (The Latin Library; outside the pinned corpus).
+
+## How did Antiope come back from Sicyon?
+
+- **topic**: `antiope-at-sicyon`
+- **Characters**: `antiope`, `epopeus`, `nycteus`, `lycus`, `labdacus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Pregnant by Zeus and threatened by her father, Antiope fled to Epopeus at Sicyon and married him; Nycteus killed himself in despair, charging his brother Lycus to punish them, and Lycus took Sicyon, killed Epopeus and led Antiope away captive. | Bibliotheca 3.5.5 |
+| Hyginus | Nycteus, dying, bound his brother Lycus by oath to punish her and left him the kingdom; the Sicyonian who took her in is called Epaphus, and Antiope is brought back in bonds. | Fabulae 8 |
+| Pausanias | Epopeus carried Antiope off, whether after courting her or by force; Nycteus, wounded in the war that followed, made Lycus regent for the boy Labdacus before he died; Epopeus died of a neglected wound, and his successor Lamedon gave Antiope up without a fight. | Description of Greece 2.6.1–3 |
+
+Significance: Antiope either runs to Sicyon or is carried there, her father dies by his own hand or of a battle wound, and Epopeus is killed by Lycus or dies of a neglected wound — three routes to the same captivity.
+
+Verification: ✓ verified — Bibliotheca 3.5.5 and Description of Greece 2.6.1–3 in the Greek; Fabulae 8 in the corpus English and the Latin (Lingua Latina Legenda), which reads *Epaphus* for the Sicyonian.
+
+## What became of Lycus?
+
+- **topic**: `lycus-fate`
+- **Characters**: `lycus`, `amphion`, `zethus`, `dirce`, `hermes`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Amphion and Zethus killed Lycus and tied Dirce to a bull. | Bibliotheca 3.5.5 |
+| Pausanias | The twins overcame Lycus in battle and took the kingdom; his death is not told. | Description of Greece 9.5.6 |
+| Hyginus | As the brothers were about to kill Lycus, Mercury stopped them and ordered Lycus to yield the kingdom to Amphion. | Fabulae 8 |
+
+Significance: the usurper of Thebes is executed, merely overthrown, or spared by a god's command — Hyginus' telling, after Euripides' Antiope, ends in divine intervention rather than vengeance.
+
+Verification: ✓ verified — Bibliotheca 3.5.5 and Description of Greece 9.5.6 in the Greek; Fabulae 8 in the corpus English and the Latin (Lingua Latina Legenda).
+
+## How did the house of Amphion end?
+
+- **topic**: `amphion-house-end`
+- **Characters**: `amphion`, `zethus`, `niobe`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Artemis and Apollo shot down Amphion's children after Niobe's boast; after Amphion's death Laius took the kingdom. | Bibliotheca 3.5.6–7 |
+| Pausanias | In his list of Theban kings, plague emptied Amphion's house; Zethus' son died through some error of his mother, Zethus died of grief, and the Thebans brought Laius back. | Description of Greece 9.5.9 |
+| Homer | Pandareus' daughter, the nightingale, mourns Itylus, son of lord Zethus, whom she killed unwitting. | Odyssey 19.518–523 |
+
+Significance: the end of the twin kings' line is either the gods' punishment of Niobe's pride or a plague and a household accident — and Pausanias, who records the Niobids' arrows and tombs elsewhere, follows the plague in his king-list.
+
+Verification: ✓ verified — Bibliotheca 3.5.6–7 and Description of Greece 9.5.9 in the Greek; Odyssey 19.518–523 line-checked in the Greek.
+
+## Who took Chrysippus, and how did Hippodamia end?
+
+- **topic**: `chrysippus-and-hippodamia`
+- **Characters**: `chrysippus`, `laius`, `theseus`, `hippodamia`, `atreus`, `thyestes`, `pelops`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | Laius, Pelops' guest in his exile, fell in love with Chrysippus while teaching him to drive a chariot and carried him off. | Bibliotheca 3.5.5 |
+| Hyginus | Laius seized Chrysippus, Pelops' bastard son, at the Nemean games, and Pelops recovered him by war; Atreus and Thyestes, urged on by Hippodamia, killed him, and when Pelops blamed her she killed herself. Another list names Theseus as the one who carried Chrysippus off from the games. | Fabulae 85, 243, 271 |
+| Pausanias | Hippodamia withdrew to Midea in the Argolid because of Pelops' anger over Chrysippus' death; the Eleans later brought her bones to Olympia at an oracle's bidding. | Description of Greece 6.20.7 |
+
+Significance: the first crime of the Pelopid house has two abductors and two ends for the queen — suicide under her husband's accusation, or exile at Midea and a precinct at Olympia.
+
+Verification: ✓ verified — Bibliotheca 3.5.5 and Description of Greece 6.20.7 in the Greek; Fabulae 85, 243 and 271 in the corpus English.
+
+## How was Aegisthus conceived?
+
+- **topic**: `aegisthus-birth`
+- **Characters**: `aegisthus`, `thyestes`, `pelopia`, `atreus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Pseudo-Apollodorus | An oracle told Thyestes that a son begotten on his own daughter would avenge him, and he obeyed and begot Aegisthus by her; the daughter is not named. | Epitome 2.14 |
+| Hyginus | Thyestes, a fugitive at King Thesprotus' court, came by night to Sicyon and, his head veiled, forced his daughter Pelopia as she washed her robe after a sacrifice to Minerva; Atreus, taking her for Thesprotus' daughter, married her while she carried the child, and reared the exposed Aegisthus, suckled by a goat, as his own. | Fabulae 87–88, 252 |
+
+Significance: the avenger of the feast is begotten either by deliberate incest at an oracle's command or by a rape in the dark at Sicyon — and in Hyginus the son grows up in his victim's house as Atreus' own.
+
+Verification: ✓ verified — Epitome 2.14 in the Greek; Fabulae 87–88 and 252 in the corpus English, with Fabula 88 also checked in the Latin (The Latin Library).
+
+## How did Atreus die, and what became of Thyestes?
+
+- **topic**: `thyestes-return`
+- **Characters**: `atreus`, `thyestes`, `aegisthus`, `pelopia`, `agamemnon`, `menelaus`, `tyndareus`
+
+| Author | Claim | Citation |
+|---|---|---|
+| Hyginus | Agamemnon and Menelaus seized Thyestes at Delphi; Atreus sent Aegisthus to kill him in prison, but Thyestes knew the sword, Pelopia killed herself with it, and Aegisthus killed Atreus as he sacrificed on the shore and returned with his father to the ancestral kingdom. | Fabulae 88, 243 |
+| Pseudo-Apollodorus | The grown Aegisthus learned who his father was, killed Atreus and restored Thyestes; a nurse carried Atreus' sons to Polyphides of Sicyon and on to Oeneus in Aetolia, until Tyndareus brought them back, Thyestes was sent under oath to Cythera, and Agamemnon ruled Mycenae. | Epitome 2.14–16 |
+| Homer | At his death Atreus left the sceptre to Thyestes, and Thyestes in turn left it to Agamemnon to bear as lord of many islands and all Argos. | Iliad 2.105–108 |
+
+Significance: Atreus falls to the son he reared in every version that tells his death, but the Atreids' road back runs through exile and Tyndareus' help in Apollodorus, while in Hyginus they are grown men who hunt Thyestes down themselves — and Homer's sceptre simply passes from brother to brother to son.
+
+Verification: ✓ verified — Epitome 2.14 and 2.16 in the Greek, with Epitome 2.15 read as Frazer's supplement from Tzetzes (Chiliades 1.456–465); Fabulae 88 in the Latin (The Latin Library) and 243 in the corpus English; Iliad 2.105–108 line-checked in the Greek.

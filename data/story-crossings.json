@@ -265,5 +265,102 @@
     "place": "Greece",
     "note": "After spreading wine through Attica, Dionysus returns to his mother's Theban house — where Pentheus denies the god and is torn apart by the maenads.",
     "sources": ["apollodorus", "hyginus"]
+  },
+  {
+    "a": "coronis-and-asclepius",
+    "b": "hippolytus",
+    "place": "Epidaurus",
+    "note": "Asclepius raises Hippolytus after Theseus' curse drags him to death — a return remembered at Epidaurus on an old slab of the horses he gave the god, and one of the two revivals Hyginus blames for the thunderbolt.",
+    "sources": ["apollodorus", "hyginus", "pausanias", "ovid"]
+  },
+  {
+    "a": "coronis-and-asclepius",
+    "b": "duel-and-truce",
+    "place": "Troy",
+    "note": "When Pandarus' arrow breaks the truce, Machaon son of Asclepius draws it from Menelaus and spreads on the wound the drugs Chiron once gave his father.",
+    "sources": ["homer"]
+  },
+  {
+    "a": "heracles-in-elis-and-pylos",
+    "b": "suitor-oath-at-sparta",
+    "place": "Sparta",
+    "note": "The Spartan throne Heracles gives back to Tyndareus is the kingship Tyndareus later passes to Menelaus, the suitor he chose for Helen.",
+    "sources": ["pausanias", "apollodorus"]
+  },
+  {
+    "a": "dioscuri-and-apharetids",
+    "b": "nekuia",
+    "place": "the Underworld",
+    "note": "Among the heroines at the pit of blood Odysseus sees Leda, mother of Castor and Polydeuces — the twins the earth holds alive, living one day and dead the next by the honour of Zeus.",
+    "sources": ["homer"]
+  },
+  {
+    "a": "dioscuri-and-apharetids",
+    "b": "pirithous-and-the-underworld",
+    "place": "Aphidnae",
+    "note": "Hyginus records that some set Castor's death at Aphidnae, in the Lacedaemonians' war on the Athenians — the Attic stronghold the twins stormed to win back Helen.",
+    "sources": ["hyginus", "apollodorus"]
+  },
+  {
+    "a": "dioscuri-and-apharetids",
+    "b": "calydonian-boar",
+    "place": "Calydon",
+    "note": "Both pairs of cousins hunted the Calydonian boar, and Homer's tale of Meleager names his wife Cleopatra as the daughter of Idas — the man who drew his bow on Apollo for Marpessa.",
+    "sources": ["homer", "apollodorus", "ovid", "hyginus"]
+  },
+  {
+    "a": "antiope-and-the-twins",
+    "b": "niobe-niobids",
+    "place": "Thebes",
+    "note": "Amphion, whose lyre drew the stones into the Theban walls, weds Tantalus' daughter Niobe — the queen who glories in those lyre-built walls before Leto's children empty his house.",
+    "sources": ["apollodorus", "ovid", "hyginus"]
+  },
+  {
+    "a": "antiope-and-the-twins",
+    "b": "nekuia",
+    "place": "the Underworld",
+    "note": "Among the heroines Persephone sends to the pit of blood, Odysseus sees Antiope daughter of Asopus, who boasted of Zeus' embrace and bore the twins who first walled seven-gated Thebe.",
+    "sources": ["homer"]
+  },
+  {
+    "a": "antiope-and-the-twins",
+    "b": "oedipus-at-thebes",
+    "place": "Thebes",
+    "note": "The twins' seizure of Thebes drives Laius from his throne; only when their houses fail do the Thebans bring him home — to marry Jocasta and hear the oracle about his son.",
+    "sources": ["apollodorus", "pausanias", "hyginus"]
+  },
+  {
+    "a": "antiope-and-the-twins",
+    "b": "cadmus-and-thebes",
+    "place": "Thebes",
+    "note": "Amphion and Zethus join a walled lower town to Cadmus' citadel, the Cadmea, and give the whole city the name of Thebes.",
+    "sources": ["pausanias"]
+  },
+  {
+    "a": "atreus-and-thyestes",
+    "b": "pelops-and-oenomaus",
+    "note": "Flung into the sea by Pelops, Myrtilus cursed the house of Pelops — and Pausanias reads the crimes of Atreus' line as Pelops' blood-guilt and the charioteer's vengeful ghost pursuing the family.",
+    "sources": ["apollodorus", "pausanias"]
+  },
+  {
+    "a": "atreus-and-thyestes",
+    "b": "agamemnon-murder",
+    "place": "Mycenae",
+    "note": "Aegisthus son of Thyestes, living in the house his father once held, ambushes the homecoming son of Atreus at a feast — the slayer of Atreus becomes the slayer of his son.",
+    "sources": ["homer", "apollodorus", "hyginus", "pausanias"]
+  },
+  {
+    "a": "atreus-and-thyestes",
+    "b": "iphigenia-at-aulis",
+    "place": "Aulis",
+    "note": "Apollodorus counts the golden lamb Atreus never sacrificed among the grievances of Artemis that hold the fleet at Aulis.",
+    "sources": ["apollodorus"]
+  },
+  {
+    "a": "atreus-and-thyestes",
+    "b": "suitor-oath-at-sparta",
+    "place": "Sparta",
+    "note": "Tyndareus, who brings the exiled sons of Atreus home, makes them his sons-in-law — Clytemnestra for Agamemnon, Helen for Menelaus.",
+    "sources": ["apollodorus", "hyginus"]
   }
 ]

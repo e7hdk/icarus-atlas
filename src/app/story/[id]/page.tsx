@@ -9,6 +9,7 @@ import { StoryTheatre } from '@/components/stories/StoryTheatre';
 import { loadCities } from '@/features/geo/load';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { StoryLegacy } from '@/components/stories/StoryLegacy';
+import { loadLoomIndex } from '@/features/art/load';
 import type { SourceId } from '@/types/character';
 
 export async function generateStaticParams() {
@@ -25,12 +26,13 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
 
 export default async function StoryPage(props: { params: Promise<{ id: string }> }) {
   const { id } = await props.params;
-  const [stories, atlas, cities, culture, voyage] = await Promise.all([
+  const [stories, atlas, cities, culture, voyage, loom] = await Promise.all([
     loadStories(),
     loadAtlasData(),
     loadCities(),
     loadStoryCulture(id),
     loadVoyage(id),
+    loadLoomIndex(),
   ]);
   const bakedProse = getBakedLinkedProse();
   const story = stories.find((s) => s.id === id);
@@ -128,7 +130,7 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
         episodes={subStories.map((sub) => ({ id: sub.id, title: sub.title }))}
       />
 
-      {culture && <StoryLegacy culture={culture} />}
+      {culture && <StoryLegacy culture={culture} loom={{ href: `/art?story=${id}`, count: loom.storyWorks(id) }} />}
     </main>
   );
 }

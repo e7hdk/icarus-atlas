@@ -1,23 +1,34 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { WorkCredit } from '@/components/art/WorkCredit';
+import type { ImageCredit } from '@/types/art';
 
 /** Clickable image for the Legacy shelves (artworks and museum artifacts).
  *  Opens the piece full size in an Aether Nebula lightbox — deep-cosmos veil,
  *  glass close pill, museum caption — dismissed by the veil, the ✕ or Escape.
- *  `meta` is the caption line under the title ("artist, year" / "museum · period"). */
+ *  `meta` is the caption line under the title ("artist, year" / "museum · period").
+ *  With `href` it leads there instead, as the day's artwork leads to its plate. */
 export function ArtworkImage({
   src,
   title,
   meta,
+  credit,
   className,
+  href,
+  onFollow,
 }: {
   src: string;
   title: string;
   meta: string;
+  credit?: ImageCredit;
   className?: string;
+  href?: string;
+  /** Called as the link is followed. */
+  onFollow?: () => void;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -34,6 +45,25 @@ export function ArtworkImage({
       document.body.style.overflow = previous;
     };
   }, [open]);
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        onClick={onFollow}
+        aria-label={`Open "${title}" on the Loom`}
+        className={`group relative block overflow-hidden rounded-2xl border border-glass-border ${className ?? ''}`}
+      >
+        <Image
+          src={src}
+          alt={title}
+          fill
+          unoptimized
+          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+        />
+      </Link>
+    );
+  }
 
   return (
     <>
@@ -87,6 +117,7 @@ export function ArtworkImage({
               <figcaption className="text-center">
                 <p className="font-display text-lg tracking-[0.06em] text-aether">{title}</p>
                 <p className="mt-1 font-body text-[15px] italic text-aether-muted">{meta}</p>
+                <WorkCredit credit={credit} className="mt-1" />
               </figcaption>
             </figure>
           </div>,

@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 import type { DayPick, EphemerisData } from '@/types/spotlight';
 
-/** Client state of the Ephemeris. `data` arrives from the server host props;
- *  `pick` is only ever set after mount (the server never renders "today"),
+/** Client state of the Ephemeris. `data` arrives from the host's fetch of the
+ *  baked file; `pick` is only ever set after mount (the server never renders "today"),
  *  which is what keeps hydration clean by construction. The proem block
  *  drives the staged telling; `oracleOpen` and `riddleOpen` are the day's
  *  other two stages — the AtlasBar retracts while any stage is open. The

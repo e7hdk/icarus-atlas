@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { pickSourced } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { atticDateFor, sacredDayFor } from '@/features/spotlight/attic';
@@ -430,6 +431,7 @@ export function ProemOverlay() {
                 </div>
                 <figcaption className="mt-4 font-body text-lg italic text-aether-muted">
                   {beat.artwork.title} — {beat.artwork.artist}, {beat.artwork.year}
+                  <WorkCredit credit={beat.artwork.credit} className="mt-1 not-italic" />
                 </figcaption>
               </figure>
             )}

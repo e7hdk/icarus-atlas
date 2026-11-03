@@ -1,11 +1,15 @@
 import type { Character } from '@/types/character';
 
-/** The slice of a character the search needs — the global ⌘K overlay ships
- *  this for every star on every page, so it stays deliberately narrow. */
+/** The slice of a character the search needs — `pnpm bake-atlas-data` writes this
+ *  for every star, so it stays deliberately narrow. */
 export type SearchableCharacter = Pick<
   Character,
   'id' | 'name' | 'greekName' | 'romanName' | 'type' | 'epithets' | 'domains'
 >;
+
+export function toSearchable({ id, name, greekName, romanName, type, epithets, domains }: SearchableCharacter): SearchableCharacter {
+  return { id, name, greekName, romanName, type, epithets, domains };
+}
 
 /** One character matched by a search query, with the matched range for highlighting. */
 export interface SearchHit {

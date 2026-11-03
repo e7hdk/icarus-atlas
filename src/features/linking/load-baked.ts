@@ -1,3 +1,4 @@
+import 'server-only';
 import type { Character } from '@/types/character';
 import type { ProseSegment } from './parse-prose';
 import bakedJson from '../../../data/generated/linked-prose.json';
@@ -26,7 +27,9 @@ export interface BakedLinkedProse {
 
 let syncCache: BakedLinkedProse | null | undefined;
 
-/** Baked linked prose — bundled at build time from data/generated/linked-prose.json. */
+/** Baked linked prose — read at build time from data/generated/linked-prose.json. All
+ *  of it would be 4.9 MB in a client bundle, hence `server-only`: pages pass down the
+ *  segments they show, and the sky reads them from each star's baked file. */
 export function getBakedLinkedProse(): BakedLinkedProse | null {
   if (syncCache !== undefined) return syncCache;
   try {

@@ -1,3 +1,5 @@
+import type { ImageCredit } from './art';
+
 /** Core domain types for Icarus Atlas.
  *  This file is the contract between the data layer (data/*.json) and the UI.
  *  Keep in sync with src/lib/schemas.ts (zod) and docs/PLAN.md §4. */
@@ -122,6 +124,17 @@ export interface Character {
   residences?: { city: string; sources: SourceId[] }[];
 }
 
+/** Everything about a figure but its prose. */
+export type StarFacts = Omit<Character, 'summary' | 'story'>;
+
+/** A star as the sky needs it: its facts, and which sources tell of it. The prose
+ *  itself is fetched when the star is read (features/galaxy/useStarProse). */
+export type SkyCharacter = StarFacts & { told: SourceId[] };
+
+export function toSkyCharacter({ summary, story, ...facts }: Character): SkyCharacter {
+  return { ...facts, told: [...new Set([...summary, ...story].flatMap((entry) => entry.sources))] };
+}
+
 export interface Relation {
   id: string;
   type: RelationType;
@@ -152,6 +165,8 @@ export interface Artwork {
   imageUrl: string;
   /** Museum-caption style paragraph: what the work shows and why it matters. */
   description: string;
+  /** Attached at load time from Commons metadata, never authored. */
+  credit?: ImageCredit;
 }
 
 /** Museum objects — beside artworks, the only Legacy shelf allowed imagery
@@ -165,6 +180,8 @@ export interface Artifact {
   imageUrl: string;
   description: string;
   externalUrl?: string;
+  /** Attached at load time from Commons metadata, never authored. */
+  credit?: ImageCredit;
 }
 
 /** Cinema & television — text cards only, no imagery (license rule). */

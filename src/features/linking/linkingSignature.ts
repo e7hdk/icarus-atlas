@@ -2,30 +2,41 @@ import { hashString } from '@/features/galaxy/layout';
 import { fold } from '@/features/search/match';
 import type { Character, Relation } from '@/types/character';
 import type { Story } from '@/types/story';
+import { linksOnlyInScope } from './name-index';
 import { LINKED_PROSE_PARSER_VERSION } from './parse-prose';
 
-/** Fingerprint of the global searchable name roster — the whole-file "nothing
- *  at all changed" exit. It is NOT folded into the per-entity signatures: a
- *  single new character used to invalidate every baked paragraph, and the
- *  linker does not work that way (see nameOwners below). */
-export function linkingNamesSignature(characters: Character[]): string {
+/** Fingerprint of the global searchable name roster and the place names it is
+ *  read against — the whole-file "nothing at all changed" exit. It is NOT folded
+ *  into the per-entity signatures: a single new character used to invalidate
+ *  every baked paragraph, and the linker does not work that way (see nameOwners
+ *  below). */
+export function linkingNamesSignature(
+  characters: Character[],
+  placeNames: ReadonlySet<string>,
+): string {
   const names = characters
     .map((c) => `${c.id}:${c.name}:${c.romanName ?? ''}:${c.type}`)
     .sort()
     .join(',');
-  return `${LINKED_PROSE_PARSER_VERSION}.${characters.length}.${hashString(names)}`;
+  const places = [...placeNames].sort().join(',');
+  return `${LINKED_PROSE_PARSER_VERSION}.${characters.length}.${hashString(names)}.${hashString(places)}`;
 }
 
 /** Every string the linker can match, folded exactly as the matcher folds it,
  *  mapped to who answers to it. The owners carry their `type` because a link
  *  segment records the type it linked to, so a retyped character changes the
- *  baked output of every paragraph that names it. */
-export function linkableNameOwners(characters: Character[]): Record<string, string> {
+ *  baked output of every paragraph that names it — and whether the name is a
+ *  place's too, since that decides where it may link. */
+export function linkableNameOwners(
+  characters: Character[],
+  placeNames: ReadonlySet<string>,
+): Record<string, string> {
   const owners = new Map<string, string[]>();
   for (const character of characters) {
     for (const raw of [character.name, character.romanName].filter(Boolean) as string[]) {
       const key = fold(raw);
-      owners.set(key, [...(owners.get(key) ?? []), `${character.id}:${character.type}`]);
+      const scoped = linksOnlyInScope(key, character.type, placeNames) ? ':scoped' : '';
+      owners.set(key, [...(owners.get(key) ?? []), `${character.id}:${character.type}${scoped}`]);
     }
   }
   return Object.fromEntries([...owners].map(([key, ids]) => [key, ids.sort().join(',')]));

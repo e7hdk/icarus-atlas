@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
-import type { Character } from '@/types/character';
+import type { SkyCharacter } from '@/types/character';
 import { TYPE_GLOW, IRIDESCENT_BASE_HUE } from '@/types/character';
 import { hashString, type Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -34,7 +34,7 @@ export function StarsDriver({
   isMobile,
   positions,
 }: {
-  characters: Character[];
+  characters: SkyCharacter[];
   isMobile: boolean;
   positions: Map<string, Vec3>;
 }) {
@@ -191,12 +191,7 @@ export function StarsDriver({
     const currentData = dataRef.current;
     for (let i = 0; i < count; i++) {
       const c = stars[i];
-      currentData.attested[i] =
-        lens === 'consensus' ||
-        c.summary.some((e) => e.sources.includes(lens)) ||
-        c.story.some((e) => e.sources.includes(lens))
-          ? 1
-          : 0;
+      currentData.attested[i] = lens === 'consensus' || c.told.includes(lens) ? 1 : 0;
     }
   }, [lens, data, stars, count]);
 

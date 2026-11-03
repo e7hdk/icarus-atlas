@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import type { Character, Relation, Source } from '@/types/character';
+import type { Relation, SkyCharacter, Source } from '@/types/character';
 import type { GeoCity } from '@/types/geo';
 import { GalaxyView, type CitySkyContext } from '@/components/galaxy/GalaxyView';
 import { CityTabNav } from '@/components/city/CityTabNav';
@@ -19,7 +19,7 @@ export function CitySkyView({
 }: {
   city: Pick<GeoCity, 'id' | 'name' | 'greekName'>;
   residentCount: number;
-  characters: Character[];
+  characters: SkyCharacter[];
   relations: Relation[];
   sources: Source[];
   cities: Pick<GeoCity, 'id' | 'name' | 'greekName'>[];

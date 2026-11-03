@@ -3929,9 +3929,10 @@
     "from": "amphion",
     "to": "lycus",
     "sources": [
-      "apollodorus",
-      "pausanias"
-    ]
+      "apollodorus"
+    ],
+    "topic": "lycus-fate",
+    "note": "The twins kill Lycus in Apollodorus; Pausanias says only that they overcame him, and in Hyginus Mercury forbids the killing (Bibliotheca 3.5.5; Description of Greece 9.5.6; Fabulae 8)"
   },
   {
     "id": "zethus-slayer-lycus",
@@ -3939,9 +3940,10 @@
     "from": "zethus",
     "to": "lycus",
     "sources": [
-      "apollodorus",
-      "pausanias"
-    ]
+      "apollodorus"
+    ],
+    "topic": "lycus-fate",
+    "note": "The twins kill Lycus in Apollodorus; Pausanias says only that they overcame him, and in Hyginus Mercury forbids the killing (Bibliotheca 3.5.5; Description of Greece 9.5.6; Fabulae 8)"
   },
   {
     "id": "aglaus-parent-thyestes",
@@ -11465,9 +11467,11 @@
     "from": "idas",
     "to": "castor",
     "sources": [
-      "apollodorus"
+      "apollodorus",
+      "hyginus"
     ],
-    "note": "Killed Castor in the feud over the cattle/the Leucippides (Bibliotheca 3.11.2)"
+    "topic": "castor-slayer",
+    "note": "Killed Castor in the feud over the cattle/the Leucippides (Bibliotheca 3.11.2; Fabulae 80)"
   },
   {
     "id": "castor-slayer-lynceus-apharetid",
@@ -11486,9 +11490,46 @@
     "from": "polydeuces",
     "to": "lynceus-apharetid",
     "sources": [
-      "apollodorus"
+      "apollodorus",
+      "pausanias",
+      "ovid"
     ],
-    "note": "Polydeuces ran Lynceus through with his spear (Bibliotheca 3.11.2)"
+    "topic": "castor-slayer",
+    "note": "Polydeuces ran Lynceus through with his spear (Bibliotheca 3.11.2; Description of Greece 4.3.1; Fasti 5.711)"
+  },
+  {
+    "id": "lynceus-apharetid-slayer-castor",
+    "type": "slayer",
+    "from": "lynceus-apharetid",
+    "to": "castor",
+    "sources": [
+      "ovid"
+    ],
+    "topic": "castor-slayer",
+    "note": "Lynceus' sword pierced Castor's breast (Fasti 5.709–710)"
+  },
+  {
+    "id": "zeus-slayer-idas",
+    "type": "slayer",
+    "from": "zeus",
+    "to": "idas",
+    "sources": [
+      "apollodorus",
+      "pausanias"
+    ],
+    "topic": "castor-slayer",
+    "note": "Zeus struck Idas with a thunderbolt as he fought Polydeuces (Bibliotheca 3.11.2; Description of Greece 4.3.1)"
+  },
+  {
+    "id": "polydeuces-slayer-idas",
+    "type": "slayer",
+    "from": "polydeuces",
+    "to": "idas",
+    "sources": [
+      "hyginus"
+    ],
+    "topic": "castor-slayer",
+    "note": "Pollux overcame Idas in single combat and recovered his brother's body (Fabulae 80)"
   },
   {
     "id": "hippocoon-adversary-tyndareus",

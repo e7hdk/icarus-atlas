@@ -1,0 +1,252 @@
+'use client';
+
+import { useRef, useState } from 'react';
+import Link from 'next/link';
+import type { Story, StoryKind } from '@/types/story';
+
+const KIND_COLOR: Record<StoryKind, string> = {
+  cosmogony: '#c084fc',
+  catastrophe: '#00e5ff',
+  war: '#fb7185',
+  saga: '#fcd34d',
+  episode: '#aab4c8',
+};
+
+const KIND_LABEL: Record<StoryKind, string> = {
+  cosmogony: 'cosmogony',
+  catastrophe: 'catastrophe',
+  war: 'war',
+  saga: 'saga',
+  episode: 'episode',
+};
+
+const GREEK_KEY_PATTERN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='12' viewBox='0 0 32 12'%3E%3Cpath d='M0 11H27V1H5V8H21V4H9' fill='none' stroke='%23fcd34d' stroke-width='1' opacity='.78'/%3E%3C/svg%3E\")";
+
+/** The side panel for a selected myth. Anchored to a FIXED top so it never shifts
+ *  with content length; the summary clamps behind a Read more, and a long Episodes
+ *  list collapses behind a "+N more" toggle (like the galaxy's relation read-more).
+ *  Keyed by story id in the parent, so its expand state resets per myth. */
+export function StoryPanel({
+  story,
+  episodes,
+  onClose,
+  onSelectEpisode,
+  onStepEarlier,
+  onStepLater,
+  loomCount = 0,
+}: {
+  story: Story;
+  episodes: Story[];
+  /** How many works on the Loom tell this story; above zero the panel leads there. */
+  loomCount?: number;
+  onClose: () => void;
+  onSelectEpisode: (id: string) => void;
+  /** Mobile ‹ › walk through time — the panel's stand-in for the arrow keys. */
+  onStepEarlier?: () => void;
+  onStepLater?: () => void;
+}) {
+  const [showFullSummary, setShowFullSummary] = useState(false);
+  const [showAllEpisodes, setShowAllEpisodes] = useState(false);
+  /* Two-detent mobile sheet (the CityPanel pattern): swipe the header up for a
+   * near-full reading view, down for the low peek. Keyed by story id in the
+   * parent, so every newly selected myth starts back at the peek. */
+  const [expanded, setExpanded] = useState(false);
+  const touchStartY = useRef<number | null>(null);
+  const onSheetTouchStart = (event: React.TouchEvent) => {
+    touchStartY.current = event.touches[0].clientY;
+  };
+  const onSheetTouchEnd = (event: React.TouchEvent) => {
+    const start = touchStartY.current;
+    touchStartY.current = null;
+    if (start === null) return;
+    const delta = event.changedTouches[0].clientY - start;
+    if (delta < -36) setExpanded(true);
+    else if (delta > 36) setExpanded(false);
+  };
+  const EP_LIMIT = 8;
+  const summaryLong = story.summary.text.length > 240;
+  const shownEpisodes = showAllEpisodes ? episodes : episodes.slice(0, EP_LIMIT);
+
+  return (
+    <aside
+      className={`fixed inset-x-0 bottom-0 z-40 flex w-full flex-col overflow-hidden rounded-t-2xl border border-star-olympian/30 pb-[env(safe-area-inset-bottom)] shadow-[0_26px_90px_rgba(5,2,15,0.9),0_0_38px_rgba(252,211,77,0.1),inset_0_0_42px_rgba(124,77,255,0.06)] backdrop-blur-2xl transition-[max-height] duration-300 ease-out sm:inset-x-auto sm:bottom-auto sm:right-6 sm:top-24 sm:max-h-[calc(100vh-7.5rem)] sm:w-[350px] sm:max-w-[calc(100%-32px)] sm:rounded-2xl sm:pb-0 ${
+        expanded ? 'max-h-[92svh]' : 'max-h-[40svh]'
+      }`}
+      style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
+    >
+      {/* Mobile bottom-sheet handle — tap or swipe to open the full reading
+          view; the scene stays live above the low peek. */}
+      <button
+        type="button"
+        aria-label={expanded ? 'Collapse the myth panel' : 'Expand the myth panel'}
+        aria-expanded={expanded}
+        onClick={() => setExpanded((value) => !value)}
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+        className="mx-auto mt-2 flex h-4 w-16 shrink-0 items-center justify-center sm:hidden"
+      >
+        <span className="h-1 w-10 rounded-full bg-white/15" />
+      </button>
+
+      {/* Mobile time-walk: ‹ earlier and later › flank the sheet, standing in
+          for the desktop's ↑/↓ arrow keys. */}
+      {onStepEarlier && (
+        <button
+          type="button"
+          onClick={onStepEarlier}
+          aria-label="Sail to the earlier myth"
+          className="absolute left-1.5 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-glass text-aether-muted backdrop-blur-xl transition-colors active:border-star-olympian/60 active:text-star-olympian sm:hidden"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="m12 4-6 6 6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      )}
+      {onStepLater && (
+        <button
+          type="button"
+          onClick={onStepLater}
+          aria-label="Sail to the later myth"
+          className="absolute right-1.5 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-glass-border bg-glass text-aether-muted backdrop-blur-xl transition-colors active:border-star-olympian/60 active:text-star-olympian sm:hidden"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="m8 4 6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      )}
+      <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.08]" />
+      <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/45" />
+      <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/25" />
+      <div
+        className="pointer-events-none absolute inset-x-14 top-0 h-3 opacity-25 [mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]"
+        style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
+      />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.12),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.1),transparent_48%)]" />
+
+      <header
+        className="relative px-5 pb-3 pt-3 text-center sm:px-6 sm:pb-5 sm:pt-7"
+        onTouchStart={onSheetTouchStart}
+        onTouchEnd={onSheetTouchEnd}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-5 top-5 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
+        >
+          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+          </svg>
+        </button>
+
+        <span
+          className="mx-auto inline-flex w-fit items-center gap-2 border-y px-2.5 py-1 font-display text-[9px] uppercase tracking-[0.18em]"
+          style={{
+            color: KIND_COLOR[story.kind],
+            borderColor: `${KIND_COLOR[story.kind]}55`,
+          }}
+        >
+          <i
+            className="h-1.5 w-1.5 rotate-45"
+            style={{ background: KIND_COLOR[story.kind], boxShadow: `0 0 9px ${KIND_COLOR[story.kind]}88` }}
+          />
+          {KIND_LABEL[story.kind]}
+        </span>
+
+        <div className="mx-auto mt-4 flex w-28 items-center gap-2" aria-hidden>
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/55" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/70 bg-star-olympian/20 shadow-[0_0_10px_rgba(252,211,77,0.42)]" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/55" />
+        </div>
+
+        <h2 className="mt-4 font-display text-[22px] tracking-[0.1em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.14)]">
+          {story.title}
+        </h2>
+        {story.greekTitle && (
+          <p className="mt-1 font-body text-[17px] italic text-star-olympian/80">{story.greekTitle}</p>
+        )}
+      </header>
+
+      {/* Scrollable body so the fixed panel never overflows the screen. Extra
+          side padding on phones keeps the prose clear of the ‹ › buttons. */}
+      <div className="relative min-h-0 flex-1 overflow-y-auto border-t border-star-olympian/15 px-10 py-5 sm:px-6">
+        <p
+          className={`font-body text-[15px] leading-relaxed text-aether/90 ${
+            summaryLong && !showFullSummary ? 'line-clamp-6' : ''
+          }`}
+        >
+          {story.summary.text}
+        </p>
+        {summaryLong && (
+          <button
+            type="button"
+            onClick={() => setShowFullSummary((v) => !v)}
+            className="mt-2 font-display text-[9px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
+          >
+            {showFullSummary ? 'Read less' : 'Read more'}
+          </button>
+        )}
+
+        {episodes.length > 0 && (
+          <>
+            <div className="mt-5 flex items-center gap-3">
+              <p className="font-display text-[9px] uppercase tracking-[0.24em] text-aether-faint">
+                Episodes
+              </p>
+              <span className="h-px flex-1 bg-gradient-to-r from-star-olympian/25 to-transparent" />
+            </div>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {shownEpisodes.map((ep) => (
+                <button
+                  key={ep.id}
+                  type="button"
+                  onClick={() => onSelectEpisode(ep.id)}
+                  className="border border-star-olympian/15 bg-star-olympian/[0.035] px-2.5 py-1.5 font-body text-[13px] text-aether/85 transition-all hover:border-star-olympian/40 hover:bg-star-olympian/[0.08] hover:text-aether"
+                >
+                  {ep.title}
+                </button>
+              ))}
+              {episodes.length > EP_LIMIT && (
+                <button
+                  type="button"
+                  onClick={() => setShowAllEpisodes((v) => !v)}
+                  className="border border-nebula-soft/25 bg-nebula-violet/10 px-2.5 py-1.5 font-display text-[9px] uppercase tracking-[0.14em] text-nebula-soft transition-colors hover:bg-nebula-violet/20"
+                >
+                  {showAllEpisodes ? 'Show fewer' : `+${episodes.length - EP_LIMIT} more`}
+                </button>
+              )}
+            </div>
+          </>
+        )}
+      </div>
+
+      <footer className="relative border-t border-star-olympian/20 bg-cosmos-deep/55 px-6 py-4">
+        <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
+        </div>
+        <Link
+          href={`/story/${story.id}`}
+          className="group flex w-full items-center justify-center gap-3 border border-star-olympian/35 bg-star-olympian/[0.06] py-3 font-display text-[10px] uppercase tracking-[0.22em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether"
+        >
+          <span className="text-[8px]">◆</span>
+          <span>Enter the saga</span>
+          <span className="transition-transform group-hover:translate-x-0.5">→</span>
+        </Link>
+        {loomCount > 0 && (
+          <Link
+            href={`/art?story=${story.id}`}
+            className="mt-2.5 flex items-baseline justify-center gap-2 font-display text-[9.5px] uppercase tracking-[0.22em] text-aether-muted transition-colors hover:text-star-olympian"
+          >
+            Woven on the Loom
+            <span className="font-body text-[14px] normal-case italic tracking-normal text-aether-faint">
+              {`${loomCount} ${loomCount === 1 ? 'work' : 'works'}`}
+            </span>
+          </Link>
+        )}
+      </footer>
+    </aside>
+  );
+}

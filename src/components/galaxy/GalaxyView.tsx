@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef } from 'react';
-import type { Character, Relation, Source } from '@/types/character';
+import type { Relation, SkyCharacter, Source } from '@/types/character';
 import { computePositions, type Vec3 } from '@/features/galaxy/layout';
 import { layoutSignature } from '@/features/galaxy/layoutSignature';
 import type { BakedLayout } from '@/features/characters/load';
@@ -32,7 +32,7 @@ export function GalaxyView({
   cityContext,
   cameraIntro = false,
 }: {
-  characters: Character[];
+  characters: SkyCharacter[];
   relations: Relation[];
   sources: Source[];
   /** 'compact' remaps generations to start at zero — for the small city skies. */

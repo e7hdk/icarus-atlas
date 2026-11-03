@@ -13,12 +13,13 @@ import { useGalaxyStore } from '@/features/galaxy/store';
 
 /** Command-palette search (⌘K). Matched substrings glow in the star's type color.
  *  `navigate` opens the character codex (used off the galaxy, where selecting a
- *  star would have nothing to fly to). */
+ *  star would have nothing to fly to). `characters` is null while the index is on
+ *  its way: what is typed meanwhile is kept and answered when it lands. */
 export function SearchOverlay({
   characters,
   navigate = false,
 }: {
-  characters: SearchableCharacter[];
+  characters: SearchableCharacter[] | null;
   navigate?: boolean;
 }) {
   const searchOpen = useGalaxyStore((s) => s.searchOpen);
@@ -31,7 +32,7 @@ function SearchDialog({
   characters,
   navigate,
 }: {
-  characters: SearchableCharacter[];
+  characters: SearchableCharacter[] | null;
   navigate: boolean;
 }) {
   const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);
@@ -41,7 +42,7 @@ function SearchDialog({
   const [activeIndex, setActiveIndex] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const hits = useMemo(() => searchCharacters(characters, query), [characters, query]);
+  const hits = useMemo(() => searchCharacters(characters ?? [], query), [characters, query]);
   const active = Math.min(activeIndex, Math.max(hits.length - 1, 0));
 
   useEffect(() => {
@@ -129,7 +130,7 @@ function SearchDialog({
           </kbd>
         </div>
 
-        {query.trim() && hits.length === 0 && (
+        {characters && query.trim() && hits.length === 0 && (
           <p className="px-5 py-6 text-center font-body text-[15px] italic text-aether-muted">
             No star answers to &ldquo;{query.trim()}&rdquo;.
           </p>

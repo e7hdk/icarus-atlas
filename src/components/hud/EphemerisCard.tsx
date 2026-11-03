@@ -6,6 +6,7 @@ import { useEffect, useMemo } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
+import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
 import { pickSourced } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -248,12 +249,16 @@ export function EphemerisCard() {
                   src={payload.artwork.imageUrl}
                   title={payload.artwork.title}
                   meta={`${payload.artwork.artist}, ${payload.artwork.year}`}
+                  credit={payload.artwork.credit}
                   className="h-40 w-full"
+                  href={payload.artwork.workId ? `/art/${payload.artwork.workId}` : undefined}
+                  onFollow={() => setCardOpen(false)}
                 />
               </div>
               <p className="mt-1.5 font-body text-[12px] italic text-aether-faint">
                 {payload.artwork.title} — {payload.artwork.artist}, {payload.artwork.year}
               </p>
+              <WorkCredit credit={payload.artwork.credit} className="mt-0.5" />
             </div>
           )}
           <div className="mt-4 flex flex-col gap-1.5">

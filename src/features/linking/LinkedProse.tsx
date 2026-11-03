@@ -14,6 +14,7 @@ export function LinkedProse({
   nameIndex,
   sortedNames,
   scopeIds,
+  selfId,
   className,
 }: {
   text: string;
@@ -22,6 +23,8 @@ export function LinkedProse({
   nameIndex?: NameIndex;
   sortedNames?: string[];
   scopeIds?: string[];
+  /** The figure whose own prose this is: its name here never links to itself. */
+  selfId?: string;
   className?: string;
 }) {
   const characterTypes = useMemo(() => {
@@ -36,8 +39,8 @@ export function LinkedProse({
   const segments = useMemo(() => {
     if (precomputedSegments) return precomputedSegments;
     if (!sortedNames || !nameIndex) return [{ kind: 'plain' as const, text }];
-    return parseLinkedProse(text, sortedNames, nameIndex, characterTypes, scopeIds);
-  }, [precomputedSegments, text, sortedNames, nameIndex, characterTypes, scopeIds]);
+    return parseLinkedProse(text, sortedNames, nameIndex, characterTypes, scopeIds, selfId);
+  }, [precomputedSegments, text, sortedNames, nameIndex, characterTypes, scopeIds, selfId]);
 
   return (
     <span className={className}>

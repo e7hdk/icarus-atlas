@@ -28,6 +28,7 @@
       "actaeon-artemis",
       "alcmaeon-wanderings",
       "antigone-at-thebes",
+      "antiope-and-the-twins",
       "aristaeus-cycle",
       "birth-and-banishment",
       "cadmus-and-thebes",
@@ -225,6 +226,7 @@
     ],
     "storyIds": [
       "agamemnon-murder",
+      "atreus-and-thyestes",
       "cassandra-at-mycenae",
       "cypria",
       "heracles-cycle",
@@ -330,6 +332,7 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
       "perseus-cycle",
       "return-and-mycenae"
     ],
@@ -366,6 +369,7 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
       "bellerophon-chimera",
       "birth-at-seriphos",
       "diomedes-exile",
@@ -688,7 +692,9 @@
     "storyIds": [
       "aeneas-to-italy",
       "cypria",
+      "dioscuri-and-apharetids",
       "duel-and-truce",
+      "heracles-in-elis-and-pylos",
       "hyacinthus",
       "little-iliad",
       "menelaus-in-egypt",
@@ -804,6 +810,7 @@
     ],
     "storyIds": [
       "diomedes-exile",
+      "heracles-in-elis-and-pylos",
       "menelaus-in-egypt",
       "nestor-at-pylos",
       "nostoi",
@@ -1385,6 +1392,7 @@
       "bellerophon-chimera",
       "birth-and-banishment",
       "heracles-cycle",
+      "heracles-in-elis-and-pylos",
       "omphale-and-troy",
       "twelve-labours"
     ],
@@ -1729,6 +1737,7 @@
     "storyIds": [
       "aristaeus-cycle",
       "caenis-caeneus",
+      "coronis-and-asclepius",
       "daphne-laurel",
       "erysichthon-hunger",
       "lapith-centaur-war",
@@ -1782,6 +1791,7 @@
     ],
     "storyIds": [
       "argonautica",
+      "coronis-and-asclepius",
       "muster-of-the-argo",
       "trojan-war"
     ],
@@ -2502,10 +2512,12 @@
     ],
     "storyIds": [
       "alcmaeon-wanderings",
+      "atreus-and-thyestes",
       "birth-and-banishment",
       "cadmus-and-thebes",
       "cassandra-at-mycenae",
       "cephalus-procris",
+      "coronis-and-asclepius",
       "locrian-ajax",
       "neoptolemus-to-epirus",
       "oedipus-at-thebes",
@@ -2543,6 +2555,8 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
+      "heracles-in-elis-and-pylos",
       "pelops-and-oenomaus"
     ]
   },
@@ -2641,6 +2655,7 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
       "palamedes",
       "seven-against-thebes",
       "twelve-labours"
@@ -2709,6 +2724,7 @@
       }
     ],
     "storyIds": [
+      "coronis-and-asclepius",
       "road-to-athens"
     ]
   },
@@ -2783,6 +2799,7 @@
       }
     ],
     "storyIds": [
+      "heracles-in-elis-and-pylos",
       "road-to-athens"
     ]
   },
@@ -3450,6 +3467,7 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
       "birth-of-aphrodite"
     ],
     "characterIds": [
@@ -5272,6 +5290,7 @@
       }
     ],
     "storyIds": [
+      "heracles-in-elis-and-pylos",
       "odyssey"
     ]
   },
@@ -5914,6 +5933,7 @@
     ],
     "storyIds": [
       "death-on-skyros",
+      "dioscuri-and-apharetids",
       "pirithous-and-the-underworld"
     ],
     "characterIds": [
@@ -6090,6 +6110,8 @@
       }
     ],
     "storyIds": [
+      "atreus-and-thyestes",
+      "heracles-in-elis-and-pylos",
       "pelops-and-oenomaus",
       "salmoneus-false-thunder"
     ],
@@ -6186,6 +6208,7 @@
     ],
     "storyIds": [
       "alcmaeon-wanderings",
+      "heracles-in-elis-and-pylos",
       "telephus-at-mysia"
     ],
     "characterIds": [
@@ -6286,6 +6309,8 @@
       }
     ],
     "storyIds": [
+      "coronis-and-asclepius",
+      "dioscuri-and-apharetids",
       "return-of-heraclids"
     ],
     "characterIds": [
@@ -6775,6 +6800,8 @@
       "thyestes"
     ],
     "storyIds": [
+      "antiope-and-the-twins",
+      "atreus-and-thyestes",
       "medea-at-corinth",
       "trojan-war"
     ]
@@ -10610,6 +10637,7 @@
       "podalirius"
     ],
     "storyIds": [
+      "coronis-and-asclepius",
       "trojan-war"
     ]
   },

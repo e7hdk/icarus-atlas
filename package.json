@@ -8,7 +8,7 @@
     "url": "https://github.com/e7hdk/icarus-atlas.git"
   },
   "scripts": {
-    "dev": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && next dev -p 3500",
+    "dev": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && pnpm bake-art && pnpm bake-atlas-data && next dev -p 3500",
     "build:fonts": "tsx scripts/build-map-fonts.ts",
     "build:map": "tsx scripts/build-map-fonts.ts && tsx scripts/build-map-style.ts",
     "bake-layout": "tsx scripts/bake-layout.ts",
@@ -17,7 +17,7 @@
     "rivers:base": "tsx scripts/build-rivers-base.ts",
     "fetch:osm-rivers": "tsx scripts/fetch-osm-rivers.ts",
     "refresh:rivers": "tsx scripts/refresh-river-geometry.ts",
-    "build": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && next build",
+    "build": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && pnpm bake-art && pnpm bake-atlas-data && next build",
     "start": "next start",
     "lint": "eslint",
     "dem:fetch": "pmtiles extract https://download.mapterhorn.com/planet.pmtiles public/geo/dem.pmtiles --bbox=-6,22,44,47 --maxzoom=9",
@@ -26,9 +26,16 @@
     "corpus:sync": "tsx scripts/corpus-sync.ts sync",
     "corpus:verify": "tsx scripts/corpus-sync.ts verify",
     "corpus:search": "tsx scripts/corpus-search.ts",
-    "validate-data": "tsx scripts/validate-data.ts",
+    "validate-data": "tsx scripts/validate-data.ts && pnpm bake-atlas-data",
     "verify:culture": "tsx scripts/verify-culture-links.ts",
     "harvest:culture": "tsx scripts/harvest-culture.ts",
+    "art:commons": "tsx scripts/art-commons.ts",
+    "bake-art": "tsx scripts/bake-art.ts",
+    "bake-atlas-data": "tsx scripts/bake-atlas-data.ts",
+    "bake-loom-atlas": "tsx scripts/bake-loom-atlas.ts",
+    "validate-loom": "tsx scripts/validate-loom.ts",
+    "loom:metrics": "tsx scripts/loom-metrics.ts",
+    "loom:sketch": "tsx scripts/loom-sketch.ts",
     "validate-layout": "tsx scripts/validate-layout.ts",
     "layout:metrics": "tsx scripts/layout-metrics.ts",
     "audit:parents": "tsx scripts/audit-parent-direction.ts",
@@ -37,7 +44,10 @@
     "audit:residences": "tsx scripts/audit-city-residences.ts",
     "theogony:gap": "tsx scripts/theogony-gap.ts",
     "water-nymph:gap": "tsx scripts/water-nymph-gap.ts",
-    "build-sky": "tsx scripts/build-sky.ts"
+    "build-sky": "tsx scripts/build-sky.ts",
+    "validate-myth-river": "tsx scripts/validate-myth-river.ts",
+    "myth-river:metrics": "tsx scripts/myth-river-metrics.ts",
+    "myth-river:sketch": "tsx scripts/myth-river-sketch.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

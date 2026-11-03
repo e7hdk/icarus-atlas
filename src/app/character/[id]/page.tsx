@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture, loadFlagshipCharacterIds } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
+import { getBakedLinkedProse } from '@/features/linking/load-baked';
 import { loadStories } from '@/features/stories/load';
 import { storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterTabs } from '@/components/character/CharacterTabs';
@@ -65,6 +66,7 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
           label: citiesById.get(residence.city)?.name ?? residence.city,
         }))}
         appearances={storyAppearances.map((story) => ({ id: story.id, title: story.title }))}
+        linkedStory={getBakedLinkedProse()?.characters[character.id]?.story ?? []}
       />
 
       <div className="mt-16 border-t border-glass-border pt-6">

@@ -1,5 +1,5 @@
 import { hashString, LAYOUT_VERSION } from './layout';
-import type { Character, Relation } from '@/types/character';
+import type { Relation, StarFacts } from '@/types/character';
 
 /** A cheap, stable fingerprint of everything the layout solver reads — character
  *  id/type/cluster/residences and the relation graph (from/type/to). If it matches
@@ -9,7 +9,7 @@ import type { Character, Relation } from '@/types/character';
  *  and forces a re-bake / runtime recompute. Residences are folded in because the
  *  cohort/shell layout now reads them (co-resident masses cluster). Cheap to compute
  *  (~a few ms) versus the ~5s solve it guards. */
-export function layoutSignature(characters: Character[], relations: Relation[]): string {
+export function layoutSignature(characters: StarFacts[], relations: Relation[]): string {
   const chars = characters
     .map(
       (c) =>
