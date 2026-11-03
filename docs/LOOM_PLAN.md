@@ -1,6 +1,6 @@
 # The Loom — the Art door (M14 Plan)
 
-> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 to M14.3 done on branch `art-loom` (see §9); M14.4 is next.
+> **Status:** APPROVED 2026-11-01 — the direction is `mockups/art-loom-web.html`, the cloth with its web; `mockups/art-loom.html` is its flat ancestor. M14.1 to M14.3 done on branch `art-loom` (see §9); M14.4 is built and waits on the user's look; M14.5 is next.
 > **Door:** `ART` in the main nav, route **`/art`**, one work at **`/art/[id]`**. The world behind the door is **the Loom**, as the world behind Myths is the Spindle.
 > **Scope:** gather every image of the culture layer into one designed place, with a coordinate system that means something, without changing how the Legacy tab works.
 > **Does not touch:** the source lens, the authored files in `data/culture/` and `data/story-culture/`, the text-only shelves (film, music, popular culture).
@@ -196,11 +196,13 @@ Legacy is capped per figure on purpose, which conflicts with "all of them in one
 
 ### 4.8 What reaches the client
 
-| Payload | Contents | Target |
-|---|---|---|
-| RSC prop on `/art` | ids, cells for both layouts, saga, medium, title, artist, year | ≤ 80 KB gzipped |
-| `public/art/details.json` | captions, credits, links; fetched on first plate | ≤ 150 KB gzipped |
-| `/art/[id]` | the one work, server-rendered | ordinary page |
+| Payload | Contents | Target | Measured |
+|---|---|---|---|
+| `public/art/loom.json` | ids, cells for both layouts, saga, medium, title, artist, year, file; fetched when the door opens | ≤ 80 KB gzipped | 396 KB raw, 134 KB gzipped |
+| `public/art/details.json` | captions, credits, links; fetched on the first plate or search | ≤ 150 KB gzipped | 1,098 KB raw, 313 KB gzipped |
+| `/art/[id]` | the one work, server-rendered as an sr-only article under the same door | ordinary page | same HTML as any page of the site |
+
+The door's data is fetched, not an RSC prop, because `/art/[id]` is prerendered once per work and a prop would repeat in every page. Both files overrun their targets: the first estimates left out the Commons file names and hash paths the door needs to build image URLs, and full captions. They were left as they are. Neither blocks the cloth on screen, `details.json` comes only when something asks for it, and shrinking them is worth doing only if M14.6 finds them slow on a phone.
 
 ---
 
@@ -244,18 +246,20 @@ The catalogue only includes works present in the manifest, so a culture batch si
 
 **Rendering** (React Three Fiber, `src/components/art/`), proven in `mockups/art-loom-web.html`:
 
-- Sprites are composed into one cloth render target at load, at 64 px per cell on desktop and 32 on phones, then mipmapped. Sampling sheets directly would bleed neighbouring sprites through the mips; the mockup's cloth-as-one-texture avoids that and keeps the shader unchanged. It also lets one sheet serve both layouts. `createImageBitmap` keeps decoding off the main thread.
+- Sprites are composed into one cloth canvas at load, the low-quality sheet first and the full sheets once the fall has ended, at 64 px per cell on desktop and 32 on phones, then mipmapped. Sampling sheets directly would bleed neighbouring sprites through the mips; the mockup's cloth-as-one-texture avoids that and keeps the shader unchanged. It also lets one sheet serve both layouts. `createImageBitmap` keeps decoding off the main thread.
 - One subdivided plane for the cloth, line segments for the warp, a small per-cell data texture for saga colour, anchor flag and brightness. Eased on the CPU, as in the mockup.
 - The cloth is pinned at the beam and freer lower down; ripple and sway fade out by 62 px per cell.
 - Colour passes through untouched: no tone mapping, no composer. The "wool" grade (highlights pulled down, warmed) is in the shader and reaches zero by 84 px per cell, so what you read is the painting. Museum-white backgrounds made the cloth glare without it.
-- Above 58 px per cell a DOM `<img>` pool takes over, at most 80, choosing the largest standard Commons step the original supports. `width` makes this exact; 322 files would otherwise fail at 960.
+- Above 58 px per cell a DOM `<img>` pool takes over, at most 80, nearest the centre first and only once the view is still, eight loading at a time. A tile that leaves the view before its turn never asks Commons at all. Each image picks the largest standard Commons step the original supports. `width` makes this exact; 322 files would otherwise fail at 960.
 - The tear is a seeded texture, identical every load.
 - Stitches are one instanced ribbon each, computed in the vertex shader from the two works' cells, a per-work lift (a float data texture: offset and height out of the cloth) and per-thread state (alpha, width, the held work's place, reach). Blending is additive.
 - Lifted works are DOM images placed by projecting their 3D point every frame, so they stay crisp at any size and take ordinary hover and click.
 - The camera orbits the cell it looks at, so hit tests are a ray through the cursor meeting the cloth's plane, and labels are projected, not offset.
-- The canvas is opaque and draws the sky itself, which keeps blending plain.
+- The canvas is transparent over a painted 2D sky, unlike the opaque canvas of the mockup. With premultiplied alpha, additive ribbons (M14.5) still add onto the sky.
+- Everything is measured against the door's own box, never the window: the page keeps a scrollbar gutter on both edges, so wherever scrollbars take up room (Windows, or a Mac set to always show them) the box is narrower than the window.
+- While a plate is open the loop stops, so reading costs the GPU nothing and nothing loads behind the plate.
 
-Budgets: 60 fps on the user's desktop, 45+ on a mid-range phone, GPU memory ≤ 64 MB desktop and ≤ 20 MB phone, cloth on screen within 1.5 s on broadband. **No real frame rate exists yet:** the mockups were only checked under software GL. M14.4 and M14.5 measure on real hardware.
+Budgets: 60 fps on the user's desktop, 45+ on a mid-range phone, GPU memory ≤ 64 MB desktop and ≤ 20 MB phone, cloth on screen within 1.5 s on broadband. M14.4 measured the front on real hardware (§9); the web (M14.5) and the phone (M14.6) still have to.
 
 ---
 
@@ -271,9 +275,9 @@ Everything in `mockups/art-loom.html` is the visual bar; ship nothing that reads
 
 **The plate** (`/art/[id]`, pushed with shallow history so Back closes it): the image in its true ratio with the gold double frame; kicker with saga, era and medium; title, artist, year; caption; Pattern note if it is a stop; *Stars in this work* linking to `/character/[id]`; *The myth* linking to `/story/[id]`; `<WorkCredit>`. Arrow keys walk to the neighbouring work in time.
 
-**Filters.** Saga, medium, Pattern, and deep links (`/art?figure=perseus`, `/art?story=daedalus-icarus`, `/art?saga=trojan`). They intersect. Dimmed tiles sink into the warp rather than vanish, so the shape of the selection stays readable. The user's first ask was paintings, so *Paintings* is one click away.
+**Filters.** Saga, medium, Pattern (M14.7), and deep links (`/art?figure=perseus`, `/art?story=daedalus-icarus`, `/art?saga=trojan`, with their bridges in M14.8). They intersect. Dimmed tiles sink into the warp rather than vanish, so the shape of the selection stays readable. The user's first ask was paintings, so *Paintings* is one click away.
 
-**Search.** `WorkSearchOverlay` on ⌘K, in the mould of `StorySearchOverlay`: title, artist, figure; a hit flies to the tile. `/art` joins `HAS_OWN_OVERLAYS`.
+**Search.** `WorkSearchOverlay` on ⌘K, in the mould of `StorySearchOverlay`: title, artist, figure; a hit flies to the tile and opens its plate. `/art` joins `HAS_OWN_OVERLAYS`.
 
 **Opening.** With a baked sheet the weave is instant, so the fell line becomes a designed 1.6 s reveal from the beam, first visit per session only.
 
@@ -303,7 +307,7 @@ Each lands green on `pnpm lint`, `pnpm build`, `pnpm validate-data`, plus its ow
 - **M14.1 — The catalogue and the credits.** Types, schemas, `art:commons`, `bake-art`, `data/art/overrides.json`, the §4.3 rules including figure links, `validate-data` growth, `loom:metrics` in first form, `<WorkCredit>` on every existing surface. **User-visible outcome: the attribution gap closes.** *Done 2026-11-01:* 0 unresolved dates, *Other tales* 7.3% with 1% unplaced, the §3 shares re-measured, credits on the Legacy gallery and vitrines, the story section, the Nostos art, the daily card, the proem and every lightbox. The medium review list (`loom:metrics --review`) was read through; 36 overrides corrected what it found, and its remaining 99 disputed and 67 default records were left as they stand.
 - **M14.2 — The engine.** `loom.ts`, `validate-loom`, `loom:sketch`. Done when both widths pass every gate. *Done 2026-11-01:* 58 wide makes 38 rows, 26 wide makes 81; no overlaps, no holes; drift 3 rows at worst, 1 at the 95th percentile; 95% of band edges within 6 cells; 35 anchors. Both widths lay out in under 20 ms.
 - **M14.3 — The atlas.** Bake script, first sheets, budget check, image-hash duplicate pass, `ATTRIBUTION.md`. Can run beside M14.2. *Done 2026-11-01:* 1,703 sprites in 2.3 MB, 16 more works merged after review by eye, one dead Commons file replaced.
-- **M14.4 — The door, desktop.** `/art`, nav, cloth, warp, rig, labels, hover, plate, filters, search, `/art/list`. Done when it matches the mockup's front in the user's browser and the desktop budget is measured.
+- **M14.4 — The door, desktop.** `/art`, nav, cloth, warp, rig, labels, hover, plate, filters, search, `/art/list`. Done when it matches the mockup's front in the user's browser and the desktop budget is measured. *Built 2026-11-02, the user's look still to come:* on an M1 Pro at 2880×1626, in headless Chrome on Metal, 60 fps with a worst frame of 17 ms at home, through the fall and the repaint, on hover, zoomed, filtered and closing a plate. At 50 Mbps and 20 ms the first frame lands within 0.9 s and the cloth starts falling at 1.1 s, inside the 1.5 s budget. A zoom costs at most 80 Commons requests, eight at a time; none were refused in testing, though that was one machine on one afternoon. The cloth's GPU memory is about 50 MB by calculation, not by measurement. One page per work adds 2.7 GB and 17,067 files to `.next/server/app`, now 8.2 GB and 53,159 files, and a build takes about seven minutes; about 85% of each page's RSC payload is the root layout's data, not the work. Not tested: Safari, Firefox, a real deploy. `pnpm dev` was reasoned through for Strict Mode, not run.
 - **M14.5 — The web.** Threads from the catalogue, ribbons, hover stitches, pull, walk, orbit, turn. Done when it matches `art-loom-web.html` and the budget holds with every stitch drawn.
 - **M14.6 — The phone.** §7 phone spec, tested by the user on a real device.
 - **M14.7 — Patterns.** The gold thread, six reviewed pattern files, schema gate. Can run beside M14.6.
@@ -344,3 +348,7 @@ Each lands green on `pnpm lint`, `pnpm build`, `pnpm validate-data`, plus its ow
 | 3D and the network | The cloth stays the archive. The web grows out of it: a pulled work lifts with its neighbours, and the back of the cloth shows every thread. A free-floating graph was rejected as a second Galaxy | 2026-11-01 |
 | Figure links | Shelves, titles and exact Commons categories, with provenance; captions stay out | 2026-11-01 |
 | Thread shape | One thread per figure, a chain in time order; a thread held by one work fades along its length | 2026-11-01 |
+| Door data | Fetched JSON, not an RSC prop, because `/art/[id]` is prerendered once per work | 2026-11-02 |
+| Reading images | At most 80 near the centre, eight at a time, only once the view is still, never behind a plate | 2026-11-02 |
+| Canvas | Transparent over a 2D sky, measured against the door's own box because of the page's scrollbar gutter | 2026-11-02 |
+| Deep links | `/art?figure=…` and its kin wait for the bridges that use them, M14.8 | 2026-11-02 |

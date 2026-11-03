@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { buildCatalogue, CATALOGUE_VERSION } from '../src/features/art/catalogue';
+import { buildDoorData, buildDoorDetails, type AtlasManifest } from '../src/features/art/door';
 import type { Character, Relation } from '../src/types/character';
 import type { Story } from '../src/types/story';
 import { ART_CATALOGUE_PATH, readArtCommons, readArtOverrides, readShelfEntries } from './lib/art-sources';
@@ -26,10 +27,18 @@ const stories = readDir<Story>('stories');
 const characters = readDir<Character>('characters');
 const relations = JSON.parse(readFileSync(join(DATA, 'relations.json'), 'utf-8')) as Relation[];
 
+const MANIFEST_PATH = join(import.meta.dirname, '..', 'public', 'art', 'manifest.json');
+const DOOR_PATH = join(import.meta.dirname, '..', 'public', 'art', 'loom.json');
+const DETAILS_PATH = join(import.meta.dirname, '..', 'public', 'art', 'details.json');
+const manifest = existsSync(MANIFEST_PATH)
+  ? (JSON.parse(readFileSync(MANIFEST_PATH, 'utf-8')) as AtlasManifest)
+  : null;
+
 const signature = createHash('sha1')
   .update(
     JSON.stringify({
       version: CATALOGUE_VERSION,
+      manifest,
       entries,
       commons,
       overrides,
@@ -40,7 +49,7 @@ const signature = createHash('sha1')
   )
   .digest('hex');
 
-if (existsSync(ART_CATALOGUE_PATH) && !process.argv.includes('--force')) {
+if (existsSync(ART_CATALOGUE_PATH) && existsSync(DOOR_PATH) && !process.argv.includes('--force')) {
   try {
     const previous = JSON.parse(readFileSync(ART_CATALOGUE_PATH, 'utf-8')) as { signature?: string; count?: number };
     if (previous.signature === signature) {
@@ -64,6 +73,13 @@ writeFileSync(
 console.log(
   `Baked ${works.length} works in ${Math.round(performance.now() - started)}ms → data/generated/art-catalogue.json`,
 );
+// The door shows only works the atlas holds: a culture batch waits for the next
+// atlas bake, and the cloth never has a hole (LOOM_PLAN §6).
+if (manifest) {
+  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest)));
+  writeFileSync(DETAILS_PATH, JSON.stringify(buildDoorDetails(works, captions, commons, characters, stories)));
+  console.log('Wrote the door data → public/art/loom.json, public/art/details.json');
+}
 if (held.length) {
   console.log(`⚠ ${held.length} held back (validate-data gates these):`);
   held.forEach((work) => console.log(`  ${work.title} — ${work.reason}`));

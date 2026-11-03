@@ -27,7 +27,7 @@ export const LOOM_ERAS: { label: string; sub: string; from: number }[] = [
   { label: 'Classical', sub: '480–323 BC', from: -480 },
   { label: 'Hellenistic', sub: '323–31 BC', from: -323 },
   { label: 'Roman', sub: '31 BC – AD 500', from: -31 },
-  { label: 'The tear', sub: 'AD 500–1400', from: TEAR_FROM },
+  { label: 'The tear', sub: 'AD 500–1400, few held', from: TEAR_FROM },
   { label: '1400s', sub: '', from: TEAR_TO },
   { label: '1500s', sub: '', from: 1500 },
   { label: '1600s', sub: '', from: 1600 },

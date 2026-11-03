@@ -10,8 +10,9 @@ import { useAtlasSearchHotkey } from './useAtlasSearchHotkey';
  *  on every page that does not bring its own set, so the AtlasBar's buttons
  *  work everywhere. The galaxy, the Lands map, the Myths spindle and the
  *  city skies mount their own surface-specific overlays (and bind the hotkey
- *  themselves, which toggles — hence the strict either/or here). */
-const HAS_OWN_OVERLAYS = [/^\/$/, /^\/areas/, /^\/stories$/, /^\/city\/[^/]+\/sky/];
+ *  themselves, which toggles — hence the strict either/or here). So does the
+ *  Art door, except its plain list page. */
+const HAS_OWN_OVERLAYS = [/^\/$/, /^\/areas/, /^\/stories$/, /^\/city\/[^/]+\/sky/, /^\/art(\/(?!list$)[^/]+)?$/];
 
 export function GlobalOverlays({
   characters,

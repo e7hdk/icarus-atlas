@@ -115,6 +115,39 @@ export interface ArtWork {
   focus?: [number, number];
 }
 
+/** One work in public/art/loom.json, as a row to keep the door's first payload small:
+ *  id, title, artist, year, sortYear, saga index, medium index, Commons hash path,
+ *  Commons file, width, height, sprite index, anchor slot or -1. */
+export type LoomWorkRow = [
+  string, string, string, string, number, number, number, string, string, number, number, number, number,
+];
+
+export interface LoomDoorLayout {
+  width: number;
+  height: number;
+  tearTop: number;
+  tearRows: number;
+  eras: { label: string; sub: string; row: number }[];
+  /** Flat x, row, w, h per work, in the order of `works`. */
+  cells: number[];
+}
+
+/** public/art/loom.json: what the door needs before its first frame. */
+export interface LoomDoorData {
+  works: LoomWorkRow[];
+  desktop: LoomDoorLayout;
+  phone: LoomDoorLayout;
+  sheet: { columns: number; cell: number; lqCell: number; anchorColumns: number; anchorSlot: number };
+}
+
+/** One entry of public/art/details.json, fetched the first time a plate opens. */
+export interface LoomWorkDetail {
+  caption: string;
+  credit?: ImageCredit;
+  figures: { id: string; name: string }[];
+  stories: { id: string; title: string }[];
+}
+
 /** data/generated/art-catalogue.json */
 export interface ArtCatalogue {
   signature: string;

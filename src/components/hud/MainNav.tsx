@@ -3,8 +3,8 @@ import type { ReactNode } from 'react';
 
 /** Door glyphs for the mobile bar — hand-drawn minis in the Wain-glyph idiom
  *  (thin currentColor strokes, no emoji): a star cluster for the Galaxy, a
- *  mountain over the sea for the Lands, an open scroll for the Myths. On sm+
- *  the doors keep their classical lettered form. */
+ *  mountain over the sea for the Lands, an open scroll for the Myths, a loom
+ *  for Art. On sm+ the doors keep their classical lettered form. */
 function GalaxyGlyph() {
   return (
     <svg aria-hidden width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,15 +35,26 @@ function MythsGlyph() {
   );
 }
 
+function ArtGlyph() {
+  return (
+    <svg aria-hidden width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.5 3.5 H15.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M5 3.5 V12.2 M9 3.5 V13.4 M13 3.5 V12.2" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" />
+      <path d="M3.6 7.2 H14.4 M3.6 9.6 H14.4" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeOpacity="0.65" />
+      <path d="M4.2 12.4 H5.8 L6.2 14.6 H3.8 Z M8.2 13.6 H9.8 L10.2 15.8 H7.8 Z M12.2 12.4 H13.8 L14.2 14.6 H11.8 Z" fill="currentColor" fillOpacity="0.8" />
+    </svg>
+  );
+}
+
 const TABS = [
   { key: 'galaxy', label: 'Galaxy', href: '/', glyph: <GalaxyGlyph /> },
   { key: 'areas', label: 'Lands', href: '/areas', glyph: <LandsGlyph /> },
   { key: 'stories', label: 'Myths', href: '/stories', glyph: <MythsGlyph /> },
+  { key: 'art', label: 'Art', href: '/art', glyph: <ArtGlyph /> },
 ] as const satisfies readonly { key: string; label: string; href: string; glyph: ReactNode }[];
 
 export type MainTab = (typeof TABS)[number]['key'];
-
-/** The three doors of the atlas — shared by the galaxy HUD and the 2D pages.
+/** The four doors of the atlas — shared by the galaxy HUD and the 2D pages.
  *  `active: null` keeps every door dim (satellite pages like the
  *  Heortologion, which belongs to the Ephemeris layer, not a world).
  *  Mobile shows the door GLYPHS (the lettered pills crowded the bar);
