@@ -20,6 +20,19 @@ const NARROW_MARGIN = { left: 16, right: 16, top: 74, bottom: 24 };
 export const NARROW_WIDTH = 1080;
 
 export const MAX_SCALE = 460;
+/** A pulled web is seen whole: the zoom stops short of reading distance. */
+export const WEB_MAX_SCALE = 42;
+
+/** The back comes to rest a little off square, so the arcs read as depth. */
+const BACK_YAW = Math.PI - 0.34;
+const BACK_PITCH = 0.05;
+/** How far a drag may swing the cloth either side of square. */
+const ORBIT_YAW = 0.95;
+const ORBIT_PITCH = 0.5;
+
+/** How much the cloth answers the pointer: not at all while it is read, a little as
+ *  a cloth, more as a pulled web held in the air. */
+export type Sway = 'still' | 'cloth' | 'web';
 
 type Vec3 = [number, number, number];
 
@@ -52,6 +65,8 @@ export class LoomCamera {
   viewHeight = 1;
   /** True on a frame where the view is still travelling. */
   moving = true;
+  /** Turned to the back of the cloth. */
+  face = false;
 
   private tiltX = 0;
   private tiltY = 0;
@@ -62,11 +77,15 @@ export class LoomCamera {
   private up: Vec3 = [0, 1, 0];
   private distance = 1;
   private clip = new Float32Array(16);
+  private clothWidth = 1;
+  private clothHeight = 1;
 
   /** Fit the whole cloth, beam to weights, between the rails. */
   fit(layout: LoomDoorLayout, viewWidth: number, viewHeight: number, snap: boolean) {
     this.viewWidth = viewWidth;
     this.viewHeight = viewHeight;
+    this.clothWidth = layout.width;
+    this.clothHeight = layout.height;
     const margin = viewWidth <= NARROW_WIDTH ? NARROW_MARGIN : MARGIN;
     const availableWidth = viewWidth - margin.left - margin.right;
     const availableHeight = viewHeight - margin.top - margin.bottom;
@@ -79,12 +98,57 @@ export class LoomCamera {
       s,
     };
     this.goHome();
-    if (snap) Object.assign(this, { x: this.home.x, y: this.home.y, s: this.home.s });
+    if (snap) Object.assign(this, { x: this.goal.x, y: this.goal.y, s: this.goal.s });
     this.solve();
   }
 
+  /** The whole cloth; from the back the view mirrors, so the rails still frame it. */
   goHome() {
-    Object.assign(this.goal, this.home);
+    this.goal.x = this.face ? this.clothWidth - this.home.x : this.home.x;
+    this.goal.y = this.home.y;
+    this.goal.s = this.face ? this.home.s * 0.88 : this.home.s;
+  }
+
+  /** Turn to the back of the cloth, or back to its face. */
+  turn(face: boolean) {
+    this.face = face;
+    this.goal.yaw = face ? BACK_YAW : 0;
+    this.goal.pitch = face ? BACK_PITCH : 0;
+    this.goHome();
+  }
+
+  /** Stand back from a pulled work, swung a little toward the middle of the cloth. */
+  holdWeb(x: number, y: number) {
+    this.goal.x = this.home.x + (x - this.clothWidth / 2) * 0.22;
+    this.goal.y = this.home.y + (y - this.clothHeight / 2) * 0.2;
+    this.goal.s = this.home.s;
+    this.goal.yaw = x < this.clothWidth / 2 ? 0.17 : -0.17;
+    this.goal.pitch = 0.09;
+  }
+
+  /** Let a web go: square to the face, or to the back's resting angle. */
+  letGo() {
+    this.goal.yaw = this.face ? BACK_YAW : 0;
+    this.goal.pitch = this.face ? BACK_PITCH : 0;
+    this.goHome();
+  }
+
+  /** Swing the cloth around the cell in view, within bounds either side of square. */
+  orbitTo(yaw: number, pitch: number) {
+    const square = this.face ? Math.PI : 0;
+    this.goal.yaw = Math.min(square + ORBIT_YAW, Math.max(square - ORBIT_YAW, yaw));
+    this.goal.pitch = Math.min(ORBIT_PITCH, Math.max(-ORBIT_PITCH, pitch));
+  }
+
+  /** Seen from the back, screen right is cloth left. */
+  private get across() {
+    return Math.cos(this.yaw) < 0 ? -1 : 1;
+  }
+
+  /** Drag the cloth: the cell under the pointer follows it. */
+  panBy(fromX: number, fromY: number, dx: number, dy: number) {
+    this.goal.x = fromX - (this.across * dx) / this.s;
+    this.goal.y = fromY - dy / this.s;
   }
 
   flyTo(x: number, y: number, s: number) {
@@ -97,18 +161,17 @@ export class LoomCamera {
   }
 
   /** Zoom toward a screen point, keeping the cell under it in place. */
-  zoomAt(factor: number, screenX: number, screenY: number) {
-    const s = Math.min(MAX_SCALE, Math.max(this.home.s * 0.8, this.goal.s * factor));
+  zoomAt(factor: number, screenX: number, screenY: number, max = MAX_SCALE) {
+    const s = Math.min(max, Math.max(this.home.s * 0.8, this.goal.s * factor));
     const dx = screenX - this.viewWidth / 2;
     const dy = screenY - this.viewHeight / 2;
-    this.goal.x += dx / this.goal.s - dx / s;
+    this.goal.x += this.across * (dx / this.goal.s - dx / s);
     this.goal.y += dy / this.goal.s - dy / s;
     this.goal.s = s;
   }
 
-  /** Advance one frame. `pointerX` and `pointerY` run -1..1 across the view: the cloth
-   *  answers the pointer a little, and not at all once it is being read. */
-  tick(dt: number, pointerX: number, pointerY: number, still: boolean) {
+  /** Advance one frame. `pointerX` and `pointerY` run -1..1 across the view. */
+  tick(dt: number, pointerX: number, pointerY: number, sway: Sway) {
     const ease = 1 - Math.exp(-dt * 7.5);
     this.moving =
       Math.abs(this.goal.s - this.s) > 0.002 * this.s ||
@@ -121,10 +184,11 @@ export class LoomCamera {
     this.s = Math.exp(Math.log(this.s) + (Math.log(this.goal.s) - Math.log(this.s)) * ease);
     this.yaw += (this.goal.yaw - this.yaw) * (1 - Math.exp(-dt * 3.1));
     this.pitch += (this.goal.pitch - this.pitch) * (1 - Math.exp(-dt * 3.6));
-    const calm = still ? 0 : 1 - smooth(20, 46, this.s);
+    const calm = 1 - smooth(20, 46, this.s);
+    const [swayX, swayY] = sway === 'web' ? [0.2, 0.13] : sway === 'cloth' ? [0.06 * calm, 0.04 * calm] : [0, 0];
     const follow = 1 - Math.exp(-dt * 2.8);
-    this.tiltX += (pointerX * 0.06 * calm - this.tiltX) * follow;
-    this.tiltY += (-pointerY * 0.04 * calm - this.tiltY) * follow;
+    this.tiltX += (pointerX * swayX - this.tiltX) * follow;
+    this.tiltY += (-pointerY * swayY - this.tiltY) * follow;
     this.solve();
   }
 

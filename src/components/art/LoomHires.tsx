@@ -117,7 +117,9 @@ export function LoomHires({
     const unsubscribe = subscribe(() => {
       const container = layer.current;
       if (!container) return;
-      if (rig.s < READABLE_SCALE) {
+      // A held web and the back of the cloth show the woven tiles, never a reading layer.
+      const { focus, face } = useLoomStore.getState();
+      if (rig.s < READABLE_SCALE || focus !== null || face) {
         for (const tile of pool.values()) drop(tile);
         return;
       }

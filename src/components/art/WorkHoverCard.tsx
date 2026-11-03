@@ -37,6 +37,14 @@ export function WorkHoverCard({ door }: { door: LoomDoor }) {
       <p className="mt-0.5 font-body text-[14.5px] italic text-aether-muted">
         {work.artist}, {work.year}
       </p>
+      {work.figures.length > 0 && (
+        <p className="mt-1 font-body text-[13.5px] italic text-star-olympian/80">
+          {work.figures
+            .slice(0, 5)
+            .map((figure) => door.figures[figure].name)
+            .join(' · ')}
+        </p>
+      )}
     </div>
   );
 }

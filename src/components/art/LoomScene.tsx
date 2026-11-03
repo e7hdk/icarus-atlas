@@ -5,9 +5,17 @@ import { useEffect, useMemo, useRef, type RefObject } from 'react';
 import * as THREE from 'three';
 import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { FRINGE_ROWS, type LoomCamera } from '@/features/art/loomCamera';
+import type { LoomWeb } from '@/features/art/loomWeb';
 import { isDimmed, useLoomStore } from '@/features/art/store';
 import { SAGA_ACCENT, SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
-import { CLOTH_FRAGMENT, CLOTH_VERTEX, WARP_FRAGMENT, WARP_VERTEX } from './loomShaders';
+import {
+  CLOTH_FRAGMENT,
+  CLOTH_VERTEX,
+  STITCH_FRAGMENT,
+  STITCH_VERTEX,
+  WARP_FRAGMENT,
+  WARP_VERTEX,
+} from './loomShaders';
 import { createClothTexture, createTearTexture, paintCloth } from './loomTextures';
 
 const CELL_PIXELS = { desktop: 64, phone: 32 };
@@ -16,12 +24,17 @@ const WARP_PER_CELL = 3;
 const WARP_STEPS = 34;
 const FLOOR_THREADS = 5;
 const REVEAL_SECONDS = 1.6;
+const STITCH_STEPS = 15;
 
 /** Brightness on a 0..1 scale that the shader reads as 0..1.6, so a tile can burn
  *  brighter than its image while hovered. */
 const LIT = 0.625;
 const HELD = 0.86;
 const DIMMED = 0.1;
+/** While a web is pulled: lifted works leave a hollow, their threads' works stay lit. */
+const LIFTED = 0.03;
+const NEAR = 0.6;
+const AWAY = 0.085;
 
 const hexRgb = (hex: string) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
 const smooth = (from: number, to: number, value: number) => {
@@ -99,6 +112,50 @@ function warpGeometry(door: LoomDoor): THREE.BufferGeometry {
   return geometry;
 }
 
+/** One ribbon per stitch: a strip along `t`, instanced with the two works it joins. */
+function stitchGeometry(door: LoomDoor): THREE.InstancedBufferGeometry {
+  const strip: number[] = [];
+  for (let i = 0; i <= STITCH_STEPS; i++) strip.push(i / STITCH_STEPS, -1, 0, i / STITCH_STEPS, 1, 0);
+  const index: number[] = [];
+  for (let i = 0; i < STITCH_STEPS; i++) index.push(i * 2, i * 2 + 1, i * 2 + 2, i * 2 + 1, i * 2 + 3, i * 2 + 2);
+  const ends: number[] = [];
+  const ids: number[] = [];
+  const colors: number[] = [];
+  for (const thread of door.threads) {
+    const [r, g, b] = hexRgb(SAGA_ACCENT[thread.saga]).map((value) => value / 255);
+    for (let i = 1; i < thread.works.length; i++) {
+      const from = door.works[thread.works[i - 1]];
+      const to = door.works[thread.works[i]];
+      const seed = Math.abs(Math.sin(thread.index * 12.9898 + i * 78.233) * 43758.5453) % 1;
+      ends.push(from.x + from.w / 2, from.row + from.h / 2, to.x + to.w / 2, to.row + to.h / 2);
+      ids.push(from.index, to.index, thread.index, i - 1);
+      colors.push(r, g, b, seed);
+    }
+  }
+  const geometry = new THREE.InstancedBufferGeometry();
+  geometry.setAttribute('position', new THREE.Float32BufferAttribute(strip, 3));
+  geometry.setIndex(index);
+  geometry.setAttribute('aEnds', new THREE.InstancedBufferAttribute(new Float32Array(ends), 4));
+  geometry.setAttribute('aIds', new THREE.InstancedBufferAttribute(new Float32Array(ids), 4));
+  geometry.setAttribute('aColor', new THREE.InstancedBufferAttribute(new Float32Array(colors), 4));
+  geometry.instanceCount = ids.length / 4;
+  return geometry;
+}
+
+function rowTexture(data: Float32Array | Uint8Array, width: number): THREE.DataTexture {
+  const texture = new THREE.DataTexture(
+    data,
+    width,
+    1,
+    THREE.RGBAFormat,
+    data instanceof Float32Array ? THREE.FloatType : THREE.UnsignedByteType,
+  );
+  texture.magFilter = THREE.NearestFilter;
+  texture.minFilter = THREE.NearestFilter;
+  texture.needsUpdate = true;
+  return texture;
+}
+
 function createCellData(door: LoomDoor): Uint8Array<ArrayBuffer> {
   const { width, height } = door.layout;
   const data = new Uint8Array(width * height * 4);
@@ -139,7 +196,7 @@ function loadBitmap(url: string): Promise<ImageBitmap> {
     .then((blob) => createImageBitmap(blob));
 }
 
-function createClothScene(door: LoomDoor, cellPixels: number, reveal: boolean) {
+function createClothScene(door: LoomDoor, web: LoomWeb, cellPixels: number, reveal: boolean) {
   const { width, height } = door.layout;
   const cellData = createCellData(door);
   const cells = new THREE.DataTexture(cellData, width, height, THREE.RGBAFormat);
@@ -152,6 +209,7 @@ function createClothScene(door: LoomDoor, cellPixels: number, reveal: boolean) {
     glslVersion: THREE.GLSL3,
     vertexShader: CLOTH_VERTEX,
     fragmentShader: CLOTH_FRAGMENT,
+    side: THREE.DoubleSide,
     uniforms: {
       uTex: { value: cloth },
       uCells: { value: cells },
@@ -181,15 +239,47 @@ function createClothScene(door: LoomDoor, cellPixels: number, reveal: boolean) {
       uAlpha: { value: 0.5 },
     },
   });
+  const lift = rowTexture(web.lift, door.works.length);
+  const threadState = rowTexture(web.state, Math.max(1, door.threads.length));
+  const stitchMaterial = new THREE.RawShaderMaterial({
+    glslVersion: THREE.GLSL3,
+    vertexShader: STITCH_VERTEX,
+    fragmentShader: STITCH_FRAGMENT,
+    transparent: true,
+    depthWrite: false,
+    side: THREE.DoubleSide,
+    // Light adds to colour and leaves alpha alone, so a ribbon over the sky adds onto
+    // the sky painted behind this transparent canvas.
+    blending: THREE.CustomBlending,
+    blendEquation: THREE.AddEquation,
+    blendSrc: THREE.OneFactor,
+    blendDst: THREE.OneFactor,
+    blendSrcAlpha: THREE.ZeroFactor,
+    blendDstAlpha: THREE.OneFactor,
+    uniforms: {
+      uGrid: { value: new THREE.Vector2(width, height) },
+      uTime: { value: 0 },
+      uAmp: { value: 1 },
+      uEye: { value: new THREE.Vector3() },
+      uLift: { value: lift },
+      uState: { value: threadState },
+      uPx: { value: 1 / 16 },
+      uFace: { value: 1 },
+    },
+  });
   return {
     cellData,
     cells,
     cloth,
     tear,
+    lift,
+    threadState,
     clothMaterial,
     warpMaterial,
+    stitchMaterial,
     clothGeometry: clothGeometry(width, height),
     warpGeometry: warpGeometry(door),
+    stitchGeometry: stitchGeometry(door),
   };
 }
 
@@ -204,15 +294,26 @@ interface FrameState {
 }
 
 /** One frame of the cloth: brightness eases toward its targets, the weave and the
- *  ripple give way as the view closes in, and the reveal runs once the image is in. */
-function advanceCloth(scene: ClothScene, door: LoomDoor, now: FrameState, view: { px: number; phone: boolean; dt: number; painted: boolean }) {
+ *  ripple give way as the view closes in, the reveal runs once the image is in, and
+ *  the web's threads and lifted works ease to where they are going. */
+function advanceCloth(
+  scene: ClothScene,
+  door: LoomDoor,
+  web: LoomWeb,
+  now: FrameState,
+  view: { px: number; phone: boolean; dt: number; painted: boolean; yaw: number; eye: THREE.Vector3 },
+) {
   const { width, height } = door.layout;
   const { px, phone, dt, painted } = view;
-  const hovered = useLoomStore.getState().hover?.index ?? -1;
+  const { hover: hoverState, face } = useLoomStore.getState();
+  const hovered = hoverState?.index ?? -1;
   const rate = 1 - Math.exp(-dt * 9);
   let dirty = false;
+  // A lifted work hovered in the air leaves its hollow in the cloth dark.
+  const liftedHover = web.items.get(hovered);
+  const hoverOnCloth = hovered >= 0 && !(liftedHover && !liftedHover.leaving);
   for (const work of door.works) {
-    const goal = work.index === hovered ? Math.max(now.target[work.index], HELD) : now.target[work.index];
+    const goal = hoverOnCloth && work.index === hovered ? Math.max(now.target[work.index], HELD) : now.target[work.index];
     const step = goal - now.level[work.index];
     if (Math.abs(step) < 0.004) continue;
     now.level[work.index] += step * rate;
@@ -223,7 +324,8 @@ function advanceCloth(scene: ClothScene, door: LoomDoor, now: FrameState, view: 
 
   const amp = phone ? 0 : 1 - smooth(26, 62, px);
   const weave = 1 - smooth(30, 84, px);
-  const hover = hovered >= 0 ? door.works[hovered] : null;
+  // On the back a hovered work lights its threads but does not rise toward the eye.
+  const hover = hoverOnCloth && !face ? door.works[hovered] : null;
   now.lift += ((hover ? 1 : 0) - now.lift) * (1 - Math.exp(-dt * 14));
   if (painted && now.fell <= height) now.fell += (dt / REVEAL_SECONDS) * (height + 1);
 
@@ -237,10 +339,21 @@ function advanceCloth(scene: ClothScene, door: LoomDoor, now: FrameState, view: 
   const warp = scene.warpMaterial.uniforms;
   warp.uTime.value = now.time;
   warp.uAmp.value = amp;
+
+  const moved = web.advance(dt);
+  if (moved.lift) scene.lift.needsUpdate = true;
+  if (moved.state) scene.threadState.needsUpdate = true;
+  const stitch = scene.stitchMaterial.uniforms;
+  stitch.uTime.value = now.time;
+  stitch.uAmp.value = amp;
+  stitch.uPx.value = 1 / px;
+  stitch.uFace.value = Math.cos(view.yaw);
+  stitch.uEye.value.copy(view.eye);
 }
 
 interface LoomSceneProps {
   door: LoomDoor;
+  web: LoomWeb;
   rig: LoomCamera;
   pointer: RefObject<{ x: number; y: number }>;
   phone: boolean;
@@ -249,22 +362,26 @@ interface LoomSceneProps {
   onFrame: () => void;
 }
 
-export function LoomScene({ door, rig, pointer, phone, reveal, onFrame }: LoomSceneProps) {
+export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: LoomSceneProps) {
   const camera = useThree((state) => state.camera) as THREE.PerspectiveCamera;
   const { height } = door.layout;
   const cellPixels = phone ? CELL_PIXELS.phone : CELL_PIXELS.desktop;
 
-  const scene = useMemo(() => createClothScene(door, cellPixels, reveal), [door, cellPixels, reveal]);
+  const scene = useMemo(() => createClothScene(door, web, cellPixels, reveal), [door, web, cellPixels, reveal]);
 
   useEffect(
     () => () => {
       scene.cells.dispose();
       scene.cloth.dispose();
       scene.tear.dispose();
+      scene.lift.dispose();
+      scene.threadState.dispose();
       scene.clothMaterial.dispose();
       scene.warpMaterial.dispose();
+      scene.stitchMaterial.dispose();
       scene.clothGeometry.dispose();
       scene.warpGeometry.dispose();
+      scene.stitchGeometry.dispose();
     },
     [scene],
   );
@@ -310,11 +427,25 @@ export function LoomScene({ door, rig, pointer, phone, reveal, onFrame }: LoomSc
     const refresh = () => {
       const filters = useLoomStore.getState();
       const { target } = state.current;
-      for (const work of door.works) target[work.index] = isDimmed(work, filters) ? DIMMED : LIT;
+      const near = web.near(filters.peekThread);
+      for (const work of door.works) {
+        if (!near) {
+          target[work.index] = isDimmed(work, filters) ? DIMMED : LIT;
+          continue;
+        }
+        const lifted = web.items.get(work.index);
+        target[work.index] = lifted && !lifted.leaving ? LIFTED : near.has(work.index) ? NEAR : AWAY;
+      }
+      web.aim({
+        hover: filters.hover?.index ?? null,
+        face: filters.face,
+        saga: filters.peekSaga ?? filters.saga,
+        peek: filters.peekThread,
+      });
     };
     refresh();
     return useLoomStore.subscribe(refresh);
-  }, [door]);
+  }, [door, web]);
 
   useFrame((_, delta) => {
     const dt = Math.min(0.05, delta);
@@ -322,16 +453,25 @@ export function LoomScene({ door, rig, pointer, phone, reveal, onFrame }: LoomSc
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduced) now.time += dt;
 
-    rig.tick(dt, pointer.current.x, pointer.current.y, reduced || phone);
+    const { focus } = useLoomStore.getState();
+    rig.tick(dt, pointer.current.x, pointer.current.y, reduced || phone ? 'still' : focus !== null ? 'web' : 'cloth');
     rig.apply(camera);
-    advanceCloth(scene, door, now, { px: rig.s, phone, dt, painted: painted.current });
+    advanceCloth(scene, door, web, now, {
+      px: rig.s,
+      phone,
+      dt,
+      painted: painted.current,
+      yaw: rig.yaw,
+      eye: camera.position,
+    });
     onFrame();
   });
 
   return (
     <>
-      <lineSegments geometry={scene.warpGeometry} material={scene.warpMaterial} frustumCulled={false} />
+      <lineSegments geometry={scene.warpGeometry} material={scene.warpMaterial} frustumCulled={false} renderOrder={1} />
       <mesh geometry={scene.clothGeometry} material={scene.clothMaterial} frustumCulled={false} />
+      <mesh geometry={scene.stitchGeometry} material={scene.stitchMaterial} frustumCulled={false} renderOrder={2} />
     </>
   );
 }

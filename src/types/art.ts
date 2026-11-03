@@ -117,9 +117,10 @@ export interface ArtWork {
 
 /** One work in public/art/loom.json, as a row to keep the door's first payload small:
  *  id, title, artist, year, sortYear, saga index, medium index, Commons hash path,
- *  Commons file, width, height, sprite index, anchor slot or -1. */
+ *  Commons file, width, height, sprite index, anchor slot or -1, and the figures it
+ *  shows as indices into `LoomDoorData.figures`. */
 export type LoomWorkRow = [
-  string, string, string, string, number, number, number, string, string, number, number, number, number,
+  string, string, string, string, number, number, number, string, string, number, number, number, number, number[],
 ];
 
 export interface LoomDoorLayout {
@@ -135,6 +136,8 @@ export interface LoomDoorLayout {
 /** public/art/loom.json: what the door needs before its first frame. */
 export interface LoomDoorData {
   works: LoomWorkRow[];
+  /** Every figure some work shows, as [id, name]; the threads are built from these. */
+  figures: [string, string][];
   desktop: LoomDoorLayout;
   phone: LoomDoorLayout;
   sheet: { columns: number; cell: number; lqCell: number; anchorColumns: number; anchorSlot: number };

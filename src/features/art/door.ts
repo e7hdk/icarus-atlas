@@ -12,6 +12,10 @@ import type { Character } from '@/types/character';
 import type { Story } from '@/types/story';
 import { commonsOriginalUrl, commonsThumbSteps, commonsThumbUrl, toImageCredit } from './commons';
 import { buildLoomLayout, LOOM_WIDTH, type LoomLayout } from './loom';
+import { buildThreads, type LoomThread } from './threads';
+
+/** Bumped whenever public/art/loom.json changes shape, so the bake rewrites it. */
+export const DOOR_VERSION = 2;
 
 /** The Art door's client data (docs/LOOM_PLAN.md §4.8). `pnpm bake-art` writes it to
  *  public/art/ instead of each page embedding it, because `/art/[id]` is prerendered
@@ -53,8 +57,11 @@ function compactLayout(layout: LoomLayout, works: ArtWork[]): LoomDoorLayout {
   };
 }
 
-export function buildDoorData(catalogue: ArtWork[], manifest: AtlasManifest): LoomDoorData {
+export function buildDoorData(catalogue: ArtWork[], manifest: AtlasManifest, characters: Character[]): LoomDoorData {
   const works = catalogue.filter((work) => manifest.sprites[work.id] !== undefined);
+  const names = new Map(characters.map((character) => [character.id, character.name]));
+  const figureIds = [...new Set(works.flatMap((work) => work.figures.map(({ id }) => id)))].sort();
+  const figureIndex = new Map(figureIds.map((id, index) => [id, index]));
   const rows = works.map(
     (work): LoomWorkRow => [
       work.id,
@@ -70,12 +77,14 @@ export function buildDoorData(catalogue: ArtWork[], manifest: AtlasManifest): Lo
       work.height,
       manifest.sprites[work.id],
       manifest.anchors[work.id] ?? -1,
+      work.figures.map(({ id }) => figureIndex.get(id) as number),
     ],
   );
   // Anchors missing from the atlas fall back to single tiles rather than a hole.
   const placed = works.map((work) => (manifest.anchors[work.id] === undefined ? { ...work, span: undefined } : work));
   return {
     works: rows,
+    figures: figureIds.map((id): [string, string] => [id, names.get(id) ?? id]),
     desktop: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.desktop), works),
     phone: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.phone), works),
     sheet: {
@@ -139,11 +148,17 @@ export interface LoomWork {
   row: number;
   w: number;
   h: number;
+  /** Indices into `LoomDoor.figures`. */
+  figures: number[];
 }
 
 export interface LoomDoor {
   works: LoomWork[];
   byId: Map<string, LoomWork>;
+  figures: { id: string; name: string }[];
+  threads: LoomThread[];
+  /** Thread indices per work. */
+  threadsOf: number[][];
   /** Work index per cell, -1 where no work sits. */
   cellOf: Int32Array;
   layout: LoomDoorLayout;
@@ -153,7 +168,7 @@ export interface LoomDoor {
 export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
   const layout = phone ? data.phone : data.desktop;
   const works = data.works.map((row, index): LoomWork => {
-    const [id, title, artist, year, sortYear, saga, medium, path, file, width, height, sprite, anchor] = row;
+    const [id, title, artist, year, sortYear, saga, medium, path, file, width, height, sprite, anchor, figures] = row;
     return {
       index,
       id,
@@ -173,6 +188,7 @@ export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
       row: layout.cells[index * 4 + 1],
       w: layout.cells[index * 4 + 2],
       h: layout.cells[index * 4 + 3],
+      figures,
     };
   });
   const cellOf = new Int32Array(layout.width * layout.height).fill(-1);
@@ -181,7 +197,18 @@ export function decodeDoor(data: LoomDoorData, phone: boolean): LoomDoor {
       for (let dx = 0; dx < work.w; dx++) cellOf[(work.row + dy) * layout.width + work.x + dx] = work.index;
     }
   }
-  return { works, byId: new Map(works.map((work) => [work.id, work])), cellOf, layout, sheet: data.sheet };
+  const figures = data.figures.map(([id, name]) => ({ id, name }));
+  const { threads, threadsOf } = buildThreads(works, figures.map((figure) => figure.name));
+  return {
+    works,
+    byId: new Map(works.map((work) => [work.id, work])),
+    figures,
+    threads,
+    threadsOf,
+    cellOf,
+    layout,
+    sheet: data.sheet,
+  };
 }
 
 /** The sharpest Commons image of a work up to `wanted` pixels wide. */

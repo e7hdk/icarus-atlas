@@ -8,7 +8,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { buildCatalogue, CATALOGUE_VERSION } from '../src/features/art/catalogue';
-import { buildDoorData, buildDoorDetails, type AtlasManifest } from '../src/features/art/door';
+import { buildDoorData, buildDoorDetails, DOOR_VERSION, type AtlasManifest } from '../src/features/art/door';
 import type { Character, Relation } from '../src/types/character';
 import type { Story } from '../src/types/story';
 import { ART_CATALOGUE_PATH, readArtCommons, readArtOverrides, readShelfEntries } from './lib/art-sources';
@@ -38,6 +38,7 @@ const signature = createHash('sha1')
   .update(
     JSON.stringify({
       version: CATALOGUE_VERSION,
+      door: DOOR_VERSION,
       manifest,
       entries,
       commons,
@@ -76,7 +77,7 @@ console.log(
 // The door shows only works the atlas holds: a culture batch waits for the next
 // atlas bake, and the cloth never has a hole (LOOM_PLAN §6).
 if (manifest) {
-  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest)));
+  writeFileSync(DOOR_PATH, JSON.stringify(buildDoorData(works, manifest, characters)));
   writeFileSync(DETAILS_PATH, JSON.stringify(buildDoorDetails(works, captions, commons, characters, stories)));
   console.log('Wrote the door data → public/art/loom.json, public/art/details.json');
 }

@@ -65,6 +65,9 @@ export function LoomLabels({
     const widths: number[] = [];
     return subscribe(() => {
       const zoomed = rig.s > rig.home.s * 1.4;
+      // Mid-turn the cloth is edge-on and its labels would float free of it.
+      const square = Math.min(1, Math.max(0, (Math.abs(Math.cos(rig.yaw)) - 0.55) / 0.3));
+      const held = useLoomStore.getState().focus !== null;
       const nowY = rig.viewHeight / 2;
       let current = -1;
       let best = Infinity;
@@ -81,7 +84,7 @@ export function LoomLabels({
         widths[index] ??= element.offsetWidth;
         element.style.transform = `translate(${Math.max(left - 14 - widths[index], 10)}px, ${y - 8}px)`;
         const hidden = rig.viewWidth <= NARROW_WIDTH || (zoomed && (y < 66 || y > rig.viewHeight - 8));
-        element.style.opacity = hidden ? '0' : '1';
+        element.style.opacity = hidden ? '0' : String(square);
       });
       eras.current.forEach((element, index) => element?.toggleAttribute('data-now', zoomed && index === current));
       weights.current.forEach((element, index) => {
@@ -90,6 +93,7 @@ export function LoomLabels({
         const scale = Math.min(1.2, Math.max(0.82, rig.s / 15.5));
         element.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
         element.style.visibility = y > rig.viewHeight + 10 ? 'hidden' : 'visible';
+        element.style.opacity = String(square * (held ? 0.45 : 1));
       });
     });
   }, [door, rig, subscribe, eraRows]);

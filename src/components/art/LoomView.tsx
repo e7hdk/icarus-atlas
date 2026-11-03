@@ -5,16 +5,19 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
-import { decodeDoor, MEDIA, MEDIUM_LABEL, type LoomDoor, type LoomWork } from '@/features/art/door';
+import { decodeDoor, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
-import { LoomCamera } from '@/features/art/loomCamera';
+import { LoomCamera, MAX_SCALE, WEB_MAX_SCALE } from '@/features/art/loomCamera';
+import { LoomWeb } from '@/features/art/loomWeb';
 import { useLoomStore } from '@/features/art/store';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
 import type { LoomDoorData } from '@/types/art';
 import { LoomHires } from './LoomHires';
 import { LoomLabels } from './LoomLabels';
+import { LoomLifted } from './LoomLifted';
+import { LoomRail } from './LoomRail';
 import { LoomScene } from './LoomScene';
 import { paintSky } from './loomTextures';
 import { WorkHoverCard } from './WorkHoverCard';
@@ -26,6 +29,12 @@ const REVEAL_KEY = 'loom-woven';
 const PLATE_DELAY_MS = 420;
 const FLY_SCALE = 380;
 const DRAG_SLOP = 4;
+/** Past this many pixels per cell a tile can be read, so a click opens its plate
+ *  instead of pulling its web. */
+const READ_SCALE = 46;
+/** Radians of swing per pixel of drag, while the cloth is turned or a web is held. */
+const ORBIT_YAW_PER_PX = 0.0042;
+const ORBIT_PITCH_PER_PX = 0.0032;
 /** Past this zoom the title and the rail step aside. */
 const QUIET_ZOOM = 1.9;
 
@@ -67,34 +76,6 @@ function LoomSky() {
   return <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full" />;
 }
 
-function MediumRail() {
-  const medium = useLoomStore((state) => state.medium);
-  const setMedium = useLoomStore((state) => state.setMedium);
-  return (
-    <aside className="absolute right-[26px] top-[84px] z-10 w-44 transition-opacity duration-300 group-data-[view=quiet]/loom:pointer-events-none group-data-[view=quiet]/loom:opacity-0 max-[1080px]:hidden">
-      <h2 className="mb-[7px] font-display text-[10px] font-normal tracking-[0.28em] text-aether-faint">MEDIUM</h2>
-      {MEDIA.map((id) => (
-        <button
-          key={id}
-          type="button"
-          aria-pressed={medium === id}
-          onClick={() => setMedium(medium === id ? null : id)}
-          className={`relative block w-full py-[3px] pl-[15px] text-left font-body text-base leading-tight transition-colors hover:text-aether ${
-            medium === id ? 'text-star-olympian' : 'text-aether-muted'
-          }`}
-        >
-          <i
-            className={`absolute left-px top-[11px] h-[5px] w-[5px] rounded-full ${
-              medium === id ? 'bg-star-olympian shadow-[0_0_8px_2px_rgba(252,211,77,.5)]' : 'ring-1 ring-inset ring-white/20'
-            }`}
-          />
-          {MEDIUM_LABEL[id]}
-        </button>
-      ))}
-    </aside>
-  );
-}
-
 function LoomTitle() {
   return (
     <section className="absolute bottom-[22px] left-7 z-10 w-[186px] transition-opacity duration-300 group-data-[view=quiet]/loom:pointer-events-none group-data-[view=quiet]/loom:opacity-0 max-[1080px]:hidden">
@@ -107,6 +88,8 @@ function LoomTitle() {
         <span>the order of the myths</span>
         <b className="font-display text-[11px] font-normal leading-[19px] text-star-olympian">↓</b>
         <span>the order of the hands</span>
+        <b className="font-display text-[11px] font-normal leading-[19px] text-star-olympian">↗</b>
+        <span>pull a work to lift its web</span>
       </div>
       <p className="group/foot relative mt-[15px] font-body text-[14.5px] italic leading-[1.3] text-aether-faint">
         <span className="absolute bottom-full left-0 mb-2 hidden whitespace-nowrap rounded-lg border border-glass-border bg-glass-heavy px-[11px] py-[7px] not-italic text-aether backdrop-blur-xl group-hover/foot:block">
@@ -140,12 +123,21 @@ export function LoomView() {
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   );
   const door = useMemo(() => (data ? decodeDoor(data, phone) : null), [data, phone]);
+  const web = useMemo(() => (door ? new LoomWeb(door) : null), [door]);
 
   const root = useRef<HTMLDivElement>(null);
   const surface = useRef<HTMLDivElement>(null);
   const pointer = useRef({ x: 0, y: 0 });
   const listeners = useRef(new Set<() => void>());
-  const drag = useRef<{ x: number; y: number; fromX: number; fromY: number; moved: number } | null>(null);
+  const drag = useRef<{
+    x: number;
+    y: number;
+    fromX: number;
+    fromY: number;
+    yaw: number;
+    pitch: number;
+    moved: number;
+  } | null>(null);
   const pushedPlate = useRef(false);
   const flight = useRef<number | undefined>(undefined);
   const plateReturn = useRef<{ x: number; y: number; s: number } | null>(null);
@@ -220,18 +212,65 @@ export function LoomView() {
   const openPlate = useCallback(
     (work: LoomWork) => {
       useLoomStore.getState().setHover(null);
-      plateReturn.current ??= { ...rig.goal };
-      rig.flyTo(work.x + work.w / 2, work.row + work.h / 2, Math.min((window.innerHeight * 0.62) / Math.max(work.w, work.h), FLY_SCALE));
+      // Over a held web the plate opens where it is; from the cloth the view flies in first.
+      const held = useLoomStore.getState().focus !== null;
+      if (!held) {
+        plateReturn.current ??= { ...rig.goal };
+        rig.flyTo(work.x + work.w / 2, work.row + work.h / 2, Math.min((window.innerHeight * 0.62) / Math.max(work.w, work.h), FLY_SCALE));
+      }
       window.clearTimeout(flight.current);
       flight.current = window.setTimeout(() => {
         // From an open plate (a search hit) the new work takes the old one's place.
         const fromCloth = window.location.pathname === '/art';
         if (fromCloth) pushedPlate.current = true;
         window.history[fromCloth ? 'pushState' : 'replaceState'](null, '', `/art/${work.id}`);
-      }, PLATE_DELAY_MS);
+      }, held ? 60 : PLATE_DELAY_MS);
     },
     [rig],
   );
+
+  /** Lift a work out of the cloth with its web, along every thread or along one. */
+  const pull = useCallback(
+    (work: LoomWork, along: number | null = null) => {
+      if (!web) return;
+      const store = useLoomStore.getState();
+      store.setHover(null);
+      if (store.face) {
+        rig.turn(false);
+        store.setFace(false);
+      }
+      web.pull(work.index, along);
+      store.setWeb(work.index, along);
+      rig.holdWeb(work.x + work.w / 2, work.row + work.h / 2);
+    },
+    [rig, web],
+  );
+
+  const release = useCallback(() => {
+    if (!web || web.focus === null) return;
+    web.release();
+    useLoomStore.getState().setWeb(null, null);
+    rig.letGo();
+  }, [rig, web]);
+
+  const turn = useCallback(
+    (face: boolean) => {
+      release();
+      rig.turn(face);
+      useLoomStore.getState().setFace(face);
+    },
+    [release, rig],
+  );
+
+  // A lifted work: the held one opens its plate, a neighbour becomes the held one.
+  const pick = useRef<(index: number) => void>(() => {});
+  useEffect(() => {
+    pick.current = (index) => {
+      if (!door) return;
+      if (web?.focus === index) openPlate(door.works[index]);
+      else pull(door.works[index]);
+    };
+  }, [door, web, openPlate, pull]);
 
   const closePlate = useCallback(() => {
     if (pushedPlate.current) {
@@ -268,6 +307,10 @@ export function LoomView() {
   const walk = (event: React.KeyboardEvent) => {
     if (!door) return;
     if (event.key === 'Enter' && walked.current) openPlate(walked.current);
+    if (event.key === ' ' && walked.current) {
+      event.preventDefault();
+      pull(walked.current);
+    }
     const step = WALK[event.key];
     if (!step) return;
     event.preventDefault();
@@ -289,9 +332,18 @@ export function LoomView() {
       };
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== 'Escape') return;
       if (useGalaxyStore.getState().searchOpen || useGalaxyStore.getState().settingsOpen) return;
-      if (window.location.pathname === '/art') rig.goHome();
+      // With a plate open its own keys apply.
+      if (window.location.pathname !== '/art') return;
+      const typing = event.target instanceof HTMLElement && event.target.closest('input, textarea, [contenteditable]');
+      if (event.key === 'Escape') {
+        // Escape steps back one level: the web, then the whole cloth.
+        if (useLoomStore.getState().focus !== null) release();
+        else rig.goHome();
+      }
+      if (!typing && !event.metaKey && !event.ctrlKey && event.key.toLowerCase() === 't') {
+        turn(!useLoomStore.getState().face);
+      }
     };
     window.addEventListener('pointermove', onPointerMove);
     window.addEventListener('keydown', onKeyDown);
@@ -299,7 +351,7 @@ export function LoomView() {
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('keydown', onKeyDown);
     };
-  }, [rig]);
+  }, [rig, release, turn]);
 
   useEffect(() => {
     const element = surface.current;
@@ -308,7 +360,8 @@ export function LoomView() {
       event.preventDefault();
       useLoomStore.getState().setHover(null);
       const factor = Math.exp(-event.deltaY * 0.0017 * (event.ctrlKey ? 3.2 : 1));
-      rig.zoomAt(factor, event.clientX - origin.current.left, event.clientY - origin.current.top);
+      const max = useLoomStore.getState().focus === null ? MAX_SCALE : WEB_MAX_SCALE;
+      rig.zoomAt(factor, event.clientX - origin.current.left, event.clientY - origin.current.top, max);
     };
     element.addEventListener('wheel', onWheel, { passive: false });
     return () => element.removeEventListener('wheel', onWheel);
@@ -335,12 +388,20 @@ export function LoomView() {
         ref={surface}
         role="application"
         tabIndex={0}
-        aria-label="The cloth. Arrow keys walk the works, Enter opens one."
+        aria-label="The cloth. Arrow keys walk the works, Enter opens one, Space lifts its web, T turns the cloth."
         className="absolute inset-0 cursor-grab touch-none focus:outline-none"
         onKeyDown={walk}
         onPointerDown={(event) => {
           event.currentTarget.setPointerCapture(event.pointerId);
-          drag.current = { x: event.clientX, y: event.clientY, fromX: rig.goal.x, fromY: rig.goal.y, moved: 0 };
+          drag.current = {
+            x: event.clientX,
+            y: event.clientY,
+            fromX: rig.goal.x,
+            fromY: rig.goal.y,
+            yaw: rig.goal.yaw,
+            pitch: rig.goal.pitch,
+            moved: 0,
+          };
           useLoomStore.getState().setHover(null);
         }}
         onPointerMove={(event) => {
@@ -350,7 +411,10 @@ export function LoomView() {
             const dy = event.clientY - held.y;
             held.moved = Math.max(held.moved, Math.hypot(dx, dy));
             if (held.moved > DRAG_SLOP) event.currentTarget.style.cursor = 'grabbing';
-            rig.panTo(held.fromX - dx / rig.s, held.fromY - dy / rig.s);
+            // A held web or the turned cloth swings; the flat cloth slides.
+            const { focus, face } = useLoomStore.getState();
+            if (focus !== null || face) rig.orbitTo(held.yaw + dx * ORBIT_YAW_PER_PX, held.pitch + dy * ORBIT_PITCH_PER_PX);
+            else rig.panBy(held.fromX, held.fromY, dx, dy);
             return;
           }
           const work = workAt(event.clientX, event.clientY);
@@ -365,26 +429,45 @@ export function LoomView() {
           event.currentTarget.style.cursor = 'grab';
           if (!clicked) return;
           const work = workAt(event.clientX, event.clientY);
-          if (work) openPlate(work);
+          if (!work) {
+            release();
+            return;
+          }
+          if (!useLoomStore.getState().face && rig.s > READ_SCALE) openPlate(work);
+          else pull(work);
         }}
-        onDoubleClick={() => rig.goHome()}
+        onDoubleClick={() => {
+          release();
+          rig.goHome();
+        }}
       >
-        {door && (
+        {door && web && (
           <Canvas flat gl={{ antialias: true, alpha: true }} dpr={[1, 2]} frameloop={plateOpen ? 'never' : 'always'}>
-            <LoomScene door={door} rig={rig} pointer={pointer} phone={phone} reveal={reveal} onFrame={onFrame} />
+            <LoomScene door={door} web={web} rig={rig} pointer={pointer} phone={phone} reveal={reveal} onFrame={onFrame} />
           </Canvas>
         )}
       </div>
-      {door && (
+      {door && web && (
         <>
           <LoomHires door={door} rig={rig} subscribe={subscribe} />
+          <LoomLifted door={door} web={web} rig={rig} subscribe={subscribe} onPick={pick} />
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cosmos-deep/90 to-transparent opacity-0 transition-opacity duration-300 group-data-[view=quiet]/loom:opacity-100"
           />
           <LoomLabels door={door} rig={rig} subscribe={subscribe} />
           <LoomTitle />
-          <MediumRail />
+          <LoomRail
+            door={door}
+            onTurn={() => turn(!useLoomStore.getState().face)}
+            onAlong={(thread) => {
+              if (web.focus !== null) pull(door.works[web.focus], thread);
+            }}
+            onOpen={() => {
+              if (web.focus !== null) openPlate(door.works[web.focus]);
+            }}
+            onRelease={release}
+          />
           <WorkHoverCard door={door} />
           {plateWork && <WorkPlate work={plateWork} onClose={closePlate} onStep={stepPlate} />}
           <WorkSearchOverlay door={door} onSelect={openPlate} />

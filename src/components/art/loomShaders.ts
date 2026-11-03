@@ -70,6 +70,14 @@ void main() {
   ivec2 id = ivec2(clamp(vG, vec2(0.), uGrid - 1.));
   vec4 cell = texelFetch(uCells, id, 0);
   float b = cell.a * 1.6;
+  if (!gl_FrontFacing) {
+    // the reverse of a tapestry: the picture is only a rumour, the thread is the subject
+    vec3 back = vec3(.034, .024, .07) + luma(s.rgb) * vec3(.05, .046, .08);
+    back += cell.rgb * .032 * (.5 + .5 * sin(vG.x * 6.2832 * 3.));
+    back += vec3(1., .78, .36) * texture(uCrack, uv).r * .9;
+    o = vec4(back, 1.);
+    return;
+  }
 
   // from a distance whites turn to old wool and shadows deepen; up close the
   // painting is left exactly as it is
@@ -138,4 +146,57 @@ in vec3 vC;
 uniform float uAlpha;
 out vec4 o;
 void main() { o = vec4(vC * 1.3, uAlpha); }
+`;
+
+/** A stitch: one ribbon arcing out of the cloth between two works of a thread, its
+ *  ends following the works when they are lifted. Instanced, one per stitch. */
+export const STITCH_VERTEX = /* glsl */ `
+precision highp float;
+precision highp sampler2D;
+in vec3 position; // t along the stitch, side of the ribbon
+in vec4 aEnds;    // the two works' cells
+in vec4 aIds;     // work a, work b, thread, place along the thread
+in vec4 aColor;   // saga colour, seed
+uniform mat4 modelViewMatrix, projectionMatrix;
+uniform vec3 uEye;
+uniform sampler2D uLift, uState;
+uniform float uPx, uFace;
+${DRAPE_GLSL}
+out vec3 vC;
+out float vA;
+out float vS;
+vec3 at(float t, vec2 a, vec2 b, float za, float zb, float h) {
+  float e = t * t * (3. - 2. * t);
+  vec3 q = drape(vec2(mix(a.x, b.x, e), mix(a.y, b.y, t)));
+  return vec3(q.x, -q.y, q.z + (mix(za, zb, t) + sin(t * 3.14159265) * h) * uFace);
+}
+void main() {
+  vec4 la = texelFetch(uLift, ivec2(int(aIds.x), 0), 0);
+  vec4 lb = texelFetch(uLift, ivec2(int(aIds.y), 0), 0);
+  vec4 st = texelFetch(uState, ivec2(int(aIds.z), 0), 0);
+  vec2 a = aEnds.xy + la.xy, b = aEnds.zw + lb.xy;
+  float h = (.9 + min(length(b - a), 34.) * .3) * (.7 + .6 * aColor.a);
+  vec3 p = at(position.x, a, b, la.z, lb.z, h);
+  vec3 n = at(position.x + .015, a, b, la.z, lb.z, h);
+  vec3 side = normalize(cross(n - p, uEye - p));
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(p + side * position.y * st.g * 3.2 * uPx, 1.);
+  // a thread is brightest at the work it is held by and dies away along its length
+  float reach = st.a * 255.;
+  float fade = reach > 254. ? 1. : clamp(1.25 - abs(aIds.w + .5 - st.b * 255.) / reach, 0., 1.);
+  vC = aColor.rgb;
+  vA = st.r * fade;
+  vS = position.y;
+}
+`;
+
+export const STITCH_FRAGMENT = /* glsl */ `
+precision highp float;
+in vec3 vC;
+in float vA;
+in float vS;
+out vec4 o;
+void main() {
+  // Alpha stays out of it: the light adds onto whatever is below, the sky included.
+  o = vec4(vC * (1. - smoothstep(.25, 1., abs(vS))) * vA * 1.25, 0.);
+}
 `;
