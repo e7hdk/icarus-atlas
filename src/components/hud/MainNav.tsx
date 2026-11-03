@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { ATLAS_FILES } from '@/features/atlas/files';
+import { loadAtlasFile } from '@/features/atlas/useAtlasFile';
 
 /** Door glyphs for the mobile bar — hand-drawn minis in the Wain-glyph idiom
  *  (thin currentColor strokes, no emoji): a star cluster for the Galaxy, a
@@ -47,13 +49,19 @@ function ArtGlyph() {
 }
 
 const TABS = [
-  { key: 'galaxy', label: 'Galaxy', href: '/', glyph: <GalaxyGlyph /> },
-  { key: 'areas', label: 'Lands', href: '/areas', glyph: <LandsGlyph /> },
-  { key: 'stories', label: 'Myths', href: '/stories', glyph: <MythsGlyph /> },
-  { key: 'art', label: 'Art', href: '/art', glyph: <ArtGlyph /> },
-] as const satisfies readonly { key: string; label: string; href: string; glyph: ReactNode }[];
+  { key: 'galaxy', label: 'Galaxy', href: '/', glyph: <GalaxyGlyph />, data: ATLAS_FILES.galaxy },
+  { key: 'areas', label: 'Lands', href: '/areas', glyph: <LandsGlyph />, data: ATLAS_FILES.lands },
+  { key: 'stories', label: 'Myths', href: '/stories', glyph: <MythsGlyph />, data: ATLAS_FILES.myths },
+  { key: 'art', label: 'Art', href: '/art', glyph: <ArtGlyph />, data: ATLAS_FILES.loom },
+] as const satisfies readonly { key: string; label: string; href: string; glyph: ReactNode; data: string }[];
 
 export type MainTab = (typeof TABS)[number]['key'];
+
+/** A door's data starts when the pointer reaches its tab, so the door opens ready. */
+function warmDoor(url: string) {
+  loadAtlasFile(url).catch(() => {});
+}
+
 /** The four doors of the atlas — shared by the galaxy HUD and the 2D pages.
  *  `active: null` keeps every door dim (satellite pages like the
  *  Heortologion, which belongs to the Ephemeris layer, not a world).
@@ -68,6 +76,8 @@ export function MainNav({ active }: { active: MainTab | null }) {
           href={tab.href}
           aria-label={tab.label}
           title={tab.label}
+          onPointerEnter={() => warmDoor(tab.data)}
+          onFocus={() => warmDoor(tab.data)}
           className={`rounded-full p-2.5 font-display text-[10px] tracking-[0.08em] transition-colors sm:px-4 sm:py-1.5 sm:text-[11px] sm:tracking-[0.16em] ${
             active === tab.key
               ? 'nav-active border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'

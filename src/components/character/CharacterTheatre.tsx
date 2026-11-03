@@ -7,7 +7,7 @@ import { TYPE_GLOW } from '@/types/character';
 import { RING_LABELS, RING_ORDER, ringsFor, type RingKey } from '@/features/characters/categories';
 import { filterSourced, isVisibleUnderLens } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';
-import { getBakedLinkedProse, getCharacterStorySegments } from '@/features/linking/load-baked';
+import type { ProseSegment } from '@/features/linking/parse-prose';
 import { LinkedProse } from '@/features/linking/LinkedProse';
 import { CodexIdentity, CodexRegisters, MarqueeCard, MarqueeHeading, Meander } from './codex-marquee';
 import { CodexSeal } from './CodexSeal';
@@ -53,6 +53,7 @@ export function CharacterTheatre({
   sources,
   residences,
   appearances,
+  linkedStory,
 }: {
   character: Character;
   characters: Pick<Character, 'id' | 'name' | 'type'>[];
@@ -62,9 +63,10 @@ export function CharacterTheatre({
   residences: { city: string; label: string }[];
   /** Sagas/episodes whose cast includes this figure. */
   appearances: { id: string; title: string }[];
+  /** This figure's story with its names linked, passage by passage. */
+  linkedStory: ProseSegment[][];
 }) {
   const lens = useGalaxyStore((s) => s.lens);
-  const bakedProse = useMemo(() => getBakedLinkedProse(), []);
   const [openCategories, setOpenCategories] = useState<Set<RingKey>>(new Set());
 
   const glow = TYPE_GLOW[character.type].color;
@@ -88,9 +90,7 @@ export function CharacterTheatre({
   const passageBodies = useMemo(() => {
     const orbiting = new Set(RING_ORDER.flatMap((key) => rings[key].map((m) => m.id)));
     return character.story.map((_, index) => {
-      const segments = bakedProse
-        ? getCharacterStorySegments(bakedProse, character.id, index)
-        : undefined;
+      const segments = linkedStory[index];
       if (!segments) return [] as string[];
       return [
         ...new Set(
@@ -98,7 +98,7 @@ export function CharacterTheatre({
         ),
       ];
     });
-  }, [bakedProse, character.id, character.story, rings]);
+  }, [linkedStory, character.story, rings]);
 
   /* ---------------- the igniting spine + the seal follows the tale ---------------- */
   const stageRef = useRef<HTMLDivElement | null>(null);
@@ -343,9 +343,7 @@ export function CharacterTheatre({
 
           {character.story.map((passage, index) => {
             const visible = passageVisible[index];
-            const segments = bakedProse
-              ? getCharacterStorySegments(bakedProse, character.id, index)
-              : undefined;
+            const segments = linkedStory[index];
             return (
               <section
                 key={index}

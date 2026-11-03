@@ -1,4 +1,4 @@
-import type { Character, Relation, RelationType } from '@/types/character';
+import type { Character, Relation, RelationType, StarFacts } from '@/types/character';
 import { hashString, mulberry32 } from '@/lib/prng';
 
 export type Vec3 = [number, number, number];
@@ -181,7 +181,7 @@ const OURANIC_KEYWORDS =
 const CHTHONIC_KEYWORDS = /\b(underworld|death|the dead|night|darkness)\b/;
 
 /** Which level of the three-storey Greek cosmos a figure inhabits. */
-export function realmOf(character: Character): Realm {
+export function realmOf(character: StarFacts): Realm {
   if (character.cluster === 'chthonic' || character.cluster === 'night-court') {
     return 'chthonic';
   }
@@ -221,7 +221,7 @@ export function sampleBandPoint(cluster: string, rng: () => number, jitter = 1):
 
 /* ----------------------------- generations ----------------------------- */
 
-function baselineGeneration(character: Character): number {
+function baselineGeneration(character: StarFacts): number {
   return CLUSTER_GENERATION[character.cluster] ?? FALLBACK_GENERATION;
 }
 
@@ -229,7 +229,7 @@ function baselineGeneration(character: Character): number {
  * such as the later tradition that makes primordial Eros a child of Aphrodite. */
 export function isChronologicalParentRelation(
   relation: Relation,
-  charactersById: Map<string, Character>,
+  charactersById: Map<string, StarFacts>,
 ): boolean {
   if (relation.type !== 'parent') return false;
   const child = charactersById.get(relation.from);
@@ -281,7 +281,7 @@ const MET_TYPES = new Set<RelationType>(['ally', 'adversary', 'slayer']);
  *  timeless, so a divine parent or spouse dates nobody. Sourced synchronisms
  *  (PLAN.md M11) would enter as further terms. */
 function solveMortalClock(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
   parentRelations: Relation[],
   initial: ReadonlyMap<string, number>,
@@ -490,7 +490,7 @@ function solveMortalClock(
  *    however long or short their king-lists run. Values are fractional rings.
  *  The layout stays fixed while lenses rewire the visible relation lines. */
 export function computeGenerations(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
 ): Map<string, number> {
   const charactersById = new Map(characters.map((character) => [character.id, character]));
@@ -585,9 +585,9 @@ export interface Kinship {
 /** One solve per dataset: the layout asks for the kinship several times over
  *  (positions, wedges, cohorts, metrics), and the mortal clock is not free.
  *  Keyed on array identity — callers never mutate the arrays or the result. */
-const kinshipCache = new WeakMap<Relation[], WeakMap<Character[], Kinship>>();
+const kinshipCache = new WeakMap<Relation[], WeakMap<StarFacts[], Kinship>>();
 
-export function buildKinship(characters: Character[], relations: Relation[]): Kinship {
+export function buildKinship(characters: StarFacts[], relations: Relation[]): Kinship {
   const cached = kinshipCache.get(relations)?.get(characters);
   if (cached) return cached;
   const kinship = computeKinship(characters, relations);
@@ -596,7 +596,7 @@ export function buildKinship(characters: Character[], relations: Relation[]): Ki
   return kinship;
 }
 
-function computeKinship(characters: Character[], relations: Relation[]): Kinship {
+function computeKinship(characters: StarFacts[], relations: Relation[]): Kinship {
   const charactersById = new Map(characters.map((character) => [character.id, character]));
   const generations = computeGenerations(characters, relations);
   const parentRelations = relations.filter((relation) =>
@@ -682,7 +682,7 @@ interface WedgeForest {
 }
 
 function wedgeForestOf(
-  characters: Character[],
+  characters: StarFacts[],
   kinship: Kinship,
   weightBonus: Map<string, number>,
   patchAnchor: ReadonlyMap<string, string>,
@@ -774,7 +774,7 @@ const ORDER_SWEEPS = 12;
  *  is not placed under — then tries swapping neighbours; a change is kept only if
  *  it shortens the total tie length. Deterministic; writes the orders into
  *  `kinship.childrenOf` and `kinship.rootOrder`. */
-function orderFamilies(characters: Character[], relations: Relation[], kinship: Kinship): void {
+function orderFamilies(characters: StarFacts[], relations: Relation[], kinship: Kinship): void {
   const charactersById = new Map(characters.map((character) => [character.id, character]));
   const cohorts = detectCohorts(characters, relations, kinship);
   const patchAnchor = new Map(
@@ -940,7 +940,7 @@ function orderFamilies(characters: Character[], relations: Relation[], kinship: 
  *  (`patchAnchor`: member → anchor) sits in its anchor's wedge, so it takes no
  *  arc of its own — that bonus already paid for it. */
 export function computeDynastyWedges(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
   weightBonus: Map<string, number> = new Map(),
   patchAnchor: ReadonlyMap<string, string> = new Map(),
@@ -1005,7 +1005,7 @@ function cohortRadialTolerance(memberCount: number): number {
   return Math.min(RADIUS_TOLERANCE + lanes * 0.45, 5);
 }
 
-function residenceGroupKeys(character: Character): string[] {
+function residenceGroupKeys(character: StarFacts): string[] {
   const island = character.id.match(/-(ithaca|dulichium|zacynthus|same)$/)?.[1];
   if (island) return [`island:${island}`];
   const cities = [...new Set((character.residences ?? []).map((residence) => residence.city))].sort();
@@ -1019,7 +1019,7 @@ function residenceGroupKeys(character: Character): string[] {
 function residenceCohortAnchor(
   members: string[],
   groupKey: string,
-  characters: Character[],
+  characters: StarFacts[],
   kinship: Kinship,
 ): string {
   const memberSet = new Set(members);
@@ -1057,7 +1057,7 @@ function residenceCohortAnchor(
  *  known parent always outranks a host or a city: genealogy places a star
  *  whenever it can, and cohorts shelter only those genealogy cannot place. */
 export function detectCohorts(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
   kinship: Kinship = buildKinship(characters, relations),
 ): Cohort[] {
@@ -1138,7 +1138,7 @@ function buildCohortOf(cohorts: Cohort[]): Map<string, Cohort> {
 /** Dynasty wedges with cohort patch widening and the spiral twist — the same
  *  angular bounds computePositions enforces. */
 export function effectiveWedges(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
 ): Map<string, Wedge> {
   const kinship = buildKinship(characters, relations);
@@ -1291,7 +1291,7 @@ function phyllotaxisSeed(
 
 /** Deterministic cosmos layout. See the header comment for the model. */
 export function computePositions(
-  characters: Character[],
+  characters: StarFacts[],
   relations: Relation[],
   options: LayoutOptions = {},
 ): Map<string, Vec3> {

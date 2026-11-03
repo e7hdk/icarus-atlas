@@ -75,3 +75,6 @@ data/geo/raw/
 
 # Loom layout sketches and thumbnail cache (docs/LOOM_PLAN.md)
 /research/loom/
+
+# the ⌘K index and Ephemeris data, rebuilt by `pnpm dev` and `pnpm build`
+/public/atlas/

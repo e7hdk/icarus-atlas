@@ -2,7 +2,6 @@
 
 import { usePathname } from 'next/navigation';
 import type { Source } from '@/types/character';
-import type { SearchableCharacter } from '@/features/search/match';
 import { AtlasOverlays } from './AtlasOverlays';
 import { useAtlasSearchHotkey } from './useAtlasSearchHotkey';
 
@@ -14,25 +13,13 @@ import { useAtlasSearchHotkey } from './useAtlasSearchHotkey';
  *  Art door, except its plain list page. */
 const HAS_OWN_OVERLAYS = [/^\/$/, /^\/areas/, /^\/stories$/, /^\/city\/[^/]+\/sky/, /^\/art(\/(?!list$)[^/]+)?$/];
 
-export function GlobalOverlays({
-  characters,
-  sources,
-}: {
-  characters: SearchableCharacter[];
-  sources: Source[];
-}) {
+export function GlobalOverlays({ sources, starCount }: { sources: Source[]; starCount: number }) {
   const pathname = usePathname();
   if (HAS_OWN_OVERLAYS.some((pattern) => pattern.test(pathname))) return null;
-  return <MountedOverlays characters={characters} sources={sources} />;
+  return <MountedOverlays sources={sources} starCount={starCount} />;
 }
 
-function MountedOverlays({
-  characters,
-  sources,
-}: {
-  characters: SearchableCharacter[];
-  sources: Source[];
-}) {
+function MountedOverlays({ sources, starCount }: { sources: Source[]; starCount: number }) {
   useAtlasSearchHotkey();
-  return <AtlasOverlays characters={characters} sources={sources} />;
+  return <AtlasOverlays sources={sources} starCount={starCount} />;
 }

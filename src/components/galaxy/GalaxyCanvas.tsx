@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { PerformanceMonitor } from '@react-three/drei';
 import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing';
-import type { Character, Relation } from '@/types/character';
+import type { Relation, SkyCharacter } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useIsMobile } from '@/lib/useIsMobile';
@@ -28,7 +28,7 @@ export function GalaxyCanvas({
   cameraIntro = false,
   ephemerisBeacon = false,
 }: {
-  characters: Character[];
+  characters: SkyCharacter[];
   relations: Relation[];
   positions: Map<string, Vec3>;
   cameraIntro?: boolean;

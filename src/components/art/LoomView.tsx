@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
 import { decodeDoor, MEDIA, MEDIUM_LABEL, type LoomDoor, type LoomWork } from '@/features/art/door';
+import { ATLAS_FILES } from '@/features/atlas/files';
+import { useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { LoomCamera } from '@/features/art/loomCamera';
 import { useLoomStore } from '@/features/art/store';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -127,8 +129,7 @@ export function LoomView() {
   const webGl = useSyncExternalStore(noSubscription, hasWebGl, () => true);
   const phone = useIsMobile();
   const pathname = usePathname();
-  const [data, setData] = useState<LoomDoorData | null>(null);
-  const [failed, setFailed] = useState(false);
+  const { data, failed } = useAtlasFile<LoomDoorData>(ATLAS_FILES.loom);
   const [announced, setAnnounced] = useState('');
   const [rig] = useState(() => new LoomCamera());
   const [reveal] = useState(
@@ -153,23 +154,11 @@ export function LoomView() {
   const walked = useRef<LoomWork | null>(null);
 
   useEffect(() => {
-    let cancelled = false;
-    fetch('/art/loom.json')
-      .then((response) => response.json() as Promise<LoomDoorData>)
-      .then((loaded) => {
-        if (!cancelled) setData(loaded);
-      })
-      .catch(() => {
-        if (!cancelled) setFailed(true);
-      });
     try {
       window.sessionStorage.setItem(REVEAL_KEY, '1');
     } catch {
       // Without storage the cloth simply falls again on the next visit.
     }
-    return () => {
-      cancelled = true;
-    };
   }, []);
 
   // The door's own box, not the window: the page keeps a scrollbar gutter on both

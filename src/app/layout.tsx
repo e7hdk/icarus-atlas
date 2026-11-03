@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Cinzel, Cormorant_Garamond } from "next/font/google";
+import { preload } from "react-dom";
 import "./globals.css";
 import { AmbientAudio } from "@/components/audio/AmbientAudio";
 import { AtlasBar } from "@/components/hud/AtlasBar";
 import { EphemerisHost } from "@/components/hud/EphemerisHost";
 import { GlobalOverlays } from "@/components/hud/GlobalOverlays";
+import { ATLAS_FILES } from "@/features/atlas/files";
 import { loadAtlasData } from "@/features/characters/load";
-import { buildEphemerisData } from "@/features/spotlight/build";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -45,22 +46,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // The one chrome of the atlas: the bar itself needs no data, but the global
-  // ⌘K search does — a deliberately narrow slice of every star (see
-  // SearchableCharacter) so the codex pages stay light.
+  // The one chrome of the atlas. Whatever goes through props here is repeated in
+  // every prerendered page, so the ⌘K index and the Ephemeris data are baked files
+  // instead (public/atlas). The Ephemeris is preloaded because the day's chip reads
+  // it on every page; the index waits until it is wanted.
   const { characters, sources } = await loadAtlasData();
-  const ephemeris = await buildEphemerisData();
-  const searchable = characters.map(
-    ({ id, name, greekName, romanName, type, epithets, domains }) => ({
-      id,
-      name,
-      greekName,
-      romanName,
-      type,
-      epithets,
-      domains,
-    }),
-  );
+  preload(ATLAS_FILES.ephemeris, { as: "fetch", crossOrigin: "anonymous" });
 
   return (
     <html
@@ -73,8 +64,8 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col">
         <AtlasBar />
         {children}
-        <GlobalOverlays characters={searchable} sources={sources} />
-        <EphemerisHost data={ephemeris} />
+        <GlobalOverlays sources={sources} starCount={characters.length} />
+        <EphemerisHost />
         <AmbientAudio />
       </body>
     </html>

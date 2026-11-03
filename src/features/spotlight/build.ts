@@ -327,7 +327,7 @@ function getEphemerisContext(): Promise<EphemerisContext> {
   return contextPromise;
 }
 
-/** The compact payload RootLayout hands to the client host. */
+/** The compact payload `pnpm bake-atlas-data` writes for the client host. */
 export async function buildEphemerisData(): Promise<EphemerisData> {
   const context = await getEphemerisContext();
   return {

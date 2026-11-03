@@ -91,8 +91,9 @@ What the current roster becomes:
 ## 4. Layout engine — `src/features/stories/river.ts`
 
 Pure TypeScript, deterministic, blind to the order of its input, no randomness;
-~0.15 s for 176 stories and 38 crossings, so R2 computes it on the server, never
-on the client's first frame. Validated like the galaxy layout. It runs in stages:
+~0.15 s for 176 stories and 38 crossings, so it runs at build time, never on the
+client's first frame: `pnpm bake-atlas-data` writes the scene to
+`public/atlas/myths.json`, which the Myths door fetches as soon as its HTML arrives. Validated like the galaxy layout. It runs in stages:
 
 1. **Time axis** (`timeAxis.ts`, shared with the Spindle: the timeless set, the
    era → year curve, the year/rank blend `YEAR_BLEND = 0.4`, the age bands). The

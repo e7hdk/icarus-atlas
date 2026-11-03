@@ -5,12 +5,12 @@ export function isVisibleUnderLens(sources: SourcedText['sources'], lens: LensId
 }
 
 /** Returns only facts attested by the active source; consensus keeps the union. */
-export function filterSourced(entries: SourcedText[], lens: LensId): SourcedText[] {
+export function filterSourced<T extends SourcedText>(entries: T[], lens: LensId): T[] {
   return entries.filter((entry) => isVisibleUnderLens(entry.sources, lens));
 }
 
 /** Picks the first fact actually attested by the active source. */
-export function pickSourced(entries: SourcedText[], lens: LensId): SourcedText | undefined {
+export function pickSourced<T extends SourcedText>(entries: T[], lens: LensId): T | undefined {
   return filterSourced(entries, lens)[0];
 }
 
@@ -20,7 +20,10 @@ export function filterRelations(relations: Relation[], lens: LensId): Relation[]
 }
 
 /** True when any topic about this character is told differently by different sources. */
-export function isDisputed(character: Character, relations: Relation[]): boolean {
+export function isDisputed(
+  character: Pick<Character, 'id' | 'summary' | 'story'>,
+  relations: Relation[],
+): boolean {
   const counts = new Map<string, number>();
   const bump = (topic?: string) => {
     if (topic) counts.set(topic, (counts.get(topic) ?? 0) + 1);

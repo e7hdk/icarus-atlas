@@ -1,16 +1,16 @@
 'use client';
 
 import { useMemo } from 'react';
-import type { Character, Relation } from '@/types/character';
+import type { Relation, SkyCharacter } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { ProseShimmer } from '@/components/ui/ProseShimmer';
 import { TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { filterRelations, pickSourced, isDisputed } from '@/lib/lens';
 import { bondsFor } from '@/features/characters/relations';
-import { getBakedLinkedProse, resolveCharacterProseSegments } from '@/features/linking/load-baked';
-import { buildLinkingContext } from '@/features/linking/name-index';
 import { LinkedProse } from '@/features/linking/LinkedProse';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { useStarProse } from '@/features/galaxy/useStarProse';
 import type { CitySkyContext } from '@/components/galaxy/GalaxyView';
 import { CitySkyResidenceHints } from '@/components/city/CitySkyResidenceHints';
 
@@ -23,7 +23,7 @@ export function HoverCard({
   relations,
   cityContext,
 }: {
-  characters: Character[];
+  characters: SkyCharacter[];
   relations: Relation[];
   cityContext?: CitySkyContext;
 }) {
@@ -32,29 +32,17 @@ export function HoverCard({
   const lens = useGalaxyStore((s) => s.lens);
 
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
-  const bakedProse = useMemo(() => getBakedLinkedProse(), []);
-  const linkingContext = useMemo(
-    () => (bakedProse ? null : buildLinkingContext(characters)),
-    [characters, bakedProse],
-  );
   const character = hoveredId && hoveredId !== selectedId ? byId.get(hoveredId) : undefined;
+  const { prose, failed } = useStarProse(character?.id);
   const citiesById = useMemo(
     () => new Map(cityContext?.cities.map((city) => [city.id, city]) ?? []),
     [cityContext?.cities],
   );
-  const visibleRelations = filterRelations(relations, lens);
-  const scopeIds = useMemo(() => {
-    if (!character) return [];
-    const ids = new Set<string>([character.id]);
-    for (const bond of bondsFor(character.id, visibleRelations)) {
-      ids.add(bond.otherId);
-    }
-    return [...ids];
-  }, [character, visibleRelations]);
   if (!character) return null;
 
-  const summary = pickSourced(character.summary, lens) ?? pickSourced(character.story, lens);
-  const disputed = lens === 'consensus' && isDisputed(character, relations);
+  const visibleRelations = filterRelations(relations, lens);
+  const summary = prose ? (pickSourced(prose.summary, lens) ?? pickSourced(prose.story, lens)) : undefined;
+  const disputed = lens === 'consensus' && prose !== null && isDisputed({ id: character.id, ...prose }, relations);
   const bonds = bondsFor(character.id, visibleRelations).slice(0, 6);
 
   return (
@@ -97,19 +85,11 @@ export function HoverCard({
       <div className="relative border-t border-star-olympian/15 px-5 py-4">
         <p className="font-body text-[15px] leading-relaxed text-aether/90">
           {summary ? (
-            <LinkedProse
-              text={summary.text}
-              segments={
-                bakedProse ? resolveCharacterProseSegments(bakedProse, character, summary.text) : undefined
-              }
-              characterIndex={linkingContext?.characterIndex}
-              nameIndex={linkingContext?.nameIndex}
-              sortedNames={linkingContext?.sortedNames}
-              scopeIds={scopeIds}
-              selfId={character.id}
-            />
-          ) : (
+            <LinkedProse text={summary.text} segments={summary.segments} selfId={character.id} />
+          ) : prose ? (
             'No surviving account for this figure is included under the active source lens.'
+          ) : (
+            !failed && <ProseShimmer />
           )}
         </p>
         {disputed && (

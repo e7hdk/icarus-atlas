@@ -133,12 +133,13 @@ scripts/build-attic-calendar.ts          M12.5, generates the moon table
 `src/lib/prng.ts` and re-imports them in `layout.ts` — a move, not a change;
 baked positions and `LAYOUT_VERSION` are unaffected.
 
-**Data flow.** `RootLayout` already awaits `loadAtlasData()`. `build.ts` adds
-one call beside it: loads stories (`loadStories()`), culture ids (readdir),
+**Data flow.** `build.ts` loads stories (`loadStories()`), culture ids (readdir),
 spotlight overrides and festivals, computes the roster + week plan, and returns
 a compact `EphemerisData` (roster ids, saga rotation table, curated weeks,
-festival table; ≈15 KB). The layout passes it to a client `<EphemerisHost>`
-mounted beside `GlobalOverlays`.
+festival table; 83 KB raw, 18 KB gzipped). `pnpm bake-atlas-data` writes it to
+`public/atlas/ephemeris.json`. `RootLayout` preloads that file and a client
+`<EphemerisHost>`, mounted beside `GlobalOverlays`, fetches it. It used to travel
+as a layout prop, which repeated it inside every prerendered page.
 
 **Hydration.** The server never renders "today". `EphemerisHost` computes the
 pick after mount (chip shows a skeleton shimmer until then) and re-computes on
@@ -480,7 +481,7 @@ festivals are batch 2+. Non-Attic month names — Karneios — are recorded in
   sequence makes it visible in review; never silent.
 - **Timezone/DST** — one code path (`calendar.ts`), UTC-noon day arithmetic,
   post-mount compute; no `Date.now()` in pure functions.
-- **Perf** — payload ≈ 15 KB; beacon and constellation are additive draws; the
+- **Perf** — payload 18 KB gzipped, fetched once; beacon and constellation are additive draws; the
   60 fps bar gates both (hard rule 4).
 - **Honesty** — `approximate` flags surface as "≈" in UI; the reconstruction
   is always labeled; monthly sacred days ship only with testimonia; disputed

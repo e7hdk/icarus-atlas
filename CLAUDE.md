@@ -27,7 +27,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 
 - `pnpm dev` — dev server (Turbopack)
 - `pnpm build` / `pnpm lint`
-- `pnpm validate-data` — zod + referential-integrity check of `data/` (run after ANY data edit)
+- `pnpm validate-data` — zod + referential-integrity check of `data/` (run after ANY data edit; on success it re-runs `pnpm bake-atlas-data`, so a running dev server shows the edit)
 - `pnpm audit:parents` — heuristic scan for reversed parent edges (`from` = child, `to` = parent); warning-level, verify suspects in the corpus before editing
 - `pnpm corpus:sync` / `pnpm corpus:verify` — download and verify the pinned local source corpus
 - `pnpm corpus:search <query>` — search citation-bearing local passages before web research
@@ -40,6 +40,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm art:commons` — fetch Commons size, license, author and categories of new culture images into `data/generated/art-commons.json` (`--all` refetches; run after culture batches, network step)
 - `pnpm bake-loom-atlas` — fetch Commons thumbnails into gitignored `research/loom/thumbs/` and bake the sheets in `public/art/` (network step at batch boundaries; `--fetch` or `--compose` for one half; also writes duplicate candidates to `research/loom/duplicates.json`)
 - `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
+- `pnpm bake-atlas-data` — write what pages fetch instead of carrying it as props to gitignored `public/atlas/`: the ⌘K index, the Ephemeris data, one file per door (galaxy, myths, lands) and each star's prose with its linked names (offline, chained into `dev`, `build` and `validate-data`). Props repeat in every prerendered page, so a page must never pass per-star data or prose as props, and `data/generated/linked-prose.json` stays `server-only`
 - `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits (run after art or culture edits, once `pnpm bake-art` has run)
 - `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)

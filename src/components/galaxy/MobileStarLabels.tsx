@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, type RefObject } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import type { Character } from '@/types/character';
+import type { SkyCharacter } from '@/types/character';
 import { IRIDESCENT_BASE_HUE, TYPE_GLOW } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -32,7 +32,7 @@ interface PreviousFrame {
   positions: Map<string, Vec3> | null;
   projection: Float64Array;
   selectedId: string | null;
-  stars: Character[] | null;
+  stars: SkyCharacter[] | null;
   view: Float64Array;
   width: number;
 }
@@ -58,7 +58,7 @@ export function MobileStarLabels({
   positions,
 }: {
   canvasRef: RefObject<HTMLCanvasElement | null>;
-  characters: Character[];
+  characters: SkyCharacter[];
   positions: Map<string, Vec3>;
 }) {
   const hoveredId = useGalaxyStore((state) => state.hoveredId);
@@ -73,12 +73,7 @@ export function MobileStarLabels({
     const values = new Uint8Array(stars.length);
     for (let index = 0; index < stars.length; index++) {
       const character = stars[index]!;
-      values[index] =
-        lens === 'consensus' ||
-        character.summary.some((entry) => entry.sources.includes(lens)) ||
-        character.story.some((entry) => entry.sources.includes(lens))
-          ? 1
-          : 0;
+      values[index] = lens === 'consensus' || character.told.includes(lens) ? 1 : 0;
     }
     return values;
   }, [lens, stars]);

@@ -124,6 +124,17 @@ export interface Character {
   residences?: { city: string; sources: SourceId[] }[];
 }
 
+/** Everything about a figure but its prose. */
+export type StarFacts = Omit<Character, 'summary' | 'story'>;
+
+/** A star as the sky needs it: its facts, and which sources tell of it. The prose
+ *  itself is fetched when the star is read (features/galaxy/useStarProse). */
+export type SkyCharacter = StarFacts & { told: SourceId[] };
+
+export function toSkyCharacter({ summary, story, ...facts }: Character): SkyCharacter {
+  return { ...facts, told: [...new Set([...summary, ...story].flatMap((entry) => entry.sources))] };
+}
+
 export interface Relation {
   id: string;
   type: RelationType;
