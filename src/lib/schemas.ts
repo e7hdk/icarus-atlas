@@ -3,6 +3,7 @@ import {
   CHARACTER_TYPES,
   FIGURE_KINDS,
   MAX_FIGURE_KINDS,
+  PARENT_BONDS,
   RELATION_TYPES,
   SOURCE_IDS,
 } from '@/types/character';
@@ -47,6 +48,7 @@ export const relationSchema = z.object({
   to: z.string().min(1),
   sources: z.array(sourceIdSchema).min(1),
   topic: z.string().optional(),
+  bond: z.enum(PARENT_BONDS).optional(),
   note: z.string().optional(),
 });
 
@@ -220,6 +222,7 @@ export const constellationSchema = z.object({
         ra: z.number().min(0).max(360),
         dec: z.number().min(-90).max(90),
         mag: z.number(),
+        k: z.number().positive().optional(),
         /** The figure standing in this star — only where the sources name them
          *  star by star, which in the Greek sky means the Pleiades. */
         character: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/).optional(),

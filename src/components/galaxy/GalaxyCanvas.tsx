@@ -19,6 +19,7 @@ import { EphemerisBeacon } from './EphemerisBeacon';
 import { WeekConstellation } from './WeekConstellation';
 import { MobileStarLabels } from './MobileStarLabels';
 import { createGalaxyPointerEvents } from './galaxyPointerEvents';
+import { HighlightRolloff } from './HighlightRolloff';
 
 export function GalaxyCanvas({
   characters,
@@ -71,21 +72,17 @@ export function GalaxyCanvas({
         {ephemerisBeacon && <EphemerisBeacon positions={positions} />}
         {ephemerisBeacon && <WeekConstellation isMobile={isMobile} positions={positions} />}
         <CameraRig positions={positions} intro={cameraIntro} isMobile={isMobile} />
-        {/* Mobile now restores moderate MSAA and the desktop grain treatment. */}
-        {isMobile ? (
-          <EffectComposer key="m" multisampling={2}>
-            <Bloom mipmapBlur resolutionScale={0.5} intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
-            <Vignette eskil={false} offset={0.15} darkness={0.55} />
-            <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />
-          </EffectComposer>
-        ) : (
-          <EffectComposer key="d" multisampling={4}>
-            <Bloom mipmapBlur resolutionScale={0.5} intensity={1.15} luminanceThreshold={0.18} luminanceSmoothing={0.25} radius={0.75} />
-            <Vignette eskil={false} offset={0.15} darkness={0.55} />
-            {/* faint SCREEN grain kills additive-gradient banding on the dark backdrop */}
-            <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />
-          </EffectComposer>
-        )}
+        {/* The HDR contract the shaders are written to: only true light
+            sources (star cores, giant field stars) cross the bloom threshold,
+            and the roll-off burns them white without touching anything below
+            its knee. Mobile keeps moderate MSAA. */}
+        <EffectComposer key={isMobile ? 'm' : 'd'} multisampling={isMobile ? 2 : 4}>
+          <Bloom mipmapBlur resolutionScale={0.5} intensity={0.9} luminanceThreshold={1} luminanceSmoothing={0.4} radius={0.7} />
+          <HighlightRolloff knee={0.8} desaturation={0.25} />
+          <Vignette eskil={false} offset={0.15} darkness={0.55} />
+          {/* faint SCREEN grain kills additive-gradient banding on the dark backdrop */}
+          <Noise premultiply={false} blendFunction={BlendFunction.SCREEN} opacity={0.018} />
+        </EffectComposer>
       </Canvas>
       {isMobile && (
         <canvas

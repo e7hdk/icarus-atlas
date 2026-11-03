@@ -508,6 +508,8 @@ interface CatalogueStar {
   RA?: string;
   Dec?: string;
   Vmag?: string;
+  /** Effective temperature in kelvin, from the catalogue's spectral class. */
+  K?: string;
 }
 
 async function source(entry: { file: string; url: string }): Promise<unknown> {
@@ -665,6 +667,7 @@ async function main() {
             ra: Number(rightAscension(star)!.toFixed(4)),
             dec: Number(declination(star)!.toFixed(4)),
             mag: Number(star.Vmag ?? '6'),
+            ...(star.K ? { k: Number(star.K) } : {}),
           };
         }),
         lines: segments,
@@ -693,6 +696,7 @@ async function main() {
         ra: Number(rightAscension(star)!.toFixed(4)),
         dec: Number(declination(star)!.toFixed(4)),
         mag: Number(star.Vmag ?? '6'),
+        ...(star.K ? { k: Number(star.K) } : {}),
         character,
       })),
       lines: PLEIADES.lines,

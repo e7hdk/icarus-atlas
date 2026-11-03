@@ -60,10 +60,19 @@ export const useGalaxyStore = create<GalaxyState>()(
       musicVolume: 0.45,
       setLens: (lens) => set({ lens }),
       setHovered: (hoveredId) => set({ hoveredId }),
+      // Picking a star steps out of a constellation: the star's card takes the
+      // place the constellation card stood in (both dock at the same edge).
       select: (selectedId) =>
-        set({ selectedId, hoveredId: null, isDiving: false, focusPoint: null, focusDistance: null }),
+        set({
+          selectedId,
+          hoveredId: null,
+          isDiving: false,
+          focusPoint: null,
+          focusDistance: null,
+          ...(selectedId ? { skyFocus: null } : {}),
+        }),
       selectAt: (selectedId, focusPoint, focusDistance = null) =>
-        set({ selectedId, hoveredId: null, isDiving: false, focusPoint, focusDistance }),
+        set({ selectedId, hoveredId: null, isDiving: false, focusPoint, focusDistance, skyFocus: null }),
       setSkyFocus: (skyFocus) => set({ skyFocus }),
       setDiving: (isDiving) => set({ isDiving }),
       setSearchOpen: (searchOpen) =>

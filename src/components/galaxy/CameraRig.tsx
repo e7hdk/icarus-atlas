@@ -1,15 +1,22 @@
 'use client';
 
-import { useEffect, useRef, type ComponentRef } from 'react';
+import { useEffect, useMemo, useRef, type ComponentRef } from 'react';
 import { CameraControls, CameraControlsImpl } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { MOBILE_TAP_SLOP } from '@/lib/useIsMobile';
+import { discRadiusOf } from './discRadius';
 
 const HOME_POSITION: Vec3 = [18, 43, 88];
 const HOME_TARGET: Vec3 = [0, 1, 0];
+const HOME_LENGTH = Math.hypot(...HOME_POSITION);
+/** The galaxy overview stands this many disc radii (P95 of the stars' planar
+ *  radius) from the centre. A fixed multiple of the spacing framed the old,
+ *  wider layout well but left the family-first disc at half the screen, its
+ *  stars packed; framing the real extent keeps them apart on any layout. */
+const OVERVIEW_FIT = 2.1;
 const TRAVEL_DISTANCE = 13;
 /** Shifts the aim point right so the star sits left of the story panel. */
 const PANEL_OFFSET = 2.6;
@@ -34,6 +41,7 @@ export function CameraRig({
   const skyFocus = useGalaxyStore((s) => s.skyFocus);
   const isDiving = useGalaxyStore((s) => s.isDiving);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
+  const discRadius = useMemo(() => discRadiusOf(positions), [positions]);
 
   useEffect(() => {
     const rig = controls.current;
@@ -179,7 +187,12 @@ export function CameraRig({
       rig.minDistance = 4;
       rig.setLookAt(x + outward.x, y + outward.y, z + outward.z, x, y, z, true);
     } else {
-      const overviewScale = intro ? spacingScale * 1.65 : spacingScale * 2.5;
+      // City skies keep their spacing-based frame; the galaxy frames its disc.
+      const overviewScale = intro
+        ? spacingScale * 1.65
+        : discRadius > 0
+          ? (OVERVIEW_FIT * discRadius) / HOME_LENGTH
+          : spacingScale * 2.5;
       rig.setLookAt(
         HOME_POSITION[0] * overviewScale,
         HOME_POSITION[1] * overviewScale,
@@ -188,7 +201,7 @@ export function CameraRig({
         true
       );
     }
-  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro]);
+  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius]);
 
   return (
     <CameraControls

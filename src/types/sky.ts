@@ -15,6 +15,8 @@ export interface SkyStar {
   dec: number;
   /** Visual magnitude — the smaller, the brighter. */
   mag: number;
+  /** Effective temperature in kelvin (BSC5) — the colour the star is drawn in. */
+  k?: number;
   /** The figure standing in this star — only where the sources name them star
    *  by star, which in the Greek sky means the Pleiades. */
   character?: string;

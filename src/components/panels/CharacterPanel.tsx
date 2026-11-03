@@ -45,7 +45,7 @@ export function CharacterPanel({
   const proemActive = useEphemerisStore((s) => s.proemActive);
   const router = useRouter();
   const isMobile = useIsMobile();
-  const panelRef = useRef<HTMLElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
   const [bondsOpen, setBondsOpen] = useState(false);
   const [storyOpen, setStoryOpen] = useState(false);
   // Reset the expanded bonds list and collapsed story whenever the panel shows a
@@ -221,11 +221,10 @@ export function CharacterPanel({
   return (
     <>
     <aside
-      ref={panelRef}
-      className="fixed bottom-0 right-0 top-14 z-30 w-[400px] max-w-full overflow-y-auto border-l border-t border-star-olympian/30 shadow-[-18px_24px_80px_rgba(5,2,15,0.88),0_0_34px_rgba(252,211,77,0.08),inset_0_0_42px_rgba(124,77,255,0.05)] backdrop-blur-2xl"
+      className="fixed bottom-12 right-5 top-16 z-30 w-[400px] max-w-full overflow-hidden rounded-2xl border border-star-olympian/30 shadow-[0_24px_72px_rgba(5,2,15,0.88),0_0_34px_rgba(252,211,77,0.08),inset_0_0_42px_rgba(124,77,255,0.05)] backdrop-blur-2xl"
       style={{ backgroundColor: 'rgba(5, 2, 18, 0.94)' }}
     >
-      <div className="pointer-events-none absolute inset-2 border border-star-olympian/[0.07]" />
+      <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.07]" />
       <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/40" />
       <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/20" />
       <div
@@ -233,135 +232,139 @@ export function CharacterPanel({
         style={{ backgroundImage: GREEK_KEY_PATTERN, backgroundRepeat: 'repeat-x' }}
       />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.1),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.08),transparent_48%)]" />
-      {/* The AtlasBar owns the top 3.5rem strip on every route — the panel
-          starts entirely below it (top-14), so bar and panel never share
-          pixels (tenth UX review). */}
-      <div className="relative px-7 py-6">
-        <button
-          type="button"
-          onClick={() => select(null)}
-          aria-label="Close"
-          className="absolute right-5 top-5 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
-        >
-          <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
-            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
-          </svg>
-        </button>
-
-        <div className="mx-auto flex w-28 items-center gap-2" aria-hidden>
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/50" />
-          <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/65 bg-star-olympian/15 shadow-[0_0_9px_rgba(252,211,77,0.36)]" />
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/50" />
-        </div>
-
-        <h2 className="mt-4 text-center font-display text-2xl tracking-[0.14em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.12)]">
-          {character.name.toUpperCase()}
-        </h2>
-        <p className="mt-1 text-center font-body text-lg italic text-star-olympian/75">
-          {character.greekName}
-          {character.romanName ? ` · Roman ${character.romanName}` : ''}
-        </p>
-        <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-          <TypeBadge type={character.type} />
-          {character.kinds?.map((kind) => (
-            <KindBadge key={kind} kind={kind} primaryType={character.type} />
-          ))}
-          <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
-        </div>
-        {character.epithets && character.epithets.length > 0 && (
-          <p className="mt-2 text-center font-body text-sm italic text-aether-faint">
-            {character.epithets.join(' · ')}
-          </p>
-        )}
-
-        <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
-          {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => {
-            const originalIndex = character.story.findIndex((p) => p.text === paragraph.text);
-            const segments =
-              bakedProse && originalIndex >= 0
-                ? getCharacterStorySegments(bakedProse, character.id, originalIndex)
-                : undefined;
-            return (
-            <div key={index}>
-              {lens === 'consensus' && paragraph.topic && (
-                <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
-                  Disputed tradition
-                </div>
-              )}
-              <p className="font-body text-[16px] leading-relaxed text-aether/90">
-                <LinkedProse
-                  text={paragraph.text}
-                  segments={segments}
-                  characterIndex={linkingContext?.characterIndex}
-                  nameIndex={linkingContext?.nameIndex}
-                  sortedNames={linkingContext?.sortedNames}
-                  scopeIds={scopeIds}
-                />
-              </p>
-              <p className="mt-1 font-body text-[13px] italic text-aether-faint">
-                — {citeOf(paragraph.sources, paragraph.citation)}
-              </p>
-            </div>
-            );
-          })}
-          {story.length === 0 && (
-            <p className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
-              No surviving account for this figure is included under the active source lens.
-            </p>
-          )}
-          {story.length > STORY_PREVIEW && (
-            <button
-              type="button"
-              onClick={() => setStoryOpen((value) => !value)}
-              className="font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
-            >
-              {storyOpen ? '— Read less' : `Read more · ${story.length - STORY_PREVIEW} →`}
-            </button>
-          )}
-        </div>
-
-        {bonds.length > 0 && (
-          <div className="mt-7 border-t border-star-olympian/15 pt-5">
-            <div className="flex items-center gap-3">
-              <div className="font-display text-[10px] uppercase tracking-[0.22em] text-aether-faint">Bonds</div>
-              <span className="h-px flex-1 bg-gradient-to-r from-star-olympian/25 to-transparent" />
-            </div>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {bonds.slice(0, INLINE_BONDS).map(renderBond)}
-              {bonds.length > INLINE_BONDS && (
-                <button
-                  type="button"
-                  onClick={() => setBondsOpen(true)}
-                  className="border border-nebula-soft/30 bg-nebula-violet/10 px-3 py-1.5 font-body text-[14px] text-nebula-soft transition-colors hover:border-nebula-soft/60 hover:bg-nebula-violet/20"
-                >
-                  ··· {bonds.length - INLINE_BONDS} more
-                </button>
-              )}
-            </div>
-          </div>
-        )}
-
-        {cityContext && (
-          <CitySkyResidenceHints
-            character={character}
-            currentCityId={cityContext.cityId}
-            citiesById={citiesById}
-          />
-        )}
-
-        <div className="relative mt-8 border-t border-star-olympian/20 pb-4 pt-5">
-          <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
-            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
-            <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
-            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
-          </div>
+      {/* The AtlasBar owns the top 3.5rem strip on every route — the card
+          floats below it with the hover card's margins (top-16), so bar and
+          panel never share pixels (tenth UX review), and ends above the type
+          legend (bottom-12). The frame above stays put while the story
+          scrolls inside it. */}
+      <div ref={panelRef} className="absolute inset-0 overflow-y-auto">
+        <div className="relative px-7 py-6">
           <button
             type="button"
-            onClick={openCharacterPage}
-            className="w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-5 py-3 font-display text-[11px] uppercase tracking-[0.2em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether hover:shadow-[0_0_26px_rgba(252,211,77,0.12)]"
+            onClick={() => select(null)}
+            aria-label="Close"
+            className="absolute right-5 top-5 grid h-8 w-8 place-items-center rounded-full border border-transparent text-aether-faint transition-all hover:border-glass-border hover:bg-white/5 hover:text-aether"
           >
-            Step into the star
+            <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4" aria-hidden>
+              <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" strokeWidth="1.25" />
+            </svg>
           </button>
+
+          <div className="mx-auto flex w-28 items-center gap-2" aria-hidden>
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/50" />
+            <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/65 bg-star-olympian/15 shadow-[0_0_9px_rgba(252,211,77,0.36)]" />
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/50" />
+          </div>
+
+          <h2 className="mt-4 text-center font-display text-2xl tracking-[0.14em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.12)]">
+            {character.name.toUpperCase()}
+          </h2>
+          <p className="mt-1 text-center font-body text-lg italic text-star-olympian/75">
+            {character.greekName}
+            {character.romanName ? ` · Roman ${character.romanName}` : ''}
+          </p>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            <TypeBadge type={character.type} />
+            {character.kinds?.map((kind) => (
+              <KindBadge key={kind} kind={kind} primaryType={character.type} />
+            ))}
+            <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
+          </div>
+          {character.epithets && character.epithets.length > 0 && (
+            <p className="mt-2 text-center font-body text-sm italic text-aether-faint">
+              {character.epithets.join(' · ')}
+            </p>
+          )}
+
+          <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
+            {(storyOpen ? story : story.slice(0, STORY_PREVIEW)).map((paragraph, index) => {
+              const originalIndex = character.story.findIndex((p) => p.text === paragraph.text);
+              const segments =
+                bakedProse && originalIndex >= 0
+                  ? getCharacterStorySegments(bakedProse, character.id, originalIndex)
+                  : undefined;
+              return (
+              <div key={index}>
+                {lens === 'consensus' && paragraph.topic && (
+                  <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
+                    Disputed tradition
+                  </div>
+                )}
+                <p className="font-body text-[16px] leading-relaxed text-aether/90">
+                  <LinkedProse
+                    text={paragraph.text}
+                    segments={segments}
+                    characterIndex={linkingContext?.characterIndex}
+                    nameIndex={linkingContext?.nameIndex}
+                    sortedNames={linkingContext?.sortedNames}
+                    scopeIds={scopeIds}
+                  />
+                </p>
+                <p className="mt-1 font-body text-[13px] italic text-aether-faint">
+                  — {citeOf(paragraph.sources, paragraph.citation)}
+                </p>
+              </div>
+              );
+            })}
+            {story.length === 0 && (
+              <p className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted">
+                No surviving account for this figure is included under the active source lens.
+              </p>
+            )}
+            {story.length > STORY_PREVIEW && (
+              <button
+                type="button"
+                onClick={() => setStoryOpen((value) => !value)}
+                className="font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
+              >
+                {storyOpen ? '— Read less' : `Read more · ${story.length - STORY_PREVIEW} →`}
+              </button>
+            )}
+          </div>
+
+          {bonds.length > 0 && (
+            <div className="mt-7 border-t border-star-olympian/15 pt-5">
+              <div className="flex items-center gap-3">
+                <div className="font-display text-[10px] uppercase tracking-[0.22em] text-aether-faint">Bonds</div>
+                <span className="h-px flex-1 bg-gradient-to-r from-star-olympian/25 to-transparent" />
+              </div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {bonds.slice(0, INLINE_BONDS).map(renderBond)}
+                {bonds.length > INLINE_BONDS && (
+                  <button
+                    type="button"
+                    onClick={() => setBondsOpen(true)}
+                    className="border border-nebula-soft/30 bg-nebula-violet/10 px-3 py-1.5 font-body text-[14px] text-nebula-soft transition-colors hover:border-nebula-soft/60 hover:bg-nebula-violet/20"
+                  >
+                    ··· {bonds.length - INLINE_BONDS} more
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
+
+          {cityContext && (
+            <CitySkyResidenceHints
+              character={character}
+              currentCityId={cityContext.cityId}
+              citiesById={citiesById}
+            />
+          )}
+
+          <div className="relative mt-8 border-t border-star-olympian/20 pb-4 pt-5">
+            <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
+              <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
+            </div>
+            <button
+              type="button"
+              onClick={openCharacterPage}
+              className="w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-5 py-3 font-display text-[11px] uppercase tracking-[0.2em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether hover:shadow-[0_0_26px_rgba(252,211,77,0.12)]"
+            >
+              Step into the star
+            </button>
+          </div>
         </div>
       </div>
     </aside>

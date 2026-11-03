@@ -82,6 +82,9 @@ export function SpindleStars({
     const glowColor = new Float32Array(N * 3);
     const glowScale = new Float32Array(N);
     const glowOpacity = new Float32Array(N).fill(0.55);
+    const posX = new Float32Array(N);
+    const posY = new Float32Array(N);
+    const posZ = new Float32Array(N);
 
     const indexToId: string[] = [];
     const idToIndex = new Map<string, number>();
@@ -142,41 +145,47 @@ export function SpindleStars({
     return {
       N, sizeArr, hitScaleArr, speedArr, ampArr, phaseArr, baseR, baseG, baseB,
       attested, displayColors, coreColor, coreAlpha, glowColor, glowScale, glowOpacity,
+      posX, posY, posZ,
       indexToId, idToIndex, coreGeo, glowGeo, hitGeo, coreMat, glowMat, hitMat, glowTexture,
     };
   }, [nodes, count]);
 
-  const posX = useMemo(() => new Float32Array(count), [count]);
-  const posY = useMemo(() => new Float32Array(count), [count]);
-  const posZ = useMemo(() => new Float32Array(count), [count]);
+  // The effects and the per-frame loop write into these buffers through a ref,
+  // as the galaxy's StarsDriver does.
+  const dataRef = useRef(data);
+  useLayoutEffect(() => {
+    dataRef.current = data;
+  }, [data]);
 
   useLayoutEffect(() => {
     const core = coreRef.current, glow = glowRef.current, hit = hitRef.current;
     if (!core || !glow || !hit) return;
+    const currentData = dataRef.current;
     const m = new THREE.Matrix4();
     for (let i = 0; i < count; i++) {
       const [x, y, z] = nodes[i].pos;
-      posX[i] = x; posY[i] = y; posZ[i] = z;
-      m.makeScale(data.sizeArr[i], data.sizeArr[i], data.sizeArr[i]);
+      currentData.posX[i] = x; currentData.posY[i] = y; currentData.posZ[i] = z;
+      m.makeScale(currentData.sizeArr[i], currentData.sizeArr[i], currentData.sizeArr[i]);
       m.setPosition(x, y, z);
       core.setMatrixAt(i, m);
       m.makeTranslation(x, y, z);
       glow.setMatrixAt(i, m);
-      m.makeScale(data.hitScaleArr[i], data.hitScaleArr[i], data.hitScaleArr[i]);
+      m.makeScale(currentData.hitScaleArr[i], currentData.hitScaleArr[i], currentData.hitScaleArr[i]);
       m.setPosition(x, y, z);
       hit.setMatrixAt(i, m);
     }
     core.instanceMatrix.needsUpdate = true;
     glow.instanceMatrix.needsUpdate = true;
     hit.instanceMatrix.needsUpdate = true;
-  }, [data, nodes, count, posX, posY, posZ, hitRef]);
+  }, [data, nodes, count, hitRef]);
 
   // Lens gate — recompute attested + core alpha only when the lens changes.
   useLayoutEffect(() => {
+    const currentData = dataRef.current;
     for (let i = 0; i < count; i++) {
       const att = isStoryAttested(nodes[i], lens) ? 1 : 0;
-      data.attested[i] = att;
-      data.coreAlpha[i] = att ? 1 : 0.4;
+      currentData.attested[i] = att;
+      currentData.coreAlpha[i] = att ? 1 : 0.4;
     }
     if (coreRef.current) {
       (coreRef.current.geometry.getAttribute('aAlpha') as THREE.BufferAttribute).needsUpdate = true;
@@ -188,13 +197,14 @@ export function SpindleStars({
   useFrame(({ camera }) => {
     const core = coreRef.current, glow = glowRef.current;
     if (!core || !glow) return;
+    const currentData = dataRef.current;
     const t = elapsed.current;
-    const hi = hoveredId ? data.idToIndex.get(hoveredId) ?? -1 : -1;
-    const si = selectedId ? data.idToIndex.get(selectedId) ?? -1 : -1;
+    const hi = hoveredId ? currentData.idToIndex.get(hoveredId) ?? -1 : -1;
+    const si = selectedId ? currentData.idToIndex.get(selectedId) ?? -1 : -1;
 
     const cm = core.instanceMatrix.array as Float32Array;
     const { coreColor, glowColor, glowScale, glowOpacity, attested,
-      sizeArr, speedArr, ampArr, phaseArr, baseR, baseG, baseB } = data;
+      sizeArr, speedArr, ampArr, phaseArr, baseR, baseG, baseB, posX, posY, posZ } = currentData;
 
     for (let i = 0; i < count; i++) {
       const osc = Math.sin(t * speedArr[i] + phaseArr[i]);
@@ -240,7 +250,7 @@ export function SpindleStars({
         ring.quaternion.copy(camera.quaternion);
       }
       if (si !== prevSelected.current) {
-          (ring.material as THREE.MeshBasicMaterial).color.copy(data.displayColors[si]);
+          (ring.material as THREE.MeshBasicMaterial).color.copy(currentData.displayColors[si]);
           prevSelected.current = si;
         }
       } else {

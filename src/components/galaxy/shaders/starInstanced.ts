@@ -1,9 +1,7 @@
-/** Instanced character-star shaders. Both output LINEAR colour straight into the
- *  EffectComposer's HDR target (exactly like StarField's points shader), so the
- *  result is byte-identical to the previous per-star MeshBasicMaterial(core) +
- *  SpriteMaterial(glow) path — only the draw structure changes (521 meshes → 2
- *  instanced draws). Per-instance attributes are driven by the single StarsDriver
- *  loop. */
+/** Instanced sphere-and-sprite star shaders, drawn by the Myths spindle
+ *  (SpindleStars). Both output LINEAR colour straight into the EffectComposer's
+ *  HDR target (exactly like StarField's points shader). The galaxy's own stars
+ *  are point-spread quads instead (psfStar.ts). */
 
 /** Core: a unit sphere placed + uniformly scaled by instanceMatrix, tinted and
  *  alpha'd per instance. Matches MeshBasicMaterial{toneMapped:false, transparent}. */
@@ -19,28 +17,6 @@ void main() {
   vColor = aColor;
   vAlpha = aAlpha;
   vec4 mvPosition = modelViewMatrix * instanceMatrix * vec4(position, 1.0);
-  gl_Position = projectionMatrix * mvPosition;
-  #ifdef USE_FOG
-    vFogDepth = -mvPosition.z;
-  #endif
-}
-`;
-
-/** Mobile core: identical transform result, but pulse scale is a compact float
- *  attribute so the static 4x4 instance matrices do not cross the bus each frame. */
-export const MOBILE_CORE_VERT = /* glsl */ `
-attribute vec3 aColor;
-attribute float aAlpha;
-attribute float aScale;
-varying vec3 vColor;
-varying float vAlpha;
-#ifdef USE_FOG
-  varying float vFogDepth;
-#endif
-void main() {
-  vColor = aColor;
-  vAlpha = aAlpha;
-  vec4 mvPosition = modelViewMatrix * instanceMatrix * vec4(position * aScale, 1.0);
   gl_Position = projectionMatrix * mvPosition;
   #ifdef USE_FOG
     vFogDepth = -mvPosition.z;

@@ -1,7 +1,7 @@
 'use client';
 
 import { useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { Html, Line } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Vec3 } from '@/features/galaxy/layout';
@@ -10,6 +10,8 @@ import { weekContextFor } from '@/features/spotlight/weeks';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import type { Constellation, SkyCatalogue } from '@/types/sky';
 import catalogue from '../../../data/sky/constellations.json';
+import { SkyStars, SkyThreads, type SkyPoint, type SkyThread } from './SkyChart';
+import { discRadiusOf } from './discRadius';
 
 /** The Greek sky (docs/EPHEMERIS_PLAN.md §5). Ptolemy's 48 constellations hang
  *  on a real celestial sphere around the galaxy — each star at its catalogue
@@ -36,22 +38,26 @@ const SKY_RADIUS = 3000;
 /** Ordinary sky: far and faint, but always the same starlight — a figure does
  *  not flare because a pointer passed over it. The week's own constellation is
  *  what burns brighter, and it should be the only thing that does. */
-const QUIET_LINE = '#c9d2f5';
-const QUIET_LINE_OPACITY = 0.22;
-const QUIET_STAR = '#c9d2f5';
-/** The week's figure. */
-const LIT_LINE = '#e9d5ff';
-const LIT_LINE_OPACITY = 0.62;
-const LIT_STAR = '#ffffff';
-/** Point sizes are attenuated, so these are world units at the sphere. A chart
- *  has magnitudes: three buckets give the quiet sky its hierarchy in three
- *  draws, without a shader. */
-const MAGNITUDE_BUCKETS = [
-  { until: 2.2, size: 16, opacity: 0.7 },
-  { until: 3.6, size: 11, opacity: 0.55 },
-  { until: Infinity, size: 7, opacity: 0.4 },
-];
-const LIT_SIZE = 26;
+const QUIET_THREAD = '#c9d2f5';
+const QUIET_THREAD_OPACITY = 0.2;
+const QUIET_THREAD_WIDTH = 1;
+/** Seen through the galaxy's disc, a quiet thread or star keeps this much of itself. */
+const QUIET_BEHIND_DISC = 0.2;
+/** The week's figure: gold, the Gilded chrome's jewel for a focal point, with
+ *  a soft halo — and it stays readable in front of the disc. */
+const LIT_THREAD = '#fcd34d';
+const LIT_THREAD_OPACITY = 0.8;
+const LIT_THREAD_WIDTH = 1.4;
+const LIT_THREAD_GLOW = 7;
+const LIT_THREAD_GLOW_GAIN = 0.18;
+const LIT_BEHIND_DISC = 0.6;
+/** The week's stars are its jewels: drawn larger and hotter than the quiet sky. */
+const LIT_STAR_SCALE = 2.6;
+const LIT_STAR_BRIGHTNESS = 1.9;
+/** The quiet sky's stars carry a touch more light than its threads. */
+const QUIET_STAR_BRIGHTNESS = 1.3;
+/** Every star brighter than this carries spikes while its figure is lit. */
+const LIT_SPIKE_BELOW = 2.5;
 const TODAY_SIZE = 40;
 /** How far a star's pick sphere reaches. The sky is far, so a target has to be
  *  generous — but it must be a STAR, not a region: a bounding volume per figure
@@ -76,64 +82,64 @@ function onSphere(ra: number, dec: number, radius = SKY_RADIUS): Vec3 {
   return [radius * Math.cos(d) * Math.cos(a), radius * Math.sin(d), -radius * Math.cos(d) * Math.sin(a)];
 }
 
-/** Brighter stars draw bigger, as on any chart: magnitude runs backwards. */
-const sizeFor = (mag: number, base: number) => base * (1.35 - 0.13 * Math.min(Math.max(mag, 0), 6));
-
 /** Where each figure hangs and how far it reaches — one invisible sphere per
  *  constellation is the pointer target, so the visitor hovers the FIGURE rather
  *  than hunting individual stars across the sky. */
 interface SkyFigure {
   figure: Constellation;
-  segments: Vec3[];
+  points: SkyPoint[];
+  threads: SkyThread[];
   centre: Vec3;
   reach: number;
 }
 
 interface QuietSky {
-  /** Star positions bucketed by magnitude — bright, middling, faint. */
-  buckets: Float32Array[];
-  segments: Vec3[];
   figures: SkyFigure[];
   /** Every star in the sky, and which figure it belongs to — the pick targets. */
-  picks: { at: Vec3; figure: number; character?: string }[];
+  picks: SkyPick[];
 }
 
-/** The whole sky, prepared once: every figure's lines, its pick volume, and the
- *  stars sorted into magnitude buckets. */
+interface SkyPick {
+  at: Vec3;
+  figure: number;
+  name: string;
+  character?: string;
+}
+
+/** The whole sky, prepared once: every figure's stars and threads, and its
+ *  pick volume. */
 function buildSky(): QuietSky {
-  const buckets: number[][] = MAGNITUDE_BUCKETS.map(() => []);
-  const segments: Vec3[] = [];
   const figures: SkyFigure[] = [];
-  const picks: { at: Vec3; figure: number; character?: string }[] = [];
+  const picks: SkyPick[] = [];
   for (const figure of sky.constellations) {
-    const placed = figure.stars.map((star) => onSphere(star.ra, star.dec));
-    const own: Vec3[] = [];
-    placed.forEach((point, index) => {
-      const bucket = MAGNITUDE_BUCKETS.findIndex((b) => figure.stars[index]!.mag < b.until);
-      buckets[bucket === -1 ? MAGNITUDE_BUCKETS.length - 1 : bucket]!.push(...point);
+    const points: SkyPoint[] = figure.stars.map((star) => ({
+      at: onSphere(star.ra, star.dec),
+      mag: star.mag,
+      ...(star.k ? { k: star.k } : {}),
+    }));
+    points.forEach((point, index) => {
       picks.push({
-        at: point,
+        at: point.at,
         figure: figures.length,
+        name: figure.stars[index]!.name,
         ...(figure.stars[index]!.character
           ? { character: figure.stars[index]!.character }
           : {}),
       });
     });
-    for (const [from, to] of figure.lines) {
-      if (placed[from] && placed[to]) {
-        segments.push(placed[from]!, placed[to]!);
-        own.push(placed[from]!, placed[to]!);
-      }
-    }
+    const threads: SkyThread[] = figure.lines.flatMap(([from, to]) =>
+      points[from] && points[to] ? [{ from: points[from]!, to: points[to]! }] : [],
+    );
+    const placed = points.map((point) => point.at);
     const centre = placed
       .reduce((sum, p) => [sum[0] + p[0], sum[1] + p[1], sum[2] + p[2]] as Vec3, [0, 0, 0] as Vec3)
       .map((v) => v / placed.length) as Vec3;
     const reach = Math.max(
       ...placed.map((p) => Math.hypot(p[0] - centre[0], p[1] - centre[1], p[2] - centre[2])),
     );
-    figures.push({ figure, segments: own, centre, reach: reach * 1.15 });
+    figures.push({ figure, points, threads, centre, reach: reach * 1.15 });
   }
-  return { buckets: buckets.map((b) => new Float32Array(b)), segments, figures, picks };
+  return { figures, picks };
 }
 
 const SKY = buildSky();
@@ -150,8 +156,8 @@ interface StarDoor {
 
 interface LitFigure {
   figure: Constellation;
-  segments: Vec3[];
-  stars: Vec3[];
+  points: SkyPoint[];
+  threads: SkyThread[];
   doors: StarDoor[];
   centre: Vec3;
   labelAt: Vec3;
@@ -175,6 +181,10 @@ export function WeekConstellation({
   const setSkyFocus = useGalaxyStore((s) => s.setSkyFocus);
 
   const [named, setNamed] = useState<string | null>(null);
+  /** A star inside the figure in focus, under the pointer or tapped: it says
+   *  its own name. Indices into SKY.picks. */
+  const [starUnder, setStarUnder] = useState<number | null>(null);
+  const [starTapped, setStarTapped] = useState<number | null>(null);
 
   const lit = useMemo<LitFigure | null>(() => {
     if (!data || !pick) return null;
@@ -192,7 +202,7 @@ export function WeekConstellation({
       candidate.figure.namedIn?.some((named) => named.story === context.saga.storyId);
     const entry = SKY.figures.find(isTheWeek) ?? SKY.figures.find(namesTheWeek);
     if (!entry) return null;
-    const placed = entry.figure.stars.map((star) => onSphere(star.ra, star.dec));
+    const placed = entry.points.map((point) => point.at);
     const doors: StarDoor[] = entry.figure.stars.flatMap((star, index) =>
       star.character
         ? [
@@ -209,13 +219,23 @@ export function WeekConstellation({
     const top = placed.reduce((best, p) => (p[1] > best[1] ? p : best), placed[0]!);
     return {
       figure: entry.figure,
-      segments: entry.segments,
-      stars: placed,
+      points: entry.points,
+      threads: entry.threads,
       doors,
       centre: entry.centre,
       labelAt: [top[0], top[1] + SKY_RADIUS * 0.06, top[2]],
     };
   }, [data, pick, positions]);
+
+  // The lit figure is drawn in gold on its own; the quiet sky is every other.
+  const quiet = useMemo(() => {
+    const others = SKY.figures.filter((entry) => entry.figure.id !== lit?.figure.id);
+    return {
+      points: others.flatMap((entry) => entry.points),
+      threads: others.flatMap((entry) => entry.threads),
+    };
+  }, [lit]);
+  const discRadius = useMemo(() => discRadiusOf(positions), [positions]);
 
   const [hovered, setHovered] = useState<string | null>(null);
   const picks = useRef<THREE.InstancedMesh>(null);
@@ -271,38 +291,32 @@ export function WeekConstellation({
 
   if (proemActive) return null;
 
+  const nameIndex = starUnder ?? starTapped;
+  const namedStar =
+    nameIndex !== null &&
+    SKY.figures[SKY.picks[nameIndex]!.figure]!.figure.id === skyFocus?.id
+      ? SKY.picks[nameIndex]!
+      : null;
+
 
   return (
     <group>
       {/* The sky itself: everything the ancients drew, far and quiet, and always
           the same starlight — nothing here flares because a pointer passed. */}
-      <Line
-        points={SKY.segments}
-        segments
-        color={QUIET_LINE}
-        lineWidth={1}
-        transparent
-        opacity={QUIET_LINE_OPACITY}
-        renderOrder={0}
+      <SkyThreads
+        threads={quiet.threads}
+        color={QUIET_THREAD}
+        opacity={QUIET_THREAD_OPACITY}
+        width={QUIET_THREAD_WIDTH}
+        discRadius={discRadius}
+        behindDisc={QUIET_BEHIND_DISC}
       />
-      {SKY.buckets.map((points, index) =>
-        points.length === 0 ? null : (
-          <points key={index} renderOrder={0}>
-            <bufferGeometry>
-              <bufferAttribute attach="attributes-position" args={[points, 3]} />
-            </bufferGeometry>
-            <pointsMaterial
-              size={MAGNITUDE_BUCKETS[index]!.size}
-              sizeAttenuation
-              color={QUIET_STAR}
-              transparent
-              opacity={MAGNITUDE_BUCKETS[index]!.opacity}
-              depthWrite={false}
-              blending={THREE.AdditiveBlending}
-            />
-          </points>
-        ),
-      )}
+      <SkyStars
+        stars={quiet.points}
+        brightness={QUIET_STAR_BRIGHTNESS}
+        discRadius={discRadius}
+        behindDisc={QUIET_BEHIND_DISC}
+      />
 
       {/* The pick targets are the STARS, in one instanced draw — never a
           bounding volume per figure, which covered the whole sky. Invisible,
@@ -320,6 +334,7 @@ export function WeekConstellation({
                 if (index === undefined) return;
                 document.body.style.cursor = 'pointer';
                 setHovered(SKY.figures[SKY.picks[index]!.figure]!.figure.id);
+                setStarUnder(index);
               }
         }
         onPointerOut={
@@ -329,6 +344,7 @@ export function WeekConstellation({
                 event.stopPropagation();
                 document.body.style.cursor = 'auto';
                 setHovered(null);
+                setStarUnder(null);
               }
         }
         onClick={(event) => {
@@ -336,15 +352,23 @@ export function WeekConstellation({
           if (index === undefined) return;
           event.stopPropagation();
           const skyPick = SKY.picks[index]!;
-          const door = isMobile
-            ? lit?.doors.find((candidate) => candidate.character === skyPick.character)
-            : undefined;
-          if (door) {
-            selectAt(door.character, door.at, TODAY_SIZE * 16);
+          const entry = SKY.figures[skyPick.figure]!;
+          // First the constellation, then whatever stands inside it: once the
+          // figure is in focus, a star the sources name as a person opens that
+          // person, and any other star says its name. On a phone the week's
+          // doors, which have no meshes of their own there, open at once.
+          const inFocus = useGalaxyStore.getState().skyFocus?.id === entry.figure.id;
+          const weeksDoor =
+            isMobile && lit?.doors.some((door) => door.character === skyPick.character);
+          if (skyPick.character && (inFocus || weeksDoor)) {
+            selectAt(skyPick.character, skyPick.at, TODAY_SIZE * 16);
             return;
           }
-          const entry = SKY.figures[skyPick.figure]!;
-          // First the constellation, then whatever stands inside it.
+          if (inFocus) {
+            setStarTapped(index);
+            return;
+          }
+          setStarTapped(null);
           useGalaxyStore.getState().select(null);
           setSkyFocus({
             id: entry.figure.id,
@@ -385,21 +409,25 @@ export function WeekConstellation({
       {/* The week's figure, awake. */}
       {lit && (
         <group>
-          <Line
-            points={lit.segments}
-            segments
-            color={LIT_LINE}
-            lineWidth={1.8}
-            transparent
-            opacity={LIT_LINE_OPACITY}
-            renderOrder={2}
+          <SkyThreads
+            threads={lit.threads}
+            starScale={LIT_STAR_SCALE}
+            color={LIT_THREAD}
+            opacity={LIT_THREAD_OPACITY}
+            width={LIT_THREAD_WIDTH}
+            glow={LIT_THREAD_GLOW}
+            glowGain={LIT_THREAD_GLOW_GAIN}
+            discRadius={discRadius}
+            behindDisc={LIT_BEHIND_DISC}
           />
-          {lit.stars.map((at, index) => (
-            <mesh key={index} position={at}>
-              <sphereGeometry args={[sizeFor(lit.figure.stars[index]!.mag, LIT_SIZE), 12, 12]} />
-              <meshBasicMaterial color={LIT_STAR} toneMapped={false} transparent />
-            </mesh>
-          ))}
+          <SkyStars
+            stars={lit.points}
+            scale={LIT_STAR_SCALE}
+            brightness={LIT_STAR_BRIGHTNESS}
+            spikeBelow={LIT_SPIKE_BELOW}
+            discRadius={discRadius}
+            behindDisc={LIT_BEHIND_DISC}
+          />
           <Html
             position={lit.labelAt}
             center
@@ -478,6 +506,20 @@ export function WeekConstellation({
           />
         </mesh>
       ))}
+      {/* Inside the figure in focus, a star says its own name. */}
+      {namedStar && !named && (
+        <Html
+          position={namedStar.at}
+          center
+          distanceFactor={SKY_RADIUS * 0.34}
+          className="pointer-events-none select-none"
+          zIndexRange={[9, 0]}
+        >
+          <span className="block -translate-y-4 whitespace-nowrap text-center font-display text-[11px] uppercase tracking-[0.22em] text-aether [text-shadow:0_0_12px_rgba(233,213,255,0.55)]">
+            {namedStar.name}
+          </span>
+        </Html>
+      )}
       {named && lit && (
         <Html
           position={lit.doors.find((door) => door.character === named)!.at}
@@ -497,7 +539,7 @@ export function WeekConstellation({
         <bufferGeometry ref={tetherGeom} />
         <lineBasicMaterial
           ref={tetherMat}
-          color={LIT_LINE}
+          color={LIT_THREAD}
           transparent
           opacity={0}
           depthWrite={false}

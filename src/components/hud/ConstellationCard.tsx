@@ -136,10 +136,10 @@ export function ConstellationCard() {
 
   return (
     <aside
-      className="fixed bottom-0 right-0 top-14 z-30 w-[400px] max-w-full overflow-y-auto border-l border-t border-star-olympian/30 shadow-[-18px_24px_80px_rgba(5,2,15,0.88),0_0_34px_rgba(252,211,77,0.08),inset_0_0_42px_rgba(124,77,255,0.05)] backdrop-blur-2xl"
+      className="fixed bottom-12 right-5 top-16 z-30 w-[400px] max-w-full overflow-hidden rounded-2xl border border-star-olympian/30 shadow-[0_24px_72px_rgba(5,2,15,0.88),0_0_34px_rgba(252,211,77,0.08),inset_0_0_42px_rgba(124,77,255,0.05)] backdrop-blur-2xl"
       style={PANEL_BACKGROUND}
     >
-      <div className="pointer-events-none absolute inset-2 border border-star-olympian/[0.07]" />
+      <div className="pointer-events-none absolute inset-2 rounded-xl border border-star-olympian/[0.07]" />
       <div className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-star-olympian/40" />
       <div className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-star-olympian/20" />
       <div
@@ -148,129 +148,131 @@ export function ConstellationCard() {
       />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(circle_at_50%_-15%,rgba(252,211,77,0.1),transparent_56%),radial-gradient(circle_at_18%_18%,rgba(124,77,255,0.08),transparent_48%)]" />
 
-      <div className="relative px-7 py-6">
-        <CloseButton onClose={close} className="absolute right-5 top-5" />
+      <div className="absolute inset-0 overflow-y-auto">
+        <div className="relative px-7 py-6">
+          <CloseButton onClose={close} className="absolute right-5 top-5" />
 
-        <GildedRule />
+          <GildedRule />
 
-        {/* The plate: the figure as an atlas engraves it. */}
-        <FigureChart figure={figure} className="mx-auto mt-5 h-32 w-32" />
+          {/* The plate: the figure as an atlas engraves it. */}
+          <FigureChart figure={figure} className="mx-auto mt-5 h-32 w-32" />
 
-        <h2 className="mt-4 text-center font-display text-2xl tracking-[0.14em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.12)]">
-          {figure.name.toUpperCase()}
-        </h2>
-        {figure.greekName && (
-          <p className="mt-1 text-center font-body text-lg italic text-star-olympian/75">
-            {figure.greekName}
+          <h2 className="mt-4 text-center font-display text-2xl tracking-[0.14em] text-aether drop-shadow-[0_0_16px_rgba(252,211,77,0.12)]">
+            {figure.name.toUpperCase()}
+          </h2>
+          {figure.greekName && (
+            <p className="mt-1 text-center font-body text-lg italic text-star-olympian/75">
+              {figure.greekName}
+            </p>
+          )}
+          <p className="mt-2 text-center font-body text-sm italic text-aether-muted">
+            {figure.figure}
+            {figure.asterism ? ` · within ${figure.asterism}` : ''}
           </p>
-        )}
-        <p className="mt-2 text-center font-body text-sm italic text-aether-muted">
-          {figure.figure}
-          {figure.asterism ? ` · within ${figure.asterism}` : ''}
-        </p>
-        <p className="mt-1 text-center font-body text-[12px] text-aether-faint">
-          {figure.iau.join(' · ')} — {figure.stars.length} stars, brightest {brightest.name}
-        </p>
+          <p className="mt-1 text-center font-body text-[12px] text-aether-faint">
+            {figure.iau.join(' · ')} — {figure.stars.length} stars, brightest {brightest.name}
+          </p>
 
-        {figure.catasterism && (
-          <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
-            <div>
-              <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
-                Set among the stars
+          {figure.catasterism && (
+            <div className="mt-6 space-y-5 border-t border-star-olympian/15 pt-5">
+              <div>
+                <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
+                  Set among the stars
+                </div>
+                <p className="font-body text-[16px] leading-relaxed text-aether/90">
+                  {figures.length > 0
+                    ? `The ancients tell that ${figures.map(named).join(' and ')} ${
+                        figures.length > 1 ? 'were' : 'was'
+                      } placed in the sky as this figure.`
+                    : 'The ancients tell that this thing itself was placed in the sky — whom or what exactly, they do not agree; the tellings stand below.'}
+                </p>
+                {figures.map((character) => (
+                  <Link
+                    key={character}
+                    href={`/character/${character}`}
+                    onClick={close}
+                    className="mt-2 mr-4 inline-block font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
+                  >
+                    {named(character)} →
+                  </Link>
+                ))}
               </div>
-              <p className="font-body text-[16px] leading-relaxed text-aether/90">
-                {figures.length > 0
-                  ? `The ancients tell that ${figures.map(named).join(' and ')} ${
-                      figures.length > 1 ? 'were' : 'was'
-                    } placed in the sky as this figure.`
-                  : 'The ancients tell that this thing itself was placed in the sky — whom or what exactly, they do not agree; the tellings stand below.'}
+            </div>
+          )}
+
+          {figure.namedIn && figure.namedIn.length > 0 && (
+            <div className="mt-7 border-t border-star-olympian/15 pt-5">
+              <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
+                Named in the telling
+              </div>
+              <p className="font-body text-[15px] italic leading-relaxed text-aether-muted">
+                A myth looks up and calls this figure by name.
               </p>
-              {figures.map((character) => (
+              {figure.namedIn.map((named) => (
                 <Link
-                  key={character}
-                  href={`/character/${character}`}
+                  key={named.story}
+                  href={`/story/${named.story}`}
                   onClick={close}
-                  className="mt-2 mr-4 inline-block font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
+                  className="mt-2 block font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
                 >
-                  {named(character)} →
+                  Read the telling →
                 </Link>
               ))}
             </div>
-          </div>
-        )}
+          )}
 
-        {figure.namedIn && figure.namedIn.length > 0 && (
-          <div className="mt-7 border-t border-star-olympian/15 pt-5">
-            <div className="mb-1 inline-block border border-nebula-soft/30 bg-nebula-violet/10 px-2.5 py-0.5 font-display text-[10px] uppercase tracking-[0.16em] text-nebula-soft">
-              Named in the telling
+          {cast.length > 0 && (
+            <div className="mt-7 border-t border-star-olympian/15 pt-5">
+              <p className="font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75">
+                Star by star
+              </p>
+              <div className="mt-2 grid grid-cols-2 gap-1.5">
+                {cast.map((star) => (
+                  <Link
+                    key={star.character}
+                    href={`/character/${star.character}`}
+                    onClick={close}
+                    className="border border-star-olympian/15 bg-star-olympian/[0.035] px-3 py-1.5 text-left font-body text-[14px] text-aether/90 transition-all hover:border-star-olympian/40 hover:bg-star-olympian/[0.08] hover:text-aether"
+                  >
+                    {star.name}
+                  </Link>
+                ))}
+              </div>
             </div>
-            <p className="font-body text-[15px] italic leading-relaxed text-aether-muted">
-              A myth looks up and calls this figure by name.
-            </p>
-            {figure.namedIn.map((named) => (
-              <Link
-                key={named.story}
-                href={`/story/${named.story}`}
-                onClick={close}
-                className="mt-2 block font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75 transition-colors hover:text-star-olympian"
-              >
-                Read the telling →
-              </Link>
-            ))}
-          </div>
-        )}
+          )}
 
-        {cast.length > 0 && (
-          <div className="mt-7 border-t border-star-olympian/15 pt-5">
-            <p className="font-display text-[10px] uppercase tracking-[0.18em] text-star-olympian/75">
-              Star by star
-            </p>
-            <div className="mt-2 grid grid-cols-2 gap-1.5">
-              {cast.map((star) => (
-                <Link
-                  key={star.character}
-                  href={`/character/${star.character}`}
-                  onClick={close}
-                  className="border border-star-olympian/15 bg-star-olympian/[0.035] px-3 py-1.5 text-left font-body text-[14px] text-aether/90 transition-all hover:border-star-olympian/40 hover:bg-star-olympian/[0.08] hover:text-aether"
-                >
-                  {star.name}
-                </Link>
-              ))}
+          {testimonia.length > 0 && (
+            <div className="mt-7 border-t border-star-olympian/15 pt-5">
+              <p className="font-display text-[10px] uppercase tracking-[0.18em] text-aether-faint">
+                Told by
+              </p>
+              <ul className="mt-2 space-y-2">
+                {testimonia.map((line) => (
+                  <li
+                    key={line}
+                    className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-2.5 font-body text-[13px] italic leading-relaxed text-aether-muted"
+                  >
+                    {line}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-        )}
+          )}
 
-        {testimonia.length > 0 && (
-          <div className="mt-7 border-t border-star-olympian/15 pt-5">
-            <p className="font-display text-[10px] uppercase tracking-[0.18em] text-aether-faint">
-              Told by
-            </p>
-            <ul className="mt-2 space-y-2">
-              {testimonia.map((line) => (
-                <li
-                  key={line}
-                  className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-2.5 font-body text-[13px] italic leading-relaxed text-aether-muted"
-                >
-                  {line}
-                </li>
-              ))}
-            </ul>
+          <div className="relative mt-8 border-t border-star-olympian/20 pb-4 pt-5">
+            <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
+              <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
+            </div>
+            <Link
+              href={`/constellation/${figure.id}`}
+              onClick={close}
+              className="block w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-5 py-3 text-center font-display text-[11px] uppercase tracking-[0.2em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether hover:shadow-[0_0_26px_rgba(252,211,77,0.12)]"
+            >
+              Step into the figure
+            </Link>
           </div>
-        )}
-
-        <div className="relative mt-8 border-t border-star-olympian/20 pb-4 pt-5">
-          <div className="pointer-events-none absolute left-1/2 top-0 flex w-24 -translate-x-1/2 -translate-y-1/2 items-center gap-2">
-            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-star-olympian/35" />
-            <span className="h-1.5 w-1.5 rotate-45 border border-star-olympian/45 bg-cosmos-deep" />
-            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-star-olympian/35" />
-          </div>
-          <Link
-            href={`/constellation/${figure.id}`}
-            onClick={close}
-            className="block w-full border border-star-olympian/35 bg-star-olympian/[0.06] px-5 py-3 text-center font-display text-[11px] uppercase tracking-[0.2em] text-star-olympian transition-all hover:border-star-olympian/65 hover:bg-star-olympian/[0.12] hover:text-aether hover:shadow-[0_0_26px_rgba(252,211,77,0.12)]"
-          >
-            Step into the figure
-          </Link>
         </div>
       </div>
     </aside>
