@@ -9,15 +9,17 @@ import { decodeDoor, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { LoomCamera, MAX_SCALE, WEB_MAX_SCALE } from '@/features/art/loomCamera';
-import { LoomWeb } from '@/features/art/loomWeb';
+import { LIFT, LoomWeb } from '@/features/art/loomWeb';
 import { useLoomStore } from '@/features/art/store';
 import { useGalaxyStore } from '@/features/galaxy/store';
-import { useIsMobile } from '@/lib/useIsMobile';
+import { MOBILE_TAP_SLOP, useIsMobile } from '@/lib/useIsMobile';
 import type { LoomDoorData } from '@/types/art';
+import { LoomChips } from './LoomChips';
 import { LoomHires } from './LoomHires';
 import { LoomLabels } from './LoomLabels';
 import { LoomLifted } from './LoomLifted';
 import { LoomRail } from './LoomRail';
+import { LoomSheet } from './LoomSheet';
 import { LoomScene } from './LoomScene';
 import { paintSky } from './loomTextures';
 import { WorkHoverCard } from './WorkHoverCard';
@@ -35,6 +37,10 @@ const READ_SCALE = 46;
 /** Radians of swing per pixel of drag, while the cloth is turned or a web is held. */
 const ORBIT_YAW_PER_PX = 0.0042;
 const ORBIT_PITCH_PER_PX = 0.0032;
+/** The phone's thread sheet at its peek, as a share of the screen's height. */
+const SHEET_PEEK = 0.3;
+/** A fling is read from the last this-many milliseconds of a drag. */
+const FLING_WINDOW_MS = 100;
 /** Past this zoom the title and the rail step aside. */
 const QUIET_ZOOM = 1.9;
 
@@ -123,7 +129,10 @@ export function LoomView() {
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   );
   const door = useMemo(() => (data ? decodeDoor(data, phone) : null), [data, phone]);
-  const web = useMemo(() => (door ? new LoomWeb(door) : null), [door]);
+  const web = useMemo(
+    () => (door ? new LoomWeb(door, phone ? LIFT.phone : LIFT.desktop) : null),
+    [door, phone],
+  );
 
   const root = useRef<HTMLDivElement>(null);
   const surface = useRef<HTMLDivElement>(null);
@@ -138,6 +147,10 @@ export function LoomView() {
     pitch: number;
     moved: number;
   } | null>(null);
+  /** Every pointer down on the cloth, so two fingers can pinch. */
+  const touches = useRef(new Map<number, { x: number; y: number }>());
+  const pinch = useRef<{ distance: number; x: number; y: number } | null>(null);
+  const trail = useRef<{ t: number; x: number; y: number }[]>([]);
   const pushedPlate = useRef(false);
   const flight = useRef<number | undefined>(undefined);
   const plateReturn = useRef<{ x: number; y: number; s: number } | null>(null);
@@ -241,9 +254,9 @@ export function LoomView() {
       }
       web.pull(work.index, along);
       store.setWeb(work.index, along);
-      rig.holdWeb(work.x + work.w / 2, work.row + work.h / 2);
+      rig.holdWeb(work.x + work.w / 2, web.middle, phone ? window.innerHeight * SHEET_PEEK : 0);
     },
-    [rig, web],
+    [rig, web, phone],
   );
 
   const release = useCallback(() => {
@@ -303,6 +316,32 @@ export function LoomView() {
     },
     [door, rig],
   );
+
+  /** The lifted work a tap meant, topmost first. Only a phone's taps reach the surface
+   *  through them; elsewhere they take their own clicks. */
+  const liftedAt = (screenX: number, screenY: number): number | null => {
+    let found: { index: number; z: number } | null = null;
+    for (const button of root.current?.querySelectorAll<HTMLButtonElement>('button[data-work]') ?? []) {
+      const box = button.getBoundingClientRect();
+      if (screenX < box.left || screenX > box.right || screenY < box.top || screenY > box.bottom) continue;
+      // A work sinking back to the cloth is no longer there to take a tap.
+      if (Number(button.style.opacity) < 0.5) continue;
+      const z = Number(button.style.zIndex);
+      if (!found || z > found.z) found = { index: Number(button.dataset.work), z };
+    }
+    return found?.index ?? null;
+  };
+
+  const beginDrag = (x: number, y: number, moved: number) => {
+    drag.current = { x, y, fromX: rig.goal.x, fromY: rig.goal.y, yaw: rig.goal.yaw, pitch: rig.goal.pitch, moved };
+    trail.current = [{ t: performance.now(), x, y }];
+  };
+
+  /** Where two fingers are: how far apart, and the point between them. */
+  const spread = () => {
+    const [a, b] = [...touches.current.values()];
+    return { distance: Math.max(1, Math.hypot(b.x - a.x, b.y - a.y)), x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+  };
 
   const walk = (event: React.KeyboardEvent) => {
     if (!door) return;
@@ -393,41 +432,87 @@ export function LoomView() {
         onKeyDown={walk}
         onPointerDown={(event) => {
           event.currentTarget.setPointerCapture(event.pointerId);
-          drag.current = {
-            x: event.clientX,
-            y: event.clientY,
-            fromX: rig.goal.x,
-            fromY: rig.goal.y,
-            yaw: rig.goal.yaw,
-            pitch: rig.goal.pitch,
-            moved: 0,
-          };
+          touches.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+          rig.stopFling();
           useLoomStore.getState().setHover(null);
+          if (touches.current.size === 1) beginDrag(event.clientX, event.clientY, 0);
+          if (touches.current.size === 2) {
+            pinch.current = spread();
+            // Two fingers never make a tap.
+            if (drag.current) drag.current.moved = Infinity;
+          }
         }}
         onPointerMove={(event) => {
+          if (touches.current.has(event.pointerId)) {
+            touches.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+          }
+          const pinched = pinch.current;
+          if (pinched && touches.current.size >= 2) {
+            const next = spread();
+            const max = useLoomStore.getState().focus === null ? MAX_SCALE : WEB_MAX_SCALE;
+            rig.zoomAt(next.distance / pinched.distance, next.x - origin.current.left, next.y - origin.current.top, max);
+            rig.nudge(next.x - pinched.x, next.y - pinched.y);
+            pinch.current = next;
+            return;
+          }
           const held = drag.current;
           if (held) {
             const dx = event.clientX - held.x;
             const dy = event.clientY - held.y;
             held.moved = Math.max(held.moved, Math.hypot(dx, dy));
             if (held.moved > DRAG_SLOP) event.currentTarget.style.cursor = 'grabbing';
+            const now = performance.now();
+            trail.current = [...trail.current.filter((sample) => now - sample.t < FLING_WINDOW_MS), { t: now, x: event.clientX, y: event.clientY }];
             // A held web or the turned cloth swings; the flat cloth slides.
             const { focus, face } = useLoomStore.getState();
             if (focus !== null || face) rig.orbitTo(held.yaw + dx * ORBIT_YAW_PER_PX, held.pitch + dy * ORBIT_PITCH_PER_PX);
             else rig.panBy(held.fromX, held.fromY, dx, dy);
             return;
           }
+          // Hover is the mouse's: a finger only touches what it means to pull.
+          if (event.pointerType !== 'mouse') return;
           const work = workAt(event.clientX, event.clientY);
           walked.current = null;
           event.currentTarget.style.cursor = work ? 'pointer' : 'grab';
           useLoomStore.getState().setHover(work ? { index: work.index, x: event.clientX, y: event.clientY } : null);
         }}
         onPointerLeave={() => useLoomStore.getState().setHover(null)}
+        onPointerCancel={(event) => {
+          touches.current.delete(event.pointerId);
+          pinch.current = null;
+          drag.current = null;
+        }}
         onPointerUp={(event) => {
-          const clicked = drag.current !== null && drag.current.moved <= DRAG_SLOP;
+          const pinching = touches.current.size >= 2;
+          touches.current.delete(event.pointerId);
+          if (pinching) {
+            pinch.current = null;
+            // The finger left behind carries on dragging, never as a tap.
+            const [rest] = [...touches.current.values()];
+            if (rest) beginDrag(rest.x, rest.y, Infinity);
+            else drag.current = null;
+            return;
+          }
+          const held = drag.current;
           drag.current = null;
           event.currentTarget.style.cursor = 'grab';
-          if (!clicked) return;
+          if (!held) return;
+          if (held.moved > (event.pointerType === 'mouse' ? DRAG_SLOP : MOBILE_TAP_SLOP)) {
+            // A released scroll glides on.
+            const { focus, face } = useLoomStore.getState();
+            const samples = trail.current;
+            const span = samples.length > 1 ? (samples[samples.length - 1].t - samples[0].t) / 1000 : 0;
+            if (event.pointerType !== 'mouse' && focus === null && !face && rig.scrolling && span > 0.01) {
+              const last = samples[samples.length - 1];
+              rig.flingFrom((last.x - samples[0].x) / span, (last.y - samples[0].y) / span);
+            }
+            return;
+          }
+          const lifted = liftedAt(event.clientX, event.clientY);
+          if (lifted !== null) {
+            pick.current(lifted);
+            return;
+          }
           const work = workAt(event.clientX, event.clientY);
           if (!work) {
             release();
@@ -435,6 +520,11 @@ export function LoomView() {
           }
           if (!useLoomStore.getState().face && rig.s > READ_SCALE) openPlate(work);
           else pull(work);
+        }}
+        onTouchEnd={(event) => {
+          // A tap is done on pointerup; the click a finger leaves behind would land on
+          // whatever that tap just opened under it, like the sheet.
+          if (event.cancelable) event.preventDefault();
         }}
         onDoubleClick={() => {
           release();
@@ -450,24 +540,40 @@ export function LoomView() {
       {door && web && (
         <>
           <LoomHires door={door} rig={rig} subscribe={subscribe} />
-          <LoomLifted door={door} web={web} rig={rig} subscribe={subscribe} onPick={pick} />
+          <LoomLifted door={door} web={web} rig={rig} subscribe={subscribe} onPick={pick} phone={phone} />
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cosmos-deep/90 to-transparent opacity-0 transition-opacity duration-300 group-data-[view=quiet]/loom:opacity-100"
           />
           <LoomLabels door={door} rig={rig} subscribe={subscribe} />
           <LoomTitle />
-          <LoomRail
-            door={door}
-            onTurn={() => turn(!useLoomStore.getState().face)}
-            onAlong={(thread) => {
-              if (web.focus !== null) pull(door.works[web.focus], thread);
-            }}
-            onOpen={() => {
-              if (web.focus !== null) openPlate(door.works[web.focus]);
-            }}
-            onRelease={release}
-          />
+          {phone ? (
+            <>
+              <LoomChips onTurn={() => turn(!useLoomStore.getState().face)} />
+              <LoomSheet
+                door={door}
+                onAlong={(thread) => {
+                  if (web.focus !== null) pull(door.works[web.focus], thread);
+                }}
+                onOpen={() => {
+                  if (web.focus !== null) openPlate(door.works[web.focus]);
+                }}
+                onRelease={release}
+              />
+            </>
+          ) : (
+            <LoomRail
+              door={door}
+              onTurn={() => turn(!useLoomStore.getState().face)}
+              onAlong={(thread) => {
+                if (web.focus !== null) pull(door.works[web.focus], thread);
+              }}
+              onOpen={() => {
+                if (web.focus !== null) openPlate(door.works[web.focus]);
+              }}
+              onRelease={release}
+            />
+          )}
           <WorkHoverCard door={door} />
           {plateWork && <WorkPlate work={plateWork} onClose={closePlate} onStep={stepPlate} />}
           <WorkSearchOverlay door={door} onSelect={openPlate} />

@@ -4,13 +4,32 @@ import type { LoomDoor, LoomWork } from './door';
 /** The web of the Loom (docs/LOOM_PLAN.md §7): a pulled work rises out of the cloth
  *  with its nearest neighbours along each of its threads, and the threads light. */
 
-/** At most this many neighbours rise with a pulled work. */
-export const LIFT_MAX = 24;
-const FOCUS_SIZE = 11.5;
-const NEIGHBOUR_SIZE = 4.4;
+/** How a web rises: the pulled work with at most `max` neighbours, `focusSize` and
+ *  `neighbourSize` cells on their long sides, kept near their places on the cloth. A
+ *  phone's screen holds fewer and is narrow, so there the pulled work comes to the
+ *  middle and its neighbours gather in rows around it, earlier above and later below,
+ *  as many as `room` holds. */
+export interface LiftShape {
+  max: number;
+  focusSize: number;
+  neighbourSize: number;
+  room: { width: number; height: number } | null;
+}
+export const LIFT = {
+  desktop: { max: 24, focusSize: 11.5, neighbourSize: 4.4, room: null },
+  phone: { max: 12, focusSize: 9.5, neighbourSize: 3.6, room: { width: 21, height: 28 } },
+} satisfies Record<string, LiftShape>;
+/** Gathered, the web rises as one layer: its rows stand 18 to 24 cells out of the
+ *  cloth, just behind the held work, which looms this much larger beside them. */
+const NEARER = 1.07;
+/** A gathered web's height in cells, and about how far out of the cloth its rows
+ *  stand, which makes them loom larger: the camera frames it by both. */
+export const GATHERED = { rows: LIFT.phone.room.height, depth: 22 };
 const SPREAD_PASSES = 70;
 /** Out of the cloth, in cells: the held work stands furthest forward. */
 const FOCUS_DEPTH = 26;
+/** Gathered, the room kept between two frames, in cells. */
+const GAP = 0.5;
 
 export interface LiftedWork {
   work: number;
@@ -29,27 +48,56 @@ const centreX = (work: LoomWork) => work.x + work.w / 2;
 const centreY = (work: LoomWork) => work.row + work.h / 2;
 
 /** The held work and its nearest neighbours in time along each thread (or along one),
- *  spread apart just enough to read and kept near their place on the cloth. Pure: the
- *  same pull always lifts the same web. `reach` is how far along a thread it went. */
-export function liftWeb(door: LoomDoor, focus: number, along: number | null): { reach: number; lifted: LiftedWork[] } {
+ *  spread apart just enough to read and kept near their place on the cloth, or on a
+ *  phone gathered around it. Pure: the same pull always lifts the same web. `reach` is how far along a thread it went,
+ *  `middle` the row the risen web is centred on. */
+export function liftWeb(
+  door: LoomDoor,
+  focus: number,
+  along: number | null,
+  shape: LiftShape = LIFT.desktop,
+): { reach: number; middle: number; lifted: LiftedWork[] } {
   const threads = along === null ? door.threadsOf[focus] : [along];
   const chosen = new Set<number>();
   let reach = 1;
-  for (let ring = 1; chosen.size < LIFT_MAX && ring < 150; ring++) {
+  for (let ring = 1; chosen.size < shape.max && ring < 150; ring++) {
     reach = ring + 1;
     for (const thread of threads) {
       const list = door.threads[thread].works;
       const at = list.indexOf(focus);
       for (const neighbour of [list[at - ring], list[at + ring]]) {
-        if (neighbour !== undefined && neighbour !== focus && chosen.size < LIFT_MAX) chosen.add(neighbour);
+        if (neighbour !== undefined && neighbour !== focus && chosen.size < shape.max) chosen.add(neighbour);
       }
     }
   }
 
+  if (shape.room) return { reach, ...gatherWeb(door, focus, [...chosen], shape, shape.room) };
+  const held = new Set(door.threadsOf[focus]);
+  return {
+    reach,
+    middle: centreY(door.works[focus]),
+    lifted: spreadWeb(door, focus, [...chosen], shape).map((p) => {
+      const shared = door.threadsOf[p.work].filter((thread) => held.has(thread)).length;
+      const z = p.work === focus ? FOCUS_DEPTH : 9 + 6 * Math.max(0, shared - 1) + 7 * hash01(p.work);
+      return { ...p, z };
+    }),
+  };
+}
+
+interface Placed {
+  work: number;
+  x: number;
+  y: number;
+  size: number;
+}
+
+/** Spread the web over the cloth: each work stays near its place, pushed off its
+ *  neighbours until all can be read. */
+function spreadWeb(door: LoomDoor, focus: number, chosen: number[], shape: LiftShape): Placed[] {
   const { width, height } = door.layout;
   const placed = [focus, ...chosen].map((index) => {
     const work = door.works[index];
-    return { work: index, x: centreX(work), y: centreY(work), size: index === focus ? FOCUS_SIZE : NEIGHBOUR_SIZE };
+    return { work: index, x: centreX(work), y: centreY(work), size: index === focus ? shape.focusSize : shape.neighbourSize };
   });
   for (let pass = 0; pass < SPREAD_PASSES; pass++) {
     for (let a = 0; a < placed.length; a++) {
@@ -80,16 +128,77 @@ export function liftWeb(door: LoomDoor, focus: number, along: number | null): { 
       p.y = clamp(p.y, 3, height - 3);
     }
   }
+  return placed;
+}
 
-  const held = new Set(door.threadsOf[focus]);
-  return {
-    reach,
-    lifted: placed.map((p) => {
-      const shared = door.threadsOf[p.work].filter((thread) => held.has(thread)).length;
-      const z = p.work === focus ? FOCUS_DEPTH : 9 + 6 * Math.max(0, shared - 1) + 7 * hash01(p.work);
-      return { ...p, z };
-    }),
-  };
+/** A lifted work's frame, in cells, shaped as LoomLifted draws it. */
+function frameOf(work: LoomWork, size: number) {
+  const root = Math.sqrt(clamp(work.width / work.height, 0.62, 1.7));
+  return { w: size * root, h: size / root };
+}
+
+interface Row {
+  works: number[];
+  width: number;
+  height: number;
+}
+
+/** Gather the web on a narrow screen: the held work in the middle, earlier works in
+ *  rows above it and later ones below, nearest along the threads first and each row
+ *  in the cloth's order across. A neighbour the room cannot hold stays on the cloth. */
+function gatherWeb(
+  door: LoomDoor,
+  focus: number,
+  chosen: number[],
+  { focusSize, neighbourSize }: LiftShape,
+  room: { width: number; height: number },
+): { middle: number; lifted: LiftedWork[] } {
+  const midline = door.layout.width / 2;
+  const heldY = centreY(door.works[focus]);
+  const held = frameOf(door.works[focus], focusSize * NEARER);
+  const above: Row[] = [];
+  const below: Row[] = [];
+  let height = held.h;
+  for (const index of chosen) {
+    const rows = centreY(door.works[index]) < heldY ? above : below;
+    const { w, h } = frameOf(door.works[index], neighbourSize);
+    const row = rows.at(-1);
+    const taller = row ? Math.max(0, h - row.height) : 0;
+    if (row && row.width + GAP + w <= room.width && height + taller <= room.height) {
+      row.works.push(index);
+      row.width += GAP + w;
+      row.height += taller;
+      height += taller;
+      continue;
+    }
+    if (height + GAP + h > room.height) continue;
+    rows.push({ works: [index], width: w, height: h });
+    height += GAP + h;
+  }
+
+  const threads = new Set(door.threadsOf[focus]);
+  const lifted: LiftedWork[] = [{ work: focus, x: midline, y: heldY, size: focusSize, z: FOCUS_DEPTH }];
+  const extent = (rows: Row[]) => rows.reduce((sum, row) => sum + GAP + row.height, 0);
+  for (const [rows, side] of [
+    [above, -1],
+    [below, 1],
+  ] as const) {
+    let edge = held.h / 2;
+    for (const row of rows) {
+      const y = heldY + side * (edge + GAP + row.height / 2);
+      edge += GAP + row.height;
+      let x = midline - row.width / 2;
+      for (const index of row.works.sort((a, b) => centreX(door.works[a]) - centreX(door.works[b]))) {
+        const { w } = frameOf(door.works[index], neighbourSize);
+        // Risen nearly level, so a row still reads as a row through the eye's nearness.
+        const shared = door.threadsOf[index].filter((thread) => threads.has(thread)).length;
+        const z = 18 + 2 * Math.min(2, shared - 1) + 2 * hash01(index);
+        lifted.push({ work: index, x: x + w / 2, y, size: neighbourSize, z });
+        x += w + GAP;
+      }
+    }
+  }
+  return { middle: heldY + (extent(below) - extent(above)) / 2, lifted };
 }
 
 export interface WebItem {
@@ -110,6 +219,8 @@ export interface WebView {
   saga: SagaId | null;
   /** A thread named in the rail: it isolates while the pointer is on it. */
   peek: number | null;
+  /** On a phone the back draws only the threads that cross the tear. */
+  sparse: boolean;
 }
 
 /** The web as it moves: lifted works easing in and out, and every thread easing toward
@@ -119,6 +230,8 @@ export class LoomWeb {
   focus: number | null = null;
   only: number | null = null;
   reach = 8;
+  /** The row the held web is centred on. */
+  middle = 0;
   readonly items = new Map<number, WebItem>();
   /** Per work: offset along the cloth and height out of it, in cells. */
   readonly lift: Float32Array;
@@ -128,7 +241,10 @@ export class LoomWeb {
   private readonly now: Float32Array;
   private touched = true;
 
-  constructor(private readonly door: LoomDoor) {
+  constructor(
+    private readonly door: LoomDoor,
+    private readonly shape: LiftShape = LIFT.desktop,
+  ) {
     this.lift = new Float32Array(door.works.length * 4);
     this.state = new Uint8Array(door.threads.length * 4);
     this.goal = new Float32Array(door.threads.length * 2);
@@ -136,10 +252,11 @@ export class LoomWeb {
   }
 
   pull(focus: number, along: number | null) {
-    const { reach, lifted } = liftWeb(this.door, focus, along);
+    const { reach, middle, lifted } = liftWeb(this.door, focus, along, this.shape);
     this.focus = focus;
     this.only = along;
     this.reach = reach;
+    this.middle = middle;
     for (const item of this.items.values()) item.leaving = true;
     for (const placed of lifted) {
       const work = this.door.works[placed.work];
@@ -188,7 +305,7 @@ export class LoomWeb {
       let place = 0;
       let reach = 255;
       if (view.face) {
-        alpha = thread.crosses ? 0.34 : 0.11;
+        alpha = thread.crosses ? 0.34 : view.sparse ? 0 : 0.11;
         width = thread.crosses ? 0.2 : 0.15;
         if (view.saga && thread.saga !== view.saga) alpha = 0.025;
         if (focus !== null && !lit.has(n)) alpha *= 0.3;

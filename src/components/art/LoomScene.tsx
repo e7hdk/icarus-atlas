@@ -441,11 +441,12 @@ export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: L
         face: filters.face,
         saga: filters.peekSaga ?? filters.saga,
         peek: filters.peekThread,
+        sparse: phone,
       });
     };
     refresh();
     return useLoomStore.subscribe(refresh);
-  }, [door, web]);
+  }, [door, web, phone]);
 
   useFrame((_, delta) => {
     const dt = Math.min(0.05, delta);

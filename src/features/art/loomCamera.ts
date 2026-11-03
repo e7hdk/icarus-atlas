@@ -1,5 +1,7 @@
 import type { PerspectiveCamera } from 'three';
 import type { LoomDoorLayout } from '@/types/art';
+import { LOOM_WIDTH } from './loom';
+import { GATHERED } from './loomWeb';
 
 /** The Loom's camera (docs/LOOM_PLAN.md §6): `s` is CSS pixels per cell at the cloth,
  *  (x, y) the cell it looks at, and yaw and pitch orbit that cell. Hit tests are a
@@ -18,6 +20,15 @@ const BELOW_ROWS = 3.5;
 const MARGIN = { left: 236, right: 214, top: 74, bottom: 24 };
 const NARROW_MARGIN = { left: 16, right: 16, top: 74, bottom: 24 };
 export const NARROW_WIDTH = 1080;
+/** The phone's narrow cloth fits the screen's width and scrolls down through time;
+ *  the top margin hangs the beam below the pinned era, the bottom one keeps the last
+ *  rows clear of the chip strip. A held web stands below the bar. */
+const SCROLL_MARGIN = { side: 10, top: 92, bottom: 96, bar: 60 };
+/** How fast a flung cloth comes to rest, per second. */
+const FLING_FRICTION = 3.2;
+/** How far a phone's held web tips toward the eye, in radians. It does not swing
+ *  sideways: the narrow cloth would slide off the screen's edge. */
+const PHONE_WEB_PITCH = 0.06;
 
 export const MAX_SCALE = 460;
 /** A pulled web is seen whole: the zoom stops short of reading distance. */
@@ -67,6 +78,8 @@ export class LoomCamera {
   moving = true;
   /** Turned to the back of the cloth. */
   face = false;
+  /** The narrow cloth, which scrolls instead of fitting whole. */
+  scrolling = false;
 
   private tiltX = 0;
   private tiltY = 0;
@@ -79,13 +92,38 @@ export class LoomCamera {
   private clip = new Float32Array(16);
   private clothWidth = 1;
   private clothHeight = 1;
+  /** Cells per second, while a flung cloth glides. */
+  private fling = { x: 0, y: 0 };
+  /** Where a scrolling cloth was when a web was pulled, to return there. */
+  private beforeWeb: { x: number; y: number; s: number } | null = null;
+  /** How far out of the cloth the view turns about, in cells. A phone's held web
+   *  turns about itself, with the cloth swinging behind it: turned about the cloth it
+   *  would sweep off the narrow screen. */
+  private pivot = 0;
+  private pivotGoal = 0;
 
-  /** Fit the whole cloth, beam to weights, between the rails. */
+  /** Fit the whole cloth, beam to weights, between the rails; the narrow cloth fits
+   *  its width instead, and a resize leaves it where it was scrolled to. */
   fit(layout: LoomDoorLayout, viewWidth: number, viewHeight: number, snap: boolean) {
     this.viewWidth = viewWidth;
     this.viewHeight = viewHeight;
     this.clothWidth = layout.width;
     this.clothHeight = layout.height;
+    this.scrolling = layout.width < LOOM_WIDTH.desktop;
+    if (this.scrolling) {
+      const before = this.home.s;
+      const s = (viewWidth - SCROLL_MARGIN.side * 2) / layout.width;
+      this.home = { x: layout.width / 2, y: -ABOVE_ROWS + (viewHeight / 2 - SCROLL_MARGIN.top) / s, s };
+      if (snap) {
+        this.goHome();
+        Object.assign(this, { x: this.goal.x, y: this.goal.y, s: this.goal.s });
+      } else {
+        this.goal.s *= s / before;
+        this.keepInView();
+      }
+      this.solve();
+      return;
+    }
     const margin = viewWidth <= NARROW_WIDTH ? NARROW_MARGIN : MARGIN;
     const availableWidth = viewWidth - margin.left - margin.right;
     const availableHeight = viewHeight - margin.top - margin.bottom;
@@ -117,8 +155,28 @@ export class LoomCamera {
     this.goHome();
   }
 
-  /** Stand back from a pulled work, swung a little toward the middle of the cloth. */
-  holdWeb(x: number, y: number) {
+  /** Stand back from a web pulled at (x, y), swung a little toward the middle of the
+   *  cloth. A scrolling cloth tips its gathered web, centred on row `y`, to face the
+   *  room between the bar and the `bottomInset` pixels a sheet covers, and holds it
+   *  whole there. */
+  holdWeb(x: number, y: number, bottomInset = 0) {
+    if (this.scrolling) {
+      this.beforeWeb ??= { x: this.goal.x, y: this.goal.y, s: this.goal.s };
+      const room = this.viewHeight - SCROLL_MARGIN.bar - bottomInset;
+      // The web stands out of the cloth, so it looms larger than its cells and shifts
+      // as the cloth tips: fit and aim it with that nearness counted. At a scale s the
+      // eye is k / s cells away, and a row d cells out looms k / (k - d s) larger.
+      const k = this.viewHeight / 2 / Math.tan(FOV / 2);
+      const s = Math.min(this.home.s, (room * k) / (GATHERED.rows * k + room * GATHERED.depth));
+      const nearer = k / (k - GATHERED.depth * s);
+      this.goal.x = this.clothWidth / 2;
+      this.goal.y = y + (bottomInset - SCROLL_MARGIN.bar) / 2 / s / nearer;
+      this.goal.s = s;
+      this.goal.yaw = 0;
+      this.goal.pitch = PHONE_WEB_PITCH;
+      this.pivotGoal = GATHERED.depth;
+      return;
+    }
     this.goal.x = this.home.x + (x - this.clothWidth / 2) * 0.22;
     this.goal.y = this.home.y + (y - this.clothHeight / 2) * 0.2;
     this.goal.s = this.home.s;
@@ -126,10 +184,17 @@ export class LoomCamera {
     this.goal.pitch = 0.09;
   }
 
-  /** Let a web go: square to the face, or to the back's resting angle. */
+  /** Let a web go: square to the face, or to the back's resting angle. A scrolling
+   *  cloth goes back to where it was read, not to its top. */
   letGo() {
     this.goal.yaw = this.face ? BACK_YAW : 0;
     this.goal.pitch = this.face ? BACK_PITCH : 0;
+    this.pivotGoal = 0;
+    if (this.scrolling && this.beforeWeb) {
+      Object.assign(this.goal, this.beforeWeb);
+      this.beforeWeb = null;
+      return;
+    }
     this.goHome();
   }
 
@@ -149,6 +214,39 @@ export class LoomCamera {
   panBy(fromX: number, fromY: number, dx: number, dy: number) {
     this.goal.x = fromX - (this.across * dx) / this.s;
     this.goal.y = fromY - dy / this.s;
+    this.keepInView();
+  }
+
+  /** Move the view by a screen distance, as two fingers do while they pinch. */
+  nudge(dx: number, dy: number) {
+    this.goal.x -= (this.across * dx) / this.s;
+    this.goal.y -= dy / this.s;
+    this.keepInView();
+  }
+
+  /** Let a released scroll glide on, from a pointer speed in pixels per second. */
+  flingFrom(vx: number, vy: number) {
+    this.fling = { x: (-this.across * vx) / this.s, y: -vy / this.s };
+  }
+
+  stopFling() {
+    this.fling = { x: 0, y: 0 };
+  }
+
+  /** A scrolling cloth never leaves the screen: across, it stays filled or centred;
+   *  down, it runs from the beam to the weights. A held web is framed on its own and
+   *  may stand past either end. */
+  private keepInView() {
+    if (!this.scrolling || this.beforeWeb) return;
+    const halfWidth = this.viewWidth / 2 / this.goal.s;
+    const halfHeight = this.viewHeight / 2 / this.goal.s;
+    this.goal.x =
+      halfWidth * 2 >= this.clothWidth
+        ? this.clothWidth / 2
+        : Math.min(this.clothWidth - halfWidth + 1, Math.max(halfWidth - 1, this.goal.x));
+    const top = -ABOVE_ROWS - SCROLL_MARGIN.top / this.goal.s + halfHeight;
+    const bottom = this.clothHeight + FRINGE_ROWS + BELOW_ROWS + SCROLL_MARGIN.bottom / this.goal.s - halfHeight;
+    this.goal.y = bottom <= top ? (top + bottom) / 2 : Math.min(bottom, Math.max(top, this.goal.y));
   }
 
   flyTo(x: number, y: number, s: number) {
@@ -168,18 +266,31 @@ export class LoomCamera {
     this.goal.x += this.across * (dx / this.goal.s - dx / s);
     this.goal.y += dy / this.goal.s - dy / s;
     this.goal.s = s;
+    this.keepInView();
   }
 
   /** Advance one frame. `pointerX` and `pointerY` run -1..1 across the view. */
   tick(dt: number, pointerX: number, pointerY: number, sway: Sway) {
+    if (Math.abs(this.fling.x) + Math.abs(this.fling.y) > 0.3) {
+      const { x, y } = this.goal;
+      this.goal.x += this.fling.x * dt;
+      this.goal.y += this.fling.y * dt;
+      this.keepInView();
+      const decay = Math.exp(-dt * FLING_FRICTION);
+      // At an edge the glide stops instead of pressing against it.
+      this.fling.x = this.goal.x === x ? 0 : this.fling.x * decay;
+      this.fling.y = this.goal.y === y ? 0 : this.fling.y * decay;
+    }
     const ease = 1 - Math.exp(-dt * 7.5);
     this.moving =
       Math.abs(this.goal.s - this.s) > 0.002 * this.s ||
       Math.abs(this.goal.x - this.x) > 0.002 ||
       Math.abs(this.goal.y - this.y) > 0.002 ||
+      Math.abs(this.pivotGoal - this.pivot) > 0.01 ||
       Math.abs(this.tiltX) + Math.abs(this.tiltY) > 0.0002;
     this.x += (this.goal.x - this.x) * ease;
     this.y += (this.goal.y - this.y) * ease;
+    this.pivot += (this.pivotGoal - this.pivot) * ease;
     // In log space, so the flight feels even from cloth to canvas.
     this.s = Math.exp(Math.log(this.s) + (Math.log(this.goal.s) - Math.log(this.s)) * ease);
     this.yaw += (this.goal.yaw - this.yaw) * (1 - Math.exp(-dt * 3.1));
@@ -197,12 +308,13 @@ export class LoomCamera {
     this.distance = this.viewHeight / 2 / (this.s * tan);
     const yaw = this.yaw + this.tiltX;
     const pitch = this.pitch + this.tiltY;
-    const { distance } = this;
-    this.target = [this.x, -this.y, 0];
+    // Square on, the eye stands `distance` from the cloth wherever the pivot is.
+    const reach = this.distance - this.pivot;
+    this.target = [this.x, -this.y, this.pivot];
     this.eye = [
-      this.x + distance * Math.sin(yaw) * Math.cos(pitch),
-      -this.y + distance * Math.sin(pitch),
-      distance * Math.cos(yaw) * Math.cos(pitch),
+      this.x + reach * Math.sin(yaw) * Math.cos(pitch),
+      -this.y + reach * Math.sin(pitch),
+      this.pivot + reach * Math.cos(yaw) * Math.cos(pitch),
     ];
     this.forward = unit(sub(this.target, this.eye));
     this.right = unit(cross(this.forward, [0, 1, 0]));

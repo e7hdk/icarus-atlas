@@ -10,7 +10,7 @@ const FOCUS_IMAGE = 500;
 const NEIGHBOUR_IMAGE = 250;
 
 const LIFTED_CLASS =
-  'pointer-events-auto absolute left-0 top-0 cursor-pointer bg-[#0b0718] will-change-transform shadow-[0_0_0_1.5px_rgba(252,211,77,.72),0_14px_38px_rgba(5,2,15,.72)] hover:shadow-[0_0_0_2px_#fde68a,0_18px_44px_rgba(5,2,15,.8)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-star-olympian data-[focus=true]:shadow-[0_0_0_2px_#fcd34d,0_0_0_7px_rgba(5,2,15,.82),0_0_0_8px_rgba(252,211,77,.42),0_34px_80px_rgba(0,0,0,.78)]';
+  'absolute left-0 top-0 cursor-pointer bg-[#0b0718] will-change-transform shadow-[0_0_0_1.5px_rgba(252,211,77,.72),0_14px_38px_rgba(5,2,15,.72)] hover:shadow-[0_0_0_2px_#fde68a,0_18px_44px_rgba(5,2,15,.8)] focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-4 focus-visible:outline-star-olympian data-[focus=true]:shadow-[0_0_0_2px_#fcd34d,0_0_0_7px_rgba(5,2,15,.82),0_0_0_8px_rgba(252,211,77,.42),0_34px_80px_rgba(0,0,0,.78)]';
 
 interface Shown {
   button: HTMLButtonElement;
@@ -19,13 +19,16 @@ interface Shown {
 }
 
 /** The pulled web's works, out of the cloth. DOM images, so they stay crisp at any
- *  size and take ordinary hover and click; each frame projects their 3D point. */
+ *  size and take ordinary hover and click; each frame projects their 3D point. On a
+ *  phone they let every touch through to the cloth's surface, so a swing or a pinch
+ *  may start on them, and the surface finds the one a tap meant by `data-work`. */
 export function LoomLifted({
   door,
   web,
   rig,
   subscribe,
   onPick,
+  phone,
 }: {
   door: LoomDoor;
   web: LoomWeb;
@@ -33,6 +36,7 @@ export function LoomLifted({
   subscribe: (listener: () => void) => () => void;
   /** A lifted work was clicked: the held one opens its plate, a neighbour is pulled. */
   onPick: RefObject<(index: number) => void>;
+  phone: boolean;
 }) {
   const layer = useRef<HTMLDivElement>(null);
 
@@ -42,16 +46,18 @@ export function LoomLifted({
       const work = door.works[index];
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = LIFTED_CLASS;
+      button.className = phone ? LIFTED_CLASS : `pointer-events-auto ${LIFTED_CLASS}`;
+      button.dataset.work = String(index);
       button.setAttribute('aria-label', `${work.title}, ${work.artist}, ${work.year}`);
       const image = new Image();
       image.alt = '';
       image.decoding = 'async';
       image.className = 'block h-full w-full object-cover';
       button.append(image);
-      button.addEventListener('pointerenter', (event) =>
-        useLoomStore.getState().setHover({ index, x: event.clientX, y: event.clientY }),
-      );
+      // A finger has no hover: on touch the card would only flash before the tap lands.
+      button.addEventListener('pointerenter', (event) => {
+        if (event.pointerType === 'mouse') useLoomStore.getState().setHover({ index, x: event.clientX, y: event.clientY });
+      });
       button.addEventListener('pointerleave', () => useLoomStore.getState().setHover(null));
       button.addEventListener('click', () => onPick.current(index));
       container.append(button);
@@ -101,7 +107,7 @@ export function LoomLifted({
       for (const entry of shown.values()) entry.button.remove();
       shown.clear();
     };
-  }, [door, web, rig, subscribe, onPick]);
+  }, [door, web, rig, subscribe, onPick, phone]);
 
   return <div ref={layer} className="pointer-events-none absolute inset-0 z-[9] overflow-hidden" />;
 }

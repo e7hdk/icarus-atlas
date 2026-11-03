@@ -11,7 +11,7 @@ import { weightPositions } from './LoomScene';
 const ERA_ON_IMAGES =
   'group-data-[view=quiet]/loom:rounded-full group-data-[view=quiet]/loom:bg-cosmos-deep/65 group-data-[view=quiet]/loom:px-[9px] group-data-[view=quiet]/loom:pb-[3px] group-data-[view=quiet]/loom:pt-0.5 group-data-[view=quiet]/loom:text-aether-muted group-data-[view=quiet]/loom:backdrop-blur-[8px]';
 
-const WEIGHT_LABEL: Record<SagaId, string> = {
+export const WEIGHT_LABEL: Record<SagaId, string> = {
   primordial: 'Primordials',
   titan: 'Titans',
   olympian: 'Olympians',
@@ -27,8 +27,13 @@ const WEIGHT_LABEL: Record<SagaId, string> = {
   heroic: 'Other tales',
 };
 
+/** Where the era being read is pinned on a scrolling cloth: under the bar, at the left. */
+const PINNED_ERA = { x: 12, y: 62 };
+
 /** The two things pinned to the cloth from outside it: the era rail, which sticks to
- *  the screen's edge as you zoom, and the clay weights, one saga each. */
+ *  the screen's edge as you zoom, and the clay weights, one saga each. On a phone the
+ *  rail becomes the one era being read, and the weights hang unlabelled at the warp's
+ *  end while a chip strip does their work. */
 export function LoomLabels({
   door,
   rig,
@@ -68,7 +73,8 @@ export function LoomLabels({
       // Mid-turn the cloth is edge-on and its labels would float free of it.
       const square = Math.min(1, Math.max(0, (Math.abs(Math.cos(rig.yaw)) - 0.55) / 0.3));
       const held = useLoomStore.getState().focus !== null;
-      const nowY = rig.viewHeight / 2;
+      const pinned = rig.scrolling;
+      const nowY = pinned ? PINNED_ERA.y + 40 : rig.viewHeight / 2;
       let current = -1;
       let best = Infinity;
       eras.current.forEach((element, index) => {
@@ -81,11 +87,21 @@ export function LoomLabels({
           best = nowY - y;
           current = index;
         }
+        if (pinned) return;
         widths[index] ??= element.offsetWidth;
         element.style.transform = `translate(${Math.max(left - 14 - widths[index], 10)}px, ${y - 8}px)`;
         const hidden = rig.viewWidth <= NARROW_WIDTH || (zoomed && (y < 66 || y > rig.viewHeight - 8));
         element.style.opacity = hidden ? '0' : String(square);
       });
+      if (pinned) {
+        const read = Math.max(0, current);
+        eras.current.forEach((element, index) => {
+          if (!element) return;
+          element.toggleAttribute('data-pinned', true);
+          element.style.transform = `translate(${PINNED_ERA.x}px, ${PINNED_ERA.y}px)`;
+          element.style.opacity = index === read && !held ? String(square) : '0';
+        });
+      }
       eras.current.forEach((element, index) => element?.toggleAttribute('data-now', zoomed && index === current));
       weights.current.forEach((element, index) => {
         if (!element) return;
@@ -106,7 +122,7 @@ export function LoomLabels({
           ref={(element) => {
             eras.current[index] = element;
           }}
-          className={`group/era absolute left-0 top-0 flex items-baseline gap-[7px] whitespace-nowrap font-body text-[12.5px] transition-colors will-change-transform data-[now]:text-aether! ${ERA_ON_IMAGES} ${
+          className={`group/era absolute left-0 top-0 flex items-baseline gap-[7px] whitespace-nowrap font-body text-[12.5px] transition-colors will-change-transform data-[now]:text-aether! data-[pinned]:rounded-full data-[pinned]:bg-cosmos-deep/75 data-[pinned]:px-[9px] data-[pinned]:pb-[3px] data-[pinned]:pt-0.5 data-[pinned]:backdrop-blur-[8px] ${ERA_ON_IMAGES} ${
             era.row === door.layout.tearTop ? 'text-star-olympian/75' : 'text-aether-faint'
           }`}
         >
@@ -118,7 +134,7 @@ export function LoomLabels({
             {era.label.toUpperCase()}
           </b>
           {era.sub && <i className="text-xs opacity-80">{era.sub}</i>}
-          <span className="h-px w-3 self-center bg-current opacity-50 group-data-[view=quiet]/loom:hidden" aria-hidden />
+          <span className="h-px w-3 self-center bg-current opacity-50 group-data-[pinned]/era:hidden group-data-[view=quiet]/loom:hidden" aria-hidden />
         </div>
       ))}
       {SAGA_ORDER.map((id, index) => (
