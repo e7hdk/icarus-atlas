@@ -84,7 +84,7 @@ function LoomSky() {
   return <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full" />;
 }
 
-function LoomTitle() {
+export function LoomTitle() {
   return (
     <section className="absolute bottom-[22px] left-7 z-10 w-[186px] transition-opacity duration-300 group-data-[view=quiet]/loom:pointer-events-none group-data-[view=quiet]/loom:opacity-0 max-[1080px]:hidden">
       <h1 className="font-display text-[25px] font-normal tracking-[0.14em] text-aether">The Loom</h1>

@@ -27,6 +27,13 @@ export function commonsThumbSteps(originalWidth: number, wanted: number): number
   return THUMB_STEPS.filter((step) => step <= wanted && step < originalWidth).reverse();
 }
 
+/** The narrowest served width of at least `wanted` pixels, or the widest narrower than
+ *  the original when none is; 0 means the original itself. */
+export function commonsThumbAtLeast(originalWidth: number, wanted: number): number {
+  const steps = THUMB_STEPS.filter((step) => step < originalWidth);
+  return steps.find((step) => step >= wanted) ?? steps[steps.length - 1] ?? 0;
+}
+
 export function commonsThumbUrl(path: string, file: string, step: number): string {
   const name = encodeURIComponent(file);
   const extension = file.toLowerCase().split('.').pop();

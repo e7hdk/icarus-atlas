@@ -10,16 +10,18 @@
  *   deterministic, and blind to the order of its input
  *   a Pattern's gold thread only ever falls
  * And of the catalogue feeding it: few works unplaced, few anchors, all dated
- * and all under a free license. Rerun `pnpm bake-art` first after a data edit.
+ * and all under a free license. And the door ships the cloth the engine weaves now.
+ * Rerun `pnpm bake-art` first after a data edit.
  */
 
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { isFreeLicense } from '../src/features/art/commons';
+import { buildDoorLayouts, type AtlasManifest } from '../src/features/art/door';
 import { buildLoomLayout, LOOM_WIDTH, TEAR_FROM, TEAR_TO, type LoomLayout } from '../src/features/art/loom';
 import { SAGA_ORDER } from '../src/features/stories/sagas';
-import type { ArtCatalogue, ArtWork } from '../src/types/art';
+import type { ArtCatalogue, ArtWork, LoomDoorData } from '../src/types/art';
 import { ART_CATALOGUE_PATH, readArtPatterns } from './lib/art-sources';
 import { measureCatalogue, measureLoom } from './lib/loom-metrics';
 
@@ -143,10 +145,23 @@ for (const work of works) {
 
 /* 10. Every work has a sprite, once the atlas exists (M14.3). */
 const manifestPath = join(import.meta.dirname, '..', 'public', 'art', 'manifest.json');
-if (existsSync(manifestPath)) {
-  const { sprites } = JSON.parse(readFileSync(manifestPath, 'utf-8')) as { sprites: Record<string, number> };
-  const missing = works.filter((work) => sprites[work.id] === undefined).length;
+const manifest = existsSync(manifestPath) ? (JSON.parse(readFileSync(manifestPath, 'utf-8')) as AtlasManifest) : null;
+if (manifest) {
+  const missing = works.filter((work) => manifest.sprites[work.id] === undefined).length;
   if (missing) console.warn(`  ⚠ ${missing} work(s) have no sprite yet: run pnpm bake-loom-atlas`);
+}
+
+/* 11. The door ships the cloth the engine weaves now. Nothing else reads the baked
+ *     file, and a bake skipped by its signature would hide a changed rule. */
+const doorPath = join(import.meta.dirname, '..', 'public', 'art', 'loom.json');
+if (manifest && existsSync(doorPath)) {
+  const shipped = JSON.parse(readFileSync(doorPath, 'utf-8')) as LoomDoorData;
+  const woven = buildDoorLayouts(works, manifest);
+  for (const key of ['desktop', 'phone'] as const) {
+    if (JSON.stringify(shipped[key]) !== JSON.stringify(woven[key])) {
+      errors.push(`public/art/loom.json: the ${key} cloth is not the one the engine weaves now: run pnpm bake-art`);
+    }
+  }
 }
 
 if (errors.length > 0) {

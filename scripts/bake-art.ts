@@ -9,6 +9,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { buildCatalogue, CATALOGUE_VERSION } from '../src/features/art/catalogue';
 import { buildDoorData, buildDoorDetails, DOOR_VERSION, type AtlasManifest } from '../src/features/art/door';
+import { LOOM_ENGINE_VERSION, LOOM_WIDTH } from '../src/features/art/loom';
 import type { Character, Relation } from '../src/types/character';
 import type { Story } from '../src/types/story';
 import { ART_CATALOGUE_PATH, readArtCommons, readArtOverrides, readArtPatterns, readShelfEntries } from './lib/art-sources';
@@ -46,6 +47,8 @@ const signature = createHash('sha1')
     JSON.stringify({
       version: CATALOGUE_VERSION,
       door: DOOR_VERSION,
+      // the weave itself, so a new width or engine rule rebakes the door's cloth
+      loom: { widths: LOOM_WIDTH, engine: LOOM_ENGINE_VERSION },
       manifest,
       entries,
       commons,
