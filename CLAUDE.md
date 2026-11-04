@@ -22,11 +22,13 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `zustand` for client state (active lens, selection, camera target)
 - `zod` for data validation; JSON data files under `data/`
 - Package manager: **pnpm**
+- Hosting: a static export (`output: "export"`) served as plain files by Cloudflare Workers Static Assets at icarusatlas.app (docs/HOSTING.md). A new dynamic route needs `generateStaticParams` and `dynamicParams = false`, a route handler or metadata image needs `dynamic = 'force-static'`, and links go through `@/components/ui/Link` (prefetching off)
 
 ## Commands
 
 - `pnpm dev` — dev server (Turbopack)
 - `pnpm build` / `pnpm lint`
+- `pnpm cf:build` / `pnpm cf:preview` / `pnpm cf:deploy` — build the static export into `out/` and finish it for Cloudflare (`scripts/finish-export.ts`), serve it locally with `wrangler dev`, upload it. Build from a clean tree without the gitignored geo archives and with `NEXT_PUBLIC_SITE_URL` set (docs/HOSTING.md)
 - `pnpm validate-data` — zod + referential-integrity check of `data/` (run after ANY data edit; on success it re-runs `pnpm bake-atlas-data`, so a running dev server shows the edit)
 - `pnpm audit:parents` — heuristic scan for reversed parent edges (`from` = child, `to` = parent); warning-level, verify suspects in the corpus before editing
 - `pnpm corpus:sync` / `pnpm corpus:verify` — download and verify the pinned local source corpus

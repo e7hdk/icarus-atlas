@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { notFound } from 'next/navigation';
 import { LoomView } from '@/components/art/LoomView';
 import { SettingsPanel } from '@/components/hud/SettingsPanel';
@@ -8,6 +8,9 @@ import { workImageUrl } from '@/features/art/door';
 import { loadArtCatalogue, loadPreviewPolicy } from '@/features/art/load';
 import { loadAtlasData } from '@/features/characters/load';
 import { LOOM_SHARE_IMAGE } from '../share';
+
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const { works } = await loadArtCatalogue();

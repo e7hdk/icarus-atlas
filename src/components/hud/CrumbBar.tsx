@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { DayLaurel } from './DayLaurel';
 
 /** The codex breadcrumb strip under the AtlasBar: a back circle, the trail

@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { useRef, useState } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { ReignRulerLinks } from '@/components/city/ReignRulerLinks';

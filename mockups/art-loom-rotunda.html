@@ -1,0 +1,1802 @@
+<!doctype html>
+<html lang="en" data-theme="gilded">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Loom Rotunda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<script src="shared/loom-rotunda-layouts.js"></script>
+<script type="importmap">
+{ "imports": { "three": "../node_modules/three/build/three.module.js", "three/addons/": "../node_modules/three/examples/jsm/" } }
+</script>
+<style>
+:root {
+  --deep: #05020f; --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+  --gold: #fcd34d; --gold-dim: rgb(252 211 77 / .55);
+  --glass: rgb(255 255 255 / .06); --glass-border: rgb(255 255 255 / .14); --glass-heavy: rgb(16 9 40 / .8);
+  --display: 'Cinzel', serif; --body: 'Cormorant Garamond', serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--deep); color: var(--aether); font-family: var(--body); -webkit-font-smoothing: antialiased; }
+#gl { position: fixed; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+#gl.dragging { cursor: grabbing; }
+#gl.on-work { cursor: pointer; }
+
+/* masthead, as in AtlasBar */
+.bar { position: fixed; inset: 0 0 auto 0; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; z-index: 30; pointer-events: none; }
+.bar::before { content: ''; position: absolute; inset: 0 0 -34px 0; z-index: -1; background: linear-gradient(rgb(5 2 15 / .78), rgb(5 2 15 / 0)); }
+.brand { font-family: var(--display); font-size: 14px; letter-spacing: .22em; color: var(--gold); }
+.doors { position: absolute; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; padding: 4px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass); backdrop-filter: blur(20px); }
+.doors span { font-family: var(--display); font-size: 11px; letter-spacing: .16em; color: var(--muted); padding: 6px 16px; border-radius: 999px; border: 1px solid transparent; }
+.doors span.on { color: var(--gold); border-color: var(--gold-dim); background: rgb(252 211 77 / .12); }
+.meta { font-style: italic; font-size: 14px; color: var(--faint); }
+
+/* the era being read, pinned under the bar */
+.era { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); z-index: 20; display: flex; align-items: baseline; gap: 10px; padding: 7px 18px; border-radius: 999px; border: 1px solid var(--glass-border); background: rgb(8 4 29 / .55); backdrop-filter: blur(14px); pointer-events: none; white-space: nowrap; }
+.era b { font-family: var(--display); font-weight: 400; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.era i { font-size: 16px; color: var(--muted); }
+
+.head { position: fixed; left: 28px; bottom: 28px; width: 250px; z-index: 12; pointer-events: none; transition: opacity .4s ease; }
+.head h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 25px; letter-spacing: .14em; }
+.head p { margin: 9px 0 0; font-size: 16px; line-height: 1.32; color: var(--muted); }
+.head p em { color: var(--aether); }
+
+.dock { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 20; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.dock .buttons { display: flex; gap: 8px; }
+.dock button { font-family: var(--display); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--aether); background: var(--glass); border: 1px solid var(--glass-border); border-radius: 999px; padding: 10px 20px; cursor: pointer; backdrop-filter: blur(16px); transition: border-color .2s, color .2s, background .2s; }
+.dock button:hover { border-color: var(--gold-dim); color: var(--gold); }
+.dock button.primary { color: var(--gold); border-color: var(--gold-dim); background: rgb(252 211 77 / .1); }
+.dock button[hidden] { display: none; }
+.hint { margin: 0; padding: 3px 14px 4px; border-radius: 999px; background: rgb(5 2 15 / .62); backdrop-filter: blur(10px); font-style: italic; font-size: 16px; color: var(--muted); text-align: center; max-width: 720px; }
+.hint:empty { display: none; }
+/* the lens and where you stand, inside only */
+.optics { display: flex; align-items: center; gap: 10px; padding: 5px 8px 5px 16px; border-radius: 999px; border: 1px solid var(--glass-border); background: rgb(8 4 29 / .6); backdrop-filter: blur(14px); font-family: var(--display); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); }
+.optics[hidden] { display: none; }
+.optics input[type=range] { width: 150px; accent-color: #fcd34d; cursor: pointer; }
+.optics output { min-width: 30px; color: var(--gold); font-variant-numeric: tabular-nums; }
+.dock .optics .stance button { font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--muted); background: none; border: 1px solid transparent; border-radius: 999px; padding: 5px 11px; }
+.dock .optics .stance button.on { color: var(--gold); border-color: var(--gold-dim); background: rgb(252 211 77 / .1); }
+
+.rail { position: fixed; right: 24px; top: 92px; width: 272px; z-index: 20; padding: 16px 18px 14px; border-radius: 16px; border: 1px solid var(--glass-border); background: var(--glass-heavy); backdrop-filter: blur(18px); transition: opacity .35s ease, transform .35s ease; }
+.rail.hidden { opacity: 0; transform: translateX(12px); pointer-events: none; }
+.rail h2 { margin: 0 0 3px; font-family: var(--display); font-weight: 400; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+.rail .sub { margin: 0 0 12px; font-size: 15px; font-style: italic; color: var(--faint); }
+.rail .title { font-size: 21px; line-height: 1.15; margin: 4px 0 3px; }
+.rail .by { font-size: 15px; color: var(--muted); margin: 0 0 12px; }
+.rail ul { list-style: none; margin: 0 -6px; padding: 0; max-height: 44vh; overflow-x: hidden; overflow-y: auto; }
+.rail li { display: flex; align-items: center; gap: 9px; padding: 5px 6px; border-radius: 8px; font-size: 16px; line-height: 1.2; cursor: pointer; }
+.rail li:hover, .rail li.on { background: rgb(255 255 255 / .07); }
+.rail .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.rail .n { margin-left: auto; font-size: 13px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.rail .note { margin: 0 0 12px; font-size: 15px; line-height: 1.35; color: var(--muted); }
+.rail .link { margin: 12px 0 0; font-family: var(--display); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); cursor: pointer; }
+
+.card { position: fixed; left: 0; top: 0; z-index: 25; max-width: 290px; padding: 10px 14px 11px; border-radius: 12px; border: 1px solid var(--glass-border); background: var(--glass-heavy); backdrop-filter: blur(16px); pointer-events: none; opacity: 0; transition: opacity .15s ease; }
+.card.on { opacity: 1; }
+.card .k { font-family: var(--display); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; display: flex; align-items: center; gap: 7px; }
+.card .t { font-size: 18px; line-height: 1.15; margin: 5px 0 2px; }
+.card .a { font-size: 14px; color: var(--muted); }
+
+.plate { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center; background: rgb(5 2 15 / .76); backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.plate.on { opacity: 1; pointer-events: auto; }
+.plate .sheet { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, 1fr); gap: 36px; width: min(1160px, 92vw); max-height: 86vh; padding: 32px; border-radius: 18px; border: 1px solid var(--glass-border); background: rgb(12 7 32 / .94); }
+.plate figure { margin: 0; display: grid; place-items: center; min-height: 0; }
+.plate img { max-width: 100%; max-height: 72vh; object-fit: contain; outline: 1px solid rgb(252 211 77 / .75); outline-offset: 7px; box-shadow: 0 0 0 13px rgb(12 7 32), 0 0 0 14px rgb(252 211 77 / .4); }
+.plate .text { overflow: auto; min-height: 0; padding-right: 6px; }
+.plate .kicker { font-family: var(--display); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+.plate h3 { margin: 10px 0 4px; font-family: var(--display); font-weight: 400; font-size: 26px; letter-spacing: .04em; line-height: 1.2; }
+.plate .by { margin: 0 0 14px; font-size: 18px; color: var(--muted); }
+.plate .caption { font-size: 18px; line-height: 1.45; margin: 0 0 14px; }
+.plate .stars { font-size: 16px; color: var(--muted); margin: 0 0 14px; }
+.plate .credit { font-size: 14px; color: var(--faint); }
+.plate .credit a { color: var(--muted); }
+.plate .close { position: absolute; top: 18px; right: 22px; font-family: var(--display); font-size: 11px; letter-spacing: .2em; color: var(--muted); background: none; border: 0; cursor: pointer; }
+
+.veil { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: var(--deep); transition: opacity .8s ease; }
+.veil.gone { opacity: 0; pointer-events: none; }
+.veil p { max-width: 660px; padding: 0 24px; text-align: center; font-size: 20px; line-height: 1.55; color: var(--muted); font-style: italic; }
+.veil code { font-style: normal; font-size: 14px; color: var(--gold); background: rgb(255 255 255 / .06); padding: 2px 7px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header class="bar"><span class="brand">ICARUS ATLAS</span><nav class="doors"><span>Galaxy</span><span>Lands</span><span>Myths</span><span class="on">Art</span></nav><span class="meta">mockup · the Loom as a rotunda</span></header>
+<div class="era"><b id="eraLabel">The Loom</b><i id="eraSub"></i></div>
+<section class="head" id="head"><h1>The Loom</h1><p>Every image of the myths, one tile each: sagas across, centuries down. <em>Step inside</em> and the cloth closes around you.</p></section>
+<div class="dock"><div class="optics" id="optics" hidden><span>Wide</span><input id="lens" type="range" min="14" max="60" step="1" dir="rtl" aria-label="Lens, in degrees"><span>Long</span><output id="lensOut"></output><span class="stance"><button id="standBack">Stand back</button><button id="standCentre">Centre</button></span></div><div class="buttons"><button id="enter" class="primary">Step inside</button><button id="turn" hidden>Turn the cloth</button></div><p class="hint" id="hint"></p></div>
+<aside class="rail hidden" id="rail"></aside>
+<div class="card" id="card"></div>
+<div class="plate" id="plate"><div class="sheet"><figure><img id="plateImg" alt=""></figure><div class="text" id="plateText"></div></div><button class="close" id="plateClose">Close · Esc</button></div>
+<div class="veil" id="veil"><p id="veilText">Weaving the cloth…</p></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { LineSegments2 } from 'three/addons/lines/LineSegments2.js';
+import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js';
+import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
+
+// The Loom as a rotunda (docs/LOOM_PLAN.md is the door's contract). The same cloth,
+// with the same layout, hangs flat or closes into a drum around the visitor: across
+// it the sagas go round in Spindle order, down it the centuries fall from the beam.
+// It reads the baked door from public/art/, so the repository has to be served over
+// HTTP (the veil says how when it is not).
+
+const ART = '../public/art/';
+const SAGA_LABEL = ['The Primordials', 'The Titans', 'The Olympians', 'The Metamorphoses', 'The Theban Cycle', 'The Dionysus Cycle', 'The Perseus Cycle', 'The Argonautica', 'The Labours of Heracles', 'The Attic Cycle', 'The Trojan Cycle', 'The Returns', 'Other tales'];
+const SAGA_HEX = ['#a78bfa', '#e3b341', '#7dd3fc', '#e879f9', '#fb7185', '#c026d3', '#eab308', '#38bdf8', '#f97316', '#2dd4bf', '#fbbf24', '#34d399', '#aab4c8'];
+const MEDIUM_LABEL = ['Painting', 'Vase', 'Sculpture', 'Wall painting', 'Print or drawing'];
+const TEAR_FROM = 500, TEAR_TO = 1400;
+const THUMB_STEPS = [120, 250, 330, 500, 960, 1280, 1920];
+const COMMONS = 'https://upload.wikimedia.org/wikipedia/commons';
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const TAU = Math.PI * 2;
+const $ = (id) => document.getElementById(id);
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, t) => a + (b - a) * t;
+const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+const unwrapNear = (angle, near) => angle + TAU * Math.round((near - angle) / TAU);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+function loadImage(src, cors = false) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    if (cors) img.crossOrigin = 'anonymous';
+    img.decoding = 'async';
+    // decoded off the main thread now, so cutting it later does not stall a frame
+    img.onload = () => img.decode().then(() => resolve(img), () => resolve(img));
+    img.onerror = () => reject(new Error(`Could not load ${src}`));
+    img.src = src;
+  });
+}
+
+/** The Commons thumbnail step for a wanted width: the smallest that is wide enough,
+ *  or the widest the original allows (Commons never upscales). 0 is the original. */
+function stepFor(work, wanted) {
+  const steps = THUMB_STEPS.filter((s) => s < work.width);
+  return steps.find((s) => s >= wanted) ?? steps[steps.length - 1] ?? 0;
+}
+function thumbUrl(work, step) {
+  const name = encodeURIComponent(work.file);
+  if (!step) return `${COMMONS}/${work.path}/${name}`;
+  const ext = work.file.toLowerCase().split('.').pop();
+  const rendered = ext === 'tif' || ext === 'tiff' ? `lossy-page1-${step}px-${name}.jpg` : ext === 'webp' ? `${step}px-${name}.png` : `${step}px-${name}`;
+  return `${COMMONS}/thumb/${work.path}/${name}/${rendered}`;
+}
+
+// ---------------------------------------------------------------- the door's data
+// The sheets are local, so the cloth is woven once, from the full sheets: a cloth this
+// large would stall on a second upload.
+let data, sheetLq, sheetImg, anchorsImg;
+try {
+  [data, sheetLq, sheetImg, anchorsImg] = await Promise.all([
+    fetch(ART + 'loom.json').then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }),
+    loadImage(ART + 'sheet-lq.webp'),
+    loadImage(ART + 'sheet.webp'),
+    loadImage(ART + 'anchors.webp'),
+  ]);
+} catch {
+  $('veilText').innerHTML = 'This mockup reads the baked Loom from <code>public/art/</code>, so the repository has to be served over HTTP. From the repository root run<br><code>python3 -m http.server 4800 --bind 127.0.0.1</code><br>and open <code>http://localhost:4800/mockups/art-loom-rotunda.html</code>';
+  throw new Error('The Loom data could not be loaded');
+}
+
+// The rotunda hangs the door's works woven 88 columns wide by the Loom's own engine
+// (shared/loom-rotunda-layouts.js), so the room is about as tall as it is wide.
+// ?width=58 hangs the door's own desktop cloth, a tower twice as tall as it is wide;
+// ?width=72 or 104 the other weavings. ?fov= sets the lens inside, in degrees.
+const params = new URLSearchParams(location.search);
+const rotunda = window.LOOM_ROTUNDA;
+const asked = params.get('width') ?? '88';
+const fresh = rotunda?.count === data.works.length && rotunda.first === data.works[0][0] && rotunda.last === data.works[data.works.length - 1][0];
+if (asked !== '58' && !fresh) console.warn('The rotunda layouts predate this bake; hanging the desktop cloth instead.');
+const layout = asked !== '58' && fresh ? rotunda.layouts[asked] ?? rotunda.layouts['88'] : data.desktop;
+const W = layout.width, H = layout.height;
+const atlas = data.sheet;
+const works = data.works.map((row, index) => {
+  const [id, title, artist, year, sortYear, saga, medium, path, file, width, height, sprite, anchor, figures] = row;
+  return {
+    index, id, title, artist, year, sortYear, saga, medium, path, file, width, height, sprite, anchor, figures,
+    x: layout.cells[index * 4], row: layout.cells[index * 4 + 1], w: layout.cells[index * 4 + 2], h: layout.cells[index * 4 + 3],
+  };
+});
+const cellOf = new Int32Array(W * H).fill(-1);
+for (const w of works) for (let dy = 0; dy < w.h; dy++) for (let dx = 0; dx < w.w; dx++) cellOf[(w.row + dy) * W + w.x + dx] = w.index;
+
+// One thread per figure seen in two works or more, oldest first (features/art/threads.ts).
+const byFigure = new Map();
+for (const w of works) for (const f of w.figures) byFigure.set(f, [...(byFigure.get(f) ?? []), w.index]);
+const threads = [];
+for (const [figure, members] of [...byFigure].sort((a, b) => a[0] - b[0])) {
+  if (members.length < 2) continue;
+  members.sort((a, b) => works[a].sortYear - works[b].sortYear || a - b);
+  const tally = new Map();
+  for (const m of members) tally.set(works[m].saga, (tally.get(works[m].saga) ?? 0) + 1);
+  const saga = [...tally].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0][0];
+  threads.push({ index: threads.length, figure, name: data.figures[figure][1], works: members, saga });
+}
+const threadsOf = works.map(() => []);
+for (const t of threads) for (const m of t.works) threadsOf[m].push(t.index);
+const stitchCount = threads.reduce((n, t) => n + t.works.length - 1, 0);
+
+function eraOf(row) { let era = layout.eras[0]; for (const e of layout.eras) if (e.row <= row) era = e; return era; }
+
+// The saga under each cell, empty ones included, so the bare warp keeps its colour.
+const cellSaga = new Int16Array(W * H);
+for (let x = 0; x < W; x++) for (let y = 0; y < H; y++) {
+  let saga = 0;
+  for (let d = 0; d < H; d++) {
+    const hit = [y - d, y + d].find((yy) => yy >= 0 && yy < H && cellOf[yy * W + x] >= 0);
+    if (hit !== undefined) { saga = works[cellOf[hit * W + x]].saga; break; }
+  }
+  cellSaga[y * W + x] = saga;
+}
+
+// The warp leaves the cloth at its last full row and gathers on one clay weight per saga.
+let fullRow = H - 1;
+for (let r = H - 1; r >= 0; r--) {
+  let n = 0;
+  for (let x = 0; x < W; x++) if (cellOf[r * W + x] >= 0) n++;
+  if (n >= W * 0.9) { fullRow = r; break; }
+}
+const bands = [];
+for (let x = 0; x < W; x++) {
+  const saga = cellSaga[fullRow * W + x];
+  const last = bands[bands.length - 1];
+  if (last && last.saga === saga) last.x1 = x + 1; else bands.push({ saga, x0: x, x1: x + 1 });
+}
+
+// ---------------------------------------------------------------- the stage
+const canvas = $('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight, false);
+const maxAniso = renderer.capabilities.getMaxAnisotropy();
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(34, innerWidth / innerHeight, 0.05, 5000);
+
+/** World units are cells. Closed, the cloth's width is the drum's circumference. */
+const R = W / TAU;
+const TOP = H / 2, BOTTOM = -H / 2;
+const BEAM = [-1.45, -0.85];
+const ATTIC = -1.75;
+const WEIGHT_TOP = H + 2.2;
+const FLOOR_Y = BOTTOM - 6.2;
+const FLOOR_ROW = H / 2 - FLOOR_Y;
+
+const U = {
+  uBend: { value: 0 }, uCenter: { value: W / 2 }, uR: { value: R }, uW: { value: W }, uH: { value: H },
+  uTime: { value: 0 }, uRoom: { value: 0 }, uFloor: { value: FLOOR_Y },
+};
+
+/** Flat cell coordinates (column across, row down) to the world, at a bend from 0 (a
+ *  flat cloth facing +z) to 1 (a closed drum round the axis x = 0, z = R). The curl
+ *  centre stays put; h lifts toward the visitor, so negative h is behind the cloth. */
+const BEND = /* glsl */ `
+uniform float uBend, uCenter, uR, uW, uH;
+vec3 bendAt(vec2 g, float h) {
+  float u = g.x - uCenter, v = uH * .5 - g.y;
+  if (uBend < 1e-4) return vec3(u, v, h);
+  float rho = uR / uBend, t = u / rho, r = rho - h;
+  return vec3(r * sin(t), v, rho - r * cos(t));
+}`;
+function bendAt(gx, gy, h, out = new THREE.Vector3(), b = U.uBend.value) {
+  const u = gx - U.uCenter.value, v = H / 2 - gy;
+  if (b < 1e-4) return out.set(u, v, h);
+  const rho = R / b, t = u / rho, r = rho - h;
+  return out.set(r * Math.sin(t), v, rho - r * Math.cos(t));
+}
+/** The wall's own axes at a column: along the cloth, up, and toward the visitor. */
+function wallBasis(gx, b = U.uBend.value) {
+  const t = b < 1e-4 ? 0 : (gx - U.uCenter.value) / (R / b);
+  return new THREE.Matrix4().makeBasis(new THREE.Vector3(Math.cos(t), 0, Math.sin(t)), new THREE.Vector3(0, 1, 0), new THREE.Vector3(-Math.sin(t), 0, Math.cos(t)));
+}
+
+/** A grid over flat cell coordinates; the vertex shaders bend it. */
+function gridGeometry(x0, y0, x1, y1, segX, segY, flipV = false) {
+  const positions = [], uvs = [], index = [];
+  for (let j = 0; j <= segY; j++) for (let i = 0; i <= segX; i++) {
+    positions.push(lerp(x0, x1, i / segX), lerp(y0, y1, j / segY), 0);
+    uvs.push(i / segX, flipV ? 1 - j / segY : j / segY);
+  }
+  for (let j = 0; j < segY; j++) for (let i = 0; i < segX; i++) {
+    const a = j * (segX + 1) + i, b = a + 1, c = a + segX + 1, d = c + 1;
+    index.push(a, c, b, b, c, d);
+  }
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
+  geometry.setIndex(index);
+  return geometry;
+}
+function bent(mesh) { mesh.frustumCulled = false; scene.add(mesh); return mesh; }
+
+// ---------------------------------------------------------------- the cloth's textures
+/** Pixels a cell in the cloth's own texture: the sprites arrive at 64, the woven Commons
+ *  images fill it out. */
+const CELL = Math.min(112, Math.floor(renderer.capabilities.maxTextureSize / Math.max(W, H)));
+const clothCanvas = document.createElement('canvas');
+clothCanvas.width = W * CELL;
+clothCanvas.height = H * CELL;
+const clothTex = new THREE.CanvasTexture(clothCanvas);
+Object.assign(clothTex, { flipY: false, colorSpace: THREE.NoColorSpace, minFilter: THREE.LinearMipmapLinearFilter, magFilter: THREE.LinearFilter, anisotropy: Math.min(8, maxAniso) });
+
+/** components/art/loomTextures.ts: every work drawn into one cloth texture. */
+function paintCloth(sheet, sheetCell, anchors) {
+  const ctx = clothCanvas.getContext('2d');
+  ctx.imageSmoothingQuality = 'high';
+  ctx.fillStyle = '#05020f';
+  for (let row = Math.max(0, layout.tearTop - 2); row < layout.tearTop + layout.tearRows; row++) {
+    for (let x = 0; x < W; x++) if (cellOf[row * W + x] < 0) ctx.fillRect(x * CELL, row * CELL, CELL, CELL);
+  }
+  for (const w of works) {
+    if (sharp.has(w.index)) continue;
+    const dx = w.x * CELL, dy = w.row * CELL, dw = w.w * CELL, dh = w.h * CELL;
+    if (anchors && w.anchor >= 0) {
+      const slot = atlas.anchorSlot;
+      ctx.drawImage(anchors, (w.anchor % atlas.anchorColumns) * slot, Math.floor(w.anchor / atlas.anchorColumns) * slot, w.w * atlas.cell, w.h * atlas.cell, dx, dy, dw, dh);
+    } else {
+      ctx.drawImage(sheet, (w.sprite % atlas.columns) * sheetCell, Math.floor(w.sprite / atlas.columns) * sheetCell, sheetCell, sheetCell, dx, dy, dw, dh);
+    }
+    if (w.w > 1) {
+      const line = Math.max(1, CELL * 0.04);
+      ctx.strokeStyle = 'rgba(252,211,77,.72)';
+      ctx.lineWidth = line;
+      ctx.strokeRect(dx + line / 2, dy + line / 2, dw - line, dh - line);
+    }
+  }
+  clothTex.needsUpdate = true;
+}
+
+/** The tear: red marks the gold mend, green the bare gap. Seeded, so it always tears alike. */
+function tearTexture() {
+  const { tearTop, tearRows } = layout;
+  let seed = 7;
+  const random = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const canvasWidth = 2560, scale = canvasWidth / W;
+  const c = document.createElement('canvas');
+  c.width = canvasWidth;
+  c.height = Math.round(H * scale);
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#000';
+  ctx.fillRect(0, 0, c.width, c.height);
+  const edge = (base, amplitude) => {
+    const points = [];
+    let y = 0, velocity = 0;
+    for (let i = 0; i <= W * 2; i++) {
+      velocity = velocity * 0.72 + (random() - 0.5) * 0.62;
+      y = (y + velocity) * 0.86;
+      points.push([(i / 2) * scale, (base + clamp(y, -amplitude, amplitude)) * scale]);
+    }
+    return points;
+  };
+  const top = edge(tearTop - 0.1, 0.5);
+  const bottom = edge(tearTop + tearRows + 0.1, 0.5);
+  ctx.fillStyle = '#0f0';
+  ctx.beginPath();
+  top.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+  [...bottom].reverse().forEach(([x, y]) => ctx.lineTo(x, y));
+  ctx.closePath();
+  ctx.fill();
+  for (let row = Math.max(0, tearTop - 2); row < tearTop; row++) {
+    for (let x = 0; x < W; x++) if (cellOf[row * W + x] < 0) ctx.fillRect(x * scale, row * scale, scale + 1, scale + 1);
+  }
+  ctx.fillStyle = '#000';
+  for (const w of works) if (w.sortYear >= TEAR_FROM && w.sortYear < TEAR_TO) ctx.fillRect(w.x * scale, w.row * scale, scale, scale);
+  ctx.globalCompositeOperation = 'lighter';
+  const stroke = (points, lineWidth, alpha, blur) => {
+    ctx.strokeStyle = `rgba(255,0,0,${alpha})`;
+    ctx.shadowColor = 'rgba(255,0,0,.9)';
+    ctx.shadowBlur = blur;
+    ctx.lineWidth = lineWidth;
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    points.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+    ctx.stroke();
+  };
+  for (const line of [top, bottom]) {
+    stroke(line, 2.2, 0.95, 9);
+    for (let n = 0; n < 7; n++) {
+      const start = line[2 + Math.floor(random() * (line.length - 4))];
+      const direction = line === top ? -1 : 1;
+      const vein = [start];
+      let [x, y] = start;
+      let bend = (random() - 0.5) * 1.1;
+      const length = 2 + Math.floor(random() * 4);
+      for (let i = 0; i < length; i++) {
+        bend += (random() - 0.5) * 0.9;
+        x += Math.sin(bend) * scale * 0.55;
+        y += direction * Math.cos(bend) * scale * 0.5;
+        vein.push([x, y]);
+      }
+      stroke(vein, 1.1, 0.6, 4);
+    }
+  }
+  for (let i = 3; i < W; i += 6) stroke([top[i * 2], bottom[i * 2 + 1]], 1.2, 0.7, 4);
+  const texture = new THREE.CanvasTexture(c);
+  Object.assign(texture, { flipY: false, colorSpace: THREE.NoColorSpace, minFilter: THREE.LinearMipmapLinearFilter });
+  return texture;
+}
+
+// Per cell: the saga colour (its lowest red bit flags an anchor) and the brightness.
+const sagaBytes = SAGA_HEX.map((hex) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16)));
+const sagaRgb = sagaBytes.map((b) => b.map((x) => x / 255));
+const sagaLinear = SAGA_HEX.map((hex) => new THREE.Color(hex));
+const cellBytes = new Uint8Array(W * H * 4);
+const cellTex = new THREE.DataTexture(cellBytes, W, H, THREE.RGBAFormat);
+Object.assign(cellTex, { magFilter: THREE.NearestFilter, minFilter: THREE.NearestFilter, colorSpace: THREE.NoColorSpace });
+const bright = new Float32Array(works.length).fill(1);
+const brightGoal = new Float32Array(works.length).fill(1);
+function writeCells() {
+  for (let i = 0; i < W * H; i++) {
+    const wi = cellOf[i];
+    const [r, g, b] = sagaBytes[wi >= 0 ? works[wi].saga : cellSaga[i]];
+    cellBytes[i * 4] = (r & 254) | (wi >= 0 && works[wi].w > 1 ? 1 : 0);
+    cellBytes[i * 4 + 1] = g;
+    cellBytes[i * 4 + 2] = b;
+    cellBytes[i * 4 + 3] = Math.round(clamp((wi >= 0 ? bright[wi] : 1) / 1.6, 0, 1) * 255);
+  }
+  cellTex.needsUpdate = true;
+}
+
+// ---------------------------------------------------------------- the cloth
+const CLOTH_VS = /* glsl */ `${BEND}
+uniform float uFloor;
+varying vec2 vG;
+varying float vY;
+void main() {
+  vG = position.xy;
+  vec3 p = bendAt(position.xy, 0.);
+#ifdef MIRROR
+  p.y = 2. * uFloor - p.y;
+#endif
+  vY = p.y;
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.);
+}`;
+const CLOTH_FS = /* glsl */ `
+uniform sampler2D uTex, uCells, uCrack;
+uniform vec2 uGrid;
+uniform float uWeave, uTime, uFell, uFloor, uRoom;
+varying vec2 vG;
+varying float vY;
+float luma(vec3 c) { return dot(c, vec3(.2126, .7152, .0722)); }
+void main() {
+  if (vG.y > uFell) discard;
+  vec2 uv = vG / uGrid;
+  vec4 s = texture2D(uTex, uv);
+  vec4 cell = texture2D(uCells, (floor(min(vG, uGrid - .001)) + .5) / uGrid);
+  vec4 k = texture2D(uCrack, uv);
+  bool front = gl_FrontFacing;
+#ifdef MIRROR
+  front = !front;
+#endif
+  float warp = .5 + .5 * sin(vG.x * 18.8496);
+  vec3 c;
+  if (k.g > .5) {
+    // the gap of the tear: bare warp threads, and the night between them
+    if (warp < .9) discard;
+    c = cell.rgb * (.08 + .16 * warp) + vec3(.02, .015, .04);
+  } else {
+    if (s.a < .5) discard;
+    if (!front) {
+      // the reverse of a tapestry: the picture is only a rumour, the thread is the subject
+      c = vec3(.034, .024, .07) + luma(s.rgb) * vec3(.05, .046, .08);
+      c += cell.rgb * .032 * (.5 + .5 * sin(vG.x * 18.8496));
+      c += vec3(1., .78, .36) * k.r * .9;
+    } else {
+      // from a distance whites turn to old wool; up close the painting is left as it is
+      c = s.rgb;
+      float L = luma(c);
+      vec3 wool = mix(c, c * .74, smoothstep(.55, 1., L));
+      wool = pow(max(wool, vec3(0.)), vec3(1.04));
+      wool = mix(vec3(luma(wool)), wool, 1.42);
+      wool *= vec3(1.06, .96, .82);
+      c = mix(c, wool, uWeave);
+      float anchor = mod(floor(cell.r * 255. + .5), 2.);
+      float warpLine = smoothstep(.435, .5, abs(fract(vG.x) - .5)) * (1. - anchor);
+      c = mix(c, cell.rgb * .92, warpLine * uWeave * .55);
+      // dimmed tiles sink into the warp, they do not vanish
+      float b = cell.a * 1.6;
+      vec3 ghost = vec3(luma(c)) * vec3(.26, .24, .34);
+      c = mix(ghost, c, smoothstep(.06, .92, b)) * max(1., b);
+      if (k.g > .01) c = mix(c, cell.rgb * (.1 + .34 * warp * warp) + vec3(.012, .008, .03), k.g);
+      c += vec3(1., .78, .36) * k.r * 1.25 * (.86 + .14 * sin(vG.x * .8 - uTime * .9));
+    }
+  }
+  // the fell, the gold edge of the weaving, during the opening reveal
+  c += vec3(1., .8, .4) * (1. - smoothstep(0., .5, uFell - vG.y));
+#ifdef MIRROR
+  c *= .24 * exp(-(uFloor - vY) / 10.) * uRoom;
+#endif
+  gl_FragColor = vec4(c, 1.);
+}`;
+const crackTex = tearTexture();
+const clothUniforms = { ...U, uTex: { value: clothTex }, uCells: { value: cellTex }, uCrack: { value: crackTex }, uGrid: { value: new THREE.Vector2(W, H) }, uWeave: { value: 0.6 }, uFell: { value: 0 } };
+const clothGeo = gridGeometry(0, 0, W, H, W * 4, 2);
+bent(new THREE.Mesh(clothGeo, new THREE.ShaderMaterial({ uniforms: clothUniforms, vertexShader: CLOTH_VS, fragmentShader: CLOTH_FS, side: THREE.DoubleSide })));
+const mirror = bent(new THREE.Mesh(clothGeo, new THREE.ShaderMaterial({ uniforms: clothUniforms, vertexShader: CLOTH_VS, fragmentShader: CLOTH_FS, side: THREE.DoubleSide, defines: { MIRROR: '' } })));
+
+// ---------------------------------------------------------------- the loom's frame
+const BAND_VS = /* glsl */ `${BEND}
+uniform float uLift;
+varying vec2 vUv;
+void main() {
+  vUv = uv;
+  vec2 g = position.xy;
+  g.x = mix(g.x, clamp(g.x, 0., uW), uBend);  // the beam's ends fold away as the drum closes
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(bendAt(g, uLift), 1.);
+}`;
+const BEAM_FS = /* glsl */ `
+varying vec2 vUv;
+void main() {
+  float s = 1. - pow(abs(vUv.y * 2. - 1.), 2.);
+  vec3 gold = mix(vec3(.30, .20, .07), vec3(.99, .84, .44), pow(s, 1.6));
+  gl_FragColor = vec4(gold + vec3(.25, .2, .1) * pow(s, 14.), 1.);
+}`;
+const STONE_FS = /* glsl */ `
+uniform float uRoom;
+varying vec2 vUv;
+void main() {
+  if (uRoom < .01) discard;
+  vec3 c = vec3(.05, .04, .075) * (.8 + .3 * vUv.y);
+  c += vec3(.75, .58, .3) * smoothstep(.05, 0., abs(vUv.y - .03)) * .5;  // a gold cornice
+  gl_FragColor = vec4(c * uRoom, 1.);
+}`;
+bent(new THREE.Mesh(gridGeometry(-1.5, BEAM[0], W + 1.5, BEAM[1], (W + 3) * 4, 1), new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: 0.02 } }, vertexShader: BAND_VS, fragmentShader: BEAM_FS, side: THREE.DoubleSide })));
+bent(new THREE.Mesh(gridGeometry(0, ATTIC, W, 0.02, W * 4, 1), new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: -0.08 } }, vertexShader: BAND_VS, fragmentShader: STONE_FS, side: THREE.DoubleSide })));
+bent(new THREE.Mesh(gridGeometry(0, H, W, FLOOR_ROW + 0.02, W * 4, 1), new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: -0.6 } }, vertexShader: BAND_VS, fragmentShader: STONE_FS, side: THREE.DoubleSide })));
+
+// The warp: short threads from the beam into the cloth, and below it gathered on the weights.
+const WARP_VS = /* glsl */ `${BEND}
+attribute vec3 aColor;
+varying vec3 vC;
+void main() { vC = aColor; gl_Position = projectionMatrix * modelViewMatrix * vec4(bendAt(position.xy, -.02), 1.); }`;
+const WARP_FS = /* glsl */ `varying vec3 vC; void main() { gl_FragColor = vec4(vC, .6); }`;
+{
+  const positions = [], colors = [];
+  const add = (x0, y0, x1, y1, rgb, k) => { positions.push(x0, y0, 0, x1, y1, 0); colors.push(...rgb.map((v) => v * k), ...rgb.map((v) => v * k)); };
+  for (let x = 0; x < W; x++) add(x + 0.5, BEAM[1], x + 0.5, 0.02, sagaRgb[cellSaga[x]], 0.55);
+  for (const band of bands) {
+    const centre = (band.x0 + band.x1) / 2;
+    for (let x = band.x0; x < band.x1; x++) add(x + 0.5, H, centre + (x + 0.5 - centre) * 0.12, WEIGHT_TOP + 0.25, sagaRgb[band.saga], 0.6);
+  }
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute('aColor', new THREE.Float32BufferAttribute(colors, 3));
+  const warp = new THREE.LineSegments(geometry, new THREE.ShaderMaterial({ uniforms: U, vertexShader: WARP_VS, fragmentShader: WARP_FS, transparent: true, depthWrite: false }));
+  bent(warp);
+}
+const PLAIN_VS = /* glsl */ `${BEND}
+uniform float uLift;
+varying vec2 vUv;
+void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(bendAt(position.xy, uLift), 1.); }`;
+const WEIGHT_FS = /* glsl */ `
+uniform vec3 uSaga;
+varying vec2 vUv;
+void main() {
+  vec2 p = vUv;
+  float side = mix(.27, .5, p.y);                       // a pyramidal clay weight
+  if (abs(p.x - .5) > side) discard;
+  if (length((p - vec2(.5, .15)) * vec2(1., 1.4)) < .075) discard;  // the hole for the warp
+  vec3 clay = mix(vec3(.45, .28, .18), vec3(.62, .40, .26), p.y) * (.8 + .32 * (1. - abs(p.x - .5) / side));
+  clay = mix(clay, uSaga, smoothstep(.045, 0., abs(p.y - .64)) * .85);
+  gl_FragColor = vec4(clay, 1.);
+}`;
+for (const band of bands) {
+  const centre = (band.x0 + band.x1) / 2;
+  bent(new THREE.Mesh(gridGeometry(centre - 0.6, WEIGHT_TOP, centre + 0.6, WEIGHT_TOP + 1.7, 2, 1), new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: -0.02 }, uSaga: { value: new THREE.Vector3(...sagaRgb[band.saga]) } }, vertexShader: PLAIN_VS, fragmentShader: WEIGHT_FS, side: THREE.DoubleSide })));
+}
+
+// ---------------------------------------------------------------- the rotunda
+// A coffered dome over the beam, open at the oculus, and a dark floor that holds a
+// reflection of the cloth. Both appear only once the drum has closed.
+const DOME_VS = /* glsl */ `varying vec3 vN; void main() { vN = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`;
+const DOME_FS = /* glsl */ `
+uniform float uRoom;
+varying vec3 vN;
+void main() {
+  if (uRoom < .01) discard;
+  float e = asin(clamp(vN.y, 0., 1.)), a = atan(vN.x, vN.z);
+  if (e > 1.33) discard;                                  // the oculus, open to the night
+  vec3 c;
+  if (gl_FrontFacing) {
+    c = vec3(.06, .05, .09) * (.7 + .4 * vN.y) + vec3(.035, .03, .02) * smoothstep(.92, 1., abs(sin(a * 14.)));
+  } else {
+    c = vec3(.055, .045, .085) * (.75 + .55 * e);
+    float ring = (e - .08) / 1.1;                          // five rings of twenty-eight coffers
+    if (ring > 0. && ring < 1.) {
+      float fe = fract(ring * 5.), fa = fract(a / 6.28318 * 28.), m = .16;
+      float inner = step(m, fa) * step(fa, 1. - m) * step(m, fe) * step(fe, 1. - m);
+      c *= mix(1.3, .55, inner);
+      c += vec3(.07, .055, .035) * smoothstep(m + .12, m, fe) * inner;  // the lower lip catches the light
+    }
+    c += vec3(.95, .76, .42) * smoothstep(.022, 0., abs(e - 1.31));   // gold round the oculus
+    c += vec3(.95, .76, .42) * smoothstep(.018, 0., e) * .7;           // and at the dome's foot
+  }
+  gl_FragColor = vec4(c * uRoom, 1.);
+}`;
+const dome = new THREE.Mesh(new THREE.SphereGeometry(R + 0.08, 128, 48, 0, TAU, 0, Math.PI / 2), new THREE.ShaderMaterial({ uniforms: U, vertexShader: DOME_VS, fragmentShader: DOME_FS, side: THREE.DoubleSide }));
+dome.position.set(0, H / 2 - ATTIC, R);
+scene.add(dome);
+
+const FLOOR_VS = /* glsl */ `varying vec2 vP; void main() { vP = position.xz; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`;
+const FLOOR_FS = /* glsl */ `
+uniform float uRoom, uR;
+varying vec2 vP;
+void main() {
+  if (uRoom < .01) discard;
+  float r = length(vP), a = .8;
+  vec3 c = vec3(.035, .028, .055);
+  if (r < uR) {
+    // squares and roundels, as on the Pantheon's floor
+    vec2 q = vP / (uR / 4.5), f = fract(q) - .5, id = floor(q);
+    float shape = mod(id.x + id.y, 2.) > .5 ? step(length(f), .36) : step(max(abs(f.x), abs(f.y)), .36);
+    c = mix(vec3(.04, .032, .06), vec3(.058, .046, .082), shape);
+    c += vec3(.6, .47, .25) * smoothstep(.03, 0., abs(max(abs(f.x), abs(f.y)) - .5)) * .14;
+    c += vec3(.08, .065, .045) * exp(-pow(r / (uR * .3), 2.));      // the light from the oculus
+  } else {
+    a *= 1. - smoothstep(uR * 1.5, uR * 5., r);
+  }
+  gl_FragColor = vec4(c * uRoom, a * uRoom);
+}`;
+const floorGeo = new THREE.CircleGeometry(R * 6, 200);
+floorGeo.rotateX(-Math.PI / 2);
+const floor = new THREE.Mesh(floorGeo, new THREE.ShaderMaterial({ uniforms: U, vertexShader: FLOOR_VS, fragmentShader: FLOOR_FS, transparent: true, depthWrite: false }));
+floor.position.set(0, FLOOR_Y, R);
+floor.renderOrder = -1;
+scene.add(floor);
+
+// The night outside.
+{
+  const SKY_VS = /* glsl */ `varying vec3 vD; void main() { vD = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`;
+  const SKY_FS = /* glsl */ `
+varying vec3 vD;
+void main() {
+  vec3 c = mix(vec3(.075, .045, .16), vec3(.02, .008, .06), smoothstep(0., .75, abs(vD.y)));
+  c += vec3(.16, .09, .32) * exp(-pow((vD.x + .45) * 2.4, 2.) - pow(vD.y * 3., 2.)) * .35;
+  gl_FragColor = vec4(c, 1.);
+}`;
+  const sky = new THREE.Mesh(new THREE.SphereGeometry(2000, 48, 24), new THREE.ShaderMaterial({ vertexShader: SKY_VS, fragmentShader: SKY_FS, side: THREE.BackSide, depthWrite: false }));
+  sky.renderOrder = -10;
+  scene.add(sky);
+  let seed = 11;
+  const random = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (const [count, size] of [[2600, 1.4], [420, 2.4]]) {
+    const positions = [], colors = [];
+    for (let i = 0; i < count; i++) {
+      const y = random() * 2 - 1, a = random() * TAU, r = Math.sqrt(1 - y * y);
+      positions.push(Math.cos(a) * r * 1800, y * 1800, Math.sin(a) * r * 1800);
+      const glow = 0.25 + random() * random() * 0.75;
+      colors.push(0.86 * glow, 0.89 * glow, glow);
+    }
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    const stars = new THREE.Points(geometry, new THREE.PointsMaterial({ size, sizeAttenuation: false, vertexColors: true, transparent: true, depthWrite: false }));
+    stars.renderOrder = -9;
+    scene.add(stars);
+  }
+}
+
+// ---------------------------------------------------------------- threads of light
+const lineMaterials = [];
+function lineLayer(width, opacity) {
+  const material = new LineMaterial({ linewidth: width, vertexColors: true, transparent: true, opacity, depthWrite: false, blending: THREE.AdditiveBlending });
+  material.resolution.set(innerWidth, innerHeight);
+  lineMaterials.push(material);
+  const lines = new LineSegments2(new LineSegmentsGeometry(), material);
+  lines.frustumCulled = false;
+  lines.visible = false;
+  lines.renderOrder = 3;
+  scene.add(lines);
+  return lines;
+}
+function setLines(lines, positions, colors) {
+  lines.geometry.dispose();
+  lines.geometry = new LineSegmentsGeometry();
+  if (positions.length) {
+    lines.geometry.setPositions(positions);
+    lines.geometry.setColors(colors);
+  }
+  lines.visible = positions.length > 0;
+}
+const webLines = lineLayer(2.6, 0.95);
+const patternLines = lineLayer(3.2, 1);
+const backLines = lineLayer(1.1, 0.22);
+const backHot = lineLayer(2.6, 1);
+
+/** A thread through the air of the rotunda: between two works on the walls it bows
+ *  toward the axis, toward you; from the held work it leaves straight. */
+function pushArc(a, b, color, k, positions, colors, segments = 20, bow = 0.3) {
+  const mid = a.clone().add(b).multiplyScalar(0.5), length = a.distanceTo(b);
+  const toAxis = new THREE.Vector3(-mid.x, 0, R - mid.z);
+  const reach = toAxis.length();
+  const control = mid.clone();
+  if (reach > 1e-3 && bow > 0) control.addScaledVector(toAxis.divideScalar(reach), Math.min(length * bow, Math.max(0, reach - 1)));
+  control.y += length * 0.05;
+  let prev = a.clone();
+  for (let i = 1; i <= segments; i++) {
+    const t = i / segments, s = 1 - t;
+    const p = new THREE.Vector3(
+      s * s * a.x + 2 * s * t * control.x + t * t * b.x,
+      s * s * a.y + 2 * s * t * control.y + t * t * b.y,
+      s * s * a.z + 2 * s * t * control.z + t * t * b.z,
+    );
+    positions.push(prev.x, prev.y, prev.z, p.x, p.y, p.z);
+    colors.push(color.r * k, color.g * k, color.b * k, color.r * k, color.g * k, color.b * k);
+    prev = p;
+  }
+}
+
+/** The back of the cloth: every stitch arcs out of the drum's outer face. */
+let backCentre = null;
+function stitchesOnBack(onlyThreads = null) {
+  const positions = [], colors = [];
+  const a = new THREE.Vector3(), b = new THREE.Vector3();
+  for (const t of onlyThreads ? onlyThreads.map((i) => threads[i]) : threads) {
+    const c = sagaLinear[t.saga];
+    let seed = t.index * 977 + 13;
+    for (let j = 0; j + 1 < t.works.length; j++) {
+      const A = works[t.works[j]], B = works[t.works[j + 1]];
+      const ax = A.x + A.w / 2, ay = A.row + A.h / 2;
+      let bx = B.x + B.w / 2;
+      const by = B.row + B.h / 2;
+      if (bx - ax > W / 2) bx -= W; else if (ax - bx > W / 2) bx += W;   // the short way round
+      seed = (seed * 16807) % 2147483647;
+      // low over the drum, so the web wraps it rather than clouding it
+      const h = (0.35 + Math.min(Math.hypot(bx - ax, by - ay), 34) * 0.07) * (0.7 + 0.6 * (seed / 2147483647));
+      bendAt(ax, ay, -0.05, a, 1);
+      for (let i = 1; i <= 14; i++) {
+        const s = i / 14, e = s * s * (3 - 2 * s);
+        bendAt(lerp(ax, bx, e), lerp(ay, by, s), -0.05 - Math.sin(s * Math.PI) * h, b, 1);
+        positions.push(a.x, a.y, a.z, b.x, b.y, b.z);
+        colors.push(c.r, c.g, c.b, c.r, c.g, c.b);
+        a.copy(b);
+      }
+    }
+  }
+  return [positions, colors];
+}
+function buildBack() {
+  if (backCentre === U.uCenter.value) return;
+  backCentre = U.uCenter.value;
+  setLines(backLines, ...stitchesOnBack());
+}
+
+// ---------------------------------------------------------------- sharper images
+// The baked sheet gives every work 64 px a cell, soft once the cloth closes round you.
+// Inside, each work's Commons thumbnail is woven into the cloth itself at its full cell
+// resolution: the works you face first, then the rest of the room by how far you would
+// have to turn to see them. A woven work stays sharp, so turning back finds it as it
+// was. Where works show larger still, finer images are laid over the cloth around the
+// way you look. Either way the image is cut where the bake cut its sprite, so it
+// sharpens in place instead of shifting.
+const REQUESTS = 6;
+const sharp = new Set(), failed = new Set(), weaving = new Set();
+const woven = [];
+let weaveQueue = [], requests = 0;
+
+/** The Commons width that gives a work `perCell` pixels a cell once cut to its tile. */
+function stepForCell(w, perCell) {
+  const a = w.width / w.height, t = w.w / w.h;
+  return stepFor(w, (a > t ? w.h * perCell * a : w.w * perCell) * 0.85);
+}
+/** The baked sprite of a work: the sheet it is on and where. */
+function spriteSource(w) {
+  if (anchorsImg && w.anchor >= 0) {
+    return [anchorsImg, (w.anchor % atlas.anchorColumns) * atlas.anchorSlot, Math.floor(w.anchor / atlas.anchorColumns) * atlas.anchorSlot, w.w * atlas.cell, w.h * atlas.cell];
+  }
+  const img = sheetImg ?? sheetLq, cell = sheetImg ? atlas.cell : atlas.lqCell;
+  return [img, (w.sprite % atlas.columns) * cell, Math.floor(w.sprite / atlas.columns) * cell, cell, cell];
+}
+const scratch = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
+function pixels(draw, width, height) {
+  scratch.canvas.width = width;
+  scratch.canvas.height = height;
+  draw(scratch);
+  return scratch.getImageData(0, 0, width, height).data;
+}
+/** The sprite sheets at half size, 32 px a cell, read into memory once at the start:
+ *  drawing from a sheet this large into a readable canvas stalls a frame. */
+const ALIGN = atlas.cell / 2;
+let sheetRef = null, anchorRef = null;
+function sheetPixels(img) {
+  const width = img.naturalWidth / 2, height = img.naturalHeight / 2;
+  return { width, data: pixels((ctx) => ctx.drawImage(img, 0, 0, width, height), width, height) };
+}
+/** Where the sprite sits in the full image. The bake cut each work to its tile with
+ *  sharp's attention strategy, which slides a window along the image's long side; the
+ *  same window is found here by comparing the sprite with every position it could take. */
+const crops = new Map();
+function cropOf(w, img) {
+  if (crops.has(w.index)) return crops.get(w.index);
+  const a = img.naturalWidth / img.naturalHeight, t = w.w / w.h;
+  if (Math.abs(a - t) / t < 0.01) return { x: 0, y: 0, w: 1, h: 1 };
+  const across = a > t;
+  let crop = across ? { x: (1 - t / a) / 2, y: 0, w: t / a, h: 1 } : { x: 0, y: (1 - a / t) / 2, w: 1, h: a / t };
+  const anchor = w.anchor >= 0;
+  const ref = anchor ? anchorRef : sheetRef;
+  const ox = anchor ? ((w.anchor % atlas.anchorColumns) * atlas.anchorSlot) / 2 : ((w.sprite % atlas.columns) * atlas.cell) / 2;
+  const oy = anchor ? (Math.floor(w.anchor / atlas.anchorColumns) * atlas.anchorSlot) / 2 : (Math.floor(w.sprite / atlas.columns) * atlas.cell) / 2;
+  const rw = ALIGN * w.w, rh = ALIGN * w.h;
+  const iw = across ? Math.round(rh * a) : rw, ih = across ? rh : Math.round(rw / a);
+  scratch.imageSmoothingQuality = 'medium';
+  const full = pixels((ctx) => ctx.drawImage(img, 0, 0, iw, ih), iw, ih);
+  let best = -1, bestError = Infinity;
+  offsets: for (let o = 0; o <= (across ? iw - rw : ih - rh); o++) {
+    let error = 0;
+    for (let y = 0; y < rh; y++) {
+      for (let x = 0; x < rw; x++) {
+        const i = ((across ? y : y + o) * iw + (across ? x + o : x)) * 4, j = ((oy + y) * ref.width + ox + x) * 4;
+        const dr = full[i] - ref.data[j], dg = full[i + 1] - ref.data[j + 1], db = full[i + 2] - ref.data[j + 2];
+        error += dr * dr + dg * dg + db * db;
+      }
+      if (error >= bestError) continue offsets;
+    }
+    best = o;
+    bestError = error;
+  }
+  if (best >= 0) crop = across ? { x: best / iw, y: 0, w: rw / iw, h: 1 } : { x: 0, y: best / ih, w: 1, h: rh / ih };
+  crops.set(w.index, crop);
+  return crop;
+}
+/** A work's image cut to its tile, `perCell` pixels a cell; anchors keep their gold hairline. */
+function cropCanvas(w, img, crop, perCell, hairline = false) {
+  const c = document.createElement('canvas');
+  c.width = Math.round(w.w * perCell);
+  c.height = Math.round(w.h * perCell);
+  const ctx = c.getContext('2d');
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(img, crop.x * img.naturalWidth, crop.y * img.naturalHeight, crop.w * img.naturalWidth, crop.h * img.naturalHeight, 0, 0, c.width, c.height);
+  if (hairline && w.w > 1) {
+    const line = Math.max(1, perCell * 0.04);
+    ctx.strokeStyle = 'rgba(252,211,77,.72)';
+    ctx.lineWidth = line;
+    ctx.strokeRect(line / 2, line / 2, c.width - line, c.height - line);
+  }
+  return c;
+}
+/** A whole image as a texture, for the GPU to cut and scale: cutting and scaling a large
+ *  image on a canvas would stall a frame. */
+function imageTexture(img) {
+  const texture = new THREE.Texture(img);
+  Object.assign(texture, { colorSpace: THREE.NoColorSpace, minFilter: THREE.LinearMipmapLinearFilter, anisotropy: Math.min(4, maxAniso), needsUpdate: true });
+  return texture;
+}
+/** Point a material at a work's crop of its image (texture rows run bottom up). */
+function setCrop(material, crop) {
+  material.uniforms.uCropOffset.value.set(crop.x, 1 - crop.y - crop.h);
+  material.uniforms.uCropScale.value.set(crop.w, crop.h);
+}
+function canvasTexture(canvas) {
+  const texture = new THREE.CanvasTexture(canvas);
+  Object.assign(texture, { colorSpace: THREE.NoColorSpace, minFilter: THREE.LinearMipmapLinearFilter, anisotropy: Math.min(4, maxAniso) });
+  return texture;
+}
+async function weaveIn(w) {
+  weaving.add(w.index);
+  requests++;
+  try {
+    const img = await loadImage(thumbUrl(w, stepForCell(w, CELL)), true);
+    woven.push({ w, tile: cropCanvas(w, img, cropOf(w, img), CELL, true) });
+    sharp.add(w.index);
+  } catch {
+    failed.add(w.index);
+  } finally {
+    requests--;
+    weaving.delete(w.index);
+  }
+}
+/** Copy up to three woven works a frame into the cloth on the GPU, with one mipmap
+ *  rebuild for them, and into its canvas, so any later full upload keeps them. */
+const copyAt = new THREE.Vector2();
+function flushWoven() {
+  if (!woven.length) return;
+  const ctx = clothCanvas.getContext('2d');
+  const batch = woven.splice(0, 3);
+  clothTex.generateMipmaps = false;
+  batch.forEach(({ w, tile }, i) => {
+    ctx.drawImage(tile, w.x * CELL, w.row * CELL);
+    if (i === batch.length - 1) clothTex.generateMipmaps = true;
+    renderer.copyTextureToTexture(new THREE.CanvasTexture(tile), clothTex, null, copyAt.set(w.x * CELL, w.row * CELL));
+  });
+}
+
+const FINE_PX = CELL * 1.15;    // device pixels a cell beyond which the cloth looks soft
+const FINE_BUDGET = 24e6;       // texels of finer images kept on the GPU
+const VIEW = 0.6;               // radians from the line of sight that count as in view
+const HIRES_VS = PLAIN_VS;
+const HIRES_FS = /* glsl */ `
+uniform sampler2D uTex;
+uniform vec2 uCropOffset, uCropScale;
+uniform float uOpacity, uBright;
+varying vec2 vUv;
+float luma(vec3 c) { return dot(c, vec3(.2126, .7152, .0722)); }
+void main() {
+  vec3 c = texture2D(uTex, uCropOffset + vUv * uCropScale).rgb;
+  vec3 ghost = vec3(luma(c)) * vec3(.26, .24, .34);
+  c = mix(ghost, c, smoothstep(.06, .92, uBright)) * max(1., uBright);
+  gl_FragColor = vec4(c, uOpacity);
+}`;
+const fine = new Map();
+let fineQueue = [];
+/** Order the room by how far you would turn to face each work: the cloth weaves them
+ *  in that order, and wherever a work shows larger than the cloth's own pixels, a finer
+ *  image is laid over it, the ones in view first, then those just beyond it, up to a
+ *  memory budget. Turning within that reach finds them still there. */
+function updateSharp(now) {
+  if (S.tween || S.mode === 'outside') return;
+  camera.updateMatrixWorld();
+  const tanHalf = Math.tan((camera.fov * Math.PI) / 360), dpr = renderer.getPixelRatio();
+  const forward = camera.getWorldDirection(new THREE.Vector3());
+  const p = new THREE.Vector3(), d = new THREE.Vector3();
+  const room = [], wanted = [];
+  for (const w of works) {
+    if (web.lifted.has(w.index)) continue;
+    bendAt(w.x + w.w / 2, w.row + w.h / 2, 0, p);
+    d.copy(p).sub(camera.position);
+    const dist = d.length();
+    const turn = Math.acos(clamp(d.dot(forward) / dist, -1, 1));
+    if (S.mode === 'inside' && !sharp.has(w.index) && !failed.has(w.index) && !weaving.has(w.index)) room.push({ w, turn });
+    const px = (innerHeight * dpr) / (2 * tanHalf * dist);
+    if (px >= FINE_PX) wanted.push({ w, turn, perCell: px > 420 ? 512 : px > 300 ? 384 : 256 });
+  }
+  weaveQueue = room.sort((a, b) => a.turn - b.turn);
+  wanted.sort((a, b) => a.turn - b.turn);
+  // within the budget a work may load; a quarter beyond it, one already loaded may stay
+  const keep = new Set();
+  let used = 0;
+  fineQueue = [];
+  for (const item of wanted) {
+    const entry = fine.get(item.w.index);
+    used += item.w.w * item.w.h * Math.max(item.perCell, entry?.perCell ?? 0) ** 2;
+    if (used > FINE_BUDGET * 1.25) break;
+    keep.add(item.w.index);
+    if (entry) entry.seen = now;
+    if (used > FINE_BUDGET) continue;
+    if (!entry || (entry.state === 'ready' && item.perCell > entry.perCell)) fineQueue.push(item);
+  }
+  for (const [i, entry] of fine) if (!keep.has(i) && entry.state !== 'loading') dropFine(i, entry);
+}
+/** Six requests at a time: finer images in view, then the cloth's weaving, then the
+ *  finer images beyond the view. */
+function pumpSharp() {
+  while (requests < REQUESTS) {
+    const inView = fineQueue.length && fineQueue[0].turn < VIEW;
+    const item = inView || !weaveQueue.length ? fineQueue.shift() : weaveQueue.shift();
+    if (!item) return;
+    if (item.perCell) {
+      if (fine.get(item.w.index)?.state !== 'loading') loadFine(item.w, item.perCell);
+    } else if (!sharp.has(item.w.index) && !failed.has(item.w.index) && !weaving.has(item.w.index)) {
+      weaveIn(item.w);
+    }
+  }
+}
+async function loadFine(w, perCell) {
+  let entry = fine.get(w.index);
+  if (!entry) {
+    const material = new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: 0.03 }, uTex: { value: null }, uCropOffset: { value: new THREE.Vector2(0, 0) }, uCropScale: { value: new THREE.Vector2(1, 1) }, uOpacity: { value: 0 }, uBright: { value: 1 } }, vertexShader: HIRES_VS, fragmentShader: HIRES_FS, transparent: true, depthWrite: false });
+    const mesh = bent(new THREE.Mesh(gridGeometry(w.x, w.row, w.x + w.w, w.row + w.h, w.w * 4, 1, true), material));
+    mesh.visible = false;
+    mesh.renderOrder = 1;
+    entry = { mesh, material, perCell: 0, state: 'new', seen: performance.now(), fade: 0 };
+    fine.set(w.index, entry);
+  }
+  entry.state = 'loading';
+  requests++;
+  try {
+    arrivals.push({ w, entry, perCell, img: await loadImage(thumbUrl(w, stepForCell(w, perCell)), true) });
+  } catch {
+    entry.state = entry.perCell ? 'ready' : 'failed';
+  } finally {
+    requests--;
+  }
+}
+/** At most two finer images reach the GPU a frame, so a burst of arrivals never stalls one. */
+const arrivals = [];
+function settleArrivals() {
+  for (let n = 0; n < 2 && arrivals.length; n++) {
+    const { w, entry, perCell, img } = arrivals.shift();
+    if (fine.get(w.index) !== entry) continue;
+    entry.material.uniforms.uTex.value?.dispose();
+    entry.material.uniforms.uTex.value = imageTexture(img);
+    setCrop(entry.material, cropOf(w, img));
+    entry.perCell = perCell;
+    entry.state = 'ready';
+    entry.mesh.visible = true;
+  }
+}
+function dropFine(i, entry) {
+  scene.remove(entry.mesh);
+  entry.mesh.geometry.dispose();
+  entry.material.uniforms.uTex.value?.dispose();
+  entry.material.dispose();
+  fine.delete(i);
+}
+
+// ---------------------------------------------------------------- the web
+// A pull lifts the work toward you and its neighbours along each thread off the wall,
+// nearest in time first, at most 24 (features/art/loomWeb.ts). Their threads cross
+// the air of the rotunda: one from above is older, one from the side another saga.
+const WEB_MAX = 24;
+const LIFT_VS = /* glsl */ `varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.); }`;
+const LIFT_FS = /* glsl */ `
+uniform sampler2D uTex;
+uniform vec2 uCropOffset, uCropScale, uSize;
+uniform float uOpacity, uHeld, uHover;
+varying vec2 vUv;
+void main() {
+  vec3 c = texture2D(uTex, uCropOffset + vUv * uCropScale).rgb * (1. + uHover * .1);
+  vec2 e = min(vUv, 1. - vUv) * uSize;
+  float d = min(e.x, e.y);
+  float frame = uHeld > .5 ? max(step(d, .03), step(.055, d) * step(d, .068)) : step(d, .022) * .7;
+  c = mix(c, vec3(.99, .82, .40), frame);
+  gl_FragColor = vec4(c, uOpacity);
+}`;
+const plane = new THREE.PlaneGeometry(1, 1);
+const web = { focus: -1, along: null, threads: [], lifted: new Map(), isolate: -1, dirty: false };
+
+function spriteTexture(w) {
+  const [sheet, sx, sy, sw, sh] = spriteSource(w);
+  const c = document.createElement('canvas');
+  c.width = sw;
+  c.height = sh;
+  c.getContext('2d').drawImage(sheet, sx, sy, sw, sh, 0, 0, sw, sh);
+  return canvasTexture(c);
+}
+function liftWeb(focus, along) {
+  const list = along === null ? threadsOf[focus] : [along];
+  const chosen = new Set();
+  for (let ring = 1; chosen.size < WEB_MAX && ring < 150; ring++) {
+    for (const ti of list) {
+      const ws = threads[ti].works, at = ws.indexOf(focus);
+      for (const n of [ws[at - ring], ws[at + ring]]) if (n !== undefined && n !== focus && chosen.size < WEB_MAX) chosen.add(n);
+    }
+  }
+  return [...chosen];
+}
+function wallPose(w) {
+  return {
+    pos: bendAt(w.x + w.w / 2, w.row + w.h / 2, 0.02, new THREE.Vector3(), 1),
+    quat: new THREE.Quaternion().setFromRotationMatrix(wallBasis(w.x + w.w / 2, 1)),
+    s: 1,
+  };
+}
+function currentPose(l) { return { pos: l.mesh.position.clone(), quat: l.mesh.quaternion.clone(), s: l.s }; }
+function pull(focus, along = null) {
+  if (S.mode !== 'inside') return;
+  clearPattern(false);
+  const members = [focus, ...liftWeb(focus, along)];
+  const memberSet = new Set(members);
+  for (const [i, l] of web.lifted) {
+    if (memberSet.has(i)) continue;
+    l.from = currentPose(l);
+    l.to = wallPose(works[i]);
+    l.t = 0;
+    l.leaving = true;
+  }
+  const eye = S.pos.clone();
+  const view = camera.getWorldDirection(new THREE.Vector3());
+  // the held work fills about half the height of the view, whatever the lens; with a long
+  // one it stops well short of the wall and is drawn smaller there instead
+  const tanHalf = Math.tan((S.fov * Math.PI) / 360);
+  const hold = Math.min(2.25 / (0.92 * tanHalf), Math.max(3, (hitCloth(0, 0)?.t ?? 20) * 0.6));
+  const heldSize = 0.92 * hold * tanHalf;
+  for (const i of members) {
+    const w = works[i];
+    const wall = wallPose(w);
+    let to;
+    if (i === focus) {
+      // the held work comes to you along your line of sight, drawn toward the middle of the view
+      const pos = eye.clone().addScaledVector(wall.pos.clone().sub(eye).normalize().lerp(view, 0.55).normalize(), hold);
+      to = { pos, quat: new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().lookAt(eye, pos, new THREE.Vector3(0, 1, 0))), s: heldSize / Math.max(w.w, w.h) };
+    } else {
+      // neighbours step well off the wall, a large work no larger than a cell and a half,
+      // so the held work stays the largest thing in the room
+      const lift = 2.6 + 1.2 * ((i * 2654435761) % 1000) / 1000;
+      to = { pos: wall.pos.clone().addScaledVector(new THREE.Vector3(0, 0, 1).applyQuaternion(wall.quat), lift), quat: wall.quat, s: Math.min(1, 1.4 / Math.max(w.w, w.h)) };
+    }
+    let l = web.lifted.get(i);
+    if (!l) {
+      const material = new THREE.ShaderMaterial({ uniforms: { uTex: { value: spriteTexture(w) }, uCropOffset: { value: new THREE.Vector2(0, 0) }, uCropScale: { value: new THREE.Vector2(1, 1) }, uSize: { value: new THREE.Vector2(w.w, w.h) }, uOpacity: { value: 1 }, uHeld: { value: 0 }, uHover: { value: 0 } }, vertexShader: LIFT_VS, fragmentShader: LIFT_FS, transparent: true, side: THREE.DoubleSide });
+      const mesh = new THREE.Mesh(plane, material);
+      mesh.userData.work = i;
+      mesh.renderOrder = 2;
+      scene.add(mesh);
+      l = { work: i, mesh, material, from: wall, to, t: 0, s: 1, leaving: false, wanted: 0 };
+      web.lifted.set(i, l);
+    } else {
+      l.from = currentPose(l);
+    }
+    l.to = to;
+    l.t = 0;
+    l.leaving = false;
+    l.material.uniforms.uHeld.value = i === focus ? 1 : 0;
+    sharpenLifted(l, i === focus ? 1024 : 384);
+  }
+  web.focus = focus;
+  web.along = along;
+  web.isolate = -1;
+  web.threads = along === null ? threadsOf[focus] : [along];
+  web.dirty = true;
+  setBrightness();
+  renderRail();
+  renderHint();
+}
+/** A lifted work's own image, `longSide` pixels along its longer edge. */
+function sharpenLifted(l, longSide) {
+  if (l.wanted >= longSide) return;
+  l.wanted = longSide;
+  const w = works[l.work];
+  const perCell = longSide / Math.max(w.w, w.h);
+  loadImage(thumbUrl(w, stepForCell(w, perCell)), true).then((img) => {
+    if (web.lifted.get(l.work) !== l) return;
+    l.material.uniforms.uTex.value.dispose();
+    l.material.uniforms.uTex.value = imageTexture(img);
+    setCrop(l.material, cropOf(w, img));
+  }).catch(() => {});
+}
+/** Let the web go at once, with no flight back to the wall. */
+function dropWeb() {
+  for (const l of web.lifted.values()) {
+    scene.remove(l.mesh);
+    l.material.uniforms.uTex.value.dispose();
+    l.material.dispose();
+  }
+  web.lifted.clear();
+  web.focus = -1;
+  web.threads = [];
+  setLines(webLines, [], []);
+  setBrightness();
+}
+function release() {
+  if (web.focus < 0) return;
+  for (const [i, l] of web.lifted) {
+    l.from = currentPose(l);
+    l.to = wallPose(works[i]);
+    l.t = 0;
+    l.leaving = true;
+  }
+  web.focus = -1;
+  web.threads = [];
+  web.dirty = true;
+  setBrightness();
+  renderRail();
+  renderHint();
+}
+function animateWeb(dt) {
+  let moving = web.dirty;
+  for (const [i, l] of web.lifted) {
+    if (l.t >= 1 && !l.leaving) continue;
+    moving = true;
+    l.t = Math.min(1, l.t + dt / (reduce ? 0.2 : l.leaving ? 0.6 : 0.9));
+    const e = 1 - Math.pow(1 - l.t, 3);
+    l.mesh.position.lerpVectors(l.from.pos, l.to.pos, e);
+    l.mesh.quaternion.slerpQuaternions(l.from.quat, l.to.quat, e);
+    l.s = lerp(l.from.s, l.to.s, e);
+    const w = works[i];
+    l.mesh.scale.set(w.w * l.s, w.h * l.s, 1);
+    l.material.uniforms.uSize.value.set(w.w * l.s, w.h * l.s);
+    if (l.leaving) {
+      l.material.uniforms.uOpacity.value = 1 - smooth(0.7, 1, l.t);
+      if (l.t >= 1) {
+        scene.remove(l.mesh);
+        l.material.uniforms.uTex.value.dispose();
+        l.material.dispose();
+        web.lifted.delete(i);
+      }
+    }
+  }
+  if (!moving) return;
+  web.dirty = false;
+  const positions = [], colors = [];
+  // a neighbour hangs from the top of its frame; the held work lets its threads out
+  // at the edge of its frame that faces the other end
+  const end = (l, other) => {
+    const w = works[l.work], hw = (w.w * l.s) / 2, hh = (w.h * l.s) / 2;
+    if (l.work !== web.focus) return l.mesh.position.clone().add(new THREE.Vector3(0, hh, 0).applyQuaternion(l.mesh.quaternion));
+    const local = other.clone().sub(l.mesh.position).applyQuaternion(l.mesh.quaternion.clone().invert());
+    const scale = Math.max(Math.abs(local.x) / hw, Math.abs(local.y) / hh, 1e-6);
+    return l.mesh.position.clone().add(new THREE.Vector3(local.x / scale, local.y / scale, 0.01).applyQuaternion(l.mesh.quaternion));
+  };
+  for (const ti of web.threads) {
+    const t = threads[ti];
+    const on = t.works.filter((i) => web.lifted.has(i) && !web.lifted.get(i).leaving);
+    const k = web.isolate < 0 || web.isolate === ti ? 1 : 0.1;
+    for (let j = 0; j + 1 < on.length; j++) {
+      const la = web.lifted.get(on[j]), lb = web.lifted.get(on[j + 1]);
+      const held = la.work === web.focus || lb.work === web.focus;
+      pushArc(end(la, lb.mesh.position), end(lb, la.mesh.position), sagaLinear[t.saga], k, positions, colors, 20, held ? 0 : 0.3);
+    }
+  }
+  setLines(webLines, positions, colors);
+}
+
+// ---------------------------------------------------------------- Patterns
+let pattern = -1, patternLit = new Set();
+function showPattern(pi) {
+  if (S.mode === 'flat') { enterInside(-1, () => showPattern(pi)); return; }
+  if (S.mode !== 'inside') return;
+  release();
+  pattern = pi;
+  const p = data.patterns[pi];
+  patternLit = new Set([...p.stops.map((s) => s.work), ...p.members]);
+  const gold = new THREE.Color('#fcd34d');
+  const points = p.stops.map((s) => { const w = works[s.work]; return bendAt(w.x + w.w / 2, w.row + w.h / 2, 0.3, new THREE.Vector3(), 1); });
+  const positions = [], colors = [];
+  for (let j = 0; j + 1 < points.length; j++) pushArc(points[j], points[j + 1], gold, 1, positions, colors, 32, 0.22);
+  setLines(patternLines, positions, colors);
+  lookToward(points[0]);
+  setBrightness();
+  renderRail();
+}
+function clearPattern(render = true) {
+  if (pattern < 0) return;
+  pattern = -1;
+  patternLit = new Set();
+  setLines(patternLines, [], []);
+  setBrightness();
+  if (render) renderRail();
+}
+/** Walk round the rim until a point on the wall is straight across the room. */
+function lookToward(point) {
+  S.yawGoal = unwrapNear(Math.atan2(point.x, R - point.z), S.yaw);
+  S.pitchGoal = clamp(Math.atan2(point.y - S.yGoal, R + S.dGoal), -1.2, 1.2);
+}
+
+// ---------------------------------------------------------------- brightness
+let hover = -1, hoverBack = -1;
+function setBrightness() {
+  for (let i = 0; i < works.length; i++) {
+    let g = 1;
+    if (web.focus >= 0) g = web.lifted.has(i) && !web.lifted.get(i).leaving ? 0.05 : 0.2;
+    else if (pattern >= 0) g = patternLit.has(i) ? 1.1 : 0.22;
+    if (i === hover && S.mode !== 'outside' && !web.lifted.has(i)) g = Math.max(g, 1) * 1.14;
+    brightGoal[i] = g;
+  }
+}
+function easeBrightness(dt) {
+  const k = 1 - Math.exp(-dt * 9);
+  let changed = false;
+  for (let i = 0; i < works.length; i++) {
+    const d = brightGoal[i] - bright[i];
+    if (d === 0) continue;
+    bright[i] = Math.abs(d) < 0.003 ? brightGoal[i] : bright[i] + d * k;
+    changed = true;
+  }
+  if (changed) writeCells();
+}
+
+// ---------------------------------------------------------------- the camera
+// Flat, it stands before the cloth. Inside, it stands on the axis with the widest lens,
+// turning in place so the whole room goes round it, and drifts toward whatever it looks
+// at. Outside, it circles the drum and looks at its back.
+// ?stand=back stands back across the room from the wall it looks at instead, with a long
+// lens, so the works keep their distance and the drum does not bend round the edges of
+// the view; turning walks it round the rim.
+const centred = params.get('stand') !== 'back';
+let homeD = centred ? 0 : R - 2.6;   // how far behind the axis the visitor stands
+let lens = Math.round(clamp(Number(params.get('fov')) || (centred ? 60 : 24), 14, 60));
+const S = {
+  mode: 'flat', tween: null,
+  pos: new THREE.Vector3(), yaw: 0, pitch: 0, fov: 34,
+  yawGoal: 0, pitchGoal: 0,
+  d: homeD, y: 0, dGoal: homeD, yGoal: 0,
+  orbit: { yaw: 0, el: 0.42, dist: 3.1 * R, yawGoal: 0, elGoal: 0.42, distGoal: 3.1 * R },
+  back: 0, weaveFlat: 0.6,
+};
+/** Where the visitor stands inside: `d` behind the axis from the way they look, at height y. */
+function rimPos(yaw, d, y) { return new THREE.Vector3(-Math.sin(yaw) * d, y, R + Math.cos(yaw) * d); }
+function flatPose() {
+  const t = Math.tan((34 * Math.PI) / 360), aspect = innerWidth / innerHeight;
+  // the cloth with its beam and weights, clear of the bar above and the dock below
+  const d = Math.max((H + 12) / 2 / t, (W + 14) / 2 / (t * aspect));
+  return { B: 0, back: 0, pos: new THREE.Vector3(W / 2 - U.uCenter.value, -1.4, d), yaw: 0, pitch: 0, fov: 34 };
+}
+function insidePose(y = 0, yaw = 0, pitch = 0) { return { B: 1, back: 0, pos: rimPos(yaw, homeD, y), yaw, pitch, fov: lens, d: homeD, y }; }
+function orbitPos(yaw, el, dist) { return new THREE.Vector3(-Math.sin(yaw) * dist * Math.cos(el), dist * Math.sin(el), R + Math.cos(yaw) * dist * Math.cos(el)); }
+function outsidePose(yaw) { return { B: 1, back: 1, pos: orbitPos(yaw, 0.42, 3.1 * R), yaw, pitch: -0.42, fov: 46 }; }
+function tween(to, seconds, kind, done) {
+  const from = { B: U.uBend.value, back: S.back, pos: S.pos.clone(), yaw: S.yaw, pitch: S.pitch, fov: S.fov };
+  to.yaw = unwrapNear(to.yaw, from.yaw);
+  S.tween = { from, to, t: 0, dur: reduce ? 0.35 : seconds, kind, done };
+  hideCard();
+}
+function stepTween(dt) {
+  const tw = S.tween;
+  tw.t = Math.min(1, tw.t + dt / tw.dur);
+  const q = tw.t < 0.5 ? 4 * tw.t ** 3 : 1 - (-2 * tw.t + 2) ** 3 / 2;
+  // while the cloth closes, the visitor walks in a little late, so it closes behind them
+  const c = tw.kind === 'curl' ? q * q * (3 - 2 * q) : q;
+  const { from: f, to } = tw;
+  U.uBend.value = lerp(f.B, to.B, q);
+  S.back = lerp(f.back, to.back, q);
+  S.pos.lerpVectors(f.pos, to.pos, c);
+  S.yaw = lerp(f.yaw, to.yaw, c);
+  S.pitch = lerp(f.pitch, to.pitch, c);
+  S.fov = lerp(f.fov, to.fov, c);
+  if (tw.kind === 'curl') clothUniforms.uWeave.value = S.weaveFlat * (1 - U.uBend.value);
+  if (tw.t < 1) return;
+  S.tween = null;
+  S.yawGoal = S.yaw;
+  S.pitchGoal = S.pitch;
+  if (to.d !== undefined) {
+    S.d = S.dGoal = to.d;
+    S.y = S.yGoal = to.y;
+  }
+  tw.done?.();
+}
+function userCamera(dt) {
+  if (S.mode === 'flat') return;
+  const k = 1 - Math.exp(-dt * 12);
+  if (S.mode === 'outside') {
+    const o = S.orbit;
+    o.yaw += (o.yawGoal - o.yaw) * k;
+    o.el += (o.elGoal - o.el) * k;
+    o.dist += (o.distGoal - o.dist) * (1 - Math.exp(-dt * 7));
+    S.pos.copy(orbitPos(o.yaw, o.el, o.dist));
+    S.yaw = o.yaw;
+    S.pitch = -Math.atan2(S.pos.y, Math.hypot(S.pos.x, S.pos.z - R));
+    return;
+  }
+  S.yaw += (S.yawGoal - S.yaw) * k;
+  S.pitch += (S.pitchGoal - S.pitch) * k;
+  const m = 1 - Math.exp(-dt * 6);
+  S.d += (S.dGoal - S.d) * m;
+  S.y += (S.yGoal - S.y) * m;
+  S.fov += (lens - S.fov) * m;
+  S.pos.copy(rimPos(S.yaw, S.d, S.y));
+}
+/** How fast a drag turns: a longer lens turns slower, so the wall still follows the hand. */
+const turnRate = () => S.fov / 30;
+/** Drift toward what you look at: level to cross the room, up or down through time. */
+function drift(step) {
+  S.dGoal = clamp(S.dGoal - step * Math.cos(S.pitchGoal), -(R - 2.4), R - 2.2);
+  S.yGoal = clamp(S.yGoal + step * Math.sin(S.pitchGoal), BOTTOM - 2, TOP + 1);
+}
+function applyCamera() {
+  const cp = Math.cos(S.pitch);
+  camera.position.copy(S.pos);
+  camera.lookAt(S.pos.x + Math.sin(S.yaw) * cp, S.pos.y + Math.sin(S.pitch), S.pos.z - Math.cos(S.yaw) * cp);
+  if (camera.fov !== S.fov) { camera.fov = S.fov; camera.updateProjectionMatrix(); }
+}
+
+// ---------------------------------------------------------------- the three states
+/** The column a direction looks at, once the drum is closed. */
+function columnAt(yaw) { return (((yaw * R + U.uCenter.value) % W) + W) % W; }
+function enterInside(work = -1, done) {
+  if (S.mode !== 'flat' || S.tween) return;
+  // the cloth closes round the work you chose, or round the column in front of you
+  const centre = work >= 0 ? works[work].x + works[work].w / 2 : clamp(S.pos.x + U.uCenter.value, 0, W);
+  S.pos.x += U.uCenter.value - centre;
+  U.uCenter.value = centre;
+  let y = 0, pitch = 0;
+  if (work >= 0) {
+    const v = H / 2 - (works[work].row + works[work].h / 2);
+    y = clamp(v * 0.7, BOTTOM + 3, TOP - 3);
+    pitch = Math.atan2(v - y, R + homeD);
+  }
+  S.mode = 'entering';
+  renderHint();
+  tween(insidePose(y, 0, pitch), 2.9, 'curl', () => {
+    S.mode = 'inside';
+    renderAll();
+    if (work >= 0) pull(work);
+    done?.();
+  });
+}
+function leaveInside() {
+  if (S.mode !== 'inside' || S.tween) return;
+  dropWeb();
+  clearPattern(false);
+  // turn the drum under you so the column you face is where the cloth unrolls from
+  U.uCenter.value = columnAt(S.yaw);
+  S.yaw = S.yawGoal = 0;
+  S.pos.copy(rimPos(0, S.d, S.y));
+  S.mode = 'leaving';
+  renderHint();
+  tween(flatPose(), 2.6, 'curl', () => { S.mode = 'flat'; renderAll(); });
+}
+function turnOutside() {
+  if (S.mode !== 'inside' || S.tween) return;
+  release();
+  clearPattern(false);
+  buildBack();
+  S.mode = 'turning';
+  renderAll();
+  const yaw = S.yaw;
+  tween(outsidePose(yaw), 2.3, 'turn', () => {
+    S.mode = 'outside';
+    Object.assign(S.orbit, { yaw, el: 0.42, dist: 3.1 * R, yawGoal: yaw, elGoal: 0.42, distGoal: 3.1 * R });
+    renderAll();
+  });
+}
+function turnInside(work = -1) {
+  if (S.mode !== 'outside' || S.tween) return;
+  setLines(backHot, [], []);
+  hoverBack = -1;
+  let y = 0, yaw = S.yaw, pitch = 0;
+  if (work >= 0) {
+    const w = works[work];
+    yaw = (w.x + w.w / 2 - U.uCenter.value) / R;
+    const v = H / 2 - (w.row + w.h / 2);
+    y = clamp(v * 0.7, BOTTOM + 3, TOP - 3);
+    pitch = Math.atan2(v - y, R + homeD);
+  }
+  S.mode = 'turning';
+  renderHint();
+  tween(insidePose(y, unwrapNear(yaw, S.yaw), pitch), 2.3, 'turn', () => {
+    S.mode = 'inside';
+    renderAll();
+    if (work >= 0) pull(work);
+  });
+}
+function goHome() {
+  S.dGoal = homeD;
+  S.yGoal = 0;
+  S.pitchGoal = 0;
+}
+function back() {
+  if (plateOn) return closePlate();
+  if (S.tween) return;
+  if (web.focus >= 0) return release();
+  if (pattern >= 0) return clearPattern();
+  if (S.mode === 'outside') return turnInside();
+  if (S.mode === 'inside') {
+    if (Math.abs(S.d - homeD) > 0.5 || Math.abs(S.y) > 0.5 || Math.abs(S.pitch) > 0.05) return goHome();
+    return leaveInside();
+  }
+}
+
+// ---------------------------------------------------------------- picking
+const ray = new THREE.Raycaster();
+const ndc = new THREE.Vector2();
+/** Where a screen point meets the cloth: the plane when flat, the drum when closed. */
+function hitCloth(nx, ny) {
+  ndc.set(nx, ny);
+  ray.setFromCamera(ndc, camera);
+  const o = ray.ray.origin, d = ray.ray.direction;
+  const b = U.uBend.value;
+  let gx, gy, t, backSide = false;
+  if (b < 1e-4) {
+    if (Math.abs(d.z) < 1e-6) return null;
+    t = -o.z / d.z;
+    if (t <= 0) return null;
+    gx = o.x + d.x * t + U.uCenter.value;
+    gy = H / 2 - (o.y + d.y * t);
+  } else if (b > 0.999) {
+    const ox = o.x, oz = o.z - R;
+    const qa = d.x * d.x + d.z * d.z, qb = 2 * (ox * d.x + oz * d.z), qc = ox * ox + oz * oz - R * R;
+    const disc = qb * qb - 4 * qa * qc;
+    if (disc < 0 || qa < 1e-9) return null;
+    backSide = qc > 0;
+    t = backSide ? (-qb - Math.sqrt(disc)) / (2 * qa) : (-qb + Math.sqrt(disc)) / (2 * qa);
+    if (t <= 0) return null;
+    const px = o.x + d.x * t, pz = o.z + d.z * t;
+    gx = columnAt(Math.atan2(px, R - pz));
+    gy = H / 2 - (o.y + d.y * t);
+  } else return null;
+  const inside = gx >= 0 && gx < W && gy >= 0 && gy < H;
+  return { gx, gy, t, back: backSide, work: inside ? cellOf[Math.floor(gy) * W + Math.floor(gx)] : -1 };
+}
+function hitLifted(nx, ny) {
+  ndc.set(nx, ny);
+  ray.setFromCamera(ndc, camera);
+  const meshes = [...web.lifted.values()].filter((l) => !l.leaving).map((l) => l.mesh);
+  return ray.intersectObjects(meshes, false)[0]?.object.userData.work ?? -1;
+}
+function pickAt(x, y) {
+  const nx = (x / innerWidth) * 2 - 1, ny = -(y / innerHeight) * 2 + 1;
+  if (S.tween || plateOn) return { work: -1 };
+  if (S.mode === 'inside') {
+    const lifted = hitLifted(nx, ny);
+    if (lifted >= 0) return { work: lifted, lifted: true };
+    const hit = hitCloth(nx, ny);
+    return { work: hit && !hit.back ? hit.work : -1 };
+  }
+  if (S.mode === 'outside') { const hit = hitCloth(nx, ny); return { work: hit && hit.back ? hit.work : -1 }; }
+  if (S.mode === 'flat') { const hit = hitCloth(nx, ny); return { work: hit ? hit.work : -1 }; }
+  return { work: -1 };
+}
+
+// ---------------------------------------------------------------- input
+let down = null, pointer = null, plateOn = false;
+canvas.addEventListener('pointerdown', (e) => {
+  down = { x: e.clientX, y: e.clientY, moved: false };
+  canvas.setPointerCapture(e.pointerId);
+});
+canvas.addEventListener('pointermove', (e) => {
+  pointer = { x: e.clientX, y: e.clientY };
+  if (!down) return;
+  const dx = e.clientX - down.x, dy = e.clientY - down.y;
+  if (!down.moved && Math.hypot(dx, dy) > 4) { down.moved = true; canvas.classList.add('dragging'); hideCard(); }
+  if (!down.moved) return;
+  if (S.mode === 'inside') {
+    // across, the far wall follows the hand; up and down, the head tilts
+    S.yawGoal -= dx * 0.0013 * turnRate();
+    S.pitchGoal = clamp(S.pitchGoal + dy * 0.0011 * turnRate(), -1.2, 1.2);
+  } else if (S.mode === 'outside') {
+    S.orbit.yawGoal -= dx * 0.005;
+    S.orbit.elGoal = clamp(S.orbit.elGoal + dy * 0.004, -0.12, 1.2);
+  }
+  down.x = e.clientX;
+  down.y = e.clientY;
+});
+canvas.addEventListener('pointerup', (e) => {
+  const click = down && !down.moved;
+  down = null;
+  canvas.classList.remove('dragging');
+  if (click) onClick(e.clientX, e.clientY);
+});
+canvas.addEventListener('pointerleave', () => { pointer = null; });
+canvas.addEventListener('dblclick', () => { if (S.mode === 'inside' && !S.tween) { release(); goHome(); } });
+canvas.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  if (S.tween || plateOn) return;
+  const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1;
+  const dy = e.deltaY * unit, dx = e.deltaX * unit;
+  if (S.mode === 'inside') {
+    drift(-dy * (e.ctrlKey ? 0.06 : 0.02));
+    S.yawGoal -= dx * 0.0012 * turnRate();
+  } else if (S.mode === 'outside') {
+    S.orbit.distGoal = clamp(S.orbit.distGoal * Math.exp(dy * 0.0012), R * 1.7, R * 6);
+    S.orbit.yawGoal -= dx * 0.0025;
+  }
+}, { passive: false });
+addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') return back();
+  // the lens slider takes its own arrows, a focused button its own Enter and Space
+  if (e.target instanceof HTMLInputElement) return;
+  if (e.target instanceof HTMLButtonElement && (e.key === 'Enter' || e.key === ' ')) return;
+  if (plateOn) {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') walkPlate(e.key === 'ArrowRight' ? 1 : -1);
+    return;
+  }
+  if (e.key === 't' || e.key === 'T') return S.mode === 'inside' ? turnOutside() : S.mode === 'outside' ? turnInside() : undefined;
+  if (e.key === 'Enter') return S.mode === 'flat' ? enterInside() : S.mode === 'inside' ? leaveInside() : undefined;
+  if (S.mode !== 'inside' || S.tween) return;
+  if (e.key === 'ArrowLeft') S.yawGoal -= 0.25 * turnRate();
+  if (e.key === 'ArrowRight') S.yawGoal += 0.25 * turnRate();
+  if (e.key === 'ArrowUp') drift(2.5);
+  if (e.key === 'ArrowDown') drift(-2.5);
+});
+function onClick(x, y) {
+  if (S.tween || plateOn) return;
+  const pick = pickAt(x, y);
+  if (S.mode === 'flat') return pick.work >= 0 ? enterInside(pick.work) : undefined;
+  if (S.mode === 'outside') return pick.work >= 0 ? turnInside(pick.work) : undefined;
+  if (S.mode !== 'inside') return;
+  if (pick.lifted) return pick.work === web.focus ? openPlate(pick.work) : pull(pick.work);
+  if (pick.work >= 0) return pull(pick.work);
+  release();
+}
+$('enter').addEventListener('click', () => (S.mode === 'flat' ? enterInside() : leaveInside()));
+$('turn').addEventListener('click', () => (S.mode === 'inside' ? turnOutside() : turnInside()));
+$('plateClose').addEventListener('click', closePlate);
+$('plate').addEventListener('click', (e) => { if (e.target === $('plate')) closePlate(); });
+addEventListener('resize', () => {
+  renderer.setSize(innerWidth, innerHeight, false);
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  for (const m of lineMaterials) m.resolution.set(innerWidth, innerHeight);
+  if (S.mode === 'flat') S.pos.copy(flatPose().pos);
+});
+
+// ---------------------------------------------------------------- hover
+const card = $('card');
+let cardWork = -1;
+function hideCard() { card.classList.remove('on'); cardWork = -1; }
+function updateHover() {
+  const pick = pointer && !down ? pickAt(pointer.x, pointer.y) : { work: -1 };
+  const w = pick.work;
+  canvas.classList.toggle('on-work', w >= 0);
+  for (const l of web.lifted.values()) l.material.uniforms.uHover.value = l.work === w ? 1 : 0;
+  if (S.mode === 'outside') {
+    if (w !== hoverBack) {
+      hoverBack = w;
+      if (w >= 0) {
+        const [positions, colors] = stitchesOnBack(threadsOf[w]);
+        setLines(backHot, positions, colors.map((c) => Math.min(1, c * 1.6)));
+      } else setLines(backHot, [], []);
+    }
+  }
+  if (w !== hover) { hover = w; setBrightness(); }
+  if (w < 0) return hideCard();
+  if (w !== cardWork) {
+    cardWork = w;
+    const work = works[w];
+    card.innerHTML = `<div class="k" style="color:${SAGA_HEX[work.saga]}"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:${SAGA_HEX[work.saga]}"></span>${SAGA_LABEL[work.saga]}</div><div class="t">${esc(work.title)}</div><div class="a">${esc(work.artist)} · ${esc(work.year)}${S.mode === 'outside' ? ` · ${threadsOf[w].length} threads` : ''}</div>`;
+  }
+  const box = card.getBoundingClientRect();
+  card.style.transform = `translate(${Math.min(pointer.x + 18, innerWidth - box.width - 12)}px, ${Math.min(pointer.y + 18, innerHeight - box.height - 12)}px)`;
+  card.classList.add('on');
+}
+
+// ---------------------------------------------------------------- rail, hint, readout
+function renderRail() {
+  const rail = $('rail');
+  if (S.mode === 'outside' || S.mode === 'turning') { rail.classList.add('hidden'); return; }
+  rail.classList.remove('hidden');
+  if (web.focus >= 0) {
+    const w = works[web.focus];
+    const list = (web.along === null ? threadsOf[web.focus] : [web.along]).map((ti) => threads[ti]).sort((a, b) => b.works.length - a.works.length);
+    rail.innerHTML = `<h2>${SAGA_LABEL[w.saga]} · ${eraOf(w.row).label}</h2><div class="title">${esc(w.title)}</div><p class="by">${esc(w.artist)}, ${esc(w.year)}</p><h2>Threads</h2><p class="sub">${list.length ? 'Hover one to follow it, click to pull along it' : 'No other work shows these figures'}</p><ul>${list.map((t) => `<li data-thread="${t.index}" class="${web.along === t.index ? 'on' : ''}"><span class="dot" style="background:${SAGA_HEX[t.saga]}"></span>${esc(t.name)}<span class="n">${t.works.length}</span></li>`).join('')}</ul><div class="link" id="openPlate">Open the plate</div>`;
+    rail.querySelectorAll('li').forEach((li) => {
+      const ti = Number(li.dataset.thread);
+      li.addEventListener('mouseenter', () => { web.isolate = ti; web.dirty = true; });
+      li.addEventListener('mouseleave', () => { web.isolate = -1; web.dirty = true; });
+      li.addEventListener('click', () => pull(web.focus, web.along === ti ? null : ti));
+    });
+    $('openPlate').addEventListener('click', () => openPlate(web.focus));
+    return;
+  }
+  if (pattern >= 0) {
+    const p = data.patterns[pattern];
+    rail.innerHTML = `<h2>Pattern</h2><div class="title">${esc(p.title)}</div><p class="note">${esc(p.summary)}</p><ul>${p.stops.map((s) => `<li data-work="${s.work}"><span class="dot" style="background:#fcd34d"></span>${esc(works[s.work].title)}<span class="n">${esc(works[s.work].year)}</span></li>`).join('')}</ul><div class="link" id="leavePattern">Leave the pattern · Esc</div>`;
+    rail.querySelectorAll('li').forEach((li) => li.addEventListener('click', () => pull(Number(li.dataset.work))));
+    $('leavePattern').addEventListener('click', () => clearPattern());
+    return;
+  }
+  rail.innerHTML = `<h2>Patterns</h2><p class="sub">Gold threads through one gesture</p><ul>${data.patterns.map((p, i) => `<li data-pattern="${i}"><span class="dot" style="background:#fcd34d"></span>${esc(p.title)}<span class="n">${p.stops.length}</span></li>`).join('')}</ul>`;
+  rail.querySelectorAll('li').forEach((li) => li.addEventListener('click', () => showPattern(Number(li.dataset.pattern))));
+}
+function renderHint() {
+  const enter = $('enter'), turn = $('turn');
+  enter.hidden = !(S.mode === 'flat' || S.mode === 'inside');
+  enter.textContent = S.mode === 'flat' ? 'Step inside' : 'Step out';
+  enter.classList.toggle('primary', S.mode === 'flat');
+  turn.hidden = !(S.mode === 'inside' || S.mode === 'outside');
+  turn.textContent = S.mode === 'outside' ? 'Back inside' : 'Turn the cloth';
+  turn.classList.toggle('primary', S.mode === 'outside');
+  $('head').style.opacity = S.mode === 'flat' ? 1 : 0;
+  $('optics').hidden = S.mode !== 'inside';
+  const hints = {
+    flat: 'Click any work to step inside beside it',
+    inside: web.focus >= 0
+      ? 'Click a neighbour to walk the web · click the held work for its plate · Esc lets go'
+      : 'Drag to look around · scroll to drift toward what you see · click a work to pull its threads',
+    outside: 'The back of the cloth: drag to walk round it · hover a work to light its threads · click to step back in there',
+  };
+  $('hint').textContent = hints[S.mode] ?? '';
+}
+function renderAll() { renderRail(); renderHint(); }
+
+/** The lens and the stance, kept in the address so a reload or a shared link keeps them. */
+function remember() {
+  const query = new URLSearchParams(location.search);
+  query.set('fov', String(lens));
+  if (homeD === 0) query.delete('stand'); else query.set('stand', 'back');
+  history.replaceState(null, '', `?${query}`);
+}
+function showOptics() {
+  $('lens').value = String(lens);
+  $('lensOut').textContent = `${lens}°`;
+  $('standBack').classList.toggle('on', homeD !== 0);
+  $('standCentre').classList.toggle('on', homeD === 0);
+}
+$('lens').addEventListener('input', () => {
+  lens = Number($('lens').value);
+  showOptics();
+  remember();
+});
+for (const [id, centre] of [['standBack', false], ['standCentre', true]]) {
+  $(id).addEventListener('click', () => {
+    homeD = centre ? 0 : R - 2.6;
+    S.dGoal = homeD;
+    showOptics();
+    remember();
+  });
+}
+showOptics();
+function readout() {
+  const label = $('eraLabel'), sub = $('eraSub');
+  if (S.mode === 'outside' || S.mode === 'turning') { label.textContent = 'The back of the cloth'; sub.textContent = `${threads.length} threads, ${stitchCount.toLocaleString('en-US')} stitches`; return; }
+  if (S.mode !== 'inside') { label.textContent = 'The Loom'; sub.textContent = `${works.length.toLocaleString('en-US')} works`; return; }
+  const hit = hitCloth(0, 0);
+  if (!hit || hit.back) return;
+  if (hit.gy < 0) { label.textContent = 'The beam'; sub.textContent = 'where the weaving begins'; return; }
+  if (hit.gy >= H) { label.textContent = 'The weights'; sub.textContent = 'where the warp ends'; return; }
+  const era = eraOf(Math.floor(hit.gy));
+  label.textContent = era.label;
+  const w = hit.work >= 0 ? works[hit.work] : null;
+  sub.textContent = w ? SAGA_LABEL[w.saga] : era.sub;
+}
+
+// ---------------------------------------------------------------- the plate
+let details = null, plateWork = -1;
+async function openPlate(i) {
+  plateWork = i;
+  const w = works[i];
+  details ??= await fetch(ART + 'details.json').then((r) => r.json()).catch(() => ({}));
+  if (plateWork !== i) return;
+  const d = details[w.id] ?? {};
+  const img = $('plateImg');
+  img.src = thumbUrl(w, stepFor(w, 1280));
+  img.alt = w.title;
+  const credit = d.credit
+    ? `${esc(d.credit.license)}${d.credit.author ? ` · ${esc(d.credit.author)}` : ''} · <a href="${esc(d.credit.pageUrl)}" target="_blank" rel="noopener">Wikimedia Commons</a>`
+    : '';
+  $('plateText').innerHTML = `<div class="kicker">${SAGA_LABEL[w.saga]} · ${eraOf(w.row).label} · ${MEDIUM_LABEL[w.medium]}</div><h3>${esc(w.title)}</h3><p class="by">${esc(w.artist)}, ${esc(w.year)}</p>${d.caption ? `<p class="caption">${esc(d.caption)}</p>` : ''}${d.figures?.length ? `<p class="stars">Stars in this work: ${d.figures.map((f) => esc(f.name)).join(', ')}</p>` : ''}<p class="credit">${credit}</p>`;
+  $('plate').classList.add('on');
+  plateOn = true;
+  hideCard();
+}
+function walkPlate(direction) {
+  const order = works.map((w) => w.index).sort((a, b) => works[a].sortYear - works[b].sortYear || a - b);
+  const next = order[order.indexOf(plateWork) + direction];
+  if (next !== undefined) openPlate(next);
+}
+function closePlate() {
+  $('plate').classList.remove('on');
+  plateOn = false;
+  plateWork = -1;
+}
+
+// ---------------------------------------------------------------- the loop
+paintCloth(sheetImg, atlas.cell, anchorsImg);
+writeCells();
+sheetRef = sheetPixels(sheetImg);
+anchorRef = sheetPixels(anchorsImg);
+// Compile every shader the room will use now, behind the veil, rather than on first
+// use: a first compile stalls a frame for a third of a second. The template materials
+// stay alive, so their programs stay cached for the works that use them later.
+{
+  const templates = [
+    new THREE.Mesh(plane, new THREE.ShaderMaterial({ uniforms: { ...U, uLift: { value: 0 }, uTex: { value: clothTex }, uCropOffset: { value: new THREE.Vector2() }, uCropScale: { value: new THREE.Vector2(1, 1) }, uOpacity: { value: 0 }, uBright: { value: 1 } }, vertexShader: HIRES_VS, fragmentShader: HIRES_FS, transparent: true, depthWrite: false })),
+    new THREE.Mesh(plane, new THREE.ShaderMaterial({ uniforms: { uTex: { value: clothTex }, uCropOffset: { value: new THREE.Vector2() }, uCropScale: { value: new THREE.Vector2(1, 1) }, uSize: { value: new THREE.Vector2(1, 1) }, uOpacity: { value: 0 }, uHeld: { value: 0 }, uHover: { value: 0 } }, vertexShader: LIFT_VS, fragmentShader: LIFT_FS, transparent: true, side: THREE.DoubleSide })),
+  ];
+  const hidden = [mirror, webLines, patternLines, backLines, backHot].filter((o) => !o.visible);
+  for (const o of hidden) o.visible = true;
+  for (const t of templates) scene.add(t);
+  renderer.compile(scene, camera);
+  for (const t of templates) scene.remove(t);
+  for (const o of hidden) o.visible = false;
+}
+S.pos.copy(flatPose().pos);
+renderAll();
+let fell = reduce ? H + 1 : 0;
+let last = performance.now(), hiresClock = 0, readClock = 0;
+function frame(now) {
+  requestAnimationFrame(frame);
+  const dt = Math.min(0.05, (now - last) / 1000);
+  last = now;
+  if (plateOn) return;  // reading costs the GPU nothing
+  U.uTime.value = reduce ? 0 : now / 1000;
+  if (fell <= H + 1) {
+    fell += (dt * (H + 1)) / 1.6;
+    clothUniforms.uFell.value = fell > H + 1 ? 1e4 : fell;
+  }
+  if (S.tween) stepTween(dt); else userCamera(dt);
+  U.uRoom.value = smooth(0.82, 1, U.uBend.value);
+  mirror.visible = U.uRoom.value > 0.01;
+  applyCamera();
+  animateWeb(dt);
+  easeBrightness(dt);
+  updateHover();
+  if ((hiresClock += dt) > 0.3) { hiresClock = 0; updateSharp(now); }
+  pumpSharp();
+  flushWoven();
+  settleArrivals();
+  for (const [i, entry] of fine) {
+    if (entry.state !== 'ready' && entry.fade === 0) continue;
+    entry.fade = Math.min(1, entry.fade + dt / 0.25);
+    entry.material.uniforms.uOpacity.value = entry.fade;
+    entry.material.uniforms.uBright.value = bright[i];
+  }
+  if (!S.tween && (S.mode === 'inside' || S.mode === 'flat')) {
+    const hit = hitCloth(0, 0);
+    const px = innerHeight / (2 * Math.tan((camera.fov * Math.PI) / 360) * (hit ? hit.t : 60));
+    const weave = clamp(1 - (px - 24) / 60, 0, 1);
+    clothUniforms.uWeave.value = weave;
+    if (S.mode === 'flat') S.weaveFlat = weave;
+  }
+  backLines.material.opacity = S.back * 0.22;
+  backLines.visible = S.back > 0.01 && backCentre !== null;
+  backHot.visible = S.mode === 'outside' && hoverBack >= 0;
+  if ((readClock += dt) > 0.15) { readClock = 0; readout(); }
+  renderer.render(scene, camera);
+}
+requestAnimationFrame(frame);
+$('veil').classList.add('gone');
+</script>
+</body>
+</html>

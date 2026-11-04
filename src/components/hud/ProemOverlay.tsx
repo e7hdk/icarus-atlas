@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';

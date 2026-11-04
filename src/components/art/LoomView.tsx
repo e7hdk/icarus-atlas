@@ -1,7 +1,7 @@
 'use client';
 
 import { Canvas } from '@react-three/fiber';
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';

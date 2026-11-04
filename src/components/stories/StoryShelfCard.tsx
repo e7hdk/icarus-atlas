@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import type { Story, StoryKind } from '@/types/story';
 

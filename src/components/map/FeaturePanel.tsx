@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { pickSourced } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';

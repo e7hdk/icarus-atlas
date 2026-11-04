@@ -5,6 +5,9 @@ import { ImageResponse } from 'next/og';
  *  asset to keep in sync. Latin text only: satori's default font has no
  *  polytonic Greek, and tofu would be worse than restraint. */
 
+/** A static export writes the card out once; it has no server to draw it later. */
+export const dynamic = 'force-static';
+
 export const alt = 'The Odyssey — a voyage home, told by the stars | Icarus Atlas';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';

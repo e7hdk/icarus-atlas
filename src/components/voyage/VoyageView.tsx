@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { useEffect, useRef, type ReactNode } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';

@@ -11,6 +11,9 @@ import {
 import { loadCities, loadRegions } from '@/features/geo/load';
 import { toSkyCharacter } from '@/types/character';
 
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const cities = await loadCities();
   return cities.map((city) => ({ id: city.id }));

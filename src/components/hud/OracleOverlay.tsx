@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { buildOracle } from '@/features/spotlight/oracle';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { useEphemerisPayload } from '@/features/spotlight/usePayload';

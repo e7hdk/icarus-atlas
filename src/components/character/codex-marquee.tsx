@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { useState } from 'react';
 import type { Character } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';

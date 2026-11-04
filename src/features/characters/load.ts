@@ -76,21 +76,14 @@ export async function loadBakedLayout(): Promise<BakedLayout | null> {
   }
 }
 
-/** Encyclopedic reference for the Information tab; null when not yet written. */
-/** Flagship stars for build-time prerender (docs/NOSTOS_PLAN.md D16): the
- *  figures with a curated Legacy shelf — the pages searchers actually land on.
- *  The remaining codex pages render on first request and cache at the CDN,
- *  which keeps the CI static-generation pass inside Netlify's build window
- *  (all 1486 × 3 pages prerendered blew past its 18-minute cap). */
-export async function loadFlagshipCharacterIds(): Promise<string[]> {
-  try {
-    const files = await readdir(path.join(DATA_DIR, 'culture'));
-    return files.filter((file) => file.endsWith('.json')).map((file) => file.replace(/\.json$/, ''));
-  } catch {
-    return [];
-  }
+/** Every star's id, for build-time prerender: the three codex routes prerender
+ *  all of them, because the host renders nothing on a request (docs/HOSTING.md). */
+export async function loadCharacterIds(): Promise<string[]> {
+  const { characters } = await loadAtlasData();
+  return characters.map((character) => character.id);
 }
 
+/** Encyclopedic reference for the Information tab; null when not yet written. */
 export async function loadReference(id: string): Promise<ReferenceData | null> {
   try {
     const raw = JSON.parse(await readFile(path.join(DATA_DIR, 'reference', `${id}.json`), 'utf-8'));

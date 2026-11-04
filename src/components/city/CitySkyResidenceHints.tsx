@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import type { StarFacts } from '@/types/character';
 import type { GeoCity } from '@/types/geo';
 import { otherCityResidences } from '@/features/geo/residents';

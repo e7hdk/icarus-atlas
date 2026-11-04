@@ -23,6 +23,9 @@ const SEAL_TYPE_ORDER: CharacterType[] = [
 ];
 const SEAL_CAP = 28;
 
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const cities = await loadCities();
   return cities.map((city) => ({ id: city.id }));

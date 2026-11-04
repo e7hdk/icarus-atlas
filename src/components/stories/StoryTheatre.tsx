@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 /** Story page layout "Marquee & Path": the playbill folds into a sticky gold
