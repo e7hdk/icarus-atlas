@@ -59,6 +59,21 @@ function compactLayout(layout: LoomLayout, works: ArtWork[]): LoomDoorLayout {
   };
 }
 
+/** The cloth at both widths as the door ships it: only the works the atlas holds,
+ *  and an anchor the atlas has no slot for woven as a single tile rather than a hole.
+ *  validate-loom compares the shipped file with this, so a stale bake cannot hide. */
+export function buildDoorLayouts(
+  catalogue: ArtWork[],
+  manifest: AtlasManifest,
+): Pick<LoomDoorData, 'desktop' | 'phone'> {
+  const works = catalogue.filter((work) => manifest.sprites[work.id] !== undefined);
+  const placed = works.map((work) => (manifest.anchors[work.id] === undefined ? { ...work, span: undefined } : work));
+  return {
+    desktop: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.desktop), works),
+    phone: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.phone), works),
+  };
+}
+
 export function buildDoorData(
   catalogue: ArtWork[],
   manifest: AtlasManifest,
@@ -90,8 +105,6 @@ export function buildDoorData(
       work.figures.map(({ id }) => figureIndex.get(id) as number),
     ],
   );
-  // Anchors missing from the atlas fall back to single tiles rather than a hole.
-  const placed = works.map((work) => (manifest.anchors[work.id] === undefined ? { ...work, span: undefined } : work));
   return {
     works: rows,
     figures: figureIds.map((id): [string, string] => [id, names.get(id) ?? id]),
@@ -117,8 +130,7 @@ export function buildDoorData(
         members: (pattern.members ?? []).flatMap((work) => workIndex.get(work) ?? []),
       }),
     ),
-    desktop: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.desktop), works),
-    phone: compactLayout(buildLoomLayout(placed, LOOM_WIDTH.phone), works),
+    ...buildDoorLayouts(catalogue, manifest),
     sheet: {
       columns: manifest.columns,
       cell: manifest.cell,

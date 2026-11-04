@@ -133,7 +133,9 @@ export function measureLoom(layout: LoomLayout, works: ArtWork[]) {
     for (const work of block) {
       const tile = tileOf.get(work.id);
       if (!tile) continue;
-      (tile.w > 1 ? anchorDrift : singleDrift).push(Math.abs(tile.row - top - (ideal.get(work.id) ?? 0)));
+      // An anchor meets its moment with its middle row (loom.ts), a single with its row.
+      const row = tile.w > 1 ? tile.row + Math.floor((tile.h - 1) / 2) : tile.row;
+      (tile.w > 1 ? anchorDrift : singleDrift).push(Math.abs(row - top - (ideal.get(work.id) ?? 0)));
     }
   });
 

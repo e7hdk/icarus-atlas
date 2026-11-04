@@ -6,7 +6,10 @@ import type { ArtWork } from '@/types/art';
  *  in rank time, so every row holds the same number of cells. A saga's width in a
  *  row is that moment's share of attention. Pure and deterministic. */
 
-export const LOOM_WIDTH = { desktop: 58, phone: 26 } as const;
+export const LOOM_WIDTH = { desktop: 88, phone: 26 } as const;
+
+/** Bumped whenever a rule below changes the weave, so `pnpm bake-art` weaves again. */
+export const LOOM_ENGINE_VERSION = 2;
 
 /** Between these years the collection thins to almost nothing: the tear. */
 export const TEAR_FROM = 500;
@@ -88,7 +91,10 @@ export function idealRows(works: ArtWork[], width: number): Map<string, number> 
 }
 
 /** The nearest spot to an anchor's moment and band, one clear cell from any other
- *  anchor so no two ever read as one image. */
+ *  anchor so no two ever read as one image. An anchor meets its moment with its
+ *  middle row, as a single tile does with its only one, so a thread through it falls
+ *  as the years do. It keeps off the block's last row: that row frays, and an anchor
+ *  in it would leave the singles too little room and fray the row above as well. */
 function findAnchorSpot(
   anchor: ArtWork,
   block: { works: ArtWork[]; ideal: Map<string, number>; top: number; rows: number; width: number },
@@ -96,14 +102,15 @@ function findAnchorSpot(
 ): { x: number; row: number } | null {
   const { works, ideal, top, rows, width } = block;
   const [w, h] = spanOf(anchor);
-  if (h > rows || w > width) return null;
+  const lastTop = rows - 1 - h;
+  if (lastTop < 0 || w > width) return null;
 
   const moment = ideal.get(anchor.id) ?? 0;
   const near = works.filter((work) => Math.abs((ideal.get(work.id) ?? 0) - moment) <= ANCHOR_WINDOW);
   const before = areaOf(near.filter((work) => rankOf(work) < rankOf(anchor)));
   const same = areaOf(near.filter((work) => rankOf(work) === rankOf(anchor)));
   const homeX = Math.round(((before + same / 2) / areaOf(near)) * width - w / 2);
-  const homeRow = top + Math.min(moment, rows - h);
+  const homeRow = top + Math.max(0, Math.min(moment - Math.floor((h - 1) / 2), lastTop));
 
   const isClear = (x: number, row: number) => {
     for (let dy = -1; dy <= h; dy++) {
@@ -117,10 +124,11 @@ function findAnchorSpot(
 
   let best: { x: number; row: number } | null = null;
   let bestCost = Infinity;
-  for (let row = top; row <= top + rows - h; row++) {
+  for (let row = top; row <= top + lastTop; row++) {
     for (let x = 0; x <= width - w; x++) {
-      // A row away from its moment costs more than a cell away from its band.
-      const cost = Math.abs(x - homeX) + Math.abs(row - homeRow) * 3;
+      // A row away from its moment costs four cells away from its band: rows are
+      // time, and a Pattern's gold thread reads them.
+      const cost = Math.abs(x - homeX) + Math.abs(row - homeRow) * 4;
       if (cost < bestCost && isClear(x, row)) {
         bestCost = cost;
         best = { x, row };
