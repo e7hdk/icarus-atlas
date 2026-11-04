@@ -1,12 +1,12 @@
 # Icarus Atlas
 
-**[icarus-atlas.netlify.app](https://icarus-atlas.netlify.app)**
+**[icarusatlas.app](https://icarusatlas.app)**
 
 An interactive galaxy of Greek mythology. Every figure — god, titan, primordial, hero, nymph, mortal, creature — is a star. Hover a star to read who they are and who they are bound to; click to fly to it and unfold the full story. Switch the **source lens** (Hesiod, Homer, Apollodorus, …) and watch genealogies re-wire, because the ancient authors never agreed in the first place.
 
 ## Stack
 
-Next.js (App Router, TypeScript) · React Three Fiber + drei + postprocessing · zustand · zod-validated JSON data · Tailwind CSS · pnpm
+Next.js (App Router, TypeScript) · React Three Fiber + drei + postprocessing · zustand · zod-validated JSON data · Tailwind CSS · pnpm · served as static files from Cloudflare (see [docs/HOSTING.md](docs/HOSTING.md))
 
 ## Getting started
 

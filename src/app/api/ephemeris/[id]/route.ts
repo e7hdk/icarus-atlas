@@ -5,6 +5,8 @@ import { buildCardPayload, buildEphemerisData } from '@/features/spotlight/build
  *  The client card fetches these on open, so the daily payload never rides in
  *  the layout props. */
 export const dynamic = 'force-static';
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const { roster } = await buildEphemerisData();

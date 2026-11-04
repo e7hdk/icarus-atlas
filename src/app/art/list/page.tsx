@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { WorkListFilter } from '@/components/art/WorkListFilter';
 import { loadArtCatalogue } from '@/features/art/load';
 import { LOOM_ERAS } from '@/features/art/loom';

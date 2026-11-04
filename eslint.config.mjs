@@ -18,6 +18,25 @@ const eslintConfig = defineConfig([
     // Netlify's local build output (gitignored): bundled server code, not ours.
     ".netlify/**",
   ]),
+  // Links go through the prefetch-off wrapper: the static export ships no
+  // per-segment prefetch files (docs/HOSTING.md).
+  {
+    files: ["src/**/*.{ts,tsx}"],
+    ignores: ["src/components/ui/Link.tsx"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          paths: [
+            {
+              name: "next/link",
+              message: "Use Link from '@/components/ui/Link', which turns prefetching off (docs/HOSTING.md).",
+            },
+          ],
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;

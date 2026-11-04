@@ -1,10 +1,13 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { notFound } from 'next/navigation';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { FigureChart } from '@/components/sky/FigureChart';
 import { loadAtlasData } from '@/features/characters/load';
 import { loadSky } from '@/features/sky/load';
 import { loadStories } from '@/features/stories/load';
+
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const sky = await loadSky();

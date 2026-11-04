@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // The atlas is plain files (docs/HOSTING.md): `pnpm cf:build` writes the static
+  // export to out/ and Workers Static Assets serves it. There is no Worker script,
+  // so no request runs code: no CPU limit and no daily request cap.
+  "name": "icarus-atlas",
+  "compatibility_date": "2026-11-01",
+  // Served at the apex only: Cloudflare creates the DNS record and certificate
+  // on deploy, and no workers.dev copy of the site competes with it.
+  "routes": [{ "pattern": "icarusatlas.app", "custom_domain": true }],
+  "workers_dev": false,
+  "assets": {
+    "directory": "out",
+    // /art serves art.html; /art/ redirects to /art.
+    "html_handling": "auto-trailing-slash",
+    // An unknown path gets out/404.html with a 404 status.
+    "not_found_handling": "404-page"
+  }
+}

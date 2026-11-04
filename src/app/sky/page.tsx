@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { FigureChart } from '@/components/sky/FigureChart';
 import { loadSky } from '@/features/sky/load';

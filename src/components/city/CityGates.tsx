@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 
 /** The city gates (city concept C, folded under the Dynasty Spine): three
  *  temple gates with meander lintels below the succession — HER SKY (a

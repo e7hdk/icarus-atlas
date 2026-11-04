@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { CITY_TABS, type CityTab } from '@/components/city/city-tabs';
 
 /** Pill navigation between lineage and city sky — shared by codex and immersive sky routes. */

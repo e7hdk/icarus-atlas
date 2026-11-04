@@ -18,7 +18,9 @@
     "fetch:osm-rivers": "tsx scripts/fetch-osm-rivers.ts",
     "refresh:rivers": "tsx scripts/refresh-river-geometry.ts",
     "build": "pnpm build:map && pnpm bake-layout && pnpm bake-linked-prose && pnpm bake-art && pnpm bake-atlas-data && next build",
-    "start": "next start",
+    "cf:build": "pnpm build && tsx scripts/finish-export.ts",
+    "cf:preview": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
     "lint": "eslint",
     "dem:fetch": "pmtiles extract https://download.mapterhorn.com/planet.pmtiles public/geo/dem.pmtiles --bbox=-6,22,44,47 --maxzoom=9",
     "dem:terrain": "tsx scripts/build-terrain-dem.ts",
@@ -54,7 +56,7 @@
     "@react-three/fiber": "^9.6.1",
     "@react-three/postprocessing": "^3.0.4",
     "maplibre-gl": "^5.24.0",
-    "next": "16.2.9",
+    "next": "16.4.5",
     "pmtiles": "^4.4.1",
     "postprocessing": "6.39.1",
     "react": "19.2.4",
@@ -79,11 +81,12 @@
     "cheerio": "^1.2.0",
     "domhandler": "^6.0.1",
     "eslint": "^9",
-    "eslint-config-next": "16.2.9",
+    "eslint-config-next": "16.4.5",
     "pbf": "^5.1.0",
     "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.157.0"
   }
 }

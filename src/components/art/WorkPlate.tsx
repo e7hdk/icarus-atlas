@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { useEffect } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { MEDIUM_LABEL, workImageUrl, type LoomPatternStop, type LoomWork } from '@/features/art/door';

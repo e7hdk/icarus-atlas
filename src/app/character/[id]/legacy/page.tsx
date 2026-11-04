@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { loadLoomIndex } from '@/features/art/load';
-import { loadAtlasData, loadCulture, loadFlagshipCharacterIds } from '@/features/characters/load';
+import { loadAtlasData, loadCulture, loadCharacterIds } from '@/features/characters/load';
 import { loadCities } from '@/features/geo/load';
 import { loadStories } from '@/features/stories/load';
 import { storiesFeaturingCharacter } from '@/features/stories/appearances';
@@ -18,12 +18,12 @@ import {
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { TYPE_GLOW } from '@/types/character';
 
-/** Prerender the flagship stars; the long tail renders on demand and caches
- *  at the CDN (docs/NOSTOS_PLAN.md D16 — Netlify's build window). */
-export const dynamicParams = true;
+/** Every star is prerendered: the host serves the build's pages and renders
+ *  nothing on a request (docs/HOSTING.md), so an unknown id is a 404. */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const ids = await loadFlagshipCharacterIds();
+  const ids = await loadCharacterIds();
   return ids.map((id) => ({ id }));
 }
 

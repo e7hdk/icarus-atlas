@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 
 const TABS = [
   { key: 'poets', label: 'The poets', path: '' },

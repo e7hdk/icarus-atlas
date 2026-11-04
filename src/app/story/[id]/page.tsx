@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 import { notFound } from 'next/navigation';
 import { loadStories, loadStoryCulture, loadVoyage } from '@/features/stories/load';
 import { loadAtlasData } from '@/features/characters/load';
@@ -11,6 +11,9 @@ import { CrumbBar } from '@/components/hud/CrumbBar';
 import { StoryLegacy } from '@/components/stories/StoryLegacy';
 import { loadLoomIndex } from '@/features/art/load';
 import type { SourceId } from '@/types/character';
+
+/** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const stories = await loadStories();

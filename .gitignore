@@ -78,3 +78,6 @@ data/geo/raw/
 
 # the ⌘K index and Ephemeris data, rebuilt by `pnpm dev` and `pnpm build`
 /public/atlas/
+
+# wrangler's local state (docs/HOSTING.md)
+/.wrangler/

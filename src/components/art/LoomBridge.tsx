@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/components/ui/Link';
 
 /** A way into the Loom from elsewhere in the atlas (docs/LOOM_PLAN.md §8): the cloth
  *  opened on a figure's or a story's works, with how many there are. */
