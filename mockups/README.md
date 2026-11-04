@@ -117,6 +117,8 @@ A fourth door beside Galaxy, Lands and Myths, gathering the Legacy artworks into
 
 ## Art door concept (round 2 — the rotunda)
 
+Built into the door on 2026-11-04 as M14.11 (docs/LOOM_PLAN.md §12): the desktop Art door is now this room, and the mockup stays as its design reference.
+
 The built Loom, walked into. Unlike the files above it reads the real door (`public/art/loom.json`, the baked sprite sheets) and the repository's own three.js, so it has to be served over HTTP from the repository root: `python3 -m http.server 4800 --bind 127.0.0.1`, then open `http://localhost:4800/mockups/art-loom-rotunda.html`.
 
 | File | Concept | Signature idea |

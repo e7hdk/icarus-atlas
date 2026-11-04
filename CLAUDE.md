@@ -43,7 +43,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm bake-loom-atlas` — fetch Commons thumbnails into gitignored `research/loom/thumbs/` and bake the sheets in `public/art/` (network step at batch boundaries; `--fetch` or `--compose` for one half; also writes duplicate candidates to `research/loom/duplicates.json`)
 - `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
 - `pnpm bake-atlas-data` — write what pages fetch instead of carrying it as props to gitignored `public/atlas/`: the ⌘K index, the Ephemeris data, one file per door (galaxy, myths, lands) and each star's prose with its linked names (offline, chained into `dev`, `build` and `validate-data`). Props repeat in every prerendered page, so a page must never pass per-star data or prose as props, and `data/generated/linked-prose.json` stays `server-only`
-- `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits (run after art or culture edits, once `pnpm bake-art` has run)
+- `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits, and that the shipped `public/art/loom.json` is the cloth the engine weaves now (run after art or culture edits, once `pnpm bake-art` has run)
 - `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
 - `pnpm verify:culture [ids …]` — network gate for the Legacy shelves: link liveness + Commons license check (run after culture batches; separate from the offline validate-data)
@@ -117,6 +117,8 @@ The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS �
 ## Feature: The Loom — the Art door
 
 The fourth door (`ART`, `/art`, docs/LOOM_PLAN.md is the contract): every image of the culture layer, one tile each, woven into a single cloth. Across run the sagas in Spindle order and colour; down run the centuries the works were made in (rank time, oldest at the beam); a gold-mended tear marks AD 500–1400. It is lens-independent, like Legacy.
+
+- **The rotunda (desktop):** the cloth, woven 88 wide, hangs flat and closes into a drum round the visitor, who stands at the centre with a 60° lens (LOOM_PLAN §12). The engine is `src/features/art/rotunda/`, hosted by `RotundaScene` in `RotundaView`; `LoomDoor` picks it or the flat `LoomView` (26 wide, phones) once the device is known.
 
 - **Pipeline:** `data/culture` and `data/story-culture` stay the authored source. `pnpm bake-art` derives `data/generated/art-catalogue.json` (one record per physical work) and writes the door's `public/art/loom.json` and `details.json`; `pnpm bake-loom-atlas` bakes the sprite sheets.
 - **Overrides:** exceptions live in `data/art/overrides.json`, keyed by Commons file: `sameAs`, `medium`, `sortYear`, `saga`, `figuresAdd`/`figuresRemove`, `exclude`, `span`, `focus`, `preview`.

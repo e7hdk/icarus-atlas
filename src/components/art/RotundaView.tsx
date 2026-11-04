@@ -83,10 +83,12 @@ function stepAround(door: LoomDoor, work: LoomWork, [dx, dy]: [number, number], 
   return work;
 }
 
-/** What the door's chrome covers: the bar above, the rail on a wide screen, and the
- *  title and the dock below. The flat cloth hangs in the rest. */
-function chromeInsets(width: number, height: number) {
-  return { top: 76, right: width > 1080 ? 254 : 24, bottom: height > 720 ? 270 : 150, left: 24 };
+/** What the door's chrome covers: the bar above, and on a wide screen the rail on the
+ *  right and the title in the bottom corner; the dock below. The flat cloth hangs in
+ *  the rest. */
+function chromeInsets(width: number) {
+  const wide = width > 1080;
+  return { top: 76, right: wide ? 254 : 24, bottom: wide ? 270 : 150, left: 24 };
 }
 
 const noSubscription = () => () => {};
@@ -153,7 +155,7 @@ export function RotundaView() {
         ? {
             door,
             sheets,
-            insets: chromeInsets(window.innerWidth, window.innerHeight),
+            insets: chromeInsets(window.innerWidth),
             lens: opticsAtStart.lens,
             centre: opticsAtStart.centre,
             reveal,
@@ -190,8 +192,7 @@ export function RotundaView() {
     const element = root.current;
     if (!rotunda || !element) return;
     const observer = new ResizeObserver(() => {
-      const { width, height } = element.getBoundingClientRect();
-      rotunda.setInsets(chromeInsets(width, height));
+      rotunda.setInsets(chromeInsets(element.getBoundingClientRect().width));
     });
     observer.observe(element);
     return () => observer.disconnect();

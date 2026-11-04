@@ -14,6 +14,18 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.5.0',
+    codename: 'The Room Inside the Loom',
+    date: '2026-11-04',
+    lines: [
+      'The Loom became a room. On a wide screen the cloth still hangs flat at first, every work in its place, and then it curls round whoever steps inside: the sagas go round the walls in the order of the Spindle, the centuries fall from the gold beam overhead to the clay weights by the floor, and the tear runs round the room as a ring mended in gold, with the night showing through it. A coffered dome, open at its eye, closes it above, and a dark floor holds its reflection.',
+      'Inside, the visitor stands at the centre and turns, and the whole collection goes round them. Under the view a lens narrows from sixty degrees to fourteen to bring the far wall near, and one may stand back across the room instead.',
+      'As the visitor turns, each work weaves its own image from Commons into the cloth, cut where the cloth first cut it, so the wall sharpens in place and stays sharp when they look away and back.',
+      'A work pulled from the wall comes to the visitor with its neighbours along each thread, and their threads cross the air of the room; a Pattern’s gold thread runs across it from stop to stop; and turning the cloth steps out through the wall to its back, where every thread is wound round the drum.',
+      'The cloth was woven wider for the room, eighty-eight works across and twenty-six rows down, so that closed it stands about as tall as it is wide. On the small screen it hangs as it did.',
+    ],
+  },
+  {
     version: '0.4.0',
     codename: 'The Loom and the Gold Thread',
     date: '2026-11-03',
