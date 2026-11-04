@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { LoomView } from '@/components/art/LoomView';
+import { LoomDoor } from '@/components/art/LoomDoor';
 import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import { loadAtlasData } from '@/features/characters/load';
 import { LOOM_SHARE_IMAGE } from './share';
@@ -20,7 +20,7 @@ export default async function ArtPage() {
   const atlas = await loadAtlasData();
   return (
     <main className="fixed inset-0 overflow-hidden">
-      <LoomView />
+      <LoomDoor />
       <SettingsPanel sources={atlas.sources} starCount={atlas.characters.length} />
     </main>
   );

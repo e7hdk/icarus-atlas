@@ -1,6 +1,6 @@
 import { Link } from '@/components/ui/Link';
 import { notFound } from 'next/navigation';
-import { LoomView } from '@/components/art/LoomView';
+import { LoomDoor } from '@/components/art/LoomDoor';
 import { SettingsPanel } from '@/components/hud/SettingsPanel';
 import type { Metadata } from 'next';
 import { commonsThumbSteps } from '@/features/art/commons';
@@ -61,7 +61,7 @@ export default async function ArtWorkPage(props: { params: Promise<{ id: string 
         <p>{captions[id]}</p>
         <Link href="/art/list">All the works, as a list</Link>
       </article>
-      <LoomView />
+      <LoomDoor />
       <SettingsPanel sources={atlas.sources} starCount={atlas.characters.length} />
     </main>
   );

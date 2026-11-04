@@ -19,7 +19,8 @@ function Dot({ on }: { on: boolean }) {
 }
 
 /** The right rail: turning the cloth, the Patterns and the medium filter on its face,
- *  and while a work is held, that work's threads. */
+ *  and while a work is held, that work's threads. It floats on glass, since in the
+ *  rotunda it stands over the walls of the room. */
 export function LoomRail({
   door,
   onTurn,
@@ -63,7 +64,7 @@ export function LoomRail({
 
   return (
     <aside
-      className={`absolute right-[26px] top-[84px] z-10 w-44 transition-opacity duration-300 max-[1080px]:hidden ${
+      className={`absolute right-[22px] top-[80px] z-10 w-[212px] rounded-2xl border border-glass-border bg-glass-heavy px-4 py-3.5 backdrop-blur-xl transition-opacity duration-300 max-[1080px]:hidden ${
         held ? '' : 'group-data-[view=quiet]/loom:pointer-events-none group-data-[view=quiet]/loom:opacity-0'
       }`}
     >
