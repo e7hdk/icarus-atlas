@@ -3,6 +3,7 @@
 import { useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useMemo, useRef, type RefObject } from 'react';
 import * as THREE from 'three';
+import { loadBitmap } from '@/features/art/bitmap';
 import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { FRINGE_ROWS, type LoomCamera } from '@/features/art/loomCamera';
 import type { LoomWeb } from '@/features/art/loomWeb';
@@ -190,12 +191,6 @@ function writeBrightness(cells: Uint8Array, work: LoomWork, width: number, level
   }
 }
 
-function loadBitmap(url: string): Promise<ImageBitmap> {
-  return fetch(url)
-    .then((response) => response.blob())
-    .then((blob) => createImageBitmap(blob));
-}
-
 function createClothScene(door: LoomDoor, web: LoomWeb, cellPixels: number, reveal: boolean) {
   const { width, height } = door.layout;
   const cellData = createCellData(door);
@@ -360,9 +355,12 @@ interface LoomSceneProps {
   reveal: boolean;
   /** Called every frame once the view is solved, so the 2D layers can follow it. */
   onFrame: () => void;
+  /** Called if neither the low-quality sheet nor the full ones could be loaded, so the
+   *  cloth would stay bare. Keep it stable: a new one reloads the sheets. */
+  onSheetsFailed: () => void;
 }
 
-export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: LoomSceneProps) {
+export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame, onSheetsFailed }: LoomSceneProps) {
   const camera = useThree((state) => state.camera) as THREE.PerspectiveCamera;
   const { height } = door.layout;
   const cellPixels = phone ? CELL_PIXELS.phone : CELL_PIXELS.desktop;
@@ -399,12 +397,12 @@ export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: L
   useEffect(() => {
     let cancelled = false;
     const { cell, lqCell } = door.sheet;
-    loadBitmap('/art/sheet-lq.webp').then((bitmap) => {
+    const first = loadBitmap('/art/sheet-lq.webp').then((bitmap) => {
       if (cancelled || painted.current) return;
       paintCloth(scene.cloth, door, cellPixels, bitmap, lqCell, null);
       painted.current = true;
     });
-    Promise.all([loadBitmap('/art/sheet.webp'), loadBitmap('/art/anchors.webp')]).then(([sheet, anchors]) => {
+    const full = Promise.all([loadBitmap('/art/sheet.webp'), loadBitmap('/art/anchors.webp')]).then(([sheet, anchors]) => {
       // Repainting costs a long frame, so it waits for the cloth to finish falling.
       const upgrade = () => {
         if (cancelled) return;
@@ -417,11 +415,15 @@ export function LoomScene({ door, web, rig, pointer, phone, reveal, onFrame }: L
       };
       upgrade();
     });
+    // Either one weaves a cloth; with neither, the door says so instead of a bare loom.
+    Promise.allSettled([first, full]).then(([lq, sheets]) => {
+      if (!cancelled && lq.status === 'rejected' && sheets.status === 'rejected') onSheetsFailed();
+    });
     return () => {
       cancelled = true;
       painted.current = false;
     };
-  }, [door, scene, cellPixels, height]);
+  }, [door, scene, cellPixels, height, onSheetsFailed]);
 
   useEffect(() => {
     const refresh = () => {

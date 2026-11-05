@@ -1,5 +1,8 @@
-/** What a door shows if its baked data never arrives. */
-export function DoorUnavailable({ what }: { what: string }) {
+import type { ReactNode } from 'react';
+
+/** What a door shows if its baked data never arrives: a way to try again and, where a
+ *  door has one, another way to the same things. */
+export function DoorUnavailable({ what, fallback }: { what: string; fallback?: ReactNode }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center p-8 text-center font-body text-lg text-aether-muted">
       <p>
@@ -11,7 +14,7 @@ export function DoorUnavailable({ what }: { what: string }) {
         >
           Try again
         </button>
-        .
+        {fallback ? <>, or {fallback}</> : null}.
       </p>
     </div>
   );

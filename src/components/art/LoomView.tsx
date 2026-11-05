@@ -23,6 +23,7 @@ import { LoomPatternThread } from './LoomPatternThread';
 import { LoomRail } from './LoomRail';
 import { LoomSheet } from './LoomSheet';
 import { LoomScene } from './LoomScene';
+import { LoomUnavailable } from './LoomUnavailable';
 import { paintSky } from './loomTextures';
 import { WorkHoverCard } from './WorkHoverCard';
 import { WorkPlate } from './WorkPlate';
@@ -121,6 +122,8 @@ export function LoomView() {
   const phone = useIsMobile();
   const pathname = usePathname();
   const { data, failed } = useAtlasFile<LoomDoorData>(ATLAS_FILES.loom);
+  const [sheetsFailed, setSheetsFailed] = useState(false);
+  const markSheetsFailed = useCallback(() => setSheetsFailed(true), []);
   const [announced, setAnnounced] = useState('');
   const [rig] = useState(() => new LoomCamera());
   const [reveal] = useState(
@@ -453,19 +456,7 @@ export function LoomView() {
     return () => element.removeEventListener('wheel', onWheel);
   }, [rig, door]);
 
-  if (!webGl || failed) {
-    return (
-      <div className="flex h-full items-center justify-center p-8 text-center font-body text-lg text-aether-muted">
-        <p>
-          {failed ? 'The Loom could not be loaded.' : 'The Loom needs WebGL 2.'} The same works are listed on{' '}
-          <Link href="/art/list" className="text-star-olympian underline underline-offset-4">
-            a plain page
-          </Link>
-          .
-        </p>
-      </div>
-    );
-  }
+  if (!webGl || failed || sheetsFailed) return <LoomUnavailable webGl={webGl} />;
 
   return (
     <div ref={root} className="group/loom absolute inset-0 bg-cosmos-deep">
@@ -580,7 +571,16 @@ export function LoomView() {
       >
         {door && web && (
           <Canvas flat gl={{ antialias: true, alpha: true }} dpr={[1, 2]} frameloop={plateOpen ? 'never' : 'always'}>
-            <LoomScene door={door} web={web} rig={rig} pointer={pointer} phone={phone} reveal={reveal} onFrame={onFrame} />
+            <LoomScene
+              door={door}
+              web={web}
+              rig={rig}
+              pointer={pointer}
+              phone={phone}
+              reveal={reveal}
+              onFrame={onFrame}
+              onSheetsFailed={markSheetsFailed}
+            />
           </Canvas>
         )}
       </div>
