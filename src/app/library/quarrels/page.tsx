@@ -1,4 +1,5 @@
 import { Link } from '@/components/ui/Link';
+import { SagaMore } from '@/components/library/SagaMore';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { QuarrelFilter } from '@/components/library/QuarrelFilter';
 import { loadAtlasData } from '@/features/characters/load';
@@ -12,6 +13,9 @@ import type { Quarrel } from '@/types/quarrel';
  *  each other, grouped by saga in Spindle order, under the Muses' own warning. */
 
 const DESCRIPTION = 'Where the seven tellers of Greek myth contradict each other: every quarrel the atlas keeps, each claim beside its passage in the original and in English.';
+
+/** A saga opens on its first ten quarrels; the Olympians' run to 37. */
+const SAGA_SHOWN = 10;
 
 export const metadata = {
   title: 'The Quarrels — The Library — Icarus Atlas',
@@ -82,10 +86,10 @@ export default async function QuarrelsPage() {
                   <span className="quarrel-count font-body text-[13px] italic tracking-normal text-aether-faint">{quarrels.length}</span>
                 </h2>
                 <ul className="mt-3 grid gap-x-10 sm:grid-cols-2">
-                  {quarrels.map((quarrel) => {
+                  {quarrels.map((quarrel, index) => {
                     const involved = tellersOf(quarrel);
                     return (
-                      <li key={quarrel.topic} data-tellers={involved.join(' ')}>
+                      <li key={quarrel.topic} data-tellers={involved.join(' ')} className={index >= SAGA_SHOWN ? 'quarrel-more' : undefined}>
                         <Link href={quarrelHref(quarrel.topic)} className="group block border-t border-glass-border py-3">
                           <span className="block font-body text-[17px] leading-snug text-aether transition-colors group-hover:text-star-olympian">{quarrel.title}</span>
                           <span className="mt-1 block font-display text-[8.5px] tracking-[0.2em] text-nebula-soft/80">
@@ -104,6 +108,7 @@ export default async function QuarrelsPage() {
                     );
                   })}
                 </ul>
+                {quarrels.length > SAGA_SHOWN && <SagaMore total={quarrels.length} hidden={quarrels.length - SAGA_SHOWN} />}
               </section>
             );
           })}

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { ClampList } from '@/components/ui/ClampList';
 import { Link } from '@/components/ui/Link';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { ReadingRoom } from '@/components/library/ReadingRoom';
@@ -113,12 +114,14 @@ export default async function LibraryWorkPage({ params }: Params) {
         <section className="mt-12">
           <h2 className="font-display text-[10px] tracking-[0.3em] text-aether-faint">THE STORIES IT TELLS · {told.length}</h2>
           <div className="mt-3 flex flex-wrap gap-1.5">
-            {told.map((story) => (
-              <Link key={story.id} href={`/story/${story.id}`} className="inline-flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[14px] text-aether-muted transition-colors hover:text-aether">
-                <span className="h-1.5 w-1.5 rounded-full" style={{ background: SAGA_ACCENT[resolveSaga(story, storyById)] }} />
-                {story.title}
-              </Link>
-            ))}
+            <ClampList max={24} as="span" noun="STORIES">
+              {told.map((story) => (
+                <Link key={story.id} href={`/story/${story.id}`} className="inline-flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[14px] text-aether-muted transition-colors hover:text-aether">
+                  <span className="h-1.5 w-1.5 rounded-full" style={{ background: SAGA_ACCENT[resolveSaga(story, storyById)] }} />
+                  {story.title}
+                </Link>
+              ))}
+            </ClampList>
           </div>
         </section>
       )}
@@ -127,13 +130,15 @@ export default async function LibraryWorkPage({ params }: Params) {
         <section className="mt-10">
           <h2 className="font-display text-[10px] tracking-[0.3em] text-aether-faint">⚖ THE QUARRELS IT TAKES A SIDE IN · {quarrels.length}</h2>
           <ul className="mt-3 grid gap-x-10 sm:grid-cols-2">
-            {quarrels.map((quarrel) => (
-              <li key={quarrel.topic}>
-                <Link href={quarrelHref(quarrel.topic)} className="block border-t border-glass-border py-2.5 font-body text-[16px] text-aether transition-colors hover:text-star-olympian">
-                  {quarrel.title}
-                </Link>
-              </li>
-            ))}
+            <ClampList max={12} noun="QUARRELS">
+              {quarrels.map((quarrel) => (
+                <li key={quarrel.topic}>
+                  <Link href={quarrelHref(quarrel.topic)} className="block border-t border-glass-border py-2.5 font-body text-[16px] text-aether transition-colors hover:text-star-olympian">
+                    {quarrel.title}
+                  </Link>
+                </li>
+              ))}
+            </ClampList>
           </ul>
         </section>
       )}

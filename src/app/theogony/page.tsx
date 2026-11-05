@@ -1,4 +1,5 @@
 import readingJson from '../../../data/library/readings/theogony.json';
+import { ClampList } from '@/components/ui/ClampList';
 import { Link } from '@/components/ui/Link';
 import { FinaleLens } from '@/components/library/FinaleLens';
 import { TheogonySky, type SkyBeat } from '@/components/library/TheogonySky';
@@ -140,16 +141,17 @@ export default async function TheogonyPage() {
               </div>
               <div className="mt-[18px] flex flex-wrap items-center gap-1.5">
                 <span className="mr-1 font-display text-[8.5px] tracking-[0.24em] text-aether-faint">{named.length > 0 ? 'IGNITES' : 'NO NEW STAR'}</span>
-                {named.slice(0, 14).map((figure) => {
-                  const { color } = TYPE_GLOW[figure.type];
-                  return (
-                    <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-[3px] font-body text-[14px] text-aether" style={{ borderColor: `${color}66`, background: `${color}1a` }}>
-                      <i className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
-                      {figure.name}
-                    </Link>
-                  );
-                })}
-                {named.length > 14 && <em className="font-body text-[14px] text-aether-faint">and {named.length - 14} more</em>}
+                <ClampList max={14} as="span" noun="NAMED">
+                  {named.map((figure) => {
+                    const { color } = TYPE_GLOW[figure.type];
+                    return (
+                      <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-[3px] font-body text-[14px] text-aether" style={{ borderColor: `${color}66`, background: `${color}1a` }}>
+                        <i className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
+                        {figure.name}
+                      </Link>
+                    );
+                  })}
+                </ClampList>
               </div>
             </section>
           );

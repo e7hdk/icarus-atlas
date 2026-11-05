@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { ClampList } from '@/components/ui/ClampList';
 import { Link } from '@/components/ui/Link';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { loadAtlasData } from '@/features/characters/load';
@@ -21,6 +22,9 @@ type Params = { params: Promise<{ author: string }> };
 
 const isTeller = (id: string): id is SourceId => (TELLER_ORDER as string[]).includes(id);
 const fmt = (n: number) => n.toLocaleString('en-US');
+/** A teller's long lists open on a few rows (Homer alone tells of 165 figures). */
+const FIGURES_SHOWN = 24;
+const SIDES_SHOWN = 12;
 
 export async function generateMetadata({ params }: Params) {
   const { author } = await params;
@@ -117,15 +121,17 @@ export default async function TellerPage({ params }: Params) {
           </h2>
           <p className="mt-1 font-body text-[13.5px] italic text-aether-faint">Every sourced line the atlas holds about them names {name} alone.</p>
           <div className="mt-3 flex flex-wrap gap-1.5">
-            {only.map((figure) => {
-              const { color } = TYPE_GLOW[figure.type];
-              return (
-                <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[14px] text-aether-muted transition-colors hover:text-aether">
-                  <span className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
-                  {figure.name}
-                </Link>
-              );
-            })}
+            <ClampList max={FIGURES_SHOWN} as="span" noun="FIGURES">
+              {only.map((figure) => {
+                const { color } = TYPE_GLOW[figure.type];
+                return (
+                  <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[14px] text-aether-muted transition-colors hover:text-aether">
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />
+                    {figure.name}
+                  </Link>
+                );
+              })}
+            </ClampList>
           </div>
         </section>
       )}
@@ -136,15 +142,17 @@ export default async function TellerPage({ params }: Params) {
             ⚖ THE SIDES {name.toUpperCase()} TAKES · {stats.quarrels} QUARREL{stats.quarrels === 1 ? '' : 'S'}
           </h2>
           <ul className="mt-3 grid gap-x-10 sm:grid-cols-2">
-            {sides.map(({ quarrel, claim }, index) => (
-              <li key={`${quarrel.topic}-${index}`}>
-                <Link href={quarrelHref(quarrel.topic)} className="group block border-t border-glass-border py-3">
-                  <span className="block font-body text-[16.5px] leading-snug text-aether transition-colors group-hover:text-star-olympian">{quarrel.title}</span>
-                  <span className="mt-1 line-clamp-2 block font-body text-[14.5px] italic leading-snug text-aether-muted">{claim.claim}</span>
-                  {claim.citation && <span className="mt-0.5 block font-body text-[12.5px] text-aether-faint">{claim.citation}</span>}
-                </Link>
-              </li>
-            ))}
+            <ClampList max={SIDES_SHOWN} noun="SIDES">
+              {sides.map(({ quarrel, claim }, index) => (
+                <li key={`${quarrel.topic}-${index}`}>
+                  <Link href={quarrelHref(quarrel.topic)} className="group block border-t border-glass-border py-3">
+                    <span className="block font-body text-[16.5px] leading-snug text-aether transition-colors group-hover:text-star-olympian">{quarrel.title}</span>
+                    <span className="mt-1 line-clamp-2 block font-body text-[14.5px] italic leading-snug text-aether-muted">{claim.claim}</span>
+                    {claim.citation && <span className="mt-0.5 block font-body text-[12.5px] text-aether-faint">{claim.citation}</span>}
+                  </Link>
+                </li>
+              ))}
+            </ClampList>
           </ul>
         </section>
       )}
