@@ -6,7 +6,8 @@ import { loadAtlasFile } from '@/features/atlas/useAtlasFile';
 /** Door glyphs for the mobile bar — hand-drawn minis in the Wain-glyph idiom
  *  (thin currentColor strokes, no emoji): a star cluster for the Galaxy, a
  *  mountain over the sea for the Lands, an open scroll for the Myths, a loom
- *  for Art. On sm+ the doors keep their classical lettered form. */
+ *  for Art, three spines on a shelf for the Library. On sm+ the doors keep
+ *  their classical lettered form. */
 function GalaxyGlyph() {
   return (
     <svg aria-hidden width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,28 +49,43 @@ function ArtGlyph() {
   );
 }
 
+/** Three spines of unequal height on a shelf, the middle one banded: the door's own shelf in miniature (L12). */
+function LibraryGlyph() {
+  return (
+    <svg aria-hidden width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 15.6 H16" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      <rect x="3.3" y="6" width="2.7" height="9.6" rx="0.5" stroke="currentColor" strokeWidth="1.1" />
+      <rect x="7.6" y="3" width="2.7" height="12.6" rx="0.5" stroke="currentColor" strokeWidth="1.1" />
+      <rect x="11.9" y="7.4" width="2.7" height="8.2" rx="0.5" stroke="currentColor" strokeWidth="1.1" />
+      <path d="M7.6 6.1 H10.3 M7.6 7.3 H10.3" stroke="currentColor" strokeWidth="0.9" strokeOpacity="0.75" />
+    </svg>
+  );
+}
+
 const TABS = [
   { key: 'galaxy', label: 'Galaxy', href: '/', glyph: <GalaxyGlyph />, data: ATLAS_FILES.galaxy },
   { key: 'areas', label: 'Lands', href: '/areas', glyph: <LandsGlyph />, data: ATLAS_FILES.lands },
   { key: 'stories', label: 'Myths', href: '/stories', glyph: <MythsGlyph />, data: ATLAS_FILES.myths },
   { key: 'art', label: 'Art', href: '/art', glyph: <ArtGlyph />, data: ATLAS_FILES.loom },
-] as const satisfies readonly { key: string; label: string; href: string; glyph: ReactNode; data: string }[];
+  // the Library's pages are text in the HTML: nothing to warm
+  { key: 'library', label: 'Library', href: '/library', glyph: <LibraryGlyph />, data: null },
+] as const satisfies readonly { key: string; label: string; href: string; glyph: ReactNode; data: string | null }[];
 
 export type MainTab = (typeof TABS)[number]['key'];
 
 /** A door's data starts when the pointer reaches its tab, so the door opens ready. */
-function warmDoor(url: string) {
-  loadAtlasFile(url).catch(() => {});
+function warmDoor(url: string | null) {
+  if (url) loadAtlasFile(url).catch(() => {});
 }
 
-/** The four doors of the atlas — shared by the galaxy HUD and the 2D pages.
+/** The five doors of the atlas — shared by the galaxy HUD and the 2D pages.
  *  `active: null` keeps every door dim (satellite pages like the
  *  Heortologion, which belongs to the Ephemeris layer, not a world).
- *  Mobile shows the door GLYPHS (the lettered pills crowded the bar);
- *  sm+ keeps the classical lettering. */
+ *  Below lg the doors are GLYPHS: five lettered pills need some 430 px,
+ *  which the bar only spares from 1024 px; lg+ keeps the classical lettering. */
 export function MainNav({ active }: { active: MainTab | null }) {
   return (
-    <nav className="pointer-events-auto flex gap-0.5 rounded-full border border-glass-border bg-glass p-0.5 backdrop-blur-xl sm:gap-1 sm:p-1">
+    <nav className="pointer-events-auto flex rounded-full border border-glass-border bg-glass p-0.5 backdrop-blur-xl lg:gap-1 lg:p-1">
       {TABS.map((tab) => (
         <Link
           key={tab.key}
@@ -78,14 +94,14 @@ export function MainNav({ active }: { active: MainTab | null }) {
           title={tab.label}
           onPointerEnter={() => warmDoor(tab.data)}
           onFocus={() => warmDoor(tab.data)}
-          className={`rounded-full p-2.5 font-display text-[10px] tracking-[0.08em] transition-colors sm:px-4 sm:py-1.5 sm:text-[11px] sm:tracking-[0.16em] ${
+          className={`rounded-full p-[7px] font-display text-[10px] tracking-[0.08em] transition-colors lg:px-4 lg:py-1.5 lg:text-[11px] lg:tracking-[0.16em] ${
             active === tab.key
               ? 'nav-active border border-nebula-soft/50 bg-nebula-violet/20 text-[#e9d5ff]'
               : 'border border-transparent text-aether-muted hover:text-aether'
           }`}
         >
-          <span className="sm:hidden">{tab.glyph}</span>
-          <span className="hidden sm:inline">{tab.label.toUpperCase()}</span>
+          <span className="lg:hidden">{tab.glyph}</span>
+          <span className="hidden lg:inline">{tab.label.toUpperCase()}</span>
         </Link>
       ))}
     </nav>

@@ -75,6 +75,8 @@ data/geo/raw/
 
 # Loom layout sketches and thumbnail cache (docs/LOOM_PLAN.md)
 /research/loom/
+# Library review staging (docs/LIBRARY_PLAN.md M15.1: the Ovid lineation review)
+/research/library/
 
 # the ⌘K index and Ephemeris data, rebuilt by `pnpm dev` and `pnpm build`
 /public/atlas/

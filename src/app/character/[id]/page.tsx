@@ -1,4 +1,6 @@
 import { Link } from '@/components/ui/Link';
+import { earliestTellers } from '@/features/library/earliest';
+import { shortTeller } from '@/features/library/paths';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { loadAtlasData, loadCulture, loadCharacterIds } from '@/features/characters/load';
@@ -67,6 +69,7 @@ export default async function CharacterPoetsPage(props: { params: Promise<{ id: 
         }))}
         appearances={storyAppearances.map((story) => ({ id: story.id, title: story.title }))}
         linkedStory={getBakedLinkedProse()?.characters[character.id]?.story ?? []}
+        earliest={earliestTellers(character, (teller) => shortTeller(sources.find((source) => source.id === teller)?.name ?? teller))}
       />
 
       <div className="mt-16 border-t border-glass-border pt-6">

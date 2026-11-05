@@ -5,7 +5,7 @@ Odyssey / Ithaca / Phaeacia data slice — continue the next incremental batch.
 - Corpus-first: run `pnpm corpus:search` before adding any fact; never invent sources.
 - Incremental batches only (this slice: max 5 new characters OR expand 3 existing ones — not both at max).
 - Check homonyms in `data/characters/` before new ids; use disambiguated ids (`eurymachus-ithaca`, `chione-daedalion`, etc.).
-- Every fact needs `sources: SourceId[]`; disputed facts need `topic` + relations + `docs/CONTRADICTIONS.md` when new.
+- Every fact needs `sources: SourceId[]`; disputed facts need `topic` + relations + a quarrel in `data/quarrels.json` when new (then `pnpm quarrels:doc` rewrites `docs/CONTRADICTIONS.md`).
 - Run `pnpm validate-data` after ANY data edit; fix until green.
 - Do NOT git commit unless the user explicitly asked in this turn.
 
@@ -24,7 +24,7 @@ Odysseus core story + culture; circle slice 1–2 (Anticleia, Autolycus, Chione,
    **E. Thamyris + Argiope** (Philammon branch; Pausanias / Apollodorus).
    **F. Telemachus voyage** (Nestor/Pylos/Menelaus links if missing relations).
 
-4. Execute: characters, relations, reference/*.json if warranted, CONTRADICTIONS if new topic, update `data/geo/places.json` characterIds when residences/places clear.
+4. Execute: characters, relations, reference/*.json if warranted, a quarrel in data/quarrels.json if new topic (then pnpm quarrels:doc), update `data/geo/places.json` characterIds when residences/places clear.
 5. `pnpm validate-data` — must pass.
 
 ## Loop behaviour

@@ -1,0 +1,151 @@
+{
+  "works": [
+    {
+      "id": "iliad",
+      "author": "homer",
+      "title": "Iliad",
+      "greekTitle": "Ἰλιάς",
+      "composed": { "from": -760, "to": -700, "label": "c. 8th century BC" },
+      "structure": "books-of-lines",
+      "units": "books",
+      "aliases": ["Iliad", "Il.", "Il", "Hom. Il.", "Hom. Il", "Homer, Iliad", "Homer Iliad", "Iliad bk.", "Iliad book"],
+      "original": { "corpusId": "homer-iliad-grc", "credit": "Greek text ed. D. B. Monro and T. W. Allen (Oxford, 1920), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "homer-iliad-en", "credit": "English translation by A. T. Murray (Loeb, 1924–1925), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "odyssey",
+      "author": "homer",
+      "title": "Odyssey",
+      "greekTitle": "Ὀδύσσεια",
+      "composed": { "from": -740, "to": -680, "label": "c. 8th century BC" },
+      "structure": "books-of-lines",
+      "units": "books",
+      "aliases": ["Odyssey", "Od.", "Od", "Hom. Od.", "Hom. Od", "Homer, Odyssey", "Homer Odyssey"],
+      "original": { "corpusId": "homer-odyssey-grc", "credit": "Greek text ed. D. B. Monro and T. W. Allen (Oxford, 1917–1919), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "homer-odyssey-en", "credit": "English translation by A. T. Murray (Loeb, 1919), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "theogony",
+      "author": "hesiod",
+      "title": "Theogony",
+      "greekTitle": "Θεογονία",
+      "composed": { "from": -720, "to": -680, "label": "c. 700 BC" },
+      "structure": "lines",
+      "units": "whole",
+      "aliases": ["Theogony", "Theog.", "Theog", "Th.", "Th", "Hes. Th.", "Hes. Theog.", "Hesiod, Theogony", "Hesiod Theogony"],
+      "original": { "corpusId": "hesiod-theogony-grc", "credit": "Greek text ed. H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "hesiod-theogony-en", "credit": "English translation by H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "works-and-days",
+      "author": "hesiod",
+      "title": "Works and Days",
+      "greekTitle": "Ἔργα καὶ Ἡμέραι",
+      "composed": { "from": -720, "to": -680, "label": "c. 700 BC" },
+      "structure": "lines",
+      "units": "whole",
+      "aliases": ["Works and Days", "WD", "W&D", "Op.", "Hes. WD", "Hes. Op.", "Hesiod, Works and Days"],
+      "original": { "corpusId": "hesiod-works-and-days-grc", "credit": "Greek text ed. H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "hesiod-works-and-days-en", "credit": "English translation by H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "argonautica",
+      "author": "apollonius",
+      "title": "Argonautica",
+      "greekTitle": "Ἀργοναυτικά",
+      "composed": { "from": -270, "to": -240, "label": "3rd century BC" },
+      "structure": "books-of-lines",
+      "units": "books",
+      "aliases": ["Argonautica", "Arg.", "Arg", "Apoll. Arg.", "Ap. Rhod.", "Ap. Rhod. Arg.", "Apollonius, Argonautica", "Apollonius Rhodius, Argonautica"],
+      "original": { "corpusId": "apollonius-argonautica-grc", "credit": "Greek text ed. G. W. Mooney (London, 1912), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "apollonius-argonautica-en", "credit": "English translation by R. C. Seaton (Loeb, 1912); public domain, to be re-sourced from Project Gutenberg #13977 before display (docs/LIBRARY_PLAN.md §4.4)", "licence": "Public domain (pinned copy: ToposText, CC BY-NC 4.0)" },
+      "display": "excerpt"
+    },
+    {
+      "id": "metamorphoses",
+      "author": "ovid",
+      "title": "Metamorphoses",
+      "composed": { "from": 2, "to": 8, "label": "AD 8" },
+      "structure": "books-of-lines",
+      "units": "books",
+      "aliases": ["Metamorphoses", "Met.", "Met", "Ov. Met.", "Ov. Met", "Ovid, Metamorphoses", "Ovid Metamorphoses"],
+      "original": { "corpusId": "ovid-metamorphoses-lat", "credit": "Latin text ed. Hugo Magnus (Gotha, 1892), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "ovid-metamorphoses-en", "credit": "English translation by Brookes More (Boston, 1922), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "bibliotheca",
+      "author": "apollodorus",
+      "title": "Library",
+      "greekTitle": "Βιβλιοθήκη",
+      "composed": { "from": 1, "to": 200, "label": "1st–2nd century AD" },
+      "structure": "sections",
+      "units": "books",
+      "aliases": ["Bibliotheca", "Bibl.", "Library", "The Library", "Apollod.", "Apollod", "Apollodorus", "Apollodorus, Bibliotheca", "Apollodorus Bibliotheca", "Apollodorus, Library", "Apollod. Bibl.", "Apollod. Bibliotheca"],
+      "original": { "corpusId": "apollodorus-library-grc", "credit": "Greek text ed. J. G. Frazer (Loeb, 1921), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "apollodorus-library-en", "credit": "English translation by J. G. Frazer (Loeb, 1921), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "epitome",
+      "author": "apollodorus",
+      "title": "Epitome",
+      "greekTitle": "Ἐπιτομή",
+      "composed": { "from": 1, "to": 200, "label": "1st–2nd century AD" },
+      "structure": "sections",
+      "units": "books",
+      "aliases": ["Epitome", "Epit.", "Epit", "Apollod. Epit.", "Apollod. Epit", "Apollodorus, Epitome", "Bibliotheca Epitome", "Library, Epitome"],
+      "original": { "corpusId": "apollodorus-epitome-grc", "credit": "Greek text ed. J. G. Frazer (Loeb, 1921), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "apollodorus-epitome-en", "credit": "English translation by J. G. Frazer (Loeb, 1921), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    },
+    {
+      "id": "fabulae",
+      "author": "hyginus",
+      "title": "Fabulae",
+      "composed": { "from": 1, "to": 200, "label": "1st–2nd century AD" },
+      "structure": "tales",
+      "units": "whole",
+      "aliases": ["Fabulae", "Fab.", "Fab", "Hyg. Fab.", "Hyg. Fabulae", "Hyginus, Fabulae", "Hyginus Fabulae", "Genealogies"],
+      "translation": { "corpusId": "hyginus-fabulae-en", "credit": "English translation by Mary Grant (University of Kansas, 1960); registered and not renewed, very likely US public domain (docs/LIBRARY_PLAN.md §4.4)", "licence": "Public domain in the US, unconfirmed (pinned copy: ToposText, CC BY-NC 4.0)" },
+      "display": "excerpt"
+    },
+    {
+      "id": "astronomica",
+      "author": "hyginus",
+      "title": "Astronomica",
+      "composed": { "from": 1, "to": 200, "label": "1st–2nd century AD" },
+      "structure": "sections",
+      "units": "whole",
+      "aliases": ["Astronomica", "Astr.", "Hyg. Astr.", "Hyginus, Astronomica", "De Astronomia", "Poetica Astronomica"],
+      "translation": { "corpusId": "hyginus-astronomica-en", "credit": "English translation of Book 2 by Mary Grant (University of Kansas, 1960); registered and not renewed, very likely US public domain (docs/LIBRARY_PLAN.md §4.4)", "licence": "Public domain in the US, unconfirmed (pinned copy: ToposText, CC BY-NC 4.0)" },
+      "display": "excerpt"
+    },
+    {
+      "id": "description-of-greece",
+      "author": "pausanias",
+      "title": "Description of Greece",
+      "greekTitle": "Ἑλλάδος Περιήγησις",
+      "composed": { "from": 150, "to": 180, "label": "2nd century AD" },
+      "structure": "sections",
+      "units": "books",
+      "aliases": ["Description of Greece", "Description", "Paus.", "Paus", "Pausanias", "Pausanias, Description of Greece", "Pausanias Description of Greece"],
+      "original": { "corpusId": "pausanias-description-grc", "credit": "Greek text ed. F. Spiro (Leipzig, 1903), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translation": { "corpusId": "pausanias-description-en", "credit": "English translation by W. H. S. Jones and H. A. Ormerod (Loeb, 1918–1935), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "display": "full"
+    }
+  ],
+  "external": [
+    { "label": "Ovid, Fasti", "aliases": ["Fasti", "Ov. Fasti", "Ovid, Fasti"] },
+    { "label": "The Homeric Hymns", "aliases": ["Homeric Hymn to Demeter", "Homeric Hymn to Hermes", "Homeric Hymn to Aphrodite", "Homeric Hymn to Apollo", "Homeric Hymn to Dionysus"] },
+    { "label": "The Parian Marble", "aliases": ["Marmor Parium", "Marmor Parium ep.", "Parian Marble"], "note": "Chronicle cited for the atlas's dating anchors (data/chronology.json)" },
+    { "label": "Eusebius, Chronicle", "aliases": ["Eusebius", "Eusebius, Chronicle", "Chronicle", "Castor ap. Eusebius, Chronicle", "Africanus ap. Eusebius", "Africanus ap. Eusebius, Chronicle"], "note": "Chronographers quoted by Eusebius, cited for the atlas's dating anchors" },
+    { "label": "Clement of Alexandria, Stromata", "aliases": ["Clement, Stromata", "ap. Clement", "ap. Clement, Stromata", "Stromata"], "note": "Quoted for the atlas's dating anchors" },
+    { "label": "Sophocles, Antigone", "aliases": ["Sophocles, Antigone", "Sophocles Antigone", "Soph. Ant."], "note": "The tragedy is the only telling of Creon's wife Eurydice the atlas carries (eurydice-thebes); none of the seven tellers names her" },
+    { "label": "Hesiod, Astronomy (fragments)", "aliases": ["Astronomy", "Hes. Astr."], "note": "A lost Hesiodic poem known from fragments; the story of Orion the hunter attests it" }
+  ]
+}

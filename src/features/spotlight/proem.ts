@@ -32,7 +32,7 @@ export function buildProemScript(payload: EphemerisCardPayload): ProemScript {
   }
   beats.push({ kind: 'telling', summary: payload.summary });
   if (payload.quarrel && payload.quarrel.variants.length >= 2) {
-    beats.push({ kind: 'quarrel', variants: payload.quarrel.variants });
+    beats.push({ kind: 'quarrel', topic: payload.quarrel.topic, variants: payload.quarrel.variants });
   }
   if (payload.artwork) {
     beats.push({ kind: 'trace', artwork: payload.artwork });

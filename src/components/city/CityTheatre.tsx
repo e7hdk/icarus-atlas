@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import type { CharacterType } from '@/types/character';
 import { TYPE_GLOW } from '@/types/character';
 import { MarqueeCard, MarqueeHeading, Meander } from '@/components/character/codex-marquee';
+import { Footnote } from '@/components/ui/Footnote';
+import type { PassageLink } from '@/features/library/links';
 
 /** The city codex in the marquee language (city concept A — Dynasty Spine):
  *  the marquee card carries the city's identity, a miniature of her sky
@@ -20,6 +22,8 @@ export interface TheatreReign {
   note?: string;
   /** Hover footnote: teller names + citation, prebuilt server-side. */
   footnote: string;
+  /** The passages its citation names in the Library. */
+  passages?: PassageLink[];
   disputed: boolean;
 }
 
@@ -44,18 +48,6 @@ function roman(value: number): string {
     }
   }
   return out;
-}
-
-/** Hover footnote superscript (tellers + citation), the codex idiom. */
-function Footnote({ label, text }: { label: string; text: string }) {
-  return (
-    <span className="group/fn relative ml-0.5 cursor-default align-super font-body text-[13px] not-italic text-aether-faint">
-      {label}
-      <span className="pointer-events-none absolute bottom-full right-0 z-10 mb-1.5 hidden max-w-[80vw] whitespace-nowrap rounded-lg border border-star-olympian/40 bg-cosmos-raised px-2.5 py-1 font-body text-sm not-italic text-aether group-hover/fn:block sm:max-w-none">
-        {text}
-      </span>
-    </span>
-  );
 }
 
 const SEAL_RINGS = [35, 63, 91];
@@ -328,10 +320,10 @@ export function CityTheatre({
                   {reign.note && (
                     <p className="mt-1.5 font-body text-[17.5px] leading-relaxed text-aether/88">
                       {reign.note}
-                      <Footnote label={String(index + 1)} text={reign.footnote} />
+                      <Footnote label={String(index + 1)} text={reign.footnote} passages={reign.passages} />
                     </p>
                   )}
-                  {!reign.note && <Footnote label={String(index + 1)} text={reign.footnote} />}
+                  {!reign.note && <Footnote label={String(index + 1)} text={reign.footnote} passages={reign.passages} />}
                 </section>
               ))}
 

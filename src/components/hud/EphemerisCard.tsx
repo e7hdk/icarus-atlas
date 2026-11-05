@@ -1,5 +1,6 @@
 'use client';
 
+import { CitationText } from '@/components/ui/CitationText';
 import { Link } from '@/components/ui/Link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
@@ -232,7 +233,7 @@ export function EphemerisCard() {
               {summary.text}
               {summary.citation && (
                 <span className="ml-1.5 font-body text-[12px] text-aether-faint">
-                  — {summary.citation}
+                  — <CitationText citation={summary.citation} sources={summary.sources} />
                 </span>
               )}
             </p>

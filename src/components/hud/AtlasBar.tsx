@@ -11,7 +11,7 @@ import { EphemerisChip } from './EphemerisChip';
 import { OdysseyChip } from './OdysseyChip';
 
 /** The one chrome of the atlas — a fixed glass masthead on every page:
- *  brand left, the four doors centered, search ⌘K + settings right.
+ *  brand left, the five doors centered, search ⌘K + settings right.
  *  Transparent over the immersive canvases; the glass deepens once a page
  *  scrolls, and on long reads the bar steps aside on scroll-down and returns
  *  the instant the reader looks up. Codex pages add their own breadcrumb
@@ -23,6 +23,8 @@ function doorFor(pathname: string): MainTab | null {
   if (pathname.startsWith('/art')) return 'art';
   if (pathname.startsWith('/festivals')) return null; // Ephemeris satellite — no world door lit
   if (pathname.startsWith('/odyssey')) return null; // Nostos voyage satellite — no world door lit
+  if (pathname.startsWith('/library')) return 'library';
+  if (pathname.startsWith('/theogony')) return null; // First, Chaos: the Library's satellite, as the Odyssey is the Myths'
   return 'galaxy';
 }
 
@@ -65,7 +67,7 @@ export function AtlasBar() {
       }`}
     >
       <div
-        className={`atlas-bar relative flex h-14 items-center border-b px-3 transition-[background-color,box-shadow,border-color] duration-300 sm:px-6 ${
+        className={`atlas-bar relative flex h-14 items-center border-b px-2.5 transition-[background-color,box-shadow,border-color] duration-300 sm:px-6 ${
           scrolled
             ? 'border-white/10 bg-[rgba(10,5,30,0.72)] shadow-[0_18px_50px_rgba(5,2,15,0.45)] backdrop-blur-xl'
             : 'border-transparent'
@@ -75,18 +77,19 @@ export function AtlasBar() {
           <IcarusBrand />
         </Link>
         {/* Mobile: the Wain rides at the brand's side — the left hand, as
-            Calypso instructed — which also balances the flex row so the four
+            Calypso instructed — which also balances the flex row so the five
             doors sit at the true optical centre. */}
-        <span className="ml-1.5 sm:hidden">
+        <span className="ml-1 sm:hidden">
           <OdysseyChip active={pathname.startsWith('/odyssey')} />
         </span>
-        {/* Mobile: the nav lives in the flex flow (auto margins centre it, and
-            siblings can push — overlap is impossible). sm+: true optical
-            centring via absolute positioning, as before. */}
-        <div className="mx-auto sm:absolute sm:left-1/2 sm:top-1/2 sm:mx-0 sm:-translate-x-1/2 sm:-translate-y-1/2">
+        {/* Below xl the nav lives in the flex flow (auto margins centre it, and
+            siblings can push — overlap is impossible); xl+: true optical
+            centring via absolute positioning, where the five lettered doors
+            clear the brand and the chips. */}
+        <div className="mx-auto xl:absolute xl:left-1/2 xl:top-1/2 xl:mx-0 xl:-translate-x-1/2 xl:-translate-y-1/2">
           <MainNav active={doorFor(pathname)} />
         </div>
-        <div className="ml-auto flex items-center gap-1.5 sm:gap-2.5">
+        <div className="ml-auto flex items-center gap-1 sm:gap-2.5">
           <span className="hidden sm:flex">
             <OdysseyChip active={pathname.startsWith('/odyssey')} />
           </span>

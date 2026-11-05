@@ -147,6 +147,8 @@ export interface Relation {
   /** Only on `parent` edges; see PARENT_BONDS. */
   bond?: ParentBond;
   note?: string;
+  /** The passage that proves the edge, where the data gives one apart from the note. */
+  citation?: string;
 }
 
 export interface Source {

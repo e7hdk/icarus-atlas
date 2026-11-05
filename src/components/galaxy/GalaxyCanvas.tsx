@@ -14,7 +14,7 @@ import { Nebula } from './Nebula';
 import { BackgroundDome } from './BackgroundDome';
 import { StarField } from './StarField';
 import { RelationLines } from './RelationLines';
-import { CameraRig } from './CameraRig';
+import { CameraRig, type CameraAim } from './CameraRig';
 import { EphemerisBeacon } from './EphemerisBeacon';
 import { WeekConstellation } from './WeekConstellation';
 import { MobileStarLabels } from './MobileStarLabels';
@@ -27,6 +27,7 @@ export function GalaxyCanvas({
   positions,
   cameraIntro = false,
   ephemerisBeacon = false,
+  reading = null,
 }: {
   characters: SkyCharacter[];
   relations: Relation[];
@@ -34,6 +35,8 @@ export function GalaxyCanvas({
   cameraIntro?: boolean;
   /** Mark the star of the day — the full galaxy only, never the city skies. */
   ephemerisBeacon?: boolean;
+  /** A reading of the sky (First, Chaos): looked at, not picked, framed by `aim`. */
+  reading?: { aim: CameraAim } | null;
 }) {
   const select = useGalaxyStore((s) => s.select);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
@@ -51,7 +54,9 @@ export function GalaxyCanvas({
         events={createGalaxyPointerEvents}
         camera={{ position: [18, 43, 88], fov: 50, near: 0.1, far: 20000 }}
         gl={{ antialias: false, powerPreference: 'high-performance', stencil: false, alpha: false }}
-        onPointerMissed={() => select(null)}
+        onPointerMissed={() => {
+          if (!reading) select(null);
+        }}
       >
         <color attach="background" args={['#08041d']} />
         <PerformanceMonitor onDecline={() => setHighPerf(false)} onIncline={() => setHighPerf(true)} />
@@ -60,7 +65,7 @@ export function GalaxyCanvas({
           <StarField />
           <Nebula />
         </group>
-        <StarsDriver characters={characters} isMobile={isMobile} positions={positions} />
+        <StarsDriver characters={characters} isMobile={isMobile} positions={positions} pickable={!reading} />
         {isMobile && (
           <MobileStarLabels
             canvasRef={mobileLabelCanvas}
@@ -71,7 +76,7 @@ export function GalaxyCanvas({
         <RelationLines relations={relations} positions={positions} />
         {ephemerisBeacon && <EphemerisBeacon positions={positions} />}
         {ephemerisBeacon && <WeekConstellation isMobile={isMobile} positions={positions} />}
-        <CameraRig positions={positions} intro={cameraIntro} isMobile={isMobile} />
+        <CameraRig positions={positions} intro={cameraIntro} isMobile={isMobile} aim={reading?.aim ?? null} />
         {/* The HDR contract the shaders are written to: only true light
             sources (star cores, giant field stars) cross the bloom threshold,
             and the roll-off burns them white without touching anything below

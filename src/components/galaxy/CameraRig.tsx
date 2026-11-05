@@ -21,16 +21,36 @@ const TRAVEL_DISTANCE = 13;
 /** Shifts the aim point right so the star sits left of the story panel. */
 const PANEL_OFFSET = 2.6;
 
+/** Where the camera looks, moved off its focus by these fractions of its
+ *  distance: a reading keeps its focus in the open sky beside its column. */
+export interface CameraAim {
+  right: number;
+  up: number;
+}
+
+/** Look from `camera` at `target`, the aim point moved by `aim` × the distance. */
+function aimed(camera: THREE.Vector3, target: THREE.Vector3, aim: CameraAim): THREE.Vector3 {
+  const forward = target.clone().sub(camera);
+  const distance = forward.length();
+  forward.normalize();
+  const right = new THREE.Vector3().crossVectors(forward, new THREE.Vector3(0, 1, 0)).normalize();
+  const up = new THREE.Vector3().crossVectors(right, forward).normalize();
+  return target.clone().addScaledVector(right, aim.right * distance).addScaledVector(up, aim.up * distance);
+}
+
 /** Smooth fly-to on selection; returns to the overview when deselected. */
 export function CameraRig({
   isMobile,
   positions,
   intro = false,
+  aim = null,
 }: {
   isMobile: boolean;
   positions: Map<string, Vec3>;
   /** City skies: drift in from a high vantage on first mount. */
   intro?: boolean;
+  /** A reading's framing; null keeps the panel offset of the atlas. */
+  aim?: CameraAim | null;
 }) {
   const controls = useRef<ComponentRef<typeof CameraControls>>(null);
   const eventSource = useThree((state) => state.events.connected ?? state.gl.domElement);
@@ -178,7 +198,7 @@ export function CameraRig({
       );
       const forward = new THREE.Vector3(x, y, z).sub(camera).normalize();
       const right = new THREE.Vector3().crossVectors(forward, new THREE.Vector3(0, 1, 0)).normalize();
-      const target = new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
+      const target = aim ? aimed(camera, new THREE.Vector3(x, y, z), aim) : new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
       rig.setLookAt(camera.x, camera.y, camera.z, target.x, target.y, target.z, true);
     } else if (skyFocus) {
       // Out to the constellation itself: the sky is read from beside it.
@@ -193,15 +213,11 @@ export function CameraRig({
         : discRadius > 0
           ? (OVERVIEW_FIT * discRadius) / HOME_LENGTH
           : spacingScale * 2.5;
-      rig.setLookAt(
-        HOME_POSITION[0] * overviewScale,
-        HOME_POSITION[1] * overviewScale,
-        HOME_POSITION[2] * overviewScale,
-        ...HOME_TARGET,
-        true
-      );
+      const home = new THREE.Vector3(...HOME_POSITION).multiplyScalar(overviewScale);
+      const target = aim ? aimed(home, new THREE.Vector3(...HOME_TARGET), aim) : new THREE.Vector3(...HOME_TARGET);
+      rig.setLookAt(home.x, home.y, home.z, target.x, target.y, target.z, true);
     }
-  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius]);
+  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius, aim]);
 
   return (
     <CameraControls

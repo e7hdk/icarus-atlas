@@ -1,0 +1,60 @@
+{
+  "note": "Each English edition's own spellings of the atlas's figures (docs/LIBRARY_PLAN.md §4.6). A form maps to an id, to several ids (a name two figures share: the passage's scope chooses), or to { id, scoped } for a common noun the translator capitalises ('Earth', 'Heaven'), which links only where its figure is in the passage's scope. Outside a passage's scope only a god whose name no one else bears links.",
+  "editions": {
+    "homer-iliad-en": {
+      "Athene": "athena",
+      "Aias": ["ajax-telamonian", "ajax-oileus"],
+      "Cronos": "cronus",
+      "Argeiphontes": "hermes",
+      "Earth": { "id": "gaia", "scoped": true },
+      "Dawn": { "id": "eos", "scoped": true },
+      "Sleep": { "id": "hypnos", "scoped": true },
+      "Death": { "id": "thanatos", "scoped": true }
+    },
+    "homer-odyssey-en": {
+      "Athene": "athena",
+      "Aias": ["ajax-telamonian", "ajax-oileus"],
+      "Cronos": "cronus",
+      "Argeiphontes": "hermes",
+      "Teiresias": "tiresias",
+      "Dawn": { "id": "eos", "scoped": true }
+    },
+    "hesiod-theogony-en": {
+      "Cronos": "cronus",
+      "Gyes": "gyges-hecatoncheir",
+      "Briareos": "briareus",
+      "Helius": "helios",
+      "Cytherea": "aphrodite",
+      "Geryones": "geryon",
+      "Orthus": "orthrus",
+      "Typhoeus": "typhon",
+      "Earth": { "id": "gaia", "scoped": true },
+      "Heaven": { "id": "uranus", "scoped": true },
+      "Ocean": { "id": "oceanus", "scoped": true },
+      "Night": { "id": "nyx", "scoped": true },
+      "Dawn": { "id": "eos", "scoped": true },
+      "Sleep": { "id": "hypnos", "scoped": true },
+      "Death": { "id": "thanatos", "scoped": true }
+    },
+    "hesiod-works-and-days-en": {
+      "Cronos": "cronus",
+      "Earth": { "id": "gaia", "scoped": true }
+    },
+    "ovid-metamorphoses-en": {
+      "Jove": "zeus",
+      "Sun": { "id": "helios", "scoped": true }
+    },
+    "apollodorus-library-en": {
+      "Egyptus": "aegyptus",
+      "Earth": { "id": "gaia", "scoped": true },
+      "Sky": { "id": "uranus", "scoped": true },
+      "Ocean": { "id": "oceanus", "scoped": true },
+      "Sun": { "id": "helios", "scoped": true },
+      "Dawn": { "id": "eos", "scoped": true }
+    },
+    "apollodorus-epitome-en": {
+      "Clytaemnestra": "clytemnestra"
+    },
+    "pausanias-description-en": {}
+  }
+}

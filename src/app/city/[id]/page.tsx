@@ -9,6 +9,7 @@ import { loadCities, loadLineage, loadRegions } from '@/features/geo/load';
 import { countCityResidents } from '@/features/geo/residents';
 import { loadStories } from '@/features/stories/load';
 import type { CharacterType, SourceId } from '@/types/character';
+import { citationLinks } from '@/features/library/links';
 
 /** Seal ordering: the brightest orders of the sky first, then the mortal roll. */
 const SEAL_TYPE_ORDER: CharacterType[] = [
@@ -82,6 +83,7 @@ export default async function CityPage(props: { params: Promise<{ id: string }> 
     footnote: `${reign.sources.map((sourceId) => sourceNames.get(sourceId) ?? sourceId).join(' · ')}${
       reign.citation ? ` — ${reign.citation}` : ''
     }`,
+    passages: citationLinks(reign.citation, { sources: reign.sources }),
     disputed: Boolean(reign.topic),
   }));
 

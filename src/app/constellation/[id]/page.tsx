@@ -1,4 +1,5 @@
 import { Link } from '@/components/ui/Link';
+import { Testimony } from '@/components/ui/Testimony';
 import { notFound } from 'next/navigation';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { FigureChart } from '@/components/sky/FigureChart';
@@ -205,7 +206,7 @@ export default async function ConstellationPage(props: { params: Promise<{ id: s
               key={line}
               className="border border-star-olympian/15 bg-star-olympian/[0.03] px-5 py-3 font-body text-[15px] italic leading-relaxed text-aether-muted"
             >
-              {line}
+              <Testimony line={line} />
             </li>
           ))}
         </ul>

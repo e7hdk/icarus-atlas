@@ -1,5 +1,6 @@
 'use client';
 
+import type { EarliestTeller } from '@/features/library/earliest';
 import { Link } from '@/components/ui/Link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
@@ -12,6 +13,8 @@ import { LinkedProse } from '@/features/linking/LinkedProse';
 import { CodexIdentity, CodexRegisters, MarqueeCard, MarqueeHeading, Meander } from './codex-marquee';
 import { CodexSeal } from './CodexSeal';
 import { LensDropdown } from './LensDropdown';
+import { Footnote } from '@/components/ui/Footnote';
+import { citationLinks } from '@/features/library/links';
 
 /** The character codex in the myth page's approved language (Codex Marquee):
  *  identity, the miniature orrery ("the codex seal"), the one source lens,
@@ -32,18 +35,6 @@ function excerpt(text: string): string {
   return `${words.replace(/[,;:.]$/, '')}…`;
 }
 
-/** Hover footnote superscript (tellers + citation), the codex idiom. */
-function Footnote({ label, text }: { label: string; text: string }) {
-  return (
-    <span className="group/fn relative ml-0.5 cursor-default align-super font-body text-[13px] not-italic text-aether-faint">
-      {label}
-      <span className="pointer-events-none absolute bottom-full right-0 z-10 mb-1.5 hidden max-w-[80vw] whitespace-nowrap rounded-lg border border-star-olympian/40 bg-cosmos-raised px-2.5 py-1 font-body text-sm not-italic text-aether group-hover/fn:block sm:max-w-none">
-        {text}
-      </span>
-    </span>
-  );
-}
-
 const CATEGORY_CLAMP = 6;
 
 export function CharacterTheatre({
@@ -54,6 +45,7 @@ export function CharacterTheatre({
   residences,
   appearances,
   linkedStory,
+  earliest = [],
 }: {
   character: Character;
   characters: Pick<Character, 'id' | 'name' | 'type'>[];
@@ -65,6 +57,8 @@ export function CharacterTheatre({
   appearances: { id: string; title: string }[];
   /** This figure's story with its names linked, passage by passage. */
   linkedStory: ProseSegment[][];
+  /** The earliest of the seven tellers to tell of the figure, with any whose dates overlap. */
+  earliest?: EarliestTeller[];
 }) {
   const lens = useGalaxyStore((s) => s.lens);
   const [openCategories, setOpenCategories] = useState<Set<RingKey>>(new Set());
@@ -206,6 +200,23 @@ export function CharacterTheatre({
 
           <MarqueeHeading>TOLD AFTER</MarqueeHeading>
           <LensDropdown sources={sources} />
+          {earliest.length > 0 && (
+            <p className="mt-3 font-body text-[14px] italic leading-snug text-aether-faint">
+              <span className="font-display text-[9px] not-italic tracking-[0.22em] text-aether-faint/90">EARLIEST OF OUR TELLERS</span>
+              <br />
+              {earliest.map((entry, index) => (
+                <span key={entry.teller}>
+                  {index > 0 && ' and '}
+                  <span className="not-italic text-aether-muted">{entry.teller}</span>,{' '}
+                  <Link href={entry.href} className="underline decoration-current/35 decoration-dotted underline-offset-[3px] hover:text-star-olympian">
+                    {entry.label}
+                  </Link>{' '}
+                  ({entry.date})
+                </span>
+              ))}
+              {earliest.length > 1 && <span> — their dates overlap</span>}
+            </p>
+          )}
 
           {character.story.length > 0 && (
             <>
@@ -329,7 +340,7 @@ export function CharacterTheatre({
             style={{ borderColor: `${glow}80` }}
           >
             {summary.text}
-            <Footnote label="1" text={footnote(summary.sources, summary.citation)} />
+            <Footnote label="1" text={footnote(summary.sources, summary.citation)} passages={citationLinks(summary.citation, { sources: summary.sources })} />
           </p>
         )}
 
@@ -373,6 +384,7 @@ export function CharacterTheatre({
                   <Footnote
                     label={String(index + 2)}
                     text={footnote(passage.sources, passage.citation)}
+                    passages={citationLinks(passage.citation, { sources: passage.sources })}
                   />
                   {passage.topic && lens === 'consensus' && (
                     <span className="group/dq relative ml-1.5 cursor-default text-[15px] text-nebula-soft">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { CitationText } from '@/components/ui/CitationText';
 
 /** Pinned, scroll-scrubbed epigraph scene (docs/NOSTOS_PLAN.md D12/D15).
  *  The station's fragment becomes a held moment: the section is two-and-a-bit
@@ -236,7 +237,7 @@ export function PinnedEpigraph({
             ref={citeRef}
             className="mt-5 font-display text-[11px] tracking-[0.28em] text-star-olympian/75 sm:mt-7 sm:motion-safe:opacity-0"
           >
-            {epigraph.citation} · TRANS. A. T. MURRAY, 1919
+            <CitationText citation={epigraph.citation} /> · TRANS. A. T. MURRAY, 1919
           </figcaption>
           </figure>
         </div>

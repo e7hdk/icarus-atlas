@@ -1,0 +1,91 @@
+/* Shared chrome for the Library mockups (docs/LIBRARY_PLAN.md, M15.0):
+   the Aether Nebula tokens, the shipped AtlasBar with the Gilded chrome,
+   and a fifth door. Open any library-*.html file directly in a browser. */
+* { margin: 0; box-sizing: border-box; }
+:root {
+  --cosmos: #08041d; --cosmos-deep: #05020f; --cosmos-raised: #140c30;
+  --violet: #7c4dff; --soft: #c084fc; --cyan: #00e5ff; --pink: #ff4081;
+  --aether: #f1f5f9; --muted: #aab4c8; --faint: #6b7488;
+  --glass: rgba(255,255,255,.06); --glass-border: rgba(255,255,255,.14); --glass-heavy: rgba(20,12,48,.55);
+  --gold: #fcd34d; --gold-soft: #fde68a;
+  --primordial: #c084fc; --titan: #fb7185; --olympian: #fcd34d; --god: #60a5fa;
+  --hero: #2dd4bf; --mortal: #e5e7eb; --nymph: #4ade80; --creature: #f472b6;
+  --display: 'Cinzel', serif; --body: 'Cormorant Garamond', serif; --greek: 'EB Garamond', 'Cormorant Garamond', serif;
+}
+html { -webkit-text-size-adjust: 100%; }
+body { min-height: 100vh; color: var(--aether); font-family: var(--body); background: var(--cosmos);
+  background-image:
+    radial-gradient(48% 30% at 50% -4%, rgba(252,211,77,.07), transparent 70%),
+    radial-gradient(42% 36% at 0% 78%, rgba(124,77,255,.15), transparent 70%),
+    radial-gradient(34% 30% at 100% 36%, rgba(0,229,255,.06), transparent 70%);
+  background-attachment: fixed; overflow-x: clip; }
+::selection { background: rgba(252,211,77,.28); color: #05020f; }
+.dust { position: fixed; inset: 0; pointer-events: none; z-index: 0; background-image:
+  radial-gradient(1px 1px at 12% 18%, rgba(241,245,249,.45), transparent),
+  radial-gradient(1px 1px at 64% 9%, rgba(241,245,249,.3), transparent),
+  radial-gradient(1.4px 1.4px at 31% 61%, rgba(252,211,77,.28), transparent),
+  radial-gradient(1px 1px at 86% 72%, rgba(192,132,252,.32), transparent),
+  radial-gradient(1px 1px at 46% 88%, rgba(241,245,249,.25), transparent),
+  radial-gradient(1.2px 1.2px at 92% 22%, rgba(241,245,249,.35), transparent); }
+
+/* ---- the AtlasBar (shipped), with the Gilded chrome ---- */
+.atlasbar { position: fixed; inset: 0 0 auto 0; z-index: 40; display: flex; align-items: center; height: 56px; padding: 0 24px;
+  background: rgba(10,5,30,.72); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 18px 50px rgba(5,2,15,.45); }
+.atlasbar::after { content: ''; position: absolute; left: 8%; right: 8%; bottom: -1px; height: 1px;
+  background: linear-gradient(to right, transparent, rgba(252,211,77,.55), transparent); pointer-events: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand img { width: 32px; height: 32px; object-fit: contain; filter: drop-shadow(0 0 8px rgba(252,211,77,.42)); }
+.brand b { font: 400 14px var(--display); letter-spacing: .34em; color: var(--gold); text-shadow: 0 0 16px rgba(252,211,77,.45); }
+.doors { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: flex; gap: 4px; padding: 4px;
+  border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; backdrop-filter: blur(18px); }
+.doors a { display: inline-flex; align-items: center; padding: 6px 16px; border-radius: 999px; border: 1px solid transparent;
+  font: 400 11px var(--display); letter-spacing: .16em; color: var(--muted); text-decoration: none; transition: color .2s; }
+.doors a:hover { color: var(--aether); }
+.doors a.on { border-color: rgba(252,211,77,.55); background: rgba(252,211,77,.12); color: var(--gold); }
+.doors a .g { display: none; }
+.doors a .new { margin-left: 6px; font-size: 8px; letter-spacing: .14em; color: rgba(252,211,77,.7); }
+.chips { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.chip { display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 13px; border-radius: 999px; border: 1px solid var(--glass-border);
+  background: var(--glass); font: 400 10px var(--display); letter-spacing: .14em; color: var(--muted); }
+.chip svg { color: var(--gold); }
+.chip.round { width: 34px; padding: 0; justify-content: center; }
+
+/* ---- crumbs ---- */
+.crumb { display: flex; align-items: center; gap: 12px; font: 400 10px var(--display); letter-spacing: .22em; color: var(--faint); text-transform: uppercase; }
+.crumb .back { display: inline-flex; width: 30px; height: 30px; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 999px; color: var(--muted); font-size: 15px; text-decoration: none; }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--aether); }
+.crumb .sep { color: rgba(241,245,249,.25); }
+.crumb .here { color: var(--gold); }
+
+/* ---- gilded fragment corners (reading fragments only) ---- */
+.gilded { position: relative; }
+.gilded::before, .gilded::after { content: ''; position: absolute; width: 30px; height: 30px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cg fill='none' stroke='%23fcd34d' stroke-opacity='0.62' stroke-width='1.3'%3E%3Cpath d='M23 2 H2 V23'/%3E%3Cpath d='M23 0.5 V3.5 M0.5 23 H3.5'/%3E%3Cpath d='M16 6.5 H6.5 V16 H11.5 V10.5 H9'/%3E%3C/g%3E%3Crect x='16.6' y='16.6' width='3.2' height='3.2' transform='rotate(45 18.2 18.2)' fill='%23fcd34d' fill-opacity='0.55'/%3E%3C/svg%3E") no-repeat center / contain; }
+.gilded::before { left: -26px; top: -26px; }
+.gilded::after { right: -26px; bottom: -26px; transform: rotate(180deg); }
+
+/* ---- small shared bits ---- */
+.kicker { font: 400 10px var(--display); letter-spacing: .32em; color: var(--faint); text-transform: uppercase; }
+.greek { font-family: var(--greek); }
+.tdot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--c); box-shadow: 0 0 6px 1px var(--c); flex: none; }
+.mockflag { position: fixed; right: 14px; bottom: 12px; z-index: 50; font: italic 13px var(--body); color: var(--faint); background: rgba(5,2,15,.7); border: 1px solid rgba(255,255,255,.08); border-radius: 999px; padding: 5px 12px; }
+.mockflag b { font-style: normal; font-weight: 500; color: rgba(252,211,77,.8); }
+
+@media (max-width: 760px) {
+  .atlasbar { padding: 0 12px; }
+  .brand b { display: none; }
+  .brand img { width: 28px; height: 28px; }
+  .doors { position: static; transform: none; margin: 0 auto; gap: 2px; padding: 2px; }
+  .doors a { padding: 10px; }
+  .doors a .t, .doors a .new { display: none; }
+  .doors a .g { display: inline-flex; }
+  .chips { margin-left: 0; gap: 6px; }
+  .chip.wide { display: none; }
+  .mockflag { display: none; }
+  .gilded::before, .gilded::after { width: 22px; height: 22px; }
+  .gilded::before { left: -12px; top: -14px; }
+  .gilded::after { right: -12px; bottom: -14px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }

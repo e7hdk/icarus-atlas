@@ -7,6 +7,8 @@
   /* Typography — classical serif pairing, wired to next/font variables in src/app/layout.tsx */
   --font-display: var(--font-cinzel), serif;
   --font-body: var(--font-cormorant), serif;
+  /* The Library's originals: EB Garamond (polytonic Greek), loaded under /library only */
+  --font-greek: var(--font-ebgaramond), var(--font-cormorant), serif;
 
   /* Cosmos backgrounds */
   --color-cosmos: #08041d;

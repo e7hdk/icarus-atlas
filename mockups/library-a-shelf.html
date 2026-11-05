@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Library A: The Shelf</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="shared/library-chrome.css">
+<style>
+  /* ============ LIBRARY A — THE SHELF ============
+     The fifth door's landing (docs/LIBRARY_PLAN.md §3, §5). Time runs left
+     to right; each spine is one work, as tall as the work is long; the gilt
+     level is the share of it some atlas fact cites; the sagas run beneath as
+     threads, knotted at the works that tell them. Between Hesiod and
+     Apollonius the shelf is empty, and says so. */
+  .page { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 96px 28px 90px; }
+
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 470px); gap: 64px; align-items: end; }
+  .hero h1 { margin-top: 10px; font: 700 54px var(--display); letter-spacing: .16em; color: var(--aether);
+    text-shadow: 0 0 18px rgba(252,211,77,.35), 0 0 60px rgba(252,211,77,.14); }
+  .hero .gk { margin-top: 4px; font: italic 400 22px var(--greek); color: rgba(252,211,77,.72); letter-spacing: .02em; }
+  .lede { margin-top: 18px; max-width: 600px; font-size: 20px; line-height: 1.6; color: var(--muted); }
+  .lede b { font-weight: 500; color: var(--aether); }
+  .muses { padding: 22px 26px 18px; border: 1px solid rgba(252,211,77,.22); background: rgba(20,12,48,.45); backdrop-filter: blur(14px); }
+  .muses .gr { font: 400 17px/1.55 var(--greek); color: #fde68a; }
+  .muses .gr span { display: block; }
+  .muses .gr i { font-style: normal; display: inline-block; width: 26px; font: 400 10px var(--display); color: rgba(252,211,77,.45); letter-spacing: .08em; }
+  .muses .en { margin-top: 10px; font: italic 17px/1.5 var(--body); color: rgba(241,245,249,.88); }
+  .muses .by { margin-top: 10px; font: 400 9.5px var(--display); letter-spacing: .24em; color: var(--faint); }
+  .muses .by b { font-weight: 400; color: rgba(252,211,77,.7); }
+
+  /* ---- the shelf ---- */
+  .shelfwrap { position: relative; margin-top: 54px; }
+  .shelfhead { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
+  .shelfhead p { font-style: italic; font-size: 15px; color: var(--faint); }
+  .shelfhead p b { font-style: normal; font-weight: 500; color: var(--muted); }
+  #shelf { display: block; width: 100%; height: auto; margin-top: 10px; overflow: visible; }
+  #shelf text { user-select: none; }
+  .spine { cursor: pointer; transform-box: fill-box; transform-origin: 50% 100%; animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes rise { from { transform: scaleY(0); opacity: 0; } to { transform: scaleY(1); opacity: 1; } }
+  .spine .body { transition: filter .3s, stroke .3s; }
+  .spine:hover .body, .spine.hot .body { stroke: rgba(252,211,77,.9); filter: url(#glow); }
+  .spine.dim, .lane.dim, .leader.dim, .seal.dim { opacity: .22; }
+  .spine, .lane, .leader, .seal, .tname { transition: opacity .3s; }
+  .lane { cursor: default; }
+  .lane .hit { fill: transparent; }
+  .tname { cursor: pointer; }
+  .empty-label { position: absolute; transform: translate(-50%, 0); width: 30%; text-align: center; pointer-events: none; }
+  .empty-label h4 { font: 400 10.5px var(--display); letter-spacing: .34em; color: rgba(252,211,77,.62); }
+  .empty-label p { margin-top: 8px; font: italic 14.5px/1.55 var(--body); color: var(--faint); }
+  .empty-label p em { font-style: normal; color: var(--muted); }
+
+  .spinecard { position: absolute; z-index: 5; width: 330px; padding: 18px 20px 16px; border: 1px solid rgba(252,211,77,.32);
+    background: rgba(14,8,38,.92); backdrop-filter: blur(18px); box-shadow: 0 24px 60px rgba(5,2,15,.6); border-radius: 4px;
+    opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s; pointer-events: none; }
+  .spinecard.on { opacity: 1; transform: none; pointer-events: auto; }
+  .spinecard h3 { margin-top: 6px; font: 600 21px var(--display); letter-spacing: .08em; }
+  .spinecard h3 span { margin-left: 8px; font: italic 400 16px var(--greek); color: rgba(252,211,77,.7); letter-spacing: 0; }
+  .spinecard .meter { margin-top: 12px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.07); overflow: hidden; }
+  .spinecard .meter i { display: block; height: 100%; background: linear-gradient(90deg, rgba(252,211,77,.35), var(--gold)); box-shadow: 0 0 10px rgba(252,211,77,.5); }
+  .spinecard .mlabel { margin-top: 5px; font-style: italic; font-size: 13.5px; color: var(--muted); }
+  .spinecard dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 8px; margin-top: 14px; }
+  .spinecard dt { font: 400 8.5px var(--display); letter-spacing: .2em; color: var(--faint); }
+  .spinecard dd { font: 500 19px var(--body); color: var(--aether); }
+  .spinecard .ed { margin-top: 12px; font-size: 13.5px; line-height: 1.45; color: var(--faint); font-style: italic; }
+  .spinecard .open { display: inline-block; margin-top: 12px; font: 400 10px var(--display); letter-spacing: .22em; color: var(--gold); text-decoration: none; }
+  .spinecard .open:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .lanetip { position: absolute; z-index: 5; padding: 10px 14px; border: 1px solid var(--glass-border); background: rgba(14,8,38,.94); border-radius: 6px;
+    font-size: 14.5px; color: var(--muted); pointer-events: none; opacity: 0; transition: opacity .15s; max-width: 380px; }
+  .lanetip.on { opacity: 1; }
+  .lanetip b { font: 400 10px var(--display); letter-spacing: .2em; }
+  .lanetip span { color: var(--aether); }
+
+  .legendline { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 8px; font-style: italic; font-size: 14px; color: var(--faint); }
+  .legendline i { display: inline-block; vertical-align: middle; margin-right: 7px; }
+  .legendline .g { width: 16px; height: 8px; border-top: 2px solid var(--gold); background: rgba(252,211,77,.14); }
+  .legendline .k { width: 9px; height: 9px; border-radius: 50%; background: #fbbf24; box-shadow: 0 0 6px #fbbf24; }
+  .legendline .w { width: 22px; height: 0; border-top: 2px solid rgba(255,255,255,.5); position: relative; }
+  .legendline .w::after { content: ''; position: absolute; left: 8px; top: -5px; width: 6px; height: 1px; }
+
+  /* ---- phone shelf ---- */
+  #vshelf { display: none; margin-top: 18px; }
+  .vgroup { position: relative; padding: 14px 0 6px 18px; border-left: 1px solid rgba(252,211,77,.25); }
+  .vgroup::before { content: ''; position: absolute; left: -4px; top: 19px; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px 2px rgba(252,211,77,.5); }
+  .vgroup h4 { font: 400 11px var(--display); letter-spacing: .24em; color: rgba(252,211,77,.85); }
+  .vgroup h4 span { margin-left: 8px; font: italic 13px var(--body); letter-spacing: 0; color: var(--faint); }
+  .vrow { margin-top: 12px; }
+  .vrow .vt { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .vrow .vt b { font: 600 15px var(--display); letter-spacing: .06em; }
+  .vrow .vt small { font-style: italic; font-size: 13px; color: var(--faint); white-space: nowrap; }
+  .vspine { position: relative; height: 16px; margin-top: 6px; border: 1px solid rgba(252,211,77,.35); border-radius: 2px; background: linear-gradient(180deg, rgba(36,22,80,.85), rgba(20,12,48,.85)); }
+  .vspine i { position: absolute; left: 0; top: 0; bottom: 0; background: linear-gradient(90deg, rgba(252,211,77,.08), rgba(252,211,77,.28)); border-right: 2px solid var(--gold); box-shadow: 2px 0 8px rgba(252,211,77,.4); }
+  .vknots { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; align-items: center; }
+  .vknots i { border-radius: 50%; background: var(--c); box-shadow: 0 0 5px var(--c); }
+  .vempty { margin: 14px 0 0 0; padding: 18px 16px; border: 1px dashed rgba(255,255,255,.14); border-radius: 4px; text-align: center; }
+  .vempty h4 { font: 400 10px var(--display); letter-spacing: .3em; color: rgba(252,211,77,.62); }
+  .vempty p { margin-top: 6px; font: italic 14px/1.5 var(--body); color: var(--faint); }
+  .vlegend { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 16px; font-style: italic; font-size: 13px; color: var(--faint); }
+  .vlegend span { display: inline-flex; align-items: center; gap: 5px; }
+
+  /* ---- tellers ---- */
+  .tellers { margin-top: 64px; }
+  .tellers h2, .ways h2 { font: 400 11px var(--display); letter-spacing: .32em; color: var(--faint); }
+  .tgrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+  .teller { padding: 16px 16px 14px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 4px; transition: border-color .25s, background .25s; }
+  .teller:hover { border-color: rgba(252,211,77,.4); background: rgba(252,211,77,.05); }
+  .teller h3 { font: 600 14px var(--display); letter-spacing: .14em; color: var(--gold-soft); }
+  .teller .per { margin-top: 3px; font-style: italic; font-size: 13.5px; color: var(--faint); }
+  .teller ul { list-style: none; margin-top: 10px; display: grid; gap: 3px; }
+  .teller li { display: flex; justify-content: space-between; gap: 8px; font-size: 14.5px; color: var(--muted); }
+  .teller li b { font-weight: 500; color: var(--aether); }
+  .teller .only { margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.07); font-style: italic; font-size: 13px; line-height: 1.4; color: var(--faint); }
+  .teller .only b { font-style: normal; font-weight: 500; color: var(--gold-soft); }
+
+  /* ---- the two ways in ---- */
+  .ways { margin-top: 64px; }
+  .wgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 16px; }
+  .way { position: relative; display: block; padding: 26px 28px 24px; border: 1px solid rgba(252,211,77,.24); background: rgba(20,12,48,.42); backdrop-filter: blur(14px);
+    text-decoration: none; color: inherit; transition: border-color .3s, box-shadow .3s; overflow: hidden; }
+  .way:hover { border-color: rgba(252,211,77,.55); box-shadow: 0 0 40px rgba(252,211,77,.08); }
+  .way h3 { margin-top: 8px; font: 600 26px var(--display); letter-spacing: .1em; }
+  .way p.d { margin-top: 8px; font-size: 17px; line-height: 1.55; color: var(--muted); max-width: 520px; }
+  .way .go { display: inline-block; margin-top: 16px; font: 400 10px var(--display); letter-spacing: .24em; color: var(--gold); }
+  .quarrel-mini { margin-top: 16px; display: grid; gap: 8px; }
+  .quarrel-mini .q { display: grid; grid-template-columns: 112px 1fr; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.45; }
+  .quarrel-mini .q b { font: 400 9.5px var(--display); letter-spacing: .2em; color: var(--soft); }
+  .quarrel-mini .q span { color: rgba(241,245,249,.86); }
+  .quarrel-mini .q em { font-style: italic; color: var(--faint); font-size: 13.5px; }
+  .quarrel-mini h4 { font: 600 13px var(--display); letter-spacing: .14em; color: var(--aether); }
+  .quarrel-mini h4 i { font-style: normal; color: var(--soft); margin-right: 6px; }
+  #chaos { position: absolute; right: -10px; top: -10px; width: 340px; height: 260px; opacity: .9; pointer-events: none; }
+  .way.chaos p.d, .way.chaos h3, .way.chaos .kicker, .way.chaos .go, .way.chaos .gl { position: relative; z-index: 1; }
+  .way.chaos .gl { margin-top: 14px; font: 400 17px/1.5 var(--greek); color: #fde68a; }
+  .way.chaos .gl small { display: block; font: italic 15px var(--body); color: var(--muted); }
+
+  footer { margin-top: 70px; text-align: center; font-style: italic; font-size: 14px; line-height: 1.6; color: var(--faint); }
+
+  @media (max-width: 1180px) {
+    .tgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (max-width: 960px) {
+    .hero { grid-template-columns: 1fr; gap: 36px; }
+    .wgrid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .page { padding: 80px 16px 70px; }
+    .hero h1 { font-size: 36px; letter-spacing: .12em; }
+    .hero .gk { font-size: 19px; }
+    .lede { font-size: 18px; }
+    .muses { padding: 18px 18px 14px; margin: 0 6px; }
+    .muses .gr { font-size: 15.5px; }
+    .shelfhead { flex-direction: column; gap: 6px; }
+    #shelf, .legendline, .empty-label { display: none; }
+    #vshelf { display: block; }
+    .tgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .way { padding: 22px 18px 20px; }
+    .quarrel-mini .q { grid-template-columns: 1fr; gap: 0; }
+    #chaos { width: 220px; height: 170px; opacity: .55; }
+  }
+</style>
+</head>
+<body>
+<div class="dust"></div>
+<main class="page">
+  <header class="hero">
+    <div>
+      <p class="kicker">The fifth door · the tellers</p>
+      <h1>THE LIBRARY</h1>
+      <p class="gk greek">Βιβλιοθήκη</p>
+      <p class="lede" id="lede"></p>
+    </div>
+    <figure class="muses gilded" id="muses">
+      <div class="gr greek"></div>
+      <p class="en">“…we know how to speak many false things as though they were true; but we know, when we will, to utter true things.”</p>
+      <p class="by">THE MUSES TO HESIOD · <b>THEOGONY 26–28</b> · EVELYN-WHITE</p>
+    </figure>
+  </header>
+
+  <section class="shelfwrap" id="shelfwrap">
+    <div class="shelfhead">
+      <h2 class="kicker">The shelf · eleven works, oldest at the left</h2>
+      <p>Hover a spine for the work, a thread for its saga, a name for the teller. <b>Click a spine</b> to open it.</p>
+    </div>
+    <svg id="shelf" viewBox="0 0 1320 600" role="img" aria-label="The eleven works on a time line, with the sagas they tell"></svg>
+    <div class="legendline">
+      <span><i class="g"></i>gilt level: the share of the work some atlas fact cites</span>
+      <span><i class="k"></i>knot: a saga told in that work, larger with more of its stories</span>
+      <span>⚖ the quarrels the work takes a side in</span>
+      <span>spine height: the work's length</span>
+    </div>
+    <div class="empty-label" id="emptyLabel">
+      <h4>THE EMPTY SHELF</h4>
+      <p>No teller of ours between Hesiod and Apollonius. The lyric poets and the tragedians reach the atlas only inside the later handbooks — Apollodorus gives Euripides' versions by name <em>(Bibl. 2.1.4, 3.6.8, 3.7.7, 3.9.2)</em>.</p>
+    </div>
+    <div class="spinecard" id="card"></div>
+    <div class="lanetip" id="tip"></div>
+    <div id="vshelf"></div>
+  </section>
+
+  <section class="tellers">
+    <h2>The seven tellers · what the atlas owes them</h2>
+    <div class="tgrid" id="tgrid"></div>
+  </section>
+
+  <section class="ways">
+    <h2>Two ways in</h2>
+    <div class="wgrid">
+      <a class="way" href="#" id="quarrelsWay">
+        <p class="kicker">The Quarrels</p>
+        <h3 id="qcount">192 QUARRELS</h3>
+        <p class="d">Where the tellers disagree, read them against each other — each claim in its teller's own words, the passage under it.</p>
+        <div class="quarrel-mini" id="qmini"></div>
+        <span class="go">ENTER THE QUARRELS →</span>
+      </a>
+      <a class="way chaos" href="library-c-first-chaos.html">
+        <canvas id="chaos" aria-hidden="true"></canvas>
+        <p class="kicker">First, Chaos</p>
+        <h3>THE THEOGONY,<br>READ WITH THE SKY</h3>
+        <p class="d" id="chaosLine"></p>
+        <p class="gl greek">ἤτοι μὲν πρώτιστα Χάος γένετ᾽<small>“Verily at the first Chaos came to be” — Theogony 116</small></p>
+        <span class="go">BEGIN WITH THE MUSES →</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    A mockup on the atlas's real data: the citations in <i>data/</i> resolved by a scratch resolver against the pinned corpus (5 November 2026).<br>
+    Dates are the conventional ones and no more precise than their labels. A thread says that these works tell this saga, never that one teller read another.
+  </footer>
+</main>
+<span class="mockflag"><b>Mockup A</b> · the Shelf · real data</span>
+
+<script src="shared/library-chrome.js"></script>
+<script src="shared/library-data.js"></script>
+<script>
+(function () {
+  const L = window.LIBRARY;
+  const fmt = (n) => n.toLocaleString('en-US');
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); if (parent) parent.appendChild(e); return e; };
+
+  const WORKS = [
+    { id: 'iliad', t: 'Iliad', spine: 'ILIAD', gk: 'Ἰλιάς', teller: 'homer', from: -760, to: -700, label: 'c. 8th century BC', ed: 'Greek, ed. Monro and Allen (1920); English, A. T. Murray (1924–25)', href: 'library-b-reading-room.html' },
+    { id: 'odyssey', t: 'Odyssey', spine: 'ODYSSEY', gk: 'Ὀδύσσεια', teller: 'homer', from: -740, to: -680, label: 'c. 8th century BC', ed: 'Greek, ed. Monro and Allen (1917–19); English, A. T. Murray (1919)' },
+    { id: 'theogony', t: 'Theogony', spine: 'THEOGONY', gk: 'Θεογονία', teller: 'hesiod', from: -720, to: -680, label: 'c. 700 BC', ed: 'Greek and English, H. G. Evelyn-White (1914)', href: 'library-c-first-chaos.html' },
+    { id: 'works-and-days', t: 'Works and Days', spine: 'WORKS & DAYS', gk: 'Ἔργα καὶ Ἡμέραι', teller: 'hesiod', from: -720, to: -680, label: 'c. 700 BC', ed: 'Greek and English, H. G. Evelyn-White (1914)' },
+    { id: 'argonautica', t: 'Argonautica', spine: 'ARGONAUTICA', gk: 'Ἀργοναυτικά', teller: 'apollonius', from: -270, to: -240, label: '3rd century BC', ed: 'Greek, ed. G. W. Mooney (1912); English, R. C. Seaton (1912)' },
+    { id: 'metamorphoses', t: 'Metamorphoses', spine: 'METAMORPHOSES', gk: 'Metamorphoses', teller: 'ovid', from: 2, to: 8, label: 'AD 8', ed: 'Latin, ed. H. Magnus (1892); English, Brookes More (1922)' },
+    { id: 'bibliotheca', t: 'Library', spine: 'LIBRARY', gk: 'Βιβλιοθήκη', teller: 'apollodorus', from: 1, to: 200, label: '1st–2nd century AD', ed: 'Greek and English, J. G. Frazer (1921)' },
+    { id: 'epitome', t: 'Epitome', spine: 'EPITOME', gk: 'Ἐπιτομή', teller: 'apollodorus', from: 1, to: 200, label: '1st–2nd century AD', ed: 'Greek and English, J. G. Frazer (1921)' },
+    { id: 'fabulae', t: 'Fabulae', spine: 'FABULAE', gk: 'Fabulae', teller: 'hyginus', from: 1, to: 200, label: '1st–2nd century AD', ed: 'English, Mary Grant (1960) — licence being checked; the corpus has no Latin' },
+    { id: 'astronomica', t: 'Astronomica', spine: 'ASTRONOMICA', gk: 'De astronomia', teller: 'hyginus', from: 1, to: 200, label: '1st–2nd century AD', ed: 'English, Mary Grant (1960), Book 2 — licence being checked' },
+    { id: 'description-of-greece', t: 'Description of Greece', spine: 'DESCRIPTION OF GREECE', gk: 'Ἑλλάδος Περιήγησις', teller: 'pausanias', from: 150, to: 180, label: '2nd century AD', ed: 'Greek, ed. F. Spiro (1903); English, W. H. S. Jones and H. A. Ormerod (1918–35)' },
+  ];
+  const TELLERS = {
+    homer: ['Homer', 'c. 8th century BC'], hesiod: ['Hesiod', 'c. 700 BC'], apollonius: ['Apollonius', '3rd century BC'], ovid: ['Ovid', 'AD 8'],
+    apollodorus: ['Apollodorus', '1st–2nd century AD'], hyginus: ['Hyginus', '1st–2nd century AD'], pausanias: ['Pausanias', '2nd century AD'],
+  };
+  const SAGAS = [['primordial', 'The Primordials', '#a78bfa'], ['titan', 'The Titans', '#e3b341'], ['olympian', 'The Olympians', '#7dd3fc'], ['metamorphoses', 'The Metamorphoses', '#e879f9'], ['theban', 'The Theban Cycle', '#fb7185'], ['dionysus', 'The Dionysus Cycle', '#c026d3'], ['perseus', 'The Perseus Cycle', '#eab308'], ['argonaut', 'The Argonautica', '#38bdf8'], ['heracles', 'The Labours of Heracles', '#f97316'], ['theseus', 'The Attic Cycle', '#2dd4bf'], ['trojan', 'The Trojan Cycle', '#fbbf24'], ['returns', 'The Returns', '#34d399'], ['heroic', 'Heroic Ages', '#aab4c8']];
+  const lengthLabel = (s) => s.length.lines ? fmt(s.length.lines) + ' lines' : '≈ ' + fmt(Math.round(s.length.words / 100) * 100) + ' words';
+
+  // ---- hero copy, from the data
+  document.getElementById('lede').innerHTML = `Seven tellers, eleven works, <b>10,887 citations</b>. Every fact in the atlas rests on a passage of one of these books. Here the passages are read — in the original and in English — and each one leads back to the stars, stories and quarrels that rest on it.`;
+  document.querySelector('#muses .gr').innerHTML = L.muses.greek.map(([n, t]) => `<span><i>${n}</i>${t}</span>`).join('');
+
+  // ---- the shelf (desktop)
+  const svg = document.getElementById('shelf');
+  const W = 1320, X0 = 210, X1 = 1300, PLANK = 300, AXIS = 350, LANE0 = 404, LANEH = 14.2, GAP = 46, SW = 36;
+  const X = (y) => X0 + (y + 800) / 1000 * (X1 - X0);
+  const maxChars = Math.max(...WORKS.map((w) => L.shelf[w.id].chars));
+  const items = WORKS.map((w, i) => ({ ...w, i, s: L.shelf[w.id], want: X((w.from + w.to) / 2), h: 70 + 200 * Math.sqrt(L.shelf[w.id].chars / maxChars) }));
+  let clusters = items.map((it) => ({ m: [it], c: it.want }));
+  for (let merged = true; merged;) {
+    merged = false;
+    clusters.sort((a, b) => a.c - b.c);
+    for (let k = 0; k < clusters.length - 1; k++) {
+      const a = clusters[k], b = clusters[k + 1];
+      if (a.c + a.m.length * GAP / 2 > b.c - b.m.length * GAP / 2) {
+        const m = a.m.concat(b.m);
+        clusters.splice(k, 2, { m, c: m.reduce((s, x) => s + x.want, 0) / m.length });
+        merged = true; break;
+      }
+    }
+  }
+  for (const c of clusters) {
+    const width = c.m.length * GAP;
+    let start = Math.min(c.c - width / 2, X1 - width);
+    c.m.sort((a, b) => a.want - b.want || a.i - b.i).forEach((m, j) => { m.x = start + GAP / 2 + j * GAP; });
+  }
+  const byId = new Map(items.map((it) => [it.id, it]));
+
+  const defs = el('defs', {}, svg);
+  defs.innerHTML = `
+    <linearGradient id="spineFill" x1="0" x2="1"><stop offset="0" stop-color="#1d1245"/><stop offset=".5" stop-color="#2a1a5e"/><stop offset="1" stop-color="#170e3a"/></linearGradient>
+    <linearGradient id="giltFill" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="rgba(252,211,77,.02)"/><stop offset=".85" stop-color="rgba(252,211,77,.09)"/><stop offset="1" stop-color="rgba(252,211,77,.16)"/></linearGradient>
+    <linearGradient id="plank" x1="0" x2="1"><stop offset="0" stop-color="rgba(252,211,77,0)"/><stop offset=".06" stop-color="rgba(252,211,77,.55)"/><stop offset=".94" stop-color="rgba(252,211,77,.55)"/><stop offset="1" stop-color="rgba(252,211,77,0)"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>`;
+
+  // the empty shelf: between the last early spine and the first later one
+  const early = items.filter((it) => it.to < -500), later = items.filter((it) => it.from > -500);
+  const eL = Math.max(...early.map((it) => it.x)) + SW / 2 + 34, eR = Math.min(...later.map((it) => it.x)) - SW / 2 - 34;
+  const ghosts = el('g', { opacity: .9 }, svg);
+  const ghostH = [118, 152, 96, 170, 132, 104, 160, 122, 140, 92, 148];
+  const nG = Math.floor((eR - eL) / 40);
+  for (let k = 0; k < nG; k++) {
+    const gx = eL + 20 + k * ((eR - eL - 40) / Math.max(1, nG - 1)), gh = ghostH[k % ghostH.length];
+    el('rect', { x: gx - 15, y: PLANK - gh, width: 30, height: gh, rx: 3, fill: 'none', stroke: 'rgba(255,255,255,.10)', 'stroke-dasharray': '3 5' }, ghosts);
+  }
+  const lab = document.getElementById('emptyLabel');
+  lab.style.left = ((eL + eR) / 2 / W * 100) + '%';
+  lab.style.width = ((eR - eL - 40) / W * 100) + '%';
+  lab.style.top = 'calc(' + (36 / 600 * 100) + '% + 38px)';
+
+  // plank and the time rule
+  el('rect', { x: X0 - 40, y: PLANK, width: X1 - X0 + 60, height: 1.6, fill: 'url(#plank)' }, svg);
+  el('rect', { x: X0 - 40, y: PLANK + 1.6, width: X1 - X0 + 60, height: 18, fill: 'rgba(20,12,48,.55)' }, svg);
+  el('line', { x1: X0, x2: X1, y1: AXIS, y2: AXIS, stroke: 'rgba(255,255,255,.16)' }, svg);
+  for (let y = -800; y <= 200; y += 100) {
+    el('line', { x1: X(y), x2: X(y), y1: AXIS - 4, y2: AXIS + 4, stroke: 'rgba(255,255,255,.25)' }, svg);
+    const t = el('text', { x: X(y), y: AXIS + 18, 'text-anchor': 'middle', fill: 'rgba(170,180,200,.6)', 'font-family': 'Cinzel', 'font-size': 9, 'letter-spacing': 1.6 }, svg);
+    t.textContent = y < 0 ? (-y) + ' BC' : y === 0 ? 'BC · AD' : 'AD ' + y;
+  }
+
+  // lanes: the sagas as threads
+  const laneG = el('g', {}, svg);
+  const sideOf = (x) => (x < eL ? 0 : x > eR ? 2 : 1);
+  SAGAS.forEach(([sid, label, color], k) => {
+    const y = LANE0 + k * LANEH;
+    const g = el('g', { class: 'lane', 'data-saga': sid }, laneG);
+    const knots = items.filter((it) => it.s.sagas[sid]).sort((a, b) => a.x - b.x);
+    el('rect', { class: 'hit', x: X0 - 190, y: y - LANEH / 2, width: X1 - X0 + 200, height: LANEH }, g);
+    const tl = el('text', { x: X0 - 22, y: y + 4, 'text-anchor': 'end', fill: color, 'fill-opacity': .85, 'font-family': 'Cormorant Garamond', 'font-style': 'italic', 'font-size': 13.5 }, g);
+    tl.textContent = label;
+    for (let j = 0; j < knots.length - 1; j++) {
+      const a = knots[j], b = knots[j + 1], crosses = sideOf(a.x) !== sideOf(b.x);
+      el('line', { x1: a.x, x2: b.x, y1: y, y2: y, stroke: color, 'stroke-opacity': crosses ? .22 : .55, 'stroke-width': crosses ? 1 : 1.4, 'stroke-dasharray': crosses ? '2 5' : 'none' }, g);
+    }
+    for (const it of knots) {
+      const n = it.s.sagas[sid];
+      el('circle', { cx: it.x, cy: y, r: 2.3 + 0.95 * Math.sqrt(n), fill: color, 'fill-opacity': .92, filter: 'url(#soft)', 'data-work': it.id }, g);
+    }
+    g.addEventListener('mouseenter', (e) => focusSaga(sid, label, color, knots, e));
+    g.addEventListener('mousemove', moveTip);
+    g.addEventListener('mouseleave', clearFocus);
+  });
+  // faint verticals from spine to lanes
+  for (const it of items) el('line', { x1: it.x, x2: it.x, y1: AXIS + 26, y2: LANE0 + (SAGAS.length - 1) * LANEH + 6, stroke: 'rgba(255,255,255,.045)' }, laneG);
+
+  // leaders and whiskers
+  const leaderG = el('g', {}, svg);
+  for (const it of items) {
+    const g = el('g', { class: 'leader', 'data-work': it.id }, leaderG);
+    el('path', { d: `M${it.x} ${PLANK + 22} C ${it.x} ${PLANK + 36}, ${X((it.from + it.to) / 2)} ${AXIS - 22}, ${X((it.from + it.to) / 2)} ${AXIS - 5}`, fill: 'none', stroke: 'rgba(255,255,255,.2)' }, g);
+    el('line', { x1: X(it.from), x2: X(it.to), y1: AXIS, y2: AXIS, stroke: 'rgba(252,211,77,.75)', 'stroke-width': 2.2, 'stroke-linecap': 'round' }, g);
+    el('circle', { cx: X((it.from + it.to) / 2), cy: AXIS, r: 2.4, fill: '#fcd34d' }, g);
+  }
+
+  // spines
+  const spineG = el('g', {}, svg);
+  const order = [...items].sort((a, b) => (a.from + a.to) - (b.from + b.to));
+  for (const it of items) {
+    const g = el('g', { class: 'spine', 'data-work': it.id, 'data-teller': it.teller, tabindex: 0, role: 'button', 'aria-label': it.t }, spineG);
+    g.style.animationDelay = (order.indexOf(it) * 70) + 'ms';
+    const x = it.x - SW / 2, top = PLANK - it.h;
+    el('rect', { class: 'body', x, y: top, width: SW, height: it.h, rx: 3, fill: 'url(#spineFill)', stroke: 'rgba(252,211,77,.38)', 'stroke-width': 1 }, g);
+    const gh = it.h * it.s.cited;
+    el('rect', { x: x + 1, y: PLANK - gh, width: SW - 2, height: gh, rx: 2, fill: 'url(#giltFill)' }, g);
+    el('line', { x1: x + 1.5, x2: x + SW - 1.5, y1: PLANK - gh, y2: PLANK - gh, stroke: '#fcd34d', 'stroke-width': 1.6, filter: 'url(#soft)' }, g);
+    el('rect', { x: x + 4, y: top + 6, width: SW - 8, height: 1.2, fill: 'rgba(252,211,77,.55)' }, g);
+    el('rect', { x: x + 4, y: top + 9, width: SW - 8, height: .8, fill: 'rgba(252,211,77,.35)' }, g);
+    const fs = it.h < 120 ? 9.6 : 10.6;
+    const t = el('text', { transform: `translate(${it.x + 3.8} ${PLANK - 12}) rotate(-90)`, fill: 'rgba(241,245,249,.92)', 'font-family': 'Cinzel', 'font-size': fs, 'letter-spacing': it.h < 120 ? 1.2 : 2.1 }, g);
+    t.textContent = it.spine;
+    const seal = el('text', { class: 'seal', 'data-work': it.id, x: it.x, y: PLANK + 14, 'text-anchor': 'middle', fill: '#c084fc', 'fill-opacity': .9, 'font-family': 'Cormorant Garamond', 'font-size': 12 }, svg);
+    seal.textContent = '⚖ ' + it.s.quarrels;
+    g.addEventListener('mouseenter', () => focusWork(it));
+    g.addEventListener('focus', () => focusWork(it));
+    g.addEventListener('mouseleave', clearFocus);
+    g.addEventListener('click', () => { if (it.href) location.href = it.href; });
+  }
+  // teller names above their spines; a name that would touch its neighbour
+  // climbs one row, with a hairline down to its spines
+  const placed = [];
+  for (const [tid, [name]] of Object.entries(TELLERS)) {
+    const mine = items.filter((it) => it.teller === tid);
+    const cx = mine.reduce((a, it) => a + it.x, 0) / mine.length;
+    const top = Math.min(...mine.map((it) => PLANK - it.h));
+    const half = name.length * 11.4 / 2 + 6;
+    let y = top - 14;
+    while (placed.some((p) => Math.abs(p.y - y) < 16 && p.x - p.half < cx + half && cx - half < p.x + p.half)) y -= 18;
+    placed.push({ x: cx, y, half });
+    if (y < top - 20) el('line', { x1: cx, x2: cx, y1: y + 5, y2: top - 6, stroke: 'rgba(252,211,77,.28)' }, svg);
+    const t = el('text', { class: 'tname', 'data-teller': tid, x: cx, y, 'text-anchor': 'middle', fill: '#fde68a', 'fill-opacity': .88, 'font-family': 'Cinzel', 'font-size': 11.5, 'letter-spacing': 2.6 }, svg);
+    t.textContent = name.toUpperCase();
+    t.addEventListener('mouseenter', () => focusTeller(tid));
+    t.addEventListener('mouseleave', clearFocus);
+  }
+
+  // ---- focus and cards
+  const card = document.getElementById('card'), tip = document.getElementById('tip'), wrap = document.getElementById('shelfwrap');
+  const all = (sel) => [...svg.querySelectorAll(sel)];
+  function dimExcept(works) {
+    for (const n of all('.spine, .leader, .seal')) n.classList.toggle('dim', !works.has(n.dataset.work));
+  }
+  function focusWork(it) {
+    dimExcept(new Set([it.id]));
+    for (const lane of all('.lane')) lane.classList.toggle('dim', !it.s.sagas[lane.dataset.saga]);
+    const s = it.s;
+    card.innerHTML = `<p class="kicker">${TELLERS[it.teller][0]} · ${it.label}</p>
+      <h3>${it.t}<span>${it.gk}</span></h3>
+      <div class="meter"><i style="width:${(s.cited * 100).toFixed(0)}%"></i></div>
+      <p class="mlabel">${(s.cited * 100).toFixed(0)}% of it cited by some atlas fact · ${lengthLabel(s)}</p>
+      <dl><div><dt>CITATIONS</dt><dd>${fmt(s.citations)}</dd></div><div><dt>FIGURES</dt><dd>${fmt(s.figures)}</dd></div><div><dt>STORIES</dt><dd>${fmt(s.stories)}</dd></div>
+      <div><dt>QUARRELS</dt><dd>⚖ ${s.quarrels}</dd></div><div><dt>SAGAS</dt><dd>${Object.keys(s.sagas).length}</dd></div><div><dt>${s.length.lines ? 'LINES' : 'WORDS'}</dt><dd>${s.length.lines ? fmt(s.length.lines) : '≈ ' + fmt(Math.round(s.length.words / 1000)) + 'k'}</dd></div></dl>
+      <p class="ed">${it.ed}</p>
+      <a class="open" href="${it.href ?? '#'}">${it.href ? 'OPEN THE ' + it.t.toUpperCase() + ' →' : 'OPEN THE WORK →'}</a>`;
+    const r = svg.getBoundingClientRect(), wr = wrap.getBoundingClientRect(), k = r.width / W;
+    let left = (it.x + SW / 2 + 16) * k + (r.left - wr.left);
+    if (left + 340 > wr.width) left = (it.x - SW / 2 - 16) * k + (r.left - wr.left) - 330;
+    card.style.left = Math.max(0, left) + 'px';
+    card.style.top = (Math.max(20, PLANK - it.h - 30) * k + (r.top - wr.top)) + 'px';
+    card.classList.add('on');
+  }
+  function focusTeller(tid) {
+    dimExcept(new Set(items.filter((it) => it.teller === tid).map((it) => it.id)));
+  }
+  function focusSaga(sid, label, color, knots, e) {
+    dimExcept(new Set(knots.map((k) => k.id)));
+    for (const lane of all('.lane')) lane.classList.toggle('dim', lane.dataset.saga !== sid);
+    tip.innerHTML = `<b style="color:${color}">${label.toUpperCase()}</b><br>` + knots.map((k) => `<span>${k.t}</span> ${k.s.sagas[sid]}`).join(' · ') + `<br><i style="font-size:13px;color:var(--faint)">stories told in each work</i>`;
+    tip.classList.add('on'); moveTip(e);
+  }
+  function moveTip(e) {
+    const wr = wrap.getBoundingClientRect();
+    let x = e.clientX - wr.left + 16; if (x + 380 > wr.width) x = e.clientX - wr.left - 390;
+    tip.style.left = x + 'px'; tip.style.top = (e.clientY - wr.top - 70) + 'px';
+  }
+  function clearFocus() {
+    for (const n of all('.dim')) n.classList.remove('dim');
+    card.classList.remove('on'); tip.classList.remove('on');
+  }
+
+  // ---- the shelf (phone): time runs down
+  const v = document.getElementById('vshelf');
+  const groups = Object.keys(TELLERS);
+  let html = '';
+  groups.forEach((tid, gi) => {
+    if (tid === 'apollonius') html += `<div class="vempty"><h4>THE EMPTY SHELF</h4><p>No teller of ours between Hesiod and Apollonius — about four centuries. The lyric poets and the tragedians reach the atlas only inside the later handbooks: Apollodorus gives Euripides' versions by name (Bibl. 3.6.8, 3.9.2).</p></div>`;
+    html += `<div class="vgroup"><h4>${TELLERS[tid][0].toUpperCase()}<span>${TELLERS[tid][1]}</span></h4>`;
+    for (const it of items.filter((x) => x.teller === tid)) {
+      const w = 28 + 72 * Math.sqrt(it.s.chars / maxChars);
+      html += `<div class="vrow"><div class="vt"><b>${it.t}</b><small>${lengthLabel(it.s)} · ⚖ ${it.s.quarrels}</small></div>
+        <div class="vspine" style="width:${w}%"><i style="width:${(it.s.cited * 100).toFixed(0)}%"></i></div>
+        <div class="vknots">${SAGAS.filter(([sid]) => it.s.sagas[sid]).map(([sid, , c]) => { const r = 5 + 1.1 * Math.sqrt(it.s.sagas[sid]); return `<i style="--c:${c};width:${r}px;height:${r}px" title="${sid}"></i>`; }).join('')}</div></div>`;
+    }
+    html += '</div>';
+  });
+  html += `<div class="vlegend">${SAGAS.map(([, label, c]) => `<span><i class="tdot" style="--c:${c}"></i>${label}</span>`).join('')}</div>`;
+  v.innerHTML = html;
+
+  // ---- the tellers
+  document.getElementById('tgrid').innerHTML = Object.entries(TELLERS).map(([tid, [name, per]]) => {
+    const t = L.tellers[tid];
+    return `<div class="teller"><h3>${name.toUpperCase()}</h3><p class="per">${per}</p>
+      <ul><li>facts<b>${fmt(t.facts)}</b></li><li>figures<b>${fmt(t.figures)}</b></li><li>quarrels<b>⚖ ${t.quarrels}</b></li></ul>
+      <p class="only"><b>${fmt(t.only)}</b> figure${t.only === 1 ? '' : 's'} no other teller names</p></div>`;
+  }).join('');
+
+  // ---- the two ways in
+  document.getElementById('qcount').textContent = L.quarrels.length + ' QUARRELS';
+  const q = L.quarrels.find((x) => x.topic === 'aphrodite-parentage');
+  const short = (s) => s.length > 92 ? s.slice(0, s.lastIndexOf(' ', 90)) + '…' : s;
+  document.getElementById('qmini').innerHTML = `<h4><i>⚖</i>${q.title}</h4>` + q.claims.map((c) => `<div class="q"><b>${c.author.toUpperCase()}</b><span>${short(c.claim)} <em>${c.citation}</em></span></div>`).join('');
+  const lit = window.LIBRARY.totals.theogonyFigures;
+  document.getElementById('chaosLine').textContent = `Scroll Hesiod's 1,022 lines and the galaxy lights as he sings: ${lit} figures, in the order he names them. At the end, Homer tells it differently.`;
+
+  // a small sky for the First, Chaos card
+  const cv = document.getElementById('chaos'), dpr = Math.min(2, window.devicePixelRatio || 1);
+  const draw = () => {
+    const w = cv.clientWidth, h = cv.clientHeight; cv.width = w * dpr; cv.height = h * dpr;
+    const c = cv.getContext('2d'); c.scale(dpr, dpr);
+    let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const cols = ['#c084fc', '#fb7185', '#fcd34d', '#60a5fa', '#4ade80', '#f472b6'];
+    for (let i = 0; i < 220; i++) {
+      const a = rnd() * Math.PI * 2, r = Math.pow(rnd(), .7) * Math.min(w, h) * .48;
+      const x = w * .62 + Math.cos(a) * r * 1.3, y = h * .5 + Math.sin(a) * r * .55;
+      const litStar = rnd() < .22, col = cols[Math.floor(rnd() * cols.length)];
+      c.beginPath(); c.arc(x, y, litStar ? 1.6 : .8, 0, Math.PI * 2);
+      c.fillStyle = litStar ? col : 'rgba(170,180,200,.25)'; c.shadowColor = col; c.shadowBlur = litStar ? 8 : 0; c.fill();
+    }
+  };
+  draw();
+})();
+</script>
+</body>
+</html>

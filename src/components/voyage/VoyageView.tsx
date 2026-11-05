@@ -4,6 +4,7 @@ import { Link } from '@/components/ui/Link';
 import { useEffect, useRef, type ReactNode } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
+import { CitationText } from '@/components/ui/CitationText';
 import { PinnedEpigraph } from '@/components/voyage/PinnedEpigraph';
 import { StarSea } from '@/components/voyage/StarSea';
 import { VoyageAudio } from '@/components/voyage/VoyageAudio';
@@ -94,7 +95,7 @@ function EpigraphFragment({ epigraph }: { epigraph: VoyageViewEpigraph }) {
         {epigraph.en}
       </blockquote>
       <figcaption className="mt-5 font-display text-[10px] tracking-[0.24em] text-star-olympian/70">
-        {epigraph.citation} · TRANS. A. T. MURRAY, 1919
+        <CitationText citation={epigraph.citation} /> · TRANS. A. T. MURRAY, 1919
       </figcaption>
     </figure>
   );

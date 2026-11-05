@@ -2,6 +2,8 @@
 
 These contradictions power the source-lens dispute badges: under the `consensus` lens, a fact contested between authors is marked with a badge, and switching lenses re-wires the galaxy to that author's version. Every entry below was adversarially verified against the primary texts (Perseus Digital Library, ToposText) — claims and citations were checked line by line, and where the draft misstated a position, the corrected wording is what appears here. The kebab-case id under each heading is the `topic` key to use in data files.
 
+This file is written from `data/quarrels.json` by `pnpm quarrels:doc`: edit the JSON, then rerun it. The Library reads each entry at `/library/quarrels/<topic>`.
+
 ## Aphrodite's birth
 
 - **topic**: `aphrodite-parentage`
@@ -180,6 +182,10 @@ Verification: ✓ verified — all four positions exact; the Heracles-as-Perseus
 | Ovid | The son of Iapetus shaped man from new-made earth mixed with rainwater, moulding him in the likeness of the all-governing gods. | Metamorphoses 1.76–88 |
 | Hyginus | Prometheus, son of Iapetus, first fashioned men from clay ("Prometheus Iapeti filius primus homines ex luto finxit"). | Fabulae 142 |
 
+Significance: Prometheus-as-sculptor of humanity, now the standard image, is entirely absent from Hesiod, our earliest source — a striking case of a "core" myth that accreted centuries later.
+
+Verification: ✓ verified — Apollodorus and Hyginus confirmed verbatim; nuance that Ovid presents the Prometheus version as the second of two alternatives ("sive... sive..."), which does not affect the contradiction.
+
 ## Where did the human race come from?
 
 - **topic**: `origin-of-mankind`
@@ -195,10 +201,6 @@ Verification: ✓ verified — all four positions exact; the Heracles-as-Perseus
 Significance: Hesiod's anthropogony roots a race of men in the ash-tree nymphs, while the later mythographers credit Prometheus with moulding the first men from clay — two incompatible origins for mankind, with the Meliae appearing only in the Hesiodic version.
 
 Verification: ✓ verified — Hesiod Works and Days 143–147 (Bronze Race from the ash trees) and Theogony 187 (the Meliae born of Uranus's blood) confirmed in the local corpus; the Prometheus clay-moulding positions are exact per the entry above.
-
-Significance: Prometheus-as-sculptor of humanity, now the standard image, is entirely absent from Hesiod, our earliest source — a striking case of a "core" myth that accreted centuries later.
-
-Verification: ✓ verified — Apollodorus and Hyginus confirmed verbatim; nuance that Ovid presents the Prometheus version as the second of two alternatives ("sive... sive..."), which does not affect the contradiction.
 
 ## Dionysus' first mother
 
@@ -266,7 +268,7 @@ Verification: ✓ verified — Bibliotheca 1.5.1 names Demophon and Praxithea in
 
 | Author | Claim | Citation |
 |---|---|---|
-| Ovid | Adonis was born when Lucina split the myrrh-tree into which transformed Myrrha had been changed after incest with her father Cinyras. | Metamorphoses 10.680–818 |
+| Ovid | Adonis was born when Lucina split the myrrh-tree into which transformed Myrrha had been changed after incest with her father Cinyras. | Metamorphoses 10.298–518 |
 | Pseudo-Apollodorus | Cinyras in Cyprus married Metharme daughter of king Pygmalion and begot Oxyporus and Adonis among other children. | Bibliotheca 3.14.3 |
 | Hyginus | Adonis is listed among the youths whom Venus loved — in the Apollodoran royal genealogy, not the Ovidian tree-birth. | Fabulae 271 |
 
@@ -324,17 +326,19 @@ Verification: ✓ verified, Hesiod position refined — the original draft said 
 ## Ariadne: slain by Artemis or wed to Dionysus?
 
 - **topic**: `ariadne-fate`
-- **Characters**: `dionysus`, `artemis`, `zeus`
+- **Characters**: `ariadne`, `dionysus`, `artemis`, `zeus`
 
 | Author | Claim | Citation |
 |---|---|---|
 | Homer | Artemis killed Ariadne on the island of Dia, on the testimony of Dionysus, before Theseus could bring her to Athens. | Odyssey 11.321–325 |
 | Hesiod | Golden-haired Dionysus made Ariadne his wife, and Zeus made her immortal and unageing for his sake. | Theogony 947–949 |
 | Ovid | Bacchus rescued the abandoned Ariadne on Dia and set her crown among the stars as the Corona Borealis. | Metamorphoses 8.174–182 |
+| Pseudo-Apollodorus | Theseus brought Ariadne to Naxos by night; there Dionysus fell in love with her and carried her off, and on Lemnos she bore him Thoas, Staphylus, Oenopion and Peparethus. | Epitome 1.9 |
+| Hyginus | Theseus left Ariadne asleep on the island of Dia, and Liber, falling in love with her, took her from there as his wife. | Fabulae 43 |
 
-Significance: Dionysus is the pivot of two opposite endings — in Homer his testimony gets Ariadne killed by Artemis, while in Hesiod and Ovid he makes her his immortal bride.
+Significance: Dionysus is the pivot of two opposite endings — in Homer his testimony gets Ariadne killed by Artemis, while in Hesiod and Ovid he makes her his immortal bride, and in Apollodorus and Hyginus he carries her off as his wife.
 
-Verification: ✓ verified — the rare Homeric detail "Dionysou martyriesin" (by the witness of Dionysus) confirmed in the Greek; minor caveat that Ovid locates the crown between two constellations without naming "Corona Borealis," a standard identification.
+Verification: ✓ verified — the rare Homeric detail "Dionysou martyriesin" (by the witness of Dionysus) confirmed in the Greek; minor caveat that Ovid locates the crown between two constellations without naming "Corona Borealis," a standard identification. Epitome 1.9 (Naxos, carried off to Lemnos) and Fabulae 43 (left asleep on Dia, taken as Liber's wife) confirmed against the pinned corpus when the two entries for this topic were merged.
 
 ## Who turned Callisto into a bear?
 
@@ -521,7 +525,7 @@ Verification: ✓ verified — all three repopulation mechanics confirmed agains
 | Author | Claim | Citation |
 |---|---|---|
 | Ovid | Sole survivors: "we two are the multitude; the sea holds all the rest" (nos duo turba sumus). | Metamorphoses 1.325–327, 1.355 |
-| Hyginus | "The whole human race perished except Deucalion and Pyrrha" (omne genus humanum interiit praeter Deucalionem et Pyrrham). | Fabulae 153; likewise 152A |
+| Hyginus | "The whole human race perished except Deucalion and Pyrrha" (omne genus humanum interiit praeter Deucalionem et Pyrrham). | Fabulae 153, 152A |
 | Pseudo-Apollodorus | All men were destroyed "except a few who fled to the high mountains in the neighborhood". | Bibliotheca 1.7.2 |
 | Pausanias | Local traditions name other survivors: Megarus swam to Gerania following crane-cries, and people woke to wolf-howls and escaped to the top of Parnassus, founding Lycoreia. | Description of Greece 1.40.1, 10.6.2 |
 
@@ -771,7 +775,7 @@ Significance: shared agency would bind both brothers to the Erinyes and to Pausa
 |---|---|---|
 | Homer | Aegisthus is the principal killer, aided by Clytemnestra; Agamemnon also says Clytemnestra directly killed Cassandra. | Odyssey 3.193–198; 11.405–434 |
 | Pseudo-Apollodorus | Aegisthus and Clytemnestra jointly murder Agamemnon. | Epitome 6.23 |
-| Hyginus | Clytemnestra and Aegisthus kill Agamemnon together. | Fabula 117 |
+| Hyginus | Clytemnestra and Aegisthus kill Agamemnon together. | Fabulae 117 |
 
 Significance: the sources distribute agency differently, so a single unqualified killer edge would erase an important narrative distinction.
 
@@ -909,7 +913,7 @@ Verification: ✓ verified — Apollodorus' claim confirmed; Hyginus' (and Sopho
 | Author | Claim | Citation |
 |---|---|---|
 | Pseudo-Apollodorus | Notes an alternative tradition that Danae was seduced by her own uncle, Proetus, sparking the war between the brothers. | Bibliotheca 2.4.1 |
-| Universal (Apollodorus, Hyginus, Ovid) | Zeus visited Danae in the form of a golden shower that poured through the roof into her lap. | Bibliotheca 2.4.1; Fabulae 63; Metamorphoses 4.903 |
+| Universal (Apollodorus, Hyginus, Ovid) | Zeus visited Danae in the form of a golden shower that poured through the roof into her lap. | Bibliotheca 2.4.1; Fabulae 63; Metamorphoses 4.608–611 |
 
 Significance: This contradiction strips away the divine glamour of the Perseus myth, reframing the origin of the hero as a sordid dynastic scandal and the true cause of the war between Acrisius and Proetus.
 
@@ -957,20 +961,6 @@ Verification: ✓ verified — Apollodorus/Pausanias peaceful exchange confirmed
 Significance: This is a classic clash between the Homeric tradition and later mythographers. If Europa is Phoenix's daughter, the timeline of the Phoenician royal house shifts entirely.
 
 Verification: ✓ verified — Homer's 'daughter of far-famed Phoenix' claim confirmed.
-
-## What happened to Ariadne?
-
-- **topic**: `ariadne-fate`
-- **Characters**: `ariadne`, `dionysus`
-
-| Author | Claim | Citation |
-|---|---|---|
-| Homer | Artemis killed Ariadne on the island of Dia at the testimony/complaint of Dionysus. | Odyssey 11.321 |
-| Hesiod, Pseudo-Apollodorus, Ovid, Hyginus | Theseus abandoned her on Dia, and Dionysus fell in love with her, rescued her, and made her his immortal wife. | Theogony 947; Epitome 1.9; Metamorphoses 8.176; Fabulae 43 |
-
-Significance: A staggering contradiction that completely flips the role of Dionysus. In the older Homeric epic, he is the cause of her death by the hands of Artemis. In the later, far more famous romantic tradition, he is her savior and divine husband.
-
-Verification: ✓ verified — Homer's 'because of the witness of Dionysus' claim confirmed in Odyssey 11.321.
 
 ## Deiphobus' killer at the sack
 
@@ -1087,7 +1077,7 @@ Verification: ✓ verified — Works and Days 60–64 and the "cui Minerva anima
 ## Why Phrixus fled — the stepmother's plot or the false accusation
 
 - **topic**: `phrixus-cretheus-parentage`
-- **Characters**: `phrixus`, `athamas`, `nephele`
+- **Characters**: `phrixus`, `athamas`, `nephele`, `cretheus`
 
 | Author | Claim | Citation |
 |---|---|---|
@@ -1098,10 +1088,10 @@ Significance: the same flight is driven by two different households' malice — 
 
 Verification: ✓ verified — Bibliotheca 1.9.1 and Astronomica 2.20.2 confirmed against the pinned corpus; Hyginus' Demodice/Biadice variant and its Cretheus framing are explicit in the Astronomica passage.
 
-## The golden ram's making
+## Where did the golden ram come from?
 
 - **topic**: `ram-golden-ram-parentage`
-- **Characters**: `phrixus`, `nephele`, `hermes`
+- **Characters**: `phrixus`, `nephele`, `hermes`, `athamas`
 
 | Author | Claim | Citation |
 |---|---|---|
@@ -1188,21 +1178,6 @@ Significance: the name-giving king of the Minyae is either a Boeotian descendant
 
 Verification: ✓ verified — Pausanias 9.36.4–9.36.6 (Chryses → Minyas) and Argonautica 3.1077 (Minyas son of Aeolus) confirmed against Perseus.
 
-## Where did the golden ram come from?
-
-- **topic**: `ram-golden-ram-parentage`
-- **Characters**: `athamas`, `phrixus`, `nephele`
-
-| Author | Claim | Citation |
-|---|---|---|
-| Pseudo-Apollodorus | Nephele gave her children a ram with a golden fleece, a marvel she had received — no parentage is given to the ram itself. | Bibliotheca 1.9.1 |
-| Apollonius | The ram is a wonder Hermes had made all of gold — a divine artefact, not a creature with parents. | Argonautica 2.1140–1145 |
-| Hyginus | The gilded ram was no god-made thing but living offspring, the child of Neptune (Poseidon) and Theophane. | Fabulae 3; Astronomica 2.20 |
-
-Significance: the ram that carries Phrixus to Colchis and whose fleece becomes the Argonauts' prize is a crafted marvel in the Greek sources but a born animal with divine parents in Hyginus.
-
-Verification: ✓ verified — Argonautica 2.1140–1145 ("a ram which Hermes had made all gold") and Fabulae 3 (Neptune + Theophane) confirmed.
-
 ## Why is Athamas driven mad?
 
 - **topic**: `cause-of-athamas-madness`
@@ -1231,20 +1206,6 @@ Verification: ✓ verified — Bibliotheca 1.9.2 (simple Hera-wrath) and 3.4.3 (
 Significance: the child whose death founds the Isthmian games dies by boiling cauldron in one telling and is carried alive into the sea in others — the difference between a horror and a sea-change into the god Palaemon.
 
 Verification: ✓ verified — Bibliotheca 3.4.3 (cauldron) against Ovid Met. 4.519–542 and Pausanias 1.44.7–8 (the leap and the dolphin).
-
-## Whose love drives the golden-ram flight — Athamas' or Cretheus'?
-
-- **topic**: `phrixus-cretheus-parentage`
-- **Characters**: `phrixus`, `athamas`, `cretheus`
-
-| Author | Claim | Citation |
-|---|---|---|
-| Pseudo-Apollodorus | Phrixus and Helle are the children of Athamas by Nephele; Ino, Athamas' second wife, plots against them, prompting the golden-ram flight. | Bibliotheca 1.9.1 |
-| Hyginus | In the Astronomica the household is Cretheus': his wife Demodice (others name her Biadice), moved by the beauty of Phrixus son of Athamas, accuses him when he refuses her — the slander that drives the flight. | Astronomica 2.20 |
-
-Significance: the standard Athamas–Nephele–Ino tragedy is displaced in Hyginus' star-myth onto the house of Cretheus, with a Potiphar's-wife slander in place of the stepmother's grain-plot.
-
-Verification: ✓ verified — Bibliotheca 1.9.1 (Athamas/Nephele/Ino) against Astronomica 2.20 (Cretheus/Demodice).
 
 ## The father of Pelias
 
@@ -1488,8 +1449,8 @@ Verification: ✓ verified — Bibliotheca 1.7.3 (Xuthus the father) and Pausani
 
 | Author | Claim | Citation |
 |---|---|---|
-| Hesiod | The genealogical roll at the close of the Theogony (Tier-B roster, Th. 1000) names **Achaea** among Zeus' offspring in the ethnic eponym series — a feminine figure paired with Hellen and Dorus at Th. 1002. | Theogony 1000 (roster line; English corpus ends at Medea/Medeus in Evelyn-White) |
-| Pseudo-Apollodorus | The Achaeans take their name from **Achaeus**, son of Xuthus and Creusa daughter of Erechtheus — not from a daughter of Zeus. | Bibliotheca 1.7.3 |
+| Hesiod | The genealogical roll at the close of the Theogony (Tier-B roster, Th. 1000) names Achaea among Zeus' offspring in the ethnic eponym series — a feminine figure paired with Hellen and Dorus at Th. 1002. | Theogony 1000 (roster line; English corpus ends at Medea/Medeus in Evelyn-White) |
+| Pseudo-Apollodorus | The Achaeans take their name from Achaeus, son of Xuthus and Creusa daughter of Erechtheus — not from a daughter of Zeus. | Bibliotheca 1.7.3 |
 | Pausanias | Gives Achaeus a historical career: return to Phthiotis, sons in Argos, and the naming of Peloponnesian peoples before the Dorian return. | Description of Greece 7.1.2–7.1.7 |
 
 Significance: the Hesiodic roll preserves a feminine ethnic eponym in Zeus' catalogue, while the genealogists who map the post-flood division of Hellas make the name flow through the male hero Achaeus and the Athenian marriage of Xuthus — two incompatible founders for the same ethnonym.
@@ -1584,12 +1545,12 @@ Verification: ✓ verified — Odyssey 4.1–356 (Helen at the Spartan feast) ag
 ## Who was Mopsus of Colophon?
 
 - **topic**: `mopsus-colophon-parentage`
-- **Characters**: `mopsus-colophon`, `apollo`, `manto`, `rhacius`
+- **Characters**: `mopsus-colophon`, `apollo`, `manto`, `rhacius-crete`
 
 | Author | Claim | Citation |
 |---|---|---|
 | Pseudo-Apollodorus | Mopsus who defeated Calchas at Colophon is a son of Apollo and Manto. | Epitome 6.3 |
-| Pausanias | Manto crossed to Asia, married Rhacius the Cretan, and bore Mopsus, who drove the Carians from the land. | Description of Greece 7.3.12 |
+| Pausanias | Manto crossed to Asia, married Rhacius the Cretan, and bore Mopsus, who drove the Carians from the land. | Description of Greece 7.3.1–2 |
 
 Significance: the seer who outprophesied Calchas has two parentages — divine paternity through Apollo in the Returns contest, or colonizer lineage through Rhacius and Manto in the foundation tale of the Ionian coast.
 
@@ -1736,7 +1697,7 @@ Verification: ✓ verified — Pausanias 8.4.8 and Apollonius 1.161–164 make A
 |---|---|---|
 | Pseudo-Apollodorus (Arcadian) | Atalanta is the daughter of Iasus the Arcadian by Clymene daughter of Minyas — exposed at birth because her father wanted sons, and suckled by a she-bear. | Bibliotheca 3.9.2 |
 | Pseudo-Apollodorus (Boeotian) | Elsewhere the same author calls the boar-hunt Atalanta "daughter of Schoeneus," the Boeotian. | Bibliotheca 1.8.2 |
-| Hyginus | Gives both: "Atalanta, daughter of Iasus and Clymene" (Arcadian) against the Boeotian Atalanta "daughter of Schoeneus" of the foot-race. | Fabulae 70 vs 185 |
+| Hyginus | Gives both: "Atalanta, daughter of Iasus and Clymene" (Arcadian) against the Boeotian Atalanta "daughter of Schoeneus" of the foot-race. | Fabulae 70, 185 |
 
 Significance: the huntress comes in two homelands — the wild Arcadian exposed to the bear, and the Boeotian runner of the golden-apple race — and the ancient mythographers, Apollodorus among them, never settle which Atalanta is which, sometimes splitting her in two and sometimes merging her.
 
@@ -1808,7 +1769,7 @@ Verification: ✓ verified — Theogony 333–336 (Ceto and Phorcys) and Apollod
 | Author | Claim | Citation |
 |---|---|---|
 | Pseudo-Apollodorus | The Chimera is the offspring of Typhon and Echidna. | Bibliotheca 2.3.1 |
-| Hesiod | In the *Theogony* the Chimera's mother is left ambiguous — the antecedent "she" may be Echidna or the Lernaean Hydra named just before. | Theogony 319–325 |
+| Hesiod | In the Theogony the Chimera's mother is left ambiguous — the antecedent "she" may be Echidna or the Lernaean Hydra named just before. | Theogony 319–325 |
 
 Significance: the fire-breathing hybrid is either another child of Echidna or, in the strict reading of Hesiod's lines, born of her own monstrous sister the Hydra — a knot in the brood's own genealogy.
 
@@ -2200,7 +2161,7 @@ Verification: ✓ verified — Hesiod Theogony 901–906 (the three Horae Eunomi
 | Hyginus | Odysseus forged a letter and buried gold in Palamedes' tent; the allies stoned him as a traitor. | Fabulae 105 |
 | Pausanias (Cypria) | Palamedes was drowned when he put out to catch fish; Diomedes and Odysseus were his murderers. | Description of Greece 10.31.2 |
 
-Significance: the Epic Cycle and Returns agree that Odysseus hated the counsellor who exposed his feigned madness, but Apollodorus and Hyginus send him to death by stoning in camp while Pausanias, citing the lost *Cypria*, knows drowning on a fishing expedition — the injustice Nauplius avenges on the fleet is the same, the manner of death is not.
+Significance: the Epic Cycle and Returns agree that Odysseus hated the counsellor who exposed his feigned madness, but Apollodorus and Hyginus send him to death by stoning in camp while Pausanias, citing the lost Cypria, knows drowning on a fishing expedition — the injustice Nauplius avenges on the fleet is the same, the manner of death is not.
 
 Verification: ✓ verified — Apollodorus Epitome 3.8, 6.8; Hyginus Fab. 105; Pausanias 10.31.2 confirmed against the pinned corpus (Perseus).
 
@@ -2715,7 +2676,7 @@ Verification: ✓ verified — Odyssey 11.301–304 line-checked in the Greek; B
 
 Significance: Antiope either runs to Sicyon or is carried there, her father dies by his own hand or of a battle wound, and Epopeus is killed by Lycus or dies of a neglected wound — three routes to the same captivity.
 
-Verification: ✓ verified — Bibliotheca 3.5.5 and Description of Greece 2.6.1–3 in the Greek; Fabulae 8 in the corpus English and the Latin (Lingua Latina Legenda), which reads *Epaphus* for the Sicyonian.
+Verification: ✓ verified — Bibliotheca 3.5.5 and Description of Greece 2.6.1–3 in the Greek; Fabulae 8 in the corpus English and the Latin (Lingua Latina Legenda), which reads Epaphus for the Sicyonian.
 
 ## What became of Lycus?
 
