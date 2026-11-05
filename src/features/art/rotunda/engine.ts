@@ -5,7 +5,7 @@ import { Drum, clamp, lerp, smooth, unwrapNear } from './drum';
 import { createLineLayer, pushArc, setLines, stitchesOnBack, type LineLayer } from './lines';
 import { buildRoom } from './room';
 import { FINE_FS, LIFT_FS, LIFT_VS, PLAIN_VS } from './shaders';
-import { Sharpener } from './sharpen';
+import { Sharpener, type Cloth } from './sharpen';
 import {
   SAGA_COLOR,
   clothBands,
@@ -13,6 +13,7 @@ import {
   createClothTexture,
   createTearTexture,
   paintCloth,
+  type FullSheets,
   type Sheets,
 } from './textures';
 import { RotundaWeb } from './web';
@@ -99,7 +100,13 @@ export class Rotunda {
   private readonly o: RotundaOptions;
   private readonly sharpener: Sharpener;
   private readonly room: ReturnType<typeof buildRoom>;
-  private readonly cloth: ReturnType<typeof createClothTexture>;
+  /** The cloth's own canvas and texture: from the low-quality sheet at first, at its full
+   *  resolution once the full sheets have landed and the opening fall is over. */
+  private cloth: Cloth;
+  private readonly fullCell: number;
+  private readonly anisotropy: number;
+  private sheets: Sheets;
+  private pendingFull: FullSheets | null = null;
   private readonly cells: ReturnType<typeof createCellTexture>;
   private readonly clothUniforms: Record<string, THREE.IUniform>;
   private readonly tear: THREE.Texture;
@@ -162,11 +169,14 @@ export class Rotunda {
     camera.far = 5000;
 
     // A cell is 64 texels where the screen is, and up to 112 on a dense one, where the
-    // cloth's own pixels would otherwise show from the middle of the room.
+    // cloth's own pixels would otherwise show from the middle of the room. The first
+    // cloth is woven at the low-quality sheet's own 24, small enough to show at once.
     const dense = renderer.getPixelRatio() >= 1.5;
-    const cell = Math.min(dense ? 112 : 64, Math.floor(renderer.capabilities.maxTextureSize / Math.max(drum.W, drum.H)));
-    const anisotropy = renderer.capabilities.getMaxAnisotropy();
-    this.cloth = createClothTexture(drum, cell, anisotropy);
+    this.fullCell = Math.min(dense ? 112 : 64, Math.floor(renderer.capabilities.maxTextureSize / Math.max(drum.W, drum.H)));
+    this.anisotropy = renderer.capabilities.getMaxAnisotropy();
+    this.sheets = sheets;
+    const cell = sheets.full ? this.fullCell : door.sheet.lqCell;
+    this.cloth = { ...createClothTexture(drum, cell, this.anisotropy), cell };
     const bands = clothBands(door);
     this.cells = createCellTexture(door, bands);
     this.tear = createTearTexture(door, drum);
@@ -194,8 +204,7 @@ export class Rotunda {
       camera,
       drum,
       door,
-      cloth: { ...this.cloth, cell },
-      sheets,
+      cloth: this.cloth,
       budget: dense ? 24e6 : 12e6,
       saveData: options.saveData,
       isLifted: (index) => this.web.lifted.has(index),
@@ -206,7 +215,7 @@ export class Rotunda {
       scene,
       drum,
       door,
-      sheets,
+      sheets: () => this.sheets,
       sharpener: this.sharpener,
       lines: this.lines.web,
       colorOf: (saga) => SAGA_COLOR[SAGA_ORDER.indexOf(saga as SagaId)],
@@ -214,11 +223,19 @@ export class Rotunda {
     });
 
     paintCloth(this.cloth.canvas, this.cloth.texture, door, cell, sheets, new Set());
+    if (sheets.full) this.sharpener.setFullSheets(sheets.full);
     this.cells.write(this.bright);
     this.resize(options.width, options.height);
     this.pos.copy(this.flatPose().pos);
     this.applyCamera();
     this.warmUp();
+  }
+
+  /** The full sheets have landed: the cloth is rewoven from them once the opening fall
+   *  is over and the view is still, since its first upload costs a frame. */
+  upgradeSheets(full: FullSheets) {
+    if (this.sheets.full) return;
+    this.pendingFull = full;
   }
 
   get mode(): RotundaMode {
@@ -286,6 +303,7 @@ export class Rotunda {
     }
     if (this.tween) this.stepTween(dt);
     else this.userCamera(dt);
+    if (this.pendingFull && this.fell > drum.H + 1 && !this.tween) this.weaveFull();
     U.uRoom.value = smooth(0.82, 1, U.uBend.value);
     this.room.mirror.visible = U.uRoom.value > 0.01;
     this.applyCamera();
@@ -315,6 +333,23 @@ export class Rotunda {
       this.readClock = 0;
       this.emitReadout();
     }
+  }
+
+  /** The cloth at its full resolution, from the full sheets. Nothing has been woven
+   *  into the first one: weaving waits for the full sheets, to cut where the bake cut. */
+  private weaveFull() {
+    const full = this.pendingFull;
+    if (!full) return;
+    this.pendingFull = null;
+    this.sheets = { ...this.sheets, full };
+    const woven = createClothTexture(this.drum, this.fullCell, this.anisotropy);
+    paintCloth(woven.canvas, woven.texture, this.o.door, this.fullCell, this.sheets, new Set());
+    const first = this.cloth.texture;
+    this.cloth = { ...woven, cell: this.fullCell };
+    this.clothUniforms.uTex.value = woven.texture;
+    first.dispose();
+    this.sharpener.setCloth(this.cloth);
+    this.sharpener.setFullSheets(full);
   }
 
   // ------------------------------------------------------------ the three states
@@ -848,9 +883,9 @@ export class Rotunda {
     this.o.onReadout(label, sub);
   }
 
-  /** Compile every shader the room will use now, behind the veil, rather than on first
-   *  use: a first compile stalls a frame for a third of a second. The template materials
-   *  stay alive, so their programs stay cached for the works that use them later. */
+  /** Compile every shader the room will use now, rather than on first use: a first
+   *  compile stalls a frame for a third of a second. The template materials stay alive,
+   *  so their programs stay cached for the works that use them later. */
   private warmUp() {
     const { renderer, scene, camera } = this.o;
     const plane = new THREE.PlaneGeometry(1, 1);
@@ -889,9 +924,9 @@ export class Rotunda {
     const hidden = [this.room.mirror, ...Object.values(this.lines)].filter((object) => !object.visible);
     for (const object of hidden) object.visible = true;
     for (const mesh of meshes) scene.add(mesh);
-    renderer.compile(scene, camera);
+    // The programs start compiling here, in parallel, and finish in the background.
+    void renderer.compileAsync(scene, camera).then(() => plane.dispose());
     for (const mesh of meshes) scene.remove(mesh);
     for (const object of hidden) object.visible = false;
-    plane.dispose();
   }
 }

@@ -9,6 +9,8 @@ export const ATLAS_FILES = {
   myths: '/atlas/myths.json',
   lands: '/atlas/lands.json',
   loom: '/art/loom.json',
+  /** The Loom's low-quality sprite sheet: both doors weave their first cloth from it. */
+  loomPreview: '/art/sheet-lq.webp',
 } as const;
 
 /** One star's prose, read when the star is. */
