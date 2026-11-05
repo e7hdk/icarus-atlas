@@ -687,6 +687,12 @@ html.voyage-hide-scrollbar::-webkit-scrollbar {
 .quarrel-index[data-teller='pausanias'] .quarrel-saga:not(:has([data-tellers~='pausanias'])) {
   display: none;
 }
+/* a saga shows its first quarrels until opened, unless a teller is chosen: the
+   filter always sees every quarrel, and the saga's pill steps aside */
+.quarrel-index:not([data-teller]) .quarrel-saga:not([data-open]) .quarrel-more,
+.quarrel-index[data-teller] .saga-more {
+  display: none;
+}
 /* a saga's count is the whole catalogue's, so it steps aside under a filter */
 .quarrel-index[data-teller] .quarrel-count {
   display: none;
