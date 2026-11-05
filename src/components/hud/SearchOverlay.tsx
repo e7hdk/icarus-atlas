@@ -10,11 +10,24 @@ import {
   type SearchableCharacter,
 } from '@/features/search/match';
 import { useGalaxyStore } from '@/features/galaxy/store';
+import { ATLAS_FILES } from '@/features/atlas/files';
+import { loadAtlasFile } from '@/features/atlas/useAtlasFile';
+import { searchLibrary, type LibraryHit, type LibrarySearchEntry } from '@/features/search/library-match';
+import type { PassageLink } from '@/features/library/links';
 
 /** Command-palette search (⌘K). Matched substrings glow in the star's type color.
  *  `navigate` opens the character codex (used off the galaxy, where selecting a
  *  star would have nothing to fly to). `characters` is null while the index is on
- *  its way: what is typed meanwhile is kept and answered when it lands. */
+ *  its way: what is typed meanwhile is kept and answered when it lands. The
+ *  Library answers too (docs/LIBRARY_PLAN.md §9): a typed citation opens its
+ *  passage, and works, tellers and quarrels come after the stars. */
+
+type Row = { kind: 'star'; hit: SearchHit } | { kind: 'library'; hit: LibraryHit };
+
+const LIBRARY_GOLD = '#fcd34d';
+const QUARREL_VIOLET = '#c084fc';
+
+const LIBRARY_TAG: Record<LibraryHit['kind'], string> = { passage: 'Read', door: 'Library', work: 'Work', teller: 'Teller', quarrel: 'Quarrel' };
 export function SearchOverlay({
   characters,
   navigate = false,
@@ -42,7 +55,46 @@ function SearchDialog({
   const [activeIndex, setActiveIndex] = useState(0);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const hits = useMemo(() => searchCharacters(characters ?? [], query), [characters, query]);
+  const [library, setLibrary] = useState<LibrarySearchEntry[] | null>(null);
+  const [readCitation, setReadCitation] = useState<((raw: string) => PassageLink[]) | null>(null);
+  const looksCited = /\d/.test(query);
+
+  useEffect(() => {
+    loadAtlasFile<LibrarySearchEntry[]>(ATLAS_FILES.librarySearch)
+      .then(setLibrary)
+      .catch(() => {});
+  }, []);
+  // the Library's resolver joins only when the query could be a citation
+  useEffect(() => {
+    if (!looksCited || readCitation) return;
+    let live = true;
+    import('@/features/library/links')
+      .then((links) => {
+        if (live) setReadCitation(() => (raw: string) => links.citationLinks(raw));
+      })
+      .catch(() => {});
+    return () => {
+      live = false;
+    };
+  }, [looksCited, readCitation]);
+
+  const hits = useMemo<Row[]>(() => {
+    const passages: LibraryHit[] = [];
+    if (readCitation && looksCited) {
+      try {
+        for (const link of readCitation(query).slice(0, 3)) {
+          passages.push({ kind: 'passage', title: `Read ${link.label}`, detail: 'In the Library, the original beside the English', href: link.href, value: '', start: 0, end: 0 });
+        }
+      } catch {
+        // half a citation, typed on its way to a whole one
+      }
+    }
+    return [
+      ...passages.map((hit): Row => ({ kind: 'library', hit })),
+      ...searchCharacters(characters ?? [], query).map((hit): Row => ({ kind: 'star', hit })),
+      ...searchLibrary(library ?? [], query).map((hit): Row => ({ kind: 'library', hit })),
+    ];
+  }, [characters, library, query, readCitation, looksCited]);
   const active = Math.min(activeIndex, Math.max(hits.length - 1, 0));
 
   useEffect(() => {
@@ -51,10 +103,14 @@ function SearchDialog({
       ?.scrollIntoView({ block: 'nearest' });
   }, [active]);
 
-  const travel = (hit: SearchHit) => {
+  const travel = (row: Row) => {
     setSearchOpen(false);
-    if (navigate) router.push(`/character/${hit.character.id}`);
-    else select(hit.character.id);
+    if (row.kind === 'library') {
+      router.push(row.hit.href);
+      return;
+    }
+    if (navigate) router.push(`/character/${row.hit.character.id}`);
+    else select(row.hit.character.id);
   };
 
   const onKeyDown = (event: React.KeyboardEvent) => {
@@ -82,7 +138,7 @@ function SearchDialog({
       <GlassPanel
         role="dialog"
         aria-modal="true"
-        aria-label="Search the galaxy"
+        aria-label="Search the atlas"
         className="w-full max-w-[21rem] overflow-hidden bg-glass-heavy shadow-[0_24px_80px_rgba(5,2,15,0.85),0_0_48px_rgba(124,77,255,0.16)] animate-[search-panel-in_200ms_cubic-bezier(0.2,0.8,0.2,1)] sm:max-w-xl"
         onMouseDown={(event) => event.stopPropagation()}
       >
@@ -106,7 +162,7 @@ function SearchDialog({
               setActiveIndex(0);
             }}
             onKeyDown={onKeyDown}
-            placeholder="Search the galaxy…"
+            placeholder="Search the atlas…"
             spellCheck={false}
             className="min-w-0 flex-1 bg-transparent font-body text-lg text-aether placeholder:text-aether-faint focus:outline-none sm:text-xl"
           />
@@ -132,7 +188,7 @@ function SearchDialog({
 
         {characters && query.trim() && hits.length === 0 && (
           <p className="px-5 py-6 text-center font-body text-[15px] italic text-aether-muted">
-            No star answers to &ldquo;{query.trim()}&rdquo;.
+            Nothing in the atlas answers to &ldquo;{query.trim()}&rdquo;.
           </p>
         )}
 
@@ -141,16 +197,27 @@ function SearchDialog({
             ref={listRef}
             className="max-h-[min(38dvh,15rem)] overflow-y-auto py-1.5 sm:max-h-[46vh]"
           >
-            {hits.map((hit, index) => (
-              <ResultRow
-                key={hit.character.id}
-                hit={hit}
-                index={index}
-                isActive={index === active}
-                onHover={() => setActiveIndex(index)}
-                onTravel={() => travel(hit)}
-              />
-            ))}
+            {hits.map((row, index) =>
+              row.kind === 'star' ? (
+                <ResultRow
+                  key={row.hit.character.id}
+                  hit={row.hit}
+                  index={index}
+                  isActive={index === active}
+                  onHover={() => setActiveIndex(index)}
+                  onTravel={() => travel(row)}
+                />
+              ) : (
+                <LibraryRow
+                  key={row.hit.href}
+                  hit={row.hit}
+                  index={index}
+                  isActive={index === active}
+                  onHover={() => setActiveIndex(index)}
+                  onTravel={() => travel(row)}
+                />
+              ),
+            )}
           </div>
         )}
 
@@ -159,7 +226,7 @@ function SearchDialog({
           <span>↵ Travel</span>
           {query.trim() && hits.length > 0 && (
             <span className="ml-auto">
-              {hits.length} {hits.length === 1 ? 'star' : 'stars'}
+              {hits.length} {hits.length === 1 ? 'answer' : 'answers'}
             </span>
           )}
         </div>
@@ -220,6 +287,50 @@ function ResultRow({
         style={{ color: `${color}cc` }}
       >
         {character.type}
+      </span>
+    </button>
+  );
+}
+
+/** A work, a teller, a quarrel or a passage of the Library. */
+function LibraryRow({
+  hit,
+  index,
+  isActive,
+  onHover,
+  onTravel,
+}: {
+  hit: LibraryHit;
+  index: number;
+  isActive: boolean;
+  onHover: () => void;
+  onTravel: () => void;
+}) {
+  const color = hit.kind === 'quarrel' ? QUARREL_VIOLET : LIBRARY_GOLD;
+  const onTitle = hit.value === hit.title;
+  return (
+    <button
+      type="button"
+      data-index={index}
+      onMouseEnter={onHover}
+      onClick={onTravel}
+      className={`flex w-full items-center gap-3.5 px-5 py-3 text-left transition-colors duration-100 ${
+        isActive ? 'bg-nebula-violet/15' : ''
+      }`}
+    >
+      <span className="w-2 shrink-0 text-center font-body text-[13px] leading-none" style={{ color }} aria-hidden>
+        {hit.kind === 'quarrel' ? '⚖' : '❦'}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block truncate font-display text-[15px] tracking-[0.06em] text-aether">
+          {onTitle ? <Highlight value={hit.value} start={hit.start} end={hit.end} color={color} /> : hit.title}
+        </span>
+        <span className="block truncate font-body text-[13px] italic text-aether-muted">
+          {!onTitle && hit.value ? <Highlight value={hit.value} start={hit.start} end={hit.end} color={color} /> : hit.detail}
+        </span>
+      </span>
+      <span className="shrink-0 font-display text-[9px] uppercase tracking-[0.2em]" style={{ color: `${color}cc` }}>
+        {LIBRARY_TAG[hit.kind]}
       </span>
     </button>
   );

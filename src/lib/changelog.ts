@@ -14,6 +14,19 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.0',
+    codename: 'The Library and the First Quarrel',
+    date: '2026-11-06',
+    lines: [
+      'A fifth door opened, and behind it the Library: the eleven works of the seven tellers on one shelf in time, Homer and Hesiod at its left edge, the centuries between Hesiod and Apollonius left empty and labelled so, and the handbooks of the Roman age at its right. Each spine stands as tall as its work is long and is gilt as far as the atlas cites it, and beneath the shelf the sagas run as threads through the works that tell them.',
+      'Every work can now be read, the Greek or the Latin line by line beside its English, ninety-one pages from the pinned editions, numbered in the original’s own count. And every footnote of the atlas, on a figure’s page, a story, a city, the galaxy’s card, the day’s star, the Proem, the voyage and a Pattern of the Loom, opens its passage there with the lines lit, wherever the Library holds it.',
+      'Beside the text runs a margin: for the lines being read, the figures whose facts rest on them, the stories and the lines in the sky, the works on the Loom, and the quarrels they take a side in. In the English each name is a star, linked only where the passage is about that figure, so the war-goddess Enyo is never taken for her namesake among the Graeae.',
+      'The quarrels became pages, one hundred and eighty-nine places where the tellers contradict each other, each claim set beside its teller’s own words in the original and in English, under the Muses’ warning that they know how to speak many false things as though they were true. Three quarrels written down twice were made one, and their claims read again in the texts.',
+      'And the Theogony was given the sky. As the poem is scrolled, the dark galaxy lights each figure in the order Hesiod sings it, two hundred and thirty-two in eighteen beats, and draws each line of descent as he gives it; at the end the lens turns to Homer, the stars he never names sink back, and Aphrodite’s line leaves the foam of Uranus for Zeus and Dione.',
+      'The galaxy learned to change its mind slowly: when the lens turns, a bond now fades out as the next fades in, instead of snapping. A search for “Il. 5.370” opens the passage itself, and the atlas wrote out its first map of pages for the engines that read it.',
+    ],
+  },
+  {
     version: '0.5.0',
     codename: 'The Room Inside the Loom',
     date: '2026-11-04',

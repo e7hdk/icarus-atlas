@@ -2,6 +2,12 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import type { LensId } from '@/types/character';
 
+export interface LitSky {
+  stars: string[];
+  relations: string[];
+  accent?: string[];
+}
+
 interface GalaxyState {
   /** Active source lens. The selector UI lives in atlas settings. */
   lens: LensId;
@@ -23,6 +29,11 @@ interface GalaxyState {
    *  independent of any character selection. */
   skyFocus: { id: string; at: [number, number, number]; distance: number } | null;
   setSkyFocus: (focus: GalaxyState['skyFocus']) => void;
+  /** A reading of the sky (First, Chaos, docs/LIBRARY_PLAN.md §8): while set, only
+   *  these stars burn — the rest sink near dark — and only these relations are
+   *  drawn, `accent` ones in gold. Null is the ordinary galaxy. */
+  lit: LitSky | null;
+  setLit: (lit: LitSky | null) => void;
   setLens: (lens: LensId) => void;
   setHovered: (id: string | null) => void;
   select: (id: string | null) => void;
@@ -53,6 +64,7 @@ export const useGalaxyStore = create<GalaxyState>()(
       focusPoint: null,
       focusDistance: null,
       skyFocus: null,
+      lit: null,
       searchOpen: false,
       settingsOpen: false,
       spacingScale: 6.1,
@@ -74,6 +86,7 @@ export const useGalaxyStore = create<GalaxyState>()(
       selectAt: (selectedId, focusPoint, focusDistance = null) =>
         set({ selectedId, hoveredId: null, isDiving: false, focusPoint, focusDistance, skyFocus: null }),
       setSkyFocus: (skyFocus) => set({ skyFocus }),
+      setLit: (lit) => set({ lit }),
       setDiving: (isDiving) => set({ isDiving }),
       setSearchOpen: (searchOpen) =>
         set((state) => ({

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Library B: The Reading Room</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="shared/library-chrome.css">
+<style>
+  /* ============ LIBRARY B — THE READING ROOM ============
+     One book of one work (docs/LIBRARY_PLAN.md §6). The original line by
+     line, the English card beside the lines it translates; a gold reading
+     line; the margin says what in the atlas rests on the block under it.
+     Arrival as from a footnote on Aphrodite's codex: Iliad 5.370–417. */
+  html { scroll-behavior: auto; }
+  .subbar { position: fixed; top: 56px; left: 0; right: 0; z-index: 35; display: flex; align-items: center; gap: 18px; height: 48px; padding: 0 24px;
+    background: rgba(8,4,29,.82); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,.06); }
+  .langs { margin: 0 auto; display: flex; gap: 3px; padding: 3px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; }
+  .langs button { border: 1px solid transparent; background: none; border-radius: 999px; padding: 6px 14px; cursor: pointer; font: 400 10px var(--display); letter-spacing: .18em; color: var(--muted); }
+  .langs button.on { border-color: rgba(252,211,77,.5); background: rgba(252,211,77,.1); color: var(--gold); }
+  .langs button .gr { font: 500 12.5px var(--greek); letter-spacing: .02em; }
+  .booknav { display: flex; gap: 8px; font: 400 10px var(--display); letter-spacing: .18em; color: var(--muted); }
+  .booknav a { color: var(--muted); text-decoration: none; padding: 6px 10px; border: 1px solid var(--glass-border); border-radius: 999px; }
+  .booknav a:hover { color: var(--aether); }
+
+  .toast { position: fixed; top: 118px; left: 50%; transform: translateX(-50%); z-index: 34; display: flex; align-items: center; gap: 14px; padding: 10px 14px 10px 18px;
+    border: 1px solid rgba(252,211,77,.4); background: rgba(14,8,38,.92); backdrop-filter: blur(14px); border-radius: 999px; box-shadow: 0 16px 40px rgba(5,2,15,.5);
+    font-size: 15px; color: var(--muted); transition: opacity .5s, transform .5s; }
+  .toast b { font: 400 10px var(--display); letter-spacing: .2em; color: var(--gold); }
+  .toast em { font-style: normal; color: var(--aether); }
+  .toast .dq { color: var(--soft); }
+  .toast button { border: 0; background: rgba(255,255,255,.06); color: var(--muted); width: 24px; height: 24px; border-radius: 50%; cursor: pointer; }
+  .toast.gone { opacity: 0; transform: translate(-50%, -8px); pointer-events: none; }
+
+  .room { position: relative; z-index: 1; display: grid; grid-template-columns: 176px minmax(0, 1fr) 322px; gap: 34px; max-width: 1520px; margin: 0 auto; padding: 132px 24px 120px; }
+
+  /* ---- rail ---- */
+  .rail { position: sticky; top: 128px; align-self: start; max-height: calc(100vh - 150px); overflow: auto; scrollbar-width: none; }
+  .rail h2 { font: 600 17px var(--display); letter-spacing: .14em; }
+  .rail h2 span { display: block; margin-top: 2px; font: italic 400 15px var(--greek); letter-spacing: 0; color: rgba(252,211,77,.7); }
+  .rail .who { margin-top: 4px; font-style: italic; font-size: 14px; color: var(--faint); }
+  .books { list-style: none; margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 1px 10px; }
+  .books a { display: grid; grid-template-columns: 30px 1fr; align-items: center; gap: 6px; padding: 3px 4px; border-radius: 3px; text-decoration: none;
+    font: 400 10.5px var(--display); letter-spacing: .1em; color: var(--faint); }
+  .books a:hover { color: var(--aether); background: rgba(255,255,255,.03); }
+  .books a i { height: 3px; border-radius: 2px; background: rgba(252,211,77,.35); }
+  .books a.on { color: var(--gold); }
+  .books a.on i { background: var(--gold); box-shadow: 0 0 8px rgba(252,211,77,.6); }
+  .strip { position: relative; margin-top: 18px; }
+  .strip p { font: 400 9px var(--display); letter-spacing: .22em; color: var(--faint); }
+  .strip .bins { position: relative; margin-top: 8px; display: grid; gap: 0; }
+  .strip .bins i { height: 2px; margin-bottom: .6px; border-radius: 1px; background: rgba(252,211,77,var(--a)); }
+  .strip .view { position: absolute; left: -6px; right: -6px; border: 1px solid rgba(241,245,249,.35); border-radius: 3px; transition: top .15s, height .15s; }
+  .strip .tgt { position: absolute; left: -10px; width: 3px; background: var(--gold); box-shadow: 0 0 8px var(--gold); border-radius: 2px; }
+  .strip small { display: block; margin-top: 8px; font-style: italic; font-size: 12.5px; line-height: 1.4; color: var(--faint); }
+
+  /* ---- the text ---- */
+  .text { min-width: 0; }
+  .bookhead { padding-bottom: 26px; border-bottom: 1px solid rgba(252,211,77,.18); }
+  .bookhead h1 { margin-top: 8px; font: 700 40px var(--display); letter-spacing: .14em; text-shadow: 0 0 18px rgba(252,211,77,.3); }
+  .bookhead h1 span { margin-left: 14px; font: italic 400 26px var(--greek); letter-spacing: 0; color: rgba(252,211,77,.75); text-shadow: none; }
+  .bookhead .told { margin-top: 10px; font-size: 18px; color: var(--muted); }
+  .bookhead .told a { color: #fde68a; text-decoration: none; border-bottom: 1px solid rgba(252,211,77,.35); }
+  .bookhead .ed { margin-top: 8px; font-style: italic; font-size: 14px; color: var(--faint); }
+  .colheads { display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr); gap: 40px; margin-top: 22px; font: 400 9.5px var(--display); letter-spacing: .26em; color: var(--faint); }
+  .colheads span:first-child { padding-left: 58px; }
+
+  .block { position: relative; padding: 22px 0 30px; border-bottom: 1px solid rgba(255,255,255,.05); content-visibility: auto; contain-intrinsic-size: auto 900px; }
+  .bhead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .bhead .range { font: 400 10px var(--display); letter-spacing: .24em; color: var(--faint); transition: color .3s; }
+  .bhead .count { font-style: italic; font-size: 14px; color: var(--faint); }
+  .bhead .count b { font-style: normal; font-weight: 500; color: rgba(252,211,77,.85); }
+  .block.now .bhead .range { color: var(--gold); }
+  .cols { display: grid; grid-template-columns: minmax(0, 1.22fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  .grc { font: 400 16.5px/1.7 var(--greek); color: rgba(241,245,249,.9); }
+  .ln { position: relative; display: grid; grid-template-columns: 30px 1fr; gap: 0 18px; padding-left: 8px; border-radius: 2px; }
+  .ln span { padding-left: 1.2em; text-indent: -1.2em; }
+  .ln::before { content: ''; position: absolute; left: 0; top: 5px; bottom: 5px; width: 2px; border-radius: 1px; background: rgba(252,211,77,var(--a, 0)); }
+  .ln i { font: 400 10px/2.7 var(--display); letter-spacing: .06em; color: rgba(107,116,136,.0); text-align: right; font-style: normal; user-select: none; }
+  .ln.five i { color: var(--faint); }
+  .ln.target { background: linear-gradient(90deg, rgba(252,211,77,.10), rgba(252,211,77,.03)); color: #fef3c7; }
+  .ln.target i { color: rgba(252,211,77,.8); }
+  .ln.flash { animation: flash 2.4s ease-out 1; }
+  @keyframes flash { 0% { background: rgba(252,211,77,.32); } 100% { background: linear-gradient(90deg, rgba(252,211,77,.10), rgba(252,211,77,.03)); } }
+  .eng { font: 400 18.5px/1.72 var(--body); color: rgba(241,245,249,.88); padding: 4px 0 0; }
+  .eng.target { position: relative; }
+  .eng.target::before { content: ''; position: absolute; left: -22px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(180deg, transparent, var(--gold), transparent); box-shadow: 0 0 10px rgba(252,211,77,.5); }
+  .nm { color: var(--c); text-decoration: none; text-shadow: 0 0 10px color-mix(in srgb, var(--c) 35%, transparent); cursor: pointer; border-bottom: 1px dotted transparent; transition: border-color .2s; }
+  .nm:hover { border-bottom-color: var(--c); }
+  .readline { position: fixed; top: 42vh; z-index: 2; height: 1px; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(252,211,77,.4) 10%, rgba(252,211,77,.12) 60%, transparent); }
+  .readline::before { content: 'READING'; position: absolute; left: -2px; top: -15px; font: 400 8px var(--display); letter-spacing: .3em; color: rgba(252,211,77,.55); }
+
+  .pop { position: absolute; z-index: 30; width: 250px; padding: 12px 14px; border: 1px solid var(--glass-border); background: rgba(14,8,38,.96); backdrop-filter: blur(14px); border-radius: 8px;
+    box-shadow: 0 16px 40px rgba(5,2,15,.6); opacity: 0; pointer-events: none; transform: translateY(4px); transition: opacity .15s, transform .15s; }
+  .pop.on { opacity: 1; pointer-events: auto; transform: none; }
+  .pop .ty { display: inline-block; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--c); color: var(--c); font: 600 8.5px var(--display); letter-spacing: .18em; }
+  .pop h4 { margin-top: 7px; font: 600 17px var(--display); letter-spacing: .08em; }
+  .pop p { margin-top: 4px; font-style: italic; font-size: 14px; color: var(--muted); }
+  .pop .acts { display: flex; gap: 14px; margin-top: 10px; font: 400 9px var(--display); letter-spacing: .18em; }
+  .pop .acts a { color: var(--gold); text-decoration: none; }
+
+  .pager { display: flex; justify-content: space-between; margin-top: 40px; font: 400 10px var(--display); letter-spacing: .22em; }
+  .pager a { color: var(--muted); text-decoration: none; }
+  .credit { margin-top: 26px; font-style: italic; font-size: 13.5px; line-height: 1.6; color: var(--faint); }
+
+  /* ---- the margin ---- */
+  .margin { position: sticky; top: 128px; align-self: start; max-height: calc(100vh - 150px); overflow: auto; scrollbar-width: thin; padding-right: 4px; }
+  .margin .inner { transition: opacity .25s; }
+  .margin .inner.fade { opacity: 0; }
+  .margin h3 { margin-top: 6px; font: 600 18px var(--display); letter-spacing: .1em; }
+  .margin .fc { margin-top: 4px; font-style: italic; font-size: 15px; color: var(--muted); }
+  .margin .fc b { font-style: normal; font-weight: 500; color: var(--gold); }
+  .margin h5 { margin: 20px 0 8px; font: 400 9.5px var(--display); letter-spacing: .26em; color: var(--faint); }
+  .fig { padding: 9px 0; border-top: 1px solid rgba(255,255,255,.06); }
+  .fig .top { display: flex; align-items: center; gap: 8px; }
+  .fig .top a { font: 600 13.5px var(--display); letter-spacing: .08em; color: var(--c); text-decoration: none; }
+  .fig .top small { margin-left: auto; font-style: italic; font-size: 13px; color: var(--faint); }
+  .fig p { margin-top: 3px; font-style: italic; font-size: 14.5px; line-height: 1.45; color: rgba(241,245,249,.75); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .fig .src { margin-top: 3px; font: 400 8.5px var(--display); letter-spacing: .18em; color: var(--faint); }
+  .fig .src span { font: italic 12.5px var(--body); letter-spacing: 0; }
+  .qcard { position: relative; margin-bottom: 10px; padding: 14px 14px 12px; border: 1px solid rgba(192,132,252,.32); background: rgba(124,77,255,.07); border-radius: 4px; }
+  .qcard h6 { font: 600 12.5px var(--display); letter-spacing: .1em; color: var(--aether); }
+  .qcard h6 i { font-style: normal; color: var(--soft); margin-right: 6px; }
+  .qcard .c { display: grid; grid-template-columns: 82px 1fr; gap: 8px; margin-top: 7px; font-size: 14px; line-height: 1.4; color: rgba(241,245,249,.82); }
+  .qcard .c b { font: 400 8.5px/1.9 var(--display); letter-spacing: .14em; color: var(--soft); }
+  .qcard .c em { display: block; font-style: italic; font-size: 12.5px; color: var(--faint); }
+  .qcard .c.here { color: #fef3c7; }
+  .qcard .c.here b { color: var(--gold); }
+  .qcard .go { display: inline-block; margin-top: 10px; font: 400 9px var(--display); letter-spacing: .2em; color: var(--soft); text-decoration: none; }
+  .qcard .alt { display: flex; gap: 10px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.07); font-style: italic; font-size: 13px; color: var(--faint); }
+  .qcard .alt img { width: 64px; height: 40px; object-fit: cover; border-radius: 2px; }
+  .rel { display: flex; align-items: center; gap: 7px; padding: 4px 0; font-size: 14.5px; color: var(--muted); }
+  .rel b { font-weight: 500; color: var(--c); }
+  .rel small { margin-left: auto; font: 400 8px var(--display); letter-spacing: .14em; color: var(--faint); }
+  .seesky { display: inline-block; margin-top: 6px; font: 400 9px var(--display); letter-spacing: .2em; color: var(--gold); text-decoration: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .story { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--glass-border); background: var(--glass); font-size: 14px; color: var(--muted); text-decoration: none; }
+  .story:hover { color: var(--aether); }
+  .loom { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .work { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: center; text-decoration: none; color: inherit; }
+  .work img { width: 96px; height: 66px; object-fit: cover; border-radius: 3px; border: 1px solid rgba(255,255,255,.1); }
+  .work b { display: block; font: 500 15px/1.25 var(--body); color: var(--aether); }
+  .work span { display: block; margin-top: 2px; font-style: italic; font-size: 12.5px; line-height: 1.35; color: var(--faint); }
+
+  /* ---- phone ---- */
+  .sheethead, .bookstrip { display: none; }
+  @media (max-width: 1180px) {
+    .room { grid-template-columns: minmax(0, 1fr) 320px; }
+    .rail { display: none; }
+  }
+  @media (max-width: 760px) {
+    .subbar { padding: 0 10px; gap: 8px; }
+    .subbar .crumb .full, .booknav { display: none; }
+    .langs { margin: 0 0 0 auto; }
+    .langs button { padding: 6px 10px; }
+    .toast { top: 112px; width: calc(100% - 24px); border-radius: 14px; font-size: 14px; }
+    .room { display: block; padding: 120px 16px 42svh; }
+    .bookhead h1 { font-size: 30px; }
+    .bookhead h1 span { display: block; margin: 4px 0 0; font-size: 21px; }
+    .bookstrip { display: flex; gap: 6px; overflow-x: auto; margin-top: 14px; padding-bottom: 4px; scrollbar-width: none; }
+    .bookstrip a { flex: none; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--glass-border); font: 400 10px var(--display); letter-spacing: .1em; color: var(--faint); text-decoration: none; }
+    .bookstrip a.on { color: var(--gold); border-color: rgba(252,211,77,.5); background: rgba(252,211,77,.1); }
+    .colheads { display: none; }
+    .cols { grid-template-columns: 1fr; gap: 14px; }
+    .grc { font-size: 16.5px; }
+    .ln { grid-template-columns: 28px 1fr; gap: 0 12px; }
+    .eng { font-size: 17.5px; }
+    .eng.target::before { left: -10px; }
+    .readline { display: none; }
+    .margin { position: fixed; left: 0; right: 0; bottom: 0; top: auto; z-index: 36; max-height: none; height: 32svh; overflow: hidden; padding: 0;
+      border-top: 1px solid rgba(252,211,77,.4); background: rgba(10,6,30,.96); backdrop-filter: blur(18px); border-radius: 16px 16px 0 0; box-shadow: 0 -18px 50px rgba(5,2,15,.6);
+      transition: height .35s cubic-bezier(.2,.8,.2,1); }
+    .margin.open { height: 78svh; }
+    .sheethead { display: block; padding: 8px 18px 10px; cursor: pointer; }
+    .sheethead .handle { width: 40px; height: 4px; margin: 0 auto 8px; border-radius: 2px; background: rgba(255,255,255,.25); }
+    .sheethead p { font: 400 9.5px var(--display); letter-spacing: .22em; color: var(--muted); }
+    .sheethead p b { font-weight: 400; color: var(--gold); }
+    .margin .inner { height: calc(100% - 44px); overflow: auto; padding: 0 18px 24px; }
+    .margin .inner > .kicker, .margin .inner > h3, .margin .inner > .fc { display: none; }
+  }
+</style>
+</head>
+<body class="lang-both">
+<div class="dust"></div>
+<div class="subbar">
+  <div class="crumb"><a class="back" href="library-a-shelf.html" aria-label="Back to the Library">←</a><span class="full"><a href="library-a-shelf.html">Library</a> <span class="sep">/</span> <a href="#">Homer</a> <span class="sep">/</span> <a href="#">Iliad</a> <span class="sep">/</span></span> <span class="here">Book V</span></div>
+  <div class="langs" role="group" aria-label="Language">
+    <button data-lang="grc"><span class="gr">Ἑλληνικά</span></button>
+    <button data-lang="both" class="on">BOTH</button>
+    <button data-lang="en">ENGLISH</button>
+  </div>
+  <div class="booknav"><a href="#">← IV</a><a href="#">VI →</a></div>
+</div>
+<div class="toast" id="toast">
+  <b>FROM APHRODITE'S CODEX</b>
+  <span>a footnote cited <em>Iliad 5.370–417</em> · <span class="dq">⚖ the tellers disagree here</span></span>
+  <button aria-label="Dismiss">×</button>
+</div>
+
+<div class="room">
+  <aside class="rail" id="rail"></aside>
+  <article class="text" id="text"></article>
+  <aside class="margin" id="margin">
+    <div class="sheethead" id="sheethead"><div class="handle"></div><p id="sheetline"></p></div>
+    <div class="inner" id="minner"></div>
+  </aside>
+</div>
+<div class="readline" id="readline"></div>
+<div class="pop" id="pop"></div>
+<span class="mockflag"><b>Mockup B</b> · the reading room · real data</span>
+
+<script src="shared/library-chrome.js"></script>
+<script src="shared/library-data.js"></script>
+<script>
+(function () {
+  const L = window.LIBRARY, R = L.reading;
+  const TYPE = { primordial: 'Primordial', titan: 'Titan', olympian: 'Olympian', god: 'God', hero: 'Hero', mortal: 'Mortal', nymph: 'Nymph', creature: 'Creature' };
+  const TELLER = { homer: 'Homer', hesiod: 'Hesiod', apollodorus: 'Apollodorus', apollonius: 'Apollonius', ovid: 'Ovid', hyginus: 'Hyginus', pausanias: 'Pausanias' };
+  const SAGA = { primordial: '#a78bfa', titan: '#e3b341', olympian: '#7dd3fc', metamorphoses: '#e879f9', theban: '#fb7185', dionysus: '#c026d3', perseus: '#eab308', argonaut: '#38bdf8', heracles: '#f97316', theseus: '#2dd4bf', trojan: '#fbbf24', returns: '#34d399', heroic: '#aab4c8' };
+  const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV'];
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const tc = (t) => `var(--${t})`;
+  const thumb = (w, px) => `https://upload.wikimedia.org/wikipedia/commons/thumb/${w.path}/${encodeURIComponent(w.file)}/${px}px-${encodeURIComponent(w.file)}`;
+  const loom = Object.fromEntries(R.loom.map((w) => [w.id, w]));
+
+  // the deep link: #l370-417, as a footnote on Aphrodite's codex would send it
+  const m = (location.hash || '#l370-417').match(/^#l(\d+)-(\d+)$/) || [0, 370, 417];
+  const T0 = +m[1], T1 = +m[2];
+
+  // ---- the rail
+  const maxBook = Math.max(...Object.values(R.books));
+  const maxBin = Math.max(...R.bins);
+  document.getElementById('rail').innerHTML = `
+    <h2>ILIAD<span>Ἰλιάς</span></h2><p class="who">Homer · c. 8th century BC</p>
+    <ol class="books">${Array.from({ length: 24 }, (_, i) => i + 1).map((b) => `<li><a href="#" class="${b === 5 ? 'on' : ''}"><span>${ROMAN[b]}</span><i style="width:${8 + 92 * (R.books[b] ?? 0) / maxBook}%"></i></a></li>`).join('')}</ol>
+    <div class="strip"><p>BOOK V · WHERE THE ATLAS CITES IT</p>
+      <div class="bins" id="bins">${R.bins.map((n) => `<i style="--a:${(0.08 + 0.92 * Math.sqrt(n / maxBin)).toFixed(2)}"></i>`).join('')}<div class="view" id="view"></div><div class="tgt" id="tgt"></div></div>
+      <small>Each bar is ten lines; the brighter, the more atlas facts cite them. The frame is what you are reading; the gold mark, where you arrived.</small></div>`;
+  const binsEl = document.getElementById('bins');
+  const binH = () => binsEl.scrollHeight / R.bins.length;
+
+  // ---- the text
+  const binOf = (n) => R.bins[Math.floor((n - 1) / 10)] ?? 0;
+  const seg = (s) => typeof s === 'string' ? esc(s) : s.id ? `<a class="nm" data-id="${s.id}" data-type="${s.type}" style="--c:${tc(s.type)}">${esc(s.t)}</a>` : esc(s.t);
+  const blocks = R.blocks;
+  const text = document.getElementById('text');
+  text.innerHTML = `
+    <header class="bookhead"><p class="kicker">Homer · Iliad · Book V</p>
+      <h1>BOOK V<span>Ἰλιάδος Ε</span></h1>
+      <p class="told">Told here: <a href="#">${R.aristeia}</a> — the day Diomedes wounds two gods.</p>
+      <p class="ed">Greek: D. B. Monro and T. W. Allen (Oxford, 1920). English: A. T. Murray (Loeb, 1924). Perseus Digital Library, CC BY-SA 4.0. Lines ${blocks[0].from}–${blocks[blocks.length - 1].to} of ${R.bookLines} in this mockup.</p>
+      <div class="bookstrip">${Array.from({ length: 24 }, (_, i) => i + 1).map((b) => `<a href="#" class="${b === 5 ? 'on' : ''}">${ROMAN[b]}</a>`).join('')}</div>
+    </header>
+    <div class="colheads"><span>THE GREEK · MONRO AND ALLEN</span><span>THE ENGLISH · MURRAY</span></div>` +
+    blocks.map((b, i) => {
+      const hit = b.to >= T0 && b.from <= T1;
+      return `<section class="block" data-i="${i}">
+        <div class="bhead"><span class="range">LINES ${b.from}–${b.to}</span><span class="count"><b>${b.facts}</b> facts in the atlas rest on these lines${b.quarrels.length ? ' · <span style="color:var(--soft)">⚖ ' + b.quarrels.length + '</span>' : ''}</span></div>
+        <div class="cols">
+          <div class="grc greek" lang="grc">${b.greek.map(([n, t]) => `<div class="ln${n % 5 === 0 ? ' five' : ''}${n >= T0 && n <= T1 ? ' target' : ''}" data-n="${n}" style="--a:${(Math.sqrt(binOf(n) / maxBin) * .85).toFixed(2)}"><i>${n}</i><span>${esc(t)}</span></div>`).join('')}</div>
+          <div class="eng${hit ? ' target' : ''}"><p>${b.english.map(seg).join('')}</p></div>
+        </div></section>`;
+    }).join('') +
+    `<nav class="pager"><a href="#">← BOOK IV</a><a href="#">BOOK VI →</a></nav>
+     <p class="credit">The atlas cites this book ${R.books['5']} times; the strip on the left shows where. Names link only when the atlas is sure who is meant: a figure some fact on these lines cites, or a god whose name no one else bears. So “Tydeus” and “Capaneus” stay plain here, as do Achaea, Enyo and Pergamus, a land, a war-goddess and Troy's citadel that share their names with figures of the atlas.</p>`;
+
+  // ---- the margin
+  const minner = document.getElementById('minner');
+  const loomFor = (b) => b.from >= 363 && b.to <= 459 ? [loom['phidias-dione-and-aphrodite-parthenon-east-pediment']] : [loom['diomedes-roman-copy-after-kresilas']];
+  function renderMargin(b) {
+    const figs = b.figures.map((f) => `<div class="fig" style="--c:${tc(f.type)}"><div class="top"><i class="tdot" style="--c:${tc(f.type)}"></i><a href="#">${f.name}</a><small>${f.facts} fact${f.facts === 1 ? '' : 's'}</small></div>
+      <p>${esc(f.sample)}…</p><div class="src">${f.sources.map((s) => TELLER[s].toUpperCase()).join(' · ')} — <span>${esc(f.citation)}</span>${f.topic ? ' <span style="color:var(--soft)">⚖</span>' : ''}</div></div>`).join('');
+    const qs = b.quarrels.map((q) => `<div class="qcard"><h6><i>⚖</i>${esc(q.title)}</h6>${q.claims.map((c) => {
+      const here = /Iliad 5\./.test(c.citation);
+      const claim = c.claim.length > 120 ? c.claim.slice(0, c.claim.lastIndexOf(' ', 118)) + '…' : c.claim;
+      return `<div class="c${here ? ' here' : ''}"><b>${esc(c.author.replace('Pseudo-', '')).toUpperCase()}</b><span>${esc(claim)}<em>${esc(c.citation)}${here ? ' · these lines' : ''}</em></span></div>`;
+    }).join('')}${q.topic === 'aphrodite-parentage' ? `<div class="alt"><img src="${thumb(loom['botticelli-the-birth-of-venus'], 160)}" alt="" loading="lazy">Hesiod's version, on the Loom: Botticelli, <i>The Birth of Venus</i></div>` : ''}<a class="go" href="#">READ THE QUARREL →</a></div>`).join('');
+    const rels = b.relations.map((r) => `<div class="rel"><b style="--c:${tc(r.fromType)}">${r.fromName}</b><span>→</span><b style="--c:${tc(r.toType)}">${r.toName}</b><small>${r.type.toUpperCase()} · ${r.sources.map((s) => TELLER[s]).join(', ').toUpperCase()}</small></div>`).join('');
+    const stories = b.stories.map((s) => `<a class="story" href="#"><i class="tdot" style="--c:${SAGA[s.saga] ?? '#aab4c8'}"></i>${esc(s.title)}</a>`).join('');
+    const works = loomFor(b).map((w) => `<a class="work" href="#"><img src="${thumb(w, 240)}" alt="" loading="lazy"><span style="margin:0"><b>${esc(w.title)}</b><span>${esc(w.artist)} · ${esc(w.year)}<br>${w.author && !/public domain/i.test(w.license) ? 'Photo ' + esc(w.author) + ', ' : ''}${esc(w.license)}</span></span></a>`).join('');
+    minner.innerHTML = `<p class="kicker">In these lines</p><h3>Iliad 5.${b.from}–${b.to}</h3>
+      <p class="fc"><b>${b.facts}</b> facts in the atlas rest on these lines</p>
+      ${figs ? `<h5>FIGURES</h5>${figs}` : ''}
+      ${qs ? `<h5>⚖ QUARRELS</h5>${qs}` : ''}
+      ${rels ? `<h5>LINES IN THE SKY</h5>${rels}<a class="seesky" href="#">SEE THEM IN THE GALAXY ✦</a>` : ''}
+      ${stories ? `<h5>STORIES</h5><div class="chips">${stories}</div>` : ''}
+      <h5>ON THE LOOM</h5><div class="loom">${works}</div>`;
+    document.getElementById('sheetline').innerHTML = `IN THESE LINES · <b>5.${b.from}–${b.to}</b> · ${b.facts} FACTS${b.quarrels.length ? ' · ⚖ ' + b.quarrels.length : ''}`;
+  }
+
+  // ---- the reading line
+  const room = document.querySelector('.room'), rl = document.getElementById('readline');
+  const sections = [...document.querySelectorAll('.block')];
+  let current = -1, raf = 0;
+  function place() {
+    const tr = text.getBoundingClientRect();
+    rl.style.left = (tr.left - 30) + 'px'; rl.style.width = (tr.width + 30) + 'px';
+  }
+  function trace() {
+    raf = 0;
+    const y = innerHeight * 0.42;
+    let idx = 0;
+    sections.forEach((s, i) => { if (s.getBoundingClientRect().top <= y) idx = i; });
+    if (idx !== current) {
+      current = idx;
+      sections.forEach((s, i) => s.classList.toggle('now', i === idx));
+      minner.classList.add('fade');
+      setTimeout(() => { renderMargin(blocks[idx]); minner.classList.remove('fade'); }, current === -1 ? 0 : 180);
+    }
+    // where we are in the book, on the rail's strip
+    const lines = [...document.querySelectorAll('.ln')];
+    let first = null, last = null;
+    for (const l of lines) { const r = l.getBoundingClientRect(); if (r.bottom > 110 && r.top < innerHeight) { first ??= +l.dataset.n; last = +l.dataset.n; } }
+    const view = document.getElementById('view');
+    if (view && first) { view.style.top = ((first - 1) / 10 * binH() - 2) + 'px'; view.style.height = (Math.max(1, (last - first) / 10) * binH() + 4) + 'px'; }
+  }
+  addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(trace); }, { passive: true });
+  addEventListener('resize', () => { place(); trace(); });
+  const tgt = document.getElementById('tgt');
+  if (tgt) { tgt.style.top = ((T0 - 1) / 10 * binH()) + 'px'; tgt.style.height = (Math.max(1, (T1 - T0) / 10) * binH()) + 'px'; }
+
+  // ---- arrival: the cited range settles on the reading line
+  requestAnimationFrame(() => {
+    place();
+    const target = document.querySelector(`.ln[data-n="${T0}"]`);
+    if (target) {
+      const y = target.getBoundingClientRect().top + scrollY - innerHeight * (matchMedia('(max-width: 760px)').matches ? 0.3 : 0.42) + 6;
+      scrollTo(0, Math.max(0, y));
+      document.querySelectorAll('.ln.target').forEach((l) => l.classList.add('flash'));
+    }
+    trace();
+  });
+  const toast = document.getElementById('toast');
+  toast.querySelector('button').onclick = () => toast.classList.add('gone');
+  setTimeout(() => toast.classList.add('gone'), 7000);
+
+  // ---- languages
+  document.querySelectorAll('.langs button').forEach((b) => b.onclick = () => {
+    document.querySelectorAll('.langs button').forEach((x) => x.classList.toggle('on', x === b));
+    document.body.className = 'lang-' + b.dataset.lang;
+    for (const c of document.querySelectorAll('.cols')) c.style.gridTemplateColumns = b.dataset.lang === 'both' && !matchMedia('(max-width: 760px)').matches ? '' : '1fr';
+    for (const g of document.querySelectorAll('.grc')) g.style.display = b.dataset.lang === 'en' ? 'none' : '';
+    for (const e of document.querySelectorAll('.eng')) e.style.display = b.dataset.lang === 'grc' ? 'none' : '';
+    document.querySelector('.colheads').style.display = b.dataset.lang === 'both' ? '' : 'none';
+    trace();
+  });
+
+  // ---- a name's card
+  const pop = document.getElementById('pop');
+  text.addEventListener('mouseover', (e) => {
+    const a = e.target.closest('.nm'); if (!a) return;
+    const r = a.getBoundingClientRect(), t = a.dataset.type;
+    pop.style.setProperty('--c', tc(t));
+    pop.innerHTML = `<span class="ty">${TYPE[t].toUpperCase()}</span><h4>${a.textContent}</h4><p>${a.textContent === 'Athene' ? 'Murray spells her Athene; the atlas knows her as Athena.' : 'A star of the atlas, named in this passage.'}</p><div class="acts"><a href="#">OPEN THE STAR ✦</a><a href="#">THE CODEX →</a></div>`;
+    pop.style.left = Math.min(innerWidth - 270, r.left + scrollX) + 'px';
+    pop.style.top = (r.bottom + scrollY + 8) + 'px';
+    pop.classList.add('on');
+  });
+  text.addEventListener('mouseout', (e) => { if (e.target.closest('.nm') && !e.relatedTarget?.closest?.('.pop')) setTimeout(() => { if (!pop.matches(':hover')) pop.classList.remove('on'); }, 120); });
+  pop.addEventListener('mouseleave', () => pop.classList.remove('on'));
+
+  // ---- the phone sheet
+  document.getElementById('sheethead').onclick = () => document.getElementById('margin').classList.toggle('open');
+})();
+</script>
+</body>
+</html>

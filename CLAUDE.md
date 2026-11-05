@@ -38,11 +38,18 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm validate-myth-river` — the River of Myth gate (docs/MYTHS_RIVER_PLAN.md): every story one star in time order, every sourced crossing drawn once (kiss, tributary, knot or thread of fate), no ribbon overlaps, determinism, braid limits
 - `pnpm myth-river:metrics` — readability report for the River of Myth (`--json`); the numbers `validate-myth-river` gates. `pnpm myth-river:sketch` draws the river flat to gitignored `research/myth-river/`
 - `pnpm validate-ephemeris` — the Ephemeris gate: eligibility probes, Athens-midnight calendar, cycle determinism, golden pick sequence (see docs/EPHEMERIS_PLAN.md §8; refresh goldens with `--print-golden`)
+- `pnpm validate-library` — the Library's citation gate (docs/LIBRARY_PLAN.md, M15): every `citation` in `data/` resolves through the works registry (`data/library/works.json`) to a passage that exists in the pinned edition, a whole work, an allowlisted external work, or (in the chronology) a note; `--all` lists every failure. Run after any edit that adds or changes a citation; a new spelling of a work goes into the registry's `aliases`
+- `pnpm library:metrics` — how much of each work the atlas cites, and what does not resolve (`--json`, `--failures`); `--audit` lists facts whose cited passage never names their figure (a review list, not a gate; `--all` for every entry)
+- `pnpm bake-library-texts` — bake the Library's aligned texts (original line by line beside the English card; prose section by section) from the synced corpus into the committed `data/generated/library/<work>.json` (11 MB); works shown as `excerpt` keep only their original or their ids and a link out. Rerun only when the corpus manifest or the reading changes (`--force` rebakes all)
+- `pnpm bake-library-extents` — bake how far each work runs (last lines, lettered lines, section and tale ids, and its words, for the Shelf's spines) from the synced corpus into the committed `data/generated/library-extents.json`; rerun only when the corpus manifest changes
+- `pnpm library:theogony-candidates` — propose *First, Chaos*'s beats from the data (each figure Hesiod's facts tie to the Theogony, at its narrowest citation) against the authored `data/library/readings/theogony.json`; a list for an eye, the gate is `validate-library`
+- `pnpm quarrels:doc` — write `docs/CONTRADICTIONS.md` from `data/quarrels.json`; run after any quarrel edit (`validate-data` fails while the doc is behind, and every disputed `topic` with two entries or more must be a quarrel there)
+- `pnpm library:ovid-lineation` — review Ovid citations written in Brookes More's English lineation instead of Magnus' Latin into gitignored `research/library/`; `--apply certain[,probable]` rewrites the approved loci in `data/` (needs the synced corpus)
 - `pnpm bake-attic-calendar` — regenerate the committed reconstructed Attic calendar (`data/generated/attic-calendar.json`, astronomy-engine; convention in the script header)
 - `pnpm art:commons` — fetch Commons size, license, author and categories of new culture images into `data/generated/art-commons.json` (`--all` refetches; run after culture batches, network step)
 - `pnpm bake-loom-atlas` — fetch Commons thumbnails into gitignored `research/loom/thumbs/` and bake the sheets in `public/art/` (network step at batch boundaries; `--fetch` or `--compose` for one half; also writes duplicate candidates to `research/loom/duplicates.json`)
 - `pnpm bake-art` — derive the Loom's catalogue into `data/generated/art-catalogue.json` (offline, chained into `dev` and `build`; `--force` after changing a rule without bumping `CATALOGUE_VERSION`)
-- `pnpm bake-atlas-data` — write what pages fetch instead of carrying it as props to gitignored `public/atlas/`: the ⌘K index, the Ephemeris data, one file per door (galaxy, myths, lands) and each star's prose with its linked names (offline, chained into `dev`, `build` and `validate-data`). Props repeat in every prerendered page, so a page must never pass per-star data or prose as props, and `data/generated/linked-prose.json` stays `server-only`
+- `pnpm bake-atlas-data` — write what pages fetch instead of carrying it as props to gitignored `public/atlas/`: the ⌘K index, the Ephemeris data, one file per door (galaxy, myths, lands), each star's prose with its linked names, the Library's margins (per reading page an index and its notes in chunks, under `public/atlas/library/`) and its ⌘K index (works, tellers, quarrels) (offline, chained into `dev`, `build` and `validate-data`). Props repeat in every prerendered page, so a page must never pass per-star data or prose as props, and `data/generated/linked-prose.json` stays `server-only`
 - `pnpm validate-loom` — the Loom gate at desktop and phone width: every work one tile, no holes, time down the cloth, nothing across the tear, saga bands, determinism, catalogue limits, and that the shipped `public/art/loom.json` is the cloth the engine weaves now (run after art or culture edits, once `pnpm bake-art` has run)
 - `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
@@ -55,8 +62,10 @@ src/
   app/                  # Next.js routes
     character/[id]/     # character codex: Poets (page.tsx), info/, legacy/
     art/                # the Loom: /art, a work's plate at /art/[id], /art/list
+    library/            # the Library: /library, a work at /library/[author]/[work], a book at …/[unit], the Quarrels at /library/quarrels[/topic]
   components/
     galaxy/             # R3F scene: GalaxyCanvas, StarField, Star, CameraRig, effects
+    library/            # the Library: ReadingRoom (one book, original beside English), ReadingLens, MarginPanel, CitationStrip, QuarrelFilter
     character/          # CharacterShell, PoetsView, RelationOrrery (codex routes)
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
@@ -66,6 +75,7 @@ src/
     characters/         # character loading, relation/ring grouping
     search/             # name search
     art/                # catalogue rules, layout engine (loom.ts), door data, camera, web
+    library/            # citation resolver (cite.ts), passage checks (extents.ts), links, text loader, the margin (sites, margins, margin-files), scoped names (link-english), the Quarrels (quarrels, quarrel-order)
   lib/                  # utils, zod schemas, three helpers
   types/                # shared TS types (character.ts is the contract)
 data/
@@ -79,6 +89,8 @@ data/
   stories/*.json        # myths as stories: sourced chapters, cast, places, attestations
   geo/                  # regions.json, cities.json (Pleiades CC BY), generated basemap.json
   lineages/*.json       # per-city royal successions, sources-tagged reigns
+  library/              # the Library's works registry (works.json), translators' names per edition (aliases.json), the beats of First, Chaos (readings/theogony.json)
+  quarrels.json         # the Quarrels: each disputed `topic`, its claims by teller with citations (docs/CONTRADICTIONS.md is written from it)
 docs/                   # PLAN.md (roadmap), SOURCES.md, CHARACTERS.md, CONTRADICTIONS.md, NYMPHS.md, CENTAURS.md
 mockups/                # static theme mockups (design artifacts, not app code)
 scripts/                # validate-data.ts and other maintenance scripts
@@ -112,7 +124,7 @@ Geography becomes the second major axis beside the galaxy. Status: IN PROGRESS �
 
 ## Feature: Stories — the mythic sagas
 
-The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS · MYTHS · ART nav; the Heortologion at `/festivals` is an Ephemeris satellite page, entered from the daily card, not a nav door). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate. The Myths door is the **Spindle of Time** spun with the **River of Myth** layout (docs/MYTHS_RIVER_PLAN.md — engine `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`, wound onto the spindle by `threadedSpindle.ts`): each saga one thread, its stories stars on it in time order, threads touching where the sources say the myths meet. Run `pnpm validate-myth-river` after story or crossing edits.
+The third door beside Galaxy and Areas (the main HUD carries a GALAXY · LANDS · MYTHS · ART · LIBRARY nav; the Heortologion at `/festivals` is an Ephemeris satellite page, entered from the daily card, not a nav door). A story (`data/stories/*.json`) is a myth told as a narrative: a sourced `summary`, ordered `chapters` (each `sources`-tagged with optional `citation`/`topic` — hard rule 2 applies, research via the corpus per hard rule 5), a `cast` (entries link to characters via optional `id`, or stay plain attested names until promoted), `places` (optional city `id` links to the city codex), and `attestations` — the ancient works that tell the story ("Told in"). Stories nest: an episode (e.g. Rhesus) points at its parent saga (the Trojan War) via `parent`. Routes: `/stories` (era-ordered index, episodes nested under their saga) and `/story/[id]`. `pnpm validate-data` checks story schema, parent/cast/place references, and folds chapter topics into the dispute gate. The Myths door is the **Spindle of Time** spun with the **River of Myth** layout (docs/MYTHS_RIVER_PLAN.md — engine `src/features/stories/river.ts` on the shared `timeAxis.ts` and `sagas.ts`, wound onto the spindle by `threadedSpindle.ts`): each saga one thread, its stories stars on it in time order, threads touching where the sources say the myths meet. Run `pnpm validate-myth-river` after story or crossing edits.
 
 ## Feature: The Loom — the Art door
 
@@ -129,6 +141,17 @@ The fourth door (`ART`, `/art`, docs/LOOM_PLAN.md is the contract): every image 
 - **Gates:** run `pnpm validate-loom` after art, culture or Pattern edits (it gates the layout and that every thread only falls), and `pnpm validate-data` (overrides and Patterns).
 - **Ids:** a work's id comes from its artist and title, and the atlas keys its sprites by id. Correcting either moves the sprite only after `pnpm bake-loom-atlas`, or after renaming its key in `public/art/manifest.json`.
 
+## Feature: The Library — the fifth door
+
+The fifth door (`LIBRARY`, `/library`, docs/LIBRARY_PLAN.md is the contract): the seven tellers' eleven works, readable in the original beside the English, with every citation in the atlas a link into its passage.
+
+- **The citation spine:** `data/library/works.json` names each work, its editions, aliases and structure. `src/features/library/cite.ts` resolves any citation string to passages, and `links.ts` turns them into reading-room links (`citationLinks`, `citationParts`, `<CitationText>`, `Footnote` passages). `pnpm validate-library` gates every `citation` in `data/`: a new spelling of a work goes into the registry's `aliases`, never into a special case.
+- **The texts:** `pnpm bake-library-texts` writes `data/generated/library/<work>.json`, the original line by line beside its English card. The reading room is `/library/[author]/[work]/[unit]`, with deep links like `#l370-417`, `#s1.3.1` and `#t92`. Its English names link only to figures the passage is about (scope from citations), plus translators' forms in `data/library/aliases.json`, which is reviewed by hand. The margin (figures, ⚖ quarrels, sky lines, stories, Loom works) is baked in chunks into `public/atlas/library/`.
+- **The door:** the Shelf in time with the sagas as threads (`Shelf.tsx`; on a phone `ShelfRows.tsx`), teller pages `/library/[author]`, and work pages with per-book citation strips. ⌘K answers with works, tellers, quarrels and typed citations.
+- **The Quarrels:** `data/quarrels.json` is the catalogue, and `docs/CONTRADICTIONS.md` is written from it (`pnpm quarrels:doc`). A claim keeps the catalogue's words in `who` and its tellers in `sources`; a claim told outside the seven is marked `outside`. Pages live at `/library/quarrels[/topic]`.
+- **First, Chaos** (`/theogony`): the Theogony read with the galaxy lighting each figure as sung. The beats are authored in `data/library/readings/theogony.json` and gated by `validate-library`: every lit figure needs a Hesiod fact citing its beat's lines. The galaxy store's `lit` set drives `StarsDriver` and `RelationLines`; with it null, the home galaxy is untouched. Leaving restores the lens and selection.
+- **Rules:** a citation the resolver cannot read is fixed in the data or taught to the registry, never hidden. Never present a translator's or a later summary's claim as a teller's (hard rule 2). The Library is lens-free, except the reading's finale, which turns from Hesiod to Homer.
+
 ## Current status
 
-See docs/PLAN.md for the milestone roadmap and decision log (chosen options are recorded there). Research catalogs: docs/SOURCES.md (7 author lenses), docs/CHARACTERS.md (M1 roster of 30 + data-entry conventions), docs/CONTRADICTIONS.md (16 verified inter-author disputes).
+See docs/PLAN.md for the milestone roadmap and decision log (chosen options are recorded there). Research catalogs: docs/SOURCES.md (7 author lenses), docs/CHARACTERS.md (M1 roster of 30 + data-entry conventions), the Quarrels, `data/quarrels.json` (189 verified inter-author disputes; `docs/CONTRADICTIONS.md` is written from it by `pnpm quarrels:doc`, and the Library reads each at `/library/quarrels/<topic>`).

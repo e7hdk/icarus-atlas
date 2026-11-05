@@ -9,6 +9,7 @@ import {
 } from '@/types/character';
 import { ATTIC_MONTHS } from '@/types/spotlight';
 import { VOYAGE_MOODS } from '@/types/story';
+import { LIBRARY_WORK_IDS, WORK_STRUCTURES } from '@/types/library';
 
 export const sourceIdSchema = z.enum(SOURCE_IDS);
 
@@ -50,6 +51,8 @@ export const relationSchema = z.object({
   topic: z.string().optional(),
   bond: z.enum(PARENT_BONDS).optional(),
   note: z.string().optional(),
+  /** The passage that proves the edge, where the data gives one apart from the note. */
+  citation: z.string().optional(),
 });
 
 export const sourceSchema = z.object({
@@ -663,6 +666,78 @@ export const referenceSchema = z.object({
   etymology: z.string().optional(),
   externalLinks: z.array(z.object({ label: z.string().min(1), url: z.string().url() })).optional(),
 });
+
+/** The Library's works registry, data/library/works.json (docs/LIBRARY_PLAN.md §4.2). */
+const libraryEditionSchema = z.object({
+  corpusId: z.string().min(1),
+  credit: z.string().min(1),
+  licence: z.string().min(1),
+});
+
+export const libraryWorksFileSchema = z.object({
+  works: z
+    .array(
+      z.object({
+        id: z.enum(LIBRARY_WORK_IDS),
+        author: sourceIdSchema,
+        title: z.string().min(1),
+        greekTitle: z.string().min(1).optional(),
+        composed: z
+          .object({ from: z.number().int(), to: z.number().int(), label: z.string().min(1) })
+          .refine((date) => date.from <= date.to, 'composed.from must not be after composed.to'),
+        structure: z.enum(WORK_STRUCTURES),
+        units: z.enum(['books', 'whole']),
+        aliases: z.array(z.string().min(1)).min(1),
+        original: libraryEditionSchema.optional(),
+        translation: libraryEditionSchema,
+        display: z.enum(['full', 'excerpt']),
+      }),
+    )
+    .length(LIBRARY_WORK_IDS.length),
+  external: z.array(
+    z.object({
+      label: z.string().min(1),
+      aliases: z.array(z.string().min(1)).min(1),
+      note: z.string().min(1).optional(),
+    }),
+  ),
+});
+
+/** data/quarrels.json (docs/LIBRARY_PLAN.md §4.7): a claim names its tellers, unless
+ *  it is marked as told outside them. A quarrel may hold a single claim when one
+ *  teller reports both versions ("some say … others that …", Bibl. 3.7.5). */
+const quarrelClaimSchema = z
+  .object({
+    who: z.string().min(1),
+    sources: z.array(sourceIdSchema),
+    claim: z.string().min(1),
+    citation: z.string().min(1).optional(),
+    outside: z.literal(true).optional(),
+  })
+  .strict()
+  .refine((claim) => (claim.outside ? claim.sources.length === 0 : claim.sources.length > 0), {
+    message: 'a claim names its tellers in `sources`, or is marked `outside` with none',
+  })
+  .refine((claim) => claim.outside || claim.citation, { message: 'a teller’s claim carries its citation' });
+
+export const quarrelsFileSchema = z
+  .object({
+    quarrels: z.array(
+      z
+        .object({
+          topic: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'topic must be kebab-case'),
+          title: z.string().min(1),
+          characters: z.array(z.string().min(1)),
+          places: z.array(z.string().min(1)).min(1).optional(),
+          strands: z.literal(true).optional(),
+          claims: z.array(quarrelClaimSchema).min(1),
+          significance: z.string().min(1).optional(),
+          verification: z.string().min(1).optional(),
+        })
+        .strict(),
+    ),
+  })
+  .strict();
 
 export type CharacterInput = z.infer<typeof characterSchema>;
 export type RelationInput = z.infer<typeof relationSchema>;

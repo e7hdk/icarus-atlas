@@ -21,6 +21,12 @@ const SHIMMER_LIGHT = 0.62;
 const MOBILE_STAR_HIT_RADIUS_PX = 24;
 /** Per frame, how far focus and the selection ring ease toward their target. */
 const EASE = 0.12;
+/** A reading's lit set (docs/LIBRARY_PLAN.md §8): an unlit star keeps this much
+ *  of its light; a lit one rises over about 600 ms (time constant 0.2 s) and
+ *  flares as it ignites, the flare fading over 1.2 s. */
+const UNLIT = 0.07;
+const LIT_TAU = 0.2;
+const FLARE_FADE = 1.2;
 
 /** GPU-instanced character stars. Every star is ONE point-spread quad
  *  (shaders/psfStar.ts): a white-hot core, a halo in its type colour, spikes
@@ -33,10 +39,13 @@ export function StarsDriver({
   characters,
   isMobile,
   positions,
+  pickable = true,
 }: {
   characters: SkyCharacter[];
   isMobile: boolean;
   positions: Map<string, Vec3>;
+  /** A reading's sky is looked at, not picked: a click selects nothing. */
+  pickable?: boolean;
 }) {
   const starRef = useRef<THREE.InstancedMesh>(null);
   const hitRef = useRef<THREE.InstancedMesh>(null);
@@ -66,6 +75,9 @@ export function StarsDriver({
     const emphasis = new Float32Array(N); // eased focus, 0..1
     const ring = new Float32Array(N); // eased selection ring, 0..1
     const attested = new Uint8Array(N).fill(1); // default lens = consensus → all attested
+    const litMask = new Uint8Array(N).fill(1); // no reading → every star lit
+    const litGlow = new Float32Array(N).fill(1); // eased toward the mask
+    const flare = new Float32Array(N); // a star's ignition, fading
     const posX = new Float32Array(N);
     const posY = new Float32Array(N);
     const posZ = new Float32Array(N);
@@ -137,7 +149,7 @@ export function StarsDriver({
 
     return {
       hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr,
-      radiance, spike, emphasis, ring, attested, posX, posY, posZ, color, dyn, hasMuse,
+      radiance, spike, emphasis, ring, attested, litMask, litGlow, flare, posX, posY, posZ, color, dyn, hasMuse,
       indexToId, idToIndex,
       starGeo, starMat, hitGeo, hitMat,
     };
@@ -202,6 +214,9 @@ export function StarsDriver({
   }, [isMobile, setHovered]);
 
   const shimmer = useMemo(() => new THREE.Color(), []);
+  // the lit set last written into the mask, and whether motion is wanted at all
+  const litSeen = useRef<unknown>(null);
+  const still = useMemo(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches, []);
   const elapsed = useElapsedRef();
   const camera = useThree((state) => state.camera);
   const viewportHeight = useThree((state) => state.size.height);
@@ -262,7 +277,7 @@ export function StarsDriver({
     [camera, count, viewportHeight],
   );
 
-  useFrame(({ gl, size }) => {
+  useFrame(({ gl, size }, delta) => {
     const star = starRef.current;
     if (!star) return;
     const currentData = dataRef.current;
@@ -271,7 +286,21 @@ export function StarsDriver({
     const hi = st.hoveredId ? currentData.idToIndex.get(st.hoveredId) ?? -1 : -1;
     const si = st.selectedId ? currentData.idToIndex.get(st.selectedId) ?? -1 : -1;
     const { speedArr, ampArr, phaseArr, irregularArr, baseHueArr, radiance, spike,
-      emphasis, ring, attested, color, dyn, hasMuse, starMat } = currentData;
+      emphasis, ring, attested, litMask, litGlow, flare, color, dyn, hasMuse, starMat } = currentData;
+
+    // A reading's lit set, written into the mask once per change; a star that
+    // comes alight flares.
+    if (st.lit !== litSeen.current) {
+      const wanted = st.lit ? new Set(st.lit.stars) : null;
+      for (let i = 0; i < count; i++) {
+        const on = wanted ? (wanted.has(currentData.indexToId[i]) ? 1 : 0) : 1;
+        if (on && !litMask[i] && wanted && !still) flare[i] = 1;
+        litMask[i] = on;
+      }
+      litSeen.current = st.lit;
+    }
+    const reading = st.lit !== null;
+    const rise = still ? 1 : 1 - Math.exp(-delta / LIT_TAU);
 
     // Each role's pulse breathes LIGHT: radiance swings and the spread follows a
     // little — a variable star, not a ball changing size. Focus (hover or
@@ -289,10 +318,19 @@ export function StarsDriver({
       if (r < 1e-3) r = 0;
       ring[i] = r;
       const att = attested[i];
+      const target = reading ? (litMask[i] ? 1 : UNLIT) : 1;
+      let glow = litGlow[i] + (target - litGlow[i]) * rise;
+      if (Math.abs(target - glow) < 1e-3) glow = target;
+      litGlow[i] = glow;
+      let f = flare[i];
+      if (f > 0) {
+        f = Math.max(0, f - delta / FLARE_FADE);
+        flare[i] = f;
+      }
       const o = i * 4;
-      dyn[o] = (1 + pulse * 0.45) * (1 + 0.3 * e);
-      dyn[o + 1] = radiance[i] * (1 + pulse * 2.2) * (1 + 0.85 * e) * (att ? 1 : 0.2);
-      dyn[o + 2] = Math.max(att ? spike[i] : 0, e);
+      dyn[o] = (1 + pulse * 0.45) * (1 + 0.3 * e) * (0.55 + 0.45 * glow) * (1 + 0.5 * f);
+      dyn[o + 1] = radiance[i] * (1 + pulse * 2.2) * (1 + 0.85 * e) * (att ? 1 : 0.2) * glow * (1 + 1.2 * f);
+      dyn[o + 2] = Math.max(att ? spike[i] * glow : 0, e, 0.8 * f);
       dyn[o + 3] = r;
       const bh = baseHueArr[i];
       if (!Number.isNaN(bh)) {
@@ -345,6 +383,7 @@ export function StarsDriver({
         }
         onClick={(e) => {
           e.stopPropagation();
+          if (!pickable) return;
           const id = e.instanceId !== undefined ? data.indexToId[e.instanceId] : undefined;
           if (id) select(id);
         }}

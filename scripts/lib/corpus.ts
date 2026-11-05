@@ -65,8 +65,11 @@ export function normalizeWhitespace(text: string): string {
 
 function cleanText($: CheerioAPI, selection: Cheerio<AnyNode>): string {
   const clone = selection.clone();
-  clone.find('note, pb, milestone, fw, figure, figDesc').remove();
-  return normalizeWhitespace(clone.text());
+  // A note or a page mark sits between words ("call Meliae<note>…</note>all"):
+  // it leaves a space behind, or the words around it run together.
+  clone.find('fw, figure, figDesc').remove();
+  clone.find('note, pb, milestone, lb').replaceWith(' ');
+  return normalizeWhitespace(clone.text()).replace(/\s+([,.;:!?)\]])/g, '$1').replace(/([(\[])\s+/g, '$1');
 }
 
 function numberedAncestors($: CheerioAPI, element: Element): Array<{ subtype: string; n: string }> {

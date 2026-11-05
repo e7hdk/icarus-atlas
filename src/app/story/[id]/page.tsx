@@ -11,6 +11,7 @@ import { CrumbBar } from '@/components/hud/CrumbBar';
 import { StoryLegacy } from '@/components/stories/StoryLegacy';
 import { loadLoomIndex } from '@/features/art/load';
 import type { SourceId } from '@/types/character';
+import { citationLinks } from '@/features/library/links';
 
 /** Prerendered whole; nothing renders on a request (docs/HOSTING.md). */
 export const dynamicParams = false;
@@ -99,10 +100,12 @@ export default async function StoryPage(props: { params: Promise<{ id: string }>
           />
         }
         summaryFootnote={footnote(story.summary.sources, story.summary.citation)}
+        summaryPassages={citationLinks(story.summary.citation, { sources: story.summary.sources })}
         chapters={story.chapters.map((chapter, index) => ({
           title: chapter.title,
           disputed: Boolean(chapter.topic),
           footnote: footnote(chapter.sources, chapter.citation),
+          passages: citationLinks(chapter.citation, { sources: chapter.sources }),
           prose: (
             <StoryProse
               key={`${chapter.title}-${index}`}

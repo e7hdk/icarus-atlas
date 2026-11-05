@@ -1,5 +1,6 @@
 'use client';
 
+import { Testimony } from '@/components/ui/Testimony';
 import { Link } from '@/components/ui/Link';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -252,7 +253,7 @@ export function ConstellationCard() {
                     key={line}
                     className="border border-star-olympian/15 bg-star-olympian/[0.03] px-4 py-2.5 font-body text-[13px] italic leading-relaxed text-aether-muted"
                   >
-                    {line}
+                    <Testimony line={line} />
                   </li>
                 ))}
               </ul>

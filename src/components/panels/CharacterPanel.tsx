@@ -1,5 +1,6 @@
 'use client';
 
+import { CitationText } from '@/components/ui/CitationText';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Relation, SkyCharacter, Source, SourceId } from '@/types/character';
@@ -176,9 +177,16 @@ export function CharacterPanel({
 
   const story = prose ? filterSourced(prose.story, lens) : [];
   const bonds = bondsFor(character.id, filterRelations(relations, lens));
+  // the tellers, then the passage, which opens in the Library where it holds it
   const citeOf = (entrySources: SourceId[], citation?: string) => {
     const names = entrySources.map((id) => sourceName.get(id) ?? id).join(' · ');
-    return citation ? `${names} — ${citation}` : names;
+    return citation ? (
+      <>
+        {names} — <CitationText citation={citation} sources={entrySources} />
+      </>
+    ) : (
+      names
+    );
   };
 
   const renderBond = (bond: (typeof bonds)[number]) => {

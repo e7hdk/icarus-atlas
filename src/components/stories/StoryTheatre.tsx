@@ -1,7 +1,11 @@
 'use client';
 
+import { CitationText } from '@/components/ui/CitationText';
+import { workLinkNamed } from '@/features/library/links';
 import { Link } from '@/components/ui/Link';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { Footnote } from '@/components/ui/Footnote';
+import type { PassageLink } from '@/features/library/links';
 
 /** Story page layout "Marquee & Path": the playbill folds into a sticky gold
  *  marquee card (title, live act list, dramatis personae, scenes, tellers)
@@ -16,6 +20,8 @@ export interface TheatreChapter {
   disputed: boolean;
   /** Hover footnote: teller names + citation, prebuilt server-side. */
   footnote: string;
+  /** The passages its citation names in the Library. */
+  passages?: PassageLink[];
   prose: ReactNode;
 }
 
@@ -107,20 +113,19 @@ function ClampPill({
   );
 }
 
-/** Hover footnote superscript (tellers + citation), the codex idiom. */
-function Footnote({ label, text }: { label: string; text: string }) {
-  return (
-    <span className="group/fn relative ml-0.5 cursor-default align-super font-body text-[13px] not-italic text-aether-faint">
-      {label}
-      <span className="pointer-events-none absolute bottom-full right-0 z-10 mb-1.5 hidden max-w-[80vw] whitespace-nowrap rounded-lg border border-star-olympian/40 bg-cosmos-raised px-2.5 py-1 font-body text-sm not-italic text-aether group-hover/fn:block sm:max-w-none">
-        {text}
-      </span>
-    </span>
-  );
-}
-
 const CAST_CLAMP = 8;
 const PLACE_CLAMP = 6;
+
+/** A work the story is told in, opening its page in the Library where it holds it. */
+function AttestedWork({ name }: { name: string }) {
+  const href = workLinkNamed(name);
+  if (!href) return <>{name}</>;
+  return (
+    <Link href={href} className="underline decoration-current/35 decoration-dotted underline-offset-[3px] transition-colors hover:text-star-olympian">
+      {name}
+    </Link>
+  );
+}
 
 export function StoryTheatre({
   title,
@@ -128,6 +133,7 @@ export function StoryTheatre({
   parent,
   summaryProse,
   summaryFootnote,
+  summaryPassages,
   chapters,
   cast,
   places,
@@ -139,6 +145,7 @@ export function StoryTheatre({
   parent?: { id: string; title: string };
   summaryProse: ReactNode;
   summaryFootnote: string;
+  summaryPassages?: PassageLink[];
   chapters: TheatreChapter[];
   cast: TheatreCast[];
   places: TheatrePlace[];
@@ -400,8 +407,15 @@ export function StoryTheatre({
               {attestations.map((attestation, index) => (
                 <span key={`${attestation.sourceName}-${attestation.work}`}>
                   {index > 0 && ' · '}
-                  <em>{attestation.work}</em>
-                  {attestation.citation ? ` ${attestation.citation}` : ''}
+                  <em>
+                    <AttestedWork name={attestation.work} />
+                  </em>
+                  {attestation.citation && (
+                    <>
+                      {' '}
+                      <CitationText citation={attestation.citation} work={attestation.work} />
+                    </>
+                  )}
                 </span>
               ))}
             </div>
@@ -417,7 +431,7 @@ export function StoryTheatre({
       <div ref={stageRef} className="max-w-[680px]">
         <p className="border-l-2 border-star-olympian/45 pl-6 font-body text-xl italic leading-relaxed text-aether-muted">
           {summaryProse}
-          <Footnote label="1" text={summaryFootnote} />
+          <Footnote label="1" text={summaryFootnote} passages={summaryPassages} />
         </p>
 
         <div ref={voyageRef} className="relative mt-14 pl-14 sm:pl-24">
@@ -464,7 +478,7 @@ export function StoryTheatre({
               </h3>
               <p className="mt-3 font-body text-[18.5px] leading-[1.66] text-aether/90">
                 {chapter.prose}
-                <Footnote label={String(index + 2)} text={chapter.footnote} />
+                <Footnote label={String(index + 2)} text={chapter.footnote} passages={chapter.passages} />
               </p>
             </section>
           ))}

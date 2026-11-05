@@ -19,6 +19,12 @@ import { buildChronologyYears } from '../src/features/stories/chronology';
 import { loadChronology, loadStories, loadStoryCrossings } from '../src/features/stories/load';
 import { buildRiverLayout, toRiverScene } from '../src/features/stories/river';
 import { toSkyCharacter, type SourcedText } from '../src/types/character';
+import { libraryMarginData } from '../src/features/library/margin-files';
+import { LIBRARY_REGISTRY, workHref } from '../src/features/library/links';
+import { TELLER_ORDER, quarrelHref, shortTeller } from '../src/features/library/paths';
+import type { LibrarySearchEntry } from '../src/features/search/library-match';
+import type { Source } from '../src/types/character';
+import type { QuarrelsFile } from '../src/types/quarrel';
 
 const LINKED_PROSE = join('data', 'generated', 'linked-prose.json');
 const ART_CATALOGUE = join('data', 'generated', 'art-catalogue.json');
@@ -53,8 +59,36 @@ function linked(entries: SourcedText[], segments: ProseSegment[][] | undefined):
   });
 }
 
+/** The Library in ⌘K: its doors, works, tellers and quarrels by name. */
+function librarySearchEntries(sources: Source[]): LibrarySearchEntry[] {
+  const name = (id: string) => shortTeller(sources.find((source) => source.id === id)?.name ?? id);
+  const { quarrels } = JSON.parse(readFileSync(join('data', 'quarrels.json'), 'utf8')) as QuarrelsFile;
+  return [
+    { kind: 'door', title: 'The Library', also: ['Library', 'Bibliotheke', 'texts'], detail: 'The seven tellers, in the original and in English', href: '/library' },
+    { kind: 'door', title: 'The Quarrels', also: ['Quarrels', 'disputes', 'contradictions'], detail: `Where the tellers disagree: ${quarrels.length} quarrels`, href: '/library/quarrels' },
+    ...LIBRARY_REGISTRY.works.map((work): LibrarySearchEntry => ({
+      kind: 'work',
+      title: work.title,
+      also: [work.greekTitle ?? '', ...work.aliases].filter(Boolean),
+      detail: `${name(work.author)} · ${work.composed.label}`,
+      href: workHref(work),
+    })),
+    ...TELLER_ORDER.map((id): LibrarySearchEntry => {
+      const source = sources.find((candidate) => candidate.id === id);
+      return { kind: 'teller', title: name(id), also: source && source.name !== name(id) ? [source.name] : [], detail: `A teller · ${source?.period ?? ''}`, href: `/library/${id}` };
+    }),
+    ...quarrels.map((quarrel): LibrarySearchEntry => ({
+      kind: 'quarrel',
+      title: quarrel.title,
+      also: [],
+      detail: [...new Set(quarrel.claims.flatMap((claim) => claim.sources))].map(name).join(' · '),
+      href: quarrelHref(quarrel.topic),
+    })),
+  ];
+}
+
 async function main() {
-  const [{ characters, relations }, bakedLayout, ephemeris, stories, crossings, chronology] = await Promise.all([
+  const [{ characters, relations, sources }, bakedLayout, ephemeris, stories, crossings, chronology] = await Promise.all([
     loadAtlasData(),
     loadBakedLayout(),
     buildEphemerisData(),
@@ -75,6 +109,7 @@ async function main() {
   const river = toRiverScene(buildRiverLayout(stories, buildChronologyYears(stories, chronology), crossings));
 
   write(ATLAS_FILES.searchIndex, characters.map(toSearchable));
+  write(ATLAS_FILES.librarySearch, librarySearchEntries(sources));
   write(ATLAS_FILES.ephemeris, ephemeris);
   write(ATLAS_FILES.galaxy, { characters: characters.map(toSkyCharacter), relations, bakedLayout });
   write(ATLAS_FILES.myths, {
@@ -105,7 +140,23 @@ async function main() {
   for (const file of readdirSync(starsDir)) {
     if (!current.has(file)) rmSync(join(starsDir, file));
   }
-  console.log(`Baked the atlas data → public/atlas/ (${characters.length} stars, ${stories.length} stories)`);
+  // The Library's margins: per reading page an index and its notes in chunks,
+  // written in place like the stars; then whatever no page has any more goes.
+  const { files: margins } = await libraryMarginData();
+  const marginsDir = join('public', 'atlas', 'library');
+  for (const [path, file] of margins) write(`/atlas/library/${path}`, file);
+  for (const work of readdirSync(marginsDir, { withFileTypes: true })) {
+    if (!work.isDirectory()) {
+      rmSync(join(marginsDir, work.name));
+      continue;
+    }
+    for (const name of readdirSync(join(marginsDir, work.name))) {
+      if (!margins.has(`${work.name}/${name}`)) rmSync(join(marginsDir, work.name, name), { recursive: true });
+    }
+  }
+  const marginPages = [...margins.keys()].filter((path) => !/-\d+\.json$/.test(path)).length;
+
+  console.log(`Baked the atlas data → public/atlas/ (${characters.length} stars, ${stories.length} stories, ${marginPages} Library margins in ${margins.size - marginPages} chunks)`);
 }
 
 main();

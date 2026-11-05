@@ -1,10 +1,9 @@
 'use client';
 
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import type { Relation, SkyCharacter, Source } from '@/types/character';
-import { computePositions, type Vec3 } from '@/features/galaxy/layout';
-import { layoutSignature } from '@/features/galaxy/layoutSignature';
 import type { BakedLayout } from '@/features/characters/load';
+import { useGalaxyPositions } from '@/features/galaxy/usePositions';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
@@ -48,30 +47,10 @@ export function GalaxyView({
   /** Drift-in overview on mount — used for city skies. */
   cameraIntro?: boolean;
 }) {
-  const positions = useMemo(() => {
-    if (
-      layout === 'galaxy' &&
-      bakedLayout &&
-      bakedLayout.signature === layoutSignature(characters, relations)
-    ) {
-      const map = new Map<string, Vec3>();
-      for (const id in bakedLayout.positions) map.set(id, bakedLayout.positions[id]);
-      return map;
-    }
-    return computePositions(characters, relations, { compact: layout === 'compact' });
-  }, [characters, relations, layout, bakedLayout]);
-  const spacingScale = useGalaxyStore((s) => s.spacingScale);
+  const scaledPositions = useGalaxyPositions(characters, relations, bakedLayout, layout);
+  const positions = scaledPositions;
   const setDiving = useGalaxyStore((s) => s.setDiving);
   const setSearchOpen = useGalaxyStore((s) => s.setSearchOpen);
-
-  const scaledPositions = useMemo(() => {
-    if (spacingScale === 1.0) return positions;
-    const scaled = new Map<string, typeof positions extends Map<string, infer V> ? V : never>();
-    for (const [id, [x, y, z]] of positions) {
-      scaled.set(id, [x * spacingScale, y * spacingScale, z * spacingScale]);
-    }
-    return scaled;
-  }, [positions, spacingScale]);
 
   useAtlasSearchHotkey();
 

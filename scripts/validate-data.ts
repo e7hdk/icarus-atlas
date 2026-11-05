@@ -24,7 +24,9 @@ import {
   festivalSchema,
   sacredDaysSchema,
   constellationsFileSchema,
+  quarrelsFileSchema,
 } from '../src/lib/schemas';
+import { renderQuarrelsDoc } from './lib/quarrels-doc';
 import { CREATURE_KINDS, NYMPH_KINDS, type Character, type Relation } from '../src/types/character';
 import type { ArtOverrides, ArtPattern } from '../src/types/art';
 import type { Story } from '../src/types/story';
@@ -37,6 +39,7 @@ import { readArtCommons, readArtOverrides, readArtPatterns, readShelfEntries } f
 
 const DATA_DIR = join(import.meta.dirname, '..', 'data');
 const CONTRADICTIONS_PATH = join(import.meta.dirname, '..', 'docs', 'CONTRADICTIONS.md');
+const QUARRELS_PATH = join(DATA_DIR, 'quarrels.json');
 /** Flagship city lineages — reign characterIds must carry matching residences. */
 const FLAGSHIP_CITIES = new Set(['thebes', 'mycenae', 'argos', 'athens', 'sparta', 'troy']);
 /** Lands map camera limits — docs/LANDS_PLAN.md §3.1. */
@@ -808,17 +811,38 @@ if (existsSync(voyageDir)) {
   }
 }
 
-// 7. Every disputed topic must be documented before it can surface in the UI.
-const contradictions = readFileSync(CONTRADICTIONS_PATH, 'utf-8');
-const documentedTopics = new Set(
-  [...contradictions.matchAll(/\*\*topic\*\*: `([^`]+)`/g)].map((match) => match[1]),
-);
+// 7. Every disputed topic must be documented before it can surface in the UI: a
+//    quarrel in data/quarrels.json (docs/LIBRARY_PLAN.md §4.7), whose figures and
+//    places exist, and docs/CONTRADICTIONS.md is written from them (pnpm quarrels:doc).
+const documentedTopics = new Set<string>();
+let quarrelCount = 0;
+{
+  const parsed = quarrelsFileSchema.safeParse(JSON.parse(readFileSync(QUARRELS_PATH, 'utf-8')));
+  if (!parsed.success) {
+    for (const issue of parsed.error.issues) errors.push(`quarrels.json: ${issue.path.join('.')}: ${issue.message}`);
+  } else {
+    for (const quarrel of parsed.data.quarrels) {
+      if (documentedTopics.has(quarrel.topic)) errors.push(`quarrels.json: the topic "${quarrel.topic}" is a quarrel twice`);
+      documentedTopics.add(quarrel.topic);
+      for (const id of quarrel.characters) {
+        if (!charIds.has(id)) errors.push(`quarrels.json: "${quarrel.topic}" names the figure "${id}", which does not exist`);
+      }
+      for (const id of quarrel.places ?? []) {
+        if (!placeIds.has(id)) errors.push(`quarrels.json: "${quarrel.topic}" names the place "${id}", which does not exist`);
+      }
+    }
+    quarrelCount = parsed.data.quarrels.length;
+    if (readFileSync(CONTRADICTIONS_PATH, 'utf-8') !== renderQuarrelsDoc(parsed.data)) {
+      errors.push('docs/CONTRADICTIONS.md is behind data/quarrels.json: run pnpm quarrels:doc');
+    }
+  }
+}
 
 for (const [topic, entries] of topics) {
   if (entries.length > 1) {
     info.push(`disputed topic "${topic}": ${entries.join(' vs ')}`);
     if (!documentedTopics.has(topic)) {
-      errors.push(`disputed topic "${topic}" is missing from docs/CONTRADICTIONS.md`);
+      errors.push(`disputed topic "${topic}" is missing from data/quarrels.json`);
     }
   }
 }
@@ -1096,7 +1120,7 @@ console.log(
   `Art catalogue: ${artCatalogue.works.length} works from ${artEntries.length} shelf entries, ${artPatterns.length} Patterns.`,
 );
 console.log(
-  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Constellations: ${constellationCount} · Disputed topics: ${info.length}`,
+  `Sources: ${sourceIds.size} · Characters: ${charIds.size} · Reference: ${referenceCount} · Culture: ${cultureCount} · Story culture: ${storyCultureCount} · Regions: ${regionIds.size} · Places: ${placeIds.size} · Features: ${featureCount} · Cities: ${cityIds.size} · Lineages: ${lineageCount} · Stories: ${storyCount} · Crossings: ${crossingCount} · Voyages: ${voyageCount} · Chronology anchors: ${chronologyAnchorCount} · Spotlight pins/exclusions: ${spotlightPins}/${spotlightExclusions} · Curated weeks: ${curatedWeeks} · Festivals: ${festivalCount} · Sacred days: ${sacredDayCount} · Constellations: ${constellationCount} · Disputed topics: ${info.length} · Quarrels: ${quarrelCount}`,
 );
 for (const line of info) console.log(`  ⚖ ${line}`);
 

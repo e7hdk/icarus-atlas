@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { pickSourced } from '@/lib/lens';
+import { quarrelHref } from '@/features/library/paths';
+import { CitationText } from '@/components/ui/CitationText';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { atticDateFor, sacredDayFor } from '@/features/spotlight/attic';
 import { isoDateAtIndex } from '@/features/spotlight/calendar';
@@ -376,7 +378,15 @@ export function ProemOverlay() {
                 </p>
                 {telling.citation && (
                   <p className="mt-5 font-display text-[10px] uppercase tracking-[0.3em] text-aether-faint">
-                    — {telling.citation}
+                    —{' '}
+                    <CitationText
+                      citation={telling.citation}
+                      sources={telling.sources}
+                      onFollow={(event) => {
+                        event.stopPropagation();
+                        leaveStage();
+                      }}
+                    />
                   </p>
                 )}
               </div>
@@ -411,6 +421,17 @@ export function ProemOverlay() {
                     </p>
                   ))}
                 </div>
+                <Link
+                  href={quarrelHref(beat.topic)}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    leaveStage();
+                  }}
+                  className="mt-7 inline-block font-display text-[10px] uppercase tracking-[0.3em] text-nebula-soft/90 transition-colors hover:text-nebula-soft motion-safe:[animation:proem-fade-up_600ms_ease_both]"
+                  style={{ animationDelay: `${150 + beat.variants.length * 200}ms`, textShadow: PROSE_INK }}
+                >
+                  ⚖ Read the quarrel in the Library →
+                </Link>
               </div>
             )}
 

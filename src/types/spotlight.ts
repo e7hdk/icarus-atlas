@@ -244,7 +244,7 @@ export type ProemBeat =
   | { kind: 'invocation'; line: string }
   | { kind: 'thread'; steps: ProemBond[] }
   | { kind: 'telling'; summary: SourcedText[] }
-  | { kind: 'quarrel'; variants: ProemQuarrelVariant[] }
+  | { kind: 'quarrel'; topic: string; variants: ProemQuarrelVariant[] }
   | { kind: 'trace'; artwork: Pick<Artwork, 'title' | 'artist' | 'year' | 'imageUrl' | 'credit'> };
 
 /** A staged telling, assembled purely from existing sourced data (D12). */

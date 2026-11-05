@@ -1,3 +1,4 @@
+import { citationLinks } from '@/features/library/links';
 import { SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import type {
   ArtPattern,
@@ -125,7 +126,9 @@ export function buildDoorData(
           const footnote = sources
             ? `${sources.map((id) => sourceNames[id] ?? id).join(' · ')}${citation ? ` — ${citation}` : ''}`
             : undefined;
-          return [{ work: index, note, footnote, evidence }];
+          // and where the Library reads it (docs/LIBRARY_PLAN.md §9)
+          const passages = citation ? citationLinks(citation, { sources }) : [];
+          return [{ work: index, note, footnote, evidence, ...(passages.length ? { passages } : {}) }];
         }),
         members: (pattern.members ?? []).flatMap((work) => workIndex.get(work) ?? []),
       }),

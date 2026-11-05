@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icarus Atlas — Library C: First, Chaos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="shared/library-chrome.css">
+<style>
+  /* ============ LIBRARY C — FIRST, CHAOS ============
+     The Theogony read with the sky (docs/LIBRARY_PLAN.md §8), a satellite of
+     the Library as /odyssey is of Myths, so no door is lit. The atlas's own
+     1,487 stars at their baked positions, seen from the galaxy's home view,
+     all dark. As Hesiod sings, the figures he names ignite in his order and
+     the parent lines he gives draw in. At the end the lens turns to Homer. */
+  body { background: #05020f; }
+  #sky { position: fixed; inset: 0; z-index: 0; width: 100vw; height: 100vh; display: block; }
+  .nebula { position: fixed; inset: 0; z-index: 0; pointer-events: none; background:
+    radial-gradient(40% 32% at 66% 46%, rgba(124,77,255,.10), transparent 70%),
+    radial-gradient(30% 24% at 78% 30%, rgba(0,229,255,.04), transparent 70%),
+    radial-gradient(36% 30% at 58% 70%, rgba(255,64,129,.04), transparent 70%); }
+  .column { position: relative; z-index: 2; width: 500px; padding: 0 40px 0 64px; }
+  .veil { position: fixed; z-index: 1; left: 0; top: 0; bottom: 0; width: 600px; pointer-events: none;
+    background: linear-gradient(90deg, rgba(5,2,15,.9) 0%, rgba(5,2,15,.82) 62%, rgba(5,2,15,0) 100%); }
+
+  .title { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding-top: 40px; }
+  .title h1 { margin-top: 12px; font: 700 46px var(--display); letter-spacing: .14em; text-shadow: 0 0 18px rgba(192,132,252,.4), 0 0 60px rgba(192,132,252,.16); }
+  .title .sub { margin-top: 6px; font: italic 20px var(--body); color: var(--muted); }
+  .title .incipit { margin-top: 30px; padding: 20px 22px 16px; border: 1px solid rgba(252,211,77,.22); background: rgba(20,12,48,.4); }
+  .title .incipit .g { font: 400 19px/1.55 var(--greek); color: #fde68a; }
+  .title .incipit .e { margin-top: 6px; font: italic 17px var(--body); color: rgba(241,245,249,.86); }
+  .title .incipit .c { margin-top: 8px; font: 400 9px var(--display); letter-spacing: .24em; color: var(--faint); }
+  .title .meta { margin-top: 26px; display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 6px 28px; }
+  .title .meta div { font: 400 8.5px var(--display); letter-spacing: .22em; color: var(--faint); }
+  .title .meta b { display: block; margin-top: 2px; font: 500 21px var(--body); letter-spacing: 0; color: var(--aether); }
+  .title .begin { margin-top: 36px; font: 400 10px var(--display); letter-spacing: .3em; color: var(--gold); animation: nudge 2.6s ease-in-out infinite; }
+  @keyframes nudge { 0%, 100% { transform: translateY(0); opacity: .7; } 50% { transform: translateY(5px); opacity: 1; } }
+
+  .beat { position: relative; padding: 46px 0 50px; }
+  .beat + .beat { border-top: 1px solid rgba(255,255,255,.06); }
+  .beat .lines { font: 400 9.5px var(--display); letter-spacing: .26em; color: var(--faint); transition: color .4s; }
+  .beat.now .lines { color: var(--gold); }
+  .beat h2 { margin-top: 6px; font: 600 23px var(--display); letter-spacing: .08em; line-height: 1.25; }
+  .beat .gr { margin-top: 16px; font: 400 16.5px/1.62 var(--greek); color: rgba(253,230,138,.9); }
+  .beat .gr div { display: grid; grid-template-columns: 30px 1fr; }
+  .beat .gr i { font: 400 9.5px/2.6 var(--display); font-style: normal; color: rgba(252,211,77,.4); }
+  .beat .en { margin-top: 16px; font: 400 18px/1.7 var(--body); color: rgba(241,245,249,.86); }
+  .beat .ign { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .beat .ign > span:first-child { font: 400 8.5px var(--display); letter-spacing: .24em; color: var(--faint); margin-right: 4px; }
+  .beat .ign a { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 8px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--c) 40%, transparent);
+    background: color-mix(in srgb, var(--c) 10%, transparent); font-size: 14px; color: var(--aether); text-decoration: none; }
+  .beat .ign a i { width: 6px; height: 6px; border-radius: 50%; background: var(--c); box-shadow: 0 0 6px var(--c); }
+  .beat .ign em { font-size: 14px; color: var(--faint); }
+
+  .finale { padding: 60px 0 40vh; }
+  .finale .frag { margin-top: 20px; padding: 22px 22px 18px; border: 1px solid rgba(252,211,77,.3); background: rgba(20,12,48,.55); }
+  .finale h2 { font: 600 22px var(--display); letter-spacing: .1em; color: var(--gold); text-shadow: 0 0 14px rgba(252,211,77,.4); }
+  .finale .side { display: grid; gap: 14px; margin-top: 14px; }
+  .finale .side .who { font: 400 9px var(--display); letter-spacing: .24em; color: var(--soft); }
+  .finale .side .g { margin-top: 4px; font: 400 16px/1.55 var(--greek); color: #fde68a; }
+  .finale .side .e { margin-top: 3px; font: italic 16.5px/1.5 var(--body); color: rgba(241,245,249,.86); }
+  .finale .side .e small { display: block; margin-top: 2px; font: normal 400 8.5px var(--display); letter-spacing: .2em; color: var(--faint); }
+  .lens { display: flex; gap: 4px; margin-top: 18px; padding: 4px; border: 1px solid var(--glass-border); background: var(--glass); border-radius: 999px; width: max-content; }
+  .lens button { border: 1px solid transparent; background: none; color: var(--muted); padding: 7px 14px; border-radius: 999px; cursor: pointer; font: 400 9.5px var(--display); letter-spacing: .18em; }
+  .lens button.on { border-color: rgba(252,211,77,.5); background: rgba(252,211,77,.12); color: var(--gold); }
+  .finale .after { margin-top: 22px; font-size: 17px; line-height: 1.6; color: var(--muted); }
+  .finale .doors2 { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+  .finale .doors2 a { font: 400 10px var(--display); letter-spacing: .22em; color: var(--gold); text-decoration: none; padding: 9px 14px; border: 1px solid rgba(252,211,77,.35); border-radius: 999px; }
+
+  .thread { position: fixed; z-index: 3; left: 26px; top: 120px; bottom: 60px; width: 2px; background: rgba(255,255,255,.08); border-radius: 2px; }
+  .thread .fill { position: absolute; left: 0; top: 0; width: 100%; background: linear-gradient(180deg, var(--soft), var(--gold)); box-shadow: 0 0 10px rgba(252,211,77,.45); border-radius: 2px; transition: height .4s; }
+  .thread .tick { position: absolute; left: -3px; width: 8px; height: 1px; background: rgba(255,255,255,.3); }
+  .thread .lbl { position: absolute; left: 12px; transform: translateY(-50%); font: 400 8px var(--display); letter-spacing: .2em; color: var(--faint); white-space: nowrap; }
+  .hud { position: fixed; z-index: 3; right: 24px; bottom: 54px; text-align: right; pointer-events: none; }
+  .hud .n { font: 500 34px var(--body); color: var(--aether); text-shadow: 0 0 20px rgba(192,132,252,.5); }
+  .hud .l { font: 400 9px var(--display); letter-spacing: .26em; color: var(--faint); }
+  .hud .lensname { margin-top: 10px; font: 400 9.5px var(--display); letter-spacing: .24em; color: var(--gold); }
+
+  /* Phone: the sky above, the poem below — the galaxy keeps the top of the
+     screen and the text scrolls in its own pane, so a long beat never hides
+     what it lights. */
+  @media (max-width: 760px) {
+    .veil { display: none; }
+    .column { position: fixed; top: 40svh; bottom: 0; left: 0; right: 0; width: auto; overflow-y: auto; overflow-x: hidden; padding: 0 18px 0 32px;
+      background: rgba(5,2,15,.95); border-top: 1px solid rgba(252,211,77,.35); box-shadow: 0 -24px 44px rgba(5,2,15,.75); border-radius: 14px 14px 0 0; }
+    .title { min-height: auto; padding: 24px 0 30px; justify-content: flex-start; }
+    .title h1 { font-size: 30px; }
+    .title .sub { font-size: 17px; }
+    .title .incipit { margin-top: 18px; }
+    .title .meta { gap: 6px 18px; margin-top: 18px; }
+    .title .begin { margin-top: 20px; }
+    .beat { padding: 28px 0 32px; }
+    .beat h2 { font-size: 20px; }
+    .beat .en { font-size: 17px; }
+    .finale { padding: 40px 0 30svh; }
+    .thread { left: 13px; top: calc(40svh + 18px); bottom: 18px; }
+    .thread .lbl { display: none; }
+    .hud { right: 14px; bottom: auto; top: calc(40svh - 78px); }
+    .hud .n { font-size: 26px; }
+  }
+</style>
+</head>
+<body data-door="none">
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="nebula"></div>
+<div class="veil"></div>
+<div class="thread" id="thread"><div class="fill" id="fill"></div></div>
+<div class="hud" aria-live="polite"><div class="n" id="litn">0</div><div class="l" id="litl">STARS LIT</div><div class="lensname" id="lensname">AS HESIOD SINGS IT</div></div>
+
+<main class="column" id="column">
+  <section class="title">
+    <p class="kicker">The Library · a reading with the sky</p>
+    <h1>FIRST, CHAOS</h1>
+    <p class="sub">The Theogony of Hesiod, read with the sky</p>
+    <div class="incipit gilded">
+      <div class="g greek">ἤτοι μὲν πρώτιστα Χάος γένετ᾽</div>
+      <div class="e">“Verily at the first Chaos came to be…”</div>
+      <div class="c">THEOGONY 116 · EVELYN-WHITE</div>
+    </div>
+    <div class="meta" id="meta"></div>
+    <p class="begin">SCROLL, AND BEGIN WITH THE MUSES ↓</p>
+  </section>
+  <div id="beats"></div>
+  <section class="finale" id="finale">
+    <p class="kicker">The first quarrel</p>
+    <div class="frag gilded">
+      <h2>NOW AS HOMER TELLS IT</h2>
+      <div class="side">
+        <div><p class="who">HESIOD · THEOGONY 190–191</p><p class="g greek" id="hg"></p><p class="e">“…and a white foam spread around them from the immortal flesh, and in it there grew a maiden.”<small>EVELYN-WHITE</small></p></div>
+        <div><p class="who">HOMER · ILIAD 5.370–371</p><p class="g greek" id="og"></p><p class="e">“…fair Aphrodite flung herself upon the knees of her mother Dione.”<small>MURRAY</small></p></div>
+      </div>
+      <div class="lens" role="group" aria-label="Lens"><button data-lens="hesiod">AS HESIOD SINGS IT</button><button data-lens="homer">AS HOMER TELLS IT</button></div>
+    </div>
+    <p class="after">Under Homer the stars he never names sink back, and Aphrodite's line leaves the foam of Uranus for her father Zeus and her mother Dione. The atlas keeps both: the quarrel is the subject.</p>
+    <div class="doors2"><a href="#">⚖ THE QUARREL: APHRODITE'S BIRTH</a><a href="library-b-reading-room.html">READ ILIAD 5 →</a><a href="library-a-shelf.html">THE LIBRARY</a></div>
+  </section>
+</main>
+<span class="mockflag"><b>Mockup C</b> · First, Chaos · the atlas's own stars</span>
+
+<script src="shared/library-chrome.js"></script>
+<script src="shared/library-theogony.js"></script>
+<script>
+(function () {
+  const T = window.THEOGONY;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const phone = () => matchMedia('(max-width: 760px)').matches;
+  const COLOR = { primordial: '#c084fc', titan: '#fb7185', olympian: '#fcd34d', god: '#60a5fa', hero: '#2dd4bf', mortal: '#e5e7eb', nymph: '#4ade80', creature: '#f472b6' };
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+
+  // ---- the stars and the camera of the galaxy's home view
+  const stars = T.stars.map((s) => ({ ...s, x: s.p[0], y: s.p[1], z: s.p[2], glow: 0.05, target: 0.05, flare: 0, sx: 0, sy: 0, depth: 1 }));
+  const byId = new Map(stars.map((s) => [s.id, s]));
+  const radii = stars.map((s) => Math.hypot(s.x, s.z)).sort((a, b) => a - b);
+  const disc = radii[Math.floor(radii.length * 0.95)];
+  const HOME = [18, 43, 88], HL = Math.hypot(...HOME);
+  const cam = HOME.map((v) => v / HL * 2.1 * disc);
+  const norm = (v) => { const l = Math.hypot(...v); return v.map((x) => x / l); };
+  const f = norm(cam.map((v) => -v));
+  const r = norm([f[1] * 0 - f[2] * 1, f[2] * 0 - f[0] * 0, f[0] * 1 - f[1] * 0]);
+  const u = [r[1] * f[2] - r[2] * f[1], r[2] * f[0] - r[0] * f[2], r[0] * f[1] - r[1] * f[0]];
+  const edges = T.edges.map(([child, parent, hes, hom, topic]) => ({ a: byId.get(parent), b: byId.get(child), hes, hom, topic, alpha: 0, target: 0, born: 0 })).filter((e) => e.a && e.b);
+
+  // ---- the column
+  const firstLit = new Map();
+  T.beats.forEach((b, k) => b.ignite.forEach((id) => { if (!firstLit.has(id)) firstLit.set(id, k); }));
+  document.getElementById('meta').innerHTML = `<div>LINES<b>1,022</b></div><div>FIGURES<b>${firstLit.size}</b></div><div>BEATS<b>${T.beats.length}</b></div>`;
+  document.getElementById('beats').innerHTML = T.beats.map((b, k) => {
+    const mine = b.ignite.filter((id) => firstLit.get(id) === k);
+    const shown = mine.slice(0, 14).map((id) => { const s = byId.get(id); return `<a href="#" style="--c:${COLOR[s.t]}"><i></i>${esc(s.n)}</a>`; }).join('');
+    return `<section class="beat" data-k="${k}"><p class="lines">LINES ${b.from}–${b.to}</p><h2>${esc(b.title)}</h2>
+      <div class="gr greek" lang="grc">${b.greek.map(([n, t]) => `<div><i>${n}</i><span>${esc(t)}</span></div>`).join('')}</div>
+      <p class="en">${esc(b.english)}</p>
+      ${mine.length ? `<div class="ign"><span>IGNITES</span>${shown}${mine.length > 14 ? `<em>and ${mine.length - 14} more</em>` : ''}</div>` : `<div class="ign"><span>NO NEW STAR · THE CAST FLARES</span></div>`}</section>`;
+  }).join('');
+  const aph = T.beats.find((b) => b.from === 188);
+  document.getElementById('hg').textContent = aph.greek.filter(([n]) => n >= 190 && n <= 191).map(([, t]) => t).join(' ');
+  document.getElementById('og').textContent = 'ἣ δ᾽ ἐν γούνασι πῖπτε Διώνης δῖ᾽ Ἀφροδίτη μητρὸς ἑῆς·';
+
+  // the thread of lines read
+  const thread = document.getElementById('thread');
+  for (const b of T.beats) {
+    const t = document.createElement('div'); t.className = 'tick'; t.style.top = (b.from / 1022 * 100) + '%'; thread.appendChild(t);
+    if ([1, 116, 188, 453, 617, 820, 881].includes(b.from)) { const l = document.createElement('div'); l.className = 'lbl'; l.style.top = (b.from / 1022 * 100) + '%'; l.textContent = b.from; thread.appendChild(l); }
+  }
+
+  // ---- state
+  let beat = -1, lens = 'hesiod', userLens = null;
+  const labels = [];
+  const view = { cx: 0, cy: 0, zoom: 1, tx: 0, ty: 0, tz: 1 };
+  function litSet(k) { const s = new Set(); for (let i = 0; i <= k; i++) for (const id of T.beats[i].ignite) s.add(id); return s; }
+  function apply(now) {
+    const lit = beat >= 0 ? litSet(beat) : new Set();
+    for (const s of stars) {
+      const on = lit.has(s.id);
+      if (on && s.target <= 0.06) { s.flare = 1; if (firstLit.get(s.id) === beat) labels.push({ s, until: now + 2600 }); }
+      s.target = on ? (lens === 'homer' && !s.h ? 0.18 : 1) : 0.05;
+    }
+    if (beat >= 0) for (const id of T.beats[beat].cast) { const s = byId.get(id); if (s && lit.has(id)) s.flare = Math.max(s.flare, .6); }
+    for (const e of edges) {
+      const both = lit.has(e.a.id) && lit.has(e.b.id);
+      const want = both && (lens === 'homer' ? e.hom : e.hes) ? 1 : 0;
+      if (want && !e.target) e.born = now;
+      e.target = want;
+    }
+    // the camera leans toward what is being sung
+    const ids = beat >= 0 ? T.beats[beat].ignite.filter((id) => firstLit.get(id) === beat) : [];
+    const pts = ids.map((id) => byId.get(id)).filter(Boolean);
+    if (pts.length && !reduce) {
+      const mx = pts.reduce((a, s) => a + s.sx, 0) / pts.length, my = pts.reduce((a, s) => a + s.sy, 0) / pts.length;
+      view.tx = (view.cx - mx) * 0.45; view.ty = (view.cy - my) * 0.45; view.tz = pts.length < 8 ? 1.25 : 1.08;
+    } else if (!pts.length) { view.tx = 0; view.ty = 0; view.tz = 1; }
+    document.getElementById('lensname').textContent = lens === 'homer' ? 'AS HOMER TELLS IT' : 'AS HESIOD SINGS IT';
+    document.querySelectorAll('.lens button').forEach((b) => b.classList.toggle('on', b.dataset.lens === lens));
+  }
+
+  // ---- scroll: the beat under the reading line
+  const sections = () => [...document.querySelectorAll('.beat')];
+  const finale = document.getElementById('finale');
+  let raf = 0;
+  function trace() {
+    raf = 0;
+    const y = innerHeight * (phone() ? 0.62 : 0.45);
+    let k = -1;
+    sections().forEach((s, i) => { if (s.getBoundingClientRect().top < y) k = i; });
+    const inFinale = finale.getBoundingClientRect().top < y;
+    const wantLens = userLens ?? (inFinale ? 'homer' : 'hesiod');
+    if (k !== beat || wantLens !== lens) {
+      beat = k; lens = wantLens;
+      sections().forEach((s, i) => s.classList.toggle('now', i === k));
+      apply(performance.now());
+    }
+    const line = k < 0 ? 0 : inFinale ? 1022 : T.beats[k].to;
+    document.getElementById('fill').style.height = (line / 1022 * 100) + '%';
+  }
+  const onScroll = () => { if (!raf) raf = requestAnimationFrame(trace); };
+  addEventListener('scroll', onScroll, { passive: true });
+  document.getElementById('column').addEventListener('scroll', onScroll, { passive: true });
+  document.querySelectorAll('.lens button').forEach((b) => b.onclick = () => { userLens = b.dataset.lens; trace(); apply(performance.now()); });
+
+  // ---- drawing
+  const cv = document.getElementById('sky'), ctx = cv.getContext('2d');
+  let W = 0, H = 0, dpr = 1, focal = 1, rot = 0, last = performance.now();
+  const sprites = {};
+  for (const [t, c] of Object.entries(COLOR)) {
+    const s = document.createElement('canvas'); s.width = s.height = 64; const g = s.getContext('2d');
+    const rg = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    rg.addColorStop(0, 'rgba(255,255,255,1)'); rg.addColorStop(.12, 'rgba(255,255,255,.95)'); rg.addColorStop(.22, c); rg.addColorStop(.5, c + '55'); rg.addColorStop(1, c + '00');
+    g.fillStyle = rg; g.fillRect(0, 0, 64, 64); sprites[t] = s;
+  }
+  function resize() {
+    dpr = Math.min(2, devicePixelRatio || 1); W = innerWidth; H = innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    focal = (H / 2) / Math.tan(25 * Math.PI / 180);
+    view.cx = phone() ? W / 2 : 500 + (W - 500) / 2; view.cy = phone() ? 56 + (H * 0.4 - 56) / 2 : H / 2;
+  }
+  function project(now) {
+    const c = Math.cos(rot), s = Math.sin(rot), z = view.zoom;
+    for (const st of stars) {
+      const x = st.x * c - st.z * s, zz = st.x * s + st.z * c, y = st.y;
+      const vx = x - cam[0], vy = y - cam[1], vz = zz - cam[2];
+      const d = vx * f[0] + vy * f[1] + vz * f[2];
+      const px = vx * r[0] + vy * r[1] + vz * r[2], py = vx * u[0] + vy * u[1] + vz * u[2];
+      const k = focal / d * (phone() ? 0.42 : 0.8) * z;
+      st.sx = view.cx + view.ox + px * k; st.sy = view.cy + view.oy - py * k; st.depth = Math.max(.45, Math.min(1.6, 2.1 * disc / d));
+    }
+  }
+  view.ox = 0; view.oy = 0;
+  function frame(now) {
+    const dt = Math.min(.05, (now - last) / 1000); last = now;
+    if (!reduce) rot += dt * 0.01;
+    const ease = reduce ? 1 : 1 - Math.pow(0.04, dt);
+    view.ox += (view.tx - view.ox) * ease * .6; view.oy += (view.ty - view.oy) * ease * .6; view.zoom += (view.tz - view.zoom) * ease * .6;
+    project(now);
+    ctx.clearRect(0, 0, W, H);
+    // lines
+    ctx.lineCap = 'round';
+    for (const e of edges) {
+      e.alpha += (e.target - e.alpha) * (reduce ? 1 : Math.min(1, dt * 3));
+      if (e.alpha < 0.01) continue;
+      const grow = reduce ? 1 : Math.min(1, (now - e.born) / 900);
+      const x2 = e.a.sx + (e.b.sx - e.a.sx) * grow, y2 = e.a.sy + (e.b.sy - e.a.sy) * grow;
+      const hot = e.topic === 'aphrodite-parentage' && beat >= 0 && document.getElementById('finale').getBoundingClientRect().top < innerHeight;
+      ctx.strokeStyle = hot ? `rgba(252,211,77,${(.85 * e.alpha).toFixed(3)})` : `${COLOR[e.b.t]}${Math.round(e.alpha * 70).toString(16).padStart(2, '0')}`;
+      ctx.lineWidth = hot ? 1.8 : .8;
+      ctx.beginPath(); ctx.moveTo(e.a.sx, e.a.sy); ctx.lineTo(x2, y2); ctx.stroke();
+    }
+    // stars
+    for (const st of stars) {
+      st.glow += (st.target - st.glow) * (reduce ? 1 : Math.min(1, dt * 2.4));
+      st.flare = reduce ? 0 : Math.max(0, st.flare - dt * 0.9);
+      if (st.glow < 0.08) {
+        ctx.fillStyle = 'rgba(176,186,220,.26)'; ctx.fillRect(st.sx, st.sy, 1.4 * st.depth, 1.4 * st.depth); continue;
+      }
+      const size = (7 + 9 * st.glow + 26 * st.flare) * st.depth * view.zoom;
+      ctx.globalAlpha = Math.min(1, st.glow * .95 + st.flare * .4);
+      ctx.drawImage(sprites[st.t], st.sx - size / 2, st.sy - size / 2, size, size);
+      ctx.globalAlpha = 1;
+    }
+    // names, for a moment, as they are sung
+    ctx.font = 'italic 14px "Cormorant Garamond", serif'; ctx.textBaseline = 'middle';
+    for (let i = labels.length - 1; i >= 0; i--) {
+      const l = labels[i], left = l.until - now;
+      if (left <= 0 || l.s.target <= 0.06) { labels.splice(i, 1); continue; }
+      ctx.globalAlpha = Math.min(1, left / 700) * .9;
+      ctx.fillStyle = COLOR[l.s.t]; ctx.fillText(l.s.n, l.s.sx + 9, l.s.sy - 9);
+    }
+    // in the finale the quarrel names itself: Aphrodite, and whoever her parents are under this lens
+    if (finale.getBoundingClientRect().top < innerHeight) {
+      const names = lens === 'homer' ? [['aphrodite', 16], ['zeus', 14], ['dione', 14]] : [['aphrodite', 16], ['uranus', 14]];
+      for (const [id, px] of names) {
+        const s = byId.get(id); if (!s || s.glow < .5) continue;
+        ctx.globalAlpha = .95; ctx.fillStyle = id === 'aphrodite' ? '#fcd34d' : '#fde68a'; ctx.font = `italic ${px}px "Cormorant Garamond", serif`; ctx.fillText(s.n, s.sx + 11, s.sy - 11);
+      }
+    }
+    ctx.globalAlpha = 1;
+    document.getElementById('litn').textContent = stars.filter((s) => s.target > .5).length;
+    document.getElementById('litl').textContent = lens === 'homer' ? 'OF THEM HOMER NAMES' : 'STARS LIT';
+    requestAnimationFrame(frame);
+  }
+  addEventListener('resize', () => { resize(); });
+  resize(); project(performance.now()); trace(); requestAnimationFrame(frame);
+  // ?beat=6 opens the page at that beat (for screenshots and review)
+  const qb = new URLSearchParams(location.search).get('beat');
+  if (qb !== null) requestAnimationFrame(() => {
+    const s = qb === 'end' ? finale : sections()[+qb]; if (!s) return;
+    if (phone()) { const col = document.getElementById('column'); col.scrollTop = s.offsetTop - col.clientHeight * 0.12; }
+    else scrollTo(0, s.getBoundingClientRect().top + scrollY - innerHeight * 0.3);
+  });
+})();
+</script>
+</body>
+</html>

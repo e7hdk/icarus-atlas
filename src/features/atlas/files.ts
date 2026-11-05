@@ -5,6 +5,8 @@
 export const ATLAS_FILES = {
   ephemeris: '/atlas/ephemeris.json',
   searchIndex: '/atlas/search-index.json',
+  /** The Library's works, tellers and quarrels, for ⌘K. */
+  librarySearch: '/atlas/library-search.json',
   galaxy: '/atlas/galaxy.json',
   myths: '/atlas/myths.json',
   lands: '/atlas/lands.json',

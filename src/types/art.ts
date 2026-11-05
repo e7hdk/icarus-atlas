@@ -1,4 +1,5 @@
 import type { SagaId } from '@/features/stories/sagas';
+import type { PassageLink } from '@/features/library/links';
 import type { SourceId } from './character';
 
 /** The Loom's data layer (docs/LOOM_PLAN.md §4). `data/culture` and
@@ -167,7 +168,7 @@ export interface LoomDoorPattern {
   id: string;
   title: string;
   summary: string;
-  stops: { work: number; note?: string; footnote?: string; evidence?: string }[];
+  stops: { work: number; note?: string; footnote?: string; evidence?: string; passages?: PassageLink[] }[];
   members: number[];
 }
 
