@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useReducer, useState } from 'react';
+import { retrying, retryUrl } from '@/lib/retry';
 
 interface FileEntry {
   promise: Promise<unknown>;
@@ -10,16 +11,17 @@ interface FileEntry {
 const entries = new Map<string, FileEntry>();
 
 /** Fetches a baked file once per visit, however many components ask. A failed fetch
- *  is forgotten, so the next ask tries again. */
+ *  is tried twice more after a short wait (a phone's connection, or an in-app
+ *  browser, can lose one request), then forgotten, so the next ask tries again. */
 export function loadAtlasFile<T>(url: string): Promise<T> {
   const known = entries.get(url);
   if (known) return known.promise as Promise<T>;
   const entry: FileEntry = {
-    promise: fetch(url)
-      .then((response) => {
-        if (!response.ok) throw new Error(`${url} unavailable (${response.status})`);
-        return response.json() as Promise<unknown>;
-      })
+    promise: retrying(async (attempt) => {
+      const response = await fetch(retryUrl(url, attempt));
+      if (!response.ok) throw new Error(`${url} unavailable (${response.status})`);
+      return (await response.json()) as unknown;
+    })
       .then((data) => {
         entry.data = data;
         return data;

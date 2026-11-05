@@ -4,7 +4,6 @@ import { Canvas } from '@react-three/fiber';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
-import { Link } from '@/components/ui/Link';
 import { decodeDoor, stopsAt, subjectOf, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { LENS, STANCE_LENS, type Rotunda, type RotundaMode } from '@/features/art/rotunda/engine';
 import { loadFullSheets, loadPreviewSheet, type FullSheets, type SheetImage } from '@/features/art/rotunda/textures';
@@ -15,6 +14,7 @@ import { useGalaxyStore } from '@/features/galaxy/store';
 import { SAGA_LABEL, SAGA_ORDER, type SagaId } from '@/features/stories/sagas';
 import type { LoomDoorData } from '@/types/art';
 import { LoomRail } from './LoomRail';
+import { LoomUnavailable } from './LoomUnavailable';
 import { LoomTitle } from './LoomView';
 import { RotundaScene, type RotundaEvents, type RotundaSettings } from './RotundaScene';
 import { WorkHoverCard } from './WorkHoverCard';
@@ -420,19 +420,7 @@ export function RotundaView() {
   const onReady = useCallback((room: Rotunda | null) => setRotunda(room), []);
   const onFrame = useCallback(() => {}, []);
 
-  if (!webGl || failed || sheetsFailed) {
-    return (
-      <div className="flex h-full items-center justify-center p-8 text-center font-body text-lg text-aether-muted">
-        <p>
-          {webGl ? 'The Loom could not be loaded.' : 'The Loom needs WebGL 2.'} The same works are listed on{' '}
-          <Link href="/art/list" className="text-star-olympian underline underline-offset-4">
-            a plain page
-          </Link>
-          .
-        </p>
-      </div>
-    );
-  }
+  if (!webGl || failed || sheetsFailed) return <LoomUnavailable webGl={webGl} />;
 
   const inside = mode === 'inside';
   return (

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { loadBitmap } from '@/features/art/bitmap';
 import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { TEAR_FROM, TEAR_TO } from '@/features/art/loom';
 import { ATLAS_FILES } from '@/features/atlas/files';
@@ -38,13 +39,6 @@ export function loadImage(src: string, cors = false): Promise<HTMLImageElement> 
     image.onerror = () => reject(new Error(`Could not load ${src}`));
     image.src = src;
   });
-}
-
-/** A local image decoded off the main thread, as the flat door loads its sheets. */
-async function loadBitmap(url: string): Promise<ImageBitmap> {
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Could not load ${url} (${response.status})`);
-  return createImageBitmap(await response.blob());
 }
 
 /** The low-quality sheet, 24 px a cell: the first cloth is woven from it. The export
