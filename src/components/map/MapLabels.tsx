@@ -1,7 +1,8 @@
 'use client';
 
 import { useCallback, useEffect, useRef } from 'react';
-import maplibregl, { type Map as MaplibreMap } from 'maplibre-gl';
+import * as maplibregl from 'maplibre-gl';
+import type { Map as MaplibreMap } from 'maplibre-gl';
 import type { FeatureCollection, Point } from 'geojson';
 import {
   IMPORTANT_CITY_IDS,
