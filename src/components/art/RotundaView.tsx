@@ -7,7 +7,7 @@ import { useAtlasSearchHotkey } from '@/components/hud/useAtlasSearchHotkey';
 import { Link } from '@/components/ui/Link';
 import { decodeDoor, stopsAt, subjectOf, type LoomDoor, type LoomWork } from '@/features/art/door';
 import { LENS, STANCE_LENS, type Rotunda, type RotundaMode } from '@/features/art/rotunda/engine';
-import { loadSheets, type Sheets } from '@/features/art/rotunda/textures';
+import { loadFullSheets, loadPreviewSheet, type FullSheets, type SheetImage } from '@/features/art/rotunda/textures';
 import { isDimmed, litSets, useLoomStore } from '@/features/art/store';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
@@ -104,7 +104,8 @@ export function RotundaView() {
   const pathname = usePathname();
   const { data, failed } = useAtlasFile<LoomDoorData>(ATLAS_FILES.loom);
   const door = useMemo(() => (data ? decodeDoor(data, false) : null), [data]);
-  const [sheets, setSheets] = useState<Sheets | null>(null);
+  const [preview, setPreview] = useState<SheetImage | null>(null);
+  const [fullSheets, setFullSheets] = useState<FullSheets | null>(null);
   const [sheetsFailed, setSheetsFailed] = useState(false);
   const [rotunda, setRotunda] = useState<Rotunda | null>(null);
   const [mode, setMode] = useState<RotundaMode>('flat');
@@ -137,24 +138,29 @@ export function RotundaView() {
     }
   }, []);
 
+  // Both start with the door, beside its data: the room opens on the low-quality sheet,
+  // and the full ones reweave it when they land. Without them the first cloth stays.
   useEffect(() => {
-    if (!door) return;
     let live = true;
-    loadSheets().then(
-      (loaded) => live && setSheets(loaded),
+    loadPreviewSheet().then(
+      (sheet) => live && setPreview(sheet),
       () => live && setSheetsFailed(true),
+    );
+    loadFullSheets().then(
+      (sheets) => live && setFullSheets(sheets),
+      () => {},
     );
     return () => {
       live = false;
     };
-  }, [door]);
+  }, []);
 
   const settings = useMemo<RotundaSettings | null>(
     () =>
-      door && sheets
+      door && preview
         ? {
             door,
-            sheets,
+            sheets: { lq: preview, full: null },
             insets: chromeInsets(window.innerWidth),
             lens: opticsAtStart.lens,
             centre: opticsAtStart.centre,
@@ -163,8 +169,12 @@ export function RotundaView() {
             saveData: motion.saveData,
           }
         : null,
-    [door, sheets, opticsAtStart, reveal, motion],
+    [door, preview, opticsAtStart, reveal, motion],
   );
+
+  useEffect(() => {
+    if (rotunda && fullSheets) rotunda.upgradeSheets(fullSheets);
+  }, [rotunda, fullSheets]);
 
   // What the room tells the door: its state for the dock, the store's web and Pattern,
   // and the work or the clay weight under the pointer.

@@ -4,7 +4,7 @@ import { LIFT, liftWeb } from '@/features/art/loomWeb';
 import { lerp, smooth, type Drum } from './drum';
 import { pushArc, setLines, type LineLayer } from './lines';
 import { LIFT_FS, LIFT_VS } from './shaders';
-import { loadImage, type Sheets } from './textures';
+import { loadImage, spriteOf, type Sheets } from './textures';
 import { thumbFor, type Sharpener } from './sharpen';
 
 /** The web in the rotunda (docs/LOOM_PLAN.md §12): a pull lifts the work toward you and
@@ -35,7 +35,8 @@ export interface WebContext {
   scene: THREE.Scene;
   drum: Drum;
   door: LoomDoor;
-  sheets: Sheets;
+  /** The sheets as they stand: the low-quality one, then the full ones. */
+  sheets: () => Sheets;
   sharpener: Sharpener;
   lines: LineLayer;
   colorOf: (saga: string) => THREE.Color;
@@ -244,24 +245,7 @@ export class RotundaWeb {
   /** The baked sprite, until the work's own image arrives. */
   private spriteTexture(index: number): THREE.Texture {
     const { door, sheets, sharpener } = this.ctx;
-    const work = door.works[index];
-    const { sheet } = door;
-    const [image, sx, sy, sw, sh] =
-      work.anchor >= 0
-        ? [
-            sheets.anchors,
-            (work.anchor % sheet.anchorColumns) * sheet.anchorSlot,
-            Math.floor(work.anchor / sheet.anchorColumns) * sheet.anchorSlot,
-            work.w * sheet.cell,
-            work.h * sheet.cell,
-          ]
-        : [
-            sheets.full,
-            (work.sprite % sheet.columns) * sheet.cell,
-            Math.floor(work.sprite / sheet.columns) * sheet.cell,
-            sheet.cell,
-            sheet.cell,
-          ];
+    const [image, sx, sy, sw, sh] = spriteOf(door.works[index], door, sheets());
     const canvas = document.createElement('canvas');
     canvas.width = sw;
     canvas.height = sh;

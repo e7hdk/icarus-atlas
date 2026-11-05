@@ -1,8 +1,11 @@
 'use client';
 
 import { useEffect, useState, useSyncExternalStore, type ComponentType } from 'react';
-import { useIsMobile } from '@/lib/useIsMobile';
+import { matchesMobileDevice, useIsMobile } from '@/lib/useIsMobile';
 import { LoomView } from './LoomView';
+
+/** A desktop asks for the room as soon as this module runs, before the page hydrates. */
+const early = typeof window !== 'undefined' && !matchesMobileDevice() ? import('./RotundaView') : null;
 
 /** Hydration renders nothing, as the server did; the store then reports the client at
  *  once, so the door is chosen on the next render. */
@@ -26,7 +29,7 @@ export function LoomDoor() {
   useEffect(() => {
     if (!known || phone) return;
     let live = true;
-    import('./RotundaView').then(({ RotundaView }) => {
+    (early ?? import('./RotundaView')).then(({ RotundaView }) => {
       if (live) setRotunda(() => RotundaView);
     });
     return () => {

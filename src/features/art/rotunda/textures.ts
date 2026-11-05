@@ -1,6 +1,7 @@
 import * as THREE from 'three';
-import type { LoomDoor } from '@/features/art/door';
+import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { TEAR_FROM, TEAR_TO } from '@/features/art/loom';
+import { ATLAS_FILES } from '@/features/atlas/files';
 import { SAGA_ACCENT, SAGA_ORDER } from '@/features/stories/sagas';
 import { clamp, type Drum } from './drum';
 
@@ -8,10 +9,15 @@ import { clamp, type Drum } from './drum';
  *  the baked sheets, the tear's mask, and each cell's saga and brightness. */
 
 export type SheetImage = HTMLImageElement | ImageBitmap;
-export interface Sheets {
-  lq: SheetImage;
+/** The full sheets: 64 px a cell, and the anchors' own slots. */
+export interface FullSheets {
   full: SheetImage;
   anchors: SheetImage;
+}
+/** The low-quality sheet at once, the full ones once they land. */
+export interface Sheets {
+  lq: SheetImage;
+  full: FullSheets | null;
 }
 
 export const imageWidth = (image: SheetImage) => (image instanceof HTMLImageElement ? image.naturalWidth : image.width);
@@ -41,14 +47,35 @@ async function loadBitmap(url: string): Promise<ImageBitmap> {
   return createImageBitmap(await response.blob());
 }
 
-/** The three baked sheets, all of them: a cloth this large is woven once. */
-export async function loadSheets(): Promise<Sheets> {
-  const [lq, full, anchors] = await Promise.all([
-    loadBitmap('/art/sheet-lq.webp'),
-    loadBitmap('/art/sheet.webp'),
-    loadBitmap('/art/anchors.webp'),
-  ]);
-  return { lq, full, anchors };
+/** The low-quality sheet, 24 px a cell: the first cloth is woven from it. The export
+ *  preloads it with the door's HTML (scripts/finish-export.ts). */
+export function loadPreviewSheet(): Promise<SheetImage> {
+  return loadBitmap(ATLAS_FILES.loomPreview);
+}
+
+/** The full sheets, which replace the first cloth once the opening fall is over. */
+export async function loadFullSheets(): Promise<FullSheets> {
+  const [full, anchors] = await Promise.all([loadBitmap('/art/sheet.webp'), loadBitmap('/art/anchors.webp')]);
+  return { full, anchors };
+}
+
+/** Where a work's picture sits in the sheets: its anchor slot once the full sheets
+ *  have landed, otherwise its one sprite cell, stretched over its tile. */
+export function spriteOf(work: LoomWork, door: LoomDoor, sheets: Sheets): [SheetImage, number, number, number, number] {
+  const { sheet } = door;
+  if (sheets.full && work.anchor >= 0) {
+    const slot = sheet.anchorSlot;
+    return [
+      sheets.full.anchors,
+      (work.anchor % sheet.anchorColumns) * slot,
+      Math.floor(work.anchor / sheet.anchorColumns) * slot,
+      work.w * sheet.cell,
+      work.h * sheet.cell,
+    ];
+  }
+  const image = sheets.full?.full ?? sheets.lq;
+  const cell = sheets.full ? sheet.cell : sheet.lqCell;
+  return [image, (work.sprite % sheet.columns) * cell, Math.floor(work.sprite / sheet.columns) * cell, cell, cell];
 }
 
 /** Each saga's colour in SAGA_ORDER, as bytes and as 0–1 channels. */
@@ -130,7 +157,7 @@ export function strokeAnchor(context: CanvasRenderingContext2D, x: number, y: nu
   context.strokeRect(x + line / 2, y + line / 2, w - line, h - line);
 }
 
-/** Every work drawn into the cloth from the full sheets, except those already woven. */
+/** Every work drawn into the cloth from the sheets there are, except those already woven. */
 export function paintCloth(
   canvas: HTMLCanvasElement,
   texture: THREE.Texture,
@@ -140,7 +167,6 @@ export function paintCloth(
   skip: Set<number>,
 ) {
   const { width: W, tearTop, tearRows } = door.layout;
-  const { sheet } = door;
   const context = canvas.getContext('2d');
   if (!context) return;
   context.imageSmoothingQuality = 'high';
@@ -154,32 +180,7 @@ export function paintCloth(
     const dy = work.row * cell;
     const dw = work.w * cell;
     const dh = work.h * cell;
-    if (work.anchor >= 0) {
-      const slot = sheet.anchorSlot;
-      context.drawImage(
-        sheets.anchors,
-        (work.anchor % sheet.anchorColumns) * slot,
-        Math.floor(work.anchor / sheet.anchorColumns) * slot,
-        work.w * sheet.cell,
-        work.h * sheet.cell,
-        dx,
-        dy,
-        dw,
-        dh,
-      );
-    } else {
-      context.drawImage(
-        sheets.full,
-        (work.sprite % sheet.columns) * sheet.cell,
-        Math.floor(work.sprite / sheet.columns) * sheet.cell,
-        sheet.cell,
-        sheet.cell,
-        dx,
-        dy,
-        dw,
-        dh,
-      );
-    }
+    context.drawImage(...spriteOf(work, door, sheets), dx, dy, dw, dh);
     if (work.w > 1) strokeAnchor(context, dx, dy, dw, dh, cell);
   }
   texture.needsUpdate = true;

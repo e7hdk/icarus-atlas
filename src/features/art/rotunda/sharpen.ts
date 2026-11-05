@@ -3,7 +3,7 @@ import { commonsOriginalUrl, commonsThumbAtLeast, commonsThumbUrl } from '@/feat
 import type { LoomDoor, LoomWork } from '@/features/art/door';
 import { clamp, gridGeometry, type Drum } from './drum';
 import { FINE_FS, PLAIN_VS } from './shaders';
-import { imageHeight, imageWidth, loadImage, strokeAnchor, type SheetImage, type Sheets } from './textures';
+import { imageHeight, imageWidth, loadImage, strokeAnchor, type FullSheets, type SheetImage } from './textures';
 
 /** Sharper images (docs/LOOM_PLAN.md §12). The baked sheet gives every work 64 px a
  *  cell, soft once the cloth closes round you. Inside, each work's Commons thumbnail is
@@ -38,14 +38,20 @@ interface Wanted {
   perCell: number;
 }
 
+/** The cloth's canvas and its texture, `cell` pixels a cell. */
+export interface Cloth {
+  canvas: HTMLCanvasElement;
+  texture: THREE.CanvasTexture;
+  cell: number;
+}
+
 export interface SharpenContext {
   renderer: THREE.WebGLRenderer;
   scene: THREE.Scene;
   camera: THREE.PerspectiveCamera;
   drum: Drum;
   door: LoomDoor;
-  cloth: { canvas: HTMLCanvasElement; texture: THREE.CanvasTexture; cell: number };
-  sheets: Sheets;
+  cloth: Cloth;
   /** Texels of finer images kept on the GPU. */
   budget: number;
   /** Nothing is fetched from Commons: the cloth stays on the baked sheets. */
@@ -77,10 +83,12 @@ export class Sharpener {
   private readonly crops = new Map<number, Crop>();
   private readonly copyAt = new THREE.Vector2();
   private readonly scratch: CanvasRenderingContext2D;
-  /** The sprite sheets at half size, read into memory once: drawing from a sheet this
-   *  large into a readable canvas would stall a frame. */
-  private readonly sheetRef: { width: number; data: Uint8ClampedArray };
-  private readonly anchorRef: { width: number; data: Uint8ClampedArray };
+  /** The full sprite sheets at half size, read into memory once they land: drawing from
+   *  a sheet this large into a readable canvas would stall a frame. Until then nothing
+   *  is woven, since nothing could be cut where the bake cut it. */
+  private refs: { sheet: { width: number; data: Uint8ClampedArray }; anchors: { width: number; data: Uint8ClampedArray } } | null =
+    null;
+  private cloth: Cloth;
   private readonly maxAnisotropy: number;
   private weaveQueue: { work: LoomWork; turn: number }[] = [];
   private fineQueue: Wanted[] = [];
@@ -92,9 +100,18 @@ export class Sharpener {
     const scratch = document.createElement('canvas').getContext('2d', { willReadFrequently: true });
     if (!scratch) throw new Error('No 2D context to align images');
     this.scratch = scratch;
-    this.sheetRef = this.halfSize(ctx.sheets.full);
-    this.anchorRef = this.halfSize(ctx.sheets.anchors);
+    this.cloth = ctx.cloth;
     this.maxAnisotropy = ctx.renderer.capabilities.getMaxAnisotropy();
+  }
+
+  /** The full sheets have landed: images can now be cut where the bake cut them. */
+  setFullSheets({ full, anchors }: FullSheets) {
+    this.refs = { sheet: this.halfSize(full), anchors: this.halfSize(anchors) };
+  }
+
+  /** The cloth was rewoven at its full resolution: weave into that one now. */
+  setCloth(cloth: Cloth) {
+    this.cloth = cloth;
   }
 
   /** Order the room by how far you would turn to face each work: the cloth weaves them
@@ -102,9 +119,10 @@ export class Sharpener {
    *  finer image is laid over it, the ones in view first, then those just beyond, up to
    *  the memory budget. Turning within that reach finds them still there. */
   update() {
-    const { camera, drum, door, cloth, budget, saveData } = this.ctx;
+    const { camera, drum, door, budget, saveData } = this.ctx;
+    const { cloth } = this;
     const phase = this.ctx.phase();
-    if (saveData || phase.moving || phase.outside) return;
+    if (saveData || !this.refs || phase.moving || phase.outside) return;
     camera.updateMatrixWorld();
     const tanHalf = Math.tan((camera.fov * Math.PI) / 360);
     const dpr = this.ctx.renderer.getPixelRatio();
@@ -165,7 +183,8 @@ export class Sharpener {
    *  rebuild for them, and into its canvas, so any later full upload keeps them. */
   flush() {
     if (!this.woven.length) return;
-    const { renderer, cloth } = this.ctx;
+    const { renderer } = this.ctx;
+    const { cloth } = this;
     const context = cloth.canvas.getContext('2d');
     const batch = this.woven.splice(0, WEAVE_PER_FRAME);
     cloth.texture.generateMipmaps = false;
@@ -218,8 +237,10 @@ export class Sharpener {
     if (Math.abs(a - t) / t < 0.01) return { x: 0, y: 0, w: 1, h: 1 };
     const across = a > t;
     let crop: Crop = across ? { x: (1 - t / a) / 2, y: 0, w: t / a, h: 1 } : { x: 0, y: (1 - a / t) / 2, w: 1, h: a / t };
+    // Without the full sheets the middle of the image will do, and is not remembered.
+    if (!this.refs) return crop;
     const anchor = work.anchor >= 0;
-    const ref = anchor ? this.anchorRef : this.sheetRef;
+    const ref = anchor ? this.refs.anchors : this.refs.sheet;
     const ox = anchor
       ? ((work.anchor % sheet.anchorColumns) * sheet.anchorSlot) / 2
       : ((work.sprite % sheet.columns) * sheet.cell) / 2;
@@ -329,7 +350,7 @@ export class Sharpener {
   }
 
   private async weaveIn(work: LoomWork) {
-    const { cell } = this.ctx.cloth;
+    const { cell } = this.cloth;
     this.weaving.add(work.index);
     this.requests++;
     try {
