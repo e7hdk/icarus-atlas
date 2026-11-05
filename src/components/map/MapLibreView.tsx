@@ -1,13 +1,14 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import maplibregl, {
-  Map as MaplibreMap,
-  type FlyToOptions,
-  type StyleSpecification,
-} from 'maplibre-gl';
+import * as maplibregl from 'maplibre-gl';
+import { Map as MaplibreMap, setWorkerUrl, type FlyToOptions, type StyleSpecification } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Protocol as PmtilesProtocol } from 'pmtiles';
+
+// MapLibre 6 ships as ES modules only and runs its worker from a file of its own;
+// the bundler emits that file and this URL points the map at it.
+setWorkerUrl(new URL('maplibre-gl/dist/maplibre-gl-worker.mjs', import.meta.url).toString());
 
 // The pinned DEM extract (public/geo/dem.pmtiles) is one archive read with
 // range requests — register the pmtiles:// protocol the style sources use.
@@ -1216,7 +1217,7 @@ export function MapLibreView({
         hoveredRegionIdRef.current = id;
         setHoveredRegionId(id);
       });
-      map.on('mouseleave', () => {
+      map.on('mouseout', () => {
         hoveredRegionIdRef.current = null;
         setHoveredRegionId(null);
       });
