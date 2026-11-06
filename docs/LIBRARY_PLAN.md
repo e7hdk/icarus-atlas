@@ -406,6 +406,7 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
   - **The strip.** One histogram in the rail: a bar a block, longer where more facts rest on it, and the block being read in gold beside a dot. It fits the *Fabulae*'s 277 tales as well as a book of 20 cards.
   - **Names in the English.**
     - `link-english.ts` runs the atlas's engine with L11: every non-divine name is scoped. `data/library/aliases.json` adds 40 translators' forms across 7 editions (Murray's Athene and Aias, Evelyn-White's Briareos, More's Jove, Frazer's Sky).
+      - *2026-11-06: Seaton's Argonautica adds 29, each checked against the Greek of its block: Apollonius' Cypris, Enyalius and Brimo, Seaton's Augeias, Cheiron and Meleagrus, and an Earth, Night and Love that link only in scope. His Asterion (1.35) and Asterius (1.176) cross over to `asterius-piresia` and `asterion-pellene`: the atlas names the two Argonauts after Apollodorus and Hyginus.*
     - A name is tinted by type, as elsewhere in the atlas, with a dotted underline, because a mortal's tint is the reading colour itself.
     - Homonyms that are both in scope stay plain: the two Iluses at *Bibl.* 3.12.3.
   - **The grid of tales.** The block being read is the tale in the row that the pointer or the keyboard is on, else the deep link's, else the row's first. `#t92` opens on tale 92, no longer on 94, the row's last.
@@ -414,6 +415,7 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
     - A sample shows what it holds. Most are speeches, patronymics and pronouns (Thetis to Achilles, *Il.* 1.413–418). Some are a translator's English for a personification (Frazer's "Violence" for Bia) or a collective (the Cyclopes for Brontes). Many residences are inferred from a contingent's Catalogue entry that names the place, not the person (Phoenix and Automedon in the Myrmidon card, *Il.* 2.655–690).
     - Some are wrong. `achaea` summary[0] cites *Theogony* 1000 for Hesiod naming her, but the line tells of Medea and Medeus, and the *Theogony* never names an Achaea.
     - The list is left for a reviewed data pass (hard rules 2, 3 and 5), not fixed here.
+    - *2026-11-06: a name counts only as the reading room links it, with accents folded (Murray's Eëtion is Eetion) and a capital first letter (the earth is not Earth). Seaton's English brought 82 Argonautica lines; his forms and the folding clear 31, and 1,774 lines remain in all. Among the 51 left, `eribotes` cites 4.1465 for a death in Libya that Apollonius gives to Canthus, and `deucalion-pella` cites 1.367 for an Argonaut Apollonius never names.*
   - **Gate.** `validate-library` also checks each margin file's weight (at most 30 KB gzipped), that every block with notes is in the chunk its index names, and that every alias names a figure in a pinned edition.
   - **Checked.**
     - In headless Chrome, against a dev server of my own, at 1440×900 and at 390×844 with touch.
