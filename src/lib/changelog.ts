@@ -14,6 +14,14 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.2',
+    codename: 'The Crew by Their Names',
+    date: '2026-11-06',
+    lines: [
+      'Seaton’s Argonautica now finds its stars under his own names: Cypris and Cytherea are Aphrodite, Enyalius is Ares, Brimo is Hecate and Cronos is Cronus, and Augeias, Meleagrus, Erytus, Cheiron and Eidyia are found where the lines are about them. Fifty-five names in the four books, plain until now, open their figures.',
+    ],
+  },
+  {
     version: '0.6.1',
     codename: 'The Argo in English',
     date: '2026-11-06',

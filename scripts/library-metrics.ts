@@ -7,6 +7,7 @@ import { join } from 'node:path';
 import { createCitationResolver } from '../src/features/library/cite';
 import { libraryWorksFileSchema } from '../src/lib/schemas';
 import { covered as blocksCovered } from '../src/features/library/margins';
+import { fold } from '../src/features/search/match';
 import type { LibraryExtents, LibraryText, WorkId } from '../src/types/library';
 import { collectCitationSites, describeRef, reasonClass, resolveSites } from './lib/library-citations';
 import { LIBRARY_EXTENTS_PATH, LIBRARY_WORKS_PATH } from './lib/library-corpus';
@@ -75,8 +76,10 @@ if (process.argv.includes('--failures')) {
 }
 
 /* --audit: a figure's fact cites a passage whose English never names the figure,
- * under its name, its Roman name or the edition's own spelling. A list for an eye,
- * never a gate: a fact may cite a passage to say the figure is not there. */
+ * under its name, its Roman name or the edition's own spelling — written as the
+ * reading room links a name: accents folded (Seaton's Phaëthon is Phaethon) and the
+ * first letter a capital (the earth is not Earth). A list for an eye, never a gate:
+ * a fact may cite a passage to say the figure is not there. */
 if (process.argv.includes('--audit')) {
   const dataDir = join(import.meta.dirname, '..', 'data');
   const texts = new Map(readdirSync(join(dataDir, 'generated', 'library')).map((name) => {
@@ -107,9 +110,15 @@ if (process.argv.includes('--audit')) {
     const blocks = blocksCovered(work, unit.blocks, ref.from, ref.to);
     if (blocks === 'broad' || blocks.length === 0) continue;
     const english = blocks.flatMap((block) => block.trans).join(' ');
+    const folded = fold(english);
     const editionForms = Object.entries(aliases[work.translation.corpusId] ?? {}).filter(([, target]) => targetIds(target).includes(id)).map(([form]) => form);
     const forms = [...nameFor(id), ...editionForms];
-    if (forms.some((form) => new RegExp(`\\b${form.replace(/[^\p{L}]/gu, '')}`, 'iu').test(english))) continue;
+    const named = (form: string) =>
+      [...folded.matchAll(new RegExp(`\\b${fold(form).replace(/[^\p{L}]/gu, '')}`, 'gu'))].some((match) => {
+        const initial = english[match.index ?? 0] ?? '';
+        return initial !== initial.toLowerCase();
+      });
+    if (forms.some(named)) continue;
     warnings.push(`${site.file} ${site.at}: ${forms[0] ?? id} is not named in ${describeRef(ref)}`);
   }
   console.log(`\naudit: ${warnings.length} fact(s) cite a passage that never names their figure`);
