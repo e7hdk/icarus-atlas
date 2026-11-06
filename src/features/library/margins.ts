@@ -95,7 +95,9 @@ export function covered(work: LibraryWork, blocks: LibraryBlock[], from: Locus, 
   if (from.tale === 'preface') return blocks.filter((block) => !isNumeric(block.from) || block.from.startsWith('0.'));
   if (!isNumeric(from.tale)) return blocks.filter((block) => block.from === from.tale);
   const last = to.kind === 'tale' && isNumeric(to.tale) ? to.tale : from.tale;
-  return blocks.filter((block) => isNumeric(block.from) && !block.from.startsWith('0.') && compareIds(block.from, from.tale) >= 0 && compareIds(block.from, last) <= 0);
+  // a whole tale takes its parts too: Fab. 14 runs on as 14.2–14.5
+  const within = (block: LibraryBlock) => block.from.startsWith(`${last}.`) || (compareIds(block.from, from.tale) >= 0 && compareIds(block.from, last) <= 0);
+  return blocks.filter((block) => isNumeric(block.from) && !block.from.startsWith('0.') && within(block));
 }
 
 export function buildMargins(
