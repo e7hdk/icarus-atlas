@@ -122,8 +122,9 @@
       "structure": "sections",
       "units": "whole",
       "aliases": ["Astronomica", "Astr.", "Hyg. Astr.", "Hyginus, Astronomica", "De Astronomia", "Poetica Astronomica"],
+      "original": { "corpusId": "hyginus-astronomica-lat", "credit": "Latin text of Book 2 ed. B. Bunte (Leipzig, 1875), as typed by The Latin Library and read against Bunte", "licence": "Public domain" },
       "translation": { "corpusId": "hyginus-astronomica-en", "credit": "English translation of Book 2 by Mary Grant (University of Kansas, 1960); registered and not renewed, very likely US public domain (docs/LIBRARY_PLAN.md §4.4)", "licence": "Public domain in the US, unconfirmed (pinned copy: ToposText, CC BY-NC 4.0)" },
-      "display": "excerpt"
+      "display": "full"
     },
     {
       "id": "description-of-greece",

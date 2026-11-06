@@ -15,10 +15,11 @@ export interface ChangelogEntry {
 export const CHANGELOG: ChangelogEntry[] = [
   {
     version: '0.6.2',
-    codename: 'The Crew by Their Names',
+    codename: 'The Star Myths in Latin',
     date: '2026-11-06',
     lines: [
       'Seaton’s Argonautica now finds its stars under his own names: Cypris and Cytherea are Aphrodite, Enyalius is Ares, Brimo is Hecate and Cronos is Cronus, and Augeias, Meleagrus, Erytus, Cheiron and Eidyia are found where the lines are about them. Fifty-five names in the four books, plain until now, open their figures.',
+      'Hyginus’ Astronomica can be read at last: the book of the star myths in Bunte’s Latin of 1875, its hundred and twenty-seven sections each beside Mary Grant’s English, from the Great Bear to the Milky Way. Thirty-four slips in the copy online were set right against Bunte’s own pages, and Jove and Father Liber are stars wherever Grant names them.',
     ],
   },
   {

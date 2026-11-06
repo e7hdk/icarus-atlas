@@ -7,7 +7,7 @@
  *  its line to the next card's. Prose: section beside section.
  *
  *  The licence gate (`display`): a work shown as `excerpt` contributes its original
- *  only or, with no original (Hyginus), only its passage ids and a link out. */
+ *  only or, with no original (the Fabulae), only its passage ids and a link out. */
 
 import { load, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
@@ -118,20 +118,33 @@ function verseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
   }));
 }
 
+/** The sections an edition is cut into, by id. An id printed twice would drop
+ *  one of its texts, so it fails the reading. */
+function sectionsOf(entry: CorpusEntry | null): Map<string, string> {
+  const sections = new Map<string, string>();
+  for (const { citation, text } of entry ? normalizeEntry(entry, readRaw(entry)) : []) {
+    if (sections.has(citation)) throw new Error(`${entry?.id}: section ${citation} is cut twice`);
+    sections.set(citation, text);
+  }
+  return sections;
+}
+
 /** Prose: the sections the research normalizer cuts, joined across the two editions. */
 function proseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
   const original = entryFor(work.original?.corpusId, manifest);
   const translation = entryFor(work.translation.corpusId, manifest);
-  const sections = (entry: CorpusEntry | null) => new Map((entry ? normalizeEntry(entry, readRaw(entry)) : []).map((passage) => [passage.citation, passage.text]));
-  const greek = sections(original);
-  const translated = sections(translation);
+  const originalSections = sectionsOf(original);
+  const translated = sectionsOf(translation);
   const english = work.display === 'full' ? translated : new Map<string, string>();
-  // the original's sections set the order; Hyginus, with no original, takes ToposText's ids
-  const ids = [...(original ? greek : translated).keys()];
+  // the original's sections set the order, so a translated section without one would vanish
+  const orphans = original ? [...english.keys()].filter((id) => !originalSections.has(id)) : [];
+  if (orphans.length > 0) throw new Error(`${work.id}: the translation's ${orphans.join(', ')} have no section in the original`);
+  // the Fabulae, with no original, take ToposText's ids
+  const ids = [...(original ? originalSections : translated).keys()];
   const units = new Map<string, LibraryBlock[]>();
   for (const id of ids) {
     const unit = work.units === 'whole' ? 'whole' : id.split('.')[0];
-    const block: LibraryBlock = { from: id, to: id, orig: greek.get(id) ?? '', trans: english.has(id) ? [english.get(id) ?? ''] : [] };
+    const block: LibraryBlock = { from: id, to: id, orig: originalSections.get(id) ?? '', trans: english.has(id) ? [english.get(id) ?? ''] : [] };
     if (!original && translation?.format === 'topostext-html') block.link = `${translation.url}#${translation.urnBase}:${id}`;
     units.set(unit, [...(units.get(unit) ?? []), block]);
   }
