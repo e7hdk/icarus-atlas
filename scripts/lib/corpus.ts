@@ -13,7 +13,7 @@ const entrySchema = z.object({
   work: z.string().min(1),
   citationLabel: z.string().min(1),
   language: z.enum(['en', 'grc', 'lat']),
-  format: z.enum(['perseus-tei', 'topostext-html', 'gutenberg-txt']),
+  format: z.enum(['perseus-tei', 'topostext-html', 'gutenberg-txt', 'latinlibrary-html']),
   urnBase: z.string().startsWith('urn:cts:'),
   edition: z.string().min(1),
   license: z.string().min(1),
@@ -25,6 +25,9 @@ const entrySchema = z.object({
   /** A translation printed without line numbers takes them from another pinned
    *  copy of the same translation, by this id (docs/LIBRARY_PLAN.md §4.4). */
   anchors: z.string().min(1).optional(),
+  /** A page printed without its sections reads them from this file in
+   *  research/corpus/sections/: where each opens, and the page's typing slips. */
+  sections: z.string().regex(/^[a-z0-9-]+\.json$/).optional(),
 });
 
 const manifestSchema = z.object({
@@ -38,6 +41,7 @@ export const RAW_DIR = join(CORPUS_DIR, 'raw');
 export const NORMALIZED_DIR = join(CORPUS_DIR, 'normalized');
 export const INDEX_PATH = join(NORMALIZED_DIR, 'index.jsonl');
 export const MANIFEST_PATH = join(CORPUS_DIR, 'manifest.json');
+export const SECTIONS_DIR = join(CORPUS_DIR, 'sections');
 
 export type CorpusEntry = z.infer<typeof entrySchema>;
 export type CorpusManifest = z.infer<typeof manifestSchema>;
@@ -177,12 +181,16 @@ function normalizeTei(entry: CorpusEntry, content: string): CorpusPassage[] {
 
 /** ToposText's paragraph ids name the line of the original each paragraph opens
  *  at. Three in its Argonautica are misprinted, two out of order and one ten
- *  lines late; Mooney's Greek shows where each paragraph opens. */
+ *  lines late; Mooney's Greek shows where each paragraph opens. A key `id#n`
+ *  names the n-th paragraph printed with that id. */
 const ANCHOR_CORRECTIONS: Record<string, Record<string, string>> = {
   'apollonius-argonautica-en': {
     '1.221': '1.211', // "Next came Zetes and Calais": Ζήτης αὖ Κάλαΐς τε, 1.211
     '3.383': '3.484', // "He spake with goodwill": Ἴσκεν ἐυφρονέων, 3.484
     '3.388': '3.887', // "But when she had left the city's well paved streets": αὐτὰρ ἐπεὶ πόλιος μὲν ἐυδμήτους λίπʼ ἀγυιάς, 3.887
+  },
+  'hyginus-astronomica-en': {
+    '2.3.1#2': '2.3.2', // "Some also say this dragon was thrown at Minerva": Nonnulli etiam dixerunt hunc draconem
   },
 };
 
@@ -198,13 +206,16 @@ export interface ToposTextParagraph {
 export function toposTextParagraphs(entry: CorpusEntry, content: string): ToposTextParagraph[] {
   const $ = load(content);
   const corrections = ANCHOR_CORRECTIONS[entry.id] ?? {};
+  const printings = new Map<string, number>();
   return $('p[id^="urn:cts:"]').get().flatMap((element) => {
     const anchor = $(element).attr('id');
     if (!anchor) return [];
     const printed = anchor.slice(anchor.lastIndexOf(':') + 1);
+    const nth = (printings.get(printed) ?? 0) + 1;
+    printings.set(printed, nth);
     const clone = $(element).clone();
     clone.find('b').first().remove();
-    return [{ anchor, citation: corrections[printed] ?? printed, text: normalizeWhitespace(clone.text()) }];
+    return [{ anchor, citation: corrections[`${printed}#${nth}`] ?? corrections[printed] ?? printed, text: normalizeWhitespace(clone.text()) }];
   });
 }
 
@@ -349,13 +360,90 @@ function normalizeGutenberg(entry: CorpusEntry, content: string): CorpusPassage[
   return anchoredText(entry, content).map(({ citation, paras }, index) => passage(entry, citation, paras.join(' '), index));
 }
 
+const sectionsSchema = z.object({
+  note: z.string().min(1),
+  /** The book the page holds. */
+  book: z.string().regex(/^\d+$/),
+  /** The page's typing slips, each set right to the printed edition's reading. */
+  corrections: z.array(z.object({ at: z.string().min(1), from: z.string().min(1), to: z.string() })),
+  /** book.chapter.section → the words it opens with. */
+  sections: z.record(z.string().regex(/^\d+\.\d+\.\d+$/), z.string().min(1)),
+});
+
+function sectionsOf(entry: CorpusEntry): z.infer<typeof sectionsSchema> {
+  if (!entry.sections) throw new Error(`${entry.id}: a ${entry.format} entry needs its sections file`);
+  return sectionsSchema.parse(JSON.parse(readFileSync(join(SECTIONS_DIR, entry.sections), 'utf8')));
+}
+
+/** The Latin Library prints a book's chapters, each opening with its numeral
+ *  ("XIV. OPHIUCHUS, qui …"), but not their sections. The entry's sections file
+ *  sets the page's slips right, each found once, and names the words each later
+ *  section opens with; a chapter's first section opens at the chapter, and what
+ *  comes before the first chapter is the book's preface, `book.pr`. A chapter out
+ *  of order, or an opening found nowhere or twice, fails the reading. */
+function normalizeLatinLibrary(entry: CorpusEntry, content: string): CorpusPassage[] {
+  const reading = sectionsOf(entry);
+  const $ = load(content);
+  let text = $('p')
+    .get()
+    .filter((element) => !$(element).is('.pagehead, .border'))
+    .map((element) => normalizeWhitespace($(element).text()))
+    .filter(Boolean)
+    .join('\n');
+  for (const { from, to } of reading.corrections) {
+    const found = text.split(from).length - 1;
+    if (found !== 1) throw new Error(`${entry.id}: the slip "${from}" is on the page ${found} times`);
+    text = text.replace(from, to);
+  }
+
+  const preface: string[] = [];
+  const chapters: string[][] = [];
+  for (const paragraph of text.split('\n')) {
+    const head = /^([IVXL]+)\.\s+/.exec(paragraph);
+    if (head) {
+      if (romanValue(head[1]) !== chapters.length + 1) throw new Error(`${entry.id}: chapter ${head[1]} follows chapter ${chapters.length}`);
+      chapters.push([paragraph.slice(head[0].length)]);
+      continue;
+    }
+    const chapter = chapters.at(-1);
+    if (chapter) chapter.push(paragraph);
+    else preface.push(paragraph);
+  }
+
+  const passages: CorpusPassage[] = [];
+  const add = (citation: string, body: string) => passages.push(passage(entry, citation, body.trim(), passages.length));
+  if (preface.length > 0) add(`${reading.book}.pr`, preface.join(' '));
+  chapters.forEach((paragraphs, index) => {
+    const chapter = `${reading.book}.${index + 1}`;
+    const body = paragraphs.join(' ');
+    const opens = Object.entries(reading.sections)
+      .filter(([id]) => id.startsWith(`${chapter}.`))
+      .sort(([a], [b]) => Number(a.split('.')[2]) - Number(b.split('.')[2]));
+    let start = 0;
+    let id = `${chapter}.1`;
+    for (const [next, words] of opens) {
+      const at = body.indexOf(words, start + 1);
+      if (at < 0 || body.split(words).length !== 2) throw new Error(`${entry.id}: ${next} must open once in chapter ${index + 1}, after ${id}: "${words}"`);
+      add(id, body.slice(start, at));
+      [start, id] = [at, next];
+    }
+    add(id, body.slice(start));
+  });
+  const cut = new Set(passages.map(({ citation }) => citation));
+  const lost = Object.keys(reading.sections).filter((id) => !cut.has(id));
+  if (lost.length > 0) throw new Error(`${entry.id}: ${lost.join(', ')} open in no chapter of the page`);
+  return passages;
+}
+
 export function normalizeEntry(entry: CorpusEntry, content: string): CorpusPassage[] {
   const passages =
     entry.format === 'perseus-tei'
       ? normalizeTei(entry, content)
       : entry.format === 'topostext-html'
         ? normalizeToposText(entry, content)
-        : normalizeGutenberg(entry, content);
+        : entry.format === 'latinlibrary-html'
+          ? normalizeLatinLibrary(entry, content)
+          : normalizeGutenberg(entry, content);
   if (passages.length === 0) throw new Error(`${entry.id}: no citation-bearing passages found`);
   return passages;
 }

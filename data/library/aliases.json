@@ -86,6 +86,24 @@
     "apollodorus-epitome-en": {
       "Clytaemnestra": "clytemnestra"
     },
+    "hyginus-astronomica-en": {
+      "Jove": "zeus",
+      "Liber": "dionysus",
+      "Icarus": "icarius-attica",
+      "Pleio": "pleione-oceanid",
+      "Haides": "hades",
+      "Orcus": "hades",
+      "Oiagrus": "oeagrus",
+      "Oineus": "oeneus",
+      "Oinopion": "oenopion-chios",
+      "Oinomaus": "oenomaus",
+      "Cassiepia": "cassiopeia-ethiopia",
+      "Antia": "stheneboea-proetid",
+      "Sthenoboea": "stheneboea-proetid",
+      "Giants": "gigantes",
+      "Earth": { "id": "gaia", "scoped": true },
+      "Ocean": { "id": "oceanus", "scoped": true }
+    },
     "pausanias-description-en": {}
   }
 }

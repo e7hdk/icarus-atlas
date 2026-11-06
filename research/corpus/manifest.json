@@ -290,6 +290,22 @@
       "file": "hyginus-astronomica-en.html"
     },
     {
+      "id": "hyginus-astronomica-lat",
+      "sourceId": "hyginus",
+      "author": "Pseudo-Hyginus",
+      "work": "Astronomica",
+      "citationLabel": "Astronomica",
+      "language": "lat",
+      "format": "latinlibrary-html",
+      "urnBase": "urn:cts:latinLit:phi0899.phi001",
+      "edition": "B. Bunte, Leipzig 1875, Book 2, as typed by The Latin Library",
+      "license": "Public domain (Bunte's text of 1875)",
+      "url": "https://web.archive.org/web/20250614173912id_/http://www.thelatinlibrary.com/hyginus/hyginus2.shtml",
+      "sha256": "619d97950a9f806fa51a6d346c3e7140126d3d396d77aa7857f4c20df15edf58",
+      "file": "hyginus-astronomica-lat.html",
+      "sections": "hyginus-astronomica-lat.json"
+    },
+    {
       "id": "pausanias-description-en",
       "sourceId": "pausanias",
       "author": "Pausanias",
