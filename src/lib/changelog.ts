@@ -14,6 +14,17 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.3',
+    codename: 'The Muster Read Again',
+    date: '2026-11-06',
+    lines: [
+      'Every citation was read against the lines it names, and a thousand that did not name their figure were set right or found sound. Thirty-four daughters of Danaus no longer claim Hyginus, whose roll of the brides gives fifty other names; men who are not in Apollodorus’ roll of the Argonauts no longer sail in it; and Odysseus’ parents, Telemachus on his mother’s lap and the suitors’ oath are found where the Epitome and the Library tell them.',
+      'Aulis keeps only the men who sailed from it. Forty-one figures had been mustered there by their sons’ names: Aegeus and Theseus, Meleager and Althaea, the twin Moliones whom Heracles slew, a boy too young to command, and the allies of Troy. They have gone home, and the captains who sailed cite the lines of each teller that name them. The allies’ fathers no longer stand at Troy.',
+      'Two warriors misread in the English of the Iliad take back their Greek names: Amphion, who led the Epeians beside Meges, and Amphius son of Merops, on whom Homer and Apollodorus never disagreed. A Dardanian captain “Theanus” was never there at all. Apollodorus wrote that Archelochus and Acamas were sons of Antenor and Theano, and the ghost has left the sky. Homer’s two men called Areilycus are two stars again: the Boeotian father of Prothoënor, and the Trojan whom Patroclus speared through the thigh.',
+      'The Library links a hundred and ten more of the translators’ own spellings, from Murray’s Hecabe to Pausanias’ Ogygus, and Hesiod’s children of Strife answer to Evelyn-White’s English: Toil and Famine, Battles and Murders, Lawlessness and Ruin.',
+    ],
+  },
+  {
     version: '0.6.2',
     codename: 'The Star Myths in Latin',
     date: '2026-11-06',

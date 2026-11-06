@@ -1,7 +1,7 @@
 {
   "id": "eurydamus",
-  "name": "Eurydamus",
-  "greekName": "Eurydamos (Εὐρύδαμος)",
+  "name": "Eurydamas",
+  "greekName": "Eurydamas (Εὐρυδάμας)",
   "type": "hero",
   "cluster": "mortal-arm",
   "domains": [
@@ -12,28 +12,28 @@
     {
       "text": "Son of Ctimenus or of Irus and Demonassa, Argonaut from the region of Lake Xynius.",
       "sources": [
-        "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+      "citation": "Argonautica 1.67–68; Fabulae 14.2"
     }
   ],
   "story": [
     {
-      "text": "Apollodorus and Hyginus count Eurydamus among the crew; Hyginus makes him son of Irus and Demonassa, or of Ctimenus near Lake Xynius.",
+      "text": "Apollonius and Hyginus count Eurydamas among the crew; Hyginus makes him son of Irus and Demonassa, or of Ctimenus near Lake Xynius.",
       "sources": [
-        "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+      "citation": "Argonautica 1.67–68; Fabulae 14.2"
     },
     {
-      "text": "Apollodorus and Hyginus place Eurydamus near Lake Xynius in Dolopia — a highland region, not a named town in either catalogue.",
+      "text": "Apollonius sets his home at Dolopian Ctimene near the Xynian lake, and Hyginus, giving Ctimenus as one father, the city of the Dolopians by Lake Xynius.",
       "sources": [
-        "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14.4"
+      "citation": "Argonautica 1.67–68; Fabulae 14.2"
     }
   ]
 }

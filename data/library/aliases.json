@@ -9,7 +9,22 @@
       "Earth": { "id": "gaia", "scoped": true },
       "Dawn": { "id": "eos", "scoped": true },
       "Sleep": { "id": "hypnos", "scoped": true },
-      "Death": { "id": "thanatos", "scoped": true }
+      "Death": { "id": "thanatos", "scoped": true },
+      "Hecabe": "hecuba",
+      "Peteos": "peteus-athens",
+      "Augeias": "augeas",
+      "Pherousa": "pherusa",
+      "Speio": "speo",
+      "Thaleia": "thalia-nereid",
+      "Ilos": "ilus",
+      "Night": { "id": "nyx", "scoped": true },
+      "Ocean": { "id": "oceanus", "scoped": true },
+      "Polyxeinus": "polyxenus-epeian",
+      "Araphion": "amphion-epeian",
+      "Araphius": "amphius-meropsid",
+      "Eilithyiae": "eileithyia",
+      "Eüssorus": "eusorus-thracian",
+      "TaIaemenes": "talaemenes-maeonian"
     },
     "homer-odyssey-en": {
       "Athene": "athena",
@@ -17,7 +32,10 @@
       "Cronos": "cronus",
       "Argeiphontes": "hermes",
       "Teiresias": "tiresias",
-      "Dawn": { "id": "eos", "scoped": true }
+      "Dawn": { "id": "eos", "scoped": true },
+      "Lede": "leda",
+      "Eilithyia": "eileithyia",
+      "Giants": "gigantes"
     },
     "hesiod-theogony-en": {
       "Cronos": "cronus",
@@ -34,11 +52,41 @@
       "Night": { "id": "nyx", "scoped": true },
       "Dawn": { "id": "eos", "scoped": true },
       "Sleep": { "id": "hypnos", "scoped": true },
-      "Death": { "id": "thanatos", "scoped": true }
+      "Death": { "id": "thanatos", "scoped": true },
+      "Strife": { "id": "eris", "scoped": true },
+      "Toil": { "id": "ponos", "scoped": true },
+      "Famine": { "id": "limos", "scoped": true },
+      "Sorrows": { "id": "algea", "scoped": true },
+      "Fightings": { "id": "hysminai", "scoped": true },
+      "Battles": { "id": "makhai", "scoped": true },
+      "Murders": { "id": "phonoi", "scoped": true },
+      "Manslaughters": { "id": "androktasiai", "scoped": true },
+      "Quarrels": { "id": "neikea", "scoped": true },
+      "Lying": { "id": "pseudea", "scoped": true },
+      "Disputes": { "id": "amphillogiai", "scoped": true },
+      "Lawlessness": { "id": "dysnomia", "scoped": true },
+      "Ruin": { "id": "ate", "scoped": true },
+      "Oath": { "id": "horkos", "scoped": true },
+      "Deceit": { "id": "apate", "scoped": true },
+      "Friendship": { "id": "philotes", "scoped": true },
+      "Age": { "id": "geras", "scoped": true },
+      "Doom": { "id": "moros", "scoped": true },
+      "Blame": { "id": "momus", "scoped": true },
+      "Woe": { "id": "oizys", "scoped": true },
+      "Dreams": { "id": "oneiroi", "scoped": true },
+      "Day": { "id": "hemera", "scoped": true },
+      "Thaleia": ["thalia-charis", "thalia-muse", "thalia-nereid"],
+      "Cleio": "clio",
+      "Eosphorus": "lucifer-morning",
+      "Giants": "gigantes",
+      "Cheiron": "chiron",
+      "Typhaon": "typhon",
+      "Sthenno": "stheno"
     },
     "hesiod-works-and-days-en": {
       "Cronos": "cronus",
-      "Earth": { "id": "gaia", "scoped": true }
+      "Earth": { "id": "gaia", "scoped": true },
+      "Horcus": "horkos"
     },
     "apollonius-argonautica-en-gutenberg": {
       "Cronos": "cronus",
@@ -73,7 +121,12 @@
     },
     "ovid-metamorphoses-en": {
       "Jove": "zeus",
-      "Sun": { "id": "helios", "scoped": true }
+      "Sun": { "id": "helios", "scoped": true },
+      "Furies": "erinyes",
+      "Lynkeus": "lynceus-apharetid",
+      "Proserpine": "persephone",
+      "Typhoeus": "typhon",
+      "Famine": { "id": "limos", "scoped": true }
     },
     "apollodorus-library-en": {
       "Egyptus": "aegyptus",
@@ -81,10 +134,40 @@
       "Sky": { "id": "uranus", "scoped": true },
       "Ocean": { "id": "oceanus", "scoped": true },
       "Sun": { "id": "helios", "scoped": true },
-      "Dawn": { "id": "eos", "scoped": true }
+      "Dawn": { "id": "eos", "scoped": true },
+      "Metanira": "metaneira",
+      "Rhadamanthys": "rhadamanthus",
+      "Aphidas": "apheidas",
+      "Pandrosus": "pandrosos-cecrops",
+      "Phorcus": "phorcys",
+      "Thia": "theia",
+      "Erythia": "erytheia-hesperid",
+      "Furies": "erinyes",
+      "Gyes": "gyges-hecatoncheir",
+      "Iphimedia": "iphimedeia",
+      "Peteos": "peteus-athens",
+      "Polymnia": "polyhymnia",
+      "Simoeis": "simois",
+      "Spio": "speo",
+      "Victory": { "id": "nike", "scoped": true },
+      "Adrastia": "adrasteia-cretan",
+      "Aglaia": { "id": "aglaea", "scoped": true },
+      "Atropus": "atropos",
+      "Dominion": { "id": "cratos", "scoped": true },
+      "Eurygania": "euryganeia",
+      "Orthus": "orthrus",
+      "Clytaemnestra": "clytemnestra",
+      "Phorcides": { "id": "graeae", "scoped": true }
     },
     "apollodorus-epitome-en": {
-      "Clytaemnestra": "clytemnestra"
+      "Clytaemnestra": "clytemnestra",
+      "Phidippus": "pheidippus-cos",
+      "Liodes": "leiodes-ithaca",
+      "Penthesilia": "penthesilea",
+      "Pisander": "peisander-same",
+      "Furies": "erinyes",
+      "Epeus": "epeius",
+      "Anticlia": "anticleia"
     },
     "hyginus-fabulae-en": {
       "Jove": "zeus",
@@ -134,7 +217,22 @@
       "Death": { "id": "thanatos", "scoped": true },
       "Love": { "id": "eros", "scoped": true },
       "Discord": { "id": "eris", "scoped": true },
-      "Fate": { "id": "moros", "scoped": true }
+      "Fate": { "id": "moros", "scoped": true },
+      "Aeropa": "aerope",
+      "Phorcus": "phorcys",
+      "Victory": { "id": "nike", "scoped": true },
+      "Icarus": ["icarius-attica", "icarus"],
+      "Age": { "id": "geras", "scoped": true },
+      "Wretchedness": { "id": "oizys", "scoped": true },
+      "Dreams": { "id": "oneiroi", "scoped": true },
+      "Friendship": { "id": "philotes", "scoped": true },
+      "Oblivion": { "id": "lethe-daimon", "scoped": true },
+      "Force": { "id": "bia", "scoped": true },
+      "Envy": { "id": "zelus", "scoped": true },
+      "Power": { "id": "cratos", "scoped": true },
+      "Phorcides": { "id": "graeae", "scoped": true },
+      "Sthenno": "stheno",
+      "Maeandrus": "meander"
     },
     "hyginus-astronomica-en": {
       "Jove": "zeus",
@@ -154,6 +252,19 @@
       "Earth": { "id": "gaia", "scoped": true },
       "Ocean": { "id": "oceanus", "scoped": true }
     },
-    "pausanias-description-en": {}
+    "pausanias-description-en": {
+      "Ogygus": "ogyges-boeotia",
+      "Clytaemnestra": "clytemnestra",
+      "Oreithyia": "orithyia-athens",
+      "Alpheius": { "id": "alpheus", "scoped": true },
+      "Pandrosus": "pandrosos-cecrops",
+      "Peteos": "peteus-athens",
+      "Polyneices": "polynices",
+      "Aglaia": { "id": "aglaea", "scoped": true },
+      "Aglaurus": "aglauros-cecrops",
+      "Briareos": "briareus",
+      "Hilaeira": "hilaira",
+      "Hippodameia": ["hippodamia", "hippodameia-lapith"]
+    }
   }
 }

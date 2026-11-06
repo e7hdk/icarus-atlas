@@ -514,7 +514,7 @@ const NEW_CITIES = [
     certainty: 'approximate',
     importance: 'major',
     summary: {
-      text: 'Percote — the Troad settlement of Merops the seer and the pasture of Melanippus\' kine before the Danaans came; Nestor\'s catalogue musters Adrastus and Araphius from the men who dwelt about Percote and Practius.',
+      text: 'Percote — the Troad settlement of Merops the seer and the pasture of Melanippus\' kine before the Danaans came; Nestor\'s catalogue musters Adrastus and Amphius from the men who dwelt about Percote and Practius.',
       sources: ['homer', 'apollodorus', 'apollonius'],
       citation: 'Iliad 2.820-855, 6.1-35, 11.210-335, 15.515-555; Epitome 3.35; Argonautica 1.922',
     },
@@ -589,7 +589,7 @@ const NEW_CITIES = [
     certainty: 'approximate',
     importance: 'minor',
     summary: {
-      text: 'Adrasteia in the Troad — the inland district whose men Adrastus and Araphius led beside Apaesus, Pityeia, and Tereia in Nestor\'s catalogue, though their father Merops the seer dwelt at Percote.',
+      text: 'Adrasteia in the Troad — the inland district whose men Adrastus and Amphius led beside Apaesus, Pityeia, and Tereia in Nestor\'s catalogue, though their father Merops the seer dwelt at Percote.',
       sources: ['homer'],
       citation: 'Iliad 2.820-855',
     },

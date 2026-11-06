@@ -17,7 +17,7 @@
         "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Argonautica 2.1037; Fabulae 14"
+      "citation": "Bibliotheca 3.10.8; Argonautica 1.71–76, 2.1037; Fabulae 14.2"
     }
   ],
   "story": [
@@ -33,18 +33,13 @@
   "residences": [
     {
       "city": "opous-locris",
-      "sources": ["apollodorus", "hyginus"],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
-    },
-    {
-      "city": "aulis-boeotia",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Epitome 3.11; Iliad 2.527–535"
+      "sources": ["homer"],
+      "citation": "Iliad 2.527–535"
     },
     {
       "city": "pagasae",
-      "sources": ["apollodorus", "apollonius", "hyginus"],
-      "citation": "Bibliotheca 1.9.16; Argonautica 2.1037; Fabulae 14"
+      "sources": ["apollonius", "hyginus"],
+      "citation": "Argonautica 1.71–76, 2.1037; Fabulae 14.2"
     }
   ]
 }

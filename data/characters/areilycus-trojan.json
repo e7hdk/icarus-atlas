@@ -1,0 +1,29 @@
+{
+  "id": "areilycus-trojan",
+  "name": "Areilycus",
+  "greekName": "Areilykos (Ἀρηΐλυκος)",
+  "type": "hero",
+  "domains": ["Trojan warrior", "Patroclus' target"],
+  "cluster": "mortal-arm",
+  "summary": [
+    {
+      "text": "Trojan leader whom Patroclus speared through the thigh as he turned to flee, first of the chieftains to fall when the fight was scattered at the ships — a namesake of Areilycus, father of the Boeotian captain Prothoënor.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.306–311"
+    }
+  ],
+  "story": [
+    {
+      "text": "Then man slew man of the chieftains as the fight was scattered. First the valiant son of Menoetius smote the thigh of Areilycus with a cast of his sharp spear at the moment when he turned to flee, and drave the bronze clean through; and the spear brake the bone, and he fell on his face on the ground.",
+      "sources": ["homer"],
+      "citation": "Iliad 16.306–311"
+    }
+  ],
+  "residences": [
+    {
+      "city": "troy",
+      "sources": ["homer"],
+      "citation": "Iliad 16.306–311"
+    }
+  ]
+}

@@ -1319,12 +1319,12 @@ Verification: ✓ verified — Epitome 1.16 (Antiope and Hippolyte in the same p
 | Author | Claim | Citation |
 |---|---|---|
 | Homer | Odysseus is the son of Laertes; in the underworld Anticleia names Laertes' kindness and her grief for her son. | Iliad 3.201–204; Odyssey 11.85–96, 11.187–196 |
-| Pseudo-Apollodorus | Ulysses sailed to Troy as son of Laertes and Anticlia. | Epitome 3.10 |
+| Pseudo-Apollodorus | Ulysses sailed to Troy as son of Laertes and Anticlia. | Epitome 3.12 |
 | Hyginus | Sisyphus seduced Anticleia while she delayed at his court; some writers accordingly call Odysseus Sisyphean for his shrewdness. | Fabulae 201 |
 
 Significance: the man of many devices is either the legitimate son of Laertes or the fruit of Sisyphus' cunning — a paternity dispute that explains the epithet some authors applied to his wit.
 
-Verification: ✓ verified — Odyssey 11.85–96 (Anticleia, daughter of Autolycus, wife of Laertes); Epitome 3.10 (Laertes and Anticlia); Fabulae 201 (Sisyphus and Anticleia).
+Verification: ✓ verified — Odyssey 11.85–96 (Anticleia, daughter of Autolycus, wife of Laertes); Epitome 3.12 (Laertes and Anticlia); Fabulae 201 (Sisyphus and Anticleia).
 
 ## The mother of Philammon
 

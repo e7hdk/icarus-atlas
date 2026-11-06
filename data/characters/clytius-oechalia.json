@@ -11,48 +11,45 @@
   ],
   "summary": [
     {
-      "text": "Son of Eurytus of Oechalia and Antiope, Argonaut slain at Colchis by Aeetes or, in another tale, by Heracles.",
+      "text": "Son of Eurytus of Oechalia and Antiope, Argonaut slain at Colchis by Aeetes.",
       "sources": [
-        "hyginus",
-        "apollodorus"
+        "hyginus"
       ],
-      "citation": "Fabulae 14; Bibliotheca 1.9.16"
+      "citation": "Fabulae 14.2"
     }
   ],
   "story": [
     {
       "text": "Hyginus names Clytius son of Eurytus among the Argonauts; his father had received archery from Apollo. At Colchis he fell — some say to Aeetes' hand.",
       "sources": [
-        "hyginus",
-        "apollodorus"
+        "hyginus"
       ],
-      "citation": "Fabulae 14; Bibliotheca 1.9.16"
+      "citation": "Fabulae 14.2"
     }
   ],
   "residences": [
     {
       "city": "oechalia",
       "sources": [
-        "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+      "citation": "Argonautica 1.86–89; Fabulae 14.2"
     },
     {
       "city": "aea-colchis",
       "sources": [
-        "apollodorus",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+      "citation": "Fabulae 14.2"
     },
     {
       "city": "pagasae",
       "sources": [
-        "apollodorus",
+        "apollonius",
         "hyginus"
       ],
-      "citation": "Bibliotheca 1.9.16; Fabulae 14"
+      "citation": "Argonautica 1.86–89; Fabulae 14.2"
     }
   ]
 }
