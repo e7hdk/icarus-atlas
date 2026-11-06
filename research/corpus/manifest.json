@@ -198,6 +198,23 @@
       "file": "apollonius-argonautica-en.html"
     },
     {
+      "id": "apollonius-argonautica-en-gutenberg",
+      "sourceId": "apollonius",
+      "author": "Apollonius of Rhodes",
+      "work": "Argonautica",
+      "citationLabel": "Argonautica",
+      "language": "en",
+      "format": "gutenberg-txt",
+      "urnBase": "urn:cts:greekLit:tlg0001.tlg001",
+      "edition": "R. C. Seaton translation, 1912 (Loeb), Project Gutenberg #13977",
+      "license": "Public domain (Project Gutenberg #13977, as mirrored by GITenberg)",
+      "url": "https://raw.githubusercontent.com/GITenberg/The-Argonautica_13977/b8649e85fbe54d593f02757bdadfa7753428fb81/13977-8.txt",
+      "sha256": "13cdcb4dfb6fb6c8acbf4a8a7869717e78e6332ffcb0d7ce6bc8304da0feeb38",
+      "file": "apollonius-argonautica-en-gutenberg.txt",
+      "encoding": "latin1",
+      "anchors": "apollonius-argonautica-en"
+    },
+    {
       "id": "apollonius-argonautica-grc",
       "sourceId": "apollonius",
       "author": "Apollonius of Rhodes",

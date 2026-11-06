@@ -62,8 +62,8 @@
       "units": "books",
       "aliases": ["Argonautica", "Arg.", "Arg", "Apoll. Arg.", "Ap. Rhod.", "Ap. Rhod. Arg.", "Apollonius, Argonautica", "Apollonius Rhodius, Argonautica"],
       "original": { "corpusId": "apollonius-argonautica-grc", "credit": "Greek text ed. G. W. Mooney (London, 1912), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
-      "translation": { "corpusId": "apollonius-argonautica-en", "credit": "English translation by R. C. Seaton (Loeb, 1912); public domain, to be re-sourced from Project Gutenberg #13977 before display (docs/LIBRARY_PLAN.md §4.4)", "licence": "Public domain (pinned copy: ToposText, CC BY-NC 4.0)" },
-      "display": "excerpt"
+      "translation": { "corpusId": "apollonius-argonautica-en-gutenberg", "credit": "English translation by R. C. Seaton (Loeb, 1912), Project Gutenberg #13977", "licence": "Public domain" },
+      "display": "full"
     },
     {
       "id": "metamorphoses",

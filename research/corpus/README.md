@@ -23,4 +23,4 @@ pnpm corpus:search pandora --source hesiod --work "Works and Days" --limit 10
 - Cite the ancient work and passage, not merely the corpus provider.
 - Record the compiler honestly when Pseudo-Apollodorus or Pseudo-Hyginus quotes an older authority.
 
-Perseus files are pinned to repository commits and retain their CC BY-SA 4.0 notices. The ToposText pages used here contain public-domain translations and are distributed by ToposText under CC BY-NC 4.0. See each manifest entry for edition and license details.
+Perseus files are pinned to repository commits and retain their CC BY-SA 4.0 notices. The ToposText pages used here contain public-domain translations and are distributed by ToposText under CC BY-NC 4.0. See each manifest entry for edition and license details. Seaton's *Argonautica* is also pinned from Project Gutenberg #13977 (GITenberg's mirror, at a commit), a public-domain text printed without line numbers: it takes them from the ToposText copy of the same translation (`anchors` in its manifest entry).

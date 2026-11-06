@@ -14,6 +14,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.1',
+    codename: 'The Argo in English',
+    date: '2026-11-06',
+    lines: [
+      'The Argonautica found its English. Seaton’s translation of 1912 now runs beside Mooney’s Greek in the Library, all four books of the voyage, from the public-domain text of Project Gutenberg, each paragraph set against the line of the Greek where it begins.',
+      'Three of those beginnings had been misprinted in the copy the atlas first read, and the Greek set them right: Zetes and Calais join the crew at line 211 of the first book, not 221; Jason answers Argus at 3.484; Medea leaves the city’s paved streets for Hecate’s shrine at 3.887. The Ilissus, which had taken its line from the first misprint, now cites the lines that name it.',
+      'On a figure’s page the list of tellers no longer hides behind the column it opens from: it opens over the page, whole and clear, and follows its button as the page scrolls.',
+    ],
+  },
+  {
     version: '0.6.0',
     codename: 'The Library and the First Quarrel',
     date: '2026-11-06',

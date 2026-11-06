@@ -36,7 +36,7 @@ The door's metaphor is already in the sources:
 |---|---|
 | Pinned corpus | 20 editions of 11 works by the 7 tellers; the original language for every work but Hyginus (English only) |
 | Text, both languages | 8.4 MB. Largest books: Pausanias 8 at 359 KB, *Argonautica* 4 at 171 KB, *Bibliotheca* 3 at 149 KB |
-| Licences | 17 Perseus files, CC BY-SA 4.0, the licence of `data/LICENSE`. 3 ToposText pages, CC BY-NC 4.0: Seaton's *Argonautica* (1912, a public-domain text) and Mary Grant's *Fabulae* and *Astronomica* Book 2 (1960; registered, and no renewal found, so public domain in the US since 1989 — §4.4) |
+| Licences | 17 Perseus files, CC BY-SA 4.0, the licence of `data/LICENSE`. 3 ToposText pages, CC BY-NC 4.0: Seaton's *Argonautica* (1912, a public-domain text, now read from Project Gutenberg, the page kept for its line anchors) and Mary Grant's *Fabulae* and *Astronomica* Book 2 (1960; registered, and no renewal found, so public domain in the US since 1989 — §4.4) |
 | Citations in `data/` | 10,887 strings: characters 8,390, stories 1,666, lineages 380, geo 239, reference 62, relations 62, chronology 38, Nostos 21, sky 19, Patterns 10 |
 | Resolved by a prototype resolver | 95.3% of strings fully, 95.9% of 17,220 loci. The rest: works outside the corpus (Ovid's *Fasti*, the Homeric Hymns, the Parian Marble, Eusebius), free-text chronology notes, and about 180 loci past the end of their book |
 | Spellings of one work | Apollodorus' *Library* appears as "Bibliotheca", "Apollod.", "Apollodorus, Bibliotheca" and "Library"; story attestations call it "The Library" (98), "Epitome" (54) and "Bibliotheca" (4) |
@@ -168,6 +168,8 @@ The research normalizer (`scripts/lib/corpus.ts`) is built for search, not readi
 - **Hyginus:** English only; the corpus has no Latin.
 - **The licence gate.** The 17 Perseus files show in full, with credit.
 - **Seaton's *Argonautica*** is public domain everywhere (Seaton died in 1915), but our copy comes from a CC BY-NC page. The same 1912 text is re-sourced from Project Gutenberg #13977, which keeps the Loeb's summaries with their line ranges, the notes and the index (#830 is Seaton too, without them). The Loeb printed no line numbers beside the English, only beside the Greek, so the English carries no anchors of its own. Matching its paragraphs to the pinned ToposText ones carries ToposText's anchors over; they are facts about where a paragraph starts, not ToposText's expression. Perseus has no English *Argonautica* (its folder holds only Mooney's Greek).
+  - *Done 2026-11-06.* Gutenberg regenerates its files, and its original `files/13977` copies no longer answer, so the text is pinned from GITenberg's mirror at a commit (`13977-8.txt`, Latin-1): its books match Gutenberg's current text line for line, diacritics included. The corpus reads it as `gutenberg-txt` (`scripts/lib/corpus.ts`): the books' paragraphs, the footnotes and their marks left out, the double hyphens set as dashes, cut at ToposText's 328 anchors. Every anchor lands, every piece runs within a tenth of its ToposText paragraph's length (all within 7%), and a speech keeps its opening quotation mark. ToposText's own wording drifts from Seaton's in places ("Oiagrus" for "Oeagrus", "Ionian Sea" for "Ionian gulf"); the display is Seaton's.
+  - Three of ToposText's ids are misprinted, and the Greek shows where each paragraph opens: 1.221 is 1.211 (Zetes and Calais, Ζήτης αὖ Κάλαΐς τε), 3.383 is 3.484 (Ἴσκεν ἐυφρονέων) and 3.388 is 3.887 (αὐτὰρ ἐπεὶ πόλιος μὲν ἐυδμήτους λίπʼ ἀγυιάς). The corrections apply wherever the anchors are read, so the Greek blocks and the research index cite them right. The Ilissus took its citations from the first: they now cite 1.212–218, 1.214–215 and 1.215.
 - **Grant's Hyginus** was registered on 30 December 1960 (A489429, University of Kansas Press). No renewal turns up in the Copyright Office's online records, which include 1988, or in NYPL's dataset of renewals from 1950 to 1991. A renewal was due in 1988, so the translation has very likely been public domain in the US since 1 January 1989. HathiTrust has not reviewed it (`ic`, its default for books after 1930). Theoi and ToposText already show it in full. Grant died in 1987, so where the term is life plus 70 years it may stay protected until 2057. Showing it in full as US public domain, with that note, or keeping `display: 'excerpt'` is decision L10.
 
 (Licence findings checked 2026-11-05 against the Catalog of Copyright Entries, the Copyright Office's public records, NYPL's `cce-renewals`, HathiTrust, Project Gutenberg and the PerseusDL repository.)
@@ -368,7 +370,7 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
   - **Texts.**
     - `pnpm bake-library-texts` reads the pinned corpus into the committed `data/generated/library/<work>.json`: 11 MB, 91 reading pages, 5,526 blocks.
     - Verse aligns by Perseus card in Homer and Ovid, and by the English chunks in Hesiod; prose goes section by section.
-    - The *Argonautica* shows Mooney's Greek, and each block links to Seaton's English at ToposText. The *Fabulae* and the *Astronomica* link each passage out (L10).
+    - The *Argonautica* shows Mooney's Greek, and each block links to Seaton's English at ToposText. The *Fabulae* and the *Astronomica* link each passage out (L10). *Since 2026-11-06 the Argonautica shows Seaton's English beside the Greek, from Project Gutenberg #13977 (§4.4).*
     - The largest page is Pausanias 8, with 359 KB of text.
     - The research normalizer now leaves a space where a note or a page mark stood, so words no longer run together ("Meliae all", "Memory (Mnemosyne)").
   - **Pages.**
@@ -558,7 +560,7 @@ M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can
 | L7 | Quarrels | The catalogue moves to `data/quarrels.json`, and `docs/CONTRADICTIONS.md` is generated from it | proposed |
 | L8 | Flagship | *First, Chaos* at `/theogony`, ending on Homer's Aphrodite | proposed |
 | L9 | Greek type | EB Garamond with the `greek` and `greek-ext` subsets | proposed |
-| L10 | Licence posture | Full text only where the licence is verified. Seaton from Project Gutenberg #13977. Grant's Hyginus: registered in 1960 and never renewed, so very likely US public domain since 1989; show it in full with that note, or keep excerpts | proposed — the user's call |
+| L10 | Licence posture | Full text only where the licence is verified. Seaton from Project Gutenberg #13977: shown in full since 2026-11-06 (§4.4). Grant's Hyginus: registered in 1960 and never renewed, so very likely US public domain since 1989; show it in full with that note, or keep excerpts | Seaton decided; Grant the user's call |
 | L11 | Names outside a passage's scope | Only a god whose name no other figure bears links; everyone else links only in scope. Measured on *Iliad* 5: the looser rule made three wrong links in 180 lines | proposed |
 | L12 | Phone glyph | Three spines of unequal height on a shelf, the middle one gilt-banded, in the bar's thin-stroke idiom | proposed |
 
