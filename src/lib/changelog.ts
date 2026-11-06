@@ -20,6 +20,8 @@ export const CHANGELOG: ChangelogEntry[] = [
     lines: [
       'Seaton’s Argonautica now finds its stars under his own names: Cypris and Cytherea are Aphrodite, Enyalius is Ares, Brimo is Hecate and Cronos is Cronus, and Augeias, Meleagrus, Erytus, Cheiron and Eidyia are found where the lines are about them. Fifty-five names in the four books, plain until now, open their figures.',
       'Hyginus’ Astronomica can be read at last: the book of the star myths in Bunte’s Latin of 1875, its hundred and twenty-seven sections each beside Mary Grant’s English, from the Great Bear to the Milky Way. Thirty-four slips in the copy online were set right against Bunte’s own pages, and Jove and Father Liber are stars wherever Grant names them.',
+      'The Fabulae can be read whole in Grant’s English, from the Genealogy of the first gods to the last fable, its names linked as the Astronomica’s are; their Latin waits for an edition free to set beside them. A fable cited whole now reaches all its parts, so the Argonauts of the fourteenth stand in its margin.',
+      'Some of the crew were set right against the texts. The Asterius of Piresia is the son of Cometes, Amphion came from Pellene in Achaea and not from Macedonian Pella, Eribotes dies in Libya only in Hyginus, and a Deucalion of Pella whom no teller names has left the sky: Hyginus’ Argonaut Deucalion is Minos’ son, of Crete.',
     ],
   },
   {

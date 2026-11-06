@@ -31026,26 +31026,6 @@
     "note": "Sailed on the Argo under Jason's captaincy"
   },
   {
-    "id": "jason-ally-deucalion-pella",
-    "type": "ally",
-    "from": "jason",
-    "to": "deucalion-pella",
-    "sources": [
-      "hyginus"
-    ],
-    "note": "Sailed on the Argo as one of Jason's comrades"
-  },
-  {
-    "id": "deucalion-pella-ally-jason",
-    "type": "ally",
-    "from": "deucalion-pella",
-    "to": "jason",
-    "sources": [
-      "hyginus"
-    ],
-    "note": "Sailed on the Argo under Jason's captaincy"
-  },
-  {
     "id": "jason-ally-deucalion-crete",
     "type": "ally",
     "from": "jason",
