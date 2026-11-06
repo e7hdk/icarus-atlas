@@ -3,13 +3,13 @@
   "name": "Areilycus",
   "greekName": "Areilykos (Ἀρείλυκος)",
   "type": "hero",
-  "domains": ["father of Prothoënor", "Patroclus' target"],
+  "domains": ["father of Prothoënor", "Boeotian house"],
   "cluster": "mortal-arm",
   "summary": [
     {
-      "text": "Boeotian warrior and father of Prothoënor whom Patroclus smote through the thigh when he turned to flee in the scattered fight — Hyginus also makes him father of Arcesilaus and Prothoënor by Theobula.",
+      "text": "Boeotian father of the captain Prothoënor, named when Polydamas speared his son at the ships — and in Hyginus' roll father of Arcesilaus and Prothoënor by Theobula; a namesake of the Trojan Areilycus whom Patroclus slew.",
       "sources": ["homer", "hyginus"],
-      "citation": "Iliad 14.440–470, 16.310–350; Fabulae 97"
+      "citation": "Iliad 14.449–451; Fabulae 97"
     }
   ],
   "story": [
@@ -17,158 +17,148 @@
       "text": "Polydamas cast and smote upon the right shoulder Prothoënor, son of Areïlycus, and through the shoulder the mighty spear held its way; and he fell in the dust and clutched the ground with his palm.",
       "sources": ["homer"],
       "citation": "Iliad 14.440–470"
-    },
-    {
-      "text": "Then man slew man of the chieftains as the fight was scattered. First the valiant son of Menoetius smote the thigh of Areilycus with a cast of his sharp spear at the moment when he turned to flee, and drave the bronze clean through; and the spear brake the bone, and he fell on his face on the ground.",
-      "sources": ["homer"],
-      "citation": "Iliad 16.310–350"
     }
   ],
   "residences": [
     {
       "city": "thebes",
       "sources": ["homer", "hyginus"],
-      "citation": "Iliad 14.440–470, 16.310–350"
+      "citation": "Iliad 2.494–510, 14.449–451; Fabulae 97"
     },
     {
       "city": "aulis-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "thespiae",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "plataea",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "glisas",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "anthedon",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "potniai-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "coroneia-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "haliartus-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "thisbe-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "copae-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "onchestos-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "eutresis-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "arne-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "hyria-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "schoenus-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "scolus-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "graia-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "mycalessus-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "harma-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "eilesion-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "medeon-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "eleon-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "hyle-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "peteon-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "ocalea-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "eteonus-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
+      "citation": "Iliad 2.494–510, 14.449–451"
     },
     {
       "city": "erythrae-boeotia",
       "sources": ["homer"],
-      "citation": "Iliad 2.494–510"
-    },
-    {
-      "city": "troy",
-      "sources": ["homer"],
-      "citation": "Iliad 14.440–470, 16.310–350"
+      "citation": "Iliad 2.494–510, 14.449–451"
     }
   ]
 }

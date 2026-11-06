@@ -97,7 +97,12 @@ if (process.argv.includes('--audit')) {
     return names;
   };
   const targetIds = (target: string | string[] | { id: string }) => (typeof target === 'string' ? [target] : Array.isArray(target) ? target : [target.id]);
-  const warnings: string[] = [];
+  const unnamed: { key: string; warning: string }[] = [];
+  // One work's lines that name the figure vouch for the rest of that work in the same
+  // citation: a residence may join the lines that name a man with the lines that name
+  // his town or the muster ("Iliad 2.303–304, 2.515–545"). Another work's lines vouch
+  // for nothing: each teller must name the figure in his own words.
+  const vouched = new Set<string>();
   for (const { site, ref } of resolved) {
     const { owner } = site;
     if (ref.kind !== 'passage' || owner.kind !== 'character') continue;
@@ -118,9 +123,14 @@ if (process.argv.includes('--audit')) {
         const initial = english[match.index ?? 0] ?? '';
         return initial !== initial.toLowerCase();
       });
-    if (forms.some(named)) continue;
-    warnings.push(`${site.file} ${site.at}: ${forms[0] ?? id} is not named in ${describeRef(ref)}`);
+    const key = `${site.file} ${site.at} ${ref.work}`;
+    if (forms.some(named)) {
+      vouched.add(key);
+      continue;
+    }
+    unnamed.push({ key, warning: `${site.file} ${site.at}: ${forms[0] ?? id} is not named in ${describeRef(ref)}` });
   }
+  const warnings = unnamed.filter(({ key }) => !vouched.has(key)).map(({ warning }) => warning);
   console.log(`\naudit: ${warnings.length} fact(s) cite a passage that never names their figure`);
   for (const warning of warnings.slice(0, process.argv.includes('--all') ? Infinity : 40)) console.log(`  ${warning}`);
 }

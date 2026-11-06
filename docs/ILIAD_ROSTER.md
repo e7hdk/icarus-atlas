@@ -80,7 +80,7 @@ Out of scope (research-only): the Epic Cycle (*Cypria*, *Aethiopis*, *Little Ili
 | **Asius** | Captain from Arisbe, son of Hyrtacus (*Il.* 2, 12) — not Hecuba's brother Asius | `asius-hyrtacid` |
 | **Archelochus** | Son of Antenor (*Il.* 2, 12, 14) — no homonym in atlas | `archelochus-antenorid` |
 | **Adrastus** | Argive king (`adrastus`) vs Merops' son (`adrastus-meropsid`) vs Patroclus victim (`adrastus-trojan`) vs Menelaus' captive (`adrastus-trojan-ransom`) | suffixed per context |
-| **Araphius** | Son of Merops in Homer (*Il.* 2, 11); Apollodorus names Amphius among Merops' sons | `araphius-meropsid` |
+| **Amphius** | Son of Merops in Homer (*Il.* 2, 11) and Apollodorus (*Epit.* 3.35) — vs Amphius son of Selagus (*Il.* 5.612). Once entered as "Araphius" from an OCR slip in the Perseus English (Ἄμφιος, 2.830); renamed 2026-11-06 | `amphius-meropsid` |
 | **Polybus** | Son of Antenor at Troy (*Il.* 11) vs Ithacan suitor (`polybus-ithaca`) vs Zacynthian suitor (`polybus-zacynthus`) | `polybus-antenorid` |
 | **Alcathous** | Trojan captain, son-in-law of Anchises (*Il.* 12–13) — no homonym in atlas yet | `alcathous-trojan` |
 | **Medon** | Bastard son of Oileus, Phthian captain (*Il.* 2, 13, 15) vs Ithacan herald (`medon-ithaca`) vs Dulichian suitor (`medon-dulichium`) | `medon-phthian` |
@@ -149,7 +149,7 @@ Out of scope (research-only): the Epic Cycle (*Cypria*, *Aethiopis*, *Little Ili
 | **Imbrius** | Son-in-law of Priam, slain by Teucer (*Il.* 13) — no homonym in atlas | `imbrius-trojan` |
 | **Dracius** | Epeian captain under Meges (*Il.* 13) — no homonym in atlas | `dracius-epeian` |
 | **Pheidas** | Athenian captain under Menestheus (*Il.* 13) — no homonym in atlas | `pheidas-athenian` |
-| **Araphion** | Epeian captain under Meges (*Il.* 13) vs son of Merops (`araphius-meropsid`) | `araphion-epeian` |
+| **Amphion** | Epeian captain under Meges (*Il.* 13) vs `amphion` (Thebes), `amphion-pella` (Argonaut). Once entered as "Araphion" from the same OCR slip (Ἀμφίων, 13.692); renamed 2026-11-06 | `amphion-epeian` |
 | **Cleitus** | Son of Peisenor, comrade of Polydamas, slain by Teucer (*Il.* 15) vs son of Melampus (`cleitus-melampid`) | `cleitus-trojan` |
 | **Croesmus** | Trojan slain by Polydamas (*Il.* 15) — no homonym in atlas | `croesmus-trojan` |
 | **Thoön** | Trojan slain by Agamemnon (*Il.* 11) vs son of Phaenops slain by Diomedes (*Il.* 5) vs Trojan slain by Antilochus (*Il.* 13) | `thoon-trojan` / `thoon-phaenopid` |
@@ -226,7 +226,7 @@ Before any new `id` is written:
 | `hippothous-pelasgian`, `pylaeus-pelasgian` | Priam's son Hippothous (*Il.* 24), Ovidic hunters | Suffixed ids; `Lethus`, `Teutamus`, `Pelasgus` (Larissa) wired |
 | `acamas-thracian` | `acamas-dulichium`, `acamas-antenorid` | Suffixed ids; `Peirous` wired in Batch M |
 | `euphemus-ciconian`, `peirous-thracian`, `archelochus-antenorid`, `acamas-antenorid`, `asius-hyrtacid` | `euphemus` (Argonaut); `acamas-thracian`; `acamas-dulichium`; Hecuba's brother Asius (prose) | Suffixed ids; `Troezenus`, `Eusorus` wired; `Hyrtacus`, `Theanus` deferred |
-| `adrastus-meropsid`, `araphius-meropsid` | `adrastus` (Argive king) | Suffixed ids; `Merops` deferred; Apollodorus' Amphius = Araphius (prose + topic) |
+| `adrastus-meropsid`, `amphius-meropsid` | `adrastus` (Argive king) | Suffixed ids; `Merops` deferred; Homer and Apollodorus agree on Amphius |
 | `polybus-antenorid` | `polybus-ithaca`, `polybus-zacynthus` | Suffixed id |
 | `alcathous-trojan` | None | Clean id; `Aesyetes` wired; `hippodameia-trojan` wired |
 | `medon-phthian` | `medon-ithaca`, `medon-dulichium` | Suffixed id; `rhene-phthian`, `eriopis-phthian` wired |
@@ -264,7 +264,7 @@ Before any new `id` is written:
 | `stichius-athenian` | None | Clean id |
 | `pheidas-athenian` | None | Clean id |
 | `bias-athenian` | `bias-aeolid`, `bias-dulichium`, `bias-pylian` | Suffixed id |
-| `araphion-epeian` | `araphius-meropsid` | Suffixed id |
+| `amphion-epeian` | `amphion`, `amphion-pella` | Suffixed id |
 | `cleitus-trojan` | `cleitus-melampid` | Suffixed id; `Peisenor` wired (`peisenor-trojan`) |
 | `euphorbus-trojan` | None | Clean id; `Panthous` wired (`panthous-trojan`); `polydamas` sibling wired |
 | `imbrius-trojan` | None | Clean id; `Mentor`, `Medesicaste` deferred |
@@ -320,7 +320,7 @@ Before any new `id` is written:
 | `alastor-trojan` | `alastor-pylian`, `alastor-lycian`, `alastor-achaean` | Suffixed id; parent `tros-alastorid` wired |
 | `lycaon-pandarusid` | `lycaon`, `lycaon-trojan` | Suffixed id; parent `pandarus` wired |
 | `alectryon-boeotian` | Alectryon guardian of dawn (myth) | Suffixed id; parent `leitus` wired |
-| `areilycus-achaean` | None | Clean id; `patroclus` slayer wired; parent `prothoenor` (Homer), `arcesilaus` (Hyginus) |
+| `areilycus-achaean` | `areilycus-trojan` | Suffixed id; parent `prothoenor` (Homer), `arcesilaus` (Hyginus). Split 2026-11-06: the Areilycus Patroclus slays (*Il.* 16.306–311) is a Trojan leader, now `areilycus-trojan` |
 | `otrynteus-trojan` | None | Clean id; parent `iphition-otrynteid` wired |
 | `peiros-thracian` | None | Clean id; `thoas-aetolia` slayer wired; slayer `diores-epeian` |
 | `imbrasus-thracian` | Samian Imbrasus (Argonautica) | Suffixed id; parent `peiros-thracian` wired |
@@ -339,7 +339,7 @@ Before any new `id` is written:
 | `clytius-trojan` | `clytius-same`, `clytius-zacynthus`, `clytius-oechalia`; father of `dolops-clytiid` (Achaean, separate) | Suffixed id; sibling `priam`, `hicetaon-trojan`, `lampus-trojan` wired |
 | `ucalegon-trojan` | None | Clean id |
 | `hyrtacus-trojan` | Samian Imbrasus (Argonautica) | Suffixed id; parent `asius-hyrtacid` wired |
-| `merops-percote` | Merops Ethiopia; Ovidic Merops father of Clymene | Suffixed id; parent `adrastus-meropsid`, `araphius-meropsid` wired; `Merops` deferral cleared |
+| `merops-percote` | Merops Ethiopia; Ovidic Merops father of Clymene | Suffixed id; parent `adrastus-meropsid`, `amphius-meropsid` wired; `Merops` deferral cleared |
 | `phaenops-trojan` | Phaenops at Abydus (*Il.* 17); father of Phorcys in *Il.* 17 | Clean id; parent `xanthus-phaenopid`, `thoon-phaenopid` wired |
 | `clytius-achaean` | `clytius-trojan`, suitor homonyms | Suffixed id; parent `dolops-clytiid` wired |
 | `tenthredon-magnesia` | None | Clean id; parent `prothous-magnesia` wired |
@@ -349,7 +349,7 @@ Before any new `id` is written:
 | `ceas-ciconian` | None | Clean id; parent `troezenus-ciconian` wired |
 | `phylacus-phthian` | Phylacus slain by Leïtus (*Il.* 6) | Suffixed id; parent `iphiclus-phthian` wired |
 | `aesyetes-trojan` | None | Clean id; parent `alcathous-trojan` wired |
-| `theanus-dardanian` | None | Clean id; Apollodorus Dardanian leader only; ally `aeneas`, `archelochus-antenorid`, `acamas-antenorid` wired |
+| ~~`theanus-dardanian`~~ | — | Removed 2026-11-06: a ghost. Epit. 3.34 reads Ἀρχέλοχος καὶ Ἀκάμας Ἀντήνορος καὶ Θεανοῦς, "sons of Antenor and Theano"; the English "and Theanus" misreads the genitive of Θεανώ |
 | `creon-achaean` | `creon`, `creon-corinth` | Suffixed id; parent `lycomedes-creonid` wired |
 | `hippodameia-trojan` | `hippodameia-lapith`; Pelops' bride; Odyssey maid | Suffixed id; parent `anchises`; consort `alcathous-trojan` wired |
 | `rhene-phthian` | Pausanias' Delian island name | Suffixed id; parent `medon-phthian`; Hyginus also names her mother of `ajax-oileus` |
@@ -377,7 +377,7 @@ Before any new `id` is written:
 | `pylaemenes-survival` | *Il.* 5 has Menelaus slay Pylaemenes; *Il.* 13 has the same king tend his dying son Harpalion | *Il.* 5.580–625, 13.640–670 | J (prose only) |
 | `ennomus-death-timing` | Catalogue foretells Ennomus slain by Achilles in the river; *Il.* 17 still names him among living allied captains | *Il.* 2.860–875, 17.210–245 | J (prose only) |
 | `phorcys-phrygian-parentage` | Catalogue and Apollodorus name Phorcys son of Aretaon; *Il.* 17 names him son of Phaenops | *Il.* 2.860–875, 17.275–315; Epit. 3.35 | K (prose only) |
-| `merops-sons-name` | Homer names Araphius son of Merops; Apollodorus Epit. 3.35 names Amphius — not the Amphius son of Selagus at *Il.* 5.580 | *Il.* 2.820–855, 11.295–335; Epit. 3.35 | N (prose only) |
+| ~~`merops-sons-name`~~ | Withdrawn 2026-11-06: no dispute. Homer's Ἄμφιος (2.830) and Apollodorus' Amphius (Epit. 3.35) agree; "Araphius" was an OCR slip in the Perseus English | *Il.* 2.820–855, 11.295–335; Epit. 3.35 | — |
 
 ## 7. Batch plan
 
@@ -439,7 +439,7 @@ The quarrel of Achilles: the plague-priest, the two captives, the ugly railer, t
 
 ### Batch N — Merops' sons, Antenor's third son, Alcathous & Medon ✅ (5 figures)
 
-`adrastus-meropsid`, `araphius-meropsid`, `polybus-antenorid`, `alcathous-trojan`, `medon-phthian` — *Iliad* 2, 11–13, 15. `adrastus-meropsid` ≠ `adrastus`; `araphius-meropsid` vs Apollodorus' Amphius (`merops-sons-name` topic); `polybus-antenorid` ≠ suitor homonyms; `medon-phthian` ≠ `medon-ithaca` / `medon-dulichium`; `Merops`, `Hippodameia` deferred; `Aesyetes` wired in Batch AU.
+`adrastus-meropsid`, `amphius-meropsid`, `polybus-antenorid`, `alcathous-trojan`, `medon-phthian` — *Iliad* 2, 11–13, 15. `adrastus-meropsid` ≠ `adrastus`; `amphius-meropsid` ≠ Amphius son of Selagus; `polybus-antenorid` ≠ suitor homonyms; `medon-phthian` ≠ `medon-ithaca` / `medon-dulichium`; `Merops`, `Hippodameia` deferred; `Aesyetes` wired in Batch AU.
 
 ### Batch O — Iasus, rally captains & Book 15 deaths ✅ (5 figures)
 
@@ -479,11 +479,11 @@ The quarrel of Achilles: the plague-priest, the two captives, the ugly railer, t
 
 ### Batch X — Protesilaus, Athenians, Euphorbus & battle roll ✅ (5 figures)
 
-`protesilaus`, `stichius-athenian`, `euphorbus-trojan`, `imbrius-trojan`, `dracius-epeian` — *Iliad* 2, 13, 16–17. `protesilaus` sibling `podarces-phthian`; `euphorbus-trojan` sibling `polydamas`; `menelaus` slayer `euphorbus-trojan`; `teucer` slayer `imbrius-trojan`; `Pheidas`, `bias-athenian`, `Araphion`, `Mentor`, `Medesicaste` deferred.
+`protesilaus`, `stichius-athenian`, `euphorbus-trojan`, `imbrius-trojan`, `dracius-epeian` — *Iliad* 2, 13, 16–17. `protesilaus` sibling `podarces-phthian`; `euphorbus-trojan` sibling `polydamas`; `menelaus` slayer `euphorbus-trojan`; `teucer` slayer `imbrius-trojan`; `Pheidas`, `bias-athenian`, `Amphion`, `Mentor`, `Medesicaste` deferred.
 
 ### Batch Y — Athenian & Epeian captains, Cleitus & Croesmus ✅ (5 figures)
 
-`pheidas-athenian`, `bias-athenian`, `araphion-epeian`, `cleitus-trojan`, `croesmus-trojan` — *Iliad* 13, 15. Menestheus' picked Athenians complete (`stichius-athenian`, `pheidas-athenian`, `bias-athenian`); Meges' Epeian captains complete (`dracius-epeian`, `araphion-epeian`); `teucer` slayer `cleitus-trojan`; `polydamas` slayer `croesmus-trojan`; `Peisenor`, `dolops-trojan` deferred.
+`pheidas-athenian`, `bias-athenian`, `amphion-epeian`, `cleitus-trojan`, `croesmus-trojan` — *Iliad* 13, 15. Menestheus' picked Athenians complete (`stichius-athenian`, `pheidas-athenian`, `bias-athenian`); Meges' Epeian captains complete (`dracius-epeian`, `amphion-epeian`); `teucer` slayer `cleitus-trojan`; `polydamas` slayer `croesmus-trojan`; `Peisenor`, `dolops-trojan` deferred.
 
 ### Batch Z — Agamemnon's Book 11 roll & Dolops ✅ (5 figures)
 
@@ -571,7 +571,7 @@ The quarrel of Achilles: the plague-priest, the two captives, the ugly railer, t
 
 ### Batch AU — Athenian, Phthian, Trojan & Dardanian parent nodes ✅ (6 figures)
 
-`bucolus-athenian`, `ceas-ciconian`, `phylacus-phthian`, `aesyetes-trojan`, `theanus-dardanian`, `creon-achaean` — *Iliad* 2, 6, 13, 15, 19; Epit. 3.34; *Bibl.* 3.12.5. `Bucolus`, `Ceas`, `Phylacus` (Phthian), `Aesyetes`, `Theanus`, `Creon` (Achaean) parent deferrals cleared; `priam` parent edges for `deiopites-trojan`, `chersidamas-trojan`; `phylacus-phthian` ≠ Pedasus homonym (*Il.* 6); `creon-achaean` ≠ `creon` / `creon-corinth`; `theanus-dardanian` Apollodorus-only (Homer names Aeneas alone for the Dardanians); `Hippodameia`, `Rhene`, `Eriopis` cleared in Batch AV.
+`bucolus-athenian`, `ceas-ciconian`, `phylacus-phthian`, `aesyetes-trojan`, `creon-achaean` — *Iliad* 2, 6, 13, 15, 19; Epit. 3.34; *Bibl.* 3.12.5. `Bucolus`, `Ceas`, `Phylacus` (Phthian), `Aesyetes`, `Creon` (Achaean) parent deferrals cleared; `priam` parent edges for `deiopites-trojan`, `chersidamas-trojan`; `phylacus-phthian` ≠ Pedasus homonym (*Il.* 6); `creon-achaean` ≠ `creon` / `creon-corinth`; `Hippodameia`, `Rhene`, `Eriopis` cleared in Batch AV.
 
 ### Batch AV — Anchises' daughter, Oileus' household & Bucolion stemma ✅ (5 figures)
 
@@ -690,7 +690,7 @@ Remaining Priam stemma edges, catalog Boeotian dispute topics, and other deferre
 
 ### Batch N
 
-- `adrastus-meropsid`, `araphius-meropsid` ally `agamemnon` and each other; `diomedes` slayer both (chariot-team, *Il.* 11)
+- `adrastus-meropsid`, `amphius-meropsid` ally `agamemnon` and each other; `diomedes` slayer both (chariot-team, *Il.* 11)
 - `antenor` parent `polybus-antenorid`; `polybus-antenorid` ally `acamas-antenorid`, `agenor-trojan`
 - `alcathous-trojan` ally `aeneas`, `paris`, `anchises`; `idomeneus` slayer `alcathous-trojan`
 - `medon-phthian` ally `agamemnon`, `ajax-oileus`; `aeneas` slayer `medon-phthian`
@@ -761,7 +761,7 @@ Remaining Priam stemma edges, catalog Boeotian dispute topics, and other deferre
 ### Batch Y
 
 - `pheidas-athenian`, `bias-athenian` ally `menestheus`, `agamemnon`; `pheidas-athenian` ally `stichius-athenian`
-- `araphion-epeian` ally `meges-dulichium`, `dracius-epeian`, `agamemnon`
+- `amphion-epeian` ally `meges-dulichium`, `dracius-epeian`, `agamemnon`
 - `teucer` slayer `cleitus-trojan`; ally `polydamas`, `hector`
 - `polydamas` slayer `croesmus-trojan`; ally `hector`
 
@@ -837,7 +837,7 @@ Remaining Priam stemma edges, catalog Boeotian dispute topics, and other deferre
 ### Batch AK
 
 - `alectryon-boeotian` parent `leitus`; ally `agamemnon`
-- `patroclus` slayer `areilycus-achaean`; parent `prothoenor` (Homer), `arcesilaus` (Hyginus); ally `agamemnon`
+- `patroclus` slayer `areilycus-trojan` (split from `areilycus-achaean` 2026-11-06); `areilycus-achaean` parent `prothoenor` (Homer), `arcesilaus` (Hyginus)
 - `prothoenor` sibling `arcesilaus` (Hyginus)
 - `otrynteus-trojan` parent `iphition-otrynteid`; ally `hector`
 - `peiros-thracian` slayer `diores-epeian`; `thoas-aetolia` slayer `peiros-thracian`; ally `hector`
@@ -873,7 +873,7 @@ Remaining Priam stemma edges, catalog Boeotian dispute topics, and other deferre
 - `thymoetes-trojan`, `ucalegon-trojan` ally `priam`, `hector`
 - `laomedon` parent `clytius-trojan`; `priam`, `hicetaon-trojan`, `lampus-trojan` sibling `clytius-trojan`; ally `priam`, `hector`
 - `hyrtacus-trojan` parent `asius-hyrtacid`; ally `hector`
-- `merops-percote` parent `adrastus-meropsid`, `araphius-meropsid`
+- `merops-percote` parent `adrastus-meropsid`, `amphius-meropsid`
 
 ### Batch AP
 
@@ -934,7 +934,6 @@ Remaining Priam stemma edges, catalog Boeotian dispute topics, and other deferre
 - `aesyetes-trojan` parent `alcathous-trojan`; ally `hector`
 - `creon-achaean` parent `lycomedes-creonid`; ally `agamemnon`
 - `priam` parent `deiopites-trojan`, `chersidamas-trojan`
-- `theanus-dardanian` ally `hector`, `aeneas`, `archelochus-antenorid`, `acamas-antenorid` (Epit. 3.34 Dardanian leaders)
 
 ### Batch AV
 

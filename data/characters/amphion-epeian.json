@@ -1,20 +1,20 @@
 {
-  "id": "araphion-epeian",
-  "name": "Araphion",
-  "greekName": "Araphion (Ἀραφίων)",
+  "id": "amphion-epeian",
+  "name": "Amphion",
+  "greekName": "Amphion (Ἀμφίων)",
   "type": "hero",
   "domains": ["Epeian captain", "marshal of the host"],
   "cluster": "mortal-arm",
   "summary": [
     {
-      "text": "Captain of Meges' Dulichian contingent in the battle at the ships — distinct from Araphius son of Merops of Percote and from the Elis captains of the Catalogue.",
+      "text": "Captain of Meges' Dulichian contingent in the battle at the ships — distinct from Amphion of Thebes, from the Argonaut Amphion of Pellene, and from the Elis captains of the Catalogue.",
       "sources": ["homer"],
       "citation": "Iliad 13.675–720"
     }
   ],
   "story": [
     {
-      "text": "When the fight raged where the wall was lowest, the Epeians were led by Meges son of Phyleus, and Araphion and Dracius followed in the press of battle among the stout-hearted warriors.",
+      "text": "When the fight raged where the wall was lowest, the Epeians were led by Meges son of Phyleus, and Amphion and Dracius followed in the press of battle among the stout-hearted warriors.",
       "sources": ["homer"],
       "citation": "Iliad 13.675–720"
     }
@@ -32,8 +32,8 @@
     },
     {
       "city": "aulis-boeotia",
-      "sources": ["apollodorus", "homer"],
-      "citation": "Epitome 3.11; Iliad 2.628–637"
+      "sources": ["homer"],
+      "citation": "Iliad 2.303–304, 13.690–693"
     }
   ]
 }
