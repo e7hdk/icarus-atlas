@@ -7,7 +7,7 @@
  *  Run with: pnpm cf:build   (after `next build` has written out/) */
 
 import { existsSync, readdirSync, readFileSync, rmdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
-import { extname, join, relative, sep } from 'node:path';
+import { basename, extname, join, relative, sep } from 'node:path';
 import { ATLAS_FILES } from '../src/features/atlas/files';
 
 const OUT = 'out';
@@ -24,8 +24,12 @@ const isSegmentPrefetch = (name: string) => name.startsWith('__next.') && name.e
  *  so a browser acts on it only when it loads that page itself. */
 const preload = (url: string) => [`  Link: <${url}>; rel=preload; as=fetch; crossorigin`];
 
-/** Route handlers export as files without an extension, which the host would type
- *  as bytes; every Ephemeris card shares one rule, anything else gets its own. */
+/** Route handlers and share images export as files without an extension, which
+ *  the host would type as bytes, so each needs a Content-Type rule within the
+ *  host's 100. Every Ephemeris card shares one rule; the files of one name and
+ *  one type share another, a splat that matches the name at any depth (every
+ *  `opengraph-image`, the share card of a page that draws one, 200 of them in
+ *  the Library alone); anything else gets its own. */
 const EPHEMERIS_DIR = join('api', 'ephemeris');
 
 function walk(dir: string): string[] {
@@ -52,6 +56,28 @@ function sniffType(path: string): string {
   const first = head.toString('utf-8').trimStart()[0];
   if (first === '{' || first === '[') return 'application/json';
   throw new Error(`${path}: a file without an extension of unknown type; add a Content-Type rule`);
+}
+
+const urlOf = (path: string) => '/' + relative(OUT, path).split(sep).join('/');
+
+/** The Content-Type rules of the extensionless files outside the Ephemeris. A
+ *  name shares one rule only when its files all sit below the root, share a
+ *  type, and no page is served under that name, so the splat types nothing else. */
+function typeRules(paths: string[], pageNames: Set<string>): string[][] {
+  const byName = new Map<string, { path: string; type: string }[]>();
+  for (const path of paths) {
+    const name = basename(path);
+    byName.set(name, [...(byName.get(name) ?? []), { path, type: sniffType(path) }]);
+  }
+  return [...byName].flatMap(([name, group]) => {
+    const type = group[0].type;
+    const shared =
+      group.length > 1 &&
+      !pageNames.has(name) &&
+      group.every((file) => file.type === type && relative(OUT, file.path).includes(sep));
+    if (shared) return [[`/*/${name}`, `  Content-Type: ${type}`]];
+    return group.map((file) => [urlOf(file.path), `  Content-Type: ${file.type}`]);
+  });
 }
 
 function fail(message: string): never {
@@ -85,6 +111,7 @@ const files = walk(OUT);
 const bare = files.filter((path) => !extname(path) && !path.split(sep).at(-1)?.startsWith('_'));
 const ephemeris = bare.filter((path) => relative(OUT, path).startsWith(EPHEMERIS_DIR + sep));
 const others = bare.filter((path) => !ephemeris.includes(path));
+const pageNames = new Set(files.filter((path) => path.endsWith('.html')).map((path) => basename(path, '.html')));
 
 const rules: string[][] = [
   ['/_next/static/*', '  Cache-Control: public, max-age=31536000, immutable'],
@@ -95,7 +122,7 @@ const rules: string[][] = [
   ['/art/:id', ...preload(ATLAS_FILES.loom), ...preload(ATLAS_FILES.loomPreview)],
   ['/art/list', '  ! Link'],
   ...(ephemeris.length ? [['/api/ephemeris/:id', '  Content-Type: application/json']] : []),
-  ...others.map((path) => ['/' + relative(OUT, path).split(sep).join('/'), `  Content-Type: ${sniffType(path)}`]),
+  ...typeRules(others, pageNames),
 ];
 if (rules.length > MAX_HEADER_RULES) fail(`${rules.length} header rules, over the host's ${MAX_HEADER_RULES}.`);
 writeFileSync(join(OUT, '_headers'), rules.map((rule) => rule.join('\n')).join('\n') + '\n');

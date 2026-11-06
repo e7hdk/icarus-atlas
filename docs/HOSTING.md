@@ -21,14 +21,14 @@ The free plan allows 10 ms a request and tolerates only infrequent overruns befo
 |---|---|---|
 | Files per deployed version | 20,000 | Each page is two files (its HTML and its RSC payload). |
 | File size | 25 MiB | The geo archives cannot ship. |
-| `_headers` rules | 100 | One rule per extensionless file outside `/api/ephemeris/`. |
+| `_headers` rules | 100 | One rule per name of extensionless file: every share card shares `/*/opengraph-image`, every Ephemeris card `/api/ephemeris/:id`. |
 | Requests to static assets | free, unlimited | — |
 
 ## How the export works
 
 - **`output: "export"`** in `next.config.ts`. Every route is prerendered: the dynamic routes set `dynamicParams = false` and list their ids in `generateStaticParams`, the three codex routes for every star (`loadCharacterIds`). That supersedes D16 in docs/NOSTOS_PLAN.md, which prerendered only the flagship stars to fit Netlify's 18-minute build window.
 - **Client navigation fetches the page's `.txt` payload.** Next 16 also writes per-segment prefetch files, three a page (20,676 in all), which would take the export to 36,856 files. `finish-export` deletes them, and every link goes through `src/components/ui/Link.tsx`, which turns prefetching off, so nothing asks for them. ESLint forbids `next/link` anywhere else.
-- **Headers come from `out/_headers`,** written by `finish-export` because a static host cannot run `next.config` headers. It marks `_next/static` immutable, gives the doors their `Link` preload of the door's data (`ATLAS_FILES`), and types the files a route handler writes without an extension: the Ephemeris cards (`/api/ephemeris/:id`, JSON) and the Odyssey share image (PNG).
+- **Headers come from `out/_headers`,** written by `finish-export` because a static host cannot run `next.config` headers. It marks `_next/static` immutable, gives the doors their `Link` preload of the door's data (`ATLAS_FILES`), and types the files a route handler or a share image writes without an extension: the Ephemeris cards (`/api/ephemeris/:id`, JSON) and the share cards (`/*/opengraph-image`, PNG). The files of one name and one type share a rule, a splat that matches the name at any depth, so the Library's 200 cards cost one rule, not 200; a name of mixed types, a file at the root, or a name a page also carries keeps a rule per file.
 - **Routing** is `html_handling: "auto-trailing-slash"` (`/art` serves `art.html`) and `not_found_handling: "404-page"` (an unknown path gets `404.html` with a 404 status).
 - **Images** load as they are (`images.unoptimized`): the art straight from Commons thumbnails.
 
@@ -42,4 +42,5 @@ The free plan allows 10 ms a request and tolerates only infrequent overruns befo
 ## What to watch
 
 - **Files:** the count `finish-export` prints, against 20,000. Each new work, story, city or star adds two.
+- **Header rules:** the count `finish-export` prints, against 100. A new kind of extensionless file adds a rule, or one per file if it cannot share; `pnpm build` alone never runs this check, so build with `pnpm cf:build` before a deploy.
 - **A new dynamic route** needs `generateStaticParams` and `dynamicParams = false`, and a new route handler or metadata image needs `dynamic = 'force-static'`; the export fails without them.
