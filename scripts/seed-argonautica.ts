@@ -718,28 +718,8 @@ const CREW: CharSeed[] = [
     ],
     allySources: ['apollodorus', 'hyginus'],
   },
-  {
-    id: 'deucalion-pella',
-    name: 'Deucalion',
-    greekName: 'Deukaliōn (Δευκαλίων)',
-    type: 'hero',
-    domains: ['Pella in Macedonia', 'the Argonaut voyage'],
-    summary: [
-      {
-        text: 'Son of Hyperasius from Pella, Macedonian Argonaut — not to be confused with Deucalion the survivor of the Flood.',
-        sources: ['hyginus', 'apollonius'],
-        citation: 'Fabulae 14; Argonautica 1.367',
-      },
-    ],
-    story: [
-      {
-        text: 'Hyginus names a Deucalion son of Hyperasius from Pella among the Minyae; he must be kept distinct from the Deucalion who refathered mankind after the Flood.',
-        sources: ['hyginus'],
-        citation: 'Fabulae 14',
-      },
-    ],
-    allySources: ['hyginus'],
-  },
+  // No "Deucalion son of Hyperasius from Pella" stands in any source: Hyginus' Argonaut
+  // Deucalion is the son of Minos (Fab. 14.4), deucalion-crete below. Removed 2026-11-06.
   {
     id: 'deucalion-crete',
     name: 'Deucalion',
