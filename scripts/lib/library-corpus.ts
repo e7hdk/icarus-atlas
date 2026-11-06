@@ -8,7 +8,7 @@ import { join } from 'node:path';
 import { load } from 'cheerio';
 import type { Element } from 'domhandler';
 import type { LibraryWork, LibraryWorksFile, WorkExtent } from '../../src/types/library';
-import { RAW_DIR, normalizeEntry, sha256, type CorpusEntry, type CorpusManifest } from './corpus';
+import { RAW_DIR, decode, normalizeEntry, sha256, type CorpusEntry, type CorpusManifest } from './corpus';
 
 export const LIBRARY_WORKS_PATH = join(import.meta.dirname, '..', '..', 'data', 'library', 'works.json');
 export const LIBRARY_EXTENTS_PATH = join(import.meta.dirname, '..', '..', 'data', 'generated', 'library-extents.json');
@@ -35,7 +35,7 @@ export function extentsSignature(registry: LibraryWorksFile, manifest: CorpusMan
 export function readRaw(entry: CorpusEntry): string {
   const path = join(RAW_DIR, entry.file);
   if (!existsSync(path)) throw new Error(`${entry.id}: ${entry.file} is missing — run pnpm corpus:sync`);
-  return readFileSync(path, 'utf8');
+  return decode(entry, readFileSync(path));
 }
 
 type Run = { last: number; extra: string[] };

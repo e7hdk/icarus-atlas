@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { load, type Cheerio, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
@@ -13,13 +13,18 @@ const entrySchema = z.object({
   work: z.string().min(1),
   citationLabel: z.string().min(1),
   language: z.enum(['en', 'grc', 'lat']),
-  format: z.enum(['perseus-tei', 'topostext-html']),
+  format: z.enum(['perseus-tei', 'topostext-html', 'gutenberg-txt']),
   urnBase: z.string().startsWith('urn:cts:'),
   edition: z.string().min(1),
   license: z.string().min(1),
   url: z.string().url(),
   sha256: z.string().regex(/^[a-f0-9]{64}$/),
-  file: z.string().regex(/^[a-z0-9-]+\.(xml|html)$/),
+  file: z.string().regex(/^[a-z0-9-]+\.(xml|html|txt)$/),
+  /** The file's encoding where it is not UTF-8: Project Gutenberg's 8-bit texts are Latin-1. */
+  encoding: z.enum(['utf8', 'latin1']).optional(),
+  /** A translation printed without line numbers takes them from another pinned
+   *  copy of the same translation, by this id (docs/LIBRARY_PLAN.md §4.4). */
+  anchors: z.string().min(1).optional(),
 });
 
 const manifestSchema = z.object({
@@ -57,6 +62,11 @@ export function loadManifest(): CorpusManifest {
 
 export function sha256(content: string | Buffer): string {
   return createHash('sha256').update(content).digest('hex');
+}
+
+/** A pinned file's text, in the encoding its entry names. */
+export function decode(entry: CorpusEntry, bytes: Buffer): string {
+  return bytes.toString(entry.encoding ?? 'utf8');
 }
 
 export function normalizeWhitespace(text: string): string {
@@ -165,25 +175,187 @@ function normalizeTei(entry: CorpusEntry, content: string): CorpusPassage[] {
   return passages;
 }
 
-function normalizeToposText(entry: CorpusEntry, content: string): CorpusPassage[] {
+/** ToposText's paragraph ids name the line of the original each paragraph opens
+ *  at. Three in its Argonautica are misprinted, two out of order and one ten
+ *  lines late; Mooney's Greek shows where each paragraph opens. */
+const ANCHOR_CORRECTIONS: Record<string, Record<string, string>> = {
+  'apollonius-argonautica-en': {
+    '1.221': '1.211', // "Next came Zetes and Calais": Ζήτης αὖ Κάλαΐς τε, 1.211
+    '3.383': '3.484', // "He spake with goodwill": Ἴσκεν ἐυφρονέων, 3.484
+    '3.388': '3.887', // "But when she had left the city's well paved streets": αὐτὰρ ἐπεὶ πόλιος μὲν ἐυδμήτους λίπʼ ἀγυιάς, 3.887
+  },
+};
+
+export interface ToposTextParagraph {
+  /** The paragraph's id on ToposText's page, which a link out needs. */
+  anchor: string;
+  /** Where it opens in the original's numbering, corrected where the id is misprinted. */
+  citation: string;
+  text: string;
+}
+
+/** ToposText's paragraphs in their order. */
+export function toposTextParagraphs(entry: CorpusEntry, content: string): ToposTextParagraph[] {
   const $ = load(content);
-  const passages: CorpusPassage[] = [];
-  $('p[id^="urn:cts:"]').each((_, element) => {
-    const id = $(element).attr('id');
-    if (!id) return;
-    const citation = id.slice(id.lastIndexOf(':') + 1);
+  const corrections = ANCHOR_CORRECTIONS[entry.id] ?? {};
+  return $('p[id^="urn:cts:"]').get().flatMap((element) => {
+    const anchor = $(element).attr('id');
+    if (!anchor) return [];
+    const printed = anchor.slice(anchor.lastIndexOf(':') + 1);
     const clone = $(element).clone();
     clone.find('b').first().remove();
-    const text = normalizeWhitespace(clone.text());
-    if (text.length >= 2) passages.push(passage(entry, citation, text, passages.length));
+    return [{ anchor, citation: corrections[printed] ?? printed, text: normalizeWhitespace(clone.text()) }];
   });
-  return passages;
+}
+
+function normalizeToposText(entry: CorpusEntry, content: string): CorpusPassage[] {
+  return toposTextParagraphs(entry, content)
+    .filter(({ text }) => text.length >= 2)
+    .map(({ citation, text }, index) => passage(entry, citation, text, index));
+}
+
+const ROMAN: Record<string, number> = { I: 1, V: 5, X: 10, L: 50 };
+
+const romanValue = (numeral: string) =>
+  [...numeral].reduce((sum, letter, index, letters) => {
+    const value = ROMAN[letter] ?? 0;
+    return sum + (value < (ROMAN[letters[index + 1]] ?? 0) ? -value : value);
+  }, 0);
+
+/** Project Gutenberg's plain text of a work in books: each book's paragraphs,
+ *  from the heading that follows the book's summary to the next heading, with
+ *  the footnotes and their marks left out and its double hyphens set as dashes. */
+function gutenbergBooks(content: string): Map<string, string[]> {
+  const text = content.replace(/\r\n/g, '\n');
+  const blocks = text
+    .slice(text.indexOf('*** START OF'), text.indexOf('*** END OF'))
+    .split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .filter(Boolean);
+  const books = new Map<string, string[]>();
+  const summarized = new Set<string>();
+  let book: string | null = null;
+  for (const block of blocks) {
+    const heading = block.length < 60 && /^[A-Z][A-Z .,'-]*$/.test(block) ? block : null;
+    if (heading) {
+      const summary = /^SUMMARY OF BOOK ([IVXL]+)$/.exec(heading);
+      const opening = /^BOOK ([IVXL]+)$/.exec(heading);
+      if (summary) summarized.add(summary[1]);
+      book = opening && summarized.has(opening[1]) ? String(romanValue(opening[1])) : null;
+      continue;
+    }
+    if (!book || block.startsWith('[Footnote')) continue;
+    const paragraph = normalizeWhitespace(block.replace(/\[\d+\]/g, '').replace(/--/g, '—'));
+    books.set(book, [...(books.get(book) ?? []), paragraph]);
+  }
+  return books;
+}
+
+/** The pinned copy a translation takes its line numbers from. */
+function anchorsOf(entry: CorpusEntry): { entry: CorpusEntry; content: string } {
+  const anchors = loadManifest().entries.find((candidate) => candidate.id === entry.anchors);
+  if (!anchors) throw new Error(`${entry.id}: its anchors entry ${entry.anchors ?? '(none)'} is not pinned`);
+  const path = join(RAW_DIR, anchors.file);
+  if (!existsSync(path)) throw new Error(`${entry.id}: ${anchors.file} is missing — run pnpm corpus:sync`);
+  const bytes = readFileSync(path);
+  if (sha256(bytes) !== anchors.sha256) throw new Error(`${entry.id}: ${anchors.file} does not match its pin — run pnpm corpus:sync`);
+  return { entry: anchors, content: decode(anchors, bytes) };
+}
+
+interface Token { word: string; para: number; offset: number }
+
+const WORD = /[A-Za-z]+/g;
+const wordsOf = (text: string) => (text.match(WORD) ?? []).map((word) => word.toLowerCase());
+
+/** Where a paragraph opens: its first five words, or five a few words in, since
+ *  the anchoring copy respells some names ("Oiagrus" for Seaton's "Oeagrus"). */
+function findOpening(words: string[], opening: string[], from: number): number | null {
+  for (let skip = 0; skip < 9; skip++) {
+    const gram = opening.slice(skip, skip + 5);
+    if (gram.length < 5) return null;
+    for (let at = from + skip; at + 5 <= words.length; at++) {
+      if (gram.every((word, k) => words[at + k] === word)) return at - skip;
+    }
+  }
+  return null;
+}
+
+/** A cut backs up over the quotation mark a speech opens with. */
+function openingAt(text: string, offset: number): number {
+  let at = offset;
+  while (at > 0 && /["'“‘(\[]/.test(text[at - 1])) at--;
+  return at;
+}
+
+/** The text from one token to the next one's paragraph opening, as paragraphs. */
+function cut(paras: string[], from: Token, to: Token | undefined): string[] {
+  const startOffset = openingAt(paras[from.para], from.offset);
+  const endPara = to ? to.para : paras.length - 1;
+  const endOffset = to ? openingAt(paras[to.para], to.offset) : paras[endPara].length;
+  const pieces: string[] = [];
+  for (let para = from.para; para <= endPara; para++) {
+    const text = paras[para];
+    const piece = text.slice(para === from.para ? startOffset : 0, para === endPara ? endOffset : text.length).trim();
+    if (piece) pieces.push(piece);
+  }
+  return pieces;
+}
+
+export interface AnchoredText {
+  /** book.line, the original line the text opens at */
+  citation: string;
+  paras: string[];
+}
+
+/** Seaton's English was printed without line numbers (the Loeb set them beside
+ *  the Greek only), so it takes them from the anchors entry, another copy of the
+ *  same translation: each of its paragraphs is found in these words, and the text
+ *  is cut where it opens (docs/LIBRARY_PLAN.md §4.4). The anchors are facts about
+ *  where a paragraph starts; the words are this copy's. A book whose opening is
+ *  not an anchor, an anchor that opens nowhere, or a piece that runs a tenth
+ *  longer or shorter than the paragraph it matches fails the reading. */
+export function anchoredText(entry: CorpusEntry, content: string): AnchoredText[] {
+  const anchors = anchorsOf(entry);
+  const paragraphsByBook = new Map<string, { citation: string; words: string[] }[]>();
+  for (const { citation, text } of toposTextParagraphs(anchors.entry, anchors.content)) {
+    const book = citation.split('.')[0];
+    paragraphsByBook.set(book, [...(paragraphsByBook.get(book) ?? []), { citation, words: wordsOf(text) }]);
+  }
+  return [...gutenbergBooks(content)].flatMap(([book, paras]) => {
+    const tokens: Token[] = paras.flatMap((text, para) =>
+      [...text.matchAll(WORD)].map((match) => ({ word: match[0].toLowerCase(), para, offset: match.index ?? 0 })),
+    );
+    const words = tokens.map((token) => token.word);
+    const paragraphs = paragraphsByBook.get(book) ?? [];
+    const starts: number[] = [];
+    for (const paragraph of paragraphs) {
+      const start = findOpening(words, paragraph.words, (starts.at(-1) ?? -1) + 1);
+      if (start === null) throw new Error(`${entry.id}: ${paragraph.citation} opens nowhere in book ${book}`);
+      starts.push(start);
+    }
+    if (starts[0] !== 0) throw new Error(`${entry.id}: book ${book} opens before its first anchor`);
+    return paragraphs.map((paragraph, index) => {
+      const end = starts[index + 1] ?? tokens.length;
+      const ratio = (end - starts[index]) / paragraph.words.length;
+      if (ratio < 0.9 || ratio > 1.1) {
+        throw new Error(`${entry.id}: ${paragraph.citation} runs ${end - starts[index]} words against ${paragraph.words.length}`);
+      }
+      return { citation: paragraph.citation, paras: cut(paras, tokens[starts[index]], tokens[end]) };
+    });
+  });
+}
+
+function normalizeGutenberg(entry: CorpusEntry, content: string): CorpusPassage[] {
+  return anchoredText(entry, content).map(({ citation, paras }, index) => passage(entry, citation, paras.join(' '), index));
 }
 
 export function normalizeEntry(entry: CorpusEntry, content: string): CorpusPassage[] {
-  const passages = entry.format === 'perseus-tei'
-    ? normalizeTei(entry, content)
-    : normalizeToposText(entry, content);
+  const passages =
+    entry.format === 'perseus-tei'
+      ? normalizeTei(entry, content)
+      : entry.format === 'topostext-html'
+        ? normalizeToposText(entry, content)
+        : normalizeGutenberg(entry, content);
   if (passages.length === 0) throw new Error(`${entry.id}: no citation-bearing passages found`);
   return passages;
 }

@@ -2,17 +2,17 @@
  *
  *  Verse: the original line by line; the English by Perseus card. A card opens at
  *  the original line it translates from — a `div[subtype=card]` in Homer and Ovid,
- *  an `<l n>` chunk in Hesiod — so a block holds an English card and the original
- *  lines from its line to the next card's. Prose: section beside section.
+ *  an `<l n>` chunk in Hesiod, a paragraph of Seaton's Argonautica cut where its
+ *  anchor opens — so a block holds an English card and the original lines from
+ *  its line to the next card's. Prose: section beside section.
  *
  *  The licence gate (`display`): a work shown as `excerpt` contributes its original
- *  only (the Argonautica's Greek is CC BY-SA, Seaton's English comes from a CC BY-NC
- *  page) or, with no original (Hyginus), only its passage ids and a link out. */
+ *  only or, with no original (Hyginus), only its passage ids and a link out. */
 
 import { load, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
 import type { LibraryBlock, LibraryText, LibraryUnit, LibraryWork } from '../../src/types/library';
-import { normalizeEntry, sha256, type CorpusEntry, type CorpusManifest } from './corpus';
+import { anchoredText, normalizeEntry, sha256, toposTextParagraphs, type CorpusEntry, type CorpusManifest } from './corpus';
 import { readRaw } from './library-corpus';
 
 /** Bump when the reading of the corpus changes, so the baked texts rebake. */
@@ -52,17 +52,24 @@ interface Chunk { start: number; paras: string[]; link?: string }
 
 /** book → the translation's chunks, each opening at an original line. */
 function translationChunks(work: LibraryWork, entry: CorpusEntry, content: string): Map<string, Chunk[]> {
+  if (entry.format === 'gutenberg-txt') {
+    // Project Gutenberg's words, cut at the anchors of another copy (corpus.ts)
+    const chunks = new Map<string, Chunk[]>();
+    for (const { citation, paras } of anchoredText(entry, content)) {
+      const [book, line] = citation.split('.');
+      chunks.set(book, [...(chunks.get(book) ?? []), { start: Number(line), paras }]);
+    }
+    return chunks;
+  }
   if (entry.format === 'topostext-html') {
     // the anchors only: ToposText's paragraph ids, the original line each opens at
     const chunks = new Map<string, Chunk[]>();
-    const $ = load(content);
-    $('p[id^="urn:cts:"]').each((_, p) => {
-      const id = $(p).attr('id') ?? '';
-      const [book, line] = id.slice(id.lastIndexOf(':') + 1).split('.');
+    for (const { anchor, citation } of toposTextParagraphs(entry, content)) {
+      const [book, line] = citation.split('.');
       const start = Number(line);
-      if (!Number.isFinite(start)) return;
-      chunks.set(book, [...(chunks.get(book) ?? []), { start, paras: [], link: `${entry.url}#${id}` }]);
-    });
+      if (!Number.isFinite(start)) continue;
+      chunks.set(book, [...(chunks.get(book) ?? []), { start, paras: [], link: `${entry.url}#${anchor}` }]);
+    }
     return chunks;
   }
   const $ = load(content, { xmlMode: true });

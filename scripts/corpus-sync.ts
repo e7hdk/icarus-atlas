@@ -11,6 +11,7 @@ import {
   INDEX_PATH,
   NORMALIZED_DIR,
   RAW_DIR,
+  decode,
   loadManifest,
   normalizeEntry,
   sha256,
@@ -23,7 +24,7 @@ const USER_AGENT = 'IcarusAtlas/0.1 (source corpus research; low volume)';
 async function readVerified(entry: CorpusEntry): Promise<string | null> {
   try {
     const content = await readFile(join(RAW_DIR, entry.file));
-    return sha256(content) === entry.sha256 ? content.toString('utf8') : null;
+    return sha256(content) === entry.sha256 ? decode(entry, content) : null;
   } catch {
     return null;
   }
@@ -49,7 +50,7 @@ async function download(entry: CorpusEntry): Promise<string> {
   await writeFile(temporary, content);
   await rename(temporary, target);
   console.log(`  fetched ${entry.id}`);
-  return content.toString('utf8');
+  return decode(entry, content);
 }
 
 async function sync(): Promise<void> {
