@@ -1088,6 +1088,16 @@ try {
 } catch (error) {
   errors.push(`art/overrides.json: ${error instanceof Error ? error.message : String(error)}`);
 }
+// The catalogue reads a work's file from an upload.wikimedia.org link and holds back
+// anything else without a word. The Commons API now answers with thumb.wikimedia.org
+// links carrying tracking parameters: those must be rewritten before entry.
+for (const entry of artEntries) {
+  if (!entry.imageUrl.startsWith('https://upload.wikimedia.org/wikipedia/commons/') || entry.imageUrl.includes('?')) {
+    errors.push(
+      `${entry.ownerKind === 'story' ? 'story-culture' : 'culture'}/${entry.owner}.json: image of "${entry.title}" is not a plain upload.wikimedia.org Commons link: ${entry.imageUrl}`,
+    );
+  }
+}
 const artFiles = new Set(artEntries.flatMap((entry) => commonsFileName(entry.imageUrl) ?? []));
 for (const file of artFiles) {
   const meta = artCommons[file];
