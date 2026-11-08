@@ -335,6 +335,38 @@ if (Array.isArray(relationsRaw)) {
   errors.push('relations.json: expected a JSON array');
 }
 
+/** The seven tellers' own works, as Wikipedia names them. They live on the Poets tab:
+ *  a Legacy card that links one of them as reception is padding (CULTURE_PLAN §10). */
+const TELLER_WORK_ARTICLES = new Set([
+  'Theogony',
+  'Works and Days',
+  'Iliad',
+  'Odyssey',
+  'Bibliotheca (Apollodorus)',
+  'Bibliotheca (Pseudo-Apollodorus)',
+  'Argonautica',
+  'Metamorphoses',
+  'Fabulae',
+  'De astronomia',
+  'Description of Greece',
+]);
+
+function tellerWorkCards(
+  culture: Partial<Record<'films' | 'music' | 'popCulture', { title: string; externalUrl: string }[]>>,
+  where: string,
+): string[] {
+  const issues: string[] = [];
+  for (const shelf of ['films', 'music', 'popCulture'] as const) {
+    for (const card of culture[shelf] ?? []) {
+      const article = decodeURIComponent(card.externalUrl.split('/wiki/')[1] ?? '').replace(/_/g, ' ');
+      if (TELLER_WORK_ARTICLES.has(article)) {
+        issues.push(`${where}: ${shelf} card "${card.title}" is ${article}, a teller's own work: it belongs on the Poets tab`);
+      }
+    }
+  }
+  return issues;
+}
+
 // 4. Reference (Information tab) and culture (Legacy page) files: optional per
 //    character, but when present they must validate and point at a real character.
 let referenceCount = 0;
@@ -353,6 +385,7 @@ for (const [dirName, schema] of [['reference', referenceSchema], ['culture', cul
     }
     if (file !== `${parsed.data.id}.json`) errors.push(`${dirName}/${file}: filename must match id "${parsed.data.id}"`);
     if (!charIds.has(parsed.data.id)) errors.push(`${dirName}/${file}: unknown character "${parsed.data.id}"`);
+    if ('artworks' in parsed.data) errors.push(...tellerWorkCards(parsed.data, `${dirName}/${file}`));
     if (dirName === 'reference') referenceCount++;
     else cultureCount++;
   }
@@ -668,6 +701,7 @@ if (existsSync(storyCultureDir)) {
     if (!storyIds.has(parsed.data.id)) {
       errors.push(`story-culture/${file}: unknown story "${parsed.data.id}"`);
     }
+    errors.push(...tellerWorkCards(parsed.data, `story-culture/${file}`));
     storyCultureTitles.set(
       parsed.data.id,
       new Set([

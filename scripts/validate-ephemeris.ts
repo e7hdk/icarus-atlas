@@ -40,12 +40,15 @@ const GOLDEN_DAYS = 14;
  *  walk again.
  *  Refreshed 2026-07-18: the M13.1 Nostos micro-batch (mentor-ithaca,
  *  argos-dog — docs/ODYSSEY.md §6) grew the roster to 1486; the permutation
- *  reseeded, erebus entered the window and gigantes slid past its edge. */
+ *  reseeded, erebus entered the window and gigantes slid past its edge.
+ *  Refreshed 2026-11-08: the In play audit (CULTURE_PLAN §10) took 1,242 cards
+ *  that were not reception off the Legacy shelves. 125 figures whose only
+ *  "legacy" they were left the roster (823 → 698), erebus among them, and
+ *  gigantes came back into the window. */
 const GOLDEN_SEQUENCE: string[] = [
   'tartarus',
   'eros',
   'nyx',
-  'erebus',
   'cronus',
   'uranus',
   'gaia',
@@ -53,6 +56,7 @@ const GOLDEN_SEQUENCE: string[] = [
   'zeus',
   'aphrodite',
   'erinyes',
+  'gigantes',
   'zeus',
   'cronus',
   'rhea',
