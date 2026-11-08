@@ -103,14 +103,22 @@ export const musicWorkSchema = z.object({
   externalUrl: httpsUrl,
 });
 
-export const popCultureItemSchema = z.object({
-  title: z.string().min(1),
-  year: z.string().min(1),
-  kind: z.enum(['videogame', 'comic', 'novel', 'brand', 'language', 'other']),
-  creator: z.string().min(1).optional(),
-  description: z.string().min(1),
-  externalUrl: httpsUrl,
-});
+/** In play holds post-classical works, brands and modern words (CULTURE_PLAN §3). A work
+ *  carries its date; only a word, whose coinage has none, may stand undated ("—"). An
+ *  encyclopedia link to the figure, a relative or a topic is not a card at all. */
+export const popCultureItemSchema = z
+  .object({
+    title: z.string().min(1),
+    year: z.string().min(1),
+    kind: z.enum(['videogame', 'comic', 'novel', 'brand', 'language', 'other']),
+    creator: z.string().min(1).optional(),
+    description: z.string().min(1),
+    externalUrl: httpsUrl,
+  })
+  .refine((item) => (item.year === '—' ? item.kind === 'language' : /\d/.test(item.year)), {
+    message: 'a card needs a real date; only a word (kind "language") may stand undated ("—")',
+    path: ['year'],
+  });
 
 /** Legacy shelves are curated, not encyclopedic: hard cap 8 per shelf (CULTURE_PLAN §3).
  *  Only artworks/artifacts may carry imagery — enforced structurally by the shapes above. */

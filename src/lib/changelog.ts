@@ -14,6 +14,15 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.4',
+    codename: 'The Shelves Swept',
+    date: '2026-11-08',
+    lines: [
+      'The Legacy shelves keep only what came after the myths. Twelve hundred cards had stood there that were never their afterlife: links back to a figure’s own entry, to a father or a town, to the Iliad and the Metamorphoses themselves, and dates that were no dates at all. They are gone, and a figure who has no afterlife yet keeps an honest empty page.',
+      'The words stay, and a few that were filed as works join them: the cornucopia of Amalthea’s horn, the rod of Asclepius on every ambulance, the polyp Linnaeus named Hydra in 1758, the mentor and the pander, and Teucer, whom Pontevedra calls its founder.',
+    ],
+  },
+  {
     version: '0.6.3',
     codename: 'The Muster Read Again',
     date: '2026-11-06',
