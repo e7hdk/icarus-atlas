@@ -4,7 +4,7 @@
 >
 > **Schema locked 2026-06-15:** mythological sub-class lives in `kinds: FigureKind[]` (max 3), **not** in `domains` and **never** as extra `CharacterType` values. Primary `type: "nymph"` alone drives emerald glow and timeless mortal-clock placement. See docs/PLAN.md §5.1.
 >
-> **Batch E entered 2026-06-15:** 4 figures — `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` — completing the seven sisters. `electra-atlas` stays `hero`; maternity retargeted to `electra-pleiad`. One contradiction (`oenomaus-sterope-relation`).
+> **Batch E entered 2026-06-15:** 4 figures — `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` — completing the seven sisters. `electra-atlas` stays `hero`; maternity retargeted to `electra-pleiad`. One contradiction (`oenomaus-sterope-relation`). *Revised 2026-11-08:* `electra-atlas` was merged into `electra-pleiad`. The Pleiad node had come to carry the star-myth too, so the hero node was left with no relation and no fact of its own. It was one woman on two stars.
 >
 > **Batch G entered 2026-06-18:** 3 figures — `liriope-nymph`, `peirene-naiad`, `iphianassa-elean` — Cephissus/Corinth spring naiads and Endymion's disputed consort. Two contradictions (`peirene-parentage`, `endymion-children`). `narcissus-echo` cast wired.
 >
@@ -85,7 +85,7 @@ Enum grows only via verified batches and PLAN.md decision-log entry — never ad
 | `melia-thebes` | `melia` | ≠ Argive `melia` or collective `meliae` |
 | `meliae` | `melia` | collective ash nymphs |
 | `nephele`, `nubes-ixion` | `nephele` | |
-| `maia`, `taygete`, `merope-pleiad`, `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` | `pleiad` | `electra-atlas` = hero star-myth, not merged |
+| `maia`, `taygete`, `merope-pleiad`, `alcyone-pleiad`, `celaeno-pleiad`, `electra-pleiad`, `sterope-pleiad` | `pleiad` | `electra-atlas` merged into `electra-pleiad` (2026-11-08) |
 | `pleione-oceanid` | `oceanid` | ✅ Batch I — mother of the seven Pleiads (Bibliotheca 3.10.1) |
 | `hesperides` | `hesperid` | collective |
 | `aegle-hesperid`, `erytheia-hesperid`, `hesperia-hesperid`, `arethusa-hesperid` | `hesperid` | ✅ Batch I — Apollodorus' Ladon roll; `arethusa-hesperid` ≠ `arethusa-nymph` |
@@ -115,7 +115,7 @@ Enum grows only via verified batches and PLAN.md decision-log entry — never ad
 |---|---|
 | **Alcyone** | `alcyone-pleiad` = Pleiad, Poseidon's lover · `alcyone-aeolid` = daughter of Aeolus, Ceyx's wife and halcyon |
 | **Celaeno** | `celaeno-pleiad` = Pleiad, Poseidon's lover · Harpy Celaeno = plain name in `harpies` prose |
-| **Electra** | `electra-pleiad` = Pleiad nymph, mother of Dardanus/Iasion · `electra-atlas` = hero, star-grief for Troy · `electra` = Agamemnon's daughter · `electra-oceanid` = Thaumas' wife |
+| **Electra** | `electra-pleiad` = Pleiad nymph, mother of Dardanus/Iasion, the star hidden in grief for Troy (the former hero node `electra-atlas` merged into it, 2026-11-08) · `electra` = Agamemnon's daughter · `electra-oceanid` = Thaumas' wife · `electra-danaid` = a daughter of Danaus |
 | **Sterope** | `sterope-pleiad` = Pleiad, Oenomaus' wife (disputed) · `steropes-cyclops` = Cyclops smith |
 | **Daphne** | `daphne-nymph` = Peneus' daughter → laurel (Ovid, Hyginus) · Arcadian huntress on the Ladon = prose in `daphne-laurel` story and Pausanias 8.20.2–4, not a node |
 | **Arethusa** | `arethusa-nymph` = Sicilian spring nymph, Alpheus' pursuit (Ovid) · Hesperid in Apollodorus' Ladon roll = plain name until promoted · Homeric spring on Ithaca = same tradition, geo layer |
