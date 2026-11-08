@@ -14,6 +14,15 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.6.5',
+    codename: 'The Tear Rewoven',
+    date: '2026-11-08',
+    lines: [
+      'The Loom’s tear, the nine centuries between antiquity and the Renaissance where the cloth held eleven works, now holds a hundred and nine. The myths never stopped being drawn: Carolingian painters copied Perseus and Andromeda into their star books, and al-Sufi drew Cassiopeia as the lady of the chair. Crusader painters at Acre set Achilles’ spear in Hector’s back, Byzantine carvers put Europa’s bull on ivory caskets, and a Rouen illuminator gave Ovid’s whole poem its pictures, down to Scylla bringing Minos her father’s head where Ovid has only a lock of his hair.',
+      'Dante’s first painters are here too, with Cerberus as a winged demon, the Minotaur as a centaur, and Ulysses and Diomedes burning in one flame, and Electra stands with Hector and Aeneas among the great spirits of Limbo.',
+    ],
+  },
+  {
     version: '0.6.4',
     codename: 'The Shelves Swept',
     date: '2026-11-08',
