@@ -1,8 +1,7 @@
-import { Link } from '@/components/ui/Link';
+import type { CSSProperties } from 'react';
 import { CrumbBar } from '@/components/hud/CrumbBar';
-import { CitationStrip } from './CitationStrip';
+import { BookReader } from './BookReader';
 import { MarginPanel } from './MarginPanel';
-import { ReadingLens } from './ReadingLens';
 import { loadAtlasData } from '@/features/characters/load';
 import { englishLinker, type EnglishLinker } from '@/features/library/link-english';
 import { romanBook } from '@/features/library/load';
@@ -15,9 +14,10 @@ import { TYPE_GLOW } from '@/types/character';
 import type { LibraryBlock, LibraryUnit, LibraryWork } from '@/types/library';
 
 /** One reading page of the Library (docs/LIBRARY_PLAN.md §6): a book, or a whole
- *  short work. The original line by line beside the English card it translates;
- *  line numbers every five in the original's lineation, the one the atlas cites.
- *  Rendered on the server, so the text is in the HTML. */
+ *  short work, bound as a book of night sky. The original is the left page and
+ *  the English the right, as in a Loeb; line numbers every five in the original's
+ *  lineation, the one the atlas cites. Rendered on the server, so the text is in
+ *  the HTML: the client only cuts it into pages (`BookReader`). */
 
 const ORIGINAL_LANGUAGE: Record<string, { lang: string; label: string }> = {
   ovid: { lang: 'la', label: 'Latine' },
@@ -28,10 +28,12 @@ const GREEK = { lang: 'grc', label: 'Ἑλληνικά' };
 const isVerse = (work: LibraryWork) => work.structure === 'books-of-lines' || work.structure === 'lines';
 
 /** A name in the English, linked to its codex: a plain anchor, since a book holds a
- *  thousand of them and none needs the client. */
-function Paragraph({ segments }: { segments: ProseSegment[] }) {
+ *  thousand of them and none needs the client. A paragraph after the first says so
+ *  itself (`lib-next`): a page copies paragraphs singly, so none may lean on its
+ *  neighbour for its indent. */
+function Paragraph({ segments, next }: { segments: ProseSegment[]; next: boolean }) {
   return (
-    <p>
+    <p className={next ? 'lib-next' : undefined}>
       {segments.map((segment, index) =>
         segment.kind === 'link' ? (
           <a key={index} href={`/character/${segment.id}`} className="lib-name" style={{ color: TYPE_GLOW[segment.type].color }}>
@@ -45,41 +47,66 @@ function Paragraph({ segments }: { segments: ProseSegment[] }) {
   );
 }
 
+/** One aligned block: the original's share and the English's, each a cell the book
+ *  can set on its own page. Prose carries its section number in both; verse is
+ *  numbered by its lines, so only the English says which lines it renders. */
 function Block({ block, work, lang, linker, scope }: { block: LibraryBlock; work: LibraryWork; lang: string; linker: EnglishLinker; scope: string[] }) {
   const verse = isVerse(work);
-  const id = work.structure === 'tales' ? `t${block.from}` : verse ? undefined : `s${block.from}`;
   const hasOriginal = Array.isArray(block.orig) ? block.orig.length > 0 : block.orig !== '';
   const range = verse ? (block.from === block.to ? `LINE ${block.from}` : `LINES ${block.from}–${block.to}`) : work.structure === 'tales' && /^\d/.test(block.from) ? `TALE ${block.from}` : block.from.toUpperCase();
   return (
-    <section className="lib-block" id={id} data-from={block.from} data-to={block.to}>
-      <p className="lib-range">{range}</p>
-      <div className="lib-cols">
-        {hasOriginal && (
-          <div className="lib-orig" lang={lang}>
-            {Array.isArray(block.orig) ? (
-              block.orig.map(([n, text]) => (
-                <div key={n} id={`l${n}`} className="lib-line" data-n={n}>
-                  <i aria-hidden>{Number.parseInt(n, 10) % 5 === 0 || /[a-z]/.test(n) ? n : ''}</i>
-                  <span>{text}</span>
-                </div>
-              ))
-            ) : (
-              <p>{block.orig}</p>
-            )}
-          </div>
-        )}
-        <div className="lib-trans">
-          {block.trans.map((paragraph, index) => (
-            <Paragraph key={index} segments={linker.link(paragraph, scope)} />
-          ))}
-          {block.trans.length === 0 && block.link && (
-            <a href={block.link} target="_blank" rel="noreferrer" className="lib-out">
-              {hasOriginal ? 'Read the English at ToposText' : 'Read it at ToposText'} ↗
-            </a>
+    <section className="lib-block" data-from={block.from} data-to={block.to}>
+      {work.original && (
+        <div className="lib-orig" lang={lang}>
+          {hasOriginal && !verse && <p className="lib-range">{range}</p>}
+          {Array.isArray(block.orig) ? (
+            block.orig.map(([n, text], at) => (
+              // an edition may print a line number twice
+              <div key={`${n}:${at}`} className="lib-line" data-n={n}>
+                <i aria-hidden>{Number.parseInt(n, 10) % 5 === 0 || /[a-z]/.test(n) ? n : ''}</i>
+                <span>{text}</span>
+              </div>
+            ))
+          ) : (
+            hasOriginal && <p>{block.orig}</p>
           )}
         </div>
+      )}
+      <div className="lib-trans">
+        <p className="lib-range">{range}</p>
+        {block.trans.map((paragraph, index) => (
+          <Paragraph key={index} segments={linker.link(paragraph, scope)} next={index > 0} />
+        ))}
+        {block.trans.length === 0 && block.link && (
+          <a href={block.link} target="_blank" rel="noreferrer" className="lib-out">
+            {hasOriginal ? 'Read the English at ToposText' : 'Read it at ToposText'} ↗
+          </a>
+        )}
       </div>
     </section>
+  );
+}
+
+/** The device on the boards: an armillary of two orbits round a star. */
+function Device() {
+  return (
+    <svg viewBox="0 0 120 120" aria-hidden className="bk-device">
+      <g fill="none" stroke="currentColor">
+        <circle cx="60" cy="60" r="52" strokeWidth="0.9" opacity="0.55" />
+        <circle cx="60" cy="60" r="47" strokeWidth="0.5" strokeDasharray="1 4" opacity="0.5" />
+        <ellipse cx="60" cy="60" rx="52" ry="19" strokeWidth="0.8" opacity="0.5" transform="rotate(-32 60 60)" />
+        <ellipse cx="60" cy="60" rx="52" ry="19" strokeWidth="0.8" opacity="0.5" transform="rotate(32 60 60)" />
+      </g>
+      <g fill="currentColor">
+        <path d="M60 41 L63.4 56.6 L79 60 L63.4 63.4 L60 79 L56.6 63.4 L41 60 L56.6 56.6 Z" />
+        <path d="M60 49 L62 58 L71 60 L62 62 L60 71 L58 62 L49 60 L58 58 Z" opacity="0.55" transform="rotate(45 60 60)" />
+        <circle cx="104.1" cy="32.4" r="2" />
+        <circle cx="15.9" cy="32.4" r="1.5" opacity="0.8" />
+        <circle cx="26" cy="99" r="1.3" opacity="0.7" />
+        <circle cx="92" cy="101" r="1.7" opacity="0.85" />
+        <circle cx="60" cy="8" r="1.2" opacity="0.7" />
+      </g>
+    </svg>
   );
 }
 
@@ -104,108 +131,127 @@ export async function ReadingRoom({ work, unit, units, tellerName }: { work: Lib
   };
   const ranges = Object.fromEntries(unit.blocks.map((block) => [block.from, where(block)]));
   const credits = [work.original?.credit, showsTranslation ? work.translation.credit : null].filter(Boolean).join('. ');
+  const book = whole ? null : `Book ${romanBook(unit.id)}`;
+  // the title is cut in gold across the board: its longest word sets the size of the letters
+  const longest = Math.max(...work.title.split(' ').map((word) => word.length));
+  const fit = { '--bk-title-fit': Math.min(0.118, 0.7 / (0.86 * longest)).toFixed(4) } as CSSProperties;
+
+  const cover = (
+    <>
+      <div className="bk-cover-front" style={fit}>
+        <div className="bk-cover-frame">
+          <p className="bk-cover-teller">{tellerName}</p>
+          <p className="bk-cover-title">{work.title.toUpperCase()}</p>
+          {work.greekTitle && (
+            <p className="bk-cover-greek" lang={original.lang}>
+              {work.greekTitle}
+            </p>
+          )}
+          <Device />
+          <p className="bk-cover-unit">{book ?? work.composed.label}</p>
+        </div>
+        <i className="bk-shade" />
+      </div>
+      <div className="bk-cover-back" aria-hidden>
+        <p className="bk-hint">
+          <span className="bk-hint-hand">Swipe to turn the page.</span>
+          <span className="bk-hint-keys">Turn the page with the arrow keys, a click on its edge, or a drag.</span>
+        </p>
+        <i className="bk-shade" />
+      </div>
+    </>
+  );
+
+  const title = (
+    <div className="bk-plate bk-plate-title" style={fit}>
+      <p className="bk-plate-teller">{tellerName}</p>
+      <p className="bk-plate-name">{work.title.toUpperCase()}</p>
+      {work.greekTitle && (
+        <p className="bk-plate-greek" lang={original.lang}>
+          {work.greekTitle}
+        </p>
+      )}
+      <p className="bk-plate-unit">{book ? `${book} · ${work.composed.label}` : work.composed.label}</p>
+      <span className="bk-rule" aria-hidden />
+      {credits && <p className="bk-plate-credits">{credits}.</p>}
+      {!showsTranslation && (
+        <p className="bk-plate-credits">
+          {hasOriginal
+            ? 'The English shown beside this text waits on its licence: the pinned copy comes from a CC BY-NC page, so each block links to it instead.'
+            : 'Mary Grant’s English is very likely in the US public domain but not yet confirmed, and the corpus holds no Latin, so each passage links to its English at ToposText for now.'}
+        </p>
+      )}
+      {work.id === 'theogony' && (
+        <a href="/theogony" className="bk-plate-link">
+          First, Chaos: read it with the sky →
+        </a>
+      )}
+      {!whole && (
+        <nav aria-label={`Books of the ${work.title}`} className="bk-plate-books">
+          {units.map((id) => (
+            <a key={id} href={unitHref(work, id)} aria-current={id === unit.id ? 'page' : undefined}>
+              {romanBook(id)}
+            </a>
+          ))}
+        </nav>
+      )}
+      <p className="bk-plate-hint">Swipe to turn the page.</p>
+    </div>
+  );
+
+  const colophon = (
+    <div className="bk-plate bk-plate-end">
+      <Device />
+      <p className="bk-plate-teller">{book ? `Here ends ${book} of the ${work.title}` : `Here ends the ${work.title}`}</p>
+      {next && (
+        <a href={unitHref(work, next)} className="bk-plate-next">
+          Book {romanBook(next)} →
+        </a>
+      )}
+      <p className="bk-plate-ways">
+        {previous && <a href={unitHref(work, previous)}>← Book {romanBook(previous)}</a>}
+        <a href={whole ? '/library' : workHref(work)}>{whole ? 'Back to the Library' : `All books of the ${work.title}`}</a>
+      </p>
+      <p className="bk-plate-credits">
+        From the pinned corpus of the atlas, research/corpus/manifest.json. {work.original?.licence === 'CC BY-SA 4.0' ? 'Perseus Digital Library texts are shared under CC BY-SA 4.0, as the atlas’s own data is. ' : ''}
+        Translators’ notes are left out; the line numbers are the original’s.
+      </p>
+    </div>
+  );
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-[1240px] px-4 pb-24 pt-20 sm:px-6 xl:max-w-[1500px]">
-      <CrumbBar
-        back={whole ? { href: '/library', label: 'Back to the Library' } : { href: workHref(work), label: `Back to the ${work.title}` }}
-        trail={[{ href: '/library', label: 'Library' }, ...(whole ? [] : [{ href: workHref(work), label: work.title }])]}
-        current={whole ? work.title : `Book ${romanBook(unit.id)}`}
-      />
-      <div className="mt-8">
-        <ReadingLens hasOriginal={hasOriginal} showsTranslation={showsTranslation} originalLabel={original.label} verse={verse}>
-          <div className="grid gap-10 lg:grid-cols-[164px_minmax(0,1fr)] xl:grid-cols-[164px_minmax(0,1fr)_300px]">
-            <nav aria-label={`Books of the ${work.title}`} className="hidden lg:block">
-              <div className="sticky top-24">
-                <p className="font-display text-[15px] tracking-[0.14em] text-aether">{work.title.toUpperCase()}</p>
-                {work.greekTitle && <p className="mt-0.5 font-greek text-[15px] italic text-star-olympian/70">{work.greekTitle}</p>}
-                <p className="mt-1 font-body text-[13px] italic text-aether-faint">{tellerName} · {work.composed.label}</p>
-                {!whole && (
-                  <ol className="mt-5 grid grid-cols-3 gap-1">
-                    {units.map((id) => (
-                      <li key={id}>
-                        <Link
-                          href={unitHref(work, id)}
-                          aria-current={id === unit.id ? 'page' : undefined}
-                          className={`block rounded px-1.5 py-1 text-center font-display text-[10px] tracking-[0.08em] transition-colors ${
-                            id === unit.id ? 'bg-star-olympian/10 text-star-olympian' : 'text-aether-faint hover:text-aether'
-                          }`}
-                        >
-                          {romanBook(id)}
-                        </Link>
-                      </li>
-                    ))}
-                  </ol>
-                )}
-                <CitationStrip base={marginAt} blocks={unit.blocks.map((block) => block.from)} />
-              </div>
-            </nav>
-
-            <article className="min-w-0">
-              <header className="border-b border-star-olympian/20 pb-6">
-                <p className="font-display text-[10px] uppercase tracking-[0.3em] text-aether-faint">
-                  {tellerName} · {work.title}
-                </p>
-                <h1 className="mt-2 font-display text-3xl tracking-[0.12em] text-aether drop-shadow-[0_0_18px_rgba(252,211,77,0.25)] sm:text-4xl">
-                  {whole ? work.title.toUpperCase() : `BOOK ${romanBook(unit.id)}`}
-                  {work.greekTitle && <span className="mt-1 block font-greek text-xl italic tracking-normal text-star-olympian/75 sm:ml-4 sm:mt-0 sm:inline">{work.greekTitle}</span>}
-                </h1>
-                {credits && <p className="mt-3 max-w-3xl font-body text-[14px] italic leading-relaxed text-aether-faint">{credits}.</p>}
-                {work.id === 'theogony' && (
-                  <Link href="/theogony" className="mt-4 inline-block rounded-full border border-star-olympian/35 px-3.5 py-2 font-display text-[10px] tracking-[0.22em] text-star-olympian transition-colors hover:border-star-olympian/70">
-                    FIRST, CHAOS: READ IT WITH THE SKY →
-                  </Link>
-                )}
-                {!showsTranslation && (
-                  <p className="mt-3 max-w-3xl font-body text-[15px] leading-relaxed text-aether-muted">
-                    {hasOriginal
-                      ? 'The English shown beside this text waits on its licence: the pinned copy comes from a CC BY-NC page, so each block links to it instead.'
-                      : 'Mary Grant’s English is very likely in the US public domain but not yet confirmed, and the corpus holds no Latin, so each passage links to its English at ToposText for now.'}
-                  </p>
-                )}
-                {!whole && (
-                  <div className="mt-5 flex gap-1.5 overflow-x-auto pb-1 lg:hidden">
-                    {units.map((id) => (
-                      <Link
-                        key={id}
-                        href={unitHref(work, id)}
-                        aria-current={id === unit.id ? 'page' : undefined}
-                        className={`shrink-0 rounded-full border px-2.5 py-1 font-display text-[10px] tracking-[0.08em] ${
-                          id === unit.id ? 'border-star-olympian/50 bg-star-olympian/10 text-star-olympian' : 'border-glass-border text-aether-faint'
-                        }`}
-                      >
-                        {romanBook(id)}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </header>
-
-              {hasOriginal && showsTranslation && (
-                <div className="lib-colheads" aria-hidden>
-                  <span>{verse ? 'THE ' : ''}{original.lang === 'la' ? 'LATIN' : 'GREEK'}</span>
-                  <span>THE ENGLISH</span>
-                </div>
-              )}
-
-              <div className={work.structure === 'tales' ? 'lib-tales' : undefined}>
-                {unit.blocks.map((block) => (
-                  <Block key={`${block.from}-${block.to}`} block={block} work={work} lang={original.lang} linker={linker} scope={scopeOf(margin?.blocks[block.from], relationEnds)} />
-                ))}
-              </div>
-
-              <nav className="mt-10 flex justify-between font-display text-[10px] tracking-[0.22em]">
-                {previous ? <Link href={unitHref(work, previous)} className="text-aether-muted hover:text-aether">← BOOK {romanBook(previous)}</Link> : <span />}
-                {next ? <Link href={unitHref(work, next)} className="text-aether-muted hover:text-aether">BOOK {romanBook(next)} →</Link> : <span />}
-              </nav>
-              <p className="mt-8 border-t border-glass-border pt-6 font-body text-[13px] leading-relaxed text-aether-faint">
-                From the pinned corpus of the atlas, research/corpus/manifest.json. {work.original?.licence === 'CC BY-SA 4.0' ? 'Perseus Digital Library texts are shared under CC BY-SA 4.0, as the atlas’s own data is.' : ''} Translators’ notes are left out; the line numbers are the original’s.
-              </p>
-            </article>
-            <MarginPanel base={marginAt} ranges={ranges} tellers={tellers} unitLabel={whole ? work.title : `Book ${romanBook(unit.id)}`} />
-          </div>
-        </ReadingLens>
-      </div>
+    <main className="book-room">
+      {/* the cover carries the title for the eye; it turns away, so the heading stands here */}
+      <h1 className="sr-only">{book ? `${work.title}, ${book}` : work.title}</h1>
+      <BookReader
+        key={`${work.id}/${unit.id}`}
+        storageKey={`${work.id}/${unit.id}`}
+        workId={work.id}
+        headWork={work.title}
+        headUnit={book ?? tellerName}
+        structure={verse ? 'verse' : work.structure === 'tales' ? 'tales' : 'sections'}
+        hasOriginal={hasOriginal}
+        showsTranslation={showsTranslation}
+        originalLabel={original.label}
+        blocks={unit.blocks.map((block) => block.from)}
+        marginBase={marginAt}
+        crumb={
+          <CrumbBar
+            back={whole ? { href: '/library', label: 'Back to the Library' } : { href: workHref(work), label: `Back to the ${work.title}` }}
+            trail={[{ href: '/library', label: 'Library' }, ...(whole ? [] : [{ href: workHref(work), label: work.title }])]}
+            current={whole ? work.title : `Book ${romanBook(unit.id)}`}
+            compact
+          />
+        }
+        cover={cover}
+        title={title}
+        colophon={colophon}
+        margin={<MarginPanel base={marginAt} ranges={ranges} tellers={tellers} unitLabel={whole ? work.title : `Book ${romanBook(unit.id)}`} />}
+      >
+        {unit.blocks.map((block) => (
+          <Block key={`${block.from}-${block.to}`} block={block} work={work} lang={original.lang} linker={linker} scope={scopeOf(margin?.blocks[block.from], relationEnds)} />
+        ))}
+      </BookReader>
     </main>
   );
 }

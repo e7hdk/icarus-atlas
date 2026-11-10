@@ -53,6 +53,7 @@
     "bake-library-extents": "tsx scripts/bake-library-extents.ts",
     "bake-library-texts": "tsx scripts/bake-library-texts.ts",
     "validate-library": "tsx scripts/validate-library.ts",
+    "validate-book": "tsx scripts/validate-book.ts",
     "library:metrics": "tsx scripts/library-metrics.ts",
     "library:ovid-lineation": "tsx scripts/library-ovid-lineation.ts",
     "library:theogony-candidates": "tsx scripts/library-theogony-candidates.ts",

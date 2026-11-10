@@ -4,17 +4,21 @@ import { DayLaurel } from './DayLaurel';
 /** The codex breadcrumb strip under the AtlasBar: a back circle, the trail
  *  of doors that led here, and the current page in gold. Static — it scrolls
  *  away with the page while the bar above stays. Character codices pass
- *  `laurelCharacterId` so the strip can wear the Ephemeris day laurel. */
+ *  `laurelCharacterId` so the strip can wear the Ephemeris day laurel; a page
+ *  that shares the row with its own controls passes `compact`, and a phone
+ *  then keeps only the way back and the current page. */
 export function CrumbBar({
   back,
   trail = [],
   current,
   laurelCharacterId,
+  compact = false,
 }: {
   back: { href: string; label: string };
   trail?: { href: string; label: string }[];
   current: string;
   laurelCharacterId?: string;
+  compact?: boolean;
 }) {
   return (
     <div className="flex items-center gap-3 font-display text-[10px] uppercase tracking-[0.22em] text-aether-faint">
@@ -26,7 +30,7 @@ export function CrumbBar({
         ←
       </Link>
       {trail.map((stop) => (
-        <span key={stop.href} className="flex items-center gap-3">
+        <span key={stop.href} className={`items-center gap-3 ${compact ? 'hidden sm:flex' : 'flex'}`}>
           <Link href={stop.href} className="text-aether-muted transition-colors hover:text-aether">
             {stop.label}
           </Link>

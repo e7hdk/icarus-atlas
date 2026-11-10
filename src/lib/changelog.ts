@@ -14,6 +14,16 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.7.0',
+    codename: 'The Book of Night',
+    date: '2026-11-10',
+    lines: [
+      'The reading room was bound as a book. A work now opens on its cover, boards the colour of the night sky with its title cut in gold, and the cover swings over on its spine. The original lies on the left page and its English on the right, each passage beginning at the same height on both, so the English always faces the Greek or the Latin it renders. On a phone a page holds a stretch of the original and, under it, the English of that stretch.',
+      'The leaves turn: with the arrow keys, with a click on the edge of a page, where the leaf first lifts under the pointer, with a drag that carries it, or with a swipe; a leap across the book riffles its leaves. The pages are night and bear no stars, so that no accent of the Greek is taken for one, and gold keeps to the fore-edge, the page numbers and the thread in the gutter.',
+      'Under the book runs its fore-edge, a bar for every passage, taller where more of the atlas rests on it, and the margin follows the open pages and the passage the reader touches. A footnote still opens its passage: the book falls open on the page that holds it, and the lines glow once. The book keeps the reader’s place, and the language they chose goes with them from work to work.',
+    ],
+  },
+  {
     version: '0.6.5',
     codename: 'The Tear Rewoven',
     date: '2026-11-08',
