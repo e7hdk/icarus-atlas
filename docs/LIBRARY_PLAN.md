@@ -20,7 +20,7 @@ The door's metaphor is already in the sources:
 
 ### Non-goals
 
-- **No library to walk through.** The door is a 2D shelf and the reading room is typography: no 3D hall of scrolls, no page curl, no parchment texture.
+- **No library to walk through.** The door is a 2D shelf: no 3D hall of scrolls. The reading room was typography alone until M15.8; since then it is a book whose leaves turn (L13, the user's idea). It stays a place to read: night pages and no parchment texture, no stars behind the text.
 - **No lens selector.** Every page in the Library is already one teller, and the Quarrels show all of them at once. The lens keeps its one home on the Poets tab.
 - **No new mythology.** Nothing here writes a fact. A passage is displayed as text and never becomes data on its own (hard rule 5: corpus hits are evidence, not data).
 - **No full-text search in v1.** ⌘K learns works, books, quarrels and citations (type `Il. 5.370` and land on the line). Searching inside 8.4 MB of text needs its own index and its own budget, later.
@@ -76,7 +76,10 @@ Same discipline as hard rule 6: no position is decoration.
 | Shape | Meaning | Source in the data |
 |---|---|---|
 | **Line number** | The original's lineation, the one the atlas cites | the edition |
-| **Aligned block** | An English card beside the original lines it translates | Perseus card numbers (§4.4) |
+| **Aligned block** | An English card and the original lines it translates. They begin at the same height on facing pages; on a phone the English stands under its stretch of the original | Perseus card numbers (§4.4) |
+| **Left page, right page** | The original and its English, when both are shown on a wide screen | the edition and its translation |
+| **Gold hair in the gutter** | The block the margin speaks of; fainter under the pointer | the reader |
+| **Fore-edge bar** | One block of the page, taller where more facts rest on it, gold where it lies open | the reverse index |
 | **Gold underline** | A stretch some atlas fact cites | the reverse index |
 | **Linked name** | A figure the passage names, linked only when certain | §4.6 |
 | **Margin entry** | A fact, story, quarrel or work of art resting on the block being read | the reverse index |
@@ -261,19 +264,25 @@ The shape grew from the plan's `{ source, claim, citation }` when the doc was re
 
 ## 6. The reading room
 
-**Desktop, three columns.**
+**A book** (M15.8, L13). A reading page is bound as a book of night sky and is one screen: nothing scrolls. It opens on its cover (the work, its Greek title, its book), which swings over on the spine.
 
-- **Left rail:** the work's books, and the current book's cards or sections with their citation strip.
-- **Centre:** aligned blocks, the original and the English side by side, or either alone. Line numbers every five lines in the original's lineation. Cited stretches carry a faint gold underline.
-- **Right, the margin:** for the block under the reading line, the figures it names (type glyph, links to the star and the codex), its stories, its ⚖ quarrels, the works on the Loom for those stories, and *N facts rest on these lines*, each with its footnote.
+- **Facing pages.** On a wide screen the original is the left page and the English the right, as in a Loeb. A block begins at the same height on both. A block too long for the page is cut between lines, and its shorter language in proportion, so a page of English always faces the Greek it translates. With one language chosen the text runs from page to page.
+- **A phone** holds one page: a stretch of the original and, under a short rule, the English of that stretch.
+- **The leaf.** A page turns as a leaf about the spine. An arrow key turns it, or the wheel, or a click on the page's edge, where the leaf first lifts under the pointer; a drag carries it, and so does a swipe. A jump over several pages riffles two or three leaves. Under reduced motion pages change at once and the book is already open.
+- **The pages are for reading.** They are night, not parchment, and carry no stars: a polytonic accent must never be mistaken for one. The nebula and the stars are on the boards and the endpapers. Gold keeps to the fore-edge, the folios, the thread in the gutter and the mark of the block being read.
+- **The title page** carries the editions' credits and the work's books; the last page leads to the next book.
+- **Under the book, the fore-edge:** one bar a block, taller where more facts rest on it, the blocks lying open in gold. A click turns to the block under the pointer. It took the place of the left rail.
+- **The margin** (a column from 1440 px, a bottom sheet below that): for the block the reader is on, the figures it names (type glyph, links to the star and the codex), its stories, its ⚖ quarrels, the works on the Loom for those stories, and *N facts rest on these lines*, each with its footnote. The block is the first to begin on the open pages, or the one the reader clicks.
 
-The reading line is the trace CharacterTheatre and StoryTheatre already share (one rAF-throttled scroll listener, the line at 42% of the viewport), lifted into a shared `useReadingTrace` hook.
+**How it is made.** The server renders the whole text into the page, so the text is in the HTML, and without scripts it reads as one column. The client measures that hidden flow and cuts it into pages. `src/features/library/book/compose.ts` is the geometry, gated by `pnpm validate-book`; `engine.ts` shows each page as copies of the lines on it. A face of a leaf never changes parent, and the faces of the pages either side are set ahead of time, so a turn starts within a frame.
 
-**Deep links.** Every citation opens `/library/[author]/[work]/[unit]#l370-371`, or `#s1.3.1` in prose: the range glows and settles on the reading line. A shared `<Citation>` primitive in `src/components/ui/` replaces the four private footnotes and the six rebuilt citation strings, and its tooltip gains *Read the passage*.
+**Deep links.** Every citation opens `/library/[author]/[work]/[unit]#l370-371`, or `#s1.3.1` in prose: the book falls open on the page that holds the passage, and the lines glow once. A shared `<Citation>` primitive in `src/components/ui/` replaces the four private footnotes and the six rebuilt citation strings, and its tooltip gains *Read the passage*.
 
-**Phone.** One column, the language switch in the bar (Greek, English, or both stacked), the margin a bottom sheet at 30% that follows the reading line.
+**Kept.** The reader's place in a book lasts the session; the language they chose lasts across books. Arriving further into a work already in hand, the book opens on the text and not on the title page.
 
-**Type.** A measure of 60–70 characters per column. Greek needs a polytonic face: EB Garamond, which Google Fonts serves with `greek` and `greek-ext` subsets, the Garamond cousin of the body face. Cinzel stays for titles. Gilded corners go only on the fragment-like surfaces (the Muses' epigraph, a quarrel's claims), as the Gilded chrome rule asks.
+**What it costs.** The browser's own find reaches only the pages lying open, since the rest of the text is out of sight. A search inside the book would answer that; it is not built (§12, Scope).
+
+**Type.** One leading for both languages, 26 to 30 px by the room, so facing pages keep the same lines. The English is Cormorant at two thirds of the leading, weight 500; the original a little smaller. A measure of 50 to 62 characters a page. Greek needs a polytonic face: EB Garamond, which Google Fonts serves with `greek` and `greek-ext` subsets, the Garamond cousin of the body face. Cinzel stays for titles and running heads. Gilded corners go only on the fragment-like surfaces (the Muses' epigraph, a quarrel's claims), as the Gilded chrome rule asks.
 
 ## 7. The Quarrels
 
@@ -569,6 +578,21 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
     - L10, Grant's Hyginus in full or in excerpts;
     - the decision log's statuses.
 
+- **M15.8 — The book.** The reading room bound as a book (§6, L13).
+  - *Built 2026-11-10, on the user's idea and go.*
+  - **Built.**
+    - The cover, the opening, the facing pages, the leaf that turns, the title page and the last page, the fore-edge under the book.
+    - `ReadingRoom` still renders the text on the server; `BookReader` and `features/library/book` (`compose.ts`, `engine.ts`, `targets.ts`, `language.ts`) cut and turn it. `ReadingLens` and `CitationStrip` are gone.
+    - A page copies only the lines and paragraphs it shows. A line of verse that runs over on a narrow page is never split between two pages, and a section's number is never left alone at the foot of one.
+    - The margin follows the page and the block the reader clicks; it is a column from 1440 px now, since the book needs the room below that.
+  - **Checked.**
+    - `pnpm validate-book` sets 600 made-up books, 74,374 pages, facing and stacked: every line once and in order, none cut, none past the foot of a page. A composer broken on purpose fails it.
+    - In headless Chrome, every page of eleven settings was read back: *Iliad* 5 facing, in English, in Greek and on a phone; *Metamorphoses* 1 at 1280×720 and 360×640; *Bibliotheca* 1 at 1920×1080; the *Fabulae*; the *Theogony* at 1024×768 and in Greek on a phone; Pausanias 1 on a phone. 1,426 views and 44,237 lines of text: no line cut by a page, no empty stretch, every line of verse shown once and in order.
+    - The hands, at 1440×900 and 390×844: hover, click, a drag that goes over and one that falls back, the wheel, the fore-edge, a swipe each way, a tap on the edge, a new hash, the language switch and a resize (the place holds), a reload (the place is kept), a name through to its codex. No script errors, nothing wider than the screen.
+    - Frames: at 60 Hz no frame over 17 ms through four turns. With the CPU slowed six times on the phone layout, the first frames of a turn take 9 to 16 ms each; before the faces were set ahead, the longest frame of a turn ran 17 to 60 ms.
+    - `pnpm build` passes: 8,187 pages in 6.8 minutes, run beside a dev server. *Iliad* 5 weighs 141 KB gzipped with its whole text in it, as before. `validate-library` and lint pass.
+    - Not checked: Safari and iOS (the machine has no simulator), a real phone.
+
 M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can then run side by side. M15.6 needs only M15.1 and the *Theogony* page of M15.2, so it can move forward if the launch wants its moment.
 
 ## 12. Risks and guards
@@ -579,6 +603,7 @@ M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can
 - **A text dump.** The alignment, the margin and the shelf are what make this a room rather than a file listing; the mockup step is there to prove it before anything is built.
 - **Git growth.** About 9 MB of text, once; rebaked only when the manifest changes.
 - **Build time.** About 300 new static pages, small beside the codex's 1,487 × 3; measured at M15.2.
+- **A book hides its text from the browser's find.** Only the open pages are in sight (§6). The whole text stays in the HTML for a crawler and for a reader without scripts; a search inside the book is the remedy, and it is not built.
 - **Scope.** Full-text search, lemma linking, translators' notes, recitation, and new tellers (Pindar, the tragedians) are good ideas and are not in M15. New tellers would change the source system, not the Library.
 
 ## 13. Decision log (proposed — confirm on review)
@@ -597,6 +622,7 @@ M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can
 | L10 | Licence posture | Full text only where the licence is verified. Seaton from Project Gutenberg #13977: shown in full since 2026-11-06 (§4.4). Grant's Hyginus: registered in 1960 and never renewed, so very likely US public domain since 1989; show it in full with that note, or keep excerpts | Seaton decided; Grant's Astronomica and Fabulae in full at the user's call (2026-11-06) |
 | L11 | Names outside a passage's scope | Only a god whose name no other figure bears links; everyone else links only in scope. Measured on *Iliad* 5: the looser rule made three wrong links in 180 lines | proposed |
 | L12 | Phone glyph | Three spines of unequal height on a shelf, the middle one gilt-banded, in the bar's thin-stroke idiom | proposed |
+| L13 | The reading room's form | A book: a cover that opens, the original on the left page and the English on the right, leaves that turn, one screen with nothing scrolling. It lifts the non-goal of §1 for the reading room alone. Rejected for the pages: parchment, and stars behind the text | the user's idea and go, 2026-11-10 |
 
 ## 14. Open questions
 

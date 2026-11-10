@@ -1,0 +1,921 @@
+/* The Library's reading room: a book of night sky (docs/LIBRARY_PLAN.md §6).
+   The room is one screen and the book is the only thing on it. Its pages are
+   night, not paper: the boards and the endpapers carry the nebula, the pages
+   stay calm for the reading, and gold keeps to the edges — the fore-edge, the
+   folios, the thread in the gutter. The engine (features/library/book) sets
+   the sizes as custom properties on `.book` and builds the faces; this file
+   owns how every part looks and where it lies. One leading (`--bk-lead`) sets
+   every line of both languages, so facing pages keep the same lines. */
+
+.book-room {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  overflow: hidden;
+  /* under the atlas bar, and above the margin's sheet where it is a sheet */
+  padding: 4.1rem 0.75rem 3.4rem;
+  touch-action: manipulation;
+  /* a push past the edge turns a page, and never pulls the browser's history in */
+  overscroll-behavior: none;
+}
+@media (min-width: 640px) {
+  .book-room {
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .book-room {
+    padding-bottom: 0.6rem;
+  }
+}
+
+.book {
+  /* until the engine has measured the room */
+  --bk-page-w: 320px;
+  --bk-page-h: 480px;
+  --bk-per-view: 1;
+  --bk-over: 6px;
+  --bk-rim: 7px;
+  --bk-pad-top: 44px;
+  --bk-pad-bottom: 38px;
+  --bk-pad-in: 22px;
+  --bk-pad-out: 22px;
+  --bk-text-w: 276px;
+  --bk-text-h: 392px;
+  --bk-lead: 28px;
+  --bk-fs-trans: 18.8px;
+  --bk-fs-orig: 16.6px;
+  --bk-num: 28px;
+  --bk-stack-l: 0px;
+  --bk-stack-r: 4px;
+
+  --bk-gilt: 252 211 77;
+  --bk-ink: rgb(240 242 250 / 0.95);
+  --bk-stars-a: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cg fill='%23fff'%3E%3Ccircle cx='12' cy='20' r='.7' opacity='.8'/%3E%3Ccircle cx='60' cy='8' r='.5' opacity='.5'/%3E%3Ccircle cx='96' cy='44' r='.9' opacity='.9'/%3E%3Ccircle cx='150' cy='30' r='.5' opacity='.6'/%3E%3Ccircle cx='30' cy='90' r='.6' opacity='.5'/%3E%3Ccircle cx='78' cy='120' r='.8' opacity='.7'/%3E%3Ccircle cx='130' cy='100' r='.5' opacity='.5'/%3E%3Ccircle cx='170' cy='150' r='.7' opacity='.8'/%3E%3Ccircle cx='20' cy='160' r='.5' opacity='.6'/%3E%3Ccircle cx='110' cy='170' r='.6' opacity='.5'/%3E%3Ccircle cx='52' cy='52' r='.4' opacity='.4'/%3E%3Ccircle cx='140' cy='64' r='.4' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+  --bk-stars-b: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cg fill='%23fde68a'%3E%3Ccircle cx='30' cy='40' r='1.1' opacity='.9'/%3E%3Ccircle cx='200' cy='20' r='.6' opacity='.5'/%3E%3Ccircle cx='120' cy='90' r='.7' opacity='.6'/%3E%3Ccircle cx='240' cy='140' r='.9' opacity='.8'/%3E%3Ccircle cx='60' cy='200' r='.6' opacity='.6'/%3E%3Ccircle cx='170' cy='230' r='1' opacity='.7'/%3E%3Ccircle cx='90' cy='150' r='.5' opacity='.4'/%3E%3Ccircle cx='220' cy='70' r='.4' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+  --bk-endpaper:
+    var(--bk-stars-a), var(--bk-stars-b),
+    radial-gradient(62% 46% at 28% 24%, rgb(124 77 255 / 0.46), transparent 70%),
+    radial-gradient(56% 42% at 76% 70%, rgb(255 64 129 / 0.2), transparent 70%),
+    radial-gradient(50% 44% at 18% 86%, rgb(0 229 255 / 0.17), transparent 70%),
+    radial-gradient(42% 30% at 86% 14%, rgb(192 132 252 / 0.26), transparent 70%), #0a0522;
+  --bk-leather: linear-gradient(100deg, #150c36 0%, #241651 30%, #1d1245 60%, #130a31 100%);
+  --bk-paper:
+    radial-gradient(110% 55% at 50% 0%, rgb(124 77 255 / 0.1), transparent 72%),
+    radial-gradient(90% 40% at 50% 100%, rgb(0 229 255 / 0.035), transparent 75%), linear-gradient(180deg, #120b32 0%, #0d0829 100%);
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.book-top {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 2.25rem;
+}
+.book-main {
+  display: grid;
+  flex: 1;
+  grid-template: 'stage' minmax(0, 1fr) 'foot' auto / minmax(0, 1fr);
+  column-gap: 2.25rem;
+  min-height: 0;
+}
+@media (min-width: 1440px) {
+  .book-main {
+    grid-template: 'stage margin' minmax(0, 1fr) 'foot margin' auto / minmax(0, 1fr) 300px;
+  }
+}
+.book-stage {
+  position: relative;
+  display: grid;
+  grid-area: stage;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+.book-foot {
+  display: flex;
+  grid-area: foot;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  max-width: calc(var(--bk-page-w) * var(--bk-per-view) + 2 * var(--bk-over));
+  height: 2.6rem;
+  margin: 0 auto;
+}
+
+/* the room's own furniture waits until the book lies open */
+.book .book-foot,
+.book .book-main > aside {
+  transition: opacity 0.7s ease;
+}
+.book:not([data-state='open']) .book-foot,
+.book:not([data-state='open']) .book-main > aside {
+  opacity: 0;
+}
+
+/* ── the book ─────────────────────────────────────────────────────────── */
+
+.bk {
+  position: relative;
+  width: calc(var(--bk-page-w) * var(--bk-per-view));
+  height: var(--bk-page-h);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.book[data-ready] .bk {
+  opacity: 1;
+}
+.bk-shift {
+  position: absolute;
+  inset: 0;
+}
+.bk-pages {
+  position: absolute;
+  inset: 0;
+  perspective: var(--bk-persp, 3400px);
+  perspective-origin: 50% 46%;
+  touch-action: pan-y;
+}
+
+/* the back board, and the endpaper pasted inside it */
+.bk-board {
+  position: absolute;
+  top: calc(-1 * var(--bk-rim));
+  right: calc(-1 * var(--bk-over));
+  bottom: calc(-1 * var(--bk-rim));
+  left: 50%;
+  border-radius: 2px 8px 8px 2px;
+  background: var(--bk-leather);
+  box-shadow:
+    0 0 0 1px rgb(var(--bk-gilt) / 0.3),
+    0 36px 70px -20px rgb(2 1 10 / 0.95),
+    0 0 110px rgb(124 77 255 / 0.2);
+}
+.bk-board::after {
+  position: absolute;
+  inset: var(--bk-rim) var(--bk-over) var(--bk-rim) 0;
+  border-radius: 0 3px 3px 0;
+  background: var(--bk-endpaper);
+  content: '';
+}
+.book[data-view='1'] .bk-board {
+  left: calc(-1 * var(--bk-over));
+  border-radius: 8px;
+}
+.book[data-view='1'] .bk-board::after {
+  left: var(--bk-over);
+  border-radius: 3px;
+}
+
+/* the page block's gilt edges: the left one thickens as the reader goes */
+.bk-edge {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  background: repeating-linear-gradient(to right, rgb(var(--bk-gilt) / 0.5) 0 1px, #130b33 1px 3px);
+}
+.bk-edge-r {
+  left: 100%;
+  width: var(--bk-stack-r);
+  border-radius: 0 2px 2px 0;
+}
+.bk-edge-l {
+  right: 100%;
+  width: var(--bk-stack-l);
+  border-radius: 2px 0 0 2px;
+}
+
+/* the front board: closed it lies on the pages, open it is the left board */
+.bk-cover {
+  position: absolute;
+  top: calc(-1 * var(--bk-rim));
+  bottom: calc(-1 * var(--bk-rim));
+  left: 50%;
+  z-index: 11;
+  width: calc(50% + var(--bk-over));
+  transform-origin: 0 50%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.book[data-state='open'] .bk-cover {
+  z-index: 1;
+}
+.book[data-view='1'] .bk-cover {
+  left: calc(-1 * var(--bk-over));
+  width: calc(100% + 2 * var(--bk-over));
+}
+.bk-cover-front,
+.bk-cover-back {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.bk-cover-front {
+  border-radius: 2px 8px 8px 2px;
+  background:
+    var(--bk-stars-a), var(--bk-stars-b),
+    radial-gradient(90% 58% at 80% 10%, rgb(124 77 255 / 0.36), transparent 62%),
+    radial-gradient(70% 50% at 10% 94%, rgb(0 229 255 / 0.11), transparent 66%),
+    radial-gradient(52% 36% at 90% 88%, rgb(255 64 129 / 0.12), transparent 70%),
+    linear-gradient(100deg, #150c36 0%, #2a1a5e 16%, #1d1245 56%, #130a31 100%);
+  box-shadow:
+    inset 0 0 0 1px rgb(var(--bk-gilt) / 0.42),
+    inset 20px 0 24px -16px rgb(2 1 10 / 0.8);
+  color: rgb(var(--bk-gilt));
+}
+/* the joint, where the board hinges on the spine */
+.bk-cover-front::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4.2%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgb(var(--bk-gilt) / 0.4) 12%, rgb(var(--bk-gilt) / 0.4) 88%, transparent);
+  content: '';
+}
+.book[data-view='1'] .bk-cover-front {
+  border-radius: 8px;
+}
+.bk-cover-back {
+  border-radius: 8px 2px 2px 8px;
+  background: var(--bk-leather);
+  box-shadow:
+    inset 0 0 0 1px rgb(var(--bk-gilt) / 0.3),
+    0 36px 70px -20px rgb(2 1 10 / 0.95);
+  transform: rotateY(180deg);
+}
+/* the endpaper pasted inside the front board */
+.bk-cover-back::before {
+  position: absolute;
+  inset: var(--bk-rim) 0 var(--bk-rim) var(--bk-over);
+  border-radius: 3px 0 0 3px;
+  background: var(--bk-endpaper);
+  box-shadow: inset -26px 0 28px -16px rgb(2 1 10 / 0.8);
+  content: '';
+}
+.bk-cover-frame {
+  position: absolute;
+  inset: 5.5% 7% 5.5% 10.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7% 6%;
+  border: 1px solid rgb(var(--bk-gilt) / 0.55);
+  outline: 1px solid rgb(var(--bk-gilt) / 0.22);
+  outline-offset: 5px;
+  /* a boss at each corner, as on an old binding */
+  background:
+    radial-gradient(circle at 9px 9px, rgb(var(--bk-gilt) / 0.85) 0 2px, transparent 2.6px),
+    radial-gradient(circle at calc(100% - 9px) 9px, rgb(var(--bk-gilt) / 0.85) 0 2px, transparent 2.6px),
+    radial-gradient(circle at 9px calc(100% - 9px), rgb(var(--bk-gilt) / 0.85) 0 2px, transparent 2.6px),
+    radial-gradient(circle at calc(100% - 9px) calc(100% - 9px), rgb(var(--bk-gilt) / 0.85) 0 2px, transparent 2.6px);
+  text-align: center;
+}
+.bk-cover-teller {
+  font-family: var(--font-display);
+  font-size: calc(var(--bk-page-w) * 0.031);
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  text-transform: uppercase;
+  color: rgb(var(--bk-gilt) / 0.78);
+}
+.bk-cover-title {
+  margin-top: 0.5em;
+  font-family: var(--font-display);
+  font-size: calc(var(--bk-page-w) * var(--bk-title-fit, 0.1));
+  line-height: 1.16;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  text-shadow: 0 0 26px rgb(var(--bk-gilt) / 0.42);
+  text-wrap: balance;
+}
+.bk-cover-greek {
+  margin-top: 0.35em;
+  font-family: var(--font-greek);
+  font-size: calc(var(--bk-page-w) * 0.052);
+  font-style: italic;
+  color: rgb(var(--bk-gilt) / 0.72);
+}
+.bk-device {
+  width: calc(var(--bk-page-w) * 0.27);
+  margin: 9% 0;
+  filter: drop-shadow(0 0 10px rgb(var(--bk-gilt) / 0.35));
+}
+.bk-cover-unit {
+  font-family: var(--font-display);
+  font-size: calc(var(--bk-page-w) * 0.034);
+  letter-spacing: 0.36em;
+  text-indent: 0.36em;
+  text-transform: uppercase;
+  color: rgb(var(--bk-gilt) / 0.88);
+}
+/* how the pages turn, said once inside the front board */
+.bk-hint {
+  position: absolute;
+  right: 12%;
+  bottom: 9%;
+  left: 12%;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.4;
+  color: rgb(241 245 249 / 0.6);
+  text-align: center;
+  text-wrap: balance;
+}
+.bk-hint-hand {
+  display: none;
+}
+@media (pointer: coarse) {
+  .bk-hint-hand {
+    display: inline;
+  }
+  .bk-hint-keys {
+    display: none;
+  }
+}
+
+/* a gold thread in the gutter, as under the atlas bar */
+.bk-spine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 0.5px);
+  z-index: 3;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgb(var(--bk-gilt) / 0.34) 14%, rgb(var(--bk-gilt) / 0.34) 86%, transparent);
+  pointer-events: none;
+}
+.book[data-view='1'] .bk-spine,
+.book:not([data-state='open']) .bk-spine {
+  display: none;
+}
+
+/* the shadow a lifted leaf throws on the page beneath, just past its free edge */
+.bk-castbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 50%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.bk-castbox-l {
+  left: 0;
+}
+.bk-castbox-r {
+  left: 50%;
+}
+.book[data-view='1'] .bk-castbox-l {
+  display: none;
+}
+.book[data-view='1'] .bk-castbox-r {
+  left: 0;
+  width: 100%;
+}
+.bk-cast {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.bk-castbox-r .bk-cast {
+  left: 0;
+  background: linear-gradient(to right, rgb(2 1 10 / 0.62), rgb(2 1 10 / 0.2) 45%, transparent);
+}
+.bk-castbox-l .bk-cast {
+  right: 0;
+  background: linear-gradient(to left, rgb(2 1 10 / 0.62), rgb(2 1 10 / 0.2) 45%, transparent);
+}
+
+/* a leaf darkens as it stands up, and a seam of starlight runs down it */
+.bk-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  opacity: 0;
+  background:
+    linear-gradient(98deg, transparent 38%, rgb(192 132 252 / 0.2) 52%, transparent 64%),
+    linear-gradient(to right, rgb(2 1 10 / 0.3), rgb(2 1 10 / 0.92));
+  pointer-events: none;
+  will-change: opacity;
+}
+.bk-face[data-side='left'] > .bk-shade,
+.bk-cover-back .bk-shade {
+  background:
+    linear-gradient(82deg, transparent 36%, rgb(192 132 252 / 0.2) 48%, transparent 62%),
+    linear-gradient(to left, rgb(2 1 10 / 0.3), rgb(2 1 10 / 0.92));
+}
+
+/* the edges of the book take the hand: hover lifts, click turns, drag carries */
+.bk-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 12;
+  width: calc(var(--bk-pad-out) + var(--bk-over) - 4px);
+  border-radius: 6px;
+  cursor: pointer;
+  touch-action: none;
+}
+.bk-zone-prev {
+  left: calc(-1 * var(--bk-over));
+}
+.bk-zone-next {
+  right: calc(-1 * var(--bk-over));
+}
+.bk-zone:disabled,
+.book:not([data-state='open']) .bk-zone {
+  pointer-events: none;
+}
+.bk-zone:focus-visible {
+  outline: 1px solid rgb(var(--bk-gilt) / 0.7);
+  outline-offset: -3px;
+}
+
+/* ── a face: one side of a leaf ───────────────────────────────────────── */
+
+/* A face is laid out where it will lie and never changes parent: a turn is a
+   right-hand face and a left-hand one rotating about the spine, back to back.
+   `rest` lies open, `wing` is built ahead and out of sight, `fly` is in the air. */
+.bk-face {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 50%;
+  overflow: hidden;
+  background: var(--bk-paper);
+  color: var(--bk-ink);
+}
+.bk-face.bk-face[data-kind='none'] {
+  background: none;
+  box-shadow: none;
+}
+.bk-face[data-side='left'] {
+  border-radius: 3px 0 0 3px;
+  box-shadow: inset 1px 0 0 rgb(var(--bk-gilt) / 0.22);
+  transform-origin: 100% 50%;
+}
+.bk-face[data-side='right'] {
+  left: 50%;
+  border-radius: 0 3px 3px 0;
+  box-shadow: inset -1px 0 0 rgb(var(--bk-gilt) / 0.22);
+  transform-origin: 0 50%;
+}
+.bk-face[data-side='single'] {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: inset -1px 0 0 rgb(var(--bk-gilt) / 0.22);
+  transform-origin: 0 50%;
+}
+.bk-face[data-role='wing'] {
+  z-index: 0;
+  visibility: hidden;
+}
+.bk-face[data-role='fly'] {
+  z-index: 7;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+/* the page curves down into the gutter */
+.bk-face::after {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  content: '';
+  pointer-events: none;
+}
+.bk-face[data-side='left']::after {
+  background: linear-gradient(to left, rgb(2 1 10 / 0.55), rgb(2 1 10 / 0.18) 5%, transparent 15%);
+}
+.bk-face[data-side='right']::after {
+  background: linear-gradient(to right, rgb(2 1 10 / 0.55), rgb(2 1 10 / 0.18) 5%, transparent 15%);
+}
+.bk-face[data-side='single']::after {
+  background: linear-gradient(to right, rgb(2 1 10 / 0.42), transparent 7%);
+}
+.bk-face[data-kind='none']::after {
+  display: none;
+}
+.bk-face[data-kind='none'] {
+  pointer-events: none;
+}
+
+.bk-head,
+.bk-text {
+  position: absolute;
+  left: var(--bk-pad-out);
+  width: var(--bk-text-w);
+}
+.bk-face[data-side='right'] .bk-head,
+.bk-face[data-side='right'] .bk-text {
+  left: var(--bk-pad-in);
+}
+.bk-head {
+  top: calc(var(--bk-pad-top) - 2.2rem);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.08);
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  line-height: 1;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-aether-faint);
+}
+.bk-head span:last-child {
+  color: rgb(var(--bk-gilt) / 0.62);
+}
+.bk-text {
+  top: var(--bk-pad-top);
+  height: var(--bk-text-h);
+}
+.bk-folio {
+  position: absolute;
+  right: 0;
+  bottom: calc(var(--bk-pad-bottom) * 0.34);
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  color: rgb(var(--bk-gilt) / 0.6);
+  text-align: center;
+}
+/* a stretch of one block: clipped between lines, open to the margins either side */
+.bk-slice {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  clip-path: inset(0 -3.5rem);
+}
+.bk-pull {
+  display: flow-root;
+}
+/* on a phone, between a stretch of the original and its English */
+.bk-between {
+  position: absolute;
+  left: 0;
+  width: 2.25rem;
+  height: 1px;
+  background: rgb(var(--bk-gilt) / 0.38);
+}
+/* the block the margin speaks of: a gold hair on the gutter side of both pages */
+.bk-slice[data-now]::before,
+.bk-slice[data-target]::before {
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: -0.85rem;
+  width: 1px;
+  background: rgb(var(--bk-gilt) / 0.5);
+  content: '';
+}
+.bk-face[data-side='left'] .bk-slice[data-now]::before,
+.bk-face[data-side='left'] .bk-slice[data-target]::before {
+  right: -0.95rem;
+  left: auto;
+}
+.bk-slice[data-target]::before {
+  width: 2px;
+  background: rgb(var(--bk-gilt) / 0.85);
+}
+/* under the pointer, the hair a click would make gold */
+.bk-slice[data-hover]::before {
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: -0.85rem;
+  width: 1px;
+  background: rgb(var(--bk-gilt) / 0.2);
+  content: '';
+}
+.bk-face[data-side='left'] .bk-slice[data-hover]::before {
+  right: -0.95rem;
+  left: auto;
+}
+
+/* ── the text ─────────────────────────────────────────────────────────── */
+
+/* the server's setting, kept whole and out of sight: the engine measures it here */
+.bk-source {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--bk-text-w);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}
+.bk-tpl {
+  display: none;
+}
+
+.book .lib-block,
+.book .lib-orig,
+.book .lib-trans {
+  width: 100%;
+  line-height: var(--bk-lead);
+}
+.book .lib-trans {
+  font-family: var(--font-body);
+  font-size: var(--bk-fs-trans);
+  font-weight: 500;
+  color: var(--bk-ink);
+}
+.book .lib-orig {
+  font-family: var(--font-greek);
+  font-size: var(--bk-fs-orig);
+  color: rgb(238 240 249 / 0.93);
+}
+/* a page copies paragraphs singly: the indent is the paragraph's own, not its neighbour's */
+.book .lib-trans p.lib-next {
+  text-indent: 1.3em;
+}
+.book[data-lang='trans'] .lib-orig {
+  display: none;
+}
+/* apart from the rule above, so a browser without :has() still hides the original */
+.book[data-lang='orig'] .lib-trans:not(:has(.lib-out)) {
+  display: none;
+}
+
+/* what a block is: a section number in both languages; verse is numbered by its
+   lines, so its English says which lines it renders only when it stands alone */
+.book .lib-range {
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  letter-spacing: 0.24em;
+  color: var(--color-aether-faint);
+  transition: color 0.3s;
+}
+.book .bk-slice[data-now] .lib-range {
+  color: rgb(var(--bk-gilt) / 0.9);
+}
+.book[data-structure='verse']:not([data-lang='trans']) .lib-trans .lib-range,
+.book[data-stack] .lib-trans .lib-range {
+  display: none;
+}
+
+.book .lib-line {
+  position: relative;
+  padding-left: var(--bk-num);
+}
+.book .lib-line > i {
+  position: absolute;
+  top: 0;
+  right: calc(100% - var(--bk-num) + 0.85rem);
+  font: normal 9.5px / var(--bk-lead) var(--font-display);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  color: var(--color-aether-faint);
+  user-select: none;
+}
+.book .lib-line > span {
+  display: block;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.book .lib-line[data-target] {
+  background: linear-gradient(90deg, rgb(var(--bk-gilt) / 0.13), rgb(var(--bk-gilt) / 0.03));
+  color: #fef3c7;
+}
+.book .lib-line[data-target] > i {
+  color: rgb(var(--bk-gilt) / 0.9);
+}
+.book .lib-out {
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgb(var(--bk-gilt) / 0.85);
+}
+.book .lib-out:hover {
+  color: var(--color-star-olympian);
+}
+/* a cited passage glows once as the book falls open on it */
+.book .bk-face .lib-flash {
+  animation: lib-flash 3.2s ease-out 0.9s 1 backwards;
+}
+@keyframes lib-flash {
+  from {
+    background: rgb(252 211 77 / 0.34);
+  }
+}
+/* a name in the English: tinted by type like the atlas's prose, with a quiet
+   dotted underline, since a mortal's pale tint is the reading colour itself */
+.book .lib-name {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.24em;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  text-shadow: 0 0 10px color-mix(in srgb, currentColor 30%, transparent);
+  transition:
+    text-decoration-color 0.2s,
+    text-shadow 0.2s;
+}
+.book .lib-name:hover,
+.book .lib-name:focus-visible {
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-shadow: 0 0 12px color-mix(in srgb, currentColor 60%, transparent);
+}
+
+/* ── the plates: the title page and the last page ─────────────────────── */
+
+.bk-plate {
+  position: absolute;
+  inset: var(--bk-pad-top) var(--bk-pad-out) var(--bk-pad-bottom);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bk-face[data-side='right'] .bk-plate {
+  left: var(--bk-pad-in);
+}
+.bk-plate-teller {
+  font-family: var(--font-display);
+  font-size: clamp(10px, calc(var(--bk-page-w) * 0.026), 14px);
+  letter-spacing: 0.36em;
+  text-indent: 0.36em;
+  text-transform: uppercase;
+  color: var(--color-aether-muted);
+}
+.bk-plate-name {
+  margin-top: 0.45em;
+  font-family: var(--font-display);
+  font-size: calc(var(--bk-page-w) * var(--bk-title-fit, 0.1) * 0.84);
+  line-height: 1.16;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  text-shadow: 0 0 22px rgb(var(--bk-gilt) / 0.28);
+  text-wrap: balance;
+}
+.bk-plate-greek {
+  margin-top: 0.3em;
+  font-family: var(--font-greek);
+  font-size: clamp(17px, calc(var(--bk-page-w) * 0.048), 28px);
+  font-style: italic;
+  color: rgb(var(--bk-gilt) / 0.78);
+}
+.bk-plate-unit {
+  margin-top: 1.1em;
+  font-family: var(--font-display);
+  font-size: clamp(10px, calc(var(--bk-page-w) * 0.026), 13px);
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  color: rgb(var(--bk-gilt) / 0.85);
+}
+.bk-rule {
+  position: relative;
+  flex: none;
+  width: 42%;
+  height: 1px;
+  margin: 1.5rem 0;
+  background: linear-gradient(to right, transparent, rgb(var(--bk-gilt) / 0.55), transparent);
+}
+.bk-rule::after {
+  position: absolute;
+  top: -3px;
+  left: calc(50% - 3.5px);
+  width: 7px;
+  height: 7px;
+  background: rgb(var(--bk-gilt) / 0.85);
+  content: '';
+  transform: rotate(45deg);
+}
+.bk-plate-credits {
+  max-width: 30em;
+  font-family: var(--font-body);
+  font-size: clamp(13px, calc(var(--bk-page-w) * 0.03), 15px);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-aether-muted);
+  text-wrap: pretty;
+}
+.bk-plate-credits + .bk-plate-credits {
+  margin-top: 0.6rem;
+}
+.bk-plate-link,
+.bk-plate-next {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgb(var(--bk-gilt) / 0.38);
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-indent: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-star-olympian);
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+.bk-plate-link:hover,
+.bk-plate-next:hover {
+  border-color: rgb(var(--bk-gilt) / 0.75);
+  background: rgb(var(--bk-gilt) / 0.08);
+}
+.bk-plate-next {
+  margin-top: 1.6rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 12px;
+}
+.bk-plate-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+  width: min(100%, 23rem);
+  margin-top: 1.5rem;
+}
+.bk-plate-books a {
+  width: 2.65rem;
+  padding: 0.42rem 0;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--color-aether-faint);
+  transition: color 0.2s;
+}
+.bk-plate-books a:hover {
+  color: var(--color-aether);
+}
+.bk-plate-books a[aria-current] {
+  background: rgb(var(--bk-gilt) / 0.1);
+  color: var(--color-star-olympian);
+}
+.bk-plate-ways {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1.4rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-aether-muted);
+}
+.bk-plate-ways a:hover {
+  color: var(--color-aether);
+}
+.bk-plate-end .bk-device {
+  width: calc(var(--bk-page-w) * 0.17);
+  margin: 0 0 1.4rem;
+  color: rgb(var(--bk-gilt) / 0.8);
+}
+.bk-plate-end .bk-plate-credits {
+  margin-top: 2rem;
+  font-size: 13px;
+  color: var(--color-aether-faint);
+}
+/* a phone has no inside board to say it on */
+.bk-plate-hint {
+  display: none;
+  margin-top: 1.4rem;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--color-aether-faint);
+}
+.book[data-view='1'] .bk-plate-hint {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bk,
+  .book .book-foot,
+  .book .book-main > aside {
+    transition: none;
+  }
+  .book .bk-face .lib-flash {
+    animation: none;
+  }
+}

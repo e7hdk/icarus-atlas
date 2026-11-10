@@ -39,6 +39,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm myth-river:metrics` — readability report for the River of Myth (`--json`); the numbers `validate-myth-river` gates. `pnpm myth-river:sketch` draws the river flat to gitignored `research/myth-river/`
 - `pnpm validate-ephemeris` — the Ephemeris gate: eligibility probes, Athens-midnight calendar, cycle determinism, golden pick sequence (see docs/EPHEMERIS_PLAN.md §8; refresh goldens with `--print-golden`)
 - `pnpm validate-library` — the Library's citation gate (docs/LIBRARY_PLAN.md, M15): every `citation` in `data/` resolves through the works registry (`data/library/works.json`) to a passage that exists in the pinned edition, a whole work, an allowlisted external work, or (in the chronology) a note; `--all` lists every failure. Run after any edit that adds or changes a citation; a new spelling of a work goes into the registry's `aliases`
+- `pnpm validate-book` — the gate of the reading room's book (docs/LIBRARY_PLAN.md §6): the composer that cuts a text into pages sets every line once and in order, cuts only between lines and never past the foot of a page. Pure geometry, no browser; run after touching `src/features/library/book/compose.ts`
 - `pnpm library:metrics` — how much of each work the atlas cites, and what does not resolve (`--json`, `--failures`); `--audit` lists facts whose cited passage never names their figure (a review list, not a gate; `--all` for every entry)
 - `pnpm bake-library-texts` — bake the Library's aligned texts (original line by line beside the English card; prose section by section) from the synced corpus into the committed `data/generated/library/<work>.json` (11 MB); works shown as `excerpt` keep only their original or their ids and a link out. Rerun only when the corpus manifest or the reading changes (`--force` rebakes all)
 - `pnpm bake-library-extents` — bake how far each work runs (last lines, lettered lines, section and tale ids, and its words, for the Shelf's spines) from the synced corpus into the committed `data/generated/library-extents.json`; rerun only when the corpus manifest changes
@@ -65,7 +66,7 @@ src/
     library/            # the Library: /library, a work at /library/[author]/[work], a book at …/[unit], the Quarrels at /library/quarrels[/topic]
   components/
     galaxy/             # R3F scene: GalaxyCanvas, StarField, Star, CameraRig, effects
-    library/            # the Library: ReadingRoom (one book, original beside English), ReadingLens, MarginPanel, CitationStrip, QuarrelFilter
+    library/            # the Library: ReadingRoom (one book, bound as a book: original on the left page, English on the right), BookReader, BookStrip, MarginPanel, QuarrelFilter
     character/          # CharacterShell, PoetsView, RelationOrrery (codex routes)
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
@@ -75,7 +76,7 @@ src/
     characters/         # character loading, relation/ring grouping
     search/             # name search
     art/                # catalogue rules, layout engine (loom.ts), door data, camera, web
-    library/            # citation resolver (cite.ts), passage checks (extents.ts), links, text loader, the margin (sites, margins, margin-files), scoped names (link-english), the Quarrels (quarrels, quarrel-order)
+    library/            # citation resolver (cite.ts), passage checks (extents.ts), links, text loader, the margin (sites, margins, margin-files), scoped names (link-english), the Quarrels (quarrels, quarrel-order), the reading room's book (book/: compose.ts cuts the text into pages, engine.ts shows and turns them, language.ts keeps the reader's language)
   lib/                  # utils, zod schemas, three helpers
   types/                # shared TS types (character.ts is the contract)
 data/
@@ -147,6 +148,7 @@ The fifth door (`LIBRARY`, `/library`, docs/LIBRARY_PLAN.md is the contract): th
 
 - **The citation spine:** `data/library/works.json` names each work, its editions, aliases and structure. `src/features/library/cite.ts` resolves any citation string to passages, and `links.ts` turns them into reading-room links (`citationLinks`, `citationParts`, `<CitationText>`, `Footnote` passages). `pnpm validate-library` gates every `citation` in `data/`: a new spelling of a work goes into the registry's `aliases`, never into a special case.
 - **The texts:** `pnpm bake-library-texts` writes `data/generated/library/<work>.json`, the original line by line beside its English card. The reading room is `/library/[author]/[work]/[unit]`, with deep links like `#l370-417`, `#s1.3.1` and `#t92`. Its English names link only to figures the passage is about (scope from citations), plus translators' forms in `data/library/aliases.json`, which is reviewed by hand. The margin (figures, ⚖ quarrels, sky lines, stories, Loom works) is baked in chunks into `public/atlas/library/`.
+- **The book:** the reading room is a book of one screen (LIBRARY_PLAN §6, L13). The server still renders the whole text; `BookReader` and `src/features/library/book` cut it into pages on the client and turn them. The original is the left page and the English the right; a phone holds a stretch of the original over its English. A page is built from copies of single lines and paragraphs, so their CSS must never lean on a sibling (`p + p`, `:first-child`), and nothing that marks a line (`data-target`, `data-now`) may change its size.
 - **The door:** the Shelf in time with the sagas as threads (`Shelf.tsx`; on a phone `ShelfRows.tsx`), teller pages `/library/[author]`, and work pages with per-book citation strips. ⌘K answers with works, tellers, quarrels and typed citations.
 - **The Quarrels:** `data/quarrels.json` is the catalogue, and `docs/CONTRADICTIONS.md` is written from it (`pnpm quarrels:doc`). A claim keeps the catalogue's words in `who` and its tellers in `sources`; a claim told outside the seven is marked `outside`. Pages live at `/library/quarrels[/topic]`.
 - **First, Chaos** (`/theogony`): the Theogony read with the galaxy lighting each figure as sung. The beats are authored in `data/library/readings/theogony.json` and gated by `validate-library`: every lit figure needs a Hesiod fact citing its beat's lines. The galaxy store's `lit` set drives `StarsDriver` and `RelationLines`; with it null, the home galaxy is untouched. Leaving restores the lens and selection.

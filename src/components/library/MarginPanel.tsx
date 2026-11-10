@@ -7,13 +7,13 @@ import { loadAtlasFile, useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { quarrelHref } from '@/features/library/paths';
 import { marginChunkUrl, marginIndexUrl, type MarginBlock, type MarginChunk, type MarginIndex, type MarginTables } from '@/features/library/margin-paths';
 import { TYPE_GLOW } from '@/types/character';
-import { useReadingNow } from './ReadingLens';
+import { useReadingNow } from './BookReader';
 
-/** The margin (docs/LIBRARY_PLAN.md §6): for the block under the reading line,
- *  what in the atlas rests on it — figures, ⚖ quarrels, lines in the sky,
- *  stories, works on the Loom. A column beside the text on a wide screen, a
- *  bottom sheet below that. The page's index comes first; the notes come in
- *  chunks as the reader moves, the chunks either side fetched ahead. */
+/** The margin (docs/LIBRARY_PLAN.md §6): for the block the reader is on, what in
+ *  the atlas rests on it — figures, ⚖ quarrels, lines in the sky, stories, works
+ *  on the Loom. A column beside the book on a wide screen, a bottom sheet below
+ *  that. The page's index comes first; the notes come in chunks as the reader
+ *  moves, the chunks either side fetched ahead. */
 
 const ACCENT_FALLBACK = '#aab4c8';
 
@@ -196,7 +196,7 @@ export function MarginPanel({ base, ranges, tellers, unitLabel }: { base: string
   const body = !index.data ? (
     <Quiet>{index.failed ? 'The margin could not be loaded.' : 'Reading the margin…'}</Quiet>
   ) : !now ? (
-    <Quiet>The margin follows the reading line.</Quiet>
+    <Quiet>The margin follows the page.</Quiet>
   ) : facts === 0 ? (
     <Quiet>No fact of the atlas cites these lines yet.</Quiet>
   ) : block && chunk.data ? (
@@ -220,9 +220,9 @@ export function MarginPanel({ base, ranges, tellers, unitLabel }: { base: string
 
   return (
     <>
-      {/* wide screens: the column beside the text */}
-      <aside aria-label="What rests on these lines" className="hidden xl:block">
-        <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pr-1 [scrollbar-width:thin]">
+      {/* wide screens: the column beside the book */}
+      <aside aria-label="What rests on these lines" className="hidden min-h-0 min-[1440px]:block min-[1440px]:[grid-area:margin]">
+        <div className="h-full overflow-y-auto pr-1 pt-3 [scrollbar-width:thin]">
           <p className="font-display text-[10px] tracking-[0.3em] text-aether-faint">IN THESE LINES</p>
           <p className="mt-1 font-display text-[16px] tracking-[0.1em] text-aether">{range ?? '—'}</p>
           <p className="mt-1 font-body text-[14px] italic text-aether-muted">
@@ -232,8 +232,8 @@ export function MarginPanel({ base, ranges, tellers, unitLabel }: { base: string
           {across}
         </div>
       </aside>
-      {/* narrower screens: a sheet that follows the reading line */}
-      <div className={`fixed inset-x-0 bottom-0 z-30 rounded-t-2xl border-t border-star-olympian/40 bg-[rgba(10,6,30,0.96)] shadow-[0_-18px_50px_rgba(5,2,15,0.6)] backdrop-blur-xl transition-[height] duration-300 xl:hidden ${open ? 'h-[72svh]' : 'h-12'}`}>
+      {/* narrower screens: a sheet that follows the page */}
+      <div className={`fixed inset-x-0 bottom-0 z-30 rounded-t-2xl border-t border-star-olympian/40 bg-[rgba(10,6,30,0.96)] shadow-[0_-18px_50px_rgba(5,2,15,0.6)] backdrop-blur-xl transition-[height] duration-300 min-[1440px]:hidden ${open ? 'h-[72svh]' : 'h-12'}`}>
         <button type="button" onClick={() => setOpen((value) => !value)} aria-expanded={open} className="flex h-12 w-full flex-col items-center justify-center gap-1.5 px-4">
           <span className="h-1 w-10 rounded-full bg-white/25" />
           <span className="font-display text-[9.5px] tracking-[0.22em] text-aether-muted">
