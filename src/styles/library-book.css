@@ -653,6 +653,21 @@
 .book .lib-trans p.lib-next {
   text-indent: 1.3em;
 }
+/* the translations the reader did not choose: every one is in the flow, the book sets one */
+.book[data-tl='en'] .lib-trans:not([data-tl='en']),
+.book[data-tl='de'] .lib-trans:not([data-tl='de']),
+.book[data-tl='tr'] .lib-trans:not([data-tl='tr']) {
+  display: none;
+}
+/* a translation in verse keeps its lines, each its own, a long one hanging under its start;
+   it is set as the verse it faces, not as the English prose, so a hexameter mostly holds one line */
+.book .lib-trans[data-form='verse'] {
+  font-size: var(--bk-fs-orig);
+}
+.book .lib-trans .lib-vl {
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
 .book[data-lang='trans'] .lib-orig {
   display: none;
 }

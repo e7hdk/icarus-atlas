@@ -14,6 +14,15 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.8.0',
+    codename: 'The Other Tongues',
+    date: '2026-11-14',
+    lines: [
+      'The books can be read in German as well as English. Voß’s Iliad and Odyssey, Peppmüller’s Theogony and Suchier’s Metamorphoses were made line for line against the Greek and the Latin, and now each German line faces the line it renders, laid beside it where their editions print no numbers. A caret on the language switch opens the translations, each named in its own tongue with its translator. A work with no free German offers it faint, and keeps its English.',
+      'The Theogony is the first book in Turkish, and the atlas’s own: Hesiod’s thousand and forty-two lines put into Turkish from the Greek, a line for every line, from the Muses of Helicon to the women the Muses are bidden to sing at the end. It is a draft, and says so, until it has been read through.',
+    ],
+  },
+  {
     version: '0.7.0',
     codename: 'The Book of Night',
     date: '2026-11-10',

@@ -1,6 +1,6 @@
 import registryJson from '../../../data/library/works.json';
 import { createCitationResolver, type CiteContext } from './cite';
-import type { CiteRef, LibraryWork, LibraryWorksFile, Locus, WorkId } from '@/types/library';
+import { OTHER_LANGUAGES, type CiteRef, type LibraryWork, type LibraryWorksFile, type Locus, type WorkId } from '@/types/library';
 
 /** Where a citation leads in the Library (docs/LIBRARY_PLAN.md §6, deep links):
  *  `/library/homer/iliad/5#l370-417`, `/library/apollodorus/bibliotheca/1#s1.3.1`,
@@ -29,6 +29,9 @@ export function libraryWork(id: WorkId): LibraryWork {
 }
 
 export const workHref = (work: LibraryWork) => `/library/${work.author}/${work.id}`;
+
+/** The credits of a work's translations into the reader's other languages (German, Turkish), in order. */
+export const otherCredits = (work: LibraryWork): string[] => OTHER_LANGUAGES.flatMap((language) => work.translations?.[language]?.credit ?? []);
 
 /** The reading page a locus sits on: its book, or the whole work. */
 export function unitOf(work: LibraryWork, locus: Locus): string {

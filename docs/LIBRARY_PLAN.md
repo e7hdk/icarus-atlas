@@ -26,7 +26,7 @@ The door's metaphor is already in the sources:
 - **No full-text search in v1.** ⌘K learns works, books, quarrels and citations (type `Il. 5.370` and land on the line). Searching inside 8.4 MB of text needs its own index and its own budget, later.
 - **No token links in Greek or Latin.** Inflection defeats the name index (Ἀχιλῆος is not Ἀχιλλεύς). The margin covers the original column; lemma-aware linking is later.
 - **No commentary.** The translators' notes stay out, as the research normalizer already drops them (Frazer's would be a book of their own). The atlas's own facts in the margin are the only gloss.
-- **No new translation.** The English is a century old. The original beside it is the correction, not a modern paraphrase.
+- **No new translation.** The English is a century old. The original beside it is the correction, not a modern paraphrase. *One exception, at the user's call (L15, 2026-11-14): a reader's language no free translation exists in may have the atlas's own, made from the original line by line, labelled as the atlas's and a draft until the editor has read it. The English is never replaced or paraphrased.*
 
 ---
 
@@ -180,6 +180,15 @@ The research normalizer (`scripts/lib/corpus.ts`) is built for search, not readi
 
 (Licence findings checked 2026-11-05 against the Catalog of Copyright Entries, the Copyright Office's public records, NYPL's `cce-renewals`, HathiTrust, Project Gutenberg and the PerseusDL repository.)
 
+- **The reader's languages** (M15.9, L14, L15). A reader may read a work in German or Turkish as well as English: in a free translation pinned in the corpus, or, where none exists, in the atlas's own (§1, L15).
+  - *German, 2026-11-14.* TextGrid's Digitale Bibliothek (the Zeno.org texts in TEI, CC BY 3.0 DE; the translations themselves are public domain) holds four of the eleven works: Voß's *Iliad* and *Odyssey* (Winkler, 1976), Peppmüller's *Theogony* (Halle, 1896) and Suchier's *Metamorphoses* (Langenscheidt, c. 1911–1916). Each is pinned from TextGrid's `tgcrud-public` at revision 0 (`textgrid-tei` in `scripts/lib/corpus.ts`). Searched and not found as free digital text: the *Works and Days* (TextGrid's Hesiod is the *Theogony* alone), the *Argonautica*, Apollodorus, Hyginus and Pausanias. German Wikisource lists only scans for them (Moser's Apollodorus of 1828, Siebelis' Pausanias), and Project Gutenberg has no German translation of any of the seven tellers. Those works offer German faint, and keep their English.
+  - *How the German is aligned.* All four are set line for line against the original, but print no line numbers, so `scripts/lib/lineation.ts` lays each German line beside an original line by a banded alignment. Line beside line is the default; a line left over on either side costs something; a name both lines carry (Ἕκτωρ, Hector and Hektor read alike, and German ä and ö stand for Greek αι and οι) and a stop both lines end on earn something. A lettered line of the original (Theog. 929a–t, which Peppmüller does not have) and a translated line where the original's numbers skip (Voß's Il. 9.458–461, which Monro and Allen leave out) cost almost nothing. A book more than 3% longer or shorter than its original's numbered lines fails the bake, as no translation line for line.
+  - Measured: the *Iliad* leaves 5 Greek lines without German and lays 6 German lines over; the *Odyssey* 6 and 5; the *Theogony* none but the 20 lettered lines; the *Metamorphoses* 15 and 4, mostly where Magnus prints a line twice (8.285–286, 15.51) or drops lines (8.652–654). Where Voß makes two lines of one or one of two, the alignment may sit a line or two off for a few lines (Il. 16.609–615, Od. 1.153 and 1.208–211); the blocks, cut by the English cards, hide most of it.
+  - The bake carries each block's German lines beside its original (`translations.de` on a block), and fails unless every German line lands in exactly one block. Every block of the four works has German. The research normalizer cuts the German into stretches of twenty of the original's lines, cited by them (`pnpm corpus:search … --language de`).
+  - *Turkish.* No free Turkish translation of the seven tellers exists in digital form: Erhat and Kadir's Homer, Eyüboğlu and Erhat's Hesiod and the later Ovid and Apollodorus are protected until the 2040s to 2060s. Naim Frashëri's Ottoman Iliad (1885–1886) is free but unfinished and in Arabic script.
+  - *The atlas's own (L15, 2026-11-14).* So the Turkish is the atlas's own, beginning with the *Theogony*: `data/library/translations/theogony.tr.json`, one Turkish line for each line of Evelyn-White's Greek, keyed by the line's id (the lettered 929a–t too), made from the Greek with Evelyn-White's English beside it as a check. Within a sentence a word may move to a neighbouring line, as Turkish word order asks; the line still renders its Greek. Names keep the Greek forms (Kronos, Uranos, Nyks) except where Turkish has its own (Afrodit, Girit, Kıbrıs); Eris' brood of abstractions is put in Turkish words (Zahmet, Unutuş, Açlık). It was drafted with Claude and is marked `status: 'draft'` in the registry until the editor has read it through.
+  - The registry names such a translation by its `file` instead of a `corpusId`. The bake needs no alignment: every line of the original must have its line and no other key may stand, or the bake fails; the text's signature carries the file's hash, so an edit not yet baked fails `validate-library`. The menu names it *Icarus Atlas · draft*, and the title page and the colophon say what it is.
+
 ```ts
 interface LibraryText {
   work: WorkId;
@@ -281,6 +290,8 @@ The shape grew from the plan's `{ source, claim, citation }` when the doc was re
 **Kept.** The reader's place in a book lasts the session; the language they chose lasts across books. Arriving further into a work already in hand, the book opens on the text and not on the title page.
 
 **What it costs.** The browser's own find reaches only the pages lying open, since the rest of the text is out of sight. A search inside the book would answer that; it is not built (§12, Scope).
+
+**The reader's languages** (M15.9, L14). A caret on the language switch opens the translations: English, Deutsch, Türkçe, each named in itself with its translator, and a language the work has no free translation in faint, saying so. The switch's third segment names the translation chosen. The choice lasts across books like the language (`language.ts`); in a work without it the book reads English, and the next work that has it opens in it. Every translation is in the HTML, each block's in its own cell (`data-tl`), and the book sets the one chosen (`data-tl` on the book). German verse keeps its lines, each its own with a hanging indent, at the size of the original it faces, so a hexameter mostly holds one line of the page. The German is not linked to the stars: the linker reads the English.
 
 **Type.** One leading for both languages, 26 to 30 px by the room, so facing pages keep the same lines. The English is Cormorant at two thirds of the leading, weight 500; the original a little smaller. A measure of 50 to 62 characters a page. Greek needs a polytonic face: EB Garamond, which Google Fonts serves with `greek` and `greek-ext` subsets, the Garamond cousin of the body face. Cinzel stays for titles and running heads. Gilded corners go only on the fragment-like surfaces (the Muses' epigraph, a quarrel's claims), as the Gilded chrome rule asks.
 
@@ -593,6 +604,26 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
     - `pnpm build` passes: 8,187 pages in 6.8 minutes, run beside a dev server. *Iliad* 5 weighs 141 KB gzipped with its whole text in it, as before. `validate-library` and lint pass.
     - Not checked: Safari and iOS (the machine has no simulator), a real phone.
 
+- **M15.10 — The atlas's own Turkish.** The *Theogony* in Turkish, translated by the atlas from the Greek line by line (§4.4, L15).
+  - *Built 2026-11-14, at the user's go ("Theogonia ile başla"); a draft for the user's review.*
+  - **Built.** `data/library/translations/theogony.tr.json` (1,042 lines, 929a–t among them); own translations in the registry (`file`, `status`), the schema (`ownTranslationSchema`), the bake and `validate-library`; the menu's *draft* label and the colophon's note.
+  - **Checked.** Every line of the Greek has its Turkish and no other; a line taken out fails the bake, and an edit not rebaked fails `validate-library`. In headless Chrome the *Theogony* reads in Turkish facing the Greek, alone, and on a phone; the menu offers Türkçe there and faint elsewhere.
+  - **Next.** The user reads the draft through; the *Works and Days*, then the Homeric books the user wants first.
+
+- **M15.9 — The reader's languages.** German beside the original where a free translation is pinned; Turkish ready, faint, until one is (§4.4, §6, L14).
+  - *Built 2026-11-14, at the user's request; Turkish waits, at the user's call, rather than a new translation.*
+  - **Built.**
+    - Four German editions pinned from TextGrid (`textgrid-tei`, with `lineation` naming the original each is laid beside); `scripts/lib/lineation.ts` aligns them; `bake-library-texts` carries the German into the blocks of the *Iliad*, the *Odyssey*, the *Theogony* and the *Metamorphoses* (14 MB of texts in all now, from 11). The other works keep their signatures and were not rebaked.
+    - `works.json` gains `translations` (`de`, `tr`); `validate-library` checks that each is pinned, the teller's, and in the language it is read as.
+    - The reading room's caret menu, the kept choice, the credits on the title page, the colophon, the Shelf, the teller and the work pages.
+  - **Checked.**
+    - The alignment read by eye at every place a line is left over in the *Iliad* 9 and 16, the *Odyssey* 1 and the *Metamorphoses* 1, 8 and 15, and at the *Theogony*'s lettered lines.
+    - In headless Chrome against a dev server, at 1440×900 and 390×844: the menu (English and German on in Homer, German faint in the *Bibliotheca*, Turkish faint everywhere), the switch to German facing the Greek, three pages on, German alone, the *Theogony* at 925–929t, the *Metamorphoses* at 1.452, the *Fabulae*. No script errors, nothing wider than the screen. The crumb keeps *Book XII* and *Book XXIV* whole down to 360 px.
+    - The menu by keyboard: it opens on the language chosen, the arrows skip a faint language, the page arrows turn nothing while it is open, Enter chooses and gives the focus back to the caret.
+    - `validate-library`, `validate-book`, `corpus:verify`, lint and types pass. `pnpm build` passes: 8,187 pages.
+    - What it costs: every translation is in the HTML, so a book of the four works weighs more. *Iliad* 5 is 202 KB gzipped, from 141 KB; the *Theogony* 239 KB; *Metamorphoses* 1 166 KB. A work without German is unchanged (*Bibliotheca* 1, 147 KB). Fetching a translation only when it is chosen would take that back, at the cost of setting cells into the server's flow from the client.
+    - Not checked: Safari and iOS, a real phone.
+
 M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can then run side by side. M15.6 needs only M15.1 and the *Theogony* page of M15.2, so it can move forward if the launch wants its moment.
 
 ## 12. Risks and guards
@@ -622,6 +653,8 @@ M15.1 comes first, because everything rests on the resolver. M15.2 and M15.4 can
 | L10 | Licence posture | Full text only where the licence is verified. Seaton from Project Gutenberg #13977: shown in full since 2026-11-06 (§4.4). Grant's Hyginus: registered in 1960 and never renewed, so very likely US public domain since 1989; show it in full with that note, or keep excerpts | Seaton decided; Grant's Astronomica and Fabulae in full at the user's call (2026-11-06) |
 | L11 | Names outside a passage's scope | Only a god whose name no other figure bears links; everyone else links only in scope. Measured on *Iliad* 5: the looser rule made three wrong links in 180 lines | proposed |
 | L12 | Phone glyph | Three spines of unequal height on a shelf, the middle one gilt-banded, in the bar's thin-stroke idiom | proposed |
+| L15 | The atlas's own translation | Where no free translation exists in a reader's language, the atlas makes its own from the original, line by line, kept in `data/library/translations/`, labelled as the atlas's and as a draft until the editor has read it; shared under CC BY-SA 4.0. Turkish first, the *Theogony* first | the user's call, 2026-11-14 |
+| L14 | The reader's languages | German and Turkish beside the English, only from free translations already published: no new translation (§1). German from TextGrid where it exists (Voß's Homer, Peppmüller's *Theogony*, Suchier's *Metamorphoses*), aligned line by line; elsewhere German is offered faint and the English stays. Turkish has no free translation, so it waits, faint | the user's call, 2026-11-14 |
 | L13 | The reading room's form | A book: a cover that opens, the original on the left page and the English on the right, leaves that turn, one screen with nothing scrolling. It lifts the non-goal of §1 for the reading room alone. Rejected for the pages: parchment, and stars behind the text | the user's idea and go, 2026-11-10 |
 
 ## 14. Open questions

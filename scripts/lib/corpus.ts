@@ -5,6 +5,7 @@ import { load, type Cheerio, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
 import { z } from 'zod';
 import { SOURCE_IDS } from '../../src/types/character';
+import { alignBooks, teiVerseUnits, textGridBooks } from './lineation';
 
 const entrySchema = z.object({
   id: z.string().min(1),
@@ -12,8 +13,8 @@ const entrySchema = z.object({
   author: z.string().min(1),
   work: z.string().min(1),
   citationLabel: z.string().min(1),
-  language: z.enum(['en', 'grc', 'lat']),
-  format: z.enum(['perseus-tei', 'topostext-html', 'gutenberg-txt', 'latinlibrary-html']),
+  language: z.enum(['en', 'grc', 'lat', 'de', 'tr']),
+  format: z.enum(['perseus-tei', 'topostext-html', 'gutenberg-txt', 'latinlibrary-html', 'textgrid-tei']),
   urnBase: z.string().startsWith('urn:cts:'),
   edition: z.string().min(1),
   license: z.string().min(1),
@@ -25,6 +26,10 @@ const entrySchema = z.object({
   /** A translation printed without line numbers takes them from another pinned
    *  copy of the same translation, by this id (docs/LIBRARY_PLAN.md §4.4). */
   anchors: z.string().min(1).optional(),
+  /** A verse translation set line for line against its original, without line
+   *  numbers of its own (TextGrid's German), takes them from the original, by this
+   *  id (scripts/lib/lineation.ts). */
+  lineation: z.string().min(1).optional(),
   /** A page printed without its sections reads them from this file in
    *  research/corpus/sections/: where each opens, and the page's typing slips. */
   sections: z.string().regex(/^[a-z0-9-]+\.json$/).optional(),
@@ -262,15 +267,42 @@ function gutenbergBooks(content: string): Map<string, string[]> {
   return books;
 }
 
-/** The pinned copy a translation takes its line numbers from. */
-function anchorsOf(entry: CorpusEntry): { entry: CorpusEntry; content: string } {
-  const anchors = loadManifest().entries.find((candidate) => candidate.id === entry.anchors);
-  if (!anchors) throw new Error(`${entry.id}: its anchors entry ${entry.anchors ?? '(none)'} is not pinned`);
-  const path = join(RAW_DIR, anchors.file);
-  if (!existsSync(path)) throw new Error(`${entry.id}: ${anchors.file} is missing — run pnpm corpus:sync`);
+/** Another pinned copy an entry leans on, read and checked against its pin. */
+function partnerOf(entry: CorpusEntry, id: string | undefined, role: string): { entry: CorpusEntry; content: string } {
+  const partner = loadManifest().entries.find((candidate) => candidate.id === id);
+  if (!partner) throw new Error(`${entry.id}: its ${role} entry ${id ?? '(none)'} is not pinned`);
+  const path = join(RAW_DIR, partner.file);
+  if (!existsSync(path)) throw new Error(`${entry.id}: ${partner.file} is missing — run pnpm corpus:sync`);
   const bytes = readFileSync(path);
-  if (sha256(bytes) !== anchors.sha256) throw new Error(`${entry.id}: ${anchors.file} does not match its pin — run pnpm corpus:sync`);
-  return { entry: anchors, content: decode(anchors, bytes) };
+  if (sha256(bytes) !== partner.sha256) throw new Error(`${entry.id}: ${partner.file} does not match its pin — run pnpm corpus:sync`);
+  return { entry: partner, content: decode(partner, bytes) };
+}
+
+/** The pinned copy a translation takes its line numbers from. */
+const anchorsOf = (entry: CorpusEntry) => partnerOf(entry, entry.anchors, 'anchors');
+
+/** The original a line-for-line verse translation is laid beside (`lineation`). */
+export const lineationOf = (entry: CorpusEntry) => partnerOf(entry, entry.lineation, 'lineation');
+
+/** A line-for-line verse translation (TextGrid's German), each line laid beside a
+ *  line of its original, then cut into stretches of twenty of the original's lines,
+ *  cited by them: Iliad 1.1-20, Theogony 1-20. */
+function normalizeTextGrid(entry: CorpusEntry, content: string): CorpusPassage[] {
+  const original = lineationOf(entry);
+  const units = teiVerseUnits(original.content);
+  const aligned = alignBooks(entry.id, units, textGridBooks(content));
+  const passages: CorpusPassage[] = [];
+  for (const [unit, lines] of units) {
+    const beside = aligned.get(unit)?.beside ?? [];
+    for (let start = 0; start < lines.length; start += 20) {
+      const stretch = lines.slice(start, start + 20);
+      const text = beside.slice(start, start + 20).flat().join(' ');
+      if (!text) continue;
+      const range = `${stretch[0][0]}-${stretch.at(-1)?.[0] ?? stretch[0][0]}`;
+      passages.push(passage(entry, unit === 'whole' ? range : `${unit}.${range}`, text, passages.length));
+    }
+  }
+  return passages;
 }
 
 interface Token { word: string; para: number; offset: number }
@@ -443,7 +475,9 @@ export function normalizeEntry(entry: CorpusEntry, content: string): CorpusPassa
         ? normalizeToposText(entry, content)
         : entry.format === 'latinlibrary-html'
           ? normalizeLatinLibrary(entry, content)
-          : normalizeGutenberg(entry, content);
+          : entry.format === 'textgrid-tei'
+            ? normalizeTextGrid(entry, content)
+            : normalizeGutenberg(entry, content);
   if (passages.length === 0) throw new Error(`${entry.id}: no citation-bearing passages found`);
   return passages;
 }

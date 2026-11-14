@@ -4,7 +4,7 @@ import { Link } from '@/components/ui/Link';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { ReadingRoom } from '@/components/library/ReadingRoom';
 import { loadAtlasData } from '@/features/characters/load';
-import { unitHref } from '@/features/library/links';
+import { otherCredits, unitHref } from '@/features/library/links';
 import { findLibraryWork, libraryWorks, loadLibraryText, romanBook } from '@/features/library/load';
 import { libraryMarginData } from '@/features/library/margin-files';
 import { quarrelHref } from '@/features/library/paths';
@@ -77,7 +77,7 @@ export default async function LibraryWorkPage({ params }: Params) {
           {work.greekTitle && <span className="mt-1 block font-greek text-2xl italic tracking-normal text-star-olympian/75 sm:ml-4 sm:inline">{work.greekTitle}</span>}
         </h1>
         <p className="mt-4 font-body text-[14px] italic leading-relaxed text-aether-faint">
-          {[work.original?.credit, work.display === 'full' ? work.translation.credit : null].filter(Boolean).join('. ')}.
+          {[work.original?.credit, work.display === 'full' ? work.translation.credit : null, ...otherCredits(work)].filter(Boolean).join('. ')}.
         </p>
       </header>
       <p className="mt-4 font-body text-[15px] italic text-aether-muted">

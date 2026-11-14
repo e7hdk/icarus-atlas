@@ -25,6 +25,41 @@ export type WorkId = (typeof LIBRARY_WORK_IDS)[number];
 export const WORK_STRUCTURES = ['books-of-lines', 'lines', 'sections', 'tales'] as const;
 export type WorkStructure = (typeof WORK_STRUCTURES)[number];
 
+/** The languages the reading room reads a work in beside its original: English for
+ *  every work, German and Turkish where a free translation is pinned
+ *  (docs/LIBRARY_PLAN.md §4.4, the reader's languages). */
+export const READER_LANGUAGES = ['en', 'de', 'tr'] as const;
+export type ReaderLanguage = (typeof READER_LANGUAGES)[number];
+/** The reader's languages beside English, which every work has. */
+export type OtherLanguage = Exclude<ReaderLanguage, 'en'>;
+export const OTHER_LANGUAGES = ['de', 'tr'] as const satisfies readonly OtherLanguage[];
+
+/** The atlas's own translation, made from the original line for line and kept in
+ *  data/library/translations/<file> (docs/LIBRARY_PLAN.md §4.4, L15). It says what
+ *  it is: a draft until the editor has read it through. */
+export interface OwnEdition {
+  file: string;
+  status: 'draft' | 'reviewed';
+  credit: string;
+  licence: string;
+}
+
+/** A translation into a reader's other language: pinned, or the atlas's own. */
+export type ReaderEdition = LibraryEdition | OwnEdition;
+export const isOwnEdition = (edition: ReaderEdition): edition is OwnEdition => 'file' in edition;
+
+/** data/library/translations/<work>.<language>.json: the atlas's own translation,
+ *  one line of it for each line of the original it was made from, keyed by the
+ *  line's id (`116`, `929a`; `5.370` in a work of books). */
+export interface OwnTranslation {
+  work: WorkId;
+  language: OtherLanguage;
+  /** The pinned edition of the original it was made from. */
+  from: string;
+  note: string;
+  lines: Record<string, string>;
+}
+
 export interface LibraryEdition {
   /** A `research/corpus/manifest.json` entry. */
   corpusId: string;
@@ -48,6 +83,10 @@ export interface LibraryWork {
   /** Absent for Hyginus: the corpus has no Latin. */
   original?: LibraryEdition;
   translation: LibraryEdition;
+  /** Translations into the reader's other languages: a free one pinned in the corpus
+   *  (Voß's Homer, Peppmüller's Theogony, Suchier's Metamorphoses in German), or the
+   *  atlas's own (the Theogony in Turkish). */
+  translations?: Partial<Record<OtherLanguage, ReaderEdition>>;
   /** The licence gate: `excerpt` keeps a work to short quotations and a link out. */
   display: 'full' | 'excerpt';
 }
@@ -92,6 +131,9 @@ export interface LibraryBlock {
   trans: string[];
   /** Where the translation can be read when it is not shown here. */
   link?: string;
+  /** The block in the reader's other languages: a verse translation's lines laid
+   *  beside this block's original lines (scripts/lib/lineation.ts). */
+  translations?: Partial<Record<OtherLanguage, string[]>>;
 }
 
 /** A reading page: one book, or the whole work. */
@@ -106,6 +148,8 @@ export interface LibraryText {
   /** Hash of the editions and the reading of them; the gate compares it with the pinned corpus. */
   signature: string;
   verse: boolean;
+  /** The reader's other languages the text carries, and how each is set: line by line, or in paragraphs. */
+  translations?: Partial<Record<OtherLanguage, 'verse' | 'prose'>>;
   units: LibraryUnit[];
 }
 

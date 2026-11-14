@@ -56,7 +56,13 @@ interface RowRef {
   from: string;
   to: string;
   orig: HTMLElement | null;
+  /** The translation the reader chose, set again with each layout. */
   trans: HTMLElement | null;
+}
+
+/** A block's translation in the reader's language (`data-tl` on the book), or its English. */
+function translationCell(block: HTMLElement, language: string | undefined): HTMLElement | null {
+  return block.querySelector<HTMLElement>(`.lib-trans[data-tl="${language ?? 'en'}"]`) ?? block.querySelector<HTMLElement>('.lib-trans');
 }
 
 interface LineMark {
@@ -157,7 +163,7 @@ function measureCell(part: HTMLElement | null, lead: number): Measured {
     const label = el.classList.contains('lib-range');
     const first = labelled ? (count >= 3 ? 2 : 1) : 0;
     // a line of verse that runs over on a narrow page stays whole: its last word never turns the page alone
-    const step = el.classList.contains('lib-line') ? count : 1;
+    const step = el.classList.contains('lib-line') || el.classList.contains('lib-vl') ? count : 1;
     for (let i = first; i <= (label ? 0 : count); i += step) marks.push(top + (rect.height * i) / count);
     labelled = label;
     if (el.dataset.n !== undefined) lines.push({ n: el.dataset.n, top });
@@ -278,7 +284,7 @@ export class BookEngine {
         from: el.dataset.from ?? '',
         to: el.dataset.to ?? '',
         orig: el.querySelector<HTMLElement>('.lib-orig'),
-        trans: el.querySelector<HTMLElement>('.lib-trans'),
+        trans: translationCell(el, root.dataset.tl),
       };
     });
   }
@@ -457,6 +463,8 @@ export class BookEngine {
   /** Measures the flow and cuts it into faces. */
   private layout() {
     const { cells, columns, stack, spread, textH, lead, pageW, pageH } = this.geo;
+    // the reader may have chosen another translation since the last setting
+    for (const row of this.rows) row.trans = translationCell(row.el, this.root.dataset.tl);
     this.measured = this.rows.map((row) => ({
       cells: (cells === 2 ? [row.orig, row.trans] : [row.el]).map((part) => measureCell(part, lead)),
     }));
@@ -468,7 +476,9 @@ export class BookEngine {
     faces.push({ kind: 'colophon' });
     if (spread && faces.length % 2 === 1) faces.push({ kind: 'none' });
     this.faces = faces;
-    this.print = [spread, columns, stack, pageW, pageH, lead, ...this.measured.map((row) => row.cells.map((cell) => Math.round(cell.height)).join('/'))].join(',');
+    // the languages too: two translations may happen to come to the same heights, and the faces copy their words
+    const { lang, tl } = this.root.dataset;
+    this.print = [lang, tl, spread, columns, stack, pageW, pageH, lead, ...this.measured.map((row) => row.cells.map((cell) => Math.round(cell.height)).join('/'))].join(',');
   }
 
   private anchor(): Anchor {
