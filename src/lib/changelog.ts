@@ -14,6 +14,14 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.8.1',
+    codename: 'Two Tongues Facing',
+    date: '2026-11-14',
+    lines: [
+      'The left page no longer has to hold the original. A reader can set any two of a book’s tongues face to face: German beside Turkish in the Theogony, English beside Voß in the Iliad, each line facing the line it renders, as the translations were all laid against the same Greek. On a phone the one stands above the other.',
+    ],
+  },
+  {
     version: '0.8.0',
     codename: 'The Other Tongues',
     date: '2026-11-14',

@@ -78,6 +78,12 @@
   gap: 0.75rem;
   min-height: 2.25rem;
 }
+/* the narrowest phones: the language switch and its caret leave the crumb a little more room */
+@media (max-width: 379px) {
+  .book-top {
+    gap: 0.5rem;
+  }
+}
 .book-main {
   display: grid;
   flex: 1;
@@ -653,10 +659,26 @@
 .book .lib-trans p.lib-next {
   text-indent: 1.3em;
 }
-/* the translations the reader did not choose: every one is in the flow, the book sets one */
-.book[data-tl='en'] .lib-trans:not([data-tl='en']),
-.book[data-tl='de'] .lib-trans:not([data-tl='de']),
-.book[data-tl='tr'] .lib-trans:not([data-tl='tr']) {
+/* every translation is in the flow; the book sets the one the reader chose (`data-tl`) and,
+   on facing pages, the one they set on the left page in place of the original (`data-left`) */
+.book:not([data-tl='en']):not([data-lang='both'][data-left='en']) .lib-trans[data-tl='en'],
+.book:not([data-tl='de']):not([data-lang='both'][data-left='de']) .lib-trans[data-tl='de'],
+.book:not([data-tl='tr']):not([data-lang='both'][data-left='tr']) .lib-trans[data-tl='tr'] {
+  display: none;
+}
+/* the language menu names the pages as they lie: left and right, or above and below on a phone */
+.book .bk-name-narrow {
+  display: none;
+}
+.book[data-view='1'] .bk-name-wide {
+  display: none;
+}
+.book[data-view='1'] .bk-name-narrow {
+  display: inline;
+}
+.book[data-lang='both'][data-left='en'] .lib-orig,
+.book[data-lang='both'][data-left='de'] .lib-orig,
+.book[data-lang='both'][data-left='tr'] .lib-orig {
   display: none;
 }
 /* a translation in verse keeps its lines, each its own, a long one hanging under its start;

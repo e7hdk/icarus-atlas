@@ -293,6 +293,8 @@ The shape grew from the plan's `{ source, claim, citation }` when the doc was re
 
 **The reader's languages** (M15.9, L14). A caret on the language switch opens the translations: English, Deutsch, Türkçe, each named in itself with its translator, and a language the work has no free translation in faint, saying so. The switch's third segment names the translation chosen. The choice lasts across books like the language (`language.ts`); in a work without it the book reads English, and the next work that has it opens in it. Every translation is in the HTML, each block's in its own cell (`data-tl`), and the book sets the one chosen (`data-tl` on the book). German verse keeps its lines, each its own with a hanging indent, at the size of the original it faces, so a hexameter mostly holds one line of the page. The German is not linked to the stars: the linker reads the English.
 
+**Two translations facing** (M15.11). The left page need not hold the original: the menu sets each page apart, *Left page* and *Right page* (*Above* and *Below* on a phone), and the left may hold any translation the work has, so a reader learning German sets Voß or Peppmüller beside the English or the Turkish. Every translation is aligned to the original's lines, so any two face each other block by block. A language set on one page that the other already holds trades places with it; a work without the reader's pair keeps what it has (German beside English in the *Iliad* for a reader of German beside Turkish). The middle segment names the pair (*DE·TR*); the left choice is kept across books with the others (`data-left` on the book, `language.ts`).
+
 **Type.** One leading for both languages, 26 to 30 px by the room, so facing pages keep the same lines. The English is Cormorant at two thirds of the leading, weight 500; the original a little smaller. A measure of 50 to 62 characters a page. Greek needs a polytonic face: EB Garamond, which Google Fonts serves with `greek` and `greek-ext` subsets, the Garamond cousin of the body face. Cinzel stays for titles and running heads. Gilded corners go only on the fragment-like surfaces (the Muses' epigraph, a quarrel's claims), as the Gilded chrome rule asks.
 
 ## 7. The Quarrels
@@ -603,6 +605,10 @@ Each lands green on `pnpm lint`, `pnpm build` and `pnpm validate-data`, plus `pn
     - Frames: at 60 Hz no frame over 17 ms through four turns. With the CPU slowed six times on the phone layout, the first frames of a turn take 9 to 16 ms each; before the faces were set ahead, the longest frame of a turn ran 17 to 60 ms.
     - `pnpm build` passes: 8,187 pages in 6.8 minutes, run beside a dev server. *Iliad* 5 weighs 141 KB gzipped with its whole text in it, as before. `validate-library` and lint pass.
     - Not checked: Safari and iOS (the machine has no simulator), a real phone.
+
+- **M15.11 — Two translations facing.** Any two of a work's languages on facing pages, at the user's request (2026-11-14: a friend learning German wanted German beside Turkish).
+  - **Built.** The engine sets the left page from `data-left` (`leftCell`), and the stylesheet shows each translation that either page holds; the menu gains a left-page section; the pair names itself on the switch.
+  - **Checked** in headless Chrome, muted, at 1440×900 and 390×844: German beside Turkish in the *Theogony*, line for line; the trade when a page takes the other's language; back to the Greek; English beside German in the *Iliad*; a work with one translation offers no left choice. The crumb keeps *Theogony* and *Book XVIII* whole at 390 and 360 px.
 
 - **M15.10 — The atlas's own Turkish.** The *Theogony* in Turkish, translated by the atlas from the Greek line by line (§4.4, L15).
   - *Built 2026-11-14, at the user's go ("Theogonia ile başla"); a draft for the user's review.*

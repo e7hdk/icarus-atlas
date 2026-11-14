@@ -3,7 +3,8 @@ import { READER_LANGUAGES, type ReaderLanguage } from '@/types/library';
 
 /** What a reader chose in the reading room, kept in the browser so that the next
  *  book opens in it too: which pages to show (the original, both, the translation)
- *  and which translation (English, German, Turkish). Small stores for
+ *  which translation (English, German, Turkish), and what faces it on facing
+ *  pages (the original, or another translation). Small stores for
  *  `useSyncExternalStore`: the server and the first paint know nothing of them, and
  *  the choice arrives after. A translation a work lacks is still kept, so the next
  *  book that has it opens in it. */
@@ -43,6 +44,9 @@ function keptChoice<T extends string>(key: string, values: readonly T[]) {
 
 const language = keptChoice<BookLanguage>('icarus-book-language', ['both', 'orig', 'trans']);
 const translation = keptChoice<ReaderLanguage>('icarus-book-translation', READER_LANGUAGES);
+/** What faces the translation on facing pages: the original, or another translation. */
+export type LeftPage = 'orig' | ReaderLanguage;
+const left = keptChoice<LeftPage>('icarus-book-left', ['orig', ...READER_LANGUAGES]);
 
 export const subscribeLanguage = language.subscribe;
 export const keptLanguage = language.read;
@@ -51,3 +55,7 @@ export const keepLanguage = language.keep;
 export const subscribeTranslation = translation.subscribe;
 export const keptTranslation = translation.read;
 export const keepTranslation = translation.keep;
+
+export const subscribeLeft = left.subscribe;
+export const keptLeft = left.read;
+export const keepLeft = left.keep;
