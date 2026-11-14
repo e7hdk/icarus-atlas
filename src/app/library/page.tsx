@@ -2,7 +2,7 @@ import { Link } from '@/components/ui/Link';
 import { Shelf, type ShelfSaga, type ShelfWork } from '@/components/library/Shelf';
 import { ShelfRows } from '@/components/library/ShelfRows';
 import { loadAtlasData } from '@/features/characters/load';
-import { LIBRARY_REGISTRY, workHref } from '@/features/library/links';
+import { LIBRARY_REGISTRY, otherCredits, workHref } from '@/features/library/links';
 import { TELLER_ORDER, shortTeller } from '@/features/library/paths';
 import { QUARRELS, claimsInTime, musesLine } from '@/features/library/quarrels';
 import { libraryShelf } from '@/features/library/shelf';
@@ -41,7 +41,7 @@ export default async function LibraryPage() {
     from: work.composed.from,
     to: work.composed.to,
     label: work.composed.label,
-    credit: [work.original?.credit, work.display === 'full' ? work.translation.credit : 'The English is read at ToposText while its licence is checked'].filter(Boolean).join('. ') + '.',
+    credit: [work.original?.credit, work.display === 'full' ? work.translation.credit : 'The English is read at ToposText while its licence is checked', ...otherCredits(work)].filter(Boolean).join('. ') + '.',
     href: workHref(work),
     stats: shelf.works[work.id],
   }));

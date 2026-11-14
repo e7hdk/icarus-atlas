@@ -3,7 +3,7 @@ import { ClampList } from '@/components/ui/ClampList';
 import { Link } from '@/components/ui/Link';
 import { CrumbBar } from '@/components/hud/CrumbBar';
 import { loadAtlasData } from '@/features/characters/load';
-import { LIBRARY_REGISTRY, workHref } from '@/features/library/links';
+import { LIBRARY_REGISTRY, otherCredits, workHref } from '@/features/library/links';
 import { TELLER_ORDER, quarrelHref, shortTeller } from '@/features/library/paths';
 import { QUARRELS } from '@/features/library/quarrels';
 import { libraryShelf } from '@/features/library/shelf';
@@ -105,7 +105,7 @@ export default async function TellerPage({ params }: Params) {
                     {(workStats.cited * 100).toFixed(0)}% of it cited · {fmt(workStats.citations)} citations · ⚖ {workStats.quarrels}
                   </p>
                   <p className="mt-2 font-body text-[13px] italic leading-snug text-aether-faint">
-                    {[work.original?.credit, work.display === 'full' ? work.translation.credit : 'The English is read at ToposText while its licence is checked'].filter(Boolean).join('. ')}.
+                    {[work.original?.credit, work.display === 'full' ? work.translation.credit : 'The English is read at ToposText while its licence is checked', ...otherCredits(work)].filter(Boolean).join('. ')}.
                   </p>
                 </Link>
               </li>

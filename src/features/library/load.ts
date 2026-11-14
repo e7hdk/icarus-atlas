@@ -6,7 +6,7 @@ import type { LibraryText, LibraryWork, WorkId } from '@/types/library';
 
 /** The Library's baked texts, read at build time only (docs/LIBRARY_PLAN.md §4.8):
  *  a reading page renders its text on the server, so the words are in the HTML and
- *  never travel as a prop. 11 MB in all, one file per work. */
+ *  never travel as a prop. 14 MB in all, one file per work. */
 
 const TEXTS_DIR = join(process.cwd(), 'data', 'generated', 'library');
 const cache = new Map<WorkId, Promise<LibraryText>>();

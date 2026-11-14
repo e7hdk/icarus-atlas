@@ -11,6 +11,7 @@
       "aliases": ["Iliad", "Il.", "Il", "Hom. Il.", "Hom. Il", "Homer, Iliad", "Homer Iliad", "Iliad bk.", "Iliad book"],
       "original": { "corpusId": "homer-iliad-grc", "credit": "Greek text ed. D. B. Monro and T. W. Allen (Oxford, 1920), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
       "translation": { "corpusId": "homer-iliad-en", "credit": "English translation by A. T. Murray (Loeb, 1924–1925), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translations": { "de": { "corpusId": "homer-iliad-de", "credit": "German translation by Johann Heinrich Voß (Winkler, 1976), TextGrid Digitale Bibliothek", "licence": "CC BY 3.0 DE (TextGrid); the translation is public domain" } },
       "display": "full"
     },
     {
@@ -24,6 +25,7 @@
       "aliases": ["Odyssey", "Od.", "Od", "Hom. Od.", "Hom. Od", "Homer, Odyssey", "Homer Odyssey"],
       "original": { "corpusId": "homer-odyssey-grc", "credit": "Greek text ed. D. B. Monro and T. W. Allen (Oxford, 1917–1919), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
       "translation": { "corpusId": "homer-odyssey-en", "credit": "English translation by A. T. Murray (Loeb, 1919), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translations": { "de": { "corpusId": "homer-odyssey-de", "credit": "German translation by Johann Heinrich Voß (Winkler, 1976), TextGrid Digitale Bibliothek", "licence": "CC BY 3.0 DE (TextGrid); the translation is public domain" } },
       "display": "full"
     },
     {
@@ -37,6 +39,7 @@
       "aliases": ["Theogony", "Theog.", "Theog", "Th.", "Th", "Hes. Th.", "Hes. Theog.", "Hesiod, Theogony", "Hesiod Theogony"],
       "original": { "corpusId": "hesiod-theogony-grc", "credit": "Greek text ed. H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
       "translation": { "corpusId": "hesiod-theogony-en", "credit": "English translation by H. G. Evelyn-White (Loeb, 1914), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translations": { "de": { "corpusId": "hesiod-theogony-de", "credit": "German translation by Rudolf Peppmüller (Halle, 1896), TextGrid Digitale Bibliothek", "licence": "CC BY 3.0 DE (TextGrid); the translation is public domain" }, "tr": { "file": "theogony.tr.json", "status": "draft", "credit": "Turkish translation by Icarus Atlas (made from the Greek line for line; drafted with Claude and under the editor's review)", "licence": "CC BY-SA 4.0" } },
       "display": "full"
     },
     {
@@ -75,6 +78,7 @@
       "aliases": ["Metamorphoses", "Met.", "Met", "Ov. Met.", "Ov. Met", "Ovid, Metamorphoses", "Ovid Metamorphoses"],
       "original": { "corpusId": "ovid-metamorphoses-lat", "credit": "Latin text ed. Hugo Magnus (Gotha, 1892), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
       "translation": { "corpusId": "ovid-metamorphoses-en", "credit": "English translation by Brookes More (Boston, 1922), Perseus Digital Library", "licence": "CC BY-SA 4.0" },
+      "translations": { "de": { "corpusId": "ovid-metamorphoses-de", "credit": "German translation by Reinhart Suchier (Langenscheidt, c. 1911–1916), TextGrid Digitale Bibliothek", "licence": "CC BY 3.0 DE (TextGrid); the translation is public domain" } },
       "display": "full"
     },
     {

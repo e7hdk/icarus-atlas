@@ -2,7 +2,8 @@
  *
  * Contract (docs/LIBRARY_PLAN.md §4.2, §4.3, §10):
  *   the works registry parses; no alias names two works; every edition is pinned
- *     in the corpus manifest and belongs to the work's teller
+ *     in the corpus manifest, belongs to the work's teller, and a translation is in
+ *     the language the registry reads it as
  *   the baked extents were baked from the editions pinned now
  *   every citation in data/ resolves — to a passage that exists in the pinned
  *     edition, a whole work, an allowlisted external work, or, in the chronology,
@@ -24,11 +25,11 @@ import { createCitationResolver, foldWorkName } from '../src/features/library/ci
 import { libraryMarginData } from '../src/features/library/margin-files';
 import { libraryWorksFileSchema } from '../src/lib/schemas';
 import { libraryWork, unitOf } from '../src/features/library/links';
-import type { LibraryExtents, LibraryText } from '../src/types/library';
+import { isOwnEdition, type LibraryExtents, type LibraryText, type OtherLanguage } from '../src/types/library';
 import { loadManifest } from './lib/corpus';
 import { collectCitationSites, reasonClass, resolveSites } from './lib/library-citations';
 import { LIBRARY_EXTENTS_PATH, LIBRARY_WORKS_PATH, extentsSignature } from './lib/library-corpus';
-import { textSignature, unitSize } from './lib/library-texts';
+import { readOwnTranslation, textSignature, unitSize } from './lib/library-texts';
 import { READING_PATH, beatLines, theogonyStretches, type Reading } from './lib/library-readings';
 
 const LIBRARY_TEXTS_DIR = join(import.meta.dirname, '..', 'data', 'generated', 'library');
@@ -55,11 +56,26 @@ for (const [owner, aliases] of [...registry.works.map((work) => [work.id, work.a
   }
 }
 for (const work of registry.works) {
-  for (const edition of [work.original, work.translation]) {
+  const editions = [
+    { edition: work.original, language: null },
+    { edition: work.translation, language: 'en' },
+    ...Object.entries(work.translations ?? {}).map(([language, edition]) => ({ edition, language })),
+  ];
+  for (const { edition, language } of editions) {
     if (!edition) continue;
+    if (isOwnEdition(edition)) {
+      // the atlas's own: its file parses and renders this work in this language from its original
+      try {
+        readOwnTranslation(work, edition.file, language as OtherLanguage);
+      } catch (error) {
+        errors.push(`works.json: ${work.id}'s ${language} translation: ${(error as Error).message}`);
+      }
+      continue;
+    }
     const entry = manifest.entries.find((candidate) => candidate.id === edition.corpusId);
     if (!entry) errors.push(`works.json: ${work.id} cites corpus entry ${edition.corpusId}, which is not pinned`);
     else if (entry.sourceId !== work.author) errors.push(`works.json: ${work.id} is by ${work.author}, but ${edition.corpusId} is ${entry.sourceId}'s`);
+    else if (language && entry.language !== language) errors.push(`works.json: ${work.id} reads ${edition.corpusId} as its ${language} translation, but it is in ${entry.language}`);
   }
 }
 

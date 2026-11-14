@@ -7,16 +7,44 @@
  *  its line to the next card's. Prose: section beside section.
  *
  *  The licence gate (`display`): a work shown as `excerpt` contributes its original
- *  only or, with no original (the Fabulae), only its passage ids and a link out. */
+ *  only or, with no original (the Fabulae), only its passage ids and a link out.
+ *
+ *  The reader's other languages: a verse translation set line for line against the
+ *  original (TextGrid's German) is laid beside it line by line (./lineation.ts), and
+ *  each block carries the translated lines beside its own original lines. The
+ *  atlas's own translation (data/library/translations/) is made line for line and
+ *  keyed by the original's line ids, so it needs no laying: each line goes beside
+ *  the line it renders, and every line of the original must have one. */
+
+export const OWN_TRANSLATIONS_DIR = join(import.meta.dirname, '..', '..', 'data', 'library', 'translations');
+
+/** The atlas's own translation, read and checked against the work it renders. */
+export function readOwnTranslation(work: LibraryWork, file: string, language: OtherLanguage): { text: OwnTranslation; raw: string } {
+  const raw = readFileSync(join(OWN_TRANSLATIONS_DIR, file), 'utf8');
+  const text = ownTranslationSchema.parse(JSON.parse(raw));
+  if (text.work !== work.id || text.language !== language) throw new Error(`${file}: it renders ${text.work} in ${text.language}, but the registry reads it as ${work.id} in ${language}`);
+  if (text.from !== work.original?.corpusId) throw new Error(`${file}: made from ${text.from}, but ${work.id}'s original is ${work.original?.corpusId}`);
+  return { text, raw };
+}
+
+/** A line's key in an own translation: `929a` in a poem without books, `5.370` in a book. */
+const lineKey = (unit: string, n: string) => (unit === 'whole' ? n : `${unit}.${n}`);
 
 import { load, type CheerioAPI } from 'cheerio';
 import type { AnyNode, Element } from 'domhandler';
-import type { LibraryBlock, LibraryText, LibraryUnit, LibraryWork } from '../../src/types/library';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { ownTranslationSchema } from '../../src/lib/schemas';
+import { OTHER_LANGUAGES, isOwnEdition, type LibraryBlock, type LibraryText, type LibraryUnit, type LibraryWork, type OtherLanguage, type OwnTranslation } from '../../src/types/library';
 import { anchoredText, normalizeEntry, sha256, toposTextParagraphs, type CorpusEntry, type CorpusManifest } from './corpus';
 import { readRaw } from './library-corpus';
+import { alignBooks, textGridBooks } from './lineation';
 
 /** Bump when the reading of the corpus changes, so the baked texts rebake. */
 const PARSER_VERSION = 2;
+/** Bump when the laying of a translation's lines beside the original changes
+ *  (./lineation.ts): it signs only the works that carry another language. */
+const LINEATION_VERSION = 1;
 
 const clean = (text: string) => text.replace(/ /g, ' ').replace(/\s+/g, ' ').replace(/\s+([,.;:!?)\]])/g, '$1').replace(/([(\[])\s+/g, '$1').trim();
 
@@ -90,19 +118,66 @@ function translationChunks(work: LibraryWork, entry: CorpusEntry, content: strin
   return books;
 }
 
-function verseBlocks(lines: [string, string][], chunks: Chunk[]): LibraryBlock[] {
+/** Per language, for each original line of a book, the translated lines laid beside it. */
+type Beside = Partial<Record<OtherLanguage, string[][]>>;
+
+function verseBlocks(lines: [string, string][], chunks: Chunk[], beside: Beside = {}): LibraryBlock[] {
   const sorted = [...chunks].filter((chunk) => Number.isFinite(chunk.start)).sort((a, b) => a.start - b.start);
+  const indexed = lines.map((line, index) => ({ line, index }));
   const blocks: LibraryBlock[] = [];
-  const before = sorted.length ? lines.filter(([n]) => lineNumber(n) < sorted[0].start) : lines;
-  if (before.length) blocks.push({ from: before[0][0], to: before.at(-1)?.[0] ?? before[0][0], orig: before, trans: [] });
+  const block = (mine: typeof indexed, base: Omit<LibraryBlock, 'orig'>): LibraryBlock => {
+    const translations: LibraryBlock['translations'] = {};
+    for (const language of OTHER_LANGUAGES) {
+      const per = beside[language];
+      if (per) translations[language] = mine.flatMap(({ index }) => per[index]);
+    }
+    return { ...base, orig: mine.map(({ line }) => line), ...(Object.keys(translations).length ? { translations } : {}) };
+  };
+  const before = sorted.length ? indexed.filter(({ line: [n] }) => lineNumber(n) < sorted[0].start) : indexed;
+  if (before.length) blocks.push(block(before, { from: before[0].line[0], to: before.at(-1)?.line[0] ?? before[0].line[0], trans: [] }));
   sorted.forEach((chunk, index) => {
     const end = sorted[index + 1] ? sorted[index + 1].start - 1 : Infinity;
-    const mine = lines.filter(([n]) => lineNumber(n) >= chunk.start && lineNumber(n) <= end);
-    const from = mine[0]?.[0] ?? String(chunk.start);
-    const to = mine.at(-1)?.[0] ?? from;
-    blocks.push({ from, to, orig: mine, trans: chunk.paras, ...(chunk.link ? { link: chunk.link } : {}) });
+    const mine = indexed.filter(({ line: [n] }) => lineNumber(n) >= chunk.start && lineNumber(n) <= end);
+    const from = mine[0]?.line[0] ?? String(chunk.start);
+    const to = mine.at(-1)?.line[0] ?? from;
+    blocks.push(block(mine, { from, to, trans: chunk.paras, ...(chunk.link ? { link: chunk.link } : {}) }));
   });
   return blocks;
+}
+
+/** The work's other languages, each laid beside the original's lines, book by book.
+ *  Only a verse translation set line for line (TextGrid's German) can be read so far. */
+function besideOriginal(work: LibraryWork, manifest: CorpusManifest, books: Map<string, [string, string][]>): Map<string, Beside> {
+  const perBook = new Map<string, Beside>([...books.keys()].map((id) => [id, {}]));
+  for (const language of OTHER_LANGUAGES) {
+    const edition = work.translations?.[language];
+    if (!edition) continue;
+    if (isOwnEdition(edition)) {
+      const { lines } = readOwnTranslation(work, edition.file, language).text;
+      const keys = new Set<string>();
+      for (const [id, original] of books) {
+        const beside = perBook.get(id);
+        const missing = original.filter(([n]) => !lines[lineKey(id, n)]).map(([n]) => lineKey(id, n));
+        if (missing.length > 0) throw new Error(`${edition.file}: no line for ${missing.slice(0, 12).join(', ')}${missing.length > 12 ? ` and ${missing.length - 12} more` : ''}`);
+        for (const [n] of original) keys.add(lineKey(id, n));
+        if (beside) beside[language] = original.map(([n]) => [lines[lineKey(id, n)]]);
+      }
+      const strays = Object.keys(lines).filter((key) => !keys.has(key));
+      if (strays.length > 0) throw new Error(`${edition.file}: ${strays.join(', ')} are no lines of the original`);
+      continue;
+    }
+    const entry = entryFor(edition.corpusId, manifest);
+    if (!entry) continue;
+    if (entry.format !== 'textgrid-tei' || entry.lineation !== work.original?.corpusId) {
+      throw new Error(`${work.id}: ${entry.id} is not a translation laid line for line beside ${work.original?.corpusId}`);
+    }
+    const translation = textGridBooks(readRaw(entry));
+    for (const [id, alignment] of alignBooks(entry.id, books, translation)) {
+      const beside = perBook.get(id);
+      if (beside) beside[language] = alignment.beside;
+    }
+  }
+  return perBook;
 }
 
 function verseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
@@ -112,9 +187,10 @@ function verseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
   const books = originalLines(work, readRaw(original));
   const chunks = translation ? translationChunks(work, translation, readRaw(translation)) : new Map<string, Chunk[]>();
   const keepEnglish = work.display === 'full';
+  const beside = besideOriginal(work, manifest, books);
   return [...books].map(([id, lines]) => ({
     id,
-    blocks: verseBlocks(lines, (chunks.get(id) ?? []).map((chunk) => (keepEnglish ? chunk : { ...chunk, paras: [] }))),
+    blocks: verseBlocks(lines, (chunks.get(id) ?? []).map((chunk) => (keepEnglish ? chunk : { ...chunk, paras: [] })), beside.get(id)),
   }));
 }
 
@@ -131,6 +207,7 @@ function sectionsOf(entry: CorpusEntry | null): Map<string, string> {
 
 /** Prose: the sections the research normalizer cuts, joined across the two editions. */
 function proseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
+  if (work.translations && Object.keys(work.translations).length > 0) throw new Error(`${work.id}: a prose work cannot carry another language yet`);
   const original = entryFor(work.original?.corpusId, manifest);
   const translation = entryFor(work.translation.corpusId, manifest);
   const originalSections = sectionsOf(original);
@@ -151,20 +228,48 @@ function proseText(work: LibraryWork, manifest: CorpusManifest): LibraryUnit[] {
   return [...units].map(([id, blocks]) => ({ id, blocks }));
 }
 
+const otherLanguages = (work: LibraryWork) => OTHER_LANGUAGES.filter((language) => work.translations?.[language]);
+
 export function textSignature(work: LibraryWork, manifest: CorpusManifest): string {
-  const pinned = [work.original?.corpusId, work.translation.corpusId]
+  const others = otherLanguages(work);
+  const editions = others.map((language) => work.translations?.[language]).filter((edition) => edition !== undefined);
+  const pinned = [work.original?.corpusId, work.translation.corpusId, ...editions.map((edition) => (isOwnEdition(edition) ? undefined : edition.corpusId))]
     .map((id) => entryFor(id, manifest))
     .filter((entry): entry is CorpusEntry => entry !== null)
     .map((entry) => `${entry.id}:${entry.sha256}`);
-  return sha256([`v${PARSER_VERSION}`, work.id, work.structure, work.units, work.display, ...pinned].join('\n'));
+  // the atlas's own translations are signed by their words: an edit wants a rebake
+  const own = editions.flatMap((edition) => (isOwnEdition(edition) ? [`${edition.file}:${sha256(readFileSync(join(OWN_TRANSLATIONS_DIR, edition.file)))}`] : []));
+  // a work in English alone keeps the signature it had before the reader's other languages
+  const lineation = others.length > 0 ? [`lineation v${LINEATION_VERSION}`, ...others] : [];
+  return sha256([`v${PARSER_VERSION}`, work.id, work.structure, work.units, work.display, ...pinned, ...own, ...lineation].join('\n'));
 }
 
 export function bakeText(work: LibraryWork, manifest: CorpusManifest): LibraryText {
   const verse = work.structure === 'books-of-lines' || work.structure === 'lines';
-  return { work: work.id, signature: textSignature(work, manifest), verse, units: verse ? verseText(work, manifest) : proseText(work, manifest) };
+  const units = verse ? verseText(work, manifest) : proseText(work, manifest);
+  const others = otherLanguages(work);
+  // every translated line lands in one block, once
+  for (const language of others) {
+    const edition = work.translations?.[language];
+    if (!edition) continue;
+    const entry = isOwnEdition(edition) ? null : entryFor(edition.corpusId, manifest);
+    const expected = isOwnEdition(edition) ? Object.keys(readOwnTranslation(work, edition.file, language).text.lines).length : entry ? textGridBooks(readRaw(entry)).flat().length : 0;
+    const baked = units.reduce((sum, unit) => sum + unit.blocks.reduce((lines, block) => lines + (block.translations?.[language]?.length ?? 0), 0), 0);
+    if (baked !== expected) throw new Error(`${work.id}: ${baked} ${language} lines baked of the ${expected} the translation has`);
+  }
+  const translations = Object.fromEntries(others.map((language) => [language, 'verse' as const]));
+  return { work: work.id, signature: textSignature(work, manifest), verse, ...(others.length > 0 ? { translations } : {}), units };
 }
 
 /** The characters a unit carries, the budget the gate holds it to. */
 export function unitSize(unit: LibraryUnit): number {
-  return unit.blocks.reduce((sum, block) => sum + (typeof block.orig === 'string' ? block.orig.length : block.orig.reduce((lines, [, text]) => lines + text.length, 0)) + block.trans.reduce((paras, para) => paras + para.length, 0), 0);
+  const chars = (texts: string[]) => texts.reduce((sum, text) => sum + text.length, 0);
+  return unit.blocks.reduce(
+    (sum, block) =>
+      sum +
+      (typeof block.orig === 'string' ? block.orig.length : chars(block.orig.map(([, text]) => text))) +
+      chars(block.trans) +
+      Object.values(block.translations ?? {}).reduce((others, lines) => others + chars(lines), 0),
+    0,
+  );
 }

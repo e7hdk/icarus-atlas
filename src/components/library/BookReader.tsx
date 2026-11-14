@@ -3,13 +3,16 @@
 import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import { BookEngine, type BookLanguage, type BookOptions, type BookSight } from '@/features/library/book/engine';
-import { keepLanguage, keptLanguage, subscribeLanguage } from '@/features/library/book/language';
+import { keepLanguage, keepTranslation, keptLanguage, keptTranslation, subscribeLanguage, subscribeTranslation } from '@/features/library/book/language';
+import type { ReaderLanguage } from '@/types/library';
 import { BookStrip } from './BookStrip';
+import { LANGUAGE_NAMES, TranslationMenu } from './TranslationMenu';
 
 /** The reading room's book (docs/LIBRARY_PLAN.md §6): the frame round the engine
  *  in `features/library/book`. The text, the cover and the two plates arrive
- *  rendered by the server; this holds the language switch, the fore-edge strip
- *  and the page count, and tells the margin which block the reader is on. */
+ *  rendered by the server, every translation the work has among them; this holds
+ *  the language switch and the choice of translation, the fore-edge strip and the
+ *  page count, and tells the margin which block the reader is on. */
 
 /** The block the margin speaks of (its `data-from`). */
 const NowContext = createContext<string | null>(null);
@@ -32,6 +35,7 @@ export function BookReader({
   structure,
   hasOriginal,
   showsTranslation,
+  translators,
   originalLabel,
   blocks,
   marginBase,
@@ -49,6 +53,8 @@ export function BookReader({
   structure: BookOptions['structure'];
   hasOriginal: boolean;
   showsTranslation: boolean;
+  /** The languages the work can be read in beside its original, each with its translator. */
+  translators: Partial<Record<ReaderLanguage, string>>;
   originalLabel: string;
   /** Every block of the page, by its `data-from`, in order. */
   blocks: string[];
@@ -67,6 +73,9 @@ export function BookReader({
   // the reader's last choice, where the work has both languages to choose between
   const kept = useSyncExternalStore(subscribeLanguage, keptLanguage, () => null);
   const language: BookLanguage = facing ? (kept ?? 'both') : hasOriginal ? 'orig' : 'trans';
+  // the reader's translation where the work has it, else its English; the choice is kept for the next book
+  const keptIn = useSyncExternalStore(subscribeTranslation, keptTranslation, () => null);
+  const translation: ReaderLanguage = keptIn && translators[keptIn] ? keptIn : 'en';
   const [sight, setSight] = useState<BookSight | null>(null);
   const [now, setNow] = useState<string | null>(null);
 
@@ -91,16 +100,21 @@ export function BookReader({
     };
   }, [storageKey, workId, headWork, headUnit, structure, facing, router]);
 
-  // the language is an attribute of the book: once it is on, the pages are set again
+  // the languages are attributes of the book: once they are on, the pages are set again
   useEffect(() => {
     engineRef.current?.relayout();
-  }, [language]);
+  }, [language, translation]);
 
   const choices: [BookLanguage, string][] = [
     ['orig', originalLabel],
     ['both', 'Both'],
-    ['trans', 'English'],
+    ['trans', LANGUAGE_NAMES[translation]],
   ];
+  const choose = (chosen: ReaderLanguage) => {
+    keepTranslation(chosen);
+    // a reader who picks a translation while reading the original alone wants to see it
+    if (facing && language === 'orig') keepLanguage('both');
+  };
   const count = !sight
     ? ''
     : sight.kind === 'title'
@@ -114,28 +128,37 @@ export function BookReader({
     'flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-glass-border text-[15px] text-aether-muted transition-colors hover:border-star-olympian/50 hover:text-star-olympian disabled:pointer-events-none disabled:opacity-30';
 
   return (
-    <div ref={rootRef} className="book" data-lang={language} data-structure={structure}>
+    <div ref={rootRef} className="book" data-lang={language} data-tl={translation} data-structure={structure}>
       <noscript>
         <style>{NO_SCRIPT}</style>
       </noscript>
       <div className="book-top">
         <div className="min-w-0">{crumb}</div>
         {facing && (
-          <div role="group" aria-label="Language" className="flex shrink-0 gap-0.5 rounded-full border border-glass-border bg-glass p-0.5 backdrop-blur-xl">
+          <TranslationMenu chosen={translation} translators={translators} onChoose={choose}>
             {choices.map(([value, label]) => (
               <button
                 key={value}
                 type="button"
                 aria-pressed={language === value}
                 onClick={() => keepLanguage(value)}
-                className={`rounded-full border px-2 py-1 transition-colors min-[380px]:px-3 sm:px-3.5 ${
+                // the narrowest phones take the caret's room from the segments, so the crumb keeps its book
+                className={`rounded-full border px-1.5 py-1 transition-colors min-[380px]:px-2 min-[420px]:px-3 sm:px-3.5 ${
                   language === value ? 'border-star-olympian/50 bg-star-olympian/10 text-star-olympian' : 'border-transparent text-aether-muted hover:text-aether'
-                } ${value === 'orig' ? 'font-greek text-[13px]' : 'font-display text-[10px] tracking-[0.18em]'}`}
+                } ${value === 'orig' ? 'font-greek text-[12px] min-[380px]:text-[13px]' : 'font-display text-[10px] tracking-[0.1em] min-[380px]:tracking-[0.18em]'}`}
               >
                 {value === 'orig' ? label : label.toUpperCase()}
               </button>
             ))}
-          </div>
+          </TranslationMenu>
+        )}
+        {/* a work in translation alone (the Fabulae) still names its language, and offers the others */}
+        {!facing && showsTranslation && (
+          <TranslationMenu chosen={translation} translators={translators} onChoose={choose}>
+            <span className="rounded-full border border-star-olympian/50 bg-star-olympian/10 px-2 py-1 font-display text-[10px] tracking-[0.18em] text-star-olympian min-[420px]:px-3 sm:px-3.5">
+              {LANGUAGE_NAMES[translation].toUpperCase()}
+            </span>
+          </TranslationMenu>
         )}
       </div>
 

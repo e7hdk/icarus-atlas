@@ -33,7 +33,8 @@ for (const work of registry.works) {
   const text = bakeText(work, manifest);
   // one block per line keeps a rebake's diff readable
   const body = text.units.map((unit) => `{"id":${JSON.stringify(unit.id)},"blocks":[\n${unit.blocks.map((block) => JSON.stringify(block)).join(',\n')}\n]}`).join(',\n');
-  writeFileSync(path, `{"work":${JSON.stringify(text.work)},"signature":${JSON.stringify(text.signature)},"verse":${text.verse},"units":[\n${body}\n]}\n`);
+  const languages = text.translations ? `"translations":${JSON.stringify(text.translations)},` : '';
+  writeFileSync(path, `{"work":${JSON.stringify(text.work)},"signature":${JSON.stringify(text.signature)},"verse":${text.verse},${languages}"units":[\n${body}\n]}\n`);
   JSON.parse(readFileSync(path, 'utf8'));
   const largest = Math.max(...text.units.map(unitSize));
   console.log(`  ${work.id.padEnd(22)} ${text.units.length} page(s), ${text.units.reduce((sum, unit) => sum + unit.blocks.length, 0)} blocks, largest page ${Math.round(largest / 1024)} KB`);

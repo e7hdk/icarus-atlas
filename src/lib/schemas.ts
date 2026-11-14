@@ -682,6 +682,28 @@ const libraryEditionSchema = z.object({
   licence: z.string().min(1),
 });
 
+/** The atlas's own translation, named in the registry by its file in data/library/translations/. */
+const ownEditionSchema = z
+  .object({
+    file: z.string().regex(/^[a-z0-9-]+\.(de|tr)\.json$/),
+    status: z.enum(['draft', 'reviewed']),
+    credit: z.string().min(1),
+    licence: z.string().min(1),
+  })
+  .strict();
+const readerEditionSchema = z.union([libraryEditionSchema.strict(), ownEditionSchema]);
+
+/** data/library/translations/<work>.<language>.json (docs/LIBRARY_PLAN.md §4.4, L15). */
+export const ownTranslationSchema = z
+  .object({
+    work: z.enum(LIBRARY_WORK_IDS),
+    language: z.enum(['de', 'tr']),
+    from: z.string().min(1),
+    note: z.string().min(1),
+    lines: z.record(z.string().regex(/^(\d+\.)?\d+[a-z]?$/), z.string().trim().min(1)),
+  })
+  .strict();
+
 export const libraryWorksFileSchema = z.object({
   works: z
     .array(
@@ -698,6 +720,7 @@ export const libraryWorksFileSchema = z.object({
         aliases: z.array(z.string().min(1)).min(1),
         original: libraryEditionSchema.optional(),
         translation: libraryEditionSchema,
+        translations: z.object({ de: readerEditionSchema.optional(), tr: readerEditionSchema.optional() }).strict().optional(),
         display: z.enum(['full', 'excerpt']),
       }),
     )

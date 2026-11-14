@@ -11,13 +11,14 @@ import { scopeOf, type UnitMargin } from '@/features/library/margins';
 import { unitHref, workHref } from '@/features/library/links';
 import type { ProseSegment } from '@/features/linking/parse-prose';
 import { TYPE_GLOW } from '@/types/character';
-import type { LibraryBlock, LibraryUnit, LibraryWork } from '@/types/library';
+import { OTHER_LANGUAGES, isOwnEdition, type LibraryBlock, type LibraryUnit, type LibraryWork, type OtherLanguage, type ReaderLanguage, type ReaderEdition } from '@/types/library';
 
 /** One reading page of the Library (docs/LIBRARY_PLAN.md §6): a book, or a whole
  *  short work, bound as a book of night sky. The original is the left page and
- *  the English the right, as in a Loeb; line numbers every five in the original's
- *  lineation, the one the atlas cites. Rendered on the server, so the text is in
- *  the HTML: the client only cuts it into pages (`BookReader`). */
+ *  the translation the right, as in a Loeb: the English, or the German where the
+ *  work has one and the reader chose it; line numbers every five in the original's
+ *  lineation, the one the atlas cites. Rendered on the server, every translation
+ *  in the HTML: the client only cuts the chosen one into pages (`BookReader`). */
 
 const ORIGINAL_LANGUAGE: Record<string, { lang: string; label: string }> = {
   ovid: { lang: 'la', label: 'Latine' },
@@ -26,6 +27,14 @@ const ORIGINAL_LANGUAGE: Record<string, { lang: string; label: string }> = {
 const GREEK = { lang: 'grc', label: 'Ἑλληνικά' };
 
 const isVerse = (work: LibraryWork) => work.structure === 'books-of-lines' || work.structure === 'lines';
+
+/** The translator a credit names: "English translation by A. T. Murray (Loeb, …)" → A. T. Murray. */
+const translatorOf = (credit: string) => /translation(?: of Book \d+)? by (.+?) \(/.exec(credit)?.[1] ?? credit;
+
+/** The translator as the menu names them: the atlas's own translation says when it is still a draft. */
+const translatorLabel = (edition: ReaderEdition) => `${translatorOf(edition.credit)}${isOwnEdition(edition) && edition.status === 'draft' ? ' · draft' : ''}`;
+
+const LANGUAGE_IN_ENGLISH: Record<OtherLanguage, string> = { de: 'German', tr: 'Turkish' };
 
 /** A name in the English, linked to its codex: a plain anchor, since a book holds a
  *  thousand of them and none needs the client. A paragraph after the first says so
@@ -72,7 +81,7 @@ function Block({ block, work, lang, linker, scope }: { block: LibraryBlock; work
           )}
         </div>
       )}
-      <div className="lib-trans">
+      <div className="lib-trans" data-tl="en">
         <p className="lib-range">{range}</p>
         {block.trans.map((paragraph, index) => (
           <Paragraph key={index} segments={linker.link(paragraph, scope)} next={index > 0} />
@@ -83,6 +92,22 @@ function Block({ block, work, lang, linker, scope }: { block: LibraryBlock; work
           </a>
         )}
       </div>
+      {/* the reader's other languages: a verse translation keeps its lines, each its own;
+          lines the translator did not render leave the block empty in that language */}
+      {OTHER_LANGUAGES.map((language) => {
+        const lines = block.translations?.[language];
+        if (!lines) return null;
+        return (
+          <div key={language} className="lib-trans" data-tl={language} data-form="verse" lang={language}>
+            {lines.length > 0 && <p className="lib-range">{range}</p>}
+            {lines.map((line, index) => (
+              <p key={index} className="lib-vl">
+                {line}
+              </p>
+            ))}
+          </div>
+        );
+      })}
     </section>
   );
 }
@@ -130,7 +155,15 @@ export async function ReadingRoom({ work, unit, units, tellerName }: { work: Lib
     return `${prefix}.${block.from}${block.to !== block.from ? `–${block.to}` : ''}`.replace(`${work.title}.`, `${work.title} `);
   };
   const ranges = Object.fromEntries(unit.blocks.map((block) => [block.from, where(block)]));
-  const credits = [work.original?.credit, showsTranslation ? work.translation.credit : null].filter(Boolean).join('. ');
+  const others = OTHER_LANGUAGES.flatMap((language) => {
+    const edition = work.translations?.[language];
+    return edition ? [{ language, edition }] : [];
+  });
+  const translators: Partial<Record<ReaderLanguage, string>> = Object.fromEntries([
+    ...(showsTranslation ? [['en', translatorOf(work.translation.credit)]] : []),
+    ...others.map(({ language, edition }) => [language, translatorLabel(edition)]),
+  ]);
+  const credits = [work.original?.credit, showsTranslation ? work.translation.credit : null, ...others.map(({ edition }) => edition.credit)].filter(Boolean).join('. ');
   const book = whole ? null : `Book ${romanBook(unit.id)}`;
   // the title is cut in gold across the board: its longest word sets the size of the letters
   const longest = Math.max(...work.title.split(' ').map((word) => word.length));
@@ -214,6 +247,11 @@ export async function ReadingRoom({ work, unit, units, tellerName }: { work: Lib
       </p>
       <p className="bk-plate-credits">
         From the pinned corpus of the atlas, research/corpus/manifest.json. {work.original?.licence === 'CC BY-SA 4.0' ? 'Perseus Digital Library texts are shared under CC BY-SA 4.0, as the atlas’s own data is. ' : ''}
+        {others.some(({ edition }) => edition.credit.includes('TextGrid')) ? 'TextGrid’s German texts are shared under CC BY 3.0 DE; the translations themselves are public domain. ' : ''}
+        {others
+          .filter(({ edition }) => isOwnEdition(edition))
+          .map(({ language, edition }) => `The ${LANGUAGE_IN_ENGLISH[language]} is the atlas’s own translation from the original${isOwnEdition(edition) && edition.status === 'draft' ? ', a draft until the editor has read it through' : ''}, shared under ${edition.licence} like its data. `)
+          .join('')}
         Translators’ notes are left out; the line numbers are the original’s.
       </p>
     </div>
@@ -232,6 +270,7 @@ export async function ReadingRoom({ work, unit, units, tellerName }: { work: Lib
         structure={verse ? 'verse' : work.structure === 'tales' ? 'tales' : 'sections'}
         hasOriginal={hasOriginal}
         showsTranslation={showsTranslation}
+        translators={translators}
         originalLabel={original.label}
         blocks={unit.blocks.map((block) => block.from)}
         marginBase={marginAt}
