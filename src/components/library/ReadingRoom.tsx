@@ -272,6 +272,7 @@ export async function ReadingRoom({ work, unit, units, tellerName }: { work: Lib
         showsTranslation={showsTranslation}
         translators={translators}
         originalLabel={original.label}
+        originalLang={original.lang}
         blocks={unit.blocks.map((block) => block.from)}
         marginBase={marginAt}
         crumb={

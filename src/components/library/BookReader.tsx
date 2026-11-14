@@ -3,10 +3,21 @@
 import { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import { BookEngine, type BookLanguage, type BookOptions, type BookSight } from '@/features/library/book/engine';
-import { keepLanguage, keepTranslation, keptLanguage, keptTranslation, subscribeLanguage, subscribeTranslation } from '@/features/library/book/language';
-import type { ReaderLanguage } from '@/types/library';
+import {
+  keepLanguage,
+  keepLeft,
+  keepTranslation,
+  keptLanguage,
+  keptLeft,
+  keptTranslation,
+  subscribeLanguage,
+  subscribeLeft,
+  subscribeTranslation,
+  type LeftPage,
+} from '@/features/library/book/language';
+import { READER_LANGUAGES, type ReaderLanguage } from '@/types/library';
 import { BookStrip } from './BookStrip';
-import { LANGUAGE_NAMES, TranslationMenu } from './TranslationMenu';
+import { LANGUAGE_CODES, LANGUAGE_NAMES, TranslationMenu } from './TranslationMenu';
 
 /** The reading room's book (docs/LIBRARY_PLAN.md §6): the frame round the engine
  *  in `features/library/book`. The text, the cover and the two plates arrive
@@ -37,6 +48,7 @@ export function BookReader({
   showsTranslation,
   translators,
   originalLabel,
+  originalLang,
   blocks,
   marginBase,
   crumb,
@@ -56,6 +68,8 @@ export function BookReader({
   /** The languages the work can be read in beside its original, each with its translator. */
   translators: Partial<Record<ReaderLanguage, string>>;
   originalLabel: string;
+  /** The original's language tag (`grc`, `la`). */
+  originalLang: string;
   /** Every block of the page, by its `data-from`, in order. */
   blocks: string[];
   marginBase: string;
@@ -76,6 +90,9 @@ export function BookReader({
   // the reader's translation where the work has it, else its English; the choice is kept for the next book
   const keptIn = useSyncExternalStore(subscribeTranslation, keptTranslation, () => null);
   const translation: ReaderLanguage = keptIn && translators[keptIn] ? keptIn : 'en';
+  // what faces it: the original, or another translation the work has (German beside Turkish)
+  const keptOther = useSyncExternalStore(subscribeLeft, keptLeft, () => null);
+  const leftPage: LeftPage = keptOther && keptOther !== 'orig' && keptOther !== translation && translators[keptOther] ? keptOther : 'orig';
   const [sight, setSight] = useState<BookSight | null>(null);
   const [now, setNow] = useState<string | null>(null);
 
@@ -103,17 +120,31 @@ export function BookReader({
   // the languages are attributes of the book: once they are on, the pages are set again
   useEffect(() => {
     engineRef.current?.relayout();
-  }, [language, translation]);
+  }, [language, translation, leftPage]);
 
   const choices: [BookLanguage, string][] = [
     ['orig', originalLabel],
-    ['both', 'Both'],
+    // two translations side by side name themselves, tight enough that the crumb keeps its title on a phone
+    ['both', leftPage === 'orig' ? 'Both' : `${LANGUAGE_CODES[leftPage]}·${LANGUAGE_CODES[translation]}`],
     ['trans', LANGUAGE_NAMES[translation]],
   ];
+  // a language set on one page that the other already holds trades places with it
+  const otherThan = (language: ReaderLanguage) => READER_LANGUAGES.find((candidate) => candidate !== language && translators[candidate]);
   const choose = (chosen: ReaderLanguage) => {
+    if (chosen === leftPage) keepLeft(translation);
     keepTranslation(chosen);
     // a reader who picks a translation while reading the original alone wants to see it
     if (facing && language === 'orig') keepLanguage('both');
+  };
+  const chooseLeft = (page: LeftPage) => {
+    if (page !== 'orig' && page === translation) {
+      const other = leftPage !== 'orig' ? leftPage : otherThan(page);
+      if (!other) return;
+      keepTranslation(other);
+    }
+    keepLeft(page);
+    // setting the left page means reading the two side by side
+    if (facing) keepLanguage('both');
   };
   const count = !sight
     ? ''
@@ -128,14 +159,14 @@ export function BookReader({
     'flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-glass-border text-[15px] text-aether-muted transition-colors hover:border-star-olympian/50 hover:text-star-olympian disabled:pointer-events-none disabled:opacity-30';
 
   return (
-    <div ref={rootRef} className="book" data-lang={language} data-tl={translation} data-structure={structure}>
+    <div ref={rootRef} className="book" data-lang={language} data-tl={translation} data-left={leftPage} data-structure={structure}>
       <noscript>
         <style>{NO_SCRIPT}</style>
       </noscript>
       <div className="book-top">
         <div className="min-w-0">{crumb}</div>
         {facing && (
-          <TranslationMenu chosen={translation} translators={translators} onChoose={choose}>
+          <TranslationMenu chosen={translation} translators={translators} onChoose={choose} left={{ chosen: leftPage, originalLabel, originalLang, onChoose: chooseLeft }}>
             {choices.map(([value, label]) => (
               <button
                 key={value}
@@ -145,7 +176,7 @@ export function BookReader({
                 // the narrowest phones take the caret's room from the segments, so the crumb keeps its book
                 className={`rounded-full border px-1.5 py-1 transition-colors min-[380px]:px-2 min-[420px]:px-3 sm:px-3.5 ${
                   language === value ? 'border-star-olympian/50 bg-star-olympian/10 text-star-olympian' : 'border-transparent text-aether-muted hover:text-aether'
-                } ${value === 'orig' ? 'font-greek text-[12px] min-[380px]:text-[13px]' : 'font-display text-[10px] tracking-[0.1em] min-[380px]:tracking-[0.18em]'}`}
+                } ${value === 'orig' ? 'font-greek text-[12px] min-[380px]:text-[13px]' : 'font-display text-[10px] tracking-[0.1em] min-[420px]:tracking-[0.18em]'}`}
               >
                 {value === 'orig' ? label : label.toUpperCase()}
               </button>

@@ -8,7 +8,8 @@ import { targetsOf } from './targets';
  *
  *  A view is what lies open: two facing pages on a wide screen, one page on a
  *  phone. With both languages on a wide screen the original is the left page
- *  and the English the right, cut together; on a phone each page holds a
+ *  and the English the right, cut together (or any two of the work's languages,
+ *  as the reader sets them: `data-left` and `data-tl` on the book); on a phone each page holds a
  *  stretch of the original over its English; with one language the text runs
  *  from page to page.
  *
@@ -56,6 +57,8 @@ interface RowRef {
   from: string;
   to: string;
   orig: HTMLElement | null;
+  /** What faces the right page: the original, or the translation the reader set there (`data-left`). */
+  left: HTMLElement | null;
   /** The translation the reader chose, set again with each layout. */
   trans: HTMLElement | null;
 }
@@ -63,6 +66,13 @@ interface RowRef {
 /** A block's translation in the reader's language (`data-tl` on the book), or its English. */
 function translationCell(block: HTMLElement, language: string | undefined): HTMLElement | null {
   return block.querySelector<HTMLElement>(`.lib-trans[data-tl="${language ?? 'en'}"]`) ?? block.querySelector<HTMLElement>('.lib-trans');
+}
+
+/** The block's left page: its original, or the translation the reader set beside the other one. */
+function leftCell(block: HTMLElement, language: string | undefined): HTMLElement | null {
+  const original = block.querySelector<HTMLElement>('.lib-orig');
+  if (!language || language === 'orig') return original;
+  return block.querySelector<HTMLElement>(`.lib-trans[data-tl="${language}"]`) ?? original;
 }
 
 interface LineMark {
@@ -284,6 +294,7 @@ export class BookEngine {
         from: el.dataset.from ?? '',
         to: el.dataset.to ?? '',
         orig: el.querySelector<HTMLElement>('.lib-orig'),
+        left: leftCell(el, root.dataset.left),
         trans: translationCell(el, root.dataset.tl),
       };
     });
@@ -463,10 +474,13 @@ export class BookEngine {
   /** Measures the flow and cuts it into faces. */
   private layout() {
     const { cells, columns, stack, spread, textH, lead, pageW, pageH } = this.geo;
-    // the reader may have chosen another translation since the last setting
-    for (const row of this.rows) row.trans = translationCell(row.el, this.root.dataset.tl);
+    // the reader may have chosen other languages since the last setting
+    for (const row of this.rows) {
+      row.left = leftCell(row.el, this.root.dataset.left);
+      row.trans = translationCell(row.el, this.root.dataset.tl);
+    }
     this.measured = this.rows.map((row) => ({
-      cells: (cells === 2 ? [row.orig, row.trans] : [row.el]).map((part) => measureCell(part, lead)),
+      cells: (cells === 2 ? [row.left, row.trans] : [row.el]).map((part) => measureCell(part, lead)),
     }));
     const rows: Row[] = this.measured;
     const pages = stack ? composeStacked(rows, textH, lead) : compose(rows, textH, lead);
@@ -477,8 +491,8 @@ export class BookEngine {
     if (spread && faces.length % 2 === 1) faces.push({ kind: 'none' });
     this.faces = faces;
     // the languages too: two translations may happen to come to the same heights, and the faces copy their words
-    const { lang, tl } = this.root.dataset;
-    this.print = [lang, tl, spread, columns, stack, pageW, pageH, lead, ...this.measured.map((row) => row.cells.map((cell) => Math.round(cell.height)).join('/'))].join(',');
+    const { lang, tl, left } = this.root.dataset;
+    this.print = [lang, tl, left, spread, columns, stack, pageW, pageH, lead, ...this.measured.map((row) => row.cells.map((cell) => Math.round(cell.height)).join('/'))].join(',');
   }
 
   private anchor(): Anchor {
@@ -618,7 +632,7 @@ export class BookEngine {
     let above: Slice | null = null;
     for (const slice of face.slices) {
       const row = this.rows[slice.row];
-      const part = apart ? (slice.cell === 0 ? row.orig : row.trans) : row.el;
+      const part = apart ? (slice.cell === 0 ? row.left : row.trans) : row.el;
       const stretch = part && copyStretch(part, this.measured[slice.row].cells[slice.cell].items, slice.from, slice.height);
       if (!stretch) continue;
       // one page for both: a short rule between a stretch of the original and its English
