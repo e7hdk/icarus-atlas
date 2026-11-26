@@ -6,7 +6,7 @@ import { ClampList } from '@/components/ui/ClampList';
 import { loadAtlasFile, useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { quarrelHref } from '@/features/library/paths';
 import { marginChunkUrl, marginIndexUrl, type MarginBlock, type MarginChunk, type MarginIndex, type MarginTables } from '@/features/library/margin-paths';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { useReadingNow } from './BookReader';
 
 /** The margin (docs/LIBRARY_PLAN.md §6): for the block the reader is on, what in
@@ -32,7 +32,7 @@ function Quiet({ children }: { children: React.ReactNode }) {
 
 function Notes({ block, tables, tellers }: { block: MarginBlock; tables: MarginTables; tellers: Record<string, string> }) {
   const figures = Object.entries(block.figures).sort((a, b) => b[1].facts - a[1].facts);
-  const tint = (id: string) => (tables.who[id] ? TYPE_GLOW[tables.who[id][1]].color : ACCENT_FALLBACK);
+  const tint = (id: string) => (tables.who[id] ? glowColorOf(id, tables.who[id][1]) : ACCENT_FALLBACK);
   return (
     <>
       {figures.length > 0 && (

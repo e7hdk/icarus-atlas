@@ -16,6 +16,7 @@ import { selectDay } from '@/features/spotlight/selection';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { useEphemerisPayload } from '@/features/spotlight/usePayload';
 import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import type { ProemBeat } from '@/types/spotlight';
 
 const BEAT_LABEL: Record<ProemBeat['kind'], string> = {
@@ -102,7 +103,7 @@ export function ProemOverlay() {
 
   const atDoors = script !== null && beatIndex >= script.beats.length;
   const beat = script && !atDoors ? script.beats[beatIndex] : null;
-  const glow = payload ? TYPE_GLOW[payload.type].color : '#c084fc';
+  const glow = payload ? glowColorOf(pick.id, payload.type) : '#c084fc';
   // Long serif prose can climb well past the stage floor — on those beats the
   // house lights go down so the words own the stage. Display-type beats
   // (invocation, thread) keep the galaxy at full burn: there the star performs.

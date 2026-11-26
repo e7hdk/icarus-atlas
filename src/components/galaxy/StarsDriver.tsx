@@ -11,6 +11,7 @@ import { PSF_VERT, PSF_FRAG } from './shaders/psfStar';
 import { useElapsedRef } from './useElapsedRef';
 import { StarLabel } from './StarLabel';
 import { STAR_SIZE, STAR_PULSE, STAR_RADIANCE, STAR_SPIKE } from './starLook';
+import { dedicationOf, DEDICATION_DRIFT } from '@/features/galaxy/dedication';
 
 const SHIMMER_SPEED = 0.06;
 const SHIMMER_SAT = 0.82;
@@ -70,6 +71,8 @@ export function StarsDriver({
     const phaseArr = new Float32Array(N);
     const irregularArr = new Uint8Array(N);
     const baseHueArr = new Float32Array(N); // NaN = not a Muse
+    // A dedicated star's two colours (linear, as THREE.Color holds them).
+    const drift: { index: number; from: THREE.Color; to: THREE.Color }[] = [];
     const radiance = new Float32Array(N);
     const spike = new Float32Array(N);
     const emphasis = new Float32Array(N); // eased focus, 0..1
@@ -82,8 +85,9 @@ export function StarsDriver({
     const posY = new Float32Array(N);
     const posZ = new Float32Array(N);
 
-    // Per-instance buffers. Colour is static except for the Muses; aDyn
-    // carries scale, radiance, spike gain and the selection ring.
+    // Per-instance buffers. Colour is static except for the Muses and a
+    // dedicated star (dedication.ts); aDyn carries scale, radiance, spike
+    // gain and the selection ring.
     const color = new Float32Array(N * 3);
     const size = new Float32Array(N);
     const dyn = new Float32Array(N * 4);
@@ -97,17 +101,23 @@ export function StarsDriver({
       const c = stars[i];
       const glow = TYPE_GLOW[c.type];
       const pulse = STAR_PULSE[glow.pulse];
-      size[i] = STAR_SIZE[c.type];
+      const gift = dedicationOf(c.id);
+      size[i] = gift?.size ?? STAR_SIZE[c.type];
       hitScaleArr[i] = Math.max(size[i] * 3, 1.5);
       speedArr[i] = pulse.speed;
       ampArr[i] = pulse.amp;
       phaseArr[i] = (hashString(c.id) % 6283) / 1000;
       irregularArr[i] = glow.pulse === 'irregular' ? 1 : 0;
-      radiance[i] = STAR_RADIANCE[c.type];
-      spike[i] = STAR_SPIKE[c.type];
-      const bh = IRIDESCENT_BASE_HUE[c.id];
+      radiance[i] = gift?.radiance ?? STAR_RADIANCE[c.type];
+      spike[i] = gift?.spike ?? STAR_SPIKE[c.type];
+      // A dedication takes the star out of the Muses' rainbow into its own drift.
+      const bh = gift ? undefined : IRIDESCENT_BASE_HUE[c.id];
       baseHueArr[i] = bh === undefined ? NaN : bh;
-      if (bh === undefined) {
+      if (gift) {
+        drift.push({ index: i, from: new THREE.Color(gift.from), to: new THREE.Color(gift.to) });
+        tmp.set(gift.from);
+        hasMuse = true;
+      } else if (bh === undefined) {
         tmp.set(glow.color);
       } else {
         tmp.setHSL(bh, SHIMMER_SAT, SHIMMER_LIGHT);
@@ -148,7 +158,7 @@ export function StarsDriver({
     hitMat.visible = !isMobile;
 
     return {
-      hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr,
+      hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr, drift,
       radiance, spike, emphasis, ring, attested, litMask, litGlow, flare, posX, posY, posZ, color, dyn, hasMuse,
       indexToId, idToIndex,
       starGeo, starMat, hitGeo, hitMat,
@@ -285,7 +295,7 @@ export function StarsDriver({
     const st = useGalaxyStore.getState();
     const hi = st.hoveredId ? currentData.idToIndex.get(st.hoveredId) ?? -1 : -1;
     const si = st.selectedId ? currentData.idToIndex.get(st.selectedId) ?? -1 : -1;
-    const { speedArr, ampArr, phaseArr, irregularArr, baseHueArr, radiance, spike,
+    const { speedArr, ampArr, phaseArr, irregularArr, baseHueArr, drift, radiance, spike,
       emphasis, ring, attested, litMask, litGlow, flare, color, dyn, hasMuse, starMat } = currentData;
 
     // A reading's lit set, written into the mask once per change; a star that
@@ -339,6 +349,16 @@ export function StarsDriver({
         color[i * 3 + 1] = shimmer.g;
         color[i * 3 + 2] = shimmer.b;
       }
+    }
+
+    // A dedicated star's light drifts between its two colours; held at the
+    // first when motion is not wanted.
+    for (const { index, from, to } of drift) {
+      const mix = still ? 0 : 0.5 - 0.5 * Math.cos(t * DEDICATION_DRIFT);
+      shimmer.copy(from).lerp(to, mix);
+      color[index * 3] = shimmer.r;
+      color[index * 3 + 1] = shimmer.g;
+      color[index * 3 + 2] = shimmer.b;
     }
 
     (star.geometry.getAttribute('aDyn') as THREE.BufferAttribute).needsUpdate = true;

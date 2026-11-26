@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Character, LensId, Relation } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { RING_ORDER, ringsFor } from '@/features/characters/categories';
 
 /** The codex seal: the figure's bonds as a miniature orrery riding the
@@ -113,7 +113,7 @@ export function CodexSeal({
               {members.map((member, memberIndex) => {
                 const other = byId.get(member.id);
                 if (!other) return null;
-                const color = TYPE_GLOW[other.type].color;
+                const color = glowColorOf(other.id, other.type);
                 const angle = (360 / members.length) * memberIndex + index * 31;
                 const hot = hotBond === member.id;
                 return (

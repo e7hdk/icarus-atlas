@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useRouter } from 'next/navigation';
 import type { CharacterType } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { MarqueeCard, MarqueeHeading, Meander } from '@/components/character/codex-marquee';
 import { Footnote } from '@/components/ui/Footnote';
 import type { PassageLink } from '@/features/library/links';
@@ -90,7 +90,7 @@ function CitySeal({ residents }: { residents: SealResident[] }) {
         }}
       />
       {residents.map((resident, index) => {
-        const color = TYPE_GLOW[resident.type].color;
+        const color = glowColorOf(resident.id, resident.type);
         const radius = SEAL_RINGS[index % SEAL_RINGS.length];
         return (
           <span

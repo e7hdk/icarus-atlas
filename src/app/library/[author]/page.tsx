@@ -7,7 +7,8 @@ import { LIBRARY_REGISTRY, otherCredits, workHref } from '@/features/library/lin
 import { TELLER_ORDER, quarrelHref, shortTeller } from '@/features/library/paths';
 import { QUARRELS } from '@/features/library/quarrels';
 import { libraryShelf } from '@/features/library/shelf';
-import { TYPE_GLOW, type SourceId } from '@/types/character';
+import { type SourceId } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 
 /** A teller of the Library (docs/LIBRARY_PLAN.md §5): dates and works with their
  *  editions; what the atlas owes them, counted from the reverse index; the figures
@@ -123,7 +124,7 @@ export default async function TellerPage({ params }: Params) {
           <div className="mt-3 flex flex-wrap gap-1.5">
             <ClampList max={FIGURES_SHOWN} as="span" noun="FIGURES">
               {only.map((figure) => {
-                const { color } = TYPE_GLOW[figure.type];
+                const color = glowColorOf(figure.id, figure.type);
                 return (
                   <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border border-glass-border bg-glass px-2.5 py-1 font-body text-[14px] text-aether-muted transition-colors hover:text-aether">
                     <span className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />

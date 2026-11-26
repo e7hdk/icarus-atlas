@@ -5,7 +5,7 @@ import { loadPlaces } from '@/features/geo/load';
 import { MONTH_DISPLAY } from '@/features/spotlight/attic';
 import { loadFestivals } from '@/features/spotlight/build';
 import { loadStories } from '@/features/stories/load';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { ATTIC_MONTHS } from '@/types/spotlight';
 import type { Festival } from '@/types/spotlight';
 
@@ -63,7 +63,7 @@ export default async function FestivalsPage() {
           return {
             id: deity,
             name: character?.name ?? deity,
-            color: character ? TYPE_GLOW[character.type].color : 'inherit',
+            color: character ? glowColorOf(character.id, character.type) : 'inherit',
           };
         }),
         place: place ? { id: place.id, name: place.name, isCity: place.kind === 'city' } : null,

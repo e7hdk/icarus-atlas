@@ -6,7 +6,7 @@ import { TheogonySky, type SkyBeat } from '@/components/library/TheogonySky';
 import { loadAtlasData } from '@/features/characters/load';
 import { loadLibraryText } from '@/features/library/load';
 import { quarrelHref } from '@/features/library/paths';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import type { LibraryBlock } from '@/types/library';
 
 /** First, Chaos (docs/LIBRARY_PLAN.md §8): the Theogony read with the sky, a
@@ -143,7 +143,7 @@ export default async function TheogonyPage() {
                 <span className="mr-1 font-display text-[8.5px] tracking-[0.24em] text-aether-faint">{named.length > 0 ? 'IGNITES' : 'NO NEW STAR'}</span>
                 <ClampList max={14} as="span" noun="NAMED">
                   {named.map((figure) => {
-                    const { color } = TYPE_GLOW[figure.type];
+                    const color = glowColorOf(figure.id, figure.type);
                     return (
                       <Link key={figure.id} href={`/character/${figure.id}`} className="inline-flex items-center gap-1.5 rounded-full border px-2.5 py-[3px] font-body text-[14px] text-aether" style={{ borderColor: `${color}66`, background: `${color}1a` }}>
                         <i className="h-1.5 w-1.5 rounded-full" style={{ background: color, boxShadow: `0 0 6px ${color}` }} />

@@ -14,6 +14,14 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.8.2',
+    codename: 'The Greatest Muse',
+    date: '2026-11-26',
+    lines: [
+      'One star was given as a gift. Thalia, the blooming one among the nine, now burns larger than any star in the sky, her light drifting slowly between rose and gold, and her badge reads Greatest Muse. It is a dedication, not a teller’s word: her stories are still told as the poets told them, and Hesiod still names Calliope the chiefest of the sisters.',
+    ],
+  },
+  {
     version: '0.8.1',
     codename: 'Two Tongues Facing',
     date: '2026-11-14',

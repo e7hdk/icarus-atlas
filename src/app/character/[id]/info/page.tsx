@@ -7,7 +7,7 @@ import { storiesFeaturingCharacter } from '@/features/stories/appearances';
 import { CharacterTabs } from '@/components/character/CharacterTabs';
 import { CharacterCodexPanel } from '@/components/character/CharacterCodexPanel';
 import { CrumbBar } from '@/components/hud/CrumbBar';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
@@ -34,7 +34,7 @@ export default async function CharacterInfoPage(props: { params: Promise<{ id: s
   const byId = new Map(characters.map((c) => [c.id, c]));
   const citiesById = new Map(cities.map((city) => [city.id, city]));
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
-  const glow = TYPE_GLOW[character.type].color;
+  const glow = glowColorOf(character.id, character.type);
 
   const codexRelations = relations.filter(
     (relation) => relation.from === character.id || relation.to === character.id,

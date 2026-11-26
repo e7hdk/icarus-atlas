@@ -8,6 +8,7 @@ import { IRIDESCENT_BASE_HUE, TYPE_GLOW } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { STAR_SIZE } from './starLook';
+import { dedicationOf } from '@/features/galaxy/dedication';
 
 const LABEL_DISTANCE_FACTOR = 28;
 const LABEL_FONT_SIZE = 11;
@@ -77,9 +78,19 @@ export function MobileStarLabels({
     }
     return values;
   }, [lens, stars]);
+  // How far each label hangs below its star: under the star's drawn size.
+  const labelDrops = useMemo(
+    () =>
+      stars.map(
+        (character) => (dedicationOf(character.id)?.size ?? STAR_SIZE[character.type]) + 1.2,
+      ),
+    [stars],
+  );
   const hoverColors = useMemo(
     () =>
       stars.map((character) => {
+        const gift = dedicationOf(character.id);
+        if (gift) return gift.color;
         const hue = IRIDESCENT_BASE_HUE[character.id];
         return hue === undefined
           ? TYPE_GLOW[character.type].color
@@ -192,7 +203,7 @@ export function MobileStarLabels({
       const position = positions.get(character.id)!;
       worldPoint.set(
         position[0],
-        position[1] - STAR_SIZE[character.type] - 1.2,
+        position[1] - labelDrops[index]!,
         position[2],
       );
       viewPoint.copy(worldPoint).applyMatrix4(camera.matrixWorldInverse);

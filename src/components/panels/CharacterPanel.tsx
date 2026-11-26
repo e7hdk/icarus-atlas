@@ -4,7 +4,7 @@ import { CitationText } from '@/components/ui/CitationText';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Relation, SkyCharacter, Source, SourceId } from '@/types/character';
-import { TypeBadge } from '@/components/ui/TypeBadge';
+import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { ProseShimmer } from '@/components/ui/ProseShimmer';
@@ -138,7 +138,7 @@ export function CharacterPanel({
             </p>
           </div>
           <div className="relative mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-            <TypeBadge type={character.type} />
+            <TypeBadge type={character.type} id={character.id} />
             {character.kinds?.map((kind) => (
               <KindBadge key={kind} kind={kind} primaryType={character.type} />
             ))}
@@ -146,6 +146,7 @@ export function CharacterPanel({
               {character.domains.join(' · ')}
             </span>
           </div>
+          <DedicationLine id={character.id} className="relative mt-1.5 text-center text-[14px]" />
           {(summary || (!prose && !failed)) && (
             <p className="relative mt-3 border-t border-star-olympian/15 pt-3 font-body text-[14px] leading-snug text-aether/85 line-clamp-2">
               {summary ? (
@@ -255,12 +256,13 @@ export function CharacterPanel({
             {character.romanName ? ` · Roman ${character.romanName}` : ''}
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-            <TypeBadge type={character.type} />
+            <TypeBadge type={character.type} id={character.id} />
             {character.kinds?.map((kind) => (
               <KindBadge key={kind} kind={kind} primaryType={character.type} />
             ))}
             <span className="font-body text-sm italic text-aether-muted">{character.domains.join(' · ')}</span>
           </div>
+          <DedicationLine id={character.id} className="mt-2 text-center" />
           {character.epithets && character.epithets.length > 0 && (
             <p className="mt-2 text-center font-body text-sm italic text-aether-faint">
               {character.epithets.join(' · ')}

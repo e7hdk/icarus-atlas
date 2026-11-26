@@ -16,7 +16,7 @@ import {
   cultureShelfAnchors,
 } from '@/components/culture/CultureShelves';
 import { CrumbBar } from '@/components/hud/CrumbBar';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 
 /** Every star is prerendered: the host serves the build's pages and renders
  *  nothing on a request (docs/HOSTING.md), so an unknown id is a 404. */
@@ -44,7 +44,7 @@ export default async function CharacterLegacyPage(props: { params: Promise<{ id:
   const onTheLoom = loom.figureWorks(id);
   const citiesById = new Map(cities.map((city) => [city.id, city]));
   const storyAppearances = storiesFeaturingCharacter(stories, character.id);
-  const glow = TYPE_GLOW[character.type].color;
+  const glow = glowColorOf(character.id, character.type);
 
   const codexRelations = relations.filter(
     (relation) => relation.from === character.id || relation.to === character.id,

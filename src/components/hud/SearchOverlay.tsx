@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import {
   searchCharacters,
@@ -249,7 +249,7 @@ function ResultRow({
   onTravel: () => void;
 }) {
   const { character, field, value, start, end } = hit;
-  const { color } = TYPE_GLOW[character.type];
+  const color = glowColorOf(character.id, character.type);
 
   return (
     <button
