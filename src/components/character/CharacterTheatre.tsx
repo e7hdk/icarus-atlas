@@ -4,7 +4,7 @@ import type { EarliestTeller } from '@/features/library/earliest';
 import { Link } from '@/components/ui/Link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Character, Relation, Source, SourceId } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { RING_LABELS, RING_ORDER, ringsFor, type RingKey } from '@/features/characters/categories';
 import { filterSourced, isVisibleUnderLens } from '@/lib/lens';
 import { useGalaxyStore } from '@/features/galaxy/store';
@@ -63,7 +63,7 @@ export function CharacterTheatre({
   const lens = useGalaxyStore((s) => s.lens);
   const [openCategories, setOpenCategories] = useState<Set<RingKey>>(new Set());
 
-  const glow = TYPE_GLOW[character.type].color;
+  const glow = glowColorOf(character.id, character.type);
   const byId = useMemo(() => new Map(characters.map((c) => [c.id, c])), [characters]);
   const rings = useMemo(() => ringsFor(character.id, relations, lens), [character.id, relations, lens]);
   const activeRings = RING_ORDER.filter((key) => rings[key].length > 0);
@@ -279,7 +279,7 @@ export function CharacterTheatre({
                       {shown.map((member, index) => {
                         const other = byId.get(member.id);
                         if (!other) return null;
-                        const color = TYPE_GLOW[other.type].color;
+                        const color = glowColorOf(other.id, other.type);
                         return (
                           <li key={`${key}-${member.id}-${index}`}>
                             <Link

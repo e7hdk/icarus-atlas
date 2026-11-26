@@ -3,7 +3,7 @@
 import { Link } from '@/components/ui/Link';
 import { useState } from 'react';
 import type { CharacterType } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 
 /** Link to a character codex page, tinted in the figure's galaxy type glow. */
 export function CharacterTypeLink({
@@ -18,7 +18,7 @@ export function CharacterTypeLink({
   className?: string;
 }) {
   const [hovered, setHovered] = useState(false);
-  const { color } = TYPE_GLOW[type];
+  const color = glowColorOf(id, type);
 
   return (
     <Link

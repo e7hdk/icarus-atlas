@@ -5,7 +5,7 @@ import { Link } from '@/components/ui/Link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useMemo } from 'react';
 import { GlassPanel } from '@/components/ui/GlassPanel';
-import { TypeBadge } from '@/components/ui/TypeBadge';
+import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { WorkCredit } from '@/components/art/WorkCredit';
 import { ArtworkImage } from '@/components/ui/ArtworkImage';
@@ -209,11 +209,12 @@ export function EphemerisCard() {
             </span>
           </h2>
           <div className="mt-2 flex flex-wrap items-center gap-2">
-            <TypeBadge type={payload.type} />
+            <TypeBadge type={payload.type} id={id ?? undefined} />
             {payload.kinds?.map((kind) => (
               <KindBadge key={kind} kind={kind} primaryType={payload.type} />
             ))}
           </div>
+          {id && <DedicationLine id={id} className="mt-1.5 text-[14px]" />}
           {pick.week && (
             <p className="mt-2.5 font-body text-[13px] text-aether-faint">
               <span aria-hidden className="text-nebula-soft">✦ </span>

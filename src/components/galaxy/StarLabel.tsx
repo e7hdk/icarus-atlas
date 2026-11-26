@@ -3,22 +3,12 @@
 import { useMemo } from 'react';
 import { Html } from '@react-three/drei';
 import * as THREE from 'three';
-import type { CharacterType, SkyCharacter } from '@/types/character';
+import type { SkyCharacter } from '@/types/character';
 import { TYPE_GLOW, IRIDESCENT_BASE_HUE } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
-
-/** Star sizes per type — must match SIZE in StarsDriver (label sits below the core). */
-const SIZE: Record<CharacterType, number> = {
-  primordial: 0.85,
-  titan: 0.78,
-  olympian: 0.95,
-  god: 0.8,
-  hero: 0.7,
-  mortal: 0.6,
-  nymph: 0.65,
-  creature: 0.75,
-};
+import { dedicationOf } from '@/features/galaxy/dedication';
+import { STAR_SIZE } from './starLook';
 
 const SHIMMER_SAT = 0.82;
 const SHIMMER_LIGHT = 0.62;
@@ -29,14 +19,18 @@ const SHIMMER_LIGHT = 0.62;
  *  phase; today they remain drei <Html> with the same hover/lens behaviour. */
 export function StarLabel({ character, position }: { character: SkyCharacter; position: Vec3 }) {
   const glow = TYPE_GLOW[character.type];
-  const size = SIZE[character.type];
-  const baseHue = IRIDESCENT_BASE_HUE[character.id];
+  const gift = dedicationOf(character.id);
+  // The label sits below the core, so it hangs under the star's drawn size.
+  const size = gift?.size ?? STAR_SIZE[character.type];
+  const baseHue = gift ? undefined : IRIDESCENT_BASE_HUE[character.id];
   const displayColor = useMemo(
     () =>
-      baseHue !== undefined
-        ? `#${new THREE.Color().setHSL(baseHue, SHIMMER_SAT, SHIMMER_LIGHT).getHexString()}`
-        : glow.color,
-    [baseHue, glow.color],
+      gift
+        ? gift.color
+        : baseHue !== undefined
+          ? `#${new THREE.Color().setHSL(baseHue, SHIMMER_SAT, SHIMMER_LIGHT).getHexString()}`
+          : glow.color,
+    [gift, baseHue, glow.color],
   );
 
   const hovered = useGalaxyStore((s) => s.hoveredId === character.id);

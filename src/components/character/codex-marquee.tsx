@@ -3,8 +3,8 @@
 import { Link } from '@/components/ui/Link';
 import { useState } from 'react';
 import type { Character } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
-import { TypeBadge } from '@/components/ui/TypeBadge';
+import { glowColorOf } from '@/features/galaxy/dedication';
+import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 
 /** Shared pieces of the character codex marquee — the gold programme card
@@ -48,7 +48,7 @@ export function Meander() {
 
 /** Identity block: presents line, the name in its type glow, badges, domains. */
 export function CodexIdentity({ character }: { character: Character }) {
-  const glow = TYPE_GLOW[character.type].color;
+  const glow = glowColorOf(character.id, character.type);
   return (
     <>
       <p className="text-center font-display text-[9.5px] tracking-[0.44em] text-aether-faint">
@@ -65,11 +65,12 @@ export function CodexIdentity({ character }: { character: Character }) {
         {character.romanName ? ` · Roman ${character.romanName}` : ''}
       </p>
       <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
-        <TypeBadge type={character.type} />
+        <TypeBadge type={character.type} id={character.id} />
         {character.kinds?.map((kind) => (
           <KindBadge key={kind} kind={kind} primaryType={character.type} />
         ))}
       </div>
+      <DedicationLine id={character.id} className="mt-2 text-center text-[16px]" />
       <p className="mt-2 text-center font-body text-[14.5px] italic text-aether-muted">
         {character.domains.join(' · ')}
       </p>

@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 import type { Relation, SkyCharacter } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { ProseShimmer } from '@/components/ui/ProseShimmer';
-import { TypeBadge } from '@/components/ui/TypeBadge';
+import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { filterRelations, pickSourced, isDisputed } from '@/lib/lens';
 import { bondsFor } from '@/features/characters/relations';
@@ -72,11 +72,12 @@ export function HoverCard({
           {character.greekName.replace(/^[^(]*\(/, '').replace(/\)$/, '')}
         </p>
         <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5">
-          <TypeBadge type={character.type} />
+          <TypeBadge type={character.type} id={character.id} />
           {character.kinds?.map((kind) => (
             <KindBadge key={kind} kind={kind} primaryType={character.type} />
           ))}
         </div>
+        <DedicationLine id={character.id} className="mt-2" />
         <p className="mt-2 font-body text-[13px] italic text-aether-muted">
           {character.domains.join(' · ')}
         </p>

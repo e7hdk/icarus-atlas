@@ -4,7 +4,8 @@ import { CrumbBar } from '@/components/hud/CrumbBar';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { loadAtlasData } from '@/features/characters/load';
 import { QUARRELS, claimReading, claimsInTime, findQuarrel, tellersOf, type ClaimPassage } from '@/features/library/quarrels';
-import { TYPE_GLOW, type Character } from '@/types/character';
+import { type Character } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 
 /** A quarrel of the Library (docs/LIBRARY_PLAN.md §7): its claims side by side in
  *  their tellers' order of composition, each under its passage in the original
@@ -40,7 +41,7 @@ function NoteText({ text, byId }: { text: string; byId: Map<string, Character> }
         const figure = byId.get(part);
         if (!figure) return part;
         return (
-          <Link key={index} href={`/character/${figure.id}`} className="hover:underline" style={{ color: TYPE_GLOW[figure.type].color }}>
+          <Link key={index} href={`/character/${figure.id}`} className="hover:underline" style={{ color: glowColorOf(figure.id, figure.type) }}>
             {figure.name}
           </Link>
         );
@@ -121,7 +122,7 @@ export default async function QuarrelPage({ params }: Params) {
         {figures.length > 0 && (
           <div className="mt-5 flex flex-wrap items-center gap-1.5">
             {figures.map((figure) => {
-              const { color } = TYPE_GLOW[figure.type];
+              const color = glowColorOf(figure.id, figure.type);
               return (
                 <Link
                   key={figure.id}

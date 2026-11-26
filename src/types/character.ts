@@ -273,7 +273,9 @@ export const TYPE_GLOW: Record<CharacterType, { color: string; pulse: 'slow' | '
  *  wraps 360°→0° with no seam — and the nine are spread evenly across the rainbow,
  *  so at any instant the Muse cluster shimmers in every colour at once. This is the
  *  "iridescent" tag; the renderer (CharacterStar) drives the animation.
- *  IRIDESCENT_BASE_HUE maps each Muse id to its starting hue in [0,1). */
+ *  IRIDESCENT_BASE_HUE maps each Muse id to its starting hue in [0,1).
+ *  A dedicated star (src/features/galaxy/dedication.ts) leaves the rainbow
+ *  for its own colours; today that is Thalia. */
 export const MUSE_IDS = [
   'calliope',
   'clio',

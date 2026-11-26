@@ -10,7 +10,7 @@ import { marginBase } from '@/features/library/margin-paths';
 import { scopeOf, type UnitMargin } from '@/features/library/margins';
 import { unitHref, workHref } from '@/features/library/links';
 import type { ProseSegment } from '@/features/linking/parse-prose';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { OTHER_LANGUAGES, isOwnEdition, type LibraryBlock, type LibraryUnit, type LibraryWork, type OtherLanguage, type ReaderLanguage, type ReaderEdition } from '@/types/library';
 
 /** One reading page of the Library (docs/LIBRARY_PLAN.md §6): a book, or a whole
@@ -45,7 +45,7 @@ function Paragraph({ segments, next }: { segments: ProseSegment[]; next: boolean
     <p className={next ? 'lib-next' : undefined}>
       {segments.map((segment, index) =>
         segment.kind === 'link' ? (
-          <a key={index} href={`/character/${segment.id}`} className="lib-name" style={{ color: TYPE_GLOW[segment.type].color }}>
+          <a key={index} href={`/character/${segment.id}`} className="lib-name" style={{ color: glowColorOf(segment.id, segment.type) }}>
             {segment.text}
           </a>
         ) : (

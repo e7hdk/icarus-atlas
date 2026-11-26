@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import type { Character, Relation } from '@/types/character';
-import { TYPE_GLOW } from '@/types/character';
+import { glowColorOf } from '@/features/galaxy/dedication';
 import { CodexIdentity, CodexRegisters, MarqueeCard, MarqueeHeading, Meander } from './codex-marquee';
 import { CodexSeal } from './CodexSeal';
 
@@ -32,7 +32,7 @@ export function CharacterCodexPanel({
   residences: { city: string; label: string }[];
   appearances: { id: string; title: string }[];
 }) {
-  const glow = TYPE_GLOW[character.type].color;
+  const glow = glowColorOf(character.id, character.type);
   const [active, setActive] = useState<string | null>(contents[0]?.id ?? null);
 
   /* The index follows the reader: the stage section under the eyes glows
