@@ -14,6 +14,17 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.9.1',
+    codename: 'The Wide Cosmos',
+    date: '2026-11-27',
+    lines: [
+      'The stars stand further apart. The sky now opens at the widest spacing it has had, two and a half times the old one, and the setting in the atlas’s panel runs that far; drawn in again, it is the sky as it was.',
+      'The firmament grew with them. The sphere of the constellations, and how far a traveller may draw back from it, are measured by the spread of the stars, so the galaxy still hangs inside its sky and the backdrop closes behind both.',
+      'The Greatest Muse burns three times as large, and does not grow small as the sky widens round her: from the rim of the galaxy hers is the light the eye finds first. Flown to, she is framed by her ring, the camera standing as far off as it takes to hold the whole of it.',
+      'First, Chaos is still read in the sky it was composed in, and so is what lies behind the door in the star.',
+    ],
+  },
+  {
     version: '0.9.0',
     codename: 'The Door in the Star',
     date: '2026-11-27',

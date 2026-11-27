@@ -10,12 +10,15 @@ import { useGalaxyStore } from './store';
 /** Where every star stands, scaled by the spacing setting: the baked layout when
  *  its signature still matches the data, else the ~5 s runtime solve. 'compact'
  *  remaps generations to start at zero, for the small city skies, which are never
- *  baked. Shared by the galaxy and the readings of the sky. */
+ *  baked. Shared by the galaxy and the readings of the sky; a reading passes the
+ *  `spacing` it was composed at (features/galaxy/spacing.ts) and the setting
+ *  does not move it. */
 export function useGalaxyPositions(
   characters: SkyCharacter[],
   relations: Relation[],
   bakedLayout: BakedLayout | null,
   layout: 'galaxy' | 'compact' = 'galaxy',
+  spacing?: number,
 ): Map<string, Vec3> {
   const positions = useMemo(() => {
     if (layout === 'galaxy' && bakedLayout && bakedLayout.signature === layoutSignature(characters, relations)) {
@@ -25,7 +28,8 @@ export function useGalaxyPositions(
     }
     return computePositions(characters, relations, { compact: layout === 'compact' });
   }, [characters, relations, layout, bakedLayout]);
-  const spacingScale = useGalaxyStore((s) => s.spacingScale);
+  const setting = useGalaxyStore((s) => s.spacingScale);
+  const spacingScale = spacing ?? setting;
   return useMemo(() => {
     if (spacingScale === 1.0) return positions;
     const scaled = new Map<string, Vec3>();

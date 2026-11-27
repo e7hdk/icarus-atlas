@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import type { LensId, Source } from '@/types/character';
 import { GlassPanel } from '@/components/ui/GlassPanel';
+import { MAX_SPACING, MIN_SPACING } from '@/features/galaxy/spacing';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useLandsStore } from '@/features/geo/lands-store';
 import { MAP_LAYER_IDS, MAP_LAYER_LABELS } from '@/features/geo/map-layers';
@@ -161,8 +162,8 @@ export function SettingsPanel({ sources, starCount }: { sources: Source[]; starC
           <input
             aria-label="Star spacing"
             type="range"
-            min="0.5"
-            max="10"
+            min={MIN_SPACING}
+            max={MAX_SPACING}
             step="0.1"
             value={spacingScale}
             onChange={(event) => setSpacingScale(Number(event.target.value))}

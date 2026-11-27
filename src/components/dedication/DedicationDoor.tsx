@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState, type RefObject } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from 'react';
 import { useRouter } from 'next/navigation';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
@@ -19,6 +19,7 @@ import { canUnseal, exportKey, importKey, openSealed, type Sealed } from '@/feat
 import { resetStage, stage } from '@/features/dedication/stage';
 import { useDoorStore } from '@/features/dedication/store';
 import { dedicationOf, type Dedication, type DedicationDoor as DoorConfig } from '@/features/galaxy/dedication';
+import { REFERENCE_SPACING } from '@/features/galaxy/spacing';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useGalaxyPositions } from '@/features/galaxy/usePositions';
 import { DoorLock } from './DoorLock';
@@ -85,7 +86,10 @@ function StageVeil() {
 }
 
 function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: string; dedication: Dedication; door: DoorConfig }) {
-  const positions = useGalaxyPositions(sky.characters, sky.relations, sky.bakedLayout);
+  // The gift is performed in the sky it was scored in: the stars as far apart as
+  // they then stood, round the star at the size it then had.
+  const positions = useGalaxyPositions(sky.characters, sky.relations, sky.bakedLayout, 'galaxy', REFERENCE_SPACING);
+  const reading = useMemo(() => ({ aim: CENTRE, labels: false, sizes: { [starId]: door.stageSize } }), [starId, door.stageSize]);
   const router = useRouter();
   const [phase, setPhase] = useState<Phase>('arriving');
   const [gift, setGift] = useState<GiftScore | null>(null);
@@ -291,7 +295,7 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
   return (
     <div className="fixed inset-0 bg-cosmos-deep">
       <div className={`pointer-events-none fixed inset-0 transition-opacity duration-[1800ms] ease-out ${risen ? 'opacity-100' : 'opacity-0'}`} aria-hidden>
-        <GalaxyCanvas characters={sky.characters} relations={sky.relations} positions={positions} reading={{ aim: CENTRE, labels: false }}>
+        <GalaxyCanvas characters={sky.characters} relations={sky.relations} positions={positions} spacing={REFERENCE_SPACING} reading={reading}>
           <StageVeil />
           <StageDriver show={show} />
           <StagePieces pieces={pieces} positions={positions} dedication={dedication} />

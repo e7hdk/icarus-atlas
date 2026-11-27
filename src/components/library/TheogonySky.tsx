@@ -9,6 +9,7 @@ import { discRadiusOf } from '@/components/galaxy/discRadius';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { useAtlasFile } from '@/features/atlas/useAtlasFile';
 import type { Vec3 } from '@/features/galaxy/layout';
+import { REFERENCE_SPACING } from '@/features/galaxy/spacing';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useGalaxyPositions } from '@/features/galaxy/usePositions';
 import { useReadingStore, type ReadingLens } from '@/features/library/reading-store';
@@ -41,7 +42,8 @@ const centroid = (points: Vec3[]): Vec3 => {
 };
 
 function Reading({ sky, beats }: { sky: GalaxySky; beats: SkyBeat[] }) {
-  const positions = useGalaxyPositions(sky.characters, sky.relations, sky.bakedLayout);
+  // The reading's flights are written in the distances of the sky as composed.
+  const positions = useGalaxyPositions(sky.characters, sky.relations, sky.bakedLayout, 'galaxy', REFERENCE_SPACING);
   const disc = useMemo(() => discRadiusOf(positions), [positions]);
   const isMobile = useIsMobile();
   const router = useRouter();
@@ -149,7 +151,7 @@ function Reading({ sky, beats }: { sky: GalaxySky; beats: SkyBeat[] }) {
   return (
     <>
       <div className="pointer-events-none fixed inset-0 z-0" aria-hidden>
-        <GalaxyCanvas characters={sky.characters} relations={sky.relations} positions={positions} reading={{ aim: isMobile ? PHONE_AIM : WIDE_AIM }} />
+        <GalaxyCanvas characters={sky.characters} relations={sky.relations} positions={positions} spacing={REFERENCE_SPACING} reading={{ aim: isMobile ? PHONE_AIM : WIDE_AIM }} />
       </div>
       <div className="theogony-thread" aria-hidden>
         <div className="theogony-thread-fill" style={{ height: `${(reached / THEOGONY_LINES) * 100}%` }} />

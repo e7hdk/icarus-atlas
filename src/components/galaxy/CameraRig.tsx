@@ -4,10 +4,14 @@ import { useEffect, useMemo, useRef, type ComponentRef } from 'react';
 import { CameraControls, CameraControlsImpl } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
+import { dedicatedSize, dedicationOf } from '@/features/galaxy/dedication';
 import type { Vec3 } from '@/features/galaxy/layout';
+import { skyReach } from '@/features/galaxy/spacing';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { MOBILE_TAP_SLOP } from '@/lib/useIsMobile';
 import { discRadiusOf } from './discRadius';
+import { PSF_RING_RADIUS } from './shaders/psfStar';
+import { FOCUS_SPREAD, depthForRadius, pixelsPerUnit } from './starLook';
 
 export const HOME_POSITION: Vec3 = [18, 43, 88];
 export const HOME_TARGET: Vec3 = [0, 1, 0];
@@ -18,6 +22,17 @@ export const HOME_LENGTH = Math.hypot(...HOME_POSITION);
  *  stars packed; framing the real extent keeps them apart on any layout. */
 export const OVERVIEW_FIT = 2.1;
 const TRAVEL_DISTANCE = 13;
+/** The camera stands this much of its travel above the star it flies to. */
+const TRAVEL_RISE = 0.45;
+/** A selected star's ring keeps inside the view: at most these parts of the
+ *  view's height and width. The atlas's panel takes a side of a wide screen;
+ *  a phone's sheet takes its foot and leaves the ring the whole width. Only a
+ *  dedicated star is drawn large enough to reach these: the camera then
+ *  stands further off than TRAVEL_DISTANCE. */
+const RING_ROOM = { height: 0.36, width: 0.24 };
+const PHONE_RING_ROOM = { height: 0.24, width: 0.44 };
+/** How far the camera may draw back from its target, in the sky as composed. */
+const MAX_DISTANCE = 6000;
 /** Shifts the aim point right so the star sits left of the story panel. */
 const PANEL_OFFSET = 2.6;
 /** On a phone the selected star sits above the bottom sheet, in the middle. */
@@ -46,11 +61,14 @@ export function aimed(camera: THREE.Vector3, target: THREE.Vector3, aim: CameraA
 export function CameraRig({
   isMobile,
   positions,
+  spacing,
   intro = false,
   aim = null,
 }: {
   isMobile: boolean;
   positions: Map<string, Vec3>;
+  /** How far `positions` are spread (features/galaxy/spacing.ts). */
+  spacing: number;
   /** City skies: drift in from a high vantage on first mount. */
   intro?: boolean;
   /** A reading's framing; null keeps the panel offset of the atlas. */
@@ -65,8 +83,10 @@ export function CameraRig({
   const skyFocus = useGalaxyStore((s) => s.skyFocus);
   const isDiving = useGalaxyStore((s) => s.isDiving);
   const shot = useGalaxyStore((s) => s.shot);
-  const spacingScale = useGalaxyStore((s) => s.spacingScale);
   const discRadius = useMemo(() => discRadiusOf(positions), [positions]);
+  // The view as it is when a flight begins: read, never subscribed to, so a
+  // resized window does not fly the camera again.
+  const canvasNow = useThree((state) => state.get);
 
   useEffect(() => {
     const rig = controls.current;
@@ -150,7 +170,7 @@ export function CameraRig({
     const rig = controls.current;
     if (!rig) return;
 
-    const overviewScale = spacingScale * 1.65;
+    const overviewScale = spacing * 1.65;
     const homeCamera: Vec3 = [
       HOME_POSITION[0] * overviewScale,
       HOME_POSITION[1] * overviewScale,
@@ -168,7 +188,7 @@ export function CameraRig({
       introDone.current = true;
     }, 80);
     return () => window.clearTimeout(timer);
-  }, [intro, spacingScale]);
+  }, [intro, spacing]);
 
   // A performance directs the camera itself (src/features/dedication): the rig
   // follows its shot, at the shot's own pace, and gives the camera back after.
@@ -210,7 +230,20 @@ export function CameraRig({
       }
       // A sky-star is drawn far larger than a galaxy star, so it is framed from
       // proportionally further out — otherwise the flight ends inside it.
-      const travel = focusDistance ?? TRAVEL_DISTANCE;
+      let travel = focusDistance ?? TRAVEL_DISTANCE;
+      // So is a dedicated star: the camera stands where its ring fits the view.
+      const gift = focusPoint ? undefined : dedicationOf(selectedId);
+      if (gift) {
+        const { size, viewport, camera: eye } = canvasNow();
+        const room = isMobile ? PHONE_RING_ROOM : RING_ROOM;
+        const ring = Math.min(size.height * room.height, size.width * room.width) * viewport.dpr;
+        const standOff = depthForRadius(
+          dedicatedSize(gift, skyReach(spacing)),
+          ring / (PSF_RING_RADIUS * (1 + FOCUS_SPREAD)),
+          pixelsPerUnit(size.height * viewport.dpr, eye.projectionMatrix.elements[5]),
+        );
+        travel = Math.max(travel, standOff / Math.hypot(1, TRAVEL_RISE));
+      }
       rig.minDistance = Math.max(4, travel * 0.3);
 
       const outward = new THREE.Vector3(x, 0, z);
@@ -218,7 +251,7 @@ export function CameraRig({
       outward.normalize();
       const camera = new THREE.Vector3(
         x + outward.x * travel,
-        y + travel * 0.45,
+        y + travel * TRAVEL_RISE,
         z + outward.z * travel,
       );
       const forward = new THREE.Vector3(x, y, z).sub(camera).normalize();
@@ -226,7 +259,10 @@ export function CameraRig({
       // A phone's panel is a sheet at the foot of the screen, not a column at
       // its side: the star keeps the middle, raised clear of the sheet.
       const framing = aim ?? (isMobile ? PHONE_SHEET_AIM : null);
-      const target = framing ? aimed(camera, new THREE.Vector3(x, y, z), framing) : new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
+      // The panel's offset is a part of the stand-off, so a star framed from
+      // further out keeps its place on the screen.
+      const beside = gift ? PANEL_OFFSET * (travel / TRAVEL_DISTANCE) : PANEL_OFFSET;
+      const target = framing ? aimed(camera, new THREE.Vector3(x, y, z), framing) : new THREE.Vector3(x, y, z).addScaledVector(right, beside);
       rig.setLookAt(camera.x, camera.y, camera.z, target.x, target.y, target.z, true);
     } else if (skyFocus) {
       // Out to the constellation itself: the sky is read from beside it.
@@ -237,15 +273,15 @@ export function CameraRig({
     } else {
       // City skies keep their spacing-based frame; the galaxy frames its disc.
       const overviewScale = intro
-        ? spacingScale * 1.65
+        ? spacing * 1.65
         : discRadius > 0
           ? (OVERVIEW_FIT * discRadius) / HOME_LENGTH
-          : spacingScale * 2.5;
+          : spacing * 2.5;
       const home = new THREE.Vector3(...HOME_POSITION).multiplyScalar(overviewScale);
       const target = aim ? aimed(home, new THREE.Vector3(...HOME_TARGET), aim) : new THREE.Vector3(...HOME_TARGET);
       rig.setLookAt(home.x, home.y, home.z, target.x, target.y, target.z, true);
     }
-  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius, aim, shot, isMobile]);
+  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacing, intro, discRadius, aim, shot, isMobile, canvasNow]);
 
   return (
     <CameraControls
@@ -253,7 +289,7 @@ export function CameraRig({
       makeDefault
       smoothTime={REST_SMOOTH_TIME}
       minDistance={4}
-      maxDistance={6000}
+      maxDistance={MAX_DISTANCE * skyReach(spacing)}
       dollySpeed={0.6}
     />
   );

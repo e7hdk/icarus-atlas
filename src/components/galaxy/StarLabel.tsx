@@ -8,7 +8,7 @@ import { TYPE_GLOW, IRIDESCENT_BASE_HUE } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { dedicationOf } from '@/features/galaxy/dedication';
-import { STAR_SIZE } from './starLook';
+import { labelDrop } from './starLook';
 
 const SHIMMER_SAT = 0.82;
 const SHIMMER_LIGHT = 0.62;
@@ -17,11 +17,18 @@ const SHIMMER_LIGHT = 0.62;
  *  CharacterStar so label behaviour is unchanged while the star visuals move to
  *  GPU instancing (StarsDriver). Optimising these to GPU SDF text is a later
  *  phase; today they remain drei <Html> with the same hover/lens behaviour. */
-export function StarLabel({ character, position }: { character: SkyCharacter; position: Vec3 }) {
+export function StarLabel({
+  character,
+  position,
+  size,
+}: {
+  character: SkyCharacter;
+  position: Vec3;
+  /** The world radius the star is drawn at: the label hangs under it. */
+  size: number;
+}) {
   const glow = TYPE_GLOW[character.type];
   const gift = dedicationOf(character.id);
-  // The label sits below the core, so it hangs under the star's drawn size.
-  const size = gift?.size ?? STAR_SIZE[character.type];
   const baseHue = gift ? undefined : IRIDESCENT_BASE_HUE[character.id];
   const displayColor = useMemo(
     () =>
@@ -42,7 +49,7 @@ export function StarLabel({ character, position }: { character: SkyCharacter; po
 
   return (
     <Html
-      position={[position[0], position[1] - size - 1.2, position[2]]}
+      position={[position[0], position[1] - labelDrop(size), position[2]]}
       center
       distanceFactor={28}
       className="pointer-events-none select-none"

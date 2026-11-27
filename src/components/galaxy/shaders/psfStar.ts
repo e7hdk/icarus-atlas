@@ -18,12 +18,22 @@ import { DISC_VEIL_GLSL } from './discVeil';
  *  shrinking below it, which is what keeps distant stars from shimmering.
  *  Output is linear HDR straight into the composer (additive, alpha unused). */
 
+/** The curve's numbers that the CPU reads too (starLook.ts): where a star stops
+ *  growing with perspective, how fast it grows past that, and how far out, in
+ *  units of r, the selection ring is drawn. */
+export const PSF_KNEE_PX = 6;
+export const PSF_GROWTH = 0.62;
+export const PSF_RING_RADIUS = 3.4;
+
+/** A number as a GLSL float literal. */
+const glslFloat = (value: number) => (Number.isInteger(value) ? value.toFixed(1) : String(value));
+
 /** The sizing curve on its own, for anything that must know how large a star
  *  is drawn — the sky's threads stop short of their stars by it. Vertex only:
  *  it reads the projection. */
 export const PSF_RADIUS_GLSL = /* glsl */ `
-const float KNEE_PX = 6.0;       // below: r tracks perspective
-const float GROWTH = 0.62;       // above: r grows as a power of it
+const float KNEE_PX = ${glslFloat(PSF_KNEE_PX)};       // below: r tracks perspective
+const float GROWTH = ${glslFloat(PSF_GROWTH)};       // above: r grows as a power of it
 const float FLOOR_CSS_PX = 1.15; // r never drops below this
 const float FADE_POWER = 0.75;   // how fast a star dims once it sits on the floor
 const float MIN_FADE = 0.28;     // the far side of the disc still reads
@@ -107,7 +117,7 @@ const float HALO = 2.4;
 const float AURA = 0.22;
 const float SPIKE = 1.1;
 const float RING = 1.6;
-const float RING_RADIUS = 3.4;
+const float RING_RADIUS = ${glslFloat(PSF_RING_RADIUS)};
 const float SPIKE_SATURATION_PX = 40.0;
 // One telescope for the whole sky: every spike shares this 12 degree tilt.
 const vec2 SPIKE_AXIS = vec2(0.9781476, 0.2079117);
