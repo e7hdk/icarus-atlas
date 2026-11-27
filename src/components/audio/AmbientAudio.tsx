@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { useEphemerisStore } from '@/features/spotlight/store';
 import { useVoyageAudioStore } from '@/features/voyage/store';
+import { useDoorStore } from '@/features/dedication/store';
 
 /** The looping ambient score, and the Proem's own theme. While the Proem
  *  plays (docs/EPHEMERIS_PLAN.md §6) the ambient bed crossfades into the
@@ -40,7 +41,10 @@ export function AmbientAudio() {
   }, [proemActive]);
   // While the Odyssey voyage plays its own mood stems, the atlas bed ducks out
   // (docs/NOSTOS_PLAN.md §8) and hands back when the reader leaves the route.
-  const voyageActive = useVoyageAudioStore((s) => s.active);
+  // So does a dedicated star's door (src/components/dedication): a stage with
+  // music of its own, and before that music a silence of its own.
+  const stageOpen = useDoorStore((s) => s.curtain);
+  const voyageActive = useVoyageAudioStore((s) => s.active) || stageOpen;
   const voyageActiveRef = useRef(voyageActive);
   useEffect(() => {
     voyageActiveRef.current = voyageActive;

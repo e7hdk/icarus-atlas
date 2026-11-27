@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, type ReactNode } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { PerformanceMonitor } from '@react-three/drei';
 import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing';
@@ -28,6 +28,7 @@ export function GalaxyCanvas({
   cameraIntro = false,
   ephemerisBeacon = false,
   reading = null,
+  children,
 }: {
   characters: SkyCharacter[];
   relations: Relation[];
@@ -35,8 +36,11 @@ export function GalaxyCanvas({
   cameraIntro?: boolean;
   /** Mark the star of the day — the full galaxy only, never the city skies. */
   ephemerisBeacon?: boolean;
-  /** A reading of the sky (First, Chaos): looked at, not picked, framed by `aim`. */
-  reading?: { aim: CameraAim } | null;
+  /** A reading of the sky (First, Chaos): looked at, not picked, framed by `aim`.
+   *  `labels: false` leaves the stars unnamed, for a stage that names them itself. */
+  reading?: { aim: CameraAim; labels?: boolean } | null;
+  /** What a stage draws in the sky besides its stars (src/features/dedication). */
+  children?: ReactNode;
 }) {
   const select = useGalaxyStore((s) => s.select);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
@@ -65,8 +69,14 @@ export function GalaxyCanvas({
           <StarField />
           <Nebula />
         </group>
-        <StarsDriver characters={characters} isMobile={isMobile} positions={positions} pickable={!reading} />
-        {isMobile && (
+        <StarsDriver
+          characters={characters}
+          isMobile={isMobile}
+          positions={positions}
+          pickable={!reading}
+          labels={reading?.labels ?? true}
+        />
+        {isMobile && (reading?.labels ?? true) && (
           <MobileStarLabels
             canvasRef={mobileLabelCanvas}
             characters={characters}
@@ -74,6 +84,7 @@ export function GalaxyCanvas({
           />
         )}
         <RelationLines relations={relations} positions={positions} />
+        {children}
         {ephemerisBeacon && <EphemerisBeacon positions={positions} />}
         {ephemerisBeacon && <WeekConstellation isMobile={isMobile} positions={positions} />}
         <CameraRig positions={positions} intro={cameraIntro} isMobile={isMobile} aim={reading?.aim ?? null} />

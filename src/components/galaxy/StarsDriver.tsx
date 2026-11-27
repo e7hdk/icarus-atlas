@@ -12,6 +12,7 @@ import { useElapsedRef } from './useElapsedRef';
 import { StarLabel } from './StarLabel';
 import { STAR_SIZE, STAR_PULSE, STAR_RADIANCE, STAR_SPIKE } from './starLook';
 import { dedicationOf, DEDICATION_DRIFT } from '@/features/galaxy/dedication';
+import { stage } from '@/features/dedication/stage';
 
 const SHIMMER_SPEED = 0.06;
 const SHIMMER_SAT = 0.82;
@@ -41,12 +42,15 @@ export function StarsDriver({
   isMobile,
   positions,
   pickable = true,
+  labels = true,
 }: {
   characters: SkyCharacter[];
   isMobile: boolean;
   positions: Map<string, Vec3>;
   /** A reading's sky is looked at, not picked: a click selects nothing. */
   pickable?: boolean;
+  /** A stage names its stars in its own words: no labels under them. */
+  labels?: boolean;
 }) {
   const starRef = useRef<THREE.InstancedMesh>(null);
   const hitRef = useRef<THREE.InstancedMesh>(null);
@@ -311,6 +315,8 @@ export function StarsDriver({
     }
     const reading = st.lit !== null;
     const rise = still ? 1 : 1 - Math.exp(-delta / LIT_TAU);
+    // A performance sets how dark the unlit stars sink (src/features/dedication).
+    const unlit = stage.active ? stage.floor : UNLIT;
 
     // Each role's pulse breathes LIGHT: radiance swings and the spread follows a
     // little — a variable star, not a ball changing size. Focus (hover or
@@ -328,7 +334,7 @@ export function StarsDriver({
       if (r < 1e-3) r = 0;
       ring[i] = r;
       const att = attested[i];
-      const target = reading ? (litMask[i] ? 1 : UNLIT) : 1;
+      const target = reading ? (litMask[i] ? 1 : unlit) : 1;
       let glow = litGlow[i] + (target - litGlow[i]) * rise;
       if (Math.abs(target - glow) < 1e-3) glow = target;
       litGlow[i] = glow;
@@ -348,6 +354,17 @@ export function StarsDriver({
         color[i * 3] = shimmer.r;
         color[i * 3 + 1] = shimmer.g;
         color[i * 3 + 2] = shimmer.b;
+      }
+    }
+
+    // A performance may raise or lower single stars: their light by the gain,
+    // their spread by a third of it.
+    if (stage.active && stage.gains.size > 0) {
+      for (const [id, gain] of stage.gains) {
+        const i = currentData.idToIndex.get(id);
+        if (i === undefined) continue;
+        dyn[i * 4] *= Math.max(0, 1 + (gain - 1) * 0.34);
+        dyn[i * 4 + 1] *= gain;
       }
     }
 
@@ -417,6 +434,7 @@ export function StarsDriver({
         renderOrder={5}
       />
       {!isMobile &&
+        labels &&
         stars.map((c) => (
           <StarLabel key={c.id} character={c} position={positions.get(c.id)!} />
         ))}

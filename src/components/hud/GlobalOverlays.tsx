@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { DEDICATIONS } from '@/features/galaxy/dedication';
 import type { Source } from '@/types/character';
 import { AtlasOverlays } from './AtlasOverlays';
 import { useAtlasSearchHotkey } from './useAtlasSearchHotkey';
@@ -12,10 +13,12 @@ import { useAtlasSearchHotkey } from './useAtlasSearchHotkey';
  *  themselves, which toggles — hence the strict either/or here). So does the
  *  Art door, except its plain list page. */
 const HAS_OWN_OVERLAYS = [/^\/$/, /^\/areas/, /^\/stories$/, /^\/city\/[^/]+\/sky/, /^\/art(\/(?!list$)[^/]+)?$/];
+/** A dedicated star's door is a stage: no search opens over it. */
+const STAGES = Object.values(DEDICATIONS).flatMap((dedication) => dedication.door?.route ?? []);
 
 export function GlobalOverlays({ sources, starCount }: { sources: Source[]; starCount: number }) {
   const pathname = usePathname();
-  if (HAS_OWN_OVERLAYS.some((pattern) => pattern.test(pathname))) return null;
+  if (HAS_OWN_OVERLAYS.some((pattern) => pattern.test(pathname)) || STAGES.includes(pathname)) return null;
   return <MountedOverlays sources={sources} starCount={starCount} />;
 }
 

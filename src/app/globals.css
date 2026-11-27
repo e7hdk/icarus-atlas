@@ -520,3 +520,279 @@ html.voyage-hide-scrollbar::-webkit-scrollbar {
 .quarrel-index[data-teller] .quarrel-count {
   display: none;
 }
+
+/* The door of a dedicated star (src/components/dedication): the slots its
+   question is answered in, the letterbox of the performance and its lines of
+   light, and the leaf the poem stays on. Rose and gold are the dedication's own
+   colours (src/features/galaxy/dedication.ts), handed in where they matter. */
+.gift-slot {
+  border: 0;
+  border-bottom: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: 0;
+  background: transparent;
+  padding: 0 0 0.3rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  color: var(--color-aether);
+  outline: none;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+.gift-slot::placeholder {
+  color: rgb(255 255 255 / 0.3);
+  letter-spacing: 0.16em;
+}
+.gift-slot:focus {
+  border-bottom-color: #f8b89c;
+  box-shadow: 0 12px 18px -14px rgb(248 184 156 / 0.7);
+}
+.gift-slot:disabled {
+  opacity: 1;
+  -webkit-text-fill-color: currentColor;
+}
+@keyframes gift-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes gift-veil-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes gift-refuse {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-7px); }
+  45% { transform: translateX(6px); }
+  70% { transform: translateX(-3px); }
+}
+
+.gift-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: max(6.5vh, 44px);
+  background: #05020f;
+  animation: proem-bar-in 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.gift-bar-top {
+  top: 0;
+  transform-origin: top;
+}
+.gift-bar-bottom {
+  bottom: 0;
+  height: calc(max(6.5vh, 44px) + env(safe-area-inset-bottom));
+  transform-origin: bottom;
+}
+.gift-thread {
+  position: absolute;
+  left: 8vw;
+  right: 8vw;
+  top: calc(max(6.5vh, 44px) / 2);
+  height: 1px;
+  background: rgb(255 255 255 / 0.12);
+}
+.gift-thread-fill {
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: 0 0 8px rgb(247 200 115 / 0.6);
+}
+.gift-thread-tick {
+  position: absolute;
+  top: -3px;
+  width: 1px;
+  height: 7px;
+  background: rgb(255 255 255 / 0.26);
+}
+.gift-hint,
+.gift-held {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-aether-faint);
+  pointer-events: none;
+  transition: opacity 700ms ease;
+}
+.gift-hint {
+  top: calc(max(6.5vh, 44px) / 2 + 9px);
+}
+.gift-held {
+  bottom: calc(max(6.5vh, 44px) + env(safe-area-inset-bottom) + 14px);
+  color: var(--color-aether-muted);
+}
+
+/* The lines: the one now spoken at the foot, the one before it risen above. */
+.gift-lines {
+  position: absolute;
+  left: 50%;
+  bottom: calc(max(6.5vh, 44px) + env(safe-area-inset-bottom) + 9vh);
+  width: min(90vw, 47rem);
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+}
+.gift-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(21px, 2.15vw, 33px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.32;
+  color: var(--color-aether);
+  text-shadow: 0 2px 22px rgb(5 2 15 / 0.95), 0 0 8px rgb(5 2 15 / 0.85);
+  text-wrap: balance;
+  transform-origin: 50% 100%;
+  transition: transform 1000ms cubic-bezier(0.2, 0.7, 0.2, 1), opacity 1000ms ease, filter 1000ms ease;
+}
+.gift-line[data-age='1'] {
+  opacity: 0.36;
+  transform: translateY(calc(-1 * var(--now, 1.4em) - 0.55em)) scale(0.93);
+}
+.gift-line[data-age='2'] {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(calc(-1 * var(--now, 1.4em) - 2.4em)) scale(0.88);
+}
+.gift-word {
+  display: inline-block;
+  animation: gift-word 1200ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i) * var(--step, 0.12s));
+}
+@keyframes gift-word {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(0.3em);
+    text-shadow: 0 0 26px rgb(247 200 115 / 0.95), 0 0 6px rgb(249 168 196 / 0.9);
+  }
+  55% {
+    opacity: 1;
+    filter: blur(0);
+    text-shadow: 0 0 18px rgb(247 200 115 / 0.75), 0 2px 22px rgb(5 2 15 / 0.95);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}
+[data-held] .gift-word {
+  animation-play-state: paused;
+}
+.gift-name {
+  text-shadow: 0 0 16px color-mix(in srgb, var(--glow, #f7c873) 70%, transparent), 0 2px 18px rgb(5 2 15 / 0.9);
+}
+.gift-name-clip,
+.gift-name-muses {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* its own box: the leaf's hanging indent is not for it */
+  text-indent: 0;
+  text-shadow: none;
+}
+.gift-name-clip {
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--glow, #f7c873) 65%, transparent));
+}
+/* The Muses' name turns through the spectrum, as their stars do. */
+.gift-name-muses {
+  background-image: linear-gradient(90deg, #f472b6, #fcd34d, #4ade80, #60a5fa, #c084fc, #f472b6);
+  background-size: 200% 100%;
+  filter: drop-shadow(0 0 9px rgb(192 132 252 / 0.45));
+  animation: gift-spectrum 7s linear infinite;
+}
+@keyframes gift-spectrum {
+  from { background-position: 0% 0; }
+  to { background-position: 200% 0; }
+}
+
+.gift-leaf {
+  position: relative;
+  margin: 9vh auto 12vh;
+  width: min(92vw, 41rem);
+  padding: clamp(2.2rem, 6vw, 3.6rem) clamp(1.3rem, 6vw, 3.8rem) clamp(2.2rem, 5vw, 3.2rem);
+  border: 1px solid color-mix(in srgb, var(--leaf-to) 34%, transparent);
+  background: linear-gradient(180deg, rgb(9 5 28 / 0.95), rgb(5 2 18 / 0.97));
+  box-shadow: 0 30px 90px rgb(5 2 15 / 0.85), 0 0 60px color-mix(in srgb, var(--leaf-from) 10%, transparent);
+}
+.gift-leaf::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid color-mix(in srgb, var(--leaf-to) 16%, transparent);
+  pointer-events: none;
+}
+.gift-poem {
+  margin: 2.6rem 0 0;
+  padding: 0 0 0 2.3rem;
+  list-style: none;
+  font-family: var(--font-body);
+  font-size: clamp(17.5px, 2.3vw, 20.5px);
+  line-height: 1.72;
+  color: rgb(241 245 249 / 0.94);
+}
+/* a line that wraps hangs under its own beginning */
+.gift-poem li {
+  position: relative;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+.gift-poem li[data-n]::before {
+  content: attr(data-n);
+  position: absolute;
+  left: -2.3rem;
+  top: 0.7em;
+  width: 1.5rem;
+  text-align: right;
+  text-indent: 0;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  color: color-mix(in srgb, var(--leaf-to) 62%, transparent);
+}
+.gift-signature {
+  margin: 2.2rem 0 0;
+  text-align: right;
+  font-family: var(--font-body);
+  font-size: 19px;
+  font-style: italic;
+  color: rgb(241 245 249 / 0.86);
+}
+@media (prefers-reduced-motion: reduce) {
+  .gift-word,
+  .gift-bar,
+  .gift-name-muses {
+    animation: none;
+  }
+  .gift-line {
+    transition: opacity 600ms ease;
+  }
+}
+@media (max-width: 520px) {
+  .gift-leaf {
+    padding-inline: 1rem;
+  }
+  .gift-poem {
+    padding-left: 1.6rem;
+    font-size: 16.5px;
+    line-height: 1.66;
+  }
+  .gift-poem li[data-n]::before {
+    left: -1.75rem;
+    width: 1.2rem;
+    font-size: 9.5px;
+  }
+}
