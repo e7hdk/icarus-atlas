@@ -242,6 +242,11 @@ export class StageClock {
     this.music = music;
   }
 
+  /** Whether the show is keeping a music's time. */
+  get following(): boolean {
+    return this.music !== null;
+  }
+
   /** A frame has passed. A long one (a tab that slept) counts as a tenth of a second. */
   tick(delta: number): void {
     if (!this.playing) return;

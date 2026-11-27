@@ -13,7 +13,7 @@ import { Link } from '@/components/ui/Link';
 import { ATLAS_FILES } from '@/features/atlas/files';
 import { loadAtlasFile, useAtlasFile } from '@/features/atlas/useAtlasFile';
 import { Director, StageClock, resolveShot, type StagePiece, type StageSky } from '@/features/dedication/director';
-import { GiftMusic } from '@/features/dedication/music';
+import { GiftMusic, type MusicRefusal } from '@/features/dedication/music';
 import { giftSchema, type GiftScore } from '@/features/dedication/score';
 import { canUnseal, exportKey, importKey, openSealed, type Sealed } from '@/features/dedication/seal';
 import { resetStage, stage } from '@/features/dedication/stage';
@@ -143,12 +143,6 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
     const bless = () => tune?.bless();
     const gestures = ['pointerup', 'touchend', 'click', 'keydown'] as const;
     for (const gesture of gestures) window.addEventListener(gesture, bless, { capture: true });
-    // A music that cannot be had is done without.
-    const lost = () => {
-      music.current = null;
-      show.current?.clock.follow(null);
-    };
-    tune?.audio.addEventListener('error', lost);
     let live = true;
     void (async () => {
       const kept = canUnseal() ? localStorage.getItem(KEPT + starId) : null;
@@ -172,7 +166,6 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
       window.clearTimeout(drawBack);
       window.clearTimeout(rise);
       for (const gesture of gestures) window.removeEventListener(gesture, bless, { capture: true });
-      tune?.audio.removeEventListener('error', lost);
       tune?.dispose();
       music.current = null;
       show.current = null;
@@ -197,22 +190,41 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
     [],
   );
 
+  /** Starts the show's music at the second the show has got to; from then on
+   *  the show keeps the music's time. A browser that wants a touch first holds
+   *  a show that has barely begun, so that the next touch starts both; a track
+   *  that cannot be had is done without, and the show runs on its own. */
+  const strike = useCallback((current: Show) => {
+    const tune = current.music;
+    if (!tune) return;
+    tune.start(() => current.clock.time).then(
+      () => {
+        if (show.current !== current || !current.clock.playing) {
+          tune.pause();
+          return;
+        }
+        current.clock.follow(tune.audio);
+      },
+      (refusal: MusicRefusal) => {
+        if (show.current !== current) return;
+        if (refusal === 'lost') current.music = null;
+        else if (current.clock.time < 2) {
+          current.clock.playing = false;
+          useDoorStore.getState().setPlaying(false);
+        }
+      },
+    );
+  }, []);
+
   const begin = useCallback(
     (score: GiftScore) => {
       const clock = new StageClock(score.end);
       clock.playing = true;
       const director = new Director(score, view(), { lit: [starId], floor: REST_FLOOR });
-      const tune = music.current;
-      show.current = { director, clock, music: tune };
+      const current: Show = { director, clock, music: music.current };
+      show.current = current;
       setPieces(director.pieces);
-      // The show keeps the music's time. Where the browser will not let it
-      // sound yet, the show holds, and the next touch starts both.
-      clock.follow(tune?.audio ?? null);
-      tune?.start().catch(() => {
-        if (show.current?.clock !== clock) return;
-        clock.playing = false;
-        useDoorStore.getState().setPlaying(false);
-      });
+      strike(current);
       // A handle for automated checks, as the galaxy keeps one: the running show's clock.
       (window as unknown as { __door?: unknown }).__door = show.current;
       const doorState = useDoorStore.getState();
@@ -221,7 +233,7 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
       doorState.setPlaying(true);
       setPhase('playing');
     },
-    [view, starId],
+    [view, starId, strike],
   );
 
   const open = useCallback(
@@ -240,10 +252,11 @@ function Stage({ sky, starId, dedication, door }: { sky: GalaxySky; starId: stri
     const current = show.current;
     if (!current) return;
     current.clock.playing = !current.clock.playing;
-    if (current.clock.playing) current.music?.resume();
-    else current.music?.pause();
+    if (!current.clock.playing) current.music?.pause();
+    else if (current.clock.following) current.music?.resume();
+    else strike(current);
     useDoorStore.getState().setPlaying(current.clock.playing);
-  }, []);
+  }, [strike]);
 
   // A show nobody is looking at holds, music and all, until they come back to it.
   useEffect(() => {
