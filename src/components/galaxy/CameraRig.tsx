@@ -2,24 +2,28 @@
 
 import { useEffect, useMemo, useRef, type ComponentRef } from 'react';
 import { CameraControls, CameraControlsImpl } from '@react-three/drei';
-import { useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { MOBILE_TAP_SLOP } from '@/lib/useIsMobile';
 import { discRadiusOf } from './discRadius';
 
-const HOME_POSITION: Vec3 = [18, 43, 88];
-const HOME_TARGET: Vec3 = [0, 1, 0];
-const HOME_LENGTH = Math.hypot(...HOME_POSITION);
+export const HOME_POSITION: Vec3 = [18, 43, 88];
+export const HOME_TARGET: Vec3 = [0, 1, 0];
+export const HOME_LENGTH = Math.hypot(...HOME_POSITION);
 /** The galaxy overview stands this many disc radii (P95 of the stars' planar
  *  radius) from the centre. A fixed multiple of the spacing framed the old,
  *  wider layout well but left the family-first disc at half the screen, its
  *  stars packed; framing the real extent keeps them apart on any layout. */
-const OVERVIEW_FIT = 2.1;
+export const OVERVIEW_FIT = 2.1;
 const TRAVEL_DISTANCE = 13;
 /** Shifts the aim point right so the star sits left of the story panel. */
 const PANEL_OFFSET = 2.6;
+/** On a phone the selected star sits above the bottom sheet, in the middle. */
+const PHONE_SHEET_AIM: CameraAim = { right: 0, up: -0.16 };
+/** Seconds a flight takes to settle when the visitor, not a performance, flies. */
+const REST_SMOOTH_TIME = 0.5;
 
 /** Where the camera looks, moved off its focus by these fractions of its
  *  distance: a reading keeps its focus in the open sky beside its column. */
@@ -29,7 +33,7 @@ export interface CameraAim {
 }
 
 /** Look from `camera` at `target`, the aim point moved by `aim` × the distance. */
-function aimed(camera: THREE.Vector3, target: THREE.Vector3, aim: CameraAim): THREE.Vector3 {
+export function aimed(camera: THREE.Vector3, target: THREE.Vector3, aim: CameraAim): THREE.Vector3 {
   const forward = target.clone().sub(camera);
   const distance = forward.length();
   forward.normalize();
@@ -60,6 +64,7 @@ export function CameraRig({
   const focusDistance = useGalaxyStore((s) => s.focusDistance);
   const skyFocus = useGalaxyStore((s) => s.skyFocus);
   const isDiving = useGalaxyStore((s) => s.isDiving);
+  const shot = useGalaxyStore((s) => s.shot);
   const spacingScale = useGalaxyStore((s) => s.spacingScale);
   const discRadius = useMemo(() => discRadiusOf(positions), [positions]);
 
@@ -165,9 +170,29 @@ export function CameraRig({
     return () => window.clearTimeout(timer);
   }, [intro, spacingScale]);
 
+  // A performance directs the camera itself (src/features/dedication): the rig
+  // follows its shot, at the shot's own pace, and gives the camera back after.
   useEffect(() => {
     const rig = controls.current;
     if (!rig) return;
+    if (!shot) {
+      rig.smoothTime = REST_SMOOTH_TIME;
+      return;
+    }
+    rig.minDistance = 0.5;
+    rig.smoothTime = shot.ease;
+    rig.setLookAt(...shot.position, ...shot.target, !shot.jump);
+  }, [shot]);
+
+  useFrame((_, delta) => {
+    const turning = useGalaxyStore.getState().shot?.drift;
+    if (turning) controls.current?.rotate(turning * Math.min(delta, 0.1), 0, true);
+  });
+
+  useEffect(() => {
+    const rig = controls.current;
+    if (!rig) return;
+    if (shot) return;
     if (intro && !introDone.current) return;
     if (selectedId) {
       // A sky-copy in the week's constellation carries its own focus: the
@@ -198,7 +223,10 @@ export function CameraRig({
       );
       const forward = new THREE.Vector3(x, y, z).sub(camera).normalize();
       const right = new THREE.Vector3().crossVectors(forward, new THREE.Vector3(0, 1, 0)).normalize();
-      const target = aim ? aimed(camera, new THREE.Vector3(x, y, z), aim) : new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
+      // A phone's panel is a sheet at the foot of the screen, not a column at
+      // its side: the star keeps the middle, raised clear of the sheet.
+      const framing = aim ?? (isMobile ? PHONE_SHEET_AIM : null);
+      const target = framing ? aimed(camera, new THREE.Vector3(x, y, z), framing) : new THREE.Vector3(x, y, z).addScaledVector(right, PANEL_OFFSET);
       rig.setLookAt(camera.x, camera.y, camera.z, target.x, target.y, target.z, true);
     } else if (skyFocus) {
       // Out to the constellation itself: the sky is read from beside it.
@@ -217,13 +245,13 @@ export function CameraRig({
       const target = aim ? aimed(home, new THREE.Vector3(...HOME_TARGET), aim) : new THREE.Vector3(...HOME_TARGET);
       rig.setLookAt(home.x, home.y, home.z, target.x, target.y, target.z, true);
     }
-  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius, aim]);
+  }, [selectedId, focusPoint, focusDistance, skyFocus, positions, isDiving, spacingScale, intro, discRadius, aim, shot, isMobile]);
 
   return (
     <CameraControls
       ref={controls}
       makeDefault
-      smoothTime={0.5}
+      smoothTime={REST_SMOOTH_TIME}
       minDistance={4}
       maxDistance={6000}
       dollySpeed={0.6}

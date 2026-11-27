@@ -14,6 +14,15 @@ export interface ChangelogEntry {
 
 export const CHANGELOG: ChangelogEntry[] = [
   {
+    version: '0.9.0',
+    codename: 'The Door in the Star',
+    date: '2026-11-27',
+    lines: [
+      'A star that was given as a gift may now keep a door. At the foot of Thalia’s panel stand three words; behind them the sky asks one question, and for the one who can answer it the galaxy itself performs what was left there for her. What that is, the atlas does not say: it is kept sealed, and opens only to her answer.',
+      'On a phone a chosen star now stands in the middle of the screen, above its card, where before it stood half off the edge.',
+    ],
+  },
+  {
     version: '0.8.2',
     codename: 'The Greatest Muse',
     date: '2026-11-26',

@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { IcarusBrand } from '@/components/ui/IcarusBrand';
 import { useEphemerisStore } from '@/features/spotlight/store';
+import { useDoorStore } from '@/features/dedication/store';
 import { MainNav, type MainTab } from './MainNav';
 import { HudActions } from './HudActions';
 import { EphemerisChip } from './EphemerisChip';
@@ -39,6 +40,8 @@ export function AtlasBar() {
   const proemActive = useEphemerisStore((s) => s.proemActive);
   const oracleOpen = useEphemerisStore((s) => s.oracleOpen);
   const riddleOpen = useEphemerisStore((s) => s.riddleOpen);
+  // So does a dedicated star's door (src/components/dedication).
+  const curtain = useDoorStore((s) => s.curtain);
 
   useEffect(() => {
     let raf = 0;
@@ -63,7 +66,7 @@ export function AtlasBar() {
   return (
     <header
       className={`pointer-events-none fixed inset-x-0 top-0 z-30 transition-transform duration-300 ${
-        hidden || proemActive || oracleOpen || riddleOpen ? '-translate-y-full' : ''
+        hidden || proemActive || oracleOpen || riddleOpen || curtain ? '-translate-y-full' : ''
       }`}
     >
       <div

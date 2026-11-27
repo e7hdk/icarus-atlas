@@ -86,14 +86,18 @@ export function RelationLines({
   const hoveredId = useGalaxyStore((s) => s.hoveredId);
   const selectedId = useGalaxyStore((s) => s.selectedId);
   const lens = useGalaxyStore((s) => s.lens);
-  const lit = useGalaxyStore((s) => s.lit);
+  // Read apart, so a reading that only changes which stars burn (a performance
+  // does so many times a second) redraws no line.
+  const reading = useGalaxyStore((s) => s.lit !== null);
+  const litRelations = useGalaxyStore((s) => s.lit?.relations);
+  const litAccent = useGalaxyStore((s) => s.lit?.accent);
   const proemActive = useEphemerisStore((s) => s.proemActive);
   const spotlightIds = useEphemerisStore((s) => s.spotlightRelationIds);
   const activeId = hoveredId ?? selectedId;
 
   const activeEdges = useMemo(() => {
-    if (lit) {
-      const wanted = new Set(lit.relations);
+    if (litRelations) {
+      const wanted = new Set(litRelations);
       return relations.filter((relation) => wanted.has(relation.id));
     }
     if (proemActive) {
@@ -103,8 +107,8 @@ export function RelationLines({
     return activeId
       ? filterRelations(relations, lens).filter((r) => r.from === activeId || r.to === activeId)
       : [];
-  }, [activeId, lens, relations, proemActive, spotlightIds, lit]);
-  const accent = useMemo(() => new Set(lit?.accent ?? []), [lit]);
+  }, [activeId, lens, relations, proemActive, spotlightIds, litRelations]);
+  const accent = useMemo(() => new Set(litAccent ?? []), [litAccent]);
 
   // the lines that just left the drawn set, kept until they have faded
   const [drawn, setDrawn] = useState<{ active: Relation[]; leaving: Relation[] }>({ active: [], leaving: [] });
@@ -117,21 +121,21 @@ export function RelationLines({
   }
   const drop = (id: string) => setDrawn((current) => ({ ...current, leaving: current.leaving.filter((relation) => relation.id !== id) }));
 
-  const tau = lit ? READING_FADE : FADE_IN;
+  const tau = reading ? READING_FADE : FADE_IN;
   const render = (relation: Relation, leaving: boolean) => {
     const from = positions.get(relation.from);
     const to = positions.get(relation.to);
     if (!from || !to) return null;
     const gold = accent.has(relation.id);
-    const disputed = !lit && lens === 'consensus' && Boolean(relation.topic);
+    const disputed = !reading && lens === 'consensus' && Boolean(relation.topic);
     return (
       <FadingLine
         key={relation.id}
         points={[from, to]}
         color={gold ? '#fcd34d' : disputed ? '#c084fc' : '#8b9bd4'}
-        width={gold ? 2.6 : proemActive ? 2.2 : disputed ? 1.8 : lit ? 1.2 : 1.1}
+        width={gold ? 2.6 : proemActive ? 2.2 : disputed ? 1.8 : reading ? 1.2 : 1.1}
         dashed={disputed}
-        opacity={gold ? 0.95 : proemActive ? 0.9 : lit ? 0.5 : 0.6}
+        opacity={gold ? 0.95 : proemActive ? 0.9 : reading ? 0.5 : 0.6}
         leaving={leaving}
         tau={tau}
         onGone={() => drop(relation.id)}

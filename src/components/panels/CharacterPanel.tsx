@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { Relation, SkyCharacter, Source, SourceId } from '@/types/character';
 import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
+import { DedicationWhisper } from '@/components/dedication/DedicationWhisper';
 import { KindBadge } from '@/components/ui/KindBadge';
 import { GlassPanel } from '@/components/ui/GlassPanel';
 import { ProseShimmer } from '@/components/ui/ProseShimmer';
@@ -171,6 +172,7 @@ export function CharacterPanel({
           >
             Step into the star →
           </button>
+          <DedicationWhisper id={character.id} dive className="relative mt-3" />
         </GlassPanel>
       </div>
     );
@@ -344,6 +346,7 @@ export function CharacterPanel({
             >
               Step into the star
             </button>
+            <DedicationWhisper id={character.id} dive className="mt-5" />
           </div>
         </div>
       </div>

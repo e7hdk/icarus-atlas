@@ -8,6 +8,18 @@ export interface LitSky {
   accent?: string[];
 }
 
+/** A camera placement a performance directs (src/features/dedication): while
+ *  one is set the rig follows it and no selection moves the camera. */
+export interface CameraShot {
+  position: [number, number, number];
+  target: [number, number, number];
+  /** Seconds the move takes to settle; `jump` cuts instead. */
+  ease: number;
+  jump?: boolean;
+  /** Radians a second the camera goes on turning round its target. */
+  drift?: number;
+}
+
 interface GalaxyState {
   /** Active source lens. The selector UI lives in atlas settings. */
   lens: LensId;
@@ -34,6 +46,9 @@ interface GalaxyState {
    *  drawn, `accent` ones in gold. Null is the ordinary galaxy. */
   lit: LitSky | null;
   setLit: (lit: LitSky | null) => void;
+  /** The shot a performance holds; null leaves the camera to the visitor. */
+  shot: CameraShot | null;
+  setShot: (shot: CameraShot | null) => void;
   setLens: (lens: LensId) => void;
   setHovered: (id: string | null) => void;
   select: (id: string | null) => void;
@@ -65,6 +80,7 @@ export const useGalaxyStore = create<GalaxyState>()(
       focusDistance: null,
       skyFocus: null,
       lit: null,
+      shot: null,
       searchOpen: false,
       settingsOpen: false,
       spacingScale: 6.1,
@@ -87,6 +103,7 @@ export const useGalaxyStore = create<GalaxyState>()(
         set({ selectedId, hoveredId: null, isDiving: false, focusPoint, focusDistance, skyFocus: null }),
       setSkyFocus: (skyFocus) => set({ skyFocus }),
       setLit: (lit) => set({ lit }),
+      setShot: (shot) => set({ shot }),
       setDiving: (isDiving) => set({ isDiving }),
       setSearchOpen: (searchOpen) =>
         set((state) => ({

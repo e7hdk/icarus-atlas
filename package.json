@@ -57,7 +57,8 @@
     "library:metrics": "tsx scripts/library-metrics.ts",
     "library:ovid-lineation": "tsx scripts/library-ovid-lineation.ts",
     "library:theogony-candidates": "tsx scripts/library-theogony-candidates.ts",
-    "quarrels:doc": "tsx scripts/quarrels-doc.ts"
+    "quarrels:doc": "tsx scripts/quarrels-doc.ts",
+    "seal-dedication": "tsx scripts/seal-dedication.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

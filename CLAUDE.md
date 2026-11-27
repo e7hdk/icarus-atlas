@@ -55,6 +55,7 @@ Icarus Atlas is an interactive **galaxy of Greek mythology**: every figure — g
 - `pnpm loom:metrics` — the catalogue and cloth report (`--review` lists works whose medium needs an eye, `--json`). `pnpm loom:sketch` draws the cloth flat to gitignored `research/loom/`
 - `pnpm harvest:culture <character-id …>` — Wikidata discovery of reception candidates into gitignored `research/culture-candidates/` (never app data; QID pins in `data/wikidata-map.json`; see docs/CULTURE_PLAN.md §9)
 - `pnpm verify:culture [ids …]` — network gate for the Legacy shelves: link liveness + Commons license check (run after culture batches; separate from the offline validate-data)
+- `pnpm seal-dedication <score module> <out file>` — seal a dedication's gift into the one file the site ships (`public/dedication/…`); the passphrase is read from the environment variable `DEDICATION_KEY`, and the score module is private and never in the repository (see Dedications below)
 
 ## Directory map
 
@@ -71,11 +72,13 @@ src/
     hud/                # 2D overlay: TopBar, LensSelector, Legend, SearchOverlay
     panels/             # HoverCard, CharacterPanel (full story), RelationList
     art/                # the Loom: LoomView, LoomScene (cloth + web), rails, sheets, plate
+    dedication/         # a dedicated star's door: lock, performance, leaf, the set pieces drawn in the sky (pieces/)
   features/
     lens/               # source-lens state + fact-filtering logic
     characters/         # character loading, relation/ring grouping
     search/             # name search
     art/                # catalogue rules, layout engine (loom.ts), door data, camera, web
+    dedication/         # the seal (seal.ts), a gift's score (score.ts), the Director that performs it, the stage's bus, the music
     library/            # citation resolver (cite.ts), passage checks (extents.ts), links, text loader, the margin (sites, margins, margin-files), scoped names (link-english), the Quarrels (quarrels, quarrel-order), the reading room's book (book/: compose.ts cuts the text into pages, engine.ts shows and turns them, language.ts keeps the reader's language)
   lib/                  # utils, zod schemas, three helpers
   types/                # shared TS types (character.ts is the contract)
@@ -153,6 +156,15 @@ The fifth door (`LIBRARY`, `/library`, docs/LIBRARY_PLAN.md is the contract): th
 - **The Quarrels:** `data/quarrels.json` is the catalogue, and `docs/CONTRADICTIONS.md` is written from it (`pnpm quarrels:doc`). A claim keeps the catalogue's words in `who` and its tellers in `sources`; a claim told outside the seven is marked `outside`. Pages live at `/library/quarrels[/topic]`.
 - **First, Chaos** (`/theogony`): the Theogony read with the galaxy lighting each figure as sung. The beats are authored in `data/library/readings/theogony.json` and gated by `validate-library`: every lit figure needs a Hesiod fact citing its beat's lines. The galaxy store's `lit` set drives `StarsDriver` and `RelationLines`; with it null, the home galaxy is untouched. Leaving restores the lens and selection.
 - **Rules:** a citation the resolver cannot read is fixed in the data or taught to the registry, never hidden. Never present a translator's or a later summary's claim as a teller's (hard rule 2). The Library is lens-free, except the reading's finale, which turns from Hesiod to Homer.
+
+## Feature: Dedications — a star given as a gift
+
+A star may be given as a gift (`src/features/galaxy/dedication.ts`): its dedication changes how the star looks and how its badge reads (label, line, two colours, size), never its data, and the layout never reads it. A dedication is not mythology: `type`, prose and sources stay as the tellers give them.
+
+- **The door:** a dedication may keep a `door`: the words at the foot of the star's panel (`DedicationWhisper`) lead to the door's own page (`/talia`), where a sealed gift opens to the one who answers its question, is performed by the galaxy, and stays as a leaf. `src/components/dedication/` draws the lock, the performance, the leaf and the set pieces; `src/features/dedication/` holds the seal (PBKDF2 and AES-GCM in the browser), the score's vocabulary (`score.ts`), the `Director`, which brings the sky to any second of a score (so a hold, a leap and a step back are one call), and the music the show keeps time to.
+- **Nothing of a gift is in the repository in the clear.** The repository and the site are public. A gift's score (its words and its choreography) is a private module kept out of git; only its sealed file ships (`public/dedication/`). Never commit, log or quote a gift's text or the answer that opens it, and never weaken the seal to make a check easier.
+- **The stage is opt-in.** With `stage.active` false (`src/features/dedication/stage.ts`) and no `shot` in the galaxy store, the galaxy draws and flies exactly as it always has. A change to `StarsDriver`, `CameraRig` or `RelationLines` must keep that true.
+- **Timing:** a score is fitted to its music by tempos (`ScoreBuilder.tempo`), and the show keeps the music's time (`StageClock.follow`). A camera `ease` is a settling time, about 95% there after 2.3 times it: a shot wants an ease near the time it has divided by 2.5.
 
 ## Current status
 

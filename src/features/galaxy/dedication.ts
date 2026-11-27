@@ -8,6 +8,22 @@ import { TYPE_GLOW, type CharacterType } from '@/types/character';
  *  A dedication changes how a star LOOKS and how its badge reads, never where
  *  it stands: the layout engine does not read this file, so the galaxy's
  *  places, rings and gates are untouched. */
+/** A door at the foot of a dedicated star's panel: it leads to a page of its
+ *  own, where a sealed gift (src/features/dedication) opens to the one who
+ *  knows its answer. The gift ships only as ciphertext. */
+export interface DedicationDoor {
+  /** The door's page. */
+  route: string;
+  /** The words at the foot of the panel that lead there. */
+  whisper: string;
+  /** What the door asks; the answer is a day. */
+  prompt: string;
+  /** The sealed gift, under public/. */
+  sealed: string;
+  /** The music the gift is performed to, under public/: the performance keeps its time. */
+  music?: string;
+}
+
 export interface Dedication {
   /** Shown in place of the type on the star's badge. */
   label: string;
@@ -24,6 +40,7 @@ export interface Dedication {
   radiance: number;
   /** Resting diffraction spikes (compare STAR_SPIKE: an Olympian is 0.5). */
   spike: number;
+  door?: DedicationDoor;
 }
 
 const ROSE = '#f9a8c4';
@@ -39,6 +56,13 @@ export const DEDICATIONS: Readonly<Record<string, Dedication>> = {
     size: 2.4,
     radiance: 1.45,
     spike: 0.75,
+    door: {
+      route: '/talia',
+      whisper: 'I am Talia',
+      prompt: 'Then tell the sky the day you were born.',
+      sealed: '/dedication/talia.json',
+      music: '/audio/dawn-on-the-lyre.mp3',
+    },
   },
 };
 

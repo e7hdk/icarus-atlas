@@ -5,6 +5,7 @@ import { useState } from 'react';
 import type { Character } from '@/types/character';
 import { glowColorOf } from '@/features/galaxy/dedication';
 import { DedicationLine, TypeBadge } from '@/components/ui/TypeBadge';
+import { DedicationWhisper } from '@/components/dedication/DedicationWhisper';
 import { KindBadge } from '@/components/ui/KindBadge';
 
 /** Shared pieces of the character codex marquee — the gold programme card
@@ -71,6 +72,7 @@ export function CodexIdentity({ character }: { character: Character }) {
         ))}
       </div>
       <DedicationLine id={character.id} className="mt-2 text-center text-[16px]" />
+      <DedicationWhisper id={character.id} className="mt-1.5" />
       <p className="mt-2 text-center font-body text-[14.5px] italic text-aether-muted">
         {character.domains.join(' · ')}
       </p>
