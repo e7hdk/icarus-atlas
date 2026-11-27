@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import type { LensId } from '@/types/character';
+import { DEFAULT_SPACING } from './spacing';
 
 export interface LitSky {
   stars: string[];
@@ -83,7 +84,7 @@ export const useGalaxyStore = create<GalaxyState>()(
       shot: null,
       searchOpen: false,
       settingsOpen: false,
-      spacingScale: 6.1,
+      spacingScale: DEFAULT_SPACING,
       musicEnabled: true,
       musicVolume: 0.45,
       setLens: (lens) => set({ lens }),

@@ -1,10 +1,11 @@
 'use client';
 
-import { useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Vec3 } from '@/features/galaxy/layout';
+import { skyReach } from '@/features/galaxy/spacing';
 import { useGalaxyStore } from '@/features/galaxy/store';
 import { weekContextFor } from '@/features/spotlight/weeks';
 import { useEphemerisStore } from '@/features/spotlight/store';
@@ -31,9 +32,13 @@ import { discRadiusOf } from './discRadius';
 
 const sky = catalogue as SkyCatalogue;
 
-/** The celestial sphere's radius. The galaxy's disc reaches ~1,050 units, so
- *  this hangs the whole sky comfortably beyond it: constellations near the
- *  celestial equator stand off the disc's rim rather than inside it. */
+/** The celestial sphere's radius in the sky as composed
+ *  (features/galaxy/spacing.ts), where the galaxy's disc reaches some 600
+ *  units: the whole sky hangs comfortably beyond it, and the constellations
+ *  near the celestial equator stand off the disc's rim rather than inside it.
+ *  Every length in this file is in these units; with the stars spread wider the
+ *  whole sphere is drawn `skyReach` times as large, so the galaxy's overview
+ *  still stands inside it. */
 const SKY_RADIUS = 3000;
 /** Ordinary sky: far and faint, but always the same starlight — a figure does
  *  not flare because a pointer passed over it. The week's own constellation is
@@ -166,10 +171,16 @@ interface LitFigure {
 export function WeekConstellation({
   isMobile,
   positions,
+  spacing,
 }: {
   isMobile: boolean;
   positions: Map<string, Vec3>;
+  /** How far `positions` are spread: the sphere grows with them. */
+  spacing: number;
 }) {
+  const reach = skyReach(spacing);
+  /** A point of the sphere, in the world's units. */
+  const inWorld = (point: Vec3): Vec3 => [point[0] * reach, point[1] * reach, point[2] * reach];
   const data = useEphemerisStore((s) => s.data);
   const pick = useEphemerisStore((s) => s.pick);
   const proemActive = useEphemerisStore((s) => s.proemActive);
@@ -271,14 +282,16 @@ export function WeekConstellation({
     if (door?.home) {
       state.fall = Math.min(1, state.fall + delta / TETHER_SECONDS);
       state.opacity = Math.min(1, state.fall * 2);
-      const reach = smoothstep(state.fall);
+      const fallen = smoothstep(state.fall);
       const line = tetherAttr.current.array as Float32Array;
       line.set(door.at, 0);
+      // The floor is a place in the galaxy, in the world's units; the line is
+      // drawn in the sphere's.
       line.set(
         [
-          door.at[0] + (door.home[0] - door.at[0]) * reach,
-          door.at[1] + (door.home[1] - door.at[1]) * reach,
-          door.at[2] + (door.home[2] - door.at[2]) * reach,
+          door.at[0] + (door.home[0] / reach - door.at[0]) * fallen,
+          door.at[1] + (door.home[1] / reach - door.at[1]) * fallen,
+          door.at[2] + (door.home[2] / reach - door.at[2]) * fallen,
         ],
         3,
       );
@@ -288,6 +301,17 @@ export function WeekConstellation({
     }
     if (tetherMat.current) tetherMat.current.opacity = state.opacity * TETHER_OPACITY;
   });
+
+  // A place in the sky the camera has flown to is kept in the world's units:
+  // when the stars are spread wider or drawn in, it is let go, not held stale.
+  const spread = useRef(reach);
+  useEffect(() => {
+    if (spread.current === reach) return;
+    spread.current = reach;
+    const store = useGalaxyStore.getState();
+    if (store.skyFocus) store.setSkyFocus(null);
+    if (store.focusPoint) store.select(null);
+  }, [reach]);
 
   if (proemActive) return null;
 
@@ -300,11 +324,12 @@ export function WeekConstellation({
 
 
   return (
-    <group>
+    <group scale={reach}>
       {/* The sky itself: everything the ancients drew, far and quiet, and always
           the same starlight — nothing here flares because a pointer passed. */}
       <SkyThreads
         threads={quiet.threads}
+        starScale={reach}
         color={QUIET_THREAD}
         opacity={QUIET_THREAD_OPACITY}
         width={QUIET_THREAD_WIDTH}
@@ -313,6 +338,7 @@ export function WeekConstellation({
       />
       <SkyStars
         stars={quiet.points}
+        scale={reach}
         brightness={QUIET_STAR_BRIGHTNESS}
         discRadius={discRadius}
         behindDisc={QUIET_BEHIND_DISC}
@@ -361,7 +387,7 @@ export function WeekConstellation({
           const weeksDoor =
             isMobile && lit?.doors.some((door) => door.character === skyPick.character);
           if (skyPick.character && (inFocus || weeksDoor)) {
-            selectAt(skyPick.character, skyPick.at, TODAY_SIZE * 16);
+            selectAt(skyPick.character, inWorld(skyPick.at), TODAY_SIZE * 16 * reach);
             return;
           }
           if (inFocus) {
@@ -372,8 +398,8 @@ export function WeekConstellation({
           useGalaxyStore.getState().select(null);
           setSkyFocus({
             id: entry.figure.id,
-            at: entry.centre,
-            distance: Math.max(entry.reach * 2.6, SKY_RADIUS * 0.12),
+            at: inWorld(entry.centre),
+            distance: Math.max(entry.reach * 2.6, SKY_RADIUS * 0.12) * reach,
           });
         }}
       >
@@ -393,7 +419,7 @@ export function WeekConstellation({
         <Html
           position={awake.centre}
           center
-          distanceFactor={SKY_RADIUS * 0.34}
+          distanceFactor={SKY_RADIUS * 0.34 * reach}
           className="pointer-events-none select-none"
           zIndexRange={[8, 0]}
         >
@@ -411,7 +437,7 @@ export function WeekConstellation({
         <group>
           <SkyThreads
             threads={lit.threads}
-            starScale={LIT_STAR_SCALE}
+            starScale={LIT_STAR_SCALE * reach}
             color={LIT_THREAD}
             opacity={LIT_THREAD_OPACITY}
             width={LIT_THREAD_WIDTH}
@@ -422,7 +448,7 @@ export function WeekConstellation({
           />
           <SkyStars
             stars={lit.points}
-            scale={LIT_STAR_SCALE}
+            scale={LIT_STAR_SCALE * reach}
             brightness={LIT_STAR_BRIGHTNESS}
             spikeBelow={LIT_SPIKE_BELOW}
             discRadius={discRadius}
@@ -431,7 +457,7 @@ export function WeekConstellation({
           <Html
             position={lit.labelAt}
             center
-            distanceFactor={SKY_RADIUS * 0.34}
+            distanceFactor={SKY_RADIUS * 0.34 * reach}
             className="pointer-events-none select-none"
             zIndexRange={[10, 0]}
           >
@@ -492,7 +518,7 @@ export function WeekConstellation({
               ? undefined
               : (event) => {
                   event.stopPropagation();
-                  selectAt(door.character, door.at, TODAY_SIZE * 16);
+                  selectAt(door.character, inWorld(door.at), TODAY_SIZE * 16 * reach);
                 }
           }
         >
@@ -511,7 +537,7 @@ export function WeekConstellation({
         <Html
           position={namedStar.at}
           center
-          distanceFactor={SKY_RADIUS * 0.34}
+          distanceFactor={SKY_RADIUS * 0.34 * reach}
           className="pointer-events-none select-none"
           zIndexRange={[9, 0]}
         >
@@ -524,7 +550,7 @@ export function WeekConstellation({
         <Html
           position={lit.doors.find((door) => door.character === named)!.at}
           center
-          distanceFactor={SKY_RADIUS * 0.34}
+          distanceFactor={SKY_RADIUS * 0.34 * reach}
           className="pointer-events-none select-none"
           zIndexRange={[9, 0]}
         >

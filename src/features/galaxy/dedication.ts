@@ -22,6 +22,11 @@ export interface DedicationDoor {
   sealed: string;
   /** The music the gift is performed to, under public/: the performance keeps its time. */
   music?: string;
+  /** The star's world radius on the gift's stage. A performance is written in
+   *  the distances of the sky it was scored in, round the star as it then was;
+   *  the stage keeps both (the sky at REFERENCE_SPACING), whatever the atlas
+   *  has become since. */
+  stageSize: number;
 }
 
 export interface Dedication {
@@ -34,7 +39,9 @@ export interface Dedication {
   to: string;
   /** The steady colour for text and chrome: between `from` and `to`. */
   color: string;
-  /** World radius of the star (compare STAR_SIZE: an Olympian is 0.95). */
+  /** World radius of the star in the sky as composed (compare STAR_SIZE: an
+   *  Olympian is 0.95). Spread wider, the sky carries the star with it
+   *  (`dedicatedSize`). */
   size: number;
   /** How hot it burns (compare STAR_RADIANCE: an Olympian is 1.3). */
   radiance: number;
@@ -53,7 +60,7 @@ export const DEDICATIONS: Readonly<Record<string, Dedication>> = {
     from: ROSE,
     to: GOLD,
     color: '#f8b89c',
-    size: 2.4,
+    size: 7.2,
     radiance: 1.45,
     spike: 0.75,
     door: {
@@ -62,6 +69,7 @@ export const DEDICATIONS: Readonly<Record<string, Dedication>> = {
       prompt: 'Then tell the sky the day you were born.',
       sealed: '/dedication/talia.json',
       music: '/audio/dawn-on-the-lyre.mp3',
+      stageSize: 2.4,
     },
   },
 };
@@ -69,6 +77,14 @@ export const DEDICATIONS: Readonly<Record<string, Dedication>> = {
 /** The star's dedication, if it was given one. */
 export function dedicationOf(id: string): Dedication | undefined {
   return DEDICATIONS[id];
+}
+
+/** A dedicated star's world radius in a sky spread `reach` times wider than
+ *  composed (features/galaxy/spacing.ts). The other stars keep their size and
+ *  grow small in a wide sky; a gift grows with the sky, and so keeps its
+ *  place in the view from however far it is seen. */
+export function dedicatedSize(gift: Dedication, reach: number): number {
+  return gift.size * reach;
 }
 
 /** The colour a figure is drawn and written in: its dedication's, else its type's glow. */

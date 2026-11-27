@@ -7,7 +7,8 @@ import type { SkyCharacter } from '@/types/character';
 import { IRIDESCENT_BASE_HUE, TYPE_GLOW } from '@/types/character';
 import type { Vec3 } from '@/features/galaxy/layout';
 import { useGalaxyStore } from '@/features/galaxy/store';
-import { STAR_SIZE } from './starLook';
+import { labelDrop, starSize } from './starLook';
+import { skyReach } from '@/features/galaxy/spacing';
 import { dedicationOf } from '@/features/galaxy/dedication';
 
 const LABEL_DISTANCE_FACTOR = 28;
@@ -57,10 +58,13 @@ export function MobileStarLabels({
   canvasRef,
   characters,
   positions,
+  spacing,
 }: {
   canvasRef: RefObject<HTMLCanvasElement | null>;
   characters: SkyCharacter[];
   positions: Map<string, Vec3>;
+  /** How far `positions` are spread: a dedicated star grows with its sky. */
+  spacing: number;
 }) {
   const hoveredId = useGalaxyStore((state) => state.hoveredId);
   const selectedId = useGalaxyStore((state) => state.selectedId);
@@ -79,12 +83,10 @@ export function MobileStarLabels({
     return values;
   }, [lens, stars]);
   // How far each label hangs below its star: under the star's drawn size.
+  const reach = skyReach(spacing);
   const labelDrops = useMemo(
-    () =>
-      stars.map(
-        (character) => (dedicationOf(character.id)?.size ?? STAR_SIZE[character.type]) + 1.2,
-      ),
-    [stars],
+    () => stars.map((character) => labelDrop(starSize(character, reach))),
+    [stars, reach],
   );
   const hoverColors = useMemo(
     () =>

@@ -6,7 +6,8 @@ import { DOME_VERT, DOME_FRAG } from './shaders/nebula';
 
 /** Inward-facing gradient dome (radiance ~0.03-0.06): kills the flat-void
  *  background and gives the vignette and grain something to grip.
- *  Radius 300 stays inside camera far=500 at maxDistance=190 (190+300 < 500). */
+ *  Radius 300, drawn at four times the stars' spacing: GalaxyCanvas sets the
+ *  camera's far plane beyond it (CAMERA_FAR). */
 export function BackgroundDome() {
   const material = useMemo(
     () =>

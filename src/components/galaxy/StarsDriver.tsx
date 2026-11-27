@@ -10,8 +10,9 @@ import { useGalaxyStore } from '@/features/galaxy/store';
 import { PSF_VERT, PSF_FRAG } from './shaders/psfStar';
 import { useElapsedRef } from './useElapsedRef';
 import { StarLabel } from './StarLabel';
-import { STAR_SIZE, STAR_PULSE, STAR_RADIANCE, STAR_SPIKE } from './starLook';
-import { dedicationOf, DEDICATION_DRIFT } from '@/features/galaxy/dedication';
+import { STAR_SIZE, STAR_PULSE, STAR_RADIANCE, STAR_SPIKE, FOCUS_SPREAD, drawnRadius, pixelsPerUnit, starSize } from './starLook';
+import { dedicatedSize, dedicationOf, DEDICATION_DRIFT, type Dedication } from '@/features/galaxy/dedication';
+import { skyReach } from '@/features/galaxy/spacing';
 import { stage } from '@/features/dedication/stage';
 
 const SHIMMER_SPEED = 0.06;
@@ -21,6 +22,13 @@ const SHIMMER_LIGHT = 0.62;
  *  rendered star larger. The custom raycast chooses the closest screen centre
  *  when targets overlap, instead of letting oversized world spheres compete. */
 const MOBILE_STAR_HIT_RADIUS_PX = 24;
+/** A star is picked by its light: this many point-spread radii round its heart.
+ *  Up to the curve's knee that is a fixed world radius, the invisible instanced
+ *  volume. A dedicated star is drawn far past the knee, where a star no longer
+ *  grows as fast as it nears, so its volume is kept to its light as drawn: left
+ *  at its world radius it would swallow the whole view from close by. */
+const HIT_RADII = 3;
+const MIN_HIT_RADIUS = 1.5;
 /** Per frame, how far focus and the selection ring ease toward their target. */
 const EASE = 0.12;
 /** A reading's lit set (docs/LIBRARY_PLAN.md §8): an unlit star keeps this much
@@ -41,16 +49,23 @@ export function StarsDriver({
   characters,
   isMobile,
   positions,
+  spacing,
   pickable = true,
   labels = true,
+  sizes,
 }: {
   characters: SkyCharacter[];
   isMobile: boolean;
   positions: Map<string, Vec3>;
+  /** How far `positions` are spread (features/galaxy/spacing.ts): a dedicated
+   *  star grows with its sky. */
+  spacing: number;
   /** A reading's sky is looked at, not picked: a click selects nothing. */
   pickable?: boolean;
   /** A stage names its stars in its own words: no labels under them. */
   labels?: boolean;
+  /** World radii a stage draws stars at instead, by id, whatever the spacing. */
+  sizes?: Readonly<Record<string, number>>;
 }) {
   const starRef = useRef<THREE.InstancedMesh>(null);
   const hitRef = useRef<THREE.InstancedMesh>(null);
@@ -77,6 +92,12 @@ export function StarsDriver({
     const baseHueArr = new Float32Array(N); // NaN = not a Muse
     // A dedicated star's two colours (linear, as THREE.Color holds them).
     const drift: { index: number; from: THREE.Color; to: THREE.Color }[] = [];
+    // The dedicated stars, each with the radius a stage holds it at, if one
+    // does. `giantSize` is the radius drawn now and `giantHit` the pick
+    // volume's, both 0 for any other star.
+    const giants: { index: number; gift: Dedication; staged: number | undefined }[] = [];
+    const giantSize = new Float32Array(N);
+    const giantHit = new Float32Array(N);
     const radiance = new Float32Array(N);
     const spike = new Float32Array(N);
     const emphasis = new Float32Array(N); // eased focus, 0..1
@@ -106,8 +127,10 @@ export function StarsDriver({
       const glow = TYPE_GLOW[c.type];
       const pulse = STAR_PULSE[glow.pulse];
       const gift = dedicationOf(c.id);
-      size[i] = gift?.size ?? STAR_SIZE[c.type];
-      hitScaleArr[i] = Math.max(size[i] * 3, 1.5);
+      const staged = sizes?.[c.id];
+      size[i] = staged ?? gift?.size ?? STAR_SIZE[c.type];
+      hitScaleArr[i] = Math.max(size[i] * HIT_RADII, MIN_HIT_RADIUS);
+      if (gift) giants.push({ index: i, gift, staged });
       speedArr[i] = pulse.speed;
       ampArr[i] = pulse.amp;
       phaseArr[i] = (hashString(c.id) % 6283) / 1000;
@@ -162,12 +185,12 @@ export function StarsDriver({
     hitMat.visible = !isMobile;
 
     return {
-      hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr, drift,
+      hitScaleArr, speedArr, ampArr, phaseArr, irregularArr, baseHueArr, drift, giants, giantSize, giantHit,
       radiance, spike, emphasis, ring, attested, litMask, litGlow, flare, posX, posY, posZ, color, dyn, hasMuse,
       indexToId, idToIndex,
       starGeo, starMat, hitGeo, hitMat,
     };
-  }, [stars, count, isMobile]);
+  }, [stars, count, isMobile, sizes]);
 
   const dataRef = useRef(data);
   useLayoutEffect(() => {
@@ -183,6 +206,8 @@ export function StarsDriver({
     },
     [data],
   );
+
+  const reach = skyReach(spacing);
 
   // Position the instances; rebuild when positions (e.g. spacingScale) change.
   useLayoutEffect(() => {
@@ -209,7 +234,19 @@ export function StarsDriver({
     }
     star.instanceMatrix.needsUpdate = true;
     hit.instanceMatrix.needsUpdate = true;
-  }, [data, positions, stars, count]);
+    // The pick volume's bounds are kept from the first ray cast at it: stars
+    // moved since would be missed outside them.
+    hit.boundingSphere = null;
+    // A dedicated star grows with the sky it stands in.
+    const sizeAttribute = currentData.starGeo.getAttribute('aSize') as THREE.InstancedBufferAttribute;
+    for (const giant of currentData.giants) {
+      const drawn = giant.staged ?? dedicatedSize(giant.gift, reach);
+      currentData.giantSize[giant.index] = drawn;
+      currentData.giantHit[giant.index] = currentData.hitScaleArr[giant.index];
+      sizeAttribute.setX(giant.index, drawn);
+      sizeAttribute.needsUpdate = true;
+    }
+  }, [data, positions, stars, count, reach]);
 
   // Recompute attestation only when the lens changes (one pass, no per-frame
   // work and no per-star React re-render).
@@ -234,6 +271,8 @@ export function StarsDriver({
   const elapsed = useElapsedRef();
   const camera = useThree((state) => state.camera);
   const viewportHeight = useThree((state) => state.size.height);
+  const pixelRatio = useThree((state) => state.viewport.dpr);
+  const scratch = useMemo(() => new THREE.Matrix4(), []);
 
   const mobileHitRaycast = useCallback(
     (raycaster: THREE.Raycaster, intersects: THREE.Intersection[]) => {
@@ -253,6 +292,7 @@ export function StarsDriver({
           MOBILE_STAR_HIT_RADIUS_PX) /
         viewportHeight;
       const angularRadiusSq = angularRadius * angularRadius;
+      const perUnit = pixelsPerUnit(viewportHeight * pixelRatio, camera.projectionMatrix.elements[5]);
       let bestIndex = -1;
       let bestDistance = Infinity;
       let bestAngularDistanceSq = Infinity;
@@ -269,8 +309,12 @@ export function StarsDriver({
           dx * dx + dy * dy + dz * dz - distance * distance,
         );
         const angularDistanceSq = perpendicularSq / (distance * distance);
+        // A dedicated star answers a touch anywhere on its light: the angle
+        // its point-spread radius covers from here, where that is the wider.
+        const giant = currentData.giantSize[index];
+        const light = giant > 0 ? drawnRadius(giant, distance, perUnit) / distance : 0;
         if (
-          angularDistanceSq <= angularRadiusSq &&
+          angularDistanceSq <= Math.max(angularRadiusSq, light * light) &&
           (angularDistanceSq < bestAngularDistanceSq ||
             (angularDistanceSq === bestAngularDistanceSq && distance < bestDistance))
         ) {
@@ -288,10 +332,10 @@ export function StarsDriver({
         point: ray.at(bestDistance, new THREE.Vector3()),
       });
     },
-    [camera, count, viewportHeight],
+    [camera, count, viewportHeight, pixelRatio],
   );
 
-  useFrame(({ gl, size }, delta) => {
+  useFrame(({ gl, size, camera: eye }, delta) => {
     const star = starRef.current;
     if (!star) return;
     const currentData = dataRef.current;
@@ -344,7 +388,7 @@ export function StarsDriver({
         flare[i] = f;
       }
       const o = i * 4;
-      dyn[o] = (1 + pulse * 0.45) * (1 + 0.3 * e) * (0.55 + 0.45 * glow) * (1 + 0.5 * f);
+      dyn[o] = (1 + pulse * 0.45) * (1 + FOCUS_SPREAD * e) * (0.55 + 0.45 * glow) * (1 + 0.5 * f);
       dyn[o + 1] = radiance[i] * (1 + pulse * 2.2) * (1 + 0.85 * e) * (att ? 1 : 0.2) * glow * (1 + 1.2 * f);
       dyn[o + 2] = Math.max(att ? spike[i] * glow : 0, e, 0.8 * f);
       dyn[o + 3] = r;
@@ -380,9 +424,27 @@ export function StarsDriver({
 
     (star.geometry.getAttribute('aDyn') as THREE.BufferAttribute).needsUpdate = true;
     if (hasMuse) (star.geometry.getAttribute('aColor') as THREE.BufferAttribute).needsUpdate = true;
-    const pixelRatio = gl.getPixelRatio();
-    starMat.uniforms.uPixelRatio.value = pixelRatio;
-    starMat.uniforms.uViewportHeight.value = size.height * pixelRatio;
+    const devicePixels = gl.getPixelRatio();
+    starMat.uniforms.uPixelRatio.value = devicePixels;
+    starMat.uniforms.uViewportHeight.value = size.height * devicePixels;
+
+    // A dedicated star's pick volume follows its light as the camera nears
+    // (a phone picks by the touch's angle instead, in mobileHitRaycast).
+    const hit = hitRef.current;
+    if (hit && !isMobile && currentData.giants.length > 0) {
+      const { giantSize, giantHit, posX, posY, posZ } = currentData;
+      const perUnit = pixelsPerUnit(size.height * devicePixels, eye.projectionMatrix.elements[5]);
+      for (const { index } of currentData.giants) {
+        const depth = Math.hypot(posX[index] - eye.position.x, posY[index] - eye.position.y, posZ[index] - eye.position.z);
+        const radius = Math.max(drawnRadius(giantSize[index], depth, perUnit) * HIT_RADII, MIN_HIT_RADIUS);
+        if (Math.abs(radius - giantHit[index]) <= giantHit[index] * 0.02) continue;
+        giantHit[index] = radius;
+        scratch.makeScale(radius, radius, radius).setPosition(posX[index], posY[index], posZ[index]);
+        hit.setMatrixAt(index, scratch);
+        hit.instanceMatrix.needsUpdate = true;
+        hit.boundingSphere = null;
+      }
+    }
   });
 
   return (
@@ -436,7 +498,12 @@ export function StarsDriver({
       {!isMobile &&
         labels &&
         stars.map((c) => (
-          <StarLabel key={c.id} character={c} position={positions.get(c.id)!} />
+          <StarLabel
+            key={c.id}
+            character={c}
+            position={positions.get(c.id)!}
+            size={starSize(c, reach, sizes)}
+          />
         ))}
     </>
   );
